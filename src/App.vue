@@ -1,24 +1,43 @@
 <script setup lang="ts">
 import Aplicacion from './aplicacion'
 import { useRoute } from 'vue-router'
-import { onMounted } from 'vue'
+import { onMounted, ref, Ref } from 'vue'
+import Cabecera from './components/comp_cabecera/cabecera.vue'
+import { Cancion } from './modelo/cancion'
+import { Acordes } from './modelo/acordes'
+import { Letra } from './modelo/letra'
 
 const route = useRoute()
+const cancion: Ref<Cancion> = ref(
+  new Cancion(
+    'Cancion no cargada',
+    'sin banda',
+    new Acordes([], []),
+    new Letra([]),
+  ),
+)
 
-const aplicacion: Aplicacion = new Aplicacion()
+const aplicacion = new Aplicacion()
 onMounted(() => {
   aplicacion.onMounted()
-
   console.log('onMounted', route.query.tocar)
-
   if (route.query.tocar) {
-    aplicacion.tocar(route.query.tocar as string)
+    aplicacion.tocar(String(route.query.tocar))
   }
 })
 </script>
 
 <template>
   <div>
+    <Cabecera
+      viendo_vista="tocar"
+      :compas="0"
+      :cancion="cancion"
+      :nro_cancion="0"
+      :listaCanciones="[]"
+      estado=""
+      :bpm_encompas="0"
+    />
     <nav>
       <router-link to="/">Inicio</router-link>
       <router-link to="/editar">Editar</router-link>
