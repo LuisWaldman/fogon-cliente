@@ -46,12 +46,12 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
       <img src="/img/iconogrande.png" class="logo-img" alt="Logo" />
     </router-link>
 
-    <h1 class="titulo-App d-none d-sm-block" ><span color="red">Fogon:</span> Red musical distribuida</h1>
-  <div class="d-block d-sm-none">
-  .
-</div>
+    <h1 class="titulo-App d-none d-sm-block">
+      <span color="red">Fogon:</span> Red musical distribuida
+    </h1>
+    <div class="d-block d-sm-none">.</div>
     <ControladorTiempo
-    v-if="$route.path ===  '/tocar'"
+      v-if="$route.path === '/tocar'"
       :nro_cancion="nro_cancion"
       :total_canciones="listaCanciones.length"
       :compas="compas"
@@ -70,7 +70,7 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
     </div>
 
     <Metronomo
-      v-if="$route.path ===  '/tocar'"
+      v-if="$route.path === '/tocar'"
       :compas="compas"
       :estado="estado"
       ref="metronomeRef"
@@ -78,28 +78,23 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
       :cancion="cancion"
     ></Metronomo>
 
-
-    
-
-    <div class="otras_paginas" v-if="1==2">
-      
+    <div class="otras_paginas" v-if="1 == 2">
       <div
         class="otra_paginas"
-        :class="{ active:  $route.path === '/listar' }"
+        :class="{ active: $route.path === '/listar' }"
         v-if="ViendoDetalle"
       >
-      <router-link to="/listar"><i class="bi bi-list"></i>Listas</router-link>
-        
+        <router-link to="/listar"><i class="bi bi-list"></i>Listas</router-link>
       </div>
 
       <div
         class="otra_paginas"
-        
-        :class="{ active:  $route.path ===  '/buscar' }"
+        :class="{ active: $route.path === '/buscar' }"
         v-if="ViendoDetalle"
       >
-      <router-link to="/buscar"><i class="bi bi-globe"></i> Buscar</router-link>
-        
+        <router-link to="/buscar"
+          ><i class="bi bi-globe"></i> Buscar</router-link
+        >
       </div>
 
       <div
@@ -107,10 +102,10 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
         :class="{ active: $route.path === '/configurar' }"
         v-if="ViendoDetalle"
       >
-      <router-link to="/configurar"><i class="bi bi-gear-fill"></i>Configurar</router-link>
-        
+        <router-link to="/configurar"
+          ><i class="bi bi-gear-fill"></i>Configurar</router-link
+        >
       </div>
-   
 
       <div
         class="otra_paginas"
@@ -124,7 +119,6 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </template>
 
 <style scoped>
-
 .logo-img {
   height: 6em;
   padding: 1.5em;
@@ -137,7 +131,6 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
   border: 1px solid;
   background-color: #353333;
 }
-
 
 .titulo-App {
   color: #a9a8f6;
@@ -183,7 +176,6 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
   border-radius: 20px;
   color: #a9a8f6 !important;
   font-size: medium;
-
 }
 .conectado {
   color: red;

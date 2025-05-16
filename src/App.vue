@@ -28,7 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div  id="contenedor-musical" class="pantalla">
+  <div id="contenedor-musical" class="pantalla">
     <Cabecera
       viendo_vista="tocar"
       :compas="0"
@@ -39,7 +39,7 @@ onMounted(() => {
       :bpm_encompas="0"
     />
     <container>
-    <router-view />
+      <router-view />
     </container>
   </div>
 </template>
@@ -58,7 +58,6 @@ onMounted(() => {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 
-
 #contenedor-musical {
   height: 100vh; /* Altura completa de la ventana */
   width: 100%;
@@ -67,15 +66,15 @@ onMounted(() => {
   width: 100%;
 }
 #contenedor-musical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cancion {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .fixed-bottom-right {
