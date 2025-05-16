@@ -1,10 +1,31 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Aplicacion from './aplicacion'
+import { useRoute } from 'vue-router'
+import { onMounted } from 'vue'
+
+const route = useRoute()
+
+const aplicacion: Aplicacion = new Aplicacion()
+onMounted(() => {
+  aplicacion.onMounted()
+
+  console.log('onMounted', route.query.tocar)
+
+  if (route.query.tocar) {
+    aplicacion.tocar(route.query.tocar as string)
+  }
+})
 </script>
 
-<template>
-  <div>EL FOGON PROXIMAMENTE</div>
-  <HelloWorld />
+<template>  <div>
+    <nav>
+      <router-link to="/">Inicio</router-link>
+      <router-link to="/editar">Editar</router-link>
+      <router-link to="/listas">Listas</router-link>
+      <router-link to="/configurar">Configurar</router-link>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <style scoped>
