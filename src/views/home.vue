@@ -1,19 +1,33 @@
 <script setup lang="ts"></script>
 <template>
-  <div>
-    <h1>Bienvenido al Fogon</h1>
+  <div class="home">
+    <h1 style="color: blueviolet;">Bienvenido al Fogon</h1>
     <p class="read-the-docs">
-      Esta aplicación te permite gestionar tus listas de tareas y recordatorios
-      de manera eficiente.
+      Esta es una version muy BETA, recien estamos empezando a construir el Fogon, juntando maderita.
     </p>
+
+    
     <p>
-      Puedes navegar a través de las diferentes secciones utilizando el menú de
-      navegación.
+      Por ahora, presentamos las siguientes canciones: 
     </p>
   </div>
+
+  <ul>
+    <li>
+      <router-link to="/tocar?cancion=1">Cancion 1</router-link>
+    </li>
+    <li>
+      <router-link to="/tocar?cancion=2">Cancion 2</router-link>
+    </li>
+    <li>
+      <router-link to="/tocar?cancion=3">Cancion 3</router-link>
+    </li></ul>
 </template>
 <style scoped>
 .read-the-docs {
-  color: #888;
+  font-size: x-large;
+}
+.home {
+
 }
 </style>

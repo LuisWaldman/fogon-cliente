@@ -28,7 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div  id="contenedor-musical" class="pantalla">
     <Cabecera
       viendo_vista="tocar"
       :compas="0"
@@ -38,13 +38,9 @@ onMounted(() => {
       estado=""
       :bpm_encompas="0"
     />
-    <nav>
-      <router-link to="/">Inicio</router-link>
-      <router-link to="/editar">Editar</router-link>
-      <router-link to="/listas">Listas</router-link>
-      <router-link to="/configurar">Configurar</router-link>
-    </nav>
+    <container>
     <router-view />
+    </container>
   </div>
 </template>
 
@@ -60,5 +56,42 @@ onMounted(() => {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+
+#contenedor-musical {
+  height: 100vh; /* Altura completa de la ventana */
+  width: 100%;
+}
+.pantalla {
+  width: 100%;
+}
+#contenedor-musical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cancion {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999; /* Asegura que se muestre encima de otros elementos */
+}
+.carteliniciando {
+  position: absolute;
+  top: 20px;
+  font-size: 500px;
+  border: 5px solid #a9a8f6;
+  margin-left: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 60px;
 }
 </style>

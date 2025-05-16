@@ -41,32 +41,17 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </script>
 
 <template>
-  <div class="navbarFogon">
-    <div
-      class="pagina_seleccionable"
-      :class="{ active: viendo_vista == 'tocar' }"
-    >
-      <p
-        class="clase_tocar"
-        :class="{ active: viendo_vista == 'tocar' }"
-        aria-current="page"
-      >
-        <i style="font-size: 45px"> 🎸 </i>
+  <nav class="navbarFogon">
+    <router-link to="/" class="logo-link">
+      <img src="/img/iconogrande.png" class="logo-img" alt="Logo" />
+    </router-link>
 
-        <i
-          class="bi bi-fire"
-          style="
-            position: absolute;
-            top: 30px;
-            left: 22px;
-            background: transparent;
-          "
-        >
-        </i>
-      </p>
-    </div>
-
+    <h1 class="titulo-App d-none d-sm-block" ><span color="red">Fogon:</span> Red musical distribuida</h1>
+  <div class="d-block d-sm-none">
+  .
+</div>
     <ControladorTiempo
+    v-if="$route.path ===  '/tocar'"
       :nro_cancion="nro_cancion"
       :total_canciones="listaCanciones.length"
       :compas="compas"
@@ -85,7 +70,7 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
     </div>
 
     <Metronomo
-      v-if="viendo_vista == 'tocar'"
+      v-if="$route.path ===  '/tocar'"
       :compas="compas"
       :estado="estado"
       ref="metronomeRef"
@@ -93,38 +78,39 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
       :cancion="cancion"
     ></Metronomo>
 
-    <div class="otras_paginas">
+
+    
+
+    <div class="otras_paginas" v-if="1==2">
+      
       <div
         class="otra_paginas"
-        :class="{ active: viendo_vista == 'listas' }"
+        :class="{ active:  $route.path === '/listar' }"
         v-if="ViendoDetalle"
       >
-        <i class="bi bi-list"></i>
+      <router-link to="/listar"><i class="bi bi-list"></i>Listas</router-link>
+        
       </div>
 
       <div
         class="otra_paginas"
-        @click="acciono('buscar')"
-        :class="{ active: viendo_vista == 'buscar' }"
+        
+        :class="{ active:  $route.path ===  '/buscar' }"
         v-if="ViendoDetalle"
       >
-        <i class="bi bi-globe"></i>
+      <router-link to="/buscar"><i class="bi bi-globe"></i> Buscar</router-link>
+        
       </div>
 
       <div
         class="otra_paginas"
-        :class="{ active: viendo_vista == 'config' }"
+        :class="{ active: $route.path === '/configurar' }"
         v-if="ViendoDetalle"
       >
-        <i class="bi bi-gear-fill"></i>
+      <router-link to="/configurar"><i class="bi bi-gear-fill"></i>Configurar</router-link>
+        
       </div>
-      <div
-        class="otra_paginas"
-        @click="ViendoDetalle = !ViendoDetalle"
-        v-if="ViendoDetalle"
-      >
-        <i class="bi bi-dash"></i>
-      </div>
+   
 
       <div
         class="otra_paginas"
@@ -134,17 +120,32 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
         <i class="bi bi-plus"></i>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <style scoped>
+
+.logo-img {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
 .navbarFogon {
   width: 100%;
   display: flex;
   border: 1px solid;
-  margin: 5px 10px 5px 10px;
   background-color: #353333;
 }
+
+
+.titulo-App {
+  color: #a9a8f6;
+  font-size: 50px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
 .clsDivEditando {
   border: 1px solid;
   margin: 15px 10px 5px 10px;
@@ -180,7 +181,9 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
   border: 1px solid;
   margin: 5px 10px 5px 10px;
   border-radius: 20px;
-  color: #a9a8f6;
+  color: #a9a8f6 !important;
+  font-size: medium;
+
 }
 .conectado {
   color: red;
