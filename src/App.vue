@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>EL FOGON PROXIMAMENTE</div>
-  <HelloWorld msg="MENSAJE QUE MANDA" />
+  <HelloWorld/>
 </template>
 
 <style scoped>
