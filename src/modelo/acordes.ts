@@ -12,23 +12,23 @@ export class Parte {
 export class Acordes {
   GetTotalAcordes() {
     let tot = 0
-    for (let i = 0; i < this.orden_partes.length; i++) {
-      tot += this.partes[this.orden_partes[i]].acordes.length
+    for (let i = 0; i < this.ordenPartes.length; i++) {
+      tot += this.partes[this.ordenPartes[i]].acordes.length
     }
     return tot
   }
   partes: Parte[]
-  orden_partes: number[]
+  ordenPartes: number[]
 
-  constructor(partes: Parte[], orden_partes: number[]) {
+  constructor(partes: Parte[], ordenPartes: number[]) {
     this.partes = partes
-    this.orden_partes = orden_partes
+    this.ordenPartes = ordenPartes
   }
 
   GetTodosLosAcordes() {
     let ret: string[] = []
-    for (let i = 0; i < this.orden_partes.length; i++) {
-      ret = ret.concat(this.partes[this.orden_partes[i]].acordes)
+    for (let i = 0; i < this.ordenPartes.length; i++) {
+      ret = ret.concat(this.partes[this.ordenPartes[i]].acordes)
     }
     return ret
   }

@@ -28,8 +28,8 @@ export class Cancion {
 
   public get totalCompases(): number {
     let total = 0
-    for (let i = 0; i < this.acordes.orden_partes.length; i++) {
-      const indice = this.acordes.orden_partes[i]
+    for (let i = 0; i < this.acordes.ordenPartes.length; i++) {
+      const indice = this.acordes.ordenPartes[i]
       total += this.acordes.partes[indice].acordes.length
     }
     return total

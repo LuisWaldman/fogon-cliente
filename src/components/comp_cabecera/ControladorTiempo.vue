@@ -14,8 +14,8 @@ const props = defineProps<{
 const emit = defineEmits(['acciono'])
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
-const segundos_totales = ref(0)
-const segundos_actuales = ref(0)
+const segundosTotales = ref(0)
+const segundosActuales = ref(0)
 const currentCancion = ref(props.cancion)
 const metronomeRef = ref()
 
@@ -25,7 +25,7 @@ watch(
   () => props.compas,
   (newCompas) => {
     currentCompas.value = newCompas
-    segundos_actuales.value =
+    segundosActuales.value =
       currentCancion.value.duracionCompas * currentCompas.value
   },
 )
@@ -39,8 +39,8 @@ watch(
 )
 
 function CalcularCancion(newCancion: Cancion) {
-  segundos_totales.value = newCancion.duracionCancion
-  segundos_actuales.value = newCancion.duracionCompas * currentCompas.value
+  segundosTotales.value = newCancion.duracionCancion
+  segundosActuales.value = newCancion.duracionCompas * currentCompas.value
 }
 
 function play() {
@@ -93,8 +93,8 @@ function updateCompas(newCompas: number) {
             />
 
             <span class="spnTiempo"
-              >{{ tiempo.formatSegundos(segundos_actuales) }} /
-              {{ tiempo.formatSegundos(segundos_totales) }}
+              >{{ tiempo.formatSegundos(segundosActuales) }} /
+              {{ tiempo.formatSegundos(segundosTotales) }}
             </span>
             <button class="boton_controller boton_controllerplay" @click="play">
               <i class="bi bi-play-fill"></i>

@@ -14,11 +14,6 @@ function acciono(valor: string, compas: number = 0) {
   emit('acciono', valor, compas)
 }
 
-function ir_pantalla(valor: string) {
-  //console.log("Acciono--->", valor, compas);
-  window.location.href = `/${valor}`
-}
-
 defineProps<{
   viendo_vista: string
   compas: number
@@ -29,7 +24,7 @@ defineProps<{
   bpm_encompas: number
 }>()
 
-function actualizar_vista() {
+function actualizarVista() {
   ctrlSesion?.value.actualizar_vista()
 }
 
@@ -42,7 +37,7 @@ function stopMetronome() {
   metronomeRef.value.stopMetronome()
 }
 
-defineExpose({ actualizar_vista, startMetronome, stopMetronome })
+defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </script>
 
 <template>
@@ -53,7 +48,6 @@ defineExpose({ actualizar_vista, startMetronome, stopMetronome })
     >
       <p
         class="clase_tocar"
-        @click="ir_pantalla('index')"
         :class="{ active: viendo_vista == 'tocar' }"
         aria-current="page"
       >
@@ -80,7 +74,6 @@ defineExpose({ actualizar_vista, startMetronome, stopMetronome })
       :viendo_vista="viendo_vista"
       :estado="estado"
       @acciono="acciono"
-      @update-compas="(valor) => acciono('update-compas', parseInt(valor))"
     >
     </ControladorTiempo>
 
@@ -103,7 +96,6 @@ defineExpose({ actualizar_vista, startMetronome, stopMetronome })
     <div class="otras_paginas">
       <div
         class="otra_paginas"
-        @click="ir_pantalla('listas')"
         :class="{ active: viendo_vista == 'listas' }"
         v-if="ViendoDetalle"
       >
@@ -121,7 +113,6 @@ defineExpose({ actualizar_vista, startMetronome, stopMetronome })
 
       <div
         class="otra_paginas"
-        @click="ir_pantalla('config')"
         :class="{ active: viendo_vista == 'config' }"
         v-if="ViendoDetalle"
       >

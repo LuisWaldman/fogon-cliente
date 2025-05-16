@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Aplicacion from './aplicacion'
 import { useRoute } from 'vue-router'
-import { onMounted, ref, Ref } from 'vue'
+import { onMounted, ref, type Ref } from 'vue'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
 import { Cancion } from './modelo/cancion'
 import { Acordes } from './modelo/acordes'
