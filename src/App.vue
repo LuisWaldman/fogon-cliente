@@ -17,7 +17,8 @@ onMounted(() => {
 })
 </script>
 
-<template>  <div>
+<template>
+  <div>
     <nav>
       <router-link to="/">Inicio</router-link>
       <router-link to="/editar">Editar</router-link>
