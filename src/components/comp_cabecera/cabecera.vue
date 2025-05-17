@@ -7,7 +7,6 @@ import { itemLista } from '../../modelo/item_lista'
 
 const emit = defineEmits(['acciono'])
 const ctrlSesion = ref()
-const ViendoDetalle = ref(true)
 
 function acciono(valor: string, compas: number = 0) {
   //console.log("Acciono--->", valor, compas);
@@ -41,70 +40,79 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </script>
 
 <template>
-<nav class="navbar navbar-expand-lg w-100" style="background-color: #000; width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
-  <div class="container-fluid">
-    <router-link class="navbar-brand" to="/" style="color: inherit;">
-      <img src="/img/iconogrande.png" alt="Logo" width="50">
-    </router-link>
-    <span class="navbar-title" style="color: inherit; font-size: 1.5rem; margin-left: 10px;">
-      Fogon: Red musical distribuida
-    </span>
+  <nav
+    class="navbar navbar-expand-lg w-100"
+    style="
+      background-color: #000;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+    "
+  >
+    <div class="container-fluid">
+      <router-link class="navbar-brand" to="/" style="color: inherit">
+        <img src="/img/iconogrande.png" alt="Logo" width="50" />
+      </router-link>
+      <span
+        class="navbar-title"
+        style="color: inherit; font-size: 1.5rem; margin-left: 10px"
+      >
+        Fogon: Red musical distribuida
+      </span>
 
-    
-    <ControladorTiempo
-      v-if="$route.path === '/tocar'"
-      :nro_cancion="nro_cancion"
-      :total_canciones="listaCanciones.length"
-      :compas="compas"
-      :cancion="cancion"
-      :viendo_vista="viendo_vista"
-      :estado="estado"
-      @acciono="acciono"
-    >
-    </ControladorTiempo>
+      <ControladorTiempo
+        v-if="$route.path === '/tocar'"
+        :nro_cancion="nro_cancion"
+        :total_canciones="listaCanciones.length"
+        :compas="compas"
+        :cancion="cancion"
+        :viendo_vista="viendo_vista"
+        :estado="estado"
+        @acciono="acciono"
+      >
+      </ControladorTiempo>
 
-    <div class="clsDivEditando" v-if="viendo_vista == 'editar'">
-      <div>
-        <input class="clsEditando" type="text" v-model="cancion.cancion" /> -
-        <input class="clsEditando" type="text" v-model="cancion.banda" />
+      <div class="clsDivEditando" v-if="viendo_vista == 'editar'">
+        <div>
+          <input class="clsEditando" type="text" v-model="cancion.cancion" /> -
+          <input class="clsEditando" type="text" v-model="cancion.banda" />
+        </div>
+      </div>
+
+      <Metronomo
+        v-if="$route.path === '/tocar'"
+        :compas="compas"
+        :estado="estado"
+        ref="metronomeRef"
+        :bpm_encompas="bpm_encompas"
+        :cancion="cancion"
+      ></Metronomo>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <router-link to="/listas">
+              <i class="bi bi-list"> Listas</i>
+            </router-link>
+            <router-link to="/buscar">
+              <i class="bi bi-globe"> Buscar</i>
+            </router-link>
+            <router-link to="/configurar">
+              <i class="bi bi-gear-fill"> Configrar</i>
+            </router-link>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <Metronomo
-      v-if="$route.path === '/tocar'"
-      :compas="compas"
-      :estado="estado"
-      ref="metronomeRef"
-      :bpm_encompas="bpm_encompas"
-      :cancion="cancion"
-    ></Metronomo>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <router-link to="/listas">
-  <i class="bi bi-list">        Listas</i>
-          </router-link>
-        <router-link to="/buscar">
-  
-<i class="bi bi-globe">        Buscar</i>
-          </router-link>
-<router-link to="/configurar">
-  
-            <i class="bi bi-gear-fill">        
-  Configrar</i>
-          </router-link>
-
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
+  </nav>
 </template>
 
 <style scoped>
