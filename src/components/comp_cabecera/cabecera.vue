@@ -41,15 +41,16 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </script>
 
 <template>
-  <nav class="navbarFogon">
-    <router-link to="/" class="logo-link">
-      <img src="/img/iconogrande.png" class="logo-img" alt="Logo" />
+<nav class="navbar navbar-expand-lg w-100" style="background-color: #000; width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
+  <div class="container-fluid">
+    <router-link class="navbar-brand" to="/" style="color: inherit;">
+      <img src="/img/iconogrande.png" alt="Logo" width="50">
     </router-link>
+    <span class="navbar-title" style="color: inherit; font-size: 1.5rem; margin-left: 10px;">
+      Fogon: Red musical distribuida
+    </span>
 
-    <h1 class="titulo-App d-none d-sm-block">
-      <span color="red">Fogon:</span> Red musical distribuida
-    </h1>
-    <div class="d-block d-sm-none">.</div>
+    
     <ControladorTiempo
       v-if="$route.path === '/tocar'"
       :nro_cancion="nro_cancion"
@@ -78,44 +79,32 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
       :cancion="cancion"
     ></Metronomo>
 
-    <div class="otras_paginas" v-if="1 == 2">
-      <div
-        class="otra_paginas"
-        :class="{ active: $route.path === '/listar' }"
-        v-if="ViendoDetalle"
-      >
-        <router-link to="/listar"><i class="bi bi-list"></i>Listas</router-link>
-      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <router-link to="/listas">
+  <i class="bi bi-list">        Listas</i>
+          </router-link>
+        <router-link to="/buscar">
+  
+<i class="bi bi-globe">        Buscar</i>
+          </router-link>
+<router-link to="/configurar">
+  
+            <i class="bi bi-gear-fill">        
+  Configrar</i>
+          </router-link>
 
-      <div
-        class="otra_paginas"
-        :class="{ active: $route.path === '/buscar' }"
-        v-if="ViendoDetalle"
-      >
-        <router-link to="/buscar"
-          ><i class="bi bi-globe"></i> Buscar</router-link
-        >
-      </div>
-
-      <div
-        class="otra_paginas"
-        :class="{ active: $route.path === '/configurar' }"
-        v-if="ViendoDetalle"
-      >
-        <router-link to="/configurar"
-          ><i class="bi bi-gear-fill"></i>Configurar</router-link
-        >
-      </div>
-
-      <div
-        class="otra_paginas"
-        @click="ViendoDetalle = !ViendoDetalle"
-        v-if="!ViendoDetalle"
-      >
-        <i class="bi bi-plus"></i>
-      </div>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
 </template>
 
 <style scoped>
