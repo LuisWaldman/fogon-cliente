@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import Aplicacion from './aplicacion'
-import { useRoute } from 'vue-router'
-import { onMounted, ref, type Ref } from 'vue'
+import { onMounted, ref, watch, type Ref } from 'vue'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
 import { Cancion } from './modelo/cancion'
 import { Acordes } from './modelo/acordes'
 import { Letra } from './modelo/letra'
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
+const cancionref = ref(route.query.cancion)
 const cancion: Ref<Cancion> = ref(
   new Cancion(
     'Cancion no cargada',
@@ -18,14 +19,26 @@ const cancion: Ref<Cancion> = ref(
 )
 
 const aplicacion = new Aplicacion()
+
+// 🔄 Si la URL cambia, actualizar `cancion`
+watch(
+  () => route.query.cancion,
+  (nuevoValor) => {
+    if (nuevoValor) {
+      cancionref.value = nuevoValor
+      aplicacion.tocar(nuevoValor as string)
+    }
+  },
+)
+
 onMounted(() => {
   aplicacion.onMounted()
-  console.log('URL actual:', route.fullPath)
-  console.log('Valor de cancion:', route.query.cancion)
 
-  if (route.query.cancion) {
-    console.log('tocara')
-    aplicacion.tocar(String(route.query.cancion))
+  const urlParams = new URLSearchParams(window.location.search)
+  const cancion = urlParams.get('cancion')
+
+  if (cancion) {
+    aplicacion.tocar(cancion)
   }
 })
 </script>
