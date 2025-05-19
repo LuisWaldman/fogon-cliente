@@ -85,7 +85,7 @@ defineExpose({ Actualizar })
     >
       <div
         style="display: flex; flex-wrap: wrap"
-        :style="{ 'font-size': vista.tamanio_referencia + 'px' }"
+        :style="{ 'font-size': vista.tamanioReferencia + 'px' }"
       >
         <template
           v-for="(renglon, index) in cancion.letras.renglones"

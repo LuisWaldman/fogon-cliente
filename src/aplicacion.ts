@@ -1,4 +1,5 @@
 import { HelperObtenerCancionURL } from './helpers/HelperObtenerCancionURL'
+import type { Cancion } from './modelo/cancion'
 
 export default class Aplicacion {
   async tocar(cancionstr: string): Promise<Cancion> {

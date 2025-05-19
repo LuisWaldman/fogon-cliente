@@ -15,6 +15,7 @@ appStore.tocar(nombreCancion as string)
 <template>
   <div>
     <TocarLetra
+      v-if="appStore.cancion"
       :cancion="appStore.cancion"
       :compas="-1"
       :vista="vistaKaraoke"
