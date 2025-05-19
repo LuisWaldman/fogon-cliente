@@ -20,9 +20,12 @@ const cancion: Ref<Cancion> = ref(
 const aplicacion = new Aplicacion()
 onMounted(() => {
   aplicacion.onMounted()
-  console.log('onMounted', route.query.tocar)
-  if (route.query.tocar) {
-    aplicacion.tocar(String(route.query.tocar))
+  console.log('URL actual:', route.fullPath)
+  console.log('Valor de cancion:', route.query.cancion)
+
+  if (route.query.cancion) {
+    console.log('tocara')
+    aplicacion.tocar(String(route.query.cancion))
   }
 })
 </script>
@@ -38,9 +41,8 @@ onMounted(() => {
       estado=""
       :bpm_encompas="0"
     />
-    <container>
-      <router-view />
-    </container>
+
+    <router-view />
   </div>
 </template>
 

@@ -1,9 +1,12 @@
 import { useRouter } from 'vue-router'
+import { HelperObtenerCancionURL } from './helpers/HelperObtenerCancionURL'
 
 export default class Aplicacion {
-  tocar(cancionstr: string) {
-    console.log('Tocar', cancionstr)
-
+  async tocar(cancionstr: string) {
+    console.log('Tocando canción:', cancionstr)
+    const helperArchivo = new HelperObtenerCancionURL('/canciones')
+    const cancion = await helperArchivo.GetCancion(cancionstr)
+    console.log(cancion)
     const router = useRouter()
     router.push({ path: 'tocar', query: { tocar: 'mi-cancion.mp3' } })
   }

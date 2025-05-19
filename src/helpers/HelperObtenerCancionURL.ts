@@ -1,4 +1,4 @@
-import { Cancion }  from '../modelo/cancion'
+import { Cancion } from '../modelo/cancion'
 import { Letra } from '../modelo/letra'
 import { Acordes, Parte } from '../modelo/acordes'
 
