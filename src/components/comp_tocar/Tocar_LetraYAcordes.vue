@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
-import { Cancion } from '../../../modelo/cancion'
-import { VistaControl } from '../../../modelo/VistaControl'
+import { Cancion } from '../../modelo/cancion'
+import { VistaControl } from '../../modelo/VistaControl'
 
 const props = defineProps<{
   compas: number

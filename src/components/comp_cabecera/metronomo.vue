@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { Cancion } from '../../modelo/cancion'
 const props = defineProps<{
-  cancion: Cancion
   compas: number
   estado: string
   bpm_encompas: number

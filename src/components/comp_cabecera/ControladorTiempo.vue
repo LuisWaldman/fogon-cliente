@@ -15,7 +15,6 @@ defineProps<{
 const emit = defineEmits(['acciono'])
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
-const segundosTotales = ref(0)
 const metronomeRef = ref()
 
 function play() {
@@ -61,8 +60,13 @@ function updateCompas(newCompas: number) {
             />
 
             <span class="spnTiempo"
-              >{{ tiempo.formatSegundos(appStore.cancion?.duracionCompas * currentCompas) }} /
-              {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion ) }}
+              >{{
+                tiempo.formatSegundos(
+                  appStore.cancion?.duracionCompas * currentCompas,
+                )
+              }}
+              /
+              {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
             </span>
             <button class="boton_controller boton_controllerplay" @click="play">
               <i class="bi bi-play-fill"></i>
