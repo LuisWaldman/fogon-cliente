@@ -6,8 +6,6 @@ import { Cancion } from '../modelo/cancion'
 import { itemLista } from '../modelo/item_lista'
 
 export const useAppStore = defineStore('app', () => {
-  const aplicacion = new Aplicacion()
-
   // Estados centrales en Pinia
   const cancion = ref<Cancion | null>(null)
   const listaCanciones = ref<itemLista[]>([])
@@ -18,6 +16,7 @@ export const useAppStore = defineStore('app', () => {
 
   // Método para tocar una canción por ID
   const tocar = async (id: string) => {
+    const aplicacion = new Aplicacion()
     const nueva = await aplicacion.tocar(id)
     if (nueva) {
       cancion.value = nueva

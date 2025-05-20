@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Cancion } from '../../modelo/cancion'
 import { Tiempo } from '../../modelo/tiempo'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useAppStore } from '../../stores/appStore'
 const appStore = useAppStore()
 
-const props = defineProps<{
+defineProps<{
   compas: number
-  cancion: Cancion
   nro_cancion: number
   total_canciones: number
   viendo_vista: string
@@ -20,10 +18,6 @@ const currentCompas = ref(0)
 const segundosTotales = ref(0)
 const segundosActuales = ref(0)
 const metronomeRef = ref()
-
-import { watch } from 'vue'
-
-
 
 function play() {
   emit('acciono', 'play')
@@ -41,14 +35,6 @@ function stop() {
   emit('acciono', 'stop')
 }
 
-function next() {
-  emit('acciono', 'next')
-}
-
-function previous() {
-  emit('acciono', 'previous')
-}
-
 function updateCompas(newCompas: number) {
   emit('acciono', 'compas', newCompas)
 }
@@ -61,7 +47,7 @@ function updateCompas(newCompas: number) {
         <div v-if="viendo_vista == 'editar'"></div>
 
         <div v-if="viendo_vista == 'tocar'">
-          {{ nro_cancion + 1 }} / {{ total_canciones }} {{ appStore.cancion?.cancion }} -
+          {{ appStore.cancion?.cancion }} -
           {{ appStore.cancion?.banda }}
 
           <div style="display: flex; flex-wrap: wrap">
@@ -87,13 +73,6 @@ function updateCompas(newCompas: number) {
             </button>
             <button class="boton_controller" @click="stop">
               <i class="bi bi-stop-fill"></i>
-            </button>
-
-            <button class="boton_controller" @click="previous">
-              <i class="bi bi-skip-backward-fill"></i>
-            </button>
-            <button class="boton_controller" @click="next">
-              <i class="bi bi-skip-forward-fill"></i>
             </button>
           </div>
         </div>

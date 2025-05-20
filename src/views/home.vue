@@ -15,7 +15,7 @@ const cancionesPorBanda = {
       archivo: 'charly-garcia_rasguna-las-piedras',
     },
   ],
-  
+
   Intoxicados: [
     { nombre: 'Casi sin pensar', archivo: 'intoxicados_casi-sin-pensar' },
     { nombre: 'Fuego', archivo: 'intoxicados_fuego' },
