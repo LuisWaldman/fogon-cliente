@@ -83,26 +83,26 @@ const vistaAcordes = ref(
       <TocarLetraAcorde
         v-if="vista.viendo == 'acordes'"
         :cancion="appStore.cancion"
-        :compas="compas"
+        :compas="appStore.compas"
         :vista="vistaLetraYAcordes"
       ></TocarLetraAcorde>
       <TocarLetra
         v-if="vista.viendo == 'karaoke'"
         :cancion="appStore.cancion"
-        :compas="compas"
+        :compas="appStore.compas"
         :vista="vistaKaraoke"
       ></TocarLetra>
       <TocarAcorde
         v-if="vista.viendo == 'soloacordes'"
         :cancion="appStore.cancion"
-        :compas="compas"
+        :compas="appStore.compas"
         :vista="vistaKaraoke"
       ></TocarAcorde>
     </div>
     <div :style="{ width: 100 - vista.largoPrincipal + '%' }">
       <Lateral
         :cancion="appStore.cancion"
-        :compas="compas"
+        :compas="appStore.compas"
         :vista="vistaAcordes"
         :secuencia="vista.secuencia"
         :partes="vista.partes"
