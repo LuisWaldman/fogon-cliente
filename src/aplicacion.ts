@@ -16,6 +16,21 @@ export default class Aplicacion {
     appStore.compas = compas
   }
 
+  play() {
+    const appStore = useAppStore()
+    appStore.estado = 'tocando'
+  }
+
+  pause() {
+    const appStore = useAppStore()
+    appStore.estado = 'pausado'
+  }
+
+  stop() {
+    const appStore = useAppStore()
+    appStore.estado = 'parado'
+  }
+
   constructor() {
     // Inicialización de la aplicación
     console.log('Aplicacion inicializada')

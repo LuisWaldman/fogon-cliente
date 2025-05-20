@@ -1,23 +1,21 @@
 <script setup lang="ts">
-const props = defineProps<{
-  compas: number
-  estado: string
-  bpm_encompas: number
-}>()
+
+import { useAppStore } from '../../stores/appStore'
+const appStore = useAppStore()
 </script>
 
 <template>
   <div>
-    <div class="divPrevia" v-if="estado == 'tocando' && compas < 0">
-      Empieza en {{ 4 - bpm_encompas }}
+    <div class="divPrevia" v-if="appStore.estado == 'tocando' && appStore.compas < 0">
+      Empieza en {{ 4 - appStore.golpeDelCompas }}
     </div>
     <div class="metronono">
-      <div style="display: flex" v-if="estado == 'tocando'">
+      <div style="display: flex" v-if="appStore.estado == 'tocando'">
         <div
-          v-for="n in props.cancion.compasCantidad"
+          v-for="n in appStore.cancion?.compasCantidad"
           :key="n"
           class="beat"
-          :class="{ beat_activo: n - 1 === bpm_encompas }"
+          :class="{ beat_activo: n - 1 === appStore.golpeDelCompas }"
         >
           {{ n }}
         </div>

@@ -17,19 +17,15 @@ const currentCompas = ref(0)
 const metronomeRef = ref()
 
 function play() {
-  emit('acciono', 'play')
-  metronomeRef.value?.startMetronome()
+ appStore.aplicacion.play()
 }
 
 function pause() {
-  console.log(metronomeRef.value)
-  metronomeRef.value?.stopMetronome()
-  emit('acciono', 'pause')
+ appStore.aplicacion.pause()
 }
 
 function stop() {
-  metronomeRef.value?.stopMetronome()
-  emit('acciono', 'stop')
+ appStore.aplicacion.stop()
 }
 
 function updateCompas(newCompas: number) {

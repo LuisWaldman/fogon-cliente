@@ -13,7 +13,7 @@ export const useAppStore = defineStore('app', () => {
   const listaCanciones = ref<itemLista[]>([])
   const nroCancion = ref<number>(1)
   const compas = ref<number>(0)
-  const estado = ref<string>('parado')
+  const estado = ref<string>('No iniciado') // Estado inicial de la aplicación
   const golpeDelCompas = ref<number>(120) // Valor inicial predeterminado
 
   // Método para tocar una canción por ID

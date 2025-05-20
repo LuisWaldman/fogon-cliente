@@ -48,7 +48,7 @@ function acciono(valor: string, compas: number = 0) {
       </ControladorTiempo>
 
       <Metronomo
-        v-if="appStore.estado === 'tocando'"
+        
         :compas="appStore.compas"
         :estado="appStore.estado"
         ref="metronomeRef"
