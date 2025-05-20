@@ -53,7 +53,7 @@ function updateCompas(newCompas: number) {
             <span class="spnTiempo"
               >{{
                 tiempo.formatSegundos(
-                  appStore.cancion?.duracionCompas * currentCompas,
+                  appStore.cancion.duracionCompas * currentCompas,
                 )
               }}
               /
