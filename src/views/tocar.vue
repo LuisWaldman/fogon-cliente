@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { ref, type Ref } from 'vue'
 //import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
-import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_LetraYAcordes.vue'
-import TocarLetraAcorde from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
+import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
+import TocarLetraAcorde from '../components/comp_cabecera/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarAcorde from '../components/comp_cabecera/comp_tocar/Tocar_Acordes.vue'
 import Lateral from '../components/comp_cabecera/comp_tocar/Lateral_Acordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { VistaControl } from '../modelo/VistaControl'
 import type { Cancion } from '../modelo/cancion'
-
 
 const appStore = useAppStore()
 
@@ -16,113 +15,153 @@ const urlParams = new URLSearchParams(window.location.search)
 const nombreCancion = urlParams.get('cancion')
 appStore.tocar(nombreCancion as string)
 
-
-const props = defineProps<{ compas: number, cancion: Cancion, width: number, height: number }>()
-const emit = defineEmits(['acciono']);
+const props = defineProps<{
+  compas: number
+  cancion: Cancion
+  width: number
+  height: number
+}>()
+const emit = defineEmits(['acciono'])
 
 class vista_tocar {
-  viendo: string = "karaoke";
-  secuencia: boolean = true;
-  partes: boolean = true;
-  largo_principal: number = 70;
+  viendo: string = 'karaoke'
+  secuencia: boolean = true
+  partes: boolean = true
+  largo_principal: number = 70
 }
-const vista: Ref<vista_tocar> = ref(new vista_tocar());
-vista.value.viendo = localStorage.getItem("viendo_vista_tocando") || "karaoke";
-vista.value.secuencia = localStorage.getItem("secuencia") == "true" ? true : false;
-vista.value.partes = localStorage.getItem("partes") == "true" ? true : false;
-adecu_ancho();
+const vista: Ref<vista_tocar> = ref(new vista_tocar())
+vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
+vista.value.secuencia =
+  localStorage.getItem('secuencia') == 'true' ? true : false
+vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
+adecu_ancho()
 function cambiar_vista(nvista: string) {
-  vista.value.viendo = nvista;
-  localStorage.setItem("viendo_vista_tocando", nvista);
-  adecu_ancho();
-  
+  vista.value.viendo = nvista
+  localStorage.setItem('viendo_vista_tocando', nvista)
+  adecu_ancho()
 }
 function adecu_ancho() {
   if (vista.value.secuencia || vista.value.partes) {
-    vista.value.largo_principal = 70;
+    vista.value.largo_principal = 70
   } else {
-    vista.value.largo_principal = 100;
+    vista.value.largo_principal = 100
   }
 }
 function click_secuencia() {
-  vista.value.secuencia = !vista.value.secuencia;
-  localStorage.setItem("secuencia", vista.value.secuencia ? "true" : "false");
-  adecu_ancho();
-
+  vista.value.secuencia = !vista.value.secuencia
+  localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')
+  adecu_ancho()
 }
 
-
-
 function click_partes() {
-  vista.value.partes = !vista.value.partes;
-  localStorage.setItem("partes", vista.value.partes ? "true" : "false");
-  adecu_ancho();
+  vista.value.partes = !vista.value.partes
+  localStorage.setItem('partes', vista.value.partes ? 'true' : 'false')
+  adecu_ancho()
 }
 
 function GetStylePantallaPlay() {
   return {
-    width: props.width + "px",
-    height: props.height + "px"
-
+    width: props.width + 'px',
+    height: props.height + 'px',
   }
 }
 
-const vistaLetraYAcordes = ref(new VistaControl(20, 12, 7, "acordes_seguidos", "col-9", props.height - 180));
-const vistaKaraoke = ref(new VistaControl(20, 12, 7, "acordes_seguidos", "col-9", props.height - 180));
-const vistaAcordes = ref(new VistaControl(30, 12, 7, "acordes_seguidos", "col-9", props.height - 240));
-
-
-
+const vistaLetraYAcordes = ref(
+  new VistaControl(20, 12, 7, 'acordes_seguidos', 'col-9', props.height - 180),
+)
+const vistaKaraoke = ref(
+  new VistaControl(20, 12, 7, 'acordes_seguidos', 'col-9', props.height - 180),
+)
+const vistaAcordes = ref(
+  new VistaControl(30, 12, 7, 'acordes_seguidos', 'col-9', props.height - 240),
+)
 </script>
 
 <template>
   <div class="pantallaPlay" :style="GetStylePantallaPlay()">
     <div :style="{ width: vista.largo_principal + '%' }">
-
-      <TocarLetraAcorde v-if="vista.viendo == 'acordes'" :cancion="appStore.cancion"  :compas="compas" :vista="vistaLetraYAcordes"></TocarLetraAcorde>
-      <TocarLetra  v-if="vista.viendo == 'karaoke'" :cancion="appStore.cancion"  :compas="compas" :vista="vistaKaraoke"></TocarLetra>
-      <TocarAcorde  v-if="vista.viendo == 'soloacordes'" :cancion="appStore.cancion"  :compas="compas" :vista="vistaKaraoke"></TocarAcorde>
+      <TocarLetraAcorde
+        v-if="vista.viendo == 'acordes'"
+        :cancion="appStore.cancion"
+        :compas="compas"
+        :vista="vistaLetraYAcordes"
+      ></TocarLetraAcorde>
+      <TocarLetra
+        v-if="vista.viendo == 'karaoke'"
+        :cancion="appStore.cancion"
+        :compas="compas"
+        :vista="vistaKaraoke"
+      ></TocarLetra>
+      <TocarAcorde
+        v-if="vista.viendo == 'soloacordes'"
+        :cancion="appStore.cancion"
+        :compas="compas"
+        :vista="vistaKaraoke"
+      ></TocarAcorde>
     </div>
-    <div :style="{ width: (100 - vista.largo_principal) + '%' }">
-
-      <Lateral :cancion="appStore.cancion" :compas="compas" :vista="vistaAcordes"
-      :secuencia="vista.secuencia" :partes="vista.partes" :width="props.width" :height="props.height"
+    <div :style="{ width: 100 - vista.largo_principal + '%' }">
+      <Lateral
+        :cancion="appStore.cancion"
+        :compas="compas"
+        :vista="vistaAcordes"
+        :secuencia="vista.secuencia"
+        :partes="vista.partes"
+        :width="props.width"
+        :height="props.height"
       ></Lateral>
-
     </div>
-    <div class="dropdown" >
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-eye"></i>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li v-on:click="cambiar_vista('karaoke')"><a class="dropdown-item" href="#">Karaoke</a></li>
-      <li v-on:click="cambiar_vista('acordes')"><a class="dropdown-item" href="#">Acordes</a></li>
-      <li v-on:click="cambiar_vista('soloacordes')"><a class="dropdown-item" href="#">Solo Acordes</a></li>
-      <li v-on:click="cambiar_vista('partitura')"><a class="dropdown-item" href="#">Partitura</a></li>
-      <li><hr class="dropdown-divider"></li>
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <i class="bi bi-eye"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li v-on:click="cambiar_vista('karaoke')">
+          <a class="dropdown-item" href="#">Karaoke</a>
+        </li>
+        <li v-on:click="cambiar_vista('acordes')">
+          <a class="dropdown-item" href="#">Acordes</a>
+        </li>
+        <li v-on:click="cambiar_vista('soloacordes')">
+          <a class="dropdown-item" href="#">Solo Acordes</a>
+        </li>
+        <li v-on:click="cambiar_vista('partitura')">
+          <a class="dropdown-item" href="#">Partitura</a>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
 
-      <li v-on:click="click_secuencia()"><a class="dropdown-item" href="#">
-        <i class="bi bi-check-circle" v-if="vista.secuencia"></i> Secuencia</a></li>
-      <li v-on:click="click_partes()"><a class="dropdown-item" href="#">
-        <i class="bi bi-check-circle" v-if="vista.partes"></i> 
-        Partes</a></li>
+        <li v-on:click="click_secuencia()">
+          <a class="dropdown-item" href="#">
+            <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
+            Secuencia</a
+          >
+        </li>
+        <li v-on:click="click_partes()">
+          <a class="dropdown-item" href="#">
+            <i class="bi bi-check-circle" v-if="vista.partes"></i>
+            Partes</a
+          >
+        </li>
 
-        <li><hr class="dropdown-divider"></li>
-      <li v-on:click="emit('acciono','editar')"><a class="dropdown-item" href="#">
-        <i class="bi bi-pen"></i> Editar</a></li>
-
-         
-    </ul>
+        <li><hr class="dropdown-divider" /></li>
+        <li v-on:click="emit('acciono', 'editar')">
+          <a class="dropdown-item" href="#">
+            <i class="bi bi-pen"></i> Editar</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
-    
-    
- </div>
-
 </template>
 
 <style scoped>
 .pantallaPlay {
-  border: 1px solid ;
+  border: 1px solid;
   display: flex;
 }
 </style>

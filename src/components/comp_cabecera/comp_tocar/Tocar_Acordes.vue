@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Cancion } from '../../modelo/cancion'
+import { Cancion } from '../../../modelo/cancion'
 import { watch } from 'vue'
-import { VistaControl } from '../../modelo/vista_control'
+import { VistaControl } from '../../../modelo/VistaControl'
 
 const props = defineProps<{
   compas: number
@@ -18,9 +18,9 @@ watch(
   () => props.compas,
   (newCompas) => {
     let totalCompases = 0
-    for (let i = 0; i < props.cancion.acordes.orden_partes.length; i++) {
+    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
       let compasesxparte =
-        props.cancion.acordes.partes[props.cancion.acordes.orden_partes[i]]
+        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
           .acordes.length
       if (newCompas < totalCompases + compasesxparte) {
         mostrandoParte.value = i
@@ -36,7 +36,7 @@ watch(
 
 <template>
   <div>
-    <div v-for="(parte, index) in cancion.acordes.orden_partes" :key="index">
+    <div v-for="(parte, index) in cancion.acordes.ordenPartes" :key="index">
       <div>{{ cancion.acordes.partes[parte].nombre }}</div>
       <div style="display: flex; flex-wrap: wrap">
         <div
@@ -45,8 +45,8 @@ watch(
           class="acorde"
           :style="{
             'max-height': vista.alto + 'px',
-            width: vista.tamanio_referencia * 3 + 'px',
-            'font-size': vista.tamanio_referencia + 'px',
+            width: vista.tamanioReferencia * 3 + 'px',
+            'font-size': vista.tamanioReferencia + 'px',
           }"
           :class="{
             compas_actual:
