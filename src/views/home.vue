@@ -1,10 +1,6 @@
 <script setup lang="ts">
 const cancionesPorBanda = {
   'Andrés Calamaro': [
-    {
-      nombre: 'Comedor Piquetero',
-      archivo: 'andres-calamaro_comedor-piquetero',
-    },
     { nombre: 'Tuyo Siempre', archivo: 'andres-calamaro_tuyo-siempre' },
   ],
   'Damas Gratis': [
