@@ -9,6 +9,13 @@ const cancionesPorBanda = {
       archivo: 'damas-gratis_no-te-creas-tan-importante',
     },
   ],
+  'Sui Generis': [
+    {
+      nombre: 'Rasguna las piedras',
+      archivo: 'charly-garcia_rasguna-las-piedras',
+    },
+  ],
+  
   Intoxicados: [
     { nombre: 'Casi sin pensar', archivo: 'intoxicados_casi-sin-pensar' },
     { nombre: 'Fuego', archivo: 'intoxicados_fuego' },
