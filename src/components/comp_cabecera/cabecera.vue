@@ -53,9 +53,9 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img src="/img/iconogrande.png" alt="Logo" width="50" />
       </router-link>
-      
+
       <span
-      v-if="$route.path === '/'"
+        v-if="$route.path === '/'"
         class="navbar-title"
         style="color: inherit; font-size: 1.5rem; margin-left: 10px"
       >
@@ -113,17 +113,11 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
           </li>
         </ul>
       </div>
-
-
-
     </div>
-
-
   </nav>
 </template>
 
 <style scoped>
-
 /* Aumenta el tamaño de la fuente en pantallas grandes */
 @media (min-width: 1024px) {
   .navbar-nav {
@@ -147,8 +141,6 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
     font-size: 1.5rem; /* Hace el botón de despliegue más grande */
   }
 }
-
-
 
 .logo-img {
   height: 6em;

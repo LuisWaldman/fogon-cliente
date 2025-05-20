@@ -23,40 +23,40 @@ const props = defineProps<{
 }>()
 const emit = defineEmits(['acciono'])
 
-class vista_tocar {
+class vistaTocar {
   viendo: string = 'karaoke'
   secuencia: boolean = true
   partes: boolean = true
-  largo_principal: number = 70
+  largoPrincipal: number = 70
 }
-const vista: Ref<vista_tocar> = ref(new vista_tocar())
+const vista: Ref<vistaTocar> = ref(new vistaTocar())
 vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
 vista.value.secuencia =
   localStorage.getItem('secuencia') == 'true' ? true : false
 vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
-adecu_ancho()
-function cambiar_vista(nvista: string) {
+adecuAncho()
+function cambiarVista(nvista: string) {
   vista.value.viendo = nvista
   localStorage.setItem('viendo_vista_tocando', nvista)
-  adecu_ancho()
+  adecuAncho()
 }
-function adecu_ancho() {
+function adecuAncho() {
   if (vista.value.secuencia || vista.value.partes) {
-    vista.value.largo_principal = 70
+    vista.value.largoPrincipal = 70
   } else {
-    vista.value.largo_principal = 100
+    vista.value.largoPrincipal = 100
   }
 }
-function click_secuencia() {
+function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
   localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')
-  adecu_ancho()
+  adecuAncho()
 }
 
-function click_partes() {
+function clickPartes() {
   vista.value.partes = !vista.value.partes
   localStorage.setItem('partes', vista.value.partes ? 'true' : 'false')
-  adecu_ancho()
+  adecuAncho()
 }
 
 function GetStylePantallaPlay() {
@@ -79,7 +79,7 @@ const vistaAcordes = ref(
 
 <template>
   <div class="pantallaPlay" :style="GetStylePantallaPlay()">
-    <div :style="{ width: vista.largo_principal + '%' }">
+    <div :style="{ width: vista.largoPrincipal + '%' }">
       <TocarLetraAcorde
         v-if="vista.viendo == 'acordes'"
         :cancion="appStore.cancion"
@@ -99,7 +99,7 @@ const vistaAcordes = ref(
         :vista="vistaKaraoke"
       ></TocarAcorde>
     </div>
-    <div :style="{ width: 100 - vista.largo_principal + '%' }">
+    <div :style="{ width: 100 - vista.largoPrincipal + '%' }">
       <Lateral
         :cancion="appStore.cancion"
         :compas="compas"
@@ -121,27 +121,27 @@ const vistaAcordes = ref(
         <i class="bi bi-eye"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li v-on:click="cambiar_vista('karaoke')">
+        <li v-on:click="cambiarVista('karaoke')">
           <a class="dropdown-item" href="#">Karaoke</a>
         </li>
-        <li v-on:click="cambiar_vista('acordes')">
+        <li v-on:click="cambiarVista('acordes')">
           <a class="dropdown-item" href="#">Acordes</a>
         </li>
-        <li v-on:click="cambiar_vista('soloacordes')">
+        <li v-on:click="cambiarVista('soloacordes')">
           <a class="dropdown-item" href="#">Solo Acordes</a>
         </li>
-        <li v-on:click="cambiar_vista('partitura')">
+        <li v-on:click="cambiarVista('partitura')">
           <a class="dropdown-item" href="#">Partitura</a>
         </li>
         <li><hr class="dropdown-divider" /></li>
 
-        <li v-on:click="click_secuencia()">
+        <li v-on:click="clickSecuencia()">
           <a class="dropdown-item" href="#">
             <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
             Secuencia</a
           >
         </li>
-        <li v-on:click="click_partes()">
+        <li v-on:click="clickPartes()">
           <a class="dropdown-item" href="#">
             <i class="bi bi-check-circle" v-if="vista.partes"></i>
             Partes</a
