@@ -2,6 +2,8 @@
 import ControladorTiempo from './ControladorTiempo.vue'
 import Metronomo from './metronomo.vue'
 import { useAppStore } from '../../stores/appStore'
+import Button from 'primevue/button';
+
 const appStore = useAppStore()
 
 const emit = defineEmits(['acciono'])
@@ -33,6 +35,7 @@ function acciono(valor: string, compas: number = 0) {
         style="color: inherit; font-size: 1.5rem; margin-left: 10px"
       >
         Fogon: Red musical distribuida
+        <Button>ACA EL VO</Button>
       </span>
 
       <ControladorTiempo
