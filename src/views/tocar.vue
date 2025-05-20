@@ -78,7 +78,11 @@ const vistaAcordes = ref(
 </script>
 
 <template>
-  <div class="pantallaPlay" :style="GetStylePantallaPlay()">
+  <div
+    class="pantallaPlay"
+    :style="GetStylePantallaPlay()"
+    v-if="appStore.cancion"
+  >
     <div :style="{ width: vista.largoPrincipal + '%' }">
       <TocarLetraAcorde
         v-if="vista.viendo == 'acordes'"

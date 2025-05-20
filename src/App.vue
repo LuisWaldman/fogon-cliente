@@ -1,23 +1,10 @@
 <script setup lang="ts">
 import Aplicacion from './aplicacion'
-import { onMounted, ref, watch, type Ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
-import { Cancion } from './modelo/cancion'
-import { Acordes } from './modelo/acordes'
-import { Letra } from './modelo/letra'
 import { useRoute } from 'vue-router'
-
 const route = useRoute()
 const cancionref = ref(route.query.cancion)
-const cancion: Ref<Cancion> = ref(
-  new Cancion(
-    'Cancion no cargada',
-    'sin banda',
-    new Acordes([], []),
-    new Letra([]),
-  ),
-)
-
 const aplicacion = new Aplicacion()
 
 // 🔄 Si la URL cambia, actualizar `cancion`
@@ -45,15 +32,7 @@ onMounted(() => {
 
 <template>
   <div id="contenedor-musical" class="pantalla">
-    <Cabecera
-      viendo_vista="tocar"
-      :compas="0"
-      :cancion="cancion"
-      :nro_cancion="0"
-      :listaCanciones="[]"
-      estado=""
-      :bpm_encompas="0"
-    />
+    <Cabecera />
 
     <router-view />
   </div>

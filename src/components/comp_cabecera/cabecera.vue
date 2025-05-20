@@ -1,45 +1,19 @@
 <script setup lang="ts">
 import ControladorTiempo from './ControladorTiempo.vue'
 import Metronomo from './metronomo.vue'
-import { ref } from 'vue'
-import { itemLista } from '../../modelo/item_lista'
 import { useAppStore } from '../../stores/appStore'
 const appStore = useAppStore()
 
 const emit = defineEmits(['acciono'])
-const ctrlSesion = ref()
 
 function acciono(valor: string, compas: number = 0) {
   //console.log("Acciono--->", valor, compas);
   emit('acciono', valor, compas)
 }
-
-defineProps<{
-  viendo_vista: string
-  compas: number
-  nro_cancion: number
-  listaCanciones: itemLista[]
-  estado: string
-  bpm_encompas: number
-}>()
-
-function actualizarVista() {
-  ctrlSesion?.value.actualizar_vista()
-}
-
-const metronomeRef = ref()
-function startMetronome() {
-  metronomeRef.value.startMetronome()
-}
-
-function stopMetronome() {
-  metronomeRef.value.stopMetronome()
-}
-
-defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </script>
 
 <template>
+  
   <nav
     class="navbar navbar-expand-lg w-100"
     style="
@@ -64,21 +38,21 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
 
       <ControladorTiempo
         v-if="$route.path === '/tocar'"
-        :nro_cancion="nro_cancion"
-        :total_canciones="listaCanciones.length"
-        :compas="compas"
-        :viendo_vista="viendo_vista"
-        :estado="estado"
+        :nro_cancion="1"
+        :total_canciones="1"
+        :compas="appStore.compas"
+        
+        :estado="appStore.estado"
         @acciono="acciono"
       >
       </ControladorTiempo>
 
       <Metronomo
-        v-if="$route.path === '/tocar'"
-        :compas="compas"
-        :estado="estado"
+        v-if="appStore.estado === 'tocando'"
+        :compas="appStore.compas"
+        :estado="appStore.estado"
         ref="metronomeRef"
-        :bpm_encompas="bpm_encompas"
+        :bpm_encompas="appStore.golpeDelCompas"
         :cancion="appStore.cancion"
       ></Metronomo>
 

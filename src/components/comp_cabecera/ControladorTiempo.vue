@@ -9,7 +9,6 @@ defineProps<{
   compas: number
   nro_cancion: number
   total_canciones: number
-  viendo_vista: string
 }>()
 
 const emit = defineEmits(['acciono'])
@@ -43,9 +42,9 @@ function updateCompas(newCompas: number) {
   <div>
     <div style="display: inline">
       <div class="titulocontorltiempo">
-        <div v-if="viendo_vista == 'editar'"></div>
+       
 
-        <div v-if="viendo_vista == 'tocar'">
+        <div >
           {{ appStore.cancion?.cancion }} -
           {{ appStore.cancion?.banda }}
 
