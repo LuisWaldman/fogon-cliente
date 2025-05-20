@@ -1,12 +1,11 @@
 // src/cancion.ts
-export class Reproductor {
-  public duracionCompas: number
+export class Reloj {
+  public duracionCompas: number = 2200 // Duración de un compás en milisegundos
   public estado: 'pausa' | 'iniciando' | 'tocando' = 'pausa'
 
   private intervalId: number | null
 
-  constructor(duracionCompas: number) {
-    this.duracionCompas = duracionCompas
+  constructor() {
     this.intervalId = null
   }
   private IniciaHandler?: () => void
@@ -35,6 +34,7 @@ export class Reproductor {
     }
 
     this.intervalId = setInterval(() => {
+      console.log('Iniciando ciclo')
       if (this.IniciaCicloHandler) {
         this.IniciaCicloHandler()
       }

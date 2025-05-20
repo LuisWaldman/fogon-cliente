@@ -1,10 +1,6 @@
 <script setup lang="ts">
 const cancionesPorBanda = {
   'Andrés Calamaro': [
-    {
-      nombre: 'Comedor Piquetero',
-      archivo: 'andres-calamaro_comedor-piquetero',
-    },
     { nombre: 'Tuyo Siempre', archivo: 'andres-calamaro_tuyo-siempre' },
   ],
   'Damas Gratis': [
@@ -13,6 +9,13 @@ const cancionesPorBanda = {
       archivo: 'damas-gratis_no-te-creas-tan-importante',
     },
   ],
+  'Sui Generis': [
+    {
+      nombre: 'Rasguna las piedras',
+      archivo: 'charly-garcia_rasguna-las-piedras',
+    },
+  ],
+
   Intoxicados: [
     { nombre: 'Casi sin pensar', archivo: 'intoxicados_casi-sin-pensar' },
     { nombre: 'Fuego', archivo: 'intoxicados_fuego' },

@@ -1,42 +1,15 @@
 <script setup lang="ts">
-import { Cancion } from '../../modelo/cancion'
 import ControladorTiempo from './ControladorTiempo.vue'
 import Metronomo from './metronomo.vue'
-import { ref } from 'vue'
-import { itemLista } from '../../modelo/item_lista'
+import { useAppStore } from '../../stores/appStore'
+const appStore = useAppStore()
 
 const emit = defineEmits(['acciono'])
-const ctrlSesion = ref()
 
 function acciono(valor: string, compas: number = 0) {
   //console.log("Acciono--->", valor, compas);
   emit('acciono', valor, compas)
 }
-
-defineProps<{
-  viendo_vista: string
-  compas: number
-  cancion: Cancion
-  nro_cancion: number
-  listaCanciones: itemLista[]
-  estado: string
-  bpm_encompas: number
-}>()
-
-function actualizarVista() {
-  ctrlSesion?.value.actualizar_vista()
-}
-
-const metronomeRef = ref()
-function startMetronome() {
-  metronomeRef.value.startMetronome()
-}
-
-function stopMetronome() {
-  metronomeRef.value.stopMetronome()
-}
-
-defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </script>
 
 <template>
@@ -53,7 +26,9 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img src="/img/iconogrande.png" alt="Logo" width="50" />
       </router-link>
+
       <span
+        v-if="$route.path === '/'"
         class="navbar-title"
         style="color: inherit; font-size: 1.5rem; margin-left: 10px"
       >
@@ -62,30 +37,20 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
 
       <ControladorTiempo
         v-if="$route.path === '/tocar'"
-        :nro_cancion="nro_cancion"
-        :total_canciones="listaCanciones.length"
-        :compas="compas"
-        :cancion="cancion"
-        :viendo_vista="viendo_vista"
-        :estado="estado"
+        :nro_cancion="1"
+        :total_canciones="1"
+        :compas="appStore.compas"
+        :estado="appStore.estado"
         @acciono="acciono"
       >
       </ControladorTiempo>
 
-      <div class="clsDivEditando" v-if="viendo_vista == 'editar'">
-        <div>
-          <input class="clsEditando" type="text" v-model="cancion.cancion" /> -
-          <input class="clsEditando" type="text" v-model="cancion.banda" />
-        </div>
-      </div>
-
       <Metronomo
-        v-if="$route.path === '/tocar'"
-        :compas="compas"
-        :estado="estado"
+        :compas="appStore.compas"
+        :estado="appStore.estado"
         ref="metronomeRef"
-        :bpm_encompas="bpm_encompas"
-        :cancion="cancion"
+        :bpm_encompas="appStore.golpeDelCompas"
+        :cancion="appStore.cancion"
       ></Metronomo>
 
       <button
@@ -116,6 +81,30 @@ defineExpose({ actualizarVista, startMetronome, stopMetronome })
 </template>
 
 <style scoped>
+/* Aumenta el tamaño de la fuente en pantallas grandes */
+@media (min-width: 1024px) {
+  .navbar-nav {
+    font-size: 1.5rem;
+  }
+}
+
+/* Cambia la disposición de los elementos en dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+  }
+
+  .nav-item {
+    margin-bottom: 10px; /* Espaciado entre los ítems */
+  }
+
+  .navbar-toggler {
+    font-size: 1.5rem; /* Hace el botón de despliegue más grande */
+  }
+}
+
 .logo-img {
   height: 6em;
   padding: 1.5em;

@@ -9,8 +9,8 @@ export class Cancion {
   public letras: Letra
   public bpm?: number
   public calidad?: number
-  public compasCantidad?: number
-  public compasUnidad?: number
+  public compasCantidad: number
+  public compasUnidad: number
   public escala?: string
 
   public get duracionCompas(): number {
@@ -24,6 +24,13 @@ export class Cancion {
       return 0
     }
     return (60 / this.bpm) * this.compasCantidad
+  }
+
+  public get duracionGolpe(): number {
+    if (!this.bpm) {
+      return 0
+    }
+    return 60 / this.bpm
   }
 
   public get totalCompases(): number {

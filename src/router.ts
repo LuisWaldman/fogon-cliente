@@ -10,7 +10,7 @@ import Configurar from './views/configurar.vue'
 const routes: RouteRecordRaw[] = [
   { path: '/', component: Home },
   { path: '/editar', component: Editar },
-  { path: '/tocar', component: Tocar },
+  { path: '/tocar', component: Tocar, props: true },
   { path: '/listas', component: Listas },
   { path: '/buscar', component: Buscar },
   { path: '/configurar', component: Configurar },

@@ -1,46 +1,38 @@
 <script setup lang="ts">
 import Aplicacion from './aplicacion'
-import { useRoute } from 'vue-router'
-import { onMounted, ref, type Ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
-import { Cancion } from './modelo/cancion'
-import { Acordes } from './modelo/acordes'
-import { Letra } from './modelo/letra'
-
+import { useRoute } from 'vue-router'
 const route = useRoute()
-const cancion: Ref<Cancion> = ref(
-  new Cancion(
-    'Cancion no cargada',
-    'sin banda',
-    new Acordes([], []),
-    new Letra([]),
-  ),
+const cancionref = ref(route.query.cancion)
+const aplicacion = new Aplicacion()
+
+// 🔄 Si la URL cambia, actualizar `cancion`
+watch(
+  () => route.query.cancion,
+  (nuevoValor) => {
+    if (nuevoValor) {
+      cancionref.value = nuevoValor
+      aplicacion.tocar(nuevoValor as string)
+    }
+  },
 )
 
-const aplicacion = new Aplicacion()
 onMounted(() => {
   aplicacion.onMounted()
-  console.log('URL actual:', route.fullPath)
-  console.log('Valor de cancion:', route.query.cancion)
 
-  if (route.query.cancion) {
-    console.log('tocara')
-    aplicacion.tocar(String(route.query.cancion))
+  const urlParams = new URLSearchParams(window.location.search)
+  const cancion = urlParams.get('cancion')
+
+  if (cancion) {
+    aplicacion.tocar(cancion)
   }
 })
 </script>
 
 <template>
   <div id="contenedor-musical" class="pantalla">
-    <Cabecera
-      viendo_vista="tocar"
-      :compas="0"
-      :cancion="cancion"
-      :nro_cancion="0"
-      :listaCanciones="[]"
-      estado=""
-      :bpm_encompas="0"
-    />
+    <Cabecera />
 
     <router-view />
   </div>
