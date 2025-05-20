@@ -11,21 +11,19 @@ defineProps<{
   total_canciones: number
 }>()
 
-const emit = defineEmits(['acciono'])
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
-const metronomeRef = ref()
 
 function play() {
- appStore.aplicacion.play()
+  appStore.aplicacion.play()
 }
 
 function pause() {
- appStore.aplicacion.pause()
+  appStore.aplicacion.pause()
 }
 
 function stop() {
- appStore.aplicacion.stop()
+  appStore.aplicacion.stop()
 }
 
 function updateCompas(newCompas: number) {
@@ -38,9 +36,7 @@ function updateCompas(newCompas: number) {
   <div>
     <div style="display: inline">
       <div class="titulocontorltiempo">
-       
-
-        <div >
+        <div>
           {{ appStore.cancion?.cancion }} -
           {{ appStore.cancion?.banda }}
 

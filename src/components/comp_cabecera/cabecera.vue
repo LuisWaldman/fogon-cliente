@@ -13,7 +13,6 @@ function acciono(valor: string, compas: number = 0) {
 </script>
 
 <template>
-  
   <nav
     class="navbar navbar-expand-lg w-100"
     style="
@@ -41,14 +40,12 @@ function acciono(valor: string, compas: number = 0) {
         :nro_cancion="1"
         :total_canciones="1"
         :compas="appStore.compas"
-        
         :estado="appStore.estado"
         @acciono="acciono"
       >
       </ControladorTiempo>
 
       <Metronomo
-        
         :compas="appStore.compas"
         :estado="appStore.estado"
         ref="metronomeRef"

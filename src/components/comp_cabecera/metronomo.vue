@@ -1,12 +1,14 @@
 <script setup lang="ts">
-
 import { useAppStore } from '../../stores/appStore'
 const appStore = useAppStore()
 </script>
 
 <template>
   <div>
-    <div class="divPrevia" v-if="appStore.estado == 'tocando' && appStore.compas < 0">
+    <div
+      class="divPrevia"
+      v-if="appStore.estado == 'tocando' && appStore.compas < 0"
+    >
       Empieza en {{ 4 - appStore.golpeDelCompas }}
     </div>
     <div class="metronono">
