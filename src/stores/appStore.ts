@@ -4,12 +4,21 @@ import { ref } from 'vue'
 import Aplicacion from '../aplicacion'
 import { Cancion } from '../modelo/cancion'
 import { itemLista } from '../modelo/item_lista'
+import { Acordes } from '../modelo/acordes'
+import { Letra } from '../modelo/letra'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
 
   // Estados centrales en Pinia
-  const cancion = ref<Cancion | null>(null)
+  const cancion = ref<Cancion>(
+    new Cancion(
+      'Cancion no cargada',
+      'sin banda',
+      new Acordes([], []),
+      new Letra([]),
+    ),
+  )
   const listaCanciones = ref<itemLista[]>([])
   const nroCancion = ref<number>(1)
   const compas = ref<number>(-2)
