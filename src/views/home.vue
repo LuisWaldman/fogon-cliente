@@ -50,15 +50,21 @@ const cancionesPorBanda = {
 
     <p>Por ahora, presentamos las siguientes canciones:</p>
   </div>
-  <div v-for="(canciones, banda) in cancionesPorBanda" :key="banda">
-    <h2>{{ banda }}</h2>
-    <ul>
-      <li v-for="(cancion, index) in canciones" :key="index">
-        <router-link :to="'/tocar?cancion=' + cancion.archivo">{{
-          cancion.nombre
-        }}</router-link>
-      </li>
-    </ul>
+  <div class="row">
+    <div
+      class="col-4"
+      v-for="(canciones, banda) in cancionesPorBanda"
+      :key="banda"
+    >
+      <h2>{{ banda }}</h2>
+      <ul>
+        <li v-for="(cancion, index) in canciones" :key="index">
+          <router-link :to="'/tocar?cancion=' + cancion.archivo">{{
+            cancion.nombre
+          }}</router-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -66,5 +72,7 @@ const cancionesPorBanda = {
   font-size: x-large;
 }
 .home {
+  width: 100%;
+  padding: 20px;
 }
 </style>
