@@ -134,9 +134,6 @@ const vistaAcordes = ref(
         <li v-on:click="cambiarVista('soloacordes')">
           <a class="dropdown-item" href="#">Solo Acordes</a>
         </li>
-        <li v-on:click="cambiarVista('partitura')">
-          <a class="dropdown-item" href="#">Partitura</a>
-        </li>
         <li><hr class="dropdown-divider" /></li>
 
         <li v-on:click="clickSecuencia()">
@@ -152,12 +149,6 @@ const vistaAcordes = ref(
           >
         </li>
 
-        <li><hr class="dropdown-divider" /></li>
-        <li v-on:click="emit('acciono', 'editar')">
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-pen"></i> Editar</a
-          >
-        </li>
       </ul>
     </div>
   </div>
