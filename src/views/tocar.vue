@@ -7,21 +7,12 @@ import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { VistaControl } from '../modelo/VistaControl'
-import type { Cancion } from '../modelo/cancion'
 
 const appStore = useAppStore()
 
 const urlParams = new URLSearchParams(window.location.search)
 const nombreCancion = urlParams.get('cancion')
 appStore.tocar(nombreCancion as string)
-
-const props = defineProps<{
-  compas: number
-  cancion: Cancion
-  width: number
-  height: number
-}>()
-const emit = defineEmits(['acciono'])
 
 class vistaTocar {
   viendo: string = 'karaoke'
@@ -61,19 +52,45 @@ function clickPartes() {
 
 function GetStylePantallaPlay() {
   return {
-    width: props.width + 'px',
-    height: props.height + 'px',
+    width: window.innerWidth + 'px',
+    height: window.innerHeight + 'px',
   }
 }
 
+/*
+ ;
+  public height: number = ;
+*/
+
 const vistaLetraYAcordes = ref(
-  new VistaControl(20, 12, 7, 'acordes_seguidos', 'col-9', props.height - 180),
+  new VistaControl(
+    20,
+    12,
+    7,
+    'acordes_seguidos',
+    'col-9',
+    window.innerHeight - 180,
+  ),
 )
 const vistaKaraoke = ref(
-  new VistaControl(20, 12, 7, 'acordes_seguidos', 'col-9', props.height - 180),
+  new VistaControl(
+    20,
+    12,
+    7,
+    'acordes_seguidos',
+    'col-9',
+    window.innerHeight - 180,
+  ),
 )
 const vistaAcordes = ref(
-  new VistaControl(30, 12, 7, 'acordes_seguidos', 'col-9', props.height - 240),
+  new VistaControl(
+    30,
+    12,
+    7,
+    'acordes_seguidos',
+    'col-9',
+    window.innerHeight - 240,
+  ),
 )
 </script>
 
@@ -84,6 +101,7 @@ const vistaAcordes = ref(
     v-if="appStore.cancion"
   >
     <div :style="{ width: vista.largoPrincipal + '%' }">
+      r
       <TocarLetraAcorde
         v-if="vista.viendo == 'acordes'"
         :cancion="appStore.cancion"
@@ -110,8 +128,6 @@ const vistaAcordes = ref(
         :vista="vistaAcordes"
         :secuencia="vista.secuencia"
         :partes="vista.partes"
-        :width="props.width"
-        :height="props.height"
       ></Lateral>
     </div>
     <div class="dropdown">
@@ -148,7 +164,6 @@ const vistaAcordes = ref(
             Partes</a
           >
         </li>
-
       </ul>
     </div>
   </div>

@@ -62,8 +62,6 @@ function acciono(valor: string, compas: number = 0) {
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-
     </div>
   </nav>
 </template>
