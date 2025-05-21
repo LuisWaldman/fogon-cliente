@@ -8,8 +8,6 @@ import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { VistaControl } from '../modelo/VistaControl'
 import type { Cancion } from '../modelo/cancion'
-import Splitter from 'primevue/splitter';
-import SplitterPanel from 'primevue/splitterpanel';
 
 const appStore = useAppStore()
 
@@ -80,17 +78,12 @@ const vistaAcordes = ref(
 </script>
 
 <template>
-
-
   <div
     class="pantallaPlay"
     :style="GetStylePantallaPlay()"
     v-if="appStore.cancion"
   >
-
-  <Splitter  class="pantallaPlay">
-    <SplitterPanel class="flex items-center justify-center">
-
+    <div :style="{ width: vista.largoPrincipal + '%' }">
       <TocarLetraAcorde
         v-if="vista.viendo == 'acordes'"
         :cancion="appStore.cancion"
@@ -109,9 +102,8 @@ const vistaAcordes = ref(
         :compas="appStore.compas"
         :vista="vistaKaraoke"
       ></TocarAcorde>
-
-    </SplitterPanel>
-    <SplitterPanel class="flex items-center justify-center">
+    </div>
+    <div :style="{ width: 100 - vista.largoPrincipal + '%' }">
       <Lateral
         :cancion="appStore.cancion"
         :compas="appStore.compas"
@@ -121,10 +113,7 @@ const vistaAcordes = ref(
         :width="props.width"
         :height="props.height"
       ></Lateral>
-
-    </SplitterPanel>
-</Splitter>
-
+    </div>
     <div class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
@@ -145,6 +134,9 @@ const vistaAcordes = ref(
         <li v-on:click="cambiarVista('soloacordes')">
           <a class="dropdown-item" href="#">Solo Acordes</a>
         </li>
+        <li v-on:click="cambiarVista('partitura')">
+          <a class="dropdown-item" href="#">Partitura</a>
+        </li>
         <li><hr class="dropdown-divider" /></li>
 
         <li v-on:click="clickSecuencia()">
@@ -160,6 +152,12 @@ const vistaAcordes = ref(
           >
         </li>
 
+        <li><hr class="dropdown-divider" /></li>
+        <li v-on:click="emit('acciono', 'editar')">
+          <a class="dropdown-item" href="#">
+            <i class="bi bi-pen"></i> Editar</a
+          >
+        </li>
       </ul>
     </div>
   </div>

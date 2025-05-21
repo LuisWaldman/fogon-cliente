@@ -2,7 +2,6 @@
 import ControladorTiempo from './ControladorTiempo.vue'
 import Metronomo from './metronomo.vue'
 import { useAppStore } from '../../stores/appStore'
-import Button from 'primevue/button';
 
 const appStore = useAppStore()
 
@@ -31,11 +30,10 @@ function acciono(valor: string, compas: number = 0) {
 
       <span
         v-if="$route.path === '/'"
-        class="navbar-title"
-        style="color: inherit; font-size: 1.5rem; margin-left: 10px"
+        class="navbar-brand"
+        style="color: inherit; font-size: 1.5rem"
       >
         Fogon: Red musical distribuida
-        <Button>ACA EL VO</Button>
       </span>
 
       <ControladorTiempo
@@ -64,21 +62,8 @@ function acciono(valor: string, compas: number = 0) {
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <router-link to="/listas">
-              <i class="bi bi-list"> Listas</i>
-            </router-link>
-            <router-link to="/buscar">
-              <i class="bi bi-globe"> Buscar</i>
-            </router-link>
-            <router-link to="/configurar">
-              <i class="bi bi-gear-fill"> Configrar</i>
-            </router-link>
-          </li>
-        </ul>
-      </div>
+
+
     </div>
   </nav>
 </template>
