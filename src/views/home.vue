@@ -2,6 +2,7 @@
 const cancionesPorBanda = {
   'Andrés Calamaro': [
     { nombre: 'Tuyo Siempre', archivo: 'andres-calamaro_tuyo-siempre' },
+    { nombre: 'Flaca', archivo: 'andres-calamaro_flaca' },
   ],
   'Damas Gratis': [
     {
@@ -15,18 +16,25 @@ const cancionesPorBanda = {
       archivo: 'charly-garcia_rasguna-las-piedras',
     },
   ],
-
   Intoxicados: [
     { nombre: 'Casi sin pensar', archivo: 'intoxicados_casi-sin-pensar' },
     { nombre: 'Fuego', archivo: 'intoxicados_fuego' },
     { nombre: 'Fuiste lo mejor', archivo: 'intoxicados_fuiste-lo-mejor' },
     { nombre: 'Homero', archivo: 'intoxicados_homero' },
     { nombre: 'Nunca quise', archivo: 'intoxicados_nunca-quise' },
+    {
+      nombre: 'Esta Saliendo el Sol',
+      archivo: 'intoxicados_esta-saliendo-el-sol',
+    },
   ],
   'Joaquín Sabina': [
     {
       nombre: 'A la orilla de la chimenea',
       archivo: 'joaquin-sabina_a-la-orilla-de-la-chimenea',
+    },
+    {
+      nombre: 'La flaca',
+      archivo: 'joaquin-sabina_la-flaca',
     },
   ],
   'Viejas Locas': [
@@ -37,6 +45,21 @@ const cancionesPorBanda = {
     { nombre: 'Buey', archivo: 'viejas-locas_buey' },
     { nombre: 'Leganlizenla', archivo: 'viejas-locas_leganlizenla' },
     { nombre: 'Volver a casa', archivo: 'viejas-locas_volver-a-casa' },
+  ],
+
+  'Nuri Profe': [
+    { nombre: 'Minuet', archivo: 'intoxicados_casi-sin-pensar' },
+    { nombre: 'Acordes en el modo (RE)', archivo: 'intoxicados_fuego' },
+    {
+      nombre: 'Dont Wanna Leave You Blues',
+      archivo: 'intoxicados_fuiste-lo-mejor',
+    },
+    { nombre: 'Air', archivo: 'intoxicados_homero' },
+    { nombre: 'Gavotte', archivo: 'intoxicados_nunca-quise' },
+    {
+      nombre: 'Seventh Street Blues',
+      archivo: 'intoxicados_esta-saliendo-el-sol',
+    },
   ],
 }
 </script>
