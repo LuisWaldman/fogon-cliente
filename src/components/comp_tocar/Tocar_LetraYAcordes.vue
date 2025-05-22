@@ -126,7 +126,7 @@ defineExpose({ Actualizar })
       class="componenteMusical"
       v-if="letras.length > 0 && cancion.letras.renglones.length > 0"
     >
-      <div v-if="letras.length == 0"></div>
+     
       <div
         ref="letraDiv"
         class="overflow-auto divDeLetra"
@@ -147,7 +147,7 @@ defineExpose({ Actualizar })
             >
               <div
                 v-if="
-                  letras[index][index_aco] &&
+                  
                   !letras[index][index_aco].includes('/n')
                 "
                 :class="{
