@@ -101,7 +101,6 @@ const vistaAcordes = ref(
     v-if="appStore.cancion"
   >
     <div :style="{ width: vista.largoPrincipal + '%' }">
-      r
       <TocarLetraAcorde
         v-if="vista.viendo == 'acordes'"
         :cancion="appStore.cancion"
