@@ -120,7 +120,7 @@ const vistaAcordes = ref(
         :vista="vistaKaraoke"
       ></TocarAcorde>
     </div>
-    <div :style="{ width: 100 - vista.largoPrincipal + '%' }">
+    <div :style="{ width: 100 - vista.largoPrincipal + '%' }" style="position: absolute; right: 0">
       <Lateral
         :cancion="appStore.cancion"
         :compas="appStore.compas"
@@ -128,8 +128,8 @@ const vistaAcordes = ref(
         :secuencia="vista.secuencia"
         :partes="vista.partes"
       ></Lateral>
-    </div>
-    <div class="dropdown">
+      
+    <div class="dropdown" style="position: absolute; right: 0; top: 0">
       <button
         class="btn btn-secondary dropdown-toggle"
         type="button"
@@ -165,6 +165,7 @@ const vistaAcordes = ref(
         </li>
       </ul>
     </div>
+    </div>
   </div>
 </template>
 
@@ -172,5 +173,13 @@ const vistaAcordes = ref(
 .pantallaPlay {
   border: 1px solid;
   display: flex;
+}
+
+.dropdown {
+  display: relative;
+  right: 0;  
+
+
+
 }
 </style>
