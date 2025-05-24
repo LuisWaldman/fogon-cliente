@@ -61,9 +61,8 @@ watch(
   },
 )
 
-function cambiar(id: number) {
-  sonidoxgolpe.value[id] =
-    (sonidoxgolpe.value[id] + 1) % instrumentosBateria.length
+function cambiar(id: number, idx: number = 0) {
+  sonidoxgolpe.value[id] = idx    
 }
 </script>
 
@@ -71,10 +70,10 @@ function cambiar(id: number) {
   <div>
     <div
       class="divPrevia"
-      v-if="appStore.estado == 'tocando' && appStore.compas < 0"
-    >
+      v-if="appStore.estado == 'tocando' && appStore.compas < 0">
       Empieza en {{ 4 - appStore.golpeDelCompas }}
     </div>
+    
     <div class="metronono">
       <div style="display: flex">
         <div
@@ -100,22 +99,45 @@ function cambiar(id: number) {
         </div>
       </div>
 
-      <div style="display: flex" v-if="midiCargado">
-        <div
+<div>
+
+<div style="display: flex;" v-if="midiCargado">
+  
+  <div class="dropdown"
+  
           v-for="n in appStore.cancion?.compasCantidad"
           :key="n"
-          @click="cambiar(n)"
-          class="beat"
-          :class="{
-            beat_activo:
-              n - 1 === appStore.golpeDelCompas &&
-              appStore.estado === 'tocando',
-          }"
+  >
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {{  instrumentosBateria[sonidoxgolpe[n]].icono }}
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li
+          v-for="(instrumento, idx) in instrumentosBateria"
+          :key="idx"
         >
-          {{ instrumentosBateria[sonidoxgolpe[n]].icono }}
-        </div>
-      </div>
+          <a class="dropdown-item" @click="cambiar(n, idx)">
+            {{ instrumento.icono }} {{ instrumento.nombre }}
+          </a>
+        </li>
+      </ul>
     </div>
+
+</div>
+
+
+</div>
+
+      
+    </div>
+
+
   </div>
 </template>
 
