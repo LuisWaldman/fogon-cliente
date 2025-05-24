@@ -52,7 +52,7 @@ const cancionesPorBanda = {
     { nombre: 'Acordes en el modo (RE)', archivo: 'intoxicados_fuego' },
     {
       nombre: 'Dont Wanna Leave You Blues',
-      archivo: 'intoxicados_fuiste-lo-mejor',
+      archivo: 'nuri-profe_dont-wanna',
     },
     { nombre: 'Air', archivo: 'intoxicados_homero' },
     { nombre: 'Gavotte', archivo: 'intoxicados_nunca-quise' },
