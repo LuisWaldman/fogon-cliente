@@ -27,7 +27,7 @@ function iniciar() {
   }
   console.log('Cargar')
   midiPlayer = new MidiPlayer()
-  fetch('Public/InstrumentosMIDI/bateria.json')
+  fetch('InstrumentosMIDI/bateria.json')
     .then((response) => response.json())
     .then((samples) => {
       midiPlayer.setInstrument(samples)
