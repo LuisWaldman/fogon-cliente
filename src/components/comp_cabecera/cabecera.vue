@@ -47,6 +47,7 @@ function acciono(valor: string, compas: number = 0) {
       </ControladorTiempo>
 
       <Metronomo
+        v-if="$route.path === '/tocar'"
         :compas="appStore.compas"
         :estado="appStore.estado"
         ref="metronomeRef"
