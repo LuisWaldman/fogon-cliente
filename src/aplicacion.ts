@@ -39,7 +39,9 @@ export default class Aplicacion {
     }
   }
 
-  detenerReproduccion() {}
+  detenerReproduccion() {
+    this.reloj.pausar()
+  }
 
   play() {
     const appStore = useAppStore()
