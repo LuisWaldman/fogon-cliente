@@ -6,7 +6,7 @@ let midiPlayer = new MidiPlayer()
 import { useAppStore } from '../../stores/appStore'
 const appStore = useAppStore()
 const midiCargado = ref(false)
-let sonidoxgolpe = new ref([1, 1, 1, 1, 1, 1, 1, 1, 1])
+let sonidoxgolpe = ref([1, 1, 1, 1, 1, 1, 1, 1, 1])
 const instrumentosBateria = [
   { nota: '', nombre: 'Silencio', icono: '' }, // Representa la profundidad del bombo
   { nota: 'C1', nombre: 'Bombo', icono: '🪘' }, // Representa la profundidad del bombo
