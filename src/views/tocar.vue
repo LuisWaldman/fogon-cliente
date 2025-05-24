@@ -120,7 +120,10 @@ const vistaAcordes = ref(
         :vista="vistaKaraoke"
       ></TocarAcorde>
     </div>
-    <div :style="{ width: 100 - vista.largoPrincipal + '%' }">
+    <div
+      :style="{ width: 100 - vista.largoPrincipal + '%' }"
+      style="position: absolute; right: 0"
+    >
       <Lateral
         :cancion="appStore.cancion"
         :compas="appStore.compas"
@@ -128,42 +131,43 @@ const vistaAcordes = ref(
         :secuencia="vista.secuencia"
         :partes="vista.partes"
       ></Lateral>
-    </div>
-    <div class="dropdown">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <i class="bi bi-eye"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li v-on:click="cambiarVista('karaoke')">
-          <a class="dropdown-item" href="#">Karaoke</a>
-        </li>
-        <li v-on:click="cambiarVista('acordes')">
-          <a class="dropdown-item" href="#">Acordes</a>
-        </li>
-        <li v-on:click="cambiarVista('soloacordes')">
-          <a class="dropdown-item" href="#">Solo Acordes</a>
-        </li>
-        <li><hr class="dropdown-divider" /></li>
 
-        <li v-on:click="clickSecuencia()">
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
-            Secuencia</a
-          >
-        </li>
-        <li v-on:click="clickPartes()">
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-check-circle" v-if="vista.partes"></i>
-            Partes</a
-          >
-        </li>
-      </ul>
+      <div class="dropdown" style="position: absolute; right: 0; top: 0">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="bi bi-eye"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li v-on:click="cambiarVista('karaoke')">
+            <a class="dropdown-item" href="#">Karaoke</a>
+          </li>
+          <li v-on:click="cambiarVista('acordes')">
+            <a class="dropdown-item" href="#">Acordes</a>
+          </li>
+          <li v-on:click="cambiarVista('soloacordes')">
+            <a class="dropdown-item" href="#">Solo Acordes</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+
+          <li v-on:click="clickSecuencia()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
+              Secuencia</a
+            >
+          </li>
+          <li v-on:click="clickPartes()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.partes"></i>
+              Partes</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -172,5 +176,10 @@ const vistaAcordes = ref(
 .pantallaPlay {
   border: 1px solid;
   display: flex;
+}
+
+.dropdown {
+  display: relative;
+  right: 0;
 }
 </style>

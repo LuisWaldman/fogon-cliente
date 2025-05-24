@@ -10,13 +10,13 @@ let sonidoxgolpe = ref([1, 1, 1, 1, 1, 1, 1, 1, 1])
 const instrumentosBateria = [
   { nota: '', nombre: 'Silencio', icono: '' }, // Representa la profundidad del bombo
   { nota: 'C1', nombre: 'Bombo', icono: '🪘' }, // Representa la profundidad del bombo
-  { nota: 'D1', nombre: 'Redoblante', icono: '🪘' }, // Sonido característico y versátil
-  { nota: 'F#1', nombre: 'Hi-Hat cerrado', icono: '🪇' }, // Indica el cierre del sonido
-  { nota: 'A#1', nombre: 'Hi-Hat abierto', icono: '🔔' }, // Más resonante
-  { nota: 'F1', nombre: 'Tom bajo', icono: '🎵' }, // Representa su tono más grave
-  { nota: 'A1', nombre: 'Tom medio', icono: '🥁' }, // Sonido intermedio
-  { nota: 'C2', nombre: 'Tom alto', icono: '🥁' }, // Tono más agudo
-  { nota: 'C#2', nombre: 'Crash', icono: '💥' }, // Representa el impacto del crash
+  { nota: 'E4', nombre: 'Caja', icono: '🥁' }, // Sonido intermedio
+  { nota: 'A#3', nombre: 'Matraca', icono: '🪇' }, // Indica el cierre del sonido
+  { nota: 'C#3', nombre: 'Platillo cerrado', icono: '🔔>' }, // Más resonante
+  { nota: 'D#3', nombre: 'Platillo abierto', icono: '🔔<' }, // Más resonante
+  { nota: 'G#4', nombre: 'Triangulo', icono: '🎵' }, // Representa su tono más grave
+  { nota: 'C5', nombre: 'Silbato', icono: '🪈' }, // Tono más agudo
+  { nota: 'F6', nombre: 'Crash', icono: '🦶' }, // Representa el impacto del crash
 ]
 
 function iniciar() {
@@ -61,9 +61,8 @@ watch(
   },
 )
 
-function cambiar(id: number) {
-  sonidoxgolpe.value[id] =
-    (sonidoxgolpe.value[id] + 1) % instrumentosBateria.length
+function cambiar(id: number, idx: number = 0) {
+  sonidoxgolpe.value[id] = idx
 }
 </script>
 
@@ -75,6 +74,7 @@ function cambiar(id: number) {
     >
       Empieza en {{ 4 - appStore.golpeDelCompas }}
     </div>
+
     <div class="metronono">
       <div style="display: flex">
         <div
@@ -100,19 +100,30 @@ function cambiar(id: number) {
         </div>
       </div>
 
-      <div style="display: flex" v-if="midiCargado">
-        <div
-          v-for="n in appStore.cancion?.compasCantidad"
-          :key="n"
-          @click="cambiar(n)"
-          class="beat"
-          :class="{
-            beat_activo:
-              n - 1 === appStore.golpeDelCompas &&
-              appStore.estado === 'tocando',
-          }"
-        >
-          {{ instrumentosBateria[sonidoxgolpe[n]].icono }}
+      <div>
+        <div style="display: flex" v-if="midiCargado">
+          <div
+            class="dropdown"
+            v-for="n in appStore.cancion?.compasCantidad"
+            :key="n"
+          >
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {{ instrumentosBateria[sonidoxgolpe[n]].icono }}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li v-for="(instrumento, idx) in instrumentosBateria" :key="idx">
+                <a class="dropdown-item" @click="cambiar(n, idx)">
+                  {{ instrumento.icono }} {{ instrumento.nombre }}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
