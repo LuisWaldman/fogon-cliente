@@ -161,4 +161,27 @@ function cambiar(id: number, idx: number = 0) {
   padding: 20px;
   border: 1px solid red;
 }
+
+@media (max-width: 600px) {
+  .metronono {
+    font-size: 14px;
+    padding: 2px;
+  }
+  .beat {
+    font-size: 14px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 2px;
+  }
+  .divPrevia {
+    font-size: 32px;
+    top: 80px;
+    left: 20px;
+    padding: 6px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+}
 </style>
