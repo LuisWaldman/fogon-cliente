@@ -46,20 +46,15 @@ const cancionesPorBanda = {
     { nombre: 'Leganlizenla', archivo: 'viejas-locas_leganlizenla' },
     { nombre: 'Volver a casa', archivo: 'viejas-locas_volver-a-casa' },
   ],
-
   'Nuri Profe': [
     { nombre: 'Minuet', archivo: 'nuri-profe_menuet' },
-    { nombre: 'Acordes en el modo (RE)', archivo: 'intoxicados_fuego' },
+    { nombre: 'Acordes en el modo (RE)', archivo: 'nuri-profe_acordesmodod' },
     {
       nombre: 'Dont Wanna Leave You Blues',
       archivo: 'nuri-profe_dont-wanna',
     },
-    { nombre: 'Air', archivo: 'intoxicados_homero' },
-    { nombre: 'Gavotte', archivo: 'intoxicados_nunca-quise' },
-    {
-      nombre: 'Seventh Street Blues',
-      archivo: 'intoxicados_esta-saliendo-el-sol',
-    },
+    { nombre: 'Air', archivo: 'nuri-profe_air' },
+    { nombre: 'Gavotte', archivo: 'nuri-profe_gavote' },
   ],
 }
 </script>

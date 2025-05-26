@@ -77,7 +77,6 @@ function cambiar(id: number, idx: number = 0) {
 
     <div class="metronono">
       <div style="display: flex">
-        
         <div
           v-for="n in appStore.cancion.compasCantidad * 1"
           :key="n"
