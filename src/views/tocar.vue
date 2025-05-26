@@ -64,9 +64,9 @@ function GetStylePantallaPlay() {
 
 const vistaLetraYAcordes = ref(
   new VistaControl(
-    20,
-    12,
-    7,
+    14,
+    9,
+    5,
     'acordes_seguidos',
     'col-9',
     window.innerHeight - 180,
@@ -74,7 +74,7 @@ const vistaLetraYAcordes = ref(
 )
 const vistaKaraoke = ref(
   new VistaControl(
-    20,
+    16,
     12,
     7,
     'acordes_seguidos',
@@ -84,7 +84,7 @@ const vistaKaraoke = ref(
 )
 const vistaAcordes = ref(
   new VistaControl(
-    30,
+    25,
     12,
     7,
     'acordes_seguidos',
@@ -95,85 +95,87 @@ const vistaAcordes = ref(
 </script>
 
 <template>
-  <div class="container">
-  <div
-    class="pantallaPlay row"
-    :style="GetStylePantallaPlay()"
-    v-if="appStore.cancion"
-    
-  >
-    <div class="col-9">
-      <TocarLetraAcorde
-        v-if="vista.viendo == 'acordes'"
-        :cancion="appStore.cancion"
-        :compas="appStore.compas"
-        :vista="vistaLetraYAcordes"
-      ></TocarLetraAcorde>
-      <TocarLetra
-        v-if="vista.viendo == 'karaoke'"
-        :cancion="appStore.cancion"
-        :compas="appStore.compas"
-        :vista="vistaKaraoke"
-      ></TocarLetra>
-      <TocarAcorde
-        v-if="vista.viendo == 'soloacordes'"
-        :cancion="appStore.cancion"
-        :compas="appStore.compas"
-        :vista="vistaKaraoke"
-      ></TocarAcorde>
-    </div>
-    <div class="col-3"
-      style="position: absolute; right: 0"
+  <div>
+    <div
+      class="pantallaPlay row"
+      :style="GetStylePantallaPlay()"
+      v-if="appStore.cancion"
     >
-      <Lateral
-        :cancion="appStore.cancion"
-        :compas="appStore.compas"
-        :vista="vistaAcordes"
-        :secuencia="vista.secuencia"
-        :partes="vista.partes"
-      ></Lateral>
+      <div class="col-8 columnas">
+        <TocarLetraAcorde
+          v-if="vista.viendo == 'acordes'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          :vista="vistaLetraYAcordes"
+        ></TocarLetraAcorde>
+        <TocarLetra
+          v-if="vista.viendo == 'karaoke'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          :vista="vistaKaraoke"
+        ></TocarLetra>
+        <TocarAcorde
+          v-if="vista.viendo == 'soloacordes'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          :vista="vistaKaraoke"
+        ></TocarAcorde>
+      </div>
+      <div class="col-4 columnas">
+        <Lateral
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          :vista="vistaAcordes"
+          :secuencia="vista.secuencia"
+          :partes="vista.partes"
+        ></Lateral>
 
-      <div class="dropdown" style="position: absolute; right: 0; top: 0">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="bi bi-eye"></i>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li v-on:click="cambiarVista('karaoke')">
-            <a class="dropdown-item" href="#">Karaoke</a>
-          </li>
-          <li v-on:click="cambiarVista('acordes')">
-            <a class="dropdown-item" href="#">Acordes</a>
-          </li>
-          <li v-on:click="cambiarVista('soloacordes')">
-            <a class="dropdown-item" href="#">Solo Acordes</a>
-          </li>
-          <li><hr class="dropdown-divider" /></li>
+        <div class="dropdown" style="position: absolute; right: 0; top: 0">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-eye"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li v-on:click="cambiarVista('karaoke')">
+              <a class="dropdown-item" href="#">Karaoke</a>
+            </li>
+            <li v-on:click="cambiarVista('acordes')">
+              <a class="dropdown-item" href="#">Acordes</a>
+            </li>
+            <li v-on:click="cambiarVista('soloacordes')">
+              <a class="dropdown-item" href="#">Solo Acordes</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
 
-          <li v-on:click="clickSecuencia()">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
-              Secuencia</a
-            >
-          </li>
-          <li v-on:click="clickPartes()">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.partes"></i>
-              Partes</a
-            >
-          </li>
-        </ul>
+            <li v-on:click="clickSecuencia()">
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
+                Secuencia</a
+              >
+            </li>
+            <li v-on:click="clickPartes()">
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-check-circle" v-if="vista.partes"></i>
+                Partes</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div></div>
+  </div>
 </template>
 
 <style scoped>
+.columnas {
+  padding: 0;
+}
+
 .pantallaPlay {
   border: 1px solid;
   display: flex;

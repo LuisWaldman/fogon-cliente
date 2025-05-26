@@ -37,9 +37,10 @@ function updateCompas(newCompas: number) {
     <div style="display: inline">
       <div class="titulocontorltiempo">
         <div>
-          {{ appStore.cancion?.cancion }} -
-          {{ appStore.cancion?.banda }}
-
+          <div class="titulocancioncontrol">
+            {{ appStore.cancion?.cancion }} -
+            {{ appStore.cancion?.banda }}
+          </div>
           <div style="display: flex; flex-wrap: wrap">
             <input
               type="range"
@@ -47,7 +48,7 @@ function updateCompas(newCompas: number) {
               :max="appStore.cancion?.totalCompases"
               v-model="currentCompas"
               @input="updateCompas(currentCompas)"
-              style="accent-color: #a9a8f6"
+              class="rango_compas"
             />
 
             <span class="spnTiempo"
@@ -116,5 +117,33 @@ function updateCompas(newCompas: number) {
   border-radius: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.rango_compas {
+  accent-color: '#a9a8f6';
+  width: 30px;
+}
+
+.titulocancioncontrol {
+  width: 40px;
+}
+
+@media (max-width: 600px) {
+  .titulocontorltiempo {
+    font-size: 18px;
+    padding-left: 4px;
+    margin: 2px;
+  }
+  .boton_controller {
+    font-size: 12px;
+    width: 28px;
+    height: 28px;
+  }
+  .boton_controllerplay {
+    font-size: 16px !important;
+  }
+  .spnTiempo {
+    font-size: 12px;
+  }
 }
 </style>

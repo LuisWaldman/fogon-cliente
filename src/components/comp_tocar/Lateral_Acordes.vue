@@ -84,9 +84,7 @@ function calcularresumenparte() {
   <div class="acordesPantalla">
     <div class="row">
       <div v-if="props.secuencia && reperesu.length == 0">
-        <h2 style="text-decoration: underline; margin-bottom: 2px">
-          Secuencia
-        </h2>
+        <h2 class="titulosecuencia">Secuencia</h2>
         <div style="display: flex; flex-wrap: wrap">
           <div
             v-for="(parte, index) in cancion.acordes.ordenPartes"
@@ -103,9 +101,7 @@ function calcularresumenparte() {
       </div>
 
       <div v-if="props.secuencia && reperesu.length > 0">
-        <h2 style="text-decoration: underline; margin-bottom: 2px">
-          Secuencia
-        </h2>
+        <h2 class="titulosecuencia">Secuencia</h2>
         <div style="display: flex; flex-wrap: wrap">
           <div v-for="(parte, index) in secuResu" :key="index">
             <div class="ordendiv">
@@ -129,7 +125,7 @@ function calcularresumenparte() {
         </div>
       </div>
       <div v-if="props.partes">
-        <h2 style="text-decoration: underline; margin-bottom: 2px">Partes</h2>
+        <h2 class="titulosecuencia">Partes</h2>
         <div
           v-for="(parte, index_parte) in cancion.acordes.partes"
           :key="parte.nombre"
@@ -177,16 +173,6 @@ function calcularresumenparte() {
   margin-right: 10px;
 }
 
-.partediv {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.compas_actual {
-  background-color: red;
-  color: white;
-}
-
 .acordediv {
   font-size: large;
   margin: 1px;
@@ -197,6 +183,31 @@ function calcularresumenparte() {
   color: #a9a8f6;
 
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .ordendiv {
+    margin: 2px;
+    width: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .acordediv {
+    margin: 2px;
+    padding: 2px;
+    width: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.partediv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.compas_actual {
+  background-color: red;
+  color: white;
 }
 
 .domi {
@@ -219,5 +230,11 @@ function calcularresumenparte() {
   border: 1px solid;
   padding: 10px;
   border-radius: 2%;
+}
+
+.tituloSecuencia {
+  font-size: 1em;
+  color: #a9a8f6;
+  margin-top: 10px;
 }
 </style>
