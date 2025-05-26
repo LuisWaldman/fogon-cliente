@@ -67,18 +67,19 @@ function cambiar(id: number, idx: number = 0) {
 </script>
 
 <template>
-  <div>
+  <div v-if="appStore.cancion">
     <div
       class="divPrevia"
       v-if="appStore.estado == 'tocando' && appStore.compas < 0"
     >
-      Empieza en {{ 4 - appStore.golpeDelCompas }}
+      Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
     </div>
 
     <div class="metronono">
       <div style="display: flex">
+        
         <div
-          v-for="n in appStore.cancion?.compasCantidad"
+          v-for="n in appStore.cancion.compasCantidad * 1"
           :key="n"
           class="beat"
           :class="{
@@ -104,7 +105,7 @@ function cambiar(id: number, idx: number = 0) {
         <div style="display: flex" v-if="midiCargado">
           <div
             class="dropdown"
-            v-for="n in appStore.cancion?.compasCantidad"
+            v-for="n in appStore.cancion.compasCantidad * 1"
             :key="n"
           >
             <button

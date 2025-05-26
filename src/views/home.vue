@@ -48,7 +48,7 @@ const cancionesPorBanda = {
   ],
 
   'Nuri Profe': [
-    { nombre: 'Minuet', archivo: 'intoxicados_casi-sin-pensar' },
+    { nombre: 'Minuet', archivo: 'nuri-profe_menuet' },
     { nombre: 'Acordes en el modo (RE)', archivo: 'intoxicados_fuego' },
     {
       nombre: 'Dont Wanna Leave You Blues',
