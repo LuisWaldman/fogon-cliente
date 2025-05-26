@@ -95,12 +95,14 @@ const vistaAcordes = ref(
 </script>
 
 <template>
+  <div class="container">
   <div
-    class="pantallaPlay"
+    class="pantallaPlay row"
     :style="GetStylePantallaPlay()"
     v-if="appStore.cancion"
+    
   >
-    <div :style="{ width: vista.largoPrincipal + '%' }">
+    <div class="col-9">
       <TocarLetraAcorde
         v-if="vista.viendo == 'acordes'"
         :cancion="appStore.cancion"
@@ -120,8 +122,7 @@ const vistaAcordes = ref(
         :vista="vistaKaraoke"
       ></TocarAcorde>
     </div>
-    <div
-      :style="{ width: 100 - vista.largoPrincipal + '%' }"
+    <div class="col-3"
       style="position: absolute; right: 0"
     >
       <Lateral
@@ -169,7 +170,7 @@ const vistaAcordes = ref(
         </ul>
       </div>
     </div>
-  </div>
+  </div></div>
 </template>
 
 <style scoped>
