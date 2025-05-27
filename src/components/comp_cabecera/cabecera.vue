@@ -1,16 +1,7 @@
 <script setup lang="ts">
-import ControladorTiempo from './ControladorTiempo.vue'
-import Metronomo from './metronomo.vue'
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
-
-const emit = defineEmits(['acciono'])
-
-function acciono(valor: string, compas: number = 0) {
-  //console.log("Acciono--->", valor, compas);
-  emit('acciono', valor, compas)
-}
 </script>
 
 <template>
@@ -23,7 +14,7 @@ function acciono(valor: string, compas: number = 0) {
       margin-right: calc(-50vw + 50%);
     "
   >
-    <div class="container-fluid">
+    <div style="display: flex">
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img src="/img/iconogrande.png" alt="Logo" width="50" />
       </router-link>
@@ -36,24 +27,10 @@ function acciono(valor: string, compas: number = 0) {
         Fogon: Red musical distribuida
       </span>
 
-      <ControladorTiempo
-        v-if="$route.path === '/tocar'"
-        :nro_cancion="1"
-        :total_canciones="1"
-        :compas="appStore.compas"
-        :estado="appStore.estado"
-        @acciono="acciono"
-      >
-      </ControladorTiempo>
-
-      <Metronomo
-        v-if="$route.path === '/tocar'"
-        :compas="appStore.compas"
-        :estado="appStore.estado"
-        ref="metronomeRef"
-        :bpm_encompas="appStore.golpeDelCompas"
-        :cancion="appStore.cancion"
-      ></Metronomo>
+      <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
+        {{ appStore.cancion?.cancion }} -
+        {{ appStore.cancion?.banda }}
+      </div>
 
       <button
         class="navbar-toggler"
@@ -75,8 +52,22 @@ function acciono(valor: string, compas: number = 0) {
   }
 }
 
+.titulocancioncontrol {
+  color: #a9a8f6;
+  font-size: 2.5rem;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
 /* Cambia la disposición de los elementos en dispositivos móviles */
 @media (max-width: 768px) {
+  .titulocancioncontrol {
+    font-size: 1.5rem; /* Reduce el tamaño del texto en móviles */
+    margin-left: 0; /* Alinea a la izquierda */
+    margin-right: 0; /* Elimina el margen derecho */
+    text-align: center; /* Centra el texto */
+  }
+
   .navbar-nav {
     display: flex;
     flex-direction: column;

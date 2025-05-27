@@ -4,6 +4,8 @@ import { ref, type Ref } from 'vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
+import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
+import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { VistaControl } from '../modelo/VistaControl'
@@ -53,7 +55,7 @@ function clickPartes() {
 function GetStylePantallaPlay() {
   return {
     width: window.innerWidth + 'px',
-    height: window.innerHeight + 'px',
+    height: window.innerHeight - 200 + 'px',
   }
 }
 
@@ -69,7 +71,7 @@ const vistaLetraYAcordes = ref(
     5,
     'acordes_seguidos',
     'col-9',
-    window.innerHeight - 180,
+    window.innerHeight - 680,
   ),
 )
 const vistaKaraoke = ref(
@@ -121,16 +123,8 @@ const vistaAcordes = ref(
           :vista="vistaKaraoke"
         ></TocarAcorde>
       </div>
-      <div class="col-4 columnas">
-        <Lateral
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          :vista="vistaAcordes"
-          :secuencia="vista.secuencia"
-          :partes="vista.partes"
-        ></Lateral>
-
-        <div class="dropdown" style="position: absolute; right: 0; top: 0">
+      <div class="col-4 columnas lateral-container" style="position: relative">
+        <div class="dropdown dropdown-superior-derecha">
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
@@ -166,6 +160,35 @@ const vistaAcordes = ref(
             </li>
           </ul>
         </div>
+        <Lateral
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          :vista="vistaAcordes"
+          :secuencia="vista.secuencia"
+          :partes="vista.partes"
+        ></Lateral>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <ControladorTiempo
+          v-if="$route.path === '/tocar'"
+          :nro_cancion="1"
+          :total_canciones="1"
+          :compas="appStore.compas"
+          :estado="appStore.estado"
+        >
+        </ControladorTiempo>
+      </div>
+      <div class="col-4">
+        <Metronomo
+          v-if="$route.path === '/tocar'"
+          :compas="appStore.compas"
+          :estado="appStore.estado"
+          ref="metronomeRef"
+          :bpm_encompas="appStore.golpeDelCompas"
+          :cancion="appStore.cancion"
+        ></Metronomo>
       </div>
     </div>
   </div>
@@ -178,11 +201,26 @@ const vistaAcordes = ref(
 
 .pantallaPlay {
   border: 1px solid;
-  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 4px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .dropdown {
   display: relative;
   right: 0;
+}
+
+.lateral-container {
+  position: relative;
+}
+
+.dropdown-superior-derecha {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
 }
 </style>
