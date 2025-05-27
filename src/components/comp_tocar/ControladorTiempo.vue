@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { Tiempo } from '../../modelo/tiempo'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useAppStore } from '../../stores/appStore'
@@ -13,7 +13,21 @@ defineProps<{
 
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
+const tiempo_actual = ref("--:--")
 
+
+watch(
+  () => appStore.golpeDelCompas,
+  (newVal, oldVal) => {
+    if (newVal !== oldVal) {
+      tiempo_actual.value = 
+            tiempo.formatSegundos(
+              appStore.cancion.duracionCompas * appStore.compas,
+            )
+      
+    }
+  },
+)
 function play() {
   appStore.aplicacion.play()
 }
@@ -72,9 +86,7 @@ function updateCompas(newCompas: number) {
       <div class="col-2">
         <span class="spnTiempo"
           >{{
-            tiempo.formatSegundos(
-              appStore.cancion.duracionCompas * currentCompas,
-            )
+            tiempo_actual
           }}
           /
           {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
