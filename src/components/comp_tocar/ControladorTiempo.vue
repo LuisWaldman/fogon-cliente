@@ -13,18 +13,15 @@ defineProps<{
 
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
-const tiempo_actual = ref("--:--")
-
+const tiempoActual = ref('--:--')
 
 watch(
   () => appStore.golpeDelCompas,
   (newVal, oldVal) => {
     if (newVal !== oldVal) {
-      tiempo_actual.value = 
-            tiempo.formatSegundos(
-              appStore.cancion.duracionCompas * appStore.compas,
-            )
-      
+      tiempoActual.value = tiempo.formatSegundos(
+        appStore.cancion.duracionCompas * appStore.compas,
+      )
     }
   },
 )
@@ -85,9 +82,7 @@ function updateCompas(newCompas: number) {
       </div>
       <div class="col-2">
         <span class="spnTiempo"
-          >{{
-            tiempo_actual
-          }}
+          >{{ tiempoActual }}
           /
           {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
         </span>

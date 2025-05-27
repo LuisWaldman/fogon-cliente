@@ -19,11 +19,7 @@ const appStore = useAppStore()
         <img src="/img/iconogrande.png" alt="Logo" width="50" />
       </router-link>
 
-      <span
-        v-if="$route.path === '/'"
-        class="navbar-brand"
-        style="color: inherit; font-size: 1.5rem"
-      >
+      <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
       </span>
 
@@ -32,14 +28,34 @@ const appStore = useAppStore()
         {{ appStore.cancion?.banda }}
       </div>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="dropdown dropdown-superior-derecha">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="/img/UsuarioDesconecdado.png"
+            alt="User"
+            style="
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            "
+          />
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+          <li>
+            <router-link class="dropdown-item" to="/configurar">
+              <i class="bi bi-check-circle"></i>
+              Configurar
+            </router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
@@ -229,5 +245,20 @@ const appStore = useAppStore()
 }
 .conectado {
   border-color: #f5da09;
+}
+
+
+/* Añadir estilos para asegurar que el dropdown se despliegue hacia la derecha y no salga de la pantalla */
+.dropdown-menu-end {
+  right: 0;
+  left: auto;
+  min-width: 180px;
+}
+
+.dropdown-superior-derecha {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
 }
 </style>
