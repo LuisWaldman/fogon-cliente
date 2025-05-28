@@ -241,6 +241,17 @@ function guardarConfiguracion() {
                   px</span
                 >
               </div>
+              <div class="config-row">
+                <span>Factor Scroll</span>
+                <input
+                  type="range"
+                  min="1"
+                  max="10"
+                  step="0.1"
+                  v-model.number="vistasTocar[vistaSeleccionada].factorScroll"
+                />
+                <span>{{ vistasTocar[vistaSeleccionada].factorScroll }}</span>
+              </div>
             </div>
           </div>
         </div>

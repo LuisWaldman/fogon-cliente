@@ -71,10 +71,12 @@ watch(
     currentCompas.value = newCompas
 
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    const tamanioLetra = pantalla.getConfiguracionPantalla().tamanioLetra
-    const tamanioAcorde = pantalla.getConfiguracionPantalla().tamanioAcorde
-    let ve = renglon * ((tamanioLetra + tamanioAcorde) * 2)
-    ve -= tamanioLetra * 20
+    const configuracionPantalla = pantalla.getConfiguracionPantalla()
+    const tamanioLetra = configuracionPantalla.tamanioLetra
+    const tamanioAcorde = configuracionPantalla.tamanioAcorde
+    const factorScroll = configuracionPantalla.factorScroll // Usar la nueva propiedad
+    let ve = renglon * (tamanioLetra + tamanioAcorde) * factorScroll // Usar la nueva propiedad
+    ve -= (tamanioLetra + tamanioAcorde) * 10
     const nuevaPos = Math.max(ve, 0)
 
     moverScroll(nuevaPos)
