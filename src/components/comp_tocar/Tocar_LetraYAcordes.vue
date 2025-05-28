@@ -129,7 +129,6 @@ defineExpose({ Actualizar })
       <div
         ref="letraDiv"
         class="overflow-auto divDeLetra"
-        :style="{ 'max-height': vista.alto + 'px' }"
       >
         <div
           style="display: flex; flex-wrap: wrap"
@@ -230,6 +229,7 @@ defineExpose({ Actualizar })
   display: flex;
 }
 .acordediv {
+  font-size: var(--tamanio-acorde);
   margin: 1px;
   padding: 5px;
   border: 1px solid;
@@ -248,6 +248,10 @@ defineExpose({ Actualizar })
 .ordenparte {
   border: 1px solid #888;
   width: 25%;
+}
+.divletra {
+  font-size: var(--tamanio-letra);
+
 }
 
 .en_compas .acordediv {

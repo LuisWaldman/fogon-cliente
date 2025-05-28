@@ -1,5 +1,16 @@
 // Clase Configuracion (singleton)
+export class VistaTocar {
+  public tamanioLetra: number = 36
+  public tamanioAcorde: number = 26
+  public tamanioAcordesolo: number = 16
+  public tamanioParte: number = 16
+  public tamanioAcordeParte: number = 26
+}
 export class Configuracion {
+  GetConfiguracionPantalla(innerWidth: number, innerHeight: number) {
+    console.log('Configuración de pantalla:', innerWidth, innerHeight)
+    return new VistaTocar()
+  }
   private static instance: Configuracion | null = null
   static VERSION = 1
   public tema: string = 'claro'

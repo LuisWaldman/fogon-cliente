@@ -47,7 +47,10 @@ const appStore = useAppStore()
             "
           />
         </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="dropdownMenuButton"
+        >
           <li>
             <router-link class="dropdown-item" to="/configurar">
               <i class="bi bi-check-circle"></i>
@@ -246,7 +249,6 @@ const appStore = useAppStore()
 .conectado {
   border-color: #f5da09;
 }
-
 
 /* Añadir estilos para asegurar que el dropdown se despliegue hacia la derecha y no salga de la pantalla */
 .dropdown-menu-end {

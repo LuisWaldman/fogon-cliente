@@ -42,12 +42,7 @@ watch(
         <div
           v-for="(aco, index_aco) in cancion.acordes.partes[parte].acordes"
           :key="index_aco"
-          class="acorde"
-          :style="{
-            'max-height': vista.alto + 'px',
-            width: vista.tamanioReferencia * 3 + 'px',
-            'font-size': vista.tamanioReferencia + 'px',
-          }"
+          class="acorde"          
           :class="{
             compas_actual:
               mostrandoParte === index && mostrandoCompasParte === index_aco,
@@ -73,7 +68,7 @@ watch(
   border-radius: 5px;
 }
 .acorde {
-  font-size: large;
+  font-size: var(--tamanio-acordesolo);
   margin: 1px;
   padding: 5px;
   border: 1px solid;

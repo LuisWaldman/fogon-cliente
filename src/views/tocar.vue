@@ -9,6 +9,13 @@ import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { VistaControl } from '../modelo/VistaControl'
+import { Pantalla } from '../modelo/pantalla'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const pantalla = new Pantalla()
+  pantalla.setearEstilos()
+})
 
 const appStore = useAppStore()
 
