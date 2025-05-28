@@ -1,3 +1,11 @@
+:root {
+  --tamanio-letra: 46px;
+  --tamanio-acorde: 116px;
+  --tamanio-acordesolo: 16px;
+  --tamanio-parte: 6px;
+  --tamanio-acorde-parte: 216px;
+}
+
 
 #barra_navegacion {
     display: flex;

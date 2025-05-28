@@ -2,12 +2,10 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion'
 import { watch } from 'vue'
-import { VistaControl } from '../../modelo/VistaControl'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
   secuencia: boolean
   partes: boolean
 }>()
@@ -91,11 +89,9 @@ function calcularresumenparte() {
             :key="index"
             class="ordendiv"
           >
-            <span
-              :class="{ compas_actual: mostrandoParte === index }"
-              :style="{ 'font-size': vista.tamanioReferencia / 2 + 'px' }"
-              >{{ cancion.acordes.partes[parte].nombre }}</span
-            >
+            <span :class="{ compas_actual: mostrandoParte === index }">{{
+              cancion.acordes.partes[parte].nombre
+            }}</span>
           </div>
         </div>
       </div>
@@ -109,7 +105,6 @@ function calcularresumenparte() {
                 :class="{
                   compas_actual: mostrandoResumenParteIndex === index,
                 }"
-                :style="{ 'font-size': vista.tamanioReferencia / 2 + 'px' }"
                 >{{ cancion.acordes.partes[parte].nombre }}</span
               >
             </div>
@@ -131,7 +126,7 @@ function calcularresumenparte() {
           :key="parte.nombre"
           class="row"
         >
-          <div :style="{ 'font-size': vista.tamanioReferencia / 1.7 + 'px' }">
+          <div>
             {{ parte.nombre }}
           </div>
           <div class="partediv">
@@ -141,7 +136,6 @@ function calcularresumenparte() {
               :key="acorde"
             >
               <span
-                :style="{ 'font-size': vista.tamanioReferencia + 'px' }"
                 :class="{
                   compas_actual:
                     mostrandoCompasparte === index &&
@@ -163,7 +157,7 @@ function calcularresumenparte() {
 }
 
 .ordendiv {
-  font-size: large;
+  font-size: var(--tamanio-parte);
   margin: 1px;
   padding: 5px;
   border: 1px solid;
@@ -174,7 +168,7 @@ function calcularresumenparte() {
 }
 
 .acordediv {
-  font-size: large;
+  font-size: var(--tamanio-acorde-parte);
   margin: 1px;
   padding: 5px;
   border: 1px solid;

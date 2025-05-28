@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { Tiempo } from '../../modelo/tiempo'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useAppStore } from '../../stores/appStore'
@@ -13,7 +13,18 @@ defineProps<{
 
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
+const tiempoActual = ref('--:--')
 
+watch(
+  () => appStore.golpeDelCompas,
+  (newVal, oldVal) => {
+    if (newVal !== oldVal) {
+      tiempoActual.value = tiempo.formatSegundos(
+        appStore.cancion.duracionCompas * appStore.compas,
+      )
+    }
+  },
+)
 function play() {
   appStore.aplicacion.play()
 }
@@ -33,65 +44,60 @@ function updateCompas(newCompas: number) {
 </script>
 
 <template>
-  <div>
-    <div style="display: inline">
-      <div class="titulocontorltiempo">
-        <div>
-          <div class="titulocancioncontrol">
-            {{ appStore.cancion?.cancion }} -
-            {{ appStore.cancion?.banda }}
-          </div>
-          <div style="display: flex; flex-wrap: wrap">
-            <input
-              type="range"
-              min="0"
-              :max="appStore.cancion?.totalCompases"
-              v-model="currentCompas"
-              @input="updateCompas(currentCompas)"
-              class="rango_compas"
-            />
+  <div class="controls">
+    <div class="row">
+      <div class="col-2 columnacontrol">
+        <button
+          class="boton_controller boton_controllerplay"
+          @click="play"
+          v-if="appStore.estado !== 'tocando'"
+        >
+          <i class="bi bi-play-fill"></i>
+        </button>
 
-            <span class="spnTiempo"
-              >{{
-                tiempo.formatSegundos(
-                  appStore.cancion.duracionCompas * currentCompas,
-                )
-              }}
-              /
-              {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
-            </span>
-
-            <button
-              class="boton_controller boton_controllerplay"
-              @click="play"
-              v-if="appStore.estado !== 'tocando'"
-            >
-              <i class="bi bi-play-fill"></i>
-            </button>
-
-            <button
-              class="boton_controller"
-              @click="pause"
-              v-if="appStore.estado === 'tocando'"
-            >
-              <i class="bi bi-pause-fill"></i>
-            </button>
-            <button
-              class="boton_controller"
-              @click="stop"
-              v-if="appStore.estado === 'tocando'"
-            >
-              <i class="bi bi-stop-fill"></i>
-            </button>
-          </div>
-        </div>
+        <button
+          class="boton_controller"
+          @click="pause"
+          v-if="appStore.estado === 'tocando'"
+        >
+          <i class="bi bi-pause-fill"></i>
+        </button>
+        <button
+          class="boton_controller"
+          @click="stop"
+          v-if="appStore.estado === 'tocando'"
+        >
+          <i class="bi bi-stop-fill"></i>
+        </button>
+      </div>
+      <div class="col-3 columnacontrol">
+        <input
+          type="range"
+          min="0"
+          :max="appStore.cancion?.totalCompases"
+          v-model="currentCompas"
+          @input="updateCompas(currentCompas)"
+          class="rango_compas"
+        />
+      </div>
+      <div class="col-6 columnacontrol">
+        <span class="spnTiempo"
+          >{{ tiempoActual }}
+          /
+          {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
+        </span>
       </div>
     </div>
+
     <div></div>
   </div>
 </template>
 
 <style scoped>
+.columnacontrol {
+  margin: 1px !important;
+  padding: 1px !important;
+}
 .controls {
   display: flex;
 }
@@ -134,7 +140,7 @@ function updateCompas(newCompas: number) {
 
 .rango_compas {
   accent-color: '#a9a8f6';
-  width: 30px;
+  width: 100%;
 }
 
 .titulocancioncontrol {
@@ -158,5 +164,8 @@ function updateCompas(newCompas: number) {
   .spnTiempo {
     font-size: 12px;
   }
+}
+.controls {
+  margin-left: 10px;
 }
 </style>

@@ -1,16 +1,7 @@
 <script setup lang="ts">
-import ControladorTiempo from './ControladorTiempo.vue'
-import Metronomo from './metronomo.vue'
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
-
-const emit = defineEmits(['acciono'])
-
-function acciono(valor: string, compas: number = 0) {
-  //console.log("Acciono--->", valor, compas);
-  emit('acciono', valor, compas)
-}
 </script>
 
 <template>
@@ -23,46 +14,55 @@ function acciono(valor: string, compas: number = 0) {
       margin-right: calc(-50vw + 50%);
     "
   >
-    <div class="container-fluid">
+    <div style="display: flex; width: 100%">
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img src="/img/iconogrande.png" alt="Logo" width="50" />
       </router-link>
 
-      <span
-        v-if="$route.path === '/'"
-        class="navbar-brand"
-        style="color: inherit; font-size: 1.5rem"
-      >
+      <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
       </span>
 
-      <ControladorTiempo
-        v-if="$route.path === '/tocar'"
-        :nro_cancion="1"
-        :total_canciones="1"
-        :compas="appStore.compas"
-        :estado="appStore.estado"
-        @acciono="acciono"
-      >
-      </ControladorTiempo>
+      <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
+        {{ appStore.cancion?.cancion }} -
+        {{ appStore.cancion?.banda }}
+      </div>
+      <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
+        Configuracion
+      </span>
 
-      <Metronomo
-        v-if="$route.path === '/tocar'"
-        :compas="appStore.compas"
-        :estado="appStore.estado"
-        ref="metronomeRef"
-        :bpm_encompas="appStore.golpeDelCompas"
-        :cancion="appStore.cancion"
-      ></Metronomo>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="dropdown dropdown-superior-derecha ms-auto">
+        <button
+          style="background-color: #000; border: none"
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="/img/UsuarioDesconecdado.png"
+            alt="User"
+            style="
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            "
+          />
+        </button>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <li>
+            <router-link class="dropdown-item" to="/configurar">
+              <i class="bi bi-check-circle"></i>
+              Configurar
+            </router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
@@ -75,8 +75,27 @@ function acciono(valor: string, compas: number = 0) {
   }
 }
 
+.titulocancioncontrol {
+  color: #a9a8f6;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px; /* Adjust margin for spacing */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1; /* Allow title to take available space */
+}
+
 /* Cambia la disposición de los elementos en dispositivos móviles */
 @media (max-width: 768px) {
+  .titulocancioncontrol {
+    font-size: 1.5rem; /* Reduce el tamaño del texto en móviles */
+    margin-left: 0; /* Alinea a la izquierda */
+    margin-right: 0; /* Elimina el margen derecho */
+    text-align: center; /* Centra el texto */
+  }
+
   .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -238,5 +257,19 @@ function acciono(valor: string, compas: number = 0) {
 }
 .conectado {
   border-color: #f5da09;
+}
+
+/* Añadir estilos para asegurar que el dropdown se despliegue hacia la derecha y no salga de la pantalla */
+.dropdown-menu-end {
+  right: 0;
+  left: auto;
+  min-width: 180px;
+}
+
+.dropdown-superior-derecha {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
 }
 </style>

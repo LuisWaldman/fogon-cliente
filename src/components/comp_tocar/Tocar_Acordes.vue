@@ -2,18 +2,23 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion'
 import { watch } from 'vue'
-import { VistaControl } from '../../modelo/VistaControl'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
 }>()
 
 const mostrandoParte = ref(-1)
 const mostrandoCompasParte = ref(-1)
 const currentCompas = ref(0)
 
+const pantalla = new Pantalla()
+function styleDivTocar() {
+  return {
+    height: pantalla.getAltoPantalla() + 'px',
+  }
+}
 watch(
   () => props.compas,
   (newCompas) => {
@@ -29,13 +34,26 @@ watch(
       }
       totalCompases += compasesxparte
     }
+
+    const tamanioLetra = pantalla.getConfiguracionPantalla().tamanioAcordesolo
+    let ve = mostrandoParte.value * tamanioLetra * 2.8
+    ve -= tamanioLetra * 0
+    const nuevaPos = Math.max(ve, 0)
+    moverScroll(nuevaPos)
+
     currentCompas.value = newCompas
   },
 )
+
+const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
+function moverScroll(posX: number) {
+  console.log('moverScroll', posX, letraDiv.value)
+  letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
+}
 </script>
 
 <template>
-  <div>
+  <div ref="letraDiv" class="overflow-auto divDeLetra" :style="styleDivTocar()">
     <div v-for="(parte, index) in cancion.acordes.ordenPartes" :key="index">
       <div>{{ cancion.acordes.partes[parte].nombre }}</div>
       <div style="display: flex; flex-wrap: wrap">
@@ -43,11 +61,6 @@ watch(
           v-for="(aco, index_aco) in cancion.acordes.partes[parte].acordes"
           :key="index_aco"
           class="acorde"
-          :style="{
-            'max-height': vista.alto + 'px',
-            width: vista.tamanioReferencia * 3 + 'px',
-            'font-size': vista.tamanioReferencia + 'px',
-          }"
           :class="{
             compas_actual:
               mostrandoParte === index && mostrandoCompasParte === index_aco,
@@ -61,6 +74,11 @@ watch(
 </template>
 
 <style scoped>
+.divDeLetra {
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
+}
+
 .read-the-docs {
   color: #888;
 }
@@ -73,7 +91,7 @@ watch(
   border-radius: 5px;
 }
 .acorde {
-  font-size: large;
+  font-size: var(--tamanio-acordesolo);
   margin: 1px;
   padding: 5px;
   border: 1px solid;

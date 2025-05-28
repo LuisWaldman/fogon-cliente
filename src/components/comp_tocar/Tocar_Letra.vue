@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion'
-import { VistaControl } from '../../modelo/VistaControl'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
 }>()
-const scrollTop = ref(0) // Ref to store the horizontal scroll position
-
+const scrollTop = ref(0)
+const pantalla = new Pantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 
 const mostrandoRenglon = ref(-1)
@@ -20,9 +19,9 @@ watch(
   () => props.compas,
   (newCompas) => {
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    let ve = renglon * props.vista.tamanioReferencia * 1.6
-    console.log('ve', ve, newCompas, renglon)
-    ve -= props.vista.alto * 0.4
+    const tamanioLetra = pantalla.getConfiguracionPantalla().tamanioLetra
+    let ve = renglon * tamanioLetra * 2
+    ve -= tamanioLetra * 20
     const nuevaPos = Math.max(ve, 0)
     moverScroll(nuevaPos)
 
@@ -43,6 +42,12 @@ watch(
   },
 )
 
+function styleDivTocar() {
+  return {
+    height: pantalla.getAltoPantalla() + 'px',
+  }
+}
+
 function moverScroll(posX: number) {
   letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
 }
@@ -50,11 +55,10 @@ function moverScroll(posX: number) {
 function Actualizar() {
   if (letras.value.length === 0) {
     console.log('actualizar letras')
-    //   actualizarLetras(props.cancion);
   }
   return false
 }
-// Función para manejar el evento de scroll
+
 const handleScroll = () => {
   if (letraDiv.value) {
     scrollTop.value = letraDiv.value.scrollTop // Actualiza la posición del scroll
@@ -81,16 +85,12 @@ defineExpose({ Actualizar })
     <div
       ref="letraDiv"
       class="overflow-auto divDeLetra"
-      :style="{ 'max-height': vista.alto + 'px' }"
+      :style="styleDivTocar()"
     >
-      <div
-        style="display: flex; flex-wrap: wrap"
-        :style="{ 'font-size': vista.tamanioReferencia + 'px' }"
-      >
+      <div style="display: flex; flex-wrap: wrap">
         <template
           v-for="(renglon, index) in cancion.letras.renglones"
           :key="index"
-          class="parte"
         >
           <template v-for="(letra, index_aco) in renglon" :key="index_aco">
             <div
@@ -157,7 +157,6 @@ defineExpose({ Actualizar })
   display: flex;
 }
 .acordediv {
-  font-size: large;
   margin: 1px;
   padding: 5px;
   border: 1px solid;
@@ -168,6 +167,7 @@ defineExpose({ Actualizar })
 }
 
 .divDeLetra {
+  font-size: var(--tamanio-letra);
   scrollbar-color: black transparent;
   scrollbar-width: thin;
 }
@@ -175,7 +175,6 @@ defineExpose({ Actualizar })
 .noacorde {
   margin: 1px;
   padding: 6px;
-  font-size: large;
 }
 
 .ordenparte {

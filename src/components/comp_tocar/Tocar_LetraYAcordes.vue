@@ -1,17 +1,14 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion'
-import { VistaControl } from '../../modelo/VistaControl'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
 }>()
-const scrollTop = ref(0) // Ref to store the horizontal scroll position
-
+const pantalla = new Pantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
-
 const mostrandoParte = ref(-1)
 const mostrandoCompasParte = ref(-1)
 const currentCompas = ref(0)
@@ -74,8 +71,12 @@ watch(
     currentCompas.value = newCompas
 
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    let ve = renglon * props.vista.tamanioReferencia * 3.7
-    ve -= props.vista.alto * 0.4
+    const configuracionPantalla = pantalla.getConfiguracionPantalla()
+    const tamanioLetra = configuracionPantalla.tamanioLetra
+    const tamanioAcorde = configuracionPantalla.tamanioAcorde
+    const factorScroll = configuracionPantalla.factorScroll // Usar la nueva propiedad
+    let ve = renglon * (tamanioLetra + tamanioAcorde) * factorScroll // Usar la nueva propiedad
+    ve -= (tamanioLetra + tamanioAcorde) * 10
     const nuevaPos = Math.max(ve, 0)
 
     moverScroll(nuevaPos)
@@ -92,25 +93,11 @@ function Actualizar() {
   }
   return false
 }
-// Función para manejar el evento de scroll
-const handleScroll = () => {
-  if (letraDiv.value) {
-    scrollTop.value = letraDiv.value.scrollTop // Actualiza la posición del scroll
+function styleDivTocar() {
+  return {
+    height: pantalla.getAltoPantalla() + 'px',
   }
 }
-// Añadir el evento de scroll cuando se monta el componente
-onMounted(() => {
-  if (letraDiv.value) {
-    letraDiv.value.addEventListener('scroll', handleScroll)
-  }
-})
-
-// Eliminar el evento de scroll cuando se desmonta el componente
-onUnmounted(() => {
-  if (letraDiv.value) {
-    letraDiv.value.removeEventListener('scroll', handleScroll)
-  }
-})
 
 defineExpose({ Actualizar })
 </script>
@@ -129,16 +116,12 @@ defineExpose({ Actualizar })
       <div
         ref="letraDiv"
         class="overflow-auto divDeLetra"
-        :style="{ 'max-height': vista.alto + 'px' }"
+        :style="styleDivTocar()"
       >
-        <div
-          style="display: flex; flex-wrap: wrap"
-          :style="{ 'font-size': vista.tamanioReferencia + 'px' }"
-        >
+        <div style="display: flex; flex-wrap: wrap">
           <template
             v-for="(parte, index) in cancion.acordes.ordenPartes"
             :key="index"
-            class="parte"
           >
             <template
               v-for="(aco, index_aco) in cancion.acordes.partes[parte].acordes"
@@ -230,6 +213,7 @@ defineExpose({ Actualizar })
   display: flex;
 }
 .acordediv {
+  font-size: var(--tamanio-acorde);
   margin: 1px;
   padding: 5px;
   border: 1px solid;
@@ -248,6 +232,9 @@ defineExpose({ Actualizar })
 .ordenparte {
   border: 1px solid #888;
   width: 25%;
+}
+.divletra {
+  font-size: var(--tamanio-letra);
 }
 
 .en_compas .acordediv {

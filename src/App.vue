@@ -53,13 +53,6 @@ onMounted(() => {
 }
 
 #contenedor-musical {
-  height: 100vh; /* Altura completa de la ventana */
-  width: 100%;
-}
-.pantalla {
-  width: 100%;
-}
-#contenedor-musical {
   display: flex;
   flex-direction: column;
   align-items: center;
