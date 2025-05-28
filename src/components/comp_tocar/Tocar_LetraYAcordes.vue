@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion'
-import { VistaControl } from '../../modelo/VistaControl'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
 }>()
 const scrollTop = ref(0) // Ref to store the horizontal scroll position
 
@@ -126,10 +124,7 @@ defineExpose({ Actualizar })
       class="componenteMusical"
       v-if="letras.length > 0 && cancion.letras.renglones.length > 0"
     >
-      <div
-        ref="letraDiv"
-        class="overflow-auto divDeLetra"
-      >
+      <div ref="letraDiv" class="overflow-auto divDeLetra">
         <div
           style="display: flex; flex-wrap: wrap"
           :style="{ 'font-size': vista.tamanioReferencia + 'px' }"
@@ -251,7 +246,6 @@ defineExpose({ Actualizar })
 }
 .divletra {
   font-size: var(--tamanio-letra);
-
 }
 
 .en_compas .acordediv {

@@ -1,16 +1,33 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
+import { Configuracion, VistaTocar } from '../modelo/configuracion'
+
 // Definir la canción y el contexto
+const config = Configuracion.getInstance()
+const vistasTocar = ref(config.vistasTocar.map((v) => Object.assign({}, v)))
+const viendo = ref('vistas')
 
-const viendo = ref('sesion')
-
-function click_opcion(viendostr: string) {
+function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
+// Detectar cuál vista corresponde a la pantalla actual
+
+  const w = window.innerWidth
+  const h = window.innerHeight
+function getVistaActualIndex() {
+  const w = window.innerWidth
+  const h = window.innerHeight
+  if (w < 700) return 0
+  if (w > 1700 && h > 1000) return 2
+  return 1
+}
+const vistaSeleccionada = ref(getVistaActualIndex())
 
 function guardar_configuracion() {
-  console.log('guardar_configuracion')
-  localStorage.setItem('configuracion', JSON.stringify(config_guardada.value))
+  config.vistasTocar = vistasTocar.value.map((v) =>
+    Object.assign(new VistaTocar(), v),
+  )
+  config.guardarEnLocalStorage()
 }
 </script>
 
@@ -20,7 +37,7 @@ function guardar_configuracion() {
       <div class="col-3">
         <div class="" style="width: 280px">
           <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="click_opcion('perfil')">
+            <li @click="clickOpcion('perfil')">
               <a
                 href="#"
                 class="nav-link text-white"
@@ -30,20 +47,20 @@ function guardar_configuracion() {
               </a>
             </li>
 
-            <li @click="click_opcion('sesion')">
+            <li @click="clickOpcion('sesion')">
               <a
                 href="#"
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'sesion' }"
               >
-                Sesion
+                Sesion {{  w }} {{ h }}
               </a>
             </li>
           </ul>
 
           <hr />
           <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="click_opcion('vistas')">
+            <li @click="clickOpcion('vistas')">
               <a
                 href="#"
                 class="nav-link text-white"
@@ -52,7 +69,7 @@ function guardar_configuracion() {
                 Vistas
               </a>
             </li>
-            <li @click="click_opcion('conexiones')">
+            <li @click="clickOpcion('conexiones')">
               <a
                 href="#"
                 class="nav-link text-white"
@@ -61,7 +78,7 @@ function guardar_configuracion() {
                 Conexiones
               </a>
             </li>
-            <li @click="click_opcion('datos')">
+            <li @click="clickOpcion('datos')">
               <a
                 href="#"
                 class="nav-link text-white"
@@ -70,7 +87,7 @@ function guardar_configuracion() {
                 Datos
               </a>
             </li>
-            <li @click="click_opcion('midis')">
+            <li @click="clickOpcion('midis')">
               <a
                 href="#"
                 class="nav-link text-white"
@@ -83,7 +100,7 @@ function guardar_configuracion() {
           <hr />
 
           <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="click_opcion('acercade')">
+            <li @click="clickOpcion('acercade')">
               <a
                 href="#"
                 class="nav-link text-white"
@@ -99,14 +116,134 @@ function guardar_configuracion() {
       <div class="col-9 innerConfig">
         <div v-if="viendo == 'perfil'" class="container">PERFIL</div>
 
-        <div v-if="viendo == 'sesion'">
-          <ConfigSesion
-            :cliente="cliente"
-            :config_guardada="config_guardada"
-          ></ConfigSesion>
-        </div>
+        <div v-if="viendo == 'sesion'"></div>
 
-        <div v-if="viendo == 'vistas'">Vistas</div>
+        <div v-if="viendo == 'vistas'">
+          <h3>Configuración de Vistas</h3>
+          <label
+            >Seleccionar vista:
+            <select v-model.number="vistaSeleccionada">
+              <option :value="0">Celular</option>
+              <option :value="1">PC</option>
+              <option :value="2">Pantalla grande</option>
+            </select>
+          </label>
+          <div
+            style="margin-bottom: 20px; border: 1px solid #ccc; padding: 10px"
+          >
+            <b>
+              {{
+                vistaSeleccionada === 0
+                  ? 'Celular'
+                  : vistaSeleccionada === 1
+                    ? 'PC'
+                    : 'Pantalla grande'
+              }}
+            </b>
+            <div class="config-vista-opciones">
+              <div class="config-row">
+                <span>Letra</span>
+                <input
+                  type="range"
+                  min="8"
+                  max="140"
+                  v-model.number="vistasTocar[vistaSeleccionada].tamanioLetra"
+                />
+                <span
+                  >{{ vistasTocar[vistaSeleccionada].tamanioLetra }} px</span
+                >
+              </div>
+              <div class="config-row">
+                <span>Acorde</span>
+                <input
+                  type="range"
+                  min="8"
+                  max="140"
+                  v-model.number="vistasTocar[vistaSeleccionada].tamanioAcorde"
+                />
+                <span
+                  >{{ vistasTocar[vistaSeleccionada].tamanioAcorde }} px</span
+                >
+              </div>
+              <div class="config-row">
+                <span>Acorde Solo</span>
+                <input
+                  type="range"
+                  min="8"
+                  max="140"
+                  v-model.number="
+                    vistasTocar[vistaSeleccionada].tamanioAcordesolo
+                  "
+                />
+                <span
+                  >{{
+                    vistasTocar[vistaSeleccionada].tamanioAcordesolo
+                  }}
+                  px</span
+                >
+              </div>
+              <div class="config-row">
+                <span>Parte</span>
+                <input
+                  type="range"
+                  min="8"
+                  max="140"
+                  v-model.number="vistasTocar[vistaSeleccionada].tamanioParte"
+                />
+                <span
+                  >{{ vistasTocar[vistaSeleccionada].tamanioParte }} px</span
+                >
+              </div>
+              <div class="config-row">
+                <span>Acorde Parte</span>
+                <input
+                  type="range"
+                  min="8"
+                  max="140"
+                  v-model.number="
+                    vistasTocar[vistaSeleccionada].tamanioAcordeParte
+                  "
+                />
+                <span
+                  >{{
+                    vistasTocar[vistaSeleccionada].tamanioAcordeParte
+                  }}
+                  px</span
+                >
+              </div>
+
+              <div class="config-row">
+                <span>Ancho Pantalla Principal</span>
+                <input
+                  type="range"
+                  min="3"
+                  max="11"
+                  v-model.number="vistasTocar[vistaSeleccionada].anchoPrincipal"
+                />
+                <span
+                  >{{ vistasTocar[vistaSeleccionada].anchoPrincipal }}
+                </span>
+              </div>
+              <div class="config-row">
+                <span>Descuento Alto Pantalla</span>
+                <input
+                  type="range"
+                  min="0"
+                  max="900"
+                  v-model.number="
+                    vistasTocar[vistaSeleccionada].altoPantallaDescuento
+                  "
+                />
+                <span
+                  >{{
+                    vistasTocar[vistaSeleccionada].altoPantallaDescuento
+                  }}
+                  px</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div v-if="viendo == 'midis'">
           <CompoMidiPlayer></CompoMidiPlayer>
@@ -154,5 +291,23 @@ function guardar_configuracion() {
 .activo {
   color: white;
   background-color: blueviolet;
+}
+
+.config-vista-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.config-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.config-row span {
+  width: 100px;
 }
 </style>

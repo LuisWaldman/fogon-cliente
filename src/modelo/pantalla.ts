@@ -10,6 +10,15 @@ export class Pantalla {
     )
   }
 
+  public getAnchoPantalla() {
+    return window.innerWidth
+  }
+
+  public getAltoPantalla() {
+    const config = this.getConfiguracionPantalla()
+    return window.innerHeight - config.altoPantallaDescuento
+  }
+
   public setearEstilos() {
     const config = this.getConfiguracionPantalla()
     document.documentElement.style.setProperty(

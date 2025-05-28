@@ -2,12 +2,10 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion'
 import { watch } from 'vue'
-import { VistaControl } from '../../modelo/VistaControl'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
 }>()
 
 const mostrandoParte = ref(-1)
@@ -42,7 +40,7 @@ watch(
         <div
           v-for="(aco, index_aco) in cancion.acordes.partes[parte].acordes"
           :key="index_aco"
-          class="acorde"          
+          class="acorde"
           :class="{
             compas_actual:
               mostrandoParte === index && mostrandoCompasParte === index_aco,

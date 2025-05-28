@@ -8,12 +8,11 @@ import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
 import { useAppStore } from '../stores/appStore'
-import { VistaControl } from '../modelo/VistaControl'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
 
+const pantalla = new Pantalla()
 onMounted(() => {
-  const pantalla = new Pantalla()
   pantalla.setearEstilos()
 })
 
@@ -27,110 +26,76 @@ class vistaTocar {
   viendo: string = 'karaoke'
   secuencia: boolean = true
   partes: boolean = true
-  largoPrincipal: number = 70
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
 vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
 vista.value.secuencia =
   localStorage.getItem('secuencia') == 'true' ? true : false
 vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
-adecuAncho()
-function cambiarVista(nvista: string) {
-  vista.value.viendo = nvista
-  localStorage.setItem('viendo_vista_tocando', nvista)
-  adecuAncho()
-}
-function adecuAncho() {
-  if (vista.value.secuencia || vista.value.partes) {
-    vista.value.largoPrincipal = 70
-  } else {
-    vista.value.largoPrincipal = 100
-  }
-}
+
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
   localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')
-  adecuAncho()
 }
 
 function clickPartes() {
   vista.value.partes = !vista.value.partes
   localStorage.setItem('partes', vista.value.partes ? 'true' : 'false')
-  adecuAncho()
 }
 
 function GetStylePantallaPlay() {
   return {
-    width: window.innerWidth + 'px',
-    height: window.innerHeight - 200 + 'px',
+    width: pantalla.getAnchoPantalla() + 'px',
+    height: pantalla.getAltoPantalla() + 'px',
   }
 }
 
-/*
- ;
-  public height: number = ;
-*/
+function cambiarVista(nvista: string) {
+  vista.value.viendo = nvista
+  localStorage.setItem('viendo_vista_tocando', nvista)
+}
+function claseVistaPrincipal() {
+  return vista.value.partes || vista.value.secuencia
+    ? 'col-' + pantalla.getConfiguracionPantalla().anchoPrincipal
+    : 'col-11'
+}
 
-const vistaLetraYAcordes = ref(
-  new VistaControl(
-    14,
-    9,
-    5,
-    'acordes_seguidos',
-    'col-9',
-    window.innerHeight - 680,
-  ),
-)
-const vistaKaraoke = ref(
-  new VistaControl(
-    16,
-    12,
-    7,
-    'acordes_seguidos',
-    'col-9',
-    window.innerHeight - 180,
-  ),
-)
-const vistaAcordes = ref(
-  new VistaControl(
-    25,
-    12,
-    7,
-    'acordes_seguidos',
-    'col-9',
-    window.innerHeight - 240,
-  ),
-)
+function claseVistaSecundaria() {
+  return vista.value.partes || vista.value.secuencia
+    ? 'col-' + (12 - pantalla.getConfiguracionPantalla().anchoPrincipal)
+    : 'col-1'
+}
 </script>
 
 <template>
   <div>
     <div
-      class="pantallaPlay row"
+      class="row pantallaPlay"
       :style="GetStylePantallaPlay()"
       v-if="appStore.cancion"
     >
-      <div class="col-8 columnas">
+      <div class="columnas" :class="claseVistaPrincipal()">
         <TocarLetraAcorde
           v-if="vista.viendo == 'acordes'"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          :vista="vistaLetraYAcordes"
         ></TocarLetraAcorde>
         <TocarLetra
           v-if="vista.viendo == 'karaoke'"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          :vista="vistaKaraoke"
         ></TocarLetra>
         <TocarAcorde
           v-if="vista.viendo == 'soloacordes'"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          :vista="vistaKaraoke"
         ></TocarAcorde>
       </div>
-      <div class="col-4 columnas lateral-container" style="position: relative">
+      <div
+        class="columnas lateral-container"
+        :class="claseVistaSecundaria()"
+        style="position: relative"
+      >
         <div class="dropdown dropdown-superior-derecha">
           <button
             class="btn btn-secondary dropdown-toggle"
@@ -170,7 +135,6 @@ const vistaAcordes = ref(
         <Lateral
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          :vista="vistaAcordes"
           :secuencia="vista.secuencia"
           :partes="vista.partes"
         ></Lateral>
@@ -208,16 +172,14 @@ const vistaAcordes = ref(
 
 .pantallaPlay {
   border: 1px solid;
-  position: relative;
   overflow: hidden;
-  padding: 4px;
-  width: 100vw;
-  height: 100vh;
+  padding: 2px;
+  padding-left: 10px;
 }
 
 .dropdown {
-  display: relative;
-  right: 0;
+  display: absolute;
+  left: 0;
 }
 
 .lateral-container {
@@ -226,8 +188,6 @@ const vistaAcordes = ref(
 
 .dropdown-superior-derecha {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
   z-index: 10;
 }
 </style>

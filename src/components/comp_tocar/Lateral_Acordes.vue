@@ -2,12 +2,10 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion'
 import { watch } from 'vue'
-import { VistaControl } from '../../modelo/VistaControl'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
   secuencia: boolean
   partes: boolean
 }>()
@@ -93,7 +91,6 @@ function calcularresumenparte() {
           >
             <span
               :class="{ compas_actual: mostrandoParte === index }"
-              :style="{ 'font-size': vista.tamanioReferencia / 2 + 'px' }"
               >{{ cancion.acordes.partes[parte].nombre }}</span
             >
           </div>

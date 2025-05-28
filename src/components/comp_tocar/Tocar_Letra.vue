@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion'
-import { VistaControl } from '../../modelo/VistaControl'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  vista: VistaControl
 }>()
 const scrollTop = ref(0) // Ref to store the horizontal scroll position
 
@@ -20,9 +18,8 @@ watch(
   () => props.compas,
   (newCompas) => {
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    let ve = renglon * props.vista.tamanioReferencia * 1.6
-    console.log('ve', ve, newCompas, renglon)
-    ve -= props.vista.alto * 0.4
+    let ve = renglon * 23
+    ve -= 32
     const nuevaPos = Math.max(ve, 0)
     moverScroll(nuevaPos)
 
