@@ -1,19 +1,15 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
+  <h1>EL FOGON</h1>
 
-
-<h1>EL FOGON</h1>
-
-<div id="contenedor-musical">
-  <div class="cancion">
-    <h2>Bienvenido al Fogon</h2>
-    <p>Esta es una red musical distribuida.</p>
-    <p>Pronto podrás tocar música con tus amigos.</p>
+  <div id="contenedor-musical">
+    <div class="cancion">
+      <h2>Bienvenido al Fogon</h2>
+      <p>Esta es una red musical distribuida.</p>
+      <p>Pronto podrás tocar música con tus amigos.</p>
+    </div>
   </div>
-</div>
-
 </template>
 
 <style scoped>
