@@ -68,7 +68,7 @@ function claseVistaSecundaria() {
 </script>
 
 <template>
-  <div>
+  <div class="tocar-fluid">
     <div
       class="row pantallaPlay"
       :style="GetStylePantallaPlay()"
@@ -141,7 +141,7 @@ function claseVistaSecundaria() {
       </div>
     </div>
     <div class="row">
-      <div class="col-8">
+      <div class="col-7">
         <ControladorTiempo
           v-if="$route.path === '/tocar'"
           :nro_cancion="1"
@@ -185,7 +185,9 @@ function claseVistaSecundaria() {
 .lateral-container {
   position: relative;
 }
-
+.tocar-fluid {
+  margin-left: 10px;
+}
 .dropdown-superior-derecha {
   position: absolute;
   z-index: 10;

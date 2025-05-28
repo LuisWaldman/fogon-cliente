@@ -44,9 +44,9 @@ function updateCompas(newCompas: number) {
 </script>
 
 <template>
-  <div>
+  <div class="controls">
     <div class="row">
-      <div class="col-2">
+      <div class="col-2 columnacontrol">
         <button
           class="boton_controller boton_controllerplay"
           @click="play"
@@ -70,7 +70,7 @@ function updateCompas(newCompas: number) {
           <i class="bi bi-stop-fill"></i>
         </button>
       </div>
-      <div class="col-8">
+      <div class="col-3 columnacontrol">
         <input
           type="range"
           min="0"
@@ -80,7 +80,7 @@ function updateCompas(newCompas: number) {
           class="rango_compas"
         />
       </div>
-      <div class="col-2">
+      <div class="col-6 columnacontrol">
         <span class="spnTiempo"
           >{{ tiempoActual }}
           /
@@ -94,6 +94,10 @@ function updateCompas(newCompas: number) {
 </template>
 
 <style scoped>
+.columnacontrol {
+  margin: 1px !important;
+  padding: 1px !important;
+}
 .controls {
   display: flex;
 }
@@ -160,5 +164,8 @@ function updateCompas(newCompas: number) {
   .spnTiempo {
     font-size: 12px;
   }
+}
+.controls {
+  margin-left: 10px;
 }
 </style>

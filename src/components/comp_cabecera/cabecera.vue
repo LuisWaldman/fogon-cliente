@@ -14,7 +14,7 @@ const appStore = useAppStore()
       margin-right: calc(-50vw + 50%);
     "
   >
-    <div style="display: flex">
+    <div style="display: flex; width: 100%">
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img src="/img/iconogrande.png" alt="Logo" width="50" />
       </router-link>
@@ -27,9 +27,13 @@ const appStore = useAppStore()
         {{ appStore.cancion?.cancion }} -
         {{ appStore.cancion?.banda }}
       </div>
+      <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
+        Configuracion
+      </span>
 
-      <div class="dropdown dropdown-superior-derecha">
+      <div class="dropdown dropdown-superior-derecha ms-auto">
         <button
+          style="background-color: #000; border: none"
           class="btn btn-secondary dropdown-toggle"
           type="button"
           id="dropdownMenuButton"
@@ -74,8 +78,13 @@ const appStore = useAppStore()
 .titulocancioncontrol {
   color: #a9a8f6;
   font-size: 2.5rem;
+  margin-top: 10px;
   margin-left: 10px;
-  margin-right: auto;
+  margin-right: 10px; /* Adjust margin for spacing */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1; /* Allow title to take available space */
 }
 
 /* Cambia la disposición de los elementos en dispositivos móviles */
