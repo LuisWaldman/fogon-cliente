@@ -57,13 +57,13 @@ const cancionesPorBanda = {
     { nombre: 'Gavotte', archivo: 'nuri-profe_gavote' },
   ],
 }
-const url = new URL(window.location.href)
+const url = window.location.href
 </script>
 <template>
-  <div class="home" v-if="url.href == 'https://www.fogon.ar/'">
+  <div class="home" v-if="url == 'https://www.fogon.ar/'">
     PROXIMAMENTE: <br />
   </div>
-  <div class="home" v-if="url.href != 'https://www.fogon.ar/'">
+  <div class="home" v-if="url != 'https://www.fogon.ar/'">
     <h1 style="color: blueviolet">Bienvenido al Fogon</h1>
     <p class="read-the-docs">
       Esta es una version muy BETA, recien estamos empezando a construir el
