@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
-const scrollTop = ref(0) // Ref to store the horizontal scroll position
-
+const pantalla = new Pantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
-
 const mostrandoParte = ref(-1)
 const mostrandoCompasParte = ref(-1)
 const currentCompas = ref(0)
@@ -72,8 +71,10 @@ watch(
     currentCompas.value = newCompas
 
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    let ve = renglon * 32
-    ve -= 23
+    const tamanioLetra = pantalla.getConfiguracionPantalla().tamanioLetra
+    const tamanioAcorde = pantalla.getConfiguracionPantalla().tamanioAcorde
+    let ve = renglon * ((tamanioLetra + tamanioAcorde) * 2)
+    ve -= tamanioLetra * 20
     const nuevaPos = Math.max(ve, 0)
 
     moverScroll(nuevaPos)
@@ -90,25 +91,11 @@ function Actualizar() {
   }
   return false
 }
-// Función para manejar el evento de scroll
-const handleScroll = () => {
-  if (letraDiv.value) {
-    scrollTop.value = letraDiv.value.scrollTop // Actualiza la posición del scroll
+function styleDivTocar() {
+  return {
+    height: pantalla.getAltoPantalla() + 'px',
   }
 }
-// Añadir el evento de scroll cuando se monta el componente
-onMounted(() => {
-  if (letraDiv.value) {
-    letraDiv.value.addEventListener('scroll', handleScroll)
-  }
-})
-
-// Eliminar el evento de scroll cuando se desmonta el componente
-onUnmounted(() => {
-  if (letraDiv.value) {
-    letraDiv.value.removeEventListener('scroll', handleScroll)
-  }
-})
 
 defineExpose({ Actualizar })
 </script>
@@ -124,7 +111,11 @@ defineExpose({ Actualizar })
       class="componenteMusical"
       v-if="letras.length > 0 && cancion.letras.renglones.length > 0"
     >
-      <div ref="letraDiv" class="overflow-auto divDeLetra">
+      <div
+        ref="letraDiv"
+        class="overflow-auto divDeLetra"
+        :style="styleDivTocar()"
+      >
         <div style="display: flex; flex-wrap: wrap">
           <template
             v-for="(parte, index) in cancion.acordes.ordenPartes"

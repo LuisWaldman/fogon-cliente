@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
-const scrollTop = ref(0) // Ref to store the horizontal scroll position
-
+const scrollTop = ref(0)
+const pantalla = new Pantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 
 const mostrandoRenglon = ref(-1)
@@ -18,8 +19,9 @@ watch(
   () => props.compas,
   (newCompas) => {
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    let ve = renglon * 23
-    ve -= 32
+    const tamanioLetra = pantalla.getConfiguracionPantalla().tamanioLetra
+    let ve = renglon * tamanioLetra * 2
+    ve -= tamanioLetra * 20
     const nuevaPos = Math.max(ve, 0)
     moverScroll(nuevaPos)
 
@@ -40,6 +42,12 @@ watch(
   },
 )
 
+function styleDivTocar() {
+  return {
+    height: pantalla.getAltoPantalla() + 'px',
+  }
+}
+
 function moverScroll(posX: number) {
   letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
 }
@@ -47,11 +55,10 @@ function moverScroll(posX: number) {
 function Actualizar() {
   if (letras.value.length === 0) {
     console.log('actualizar letras')
-    //   actualizarLetras(props.cancion);
   }
   return false
 }
-// Función para manejar el evento de scroll
+
 const handleScroll = () => {
   if (letraDiv.value) {
     scrollTop.value = letraDiv.value.scrollTop // Actualiza la posición del scroll
@@ -75,7 +82,11 @@ defineExpose({ Actualizar })
 </script>
 <template>
   <div class="componenteMusical">
-    <div ref="letraDiv" class="overflow-auto divDeLetra" style="height: 300px">
+    <div
+      ref="letraDiv"
+      class="overflow-auto divDeLetra"
+      :style="styleDivTocar()"
+    >
       <div style="display: flex; flex-wrap: wrap">
         <template
           v-for="(renglon, index) in cancion.letras.renglones"
