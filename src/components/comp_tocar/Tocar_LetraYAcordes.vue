@@ -72,8 +72,8 @@ watch(
     currentCompas.value = newCompas
 
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    let ve = renglon * props.vista.tamanioReferencia * 3.7
-    ve -= props.vista.alto * 0.4
+    let ve = renglon * 32
+    ve -= 23
     const nuevaPos = Math.max(ve, 0)
 
     moverScroll(nuevaPos)
@@ -125,14 +125,10 @@ defineExpose({ Actualizar })
       v-if="letras.length > 0 && cancion.letras.renglones.length > 0"
     >
       <div ref="letraDiv" class="overflow-auto divDeLetra">
-        <div
-          style="display: flex; flex-wrap: wrap"
-          :style="{ 'font-size': vista.tamanioReferencia + 'px' }"
-        >
+        <div style="display: flex; flex-wrap: wrap">
           <template
             v-for="(parte, index) in cancion.acordes.ordenPartes"
             :key="index"
-            class="parte"
           >
             <template
               v-for="(aco, index_aco) in cancion.acordes.partes[parte].acordes"

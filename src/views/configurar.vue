@@ -12,8 +12,8 @@ function clickOpcion(viendostr: string) {
 }
 // Detectar cuál vista corresponde a la pantalla actual
 
-  const w = window.innerWidth
-  const h = window.innerHeight
+const w = window.innerWidth
+const h = window.innerHeight
 function getVistaActualIndex() {
   const w = window.innerWidth
   const h = window.innerHeight
@@ -23,7 +23,7 @@ function getVistaActualIndex() {
 }
 const vistaSeleccionada = ref(getVistaActualIndex())
 
-function guardar_configuracion() {
+function guardarConfiguracion() {
   config.vistasTocar = vistasTocar.value.map((v) =>
     Object.assign(new VistaTocar(), v),
   )
@@ -53,7 +53,7 @@ function guardar_configuracion() {
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'sesion' }"
               >
-                Sesion {{  w }} {{ h }}
+                Sesion {{ w }} {{ h }}
               </a>
             </li>
           </ul>
@@ -267,7 +267,7 @@ function guardar_configuracion() {
           <p>donaciones al alias: la.plata.de.luis</p>
         </div>
         <div>
-          <button id="btnGuardar" @click="guardar_configuracion()">
+          <button id="btnGuardar" @click="guardarConfiguracion()">
             Guardar
           </button>
         </div>

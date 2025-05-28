@@ -89,10 +89,9 @@ function calcularresumenparte() {
             :key="index"
             class="ordendiv"
           >
-            <span
-              :class="{ compas_actual: mostrandoParte === index }"
-              >{{ cancion.acordes.partes[parte].nombre }}</span
-            >
+            <span :class="{ compas_actual: mostrandoParte === index }">{{
+              cancion.acordes.partes[parte].nombre
+            }}</span>
           </div>
         </div>
       </div>

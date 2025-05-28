@@ -75,12 +75,11 @@ defineExpose({ Actualizar })
 </script>
 <template>
   <div class="componenteMusical">
-    <div ref="letraDiv" class="overflow-auto divDeLetra">
+    <div ref="letraDiv" class="overflow-auto divDeLetra" style="height: 300px">
       <div style="display: flex; flex-wrap: wrap">
         <template
           v-for="(renglon, index) in cancion.letras.renglones"
           :key="index"
-          class="parte"
         >
           <template v-for="(letra, index_aco) in renglon" :key="index_aco">
             <div
