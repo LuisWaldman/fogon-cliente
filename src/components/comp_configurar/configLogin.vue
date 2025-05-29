@@ -7,19 +7,14 @@ const loginMessages = ref([] as string[])
 
 import { GoogleLogin } from 'vue3-google-login'
 
-const CLIENT_ID =
-  '187897456683-j9oaks1v1tkd9pde73g65871fgj7k8sn.apps.googleusercontent.com'
-
-
-const handleSuccess = (response: any) => {
-  console.log('Token:', response.credential)
+const handleSuccess = () => {
+  //console.log('Token:', response.credential)
   // Enviar el token al backend en Golang
 }
 
 const handleError = () => {
   console.error('Error al iniciar sesión con Google')
 }
-
 
 function loginWithCredentials() {
   if (username.value.trim() === '' || password.value.trim() === '') {
@@ -65,10 +60,7 @@ function loginWithCredentials() {
 
     <div class="google-login">
       <p>O inicia sesión con:</p>
-      <GoogleLogin
-        @success="handleSuccess"
-        @error="handleError"
-      />
+      <GoogleLogin @success="handleSuccess" @error="handleError" />
     </div>
 
     <div class="login-messages" v-if="loginMessages.length > 0">
