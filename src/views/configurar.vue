@@ -2,19 +2,18 @@
 import { ref } from 'vue'
 import { Configuracion, VistaTocar } from '../modelo/configuracion'
 import configsesion from '../components/comp_configurar/configSesion.vue'
+import configlogin from '../components/comp_configurar/configLogin.vue'
 
 // Definir la canción y el contexto
 const config = Configuracion.getInstance()
 const vistasTocar = ref(config.vistasTocar.map((v) => Object.assign({}, v)))
-const viendo = ref('sesion')
+const viendo = ref('perfil')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
 // Detectar cuál vista corresponde a la pantalla actual
 
-const w = window.innerWidth
-const h = window.innerHeight
 function getVistaActualIndex() {
   const w = window.innerWidth
   const h = window.innerHeight
@@ -115,7 +114,9 @@ function guardarConfiguracion() {
       </div>
 
       <div class="col-9 innerConfig">
-        <div v-if="viendo == 'perfil'" class="container">PERFIL</div>
+        <div v-if="viendo == 'perfil'" class="container">
+          <configlogin></configlogin>
+        </div>
 
         <div v-if="viendo == 'sesion'">
           <configsesion> </configsesion>

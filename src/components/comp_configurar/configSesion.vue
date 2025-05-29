@@ -6,30 +6,29 @@ const serverName = ref('http://localhost:8080/')
 const respuestas = ref([] as string[])
 const conectado = ref(false)
 
-let cliente: ClienteSocket | undefined;
+let cliente: ClienteSocket | undefined
 
 function conectar() {
-      if (serverName.value.trim() === '') {
-        respuestas.value.push('Por favor ingrese un nombre de servidor.')
-        return
-      }
-      cliente = new ClienteSocket(serverName.value)
-      cliente.connectar()
-      conectado.value = true
-      respuestas.value.push(`Intenta conectar: ${serverName.value}`)
-    }
-    
-    function mandarMensaje(tipo: string) {
-      if (!conectado.value) {
-        respuestas.value.push('Debe conectarse primero.')
-        return
-      }
-      respuestas.value.push(
-        `Mensaje ${tipo} enviando al servidor ${serverName.value}`,
-      )
-      cliente?.hola(tipo)
-    }
-    
+  if (serverName.value.trim() === '') {
+    respuestas.value.push('Por favor ingrese un nombre de servidor.')
+    return
+  }
+  cliente = new ClienteSocket(serverName.value)
+  cliente.connectar()
+  conectado.value = true
+  respuestas.value.push(`Intenta conectar: ${serverName.value}`)
+}
+
+function mandarMensaje(tipo: string) {
+  if (!conectado.value) {
+    respuestas.value.push('Debe conectarse primero.')
+    return
+  }
+  respuestas.value.push(
+    `Mensaje ${tipo} enviando al servidor ${serverName.value}`,
+  )
+  cliente?.hola(tipo)
+}
 </script>
 <template>
   <div class="config-sesion">
@@ -62,7 +61,7 @@ function conectar() {
   margin: 0 auto;
 }
 .buttons {
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 .buttons button {
   margin-right: 8px;
