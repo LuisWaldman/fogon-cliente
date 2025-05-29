@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Configuracion, VistaTocar } from '../modelo/configuracion'
+import configsesion from '../components/comp_configurar/configSesion.vue'
 
 // Definir la canción y el contexto
 const config = Configuracion.getInstance()
 const vistasTocar = ref(config.vistasTocar.map((v) => Object.assign({}, v)))
-const viendo = ref('vistas')
+const viendo = ref('sesion')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
@@ -53,7 +54,7 @@ function guardarConfiguracion() {
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'sesion' }"
               >
-                Sesion {{ w }} {{ h }}
+                Sesion
               </a>
             </li>
           </ul>
@@ -116,7 +117,9 @@ function guardarConfiguracion() {
       <div class="col-9 innerConfig">
         <div v-if="viendo == 'perfil'" class="container">PERFIL</div>
 
-        <div v-if="viendo == 'sesion'"></div>
+        <div v-if="viendo == 'sesion'">
+          <configsesion> </configsesion>
+        </div>
 
         <div v-if="viendo == 'vistas'">
           <h3>Configuración de Vistas</h3>
