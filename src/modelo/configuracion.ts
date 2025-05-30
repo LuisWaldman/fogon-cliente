@@ -1,4 +1,5 @@
-// Clase Configuracion (singleton)
+import { Servidor } from './servidor' // Nueva importación
+
 export class VistaTocar {
   public tamanioLetra: number = 22
   public tamanioAcorde: number = 23
@@ -16,6 +17,7 @@ export class Configuracion {
     new VistaTocar(),
     new VistaTocar(),
   ]
+  public servidores: Servidor[] = [] // Nueva propiedad
 
   GetConfiguracionPantalla(innerWidth: number, innerHeight: number) {
     // 0: Celular, 1: PC, 2: Pantalla grande
@@ -28,7 +30,7 @@ export class Configuracion {
     return this.vistasTocar[idx]
   }
   private static instance: Configuracion | null = null
-  static VERSION = 2 // Incrementa la versión para guardar nuevas vistas
+  static VERSION = 3 // Incrementa la versión para guardar nuevas vistas y servidores
   public tema: string = 'claro'
   public volumen: number = 50
   public mostrarAcordes: boolean = true
@@ -43,12 +45,13 @@ export class Configuracion {
   }
 
   private static cargarDesdeLocalStorage(): Configuracion {
+    const conf = new Configuracion() // Create a base instance. Default values (like empty 'servidores' array) are set by constructor.
     const data = localStorage.getItem('configuracion')
+
     if (data) {
       try {
         const obj = JSON.parse(data)
         if (obj.VERSION === Configuracion.VERSION) {
-          const conf = new Configuracion()
           conf.tema = obj.tema
           conf.volumen = obj.volumen
           conf.mostrarAcordes = obj.mostrarAcordes
@@ -61,16 +64,37 @@ export class Configuracion {
               Object.assign(new VistaTocar(), v),
             )
           }
+
+          if (
+            obj.servidores &&
+            Array.isArray(obj.servidores) &&
+            obj.servidores.length > 0
+          ) {
+            conf.servidores = obj.servidores.map(
+              (s: { nombre: string; direccion: string }) =>
+                new Servidor(s.nombre, s.direccion),
+            )
+          } else {
+            // No valid 'servidores' array in stored data, add default
+            conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
+          }
           return conf
         } else {
-          return new Configuracion() // Si la versión no coincide, se crea una nueva instancia por defecto
+          // Version mismatch, initialize with default server
+          conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
+          // The new conf (with default server) will be saved by getInstance if this was the initial load.
+          return conf
         }
       } catch (e) {
         console.error('Error al cargar configuración desde localStorage:', e)
+        // Error parsing, initialize with default server
+        conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
+        return conf
       }
     }
-    const conf = new Configuracion()
-    conf.guardarEnLocalStorage()
+    // No data in localStorage, initialize with default server
+    conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
+    // The new conf (with default server) will be saved by getInstance on first call.
     return conf
   }
 
@@ -83,6 +107,7 @@ export class Configuracion {
         volumen: this.volumen,
         mostrarAcordes: this.mostrarAcordes,
         vistasTocar: this.vistasTocar,
+        servidores: this.servidores, // Guardar servidores
       }),
     )
   }
