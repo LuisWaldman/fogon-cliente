@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { ref, onMounted, watch } from 'vue' // Import watch
+import { ref, onMounted, watch, computed } from 'vue' // Import computed
 import { ClienteSocket } from '../../modelo/conexion/ClienteSocket'
 import { Configuracion } from '../../modelo/configuracion' // Import Configuracion
 import { Servidor } from '../../modelo/servidor' // Import Servidor
 
 const configuracion = Configuracion.getInstance() // Get Configuracion instance
 const servidores = ref<Servidor[]>(configuracion.servidores) // servidores ref
+const conectarServerDefault = ref(configuracion.conectarServerDefault) // ref for default server name
 
-// Initialize serverName with the address of the first server, or default if empty
-const serverName = ref(servidores.value.length > 0 ? servidores.value[0].direccion : 'http://localhost:8080/')
+// Initialize serverName with the address of the default server, or first, or a hardcoded default.
+const serverName = ref('')
 
 const respuestas = ref([] as string[])
 const conectado = ref(false)
@@ -20,26 +21,50 @@ let cliente: ClienteSocket | undefined
 // Load servers on component mount and set initial serverName
 onMounted(() => {
   servidores.value = configuracion.servidores
-  if (servidores.value.length > 0 && !servidores.value.find(s => s.direccion === serverName.value)) {
-    // If current serverName is not in the list (e.g. after a server is deleted), select the first one.
-    serverName.value = servidores.value[0].direccion
-  } else if (servidores.value.length === 0) {
-    // If no servers, set to default (though config should add one)
-    serverName.value = 'http://localhost:8080/'
+  conectarServerDefault.value = configuracion.conectarServerDefault
+
+  // Determine initial serverName based on conectarServerDefault
+  const defaultServer = servidores.value.find(s => s.nombre === conectarServerDefault.value)
+  if (defaultServer) {
+    serverName.value = defaultServer.direccion
+  } else if (servidores.value.length > 0) {
+    serverName.value = servidores.value[0].direccion // Fallback to first server
+  } else {
+    serverName.value = 'http://localhost:8080/' // Fallback to hardcoded default
   }
 })
 
-// Watch for changes in the servidores list to update serverName if the selected one is removed
+// Watch for changes in the servidores list
 watch(servidores, (newServidores) => {
-  if (!newServidores.find(s => s.direccion === serverName.value)) {
-    if (newServidores.length > 0) {
-      serverName.value = newServidores[0].direccion;
+  // Update serverName if the currently selected one is no longer valid or if the default changed
+  const currentSelectedServer = newServidores.find(s => s.direccion === serverName.value)
+  const defaultServer = newServidores.find(s => s.nombre === conectarServerDefault.value)
+
+  if (defaultServer && serverName.value !== defaultServer.direccion) {
+    // If there is a default server and it's not the current one, switch to it (this might be too aggressive)
+    // serverName.value = defaultServer.direccion;
+  } else if (!currentSelectedServer) {
+    // If the current serverName is no longer in the list (e.g., deleted)
+    if (defaultServer) {
+      serverName.value = defaultServer.direccion // Try to switch to default
+    } else if (newServidores.length > 0) {
+      serverName.value = newServidores[0].direccion // Or first available
     } else {
-      // Handle case where all servers are deleted - perhaps set to a default or disable connection
-      serverName.value = ''; // Or some default placeholder
+      serverName.value = '' // Or empty if no servers
     }
   }
 }, { deep: true });
+
+// Watch for external changes to conectarServerDefault (e.g. if another component changes it)
+watch(() => configuracion.conectarServerDefault, (newDefaultServerName) => {
+  conectarServerDefault.value = newDefaultServerName;
+  // Optionally, update serverName to the new default server if it exists
+  const newDefaultServer = servidores.value.find(s => s.nombre === newDefaultServerName);
+  if (newDefaultServer) {
+    serverName.value = newDefaultServer.direccion;
+  }
+});
+
 
 function conectar() {
   if (serverName.value.trim() === '') {
@@ -67,10 +92,19 @@ function mandarMensaje(tipo: string) {
 function agregarServidor() {
   if (nuevoServidorNombre.value.trim() !== '' && nuevoServidorDireccion.value.trim() !== '') {
     const nuevo = new Servidor(nuevoServidorNombre.value, nuevoServidorDireccion.value)
+    // Check if server with the same name or address already exists
+    if (servidores.value.some(s => s.nombre === nuevo.nombre || s.direccion === nuevo.direccion)) {
+      respuestas.value.push('Ya existe un servidor con ese nombre o dirección.')
+      return
+    }
     configuracion.servidores.push(nuevo)
+    servidores.value = [...configuracion.servidores] // Update reactive ref first
+    // If this is the first server added, or no default is set, make it the default
+    if (servidores.value.length === 1 || !conectarServerDefault.value) {
+      setConectarPorDefault(nuevo.nombre)
+    }
     configuracion.guardarEnLocalStorage() // Save to localStorage
-    servidores.value = [...configuracion.servidores] // Update reactive ref
-    // If this is the first server added, select it
+    // If this is the first server added, also select it for connection
     if (servidores.value.length === 1) {
       serverName.value = nuevo.direccion
     }
@@ -81,11 +115,33 @@ function agregarServidor() {
 
 // Function to remove a server
 function eliminarServidor(index: number) {
+  const servidorEliminado = servidores.value[index];
   configuracion.servidores.splice(index, 1)
-  configuracion.guardarEnLocalStorage() // Save to localStorage
   servidores.value = [...configuracion.servidores] // Update reactive ref
-  // serverName will be updated by the watcher if the selected server was deleted
+
+  // If the deleted server was the default, update default to the first available or empty
+  if (conectarServerDefault.value === servidorEliminado.nombre) {
+    if (servidores.value.length > 0) {
+      setConectarPorDefault(servidores.value[0].nombre)
+    } else {
+      setConectarPorDefault('')
+    }
+  }
+  configuracion.guardarEnLocalStorage() // Save to localStorage
 }
+
+// Function to set a server as default for connection
+function setConectarPorDefault(nombreServidor: string) {
+  configuracion.conectarServerDefault = nombreServidor
+  conectarServerDefault.value = nombreServidor // Update local ref
+  configuracion.guardarEnLocalStorage()
+}
+
+// Computed property to check if a server is the default one
+const esServidorPorDefecto = computed(() => {
+  return (nombreServidor: string) => conectarServerDefault.value === nombreServidor
+})
+
 </script>
 <template>
   <div class="config-sesion">
@@ -95,7 +151,7 @@ function eliminarServidor(index: number) {
         No hay servidores configurados
       </option>
       <option v-for="servidor in servidores" :key="servidor.direccion" :value="servidor.direccion">
-        {{ servidor.nombre }} ({{ servidor.direccion }})
+        {{ servidor.nombre }} ({{ servidor.direccion }}) {{ esServidorPorDefecto(servidor.nombre) ? '[Default]' : '' }}
       </option>
     </select>
 
@@ -123,6 +179,9 @@ function eliminarServidor(index: number) {
       <ul>
         <li v-for="(servidor, index) in servidores" :key="index">
           {{ servidor.nombre }} ({{ servidor.direccion }})
+          <button @click="setConectarPorDefault(servidor.nombre)" :disabled="esServidorPorDefecto(servidor.nombre)">
+            {{ esServidorPorDefecto(servidor.nombre) ? 'Predeterminado' : 'Conectar por default' }}
+          </button>
           <button @click="eliminarServidor(index)">Eliminar</button>
         </li>
       </ul>
@@ -180,5 +239,9 @@ function eliminarServidor(index: number) {
 
 .admin-servidores button {
   margin-left: 10px;
+}
+
+.admin-servidores li button {
+  margin-left: 5px; /* Adjust margin for multiple buttons */
 }
 </style>

@@ -7,7 +7,7 @@ import configlogin from '../components/comp_configurar/configLogin.vue'
 // Definir la canción y el contexto
 const config = Configuracion.getInstance()
 const vistasTocar = ref(config.vistasTocar.map((v) => Object.assign({}, v)))
-const viendo = ref('perfil')
+const viendo = ref('sesion')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr

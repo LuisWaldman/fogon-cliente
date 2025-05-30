@@ -17,7 +17,8 @@ export class Configuracion {
     new VistaTocar(),
     new VistaTocar(),
   ]
-  public servidores: Servidor[] = [] // Nueva propiedad
+  public servidores: Servidor[] = []
+  public conectarServerDefault: string = '' // Changed to string
 
   GetConfiguracionPantalla(innerWidth: number, innerHeight: number) {
     // 0: Celular, 1: PC, 2: Pantalla grande
@@ -30,7 +31,7 @@ export class Configuracion {
     return this.vistasTocar[idx]
   }
   private static instance: Configuracion | null = null
-  static VERSION = 3 // Incrementa la versión para guardar nuevas vistas y servidores
+  static VERSION = 5 // Incremented version
   public tema: string = 'claro'
   public volumen: number = 50
   public mostrarAcordes: boolean = true
@@ -45,16 +46,23 @@ export class Configuracion {
   }
 
   private static cargarDesdeLocalStorage(): Configuracion {
-    const conf = new Configuracion() // Create a base instance. Default values (like empty 'servidores' array) are set by constructor.
+    const conf = new Configuracion() // Base instance with defaults (servidores=[], conectarServerDefault='')
     const data = localStorage.getItem('configuracion')
 
     if (data) {
       try {
         const obj = JSON.parse(data)
         if (obj.VERSION === Configuracion.VERSION) {
+          // Version match: load everything
           conf.tema = obj.tema
           conf.volumen = obj.volumen
           conf.mostrarAcordes = obj.mostrarAcordes
+
+          conf.conectarServerDefault =
+            typeof obj.conectarServerDefault === 'string'
+              ? obj.conectarServerDefault
+              : '' // Default to empty if not string or undefined
+
           if (
             obj.vistasTocar &&
             Array.isArray(obj.vistasTocar) &&
@@ -65,36 +73,35 @@ export class Configuracion {
             )
           }
 
-          if (
-            obj.servidores &&
-            Array.isArray(obj.servidores) &&
-            obj.servidores.length > 0
-          ) {
+          if (obj.servidores && Array.isArray(obj.servidores)) {
             conf.servidores = obj.servidores.map(
               (s: { nombre: string; direccion: string }) =>
                 new Servidor(s.nombre, s.direccion),
             )
-          } else {
-            // No valid 'servidores' array in stored data, add default
-            conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
           }
-          return conf
-        } else {
-          // Version mismatch, initialize with default server
-          conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
-          // The new conf (with default server) will be saved by getInstance if this was the initial load.
-          return conf
         }
+        // If version mismatch, conf remains mostly a new instance with its defaults.
       } catch (e) {
         console.error('Error al cargar configuración desde localStorage:', e)
-        // Error parsing, initialize with default server
-        conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
-        return conf
+        // On error, conf remains mostly a new instance.
       }
     }
-    // No data in localStorage, initialize with default server
-    conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
-    // The new conf (with default server) will be saved by getInstance on first call.
+
+    // Post-processing for servidores and conectarServerDefault
+    if (conf.servidores.length === 0) {
+      // No servers loaded (fresh install, version mismatch, corrupted/empty array in storage)
+      conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
+      conf.conectarServerDefault = 'desa' // Default to 'desa' as it's the only one
+    } else {
+      // Servers were loaded. Validate conectarServerDefault.
+      const defaultServerIsValid = conf.servidores.some(
+        (s) => s.nombre === conf.conectarServerDefault,
+      )
+      if (!defaultServerIsValid) {
+        // If loaded default is invalid (not found or was empty), set to the first server's name.
+        conf.conectarServerDefault = conf.servidores[0].nombre
+      }
+    }
     return conf
   }
 
@@ -107,7 +114,8 @@ export class Configuracion {
         volumen: this.volumen,
         mostrarAcordes: this.mostrarAcordes,
         vistasTocar: this.vistasTocar,
-        servidores: this.servidores, // Guardar servidores
+        servidores: this.servidores,
+        conectarServerDefault: this.conectarServerDefault, // Save as string
       }),
     )
   }
