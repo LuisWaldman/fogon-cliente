@@ -18,7 +18,6 @@ const appStore = useAppStore()
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img src="/img/iconogrande.png" alt="Logo" width="50" />
       </router-link>
-      {{ appStore.estado }}
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
       </span>
