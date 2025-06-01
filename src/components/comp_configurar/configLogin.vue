@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useAppStore } from '../../stores/appStore'
 
 const username = ref('')
 const password = ref('')
 const loginMessages = ref([] as string[])
-
 import { GoogleLogin } from 'vue3-google-login'
+import { datosLogin } from '../../modelo/datosLogin'
 
 const handleSuccess = () => {
   //console.log('Token:', response.credential)
@@ -24,6 +25,11 @@ function loginWithCredentials() {
   loginMessages.value.push(
     `Intentando iniciar sesión como ${username.value}...`,
   )
+  const appStore = useAppStore()
+  appStore.aplicacion.login(
+    new datosLogin('USERCLAVE', username.value, password.value, false),
+  )
+
   // Aquí iría la lógica de autenticación con tu backend
 }
 </script>

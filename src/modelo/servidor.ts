@@ -1,3 +1,6 @@
 export class Servidor {
-  constructor(public nombre: string = '', public direccion: string = '') {}
+  constructor(
+    public nombre: string = '',
+    public direccion: string = '',
+  ) {}
 }

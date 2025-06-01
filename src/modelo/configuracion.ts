@@ -11,6 +11,13 @@ export class VistaTocar {
   public factorScroll: number = 3.4 // Nueva propiedad para el factor de scroll
 }
 export class Configuracion {
+  obtenerURLConectar(serverName: string) {
+    const server = this.servidores.find((s) => s.nombre === serverName)
+    if (server) {
+      return server.direccion
+    }
+    return '' // Retorna vacío si no se encuentra el servidor
+  }
   public vistasTocar: VistaTocar[] = [
     // 0: Celular, 1: PC, 2: Pantalla grande
     new VistaTocar(),
@@ -31,7 +38,7 @@ export class Configuracion {
     return this.vistasTocar[idx]
   }
   private static instance: Configuracion | null = null
-  static VERSION = 5 // Incremented version
+  static VERSION = 6 // Incremented version
   public tema: string = 'claro'
   public volumen: number = 50
   public mostrarAcordes: boolean = true

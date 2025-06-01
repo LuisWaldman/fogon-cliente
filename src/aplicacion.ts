@@ -2,9 +2,15 @@ import { HelperObtenerCancionURL } from './helpers/HelperObtenerCancionURL'
 import type { Cancion } from './modelo/cancion'
 import { useAppStore } from './stores/appStore'
 import { Reloj } from './modelo/reloj'
+import { Configuracion } from './modelo/configuracion'
+import { datosLogin } from './modelo/datosLogin'
+import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 
 export default class Aplicacion {
   reloj: Reloj = new Reloj()
+  configuracion: Configuracion = Configuracion.getInstance()
+  cliente: ClienteSocket | null = null
+
   async tocar(cancionstr: string): Promise<Cancion> {
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
     return helperArchivo.GetCancion(cancionstr)
@@ -69,5 +75,27 @@ export default class Aplicacion {
     console.log('Aplicacion inicializada')
   }
 
-  // Puedes agregar métodos y propiedades según tus necesidades
+  conectar(url: string) {
+    const appStore = useAppStore()
+    appStore.estado = 'conectando'
+    this.cliente = new ClienteSocket(url)
+    this.cliente.setconexionStatusHandler((status: string) => {
+      console.log('status:', status)
+      if (status === 'conectado') {
+        appStore.estado = 'conectado'
+      }
+    })
+    this.cliente.connectar()
+    console.log(`Conectando al servidor: ${url}`)
+  }
+
+  login(datos: datosLogin): boolean {
+    console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
+    if (!this.cliente) {
+      console.error('Cliente no conectado. No se puede iniciar sesión.')
+      return false
+    }
+    this.cliente.login(datos)
+    return true
+  }
 }

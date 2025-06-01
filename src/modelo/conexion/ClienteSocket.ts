@@ -1,4 +1,5 @@
 import { io, Socket } from 'socket.io-client'
+import type { datosLogin } from '../datosLogin'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -6,6 +7,7 @@ interface ServerToClientEvents {
 
 interface ClientToServerEvents {
   hola: (mensaje: string) => void
+  login: (modo: string, usuario: string, password: string) => void
   unirme_sesion(sesion: string): void
 }
 
@@ -15,6 +17,11 @@ export class ClienteSocket {
   private replicaHandler?: (datos: string[]) => void
   public setreplicaHandler(handler: (datos: string[]) => void): void {
     this.replicaHandler = handler
+  }
+
+  private conexionStatusHandler?: (status: string) => void
+  public setconexionStatusHandler(handler: (status: string) => void): void {
+    this.conexionStatusHandler = handler
   }
 
   private urlserver: string
@@ -41,6 +48,7 @@ export class ClienteSocket {
 
     socket.on('connect', () => {
       console.log('socket connected')
+      this.conexionStatusHandler?.('conectado')
     })
 
     socket.on('replica', (usuario: string, datos: string[]) => {
@@ -56,5 +64,9 @@ export class ClienteSocket {
   }
   public unirmeSesion(sesion: string): void {
     this.socket.emit('unirme_sesion', sesion)
+  }
+
+  login(datos: datosLogin) {
+    this.socket.emit('login', datos.modo, datos.usuario, datos.password)
   }
 }
