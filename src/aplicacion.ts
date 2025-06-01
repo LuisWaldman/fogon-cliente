@@ -10,6 +10,7 @@ export default class Aplicacion {
   reloj: Reloj = new Reloj()
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
+  token: string
 
   async tocar(cancionstr: string): Promise<Cancion> {
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
@@ -95,6 +96,12 @@ export default class Aplicacion {
       console.error('Cliente no conectado. No se puede iniciar sesión.')
       return false
     }
+    this.cliente.setLoginSuccessHandler((token: string) => {
+      console.log(`Inicio de sesión exitoso. Token: ${token}`)
+      const appStore = useAppStore()
+      appStore.estado = 'logueado'
+      this.token = token
+    })
     this.cliente.login(datos)
     return true
   }

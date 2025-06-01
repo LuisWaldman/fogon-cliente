@@ -3,6 +3,7 @@ import type { datosLogin } from '../datosLogin'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
+  loginSuccess: (data: { token: string }) => void
 }
 
 interface ClientToServerEvents {
@@ -17,6 +18,11 @@ export class ClienteSocket {
   private replicaHandler?: (datos: string[]) => void
   public setreplicaHandler(handler: (datos: string[]) => void): void {
     this.replicaHandler = handler
+  }
+
+  private loginSuccessHandler?: (token: string) => void
+  public setLoginSuccessHandler(handler: (token: string) => void): void {
+    this.loginSuccessHandler = handler
   }
 
   private conexionStatusHandler?: (status: string) => void
@@ -54,6 +60,11 @@ export class ClienteSocket {
     socket.on('replica', (usuario: string, datos: string[]) => {
       console.log('replica received with usuario and datos:', usuario, datos)
       this.replicaHandler?.(datos)
+    })
+
+    socket.on('loginSuccess', (data: { token: string }) => {
+      console.log('loginSuccess received with token:', data.token)
+      this.loginSuccessHandler?.(data.token)
     })
 
     this.socket = socket
