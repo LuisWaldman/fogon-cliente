@@ -28,7 +28,7 @@ const appStore = useAppStore()
               : '/img/desconectado.png'"
           alt="Logo"
           width="50"
-        /> {{ appStore.estado }}
+        />
       </router-link>
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
