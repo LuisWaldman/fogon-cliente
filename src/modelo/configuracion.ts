@@ -1,3 +1,4 @@
+import { datosLogin } from './datosLogin'
 import { Servidor } from './servidor' // Nueva importación
 
 export class VistaTocar {
@@ -25,7 +26,8 @@ export class Configuracion {
     new VistaTocar(),
   ]
   public servidores: Servidor[] = []
-  public conectarServerDefault: string = '' // Changed to string
+  public conectarServerDefault: string = ''
+  public loginDefault: datosLogin | null = null
 
   GetConfiguracionPantalla(innerWidth: number, innerHeight: number) {
     // 0: Celular, 1: PC, 2: Pantalla grande
@@ -38,7 +40,7 @@ export class Configuracion {
     return this.vistasTocar[idx]
   }
   private static instance: Configuracion | null = null
-  static VERSION = 6 // Incremented version
+  static VERSION = 7 // Incremented version
   public tema: string = 'claro'
   public volumen: number = 50
   public mostrarAcordes: boolean = true
@@ -53,7 +55,7 @@ export class Configuracion {
   }
 
   private static cargarDesdeLocalStorage(): Configuracion {
-    const conf = new Configuracion() // Base instance with defaults (servidores=[], conectarServerDefault='')
+    const conf = new Configuracion()
     const data = localStorage.getItem('configuracion')
 
     if (data) {
@@ -68,7 +70,17 @@ export class Configuracion {
           conf.conectarServerDefault =
             typeof obj.conectarServerDefault === 'string'
               ? obj.conectarServerDefault
-              : '' // Default to empty if not string or undefined
+              : ''
+
+          if (obj.loginDefault) {
+            const mantenerseLogeado = typeof obj.loginDefault.mantenerseLogeado === 'boolean' ? obj.loginDefault.mantenerseLogeado : false
+            conf.loginDefault = new datosLogin(
+              obj.loginDefault.modo,
+              obj.loginDefault.usuario,
+              obj.loginDefault.password,
+              mantenerseLogeado,
+            )
+          }
 
           if (
             obj.vistasTocar &&
@@ -122,7 +134,8 @@ export class Configuracion {
         mostrarAcordes: this.mostrarAcordes,
         vistasTocar: this.vistasTocar,
         servidores: this.servidores,
-        conectarServerDefault: this.conectarServerDefault, // Save as string
+        conectarServerDefault: this.conectarServerDefault,
+        loginDefault: this.loginDefault, // loginDefault now contains mantenerseLogeado
       }),
     )
   }

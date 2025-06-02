@@ -1,12 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue' // Import onMounted
 import { useAppStore } from '../../stores/appStore'
+import { Configuracion } from '../../modelo/configuracion' // Import Configuracion
 
 const username = ref('')
 const password = ref('')
+const mantenerseLogeado = ref(false) // Added ref for "mantenerseLogeado"
 const loginMessages = ref([] as string[])
 import { GoogleLogin } from 'vue3-google-login'
 import { datosLogin } from '../../modelo/datosLogin'
+
+// Load saved login data on component mount
+onMounted(() => {
+  const config = Configuracion.getInstance()
+  if (config.loginDefault && config.loginDefault.mantenerseLogeado) {
+    username.value = config.loginDefault.usuario
+    password.value = config.loginDefault.password
+    mantenerseLogeado.value = config.loginDefault.mantenerseLogeado
+  }
+})
 
 const handleSuccess = () => {
   //console.log('Token:', response.credential)
@@ -26,9 +38,23 @@ function loginWithCredentials() {
     `Intentando iniciar sesión como ${username.value}...`,
   )
   const appStore = useAppStore()
-  appStore.aplicacion.login(
-    new datosLogin('USERCLAVE', username.value, password.value, false),
+  const loginData = new datosLogin(
+    'USERCLAVE',
+    username.value,
+    password.value,
+    mantenerseLogeado.value,
   )
+  appStore.aplicacion.login(loginData)
+
+  // Save login data if "mantenerseLogeado" is checked
+  const config = Configuracion.getInstance()
+  if (mantenerseLogeado.value) {
+    config.loginDefault = loginData
+    config.loginDefault.mantenerseLogeado = true
+  } else {
+    config.loginDefault = null
+  }
+  config.guardarEnLocalStorage()
 
   // Aquí iría la lógica de autenticación con tu backend
 }
@@ -57,6 +83,15 @@ function loginWithCredentials() {
           type="password"
           placeholder="Ingrese su contraseña"
         />
+      </div>
+
+      <div class="form-group">
+        <input
+          id="mantenerseLogeado"
+          v-model="mantenerseLogeado"
+          type="checkbox"
+        />
+        <label for="mantenerseLogeado">Mantenerse logeado</label>
       </div>
 
       <div class="buttons">
