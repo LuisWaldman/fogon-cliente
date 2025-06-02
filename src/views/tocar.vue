@@ -140,8 +140,9 @@ function claseVistaSecundaria() {
         ></Lateral>
       </div>
     </div>
-    <div class="row">
-      <div class="col-7">
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 70%;">
         <ControladorTiempo
           v-if="$route.path === '/tocar'"
           :nro_cancion="1"
@@ -150,9 +151,10 @@ function claseVistaSecundaria() {
           :estado="appStore.estado"
         >
         </ControladorTiempo>
-      </div>
-      <div class="col-4">
-        <Metronomo
+
+        </td>
+        <td  style="width: 30%;">
+<Metronomo
           v-if="$route.path === '/tocar'"
           :compas="appStore.compas"
           :estado="appStore.estado"
@@ -160,8 +162,11 @@ function claseVistaSecundaria() {
           :bpm_encompas="appStore.golpeDelCompas"
           :cancion="appStore.cancion"
         ></Metronomo>
-      </div>
-    </div>
+
+        </td>
+      </tr>
+    </table>
+    
   </div>
 </template>
 

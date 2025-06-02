@@ -44,17 +44,17 @@ function updateCompas(newCompas: number) {
 </script>
 
 <template>
-  <div class="controls">
-    <div class="row">
-      <div class="col-2 columnacontrol">
-        <button
+  
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 5%;"><div class="controls">
+<button
           class="boton_controller boton_controllerplay"
           @click="play"
           v-if="appStore.estado !== 'tocando'"
         >
           <i class="bi bi-play-fill"></i>
         </button>
-
         <button
           class="boton_controller"
           @click="pause"
@@ -69,9 +69,9 @@ function updateCompas(newCompas: number) {
         >
           <i class="bi bi-stop-fill"></i>
         </button>
-      </div>
-      <div class="col-3 columnacontrol">
-        <input
+        </div></td>
+        <td style="width: 60%;">
+                  <input
           type="range"
           min="0"
           :max="appStore.cancion?.totalCompases"
@@ -79,17 +79,30 @@ function updateCompas(newCompas: number) {
           @input="updateCompas(currentCompas)"
           class="rango_compas"
         />
-      </div>
-      <div class="col-6 columnacontrol">
-        <span class="spnTiempo"
+          </td>
+          <td style="width: 35%;"><span class="spnTiempo"
           >{{ tiempoActual }}
           /
           {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
-        </span>
+        </span></td>
+
+      </tr></table>
+
+  <div class="controls">
+    
+      <div class="columnacontrol">
+        
+
+      </div>
+      <div class="columnacontrol">
+
+      </div>
+      <div class="columnacontrol">
+        
       </div>
     </div>
 
-    <div></div>
+    <div>
   </div>
 </template>
 
@@ -97,6 +110,7 @@ function updateCompas(newCompas: number) {
 .columnacontrol {
   margin: 1px !important;
   padding: 1px !important;
+  
 }
 .controls {
   display: flex;
@@ -165,7 +179,5 @@ function updateCompas(newCompas: number) {
     font-size: 12px;
   }
 }
-.controls {
-  margin-left: 10px;
-}
+
 </style>
