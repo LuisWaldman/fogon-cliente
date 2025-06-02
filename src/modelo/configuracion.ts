@@ -73,7 +73,10 @@ export class Configuracion {
               : ''
 
           if (obj.loginDefault) {
-            const mantenerseLogeado = typeof obj.loginDefault.mantenerseLogeado === 'boolean' ? obj.loginDefault.mantenerseLogeado : false
+            const mantenerseLogeado =
+              typeof obj.loginDefault.mantenerseLogeado === 'boolean'
+                ? obj.loginDefault.mantenerseLogeado
+                : false
             conf.loginDefault = new datosLogin(
               obj.loginDefault.modo,
               obj.loginDefault.usuario,

@@ -10,7 +10,7 @@ export default class Aplicacion {
   reloj: Reloj = new Reloj()
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
-  token: string
+  token: string = ''
 
   async tocar(cancionstr: string): Promise<Cancion> {
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
@@ -18,6 +18,16 @@ export default class Aplicacion {
   }
   onMounted() {
     console.log('Aplicacion montada')
+    if (this.configuracion.conectarServerDefault) {
+      const servidor = this.configuracion.servidores.find(
+        (s) => s.nombre === this.configuracion.conectarServerDefault,
+      )
+      if (servidor) {
+        this.conectar(servidor.direccion)
+      } else {
+        console.warn('Servidor por defecto no encontrado')
+      }
+    }
   }
 
   updateCompas(compas: number) {
