@@ -16,7 +16,19 @@ const appStore = useAppStore()
   >
     <div style="display: flex; width: 100%">
       <router-link class="navbar-brand" to="/" style="color: inherit">
-        <img src="/img/iconogrande.png" alt="Logo" width="50" />
+        <img
+          :src="appStore.estado === 'conectado'
+            ? '/img/conectado.png'            
+            : appStore.estado === 'tocando'
+              ? '/img/tocando.png'
+            : appStore.estado === 'logueado'
+              ? '/img/logueado.png'
+            : appStore.estado === 'conectadoserver'
+              ? '/img/conectado.png'
+              : '/img/desconectado.png'"
+          alt="Logo"
+          width="50"
+        /> {{ appStore.estado }}
       </router-link>
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
