@@ -6,8 +6,6 @@ import { watch } from 'vue'
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  secuencia: boolean
-  partes: boolean
 }>()
 
 const mostrandoParte = ref(-1)
@@ -17,8 +15,6 @@ const currentCompas = ref(0)
 const secuResu = ref([] as number[])
 const reperesu = ref([] as number[])
 
-const mostrandoResumenParteIndex = ref(-1)
-const mostrandoResumenParte = ref(-1)
 
 watch(
   () => props.cancion,
@@ -56,70 +52,14 @@ watch(
       totalCompases += compasesxparte
     }
     currentCompas.value = newCompas
-    calcularresumenparte()
   },
 )
 
-function calcularresumenparte() {
-  if (reperesu.value.length == 0) {
-    return
-  }
-
-  let cont = reperesu.value[0]
-  let i = 0
-  while (cont <= mostrandoParte.value) {
-    i++
-    cont += reperesu.value[i]
-  }
-
-  mostrandoResumenParteIndex.value = i
-  mostrandoResumenParte.value =
-    reperesu.value[i] - (cont - mostrandoParte.value)
-}
 </script>
 
 <template>
-  <div class="acordesPantalla">
-    <div class="row">
-      <div v-if="props.secuencia && reperesu.length == 0">
-        <h2 class="titulosecuencia">Secuencia</h2>
-        <div style="display: flex; flex-wrap: wrap">
-          <div
-            v-for="(parte, index) in cancion.acordes.ordenPartes"
-            :key="index"
-            class="ordendiv"
-          >
-            <span :class="{ compas_actual: mostrandoParte === index }">{{
-              cancion.acordes.partes[parte].nombre
-            }}</span>
-          </div>
-        </div>
-      </div>
 
-      <div v-if="props.secuencia && reperesu.length > 0">
-        <h2 class="titulosecuencia">Secuencia</h2>
-        <div style="display: flex; flex-wrap: wrap">
-          <div v-for="(parte, index) in secuResu" :key="index">
-            <div class="ordendiv">
-              <span
-                :class="{
-                  compas_actual: mostrandoResumenParteIndex === index,
-                }"
-                >{{ cancion.acordes.partes[parte].nombre }}</span
-              >
-            </div>
-            <div class="repeticion" v-if="reperesu[index] > 1">
-              <span v-if="mostrandoResumenParteIndex != index"
-                >x {{ reperesu[index] }}</span
-              >
-              <span v-if="mostrandoResumenParteIndex == index"
-                >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div v-if="props.partes">
+      <div>
         <h2 class="titulosecuencia">Partes</h2>
         <div
           v-for="(parte, index_parte) in cancion.acordes.partes"
@@ -147,8 +87,7 @@ function calcularresumenparte() {
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
 </template>
 
 <style scoped>

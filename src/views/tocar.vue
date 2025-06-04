@@ -6,7 +6,8 @@ import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
-import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
+import Secuencia from '../components/comp_tocar/Secuencia.vue'
+import Partes from '../components/comp_tocar/Partes.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -27,12 +28,15 @@ class vistaTocar {
   viendo: string = 'karaoke'
   secuencia: boolean = true
   partes: boolean = true
+  proximosAcordes: boolean = false
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
 vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
 vista.value.secuencia =
   localStorage.getItem('secuencia') == 'true' ? true : false
 vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
+vista.value.proximosAcordes = localStorage.getItem('proximosAcordes') == 'true' ? true : false
+
 
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
@@ -43,6 +47,12 @@ function clickPartes() {
   vista.value.partes = !vista.value.partes
   localStorage.setItem('partes', vista.value.partes ? 'true' : 'false')
 }
+
+function clickAcordes() {
+  vista.value.proximosAcordes = !vista.value.proximosAcordes
+  localStorage.setItem('proximosAcordes', vista.value.proximosAcordes ? 'true' : 'false')
+}
+
 
 function GetStylePantallaPlay() {
   return {
@@ -131,23 +141,40 @@ function claseVistaSecundaria() {
                 Partes</a
               >
             </li>
+            <li v-on:click="clickAcordes()">
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-check-circle" v-if="vista.proximosAcordes"></i>
+                Proximos Acordes</a
+              >
+            </li>
+
+            
           </ul>
         </div>
-        <div></div>
+        
 
-        <Lateral
+
+        <Secuencia
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          :secuencia="vista.secuencia"
-          :partes="vista.partes"
-        ></Lateral>
-
+          v-if="vista.secuencia"
+          
+        ></Secuencia>
+        
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"
+          
+          v-if="vista.proximosAcordes"
+        ></ProximosAcordes>
+        <Partes
+          v-if="vista.partes"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
           :secuencia="vista.secuencia"
           :partes="vista.partes"
-        ></ProximosAcordes>
+        ></Partes>
+
       </div>
     </div>
     <table style="width: 100%">
