@@ -1,6 +1,9 @@
 export class Servidor {
-  constructor(
-    public nombre: string = '',
-    public direccion: string = '',
-  ) {}
+  public nombre: string
+  public direccion: string
+
+  constructor(nombre: string, direccion: string) {
+    this.nombre = nombre
+    this.direccion = direccion
+  }
 }

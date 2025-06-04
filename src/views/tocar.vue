@@ -7,6 +7,7 @@ import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
+import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
@@ -132,41 +133,49 @@ function claseVistaSecundaria() {
             </li>
           </ul>
         </div>
+        <div></div>
+
         <Lateral
           :cancion="appStore.cancion"
           :compas="appStore.compas"
           :secuencia="vista.secuencia"
           :partes="vista.partes"
         ></Lateral>
+
+        <ProximosAcordes
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          :secuencia="vista.secuencia"
+          :partes="vista.partes"
+        ></ProximosAcordes>
       </div>
     </div>
-    <table style="width: 100%;">
-      <tr>
-        <td style="width: 70%;">
-        <ControladorTiempo
-          v-if="$route.path === '/tocar'"
-          :nro_cancion="1"
-          :total_canciones="1"
-          :compas="appStore.compas"
-          :estado="appStore.estado"
-        >
-        </ControladorTiempo>
-
-        </td>
-        <td  style="width: 30%;">
-<Metronomo
-          v-if="$route.path === '/tocar'"
-          :compas="appStore.compas"
-          :estado="appStore.estado"
-          ref="metronomeRef"
-          :bpm_encompas="appStore.golpeDelCompas"
-          :cancion="appStore.cancion"
-        ></Metronomo>
-
-        </td>
-      </tr>
+    <table style="width: 100%">
+      <tbody>
+        <tr>
+          <td style="width: 70%">
+            <ControladorTiempo
+              v-if="$route.path === '/tocar'"
+              :nro_cancion="1"
+              :total_canciones="1"
+              :compas="appStore.compas"
+              :estado="appStore.estado"
+            >
+            </ControladorTiempo>
+          </td>
+          <td style="width: 30%">
+            <Metronomo
+              v-if="$route.path === '/tocar'"
+              :compas="appStore.compas"
+              :estado="appStore.estado"
+              ref="metronomeRef"
+              :bpm_encompas="appStore.golpeDelCompas"
+              :cancion="appStore.cancion"
+            ></Metronomo>
+          </td>
+        </tr>
+      </tbody>
     </table>
-    
   </div>
 </template>
 

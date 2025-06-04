@@ -44,73 +44,68 @@ function updateCompas(newCompas: number) {
 </script>
 
 <template>
-  
-    <table style="width: 100%;">
+  <table style="width: 100%">
+    <tbody>
       <tr>
-        <td style="width: 5%;"><div class="controls">
-<button
-          class="boton_controller boton_controllerplay"
-          @click="play"
-          v-if="appStore.estado !== 'tocando'"
-        >
-          <i class="bi bi-play-fill"></i>
-        </button>
-        <button
-          class="boton_controller"
-          @click="pause"
-          v-if="appStore.estado === 'tocando'"
-        >
-          <i class="bi bi-pause-fill"></i>
-        </button>
-        <button
-          class="boton_controller"
-          @click="stop"
-          v-if="appStore.estado === 'tocando'"
-        >
-          <i class="bi bi-stop-fill"></i>
-        </button>
-        </div></td>
-        <td style="width: 60%;">
-                  <input
-          type="range"
-          min="0"
-          :max="appStore.cancion?.totalCompases"
-          v-model="currentCompas"
-          @input="updateCompas(currentCompas)"
-          class="rango_compas"
-        />
-          </td>
-          <td style="width: 35%;"><span class="spnTiempo"
-          >{{ tiempoActual }}
-          /
-          {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
-        </span></td>
-
-      </tr></table>
+        <td style="width: 5%">
+          <div class="controls">
+            <button
+              class="boton_controller boton_controllerplay"
+              @click="play"
+              v-if="appStore.estado !== 'tocando'"
+            >
+              <i class="bi bi-play-fill"></i>
+            </button>
+            <button
+              class="boton_controller"
+              @click="pause"
+              v-if="appStore.estado === 'tocando'"
+            >
+              <i class="bi bi-pause-fill"></i>
+            </button>
+            <button
+              class="boton_controller"
+              @click="stop"
+              v-if="appStore.estado === 'tocando'"
+            >
+              <i class="bi bi-stop-fill"></i>
+            </button>
+          </div>
+        </td>
+        <td style="width: 60%">
+          <input
+            type="range"
+            min="0"
+            :max="appStore.cancion?.totalCompases"
+            v-model="currentCompas"
+            @input="updateCompas(currentCompas)"
+            class="rango_compas"
+          />
+        </td>
+        <td style="width: 35%">
+          <span class="spnTiempo"
+            >{{ tiempoActual }}
+            /
+            {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <div class="controls">
-    
-      <div class="columnacontrol">
-        
-
-      </div>
-      <div class="columnacontrol">
-
-      </div>
-      <div class="columnacontrol">
-        
-      </div>
-    </div>
-
-    <div>
+    <div class="columnacontrol"></div>
+    <div class="columnacontrol"></div>
+    <div class="columnacontrol"></div>
   </div>
+
+  <div></div>
 </template>
 
 <style scoped>
 .columnacontrol {
   margin: 1px !important;
   padding: 1px !important;
-  
 }
 .controls {
   display: flex;
@@ -179,5 +174,4 @@ function updateCompas(newCompas: number) {
     font-size: 12px;
   }
 }
-
 </style>
