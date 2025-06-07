@@ -7,7 +7,7 @@ import configlogin from '../components/comp_configurar/configLogin.vue'
 // Definir la canción y el contexto
 const config = Configuracion.getInstance()
 const vistasTocar = ref(config.vistasTocar.map((v) => Object.assign({}, v)))
-const viendo = ref('sesion')
+const viendo = ref('perfil')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
@@ -69,33 +69,7 @@ function guardarConfiguracion() {
                 Vistas
               </a>
             </li>
-            <li @click="clickOpcion('conexiones')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'conexiones' }"
-              >
-                Conexiones
-              </a>
-            </li>
-            <li @click="clickOpcion('datos')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'datos' }"
-              >
-                Datos
-              </a>
-            </li>
-            <li @click="clickOpcion('midis')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'midis' }"
-              >
-                MIDIS
-              </a>
-            </li>
+            
           </ul>
           <hr />
 
@@ -260,9 +234,6 @@ function guardarConfiguracion() {
           </div>
         </div>
 
-        <div v-if="viendo == 'midis'">
-          <CompoMidiPlayer></CompoMidiPlayer>
-        </div>
         <div v-if="viendo == 'acercade'">
           <div>Desarrollado por Luis Waldman para y gracias a:</div>
           <A href="https://fi.uba.ar/"
