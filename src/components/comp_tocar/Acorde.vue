@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ChordBox } from 'vexchords'
+import ChordBox from 'vexchords'
 import { onMounted, ref } from 'vue'
 import { AcordesGuitarraHelper } from '../../modelo/GuitarAcordes'
 
