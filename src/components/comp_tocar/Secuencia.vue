@@ -78,7 +78,7 @@ function calcularresumenparte() {
 
 <template>
       <div v-if="reperesu.length == 0">
-        <h2 class="titulosecuencia">Secuencia</h2>
+        <span style="font-size: large;">Secuencia</span>
         <div style="display: flex; flex-wrap: wrap">
           <div
             v-for="(parte, index) in cancion.acordes.ordenPartes"
@@ -93,7 +93,7 @@ function calcularresumenparte() {
       </div>
 
       <div v-if="reperesu.length > 0">
-        <h2 class="titulosecuencia">Secuencia</h2>
+        <span style="font-size: large;">Secuencia</span>
         <div style="display: flex; flex-wrap: wrap">
           <div v-for="(parte, index) in secuResu" :key="index">
             <div class="ordendiv">
@@ -145,6 +145,13 @@ function calcularresumenparte() {
   margin-right: 10px;
 }
 
+.tituloSecuencia {
+  font-size: xx-large;
+  color: #a9a8f6;
+  margin-top: 10px;
+}
+
+
 @media (max-width: 768px) {
   .ordendiv {
     margin: 2px;
@@ -193,7 +200,6 @@ function calcularresumenparte() {
 }
 
 .tituloSecuencia {
-  font-size: 1em;
   color: #a9a8f6;
   margin-top: 10px;
 }

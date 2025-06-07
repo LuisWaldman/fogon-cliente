@@ -60,7 +60,7 @@ watch(
 <template>
 
       <div>
-        <h2 class="titulosecuencia">Partes</h2>
+        <span style="font-size: large;">Partes</span>
         <div
           v-for="(parte, index_parte) in cancion.acordes.partes"
           :key="parte.nombre"

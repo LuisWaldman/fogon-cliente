@@ -93,11 +93,6 @@ function updateCompas(newCompas: number) {
     </tbody>
   </table>
 
-  <div class="controls">
-    <div class="columnacontrol"></div>
-    <div class="columnacontrol"></div>
-    <div class="columnacontrol"></div>
-  </div>
 
   <div></div>
 </template>
@@ -141,8 +136,8 @@ function updateCompas(newCompas: number) {
 .spnTiempo {
   border: 1px solid;
   font-size: 16px;
-  margin: 14px;
   border-radius: 8px;
+  padding: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
