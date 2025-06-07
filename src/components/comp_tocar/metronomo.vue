@@ -87,7 +87,30 @@ function cambiar(id: number, idx: number = 0) {
               appStore.estado === 'tocando',
           }"
         >
-          {{ n }}
+<span v-if="!midiCargado">          {{ n }}</span>
+
+                    <div
+            class="dropdown"
+            v-if="midiCargado"
+            :key="n"
+          >
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {{ n }}{{ instrumentosBateria[sonidoxgolpe[n]].icono }}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li v-for="(instrumento, idx) in instrumentosBateria" :key="idx">
+                <a class="dropdown-item" @click="cambiar(n, idx)">
+                  {{ instrumento.icono }} {{ instrumento.nombre }}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div
           class="beat"
@@ -100,37 +123,22 @@ function cambiar(id: number, idx: number = 0) {
         </div>
       </div>
 
-      <div>
-        <div style="display: flex" v-if="midiCargado">
-          <div
-            class="dropdown"
-            v-for="n in appStore.cancion.compasCantidad * 1"
-            :key="n"
-          >
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              {{ instrumentosBateria[sonidoxgolpe[n]].icono }}
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li v-for="(instrumento, idx) in instrumentosBateria" :key="idx">
-                <a class="dropdown-item" @click="cambiar(n, idx)">
-                  {{ instrumento.icono }} {{ instrumento.nombre }}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+
+.dropdown {
+  margin: 0px !important;
+  padding: 0px !important;
+  
+}
+.btn {
+  margin: 0px !important;
+  padding: 0px !important;
+  
+}
 .controls {
   display: flex;
 }
@@ -143,6 +151,7 @@ function cambiar(id: number, idx: number = 0) {
 }
 
 .beat {
+  display: flex;
   border: 1px solid #a9a8f6;
   border-radius: 10px;
   margin: 4px;

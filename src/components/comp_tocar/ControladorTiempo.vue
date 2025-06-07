@@ -44,10 +44,8 @@ function updateCompas(newCompas: number) {
 </script>
 
 <template>
-  <table style="width: 100%">
-    <tbody>
-      <tr>
-        <td style="width: 5%">
+  <div style="display: flex; width: 100%">
+    
           <div class="controls">
             <button
               class="boton_controller boton_controllerplay"
@@ -71,8 +69,6 @@ function updateCompas(newCompas: number) {
               <i class="bi bi-stop-fill"></i>
             </button>
           </div>
-        </td>
-        <td style="width: 60%">
           <input
             type="range"
             min="0"
@@ -81,20 +77,13 @@ function updateCompas(newCompas: number) {
             @input="updateCompas(currentCompas)"
             class="rango_compas"
           />
-        </td>
-        <td style="width: 35%">
+        
           <span class="spnTiempo"
             >{{ tiempoActual }}
             /
             {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
           </span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <div></div>
+</div>
 </template>
 
 <style scoped>
