@@ -61,9 +61,8 @@ watch(
 </script>
 
 <template>
-  <span style="font-size: large;">Proximos Acordes</span>
+  <span style="font-size: large">Proximos Acordes</span>
   <div class="acordesPantalla">
-    
     <Acorde
       :acorde="acorde"
       v-for="(acorde, index) in acordes"
@@ -81,7 +80,6 @@ watch(
   display: flex;
 }
 
-
 .acordediv {
   font-size: var(--tamanio-acorde-parte);
   margin: 1px;
@@ -89,11 +87,9 @@ watch(
   border-radius: 5px;
   display: inline-block;
   color: #a9a8f6;
-
 }
 
 @media (max-width: 768px) {
-
   .acordediv {
     margin: 2px;
     padding: 2px;

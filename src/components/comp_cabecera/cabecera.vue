@@ -5,7 +5,8 @@ const appStore = useAppStore()
 </script>
 
 <template>
-  <nav v-if="$route.path != '/'"
+  <nav
+    v-if="$route.path != '/'"
     class="navbar navbar-expand-lg w-100"
     style="
       background-color: #000;
@@ -100,7 +101,6 @@ const appStore = useAppStore()
   flex-grow: 1; /* Allow title to take available space */
 }
 
-
 /* Añadir estilos para asegurar que el dropdown se despliegue hacia la derecha y no salga de la pantalla */
 .dropdown-menu-end {
   right: 0;
@@ -124,11 +124,10 @@ const appStore = useAppStore()
     text-align: center; /* Centra el texto */
   }
 
-  
-.dropdown-superior-derecha {
-  top: 0.5rem;
-  right: 0.5rem;
-}
+  .dropdown-superior-derecha {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
 
   .navbar-nav {
     display: flex;
@@ -297,5 +296,4 @@ const appStore = useAppStore()
 .conectado {
   border-color: #f5da09;
 }
-
 </style>

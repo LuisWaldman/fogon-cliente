@@ -87,13 +87,9 @@ function cambiar(id: number, idx: number = 0) {
               appStore.estado === 'tocando',
           }"
         >
-<span v-if="!midiCargado">          {{ n }}</span>
+          <span v-if="!midiCargado"> {{ n }}</span>
 
-                    <div
-            class="dropdown"
-            v-if="midiCargado"
-            :key="n"
-          >
+          <div class="dropdown" v-if="midiCargado" :key="n">
             <button
               class="btn btn-secondary dropdown-toggle"
               type="button"
@@ -122,22 +118,18 @@ function cambiar(id: number, idx: number = 0) {
           🥁
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <style scoped>
-
 .dropdown {
   margin: 0px !important;
   padding: 0px !important;
-  
 }
 .btn {
   margin: 0px !important;
   padding: 0px !important;
-  
 }
 .controls {
   display: flex;

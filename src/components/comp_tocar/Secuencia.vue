@@ -77,44 +77,44 @@ function calcularresumenparte() {
 </script>
 
 <template>
-      <div v-if="reperesu.length == 0">
-        <span style="font-size: large;">Secuencia</span>
-        <div style="display: flex; flex-wrap: wrap">
-          <div
-            v-for="(parte, index) in cancion.acordes.ordenPartes"
-            :key="index"
-            class="ordendiv"
-          >
-            <span :class="{ compas_actual: mostrandoParte === index }">{{
-              cancion.acordes.partes[parte].nombre
-            }}</span>
-          </div>
-        </div>
+  <div v-if="reperesu.length == 0">
+    <span style="font-size: large">Secuencia</span>
+    <div style="display: flex; flex-wrap: wrap">
+      <div
+        v-for="(parte, index) in cancion.acordes.ordenPartes"
+        :key="index"
+        class="ordendiv"
+      >
+        <span :class="{ compas_actual: mostrandoParte === index }">{{
+          cancion.acordes.partes[parte].nombre
+        }}</span>
       </div>
+    </div>
+  </div>
 
-      <div v-if="reperesu.length > 0">
-        <span style="font-size: large;">Secuencia</span>
-        <div style="display: flex; flex-wrap: wrap">
-          <div v-for="(parte, index) in secuResu" :key="index">
-            <div class="ordendiv">
-              <span
-                :class="{
-                  compas_actual: mostrandoResumenParteIndex === index,
-                }"
-                >{{ cancion.acordes.partes[parte].nombre }}</span
-              >
-            </div>
-            <div class="repeticion" v-if="reperesu[index] > 1">
-              <span v-if="mostrandoResumenParteIndex != index"
-                >x {{ reperesu[index] }}</span
-              >
-              <span v-if="mostrandoResumenParteIndex == index"
-                >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
-              >
-            </div>
-          </div>
+  <div v-if="reperesu.length > 0">
+    <span style="font-size: large">Secuencia</span>
+    <div style="display: flex; flex-wrap: wrap">
+      <div v-for="(parte, index) in secuResu" :key="index">
+        <div class="ordendiv">
+          <span
+            :class="{
+              compas_actual: mostrandoResumenParteIndex === index,
+            }"
+            >{{ cancion.acordes.partes[parte].nombre }}</span
+          >
+        </div>
+        <div class="repeticion" v-if="reperesu[index] > 1">
+          <span v-if="mostrandoResumenParteIndex != index"
+            >x {{ reperesu[index] }}</span
+          >
+          <span v-if="mostrandoResumenParteIndex == index"
+            >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
+          >
         </div>
       </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -150,7 +150,6 @@ function calcularresumenparte() {
   color: #a9a8f6;
   margin-top: 10px;
 }
-
 
 @media (max-width: 768px) {
   .ordendiv {

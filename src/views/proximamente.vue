@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 <template>
   <div class="home">
     <h1 style="color: blueviolet">Bienvenido al Fogon</h1>

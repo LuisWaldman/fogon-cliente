@@ -15,7 +15,6 @@ const currentCompas = ref(0)
 const secuResu = ref([] as number[])
 const reperesu = ref([] as number[])
 
-
 watch(
   () => props.cancion,
   (newCancion) => {
@@ -54,40 +53,37 @@ watch(
     currentCompas.value = newCompas
   },
 )
-
 </script>
 
 <template>
-
+  <div>
+    <span style="font-size: large">Partes</span>
+    <div
+      v-for="(parte, index_parte) in cancion.acordes.partes"
+      :key="parte.nombre"
+      class="row"
+    >
       <div>
-        <span style="font-size: large;">Partes</span>
+        {{ parte.nombre }}
+      </div>
+      <div class="partediv">
         <div
-          v-for="(parte, index_parte) in cancion.acordes.partes"
-          :key="parte.nombre"
-          class="row"
+          v-for="(acorde, index) in parte.acordes"
+          class="acordediv"
+          :key="acorde"
         >
-          <div>
-            {{ parte.nombre }}
-          </div>
-          <div class="partediv">
-            <div
-              v-for="(acorde, index) in parte.acordes"
-              class="acordediv"
-              :key="acorde"
-            >
-              <span
-                :class="{
-                  compas_actual:
-                    mostrandoCompasparte === index &&
-                    index_parte === cancion.acordes.ordenPartes[mostrandoParte],
-                }"
-                >{{ acorde }}</span
-              >
-            </div>
-          </div>
+          <span
+            :class="{
+              compas_actual:
+                mostrandoCompasparte === index &&
+                index_parte === cancion.acordes.ordenPartes[mostrandoParte],
+            }"
+            >{{ acorde }}</span
+          >
         </div>
       </div>
-
+    </div>
+  </div>
 </template>
 
 <style scoped>

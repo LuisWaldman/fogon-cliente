@@ -69,7 +69,6 @@ function guardarConfiguracion() {
                 Vistas
               </a>
             </li>
-            
           </ul>
           <hr />
 
