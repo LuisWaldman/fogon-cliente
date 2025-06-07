@@ -141,8 +141,7 @@ defineExpose({ Actualizar })
 
 <style scoped>
 .componenteMusical {
-  border: 1px solid;
-  border-radius: 5px;
+  
   color: #a9a8f6;
   padding: 6px;
 }

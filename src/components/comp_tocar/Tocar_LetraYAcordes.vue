@@ -196,8 +196,6 @@ defineExpose({ Actualizar })
 }
 
 .componenteMusical {
-  border: 1px solid;
-  border-radius: 5px;
   color: white;
   padding: 6px;
   height: 100%;

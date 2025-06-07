@@ -81,9 +81,10 @@ function claseVistaSecundaria() {
 <template>
   <div class="tocar-fluid">
     <div
-      class="row pantallaPlay"
+      class="pantallaPlay"
       :style="GetStylePantallaPlay()"
       v-if="appStore.cancion"
+      
     >
       <div class="columnas" :class="claseVistaPrincipal()">
         <TocarLetraAcorde
@@ -105,9 +106,36 @@ function claseVistaSecundaria() {
       <div
         class="columnas lateral-container"
         :class="claseVistaSecundaria()"
-        style="position: relative"
+        
       >
-        <div class="dropdown dropdown-superior-derecha">
+
+
+
+        <Secuencia
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          v-if="vista.secuencia"
+          
+        ></Secuencia>
+        
+        <ProximosAcordes
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          
+          v-if="vista.proximosAcordes"
+        ></ProximosAcordes>
+        <Partes
+          v-if="vista.partes"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          :secuencia="vista.secuencia"
+          :partes="vista.partes"
+        ></Partes>
+
+      </div>
+
+
+              <div class="dropdown dropdown-superior-derecha">
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
@@ -152,30 +180,6 @@ function claseVistaSecundaria() {
           </ul>
         </div>
         
-
-
-        <Secuencia
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.secuencia"
-          
-        ></Secuencia>
-        
-        <ProximosAcordes
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          
-          v-if="vista.proximosAcordes"
-        ></ProximosAcordes>
-        <Partes
-          v-if="vista.partes"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          :secuencia="vista.secuencia"
-          :partes="vista.partes"
-        ></Partes>
-
-      </div>
     </div>
     <table style="width: 100%">
       <tbody>
@@ -212,15 +216,15 @@ function claseVistaSecundaria() {
 }
 
 .pantallaPlay {
-  border: 1px solid;
   overflow: hidden;
+  display: flex;
   padding: 2px;
   padding-left: 10px;
 }
 
 .dropdown {
   display: absolute;
-  left: 0;
+  right: 0;
 }
 
 .lateral-container {
