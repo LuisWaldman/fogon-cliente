@@ -18,21 +18,21 @@ onMounted(() => {
   controlDiv.value?.appendChild(div)
   const chord = new ChordBox('#' + selector, {
     // Customizations (all optional, defaults shown)
-    width: 100, // canvas width
-    height: 120, // canvas height
+    width: 50, // canvas width
+    height: 50, // canvas height
     circleRadius: 5, // circle radius (width / 20 by default)
 
     numStrings: 6, // number of strings (e.g., 4 for bass)
     numFrets: 5, // number of frets (e.g., 7 for stretch chords)
     showTuning: true, // show tuning keys
 
-    defaultColor: '#666', // default color
+    defaultColor: '#a9a8f6', // default color
     bgColor: '#FFF', // background color
-    strokeColor: '#666', // stroke color (overrides defaultColor)
-    textColor: '#666', // text color (overrides defaultColor)
-    stringColor: '#666', // string color (overrides defaultColor)
-    fretColor: '#666', // fret color (overrides defaultColor)
-    labelColor: '#666', // label color (overrides defaultColor)
+    strokeColor: '#a9a8f6', // stroke color (overrides defaultColor)
+    textColor: '#a9a8f6', // text color (overrides defaultColor)
+    stringColor: '#a9a8f6', // string color (overrides defaultColor)
+    fretColor: '#a9a8f6', // fret color (overrides defaultColor)
+    labelColor: '#a9a8f6', // label color (overrides defaultColor)
 
     fretWidth: 1, // fret width
     stringWidth: 1, // string width

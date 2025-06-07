@@ -61,7 +61,9 @@ watch(
 </script>
 
 <template>
+  <span style="font-size: large;">Proximos Acordes</span>
   <div class="acordesPantalla">
+    
     <Acorde
       :acorde="acorde"
       v-for="(acorde, index) in acordes"
@@ -78,36 +80,20 @@ watch(
 .acordesPantalla {
   display: flex;
 }
-.ordendiv {
-  font-size: var(--tamanio-parte);
-  margin: 1px;
-  padding: 5px;
-  border: 1px solid;
-  border-radius: 5px;
-  display: inline-block;
-  color: #a9a8f6;
-  margin-right: 10px;
-}
+
 
 .acordediv {
   font-size: var(--tamanio-acorde-parte);
   margin: 1px;
   padding: 5px;
-  border: 1px solid;
   border-radius: 5px;
   display: inline-block;
   color: #a9a8f6;
 
-  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
-  .ordendiv {
-    margin: 2px;
-    width: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
+
   .acordediv {
     margin: 2px;
     padding: 2px;
@@ -143,9 +129,6 @@ watch(
   margin: 4px;
 }
 .acordesPantalla {
-  border: 1px solid;
-  padding: 10px;
-  border-radius: 2%;
 }
 
 .tituloSecuencia {
