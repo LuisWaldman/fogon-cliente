@@ -123,12 +123,11 @@ function updateCompas(newCompas: number) {
 }
 
 .spnTiempo {
-  border: 1px solid;
   font-size: 16px;
   border-radius: 8px;
   padding: 1px;
-  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .rango_compas {
