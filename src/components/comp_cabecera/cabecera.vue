@@ -100,6 +100,21 @@ const appStore = useAppStore()
   flex-grow: 1; /* Allow title to take available space */
 }
 
+
+/* Añadir estilos para asegurar que el dropdown se despliegue hacia la derecha y no salga de la pantalla */
+.dropdown-menu-end {
+  right: 0;
+  left: auto;
+  min-width: 180px;
+}
+
+.dropdown-superior-derecha {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+
 /* Cambia la disposición de los elementos en dispositivos móviles */
 @media (max-width: 768px) {
   .titulocancioncontrol {
@@ -108,6 +123,12 @@ const appStore = useAppStore()
     margin-right: 0; /* Elimina el margen derecho */
     text-align: center; /* Centra el texto */
   }
+
+  
+.dropdown-superior-derecha {
+  top: 0.5rem;
+  right: 0.5rem;
+}
 
   .navbar-nav {
     display: flex;
@@ -219,6 +240,11 @@ const appStore = useAppStore()
 .navbar {
   background-color: #fff;
   padding: 10px;
+  border: 6px solid #8b4513;
+  border-left: 1px solid #a9a8f6;
+  border-bottom: 1px solid #a9a8f6;
+  margin-bottom: 3px;
+  background-color: #1f1a1a !important; /* Fondo oscuro para un estilo de papel viejo */
 }
 
 .navbar-brand {
@@ -272,17 +298,4 @@ const appStore = useAppStore()
   border-color: #f5da09;
 }
 
-/* Añadir estilos para asegurar que el dropdown se despliegue hacia la derecha y no salga de la pantalla */
-.dropdown-menu-end {
-  right: 0;
-  left: auto;
-  min-width: 180px;
-}
-
-.dropdown-superior-derecha {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  z-index: 10;
-}
 </style>
