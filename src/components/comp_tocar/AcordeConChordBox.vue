@@ -1,7 +1,7 @@
 <script setup lang="ts">
 //import ChordBox from 'vexchords'
 import { onMounted, ref } from 'vue'
-import { AcordesGuitarraHelper } from '../../modelo/GuitarAcordes'
+//import { AcordesGuitarraHelper } from '../../modelo/GuitarAcordes'
 
 const props = defineProps<{
   acorde: string
@@ -17,7 +17,6 @@ onMounted(() => {
   const div = document.createElement('div')
   div.id = selector
   controlDiv.value?.appendChild(div)
-  AcordesGuitarraHelper.getAcorde(props.acorde)
   /*
   const chord = new ChordBox('#' + selector, {
     // Customizations (all optional, defaults shown)
