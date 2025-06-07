@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Configuracion, VistaTocar } from '../modelo/configuracion'
+import configsesion from '../components/comp_configurar/configSesion.vue'
+import configlogin from '../components/comp_configurar/configLogin.vue'
 
 // Definir la canción y el contexto
 const config = Configuracion.getInstance()
 const vistasTocar = ref(config.vistasTocar.map((v) => Object.assign({}, v)))
-const viendo = ref('vistas')
+const viendo = ref('perfil')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
 // Detectar cuál vista corresponde a la pantalla actual
 
-const w = window.innerWidth
-const h = window.innerHeight
 function getVistaActualIndex() {
   const w = window.innerWidth
   const h = window.innerHeight
@@ -53,7 +53,7 @@ function guardarConfiguracion() {
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'sesion' }"
               >
-                Sesion {{ w }} {{ h }}
+                Sesion
               </a>
             </li>
           </ul>
@@ -67,33 +67,6 @@ function guardarConfiguracion() {
                 :class="{ activo: viendo === 'vistas' }"
               >
                 Vistas
-              </a>
-            </li>
-            <li @click="clickOpcion('conexiones')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'conexiones' }"
-              >
-                Conexiones
-              </a>
-            </li>
-            <li @click="clickOpcion('datos')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'datos' }"
-              >
-                Datos
-              </a>
-            </li>
-            <li @click="clickOpcion('midis')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'midis' }"
-              >
-                MIDIS
               </a>
             </li>
           </ul>
@@ -114,9 +87,13 @@ function guardarConfiguracion() {
       </div>
 
       <div class="col-9 innerConfig">
-        <div v-if="viendo == 'perfil'" class="container">PERFIL</div>
+        <div v-if="viendo == 'perfil'" class="container">
+          <configlogin></configlogin>
+        </div>
 
-        <div v-if="viendo == 'sesion'"></div>
+        <div v-if="viendo == 'sesion'">
+          <configsesion> </configsesion>
+        </div>
 
         <div v-if="viendo == 'vistas'">
           <h3>Configuración de Vistas</h3>
@@ -256,9 +233,6 @@ function guardarConfiguracion() {
           </div>
         </div>
 
-        <div v-if="viendo == 'midis'">
-          <CompoMidiPlayer></CompoMidiPlayer>
-        </div>
         <div v-if="viendo == 'acercade'">
           <div>Desarrollado por Luis Waldman para y gracias a:</div>
           <A href="https://fi.uba.ar/"

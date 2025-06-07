@@ -2,15 +2,32 @@ import { HelperObtenerCancionURL } from './helpers/HelperObtenerCancionURL'
 import type { Cancion } from './modelo/cancion'
 import { useAppStore } from './stores/appStore'
 import { Reloj } from './modelo/reloj'
+import { Configuracion } from './modelo/configuracion'
+import { datosLogin } from './modelo/datosLogin'
+import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 
 export default class Aplicacion {
   reloj: Reloj = new Reloj()
+  configuracion: Configuracion = Configuracion.getInstance()
+  cliente: ClienteSocket | null = null
+  token: string = ''
+
   async tocar(cancionstr: string): Promise<Cancion> {
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
     return helperArchivo.GetCancion(cancionstr)
   }
   onMounted() {
     console.log('Aplicacion montada')
+    if (this.configuracion.conectarServerDefault) {
+      const servidor = this.configuracion.servidores.find(
+        (s) => s.nombre === this.configuracion.conectarServerDefault,
+      )
+      if (servidor) {
+        this.conectar(servidor.direccion)
+      } else {
+        console.warn('Servidor por defecto no encontrado')
+      }
+    }
   }
 
   updateCompas(compas: number) {
@@ -69,5 +86,33 @@ export default class Aplicacion {
     console.log('Aplicacion inicializada')
   }
 
-  // Puedes agregar métodos y propiedades según tus necesidades
+  conectar(url: string) {
+    const appStore = useAppStore()
+    appStore.estado = 'conectando'
+    this.cliente = new ClienteSocket(url)
+    this.cliente.setconexionStatusHandler((status: string) => {
+      console.log('status:', status)
+      if (status === 'conectado') {
+        appStore.estado = 'conectado'
+      }
+    })
+    this.cliente.connectar()
+    console.log(`Conectando al servidor: ${url}`)
+  }
+
+  login(datos: datosLogin): boolean {
+    console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
+    if (!this.cliente) {
+      console.error('Cliente no conectado. No se puede iniciar sesión.')
+      return false
+    }
+    this.cliente.setLoginSuccessHandler((token: string) => {
+      console.log(`Inicio de sesión exitoso. Token: ${token}`)
+      const appStore = useAppStore()
+      appStore.estado = 'logueado'
+      this.token = token
+    })
+    this.cliente.login(datos)
+    return true
+  }
 }

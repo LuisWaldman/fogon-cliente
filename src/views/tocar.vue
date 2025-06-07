@@ -6,7 +6,9 @@ import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
-import Lateral from '../components/comp_tocar/Lateral_Acordes.vue'
+import Secuencia from '../components/comp_tocar/Secuencia.vue'
+import Partes from '../components/comp_tocar/Partes.vue'
+import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
@@ -26,12 +28,15 @@ class vistaTocar {
   viendo: string = 'karaoke'
   secuencia: boolean = true
   partes: boolean = true
+  proximosAcordes: boolean = false
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
 vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
 vista.value.secuencia =
   localStorage.getItem('secuencia') == 'true' ? true : false
 vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
+vista.value.proximosAcordes =
+  localStorage.getItem('proximosAcordes') == 'true' ? true : false
 
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
@@ -41,6 +46,14 @@ function clickSecuencia() {
 function clickPartes() {
   vista.value.partes = !vista.value.partes
   localStorage.setItem('partes', vista.value.partes ? 'true' : 'false')
+}
+
+function clickAcordes() {
+  vista.value.proximosAcordes = !vista.value.proximosAcordes
+  localStorage.setItem(
+    'proximosAcordes',
+    vista.value.proximosAcordes ? 'true' : 'false',
+  )
 }
 
 function GetStylePantallaPlay() {
@@ -70,7 +83,7 @@ function claseVistaSecundaria() {
 <template>
   <div class="tocar-fluid">
     <div
-      class="row pantallaPlay"
+      class="pantallaPlay"
       :style="GetStylePantallaPlay()"
       v-if="appStore.cancion"
     >
@@ -91,95 +104,111 @@ function claseVistaSecundaria() {
           :compas="appStore.compas"
         ></TocarAcorde>
       </div>
-      <div
-        class="columnas lateral-container"
-        :class="claseVistaSecundaria()"
-        style="position: relative"
-      >
-        <div class="dropdown dropdown-superior-derecha">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="bi bi-eye"></i>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li v-on:click="cambiarVista('karaoke')">
-              <a class="dropdown-item" href="#">Karaoke</a>
-            </li>
-            <li v-on:click="cambiarVista('acordes')">
-              <a class="dropdown-item" href="#">Acordes</a>
-            </li>
-            <li v-on:click="cambiarVista('soloacordes')">
-              <a class="dropdown-item" href="#">Solo Acordes</a>
-            </li>
-            <li><hr class="dropdown-divider" /></li>
+      <div class="columnas lateral-container" :class="claseVistaSecundaria()">
+        <Secuencia
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          v-if="vista.secuencia"
+        ></Secuencia>
 
-            <li v-on:click="clickSecuencia()">
-              <a class="dropdown-item" href="#">
-                <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
-                Secuencia</a
-              >
-            </li>
-            <li v-on:click="clickPartes()">
-              <a class="dropdown-item" href="#">
-                <i class="bi bi-check-circle" v-if="vista.partes"></i>
-                Partes</a
-              >
-            </li>
-          </ul>
-        </div>
-        <Lateral
+        <ProximosAcordes
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          v-if="vista.proximosAcordes"
+        ></ProximosAcordes>
+        <Partes
+          v-if="vista.partes"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
           :secuencia="vista.secuencia"
           :partes="vista.partes"
-        ></Lateral>
+        ></Partes>
+      </div>
+
+      <div class="dropdown dropdown-superior-derecha">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="bi bi-eye"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li v-on:click="cambiarVista('karaoke')">
+            <a class="dropdown-item" href="#">Karaoke</a>
+          </li>
+          <li v-on:click="cambiarVista('acordes')">
+            <a class="dropdown-item" href="#">Acordes</a>
+          </li>
+          <li v-on:click="cambiarVista('soloacordes')">
+            <a class="dropdown-item" href="#">Solo Acordes</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+
+          <li v-on:click="clickSecuencia()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
+              Secuencia</a
+            >
+          </li>
+          <li v-on:click="clickPartes()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.partes"></i>
+              Partes</a
+            >
+          </li>
+          <li v-on:click="clickAcordes()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.proximosAcordes"></i>
+              Proximos Acordes</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-7">
-        <ControladorTiempo
-          v-if="$route.path === '/tocar'"
-          :nro_cancion="1"
-          :total_canciones="1"
-          :compas="appStore.compas"
-          :estado="appStore.estado"
-        >
-        </ControladorTiempo>
-      </div>
-      <div class="col-4">
-        <Metronomo
-          v-if="$route.path === '/tocar'"
-          :compas="appStore.compas"
-          :estado="appStore.estado"
-          ref="metronomeRef"
-          :bpm_encompas="appStore.golpeDelCompas"
-          :cancion="appStore.cancion"
-        ></Metronomo>
-      </div>
+    <div class="controladoresTiempo">
+      <ControladorTiempo
+        v-if="$route.path === '/tocar'"
+        :nro_cancion="1"
+        :total_canciones="1"
+        :compas="appStore.compas"
+        :estado="appStore.estado"
+      >
+      </ControladorTiempo>
+
+      <Metronomo
+        v-if="$route.path === '/tocar'"
+        :compas="appStore.compas"
+        :estado="appStore.estado"
+        ref="metronomeRef"
+        :bpm_encompas="appStore.golpeDelCompas"
+        :cancion="appStore.cancion"
+      ></Metronomo>
     </div>
   </div>
 </template>
 
 <style scoped>
+.controladoresTiempo {
+  display: flex;
+  border-top: 1px solid #a9a8f6;
+}
 .columnas {
   padding: 0;
 }
 
 .pantallaPlay {
-  border: 1px solid;
   overflow: hidden;
+  display: flex;
   padding: 2px;
   padding-left: 10px;
 }
 
 .dropdown {
   display: absolute;
-  left: 0;
+  right: 0;
 }
 
 .lateral-container {

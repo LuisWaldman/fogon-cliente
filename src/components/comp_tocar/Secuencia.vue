@@ -6,8 +6,6 @@ import { watch } from 'vue'
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  secuencia: boolean
-  partes: boolean
 }>()
 
 const mostrandoParte = ref(-1)
@@ -79,72 +77,40 @@ function calcularresumenparte() {
 </script>
 
 <template>
-  <div class="acordesPantalla">
-    <div class="row">
-      <div v-if="props.secuencia && reperesu.length == 0">
-        <h2 class="titulosecuencia">Secuencia</h2>
-        <div style="display: flex; flex-wrap: wrap">
-          <div
-            v-for="(parte, index) in cancion.acordes.ordenPartes"
-            :key="index"
-            class="ordendiv"
-          >
-            <span :class="{ compas_actual: mostrandoParte === index }">{{
-              cancion.acordes.partes[parte].nombre
-            }}</span>
-          </div>
-        </div>
+  <div v-if="reperesu.length == 0">
+    <span style="font-size: large">Secuencia</span>
+    <div style="display: flex; flex-wrap: wrap">
+      <div
+        v-for="(parte, index) in cancion.acordes.ordenPartes"
+        :key="index"
+        class="ordendiv"
+      >
+        <span :class="{ compas_actual: mostrandoParte === index }">{{
+          cancion.acordes.partes[parte].nombre
+        }}</span>
       </div>
+    </div>
+  </div>
 
-      <div v-if="props.secuencia && reperesu.length > 0">
-        <h2 class="titulosecuencia">Secuencia</h2>
-        <div style="display: flex; flex-wrap: wrap">
-          <div v-for="(parte, index) in secuResu" :key="index">
-            <div class="ordendiv">
-              <span
-                :class="{
-                  compas_actual: mostrandoResumenParteIndex === index,
-                }"
-                >{{ cancion.acordes.partes[parte].nombre }}</span
-              >
-            </div>
-            <div class="repeticion" v-if="reperesu[index] > 1">
-              <span v-if="mostrandoResumenParteIndex != index"
-                >x {{ reperesu[index] }}</span
-              >
-              <span v-if="mostrandoResumenParteIndex == index"
-                >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
-              >
-            </div>
-          </div>
+  <div v-if="reperesu.length > 0">
+    <span style="font-size: large">Secuencia</span>
+    <div style="display: flex; flex-wrap: wrap">
+      <div v-for="(parte, index) in secuResu" :key="index">
+        <div class="ordendiv">
+          <span
+            :class="{
+              compas_actual: mostrandoResumenParteIndex === index,
+            }"
+            >{{ cancion.acordes.partes[parte].nombre }}</span
+          >
         </div>
-      </div>
-      <div v-if="props.partes">
-        <h2 class="titulosecuencia">Partes</h2>
-        <div
-          v-for="(parte, index_parte) in cancion.acordes.partes"
-          :key="parte.nombre"
-          class="row"
-        >
-          <div>
-            {{ parte.nombre }}
-          </div>
-          <div class="partediv">
-            <div
-              v-for="(acorde, index) in parte.acordes"
-              class="acordediv"
-              :key="acorde"
-            >
-              <span
-                :class="{
-                  compas_actual:
-                    mostrandoCompasparte === index &&
-                    index_parte === cancion.acordes.ordenPartes[mostrandoParte],
-                }"
-                >{{ acorde }}</span
-              >
-            </div>
-          </div>
+        <div class="repeticion" v-if="reperesu[index] > 1">
+          <span v-if="mostrandoResumenParteIndex != index"
+            >x {{ reperesu[index] }}</span
+          >
+          <span v-if="mostrandoResumenParteIndex == index"
+            >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
+          >
         </div>
       </div>
     </div>
@@ -177,6 +143,12 @@ function calcularresumenparte() {
   color: #a9a8f6;
 
   margin-right: 10px;
+}
+
+.tituloSecuencia {
+  font-size: xx-large;
+  color: #a9a8f6;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -227,7 +199,6 @@ function calcularresumenparte() {
 }
 
 .tituloSecuencia {
-  font-size: 1em;
   color: #a9a8f6;
   margin-top: 10px;
 }
