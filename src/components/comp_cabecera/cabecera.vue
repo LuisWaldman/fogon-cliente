@@ -5,7 +5,7 @@ const appStore = useAppStore()
 </script>
 
 <template>
-  <nav
+  <nav v-if="$route.path != '/'"
     class="navbar navbar-expand-lg w-100"
     style="
       background-color: #000;
@@ -15,7 +15,7 @@ const appStore = useAppStore()
     "
   >
     <div style="display: flex; width: 100%">
-      <router-link class="navbar-brand" to="/" style="color: inherit">
+      <router-link class="navbar-brand" to="/home" style="color: inherit">
         <img
           :src="
             appStore.estado === 'conectado'
@@ -32,7 +32,7 @@ const appStore = useAppStore()
           width="50"
         />
       </router-link>
-      <span v-if="$route.path === '/'" class="titulocancioncontrol">
+      <span v-if="$route.path === '/home'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
       </span>
 

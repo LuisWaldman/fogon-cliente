@@ -6,9 +6,11 @@ import Buscar from './views/buscar.vue'
 import Editar from './views/editar.vue'
 import Listas from './views/listas.vue'
 import Configurar from './views/configurar.vue'
+import Proximamente from './views/proximamente.vue'
 
 const routes: RouteRecordRaw[] = [
-  { path: '/', component: Home },
+  { path: '/', component: Proximamente },
+  { path: '/home', component: Home },
   { path: '/editar', component: Editar },
   { path: '/tocar', component: Tocar, props: true },
   { path: '/listas', component: Listas },
