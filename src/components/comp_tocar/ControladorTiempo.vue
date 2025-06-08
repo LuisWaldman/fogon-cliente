@@ -132,6 +132,8 @@ function updateCompas(newCompas: number) {
 .rango_compas {
   accent-color: '#a9a8f6';
   width: 100%;
+  margin-left: 10px;
+  padding: 0px;
 }
 
 .titulocancioncontrol {

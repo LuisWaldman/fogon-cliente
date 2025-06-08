@@ -16,7 +16,7 @@ export class Pantalla {
 
   public getAltoPantalla() {
     const config = this.getConfiguracionPantalla()
-    return window.innerHeight - config.altoPantallaDescuento
+    return window.innerHeight - 1
   }
 
   public setearEstilos() {

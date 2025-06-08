@@ -7,14 +7,7 @@ const appStore = useAppStore()
 <template>
   <nav
     v-if="$route.path != '/'"
-    class="navbar navbar-expand-lg w-100"
-    style="
-      background-color: #000;
-      width: 100vw;
-      margin-left: calc(-50vw + 50%);
-      margin-right: calc(-50vw + 50%);
-    "
-  >
+    class="navbarFogon navbar"  >
     <div style="display: flex; width: 100%">
       <router-link class="navbar-brand" to="/home" style="color: inherit">
         <img
@@ -47,7 +40,7 @@ const appStore = useAppStore()
 
       <div class="dropdown dropdown-superior-derecha ms-auto">
         <button
-          style="background-color: #000; border: none"
+          style="background-color: #353333; border: none"
           class="btn btn-secondary dropdown-toggle"
           type="button"
           id="dropdownMenuButton"
@@ -154,7 +147,7 @@ const appStore = useAppStore()
   width: 100%;
   display: flex;
   border: 1px solid;
-  background-color: #353333;
+  background-color: #353333 !important;
 }
 
 .titulo-App {
@@ -237,13 +230,11 @@ const appStore = useAppStore()
 }
 
 .navbar {
-  background-color: #fff;
   padding: 10px;
   border: 6px solid #8b4513;
   border-left: 1px solid #a9a8f6;
   border-bottom: 1px solid #a9a8f6;
   margin-bottom: 3px;
-  background-color: #1f1a1a !important; /* Fondo oscuro para un estilo de papel viejo */
 }
 
 .navbar-brand {
