@@ -9,18 +9,17 @@ const props = defineProps<{
   cancion: Cancion
 }>()
 
-const mostrandoParte = ref(-1)
-const mostrandoCompasparte = ref(-1)
-
 const acordes = ref([] as string[])
-function calcularAcordes(cancion: Cancion) {
+const todosAcordes = ref([] as string[])
+
+function calcularAcordes(compas: number) {
   acordes.value = []
-  const parteIndex = mostrandoParte.value == -1 ? 0 : mostrandoParte.value
-  const parte = cancion.acordes.partes[parteIndex]
-  const desdeCompas =
-    mostrandoCompasparte.value == -1 ? 0 : mostrandoCompasparte.value
-  for (let i = desdeCompas; i < parte.acordes.length; i++) {
-    const acordesSplit = parte.acordes[i].split(' ')
+  const desdeCompas = compas > 0 ? compas : 0
+  console.log('Calculando acordes desde compas:', desdeCompas)
+
+  for (let i = desdeCompas; i < todosAcordes.value.length; i++) {
+    console.log('Calculando acordes para compas:', i, todosAcordes.value[i])
+    const acordesSplit = todosAcordes.value[i].split(' ')
     acordes.value.push(...acordesSplit)
 
     acordes.value = [...new Set(acordes.value)]
@@ -35,27 +34,16 @@ function calcularAcordes(cancion: Cancion) {
 watch(
   () => props.cancion,
   (cancion: Cancion) => {
-    calcularAcordes(cancion)
+    todosAcordes.value = cancion.acordes.GetTodosLosAcordes()
+    calcularAcordes(props.compas)
   },
 )
 
 watch(
   () => props.compas,
   (newCompas) => {
-    let totalCompases = 0
-    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
-      let compasesxparte =
-        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
-          .acordes.length
-      if (newCompas < totalCompases + compasesxparte) {
-        mostrandoParte.value = i
-        mostrandoCompasparte.value = newCompas - totalCompases
-        calcularAcordes(props.cancion)
-
-        break
-      }
-      totalCompases += compasesxparte
-    }
+    console.log('Compas cambiado:', newCompas)
+    calcularAcordes(newCompas)
   },
 )
 </script>

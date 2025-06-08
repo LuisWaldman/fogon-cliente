@@ -44,7 +44,7 @@ function updateCompas(newCompas: number) {
 </script>
 
 <template>
-  <div style="display: flex; width: 100%">
+  <div class="controladortiempo">
     <div class="controls">
       <button
         class="boton_controller boton_controllerplay"
@@ -86,6 +86,15 @@ function updateCompas(newCompas: number) {
 </template>
 
 <style scoped>
+.controladortiempo {
+  display: flex;
+  width: 100%;
+  margin: 3px;
+  border: 1px solid #a9a8f6;
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 5px;
+}
 .columnacontrol {
   margin: 1px !important;
   padding: 1px !important;
@@ -98,7 +107,6 @@ function updateCompas(newCompas: number) {
   color: #a9a8f6;
 }
 .titulocontorltiempo {
-  border: 1px solid;
   font-size: 38px;
   padding-left: 12px;
   margin: 4px;
@@ -114,6 +122,7 @@ function updateCompas(newCompas: number) {
   font-size: 20px;
   border: 1px solid #a9a8f6;
   width: 46px;
+  margin: 3px;
   height: 46px;
 }
 
@@ -122,8 +131,9 @@ function updateCompas(newCompas: number) {
 }
 
 .spnTiempo {
-  font-size: 16px;
+  font-size: 26px;
   border-radius: 8px;
+
   padding: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -132,6 +142,8 @@ function updateCompas(newCompas: number) {
 .rango_compas {
   accent-color: '#a9a8f6';
   width: 100%;
+  margin-left: 10px;
+  padding: 0px;
 }
 
 .titulocancioncontrol {
