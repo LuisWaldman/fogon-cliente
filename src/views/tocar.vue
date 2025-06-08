@@ -168,7 +168,7 @@ function claseVistaSecundaria() {
         </ul>
       </div>
     </div>
-    
+
     <div class="controladoresTiempo">
       <ControladorTiempo
         v-if="$route.path === '/tocar'"
@@ -192,11 +192,8 @@ function claseVistaSecundaria() {
 </template>
 
 <style scoped>
-
 .tocar-fluid {
-
 }
-
 
 .controladoresTiempo {
   width: 100%;
@@ -206,7 +203,6 @@ function claseVistaSecundaria() {
   background-color: #353333;
   border-top: 1px solid #a9a8f6;
   padding: 4px;
-
 }
 
 .columnas {

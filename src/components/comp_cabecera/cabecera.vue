@@ -5,9 +5,7 @@ const appStore = useAppStore()
 </script>
 
 <template>
-  <nav
-    v-if="$route.path != '/'"
-    class="navbarFogon navbar"  >
+  <nav v-if="$route.path != '/'" class="navbarFogon navbar">
     <div style="display: flex; width: 100%">
       <router-link class="navbar-brand" to="/home" style="color: inherit">
         <img

@@ -44,7 +44,7 @@ function updateCompas(newCompas: number) {
 </script>
 
 <template>
-  <div class="controladortiempo" >
+  <div class="controladortiempo">
     <div class="controls">
       <button
         class="boton_controller boton_controllerplay"
@@ -86,16 +86,14 @@ function updateCompas(newCompas: number) {
 </template>
 
 <style scoped>
-.controladortiempo { 
-  display: flex; 
+.controladortiempo {
+  display: flex;
   width: 100%;
   margin: 3px;
   border: 1px solid #a9a8f6;
   border-radius: 8px;
   margin-left: 10px;
   padding: 5px;
-
-
 }
 .columnacontrol {
   margin: 1px !important;
