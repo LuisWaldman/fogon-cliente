@@ -219,11 +219,6 @@ defineExpose({ Actualizar })
   margin-right: 4px;
 }
 
-.noacorde {
-  margin: 1px;
-  padding: 6px;
-  font-size: large;
-}
 
 .ordenparte {
   border: 1px solid #888;
