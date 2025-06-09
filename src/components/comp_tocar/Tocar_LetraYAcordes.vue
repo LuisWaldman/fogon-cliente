@@ -219,7 +219,6 @@ defineExpose({ Actualizar })
   margin-right: 4px;
 }
 
-
 .ordenparte {
   border: 1px solid #888;
   width: 25%;
