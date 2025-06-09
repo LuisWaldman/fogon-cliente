@@ -213,18 +213,10 @@ defineExpose({ Actualizar })
 .acordediv {
   font-size: var(--tamanio-acorde);
   margin: 1px;
-  padding: 5px;
-  border: 1px solid;
   border-radius: 5px;
   display: inline-block;
   color: #a9a8f6;
-  margin-right: 10px;
-}
-
-.noacorde {
-  margin: 1px;
-  padding: 6px;
-  font-size: large;
+  margin-right: 4px;
 }
 
 .ordenparte {
