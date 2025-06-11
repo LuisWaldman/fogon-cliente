@@ -5,9 +5,9 @@ const appStore = useAppStore()
 </script>
 
 <template>
-  <nav v-if="$route.path != '/'" class="navbarFogon navbar">
+  <nav class="navbarFogon navbar">
     <div style="display: flex; width: 100%">
-      <router-link class="navbar-brand" to="/home" style="color: inherit">
+      <router-link class="navbar-brand" to="/" style="color: inherit">
         <img
           :src="
             appStore.estado === 'conectado'
