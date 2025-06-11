@@ -113,7 +113,10 @@ export class Configuracion {
     if (conf.servidores.length === 0) {
       // No servers loaded (fresh install, version mismatch, corrupted/empty array in storage)
       conf.servidores.push(new Servidor('desa', 'http://localhost:8080/'))
-      conf.conectarServerDefault = 'desa' // Default to 'desa' as it's the only one
+      conf.servidores.push(
+        new Servidor('prod', 'https://fogon-servidor.onrender.com/'),
+      )
+      conf.conectarServerDefault = 'prod' // Default to 'desa' as it's the only one
     } else {
       // Servers were loaded. Validate conectarServerDefault.
       const defaultServerIsValid = conf.servidores.some(
