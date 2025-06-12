@@ -109,6 +109,18 @@ export default class Aplicacion {
     })
   }
 
+  async HTTPPost(url: string, body: any): Promise<Response> {
+    return fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${this.token}`,
+      },
+      body: JSON.stringify(body),
+    })
+  }
+  
+
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
     if (!this.cliente) {
