@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Configuracion, VistaTocar } from '../modelo/configuracion'
 import configsesion from '../components/comp_configurar/configSesion.vue'
 import configlogin from '../components/comp_configurar/configLogin.vue'
 import configPerfil from '../components/comp_configurar/configPerfil.vue'
@@ -9,22 +8,12 @@ import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 import ConfigVistas from '../components/comp_configurar/ConfigVistas.vue'
 
 // Definir la canción y el contexto
-const config = Configuracion.getInstance()
-const vistasTocar = ref(config.vistasTocar.map((v) => Object.assign({}, v)))
 const viendo = ref('perfil')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
 // Detectar cuál vista corresponde a la pantalla actual
-
-
-function guardarConfiguracion() {
-  config.vistasTocar = vistasTocar.value.map((v) =>
-    Object.assign(new VistaTocar(), v),
-  )
-  config.guardarEnLocalStorage()
-}
 </script>
 
 <template>
@@ -33,7 +22,7 @@ function guardarConfiguracion() {
       <div class="col-3">
         <div class="" style="width: 280px">
           <ul class="nav nav-pills flex-column mb-auto">
-                        <li @click="clickOpcion('login')">
+            <li @click="clickOpcion('login')">
               <a
                 href="#"
                 class="nav-link text-white"
@@ -63,7 +52,6 @@ function guardarConfiguracion() {
               </a>
             </li>
 
-            
             <li @click="clickOpcion('servidores')">
               <a
                 href="#"
@@ -119,18 +107,14 @@ function guardarConfiguracion() {
           <configServidores> </configServidores>
         </div>
 
-        
-
         <div v-if="viendo == 'vistas'">
           <ConfigVistas></ConfigVistas>
-
         </div>
 
         <div v-if="viendo == 'acercade'">
           <configAcercaDe></configAcercaDe>
-
-        
-      </div></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
