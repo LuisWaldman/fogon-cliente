@@ -3,6 +3,8 @@ import { ref } from 'vue'
 import { Configuracion, VistaTocar } from '../modelo/configuracion'
 import configsesion from '../components/comp_configurar/configSesion.vue'
 import configlogin from '../components/comp_configurar/configLogin.vue'
+import configPerfil from '../components/comp_configurar/configPerfil.vue'
+import configServidores from '../components/comp_configurar/configServidores.vue'
 
 // Definir la canción y el contexto
 const config = Configuracion.getInstance()
@@ -37,6 +39,16 @@ function guardarConfiguracion() {
       <div class="col-3">
         <div class="" style="width: 280px">
           <ul class="nav nav-pills flex-column mb-auto">
+                        <li @click="clickOpcion('login')">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'login' }"
+              >
+                Login
+              </a>
+            </li>
+
             <li @click="clickOpcion('perfil')">
               <a
                 href="#"
@@ -54,6 +66,17 @@ function guardarConfiguracion() {
                 :class="{ activo: viendo === 'sesion' }"
               >
                 Sesion
+              </a>
+            </li>
+
+            
+            <li @click="clickOpcion('servidores')">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'servidores' }"
+              >
+                Servidores
               </a>
             </li>
           </ul>
@@ -87,13 +110,22 @@ function guardarConfiguracion() {
       </div>
 
       <div class="col-9 innerConfig">
-        <div v-if="viendo == 'perfil'" class="container">
+        <div v-if="viendo == 'login'" class="container">
           <configlogin></configlogin>
+        </div>
+        <div v-if="viendo == 'perfil'" class="container">
+          <configPerfil></configPerfil>
         </div>
 
         <div v-if="viendo == 'sesion'">
           <configsesion> </configsesion>
         </div>
+
+        <div v-if="viendo == 'servidores'">
+          <configServidores> </configServidores>
+        </div>
+
+        
 
         <div v-if="viendo == 'vistas'">
           <h3>Configuración de Vistas</h3>
