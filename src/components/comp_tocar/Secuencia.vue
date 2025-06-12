@@ -122,7 +122,8 @@ function calcularresumenparte() {
   color: #888;
 }
 .secuencia {
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid;
   margin: 1px;
   padding: 5px;

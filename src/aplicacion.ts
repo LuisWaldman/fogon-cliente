@@ -100,6 +100,15 @@ export default class Aplicacion {
     console.log(`Conectando al servidor: ${url}`)
   }
 
+  async HTTPGet(url: string): Promise<Response> {
+    return fetch(url, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${this.token}`,
+      },
+    })
+  }
+
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
     if (!this.cliente) {
