@@ -119,7 +119,6 @@ export default class Aplicacion {
       body: JSON.stringify(body),
     })
   }
-  
 
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)

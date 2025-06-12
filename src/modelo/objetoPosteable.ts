@@ -1,2 +1,1 @@
-export abstract class ObjetoPosteable {
-}
+export abstract class ObjetoPosteable {}
