@@ -12,3 +12,7 @@ import { useAppStore } from '../../stores/appStore'
 <style scoped>
 
 </style>
+
+export default {
+  // Existing component logic
+};
