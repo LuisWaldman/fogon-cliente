@@ -5,6 +5,7 @@ import { Reloj } from './modelo/reloj'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
+import type { ObjetoPosteable } from './modelo/objetoPosteable'
 
 export default class Aplicacion {
   reloj: Reloj = new Reloj()
@@ -85,8 +86,9 @@ export default class Aplicacion {
     // Inicialización de la aplicación
     console.log('Aplicacion inicializada')
   }
-
+  url = ''
   conectar(url: string) {
+    this.url = url
     const appStore = useAppStore()
     appStore.estado = 'conectando'
     this.cliente = new ClienteSocket(url)
@@ -100,8 +102,8 @@ export default class Aplicacion {
     console.log(`Conectando al servidor: ${url}`)
   }
 
-  async HTTPGet(url: string): Promise<Response> {
-    return fetch(url, {
+  async HTTPGet(urlGet: string): Promise<Response> {
+    return fetch(this.url + urlGet, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${this.token}`,
@@ -109,8 +111,8 @@ export default class Aplicacion {
     })
   }
 
-  async HTTPPost(url: string, body: any): Promise<Response> {
-    return fetch(url, {
+  async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
+    return fetch(this.url + urlPost, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
