@@ -24,6 +24,7 @@ export const useAppStore = defineStore('app', () => {
   const compas = ref<number>(-2)
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
 
+  const noticias = ref<Noticia[]>([])
   // Método para tocar una canción por ID
   const tocar = async (id: string) => {
     const nueva = await aplicacion.tocar(id)
@@ -69,6 +70,7 @@ export const useAppStore = defineStore('app', () => {
     estadoReproduccion,
     nroCancion,
     golpeDelCompas,
+    noticias,
     tocar,
     actualizarEstado,
     actualizarEstadoConexion,

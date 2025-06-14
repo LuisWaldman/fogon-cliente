@@ -18,8 +18,8 @@ const props = defineProps<{
     <span v-if="props.noticia.mastexto" @click="mostrarMas = !mostrarMas">
       {{ mostrarMas ? '-' : '+' }}
     </span>
-    <div v-if="mostrarMas && props.noticia.mastexto">
-      {{ props.noticia.mastexto }}
+    <div v-if="mostrarMas && props.noticia.mastexto" v-html="props.noticia.mastexto">
+      
     </div>
   </div>
 </template>

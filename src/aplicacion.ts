@@ -5,6 +5,7 @@ import { Reloj } from './modelo/reloj'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
+import { Noticia } from './modelo/noticia'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 
 export default class Aplicacion {
@@ -17,8 +18,30 @@ export default class Aplicacion {
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
     return helperArchivo.GetCancion(cancionstr)
   }
+
+  async cargarNoticiasLocales() {
+    const response = await fetch('/noticias/noticiaslocales.json')
+    const data = await response.json()
+
+    const newNoticias = []
+    for (let i = 0; i < data.length; i++) {
+      newNoticias.push(
+        new Noticia(
+          data[i].fechayhora,
+          data[i].titulo,
+          data[i].texto,
+          data[i].mastexto,
+        ),
+      )
+    }
+    const appStore = useAppStore()
+    appStore.noticias = newNoticias
+  }
+
   onMounted() {
     console.log('Aplicacion montada')
+    this.cargarNoticiasLocales()
+
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
         (s) => s.nombre === this.configuracion.conectarServerDefault,
