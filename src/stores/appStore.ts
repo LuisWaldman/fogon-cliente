@@ -65,6 +65,8 @@ export const useAppStore = defineStore('app', () => {
     listaCanciones,
     compas,
     estado,
+    estadoConexion,
+    estadoReproduccion,
     nroCancion,
     golpeDelCompas,
     tocar,

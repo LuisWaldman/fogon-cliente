@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useAppStore } from '../stores/appStore'
+const appStore = useAppStore()
+
 const cancionesPorBanda = {
   'Andrés Calamaro': [
     { nombre: 'Tuyo Siempre', archivo: 'andres-calamaro_tuyo-siempre' },
@@ -60,14 +63,24 @@ const cancionesPorBanda = {
 const url = window.location.href
 </script>
 <template>
-  <div class="home" v-if="url != 'https://www.fogon.ar/'">
-    <h1 style="color: blueviolet">Bienvenido al Fogon</h1>
-    <p class="read-the-docs">
-      Esta es una version muy BETA, recien estamos empezando a construir el
-      Fogon, juntando maderita.
+  <div class="estadoTocando" v-if="appStore.estadoReproduccion === 'Reproduciendo'"> 
+
+    
+    <router-link class="tocar" to="/tocar">
+              🎸 Volver al tema
+            </router-link>
+  </div>
+  <div class="home">
+    
+    <h1 style="color: blueviolet; margin-bottom: 0px; padding-bottom: 0px;">Bienvenido al Fogon</h1><span class="version">v 1.0</span>
+    
+
+
+    <p class="primer-parrafo">
+      Esta desconectado! No Pasa nada.
     </p>
 
-    <p>Por ahora, presentamos las siguientes canciones:</p>
+    
   </div>
   <div class="row">
     <div
@@ -87,11 +100,33 @@ const url = window.location.href
   </div>
 </template>
 <style scoped>
-.read-the-docs {
+.estadoTocando {
+  width: 100%;
+  padding-right: 29px;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-end;
+  
+  margin-bottom: 20px;
+}
+.primer-parrafo {
   font-size: x-large;
+}
+.tocar {
+  text-decoration: none;
+  color: #a9a8f6;;
+  border: 1px solid #a9a8f6;;
+  padding: 10px;
+  border-radius: 5px;
 }
 .home {
   width: 100%;
   padding: 20px;
+}
+.version {
+  font-size: small;
+  color: gray;
+  margin-top: -10px;
+
 }
 </style>

@@ -63,21 +63,21 @@ export default class Aplicacion {
 
   play() {
     const appStore = useAppStore()
-    appStore.estado = 'Reproduciendo'
+    appStore.estadoReproduccion = 'Reproduciendo'
     this.iniciarReproduccion()
   }
 
   pause() {
     this.detenerReproduccion()
     const appStore = useAppStore()
-    appStore.estado = 'pausado'
+    appStore.estadoReproduccion = 'pausado'
     appStore.golpeDelCompas = 0
   }
 
   stop() {
     this.detenerReproduccion()
     const appStore = useAppStore()
-    appStore.estado = 'pausado'
+    appStore.estadoReproduccion = 'pausado'
     appStore.compas = -2
     appStore.golpeDelCompas = 0
   }
