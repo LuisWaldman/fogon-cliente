@@ -22,7 +22,6 @@ export const useAppStore = defineStore('app', () => {
   const listaCanciones = ref<itemLista[]>([])
   const nroCancion = ref<number>(1)
   const compas = ref<number>(-2)
-  const estado = ref<string>('No iniciado') // Estado inicial de la aplicación
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
 
   // Método para tocar una canción por ID
@@ -33,9 +32,22 @@ export const useAppStore = defineStore('app', () => {
     }
   }
 
+  const estado = ref<string>('No iniciado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
     estado.value = nuevoEstado
+  }
+
+  const estadoConexion = ref<string>('No iniciado') // Estados : 'Desconectado', 'Intenando-Loguear', 'Logueado'
+  // Método para actualizar el estado de reproducción
+  const actualizarEstadoConexion = (nuevoEstado: string) => {
+    estadoConexion.value = nuevoEstado
+  }
+
+  const estadoReproduccion = ref<string>('Pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
+  // Método para actualizar el estado de reproducción
+  const actualizarEstadoReproduccion = (nuevoEstado: string) => {
+    estadoReproduccion.value = nuevoEstado
   }
 
   // Método para modificar el compás
@@ -57,6 +69,8 @@ export const useAppStore = defineStore('app', () => {
     golpeDelCompas,
     tocar,
     actualizarEstado,
+    actualizarEstadoConexion,
+    actualizarEstadoReproduccion,
     actualizarCompas,
     actualizargolpeDelCompas,
   }

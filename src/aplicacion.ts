@@ -63,7 +63,7 @@ export default class Aplicacion {
 
   play() {
     const appStore = useAppStore()
-    appStore.estado = 'tocando'
+    appStore.estado = 'Reproduciendo'
     this.iniciarReproduccion()
   }
 
@@ -77,7 +77,7 @@ export default class Aplicacion {
   stop() {
     this.detenerReproduccion()
     const appStore = useAppStore()
-    appStore.estado = 'parado'
+    appStore.estado = 'pausado'
     appStore.compas = -2
     appStore.golpeDelCompas = 0
   }
