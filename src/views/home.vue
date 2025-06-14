@@ -18,10 +18,20 @@ const appStore = useAppStore()
     </h1>
     <span class="version">v 1.0</span>
 
-    <p class="primer-parrafo">
-      Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
+    <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
+      Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar 
       off-line. En esta version, podes ver las noticias locales
     </p>
+        <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
+      Revisa los servidores en configuracion y conectate a un fogon
+    </p>
+    <p class="primer-parrafo" v-if="appStore.estado === 'conectado'">
+      Esta conectado! Logueate para poder tocar con otros fogoneros
+    </p>
+    <p class="primer-parrafo" v-if="appStore.estado === 'logueado'">
+      Estas son las noticias en tu servidor
+    </p>
+    
     <div class="containerNoticias">
       <noticiaComp
         v-for="(noticia, index) in appStore.noticias"

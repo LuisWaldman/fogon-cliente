@@ -6,6 +6,7 @@ import { Cancion } from '../modelo/cancion'
 import { itemLista } from '../modelo/item_lista'
 import { Acordes } from '../modelo/acordes'
 import { Letra } from '../modelo/letra'
+import { Noticia } from '../modelo/noticia'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
