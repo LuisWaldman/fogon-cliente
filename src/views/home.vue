@@ -1,6 +1,22 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
+import { Noticia } from '../modelo/noticia'
+import noticiaComp from '../components/comp_home/noticia.vue'
 const appStore = useAppStore()
+const noticias: Noticia[] = [
+  new Noticia(
+    new Date(),
+    'Andres calamaro',
+    'Aca algunos clasicasos del numero 1, Andres Calamaro <a href="/tocar?cancion=andres-calamaro_tuyo-siempre">Tuyo Siempre</a> y <a href="/tocar?cancion=andres-calamaro_flaca">Flaca</a>',
+    'Y si, lo bancamos porque andres es el uno! Escuchen aca las nuevas canciones de Andres Calamaro',
+  ),
+  new Noticia(
+    new Date(),
+    'Joaquin Sabina',
+    'El Viejo poeta de canciones como ',
+    'El pityyyy loco el pitttttty',
+  ),
+]
 
 const cancionesPorBanda = {
   'Andrés Calamaro': [
@@ -60,27 +76,31 @@ const cancionesPorBanda = {
     { nombre: 'Gavotte', archivo: 'nuri-profe_gavote' },
   ],
 }
-const url = window.location.href
 </script>
 <template>
-  <div class="estadoTocando" v-if="appStore.estadoReproduccion === 'Reproduciendo'"> 
-
-    
-    <router-link class="tocar" to="/tocar">
-              🎸 Volver al tema
-            </router-link>
+  <div
+    class="estadoTocando"
+    v-if="appStore.estadoReproduccion === 'Reproduciendo'"
+  >
+    <router-link class="tocar" to="/tocar"> 🎸 Volver al tema </router-link>
   </div>
   <div class="home">
-    
-    <h1 style="color: blueviolet; margin-bottom: 0px; padding-bottom: 0px;">Bienvenido al Fogon</h1><span class="version">v 1.0</span>
-    
-
+    <h1 style="color: blueviolet; margin-bottom: 0px; padding-bottom: 0px">
+      Bienvenido al Fogon
+    </h1>
+    <span class="version">v 1.0</span>
 
     <p class="primer-parrafo">
-      Esta desconectado! No Pasa nada.
+      Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
+      off-line. En esta version, podes ver las noticias locales
     </p>
-
-    
+    <div class="containerNoticias">
+      <noticiaComp
+        v-for="(noticia, index) in noticias"
+        :key="index"
+        :noticia="noticia"
+      ></noticiaComp>
+    </div>
   </div>
   <div class="row">
     <div
@@ -106,7 +126,7 @@ const url = window.location.href
   font-size: xx-large;
   display: flex;
   justify-content: flex-end;
-  
+
   margin-bottom: 20px;
 }
 .primer-parrafo {
@@ -114,8 +134,8 @@ const url = window.location.href
 }
 .tocar {
   text-decoration: none;
-  color: #a9a8f6;;
-  border: 1px solid #a9a8f6;;
+  color: #a9a8f6;
+  border: 1px solid #a9a8f6;
   padding: 10px;
   border-radius: 5px;
 }
@@ -127,6 +147,5 @@ const url = window.location.href
   font-size: small;
   color: gray;
   margin-top: -10px;
-
 }
 </style>

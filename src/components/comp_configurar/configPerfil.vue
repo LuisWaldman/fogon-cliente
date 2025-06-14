@@ -4,33 +4,33 @@ import { Perfil } from '../../modelo/perfil'
 import { ref, onMounted } from 'vue'
 
 const appStore = useAppStore()
-const perfil = ref(new Perfil("", "", "", "", ""))
-const imageBase64 = ref("")
+const perfil = ref(new Perfil('', '', '', '', ''))
+const imageBase64 = ref('')
 
 function getPerfil() {
-  appStore.aplicacion.HTTPGet('perfil')
-    .then(response => response.json()) 
-    .then(data => 
-    { 
+  appStore.aplicacion
+    .HTTPGet('perfil')
+    .then((response) => response.json())
+    .then((data) => {
       perfil.value.imagen = data.Imagen
       perfil.value.nombre = data.Nombre
       perfil.value.descripcion = data.Descripcion
       perfil.value.instrumento = data.Instrumento
       imageBase64.value = data.Imagen
-
-    })    
-    .catch((error: any) => {
+    })
+    .catch((error: Error) => {
       console.error('Error fetching profile:', error)
     })
 }
 
 function updateProfile() {
   perfil.value.imagen = imageBase64.value
-  appStore.aplicacion.HTTPPost('perfil', perfil.value)
-    .then((response: any) => {
-      console.log('Profile updated successfully:', response.data)
+  appStore.aplicacion
+    .HTTPPost('perfil', perfil.value)
+    .then((response: unknown) => {
+      console.log('Profile updated successfully:', response)
     })
-    .catch((error: any) => {
+    .catch((error: Error) => {
       console.error('Error updating profile:', error)
     })
 }
@@ -58,7 +58,11 @@ onMounted(() => {
       <div>
         <label for="image">Profile Image:</label>
         <input type="file" id="image" @change="handleImageUpload" />
-        <img :src="imageBase64" alt="Profile Image" style="max-width: 200px; max-height: 200px;" />
+        <img
+          :src="imageBase64"
+          alt="Profile Image"
+          style="max-width: 200px; max-height: 200px"
+        />
       </div>
       <div>
         <label for="username">Nombre:</label>
@@ -86,7 +90,8 @@ form {
 label {
   font-weight: bold;
 }
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -94,7 +99,7 @@ input, textarea {
 }
 button {
   padding: 0.5rem 1rem;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
