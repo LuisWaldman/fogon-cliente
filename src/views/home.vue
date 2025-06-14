@@ -8,7 +8,7 @@ const noticias: Noticia[] = [
     new Date(),
     'Andres calamaro',
     'Aca algunos clasicasos del numero 1, Andres Calamaro <a href="/tocar?cancion=andres-calamaro_tuyo-siempre">Tuyo Siempre</a> y <a href="/tocar?cancion=andres-calamaro_flaca">Flaca</a>',
-    'Y si, lo bancamos porque andres es el uno! Escuchen aca las nuevas canciones de Andres Calamaro',
+    'Y vamos a poner mas, no te quepa duda, pero pro ahora empezamos con estos dos temazos',
   ),
   new Noticia(
     new Date(),
