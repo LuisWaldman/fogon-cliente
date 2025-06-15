@@ -24,7 +24,7 @@ const appStore = useAppStore()
           width="50"
         />
       </router-link>
-      <span v-if="$route.path === '/home'" class="titulocancioncontrol">
+      <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
       </span>
 

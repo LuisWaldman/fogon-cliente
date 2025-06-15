@@ -5,6 +5,8 @@ import { Reloj } from './modelo/reloj'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
+import { Noticia } from './modelo/noticia'
+import type { ObjetoPosteable } from './modelo/objetoPosteable'
 
 export default class Aplicacion {
   reloj: Reloj = new Reloj()
@@ -16,8 +18,30 @@ export default class Aplicacion {
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
     return helperArchivo.GetCancion(cancionstr)
   }
+
+  async cargarNoticiasLocales() {
+    const response = await fetch('/noticias/noticiaslocales.json')
+    const data = await response.json()
+
+    const newNoticias = []
+    for (let i = 0; i < data.length; i++) {
+      newNoticias.push(
+        new Noticia(
+          data[i].fechayhora,
+          data[i].titulo,
+          data[i].texto,
+          data[i].mastexto,
+        ),
+      )
+    }
+    const appStore = useAppStore()
+    appStore.noticias = newNoticias
+  }
+
   onMounted() {
     console.log('Aplicacion montada')
+    this.cargarNoticiasLocales()
+
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
         (s) => s.nombre === this.configuracion.conectarServerDefault,
@@ -62,21 +86,21 @@ export default class Aplicacion {
 
   play() {
     const appStore = useAppStore()
-    appStore.estado = 'tocando'
+    appStore.estadoReproduccion = 'Reproduciendo'
     this.iniciarReproduccion()
   }
 
   pause() {
     this.detenerReproduccion()
     const appStore = useAppStore()
-    appStore.estado = 'pausado'
+    appStore.estadoReproduccion = 'pausado'
     appStore.golpeDelCompas = 0
   }
 
   stop() {
     this.detenerReproduccion()
     const appStore = useAppStore()
-    appStore.estado = 'parado'
+    appStore.estadoReproduccion = 'pausado'
     appStore.compas = -2
     appStore.golpeDelCompas = 0
   }
@@ -85,8 +109,9 @@ export default class Aplicacion {
     // Inicialización de la aplicación
     console.log('Aplicacion inicializada')
   }
-
+  url = ''
   conectar(url: string) {
+    this.url = url
     const appStore = useAppStore()
     appStore.estado = 'conectando'
     this.cliente = new ClienteSocket(url)
@@ -100,6 +125,34 @@ export default class Aplicacion {
     console.log(`Conectando al servidor: ${url}`)
   }
 
+  async HTTPGet(urlGet: string): Promise<Response> {
+    return fetch(this.url + urlGet, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${this.token}`,
+      },
+    })
+  }
+
+  async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
+    return fetch(this.url + urlPost, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${this.token}`,
+      },
+      body: JSON.stringify(body),
+    })
+  }
+  getperfilUsuario() {
+    if (!this.cliente) {
+      console.error(
+        'Cliente no conectado. No se puede obtener el perfil del usuario.',
+      )
+      return
+    }
+  }
+
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
     if (!this.cliente) {
@@ -111,6 +164,7 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       this.token = token
+      this.getperfilUsuario()
     })
     this.cliente.login(datos)
     return true

@@ -6,6 +6,7 @@ import { Cancion } from '../modelo/cancion'
 import { itemLista } from '../modelo/item_lista'
 import { Acordes } from '../modelo/acordes'
 import { Letra } from '../modelo/letra'
+import { Noticia } from '../modelo/noticia'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
@@ -22,9 +23,9 @@ export const useAppStore = defineStore('app', () => {
   const listaCanciones = ref<itemLista[]>([])
   const nroCancion = ref<number>(1)
   const compas = ref<number>(-2)
-  const estado = ref<string>('No iniciado') // Estado inicial de la aplicación
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
 
+  const noticias = ref<Noticia[]>([])
   // Método para tocar una canción por ID
   const tocar = async (id: string) => {
     const nueva = await aplicacion.tocar(id)
@@ -33,9 +34,22 @@ export const useAppStore = defineStore('app', () => {
     }
   }
 
+  const estado = ref<string>('No iniciado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
     estado.value = nuevoEstado
+  }
+
+  const estadoConexion = ref<string>('No iniciado') // Estados : 'Desconectado', 'Intenando-Loguear', 'Logueado'
+  // Método para actualizar el estado de reproducción
+  const actualizarEstadoConexion = (nuevoEstado: string) => {
+    estadoConexion.value = nuevoEstado
+  }
+
+  const estadoReproduccion = ref<string>('Pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
+  // Método para actualizar el estado de reproducción
+  const actualizarEstadoReproduccion = (nuevoEstado: string) => {
+    estadoReproduccion.value = nuevoEstado
   }
 
   // Método para modificar el compás
@@ -53,10 +67,15 @@ export const useAppStore = defineStore('app', () => {
     listaCanciones,
     compas,
     estado,
+    estadoConexion,
+    estadoReproduccion,
     nroCancion,
     golpeDelCompas,
+    noticias,
     tocar,
     actualizarEstado,
+    actualizarEstadoConexion,
+    actualizarEstadoReproduccion,
     actualizarCompas,
     actualizargolpeDelCompas,
   }

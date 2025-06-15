@@ -79,7 +79,7 @@ function calcularresumenparte() {
 <template>
   <div v-if="reperesu.length == 0">
     <span style="font-size: large">Secuencia</span>
-    <div style="display: flex; flex-wrap: wrap">
+    <div class="secuencia">
       <div
         v-for="(parte, index) in cancion.acordes.ordenPartes"
         :key="index"
@@ -95,7 +95,7 @@ function calcularresumenparte() {
   <div v-if="reperesu.length > 0">
     <span style="font-size: large">Secuencia</span>
     <div style="display: flex; flex-wrap: wrap">
-      <div v-for="(parte, index) in secuResu" :key="index">
+      <div v-for="(parte, index) in secuResu" :key="index" class="secuencia">
         <div class="ordendiv">
           <span
             :class="{
@@ -121,12 +121,18 @@ function calcularresumenparte() {
 .read-the-docs {
   color: #888;
 }
-
+.secuencia {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  margin: 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
 .ordendiv {
   font-size: var(--tamanio-parte);
   margin: 1px;
   padding: 5px;
-  border: 1px solid;
   border-radius: 5px;
   display: inline-block;
   color: #a9a8f6;

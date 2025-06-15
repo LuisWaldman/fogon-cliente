@@ -49,21 +49,21 @@ function updateCompas(newCompas: number) {
       <button
         class="boton_controller boton_controllerplay"
         @click="play"
-        v-if="appStore.estado !== 'tocando'"
+        v-if="appStore.estadoReproduccion !== 'Reproduciendo'"
       >
         <i class="bi bi-play-fill"></i>
       </button>
       <button
         class="boton_controller"
         @click="pause"
-        v-if="appStore.estado === 'tocando'"
+        v-if="appStore.estadoReproduccion === 'Reproduciendo'"
       >
         <i class="bi bi-pause-fill"></i>
       </button>
       <button
         class="boton_controller"
         @click="stop"
-        v-if="appStore.estado === 'tocando'"
+        v-if="appStore.estadoReproduccion === 'Reproduciendo'"
       >
         <i class="bi bi-stop-fill"></i>
       </button>
