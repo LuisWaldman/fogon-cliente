@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
+
+import noticiaComp from '../components/comp_home/noticia.vue'
+
 const appStore = useAppStore()
 </script>
 <template>
