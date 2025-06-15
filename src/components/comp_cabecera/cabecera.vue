@@ -35,7 +35,7 @@ const appStore = useAppStore()
       <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
         Configuracion
       </span>
-
+      
       <div class="dropdown dropdown-superior-derecha ms-auto">
         <button
           style="background-color: #353333; border: none"
@@ -46,7 +46,7 @@ const appStore = useAppStore()
           aria-expanded="false"
         >
           <img
-            src="/img/UsuarioDesconecdado.png"
+            :src="appStore.perfil?.imagen || '/img/UsuarioDesconecdado.png'"
             alt="User"
             style="
               width: 40px;

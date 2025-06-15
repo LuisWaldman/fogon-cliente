@@ -7,6 +7,8 @@ import configServidores from '../components/comp_configurar/configServidores.vue
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 import ConfigVistas from '../components/comp_configurar/ConfigVistas.vue'
 
+import { useAppStore } from '../stores/appStore'
+const appStore = useAppStore()
 // Definir la canción y el contexto
 const viendo = ref('login')
 
@@ -25,6 +27,10 @@ function clickOpcion(viendostr: string) {
             <li @click="clickOpcion('login')">
               <a
                 href="#"
+                v-if="
+                  appStore.estado === 'conectado' ||
+                  appStore.estado === 'logueado'
+                "
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'login' }"
               >
@@ -35,6 +41,7 @@ function clickOpcion(viendostr: string) {
             <li @click="clickOpcion('perfil')">
               <a
                 href="#"
+                v-if="appStore.estado === 'logueado'"
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'perfil' }"
               >

@@ -145,12 +145,18 @@ export default class Aplicacion {
     })
   }
   getperfilUsuario() {
-    if (!this.cliente) {
-      console.error(
-        'Cliente no conectado. No se puede obtener el perfil del usuario.',
-      )
-      return
-    }
+    this.HTTPGet('perfil')
+      .then((response) => response.json())
+      .then((data) => {
+        const appStore = useAppStore()
+        appStore.perfil.imagen = data.Imagen
+        appStore.perfil.nombre = data.Nombre
+        appStore.perfil.descripcion = data.Descripcion
+        appStore.perfil.instrumento = data.Instrumento
+      })
+      .catch((error) => {
+        console.error('Error al obtener el perfil del usuario:', error)
+      })
   }
 
   login(datos: datosLogin): boolean {
