@@ -144,6 +144,14 @@ export default class Aplicacion {
       body: JSON.stringify(body),
     })
   }
+  getperfilUsuario() {
+    if (!this.cliente) {
+      console.error(
+        'Cliente no conectado. No se puede obtener el perfil del usuario.',
+      )
+      return
+    }
+  }
 
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
@@ -156,6 +164,7 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       this.token = token
+      this.getperfilUsuario()
     })
     this.cliente.login(datos)
     return true
