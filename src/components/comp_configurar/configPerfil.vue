@@ -28,6 +28,7 @@ function updateProfile() {
   appStore.aplicacion
     .HTTPPost('perfil', perfil.value)
     .then((response: unknown) => {
+      appStore.perfil = perfil.value
       console.log('Profile updated successfully:', response)
     })
     .catch((error: Error) => {
@@ -47,7 +48,8 @@ function handleImageUpload(event: Event) {
 }
 
 onMounted(() => {
-  getPerfil()
+  perfil.value = appStore.perfil
+  imageBase64.value = perfil.value.imagen
 })
 </script>
 
