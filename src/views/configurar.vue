@@ -6,9 +6,11 @@ import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 import ConfigVistas from '../components/comp_configurar/ConfigVistas.vue'
+import { useAppStore } from '../stores/appStore'
+const appStore = useAppStore()
 
 // Definir la canción y el contexto
-const viendo = ref('perfil')
+const viendo = ref('login')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr

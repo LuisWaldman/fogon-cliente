@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useAppStore } from '../stores/appStore'
 import { Noticia } from '../modelo/noticia'
 import noticiaComp from '../components/comp_home/noticia.vue'
+import { useAppStore } from '../stores/appStore'
 const appStore = useAppStore()
 
 </script>
@@ -20,13 +20,14 @@ const appStore = useAppStore()
 
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar 
-      off-line. En esta version, podes ver las noticias locales
+      off-line. En esta version, podes ver las noticias locales      
     </p>
         <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Revisa los servidores en configuracion y conectate a un fogon
     </p>
     <p class="primer-parrafo" v-if="appStore.estado === 'conectado'">
-      Esta conectado! Logueate para poder tocar con otros fogoneros
+      Esta conectado! <router-link to="/configurar">Logueate </router-link> para poder tocar con otros fogoneros
+        
     </p>
     <p class="primer-parrafo" v-if="appStore.estado === 'logueado'">
       Estas son las noticias en tu servidor
