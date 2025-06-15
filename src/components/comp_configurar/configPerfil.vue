@@ -7,22 +7,6 @@ const appStore = useAppStore()
 const perfil = ref(new Perfil('', '', '', '', ''))
 const imageBase64 = ref('')
 
-function getPerfil() {
-  appStore.aplicacion
-    .HTTPGet('perfil')
-    .then((response) => response.json())
-    .then((data) => {
-      perfil.value.imagen = data.Imagen
-      perfil.value.nombre = data.Nombre
-      perfil.value.descripcion = data.Descripcion
-      perfil.value.instrumento = data.Instrumento
-      imageBase64.value = data.Imagen
-    })
-    .catch((error: Error) => {
-      console.error('Error fetching profile:', error)
-    })
-}
-
 function updateProfile() {
   perfil.value.imagen = imageBase64.value
   appStore.aplicacion

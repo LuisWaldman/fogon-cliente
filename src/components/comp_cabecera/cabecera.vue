@@ -35,7 +35,7 @@ const appStore = useAppStore()
       <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
         Configuracion
       </span>
-      
+
       <div class="dropdown dropdown-superior-derecha ms-auto">
         <button
           style="background-color: #353333; border: none"

@@ -111,6 +111,7 @@ export default class Aplicacion {
   }
   url = ''
   conectar(url: string) {
+    const config = Configuracion.getInstance()
     this.url = url
     const appStore = useAppStore()
     appStore.estado = 'conectando'
@@ -119,6 +120,9 @@ export default class Aplicacion {
       console.log('status:', status)
       if (status === 'conectado') {
         appStore.estado = 'conectado'
+        if (config.loginDefault?.mantenerseLogeado) {
+          this.login(config.loginDefault)
+        }
       }
     })
     this.cliente.connectar()
