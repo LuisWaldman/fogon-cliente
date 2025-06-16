@@ -46,7 +46,7 @@ const appStore = useAppStore()
           aria-expanded="false"
         >
           <img
-            src="/img/UsuarioDesconecdado.png"
+            :src="appStore.perfil?.imagen || '/img/UsuarioDesconecdado.png'"
             alt="User"
             style="
               width: 40px;

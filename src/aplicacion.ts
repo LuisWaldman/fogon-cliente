@@ -111,6 +111,7 @@ export default class Aplicacion {
   }
   url = ''
   conectar(url: string) {
+    const config = Configuracion.getInstance()
     this.url = url
     const appStore = useAppStore()
     appStore.estado = 'conectando'
@@ -119,6 +120,9 @@ export default class Aplicacion {
       console.log('status:', status)
       if (status === 'conectado') {
         appStore.estado = 'conectado'
+        if (config.loginDefault?.mantenerseLogeado) {
+          this.login(config.loginDefault)
+        }
       }
     })
     this.cliente.connectar()
@@ -145,12 +149,18 @@ export default class Aplicacion {
     })
   }
   getperfilUsuario() {
-    if (!this.cliente) {
-      console.error(
-        'Cliente no conectado. No se puede obtener el perfil del usuario.',
-      )
-      return
-    }
+    this.HTTPGet('perfil')
+      .then((response) => response.json())
+      .then((data) => {
+        const appStore = useAppStore()
+        appStore.perfil.imagen = data.Imagen
+        appStore.perfil.nombre = data.Nombre
+        appStore.perfil.descripcion = data.Descripcion
+        appStore.perfil.instrumento = data.Instrumento
+      })
+      .catch((error) => {
+        console.error('Error al obtener el perfil del usuario:', error)
+      })
   }
 
   login(datos: datosLogin): boolean {
