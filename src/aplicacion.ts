@@ -179,4 +179,25 @@ export default class Aplicacion {
     this.cliente.login(datos)
     return true
   }
+
+  CrearSesion(nombre: string): void {
+    console.log(`Intentando crear sesion: ${nombre}`)
+    if (!this.cliente) {
+      console.error('Cliente no conectado. No se puede iniciar sesión.')
+      return
+    }
+    this.cliente.setEnsesionHandler((sesionCreada: string) => {
+      console.log(`Sesión creada exitosamente: ${sesionCreada}`)
+      const appStore = useAppStore()
+      appStore.estadoSesion = 'conectado'
+      appStore.sesion.nombre = sesionCreada
+    })
+    this.cliente.setSesionFailedHandler((error: string) => {
+      console.error(`Error al crear sesión: ${error}`)
+      const appStore = useAppStore()
+      appStore.estadoSesion = 'error'
+    })
+
+    this.cliente.CrearSesion(nombre, 3.54, 4.34)
+  }
 }

@@ -4,12 +4,16 @@ import type { datosLogin } from '../datosLogin'
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
   loginSuccess: (data: { token: string }) => void
+  loginFailed: (error: string) => void
+  ensesion: (sesion: string) => void
+  sesionFailed: (error: string) => void
 }
 
 interface ClientToServerEvents {
   hola: (mensaje: string) => void
   login: (modo: string, usuario: string, password: string) => void
-  unirme_sesion(sesion: string): void
+  unirmesesion(sesion: string): void
+  crearsesion(sesion: string, latitud: number, longitud: number): void
 }
 
 export class ClienteSocket {
@@ -28,6 +32,20 @@ export class ClienteSocket {
   private conexionStatusHandler?: (status: string) => void
   public setconexionStatusHandler(handler: (status: string) => void): void {
     this.conexionStatusHandler = handler
+  }
+  private ensesionHandler?: (sesion: string) => void
+  public setEnsesionHandler(handler: (sesion: string) => void): void {
+    this.ensesionHandler = handler
+  }
+
+  private sesionFailedHandler?: (error: string) => void
+  public setSesionFailedHandler(handler: (error: string) => void): void {
+    this.sesionFailedHandler = handler
+  }
+
+  private loginFailedHandler?: (error: string) => void
+  public setLoginFailedHandler(handler: (error: string) => void): void {
+    this.loginFailedHandler = handler
   }
 
   private urlserver: string
@@ -67,14 +85,27 @@ export class ClienteSocket {
       this.loginSuccessHandler?.(data.token)
     })
 
+    socket.on('loginFailed', (error: string) => {
+      console.error('loginFailed received with error:', error)
+      this.loginFailedHandler?.(error)
+    })
+    socket.on('ensesion', (sesion: string) => {
+      console.log('ensesion received with sesion:', sesion)
+      this.ensesionHandler?.(sesion)
+    })
+    socket.on('sesionFailed', (error: string) => {
+      console.error('sesionFailed received with error:', error)
+      this.sesionFailedHandler?.(error)
+    })
+
     this.socket = socket
   }
 
   public hola(mensaje: string): void {
     this.socket.emit('hola', mensaje)
   }
-  public unirmeSesion(sesion: string): void {
-    this.socket.emit('unirme_sesion', sesion)
+  public CrearSesion(sesion: string, latitud: number, longitud: number): void {
+    this.socket.emit('crearsesion', sesion, latitud, longitud)
   }
 
   login(datos: datosLogin) {

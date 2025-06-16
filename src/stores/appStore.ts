@@ -8,6 +8,7 @@ import { Acordes } from '../modelo/acordes'
 import { Letra } from '../modelo/letra'
 import { Noticia } from '../modelo/noticia'
 import { Perfil } from '../modelo/perfil'
+import { Sesion } from '../modelo/sesion'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
@@ -34,8 +35,11 @@ export const useAppStore = defineStore('app', () => {
       cancion.value = nueva
     }
   }
-  const perfil = ref<Perfil>(new Perfil('', '', '', '', '')) // Perfil del usuario, se puede definir una clase Perfil si es necesario
 
+  const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
+  const estadoSesion = ref<string>('no-conectado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
+
+  const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
   const estado = ref<string>('No iniciado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
@@ -70,11 +74,13 @@ export const useAppStore = defineStore('app', () => {
     compas,
     estado,
     estadoConexion,
+    estadoSesion,
     perfil,
     estadoReproduccion,
     nroCancion,
     golpeDelCompas,
     noticias,
+    sesion,
     tocar,
     actualizarEstado,
     actualizarEstadoConexion,

@@ -6,9 +6,9 @@ import { ref, onMounted } from 'vue'
 const sesiones = ref([] as Sesion[])
 const newsesio = ref(new Sesion('', 0, '', 0, 0))
 
+const appStore = useAppStore()
 function agregarSesion() {
-    sesiones.value.push({ ...newsesio.value })
-    newsesio.value = new Sesion('', 0, '', 0, 0)
+    appStore.aplicacion.CrearSesion(newsesio.value.nombre)
 }
 
 </script>
@@ -18,6 +18,7 @@ function agregarSesion() {
             <label for="nombre">Nombre de la sesión:</label>
             <input id="nombre" v-model="newsesio.nombre" required />
             <button type="submit">Iniciar Sesión</button>
+            {{ appStore.estadoSesion }}
         </form>
 
         <table v-if="sesiones.length">
