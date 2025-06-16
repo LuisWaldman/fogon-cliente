@@ -127,6 +127,17 @@ export default class Aplicacion {
     })
     this.cliente.connectar()
     console.log(`Conectando al servidor: ${url}`)
+    this.cliente.setEnsesionHandler((sesionCreada: string) => {
+      console.log(`Sesión creada exitosamente: ${sesionCreada}`)
+      const appStore = useAppStore()
+      appStore.estadoSesion = 'conectado'
+      appStore.sesion.nombre = sesionCreada
+    })
+    this.cliente.setSesionFailedHandler((error: string) => {
+      console.error(`Error al crear sesión: ${error}`)
+      const appStore = useAppStore()
+      appStore.estadoSesion = 'error'
+    })
   }
 
   async HTTPGet(urlGet: string): Promise<Response> {
@@ -175,6 +186,12 @@ export default class Aplicacion {
       this.token = token
       this.getperfilUsuario()
     })
+
+    this.cliente.setMensajesesionHandler((msj: string) => {
+      console.log(`Mensaje de sesión recibido: ${msj}`)
+      const appStore = useAppStore()
+      appStore.mensajes.push(msj)
+    })
     this.cliente.login(datos)
     return true
   }
@@ -185,18 +202,24 @@ export default class Aplicacion {
       console.error('Cliente no conectado. No se puede iniciar sesión.')
       return
     }
-    this.cliente.setEnsesionHandler((sesionCreada: string) => {
-      console.log(`Sesión creada exitosamente: ${sesionCreada}`)
-      const appStore = useAppStore()
-      appStore.estadoSesion = 'conectado'
-      appStore.sesion.nombre = sesionCreada
-    })
-    this.cliente.setSesionFailedHandler((error: string) => {
-      console.error(`Error al crear sesión: ${error}`)
-      const appStore = useAppStore()
-      appStore.estadoSesion = 'error'
-    })
-
     this.cliente.CrearSesion(nombre, 3.54, 4.34)
+  }
+
+  UnirmeSesion(nombre: string): void {
+    console.log(`Intentando crear sesion: ${nombre}`)
+    if (!this.cliente) {
+      console.error('Cliente no conectado. No se puede iniciar sesión.')
+      return
+    }
+    this.cliente.UnirmeSesion(nombre)
+  }
+
+  MensajeASesion(msj: string): void {
+    console.log(`Intentando crear sesion: ${msj}`)
+    if (!this.cliente) {
+      console.error('Cliente no conectado. No se puede Mandar mensajes.')
+      return
+    }
+    this.cliente.MensajeASesion(msj)
   }
 }

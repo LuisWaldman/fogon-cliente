@@ -23,6 +23,7 @@ export const useAppStore = defineStore('app', () => {
     ),
   )
   const listaCanciones = ref<itemLista[]>([])
+  const mensajes = ref<string[]>([])
   const nroCancion = ref<number>(1)
   const compas = ref<number>(-2)
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
@@ -81,6 +82,7 @@ export const useAppStore = defineStore('app', () => {
     golpeDelCompas,
     noticias,
     sesion,
+    mensajes,
     tocar,
     actualizarEstado,
     actualizarEstadoConexion,

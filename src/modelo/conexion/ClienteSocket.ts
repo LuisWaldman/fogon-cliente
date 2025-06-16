@@ -7,6 +7,7 @@ interface ServerToClientEvents {
   loginFailed: (error: string) => void
   ensesion: (sesion: string) => void
   sesionFailed: (error: string) => void
+  mensajesesion: (mensaje: string) => void
 }
 
 interface ClientToServerEvents {
@@ -14,6 +15,7 @@ interface ClientToServerEvents {
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
   crearsesion(sesion: string, latitud: number, longitud: number): void
+  mensajeasesion: (mensaje: string) => void
 }
 
 export class ClienteSocket {
@@ -48,6 +50,11 @@ export class ClienteSocket {
     this.loginFailedHandler = handler
   }
 
+  private mensajesesionHandler?: (mensaje: string) => void
+  public setMensajesesionHandler(handler: (mensaje: string) => void): void {
+    this.mensajesesionHandler = handler
+  }
+
   private urlserver: string
 
   constructor(urlserver: string) {
@@ -75,9 +82,8 @@ export class ClienteSocket {
       this.conexionStatusHandler?.('conectado')
     })
 
-    socket.on('replica', (usuario: string, datos: string[]) => {
-      console.log('replica received with usuario and datos:', usuario, datos)
-      this.replicaHandler?.(datos)
+    socket.on('mensajesesion', (msj: string) => {
+      this.mensajesesionHandler?.(msj)
     })
 
     socket.on('loginSuccess', (data: { token: string }) => {
@@ -101,11 +107,15 @@ export class ClienteSocket {
     this.socket = socket
   }
 
-  public hola(mensaje: string): void {
-    this.socket.emit('hola', mensaje)
+  public MensajeASesion(msj: string): void {
+    this.socket.emit('mensajeasesion', msj)
   }
   public CrearSesion(sesion: string, latitud: number, longitud: number): void {
     this.socket.emit('crearsesion', sesion, latitud, longitud)
+  }
+
+  public UnirmeSesion(sesion: string): void {
+    this.socket.emit('unirmesesion', sesion)
   }
 
   login(datos: datosLogin) {

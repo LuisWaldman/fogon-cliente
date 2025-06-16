@@ -5,10 +5,21 @@ import { ref, onMounted } from 'vue'
 
 const sesiones = ref([] as Sesion[])
 const newsesio = ref(new Sesion('', 0, '', 0, 0))
+const msj = ref('')
+
+
 
 const appStore = useAppStore()
-function agregarSesion() {
+function crearSesion() {
     appStore.aplicacion.CrearSesion(newsesio.value.nombre)
+}
+
+function MensajeASesion(msj: string) {
+    appStore.aplicacion.MensajeASesion(msj)
+}
+
+function unirmeSesion(sesion: string) {
+    appStore.aplicacion.UnirmeSesion(sesion)
 }
 
 function cargarSesiones() {
@@ -38,33 +49,48 @@ function cargarSesiones() {
 </script>
 <template>
     <div>
-        <form @submit.prevent="agregarSesion">
+        <form @submit.prevent="crearSesion">
             <label for="nombre">Nombre de la sesión:</label>
             <input id="nombre" v-model="newsesio.nombre" required />
             <button type="submit">Iniciar Sesión</button>
             {{ appStore.estadoSesion }}
         </form>
-
         <table v-if="sesiones.length">
             <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Usuarios</th>
-                    <th>Estado</th>
-                    <th>Latitud</th>
-                    <th>Longitud</th>
-                </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Usuarios</th>
+                <th>Estado</th>
+                <th></th>
+            </tr>
             </thead>
             <tbody>
-                <tr v-for="(sesion, idx) in sesiones" :key="idx">
-                    <td>{{ sesion.nombre }}</td>
-                    <td>{{ sesion.usuarios }}</td>
-                    <td>{{ sesion.estado }}</td>
-                    <td>{{ sesion.latitud }}</td>
-                    <td>{{ sesion.longitud }}</td>
-                </tr>
+            <tr v-for="(sesion, idx) in sesiones" :key="idx">
+                <td>{{ sesion.nombre }}</td>
+                <td>{{ sesion.usuarios }}</td>
+                <td>{{ sesion.estado }}</td>
+                <td>
+                <button @click="unirmeSesion(sesion.nombre)">Unirse</button>
+                </td>
+            </tr>
             </tbody>
         </table>
+    </div>
+    <div style="margin-top: 2em;">
+        <form @submit.prevent="MensajeASesion(msj)">
+            <input
+                type="text"
+                v-model="msj"
+                placeholder="Escribe un mensaje"
+                required
+            />
+            <button type="submit">Enviar</button>
+        </form>
+        <div v-if="appStore.mensajes && appStore.mensajes.length" style="margin-top: 1em;">
+            <div v-for="(mensaje, idx) in appStore.mensajes" :key="idx" style="margin-bottom: 0.5em;">
+                {{ mensaje }}
+            </div>
+        </div>
     </div>
 </template>
 
