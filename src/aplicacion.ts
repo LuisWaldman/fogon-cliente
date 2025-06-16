@@ -162,7 +162,6 @@ export default class Aplicacion {
         console.error('Error al obtener el perfil del usuario:', error)
       })
   }
-
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
     if (!this.cliente) {

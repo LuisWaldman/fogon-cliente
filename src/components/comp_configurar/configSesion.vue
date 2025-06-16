@@ -11,6 +11,30 @@ function agregarSesion() {
     appStore.aplicacion.CrearSesion(newsesio.value.nombre)
 }
 
+function cargarSesiones() {
+    appStore.aplicacion.HTTPGet('sesiones')
+      .then((response) => response.json())
+    .then((data) => {
+        console.log('Sesiones obtenidas:', data)
+      sesiones.value = []
+      data.forEach((item: any) => {
+        console.log(item)
+        sesiones.value.push(new Sesion(
+        item.Nombre,
+        item.Usuarios,
+        item.Estado,
+        item.Latitud,
+        item.Longitud
+        ))
+      })
+      })
+      .catch((error) => {
+        console.error('Error al obtener el perfil del usuario:', error)
+      })
+  }
+  cargarSesiones()
+
+
 </script>
 <template>
     <div>
