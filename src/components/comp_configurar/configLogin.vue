@@ -39,7 +39,7 @@ function loginWithCredentials() {
   )
   const appStore = useAppStore()
   const loginData = new datosLogin(
-    'USERCLAVE',
+    'USERPASS',
     username.value,
     password.value,
     mantenerseLogeado.value,
