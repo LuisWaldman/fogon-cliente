@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
+import { UserSesion } from '../../modelo/userSesion'
 import { ref } from 'vue'
 
 const sesiones = ref([] as Sesion[])
+const ususario = ref([] as UserSesion[])
+
 const newsesio = ref(new Sesion('', 0, '', 0, 0))
 const msj = ref('')
 
@@ -50,6 +53,41 @@ function cargarSesiones() {
     .catch((error) => {
       console.error('Error al obtener el perfil del usuario:', error)
     })
+}
+
+
+function cargarUsuariosSesion() {
+
+  appStore.aplicacion
+    .HTTPGet('usersesion')
+    .then((response) => response.json())
+    
+    .then((data) => {
+      console.log('Perfiles obtenidos:', data)
+      ususario.value = []
+      data.forEach(
+        (item: {
+          Usuario: string
+          NombrePerfil: string
+          RolSesion: string
+        }) => {
+          ususario.value.push(
+            new UserSesion(
+              item.Usuario,
+              item.NombrePerfil,
+              item.RolSesion,
+            ),
+          )
+        },
+      )
+
+
+    })
+    .catch((error) => {
+      console.error('Error al obtener el perfil del usuario:', error)
+    })
+
+
 }
 cargarSesiones()
 </script>
@@ -104,6 +142,27 @@ cargarSesiones()
       >
         {{ mensaje }}
       </div>
+    </div>
+    <div>
+      <div><h3>Usuarios en la sesión</h3>
+        <button @click="cargarUsuariosSesion">Cargar Usuarios</button>
+        </div>
+      <table v-if="ususario.length">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Perfil</th>
+            <th>Rol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(user, idx) in ususario" :key="idx">
+            <td>{{ user.Usuario }}</td>
+            <td>{{ user.NombrePerfil }}</td>
+            <td>{{ user.RolSesion }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>
