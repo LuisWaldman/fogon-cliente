@@ -138,6 +138,11 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estadoSesion = 'error'
     })
+    this.cliente.setRolSesionHandler((mensaje: string) => {
+      console.log(`Rol de sesión recibido: ${mensaje}`)
+      const appStore = useAppStore()
+      appStore.rolSesion = mensaje
+    })
   }
 
   async HTTPGet(urlGet: string): Promise<Response> {
@@ -202,11 +207,15 @@ export default class Aplicacion {
       console.error('Cliente no conectado. No se puede iniciar sesión.')
       return
     }
+    const appStore = useAppStore()
+    appStore.rolSesion = 'default'
     this.cliente.CrearSesion(nombre, 3.54, 4.34)
   }
 
   UnirmeSesion(nombre: string): void {
     console.log(`Intentando crear sesion: ${nombre}`)
+    const appStore = useAppStore()
+    appStore.rolSesion = 'default'
     if (!this.cliente) {
       console.error('Cliente no conectado. No se puede iniciar sesión.')
       return

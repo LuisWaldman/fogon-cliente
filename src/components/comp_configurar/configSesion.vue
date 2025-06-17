@@ -49,12 +49,15 @@ function cargarSesiones() {
 </script>
 <template>
     <div>
-        <form @submit.prevent="crearSesion">
+        <div>
             <label for="nombre">Nombre de la sesión:</label>
             <input id="nombre" v-model="newsesio.nombre" required />
-            <button type="submit">Iniciar Sesión</button>
-            {{ appStore.estadoSesion }}
-        </form>
+            <button type="button" @click="crearSesion">Iniciar Sesión</button>
+            {{ appStore.estadoSesion }} - {{ appStore.rolSesion }}
+            <button type="button" @click="cargarSesiones">Actualizar Sesiones</button>
+            
+            
+        </div>
         <table v-if="sesiones.length">
             <thead>
             <tr>

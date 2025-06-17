@@ -39,6 +39,7 @@ export const useAppStore = defineStore('app', () => {
 
   const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
   const estadoSesion = ref<string>('no-conectado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
+  const rolSesion = ref<string>('default') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
 
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
   const estado = ref<string>('No iniciado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
@@ -76,6 +77,7 @@ export const useAppStore = defineStore('app', () => {
     estado,
     estadoConexion,
     estadoSesion,
+    rolSesion,
     perfil,
     estadoReproduccion,
     nroCancion,

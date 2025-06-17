@@ -8,6 +8,7 @@ interface ServerToClientEvents {
   ensesion: (sesion: string) => void
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void
+  rolSesion: (mensaje: string) => void
 }
 
 interface ClientToServerEvents {
@@ -16,6 +17,7 @@ interface ClientToServerEvents {
   unirmesesion(sesion: string): void
   crearsesion(sesion: string, latitud: number, longitud: number): void
   mensajeasesion: (mensaje: string) => void
+  salirsesion: () => void
 }
 
 export class ClienteSocket {
@@ -55,6 +57,15 @@ export class ClienteSocket {
     this.mensajesesionHandler = handler
   }
 
+  public SalirSesion(): void {
+    this.socket.emit('salirsesion')
+  }
+
+  private rolSesionHandler?: (mensaje: string) => void
+  public setRolSesionHandler(handler: (mensaje: string) => void): void {
+    this.rolSesionHandler = handler
+  }
+
   private urlserver: string
 
   constructor(urlserver: string) {
@@ -83,7 +94,12 @@ export class ClienteSocket {
     })
 
     socket.on('mensajesesion', (msj: string) => {
+      console.log('mensajesesion received with mensaje:', msj)
       this.mensajesesionHandler?.(msj)
+    })
+    socket.on('rolSesion', (mensaje: string) => {
+      console.log('rolSesion received with mensaje:', mensaje)
+      this.rolSesionHandler?.(mensaje)
     })
 
     socket.on('loginSuccess', (data: { token: string }) => {
