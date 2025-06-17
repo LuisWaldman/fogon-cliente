@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, type Ref } from 'vue'
+import { ref, watch, type Ref } from 'vue'
 //import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
@@ -12,6 +12,7 @@ import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
+import { Configuracion, VistaTocar } from '../modelo/configuracion'
 
 const pantalla = new Pantalla()
 onMounted(() => {
@@ -78,10 +79,147 @@ function claseVistaSecundaria() {
     ? 'col-' + (12 - pantalla.getConfiguracionPantalla().anchoPrincipal)
     : 'col-1'
 }
+const refEditSize = ref(false)
+const config = Configuracion.getInstance()
+const configPantalla = ref(pantalla.getConfiguracionPantalla())
+const exvistapantalla = ref(new VistaTocar())
+
+function editarPantalla() {
+  refEditSize.value = true
+  exvistapantalla.value.altoPantallaDescuento =
+    configPantalla.value.altoPantallaDescuento
+  exvistapantalla.value.anchoPrincipal = configPantalla.value.anchoPrincipal
+  exvistapantalla.value.tamanioAcorde = configPantalla.value.tamanioAcorde
+  exvistapantalla.value.tamanioAcordesolo =
+    configPantalla.value.tamanioAcordesolo
+  exvistapantalla.value.tamanioLetra = configPantalla.value.tamanioLetra
+  exvistapantalla.value.tamanioParte = configPantalla.value.tamanioParte
+  exvistapantalla.value.tamanioAcordeParte =
+    configPantalla.value.tamanioAcordeParte
+  exvistapantalla.value.factorScroll = configPantalla.value.factorScroll
+}
+
+watch(configPantalla.value, () => {
+  pantalla.setearEstilos()
+})
+
+function guardarConfiguracionPantalla() {
+  config.guardarEnLocalStorage()
+  refEditSize.value = false
+}
+
+function cancelarConfiguracionPantalla() {
+  refEditSize.value = false
+  configPantalla.value.altoPantallaDescuento =
+    exvistapantalla.value.altoPantallaDescuento
+  configPantalla.value.anchoPrincipal = exvistapantalla.value.anchoPrincipal
+  configPantalla.value.tamanioAcorde = exvistapantalla.value.tamanioAcorde
+  configPantalla.value.tamanioAcordesolo =
+    exvistapantalla.value.tamanioAcordesolo
+  configPantalla.value.tamanioLetra = exvistapantalla.value.tamanioLetra
+  configPantalla.value.tamanioParte = exvistapantalla.value.tamanioParte
+  configPantalla.value.tamanioAcordeParte =
+    exvistapantalla.value.tamanioAcordeParte
+  configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
+
+  pantalla.setearEstilos()
+}
 </script>
 
 <template>
   <div class="tocar-fluid">
+    <div class="editSize" v-if="refEditSize">
+      <div class="tituloeditSize">Tamaños</div>
+      <div class="config-row">
+        <span>Letra</span>
+        <input
+          type="range"
+          min="8"
+          max="140"
+          v-model.number="configPantalla.tamanioLetra"
+        />
+        <span>{{ configPantalla.tamanioLetra }} px</span>
+      </div>
+      <div class="config-row">
+        <span>Acorde</span>
+        <input
+          type="range"
+          min="8"
+          max="140"
+          v-model.number="configPantalla.tamanioAcorde"
+        />
+        <span>{{ configPantalla.tamanioAcorde }} px</span>
+      </div>
+      <div class="config-row">
+        <span>Acorde Solo</span>
+        <input
+          type="range"
+          min="8"
+          max="140"
+          v-model.number="configPantalla.tamanioAcordesolo"
+        />
+        <span>{{ configPantalla.tamanioAcordesolo }} px</span>
+      </div>
+      <div class="config-row">
+        <span>Parte</span>
+        <input
+          type="range"
+          min="8"
+          max="140"
+          v-model.number="configPantalla.tamanioParte"
+        />
+        <span>{{ configPantalla.tamanioParte }} px</span>
+      </div>
+      <div class="config-row">
+        <span>Acorde Parte</span>
+        <input
+          type="range"
+          min="8"
+          max="140"
+          v-model.number="configPantalla.tamanioAcordeParte"
+        />
+        <span>{{ configPantalla.tamanioAcordeParte }} px</span>
+      </div>
+      <div class="config-row">
+        <span>Ancho Pantalla Principal</span>
+        <input
+          type="range"
+          min="3"
+          max="11"
+          v-model.number="configPantalla.anchoPrincipal"
+        />
+        <span>{{ configPantalla.anchoPrincipal }} </span>
+      </div>
+      <div class="config-row">
+        <span>Descuento Alto Pantalla</span>
+        <input
+          type="range"
+          min="0"
+          max="900"
+          v-model.number="configPantalla.altoPantallaDescuento"
+        />
+        <span>{{ configPantalla.altoPantallaDescuento }} px</span>
+      </div>
+      <div class="config-row">
+        <span>Factor Scroll</span>
+        <input
+          type="range"
+          min="1"
+          max="10"
+          step="0.1"
+          v-model.number="configPantalla.factorScroll"
+        />
+        <span>{{ configPantalla.factorScroll }}</span>
+      </div>
+      <div class="botonera">
+        <button @click="guardarConfiguracionPantalla()" class="btnGuardar">
+          Guardar
+        </button>
+        <button @click="cancelarConfiguracionPantalla()" class="btnGuardar">
+          Cancelar
+        </button>
+      </div>
+    </div>
     <div
       class="pantallaPlay"
       :style="GetStylePantallaPlay()"
@@ -165,6 +303,11 @@ function claseVistaSecundaria() {
               Proximos Acordes</a
             >
           </li>
+
+          <li><hr class="dropdown-divider" /></li>
+          <li v-on:click="editarPantalla()">
+            <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -227,5 +370,37 @@ function claseVistaSecundaria() {
 .dropdown-superior-derecha {
   position: absolute;
   z-index: 10;
+}
+
+.editSize {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  font: 2em;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #888;
+  z-index: 1000;
+  border: 3px solid #8b4513;
+}
+
+.tituloeditSize {
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.config-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.botonera {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
 }
 </style>

@@ -122,6 +122,7 @@ function calcularresumenparte() {
   color: #888;
 }
 .secuencia {
+  font-size: var(--tamanio-parte);
   display: flex;
   flex-wrap: wrap;
   border: 1px solid;
@@ -130,7 +131,6 @@ function calcularresumenparte() {
   border-radius: 5px;
 }
 .ordendiv {
-  font-size: var(--tamanio-parte);
   margin: 1px;
   padding: 5px;
   border-radius: 5px;

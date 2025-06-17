@@ -110,6 +110,7 @@ defineExpose({ Actualizar })
       .. No cargada ..
     </div>
     <div
+      style="position: relative"
       class="componenteMusical"
       v-if="letras.length > 0 && cancion.letras.renglones.length > 0"
     >
