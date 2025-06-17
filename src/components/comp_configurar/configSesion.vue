@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 const sesiones = ref([] as Sesion[])
 const newsesio = ref(new Sesion('', 0, '', 0, 0))
@@ -27,18 +27,25 @@ function cargarSesiones() {
     .then((data) => {
       console.log('Sesiones obtenidas:', data)
       sesiones.value = []
-      data.forEach((item: any) => {
-        console.log(item)
-        sesiones.value.push(
-          new Sesion(
-            item.Nombre,
-            item.Usuarios,
-            item.Estado,
-            item.Latitud,
-            item.Longitud,
-          ),
-        )
-      })
+      data.forEach(
+        (item: {
+          Nombre: string
+          Usuarios: number
+          Estado: string
+          Latitud: number
+          Longitud: number
+        }) => {
+          sesiones.value.push(
+            new Sesion(
+              item.Nombre,
+              item.Usuarios,
+              item.Estado,
+              item.Latitud,
+              item.Longitud,
+            ),
+          )
+        },
+      )
     })
     .catch((error) => {
       console.error('Error al obtener el perfil del usuario:', error)

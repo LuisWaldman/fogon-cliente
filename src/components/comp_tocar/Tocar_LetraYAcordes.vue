@@ -2,7 +2,6 @@
 import { ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion'
 import { Pantalla } from '../../modelo/pantalla'
-import { Configuracion, VistaTocar } from '../../modelo/configuracion'
 
 const props = defineProps<{
   compas: number

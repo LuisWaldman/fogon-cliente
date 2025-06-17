@@ -23,11 +23,6 @@ interface ClientToServerEvents {
 export class ClienteSocket {
   private socket!: Socket<ServerToClientEvents, ClientToServerEvents>
 
-  private replicaHandler?: (datos: string[]) => void
-  public setreplicaHandler(handler: (datos: string[]) => void): void {
-    this.replicaHandler = handler
-  }
-
   private loginSuccessHandler?: (token: string) => void
   public setLoginSuccessHandler(handler: (token: string) => void): void {
     this.loginSuccessHandler = handler

@@ -81,52 +81,53 @@ function claseVistaSecundaria() {
 }
 const refEditSize = ref(false)
 const config = Configuracion.getInstance()
-const config_pantalla = ref(pantalla.getConfiguracionPantalla())
+const configPantalla = ref(pantalla.getConfiguracionPantalla())
 const exvistapantalla = ref(new VistaTocar())
 
 function editarPantalla() {
   refEditSize.value = true
-  exvistapantalla.value.altoPantallaDescuento = config_pantalla.value.altoPantallaDescuento
-  exvistapantalla.value.anchoPrincipal = config_pantalla.value.anchoPrincipal
-  exvistapantalla.value.tamanioAcorde = config_pantalla.value.tamanioAcorde
-  exvistapantalla.value.tamanioAcordesolo = config_pantalla.value.tamanioAcordesolo
-  exvistapantalla.value.tamanioLetra = config_pantalla.value.tamanioLetra
-  exvistapantalla.value.tamanioParte = config_pantalla.value.tamanioParte
-  exvistapantalla.value.tamanioAcordeParte = config_pantalla.value.tamanioAcordeParte
-  exvistapantalla.value.factorScroll = config_pantalla.value.factorScroll
+  exvistapantalla.value.altoPantallaDescuento =
+    configPantalla.value.altoPantallaDescuento
+  exvistapantalla.value.anchoPrincipal = configPantalla.value.anchoPrincipal
+  exvistapantalla.value.tamanioAcorde = configPantalla.value.tamanioAcorde
+  exvistapantalla.value.tamanioAcordesolo =
+    configPantalla.value.tamanioAcordesolo
+  exvistapantalla.value.tamanioLetra = configPantalla.value.tamanioLetra
+  exvistapantalla.value.tamanioParte = configPantalla.value.tamanioParte
+  exvistapantalla.value.tamanioAcordeParte =
+    configPantalla.value.tamanioAcordeParte
+  exvistapantalla.value.factorScroll = configPantalla.value.factorScroll
 }
 
-watch(config_pantalla.value, (newValue) => {
+watch(configPantalla.value, () => {
   pantalla.setearEstilos()
 })
 
-function guardarConfiguracionPantalla() {    
+function guardarConfiguracionPantalla() {
   config.guardarEnLocalStorage()
   refEditSize.value = false
 }
 
 function cancelarConfiguracionPantalla() {
   refEditSize.value = false
-  config_pantalla.value.altoPantallaDescuento = exvistapantalla.value.altoPantallaDescuento
-  config_pantalla.value.anchoPrincipal = exvistapantalla.value.anchoPrincipal
-  config_pantalla.value.tamanioAcorde = exvistapantalla.value.tamanioAcorde
-  config_pantalla.value.tamanioAcordesolo = exvistapantalla.value.tamanioAcordesolo
-  config_pantalla.value.tamanioLetra = exvistapantalla.value.tamanioLetra
-  config_pantalla.value.tamanioParte = exvistapantalla.value.tamanioParte
-  config_pantalla.value.tamanioAcordeParte = exvistapantalla.value.tamanioAcordeParte
-  config_pantalla.value.factorScroll = exvistapantalla.value.factorScroll
+  configPantalla.value.altoPantallaDescuento =
+    exvistapantalla.value.altoPantallaDescuento
+  configPantalla.value.anchoPrincipal = exvistapantalla.value.anchoPrincipal
+  configPantalla.value.tamanioAcorde = exvistapantalla.value.tamanioAcorde
+  configPantalla.value.tamanioAcordesolo =
+    exvistapantalla.value.tamanioAcordesolo
+  configPantalla.value.tamanioLetra = exvistapantalla.value.tamanioLetra
+  configPantalla.value.tamanioParte = exvistapantalla.value.tamanioParte
+  configPantalla.value.tamanioAcordeParte =
+    exvistapantalla.value.tamanioAcordeParte
+  configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
 
   pantalla.setearEstilos()
-
-  
 }
-
 </script>
 
 <template>
   <div class="tocar-fluid">
-    
-
     <div class="editSize" v-if="refEditSize">
       <div class="tituloeditSize">Tamaños</div>
       <div class="config-row">
@@ -135,9 +136,9 @@ function cancelarConfiguracionPantalla() {
           type="range"
           min="8"
           max="140"
-          v-model.number="config_pantalla.tamanioLetra"
+          v-model.number="configPantalla.tamanioLetra"
         />
-        <span>{{ config_pantalla.tamanioLetra }} px</span>
+        <span>{{ configPantalla.tamanioLetra }} px</span>
       </div>
       <div class="config-row">
         <span>Acorde</span>
@@ -145,9 +146,9 @@ function cancelarConfiguracionPantalla() {
           type="range"
           min="8"
           max="140"
-          v-model.number="config_pantalla.tamanioAcorde"
+          v-model.number="configPantalla.tamanioAcorde"
         />
-        <span>{{ config_pantalla.tamanioAcorde }} px</span>
+        <span>{{ configPantalla.tamanioAcorde }} px</span>
       </div>
       <div class="config-row">
         <span>Acorde Solo</span>
@@ -155,9 +156,9 @@ function cancelarConfiguracionPantalla() {
           type="range"
           min="8"
           max="140"
-          v-model.number="config_pantalla.tamanioAcordesolo"
+          v-model.number="configPantalla.tamanioAcordesolo"
         />
-        <span>{{ config_pantalla.tamanioAcordesolo }} px</span>
+        <span>{{ configPantalla.tamanioAcordesolo }} px</span>
       </div>
       <div class="config-row">
         <span>Parte</span>
@@ -165,9 +166,9 @@ function cancelarConfiguracionPantalla() {
           type="range"
           min="8"
           max="140"
-          v-model.number="config_pantalla.tamanioParte"
+          v-model.number="configPantalla.tamanioParte"
         />
-        <span>{{ config_pantalla.tamanioParte }} px</span>
+        <span>{{ configPantalla.tamanioParte }} px</span>
       </div>
       <div class="config-row">
         <span>Acorde Parte</span>
@@ -175,9 +176,9 @@ function cancelarConfiguracionPantalla() {
           type="range"
           min="8"
           max="140"
-          v-model.number="config_pantalla.tamanioAcordeParte"
+          v-model.number="configPantalla.tamanioAcordeParte"
         />
-        <span>{{ config_pantalla.tamanioAcordeParte }} px</span>
+        <span>{{ configPantalla.tamanioAcordeParte }} px</span>
       </div>
       <div class="config-row">
         <span>Ancho Pantalla Principal</span>
@@ -185,9 +186,9 @@ function cancelarConfiguracionPantalla() {
           type="range"
           min="3"
           max="11"
-          v-model.number="config_pantalla.anchoPrincipal"
+          v-model.number="configPantalla.anchoPrincipal"
         />
-        <span>{{ config_pantalla.anchoPrincipal }} </span>
+        <span>{{ configPantalla.anchoPrincipal }} </span>
       </div>
       <div class="config-row">
         <span>Descuento Alto Pantalla</span>
@@ -195,9 +196,9 @@ function cancelarConfiguracionPantalla() {
           type="range"
           min="0"
           max="900"
-          v-model.number="config_pantalla.altoPantallaDescuento"
+          v-model.number="configPantalla.altoPantallaDescuento"
         />
-        <span>{{ config_pantalla.altoPantallaDescuento }} px</span>
+        <span>{{ configPantalla.altoPantallaDescuento }} px</span>
       </div>
       <div class="config-row">
         <span>Factor Scroll</span>
@@ -206,21 +207,15 @@ function cancelarConfiguracionPantalla() {
           min="1"
           max="10"
           step="0.1"
-          v-model.number="config_pantalla.factorScroll"
+          v-model.number="configPantalla.factorScroll"
         />
-        <span>{{ config_pantalla.factorScroll }}</span>
+        <span>{{ configPantalla.factorScroll }}</span>
       </div>
       <div class="botonera">
-        <button
-          @click="guardarConfiguracionPantalla()"
-          class="btnGuardar"
-        >
+        <button @click="guardarConfiguracionPantalla()" class="btnGuardar">
           Guardar
         </button>
-        <button
-          @click="cancelarConfiguracionPantalla()"
-          class="btnGuardar"
-        >
+        <button @click="cancelarConfiguracionPantalla()" class="btnGuardar">
           Cancelar
         </button>
       </div>
@@ -309,17 +304,11 @@ function cancelarConfiguracionPantalla() {
             >
           </li>
 
-          
           <li><hr class="dropdown-divider" /></li>
           <li v-on:click="editarPantalla()">
-            <a class="dropdown-item" href="#">
-              
-              Ajustar Tamaños</a
-            >
+            <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
           </li>
         </ul>
-
-        
       </div>
     </div>
 
@@ -414,5 +403,4 @@ function cancelarConfiguracionPantalla() {
   justify-content: right;
   margin-top: 10px;
 }
-
 </style>
