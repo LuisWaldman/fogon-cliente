@@ -19,7 +19,6 @@ if (appStore.estado === 'conectado') {
   viendo.value = 'servidores'
 }
 
-
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
@@ -59,8 +58,13 @@ function clickOpcion(viendostr: string) {
               </a>
             </li>
 
-            <li @click="clickOpcion('sesion')"
-            v-if="appStore.estado === 'conectado' || appStore.estadoLogin === 'logueado'">
+            <li
+              @click="clickOpcion('sesion')"
+              v-if="
+                appStore.estado === 'conectado' ||
+                appStore.estadoLogin === 'logueado'
+              "
+            >
               <a
                 href="#"
                 class="nav-link text-white"
@@ -73,7 +77,6 @@ function clickOpcion(viendostr: string) {
             <li @click="clickOpcion('servidores')">
               <a
                 href="#"
-                
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'servidores' }"
               >

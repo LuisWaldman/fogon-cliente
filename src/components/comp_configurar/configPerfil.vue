@@ -40,12 +40,18 @@ onMounted(() => {
 <template>
   <div>
     <h1>Perfil</h1>
-    <div >
+    <div>
       <div class="controlPerfil">
         <div>
-          <div style="display: flex; flex-direction: column; align-items: center;">
-            
-            <input type="file" id="image" class="fileUp" @change="handleImageUpload" />
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <input
+              type="file"
+              id="image"
+              class="fileUp"
+              @change="handleImageUpload"
+            />
             <img
               :src="imageBase64"
               alt="Profile Image"
@@ -69,7 +75,7 @@ onMounted(() => {
         </div>
       </div>
       <div class="classBotonera">
-      <button @click="updateProfile">Actualizar</button>
+        <button @click="updateProfile">Actualizar</button>
       </div>
     </div>
   </div>
@@ -112,7 +118,7 @@ button:hover {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 200px
+  width: 200px;
 }
 
 .classBotonera {

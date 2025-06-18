@@ -12,7 +12,6 @@ const msj = ref('')
 
 import { watch } from 'vue'
 
-
 const appStore = useAppStore()
 function crearSesion() {
   appStore.aplicacion.CrearSesion(newsesio.value.nombre)
@@ -62,7 +61,6 @@ function cargarSesiones() {
     })
 }
 
-
 watch(
   () => appStore.estadoSesion,
   (nuevoEstado) => {
@@ -70,10 +68,8 @@ watch(
     if (nuevoEstado === 'conectado') {
       cargarUsuariosSesion()
     }
-  }
+  },
 )
-
-
 
 watch(
   () => appStore.rolSesion,
@@ -82,7 +78,7 @@ watch(
     if (nuevoEstado === 'conectado') {
       cargarUsuariosSesion()
     }
-  }
+  },
 )
 
 function cargarUsuariosSesion() {
@@ -120,8 +116,12 @@ if (appStore.estadoSesion === 'conectado') {
     <div class="nuevaSesion">
       <label for="nombre">Nombre de la sesión:</label>
       <input id="nombre" v-model="newsesio.nombre" required />
-      <button @click="crearSesion" v-if="appStore.estadoSesion!='conectado'">Iniciar Sesión</button>
-      <button @click="SalirSesion" v-if="appStore.estadoSesion=='conectado'">Salir de Sesión</button>
+      <button @click="crearSesion" v-if="appStore.estadoSesion != 'conectado'">
+        Iniciar Sesión
+      </button>
+      <button @click="SalirSesion" v-if="appStore.estadoSesion == 'conectado'">
+        Salir de Sesión
+      </button>
       <button @click="cargarSesiones">Actualizar Sesiones</button>
       {{ appStore.estadoSesion }} - {{ appStore.rolSesion }}
     </div>
@@ -140,61 +140,65 @@ if (appStore.estadoSesion === 'conectado') {
           <td>{{ sesion.usuarios }}</td>
           <td>{{ sesion.estado }}</td>
           <td>
-            <button v-if="appStore.estadoSesion!='conectado'" @click="unirmeSesion(sesion.nombre)">Unirse</button>
+            <button
+              v-if="appStore.estadoSesion != 'conectado'"
+              @click="unirmeSesion(sesion.nombre)"
+            >
+              Unirse
+            </button>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div v-if="appStore.estadoSesion === 'conectado'" style="margin-top: 5px ;" >
-<h1>Sesion</h1>
-    <div style="display: flex;  width: 100%; margin-top: 5px ;" >
-      
-<div style="width: 50%;">
-    <form @submit.prevent="MensajeASesion(msj)">
-      <input
-        type="text"
-        v-model="msj"
-        placeholder="Escribe un mensaje"
-        required
-      />
-      <button type="submit">Enviar</button>
-    </form>
-    <div
-      v-if="appStore.mensajes && appStore.mensajes.length"
-      style="margin-top: 1em"
-    >
-      <div
-        v-for="(mensaje, idx) in appStore.mensajes"
-        :key="idx"
-        style="margin-bottom: 0.5em"
-      >
-        {{ mensaje }}
+  <div v-if="appStore.estadoSesion === 'conectado'" style="margin-top: 5px">
+    <h1>Sesion</h1>
+    <div style="display: flex; width: 100%; margin-top: 5px">
+      <div style="width: 50%">
+        <form @submit.prevent="MensajeASesion(msj)">
+          <input
+            type="text"
+            v-model="msj"
+            placeholder="Escribe un mensaje"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+        <div
+          v-if="appStore.mensajes && appStore.mensajes.length"
+          style="margin-top: 1em"
+        >
+          <div
+            v-for="(mensaje, idx) in appStore.mensajes"
+            :key="idx"
+            style="margin-bottom: 0.5em"
+          >
+            {{ mensaje }}
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    <div style="width: 100%;">
-      <div style="display: flex; ">
-        <h3>Usuarios en la sesión</h3>
-        <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
+      <div style="width: 100%">
+        <div style="display: flex">
+          <h3>Usuarios en la sesión</h3>
+          <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
+        </div>
+        <table v-if="ususario.length" style="width: 100%">
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Perfil</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(user, idx) in ususario" :key="idx">
+              <td>{{ user.Usuario }}</td>
+              <td>{{ user.NombrePerfil }}</td>
+              <td>{{ user.RolSesion }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <table v-if="ususario.length" style="width: 100%;">
-        <thead>
-          <tr>
-            <th>Usuario</th>
-            <th>Perfil</th>
-            <th>Rol</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(user, idx) in ususario" :key="idx">
-            <td>{{ user.Usuario }}</td>
-            <td>{{ user.NombrePerfil }}</td>
-            <td>{{ user.RolSesion }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
     </div>
   </div>
 </template>
