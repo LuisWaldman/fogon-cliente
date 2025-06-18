@@ -244,6 +244,18 @@ export default class Aplicacion {
     this.cliente.UnirmeSesion(nombre)
   }
 
+  SalirSesion(): void {
+    console.log(`Intentando SalirSesion sesion`)
+    if (!this.cliente) {
+      console.error('Cliente no conectado. No se puede iniciar sesión.')
+      return
+    }
+    const appStore = useAppStore()
+    appStore.rolSesion = 'default'
+    appStore.estadoSesion = 'desconectado'
+    this.cliente.SalirSesion()
+  }
+
   MensajeASesion(msj: string): void {
     console.log(`Intentando crear sesion: ${msj}`)
     if (!this.cliente) {
