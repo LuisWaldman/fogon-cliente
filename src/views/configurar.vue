@@ -38,10 +38,13 @@ function clickOpcion(viendostr: string) {
               </a>
             </li>
 
-            <li @click="clickOpcion('perfil')">
+            <li @click="clickOpcion('perfil')"
+            v-if="appStore.estadoLogin == 'logueado'"
+            >
               <a
                 href="#"
-                v-if="appStore.estado === 'logueado'"
+                
+                 
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'perfil' }"
               >

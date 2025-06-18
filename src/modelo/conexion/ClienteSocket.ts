@@ -18,6 +18,7 @@ interface ClientToServerEvents {
   crearsesion(sesion: string, latitud: number, longitud: number): void
   mensajeasesion: (mensaje: string) => void
   salirsesion: () => void
+  logout: () => void
 }
 
 export class ClienteSocket {
@@ -54,6 +55,10 @@ export class ClienteSocket {
 
   public SalirSesion(): void {
     this.socket.emit('salirsesion')
+  }
+
+  public Logout(): void {
+    this.socket.emit('logout')
   }
 
   private rolSesionHandler?: (mensaje: string) => void

@@ -55,13 +55,11 @@ function cargarSesiones() {
     })
 }
 
-
 function cargarUsuariosSesion() {
-
   appStore.aplicacion
     .HTTPGet('usersesion')
     .then((response) => response.json())
-    
+
     .then((data) => {
       console.log('Perfiles obtenidos:', data)
       ususario.value = []
@@ -72,22 +70,14 @@ function cargarUsuariosSesion() {
           RolSesion: string
         }) => {
           ususario.value.push(
-            new UserSesion(
-              item.Usuario,
-              item.NombrePerfil,
-              item.RolSesion,
-            ),
+            new UserSesion(item.Usuario, item.NombrePerfil, item.RolSesion),
           )
         },
       )
-
-
     })
     .catch((error) => {
       console.error('Error al obtener el perfil del usuario:', error)
     })
-
-
 }
 cargarSesiones()
 </script>
@@ -144,9 +134,10 @@ cargarSesiones()
       </div>
     </div>
     <div>
-      <div><h3>Usuarios en la sesión</h3>
+      <div>
+        <h3>Usuarios en la sesión</h3>
         <button @click="cargarUsuariosSesion">Cargar Usuarios</button>
-        </div>
+      </div>
       <table v-if="ususario.length">
         <thead>
           <tr>

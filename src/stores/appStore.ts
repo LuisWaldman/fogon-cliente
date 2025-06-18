@@ -42,7 +42,8 @@ export const useAppStore = defineStore('app', () => {
   const rolSesion = ref<string>('default') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
 
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
-  const estado = ref<string>('No iniciado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
+  const estado = ref<string>('No iniciado')
+  const estadoLogin = ref<string>('')
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
     estado.value = nuevoEstado
@@ -77,6 +78,7 @@ export const useAppStore = defineStore('app', () => {
     estado,
     estadoConexion,
     estadoSesion,
+    estadoLogin,
     rolSesion,
     perfil,
     estadoReproduccion,
