@@ -52,12 +52,12 @@ function loginWithCredentials() {
 
 function logout() {
   mantenerseLogeado.value = false
-  
+
   const config = Configuracion.getInstance()
   if (config.loginDefault) {
     config.loginDefault.mantenerseLogeado = false
     config.guardarEnLocalStorage()
-  }  
+  }
   appStore.aplicacion.logout()
 }
 </script>
@@ -101,7 +101,10 @@ function logout() {
       </div>
 
       <div class="buttons">
-        <button @click="loginWithCredentials" v-if="appStore.estadoLogin == '' || appStore.estadoLogin == 'error'">
+        <button
+          @click="loginWithCredentials"
+          v-if="appStore.estadoLogin == '' || appStore.estadoLogin == 'error'"
+        >
           Iniciar Sesión
         </button>
         <button @click="logout" v-if="appStore.estadoLogin == 'logueado'">
