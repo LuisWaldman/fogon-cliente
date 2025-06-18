@@ -135,7 +135,7 @@ function cancelarConfiguracionPantalla() {
         <input
           type="range"
           min="8"
-          max="140"
+          max="40"
           v-model.number="configPantalla.tamanioLetra"
         />
         <span>{{ configPantalla.tamanioLetra }} px</span>
@@ -145,7 +145,7 @@ function cancelarConfiguracionPantalla() {
         <input
           type="range"
           min="8"
-          max="140"
+          max="40"
           v-model.number="configPantalla.tamanioAcorde"
         />
         <span>{{ configPantalla.tamanioAcorde }} px</span>
@@ -155,17 +155,17 @@ function cancelarConfiguracionPantalla() {
         <input
           type="range"
           min="8"
-          max="140"
+          max="40"
           v-model.number="configPantalla.tamanioAcordesolo"
         />
         <span>{{ configPantalla.tamanioAcordesolo }} px</span>
       </div>
       <div class="config-row">
-        <span>Parte</span>
+        <span>Secuencia</span>
         <input
           type="range"
           min="8"
-          max="140"
+          max="40"
           v-model.number="configPantalla.tamanioParte"
         />
         <span>{{ configPantalla.tamanioParte }} px</span>
@@ -175,7 +175,7 @@ function cancelarConfiguracionPantalla() {
         <input
           type="range"
           min="8"
-          max="140"
+          max="40"
           v-model.number="configPantalla.tamanioAcordeParte"
         />
         <span>{{ configPantalla.tamanioAcordeParte }} px</span>
@@ -379,7 +379,7 @@ function cancelarConfiguracionPantalla() {
   font: 2em;
   padding: 8px;
   border-radius: 10px;
-  background-color: #888;
+  background-color: rgba(136, 136, 136, 0.65);
   z-index: 1000;
   border: 3px solid #8b4513;
 }
@@ -397,10 +397,33 @@ function cancelarConfiguracionPantalla() {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #fff;
+  width: 100%;
 }
 .botonera {
   display: flex;
   justify-content: right;
   margin-top: 10px;
+}
+
+input[type='range'] {
+  width: 100%;
+}
+
+.editSize span {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .editSize {
+    left: 10%;
+    top: 10%;
+  }
+  .tituloeditSize {
+    font-size: 1.5em;
+  }
+  .config-row {
+    font-size: 1em;
+  }
 }
 </style>

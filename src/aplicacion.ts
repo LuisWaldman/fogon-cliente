@@ -7,6 +7,7 @@ import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 import { Noticia } from './modelo/noticia'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
+import { Perfil } from './modelo/perfil'
 
 export default class Aplicacion {
   reloj: Reloj = new Reloj()
@@ -143,6 +144,25 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.rolSesion = mensaje
     })
+    this.cliente.setLoginSuccessHandler((token: string) => {
+      console.log(`Inicio de sesión exitoso. Token: ${token}`)
+      const appStore = useAppStore()
+      appStore.estado = 'logueado'
+      appStore.estadoLogin = 'logueado'
+      this.token = token
+      this.getperfilUsuario()
+    })
+    this.cliente.setLoginFailedHandler((error: string) => {
+      console.error(`Error al iniciar sesión: ${error}`)
+      const appStore = useAppStore()
+      appStore.estadoLogin = 'error'
+    })
+
+    this.cliente.setMensajesesionHandler((msj: string) => {
+      console.log(`Mensaje de sesión recibido: ${msj}`)
+      const appStore = useAppStore()
+      appStore.mensajes.push(msj)
+    })
   }
 
   async HTTPGet(urlGet: string): Promise<Response> {
@@ -180,24 +200,25 @@ export default class Aplicacion {
   }
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
+    const appStore = useAppStore()
+    appStore.estadoLogin = 'init-login'
     if (!this.cliente) {
       console.error('Cliente no conectado. No se puede iniciar sesión.')
       return false
     }
-    this.cliente.setLoginSuccessHandler((token: string) => {
-      console.log(`Inicio de sesión exitoso. Token: ${token}`)
-      const appStore = useAppStore()
-      appStore.estado = 'logueado'
-      this.token = token
-      this.getperfilUsuario()
-    })
-
-    this.cliente.setMensajesesionHandler((msj: string) => {
-      console.log(`Mensaje de sesión recibido: ${msj}`)
-      const appStore = useAppStore()
-      appStore.mensajes.push(msj)
-    })
     this.cliente.login(datos)
+    return true
+  }
+
+  logout(): boolean {
+    const appStore = useAppStore()
+    appStore.estadoLogin = ''
+    appStore.perfil = new Perfil('', '', '', '', '')
+    if (!this.cliente) {
+      console.error('Cliente no conectado. ')
+      return false
+    }
+    this.cliente.Logout()
     return true
   }
 

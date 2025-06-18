@@ -39,31 +39,45 @@ onMounted(() => {
 
 <template>
   <div>
-    <h1>Edit Profile</h1>
-    <form @submit.prevent="updateProfile">
-      <div>
-        <label for="image">Profile Image:</label>
-        <input type="file" id="image" @change="handleImageUpload" />
-        <img
-          :src="imageBase64"
-          alt="Profile Image"
-          style="max-width: 200px; max-height: 200px"
-        />
+    <h1>Perfil</h1>
+    <div>
+      <div class="controlPerfil">
+        <div>
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <input
+              type="file"
+              id="image"
+              class="fileUp"
+              @change="handleImageUpload"
+            />
+            <img
+              :src="imageBase64"
+              alt="Profile Image"
+              style="max-width: 200px; max-height: 200px"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" v-model="perfil.nombre" />
+          </div>
+          <div>
+            <label for="description">Descripcion:</label>
+            <textarea id="description" v-model="perfil.descripcion"></textarea>
+          </div>
+          <div>
+            <label for="instrument">Instrumento:</label>
+            <input type="text" id="instrument" v-model="perfil.instrumento" />
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="username">Nombre:</label>
-        <input type="text" id="username" v-model="perfil.nombre" />
+      <div class="classBotonera">
+        <button @click="updateProfile">Actualizar</button>
       </div>
-      <div>
-        <label for="description">Descripcion:</label>
-        <textarea id="description" v-model="perfil.descripcion"></textarea>
-      </div>
-      <div>
-        <label for="instrument">Instrumento:</label>
-        <input type="text" id="instrument" v-model="perfil.instrumento" />
-      </div>
-      <button type="submit">Update Profile</button>
-    </form>
+    </div>
   </div>
 </template>
 
@@ -80,8 +94,8 @@ input,
 textarea {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc;
   border-radius: 4px;
+  color: white !important;
 }
 button {
   padding: 0.5rem 1rem;
@@ -93,5 +107,23 @@ button {
 }
 button:hover {
   background-color: #0056b3;
+}
+
+.controlPerfil {
+  display: flex;
+}
+
+.fileUp {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.classBotonera {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 </style>

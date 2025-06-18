@@ -7,7 +7,7 @@ const username = ref('')
 const password = ref('')
 const mantenerseLogeado = ref(false) // Added ref for "mantenerseLogeado"
 const loginMessages = ref([] as string[])
-import { GoogleLogin } from 'vue3-google-login'
+//import { GoogleLogin } from 'vue3-google-login'
 import { datosLogin } from '../../modelo/datosLogin'
 
 // Load saved login data on component mount
@@ -20,15 +20,7 @@ onMounted(() => {
   }
 })
 
-const handleSuccess = () => {
-  //console.log('Token:', response.credential)
-  // Enviar el token al backend en Golang
-}
-
-const handleError = () => {
-  console.error('Error al iniciar sesión con Google')
-}
-
+const appStore = useAppStore()
 function loginWithCredentials() {
   if (username.value.trim() === '' || password.value.trim() === '') {
     loginMessages.value.push('Por favor, ingrese usuario y contraseña.')
@@ -37,7 +29,6 @@ function loginWithCredentials() {
   loginMessages.value.push(
     `Intentando iniciar sesión como ${username.value}...`,
   )
-  const appStore = useAppStore()
   const loginData = new datosLogin(
     'USERPASS',
     username.value,
@@ -58,12 +49,27 @@ function loginWithCredentials() {
 
   // Aquí iría la lógica de autenticación con tu backend
 }
+
+function logout() {
+  mantenerseLogeado.value = false
+
+  const config = Configuracion.getInstance()
+  if (config.loginDefault) {
+    config.loginDefault.mantenerseLogeado = false
+    config.guardarEnLocalStorage()
+  }
+  appStore.aplicacion.logout()
+}
 </script>
 
 <template>
   <div class="config-login">
     <h2>Iniciar Sesión</h2>
-
+    <span
+      v-if="appStore.estadoLogin == 'error'"
+      style="font-size: 20px; color: red"
+      >Hay errores</span
+    >
     <div class="login-form">
       <div class="form-group">
         <label for="username">Usuario:</label>
@@ -95,10 +101,19 @@ function loginWithCredentials() {
       </div>
 
       <div class="buttons">
-        <button @click="loginWithCredentials">Iniciar Sesión</button>
+        <button
+          @click="loginWithCredentials"
+          v-if="appStore.estadoLogin == '' || appStore.estadoLogin == 'error'"
+        >
+          Iniciar Sesión
+        </button>
+        <button @click="logout" v-if="appStore.estadoLogin == 'logueado'">
+          Cerrar Sesion
+        </button>
+        <span v-if="appStore.estadoLogin == 'init-login'">Iniciando...</span>
       </div>
     </div>
-
+    <!-- 
     <div class="google-login">
       <p>O inicia sesión con:</p>
       <GoogleLogin @success="handleSuccess" @error="handleError" />
@@ -109,7 +124,7 @@ function loginWithCredentials() {
       <div v-for="(message, index) in loginMessages" :key="index">
         {{ message }}
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 

@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
+import { UserSesion } from '../../modelo/userSesion'
 import { ref } from 'vue'
 
 const sesiones = ref([] as Sesion[])
+const ususario = ref([] as UserSesion[])
+
 const newsesio = ref(new Sesion('', 0, '', 0, 0))
 const msj = ref('')
+
+import { watch } from 'vue'
 
 const appStore = useAppStore()
 function crearSesion() {
@@ -18,6 +23,10 @@ function MensajeASesion(msj: string) {
 
 function unirmeSesion(sesion: string) {
   appStore.aplicacion.UnirmeSesion(sesion)
+}
+
+function SalirSesion() {
+  appStore.aplicacion.SalirSesion()
 }
 
 function cargarSesiones() {
@@ -51,16 +60,70 @@ function cargarSesiones() {
       console.error('Error al obtener el perfil del usuario:', error)
     })
 }
+
+watch(
+  () => appStore.estadoSesion,
+  (nuevoEstado) => {
+    cargarSesiones()
+    if (nuevoEstado === 'conectado') {
+      cargarUsuariosSesion()
+    }
+  },
+)
+
+watch(
+  () => appStore.rolSesion,
+  (nuevoEstado) => {
+    cargarSesiones()
+    if (nuevoEstado === 'conectado') {
+      cargarUsuariosSesion()
+    }
+  },
+)
+
+function cargarUsuariosSesion() {
+  appStore.aplicacion
+    .HTTPGet('usersesion')
+    .then((response) => response.json())
+
+    .then((data) => {
+      console.log('Perfiles obtenidos:', data)
+      ususario.value = []
+      data.forEach(
+        (item: {
+          Usuario: string
+          NombrePerfil: string
+          RolSesion: string
+        }) => {
+          ususario.value.push(
+            new UserSesion(item.Usuario, item.NombrePerfil, item.RolSesion),
+          )
+        },
+      )
+    })
+    .catch((error) => {
+      console.error('Error al obtener el perfil del usuario:', error)
+    })
+}
 cargarSesiones()
+if (appStore.estadoSesion === 'conectado') {
+  cargarUsuariosSesion()
+}
 </script>
 <template>
   <div>
-    <div>
+    <h1>Sesiones</h1>
+    <div class="nuevaSesion">
       <label for="nombre">Nombre de la sesión:</label>
       <input id="nombre" v-model="newsesio.nombre" required />
-      <button type="button" @click="crearSesion">Iniciar Sesión</button>
+      <button @click="crearSesion" v-if="appStore.estadoSesion != 'conectado'">
+        Iniciar Sesión
+      </button>
+      <button @click="SalirSesion" v-if="appStore.estadoSesion == 'conectado'">
+        Salir de Sesión
+      </button>
+      <button @click="cargarSesiones">Actualizar Sesiones</button>
       {{ appStore.estadoSesion }} - {{ appStore.rolSesion }}
-      <button type="button" @click="cargarSesiones">Actualizar Sesiones</button>
     </div>
     <table v-if="sesiones.length">
       <thead>
@@ -77,32 +140,64 @@ cargarSesiones()
           <td>{{ sesion.usuarios }}</td>
           <td>{{ sesion.estado }}</td>
           <td>
-            <button @click="unirmeSesion(sesion.nombre)">Unirse</button>
+            <button
+              v-if="appStore.estadoSesion != 'conectado'"
+              @click="unirmeSesion(sesion.nombre)"
+            >
+              Unirse
+            </button>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div style="margin-top: 2em">
-    <form @submit.prevent="MensajeASesion(msj)">
-      <input
-        type="text"
-        v-model="msj"
-        placeholder="Escribe un mensaje"
-        required
-      />
-      <button type="submit">Enviar</button>
-    </form>
-    <div
-      v-if="appStore.mensajes && appStore.mensajes.length"
-      style="margin-top: 1em"
-    >
-      <div
-        v-for="(mensaje, idx) in appStore.mensajes"
-        :key="idx"
-        style="margin-bottom: 0.5em"
-      >
-        {{ mensaje }}
+  <div v-if="appStore.estadoSesion === 'conectado'" style="margin-top: 5px">
+    <h1>Sesion</h1>
+    <div style="display: flex; width: 100%; margin-top: 5px">
+      <div style="width: 50%">
+        <form @submit.prevent="MensajeASesion(msj)">
+          <input
+            type="text"
+            v-model="msj"
+            placeholder="Escribe un mensaje"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+        <div
+          v-if="appStore.mensajes && appStore.mensajes.length"
+          style="margin-top: 1em"
+        >
+          <div
+            v-for="(mensaje, idx) in appStore.mensajes"
+            :key="idx"
+            style="margin-bottom: 0.5em"
+          >
+            {{ mensaje }}
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%">
+        <div style="display: flex">
+          <h3>Usuarios en la sesión</h3>
+          <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
+        </div>
+        <table v-if="ususario.length" style="width: 100%">
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Perfil</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(user, idx) in ususario" :key="idx">
+              <td>{{ user.Usuario }}</td>
+              <td>{{ user.NombrePerfil }}</td>
+              <td>{{ user.RolSesion }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -122,5 +217,8 @@ td {
 }
 form {
   margin-bottom: 1em;
+}
+.nuevaSesion {
+  font-size: large;
 }
 </style>
