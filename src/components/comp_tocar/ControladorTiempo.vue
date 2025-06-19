@@ -68,14 +68,29 @@ function updateCompas(newCompas: number) {
         <i class="bi bi-stop-fill"></i>
       </button>
     </div>
-    <input
-      type="range"
-      min="0"
-      :max="appStore.cancion?.totalCompases"
-      v-model="currentCompas"
-      @input="updateCompas(currentCompas)"
-      class="rango_compas"
-    />
+    <table width="100%" style="table-layout: fixed; margin-left: 12px;" margin="0">
+      <tr>
+        <td :colspan="appStore.cancion?.totalCompases + 1">
+          <input
+            type="range"
+            min="0"
+            :max="appStore.cancion?.totalCompases"
+            v-model="currentCompas"
+            @input="updateCompas(currentCompas)"
+            class="rango_compas"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="text-align: center; border: 1px solid; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+          font-size: small;"
+          v-for="(i, a) in appStore.cancion.acordes.ordenPartes"
+          :key="a"
+        :colspan="appStore.cancion.acordes.partes[i].acordes.length + 1"
+        >{{ appStore.cancion.acordes.partes[i].nombre }}</td>
+      </tr>
+    </table>
 
     <span class="spnTiempo"
       >{{ tiempoActual }}
