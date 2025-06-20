@@ -19,14 +19,14 @@ watch(
 )
 
 onMounted(() => {
-  appStore.aplicacion.onMounted()
 
   const urlParams = new URLSearchParams(window.location.search)
   const cancion = urlParams.get('cancion')
-
-  if (cancion) {
-    appStore.aplicacion.tocar(cancion)
+  if (cancion) {    
+    appStore.aplicacion.SetCancion(cancion)
   }
+  appStore.aplicacion.onMounted()
+  
 })
 </script>
 

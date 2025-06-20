@@ -21,9 +21,6 @@ onMounted(() => {
 
 const appStore = useAppStore()
 
-const urlParams = new URLSearchParams(window.location.search)
-const nombreCancion = urlParams.get('cancion')
-appStore.tocar(nombreCancion as string)
 
 class vistaTocar {
   viendo: string = 'karaoke'

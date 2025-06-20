@@ -14,12 +14,15 @@ export default class Aplicacion {
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
+ 
+  SetCancion(cancionstr: string) {
+    localStorage.setItem('cancion_actual', cancionstr)
+  }
 
   async tocar(cancionstr: string): Promise<Cancion> {
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
     return helperArchivo.GetCancion(cancionstr)
   }
-
   async cargarNoticiasLocales() {
     const response = await fetch('/noticias/noticiaslocales.json')
     const data = await response.json()
@@ -42,6 +45,10 @@ export default class Aplicacion {
   onMounted() {
     console.log('Aplicacion montada')
     this.cargarNoticiasLocales()
+    if (localStorage.getItem('cancion_actual')) {
+      const appStore = useAppStore()
+      appStore.tocar(localStorage.getItem('cancion_actual') as string)
+    }
 
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
@@ -76,8 +83,10 @@ export default class Aplicacion {
     if (!appStore.cancion) return
 
     if (appStore.golpeDelCompas >= appStore.cancion.compasCantidad) {
+      console.log('Compás completado', appStore.compas)
       appStore.compas = appStore.compas + 1
       appStore.golpeDelCompas = 0
+      console.log('Compás actualizado', appStore.compas)
     }
   }
 
