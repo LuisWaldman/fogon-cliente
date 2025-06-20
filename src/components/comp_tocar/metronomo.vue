@@ -84,7 +84,7 @@ function cambiar(id: number, idx: number = 0) {
           :class="{
             beat_activo:
               n - 1 === appStore.golpeDelCompas &&
-              appStore.estado === 'tocando',
+              appStore.estadoReproduccion === 'Reproduciendo',
           }"
         >
           <span v-if="!midiCargado"> {{ n }}</span>

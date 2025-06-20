@@ -25,6 +25,17 @@ watch(
     }
   },
 )
+
+watch(
+  () => appStore.compas,
+  (newVal) => {
+          tiempoActual.value = tiempo.formatSegundos(
+        appStore.cancion.duracionCompas * appStore.compas,
+      )
+    currentCompas.value = newVal
+  }
+)
+
 function play() {
   appStore.aplicacion.play()
 }
@@ -39,7 +50,6 @@ function stop() {
 
 function updateCompas(newCompas: number) {
   appStore.aplicacion.updateCompas(newCompas)
-  currentCompas.value = newCompas
 }
 </script>
 
@@ -70,7 +80,7 @@ function updateCompas(newCompas: number) {
     </div>
     <table width="100%" style="table-layout: fixed; margin-left: 12px;" margin="0">
       <tr>
-        <td :colspan="appStore.cancion?.totalCompases + 1">
+        <td :colspan="appStore.cancion?.totalCompases">
           <input
             type="range"
             min="0"
@@ -87,7 +97,7 @@ function updateCompas(newCompas: number) {
           font-size: small;"
           v-for="(i, a) in appStore.cancion.acordes.ordenPartes"
           :key="a"
-        :colspan="appStore.cancion.acordes.partes[i].acordes.length + 1"
+        :colspan="appStore.cancion.acordes.partes[i].acordes.length"
         >{{ appStore.cancion.acordes.partes[i].nombre }}</td>
       </tr>
     </table>
