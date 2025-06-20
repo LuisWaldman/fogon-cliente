@@ -106,7 +106,7 @@ export default class Aplicacion {
     this.detenerReproduccion()
     const appStore = useAppStore()
     appStore.estadoReproduccion = 'pausado'
-    appStore.compas = -2
+    appStore.compas = -1
     appStore.golpeDelCompas = 0
   }
 

@@ -87,7 +87,7 @@ function updateCompas() {
         <td :colspan="appStore.cancion?.totalCompases">
           <input
             type="range"
-            min="0"
+            min="-1"
             :max="appStore.cancion?.totalCompases"
             v-model="currentCompas"
             @input="updateCompas()"
