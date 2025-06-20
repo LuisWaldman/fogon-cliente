@@ -25,7 +25,7 @@ export const useAppStore = defineStore('app', () => {
   const listaCanciones = ref<itemLista[]>([])
   const mensajes = ref<string[]>([])
   const nroCancion = ref<number>(1)
-  const compas = ref<number>(-2)
+  const compas = ref<number>(-1)
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
 
   const noticias = ref<Noticia[]>([])
@@ -61,15 +61,6 @@ export const useAppStore = defineStore('app', () => {
     estadoReproduccion.value = nuevoEstado
   }
 
-  // Método para modificar el compás
-  const actualizarCompas = (nuevoCompas: number) => {
-    compas.value = nuevoCompas
-  }
-
-  const actualizargolpeDelCompas = (nuevoGolpe: number) => {
-    golpeDelCompas.value = nuevoGolpe
-  }
-
   return {
     aplicacion,
     cancion,
@@ -91,7 +82,5 @@ export const useAppStore = defineStore('app', () => {
     actualizarEstado,
     actualizarEstadoConexion,
     actualizarEstadoReproduccion,
-    actualizarCompas,
-    actualizargolpeDelCompas,
   }
 })

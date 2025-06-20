@@ -69,7 +69,6 @@ export default class Aplicacion {
 
   iniciarReproduccion() {
     const appStore = useAppStore()
-    appStore.compas = appStore.compas + 1
     if (appStore.cancion) {
       this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
       this.reloj.setIniciaCicloHandler(this.onInicioCiclo.bind(this))
@@ -80,13 +79,9 @@ export default class Aplicacion {
   onInicioCiclo() {
     const appStore = useAppStore()
     appStore.golpeDelCompas = appStore.golpeDelCompas + 1
-    if (!appStore.cancion) return
-
     if (appStore.golpeDelCompas >= appStore.cancion.compasCantidad) {
-      console.log('Compás completado', appStore.compas)
       appStore.compas = appStore.compas + 1
       appStore.golpeDelCompas = 0
-      console.log('Compás actualizado', appStore.compas)
     }
   }
 
