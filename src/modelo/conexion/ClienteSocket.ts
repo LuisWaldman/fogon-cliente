@@ -9,9 +9,11 @@ interface ServerToClientEvents {
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
+  cancionActualizada: (cancion: string) => void
 }
 
 interface ClientToServerEvents {
+  actualizarCancion: (cancion: string) => void
   hola: (mensaje: string) => void
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
@@ -27,6 +29,13 @@ export class ClienteSocket {
   private loginSuccessHandler?: (token: string) => void
   public setLoginSuccessHandler(handler: (token: string) => void): void {
     this.loginSuccessHandler = handler
+  }
+
+  private cancionActualizadaHandler?: (cancion: string) => void
+  public setCancionActualizadaHandler(
+    handler: (cancion: string) => void,
+  ): void {
+    this.cancionActualizadaHandler = handler
   }
 
   private conexionStatusHandler?: (status: string) => void
@@ -93,6 +102,16 @@ export class ClienteSocket {
       this.conexionStatusHandler?.('conectado')
     })
 
+    socket.on('disconnect', (reason) => {
+      console.log('socket disconnected:', reason)
+      this.conexionStatusHandler?.('desconectado')
+    })
+
+    socket.on('cancionActualizada', (cancion: string) => {
+      console.log('cancionActualizada received with cancion:', cancion)
+      this.cancionActualizadaHandler?.(cancion)
+    })
+
     socket.on('mensajesesion', (msj: string) => {
       console.log('mensajesesion received with mensaje:', msj)
       this.mensajesesionHandler?.(msj)
@@ -136,5 +155,9 @@ export class ClienteSocket {
 
   login(datos: datosLogin) {
     this.socket.emit('login', datos.modo, datos.usuario, datos.password)
+  }
+
+  public actualizarCancion(cancion: string): void {
+    this.socket.emit('actualizarCancion', cancion)
   }
 }

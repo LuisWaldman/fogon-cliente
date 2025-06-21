@@ -16,6 +16,17 @@ export default class Aplicacion {
   token: string = ''
 
   async SetCancion(cancionstr: string) {
+    const appStore = useAppStore()
+    console.log('ESTADO', appStore.estadoSesion)
+    if (appStore.estadoSesion === 'conectado') {
+      console.log(`Actualizando canción en el servidor: ${cancionstr}`)
+      this.cliente?.actualizarCancion(cancionstr)
+    } else {
+      await this.CargarCancion(cancionstr)
+    }
+  }
+
+  private async CargarCancion(cancionstr: string) {
     localStorage.setItem('cancion_actual', cancionstr)
     const appStore = useAppStore()
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
@@ -154,6 +165,10 @@ export default class Aplicacion {
       console.error(`Error al iniciar sesión: ${error}`)
       const appStore = useAppStore()
       appStore.estadoLogin = 'error'
+    })
+    this.cliente.setCancionActualizadaHandler((cancion: string) => {
+      console.log(`Canción actualizada: ${cancion}`)
+      this.CargarCancion(cancion)
     })
 
     this.cliente.setMensajesesionHandler((msj: string) => {

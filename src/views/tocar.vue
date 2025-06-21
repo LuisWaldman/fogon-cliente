@@ -39,6 +39,7 @@ vista.value.proximosAcordes =
 const urlParams = new URLSearchParams(window.location.search)
 const cancion = urlParams.get('cancion')
 if (cancion) {
+  console.log('cancion', cancion)
   appStore.aplicacion.SetCancion(cancion)
 }
 
