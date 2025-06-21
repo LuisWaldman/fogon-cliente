@@ -5,7 +5,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useAppStore } from '../../stores/appStore'
 const appStore = useAppStore()
 
-
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
 const tiempoActual = ref('--:--')
@@ -25,11 +24,11 @@ watch(
   () => appStore.compas,
   (newVal) => {
     console.log(appStore.compas)
-          tiempoActual.value = tiempo.formatSegundos(
-        appStore.cancion.duracionCompas * appStore.compas,
-      )
+    tiempoActual.value = tiempo.formatSegundos(
+      appStore.cancion.duracionCompas * appStore.compas,
+    )
     currentCompas.value = newVal
-  }
+  },
 )
 
 function play() {
@@ -45,7 +44,6 @@ function stop() {
 }
 
 function updateCompas() {
-
   const toStr = currentCompas.value.toString()
   appStore.aplicacion.updateCompas(parseInt(toStr) + 1)
 }
@@ -76,29 +74,41 @@ function updateCompas() {
         <i class="bi bi-stop-fill"></i>
       </button>
     </div>
-    <table width="100%" style="table-layout: fixed; margin-left: 12px;" margin="0">
+    <table
+      width="100%"
+      style="table-layout: fixed; margin-left: 12px"
+      margin="0"
+    >
       <tbody>
-      <tr>
-        <td :colspan="appStore.cancion?.totalCompases">
-          <input
-            type="range"
-            min="-1"
-            :max="appStore.cancion?.totalCompases"
-            v-model="currentCompas"
-            @input="updateCompas()"
-            class="rango_compas"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td
-          style="text-align: center; border: 1px solid; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-          font-size: small;"
-          v-for="(i, a) in appStore.cancion.acordes.ordenPartes"
-          :key="a"
-        :colspan="appStore.cancion.acordes.partes[i].acordes.length"
-        >{{ appStore.cancion.acordes.partes[i].nombre }}</td>
-      </tr>
+        <tr>
+          <td :colspan="appStore.cancion?.totalCompases">
+            <input
+              type="range"
+              min="-1"
+              :max="appStore.cancion?.totalCompases"
+              v-model="currentCompas"
+              @input="updateCompas()"
+              class="rango_compas"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              text-align: center;
+              border: 1px solid;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-size: small;
+            "
+            v-for="(i, a) in appStore.cancion.acordes.ordenPartes"
+            :key="a"
+            :colspan="appStore.cancion.acordes.partes[i].acordes.length"
+          >
+            {{ appStore.cancion.acordes.partes[i].nombre }}
+          </td>
+        </tr>
       </tbody>
     </table>
 

@@ -66,15 +66,15 @@ function cambiar(id: number, idx: number = 0) {
 }
 </script>
 
-<template>    <div
-      class="divPrevia"
-      v-if="appStore.estadoReproduccion == 'Reproduciendo' && appStore.compas < 0"
-    >
-      Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
-    </div>
+<template>
+  <div
+    class="divPrevia"
+    v-if="appStore.estadoReproduccion == 'Reproduciendo' && appStore.compas < 0"
+  >
+    Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
+  </div>
 
   <div v-if="appStore.cancion">
-
     <div class="metronono">
       <div style="display: flex">
         <div

@@ -1,15 +1,12 @@
-
 <script setup>
 const props = defineProps({
-    texto: {
-        type: String,
-        required: true
-    }
-});
-
+  texto: {
+    type: String,
+    required: true,
+  },
+})
 </script>
 
-
 <template>
-    {{ texto.replace('TEXTO,', '') }}  
+  {{ texto.replace('TEXTO,', '') }}
 </template>

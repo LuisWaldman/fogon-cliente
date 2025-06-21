@@ -22,7 +22,6 @@ onMounted(() => {
 
 const appStore = useAppStore()
 
-
 class vistaTocar {
   viendo: string = 'karaoke'
   secuencia: boolean = true
@@ -31,9 +30,17 @@ class vistaTocar {
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
 vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
-vista.value.secuencia = localStorage.getItem('secuencia') == 'true' ? true : false
+vista.value.secuencia =
+  localStorage.getItem('secuencia') == 'true' ? true : false
 vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
-vista.value.proximosAcordes = localStorage.getItem('proximosAcordes') == 'true' ? true : false
+vista.value.proximosAcordes =
+  localStorage.getItem('proximosAcordes') == 'true' ? true : false
+
+const urlParams = new URLSearchParams(window.location.search)
+const cancion = urlParams.get('cancion')
+if (cancion) {
+  appStore.aplicacion.SetCancion(cancion)
+}
 
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
@@ -77,22 +84,21 @@ function claseVistaSecundaria() {
 }
 const refEditSize = ref(false)
 
-
 function editarPantalla() {
   refEditSize.value = true
 }
 
-
 function cerrareditarPantalla() {
   refEditSize.value = false
 }
-
 </script>
 
 <template>
   <div class="tocar-fluid">
-<editVista v-if="refEditSize" @cerrarEditSize="cerrareditarPantalla"></editVista>
-
+    <editVista
+      v-if="refEditSize"
+      @cerrarEditSize="cerrareditarPantalla"
+    ></editVista>
 
     <div
       class="pantallaPlay"
@@ -187,15 +193,9 @@ function cerrareditarPantalla() {
     </div>
 
     <div class="controladoresTiempo">
-      <ControladorTiempo
-        v-if="$route.path === '/tocar'"
-      >
-      </ControladorTiempo>
+      <ControladorTiempo v-if="$route.path === '/tocar'"> </ControladorTiempo>
 
-      <Metronomo
-        v-if="$route.path === '/tocar'"
-        ref="metronomeRef"
-      ></Metronomo>
+      <Metronomo v-if="$route.path === '/tocar'" ref="metronomeRef"></Metronomo>
     </div>
   </div>
 </template>

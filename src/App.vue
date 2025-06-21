@@ -7,26 +7,9 @@ const route = useRoute()
 const cancionref = ref(route.query.cancion)
 
 const appStore = useAppStore()
-// 🔄 Si la URL cambia, actualizar `cancion`
-watch(
-  () => route.query.cancion,
-  (nuevoValor) => {
-    if (nuevoValor) {
-      cancionref.value = nuevoValor
-      appStore.aplicacion.tocar(nuevoValor as string)
-    }
-  },
-)
 
 onMounted(() => {
-
-  const urlParams = new URLSearchParams(window.location.search)
-  const cancion = urlParams.get('cancion')
-  if (cancion) {    
-    appStore.aplicacion.SetCancion(cancion)
-  }
   appStore.aplicacion.onMounted()
-  
 })
 </script>
 

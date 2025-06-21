@@ -51,7 +51,7 @@ onMounted(() => {
               alt="Profile Image"
               style="max-width: 200px; max-height: 200px"
             />
-            
+
             <input
               type="file"
               id="image"

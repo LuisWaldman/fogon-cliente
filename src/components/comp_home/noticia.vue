@@ -13,19 +13,16 @@ const props = defineProps<{
 <template>
   <div class="noticia">
     <h2>{{ props.noticia.titulo }}</h2>
-    
+
     <rendernoticia :texto="props.noticia.texto"></rendernoticia>
     <span v-if="props.noticia.mastexto" @click="mostrarMas = !mostrarMas">
       {{ mostrarMas ? '-' : '+' }}
     </span>
     <rendernoticia
-    v-if="mostrarMas && props.noticia.mastexto"
+      v-if="mostrarMas && props.noticia.mastexto"
       :texto="props.noticia.mastexto"
     >
-
-
     </rendernoticia>
-    
   </div>
 </template>
 

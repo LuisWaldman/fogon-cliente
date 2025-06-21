@@ -14,15 +14,14 @@ export default class Aplicacion {
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
- 
-  SetCancion(cancionstr: string) {
+
+  async SetCancion(cancionstr: string) {
     localStorage.setItem('cancion_actual', cancionstr)
+    const appStore = useAppStore()
+    const helperArchivo = new HelperObtenerCancionURL('/canciones')
+    appStore.cancion = await helperArchivo.GetCancion(cancionstr)
   }
 
-  async tocar(cancionstr: string): Promise<Cancion> {
-    const helperArchivo = new HelperObtenerCancionURL('/canciones')
-    return helperArchivo.GetCancion(cancionstr)
-  }
   async cargarNoticiasLocales() {
     const response = await fetch('/noticias/noticiaslocales.json')
     const data = await response.json()
@@ -45,11 +44,6 @@ export default class Aplicacion {
   onMounted() {
     console.log('Aplicacion montada')
     this.cargarNoticiasLocales()
-    if (localStorage.getItem('cancion_actual')) {
-      const appStore = useAppStore()
-      appStore.tocar(localStorage.getItem('cancion_actual') as string)
-    }
-
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
         (s) => s.nombre === this.configuracion.conectarServerDefault,
