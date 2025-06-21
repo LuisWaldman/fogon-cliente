@@ -9,10 +9,8 @@
       ><img src="https://fi.uba.ar/images/logo-fiuba.png"
     /></A>
 
-    <p></p>
-    +
     <p>
-      github:
+      github:</p>
       <ul>
         <li>
           <a href="https://github.com/LuisWaldman/fogon-cliente" target="_blank" rel="noopener">Cliente</a>
@@ -23,7 +21,7 @@
           
       </ul>
       
-    </p>
+    
     
   </div>
 </template>

@@ -5,11 +5,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useAppStore } from '../../stores/appStore'
 const appStore = useAppStore()
 
-defineProps<{
-  compas: number
-  nro_cancion: number
-  total_canciones: number
-}>()
 
 const tiempo = new Tiempo()
 const currentCompas = ref(0)

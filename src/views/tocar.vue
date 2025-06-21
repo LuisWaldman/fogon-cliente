@@ -312,20 +312,12 @@ function cancelarConfiguracionPantalla() {
     <div class="controladoresTiempo">
       <ControladorTiempo
         v-if="$route.path === '/tocar'"
-        :nro_cancion="1"
-        :total_canciones="1"
-        :compas="appStore.compas"
-        :estado="appStore.estado"
       >
       </ControladorTiempo>
 
       <Metronomo
         v-if="$route.path === '/tocar'"
-        :compas="appStore.compas"
-        :estado="appStore.estado"
         ref="metronomeRef"
-        :bpm_encompas="appStore.golpeDelCompas"
-        :cancion="appStore.cancion"
       ></Metronomo>
     </div>
   </div>

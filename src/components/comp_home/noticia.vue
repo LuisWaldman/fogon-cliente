@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Noticia } from '../../modelo/noticia'
+import rendernoticia from './rendernoticia.vue'
 
 const mostrarMas = ref(false)
 
@@ -10,18 +11,21 @@ const props = defineProps<{
 </script>
 
 <template>
-  <Cancion></Cancion>
   <div class="noticia">
     <h2>{{ props.noticia.titulo }}</h2>
-    <div v-html="props.noticia.texto"></div>
-
+    
+    <rendernoticia :texto="props.noticia.texto"></rendernoticia>
     <span v-if="props.noticia.mastexto" @click="mostrarMas = !mostrarMas">
       {{ mostrarMas ? '-' : '+' }}
     </span>
-    <div
-      v-if="mostrarMas && props.noticia.mastexto"
-      v-html="props.noticia.mastexto"
-    ></div>
+    <rendernoticia
+    v-if="mostrarMas && props.noticia.mastexto"
+      :texto="props.noticia.mastexto"
+    >
+
+
+    </rendernoticia>
+    
   </div>
 </template>
 
