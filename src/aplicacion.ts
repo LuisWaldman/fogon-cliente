@@ -11,7 +11,6 @@ import { Perfil } from './modelo/perfil'
 import { reproductorConectado } from './modelo/reproductorConectado'
 
 export default class Aplicacion {
-  reloj: Reloj = new Reloj()
   reproductor: Reproductor = new Reproductor()
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
@@ -56,51 +55,20 @@ export default class Aplicacion {
   }
 
   updateCompas(compas: number) {
-    const appStore = useAppStore()
-    appStore.compas = compas
-  }
-
-  iniciarReproduccion() {
-    const appStore = useAppStore()
-    if (appStore.cancion) {
-      this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
-      this.reloj.setIniciaCicloHandler(this.onInicioCiclo.bind(this))
-      this.reloj.iniciar()
-    }
-  }
-
-  onInicioCiclo() {
-    const appStore = useAppStore()
-    appStore.golpeDelCompas = appStore.golpeDelCompas + 1
-    if (appStore.golpeDelCompas >= appStore.cancion.compasCantidad) {
-      appStore.compas = appStore.compas + 1
-      appStore.golpeDelCompas = 0
-    }
-  }
-
-  detenerReproduccion() {
-    const appStore = useAppStore()
-    appStore.estadoReproduccion = 'pausado'
-    this.reloj.pausar()
+    this.reproductor.updateCompas(compas)
   }
 
   play() {
-    const appStore = useAppStore()
-    appStore.estadoReproduccion = 'Reproduciendo'
-    this.iniciarReproduccion()
+    this.reproductor.iniciarReproduccion()
   }
 
   pause() {
-    this.detenerReproduccion()
-    const appStore = useAppStore()
-    appStore.golpeDelCompas = 0
+    this.reproductor.detenerReproduccion()
   }
 
   stop() {
-    this.detenerReproduccion()
-    const appStore = useAppStore()
-    appStore.compas = -1
-    appStore.golpeDelCompas = 0
+    this.reproductor.detenerReproduccion()
+    this.reproductor.updateCompas(0)
   }
 
   constructor() {
@@ -253,6 +221,7 @@ export default class Aplicacion {
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
     appStore.estadoSesion = 'desconectado'
+    this.reproductor = new Reproductor()
     this.cliente.SalirSesion()
   }
 

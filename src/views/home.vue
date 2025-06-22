@@ -8,7 +8,7 @@ const appStore = useAppStore()
 <template>
   <div
     class="estadoTocando"
-    v-if="appStore.estadoReproduccion === 'Reproduciendo'"
+    v-if="appStore.estadoReproduccion === 'Reproduciendo' || appStore.estadoSesion === 'conectado'"
   >
     <router-link class="tocar" to="/tocar"> 🎸 Volver al tema </router-link>
   </div>

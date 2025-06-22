@@ -48,7 +48,7 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
-  const estadoReproduccion = ref<string>('Pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
+  const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
   // Método para actualizar el estado de reproducción
   const actualizarEstadoReproduccion = (nuevoEstado: string) => {
     estadoReproduccion.value = nuevoEstado

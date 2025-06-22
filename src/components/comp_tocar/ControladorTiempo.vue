@@ -55,7 +55,7 @@ function updateCompas() {
       <button
         class="boton_controller boton_controllerplay"
         @click="play"
-        v-if="appStore.estadoReproduccion !== 'Reproduciendo'"
+        v-if="appStore.estadoReproduccion === 'pausado'"
       >
         <i class="bi bi-play-fill"></i>
       </button>
