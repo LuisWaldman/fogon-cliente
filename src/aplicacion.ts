@@ -1,7 +1,5 @@
-import type { Cancion } from './modelo/cancion'
 import { useAppStore } from './stores/appStore'
 import { Reproductor } from './modelo/reproductor'
-import { Reloj } from './modelo/reloj'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'

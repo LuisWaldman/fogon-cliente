@@ -10,11 +10,16 @@ interface ServerToClientEvents {
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
   cancionActualizada: (cancion: string) => void
+  reproduccionStatus: (status: string, desde: string) => void
+  compasActualizado: (compas: number) => void
 }
 
 interface ClientToServerEvents {
   actualizarCancion: (cancion: string) => void
-  hola: (mensaje: string) => void
+  iniciarReproduccion(delayms: number): void
+  detenerReproduccion: () => void
+  actualizarCompas: (compas: number) => void
+
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
   crearsesion(sesion: string, latitud: number, longitud: number): void
@@ -73,6 +78,18 @@ export class ClienteSocket {
   private rolSesionHandler?: (mensaje: string) => void
   public setRolSesionHandler(handler: (mensaje: string) => void): void {
     this.rolSesionHandler = handler
+  }
+
+  private reproduccionStatusHandler?: (status: string, desde: string) => void
+  public setReproduccionStatusHandler(
+    handler: (status: string, desde: string) => void,
+  ): void {
+    this.reproduccionStatusHandler = handler
+  }
+
+  private compasActualizadoHandler?: (compas: number) => void
+  public setCompasActualizadoHandler(handler: (compas: number) => void): void {
+    this.compasActualizadoHandler = handler
   }
 
   private urlserver: string
@@ -139,6 +156,20 @@ export class ClienteSocket {
       this.sesionFailedHandler?.(error)
     })
 
+    socket.on('reproduccionStatus', (status: string, desde: string) => {
+      console.log(
+        'reproduccionStatus received with status:',
+        status,
+        'desde:',
+        desde,
+      )
+      this.reproduccionStatusHandler?.(status, desde)
+    })
+    socket.on('compasActualizado', (compas: number) => {
+      console.log('compasActualizado received with compas:', compas)
+      this.compasActualizadoHandler?.(compas)
+    })
+
     this.socket = socket
   }
 
@@ -155,6 +186,16 @@ export class ClienteSocket {
 
   login(datos: datosLogin) {
     this.socket.emit('login', datos.modo, datos.usuario, datos.password)
+  }
+
+  public iniciarReproduccion(delayms: number): void {
+    this.socket.emit('iniciarReproduccion', delayms)
+  }
+  public detenerReproduccion(): void {
+    this.socket.emit('detenerReproduccion')
+  }
+  public actualizarCompas(compas: number): void {
+    this.socket.emit('actualizarCompas', compas)
   }
 
   public actualizarCancion(cancion: string): void {

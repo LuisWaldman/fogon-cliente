@@ -67,10 +67,7 @@ function cambiar(id: number, idx: number = 0) {
 </script>
 
 <template>
-  <div
-    class="divPrevia"
-    v-if="appStore.estadoReproduccion == 'Iniciando'"
-  >
+  <div class="divPrevia" v-if="appStore.estadoReproduccion == 'Iniciando'">
     Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
   </div>
   <div v-if="appStore.cancion">
