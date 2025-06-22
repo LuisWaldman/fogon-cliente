@@ -1,12 +1,12 @@
 // src/cancion.ts
 export class Reloj {
-  public duracionCompas: number = 2200 // Duración de un compás en milisegundos
+  public duracionIntervalo: number = 2200 // Duración de un compás en milisegundos
   public estado: 'pausa' | 'iniciando' | 'tocando' = 'pausa'
 
-  private intervalId: number | null
+  private timeoutId: number | null
 
   constructor() {
-    this.intervalId = null
+    this.timeoutId = null
   }
   private IniciaHandler?: () => void
   private IniciaCicloHandler?: () => void
@@ -18,11 +18,20 @@ export class Reloj {
     this.IniciaCicloHandler = handler
   }
 
-  public setDuracion(duracionCompas: number) {
-    this.duracionCompas = duracionCompas
+  public setDuracion(duracion: number) {
+    this.duracionIntervalo = duracion
   }
 
   iniciado: boolean = false
+
+  private ciclo = () => {
+    if (this.IniciaCicloHandler) {
+      this.IniciaCicloHandler()
+    }
+    if (this.iniciado) {
+      this.timeoutId = setTimeout(this.ciclo, this.duracionIntervalo)
+    }
+  }
 
   public iniciar() {
     if (!this.iniciado) {
@@ -30,19 +39,15 @@ export class Reloj {
       if (this.IniciaHandler) {
         this.IniciaHandler()
       }
+      this.timeoutId = setTimeout(this.ciclo, this.duracionIntervalo)
     }
-
-    this.intervalId = setInterval(() => {
-      if (this.IniciaCicloHandler) {
-        this.IniciaCicloHandler()
-      }
-    }, this.duracionCompas)
   }
 
   pausar() {
-    if (this.intervalId) {
-      clearInterval(this.intervalId)
-      this.intervalId = null
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId)
+      this.timeoutId = null
     }
+    this.iniciado = false
   }
 }

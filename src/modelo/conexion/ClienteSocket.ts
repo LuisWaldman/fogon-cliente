@@ -10,16 +10,16 @@ interface ServerToClientEvents {
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
   cancionActualizada: (cancion: string) => void
-  reproduccionStatus: (status: string, desde: string) => void
+  cancionIniciada: (compas: number, desde: string) => void
+  cancionDetenida: () => void
   compasActualizado: (compas: number) => void
 }
 
 interface ClientToServerEvents {
   actualizarCancion: (cancion: string) => void
-  iniciarReproduccion(delayms: number): void
+  iniciarReproduccion(compas: number, delayms: number): void
   detenerReproduccion: () => void
   actualizarCompas: (compas: number) => void
-
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
   crearsesion(sesion: string, latitud: number, longitud: number): void
@@ -67,6 +67,18 @@ export class ClienteSocket {
     this.mensajesesionHandler = handler
   }
 
+  private cancionIniciadaHandler?: (compas: number, desde: string) => void
+  public setCancionIniciadaHandler(
+    handler: (compas: number, desde: string) => void,
+  ): void {
+    this.cancionIniciadaHandler = handler
+  }
+
+  private cancionDetenidaHandler?: () => void
+  public setCancionDetenidaHandler(handler: () => void): void {
+    this.cancionDetenidaHandler = handler
+  }
+
   public SalirSesion(): void {
     this.socket.emit('salirsesion')
   }
@@ -78,13 +90,6 @@ export class ClienteSocket {
   private rolSesionHandler?: (mensaje: string) => void
   public setRolSesionHandler(handler: (mensaje: string) => void): void {
     this.rolSesionHandler = handler
-  }
-
-  private reproduccionStatusHandler?: (status: string, desde: string) => void
-  public setReproduccionStatusHandler(
-    handler: (status: string, desde: string) => void,
-  ): void {
-    this.reproduccionStatusHandler = handler
   }
 
   private compasActualizadoHandler?: (compas: number) => void
@@ -156,15 +161,20 @@ export class ClienteSocket {
       this.sesionFailedHandler?.(error)
     })
 
-    socket.on('reproduccionStatus', (status: string, desde: string) => {
+    socket.on('cancionIniciada', (compas: number, desde: string) => {
       console.log(
-        'reproduccionStatus received with status:',
-        status,
+        'cancionIniciada received with compas:',
+        compas,
         'desde:',
         desde,
       )
-      this.reproduccionStatusHandler?.(status, desde)
+      this.cancionIniciadaHandler?.(compas, desde)
     })
+    socket.on('cancionDetenida', () => {
+      console.log('cancionDetenida received')
+      this.cancionDetenidaHandler?.()
+    })
+
     socket.on('compasActualizado', (compas: number) => {
       console.log('compasActualizado received with compas:', compas)
       this.compasActualizadoHandler?.(compas)
@@ -188,8 +198,14 @@ export class ClienteSocket {
     this.socket.emit('login', datos.modo, datos.usuario, datos.password)
   }
 
-  public iniciarReproduccion(delayms: number): void {
-    this.socket.emit('iniciarReproduccion', delayms)
+  public iniciarReproduccion(compas: number, delayms: number): void {
+    console.log(
+      'Iniciando reproducción con compás:',
+      compas,
+      'y delay:',
+      delayms,
+    )
+    this.socket.emit('iniciarReproduccion', compas, delayms)
   }
   public detenerReproduccion(): void {
     this.socket.emit('detenerReproduccion')
