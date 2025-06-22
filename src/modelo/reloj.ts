@@ -10,7 +10,6 @@ export class Reloj {
   }
   private IniciaHandler?: () => void
   private IniciaCicloHandler?: () => void
-
   public setIniciaHandler(handler: () => void) {
     this.IniciaHandler = handler
   }
@@ -34,7 +33,6 @@ export class Reloj {
     }
 
     this.intervalId = setInterval(() => {
-      console.log('Iniciando ciclo')
       if (this.IniciaCicloHandler) {
         this.IniciaCicloHandler()
       }

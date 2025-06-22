@@ -1,6 +1,6 @@
-import { HelperObtenerCancionURL } from './helpers/HelperObtenerCancionURL'
 import type { Cancion } from './modelo/cancion'
 import { useAppStore } from './stores/appStore'
+import { Reproductor } from './modelo/reproductor'
 import { Reloj } from './modelo/reloj'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
@@ -8,29 +8,17 @@ import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 import { Noticia } from './modelo/noticia'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
+import { reproductorConectado } from './modelo/reproductorConectado'
 
 export default class Aplicacion {
   reloj: Reloj = new Reloj()
+  reproductor: Reproductor = new Reproductor()
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
 
   async SetCancion(cancionstr: string) {
-    const appStore = useAppStore()
-    console.log('ESTADO', appStore.estadoSesion)
-    if (appStore.estadoSesion === 'conectado') {
-      console.log(`Actualizando canción en el servidor: ${cancionstr}`)
-      this.cliente?.actualizarCancion(cancionstr)
-    } else {
-      await this.CargarCancion(cancionstr)
-    }
-  }
-
-  private async CargarCancion(cancionstr: string) {
-    localStorage.setItem('cancion_actual', cancionstr)
-    const appStore = useAppStore()
-    const helperArchivo = new HelperObtenerCancionURL('/canciones')
-    appStore.cancion = await helperArchivo.GetCancion(cancionstr)
+    this.reproductor.SetCancion(cancionstr)
   }
 
   async cargarNoticiasLocales() {
@@ -91,6 +79,8 @@ export default class Aplicacion {
   }
 
   detenerReproduccion() {
+    const appStore = useAppStore()
+    appStore.estadoReproduccion = 'pausado'
     this.reloj.pausar()
   }
 
@@ -103,14 +93,12 @@ export default class Aplicacion {
   pause() {
     this.detenerReproduccion()
     const appStore = useAppStore()
-    appStore.estadoReproduccion = 'pausado'
     appStore.golpeDelCompas = 0
   }
 
   stop() {
     this.detenerReproduccion()
     const appStore = useAppStore()
-    appStore.estadoReproduccion = 'pausado'
     appStore.compas = -1
     appStore.golpeDelCompas = 0
   }
@@ -142,6 +130,9 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
+      if (this.cliente != null) {
+        this.reproductor = new reproductorConectado(this.cliente)
+      }
     })
     this.cliente.setSesionFailedHandler((error: string) => {
       console.error(`Error al crear sesión: ${error}`)
@@ -165,10 +156,6 @@ export default class Aplicacion {
       console.error(`Error al iniciar sesión: ${error}`)
       const appStore = useAppStore()
       appStore.estadoLogin = 'error'
-    })
-    this.cliente.setCancionActualizadaHandler((cancion: string) => {
-      console.log(`Canción actualizada: ${cancion}`)
-      this.CargarCancion(cancion)
     })
 
     this.cliente.setMensajesesionHandler((msj: string) => {

@@ -6,9 +6,9 @@ const props = defineProps({
   },
 })
 
-const prop_entexto = props.texto.split(',')
+const propEntexto = props.texto.split(',')
 var misProps = []
-prop_entexto.forEach((item) => {
+propEntexto.forEach((item) => {
   const [key, value] = item.split('=')
   misProps[key] = value
 })
