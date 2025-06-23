@@ -7,8 +7,13 @@ import { ref } from 'vue'
 const sesiones = ref([] as Sesion[])
 const ususario = ref([] as UserSesion[])
 
-const newsesio = ref(new Sesion('', 0, '', 0, 0))
-const msj = ref('')
+const newsesio = ref(new Sesion('default', 0, '', 0, 0))
+const sesionDefault = ref('')
+sesionDefault.value = localStorage.getItem('sesionDefault') || ''
+function setSesionDefault() {
+  localStorage.setItem('sesionDefault', newsesio.value.nombre)
+  sesionDefault.value = newsesio.value.nombre
+}
 
 import { watch } from 'vue'
 
@@ -122,6 +127,14 @@ if (appStore.estadoSesion === 'conectado') {
       <button @click="SalirSesion" v-if="appStore.estadoSesion == 'conectado'">
         Salir de Sesión
       </button>
+      <button
+        @click="setSesionDefault"
+        :disabled="newsesio.nombre === sesionDefault"
+        v-if="appStore.estadoSesion == 'conectado'"
+      >
+        Set Default
+      </button>
+
       <button @click="cargarSesiones">Actualizar Sesiones</button>
       {{ appStore.estadoSesion }} - {{ appStore.rolSesion }}
     </div>

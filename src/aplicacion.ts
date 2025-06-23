@@ -92,7 +92,7 @@ export default class Aplicacion {
     this.cliente.connectar()
     console.log(`Conectando al servidor: ${url}`)
     this.cliente.setEnsesionHandler((sesionCreada: string) => {
-      console.log(`Sesión creada exitosamente: ${sesionCreada}`)
+      console.log(`En sesion: ${sesionCreada}`)
       const appStore = useAppStore()
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
@@ -117,6 +117,10 @@ export default class Aplicacion {
       appStore.estadoLogin = 'logueado'
       this.token = token
       this.getperfilUsuario()
+      const sesiondef = localStorage.getItem('sesionDefault') || ''
+      if (sesiondef !== '') {
+        this.UnirmeSesion(sesiondef)
+      }
     })
     this.cliente.setLoginFailedHandler((error: string) => {
       console.error(`Error al iniciar sesión: ${error}`)
