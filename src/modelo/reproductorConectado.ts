@@ -15,10 +15,13 @@ export class ReproductorConectado extends Reproductor {
       this.CargarCancion(cancion)
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: string) => {
-      console.log(`Reproducción iniciada desde compás ${compas} por ${desde}`)
+      // Obtener la hora estándar mundial (UTC) similar a NTP
+      const momento = new Date(Date.now())
+      console.log(
+        `${momento} : Reproducción iniciada desde compás ${compas} por ${desde}`,
+      )
       this.momentoInicio = new Date(desde)
       this.compasInicio = compas
-      const momento = new Date()
       this.setearMomento(momento, this.momentoInicio)
       const appStore = useAppStore()
       if (appStore.cancion) {
@@ -66,6 +69,9 @@ export class ReproductorConectado extends Reproductor {
       this.reloj.setDelay(delay)
       appStore.golpeDelCompas = 3 - (golpe % appStore.cancion?.compasCantidad)
     }
+    console.log(
+      `Estado de reproducción: ${appStore.estadoReproduccion}, Compás: ${appStore.compas}, Golpe del compás: ${appStore.golpeDelCompas}, Delay: ${this.reloj.delayIntervalo}`,
+    )
     this.momentoInicio = momento
   }
 
