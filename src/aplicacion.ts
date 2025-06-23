@@ -6,7 +6,7 @@ import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 import { Noticia } from './modelo/noticia'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
-import { reproductorConectado } from './modelo/reproductorConectado'
+import { ReproductorConectado } from './modelo/reproductorConectado'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -97,7 +97,7 @@ export default class Aplicacion {
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
       if (this.cliente != null) {
-        this.reproductor = new reproductorConectado(this.cliente)
+        this.reproductor = new ReproductorConectado(this.cliente)
       }
     })
     this.cliente.setSesionFailedHandler((error: string) => {

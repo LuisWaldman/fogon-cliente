@@ -2,7 +2,7 @@ import { useAppStore } from '../stores/appStore'
 import { ClienteSocket } from './conexion/ClienteSocket'
 import { Reproductor } from './reproductor'
 
-export class reproductorConectado extends Reproductor {
+export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
   momentoInicio: Date | null = null
   compasInicio: number | null = null
@@ -19,10 +19,8 @@ export class reproductorConectado extends Reproductor {
       this.momentoInicio = new Date(desde)
       this.compasInicio = compas
       const momento = new Date()
+      this.setearMomento(momento, this.momentoInicio)
       const appStore = useAppStore()
-      appStore.estadoReproduccion = 'Iniciando'
-      appStore.compas = this.compasInicio || 0
-
       if (appStore.cancion) {
         this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
         this.reloj.setIniciaCicloHandler(this.onInicioCiclo.bind(this))
@@ -45,6 +43,31 @@ export class reproductorConectado extends Reproductor {
       const appStore = useAppStore()
       appStore.compas = compas
     })
+  }
+
+  setearMomento(momento: Date, momentoInicio: Date) {
+    const appStore = useAppStore()
+    if (momentoInicio.getTime() <= momento.getTime()) {
+      appStore.estadoReproduccion = 'Reproduciendo'
+      const diferencia = momento.getTime() - momentoInicio.getTime()
+      const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
+      const golpe = Math.floor(diferencia / duracionGolpe)
+      const delay = diferencia - golpe * duracionGolpe
+      this.reloj.setDelay(duracionGolpe - delay)
+      appStore.compas = Math.floor(golpe / appStore.cancion?.compasCantidad)
+      appStore.golpeDelCompas = golpe % appStore.cancion?.compasCantidad
+    } else {
+      appStore.estadoReproduccion = 'Iniciando'
+      appStore.compas = 0
+      const diferencia = momentoInicio.getTime() - momento.getTime()
+      const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
+      const golpe = Math.floor(diferencia / duracionGolpe)
+      const delay = diferencia - golpe * duracionGolpe
+      this.reloj.setDelay(delay)
+      appStore.golpeDelCompas = 3 - (golpe % appStore.cancion?.compasCantidad)
+
+    }
+    this.momentoInicio = momento
   }
 
   override async SetCancion(cancionstr: string) {

@@ -1,6 +1,7 @@
 // src/cancion.ts
 export class Reloj {
   public duracionIntervalo: number = 2200 // Duración de un compás en milisegundos
+  public delayIntervalo: number = 0 // Duración de un compás en milisegundos
   public estado: 'pausa' | 'iniciando' | 'tocando' = 'pausa'
 
   private timeoutId: number | null
@@ -22,11 +23,20 @@ export class Reloj {
     this.duracionIntervalo = duracion
   }
 
+  public setDelay(delay: number) {
+    this.delayIntervalo = delay
+  }
+
   iniciado: boolean = false
 
   private ciclo = () => {
     if (this.IniciaCicloHandler) {
       this.IniciaCicloHandler()
+    }
+    if (this.delayIntervalo > 0) {
+      this.timeoutId = setTimeout(this.ciclo, this.delayIntervalo)
+      this.delayIntervalo = 0 // Reset delay after the first cycle
+      return
     }
     if (this.iniciado) {
       this.timeoutId = setTimeout(this.ciclo, this.duracionIntervalo)
