@@ -65,7 +65,6 @@ export class ReproductorConectado extends Reproductor {
       const delay = diferencia - golpe * duracionGolpe
       this.reloj.setDelay(delay)
       appStore.golpeDelCompas = 3 - (golpe % appStore.cancion?.compasCantidad)
-
     }
     this.momentoInicio = momento
   }

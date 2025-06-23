@@ -103,7 +103,6 @@ describe('Example test', () => {
     expect(reproductorConectado.reloj.delayIntervalo).toBe(delayesperado)
   })
 
-  
   it('Calcula golpeDelCompas=0, compas=0, delay=38', () => {
     const appStore = useAppStore()
     const socket = new ClienteSocket('ws://localhost:8080')
