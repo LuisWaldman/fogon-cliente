@@ -16,7 +16,7 @@ function setSesionDefault() {
 }
 
 import { watch } from 'vue'
-
+const msj = ref('')
 const appStore = useAppStore()
 function crearSesion() {
   appStore.aplicacion.CrearSesion(newsesio.value.nombre)
