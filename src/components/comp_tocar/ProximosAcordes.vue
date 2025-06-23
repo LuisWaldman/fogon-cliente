@@ -15,10 +15,8 @@ const todosAcordes = ref([] as string[])
 function calcularAcordes(compas: number) {
   acordes.value = []
   const desdeCompas = compas > 0 ? compas : 0
-  console.log('Calculando acordes desde compas:', desdeCompas)
 
   for (let i = desdeCompas; i < todosAcordes.value.length; i++) {
-    console.log('Calculando acordes para compas:', i, todosAcordes.value[i])
     const acordesSplit = todosAcordes.value[i].split(' ')
     acordes.value.push(...acordesSplit)
 
@@ -42,7 +40,6 @@ watch(
 watch(
   () => props.compas,
   (newCompas) => {
-    console.log('Compas cambiado:', newCompas)
     calcularAcordes(newCompas)
   },
 )

@@ -9,10 +9,17 @@ interface ServerToClientEvents {
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
+  cancionActualizada: (cancion: string) => void
+  cancionIniciada: (compas: number, desde: string) => void
+  cancionDetenida: () => void
+  compasActualizado: (compas: number) => void
 }
 
 interface ClientToServerEvents {
-  hola: (mensaje: string) => void
+  actualizarCancion: (cancion: string) => void
+  iniciarReproduccion(compas: number, delayms: number): void
+  detenerReproduccion: () => void
+  actualizarCompas: (compas: number) => void
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
   crearsesion(sesion: string, latitud: number, longitud: number): void
@@ -27,6 +34,13 @@ export class ClienteSocket {
   private loginSuccessHandler?: (token: string) => void
   public setLoginSuccessHandler(handler: (token: string) => void): void {
     this.loginSuccessHandler = handler
+  }
+
+  private cancionActualizadaHandler?: (cancion: string) => void
+  public setCancionActualizadaHandler(
+    handler: (cancion: string) => void,
+  ): void {
+    this.cancionActualizadaHandler = handler
   }
 
   private conexionStatusHandler?: (status: string) => void
@@ -53,6 +67,18 @@ export class ClienteSocket {
     this.mensajesesionHandler = handler
   }
 
+  private cancionIniciadaHandler?: (compas: number, desde: string) => void
+  public setCancionIniciadaHandler(
+    handler: (compas: number, desde: string) => void,
+  ): void {
+    this.cancionIniciadaHandler = handler
+  }
+
+  private cancionDetenidaHandler?: () => void
+  public setCancionDetenidaHandler(handler: () => void): void {
+    this.cancionDetenidaHandler = handler
+  }
+
   public SalirSesion(): void {
     this.socket.emit('salirsesion')
   }
@@ -64,6 +90,11 @@ export class ClienteSocket {
   private rolSesionHandler?: (mensaje: string) => void
   public setRolSesionHandler(handler: (mensaje: string) => void): void {
     this.rolSesionHandler = handler
+  }
+
+  private compasActualizadoHandler?: (compas: number) => void
+  public setCompasActualizadoHandler(handler: (compas: number) => void): void {
+    this.compasActualizadoHandler = handler
   }
 
   private urlserver: string
@@ -93,6 +124,16 @@ export class ClienteSocket {
       this.conexionStatusHandler?.('conectado')
     })
 
+    socket.on('disconnect', (reason) => {
+      console.log('socket disconnected:', reason)
+      this.conexionStatusHandler?.('desconectado')
+    })
+
+    socket.on('cancionActualizada', (cancion: string) => {
+      console.log('cancionActualizada received with cancion:', cancion)
+      this.cancionActualizadaHandler?.(cancion)
+    })
+
     socket.on('mensajesesion', (msj: string) => {
       console.log('mensajesesion received with mensaje:', msj)
       this.mensajesesionHandler?.(msj)
@@ -120,6 +161,25 @@ export class ClienteSocket {
       this.sesionFailedHandler?.(error)
     })
 
+    socket.on('cancionIniciada', (compas: number, desde: string) => {
+      console.log(
+        'cancionIniciada received with compas:',
+        compas,
+        'desde:',
+        desde,
+      )
+      this.cancionIniciadaHandler?.(compas, desde)
+    })
+    socket.on('cancionDetenida', () => {
+      console.log('cancionDetenida received')
+      this.cancionDetenidaHandler?.()
+    })
+
+    socket.on('compasActualizado', (compas: number) => {
+      console.log('compasActualizado received with compas:', compas)
+      this.compasActualizadoHandler?.(compas)
+    })
+
     this.socket = socket
   }
 
@@ -136,5 +196,25 @@ export class ClienteSocket {
 
   login(datos: datosLogin) {
     this.socket.emit('login', datos.modo, datos.usuario, datos.password)
+  }
+
+  public iniciarReproduccion(compas: number, delayms: number): void {
+    console.log(
+      'Iniciando reproducción con compás:',
+      compas,
+      'y delay:',
+      delayms,
+    )
+    this.socket.emit('iniciarReproduccion', compas, delayms)
+  }
+  public detenerReproduccion(): void {
+    this.socket.emit('detenerReproduccion')
+  }
+  public actualizarCompas(compas: number): void {
+    this.socket.emit('actualizarCompas', compas)
+  }
+
+  public actualizarCancion(cancion: string): void {
+    this.socket.emit('actualizarCancion', cancion)
   }
 }

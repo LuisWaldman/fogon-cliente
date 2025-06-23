@@ -1,16 +1,16 @@
 // src/cancion.ts
 export class Reloj {
-  public duracionCompas: number = 2200 // Duración de un compás en milisegundos
+  public duracionIntervalo: number = 2200 // Duración de un compás en milisegundos
+  public delayIntervalo: number = 0 // Duración de un compás en milisegundos
   public estado: 'pausa' | 'iniciando' | 'tocando' = 'pausa'
 
-  private intervalId: number | null
+  private timeoutId: number | null
 
   constructor() {
-    this.intervalId = null
+    this.timeoutId = null
   }
   private IniciaHandler?: () => void
   private IniciaCicloHandler?: () => void
-
   public setIniciaHandler(handler: () => void) {
     this.IniciaHandler = handler
   }
@@ -19,11 +19,29 @@ export class Reloj {
     this.IniciaCicloHandler = handler
   }
 
-  public setDuracion(duracionCompas: number) {
-    this.duracionCompas = duracionCompas
+  public setDuracion(duracion: number) {
+    this.duracionIntervalo = duracion
+  }
+
+  public setDelay(delay: number) {
+    this.delayIntervalo = delay
   }
 
   iniciado: boolean = false
+
+  private ciclo = () => {
+    if (this.IniciaCicloHandler) {
+      this.IniciaCicloHandler()
+    }
+    if (this.delayIntervalo > 0) {
+      this.timeoutId = setTimeout(this.ciclo, this.delayIntervalo)
+      this.delayIntervalo = 0 // Reset delay after the first cycle
+      return
+    }
+    if (this.iniciado) {
+      this.timeoutId = setTimeout(this.ciclo, this.duracionIntervalo)
+    }
+  }
 
   public iniciar() {
     if (!this.iniciado) {
@@ -31,20 +49,15 @@ export class Reloj {
       if (this.IniciaHandler) {
         this.IniciaHandler()
       }
+      this.timeoutId = setTimeout(this.ciclo, this.duracionIntervalo)
     }
-
-    this.intervalId = setInterval(() => {
-      console.log('Iniciando ciclo')
-      if (this.IniciaCicloHandler) {
-        this.IniciaCicloHandler()
-      }
-    }, this.duracionCompas)
   }
 
   pausar() {
-    if (this.intervalId) {
-      clearInterval(this.intervalId)
-      this.intervalId = null
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId)
+      this.timeoutId = null
     }
+    this.iniciado = false
   }
 }

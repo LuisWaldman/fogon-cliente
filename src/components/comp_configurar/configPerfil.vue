@@ -46,16 +46,17 @@ onMounted(() => {
           <div
             style="display: flex; flex-direction: column; align-items: center"
           >
+            <img
+              :src="imageBase64"
+              alt="Profile Image"
+              style="max-width: 200px; max-height: 200px"
+            />
+
             <input
               type="file"
               id="image"
               class="fileUp"
               @change="handleImageUpload"
-            />
-            <img
-              :src="imageBase64"
-              alt="Profile Image"
-              style="max-width: 200px; max-height: 200px"
             />
           </div>
         </div>

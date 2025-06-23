@@ -1,32 +1,12 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
+import { onMounted } from 'vue'
 import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
-import { useRoute } from 'vue-router'
-const route = useRoute()
-const cancionref = ref(route.query.cancion)
 
 const appStore = useAppStore()
-// 🔄 Si la URL cambia, actualizar `cancion`
-watch(
-  () => route.query.cancion,
-  (nuevoValor) => {
-    if (nuevoValor) {
-      cancionref.value = nuevoValor
-      appStore.aplicacion.tocar(nuevoValor as string)
-    }
-  },
-)
 
 onMounted(() => {
   appStore.aplicacion.onMounted()
-
-  const urlParams = new URLSearchParams(window.location.search)
-  const cancion = urlParams.get('cancion')
-
-  if (cancion) {
-    appStore.aplicacion.tocar(cancion)
-  }
 })
 </script>
 

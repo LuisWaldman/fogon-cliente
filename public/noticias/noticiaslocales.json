@@ -1,39 +1,38 @@
 [
-    
-    {
-        "fechayhora": "2024-06-11T00:00:00.000Z",
-        "titulo": "El 1er RAP de la historia",
-        "texto": "Moris invento el rap, aca tirando alto beef:  <a href=\"/tocar?cancion=moris_pato-trabaja-en-una-carniceria\">Pato trabaja en una carniceria</a>",
-        "mastexto": ""
-    },
-    {
-        "fechayhora": "2024-06-11T00:00:00.000Z",
-        "titulo": "Andrés Calamaro",
-        "texto": "Aca algunos clasicasos del número 1, Andrés Calamaro: <a href=\"/tocar?cancion=andres-calamaro_tuyo-siempre\">Tuyo Siempre</a> y <a href=\"/tocar?cancion=andres-calamaro_flaca\">Flaca</a>",
-        "mastexto": ""
-    },
-        {
-        "fechayhora": "2024-06-11T00:00:00.000Z",
-        "titulo": "Damas Gratis",
-        "texto": "Lo pidio mi madre y aca lo tiene: <a href=\"/tocar?cancion=damas-gratis_no-te-creas-tan-importante\">No te creas tan importante</a>",
-        "mastexto": ""
-    },
-    {
-        "fechayhora": "2024-06-11T00:00:00.000Z",
-        "titulo": "Intoxicados",
-        "texto": "Algunos temazos del rey sin corona: <a href=\"/tocar?cancion=intoxicados_casi-sin-pensar\">Casi sin pensar</a> y <a href=\"/tocar?cancion=intoxicados_fuego\">Fuego</a>",
-        "mastexto": "Y además: <a href=\"/tocar?cancion=intoxicados_fuiste-lo-mejor\">Fuiste lo mejor</a>, <a href=\"/tocar?cancion=intoxicados_homero\">Homero</a>, <a href=\"/tocar?cancion=intoxicados_nunca-quise\">Nunca quise</a>, <a href=\"/tocar?cancion=intoxicados_esta-saliendo-el-sol\">Esta Saliendo el Sol</a>  <a href=\"/tocar?cancion=viejas-locas_leganlizenla\">Leganlizenla</a>, <a href=\"/tocar?cancion=viejas-locas_volver-a-casa\">Volver a casa</a>"
-    },
-    {
-        "fechayhora": "2024-06-11T00:00:00.000Z",
-        "titulo": "Joaquín Sabina",
-        "texto": "Algunos clásicos de Joaquín Sabina: <a href=\"/tocar?cancion=joaquin-sabina_a-la-orilla-de-la-chimenea\">A la orilla de la chimenea</a> y <a href=\"/tocar?cancion=joaquin-sabina_la-flaca\">La flaca</a>",
-        "mastexto": ""
-    },
-    {
-        "fechayhora": "2024-06-11T00:00:00.000Z",
-        "titulo": "Nuri Profe",
-        "texto": "Nuri Profe y sus canciones: <a href=\"/tocar?cancion=nuri-profe_menuet\">Minuet</a> y <a href=\"/tocar?cancion=nuri-profe_acordesmodod\">Acordes en el modo (RE)</a>",
-        "mastexto": "Y más: <a href=\"/tocar?cancion=nuri-profe_dont-wanna\">Dont Wanna Leave You Blues</a>, <a href=\"/tocar?cancion=nuri-profe_air\">Air</a>, <a href=\"/tocar?cancion=nuri-profe_gavote\">Gavotte</a>"
-    }
+  {
+    "fechayhora": "2024-06-11T00:00:00.000Z",
+    "titulo": "El 1er RAP de la historia",
+    "texto": "TEXTO,Moris invento el rap, aca tirando alto beef: |CANCION,link=moris_pato-trabaja-en-una-carniceria,nombre=Pato trabaja en una carniceria|",
+    "mastexto": ""
+  },
+  {
+    "fechayhora": "2024-06-11T00:00:00.000Z",
+    "titulo": "Andrés Calamaro",
+    "texto": "TEXTO,Aca algunos clasicasos del número 1, Andrés Calamaro: |CANCION,link=andres-calamaro_tuyo-siempre,nombre=Tuyo Siempre| |CANCION,link=andres-calamaro_flaca,nombre=Flaca|",
+    "mastexto": ""
+  },
+  {
+    "fechayhora": "2024-06-11T00:00:00.000Z",
+    "titulo": "Damas Gratis",
+    "texto": "TEXTO,Lo pidio mi madre y aca lo tiene: |CANCION,link=damas-gratis_no-te-creas-tan-importante,nombre=No te creas tan importante|",
+    "mastexto": ""
+  },
+  {
+    "fechayhora": "2024-06-11T00:00:00.000Z",
+    "titulo": "Intoxicados",
+    "texto": "TEXTO,Algunos temazos del rey sin corona: |CANCION,link=intoxicados_casi-sin-pensar,nombre=Casi sin pensar| |CANCION,link=intoxicados_fuego,nombre=Fuego|",
+    "mastexto": "|CANCION,link=intoxicados_fuiste-lo-mejor,nombre=Fuiste lo mejor| |CANCION,link=intoxicados_homero,nombre=Homero| |CANCION,link=intoxicados_nunca-quise,nombre=Nunca quise| |CANCION,link=intoxicados_esta-saliendo-el-sol,nombre=Esta Saliendo el Sol| |CANCION,link=viejas-locas_leganlizenla,nombre=Leganlizenla| |CANCION,link=viejas-locas_volver-a-casa,nombre=Volver a casa|"
+  },
+  {
+    "fechayhora": "2024-06-11T00:00:00.000Z",
+    "titulo": "Joaquín Sabina",
+    "texto": "TEXTO,Algunos clásicos de Joaquín Sabina: |CANCION,link=joaquin-sabina_a-la-orilla-de-la-chimenea,nombre=A la orilla de la chimenea| |CANCION,link=joaquin-sabina_la-flaca,nombre=La flaca|",
+    "mastexto": ""
+  },
+  {
+    "fechayhora": "2024-06-11T00:00:00.000Z",
+    "titulo": "Nuri Profe",
+    "texto": "TEXTO,Nuri Profe y sus canciones: |CANCION,link=nuri-profe_menuet,nombre=Minuet| |CANCION,link=nuri-profe_acordesmodod,nombre=Acordes en el modo (RE)|",
+    "mastexto": "|CANCION,link=nuri-profe_dont-wanna,nombre=Dont Wanna Leave You Blues| |CANCION,link=nuri-profe_air,nombre=Air| |CANCION,link=nuri-profe_gavote,nombre=Gavotte|"
+  }
 ]

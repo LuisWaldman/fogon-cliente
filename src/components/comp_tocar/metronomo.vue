@@ -67,14 +67,10 @@ function cambiar(id: number, idx: number = 0) {
 </script>
 
 <template>
+  <div class="divPrevia" v-if="appStore.estadoReproduccion == 'Iniciando'">
+    Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
+  </div>
   <div v-if="appStore.cancion">
-    <div
-      class="divPrevia"
-      v-if="appStore.estado == 'tocando' && appStore.compas < 0"
-    >
-      Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
-    </div>
-
     <div class="metronono">
       <div style="display: flex">
         <div
@@ -84,7 +80,7 @@ function cambiar(id: number, idx: number = 0) {
           :class="{
             beat_activo:
               n - 1 === appStore.golpeDelCompas &&
-              appStore.estado === 'tocando',
+              appStore.estadoReproduccion === 'Reproduciendo',
           }"
         >
           <span v-if="!midiCargado"> {{ n }}</span>
@@ -155,7 +151,7 @@ function cambiar(id: number, idx: number = 0) {
 }
 .divPrevia {
   position: absolute;
-  top: 200px;
+  top: -300px;
   left: 90px;
   color: red;
   font-size: 80px;
@@ -175,8 +171,9 @@ function cambiar(id: number, idx: number = 0) {
     margin: 2px;
   }
   .divPrevia {
+    position: absolute;
     font-size: 32px;
-    top: 80px;
+    top: -280px;
     left: 20px;
     padding: 6px;
   }

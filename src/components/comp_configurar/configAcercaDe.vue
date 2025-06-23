@@ -1,22 +1,35 @@
 <template>
   <div>
-    <div>Desarrollado por Luis Waldman para y gracias a:</div>
+    <h1>Acerca de</h1>
+    <div>
+      Soy Luis Waldman y desarrolle esta aplicacion para todos los musicos o
+      aspirantes. Para las orquestas, los karaokes los principiantes.
+    </div>
+    <div>Y, mas vale, para aprobar mi Trabajo Profesional en la FIUBA</div>
+
     <A href="https://fi.uba.ar/"
       ><img src="https://fi.uba.ar/images/logo-fiuba.png"
     /></A>
 
-    <p></p>
-    +
-    <p>
-      github:
-      <a href="https://github.com/LuisWaldman/fogon-cliente">Cliente</a>
-      <a href="https://github.com/LuisWaldman/fogon-servidor">Servidor</a>
-    </p>
-    <p>
-      Comercial:
-      <a href="https://www.instagram.com/eme.redes/">Eme.redes</a>
-    </p>
-    <p>donaciones al alias: la.plata.de.luis</p>
+    <p>github:</p>
+    <ul>
+      <li>
+        <a
+          href="https://github.com/LuisWaldman/fogon-cliente"
+          target="_blank"
+          rel="noopener"
+          >Cliente</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/LuisWaldman/fogon-servidor"
+          target="_blank"
+          rel="noopener"
+          >Servidor</a
+        >
+      </li>
+    </ul>
   </div>
 </template>
 

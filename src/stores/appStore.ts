@@ -25,17 +25,10 @@ export const useAppStore = defineStore('app', () => {
   const listaCanciones = ref<itemLista[]>([])
   const mensajes = ref<string[]>([])
   const nroCancion = ref<number>(1)
-  const compas = ref<number>(-2)
+  const compas = ref<number>(-1)
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
 
   const noticias = ref<Noticia[]>([])
-  // Método para tocar una canción por ID
-  const tocar = async (id: string) => {
-    const nueva = await aplicacion.tocar(id)
-    if (nueva) {
-      cancion.value = nueva
-    }
-  }
 
   const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
   const estadoSesion = ref<string>('no-conectado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
@@ -55,19 +48,10 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
-  const estadoReproduccion = ref<string>('Pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
+  const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
   // Método para actualizar el estado de reproducción
   const actualizarEstadoReproduccion = (nuevoEstado: string) => {
     estadoReproduccion.value = nuevoEstado
-  }
-
-  // Método para modificar el compás
-  const actualizarCompas = (nuevoCompas: number) => {
-    compas.value = nuevoCompas
-  }
-
-  const actualizargolpeDelCompas = (nuevoGolpe: number) => {
-    golpeDelCompas.value = nuevoGolpe
   }
 
   return {
@@ -87,11 +71,8 @@ export const useAppStore = defineStore('app', () => {
     noticias,
     sesion,
     mensajes,
-    tocar,
     actualizarEstado,
     actualizarEstadoConexion,
     actualizarEstadoReproduccion,
-    actualizarCompas,
-    actualizargolpeDelCompas,
   }
 })
