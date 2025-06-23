@@ -1,16 +1,17 @@
-<script setup>
-const props = defineProps({
-  texto: {
-    type: String,
-    required: true,
-  },
-})
+<script setup lang="ts">
+const props = defineProps<{
+  texto: string
+}>()
+
+// Usar un objeto tipado
+const misProps: Record<string, string> = {}
 
 const propEntexto = props.texto.split(',')
-var misProps = []
 propEntexto.forEach((item) => {
   const [key, value] = item.split('=')
-  misProps[key] = value
+  if (key && value) {
+    misProps[key.trim()] = value.trim()
+  }
 })
 </script>
 

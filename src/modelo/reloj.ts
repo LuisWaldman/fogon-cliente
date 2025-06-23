@@ -4,7 +4,7 @@ export class Reloj {
   public delayIntervalo: number = 0 // Duración de un compás en milisegundos
   public estado: 'pausa' | 'iniciando' | 'tocando' = 'pausa'
 
-  private timeoutId: number | null
+  private timeoutId: ReturnType<typeof setTimeout> | null
 
   constructor() {
     this.timeoutId = null

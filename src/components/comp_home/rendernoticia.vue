@@ -1,7 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import CANCION from './cancionnoticia.vue'
 import TEXTO from './textonoticia.vue'
-const componentes = {
+import type { Component } from 'vue'
+const componentes: Record<string, Component> = {
   TEXTO,
   CANCION,
 }
@@ -16,10 +17,12 @@ const textos = compos.map((s) => s.split(',')[0])
 </script>
 
 <template>
-  <component
-    v-for="(texto, id) in textos"
-    :key="id"
-    :is="componentes[texto]"
-    :texto="compos[id]"
-  />
+  <div class="rendernoticia">
+    <component
+      v-for="(texto, id) in textos"
+      :key="id"
+      :is="componentes[texto]"
+      :texto="compos[id]"
+    />
+  </div>
 </template>
