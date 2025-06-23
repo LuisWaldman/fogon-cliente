@@ -19,7 +19,7 @@ const appStore = useAppStore()
     <h1 style="color: blueviolet; margin-bottom: 0px; padding-bottom: 0px">
       Bienvenido al Fogon
     </h1>
-    <span class="version">v 1.0</span>
+    <span class="version">v (sincronizando 0.1)</span>
 
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
