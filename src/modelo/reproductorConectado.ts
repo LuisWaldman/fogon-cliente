@@ -96,7 +96,9 @@ export class ReproductorConectado extends Reproductor {
       const diferencia = momento.getTime() - momentoInicio.getTime()
       const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
       const golpe = Math.floor(diferencia / duracionGolpe)
-      console.log(`Diferencia: ${diferencia}, Duración del golpe: ${duracionGolpe}, Golpe: ${golpe}`)
+      console.log(
+        `Diferencia: ${diferencia}, Duración del golpe: ${duracionGolpe}, Golpe: ${golpe}`,
+      )
       const delay = diferencia - golpe * duracionGolpe
       this.reloj.setDelay(duracionGolpe - delay)
       appStore.compas =
@@ -108,7 +110,9 @@ export class ReproductorConectado extends Reproductor {
       const diferencia = momentoInicio.getTime() - momento.getTime()
       const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
       const golpe = Math.floor(diferencia / duracionGolpe)
-      console.log(`Diferencia: ${diferencia}, Duración del golpe: ${duracionGolpe}, Golpe: ${golpe}`)
+      console.log(
+        `Diferencia: ${diferencia}, Duración del golpe: ${duracionGolpe}, Golpe: ${golpe}`,
+      )
       const delay = diferencia - golpe * duracionGolpe
       this.reloj.setDelay(delay)
       appStore.golpeDelCompas = 3 - (golpe % appStore.cancion?.compasCantidad)

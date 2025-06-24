@@ -10,6 +10,7 @@ import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import Partes from '../components/comp_tocar/Partes.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
+import verRelojes from '../components/comp_tocar/verRelojes.vue'
 
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -84,9 +85,13 @@ function claseVistaSecundaria() {
     : 'col-1'
 }
 const refEditSize = ref(false)
-
+const verRelojesRef = ref(false)
 function editarPantalla() {
   refEditSize.value = true
+}
+
+function clickverRelojes() {
+  verRelojesRef.value = !verRelojesRef.value
 }
 
 function cerrareditarPantalla() {
@@ -100,6 +105,7 @@ function cerrareditarPantalla() {
       v-if="refEditSize"
       @cerrarEditSize="cerrareditarPantalla"
     ></editVista>
+    <verRelojes v-if="verRelojesRef"></verRelojes>
 
     <div
       class="pantallaPlay"
@@ -188,6 +194,9 @@ function cerrareditarPantalla() {
           <li><hr class="dropdown-divider" /></li>
           <li v-on:click="editarPantalla()">
             <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
+          </li>
+          <li v-on:click="clickverRelojes()">
+            <a class="dropdown-item" href="#"> Relojes</a>
           </li>
         </ul>
       </div>
