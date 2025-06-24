@@ -5,18 +5,59 @@ import { Reproductor } from './reproductor'
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
   momentoInicio: Date | null = null
-  compasInicio: number | null = null
+  compasInicio: number = 0
+  token: string = ''
+  delayReloj: number = -120
 
-  constructor(cliente: ClienteSocket) {
+  async HTTPGet(urlGet: string): Promise<Response> {
+    return fetch(this.cliente.UrlServer + urlGet, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${this.token}`,
+      },
+    })
+  }
+
+  ActualizarDelayReloj() {
+    const momento = new Date(Date.now())
+    this.HTTPGet('ntp')
+      .then((response) => {
+        if (response.ok) {
+          response.json().then((data) => {
+            const timeServer = new Date(data.hora)
+            this.delayReloj = timeServer.getTime() - momento.getTime()
+            console.log(`Delay del reloj actualizado: ${this.delayReloj} ms`)
+          })
+        } else {
+          console.error('Error al obtener el delay del reloj')
+        }
+      })
+      .catch((error) => {
+        console.error(
+          'Error en la solicitud HTTP para obtener el delay del reloj:',
+          error,
+        )
+      })
+  }
+
+  ObtenerMomento(): Date {
+    console.log(`Obteniendo momento con delay de reloj: ${this.delayReloj} ms`)
+    const momento = new Date(Date.now() + this.delayReloj)
+    return momento
+  }
+
+  constructor(cliente: ClienteSocket, token: string) {
     super()
+    this.token = token
     this.cliente = cliente
+    this.ActualizarDelayReloj()
     this.cliente.setCancionActualizadaHandler((cancion: string) => {
       console.log(`Canción actualizada: ${cancion}`)
       this.CargarCancion(cancion)
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: string) => {
       // Obtener la hora estándar mundial (UTC) similar a NTP
-      const momento = new Date(Date.now())
+      const momento = this.ObtenerMomento()
       console.log(
         `${momento} : Reproducción iniciada desde compás ${compas} por ${desde}`,
       )
@@ -55,16 +96,19 @@ export class ReproductorConectado extends Reproductor {
       const diferencia = momento.getTime() - momentoInicio.getTime()
       const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
       const golpe = Math.floor(diferencia / duracionGolpe)
+      console.log(`Diferencia: ${diferencia}, Duración del golpe: ${duracionGolpe}, Golpe: ${golpe}`)
       const delay = diferencia - golpe * duracionGolpe
       this.reloj.setDelay(duracionGolpe - delay)
-      appStore.compas = Math.floor(golpe / appStore.cancion?.compasCantidad)
+      appStore.compas =
+        this.compasInicio + Math.floor(golpe / appStore.cancion?.compasCantidad)
       appStore.golpeDelCompas = golpe % appStore.cancion?.compasCantidad
     } else {
       appStore.estadoReproduccion = 'Iniciando'
-      appStore.compas = 0
+      appStore.compas = this.compasInicio
       const diferencia = momentoInicio.getTime() - momento.getTime()
       const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
       const golpe = Math.floor(diferencia / duracionGolpe)
+      console.log(`Diferencia: ${diferencia}, Duración del golpe: ${duracionGolpe}, Golpe: ${golpe}`)
       const delay = diferencia - golpe * duracionGolpe
       this.reloj.setDelay(delay)
       appStore.golpeDelCompas = 3 - (golpe % appStore.cancion?.compasCantidad)

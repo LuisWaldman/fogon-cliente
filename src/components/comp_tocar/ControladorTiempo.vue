@@ -23,7 +23,6 @@ watch(
 watch(
   () => appStore.compas,
   (newVal) => {
-    console.log(appStore.compas)
     tiempoActual.value = tiempo.formatSegundos(
       appStore.cancion.duracionCompas * appStore.compas,
     )

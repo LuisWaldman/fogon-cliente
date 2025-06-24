@@ -97,7 +97,7 @@ export default class Aplicacion {
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
       if (this.cliente != null) {
-        this.reproductor = new ReproductorConectado(this.cliente)
+        this.reproductor = new ReproductorConectado(this.cliente, this.token)
       }
     })
     this.cliente.setSesionFailedHandler((error: string) => {
