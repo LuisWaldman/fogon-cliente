@@ -45,7 +45,7 @@ describe('HelperSincro.sicronizar', () => {
     const iniciocompas = 0
     const sincro = new SincroCancion(
       duracionGolpe,
-      new Date(momento.getTime() + (golpesxcompas * duracionGolpe) - 1), // timeInicio
+      new Date(momento.getTime() + golpesxcompas * duracionGolpe - 1), // timeInicio
       golpesxcompas, // golpesxcompas
       iniciocompas, // desdeCompas
     )
