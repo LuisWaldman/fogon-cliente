@@ -16,7 +16,7 @@ export class HelperSincro {
   }
 
   async HTTPGet(urlGet: string): Promise<Response> {
-    return fetch(urlGet + '/ntp', {
+    return fetch(urlGet + 'ntp', {
       method: 'GET',
     })
   }
