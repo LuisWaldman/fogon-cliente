@@ -7,6 +7,7 @@ import { Noticia } from './modelo/noticia'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
 import { ReproductorConectado } from './modelo/reproductorConectado'
+import { HelperSincro } from './modelo/sincro/HelperSincro'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -83,6 +84,7 @@ export default class Aplicacion {
     this.cliente.setconexionStatusHandler((status: string) => {
       console.log('status:', status)
       if (status === 'conectado') {
+        HelperSincro.getInstance().ActualizarDelayReloj(url)
         appStore.estado = 'conectado'
         if (config.loginDefault?.mantenerseLogeado) {
           this.login(config.loginDefault)

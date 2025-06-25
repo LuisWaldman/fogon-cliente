@@ -10,8 +10,18 @@ import { Noticia } from '../modelo/noticia'
 import { Perfil } from '../modelo/perfil'
 import { Sesion } from '../modelo/sesion'
 
+import { SincroCancion } from '../modelo/sincro/SincroCancion'
+import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
+
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
+
+  const sesSincroCancion = ref<SincroCancion>(
+    new SincroCancion(0, new Date(), 0, 0),
+  )
+  const EstadoSincro = ref<EstadoSincroCancion>(
+    new EstadoSincroCancion(-1, 0, '-', 0),
+  )
 
   // Estados centrales en Pinia
   const cancion = ref<Cancion>(
@@ -48,6 +58,8 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
+  const momentoRecibioInicio = ref<Date>(new Date())
+
   const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
   // Método para actualizar el estado de reproducción
   const actualizarEstadoReproduccion = (nuevoEstado: string) => {
@@ -64,6 +76,9 @@ export const useAppStore = defineStore('app', () => {
     estadoSesion,
     estadoLogin,
     rolSesion,
+    sesSincroCancion,
+    EstadoSincro,
+    momentoRecibioInicio,
     perfil,
     estadoReproduccion,
     nroCancion,
