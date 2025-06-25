@@ -98,6 +98,9 @@ export class ClienteSocket {
   }
 
   private urlserver: string
+  public get UrlServer(): string {
+    return this.urlserver
+  }
 
   constructor(urlserver: string) {
     this.urlserver = urlserver

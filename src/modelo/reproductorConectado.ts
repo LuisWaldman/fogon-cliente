@@ -1,28 +1,44 @@
 import { useAppStore } from '../stores/appStore'
 import { ClienteSocket } from './conexion/ClienteSocket'
 import { Reproductor } from './reproductor'
+import { HelperSincro } from './sincro/HelperSincro'
+import { SincroCancion } from './sincro/SincroCancion'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
   momentoInicio: Date | null = null
-  compasInicio: number | null = null
+  compasInicio: number = 0
+  token: string = ''
 
-  constructor(cliente: ClienteSocket) {
+  constructor(cliente: ClienteSocket, token: string) {
     super()
+    this.token = token
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler((cancion: string) => {
       console.log(`Canción actualizada: ${cancion}`)
       this.CargarCancion(cancion)
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: string) => {
-      // Obtener la hora estándar mundial (UTC) similar a NTP
-      const momento = new Date(Date.now())
-      console.log(
-        `${momento} : Reproducción iniciada desde compás ${compas} por ${desde}`,
+      const appStore2 = useAppStore()
+      const duracionGolpe = appStore2.cancion?.duracionGolpe * 1000
+      const golpesxcompas = appStore2.cancion?.compasCantidad || 4
+      const helper = HelperSincro.getInstance()
+      const momento = helper.ObtenerMomento()
+      appStore2.momentoRecibioInicio = momento
+      const sincro = new SincroCancion(
+        duracionGolpe,
+        new Date(desde),
+        golpesxcompas, // golpesxcompas
+        compas, // duracionGolpe
       )
-      this.momentoInicio = new Date(desde)
-      this.compasInicio = compas
-      this.setearMomento(momento, this.momentoInicio)
+
+      const est = helper.sincronizar(sincro, momento)
+      appStore2.sesSincroCancion = sincro
+      appStore2.EstadoSincro = est
+      appStore2.compas = est.compas
+      appStore2.golpeDelCompas = est.golpeEnCompas
+      appStore2.estadoReproduccion = est.estado
+      this.reloj.setDelay(est.delay)
       const appStore = useAppStore()
       if (appStore.cancion) {
         this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
@@ -46,33 +62,6 @@ export class ReproductorConectado extends Reproductor {
       const appStore = useAppStore()
       appStore.compas = compas
     })
-  }
-
-  setearMomento(momento: Date, momentoInicio: Date) {
-    const appStore = useAppStore()
-    if (momentoInicio.getTime() <= momento.getTime()) {
-      appStore.estadoReproduccion = 'Reproduciendo'
-      const diferencia = momento.getTime() - momentoInicio.getTime()
-      const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
-      const golpe = Math.floor(diferencia / duracionGolpe)
-      const delay = diferencia - golpe * duracionGolpe
-      this.reloj.setDelay(duracionGolpe - delay)
-      appStore.compas = Math.floor(golpe / appStore.cancion?.compasCantidad)
-      appStore.golpeDelCompas = golpe % appStore.cancion?.compasCantidad
-    } else {
-      appStore.estadoReproduccion = 'Iniciando'
-      appStore.compas = 0
-      const diferencia = momentoInicio.getTime() - momento.getTime()
-      const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
-      const golpe = Math.floor(diferencia / duracionGolpe)
-      const delay = diferencia - golpe * duracionGolpe
-      this.reloj.setDelay(delay)
-      appStore.golpeDelCompas = 3 - (golpe % appStore.cancion?.compasCantidad)
-    }
-    console.log(
-      `Estado de reproducción: ${appStore.estadoReproduccion}, Compás: ${appStore.compas}, Golpe del compás: ${appStore.golpeDelCompas}, Delay: ${this.reloj.delayIntervalo}`,
-    )
-    this.momentoInicio = momento
   }
 
   override async SetCancion(cancionstr: string) {
