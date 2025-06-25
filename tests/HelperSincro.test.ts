@@ -45,7 +45,7 @@ describe('HelperSincro.sicronizar', () => {
     const iniciocompas = 0
     const sincro = new SincroCancion(
       duracionGolpe,
-      new Date(momento.getTime() + (golpesxcompas * duracionGolpe - 1)), // timeInicio
+      new Date(momento.getTime() + (golpesxcompas * duracionGolpe) - 1), // timeInicio
       golpesxcompas, // golpesxcompas
       iniciocompas, // desdeCompas
     )
@@ -57,7 +57,7 @@ describe('HelperSincro.sicronizar', () => {
 
     expect(est.estado).toBe('Iniciando')
     expect(est.compas).toBe(iniciocompas)
-    expect(est.golpeEnCompas).toBe(3)
+    expect(est.golpeEnCompas).toBe(1)
     expect(est.delay).toBe(duracionGolpe - 1) // 1 segundo - 1 microsegundo
   })
 
