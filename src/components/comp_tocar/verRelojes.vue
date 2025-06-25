@@ -8,7 +8,8 @@ const appStore = useAppStore()
     <h3>RELOJES</h3>
     <pre>{{ appStore.EstadoSincro }}</pre>
     <pre>{{ new Date() }}</pre>
-    <pre>{{ appStore.momentoRecibioInicio }}</pre>-
+    <pre>{{ appStore.momentoRecibioInicio }}</pre>
+    -
     <pre>{{ appStore.sesSincroCancion }}</pre>
   </div>
 </template>
