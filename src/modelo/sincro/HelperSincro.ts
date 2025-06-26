@@ -4,7 +4,7 @@ import { EstadoSincroCancion } from './EstadoSincroCancion'
 export class HelperSincro {
   private static instance: HelperSincro
   private compasInicio: number = 0
-  delayReloj: number = -120
+  delayReloj: number = 0
 
   private constructor() {}
 
@@ -27,9 +27,12 @@ export class HelperSincro {
       .then((response) => {
         if (response.ok) {
           response.json().then((data) => {
-            const timeServer = new Date(data.hora)
-            this.delayReloj = timeServer.getTime() - momento.getTime()
-            console.log(`Delay del reloj actualizado: ${this.delayReloj} ms`)
+            const momento2 = new Date(Date.now())
+            const tardo = momento2.getTime() - momento.getTime()
+            const horaServidor = new Date(data.hora)
+            const timeServerReal = new Date(horaServidor.getTime() + tardo / 2)
+            this.delayReloj = timeServerReal.getTime() - momento.getTime()
+            console.log(`Tardo: ${tardo} ms,  DELAY ${this.delayReloj}`)
           })
         } else {
           console.error('Error al obtener el delay del reloj')
