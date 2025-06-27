@@ -72,15 +72,15 @@ export class HelperSincro {
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
       delay = diferencia - golpe * sincro.duracionGolpe
       delay = sincro.duracionGolpe - delay
-      compas = this.compasInicio + Math.floor(golpe / sincro.golpesxcompas)
+      compas = sincro.desdeCompas + Math.floor(golpe / sincro.golpesxcompas)
       golpeDelCompas = golpe % sincro.golpesxcompas
     } else {
       estadoReproduccion = 'Iniciando'
-      compas = this.compasInicio
+      compas = sincro.desdeCompas
       const diferencia = sincro.timeInicio.getTime() - momento.getTime()
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
       delay = diferencia - golpe * sincro.duracionGolpe
-      golpeDelCompas = sincro.golpesxcompas - golpe
+      golpeDelCompas = sincro.golpesxcompas - (golpe + 1)
     }
 
     return new EstadoSincroCancion(

@@ -57,7 +57,7 @@ describe('HelperSincro.sicronizar', () => {
 
     expect(est.estado).toBe('Iniciando')
     expect(est.compas).toBe(iniciocompas)
-    expect(est.golpeEnCompas).toBe(1)
+    expect(est.golpeEnCompas).toBe(0)
     expect(est.delay).toBe(duracionGolpe - 1) // 1 segundo - 1 microsegundo
   })
 
