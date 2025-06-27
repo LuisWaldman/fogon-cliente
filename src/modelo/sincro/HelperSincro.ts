@@ -3,7 +3,6 @@ import { EstadoSincroCancion } from './EstadoSincroCancion'
 
 export class HelperSincro {
   private static instance: HelperSincro
-  private compasInicio: number = 0
   delayReloj: number = 0
 
   private constructor() {}
