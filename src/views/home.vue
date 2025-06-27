@@ -10,7 +10,7 @@ const appStore = useAppStore()
     <h1 style="color: blueviolet; margin-bottom: 0px; padding-bottom: 0px">
       Bienvenido al Fogon
     </h1>
-    <span class="version">v (sincronizando 0.2.1)</span>
+    <span class="version">v (sincronizando 0.2.2)</span>
 
     <div
       class="estadoTocando"
