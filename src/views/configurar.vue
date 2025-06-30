@@ -27,9 +27,6 @@ function clickOpcion(viendostr: string) {
 
 <template>
   <div style="width: 100%">
-
-
-
     <div class="row">
       <div class="col-3">
         <div class="" style="width: 280px">

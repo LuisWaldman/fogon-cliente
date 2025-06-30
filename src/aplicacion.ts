@@ -91,6 +91,11 @@ export default class Aplicacion {
         }
       }
     })
+
+    this.cliente.setConectadoHandler((token: string) => {
+      console.log(`Conectado: ${token}`)
+      this.token = token
+    })
     this.cliente.connectar()
     console.log(`Conectando al servidor: ${url}`)
     this.cliente.setEnsesionHandler((sesionCreada: string) => {
@@ -112,12 +117,10 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.rolSesion = mensaje
     })
-    this.cliente.setLoginSuccessHandler((token: string) => {
-      console.log(`Inicio de sesión exitoso. Token: ${token}`)
+    this.cliente.setLoginSuccessHandler(() => {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       appStore.estadoLogin = 'logueado'
-      this.token = token
       this.getperfilUsuario()
       const sesiondef = localStorage.getItem('sesionDefault') || ''
       if (sesiondef !== '') {
