@@ -168,9 +168,9 @@ if (appStore.estadoSesion === 'conectado') {
   </div>
   <div v-if="appStore.estadoSesion === 'conectado'" style="margin-top: 5px">
     <h1>Sesion</h1>
-    <qr  url='www.fogon.ar?sesion="default"'></qr>
     <div style="display: flex; width: 100%; margin-top: 5px">
       <div style="width: 50%">
+    <qr  url='www.fogon.ar?sesion="default"'></qr>
         <form @submit.prevent="MensajeASesion(msj)">
           <input
             type="text"
