@@ -27,6 +27,9 @@ function clickOpcion(viendostr: string) {
 
 <template>
   <div style="width: 100%">
+
+
+
     <div class="row">
       <div class="col-3">
         <div class="" style="width: 280px">
@@ -60,10 +63,7 @@ function clickOpcion(viendostr: string) {
 
             <li
               @click="clickOpcion('sesion')"
-              v-if="
-                appStore.estado === 'conectado' ||
-                appStore.estadoLogin === 'logueado'
-              "
+              v-if="appStore.estadoLogin == 'logueado'"
             >
               <a
                 href="#"

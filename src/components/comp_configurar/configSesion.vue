@@ -3,6 +3,7 @@ import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
 import { UserSesion } from '../../modelo/userSesion'
 import { ref } from 'vue'
+import qr from './qr.vue'
 
 const sesiones = ref([] as Sesion[])
 const ususario = ref([] as UserSesion[])
@@ -117,6 +118,7 @@ if (appStore.estadoSesion === 'conectado') {
 </script>
 <template>
   <div>
+    
     <h1>Sesiones</h1>
     <div class="nuevaSesion">
       <label for="nombre">Nombre de la sesión:</label>
@@ -166,6 +168,7 @@ if (appStore.estadoSesion === 'conectado') {
   </div>
   <div v-if="appStore.estadoSesion === 'conectado'" style="margin-top: 5px">
     <h1>Sesion</h1>
+    <qr  url='www.fogon.ar?sesion="default"'></qr>
     <div style="display: flex; width: 100%; margin-top: 5px">
       <div style="width: 50%">
         <form @submit.prevent="MensajeASesion(msj)">
