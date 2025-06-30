@@ -27,9 +27,9 @@ function clickOpcion(viendostr: string) {
 
 <template>
   <div style="width: 100%">
-    <div class="row">
-      <div class="col-3">
-        <div class="" style="width: 280px">
+    <div style="display: flex;" >
+      <div>
+        <div class="" >
           <ul class="nav nav-pills flex-column mb-auto">
             <li @click="clickOpcion('login')">
               <a
@@ -83,18 +83,6 @@ function clickOpcion(viendostr: string) {
           </ul>
 
           <hr />
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="clickOpcion('vistas')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'vistas' }"
-              >
-                Vistas
-              </a>
-            </li>
-          </ul>
-          <hr />
 
           <ul class="nav nav-pills flex-column mb-auto">
             <li @click="clickOpcion('acercade')">
@@ -110,38 +98,24 @@ function clickOpcion(viendostr: string) {
         </div>
       </div>
 
-      <div class="col-9 innerConfig">
-        <div v-if="viendo == 'login'" class="container">
-          <configlogin></configlogin>
-        </div>
-        <div v-if="viendo == 'perfil'" class="container">
-          <configPerfil></configPerfil>
-        </div>
-
-        <div v-if="viendo == 'sesion'">
-          <configsesion> </configsesion>
-        </div>
-
-        <div v-if="viendo == 'servidores'">
-          <configServidores> </configServidores>
-        </div>
-
-        <div v-if="viendo == 'vistas'">
-          <ConfigVistas></ConfigVistas>
-        </div>
-
-        <div v-if="viendo == 'acercade'">
-          <configAcercaDe></configAcercaDe>
-        </div>
+      <div class="innerConfig">
+          <configlogin v-if="viendo == 'login'"></configlogin>
+          <configPerfil v-if="viendo == 'perfil'"></configPerfil>
+          <configsesion v-if="viendo == 'sesion'"> </configsesion>
+          <configServidores v-if="viendo == 'servidores'"> </configServidores>
+          <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+
 .innerConfig {
   padding: 20px;
+  display: flex;
 }
+
 
 #btnGuardar {
   font-size: 30px;

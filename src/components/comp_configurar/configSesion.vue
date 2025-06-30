@@ -117,15 +117,14 @@ if (appStore.estadoSesion === 'conectado') {
 }
 </script>
 <template>
-  <div>
-    <h1>Sesiones</h1>
-    <div class="nuevaSesion">
-      <label for="nombre">Nombre de la sesión:</label>
-      <input id="nombre" v-model="newsesio.nombre" required />
-      <button @click="crearSesion" v-if="appStore.estadoSesion != 'conectado'">
-        Iniciar Sesión
-      </button>
-      <button @click="SalirSesion" v-if="appStore.estadoSesion == 'conectado'">
+  <div  class="configSesion">
+    
+      <div v-if="appStore.estadoSesion === 'conectado'" style="margin-top: 5px">
+        <div>
+
+          <h1>Sesion</h1>
+
+          <button @click="SalirSesion" v-if="appStore.estadoSesion == 'conectado'">
         Salir de Sesión
       </button>
       <button
@@ -135,6 +134,66 @@ if (appStore.estadoSesion === 'conectado') {
       >
         Set Default
       </button>
+        </div>
+    
+    <div>
+      <div>
+        <qr url='www.fogon.ar?sesion="default"'></qr>
+        <form @submit.prevent="MensajeASesion(msj)">
+          <input
+            type="text"
+            v-model="msj"
+            placeholder="Escribe un mensaje"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+        <div
+          v-if="appStore.mensajes && appStore.mensajes.length"
+          style="margin-top: 1em"
+        >
+          <div
+            v-for="(mensaje, idx) in appStore.mensajes"
+            :key="idx"
+            style="margin-bottom: 0.5em"
+          >
+            {{ mensaje }}
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="display: flex">
+          <h3>Usuarios en la sesión</h3>
+          <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
+        </div>
+        <table v-if="ususario.length" style="width: 100%">
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Perfil</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(user, idx) in ususario" :key="idx">
+              <td>{{ user.Usuario }}</td>
+              <td>{{ user.NombrePerfil }}</td>
+              <td>{{ user.RolSesion }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+    <div class="nuevaSesion" v-if="appStore.estadoSesion != 'conectado'" >
+      <h1>Sesiones</h1>
+     
+      <label for="nombre">Nombre de la sesión:</label>
+      <input id="nombre" v-model="newsesio.nombre" required />
+      <button @click="crearSesion" v-if="appStore.estadoSesion != 'conectado'">
+        Iniciar Sesión
+      </button>
+      
 
       <button @click="cargarSesiones">Actualizar Sesiones</button>
       {{ appStore.estadoSesion }} - {{ appStore.rolSesion }}
@@ -165,57 +224,7 @@ if (appStore.estadoSesion === 'conectado') {
       </tbody>
     </table>
   </div>
-  <div v-if="appStore.estadoSesion === 'conectado'" style="margin-top: 5px">
-    <h1>Sesion</h1>
-    <div style="display: flex; width: 100%; margin-top: 5px">
-      <div style="width: 50%">
-        <qr url='www.fogon.ar?sesion="default"'></qr>
-        <form @submit.prevent="MensajeASesion(msj)">
-          <input
-            type="text"
-            v-model="msj"
-            placeholder="Escribe un mensaje"
-            required
-          />
-          <button type="submit">Enviar</button>
-        </form>
-        <div
-          v-if="appStore.mensajes && appStore.mensajes.length"
-          style="margin-top: 1em"
-        >
-          <div
-            v-for="(mensaje, idx) in appStore.mensajes"
-            :key="idx"
-            style="margin-bottom: 0.5em"
-          >
-            {{ mensaje }}
-          </div>
-        </div>
-      </div>
-      <div style="width: 100%">
-        <div style="display: flex">
-          <h3>Usuarios en la sesión</h3>
-          <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
-        </div>
-        <table v-if="ususario.length" style="width: 100%">
-          <thead>
-            <tr>
-              <th>Usuario</th>
-              <th>Perfil</th>
-              <th>Rol</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="(user, idx) in ususario" :key="idx">
-              <td>{{ user.Usuario }}</td>
-              <td>{{ user.NombrePerfil }}</td>
-              <td>{{ user.RolSesion }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+
 </template>
 
 <style scoped>
@@ -236,4 +245,18 @@ form {
 .nuevaSesion {
   font-size: large;
 }
+.configSesion {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .nuevaSesion {
+    display: flex;
+    font-size: medium;
+    flex-direction: column;
+  }
+  
+}
+
 </style>
