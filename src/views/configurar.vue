@@ -10,14 +10,16 @@ import ConfigVistas from '../components/comp_configurar/ConfigVistas.vue'
 import { useAppStore } from '../stores/appStore'
 const appStore = useAppStore()
 // Definir la canción y el contexto
-const viendo = ref('servidores')
+const viendo = ref('login')
+/*
 if (appStore.estado === 'conectado') {
   viendo.value = 'login'
 } else if (appStore.estadoLogin === 'logueado') {
   viendo.value = 'sesion'
 } else {
   viendo.value = 'servidores'
-}
+}*/
+
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
