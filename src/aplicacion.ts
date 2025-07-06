@@ -93,13 +93,24 @@ export default class Aplicacion {
           this.login(config.loginDefault)
         }
       }
+      if (status === 'desconectado') {
+        appStore.estado = 'desconectado'
+        this.reproductor.detenerReproduccion()
+        this.reproductor = this.reproductorDesconectado
+        this.cliente = null
+      }
     })
+    
 
     this.cliente.setConectadoHandler((token: string) => {
       console.log(`Conectado: ${token}`)
       this.token = token
       this.cargarSesiones()
     })
+    this.cliente.setSesionesActualizadasHandler(() => {
+      this.cargarSesiones()
+    })
+
     this.cliente.connectar()
     console.log(`Conectando al servidor: ${url}`)
     this.cliente.setEnsesionHandler((sesionCreada: string) => {

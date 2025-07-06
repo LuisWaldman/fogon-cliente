@@ -14,6 +14,7 @@ interface ServerToClientEvents {
   cancionIniciada: (compas: number, desde: string) => void
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
+  sesionesActualizadas: () => void
 }
 
 interface ClientToServerEvents {
@@ -35,6 +36,11 @@ export class ClienteSocket {
   private loginSuccessHandler?: () => void
   public setLoginSuccessHandler(handler: () => void): void {
     this.loginSuccessHandler = handler
+  }
+
+  private sesionesActualizadasHandler?: () => void
+  public setSesionesActualizadasHandler(handler: () => void): void {
+    this.sesionesActualizadasHandler = handler
   }
 
   private conectadoHandler?: (token: string) => void
@@ -150,6 +156,10 @@ export class ClienteSocket {
     socket.on('rolSesion', (mensaje: string) => {
       console.log('rolSesion received with mensaje:', mensaje)
       this.rolSesionHandler?.(mensaje)
+    })
+    socket.on('sesionesActualizadas', () => {
+      console.log('sesionesActualizadas received')
+      this.sesionesActualizadasHandler?.()
     })
 
     socket.on('loginSuccess', () => {

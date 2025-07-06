@@ -80,8 +80,12 @@ const unirseSesion = (sesion: string) => {
           class="dropdown-menu dropdown-menu-end"
           aria-labelledby="dropdownMenuButton"
         >
+          
           <li>
-            <div class="dropdown-item">Ver</div>
+            <router-link class="dropdown-item" to="/tocar" v-if="$route.path != '/tocar'" >
+              <i class="bi bi-gear"></i>
+              Tocar
+            </router-link>
           </li>
           <li
             class="dropdown-submenu"
@@ -131,7 +135,7 @@ const unirseSesion = (sesion: string) => {
           </li>
 
           <li>
-            <router-link class="dropdown-item" to="/configurar">
+            <router-link class="dropdown-item" to="/configurar" v-if="$route.path != '/configurar'" >
               <i class="bi bi-gear"></i>
               Configurar
             </router-link>
