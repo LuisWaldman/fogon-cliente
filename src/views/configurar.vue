@@ -60,7 +60,10 @@ function clickOpcion(viendostr: string) {
 
             <li
               @click="clickOpcion('sesion')"
-              v-if="appStore.estadoLogin == 'logueado'"
+              v-if="
+                appStore.estado == 'conectado' ||
+                appStore.estadoLogin == 'logueado'
+              "
             >
               <a
                 href="#"

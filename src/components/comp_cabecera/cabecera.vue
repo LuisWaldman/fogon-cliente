@@ -2,6 +2,23 @@
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
+
+const crearSesion = () => {
+  const nombreSesion = appStore.perfil?.nombre
+    ? `${appStore.perfil.nombre} sesion`
+    : 'default'
+  console.log('Creando sesión', nombreSesion)
+
+  appStore.aplicacion.CrearSesion(nombreSesion)
+}
+
+function SalirSesion() {
+  appStore.aplicacion.SalirSesion()
+}
+
+const unirseSesion = (sesion: string) => {
+  appStore.aplicacion.UnirmeSesion(sesion)
+}
 </script>
 
 <template>
@@ -32,6 +49,7 @@ const appStore = useAppStore()
         {{ appStore.cancion?.cancion }} -
         {{ appStore.cancion?.banda }}
       </div>
+
       <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
         Configuracion
       </span>
@@ -48,9 +66,11 @@ const appStore = useAppStore()
           <img
             :src="appStore.perfil?.imagen || '/img/UsuarioDesconecdado.png'"
             alt="User"
+            :class="{ imgConectado: appStore.estadoSesion === 'conectado' }"
             style="
               width: 40px;
               height: 40px;
+
               border-radius: 50%;
               object-fit: cover;
             "
@@ -61,8 +81,58 @@ const appStore = useAppStore()
           aria-labelledby="dropdownMenuButton"
         >
           <li>
+            <div class="dropdown-item">Ver</div>
+          </li>
+          <li
+            class="dropdown-submenu"
+            v-if="
+              appStore.estado === 'conectado' || appStore.estado === 'logueado'
+            "
+          >
+            <a
+              class="dropdown-item dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-people"></i>
+              Sesión
+            </a>
+            <ul class="dropdown-menu">
+              <li v-if="appStore.estadoSesion != 'conectado'">
+                <a class="dropdown-item" href="#" @click="crearSesion">
+                  <i class="bi bi-plus-circle"></i>
+                  Crear sesión
+                </a>
+              </li>
+              <div v-if="appStore.estadoSesion != 'conectado'">
+              <li v-for="(sesion, id) in appStore.sesiones" :key="id">
+                <a class="dropdown-item" href="#" @click="unirseSesion(sesion.nombre)">
+                  <i class="bi bi-box-arrow-in-right"></i>
+                  {{ sesion.nombre }}
+                </a>
+              </li>
+              </div>
+
+              <li v-if="appStore.estadoSesion === 'conectado'">
+                <a class="dropdown-item" href="#" @click="SalirSesion">
+                  <i class="bi bi-box-arrow-in-right"></i>
+                  Salir
+                </a>
+              </li>
+              <li v-if="appStore.estadoSesion === 'conectado'">
+                <a class="dropdown-item" href="#" @click="unirseSesion">
+                  <i class="bi bi-share"></i>
+                  Compartir
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
             <router-link class="dropdown-item" to="/configurar">
-              <i class="bi bi-check-circle"></i>
+              <i class="bi bi-gear"></i>
               Configurar
             </router-link>
           </li>
@@ -97,6 +167,45 @@ const appStore = useAppStore()
   right: 0;
   left: auto;
   min-width: 180px;
+}
+
+/* Estilos para dropdown anidado */
+.dropdown-submenu {
+  position: relative;
+}
+.imgConectado {
+  box-sizing: content-box;
+  border: 6px double #a9a8f6;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  left: auto;
+  margin-top: -1px;
+  margin-right: -1px;
+  border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > .dropdown-toggle::after {
+  display: block;
+  content: ' ';
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > .dropdown-toggle::after {
+  border-right-color: #999;
 }
 
 .dropdown-superior-derecha {

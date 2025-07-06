@@ -8,6 +8,7 @@ import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
 import { ReproductorConectado } from './modelo/reproductorConectado'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
+import { Sesion } from './modelo/sesion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -97,6 +98,7 @@ export default class Aplicacion {
     this.cliente.setConectadoHandler((token: string) => {
       console.log(`Conectado: ${token}`)
       this.token = token
+      this.cargarSesiones()
     })
     this.cliente.connectar()
     console.log(`Conectando al servidor: ${url}`)
@@ -145,6 +147,38 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.mensajes.push(msj)
     })
+  }
+
+  cargarSesiones() {
+    this.HTTPGet('sesiones')
+      .then((response) => response.json())
+      .then((data) => {
+        const appStore = useAppStore()
+        console.log('Sesiones obtenidas:', data)
+        appStore.sesiones = []
+        data.forEach(
+          (item: {
+            Nombre: string
+            Usuarios: number
+            Estado: string
+            Latitud: number
+            Longitud: number
+          }) => {
+            appStore.sesiones.push(
+              new Sesion(
+                item.Nombre,
+                item.Usuarios,
+                item.Estado,
+                item.Latitud,
+                item.Longitud,
+              ),
+            )
+          },
+        )
+      })
+      .catch((error) => {
+        console.error('Error al obtener el perfil del usuario:', error)
+      })
   }
 
   async HTTPGet(urlGet: string): Promise<Response> {
