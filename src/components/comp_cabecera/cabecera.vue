@@ -13,7 +13,7 @@ function compartir() {
   copiado.value = false
   urlcompartida.value =
     window.location.origin +
-    '/tocar/?sesion=' +
+    '/tocar?sesion=' +
     appStore.sesion.nombre.replace(/ /g, '_') +
     ''
   compartiendo.value = true
@@ -71,7 +71,7 @@ const unirseSesion = (sesion: string) => {
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
       </span>
-
+      
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
         {{ appStore.cancion?.cancion }} -
         {{ appStore.cancion?.banda }}
