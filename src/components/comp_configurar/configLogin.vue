@@ -2,20 +2,20 @@
 import { ref, onMounted } from 'vue' // Import onMounted
 import { useAppStore } from '../../stores/appStore'
 import { Configuracion } from '../../modelo/configuracion' // Import Configuracion
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs'
 
 async function crearLoginSeguro() {
-  const hash = await bcrypt.hash(password.value, 12);
+  const hash = await bcrypt.hash(password.value, 12)
 
   const loginData = new datosLogin(
     'USERPASS',
     username.value,
     hash,
-    mantenerseLogeado.value
-  );
+    mantenerseLogeado.value,
+  )
 
   // Ahora podés enviar loginData donde lo necesites
-  return loginData;
+  return loginData
 }
 
 const username = ref('')
@@ -30,7 +30,7 @@ onMounted(() => {
   const config = Configuracion.getInstance()
   if (config.loginDefault && config.loginDefault.mantenerseLogeado) {
     username.value = config.loginDefault.usuario
-  //  password.value = config.loginDefault.password
+    //  password.value = config.loginDefault.password
     mantenerseLogeado.value = config.loginDefault.mantenerseLogeado
   }
 })
@@ -42,40 +42,35 @@ function loginWithCredentials() {
     return
   }
 
-      
-
-
-    crearLoginSeguro().then((secureLoginData) => {
+  crearLoginSeguro()
+    .then((secureLoginData) => {
       appStore.aplicacion.login(secureLoginData)
 
-        // Save login data if "mantenerseLogeado" is checked
-  const config = Configuracion.getInstance()
-  if (mantenerseLogeado.value) {
-    config.loginDefault = secureLoginData
-    config.loginDefault.mantenerseLogeado = true
-  } else {
-    config.loginDefault = null
-  }
-  config.guardarEnLocalStorage()
-
-
-    }).catch((error) => {
-      console.error("Error al crear el login seguro:", error);
+      // Save login data if "mantenerseLogeado" is checked
+      const config = Configuracion.getInstance()
+      if (mantenerseLogeado.value) {
+        config.loginDefault = secureLoginData
+        config.loginDefault.mantenerseLogeado = true
+      } else {
+        config.loginDefault = null
+      }
+      config.guardarEnLocalStorage()
+    })
+    .catch((error) => {
+      console.error('Error al crear el login seguro:', error)
       appStore.estadoLogin = 'error'
     })
-  
-  
 
   // Aquí iría la lógica de autenticación con tu backend
 }
 
 function handleSuccess(response: any) {
-  const token = response.credential; // puede variar según la librería
-  console.log("Token recibido:", token);
+  const token = response.credential // puede variar según la librería
+  console.log('Token recibido:', token)
 }
 
 function handleError(error: any) {
-  console.error("Error en el inicio de sesión con Google:", error);
+  console.error('Error en el inicio de sesión con Google:', error)
 }
 function logout() {
   mantenerseLogeado.value = false
@@ -140,12 +135,11 @@ function logout() {
         <span v-if="appStore.estadoLogin == 'init-login'">Iniciando...</span>
       </div>
     </div>
-    
+
     <div class="google-login">
       <p>O inicia sesión con:</p>
       <GoogleLogin @success="handleSuccess" />
     </div>
-
   </div>
 </template>
 
