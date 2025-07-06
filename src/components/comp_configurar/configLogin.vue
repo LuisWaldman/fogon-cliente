@@ -21,7 +21,6 @@ async function crearLoginSeguro() {
 const username = ref('')
 const password = ref('')
 const mantenerseLogeado = ref(false) // Added ref for "mantenerseLogeado"
-const loginMessages = ref([] as string[])
 import { GoogleLogin } from 'vue3-google-login'
 import { datosLogin } from '../../modelo/datosLogin'
 
@@ -64,12 +63,11 @@ function loginWithCredentials() {
   // Aquí iría la lógica de autenticación con tu backend
 }
 
-function handleSuccess(response: any) {
-  const token = response.credential // puede variar según la librería
-  console.log('Token recibido:', token)
+function handleSuccess(response: unknown) {
+  console.log('Token recibido:', response)
 }
 
-function handleError(error: any) {
+function handleError(error: unknown) {
   console.error('Error en el inicio de sesión con Google:', error)
 }
 function logout() {
@@ -138,7 +136,7 @@ function logout() {
 
     <div class="google-login">
       <p>O inicia sesión con:</p>
-      <GoogleLogin @success="handleSuccess" />
+      <GoogleLogin @success="handleSuccess" @error="handleError" />
     </div>
   </div>
 </template>
