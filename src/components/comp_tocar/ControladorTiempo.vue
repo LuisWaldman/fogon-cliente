@@ -77,6 +77,7 @@ function updateCompas() {
       width="100%"
       style="table-layout: fixed; margin-left: 12px"
       margin="0"
+      
     >
       <tbody>
         <tr>
@@ -91,7 +92,7 @@ function updateCompas() {
             />
           </td>
         </tr>
-        <tr>
+        <tr class="partes_control">
           <td
             style="
               text-align: center;
@@ -200,6 +201,12 @@ function updateCompas() {
   }
   .spnTiempo {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .partes_control {
+    display: none !important;
   }
 }
 </style>
