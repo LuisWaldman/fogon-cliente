@@ -129,7 +129,7 @@ const unirseSesion = (sesion: string) => {
               <i class="bi bi-people"></i>
               Sesión
             </a>
-            <ul class="dropdown-menu">
+            <ul class="">
               <li v-if="appStore.estadoSesion != 'conectado'">
                 <a class="dropdown-item" href="#" @click="crearSesion">
                   <i class="bi bi-plus-circle"></i>
@@ -206,7 +206,6 @@ const unirseSesion = (sesion: string) => {
 .compartir_sesion {
   position: absolute;
   top: 160px;
-  left: 160px;
   border: 7px double #a9a8f6;
   color: #a9a8f6;
   padding: 5px 10px;
@@ -290,8 +289,13 @@ const unirseSesion = (sesion: string) => {
   z-index: 10;
 }
 
-/* Cambia la disposición de los elementos en dispositivos móviles */
+
+
 @media (max-width: 768px) {
+  .compartir_sesion {
+    left: 10;
+  }
+
   .titulocancioncontrol {
     font-size: 1.5rem; /* Reduce el tamaño del texto en móviles */
     margin-left: 0; /* Alinea a la izquierda */
