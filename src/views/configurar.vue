@@ -20,7 +20,6 @@ if (appStore.estado === 'conectado') {
   viendo.value = 'servidores'
 }*/
 
-
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
@@ -29,9 +28,9 @@ function clickOpcion(viendostr: string) {
 
 <template>
   <div style="width: 100%">
-    <div style="display: flex;" >
+    <div style="display: flex">
       <div>
-        <div class="" >
+        <div class="">
           <ul class="nav nav-pills flex-column mb-auto">
             <li @click="clickOpcion('login')">
               <a
@@ -101,23 +100,21 @@ function clickOpcion(viendostr: string) {
       </div>
 
       <div class="innerConfig">
-          <configlogin v-if="viendo == 'login'"></configlogin>
-          <configPerfil v-if="viendo == 'perfil'"></configPerfil>
-          <configsesion v-if="viendo == 'sesion'"> </configsesion>
-          <configServidores v-if="viendo == 'servidores'"> </configServidores>
-          <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
+        <configlogin v-if="viendo == 'login'"></configlogin>
+        <configPerfil v-if="viendo == 'perfil'"></configPerfil>
+        <configsesion v-if="viendo == 'sesion'"> </configsesion>
+        <configServidores v-if="viendo == 'servidores'"> </configServidores>
+        <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
 .innerConfig {
   padding: 20px;
   display: flex;
 }
-
 
 #btnGuardar {
   font-size: 30px;

@@ -77,7 +77,6 @@ function updateCompas() {
       width="100%"
       style="table-layout: fixed; margin-left: 12px"
       margin="0"
-      
     >
       <tbody>
         <tr>

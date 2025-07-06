@@ -11,6 +11,8 @@ import { HelperSincro } from './modelo/sincro/HelperSincro'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
+  reproductorDesconectado: Reproductor = this.reproductor
+  reproductorConectado: ReproductorConectado | null = null
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
@@ -104,7 +106,12 @@ export default class Aplicacion {
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
       if (this.cliente != null) {
-        this.reproductor = new ReproductorConectado(this.cliente, this.token)
+        this.reproductorConectado = new ReproductorConectado(
+          this.cliente,
+          this.token,
+        )
+        this.reproductor.detenerReproduccion()
+        this.reproductor = this.reproductorConectado
       }
     })
     this.cliente.setSesionFailedHandler((error: string) => {
@@ -228,7 +235,8 @@ export default class Aplicacion {
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
     appStore.estadoSesion = 'desconectado'
-    this.reproductor = new Reproductor()
+    this.reproductor.detenerReproduccion()
+    this.reproductor = this.reproductorDesconectado
     this.cliente.SalirSesion()
   }
 
