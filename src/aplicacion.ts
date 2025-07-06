@@ -8,9 +8,12 @@ import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
 import { ReproductorConectado } from './modelo/reproductorConectado'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
+import { Sesion } from './modelo/sesion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
+  reproductorDesconectado: Reproductor = this.reproductor
+  reproductorConectado: ReproductorConectado | null = null
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
@@ -90,7 +93,32 @@ export default class Aplicacion {
           this.login(config.loginDefault)
         }
       }
+      if (status === 'desconectado') {
+        appStore.estado = 'desconectado'
+        this.reproductor.detenerReproduccion()
+        this.reproductor = this.reproductorDesconectado
+        this.cliente = null
+      }
     })
+
+    this.cliente.setConectadoHandler((token: string) => {
+      console.log(`Conectado: ${token}`)
+      this.token = token
+      this.cargarSesiones()
+      let sesiondef = localStorage.getItem('sesionDefault') || ''
+      const urlParams = new URLSearchParams(window.location.search)
+      const sesionurl = urlParams.get('sesion')
+      if (sesionurl) {
+        sesiondef = sesionurl.replace(/_/g, ' ')
+      }
+      if (sesiondef !== '') {
+        this.UnirmeSesion(sesiondef)
+      }
+    })
+    this.cliente.setSesionesActualizadasHandler(() => {
+      this.cargarSesiones()
+    })
+
     this.cliente.connectar()
     console.log(`Conectando al servidor: ${url}`)
     this.cliente.setEnsesionHandler((sesionCreada: string) => {
@@ -99,7 +127,12 @@ export default class Aplicacion {
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
       if (this.cliente != null) {
-        this.reproductor = new ReproductorConectado(this.cliente, this.token)
+        this.reproductorConectado = new ReproductorConectado(
+          this.cliente,
+          this.token,
+        )
+        this.reproductor.detenerReproduccion()
+        this.reproductor = this.reproductorConectado
       }
     })
     this.cliente.setSesionFailedHandler((error: string) => {
@@ -112,17 +145,11 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.rolSesion = mensaje
     })
-    this.cliente.setLoginSuccessHandler((token: string) => {
-      console.log(`Inicio de sesión exitoso. Token: ${token}`)
+    this.cliente.setLoginSuccessHandler(() => {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       appStore.estadoLogin = 'logueado'
-      this.token = token
       this.getperfilUsuario()
-      const sesiondef = localStorage.getItem('sesionDefault') || ''
-      if (sesiondef !== '') {
-        this.UnirmeSesion(sesiondef)
-      }
     })
     this.cliente.setLoginFailedHandler((error: string) => {
       console.error(`Error al iniciar sesión: ${error}`)
@@ -135,6 +162,38 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.mensajes.push(msj)
     })
+  }
+
+  cargarSesiones() {
+    this.HTTPGet('sesiones')
+      .then((response) => response.json())
+      .then((data) => {
+        const appStore = useAppStore()
+        console.log('Sesiones obtenidas:', data)
+        appStore.sesiones = []
+        data.forEach(
+          (item: {
+            Nombre: string
+            Usuarios: number
+            Estado: string
+            Latitud: number
+            Longitud: number
+          }) => {
+            appStore.sesiones.push(
+              new Sesion(
+                item.Nombre,
+                item.Usuarios,
+                item.Estado,
+                item.Latitud,
+                item.Longitud,
+              ),
+            )
+          },
+        )
+      })
+      .catch((error) => {
+        console.error('Error al obtener el perfil del usuario:', error)
+      })
   }
 
   async HTTPGet(urlGet: string): Promise<Response> {
@@ -225,7 +284,8 @@ export default class Aplicacion {
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
     appStore.estadoSesion = 'desconectado'
-    this.reproductor = new Reproductor()
+    this.reproductor.detenerReproduccion()
+    this.reproductor = this.reproductorDesconectado
     this.cliente.SalirSesion()
   }
 

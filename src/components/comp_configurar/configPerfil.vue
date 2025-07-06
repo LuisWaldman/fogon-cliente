@@ -109,9 +109,9 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
 .controlPerfil {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .fileUp {

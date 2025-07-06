@@ -91,7 +91,7 @@ function updateCompas() {
             />
           </td>
         </tr>
-        <tr>
+        <tr class="partes_control">
           <td
             style="
               text-align: center;
@@ -200,6 +200,12 @@ function updateCompas() {
   }
   .spnTiempo {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .partes_control {
+    display: none !important;
   }
 }
 </style>

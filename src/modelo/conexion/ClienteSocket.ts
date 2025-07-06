@@ -3,7 +3,8 @@ import type { datosLogin } from '../datosLogin'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
-  loginSuccess: (data: { token: string }) => void
+  loginSuccess: () => void
+  conectado: (data: { token: string }) => void
   loginFailed: (error: string) => void
   ensesion: (sesion: string) => void
   sesionFailed: (error: string) => void
@@ -13,6 +14,7 @@ interface ServerToClientEvents {
   cancionIniciada: (compas: number, desde: string) => void
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
+  sesionesActualizadas: () => void
 }
 
 interface ClientToServerEvents {
@@ -31,9 +33,19 @@ interface ClientToServerEvents {
 export class ClienteSocket {
   private socket!: Socket<ServerToClientEvents, ClientToServerEvents>
 
-  private loginSuccessHandler?: (token: string) => void
-  public setLoginSuccessHandler(handler: (token: string) => void): void {
+  private loginSuccessHandler?: () => void
+  public setLoginSuccessHandler(handler: () => void): void {
     this.loginSuccessHandler = handler
+  }
+
+  private sesionesActualizadasHandler?: () => void
+  public setSesionesActualizadasHandler(handler: () => void): void {
+    this.sesionesActualizadasHandler = handler
+  }
+
+  private conectadoHandler?: (token: string) => void
+  public setConectadoHandler(handler: (token: string) => void): void {
+    this.conectadoHandler = handler
   }
 
   private cancionActualizadaHandler?: (cancion: string) => void
@@ -145,10 +157,19 @@ export class ClienteSocket {
       console.log('rolSesion received with mensaje:', mensaje)
       this.rolSesionHandler?.(mensaje)
     })
+    socket.on('sesionesActualizadas', () => {
+      console.log('sesionesActualizadas received')
+      this.sesionesActualizadasHandler?.()
+    })
 
-    socket.on('loginSuccess', (data: { token: string }) => {
-      console.log('loginSuccess received with token:', data.token)
-      this.loginSuccessHandler?.(data.token)
+    socket.on('loginSuccess', () => {
+      console.log('loginSuccess received')
+      this.loginSuccessHandler?.()
+    })
+
+    socket.on('conectado', (data: { token: string }) => {
+      console.log('conectado received with token:', data.token)
+      this.conectadoHandler?.(data.token)
     })
 
     socket.on('loginFailed', (error: string) => {

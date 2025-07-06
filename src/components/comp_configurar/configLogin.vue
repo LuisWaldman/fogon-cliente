@@ -2,12 +2,26 @@
 import { ref, onMounted } from 'vue' // Import onMounted
 import { useAppStore } from '../../stores/appStore'
 import { Configuracion } from '../../modelo/configuracion' // Import Configuracion
+import bcrypt from 'bcryptjs'
+
+async function crearLoginSeguro() {
+  const hash = await bcrypt.hash(password.value, 12)
+
+  const loginData = new datosLogin(
+    'USERPASS',
+    username.value,
+    hash,
+    mantenerseLogeado.value,
+  )
+
+  // Ahora podés enviar loginData donde lo necesites
+  return loginData
+}
 
 const username = ref('')
 const password = ref('')
 const mantenerseLogeado = ref(false) // Added ref for "mantenerseLogeado"
-const loginMessages = ref([] as string[])
-//import { GoogleLogin } from 'vue3-google-login'
+import { GoogleLogin } from 'vue3-google-login'
 import { datosLogin } from '../../modelo/datosLogin'
 
 // Load saved login data on component mount
@@ -15,7 +29,7 @@ onMounted(() => {
   const config = Configuracion.getInstance()
   if (config.loginDefault && config.loginDefault.mantenerseLogeado) {
     username.value = config.loginDefault.usuario
-    password.value = config.loginDefault.password
+    //  password.value = config.loginDefault.password
     mantenerseLogeado.value = config.loginDefault.mantenerseLogeado
   }
 })
@@ -23,33 +37,39 @@ onMounted(() => {
 const appStore = useAppStore()
 function loginWithCredentials() {
   if (username.value.trim() === '' || password.value.trim() === '') {
-    loginMessages.value.push('Por favor, ingrese usuario y contraseña.')
+    appStore.estadoLogin = 'error'
     return
   }
-  loginMessages.value.push(
-    `Intentando iniciar sesión como ${username.value}...`,
-  )
-  const loginData = new datosLogin(
-    'USERPASS',
-    username.value,
-    password.value,
-    mantenerseLogeado.value,
-  )
-  appStore.aplicacion.login(loginData)
 
-  // Save login data if "mantenerseLogeado" is checked
-  const config = Configuracion.getInstance()
-  if (mantenerseLogeado.value) {
-    config.loginDefault = loginData
-    config.loginDefault.mantenerseLogeado = true
-  } else {
-    config.loginDefault = null
-  }
-  config.guardarEnLocalStorage()
+  crearLoginSeguro()
+    .then((secureLoginData) => {
+      appStore.aplicacion.login(secureLoginData)
+
+      // Save login data if "mantenerseLogeado" is checked
+      const config = Configuracion.getInstance()
+      if (mantenerseLogeado.value) {
+        config.loginDefault = secureLoginData
+        config.loginDefault.mantenerseLogeado = true
+      } else {
+        config.loginDefault = null
+      }
+      config.guardarEnLocalStorage()
+    })
+    .catch((error) => {
+      console.error('Error al crear el login seguro:', error)
+      appStore.estadoLogin = 'error'
+    })
 
   // Aquí iría la lógica de autenticación con tu backend
 }
 
+function handleSuccess(response: unknown) {
+  console.log('Token recibido:', response)
+}
+
+function handleError(error: unknown) {
+  console.error('Error en el inicio de sesión con Google:', error)
+}
 function logout() {
   mantenerseLogeado.value = false
 
@@ -64,7 +84,7 @@ function logout() {
 
 <template>
   <div class="config-login">
-    <h2>Iniciar Sesión</h2>
+    <h2>Login</h2>
     <span
       v-if="appStore.estadoLogin == 'error'"
       style="font-size: 20px; color: red"
@@ -105,26 +125,19 @@ function logout() {
           @click="loginWithCredentials"
           v-if="appStore.estadoLogin == '' || appStore.estadoLogin == 'error'"
         >
-          Iniciar Sesión
+          Login
         </button>
         <button @click="logout" v-if="appStore.estadoLogin == 'logueado'">
-          Cerrar Sesion
+          Salir
         </button>
         <span v-if="appStore.estadoLogin == 'init-login'">Iniciando...</span>
       </div>
     </div>
-    <!-- 
+
     <div class="google-login">
       <p>O inicia sesión con:</p>
       <GoogleLogin @success="handleSuccess" @error="handleError" />
     </div>
-
-    <div class="login-messages" v-if="loginMessages.length > 0">
-      <h3>Mensajes:</h3>
-      <div v-for="(message, index) in loginMessages" :key="index">
-        {{ message }}
-      </div>
-    </div>-->
   </div>
 </template>
 

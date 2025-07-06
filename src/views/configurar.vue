@@ -5,19 +5,19 @@ import configlogin from '../components/comp_configurar/configLogin.vue'
 import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
-import ConfigVistas from '../components/comp_configurar/ConfigVistas.vue'
 
 import { useAppStore } from '../stores/appStore'
 const appStore = useAppStore()
 // Definir la canción y el contexto
-const viendo = ref('servidores')
+const viendo = ref('login')
+/*
 if (appStore.estado === 'conectado') {
   viendo.value = 'login'
 } else if (appStore.estadoLogin === 'logueado') {
   viendo.value = 'sesion'
 } else {
   viendo.value = 'servidores'
-}
+}*/
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
@@ -27,9 +27,9 @@ function clickOpcion(viendostr: string) {
 
 <template>
   <div style="width: 100%">
-    <div class="row">
-      <div class="col-3">
-        <div class="" style="width: 280px">
+    <div style="display: flex">
+      <div>
+        <div class="">
           <ul class="nav nav-pills flex-column mb-auto">
             <li @click="clickOpcion('login')">
               <a
@@ -61,8 +61,8 @@ function clickOpcion(viendostr: string) {
             <li
               @click="clickOpcion('sesion')"
               v-if="
-                appStore.estado === 'conectado' ||
-                appStore.estadoLogin === 'logueado'
+                appStore.estado == 'conectado' ||
+                appStore.estadoLogin == 'logueado'
               "
             >
               <a
@@ -86,18 +86,6 @@ function clickOpcion(viendostr: string) {
           </ul>
 
           <hr />
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="clickOpcion('vistas')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'vistas' }"
-              >
-                Vistas
-              </a>
-            </li>
-          </ul>
-          <hr />
 
           <ul class="nav nav-pills flex-column mb-auto">
             <li @click="clickOpcion('acercade')">
@@ -113,29 +101,12 @@ function clickOpcion(viendostr: string) {
         </div>
       </div>
 
-      <div class="col-9 innerConfig">
-        <div v-if="viendo == 'login'" class="container">
-          <configlogin></configlogin>
-        </div>
-        <div v-if="viendo == 'perfil'" class="container">
-          <configPerfil></configPerfil>
-        </div>
-
-        <div v-if="viendo == 'sesion'">
-          <configsesion> </configsesion>
-        </div>
-
-        <div v-if="viendo == 'servidores'">
-          <configServidores> </configServidores>
-        </div>
-
-        <div v-if="viendo == 'vistas'">
-          <ConfigVistas></ConfigVistas>
-        </div>
-
-        <div v-if="viendo == 'acercade'">
-          <configAcercaDe></configAcercaDe>
-        </div>
+      <div class="innerConfig">
+        <configlogin v-if="viendo == 'login'"></configlogin>
+        <configPerfil v-if="viendo == 'perfil'"></configPerfil>
+        <configsesion v-if="viendo == 'sesion'"> </configsesion>
+        <configServidores v-if="viendo == 'servidores'"> </configServidores>
+        <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
       </div>
     </div>
   </div>
@@ -144,6 +115,7 @@ function clickOpcion(viendostr: string) {
 <style scoped>
 .innerConfig {
   padding: 20px;
+  display: flex;
 }
 
 #btnGuardar {

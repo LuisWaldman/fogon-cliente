@@ -128,6 +128,7 @@ defineExpose({ Actualizar })
               v-for="(aco, index_aco) in cancion.acordes.partes[parte].acordes"
               :key="index_aco"
             >
+              <!-- SIN ENTER -->
               <div
                 v-if="!letras[index][index_aco].includes('/n')"
                 :class="{
@@ -141,6 +142,8 @@ defineExpose({ Actualizar })
                 </div>
                 <div class="divletra">{{ letras[index][index_aco] }}&nbsp;</div>
               </div>
+
+              <!-- 1 CON ENTER -->
               <div
                 v-if="
                   letras[index][index_aco] &&
@@ -159,6 +162,8 @@ defineExpose({ Actualizar })
                   {{ letras[index][index_aco].split('/n')[0] }}
                 </div>
               </div>
+
+              <!-- 1 BREACK CON ENTER-->
               <div
                 class="break"
                 v-if="
@@ -166,6 +171,7 @@ defineExpose({ Actualizar })
                   letras[index][index_aco].includes('/n')
                 "
               ></div>
+              <!-- 1 SIN ENTER-->
               <div
                 v-if="
                   letras[index][index_aco] &&
@@ -177,7 +183,9 @@ defineExpose({ Actualizar })
                     mostrandoCompasParte === index_aco,
                 }"
               >
-                <div><div class="noacorde">&nbsp;</div></div>
+                <div>
+                  <div class="acordediv">&nbsp;</div>
+                </div>
                 <div class="divletra">
                   {{ letras[index][index_aco].split('/n')[1] }}
                 </div>
