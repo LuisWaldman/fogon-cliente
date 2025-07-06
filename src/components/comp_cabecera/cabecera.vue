@@ -11,7 +11,11 @@ const compartiendo = ref(false)
 
 function compartir() {
   copiado.value = false
-  urlcompartida.value = window.location.origin + "/tocar/?sesion=" + appStore.sesion.nombre.replace(/ /g, '_') + ""
+  urlcompartida.value =
+    window.location.origin +
+    '/tocar/?sesion=' +
+    appStore.sesion.nombre.replace(/ /g, '_') +
+    ''
   compartiendo.value = true
 }
 
@@ -182,21 +186,20 @@ const unirseSesion = (sesion: string) => {
     <div>
       <qr :url="urlcompartida"></qr>
     </div>
-    <div style="background-color: #353333; display: flex;">
-      <span style="margin: 3px;">{{ urlcompartida }}</span>
-<button v-if="!copiado" class="btn btn-secondary" @click="copiarUrl">
-      <i class="bi bi-clipboard"></i>
-      Copiar URL
-    </button>
-    <div v-if="copiado" style="border: 1px solid; margin-left: 10px;">      
-      Copiado
+    <div style="background-color: #353333; display: flex">
+      <span style="margin: 3px">{{ urlcompartida }}</span>
+      <button v-if="!copiado" class="btn btn-secondary" @click="copiarUrl">
+        <i class="bi bi-clipboard"></i>
+        Copiar URL
+      </button>
+      <div v-if="copiado" style="border: 1px solid; margin-left: 10px">
+        Copiado
+      </div>
     </div>
-
-    </div>
-    <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <div style="display: flex; justify-content: center; margin-top: 20px">
       <button class="btn btn-secondary" @click="dejarDeCompartir">
-      <i class="bi bi-x-circle"></i>
-      Cerrar
+        <i class="bi bi-x-circle"></i>
+        Cerrar
       </button>
     </div>
   </div>
@@ -213,8 +216,6 @@ const unirseSesion = (sesion: string) => {
 
   z-index: 1000;
   backdrop-filter: blur(2px);
-  
-  
 }
 
 /* Aumenta el tamaño de la fuente en pantallas grandes */
@@ -288,8 +289,6 @@ const unirseSesion = (sesion: string) => {
   right: 1.5rem;
   z-index: 10;
 }
-
-
 
 @media (max-width: 768px) {
   .compartir_sesion {
