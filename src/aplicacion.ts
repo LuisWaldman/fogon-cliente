@@ -100,12 +100,20 @@ export default class Aplicacion {
         this.cliente = null
       }
     })
-    
 
     this.cliente.setConectadoHandler((token: string) => {
       console.log(`Conectado: ${token}`)
       this.token = token
       this.cargarSesiones()
+      let sesiondef = localStorage.getItem('sesionDefault') || ''
+      const urlParams = new URLSearchParams(window.location.search)
+      const sesionurl = urlParams.get('sesion')
+      if (sesionurl) {
+        sesiondef = sesionurl.replace(/_/g, ' ')
+      }
+      if (sesiondef !== '') {
+        this.UnirmeSesion(sesiondef)
+      }
     })
     this.cliente.setSesionesActualizadasHandler(() => {
       this.cargarSesiones()
@@ -142,10 +150,6 @@ export default class Aplicacion {
       appStore.estado = 'logueado'
       appStore.estadoLogin = 'logueado'
       this.getperfilUsuario()
-      const sesiondef = localStorage.getItem('sesionDefault') || ''
-      if (sesiondef !== '') {
-        this.UnirmeSesion(sesiondef)
-      }
     })
     this.cliente.setLoginFailedHandler((error: string) => {
       console.error(`Error al iniciar sesión: ${error}`)

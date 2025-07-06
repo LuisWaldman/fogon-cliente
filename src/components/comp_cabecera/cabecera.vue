@@ -1,7 +1,30 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
+import qr from './qr.vue'
 
 const appStore = useAppStore()
+
+const copiado = ref(false)
+const urlcompartida = ref('')
+const compartiendo = ref(false)
+
+function compartir() {
+  copiado.value = false
+  urlcompartida.value = window.location.origin + "/tocar/?sesion=" + appStore.sesion.nombre.replace(/ /g, '_') + ""
+  compartiendo.value = true
+}
+
+function dejarDeCompartir() {
+  compartiendo.value = false
+}
+
+function copiarUrl() {
+  if (urlcompartida.value) {
+    navigator.clipboard.writeText(urlcompartida.value)
+    copiado.value = true
+  }
+}
 
 const crearSesion = () => {
   const nombreSesion = appStore.perfil?.nombre
@@ -80,9 +103,12 @@ const unirseSesion = (sesion: string) => {
           class="dropdown-menu dropdown-menu-end"
           aria-labelledby="dropdownMenuButton"
         >
-          
           <li>
-            <router-link class="dropdown-item" to="/tocar" v-if="$route.path != '/tocar'" >
+            <router-link
+              class="dropdown-item"
+              to="/tocar"
+              v-if="$route.path != '/tocar'"
+            >
               <i class="bi bi-gear"></i>
               Tocar
             </router-link>
@@ -111,12 +137,16 @@ const unirseSesion = (sesion: string) => {
                 </a>
               </li>
               <div v-if="appStore.estadoSesion != 'conectado'">
-              <li v-for="(sesion, id) in appStore.sesiones" :key="id">
-                <a class="dropdown-item" href="#" @click="unirseSesion(sesion.nombre)">
-                  <i class="bi bi-box-arrow-in-right"></i>
-                  {{ sesion.nombre }}
-                </a>
-              </li>
+                <li v-for="(sesion, id) in appStore.sesiones" :key="id">
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    @click="unirseSesion(sesion.nombre)"
+                  >
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    {{ sesion.nombre }}
+                  </a>
+                </li>
               </div>
 
               <li v-if="appStore.estadoSesion === 'conectado'">
@@ -126,7 +156,7 @@ const unirseSesion = (sesion: string) => {
                 </a>
               </li>
               <li v-if="appStore.estadoSesion === 'conectado'">
-                <a class="dropdown-item" href="#" @click="unirseSesion">
+                <a class="dropdown-item" href="#" @click="compartir">
                   <i class="bi bi-share"></i>
                   Compartir
                 </a>
@@ -135,7 +165,11 @@ const unirseSesion = (sesion: string) => {
           </li>
 
           <li>
-            <router-link class="dropdown-item" to="/configurar" v-if="$route.path != '/configurar'" >
+            <router-link
+              class="dropdown-item"
+              to="/configurar"
+              v-if="$route.path != '/configurar'"
+            >
               <i class="bi bi-gear"></i>
               Configurar
             </router-link>
@@ -144,9 +178,46 @@ const unirseSesion = (sesion: string) => {
       </div>
     </div>
   </nav>
+  <div class="compartir_sesion" v-if="compartiendo">
+    <div>
+      <qr :url="urlcompartida"></qr>
+    </div>
+    <div style="background-color: #353333; display: flex;">
+      <span style="margin: 3px;">{{ urlcompartida }}</span>
+<button v-if="!copiado" class="btn btn-secondary" @click="copiarUrl">
+      <i class="bi bi-clipboard"></i>
+      Copiar URL
+    </button>
+    <div v-if="copiado" style="border: 1px solid; margin-left: 10px;">      
+      Copiado
+    </div>
+
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <button class="btn btn-secondary" @click="dejarDeCompartir">
+      <i class="bi bi-x-circle"></i>
+      Cerrar
+      </button>
+    </div>
+  </div>
 </template>
 
 <style scoped>
+.compartir_sesion {
+  position: absolute;
+  top: 160px;
+  left: 160px;
+  border: 7px double #a9a8f6;
+  color: #a9a8f6;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  
+  
+}
+
 /* Aumenta el tamaño de la fuente en pantallas grandes */
 @media (min-width: 1024px) {
   .navbar-nav {

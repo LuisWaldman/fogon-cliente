@@ -44,6 +44,7 @@ if (cancion) {
   appStore.aplicacion.SetCancion(cancion)
 }
 
+
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
   localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')
