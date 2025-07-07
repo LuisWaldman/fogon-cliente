@@ -71,7 +71,7 @@ const unirseSesion = (sesion: string) => {
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon: Red musical distribuida
       </span>
-      
+
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
         {{ appStore.cancion?.cancion }} -
         {{ appStore.cancion?.banda }}
