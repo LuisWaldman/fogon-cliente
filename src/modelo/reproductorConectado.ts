@@ -77,17 +77,7 @@ export class ReproductorConectado extends Reproductor {
   }
 
   override onInicioCiclo() {
-    const appStore = useAppStore()
-    appStore.golpeDelCompas = appStore.golpeDelCompas + 1
-    if (appStore.golpeDelCompas >= appStore.cancion.compasCantidad) {
-      appStore.golpeDelCompas = 0
-      if (appStore.estadoReproduccion === 'Iniciando') {
-        appStore.estadoReproduccion = 'Reproduciendo'
-      } else {
-        appStore.compas = appStore.compas + 1
-        this.sincronizar()
-      }
-    }
+    this.sincronizar()
   }
 
   override async SetCancion(cancionstr: string) {
