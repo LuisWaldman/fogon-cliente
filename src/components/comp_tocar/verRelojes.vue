@@ -3,9 +3,10 @@ import { useAppStore } from '../../stores/appStore'
 import RelojControl from './VReloj.vue'
 import { ref } from 'vue'
 import { Reloj } from '../../modelo/reloj'
-
+import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 const appStore = useAppStore()
-
+const helper = HelperSincro.getInstance()
+    
 const momentoactual = ref(new Date())
 const actualizandoMomento = ref(false)
 const actualizandoDelay = ref(false)
@@ -14,10 +15,10 @@ const delayactualizar = ref(0)
 const reloj = new Reloj()
 reloj.duracionIntervalo = 1000 // 1 segundo
 reloj.setIniciaHandler(() => {
-  momentoactual.value = new Date()
+  momentoactual.value = helper.ObtenerMomento()
 })
 reloj.setIniciaCicloHandler(() => {
-  momentoactual.value = new Date()
+  momentoactual.value = helper.ObtenerMomento()
   actualizarDelay()
 })
 
