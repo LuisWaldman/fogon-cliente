@@ -10,17 +10,8 @@ const appStore = useAppStore()
     <h1 style="color: blueviolet; margin-bottom: 0px; padding-bottom: 0px">
       Bienvenido al Fogon
     </h1>
-    <span class="version">V. sesiones</span>
+    <span class="version">V. relojes</span>
 
-    <div
-      class="estadoTocando"
-      v-if="
-        appStore.estadoReproduccion === 'Reproduciendo' ||
-        appStore.estadoSesion === 'conectado'
-      "
-    >
-      <router-link class="tocar" to="/tocar"> 🎸 Volver al tema </router-link>
-    </div>
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
       off-line. En esta version, podes ver las noticias locales
