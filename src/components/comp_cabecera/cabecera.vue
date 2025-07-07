@@ -113,7 +113,7 @@ const unirseSesion = (sesion: string) => {
               to="/tocar"
               v-if="$route.path != '/tocar'"
             >
-              <i class="bi bi-gear"></i>
+              <i>🎸</i>
               Tocar
             </router-link>
           </li>
