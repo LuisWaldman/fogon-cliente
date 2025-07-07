@@ -25,9 +25,6 @@ function calculoRelojes() {
         appStore.EstadoSincro.compas,
     )
   }
-  //appStore.compas = est.compas
-  //appStore.golpeDelCompas = est.golpeEnCompas
-  //appStore.estadoReproduccion = est.estado
 }
 </script>
 

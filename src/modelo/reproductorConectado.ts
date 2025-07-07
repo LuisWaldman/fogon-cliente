@@ -24,10 +24,11 @@ export class ReproductorConectado extends Reproductor {
       appStore.sesSincroCancion.desdeCompas, // duracionGolpe
     )
 
-    const est = helper.sincronizar(sincro, momento)
     appStore.sesSincroCancion = sincro
+    const est = helper.sincronizar(sincro, momento)
     appStore.EstadoSincro = est
     appStore.compas = est.compas
+    appStore.momentoRecibioInicio = momento
     appStore.golpeDelCompas = est.golpeEnCompas
     appStore.estadoReproduccion = est.estado
     this.reloj.setDelay(est.delay)
@@ -42,13 +43,14 @@ export class ReproductorConectado extends Reproductor {
       this.CargarCancion(cancion)
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: string) => {
+      console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
       const appStore = useAppStore()
       const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
       appStore.sesSincroCancion = new SincroCancion(
         duracionGolpe,
         new Date(desde),
-        compas,
-        appStore.sesSincroCancion.desdeCompas, // duracionGolpe
+        appStore.cancion?.compasCantidad || 4, // golpesxcompas
+        compas, // duracionGolpe
       )
       this.sincronizar()
       if (appStore.cancion) {

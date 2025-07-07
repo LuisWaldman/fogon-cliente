@@ -13,7 +13,7 @@ function compartir() {
   copiado.value = false
   urlcompartida.value =
     window.location.origin +
-    '/tocar/?sesion=' +
+    '/tocar?sesion=' +
     appStore.sesion.nombre.replace(/ /g, '_') +
     ''
   compartiendo.value = true
