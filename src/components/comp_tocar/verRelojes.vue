@@ -6,7 +6,7 @@ import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 const appStore = useAppStore()
 const helper = HelperSincro.getInstance()
-    
+
 const momentoactual = ref(new Date())
 const actualizandoMomento = ref(false)
 const actualizandoDelay = ref(false)
