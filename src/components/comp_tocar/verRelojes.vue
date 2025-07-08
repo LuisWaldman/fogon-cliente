@@ -4,6 +4,9 @@ import RelojControl from './VReloj.vue'
 import { ref } from 'vue'
 import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
+
+const emit = defineEmits(['cerrar'])
+
 const appStore = useAppStore()
 const helper = HelperSincro.getInstance()
 
@@ -42,11 +45,18 @@ function actualizarDelay() {
   actualizandoDelay.value = false
 }
 actualizarMomento()
+
+function cerrarRelojes() {
+  emit('cerrar')
+}
 </script>
 
 <template>
   <div class="divRelojes">
-    <h3>RELOJES</h3>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3>RELOJES</h3>
+      
+    </div>
     <div style="display: flex">
       <div style="display: flex">
         Momento Actual: <RelojControl :fecha="momentoactual"></RelojControl>
@@ -84,6 +94,9 @@ actualizarMomento()
       {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
       {{ appStore.EstadoSincro.estado }} Delay:
       {{ appStore.EstadoSincro.delay }} ms
+    </div>
+    <div>
+      <button @click="cerrarRelojes">Cerrar</button>
     </div>
   </div>
 </template>

@@ -94,6 +94,10 @@ function clickverRelojes() {
   verRelojesRef.value = !verRelojesRef.value
 }
 
+function cerrarRelojes() {
+  verRelojesRef.value = false
+}
+
 function cerrareditarPantalla() {
   refEditSize.value = false
 }
@@ -105,7 +109,7 @@ function cerrareditarPantalla() {
       v-if="refEditSize"
       @cerrarEditSize="cerrareditarPantalla"
     ></editVista>
-    <verRelojes v-if="verRelojesRef"></verRelojes>
+    <verRelojes @cerrar="cerrarRelojes" v-if="verRelojesRef"></verRelojes>
 
     <div
       class="pantallaPlay"
