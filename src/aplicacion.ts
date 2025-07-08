@@ -87,10 +87,11 @@ export default class Aplicacion {
     this.cliente.setconexionStatusHandler((status: string) => {
       console.log('status:', status)
       if (status === 'conectado') {
-        HelperSincro.getInstance().ActualizarDelayReloj(url)
-        appStore.estado = 'conectado'
-        if (config.loginDefault?.mantenerseLogeado) {
-          this.login(config.loginDefault)
+        if (this.cliente) {
+          const helper = HelperSincro.getInstance()
+          helper.setCliente(this.cliente)
+          helper.ActualizarDelayReloj()
+          appStore.estado = 'conectado'
         }
       }
       if (status === 'desconectado') {
@@ -105,14 +106,13 @@ export default class Aplicacion {
       console.log(`Conectado: ${token}`)
       this.token = token
       this.cargarSesiones()
-      let sesiondef = localStorage.getItem('sesionDefault') || ''
       const urlParams = new URLSearchParams(window.location.search)
       const sesionurl = urlParams.get('sesion')
-      if (sesionurl) {
-        sesiondef = sesionurl.replace(/_/g, ' ')
+      if (config.loginDefault?.mantenerseLogeado) {
+        this.login(config.loginDefault)
       }
-      if (sesiondef !== '') {
-        this.UnirmeSesion(sesiondef)
+      if (sesionurl) {
+        this.UnirmeSesion(sesionurl.replace(/_/g, ' '))
       }
     })
     this.cliente.setSesionesActualizadasHandler(() => {
@@ -254,6 +254,7 @@ export default class Aplicacion {
   }
 
   CrearSesion(nombre: string): void {
+    HelperSincro.getInstance().ActualizarDelayReloj(this.url)
     console.log(`Intentando crear sesion: ${nombre}`)
     if (!this.cliente) {
       console.error('Cliente no conectado. No se puede iniciar sesión.')
@@ -265,6 +266,7 @@ export default class Aplicacion {
   }
 
   UnirmeSesion(nombre: string): void {
+    HelperSincro.getInstance().ActualizarDelayReloj(this.url)
     console.log(`Intentando crear sesion: ${nombre}`)
     const appStore = useAppStore()
     appStore.rolSesion = 'default'

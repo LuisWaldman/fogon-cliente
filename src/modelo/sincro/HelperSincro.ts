@@ -1,11 +1,30 @@
 import { SincroCancion } from './SincroCancion'
 import { EstadoSincroCancion } from './EstadoSincroCancion'
+import type { ClienteSocket } from '../conexion/ClienteSocket'
 
 export class HelperSincro {
+  private cliente: ClienteSocket | null = null
+
+  private momentoEnviado: Date | null = null
+  private momentoRecibido: Date | null = null
+
+  setCliente(cliente: ClienteSocket) {
+    this.cliente = cliente
+    this.cliente.setTimeHandler((hora: Date) => {
+      if (this.momentoEnviado == null) {
+        return
+      }
+      console.log(`Momento recibido: ${hora.toISOString()}`)
+      const momentoRecibido = new Date(Date.now())
+      const tardo = momentoRecibido.getTime() - this.momentoEnviado.getTime()
+      const timeServerReal = new Date(hora.getTime() + tardo / 2)
+      this.delayReloj = timeServerReal.getTime() - timeServerReal.getTime()
+      console.log(`Tardo: ${tardo} ms,  DELAY ${this.delayReloj}`)
+    })
+  }
+
   private static instance: HelperSincro
   delayReloj: number = 0
-
-  private constructor() {}
 
   public static getInstance(): HelperSincro {
     if (!HelperSincro.instance) {
@@ -20,29 +39,12 @@ export class HelperSincro {
     })
   }
 
-  ActualizarDelayReloj(urlGet: string) {
-    const momento = new Date(Date.now())
-    this.HTTPGet(urlGet)
-      .then((response) => {
-        if (response.ok) {
-          response.json().then((data) => {
-            const momento2 = new Date(Date.now())
-            const tardo = momento2.getTime() - momento.getTime()
-            const horaServidor = new Date(data.hora)
-            const timeServerReal = new Date(horaServidor.getTime() + tardo / 2)
-            this.delayReloj = timeServerReal.getTime() - momento.getTime()
-            console.log(`Tardo: ${tardo} ms,  DELAY ${this.delayReloj}`)
-          })
-        } else {
-          console.error('Error al obtener el delay del reloj')
-        }
-      })
-      .catch((error) => {
-        console.error(
-          'Error en la solicitud HTTP para obtener el delay del reloj:',
-          error,
-        )
-      })
+  ActualizarDelayReloj() {
+    if (!this.cliente) {
+      return
+    }
+    this.momentoEnviado = new Date(Date.now())
+    this.cliente.gettime()
   }
 
   ObtenerMomento(): Date {
