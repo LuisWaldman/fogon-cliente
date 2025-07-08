@@ -53,9 +53,10 @@ function cerrarRelojes() {
 
 <template>
   <div class="divRelojes">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div
+      style="display: flex; justify-content: space-between; align-items: center"
+    >
       <h3>RELOJES</h3>
-      
     </div>
     <div style="display: flex">
       <div style="display: flex">
