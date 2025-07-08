@@ -211,7 +211,7 @@ export class ClienteSocket {
       this.compasActualizadoHandler?.(compas)
     })
 
-    socket.on('time', (hora: string) => {
+    socket.on('time', (hora: Date) => {
       console.log('time received with hora:', hora)
       const fechaHora = new Date(hora)
       this.timeHandler?.(fechaHora)
