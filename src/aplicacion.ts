@@ -254,7 +254,6 @@ export default class Aplicacion {
   }
 
   CrearSesion(nombre: string): void {
-    HelperSincro.getInstance().ActualizarDelayReloj(this.url)
     console.log(`Intentando crear sesion: ${nombre}`)
     if (!this.cliente) {
       console.error('Cliente no conectado. No se puede iniciar sesión.')
@@ -266,7 +265,6 @@ export default class Aplicacion {
   }
 
   UnirmeSesion(nombre: string): void {
-    HelperSincro.getInstance().ActualizarDelayReloj(this.url)
     console.log(`Intentando crear sesion: ${nombre}`)
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
