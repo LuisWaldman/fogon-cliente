@@ -47,6 +47,7 @@ function actualizarDelay() {
 actualizarMomento()
 
 function cerrarRelojes() {
+  reloj.pausar()
   emit('cerrar')
 }
 </script>
