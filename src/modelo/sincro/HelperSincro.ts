@@ -49,7 +49,6 @@ export class HelperSincro {
   }
 
   ObtenerMomento(): Date {
-    console.log(`Obteniendo momento con delay de reloj: ${this.delayReloj} ms`)
     const momento = new Date(Date.now() + this.delayReloj)
     return momento
   }
