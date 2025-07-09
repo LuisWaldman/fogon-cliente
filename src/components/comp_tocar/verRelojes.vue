@@ -15,6 +15,7 @@ const actualizandoMomento = ref(false)
 const actualizandoDelay = ref(false)
 const delayactualizar = ref(0)
 
+
 const reloj = new Reloj()
 reloj.duracionIntervalo = 1000 // 1 segundo
 reloj.setIniciaHandler(() => {
@@ -44,7 +45,11 @@ function actualizarDelay() {
   reloj.setDelay(delayactualizar.value)
   actualizandoDelay.value = false
 }
-actualizarMomento()
+function sincronizar() {
+    const helper = HelperSincro.getInstance()
+    helper.ActualizarDelayReloj()
+
+} 
 
 function cerrarRelojes() {
   reloj.pausar()
@@ -69,16 +74,17 @@ function cerrarRelojes() {
             ⌛
           </button>
           <button v-else @click="dejarActualizarMomento">⏸️</button>
+          <button @click="sincronizar">🔄</button> {{ appStore.estadoConexion}}
         </div>
         <div>{{ delayactualizar }}</div>
       </div>
     </div>
 
-    <div style="display: flex">
-      Recibio Inicio:
+    <div style="display: flex"  v-if="appStore.sesSincroCancion.duracionGolpe != 0">
+      Calcula Inicio:
       <RelojControl :fecha="appStore.momentoRecibioInicio"></RelojControl>
     </div>
-    <div style="border: 1px solid">
+    <div style="border: 1px solid" v-if="appStore.sesSincroCancion.duracionGolpe != 0">
       <div style="display: flex">
         Inicio Sesion:
         <RelojControl
@@ -91,7 +97,7 @@ function cerrarRelojes() {
         {{ appStore.sesSincroCancion.golpesxcompas }}
       </div>
     </div>
-    <div style="display: flex">
+    <div style="display: flex"  v-if="appStore.sesSincroCancion.duracionGolpe != 0">
       Golpe: {{ appStore.EstadoSincro.compas }} ,
       {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
       {{ appStore.EstadoSincro.estado }} Delay:

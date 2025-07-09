@@ -19,7 +19,7 @@ export class HelperSincro {
       const tardo =
         this.momentoRecibido.getTime() - this.momentoEnviado.getTime()
       const timeServerReal = new Date(hora.getTime() + tardo / 2)
-      this.delayReloj = timeServerReal.getTime() - timeServerReal.getTime()
+      this.delayReloj = Date.now() - timeServerReal.getTime()
       console.log(`Tardo: ${tardo} ms,  DELAY ${this.delayReloj}`)
     })
   }
