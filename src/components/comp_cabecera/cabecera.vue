@@ -69,7 +69,7 @@ const unirseSesion = (sesion: string) => {
         />
       </router-link>
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        Fogon: Red musical distribuida
+        Fogon
       </span>
 
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
