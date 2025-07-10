@@ -67,7 +67,10 @@ export const useAppStore = defineStore('app', () => {
     estadoReproduccion.value = nuevoEstado
   }
 
+  const delayGetReloj = ref<number>(0) // Para controlar el tiempo de respuesta del servidor al obtener el reloj
+
   return {
+    delayGetReloj,
     aplicacion,
     cancion,
     listaCanciones,

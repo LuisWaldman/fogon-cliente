@@ -67,14 +67,19 @@ function cerrarRelojes() {
         Momento Actual: <RelojControl :fecha="momentoactual"></RelojControl>
       </div>
       <div>
-        <div>
-          <button v-if="!actualizandoMomento" @click="actualizarMomento">
-            ⌛
-          </button>
-          <button v-else @click="dejarActualizarMomento">⏸️</button>
-          <button @click="sincronizar">🔄</button> {{ appStore.estadoConexion }}
+        <div style="display: flex">
+          <div>
+            <button v-if="!actualizandoMomento" @click="actualizarMomento">
+              ⌛
+            </button>
+            <button v-else @click="dejarActualizarMomento">⏸️</button>
+            <div>{{ delayactualizar }}</div>
+          </div>
+          <div>
+            <button @click="sincronizar">🔄</button>
+            <div>{{ appStore.delayGetReloj }}</div>
+          </div>
         </div>
-        <div>{{ delayactualizar }}</div>
       </div>
     </div>
 
