@@ -4,6 +4,10 @@ import { Reloj } from './reloj'
 
 export class Reproductor {
   reloj: Reloj = new Reloj()
+  private cancion: string = ''
+  public get Cancion() {
+    return this.cancion
+  }
   async SetCancion(cancionstr: string) {
     await this.CargarCancion(cancionstr)
   }
@@ -13,6 +17,7 @@ export class Reproductor {
     const appStore = useAppStore()
     const helperArchivo = new HelperObtenerCancionURL('/canciones')
     appStore.cancion = await helperArchivo.GetCancion(cancionstr)
+    this.cancion = cancionstr
   }
 
   iniciarReproduccion() {

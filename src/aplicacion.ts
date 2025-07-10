@@ -131,6 +131,10 @@ export default class Aplicacion {
           this.cliente,
           this.token,
         )
+        if (this.creandoSesion) {
+          this.reproductorConectado.SetCancion(this.reproductor.Cancion)
+        }
+        this.creandoSesion = false
         this.reproductor.detenerReproduccion()
         this.reproductor = this.reproductorConectado
       }
@@ -253,6 +257,7 @@ export default class Aplicacion {
     return true
   }
 
+  private creandoSesion = false
   CrearSesion(nombre: string): void {
     console.log(`Intentando crear sesion: ${nombre}`)
     if (!this.cliente) {
@@ -261,6 +266,7 @@ export default class Aplicacion {
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
+    this.creandoSesion = true
     this.cliente.CrearSesion(nombre, 3.54, 4.34)
   }
 
