@@ -19,7 +19,7 @@ export class ReproductorConectado extends Reproductor {
     const golpesxcompas = appStore.cancion?.compasCantidad || 4
     const sincro = new SincroCancion(
       duracionGolpe,
-      new Date(appStore.sesSincroCancion.timeInicio),
+      appStore.sesSincroCancion.timeInicio,
       golpesxcompas, // golpesxcompas
       appStore.sesSincroCancion.desdeCompas, // duracionGolpe
     )
