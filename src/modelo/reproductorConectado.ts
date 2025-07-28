@@ -25,7 +25,7 @@ export class ReproductorConectado extends Reproductor {
     )
 
     appStore.sesSincroCancion = sincro
-    const est = helper.sincronizar(sincro, momento)
+    const est = helper.GetEstadoSincro(sincro, momento)
     appStore.EstadoSincro = est
     appStore.compas = est.compas
     appStore.momentoRecibioInicio = momento

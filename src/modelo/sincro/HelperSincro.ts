@@ -74,7 +74,7 @@ export class HelperSincro {
     return momento
   }
 
-  public sincronizar(
+  public GetEstadoSincro(
     sincro: SincroCancion,
     momento: Date,
   ): EstadoSincroCancion {
