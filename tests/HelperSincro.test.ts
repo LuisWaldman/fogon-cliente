@@ -13,7 +13,7 @@ describe('HelperSincro.sicronizar', () => {
       0, // duracionGolpe
     )
 
-    const est: EstadoSincroCancion = HelperSincro.getInstance().sincronizar(
+    const est: EstadoSincroCancion = HelperSincro.getInstance().GetEstadoSincro(
       sincro,
       momento,
     )
@@ -30,7 +30,7 @@ describe('HelperSincro.sicronizar', () => {
       0, // duracionGolpe
     )
 
-    const est: EstadoSincroCancion = HelperSincro.getInstance().sincronizar(
+    const est: EstadoSincroCancion = HelperSincro.getInstance().GetEstadoSincro(
       sincro,
       momento,
     )
@@ -50,7 +50,7 @@ describe('HelperSincro.sicronizar', () => {
       iniciocompas, // desdeCompas
     )
 
-    const est: EstadoSincroCancion = HelperSincro.getInstance().sincronizar(
+    const est: EstadoSincroCancion = HelperSincro.getInstance().GetEstadoSincro(
       sincro,
       momento,
     )
@@ -76,7 +76,7 @@ describe('HelperSincro.sicronizar', () => {
       iniciocompas, // desdeCompas
     )
 
-    const est: EstadoSincroCancion = HelperSincro.getInstance().sincronizar(
+    const est: EstadoSincroCancion = HelperSincro.getInstance().GetEstadoSincro(
       sincro,
       momento,
     )
