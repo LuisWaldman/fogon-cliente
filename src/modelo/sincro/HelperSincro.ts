@@ -29,6 +29,8 @@ export class HelperSincro {
       const appStore = useAppStore()
       appStore.delayGetReloj = this.delayCalculador.getError()
       console.log(
+        'Momento Recibido:',
+        this.momentoRecibido,
         'Tardo:',
         tardo,
         'Delay:',
@@ -65,6 +67,7 @@ export class HelperSincro {
       return
     }
     this.ciclos = 0
+    this.delayCalculador = new DelayCalculador()
     this.momentoEnviado = new Date(Date.now())
     this.cliente.gettime()
   }
@@ -74,7 +77,7 @@ export class HelperSincro {
     return momento
   }
 
-  public sincronizar(
+  public GetEstadoSincro(
     sincro: SincroCancion,
     momento: Date,
   ): EstadoSincroCancion {

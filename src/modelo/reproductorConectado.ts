@@ -19,13 +19,13 @@ export class ReproductorConectado extends Reproductor {
     const golpesxcompas = appStore.cancion?.compasCantidad || 4
     const sincro = new SincroCancion(
       duracionGolpe,
-      new Date(appStore.sesSincroCancion.timeInicio),
+      appStore.sesSincroCancion.timeInicio,
       golpesxcompas, // golpesxcompas
       appStore.sesSincroCancion.desdeCompas, // duracionGolpe
     )
 
     appStore.sesSincroCancion = sincro
-    const est = helper.sincronizar(sincro, momento)
+    const est = helper.GetEstadoSincro(sincro, momento)
     appStore.EstadoSincro = est
     appStore.compas = est.compas
     appStore.momentoRecibioInicio = momento
