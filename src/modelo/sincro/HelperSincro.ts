@@ -73,7 +73,7 @@ export class HelperSincro {
   }
 
   ObtenerMomento(): Date {
-    const momento = new Date(Date.now() + this.delayReloj)
+    const momento = new Date(Date.now() - this.delayReloj)
     return momento
   }
 
