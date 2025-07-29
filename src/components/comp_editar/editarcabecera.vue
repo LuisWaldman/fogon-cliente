@@ -26,75 +26,29 @@ const appStore = useAppStore()
           aria-labelledby="dropdownMenuButton"
         >
           <li>
-            <router-link
-              class="dropdown-item"
-              to="/tocar"
-              v-if="$route.path != '/tocar'"
-            >
-              <i>🎸</i>
-              Tocar
-            </router-link>
-          </li>
-          <li
-            class="dropdown-submenu"
-            v-if="
-              appStore.estado === 'conectado' || appStore.estado === 'logueado'
-            "
-          >
-            <a
-              class="dropdown-item dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="bi bi-people"></i>
-              Sesión
-            </a>
-            <ul class="">
-              <li v-if="appStore.estadoSesion != 'conectado'">
-                <a class="dropdown-item" href="#" @click="crearSesion">
-                  <i class="bi bi-plus-circle"></i>
-                  Crear sesión
-                </a>
-              </li>
-              <div v-if="appStore.estadoSesion != 'conectado'">
-                <li v-for="(sesion, id) in appStore.sesiones" :key="id">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    @click="unirseSesion(sesion.nombre)"
-                  >
-                    <i class="bi bi-box-arrow-in-right"></i>
-                    {{ sesion.nombre }}
-                  </a>
-                </li>
-              </div>
-
-              <li v-if="appStore.estadoSesion === 'conectado'">
-                <a class="dropdown-item" href="#" @click="SalirSesion">
-                  <i class="bi bi-box-arrow-in-right"></i>
-                  Salir
-                </a>
-              </li>
-              <li v-if="appStore.estadoSesion === 'conectado'">
-                <a class="dropdown-item" href="#" @click="compartir">
-                  <i class="bi bi-share"></i>
-                  Compartir
-                </a>
-              </li>
-            </ul>
+              Ver Acordes            
           </li>
 
+                    <li>
+              Ver Versos
+          </li>          
+          <li><hr class="dropdown-divider" /></li>
           <li>
-            <router-link
-              class="dropdown-item"
-              to="/configurar"
-              v-if="$route.path != '/configurar'"
-            >
-              <i class="bi bi-gear"></i>
-              Configurar
-            </router-link>
+               Guardar Cambios
+          </li>
+                    <li>
+               Descargar
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+               Guardar Cambios
+          </li>
+          <li>
+               Nuevo
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+               Compartir
           </li>
         </ul>
       </div>
