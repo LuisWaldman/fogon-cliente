@@ -7,8 +7,8 @@ const appStore = useAppStore()
 <template>
   <nav class="navbarFogon navbar">
     <div style="display: flex; width: 100%">
-      {{ appStore.cancion?.cancion }} -
-      {{ appStore.cancion?.banda }}
+      {{ appStore.editandocancion?.cancion }} -
+      {{ appStore.editandocancion?.banda }}
 
       <div class="dropdown dropdown-superior-derecha ms-auto">
         <button

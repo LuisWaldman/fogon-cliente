@@ -10,13 +10,15 @@ const props = defineProps<{
 }>()
 
 const contentAcordes = ref('')
+const refTextoEditable = ref('')
+
 function updateContent() {
-  const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
-    .innerHTML
-  const partes = textoCancion.split('<div>')
+  refTextoEditable.value = props.cancion.letras.renglones.flat().join('|').replace(/\/n/g, '<br>')
+  const partes = refTextoEditable.value.split('<div>')
   const nt = partes.map((parte) => parte.replace('</div>', '')).join('<br>')
   const fondo = EditarHelper.ArmarFondoEditarAcordes(nt, props.cancion)
   contentAcordes.value = fondo
+
 }
 
 const appStore = useAppStore()
@@ -38,6 +40,12 @@ watch(() => appStore.editandocancion, () => {
   updateContent()
 })
 
+// Expose updateContent to parent components
+defineExpose({
+  updateContent
+})
+
+
 
 </script>
 
@@ -49,9 +57,7 @@ watch(() => appStore.editandocancion, () => {
     contenteditable="true"
     @input="updateContent"
     @paste="handlePaste"
-    v-html="
-      props.cancion.letras.renglones.flat().join('|').replace(/\/n/g, '<br>')
-    "
+    v-html="refTextoEditable"
   ></div>
 
   <div
