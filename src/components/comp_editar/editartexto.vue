@@ -28,7 +28,6 @@ function handlePaste(event: ClipboardEvent) {
 </script>
 
 <template>
-  
   <div
     class="divEditable"
     id="divEditable"
