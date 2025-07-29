@@ -212,7 +212,6 @@ export class ClienteSocket {
     })
 
     socket.on('time', (hora: string) => {
-      console.log('time recibido:', hora)
       const fechaHora = new Date(hora) // 2025-07-09T03:01:05.876Z
       this.timeHandler?.(fechaHora)
     })

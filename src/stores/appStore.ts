@@ -32,6 +32,16 @@ export const useAppStore = defineStore('app', () => {
       new Letra([]),
     ),
   )
+
+  const editandocancion = ref<Cancion>(
+    new Cancion(
+      'Cancion no cargada',
+      'sin banda',
+      new Acordes([], []),
+      new Letra([]),
+    ),
+  )
+
   const sesiones = ref<Sesion[]>([] as Sesion[])
   const listaCanciones = ref<itemLista[]>([])
   const mensajes = ref<string[]>([])
@@ -73,6 +83,7 @@ export const useAppStore = defineStore('app', () => {
     delayGetReloj,
     aplicacion,
     cancion,
+    editandocancion,
     listaCanciones,
     compas,
     estado,

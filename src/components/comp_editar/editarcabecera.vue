@@ -1,88 +1,14 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
-import qr from './qr.vue'
 
 const appStore = useAppStore()
-
-const copiado = ref(false)
-const urlcompartida = ref('')
-const compartiendo = ref(false)
-
-function compartir() {
-  copiado.value = false
-  urlcompartida.value =
-    window.location.origin +
-    '/tocar?sesion=' +
-    appStore.sesion.nombre.replace(/ /g, '_') +
-    ''
-  compartiendo.value = true
-}
-
-function dejarDeCompartir() {
-  compartiendo.value = false
-}
-
-function copiarUrl() {
-  if (urlcompartida.value) {
-    navigator.clipboard.writeText(urlcompartida.value)
-    copiado.value = true
-  }
-}
-
-const crearSesion = () => {
-  const nombreSesion = appStore.perfil?.nombre
-    ? `${appStore.perfil.nombre} sesion`
-    : 'default'
-  console.log('Creando sesión', nombreSesion)
-
-  appStore.aplicacion.CrearSesion(nombreSesion)
-}
-
-function SalirSesion() {
-  appStore.aplicacion.SalirSesion()
-}
-
-const unirseSesion = (sesion: string) => {
-  appStore.aplicacion.UnirmeSesion(sesion)
-}
 </script>
 
 <template>
   <nav class="navbarFogon navbar">
     <div style="display: flex; width: 100%">
-      <router-link class="navbar-brand" to="/" style="color: inherit">
-        <img
-          :src="
-            appStore.estado === 'conectado'
-              ? '/img/conectado.png'
-              : appStore.estado === 'tocando'
-                ? '/img/tocando.png'
-                : appStore.estado === 'logueado'
-                  ? '/img/logueado.png'
-                  : appStore.estado === 'conectadoserver'
-                    ? '/img/conectado.png'
-                    : '/img/desconectado.png'
-          "
-          alt="Logo"
-          width="50"
-        />
-      </router-link>
-      <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        Fogon
-      </span>
-
-      <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
-        {{ appStore.cancion?.cancion }} -
-        {{ appStore.cancion?.banda }}
-      </div>
-
-      <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
-        Configuracion
-      </span>
-      <span v-if="$route.path === '/editar'" class="titulocancioncontrol">
-        Editando
-      </span>
+      {{ appStore.cancion?.cancion }} -
+      {{ appStore.cancion?.banda }}
 
       <div class="dropdown dropdown-superior-derecha ms-auto">
         <button
@@ -93,18 +19,7 @@ const unirseSesion = (sesion: string) => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <img
-            :src="appStore.perfil?.imagen || '/img/UsuarioDesconecdado.png'"
-            alt="User"
-            :class="{ imgConectado: appStore.estadoSesion === 'conectado' }"
-            style="
-              width: 40px;
-              height: 40px;
-
-              border-radius: 50%;
-              object-fit: cover;
-            "
-          />
+          ---
         </button>
         <ul
           class="dropdown-menu dropdown-menu-end"
@@ -290,7 +205,7 @@ const unirseSesion = (sesion: string) => {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  z-index: 10;
+  z-index: 5;
 }
 
 @media (max-width: 768px) {

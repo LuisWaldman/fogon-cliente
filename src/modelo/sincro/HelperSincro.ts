@@ -28,16 +28,7 @@ export class HelperSincro {
       this.delayReloj = this.delayCalculador.getDelay()
       const appStore = useAppStore()
       appStore.delayGetReloj = this.delayCalculador.getError()
-      console.log(
-        'Momento Recibido:',
-        this.momentoRecibido,
-        'Tardo:',
-        tardo,
-        'Delay:',
-        delay,
-        'Delay reloj:',
-        this.delayReloj,
-      )
+
       if (this.ciclos < this.maxCiclos) {
         this.ciclos++
         this.momentoEnviado = new Date(Date.now())
