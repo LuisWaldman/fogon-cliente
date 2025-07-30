@@ -19,7 +19,13 @@ const progresoMinuto = computed(() => {
       <!--<div>{{ Math.floor(fecha / 60000) }}m</div>
       -->
       <div>{{ Math.floor((fecha % 60000) / 1000) }}s</div>
-      <div>{{ Math.floor(fecha % 1000).toString().padStart(3, '0') }}ms</div>
+      <div>
+        {{
+          Math.floor(fecha % 1000)
+            .toString()
+            .padStart(3, '0')
+        }}ms
+      </div>
     </div>
   </div>
 </template>
