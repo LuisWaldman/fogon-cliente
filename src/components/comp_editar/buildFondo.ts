@@ -4,6 +4,13 @@ import { HtmlAcordeConBr, HtmlAcordeSimple, type HtmlAcorde } from './htmlAcorde
 export abstract class BuildFondo {
   abstract build(cancion: Cancion, textoCancion: string): string
   abstract hacerTexto(cancion: Cancion): string
+  
+  textoRenglones(texto: string): string[][] {
+    return texto.split('<br>').map(renglon => {
+      return renglon.split('|');
+    });
+  }
+  
 }
 
 export class BuildFondoAcordes extends BuildFondo {
@@ -16,6 +23,7 @@ export class BuildFondoAcordes extends BuildFondo {
         return tore;
       }
 
+      
 
 
     public getAcorde(acordes: string[], id: number): string {
@@ -65,6 +73,9 @@ export class BuildFondoAcordes extends BuildFondo {
 }
 
 export class BuildFondoMetricaES extends BuildFondo {
+  hacerTexto(cancion: Cancion): string {
+    throw new Error('Method not implemented.');
+  }
   override build(cancion: Cancion, textoCancion: string): string {
     const renglones = textoCancion.split('<br>')
     let ret = ''

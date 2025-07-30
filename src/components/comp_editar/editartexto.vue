@@ -19,9 +19,8 @@ function updateContent() {
   const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
     .innerHTML
   contentAcordes.value = fondoAcordes.build(props.cancion, textoCancion)
+  props.cancion.letras.renglones = fondoAcordes.textoRenglones(textoCancion)
 }
-
-const appStore = useAppStore()
 
 function handlePaste(event: ClipboardEvent) {
   event.preventDefault() // Evitar el comportamiento predeterminado
@@ -52,6 +51,12 @@ defineExpose({
 // On component mount, initialize the text
 import { onMounted } from 'vue'
 
+function updateCancion() {
+  console.log('updateCancion')
+  const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
+    .innerHTML
+  props.cancion.letras.renglones = fondoAcordes.textoRenglones(textoCancion)
+}
 onMounted(() => {
   refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
   updateContent()
