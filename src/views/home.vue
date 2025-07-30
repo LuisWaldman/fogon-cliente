@@ -10,7 +10,7 @@ const appStore = useAppStore()
     <h1 style="color: blueviolet; margin-bottom: 0px; padding-bottom: 0px">
       Bienvenido al Fogon
     </h1>
-    <span class="version">en sincro ---milisegundos</span>
+    <span class="version">V. SINCRONIZADA</span>
 
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
@@ -27,7 +27,6 @@ const appStore = useAppStore()
       Estas son las noticias en tu servidor
     </p>
 
-    {{ appStore.noticias }}
     <div class="containerNoticias">
       <noticiaComp
         v-for="(noticia, index) in appStore.noticias"
