@@ -14,16 +14,17 @@ const contentAcordes = ref('')
 const contentMetricaEs = ref('')
 const refTextoEditable = ref('')
 
+var fondoAcordes = new BuildFondoAcordes()
+
 function updateContent() {
   // Actualizar el contenido de los acordes
 
   const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
     .innerHTML
-  var fondoAcordes = new BuildFondoAcordes()
   contentAcordes.value = fondoAcordes.build(props.cancion, textoCancion)
-  console.log('contentAcordes', contentAcordes.value)
-  var fondoMetricaEs = new BuildFondoMetricaES()
-  contentMetricaEs.value = fondoMetricaEs.build(props.cancion, textoCancion)
+
+  //var fondoMetricaEs = new BuildFondoMetricaES()
+  //contentMetricaEs.value = fondoMetricaEs.build(props.cancion, textoCancion)
   /**/
   /*
   refTextoEditable.value = props.cancion.letras.renglones
@@ -54,11 +55,7 @@ import { BuildFondoAcordes, BuildFondoMetricaES } from './buildFondo'
 watch(
   () => appStore.editandocancion.letras.renglones,
   () => {
-    refTextoEditable.value = props.cancion.letras.renglones
-      .flat()
-      .join('|')
-      .replace(/\/n/g, '<br>')
-
+    refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
     updateContent()
   },
 )
@@ -98,17 +95,29 @@ defineExpose({
 .divEditable {
   white-space: nowrap;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   min-height: 100px;
   position: absolute;
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'Roboto Mono', monospace;
   padding: 12px;
-  top: 0px;
+  top: 24px;
   width: 100%;
+  height: 100%;
 }
 
 .divAcordes {
+  top: 0px;
+  color: red;
+}
+.divAcordes div {
+  display: inline-block;
+  width: auto;
+}
+
+.divAcordes .saltolinea {
+  width: 100%;
+  display: block;
 }
 
 .divMetricaEs {
