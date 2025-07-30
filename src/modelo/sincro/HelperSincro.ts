@@ -8,7 +8,7 @@ import { DelaySet } from './DelaySet'
 export class HelperSincro {
   private cliente: ClienteSocket | null = null
   private ciclos = 0
-  private maxCiclos = 20
+  private maxCiclos = 1
   private momentoEnviado: Date | null = null
   private momentoRecibido: Date | null = null
 
@@ -62,24 +62,38 @@ export class HelperSincro {
     this.momentoEnviado = new Date(Date.now())
     this.cliente.gettime()
   }
+  public MomentoSincro(): number {
+    const momento = this.MomentoLocal() - this.delayReloj
+    if (momento < 0) {
+      return momento + 3600000
+    }
+    return momento % 3600000
+  }
 
-  ObtenerMomento(): Date {
-    const momento = new Date(Date.now() - this.delayReloj)
-    return momento
+  public MomentoLocal(): number {
+    const now = Date.now()
+    return now % 3600000 // Return milliseconds within the current minute (0-59999)
+  }
+
+  public Diferencia(time1: number, time2: number): number {
+    if (time2 < 10000 && time1 > 50000) {
+      return 60000 + time1 - time2
+    }
+    return time1 - time2
   }
 
   public GetEstadoSincro(
     sincro: SincroCancion,
-    momento: Date,
+    momento: number,
   ): EstadoSincroCancion {
     let estadoReproduccion: 'Reproduciendo' | 'Iniciando'
     let compas: number
     let golpeDelCompas: number
     let delay: number
 
-    if (sincro.timeInicio.getTime() <= momento.getTime()) {
+    const diferencia = this.Diferencia(sincro.timeInicio, momento)
+    if (diferencia <= 0) {
       estadoReproduccion = 'Reproduciendo'
-      const diferencia = momento.getTime() - sincro.timeInicio.getTime()
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
       delay = diferencia - golpe * sincro.duracionGolpe
       delay = sincro.duracionGolpe - delay
@@ -88,7 +102,7 @@ export class HelperSincro {
     } else {
       estadoReproduccion = 'Iniciando'
       compas = sincro.desdeCompas
-      const diferencia = sincro.timeInicio.getTime() - momento.getTime()
+      const diferencia = sincro.timeInicio - momento
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
       delay = diferencia - golpe * sincro.duracionGolpe
       golpeDelCompas = sincro.golpesxcompas - (golpe + 1)

@@ -25,56 +25,21 @@ const appStore = useAppStore()
           class="dropdown-menu dropdown-menu-end"
           aria-labelledby="dropdownMenuButton"
         >
-          <li>
-              Ver Acordes            
-          </li>
+          <li>Ver Acordes</li>
 
-                    <li>
-              Ver Versos
-          </li>          
+          <li>Ver Versos</li>
           <li><hr class="dropdown-divider" /></li>
-          <li>
-               Guardar Cambios
-          </li>
-                    <li>
-               Descargar
-          </li>
+          <li>Guardar Cambios</li>
+          <li>Descargar</li>
           <li><hr class="dropdown-divider" /></li>
-          <li>
-               Guardar Cambios
-          </li>
-          <li>
-               Nuevo
-          </li>
+          <li>Guardar Cambios</li>
+          <li>Nuevo</li>
           <li><hr class="dropdown-divider" /></li>
-          <li>
-               Compartir
-          </li>
+          <li>Compartir</li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="compartir_sesion" v-if="compartiendo">
-    <div>
-      <qr :url="urlcompartida"></qr>
-    </div>
-    <div style="background-color: #353333; display: flex">
-      <span style="margin: 3px">{{ urlcompartida }}</span>
-      <button v-if="!copiado" class="btn btn-secondary" @click="copiarUrl">
-        <i class="bi bi-clipboard"></i>
-        Copiar URL
-      </button>
-      <div v-if="copiado" style="border: 1px solid; margin-left: 10px">
-        Copiado
-      </div>
-    </div>
-    <div style="display: flex; justify-content: center; margin-top: 20px">
-      <button class="btn btn-secondary" @click="dejarDeCompartir">
-        <i class="bi bi-x-circle"></i>
-        Cerrar
-      </button>
-    </div>
-  </div>
 </template>
 
 <style scoped>

@@ -4,11 +4,11 @@ import { SincroCancion } from './SincroCancion'
 
 describe('Helper Sinro', () => {
   it('Cancion por iniciar', () => {
-    const tiempoinicio = new Date(Date.now())
+    const tiempoinicio = 0 // 0 milisegundos
     const tiempo = tiempoinicio
     const sincro = new SincroCancion(
       100,
-      tiempoinicio,
+      0, // tiempo de inicio
       4, // golpesxcompas
       0, // desde compas
     )
@@ -23,8 +23,8 @@ describe('Helper Sinro', () => {
   })
 
   it('Empezo hace un micro segundo', () => {
-    const tiempoinicio = new Date(Date.now())
-    const tiempo = new Date(tiempoinicio.getTime() + 1) // Un micro segundo después
+    const tiempoinicio = 1000 // 1 segundo
+    const tiempo = tiempoinicio + 1 // Un micro segundo después
     const sincro = new SincroCancion(
       100,
       tiempoinicio,
@@ -42,8 +42,8 @@ describe('Helper Sinro', () => {
   })
 
   it('Falta un micro segundo', () => {
-    const tiempoinicio = new Date(Date.now())
-    const tiempo = new Date(tiempoinicio.getTime() - 1) // Un micro segundo antes
+    const tiempoinicio = 1000 // 1 segundo
+    const tiempo = tiempoinicio - 1 // Un micro segundo antes
     const sincro = new SincroCancion(
       100,
       tiempoinicio,

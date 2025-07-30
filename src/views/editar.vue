@@ -7,7 +7,7 @@ import { ref } from 'vue'
 
 const appStore = useAppStore()
 const helperArchivo = new HelperObtenerCancionURL('/canciones')
-const ctrlEditarTexto = ref();
+const ctrlEditarTexto = ref()
 helperArchivo
   .GetCancion('andres-calamaro_una-forma-de-vida')
   .then((cancion) => {

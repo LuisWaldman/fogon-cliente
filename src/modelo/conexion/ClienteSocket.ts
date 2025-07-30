@@ -11,7 +11,7 @@ interface ServerToClientEvents {
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
   cancionActualizada: (cancion: string) => void
-  cancionIniciada: (compas: number, desde: string) => void
+  cancionIniciada: (compas: number, desde: number) => void
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
   sesionesActualizadas: () => void
@@ -81,9 +81,9 @@ export class ClienteSocket {
     this.mensajesesionHandler = handler
   }
 
-  private cancionIniciadaHandler?: (compas: number, desde: string) => void
+  private cancionIniciadaHandler?: (compas: number, desde: number) => void
   public setCancionIniciadaHandler(
-    handler: (compas: number, desde: string) => void,
+    handler: (compas: number, desde: number) => void,
   ): void {
     this.cancionIniciadaHandler = handler
   }
@@ -192,7 +192,7 @@ export class ClienteSocket {
       this.sesionFailedHandler?.(error)
     })
 
-    socket.on('cancionIniciada', (compas: number, desde: string) => {
+    socket.on('cancionIniciada', (compas: number, desde: number) => {
       console.log(
         'cancionIniciada received with compas:',
         compas,

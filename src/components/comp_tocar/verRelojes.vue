@@ -10,7 +10,7 @@ const emit = defineEmits(['cerrar'])
 const appStore = useAppStore()
 const helper = HelperSincro.getInstance()
 
-const momentoactual = ref(new Date())
+const momentoactual = ref(0)
 const actualizandoMomento = ref(false)
 const actualizandoDelay = ref(false)
 const delayactualizar = ref(0)
@@ -18,10 +18,10 @@ const delayactualizar = ref(0)
 const reloj = new Reloj()
 reloj.duracionIntervalo = 1000 // 1 segundo
 reloj.setIniciaHandler(() => {
-  momentoactual.value = helper.ObtenerMomento()
+  momentoactual.value = helper.MomentoLocal()
 })
 reloj.setIniciaCicloHandler(() => {
-  momentoactual.value = helper.ObtenerMomento()
+  momentoactual.value = helper.MomentoLocal()
   actualizarDelay()
 })
 
@@ -36,7 +36,7 @@ function dejarActualizarMomento() {
 }
 function actualizarDelay() {
   actualizandoDelay.value = true
-  const mili = momentoactual.value.getMilliseconds()
+  const mili = momentoactual.value
   delayactualizar.value = 1000 - mili
   if (mili < 20) {
     delayactualizar.value = delayactualizar.value - mili

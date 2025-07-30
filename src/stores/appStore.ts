@@ -16,9 +16,7 @@ import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
 
-  const sesSincroCancion = ref<SincroCancion>(
-    new SincroCancion(0, new Date(), 0, 0),
-  )
+  const sesSincroCancion = ref<SincroCancion>(new SincroCancion(0, 0, 0, 0))
   const EstadoSincro = ref<EstadoSincroCancion>(
     new EstadoSincroCancion(-1, 0, '-', 0),
   )
@@ -69,7 +67,7 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
-  const momentoRecibioInicio = ref<Date>(new Date())
+  const momentoRecibioInicio = ref<number>(0)
 
   const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
   // Método para actualizar el estado de reproducción

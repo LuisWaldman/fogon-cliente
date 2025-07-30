@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion'
 import { EditarHelper } from './editarHelper'
-import { useAppStore } from '../../stores/appStore';
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number
@@ -13,12 +13,14 @@ const contentAcordes = ref('')
 const refTextoEditable = ref('')
 
 function updateContent() {
-  refTextoEditable.value = props.cancion.letras.renglones.flat().join('|').replace(/\/n/g, '<br>')
+  refTextoEditable.value = props.cancion.letras.renglones
+    .flat()
+    .join('|')
+    .replace(/\/n/g, '<br>')
   const partes = refTextoEditable.value.split('<div>')
   const nt = partes.map((parte) => parte.replace('</div>', '')).join('<br>')
   const fondo = EditarHelper.ArmarFondoEditarAcordes(nt, props.cancion)
   contentAcordes.value = fondo
-
 }
 
 const appStore = useAppStore()
@@ -34,63 +36,59 @@ function handlePaste(event: ClipboardEvent) {
 // Watch for changes in editandoCancion
 import { watch } from 'vue'
 
-
 // Set up a watcher that calls updateContent when editandoCancion changes
-watch(() => appStore.editandocancion, () => {
-  updateContent()
-})
+watch(
+  () => appStore.editandocancion,
+  () => {
+    updateContent()
+  },
+)
 
 // Expose updateContent to parent components
 defineExpose({
-  updateContent
+  updateContent,
 })
-
-
-
 </script>
 
 <template>
   <div class="divEditableContainer">
-  <div
-    class="divEditable"
-    id="divEditable"
-    contenteditable="true"
-    @input="updateContent"
-    @paste="handlePaste"
-    v-html="refTextoEditable"
-  ></div>
+    <div
+      class="divEditable"
+      id="divEditable"
+      contenteditable="true"
+      @input="updateContent"
+      @paste="handlePaste"
+      v-html="refTextoEditable"
+    ></div>
 
-  <div
-    class="divAcordes"
-    style="display: flex; flex-wrap: wrap"
-    v-html="contentAcordes"
-  ></div></div>
+    <div
+      class="divAcordes"
+      style="display: flex; flex-wrap: wrap"
+      v-html="contentAcordes"
+    ></div>
+  </div>
 </template>
 <style scoped>
-
-
 .divEditable {
-    min-height: 100px;
-    position: absolute;
-    top: 25px;
-    line-height: 2.5;
-    font-size: 20px;
-    width: 100%;
-    padding: 20px;
+  min-height: 100px;
+  position: absolute;
+  top: 25px;
+  line-height: 2.5;
+  font-size: 20px;
+  width: 100%;
+  padding: 20px;
 }
-
 
 .divAcordes {
-    padding: 20px;
-    min-height: 100px;
-    position: absolute;
-    top: 0px;
-    line-height: 2.5;
-    font-size: 20px;
-    z-index: 1;
-    pointer-events: none; /* Para que los eventos de mouse pasen a través de este div */
+  padding: 20px;
+  min-height: 100px;
+  position: absolute;
+  top: 0px;
+  line-height: 2.5;
+  font-size: 20px;
+  z-index: 1;
+  pointer-events: none; /* Para que los eventos de mouse pasen a través de este div */
 }
-
 
 .divEditableContainer {
   position: relative;
