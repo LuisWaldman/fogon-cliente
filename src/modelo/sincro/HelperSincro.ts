@@ -63,7 +63,7 @@ export class HelperSincro {
     this.cliente.gettime()
   }
   public MomentoSincro(): number {
-    const momento = this.MomentoLocal() + this.delayReloj
+    const momento = this.MomentoLocal() - this.delayReloj
     if (momento < 0) {
       return momento + 3600000
     }
