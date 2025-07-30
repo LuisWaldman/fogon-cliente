@@ -6,8 +6,6 @@ import { useAppStore } from '../../stores/appStore'
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  viendoAcordes: boolean
-  viendoMetricaEs: boolean
 }>()
 
 const contentAcordes = ref('')
@@ -17,24 +15,10 @@ const refTextoEditable = ref('')
 var fondoAcordes = new BuildFondoAcordes()
 
 function updateContent() {
-  // Actualizar el contenido de los acordes
-
+  console.log('updateContent')
   const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
     .innerHTML
   contentAcordes.value = fondoAcordes.build(props.cancion, textoCancion)
-
-  //var fondoMetricaEs = new BuildFondoMetricaES()
-  //contentMetricaEs.value = fondoMetricaEs.build(props.cancion, textoCancion)
-  /**/
-  /*
-  refTextoEditable.value = props.cancion.letras.renglones
-    .flat()
-    .join('|')
-    .replace(/\/n/g, '<br>')
-  const partes = refTextoEditable.value.split('<div>')
-  const nt = partes.map((parte) => parte.replace('</div>', '')).join('<br>')
-  const fondo = EditarHelper.ArmarFondoEditarAcordes(nt, props.cancion)
-  contentAcordes.value = fondo*/
 }
 
 const appStore = useAppStore()
@@ -53,7 +37,7 @@ import { BuildFondoAcordes, BuildFondoMetricaES } from './buildFondo'
 
 // Set up a watcher that calls updateContent when editandoCancion changes
 watch(
-  () => appStore.editandocancion.letras.renglones,
+  () => props.cancion,
   () => {
     refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
     updateContent()
@@ -63,6 +47,14 @@ watch(
 // Expose updateContent to parent components
 defineExpose({
   updateContent,
+})
+
+// On component mount, initialize the text
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
+  updateContent()
 })
 </script>
 

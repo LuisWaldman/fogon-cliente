@@ -6,21 +6,15 @@ import { HelperObtenerCancionURL } from '../helpers/HelperObtenerCancionURL'
 import { ref } from 'vue'
 
 const appStore = useAppStore()
-const helperArchivo = new HelperObtenerCancionURL('/canciones')
 const ctrlEditarTexto = ref()
-helperArchivo
-  .GetCancion('andres-calamaro_una-forma-de-vida')
-  .then((cancion) => {
-    appStore.editandocancion = cancion
-    ctrlEditarTexto.value?.updateContent()
-  })
+ctrlEditarTexto.value?.updateContent()
 </script>
 <template>
   <cabecera></cabecera>
   <div style="display: flex">
     <div class="col-9">
       <editartexto
-        ref="ctrlEditarTexto"
+        :ref="ctrlEditarTexto"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></editartexto>

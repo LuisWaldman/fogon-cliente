@@ -1,12 +1,13 @@
 <script setup lang="ts">
+import { a } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
 function guardarCambios() {
   
   // Create the Cancion object structure as expected by the backend
-  const cancionData = {
-    nombreArchivo: `${appStore.editandocancion?.cancion}-${appStore.editandocancion?.banda}`,
+  const cancionData = { 
+    nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
     datosJSON: appStore.editandocancion || {}
   }
 
