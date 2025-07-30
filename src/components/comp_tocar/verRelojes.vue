@@ -91,8 +91,8 @@ function cerrarRelojes() {
           </div>
         </div>
         <div>
-          <div>Delay: {{ delaySincroReloj }} +/- {{ ErrorReloj }}</div>
-          <div>Delay actualizando: {{ delayactualizar }}</div>
+            <div>Delay: {{ Math.floor(delaySincroReloj / 1000) }}s {{ delaySincroReloj % 1000 }}ms +/- {{ ErrorReloj.toFixed(2) }}</div>
+          <div>Delay actualizando: {{ Math.floor(delayactualizar / 1000) }}s {{ delayactualizar % 1000 }}ms</div>
         </div>
       </div>
     </div>
