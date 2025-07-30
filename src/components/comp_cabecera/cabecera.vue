@@ -80,6 +80,9 @@ const unirseSesion = (sesion: string) => {
       <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
         Configuracion
       </span>
+      <span v-if="$route.path === '/editar'" class="titulocancioncontrol">
+        Editando
+      </span>
 
       <div class="dropdown dropdown-superior-derecha ms-auto">
         <button

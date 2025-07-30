@@ -1,5 +1,4 @@
 import { SincroCancion } from './SincroCancion'
-import { useAppStore } from '../../stores/appStore'
 import { EstadoSincroCancion } from './EstadoSincroCancion'
 import { ClienteSocket } from '../conexion/ClienteSocket'
 import { DelayCalculador } from './DelayCalculador'
@@ -8,46 +7,44 @@ import { DelaySet } from './DelaySet'
 export class HelperSincro {
   private cliente: ClienteSocket | null = null
   private ciclos = 0
-  private maxCiclos = 20
-  private momentoEnviado: Date | null = null
-  private momentoRecibido: Date | null = null
+  private maxCiclos = 12
+  private momentoEnviado: number = 0
+  private momentoRecibido: number = 0
 
   private delayCalculador: DelayCalculador = new DelayCalculador()
+  ErrorReloj: number = 0
   setCliente(cliente: ClienteSocket) {
     this.cliente = cliente
-    this.cliente.setTimeHandler((hora: Date) => {
+    this.cliente.setTimeHandler((hora: number) => {
       if (this.momentoEnviado == null) {
         return
       }
-      this.momentoRecibido = new Date(Date.now())
-      const tardo =
-        this.momentoRecibido.getTime() - this.momentoEnviado.getTime()
-      const timeServerReal = new Date(hora.getTime() + tardo / 2)
-      const delay = Date.now() - timeServerReal.getTime()
-      this.delayCalculador.addDelaySet(new DelaySet(tardo, delay))
-      this.delayReloj = this.delayCalculador.getDelay()
-      const appStore = useAppStore()
-      appStore.delayGetReloj = this.delayCalculador.getError()
+      this.momentoRecibido = this.MomentoLocal()
+      const tardo = this.Diferencia(this.momentoEnviado, this.momentoRecibido)
       console.log(
+        'Momento Enviado:',
+        this.momentoEnviado,
         'Momento Recibido:',
-        this.momentoRecibido,
+        hora,
         'Tardo:',
         tardo,
-        'Delay:',
-        delay,
-        'Delay reloj:',
-        this.delayReloj,
       )
+      const timeServerReal = hora + tardo / 2
+      const delay = this.momentoRecibido - timeServerReal
+      this.delayCalculador.addDelaySet(new DelaySet(tardo, delay))
+      this.delayReloj = this.delayCalculador.getDelay()
+      this.ErrorReloj = this.delayCalculador.getError()
+      console.log('Delay:', this.delayReloj, 'Error:', this.ErrorReloj)
       if (this.ciclos < this.maxCiclos) {
         this.ciclos++
-        this.momentoEnviado = new Date(Date.now())
+        this.momentoEnviado = this.MomentoLocal()
         this.cliente?.gettime()
       }
     })
   }
 
   private static instance: HelperSincro
-  delayReloj: number = 0
+  public delayReloj: number = 0
 
   public static getInstance(): HelperSincro {
     if (!HelperSincro.instance) {
@@ -56,50 +53,75 @@ export class HelperSincro {
     return HelperSincro.instance
   }
 
-  async HTTPGet(urlGet: string): Promise<Response> {
-    return fetch(urlGet + 'ntp', {
-      method: 'GET',
-    })
-  }
-
   ActualizarDelayReloj() {
     if (!this.cliente) {
       return
     }
     this.ciclos = 0
     this.delayCalculador = new DelayCalculador()
-    this.momentoEnviado = new Date(Date.now())
+    this.momentoEnviado = this.MomentoLocal()
     this.cliente.gettime()
   }
+  public MomentoSincro(): number {
+    const momento = this.MomentoLocal() + this.delayReloj
+    if (momento < 0) {
+      return momento + 3600000
+    }
+    return momento % 3600000
+  }
 
-  ObtenerMomento(): Date {
-    const momento = new Date(Date.now() - this.delayReloj)
-    return momento
+  public MomentoLocal(): number {
+    const now = Date.now()
+    return now % 3600000 // Return milliseconds within the current minute (0-59999)
+  }
+
+  public Diferencia(time1: number, time2: number): number {
+    if (time2 < 10000 && time1 > 50000) {
+      return 60000 + time1 - time2
+    }
+    return time1 - time2
   }
 
   public GetEstadoSincro(
     sincro: SincroCancion,
-    momento: Date,
+    momento: number,
   ): EstadoSincroCancion {
     let estadoReproduccion: 'Reproduciendo' | 'Iniciando'
     let compas: number
     let golpeDelCompas: number
-    let delay: number
+    let deltaGolpe: number
 
-    if (sincro.timeInicio.getTime() <= momento.getTime()) {
-      estadoReproduccion = 'Reproduciendo'
-      const diferencia = momento.getTime() - sincro.timeInicio.getTime()
+    let diferencia = this.Diferencia(sincro.timeInicio, momento)
+    if (diferencia <= 0) {
+      diferencia = diferencia * -1
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
-      delay = diferencia - golpe * sincro.duracionGolpe
-      delay = sincro.duracionGolpe - delay
+      estadoReproduccion = 'Reproduciendo'
+      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
+      console.log('Diferencia:', diferencia, 'deltaGolpe:', deltaGolpe)
+      deltaGolpe = sincro.duracionGolpe - deltaGolpe
       compas = sincro.desdeCompas + Math.floor(golpe / sincro.golpesxcompas)
       golpeDelCompas = golpe % sincro.golpesxcompas
+      console.log(
+        'Estado: Reproduciendo',
+        diferencia,
+        'Compás:',
+        compas,
+        'Golpe del compás:',
+        golpeDelCompas,
+        'deltaGolpe:',
+        deltaGolpe,
+        'Diferencia:',
+        diferencia,
+        'Golpe:',
+        golpe,
+        'Duracion golpe:',
+        sincro.duracionGolpe,
+      )
     } else {
+      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
       estadoReproduccion = 'Iniciando'
       compas = sincro.desdeCompas
-      const diferencia = sincro.timeInicio.getTime() - momento.getTime()
-      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
-      delay = diferencia - golpe * sincro.duracionGolpe
+      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
       golpeDelCompas = sincro.golpesxcompas - (golpe + 1)
     }
 
@@ -107,7 +129,7 @@ export class HelperSincro {
       compas,
       golpeDelCompas,
       estadoReproduccion,
-      delay,
+      deltaGolpe,
     )
   }
 }

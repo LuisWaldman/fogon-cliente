@@ -16,9 +16,7 @@ import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
 
-  const sesSincroCancion = ref<SincroCancion>(
-    new SincroCancion(0, new Date(), 0, 0),
-  )
+  const sesSincroCancion = ref<SincroCancion>(new SincroCancion(0, 0, 0, 0))
   const EstadoSincro = ref<EstadoSincroCancion>(
     new EstadoSincroCancion(-1, 0, '-', 0),
   )
@@ -32,6 +30,16 @@ export const useAppStore = defineStore('app', () => {
       new Letra([]),
     ),
   )
+
+  const editandocancion = ref<Cancion>(
+    new Cancion(
+      'Cancion no cargada',
+      'sin banda',
+      new Acordes([], []),
+      new Letra([]),
+    ),
+  )
+
   const sesiones = ref<Sesion[]>([] as Sesion[])
   const listaCanciones = ref<itemLista[]>([])
   const mensajes = ref<string[]>([])
@@ -59,20 +67,16 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
-  const momentoRecibioInicio = ref<Date>(new Date())
-
   const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
   // Método para actualizar el estado de reproducción
   const actualizarEstadoReproduccion = (nuevoEstado: string) => {
     estadoReproduccion.value = nuevoEstado
   }
 
-  const delayGetReloj = ref<number>(0) // Para controlar el tiempo de respuesta del servidor al obtener el reloj
-
   return {
-    delayGetReloj,
     aplicacion,
     cancion,
+    editandocancion,
     listaCanciones,
     compas,
     estado,
@@ -82,7 +86,6 @@ export const useAppStore = defineStore('app', () => {
     rolSesion,
     sesSincroCancion,
     EstadoSincro,
-    momentoRecibioInicio,
     perfil,
     estadoReproduccion,
     nroCancion,

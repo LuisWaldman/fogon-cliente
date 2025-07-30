@@ -1,13 +1,14 @@
 <script setup lang="ts">
 defineProps<{
-  fecha: Date
+  fecha: number
 }>()
 </script>
 
 <template>
   <div class="divReloj">
-    <div>{{ fecha.getSeconds().toString().padStart(2, '0') }}.</div>
-    <div>{{ fecha.getMilliseconds().toString().padStart(3, '0') }}</div>
+    <div>{{ Math.floor(fecha / 60000) }}m</div>
+    <div>{{ Math.floor((fecha % 60000) / 1000) }}s</div>
+    <div>{{ Math.floor(fecha % 1000) }}ms</div>
   </div>
 </template>
 

@@ -11,11 +11,11 @@ interface ServerToClientEvents {
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
   cancionActualizada: (cancion: string) => void
-  cancionIniciada: (compas: number, desde: string) => void
+  cancionIniciada: (compas: number, desde: number) => void
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
   sesionesActualizadas: () => void
-  time: (hora: string) => void
+  time: (hora: number) => void
 }
 
 interface ClientToServerEvents {
@@ -81,9 +81,9 @@ export class ClienteSocket {
     this.mensajesesionHandler = handler
   }
 
-  private cancionIniciadaHandler?: (compas: number, desde: string) => void
+  private cancionIniciadaHandler?: (compas: number, desde: number) => void
   public setCancionIniciadaHandler(
-    handler: (compas: number, desde: string) => void,
+    handler: (compas: number, desde: number) => void,
   ): void {
     this.cancionIniciadaHandler = handler
   }
@@ -111,8 +111,8 @@ export class ClienteSocket {
     this.compasActualizadoHandler = handler
   }
 
-  private timeHandler?: (hora: Date) => void
-  public setTimeHandler(handler: (hora: Date) => void): void {
+  private timeHandler?: (hora: number) => void
+  public setTimeHandler(handler: (hora: number) => void): void {
     this.timeHandler = handler
   }
 
@@ -192,7 +192,7 @@ export class ClienteSocket {
       this.sesionFailedHandler?.(error)
     })
 
-    socket.on('cancionIniciada', (compas: number, desde: string) => {
+    socket.on('cancionIniciada', (compas: number, desde: number) => {
       console.log(
         'cancionIniciada received with compas:',
         compas,
@@ -211,10 +211,8 @@ export class ClienteSocket {
       this.compasActualizadoHandler?.(compas)
     })
 
-    socket.on('time', (hora: string) => {
-      console.log('time recibido:', hora)
-      const fechaHora = new Date(hora) // 2025-07-09T03:01:05.876Z
-      this.timeHandler?.(fechaHora)
+    socket.on('time', (hora: number) => {
+      this.timeHandler?.(hora)
     })
 
     this.socket = socket

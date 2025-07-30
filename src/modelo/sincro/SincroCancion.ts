@@ -1,12 +1,12 @@
 export class SincroCancion {
   duracionGolpe: number
-  timeInicio: Date
+  timeInicio: number
   golpesxcompas: number
   desdeCompas: number
 
   constructor(
     duracionGolpe: number,
-    timeInicio: Date,
+    timeInicio: number,
     golpesxcompas: number,
     desdeCompas: number,
   ) {
