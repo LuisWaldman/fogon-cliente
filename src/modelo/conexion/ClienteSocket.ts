@@ -15,7 +15,7 @@ interface ServerToClientEvents {
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
   sesionesActualizadas: () => void
-  time: (hora: string) => void
+  time: (hora: number) => void
 }
 
 interface ClientToServerEvents {
@@ -111,8 +111,8 @@ export class ClienteSocket {
     this.compasActualizadoHandler = handler
   }
 
-  private timeHandler?: (hora: Date) => void
-  public setTimeHandler(handler: (hora: Date) => void): void {
+  private timeHandler?: (hora: number) => void
+  public setTimeHandler(handler: (hora: number) => void): void {
     this.timeHandler = handler
   }
 
@@ -211,9 +211,8 @@ export class ClienteSocket {
       this.compasActualizadoHandler?.(compas)
     })
 
-    socket.on('time', (hora: string) => {
-      const fechaHora = new Date(hora) // 2025-07-09T03:01:05.876Z
-      this.timeHandler?.(fechaHora)
+    socket.on('time', (hora: number) => {
+      this.timeHandler?.(hora)
     })
 
     this.socket = socket

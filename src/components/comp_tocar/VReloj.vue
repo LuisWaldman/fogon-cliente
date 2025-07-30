@@ -6,8 +6,9 @@ defineProps<{
 
 <template>
   <div class="divReloj">
-    <div>{{ fecha / 60000 }}.</div>
-    <div>{{ fecha % 60000 }}</div>
+    <div>{{ Math.floor(fecha / 60000) }}m</div>
+    <div>{{ Math.floor((fecha % 60000) / 1000) }}s</div>
+    <div>{{ Math.floor(fecha % 1000) }}ms</div>
   </div>
 </template>
 

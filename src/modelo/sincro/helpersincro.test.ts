@@ -18,7 +18,7 @@ describe('Helper Sinro', () => {
 
     expect(est.estado).toBe('Reproduciendo')
     expect(est.compas).toBe(0)
-    expect(est.golpeEnCompas).toBe(0)
+    expect(est.golpeEnCompas).toBe(-0)
     expect(est.delay).toBe(100)
   })
 

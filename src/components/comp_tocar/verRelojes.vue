@@ -10,20 +10,37 @@ const emit = defineEmits(['cerrar'])
 const appStore = useAppStore()
 const helper = HelperSincro.getInstance()
 
-const momentoactual = ref(0)
+const momentoLocal = ref(0)
+const momentoSincro = ref(0)
 const actualizandoMomento = ref(false)
-const actualizandoDelay = ref(false)
+const delaySincroReloj = ref(helper.delayReloj)
+const ErrorReloj = ref(helper.ErrorReloj)
+
 const delayactualizar = ref(0)
 
 const reloj = new Reloj()
 reloj.duracionIntervalo = 1000 // 1 segundo
 reloj.setIniciaHandler(() => {
-  momentoactual.value = helper.MomentoLocal()
+  momentoLocal.value = helper.MomentoLocal()
 })
 reloj.setIniciaCicloHandler(() => {
-  momentoactual.value = helper.MomentoLocal()
+  momentoLocal.value = helper.MomentoLocal()
   actualizarDelay()
 })
+
+function actualizarDelay() {
+  momentoLocal.value = helper.MomentoLocal()
+  momentoSincro.value = helper.MomentoSincro()
+  delaySincroReloj.value = helper.delayReloj
+  ErrorReloj.value = helper.ErrorReloj
+  const mili = momentoLocal.value % 1000
+  delayactualizar.value = 1000 - mili
+  /*
+  if (mili < 20) {
+    delayactualizar.value = delayactualizar.value - mili
+  }*/
+  reloj.setDelay(delayactualizar.value)
+}
 
 function actualizarMomento() {
   actualizandoMomento.value = true
@@ -33,16 +50,6 @@ function actualizarMomento() {
 function dejarActualizarMomento() {
   actualizandoMomento.value = false
   reloj.pausar()
-}
-function actualizarDelay() {
-  actualizandoDelay.value = true
-  const mili = momentoactual.value
-  delayactualizar.value = 1000 - mili
-  if (mili < 20) {
-    delayactualizar.value = delayactualizar.value - mili
-  }
-  reloj.setDelay(delayactualizar.value)
-  actualizandoDelay.value = false
 }
 function sincronizar() {
   const helper = HelperSincro.getInstance()
@@ -63,22 +70,29 @@ function cerrarRelojes() {
       <h3>RELOJES</h3>
     </div>
     <div style="display: flex">
-      <div style="display: flex">
-        Momento Actual: <RelojControl :fecha="momentoactual"></RelojControl>
+      <div>
+        RELOJES
+        <div style="display: flex">
+          Local <RelojControl :fecha="momentoLocal"></RelojControl> Sincro
+          <RelojControl :fecha="momentoSincro"></RelojControl>
+        </div>
       </div>
+
       <div>
         <div style="display: flex">
           <div>
             <button v-if="!actualizandoMomento" @click="actualizarMomento">
-              ⌛
+              ⌛ Actualizar
             </button>
             <button v-else @click="dejarActualizarMomento">⏸️</button>
-            <div>{{ delayactualizar }}</div>
           </div>
           <div>
             <button @click="sincronizar">🔄</button>
-            <div>{{ appStore.delayGetReloj }}</div>
           </div>
+        </div>
+        <div>
+          <div>Delay: {{ delaySincroReloj }} +/- {{ ErrorReloj }}</div>
+          <div>Delay actualizando: {{ delayactualizar }}</div>
         </div>
       </div>
     </div>
@@ -86,10 +100,7 @@ function cerrarRelojes() {
     <div
       style="display: flex"
       v-if="appStore.sesSincroCancion.duracionGolpe != 0"
-    >
-      Calcula Inicio:
-      <RelojControl :fecha="appStore.momentoRecibioInicio"></RelojControl>
-    </div>
+    ></div>
     <div
       style="border: 1px solid"
       v-if="appStore.sesSincroCancion.duracionGolpe != 0"

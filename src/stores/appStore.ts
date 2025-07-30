@@ -67,18 +67,13 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
-  const momentoRecibioInicio = ref<number>(0)
-
   const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
   // Método para actualizar el estado de reproducción
   const actualizarEstadoReproduccion = (nuevoEstado: string) => {
     estadoReproduccion.value = nuevoEstado
   }
 
-  const delayGetReloj = ref<number>(0) // Para controlar el tiempo de respuesta del servidor al obtener el reloj
-
   return {
-    delayGetReloj,
     aplicacion,
     cancion,
     editandocancion,
@@ -91,7 +86,6 @@ export const useAppStore = defineStore('app', () => {
     rolSesion,
     sesSincroCancion,
     EstadoSincro,
-    momentoRecibioInicio,
     perfil,
     estadoReproduccion,
     nroCancion,
