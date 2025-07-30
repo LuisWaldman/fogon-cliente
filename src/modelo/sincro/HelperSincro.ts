@@ -21,20 +21,11 @@ export class HelperSincro {
       }
       this.momentoRecibido = this.MomentoLocal()
       const tardo = this.Diferencia(this.momentoEnviado, this.momentoRecibido)
-      console.log(
-        'Momento Enviado:',
-        this.momentoEnviado,
-        'Momento Recibido:',
-        hora,
-        'Tardo:',
-        tardo,
-      )
       const timeServerReal = hora + tardo / 2
       const delay = this.momentoRecibido - timeServerReal
       this.delayCalculador.addDelaySet(new DelaySet(tardo, delay))
       this.delayReloj = this.delayCalculador.getDelay()
       this.ErrorReloj = this.delayCalculador.getError()
-      console.log('Delay:', this.delayReloj, 'Error:', this.ErrorReloj)
       if (this.ciclos < this.maxCiclos) {
         this.ciclos++
         this.momentoEnviado = this.MomentoLocal()

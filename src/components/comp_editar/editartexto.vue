@@ -1,18 +1,31 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion'
-import { EditarHelper } from './editarHelper'
 import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
+  viendoAcordes: boolean
+  viendoMetricaEs: boolean
 }>()
 
 const contentAcordes = ref('')
+const contentMetricaEs = ref('')
 const refTextoEditable = ref('')
 
 function updateContent() {
+  // Actualizar el contenido de los acordes
+
+  const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
+    .innerHTML
+  var fondoAcordes = new BuildFondoAcordes()
+  contentAcordes.value = fondoAcordes.build(props.cancion, textoCancion)
+  console.log('contentAcordes', contentAcordes.value)
+  var fondoMetricaEs = new BuildFondoMetricaES()
+  contentMetricaEs.value = fondoMetricaEs.build(props.cancion, textoCancion)
+  /**/
+  /*
   refTextoEditable.value = props.cancion.letras.renglones
     .flat()
     .join('|')
@@ -20,7 +33,7 @@ function updateContent() {
   const partes = refTextoEditable.value.split('<div>')
   const nt = partes.map((parte) => parte.replace('</div>', '')).join('<br>')
   const fondo = EditarHelper.ArmarFondoEditarAcordes(nt, props.cancion)
-  contentAcordes.value = fondo
+  contentAcordes.value = fondo*/
 }
 
 const appStore = useAppStore()
@@ -35,11 +48,17 @@ function handlePaste(event: ClipboardEvent) {
 
 // Watch for changes in editandoCancion
 import { watch } from 'vue'
+import { BuildFondoAcordes, BuildFondoMetricaES } from './buildFondo'
 
 // Set up a watcher that calls updateContent when editandoCancion changes
 watch(
-  () => appStore.editandocancion,
+  () => appStore.editandocancion.letras.renglones,
   () => {
+    refTextoEditable.value = props.cancion.letras.renglones
+      .flat()
+      .join('|')
+      .replace(/\/n/g, '<br>')
+
     updateContent()
   },
 )
@@ -53,6 +72,7 @@ defineExpose({
 <template>
   <div class="divEditableContainer">
     <div
+      style="z-index: 200"
       class="divEditable"
       id="divEditable"
       contenteditable="true"
@@ -62,32 +82,36 @@ defineExpose({
     ></div>
 
     <div
-      class="divAcordes"
+      class="divAcordes divEditable"
       style="display: flex; flex-wrap: wrap"
       v-html="contentAcordes"
+    ></div>
+
+    <div
+      class="divMetricaEs divEditable"
+      style="display: flex; flex-wrap: wrap"
+      v-html="contentMetricaEs"
     ></div>
   </div>
 </template>
 <style scoped>
 .divEditable {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
   min-height: 100px;
   position: absolute;
-  top: 25px;
-  line-height: 2.5;
   font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 12px;
+  top: 0px;
   width: 100%;
-  padding: 20px;
 }
 
 .divAcordes {
-  padding: 20px;
-  min-height: 100px;
-  position: absolute;
-  top: 0px;
-  line-height: 2.5;
-  font-size: 20px;
-  z-index: 1;
-  pointer-events: none; /* Para que los eventos de mouse pasen a través de este div */
+}
+
+.divMetricaEs {
 }
 
 .divEditableContainer {

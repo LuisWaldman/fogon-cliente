@@ -93,11 +93,12 @@ function cerrarRelojes() {
         <div>
           <div>
             Delay: {{ Math.floor(delaySincroReloj / 1000) }}s
-            {{ delaySincroReloj % 1000 }}ms +/- {{ ErrorReloj.toFixed(2) }}
+            {{ (delaySincroReloj % 1000).toFixed(0) }}ms +/-
+            {{ ErrorReloj.toFixed(2) }}ms
           </div>
           <div>
             Delay actualizando: {{ Math.floor(delayactualizar / 1000) }}s
-            {{ delayactualizar % 1000 }}ms
+            {{ (delayactualizar % 1000).toFixed(0) }}ms
           </div>
         </div>
       </div>
@@ -116,7 +117,7 @@ function cerrarRelojes() {
         <RelojControl
           :fecha="appStore.sesSincroCancion.timeInicio"
         ></RelojControl>
-        , Duracion: {{ appStore.sesSincroCancion.duracionGolpe }}
+        , Duracion: {{ appStore.sesSincroCancion.duracionGolpe.toFixed(2) }} ms
       </div>
       <div style="display: flex">
         Desde: {{ appStore.sesSincroCancion.desdeCompas }} , Golpes x compás:
@@ -130,7 +131,7 @@ function cerrarRelojes() {
       Golpe: {{ appStore.EstadoSincro.compas }} ,
       {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
       {{ appStore.EstadoSincro.estado }} Delay:
-      {{ appStore.EstadoSincro.delay }} ms
+      {{ appStore.EstadoSincro.delay.toFixed(2) }} ms
     </div>
     <div>
       <button @click="cerrarRelojes">Cerrar</button>
