@@ -26,8 +26,8 @@ const appStore = useAppStore()
     <p class="primer-parrafo" v-if="appStore.estado === 'logueado'">
       Estas son las noticias en tu servidor
     </p>
-    
-{{ appStore.noticias }}
+
+    {{ appStore.noticias }}
     <div class="containerNoticias">
       <noticiaComp
         v-for="(noticia, index) in appStore.noticias"
