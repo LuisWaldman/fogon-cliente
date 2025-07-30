@@ -2,6 +2,10 @@
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
+function guardarCambios() {
+  
+  //appStore.aplicacion.HTTPPost()
+} 
 </script>
 
 <template>
@@ -32,7 +36,7 @@ const appStore = useAppStore()
           <li>Guardar Cambios</li>
           <li>Descargar</li>
           <li><hr class="dropdown-divider" /></li>
-          <li>Guardar Cambios</li>
+          <li @click="guardarCambios">Guardar</li>
           <li>Nuevo</li>
           <li><hr class="dropdown-divider" /></li>
           <li>Compartir</li>

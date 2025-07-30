@@ -45,13 +45,14 @@ export class BuildFondoAcordes extends BuildFondo {
       for (let i = 0; i < partes.length; i++) {
         if (anterioro_enter) {
           ret +=  '&nbsp;'.repeat(partes[i].length)
+          anterioro_enter = false
         } else {
           ret +=  this.getAcorde(acordes, cont) + '&nbsp;'.repeat(partes[i].length)
           cont++
         }
       }
       ret += '<br>'
-      anterioro_enter = renglon.includes('<br>')
+      anterioro_enter = renglones.length > 0
     }
     return ret
   }
