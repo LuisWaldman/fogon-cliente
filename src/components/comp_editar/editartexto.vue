@@ -103,6 +103,7 @@ onMounted(() => {
   font-size: var(--tamanio-acorde);
   color: #a9a8f6;
   top: 0px;
+  z-index: 100;
 }
 .divAcordes div {
   display: inline-block;

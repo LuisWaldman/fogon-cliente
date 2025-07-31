@@ -44,17 +44,14 @@ function GetStylePantallaEdit() {
 }
 
 
-function claseVistaPrincipal() {
-
-  //return 'col-' + pantalla.getConfiguracionPantalla().anchoPrincipal
-  return ''
+function estiloVistaPrincipal() {
+  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%; overflow: auto;`
+  
 }
 
-function claseVistaSecundaria() {
-  //return 'col-' + (11 - pantalla.getConfiguracionPantalla().anchoPrincipal)
-  return ''
+function estiloVistaSecundaria() {
+  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
-
 const ctrlEditarTexto = ref()
 
 function cambiarVista(nvista: string) {
@@ -76,7 +73,7 @@ function clickTocar() {
   <div style="display: flex"
    class="relativo"
   :style="GetStylePantallaEdit()">
-    <div style="width: 70%;" :style="claseVistaPrincipal()">
+    <div style="width: 70%;" :style="estiloVistaPrincipal()">
       <TocarLetraAcorde
           v-if="vista.viendo == 'acordes'"
           :cancion="appStore.cancion"
@@ -91,7 +88,7 @@ function clickTocar() {
       ></editartexto>
     </div>
 
-    <div :style="claseVistaSecundaria()">
+    <div :style="estiloVistaSecundaria()">
 
       <editAcordes
         :cancion="appStore.editandocancion"
