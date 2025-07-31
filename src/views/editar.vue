@@ -32,8 +32,10 @@ function guardarCambios() {
     })
 }
 class vistaTocar {
-  viendo: string = 'acordes'
-  editandoacordes: boolean = true
+  viendo: string = 'inicio'
+  viendoacordes: boolean = true
+  verEditandoMetricaEs: boolean = true
+  verEditandoAcordes: boolean = true
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
 function GetStylePantallaEdit() {
@@ -73,9 +75,12 @@ function clickTocar() {
   <div style="display: flex"
    class="relativo"
   :style="GetStylePantallaEdit()">
+
     <div style="width: 70%;" :style="estiloVistaPrincipal()">
+
+
       <TocarLetraAcorde
-          v-if="vista.viendo == 'acordes'"
+          v-if="vista.viendo != 'editartexto'"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarLetraAcorde>
@@ -85,22 +90,26 @@ function clickTocar() {
         :ref="ctrlEditarTexto"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
+        :verAcordes="vista.verEditandoAcordes"
+        :verMetricaEs="vista.verEditandoMetricaEs"
+        
       ></editartexto>
     </div>
 
     <div :style="estiloVistaSecundaria()">
 
       <editAcordes
+        v-if="vista.viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></editAcordes>
               <Secuencia
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          
+          v-if="vista.viendo != 'editaracordes'"
         ></Secuencia>
         <Partes
-          
+          v-if="vista.viendo != 'editaracordes'"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></Partes>
@@ -117,21 +126,36 @@ function clickTocar() {
           <i class="bi bi-eye"></i>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li v-on:click="cambiarVista('acordes')">
-            <a class="dropdown-item" href="#">Acordes</a>
-          </li>
+
           <li v-on:click="cambiarVista('editartexto')">
-            <a class="dropdown-item" href="#">Editar Texto Acordes</a>
+            <a class="dropdown-item" href="#">Editar Texto</a>
           </li>
-          <li v-on:click="cambiarVista('editartexto')">
-            <a class="dropdown-item" href="#">Editar Metrica</a>
+          
+          <li v-on:click="cambiarVista('editaracordes')">
+            <a class="dropdown-item" href="#">Editar Acordes</a>
           </li>
+          
+          <li><hr class="dropdown-divider" 
+            v-if="vista.viendo == 'editartexto'"/></li>
+          <li v-on:click="vista.verEditandoAcordes = !vista.verEditandoAcordes" 
+            v-if="vista.viendo == 'editartexto'">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.verEditandoAcordes"></i>
+              Ver Acordes</a>
+          </li>
+
+          <li v-on:click="vista.verEditandoMetricaEs = !vista.verEditandoMetricaEs" v-if="vista.viendo == 'editartexto'">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.verEditandoMetricaEs"></i>
+              Ver Metrica</a>
+          </li>
+
           <li><hr class="dropdown-divider" /></li>
 
           <li>
             <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.editandoacordes"></i>
-              Editar Acordes</a
+              <i class="bi bi-check-circle" v-if="vista.viendoacordes"></i>
+              Viendo Secuencia</a
             >
           </li>
           <li><hr class="dropdown-divider" /></li>
@@ -166,4 +190,5 @@ function clickTocar() {
   right: 10px;
   z-index: 10;
 }
+
 </style>

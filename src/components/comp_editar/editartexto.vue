@@ -6,6 +6,9 @@ import { useAppStore } from '../../stores/appStore'
 const props = defineProps<{
   compas: number
   cancion: Cancion
+  verAcordes: boolean
+  verMetricaEs: boolean
+
 }>()
 
 const contentAcordes = ref('')
@@ -19,11 +22,17 @@ function updateContent() {
   console.log('updateContent')
   const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
     .innerHTML
-  contentAcordes.value = fondoAcordes.build(props.cancion, textoCancion)
-  contentMetricaEs.value = fondoMetricaEs.build(
-    props.cancion,
-    textoCancion
-  )
+  if (props.verAcordes) {
+    contentAcordes.value = fondoAcordes.build(props.cancion, textoCancion)
+  } else {
+    contentAcordes.value = ''
+  }
+  if (props.verMetricaEs) {
+    contentMetricaEs.value = fondoMetricaEs.build(props.cancion, textoCancion)
+  } else {
+    contentMetricaEs.value = ''
+  }
+  
   props.cancion.letras.renglones = fondoAcordes.textoRenglones(textoCancion)
 }
 
@@ -48,6 +57,20 @@ watch(
   },
 )
 
+
+
+function click_okeditacorde() {
+    const texto_cancion = (document.querySelector('.divEditable') as HTMLElement).innerHTML;
+    props.cancion.letras.renglones =  [ texto_cancion.replace('&nbsp;', ' ').replace('<div>', '/n').replace('</div>', '').replace(/<br>/g, '/n').split('|') ] ;
+}
+
+function click_cancelareditacorde() {
+  
+  updateContent();
+}
+
+
+
 // Expose updateContent to parent components
 defineExpose({
   updateContent,
@@ -64,6 +87,14 @@ onMounted(() => {
 </script>
 
 <template>
+  <div>
+      <div class="btnEditAcorde"  @click="click_okeditacorde" >
+      <span class="bi  bi-check-circle"></span> Ok
+      </div>
+        <div class="btnEditAcorde" @click="click_cancelareditacorde" >
+      <span class="bi  bi-x-circle"></span> Cancelar
+      </div>
+</div>
   <div class="divEditableContainer">
     <div
       style="z-index: 200"
@@ -105,7 +136,6 @@ onMounted(() => {
 }
 
 .divAcordes {
-  font-size: var(--tamanio-acorde);
   color: #a9a8f6;
   top: 0px;
 }
@@ -114,6 +144,18 @@ onMounted(() => {
   width: auto;
 }
 
+.btnEditAcorde {
+    border: 1px solid;
+    color: #a9a8f6;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px 24px;
+}
 .divAcordes .saltolinea {
   width: 100%;
   display: block;
