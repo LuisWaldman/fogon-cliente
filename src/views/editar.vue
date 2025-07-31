@@ -10,6 +10,24 @@ import { useRouter } from 'vue-router'
 
 const pantalla = new Pantalla()
 
+const appStore = useAppStore()
+function guardarCambios() {
+  // Create the Cancion object structure as expected by the backend
+  const cancionData = {
+    nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
+    datosJSON: appStore.editandocancion || {},
+  }
+
+  // Send the POST request with the cancion data
+  appStore.aplicacion
+    .HTTPPost('cancion', cancionData)
+    .then((response) => {
+      console.log('Canción guardada exitosamente', response)
+    })
+    .catch((error) => {
+      console.error('Error al guardar la canción', error)
+    })
+}
 class vistaTocar {
   viendo: string = 'acordes'
   secuencia: boolean = true
@@ -36,7 +54,6 @@ function claseVistaSecundaria() {
   return ''
 }
 
-const appStore = useAppStore()
 const ctrlEditarTexto = ref()
 
 function cambiarVista(nvista: string) {
@@ -113,8 +130,13 @@ function clickTocar() {
           <li >
             <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
           </li>
-
           <li><hr class="dropdown-divider" /></li>
+          <li @click="guardarCambios">
+            <a class="dropdown-item" href="#"> Guardar Cambios</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+
+          
           <li @click="clickTocar()">
             <a class="dropdown-item" href="#">Tocar</a>
           </li>
