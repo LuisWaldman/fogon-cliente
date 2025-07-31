@@ -20,6 +20,12 @@ watch(
     actualizarLetras(cancion)
   },
 )
+watch(
+  () => props.compas,
+  (_n: number) => {
+    actualizarLetras(props.cancion)
+  },
+)
 
 function actualizarLetras(cancion: Cancion) {
   let contadorRenglontexto = 0

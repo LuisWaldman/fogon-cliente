@@ -3,6 +3,7 @@ import { useAppStore } from '../stores/appStore'
 import cabecera from '../components/comp_editar/editarcabecera.vue'
 import editartexto from '../components/comp_editar/editartexto.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
+import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import Partes from '../components/comp_tocar/Partes.vue'
@@ -78,10 +79,7 @@ function clickCerrarEditarTexto() {
   <div style="display: flex"
    class="relativo"
   :style="GetStylePantallaEdit()">
-
     <div style="width: 70%;" :style="estiloVistaPrincipal()">
-
-
       <TocarLetraAcorde
           v-if="vista.viendo != 'editartexto'"
           :cancion="appStore.cancion"
@@ -106,13 +104,20 @@ function clickCerrarEditarTexto() {
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></editAcordes>
+      
+      <consola-acordes
+        v-if="vista.viendo == 'editconsolaacordes'"
+        @cerrar="clickCerrarEditarTexto"
+        :cancion="appStore.editandocancion"
+        :compas="appStore.compas"
+      ></consola-acordes>
               <Secuencia
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          v-if="vista.viendo != 'editaracordes'"
+            v-if="vista.viendo !== 'editconsolaacordes' && vista.viendo !== 'editaracordes'"
         ></Secuencia>
         <Partes
-          v-if="vista.viendo != 'editaracordes'"
+          v-if="vista.viendo !== 'editconsolaacordes' && vista.viendo !== 'editaracordes'"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></Partes>
@@ -136,6 +141,9 @@ function clickCerrarEditarTexto() {
           
           <li v-on:click="cambiarVista('editaracordes')">
             <a class="dropdown-item" href="#">Editar Acordes</a>
+          </li>
+          <li v-on:click="cambiarVista('editconsolaacordes')">
+            <a class="dropdown-item" href="#">Consola Acordes</a>
           </li>
           
           <li><hr class="dropdown-divider" 
