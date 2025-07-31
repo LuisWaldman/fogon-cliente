@@ -9,8 +9,6 @@ function guardarCambios() {
     nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
     datosJSON: appStore.editandocancion || {},
   }
-
-  // Send the POST request with the cancion data
   appStore.aplicacion
     .HTTPPost('cancion', cancionData)
     .then((response) => {
@@ -28,34 +26,6 @@ function guardarCambios() {
       {{ appStore.editandocancion?.cancion }} -
       {{ appStore.editandocancion?.banda }}
 
-      <div class="dropdown dropdown-superior-derecha ms-auto">
-        <button
-          style="background-color: #353333; border: none"
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          ---
-        </button>
-        <ul
-          class="dropdown-menu dropdown-menu-end"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <li>Ver Acordes</li>
-
-          <li>Ver Versos</li>
-          <li><hr class="dropdown-divider" /></li>
-          <li>Guardar Cambios</li>
-          <li>Descargar</li>
-          <li><hr class="dropdown-divider" /></li>
-          <li @click="guardarCambios">Guardar</li>
-          <li>Nuevo</li>
-          <li><hr class="dropdown-divider" /></li>
-          <li>Compartir</li>
-        </ul>
-      </div>
     </div>
   </nav>
 </template>
@@ -272,8 +242,7 @@ function guardarCambios() {
 .navbar {
   padding: 10px;
   border: 6px solid #8b4513;
-  border-left: 1px solid #a9a8f6;
-  border-bottom: 1px solid #a9a8f6;
+  border-top: 1px solid #a9a8f6;
   margin-bottom: 3px;
 }
 

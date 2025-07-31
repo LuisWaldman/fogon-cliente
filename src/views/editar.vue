@@ -30,9 +30,7 @@ function guardarCambios() {
 }
 class vistaTocar {
   viendo: string = 'acordes'
-  secuencia: boolean = true
-  partes: boolean = true
-  proximosAcordes: boolean = false
+  editandoacordes: boolean = true
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
 function GetStylePantallaEdit() {
@@ -112,17 +110,17 @@ function clickTocar() {
           <li v-on:click="cambiarVista('acordes')">
             <a class="dropdown-item" href="#">Acordes</a>
           </li>
-          <li v-on:click="cambiarVista('soloacordes')">
+          <li v-on:click="cambiarVista('editartexto')">
             <a class="dropdown-item" href="#">Editar Texto Acordes</a>
           </li>
-          <li v-on:click="cambiarVista('solometrica')">
+          <li v-on:click="cambiarVista('editartexto')">
             <a class="dropdown-item" href="#">Editar Metrica</a>
           </li>
           <li><hr class="dropdown-divider" /></li>
 
           <li>
             <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
+              <i class="bi bi-check-circle" v-if="vista.editandoacordes"></i>
               Editar Acordes</a
             >
           </li>

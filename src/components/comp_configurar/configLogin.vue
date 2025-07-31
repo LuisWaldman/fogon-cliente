@@ -148,7 +148,7 @@ function logout() {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-family: sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h2 {
