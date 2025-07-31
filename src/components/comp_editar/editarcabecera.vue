@@ -4,22 +4,22 @@ import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
 function guardarCambios() {
-  
   // Create the Cancion object structure as expected by the backend
-  const cancionData = { 
+  const cancionData = {
     nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
-    datosJSON: appStore.editandocancion || {}
+    datosJSON: appStore.editandocancion || {},
   }
 
   // Send the POST request with the cancion data
-  appStore.aplicacion.HTTPPost('cancion', cancionData)
-    .then(response => {
+  appStore.aplicacion
+    .HTTPPost('cancion', cancionData)
+    .then((response) => {
       console.log('Canción guardada exitosamente', response)
     })
-    .catch(error => {
+    .catch((error) => {
       console.error('Error al guardar la canción', error)
     })
-} 
+}
 </script>
 
 <template>

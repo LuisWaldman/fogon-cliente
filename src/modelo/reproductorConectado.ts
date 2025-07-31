@@ -43,49 +43,54 @@ export class ReproductorConectado extends Reproductor {
       console.log(`Canción actualizada: ${nombreArchivo}`)
       //this.CargarCancion(cancion)
 
-        fetch(`${this.cliente.UrlServer}cancion?nombre=${encodeURIComponent(nombreArchivo)}`, {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${this.token}`,
+      fetch(
+        `${this.cliente.UrlServer}cancion?nombre=${encodeURIComponent(nombreArchivo)}`,
+        {
+          method: 'GET',
+          headers: {
+            Authorization: `Bearer ${this.token}`,
+          },
         },
-      }).then(async (response) => {
+      ).then(async (response) => {
         if (response.ok) {
           const data = await response.json()
 
-              const partes = []
-              for (let i = 0; i < data.datosJSON.acordes.partes.length; i++) {
-                partes.push(
-                  new Parte(
-                    data.datosJSON.acordes.partes[i].nombre,
-                    data.datosJSON.acordes.partes[i].acordes,
-                  ),
-                )
-              }
+          const partes = []
+          for (let i = 0; i < data.datosJSON.acordes.partes.length; i++) {
+            partes.push(
+              new Parte(
+                data.datosJSON.acordes.partes[i].nombre,
+                data.datosJSON.acordes.partes[i].acordes,
+              ),
+            )
+          }
 
-              const acordes = new Acordes(partes, data.datosJSON.acordes.ordenPartes)
-          
-              const toRet: Cancion = new Cancion(
-                data.datosJSON.cancion,
-                data.datosJSON.banda,
-                acordes,
-                new Letra(data.datosJSON.letras.renglones),
-                data.datosJSON.bpm,
-                data.datosJSON.calidad,
-                data.datosJSON.compas_cantidad,
-                data.datosJSON.compases_tiempo,
-                data.datosJSON.escala,
-              )
-              toRet.archivo = nombreArchivo
-              toRet.normalizar()
-              const appStore = useAppStore()
-              appStore.cancion = toRet
-              console.log(`Canción cargada: `, toRet)
-              this.cancion = nombreArchivo
+          const acordes = new Acordes(
+            partes,
+            data.datosJSON.acordes.ordenPartes,
+          )
+
+          const toRet: Cancion = new Cancion(
+            data.datosJSON.cancion,
+            data.datosJSON.banda,
+            acordes,
+            new Letra(data.datosJSON.letras.renglones),
+            data.datosJSON.bpm,
+            data.datosJSON.calidad,
+            data.datosJSON.compas_cantidad,
+            data.datosJSON.compases_tiempo,
+            data.datosJSON.escala,
+          )
+          toRet.archivo = nombreArchivo
+          toRet.normalizar()
+          const appStore = useAppStore()
+          appStore.cancion = toRet
+          console.log(`Canción cargada: `, toRet)
+          this.cancion = nombreArchivo
         } else {
           throw new Error('Error al obtener la canción')
         }
       })
-
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)

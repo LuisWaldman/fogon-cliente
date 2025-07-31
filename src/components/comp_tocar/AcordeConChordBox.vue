@@ -3,7 +3,7 @@
 import { onMounted, ref } from 'vue'
 //import { AcordesGuitarraHelper } from '../../modelo/GuitarAcordes'
 
-const props = defineProps<{
+defineProps<{
   acorde: string
 }>()
 

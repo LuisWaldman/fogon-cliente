@@ -63,7 +63,10 @@ export class HtmlAcordeConBr extends HtmlAcorde {
     if (this.id != -1) {
       idEnspan = " id='span_acorde-" + this.id.toString() + "'"
     }
-    let ret = `<div ><div class='acordediv' ${idEnspan}>${this.acorde}` + '&nbsp;'.repeat(tamaño2) + `</div></div>`
+    let ret =
+      `<div ><div class='acordediv' ${idEnspan}>${this.acorde}` +
+      '&nbsp;'.repeat(tamaño2) +
+      `</div></div>`
     ret += '<div class="saltolinea"></div>'.repeat(this.cantidadDeBr)
     //style="flex-basis: 100%; "
     //ret += '<div><br></div>'.repeat(this.cantidadDeBr);
