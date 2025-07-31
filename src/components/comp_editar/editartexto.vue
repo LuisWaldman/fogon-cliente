@@ -95,8 +95,9 @@ onMounted(() => {
   overflow-y: auto;
   min-height: 100px;
   position: absolute;
+  
+  color: white;
   font-size: 24px;
-  font-family: 'Roboto Mono', monospace;
   padding: 12px;
   top: 24px;
   width: 100%;
@@ -104,8 +105,9 @@ onMounted(() => {
 }
 
 .divAcordes {
+  
+  color: #a9a8f6;
   top: 0px;
-  color: red;
 }
 .divAcordes div {
   display: inline-block;
