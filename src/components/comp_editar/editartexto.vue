@@ -13,12 +13,17 @@ const contentMetricaEs = ref('')
 const refTextoEditable = ref('')
 
 var fondoAcordes = new BuildFondoAcordes()
+var fondoMetricaEs = new BuildFondoMetricaES()
 
 function updateContent() {
   console.log('updateContent')
   const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
     .innerHTML
   contentAcordes.value = fondoAcordes.build(props.cancion, textoCancion)
+  contentMetricaEs.value = fondoMetricaEs.build(
+    props.cancion,
+    textoCancion
+  )
   props.cancion.letras.renglones = fondoAcordes.textoRenglones(textoCancion)
 }
 
@@ -103,7 +108,6 @@ onMounted(() => {
   font-size: var(--tamanio-acorde);
   color: #a9a8f6;
   top: 0px;
-  z-index: 100;
 }
 .divAcordes div {
   display: inline-block;
@@ -116,6 +120,7 @@ onMounted(() => {
 }
 
 .divMetricaEs {
+  color: #e69c49;
 }
 
 .divEditableContainer {

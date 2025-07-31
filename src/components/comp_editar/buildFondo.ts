@@ -70,15 +70,14 @@ export class BuildFondoAcordes extends BuildFondo {
 }
 
 export class BuildFondoMetricaES extends BuildFondo {
-  hacerTexto(cancion: Cancion): string {
-    throw new Error('Method not implemented.')
-  }
+  
   override build(cancion: Cancion, textoCancion: string): string {
     const renglones = textoCancion.split('<br>')
+   
     let ret = ''
     for (const renglon of renglones) {
-      ret += renglon.replace(/\[([^\]]+)\]/g, '').trim() + 'METRI<br>'
-      ret += 'METRICA ES' + '<br>'
+      const reng_depu = renglon.replace('|', ' ').trim()
+      ret += '&nbsp;'.repeat(reng_depu.length + 3) + ' ( 8 SILABAS RIMA ASONANTE DO [A])' + '<br>'
     }
     return ret
   }
