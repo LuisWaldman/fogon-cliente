@@ -51,12 +51,7 @@ defineExpose({
 // On component mount, initialize the text
 import { onMounted } from 'vue'
 
-function updateCancion() {
-  console.log('updateCancion')
-  const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
-    .innerHTML
-  props.cancion.letras.renglones = fondoAcordes.textoRenglones(textoCancion)
-}
+
 onMounted(() => {
   refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
   updateContent()
@@ -97,7 +92,7 @@ onMounted(() => {
   position: absolute;
   
   color: white;
-  font-size: 24px;
+  font-size: var(--tamanio-letra);
   padding: 12px;
   top: 24px;
   width: 100%;
@@ -105,7 +100,7 @@ onMounted(() => {
 }
 
 .divAcordes {
-  
+  font-size: var(--tamanio-acorde);
   color: #a9a8f6;
   top: 0px;
 }

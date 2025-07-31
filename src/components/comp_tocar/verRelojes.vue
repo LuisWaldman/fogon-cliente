@@ -67,11 +67,9 @@ function cerrarRelojes() {
     <div
       style="display: flex; justify-content: space-between; align-items: center"
     >
-      <h3>RELOJES</h3>
     </div>
     <div style="display: flex">
       <div>
-        RELOJES
         <div style="display: flex">
           Local <RelojControl :fecha="momentoLocal"></RelojControl> Sincro
           <RelojControl :fecha="momentoSincro"></RelojControl>
@@ -92,7 +90,7 @@ function cerrarRelojes() {
         </div>
         <div>
           <div>
-            Delay: {{ Math.floor(delaySincroReloj / 1000) }}s
+            Delay en Sincro: {{ Math.floor(delaySincroReloj / 1000) }}s
             {{ (delaySincroReloj % 1000).toFixed(0) }}ms +/-
             {{ ErrorReloj.toFixed(2) }}ms
           </div>

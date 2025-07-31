@@ -97,6 +97,16 @@ function clickTocar() {
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></editAcordes>
+              <Secuencia
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          
+        ></Secuencia>
+        <Partes
+          
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></Partes>
     </div>
     
       <div class="dropdown dropdown-superior-derecha">
