@@ -33,7 +33,7 @@ function updateContent() {
     contentMetricaEs.value = ''
   }
   
-  props.cancion.letras.renglones = fondoAcordes.textoRenglones(textoCancion)
+  
 }
 
 function handlePaste(event: ClipboardEvent) {
@@ -62,11 +62,12 @@ watch(
 function click_okeditacorde() {
     const texto_cancion = (document.querySelector('.divEditable') as HTMLElement).innerHTML;
     props.cancion.letras.renglones =  [ texto_cancion.replace('&nbsp;', ' ').replace('<div>', '/n').replace('</div>', '').replace(/<br>/g, '/n').split('|') ] ;
+    emit('cerrar')
 }
 
 function click_cancelareditacorde() {
-  
-  updateContent();
+    emit('cerrar')
+    updateContent()
 }
 
 
@@ -75,6 +76,9 @@ function click_cancelareditacorde() {
 defineExpose({
   updateContent,
 })
+// Event to notify parent when the editor should close
+const emit = defineEmits(['cerrar'])
+
 
 // On component mount, initialize the text
 import { onMounted } from 'vue'

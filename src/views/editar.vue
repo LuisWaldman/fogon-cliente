@@ -68,7 +68,10 @@ function clickTocar() {
   appStore.cancion = appStore.editandocancion
   router.push('/tocar')
 }
-
+function clickCerrarEditarTexto() {
+  // Set the current view to 'inicio'
+  cambiarVista('inicio')
+}
 </script>
 <template>
   <cabecera></cabecera>
@@ -92,7 +95,7 @@ function clickTocar() {
         :compas="appStore.compas"
         :verAcordes="vista.verEditandoAcordes"
         :verMetricaEs="vista.verEditandoMetricaEs"
-        
+        @cerrar="clickCerrarEditarTexto"
       ></editartexto>
     </div>
 
@@ -150,14 +153,6 @@ function clickTocar() {
               Ver Metrica</a>
           </li>
 
-          <li><hr class="dropdown-divider" /></li>
-
-          <li>
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.viendoacordes"></i>
-              Viendo Secuencia</a
-            >
-          </li>
           <li><hr class="dropdown-divider" /></li>
           <li >
             <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
