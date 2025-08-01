@@ -273,7 +273,6 @@ function click_okcambiopartes() {
         :partes="true"
         :width="300"
         :height="2000"
-        
       ></ComponenteMusicalAcordes>
 
       <div>

@@ -70,14 +70,16 @@ export class BuildFondoAcordes extends BuildFondo {
 }
 
 export class BuildFondoMetricaES extends BuildFondo {
-  
   override build(cancion: Cancion, textoCancion: string): string {
     const renglones = textoCancion.split('<br>')
-   
+
     let ret = ''
     for (const renglon of renglones) {
       const reng_depu = renglon.replace('|', ' ').trim()
-      ret += '&nbsp;'.repeat(reng_depu.length + 3) + ' ( 8 SILABAS RIMA ASONANTE DO [A])' + '<br>'
+      ret +=
+        '&nbsp;'.repeat(reng_depu.length + 3) +
+        ' ( 8 SILABAS RIMA ASONANTE DO [A])' +
+        '<br>'
     }
     return ret
   }

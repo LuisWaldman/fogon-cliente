@@ -9,15 +9,14 @@ import { EditarMusicaHelper } from './editarMusicaHelper'
 const props = defineProps<{ cancion: Cancion }>()
 const emit = defineEmits(['cerrar'])
 
-
 const refEditandoTextoAcordes = ref('')
 
 function click_okeditacorde() {
   console.log('click_okeditacorde')
-  
+
   let helper = new EditarAcordesToTextoHelper()
   props.cancion.acordes = helper.texto_to_acordes(refEditandoTextoAcordes.value)
-  
+
   emit('cerrar')
 }
 function click_cancelareditacorde() {
@@ -25,30 +24,30 @@ function click_cancelareditacorde() {
   emit('cerrar')
 }
 
-  refEditandoTextoAcordes.value = EditarAcordesToTextoHelper.acordes_to_texto(
-    props.cancion.acordes,
-  )
+refEditandoTextoAcordes.value = EditarAcordesToTextoHelper.acordes_to_texto(
+  props.cancion.acordes,
+)
 </script>
 
 <template>
   <div>
-      <div class="btnEditAcorde"  @click="click_okeditacorde" >
-      <span class="bi  bi-check-circle"></span> Ok
-      </div>
-        <div class="btnEditAcorde" @click="click_cancelareditacorde" >
-      <span class="bi  bi-x-circle"></span> Cancelar
-      </div>
-</div>
+    <div class="btnEditAcorde" @click="click_okeditacorde">
+      <span class="bi bi-check-circle"></span> Ok
+    </div>
+    <div class="btnEditAcorde" @click="click_cancelareditacorde">
+      <span class="bi bi-x-circle"></span> Cancelar
+    </div>
+  </div>
   <div class="divTextArea">
-          <textarea
-          v-model="refEditandoTextoAcordes"
-          style="width: 100%; height: 200px; resize: none"
-        ></textarea>
-        </div>
+    <textarea
+      v-model="refEditandoTextoAcordes"
+      style="width: 100%; height: 200px; resize: none"
+    ></textarea>
+  </div>
 </template>
 
 <style scoped>
-.divTextArea textarea  {
+.divTextArea textarea {
   color: rgb(233, 221, 223);
   font-size: x-large;
 }

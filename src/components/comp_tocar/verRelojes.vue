@@ -66,8 +66,7 @@ function cerrarRelojes() {
   <div class="divRelojes">
     <div
       style="display: flex; justify-content: space-between; align-items: center"
-    >
-    </div>
+    ></div>
     <div style="display: flex">
       <div>
         <div style="display: flex">

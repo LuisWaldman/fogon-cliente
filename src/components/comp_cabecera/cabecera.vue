@@ -49,7 +49,10 @@ const unirseSesion = (sesion: string) => {
 </script>
 
 <template>
-  <nav class="navbarFogon navbar"  :class="{ 'editando': $route.path === '/editar' }" >
+  <nav
+    class="navbarFogon navbar"
+    :class="{ editando: $route.path === '/editar' }"
+  >
     <div style="display: flex; width: 100%">
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img
@@ -209,7 +212,6 @@ const unirseSesion = (sesion: string) => {
 </template>
 
 <style scoped>
-
 .editando {
   background-color: #f5da09 !important;
 }
@@ -286,7 +288,6 @@ const unirseSesion = (sesion: string) => {
   margin-top: 5px;
   margin-right: -10px;
 }
-
 
 .dropdown-submenu:hover > .dropdown-toggle::after {
   border-right-color: #999;

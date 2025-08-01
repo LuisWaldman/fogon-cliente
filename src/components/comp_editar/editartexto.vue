@@ -8,7 +8,6 @@ const props = defineProps<{
   cancion: Cancion
   verAcordes: boolean
   verMetricaEs: boolean
-
 }>()
 
 const contentAcordes = ref('')
@@ -32,8 +31,6 @@ function updateContent() {
   } else {
     contentMetricaEs.value = ''
   }
-  
-  
 }
 
 function handlePaste(event: ClipboardEvent) {
@@ -57,20 +54,24 @@ watch(
   },
 )
 
-
-
 function click_okeditacorde() {
-    const texto_cancion = (document.querySelector('.divEditable') as HTMLElement).innerHTML;
-    props.cancion.letras.renglones =  [ texto_cancion.replace('&nbsp;', ' ').replace('<div>', '/n').replace('</div>', '').replace(/<br>/g, '/n').split('|') ] ;
-    emit('cerrar')
+  const texto_cancion = (document.querySelector('.divEditable') as HTMLElement)
+    .innerHTML
+  props.cancion.letras.renglones = [
+    texto_cancion
+      .replace('&nbsp;', ' ')
+      .replace('<div>', '/n')
+      .replace('</div>', '')
+      .replace(/<br>/g, '/n')
+      .split('|'),
+  ]
+  emit('cerrar')
 }
 
 function click_cancelareditacorde() {
-    emit('cerrar')
-    updateContent()
+  emit('cerrar')
+  updateContent()
 }
-
-
 
 // Expose updateContent to parent components
 defineExpose({
@@ -79,10 +80,8 @@ defineExpose({
 // Event to notify parent when the editor should close
 const emit = defineEmits(['cerrar'])
 
-
 // On component mount, initialize the text
 import { onMounted } from 'vue'
-
 
 onMounted(() => {
   refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
@@ -92,13 +91,13 @@ onMounted(() => {
 
 <template>
   <div>
-      <div class="btnEditAcorde"  @click="click_okeditacorde" >
-      <span class="bi  bi-check-circle"></span> Ok
-      </div>
-        <div class="btnEditAcorde" @click="click_cancelareditacorde" >
-      <span class="bi  bi-x-circle"></span> Cancelar
-      </div>
-</div>
+    <div class="btnEditAcorde" @click="click_okeditacorde">
+      <span class="bi bi-check-circle"></span> Ok
+    </div>
+    <div class="btnEditAcorde" @click="click_cancelareditacorde">
+      <span class="bi bi-x-circle"></span> Cancelar
+    </div>
+  </div>
   <div class="divEditableContainer">
     <div
       style="z-index: 200"
@@ -130,7 +129,7 @@ onMounted(() => {
   overflow-y: auto;
   min-height: 100px;
   position: absolute;
-  
+
   color: white;
   font-size: var(--tamanio-letra);
   padding: 12px;
@@ -149,16 +148,16 @@ onMounted(() => {
 }
 
 .btnEditAcorde {
-    border: 1px solid;
-    color: #a9a8f6;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    padding: 10px 24px;
+  border: 1px solid;
+  color: #a9a8f6;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 24px;
 }
 .divAcordes .saltolinea {
   width: 100%;

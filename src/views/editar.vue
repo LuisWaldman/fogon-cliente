@@ -11,6 +11,9 @@ import Partes from '../components/comp_tocar/Partes.vue'
 import { ref, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
+import { Cancion } from '../modelo/cancion'
+import { Acordes } from '../modelo/acordes'
+import { Letra } from '../modelo/letra'
 
 const pantalla = new Pantalla()
 
@@ -46,10 +49,8 @@ function GetStylePantallaEdit() {
   }
 }
 
-
 function estiloVistaPrincipal() {
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%; overflow: auto;`
-  
 }
 
 function estiloVistaSecundaria() {
@@ -76,15 +77,13 @@ function clickCerrarEditarTexto() {
 </script>
 <template>
   <cabecera></cabecera>
-  <div style="display: flex"
-   class="relativo"
-  :style="GetStylePantallaEdit()">
-    <div style="width: 70%;" :style="estiloVistaPrincipal()">
+  <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
+    <div style="width: 70%" :style="estiloVistaPrincipal()">
       <TocarLetraAcorde
-          v-if="vista.viendo != 'editartexto'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarLetraAcorde>
+        v-if="vista.viendo != 'editartexto'"
+        :cancion="appStore.cancion"
+        :compas="appStore.compas"
+      ></TocarLetraAcorde>
 
       <editartexto
         v-if="vista.viendo == 'editartexto'"
@@ -98,85 +97,96 @@ function clickCerrarEditarTexto() {
     </div>
 
     <div :style="estiloVistaSecundaria()">
-
       <editAcordes
         v-if="vista.viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></editAcordes>
-      
+
       <consola-acordes
         v-if="vista.viendo == 'editconsolaacordes'"
         @cerrar="clickCerrarEditarTexto"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></consola-acordes>
-              <Secuencia
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-            v-if="vista.viendo !== 'editconsolaacordes' && vista.viendo !== 'editaracordes'"
-        ></Secuencia>
-        <Partes
-          v-if="vista.viendo !== 'editconsolaacordes' && vista.viendo !== 'editaracordes'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></Partes>
+      <Secuencia
+        :cancion="appStore.cancion"
+        :compas="appStore.compas"
+        v-if="
+          vista.viendo !== 'editconsolaacordes' &&
+          vista.viendo !== 'editaracordes'
+        "
+      ></Secuencia>
+      <Partes
+        v-if="
+          vista.viendo !== 'editconsolaacordes' &&
+          vista.viendo !== 'editaracordes'
+        "
+        :cancion="appStore.cancion"
+        :compas="appStore.compas"
+      ></Partes>
     </div>
-    
-      <div class="dropdown dropdown-superior-derecha">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
+
+    <div class="dropdown dropdown-superior-derecha">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <i class="bi bi-eye"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li v-on:click="cambiarVista('editartexto')">
+          <a class="dropdown-item" href="#">Editar Texto</a>
+        </li>
+
+        <li v-on:click="cambiarVista('editaracordes')">
+          <a class="dropdown-item" href="#">Editar Acordes</a>
+        </li>
+        <li v-on:click="cambiarVista('editconsolaacordes')">
+          <a class="dropdown-item" href="#">Consola Acordes</a>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider" v-if="vista.viendo == 'editartexto'" />
+        </li>
+        <li
+          v-on:click="vista.verEditandoAcordes = !vista.verEditandoAcordes"
+          v-if="vista.viendo == 'editartexto'"
         >
-          <i class="bi bi-eye"></i>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">
+            <i class="bi bi-check-circle" v-if="vista.verEditandoAcordes"></i>
+            Ver Acordes</a
+          >
+        </li>
 
-          <li v-on:click="cambiarVista('editartexto')">
-            <a class="dropdown-item" href="#">Editar Texto</a>
-          </li>
-          
-          <li v-on:click="cambiarVista('editaracordes')">
-            <a class="dropdown-item" href="#">Editar Acordes</a>
-          </li>
-          <li v-on:click="cambiarVista('editconsolaacordes')">
-            <a class="dropdown-item" href="#">Consola Acordes</a>
-          </li>
-          
-          <li><hr class="dropdown-divider" 
-            v-if="vista.viendo == 'editartexto'"/></li>
-          <li v-on:click="vista.verEditandoAcordes = !vista.verEditandoAcordes" 
-            v-if="vista.viendo == 'editartexto'">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.verEditandoAcordes"></i>
-              Ver Acordes</a>
-          </li>
+        <li
+          v-on:click="vista.verEditandoMetricaEs = !vista.verEditandoMetricaEs"
+          v-if="vista.viendo == 'editartexto'"
+        >
+          <a class="dropdown-item" href="#">
+            <i class="bi bi-check-circle" v-if="vista.verEditandoMetricaEs"></i>
+            Ver Metrica</a
+          >
+        </li>
 
-          <li v-on:click="vista.verEditandoMetricaEs = !vista.verEditandoMetricaEs" v-if="vista.viendo == 'editartexto'">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.verEditandoMetricaEs"></i>
-              Ver Metrica</a>
-          </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li>
+          <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li @click="guardarCambios">
+          <a class="dropdown-item" href="#"> Guardar Cambios</a>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
 
-          <li><hr class="dropdown-divider" /></li>
-          <li >
-            <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
-          </li>
-          <li><hr class="dropdown-divider" /></li>
-          <li @click="guardarCambios">
-            <a class="dropdown-item" href="#"> Guardar Cambios</a>
-          </li>
-          <li><hr class="dropdown-divider" /></li>
-
-          
-          <li @click="clickTocar()">
-            <a class="dropdown-item" href="#">Tocar</a>
-          </li>
-        </ul>
-      </div>
+        <li @click="clickTocar()">
+          <a class="dropdown-item" href="#">Tocar</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -193,5 +203,4 @@ function clickCerrarEditarTexto() {
   right: 10px;
   z-index: 10;
 }
-
 </style>

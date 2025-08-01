@@ -75,7 +75,6 @@ function cambiarVista(nvista: string) {
 }
 function estiloVistaPrincipal() {
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%; overflow: auto;`
-  
 }
 
 function estiloVistaSecundaria() {

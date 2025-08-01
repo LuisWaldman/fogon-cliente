@@ -25,7 +25,106 @@ function guardarCambios() {
     <div style="display: flex; width: 100%">
       {{ appStore.editandocancion?.cancion }} -
       {{ appStore.editandocancion?.banda }}
+    </div>
+    <div v-if="appStore.editandocancion">
+      <span class="lblCabecera">BPM:</span>
+      <input
+        type="range"
+        style="background-color: #a9a8f6; color: white"
+        v-model="appStore.editandocancion.bpm"
+        min="30"
+        max="240"
+      />
+      {{ appStore.editandocancion.bpm }} -
 
+      <span
+        style="color: white !important"
+        v-if="appStore.editandocancion.bpm < 40"
+        >No cargada o menos que lenta</span
+      >
+      <span
+        style="background-color: #a9a8f6; color: white"
+        v-if="
+          appStore.editandocancion.bpm >= 40 &&
+          appStore.editandocancion.bpm <= 60
+        "
+        >Largo</span
+      >
+      <span
+        v-if="
+          appStore.editandocancion.bpm > 60 &&
+          appStore.editandocancion.bpm <= 66
+        "
+        >Largo a Adagio</span
+      >
+      <span
+        v-if="
+          appStore.editandocancion.bpm > 66 &&
+          appStore.editandocancion.bpm <= 76
+        "
+        >Adagio</span
+      >
+      <span
+        v-if="
+          appStore.editandocancion.bpm > 76 &&
+          appStore.editandocancion.bpm <= 108
+        "
+        >Andante</span
+      >
+      <span
+        v-if="
+          appStore.editandocancion.bpm > 108 &&
+          appStore.editandocancion.bpm <= 120
+        "
+        >Moderato</span
+      >
+      <span
+        v-if="
+          appStore.editandocancion.bpm > 120 &&
+          appStore.editandocancion.bpm <= 168
+        "
+        >Allegro</span
+      >
+      <span
+        v-if="
+          appStore.editandocancion.bpm > 168 &&
+          appStore.editandocancion.bpm <= 176
+        "
+        >Vivace</span
+      >
+      <span
+        v-if="
+          appStore.editandocancion.bpm > 176 &&
+          appStore.editandocancion.bpm <= 200
+        "
+        >Presto</span
+      >
+      <span v-if="appStore.editandocancion.bpm > 200">Prestissimo</span>
+
+      <span class="lblCabecera">Compas:</span>
+      <input
+        type="text"
+        v-model="cancion.compas_cantidad"
+        maxlength="1"
+        :style="{ width: '3ch' }"
+      />
+      /
+      <input
+        type="text"
+        v-model="cancion.compas_unidad"
+        maxlength="1"
+        :style="{ width: '3ch' }"
+      />
+      - <span class="lblCabecera">Escala:</span>
+      <input
+        type="text"
+        v-model="cancion.escala"
+        maxlength="4"
+        :style="{ width: '6ch' }"
+      />
+
+      <span class="lblCabecera">Calidad:</span>
+      <input type="range" v-model="cancion.calidad" min="0" max="10" />
     </div>
   </nav>
 </template>

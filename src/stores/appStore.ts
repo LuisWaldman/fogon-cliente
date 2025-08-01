@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import Aplicacion from '../aplicacion'
 import { Cancion } from '../modelo/cancion'
 import { itemLista } from '../modelo/item_lista'
-import { Acordes } from '../modelo/acordes'
+import { Acordes, Parte } from '../modelo/acordes'
 import { Letra } from '../modelo/letra'
 import { Noticia } from '../modelo/noticia'
 import { Perfil } from '../modelo/perfil'
@@ -35,8 +35,8 @@ export const useAppStore = defineStore('app', () => {
     new Cancion(
       'Cancion no cargada',
       'sin banda',
-      new Acordes([], []),
-      new Letra([]),
+      new Acordes([new Parte('', [''])], [0]),
+      new Letra([['']]),
     ),
   )
 
