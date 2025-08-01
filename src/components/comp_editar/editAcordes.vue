@@ -29,24 +29,7 @@ function click_editarparte(index: number) {
   refEditantoOrdenParte.value = index
 }
 
-const refEditandoComoTexto = ref(false)
 const refEditandoTextoAcordes = ref('')
-function click_editarcomotexto() {
-  refEditandoComoTexto.value = !refEditandoComoTexto.value
-  refLeyendo.value = !refEditandoComoTexto.value
-  refEditandoTextoAcordes.value = EditarAcordesToTextoHelper.acordes_to_texto(
-    props.cancion.acordes,
-  )
-}
-
-function click_editarcomotextook() {
-  refLeyendo.value = false
-  refEditandoComoTexto.value = false
-  refLeyendo.value = true
-  let helper = new EditarAcordesToTextoHelper()
-  props.cancion.acordes = helper.texto_to_acordes(refEditandoTextoAcordes.value)
-  emit('actualizo_cancion')
-}
 
 function click_okeditarparte(index: number) {
   const toana = acordes_editando.value
@@ -72,12 +55,12 @@ function actualizarOrdenPartes(index: number) {
 
 function click_acorde(parte: number, acorde: number) {
   if (refMixeando.value) {
-    editarAcordesHelper.mix_acorde(props.cancion, parte, acorde)
+    editarAcordesHelper.mixAcorde(props.cancion, parte, acorde)
     emit('actualizo_cancion')
     refMixeando.value = false
   }
   if (refSpliteando.value) {
-    editarAcordesHelper.splitear_parte(props.cancion, parte, acorde)
+    editarAcordesHelper.splitearParte(props.cancion, parte, acorde)
     emit('actualizo_cancion')
     refSpliteando.value = false
   }
@@ -282,69 +265,6 @@ function click_okcambiopartes() {
 
 <template>
   <div class="componenteMusical">
-    <div style="display: flex; flex-wrap: wrap">
-      <div
-        class="btnEditAcorde"
-        :class="{ btnSeleccionado: refEditandoComoTexto }"
-        @click="click_editarcomotexto"
-      >
-        <span class="bi bi-card-text"></span>
-      </div>
-
-      <div
-        class="btnEditAcorde"
-        v-if="refEditandoComoTexto"
-        @click="click_editarcomotextook"
-      >
-        <span class="bi bi-check-circle"></span>
-      </div>
-
-      <div
-        class="btnEditAcorde"
-        :class="{ btnSeleccionado: refEditandoAcordes }"
-        @click="click_editaracordes"
-      >
-        <span class="bi bi-pencil"></span>
-      </div>
-
-      <div v-if="refEditandoAcordes">
-        <div
-          class="btnEditAcorde"
-          :class="{ btnSeleccionado: refMixeando }"
-          @click="click_mixacorde"
-        >
-          Mix
-        </div>
-        <div
-          class="btnEditAcorde"
-          :class="{ btnSeleccionado: refSpliteando }"
-          @click="click_splitacorde"
-        >
-          /
-        </div>
-        <div
-          class="btnEditAcorde"
-          :class="{ btnSeleccionado: refBorrandoParteSecuencia }"
-          @click="click_borrarpartesecuencia"
-        >
-          <span class="bi bi-trash"></span>
-        </div>
-        <div
-          class="btnEditAcorde"
-          :class="{ btnSeleccionado: refAgregandoParte }"
-          @click="click_agregarparte"
-        >
-          <span class="bi bi-plus"></span>
-        </div>
-        <div
-          class="btnEditAcorde"
-          :class="{ btnSeleccionado: refAgregandoParteSecuencia }"
-          @click="click_agregarpartesecuencia"
-        >
-          <span class="bi bi-music-note-beamed"></span>
-        </div>
-      </div>
-    </div>
     <div>
       <ComponenteMusicalAcordes
         :cancion="cancion"
@@ -353,16 +273,10 @@ function click_okcambiopartes() {
         :partes="true"
         :width="300"
         :height="2000"
-        v-if="refLeyendo"
+        
       ></ComponenteMusicalAcordes>
 
-      <div v-if="refEditandoComoTexto">
-        <textarea
-          v-model="refEditandoTextoAcordes"
-          style="width: 100%; height: 200px; resize: none"
-        ></textarea>
-      </div>
-      <div v-if="!refEditandoComoTexto && !refLeyendo">
+      <div>
         <div
           class="contAcordes"
           v-for="(parte, index) in cancion.acordes.ordenPartes"
