@@ -64,8 +64,8 @@ function clickAcordes() {
 
 function GetStylePantallaPlay() {
   return {
-    width: pantalla.getAnchoPantalla() + 'px',
-    height: pantalla.getAltoPantalla() + 'px',
+    width: pantalla.getAnchoPantalla()   + 'px',
+    height: pantalla.getAltoPantalla()  + 'px',
   }
 }
 
