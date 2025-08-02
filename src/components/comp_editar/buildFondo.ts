@@ -1,13 +1,11 @@
 import type { Cancion } from '../../modelo/cancion'
-import {
-  HtmlAcordeConBr,
-  HtmlAcordeSimple,
-  type HtmlAcorde,
-} from './htmlAcorde'
+import type { HtmlAcorde } from './htmlAcorde'
 
 export abstract class BuildFondo {
   abstract build(cancion: Cancion, textoCancion: string): string
-  abstract hacerTexto(cancion: Cancion): string
+  static hacerTexto(cancion: Cancion): string {
+    return cancion.letras.renglones.flat().join('|').replace(/\/n/g, '<br>')
+  }
 
   textoRenglones(texto: string): string[][] {
     return texto.split('<br>').map((renglon) => {
@@ -17,7 +15,7 @@ export abstract class BuildFondo {
 }
 
 export class BuildFondoAcordes extends BuildFondo {
-  public html_astring(html: HtmlAcorde[]): string {
+  public htmlastring(html: HtmlAcorde[]): string {
     let tore = ''
     html.forEach((element) => {
       tore += element.renderizar()
@@ -45,13 +43,13 @@ export class BuildFondoAcordes extends BuildFondo {
     const renglones = textoCancion.split('<br>')
     let ret = ''
     let cont = 0
-    let anterioro_enter = false
+    let anterioroEnter = false
     for (const renglon of renglones) {
       const partes = renglon.split('|')
       for (let i = 0; i < partes.length; i++) {
-        if (anterioro_enter) {
+        if (anterioroEnter) {
           ret += '&nbsp;'.repeat(partes[i].length)
-          anterioro_enter = false
+          anterioroEnter = false
         } else {
           ret +=
             this.getAcorde(acordes, cont) + '&nbsp;'.repeat(partes[i].length)
@@ -59,25 +57,20 @@ export class BuildFondoAcordes extends BuildFondo {
         }
       }
       ret += '<br>'
-      anterioro_enter = renglones.length > 0
+      anterioroEnter = renglones.length > 0
     }
     return ret
-  }
-
-  override hacerTexto(cancion: Cancion): string {
-    return cancion.letras.renglones.flat().join('|').replace(/\/n/g, '<br>')
   }
 }
 
 export class BuildFondoMetricaES extends BuildFondo {
-  override build(cancion: Cancion, textoCancion: string): string {
+  override build(_cancion: Cancion, textoCancion: string): string {
     const renglones = textoCancion.split('<br>')
-
     let ret = ''
     for (const renglon of renglones) {
-      const reng_depu = renglon.replace('|', ' ').trim()
+      const rengdepu = renglon.replace('|', ' ').trim()
       ret +=
-        '&nbsp;'.repeat(reng_depu.length + 3) +
+        '&nbsp;'.repeat(rengdepu.length + 3) +
         ' ( 8 SILABAS RIMA ASONANTE DO [A])' +
         '<br>'
     }

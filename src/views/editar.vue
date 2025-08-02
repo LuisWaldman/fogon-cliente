@@ -11,9 +11,6 @@ import Partes from '../components/comp_tocar/Partes.vue'
 import { ref, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
-import { Cancion } from '../modelo/cancion'
-import { Acordes } from '../modelo/acordes'
-import { Letra } from '../modelo/letra'
 
 const pantalla = new Pantalla()
 
@@ -76,12 +73,12 @@ function clickCerrarEditarTexto() {
 }
 </script>
 <template>
-  <cabecera></cabecera>
+  <cabecera :cancion="appStore.editandocancion"></cabecera>
   <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
     <div style="width: 70%" :style="estiloVistaPrincipal()">
       <TocarLetraAcorde
         v-if="vista.viendo != 'editartexto'"
-        :cancion="appStore.cancion"
+        :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></TocarLetraAcorde>
 

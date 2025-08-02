@@ -22,7 +22,7 @@ watch(
 )
 watch(
   () => props.compas,
-  (_n: number) => {
+  () => {
     actualizarLetras(props.cancion)
   },
 )

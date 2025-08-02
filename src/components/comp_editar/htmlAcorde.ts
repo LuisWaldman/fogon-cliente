@@ -56,7 +56,6 @@ export class HtmlAcordeConBr extends HtmlAcorde {
   }
 
   renderizar(): string {
-    const tamaño1 = this.anchoPorcaracter(this.ancho, this.acorde)
     const tamaño2 = this.anchoPorcaracter(this.anchoPostBr, '')
 
     let idEnspan = ''

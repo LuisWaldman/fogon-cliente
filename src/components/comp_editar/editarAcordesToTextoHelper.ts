@@ -1,11 +1,10 @@
 import { Acordes, Parte } from '../../modelo/acordes'
-import { Cancion } from '../../modelo/cancion'
 
 export class EditarAcordesToTextoHelper {
-  static acordes_to_texto(acordes: Acordes): string {
+  static acordesToTexto(acordes: Acordes): string {
     let texto = ''
-    const retorno_carro = '\n'
-    const partes_mostradas = new Set<number>()
+    const retornoCarro = '\n'
+    const partesMostradas = new Set<number>()
     let repite = 0
     let ultima = -1
 
@@ -17,12 +16,12 @@ export class EditarAcordesToTextoHelper {
           repite = 0
         }
         if (i > 0) {
-          texto += retorno_carro
+          texto += retornoCarro
         }
         texto += `'${parte.nombre}'`
-        if (!partes_mostradas.has(indice)) {
+        if (!partesMostradas.has(indice)) {
           texto += parte.acordes.join('|')
-          partes_mostradas.add(indice)
+          partesMostradas.add(indice)
         }
       } else {
         repite++
@@ -39,21 +38,21 @@ export class EditarAcordesToTextoHelper {
   }
 
   public partes: Parte[] = []
-  public orden_partes: number[] = []
+  public ordenPartes: number[] = []
 
-  parte_linea(parte: Parte): string {
+  parteLinea(parte: Parte): string {
     return `'${parte.nombre}'${parte.acordes.join('|')}`
   }
 
-  private indice_nombres: number = 1
-  asignar_nombre(nombre: string): string {
+  private indiceNombres: number = 1
+  asignarNombre(nombre: string): string {
     if (nombre === '') {
-      nombre = `v${this.indice_nombres}`
-      this.indice_nombres++
+      nombre = `v${this.indiceNombres}`
+      this.indiceNombres++
     }
     return nombre
   }
-  agregar_partetexto(texto: string): number[] {
+  agregarPartetexto(texto: string): number[] {
     const parte: Parte = new Parte('', [])
     const ret: number[] = []
     let indice = -1
@@ -63,12 +62,12 @@ export class EditarAcordesToTextoHelper {
       texto = texto.split('*')[0].trim()
     }
     texto = texto.trim()
-    let nombre_parte = ''
+    let nombreParte = ''
     if (texto.startsWith("'")) {
-      const fin_nombre = texto.indexOf("'", 1)
-      if (fin_nombre > 0) {
-        nombre_parte = texto.substring(1, fin_nombre)
-        texto = texto.substring(fin_nombre + 1).trim()
+      const finNombre = texto.indexOf("'", 1)
+      if (finNombre > 0) {
+        nombreParte = texto.substring(1, finNombre)
+        texto = texto.substring(finNombre + 1).trim()
       }
     }
     const acordes = texto
@@ -76,9 +75,9 @@ export class EditarAcordesToTextoHelper {
       .map((acorde) => acorde.trim())
       .filter((acorde) => acorde !== '')
 
-    const existente = this.partes.findIndex((p) => p.nombre === nombre_parte)
+    const existente = this.partes.findIndex((p) => p.nombre === nombreParte)
     if (existente === -1) {
-      parte.nombre = this.asignar_nombre(nombre_parte)
+      parte.nombre = this.asignarNombre(nombreParte)
       parte.acordes = acordes
       this.partes.push(parte)
       indice = this.partes.length - 1
@@ -91,15 +90,15 @@ export class EditarAcordesToTextoHelper {
     return ret
   }
 
-  texto_to_acordes(texto: string): Acordes {
+  textoToAcordes(texto: string): Acordes {
     if (texto === '') {
       return new Acordes([new Parte('vacio', [])], [0])
     }
-    const partes_texto = texto.split('\n')
-    partes_texto.forEach((parte_texto) => {
-      const indices = this.agregar_partetexto(parte_texto)
-      this.orden_partes.push(...indices)
+    const partesTexto = texto.split('\n')
+    partesTexto.forEach((parteTexto) => {
+      const indices = this.agregarPartetexto(parteTexto)
+      this.ordenPartes.push(...indices)
     })
-    return new Acordes(this.partes, this.orden_partes)
+    return new Acordes(this.partes, this.ordenPartes)
   }
 }

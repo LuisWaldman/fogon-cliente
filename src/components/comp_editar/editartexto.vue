@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion'
-import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number
@@ -43,22 +42,26 @@ function handlePaste(event: ClipboardEvent) {
 
 // Watch for changes in editandoCancion
 import { watch } from 'vue'
-import { BuildFondoAcordes, BuildFondoMetricaES } from './buildFondo'
+import {
+  BuildFondo,
+  BuildFondoAcordes,
+  BuildFondoMetricaES,
+} from './buildFondo'
 
 // Set up a watcher that calls updateContent when editandoCancion changes
 watch(
   () => props.cancion,
   () => {
-    refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
+    refTextoEditable.value = BuildFondo.hacerTexto(props.cancion)
     updateContent()
   },
 )
 
-function click_okeditacorde() {
-  const texto_cancion = (document.querySelector('.divEditable') as HTMLElement)
+function clickOkeditacorde() {
+  const textoCancion = (document.querySelector('.divEditable') as HTMLElement)
     .innerHTML
   props.cancion.letras.renglones = [
-    texto_cancion
+    textoCancion
       .replace('&nbsp;', ' ')
       .replace('<div>', '/n')
       .replace('</div>', '')
@@ -68,7 +71,7 @@ function click_okeditacorde() {
   emit('cerrar')
 }
 
-function click_cancelareditacorde() {
+function clickCancelareditacorde() {
   emit('cerrar')
   updateContent()
 }
@@ -84,17 +87,17 @@ const emit = defineEmits(['cerrar'])
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  refTextoEditable.value = fondoAcordes.hacerTexto(props.cancion)
+  refTextoEditable.value = BuildFondo.hacerTexto(props.cancion)
   updateContent()
 })
 </script>
 
 <template>
   <div>
-    <div class="btnEditAcorde" @click="click_okeditacorde">
+    <div class="btnEditAcorde" @click="clickOkeditacorde">
       <span class="bi bi-check-circle"></span> Ok
     </div>
-    <div class="btnEditAcorde" @click="click_cancelareditacorde">
+    <div class="btnEditAcorde" @click="clickCancelareditacorde">
       <span class="bi bi-x-circle"></span> Cancelar
     </div>
   </div>

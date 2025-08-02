@@ -1,40 +1,37 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion'
-import { Parte } from '../../modelo/acordes'
 import { EditarAcordesToTextoHelper } from './editarAcordesToTextoHelper'
-import { editarAcordesHelper } from './editarAcordesHelper'
-import { EditarMusicaHelper } from './editarMusicaHelper'
 
 const props = defineProps<{ cancion: Cancion }>()
 const emit = defineEmits(['cerrar'])
 
 const refEditandoTextoAcordes = ref('')
 
-function click_okeditacorde() {
+function clickOkeditacorde() {
   console.log('click_okeditacorde')
 
   let helper = new EditarAcordesToTextoHelper()
-  props.cancion.acordes = helper.texto_to_acordes(refEditandoTextoAcordes.value)
+  props.cancion.acordes = helper.textoToAcordes(refEditandoTextoAcordes.value)
 
   emit('cerrar')
 }
-function click_cancelareditacorde() {
+function clickCancelareditacorde() {
   console.log('click_cancelareditacorde')
   emit('cerrar')
 }
 
-refEditandoTextoAcordes.value = EditarAcordesToTextoHelper.acordes_to_texto(
+refEditandoTextoAcordes.value = EditarAcordesToTextoHelper.acordesToTexto(
   props.cancion.acordes,
 )
 </script>
 
 <template>
   <div>
-    <div class="btnEditAcorde" @click="click_okeditacorde">
+    <div class="btnEditAcorde" @click="clickOkeditacorde">
       <span class="bi bi-check-circle"></span> Ok
     </div>
-    <div class="btnEditAcorde" @click="click_cancelareditacorde">
+    <div class="btnEditAcorde" @click="clickCancelareditacorde">
       <span class="bi bi-x-circle"></span> Cancelar
     </div>
   </div>

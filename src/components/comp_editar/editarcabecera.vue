@@ -1,23 +1,12 @@
 <script setup lang="ts">
-import { a } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 import { useAppStore } from '../../stores/appStore'
+import type { Cancion } from '../../modelo/cancion'
+
+defineProps<{
+  cancion: Cancion
+}>()
 
 const appStore = useAppStore()
-function guardarCambios() {
-  // Create the Cancion object structure as expected by the backend
-  const cancionData = {
-    nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
-    datosJSON: appStore.editandocancion || {},
-  }
-  appStore.aplicacion
-    .HTTPPost('cancion', cancionData)
-    .then((response) => {
-      console.log('Canción guardada exitosamente', response)
-    })
-    .catch((error) => {
-      console.error('Error al guardar la canción', error)
-    })
-}
 </script>
 
 <template>
@@ -26,92 +15,63 @@ function guardarCambios() {
       {{ appStore.editandocancion?.cancion }} -
       {{ appStore.editandocancion?.banda }}
     </div>
-    <div v-if="appStore.editandocancion">
+    <div v-if="cancion">
       <span class="lblCabecera">BPM:</span>
       <input
         type="range"
         style="background-color: #a9a8f6; color: white"
-        v-model="appStore.editandocancion.bpm"
+        v-model="cancion.bpm"
         min="30"
         max="240"
       />
-      {{ appStore.editandocancion.bpm }} -
+      {{ cancion.bpm }} -
 
       <span
         style="color: white !important"
-        v-if="appStore.editandocancion.bpm < 40"
+        v-if="cancion?.bpm && cancion.bpm < 40"
         >No cargada o menos que lenta</span
       >
       <span
         style="background-color: #a9a8f6; color: white"
-        v-if="
-          appStore.editandocancion.bpm >= 40 &&
-          appStore.editandocancion.bpm <= 60
-        "
+        v-if="cancion?.bpm && cancion.bpm >= 40 && cancion.bpm <= 60"
         >Largo</span
       >
-      <span
-        v-if="
-          appStore.editandocancion.bpm > 60 &&
-          appStore.editandocancion.bpm <= 66
-        "
+
+      <span v-if="cancion?.bpm && cancion.bpm > 60 && cancion.bpm <= 66"
         >Largo a Adagio</span
       >
-      <span
-        v-if="
-          appStore.editandocancion.bpm > 66 &&
-          appStore.editandocancion.bpm <= 76
-        "
+      <span v-if="cancion?.bpm && cancion.bpm > 66 && cancion.bpm <= 76"
         >Adagio</span
       >
-      <span
-        v-if="
-          appStore.editandocancion.bpm > 76 &&
-          appStore.editandocancion.bpm <= 108
-        "
+      <span v-if="cancion?.bpm && cancion.bpm > 76 && cancion.bpm <= 108"
         >Andante</span
       >
-      <span
-        v-if="
-          appStore.editandocancion.bpm > 108 &&
-          appStore.editandocancion.bpm <= 120
-        "
+      <span v-if="cancion?.bpm && cancion.bpm > 108 && cancion.bpm <= 120"
         >Moderato</span
       >
-      <span
-        v-if="
-          appStore.editandocancion.bpm > 120 &&
-          appStore.editandocancion.bpm <= 168
-        "
+      <span v-if="cancion?.bpm && cancion.bpm > 120 && cancion.bpm <= 168"
         >Allegro</span
       >
-      <span
-        v-if="
-          appStore.editandocancion.bpm > 168 &&
-          appStore.editandocancion.bpm <= 176
-        "
+      <span v-if="cancion?.bpm && cancion.bpm > 168 && cancion.bpm <= 176"
         >Vivace</span
       >
-      <span
-        v-if="
-          appStore.editandocancion.bpm > 176 &&
-          appStore.editandocancion.bpm <= 200
-        "
+      <span v-if="cancion?.bpm && cancion.bpm > 176 && cancion.bpm <= 200"
         >Presto</span
       >
-      <span v-if="appStore.editandocancion.bpm > 200">Prestissimo</span>
+      <span v-if="cancion?.bpm && cancion.bpm > 200">Prestissimo</span>
+      <span>&nbsp;-&nbsp;</span>
 
       <span class="lblCabecera">Compas:</span>
       <input
         type="text"
-        v-model="cancion.compas_cantidad"
+        v-model="cancion.compasCantidad"
         maxlength="1"
         :style="{ width: '3ch' }"
       />
       /
       <input
         type="text"
-        v-model="cancion.compas_unidad"
+        v-model="cancion.compasUnidad"
         maxlength="1"
         :style="{ width: '3ch' }"
       />

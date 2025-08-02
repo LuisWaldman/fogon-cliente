@@ -1,6 +1,4 @@
-import { ref } from 'vue'
 import { Acordes, Parte } from '../../modelo/acordes'
-import { Cancion } from '../../modelo/cancion'
 
 export class EditarMusicaHelper {
   static mixear(
@@ -12,12 +10,12 @@ export class EditarMusicaHelper {
       0,
       acordes.partes.length,
     )
-    const secuencia_toret: number[] = []
+    const secuenciaToret: number[] = []
 
     for (let i = 0; i < acordes.ordenPartes.length; i++) {
       const per = acordes.ordenPartes[i]
-      const parte_toret = acordes.partes[per]
-      let nombreAcorde = parte_toret.nombre
+      const parteToret = acordes.partes[per]
+      let nombreAcorde = parteToret.nombre
       let parteIndex = 0
 
       if (per === mixeandoParte) {
@@ -32,7 +30,7 @@ export class EditarMusicaHelper {
               partesToret.push(
                 new Parte(
                   nombreAcorde,
-                  parte_toret.acordes.concat(
+                  parteToret.acordes.concat(
                     acordes.partes[acordes.ordenPartes[i + 1]].acordes,
                   ),
                 ),
@@ -46,9 +44,9 @@ export class EditarMusicaHelper {
       }
 
       parteIndex = partesToret.findIndex((p) => p.nombre === nombreAcorde)
-      secuencia_toret.push(parteIndex)
+      secuenciaToret.push(parteIndex)
     }
-    return this.normalizarAcordes(new Acordes(partesToret, secuencia_toret))
+    return this.normalizarAcordes(new Acordes(partesToret, secuenciaToret))
   }
 
   static normalizarAcordes(acordes: Acordes): Acordes {
