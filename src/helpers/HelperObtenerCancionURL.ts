@@ -37,6 +37,7 @@ export class HelperObtenerCancionURL {
       data.compases_tiempo,
       data.escala,
     )
+    toRet.archivo = nombreArchivo
     toRet.normalizar()
     return toRet
   }

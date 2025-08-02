@@ -73,16 +73,12 @@ function cambiarVista(nvista: string) {
   vista.value.viendo = nvista
   localStorage.setItem('viendo_vista_tocando', nvista)
 }
-function claseVistaPrincipal() {
-  return vista.value.partes || vista.value.secuencia
-    ? 'col-' + pantalla.getConfiguracionPantalla().anchoPrincipal
-    : 'col-11'
+function estiloVistaPrincipal() {
+  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%; overflow: auto;`
 }
 
-function claseVistaSecundaria() {
-  return vista.value.partes || vista.value.secuencia
-    ? 'col-' + (12 - pantalla.getConfiguracionPantalla().anchoPrincipal)
-    : 'col-1'
+function estiloVistaSecundaria() {
+  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
 const refEditSize = ref(false)
 const verRelojesRef = ref(false)
@@ -123,7 +119,7 @@ function cerrareditarPantalla() {
       :style="GetStylePantallaPlay()"
       v-if="appStore.cancion"
     >
-      <div class="columnas" :class="claseVistaPrincipal()">
+      <div class="columnas" :style="estiloVistaPrincipal()">
         <TocarLetraAcorde
           v-if="vista.viendo == 'acordes'"
           :cancion="appStore.cancion"
@@ -140,7 +136,7 @@ function cerrareditarPantalla() {
           :compas="appStore.compas"
         ></TocarAcorde>
       </div>
-      <div class="columnas lateral-container" :class="claseVistaSecundaria()">
+      <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <Secuencia
           :cancion="appStore.cancion"
           :compas="appStore.compas"

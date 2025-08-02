@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
+import type { Cancion } from '../../modelo/cancion'
+
+defineProps<{
+  cancion: Cancion
+}>()
 
 const appStore = useAppStore()
 </script>
@@ -9,35 +14,77 @@ const appStore = useAppStore()
     <div style="display: flex; width: 100%">
       {{ appStore.editandocancion?.cancion }} -
       {{ appStore.editandocancion?.banda }}
+    </div>
+    <div v-if="cancion">
+      <span class="lblCabecera">BPM:</span>
+      <input
+        type="range"
+        style="background-color: #a9a8f6; color: white"
+        v-model="cancion.bpm"
+        min="30"
+        max="240"
+      />
+      {{ cancion.bpm }} -
 
-      <div class="dropdown dropdown-superior-derecha ms-auto">
-        <button
-          style="background-color: #353333; border: none"
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          ---
-        </button>
-        <ul
-          class="dropdown-menu dropdown-menu-end"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <li>Ver Acordes</li>
+      <span
+        style="color: white !important"
+        v-if="cancion?.bpm && cancion.bpm < 40"
+        >No cargada o menos que lenta</span
+      >
+      <span
+        style="background-color: #a9a8f6; color: white"
+        v-if="cancion?.bpm && cancion.bpm >= 40 && cancion.bpm <= 60"
+        >Largo</span
+      >
 
-          <li>Ver Versos</li>
-          <li><hr class="dropdown-divider" /></li>
-          <li>Guardar Cambios</li>
-          <li>Descargar</li>
-          <li><hr class="dropdown-divider" /></li>
-          <li>Guardar Cambios</li>
-          <li>Nuevo</li>
-          <li><hr class="dropdown-divider" /></li>
-          <li>Compartir</li>
-        </ul>
-      </div>
+      <span v-if="cancion?.bpm && cancion.bpm > 60 && cancion.bpm <= 66"
+        >Largo a Adagio</span
+      >
+      <span v-if="cancion?.bpm && cancion.bpm > 66 && cancion.bpm <= 76"
+        >Adagio</span
+      >
+      <span v-if="cancion?.bpm && cancion.bpm > 76 && cancion.bpm <= 108"
+        >Andante</span
+      >
+      <span v-if="cancion?.bpm && cancion.bpm > 108 && cancion.bpm <= 120"
+        >Moderato</span
+      >
+      <span v-if="cancion?.bpm && cancion.bpm > 120 && cancion.bpm <= 168"
+        >Allegro</span
+      >
+      <span v-if="cancion?.bpm && cancion.bpm > 168 && cancion.bpm <= 176"
+        >Vivace</span
+      >
+      <span v-if="cancion?.bpm && cancion.bpm > 176 && cancion.bpm <= 200"
+        >Presto</span
+      >
+      <span v-if="cancion?.bpm && cancion.bpm > 200">Prestissimo</span>
+      <span>&nbsp;-&nbsp;</span>
+
+      <span class="lblCabecera">Compas:</span>
+      <input
+        type="text"
+        v-model="cancion.compasCantidad"
+        maxlength="1"
+        :style="{ width: '3ch' }"
+      />
+      /
+      <input
+        type="text"
+        v-model="cancion.compasUnidad"
+        maxlength="1"
+        :style="{ width: '3ch' }"
+      />
+      - <span class="lblCabecera">Escala:</span>
+      <input
+        type="text"
+        v-model="cancion.escala"
+        maxlength="4"
+        :style="{ width: '6ch' }"
+      />
+
+      <span class="lblCabecera">Calidad:</span>
+      <input type="range" v-model="cancion.calidad" min="0" max="10" />
     </div>
   </nav>
 </template>
@@ -254,8 +301,7 @@ const appStore = useAppStore()
 .navbar {
   padding: 10px;
   border: 6px solid #8b4513;
-  border-left: 1px solid #a9a8f6;
-  border-bottom: 1px solid #a9a8f6;
+  border-top: 1px solid #a9a8f6;
   margin-bottom: 3px;
 }
 

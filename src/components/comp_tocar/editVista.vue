@@ -105,7 +105,7 @@ watch(configPantalla.value, () => {
       <input
         type="range"
         min="3"
-        max="11"
+        max="98"
         v-model.number="configPantalla.anchoPrincipal"
       />
       <span>{{ configPantalla.anchoPrincipal }} </span>

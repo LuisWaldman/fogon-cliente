@@ -23,7 +23,7 @@ export default class Aplicacion {
   }
 
   async cargarNoticiasLocales() {
-    const response = await fetch('/noticias/noticiaslocales.json')
+    const response = await fetch('/noticias/notiloc.json')
     const data = await response.json()
 
     const newNoticias = []

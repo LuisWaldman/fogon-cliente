@@ -9,7 +9,7 @@ const props = defineProps<{
 
 const controlDiv = ref<HTMLElement | null>(null) // Ref to the div
 
-console.log('Acorde.vue', props.acorde)
+//console.log('Acorde.vue', props.acorde)
 
 onMounted(() => {
   const selector = 'ponerAcorde' + Math.floor(Math.random() * 10000000)

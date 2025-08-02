@@ -91,7 +91,8 @@ function updateCompas() {
             />
           </td>
         </tr>
-        <tr class="partes_control">
+        <!-- 
+        <tr class="partes_control" v-if="'1'=='24'">
           <td
             style="
               text-align: center;
@@ -107,7 +108,7 @@ function updateCompas() {
           >
             {{ appStore.cancion.acordes.partes[i].nombre }}
           </td>
-        </tr>
+        </tr>-->
       </tbody>
     </table>
 

@@ -66,12 +66,9 @@ function cerrarRelojes() {
   <div class="divRelojes">
     <div
       style="display: flex; justify-content: space-between; align-items: center"
-    >
-      <h3>RELOJES</h3>
-    </div>
+    ></div>
     <div style="display: flex">
       <div>
-        RELOJES
         <div style="display: flex">
           Local <RelojControl :fecha="momentoLocal"></RelojControl> Sincro
           <RelojControl :fecha="momentoSincro"></RelojControl>
@@ -92,12 +89,13 @@ function cerrarRelojes() {
         </div>
         <div>
           <div>
-            Delay: {{ Math.floor(delaySincroReloj / 1000) }}s
-            {{ delaySincroReloj % 1000 }}ms +/- {{ ErrorReloj.toFixed(2) }}
+            Delay en Sincro: {{ Math.floor(delaySincroReloj / 1000) }}s
+            {{ (delaySincroReloj % 1000).toFixed(0) }}ms +/-
+            {{ ErrorReloj.toFixed(2) }}ms
           </div>
           <div>
             Delay actualizando: {{ Math.floor(delayactualizar / 1000) }}s
-            {{ delayactualizar % 1000 }}ms
+            {{ (delayactualizar % 1000).toFixed(0) }}ms
           </div>
         </div>
       </div>
@@ -116,7 +114,7 @@ function cerrarRelojes() {
         <RelojControl
           :fecha="appStore.sesSincroCancion.timeInicio"
         ></RelojControl>
-        , Duracion: {{ appStore.sesSincroCancion.duracionGolpe }}
+        , Duracion: {{ appStore.sesSincroCancion.duracionGolpe.toFixed(2) }} ms
       </div>
       <div style="display: flex">
         Desde: {{ appStore.sesSincroCancion.desdeCompas }} , Golpes x compás:
@@ -130,7 +128,7 @@ function cerrarRelojes() {
       Golpe: {{ appStore.EstadoSincro.compas }} ,
       {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
       {{ appStore.EstadoSincro.estado }} Delay:
-      {{ appStore.EstadoSincro.delay }} ms
+      {{ appStore.EstadoSincro.delay.toFixed(2) }} ms
     </div>
     <div>
       <button @click="cerrarRelojes">Cerrar</button>

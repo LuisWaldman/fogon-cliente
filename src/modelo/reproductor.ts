@@ -4,7 +4,7 @@ import { Reloj } from './reloj'
 
 export class Reproductor {
   reloj: Reloj = new Reloj()
-  private cancion: string = ''
+  protected cancion: string = ''
   public get Cancion() {
     return this.cancion
   }

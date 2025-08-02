@@ -5,6 +5,7 @@ import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
+  nroVista: number
   cancion: Cancion
 }>()
 const pantalla = new Pantalla()
@@ -18,6 +19,12 @@ watch(
   () => props.cancion,
   (cancion: Cancion) => {
     actualizarLetras(cancion)
+  },
+)
+watch(
+  () => props.nroVista,
+  () => {
+    Actualizar()
   },
 )
 
@@ -55,6 +62,7 @@ function actualizarLetras(cancion: Cancion) {
 watch(
   () => props.compas,
   (newCompas) => {
+    Actualizar()
     let totalCompases = 0
 
     for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
@@ -99,16 +107,18 @@ function styleDivTocar() {
   }
 }
 
+function Actualizado() {
+  if (props.cancion.letras.renglones.length > 0 && letras.value.length === 0) {
+    actualizarLetras(props.cancion)
+  }
+  return false
+}
+
 defineExpose({ Actualizar })
 </script>
 <template>
   <div>
-    <div
-      v-if="letras.length == 0 && cancion.letras.renglones.length > 0"
-      @click="Actualizar"
-    >
-      .. No cargada ..
-    </div>
+    <div v-if="Actualizado()" @click="Actualizar">.. No cargada ..</div>
     <div
       style="position: relative"
       class="componenteMusical"

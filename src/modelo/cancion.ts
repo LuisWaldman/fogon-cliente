@@ -3,6 +3,7 @@ import { Letra } from './letra'
 
 // src/cancion.ts
 export class Cancion {
+  public archivo: string = ''
   public cancion: string
   public banda: string
   public acordes: Acordes

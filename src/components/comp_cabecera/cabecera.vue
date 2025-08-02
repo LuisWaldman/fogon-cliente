@@ -49,7 +49,10 @@ const unirseSesion = (sesion: string) => {
 </script>
 
 <template>
-  <nav class="navbarFogon navbar">
+  <nav
+    class="navbarFogon navbar"
+    :class="{ editando: $route.path === '/editar' }"
+  >
     <div style="display: flex; width: 100%">
       <router-link class="navbar-brand" to="/" style="color: inherit">
         <img
@@ -209,6 +212,10 @@ const unirseSesion = (sesion: string) => {
 </template>
 
 <style scoped>
+.editando {
+  background-color: #f5da09 !important;
+}
+
 .compartir_sesion {
   position: absolute;
   top: 160px;
@@ -421,8 +428,8 @@ const unirseSesion = (sesion: string) => {
   padding: 10px;
   border: 6px solid #8b4513;
   border-left: 1px solid #a9a8f6;
-  border-bottom: 1px solid #a9a8f6;
-  margin-bottom: 3px;
+  border-bottom: 0px solid #a9a8f6;
+  margin-bottom: 0px;
 }
 
 .navbar-brand {
