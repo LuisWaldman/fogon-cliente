@@ -21,10 +21,16 @@ const mostrandoResumenParte = ref(-1)
 watch(
   () => props.cancion,
   (newCancion) => {
+    Actualizar(newCancion)
+  },
+)
+
+function Actualizar(cancion: Cancion) {
+  
     let newresu: number[] = []
     let newpartesresu: number[] = []
     let metiendo = -1
-    newCancion.acordes.ordenPartes.forEach((element) => {
+    cancion.acordes.ordenPartes.forEach((element) => {
       if (metiendo != element) {
         newresu.push(element)
         newpartesresu.push(1)
@@ -35,8 +41,8 @@ watch(
     })
     secuResu.value = newresu
     reperesu.value = newpartesresu
-  },
-)
+}
+
 
 watch(
   () => props.compas,
@@ -74,9 +80,27 @@ function calcularresumenparte() {
   mostrandoResumenParte.value =
     reperesu.value[i] - (cont - mostrandoParte.value)
 }
+
+
+
+function Actualizado() {
+  if (reperesu.value.length == 0) {
+    Actualizar(props.cancion)
+  }
+  return false
+
+}
+
 </script>
 
 <template>
+  
+    <div
+      v-if="Actualizado()"
+      @click="Actualizar(props.cancion)"
+    >
+      .. No cargada ..
+    </div>
   <div v-if="reperesu.length == 0">
     <span style="font-size: large">Secuencia</span>
     <div class="secuencia">
