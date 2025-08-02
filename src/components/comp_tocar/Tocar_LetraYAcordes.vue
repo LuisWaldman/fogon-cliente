@@ -5,7 +5,6 @@ import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
-  nroVista: number
   cancion: Cancion
 }>()
 const pantalla = new Pantalla()
@@ -19,12 +18,6 @@ watch(
   () => props.cancion,
   (cancion: Cancion) => {
     actualizarLetras(cancion)
-  },
-)
-watch(
-  () => props.nroVista,
-  () => {
-    Actualizar()
   },
 )
 
