@@ -112,19 +112,13 @@ function Actualizado() {
     actualizarLetras(props.cancion)
   }
   return false
-
 }
 
 defineExpose({ Actualizar })
 </script>
 <template>
   <div>
-    <div
-      v-if="Actualizado()"
-      @click="Actualizar"
-    >
-      .. No cargada ..
-    </div>
+    <div v-if="Actualizado()" @click="Actualizar">.. No cargada ..</div>
     <div
       style="position: relative"
       class="componenteMusical"

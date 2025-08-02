@@ -1,0 +1,53 @@
+{
+    "cancion": "retiro-voluntario",
+    "banda": "zambayonny",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "Am",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Hola, hola, estoy en ret",
+            "iro, esperando el colecti",
+            "vo,/ncenando una hamburg"
+        ],
+        [
+            "uesa, con jamon queso y cerv",
+            "eza,/nel mundo anda apu"
+        ],
+        [
+            "rado y yo voy a contram",
+            "ano,/nte llamo antes de "
+        ],
+        [
+            "irme solo para desped",
+            "irme."
+        ]
+    ],
+    "bpm": 80
+}
