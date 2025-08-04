@@ -3,6 +3,17 @@ import { describe, it, expect } from 'vitest'
 import { SincroCancion } from './SincroCancion'
 
 describe('Helper Sinro', () => {
+  it('Diferencias', () => {
+    const dif1 = HelperSincro.Diferencia(100, 100)
+    expect(dif1).toBe(0)
+    const dif2 = HelperSincro.Diferencia(100, 200)
+    expect(dif2).toBe(-100)
+    const dif3 = HelperSincro.Diferencia(200, 100)
+    expect(dif3).toBe(100)
+    const dif4 = HelperSincro.Diferencia(3600000 - 100, 100)
+    expect(dif4).toBe(-200)
+  })
+
   it('Cancion por iniciar', () => {
     const tiempoinicio = 0 // 0 milisegundos
     const tiempo = tiempoinicio

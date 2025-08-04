@@ -23,10 +23,13 @@ export class HelperSincro {
         return
       }
       this.momentoRecibido = this.MomentoLocal()
-      const tardo = this.Diferencia(this.momentoRecibido, this.momentoEnviado)
+      const tardo = HelperSincro.Diferencia(
+        this.momentoEnviado,
+        this.momentoRecibido,
+      )
       const timeServerReal = hora + tardo / 2
       const delay = this.momentoRecibido - timeServerReal
-      this.delayCalculador.addDelaySet(new DelaySet(tardo, delay))
+      this.delayCalculador.addDelaySet(new DelaySet(tardo * -1, delay))
       this.delayReloj = this.delayCalculador.getDelay()
       this.ErrorReloj = this.delayCalculador.getError()
       if (this.ciclos < this.maxCiclos) {
@@ -57,6 +60,7 @@ export class HelperSincro {
     this.cliente.gettime()
   }
   public MomentoSincro(): number {
+    // delay = this.momentoRecibido - timeServerReal
     const momento = this.MomentoLocal() - this.delayReloj
     if (momento < 0) {
       return momento + 3600000
@@ -69,9 +73,12 @@ export class HelperSincro {
     return now % 3600000 // Return milliseconds within the current minute (0-59999)
   }
 
-  public Diferencia(time1: number, time2: number): number {
-    if (time2 < 10000 && time1 > 50000) {
-      return 60000 + time1 - time2
+  public static Diferencia(time1: number, time2: number): number {
+    const milisegundosenHora = 3600000 // 1 hora in milliseconds
+    const deltaAceptado = 1000 * 60 * 4 // 4 minutes in milliseconds
+    if (time1 > milisegundosenHora - deltaAceptado && time2 < deltaAceptado) {
+      // If time1 is close to the end of the hour and time2 is close to the start of the hour
+      return time1 - (time2 + milisegundosenHora)
     }
     return time1 - time2
   }
@@ -85,7 +92,7 @@ export class HelperSincro {
     let golpeDelCompas: number
     let deltaGolpe: number
 
-    let diferencia = this.Diferencia(sincro.timeInicio, momento)
+    let diferencia = HelperSincro.Diferencia(sincro.timeInicio, momento)
     if (diferencia <= 0) {
       diferencia = diferencia * -1
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
