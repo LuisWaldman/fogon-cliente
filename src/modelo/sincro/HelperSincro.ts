@@ -5,6 +5,9 @@ import { DelayCalculador } from './DelayCalculador'
 import { DelaySet } from './DelaySet'
 
 export class HelperSincro {
+  GetDetalleCalculo(): DelaySet[] {
+    return this.delayCalculador.getDetalleCalculo()
+  }
   private cliente: ClienteSocket | null = null
   private ciclos = 0
   private maxCiclos = 12
@@ -20,7 +23,7 @@ export class HelperSincro {
         return
       }
       this.momentoRecibido = this.MomentoLocal()
-      const tardo = this.Diferencia(this.momentoEnviado, this.momentoRecibido)
+      const tardo = this.Diferencia(this.momentoRecibido, this.momentoEnviado)
       const timeServerReal = hora + tardo / 2
       const delay = this.momentoRecibido - timeServerReal
       this.delayCalculador.addDelaySet(new DelaySet(tardo, delay))

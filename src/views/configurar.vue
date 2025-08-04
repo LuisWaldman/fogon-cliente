@@ -84,7 +84,7 @@ function clickOpcion(viendostr: string) {
                 Servidores
               </a>
             </li>
-            
+
             <li @click="clickOpcion('relojes')">
               <a
                 href="#"
@@ -94,7 +94,6 @@ function clickOpcion(viendostr: string) {
                 Relojes
               </a>
             </li>
-
           </ul>
 
           <hr />
@@ -120,7 +119,7 @@ function clickOpcion(viendostr: string) {
         <configServidores v-if="viendo == 'servidores'"> </configServidores>
         <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
 
-    <verRelojes v-if="viendo == 'relojes'"></verRelojes>
+        <verRelojes v-if="viendo == 'relojes'"></verRelojes>
       </div>
     </div>
   </div>
