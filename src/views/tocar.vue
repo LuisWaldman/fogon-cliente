@@ -112,7 +112,7 @@ function cerrareditarPantalla() {
       v-if="refEditSize"
       @cerrarEditSize="cerrareditarPantalla"
     ></editVista>
-    <verRelojes @cerrar="cerrarRelojes" v-if="verRelojesRef"></verRelojes>
+    <verRelojes @cerrar="cerrarRelojes" v-if="verRelojesRef" :mostrarCerrar="true"></verRelojes>
 
     <div
       class="pantallaPlay"
