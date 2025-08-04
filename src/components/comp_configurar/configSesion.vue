@@ -3,7 +3,6 @@ import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
 import { UserSesion } from '../../modelo/userSesion'
 import { ref } from 'vue'
-import qr from './qr.vue'
 
 const ususario = ref([] as UserSesion[])
 
@@ -18,6 +17,7 @@ function cargarSesiones() {
   appStore.aplicacion.cargarSesiones()
 }
 import { watch } from 'vue'
+import { Perfil } from '../../modelo/perfil'
 const msj = ref('')
 const appStore = useAppStore()
 function crearSesion() {
@@ -58,18 +58,35 @@ function cargarUsuariosSesion() {
   appStore.aplicacion
     .HTTPGet('usersesion')
     .then((response) => response.json())
-
     .then((data) => {
       console.log('Perfiles obtenidos:', data)
       ususario.value = []
       data.forEach(
         (item: {
+          ID: string
           Usuario: string
-          NombrePerfil: string
           RolSesion: string
+          Perfil: { 
+            Usuario: string
+            Imagen: string
+            Nombre: string
+            Descripcion: string
+            Instrumento: string
+          }
         }) => {
           ususario.value.push(
-            new UserSesion(item.Usuario, item.NombrePerfil, item.RolSesion),
+            new UserSesion(
+              item.ID, 
+              item.Usuario, 
+              new Perfil(
+                item.Perfil.Imagen,
+                item.Perfil.Usuario,
+                item.Perfil.Nombre,
+                item.Perfil.Descripcion,
+                item.Perfil.Instrumento
+              ),
+              item.RolSesion
+            ),
           )
         },
       )
@@ -105,7 +122,6 @@ if (appStore.estadoSesion === 'conectado') {
 
       <div>
         <div>
-          <qr url='www.fogon.ar?sesion="default"'></qr>
           <form @submit.prevent="MensajeASesion(msj)">
             <input
               type="text"
@@ -143,8 +159,17 @@ if (appStore.estadoSesion === 'conectado') {
             </thead>
             <tbody>
               <tr v-for="(user, idx) in ususario" :key="idx">
-                <td>{{ user.Usuario }}</td>
-                <td>{{ user.NombrePerfil }}</td>
+                <td>{{ user.ID }} , {{ user.Usuario }}</td>
+                <td>
+                  
+                    <img 
+                      v-if="user.PerfilUsr && user.PerfilUsr.imagen" 
+                      :src="user.PerfilUsr.imagen" 
+                      alt="Profile image" 
+                      class="profile-image"
+                      
+                    />
+                  {{ user.PerfilUsr.nombre }}</td>
                 <td>{{ user.RolSesion }}</td>
               </tr>
             </tbody>
@@ -193,15 +218,26 @@ if (appStore.estadoSesion === 'conectado') {
   </div>
 </template>
 
-<style scoped>
+<style>
+.profile-image{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1em;
 }
 th,
 td {
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   padding: 0.5em;
   text-align: left;
 }
