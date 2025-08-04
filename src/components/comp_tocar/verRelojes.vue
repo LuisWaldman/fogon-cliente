@@ -109,18 +109,24 @@ function cerrarRelojes() {
       style="border: 1px solid"
       v-if="appStore.sesSincroCancion.duracionGolpe != 0"
     >
+    <div>Inicio Cancion</div>
       <div style="display: flex">
-        Inicio Sesion:
+        
+        <div>
+        
         <RelojControl
           :fecha="appStore.sesSincroCancion.timeInicio"
         ></RelojControl>
-        , Duracion: {{ appStore.sesSincroCancion.duracionGolpe.toFixed(2) }} ms
+        Desde: {{ appStore.sesSincroCancion.desdeCompas }} 
+        </div>
+        <div>
+        Duracion Compas : {{ appStore.sesSincroCancion.duracionGolpe.toFixed(2) }} ms x {{ appStore.sesSincroCancion.golpesxcompas }} golpes = 
+        {{  (appStore.sesSincroCancion.duracionGolpe * appStore.sesSincroCancion.golpesxcompas).toFixed(2) }} ms  
       </div>
-      <div style="display: flex">
-        Desde: {{ appStore.sesSincroCancion.desdeCompas }} , Golpes x compás:
-        {{ appStore.sesSincroCancion.golpesxcompas }}
       </div>
     </div>
+
+
     <div
       style="display: flex"
       v-if="appStore.sesSincroCancion.duracionGolpe != 0"
