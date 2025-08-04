@@ -30,6 +30,7 @@ const reloj = new Reloj()
 reloj.duracionIntervalo = 1000 // 1 segundo
 reloj.setIniciaHandler(() => {
   momentoLocal.value = helper.MomentoLocal()
+  momentoSincro.value = helper.MomentoSincro()
 })
 reloj.setIniciaCicloHandler(() => {
   momentoLocal.value = helper.MomentoLocal()
@@ -41,7 +42,7 @@ function actualizarDelay() {
   momentoSincro.value = helper.MomentoSincro()
   delaySincroReloj.value = helper.delayReloj
   ErrorReloj.value = helper.ErrorReloj
-  const mili = momentoLocal.value % 1000
+  const mili = momentoSincro.value % 1000
   delayactualizar.value = 1000 - mili
   /*
   if (mili < 20) {
