@@ -1,11 +1,15 @@
-export class UserSesion {
-  Usuario: string
-  NombrePerfil: string
-  RolSesion: string
+import type { Perfil } from '../modelo/perfil'
 
-  constructor(usuario: string, nombrePerfil: string, rolSesion: string) {
+export class UserSesion {
+  ID: string
+  Usuario: string
+  RolSesion: string
+  PerfilUsr: Perfil
+
+  constructor(id: string, usuario: string, perfil: Perfil, rolSesion: string) {
+    this.ID = id
     this.Usuario = usuario
-    this.NombrePerfil = nombrePerfil
+    this.PerfilUsr = perfil
     this.RolSesion = rolSesion
   }
 }

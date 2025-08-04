@@ -4,6 +4,14 @@ import RelojControl from './VReloj.vue'
 import { ref } from 'vue'
 import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
+import type { DelaySet } from '../../modelo/sincro/DelaySet'
+
+defineProps({
+  mostrarCerrar: {
+    type: Boolean,
+    default: false,
+  },
+})
 
 const emit = defineEmits(['cerrar'])
 
@@ -51,9 +59,20 @@ function dejarActualizarMomento() {
   actualizandoMomento.value = false
   reloj.pausar()
 }
+const detalleCalculo = ref<DelaySet[]>([])
+const verDetalle = ref(false)
+function calcularDetalle() {
+  verDetalle.value = !verDetalle.value
+  if (verDetalle.value) {
+    const helper = HelperSincro.getInstance()
+    detalleCalculo.value = helper.GetDetalleCalculo()
+  }
+}
+
 function sincronizar() {
   const helper = HelperSincro.getInstance()
   helper.ActualizarDelayReloj()
+  detalleCalculo.value = helper.GetDetalleCalculo()
 }
 
 function cerrarRelojes() {
@@ -79,12 +98,15 @@ function cerrarRelojes() {
         <div style="display: flex">
           <div>
             <button v-if="!actualizandoMomento" @click="actualizarMomento">
-              ⌛ Actualizar
+              ⌛
             </button>
             <button v-else @click="dejarActualizarMomento">⏸️</button>
           </div>
           <div>
             <button @click="sincronizar">🔄</button>
+          </div>
+          <div>
+            <button @click="calcularDetalle">🔍</button>
           </div>
         </div>
         <div>
@@ -100,6 +122,14 @@ function cerrarRelojes() {
         </div>
       </div>
     </div>
+    <div v-if="verDetalle">
+      <div v-for="(detalleCalculoItem, item) in detalleCalculo" :key="item">
+        <div :class="{ highlight: detalleCalculoItem.Seleccionada }">
+          Delay en Sincro: {{ detalleCalculoItem.Delay }} RTT:
+          {{ detalleCalculoItem.Tardo }}
+        </div>
+      </div>
+    </div>
 
     <div
       style="display: flex"
@@ -109,18 +139,29 @@ function cerrarRelojes() {
       style="border: 1px solid"
       v-if="appStore.sesSincroCancion.duracionGolpe != 0"
     >
+      <div>Inicio Cancion</div>
       <div style="display: flex">
-        Inicio Sesion:
-        <RelojControl
-          :fecha="appStore.sesSincroCancion.timeInicio"
-        ></RelojControl>
-        , Duracion: {{ appStore.sesSincroCancion.duracionGolpe.toFixed(2) }} ms
-      </div>
-      <div style="display: flex">
-        Desde: {{ appStore.sesSincroCancion.desdeCompas }} , Golpes x compás:
-        {{ appStore.sesSincroCancion.golpesxcompas }}
+        <div>
+          <RelojControl
+            :fecha="appStore.sesSincroCancion.timeInicio"
+          ></RelojControl>
+          Desde: {{ appStore.sesSincroCancion.desdeCompas }}
+        </div>
+        <div>
+          Duracion Compas :
+          {{ appStore.sesSincroCancion.duracionGolpe.toFixed(2) }} ms x
+          {{ appStore.sesSincroCancion.golpesxcompas }} golpes =
+          {{
+            (
+              appStore.sesSincroCancion.duracionGolpe *
+              appStore.sesSincroCancion.golpesxcompas
+            ).toFixed(2)
+          }}
+          ms
+        </div>
       </div>
     </div>
+
     <div
       style="display: flex"
       v-if="appStore.sesSincroCancion.duracionGolpe != 0"
@@ -130,12 +171,18 @@ function cerrarRelojes() {
       {{ appStore.EstadoSincro.estado }} Delay:
       {{ appStore.EstadoSincro.delay.toFixed(2) }} ms
     </div>
-    <div>
+    <div v-if="mostrarCerrar">
       <button @click="cerrarRelojes">Cerrar</button>
     </div>
   </div>
 </template>
 <style scoped>
+.highlight {
+  background-color: #f0f8ff;
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 2px;
+}
 .divRelojes {
   position: absolute;
   left: 10%;

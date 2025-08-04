@@ -6,6 +6,7 @@ import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 
+import verRelojes from '../components/comp_tocar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 const appStore = useAppStore()
 // Definir la canción y el contexto
@@ -83,6 +84,16 @@ function clickOpcion(viendostr: string) {
                 Servidores
               </a>
             </li>
+
+            <li @click="clickOpcion('relojes')">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'relojes' }"
+              >
+                Relojes
+              </a>
+            </li>
           </ul>
 
           <hr />
@@ -107,6 +118,8 @@ function clickOpcion(viendostr: string) {
         <configsesion v-if="viendo == 'sesion'"> </configsesion>
         <configServidores v-if="viendo == 'servidores'"> </configServidores>
         <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
+
+        <verRelojes v-if="viendo == 'relojes'"></verRelojes>
       </div>
     </div>
   </div>

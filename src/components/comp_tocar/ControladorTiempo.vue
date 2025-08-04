@@ -61,14 +61,14 @@ function updateCompas() {
       <button
         class="boton_controller"
         @click="pause"
-        v-if="appStore.estadoReproduccion === 'Reproduciendo'"
+        v-if="appStore.estadoReproduccion !== 'pausado'"
       >
         <i class="bi bi-pause-fill"></i>
       </button>
       <button
         class="boton_controller"
         @click="stop"
-        v-if="appStore.estadoReproduccion === 'Reproduciendo'"
+        v-if="appStore.estadoReproduccion !== 'pausado'"
       >
         <i class="bi bi-stop-fill"></i>
       </button>
