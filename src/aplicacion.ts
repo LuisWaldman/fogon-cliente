@@ -9,6 +9,7 @@ import { Perfil } from './modelo/perfil'
 import { ReproductorConectado } from './modelo/reproductorConectado'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
+import { UserSesion } from './modelo/userSesion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -166,6 +167,53 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.mensajes.push(msj)
     })
+
+    this.cliente.setActualizarUsuariosHandler(() => {
+      console.log('Usuarios actualizados')
+      this.CargarUsuariosSesion()
+    })
+  }
+
+  CargarUsuariosSesion() {
+    this.HTTPGet('usersesion')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Perfiles obtenidos:', data)
+        const appStore = useAppStore()
+        appStore.usuariosSesion = []
+        data.forEach(
+          (item: {
+            ID: string
+            Usuario: string
+            RolSesion: string
+            Perfil: {
+              Usuario: string
+              Imagen: string
+              Nombre: string
+              Descripcion: string
+              Instrumento: string
+            }
+          }) => {
+            appStore.usuariosSesion.push(
+              new UserSesion(
+                item.ID,
+                item.Usuario,
+                new Perfil(
+                  item.Perfil.Imagen,
+                  item.Perfil.Usuario,
+                  item.Perfil.Nombre,
+                  item.Perfil.Descripcion,
+                  item.Perfil.Instrumento,
+                ),
+                item.RolSesion,
+              ),
+            )
+          },
+        )
+      })
+      .catch((error) => {
+        console.error('Error al obtener usuarios de la sesion:', error)
+      })
   }
 
   cargarSesiones() {
@@ -196,7 +244,7 @@ export default class Aplicacion {
         )
       })
       .catch((error) => {
-        console.error('Error al obtener el perfil del usuario:', error)
+        console.error('Error al obtener las sesiones del usuario:', error)
       })
   }
 
@@ -271,7 +319,7 @@ export default class Aplicacion {
   }
 
   UnirmeSesion(nombre: string): void {
-    console.log(`Intentando crear sesion: ${nombre}`)
+    console.log(`Intentando unirse sesion: ${nombre}`)
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
     if (!this.cliente) {
@@ -296,7 +344,7 @@ export default class Aplicacion {
   }
 
   MensajeASesion(msj: string): void {
-    console.log(`Intentando crear sesion: ${msj}`)
+    console.log(`envieando mensaje sesion: ${msj}`)
     if (!this.cliente) {
       console.error('Cliente no conectado. No se puede Mandar mensajes.')
       return

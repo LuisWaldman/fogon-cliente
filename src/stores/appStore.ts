@@ -12,6 +12,7 @@ import { Sesion } from '../modelo/sesion'
 
 import { SincroCancion } from '../modelo/sincro/SincroCancion'
 import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
+import type { UserSesion } from '../modelo/userSesion'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
@@ -73,7 +74,9 @@ export const useAppStore = defineStore('app', () => {
     estadoReproduccion.value = nuevoEstado
   }
 
+  const usuariosSesion = ref([] as UserSesion[])
   return {
+    usuariosSesion,
     aplicacion,
     cancion,
     editandocancion,

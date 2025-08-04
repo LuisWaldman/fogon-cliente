@@ -15,6 +15,7 @@ interface ServerToClientEvents {
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
   sesionesActualizadas: () => void
+  actualizarusuarios: () => void
   time: (hora: number) => void
 }
 
@@ -116,6 +117,11 @@ export class ClienteSocket {
     this.timeHandler = handler
   }
 
+  private actualizarUsuariosHandler?: () => void
+  public setActualizarUsuariosHandler(handler: () => void): void {
+    this.actualizarUsuariosHandler = handler
+  }
+
   private urlserver: string
   public get UrlServer(): string {
     return this.urlserver
@@ -213,6 +219,11 @@ export class ClienteSocket {
 
     socket.on('time', (hora: number) => {
       this.timeHandler?.(hora)
+    })
+
+    socket.on('actualizarusuarios', () => {
+      console.log('actualizarUsuarios received')
+      this.actualizarUsuariosHandler?.()
     })
 
     this.socket = socket

@@ -41,8 +41,8 @@ export class ReproductorConectado extends Reproductor {
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler((nombreArchivo: string) => {
       console.log(`Canción actualizada: ${nombreArchivo}`)
-      //this.CargarCancion(cancion)
-
+      this.CargarCancion(nombreArchivo)
+/*
       fetch(
         `${this.cliente.UrlServer}cancion?nombre=${encodeURIComponent(nombreArchivo)}`,
         {
@@ -90,7 +90,7 @@ export class ReproductorConectado extends Reproductor {
         } else {
           throw new Error('Error al obtener la canción')
         }
-      })
+      })*/
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)

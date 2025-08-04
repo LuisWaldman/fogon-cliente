@@ -2,9 +2,7 @@
 import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
 import { UserSesion } from '../../modelo/userSesion'
-import { ref } from 'vue'
-
-const ususario = ref([] as UserSesion[])
+import { ref, watch } from 'vue'
 
 const newsesio = ref(new Sesion('default', 0, '', 0, 0))
 const sesionDefault = ref('')
@@ -16,8 +14,6 @@ function setSesionDefault() {
 function cargarSesiones() {
   appStore.aplicacion.cargarSesiones()
 }
-import { watch } from 'vue'
-import { Perfil } from '../../modelo/perfil'
 const msj = ref('')
 const appStore = useAppStore()
 function crearSesion() {
@@ -55,45 +51,7 @@ watch(
 )
 
 function cargarUsuariosSesion() {
-  appStore.aplicacion
-    .HTTPGet('usersesion')
-    .then((response) => response.json())
-    .then((data) => {
-      console.log('Perfiles obtenidos:', data)
-      ususario.value = []
-      data.forEach(
-        (item: {
-          ID: string
-          Usuario: string
-          RolSesion: string
-          Perfil: { 
-            Usuario: string
-            Imagen: string
-            Nombre: string
-            Descripcion: string
-            Instrumento: string
-          }
-        }) => {
-          ususario.value.push(
-            new UserSesion(
-              item.ID, 
-              item.Usuario, 
-              new Perfil(
-                item.Perfil.Imagen,
-                item.Perfil.Usuario,
-                item.Perfil.Nombre,
-                item.Perfil.Descripcion,
-                item.Perfil.Instrumento
-              ),
-              item.RolSesion
-            ),
-          )
-        },
-      )
-    })
-    .catch((error) => {
-      console.error('Error al obtener el perfil del usuario:', error)
-    })
+  appStore.aplicacion.CargarUsuariosSesion()
 }
 if (appStore.estadoSesion === 'conectado') {
   cargarUsuariosSesion()
@@ -149,7 +107,7 @@ if (appStore.estadoSesion === 'conectado') {
             <h3>Usuarios en la sesión</h3>
             <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
           </div>
-          <table v-if="ususario.length" style="width: 100%">
+          <table v-if="appStore.usuariosSesion.length" style="width: 100%">
             <thead>
               <tr>
                 <th>Usuario</th>
@@ -158,18 +116,17 @@ if (appStore.estadoSesion === 'conectado') {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(user, idx) in ususario" :key="idx">
+              <tr v-for="(user, idx) in appStore.usuariosSesion" :key="idx">
                 <td>{{ user.ID }} , {{ user.Usuario }}</td>
                 <td>
-                  
-                    <img 
-                      v-if="user.PerfilUsr && user.PerfilUsr.imagen" 
-                      :src="user.PerfilUsr.imagen" 
-                      alt="Profile image" 
-                      class="profile-image"
-                      
-                    />
-                  {{ user.PerfilUsr.nombre }}</td>
+                  <img
+                    v-if="user.PerfilUsr && user.PerfilUsr.imagen"
+                    :src="user.PerfilUsr.imagen"
+                    alt="Profile image"
+                    class="profile-image"
+                  />
+                  {{ user.PerfilUsr.nombre }}
+                </td>
                 <td>{{ user.RolSesion }}</td>
               </tr>
             </tbody>
@@ -219,7 +176,7 @@ if (appStore.estadoSesion === 'conectado') {
 </template>
 
 <style>
-.profile-image{
+.profile-image {
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -229,7 +186,6 @@ if (appStore.estadoSesion === 'conectado') {
   justify-content: center;
   background-color: #f0f0f0;
 }
-
 
 table {
   width: 100%;
