@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
-import { UserSesion } from '../../modelo/userSesion'
 import { ref, watch } from 'vue'
 
 const newsesio = ref(new Sesion('default', 0, '', 0, 0))

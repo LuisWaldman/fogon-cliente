@@ -1,8 +1,5 @@
 import { useAppStore } from '../stores/appStore'
-import { Acordes, Parte } from './acordes'
-import { Cancion } from './cancion'
 import { ClienteSocket } from './conexion/ClienteSocket'
-import { Letra } from './letra'
 import { Reproductor } from './reproductor'
 import { HelperSincro } from './sincro/HelperSincro'
 import { SincroCancion } from './sincro/SincroCancion'
@@ -42,7 +39,7 @@ export class ReproductorConectado extends Reproductor {
     this.cliente.setCancionActualizadaHandler((nombreArchivo: string) => {
       console.log(`Canción actualizada: ${nombreArchivo}`)
       this.CargarCancion(nombreArchivo)
-/*
+      /*
       fetch(
         `${this.cliente.UrlServer}cancion?nombre=${encodeURIComponent(nombreArchivo)}`,
         {
