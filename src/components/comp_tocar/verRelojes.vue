@@ -6,12 +6,11 @@ import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 import type { DelaySet } from '../../modelo/sincro/DelaySet'
 
-
-const props = defineProps({
+defineProps({
   mostrarCerrar: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 
 const emit = defineEmits(['cerrar'])
@@ -68,8 +67,7 @@ function calcularDetalle() {
     const helper = HelperSincro.getInstance()
     detalleCalculo.value = helper.GetDetalleCalculo()
   }
-  
-} 
+}
 
 function sincronizar() {
   const helper = HelperSincro.getInstance()
@@ -100,15 +98,15 @@ function cerrarRelojes() {
         <div style="display: flex">
           <div>
             <button v-if="!actualizandoMomento" @click="actualizarMomento">
-              ⌛ 
+              ⌛
             </button>
             <button v-else @click="dejarActualizarMomento">⏸️</button>
           </div>
           <div>
-            <button @click="sincronizar">🔄 </button>
+            <button @click="sincronizar">🔄</button>
           </div>
           <div>
-            <button @click="calcularDetalle">🔍 </button>
+            <button @click="calcularDetalle">🔍</button>
           </div>
         </div>
         <div>
@@ -125,11 +123,13 @@ function cerrarRelojes() {
       </div>
     </div>
     <div v-if="verDetalle">
-    <div  v-for="( detalleCalculoItem, item) in detalleCalculo" :key="item">
-      <div :class="{'highlight': detalleCalculoItem.Seleccionada}">
-        Delay en Sincro: {{  detalleCalculoItem.Delay }} RTT: {{ detalleCalculoItem.Tardo }}</div >
+      <div v-for="(detalleCalculoItem, item) in detalleCalculo" :key="item">
+        <div :class="{ highlight: detalleCalculoItem.Seleccionada }">
+          Delay en Sincro: {{ detalleCalculoItem.Delay }} RTT:
+          {{ detalleCalculoItem.Tardo }}
         </div>
-        </div>
+      </div>
+    </div>
 
     <div
       style="display: flex"
