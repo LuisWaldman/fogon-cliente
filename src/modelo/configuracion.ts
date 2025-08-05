@@ -7,7 +7,7 @@ export class VistaTocar {
   public tamanioAcordesolo: number = 16
   public tamanioParte: number = 16
   public tamanioAcordeParte: number = 26
-  public anchoPrincipal: number = 8
+  public anchoPrincipal: number = 70 // Ancho de la parte principal
   public altoPantallaDescuento: number = 200 // Nueva propiedad
   public factorScroll: number = 3.4 // Nueva propiedad para el factor de scroll
 }
