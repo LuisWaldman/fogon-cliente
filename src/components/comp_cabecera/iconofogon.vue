@@ -15,7 +15,7 @@ function getPositionStyle(index: number, total: number) {
   const y = Math.sin(angle) * radius
 
   return {
-    position: 'absolute',
+    position: 'absolute' as const,
     left: `${x + 30}px`,
     top: `${y + 10}px`,
   }
