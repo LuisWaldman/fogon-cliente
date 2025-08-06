@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { Cancion } from '../../modelo/cancion'
+import type { Cancion } from '../../modelo/cancion/cancion'
 
 const props = defineProps<{
   compas: number

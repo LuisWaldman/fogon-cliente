@@ -1,8 +1,8 @@
 import { HelperObtenerCancionURL } from '../helpers/HelperObtenerCancionURL'
 import { useAppStore } from '../stores/appStore'
-import { Acordes } from './acordes'
-import { Cancion } from './cancion'
-import { Letra } from './letra'
+import { Acordes } from './cancion/acordes'
+import { Cancion } from './cancion/cancion'
+import { Letra } from './cancion/letra'
 import { Reloj } from './reloj'
 
 export class Reproductor {
@@ -12,7 +12,7 @@ export class Reproductor {
     return this.cancion
   }
   async SetCancion(cancionstr: string) {
-    await this.CargarCancion(cancionstr)
+    this.CargarCancion(cancionstr)
   }
 
   protected async CargarCancion(cancionstr: string) {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
-import type { Cancion } from '../../modelo/cancion'
+import type { Cancion } from '../../modelo/cancion/cancion'
 
 defineProps<{
   cancion: Cancion

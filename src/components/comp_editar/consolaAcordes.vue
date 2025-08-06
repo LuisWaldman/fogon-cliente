@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Cancion } from '../../modelo/cancion'
+import { Cancion } from '../../modelo/cancion/cancion'
 import { EditarAcordesToTextoHelper } from './editarAcordesToTextoHelper'
 
 const props = defineProps<{ cancion: Cancion }>()

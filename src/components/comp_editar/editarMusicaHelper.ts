@@ -1,4 +1,4 @@
-import { Acordes, Parte } from '../../modelo/acordes'
+import { Acordes, Parte } from '../../modelo/cancion/acordes'
 
 export class EditarMusicaHelper {
   static mixear(

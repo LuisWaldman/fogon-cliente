@@ -1,5 +1,5 @@
-import { Parte } from '../../modelo/acordes'
-import { Cancion } from '../../modelo/cancion'
+import { Parte } from '../../modelo/cancion/acordes'
+import { Cancion } from '../../modelo/cancion/cancion'
 
 export class editarAcordesHelper {
   static splitearParte(cancion: Cancion, ordenParte: number, acorde: number) {
