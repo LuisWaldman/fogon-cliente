@@ -3,6 +3,7 @@ import { useAppStore } from '../stores/appStore'
 import { Acordes } from './cancion/acordes'
 import { Cancion } from './cancion/cancion'
 import { Letra } from './cancion/letra'
+import type { OrigenCancion } from './cancion/origencancion'
 import { Reloj } from './reloj'
 
 export class Reproductor {
@@ -11,11 +12,12 @@ export class Reproductor {
   public get Cancion() {
     return this.cancion
   }
-  async SetCancion(cancionstr: string) {
-    this.CargarCancion(cancionstr)
+  async SetCancion(cancion: OrigenCancion) {
+    this.CargarCancion(cancion)
   }
 
-  protected async CargarCancion(cancionstr: string) {
+  protected async CargarCancion(cancion: OrigenCancion) {
+    const cancionstr = cancion.fileName
     localStorage.setItem('cancion_actual', cancionstr)
     const appStore = useAppStore()
     const helperArchivo = new HelperObtenerCancionURL('/canciones')

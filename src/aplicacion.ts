@@ -10,6 +10,7 @@ import { ReproductorConectado } from './modelo/reproductorConectado'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
+import { OrigenCancion } from './modelo/cancion/origencancion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -19,8 +20,8 @@ export default class Aplicacion {
   cliente: ClienteSocket | null = null
   token: string = ''
 
-  async SetCancion(cancionstr: string) {
-    this.reproductor.SetCancion(cancionstr)
+  async SetCancion(cancion: OrigenCancion) {
+    this.reproductor.SetCancion(cancion)
   }
 
   async cargarNoticiasLocales() {
@@ -45,6 +46,7 @@ export default class Aplicacion {
   onMounted() {
     console.log('Aplicacion montada')
     this.cargarNoticiasLocales()
+
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
         (s) => s.nombre === this.configuracion.conectarServerDefault,
@@ -54,6 +56,15 @@ export default class Aplicacion {
       } else {
         console.warn('Servidor por defecto no encontrado')
       }
+    }
+
+    const urlParams = new URLSearchParams(window.location.search)
+    const cancion = urlParams.get('cancion')
+    if (cancion) {
+      console.log('cancion', cancion)
+      this.SetCancion(
+        new OrigenCancion('url:' + window.location.href, cancion, ''),
+      )
     }
   }
 
@@ -132,10 +143,6 @@ export default class Aplicacion {
           this.cliente,
           this.token,
         )
-        if (this.creandoSesion) {
-          this.reproductorConectado.SetCancion(this.reproductor.Cancion)
-        }
-        this.creandoSesion = false
         this.reproductor.detenerReproduccion()
         this.reproductor = this.reproductorConectado
       }
@@ -305,7 +312,6 @@ export default class Aplicacion {
     return true
   }
 
-  private creandoSesion = false
   CrearSesion(nombre: string): void {
     console.log(`Intentando crear sesion: ${nombre}`)
     if (!this.cliente) {
@@ -314,7 +320,6 @@ export default class Aplicacion {
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
-    this.creandoSesion = true
     this.cliente.CrearSesion(nombre, 3.54, 4.34)
   }
 
