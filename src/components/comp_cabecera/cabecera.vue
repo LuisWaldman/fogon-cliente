@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
 import qr from './qr.vue'
+import iconofogon from './iconofogon.vue'
 
 const appStore = useAppStore()
 
@@ -54,23 +55,8 @@ const unirseSesion = (sesion: string) => {
     :class="{ editando: $route.path === '/editar' }"
   >
     <div style="display: flex; width: 100%">
-      <router-link class="navbar-brand" to="/" style="color: inherit">
-        <img
-          :src="
-            appStore.estado === 'conectado'
-              ? '/img/conectado.png'
-              : appStore.estado === 'tocando'
-                ? '/img/tocando.png'
-                : appStore.estado === 'logueado'
-                  ? '/img/logueado.png'
-                  : appStore.estado === 'conectadoserver'
-                    ? '/img/conectado.png'
-                    : '/img/desconectado.png'
-          "
-          alt="Logo"
-          width="50"
-        />
-      </router-link>
+      <iconofogon />
+
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
         Fogon
       </span>

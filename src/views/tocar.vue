@@ -141,12 +141,12 @@ function cerrareditarPantalla() {
         ></TocarAcorde>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <Secuencia
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.secuencia"
-        ></Secuencia>
-
+        <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
+          <Secuencia
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></Secuencia>
+        </div>
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"
