@@ -1,0 +1,109 @@
+{
+    "cancion": "hello-goodbye",
+    "banda": "paul-mccartney",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "C",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "G7",
+                    "Am",
+                    "G7",
+                    "F",
+                    "C",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "F",
+                    "G#",
+                    "C",
+                    "Em",
+                    "Am",
+                    "G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bb",
+                    "C",
+                    "F",
+                    "G#",
+                    "Cm",
+                    "D/F#",
+                    "F",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "You say yes, I",
+            " say no,/n"
+        ],
+        [
+            "You say stop, and I",
+            " say go, go, go",
+            ". Oh",
+            " no",
+            "/nYou say goodbye and "
+        ],
+        [
+            "I say hello",
+            ", h",
+            "ello,",
+            " hel",
+            "lo./n"
+        ],
+        [
+            "I don't know why you say goodby",
+            "e, I say hello",
+            ", h",
+            "ello,",
+            " hel",
+            "lo./n"
+        ],
+        [
+            "I don't know why you say goodby",
+            "e, I say hello",
+            "./n"
+        ],
+        [
+            "I don't know why you say goodbye, I say hell",
+            "o-oh-oh-oh",
+            "-oh-oh-oh-",
+            "oh.",
+            "/nHell"
+        ],
+        [
+            "o"
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,87 @@
+{
+    "cancion": "Mano-Brava",
+    "banda": "almafuerte",
+    "escala": "E5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E5",
+                    "B5",
+                    "G5",
+                    "F5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E5",
+                    "C5",
+                    "C#5",
+                    "C5",
+                    "F5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Con adorno de bue",
+            "n esco",
+            "lazo, ",
+            "/n"
+        ],
+        [
+            "en tus manos dejo f",
+            "lor de",
+            " espada",
+            "s, /n"
+        ],
+        [
+            "Dioses del ab",
+            "ismo,  /n"
+        ],
+        [
+            "guardarán mi ",
+            "marca. /n"
+        ],
+        [
+            "Para sí, ",
+            "o para aquel. /n"
+        ],
+        [
+            "Como vos y c",
+            "omo noso",
+            "tros tres. /n"
+        ],
+        [
+            "Que viajando e",
+            "n el sonido, /n"
+        ],
+        [
+            "nos soñamos ",
+            "ayer y lo c",
+            "umplimos hoy. "
+        ]
+    ],
+    "bpm": 80
+}

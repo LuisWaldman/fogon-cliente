@@ -1,0 +1,89 @@
+{
+    "cancion": "Fancy-My-Chances",
+    "banda": "the-beatles",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "fancy my chances with y",
+            "ou, I fa",
+            "ncy my chances with you",
+            "/nI "
+        ],
+        [
+            "fancy my chances, I f",
+            "ancy my chances, I fa",
+            "ncy my cha",
+            "nces with you",
+            "/nI "
+        ],
+        [
+            "fancy my chances at t",
+            "he Loch, I fa",
+            "ncy my chances at your fro",
+            "ck/nI "
+        ],
+        [
+            "fancy my chances, I f",
+            "ancy my chances, I fa",
+            "ncy my cha",
+            "nces with you",
+            "/nOh I "
+        ],
+        [
+            "fancy my chances with y",
+            "ou, I fa",
+            "ncy my chances with you",
+            "/nI "
+        ],
+        [
+            "fancy my chances, I",
+            " fancy my chances, I fa",
+            "ncy my changes with you",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

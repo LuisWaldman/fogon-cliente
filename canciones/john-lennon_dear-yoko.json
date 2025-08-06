@@ -1,0 +1,61 @@
+{
+    "cancion": "Dear-Yoko",
+    "banda": "john-lennon",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "D-Dsus2",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "D-Dsus2",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "ven after all these yea",
+            "rs, /n I m"
+        ],
+        [
+            "iss you when you're he",
+            "re. /n I w"
+        ],
+        [
+            "ish you were here",
+            ", my ",
+            "dear Yoko. ",
+            "/n "
+        ],
+        [
+            "Oh, ",
+            "  Yoko,          I'm never,never,never,never,ever gonna let you go. "
+        ]
+    ],
+    "bpm": 80
+}

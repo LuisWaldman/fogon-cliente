@@ -1,0 +1,43 @@
+{
+    "cancion": "Manuel",
+    "banda": "joan-manuel-serrat",
+    "escala": "C7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C7",
+                    "Fm",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C7",
+                    "C#º"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "VOS Y TR",
+            "IGO P",
+            "OR UN MENDRUG",
+            "O/nLE VIERON ALEJARSE UNA MAANA"
+        ],
+        [
+            ""
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,49 @@
+{
+    "cancion": "Sabanas-frias",
+    "banda": "mana",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "F#m",
+                    "E",
+                    "D",
+                    "C#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Vente a vivir co",
+            "nmig",
+            "o amor,",
+            " que mi sábana está fría./n"
+        ],
+        [
+            "Vente a vivir co",
+            "nmig",
+            "o amor",
+            ", ay vamo'al caribe mexicano"
+        ]
+    ],
+    "bpm": 80
+}

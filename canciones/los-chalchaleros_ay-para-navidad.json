@@ -1,0 +1,55 @@
+{
+    "cancion": "ay-para-navidad",
+    "banda": "los-chalchaleros",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7",
+                    "G",
+                    "A7",
+                    "G",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "ochebuena, nochebuena,      I/nT"
+        ],
+        [
+            "e vendré a busc",
+            "ar/nc"
+        ],
+        [
+            "asi al aclara",
+            "r/nch"
+        ],
+        [
+            "arangos y guita",
+            "rras, paloma,/npara festej"
+        ],
+        [
+            "ar."
+        ]
+    ],
+    "bpm": 80
+}

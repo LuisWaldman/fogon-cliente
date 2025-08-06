@@ -1,0 +1,116 @@
+{
+    "cancion": "la-tonada-inasible",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G4",
+                    "G",
+                    "C9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Dm9",
+                    "Dm",
+                    "E",
+                    "E7",
+                    "G4",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A9",
+                    "Am",
+                    "G4",
+                    "G",
+                    "G4"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C9",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            2,
+            3,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "Hace quince seg",
+            "undos/n   "
+        ],
+        [
+            "que se murió el ",
+            "poeta",
+            "/n   y hace qui"
+        ],
+        [
+            "nce siglo",
+            "s/n   que notamos su "
+        ],
+        [
+            "ausencia",
+            "./n   Creíamos en"
+        ],
+        [
+            "tonces",
+            "/n   que estAbamos de "
+        ],
+        [
+            "vuelta,",
+            "/n   de ausencia y de "
+        ],
+        [
+            "poeta..",
+            "./n   de ausencia y de p"
+        ],
+        [
+            "oeta.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n   que desperto el poet"
+        ],
+        [
+            "a.",
+            "/nCoda: La tonada inas"
+        ],
+        [
+            "ible",
+            "",
+            "/n      que despertó el "
+        ],
+        [
+            "poeta",
+            ".",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

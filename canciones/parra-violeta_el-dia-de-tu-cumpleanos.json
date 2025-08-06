@@ -1,0 +1,71 @@
+{
+    "cancion": "el-dia-de-tu-cumpleanos",
+    "banda": "parra-violeta",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E",
+                    "F#",
+                    "B",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "E",
+                    "A",
+                    "E",
+                    "D",
+                    "G",
+                    "B7",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Mhijito, llegaste al mundo/n"
+        ],
+        [
+            "en hora muy principal",
+            "./n"
+        ],
+        [
+            "Ya redondeastes el a",
+            "o,/n"
+        ],
+        [
+            "yo te vengo a celebra",
+            "r./n"
+        ],
+        [
+            "Que te sirvan la mistela/n"
+        ],
+        [
+            "y la tortilla candea",
+            "l,/n"
+        ],
+        [
+            "que el día de tu cump",
+            "leaños/nes cosa muy principal."
+        ],
+        []
+    ],
+    "bpm": 80
+}

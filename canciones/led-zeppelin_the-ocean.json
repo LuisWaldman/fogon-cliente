@@ -1,0 +1,43 @@
+{
+    "cancion": "the-ocean",
+    "banda": "led-zeppelin",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "E",
+                    "D",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        []
+    ],
+    "bpm": 80
+}

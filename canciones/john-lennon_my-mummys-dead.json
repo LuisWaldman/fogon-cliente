@@ -1,0 +1,98 @@
+{
+    "cancion": "My-Mummys-Dead",
+    "banda": "john-lennon",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "Dadd9/A",
+                    "D",
+                    "D/A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D/A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "Dadd9/A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "My M",
+            "ummy's dead ",
+            "",
+            "/nI "
+        ],
+        [
+            "can't Get it th",
+            "rough my head",
+            " ",
+            "/n"
+        ],
+        [
+            "Thought it's be",
+            "en so ma",
+            "ny year",
+            "s /n"
+        ],
+        [
+            "My M",
+            "ummy's Dead ",
+            "",
+            "/n"
+        ],
+        [
+            "I ca",
+            "n't explain",
+            " ",
+            "/n"
+        ],
+        [
+            "So ",
+            "much pain ",
+            "",
+            "/n"
+        ],
+        [
+            "I co",
+            "uld never sho",
+            "w it ",
+            "/n"
+        ],
+        [
+            "My M",
+            "ummy's Dead ",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

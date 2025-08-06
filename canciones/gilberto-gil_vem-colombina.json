@@ -1,0 +1,79 @@
+{
+    "cancion": "vem-colombina",
+    "banda": "gilberto-gil",
+    "escala": "Ab",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Ab",
+                    "A",
+                    "Eb7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Ab",
+                    "Gb",
+                    "E",
+                    "E",
+                    "Em7",
+                    "Eb7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Ab",
+                    "A",
+                    "Abm",
+                    "Eb7",
+                    "Abm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [],
+        [
+            "Vem, Colombi",
+            "--na",
+            "/n"
+        ],
+        [
+            "Vem lambrar o passa",
+            "---do",
+            "/n"
+        ],
+        [
+            "Recordar carnava",
+            "is que não voltam jamai",
+            "s/n"
+        ],
+        [
+            "Que dexaram sau",
+            "da-----des/nVem, Colombi----na"
+        ],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

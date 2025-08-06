@@ -1,0 +1,49 @@
+{
+    "cancion": "La-Finadita",
+    "banda": "jorge-cafrune",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm",
+                    "F#7",
+                    "Bm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "or medio los montes vengo/nllena de en"
+        ],
+        [
+            "canto y ternur",
+            "a/nyo "
+        ],
+        [
+            "vengo por los que sufren/nde tormen"
+        ],
+        [
+            "tos y amargura",
+            "s."
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,50 @@
+{
+    "cancion": "No-mi-amor",
+    "banda": "la-mosca",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "Cadd9",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Cadd9",
+                    "G",
+                    "Em",
+                    "C",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            " 44/",
+            "45, 44, ",
+            "55, ",
+            "53, 55, 44, 42,32/34,/n"
+        ],
+        [
+            "Hace",
+            " mil ",
+            "sema",
+            "nas que no duermo en nuestra cama,/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

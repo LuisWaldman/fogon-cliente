@@ -1,0 +1,85 @@
+{
+    "cancion": "El-Enemigo",
+    "banda": "luis-alberto-spinetta",
+    "escala": "Am7/9",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am7/9",
+                    "Dm7/9",
+                    "C#7/9",
+                    "D7/9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D#7/9",
+                    "Am7/9",
+                    "Dm7/9",
+                    "C#7/9",
+                    "Csus2/G#",
+                    "G#maj7",
+                    "Gm7",
+                    "Fmaj7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Cmaj7/G",
+                    "Csus2/G#",
+                    "G#maj7",
+                    "Gm7",
+                    "Fm7",
+                    "Em7",
+                    "G6",
+                    "F6/9"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "       ",
+            "        ",
+            "      est",
+            "os tres",
+            " acordes",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Vue-------lve",
+            "/nY si"
+        ],
+        [
+            "embra en su vi",
+            "entre una plegaria",
+            "/n"
+        ],
+        [
+            "Su-------b",
+            "e, y vuel",
+            "a tu mirada ",
+            "hacia el mar",
+            "/nY h"
+        ],
+        [
+            "ay que impedir que juegues para el enem",
+            "igo."
+        ]
+    ],
+    "bpm": 80
+}

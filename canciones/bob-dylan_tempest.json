@@ -1,0 +1,49 @@
+{
+    "cancion": "Tempest",
+    "banda": "bob-dylan",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "pale moon rose in its glory/n"
+        ],
+        [
+            "Out o'er the western town/nShe "
+        ],
+        [
+            "told a sad, sad s",
+            "tory/nOf the "
+        ],
+        [
+            "great ship that went d",
+            "own."
+        ]
+    ],
+    "bpm": 80
+}

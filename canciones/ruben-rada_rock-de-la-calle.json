@@ -1,0 +1,67 @@
+{
+    "cancion": "Rock-de-la-calle",
+    "banda": "ruben-rada",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Bb/C",
+                    "F",
+                    "Fm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Bb/C",
+                    "F",
+                    "Ab",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "adre me decia,no olv",
+            "ides la leccion/nla mu"
+        ],
+        [
+            "sica no t",
+            "iene fronte",
+            "ras ni nacion/n"
+        ],
+        [
+            "Calles,c",
+            "alles/n"
+        ],
+        [
+            "rompe el rock and ro",
+            "ll las cal",
+            "les/n"
+        ],
+        [
+            "Calles,c",
+            "alles/n"
+        ],
+        [
+            "rompe el rock and ro",
+            "ll las cal",
+            "les"
+        ]
+    ],
+    "bpm": 80
+}

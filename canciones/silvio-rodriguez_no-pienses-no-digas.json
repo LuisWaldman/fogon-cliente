@@ -1,0 +1,41 @@
+{
+    "cancion": "no-pienses-no-digas",
+    "banda": "silvio-rodriguez",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "D/F#",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            " triste./nque "
+        ],
+        [
+            "alguien está",
+            " triste",
+            "."
+        ]
+    ],
+    "bpm": 80
+}

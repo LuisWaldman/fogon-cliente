@@ -1,0 +1,53 @@
+{
+    "cancion": "La-Pancha-Alfaro",
+    "banda": "mercedes-sosa",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Dm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "a luna va",
+            ",                 I/n"
+        ],
+        [
+            "Ardiendo est",
+            "/nla voz de"
+        ],
+        [
+            " los tonade",
+            "ros,/nl"
+        ],
+        [
+            "a Pancha va",
+            "                I"
+        ]
+    ],
+    "bpm": 80
+}

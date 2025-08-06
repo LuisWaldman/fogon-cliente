@@ -1,0 +1,61 @@
+{
+    "cancion": "john-el-cowboy",
+    "banda": "leon-gieco",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "icen que en un tiempo atras vivia John Le",
+            "nnon amigo del pueb",
+            "lo/nc"
+        ],
+        [
+            "on sus pistolas cargadas y no respeta",
+            "ba en su vida la ley",
+            "/nl"
+        ],
+        [
+            "a señora del alcalde lo esperaba en las noches a J",
+            "ohn/n"
+        ],
+        [
+            "el cura, las prostitutas y la gorda vieja dueña del sal",
+            "on/ny la gorda vi"
+        ],
+        [
+            "eja dueña del sal",
+            "on.",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

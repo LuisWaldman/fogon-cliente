@@ -1,0 +1,83 @@
+{
+    "cancion": "Muchacha-de-Luna",
+    "banda": "palito-ortega",
+    "escala": "A#",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A#",
+                    "Cm",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A#",
+                    "G",
+                    "Cm",
+                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "F",
+                    "A#",
+                    "C",
+                    "F",
+                    "A#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "luna, bañada en ro",
+            "cío,/nAllá en t"
+        ],
+        [
+            "u inocencia te quiero ",
+            "besar./nCamina sin "
+        ],
+        [
+            "prisa tu natural",
+            "eza,/nMuchacha "
+        ],
+        [
+            "traviesa, muchacha del",
+            " mar./nSentir en tu"
+        ],
+        [
+            " cuerpo refugio y ti",
+            "bieza,/nSentir tu "
+        ],
+        [
+            "tristeza, tu forma de ",
+            "amar./nYo vi tu tern"
+        ],
+        [
+            "ura sin saber q",
+            "uién eras,/nFuiste pri"
+        ],
+        [
+            "mavera en mi d",
+            "espertar",
+            "."
+        ]
+    ],
+    "bpm": 80
+}

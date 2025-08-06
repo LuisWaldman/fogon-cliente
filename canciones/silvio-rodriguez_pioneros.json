@@ -1,0 +1,41 @@
+{
+    "cancion": "pioneros",
+    "banda": "silvio-rodriguez",
+    "escala": "F#",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#",
+                    "A7",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            " raíces y luce",
+            "ros/n   donde guardo"
+        ],
+        [
+            " raices y lucer",
+            "os"
+        ]
+    ],
+    "bpm": 80
+}

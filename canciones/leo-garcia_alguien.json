@@ -1,0 +1,97 @@
+{
+    "cancion": "alguien",
+    "banda": "leo-garcia",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "Bm",
+                    "A",
+                    "Em",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "C",
+                    "Em",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "Alguien me recuerda",
+            "/nEn "
+        ],
+        [
+            "alguna parte/n"
+        ],
+        [
+            "Alguien me nombra",
+            "/nEn "
+        ],
+        [
+            "alguna parte/n"
+        ],
+        [
+            "Alguien me sueña",
+            "/nEn "
+        ],
+        [
+            "alguna parte/n"
+        ],
+        [
+            "Alguien en alguna parte/n"
+        ],
+        [
+            "Alguien en alguna p",
+            "arte/n"
+        ],
+        [
+            "Abriga una espera para mi/n"
+        ],
+        [
+            "Alguien en alguna parte/nAlguien en alguna parte"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

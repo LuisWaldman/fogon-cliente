@@ -1,0 +1,81 @@
+{
+    "cancion": "el-cardon",
+    "banda": "leon-gieco",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "A",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "G",
+                    "A",
+                    "Bm",
+                    "A",
+                    "G",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "D",
+                    "C",
+                    "Bm",
+                    "A",
+                    "G",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "ól",
+            "o co",
+            "mo el car",
+            "dón",
+            "/nand"
+        ],
+        [
+            "a mi",
+            " coraz",
+            "ón",
+            "/nsubi"
+        ],
+        [
+            "endo",
+            " los",
+            " bra--",
+            "zos,",
+            "/nr"
+        ],
+        [
+            "oga",
+            "ndo ",
+            "tu a",
+            "mor.",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

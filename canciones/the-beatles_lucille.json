@@ -1,0 +1,57 @@
+{
+    "cancion": "Lucille",
+    "banda": "the-beatles",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "F",
+                    "C",
+                    "G7",
+                    "C",
+                    "C7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "cille, you won't do your sister's will/nLu"
+        ],
+        [
+            "cille, you won't do your sister's w",
+            "ill/nYou "
+        ],
+        [
+            "ran off and married, but I",
+            " love you st",
+            "ill",
+            "/nI "
+        ],
+        [
+            "woke up this mornin', Lucille was not in sight/nI "
+        ],
+        [
+            "asked her friends about her but all their lips were tight"
+        ]
+    ],
+    "bpm": 80
+}

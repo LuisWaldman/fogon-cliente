@@ -1,0 +1,55 @@
+{
+    "cancion": "Lets-Do-It",
+    "banda": "frank-sinatra",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "Am",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "alling in l",
+            "ove is such an ea",
+            "sy thing to do,",
+            "/n"
+        ],
+        [
+            "Birds can do it, w",
+            "e can do it./n"
+        ],
+        [
+            "Let's stop talking, l",
+            "et's get to it./n"
+        ],
+        [
+            "Let's fall in l",
+            "ove."
+        ]
+    ],
+    "bpm": 80
+}

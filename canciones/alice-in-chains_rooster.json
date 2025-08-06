@@ -1,0 +1,73 @@
+{
+    "cancion": "rooster",
+    "banda": "alice-in-chains",
+    "escala": "B",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B",
+                    "D",
+                    "F#/E",
+                    "F#",
+                    "B",
+                    "B",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B5",
+                    "D5",
+                    "F#5",
+                    "B5",
+                    "B5",
+                    "D5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "ere they come to snuff the ro",
+            "oster, oh yeah",
+            "",
+            "",
+            "/nY"
+        ],
+        [
+            "eah here come the ro",
+            "oster, yeah/nH"
+        ],
+        [
+            "ere they come to snuff the ro",
+            "oster, oh yeah",
+            "",
+            "/nY"
+        ],
+        [
+            "eah here come the ro",
+            "oster, yeah/nH"
+        ],
+        [
+            "ere they come to snuff the ro",
+            "oster, oh yeah",
+            "",
+            "/nY"
+        ],
+        [
+            "eah here come the ro",
+            "oster, yeah"
+        ]
+    ]
+}

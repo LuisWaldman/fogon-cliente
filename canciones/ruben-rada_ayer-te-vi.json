@@ -1,0 +1,55 @@
+{
+    "cancion": "Ayer-te-vi",
+    "banda": "ruben-rada",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "G",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Ayer te vi, ayer te v",
+            "i/nayer t"
+        ],
+        [
+            "e vi con el rostro cans",
+            "ado/nde tan"
+        ],
+        [
+            "to llorar.",
+            "/nNo te vas a mo"
+        ],
+        [
+            "rir/npor"
+        ],
+        [
+            "que a vos te de la ga",
+            "na"
+        ]
+    ],
+    "bpm": 80
+}

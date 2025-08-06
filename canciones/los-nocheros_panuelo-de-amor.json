@@ -1,0 +1,82 @@
+{
+    "cancion": "panuelo-de-amor",
+    "banda": "los-nocheros",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "A7",
+                    "Dm",
+                    "Am",
+                    "E",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "prendido de una tra",
+            "ba/n"
+        ],
+        [
+            "tu pañuelito secan",
+            "dose",
+            "/n"
+        ],
+        [
+            "me llamaba dicien",
+            "do/n"
+        ],
+        [
+            "me duele mucho desprend",
+            "eme./n"
+        ],
+        [
+            "No quiero lo traig",
+            "as/n"
+        ],
+        [
+            "cuando me vengas a despe",
+            "dir",
+            "/n"
+        ],
+        [
+            "soy como tu pañ",
+            "uelo/n"
+        ],
+        [
+            "viendo tu llanto no he d",
+            "e partir."
+        ]
+    ],
+    "bpm": 80
+}

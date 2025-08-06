@@ -1,0 +1,71 @@
+{
+    "cancion": "todo-el-dia-me-pregunto",
+    "banda": "manal",
+    "escala": "A7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A7",
+                    "G7/9",
+                    "A7",
+                    "D7/9",
+                    "C7/9",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E7/9",
+                    "D7/9",
+                    "C7/9",
+                    "A7",
+                    "C7",
+                    "D7",
+                    "E7",
+                    "C7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Todo el día me pregunto/npara qué v"
+        ],
+        [
+            "ivo así",
+            "/n"
+        ],
+        [
+            "todo el día me pregunto/npara qué"
+        ],
+        [
+            " vivo así",
+            "/n"
+        ],
+        [
+            "caminando sin parar/n"
+        ],
+        [
+            "casi siempre sin dormir",
+            "/ny por qué."
+        ],
+        [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

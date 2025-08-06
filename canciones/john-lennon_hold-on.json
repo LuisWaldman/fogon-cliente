@@ -1,0 +1,93 @@
+{
+    "cancion": "Hold-On",
+    "banda": "john-lennon",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "F#m",
+                    "G#m",
+                    "A",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Hold on Yoko , Yoko hold on/nIt's gonna"
+        ],
+        [
+            " be alright/nYou're gonna "
+        ],
+        [
+            "make the flight",
+            "",
+            "/nWhen you're "
+        ],
+        [
+            "by yourse",
+            "lf/nAnd there's "
+        ],
+        [
+            "no-one el",
+            "se/nYou just "
+        ],
+        [
+            "tell yourse",
+            "lf/n"
+        ],
+        [
+            "Hold on world , world hold on/nIt's gonna "
+        ],
+        [
+            "be alright/nYou gonna s"
+        ],
+        [
+            "ee the light",
+            "",
+            "/n"
+        ],
+        [
+            "When you're on",
+            "e,/n"
+        ],
+        [
+            "Really o",
+            "ne/nYou "
+        ],
+        [
+            "get things d",
+            "one/nLike they've "
+        ],
+        [
+            "never been d",
+            "one"
+        ]
+    ],
+    "bpm": 80
+}

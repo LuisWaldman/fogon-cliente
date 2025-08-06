@@ -1,0 +1,57 @@
+{
+    "cancion": "esta-es-la-vida",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "Esus4",
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "F",
+                    "E",
+                    "A",
+                    "Am11",
+                    "C/D",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "    0",
+            "02200  X0",
+            "0230",
+            "/n"
+        ],
+        [
+            "              ",
+            "               ",
+            "          ",
+            "^  ^",
+            "/n"
+        ],
+        [
+            "corazón     prisione",
+            "ro  deliber-"
+        ]
+    ],
+    "bpm": 80
+}

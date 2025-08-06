@@ -1,0 +1,90 @@
+{
+    "cancion": "Because",
+    "banda": "the-beatles",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D/F#",
+                    "Dº"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#m",
+                    "E",
+                    "A7/5-",
+                    "G#",
+                    "A",
+                    "C#m",
+                    "A7",
+                    "A6"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#",
+                    "C#m",
+                    "E",
+                    "A7/5-",
+                    "G#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "aaa",
+            "aaah, Aaa",
+            "h/nBeca"
+        ],
+        [
+            "use t",
+            "he world is round it turns me on",
+            "",
+            "/nBec"
+        ],
+        [
+            "ause",
+            " the world is rou",
+            "nd..",
+            ". Aaaaa",
+            "aaa",
+            "hh",
+            "/nBeca"
+        ],
+        [
+            "use t",
+            "he wind is high it blows my mind",
+            "",
+            "/nBec"
+        ],
+        [
+            "ause",
+            " the wind is hig",
+            "h...",
+            " Aaaaaaaahh/nLove is old, love is new"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80
+}

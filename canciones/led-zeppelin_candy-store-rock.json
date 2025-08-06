@@ -1,0 +1,43 @@
+{
+    "cancion": "candy-store-rock",
+    "banda": "led-zeppelin",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "B",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "   ",
+            "   ",
+            "   ",
+            "   ",
+            "   ",
+            "                \\3/\\3/"
+        ]
+    ],
+    "bpm": 80
+}

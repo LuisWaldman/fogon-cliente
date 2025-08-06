@@ -1,0 +1,47 @@
+{
+    "cancion": "Dark-Moon",
+    "banda": "elvis-presley",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Dark moon, way up high up in the sky /nYou've lost your "
+        ],
+        [
+            "splendor /nIs it because, is it because I've lost my "
+        ],
+        [
+            "love /n"
+        ],
+        [
+            "Mortals have dreams of l",
+            "ove's perfect schemes "
+        ]
+    ],
+    "bpm": 80
+}

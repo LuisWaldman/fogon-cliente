@@ -1,0 +1,85 @@
+{
+    "cancion": "cristal-de-zirconio",
+    "banda": "la-renga",
+    "escala": "A5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A5",
+                    "C5",
+                    "B5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5",
+                    "E5",
+                    "C5",
+                    "B5",
+                    "C5",
+                    "D5",
+                    "E5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#5",
+                    "A5",
+                    "E5",
+                    "C5",
+                    "B5",
+                    "C5",
+                    "D5",
+                    "E5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "intr",
+            "o:",
+            "/n"
+        ],
+        [
+            "Riff:",
+            "/n"
+        ],
+        [
+            "Con ",
+            "Intr",
+            "o:/n"
+        ],
+        [
+            "Riff",
+            "/n"
+        ],
+        [],
+        [],
+        [
+            "E5 C5 ",
+            "D5  ",
+            "   X2  (Como en el intro pero en ves de A5 es E5)/nCon Intro:"
+        ],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

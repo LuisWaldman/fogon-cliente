@@ -1,0 +1,65 @@
+{
+    "cancion": "Try-Not-To-Cry",
+    "banda": "paul-mccartney",
+    "escala": "A5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A5",
+                    "D",
+                    "C6",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "C6",
+                    "Am",
+                    "D",
+                    "C6",
+                    "Am",
+                    "E",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Sometimes I'm right, sometimes I'm wrong/n"
+        ],
+        [
+            "Try, t",
+            "ry, try",
+            "/nTry not to c"
+        ],
+        [
+            "ry, cr",
+            "y, cry",
+            "/nCry over y"
+        ],
+        [
+            "ou-o",
+            "o-oo",
+            "/nOver y"
+        ],
+        [
+            "ou/nBaby, "
+        ],
+        [
+            "I try, try, try"
+        ]
+    ],
+    "bpm": 80
+}

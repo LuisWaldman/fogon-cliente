@@ -1,0 +1,53 @@
+{
+    "cancion": "El-Loro",
+    "banda": "andres-calamaro",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "E7",
+                    "Am",
+                    "F",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Al cuaderno donde escribo y",
+            "o/nse "
+        ],
+        [
+            "le acabaron los renglo",
+            "nes/ne"
+        ],
+        [
+            "scribí alguna canción",
+            " buena/n"
+        ],
+        [
+            "las otras son buenas cancio",
+            "nes"
+        ]
+    ],
+    "bpm": 80
+}

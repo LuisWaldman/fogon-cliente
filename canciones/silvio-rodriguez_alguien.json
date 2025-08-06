@@ -1,0 +1,38 @@
+{
+    "cancion": "alguien",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "gt;&gt;  ñ a ñ a   ñ  a  ñ a   ñ  i  ñ i   ñ i a i"
+        ]
+    ],
+    "bpm": 80
+}

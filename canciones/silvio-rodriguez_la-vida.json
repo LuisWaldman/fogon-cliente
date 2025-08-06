@@ -1,0 +1,73 @@
+{
+    "cancion": "la-vida",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "Bm",
+                    "D",
+                    "Bm",
+                    "F#m",
+                    "C#/F",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "D",
+                    "Bm",
+                    "C#m",
+                    "D",
+                    "Bm",
+                    "D",
+                    "Bm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            " La vida de un crío/n"
+        ],
+        [
+            "A)  ",
+            "    A",
+            "  vi",
+            "da del sordo y del ciego/n"
+        ],
+        [],
+        [
+            "     A  vida voraz que ",
+            "se enreda/n   "
+        ],
+        [
+            "   La vida qu",
+            "e sale a j",
+            "ugar/n   "
+        ],
+        [
+            "   La vida consciente qu",
+            "e queda/n"
+        ],
+        [
+            "B)  ",
+            "    A  vida que alumbra en el trueno/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

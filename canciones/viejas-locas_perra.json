@@ -1,0 +1,45 @@
+{
+    "cancion": "Perra",
+    "banda": "viejas-locas",
+    "escala": "C#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#m",
+                    "A",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Me dejaste en la ruina/n"
+        ],
+        [
+            "Siempre fuiste ",
+            "una gran Perra mi amor.../n"
+        ],
+        [
+            "Siempre fuiste ",
+            "la más! ...Perra."
+        ]
+    ],
+    "bpm": 80
+}

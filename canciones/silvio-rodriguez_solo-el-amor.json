@@ -1,0 +1,61 @@
+{
+    "cancion": "solo-el-amor",
+    "banda": "silvio-rodriguez",
+    "escala": "C/",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C/",
+                    "G",
+                    "F",
+                    "G",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "F",
+                    "C/",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Debe",
+            "s amar la arcilla que hacen tus ma",
+            "nos/n "
+        ],
+        [
+            "debes amar su arena hasta la loc",
+            "ura/n "
+        ],
+        [
+            "sólo el amor a",
+            "lumbra lo que perd",
+            "ura",
+            "/n "
+        ],
+        [
+            "sólo el amor con",
+            "vierte en milagro el b",
+            "arro",
+            "./n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

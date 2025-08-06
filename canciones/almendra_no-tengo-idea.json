@@ -1,0 +1,53 @@
+{
+    "cancion": "No-tengo-idea",
+    "banda": "almendra",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "D7",
+                    "A",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Si el cielo me envuelve/n"
+        ],
+        [
+            "pues el cielo inocente/ny no me podrá apresa"
+        ],
+        [
+            "r/nper"
+        ],
+        [
+            "o inocentemente",
+            "/nme lo empecé a trag"
+        ],
+        [
+            "ar",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

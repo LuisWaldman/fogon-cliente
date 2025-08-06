@@ -1,0 +1,123 @@
+{
+    "cancion": "testamento",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "Ddim7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "D/F#",
+                    "Am",
+                    "G",
+                    "F",
+                    "C",
+                    "G",
+                    "D/F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "Como la mu",
+            "erte anda en secreto",
+            "/nY "
+        ],
+        [
+            "no se sabe qu",
+            "e mañana/n"
+        ],
+        [
+            "Yo voy a h",
+            "acer mi testamento",
+            "/n"
+        ],
+        [
+            "A repartir lo que ",
+            "me falta/n"
+        ],
+        [
+            "Pues lo que ",
+            "tuve ya está ",
+            "hecho/nYa es"
+        ],
+        [
+            "tá abrigado, ya está en",
+            " casa/n"
+        ],
+        [
+            "Yo voy a ",
+            "hacer mi testament",
+            "o/nPara ce"
+        ],
+        [
+            "rrar cuent",
+            "as soñ",
+            "adas/nLe de"
+        ],
+        [
+            "bo una canción a la",
+            " sonrisa,",
+            "/nA la son"
+        ],
+        [
+            "risa de manan",
+            "tial, esa que sa",
+            "lta/nLe d"
+        ],
+        [
+            "ebo un canción a tod",
+            "a pris",
+            "a/nPara que"
+        ],
+        [
+            " quede que estuvo",
+            " cerca, agaz",
+            "apada"
+        ]
+    ],
+    "bpm": 80
+}

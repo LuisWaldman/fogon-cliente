@@ -1,0 +1,71 @@
+{
+    "cancion": "Al-centro-de-la-injusticia",
+    "banda": "parra-violeta",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "G",
+                    "A7",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "D",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "F#",
+                    "Bm",
+                    "F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Chile limita al nort",
+            "e con el Perú",
+            "/n"
+        ],
+        [
+            "y con el cabo de hornos limi",
+            "ta el sur",
+            "/n"
+        ],
+        [
+            "se eleva en el ",
+            "oriente ",
+            "la cordi",
+            "llera",
+            "/n"
+        ],
+        [
+            " y en el oeste luce ",
+            "la costanera",
+            "/n"
+        ],
+        [
+            "la costanera",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

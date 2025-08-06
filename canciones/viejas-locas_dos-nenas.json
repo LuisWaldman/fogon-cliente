@@ -1,0 +1,63 @@
+{
+    "cancion": "Dos-Nenas",
+    "banda": "viejas-locas",
+    "escala": "C5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C5",
+                    "G5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G5",
+                    "D5",
+                    "G5",
+                    "D5",
+                    "C5",
+                    "D5",
+                    "C5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Si una chica viene y dice que te quiere curtir/ny se des"
+        ],
+        [
+            "pide de su amiga con un beso de boca/n"
+        ],
+        [
+            "Dice que esta noche no te vas a corregir/n"
+        ],
+        [
+            "dice que esta noche no se va a dormir sola./n"
+        ],
+        [
+            "Ella... ¿qué quiere d",
+            "e mí?/n"
+        ],
+        [
+            "Se le va parar el corazón",
+            "/n"
+        ],
+        [
+            "porque hace tiempo que no prueba un varó",
+            "n."
+        ]
+    ],
+    "bpm": 80
+}

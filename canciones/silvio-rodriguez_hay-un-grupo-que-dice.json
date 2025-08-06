@@ -1,0 +1,70 @@
+{
+    "cancion": "hay-un-grupo-que-dice",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "F",
+                    "G7",
+                    "C",
+                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "F",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "ay un grupo que dice que",
+            " lo haga reír,/ndicen"
+        ],
+        [
+            " que mi canció",
+            "n no es así, ",
+            "juvenil,/nque yo n"
+        ],
+        [
+            "o me debiera poner a canta",
+            "r,/n"
+        ],
+        [
+            "larala lala lala l",
+            "aralala,/n"
+        ],
+        [
+            "larala lala lara l",
+            "aralala,/n"
+        ],
+        [
+            "larala lala lala l",
+            "aralala,/n"
+        ],
+        [
+            "larala lala lara l",
+            "aralala."
+        ]
+    ],
+    "bpm": 80
+}

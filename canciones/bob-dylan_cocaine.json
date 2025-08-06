@@ -1,0 +1,87 @@
+{
+    "cancion": "Cocaine",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "F/A",
+                    "E7",
+                    "F",
+                    "C",
+                    "F/A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "C",
+                    "E7",
+                    "F",
+                    "C",
+                    "F",
+                    "G",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            ":   .   .   .     :   .   .   .     :   .   .   .     :   .   .   ./n"
+        ],
+        [],
+        [
+            " :   .   .   .     :   .   .   .     :   .   .   .     :   .   .   ./n  "
+        ],
+        [
+            ":   .   .   .     :   .   .   ./n"
+        ],
+        [
+            "Yonder come my baby all dressed in red./n"
+        ],
+        [
+            "Hey baby, I'm better off dead./n    "
+        ],
+        [
+            "Hey baby, won't you come here quick./n    "
+        ],
+        [
+            "This old cocaine is making me sick./n    "
+        ],
+        [
+            "Cocaine a",
+            "ll aro",
+            "und my bra",
+            "in./n      "
+        ],
+        [
+            ":   .   .   .     :   .   .   .     :",
+            "   .   .   .     :   .   .   ./n      "
+        ],
+        [
+            ":   .   .   .     :   .   .   .     :   .   .   .     :   .   .   ."
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,50 @@
+{
+    "cancion": "Espejismo",
+    "banda": "los-redonditos-de-ricota",
+    "escala": "Dm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Gm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Gm",
+                    "Am",
+                    "Gm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "La tierra gira hoy, menos vel",
+            "oz,/n"
+        ],
+        [
+            "(en ciertas cosas, el diablo sie",
+            "mpre es neutral)/n"
+        ],
+        [
+            "pasará, ya pasará/n",
+            "Y su"
+        ],
+        [
+            "este espejismo pasará..."
+        ]
+    ],
+    "bpm": 80
+}

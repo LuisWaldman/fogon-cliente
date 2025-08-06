@@ -1,0 +1,45 @@
+{
+    "cancion": "La-Taba",
+    "banda": "los-nocheros",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "mor vas a jugar/nDe esp"
+        ],
+        [
+            "alda o de fre",
+            "nte/nTe p"
+        ],
+        [
+            "uede toca",
+            "r"
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,53 @@
+{
+    "cancion": "la-mama-de-jimmy",
+    "banda": "charly-garcia",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "A",
+                    "C",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "La mamá de Jimmy es una inglesa  /n"
+        ],
+        [
+            "pero no se",
+            " da cuenta  /n"
+        ],
+        [
+            "pero no se",
+            " da cuenta  /n"
+        ],
+        [
+            "que en el su",
+            "r están sus oveja",
+            "s "
+        ]
+    ],
+    "bpm": 80
+}

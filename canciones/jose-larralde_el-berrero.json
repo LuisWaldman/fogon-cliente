@@ -1,0 +1,55 @@
+{
+    "cancion": "El-Berrero",
+    "banda": "jose-larralde",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "E7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E7",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "aba quien lo sa",
+            "be y de saberlo es igual",
+            "./nSe llam"
+        ],
+        [
+            "aba quien lo sa",
+            "be y de saberlo es igual",
+            "/nsol"
+        ],
+        [
+            "ía andar haciendo n",
+            "oche a la orilla del cana",
+            "l/no al pie del embarcad"
+        ],
+        [
+            "ero aguantando el tempora",
+            "l."
+        ]
+    ],
+    "bpm": 80
+}

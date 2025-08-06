@@ -1,0 +1,41 @@
+{
+    "cancion": "preparame-la-cena",
+    "banda": "calle-13",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "No Soy un númeroni",
+            " parte de una cifra/n"
+        ],
+        [
+            "aunque se paga por igual la",
+            " misma tarifa"
+        ]
+    ],
+    "bpm": 80
+}

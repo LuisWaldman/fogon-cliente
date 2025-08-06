@@ -1,0 +1,57 @@
+{
+    "cancion": "anoranzas",
+    "banda": "los-chalchaleros",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D7",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "C",
+                    "B7",
+                    "Em",
+                    "C",
+                    "Am",
+                    "B7",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "do salí de Santiago todo el cami",
+            "no llor",
+            "/nlloré"
+        ],
+        [
+            " sin saber por",
+            "qué pero yo ",
+            "les aseguro",
+            "/nque "
+        ],
+        [
+            "mi corazón es d",
+            "uro pero aquel d",
+            "a afloj",
+            "e."
+        ]
+    ],
+    "bpm": 80
+}
