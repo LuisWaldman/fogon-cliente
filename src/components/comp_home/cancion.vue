@@ -5,7 +5,7 @@ const props = defineProps<{
   cancion: ItemIndiceCancion
 }>()
 
- defineEmits(['click'])
+defineEmits(['click'])
 </script>
 
 <template>
@@ -13,7 +13,6 @@ const props = defineProps<{
     <div>{{ props.cancion.cancion }}</div>
     <div>{{ props.cancion.banda }}</div>
   </div>
-  
 </template>
 <style scoped>
 .cancion {

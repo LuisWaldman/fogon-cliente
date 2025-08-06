@@ -2,6 +2,25 @@ import type { Cancion } from './cancion'
 import type { OrigenCancion } from './origencancion'
 
 export class ItemIndiceCancion {
+  normalizartexto(texto: string): string {
+    return texto
+      .toLowerCase()
+      .replace(/á/g, 'a')
+      .replace(/é/g, 'e')
+      .replace(/í/g, 'i')
+      .replace(/ó/g, 'o')
+      .replace(/ú/g, 'u')
+      .replace(/ñ/g, 'n')
+      .replace(' ', '_')
+  }
+  normalizar() {
+    if (this.origen.fileName === '') {
+      this.origen.fileName =
+        this.normalizartexto(this.cancion) +
+        '_' +
+        this.normalizartexto(this.banda)
+    }
+  }
   public escala: string
   public totalCompases: number
   public compasUnidad: number

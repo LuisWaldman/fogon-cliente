@@ -2,10 +2,10 @@ import { Acordes, Parte } from './acordes'
 import { Cancion } from './cancion'
 import { ItemIndiceCancion } from './ItemIndiceCancion'
 import { Letra } from './letra'
-import type { OrigenCancion } from './origencancion'
+import { OrigenCancion } from './origencancion'
 import { UltimasCanciones } from './ultimascanciones'
 
-class UrlGetter {
+export class UrlGetter {
   public static async GetSongUrl(
     origencancion: OrigenCancion,
   ): Promise<Cancion> {
@@ -49,6 +49,38 @@ class UrlGetter {
     )
     toRet.archivo = origencancion.fileName
     toRet.normalizar()
+    return toRet
+  }
+
+  public static async GetIndice(
+    origenUrl: string,
+  ): Promise<ItemIndiceCancion[]> {
+    let desdeUrl = origenUrl
+    if (desdeUrl.includes('fogon.ar')) {
+      desdeUrl = 'https://www.fogon.ar/public/canciones/'
+    }
+    if (desdeUrl.includes('localhost')) {
+      desdeUrl = 'http://localhost:5173/public/'
+    }
+    console.log('Getting Indice from', desdeUrl + 'indice.json')
+
+    const response = await fetch(desdeUrl + 'indice.json')
+    const data = await response.json()
+    const toRet: ItemIndiceCancion[] = []
+    for (const item of data) {
+      const cancion = new ItemIndiceCancion(
+        new OrigenCancion(desdeUrl, item.archivo, ''),
+        item.banda,
+        item.cancion,
+      )
+      cancion.calidad = item.calidad
+      cancion.bpm = item.bpm
+      cancion.compasUnidad = item.compasUnidad
+      cancion.compasCantidad = item.compasCantidad
+      cancion.escala = item.escala
+      cancion.normalizar()
+      toRet.push(cancion)
+    }
     return toRet
   }
 }
