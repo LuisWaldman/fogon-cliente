@@ -1,7 +1,9 @@
 import { Acordes, Parte } from './acordes'
 import { Cancion } from './cancion'
+import { ItemIndiceCancion } from './ItemIndiceCancion'
 import { Letra } from './letra'
 import type { OrigenCancion } from './origencancion'
+import { UltimasCanciones } from './ultimascanciones'
 
 class UrlGetter {
   public static async GetSongUrl(
@@ -10,6 +12,9 @@ class UrlGetter {
     let desdeUrl = origencancion.origenUrl
     if (desdeUrl.includes('fogon.ar')) {
       desdeUrl = 'https://www.fogon.ar/canciones/'
+    }
+    if (desdeUrl.includes('localhost')) {
+      desdeUrl = 'http://localhost:5173/canciones/'
     }
     console.log(
       'Getting song from',
@@ -50,6 +55,12 @@ class UrlGetter {
 
 export class HelperGetCancion {
   public static async Get(origencancion: OrigenCancion): Promise<Cancion> {
-    return UrlGetter.GetSongUrl(origencancion)
+    const ultimas = new UltimasCanciones()
+    const cancion = UrlGetter.GetSongUrl(origencancion)
+    const acancion = await cancion
+    const item = ItemIndiceCancion.BuildFromCancion(acancion, origencancion)
+    console.log('Adding to recent songs', item)
+    ultimas.agregar(item)
+    return acancion
   }
 }
