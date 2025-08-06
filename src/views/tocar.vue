@@ -10,7 +10,6 @@ import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import Partes from '../components/comp_tocar/Partes.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
-import verRelojes from '../components/comp_tocar/verRelojes.vue'
 import { useRouter } from 'vue-router'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -81,13 +80,8 @@ function estiloVistaSecundaria() {
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
 const refEditSize = ref(false)
-const verRelojesRef = ref(false)
 function editarPantalla() {
   refEditSize.value = true
-}
-
-function clickverRelojes() {
-  verRelojesRef.value = !verRelojesRef.value
 }
 
 const router = useRouter()
@@ -95,10 +89,6 @@ function clickEditar() {
   // Redirect to edit page for the current song
   appStore.editandocancion = appStore.cancion
   router.push('/editar')
-}
-
-function cerrarRelojes() {
-  verRelojesRef.value = false
 }
 
 function cerrareditarPantalla() {
@@ -112,11 +102,6 @@ function cerrareditarPantalla() {
       v-if="refEditSize"
       @cerrarEditSize="cerrareditarPantalla"
     ></editVista>
-    <verRelojes
-      @cerrar="cerrarRelojes"
-      v-if="verRelojesRef"
-      :mostrarCerrar="true"
-    ></verRelojes>
 
     <div
       class="pantallaPlay"
@@ -141,12 +126,12 @@ function cerrareditarPantalla() {
         ></TocarAcorde>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <Secuencia
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.secuencia"
-        ></Secuencia>
-
+        <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
+          <Secuencia
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></Secuencia>
+        </div>
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"
@@ -205,9 +190,6 @@ function cerrareditarPantalla() {
           <li><hr class="dropdown-divider" /></li>
           <li v-on:click="editarPantalla()">
             <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
-          </li>
-          <li v-on:click="clickverRelojes()">
-            <a class="dropdown-item" href="#"> Relojes</a>
           </li>
 
           <li><hr class="dropdown-divider" /></li>

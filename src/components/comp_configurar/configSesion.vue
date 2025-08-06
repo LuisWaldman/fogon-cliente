@@ -174,7 +174,7 @@ if (appStore.estadoSesion === 'conectado') {
   </div>
 </template>
 
-<style>
+<style scoped>
 .profile-image {
   width: 50px;
   height: 50px;
