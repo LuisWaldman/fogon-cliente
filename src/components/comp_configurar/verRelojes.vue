@@ -185,9 +185,6 @@ function cerrarRelojes() {
   margin: 2px;
 }
 .divRelojes {
-  position: absolute;
-  left: 10%;
-  top: 20%;
   font-size: 2em;
   padding: 8px;
   border-radius: 10px;

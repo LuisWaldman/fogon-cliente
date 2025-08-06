@@ -10,7 +10,7 @@ import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import Partes from '../components/comp_tocar/Partes.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
-import verRelojes from '../components/comp_tocar/verRelojes.vue'
+import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useRouter } from 'vue-router'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -86,10 +86,6 @@ function editarPantalla() {
   refEditSize.value = true
 }
 
-function clickverRelojes() {
-  verRelojesRef.value = !verRelojesRef.value
-}
-
 const router = useRouter()
 function clickEditar() {
   // Redirect to edit page for the current song
@@ -97,9 +93,7 @@ function clickEditar() {
   router.push('/editar')
 }
 
-function cerrarRelojes() {
-  verRelojesRef.value = false
-}
+
 
 function cerrareditarPantalla() {
   refEditSize.value = false
@@ -112,11 +106,6 @@ function cerrareditarPantalla() {
       v-if="refEditSize"
       @cerrarEditSize="cerrareditarPantalla"
     ></editVista>
-    <verRelojes
-      @cerrar="cerrarRelojes"
-      v-if="verRelojesRef"
-      :mostrarCerrar="true"
-    ></verRelojes>
 
     <div
       class="pantallaPlay"
@@ -205,9 +194,6 @@ function cerrareditarPantalla() {
           <li><hr class="dropdown-divider" /></li>
           <li v-on:click="editarPantalla()">
             <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
-          </li>
-          <li v-on:click="clickverRelojes()">
-            <a class="dropdown-item" href="#"> Relojes</a>
           </li>
 
           <li><hr class="dropdown-divider" /></li>

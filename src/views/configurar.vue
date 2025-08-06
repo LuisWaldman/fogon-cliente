@@ -6,7 +6,7 @@ import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 
-import verRelojes from '../components/comp_tocar/verRelojes.vue'
+import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 const appStore = useAppStore()
 // Definir la canción y el contexto
