@@ -1,0 +1,79 @@
+{
+    "cancion": "Peixinhos-do-Mar",
+    "banda": "milton-nascimento",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "B6/Eb",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B6/Eb",
+                    "D6/5-",
+                    "A6/C#",
+                    "C6/5-",
+                    "B6/Eb",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A/C#",
+                    "B/Eb",
+                    "B/A",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "em me ensinou a ",
+            "nadar /nQ"
+        ],
+        [
+            "uem me ensinou ",
+            "a nadar ",
+            "/nF"
+        ],
+        [
+            "oi, foi mar",
+            "inheiro /nF"
+        ],
+        [
+            "oi os peixinhos do m",
+            "ar /nE"
+        ],
+        [
+            " nós que ",
+            "viemos /nDe outras"
+        ],
+        [
+            " terras, de outro ma",
+            "r /nTemos"
+        ],
+        [
+            " pólvora, chumbo e bala /nNós queremos é guerrear"
+        ],
+        []
+    ],
+    "bpm": 80
+}

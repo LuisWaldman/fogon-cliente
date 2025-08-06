@@ -1,0 +1,42 @@
+{
+    "cancion": "patadas-en-el-corazon",
+    "banda": "la-mosca",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "Bm",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "do la cancion sube d",
+            "e tono se puede tocar asi./n"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80
+}

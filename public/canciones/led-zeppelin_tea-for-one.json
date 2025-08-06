@@ -1,0 +1,45 @@
+{
+    "cancion": "tea-for-one",
+    "banda": "led-zeppelin",
+    "escala": "Cm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Cm",
+                    "Fm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Cm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "riff",
+            " pla",
+            "yed ",
+            "over Cm every so often/n"
+        ],
+        [
+            "riff",
+            " played at the end of each verse"
+        ]
+    ],
+    "bpm": 80
+}

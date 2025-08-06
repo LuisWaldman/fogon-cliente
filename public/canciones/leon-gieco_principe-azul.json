@@ -1,0 +1,97 @@
+{
+    "cancion": "principe-azul",
+    "banda": "leon-gieco",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C/G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Bm7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am/B",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D/C",
+                    "D/B",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "Sueña ser principe",
+            " a-zu",
+            "l  /n"
+        ],
+        [
+            "nena chiquita er",
+            "es tu",
+            "  /n"
+        ],
+        [
+            "luna de queso t",
+            "endras",
+            "  /ndonde l"
+        ],
+        [
+            "a luna s",
+            "aldra ",
+            " /nC"
+        ],
+        [
+            "uando despiertes d",
+            "el sue",
+            "o  /n"
+        ],
+        [
+            "ya no tendra lu",
+            "na el ciel",
+            "o  /n"
+        ],
+        [
+            "debes salir a b",
+            "us-car",
+            " se verso  ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

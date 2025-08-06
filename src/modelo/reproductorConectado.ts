@@ -3,6 +3,7 @@ import { ClienteSocket } from './conexion/ClienteSocket'
 import { Reproductor } from './reproductor'
 import { HelperSincro } from './sincro/HelperSincro'
 import { SincroCancion } from './sincro/SincroCancion'
+import { OrigenCancion } from './cancion/origencancion'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
@@ -38,7 +39,9 @@ export class ReproductorConectado extends Reproductor {
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler((nombreArchivo: string) => {
       console.log(`Canción actualizada: ${nombreArchivo}`)
-      this.CargarCancion(nombreArchivo)
+      this.CargarCancion(
+        new OrigenCancion('url:' + window.location.href, nombreArchivo, ''),
+      )
       /*
       fetch(
         `${this.cliente.UrlServer}cancion?nombre=${encodeURIComponent(nombreArchivo)}`,
@@ -127,12 +130,12 @@ export class ReproductorConectado extends Reproductor {
     this.sincronizar()
   }
 
-  override async SetCancion(cancionstr: string) {
+  override async SetCancion(cancion: OrigenCancion) {
     const appStore = useAppStore()
     console.log('ESTADO', appStore.estadoSesion)
     if (appStore.estadoSesion === 'conectado') {
-      console.log(`Actualizando canción en el servidor: ${cancionstr}`)
-      this.cliente.actualizarCancion(cancionstr)
+      console.log(`Actualizando canción en el servidor: ${cancion.fileName}`)
+      this.cliente.actualizarCancion(cancion.fileName)
     }
   }
 

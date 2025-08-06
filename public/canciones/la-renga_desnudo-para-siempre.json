@@ -1,0 +1,77 @@
+{
+    "cancion": "desnudo-para-siempre",
+    "banda": "la-renga",
+    "escala": "A5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G5",
+                    "B5",
+                    "C5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G5",
+                    "A#5",
+                    "E5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "B5  E",
+            "  (variar con Esus4 )/n"
+        ],
+        [
+            "  Buenas noches, me digo, y me invito a bebe",
+            "r./n"
+        ],
+        [
+            "     ",
+            "     ",
+            "  Estamos solos, me dije, y te adviert",
+            "o/n"
+        ],
+        [
+            "     ",
+            "     ",
+            " de nada sirve mentirse a uno mis",
+            "mo./n"
+        ],
+        [
+            "     ",
+            "     ",
+            " El propio espejo y la puerta a saber quien soy",
+            ",/nse abr"
+        ],
+        [
+            "ió y me dejó desnudo para siempre."
+        ]
+    ],
+    "bpm": 80
+}

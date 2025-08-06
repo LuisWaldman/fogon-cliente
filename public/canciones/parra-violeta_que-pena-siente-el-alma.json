@@ -1,0 +1,51 @@
+{
+    "cancion": "Que-pena-siente-el-alma",
+    "banda": "parra-violeta",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "F",
+                    "G7",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "ue pena siente e",
+            "l alma/ncuando la suerte im"
+        ],
+        [
+            "pía/nse o"
+        ],
+        [
+            "pone a los des",
+            "eos/nque anhela el"
+        ],
+        [
+            " cora",
+            "zón"
+        ]
+    ],
+    "bpm": 80
+}

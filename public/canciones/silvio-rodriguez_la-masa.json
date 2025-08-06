@@ -1,0 +1,47 @@
+{
+    "cancion": "la-masa",
+    "banda": "silvio-rodriguez",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "E/G#",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "i no creyera en la l",
+            "ocura/nd"
+        ],
+        [
+            "e la garganta del ",
+            "sinsonte/ns"
+        ],
+        [
+            "e esconde el trino y la pa",
+            "vura."
+        ]
+    ],
+    "bpm": 80
+}

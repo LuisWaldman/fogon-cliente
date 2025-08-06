@@ -1,0 +1,45 @@
+{
+    "cancion": "Milonga-por-Beethoven",
+    "banda": "alfredo-zitarrosa",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "E7",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Suena el piano, pia",
+            "no sin él/nnace en una "
+        ],
+        [
+            "mano Gardel/n"
+        ],
+        [
+            "suena un sol pat",
+            "ético en do"
+        ]
+    ],
+    "bpm": 80
+}

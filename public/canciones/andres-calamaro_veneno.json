@@ -1,0 +1,63 @@
+{
+    "cancion": "Veneno",
+    "banda": "andres-calamaro",
+    "escala": "D5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D5",
+                    "G5",
+                    "E5",
+                    "D5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "E",
+                    "D",
+                    "D",
+                    "E",
+                    "D",
+                    "G",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Mant",
+            "iene",
+            " esa ba",
+            "se t",
+            "oda la/n"
+        ],
+        [
+            "Ya estoy bai",
+            "lando, ba",
+            "by/nva"
+        ],
+        [
+            "mos a hablar ",
+            "del veneno/nqu"
+        ],
+        [
+            "e rico esta",
+            "ba el ven",
+            "eno"
+        ]
+    ],
+    "bpm": 80
+}

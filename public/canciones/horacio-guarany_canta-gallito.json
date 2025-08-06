@@ -1,0 +1,50 @@
+{
+    "cancion": "canta-gallito",
+    "banda": "horacio-guarany",
+    "escala": "D",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "anta! ¡Canta! Canta gall",
+            "ito/ngallito de madrug"
+        ],
+        [
+            "ada./nC"
+        ],
+        [
+            "anta! ¡Canta! Canta gall",
+            "ito/ngallito de madrug"
+        ],
+        [
+            "ada./nGal"
+        ],
+        [
+            "lito de madrugada            I"
+        ]
+    ]
+}

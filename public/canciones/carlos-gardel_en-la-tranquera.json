@@ -1,0 +1,63 @@
+{
+    "cancion": "En-la-tranquera",
+    "banda": "carlos-gardel",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7",
+                    "Dm",
+                    "B7",
+                    "E7",
+                    "Dm",
+                    "C",
+                    "G7",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "del Plata y",
+            "o me quiero ir./nSólo una cosa falta "
+        ],
+        [
+            "conseguir,/nlo qu"
+        ],
+        [
+            "e yo tengo es mucho c",
+            "oraje./nSólo me f"
+        ],
+        [
+            "alta plata para el",
+            " viaje./nNo crean por"
+        ],
+        [
+            " esto que vivo de ",
+            "arriba,/nque no pago a "
+        ],
+        [
+            "nadie, que soy tibu",
+            "rón,"
+        ]
+    ],
+    "bpm": 80
+}

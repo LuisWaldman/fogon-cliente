@@ -1,0 +1,65 @@
+{
+    "cancion": "Babel",
+    "banda": "los-nocheros",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "D",
+                    "Em",
+                    "F#m",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Hace el viento su intento/n"
+        ],
+        [
+            "por llevarme a tu encuentro,/n"
+        ],
+        [
+            "y agita la ciudad.",
+            "/n"
+        ],
+        [
+            "Como un gato sin tejado,",
+            "/n"
+        ],
+        [
+            "como un millón sin ganador estoy.",
+            "/n"
+        ],
+        [
+            "Búscame y acorta las distancia",
+            "s,/n"
+        ],
+        [
+            "tratemos de entender, entendernos en babel."
+        ]
+    ],
+    "bpm": 80
+}

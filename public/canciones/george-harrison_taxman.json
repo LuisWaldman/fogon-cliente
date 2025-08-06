@@ -1,0 +1,123 @@
+{
+    "cancion": "Taxman",
+    "banda": "george-harrison",
+    "escala": "D7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D7",
+                    "D7(#9)",
+                    "D7",
+                    "D7(#9)",
+                    "D7",
+                    "C7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D7",
+                    "C7",
+                    "D7",
+                    "C7",
+                    "D7",
+                    "C7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F7",
+                    "E7",
+                    "D7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            0,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "let me tell you how it will be ",
+            "",
+            "/nthere's one for you, ninteen for me "
+        ],
+        [
+            " ",
+            "/n'cause i'm the "
+        ],
+        [
+            "taxman/nyeah, i'm the"
+        ],
+        [
+            " taxman ",
+            "/nshould five percent appear too small"
+        ],
+        [
+            "",
+            "/nbe thankful i don't take it all"
+        ],
+        [
+            "",
+            "/n'cause i'm the "
+        ],
+        [
+            "taxman /nyeah, i'm the"
+        ],
+        [
+            " taxman ",
+            "/n(if you try to sit) i'll tax"
+        ],
+        [
+            " your seat/n(if you get"
+        ],
+        [
+            " too cold) i'll tax the heat/n(if you take a walk) i'll tax"
+        ],
+        [
+            " your feet/n"
+        ],
+        [
+            "taxman!!/n'cause i'm the "
+        ],
+        [
+            "taxman/nyeah, i'm the"
+        ],
+        [
+            " taxman ",
+            "/ndon't ask me what i want it for "
+        ],
+        [
+            "",
+            "/nif you don't want to pay some more"
+        ],
+        [
+            "",
+            "/n'cause i'm the "
+        ],
+        [
+            "taxman /nyeah, i'm the"
+        ],
+        [
+            " taxman/nand you're"
+        ],
+        [
+            " working for no one ",
+            "but me",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

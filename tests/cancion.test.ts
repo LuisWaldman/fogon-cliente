@@ -1,6 +1,6 @@
-import { Cancion } from '../src/modelo/cancion'
-import { Acordes, Parte } from '../src/modelo/acordes'
-import { Letra } from '../src/modelo/letra'
+import { Cancion } from '../src/modelo/cancion/cancion'
+import { Acordes, Parte } from '../src/modelo/cancion/acordes'
+import { Letra } from '../src/modelo/cancion/letra'
 import { describe, it, expect } from 'vitest'
 
 describe('Cancion', () => {

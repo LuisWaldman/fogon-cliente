@@ -1,0 +1,67 @@
+{
+    "cancion": "Ve-La-Luna",
+    "banda": "leon-gieco",
+    "escala": "Gm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Gm",
+                    "Cm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Gm",
+                    "Cm",
+                    "F",
+                    "Gm",
+                    "Cm",
+                    "F",
+                    "Gm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "   Que pa",
+            "sa con el tiem",
+            "po, /npor qué "
+        ],
+        [
+            "nunca parás /nEt"
+        ],
+        [
+            "erno huir, ete",
+            "rno caminar",
+            ". /nVe la l"
+        ],
+        [
+            "una, siempre en su luga",
+            "r /nque te sonrie, y vos pas"
+        ],
+        [
+            "ás sin parar /nve la l"
+        ],
+        [
+            "una, la noche azul del vera",
+            "no la cobija /ny vos pas"
+        ],
+        [
+            "ás. "
+        ]
+    ],
+    "bpm": 80
+}

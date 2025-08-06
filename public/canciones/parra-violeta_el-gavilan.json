@@ -1,0 +1,60 @@
+{
+    "cancion": "el-gavilan",
+    "banda": "parra-violeta",
+    "escala": "G5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G5",
+                    "C5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "l5-7 Do5-",
+            "7 Mi5-6 S",
+            "ol5-7/n"
+        ],
+        [
+            ":/Gavilán, gavilán, que me muero gavilán://n"
+        ],
+        [
+            ":/Gavilán, gavilán, que me muero gavilán://n"
+        ],
+        [
+            ":/Gavilán, gavilán, que me muero gavilán://nGavi gavilán,"
+        ],
+        [
+            " que me muero gavilán,",
+            " que me muero gavilán/n"
+        ],
+        [
+            ":/Gavilán, gavilán, que me muero gavilán://n"
+        ],
+        [
+            ":/Gavilán, gavilán, gavi://n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

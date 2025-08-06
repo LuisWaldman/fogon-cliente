@@ -1,0 +1,55 @@
+{
+    "cancion": "Stand-By-Me",
+    "banda": "elvis-presley",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "Cm",
+                    "E",
+                    "B7",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "torms of life are raging/n"
+        ],
+        [
+            "Stand by m",
+            "e/nLike a ship out on "
+        ],
+        [
+            "the se",
+            "a/nThou who "
+        ],
+        [
+            "rulest wind and water/n"
+        ],
+        [
+            "Stand by m",
+            "e"
+        ]
+    ],
+    "bpm": 80
+}

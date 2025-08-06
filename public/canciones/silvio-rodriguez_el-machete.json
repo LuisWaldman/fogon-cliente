@@ -1,0 +1,69 @@
+{
+    "cancion": "el-machete",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "B7",
+                    "Em",
+                    "Em/D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "D4",
+                    "D",
+                    "B7",
+                    "Em",
+                    "Em/D",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Francisco una pulga",
+            " vio/n"
+        ],
+        [
+            "que al parecer no era ",
+            "nada",
+            "/n"
+        ],
+        [
+            "y a la primera pi",
+            "cada/nen "
+        ],
+        [
+            "el suelo lo tum",
+            "bó./n"
+        ],
+        [
+            "que le cortó 'tos' los",
+            " huesos",
+            "/n"
+        ],
+        [
+            "y la cuerda del pes",
+            "cuezo"
+        ]
+    ],
+    "bpm": 80
+}

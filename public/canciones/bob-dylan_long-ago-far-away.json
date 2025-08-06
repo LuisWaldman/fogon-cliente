@@ -1,0 +1,51 @@
+{
+    "cancion": "Long-Ago-Far-Away",
+    "banda": "bob-dylan",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "preach of peace and brotherhood,/nLong a"
+        ],
+        [
+            "go, far aw",
+            "ay/n"
+        ],
+        [
+            "Those things don't h",
+            "appen no",
+            "wadays/nTo see the "
+        ],
+        [
+            "lynchin' of his s",
+            "on."
+        ]
+    ],
+    "bpm": 80
+}

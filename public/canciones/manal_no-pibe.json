@@ -1,0 +1,51 @@
+{
+    "cancion": "No-pibe",
+    "banda": "manal",
+    "escala": "C7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C7",
+                    "F7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "F7",
+                    "C7/9"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "No hay que tener un auto/nNo, no, n"
+        ],
+        [
+            "o, no pibe/npara que alg"
+        ],
+        [
+            "uien te pueda amar/nporque as"
+        ],
+        [
+            " solo tendrás/n"
+        ],
+        [
+            "un negocio m",
+            "s"
+        ]
+    ],
+    "bpm": 80
+}

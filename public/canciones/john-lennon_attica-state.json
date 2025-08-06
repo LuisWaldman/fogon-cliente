@@ -1,0 +1,53 @@
+{
+    "cancion": "Attica-State",
+    "banda": "john-lennon",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "E",
+                    "G",
+                    "A",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "What a waste of human power/n"
+        ],
+        [
+            "Attica state, A",
+            "ttica state/n"
+        ],
+        [
+            "we're all mates with A",
+            "ttica state./n"
+        ],
+        [
+            "Attica, Att",
+            "ica, Att",
+            "ica state."
+        ]
+    ],
+    "bpm": 80
+}

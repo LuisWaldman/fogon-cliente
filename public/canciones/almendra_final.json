@@ -1,0 +1,106 @@
+{
+    "cancion": "Final",
+    "banda": "almendra",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "F#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "C",
+                    "E",
+                    "F#m",
+                    "G#m",
+                    "A",
+                    "B",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "Brillos, plantas vengan h",
+            "acia mi/n"
+        ],
+        [
+            "yo también ",
+            "me do",
+            "rmí detr",
+            "ás/nde la "
+        ],
+        [
+            "gran ciu",
+            "dad, ve",
+            "stido de gri",
+            "s/n"
+        ],
+        [
+            "Y dejé mis zapatos para un ",
+            "arlequín/n"
+        ],
+        [
+            "que una vez s",
+            "e llamó",
+            " Ferm",
+            "n/ny fue "
+        ],
+        [
+            "piel al f",
+            "in, y fue pi",
+            "el al fin/nde la gran ciudad, y hoy hab"
+        ],
+        [
+            "rá fun",
+            "ción/n"
+        ],
+        [
+            "para ver a un arlequín bailando ",
+            "sobre el sol/n"
+        ],
+        [
+            "sobre el sol, s",
+            "obre el",
+            " sol",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

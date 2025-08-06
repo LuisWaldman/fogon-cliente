@@ -1,0 +1,61 @@
+{
+    "cancion": "Dehra-Dun",
+    "banda": "george-harrison",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "C",
+                    "G",
+                    "A",
+                    "C",
+                    "G",
+                    "E",
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "dehra dehra dun, dehra dun dun               /ndehra dehra d"
+        ],
+        [
+            "un, dehra dun dun/ndehra dehra d"
+        ],
+        [
+            "un/n"
+        ],
+        [
+            "many roads can ta",
+            "ke you there, ma",
+            "ny different way",
+            "s/none direction ta"
+        ],
+        [
+            "kes you years, ano",
+            "ther takes you ",
+            "days",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

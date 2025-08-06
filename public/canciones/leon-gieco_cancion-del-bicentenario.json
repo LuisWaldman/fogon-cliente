@@ -1,0 +1,62 @@
+{
+    "cancion": "cancion-del-bicentenario",
+    "banda": "leon-gieco",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D7",
+                    "G",
+                    "D",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "van...",
+            " dos siglos de ",
+            "sombra y l",
+            "uz./nNac"
+        ],
+        [
+            "ión..",
+            ". de un destino a c",
+            "ara o cru",
+            "z./nY v"
+        ],
+        [
+            "amos... ",
+            "hechos y des",
+            "echos,/nblanco, gris o "
+        ],
+        [
+            "negro./nDos siglos que "
+        ],
+        [
+            "van, van, van..."
+        ]
+    ],
+    "bpm": 80
+}

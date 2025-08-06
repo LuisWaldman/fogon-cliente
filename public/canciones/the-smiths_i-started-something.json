@@ -1,0 +1,69 @@
+{
+    "cancion": "i-started-something",
+    "banda": "the-smiths",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "C",
+                    "D",
+                    "Em",
+                    "Bm",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "  Th",
+            "e lanes were silent, there was not",
+            "hing no-one/nN"
+        ],
+        [
+            "othing around for mi",
+            "les",
+            "/nI "
+        ],
+        [
+            "danced a friendly venture with a h",
+            "ard-faced, 3-",
+            "word gesture/nI started something, and forced you to a zone"
+        ],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

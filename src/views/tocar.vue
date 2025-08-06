@@ -36,13 +36,6 @@ vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
 vista.value.proximosAcordes =
   localStorage.getItem('proximosAcordes') == 'true' ? true : false
 
-const urlParams = new URLSearchParams(window.location.search)
-const cancion = urlParams.get('cancion')
-if (cancion) {
-  console.log('cancion', cancion)
-  appStore.aplicacion.SetCancion(cancion)
-}
-
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
   localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')

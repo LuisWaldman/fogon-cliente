@@ -1,0 +1,45 @@
+{
+    "cancion": "el-albertio",
+    "banda": "parra-violeta",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Yo no sé por qué mi Dios/nle "
+        ],
+        [
+            "regala con largueza/nsomb"
+        ],
+        [
+            "rero con tanta cinta/na qui"
+        ],
+        [
+            "en no tiene cabeza."
+        ]
+    ],
+    "bpm": 80
+}

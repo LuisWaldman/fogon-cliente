@@ -1,0 +1,91 @@
+{
+    "cancion": "pis-y-caca",
+    "banda": "la-renga",
+    "escala": "E5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E5",
+                    "B5",
+                    "B5",
+                    "Bb5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Mermelada en el babero,/n"
+        ],
+        [
+            "suena el timbre del recreo,/n"
+        ],
+        [
+            "ya no",
+            " juega",
+            " mas ",
+            "al poliladron./n"
+        ],
+        [
+            "Ya se paso de calendario,/n"
+        ],
+        [
+            "dice que guarda en el armario,/n"
+        ],
+        [
+            "el tr",
+            "ompo, ",
+            "el ac",
+            "erito, el Platero y yo./n"
+        ],
+        [
+            "Me di",
+            "ce no, yo no estoy en la pavada,/n"
+        ],
+        [
+            "eso d",
+            "el rockanrol no conduce a nada,/n"
+        ],
+        [
+            "el es un tipo centrado/n"
+        ],
+        [
+            "quien lo veria,/n"
+        ],
+        [
+            "para ",
+            "mi qu",
+            "e se trago de golpe toda la vitina."
+        ]
+    ],
+    "bpm": 80
+}

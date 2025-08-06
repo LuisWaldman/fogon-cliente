@@ -1,0 +1,49 @@
+{
+    "cancion": "I-Do",
+    "banda": "paul-mccartney",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "D",
+                    "G",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Days go by so qui",
+            "ckly, when",
+            " your having fun",
+            "/n"
+        ],
+        [
+            "Life is never e",
+            "asy, even in",
+            " the sun",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

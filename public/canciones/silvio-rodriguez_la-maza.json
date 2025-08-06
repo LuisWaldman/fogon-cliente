@@ -1,0 +1,47 @@
+{
+    "cancion": "la-maza",
+    "banda": "silvio-rodriguez",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "E/G#",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D/F#",
+                    "F7",
+                    "C/E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Si no creyera en la lo",
+            "cura/n"
+        ],
+        [
+            "de la garganta del sin",
+            "sonte/n"
+        ],
+        [
+            "si no creyera que en el m",
+            "onte"
+        ]
+    ],
+    "bpm": 80
+}

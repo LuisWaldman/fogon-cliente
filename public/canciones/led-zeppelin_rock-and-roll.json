@@ -1,0 +1,47 @@
+{
+    "cancion": "rock-and-roll",
+    "banda": "led-zeppelin",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "A",
+                    "E",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "he riff names coorespond to the chord names of a twelve bar blues in A.  Since/nTh"
+        ],
+        [
+            "e verse ta",
+            "b also fol",
+            "low the ch",
+            "ords of a twelve bar blues like this."
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,51 @@
+{
+    "cancion": "los-70-en-un-sueno",
+    "banda": "los-nocheros",
+    "escala": "B",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B",
+                    "C#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "B",
+                    "F#7",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "No le busque a este sueño/n"
+        ],
+        [
+            "Respuesta o raz",
+            "n/n"
+        ],
+        [
+            "Que el setenta está de fiest",
+            "a/n"
+        ],
+        [
+            "Quédese a nuestra reuni",
+            "n."
+        ]
+    ],
+    "bpm": 80
+}

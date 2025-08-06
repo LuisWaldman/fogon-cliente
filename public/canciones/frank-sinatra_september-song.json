@@ -1,0 +1,110 @@
+{
+    "cancion": "September-Song",
+    "banda": "frank-sinatra",
+    "escala": "Ab",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Ab",
+                    "C#",
+                    "C#m7",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Fm",
+                    "Bb7",
+                    "Bbm7",
+                    "Eb7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Fm",
+                    "Bb",
+                    "Bbm7",
+                    "Eb7",
+                    "Ab",
+                    "C#",
+                    "C#m7",
+                    "Bbm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C#dim",
+                    "Ab",
+                    "C#",
+                    "C#m7",
+                    "Ab",
+                    "Bb",
+                    "C#",
+                    "Ab"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "But it's a lo",
+            "ng long while, from",
+            "    May to December",
+            ". ",
+            "/nAnd the days grow s"
+        ],
+        [
+            "hort, wh",
+            "en you rea",
+            "ch Septemb",
+            "er. /nWhen the Autumn w"
+        ],
+        [
+            "eather, tu",
+            "rns the leaves to fla",
+            "me. ",
+            "/nAnd I haven't got"
+        ],
+        [
+            " time",
+            " for the w",
+            "aiting gam",
+            "e. /nOh the d"
+        ],
+        [
+            "ays dwindle down, to p",
+            "recious few. /nSep"
+        ],
+        [
+            "tember, No",
+            "vember. ",
+            "/nAnd these few "
+        ],
+        [
+            "precious days, I",
+            "'d         spend with you.",
+            " /nThese golden d"
+        ],
+        [
+            "ays I'd sp",
+            "end with you",
+            "."
+        ]
+    ],
+    "bpm": 80
+}

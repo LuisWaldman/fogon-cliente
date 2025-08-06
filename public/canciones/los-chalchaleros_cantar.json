@@ -1,0 +1,49 @@
+{
+    "cancion": "Cantar",
+    "banda": "los-chalchaleros",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "to por no llorar/nya que "
+        ],
+        [
+            "mi dolor es ta",
+            "nto/nque si a ll"
+        ],
+        [
+            "orar me pusie",
+            "ra/nllenar"
+        ],
+        [
+            "ía mares de ll",
+            "anto."
+        ]
+    ],
+    "bpm": 80
+}

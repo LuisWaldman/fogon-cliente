@@ -1,0 +1,112 @@
+{
+    "cancion": "Poema-de-Amor",
+    "banda": "joan-manuel-serrat",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "G#7",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B7",
+                    "E",
+                    "G#7",
+                    "C#m-B-A",
+                    "B7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D#7",
+                    "G#7",
+                    "E",
+                    "B7",
+                    "A",
+                    "E",
+                    "B7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#7",
+                    "C#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "Mi fruto, mi flor",
+            ", mi historia de amor, mis caricia",
+            "s /nMi humilde can"
+        ],
+        [
+            "dil, mi lluvia de abril, mi avari",
+            "cia /nMi trozo de p"
+        ],
+        [
+            "an, mi viejo refrán, mi po",
+            "eta /nLa"
+        ],
+        [
+            " fe que perd",
+            ", mi camino ",
+            "y mi carret",
+            "a /n"
+        ],
+        [
+            "Mi dulce place",
+            "r, mi sueño de ayer",
+            ", mi equipaje",
+            " /nMi tibio rin"
+        ],
+        [
+            "cón, mi mejor can",
+            "ción, mi pai",
+            "saje /nMi manant"
+        ],
+        [
+            "ial, mi cañaveral, mi riq",
+            "ueza /nMi leña, mi h"
+        ],
+        [
+            "ogar, mi techo, mi lar, mi nobl",
+            "eza /nMi fuente, mi s"
+        ],
+        [
+            "ed, mi barco, mi red y la aren",
+            "a /ndon"
+        ],
+        [
+            "de te sent",
+            "í /ndonde te esc"
+        ],
+        [
+            "ribí mi po",
+            "ema"
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,55 @@
+{
+    "cancion": "El-Muelle-De-San-Blas",
+    "banda": "mana",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A7",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "la, Sola en el ",
+            "olvido/n        So"
+        ],
+        [
+            "la, Sola con su",
+            " espíritu/n        So"
+        ],
+        [
+            "la, Sola con el",
+            " Sol y el Mar/n        So"
+        ],
+        [
+            "la.....en",
+            " el muelle de San Bl",
+            "as"
+        ]
+    ],
+    "bpm": 80
+}

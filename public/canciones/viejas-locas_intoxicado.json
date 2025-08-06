@@ -1,0 +1,57 @@
+{
+    "cancion": "Intoxicado",
+    "banda": "viejas-locas",
+    "escala": "C5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5",
+                    "A5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "     ",
+            " a nadie i",
+            "mporta si yo",
+            " cuido mi flor/n"
+        ],
+        [
+            "     ",
+            "la riego Un ",
+            "poco y la lle",
+            "vo al sol/nintoxicado es"
+        ],
+        [
+            "toy y por las calles v",
+            "oy---¡/nintoxicado es"
+        ],
+        [
+            "tas y por las calles v",
+            "as-----¡"
+        ]
+    ],
+    "bpm": 80
+}

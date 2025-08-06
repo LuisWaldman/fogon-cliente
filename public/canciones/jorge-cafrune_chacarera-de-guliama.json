@@ -1,0 +1,45 @@
+{
+    "cancion": "Chacarera-de-Guliama",
+    "banda": "jorge-cafrune",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "siera estar en Gualiama,/n"
+        ],
+        [
+            "con el sombrero en los oj",
+            "os,/nsoñando"
+        ],
+        [
+            " con los bagual",
+            "es."
+        ]
+    ],
+    "bpm": 80
+}

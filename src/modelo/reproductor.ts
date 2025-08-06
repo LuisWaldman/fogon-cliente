@@ -1,8 +1,9 @@
-import { HelperObtenerCancionURL } from '../helpers/HelperObtenerCancionURL'
 import { useAppStore } from '../stores/appStore'
-import { Acordes } from './acordes'
-import { Cancion } from './cancion'
-import { Letra } from './letra'
+import { Acordes } from './cancion/acordes'
+import { Cancion } from './cancion/cancion'
+import { HelperGetCancion } from './cancion/HelperGetCancion'
+import { Letra } from './cancion/letra'
+import type { OrigenCancion } from './cancion/origencancion'
 import { Reloj } from './reloj'
 
 export class Reproductor {
@@ -11,21 +12,19 @@ export class Reproductor {
   public get Cancion() {
     return this.cancion
   }
-  async SetCancion(cancionstr: string) {
-    await this.CargarCancion(cancionstr)
+  async SetCancion(cancion: OrigenCancion) {
+    this.CargarCancion(cancion)
   }
 
-  protected async CargarCancion(cancionstr: string) {
-    localStorage.setItem('cancion_actual', cancionstr)
-    const appStore = useAppStore()
-    const helperArchivo = new HelperObtenerCancionURL('/canciones')
-    helperArchivo
-      .GetCancion(cancionstr)
+  protected async CargarCancion(cancion: OrigenCancion) {
+    return HelperGetCancion.Get(cancion)
       .then((cancion) => {
+        const appStore = useAppStore()
         appStore.cancion = cancion
       })
       .catch((error) => {
         console.error('Error al cargar la canción:', error)
+        const appStore = useAppStore()
         appStore.cancion = new Cancion(
           'Error al cargar canción',
           'sin banda',

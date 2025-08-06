@@ -1,0 +1,101 @@
+{
+    "cancion": "Carpas-de-salta",
+    "banda": "los-nocheros",
+    "escala": "F#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "E7",
+                    "D",
+                    "C#7",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "G",
+                    "C#7",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "C#7",
+                    "F#m",
+                    "C#7",
+                    "F#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "Carpas de Salt",
+            "a, la",
+            "s vuelvo a recordar",
+            ",/n"
+        ],
+        [
+            "bandon",
+            "eón y",
+            " guita",
+            "rra, zambas para bailar",
+            ".  (siempre repetir ultima línea)/n"
+        ],
+        [
+            "Chicha y al",
+            "oja, vi",
+            "nito pa chupa",
+            "r,/n"
+        ],
+        [
+            "ramas de albahaca v",
+            "erde, ol",
+            "or a Carnaval",
+            "./n"
+        ],
+        [
+            "Carpas de La Sil",
+            "leta, Campo Quija",
+            "no y La Merced.",
+            "",
+            "/n"
+        ],
+        [
+            "Toda Salta de f",
+            "iesta ¿quién pudiera vol",
+            "ver?"
+        ]
+    ],
+    "bpm": 80
+}

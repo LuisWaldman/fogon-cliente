@@ -1,0 +1,43 @@
+{
+    "cancion": "Cosmic-Empire",
+    "banda": "george-harrison",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "F#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "It beads lig",
+            "ht there/n"
+        ],
+        [
+            "It shines bri",
+            "ght there",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

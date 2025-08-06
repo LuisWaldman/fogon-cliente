@@ -1,6 +1,6 @@
-import { Cancion } from '../modelo/cancion'
-import { Letra } from '../modelo/letra'
-import { Acordes, Parte } from '../modelo/acordes'
+import { Cancion } from '../modelo/cancion/cancion'
+import { Letra } from '../modelo/cancion/letra'
+import { Acordes, Parte } from '../modelo/cancion/acordes'
 
 export class HelperObtenerCancionURL {
   private url: string

@@ -1,0 +1,57 @@
+{
+    "cancion": "Wicked-Messenger",
+    "banda": "bob-dylan",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "  :   .   .   .     :   .   .   .     :   .   .   .    ",
+            " :/n  "
+        ],
+        [
+            ":   .   .   .     :   .   .   .     :   .   .   .      :/n"
+        ],
+        [
+            "There was a wicked messenger/nFrom Eli he did "
+        ],
+        [
+            "come,/nWith a "
+        ],
+        [
+            "mind that multiplied the smallest matter./nHe answered with his "
+        ],
+        [
+            "thumb,/nFor his "
+        ],
+        [
+            "tongue it could not speak, but only flatter."
+        ]
+    ],
+    "bpm": 80
+}

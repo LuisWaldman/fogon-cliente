@@ -1,0 +1,58 @@
+{
+    "cancion": "margaritas",
+    "banda": "babasonicos",
+    "escala": "E",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "F#",
+                    "E",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "F#",
+                    "E",
+                    "E",
+                    "G",
+                    "A",
+                    "C",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Te ",
+            "inte",
+            "rna",
+            "ste",
+            " en",
+            " el ",
+            "bosque me volviste a internar /n"
+        ],
+        [
+            "Mar",
+            "gar",
+            "itas po",
+            "r siempre, margaritas por siempre. /n"
+        ],
+        [
+            "Yo conozco un señor que tiene miles de esposas, "
+        ]
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "cancion": "Fun-In-Acapulco",
+    "banda": "elvis-presley",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Dm7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "E7",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "Fm",
+                    "C",
+                    "D7",
+                    "Am",
+                    "D7",
+                    "Dm7",
+                    "G7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Acap",
+            "ulco, ",
+            "sleeping in ",
+            "the bay",
+            "",
+            "",
+            "",
+            "/n    "
+        ],
+        [
+            "Acap",
+            "ulco, ",
+            "wake up and gre",
+            "et the day",
+            "",
+            "",
+            "/n    "
+        ],
+        [
+            "Time to t",
+            "ell the guitars and sl",
+            "eepy-eyed stars/n    To "
+        ],
+        [
+            "be on their way/n    Hey now come "
+        ],
+        [
+            "on,  ",
+            "  you old sleepy he",
+            "ad/n    See the sky turning "
+        ],
+        [
+            "red,    and you're still in bed/n    It's fun in Acapulco"
+        ],
+        []
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,61 @@
+{
+    "cancion": "tonada-para-dos-poemas-de-ruben-martinez-villena",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "Am",
+                    "Em",
+                    "Dm",
+                    "C",
+                    "Am",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Tengo el impulso torbo y el anh",
+            "elo sagrado,/n"
+        ],
+        [
+            "de atisbar en la vida mis ensueños ",
+            "de muerto,/n"
+        ],
+        [
+            "oh¡ la pupila in",
+            "somne y el p",
+            "árpado cer",
+            "rado,/n"
+        ],
+        [
+            "ya dormiré ma",
+            "ñana con el ",
+            "párpado a",
+            "bierto."
+        ]
+    ],
+    "bpm": 80
+}

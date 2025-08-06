@@ -1,0 +1,60 @@
+{
+    "cancion": "fragmento",
+    "banda": "silvio-rodriguez",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "D7+",
+                    "Em",
+                    "D7+",
+                    "Em",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "D7+",
+                    "Em",
+                    "F#m",
+                    "G",
+                    "F#m",
+                    "Em",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "A  luna acostumbra A",
+            " Abrazar A  noche",
+            "/nQué bendita ciencia se"
+        ],
+        [
+            " aparece",
+            "/nPero la escarcha siempre me es"
+        ],
+        [
+            "cucha/nQue la pena y el tiempo la curan de repente."
+        ],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

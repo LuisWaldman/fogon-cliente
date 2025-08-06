@@ -1,0 +1,54 @@
+{
+    "cancion": "La-Pericona",
+    "banda": "victor-jara",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "D",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "C",
+                    "D",
+                    "C",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "La pericona dice",
+            "/nCon mucha pen"
+        ],
+        [
+            "a/nQue la vida es más dur"
+        ],
+        [
+            "a/nQue una cadena"
+        ],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

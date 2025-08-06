@@ -1,0 +1,93 @@
+{
+    "cancion": "versos-sencillos",
+    "banda": "pablo-milanes",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "E",
+                    "A",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "A7",
+                    "G",
+                    "D",
+                    "E",
+                    "A",
+                    "E",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#",
+                    "Bm",
+                    "E",
+                    "A",
+                    "G",
+                    "D",
+                    "A7",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "    ",
+            "   (V",
+            "-4) ",
+            "   B",
+            "m ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "mi verso es un monte, ",
+            "y es/n"
+        ],
+        [
+            "un abanico de p",
+            "lumas./n"
+        ],
+        [
+            "y de un carmín ",
+            "encendido./n"
+        ],
+        [
+            "Mi verso es un ciervo ",
+            "herido/nque "
+        ],
+        [
+            "busca en el monte",
+            " amparo.../n"
+        ],
+        [
+            "que busaca e",
+            "n el monte ampa",
+            "ro",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

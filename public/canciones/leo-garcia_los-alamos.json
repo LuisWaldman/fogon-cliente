@@ -1,0 +1,63 @@
+{
+    "cancion": "los-alamos",
+    "banda": "leo-garcia",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C/G",
+                    "Am",
+                    "C",
+                    "Am",
+                    "D7",
+                    "C/G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Hice un mila",
+            "gro,/nNada incr"
+        ],
+        [
+            "eíble/nEs s"
+        ],
+        [
+            "eptiembre/nY el verde me a"
+        ],
+        [
+            "lcanza/nHice un mila"
+        ],
+        [
+            "gro,/nUn amor i"
+        ],
+        [
+            "mposible/nEl verde "
+        ],
+        [
+            "avanza/nPara desper"
+        ],
+        [
+            "tarme."
+        ]
+    ],
+    "bpm": 80
+}

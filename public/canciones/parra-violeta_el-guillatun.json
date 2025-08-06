@@ -1,0 +1,78 @@
+{
+    "cancion": "el-Guillatun",
+    "banda": "parra-violeta",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Milache esta triste ",
+            "con el tempo",
+            "ral",
+            "/n"
+        ],
+        [
+            "los trigos se acuest",
+            "an en ese barrial",
+            "",
+            "/n"
+        ],
+        [
+            "los indios resuelven",
+            " despues de ll",
+            "orar",
+            "/n"
+        ],
+        [
+            "hablar con isidro c",
+            "on dios y sa",
+            "n juan",
+            "/n"
+        ],
+        [
+            "con dios y san juan, co",
+            "n dios y san ju",
+            "an",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

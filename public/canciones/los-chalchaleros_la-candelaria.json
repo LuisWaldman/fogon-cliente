@@ -1,0 +1,83 @@
+{
+    "cancion": "La-Candelaria",
+    "banda": "los-chalchaleros",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "E7",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "B7",
+                    "E7",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "B7",
+                    "E7",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Nació esta z",
+            "amba en la t",
+            "arde,/n"
+        ],
+        [
+            "cerrando ya l",
+            "a oraci",
+            "n,/n"
+        ],
+        [
+            "cuando la luna llor",
+            "aba,/nastillas de "
+        ],
+        [
+            "plata, la muerte del s",
+            "ol./n"
+        ],
+        [
+            "Cuando madure la noc",
+            "he,/n"
+        ],
+        [
+            "zumo de mi soled",
+            "ad,/n"
+        ],
+        [
+            "se ha de alegrar el cam",
+            "ino,/nzambita no"
+        ],
+        [
+            "chera la candelar",
+            "ia."
+        ]
+    ],
+    "bpm": 80
+}

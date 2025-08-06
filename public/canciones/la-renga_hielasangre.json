@@ -1,0 +1,51 @@
+{
+    "cancion": "hielasangre",
+    "banda": "la-renga",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "F#",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A5",
+                    "E",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Un paso atrás, un paso atrás...    no me ",
+            "toques/n"
+        ],
+        [
+            "   Hielasangre en el infierno, hielasangre en el infierno       * En los F#, tocá este riff:/n"
+        ],
+        [
+            "   Salva el daño que provocas, salva el dueño de tu sombra",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

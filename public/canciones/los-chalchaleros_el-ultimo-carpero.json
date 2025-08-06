@@ -1,0 +1,96 @@
+{
+    "cancion": "el-ultimo-carpero",
+    "banda": "los-chalchaleros",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "G",
+                    "F",
+                    "C",
+                    "G7",
+                    "C",
+                    "E7",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "uro golpe de alba",
+            "haca/nmi copla se enardec"
+        ],
+        [
+            "a,/nlo d"
+        ],
+        [
+            "efiende al carnava",
+            "l/ncomo si fu"
+        ],
+        [
+            "era su vi",
+            "da./nlo d"
+        ],
+        [
+            "efiende al carnava",
+            "l/ncomo si fu"
+        ],
+        [
+            "era su vida",
+            "./nNo se c"
+        ],
+        [
+            "allen los canto",
+            "res,/nno se du"
+        ],
+        [
+            "erman musique",
+            "ros,/nque est"
+        ],
+        [
+            "a zamba tiene amo",
+            "res/nde los verdader"
+        ],
+        [
+            "os,/nque est"
+        ],
+        [
+            "a zamba tiene amo",
+            "res/ncon el último carpe"
+        ],
+        [
+            "ro."
+        ]
+    ],
+    "bpm": 80
+}

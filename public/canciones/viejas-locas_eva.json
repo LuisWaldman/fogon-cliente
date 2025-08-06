@@ -1,0 +1,89 @@
+{
+    "cancion": "Eva",
+    "banda": "viejas-locas",
+    "escala": "A5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A5",
+                    "D5",
+                    "A5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A5",
+                    "D5",
+                    "A5",
+                    "D5",
+                    "A5",
+                    "B5",
+                    "E5",
+                    "A5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "eva n",
+            "o te va",
+            "yas con adan",
+            "/n"
+        ],
+        [
+            "eva m",
+            "i serpie",
+            "nte vale mas",
+            "/n"
+        ],
+        [
+            "eva h",
+            "ay mas man",
+            "zanas por aqui",
+            "/n"
+        ],
+        [
+            "eva h",
+            "oy te voy a",
+            " hacer feliz",
+            "/n"
+        ],
+        [
+            "y del paraiso ",
+            "vamos a escapar/n"
+        ],
+        [
+            "el flaco de barba n",
+            "os quiere encerrar/n"
+        ],
+        [
+            "conozco la historia lo van a colgar/nsacate la hoja te voy a garchar"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80
+}

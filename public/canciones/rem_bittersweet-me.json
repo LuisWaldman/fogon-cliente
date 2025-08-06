@@ -1,0 +1,70 @@
+{
+    "cancion": "bittersweet-me",
+    "banda": "rem",
+    "escala": "Dsus4",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dsus4",
+                    "Em",
+                    "Dsus4",
+                    "Em",
+                    "F",
+                    "F/A",
+                    "Dm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "F/A",
+                    "Dm",
+                    "G",
+                    "A5",
+                    "G5",
+                    "Dm",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "1 a 2 a 3 a 4 a",
+            "  1 a 2 a 3 a 4 a  1 ",
+            "a 2 a 3 a 4 a  ",
+            "1 a 2 a 3 a 4 a/n "
+        ],
+        [
+            "1 a 2 a 3 a 4 a  1",
+            " a 2 a 3 a 4 a  1 ",
+            "a 2 a 3 a 4 a  1 a",
+            " 2 a 3 a 4 a/n "
+        ],
+        [
+            "1 a 2 a 3 a 4 a  1",
+            " a 2 a 3 a 4 a  1 ",
+            "a 2 a 3 a 4 a  1 a",
+            " 2 a 3 a 4 a/n "
+        ],
+        [
+            "1 a 2 a 3",
+            " a 4 a  1 a 2 a 3 a 4 a  /n "
+        ],
+        [
+            "1 a 2 a 3 a 4 a  1",
+            " a 2 a 3 a 4 a  "
+        ]
+    ]
+}

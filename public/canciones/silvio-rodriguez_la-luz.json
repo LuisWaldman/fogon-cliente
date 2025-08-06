@@ -1,0 +1,51 @@
+{
+    "cancion": "la-luz",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Llegó la luz, ",
+            "la transparencia, /n"
+        ],
+        [
+            "llegó la luz ",
+            "de la impaciencia, /n"
+        ],
+        [
+            "llegó la luz ",
+            "con alegría, /n"
+        ],
+        [
+            "llegó la luz ",
+            "del nuevo día. "
+        ]
+    ],
+    "bpm": 80
+}

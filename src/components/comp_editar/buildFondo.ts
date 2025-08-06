@@ -1,4 +1,4 @@
-import type { Cancion } from '../../modelo/cancion'
+import type { Cancion } from '../../modelo/cancion/cancion'
 import type { HtmlAcorde } from './htmlAcorde'
 
 export abstract class BuildFondo {

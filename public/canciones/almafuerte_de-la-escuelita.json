@@ -1,0 +1,75 @@
+{
+    "cancion": "De-la-escuelita",
+    "banda": "almafuerte",
+    "escala": "C5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C5",
+                    "B5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#5",
+                    "E5",
+                    "C5",
+                    "C5",
+                    "B5",
+                    "A5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "A5",
+                    "A",
+                    "E5",
+                    "A",
+                    "E5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "trast",
+            "e)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Brillan para conversarme/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

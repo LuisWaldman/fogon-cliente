@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Cancion } from '../../modelo/cancion'
-import { Parte } from '../../modelo/acordes'
+import { Cancion } from '../../modelo/cancion/cancion'
+import { Parte } from '../../modelo/cancion/acordes'
 import { editarAcordesHelper } from './editarAcordesHelper'
 import { EditarMusicaHelper } from './editarMusicaHelper'
 

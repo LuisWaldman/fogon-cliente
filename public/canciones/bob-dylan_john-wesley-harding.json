@@ -1,0 +1,69 @@
+{
+    "cancion": "John-Wesley-Harding",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Dm",
+                    "F",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "John Wesley Harding/nWas a "
+        ],
+        [
+            "friend t",
+            "o the po",
+            "or,/nHe "
+        ],
+        [
+            "trav'led with a gun in ev'ry h",
+            "and.",
+            "",
+            "/n"
+        ],
+        [
+            "All along this countryside,/nHe "
+        ],
+        [
+            "opened m",
+            "any a do",
+            "or,/nBut he was "
+        ],
+        [
+            "never known/nTo "
+        ],
+        [
+            "hurt an h",
+            "onest ma",
+            "n."
+        ]
+    ],
+    "bpm": 80
+}

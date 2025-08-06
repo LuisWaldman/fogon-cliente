@@ -1,0 +1,45 @@
+{
+    "cancion": "shes-on-fire",
+    "banda": "aerosmith",
+    "escala": "C5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C5",
+                    "A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Hot to trot/n "
+        ],
+        [
+            "She's a bit insane/n "
+        ],
+        [
+            "Little bit of pleasure/n "
+        ],
+        [
+            "With a little bit of pain"
+        ]
+    ],
+    "bpm": 80
+}

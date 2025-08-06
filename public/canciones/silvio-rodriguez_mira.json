@@ -1,0 +1,75 @@
+{
+    "cancion": "mira",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "G",
+                    "A",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m",
+                    "G",
+                    "E/G#",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "Bm/A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "C#7",
+                    "Em",
+                    "Bm",
+                    "C",
+                    "F#",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Mira, e",
+            "spera que voy a",
+            " nacer de",
+            " nuevo,/n"
+        ],
+        [
+            "voy a elegir la ",
+            "tela de mi",
+            " cuna/nen la "
+        ],
+        [
+            "nueva ",
+            "lati   ",
+            "tud del",
+            " uni   verso,/nen los fósiles y el fuego primitivo"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80
+}

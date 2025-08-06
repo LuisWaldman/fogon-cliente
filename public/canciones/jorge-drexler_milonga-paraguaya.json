@@ -1,0 +1,51 @@
+{
+    "cancion": "Milonga-Paraguaya",
+    "banda": "jorge-drexler",
+    "escala": "Am7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am7",
+                    "D9",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb7/9",
+                    "Am7",
+                    "Am7",
+                    "D9"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "¿Que me esta",
+            "rá queri",
+            "endo d",
+            "ecir/nla "
+        ],
+        [
+            "noche,/n"
+        ],
+        [
+            "la noche,/n"
+        ],
+        [
+            "que no lo sé?"
+        ]
+    ],
+    "bpm": 80
+}

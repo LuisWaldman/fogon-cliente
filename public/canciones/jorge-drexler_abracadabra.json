@@ -1,0 +1,83 @@
+{
+    "cancion": "Abracadabra",
+    "banda": "jorge-drexler",
+    "escala": "C#dim",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#dim",
+                    "D9",
+                    "D#9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D9",
+                    "D9",
+                    "D#9",
+                    "D9",
+                    "G7",
+                    "C6"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#9",
+                    "C6",
+                    "C7",
+                    "F",
+                    "Fm",
+                    "Em9",
+                    "D9",
+                    "G7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "abra sobre pala",
+            "bra",
+            "",
+            "/n"
+        ],
+        [
+            "Con un deseo preciso/nQ"
+        ],
+        [
+            "ue su",
+            "rta efecto el hechizo de",
+            " nuestros abracadabras .",
+            "",
+            "",
+            "/n¿"
+        ],
+        [
+            "Y a dónde van las canc",
+            "iones?",
+            "/nQue soltamos en el vien"
+        ],
+        [
+            "to?   A7/9  A7/nCon "
+        ],
+        [
+            "esta voz que bien/nQuisiera darle la v"
+        ],
+        [
+            "uelta al sol"
+        ]
+    ],
+    "bpm": 80
+}

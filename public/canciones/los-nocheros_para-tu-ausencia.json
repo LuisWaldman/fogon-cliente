@@ -1,0 +1,49 @@
+{
+    "cancion": "Para-tu-ausencia",
+    "banda": "los-nocheros",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "F#",
+                    "G",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "  Para las tardes grises,",
+            " habrá un ocaso limpio/n"
+        ],
+        [
+            "  Para una luna triste, ",
+            "un estrellado río/n"
+        ],
+        [
+            "  Pero al llegar su ausencia,",
+            " me quedo si",
+            "n destino"
+        ]
+    ],
+    "bpm": 80
+}

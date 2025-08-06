@@ -1,0 +1,58 @@
+{
+    "cancion": "basta-de-mi",
+    "banda": "leo-garcia",
+    "escala": "Bb",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bb",
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Qué pasaba qu",
+            "e no estabas?/n"
+        ],
+        [],
+        [
+            "Yo/nquiero d"
+        ],
+        [
+            "ormir con vos/nau"
+        ],
+        [
+            "nque ni a mi lado/nvos su"
+        ],
+        [
+            "eñes conmigo/nbasta, basta de mí"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80
+}

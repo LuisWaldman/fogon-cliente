@@ -1,0 +1,54 @@
+{
+    "cancion": "Viva-la-vida",
+    "banda": "palito-ortega",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "E7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "caré cariño por todas partes/nyo necesito tu am"
+        ],
+        [
+            "or/nserá todo diferente, podré cantarle al a"
+        ],
+        [
+            "mor/nViva la vid"
+        ],
+        [
+            "a, vida l",
+            "a vida",
+            ", vida ",
+            "la vida",
+            ", viva e",
+            "l amor",
+            ""
+        ]
+    ],
+    "bpm": 80
+}
