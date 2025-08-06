@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
@@ -31,7 +30,7 @@ function getImageStyle() {
 </script>
 <template>
   <router-link class="navbar-brand" to="/" style="color: inherit">
-    <div class="relative-container" >
+    <div class="relative-container">
       <div
         v-for="(user, idx) in appStore.usuariosSesion"
         :key="idx"
@@ -45,22 +44,22 @@ function getImageStyle() {
         />
       </div>
       <div class="div-imagen">
-      <img
-        :style="getImageStyle()"
-        :src="
-          appStore.estado === 'conectado'
-            ? '/img/conectado.png'
-            : appStore.estado === 'tocando'
-              ? '/img/tocando.png'
-              : appStore.estado === 'logueado'
-                ? '/img/logueado.png'
-                : appStore.estado === 'conectadoserver'
-                  ? '/img/conectado.png'
-                  : '/img/desconectado.png'
-        "
-        alt="Logo"
-        width="50"
-      />
+        <img
+          :style="getImageStyle()"
+          :src="
+            appStore.estado === 'conectado'
+              ? '/img/conectado.png'
+              : appStore.estado === 'tocando'
+                ? '/img/tocando.png'
+                : appStore.estado === 'logueado'
+                  ? '/img/logueado.png'
+                  : appStore.estado === 'conectadoserver'
+                    ? '/img/conectado.png'
+                    : '/img/desconectado.png'
+          "
+          alt="Logo"
+          width="50"
+        />
       </div>
       <div class="titulo-Fogon">Fogon</div>
     </div>
@@ -71,8 +70,6 @@ function getImageStyle() {
 .relative-container {
   position: relative;
   width: 100px;
-  
-
 }
 .profile-image {
   width: 30px;

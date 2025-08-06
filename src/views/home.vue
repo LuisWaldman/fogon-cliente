@@ -11,7 +11,7 @@ const appStore = useAppStore()
       Bienvenido al Fogon
     </h1>
     <span class="version"
-      >V. SINCRONIZADA (perfiles de usuario para tiempo real)</span
+      >V. SINCRONIZADA (nuevo reloj)</span
     >
 
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">

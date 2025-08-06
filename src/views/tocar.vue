@@ -10,7 +10,6 @@ import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import Partes from '../components/comp_tocar/Partes.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
-import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useRouter } from 'vue-router'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -81,7 +80,6 @@ function estiloVistaSecundaria() {
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
 const refEditSize = ref(false)
-const verRelojesRef = ref(false)
 function editarPantalla() {
   refEditSize.value = true
 }
@@ -92,8 +90,6 @@ function clickEditar() {
   appStore.editandocancion = appStore.cancion
   router.push('/editar')
 }
-
-
 
 function cerrareditarPantalla() {
   refEditSize.value = false
