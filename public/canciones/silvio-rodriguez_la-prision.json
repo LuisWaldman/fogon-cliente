@@ -1,0 +1,84 @@
+{
+    "cancion": "la-prision",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "D",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "La p",
+            "risió",
+            "n te",
+            "rmina,",
+            "/n"
+        ],
+        [
+            "la p",
+            "risi",
+            "n ma",
+            "lvada,",
+            "/n"
+        ],
+        [
+            "pero",
+            "   co",
+            "ntin",
+            "úa",
+            "/n"
+        ],
+        [
+            "la pr",
+            "isi",
+            "n de",
+            "l alma,",
+            "/n"
+        ],
+        [
+            "del a",
+            "lma."
+        ]
+    ],
+    "bpm": 80
+}

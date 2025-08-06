@@ -1,0 +1,53 @@
+{
+    "cancion": "corazon-clandestino",
+    "banda": "fito-paez",
+    "escala": "D6",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D6",
+                    "A9",
+                    "D6"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A9",
+                    "D6",
+                    "A9",
+                    "E/G#",
+                    "F#m7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "sti- ",
+            "no,/ncorazón clande"
+        ],
+        [
+            "sti- ",
+            "no,/ncorazón clande"
+        ],
+        [
+            "sti- ",
+            "no/nvas "
+        ],
+        [
+            "siempre al c",
+            "hoque."
+        ]
+    ],
+    "bpm": 80
+}

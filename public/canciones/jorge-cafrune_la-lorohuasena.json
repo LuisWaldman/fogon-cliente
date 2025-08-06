@@ -1,0 +1,51 @@
+{
+    "cancion": "la-lorohuasena",
+    "banda": "jorge-cafrune",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "E7",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Me ha mandao decir mamita/nque tengas muy"
+        ],
+        [
+            " güenos día",
+            "s/n"
+        ],
+        [
+            "que le mandés la gallin",
+            "a/nque le has roba"
+        ],
+        [
+            "o l'otro d",
+            "ía."
+        ]
+    ],
+    "bpm": 80
+}

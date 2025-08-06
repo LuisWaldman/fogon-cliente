@@ -1,0 +1,65 @@
+{
+    "cancion": "Cats-In-The-Well",
+    "banda": "bob-dylan",
+    "escala": "Bb",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bb",
+                    "Eb",
+                    "F7-10",
+                    "Bb7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Eb7",
+                    "F7-10",
+                    "Bb",
+                    "Gm",
+                    "Eb",
+                    "Bb",
+                    "Gm",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            ":   .   .   .     :",
+            "   .   .   .     : ",
+            "  .   .   ./nThe "
+        ],
+        [
+            "cat's in the well, the wolf is looking down./nThe "
+        ],
+        [
+            "cat's in the well, the wolf is looking down./nHe got his "
+        ],
+        [
+            "big bushy tail dragging all over the g",
+            "round./nThe "
+        ],
+        [
+            "cat's in the well and g",
+            "rief is showing its fa",
+            "ce/nThe "
+        ],
+        [
+            "world's being slaughtered and it's such a bloody disg",
+            "race."
+        ]
+    ],
+    "bpm": 80
+}

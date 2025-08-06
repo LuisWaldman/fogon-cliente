@@ -1,0 +1,42 @@
+{
+    "cancion": "la-vida-las-mismas-calles",
+    "banda": "la-renga",
+    "escala": "C5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C5",
+                    "D5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "n acá, acá, ac",
+            ", acá, acá, acá,/ny todo está ta"
+        ],
+        [
+            "n acá, acá, ac",
+            " ,acá, acá, acá/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

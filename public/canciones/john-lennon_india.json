@@ -1,0 +1,69 @@
+{
+    "cancion": "India",
+    "banda": "john-lennon",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "B7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "E",
+                    "C#m",
+                    "B7",
+                    "E",
+                    "A",
+                    "E",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "ndia, India,   ",
+            "take me to your heart                                 /nReveal your ancient mysteries to "
+        ],
+        [
+            "me /nI'm"
+        ],
+        [
+            " searchin' for an answer, but ",
+            "somewhere deep ins",
+            "ide                      /nI"
+        ],
+        [
+            " know I'll never find it here - it's already in my mi",
+            "nd/nI've got to "
+        ],
+        [
+            "follow my heart wherever it ta",
+            "kes me             /nI've got to "
+        ],
+        [
+            "follow my heart wherever it ca",
+            "lls to me            /nI've got to "
+        ],
+        [
+            "follow my heart and my heart is going h",
+            "ome"
+        ]
+    ],
+    "bpm": 80
+}

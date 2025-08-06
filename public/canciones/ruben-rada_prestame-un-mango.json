@@ -1,0 +1,69 @@
+{
+    "cancion": "Prestame-un-mango",
+    "banda": "ruben-rada",
+    "escala": "Cm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Cm",
+                    "Eb/Bb",
+                    "Ab7",
+                    "G7/9",
+                    "Cm",
+                    "Bbm7",
+                    "Eb7/9",
+                    "Ab7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Ddim7",
+                    "G7/9",
+                    "Eb/Bb",
+                    "Ab7",
+                    "G7/9",
+                    "Bbm7",
+                    "Eb7/9",
+                    "Ddim7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Mama m",
+            "ia, vieja, no",
+            " tengo un man",
+            "go/n"
+        ],
+        [
+            "no tengo un m",
+            "ango,",
+            "/n"
+        ],
+        [
+            "ah! dame un p",
+            "eso mama",
+            "/n  3"
+        ],
+        [
+            "======   -",
+            "-----  3==",
+            "====  6===",
+            "===  5--*-",
+            "--   -----",
+            "-"
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,55 @@
+{
+    "cancion": "Its-So-Hard",
+    "banda": "john-lennon",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E7",
+                    "A",
+                    "D",
+                    "B7",
+                    "E7",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "You gotta live, you gotta love, you gotta be somebody, you gotta shove/n"
+        ],
+        [
+            "But its so hard, its very hard, sometimes I ",
+            "feel like goin' d",
+            "own",
+            "/n"
+        ],
+        [
+            "But when it's good, it oh-so good, and when I hold you in my arms baby/n"
+        ],
+        [
+            "Sometimes I feel l",
+            "ike goin' down",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,39 @@
+{
+    "cancion": "Viva-La-Vida",
+    "banda": "lady-gaga",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "I u",
+            "sed",
+            " to r",
+            "ule the world"
+        ]
+    ],
+    "bpm": 80
+}

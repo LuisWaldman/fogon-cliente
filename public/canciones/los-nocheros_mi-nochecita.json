@@ -1,0 +1,91 @@
+{
+    "cancion": "Mi-nochecita",
+    "banda": "los-nocheros",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "E7",
+                    "Am",
+                    "F",
+                    "G7",
+                    "F",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "E7",
+                    "Am",
+                    "E7",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "IMPACIENTE YA A  NOCHE/nE RA POR E"
+        ],
+        [
+            "L VENTANA",
+            "L/nLE HABRAN CONTAC "
+        ],
+        [
+            " A S ESTD L",
+            "A S/nQU"
+        ],
+        [
+            "E ME A  HE VENIC  A LL",
+            "EVAR/n"
+        ],
+        [
+            "AY NOCHECI",
+            "TA , E ",
+            " NOCHE",
+            "/nNO TIENE D "
+        ],
+        [
+            "PROCHES , CON",
+            "EG O SE V",
+            "A/nTAN G  O TRA"
+        ],
+        [
+            "IGO ESTA Z",
+            "AMBA/nB  A"
+        ],
+        [
+            "CASO A  QUIERA BAIA",
+            " R/nA  "
+        ],
+        [
+            "NOCHE CONEG O SE ",
+            "VA"
+        ]
+    ],
+    "bpm": 80
+}

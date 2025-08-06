@@ -1,0 +1,65 @@
+{
+    "cancion": "El-Cigarrito",
+    "banda": "victor-jara",
+    "escala": "F#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "G",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "F#m",
+                    "G",
+                    "A7",
+                    "Dm",
+                    "F#m",
+                    "A7",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "A)Voy a hacerme un c",
+            "igarrillo /n"
+        ],
+        [
+            "acaso encuentro t",
+            "abaco /n"
+        ],
+        [
+            "y si no hallo de aón",
+            "de saco /n"
+        ],
+        [
+            " lo mas cierto es que no ",
+            "pito /na"
+        ],
+        [
+            "y,ay,ay, me queris? /n"
+        ],
+        [
+            "ay,ay,ay me queris? /nay,a"
+        ],
+        [
+            "y,ay "
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,69 @@
+{
+    "cancion": "Fantasma",
+    "banda": "gustavo-cerati",
+    "escala": "Bm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "C#m",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#m",
+                    "Bm",
+                    "C#m",
+                    "Bm",
+                    "C#m",
+                    "Bm",
+                    "Bm",
+                    "C#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "á",
+            "/n"
+        ],
+        [
+            "La hondonada nos/n"
+        ],
+        [
+            "Y varias noches sin poder",
+            "    dormir/n"
+        ],
+        [
+            "por creer que es posi",
+            "ble",
+            "",
+            "/nSeamos amig"
+        ],
+        [
+            "os",
+            "/n"
+        ],
+        [
+            "   O la vida/n"
+        ],
+        [
+            "Y el fantasma no podr",
+            "   dormir"
+        ]
+    ],
+    "bpm": 80
+}

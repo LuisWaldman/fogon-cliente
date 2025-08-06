@@ -1,0 +1,64 @@
+{
+    "cancion": "el-puerto",
+    "banda": "silvio-rodriguez",
+    "escala": "C#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#m",
+                    "B",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Dice la leyenda que existe/n"
+        ],
+        [
+            "En el medio del mar una isla qu",
+            "e tiene/nUn tesoro en su inte"
+        ],
+        [
+            "rior/n"
+        ],
+        [
+            "Los que siguen llegan al pu",
+            "erto/n"
+        ],
+        [
+            "El sol brilla al tocar el s",
+            "uelo/n"
+        ],
+        [
+            "Son visibles las ruinas de ",
+            "un pueblo/n"
+        ],
+        [
+            "Tan enorme como un imp",
+            "erio"
+        ]
+    ],
+    "bpm": 80
+}

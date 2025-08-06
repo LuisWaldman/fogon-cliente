@@ -1,0 +1,87 @@
+{
+    "cancion": "hot-dog",
+    "banda": "led-zeppelin",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Well I just got in to town today/n"
+        ],
+        [
+            "To find my girl has gone away/n"
+        ],
+        [
+            "She took the Greyhound in the general s",
+            "tore/n"
+        ],
+        [
+            "I searched myself, I searched the town/n"
+        ],
+        [
+            "And when I finally did set down/n"
+        ],
+        [
+            "I found myself no w",
+            "iser than be",
+            "fore/n"
+        ],
+        [
+            "Now that my baby's gone, I",
+            " don't know what to do/n"
+        ],
+        [
+            "She took my love and walked right out the d",
+            "oor/n"
+        ],
+        [
+            "And if I ever find that girl, I",
+            " know one thing for sure/n"
+        ],
+        [
+            "I'm gonna give her something like she n",
+            "ever had before"
+        ]
+    ],
+    "bpm": 80
+}

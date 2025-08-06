@@ -1,0 +1,63 @@
+{
+    "cancion": "la-maimarena",
+    "banda": "los-tekis",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "F",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Zambita de la quebrada,/nZambita ai"
+        ],
+        [
+            "rosa para baila",
+            "r,/nRev"
+        ],
+        [
+            "oleando los pañu",
+            "elos,     )/n"
+        ],
+        [
+            "Zamba te llevar",
+            "é,/nMi c"
+        ],
+        [
+            "anto te alegrar",
+            "á,/nPorque "
+        ],
+        [
+            "ha nacido entre ce",
+            "rros,  )"
+        ]
+    ],
+    "bpm": 80
+}

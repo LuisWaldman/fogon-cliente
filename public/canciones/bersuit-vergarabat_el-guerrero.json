@@ -1,0 +1,50 @@
+{
+    "cancion": "el-guerrero",
+    "banda": "bersuit-vergarabat",
+    "escala": "C#5",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#5",
+                    "C#5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#5",
+                    "G",
+                    "G",
+                    "C#5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "IFF/n"
+        ],
+        [
+            "Asi, as",
+            "i, asi",
+            ", asi soy,/n\""
+        ],
+        [
+            "Y seg",
+            "uimos debatiéndonos entre ser o no ser,/n"
+        ],
+        [
+            "Soy un guerrero, soy un guerrero,"
+        ]
+    ]
+}

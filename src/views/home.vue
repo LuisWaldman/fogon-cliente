@@ -24,13 +24,15 @@ function buscarCanciones() {
   if (refTodasCanciones.value.length === 0) {
     refEstadoBusqueda.value = 'cargando'
     refTodasCanciones.value = ultimasCanciones.canciones as ItemIndiceCancion[]
-    UrlGetter.GetIndice(window.location.href).then((resultado) => {
-      refTodasCanciones.value = resultado
-      filtrar()
-  }).catch((error) => {
-      console.error('Error trayendo indice:', error)
-      refEstadoBusqueda.value = 'error'
-  })
+    UrlGetter.GetIndice(window.location.href)
+      .then((resultado) => {
+        refTodasCanciones.value = resultado
+        filtrar()
+      })
+      .catch((error) => {
+        console.error('Error trayendo indice:', error)
+        refEstadoBusqueda.value = 'error'
+      })
   } else {
     filtrar()
   }
@@ -57,7 +59,6 @@ function buscarCanciones() {
     refEstadoBusqueda.value = 'listo'
   }
   refEstadoBusqueda.value = 'listo'
-
 }
 
 const appStore = useAppStore()
@@ -103,7 +104,7 @@ function clickTocar(cancion: OrigenCancion) {
     <div>
       <p class="primer-parrafo">Busca Canciones</p>
       <input type="text" v-model="busqueda" placeholder="Buscar..." />
-      <button @click="buscarCanciones()">Buscar</button> {{  refEstadoBusqueda }}
+      <button @click="buscarCanciones()">Buscar</button> {{ refEstadoBusqueda }}
       <div>
         <div style="display: flex; flex-wrap: wrap">
           <cancionComp

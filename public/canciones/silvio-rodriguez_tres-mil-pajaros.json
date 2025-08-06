@@ -1,0 +1,56 @@
+{
+    "cancion": "tres-mil-pajaros",
+    "banda": "silvio-rodriguez",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "Am",
+                    "B",
+                    "Em",
+                    "B",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Tres mil pájaros ",
+            "negros",
+            "/nvolando en arro"
+        ],
+        [
+            "zales,/ntres "
+        ],
+        [
+            "mil pá",
+            "jaros n",
+            "egros/ncon "
+        ],
+        [
+            "bocas de chac",
+            "ales./n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

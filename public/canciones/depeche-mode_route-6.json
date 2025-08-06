@@ -1,0 +1,50 @@
+{
+    "cancion": "route-6",
+    "banda": "depeche-mode",
+    "escala": "D5",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5",
+                    "A5",
+                    "G5",
+                    "D5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "goes to St. Louis, d",
+            "own to Missouri/nYou'll see "
+        ],
+        [
+            "Amarillo, G",
+            "allup, New Mexico/n"
+        ],
+        [
+            "Flagstaff, Arizona, d",
+            "on't forget Wynonna/n"
+        ],
+        [
+            "Kingman, Barstow, San Bernardino"
+        ]
+    ]
+}

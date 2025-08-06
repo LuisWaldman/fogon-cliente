@@ -1,0 +1,55 @@
+{
+    "cancion": "Do-You-Want-To-Dance",
+    "banda": "john-lennon",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "D7",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Well, do you wanna dance, ho",
+            "ld my hand/n"
+        ],
+        [
+            "Tell me I'm lo",
+            "vin' man/nB"
+        ],
+        [
+            "aby, ",
+            "do you wan",
+            "na dance",
+            "/nWell do you do you do you do you wanna dance"
+        ],
+        []
+    ],
+    "bpm": 80
+}

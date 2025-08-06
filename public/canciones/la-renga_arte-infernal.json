@@ -1,0 +1,70 @@
+{
+    "cancion": "arte-infernal",
+    "banda": "la-renga",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "F#m",
+                    "A",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5",
+                    "A5",
+                    "D5",
+                    "A5",
+                    "B5",
+                    "D5",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "e adios te rom",
+            "pio en pedazos,/nTu"
+        ],
+        [
+            "s ganas de segu",
+            "ir./n"
+        ],
+        [
+            "El que sabe que y",
+            "a no hay caso,/n"
+        ],
+        [
+            "Esta dispuesto a s",
+            "ufrir./n     "
+        ],
+        [
+            " Siempre van a lasti",
+            "mar,/n     "
+        ],
+        [
+            " Dios las hizo tan",
+            " hermosas,/n   "
+        ],
+        [
+            "   Con un arte ",
+            "infernal.",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

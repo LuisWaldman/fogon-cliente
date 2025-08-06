@@ -1,0 +1,67 @@
+{
+    "cancion": "ay-la-marea",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A/G",
+                    "G",
+                    "D",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "D/F#",
+                    "E/G#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "La luna está hinchán",
+            "dole el pecho al mar/nB A"
+        ],
+        [
+            "yyy",
+            "y! la m",
+            "area/n"
+        ],
+        [
+            "ay!,",
+            " respi",
+            "rando./n"
+        ],
+        [
+            "Ayyy",
+            "y! la m",
+            "area/n"
+        ],
+        [
+            "Ayy",
+            "yy!, la",
+            " marea."
+        ]
+    ],
+    "bpm": 80
+}

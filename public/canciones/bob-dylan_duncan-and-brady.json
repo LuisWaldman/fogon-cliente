@@ -1,0 +1,51 @@
+{
+    "cancion": "Duncan-And-Brady",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Twinkle, twinkle, little star/n"
+        ],
+        [
+            "'Long comes Brady in his 'lectric car/nGonna "
+        ],
+        [
+            "shoot somebody jus' to watch him die/nHe "
+        ],
+        [
+            "been on the job too l",
+            "ong/nHe "
+        ],
+        [
+            "been on the job too l",
+            "ong."
+        ]
+    ],
+    "bpm": 80
+}

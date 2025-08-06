@@ -1,0 +1,49 @@
+{
+    "cancion": "Juan-sin-Tierra",
+    "banda": "victor-jara",
+    "escala": "C#",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#",
+                    "F#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#",
+                    "G#",
+                    "C#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Voy a cantar el corrid",
+            "o/nde"
+        ],
+        [
+            " un hombre que fue a l",
+            "a guerra/ny anduvo en la sierra h"
+        ],
+        [
+            "erido/npara conquistar su tier"
+        ],
+        [
+            "ra."
+        ]
+    ],
+    "bpm": 80
+}

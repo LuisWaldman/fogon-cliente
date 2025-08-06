@@ -1,0 +1,50 @@
+{
+    "cancion": "hacia-el-porvenir",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "B/A",
+                    "G#m7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm7",
+                    "A",
+                    "E/G#",
+                    "G",
+                    "A#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            " con amo",
+            "r hacía un",
+            "a mano     ",
+            " lo rompía con otra el desamor./n"
+        ],
+        [
+            "Si algui",
+            "en me oye all",
+            "í, no s",
+            "e olvide pues de iluminar,/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

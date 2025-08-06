@@ -1,0 +1,52 @@
+{
+    "cancion": "caminando-caminando",
+    "banda": "victor-jara",
+    "escala": "G/",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G/",
+                    "B",
+                    "A6",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "D",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "amina",
+            "ndo,",
+            "camin",
+            "ando/nvoy"
+        ],
+        [
+            " busc",
+            "ando libertad/nojalá encuentre caminos"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,80 @@
+{
+    "cancion": "Alberta",
+    "banda": "bob-dylan",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C/G",
+                    "G",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "F#",
+                    "Em",
+                    "G",
+                    "D",
+                    "G",
+                    "C/G",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "berta let your h",
+            "air hang lo",
+            "w ",
+            "",
+            "/nAlberta let your "
+        ],
+        [
+            "hair hang l",
+            "ow",
+            "",
+            "/nI'll "
+        ],
+        [
+            "give you more g",
+            "old/nThan your "
+        ],
+        [
+            "apron ca",
+            "n ho",
+            "ld/nIf you'd "
+        ],
+        [
+            "only let your h",
+            "air hang lo",
+            "w",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

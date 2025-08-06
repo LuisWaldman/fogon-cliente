@@ -1,0 +1,35 @@
+{
+    "cancion": "Francisco",
+    "banda": "milton-nascimento",
+    "escala": "Gm7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Gm7",
+                    "Bb6/F",
+                    "Eb7M"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Cm7",
+                    "Dm7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        []
+    ],
+    "bpm": 80
+}

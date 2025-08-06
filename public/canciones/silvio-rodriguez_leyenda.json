@@ -1,0 +1,80 @@
+{
+    "cancion": "leyenda",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D#",
+                    "Em7",
+                    "G/D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G/B",
+                    "Am",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Al amanec",
+            "er",
+            "/nalgunos "
+        ],
+        [
+            "ojos ya eran de",
+            " la obscuridad",
+            "",
+            "/ny hulleron "
+        ],
+        [
+            "hacia las tini",
+            "eblas del aye",
+            "r",
+            "/ncon un pu"
+        ],
+        [
+            "ñado de sem",
+            "illas por sembr",
+            "ar",
+            "/ncon un pu"
+        ],
+        [
+            "ado de prom",
+            "esas por crece",
+            "r",
+            "",
+            "/ny am"
+        ],
+        [
+            "ar"
+        ]
+    ],
+    "bpm": 80
+}

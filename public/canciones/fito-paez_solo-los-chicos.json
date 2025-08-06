@@ -1,0 +1,45 @@
+{
+    "cancion": "Solo-los-chicos",
+    "banda": "fito-paez",
+    "escala": "E7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E7",
+                    "C#maj7",
+                    "B/C#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m7/13",
+                    "A/B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Solo los chicos/n"
+        ],
+        [
+            "Solo los chicos y y",
+            "o/n"
+        ],
+        [
+            "Solo los chicos y y",
+            "o"
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,68 @@
+{
+    "cancion": "Two-Sisters",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F/A",
+                    "C",
+                    "F/A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "F/A",
+                    "C",
+                    "F/A",
+                    "G7",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "was an old lady lived b",
+            "y the sea sh",
+            "ore /nBow and balance to "
+        ],
+        [
+            "be, /nThere "
+        ],
+        [
+            "was an old l",
+            "ady lived by",
+            " the sea sho",
+            "re /n"
+        ],
+        [
+            "number of daughters was o",
+            "ne two three four/nI'll "
+        ],
+        [
+            "be  t",
+            "rue to my lo",
+            "ve /nif my "
+        ],
+        [
+            "love will be true to m",
+            "e. "
+        ]
+    ],
+    "bpm": 80
+}

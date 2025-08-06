@@ -1,0 +1,81 @@
+{
+    "cancion": "solo-un-poquito-nomas",
+    "banda": "charly-garcia",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "Dsus4"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "C",
+                    "Bm",
+                    "C",
+                    "G",
+                    "C",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "Dame uno más",
+            ", /nDame un p"
+        ],
+        [
+            "oquito ",
+            "/n"
+        ],
+        [
+            "Sólo un poquito nomás /n"
+        ],
+        [
+            "When the New York girls /nCame"
+        ],
+        [
+            " to Buenos Aires /n"
+        ],
+        [
+            "They danced the tango /n"
+        ],
+        [
+            "forget the plans, /nforget everything till dawn. "
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

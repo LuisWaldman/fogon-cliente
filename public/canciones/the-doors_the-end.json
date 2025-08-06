@@ -1,0 +1,60 @@
+{
+    "cancion": "the-end",
+    "banda": "the-doors",
+    "escala": "D",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "/n                    "
+        ],
+        [
+            "                 3",
+            "/2               4/4",
+            "",
+            "/n3/"
+        ],
+        [
+            "2               4/",
+            "4                3/2",
+            "/n4"
+        ],
+        [
+            "/4        ",
+            "       3/2",
+            "",
+            "/n2"
+        ],
+        [
+            "/2              4/4"
+        ]
+    ]
+}

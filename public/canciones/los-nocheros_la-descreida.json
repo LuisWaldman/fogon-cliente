@@ -1,0 +1,83 @@
+{
+    "cancion": "la-descreida",
+    "banda": "los-nocheros",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "G",
+                    "B7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "G/B",
+                    "A",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            2,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "les del camino/nYo soy am"
+        ],
+        [
+            "igo y no mient",
+            "o/nAc"
+        ],
+        [
+            "aso no borre el vien",
+            "to/nMi huella "
+        ],
+        [
+            "de caminad",
+            "or/nPara dejarte pr"
+        ],
+        [
+            "ueba como test",
+            "igo/nQue me apu"
+        ],
+        [
+            "raba a tu encuentr",
+            "o/nCon raz"
+        ],
+        [
+            "ón,   ",
+            " tu     boqu",
+            "ita se demorab",
+            "a/nDe amores no sabes nada"
+        ],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

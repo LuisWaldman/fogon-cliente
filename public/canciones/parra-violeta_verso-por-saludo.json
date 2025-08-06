@@ -1,0 +1,48 @@
+{
+    "cancion": "Verso-por-saludo",
+    "banda": "parra-violeta",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "E",
+                    "B",
+                    "G",
+                    "D",
+                    "A",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "A                 (V2-IV0-V0)"
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,43 @@
+{
+    "cancion": "thats-the-way",
+    "banda": "led-zeppelin",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "B",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "/n     Mama said that's the way it"
+        ],
+        [
+            " ought to stay/n     Mama said  mama said that's the way i"
+        ],
+        [
+            "t's going to stay   Ahh Ahh"
+        ]
+    ],
+    "bpm": 80
+}

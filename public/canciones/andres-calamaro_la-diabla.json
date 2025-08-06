@@ -1,0 +1,49 @@
+{
+    "cancion": "La-Diabla",
+    "banda": "andres-calamaro",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Am",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "B7",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Cuando empecé ,a escuchar,  /nel rock and roll desde at"
+        ],
+        [
+            "rás, /ncuando la diabla te esper"
+        ],
+        [
+            "aba,  /ncon su b"
+        ],
+        [
+            "rillo,",
+            " en el pas",
+            "illo. "
+        ]
+    ],
+    "bpm": 80
+}

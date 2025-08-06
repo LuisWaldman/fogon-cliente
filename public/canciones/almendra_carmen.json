@@ -1,0 +1,95 @@
+{
+    "cancion": "Carmen",
+    "banda": "almendra",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D",
+                    "E",
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "F",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Carmen es s",
+            "ucia,/n"
+        ],
+        [
+            "no ti",
+            "ene pad",
+            "re./n"
+        ],
+        [
+            "Pisa laurel",
+            "es,/n"
+        ],
+        [
+            "no a",
+            "ma a su m",
+            "adre./n"
+        ],
+        [
+            "Algo",
+            " pa",
+            "sa den",
+            "tro ",
+            "de mí.",
+            "..    (Dentro de mí...)/n"
+        ],
+        [
+            "Algo",
+            " pa",
+            "sa den",
+            "tro ",
+            "de mí.",
+            "/n"
+        ],
+        [
+            "Párate de",
+            "bajo de mi m",
+            "ano",
+            "/n"
+        ],
+        [
+            "mira quién ",
+            "soy."
+        ]
+    ],
+    "bpm": 80
+}

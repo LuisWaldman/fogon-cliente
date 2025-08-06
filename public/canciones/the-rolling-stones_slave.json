@@ -1,0 +1,70 @@
+{
+    "cancion": "Slave",
+    "banda": "the-rolling-stones",
+    "escala": "B",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B",
+                    "E",
+                    "D",
+                    "A",
+                    "B",
+                    "E",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "B",
+                    "B",
+                    "E",
+                    "B",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "//  //  //////  /",
+            "//   // ",
+            " //",
+            "/n       "
+        ],
+        [
+            " Don",
+            "'t want to be your sla",
+            "ve/n       "
+        ],
+        [
+            " Don",
+            "'t want to be your sla",
+            "ve/n       "
+        ],
+        [
+            " Don",
+            "'t want to be your sla",
+            "ve/n"
+        ],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

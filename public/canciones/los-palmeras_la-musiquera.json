@@ -1,0 +1,57 @@
+{
+    "cancion": "la-musiquera",
+    "banda": "los-palmeras",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "Am",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "E",
+                    "Am",
+                    "E",
+                    "Am",
+                    "E",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "parrita, que es una muchacha parran",
+            "dera, x2/ny como es tan ab"
+        ],
+        [
+            "usadita, le dicen la musiq",
+            "uera. x2/nLe dicen la musi"
+        ],
+        [
+            "quera, le dicen la musique",
+            "ra, x2/nmusiquera hay por d"
+        ],
+        [
+            "ios, vamos a rumbear los ",
+            "dos, x2/nhay los dos hay los dos, vamos a rumbear los dos. x2"
+        ],
+        []
+    ],
+    "bpm": 80
+}

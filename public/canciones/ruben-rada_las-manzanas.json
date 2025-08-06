@@ -1,0 +1,85 @@
+{
+    "cancion": "Las-Manzanas",
+    "banda": "ruben-rada",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "A",
+                    "D",
+                    "C",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Si te gusta comer manzan",
+            "as son mas frescas por la mañana (x2)/n"
+        ],
+        [
+            "Si vitaminas quie",
+            "res tener ricas",
+            " manzanas debes ",
+            "comer/n"
+        ],
+        [
+            "si no madrugas en",
+            "contraras feas ",
+            "manzanas y llorara",
+            "s, porque.../n"
+        ],
+        [
+            "Si te gusta comer manzan",
+            "as son mas frescas por la mañana (x2)/n"
+        ],
+        [
+            "Roja o muy verde tien",
+            "e que ser esa m",
+            "anzana que haz d",
+            "e comer/n"
+        ],
+        [
+            "pero recuerda debe",
+            "s tener poca",
+            " pereza y no d",
+            "ormirte/n"
+        ],
+        [
+            "Si te gusta comer manzan",
+            "as son mas frescas por la mañana"
+        ]
+    ],
+    "bpm": 80
+}

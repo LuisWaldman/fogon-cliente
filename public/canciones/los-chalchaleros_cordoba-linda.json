@@ -1,0 +1,75 @@
+{
+    "cancion": "cordoba-linda",
+    "banda": "los-chalchaleros",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Dm",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "eños y sed de distanc",
+            "ias/nme empuj"
+        ],
+        [
+            "aron a viaja",
+            "r/nh"
+        ],
+        [
+            "ay que andar y mirar para comprende",
+            "r  I/n C"
+        ],
+        [
+            "órdoba ",
+            "la del enca",
+            "nto/n del hab"
+        ],
+        [
+            "lar golpeadito y tranqui",
+            "lo/n me fui sueño y regreso canto"
+        ],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80
+}

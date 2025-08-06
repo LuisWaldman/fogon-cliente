@@ -1,0 +1,76 @@
+{
+    "cancion": "Farewell-Angelina",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "C",
+                    "Csus4",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Csus4: 033010 (hammer the little finger onto the 4th string)/n"
+        ],
+        [],
+        [
+            "Em:    x22000/n"
+        ],
+        [
+            "Farewell Angelina, the b",
+            "ells of the cr",
+            "own",
+            "",
+            "/nAre being stolen by bandits, I must "
+        ],
+        [
+            "follow the s",
+            "ound",
+            "",
+            "/nBut "
+        ],
+        [
+            "farewell Angel",
+            "ina, the ni",
+            "ght is on fir",
+            "e, and ",
+            "I must go",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,95 @@
+{
+    "cancion": "Hello",
+    "banda": "oasis",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "B/C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "Am",
+                    "F",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B/C",
+                    "Am",
+                    "F",
+                    "G2",
+                    "F",
+                    "G2",
+                    "Am2",
+                    "Am2"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "I don't feel as if I know you, you take up all my ti",
+            "me",
+            "/n"
+        ],
+        [
+            "The days are long and the nights will blow you away, cos the sun don't sh",
+            "ine",
+            "/n"
+        ],
+        [
+            "Nobody ever mentions the weather can make or break your d",
+            "ay",
+            "/n"
+        ],
+        [
+            "Nobody ever seems to remember life is a game we pl",
+            "ay",
+            "/n  "
+        ],
+        [
+            "We live in the s",
+            "hadows and we ha",
+            "d our chance and threw it away",
+            "/n  and it's "
+        ],
+        [
+            "never gonna b",
+            "e the sa",
+            "me coz the yea",
+            "rs are falling by l",
+            "ike the rain/n"
+        ],
+        [
+            "Hello!     H",
+            "ello!     He",
+            "llo!/nsaid it's "
+        ],
+        [
+            "good to be back, it's good to be back"
+        ]
+    ],
+    "bpm": 80
+}

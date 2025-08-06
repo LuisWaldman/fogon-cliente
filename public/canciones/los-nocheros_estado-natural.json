@@ -1,0 +1,43 @@
+{
+    "cancion": "Estado-Natural",
+    "banda": "los-nocheros",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "nudas las almas/n"
+        ],
+        [
+            "La naturaleza/ndesnuda de "
+        ],
+        [
+            "sentimiento",
+            "s"
+        ]
+    ],
+    "bpm": 80
+}

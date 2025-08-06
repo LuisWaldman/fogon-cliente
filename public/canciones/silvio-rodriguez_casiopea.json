@@ -1,0 +1,84 @@
+{
+    "cancion": "casiopea",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "A7/G",
+                    "Dm/G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "A7/G",
+                    "Dm/G",
+                    "G",
+                    "Dm/G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm/G",
+                    "D/F#",
+                    "Dm/G",
+                    "G",
+                    "Dm/G",
+                    "A7/G",
+                    "Dm/G",
+                    "D/F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "   Como una gota fui d",
+            "e la marea...",
+            " la marea... la",
+            " marea/n      "
+        ],
+        [
+            "La playa me hizo grano de",
+            " la arena... de l",
+            "a arena... de la ",
+            "arena/nb)      "
+        ],
+        [
+            "Fui punto en multitud por dond",
+            "e fui/n      "
+        ],
+        [
+            "Nadie me detectó y así a",
+            "prendí./nc)    "
+        ],
+        [
+            "  Cumplí celosamente nues",
+            "tro plan:/n      P"
+        ],
+        [
+            "or un millón de año",
+            "s esperar... e",
+            "sperar... e",
+            "sperar/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

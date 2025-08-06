@@ -14,6 +14,9 @@ export class ItemIndiceCancion {
       .replace(' ', '_')
   }
   normalizar() {
+    if (this.origen.fileName === undefined) {
+      this.origen.fileName = ''
+    }
     if (this.origen.fileName === '') {
       this.origen.fileName =
         this.normalizartexto(this.cancion) +

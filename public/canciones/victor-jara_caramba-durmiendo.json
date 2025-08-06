@@ -1,0 +1,51 @@
+{
+    "cancion": "caramba-durmiendo",
+    "banda": "victor-jara",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "F",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Durmiendo, te hago c",
+            "ariños/ncaramba te"
+        ],
+        [
+            " abrazo,/nte abrazo y te doy mil"
+        ],
+        [
+            " besos/ncaramba te"
+        ],
+        [
+            " abrazo,/nte abrazo y te doy mil"
+        ],
+        [
+            " besos."
+        ]
+    ],
+    "bpm": 80
+}

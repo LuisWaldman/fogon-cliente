@@ -1,0 +1,79 @@
+{
+    "cancion": "the-farm",
+    "banda": "aerosmith",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "C7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "C",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B",
+                    "Em",
+                    "A",
+                    "G",
+                    "A",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "",
+            "/n"
+        ],
+        [
+            "        ",
+            "   There's a coc",
+            "kroach in my coffee/n"
+        ],
+        [
+            "        ",
+            "   There's a nee",
+            "dle in my arm/n"
+        ],
+        [
+            "        ",
+            "   And I feel li",
+            "ke New York City/n"
+        ],
+        [
+            "        ",
+            "              ",
+            "  Take me to the farm/n"
+        ],
+        [
+            "       ",
+            "    Buckle up straightjack sanity is such a drag/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

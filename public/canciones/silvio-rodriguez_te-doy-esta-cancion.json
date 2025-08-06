@@ -1,0 +1,71 @@
+{
+    "cancion": "te-doy-esta-cancion",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A7/A#",
+                    "Bm",
+                    "A",
+                    "G",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm",
+                    "Em",
+                    "A7/A#",
+                    "B7",
+                    "Em",
+                    "G",
+                    "C",
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "   Me he dado c",
+            "uenta/nde que "
+        ],
+        [
+            "miento.",
+            "/nSiempre he "
+        ],
+        [
+            "mentido,",
+            "/nsiempre he "
+        ],
+        [
+            "mentido.",
+            "",
+            "/n"
+        ],
+        [
+            "es quizás la últi",
+            "ma verdad/nque quede en "
+        ],
+        [
+            "mi interior,/nbajo mi c"
+        ],
+        [
+            "oraz",
+            "n."
+        ]
+    ],
+    "bpm": 80
+}

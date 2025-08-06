@@ -1,0 +1,81 @@
+{
+    "cancion": "esto-podria-haber-sido-una-cancion",
+    "banda": "fito-paez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F/C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C/E",
+                    "F",
+                    "Gsus4"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Fm6/Ab",
+                    "Am",
+                    "G/B",
+                    "C",
+                    "A/C#",
+                    "F#7",
+                    "A",
+                    "F#7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Vos y yo, nuestra historia en los diarios/n"
+        ],
+        [
+            "esto podría haber sido una canción.",
+            "/n"
+        ],
+        [
+            "Una vez me tocaste las manos/n"
+        ],
+        [
+            "vos eras butterfly y yo el león.",
+            "/n"
+        ],
+        [
+            "Salí, cor",
+            "ré, bu",
+            "scá, ti",
+            "rá,/n"
+        ],
+        [
+            "allá, ",
+            "¿no ves?, ",
+            "volás, f",
+            "lotas.../n"
+        ],
+        [
+            "as uh",
+            "hhh uhhhh",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

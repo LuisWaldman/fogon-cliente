@@ -1,0 +1,45 @@
+{
+    "cancion": "cancion-para-dormir-a-un-viejo",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Abierto, re",
+            "posa el vi",
+            "ejo en su sill",
+            "n/nmira la "
+        ],
+        [
+            "calle, dice pal",
+            "abras,"
+        ]
+    ],
+    "bpm": 80
+}

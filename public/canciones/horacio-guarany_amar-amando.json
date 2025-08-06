@@ -1,0 +1,54 @@
+{
+    "cancion": "amar-amando",
+    "banda": "horacio-guarany",
+    "escala": "Am",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "E",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7",
+                    "Dm",
+                    "E",
+                    "Am",
+                    "B7",
+                    "E7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Amar, amar, ama",
+            "r, amar de fr",
+            "ente,/n"
+        ],
+        [
+            "amar desde la vida hasta la mue",
+            "rte,/n"
+        ],
+        [
+            "amar, amar las cosas y la gen",
+            "te,/n"
+        ],
+        [
+            "amar, dejar al sol sin esconde",
+            "rse."
+        ]
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "cancion": "Borrowed-Time",
+    "banda": "john-lennon",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "E",
+                    "D",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Asus4",
+                    "A",
+                    "Asus2",
+                    "A",
+                    "D",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "When I was y",
+            "ounger a-ha",
+            "/n"
+        ],
+        [
+            "Living on bo",
+            "rrowed ti",
+            "me",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Without a tho",
+            "ught for tomorrow"
+        ]
+    ],
+    "bpm": 80
+}

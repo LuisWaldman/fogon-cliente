@@ -1,0 +1,57 @@
+{
+    "cancion": "Bless-You",
+    "banda": "john-lennon",
+    "escala": "Am9",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am9",
+                    "Abm9",
+                    "Gm9",
+                    "Gbm9",
+                    "Fm9",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em7",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "7]mmm,",
+            " mmm[E",
+            "m].",
+            "",
+            "",
+            "",
+            "",
+            "/nM"
+        ],
+        [
+            "mm, [E",
+            "m7]mmm",
+            ", mmm[",
+            "Em]",
+            "",
+            "/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

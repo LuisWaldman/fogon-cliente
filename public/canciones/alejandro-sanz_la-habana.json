@@ -1,0 +1,46 @@
+{
+    "cancion": "La-Habana",
+    "banda": "alejandro-sanz",
+    "escala": "F#m7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m7",
+                    "C#m9",
+                    "F#m9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A6",
+                    "F#m9"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "ritos, ",
+            "y dicen que labana no se v",
+            "a/n"
+        ],
+        [
+            "Co7              x45353/n"
+        ],
+        [
+            "C#m              x46654/n"
+        ],
+        []
+    ],
+    "bpm": 80
+}

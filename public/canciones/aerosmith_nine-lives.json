@@ -1,0 +1,43 @@
+{
+    "cancion": "nine-lives",
+    "banda": "aerosmith",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "B",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "wink, the funk was all aro",
+            "und me",
+            "/nAnd I th"
+        ],
+        [
+            "ink, I'm dead in love aga",
+            "in"
+        ]
+    ],
+    "bpm": 80
+}

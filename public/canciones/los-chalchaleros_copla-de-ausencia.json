@@ -1,0 +1,67 @@
+{
+    "cancion": "Copla-de-ausencia",
+    "banda": "los-chalchaleros",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G7",
+                    "C",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F7",
+                    "G",
+                    "Am",
+                    "C",
+                    "G7",
+                    "C",
+                    "F7",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "e Cafayate traigo esta c",
+            "opla",
+            "/nrobada al v"
+        ],
+        [
+            "erde cañaver",
+            "al;/ncon esta an"
+        ],
+        [
+            "tigua caja chaye",
+            "ra         I/nCam"
+        ],
+        [
+            "ino del viejo va",
+            "lle/nmi S"
+        ],
+        [
+            "alta te vuelvo a ve",
+            "r/ncon esta tr"
+        ],
+        [
+            "iste copla de ause",
+            "ncia,   I"
+        ]
+    ],
+    "bpm": 80
+}

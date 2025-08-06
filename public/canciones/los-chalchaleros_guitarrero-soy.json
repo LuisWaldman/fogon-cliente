@@ -1,0 +1,67 @@
+{
+    "cancion": "Guitarrero-Soy",
+    "banda": "los-chalchaleros",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D7",
+                    "G",
+                    "E7",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "F",
+                    "A#",
+                    "E7",
+                    "Am",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "engo a canta",
+            "r mi canció",
+            "n/n"
+        ],
+        [
+            "en el dulce atardece",
+            "r/nc"
+        ],
+        [
+            "omo la flor del card",
+            "n                            I/nGu"
+        ],
+        [
+            "itarrero soy  y ",
+            "en mi trasnochar/nqui"
+        ],
+        [
+            "ero cantar y canta",
+            "r/np"
+        ],
+        [
+            "orque la luna al pasa",
+            "r                            I"
+        ]
+    ],
+    "bpm": 80
+}

@@ -1,0 +1,108 @@
+{
+    "cancion": "Send-Some-Lovin",
+    "banda": "elvis-presley",
+    "escala": "G7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "C7",
+                    "C7",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D7",
+                    "G7",
+                    "G",
+                    "G7",
+                    "G7",
+                    "C",
+                    "Dm7",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            3,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Send me some l",
+            "ovin', send it I pr",
+            "ay./n"
+        ],
+        [
+            "How can I love you, when you're far aw",
+            "ay?",
+            "",
+            "/n"
+        ],
+        [
+            "Oh, send me your p",
+            "icture, send it, my de",
+            "ar./n"
+        ],
+        [
+            "So I can hold it, and pretend you are h",
+            "ere.",
+            "/n"
+        ],
+        [
+            "Can you send me your k",
+            "isses? I still feel their to",
+            "uch./nI need you so "
+        ],
+        [
+            "badly, I miss you so m",
+            "uch.",
+            "",
+            "/n"
+        ],
+        [
+            "My days are l",
+            "onely, my nights are so bl",
+            "ue./n"
+        ],
+        [
+            "Send me some l",
+            "ovin', I'm waiting for yo",
+            "u.",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80
+}

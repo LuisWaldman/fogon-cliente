@@ -1,0 +1,87 @@
+{
+    "cancion": "Sentir-Indiano",
+    "banda": "almafuerte",
+    "escala": "D5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D5",
+                    "F5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "F5",
+                    "C5",
+                    "D5",
+                    "F5",
+                    "C5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G5",
+                    "D5",
+                    "Bb5",
+                    "F5",
+                    "A5",
+                    "D5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Sentir indiano en mi corazon, c",
+            "ancion ha",
+            " parid",
+            "o. /n"
+        ],
+        [
+            "Para el que siente o quiere sentir, o",
+            "rgullo",
+            " nativ",
+            "o. /n"
+        ],
+        [
+            "Del malinche es la m",
+            "aldicion, /n"
+        ],
+        [
+            "del huinca el gual",
+            "icho. /n"
+        ],
+        [
+            "Del Dios blanco el t",
+            "errorismo, /n"
+        ],
+        [
+            "Satanas y C",
+            "risto. /n"
+        ],
+        [
+            "Sentimiento india",
+            "no,or",
+            "gullo nativ",
+            "o. "
+        ]
+    ],
+    "bpm": 80
+}

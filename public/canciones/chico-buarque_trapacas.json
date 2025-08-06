@@ -1,0 +1,117 @@
+{
+    "cancion": "trapacas",
+    "banda": "chico-buarque",
+    "escala": "D7M",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D7M",
+                    "C#7(b13)",
+                    "Bb7M",
+                    "A7(b13)",
+                    "F7M",
+                    "F7(#5)"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb7M",
+                    "A7/4",
+                    "Em(b6)",
+                    "Em6",
+                    "Cm6/Eb",
+                    "Ab7(#11)",
+                    "G7M(#11)",
+                    "F#7/13"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B7/13",
+                    "D7/13",
+                    "G(add9)/D",
+                    "G(#5)",
+                    "C6",
+                    "F7(#11)",
+                    "E7(9/#11)",
+                    "E7/4(9)"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F6",
+                    "E7/G#",
+                    "C#m7(b5)",
+                    "Cm6",
+                    "Bb7M/D",
+                    "A7/C#",
+                    "Cm6/Eb",
+                    "D7/13"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "tigo aprendi ",
+            "       A perder  ",
+            "  e achar gra___",
+            "____ça/nPa"
+        ],
+        [
+            "gar e não dar",
+            "      importân",
+            "____cia ",
+            "   Conti",
+            "go  a trapa___",
+            "ça/nPor trá"
+        ],
+        [
+            "s      da trapa",
+            "________ça ",
+            "         pura e",
+            "legân___",
+            "cia",
+            "/nSe "
+        ],
+        [
+            "deres    por fal_",
+            "____ta Do teu  ",
+            "riso esper___",
+            "____to/nDos "
+        ],
+        [
+            "teus     sortilé",
+            "_______gios Enten_",
+            "_de e perdo__",
+            "___a/nEu "
+        ],
+        [
+            "ando    nas ru_",
+            "__as Com o sol  ",
+            "    descola___",
+            "__do/n"
+        ],
+        [
+            "      Da tua p",
+            "essoa/n"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80
+}

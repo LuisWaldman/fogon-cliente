@@ -1,0 +1,45 @@
+{
+    "cancion": "Voy-a-dormir",
+    "banda": "andres-calamaro",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Voy a dejar que hable/n"
+        ],
+        [
+            "la vejiga en el camino/n"
+        ],
+        [
+            "voy a intentar dormir/n"
+        ],
+        [
+            "y soñar algo divino"
+        ]
+    ],
+    "bpm": 80
+}

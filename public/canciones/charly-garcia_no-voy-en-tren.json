@@ -1,0 +1,61 @@
+{
+    "cancion": "no-voy-en-tren",
+    "banda": "charly-garcia",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "F",
+                    "G",
+                    "A",
+                    "E7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "en avión",
+            "/nYo soy de la Cruz del Sur"
+        ],
+        [
+            "",
+            "",
+            "/nSoy "
+        ],
+        [
+            "el que cierra y apaga la luz",
+            "/nYo soy de la Cruz del Sur"
+        ],
+        [
+            "",
+            "",
+            "/nAquí an everywhere"
+        ],
+        [
+            ""
+        ]
+    ],
+    "bpm": 80
+}

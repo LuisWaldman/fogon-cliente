@@ -1,0 +1,111 @@
+{
+    "cancion": "canteme",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "G/",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "G/",
+                    "D",
+                    "A/"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "A",
+                    "D",
+                    "Bm",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "A",
+                    "D",
+                    "D7",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "G/  ",
+            "D **-",
+            "A/ D ",
+            "-G/  D ",
+            "*-D  3 VECES  D /nA.-"
+        ],
+        [
+            "Cánteme/nquien tenga el "
+        ],
+        [
+            "verso",
+            ",",
+            "",
+            "/nmas no con los cristales primo"
+        ],
+        [
+            "rosos",
+            ",",
+            "/nque el tiempo "
+        ],
+        [
+            "ya no es tema d",
+            "e reposo",
+            "",
+            "/nsi no crisol más"
+        ],
+        [
+            " áspero que",
+            " terso./nB.-"
+        ],
+        [
+            "Cánteme/nsí,"
+        ],
+        [
+            " para oírlo,/ncomo "
+        ],
+        [
+            "aquella canción, la ",
+            "que yo hiciera./nPero "
+        ],
+        [
+            "cánteme/nayer, hoy "
+        ],
+        [
+            "y después."
+        ]
+    ],
+    "bpm": 80
+}

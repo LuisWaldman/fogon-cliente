@@ -11,10 +11,10 @@ export class UrlGetter {
   ): Promise<Cancion> {
     let desdeUrl = origencancion.origenUrl
     if (desdeUrl.includes('fogon.ar')) {
-      desdeUrl = 'https://www.fogon.ar/canciones/'
+      desdeUrl = 'https://www.fogon.ar/public/canciones/'
     }
     if (desdeUrl.includes('localhost')) {
-      desdeUrl = 'http://localhost:5173/canciones/'
+      desdeUrl = 'http://localhost:5173/public/canciones/'
     }
     console.log(
       'Getting song from',

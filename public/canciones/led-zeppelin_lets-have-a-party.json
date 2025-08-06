@@ -1,0 +1,43 @@
+{
+    "cancion": "lets-have-a-party",
+    "banda": "led-zeppelin",
+    "escala": "E5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E5",
+                    "D5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "     Some people like to rock/n  Lets Have a party"
+        ],
+        [
+            "/n  L"
+        ],
+        [
+            "ets Ha",
+            "ve a Party"
+        ]
+    ],
+    "bpm": 80
+}
