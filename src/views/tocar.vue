@@ -66,11 +66,27 @@ function cambiarVista(nvista: string) {
   localStorage.setItem('viendo_vista_tocando', nvista)
 }
 function estiloVistaPrincipal() {
-  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%; overflow: auto;`
+  let ancho = 100
+  if (
+    vista.value.secuencia ||
+    vista.value.proximosAcordes ||
+    vista.value.partes
+  ) {
+    ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
+  }
+  return `width: ${ancho}%; height: 100%; overflow: auto;`
 }
 
 function estiloVistaSecundaria() {
-  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
+  let ancho = 100
+  if (
+    vista.value.secuencia ||
+    vista.value.proximosAcordes ||
+    vista.value.partes
+  ) {
+    ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
+  }
+  return `width: ${100 - ancho}%;`
 }
 const refEditSize = ref(false)
 function editarPantalla() {
@@ -120,7 +136,6 @@ function cerrareditarPantalla() {
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
-          
           <Secuencia
             :cancion="appStore.cancion"
             :compas="appStore.compas"

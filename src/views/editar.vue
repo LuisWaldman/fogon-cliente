@@ -170,10 +170,6 @@ function clickCerrarEditarTexto() {
         </li>
 
         <li><hr class="dropdown-divider" /></li>
-        <li>
-          <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
-        </li>
-        <li><hr class="dropdown-divider" /></li>
         <li @click="guardarCambios">
           <a class="dropdown-item" href="#"> Guardar Cambios</a>
         </li>

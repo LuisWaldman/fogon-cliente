@@ -39,7 +39,7 @@ function actualizarLetras(cancion: Cancion) {
       } else {
         nuevaLetra[i][j] = letraFlat[cont]
       }
-      
+
       cont++
     }
   }
@@ -48,20 +48,19 @@ function actualizarLetras(cancion: Cancion) {
 }
 
 function CalcularResaltado(newCompas: number) {
-
-    let totalCompases = 0
-    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
-      let compasesxparte =
-        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
-          .acordes.length
-      if (newCompas < totalCompases + compasesxparte) {
-        mostrandoParte.value = i
-        mostrandoCompasParte.value = newCompas - totalCompases
-        break
-      }
-      totalCompases += compasesxparte
+  let totalCompases = 0
+  for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
+    let compasesxparte =
+      props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]].acordes
+        .length
+    if (newCompas < totalCompases + compasesxparte) {
+      mostrandoParte.value = i
+      mostrandoCompasParte.value = newCompas - totalCompases
+      break
     }
-    currentCompas.value = newCompas
+    totalCompases += compasesxparte
+  }
+  currentCompas.value = newCompas
 }
 
 watch(

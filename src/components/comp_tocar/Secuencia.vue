@@ -80,13 +80,11 @@ function calcularresumenparte() {
 }
 let actualizadoAsk = false
 function Actualizado() {
-  
   if (reperesu.value.length == 0) {
     if (actualizadoAsk) {
       actualizadoAsk = true
       Actualizar(props.cancion)
     }
-    
   }
   return false
 }
