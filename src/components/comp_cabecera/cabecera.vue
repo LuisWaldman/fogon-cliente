@@ -63,7 +63,6 @@ function arreglartexto(texto: string): string {
 
   return processed
 }
-
 </script>
 
 <template>
