@@ -4,7 +4,6 @@ import { useAppStore } from '../stores/appStore'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 
-import noticiaComp from '../components/comp_home/noticia.vue'
 import cancionComp from '../components/comp_home/cancion.vue'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
@@ -75,7 +74,7 @@ function clickTocar(cancion: OrigenCancion) {
     <h1 style="color: #8e44ad; margin-bottom: 0px; padding-bottom: 0px">
       Bienvenido al Fogon
     </h1>
-    <span class="version">V. SINCRONIZADA (arma fogon, err canc)</span>
+    <span class="version">editando andamos</span>
 
     <div class="ultimasCanciones">
       <p class="primer-parrafo">Ultimas Canciones</p>
@@ -118,16 +117,8 @@ function clickTocar(cancion: OrigenCancion) {
     </div>
 
     <p class="primer-parrafo" v-if="appStore.estado === 'logueado'">
-      Estas son las noticias en tu servidor
+      Estas Logueado!
     </p>
-
-    <div class="containerNoticias">
-      <noticiaComp
-        v-for="(noticia, index) in appStore.noticias"
-        :key="index"
-        :noticia="noticia"
-      ></noticiaComp>
-    </div>
   </div>
 </template>
 <style scoped>

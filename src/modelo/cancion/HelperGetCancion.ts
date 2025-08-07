@@ -57,7 +57,7 @@ export class UrlGetter {
   ): Promise<ItemIndiceCancion[]> {
     let desdeUrl = origenUrl
     if (desdeUrl.includes('fogon.ar')) {
-      desdeUrl = 'https://www.fogon.ar/public/canciones/'
+      desdeUrl = 'https://www.fogon.ar/public/'
     }
     if (desdeUrl.includes('localhost')) {
       desdeUrl = 'http://localhost:5173/public/'
