@@ -58,8 +58,10 @@ const unirseSesion = (sesion: string) => {
       <iconofogon />
 
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        Fogon
+        Bienvendido a Fogon
+    
       </span>
+      
 
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
         {{ appStore.cancion?.cancion }} -
