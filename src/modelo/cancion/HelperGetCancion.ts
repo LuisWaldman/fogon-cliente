@@ -11,10 +11,10 @@ export class UrlGetter {
   ): Promise<Cancion> {
     let desdeUrl = origencancion.origenUrl
     if (desdeUrl.includes('fogon.ar')) {
-      desdeUrl = 'https://www.fogon.ar/public/canciones/'
+      desdeUrl = 'https://www.fogon.ar/canciones/'
     }
     if (desdeUrl.includes('localhost')) {
-      desdeUrl = 'http://localhost:5173/public/canciones/'
+      desdeUrl = 'http://localhost:5173/canciones/'
     }
     console.log(
       'Getting song from',
@@ -57,10 +57,10 @@ export class UrlGetter {
   ): Promise<ItemIndiceCancion[]> {
     let desdeUrl = origenUrl
     if (desdeUrl.includes('fogon.ar')) {
-      desdeUrl = 'https://www.fogon.ar/public/'
+      desdeUrl = 'https://www.fogon.ar/'
     }
     if (desdeUrl.includes('localhost')) {
-      desdeUrl = 'http://localhost:5173/public/'
+      desdeUrl = 'http://localhost:5173/'
     }
     console.log('Getting Indice from', desdeUrl + 'indice.json')
 
@@ -70,8 +70,8 @@ export class UrlGetter {
     for (const item of data) {
       const cancion = new ItemIndiceCancion(
         new OrigenCancion(desdeUrl, item.archivo, ''),
-        item.banda,
         item.cancion,
+        item.banda,
       )
       cancion.calidad = item.calidad
       cancion.bpm = item.bpm

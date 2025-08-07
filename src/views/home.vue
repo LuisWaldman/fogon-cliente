@@ -71,23 +71,6 @@ function clickTocar(cancion: OrigenCancion) {
 </script>
 <template>
   <div class="home">
-    <h1 style="color: #8e44ad; margin-bottom: 0px; padding-bottom: 0px">
-      Bienvenido al Fogon
-    </h1>
-    <span class="version">editando andamos</span>
-
-    <div class="ultimasCanciones">
-      <p class="primer-parrafo">Ultimas Canciones</p>
-      <div style="display: flex; flex-wrap: wrap">
-        <cancionComp
-          v-for="(cancion, index) in refUltimasCanciones"
-          :key="index"
-          :cancion="cancion"
-          @click="clickTocar(cancion.origen)"
-        />
-      </div>
-    </div>
-
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
       off-line. En esta version, podes ver las noticias locales
@@ -116,9 +99,17 @@ function clickTocar(cancion: OrigenCancion) {
       </div>
     </div>
 
-    <p class="primer-parrafo" v-if="appStore.estado === 'logueado'">
-      Estas Logueado!
-    </p>
+    <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0">
+      <p class="primer-parrafo">Ultimas Canciones</p>
+      <div style="display: flex; flex-wrap: wrap">
+        <cancionComp
+          v-for="(cancion, index) in refUltimasCanciones"
+          :key="index"
+          :cancion="cancion"
+          @click="clickTocar(cancion.origen)"
+        />
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>

@@ -47,6 +47,22 @@ function SalirSesion() {
 const unirseSesion = (sesion: string) => {
   appStore.aplicacion.UnirmeSesion(sesion)
 }
+
+function arreglartexto(texto: string): string {
+  let processed = texto.replace(/-/g, ' ')
+  if (processed.length === 0) return processed
+
+  // First letter lowercase, rest uppercase
+  processed =
+    processed.charAt(0).toUpperCase() + processed.slice(1).toLocaleLowerCase()
+
+  // Truncate if longer than 50 characters
+  if (processed.length > 50) {
+    processed = processed.substring(0, 47) + '...'
+  }
+
+  return processed
+}
 </script>
 
 <template>
@@ -58,12 +74,12 @@ const unirseSesion = (sesion: string) => {
       <iconofogon />
 
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        Fogon
+        Bienvendido a Fogon
       </span>
 
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
-        {{ appStore.cancion?.cancion }} -
-        {{ appStore.cancion?.banda }}
+        {{ arreglartexto(appStore.cancion?.cancion) }} -
+        {{ arreglartexto(appStore.cancion?.banda) }}
       </div>
 
       <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
