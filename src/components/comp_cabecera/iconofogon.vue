@@ -61,7 +61,7 @@ function getImageStyle() {
           width="50"
         />
       </div>
-      <div class="titulo-Fogon">Fogon 0.1</div>
+      <div class="titulo-Fogon">Fogon 0.1(ns)</div>
     </div>
   </router-link>
 </template>
