@@ -22,6 +22,32 @@ watch(
 )
 
 function actualizarLetras(cancion: Cancion) {
+  let nuevaLetra = [] as string[][]
+  const letraFlat = cancion.letras.renglones.flat()
+  let cont = 0
+  for (var i = 0; i < cancion.acordes.ordenPartes.length; i++) {
+    for (
+      var j = 0;
+      j < cancion.acordes.partes[cancion.acordes.ordenPartes[i]].acordes.length;
+      j++
+    ) {
+      if (!nuevaLetra[i]) {
+        nuevaLetra[i] = [] as string[]
+      }
+      if (letraFlat.length < cont) {
+        nuevaLetra[i][j] = ''
+      } else {
+        nuevaLetra[i][j] = letraFlat[cont]
+      }
+      
+      cont++
+    }
+  }
+  letras.value = nuevaLetra
+}
+
+
+function actualizarLetrasOld(cancion: Cancion) {
   let contadorRenglontexto = 0
   let contadorRenglonParteTexto = 0
   let nuevaLetra = [] as string[][]
