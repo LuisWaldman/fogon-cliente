@@ -7,6 +7,7 @@ import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Partes from '../components/comp_tocar/Partes.vue'
+import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
 import { useRouter } from 'vue-router'
@@ -65,11 +66,27 @@ function cambiarVista(nvista: string) {
   localStorage.setItem('viendo_vista_tocando', nvista)
 }
 function estiloVistaPrincipal() {
-  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%; overflow: auto;`
+  let ancho = 100
+  if (
+    vista.value.secuencia ||
+    vista.value.proximosAcordes ||
+    vista.value.partes
+  ) {
+    ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
+  }
+  return `width: ${ancho}%; height: 100%; overflow: auto;`
 }
 
 function estiloVistaSecundaria() {
-  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
+  let ancho = 100
+  if (
+    vista.value.secuencia ||
+    vista.value.proximosAcordes ||
+    vista.value.partes
+  ) {
+    ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
+  }
+  return `width: ${100 - ancho}%;`
 }
 const refEditSize = ref(false)
 function editarPantalla() {
@@ -118,10 +135,12 @@ function cerrareditarPantalla() {
         ></TocarAcorde>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <div
-          style="max-height: 50%; overflow-y: auto"
-          v-if="vista.secuencia"
-        ></div>
+        <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
+          <Secuencia
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></Secuencia>
+        </div>
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"

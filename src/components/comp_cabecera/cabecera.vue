@@ -33,7 +33,7 @@ function copiarUrl() {
 
 const crearSesion = () => {
   const nombreSesion = appStore.perfil?.nombre
-    ? `${appStore.perfil.nombre} sesion`
+    ? `${appStore.perfil.nombre} fogon`
     : 'default'
   console.log('Creando sesión', nombreSesion)
 
@@ -139,13 +139,13 @@ function arreglartexto(texto: string): string {
               aria-expanded="false"
             >
               <i class="bi bi-people"></i>
-              Sesión
+              Fogon
             </a>
             <ul class="">
               <li v-if="appStore.estadoSesion != 'conectado'">
                 <a class="dropdown-item" href="#" @click="crearSesion">
                   <i class="bi bi-plus-circle"></i>
-                  Crear sesión
+                  Crear Fogon
                 </a>
               </li>
               <div v-if="appStore.estadoSesion != 'conectado'">

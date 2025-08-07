@@ -31,17 +31,19 @@ function getImageStyle() {
 <template>
   <router-link class="navbar-brand" to="/" style="color: inherit">
     <div class="relative-container">
-      <div
-        v-for="(user, idx) in appStore.usuariosSesion"
-        :key="idx"
-        :style="getPositionStyle(idx, appStore.usuariosSesion.length)"
-      >
-        <img
-          class="profile-image"
-          v-if="user.PerfilUsr && user.PerfilUsr.imagen"
-          :src="user.PerfilUsr.imagen"
-          alt="Profile image"
-        />
+      <div v-if="appStore.estadoSesion === 'conectado'">
+        <div
+          v-for="(user, idx) in appStore.usuariosSesion"
+          :key="idx"
+          :style="getPositionStyle(idx, appStore.usuariosSesion.length)"
+        >
+          <img
+            class="profile-image"
+            v-if="user.PerfilUsr && user.PerfilUsr.imagen"
+            :src="user.PerfilUsr.imagen"
+            alt="Profile image"
+          />
+        </div>
       </div>
       <div class="div-imagen">
         <img
@@ -61,7 +63,13 @@ function getImageStyle() {
           width="50"
         />
       </div>
-      <div class="titulo-Fogon">Fogon 0.1(ns)</div>
+
+      <div class="titulo-Fogon" v-if="appStore.estadoSesion != 'conectado'">
+        Fogon
+      </div>
+      <div class="titulo-Fogon" v-if="appStore.estadoSesion === 'conectado'">
+        {{ appStore.sesion.nombre }}
+      </div>
     </div>
   </router-link>
 </template>

@@ -22,54 +22,52 @@ watch(
 )
 
 function actualizarLetras(cancion: Cancion) {
-  let contadorRenglontexto = 0
-  let contadorRenglonParteTexto = 0
   let nuevaLetra = [] as string[][]
+  const letraFlat = cancion.letras.renglones.flat()
+  let cont = 0
   for (var i = 0; i < cancion.acordes.ordenPartes.length; i++) {
-    let nuevoRenglon = [] as string[]
-
     for (
       var j = 0;
       j < cancion.acordes.partes[cancion.acordes.ordenPartes[i]].acordes.length;
       j++
     ) {
-      nuevoRenglon.push(
-        cancion.letras.renglones[contadorRenglontexto][
-          contadorRenglonParteTexto
-        ],
-      )
-      contadorRenglonParteTexto++
-      if (
-        contadorRenglonParteTexto >=
-        cancion.letras.renglones[contadorRenglontexto].length
-      ) {
-        contadorRenglontexto++
-        contadorRenglonParteTexto = 0
+      if (!nuevaLetra[i]) {
+        nuevaLetra[i] = [] as string[]
       }
+      if (letraFlat.length < cont) {
+        nuevaLetra[i][j] = ''
+      } else {
+        nuevaLetra[i][j] = letraFlat[cont]
+      }
+
+      cont++
     }
-    nuevaLetra.push(nuevoRenglon)
   }
   letras.value = nuevaLetra
+  CalcularResaltado(props.compas)
+}
+
+function CalcularResaltado(newCompas: number) {
+  let totalCompases = 0
+  for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
+    let compasesxparte =
+      props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]].acordes
+        .length
+    if (newCompas < totalCompases + compasesxparte) {
+      mostrandoParte.value = i
+      mostrandoCompasParte.value = newCompas - totalCompases
+      break
+    }
+    totalCompases += compasesxparte
+  }
+  currentCompas.value = newCompas
 }
 
 watch(
   () => props.compas,
   (newCompas) => {
     Actualizar()
-    let totalCompases = 0
-
-    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
-      let compasesxparte =
-        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
-          .acordes.length
-      if (newCompas < totalCompases + compasesxparte) {
-        mostrandoParte.value = i
-        mostrandoCompasParte.value = newCompas - totalCompases
-        break
-      }
-      totalCompases += compasesxparte
-    }
-    currentCompas.value = newCompas
+    CalcularResaltado(newCompas)
 
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
     const configuracionPantalla = pantalla.getConfiguracionPantalla()

@@ -78,13 +78,18 @@ function calcularresumenparte() {
   mostrandoResumenParte.value =
     reperesu.value[i] - (cont - mostrandoParte.value)
 }
-
+let actualizadoAsk = false
 function Actualizado() {
   if (reperesu.value.length == 0) {
-    Actualizar(props.cancion)
+    if (actualizadoAsk) {
+      actualizadoAsk = true
+      Actualizar(props.cancion)
+    }
   }
   return false
 }
+
+Actualizar(props.cancion)
 </script>
 
 <template>
