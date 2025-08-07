@@ -70,8 +70,8 @@ export class UrlGetter {
     for (const item of data) {
       const cancion = new ItemIndiceCancion(
         new OrigenCancion(desdeUrl, item.archivo, ''),
-        item.banda,
         item.cancion,
+        item.banda,
       )
       cancion.calidad = item.calidad
       cancion.bpm = item.bpm

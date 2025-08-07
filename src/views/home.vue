@@ -71,7 +71,6 @@ function clickTocar(cancion: OrigenCancion) {
 </script>
 <template>
   <div class="home">
-
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
       off-line. En esta version, podes ver las noticias locales
@@ -100,7 +99,6 @@ function clickTocar(cancion: OrigenCancion) {
       </div>
     </div>
 
-    
     <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0">
       <p class="primer-parrafo">Ultimas Canciones</p>
       <div style="display: flex; flex-wrap: wrap">
@@ -112,7 +110,6 @@ function clickTocar(cancion: OrigenCancion) {
         />
       </div>
     </div>
-
   </div>
 </template>
 <style scoped>

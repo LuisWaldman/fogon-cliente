@@ -19,9 +19,9 @@ export class ItemIndiceCancion {
     }
     if (this.origen.fileName === '') {
       this.origen.fileName =
-        this.normalizartexto(this.cancion) +
+        this.normalizartexto(this.banda) +
         '_' +
-        this.normalizartexto(this.banda)
+        this.normalizartexto(this.cancion)
     }
   }
   public escala: string

@@ -6,34 +6,52 @@ const props = defineProps<{
   cancion: ItemIndiceCancion
 }>()
 const viendoDetalle = ref(false)
+function arreglartexto(texto: string): string {
+  let processed = texto.replace(/-/g, ' ')
+  if (processed.length === 0) return processed
+
+  // First letter lowercase, rest uppercase
+  processed =
+    processed.charAt(0).toUpperCase() + processed.slice(1).toLocaleLowerCase()
+
+  // Truncate if longer than 50 characters
+  if (processed.length > 50) {
+    processed = processed.substring(0, 47) + '...'
+  }
+
+  return processed
+}
 
 defineEmits(['click'])
 </script>
 
 <template>
   <div class="cancion" @click="$emit('click')">
-    <div>{{ props.cancion.cancion }}</div>
+    <div class="nombreCancion">{{ arreglartexto(props.cancion.cancion) }}</div>
     <div class="origen-indicador">
-    <div v-if="props.cancion.origen.origenUrl.startsWith('http')">W</div></div>
-    <div>{{ props.cancion.banda }}</div>
+      <div v-if="props.cancion.origen.origenUrl.startsWith('http')">W</div>
+    </div>
+    <div>{{ arreglartexto(props.cancion.banda) }}</div>
     <div v-if="viendoDetalle">
-       <div v-if="props.cancion.origen">
-      
-      origen fileName: {{ props.cancion.origen.fileName }}, url:
-      {{ props.cancion.origen.origenUrl }}
-      <span v-if="props.cancion.origen.origenUrl == 'server'">{{
-        props.cancion.origen.owner
-      }}</span>
+      <div v-if="props.cancion.origen">
+        origen fileName: {{ props.cancion.origen.fileName }}, url:
+        {{ props.cancion.origen.origenUrl }}
+        <span v-if="props.cancion.origen.origenUrl == 'server'">{{
+          props.cancion.origen.owner
+        }}</span>
+      </div>
     </div>
-    </div>
-   
   </div>
 </template>
 <style scoped>
+.nombreCancion {
+  font-weight: bold;
+  font-size: 1.2em;
+}
 .cancion {
   cursor: pointer;
   position: relative;
-  padding: 5px;
+  padding: 15px;
   border: 1px solid #ccc;
   margin: 5px;
   border-radius: 4px;
