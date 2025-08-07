@@ -7,6 +7,7 @@ import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Partes from '../components/comp_tocar/Partes.vue'
+import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
 import { useRouter } from 'vue-router'
@@ -118,10 +119,13 @@ function cerrareditarPantalla() {
         ></TocarAcorde>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <div
-          style="max-height: 50%; overflow-y: auto"
-          v-if="vista.secuencia"
-        ></div>
+        <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
+          
+          <Secuencia
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></Secuencia>
+        </div>
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"
