@@ -30,8 +30,7 @@ function getImageStyle() {
 </script>
 <template>
   <router-link class="navbar-brand" to="/" style="color: inherit">
-  <div class="iconofogon">
-    
+    <div class="iconofogon">
       <div class="relative-container">
         <div v-if="appStore.estadoSesion === 'conectado'">
           <div
@@ -47,13 +46,13 @@ function getImageStyle() {
             />
           </div>
         </div>
-        
+
         <div class="div-imagen">
           <img
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/troncoconectado.png"
-            style="z-index: 1;"
+            style="z-index: 1"
           />
 
           <img
@@ -61,46 +60,41 @@ function getImageStyle() {
             :style="getImageStyle()"
             src="/img/llamaritomo1.png"
             v-if="appStore.golpeDelCompas == 0"
-            style="z-index: 3;"
+            style="z-index: 3"
           />
           <img
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomo2.png"
-            v-if="appStore.golpeDelCompas == 1"            style="z-index: 3;"
-
+            v-if="appStore.golpeDelCompas == 1"
+            style="z-index: 3"
           />
-                    <img
+          <img
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomo3.png"
-            v-if="appStore.golpeDelCompas == 2"            style="z-index: 3;"
-
+            v-if="appStore.golpeDelCompas == 2"
+            style="z-index: 3"
           />
-                    <img
+          <img
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomo4.png"
-            v-if="appStore.golpeDelCompas == 3"            style="z-index: 3;"
-
+            v-if="appStore.golpeDelCompas == 3"
+            style="z-index: 3"
           />
-          
         </div>
-
       </div>
 
-  
-      
-      
-    <div style="margin-top: 50px;">
-      <div class="titulo-Fogon" v-if="appStore.estadoSesion != 'conectado'">
-        Fogon
-      </div>
-      <div class="titulo-Fogon" v-if="appStore.estadoSesion === 'conectado'">
-        {{ appStore.sesion.nombre }}
+      <div style="margin-top: 50px">
+        <div class="titulo-Fogon" v-if="appStore.estadoSesion != 'conectado'">
+          Fogon
+        </div>
+        <div class="titulo-Fogon" v-if="appStore.estadoSesion === 'conectado'">
+          {{ appStore.sesion.nombre }}
+        </div>
       </div>
     </div>
-  </div>
   </router-link>
 </template>
 
@@ -108,7 +102,6 @@ function getImageStyle() {
 .iconofogon {
   width: 100px;
   height: 80px;
-
 }
 
 .relative-container {

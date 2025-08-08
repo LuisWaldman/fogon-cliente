@@ -71,6 +71,49 @@ function clickCerrarEditarTexto() {
   // Set the current view to 'inicio'
   cambiarVista('inicio')
 }
+
+function otro() {
+  console.log('Otro')
+}
+
+function toArchivo(file: string) {
+  return file.replace(/\s+/g, '_');
+} 
+function DescargarJSON() {
+  console.log('Descargando JSON de la canción actual...')
+  const cancionJSON = JSON.stringify({
+    cancion: appStore.editandocancion.cancion,
+    banda: appStore.editandocancion.banda,
+    acordes: {
+      partes: appStore.editandocancion.acordes.partes.map((parte) => ({
+        nombre: parte.nombre,
+        acordes: parte.acordes,
+      })),
+      orden_partes: appStore.editandocancion.acordes.orden_partes,
+    },
+    escala: appStore.editandocancion.escala,
+    letras: appStore.editandocancion.letras.renglones,
+    bpm: appStore.editandocancion.bpm,
+    calidad: appStore.editandocancion.calidad,
+    compas_cantidad: appStore.editandocancion.compasCantidad,
+    compas_unidad: appStore.editandocancion.compasUnidad,
+  })
+  console.log('Descargando JSON:', cancionJSON)
+
+  const blob = new Blob([cancionJSON], { type: 'application/json' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  if (appStore.editandocancion.nombreArchivo == undefined) {
+    appStore.editandocancion.nombreArchivo = toArchivo(appStore.editandocancion.cancion + '_' + appStore.editandocancion.banda)
+  }
+    
+  const nombreArchivo =
+    `${appStore.editandocancion.nombreArchivo}.json`.toLocaleLowerCase()
+  a.download = nombreArchivo
+  a.click()
+  URL.revokeObjectURL(url)
+}
 </script>
 <template>
   <cabecera :cancion="appStore.editandocancion"></cabecera>
@@ -107,7 +150,7 @@ function clickCerrarEditarTexto() {
         :compas="appStore.compas"
       ></consola-acordes>
       <Secuencia
-        :cancion="appStore.cancion"
+        :cancion="appStore.editandocancion"
         :compas="appStore.compas"
         v-if="
           vista.viendo !== 'editconsolaacordes' &&
@@ -119,7 +162,7 @@ function clickCerrarEditarTexto() {
           vista.viendo !== 'editconsolaacordes' &&
           vista.viendo !== 'editaracordes'
         "
-        :cancion="appStore.cancion"
+        :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></Partes>
     </div>
@@ -170,9 +213,16 @@ function clickCerrarEditarTexto() {
         </li>
 
         <li><hr class="dropdown-divider" /></li>
+        
+        
         <li @click="guardarCambios">
           <a class="dropdown-item" href="#"> Guardar Cambios</a>
         </li>
+
+        <li @click="DescargarJSON">
+          <a class="dropdown-item" href="#">Descargar JSON</a>
+        </li>
+        
         <li><hr class="dropdown-divider" /></li>
 
         <li @click="clickTocar()">
