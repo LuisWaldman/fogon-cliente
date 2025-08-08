@@ -30,40 +30,69 @@ function getImageStyle() {
 </script>
 <template>
   <router-link class="navbar-brand" to="/" style="color: inherit">
-    <div class="relative-container">
-      <div v-if="appStore.estadoSesion === 'conectado'">
-        <div
-          v-for="(user, idx) in appStore.usuariosSesion"
-          :key="idx"
-          :style="getPositionStyle(idx, appStore.usuariosSesion.length)"
-        >
-          <img
-            class="profile-image"
-            v-if="user.PerfilUsr && user.PerfilUsr.imagen"
-            :src="user.PerfilUsr.imagen"
-            alt="Profile image"
-          />
+  <div class="iconofogon">
+    
+      <div class="relative-container">
+        <div v-if="appStore.estadoSesion === 'conectado'">
+          <div
+            v-for="(user, idx) in appStore.usuariosSesion"
+            :key="idx"
+            :style="getPositionStyle(idx, appStore.usuariosSesion.length)"
+          >
+            <img
+              class="profile-image"
+              v-if="user.PerfilUsr && user.PerfilUsr.imagen"
+              :src="user.PerfilUsr.imagen"
+              alt="Profile image"
+            />
+          </div>
         </div>
-      </div>
-      <div class="div-imagen">
-        <img
-          :style="getImageStyle()"
-          :src="
-            appStore.estado === 'conectado'
-              ? '/img/conectado.png'
-              : appStore.estado === 'tocando'
-                ? '/img/tocando.png'
-                : appStore.estado === 'logueado'
-                  ? '/img/logueado.png'
-                  : appStore.estado === 'conectadoserver'
-                    ? '/img/conectado.png'
-                    : '/img/desconectado.png'
-          "
-          alt="Logo"
-          width="50"
-        />
+        
+        <div class="div-imagen">
+          <img
+            class="imagenicono"
+            :style="getImageStyle()"
+            src="/img/troncoconectado.png"
+            style="z-index: 1;"
+          />
+
+          <img
+            class="imagenicono"
+            :style="getImageStyle()"
+            src="/img/llamaritomo1.png"
+            v-if="appStore.golpeDelCompas == 0"
+            style="z-index: 3;"
+          />
+          <img
+            class="imagenicono"
+            :style="getImageStyle()"
+            src="/img/llamaritomo2.png"
+            v-if="appStore.golpeDelCompas == 1"            style="z-index: 3;"
+
+          />
+                    <img
+            class="imagenicono"
+            :style="getImageStyle()"
+            src="/img/llamaritomo3.png"
+            v-if="appStore.golpeDelCompas == 2"            style="z-index: 3;"
+
+          />
+                    <img
+            class="imagenicono"
+            :style="getImageStyle()"
+            src="/img/llamaritomo4.png"
+            v-if="appStore.golpeDelCompas == 3"            style="z-index: 3;"
+
+          />
+          
+        </div>
+
       </div>
 
+  
+      
+      
+    <div style="margin-top: 50px;">
       <div class="titulo-Fogon" v-if="appStore.estadoSesion != 'conectado'">
         Fogon
       </div>
@@ -71,13 +100,27 @@ function getImageStyle() {
         {{ appStore.sesion.nombre }}
       </div>
     </div>
+  </div>
   </router-link>
 </template>
 
 <style scoped>
+.iconofogon {
+  width: 100px;
+  height: 80px;
+
+}
+
 .relative-container {
   position: relative;
   width: 100px;
+}
+.imagenicono {
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  top: 0;
+  left: 0;
 }
 .profile-image {
   width: 30px;
@@ -90,6 +133,7 @@ function getImageStyle() {
   background-color: #f0f0f0;
 }
 .div-imagen {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
