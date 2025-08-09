@@ -1,7 +1,41 @@
-//* CLASE QUE SOLO DEVUELVE RESULTADOS TEORICOS */
-import { AnalisisArmonico } from '../modelo/analisis_armonico'
+import type { AnalisisArmonico } from './analisisArmonico'
+import type { Cancion } from './cancion'
 
 export class MusicaHelper {
+  GetNotasPosicionadasEscala(cancion: Cancion, escala: string[]): string[][] {
+    const acordesRaw: string[] = cancion.acordes.GetTodosLosAcordes()
+
+    const notasUnicas: Set<string> = new Set<string>()
+    acordesRaw.forEach((notasCompas) => {
+      notasCompas.split(' ').forEach((nota) => {
+        if (nota.trim() !== '') {
+          notasUnicas.add(nota)
+        }
+      })
+    })
+
+    const notas: string[] = Array.from(notasUnicas)
+
+    const notasPosicionadas: string[][] = [[], [], [], [], [], [], [], []]
+    notas.forEach((nota) => {
+      const posicion = this.PosicionNotaEnEscala(escala, nota)
+      if (posicion !== -1) {
+        notasPosicionadas[posicion].push(nota)
+      } else {
+        notasPosicionadas[7].push(nota) // Si no está en la escala, lo ponemos en la última posición
+      }
+    })
+
+    return notasPosicionadas
+  }
+  PosicionNotaEnEscala(escala: string[], nota: string) {
+    let notAlt = nota
+    if (notAlt.includes('/')) {
+      notAlt = notAlt.split('/')[0] // Si es un acorde con alteración, tomamos solo la parte antes de la barra
+    }
+    notAlt = notAlt.replace(/[0-9]/g, '') // Eliminar números de la nota
+    return escala.indexOf(notAlt)
+  }
   getDistanciaNotas(nota1: string, nota2: string, escala: string): number {
     const acoresEscala = this.GetNotasdeescala(escala)
 
@@ -58,6 +92,10 @@ export class MusicaHelper {
     'A#',
     'B',
   ]
+
+  GetNotas() {
+    return this.notas
+  }
   modos: { [key: string]: number[] } = {}
   modosParaacorde: { [key: string]: string[] } = {}
   constructor() {
@@ -76,9 +114,9 @@ export class MusicaHelper {
     return this.notas[nota]
   }
 
-  GetNotasdeescala(escala: string): string[] {
-    if (escala == '') return []
+  public GetNotasdeescala(escala: string | undefined): string[] {
     if (escala == undefined) return []
+    if (escala == '') return []
     let buscar = escala
     let modoEscala = 'mayor'
     if (escala.includes('m')) {
