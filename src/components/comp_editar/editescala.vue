@@ -13,7 +13,6 @@ const desdeEscala = ref('')
 const esMenor = ref(false)
 const appStore = useAppStore()
 const cambiandoEscalaEstado = ref('')
-const cambiandoModo = ref(false)
 const NotasPosicionadasEscala = ref([] as string[][])
 const Escala = ref([] as string[])
 const labelGradosEscala = ref(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'])
@@ -46,10 +45,6 @@ function clickCambiarEscala() {
   } else {
     cambiandoEscalaEstado.value = ''
   }
-}
-
-function cambiarModo() {
-  cambiandoModo.value = !cambiandoModo.value
 }
 
 function changeToEscala() {

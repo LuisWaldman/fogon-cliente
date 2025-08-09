@@ -68,7 +68,6 @@ function clickCancelarCambiarEscala() {
   cambiandoEscalaEstado.value = ''
 }
 function clickConfirmarCambiarEscala() {
-  
   appStore.editandocancion = helperMuisca.ActualizarEscala(
     appStore.editandocancion,
     Escala.value,
