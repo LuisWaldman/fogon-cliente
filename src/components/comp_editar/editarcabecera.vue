@@ -1,58 +1,11 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
-import { ref } from 'vue'
-import type { Cancion } from '../../modelo/cancion/cancion'
-import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
+import { Cancion } from '../../modelo/cancion/cancion'
+import editarescala from './editarescala.vue'
 
 defineProps<{
   cancion: Cancion
 }>()
-
-const toEscala = ref('')
-const desdeEscala = ref('')
-const esMenor = ref(false)
-
-const cambiandoEscalaEstado = ref('')
-const cambiandoModo = ref(false)
-const labelGradosEscala = ref(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'])
-const Escala = ref([] as string[])
-const NotasPosicionadasEscala = ref([] as string[][])
-const NuevaEscala = ref([] as string[])
-const NuevasNotasPosicionadasEscala = ref([] as string[][])
-
-const helperMuisca = new MusicaHelper()
-const TodasLasNotas = ref(helperMuisca.GetNotas())
-function clickCambiarEscala() {
-  if (cambiandoEscalaEstado.value == '') {
-    if (appStore.editandocancion.escala) {
-      desdeEscala.value = appStore.editandocancion.escala
-      if (desdeEscala.value.includes('m')) {
-        esMenor.value = true
-        desdeEscala.value = desdeEscala.value.replace('m', '')
-      }
-      // Obtener la escala de acordes basada en la escala actual
-      Escala.value = helperMuisca.GetAcordesdeescala(
-        appStore.editandocancion.escala,
-      )
-
-      NotasPosicionadasEscala.value = helperMuisca.GetNotasPosicionadasEscala(
-        appStore.editandocancion,
-        Escala.value,
-      )
-      toEscala.value = desdeEscala.value
-    } else {
-      toEscala.value = 'C'
-    }
-
-    cambiandoEscalaEstado.value = 'cambiando'
-  } else {
-    cambiandoEscalaEstado.value = ''
-  }
-}
-
-function cambiarModo() {
-  cambiandoModo.value = !cambiandoModo.value
-}
 
 const appStore = useAppStore()
 </script>
@@ -115,54 +68,8 @@ const appStore = useAppStore()
         maxlength="1"
         :style="{ width: '3ch' }"
       />
-
+      <editarescala :cancion="cancion"></editarescala>
       -
-      <div>
-        <span class="lblCabecera">Escala {{ cancion.escala }}</span>
-        <span class="lblCabecera" @click="clickCambiarEscala">[cambiar]</span>
-      </div>
-      <div v-if="cambiandoEscalaEstado == 'cambiando'">
-        <table style="border-collapse: collapse; width: 100%;">
-
-          <thead>
-            <tr>
-              <th ></th>
-              <th v-for="(nota, index) in Escala" :key="index">
-                {{ labelGradosEscala[index] }} - {{ nota }}
-              </th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Notas</td>
-              <td v-for="(nota, index) in NotasPosicionadasEscala" :key="index">
-                <span
-                  v-for="(notaPosicionada, posIndex) in nota"
-                  :key="posIndex"
-                >
-                  {{ notaPosicionada }}
-                </span>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <select v-model="toEscala" @change="changeToEscala">
-                  <option
-                    v-for="(nota, index) in TodasLasNotas"
-                    :key="index"
-                    :value="nota"
-                  >
-                    {{ nota }}
-                  </option>
-                </select>
-              </td>
-              <td>a</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
       <span class="lblCabecera">Calidad:</span>
       <input type="range" v-model="cancion.calidad" min="0" max="10" />
     </div>
@@ -170,17 +77,6 @@ const appStore = useAppStore()
 </template>
 
 <style scoped>
-          
-            td, th {
-              border: 1px solid #a9a8f6;
-              padding: 6px;
-              text-align: center;
-            }
-            th {
-              background-color: #353333;
-              color: #a9a8f6;
-            }
-          
 .compartir_sesion {
   position: absolute;
   top: 160px;

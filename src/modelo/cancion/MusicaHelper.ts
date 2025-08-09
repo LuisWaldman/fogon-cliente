@@ -1,7 +1,101 @@
-import type { AnalisisArmonico } from './analisisArmonico'
+import { AnalisisArmonico } from './analisisArmonico'
 import type { Cancion } from './cancion'
 
 export class MusicaHelper {
+  ActualizarEscala(
+    cancion: Cancion,
+    desdeEscala: string[],
+    hastaEscala: string[],
+  ): Cancion {
+    cancion.escala = hastaEscala[0]
+    for (let i = 1; i < cancion.acordes.partes.length; i++) {
+      for (let j = 0; j < cancion.acordes.partes[i].acordes.length; j++) {
+        cancion.acordes.partes[i].acordes[j] = this.GetAcordesNuevaEscala(
+          cancion.acordes.partes[i].acordes[j],
+          desdeEscala,
+          hastaEscala,
+        )
+      }
+    }
+    return cancion
+  }
+  GetNotasPosicionadasNuevaEscala(
+    desdePosiciones: string[][],
+    desdeEscala: string[],
+    hastaEscala: string[],
+  ): string[][] {
+    const toRet: string[][] = []
+    for (let i = 0; i < desdePosiciones.length; i++) {
+      toRet[i] = []
+      for (let j = 0; j < desdePosiciones[i].length; j++) {
+        toRet[i][j] = this.GetNotaNuevaEscala(
+          desdePosiciones[i][j],
+          desdeEscala,
+          hastaEscala,
+        )
+      }
+    }
+    return toRet
+  }
+
+  GetAcordesNuevaEscala(
+    nota: string,
+    desdeEscala: string[],
+    hastaEscala: string[],
+  ): string {
+    return nota
+      .split(' ')
+      .map((acorde) => {
+        return this.GetNotaNuevaEscala(acorde, desdeEscala, hastaEscala)
+      })
+      .join(' ')
+  }
+
+  GetNotaNuevaEscala(
+    nota: string,
+    desdeEscala: string[],
+    hastaEscala: string[],
+  ): string {
+    let notAlt = nota
+    let bajoNota = ''
+    if (notAlt.includes('/')) {
+      notAlt = notAlt.split('/')[0] // Si es un acorde con alteración, tomamos solo la parte antes de la barra
+      bajoNota = this.GetNotaNuevaEscala(
+        nota.split('/')[1],
+        desdeEscala,
+        hastaEscala,
+      )
+    }
+
+    // MODIFICA LAS QUE TIENEN NUMERO
+    const numMatch = nota.match(/[0-9]+/)?.[0] || ''
+    notAlt = notAlt.replace(numMatch, '')
+    const toRetEscala = desdeEscala.indexOf(notAlt)
+    if (toRetEscala !== -1) {
+      return (
+        hastaEscala[toRetEscala] + numMatch + (bajoNota ? `/${bajoNota}` : '')
+      )
+    }
+    // Check if notAlt starts with any note in desdeEscala
+    let i = 0
+    while (i < notAlt.length && toRetEscala === -1) {
+      const partialNote = notAlt.substring(0, notAlt.length - i)
+      for (let j = 0; j < desdeEscala.length; j++) {
+        if (desdeEscala[j].startsWith(partialNote)) {
+          const suffix = notAlt.substring(partialNote.length)
+          return (
+            hastaEscala[j] +
+            suffix +
+            numMatch +
+            (bajoNota ? `/${bajoNota}` : '')
+          )
+        }
+      }
+      i++
+    }
+    return '?' + bajoNota ? `/${bajoNota}` : ''
+  }
+
   GetNotasPosicionadasEscala(cancion: Cancion, escala: string[]): string[][] {
     const acordesRaw: string[] = cancion.acordes.GetTodosLosAcordes()
 
@@ -34,7 +128,15 @@ export class MusicaHelper {
       notAlt = notAlt.split('/')[0] // Si es un acorde con alteración, tomamos solo la parte antes de la barra
     }
     notAlt = notAlt.replace(/[0-9]/g, '') // Eliminar números de la nota
-    return escala.indexOf(notAlt)
+    const toRet = escala.indexOf(notAlt)
+    if (toRet === -1) {
+      for (let i = 0; i < escala.length; i++) {
+        if (escala[i].startsWith(notAlt[0])) {
+          return i // Si no está en la escala, buscamos una coincidencia parcial
+        }
+      }
+    }
+    return toRet
   }
   getDistanciaNotas(nota1: string, nota2: string, escala: string): number {
     const acoresEscala = this.GetNotasdeescala(escala)

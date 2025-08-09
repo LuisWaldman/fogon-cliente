@@ -13,7 +13,7 @@ export class Cancion {
   public compasCantidad: number
   public compasUnidad: number
   public escala?: string
-
+  
   public get duracionCompas(): number {
     if (this.compasUnidad === 0) {
       return 0

@@ -44,4 +44,17 @@ describe('MusicaHelper', () => {
     expect(helper.PosicionNotaEnEscala(['A', 'B', 'C'], 'B7/C')).toEqual(1)
     expect(helper.PosicionNotaEnEscala(['A', 'B', 'C'], 'x7/C')).toEqual(-1)
   })
+  it('Acordes de escala', () => {
+    const helper = new MusicaHelper()
+    expect(
+      helper.GetNotaNuevaEscala('C', ['C', 'D', 'E'], ['D', 'E', 'F']),
+    ).toEqual('D')
+
+    expect(
+      helper.GetNotaNuevaEscala('C7', ['C', 'D', 'E'], ['D', 'E', 'F']),
+    ).toEqual('D7')
+    expect(
+      helper.GetNotaNuevaEscala('C#', ['C', 'D', 'E'], ['D', 'E', 'F']),
+    ).toEqual('D#')
+  })
 })
