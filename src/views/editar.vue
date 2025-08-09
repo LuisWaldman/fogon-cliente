@@ -72,13 +72,9 @@ function clickCerrarEditarTexto() {
   cambiarVista('inicio')
 }
 
-function otro() {
-  console.log('Otro')
-}
-
 function toArchivo(file: string) {
-  return file.replace(/\s+/g, '_');
-} 
+  return file.replace(/\s+/g, '_')
+}
 function DescargarJSON() {
   console.log('Descargando JSON de la canción actual...')
   const cancionJSON = JSON.stringify({
@@ -89,14 +85,14 @@ function DescargarJSON() {
         nombre: parte.nombre,
         acordes: parte.acordes,
       })),
-      orden_partes: appStore.editandocancion.acordes.orden_partes,
+      ordenPartes: appStore.editandocancion.acordes.ordenPartes,
     },
     escala: appStore.editandocancion.escala,
     letras: appStore.editandocancion.letras.renglones,
     bpm: appStore.editandocancion.bpm,
     calidad: appStore.editandocancion.calidad,
-    compas_cantidad: appStore.editandocancion.compasCantidad,
-    compas_unidad: appStore.editandocancion.compasUnidad,
+    compasCantidad: appStore.editandocancion.compasCantidad,
+    compasUnidad: appStore.editandocancion.compasUnidad,
   })
   console.log('Descargando JSON:', cancionJSON)
 
@@ -104,10 +100,12 @@ function DescargarJSON() {
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
-  if (appStore.editandocancion.nombreArchivo == undefined) {
-    appStore.editandocancion.nombreArchivo = toArchivo(appStore.editandocancion.cancion + '_' + appStore.editandocancion.banda)
+  if (appStore.editandocancion.archivo == undefined) {
+    appStore.editandocancion.archivo = toArchivo(
+      appStore.editandocancion.cancion + '_' + appStore.editandocancion.banda,
+    )
   }
-    
+
   const nombreArchivo =
     `${appStore.editandocancion.nombreArchivo}.json`.toLocaleLowerCase()
   a.download = nombreArchivo
@@ -213,8 +211,7 @@ function DescargarJSON() {
         </li>
 
         <li><hr class="dropdown-divider" /></li>
-        
-        
+
         <li @click="guardarCambios">
           <a class="dropdown-item" href="#"> Guardar Cambios</a>
         </li>
@@ -222,7 +219,7 @@ function DescargarJSON() {
         <li @click="DescargarJSON">
           <a class="dropdown-item" href="#">Descargar JSON</a>
         </li>
-        
+
         <li><hr class="dropdown-divider" /></li>
 
         <li @click="clickTocar()">

@@ -24,6 +24,10 @@ export class ItemIndiceCancion {
         this.normalizartexto(this.cancion)
     }
   }
+  duracionCancion(): number {
+    return this.totalCompases * ((60 / this.bpm) * this.compasCantidad)
+  }
+
   public escala: string
   public totalCompases: number
   public compasUnidad: number

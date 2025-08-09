@@ -78,7 +78,6 @@ function clickTocar(cancion: OrigenCancion) {
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Revisa los servidores en configuracion y conectate a un fogon
     </p>
-    
 
     <div>
       <p class="primer-parrafo">Busca Canciones</p>

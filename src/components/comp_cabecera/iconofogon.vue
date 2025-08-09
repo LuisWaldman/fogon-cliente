@@ -55,7 +55,7 @@ function getImageStyle() {
             v-if="appStore.estadoSesion === 'conectado'"
             style="z-index: 1"
           />
-          
+
           <img
             class="imagenicono"
             :style="getImageStyle()"
@@ -63,7 +63,7 @@ function getImageStyle() {
             v-if="appStore.estado === 'conectado'"
             style="z-index: 1"
           />
-          
+
           <img
             class="imagenicono"
             :style="getImageStyle()"
@@ -71,11 +71,13 @@ function getImageStyle() {
             v-if="appStore.estado === 'logueado'"
             style="z-index: 1"
           />
-          
+
           <img
             class="imagenicono"
             :styles="getImageStyle()"
-            v-if="appStore.estado !== 'conectado' && appStore.estado !== 'logueado'"
+            v-if="
+              appStore.estado !== 'conectado' && appStore.estado !== 'logueado'
+            "
             src="/img/troncooffline.png"
             style="z-index: 1"
           />
@@ -83,7 +85,6 @@ function getImageStyle() {
           <img
             class="imagenicono"
             :style="getImageStyle()"
-            
             src="/img/llamaritomopausa.png"
             v-if="appStore.estadoReproduccion === 'pausado'"
             style="z-index: 3"
@@ -91,9 +92,11 @@ function getImageStyle() {
           <img
             class="imagenicono"
             :style="getImageStyle()"
-            
             src="/img/llamaritomo1.png"
-            v-if="appStore.estadoReproduccion !== 'pausado' && appStore.golpeDelCompas == 0"
+            v-if="
+              appStore.estadoReproduccion !== 'pausado' &&
+              appStore.golpeDelCompas == 0
+            "
             style="z-index: 3"
           />
           <img
@@ -125,7 +128,7 @@ function getImageStyle() {
           Fogon
         </div>
         <div class="titulo-Fogon" v-if="appStore.estadoSesion === 'conectado'">
-          {{ appStore.sesion.nombre }} 
+          {{ appStore.sesion.nombre }}
         </div>
       </div>
     </div>

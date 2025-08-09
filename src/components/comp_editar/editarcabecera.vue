@@ -9,10 +9,9 @@ defineProps<{
 
 const toEscala = ref('')
 const cambiandoEscalaEstado = ref('')
-const cambiarModo = ref(false)
+const cambiandoModo = ref(false)
 
-
-function clickCambiarEscala(nuevoEstado: string) {
+function clickCambiarEscala() {
   if (cambiandoEscalaEstado.value == '') {
     cambiandoEscalaEstado.value = 'cambiando'
   } else {
@@ -20,6 +19,9 @@ function clickCambiarEscala(nuevoEstado: string) {
   }
 }
 
+function cambiarModo() {
+  cambiandoModo.value = !cambiandoModo.value
+}
 
 const appStore = useAppStore()
 </script>
@@ -40,14 +42,8 @@ const appStore = useAppStore()
         max="240"
       />
       {{ cancion.bpm }} -
-
       <span
-        style="color: white !important"
-        v-if="cancion?.bpm && cancion.bpm < 40"
-        >No cargada o menos que lenta</span
-      >
-      <span
-        style="background-color: #a9a8f6; color: white"
+        
         v-if="cancion?.bpm && cancion.bpm >= 40 && cancion.bpm <= 60"
         >Largo</span
       >
@@ -94,12 +90,18 @@ const appStore = useAppStore()
       <span class="lblCabecera" @click="clickCambiarEscala">[cambiar]</span>
 
       <input
-      v-if="cambiandoEscalaEstado == 'cambiando'"
+        v-if="cambiandoEscalaEstado == 'cambiando'"
         type="text"
         v-model="toEscala"
         maxlength="4"
         :style="{ width: '6ch' }"
       />
+      <span
+        v-if="cambiandoEscalaEstado == 'cambiando'"
+        @click="cambiarModo"
+      >
+       Mayor
+      </span>
       <table>
         <thead>
           <tr>
@@ -118,7 +120,6 @@ const appStore = useAppStore()
             <td>Sol</td>
             <td>a</td>
           </tr>
-          
         </tbody>
       </table>
 
