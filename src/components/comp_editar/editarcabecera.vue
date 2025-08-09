@@ -1,10 +1,25 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
+import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 
 defineProps<{
   cancion: Cancion
 }>()
+
+const toEscala = ref('')
+const cambiandoEscalaEstado = ref('')
+const cambiarModo = ref(false)
+
+
+function clickCambiarEscala(nuevoEstado: string) {
+  if (cambiandoEscalaEstado.value == '') {
+    cambiandoEscalaEstado.value = 'cambiando'
+  } else {
+    cambiandoEscalaEstado.value = ''
+  }
+}
+
 
 const appStore = useAppStore()
 </script>
@@ -75,13 +90,37 @@ const appStore = useAppStore()
         maxlength="1"
         :style="{ width: '3ch' }"
       />
-      - <span class="lblCabecera">Escala:</span>
+      - <span class="lblCabecera">Escala {{ cancion.escala }}</span>
+      <span class="lblCabecera" @click="clickCambiarEscala">[cambiar]</span>
+
       <input
+      v-if="cambiandoEscalaEstado == 'cambiando'"
         type="text"
-        v-model="cancion.escala"
+        v-model="toEscala"
         maxlength="4"
         :style="{ width: '6ch' }"
       />
+      <table>
+        <thead>
+          <tr>
+            <th class="lblCabecera">Tono</th>
+            <th class="lblCabecera">I</th>
+            <th class="lblCabecera">II</th>
+            <th class="lblCabecera">III</th>
+            <th class="lblCabecera">IV</th>
+            <th class="lblCabecera">V</th>
+            <th class="lblCabecera">VI</th>
+            <th class="lblCabecera">VII</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sol</td>
+            <td>a</td>
+          </tr>
+          
+        </tbody>
+      </table>
 
       <span class="lblCabecera">Calidad:</span>
       <input type="range" v-model="cancion.calidad" min="0" max="10" />
