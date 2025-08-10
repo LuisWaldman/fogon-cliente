@@ -78,10 +78,6 @@ function clickTocar(cancion: OrigenCancion) {
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Revisa los servidores en configuracion y conectate a un fogon
     </p>
-    <p class="primer-parrafo" v-if="appStore.estado === 'conectado'">
-      Esta conectado! <router-link to="/configurar">Logueate </router-link> para
-      poder tocar con otros fogoneros
-    </p>
 
     <div>
       <p class="primer-parrafo">Busca Canciones</p>
@@ -110,6 +106,9 @@ function clickTocar(cancion: OrigenCancion) {
         />
       </div>
     </div>
+    <p class="primer-parrafo" v-if="appStore.estado === 'conectado'">
+      Conectado!
+    </p>
   </div>
 </template>
 <style scoped>

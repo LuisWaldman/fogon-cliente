@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
-import type { Cancion } from '../../modelo/cancion/cancion'
+import { Cancion } from '../../modelo/cancion/cancion'
+import editarescala from './editarescala.vue'
 
 defineProps<{
   cancion: Cancion
@@ -25,15 +26,7 @@ const appStore = useAppStore()
         max="240"
       />
       {{ cancion.bpm }} -
-
-      <span
-        style="color: white !important"
-        v-if="cancion?.bpm && cancion.bpm < 40"
-        >No cargada o menos que lenta</span
-      >
-      <span
-        style="background-color: #a9a8f6; color: white"
-        v-if="cancion?.bpm && cancion.bpm >= 40 && cancion.bpm <= 60"
+      <span v-if="cancion?.bpm && cancion.bpm >= 40 && cancion.bpm <= 60"
         >Largo</span
       >
 
@@ -75,14 +68,8 @@ const appStore = useAppStore()
         maxlength="1"
         :style="{ width: '3ch' }"
       />
-      - <span class="lblCabecera">Escala:</span>
-      <input
-        type="text"
-        v-model="cancion.escala"
-        maxlength="4"
-        :style="{ width: '6ch' }"
-      />
-
+      <editarescala :cancion="cancion"></editarescala>
+      -
       <span class="lblCabecera">Calidad:</span>
       <input type="range" v-model="cancion.calidad" min="0" max="10" />
     </div>
