@@ -99,6 +99,9 @@ function StyleFrecuenciaLinea(frecuencia: number) {
   } else if (Math.abs(portentajeEnOctava - (1/3)) < 0.02) {
     fontSize = 19
     border = '1px solid rgb(102, 64, 64);'
+  } else if (Math.abs(portentajeEnOctava - (2/3)) < 0.02) {
+    fontSize = 19
+    border = '1px solid rgb(102, 64, 64);'
   }
   return {
     'font-size': fontSize + 'px',
@@ -114,7 +117,8 @@ function StyleFrecuenciaLinea(frecuencia: number) {
 
 <template>
   <div :style="styleDivAfinador()" class="divAfinador">
-      <div style="display: flex;">
+      
+    <div style="display: flex;">
                 <div v-for="(nota, index) in NotasAnteriores" @click="clickVerFrecuencia(nota)" :key="index" :style="StyleFrecuenciaLinea(nota)" :class="ClaseNotasAnteriores[index]" class="clsNota">
           {{ nota.toFixed(0) }} 
         </div>
@@ -123,7 +127,12 @@ function StyleFrecuenciaLinea(frecuencia: number) {
           {{ nota.toFixed(0) }} 
         </div>
       </div>
-      <div class="circulodiv">
+<div style="display: flex;">
+  <div style="position: relative;"><div class="circulodiv" style="display: flex; width: 800px;">
+
+
+
+        
         <div v-for="i in octavasCirculo" :key="i" ><div :style="StyleOctava(i)" class="circuloOctava"></div></div>
 
 
@@ -133,13 +142,23 @@ function StyleFrecuenciaLinea(frecuencia: number) {
         <div v-for="k in 3" :key="k" :style="StyleFrecuencia(tipoAfinacion * Math.pow(2, (k-1) * 2))" class="frecuencia">
          {{ (tipoAfinacion * Math.pow(2, (k-1) * 2)).toFixed(0) }}
         </div>
-        <div>
+        
         <div  v-for="k in 3" :key="k" :style="StyleFrecuencia(440 * Math.pow(2, (k-1) * 2))" class="frecuencia">
           {{ (440 * Math.pow(2, (k-1) * 2)).toFixed(0) }}
         </div>
         
-      </div>
-      </div>
+      
+      
+      </div></div>
+  <div>
+<div>
+    Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
+    <div>
+    Total de Notas: <input type="number" v-model="cantidadNotas" min="1" max="24" @change="calcularNotas" />
+    </div>
+  </div>
+</div>
+      
 
   </div>
 </template>
