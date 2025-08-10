@@ -17,6 +17,7 @@ export class MicHelper {
       return 'denied'
     }
   }
+  
 
   /**
    * Solicita acceso al micrófono si el permiso no está denegado.

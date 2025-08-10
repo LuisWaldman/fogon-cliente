@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue'
 import { Pantalla } from '../../modelo/pantalla'
 import { MicHelper } from './micHelper'
+import { NotaAfinar } from './notaAfinar'
 
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
@@ -12,17 +13,24 @@ const Notas = ref<number[]>([]) // Cantidad de notas en la afinación
 const ClaseNotas = ref<string[]>([])
 const NotasAnteriores = ref<number[]>([]) // Cantidad de notas en la afinación
 const ClaseNotasAnteriores = ref<string[]>([])
-const octavasCirculo = ref(8)
-const DesdeOctavasCirculo = ref(3)
+const octavasCirculo = ref(7)
+const DesdeOctavasCirculo = ref(4)
 const refViendoFrecuencia = ref(440)
 const micHelper = new MicHelper()
 const refMicEstado = ref('')
 const mediaStream = ref<MediaStream | null>(null)
+const notasAfinar = ref([] as NotaAfinar[])
+notasAfinar.value.push(new NotaAfinar('Sexta Cuerda','E2', 82.41))
+notasAfinar.value.push(new NotaAfinar('Quinta Cuerda','A2', 110.00))
+notasAfinar.value.push(new NotaAfinar('Cuarta Cuerda','D3', 146.83))
+notasAfinar.value.push(new NotaAfinar('Tercera Cuerda','G3', 196.00))
+notasAfinar.value.push(new NotaAfinar('Segunda Cuerda','B3', 246.94))
+notasAfinar.value.push(new NotaAfinar('Primera Cuerda','E4', 329.63))
 
-const audioContext = ref<AudioContext | null>(null);
-const analyserNode = ref<AnalyserNode | null>(null);
-const sourceNode = ref<MediaStreamAudioSourceNode | null>(null);
-const buffer = new Float32Array(2048);
+const audioContext = ref<AudioContext | null>(null)
+const analyserNode = ref<AnalyserNode | null>(null)
+const sourceNode = ref<MediaStreamAudioSourceNode | null>(null)
+const buffer = new Float32Array(2048)
 
 watch(mediaStream, (stream) => {
   if (!stream) return
@@ -38,57 +46,57 @@ watch(mediaStream, (stream) => {
   detectFrequency() // arranca el loop
 })
 function autoCorrelate(buffer: Float32Array, sampleRate: number): number {
-  const SIZE = buffer.length;
-  let rms = 0;
+  const SIZE = buffer.length
+  let rms = 0
 
   // 1. Calcular RMS para detectar silencio
   for (let i = 0; i < SIZE; i++) {
-    rms += buffer[i] * buffer[i];
+    rms += buffer[i] * buffer[i]
   }
-  rms = Math.sqrt(rms / SIZE);
-  if (rms < 0.01) return -1; // silencio
+  rms = Math.sqrt(rms / SIZE)
+  if (rms < 0.01) return -1 // silencio
 
   // 2. Autocorrelación
-  const correlations = new Array(SIZE).fill(0);
+  const correlations = new Array(SIZE).fill(0)
   for (let lag = 0; lag < SIZE; lag++) {
     for (let i = 0; i < SIZE - lag; i++) {
-      correlations[lag] += buffer[i] * buffer[i + lag];
+      correlations[lag] += buffer[i] * buffer[i + lag]
     }
   }
 
   // 3. Buscar el primer mínimo (inicio del valle)
-  let start = 0;
+  let start = 0
   while (correlations[start] > correlations[start + 1]) {
-    start++;
+    start++
   }
 
   // 4. Buscar el pico máximo después del valle
-  let maxval = -1;
-  let maxpos = -1;
+  let maxval = -1
+  let maxpos = -1
   for (let i = start; i < SIZE; i++) {
     if (correlations[i] > maxval) {
-      maxval = correlations[i];
-      maxpos = i;
+      maxval = correlations[i]
+      maxpos = i
     }
   }
 
   // 5. Calcular frecuencia
-  const T0 = maxpos;
-  return sampleRate / T0;
-};
-const frequency = ref(-1);
+  const T0 = maxpos
+  return sampleRate / T0
+}
+const frequency = ref(-1)
 const detectFrequency = () => {
-  if (!analyserNode.value) return;
+  if (!analyserNode.value) return
 
-  analyserNode.value.getFloatTimeDomainData(buffer);
-  frequency.value = autoCorrelate(buffer, audioContext.value!.sampleRate);
+  analyserNode.value.getFloatTimeDomainData(buffer)
+  frequency.value = autoCorrelate(buffer, audioContext.value!.sampleRate)
 
   if (frequency.value !== -1) {
-    console.log(`🎯 Frecuencia detectada: ${frequency.value.toFixed(2)} Hz`);
+    console.log(`🎯 Frecuencia detectada: ${frequency.value.toFixed(2)} Hz`)
   }
 
-  requestAnimationFrame(detectFrequency);
-};
+  requestAnimationFrame(detectFrequency)
+}
 
 micHelper
   .getEstadoMic()
@@ -99,7 +107,35 @@ micHelper
     console.error('Error al obtener el estado del micrófono:', error)
     refMicEstado.value = 'Error'
   })
-  const escuchando = ref(false)
+const escuchando = ref(false)
+function DejarEscuchar() {
+  // Detener todos los tracks del MediaStream primero
+  if (mediaStream.value) {
+    mediaStream.value.getTracks().forEach((track) => {
+      track.stop()
+    })
+    mediaStream.value = null
+  }
+  
+  // Desconectar y cerrar el contexto de audio
+  if (sourceNode.value) {
+    sourceNode.value.disconnect()
+    sourceNode.value = null
+  }
+  
+  if (analyserNode.value) {
+    analyserNode.value.disconnect()
+    analyserNode.value = null
+  }
+  
+  if (audioContext.value && audioContext.value.state !== 'closed') {
+    audioContext.value.close()
+    audioContext.value = null
+  }
+  
+  escuchando.value = false
+}
+// Solicitar acceso al micrófono
 function Solicitar() {
   escuchando.value = true
   micHelper
@@ -118,9 +154,9 @@ function clickVerFrecuencia(frecuencia: number) {
 function calcularNotas() {
   Notas.value = []
   NotasAnteriores.value = []
-  const desdeNota = tipoAfinacion.value / 4
+  const desdeNota = tipoAfinacion.value / 8
   // cantidadNotas es la cantidad de notas en la octava
-  for (let i = 0; i < cantidadNotas.value * 2; i++) {
+  for (let i = 0; i < cantidadNotas.value * 3; i++) {
     const nota = desdeNota * Math.pow(2, i / cantidadNotas.value)
     NotasAnteriores.value.push(nota)
   }
@@ -140,7 +176,7 @@ function styleDivAfinador() {
 }
 
 const maxRadio = 500
-const minRadio = 50
+const minRadio = 100
 const centroLeft = 300
 const centroTop = 230
 function StyleOctava(i: number) {
@@ -277,13 +313,13 @@ function StyleFrecuenciaLinea(frecuencia: number) {
             {{ refViendoFrecuencia.toFixed(0) }}
           </div>
           <div
-          v-if="frequency !== -1"
+            v-if="frequency !== -1"
             :style="StyleFrecuencia(Number(frequency.toFixed(0)))"
             class="frecuencia viendoFrecuencia"
           >
             {{ frequency.toFixed(0) }}
           </div>
-          
+
           <div
             v-for="k in 3"
             :key="k"
@@ -316,8 +352,14 @@ function StyleFrecuenciaLinea(frecuencia: number) {
           />
         </div>
         <div>
-          Permisos Mic: <span v-if="refMicEstado === 'granted'" @click="Solicitar">✔️</span>
-          <span v-if="refMicEstado === 'granted' && !escuchando" @click="Solicitar">[Escuchar]</span>
+          Permisos Mic:
+          <span v-if="refMicEstado === 'granted'" @click="Solicitar">✔️</span>
+          <span
+            v-if="refMicEstado === 'granted' && !escuchando"
+            @click="Solicitar"
+            >[Escuchar]</span
+          >
+          <span v-if="escuchando" @click="DejarEscuchar">[Dejar de escuchar]</span>
 
           <span v-else-if="refMicEstado === 'denied'">❌</span>
           <span v-else-if="refMicEstado === 'error'">⚠️</span>
@@ -328,12 +370,29 @@ function StyleFrecuenciaLinea(frecuencia: number) {
           <span v-else>{{ refMicEstado }}</span>
           <span>{{ frequency }}</span>
         </div>
+        <div>
+          <div v-for="nota in notasAfinar" :key="nota.nombre"
+          :class="{ sonandoNota: Math.abs(frequency - nota.frecuencia) < 12 }">
+            {{ nota.nombre }} ({{ nota.nota }}) : <span @click="clickVerFrecuencia(nota.frecuencia)">{{ nota.frecuencia }}</span> Hz
+
+            <div v-if="Math.abs(frequency - nota.frecuencia) < 12">
+              <div v-if="frequency < nota.frecuencia"> [TENSAR]{{ Math.abs(frequency - nota.frecuencia).toFixed(2) }}</div>
+              <div v-else> [DESTENSAR]{{ Math.abs(frequency - nota.frecuencia).toFixed(2) }}</div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.sonandoNota {
+  background-color: lightgreen;
+  color: black;
+  font-weight: bold;
+}
 .circulodiv {
   position: relative;
 }
@@ -368,6 +427,5 @@ function StyleFrecuenciaLinea(frecuencia: number) {
 }
 </style>
 
-function autoCorrelate(buffer: Float32Array, sampleRate: number) {
-  throw new Error('Function not implemented.')
-}
+function autoCorrelate(buffer: Float32Array, sampleRate: number) { throw new
+Error('Function not implemented.') }
