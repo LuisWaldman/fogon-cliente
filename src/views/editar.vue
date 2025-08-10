@@ -107,7 +107,7 @@ function DescargarJSON() {
   }
 
   const nombreArchivo =
-    `${appStore.editandocancion.nombreArchivo}.json`.toLocaleLowerCase()
+    `${appStore.editandocancion.archivo}.json`.toLocaleLowerCase()
   a.download = nombreArchivo
   a.click()
   URL.revokeObjectURL(url)
