@@ -8,6 +8,7 @@ import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 
 import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
+import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
 const appStore = useAppStore()
 // Definir la canción y el contexto
 const viendo = ref('login')
@@ -99,6 +100,17 @@ function clickOpcion(viendostr: string) {
           <hr />
 
           <ul class="nav nav-pills flex-column mb-auto">
+            <li @click="clickOpcion('Afinar')">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'Afinar' }"
+              >
+                Afinar
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column mb-auto">
             <li @click="clickOpcion('acercade')">
               <a
                 href="#"
@@ -118,6 +130,7 @@ function clickOpcion(viendostr: string) {
         <configsesion v-if="viendo == 'sesion'"> </configsesion>
         <configServidores v-if="viendo == 'servidores'"> </configServidores>
         <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
+        <ConfigAfinador v-if="viendo == 'Afinar'"></ConfigAfinador>
 
         <verRelojes v-if="viendo == 'relojes'"></verRelojes>
       </div>
