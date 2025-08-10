@@ -60,7 +60,7 @@ function StyleOctava(i: number) {
 function StyleFrecuencia(frecuencia: number) {
   let enOctava = Math.floor(Math.log2(frecuencia / tipoAfinacion.value)) + DesdeOctavasCirculo.value
   const baseOctava = tipoAfinacion.value * Math.pow(2, Math.floor(Math.log2(frecuencia / tipoAfinacion.value)))
-  const portentajeEnOctava = (frecuencia - baseOctava) / tipoAfinacion.value 
+  const portentajeEnOctava = (frecuencia - baseOctava) / baseOctava 
 
   if (enOctava < 0) {
     enOctava = 0
