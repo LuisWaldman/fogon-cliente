@@ -8,7 +8,7 @@ export class MusicaHelper {
     hastaEscala: string[],
   ): Cancion {
     cancion.escala = hastaEscala[0]
-    for (let i = 1; i < cancion.acordes.partes.length; i++) {
+    for (let i = 0; i < cancion.acordes.partes.length; i++) {
       for (let j = 0; j < cancion.acordes.partes[i].acordes.length; j++) {
         cancion.acordes.partes[i].acordes[j] = this.GetAcordesNuevaEscala(
           cancion.acordes.partes[i].acordes[j],
