@@ -17,7 +17,6 @@ export class MicHelper {
       return 'denied'
     }
   }
-  
 
   /**
    * Solicita acceso al micrófono si el permiso no está denegado.
@@ -44,7 +43,7 @@ export class MicHelper {
     callback: (newState: PermissionState) => void,
   ): Promise<void> {
     if (!this.permissionStatus) {
-      await this.checkPermission()
+      await this.getEstadoMic()
     }
 
     if (this.permissionStatus) {

@@ -20,12 +20,12 @@ const micHelper = new MicHelper()
 const refMicEstado = ref('')
 const mediaStream = ref<MediaStream | null>(null)
 const notasAfinar = ref([] as NotaAfinar[])
-notasAfinar.value.push(new NotaAfinar('Sexta Cuerda','E2', 82.41))
-notasAfinar.value.push(new NotaAfinar('Quinta Cuerda','A2', 110.00))
-notasAfinar.value.push(new NotaAfinar('Cuarta Cuerda','D3', 146.83))
-notasAfinar.value.push(new NotaAfinar('Tercera Cuerda','G3', 196.00))
-notasAfinar.value.push(new NotaAfinar('Segunda Cuerda','B3', 246.94))
-notasAfinar.value.push(new NotaAfinar('Primera Cuerda','E4', 329.63))
+notasAfinar.value.push(new NotaAfinar('Sexta Cuerda', 'E2', 82.41))
+notasAfinar.value.push(new NotaAfinar('Quinta Cuerda', 'A2', 110.0))
+notasAfinar.value.push(new NotaAfinar('Cuarta Cuerda', 'D3', 146.83))
+notasAfinar.value.push(new NotaAfinar('Tercera Cuerda', 'G3', 196.0))
+notasAfinar.value.push(new NotaAfinar('Segunda Cuerda', 'B3', 246.94))
+notasAfinar.value.push(new NotaAfinar('Primera Cuerda', 'E4', 329.63))
 
 const audioContext = ref<AudioContext | null>(null)
 const analyserNode = ref<AnalyserNode | null>(null)
@@ -116,23 +116,23 @@ function DejarEscuchar() {
     })
     mediaStream.value = null
   }
-  
+
   // Desconectar y cerrar el contexto de audio
   if (sourceNode.value) {
     sourceNode.value.disconnect()
     sourceNode.value = null
   }
-  
+
   if (analyserNode.value) {
     analyserNode.value.disconnect()
     analyserNode.value = null
   }
-  
+
   if (audioContext.value && audioContext.value.state !== 'closed') {
     audioContext.value.close()
     audioContext.value = null
   }
-  
+
   escuchando.value = false
 }
 // Solicitar acceso al micrófono
@@ -359,7 +359,9 @@ function StyleFrecuenciaLinea(frecuencia: number) {
             @click="Solicitar"
             >[Escuchar]</span
           >
-          <span v-if="escuchando" @click="DejarEscuchar">[Dejar de escuchar]</span>
+          <span v-if="escuchando" @click="DejarEscuchar"
+            >[Dejar de escuchar]</span
+          >
 
           <span v-else-if="refMicEstado === 'denied'">❌</span>
           <span v-else-if="refMicEstado === 'error'">⚠️</span>
@@ -371,16 +373,28 @@ function StyleFrecuenciaLinea(frecuencia: number) {
           <span>{{ frequency }}</span>
         </div>
         <div>
-          <div v-for="nota in notasAfinar" :key="nota.nombre"
-          :class="{ sonandoNota: Math.abs(frequency - nota.frecuencia) < 12 }">
-            {{ nota.nombre }} ({{ nota.nota }}) : <span @click="clickVerFrecuencia(nota.frecuencia)">{{ nota.frecuencia }}</span> Hz
+          <div
+            v-for="nota in notasAfinar"
+            :key="nota.nombre"
+            :class="{ sonandoNota: Math.abs(frequency - nota.frecuencia) < 12 }"
+          >
+            {{ nota.nombre }} ({{ nota.nota }}) :
+            <span @click="clickVerFrecuencia(nota.frecuencia)">{{
+              nota.frecuencia
+            }}</span>
+            Hz
 
             <div v-if="Math.abs(frequency - nota.frecuencia) < 12">
-              <div v-if="frequency < nota.frecuencia"> [TENSAR]{{ Math.abs(frequency - nota.frecuencia).toFixed(2) }}</div>
-              <div v-else> [DESTENSAR]{{ Math.abs(frequency - nota.frecuencia).toFixed(2) }}</div>
+              <div v-if="frequency < nota.frecuencia">
+                [TENSAR]{{ Math.abs(frequency - nota.frecuencia).toFixed(2) }}
+              </div>
+              <div v-else>
+                [DESTENSAR]{{
+                  Math.abs(frequency - nota.frecuencia).toFixed(2)
+                }}
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
