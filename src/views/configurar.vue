@@ -6,7 +6,6 @@ import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 
-
 import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
