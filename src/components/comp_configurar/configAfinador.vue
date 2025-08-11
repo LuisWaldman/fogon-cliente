@@ -5,6 +5,8 @@ import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
 import frecuen from './frecuenciometro.vue'
 
+import circulo from './circulo.vue'
+
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
@@ -224,45 +226,7 @@ function StyleFrecuencia(frecuencia: number) {
       ></frecuen>
     </div>
     <div style="display: flex">
-      <div style="position: relative">
-        <div class="circulodiv" style="display: flex; width: 800px">
-          <div v-for="i in octavasCirculo" :key="i">
-            <div :style="StyleOctava(i)" class="circuloOctava"></div>
-          </div>
 
-          <div
-            :style="StyleFrecuencia(Number(refViendoFrecuencia.toFixed(0)))"
-            class="frecuencia viendoFrecuencia"
-          >
-            {{ refViendoFrecuencia.toFixed(0) }}
-          </div>
-          <div
-            v-if="frequency !== -1"
-            :style="StyleFrecuencia(Number(frequency.toFixed(0)))"
-            class="frecuencia viendoFrecuencia"
-          >
-            {{ frequency.toFixed(0) }}
-          </div>
-
-          <div
-            v-for="k in 3"
-            :key="k"
-            :style="StyleFrecuencia(tipoAfinacion * Math.pow(2, (k - 1) * 2))"
-            class="frecuencia"
-          >
-            {{ (tipoAfinacion * Math.pow(2, (k - 1) * 2)).toFixed(0) }}
-          </div>
-
-          <div
-            v-for="k in 3"
-            :key="k"
-            :style="StyleFrecuencia(440 * Math.pow(2, (k - 1) * 2))"
-            class="frecuencia"
-          >
-            {{ (440 * Math.pow(2, (k - 1) * 2)).toFixed(0) }}
-          </div>
-        </div>
-      </div>
       <div>
         <div>Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
         <div>
@@ -328,6 +292,12 @@ function StyleFrecuencia(frecuencia: number) {
           </div>
         </div>
       </div>
+            <circulo
+        :tipoAfinacion="tipoAfinacion"
+        :cantidadNotas="cantidadNotas"
+        :frecuencia="frequency"
+        :ancho="ancho"
+      ></circulo>
     </div>
   </div>
 </template>
@@ -341,19 +311,11 @@ function StyleFrecuencia(frecuencia: number) {
 .circulodiv {
   position: relative;
 }
-.circuloOctava {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid rgb(133, 104, 202);
-}
 .viendoFrecuencia {
   background-color: rgb(133, 104, 202);
   color: white;
   padding: 2px;
   border: 1px solid black;
-}
-.frecuencia {
-  position: absolute;
 }
 .divAfinador {
 }
@@ -371,6 +333,3 @@ function StyleFrecuencia(frecuencia: number) {
   height: 30px;
 }
 </style>
-
-function autoCorrelate(buffer: Float32Array, sampleRate: number) { throw new
-Error('Function not implemented.') }
