@@ -34,12 +34,13 @@ export const useAppStore = defineStore('app', () => {
 
   const editandocancion = ref<Cancion>(
     new Cancion(
-      'Cancion no cargada',
-      'sin banda',
+      '',
+      '',
       new Acordes([new Parte('', [''])], [0]),
       new Letra([['']]),
     ),
   )
+  editandocancion.value.escala = 'C'
 
   const sesiones = ref<Sesion[]>([] as Sesion[])
   const listaCanciones = ref<itemLista[]>([])

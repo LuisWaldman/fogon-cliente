@@ -82,7 +82,7 @@ function clickConfirmarCambiarEscala() {
       class="lblCabecera"
       v-if="cambiandoEscalaEstado == ''"
       @click="clickCambiarEscala"
-      >[cambiar]</span
+      >🔄</span
     >
     <span
       class="lblCabecera"
