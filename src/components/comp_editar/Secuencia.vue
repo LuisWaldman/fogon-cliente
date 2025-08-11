@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
-import type { Parte } from '../../modelo/cancion/acordes';
+import type { Parte } from '../../modelo/cancion/acordes'
 
 import editarParte from './editarParte.vue'
 const props = defineProps<{
@@ -118,8 +118,12 @@ Actualizar(props.cancion)
   <div v-if="reperesu.length > 0">
     <span style="font-size: large">Secuencia</span>
     <div style="display: flex; flex-wrap: wrap">
-      <div v-for="(parte, index) in secuResu" :key="index" 
-          class="secuencia" @click="clickSecuencia(index)">
+      <div
+        v-for="(parte, index) in secuResu"
+        :key="index"
+        class="secuencia"
+        @click="clickSecuencia(index)"
+      >
         <div class="ordendiv">
           <span
             :class="{
@@ -139,9 +143,11 @@ Actualizar(props.cancion)
       </div>
     </div>
   </div>
-  <editarParte v-if="viendoParte && parte !== null" :parte="parte"></editarParte>
+  <editarParte
+    v-if="viendoParte && parte !== null"
+    :parte="parte"
+  ></editarParte>
   <div>
-    
     <span style="font-size: large">Modificar:</span>
   </div>
 </template>

@@ -21,28 +21,25 @@ const NuevasNotasPosicionadasEscala = ref([] as string[][])
 const helperMuisca = new MusicaHelper()
 const TodasLasNotas = ref(helperMuisca.GetNotas())
 function clickCambiarEscala() {
-  
-    if (appStore.editandocancion.escala) {
-      desdeEscala.value = appStore.editandocancion.escala
-      if (desdeEscala.value.includes('m')) {
-        esMenor.value = true
-        desdeEscala.value = desdeEscala.value.replace('m', '')
-      }
-      // Obtener la escala de acordes basada en la escala actual
-      Escala.value = helperMuisca.GetAcordesdeescala(
-        appStore.editandocancion.escala,
-      )
-
-      NotasPosicionadasEscala.value = helperMuisca.GetNotasPosicionadasEscala(
-        appStore.editandocancion,
-        Escala.value,
-      )
-      toEscala.value = desdeEscala.value
-    } else {
-      toEscala.value = 'C'
+  if (appStore.editandocancion.escala) {
+    desdeEscala.value = appStore.editandocancion.escala
+    if (desdeEscala.value.includes('m')) {
+      esMenor.value = true
+      desdeEscala.value = desdeEscala.value.replace('m', '')
     }
+    // Obtener la escala de acordes basada en la escala actual
+    Escala.value = helperMuisca.GetAcordesdeescala(
+      appStore.editandocancion.escala,
+    )
 
-  
+    NotasPosicionadasEscala.value = helperMuisca.GetNotasPosicionadasEscala(
+      appStore.editandocancion,
+      Escala.value,
+    )
+    toEscala.value = desdeEscala.value
+  } else {
+    toEscala.value = 'C'
+  }
 }
 clickCambiarEscala()
 function changeToEscala() {
@@ -74,9 +71,7 @@ function clickConfirmarCambiarEscala() {
 </script>
 <template>
   <div>
-    <span
-      class="lblCabecera"
-      @click="clickCancelarCambiarEscala"
+    <span class="lblCabecera" @click="clickCancelarCambiarEscala"
       >[cancelar]</span
     >
     <span
@@ -86,7 +81,7 @@ function clickConfirmarCambiarEscala() {
       >[confirmar]</span
     >
   </div>
-  <div >
+  <div>
     <table style="border-collapse: collapse; width: 100%">
       <thead>
         <tr>
@@ -165,6 +160,4 @@ th {
 }
 </style>
 
-function emit(arg0: string) {
-  throw new Error('Function not implemented.')
-}
+function emit(arg0: string) { throw new Error('Function not implemented.') }
