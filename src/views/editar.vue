@@ -12,7 +12,7 @@ import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
 
 const pantalla = new Pantalla()
-
+const editandoCompas = ref(0)
 const appStore = useAppStore()
 function guardarCambios() {
   // Create the Cancion object structure as expected by the backend

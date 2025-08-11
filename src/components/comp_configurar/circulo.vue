@@ -9,10 +9,50 @@ const props = defineProps<{
   cantidadNotas: number
   ancho: number
 }>()
+
+// Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
+watch(
+  [() => props.tipoAfinacion, () => props.cantidadNotas],
+  () => {
+    calcularNotas();
+  }
+);
 const maxRadio = 500
 const minRadio = 100
 const centroLeft = 300
 const centroTop = 230
+const FrecuenciaNotas = ref<number[]>([]) // Cantidad de notas en la afinación
+const NombreNotas = ref<string[]>([])
+
+const notas: string[] = [
+  'A',
+  'A#',
+  'B',
+  'C',
+  'C#',
+  'D',
+  'D#',
+  'E',
+  'F',
+  'F#',
+  'G',
+  'G#',
+]
+function calcularNotas() {
+  FrecuenciaNotas.value = []
+  NombreNotas.value = []
+  const desdeNota = props.tipoAfinacion / 8
+  // cantidadNotas es la cantidad de notas en la octava
+  const desdeEscala = 1
+  for (let i = 0; i < props.cantidadNotas * 8; i++) {
+    const nota = desdeNota * Math.pow(2, i / props.cantidadNotas)
+    FrecuenciaNotas.value.push(nota)
+    NombreNotas.value.push(
+      notas[i % notas.length] + Math.floor(i / notas.length + desdeEscala),
+    )
+  }
+}
+calcularNotas()
 
 function StyleOctava(i: number) {
   const radio =
@@ -70,13 +110,22 @@ function StyleFrecuencia(frecuencia: number) {
           </div>
 
           <div
-          :v-if="props.frecuencia > 0"
+          :v-if="Number(frecuencia) > 0"
             :style="StyleFrecuencia(Number(frecuencia.toFixed(0)))"
             class="frecuencia viendoFrecuencia"
           >
             {{ frecuencia.toFixed(0) }}
           </div>
-       
+
+
+          <div
+          v-for="(nombre, index) in NombreNotas" :key="index"
+          class="frecuencia"
+          :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
+          >
+            {{ nombre }}
+          </div>
+
         </div>
       </div>
 </template>
@@ -90,5 +139,13 @@ function StyleFrecuencia(frecuencia: number) {
 
 .frecuencia {
   position: absolute;
+}
+
+.viendoFrecuencia {
+  font-weight: bold;
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 15px;
 }
 </style>

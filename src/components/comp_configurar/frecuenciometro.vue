@@ -28,7 +28,13 @@ const props = defineProps<{
   cantidadNotas: number
   ancho: number
 }>()
-
+// Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
+watch(
+  [() => props.tipoAfinacion, () => props.cantidadNotas],
+  () => {
+    calcularNotas();
+  }
+);
 watch(
   () => props.frecuencia,
   (newFrecuencia) => {
