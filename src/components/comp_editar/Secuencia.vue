@@ -69,8 +69,6 @@ function Actualizar(cancion: Cancion) {
   reperesu.value = newpartesresu
 }
 
-
-
 let actualizadoAsk = false
 function Actualizado() {
   if (reperesu.value.length == 0) {

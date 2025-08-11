@@ -6,6 +6,7 @@ import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_editar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
+import sugerencias from '../components/comp_editar/sugerencias.vue'
 
 import { ref, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
@@ -158,6 +159,15 @@ function DescargarJSON() {
           vista.viendo !== 'editaracordes'
         "
       ></Secuencia>
+      <sugerencias
+        :cancion="appStore.editandocancion"
+        :compas="appStore.compas"
+        @cambioCompas="cambiarCompas"
+        v-if="
+          vista.viendo !== 'editconsolaacordes' &&
+          vista.viendo !== 'editaracordes'
+        "
+      ></sugerencias>
       <Partes
         v-if="
           vista.viendo !== 'editconsolaacordes' &&

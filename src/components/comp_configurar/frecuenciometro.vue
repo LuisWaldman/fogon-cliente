@@ -29,12 +29,9 @@ const props = defineProps<{
   ancho: number
 }>()
 // Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
-watch(
-  [() => props.tipoAfinacion, () => props.cantidadNotas],
-  () => {
-    calcularNotas();
-  }
-);
+watch([() => props.tipoAfinacion, () => props.cantidadNotas], () => {
+  calcularNotas()
+})
 watch(
   () => props.frecuencia,
   (newFrecuencia) => {
@@ -42,11 +39,11 @@ watch(
       const index = CorrespondeNota(newFrecuencia)
       mostrandoNota.value = FrecuenciaNotas.value[index]
 
-      const contenedor = document.getElementById('contenedorFrecuenciometro');
+      const contenedor = document.getElementById('contenedorFrecuenciometro')
       if (contenedor) {
-        let scroll =  index * 50 - 300
+        let scroll = index * 50 - 300
         if (scroll < 0) scroll = 0
-        contenedor.scrollLeft = scroll; // Ajusta el desplazamiento horizontal
+        contenedor.scrollLeft = scroll // Ajusta el desplazamiento horizontal
       }
     }
   },
@@ -71,7 +68,6 @@ function calcularNotas() {
   }
 }
 calcularNotas()
-
 
 mostrandoNota.value = FrecuenciaNotas.value[CorrespondeNota(props.frecuencia)]
 function StyleFrecuenciaLinea(frecuencia: number) {
@@ -106,10 +102,10 @@ function StyleFrecuenciaLinea(frecuencia: number) {
     'background-color': backgroundColor,
     color: color,
     border: border,
-    'width': ancho + 'px',
+    width: ancho + 'px',
     'min-width': ancho + 'px',
     'max-width': ancho + 'px',
-    'overflow': 'hidden',
+    overflow: 'hidden',
     'text-overflow': 'ellipsis',
     'white-space': 'nowrap',
     'padding-top': '-12px',
@@ -122,7 +118,10 @@ function CorrespondeNota(frecuencia: number): number {
       if (i == 0) {
         return i
       }
-      if (Math.abs(frecuencia - FrecuenciaNotas.value[i - 1]) < Math.abs(frecuencia - FrecuenciaNotas.value[i])) {
+      if (
+        Math.abs(frecuencia - FrecuenciaNotas.value[i - 1]) <
+        Math.abs(frecuencia - FrecuenciaNotas.value[i])
+      ) {
         return i - 1
       }
       return i
@@ -132,16 +131,17 @@ function CorrespondeNota(frecuencia: number): number {
 }
 </script>
 <template>
-  <div :style="{ width: props.ancho + 'px' }" class="clsFrecuencia" id="contenedorFrecuenciometro">
-    
+  <div
+    :style="{ width: props.ancho + 'px' }"
+    class="clsFrecuencia"
+    id="contenedorFrecuenciometro"
+  >
     <div
-    
       v-for="(nota, index) in FrecuenciaNotas"
       @click="clickVerFrecuencia(nota)"
       :key="index"
       :class="[mostrandoNota === nota ? 'notaMostrada' : '']"
       :style="StyleFrecuenciaLinea(nota)"
-      
     >
       <div>{{ nota.toFixed(0) }}</div>
       <div>{{ NombreNotas[index] }}</div>
@@ -150,14 +150,12 @@ function CorrespondeNota(frecuencia: number): number {
 </template>
 <style scoped>
 .clsFrecuencia {
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
 .clsNota {
-  
 }
 .notaMostrada {
   background-color: rgba(255, 255, 0, 0.5);

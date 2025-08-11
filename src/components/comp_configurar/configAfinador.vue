@@ -216,7 +216,6 @@ function StyleFrecuencia(frecuencia: number) {
     <div style="display: flex">
       <div width="200px" max-width="200px">
         FRECUENCIA <span> {{ frequency.toFixed(2) }} </span> Hz
-        
       </div>
       <frecuen
         :tipoAfinacion="tipoAfinacion"
@@ -226,7 +225,6 @@ function StyleFrecuencia(frecuencia: number) {
       ></frecuen>
     </div>
     <div style="display: flex">
-
       <div>
         <div>Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
         <div>
@@ -239,12 +237,7 @@ function StyleFrecuencia(frecuencia: number) {
             @focus="clickVerFrecuencia(tipoAfinacion)"
           />
           Hz Total de Notas:
-          <input
-            type="number"
-            v-model="cantidadNotas"
-            min="1"
-            max="24"
-          />
+          <input type="number" v-model="cantidadNotas" min="1" max="24" />
         </div>
         <div>
           Permisos Mic:
@@ -292,7 +285,7 @@ function StyleFrecuencia(frecuencia: number) {
           </div>
         </div>
       </div>
-            <circulo
+      <circulo
         :tipoAfinacion="tipoAfinacion"
         :cantidadNotas="cantidadNotas"
         :frecuencia="frequency"

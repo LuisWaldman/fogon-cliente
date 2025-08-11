@@ -12,11 +12,11 @@ defineProps<{
 
 const appStore = useAppStore()
 const viendo = ref('')
-function click_cambiar(que: string) {
+function clickCambiar(que: string) {
   viendo.value == que ? (viendo.value = '') : (viendo.value = que)
 }
 
-function click_cerrar() {
+function clickCerrar() {
   viendo.value = ''
 }
 </script>
@@ -24,14 +24,14 @@ function click_cerrar() {
 <template>
   <div class="navbarFogon">
     <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
-    <label @click="click_cambiar('archivo')" @cerrar="click_cerrar">🔄</label>
+    <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
-    <label @click="click_cambiar('escala')" @cerrar="click_cerrar">🔄</label>
+    <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
     <label
       >Tiempo: {{ cancion.bpm }} BPM {{ cancion.compasCantidad }} /
       {{ cancion.compasUnidad }}</label
     >
-    <label @click="click_cambiar('tiempo')" @cerrar="click_cerrar">🔄</label>
+    <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
     <editararchivo
       v-if="viendo == 'archivo'"
       :cancion="cancion"
@@ -39,7 +39,7 @@ function click_cerrar() {
     <editarescala
       v-if="viendo == 'escala'"
       :cancion="cancion"
-      @cerrar="click_cerrar"
+      @cerrar="clickCerrar"
     ></editarescala>
     <editartiempo v-if="viendo == 'tiempo'" :cancion="cancion"></editartiempo>
   </div>

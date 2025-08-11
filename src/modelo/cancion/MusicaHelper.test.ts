@@ -32,7 +32,50 @@ describe('MusicaHelper', () => {
       'G',
     ])
   })
+  it('GetNotasdeescala returns correct notes for different scales', () => {
+    const helper = new MusicaHelper()
 
+    expect(helper.GetNotasdeescala('C')).toEqual([
+      'C',
+      'D',
+      'E',
+      'F',
+      'G',
+      'A',
+      'B',
+    ])
+    expect(helper.GetNotasdeescala('G')).toEqual([
+      'G',
+      'A',
+      'B',
+      'C',
+      'D',
+      'E',
+      'F#',
+    ])
+    expect(helper.GetNotasdeescala('Am')).toEqual([
+      'Am',
+      'B',
+      'C',
+      'D',
+      'E',
+      'F',
+      'G',
+    ])
+    expect(helper.GetNotasdeescala('Dm')).toEqual([
+      'Dm',
+      'E',
+      'F',
+      'G',
+      'A',
+      'A#',
+      'C',
+    ])
+
+    // Edge cases
+    expect(helper.GetNotasdeescala('')).toEqual([])
+    expect(helper.GetNotasdeescala(undefined)).toEqual([])
+  })
   it('Posicion en escala', () => {
     const helper = new MusicaHelper()
     expect(helper.PosicionNotaEnEscala(['A'], 'A')).toEqual(0)

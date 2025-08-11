@@ -11,12 +11,9 @@ const props = defineProps<{
 }>()
 
 // Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
-watch(
-  [() => props.tipoAfinacion, () => props.cantidadNotas],
-  () => {
-    calcularNotas();
-  }
-);
+watch([() => props.tipoAfinacion, () => props.cantidadNotas], () => {
+  calcularNotas()
+})
 const maxRadio = 500
 const minRadio = 100
 const centroLeft = 300
@@ -103,34 +100,32 @@ function StyleFrecuencia(frecuencia: number) {
 }
 </script>
 <template>
-   <div style="position: relative">
-        <div class="circulodiv" style="display: flex; width: 800px">
-          <div v-for="i in octavasCirculo" :key="i">
-            <div :style="StyleOctava(i)" class="circuloOctava"></div>
-          </div>
-
-          <div
-          :v-if="Number(frecuencia) > 0"
-            :style="StyleFrecuencia(Number(frecuencia.toFixed(0)))"
-            class="frecuencia viendoFrecuencia"
-          >
-            {{ frecuencia.toFixed(0) }}
-          </div>
-
-
-          <div
-          v-for="(nombre, index) in NombreNotas" :key="index"
-          class="frecuencia"
-          :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
-          >
-            {{ nombre }}
-          </div>
-
-        </div>
+  <div style="position: relative">
+    <div class="circulodiv" style="display: flex; width: 800px">
+      <div v-for="i in octavasCirculo" :key="i">
+        <div :style="StyleOctava(i)" class="circuloOctava"></div>
       </div>
+
+      <div
+        :v-if="Number(frecuencia) > 0"
+        :style="StyleFrecuencia(Number(frecuencia.toFixed(0)))"
+        class="frecuencia viendoFrecuencia"
+      >
+        {{ frecuencia.toFixed(0) }}
+      </div>
+
+      <div
+        v-for="(nombre, index) in NombreNotas"
+        :key="index"
+        class="frecuencia"
+        :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
+      >
+        {{ nombre }}
+      </div>
+    </div>
+  </div>
 </template>
 <style scoped>
-
 .circuloOctava {
   position: absolute;
   border-radius: 50%;
