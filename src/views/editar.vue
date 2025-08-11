@@ -12,7 +12,10 @@ import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
 
 const pantalla = new Pantalla()
-const editandoCompas = ref(0)
+const editandoCompas = ref(-1)
+function cambiarCompas(compas: number) {
+  editandoCompas.value = compas
+}
 const appStore = useAppStore()
 function guardarCambios() {
   // Create the Cancion object structure as expected by the backend
@@ -119,7 +122,7 @@ function DescargarJSON() {
       <TocarLetraAcorde
         v-if="vista.viendo != 'editartexto'"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
       ></TocarLetraAcorde>
 
       <editartexto
@@ -149,6 +152,7 @@ function DescargarJSON() {
       <Secuencia
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
+        @cambioCompas="cambiarCompas"
         v-if="
           vista.viendo !== 'editconsolaacordes' &&
           vista.viendo !== 'editaracordes'

@@ -29,10 +29,13 @@ function clickSecuencia(secuencia: number) {
   viendoRepSecuencia.value = 0
   viendoParte.value = true
   parte.value = props.cancion.acordes.partes[secuResu.value[secuencia]]
+
+  cambiarCompas(desdeacorde.value[secuencia])
 }
 
 const secuResu = ref([] as number[])
 const reperesu = ref([] as number[])
+const desdeacorde = ref([] as number[])
 
 const mostrandoResumenParteIndex = ref(-1)
 const mostrandoResumenParte = ref(-1)
@@ -47,56 +50,27 @@ watch(
 function Actualizar(cancion: Cancion) {
   let newresu: number[] = []
   let newpartesresu: number[] = []
+  let newdesdeacorde: number[] = []
   let metiendo = -1
+  let desdeCont = 0
   cancion.acordes.ordenPartes.forEach((element) => {
     if (metiendo != element) {
       newresu.push(element)
       newpartesresu.push(1)
       metiendo = element
+      newdesdeacorde.push(desdeCont)
     } else {
       newpartesresu[newpartesresu.length - 1] += 1
     }
+    desdeCont += cancion.acordes.partes[element].acordes.length
   })
+  desdeacorde.value = newdesdeacorde
   secuResu.value = newresu
   reperesu.value = newpartesresu
 }
 
-watch(
-  () => props.compas,
-  (newCompas) => {
-    let totalCompases = 0
-    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
-      let compasesxparte =
-        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
-          .acordes.length
-      if (newCompas < totalCompases + compasesxparte) {
-        mostrandoParte.value = i
-        mostrandoCompasparte.value = newCompas - totalCompases
-        break
-      }
-      totalCompases += compasesxparte
-    }
-    currentCompas.value = newCompas
-    calcularresumenparte()
-  },
-)
 
-function calcularresumenparte() {
-  if (reperesu.value.length == 0) {
-    return
-  }
 
-  let cont = reperesu.value[0]
-  let i = 0
-  while (cont <= mostrandoParte.value) {
-    i++
-    cont += reperesu.value[i]
-  }
-
-  mostrandoResumenParteIndex.value = i
-  mostrandoResumenParte.value =
-    reperesu.value[i] - (cont - mostrandoParte.value)
-}
 let actualizadoAsk = false
 function Actualizado() {
   if (reperesu.value.length == 0) {
