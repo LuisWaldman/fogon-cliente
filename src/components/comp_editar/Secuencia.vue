@@ -139,7 +139,11 @@ Actualizar(props.cancion)
       </div>
     </div>
   </div>
-  <editarParte v-if="viendoParte" :parte="parte"></editarParte>
+  <editarParte v-if="viendoParte && parte !== null" :parte="parte"></editarParte>
+  <div>
+    
+    <span style="font-size: large">Modificar:</span>
+  </div>
 </template>
 
 <style scoped>
