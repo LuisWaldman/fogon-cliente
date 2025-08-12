@@ -12,39 +12,82 @@ const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 const mostrandoParte = ref(-1)
 const mostrandoCompasParte = ref(-1)
 const currentCompas = ref(0)
-const letras = ref([] as string[][])
+const renglones = ref([] as string[])
+const Acordes = ref([] as string[][])
+const CompasAcorde = ref([] as number[][])
+const AcordesLeft = ref([] as number[][])
 
 watch(
   () => props.cancion,
   (cancion: Cancion) => {
-    actualizarLetras(cancion)
+    ActualizarCancion(cancion)
   },
 )
+const CaracterxRenglon = 80 // Ancho promedio de un carácter en píxeles
+const anchoCaracter = 10 // Ancho promedio de un carácter en píxeles
+function ActualizarCancion(cancion: Cancion) {
+  renglones.value = []
+  Acordes.value = []
+  AcordesLeft.value = []
+  CompasAcorde.value = []
+  let renglonActual = ''
+  let TodosAcordes = cancion.acordes.GetTodosLosAcordes()
+  let indiceAcorde = 0
+  let acordesActual: string[] = []
+  let acordesLeftActual: number[] = []
+  let compasActual: number[] = []
+  cancion.letras.renglones.flat().forEach((renglon) => {
+    if (indiceAcorde < TodosAcordes.length) {
+      let acorde = TodosAcordes[indiceAcorde]
+      acordesActual.push(acorde)
+      acordesLeftActual.push(renglonActual.length * anchoCaracter)
+      compasActual.push(indiceAcorde)
 
-function actualizarLetras(cancion: Cancion) {
-  let nuevaLetra = [] as string[][]
-  const letraFlat = cancion.letras.renglones.flat()
-  let cont = 0
-  for (var i = 0; i < cancion.acordes.ordenPartes.length; i++) {
-    for (
-      var j = 0;
-      j < cancion.acordes.partes[cancion.acordes.ordenPartes[i]].acordes.length;
-      j++
-    ) {
-      if (!nuevaLetra[i]) {
-        nuevaLetra[i] = [] as string[]
-      }
-      if (letraFlat.length < cont) {
-        nuevaLetra[i][j] = ''
       } else {
-        nuevaLetra[i][j] = letraFlat[cont]
+        acordesActual.push('¿?')
+        acordesLeftActual.push(renglonActual.length * anchoCaracter)
+        compasActual.push(-1)
       }
-
-      cont++
+    indiceAcorde++
+    renglonActual += renglon
+    // SI LLEGO A UN NUEVO RENGLON
+    if (renglonActual.includes('/n' ) || renglonActual.length > CaracterxRenglon) {
+      
+      if (renglonActual.includes('/n' )) {
+      const parte = renglonActual.split('/n')
+      renglonActual = parte[1] || ''
+      renglones.value.push(parte[0])
+    } else {
+      const nuevoRenglon = renglonActual.slice(0, CaracterxRenglon)
+      renglones.value.push(nuevoRenglon)
+      renglonActual = renglonActual.slice(CaracterxRenglon)
     }
-  }
-  letras.value = nuevaLetra
-  CalcularResaltado(props.compas)
+
+      Acordes.value.push(acordesActual)
+      AcordesLeft.value.push(acordesLeftActual)
+      CompasAcorde.value.push(compasActual)
+      acordesActual = []
+      acordesLeftActual = []
+      compasActual = []
+
+      if (renglonActual.trim().length > 0) {
+      
+        acordesActual = ["."]
+        acordesLeftActual = [0]
+        compasActual = [indiceAcorde - 1]
+      }
+    }
+    
+  })
+    renglones.value.push(renglonActual)
+      Acordes.value.push(acordesActual)
+      AcordesLeft.value.push(acordesLeftActual)
+      CompasAcorde.value.push(compasActual)
+      acordesActual = []
+      acordesLeftActual = []
+      compasActual = []
+  
+  
 }
 
 function CalcularResaltado(newCompas: number) {
@@ -66,19 +109,25 @@ function CalcularResaltado(newCompas: number) {
 watch(
   () => props.compas,
   (newCompas) => {
-    Actualizar()
     CalcularResaltado(newCompas)
-
-    const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    const configuracionPantalla = pantalla.getConfiguracionPantalla()
+    renglones.value.forEach((_renglon, index) => {
+      CompasAcorde.value[index].forEach((compas, _acordeIndex) => {
+        if (compas === newCompas) {
+          // Scroll to the div if it's in the current view
+          
+              const configuracionPantalla = pantalla.getConfiguracionPantalla()
     const tamanioLetra = configuracionPantalla.tamanioLetra
     const tamanioAcorde = configuracionPantalla.tamanioAcorde
     const factorScroll = configuracionPantalla.factorScroll // Usar la nueva propiedad
-    let ve = renglon * (tamanioLetra + tamanioAcorde) * factorScroll // Usar la nueva propiedad
+    let ve = index * (tamanioLetra + tamanioAcorde) * factorScroll
     ve -= (tamanioLetra + tamanioAcorde) * 10
     const nuevaPos = Math.max(ve, 0)
-
-    moverScroll(nuevaPos)
+          console.log(`Scrolling to ${nuevaPos}px`)
+          moverScroll(nuevaPos)
+          return
+        }
+      })  
+    })
   },
 )
 
@@ -86,141 +135,83 @@ function moverScroll(posX: number) {
   letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
 }
 
-function Actualizar() {
-  if (letras.value.length === 0) {
-    actualizarLetras(props.cancion)
-  }
-  return false
-}
 function styleDivTocar() {
   return {
     height: pantalla.getAltoPantalla() + 'px',
   }
 }
-
+let yaActualizado = false
 function Actualizado() {
-  if (props.cancion.letras.renglones.length > 0 && letras.value.length === 0) {
-    actualizarLetras(props.cancion)
+  if (yaActualizado) return false
+  yaActualizado = true
+  if (props.cancion.letras.renglones.length > 0 && renglones.value.length === 0) {
+    ActualizarCancion(props.cancion)
   }
   return false
+}
+function Actualizar() {
+  ActualizarCancion(props.cancion)
 }
 
 defineExpose({ Actualizar })
 </script>
 <template>
   <div>
-    <div v-if="Actualizado()" @click="Actualizar">.. No cargada ..</div>
+    
+  <div v-if="Actualizado()">
+    .. No cargada ..
+  </div>
     <div
       style="position: relative"
+      
       class="componenteMusical"
-      v-if="letras.length > 0 && cancion.letras.renglones.length > 0"
-    >
-      <div
+    :style="styleDivTocar()"
+      
         ref="letraDiv"
-        class="overflow-auto divDeLetra"
-        :style="styleDivTocar()"
-      >
-        <div style="display: flex; flex-wrap: wrap">
-          <template
-            v-for="(parte, index) in cancion.acordes.ordenPartes"
-            :key="index"
-          >
-            <template
-              v-for="(aco, index_aco) in cancion.acordes.partes[parte].acordes"
-              :key="index_aco"
-            >
-              <!-- SIN ENTER -->
-              <div
-                v-if="!letras[index][index_aco].includes('/n')"
-                :class="{
-                  en_compas:
-                    mostrandoParte === index &&
-                    mostrandoCompasParte === index_aco,
-                }"
-              >
-                <div>
-                  <div class="acordediv">{{ aco }}</div>
-                </div>
-                <div class="divletra">{{ letras[index][index_aco] }}&nbsp;</div>
-              </div>
+    >
+    <div
+      v-for="(renglon, index) in renglones"
+      :key="index"
+      :style="{ position: 'relative'}"
+    >
+      <div class="divletra">{{ renglon }}</div>
+      <div v-for="(acorde, acordeIndex) in Acordes[index]" 
+      :style="{ position: 'absolute', left: AcordesLeft[index][acordeIndex] + 'px', top: '-30px' }"
+      :key="acordeIndex"
+      :class="{'en_compas': CompasAcorde[index][acordeIndex] === compas}"
+      class="acordediv"
+      >{{ acorde }}
+      
 
-              <!-- 1 CON ENTER -->
-              <div
-                v-if="
-                  letras[index][index_aco] &&
-                  letras[index][index_aco].includes('/n')
-                "
-                :class="{
-                  en_compas:
-                    mostrandoParte === index &&
-                    mostrandoCompasParte === index_aco,
-                }"
-              >
-                <div>
-                  <div class="acordediv">{{ aco }}</div>
-                </div>
-                <div class="divletra">
-                  {{ letras[index][index_aco].split('/n')[0] }}
-                </div>
-              </div>
-
-              <!-- 1 BREACK CON ENTER-->
-              <div
-                class="break"
-                v-if="
-                  letras[index][index_aco] &&
-                  letras[index][index_aco].includes('/n')
-                "
-              ></div>
-              <!-- 1 SIN ENTER-->
-              <div
-                v-if="
-                  letras[index][index_aco] &&
-                  letras[index][index_aco].includes('/n')
-                "
-                :class="{
-                  en_compas:
-                    mostrandoParte === index &&
-                    mostrandoCompasParte === index_aco,
-                }"
-              >
-                <div>
-                  <div class="acordediv">&nbsp;</div>
-                </div>
-                <div class="divletra">
-                  {{ letras[index][index_aco].split('/n')[1] }}
-                </div>
-              </div>
-            </template>
-          </template>
-        </div>
-        <div>&nbsp;</div>
       </div>
+      
+    </div>
+      
     </div>
   </div>
 </template>
 
 <style scoped>
-.divDeLetra {
-  scrollbar-color: black transparent;
-  scrollbar-width: thin;
-}
-
 .componenteMusical {
-  color: white;
-  padding: 6px;
+  padding-top: 30px;
+  width: 100%;
   height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
 }
-.read-the-docs {
-  color: #888;
+.divletra {
+  font-size: var(--tamanio-letra);
+  color: white;
+  margin-bottom: 40px;
 }
 
-.break {
-  flex-basis: 100%;
+.en_compas  {
+  background-color: rgb(114, 72, 72);
+  color: white;
 }
-.parte {
-  display: flex;
-}
+
+
 .acordediv {
   font-size: var(--tamanio-acorde);
   margin: 1px;
@@ -230,19 +221,5 @@ defineExpose({ Actualizar })
   margin-right: 4px;
 }
 
-.ordenparte {
-  border: 1px solid #888;
-  width: 25%;
-}
-.divletra {
-  font-size: var(--tamanio-letra);
-}
 
-.en_compas .acordediv {
-  background-color: red;
-  color: white;
-}
-.en_compas .divletra {
-  color: red;
-}
 </style>
