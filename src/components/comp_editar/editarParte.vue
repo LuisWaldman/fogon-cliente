@@ -7,7 +7,9 @@ defineProps<{
 </script>
 <template>
   <div>
-    <span class="spnNota" v-for="(acorde, i) in parte.acordes" :key="i">{{acorde}}</span>
+    <span class="spnNota" v-for="(acorde, i) in parte.acordes" :key="i">{{
+      acorde
+    }}</span>
   </div>
 </template>
 <style scoped>

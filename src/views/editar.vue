@@ -125,25 +125,21 @@ function Actualizar() {
   }
 }
 
-
 watch(
   () => appStore.editandocancion.escala,
   (_newValue) => {
-      if (ctrlEditarTexto.value) {
-    ctrlEditarTexto.value.Actualizar()
-  }
-      
+    if (ctrlEditarTexto.value) {
+      ctrlEditarTexto.value.Actualizar()
+    }
   },
 )
-
 
 watch(
   () => appStore.editandocancion,
   (_newValue) => {
-      if (ctrlEditarTexto.value) {
-    ctrlEditarTexto.value.Actualizar()
-  }
-      
+    if (ctrlEditarTexto.value) {
+      ctrlEditarTexto.value.Actualizar()
+    }
   },
 )
 </script>

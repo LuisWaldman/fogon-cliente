@@ -34,4 +34,15 @@ export class SugerenciaAgregarParte extends Sugerencia {
     cancion.acordes.partes.push(parte)
     cancion.acordes.ordenPartes.push(lenParte)
   }
+
+  static override recomendarSugerencias(cancion: Cancion): Sugerencia[] {
+    const sugerencias: Sugerencia[] = []
+    if (cancion.acordes.ordenPartes.length === 0) {
+      sugerencias.push(new SugerenciaAgregarParte(cancion, [1, 4, 5, 1]))
+      sugerencias.push(new SugerenciaAgregarParte(cancion, [1, 2, 5, 6]))
+      sugerencias.push(new SugerenciaAgregarParte(cancion, [1, 2, 6, 5]))
+      sugerencias.push(new SugerenciaAgregarParte(cancion, [1, 4, 1, 5]))
+    }
+    return sugerencias
+  }
 }

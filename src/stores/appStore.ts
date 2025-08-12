@@ -34,9 +34,9 @@ export const useAppStore = defineStore('app', () => {
 
   const editandocancion = ref<Cancion>(
     new Cancion(
-      '',
-      '',
-      new Acordes([new Parte('', [''])], [0]),
+      'nueva cancion',
+      'sin banda',
+      new Acordes([new Parte('', [''])], []),
       new Letra([['']]),
     ),
   )

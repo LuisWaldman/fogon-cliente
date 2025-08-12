@@ -7,4 +7,7 @@ export class Sugerencia {
     // Implementación de la sugerencia
     console.log(`Sugerencia aplicada a la canción: ${cancion.cancion}`)
   }
+  static recomendarSugerencias(_cancion: Cancion): Sugerencia[] {
+    return []
+  }
 }
