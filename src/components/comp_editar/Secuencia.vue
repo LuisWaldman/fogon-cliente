@@ -123,10 +123,13 @@ defineExpose({
       </div>
     </div>
   </div>
+  <div v-if="viendoParte && parte !== null">
+    <span style="font-size: large">Partes</span>
   <editarParte
-    v-if="viendoParte && parte !== null"
+    
     :parte="parte"
   ></editarParte>
+  </div>
   <div>
     <span style="font-size: large">Modificar:</span>
   </div>
