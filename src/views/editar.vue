@@ -4,7 +4,7 @@ import cabecera from '../components/comp_editar/editarcabecera.vue'
 import editartexto from '../components/comp_editar/editartexto.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
-import TocarLetraAcorde from '../components/comp_editar/Tocar_LetraYAcordes.vue'
+import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 
