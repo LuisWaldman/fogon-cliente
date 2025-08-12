@@ -29,15 +29,13 @@ export class SugerenciaAnacrusa extends Sugerencia {
       if (
         cancion.letras.renglones[0].length > 0 &&
         cancion.letras.renglones[0][0].replace('.', '').trim() !== '' &&
-        cancion.letras.renglones[0][0][0].toLowerCase() !==
-          cancion.letras.renglones[0][0][0].toUpperCase()
+        cancion.letras.renglones[0][0][0].toLowerCase() ===
+          cancion.letras.renglones[0][0][0]
       ) {
+        sugerencias.push(new SugerenciaAnacrusa())
         return sugerencias
       }
     }
-    console.log('Recomendando sugerencias de anacrusa', cancion.cancion)
-    sugerencias.push(new SugerenciaAnacrusa())
-
     return sugerencias
   }
 }
