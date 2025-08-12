@@ -53,10 +53,32 @@ const CaracterxRenglon = 80 // Ancho promedio de un carácter en píxeles
 const anchoCaracter = 10 // Ancho promedio de un carácter en píxeles
 const editandoRenglon = ref(-1)
 const editandoCaracter = ref(-1)
-function clickEditarRenglon(index: number) {
-  editandoRenglon.value = index    
-}
+const inputRef = ref<HTMLInputElement | null>(null)
 
+function clickEditarRenglon(event: MouseEvent, index: number) {
+  editandoRenglon.value = index
+  renglonTexto.value = renglones.value[index]
+
+  // Calcular la posición del carácter basado en la posición del mouse
+  const target = event.target as HTMLElement
+  const rect = target.getBoundingClientRect()
+  const clickX = event.clientX - rect.left
+
+  // Estimar la posición del carácter (usando el ancho promedio del carácter)
+  const caracterPos = Math.round(clickX / anchoCaracter)
+  editandoCaracter.value = Math.min(caracterPos, renglones.value[index].length)
+console.log(
+    `Editando renglon ${index}, caracter ${editandoCaracter.value}`,
+  )
+  // Hacer focus en el input en el próximo tick
+  setTimeout(() => {
+    const doc = document.getElementById(`renglonInput${index}`) as HTMLInputElement
+    if (doc) {
+      doc.focus()
+      doc.setSelectionRange(editandoCaracter.value, editandoCaracter.value)
+    }
+  }, 0)
+}
 
 function ActualizarCancion(cancion: Cancion) {
   renglones.value = []
@@ -196,12 +218,18 @@ const renglonTexto = ref('')
         :key="index"
         :style="{ position: 'relative' }"
       >
-        <div class="divletra" @click="clickEditarRenglon(index)">
-          <div v-if="index!==editandoRenglon">{{ renglon }}</div>
-          <div v-if="index===editandoRenglon">&nbsp;</div>
+        <div class="divletra" @mouseup="clickEditarRenglon($event, index)">
+          <div v-if="index !== editandoRenglon">{{ renglon }}</div>
+          <div v-if="index === editandoRenglon">&nbsp;</div>
         </div>
-        
-        <input  v-if="index===editandoRenglon" type="text" class="input-renglon" v-model="renglonTexto" />
+
+        <input
+          v-if="index === editandoRenglon"
+          :id="'renglonInput' + index"
+          type="text"
+          class="input-renglon"
+          v-model="renglonTexto"
+        />
         <div
           v-for="(acorde, acordeIndex) in Acordes[index]"
           :style="{
