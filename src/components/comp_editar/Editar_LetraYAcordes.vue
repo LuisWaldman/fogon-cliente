@@ -51,6 +51,13 @@ watch(
 
 const CaracterxRenglon = 80 // Ancho promedio de un carácter en píxeles
 const anchoCaracter = 10 // Ancho promedio de un carácter en píxeles
+const editandoRenglon = ref(-1)
+const editandoCaracter = ref(-1)
+function clickEditarRenglon(index: number) {
+  editandoRenglon.value = index    
+}
+
+
 function ActualizarCancion(cancion: Cancion) {
   renglones.value = []
   Acordes.value = []
@@ -173,6 +180,7 @@ function Actualizar() {
 }
 
 defineExpose({ Actualizar })
+const renglonTexto = ref('')
 </script>
 <template>
   <div>
@@ -188,7 +196,12 @@ defineExpose({ Actualizar })
         :key="index"
         :style="{ position: 'relative' }"
       >
-        <div class="divletra">{{ renglon }}</div>
+        <div class="divletra" @click="clickEditarRenglon(index)">
+          <div v-if="index!==editandoRenglon">{{ renglon }}</div>
+          <div v-if="index===editandoRenglon">&nbsp;</div>
+        </div>
+        
+        <input  v-if="index===editandoRenglon" type="text" class="input-renglon" v-model="renglonTexto" />
         <div
           v-for="(acorde, acordeIndex) in Acordes[index]"
           :style="{
@@ -208,6 +221,18 @@ defineExpose({ Actualizar })
 </template>
 
 <style scoped>
+.input-renglon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  color: white;
+  font-size: var(--tamanio-letra);
+  border: none;
+  outline: none;
+}
 .componenteMusical {
   padding-top: 30px;
   width: 100%;
