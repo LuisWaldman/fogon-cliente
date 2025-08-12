@@ -5,6 +5,7 @@ import { watch } from 'vue'
 import type { Parte } from '../../modelo/cancion/acordes'
 
 import editarParte from './editarParte.vue'
+import func from '../../../vue-temp/vue-editor-bridge'
 const props = defineProps<{
   compas: number
   cancion: Cancion
@@ -43,11 +44,11 @@ const mostrandoResumenParte = ref(-1)
 watch(
   () => props.cancion,
   (newCancion) => {
-    Actualizar(newCancion)
+    ActualizarCancion(newCancion)
   },
 )
 
-function Actualizar(cancion: Cancion) {
+function ActualizarCancion(cancion: Cancion) {
   let newresu: number[] = []
   let newpartesresu: number[] = []
   let newdesdeacorde: number[] = []
@@ -74,17 +75,24 @@ function Actualizado() {
   if (reperesu.value.length == 0) {
     if (actualizadoAsk) {
       actualizadoAsk = true
-      Actualizar(props.cancion)
+      ActualizarCancion(props.cancion)
     }
   }
   return false
 }
 
-Actualizar(props.cancion)
+ActualizarCancion(props.cancion)
+function Actualizar() {
+  ActualizarCancion(props.cancion)
+}
+
+defineExpose({
+  Actualizar,
+})
 </script>
 
 <template>
-  <div v-if="Actualizado()" @click="Actualizar(props.cancion)">
+  <div v-if="Actualizado()" @click="ActualizarCancion(props.cancion)">
     .. No cargada ..
   </div>
   <div v-if="reperesu.length > 0">

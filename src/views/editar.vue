@@ -8,9 +8,10 @@ import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue
 import Secuencia from '../components/comp_editar/Secuencia.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 
-import { ref, type Ref } from 'vue'
+import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
+import { Cancion } from '../modelo/cancion/cancion'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -57,12 +58,12 @@ function estiloVistaSecundaria() {
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
 const ctrlEditarTexto = ref()
+const ctrlSecuencia = ref()
 
 function cambiarVista(nvista: string) {
   vista.value.viendo = nvista
   localStorage.setItem('viendo_vista_editando', nvista)
 }
-ctrlEditarTexto.value?.updateContent()
 
 const router = useRouter()
 function clickTocar() {
@@ -115,6 +116,36 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
+
+function Actualizar() {
+  console.log('Actualizando vista de edición... CONTROL', ctrlEditarTexto.value)
+  if (ctrlEditarTexto.value) {
+    ctrlEditarTexto.value.Actualizar()
+    ctrlSecuencia.value.Actualizar()
+  }
+}
+
+
+watch(
+  () => appStore.editandocancion.escala,
+  (_newValue) => {
+      if (ctrlEditarTexto.value) {
+    ctrlEditarTexto.value.Actualizar()
+  }
+      
+  },
+)
+
+
+watch(
+  () => appStore.editandocancion,
+  (_newValue) => {
+      if (ctrlEditarTexto.value) {
+    ctrlEditarTexto.value.Actualizar()
+  }
+      
+  },
+)
 </script>
 <template>
   <cabecera :cancion="appStore.editandocancion"></cabecera>
@@ -124,17 +155,8 @@ function DescargarJSON() {
         v-if="vista.viendo != 'editartexto'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
+        ref="ctrlEditarTexto"
       ></TocarLetraAcorde>
-
-      <editartexto
-        v-if="vista.viendo == 'editartexto'"
-        :ref="ctrlEditarTexto"
-        :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
-        :verAcordes="vista.verEditandoAcordes"
-        :verMetricaEs="vista.verEditandoMetricaEs"
-        @cerrar="clickCerrarEditarTexto"
-      ></editartexto>
     </div>
 
     <div :style="estiloVistaSecundaria()">
@@ -151,6 +173,7 @@ function DescargarJSON() {
         :compas="appStore.compas"
       ></consola-acordes>
       <Secuencia
+        ref="ctrlSecuencia"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
         @cambioCompas="cambiarCompas"
@@ -163,6 +186,7 @@ function DescargarJSON() {
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
         @cambioCompas="cambiarCompas"
+        @actualizarCancion="Actualizar"
         v-if="
           vista.viendo !== 'editconsolaacordes' &&
           vista.viendo !== 'editaracordes'
