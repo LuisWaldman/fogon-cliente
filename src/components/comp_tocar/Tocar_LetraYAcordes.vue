@@ -108,7 +108,7 @@ watch(
   (newCompas) => {
     CalcularResaltado(newCompas)
     renglones.value.forEach((_renglon, index) => {
-      CompasAcorde.value[index].forEach((compas, _acordeIndex) => {
+      CompasAcorde.value[index].forEach((compas) => {
         if (compas === newCompas) {
           // Scroll to the div if it's in the current view
 

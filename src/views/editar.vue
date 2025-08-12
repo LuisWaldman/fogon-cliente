@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
 import cabecera from '../components/comp_editar/editarcabecera.vue'
-import editartexto from '../components/comp_editar/editartexto.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue'
@@ -11,7 +10,6 @@ import sugerencias from '../components/comp_editar/sugerencias.vue'
 import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
-import { Cancion } from '../modelo/cancion/cancion'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -127,7 +125,7 @@ function Actualizar() {
 
 watch(
   () => appStore.editandocancion.escala,
-  (_newValue) => {
+  () => {
     if (ctrlEditarTexto.value) {
       ctrlEditarTexto.value.Actualizar()
     }
@@ -136,7 +134,7 @@ watch(
 
 watch(
   () => appStore.editandocancion,
-  (_newValue) => {
+  () => {
     if (ctrlEditarTexto.value) {
       ctrlEditarTexto.value.Actualizar()
     }

@@ -29,7 +29,7 @@ watch(
   (newCompas) => {
     CalcularResaltado(newCompas)
     renglones.value.forEach((_renglon, index) => {
-      CompasAcorde.value[index].forEach((compas, _acordeIndex) => {
+      CompasAcorde.value[index].forEach((compas) => {
         if (compas === newCompas) {
           // Scroll to the div if it's in the current view
 
@@ -53,7 +53,6 @@ const CaracterxRenglon = 80 // Ancho promedio de un carácter en píxeles
 const anchoCaracter = 10 // Ancho promedio de un carácter en píxeles
 const editandoRenglon = ref(-1)
 const editandoCaracter = ref(-1)
-const inputRef = ref<HTMLInputElement | null>(null)
 
 function clickEditarRenglon(event: MouseEvent, index: number) {
   editandoRenglon.value = index
@@ -67,12 +66,12 @@ function clickEditarRenglon(event: MouseEvent, index: number) {
   // Estimar la posición del carácter (usando el ancho promedio del carácter)
   const caracterPos = Math.round(clickX / anchoCaracter)
   editandoCaracter.value = Math.min(caracterPos, renglones.value[index].length)
-console.log(
-    `Editando renglon ${index}, caracter ${editandoCaracter.value}`,
-  )
+  console.log(`Editando renglon ${index}, caracter ${editandoCaracter.value}`)
   // Hacer focus en el input en el próximo tick
   setTimeout(() => {
-    const doc = document.getElementById(`renglonInput${index}`) as HTMLInputElement
+    const doc = document.getElementById(
+      `renglonInput${index}`,
+    ) as HTMLInputElement
     if (doc) {
       doc.focus()
       doc.setSelectionRange(editandoCaracter.value, editandoCaracter.value)

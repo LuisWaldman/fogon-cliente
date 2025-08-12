@@ -12,8 +12,6 @@ const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
-const octavasCirculo = ref(7)
-const DesdeOctavasCirculo = ref(4)
 const refViendoFrecuencia = ref(440)
 const micHelper = new MicHelper()
 const refMicEstado = ref('')
@@ -155,58 +153,6 @@ function styleDivAfinador() {
   return {
     height: alto + 'px',
     width: ancho + 'px',
-  }
-}
-
-const maxRadio = 500
-const minRadio = 100
-const centroLeft = 300
-const centroTop = 230
-function StyleOctava(i: number) {
-  const radio =
-    minRadio + ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (i - 1)
-  const left = centroLeft - radio / 2
-  const top = centroTop - radio / 2
-  return {
-    width: radio + 'px',
-    top: top + 'px',
-    left: left + 'px',
-    height: radio + 'px',
-    borderRadius: '50%',
-  }
-}
-function StyleFrecuencia(frecuencia: number) {
-  let enOctava =
-    Math.floor(Math.log2(frecuencia / tipoAfinacion.value)) +
-    DesdeOctavasCirculo.value
-  const baseOctava =
-    tipoAfinacion.value *
-    Math.pow(2, Math.floor(Math.log2(frecuencia / tipoAfinacion.value)))
-  const portentajeEnOctava = (frecuencia - baseOctava) / baseOctava
-
-  if (enOctava < 0) {
-    enOctava = 0
-  }
-  // Calcular el porcentaje de la octava
-  const radio =
-    minRadio +
-    ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (enOctava - 1)
-  const left =
-    centroLeft + Math.cos(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
-  const top =
-    centroTop + Math.sin(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
-  console.log(
-    'enOctava',
-    enOctava,
-    baseOctava,
-    'Porcentaje=',
-    portentajeEnOctava,
-    frecuencia,
-    tipoAfinacion.value,
-  )
-  return {
-    top: top + 'px',
-    left: left + 'px',
   }
 }
 </script>

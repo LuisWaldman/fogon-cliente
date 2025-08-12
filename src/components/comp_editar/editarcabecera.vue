@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useAppStore } from '../../stores/appStore'
 import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
@@ -10,10 +9,9 @@ defineProps<{
   cancion: Cancion
 }>()
 
-const appStore = useAppStore()
-const viendo = ref('')
-function clickCambiar(que: string) {
-  viendo.value == que ? (viendo.value = '') : (viendo.value = que)
+const viendo = ref('' as string)
+function clickCambiar(nviendo: string) {
+  viendo.value = nviendo
 }
 
 function clickCerrar() {

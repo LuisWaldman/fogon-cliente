@@ -5,14 +5,11 @@ import { watch } from 'vue'
 import type { Parte } from '../../modelo/cancion/acordes'
 
 import editarParte from './editarParte.vue'
-import func from '../../../vue-temp/vue-editor-bridge'
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
 
-const mostrandoParte = ref(-1)
-const mostrandoCompasparte = ref(-1)
 const currentCompas = ref(0)
 const viendoSecuencia = ref(0)
 const viendoRepSecuencia = ref(0)

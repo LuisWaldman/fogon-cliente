@@ -1,9 +1,8 @@
 <script lang="ts" setup>
-import { onMounted, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 
 const emit = defineEmits(['verfrecuencia'])
 const FrecuenciaNotas = ref<number[]>([]) // Cantidad de notas en la afinación
-const ClaseNotas = ref<string[]>([])
 const NombreNotas = ref<string[]>([])
 const mostrandoNota = ref<number>(0)
 
