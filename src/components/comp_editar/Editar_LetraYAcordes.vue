@@ -108,9 +108,26 @@ function ActualizarCancion(cancion: Cancion) {
   Acordes.value.push(acordesActual)
   AcordesLeft.value.push(acordesLeftActual)
   CompasAcorde.value.push(compasActual)
-  acordesActual = []
-  acordesLeftActual = []
-  compasActual = []
+
+  // Si no termino todos los acordes, agrego un renglon vacío
+  if (indiceAcorde < TodosAcordes.length) {
+    renglonActual = ''
+    acordesActual = []
+    acordesLeftActual = []
+    compasActual = []
+    while (indiceAcorde < TodosAcordes.length) {
+      acordesActual.push(TodosAcordes[indiceAcorde])
+      renglonActual += '¿' + TodosAcordes[indiceAcorde] + '?'
+      acordesLeftActual.push(renglonActual.length * anchoCaracter)
+      compasActual.push(indiceAcorde)
+      indiceAcorde++
+    }
+
+    renglones.value.push(renglonActual)
+    Acordes.value.push(acordesActual)
+    AcordesLeft.value.push(acordesLeftActual)
+    CompasAcorde.value.push(compasActual)
+  }
 }
 
 function CalcularResaltado(newCompas: number) {
