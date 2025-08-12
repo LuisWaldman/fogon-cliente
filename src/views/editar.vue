@@ -186,14 +186,6 @@ watch(
           vista.viendo !== 'editaracordes'
         "
       ></sugerencias>
-      <Partes
-        v-if="
-          vista.viendo !== 'editconsolaacordes' &&
-          vista.viendo !== 'editaracordes'
-        "
-        :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
-      ></Partes>
     </div>
 
     <div class="dropdown dropdown-superior-derecha">
