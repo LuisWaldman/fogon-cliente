@@ -2,12 +2,14 @@
 import { useAppStore } from '../../stores/appStore'
 import { Perfil } from '../../modelo/perfil'
 import { ref, onMounted } from 'vue'
+import { Configuracion } from '../../modelo/configuracion'
 
 const appStore = useAppStore()
 const perfil = ref(new Perfil('', '', '', '', ''))
 const imageBase64 = ref('')
+const config = Configuracion.getInstance()
 
-function updateProfile() {
+function updateProfileWeb() {
   perfil.value.imagen = imageBase64.value
   appStore.aplicacion
     .HTTPPost('perfil', perfil.value)
@@ -18,6 +20,13 @@ function updateProfile() {
     .catch((error: Error) => {
       console.error('Error updating profile:', error)
     })
+}
+
+function updateProfile() {
+  config.perfil = perfil.value
+  config.perfil.imagen = imageBase64.value
+  config.guardarEnLocalStorage()
+  appStore.perfil = perfil.value
 }
 
 function handleImageUpload(event: Event) {
@@ -32,7 +41,10 @@ function handleImageUpload(event: Event) {
 }
 
 onMounted(() => {
-  perfil.value = appStore.perfil
+  if (config.perfil != null) {
+    perfil.value = config.perfil
+  }
+
   imageBase64.value = perfil.value.imagen
 })
 </script>
@@ -48,7 +60,14 @@ onMounted(() => {
           >
             <img
               :src="imageBase64"
+              v-if="imageBase64 !== ''"
               alt="Profile Image"
+              style="max-width: 200px; max-height: 200px"
+            />
+            <img
+              v-if="imageBase64 === ''"
+              alt="Profile Image"
+              src="/img/usuariofantasma.png"
               style="max-width: 200px; max-height: 200px"
             />
 
@@ -77,6 +96,7 @@ onMounted(() => {
       </div>
       <div class="classBotonera">
         <button @click="updateProfile">Actualizar</button>
+        <button @click="updateProfileWeb">Actualizar Web</button>
       </div>
     </div>
   </div>

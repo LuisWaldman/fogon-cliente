@@ -14,6 +14,7 @@ import { OrigenCancion } from './modelo/cancion/origencancion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
+  appStore: AppStore = useAppStore()
   reproductorDesconectado: Reproductor = this.reproductor
   reproductorConectado: ReproductorConectado | null = null
   configuracion: Configuracion = Configuracion.getInstance()
@@ -45,7 +46,11 @@ export default class Aplicacion {
 
   onMounted() {
     console.log('Aplicacion montada')
+
     this.cargarNoticiasLocales()
+    const appStore = useAppStore()
+    appStore.perfil =
+      this.configuracion.perfil || new Perfil('', '', '', '', '')
 
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
@@ -303,7 +308,6 @@ export default class Aplicacion {
   logout(): boolean {
     const appStore = useAppStore()
     appStore.estadoLogin = ''
-    appStore.perfil = new Perfil('', '', '', '', '')
     if (!this.cliente) {
       console.error('Cliente no conectado. ')
       return false
