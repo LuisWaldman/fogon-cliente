@@ -8,9 +8,8 @@ const props = defineProps<{
   tipoAfinacion: number
   cantidadNotas: number
   ancho: number
-  mostrarEscala: number[],
-  mostrarAcorde: number[],
-
+  mostrarEscala: number[]
+  mostrarAcorde: number[]
 }>()
 
 // Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
@@ -109,14 +108,15 @@ function StyleFrecuencia(frecuencia: number) {
         <div :style="StyleOctava(i)" class="circuloOctava"></div>
       </div>
 
-      
       <div
         v-for="(nombre, index) in NombreNotas"
         :key="index"
         class="frecuencia"
         :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
       >
-      <div class="clsAcorde" v-if="mostrarAcorde.includes(index % 12) ">{{ nombre }}</div>
+        <div class="clsAcorde" v-if="mostrarAcorde.includes(index % 12)">
+          {{ nombre }}
+        </div>
       </div>
       <div
         v-for="(nombre, index) in NombreNotas"
@@ -124,7 +124,9 @@ function StyleFrecuencia(frecuencia: number) {
         class="frecuencia"
         :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
       >
-      <div class="clsEscala" v-if="mostrarEscala.includes(index % 12) ">{{ nombre }}</div>
+        <div class="clsEscala" v-if="mostrarEscala.includes(index % 12)">
+          {{ nombre }}
+        </div>
       </div>
 
       <div
@@ -139,13 +141,14 @@ function StyleFrecuencia(frecuencia: number) {
         v-for="(nombre, index) in NombreNotas"
         :key="index"
         class="frecuencia"
-        :class="{ frecuencianegra: nombre.includes('#'), frecuenciablanca: !nombre.includes('#') }"
+        :class="{
+          frecuencianegra: nombre.includes('#'),
+          frecuenciablanca: !nombre.includes('#'),
+        }"
         :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
       >
         {{ nombre }}
       </div>
-      
-
     </div>
   </div>
 </template>
@@ -166,12 +169,10 @@ function StyleFrecuencia(frecuencia: number) {
   color: black;
 }
 
-.frecuencianegra 
-{
+.frecuencianegra {
   background-color: black;
   color: white;
   font-weight: bold;
-
 }
 
 .viendoFrecuencia {
@@ -198,5 +199,4 @@ function StyleFrecuencia(frecuencia: number) {
   border: 5px solid rgb(231, 64, 13);
   border-radius: 15px;
 }
-
 </style>

@@ -28,8 +28,50 @@ const audioContext = ref<AudioContext | null>(null)
 const analyserNode = ref<AnalyserNode | null>(null)
 const sourceNode = ref<MediaStreamAudioSourceNode | null>(null)
 const buffer = new Float32Array(2048)
-const mostrarEscala = ref([0, 2, 3, 5, 7, 9, 10, 12]) // Notas de la escala
-const mostrarAcorde = ref([0, 3, 5])
+const mostrandoEscala = ref([] as number[]) // Notas de la escala
+const mostrandoAcorde = ref([] as number[])
+
+const notas: string[] = [
+  'A',
+  'A#',
+  'B',
+  'C',
+  'C#',
+  'D',
+  'D#',
+  'E',
+  'F',
+  'F#',
+  'G',
+  'G#',
+]
+
+const mostrarEscala = ref(false)
+const escalaMenor = ref(false)
+const refViendoEscala = ref(0)
+let modos: { [key: string]: number[] } = {}
+modos['mayor'] = [2, 2, 1, 2, 2, 2]
+modos['menor'] = [2, 1, 2, 2, 1, 2]
+
+function cambiarModo() {
+  escalaMenor.value = !escalaMenor.value
+  calcularEscala()
+}
+
+function calcularEscala() {
+  if (!mostrandoEscala.value) {
+    mostrandoEscala.value = []
+    return
+  }
+  mostrandoEscala.value = []
+  const modo = escalaMenor.value ? 'menor' : 'mayor'
+  let notaCont: number = refViendoEscala.value
+  for (let i = 0; i < modos[modo].length; i++) {
+    mostrandoEscala.value.push(notaCont % cantidadNotas.value)
+    notaCont += modos[modo][i]
+  }
+}
+
 watch(mediaStream, (stream) => {
   if (!stream) return
 
@@ -173,6 +215,24 @@ function styleDivAfinador() {
     </div>
     <div style="display: flex">
       <div>
+        <div>
+          <input
+            type="checkbox"
+            v-model="mostrarEscala"
+            @change="calcularEscala"
+          />
+          <span>Mostrar Escala</span>
+          <select v-model="refViendoEscala" v-if="mostrarEscala">
+            <option
+              v-for="(nota, index) in notas"
+              :key="index"
+              :value="index"
+              @change="calcularEscala"
+            >
+              {{ nota }}
+            </option>
+          </select>
+        </div>
         <div>Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
         <div>
           Afinacion
@@ -236,8 +296,8 @@ function styleDivAfinador() {
         :tipoAfinacion="tipoAfinacion"
         :cantidadNotas="cantidadNotas"
         :frecuencia="frequency"
-        :mostrarEscala="mostrarEscala"
-        :mostrarAcorde="mostrarAcorde"
+        :mostrarEscala="mostrandoEscala"
+        :mostrarAcorde="mostrandoAcorde"
         :ancho="ancho"
       ></circulo>
     </div>
