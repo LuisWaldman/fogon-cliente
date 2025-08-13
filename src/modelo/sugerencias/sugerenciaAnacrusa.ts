@@ -12,14 +12,13 @@ export class SugerenciaAnacrusa extends Sugerencia {
     const lenParte = cancion.acordes.partes.length
     const parte = new Parte('anacrusa', ['.'])
     cancion.acordes.partes.push(parte)
-    cancion.acordes.ordenPartes.push(lenParte)
     const nuevoOrden = [lenParte]
     nuevoOrden.push(...cancion.acordes.ordenPartes)
     cancion.acordes.ordenPartes = nuevoOrden
     if (cancion.letras.renglones.length > 0) {
-      cancion.letras.renglones[0].push('...')
+      cancion.letras.renglones[0].unshift('_')
     } else {
-      cancion.letras.renglones.push(['...'])
+      cancion.letras.renglones.unshift(['_'])
     }
   }
 
@@ -29,6 +28,7 @@ export class SugerenciaAnacrusa extends Sugerencia {
       if (
         cancion.letras.renglones[0].length > 0 &&
         cancion.letras.renglones[0][0].replace('.', '').trim() !== '' &&
+        /^[a-z]/.test(cancion.letras.renglones[0][0][0]) &&
         cancion.letras.renglones[0][0][0].toLowerCase() ===
           cancion.letras.renglones[0][0][0]
       ) {

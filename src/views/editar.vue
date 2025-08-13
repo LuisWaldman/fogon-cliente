@@ -146,8 +146,12 @@ watch(
   <cabecera :cancion="appStore.editandocancion"></cabecera>
   <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
     <div style="width: 70%" :style="estiloVistaPrincipal()">
-
-          <div style="position: relative; left: 96%;" v-on:click="cambiarVista('editartexto')">🔄</div>
+      <div
+        style="position: relative; left: 96%"
+        v-on:click="cambiarVista('editartexto')"
+      >
+        🔄
+      </div>
 
       <TocarLetraAcorde
         v-if="vista.viendo != 'editartexto'"
@@ -212,8 +216,6 @@ watch(
         <i class="bi bi-eye"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        
-
         <li v-on:click="cambiarVista('editaracordes')">
           <a class="dropdown-item" href="#">Editar Acordes</a>
         </li>
