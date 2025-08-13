@@ -5,7 +5,7 @@ import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
-import editarTexto from '../components/comp_editar/editarTexto.vue'
+import editartexto from '../components/comp_editar/editartexto.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 
 import { ref, watch, type Ref } from 'vue'
@@ -160,14 +160,14 @@ watch(
         ref="ctrlEditarTexto"
       ></TocarLetraAcorde>
 
-      <editarTexto
+      <editartexto
         v-if="vista.viendo == 'editartexto'"
         @cerrar="clickCerrarEditarTexto"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
         :ver-acordes="vista.verEditandoAcordes"
         :ver-metrica-es="vista.verEditandoMetricaEs"
-      ></editarTexto>
+      ></editartexto>
     </div>
 
     <div :style="estiloVistaSecundaria()">

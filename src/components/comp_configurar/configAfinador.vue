@@ -52,12 +52,12 @@ const refViendoEscala = ref(0)
 let modos: { [key: string]: number[] } = {}
 modos['mayor'] = [2, 2, 1, 2, 2, 2]
 modos['menor'] = [2, 1, 2, 2, 1, 2]
-
+/*
 function cambiarModo() {
   escalaMenor.value = !escalaMenor.value
   calcularEscala()
 }
-
+*/
 function calcularEscala() {
   if (!mostrandoEscala.value) {
     mostrandoEscala.value = []

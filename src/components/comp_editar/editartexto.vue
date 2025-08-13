@@ -42,9 +42,7 @@ function handlePaste(event: ClipboardEvent) {
 
 // Watch for changes in editandoCancion
 import { watch } from 'vue'
-import {
-  BuildFondo
-} from './buildFondo'
+import { BuildFondo } from './buildFondo'
 
 // Set up a watcher that calls updateContent when editandoCancion changes
 watch(
@@ -83,8 +81,8 @@ const emit = defineEmits(['cerrar'])
 
 // On component mount, initialize the text
 import { onMounted } from 'vue'
-import { BuildFondoAcordes } from './buildFondoAcordes';
-import { BuildFondoMetricaES } from './buildFondeMetrica';
+import { BuildFondoAcordes } from './buildFondoAcordes'
+import { BuildFondoMetricaES } from './buildFondeMetrica'
 
 onMounted(() => {
   refTextoEditable.value = BuildFondo.hacerTexto(props.cancion)
