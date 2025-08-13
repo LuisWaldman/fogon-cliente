@@ -5,6 +5,7 @@ import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
+import editarTexto from '../components/comp_editar/editarTexto.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 
 import { ref, watch, type Ref } from 'vue'
@@ -145,12 +146,24 @@ watch(
   <cabecera :cancion="appStore.editandocancion"></cabecera>
   <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
     <div style="width: 70%" :style="estiloVistaPrincipal()">
+
+          <div style="position: relative; left: 96%;" v-on:click="cambiarVista('editartexto')">🔄</div>
+
       <TocarLetraAcorde
         v-if="vista.viendo != 'editartexto'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         ref="ctrlEditarTexto"
       ></TocarLetraAcorde>
+
+      <editarTexto
+        v-if="vista.viendo == 'editartexto'"
+        @cerrar="clickCerrarEditarTexto"
+        :cancion="appStore.editandocancion"
+        :compas="appStore.compas"
+        :ver-acordes="vista.verEditandoAcordes"
+        :ver-metrica-es="vista.verEditandoMetricaEs"
+      ></editarTexto>
     </div>
 
     <div :style="estiloVistaSecundaria()">
@@ -199,9 +212,7 @@ watch(
         <i class="bi bi-eye"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li v-on:click="cambiarVista('editartexto')">
-          <a class="dropdown-item" href="#">Editar Texto</a>
-        </li>
+        
 
         <li v-on:click="cambiarVista('editaracordes')">
           <a class="dropdown-item" href="#">Editar Acordes</a>
