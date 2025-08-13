@@ -27,6 +27,7 @@ function updateProfile() {
   config.perfil.imagen = imageBase64.value
   config.guardarEnLocalStorage()
   appStore.perfil = perfil.value
+  updateProfileWeb()
 }
 
 function handleImageUpload(event: Event) {
@@ -96,7 +97,6 @@ onMounted(() => {
       </div>
       <div class="classBotonera">
         <button @click="updateProfile">Actualizar</button>
-        <button @click="updateProfileWeb">Actualizar Web</button>
       </div>
     </div>
   </div>
