@@ -28,7 +28,8 @@ const audioContext = ref<AudioContext | null>(null)
 const analyserNode = ref<AnalyserNode | null>(null)
 const sourceNode = ref<MediaStreamAudioSourceNode | null>(null)
 const buffer = new Float32Array(2048)
-
+const mostrarEscala = ref([0, 2, 3, 5, 7, 9, 10, 12]) // Notas de la escala
+const mostrarAcorde = ref([0, 3, 5])
 watch(mediaStream, (stream) => {
   if (!stream) return
 
@@ -81,7 +82,7 @@ function autoCorrelate(buffer: Float32Array, sampleRate: number): number {
   const T0 = maxpos
   return sampleRate / T0
 }
-const frequency = ref(90)
+const frequency = ref(0)
 const detectFrequency = () => {
   if (!analyserNode.value) return
 
@@ -235,6 +236,8 @@ function styleDivAfinador() {
         :tipoAfinacion="tipoAfinacion"
         :cantidadNotas="cantidadNotas"
         :frecuencia="frequency"
+        :mostrarEscala="mostrarEscala"
+        :mostrarAcorde="mostrarAcorde"
         :ancho="ancho"
       ></circulo>
     </div>

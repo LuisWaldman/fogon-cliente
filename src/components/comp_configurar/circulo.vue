@@ -8,6 +8,9 @@ const props = defineProps<{
   tipoAfinacion: number
   cantidadNotas: number
   ancho: number
+  mostrarEscala: number[],
+  mostrarAcorde: number[],
+
 }>()
 
 // Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
@@ -106,8 +109,26 @@ function StyleFrecuencia(frecuencia: number) {
         <div :style="StyleOctava(i)" class="circuloOctava"></div>
       </div>
 
+      
       <div
-        :v-if="Number(frecuencia) > 0"
+        v-for="(nombre, index) in NombreNotas"
+        :key="index"
+        class="frecuencia"
+        :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
+      >
+      <div class="clsAcorde" v-if="mostrarAcorde.includes(index % 12) ">{{ nombre }}</div>
+      </div>
+      <div
+        v-for="(nombre, index) in NombreNotas"
+        :key="index"
+        class="frecuencia"
+        :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
+      >
+      <div class="clsEscala" v-if="mostrarEscala.includes(index % 12) ">{{ nombre }}</div>
+      </div>
+
+      <div
+        v-if="Number(frecuencia) > 0"
         :style="StyleFrecuencia(Number(frecuencia.toFixed(0)))"
         class="frecuencia viendoFrecuencia"
       >
@@ -118,10 +139,13 @@ function StyleFrecuencia(frecuencia: number) {
         v-for="(nombre, index) in NombreNotas"
         :key="index"
         class="frecuencia"
+        :class="{ frecuencianegra: nombre.includes('#'), frecuenciablanca: !nombre.includes('#') }"
         :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
       >
         {{ nombre }}
       </div>
+      
+
     </div>
   </div>
 </template>
@@ -134,13 +158,45 @@ function StyleFrecuencia(frecuencia: number) {
 
 .frecuencia {
   position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgb(133, 104, 202);
+}
+.frecuenciablanca {
+  background-color: white;
+  color: black;
+}
+
+.frecuencianegra 
+{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+
 }
 
 .viendoFrecuencia {
+  z-index: 10;
   font-weight: bold;
   color: red;
   background-color: white;
   border: 1px solid red;
   border-radius: 15px;
 }
+
+.clsEscala {
+  font-weight: bold;
+  color: rgb(248, 245, 245);
+  border: 4px solid rgb(0, 140, 255);
+  border-radius: 15px;
+  z-index: 5;
+}
+.clsAcorde {
+  z-index: 8;
+  font-weight: bold;
+  font-size: larger;
+  color: rgb(248, 245, 245);
+  border: 5px solid rgb(231, 64, 13);
+  border-radius: 15px;
+}
+
 </style>
