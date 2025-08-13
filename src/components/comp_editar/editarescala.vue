@@ -12,7 +12,6 @@ const toEscala = ref('')
 const desdeEscala = ref('')
 const esMenor = ref(false)
 const appStore = useAppStore()
-const cambiandoEscalaEstado = ref('')
 const NotasPosicionadasEscala = ref([] as string[][])
 const Escala = ref([] as string[])
 const NuevaEscala = ref([] as string[])
@@ -22,33 +21,27 @@ const NuevasNotasPosicionadasEscala = ref([] as string[][])
 const helperMuisca = new MusicaHelper()
 const TodasLasNotas = ref(helperMuisca.GetNotas())
 function clickCambiarEscala() {
-  if (cambiandoEscalaEstado.value == '') {
-    if (appStore.editandocancion.escala) {
-      desdeEscala.value = appStore.editandocancion.escala
-      if (desdeEscala.value.includes('m')) {
-        esMenor.value = true
-        desdeEscala.value = desdeEscala.value.replace('m', '')
-      }
-      // Obtener la escala de acordes basada en la escala actual
-      Escala.value = helperMuisca.GetAcordesdeescala(
-        appStore.editandocancion.escala,
-      )
-
-      NotasPosicionadasEscala.value = helperMuisca.GetNotasPosicionadasEscala(
-        appStore.editandocancion,
-        Escala.value,
-      )
-      toEscala.value = desdeEscala.value
-    } else {
-      toEscala.value = 'C'
+  if (appStore.editandocancion.escala) {
+    desdeEscala.value = appStore.editandocancion.escala
+    if (desdeEscala.value.includes('m')) {
+      esMenor.value = true
+      desdeEscala.value = desdeEscala.value.replace('m', '')
     }
+    // Obtener la escala de acordes basada en la escala actual
+    Escala.value = helperMuisca.GetAcordesdeescala(
+      appStore.editandocancion.escala,
+    )
 
-    cambiandoEscalaEstado.value = 'cambiando'
+    NotasPosicionadasEscala.value = helperMuisca.GetNotasPosicionadasEscala(
+      appStore.editandocancion,
+      Escala.value,
+    )
+    toEscala.value = desdeEscala.value
   } else {
-    cambiandoEscalaEstado.value = ''
+    toEscala.value = 'C'
   }
 }
-
+clickCambiarEscala()
 function changeToEscala() {
   let nota = toEscala.value
   if (esMenor.value) {
@@ -63,8 +56,9 @@ function changeToEscala() {
     )
 }
 
+const emit = defineEmits(['cerrar'])
 function clickCancelarCambiarEscala() {
-  cambiandoEscalaEstado.value = ''
+  emit('cerrar')
 }
 function clickConfirmarCambiarEscala() {
   helperMuisca.ActualizarEscala(
@@ -72,32 +66,22 @@ function clickConfirmarCambiarEscala() {
     Escala.value,
     NuevaEscala.value,
   )
-  cambiandoEscalaEstado.value = ''
+  emit('cerrar')
 }
 </script>
 <template>
   <div>
-    <span class="lblCabecera">Escala {{ cancion.escala }}</span>
-    <span
-      class="lblCabecera"
-      v-if="cambiandoEscalaEstado == ''"
-      @click="clickCambiarEscala"
-      >[cambiar]</span
-    >
-    <span
-      class="lblCabecera"
-      v-if="cambiandoEscalaEstado == 'cambiando'"
-      @click="clickCancelarCambiarEscala"
+    <span class="lblCabecera" @click="clickCancelarCambiarEscala"
       >[cancelar]</span
     >
     <span
       class="lblCabecera"
-      v-if="cambiandoEscalaEstado == 'cambiando' && toEscala != desdeEscala"
+      v-if="toEscala != desdeEscala"
       @click="clickConfirmarCambiarEscala"
       >[confirmar]</span
     >
   </div>
-  <div v-if="cambiandoEscalaEstado == 'cambiando'">
+  <div>
     <table style="border-collapse: collapse; width: 100%">
       <thead>
         <tr>
@@ -175,3 +159,5 @@ th {
   color: #a9a8f6;
 }
 </style>
+
+function emit(arg0: string) { throw new Error('Function not implemented.') }

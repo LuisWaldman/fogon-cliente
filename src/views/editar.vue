@@ -1,19 +1,22 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
 import cabecera from '../components/comp_editar/editarcabecera.vue'
-import editartexto from '../components/comp_editar/editartexto.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
-import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
-import Secuencia from '../components/comp_tocar/Secuencia.vue'
-import Partes from '../components/comp_tocar/Partes.vue'
+import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue'
+import Secuencia from '../components/comp_editar/Secuencia.vue'
+import editartexto from '../components/comp_editar/editartexto.vue'
+import sugerencias from '../components/comp_editar/sugerencias.vue'
 
-import { ref, type Ref } from 'vue'
+import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
 
 const pantalla = new Pantalla()
-
+const editandoCompas = ref(-1)
+function cambiarCompas(compas: number) {
+  editandoCompas.value = compas
+}
 const appStore = useAppStore()
 function guardarCambios() {
   // Create the Cancion object structure as expected by the backend
@@ -47,19 +50,19 @@ function GetStylePantallaEdit() {
 }
 
 function estiloVistaPrincipal() {
-  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%; overflow: auto;`
+  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
 }
 
 function estiloVistaSecundaria() {
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
 const ctrlEditarTexto = ref()
+const ctrlSecuencia = ref()
 
 function cambiarVista(nvista: string) {
   vista.value.viendo = nvista
   localStorage.setItem('viendo_vista_editando', nvista)
 }
-ctrlEditarTexto.value?.updateContent()
 
 const router = useRouter()
 function clickTocar() {
@@ -112,25 +115,58 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
+
+function Actualizar() {
+  console.log('Actualizando vista de edición... CONTROL', ctrlEditarTexto.value)
+  if (ctrlEditarTexto.value) {
+    ctrlEditarTexto.value.Actualizar()
+    ctrlSecuencia.value.Actualizar()
+  }
+}
+
+watch(
+  () => appStore.editandocancion.escala,
+  () => {
+    if (ctrlEditarTexto.value) {
+      ctrlEditarTexto.value.Actualizar()
+    }
+  },
+)
+
+watch(
+  () => appStore.editandocancion,
+  () => {
+    if (ctrlEditarTexto.value) {
+      ctrlEditarTexto.value.Actualizar()
+    }
+  },
+)
 </script>
 <template>
   <cabecera :cancion="appStore.editandocancion"></cabecera>
   <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
     <div style="width: 70%" :style="estiloVistaPrincipal()">
+      <div
+        style="position: relative; left: 96%"
+        v-on:click="cambiarVista('editartexto')"
+      >
+        🔄
+      </div>
+
       <TocarLetraAcorde
         v-if="vista.viendo != 'editartexto'"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
+        ref="ctrlEditarTexto"
       ></TocarLetraAcorde>
 
       <editartexto
         v-if="vista.viendo == 'editartexto'"
-        :ref="ctrlEditarTexto"
+        @cerrar="clickCerrarEditarTexto"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
-        :verAcordes="vista.verEditandoAcordes"
-        :verMetricaEs="vista.verEditandoMetricaEs"
-        @cerrar="clickCerrarEditarTexto"
+        :ver-acordes="vista.verEditandoAcordes"
+        :ver-metrica-es="vista.verEditandoMetricaEs"
       ></editartexto>
     </div>
 
@@ -148,21 +184,25 @@ function DescargarJSON() {
         :compas="appStore.compas"
       ></consola-acordes>
       <Secuencia
+        ref="ctrlSecuencia"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
+        @cambioCompas="cambiarCompas"
         v-if="
           vista.viendo !== 'editconsolaacordes' &&
           vista.viendo !== 'editaracordes'
         "
       ></Secuencia>
-      <Partes
+      <sugerencias
+        :cancion="appStore.editandocancion"
+        :compas="appStore.compas"
+        @cambioCompas="cambiarCompas"
+        @actualizarCancion="Actualizar"
         v-if="
           vista.viendo !== 'editconsolaacordes' &&
           vista.viendo !== 'editaracordes'
         "
-        :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
-      ></Partes>
+      ></sugerencias>
     </div>
 
     <div class="dropdown dropdown-superior-derecha">
@@ -176,10 +216,6 @@ function DescargarJSON() {
         <i class="bi bi-eye"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li v-on:click="cambiarVista('editartexto')">
-          <a class="dropdown-item" href="#">Editar Texto</a>
-        </li>
-
         <li v-on:click="cambiarVista('editaracordes')">
           <a class="dropdown-item" href="#">Editar Acordes</a>
         </li>

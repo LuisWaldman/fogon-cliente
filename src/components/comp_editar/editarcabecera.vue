@@ -1,79 +1,46 @@
 <script setup lang="ts">
-import { useAppStore } from '../../stores/appStore'
 import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
+import editararchivo from './editararchivo.vue'
+import editartiempo from './editartiempo.vue'
+import { ref } from 'vue'
 
 defineProps<{
   cancion: Cancion
 }>()
 
-const appStore = useAppStore()
+const viendo = ref('' as string)
+function clickCambiar(nviendo: string) {
+  viendo.value = nviendo
+}
+
+function clickCerrar() {
+  viendo.value = ''
+}
 </script>
 
 <template>
-  <nav class="navbarFogon navbar">
-    <div style="display: flex; width: 100%">
-      {{ appStore.editandocancion?.cancion }} -
-      {{ appStore.editandocancion?.banda }}
-    </div>
-    <div v-if="cancion">
-      <span class="lblCabecera">BPM:</span>
-      <input
-        type="range"
-        style="background-color: #a9a8f6; color: white"
-        v-model="cancion.bpm"
-        min="30"
-        max="240"
-      />
-      {{ cancion.bpm }} -
-      <span v-if="cancion?.bpm && cancion.bpm >= 40 && cancion.bpm <= 60"
-        >Largo</span
-      >
-
-      <span v-if="cancion?.bpm && cancion.bpm > 60 && cancion.bpm <= 66"
-        >Largo a Adagio</span
-      >
-      <span v-if="cancion?.bpm && cancion.bpm > 66 && cancion.bpm <= 76"
-        >Adagio</span
-      >
-      <span v-if="cancion?.bpm && cancion.bpm > 76 && cancion.bpm <= 108"
-        >Andante</span
-      >
-      <span v-if="cancion?.bpm && cancion.bpm > 108 && cancion.bpm <= 120"
-        >Moderato</span
-      >
-      <span v-if="cancion?.bpm && cancion.bpm > 120 && cancion.bpm <= 168"
-        >Allegro</span
-      >
-      <span v-if="cancion?.bpm && cancion.bpm > 168 && cancion.bpm <= 176"
-        >Vivace</span
-      >
-      <span v-if="cancion?.bpm && cancion.bpm > 176 && cancion.bpm <= 200"
-        >Presto</span
-      >
-      <span v-if="cancion?.bpm && cancion.bpm > 200">Prestissimo</span>
-      <span>&nbsp;-&nbsp;</span>
-
-      <span class="lblCabecera">Compas:</span>
-      <input
-        type="text"
-        v-model="cancion.compasCantidad"
-        maxlength="1"
-        :style="{ width: '3ch' }"
-      />
-      /
-      <input
-        type="text"
-        v-model="cancion.compasUnidad"
-        maxlength="1"
-        :style="{ width: '3ch' }"
-      />
-      <editarescala :cancion="cancion"></editarescala>
-      -
-      <span class="lblCabecera">Calidad:</span>
-      <input type="range" v-model="cancion.calidad" min="0" max="10" />
-    </div>
-  </nav>
+  <div class="navbarFogon">
+    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
+    <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
+    Escala: - {{ cancion.escala }}
+    <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
+    <label
+      >Tiempo: {{ cancion.bpm }} BPM {{ cancion.compasCantidad }} /
+      {{ cancion.compasUnidad }}</label
+    >
+    <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
+    <editararchivo
+      v-if="viendo == 'archivo'"
+      :cancion="cancion"
+    ></editararchivo>
+    <editarescala
+      v-if="viendo == 'escala'"
+      :cancion="cancion"
+      @cerrar="clickCerrar"
+    ></editarescala>
+    <editartiempo v-if="viendo == 'tiempo'" :cancion="cancion"></editartiempo>
+  </div>
 </template>
 
 <style scoped>

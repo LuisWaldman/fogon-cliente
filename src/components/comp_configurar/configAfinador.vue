@@ -3,18 +3,15 @@ import { ref, watch } from 'vue'
 import { Pantalla } from '../../modelo/pantalla'
 import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
+import frecuen from './frecuenciometro.vue'
+
+import circulo from './circulo.vue'
 
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
-const Notas = ref<number[]>([]) // Cantidad de notas en la afinación
-const ClaseNotas = ref<string[]>([])
-const NotasAnteriores = ref<number[]>([]) // Cantidad de notas en la afinación
-const ClaseNotasAnteriores = ref<string[]>([])
-const octavasCirculo = ref(7)
-const DesdeOctavasCirculo = ref(4)
 const refViendoFrecuencia = ref(440)
 const micHelper = new MicHelper()
 const refMicEstado = ref('')
@@ -31,6 +28,49 @@ const audioContext = ref<AudioContext | null>(null)
 const analyserNode = ref<AnalyserNode | null>(null)
 const sourceNode = ref<MediaStreamAudioSourceNode | null>(null)
 const buffer = new Float32Array(2048)
+const mostrandoEscala = ref([] as number[]) // Notas de la escala
+const mostrandoAcorde = ref([] as number[])
+
+const notas: string[] = [
+  'A',
+  'A#',
+  'B',
+  'C',
+  'C#',
+  'D',
+  'D#',
+  'E',
+  'F',
+  'F#',
+  'G',
+  'G#',
+]
+
+const mostrarEscala = ref(false)
+const escalaMenor = ref(false)
+const refViendoEscala = ref(0)
+let modos: { [key: string]: number[] } = {}
+modos['mayor'] = [2, 2, 1, 2, 2, 2]
+modos['menor'] = [2, 1, 2, 2, 1, 2]
+/*
+function cambiarModo() {
+  escalaMenor.value = !escalaMenor.value
+  calcularEscala()
+}
+*/
+function calcularEscala() {
+  if (!mostrandoEscala.value) {
+    mostrandoEscala.value = []
+    return
+  }
+  mostrandoEscala.value = []
+  const modo = escalaMenor.value ? 'menor' : 'mayor'
+  let notaCont: number = refViendoEscala.value
+  for (let i = 0; i < modos[modo].length; i++) {
+    mostrandoEscala.value.push(notaCont % cantidadNotas.value)
+    notaCont += modos[modo][i]
+  }
+}
 
 watch(mediaStream, (stream) => {
   if (!stream) return
@@ -84,7 +124,7 @@ function autoCorrelate(buffer: Float32Array, sampleRate: number): number {
   const T0 = maxpos
   return sampleRate / T0
 }
-const frequency = ref(-1)
+const frequency = ref(0)
 const detectFrequency = () => {
   if (!analyserNode.value) return
 
@@ -151,22 +191,6 @@ function Solicitar() {
 function clickVerFrecuencia(frecuencia: number) {
   refViendoFrecuencia.value = frecuencia
 }
-function calcularNotas() {
-  Notas.value = []
-  NotasAnteriores.value = []
-  const desdeNota = tipoAfinacion.value / 8
-  // cantidadNotas es la cantidad de notas en la octava
-  for (let i = 0; i < cantidadNotas.value * 3; i++) {
-    const nota = desdeNota * Math.pow(2, i / cantidadNotas.value)
-    NotasAnteriores.value.push(nota)
-  }
-  for (let i = 1; i < cantidadNotas.value * 3; i++) {
-    const nota = tipoAfinacion.value * Math.pow(2, i / cantidadNotas.value)
-    Notas.value.push(nota)
-  }
-}
-
-calcularNotas()
 
 function styleDivAfinador() {
   return {
@@ -174,182 +198,53 @@ function styleDivAfinador() {
     width: ancho + 'px',
   }
 }
-
-const maxRadio = 500
-const minRadio = 100
-const centroLeft = 300
-const centroTop = 230
-function StyleOctava(i: number) {
-  const radio =
-    minRadio + ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (i - 1)
-  const left = centroLeft - radio / 2
-  const top = centroTop - radio / 2
-  return {
-    width: radio + 'px',
-    top: top + 'px',
-    left: left + 'px',
-    height: radio + 'px',
-    borderRadius: '50%',
-  }
-}
-function StyleFrecuencia(frecuencia: number) {
-  let enOctava =
-    Math.floor(Math.log2(frecuencia / tipoAfinacion.value)) +
-    DesdeOctavasCirculo.value
-  const baseOctava =
-    tipoAfinacion.value *
-    Math.pow(2, Math.floor(Math.log2(frecuencia / tipoAfinacion.value)))
-  const portentajeEnOctava = (frecuencia - baseOctava) / baseOctava
-
-  if (enOctava < 0) {
-    enOctava = 0
-  }
-  // Calcular el porcentaje de la octava
-  const radio =
-    minRadio +
-    ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (enOctava - 1)
-  const left =
-    centroLeft + Math.cos(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
-  const top =
-    centroTop + Math.sin(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
-  console.log(
-    'enOctava',
-    enOctava,
-    baseOctava,
-    'Porcentaje=',
-    portentajeEnOctava,
-    frecuencia,
-    tipoAfinacion.value,
-  )
-  return {
-    top: top + 'px',
-    left: left + 'px',
-  }
-}
-
-function StyleFrecuenciaLinea(frecuencia: number) {
-  let fontSize = 10
-  let backgroundColor = ''
-  let border = ''
-  let color = 'white'
-
-  // Calcular en qué octava está la frecuencia relativa a tipoAfinacion
-  const octavasDesdeBase = Math.log2(frecuencia / tipoAfinacion.value)
-  const octavaCompleta = Math.floor(octavasDesdeBase)
-  const baseOctava = tipoAfinacion.value * Math.pow(2, octavaCompleta)
-  const portentajeEnOctava = (frecuencia - baseOctava) / baseOctava
-
-  // Determine styling based on the remainder
-  if (
-    Math.abs(portentajeEnOctava - 0) < 0.01 ||
-    Math.abs(portentajeEnOctava - 1) < 0.01
-  ) {
-    fontSize = 24
-    color = 'red'
-    border = '1px solid black'
-  } else if (Math.abs(portentajeEnOctava - 0.5) < 0.02) {
-    fontSize = 22
-    border = '1px solid rgb(102, 64, 64);'
-  } else if (Math.abs(portentajeEnOctava - 1 / 3) < 0.02) {
-    fontSize = 19
-    border = '1px solid rgb(102, 64, 64);'
-  } else if (Math.abs(portentajeEnOctava - 2 / 3) < 0.02) {
-    fontSize = 19
-    border = '1px solid rgb(102, 64, 64);'
-  }
-  return {
-    'font-size': fontSize + 'px',
-    'background-color': backgroundColor,
-    color: color,
-    border: border,
-    'padding-top': '-12px',
-  }
-}
 </script>
 
 <template>
   <div :style="styleDivAfinador()" class="divAfinador">
     <div style="display: flex">
-      <div
-        v-for="(nota, index) in NotasAnteriores"
-        @click="clickVerFrecuencia(nota)"
-        :key="index"
-        :style="StyleFrecuenciaLinea(nota)"
-        :class="ClaseNotasAnteriores[index]"
-        class="clsNota"
-      >
-        {{ nota.toFixed(0) }}
+      <div width="200px" max-width="200px">
+        FRECUENCIA <span> {{ frequency.toFixed(2) }} </span> Hz
       </div>
-      <input
-        type="number"
-        v-model="tipoAfinacion"
-        min="1"
-        max="999"
-        @focus="clickVerFrecuencia(tipoAfinacion)"
-        @change="calcularNotas"
-      />
-      <div
-        v-for="(nota, index) in Notas"
-        @click="clickVerFrecuencia(nota)"
-        :key="index"
-        :class="ClaseNotas[index]"
-        :style="StyleFrecuenciaLinea(nota)"
-        class="clsNota"
-      >
-        {{ nota.toFixed(0) }}
-      </div>
+      <frecuen
+        :tipoAfinacion="tipoAfinacion"
+        :cantidadNotas="cantidadNotas"
+        :frecuencia="frequency"
+        :ancho="ancho"
+      ></frecuen>
     </div>
     <div style="display: flex">
-      <div style="position: relative">
-        <div class="circulodiv" style="display: flex; width: 800px">
-          <div v-for="i in octavasCirculo" :key="i">
-            <div :style="StyleOctava(i)" class="circuloOctava"></div>
-          </div>
-
-          <div
-            :style="StyleFrecuencia(Number(refViendoFrecuencia.toFixed(0)))"
-            class="frecuencia viendoFrecuencia"
-          >
-            {{ refViendoFrecuencia.toFixed(0) }}
-          </div>
-          <div
-            v-if="frequency !== -1"
-            :style="StyleFrecuencia(Number(frequency.toFixed(0)))"
-            class="frecuencia viendoFrecuencia"
-          >
-            {{ frequency.toFixed(0) }}
-          </div>
-
-          <div
-            v-for="k in 3"
-            :key="k"
-            :style="StyleFrecuencia(tipoAfinacion * Math.pow(2, (k - 1) * 2))"
-            class="frecuencia"
-          >
-            {{ (tipoAfinacion * Math.pow(2, (k - 1) * 2)).toFixed(0) }}
-          </div>
-
-          <div
-            v-for="k in 3"
-            :key="k"
-            :style="StyleFrecuencia(440 * Math.pow(2, (k - 1) * 2))"
-            class="frecuencia"
-          >
-            {{ (440 * Math.pow(2, (k - 1) * 2)).toFixed(0) }}
-          </div>
-        </div>
-      </div>
       <div>
+        <div>
+          <input
+            type="checkbox"
+            v-model="mostrarEscala"
+            @change="calcularEscala"
+          />
+          <span>Mostrar Escala</span>
+          <select v-model="refViendoEscala" v-if="mostrarEscala">
+            <option
+              v-for="(nota, index) in notas"
+              :key="index"
+              :value="index"
+              @change="calcularEscala"
+            >
+              {{ nota }}
+            </option>
+          </select>
+        </div>
         <div>Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
         <div>
-          Total de Notas:
+          Afinacion
           <input
             type="number"
-            v-model="cantidadNotas"
+            v-model="tipoAfinacion"
             min="1"
-            max="24"
-            @change="calcularNotas"
+            max="999"
+            @focus="clickVerFrecuencia(tipoAfinacion)"
           />
+          Hz Total de Notas:
+          <input type="number" v-model="cantidadNotas" min="1" max="24" />
         </div>
         <div>
           Permisos Mic:
@@ -397,6 +292,14 @@ function StyleFrecuenciaLinea(frecuencia: number) {
           </div>
         </div>
       </div>
+      <circulo
+        :tipoAfinacion="tipoAfinacion"
+        :cantidadNotas="cantidadNotas"
+        :frecuencia="frequency"
+        :mostrarEscala="mostrandoEscala"
+        :mostrarAcorde="mostrandoAcorde"
+        :ancho="ancho"
+      ></circulo>
     </div>
   </div>
 </template>
@@ -410,19 +313,11 @@ function StyleFrecuenciaLinea(frecuencia: number) {
 .circulodiv {
   position: relative;
 }
-.circuloOctava {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid rgb(133, 104, 202);
-}
 .viendoFrecuencia {
   background-color: rgb(133, 104, 202);
   color: white;
   padding: 2px;
   border: 1px solid black;
-}
-.frecuencia {
-  position: absolute;
 }
 .divAfinador {
 }
@@ -440,6 +335,3 @@ function StyleFrecuenciaLinea(frecuencia: number) {
   height: 30px;
 }
 </style>
-
-function autoCorrelate(buffer: Float32Array, sampleRate: number) { throw new
-Error('Function not implemented.') }

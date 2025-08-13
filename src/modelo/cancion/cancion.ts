@@ -49,12 +49,16 @@ export class Cancion {
 
   normalizar() {
     const acordes = this.acordes?.GetTotalAcordes()
-    const letras = this.letras?.renglones.flat.length
-    if (letras < acordes) {
-      this.letras?.renglones.push(new Array(acordes - letras).fill(''))
+    const totalLetras = this.letras?.renglones.flat.length
+    if (this.letras?.renglones[0]?.length === 0) {
+      this.letras.renglones.shift()
     }
-    if (acordes < letras) {
-      console.log('Ajustando acordes a letras', acordes, letras)
+
+    if (totalLetras < acordes) {
+      this.letras?.renglones.push(new Array(acordes - totalLetras).fill(''))
+    }
+    if (acordes < totalLetras) {
+      console.log('Ajustando acordes a letras', acordes, totalLetras)
     }
   }
 

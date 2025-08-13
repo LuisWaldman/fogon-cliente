@@ -47,6 +47,7 @@ refEditandoTextoAcordes.value = EditarAcordesToTextoHelper.acordesToTexto(
 .divTextArea textarea {
   color: rgb(233, 221, 223);
   font-size: x-large;
+  padding-left: 7px;
 }
 .contAcordes {
   display: flex;

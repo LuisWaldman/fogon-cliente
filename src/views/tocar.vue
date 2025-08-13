@@ -74,7 +74,7 @@ function estiloVistaPrincipal() {
   ) {
     ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
   }
-  return `width: ${ancho}%; height: 100%; overflow: auto;`
+  return `width: ${ancho}%; height: 100%; `
 }
 
 function estiloVistaSecundaria() {
@@ -233,6 +233,7 @@ function cerrareditarPantalla() {
 
 .columnas {
   padding: 0;
+  overflow: hidden;
 }
 
 .pantallaPlay {
