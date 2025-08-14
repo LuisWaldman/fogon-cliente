@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
@@ -27,9 +28,21 @@ function getImageStyle() {
     height: '50px',
   }
 }
+
+const router = useRouter()
+function click_Fogon() {
+  console.log('click_Fogon', router.currentRoute.value.path)
+  if (router.currentRoute.value.path === '/tocar') {
+    router.push('/')
+  } else if (appStore.cancion.acordes.ordenPartes.length > 0) {
+    router.push('/tocar')
+  } else {
+    router.push('/')
+  }
+}
 </script>
 <template>
-  <router-link class="navbar-brand" to="/" style="color: inherit">
+  <div class="navbar-brand"  @click="click_Fogon" style="color: inherit">
     <div class="iconofogon">
       <div class="relative-container">
         <div v-if="appStore.estadoSesion === 'conectado'">
@@ -132,7 +145,7 @@ function getImageStyle() {
         </div>
       </div>
     </div>
-  </router-link>
+  </div>
 </template>
 
 <style scoped>
