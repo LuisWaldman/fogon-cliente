@@ -41,13 +41,13 @@ export class ReproductorConectado extends Reproductor {
     super()
     this.token = token
     this.cliente = cliente
-    this.cliente.setCancionActualizadaHandler((nombreArchivo: string) => {
-      console.log(`Canción actualizada: ${nombreArchivo}`)
-
-      this.CargarCancion(
-        new OrigenCancion(window.location.origin, nombreArchivo, ''),
-      )
-    })
+    this.cliente.setCancionActualizadaHandler(
+      (cancion: string, origen: string, usuario: string) => {
+        console.log(`Canción actualizada: ${cancion}`)
+        origen = origen || 'LOCAL'
+        this.CargarCancion(new OrigenCancion(origen, cancion, usuario))
+      },
+    )
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
       const appStore = useAppStore()
@@ -113,7 +113,11 @@ export class ReproductorConectado extends Reproductor {
     console.log('ESTADO', appStore.estadoSesion)
     if (appStore.estadoSesion === 'conectado') {
       console.log(`Actualizando canción en el servidor: ${cancion.fileName}`)
-      this.cliente.actualizarCancion(cancion.fileName)
+      this.cliente.actualizarCancion(
+        cancion.fileName,
+        cancion.origenUrl,
+        cancion.usuario,
+      )
     }
   }
 

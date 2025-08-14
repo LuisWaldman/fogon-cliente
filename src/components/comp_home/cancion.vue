@@ -37,7 +37,7 @@ defineEmits(['click'])
         origen fileName: {{ props.cancion.origen.fileName }}, url:
         {{ props.cancion.origen.origenUrl }}
         <span v-if="props.cancion.origen.origenUrl == 'server'">{{
-          props.cancion.origen.owner
+          props.cancion.origen.usuario
         }}</span>
       </div>
     </div>

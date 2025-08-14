@@ -14,7 +14,6 @@ import { OrigenCancion } from './modelo/cancion/origencancion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
-  appStore: AppStore = useAppStore()
   reproductorDesconectado: Reproductor = this.reproductor
   reproductorConectado: ReproductorConectado | null = null
   configuracion: Configuracion = Configuracion.getInstance()

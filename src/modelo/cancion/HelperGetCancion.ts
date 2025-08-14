@@ -113,6 +113,9 @@ export class UrlGetter {
     origencancion: OrigenCancion,
   ): Promise<Cancion> {
     let desdeUrl = origencancion.origenUrl
+    if (desdeUrl.includes('LOCAL')) {
+      desdeUrl = window.location.origin
+    }
     if (desdeUrl.includes('fogon.ar')) {
       desdeUrl = 'https://www.fogon.ar/canciones/'
     }
@@ -182,6 +185,9 @@ export class UrlGetter {
     origenUrl: string,
   ): Promise<ItemIndiceCancion[]> {
     let desdeUrl = origenUrl
+    if (desdeUrl.includes('LOCAL')) {
+      desdeUrl = window.location.origin
+    }
     if (desdeUrl.includes('fogon.ar')) {
       desdeUrl = 'https://www.fogon.ar/'
     }
