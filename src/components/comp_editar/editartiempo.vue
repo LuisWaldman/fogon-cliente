@@ -1,9 +1,17 @@
 <script setup lang="ts">
 import type { Cancion } from '../../modelo/cancion/cancion'
+import { Tiempo } from '../../modelo/tiempo';
+const tiempo = new Tiempo()
 
 defineProps<{
   cancion: Cancion
 }>()
+
+const emit = defineEmits(['cerrar'])
+function clickListo() {
+  emit('cerrar')
+}
+
 </script>
 <template>
   <div v-if="cancion">
@@ -58,6 +66,7 @@ defineProps<{
       maxlength="1"
       :style="{ width: '3ch' }"
     />
+    Duracion: <span>{{ tiempo.formatSegundos(cancion.duracionCancion)  }}</span>
   </div>
 </template>
 <style scoped></style>

@@ -2,7 +2,8 @@
 import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
-import editartiempo from './editartiempo.vue'
+import { Tiempo } from '../../modelo/tiempo';
+const tiempo = new Tiempo()
 import { ref } from 'vue'
 
 defineProps<{
@@ -26,10 +27,15 @@ function clickCerrar() {
     Escala: - {{ cancion.escala }}
     <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
     <label
-      >Tiempo: {{ cancion.bpm }} BPM {{ cancion.compasCantidad }} /
+      >Tiempo: {{ cancion.bpm }} BPM: {{ cancion.compasCantidad }} /
       {{ cancion.compasUnidad }}</label
+    >&nbsp;
+    <label
+      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
     <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
+    
+  <div>
     <editararchivo
       v-if="viendo == 'archivo'"
       :cancion="cancion"
@@ -39,7 +45,10 @@ function clickCerrar() {
       :cancion="cancion"
       @cerrar="clickCerrar"
     ></editarescala>
-    <editartiempo v-if="viendo == 'tiempo'" :cancion="cancion"></editartiempo>
+    <editartiempo v-if="viendo == 'tiempo'" :cancion="cancion"
+    @cerrar="clickCerrar"
+    ></editartiempo>
+    </div>
   </div>
 </template>
 
@@ -168,7 +177,6 @@ function clickCerrar() {
 }
 .navbarFogon {
   width: 100%;
-  display: flex;
   border: 1px solid;
   background-color: #353333 !important;
 }
