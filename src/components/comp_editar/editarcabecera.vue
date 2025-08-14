@@ -2,6 +2,7 @@
 import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
+import editartiempo from './editartiempo.vue'
 import { Tiempo } from '../../modelo/tiempo';
 const tiempo = new Tiempo()
 import { ref } from 'vue'

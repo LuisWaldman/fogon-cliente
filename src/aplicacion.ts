@@ -281,10 +281,12 @@ export default class Aplicacion {
       .then((response) => response.json())
       .then((data) => {
         const appStore = useAppStore()
-        appStore.perfil.imagen = data.Imagen
-        appStore.perfil.nombre = data.Nombre
-        appStore.perfil.descripcion = data.Descripcion
-        appStore.perfil.instrumento = data.Instrumento
+        if (data != null) {
+          appStore.perfil.imagen = data.Imagen
+          appStore.perfil.nombre = data.Nombre
+          appStore.perfil.descripcion = data.Descripcion
+          appStore.perfil.instrumento = data.Instrumento
+        }
       })
       .catch((error) => {
         console.error('Error al obtener el perfil del usuario:', error)
