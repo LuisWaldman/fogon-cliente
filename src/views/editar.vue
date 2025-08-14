@@ -30,12 +30,11 @@ function guardarCambios() {
     .HTTPPost('cancion', cancionData)
     .then((response) => {
       console.log('Canción guardada exitosamente', response)
-      if (appStore.estadoSesion === 'conectado' ) {
+      if (appStore.estadoSesion === 'conectado') {
         appStore.aplicacion.SetCancion(
-          new OrigenCancion('server', appStore.editandocancion?.archivo, '')
+          new OrigenCancion('server', appStore.editandocancion?.archivo, ''),
         )
       }
-    
     })
     .catch((error) => {
       console.error('Error al guardar la canción', error)
