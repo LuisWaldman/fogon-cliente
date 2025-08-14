@@ -4,6 +4,10 @@ import { Reproductor } from './reproductor'
 import { HelperSincro } from './sincro/HelperSincro'
 import { SincroCancion } from './sincro/SincroCancion'
 import { OrigenCancion } from './cancion/origencancion'
+import { HelperGetCancionServer } from './cancion/HelperGetCancion'
+import { Cancion } from './cancion/cancion'
+import { Acordes } from './cancion/acordes'
+import { Letra } from './cancion/letra'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
@@ -39,58 +43,10 @@ export class ReproductorConectado extends Reproductor {
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler((nombreArchivo: string) => {
       console.log(`Canción actualizada: ${nombreArchivo}`)
+
       this.CargarCancion(
-        new OrigenCancion('url:' + window.location.href, nombreArchivo, ''),
+        new OrigenCancion(window.location.origin, nombreArchivo, ''),
       )
-      /*
-      fetch(
-        `${this.cliente.UrlServer}cancion?nombre=${encodeURIComponent(nombreArchivo)}`,
-        {
-          method: 'GET',
-          headers: {
-            Authorization: `Bearer ${this.token}`,
-          },
-        },
-      ).then(async (response) => {
-        if (response.ok) {
-          const data = await response.json()
-
-          const partes = []
-          for (let i = 0; i < data.datosJSON.acordes.partes.length; i++) {
-            partes.push(
-              new Parte(
-                data.datosJSON.acordes.partes[i].nombre,
-                data.datosJSON.acordes.partes[i].acordes,
-              ),
-            )
-          }
-
-          const acordes = new Acordes(
-            partes,
-            data.datosJSON.acordes.ordenPartes,
-          )
-
-          const toRet: Cancion = new Cancion(
-            data.datosJSON.cancion,
-            data.datosJSON.banda,
-            acordes,
-            new Letra(data.datosJSON.letras.renglones),
-            data.datosJSON.bpm,
-            data.datosJSON.calidad,
-            data.datosJSON.compas_cantidad,
-            data.datosJSON.compases_tiempo,
-            data.datosJSON.escala,
-          )
-          toRet.archivo = nombreArchivo
-          toRet.normalizar()
-          const appStore = useAppStore()
-          appStore.cancion = toRet
-          console.log(`Canción cargada: `, toRet)
-          this.cancion = nombreArchivo
-        } else {
-          throw new Error('Error al obtener la canción')
-        }
-      })*/
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
@@ -124,6 +80,28 @@ export class ReproductorConectado extends Reproductor {
       const appStore = useAppStore()
       appStore.compas = compas
     })
+  }
+
+  protected override async CargarCancion(cancion: OrigenCancion) {
+    if (!cancion.fileName.startsWith('SERVER:')) {
+      return super.CargarCancion(cancion)
+    }
+    return HelperGetCancionServer.Get(cancion, this.cliente, this.token)
+      .then((cancion) => {
+        cancion.normalizar()
+        const appStore = useAppStore()
+        appStore.cancion = cancion
+      })
+      .catch((error) => {
+        console.error('Error al cargar la canción:', error)
+        const appStore = useAppStore()
+        appStore.cancion = new Cancion(
+          'Error en servidor',
+          'sin banda',
+          new Acordes([], []),
+          new Letra([]),
+        )
+      })
   }
 
   override onInicioCiclo() {
