@@ -66,9 +66,7 @@ export default class Aplicacion {
     const cancion = urlParams.get('cancion')
     if (cancion) {
       console.log('cancion', cancion)
-      this.SetCancion(
-        new OrigenCancion('url:' + window.location.href, cancion, ''),
-      )
+      this.SetCancion(new OrigenCancion('local', cancion, ''))
     }
   }
 

@@ -5,12 +5,12 @@ import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
-import editartexto from '../components/comp_editar/editartexto.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
-
+import editartexto from '../components/comp_editar/editarTexto.vue'
 import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
+import { OrigenCancion } from '../modelo/cancion/origencancion'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -30,6 +30,12 @@ function guardarCambios() {
     .HTTPPost('cancion', cancionData)
     .then((response) => {
       console.log('Canción guardada exitosamente', response)
+      if (appStore.estadoSesion === 'conectado' ) {
+        appStore.aplicacion.SetCancion(
+          new OrigenCancion('server', appStore.editandocancion?.archivo, '')
+        )
+      }
+    
     })
     .catch((error) => {
       console.error('Error al guardar la canción', error)

@@ -83,7 +83,7 @@ export class ReproductorConectado extends Reproductor {
   }
 
   protected override async CargarCancion(cancion: OrigenCancion) {
-    if (!cancion.fileName.startsWith('SERVER:')) {
+    if (cancion.origenUrl !== 'server') {
       return super.CargarCancion(cancion)
     }
     return HelperGetCancionServer.Get(cancion, this.cliente, this.token)
