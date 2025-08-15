@@ -103,6 +103,7 @@ function clickEditar() {
     appStore.origenCancion.fileName,
     appStore.origenCancion.usuario
   )
+  appStore.cancionModificada = false
   router.push('/editar')
 }
 

@@ -7,6 +7,7 @@ import { Tiempo } from '../../modelo/tiempo'
 const tiempo = new Tiempo()
 import { ref } from 'vue'
 import type { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { useAppStore } from '../../stores/appStore'
 
 defineProps<{
   cancion: Cancion,
@@ -18,8 +19,13 @@ function clickCambiar(nviendo: string) {
   viendo.value = nviendo
 }
 
-function clickCerrar() {
+const appStore = useAppStore()
+function clickCerrar(modificado: boolean) {
+  console.log('clickCerrar', modificado)
   viendo.value = ''
+  if (modificado) {
+    appStore.cancionModificada = true
+  }
 }
 </script>
 
@@ -45,6 +51,7 @@ function clickCerrar() {
 <label
       >Origen: {{ origen.origenUrl }}</label
     >
+    <label v-if="appStore.cancionModificada">*</label>
     <label @click="clickCambiar('origen')" @cerrar="clickCerrar">🔄</label>
     <div>
       <editararchivo
@@ -61,6 +68,7 @@ function clickCerrar() {
         :cancion="cancion"
         @cerrar="clickCerrar"
       ></editartiempo>
+
     </div>
   </div>
 </template>

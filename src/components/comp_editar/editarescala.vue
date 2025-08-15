@@ -58,7 +58,7 @@ function changeToEscala() {
 
 const emit = defineEmits(['cerrar'])
 function clickCancelarCambiarEscala() {
-  emit('cerrar')
+  emit('cerrar', false)
 }
 function clickConfirmarCambiarEscala() {
   helperMuisca.ActualizarEscala(
@@ -66,7 +66,7 @@ function clickConfirmarCambiarEscala() {
     Escala.value,
     NuevaEscala.value,
   )
-  emit('cerrar')
+  emit('cerrar', true)
 }
 </script>
 <template>

@@ -44,6 +44,7 @@ export const useAppStore = defineStore('app', () => {
   editandocancion.value.escala = 'C'
   const origenCancion = ref<OrigenCancion>(new OrigenCancion('', '', ''))
   const origenEditando = ref<OrigenCancion>(new OrigenCancion('', '', ''))
+  const cancionModificada = ref<boolean>(false)
 
   const sesiones = ref<Sesion[]>([] as Sesion[])
   const listaCanciones = ref<itemLista[]>([])
@@ -84,6 +85,7 @@ export const useAppStore = defineStore('app', () => {
     aplicacion,
     origenCancion,
     origenEditando,
+    cancionModificada,
     cancion,
     editandocancion,
     listaCanciones,
