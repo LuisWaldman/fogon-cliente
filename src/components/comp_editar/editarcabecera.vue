@@ -31,6 +31,7 @@ function clickCerrar(modificado: boolean) {
 
 <template>
   <div class="navbarFogon">
+    <label v-if="origen.origenUrl = 'sitio'">🌐</label>
     <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
     <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
@@ -57,6 +58,7 @@ function clickCerrar(modificado: boolean) {
       <editararchivo
         v-if="viendo == 'archivo'"
         :cancion="cancion"
+        :origen="origen"
       ></editararchivo>
       <editarescala
         v-if="viendo == 'escala'"

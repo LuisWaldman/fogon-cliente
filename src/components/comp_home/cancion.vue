@@ -29,7 +29,7 @@ defineEmits(['click'])
   <div class="cancion" @click="$emit('click')">
     <div class="nombreCancion">{{ arreglartexto(props.cancion.cancion) }}</div>
     <div class="origen-indicador">
-      <div v-if="props.cancion.origen.origenUrl = 'sitio'">W</div>
+      <div v-if="props.cancion.origen.origenUrl = 'sitio'">🌐</div>
     </div>
     <div>{{ arreglartexto(props.cancion.banda) }}</div>
     <div v-if="viendoDetalle">
