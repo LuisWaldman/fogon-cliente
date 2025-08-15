@@ -51,7 +51,6 @@ export default class Aplicacion {
   }
 
   async SetCancion(cancion: OrigenCancion) {
-    
     this.reproductor.SetCancion(cancion)
   }
   updateCompas(compas: number) {
@@ -98,6 +97,9 @@ export default class Aplicacion {
     this.cliente.setConectadoHandler((token: string) => {
       console.log(`Conectado: ${token}`)
       this.token = token
+      if (this.configuracion && this.configuracion.perfil) {
+        this.enviarPerfil(this.configuracion.perfil)
+      }
       this.cargarSesiones()
       const urlParams = new URLSearchParams(window.location.search)
       const sesionurl = urlParams.get('sesion')
@@ -160,6 +162,17 @@ export default class Aplicacion {
       console.log('Usuarios actualizados')
       this.CargarUsuariosSesion()
     })
+  }
+  enviarPerfil(perfil: Perfil) {
+    this.HTTPPost('perfil', perfil)
+      .then((response: unknown) => {
+        const appStore = useAppStore()
+        appStore.perfil = perfil
+        console.log('Profile updated successfully:', response)
+      })
+      .catch((error: Error) => {
+        console.error('Error updating profile:', error)
+      })
   }
 
   CargarUsuariosSesion() {
@@ -246,6 +259,7 @@ export default class Aplicacion {
   }
 
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
+    console.log('HTTPPost', urlPost, this.token)
     return fetch(this.url + urlPost, {
       method: 'POST',
       headers: {

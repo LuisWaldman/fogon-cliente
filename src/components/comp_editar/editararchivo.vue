@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
-import type { OrigenCancion } from '../../modelo/cancion/origencancion';
+import type { OrigenCancion } from '../../modelo/cancion/origencancion'
 
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
@@ -31,38 +31,20 @@ function clickGuardar() {
 }
 </script>
 <template>
-  
   <div>
     <span class="lblCabecera" @click="clickCancelarCambiarDatos"
       >[cancelar]</span
     >
-    <span
-      class="lblCabecera"
-      
-      @click="clickGuardar"
-      >[guardar]</span
-    >
-    <span
-      class="lblCabecera"
-      
-      @click="clickGuardar"
-      >[nuevo]</span>
-      
-    <span
-      class="lblCabecera"
-      
-      @click="clickGuardar"
-      >[subir]</span>
-    <span
-      class="lblCabecera"      
-      @click="clickGuardar"
-      >[descargar]</span>
+    <span class="lblCabecera" @click="clickGuardar">[guardar]</span>
+    <span class="lblCabecera" @click="clickGuardar">[nuevo]</span>
+
+    <span class="lblCabecera" @click="clickGuardar">[subir]</span>
+    <span class="lblCabecera" @click="clickGuardar">[descargar]</span>
   </div>
   <div style="width: 100%">
-    
     <div>
       <label v-if="origen.origenUrl === 'sitio'">🌐</label>
-      
+
       Cancion:
       <input
         type="text"
@@ -80,19 +62,19 @@ function clickGuardar() {
     </div>
   </div>
   <div>
-    
-      Archivo:
-      <input
-        type="text"
-        v-model="nombrearchivo"
-        :style="{ width: nombrearchivo.length + 'ch' }"
-        class="input-editable"
-      />
-      Origen: <select v-model="origenDestino">
-        <option value="local">LocalStorage</option>
-        <option value="remoto">Servidor</option>
-      </select>
-      [cancelar][guardar]
+    Archivo:
+    <input
+      type="text"
+      v-model="nombrearchivo"
+      :style="{ width: nombrearchivo.length + 'ch' }"
+      class="input-editable"
+    />
+    Origen:
+    <select v-model="origenDestino">
+      <option value="local">LocalStorage</option>
+      <option value="remoto">Servidor</option>
+    </select>
+    [cancelar][guardar]
   </div>
   <div></div>
 </template>

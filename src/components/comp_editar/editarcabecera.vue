@@ -10,7 +10,7 @@ import type { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
 
 defineProps<{
-  cancion: Cancion,
+  cancion: Cancion
   origen: OrigenCancion
 }>()
 
@@ -32,7 +32,8 @@ function clickCerrar(modificado: boolean) {
 <template>
   <div class="navbarFogon">
     <label v-if="origen.origenUrl = 'sitio'">🌐</label>
-    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label><label v-if="appStore.cancionModificada">*</label>
+    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label
+    ><label v-if="appStore.cancionModificada">*</label>
     <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
     <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
@@ -43,8 +44,8 @@ function clickCerrar(modificado: boolean) {
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
-    
-&nbsp;
+
+    &nbsp;
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
@@ -66,7 +67,6 @@ function clickCerrar(modificado: boolean) {
         :cancion="cancion"
         @cerrar="clickCerrar"
       ></editartiempo>
-
     </div>
   </div>
 </template>

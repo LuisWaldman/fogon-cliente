@@ -112,7 +112,6 @@ export class UrlGetter {
   public static async GetSongUrl(
     origencancion: OrigenCancion,
   ): Promise<Cancion> {
-
     let desdeUrl = window.location.origin
     if (desdeUrl.includes('fogon.ar')) {
       desdeUrl = 'https://www.fogon.ar/canciones/'

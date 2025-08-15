@@ -148,8 +148,9 @@ watch(
 )
 </script>
 <template>
-  <cabecera :cancion="appStore.editandocancion"
-  :origen="appStore.origenEditando"
+  <cabecera
+    :cancion="appStore.editandocancion"
+    :origen="appStore.origenEditando"
   ></cabecera>
   <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
     <div style="width: 70%" :style="estiloVistaPrincipal()">

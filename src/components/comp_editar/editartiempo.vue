@@ -13,9 +13,7 @@ function clickListo() {
 }
 </script>
 <template>
-  <div @click="clickListo">
-    [Listo]
-  </div>
+  <div @click="clickListo">[Listo]</div>
   <div v-if="cancion">
     <span class="lblCabecera">BPM:</span>
     <input

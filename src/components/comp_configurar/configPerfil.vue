@@ -11,15 +11,8 @@ const config = Configuracion.getInstance()
 
 function updateProfileWeb() {
   perfil.value.imagen = imageBase64.value
-  appStore.aplicacion
-    .HTTPPost('perfil', perfil.value)
-    .then((response: unknown) => {
-      appStore.perfil = perfil.value
-      console.log('Profile updated successfully:', response)
-    })
-    .catch((error: Error) => {
-      console.error('Error updating profile:', error)
-    })
+  appStore.aplicacion.enviarPerfil(perfil.value)
+
 }
 
 function updateProfile() {

@@ -101,7 +101,7 @@ function clickEditar() {
   appStore.origenEditando = new OrigenCancion(
     appStore.origenCancion.origenUrl,
     appStore.origenCancion.fileName,
-    appStore.origenCancion.usuario
+    appStore.origenCancion.usuario,
   )
   appStore.cancionModificada = false
   router.push('/editar')
