@@ -1,11 +1,40 @@
 import type { Cancion } from './cancion'
 import { HelperJSON } from './HelperJSON'
+import type { OrigenCancion } from './origencancion'
 
 export class CancionIndexedDBManager {
-  static SaveSong(
-    db: IDBDatabase | null,
-    cancion: Cancion,
-  ): void | PromiseLike<void> {
+  public static async GetCancion(
+    origencancion: OrigenCancion,
+    db: IDBDatabase,
+  ): Promise<Cancion> {
+    if (!db) {
+      return Promise.reject(new Error('Base de datos no inicializada'))
+    }
+
+    return new Promise<Cancion>((resolve, reject) => {
+      const transaction = db.transaction('canciones', 'readonly')
+      const store = transaction.objectStore('canciones')
+      const request = store.get(origencancion.fileName)
+
+      request.onsuccess = (event) => {
+        const result = (event.target as IDBRequest).result
+        if (result) {
+          console.log('Canción recuperada de IndexedDB:', result)
+          const cancion = HelperJSON.JSONToCancion(result.contenido)
+          resolve(cancion)
+        } else {
+          reject(new Error(`Canción no encontrada: ${origencancion.fileName}`))
+        }
+      }
+
+      request.onerror = (event) => {
+        console.error('Error al recuperar canción de IndexedDB:', event)
+        reject(event)
+      }
+    })
+  }
+
+  static SaveSong(db: IDBDatabase, cancion: Cancion): void | PromiseLike<void> {
     if (!db) {
       return Promise.reject(new Error('Base de datos no inicializada'))
     }

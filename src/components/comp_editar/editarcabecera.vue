@@ -38,7 +38,7 @@ function clickCerrar(modificado: boolean) {
     <emoticonOrigen :origen="origen.origenUrl" />
     <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
-    
+
     <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
@@ -50,8 +50,6 @@ function clickCerrar(modificado: boolean) {
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
-
-    
 
     <div>
       <editararchivo

@@ -42,7 +42,7 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
-
+/*
 function subirguardarCambios() {
   const cancionData = {
     nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
@@ -58,7 +58,7 @@ function subirguardarCambios() {
     .catch((error) => {
       console.error('Error al guardar la canción', error)
     })
-}
+}*/
 function guardarCambios() {
   CancionManager.getInstance()
     .Save(
@@ -88,6 +88,7 @@ function clickGuardar() {
     >
     <span
       v-if="
+        (appStore.cancionModificada && origenDestino === 'local') ||
         origenOriginal !== origenDestino ||
         nombrearchivo !== props.cancion.archivo ||
         nombrecancion !== props.cancion.cancion ||

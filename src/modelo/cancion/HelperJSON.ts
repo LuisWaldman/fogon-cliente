@@ -1,4 +1,4 @@
-import type { Cancion } from './cancion'
+import { Cancion } from './cancion'
 
 export class HelperJSON {
   public static CancionToJSON(cancion: Cancion): string {
