@@ -9,17 +9,24 @@ const props = defineProps<{
   origen: OrigenCancion
 }>()
 
-const modelcancion = ref(props.cancion.cancion)
-const modelbanda = ref(props.cancion.banda)
-const modelarchivo = ref(props.cancion.archivo)
+const nombrecancion = ref('')
+const nombrebanda = ref('')
+const nombrearchivo = ref('')
+const origenOriginal = ref('')
+const origenDestino = ref('')
+nombrecancion.value = props.cancion.cancion
+nombrebanda.value = props.cancion.banda
+nombrearchivo.value = props.cancion.archivo
+origenOriginal.value = props.origen.origenUrl
+origenDestino.value = props.origen.origenUrl
 
 function clickCancelarCambiarDatos() {
   emit('cerrar', false)
 }
 function clickGuardar() {
-  props.cancion.cancion = modelcancion.value
-  props.cancion.banda = modelbanda.value
-  props.cancion.archivo = modelarchivo.value
+  props.cancion.cancion = nombrecancion.value
+  props.cancion.banda = nombrebanda.value
+  props.cancion.archivo = nombrearchivo.value
   emit('cerrar', true)
 }
 </script>
@@ -40,17 +47,16 @@ function clickGuardar() {
       
       @click="clickGuardar"
       >[nuevo]</span>
-      <span
-      class="lblCabecera"
       
-      @click="clickGuardar"
-      >[descargar]</span>
     <span
       class="lblCabecera"
       
       @click="clickGuardar"
       >[subir]</span>
-    
+    <span
+      class="lblCabecera"      
+      @click="clickGuardar"
+      >[descargar]</span>
   </div>
   <div style="width: 100%">
     
@@ -60,18 +66,33 @@ function clickGuardar() {
       Cancion:
       <input
         type="text"
-        v-model="cancion.cancion"
-        :style="{ width: cancion.cancion.length + 'ch' }"
+        v-model="nombrecancion"
+        :style="{ width: nombrecancion.length + 'ch' }"
         class="input-editable"
       />
       - Banda:
       <input
         type="text"
-        v-model="cancion.banda"
-        :style="{ width: cancion.banda.length + 1 + 'ch' }"
+        v-model="nombrebanda"
+        :style="{ width: nombrebanda.length + 1 + 'ch' }"
         class="input-editable"
       />
     </div>
+  </div>
+  <div>
+    
+      Archivo:
+      <input
+        type="text"
+        v-model="nombrearchivo"
+        :style="{ width: nombrearchivo.length + 'ch' }"
+        class="input-editable"
+      />
+      Origen: <select v-model="origenDestino">
+        <option value="local">LocalStorage</option>
+        <option value="remoto">Servidor</option>
+      </select>
+      [cancelar][guardar]
   </div>
   <div></div>
 </template>

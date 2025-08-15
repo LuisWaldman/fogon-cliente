@@ -32,7 +32,7 @@ function clickCerrar(modificado: boolean) {
 <template>
   <div class="navbarFogon">
     <label v-if="origen.origenUrl = 'sitio'">🌐</label>
-    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
+    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label><label v-if="appStore.cancionModificada">*</label>
     <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
     <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
@@ -49,11 +49,7 @@ function clickCerrar(modificado: boolean) {
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
     <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
-<label
-      >Origen: {{ origen.origenUrl }}</label
-    >
-    <label v-if="appStore.cancionModificada">*</label>
-    <label @click="clickCambiar('origen')" @cerrar="clickCerrar">🔄</label>
+
     <div>
       <editararchivo
         v-if="viendo == 'archivo'"
