@@ -85,7 +85,11 @@ export class CancionManager {
     return acancion
   }
 
-  public async Save(origen: string, cancion: Cancion): Promise<void> {
-    return CancionIndexedDBManager.SaveSong(this.db, cancion)
+  public async Save(origen: OrigenCancion, cancion: Cancion): Promise<void> {
+    CancionIndexedDBManager.SaveSong(this.db, cancion)
+    const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
+    const ultimas = new UltimasCanciones()
+    console.log('Guardando en ultimas', item)
+    ultimas.agregar(item)
   }
 }

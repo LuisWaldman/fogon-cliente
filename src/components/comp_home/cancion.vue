@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
+import emoticonOrigen from './emoticonOrigen.vue'
 
 const props = defineProps<{
   cancion: ItemIndiceCancion
@@ -29,7 +30,9 @@ defineEmits(['click'])
   <div class="cancion" @click="$emit('click')">
     <div class="nombreCancion">{{ arreglartexto(props.cancion.cancion) }}</div>
     <div class="origen-indicador">
-      <div v-if="props.cancion.origen.origenUrl = 'sitio'">🌐</div>
+      <emoticonOrigen :origen="props.cancion.origen.origenUrl" />
+      
+      
     </div>
     <div>{{ arreglartexto(props.cancion.banda) }}</div>
     <div v-if="viendoDetalle">

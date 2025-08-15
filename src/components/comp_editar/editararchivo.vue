@@ -61,7 +61,10 @@ function subirguardarCambios() {
 }
 function guardarCambios() {
   CancionManager.getInstance()
-    .Save(origenDestino.value, props.cancion)
+    .Save(
+      new OrigenCancion(origenDestino.value, nombrearchivo.value, ''),
+      props.cancion,
+    )
     .then(() => {
       console.log('Cambios guardados exitosamente')
       emit('cerrar', true)
@@ -131,7 +134,7 @@ function clickGuardar() {
     Origen:
     <select v-model="origenDestino">
       <option value="sitio">🌐Sitio</option>
-      <option value="local">🖥️LocalStorage</option>
+      <option value="local">💾LocalStorage</option>
       <option value="remoto" v-if="appStore.estadoLogin === 'logueado'">
         🔌Servidor
       </option>
