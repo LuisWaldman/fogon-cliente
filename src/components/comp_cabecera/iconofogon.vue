@@ -30,7 +30,7 @@ function getImageStyle() {
 }
 
 const router = useRouter()
-function click_Fogon() {
+function clickFogon() {
   console.log('click_Fogon', router.currentRoute.value.path)
   if (router.currentRoute.value.path === '/tocar') {
     router.push('/')
@@ -42,7 +42,7 @@ function click_Fogon() {
 }
 </script>
 <template>
-  <div class="navbar-brand" @click="click_Fogon" style="color: inherit">
+  <div class="navbar-brand" @click="clickFogon" style="color: inherit">
     <div class="iconofogon">
       <div class="relative-container">
         <div v-if="appStore.estadoSesion === 'conectado'">

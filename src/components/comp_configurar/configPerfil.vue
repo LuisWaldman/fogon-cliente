@@ -12,7 +12,6 @@ const config = Configuracion.getInstance()
 function updateProfileWeb() {
   perfil.value.imagen = imageBase64.value
   appStore.aplicacion.enviarPerfil(perfil.value)
-
 }
 
 function updateProfile() {
