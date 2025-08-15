@@ -138,7 +138,7 @@ function clickFogon() {
 
       <div style="margin-top: 50px">
         <div class="titulo-Fogon" v-if="appStore.estadoSesion != 'conectado'">
-          Fogon
+          Fogon V 1.0
         </div>
         <div class="titulo-Fogon" v-if="appStore.estadoSesion === 'conectado'">
           {{ appStore.sesion.nombre }}
