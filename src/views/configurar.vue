@@ -11,7 +11,7 @@ import { useAppStore } from '../stores/appStore'
 import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
 const appStore = useAppStore()
 // Definir la canción y el contexto
-const viendo = ref('login')
+const viendo = ref('perfil')
 /*
 if (appStore.estado === 'conectado') {
   viendo.value = 'login'
@@ -33,6 +33,15 @@ function clickOpcion(viendostr: string) {
       <div>
         <div class="">
           <ul class="nav nav-pills flex-column mb-auto">
+            <li @click="clickOpcion('perfil')">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'perfil' }"
+              >
+                Perfil
+              </a>
+            </li>
             <li @click="clickOpcion('login')">
               <a
                 href="#"
@@ -44,19 +53,6 @@ function clickOpcion(viendostr: string) {
                 :class="{ activo: viendo === 'login' }"
               >
                 Login
-              </a>
-            </li>
-
-            <li
-              @click="clickOpcion('perfil')"
-              v-if="appStore.estadoLogin == 'logueado'"
-            >
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'perfil' }"
-              >
-                Perfil
               </a>
             </li>
 

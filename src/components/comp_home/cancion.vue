@@ -29,7 +29,7 @@ defineEmits(['click'])
   <div class="cancion" @click="$emit('click')">
     <div class="nombreCancion">{{ arreglartexto(props.cancion.cancion) }}</div>
     <div class="origen-indicador">
-      <div v-if="props.cancion.origen.origenUrl.startsWith('http')">W</div>
+      <div v-if="props.cancion.origen.origenUrl = 'sitio'">🌐</div>
     </div>
     <div>{{ arreglartexto(props.cancion.banda) }}</div>
     <div v-if="viendoDetalle">
@@ -37,7 +37,7 @@ defineEmits(['click'])
         origen fileName: {{ props.cancion.origen.fileName }}, url:
         {{ props.cancion.origen.origenUrl }}
         <span v-if="props.cancion.origen.origenUrl == 'server'">{{
-          props.cancion.origen.owner
+          props.cancion.origen.usuario
         }}</span>
       </div>
     </div>

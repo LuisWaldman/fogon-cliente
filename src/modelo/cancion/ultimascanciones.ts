@@ -16,7 +16,7 @@ export class UltimasCanciones {
       (c) =>
         c.origen.fileName !== cancion.origen.fileName ||
         c.origen.origenUrl !== cancion.origen.origenUrl ||
-        c.origen.owner !== cancion.origen.owner ||
+        c.origen.usuario !== cancion.origen.usuario ||
         c.cancion !== cancion.cancion ||
         c.banda !== cancion.banda,
     )

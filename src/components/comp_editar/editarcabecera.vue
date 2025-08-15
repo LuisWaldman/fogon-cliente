@@ -3,10 +3,15 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
 import editartiempo from './editartiempo.vue'
+import { Tiempo } from '../../modelo/tiempo'
+const tiempo = new Tiempo()
 import { ref } from 'vue'
+import type { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { useAppStore } from '../../stores/appStore'
 
 defineProps<{
   cancion: Cancion
+  origen: OrigenCancion
 }>()
 
 const viendo = ref('' as string)
@@ -14,32 +19,55 @@ function clickCambiar(nviendo: string) {
   viendo.value = nviendo
 }
 
-function clickCerrar() {
+const appStore = useAppStore()
+function clickCerrar(modificado: boolean) {
+  console.log('clickCerrar', modificado)
   viendo.value = ''
+  if (modificado) {
+    appStore.cancionModificada = true
+  }
 }
 </script>
 
 <template>
   <div class="navbarFogon">
-    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
+    <label v-if="origen.origenUrl = 'sitio'">🌐</label>
+    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label
+    ><label v-if="appStore.cancionModificada">*</label>
     <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
     <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
     <label
-      >Tiempo: {{ cancion.bpm }} BPM {{ cancion.compasCantidad }} /
+      >Tiempo: {{ cancion.bpm }} BPM: {{ cancion.compasCantidad }} /
       {{ cancion.compasUnidad }}</label
+    >&nbsp;
+    <label
+      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
+    >
+
+    &nbsp;
+    <label
+      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
     <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
-    <editararchivo
-      v-if="viendo == 'archivo'"
-      :cancion="cancion"
-    ></editararchivo>
-    <editarescala
-      v-if="viendo == 'escala'"
-      :cancion="cancion"
-      @cerrar="clickCerrar"
-    ></editarescala>
-    <editartiempo v-if="viendo == 'tiempo'" :cancion="cancion"></editartiempo>
+
+    <div>
+      <editararchivo
+        v-if="viendo == 'archivo'"
+        :cancion="cancion"
+        :origen="origen"
+      ></editararchivo>
+      <editarescala
+        v-if="viendo == 'escala'"
+        :cancion="cancion"
+        @cerrar="clickCerrar"
+      ></editarescala>
+      <editartiempo
+        v-if="viendo == 'tiempo'"
+        :cancion="cancion"
+        @cerrar="clickCerrar"
+      ></editartiempo>
+    </div>
   </div>
 </template>
 
@@ -168,7 +196,6 @@ function clickCerrar() {
 }
 .navbarFogon {
   width: 100%;
-  display: flex;
   border: 1px solid;
   background-color: #353333 !important;
 }

@@ -3,7 +3,6 @@ import { Reproductor } from './modelo/reproductor'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
-import { Noticia } from './modelo/noticia'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
 import { ReproductorConectado } from './modelo/reproductorConectado'
@@ -20,33 +19,9 @@ export default class Aplicacion {
   cliente: ClienteSocket | null = null
   token: string = ''
 
-  async SetCancion(cancion: OrigenCancion) {
-    this.reproductor.SetCancion(cancion)
-  }
-
-  async cargarNoticiasLocales() {
-    const response = await fetch('/noticias/notiloc.json')
-    const data = await response.json()
-
-    const newNoticias = []
-    for (let i = 0; i < data.length; i++) {
-      newNoticias.push(
-        new Noticia(
-          data[i].fechayhora,
-          data[i].titulo,
-          data[i].texto,
-          data[i].mastexto,
-        ),
-      )
-    }
-    const appStore = useAppStore()
-    appStore.noticias = newNoticias
-  }
-
-  onMounted() {
-    console.log('Aplicacion montada')
-    this.cargarNoticiasLocales()
-
+  constructor() {
+    // Inicialización de la aplicación
+    console.log('Aplicacion inicializada')
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
         (s) => s.nombre === this.configuracion.conectarServerDefault,
@@ -57,17 +32,26 @@ export default class Aplicacion {
         console.warn('Servidor por defecto no encontrado')
       }
     }
+  }
+
+  onMounted() {
+    console.log('Aplicacion montada')
+
+    const appStore = useAppStore()
+    appStore.perfil =
+      this.configuracion.perfil || new Perfil('', '', '', '', '')
 
     const urlParams = new URLSearchParams(window.location.search)
     const cancion = urlParams.get('cancion')
     if (cancion) {
       console.log('cancion', cancion)
-      this.SetCancion(
-        new OrigenCancion('url:' + window.location.href, cancion, ''),
-      )
+      this.SetCancion(new OrigenCancion('sitio', cancion, ''))
     }
   }
 
+  async SetCancion(cancion: OrigenCancion) {
+    this.reproductor.SetCancion(cancion)
+  }
   updateCompas(compas: number) {
     this.reproductor.updateCompas(compas)
   }
@@ -85,10 +69,6 @@ export default class Aplicacion {
     this.reproductor.updateCompas(0)
   }
 
-  constructor() {
-    // Inicialización de la aplicación
-    console.log('Aplicacion inicializada')
-  }
   url = ''
   conectar(url: string) {
     const config = Configuracion.getInstance()
@@ -113,10 +93,12 @@ export default class Aplicacion {
         this.cliente = null
       }
     })
-
     this.cliente.setConectadoHandler((token: string) => {
       console.log(`Conectado: ${token}`)
       this.token = token
+      if (this.configuracion && this.configuracion.perfil) {
+        this.enviarPerfil(this.configuracion.perfil)
+      }
       this.cargarSesiones()
       const urlParams = new URLSearchParams(window.location.search)
       const sesionurl = urlParams.get('sesion')
@@ -179,6 +161,17 @@ export default class Aplicacion {
       console.log('Usuarios actualizados')
       this.CargarUsuariosSesion()
     })
+  }
+  enviarPerfil(perfil: Perfil) {
+    this.HTTPPost('perfil', perfil)
+      .then((response: unknown) => {
+        const appStore = useAppStore()
+        appStore.perfil = perfil
+        console.log('Profile updated successfully:', response)
+      })
+      .catch((error: Error) => {
+        console.error('Error updating profile:', error)
+      })
   }
 
   CargarUsuariosSesion() {
@@ -265,6 +258,7 @@ export default class Aplicacion {
   }
 
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
+    console.log('HTTPPost', urlPost, this.token)
     return fetch(this.url + urlPost, {
       method: 'POST',
       headers: {
@@ -279,10 +273,12 @@ export default class Aplicacion {
       .then((response) => response.json())
       .then((data) => {
         const appStore = useAppStore()
-        appStore.perfil.imagen = data.Imagen
-        appStore.perfil.nombre = data.Nombre
-        appStore.perfil.descripcion = data.Descripcion
-        appStore.perfil.instrumento = data.Instrumento
+        if (data != null) {
+          appStore.perfil.imagen = data.Imagen
+          appStore.perfil.nombre = data.Nombre
+          appStore.perfil.descripcion = data.Descripcion
+          appStore.perfil.instrumento = data.Instrumento
+        }
       })
       .catch((error) => {
         console.error('Error al obtener el perfil del usuario:', error)
@@ -303,7 +299,6 @@ export default class Aplicacion {
   logout(): boolean {
     const appStore = useAppStore()
     appStore.estadoLogin = ''
-    appStore.perfil = new Perfil('', '', '', '', '')
     if (!this.cliente) {
       console.error('Cliente no conectado. ')
       return false

@@ -99,7 +99,7 @@ function arreglartexto(texto: string): string {
           aria-expanded="false"
         >
           <img
-            :src="appStore.perfil?.imagen || '/img/UsuarioDesconecdado.png'"
+            :src="appStore.perfil?.imagen || '/img/usuariofantasma.png'"
             alt="User"
             :class="{ imgConectado: appStore.estadoSesion === 'conectado' }"
             style="

@@ -14,6 +14,7 @@ import { useRouter } from 'vue-router'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
+import { OrigenCancion } from '../modelo/cancion/origencancion'
 
 const pantalla = new Pantalla()
 onMounted(() => {
@@ -97,6 +98,12 @@ const router = useRouter()
 function clickEditar() {
   // Redirect to edit page for the current song
   appStore.editandocancion = appStore.cancion
+  appStore.origenEditando = new OrigenCancion(
+    appStore.origenCancion.origenUrl,
+    appStore.origenCancion.fileName,
+    appStore.origenCancion.usuario,
+  )
+  appStore.cancionModificada = false
   router.push('/editar')
 }
 

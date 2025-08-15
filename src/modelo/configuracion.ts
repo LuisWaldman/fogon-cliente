@@ -1,6 +1,6 @@
 import { datosLogin } from './datosLogin'
 import { Servidor } from './servidor' // Nueva importación
-
+import { Perfil } from './perfil'
 export class VistaTocar {
   public tamanioLetra: number = 22
   public tamanioAcorde: number = 23
@@ -28,6 +28,7 @@ export class Configuracion {
   public servidores: Servidor[] = []
   public conectarServerDefault: string = ''
   public loginDefault: datosLogin | null = null
+  public perfil: Perfil | null = null
 
   GetConfiguracionPantalla(innerWidth: number, innerHeight: number) {
     // 0: Celular, 1: PC, 2: Pantalla grande
@@ -53,7 +54,6 @@ export class Configuracion {
     }
     return Configuracion.instance
   }
-
   private static cargarDesdeLocalStorage(): Configuracion {
     const conf = new Configuracion()
     const data = localStorage.getItem('configuracion')
@@ -82,6 +82,16 @@ export class Configuracion {
               obj.loginDefault.usuario,
               obj.loginDefault.password,
               mantenerseLogeado,
+            )
+          }
+
+          if (obj.perfil) {
+            conf.perfil = new Perfil(
+              obj.perfil.imagen,
+              obj.perfil.nombre,
+              obj.perfil.usuario,
+              obj.perfil.descripcion,
+              obj.perfil.instrumento,
             )
           }
 
@@ -142,7 +152,8 @@ export class Configuracion {
         vistasTocar: this.vistasTocar,
         servidores: this.servidores,
         conectarServerDefault: this.conectarServerDefault,
-        loginDefault: this.loginDefault, // loginDefault now contains mantenerseLogeado
+        loginDefault: this.loginDefault,
+        perfil: this.perfil,
       }),
     )
   }

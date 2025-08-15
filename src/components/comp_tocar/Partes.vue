@@ -70,7 +70,7 @@ watch(
         <div
           v-for="(acorde, index) in parte.acordes"
           class="acordediv"
-          :key="acorde"
+          :key="index"
         >
           <span
             :class="{

@@ -4,6 +4,10 @@ import { Reproductor } from './reproductor'
 import { HelperSincro } from './sincro/HelperSincro'
 import { SincroCancion } from './sincro/SincroCancion'
 import { OrigenCancion } from './cancion/origencancion'
+import { HelperGetCancionServer } from './cancion/HelperGetCancion'
+import { Cancion } from './cancion/cancion'
+import { Acordes } from './cancion/acordes'
+import { Letra } from './cancion/letra'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
@@ -37,61 +41,13 @@ export class ReproductorConectado extends Reproductor {
     super()
     this.token = token
     this.cliente = cliente
-    this.cliente.setCancionActualizadaHandler((nombreArchivo: string) => {
-      console.log(`Canción actualizada: ${nombreArchivo}`)
-      this.CargarCancion(
-        new OrigenCancion('url:' + window.location.href, nombreArchivo, ''),
-      )
-      /*
-      fetch(
-        `${this.cliente.UrlServer}cancion?nombre=${encodeURIComponent(nombreArchivo)}`,
-        {
-          method: 'GET',
-          headers: {
-            Authorization: `Bearer ${this.token}`,
-          },
-        },
-      ).then(async (response) => {
-        if (response.ok) {
-          const data = await response.json()
-
-          const partes = []
-          for (let i = 0; i < data.datosJSON.acordes.partes.length; i++) {
-            partes.push(
-              new Parte(
-                data.datosJSON.acordes.partes[i].nombre,
-                data.datosJSON.acordes.partes[i].acordes,
-              ),
-            )
-          }
-
-          const acordes = new Acordes(
-            partes,
-            data.datosJSON.acordes.ordenPartes,
-          )
-
-          const toRet: Cancion = new Cancion(
-            data.datosJSON.cancion,
-            data.datosJSON.banda,
-            acordes,
-            new Letra(data.datosJSON.letras.renglones),
-            data.datosJSON.bpm,
-            data.datosJSON.calidad,
-            data.datosJSON.compas_cantidad,
-            data.datosJSON.compases_tiempo,
-            data.datosJSON.escala,
-          )
-          toRet.archivo = nombreArchivo
-          toRet.normalizar()
-          const appStore = useAppStore()
-          appStore.cancion = toRet
-          console.log(`Canción cargada: `, toRet)
-          this.cancion = nombreArchivo
-        } else {
-          throw new Error('Error al obtener la canción')
-        }
-      })*/
-    })
+    this.cliente.setCancionActualizadaHandler(
+      (cancion: string, origen: string, usuario: string) => {
+        console.log(`Canción actualizada: ${cancion}`)
+        origen = origen || 'sitio'
+        this.CargarCancion(new OrigenCancion(origen, cancion, usuario))
+      },
+    )
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
       const appStore = useAppStore()
@@ -135,8 +91,34 @@ export class ReproductorConectado extends Reproductor {
     console.log('ESTADO', appStore.estadoSesion)
     if (appStore.estadoSesion === 'conectado') {
       console.log(`Actualizando canción en el servidor: ${cancion.fileName}`)
-      this.cliente.actualizarCancion(cancion.fileName)
+      this.cliente.actualizarCancion(
+        cancion.fileName,
+        cancion.origenUrl,
+        cancion.usuario,
+      )
     }
+  }
+
+  protected override async CargarCancion(cancion: OrigenCancion) {
+    if (cancion.origenUrl !== 'server') {
+      return super.CargarCancion(cancion)
+    }
+    return HelperGetCancionServer.Get(cancion, this.cliente, this.token)
+      .then((cancion) => {
+        cancion.normalizar()
+        const appStore = useAppStore()
+        appStore.cancion = cancion
+      })
+      .catch((error) => {
+        console.error('Error al cargar la canción:', error)
+        const appStore = useAppStore()
+        appStore.cancion = new Cancion(
+          'Error en servidor',
+          'sin banda',
+          new Acordes([], []),
+          new Letra([]),
+        )
+      })
   }
 
   override async iniciarReproduccion() {
