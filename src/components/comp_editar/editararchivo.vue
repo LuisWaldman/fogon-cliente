@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import type { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { useAppStore } from '../../stores/appStore'
+import { JSONHelper } from '../../modelo/cancion/JSONHelper'
 
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
@@ -19,9 +21,26 @@ nombrebanda.value = props.cancion.banda
 nombrearchivo.value = props.cancion.archivo
 origenOriginal.value = props.origen.origenUrl
 origenDestino.value = props.origen.origenUrl
-
+const appStore = useAppStore()
 function clickCancelarCambiarDatos() {
   emit('cerrar', false)
+}
+
+
+function DescargarJSON() {
+  console.log('Descargando JSON de la canción actual...')
+  const cancionJSON = JSONHelper.CancionToJSON(props.cancion)
+  console.log('Descargando JSON:', cancionJSON)
+
+  const blob = new Blob([cancionJSON], { type: 'application/json' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  const nombreArchivo =
+    `${appStore.editandocancion.archivo}.json`.toLocaleLowerCase()
+  a.download = nombreArchivo
+  a.click()
+  URL.revokeObjectURL(url)
 }
 function clickGuardar() {
   props.cancion.cancion = nombrecancion.value
@@ -35,11 +54,21 @@ function clickGuardar() {
     <span class="lblCabecera" @click="clickCancelarCambiarDatos"
       >[cancelar]</span
     >
-    <span class="lblCabecera" @click="clickGuardar">[guardar]</span>
+    <span
+      v-if="
+        origenOriginal !== origenDestino ||
+        nombrearchivo !== props.cancion.archivo ||
+        nombrecancion !== props.cancion.cancion ||
+        nombrebanda !== props.cancion.banda
+      "
+    >
+      [guardar]
+    </span>
+
     <span class="lblCabecera" @click="clickGuardar">[nuevo]</span>
 
     <span class="lblCabecera" @click="clickGuardar">[subir]</span>
-    <span class="lblCabecera" @click="clickGuardar">[descargar]</span>
+    <span class="lblCabecera" @click="DescargarJSON">[descargar]</span>
   </div>
   <div style="width: 100%">
     <div>
@@ -71,10 +100,12 @@ function clickGuardar() {
     />
     Origen:
     <select v-model="origenDestino">
-      <option value="local">LocalStorage</option>
-      <option value="remoto">Servidor</option>
+      <option value="sitio">🌐Sitio</option>
+      <option value="local">🖥️LocalStorage</option>
+      <option value="remoto" v-if="appStore.estadoLogin === 'logueado'">
+        🔌Servidor
+      </option>
     </select>
-    [cancelar][guardar]
   </div>
   <div></div>
 </template>
