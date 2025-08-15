@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { Cancion } from '../../modelo/cancion/cancion'
-import type { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { Cancion } from '../../modelo/cancion/cancion'
+import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
-import { JSONHelper } from '../../modelo/cancion/JSONHelper'
+import { HelperJSON } from '../../modelo/cancion/HelperJSON'
+import { CancionManager } from '../../modelo/cancion/CancionManager'
 
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
@@ -26,10 +27,9 @@ function clickCancelarCambiarDatos() {
   emit('cerrar', false)
 }
 
-
 function DescargarJSON() {
   console.log('Descargando JSON de la canción actual...')
-  const cancionJSON = JSONHelper.CancionToJSON(props.cancion)
+  const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
   console.log('Descargando JSON:', cancionJSON)
 
   const blob = new Blob([cancionJSON], { type: 'application/json' })
@@ -42,6 +42,35 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
+
+function subirguardarCambios() {
+  const cancionData = {
+    nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
+    datosJSON: appStore.editandocancion || {},
+  }
+
+  // Send the POST request with the cancion data
+  appStore.aplicacion
+    .HTTPPost('cancion', cancionData)
+    .then((response) => {
+      console.log('Canción guardada exitosamente', response)
+    })
+    .catch((error) => {
+      console.error('Error al guardar la canción', error)
+    })
+}
+function guardarCambios() {
+  CancionManager.getInstance()
+    .Save(origenDestino.value, props.cancion)
+    .then(() => {
+      console.log('Cambios guardados exitosamente')
+      emit('cerrar', true)
+    })
+    .catch((error) => {
+      console.error('Error al guardar los cambios:', error)
+    })
+}
+
 function clickGuardar() {
   props.cancion.cancion = nombrecancion.value
   props.cancion.banda = nombrebanda.value
@@ -61,6 +90,7 @@ function clickGuardar() {
         nombrecancion !== props.cancion.cancion ||
         nombrebanda !== props.cancion.banda
       "
+      @click="guardarCambios"
     >
       [guardar]
     </span>

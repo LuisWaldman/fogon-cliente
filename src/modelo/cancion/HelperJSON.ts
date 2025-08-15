@@ -1,6 +1,6 @@
 import type { Cancion } from './cancion'
 
-export class JSONHelper {
+export class HelperJSON {
   public static CancionToJSON(cancion: Cancion): string {
     const cancionJSON = JSON.stringify({
       cancion: cancion.cancion,

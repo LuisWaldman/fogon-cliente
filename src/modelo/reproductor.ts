@@ -1,7 +1,7 @@
 import { useAppStore } from '../stores/appStore'
 import { Acordes } from './cancion/acordes'
 import { Cancion } from './cancion/cancion'
-import { HelperGetCancion } from './cancion/HelperGetCancion'
+import { CancionManager } from './cancion/CancionManager'
 import { Letra } from './cancion/letra'
 import type { OrigenCancion } from './cancion/origencancion'
 import { Reloj } from './reloj'
@@ -17,7 +17,7 @@ export class Reproductor {
   }
 
   protected async CargarCancion(origen: OrigenCancion) {
-    return HelperGetCancion.getInstance()
+    return CancionManager.getInstance()
       .Get(origen)
       .then((cancion) => {
         cancion.normalizar()

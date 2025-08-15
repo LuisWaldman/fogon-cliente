@@ -10,6 +10,7 @@ import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
 import { OrigenCancion } from './modelo/cancion/origencancion'
+import { CancionManager } from './modelo/cancion/CancionManager'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -21,6 +22,7 @@ export default class Aplicacion {
 
   constructor() {
     // Inicialización de la aplicación
+    CancionManager.getInstance().SetDB()
     console.log('Aplicacion inicializada')
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(

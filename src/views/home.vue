@@ -8,7 +8,7 @@ import cancionComp from '../components/comp_home/cancion.vue'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
-import { UrlGetter } from '../modelo/cancion/HelperGetCancion'
+import { CancionUrlManager } from '../modelo/cancion/CancionUrlManager'
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref(
@@ -23,7 +23,7 @@ function buscarCanciones() {
   if (refTodasCanciones.value.length === 0) {
     refEstadoBusqueda.value = 'cargando'
     refTodasCanciones.value = ultimasCanciones.canciones as ItemIndiceCancion[]
-    UrlGetter.GetIndice()
+    CancionUrlManager.GetIndice()
       .then((resultado) => {
         refTodasCanciones.value = resultado
         filtrar()

@@ -11,7 +11,6 @@ import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import { useRouter } from 'vue-router'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
-import { JSONHelper } from '../modelo/cancion/JSONHelper'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -80,7 +79,6 @@ function clickCerrarEditarTexto() {
   // Set the current view to 'inicio'
   cambiarVista('inicio')
 }
-
 
 function Actualizar() {
   console.log('Actualizando vista de edición... CONTROL', ctrlEditarTexto.value)
