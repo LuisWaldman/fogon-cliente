@@ -17,7 +17,8 @@ export class Reproductor {
   }
 
   protected async CargarCancion(origen: OrigenCancion) {
-    return HelperGetCancion.Get(origen)
+    return HelperGetCancion.getInstance()
+      .Get(origen)
       .then((cancion) => {
         cancion.normalizar()
         const appStore = useAppStore()

@@ -213,25 +213,37 @@ export class UrlGetter {
 }
 
 export class HelperGetCancion {
-  public static async Get(origencancion: OrigenCancion): Promise<Cancion> {
-    const ultimas = new UltimasCanciones()
-    const cancion = UrlGetter.GetSongUrl(origencancion)
+  private static instance: HelperGetCancion
+
+  private constructor() {}
+
+  private cliente: ClienteSocket | null = null
+  private token: string = ''
+
+  public setCliente(cliente: ClienteSocket, token: string): void {
+    this.cliente = cliente
+    this.token = token
+  }
+
+  public static getInstance(): HelperGetCancion {
+    if (!HelperGetCancion.instance) {
+      HelperGetCancion.instance = new HelperGetCancion()
+    }
+    return HelperGetCancion.instance
+  }
+
+  private async InternalGet(origencancion: OrigenCancion): Promise<Cancion> {
+    if (origencancion.origenUrl === 'server') {
+      return ServerGetter.GetSongUrl(origencancion, this.cliente, this.token)
+    }
+    return UrlGetter.GetSongUrl(origencancion)
+  }
+  public async Get(origencancion: OrigenCancion): Promise<Cancion> {
+    const cancion = this.InternalGet(origencancion)
     const acancion = await cancion
     const item = ItemIndiceCancion.BuildFromCancion(acancion, origencancion)
-    console.log('Adding to recent songs', item)
+    const ultimas = new UltimasCanciones()
     ultimas.agregar(item)
-    return acancion
-  }
-}
-
-export class HelperGetCancionServer {
-  public static async Get(
-    origencancion: OrigenCancion,
-    cliente: ClienteSocket,
-    token: string = '',
-  ): Promise<Cancion> {
-    const cancion = ServerGetter.GetSongUrl(origencancion, cliente, token)
-    const acancion = await cancion
     return acancion
   }
 }
