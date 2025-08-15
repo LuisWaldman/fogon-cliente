@@ -42,7 +42,7 @@ function click_Fogon() {
 }
 </script>
 <template>
-  <div class="navbar-brand"  @click="click_Fogon" style="color: inherit">
+  <div class="navbar-brand" @click="click_Fogon" style="color: inherit">
     <div class="iconofogon">
       <div class="relative-container">
         <div v-if="appStore.estadoSesion === 'conectado'">

@@ -3,12 +3,14 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
 import editartiempo from './editartiempo.vue'
-import { Tiempo } from '../../modelo/tiempo';
+import { Tiempo } from '../../modelo/tiempo'
 const tiempo = new Tiempo()
 import { ref } from 'vue'
+import type { OrigenCancion } from '../../modelo/cancion/origencancion'
 
 defineProps<{
-  cancion: Cancion
+  cancion: Cancion,
+  origen: OrigenCancion
 }>()
 
 const viendo = ref('' as string)
@@ -34,21 +36,31 @@ function clickCerrar() {
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
-    <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
     
-  <div>
-    <editararchivo
-      v-if="viendo == 'archivo'"
-      :cancion="cancion"
-    ></editararchivo>
-    <editarescala
-      v-if="viendo == 'escala'"
-      :cancion="cancion"
-      @cerrar="clickCerrar"
-    ></editarescala>
-    <editartiempo v-if="viendo == 'tiempo'" :cancion="cancion"
-    @cerrar="clickCerrar"
-    ></editartiempo>
+&nbsp;
+    <label
+      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
+    >
+    <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
+<label
+      >Origen: {{ origen.origenUrl }}</label
+    >
+    <label @click="clickCambiar('origen')" @cerrar="clickCerrar">🔄</label>
+    <div>
+      <editararchivo
+        v-if="viendo == 'archivo'"
+        :cancion="cancion"
+      ></editararchivo>
+      <editarescala
+        v-if="viendo == 'escala'"
+        :cancion="cancion"
+        @cerrar="clickCerrar"
+      ></editarescala>
+      <editartiempo
+        v-if="viendo == 'tiempo'"
+        :cancion="cancion"
+        @cerrar="clickCerrar"
+      ></editartiempo>
     </div>
   </div>
 </template>

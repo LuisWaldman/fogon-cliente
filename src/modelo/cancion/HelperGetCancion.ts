@@ -92,7 +92,7 @@ export class ServerGetter {
     const toRet: ItemIndiceCancion[] = []
     for (const item of data) {
       const cancion = new ItemIndiceCancion(
-        new OrigenCancion(desdeUrl, item.archivo, ''),
+        new OrigenCancion('sitio', item.archivo, ''),
         item.cancion,
         item.banda,
       )
@@ -112,10 +112,8 @@ export class UrlGetter {
   public static async GetSongUrl(
     origencancion: OrigenCancion,
   ): Promise<Cancion> {
-    let desdeUrl = origencancion.origenUrl
-    if (desdeUrl.includes('LOCAL')) {
-      desdeUrl = window.location.origin
-    }
+
+    let desdeUrl = window.location.origin
     if (desdeUrl.includes('fogon.ar')) {
       desdeUrl = 'https://www.fogon.ar/canciones/'
     }
@@ -181,11 +179,9 @@ export class UrlGetter {
     return toRet
   }
 
-  public static async GetIndice(
-    origenUrl: string,
-  ): Promise<ItemIndiceCancion[]> {
-    let desdeUrl = origenUrl
-    if (desdeUrl.includes('LOCAL')) {
+  public static async GetIndice(): Promise<ItemIndiceCancion[]> {
+    let desdeUrl = window.location.origin
+    if (desdeUrl.includes('local')) {
       desdeUrl = window.location.origin
     }
     if (desdeUrl.includes('fogon.ar')) {
@@ -201,7 +197,7 @@ export class UrlGetter {
     const toRet: ItemIndiceCancion[] = []
     for (const item of data) {
       const cancion = new ItemIndiceCancion(
-        new OrigenCancion(desdeUrl, item.archivo, ''),
+        new OrigenCancion('sitio', item.archivo, ''),
         item.cancion,
         item.banda,
       )

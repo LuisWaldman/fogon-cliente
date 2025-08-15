@@ -44,7 +44,7 @@ export class ReproductorConectado extends Reproductor {
     this.cliente.setCancionActualizadaHandler(
       (cancion: string, origen: string, usuario: string) => {
         console.log(`Canción actualizada: ${cancion}`)
-        origen = origen || 'LOCAL'
+        origen = origen || 'sitio'
         this.CargarCancion(new OrigenCancion(origen, cancion, usuario))
       },
     )
@@ -82,6 +82,23 @@ export class ReproductorConectado extends Reproductor {
     })
   }
 
+  override onInicioCiclo() {
+    this.sincronizar()
+  }
+
+  override async SetCancion(cancion: OrigenCancion) {
+    const appStore = useAppStore()
+    console.log('ESTADO', appStore.estadoSesion)
+    if (appStore.estadoSesion === 'conectado') {
+      console.log(`Actualizando canción en el servidor: ${cancion.fileName}`)
+      this.cliente.actualizarCancion(
+        cancion.fileName,
+        cancion.origenUrl,
+        cancion.usuario,
+      )
+    }
+  }
+
   protected override async CargarCancion(cancion: OrigenCancion) {
     if (cancion.origenUrl !== 'server') {
       return super.CargarCancion(cancion)
@@ -102,23 +119,6 @@ export class ReproductorConectado extends Reproductor {
           new Letra([]),
         )
       })
-  }
-
-  override onInicioCiclo() {
-    this.sincronizar()
-  }
-
-  override async SetCancion(cancion: OrigenCancion) {
-    const appStore = useAppStore()
-    console.log('ESTADO', appStore.estadoSesion)
-    if (appStore.estadoSesion === 'conectado') {
-      console.log(`Actualizando canción en el servidor: ${cancion.fileName}`)
-      this.cliente.actualizarCancion(
-        cancion.fileName,
-        cancion.origenUrl,
-        cancion.usuario,
-      )
-    }
   }
 
   override async iniciarReproduccion() {

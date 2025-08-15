@@ -23,7 +23,7 @@ function buscarCanciones() {
   if (refTodasCanciones.value.length === 0) {
     refEstadoBusqueda.value = 'cargando'
     refTodasCanciones.value = ultimasCanciones.canciones as ItemIndiceCancion[]
-    UrlGetter.GetIndice(window.location.href)
+    UrlGetter.GetIndice()
       .then((resultado) => {
         refTodasCanciones.value = resultado
         filtrar()

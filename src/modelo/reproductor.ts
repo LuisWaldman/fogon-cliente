@@ -16,12 +16,13 @@ export class Reproductor {
     this.CargarCancion(cancion)
   }
 
-  protected async CargarCancion(cancion: OrigenCancion) {
-    return HelperGetCancion.Get(cancion)
+  protected async CargarCancion(origen: OrigenCancion) {
+    return HelperGetCancion.Get(origen)
       .then((cancion) => {
         cancion.normalizar()
         const appStore = useAppStore()
         appStore.cancion = cancion
+        appStore.origenCancion = origen
       })
       .catch((error) => {
         console.error('Error al cargar la canción:', error)

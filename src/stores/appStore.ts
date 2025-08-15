@@ -13,6 +13,7 @@ import { Sesion } from '../modelo/sesion'
 import { SincroCancion } from '../modelo/sincro/SincroCancion'
 import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
 import type { UserSesion } from '../modelo/userSesion'
+import { OrigenCancion } from '../modelo/cancion/origencancion'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
@@ -41,6 +42,8 @@ export const useAppStore = defineStore('app', () => {
     ),
   )
   editandocancion.value.escala = 'C'
+  const origenCancion = ref<OrigenCancion>(new OrigenCancion('', '', ''))
+  const origenEditando = ref<OrigenCancion>(new OrigenCancion('', '', ''))
 
   const sesiones = ref<Sesion[]>([] as Sesion[])
   const listaCanciones = ref<itemLista[]>([])
@@ -79,6 +82,8 @@ export const useAppStore = defineStore('app', () => {
   return {
     usuariosSesion,
     aplicacion,
+    origenCancion,
+    origenEditando,
     cancion,
     editandocancion,
     listaCanciones,
