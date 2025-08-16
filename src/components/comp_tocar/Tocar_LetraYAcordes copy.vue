@@ -2,8 +2,6 @@
 import { ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
-import { Display } from '../../modelo/display/display'
-import { HelperDisplay } from '../../modelo/display/helperDisplay'
 
 const props = defineProps<{
   compas: number
@@ -15,8 +13,9 @@ const mostrandoParte = ref(-1)
 const mostrandoCompasParte = ref(-1)
 const currentCompas = ref(0)
 const renglones = ref([] as string[])
+const Acordes = ref([] as string[][])
 const CompasAcorde = ref([] as number[][])
-const displayRef = ref(new Display(20))
+const AcordesLeft = ref([] as number[][])
 
 watch(
   () => props.cancion,
@@ -24,9 +23,68 @@ watch(
     ActualizarCancion(cancion)
   },
 )
-const helperDisplay = new HelperDisplay()
+const CaracterxRenglon = 80 // Ancho promedio de un carácter en píxeles
+const anchoCaracter = 10 // Ancho promedio de un carácter en píxeles
 function ActualizarCancion(cancion: Cancion) {
-  displayRef.value = helperDisplay.getDisplay(cancion, 20)
+  renglones.value = []
+  Acordes.value = []
+  AcordesLeft.value = []
+  CompasAcorde.value = []
+  let renglonActual = ''
+  let TodosAcordes = cancion.acordes.GetTodosLosAcordes()
+  let indiceAcorde = 0
+  let acordesActual: string[] = []
+  let acordesLeftActual: number[] = []
+  let compasActual: number[] = []
+  cancion.letras.renglones.flat().forEach((renglon) => {
+    if (indiceAcorde < TodosAcordes.length) {
+      let acorde = TodosAcordes[indiceAcorde]
+      acordesActual.push(acorde)
+      acordesLeftActual.push(renglonActual.length * anchoCaracter)
+      compasActual.push(indiceAcorde)
+    } else {
+      acordesActual.push('¿?')
+      acordesLeftActual.push(renglonActual.length * anchoCaracter)
+      compasActual.push(-1)
+    }
+    indiceAcorde++
+    renglonActual += renglon
+    // SI LLEGO A UN NUEVO RENGLON
+    if (
+      renglonActual.includes('/n') ||
+      renglonActual.length > CaracterxRenglon
+    ) {
+      if (renglonActual.includes('/n')) {
+        const parte = renglonActual.split('/n')
+        renglonActual = parte[1] || ''
+        renglones.value.push(parte[0])
+      } else {
+        const nuevoRenglon = renglonActual.slice(0, CaracterxRenglon)
+        renglones.value.push(nuevoRenglon)
+        renglonActual = renglonActual.slice(CaracterxRenglon)
+      }
+
+      Acordes.value.push(acordesActual)
+      AcordesLeft.value.push(acordesLeftActual)
+      CompasAcorde.value.push(compasActual)
+      acordesActual = []
+      acordesLeftActual = []
+      compasActual = []
+
+      if (renglonActual.trim().length > 0) {
+        acordesActual = ['.']
+        acordesLeftActual = [0]
+        compasActual = [indiceAcorde - 1]
+      }
+    }
+  })
+  renglones.value.push(renglonActual)
+  Acordes.value.push(acordesActual)
+  AcordesLeft.value.push(acordesLeftActual)
+  CompasAcorde.value.push(compasActual)
+  acordesActual = []
+  acordesLeftActual = []
+  compasActual = []
 }
 
 function CalcularResaltado(newCompas: number) {
@@ -107,23 +165,23 @@ defineExpose({ Actualizar })
       ref="letraDiv"
     >
       <div
-        v-for="(renglon, index) in displayRef.renglones"
+        v-for="(renglon, index) in renglones"
         :key="index"
         :style="{ position: 'relative' }"
       >
-        <div class="divletra">{{ renglon.contenido }}</div>
+        <div class="divletra">{{ renglon }}</div>
         <div
-          v-for="(acorde, acordeIndex) in renglon.acordes"
+          v-for="(acorde, acordeIndex) in Acordes[index]"
           :style="{
             position: 'absolute',
-            left: acorde.left + 'px',
+            left: AcordesLeft[index][acordeIndex] + 'px',
             top: '-30px',
           }"
           :key="acordeIndex"
-          :class="{ en_compas: acorde.compas === compas }"
+          :class="{ en_compas: CompasAcorde[index][acordeIndex] === compas }"
           class="acordediv"
         >
-          {{ acorde.contenido }}
+          {{ acorde }}
         </div>
       </div>
     </div>
