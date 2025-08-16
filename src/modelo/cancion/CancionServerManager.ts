@@ -20,54 +20,6 @@ export class CancionServerManager {
     const dataRes = await response.json()
     const data = dataRes.datosJSON
 
-    const partes = []
-    for (let i = 0; i < data.acordes.partes.length; i++) {
-      partes.push(
-        new Parte(
-          data.acordes.partes[i].nombre,
-          data.acordes.partes[i].acordes,
-        ),
-      )
-    }
-    let ordenPartes = data.acordes.ordenPartes
-    if (ordenPartes === undefined) {
-      ordenPartes = data.acordes.orden_partes
-    }
-
-    const acordes = new Acordes(partes, ordenPartes)
-    let bpm = data.bpm
-    if (bpm === undefined) {
-      bpm = data.bpm
-    }
-
-    let compasUnidad = data.compasUnidad
-    if (compasUnidad === undefined) {
-      compasUnidad = data.compas_unidad
-    }
-
-    let compasesTiempo = data.compasesTiempo
-    if (compasesTiempo === undefined) {
-      compasesTiempo = data.compases_tiempo
-    }
-
-    let compasCantidad = data.compasCantidad
-    if (compasCantidad === undefined) {
-      compasCantidad = data.compas_cantidad
-    }
-
-    const toRet: Cancion = new Cancion(
-      data.cancion,
-      data.banda,
-      acordes,
-      new Letra(data.letras.renglones),
-      bpm,
-      data.calidad,
-      compasCantidad,
-      compasesTiempo,
-      data.escala,
-    )
-    toRet.archivo = origencancion.fileName
-    toRet.normalizar()
     return toRet
   }
 

@@ -8,6 +8,7 @@ const props = defineProps<{
 }>()
 const viendoDetalle = ref(false)
 function arreglartexto(texto: string): string {
+  if (texto == null || texto === undefined) return ''
   let processed = texto.replace(/-/g, ' ')
   if (processed.length === 0) return processed
 
