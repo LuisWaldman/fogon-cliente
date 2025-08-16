@@ -1,30 +1,18 @@
-import { AcordeDisplay } from './acordesDisplay'
 import { RenglonDisplay } from './renglondisplay'
+import { VersoDisplay } from './versodisplay'
 
 export class Display {
   private anchoLetras: number = 10
   ArmarDisplay(allrenglonLetras: string[][], allrenglonAcordes: string[][]) {
     for (let i = 0; i < allrenglonLetras.length; i++) {
-      const renglonLetras = allrenglonLetras[i]
-      const renglonAcordes = allrenglonAcordes[i]
-      const renglondisplay = new RenglonDisplay()
-      for (let j = 0; j < renglonAcordes.length; j++) {
-        const acorde = renglonAcordes[j]
-        renglondisplay.acordes.push(
-          new AcordeDisplay(
-            acorde,
-            renglondisplay.contenido.length * this.anchoLetras,
-            0,
-          ),
-        )
-        renglondisplay.contenido += renglonLetras[j]
-      }
-      this.renglones.push(renglondisplay)
+      this.Versos.push(
+        new VersoDisplay(allrenglonLetras[i], allrenglonAcordes[i]),
+      )
     }
-    this.calculado = true
   }
+
   public anchoRenglones: number
-  public Renglones: RenglonDisplay[] = []
+  public Versos: VersoDisplay[] = []
   public constructor(anchoRenglones: number) {
     this.anchoRenglones = anchoRenglones
     this.calculado = false

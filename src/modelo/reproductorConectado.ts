@@ -4,7 +4,6 @@ import { Reproductor } from './reproductor'
 import { HelperSincro } from './sincro/HelperSincro'
 import { SincroCancion } from './sincro/SincroCancion'
 import { OrigenCancion } from './cancion/origencancion'
-import { CancionManager } from './cancion/CancionManager'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
