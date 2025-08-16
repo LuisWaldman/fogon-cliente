@@ -81,6 +81,14 @@ export class CancionManager {
       }
       return CancionIndexedDBManager.GetCancion(origencancion, this.db)
     }
+    console.log('Recuperando canción desde URL:', origencancion.origenUrl)
+    if (origencancion.origenUrl === 'server') {
+      return CancionServerManager.GetCancion(
+        origencancion,
+        this.cliente,
+        this.token,
+      )
+    }
     return CancionUrlManager.GetCancion(origencancion)
   }
   public async Get(origencancion: OrigenCancion): Promise<Cancion> {
@@ -93,11 +101,16 @@ export class CancionManager {
   }
 
   public async Save(origen: OrigenCancion, cancion: Cancion): Promise<void> {
-    if (!this.db) {
-      console.error('No se ha establecido la conexión a IndexedDB')
-      throw new Error('No se ha establecido la conexión a IndexedDB')
+    if (origen.origenUrl === 'server') {
+      CancionServerManager.SaveCancion(cancion, this.cliente, this.token)
+    } else if (origen.origenUrl === 'local') {
+      if (!this.db) {
+        console.error('No se ha establecido la conexión a IndexedDB')
+        throw new Error('No se ha establecido la conexión a IndexedDB')
+      }
+      CancionIndexedDBManager.SaveCancion(this.db, cancion)
     }
-    CancionIndexedDBManager.SaveSong(this.db, cancion)
+    console.log('Guardando canción desde URL:', origen.origenUrl)
     const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
     const ultimas = new UltimasCanciones()
     console.log('Guardando en ultimas', item)

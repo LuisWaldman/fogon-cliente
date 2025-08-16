@@ -1,5 +1,6 @@
 import type { ClienteSocket } from '../conexion/ClienteSocket'
 import type { Cancion } from './cancion'
+import { HelperJSON } from './HelperJSON'
 import type { OrigenCancion } from './origencancion'
 
 export class CancionServerManager {
@@ -18,40 +19,32 @@ export class CancionServerManager {
       },
     )
     const dataRes = await response.json()
-    const data = dataRes.datosJSON
-
-    return toRet
+    return HelperJSON.JSONToCancion(JSON.stringify(dataRes.datosJSON))
   }
 
-  public static async GetIndice(
-    origenUrl: string,
-  ): Promise<ItemIndiceCancion[]> {
-    let desdeUrl = origenUrl
-    if (desdeUrl.includes('fogon.ar')) {
-      desdeUrl = 'https://www.fogon.ar/'
+  public static async SaveCancion(
+    cancion: Cancion,
+    cliente: ClienteSocket | null = null,
+    token: string = '',
+  ): Promise<void> {
+    const cancionData = {
+      nombreArchivo: cancion.archivo,
+      datosJSON: cancion,
     }
-    if (desdeUrl.includes('localhost')) {
-      desdeUrl = 'http://localhost:5173/'
-    }
-    console.log('Getting Indice from', desdeUrl + 'indice.json')
-
-    const response = await fetch(desdeUrl + 'indice.json')
-    const data = await response.json()
-    const toRet: ItemIndiceCancion[] = []
-    for (const item of data) {
-      const cancion = new ItemIndiceCancion(
-        new OrigenCancion('sitio', item.archivo, ''),
-        item.cancion,
-        item.banda,
-      )
-      cancion.calidad = item.calidad
-      cancion.bpm = item.bpm
-      cancion.compasUnidad = item.compasUnidad
-      cancion.compasCantidad = item.compasCantidad
-      cancion.escala = item.escala
-      cancion.normalizar()
-      toRet.push(cancion)
-    }
-    return toRet
+    return new Promise<void>(async (resolve, reject) => {
+      const response = await fetch(cliente?.UrlServer + 'cancion', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(cancionData),
+      })
+      if (response.ok) {
+        resolve()
+      } else {
+        reject(new Error('Error al guardar la canción'))
+      }
+    })
   }
 }

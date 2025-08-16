@@ -98,6 +98,10 @@ export default class Aplicacion {
     this.cliente.setConectadoHandler((token: string) => {
       console.log(`Conectado: ${token}`)
       this.token = token
+
+      if (this.cliente) {
+        CancionManager.getInstance().setCliente(this.cliente, token)
+      }
       if (this.configuracion && this.configuracion.perfil) {
         this.enviarPerfil(this.configuracion.perfil)
       }

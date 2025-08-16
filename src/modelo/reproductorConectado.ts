@@ -36,7 +36,6 @@ export class ReproductorConectado extends Reproductor {
 
   constructor(cliente: ClienteSocket, token: string) {
     super()
-    CancionManager.getInstance().setCliente(cliente, token)
     this.token = token
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler(

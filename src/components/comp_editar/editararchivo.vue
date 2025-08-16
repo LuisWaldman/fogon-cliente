@@ -19,7 +19,7 @@ const origenOriginal = ref('')
 const origenDestino = ref('')
 nombrecancion.value = props.cancion.cancion
 nombrebanda.value = props.cancion.banda
-nombrearchivo.value = props.cancion.archivo
+nombrearchivo.value = props.cancion.archivo || 'archivo_noload'
 origenOriginal.value = props.origen.origenUrl
 origenDestino.value = props.origen.origenUrl
 const appStore = useAppStore()
@@ -42,23 +42,6 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
-/*
-function subirguardarCambios() {
-  const cancionData = {
-    nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
-    datosJSON: appStore.editandocancion || {},
-  }
-
-  // Send the POST request with the cancion data
-  appStore.aplicacion
-    .HTTPPost('cancion', cancionData)
-    .then((response) => {
-      console.log('Canción guardada exitosamente', response)
-    })
-    .catch((error) => {
-      console.error('Error al guardar la canción', error)
-    })
-}*/
 function guardarCambios() {
   CancionManager.getInstance()
     .Save(
@@ -136,7 +119,7 @@ function clickGuardar() {
     <select v-model="origenDestino">
       <option value="sitio">🌐Sitio</option>
       <option value="local">💾LocalStorage</option>
-      <option value="remoto" v-if="appStore.estadoLogin === 'logueado'">
+      <option value="server" v-if="appStore.estadoLogin === 'logueado'">
         🔌Servidor
       </option>
     </select>

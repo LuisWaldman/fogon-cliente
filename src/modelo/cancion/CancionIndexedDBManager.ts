@@ -21,6 +21,7 @@ export class CancionIndexedDBManager {
         if (result) {
           console.log('Canción recuperada de IndexedDB:', result)
           const cancion = HelperJSON.JSONToCancion(result.contenido)
+          cancion.archivo = origencancion.fileName
           resolve(cancion)
         } else {
           reject(new Error(`Canción no encontrada: ${origencancion.fileName}`))
@@ -34,7 +35,10 @@ export class CancionIndexedDBManager {
     })
   }
 
-  static SaveSong(db: IDBDatabase, cancion: Cancion): void | PromiseLike<void> {
+  static SaveCancion(
+    db: IDBDatabase,
+    cancion: Cancion,
+  ): void | PromiseLike<void> {
     if (!db) {
       return Promise.reject(new Error('Base de datos no inicializada'))
     }
