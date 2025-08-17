@@ -3,6 +3,7 @@ import { ref, type Ref } from 'vue'
 //import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
+import TocarYoutube from '../components/comp_tocar/Tocar_Youtube.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
@@ -142,6 +143,12 @@ function cerrareditarPantalla() {
         ></TocarAcorde>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
+        <TocarYoutube
+          
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></TocarYoutube>
+          
         <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
           <Secuencia
             :cancion="appStore.cancion"

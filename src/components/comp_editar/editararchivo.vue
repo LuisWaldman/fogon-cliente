@@ -70,9 +70,7 @@ function clickGuardar() {
       >[cancelar]</span
     >
     <span
-      v-if="
-      ['server', 'local'].includes(origenDestino)
-      "
+      v-if="['server', 'local'].includes(origenDestino)"
       @click="guardarCambios"
     >
       [guardar]

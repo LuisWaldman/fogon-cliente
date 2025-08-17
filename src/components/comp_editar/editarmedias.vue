@@ -72,7 +72,7 @@ const guardarCambios = () => {
     <!-- Botón para agregar nueva media -->
     <div class="acciones">
       <button @click="agregarMedia" class="btn-agregar">+ Agregar Media</button>
-      
+
       <button @click="guardarCambios" class="btn-guardar">Guardar</button>
 
       <button @click="emit('cerrar')" class="btn-cerrar">Cerrar</button>

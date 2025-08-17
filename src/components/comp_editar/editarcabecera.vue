@@ -52,9 +52,7 @@ function clickCerrar(modificado: boolean) {
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
-<label
-      >Medias: {{ cancion.medias.length }}</label
-      
+    <label>Medias: {{ cancion.medias.length }}</label
     ><label @click="clickCambiar('medias')">🔄</label>
     <div>
       <editarmedias
