@@ -2,6 +2,7 @@
 import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
+import editarmedias from './editarmedias.vue'
 import editartiempo from './editartiempo.vue'
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 import { Tiempo } from '../../modelo/tiempo'
@@ -32,10 +33,11 @@ function clickCerrar(modificado: boolean) {
 
 <template>
   <div class="navbarFogon">
+    <emoticonOrigen :origen="origen.origenUrl" />
     <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
     <label>{{ cancion.cancion }} - {{ cancion.banda }}</label
     ><label v-if="appStore.cancionModificada">*</label>
-    <emoticonOrigen :origen="origen.origenUrl" />
+
     <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
 
@@ -50,10 +52,20 @@ function clickCerrar(modificado: boolean) {
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
-
+<label
+      >Medias: {{ cancion.medias.length }}</label
+      
+    ><label @click="clickCambiar('medias')">🔄</label>
     <div>
+      <editarmedias
+        v-if="viendo == 'medias'"
+        :cancion="cancion"
+        :origen="origen"
+        @cerrar="clickCerrar"
+      ></editarmedias>
       <editararchivo
         v-if="viendo == 'archivo'"
+        @cerrar="clickCerrar"
         :cancion="cancion"
         :origen="origen"
       ></editararchivo>

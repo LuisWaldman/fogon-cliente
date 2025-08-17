@@ -71,11 +71,7 @@ function clickGuardar() {
     >
     <span
       v-if="
-        (appStore.cancionModificada && origenDestino === 'local') ||
-        origenOriginal !== origenDestino ||
-        nombrearchivo !== props.cancion.archivo ||
-        nombrecancion !== props.cancion.cancion ||
-        nombrebanda !== props.cancion.banda
+      ['server', 'local'].includes(origenDestino)
       "
       @click="guardarCambios"
     >

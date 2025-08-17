@@ -57,13 +57,13 @@ watch(
     console.log('Renglon:', renglon)
 
     const configuracionPantalla = pantalla.getConfiguracionPantalla()
-    const ScrollTo = renglon * (configuracionPantalla.tamanioLetra +
+    const ScrollTo =
+      renglon *
+      (configuracionPantalla.tamanioLetra +
         configuracionPantalla.tamanioAcorde) *
-        configuracionPantalla.factorScroll
-  console.log('ScrollTo:', ScrollTo)
-    moverScroll(
-      ScrollTo
-    )
+      configuracionPantalla.factorScroll
+    console.log('ScrollTo:', ScrollTo)
+    moverScroll(ScrollTo)
   },
 )
 

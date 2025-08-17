@@ -1,6 +1,7 @@
 import { Acordes, Parte } from './acordes'
 import { Cancion } from './cancion'
 import { Letra } from './letra'
+import { Media } from './media'
 
 export class HelperJSON {
   public static CancionToJSON(cancion: Cancion): string {
@@ -20,6 +21,10 @@ export class HelperJSON {
       calidad: cancion.calidad,
       compasCantidad: cancion.compasCantidad,
       compasUnidad: cancion.compasUnidad,
+      medias: cancion.medias.map((media) => ({
+        tipo: media.tipo,
+        id: media.id,
+      })),
     })
     return cancionJSON
   }
@@ -75,6 +80,12 @@ export class HelperJSON {
       compasesTiempo,
       data.escala,
     )
+    if (data.medias) {
+      toRet.medias = data.medias.map(
+        (media: { tipo: string; id: string }) =>
+          new Media(media.tipo, media.id),
+      )
+    }
     toRet.archivo = data.archivo
     toRet.normalizar()
     return toRet
