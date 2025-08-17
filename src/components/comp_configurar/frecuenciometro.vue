@@ -131,7 +131,7 @@ function CorrespondeNota(frecuencia: number): number {
 </script>
 <template>
   <div
-    :style="{ width: props.ancho + 'px' }"
+    
     class="clsFrecuencia"
     id="contenedorFrecuenciometro"
   >
@@ -153,6 +153,33 @@ function CorrespondeNota(frecuencia: number): number {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-gutter: stable;
+  align-items: flex-start;
+  padding-bottom: 10px; /* Add padding at bottom for the scrollbar */
+  margin-bottom: 5px;
+  /* Force scrollbar to bottom */
+  scrollbar-position: bottom;
+  overflow: -moz-scrollbars-horizontal;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.clsFrecuencia::-webkit-scrollbar {
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+}
+
+.clsFrecuencia::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.clsFrecuencia::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
 }
 .clsNota {
 }

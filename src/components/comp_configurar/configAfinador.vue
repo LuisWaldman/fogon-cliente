@@ -209,13 +209,23 @@ onMounted(() => {
 onUnmounted(() => {
   DejarEscuchar()
 })
+
+function formatFrequency(freq, totalDigits = 5, decimalPlaces = 2) {
+  if (freq < 0) {
+    freq = 0;
+  }
+  const fixed = freq.toFixed(decimalPlaces); // Ej: "12.43"
+  const [intPart, decPart] = fixed.split('.');
+  const paddedInt = intPart.padStart(totalDigits, '0'); // Ej: "00012"
+  return `${paddedInt},${decPart}`; // Ej: "00012,43"
+}
 </script>
 
 <template>
   <div :style="styleDivAfinador()" class="divAfinador" id="divAfinador">
     <div style="display: flex">
       <div width="200px" max-width="200px">
-        FRECUENCIA <span> {{ frequency.toFixed(2) }} </span> Hz
+        <span>FRECUENCIA  {{ formatFrequency(frequency) }} </span> Hz
       </div>
       <frecuen
         :tipoAfinacion="tipoAfinacion"
@@ -331,6 +341,7 @@ onUnmounted(() => {
   border: 1px solid black;
 }
 .divAfinador {
+  width: 100%;
 }
 
 .quinta {
