@@ -29,94 +29,46 @@ function clickOpcion(viendostr: string) {
 
 <template>
   <div style="width: 100%">
-    <div style="display: flex">
+    <div>
       <div>
-        <div class="">
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="clickOpcion('perfil')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'perfil' }"
-              >
+        <div class="config-menu">
+          <div class="config-menu-group">
+            <div @click="clickOpcion('perfil')" class="config-menu-item">
+              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'perfil' }">
                 Perfil
               </a>
-            </li>
-            <li @click="clickOpcion('login')">
-              <a
-                href="#"
-                v-if="
-                  appStore.estado === 'conectado' ||
-                  appStore.estado === 'logueado'
-                "
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'login' }"
-              >
+            </div>
+            <div @click="clickOpcion('login')" class="config-menu-item" v-if="appStore.estado === 'conectado' || appStore.estado === 'logueado'">
+              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'login' }">
                 Login
               </a>
-            </li>
-
-            <li
-              @click="clickOpcion('sesion')"
-              v-if="
-                appStore.estado == 'conectado' ||
-                appStore.estadoLogin == 'logueado'
-              "
-            >
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'sesion' }"
-              >
+            </div>
+            <div @click="clickOpcion('sesion')" class="config-menu-item" v-if="appStore.estado == 'conectado' || appStore.estadoLogin == 'logueado'">
+              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'sesion' }">
                 Sesion
               </a>
-            </li>
-
-            <li @click="clickOpcion('servidores')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'servidores' }"
-              >
+            </div>
+            <div @click="clickOpcion('servidores')" class="config-menu-item">
+              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'servidores' }">
                 Servidores
               </a>
-            </li>
-
-            <li @click="clickOpcion('relojes')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'relojes' }"
-              >
+            </div>
+            <div @click="clickOpcion('relojes')" class="config-menu-item">
+              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'relojes' }">
                 Relojes
               </a>
-            </li>
-          </ul>
-
-          <hr />
-
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="clickOpcion('Afinar')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'Afinar' }"
-              >
+            </div>
+            <div @click="clickOpcion('Afinar')" class="config-menu-item">
+              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'Afinar' }">
                 Afinar
               </a>
-            </li>
-          </ul>
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li @click="clickOpcion('acercade')">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'acercade' }"
-              >
+            </div>
+            <div @click="clickOpcion('acercade')" class="config-menu-item">
+              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'acercade' }">
                 Acerca de ...
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -135,6 +87,22 @@ function clickOpcion(viendostr: string) {
 </template>
 
 <style scoped>
+.config-menu-group {
+  display: flex;
+  width: 100%;
+  
+}
+.config-menu-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 2px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  }
+  .config-menu-item:hover {
+    background-color: rgba(138, 43, 226, 0.5);
+}
 .innerConfig {
   padding: 20px;
   display: flex;
