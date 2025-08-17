@@ -6,9 +6,8 @@ const DesdeOctavasCirculo = ref(4)
 
 const props = defineProps<{
   notasSonido: NotaSonido[]
+  clasenotasSonido: string[]
   frecuencia: number
-  mostrarEscala: number[]
-  mostrarAcorde: number[]
 }>()
 
 const maxRadio = 500
@@ -98,6 +97,7 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
         v-for="(nota, index) in notasSonido"
         :key="index"
         class="frecuencia"
+        :class="clasenotasSonido[index]"
         :style="StyleFrecuencia(nota)"
       >
         <div>
