@@ -31,7 +31,6 @@ export class HelperDisplay {
     const allrenglonAcordes: string[][] = []
     // Agrego espacios si los acordes ocupan mas que la letra
     for (let i = 0; i < letra.length; i++) {
-      console.log(`letra[${i}]: ${letra[i]}, acordes[${i}]: ${acordes[i]}`)
       if (acordes[i].length > letra[i].length) {
         if (
           acordes[i] !== '.' &&
@@ -65,6 +64,26 @@ export class HelperDisplay {
     allrenglonLetras.push(renglonLetras)
     allrenglonAcordes.push(renglonAcordes)
     ret.ArmarDisplay(allrenglonLetras, allrenglonAcordes)
+    let contCompas: number = 0
+    for (let i = 0; i < ret.Versos.length; i++) {
+      for (let j = 0; j < ret.Versos[i].renglonesDisplay.length; j++) {
+        for (
+          let k = 0;
+          k < ret.Versos[i].renglonesDisplay[j].acordes.length;
+          k++
+        ) {
+          if (
+            ret.Versos[i].renglonesDisplay[j].acordes[k].contenido === '.' ||
+            ret.Versos[i].renglonesDisplay[j].acordes[k].contenido === ''
+          ) {
+            contCompas = contCompas - 1
+          }
+          ret.Versos[i].renglonesDisplay[j].acordes[k].compas = contCompas
+          ret.Versos[i].renglonesDisplay[j].partes[k].compas = contCompas
+          contCompas++
+        }
+      }
+    }
 
     return ret
   }

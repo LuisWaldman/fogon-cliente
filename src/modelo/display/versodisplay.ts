@@ -9,12 +9,10 @@ export class VersoDisplay {
     verso: string[],
     acordes: string[],
     anchoLetras: number = 80,
-    contAcorde: number = 0,
   ) {
     this.contenido = verso.join('')
-    this.desdeAcorde = contAcorde
     if (this.contenido.length < anchoLetras) {
-      this.renglonesDisplay.push(new RenglonDisplay(verso, acordes, contAcorde))
+      this.renglonesDisplay.push(new RenglonDisplay(verso, acordes))
     } else {
       let versoAcu: string[] = []
       let acordesAco: string[] = []
@@ -29,23 +27,18 @@ export class VersoDisplay {
           const priPart = verso[cont].substring(0, anchoLetras - acu.length)
           versoAcu.push(priPart)
           acordesAco.push(acordes[cont])
-          this.renglonesDisplay.push(
-            new RenglonDisplay(versoAcu, acordesAco, contAcorde),
-          )
+          this.renglonesDisplay.push(new RenglonDisplay(versoAcu, acordesAco))
           const segPart = verso[cont].substring(
             anchoLetras - acu.length,
             verso[cont].length,
           )
           acordesAco = ['.']
           versoAcu = [segPart]
-          contAcorde += acu.length
           acu = verso[cont]
         }
         cont++
       }
-      this.renglonesDisplay.push(
-        new RenglonDisplay(versoAcu, acordesAco, contAcorde),
-      )
+      this.renglonesDisplay.push(new RenglonDisplay(versoAcu, acordesAco))
     }
   }
 }

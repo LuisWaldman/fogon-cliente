@@ -4,6 +4,7 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
 import { Display } from '../../modelo/display/display'
 import { HelperDisplay } from '../../modelo/display/helperDisplay'
+import { Configuracion } from '../../modelo/configuracion'
 
 const props = defineProps<{
   compas: number
@@ -29,44 +30,40 @@ function ActualizarCancion(cancion: Cancion) {
   displayRef.value = helperDisplay.getDisplay(cancion, 80)
 }
 
-function CalcularResaltado(newCompas: number) {
-  let totalCompases = 0
-  for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
-    let compasesxparte =
-      props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]].acordes
-        .length
-    if (newCompas < totalCompases + compasesxparte) {
-      mostrandoParte.value = i
-      mostrandoCompasParte.value = newCompas - totalCompases
-      break
+function CalcularRenglon(newCompas: number): number {
+  let renglon = 0
+  let encontrado = false
+  for (let i = 0; i < displayRef.value.Versos.length; i++) {
+    const verso = displayRef.value.Versos[i]
+    for (let j = 0; j < verso.renglonesDisplay.length; j++) {
+      for (let k = 0; k < verso.renglonesDisplay[j].partes.length; k++) {
+        const partes = verso.renglonesDisplay[j].partes[k]
+        if (partes.compas === newCompas) {
+          encontrado = true
+          return renglon
+        }
+      }
+      renglon++
     }
-    totalCompases += compasesxparte
+    if (encontrado) break
   }
-  currentCompas.value = newCompas
+  return renglon
 }
 
 watch(
   () => props.compas,
   (newCompas) => {
-    CalcularResaltado(newCompas)
-    renglones.value.forEach((_renglon, index) => {
-      CompasAcorde.value[index].forEach((compas) => {
-        if (compas === newCompas) {
-          // Scroll to the div if it's in the current view
+    const renglon = CalcularRenglon(newCompas)
+    console.log('Renglon:', renglon)
 
-          const configuracionPantalla = pantalla.getConfiguracionPantalla()
-          const tamanioLetra = configuracionPantalla.tamanioLetra
-          const tamanioAcorde = configuracionPantalla.tamanioAcorde
-          const factorScroll = configuracionPantalla.factorScroll // Usar la nueva propiedad
-          let ve = index * (tamanioLetra + tamanioAcorde) * factorScroll
-          ve -= (tamanioLetra + tamanioAcorde) * 10
-          const nuevaPos = Math.max(ve, 0)
-          console.log(`Scrolling to ${nuevaPos}px`)
-          moverScroll(nuevaPos)
-          return
-        }
-      })
-    })
+    const configuracionPantalla = pantalla.getConfiguracionPantalla()
+    const ScrollTo = renglon * (configuracionPantalla.tamanioLetra +
+        configuracionPantalla.tamanioAcorde) *
+        configuracionPantalla.factorScroll
+  console.log('ScrollTo:', ScrollTo)
+    moverScroll(
+      ScrollTo
+    )
   },
 )
 
@@ -112,7 +109,16 @@ defineExpose({ Actualizar })
           :key="index"
           :style="{ position: 'relative' }"
         >
-          <div class="divletra">{{ renglon.contenido }}</div>
+          <div class="divletra" style="display: flex">
+            <div
+              v-for="(parte, parteIndex) in renglon.partes"
+              :class="{ en_compas: parte.compas === compas }"
+              :key="parteIndex"
+            >
+              {{ parte.contenido }}
+            </div>
+          </div>
+
           <div
             v-for="(acorde, acordeIndex) in renglon.acordes"
             :style="{
