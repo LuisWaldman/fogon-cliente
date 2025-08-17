@@ -15,9 +15,7 @@ export class VersoDisplay {
     this.desdeAcorde = contAcorde
     if (this.contenido.length < anchoLetras) {
       this.hastaAcorde = contAcorde
-      this.renglonesDisplay.push(
-        new RenglonDisplay(verso, acordes, anchoLetras),
-      )
+      this.renglonesDisplay.push(new RenglonDisplay(verso, acordes, contAcorde))
     }
   }
 }
