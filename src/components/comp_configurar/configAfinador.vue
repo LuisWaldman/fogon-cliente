@@ -57,7 +57,7 @@ function CalcularNotas() {
   notasSonido.value = HelperSonidos.GetNotas(
     tipoAfinacion.value,
     cantidadNotas.value,
-    notas
+    notas,
   )
 }
 
@@ -243,11 +243,10 @@ function formatFrequency(freq, totalDigits = 5, decimalPlaces = 2) {
           {{ formatFrequency(frequency) }} Hz
         </div>
       </div>
-      
+
       <frecuen
-      :notasSonido  ="notasSonido"
-        
-      :frecuencia="frequency"
+        :notasSonido="notasSonido"
+        :frecuencia="frequency"
         :ancho="ancho"
       ></frecuen>
     </div>

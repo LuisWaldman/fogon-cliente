@@ -21,8 +21,8 @@ const notas: string[] = [
 ]
 
 const props = defineProps<{
-  notasSonido: NotaSonido[],
-  frecuencia: number,
+  notasSonido: NotaSonido[]
+  frecuencia: number
   ancho: number
 }>()
 // Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
@@ -74,7 +74,7 @@ function StyleNotaLinea(frecuencia: NotaSonido) {
 }
 
 function CorrespondeNota(frecuencia: number): number {
-  const FrecuenciaNotas = props.notasSonido.map(nota => nota.frecuencia)
+  const FrecuenciaNotas = props.notasSonido.map((nota) => nota.frecuencia)
   for (let i = 0; i < FrecuenciaNotas.length; i++) {
     if (frecuencia < FrecuenciaNotas[i]) {
       if (i == 0) {
@@ -93,7 +93,6 @@ function CorrespondeNota(frecuencia: number): number {
 }
 </script>
 <template>
-  
   <div class="clsFrecuencia" id="contenedorFrecuenciometro">
     <div
       v-for="(nota, index) in notasSonido"
@@ -104,7 +103,7 @@ function CorrespondeNota(frecuencia: number): number {
         notaMostrada: mostrandoNota === index,
         clsNota: true,
       }"
-    >    
+    >
       <div>{{ nota.frecuencia.toFixed(0) }}</div>
       <div>{{ nota.nota }}</div>
     </div>
@@ -147,7 +146,6 @@ function CorrespondeNota(frecuencia: number): number {
 .clsNota {
 }
 .notaMostrada {
-  
   border: 5px solid rgb(190, 46, 46);
 }
 </style>
