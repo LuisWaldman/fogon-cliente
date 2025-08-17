@@ -40,10 +40,10 @@ const notas: string[] = [
 function calcularNotas() {
   FrecuenciaNotas.value = []
   NombreNotas.value = []
-  const desdeNota = props.tipoAfinacion / 8
+  const desdeNota = props.tipoAfinacion / 7
   // cantidadNotas es la cantidad de notas en la octava
   const desdeEscala = 1
-  for (let i = 0; i < props.cantidadNotas * 8; i++) {
+  for (let i = 0; i < props.cantidadNotas * 7; i++) {
     const nota = desdeNota * Math.pow(2, i / props.cantidadNotas)
     FrecuenciaNotas.value.push(nota)
     NombreNotas.value.push(

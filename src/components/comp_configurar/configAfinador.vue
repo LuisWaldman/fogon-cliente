@@ -6,7 +6,7 @@ import { NotaAfinar } from './notaAfinar'
 import frecuen from './frecuenciometro.vue'
 
 import circulo from './circulo.vue'
-
+const afinandoInstrumento = ref(false)
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
@@ -45,19 +45,22 @@ const notas: string[] = [
   'G',
   'G#',
 ]
-
+const notasSonido = ref<NotaSonido[]>([])
 const mostrarEscala = ref(false)
 const escalaMenor = ref(false)
 const refViendoEscala = ref(0)
 let modos: { [key: string]: number[] } = {}
 modos['mayor'] = [2, 2, 1, 2, 2, 2]
 modos['menor'] = [2, 1, 2, 2, 1, 2]
-/*
-function cambiarModo() {
-  escalaMenor.value = !escalaMenor.value
-  calcularEscala()
+
+function CalcularNotas() {
+  notasSonido.value = HelperSonidos.GetNotas(
+    tipoAfinacion.value,
+    cantidadNotas.value,
+    notas
+  )
 }
-*/
+
 function calcularEscala() {
   if (!mostrandoEscala.value) {
     mostrandoEscala.value = []
@@ -201,9 +204,12 @@ function styleDivAfinador() {
 
 // Añadir log para montaje y desmontaje del componente
 import { onMounted, onUnmounted } from 'vue'
+import type { NotaSonido } from '../../modelo/sonido/notaSonido'
+import { HelperSonidos } from '../../modelo/sonido/helperSonido'
 
 onMounted(() => {
   Solicitar()
+  CalcularNotas()
 })
 
 onUnmounted(() => {
@@ -212,25 +218,36 @@ onUnmounted(() => {
 
 function formatFrequency(freq, totalDigits = 5, decimalPlaces = 2) {
   if (freq < 0) {
-    freq = 0;
+    freq = 0
   }
-  const fixed = freq.toFixed(decimalPlaces); // Ej: "12.43"
-  const [intPart, decPart] = fixed.split('.');
-  const paddedInt = intPart.padStart(totalDigits, '0'); // Ej: "00012"
-  return `${paddedInt},${decPart}`; // Ej: "00012,43"
+  const fixed = freq.toFixed(decimalPlaces) // Ej: "12.43"
+  const [intPart, decPart] = fixed.split('.')
+  const paddedInt = intPart.padStart(totalDigits, '0') // Ej: "00012"
+  return `${paddedInt},${decPart}` // Ej: "00012,43"
 }
 </script>
 
 <template>
   <div :style="styleDivAfinador()" class="divAfinador" id="divAfinador">
     <div style="display: flex">
-      <div width="200px" max-width="200px">
-        <span>FRECUENCIA  {{ formatFrequency(frequency) }} </span> Hz
+      <div>
+        <div>FRECUENCIA</div>
+        <div
+          style="
+            font-size: xx-large;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          "
+        >
+          {{ formatFrequency(frequency) }} Hz
+        </div>
       </div>
+      
       <frecuen
-        :tipoAfinacion="tipoAfinacion"
-        :cantidadNotas="cantidadNotas"
-        :frecuencia="frequency"
+      :notasSonido  ="notasSonido"
+        
+      :frecuencia="frequency"
         :ancho="ancho"
       ></frecuen>
     </div>

@@ -34,37 +34,79 @@ function clickOpcion(viendostr: string) {
         <div class="config-menu">
           <div class="config-menu-group">
             <div @click="clickOpcion('perfil')" class="config-menu-item">
-              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'perfil' }">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'perfil' }"
+              >
                 Perfil
               </a>
             </div>
-            <div @click="clickOpcion('login')" class="config-menu-item" v-if="appStore.estado === 'conectado' || appStore.estado === 'logueado'">
-              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'login' }">
+            <div
+              @click="clickOpcion('login')"
+              class="config-menu-item"
+              v-if="
+                appStore.estado === 'conectado' ||
+                appStore.estado === 'logueado'
+              "
+            >
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'login' }"
+              >
                 Login
               </a>
             </div>
-            <div @click="clickOpcion('sesion')" class="config-menu-item" v-if="appStore.estado == 'conectado' || appStore.estadoLogin == 'logueado'">
-              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'sesion' }">
+            <div
+              @click="clickOpcion('sesion')"
+              class="config-menu-item"
+              v-if="
+                appStore.estado == 'conectado' ||
+                appStore.estadoLogin == 'logueado'
+              "
+            >
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'sesion' }"
+              >
                 Sesion
               </a>
             </div>
             <div @click="clickOpcion('servidores')" class="config-menu-item">
-              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'servidores' }">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'servidores' }"
+              >
                 Servidores
               </a>
             </div>
             <div @click="clickOpcion('relojes')" class="config-menu-item">
-              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'relojes' }">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'relojes' }"
+              >
                 Relojes
               </a>
             </div>
             <div @click="clickOpcion('Afinar')" class="config-menu-item">
-              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'Afinar' }">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'Afinar' }"
+              >
                 Afinar
               </a>
             </div>
             <div @click="clickOpcion('acercade')" class="config-menu-item">
-              <a href="#" class="nav-link text-white" :class="{ activo: viendo === 'acercade' }">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'acercade' }"
+              >
                 Acerca de ...
               </a>
             </div>
@@ -90,7 +132,6 @@ function clickOpcion(viendostr: string) {
 .config-menu-group {
   display: flex;
   width: 100%;
-  
 }
 .config-menu-item {
   flex: 1;
@@ -99,9 +140,9 @@ function clickOpcion(viendostr: string) {
   margin: 0 2px;
   border-radius: 5px;
   transition: all 0.3s ease;
-  }
-  .config-menu-item:hover {
-    background-color: rgba(138, 43, 226, 0.5);
+}
+.config-menu-item:hover {
+  background-color: rgba(138, 43, 226, 0.5);
 }
 .innerConfig {
   padding: 20px;
