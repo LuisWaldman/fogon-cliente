@@ -198,10 +198,21 @@ function styleDivAfinador() {
     width: ancho + 'px',
   }
 }
+
+// Añadir log para montaje y desmontaje del componente
+import { onMounted, onUnmounted } from 'vue'
+
+onMounted(() => {
+  Solicitar()
+})
+
+onUnmounted(() => {
+  DejarEscuchar()
+})
 </script>
 
 <template>
-  <div :style="styleDivAfinador()" class="divAfinador">
+  <div :style="styleDivAfinador()" class="divAfinador" id="divAfinador">
     <div style="display: flex">
       <div width="200px" max-width="200px">
         FRECUENCIA <span> {{ frequency.toFixed(2) }} </span> Hz

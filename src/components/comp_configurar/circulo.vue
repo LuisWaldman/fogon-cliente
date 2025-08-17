@@ -86,15 +86,7 @@ function StyleFrecuencia(frecuencia: number) {
     centroLeft + Math.cos(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
   const top =
     centroTop + Math.sin(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
-  console.log(
-    'enOctava',
-    enOctava,
-    baseOctava,
-    'Porcentaje=',
-    portentajeEnOctava,
-    frecuencia,
-    props.tipoAfinacion,
-  )
+
   return {
     top: top + 'px',
     left: left + 'px',
