@@ -15,10 +15,10 @@ export class RenglonDisplay {
       if (acordes[i] != '.') {
         contCompas++
       }
-      this.contenido += letras[i]
       this.acordes.push(
         new AcordeDisplay(acordes[i], this.contenido.length * 10, contCompas),
       )
+      this.contenido += letras[i]
     }
   }
 }

@@ -43,9 +43,9 @@ export class VersoDisplay {
         }
         cont++
       }
-          this.renglonesDisplay.push(
-            new RenglonDisplay(versoAcu, acordesAco, contAcorde),
-          )
+      this.renglonesDisplay.push(
+        new RenglonDisplay(versoAcu, acordesAco, contAcorde),
+      )
     }
   }
 }

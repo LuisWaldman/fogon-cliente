@@ -31,7 +31,19 @@ export class HelperDisplay {
     const allrenglonAcordes: string[][] = []
     // Agrego espacios si los acordes ocupan mas que la letra
     for (let i = 0; i < letra.length; i++) {
-
+      console.log(`letra[${i}]: ${letra[i]}, acordes[${i}]: ${acordes[i]}`)
+      if (acordes[i].length > letra[i].length) {
+        if (
+          acordes[i] !== '.' &&
+          (letra[i].trim() === '' || letra[i] === undefined)
+        ) {
+          letra[i] = '♪'
+        }
+        const espacios = acordes[i].length - letra[i].length + 2
+        if (espacios > 0) {
+          letra[i] = '♪'.repeat(espacios)
+        }
+      }
     }
     for (let i = 0; i < letra.length; i++) {
       const parteletra = letra[i]
