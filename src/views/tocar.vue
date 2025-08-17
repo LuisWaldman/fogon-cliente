@@ -111,6 +111,10 @@ function clickEditar() {
 function cerrareditarPantalla() {
   refEditSize.value = false
 }
+function cambioestado(estado: number) {
+  console.log('Cambio de estado en tocar.vue', estado)
+  appStore.aplicacion.CambioEstadoMedio(estado)
+}
 </script>
 
 <template>
@@ -144,11 +148,11 @@ function cerrareditarPantalla() {
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <TocarYoutube
-          
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-          ></TocarYoutube>
-          
+          @cambioEstado="cambioestado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarYoutube>
+
         <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
           <Secuencia
             :cancion="appStore.cancion"

@@ -10,11 +10,14 @@ const props = defineProps<{
   cancion: Cancion
 }>()
 
+const emit = defineEmits<{
+  cambioEstado: [estado: number]
+}>()
 
 const urlYoutube = ref('')
 const media = ref('dQw4w9WgXcQ')
 
-const shouldLoad = ref(false);
+const shouldLoad = ref(false)
 watch(
   () => props.cancion,
   (newCancion: Cancion) => {
@@ -23,7 +26,7 @@ watch(
         if (mediaItem.tipo === 'Youtube') {
           media.value = mediaItem.id
           urlYoutube.value = 'https://www.youtube.com/watch?v=' + media.value
-          shouldLoad.value = true; // Set to true to load the video
+          shouldLoad.value = true // Set to true to load the video
           break
         }
       }
@@ -32,16 +35,15 @@ watch(
 )
 
 onMounted(() => {
-    for (var i = 0; i < props.cancion.medias.length; i++) {
-        console.log(props.cancion.medias[i])
-        if (props.cancion.medias[i].tipo === 'Youtube') {
-            media.value = props.cancion.medias[i].id
-            urlYoutube.value = 'https://www.youtube.com/watch?v=' + media.value
-            break
-        }
+  for (var i = 0; i < props.cancion.medias.length; i++) {
+    console.log(props.cancion.medias[i])
+    if (props.cancion.medias[i].tipo === 'Youtube') {
+      media.value = props.cancion.medias[i].id
+      urlYoutube.value = 'https://www.youtube.com/watch?v=' + media.value
+      break
     }
+  }
 })
-
 
 const playerRef = ref<any>(null)
 function onReady() {
@@ -49,6 +51,7 @@ function onReady() {
 }
 function onStateChange(event: any) {
   console.log('Estado del reproductor:', event.data)
+  emit('cambioEstado', event.data)
 }
 </script>
 

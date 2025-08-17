@@ -262,7 +262,10 @@ export default class Aplicacion {
       },
     })
   }
-
+  CambioEstadoMedio(estado: number) {
+    if (estado == 1) this.reproductor.iniciarReproduccion()
+    else if (estado == 2) this.reproductor.detenerReproduccion()
+  }
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
     console.log('HTTPPost', urlPost, this.token)
     return fetch(this.url + urlPost, {

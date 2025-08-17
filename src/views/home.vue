@@ -65,8 +65,9 @@ const appStore = useAppStore()
 const router = useRouter()
 function clickTocar(cancion: OrigenCancion) {
   // Redirect to edit page for the current song
-  appStore.aplicacion.SetCancion(cancion)
-  router.push('/tocar')
+  appStore.aplicacion.SetCancion(cancion).then(() => {
+    router.push('/tocar')
+  })
 }
 </script>
 <template>
