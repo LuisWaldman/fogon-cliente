@@ -330,8 +330,7 @@ function formatFrequency(freq, totalDigits = 5, decimalPlaces = 2) {
         </div>
       </div>
       <circulo
-        :tipoAfinacion="tipoAfinacion"
-        :cantidadNotas="cantidadNotas"
+        :notasSonido="notasSonido"
         :frecuencia="frequency"
         :mostrarEscala="mostrandoEscala"
         :mostrarAcorde="mostrandoAcorde"

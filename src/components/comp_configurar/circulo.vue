@@ -1,28 +1,29 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
+import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 const octavasCirculo = ref(7)
 const DesdeOctavasCirculo = ref(4)
 
 const props = defineProps<{
+  notasSonido: NotaSonido[]
   frecuencia: number
-  tipoAfinacion: number
-  cantidadNotas: number
-  ancho: number
   mostrarEscala: number[]
   mostrarAcorde: number[]
 }>()
 
-// Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
-watch([() => props.tipoAfinacion, () => props.cantidadNotas], () => {
-  calcularNotas()
-})
 const maxRadio = 500
 const minRadio = 100
-const centroLeft = 300
+const centroLeft = 350
 const centroTop = 230
-const FrecuenciaNotas = ref<number[]>([]) // Cantidad de notas en la afinación
-const NombreNotas = ref<string[]>([])
-
+const viendoFrecuencia = ref<NotaSonido>({ nota: '', frecuencia: 0, octava: 0 })
+watch(
+  () => props.frecuencia,
+  (newFrecuencia) => {
+    if (newFrecuencia > 0) {
+      viendoFrecuencia.value.frecuencia = newFrecuencia
+    }
+  },
+)
 const notas: string[] = [
   'A',
   'A#',
@@ -37,21 +38,6 @@ const notas: string[] = [
   'G',
   'G#',
 ]
-function calcularNotas() {
-  FrecuenciaNotas.value = []
-  NombreNotas.value = []
-  const desdeNota = props.tipoAfinacion / 7
-  // cantidadNotas es la cantidad de notas en la octava
-  const desdeEscala = 1
-  for (let i = 0; i < props.cantidadNotas * 7; i++) {
-    const nota = desdeNota * Math.pow(2, i / props.cantidadNotas)
-    FrecuenciaNotas.value.push(nota)
-    NombreNotas.value.push(
-      notas[i % notas.length] + Math.floor(i / notas.length + desdeEscala),
-    )
-  }
-}
-calcularNotas()
 
 function StyleOctava(i: number) {
   const radio =
@@ -66,14 +52,20 @@ function StyleOctava(i: number) {
     borderRadius: '50%',
   }
 }
-function StyleFrecuencia(frecuencia: number) {
+function StyleFrecuencia(frecuencia: NotaSonido) {
+  let backgroundColor = 'white'
+  let color = 'black'
+  if (frecuencia.nota.includes('#')) {
+    backgroundColor = 'black'
+    color = 'white'
+  }
   let enOctava =
-    Math.floor(Math.log2(frecuencia / props.tipoAfinacion)) +
+    Math.floor(Math.log2(frecuencia.frecuencia / 440)) +
     DesdeOctavasCirculo.value
+
   const baseOctava =
-    props.tipoAfinacion *
-    Math.pow(2, Math.floor(Math.log2(frecuencia / props.tipoAfinacion)))
-  const portentajeEnOctava = (frecuencia - baseOctava) / baseOctava
+    440 * Math.pow(2, Math.floor(Math.log2(frecuencia.frecuencia / 440)))
+  const portentajeEnOctava = (frecuencia.frecuencia - baseOctava) / baseOctava
 
   if (enOctava < 0) {
     enOctava = 0
@@ -90,6 +82,8 @@ function StyleFrecuencia(frecuencia: number) {
   return {
     top: top + 'px',
     left: left + 'px',
+    'background-color': backgroundColor,
+    color: color,
   }
 }
 </script>
@@ -101,45 +95,22 @@ function StyleFrecuencia(frecuencia: number) {
       </div>
 
       <div
-        v-for="(nombre, index) in NombreNotas"
+        v-for="(nota, index) in notasSonido"
         :key="index"
         class="frecuencia"
-        :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
+        :style="StyleFrecuencia(nota)"
       >
-        <div class="clsAcorde" v-if="mostrarAcorde.includes(index % 12)">
-          {{ nombre }}
-        </div>
-      </div>
-      <div
-        v-for="(nombre, index) in NombreNotas"
-        :key="index"
-        class="frecuencia"
-        :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
-      >
-        <div class="clsEscala" v-if="mostrarEscala.includes(index % 12)">
-          {{ nombre }}
+        <div>
+          {{ nota.nota }}
         </div>
       </div>
 
       <div
-        v-if="Number(frecuencia) > 0"
-        :style="StyleFrecuencia(Number(frecuencia.toFixed(0)))"
+        v-if="Number(viendoFrecuencia.frecuencia) > 0"
+        :style="StyleFrecuencia(viendoFrecuencia)"
         class="frecuencia viendoFrecuencia"
       >
-        {{ frecuencia.toFixed(0) }}
-      </div>
-
-      <div
-        v-for="(nombre, index) in NombreNotas"
-        :key="index"
-        class="frecuencia"
-        :class="{
-          frecuencianegra: nombre.includes('#'),
-          frecuenciablanca: !nombre.includes('#'),
-        }"
-        :style="StyleFrecuencia(Number(FrecuenciaNotas[index]))"
-      >
-        {{ nombre }}
+        {{ viendoFrecuencia.frecuencia.toFixed(0) }}
       </div>
     </div>
   </div>
