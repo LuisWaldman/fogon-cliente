@@ -29,6 +29,10 @@ export class HelperDisplay {
 
     const allrenglonLetras: string[][] = []
     const allrenglonAcordes: string[][] = []
+    // Agrego espacios si los acordes ocupan mas que la letra
+    for (let i = 0; i < letra.length; i++) {
+
+    }
     for (let i = 0; i < letra.length; i++) {
       const parteletra = letra[i]
       if (parteletra.includes('/n')) {

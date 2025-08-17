@@ -64,7 +64,6 @@ function CalcularNotas() {
 }
 
 function calcularEscala() {
-
   for (var i = 0; i < notasSonido.value.length; i++) {
     clsNotas.value[i] = ''
   }
@@ -74,17 +73,10 @@ function calcularEscala() {
   const modo = escalaMenor.value ? 'menor' : 'mayor'
   let notaCont: number = refViendoEscala.value
   for (let i = 0; notaCont < notasSonido.value.length; i++) {
-
-    console.log(
-      `Calculando nota ${i} en modo ${modo} con notaCont ${notaCont}`,
-    )
-    clsNotas.value[notaCont] = 'clsEscala'    
-    notaCont += modos[modo][i % (modos[modo].length )]
+    console.log(`Calculando nota ${i} en modo ${modo} con notaCont ${notaCont}`)
+    clsNotas.value[notaCont] = 'clsEscala'
+    notaCont += modos[modo][i % modos[modo].length]
   }
-  
-  
-  
-  
 }
 
 watch(mediaStream, (stream) => {
@@ -271,20 +263,17 @@ function formatFrequency(freq, totalDigits = 5, decimalPlaces = 2) {
             @change="calcularEscala"
           />
           <span>Mostrar Escala</span>
-          <select v-model="refViendoEscala" v-if="mostrarEscala"
-          
-              @change="calcularEscala"
+          <select
+            v-model="refViendoEscala"
+            v-if="mostrarEscala"
+            @change="calcularEscala"
           >
-            <option
-              v-for="(nota, index) in notas"
-              :key="index"
-              :value="index"
-            >
+            <option v-for="(nota, index) in notas" :key="index" :value="index">
               {{ nota }}
             </option>
           </select>
         </div>
-        
+
         <!--
         <div>Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
         <div>
