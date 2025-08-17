@@ -4,10 +4,16 @@ import { VersoDisplay } from './versodisplay'
 export class Display {
   private anchoLetras: number = 10
   ArmarDisplay(allrenglonLetras: string[][], allrenglonAcordes: string[][]) {
+    let desdeAcorde = 0
     for (let i = 0; i < allrenglonLetras.length; i++) {
-      this.Versos.push(
-        new VersoDisplay(allrenglonLetras[i], allrenglonAcordes[i]),
+      const nuevo = new VersoDisplay(
+        allrenglonLetras[i],
+        allrenglonAcordes[i],
+        this.anchoLetras,
+        desdeAcorde,
       )
+      this.Versos.push(nuevo)
+      desdeAcorde += nuevo.hastaAcorde
     }
   }
 

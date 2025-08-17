@@ -16,7 +16,7 @@ const mostrandoCompasParte = ref(-1)
 const currentCompas = ref(0)
 const renglones = ref([] as string[])
 const CompasAcorde = ref([] as number[][])
-const displayRef = ref(new Display(20))
+const displayRef = ref(new Display(80))
 
 watch(
   () => props.cancion,
@@ -26,7 +26,7 @@ watch(
 )
 const helperDisplay = new HelperDisplay()
 function ActualizarCancion(cancion: Cancion) {
-  displayRef.value = helperDisplay.getDisplay(cancion, 20)
+  displayRef.value = helperDisplay.getDisplay(cancion, 80)
 }
 
 function CalcularResaltado(newCompas: number) {
@@ -106,32 +106,29 @@ defineExpose({ Actualizar })
       :style="styleDivTocar()"
       ref="letraDiv"
     >
-    <div v-for="(verso, index) in displayRef.Versos" :key="index">
-      
-    
-
-
-      <div
-        v-for="(renglon, index) in verso.renglonesDisplay"
-        :key="index"
-        :style="{ position: 'relative' }"
-      >
-        <div class="divletra">{{ renglon.contenido }}</div>
+      <div v-for="(verso, index) in displayRef.Versos" :key="index">
         <div
-          v-for="(acorde, acordeIndex) in renglon.acordes"
-          :style="{
-            position: 'absolute',
-            left: acorde.left + 'px',
-            top: '-30px',
-          }"
-          :key="acordeIndex"
-          :class="{ en_compas: acorde.compas === compas }"
-          class="acordediv"
+          v-for="(renglon, index) in verso.renglonesDisplay"
+          :key="index"
+          :style="{ position: 'relative' }"
         >
-          {{ acorde.contenido }}
+          <div class="divletra">{{ renglon.contenido }}</div>
+          <div
+            v-for="(acorde, acordeIndex) in renglon.acordes"
+            :style="{
+              position: 'absolute',
+              left: acorde.left + 'px',
+              top: '-30px',
+            }"
+            :key="acordeIndex"
+            :class="{ en_compas: acorde.compas === compas }"
+            class="acordediv"
+          >
+            {{ acorde.contenido }}
+          </div>
         </div>
       </div>
-    </div></div>
+    </div>
   </div>
 </template>
 
