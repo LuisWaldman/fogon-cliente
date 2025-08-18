@@ -81,9 +81,11 @@ export class CancionManager {
     }
 
     if (origencancion.origenUrl === 'fogon') {
-      return CancionFogonManager.GetCancion(origencancion, 
+      return CancionFogonManager.GetCancion(
+        origencancion,
         this.cliente,
-        this.token)
+        this.token,
+      )
     }
     if (origencancion.origenUrl === 'local') {
       if (!this.db) {
@@ -125,11 +127,11 @@ export class CancionManager {
       }
       CancionIndexedDBManager.SaveCancion(this.db, cancion)
     }
-    if (origen.origenUrl !== 'fogon') {
+    
       const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
       const ultimas = new UltimasCanciones()
       console.log('Guardando en ultimas', item)
       ultimas.agregar(item)
-    }
+    
   }
 }

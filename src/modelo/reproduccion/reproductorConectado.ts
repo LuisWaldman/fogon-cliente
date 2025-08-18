@@ -35,20 +35,22 @@ export class ReproductorConectado extends Reproductor {
     this.reloj.setDelay(est.delay)
   }
 
+  GetCancionDelFogon() {
+    const origen = new OrigenCancion('fogon', '', '')
+    CancionManager.getInstance()
+      .Get(origen)
+      .then((cancion) => {
+        const appStore = useAppStore()
+        appStore.cancion = cancion
+        appStore.origenCancion = origen
+      })
+  }
   constructor(cliente: ClienteSocket, token: string) {
     super()
     this.token = token
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler(() => {
-      const origen = new OrigenCancion('fogon', '', '')
-      console.log('Canción actualizada desde el servidor')
-      CancionManager.getInstance()
-        .Get(origen)
-        .then((cancion) => {
-          const appStore = useAppStore()
-          appStore.cancion = cancion
-          appStore.origenCancion = origen
-        })
+      this.GetCancionDelFogon()
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)

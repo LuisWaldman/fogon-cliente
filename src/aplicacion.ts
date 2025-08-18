@@ -70,7 +70,8 @@ export default class Aplicacion {
   }
 
   async SetCancion(origen: OrigenCancion) {
-    CancionManager.getInstance().Get(origen)
+    CancionManager.getInstance()
+      .Get(origen)
       .then((cancion) => {
         this.reproductor.SetCancion(origen, cancion)
       })
@@ -152,6 +153,7 @@ export default class Aplicacion {
           this.cliente,
           this.token,
         )
+        this.reproductorConectado.GetCancionDelFogon()
         this.reproductor.detenerReproduccion()
         this.reproductor = this.reproductorConectado
       }

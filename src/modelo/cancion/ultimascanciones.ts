@@ -19,13 +19,14 @@ export class UltimasCanciones {
   }
 
   public agregar(cancion: ItemIndiceCancion): void {
+    if (cancion.origen.origenUrl === 'fogon') {
+      return
+    }
     this.canciones = this.canciones.filter(
       (c) =>
+        c.origen.origenUrl === 'fogon' ||
         c.origen.fileName !== cancion.origen.fileName ||
-        c.origen.origenUrl !== cancion.origen.origenUrl ||
-        c.origen.usuario !== cancion.origen.usuario ||
-        c.cancion !== cancion.cancion ||
-        c.banda !== cancion.banda,
+        c.origen.origenUrl !== cancion.origen.origenUrl,
     )
 
     this.canciones.unshift(cancion)
