@@ -215,7 +215,7 @@ onUnmounted(() => {
   DejarEscuchar()
 })
 
-function formatFrequency(freq, totalDigits = 5, decimalPlaces = 2) {
+function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
   if (freq < 0) {
     freq = 0
   }
