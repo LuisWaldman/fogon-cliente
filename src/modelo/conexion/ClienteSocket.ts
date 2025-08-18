@@ -10,7 +10,7 @@ interface ServerToClientEvents {
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
-  cancionActualizada: (cancion: string, origen: string, usuario: string) => void
+  cancionActualizada: () => void
   cancionIniciada: (compas: number, desde: number) => void
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
@@ -20,7 +20,6 @@ interface ServerToClientEvents {
 }
 
 interface ClientToServerEvents {
-  actualizarCancion: (cancion: string, origen: string, usuario: string) => void
   iniciarReproduccion(compas: number, delayms: number): void
   detenerReproduccion: () => void
   actualizarCompas: (compas: number) => void
@@ -51,14 +50,8 @@ export class ClienteSocket {
     this.conectadoHandler = handler
   }
 
-  private cancionActualizadaHandler?: (
-    cancion: string,
-    origen: string,
-    usuario: string,
-  ) => void
-  public setCancionActualizadaHandler(
-    handler: (cancion: string, origen: string, usuario: string) => void,
-  ): void {
+  private cancionActualizadaHandler?: () => void
+  public setCancionActualizadaHandler(handler: () => void): void {
     this.cancionActualizadaHandler = handler
   }
 
@@ -161,20 +154,9 @@ export class ClienteSocket {
       this.conexionStatusHandler?.('desconectado')
     })
 
-    socket.on(
-      'cancionActualizada',
-      (cancion: string, origen: string, usuario: string) => {
-        console.log(
-          'cancionActualizada received with cancion:',
-          cancion,
-          'origen:',
-          origen,
-          'usuario:',
-          usuario,
-        )
-        this.cancionActualizadaHandler?.(cancion, origen, usuario)
-      },
-    )
+    socket.on('cancionActualizada', () => {
+      this.cancionActualizadaHandler?.()
+    })
 
     socket.on('mensajesesion', (msj: string) => {
       console.log('mensajesesion received with mensaje:', msj)
@@ -272,14 +254,6 @@ export class ClienteSocket {
   }
   public actualizarCompas(compas: number): void {
     this.socket.emit('actualizarCompas', compas)
-  }
-
-  public actualizarCancion(
-    cancion: string,
-    origen: string,
-    usuario: string,
-  ): void {
-    this.socket.emit('actualizarCancion', cancion, origen, usuario)
   }
 
   public gettime(): void {

@@ -4,6 +4,8 @@ import { Reproductor } from './reproductor'
 import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroCancion } from '../sincro/SincroCancion'
 import { OrigenCancion } from '../cancion/origencancion'
+import { CancionManager } from '../cancion/CancionManager'
+import { Cancion } from '../cancion/cancion'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
@@ -37,13 +39,17 @@ export class ReproductorConectado extends Reproductor {
     super()
     this.token = token
     this.cliente = cliente
-    this.cliente.setCancionActualizadaHandler(
-      (cancion: string, origen: string, usuario: string) => {
-        console.log(`Canción actualizada: ${cancion}`)
-        origen = origen || 'sitio'
-        this.CargarCancion(new OrigenCancion(origen, cancion, usuario))
-      },
-    )
+    this.cliente.setCancionActualizadaHandler(() => {
+      const origen = new OrigenCancion('fogon', '', '')
+      console.log('Canción actualizada desde el servidor')
+      CancionManager.getInstance()
+        .Get(origen)
+        .then((cancion) => {
+          const appStore = useAppStore()
+          appStore.cancion = cancion
+          appStore.origenCancion = origen
+        })
+    })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
       const appStore = useAppStore()
@@ -82,17 +88,9 @@ export class ReproductorConectado extends Reproductor {
     this.sincronizar()
   }
 
-  override async SetCancion(cancion: OrigenCancion) {
-    const appStore = useAppStore()
-    console.log('ESTADO', appStore.estadoSesion)
-    if (appStore.estadoSesion === 'conectado') {
-      console.log(`Actualizando canción en el servidor: ${cancion.fileName}`)
-      this.cliente.actualizarCancion(
-        cancion.fileName,
-        cancion.origenUrl,
-        cancion.usuario,
-      )
-    }
+  override async SetCancion(origen: OrigenCancion, cancion: Cancion) {
+    origen.origenUrl = 'fogon'
+    CancionManager.getInstance().Save(origen, cancion)
   }
 
   override async iniciarReproduccion() {

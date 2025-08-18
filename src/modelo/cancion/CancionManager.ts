@@ -7,6 +7,7 @@ import { UltimasCanciones } from './ultimascanciones'
 import { CancionUrlManager } from './CancionUrlManager'
 import { CancionIndexedDBManager } from './CancionIndexedDBManager'
 import { CancionSubidasManager } from './CancionSubidasUrlManager'
+import { CancionFogonManager } from './CancionFogonManager'
 
 export class CancionManager {
   private static instance: CancionManager
@@ -78,6 +79,12 @@ export class CancionManager {
     if (origencancion.origenUrl === 'subida') {
       return CancionSubidasManager.GetCancion(origencancion)
     }
+
+    if (origencancion.origenUrl === 'fogon') {
+      return CancionFogonManager.GetCancion(origencancion, 
+        this.cliente,
+        this.token)
+    }
     if (origencancion.origenUrl === 'local') {
       if (!this.db) {
         console.error('No se ha establecido la conexión a IndexedDB')
@@ -107,6 +114,8 @@ export class CancionManager {
   public async Save(origen: OrigenCancion, cancion: Cancion): Promise<void> {
     if (origen.origenUrl === 'server') {
       CancionServerManager.SaveCancion(cancion, this.cliente, this.token)
+    } else if (origen.origenUrl === 'fogon') {
+      CancionFogonManager.SaveCancion(cancion, this.cliente, this.token)
     } else if (origen.origenUrl === 'subida') {
       CancionSubidasManager.SaveCancion(cancion)
     } else if (origen.origenUrl === 'local') {
@@ -116,10 +125,11 @@ export class CancionManager {
       }
       CancionIndexedDBManager.SaveCancion(this.db, cancion)
     }
-    console.log('Guardando canción desde URL:', origen.origenUrl)
-    const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
-    const ultimas = new UltimasCanciones()
-    console.log('Guardando en ultimas', item)
-    ultimas.agregar(item)
+    if (origen.origenUrl !== 'fogon') {
+      const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
+      const ultimas = new UltimasCanciones()
+      console.log('Guardando en ultimas', item)
+      ultimas.agregar(item)
+    }
   }
 }

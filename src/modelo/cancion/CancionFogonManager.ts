@@ -3,21 +3,18 @@ import type { Cancion } from './cancion'
 import { HelperJSON } from './HelperJSON'
 import type { OrigenCancion } from './origencancion'
 
-export class CancionServerManager {
+export class CancionFogonManager {
   public static async GetCancion(
     origencancion: OrigenCancion,
     cliente: ClienteSocket | null = null,
     token: string = '',
   ): Promise<Cancion> {
-    const response = await fetch(
-      cliente?.UrlServer + 'cancion?nombre=' + origencancion.fileName,
-      {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
+    const response = await fetch(cliente?.UrlServer + 'cancionsesion', {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`,
       },
-    )
+    })
     const dataRes = await response.json()
     const cancion = HelperJSON.JSONToCancion(JSON.stringify(dataRes.datosJSON))
     cancion.archivo = origencancion.fileName
@@ -34,7 +31,7 @@ export class CancionServerManager {
       datosJSON: cancion,
     }
     return new Promise<void>(async (resolve, reject) => {
-      const response = await fetch(cliente?.UrlServer + 'cancion', {
+      const response = await fetch(cliente?.UrlServer + 'cancionsesion', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

@@ -69,8 +69,11 @@ export default class Aplicacion {
     this.reproductor = this.reproductorDesconectado
   }
 
-  async SetCancion(cancion: OrigenCancion) {
-    this.reproductor.SetCancion(cancion)
+  async SetCancion(origen: OrigenCancion) {
+    CancionManager.getInstance().Get(origen)
+      .then((cancion) => {
+        this.reproductor.SetCancion(origen, cancion)
+      })
   }
   updateCompas(compas: number) {
     this.reproductor.updateCompas(compas)
