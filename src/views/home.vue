@@ -16,10 +16,9 @@ const refUltimasCanciones = ref([] as ItemIndiceCancion[])
 const totalUltimas = ref(0)
 refUltimasCanciones.value = ultimasCanciones.canciones
 totalUltimas.value = ultimasCanciones.canciones.length
-function cargoCancion_upload() {
+function cargoCancion_upload(cancion: OrigenCancion) {
   console.log('Canción cargada desde subida')
-  refUltimasCanciones.value = ultimasCanciones.canciones
-  totalUltimas.value = ultimasCanciones.canciones.length
+  
 }
 const refResultadoCanciones = ref([] as ItemIndiceCancion[])
 const refTodasCanciones = ref([] as ItemIndiceCancion[])

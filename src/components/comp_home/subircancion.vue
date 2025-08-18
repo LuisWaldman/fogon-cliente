@@ -4,8 +4,11 @@ import { HelperJSON } from '../../modelo/cancion/HelperJSON'
 import { ref } from 'vue'
 import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { CancionManager } from '../../modelo/cancion/CancionManager'
+import { useAppStore } from '../../stores/appStore'
+import { useRouter } from 'vue-router'
 
 const emit = defineEmits(['cargocancion'])
+const router = useRouter()
 
 const fileInput = ref<HTMLInputElement | null>(null)
 
@@ -38,9 +41,14 @@ function manejarSeleccionArchivo(event: Event) {
         file.name.replace('.json', ''),
         '',
       )
-      CancionManager.getInstance().Save(origen, cancion)
+      CancionManager.getInstance().Save(origen, cancion).then(() => {
+        const appStore = useAppStore()
+        appStore.aplicacion.SetCancion(origen).then(() => {
+          router.push('/tocar')
+        })
+      })
 
-      emit('cargocancion', cancion)
+      
     } catch (error) {
       console.error('Error al procesar el archivo JSON:', error)
       alert(
