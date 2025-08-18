@@ -15,7 +15,6 @@ export class Cancion {
   public compasUnidad: number
   public escala?: string
   public medias: Media[] = []
-  
 
   public get duracionCompas(): number {
     if (this.compasUnidad === 0) {

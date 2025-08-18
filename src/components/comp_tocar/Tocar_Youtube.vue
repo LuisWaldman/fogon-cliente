@@ -38,7 +38,7 @@ watch(
 const mediaVista = new MediaVista()
 mediaVista.setGetTiempoDesdeInicio(() => {
   const time = playerRef.value.getCurrentTime()
-  return (time * 1000) - delay.value // Convert to milliseconds
+  return time * 1000 - delay.value // Convert to milliseconds
 })
 mediaVista.setIniciar(() => {
   playerRef.value.playVideo()
@@ -76,7 +76,6 @@ function onStateChange(event: any) {
 </script>
 
 <template>
-  
   <div v-if="urlYoutube == ''">No hay media cargada para esta canción</div>
   <YouTube
     v-if="shouldLoad"
