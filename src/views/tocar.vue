@@ -16,6 +16,7 @@ import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
+import { vi } from 'vitest'
 
 const pantalla = new Pantalla()
 onMounted(() => {
@@ -26,6 +27,7 @@ const appStore = useAppStore()
 
 class vistaTocar {
   viendo: string = 'karaoke'
+  media: boolean = false
   secuencia: boolean = true
   partes: boolean = true
   proximosAcordes: boolean = false
@@ -37,6 +39,7 @@ vista.value.secuencia =
 vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
 vista.value.proximosAcordes =
   localStorage.getItem('proximosAcordes') == 'true' ? true : false
+vista.value.media = localStorage.getItem('media') == 'true' ? true : false
 
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
@@ -46,6 +49,10 @@ function clickSecuencia() {
 function clickPartes() {
   vista.value.partes = !vista.value.partes
   localStorage.setItem('partes', vista.value.partes ? 'true' : 'false')
+}
+function clickMedia() {
+  vista.value.media = !vista.value.media
+  localStorage.setItem('media', vista.value.media ? 'true' : 'false')
 }
 
 function clickAcordes() {
@@ -148,6 +155,7 @@ function cambioestado(estado: number) {
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <TocarYoutube
+          v-if="vista.media"
           @cambioEstado="cambioestado"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
@@ -195,6 +203,12 @@ function cambioestado(estado: number) {
           </li>
           <li><hr class="dropdown-divider" /></li>
 
+          <li v-on:click="clickMedia()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.media"></i>
+              Media</a
+            >
+          </li>
           <li v-on:click="clickSecuencia()">
             <a class="dropdown-item" href="#">
               <i class="bi bi-check-circle" v-if="vista.secuencia"></i>

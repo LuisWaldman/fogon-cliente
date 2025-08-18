@@ -76,7 +76,8 @@ function onStateChange(event: any) {
 </script>
 
 <template>
-  {{ urlYoutube }}
+  
+  <div v-if="urlYoutube == ''">No hay media cargada para esta canción</div>
   <YouTube
     v-if="shouldLoad"
     :src="urlYoutube"
