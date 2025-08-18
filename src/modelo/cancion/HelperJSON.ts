@@ -24,6 +24,7 @@ export class HelperJSON {
       medias: cancion.medias.map((media) => ({
         tipo: media.tipo,
         id: media.id,
+        delay: media.delay || 0,
       })),
     })
     return cancionJSON
@@ -82,8 +83,8 @@ export class HelperJSON {
     )
     if (data.medias) {
       toRet.medias = data.medias.map(
-        (media: { tipo: string; id: string }) =>
-          new Media(media.tipo, media.id),
+        (media: { tipo: string; id: string; delay: number }) =>
+          new Media(media.tipo, media.id, media.delay || 0),
       )
     }
     toRet.archivo = data.archivo

@@ -1,12 +1,12 @@
-import { useAppStore } from '../stores/appStore'
-import { Acordes } from './cancion/acordes'
-import { Cancion } from './cancion/cancion'
-import { CancionManager } from './cancion/CancionManager'
-import { Letra } from './cancion/letra'
-import type { OrigenCancion } from './cancion/origencancion'
-import { Reloj } from './reloj'
-import { HelperSincro } from './sincro/HelperSincro'
-import { SincroCancion } from './sincro/SincroCancion'
+import { Acordes } from '../cancion/acordes'
+import { Cancion } from '../cancion/cancion'
+import { CancionManager } from '../cancion/CancionManager'
+import { Letra } from '../cancion/letra'
+import type { OrigenCancion } from '../cancion/origencancion'
+import { Reloj } from '../reloj'
+import { HelperSincro } from '../sincro/HelperSincro'
+import { SincroCancion } from '../sincro/SincroCancion'
+import { useAppStore } from '../../stores/appStore'
 
 export class Reproductor {
   reloj: Reloj = new Reloj()
@@ -60,6 +60,7 @@ export class Reproductor {
       }
     }
   }
+
   detenerReproduccion() {
     const appStore = useAppStore()
     appStore.estadoReproduccion = 'pausado'
@@ -82,7 +83,9 @@ export class Reproductor {
       golpesxcompas, // golpesxcompas
       appStore.sesSincroCancion.desdeCompas, // duracionGolpe
     )
-    console.log(`Sincronizando en el : ${momento} , ${appStore.sesSincroCancion.timeInicio}`)
+    console.log(
+      `Sincronizando en el : ${momento} , ${appStore.sesSincroCancion.timeInicio}`,
+    )
     appStore.sesSincroCancion = sincro
     const est = helper.GetEstadoSincro(sincro, momento)
     appStore.EstadoSincro = est

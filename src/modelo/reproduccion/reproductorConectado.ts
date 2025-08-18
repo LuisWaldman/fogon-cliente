@@ -1,9 +1,9 @@
-import { useAppStore } from '../stores/appStore'
-import { ClienteSocket } from './conexion/ClienteSocket'
+import { useAppStore } from '../../stores/appStore'
+import { ClienteSocket } from '../conexion/ClienteSocket'
 import { Reproductor } from './reproductor'
-import { HelperSincro } from './sincro/HelperSincro'
-import { SincroCancion } from './sincro/SincroCancion'
-import { OrigenCancion } from './cancion/origencancion'
+import { HelperSincro } from '../sincro/HelperSincro'
+import { SincroCancion } from '../sincro/SincroCancion'
+import { OrigenCancion } from '../cancion/origencancion'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket

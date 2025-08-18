@@ -28,10 +28,6 @@ const actualizarTipo = (index: number, nuevoTipo: string) => {
   refMedias.value[index].tipo = nuevoTipo
 }
 
-const actualizarId = (index: number, nuevoId: string) => {
-  refMedias.value[index].id = nuevoId
-}
-
 const guardarCambios = () => {
   props.cancion.medias = refMedias.value
   emit('cerrar')
@@ -44,25 +40,17 @@ const guardarCambios = () => {
     <!-- Lista de medias existentes -->
     <div v-for="(media, index) in refMedias" :key="index" class="media-item">
       <div class="media-controls">
-        <select
-          :value="media.tipo"
-          @change="
-            actualizarTipo(index, ($event.target as HTMLSelectElement).value)
-          "
-          class="tipo-select"
-        >
+        <select v-model="media.tipo" class="tipo-select">
           <option v-for="tipo in tiposPermitidos" :key="tipo" :value="tipo">
             {{ tipo }}
           </option>
         </select>
 
+        <input v-model="media.id" placeholder="ID del media" class="id-input" />
         <input
-          :value="media.id"
-          @input="
-            actualizarId(index, ($event.target as HTMLInputElement).value)
-          "
-          placeholder="ID del media"
-          class="id-input"
+          v-model="media.delay"
+          placeholder="Delay del media"
+          class="delay-input"
         />
 
         <button @click="eliminarMedia(index)" class="btn-eliminar">❌</button>

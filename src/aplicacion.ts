@@ -1,21 +1,24 @@
 import { useAppStore } from './stores/appStore'
-import { Reproductor } from './modelo/reproductor'
+import { Reproductor } from './modelo/reproduccion/reproductor'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
-import { ReproductorConectado } from './modelo/reproductorConectado'
+import { ReproductorConectado } from './modelo/reproduccion/reproductorConectado'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
 import { OrigenCancion } from './modelo/cancion/origencancion'
 import { CancionManager } from './modelo/cancion/CancionManager'
+import { ReproductorMedia } from './modelo/reproduccion/reproductorMedia'
+import type { MediaVista } from './modelo/reproduccion/MediaVista'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
   reproductorDesconectado: Reproductor = this.reproductor
   reproductorConectado: ReproductorConectado | null = null
+  reproductorMedia: ReproductorMedia | null = null
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
@@ -49,6 +52,18 @@ export default class Aplicacion {
       console.log('cancion', cancion)
       this.SetCancion(new OrigenCancion('sitio', cancion, ''))
     }
+  }
+
+  setMediaVista(mediaVista: MediaVista): void {
+    if (this.reproductorMedia == null) {
+      this.reproductorMedia = new ReproductorMedia()
+    }
+    this.reproductorMedia.setMediaVista(mediaVista)
+    this.reproductor = this.reproductorMedia
+  }
+
+  quitarMediaVista(): void {
+    this.reproductor = this.reproductorDesconectado
   }
 
   async SetCancion(cancion: OrigenCancion) {
