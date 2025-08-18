@@ -1,5 +1,6 @@
 import { Acordes } from './acordes'
 import { Letra } from './letra'
+import type { Media } from './media'
 
 // src/cancion.ts
 export class Cancion {
@@ -13,6 +14,7 @@ export class Cancion {
   public compasCantidad: number
   public compasUnidad: number
   public escala?: string
+  public medias: Media[] = []
 
   public get duracionCompas(): number {
     if (this.compasUnidad === 0) {

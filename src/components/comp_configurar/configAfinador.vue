@@ -6,13 +6,11 @@ import { NotaAfinar } from './notaAfinar'
 import frecuen from './frecuenciometro.vue'
 
 import circulo from './circulo.vue'
-
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
-const refViendoFrecuencia = ref(440)
 const micHelper = new MicHelper()
 const refMicEstado = ref('')
 const mediaStream = ref<MediaStream | null>(null)
@@ -28,8 +26,6 @@ const audioContext = ref<AudioContext | null>(null)
 const analyserNode = ref<AnalyserNode | null>(null)
 const sourceNode = ref<MediaStreamAudioSourceNode | null>(null)
 const buffer = new Float32Array(2048)
-const mostrandoEscala = ref([] as number[]) // Notas de la escala
-const mostrandoAcorde = ref([] as number[])
 
 const notas: string[] = [
   'A',
@@ -45,30 +41,39 @@ const notas: string[] = [
   'G',
   'G#',
 ]
-
+const clsNotas = ref<string[]>([])
+const notasSonido = ref<NotaSonido[]>([])
 const mostrarEscala = ref(false)
 const escalaMenor = ref(false)
 const refViendoEscala = ref(0)
 let modos: { [key: string]: number[] } = {}
-modos['mayor'] = [2, 2, 1, 2, 2, 2]
-modos['menor'] = [2, 1, 2, 2, 1, 2]
-/*
-function cambiarModo() {
-  escalaMenor.value = !escalaMenor.value
-  calcularEscala()
+modos['mayor'] = [2, 2, 1, 2, 2, 2, 1]
+modos['menor'] = [2, 1, 2, 2, 1, 2, 1]
+
+function CalcularNotas() {
+  notasSonido.value = HelperSonidos.GetNotas(
+    tipoAfinacion.value,
+    cantidadNotas.value,
+    notas,
+  )
+  for (var i = 0; i < notasSonido.value.length; i++) {
+    clsNotas.value[i] = ''
+  }
 }
-*/
+
 function calcularEscala() {
-  if (!mostrandoEscala.value) {
-    mostrandoEscala.value = []
+  for (var i = 0; i < notasSonido.value.length; i++) {
+    clsNotas.value[i] = ''
+  }
+  if (!mostrarEscala.value) {
     return
   }
-  mostrandoEscala.value = []
   const modo = escalaMenor.value ? 'menor' : 'mayor'
   let notaCont: number = refViendoEscala.value
-  for (let i = 0; i < modos[modo].length; i++) {
-    mostrandoEscala.value.push(notaCont % cantidadNotas.value)
-    notaCont += modos[modo][i]
+  for (let i = 0; notaCont < notasSonido.value.length; i++) {
+    console.log(`Calculando nota ${i} en modo ${modo} con notaCont ${notaCont}`)
+    clsNotas.value[notaCont] = 'clsEscala'
+    notaCont += modos[modo][i % modos[modo].length]
   }
 }
 
@@ -188,9 +193,6 @@ function Solicitar() {
       refMicEstado.value = 'Error'
     })
 }
-function clickVerFrecuencia(frecuencia: number) {
-  refViendoFrecuencia.value = frecuencia
-}
 
 function styleDivAfinador() {
   return {
@@ -198,17 +200,51 @@ function styleDivAfinador() {
     width: ancho + 'px',
   }
 }
+
+// Añadir log para montaje y desmontaje del componente
+import { onMounted, onUnmounted } from 'vue'
+import type { NotaSonido } from '../../modelo/sonido/notaSonido'
+import { HelperSonidos } from '../../modelo/sonido/helperSonido'
+
+onMounted(() => {
+  Solicitar()
+  CalcularNotas()
+})
+
+onUnmounted(() => {
+  DejarEscuchar()
+})
+
+function formatFrequency(freq, totalDigits = 5, decimalPlaces = 2) {
+  if (freq < 0) {
+    freq = 0
+  }
+  const fixed = freq.toFixed(decimalPlaces) // Ej: "12.43"
+  const [intPart, decPart] = fixed.split('.')
+  const paddedInt = intPart.padStart(totalDigits, '0') // Ej: "00012"
+  return `${paddedInt},${decPart}` // Ej: "00012,43"
+}
 </script>
 
 <template>
-  <div :style="styleDivAfinador()" class="divAfinador">
+  <div :style="styleDivAfinador()" class="divAfinador" id="divAfinador">
     <div style="display: flex">
-      <div width="200px" max-width="200px">
-        FRECUENCIA <span> {{ frequency.toFixed(2) }} </span> Hz
+      <div>
+        <div>FRECUENCIA</div>
+        <div
+          style="
+            font-size: xx-large;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          "
+        >
+          {{ formatFrequency(frequency) }} Hz
+        </div>
       </div>
+
       <frecuen
-        :tipoAfinacion="tipoAfinacion"
-        :cantidadNotas="cantidadNotas"
+        :notasSonido="notasSonido"
         :frecuencia="frequency"
         :ancho="ancho"
       ></frecuen>
@@ -222,17 +258,18 @@ function styleDivAfinador() {
             @change="calcularEscala"
           />
           <span>Mostrar Escala</span>
-          <select v-model="refViendoEscala" v-if="mostrarEscala">
-            <option
-              v-for="(nota, index) in notas"
-              :key="index"
-              :value="index"
-              @change="calcularEscala"
-            >
+          <select
+            v-model="refViendoEscala"
+            v-if="mostrarEscala"
+            @change="calcularEscala"
+          >
+            <option v-for="(nota, index) in notas" :key="index" :value="index">
               {{ nota }}
             </option>
           </select>
         </div>
+
+        <!--
         <div>Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
         <div>
           Afinacion
@@ -290,15 +327,12 @@ function styleDivAfinador() {
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
       <circulo
-        :tipoAfinacion="tipoAfinacion"
-        :cantidadNotas="cantidadNotas"
+        :notasSonido="notasSonido"
+        :clasenotasSonido="clsNotas"
         :frecuencia="frequency"
-        :mostrarEscala="mostrandoEscala"
-        :mostrarAcorde="mostrandoAcorde"
-        :ancho="ancho"
       ></circulo>
     </div>
   </div>
@@ -320,6 +354,7 @@ function styleDivAfinador() {
   border: 1px solid black;
 }
 .divAfinador {
+  width: 100%;
 }
 
 .quinta {

@@ -120,8 +120,8 @@ function guardarConfiguracion() {
         <span>Factor Scroll</span>
         <input
           type="range"
-          min="1"
-          max="10"
+          min="0.5"
+          max="3"
           step="0.1"
           v-model.number="vistasTocar[vistaSeleccionada].factorScroll"
         />

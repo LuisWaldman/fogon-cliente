@@ -1,42 +1,23 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
+import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 
 const emit = defineEmits(['verfrecuencia'])
-const FrecuenciaNotas = ref<number[]>([]) // Cantidad de notas en la afinación
-const NombreNotas = ref<string[]>([])
 const mostrandoNota = ref<number>(0)
 
-const notas: string[] = [
-  'A',
-  'A#',
-  'B',
-  'C',
-  'C#',
-  'D',
-  'D#',
-  'E',
-  'F',
-  'F#',
-  'G',
-  'G#',
-]
-
 const props = defineProps<{
+  notasSonido: NotaSonido[]
   frecuencia: number
-  tipoAfinacion: number
-  cantidadNotas: number
   ancho: number
 }>()
 // Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
-watch([() => props.tipoAfinacion, () => props.cantidadNotas], () => {
-  calcularNotas()
-})
+
 watch(
   () => props.frecuencia,
   (newFrecuencia) => {
     if (newFrecuencia > 0) {
       const index = CorrespondeNota(newFrecuencia)
-      mostrandoNota.value = FrecuenciaNotas.value[index]
+      mostrandoNota.value = index
 
       const contenedor = document.getElementById('contenedorFrecuenciometro')
       if (contenedor) {
@@ -48,59 +29,25 @@ watch(
   },
 )
 
-function clickVerFrecuencia(frecuencia: number) {
+function clickVerFrecuencia(frecuencia: NotaSonido) {
   emit('verfrecuencia', frecuencia)
 }
 
-function calcularNotas() {
-  FrecuenciaNotas.value = []
-  NombreNotas.value = []
-  const desdeNota = props.tipoAfinacion / 8
-  // cantidadNotas es la cantidad de notas en la octava
-  const desdeEscala = 1
-  for (let i = 0; i < props.cantidadNotas * 8; i++) {
-    const nota = desdeNota * Math.pow(2, i / props.cantidadNotas)
-    FrecuenciaNotas.value.push(nota)
-    NombreNotas.value.push(
-      notas[i % notas.length] + Math.floor(i / notas.length + desdeEscala),
-    )
-  }
-}
-calcularNotas()
-
-mostrandoNota.value = FrecuenciaNotas.value[CorrespondeNota(props.frecuencia)]
-function StyleFrecuenciaLinea(frecuencia: number) {
+mostrandoNota.value = CorrespondeNota(props.frecuencia)
+function StyleNotaLinea(frecuencia: NotaSonido) {
   let fontSize = 18
-  let backgroundColor = ''
-  let border = '1px solid'
-  let color = 'white'
-
-  // Calcular en qué octava está la frecuencia relativa a tipoAfinacion
-  const octavasDesdeBase = Math.log2(frecuencia / props.tipoAfinacion)
-  const octavaCompleta = Math.floor(octavasDesdeBase)
-  const baseOctava = props.tipoAfinacion * Math.pow(2, octavaCompleta)
-  const portentajeEnOctava = (frecuencia - baseOctava) / baseOctava
-
-  // Determine styling based on the remainder
-  if (
-    Math.abs(portentajeEnOctava - 0) < 0.01 ||
-    Math.abs(portentajeEnOctava - 1) < 0.01
-  ) {
-    color = 'red'
-    border = '1px solid;'
-  } else if (Math.abs(portentajeEnOctava - 0.5) < 0.02) {
-    border = '1px solid;'
-  } else if (Math.abs(portentajeEnOctava - 1 / 3) < 0.02) {
-    border = '1px solid;'
-  } else if (Math.abs(portentajeEnOctava - 2 / 3) < 0.02) {
-    border = '1px solid;'
+  let backgroundColor = 'white'
+  let color = 'black'
+  if (frecuencia.nota.includes('#')) {
+    backgroundColor = 'black'
+    color = 'white'
   }
+
   const ancho = 50
   return {
     'font-size': fontSize + 'px',
     'background-color': backgroundColor,
     color: color,
-    border: border,
     width: ancho + 'px',
     'min-width': ancho + 'px',
     'max-width': ancho + 'px',
@@ -112,14 +59,15 @@ function StyleFrecuenciaLinea(frecuencia: number) {
 }
 
 function CorrespondeNota(frecuencia: number): number {
-  for (let i = 0; i < FrecuenciaNotas.value.length; i++) {
-    if (frecuencia < FrecuenciaNotas.value[i]) {
+  const FrecuenciaNotas = props.notasSonido.map((nota) => nota.frecuencia)
+  for (let i = 0; i < FrecuenciaNotas.length; i++) {
+    if (frecuencia < FrecuenciaNotas[i]) {
       if (i == 0) {
         return i
       }
       if (
-        Math.abs(frecuencia - FrecuenciaNotas.value[i - 1]) <
-        Math.abs(frecuencia - FrecuenciaNotas.value[i])
+        Math.abs(frecuencia - FrecuenciaNotas[i - 1]) <
+        Math.abs(frecuencia - FrecuenciaNotas[i])
       ) {
         return i - 1
       }
@@ -130,20 +78,19 @@ function CorrespondeNota(frecuencia: number): number {
 }
 </script>
 <template>
-  <div
-    :style="{ width: props.ancho + 'px' }"
-    class="clsFrecuencia"
-    id="contenedorFrecuenciometro"
-  >
+  <div class="clsFrecuencia" id="contenedorFrecuenciometro">
     <div
-      v-for="(nota, index) in FrecuenciaNotas"
+      v-for="(nota, index) in notasSonido"
       @click="clickVerFrecuencia(nota)"
       :key="index"
-      :class="[mostrandoNota === nota ? 'notaMostrada' : '']"
-      :style="StyleFrecuenciaLinea(nota)"
+      :style="StyleNotaLinea(nota)"
+      :class="{
+        notaMostrada: mostrandoNota === index,
+        clsNota: true,
+      }"
     >
-      <div>{{ nota.toFixed(0) }}</div>
-      <div>{{ NombreNotas[index] }}</div>
+      <div>{{ nota.frecuencia.toFixed(0) }}</div>
+      <div>{{ nota.nota }}</div>
     </div>
   </div>
 </template>
@@ -153,11 +100,37 @@ function CorrespondeNota(frecuencia: number): number {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-gutter: stable;
+  align-items: flex-start;
+  padding-bottom: 10px; /* Add padding at bottom for the scrollbar */
+  margin-bottom: 5px;
+  /* Force scrollbar to bottom */
+  scrollbar-position: bottom;
+  overflow: -moz-scrollbars-horizontal;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.clsFrecuencia::-webkit-scrollbar {
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+}
+
+.clsFrecuencia::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.clsFrecuencia::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
 }
 .clsNota {
 }
 .notaMostrada {
-  background-color: rgba(255, 255, 0, 0.5);
-  border: 1px solid black;
+  border: 5px solid rgb(190, 46, 46);
 }
 </style>

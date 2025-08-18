@@ -124,8 +124,8 @@ watch(configPantalla.value, () => {
       <span>Factor Scroll</span>
       <input
         type="range"
-        min="1"
-        max="10"
+        min="0.2"
+        max="3"
         step="0.1"
         v-model.number="configPantalla.factorScroll"
       />

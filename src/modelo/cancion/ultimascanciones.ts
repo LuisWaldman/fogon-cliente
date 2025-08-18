@@ -1,4 +1,5 @@
 import { ItemIndiceCancion } from './ItemIndiceCancion'
+import { OrigenCancion } from './origencancion'
 
 export class UltimasCanciones {
   private static readonly STORAGE_KEY = 'ultimas-canciones'
@@ -40,7 +41,24 @@ export class UltimasCanciones {
       if (datosStorage) {
         const datos = JSON.parse(datosStorage)
         if (Array.isArray(datos)) {
-          this.canciones = datos
+          this.canciones = datos.map((item) => {
+            const toRet = new ItemIndiceCancion(
+              new OrigenCancion(
+                item.origen.origenUrl,
+                item.origen.fileName,
+                item.origen.usuario,
+              ),
+              item.cancion,
+              item.banda,
+            )
+            toRet.escala = item.escala
+            toRet.totalCompases = item.totalCompases
+            toRet.compasUnidad = item.compasUnidad
+            toRet.compasCantidad = item.compasCantidad
+            toRet.bpm = item.bpm
+            toRet.calidad = item.calidad
+            return toRet
+          })
         }
       }
     } catch (error) {

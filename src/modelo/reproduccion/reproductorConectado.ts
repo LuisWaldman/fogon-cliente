@@ -1,13 +1,9 @@
-import { useAppStore } from '../stores/appStore'
-import { ClienteSocket } from './conexion/ClienteSocket'
+import { useAppStore } from '../../stores/appStore'
+import { ClienteSocket } from '../conexion/ClienteSocket'
 import { Reproductor } from './reproductor'
-import { HelperSincro } from './sincro/HelperSincro'
-import { SincroCancion } from './sincro/SincroCancion'
-import { OrigenCancion } from './cancion/origencancion'
-import { HelperGetCancionServer } from './cancion/HelperGetCancion'
-import { Cancion } from './cancion/cancion'
-import { Acordes } from './cancion/acordes'
-import { Letra } from './cancion/letra'
+import { HelperSincro } from '../sincro/HelperSincro'
+import { SincroCancion } from '../sincro/SincroCancion'
+import { OrigenCancion } from '../cancion/origencancion'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
@@ -97,28 +93,6 @@ export class ReproductorConectado extends Reproductor {
         cancion.usuario,
       )
     }
-  }
-
-  protected override async CargarCancion(cancion: OrigenCancion) {
-    if (cancion.origenUrl !== 'server') {
-      return super.CargarCancion(cancion)
-    }
-    return HelperGetCancionServer.Get(cancion, this.cliente, this.token)
-      .then((cancion) => {
-        cancion.normalizar()
-        const appStore = useAppStore()
-        appStore.cancion = cancion
-      })
-      .catch((error) => {
-        console.error('Error al cargar la canción:', error)
-        const appStore = useAppStore()
-        appStore.cancion = new Cancion(
-          'Error en servidor',
-          'sin banda',
-          new Acordes([], []),
-          new Letra([]),
-        )
-      })
   }
 
   override async iniciarReproduccion() {

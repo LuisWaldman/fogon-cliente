@@ -115,16 +115,6 @@ function arreglartexto(texto: string): string {
           class="dropdown-menu dropdown-menu-end"
           aria-labelledby="dropdownMenuButton"
         >
-          <li>
-            <router-link
-              class="dropdown-item"
-              to="/tocar"
-              v-if="$route.path != '/tocar'"
-            >
-              <i>🎸</i>
-              Tocar
-            </router-link>
-          </li>
           <li
             class="dropdown-submenu"
             v-if="
@@ -139,7 +129,7 @@ function arreglartexto(texto: string): string {
               aria-expanded="false"
             >
               <i class="bi bi-people"></i>
-              Fogon
+              🔥 Fogon
             </a>
             <ul class="">
               <li v-if="appStore.estadoSesion != 'conectado'">

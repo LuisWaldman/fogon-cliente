@@ -2,7 +2,9 @@
 import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
+import editarmedias from './editarmedias.vue'
 import editartiempo from './editartiempo.vue'
+import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 import { Tiempo } from '../../modelo/tiempo'
 const tiempo = new Tiempo()
 import { ref } from 'vue'
@@ -31,29 +33,37 @@ function clickCerrar(modificado: boolean) {
 
 <template>
   <div class="navbarFogon">
-    <label v-if="origen.origenUrl = 'sitio'">🌐</label>
+    <emoticonOrigen :origen="origen.origenUrl" />
+    <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
     <label>{{ cancion.cancion }} - {{ cancion.banda }}</label
     ><label v-if="appStore.cancionModificada">*</label>
-    <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
-    Escala: - {{ cancion.escala }}
+
     <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
+    Escala: - {{ cancion.escala }}
+
+    <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
     <label
-      >Tiempo: {{ cancion.bpm }} BPM: {{ cancion.compasCantidad }} /
+      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
+    >
+    <label
+      >BPM: {{ cancion.bpm }} Compas: {{ cancion.compasCantidad }}/
       {{ cancion.compasUnidad }}</label
     >&nbsp;
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
-
-    &nbsp;
-    <label
-      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
-    >
-    <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
-
+    <label>Medias: {{ cancion.medias.length }}</label
+    ><label @click="clickCambiar('medias')">🔄</label>
     <div>
+      <editarmedias
+        v-if="viendo == 'medias'"
+        :cancion="cancion"
+        :origen="origen"
+        @cerrar="clickCerrar"
+      ></editarmedias>
       <editararchivo
         v-if="viendo == 'archivo'"
+        @cerrar="clickCerrar"
         :cancion="cancion"
         :origen="origen"
       ></editararchivo>

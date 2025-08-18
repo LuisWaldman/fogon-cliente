@@ -1,26 +1,31 @@
 import { useAppStore } from './stores/appStore'
-import { Reproductor } from './modelo/reproductor'
+import { Reproductor } from './modelo/reproduccion/reproductor'
 import { Configuracion } from './modelo/configuracion'
 import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
-import { ReproductorConectado } from './modelo/reproductorConectado'
+import { ReproductorConectado } from './modelo/reproduccion/reproductorConectado'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
 import { OrigenCancion } from './modelo/cancion/origencancion'
+import { CancionManager } from './modelo/cancion/CancionManager'
+import { ReproductorMedia } from './modelo/reproduccion/reproductorMedia'
+import type { MediaVista } from './modelo/reproduccion/MediaVista'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
   reproductorDesconectado: Reproductor = this.reproductor
   reproductorConectado: ReproductorConectado | null = null
+  reproductorMedia: ReproductorMedia | null = null
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
 
   constructor() {
     // Inicialización de la aplicación
+    CancionManager.getInstance().SetDB()
     console.log('Aplicacion inicializada')
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
@@ -47,6 +52,18 @@ export default class Aplicacion {
       console.log('cancion', cancion)
       this.SetCancion(new OrigenCancion('sitio', cancion, ''))
     }
+  }
+
+  setMediaVista(mediaVista: MediaVista): void {
+    if (this.reproductorMedia == null) {
+      this.reproductorMedia = new ReproductorMedia()
+    }
+    this.reproductorMedia.setMediaVista(mediaVista)
+    this.reproductor = this.reproductorMedia
+  }
+
+  quitarMediaVista(): void {
+    this.reproductor = this.reproductorDesconectado
   }
 
   async SetCancion(cancion: OrigenCancion) {
@@ -96,6 +113,10 @@ export default class Aplicacion {
     this.cliente.setConectadoHandler((token: string) => {
       console.log(`Conectado: ${token}`)
       this.token = token
+
+      if (this.cliente) {
+        CancionManager.getInstance().setCliente(this.cliente, token)
+      }
       if (this.configuracion && this.configuracion.perfil) {
         this.enviarPerfil(this.configuracion.perfil)
       }
@@ -256,7 +277,10 @@ export default class Aplicacion {
       },
     })
   }
-
+  CambioEstadoMedio(estado: number) {
+    if (estado == 1) this.reproductor.iniciarReproduccion()
+    else if (estado == 2) this.reproductor.detenerReproduccion()
+  }
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
     console.log('HTTPPost', urlPost, this.token)
     return fetch(this.url + urlPost, {

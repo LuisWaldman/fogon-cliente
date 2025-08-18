@@ -1,5 +1,5 @@
 import type { Cancion } from './cancion'
-import type { OrigenCancion } from './origencancion'
+import { OrigenCancion } from './origencancion'
 
 export class ItemIndiceCancion {
   normalizartexto(texto: string): string {
@@ -64,6 +64,11 @@ export class ItemIndiceCancion {
     ret.compasCantidad = cancion.compasCantidad ? cancion.compasCantidad : 4
     ret.bpm = cancion.bpm ? cancion.bpm : 60
     ret.calidad = cancion.calidad ? cancion.calidad : 0
+    ret.origen = new OrigenCancion(
+      origen.origenUrl,
+      origen.fileName,
+      origen.usuario,
+    )
     return ret
   }
 }

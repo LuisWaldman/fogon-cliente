@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { Cancion } from '../../modelo/cancion/cancion'
-import type { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { Cancion } from '../../modelo/cancion/cancion'
+import { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { useAppStore } from '../../stores/appStore'
+import { HelperJSON } from '../../modelo/cancion/HelperJSON'
+import { CancionManager } from '../../modelo/cancion/CancionManager'
 
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
@@ -16,13 +19,44 @@ const origenOriginal = ref('')
 const origenDestino = ref('')
 nombrecancion.value = props.cancion.cancion
 nombrebanda.value = props.cancion.banda
-nombrearchivo.value = props.cancion.archivo
+nombrearchivo.value = props.cancion.archivo || 'archivo_noload'
 origenOriginal.value = props.origen.origenUrl
 origenDestino.value = props.origen.origenUrl
-
+const appStore = useAppStore()
 function clickCancelarCambiarDatos() {
   emit('cerrar', false)
 }
+
+function DescargarJSON() {
+  console.log('Descargando JSON de la canción actual...')
+  const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
+  console.log('Descargando JSON:', cancionJSON)
+
+  const blob = new Blob([cancionJSON], { type: 'application/json' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  const nombreArchivo =
+    `${appStore.editandocancion.archivo}.json`.toLocaleLowerCase()
+  a.download = nombreArchivo
+  a.click()
+  URL.revokeObjectURL(url)
+}
+function guardarCambios() {
+  CancionManager.getInstance()
+    .Save(
+      new OrigenCancion(origenDestino.value, nombrearchivo.value, ''),
+      props.cancion,
+    )
+    .then(() => {
+      console.log('Cambios guardados exitosamente')
+      emit('cerrar', true)
+    })
+    .catch((error) => {
+      console.error('Error al guardar los cambios:', error)
+    })
+}
+
 function clickGuardar() {
   props.cancion.cancion = nombrecancion.value
   props.cancion.banda = nombrebanda.value
@@ -35,11 +69,17 @@ function clickGuardar() {
     <span class="lblCabecera" @click="clickCancelarCambiarDatos"
       >[cancelar]</span
     >
-    <span class="lblCabecera" @click="clickGuardar">[guardar]</span>
+    <span
+      v-if="['server', 'local'].includes(origenDestino)"
+      @click="guardarCambios"
+    >
+      [guardar]
+    </span>
+
     <span class="lblCabecera" @click="clickGuardar">[nuevo]</span>
 
     <span class="lblCabecera" @click="clickGuardar">[subir]</span>
-    <span class="lblCabecera" @click="clickGuardar">[descargar]</span>
+    <span class="lblCabecera" @click="DescargarJSON">[descargar]</span>
   </div>
   <div style="width: 100%">
     <div>
@@ -71,10 +111,12 @@ function clickGuardar() {
     />
     Origen:
     <select v-model="origenDestino">
-      <option value="local">LocalStorage</option>
-      <option value="remoto">Servidor</option>
+      <option value="sitio">🌐Sitio</option>
+      <option value="local">💾LocalStorage</option>
+      <option value="server" v-if="appStore.estadoLogin === 'logueado'">
+        🔌Servidor
+      </option>
     </select>
-    [cancelar][guardar]
   </div>
   <div></div>
 </template>
