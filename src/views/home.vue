@@ -5,15 +5,22 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 
 import cancionComp from '../components/comp_home/cancion.vue'
+import subircancion from '../components/comp_home/subircancion.vue'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionUrlManager } from '../modelo/cancion/CancionUrlManager'
 
 let ultimasCanciones = new UltimasCanciones()
-const refUltimasCanciones = ref(
-  ultimasCanciones.canciones as ItemIndiceCancion[],
-)
+const refUltimasCanciones = ref([] as ItemIndiceCancion[])
+const totalUltimas = ref(0)
+refUltimasCanciones.value = ultimasCanciones.canciones
+totalUltimas.value = ultimasCanciones.canciones.length
+function cargoCancion_upload() {
+  console.log('Canción cargada desde subida')
+  refUltimasCanciones.value = ultimasCanciones.canciones
+  totalUltimas.value = ultimasCanciones.canciones.length
+}
 const refResultadoCanciones = ref([] as ItemIndiceCancion[])
 const refTodasCanciones = ref([] as ItemIndiceCancion[])
 const refEstadoBusqueda = ref('')
@@ -82,8 +89,18 @@ function clickTocar(cancion: OrigenCancion) {
 
     <div>
       <p class="primer-parrafo">Busca Canciones</p>
-      <input type="text" v-model="busqueda" placeholder="Buscar..." />
-      <button @click="buscarCanciones()">Buscar</button> {{ refEstadoBusqueda }}
+
+      <div style="display: flex">
+        <div style="width: 70%">
+          <input type="text" v-model="busqueda" placeholder="Buscar..." />
+          <button @click="buscarCanciones()">Buscar</button>
+          {{ refEstadoBusqueda }}
+        </div>
+        <div>
+          <subircancion @cargocancion="cargoCancion_upload" />
+        </div>
+      </div>
+
       <div>
         <div style="display: flex; flex-wrap: wrap">
           <cancionComp
@@ -97,7 +114,7 @@ function clickTocar(cancion: OrigenCancion) {
     </div>
 
     <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0">
-      <p class="primer-parrafo">Ultimas Canciones</p>
+      <p class="primer-parrafo">Ultimas {{ totalUltimas }} Canciones</p>
       <div style="display: flex; flex-wrap: wrap">
         <cancionComp
           v-for="(cancion, index) in refUltimasCanciones"

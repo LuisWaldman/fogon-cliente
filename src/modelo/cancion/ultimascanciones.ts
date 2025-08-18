@@ -3,13 +3,19 @@ import { OrigenCancion } from './origencancion'
 
 export class UltimasCanciones {
   private static readonly STORAGE_KEY = 'ultimas-canciones'
-  private static readonly MAX_CANCIONES = 20
+  private static readonly MAX_CANCIONES = 30
 
   public canciones: ItemIndiceCancion[]
 
   constructor() {
     this.canciones = []
     this.cargarDeStorage()
+  }
+  public filtrarSubidas() {
+    this.canciones = this.canciones.filter(
+      (cancion) => cancion.origen.origenUrl !== 'subida',
+    )
+    this.guardarEnStorage()
   }
 
   public agregar(cancion: ItemIndiceCancion): void {

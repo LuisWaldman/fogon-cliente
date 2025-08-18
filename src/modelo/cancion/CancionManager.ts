@@ -6,6 +6,7 @@ import { CancionServerManager } from './CancionServerManager'
 import { UltimasCanciones } from './ultimascanciones'
 import { CancionUrlManager } from './CancionUrlManager'
 import { CancionIndexedDBManager } from './CancionIndexedDBManager'
+import { CancionSubidasManager } from './CancionSubidasUrlManager'
 
 export class CancionManager {
   private static instance: CancionManager
@@ -74,6 +75,9 @@ export class CancionManager {
         this.token,
       )
     }
+    if (origencancion.origenUrl === 'subida') {
+      return CancionSubidasManager.GetCancion(origencancion)
+    }
     if (origencancion.origenUrl === 'local') {
       if (!this.db) {
         console.error('No se ha establecido la conexión a IndexedDB')
@@ -103,6 +107,8 @@ export class CancionManager {
   public async Save(origen: OrigenCancion, cancion: Cancion): Promise<void> {
     if (origen.origenUrl === 'server') {
       CancionServerManager.SaveCancion(cancion, this.cliente, this.token)
+    } else if (origen.origenUrl === 'subida') {
+      CancionSubidasManager.SaveCancion(cancion)
     } else if (origen.origenUrl === 'local') {
       if (!this.db) {
         console.error('No se ha establecido la conexión a IndexedDB')

@@ -74,7 +74,7 @@ function arreglartexto(texto: string): string {
       <iconofogon />
 
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        Bienvendido a Fogon
+        Bienvendido al Fogon
       </span>
 
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">

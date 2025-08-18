@@ -13,6 +13,7 @@ import { OrigenCancion } from './modelo/cancion/origencancion'
 import { CancionManager } from './modelo/cancion/CancionManager'
 import { ReproductorMedia } from './modelo/reproduccion/reproductorMedia'
 import type { MediaVista } from './modelo/reproduccion/MediaVista'
+import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -26,6 +27,8 @@ export default class Aplicacion {
   constructor() {
     // Inicialización de la aplicación
     CancionManager.getInstance().SetDB()
+    const ultimas = new UltimasCanciones()
+    ultimas.filtrarSubidas()
     console.log('Aplicacion inicializada')
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
