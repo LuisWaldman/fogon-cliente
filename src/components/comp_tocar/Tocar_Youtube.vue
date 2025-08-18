@@ -37,14 +37,14 @@ watch(
 )
 const mediaVista = new MediaVista()
 mediaVista.setGetTiempoDesdeInicio(() => {
-  const time = playerRef.value.getCurrentTime()
-  return time * 1000 - delay.value // Convert to milliseconds
+  const time = playerRef.value?.getCurrentTime()
+  return time ? time * 1000 - delay.value : 0 // Convert to milliseconds
 })
 mediaVista.setIniciar(() => {
-  playerRef.value.playVideo()
+  playerRef.value?.playVideo()
 })
 mediaVista.setPausar(() => {
-  playerRef.value.pauseVideo()
+  playerRef.value?.pauseVideo()
 })
 
 onUnmounted(() => {
