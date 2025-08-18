@@ -23,20 +23,6 @@ watch(
     }
   },
 )
-const notas: string[] = [
-  'A',
-  'A#',
-  'B',
-  'C',
-  'C#',
-  'D',
-  'D#',
-  'E',
-  'F',
-  'F#',
-  'G',
-  'G#',
-]
 
 function StyleOctava(i: number) {
   const radio =

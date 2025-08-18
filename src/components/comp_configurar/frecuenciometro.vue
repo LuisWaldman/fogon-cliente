@@ -5,21 +5,6 @@ import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 const emit = defineEmits(['verfrecuencia'])
 const mostrandoNota = ref<number>(0)
 
-const notas: string[] = [
-  'A',
-  'A#',
-  'B',
-  'C',
-  'C#',
-  'D',
-  'D#',
-  'E',
-  'F',
-  'F#',
-  'G',
-  'G#',
-]
-
 const props = defineProps<{
   notasSonido: NotaSonido[]
   frecuencia: number

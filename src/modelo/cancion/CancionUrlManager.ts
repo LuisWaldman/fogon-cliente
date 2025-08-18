@@ -1,8 +1,6 @@
-import { Acordes, Parte } from './acordes'
 import { Cancion } from './cancion'
 import { HelperJSON } from './HelperJSON'
 import { ItemIndiceCancion } from './ItemIndiceCancion'
-import { Letra } from './letra'
 import { OrigenCancion } from './origencancion'
 
 export class CancionUrlManager {

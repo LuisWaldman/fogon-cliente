@@ -65,11 +65,11 @@ onMounted(() => {
   }
 })
 
-const playerRef = ref<any>(null)
+const playerRef = ref<InstanceType<typeof YouTube> | null>(null)
 function onReady() {
   //playerRef.value?.playVideo();
 }
-function onStateChange(event: any) {
+function onStateChange(event: { data: number }) {
   console.log('Estado del reproductor:', event.data)
   emit('cambioEstado', event.data)
 }

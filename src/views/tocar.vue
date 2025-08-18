@@ -16,7 +16,6 @@ import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
-import { vi } from 'vitest'
 
 const pantalla = new Pantalla()
 onMounted(() => {

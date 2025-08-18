@@ -3,9 +3,6 @@ import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Media } from '../../modelo/cancion/media'
 import { OrigenCancion } from '../../modelo/cancion/origencancion'
-import { useAppStore } from '../../stores/appStore'
-import { HelperJSON } from '../../modelo/cancion/HelperJSON'
-import { CancionManager } from '../../modelo/cancion/CancionManager'
 
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
@@ -17,15 +14,11 @@ const refMedias = ref<Media[]>(props.cancion.medias)
 const tiposPermitidos = ['Youtube', 'Spotify', 'Midi']
 
 const agregarMedia = () => {
-  refMedias.value.push(new Media('Youtube', ''))
+  refMedias.value.push(new Media('Youtube', '', 0))
 }
 
 const eliminarMedia = (index: number) => {
   refMedias.value.splice(index, 1)
-}
-
-const actualizarTipo = (index: number, nuevoTipo: string) => {
-  refMedias.value[index].tipo = nuevoTipo
 }
 
 const guardarCambios = () => {

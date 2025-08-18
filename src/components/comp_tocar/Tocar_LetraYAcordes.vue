@@ -4,7 +4,6 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
 import { Display } from '../../modelo/display/display'
 import { HelperDisplay } from '../../modelo/display/helperDisplay'
-import { Configuracion } from '../../modelo/configuracion'
 
 const props = defineProps<{
   compas: number
@@ -12,11 +11,7 @@ const props = defineProps<{
 }>()
 const pantalla = new Pantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
-const mostrandoParte = ref(-1)
-const mostrandoCompasParte = ref(-1)
-const currentCompas = ref(0)
 const renglones = ref([] as string[])
-const CompasAcorde = ref([] as number[][])
 const displayRef = ref(new Display(80))
 
 watch(

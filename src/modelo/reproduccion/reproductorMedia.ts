@@ -3,7 +3,6 @@ import { Reproductor } from './reproductor'
 import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroCancion } from '../sincro/SincroCancion'
 import type { MediaVista } from './MediaVista'
-import type { Media } from '../cancion/media'
 
 export class ReproductorMedia extends Reproductor {
   momentoInicio: Date | null = null

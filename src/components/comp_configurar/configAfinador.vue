@@ -6,13 +6,11 @@ import { NotaAfinar } from './notaAfinar'
 import frecuen from './frecuenciometro.vue'
 
 import circulo from './circulo.vue'
-const afinandoInstrumento = ref(false)
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
-const refViendoFrecuencia = ref(440)
 const micHelper = new MicHelper()
 const refMicEstado = ref('')
 const mediaStream = ref<MediaStream | null>(null)
@@ -194,9 +192,6 @@ function Solicitar() {
       console.error('Error al solicitar permiso del micrófono:', error)
       refMicEstado.value = 'Error'
     })
-}
-function clickVerFrecuencia(frecuencia: number) {
-  refViendoFrecuencia.value = frecuencia
 }
 
 function styleDivAfinador() {
