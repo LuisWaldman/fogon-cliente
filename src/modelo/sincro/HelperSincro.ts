@@ -93,6 +93,7 @@ export class HelperSincro {
     let deltaGolpe: number
 
     let diferencia = HelperSincro.Diferencia(sincro.timeInicio, momento)
+    console.log(`Diferencia: ${diferencia}, Momento: ${momento}, Time Inicio: ${sincro.timeInicio}`)
     if (diferencia <= 0) {
       diferencia = diferencia * -1
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)

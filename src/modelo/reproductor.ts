@@ -5,6 +5,8 @@ import { CancionManager } from './cancion/CancionManager'
 import { Letra } from './cancion/letra'
 import type { OrigenCancion } from './cancion/origencancion'
 import { Reloj } from './reloj'
+import { HelperSincro } from './sincro/HelperSincro'
+import { SincroCancion } from './sincro/SincroCancion'
 
 export class Reproductor {
   reloj: Reloj = new Reloj()
@@ -39,7 +41,16 @@ export class Reproductor {
 
   iniciarReproduccion() {
     const appStore = useAppStore()
+    const helper = HelperSincro.getInstance()
+    const momento = helper.MomentoSincro()
     if (appStore.cancion) {
+      appStore.sesSincroCancion = new SincroCancion(
+        appStore.cancion?.duracionGolpe || 1000, // duracionGolpe
+        momento + appStore.cancion?.duracionCompas * 1000, // timeInicio
+        appStore.cancion?.compasCantidad || 4, // golpesxcompas
+        appStore.compas || 0, // desdeCompas
+      )
+      console.log(`Iniciando reproducción de la canción: ${momento}`)
       this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
       this.reloj.setIniciaCicloHandler(this.onInicioCiclo.bind(this))
       this.reloj.iniciar()
@@ -59,17 +70,28 @@ export class Reproductor {
     const appStore = useAppStore()
     appStore.compas = compas
   }
-
-  onInicioCiclo() {
+  sincronizar() {
     const appStore = useAppStore()
-    appStore.golpeDelCompas = appStore.golpeDelCompas + 1
-    if (appStore.golpeDelCompas >= appStore.cancion.compasCantidad) {
-      appStore.golpeDelCompas = 0
-      if (appStore.estadoReproduccion === 'Iniciando') {
-        appStore.estadoReproduccion = 'Reproduciendo'
-      } else {
-        appStore.compas = appStore.compas + 1
-      }
-    }
+    const helper = HelperSincro.getInstance()
+    const momento = helper.MomentoSincro()
+    const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
+    const golpesxcompas = appStore.cancion?.compasCantidad || 4
+    const sincro = new SincroCancion(
+      duracionGolpe,
+      appStore.sesSincroCancion.timeInicio,
+      golpesxcompas, // golpesxcompas
+      appStore.sesSincroCancion.desdeCompas, // duracionGolpe
+    )
+    console.log(`Sincronizando en el : ${momento} , ${appStore.sesSincroCancion.timeInicio}`)
+    appStore.sesSincroCancion = sincro
+    const est = helper.GetEstadoSincro(sincro, momento)
+    appStore.EstadoSincro = est
+    appStore.compas = est.compas
+    appStore.golpeDelCompas = est.golpeEnCompas
+    appStore.estadoReproduccion = est.estado
+    this.reloj.setDelay(est.delay)
+  }
+  onInicioCiclo() {
+    this.sincronizar()
   }
 }
