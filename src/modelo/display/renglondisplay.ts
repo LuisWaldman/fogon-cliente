@@ -12,7 +12,7 @@ export class RenglonDisplay {
     this.contenido = ''
     for (let i = 0; i < acordes.length; i++) {
       this.acordes.push(
-        new AcordeDisplay(acordes[i], this.contenido.length * 10),
+        new AcordeDisplay(acordes[i], this.contenido.length * 12),
       )
       this.partes.push(new ParteRenglonDisplay(letras[i]))
       this.contenido += letras[i]
