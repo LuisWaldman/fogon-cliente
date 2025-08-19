@@ -127,11 +127,10 @@ export class CancionManager {
       }
       CancionIndexedDBManager.SaveCancion(this.db, cancion)
     }
-    
-      const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
-      const ultimas = new UltimasCanciones()
-      console.log('Guardando en ultimas', item)
-      ultimas.agregar(item)
-    
+
+    const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
+    const ultimas = new UltimasCanciones()
+    console.log('Guardando en ultimas', item)
+    ultimas.agregar(item)
   }
 }

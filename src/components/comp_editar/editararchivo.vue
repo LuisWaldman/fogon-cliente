@@ -70,7 +70,7 @@ function clickGuardar() {
       >[cancelar]</span
     >
     <span
-      v-if="['server', 'local'].includes(origenDestino)"
+      v-if="['server', 'local', 'fogon'].includes(origenDestino)"
       @click="guardarCambios"
     >
       [guardar]
@@ -113,6 +113,9 @@ function clickGuardar() {
     <select v-model="origenDestino">
       <option value="sitio">🌐Sitio</option>
       <option value="local">💾LocalStorage</option>
+      <option value="fogon" v-if="appStore.estadoSesion = 'conectado'">
+        🔥Fogón
+      </option>
       <option value="server" v-if="appStore.estadoLogin === 'logueado'">
         🔌Servidor
       </option>

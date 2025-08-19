@@ -90,9 +90,10 @@ export class ReproductorConectado extends Reproductor {
     this.sincronizar()
   }
 
-  override async SetCancion(origen: OrigenCancion, cancion: Cancion) {
-    origen.origenUrl = 'fogon'
-    CancionManager.getInstance().Save(origen, cancion)
+  override async SetCancion(_: OrigenCancion, cancion: Cancion) {
+    const origenN = new OrigenCancion('fogon', '', '')
+    console.log('Guardando canción en el fogón')
+    CancionManager.getInstance().Save(origenN, cancion)
   }
 
   override async iniciarReproduccion() {
