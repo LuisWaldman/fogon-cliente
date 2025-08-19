@@ -14,10 +14,9 @@ export class Display {
     }
   }
 
-  public anchoRenglones: number
   public Versos: VersoDisplay[] = []
-  public constructor(anchoRenglones: number) {
-    this.anchoRenglones = anchoRenglones
+  public constructor(anchoLetras: number) {
+    this.anchoLetras = anchoLetras
     this.calculado = false
   }
   public calculado: boolean = false

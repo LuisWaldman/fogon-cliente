@@ -20,6 +20,7 @@ exvistapantalla.value.tamanioParte = configPantalla.value.tamanioParte
 exvistapantalla.value.tamanioAcordeParte =
   configPantalla.value.tamanioAcordeParte
 exvistapantalla.value.factorScroll = configPantalla.value.factorScroll
+exvistapantalla.value.columnas = configPantalla.value.columnas
 
 function guardarConfiguracionPantalla() {
   config.guardarEnLocalStorage()
@@ -27,7 +28,8 @@ function guardarConfiguracionPantalla() {
 }
 
 function cancelarConfiguracionPantalla() {
-  emit('cerrarEditSize')
+  configPantalla.value.altoPantallaDescuento =
+    exvistapantalla.value.altoPantallaDescuento
   configPantalla.value.altoPantallaDescuento =
     exvistapantalla.value.altoPantallaDescuento
   configPantalla.value.anchoPrincipal = exvistapantalla.value.anchoPrincipal
@@ -39,8 +41,9 @@ function cancelarConfiguracionPantalla() {
   configPantalla.value.tamanioAcordeParte =
     exvistapantalla.value.tamanioAcordeParte
   configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
-
   pantalla.setearEstilos()
+  emit('cerrarEditSize')
+
 }
 watch(configPantalla.value, () => {
   pantalla.setearEstilos()
@@ -111,14 +114,14 @@ watch(configPantalla.value, () => {
       <span>{{ configPantalla.anchoPrincipal }} </span>
     </div>
     <div class="config-row">
-      <span>Descuento Alto Pantalla</span>
+      <span>Columnas</span>
       <input
         type="range"
-        min="0"
-        max="900"
-        v-model.number="configPantalla.altoPantallaDescuento"
+        min="10"
+        max="120"
+        v-model.number="configPantalla.columnas"
       />
-      <span>{{ configPantalla.altoPantallaDescuento }} px</span>
+      <span>{{ configPantalla.columnas }}</span>
     </div>
     <div class="config-row">
       <span>Factor Scroll</span>

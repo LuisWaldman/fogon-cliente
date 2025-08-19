@@ -4,15 +4,17 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
 import { Display } from '../../modelo/display/display'
 import { HelperDisplay } from '../../modelo/display/helperDisplay'
+import { Configuracion } from '../../modelo/configuracion'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
 const pantalla = new Pantalla()
+const configuracionPantalla = pantalla.getConfiguracionPantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 const renglones = ref([] as string[])
-const displayRef = ref(new Display(80))
+const displayRef = ref(new Display(20))
 
 watch(
   () => props.cancion,
@@ -22,7 +24,7 @@ watch(
 )
 const helperDisplay = new HelperDisplay()
 function ActualizarCancion(cancion: Cancion) {
-  displayRef.value = helperDisplay.getDisplay(cancion, 80)
+  displayRef.value = helperDisplay.getDisplay(cancion, configuracionPantalla.columnas)
 }
 
 function CalcularRenglon(newCompas: number): number {
@@ -35,7 +37,7 @@ function CalcularRenglon(newCompas: number): number {
         const partes = verso.renglonesDisplay[j].partes[k]
         if (partes.compas === newCompas) {
           encontrado = true
-          return renglon
+          return renglon < 3 ? 0 : renglon - 3
         }
       }
       renglon++
@@ -44,14 +46,13 @@ function CalcularRenglon(newCompas: number): number {
   }
   return renglon
 }
-
+    
 watch(
   () => props.compas,
   (newCompas) => {
     const renglon = CalcularRenglon(newCompas)
     console.log('Renglon:', renglon)
 
-    const configuracionPantalla = pantalla.getConfiguracionPantalla()
     const ScrollTo =
       renglon *
       (configuracionPantalla.tamanioLetra +
@@ -100,6 +101,7 @@ defineExpose({ Actualizar })
     >
       <div v-for="(verso, index) in displayRef.Versos" :key="index">
         <div
+        class="renglonDisplay"
           v-for="(renglon, index) in verso.renglonesDisplay"
           :key="index"
           :style="{ position: 'relative' }"
@@ -117,9 +119,10 @@ defineExpose({ Actualizar })
           <div
             v-for="(acorde, acordeIndex) in renglon.acordes"
             :style="{
+              'z-index': '-1',
               position: 'absolute',
               left: acorde.left + 'px',
-              top: '-30px',
+              top: '-' + (configuracionPantalla.tamanioAcorde + 2) + 'px',
             }"
             :key="acordeIndex"
             :class="{ en_compas: acorde.compas === compas }"
@@ -144,7 +147,7 @@ defineExpose({ Actualizar })
 .divletra {
   font-size: var(--tamanio-letra);
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: var(--tamanio-acorde);
 }
 
 .en_compas {
@@ -159,5 +162,8 @@ defineExpose({ Actualizar })
   display: inline-block;
   color: #a9a8f6;
   margin-right: 4px;
+}
+.renglonDisplay {
+  z-index: 10;
 }
 </style>
