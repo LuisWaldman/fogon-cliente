@@ -62,7 +62,11 @@ export default class Aplicacion {
       this.reproductorMedia = new ReproductorMedia()
     }
     this.reproductorMedia.setMediaVista(mediaVista)
-    this.reproductor = this.reproductorMedia
+
+    const appStore = useAppStore()
+    if (appStore.estadoSesion !== 'conectado') {
+      this.reproductor = this.reproductorMedia
+    }
   }
 
   quitarMediaVista(): void {
@@ -73,6 +77,7 @@ export default class Aplicacion {
     CancionManager.getInstance()
       .Get(origen)
       .then((cancion) => {
+        console.log('Canción obtenida:', cancion)
         this.reproductor.SetCancion(origen, cancion)
       })
   }
@@ -175,7 +180,7 @@ export default class Aplicacion {
       this.getperfilUsuario()
     })
     this.cliente.setLoginFailedHandler((error: string) => {
-      console.error(`Error al iniciar sesión: ${error}`)
+      console.error(`Error al Loguearse: ${error}`)
       const appStore = useAppStore()
       appStore.estadoLogin = 'error'
     })
@@ -347,7 +352,7 @@ export default class Aplicacion {
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
-    this.cliente.CrearSesion(nombre, 3.54, 4.34)
+    this.cliente.CrearSesion(nombre)
   }
 
   UnirmeSesion(nombre: string): void {

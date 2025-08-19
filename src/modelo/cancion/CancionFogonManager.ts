@@ -1,5 +1,5 @@
 import type { ClienteSocket } from '../conexion/ClienteSocket'
-import type { Cancion } from './cancion'
+import { Cancion } from './cancion'
 import { HelperJSON } from './HelperJSON'
 import type { OrigenCancion } from './origencancion'
 
@@ -16,6 +16,9 @@ export class CancionFogonManager {
       },
     })
     const dataRes = await response.json()
+    if (dataRes.datosJSON === null) {
+      return Cancion.GetDefault('Sin cancion en el fogón')
+    }
     const cancion = HelperJSON.JSONToCancion(JSON.stringify(dataRes.datosJSON))
     cancion.archivo = origencancion.fileName
     return cancion

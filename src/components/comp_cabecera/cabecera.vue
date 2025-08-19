@@ -101,10 +101,9 @@ function arreglartexto(texto: string): string {
           <img
             :src="appStore.perfil?.imagen || '/img/usuariofantasma.png'"
             alt="User"
-            :class="{ 
+            :class="{
               imgLogueado: appStore.estadoLogin == 'logueado',
-              imgConectado: appStore.estadoSesion === 'conectado' 
-
+              imgConectado: appStore.estadoSesion === 'conectado',
             }"
             style="
               width: 40px;

@@ -24,7 +24,10 @@ watch(
 )
 const helperDisplay = new HelperDisplay()
 function ActualizarCancion(cancion: Cancion) {
-  displayRef.value = helperDisplay.getDisplay(cancion, configuracionPantalla.columnas)
+  displayRef.value = helperDisplay.getDisplay(
+    cancion,
+    configuracionPantalla.columnas,
+  )
 }
 
 function CalcularRenglon(newCompas: number): number {
@@ -46,7 +49,7 @@ function CalcularRenglon(newCompas: number): number {
   }
   return renglon
 }
-    
+
 watch(
   () => props.compas,
   (newCompas) => {
@@ -101,7 +104,7 @@ defineExpose({ Actualizar })
     >
       <div v-for="(verso, index) in displayRef.Versos" :key="index">
         <div
-        class="renglonDisplay"
+          class="renglonDisplay"
           v-for="(renglon, index) in verso.renglonesDisplay"
           :key="index"
           :style="{ position: 'relative' }"

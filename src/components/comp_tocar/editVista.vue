@@ -43,7 +43,6 @@ function cancelarConfiguracionPantalla() {
   configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
   pantalla.setearEstilos()
   emit('cerrarEditSize')
-
 }
 watch(configPantalla.value, () => {
   pantalla.setearEstilos()

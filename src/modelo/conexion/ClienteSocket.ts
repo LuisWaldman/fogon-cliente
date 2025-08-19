@@ -25,7 +25,7 @@ interface ClientToServerEvents {
   actualizarCompas: (compas: number) => void
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
-  crearsesion(sesion: string, latitud: number, longitud: number): void
+  crearsesion(sesion: string): void
   mensajeasesion: (mensaje: string) => void
   salirsesion: () => void
   logout: () => void
@@ -228,8 +228,8 @@ export class ClienteSocket {
   public MensajeASesion(msj: string): void {
     this.socket.emit('mensajeasesion', msj)
   }
-  public CrearSesion(sesion: string, latitud: number, longitud: number): void {
-    this.socket.emit('crearsesion', sesion, latitud, longitud)
+  public CrearSesion(sesion: string): void {
+    this.socket.emit('crearsesion', sesion)
   }
 
   public UnirmeSesion(sesion: string): void {

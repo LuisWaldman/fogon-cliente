@@ -16,6 +16,10 @@ export class Cancion {
   public escala?: string
   public medias: Media[] = []
 
+  public static GetDefault(nombre: string): Cancion {
+    return new Cancion(nombre, 'sin banda', new Acordes([], []), new Letra([]))
+  }
+
   public get duracionCompas(): number {
     if (this.compasUnidad === 0) {
       return 0
