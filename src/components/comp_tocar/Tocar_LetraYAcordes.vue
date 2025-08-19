@@ -4,7 +4,6 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
 import { Display } from '../../modelo/display/display'
 import { HelperDisplay } from '../../modelo/display/helperDisplay'
-import { Configuracion } from '../../modelo/configuracion'
 
 const props = defineProps<{
   compas: number
