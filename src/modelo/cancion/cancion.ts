@@ -13,7 +13,7 @@ export class Cancion {
   public calidad?: number
   public compasCantidad: number
   public compasUnidad: number
-  public escala?: string
+  public escala: string = 'C'
   public medias: Media[] = []
 
   public static GetDefault(nombre: string): Cancion {

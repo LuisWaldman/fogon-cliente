@@ -15,6 +15,10 @@ const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 const renglones = ref([] as string[])
 const displayRef = ref(new Display(configuracionPantalla.columnas))
 
+const emit = defineEmits(['clickCompas'])
+function clickCompas(compas: number) {
+  emit('clickCompas', compas)
+}
 watch(
   () => props.cancion,
   (cancion: Cancion) => {
@@ -113,6 +117,7 @@ defineExpose({ Actualizar })
               v-for="(parte, parteIndex) in renglon.partes"
               :class="{ en_compas: parte.compas === compas }"
               :key="parteIndex"
+              @click="clickCompas(parte.compas)"
             >
               {{ parte.contenido }}
             </div>
@@ -126,6 +131,7 @@ defineExpose({ Actualizar })
               left: acorde.left + 'px',
               top: '-' + (configuracionPantalla.tamanioAcorde + 2) + 'px',
             }"
+            @click="clickCompas(acorde.compas)"
             :key="acordeIndex"
             :class="{ en_compas: acorde.compas === compas }"
             class="acordediv"

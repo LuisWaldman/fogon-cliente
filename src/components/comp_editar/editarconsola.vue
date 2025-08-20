@@ -84,8 +84,7 @@ function clickConfirmarAcorde() {
             </div>
           </div>
         </template>
-        {{ displayRef }}
-        {{  refTextoEditable }}
+        
       </div>
     </div>
 
