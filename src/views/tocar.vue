@@ -157,7 +157,6 @@ function cambioestado(estado: number) {
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarPentagrama>
-        
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <TocarYoutube

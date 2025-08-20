@@ -228,9 +228,7 @@ export class MusicaHelper {
 
     let notaInd = this.numeroNota(buscar)
     const modoSusecion: number[] = this.modos[modoEscala]
-    const modoParaacorde: string[] = this.modosParaacorde[modoEscala]
-
-    const acordes = [this.notas[notaInd] + modoParaacorde[0]]
+    const acordes = [this.notas[notaInd]]
     for (let i = 0; i < modoSusecion.length; i++) {
       notaInd += modoSusecion[i]
       acordes.push(this.notas[notaInd % this.notas.length])
@@ -273,21 +271,31 @@ export class MusicaHelper {
     }
     return false
   }
-  getNotasdeacorde(acorde: string, escala: string = ''): string[] {
+  GetNotasdeacorde(acorde: string): string[] {
     const toRet: string[] = []
-    const notas = this.GetNotasdeescala(acorde)
-    let escaPut = escala
-    toRet.push(notas[0] + escaPut)
-    if (this.esMenor(notas[2], notas[0])) {
-      console.log(escaPut, escala, notas[2], notas[0])
-      escaPut = (parseInt(escaPut) + 1).toString()
-      console.log(escaPut, escala)
+    let acordeBase = acorde
+    let tiene5 = false
+    let tiene7 = false
+    if (acorde.includes('/')) {
+      acordeBase = acorde.split('/')[0]
     }
-    toRet.push(notas[2] + escaPut)
-    if (this.esMenor(notas[4], notas[0]) && escaPut == escala) {
-      escaPut = (parseInt(escaPut) + 1).toString()
+    if (acorde.includes('5')) {
+      acordeBase = acordeBase.replace('5', '')
+      tiene5 = true
     }
-    toRet.push(notas[4] + escaPut)
+    if (acorde.includes('7')) {
+      acordeBase = acordeBase.replace('7', '')
+      tiene7 = true
+    }
+    const notas = this.GetNotasdeescala(acordeBase)
+    toRet.push(notas[0])
+    if (!tiene5) {
+      toRet.push(notas[2])
+    }
+    toRet.push(notas[4])
+    if (tiene7) {
+      toRet.push(notas[6])
+    }
 
     return toRet
   }

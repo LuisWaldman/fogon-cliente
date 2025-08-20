@@ -1,7 +1,18 @@
 <script setup lang="ts">
-
 import { onMounted, ref } from 'vue'
-import { Renderer, Stave, StaveNote, Formatter, Beam, StaveConnector } from 'vexflow'
+import {
+  Renderer,
+  Stave,
+  StaveNote,
+  Formatter,
+  Beam,
+  StaveConnector,
+} from 'vexflow'
+import type { RenglonPentagrama } from '../../modelo/pentagrama/renglonpentagrama'
+
+defineProps<{
+  renglon: RenglonPentagrama
+}>()
 
 const scoreContainer = ref<HTMLDivElement | null>(null)
 
@@ -13,8 +24,8 @@ onMounted(() => {
   const context = renderer.getContext()
 
   // Establecer los colores ANTES de crear y dibujar el pentagrama
-  context.setFillStyle('violet')
-  context.setStrokeStyle('violet')
+  context.setFillStyle('#a9a8f6')
+  context.setStrokeStyle('#a9a8f6')
 
   const stave = new Stave(10, 40, 700) // Pentagrama superior
   stave.addClef('treble').addTimeSignature('4/4')
@@ -56,7 +67,6 @@ onMounted(() => {
 </script>
 <template>
   <div>
-
     <div ref="scoreContainer" class="score"></div>
   </div>
 </template>

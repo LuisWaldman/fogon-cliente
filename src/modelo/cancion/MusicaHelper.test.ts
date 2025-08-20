@@ -2,7 +2,7 @@ import { MusicaHelper } from './MusicaHelper'
 import { describe, it, expect } from 'vitest'
 
 describe('MusicaHelper', () => {
-  it('Si esta vacio devuelve 0', () => {
+  it('Notas de la escala', () => {
     const helper = new MusicaHelper()
     expect(helper.GetAcordesdeescala('C')).toEqual([
       'C',
@@ -99,5 +99,14 @@ describe('MusicaHelper', () => {
     expect(
       helper.GetNotaNuevaEscala('C#', ['C', 'D', 'E'], ['D', 'E', 'F']),
     ).toEqual('D#')
+  })
+
+  it('Notas del compas', () => {
+    const helper = new MusicaHelper()
+    expect(helper.GetNotasdeacorde('C')).toEqual(['C', 'E', 'G'])
+    expect(helper.GetNotasdeacorde('D')).toEqual(['D', 'F#', 'A'])
+    expect(helper.GetNotasdeacorde('Am')).toEqual(['A', 'C', 'E'])
+    expect(helper.GetNotasdeacorde('A5')).toEqual(['A', 'E'])
+    expect(helper.GetNotasdeacorde('C7')).toEqual(['C', 'E', 'G', 'B'])
   })
 })
