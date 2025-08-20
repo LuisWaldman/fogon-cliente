@@ -22,7 +22,7 @@ onMounted(() => {
   if (!scoreContainer.value) return
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  renderer.resize(900, 150)
+  renderer.resize(900, 100)
   const context = renderer.getContext()
 
   // Establecer los colores ANTES de crear y dibujar el pentagrama

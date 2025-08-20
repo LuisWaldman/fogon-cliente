@@ -4,7 +4,7 @@ import type { CompasPentagrama } from './compaspentagrama'
 export class Pentagrama {
   getStave(context: RenderContext): Stave {
     console.log('DIBUJANDO PENTAGRAMA')
-    const stave = new Stave(10, 40, 700)
+    const stave = new Stave(10, 0, 700)
     stave.addClef('treble').addTimeSignature('4/4')
 
     const misNotas: StaveNote[] = []
