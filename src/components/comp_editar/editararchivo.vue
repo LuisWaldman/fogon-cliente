@@ -77,8 +77,6 @@ function clickGuardar() {
     </span>
 
     <span class="lblCabecera" @click="clickGuardar">[nuevo]</span>
-
-    <span class="lblCabecera" @click="clickGuardar">[subir]</span>
     <span class="lblCabecera" @click="DescargarJSON">[descargar]</span>
   </div>
   <div style="width: 100%">
