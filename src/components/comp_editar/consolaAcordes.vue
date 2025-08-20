@@ -28,10 +28,8 @@ refEditandoTextoAcordes.value = EditarAcordesToTextoHelper.acordesToTexto(
 
 <template>
   <div>
-    
-      
-    <span @click="clickCancelareditacorde">[Cancelar]</span> 
-    <span @click="clickOkeditacorde">[Guardar]</span> 
+    <span @click="clickCancelareditacorde">[Cancelar]</span>
+    <span @click="clickOkeditacorde">[Guardar]</span>
   </div>
   <div class="divTextArea">
     <textarea

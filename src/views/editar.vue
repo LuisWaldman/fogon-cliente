@@ -9,8 +9,6 @@ import sugerencias from '../components/comp_editar/sugerencias.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
-import { useRouter } from 'vue-router'
-import { OrigenCancion } from '../modelo/cancion/origencancion'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -18,28 +16,6 @@ function cambiarCompas(compas: number) {
   editandoCompas.value = compas
 }
 const appStore = useAppStore()
-function guardarCambios() {
-  // Create the Cancion object structure as expected by the backend
-  const cancionData = {
-    nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
-    datosJSON: appStore.editandocancion || {},
-  }
-
-  // Send the POST request with the cancion data
-  appStore.aplicacion
-    .HTTPPost('cancion', cancionData)
-    .then((response) => {
-      console.log('Canción guardada exitosamente', response)
-      if (appStore.estadoSesion === 'conectado') {
-        appStore.aplicacion.SetCancion(
-          new OrigenCancion('server', appStore.editandocancion?.archivo, ''),
-        )
-      }
-    })
-    .catch((error) => {
-      console.error('Error al guardar la canción', error)
-    })
-}
 class vistaTocar {
   viendo: string = 'inicio'
   viendoacordes: boolean = true
@@ -56,14 +32,14 @@ function GetStylePantallaEdit() {
 
 function estiloVistaPrincipal() {
   if (vista.value.viendo == 'editartexto') {
-    return `width: 100%; height: 100%`  
+    return `width: 100%; height: 100%`
   }
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
 }
 
 function estiloVistaSecundaria() {
   if (vista.value.viendo == 'editartexto') {
-    return `width: 0%; height: 100%`  
+    return `width: 0%; height: 100%`
   }
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
@@ -178,9 +154,7 @@ watch(
           vista.viendo !== 'editaracordes'
         "
       ></Secuencia>
-      
     </div>
-
   </div>
 </template>
 <style scoped>

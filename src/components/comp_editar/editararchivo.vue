@@ -27,7 +27,7 @@ function clickCancelarCambiarDatos() {
   emit('cerrar', false)
 }
 function clickNuevo() {
-  appStore.editandocancion = Cancion.GetDefault("Nueva")
+  appStore.editandocancion = Cancion.GetDefault('Nueva')
   appStore.cancion = appStore.editandocancion
   emit('cerrar', true)
 }
@@ -61,12 +61,6 @@ function guardarCambios() {
     })
 }
 
-function clickGuardar() {
-  props.cancion.cancion = nombrecancion.value
-  props.cancion.banda = nombrebanda.value
-  props.cancion.archivo = nombrearchivo.value
-  emit('cerrar', true)
-}
 </script>
 <template>
   <div>
@@ -115,7 +109,7 @@ function clickGuardar() {
     <select v-model="origenDestino">
       <option value="sitio">🌐Sitio</option>
       <option value="local">💾LocalStorage</option>
-      <option value="fogon" v-if="appStore.estadoSesion ==='conectado'">
+      <option value="fogon" v-if="appStore.estadoSesion === 'conectado'">
         🔥Fogón
       </option>
       <option value="server" v-if="appStore.estadoLogin === 'logueado'">

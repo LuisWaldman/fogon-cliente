@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
-import { BuildFondo } from './buildFondo'
 import { Pantalla } from '../../modelo/pantalla'
 import { HelperDisplay } from '../../modelo/display/helperDisplay'
 import { Display } from '../../modelo/display/display'
@@ -26,19 +25,26 @@ function ActualizarCancion(cancion: Cancion) {
 
 const emit = defineEmits(['cerrar'])
 const refTextoEditable = ref('')
-const cancionActualizada = Cancion.GetDefault("EDITCONSOLA")
+const cancionActualizada = Cancion.GetDefault('EDITCONSOLA')
 cancionActualizada.acordes = props.cancion.acordes
-watch(refTextoEditable, (newValue) => {
-  const renglonesActualizados = newValue.replace(/\r?\n/g, '/n').split('|');
-  cancionActualizada.letras.renglones = [renglonesActualizados];
-  ActualizarCancion(cancionActualizada);
-}, { immediate: false });
+watch(
+  refTextoEditable,
+  (newValue) => {
+    const renglonesActualizados = newValue.replace(/\r?\n/g, '/n').split('|')
+    cancionActualizada.letras.renglones = [renglonesActualizados]
+    ActualizarCancion(cancionActualizada)
+  },
+  { immediate: false },
+)
 
 const refTextarea = ref<HTMLTextAreaElement>()
 const refPreview = ref<HTMLDivElement>()
 
 onMounted(() => {
-  refTextoEditable.value = props.cancion.letras.renglones.flat().join('|').replace(/\/n/g, '\n')
+  refTextoEditable.value = props.cancion.letras.renglones
+    .flat()
+    .join('|')
+    .replace(/\/n/g, '\n')
 })
 
 function onTextareaScroll() {
@@ -53,8 +59,9 @@ function clickCancelarConsola() {
 }
 
 function clickConfirmarAcorde() {
-  
-  props.cancion.letras.renglones = [ refTextoEditable.value.replace(/\r?\n/g, '/n').split('|') ]
+  props.cancion.letras.renglones = [
+    refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
+  ]
   emit('cerrar')
 }
 </script>
@@ -65,31 +72,34 @@ function clickConfirmarAcorde() {
     <span @click="clickConfirmarAcorde">[Confirmar]</span>
   </div>
   <div>
-    <div style="display: flex;  overflow: hidden;height: 400px;">
-      <div  style="height: 400px;">
+    <div style="display: flex; overflow: hidden; height: 400px">
+      <div style="height: 400px">
         <textarea
-    class="textArea"
-    ref="refTextarea"
-    @scroll="onTextareaScroll"
-    v-model="refTextoEditable" :cols="configuracionPantalla.columnas"></textarea>
-
+          class="textArea"
+          ref="refTextarea"
+          @scroll="onTextareaScroll"
+          v-model="refTextoEditable"
+          :cols="configuracionPantalla.columnas"
+        ></textarea>
       </div>
       <div class="preview" ref="refPreview">
         <template v-for="(verso, index) in displayRef.Versos" :key="index">
-          <div v-for="(renglon, rIndex) in verso.renglonesDisplay" :key="rIndex"
-          style="display: flex;"
+          <div
+            v-for="(renglon, rIndex) in verso.renglonesDisplay"
+            :key="rIndex"
+            style="display: flex"
           >
-            <div v-for="(acorde, aIndex) in renglon.acordes" :key="aIndex" class="acordeconsola">
+            <div
+              v-for="(acorde, aIndex) in renglon.acordes"
+              :key="aIndex"
+              class="acordeconsola"
+            >
               {{ acorde.contenido }}
             </div>
           </div>
         </template>
-        
       </div>
     </div>
-
-
-
   </div>
 </template>
 <style scoped>
