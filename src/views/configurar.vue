@@ -61,10 +61,7 @@ function clickOpcion(viendostr: string) {
             <div
               @click="clickOpcion('sesion')"
               class="config-menu-item"
-              v-if="
-                appStore.estado == 'conectado' ||
-                appStore.estadoLogin == 'logueado'
-              "
+              v-if="appStore.estado == 'conectado'"
             >
               <a
                 href="#"

@@ -53,8 +53,11 @@ function clickFogon() {
           >
             <img
               class="profile-image"
-              v-if="user.PerfilUsr && user.PerfilUsr.imagen"
-              :src="user.PerfilUsr.imagen"
+              :src="
+                user.PerfilUsr && user.PerfilUsr.imagen
+                  ? user.PerfilUsr.imagen
+                  : '/img/usuariofantasma.png'
+              "
               alt="Profile image"
             />
           </div>
@@ -138,7 +141,7 @@ function clickFogon() {
 
       <div style="margin-top: 50px">
         <div class="titulo-Fogon" v-if="appStore.estadoSesion != 'conectado'">
-          Fogon .
+          El Fogon
         </div>
         <div class="titulo-Fogon" v-if="appStore.estadoSesion === 'conectado'">
           {{ appStore.sesion.nombre }}

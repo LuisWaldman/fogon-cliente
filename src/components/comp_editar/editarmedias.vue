@@ -27,36 +27,28 @@ const guardarCambios = () => {
 }
 </script>
 <template>
-  <div class="container-medias">
-    <h3>Editar Medias</h3>
+  <div>
+    <span @click="emit('cerrar')">[Cancelar]</span>
+    <span @click="guardarCambios">[Guardar]</span>
+    <span @click="agregarMedia">[+ Agregar Medio]</span>
+  </div>
+  <!-- Lista de medias existentes -->
+  <div v-for="(media, index) in refMedias" :key="index">
+    <div class="media-controls">
+      <select v-model="media.tipo">
+        <option v-for="tipo in tiposPermitidos" :key="tipo" :value="tipo">
+          {{ tipo }}
+        </option>
+      </select>
 
-    <!-- Lista de medias existentes -->
-    <div v-for="(media, index) in refMedias" :key="index" class="media-item">
-      <div class="media-controls">
-        <select v-model="media.tipo" class="tipo-select">
-          <option v-for="tipo in tiposPermitidos" :key="tipo" :value="tipo">
-            {{ tipo }}
-          </option>
-        </select>
+      <input v-model="media.id" placeholder="ID del media" />
+      <input
+        v-model="media.delay"
+        placeholder="Delay del media"
+        class="delay-input"
+      />
 
-        <input v-model="media.id" placeholder="ID del media" class="id-input" />
-        <input
-          v-model="media.delay"
-          placeholder="Delay del media"
-          class="delay-input"
-        />
-
-        <button @click="eliminarMedia(index)" class="btn-eliminar">❌</button>
-      </div>
-    </div>
-
-    <!-- Botón para agregar nueva media -->
-    <div class="acciones">
-      <button @click="agregarMedia" class="btn-agregar">+ Agregar Media</button>
-
-      <button @click="guardarCambios" class="btn-guardar">Guardar</button>
-
-      <button @click="emit('cerrar')" class="btn-cerrar">Cerrar</button>
+      <button @click="eliminarMedia(index)" class="btn-eliminar">❌</button>
     </div>
   </div>
 </template>
