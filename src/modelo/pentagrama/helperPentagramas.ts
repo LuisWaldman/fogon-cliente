@@ -16,7 +16,7 @@ export class HelperPentagramas {
     for (let i = 0; i < acordes.length; i++) {
       const acorde = acordes[i]
       renglon.pentagramas[0].compases.push(this.creaCompasPentagrama(acorde, 4))
-      if (i > 0 && i % 4 === 0) {
+      if (i > 0 && i % 3 === 0) {
         display.renglones.push(renglon)
         renglon = new RenglonPentagrama()
         renglon.pentagramas.push(new Pentagrama([]))
@@ -32,7 +32,6 @@ export class HelperPentagramas {
   ): CompasPentagrama {
     const notas = this.musica.GetNotasdeacorde(acorde)
     const compas = new CompasPentagrama()
-    console.log('Notas de acorde', notas, acorde, octava)
     for (let i = 0; i < notas.length; i++) {
       compas.Notas.push(new NotaPentagrama(notas[i], octava))
     }

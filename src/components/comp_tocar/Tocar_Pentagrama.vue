@@ -28,12 +28,21 @@ watch(
 )
 </script>
 <template>
-  <div>
+  <div class="componenteMusical">
     <div v-for="(renglon, index) in display.renglones" :key="index">
-      <renglonPentagrama :renglon="renglon"></renglonPentagrama>
-      {{ renglon }}
+      <renglonPentagrama
+        :renglon="renglon"
+        :cancion="props.cancion"
+      ></renglonPentagrama>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.componenteMusical {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+</style>
