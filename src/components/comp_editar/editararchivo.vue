@@ -60,7 +60,6 @@ function guardarCambios() {
       console.error('Error al guardar los cambios:', error)
     })
 }
-
 </script>
 <template>
   <div>
