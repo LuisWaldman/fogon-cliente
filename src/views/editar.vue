@@ -3,7 +3,7 @@ import { useAppStore } from '../stores/appStore'
 import cabecera from '../components/comp_editar/editarcabecera.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
-import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue'
+import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
@@ -55,10 +55,16 @@ function GetStylePantallaEdit() {
 }
 
 function estiloVistaPrincipal() {
+  if (vista.value.viendo == 'editartexto') {
+    return `width: 100%; height: 100%`  
+  }
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
 }
 
 function estiloVistaSecundaria() {
+  if (vista.value.viendo == 'editartexto') {
+    return `width: 0%; height: 100%`  
+  }
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
 const ctrlEditarTexto = ref()

@@ -13,7 +13,7 @@ const pantalla = new Pantalla()
 const configuracionPantalla = pantalla.getConfiguracionPantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 const renglones = ref([] as string[])
-const displayRef = ref(new Display(20))
+const displayRef = ref(new Display(configuracionPantalla.columnas))
 
 watch(
   () => props.cancion,
