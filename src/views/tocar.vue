@@ -3,6 +3,7 @@ import { ref, type Ref } from 'vue'
 //import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
+import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarYoutube from '../components/comp_tocar/Tocar_Youtube.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
@@ -151,6 +152,12 @@ function cambioestado(estado: number) {
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarAcorde>
+        <TocarPentagrama
+          v-if="vista.viendo == 'pentagrama'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarPentagrama>
+        
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <TocarYoutube
@@ -199,6 +206,9 @@ function cambioestado(estado: number) {
           </li>
           <li v-on:click="cambiarVista('soloacordes')">
             <a class="dropdown-item" href="#">Solo Acordes</a>
+          </li>
+          <li v-on:click="cambiarVista('pentagrama')">
+            <a class="dropdown-item" href="#">Pentagrama</a>
           </li>
           <li><hr class="dropdown-divider" /></li>
 
