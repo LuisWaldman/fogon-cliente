@@ -21,7 +21,6 @@ onMounted(() => {
   bpm.value = props.cancion.bpm || 120
   compasCantidad.value = props.cancion.compasCantidad
   compasUnidad.value = props.cancion.compasUnidad
-
 })
 
 function clickListo() {
@@ -30,11 +29,6 @@ function clickListo() {
   props.cancion.compasCantidad = compasCantidad.value
   props.cancion.compasUnidad = compasUnidad.value
   emit('cerrar')
-}
-
-function tiempoNuevaCancion() {
-  const tiempoCompas = (60 / compasUnidad.value) * compasCantidad.value
-  return tiempo.formatSegundos(tiempoCompas)
 }
 
 function clickCancelar() {
@@ -81,8 +75,13 @@ function clickCancelar() {
       :style="{ width: '3ch' }"
     />
 
-    Duracion Cancion: <span>{{ tiempo.formatSegundos(((60 / bpm) * compasCantidad) * props.cancion.totalCompases)}}</span>
-    Duracion Compas: <span>{{ ((60 / bpm) * compasCantidad).toFixed(2)}}</span>
+    Duracion Cancion:
+    <span>{{
+      tiempo.formatSegundos(
+        (60 / bpm) * compasCantidad * props.cancion.totalCompases,
+      )
+    }}</span>
+    Duracion Compas: <span>{{ ((60 / bpm) * compasCantidad).toFixed(2) }}</span>
   </div>
 </template>
 <style scoped></style>
