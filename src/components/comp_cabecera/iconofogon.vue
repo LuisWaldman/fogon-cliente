@@ -53,8 +53,7 @@ function clickFogon() {
           >
             <img
               class="profile-image"
-              v-if="user.PerfilUsr && user.PerfilUsr.imagen"
-              :src="user.PerfilUsr.imagen"
+              :src="user.PerfilUsr && user.PerfilUsr.imagen ? user.PerfilUsr.imagen : '/img/usuariofantasma.png'"
               alt="Profile image"
             />
           </div>
