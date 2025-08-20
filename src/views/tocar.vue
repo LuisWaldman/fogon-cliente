@@ -5,6 +5,7 @@ import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarYoutube from '../components/comp_tocar/Tocar_Youtube.vue'
+import TocarMidi from '../components/comp_tocar/Tocar_Midi.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
@@ -28,6 +29,7 @@ const appStore = useAppStore()
 class vistaTocar {
   viendo: string = 'karaoke'
   media: boolean = false
+  midi: boolean = false
   secuencia: boolean = true
   partes: boolean = true
   proximosAcordes: boolean = false
@@ -55,6 +57,11 @@ function clickMedia() {
   localStorage.setItem('media', vista.value.media ? 'true' : 'false')
 }
 
+function clickMidi() {
+  vista.value.midi = !vista.value.midi
+  localStorage.setItem('midi', vista.value.midi ? 'true' : 'false')
+}
+
 function clickAcordes() {
   vista.value.proximosAcordes = !vista.value.proximosAcordes
   localStorage.setItem(
@@ -79,7 +86,9 @@ function estiloVistaPrincipal() {
   if (
     vista.value.secuencia ||
     vista.value.proximosAcordes ||
-    vista.value.partes
+    vista.value.partes ||
+    vista.value.midi ||
+    vista.value.media
   ) {
     ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
   }
@@ -91,7 +100,9 @@ function estiloVistaSecundaria() {
   if (
     vista.value.secuencia ||
     vista.value.proximosAcordes ||
-    vista.value.partes
+    vista.value.partes ||
+    vista.value.midi ||
+    vista.value.media
   ) {
     ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
   }
@@ -165,7 +176,12 @@ function cambioestado(estado: number) {
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarYoutube>
-
+        <TocarMidi
+          v-if="vista.midi"
+          @cambioEstado="cambioestado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarMidi>
         <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
           <Secuencia
             :cancion="appStore.cancion"
@@ -215,6 +231,13 @@ function cambioestado(estado: number) {
             <a class="dropdown-item" href="#">
               <i class="bi bi-check-circle" v-if="vista.media"></i>
               Media</a
+            >
+          </li>
+
+          <li v-on:click="clickMidi()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.midi"></i>
+              Midi</a
             >
           </li>
           <li v-on:click="clickSecuencia()">

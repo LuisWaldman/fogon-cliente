@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { watch } from 'vue'
-import MidiPlayer from '../../modelo/midi/MidiPlayer'
+
 let midiPlayer = new MidiPlayer()
 import { useAppStore } from '../../stores/appStore'
+import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 const appStore = useAppStore()
 const midiCargado = ref(false)
 let sonidoxgolpe = ref([1, 1, 1, 1, 1, 1, 1, 1, 1])
