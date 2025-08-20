@@ -65,6 +65,7 @@ export class HelperDisplay {
     allrenglonAcordes.push(renglonAcordes)
     ret.ArmarDisplay(allrenglonLetras, allrenglonAcordes)
     let contCompas: number = 0
+    // CALCULAR COMPAS DE ACORDE
     for (let i = 0; i < ret.Versos.length; i++) {
       for (let j = 0; j < ret.Versos[i].renglonesDisplay.length; j++) {
         for (

@@ -13,6 +13,7 @@ import { OrigenCancion } from './modelo/cancion/origencancion'
 import { CancionManager } from './modelo/cancion/CancionManager'
 import { ReproductorMedia } from './modelo/reproduccion/reproductorMedia'
 import type { MediaVista } from './modelo/reproduccion/MediaVista'
+import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -26,6 +27,8 @@ export default class Aplicacion {
   constructor() {
     // Inicialización de la aplicación
     CancionManager.getInstance().SetDB()
+    const ultimas = new UltimasCanciones()
+    ultimas.filtrarSubidas()
     console.log('Aplicacion inicializada')
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
@@ -59,15 +62,24 @@ export default class Aplicacion {
       this.reproductorMedia = new ReproductorMedia()
     }
     this.reproductorMedia.setMediaVista(mediaVista)
-    this.reproductor = this.reproductorMedia
+
+    const appStore = useAppStore()
+    if (appStore.estadoSesion !== 'conectado') {
+      this.reproductor = this.reproductorMedia
+    }
   }
 
   quitarMediaVista(): void {
     this.reproductor = this.reproductorDesconectado
   }
 
-  async SetCancion(cancion: OrigenCancion) {
-    this.reproductor.SetCancion(cancion)
+  async SetCancion(origen: OrigenCancion) {
+    CancionManager.getInstance()
+      .Get(origen)
+      .then((cancion) => {
+        console.log('Canción obtenida:', cancion)
+        this.reproductor.SetCancion(origen, cancion)
+      })
   }
   updateCompas(compas: number) {
     this.reproductor.updateCompas(compas)
@@ -146,6 +158,7 @@ export default class Aplicacion {
           this.cliente,
           this.token,
         )
+        this.reproductorConectado.GetCancionDelFogon()
         this.reproductor.detenerReproduccion()
         this.reproductor = this.reproductorConectado
       }
@@ -164,10 +177,9 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       appStore.estadoLogin = 'logueado'
-      this.getperfilUsuario()
     })
     this.cliente.setLoginFailedHandler((error: string) => {
-      console.error(`Error al iniciar sesión: ${error}`)
+      console.error(`Error al Loguearse: ${error}`)
       const appStore = useAppStore()
       appStore.estadoLogin = 'error'
     })
@@ -292,22 +304,6 @@ export default class Aplicacion {
       body: JSON.stringify(body),
     })
   }
-  getperfilUsuario() {
-    this.HTTPGet('perfil')
-      .then((response) => response.json())
-      .then((data) => {
-        const appStore = useAppStore()
-        if (data != null) {
-          appStore.perfil.imagen = data.Imagen
-          appStore.perfil.nombre = data.Nombre
-          appStore.perfil.descripcion = data.Descripcion
-          appStore.perfil.instrumento = data.Instrumento
-        }
-      })
-      .catch((error) => {
-        console.error('Error al obtener el perfil del usuario:', error)
-      })
-  }
   login(datos: datosLogin): boolean {
     console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
     const appStore = useAppStore()
@@ -339,7 +335,7 @@ export default class Aplicacion {
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
-    this.cliente.CrearSesion(nombre, 3.54, 4.34)
+    this.cliente.CrearSesion(nombre)
   }
 
   UnirmeSesion(nombre: string): void {

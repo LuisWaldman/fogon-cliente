@@ -1,7 +1,4 @@
-import { Acordes } from '../cancion/acordes'
 import { Cancion } from '../cancion/cancion'
-import { CancionManager } from '../cancion/CancionManager'
-import { Letra } from '../cancion/letra'
 import type { OrigenCancion } from '../cancion/origencancion'
 import { Reloj } from '../reloj'
 import { HelperSincro } from '../sincro/HelperSincro'
@@ -14,29 +11,10 @@ export class Reproductor {
   public get Cancion() {
     return this.cancion
   }
-  async SetCancion(cancion: OrigenCancion) {
-    this.CargarCancion(cancion)
-  }
-
-  protected async CargarCancion(origen: OrigenCancion) {
-    return CancionManager.getInstance()
-      .Get(origen)
-      .then((cancion) => {
-        cancion.normalizar()
-        const appStore = useAppStore()
-        appStore.cancion = cancion
-        appStore.origenCancion = origen
-      })
-      .catch((error) => {
-        console.error('Error al cargar la canción:', error)
-        const appStore = useAppStore()
-        appStore.cancion = new Cancion(
-          'Error al cargar canción',
-          'sin banda',
-          new Acordes([], []),
-          new Letra([]),
-        )
-      })
+  SetCancion(origen: OrigenCancion, cancion: Cancion) {
+    const appStore = useAppStore()
+    appStore.cancion = cancion
+    appStore.origenCancion = origen
   }
 
   iniciarReproduccion() {

@@ -19,7 +19,7 @@ export class CancionServerManager {
       },
     )
     const dataRes = await response.json()
-    const cancion = HelperJSON.JSONToCancion(JSON.stringify(dataRes))
+    const cancion = HelperJSON.JSONToCancion(JSON.stringify(dataRes.datosJSON))
     cancion.archivo = origencancion.fileName
     return cancion
   }

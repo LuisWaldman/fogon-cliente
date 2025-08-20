@@ -74,7 +74,7 @@ function arreglartexto(texto: string): string {
       <iconofogon />
 
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        Bienvendido a Fogon
+        Bienvendido al Fogon
       </span>
 
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
@@ -101,7 +101,10 @@ function arreglartexto(texto: string): string {
           <img
             :src="appStore.perfil?.imagen || '/img/usuariofantasma.png'"
             alt="User"
-            :class="{ imgConectado: appStore.estadoSesion === 'conectado' }"
+            :class="{
+              imgLogueado: appStore.estadoLogin == 'logueado',
+              imgConectado: appStore.estadoSesion === 'conectado',
+            }"
             style="
               width: 40px;
               height: 40px;
@@ -252,8 +255,13 @@ function arreglartexto(texto: string): string {
 }
 .imgConectado {
   box-sizing: content-box;
-  border: 6px double #a9a8f6;
+  border: 6px double #be1414 !important;
 }
+.imgLogueado {
+  box-sizing: content-box;
+  border: 2px solid #f6d7a8;
+}
+
 .dropdown-submenu .dropdown-menu {
   top: 0;
   right: 100%;

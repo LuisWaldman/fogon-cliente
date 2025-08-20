@@ -26,7 +26,11 @@ const appStore = useAppStore()
 function clickCancelarCambiarDatos() {
   emit('cerrar', false)
 }
-
+function clickNuevo() {
+  appStore.editandocancion = Cancion.GetDefault('Nueva')
+  appStore.cancion = appStore.editandocancion
+  emit('cerrar', true)
+}
 function DescargarJSON() {
   console.log('Descargando JSON de la canción actual...')
   const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
@@ -56,13 +60,6 @@ function guardarCambios() {
       console.error('Error al guardar los cambios:', error)
     })
 }
-
-function clickGuardar() {
-  props.cancion.cancion = nombrecancion.value
-  props.cancion.banda = nombrebanda.value
-  props.cancion.archivo = nombrearchivo.value
-  emit('cerrar', true)
-}
 </script>
 <template>
   <div>
@@ -70,15 +67,13 @@ function clickGuardar() {
       >[cancelar]</span
     >
     <span
-      v-if="['server', 'local'].includes(origenDestino)"
+      v-if="['server', 'local', 'fogon'].includes(origenDestino)"
       @click="guardarCambios"
     >
       [guardar]
     </span>
 
-    <span class="lblCabecera" @click="clickGuardar">[nuevo]</span>
-
-    <span class="lblCabecera" @click="clickGuardar">[subir]</span>
+    <span class="lblCabecera" @click="clickNuevo">[nuevo]</span>
     <span class="lblCabecera" @click="DescargarJSON">[descargar]</span>
   </div>
   <div style="width: 100%">
@@ -113,6 +108,9 @@ function clickGuardar() {
     <select v-model="origenDestino">
       <option value="sitio">🌐Sitio</option>
       <option value="local">💾LocalStorage</option>
+      <option value="fogon" v-if="appStore.estadoSesion === 'conectado'">
+        🔥Fogón
+      </option>
       <option value="server" v-if="appStore.estadoLogin === 'logueado'">
         🔌Servidor
       </option>

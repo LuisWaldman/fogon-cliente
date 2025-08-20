@@ -3,7 +3,7 @@ import { OrigenCancion } from './origencancion'
 
 export class UltimasCanciones {
   private static readonly STORAGE_KEY = 'ultimas-canciones'
-  private static readonly MAX_CANCIONES = 20
+  private static readonly MAX_CANCIONES = 30
 
   public canciones: ItemIndiceCancion[]
 
@@ -11,15 +11,22 @@ export class UltimasCanciones {
     this.canciones = []
     this.cargarDeStorage()
   }
+  public filtrarSubidas() {
+    this.canciones = this.canciones.filter(
+      (cancion) => cancion.origen.origenUrl !== 'subida',
+    )
+    this.guardarEnStorage()
+  }
 
   public agregar(cancion: ItemIndiceCancion): void {
+    if (cancion.origen.origenUrl === 'fogon') {
+      return
+    }
     this.canciones = this.canciones.filter(
       (c) =>
+        c.origen.origenUrl === 'fogon' ||
         c.origen.fileName !== cancion.origen.fileName ||
-        c.origen.origenUrl !== cancion.origen.origenUrl ||
-        c.origen.usuario !== cancion.origen.usuario ||
-        c.cancion !== cancion.cancion ||
-        c.banda !== cancion.banda,
+        c.origen.origenUrl !== cancion.origen.origenUrl,
     )
 
     this.canciones.unshift(cancion)

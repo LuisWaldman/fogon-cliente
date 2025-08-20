@@ -10,6 +10,7 @@ export class VistaTocar {
   public anchoPrincipal: number = 70 // Ancho de la parte principal
   public altoPantallaDescuento: number = 200 // Nueva propiedad
   public factorScroll: number = 1.4 // Nueva propiedad para el factor de scroll
+  public columnas: number = 78 // Nueva propiedad para el número de columnas
 }
 export class Configuracion {
   obtenerURLConectar(serverName: string) {

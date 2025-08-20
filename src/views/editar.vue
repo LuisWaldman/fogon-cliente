@@ -3,14 +3,12 @@ import { useAppStore } from '../stores/appStore'
 import cabecera from '../components/comp_editar/editarcabecera.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
-import TocarLetraAcorde from '../components/comp_editar/Editar_LetraYAcordes.vue'
+import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
-import { useRouter } from 'vue-router'
-import { OrigenCancion } from '../modelo/cancion/origencancion'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -18,28 +16,6 @@ function cambiarCompas(compas: number) {
   editandoCompas.value = compas
 }
 const appStore = useAppStore()
-function guardarCambios() {
-  // Create the Cancion object structure as expected by the backend
-  const cancionData = {
-    nombreArchivo: appStore.editandocancion?.archivo || 'archivo_default',
-    datosJSON: appStore.editandocancion || {},
-  }
-
-  // Send the POST request with the cancion data
-  appStore.aplicacion
-    .HTTPPost('cancion', cancionData)
-    .then((response) => {
-      console.log('Canción guardada exitosamente', response)
-      if (appStore.estadoSesion === 'conectado') {
-        appStore.aplicacion.SetCancion(
-          new OrigenCancion('server', appStore.editandocancion?.archivo, ''),
-        )
-      }
-    })
-    .catch((error) => {
-      console.error('Error al guardar la canción', error)
-    })
-}
 class vistaTocar {
   viendo: string = 'inicio'
   viendoacordes: boolean = true
@@ -55,10 +31,16 @@ function GetStylePantallaEdit() {
 }
 
 function estiloVistaPrincipal() {
+  if (vista.value.viendo == 'editartexto') {
+    return `width: 100%; height: 100%`
+  }
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
 }
 
 function estiloVistaSecundaria() {
+  if (vista.value.viendo == 'editartexto') {
+    return `width: 0%; height: 100%`
+  }
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
 }
 const ctrlEditarTexto = ref()
@@ -69,19 +51,12 @@ function cambiarVista(nvista: string) {
   localStorage.setItem('viendo_vista_editando', nvista)
 }
 
-const router = useRouter()
-function clickTocar() {
-  // Redirect to edit page for the current song
-  appStore.cancion = appStore.editandocancion
-  router.push('/tocar')
-}
 function clickCerrarEditarTexto() {
   // Set the current view to 'inicio'
   cambiarVista('inicio')
 }
 
 function Actualizar() {
-  console.log('Actualizando vista de edición... CONTROL', ctrlEditarTexto.value)
   if (ctrlEditarTexto.value) {
     ctrlEditarTexto.value.Actualizar()
     ctrlSecuencia.value.Actualizar()
@@ -116,6 +91,7 @@ watch(
       <div
         style="position: relative; left: 96%"
         v-on:click="cambiarVista('editartexto')"
+        v-if="vista.viendo === 'inicio'"
       >
         🔄
       </div>
@@ -125,6 +101,7 @@ watch(
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         ref="ctrlEditarTexto"
+        @clickCompas="cambiarCompas"
       ></TocarLetraAcorde>
 
       <editartexto
@@ -138,6 +115,16 @@ watch(
     </div>
 
     <div :style="estiloVistaSecundaria()">
+      <sugerencias
+        :cancion="appStore.editandocancion"
+        :compas="appStore.compas"
+        @cambioCompas="cambiarCompas"
+        @actualizarCancion="Actualizar"
+        v-if="
+          vista.viendo !== 'editconsolaacordes' &&
+          vista.viendo !== 'editaracordes'
+        "
+      ></sugerencias>
       <editAcordes
         v-if="vista.viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"
@@ -150,6 +137,13 @@ watch(
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></consola-acordes>
+      <div
+        style="position: relative; left: 96%"
+        v-on:click="cambiarVista('editconsolaacordes')"
+        v-if="vista.viendo === 'inicio'"
+      >
+        🔄
+      </div>
       <Secuencia
         ref="ctrlSecuencia"
         :cancion="appStore.editandocancion"
@@ -160,70 +154,6 @@ watch(
           vista.viendo !== 'editaracordes'
         "
       ></Secuencia>
-      <sugerencias
-        :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
-        @cambioCompas="cambiarCompas"
-        @actualizarCancion="Actualizar"
-        v-if="
-          vista.viendo !== 'editconsolaacordes' &&
-          vista.viendo !== 'editaracordes'
-        "
-      ></sugerencias>
-    </div>
-
-    <div class="dropdown dropdown-superior-derecha">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <i class="bi bi-eye"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li v-on:click="cambiarVista('editaracordes')">
-          <a class="dropdown-item" href="#">Editar Acordes</a>
-        </li>
-        <li v-on:click="cambiarVista('editconsolaacordes')">
-          <a class="dropdown-item" href="#">Consola Acordes</a>
-        </li>
-
-        <li>
-          <hr class="dropdown-divider" v-if="vista.viendo == 'editartexto'" />
-        </li>
-        <li
-          v-on:click="vista.verEditandoAcordes = !vista.verEditandoAcordes"
-          v-if="vista.viendo == 'editartexto'"
-        >
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-check-circle" v-if="vista.verEditandoAcordes"></i>
-            Ver Acordes</a
-          >
-        </li>
-
-        <li
-          v-on:click="vista.verEditandoMetricaEs = !vista.verEditandoMetricaEs"
-          v-if="vista.viendo == 'editartexto'"
-        >
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-check-circle" v-if="vista.verEditandoMetricaEs"></i>
-            Ver Metrica</a
-          >
-        </li>
-
-        <li><hr class="dropdown-divider" /></li>
-
-        <li @click="guardarCambios">
-          <a class="dropdown-item" href="#"> Guardar Cambios</a>
-        </li>
-        <li><hr class="dropdown-divider" /></li>
-
-        <li @click="clickTocar()">
-          <a class="dropdown-item" href="#">Tocar</a>
-        </li>
-      </ul>
     </div>
   </div>
 </template>

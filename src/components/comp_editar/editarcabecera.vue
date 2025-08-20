@@ -38,13 +38,11 @@ function clickCerrar(modificado: boolean) {
     <label>{{ cancion.cancion }} - {{ cancion.banda }}</label
     ><label v-if="appStore.cancionModificada">*</label>
 
-    <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
     Escala: - {{ cancion.escala }}
+    <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
 
-    <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
-    <label
-      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
-    >
+    <label>Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
+    ><label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
     <label
       >BPM: {{ cancion.bpm }} Compas: {{ cancion.compasCantidad }}/
       {{ cancion.compasUnidad }}</label
@@ -52,7 +50,7 @@ function clickCerrar(modificado: boolean) {
     <label
       >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
     >
-    <label>Medias: {{ cancion.medias.length }}</label
+    <label>Medios: {{ cancion.medias.length }}</label
     ><label @click="clickCambiar('medias')">🔄</label>
     <div>
       <editarmedias

@@ -145,6 +145,8 @@ function cambiar(id: number, idx: number = 0) {
   margin: 4px;
   padding-left: 14px;
   padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .beat_activo {
   background-color: rgb(235, 67, 16);
