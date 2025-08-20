@@ -53,7 +53,11 @@ function clickFogon() {
           >
             <img
               class="profile-image"
-              :src="user.PerfilUsr && user.PerfilUsr.imagen ? user.PerfilUsr.imagen : '/img/usuariofantasma.png'"
+              :src="
+                user.PerfilUsr && user.PerfilUsr.imagen
+                  ? user.PerfilUsr.imagen
+                  : '/img/usuariofantasma.png'
+              "
               alt="Profile image"
             />
           </div>

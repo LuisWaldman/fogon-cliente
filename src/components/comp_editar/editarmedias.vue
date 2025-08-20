@@ -28,33 +28,29 @@ const guardarCambios = () => {
 </script>
 <template>
   <div>
+    <span @click="emit('cerrar')">[Cancelar]</span>
+    <span @click="guardarCambios">[Guardar]</span>
+    <span @click="agregarMedia">[+ Agregar Medio]</span>
+  </div>
+  <!-- Lista de medias existentes -->
+  <div v-for="(media, index) in refMedias" :key="index">
+    <div class="media-controls">
+      <select v-model="media.tipo">
+        <option v-for="tipo in tiposPermitidos" :key="tipo" :value="tipo">
+          {{ tipo }}
+        </option>
+      </select>
 
-      
+      <input v-model="media.id" placeholder="ID del media" />
+      <input
+        v-model="media.delay"
+        placeholder="Delay del media"
+        class="delay-input"
+      />
 
-      <span @click="emit('cerrar')">[Cancelar]</span>
-      <span @click="guardarCambios">[Guardar]</span>
-      <span @click="agregarMedia">[+ Agregar Medio]</span>
+      <button @click="eliminarMedia(index)" class="btn-eliminar">❌</button>
     </div>
-    <!-- Lista de medias existentes -->
-    <div v-for="(media, index) in refMedias" :key="index">
-      <div class="media-controls">
-        <select v-model="media.tipo">
-          <option v-for="tipo in tiposPermitidos" :key="tipo" :value="tipo">
-            {{ tipo }}
-          </option>
-        </select>
-
-        <input v-model="media.id" placeholder="ID del media" />
-        <input
-          v-model="media.delay"
-          placeholder="Delay del media"
-          class="delay-input"
-        />
-
-        <button @click="eliminarMedia(index)" class="btn-eliminar">❌</button>
-      </div>
-    </div>
-
+  </div>
 </template>
 <style scoped>
 .container-medias {

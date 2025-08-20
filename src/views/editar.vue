@@ -115,7 +115,6 @@ watch(
     </div>
 
     <div :style="estiloVistaSecundaria()">
-      
       <sugerencias
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
