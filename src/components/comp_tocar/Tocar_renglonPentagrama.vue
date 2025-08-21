@@ -20,7 +20,7 @@ const scoreContainer = ref<HTMLDivElement | null>(null)
 
 onMounted(() => {
   if (!scoreContainer.value) return
-  
+
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
   renderer.resize(900, 100)
   const context = renderer.getContext()

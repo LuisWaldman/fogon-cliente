@@ -1,16 +1,15 @@
 <script lang="ts" setup>
-import { ref, onUnmounted, onMounted } from 'vue';
-import type { Cancion } from '../../modelo/cancion/cancion';
-import { MidiPlayer } from '../../modelo/midi/MidiPlayer';
-import { MediaVista } from '../../modelo/reproduccion/MediaVista';
-import { useAppStore } from '../../stores/appStore';
-
+import { ref, onUnmounted, onMounted } from 'vue'
+import type { Cancion } from '../../modelo/cancion/cancion'
+import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
+import { MediaVista } from '../../modelo/reproduccion/MediaVista'
+import { useAppStore } from '../../stores/appStore'
+import { MidiHelper } from '../../modelo/midi/MidiHelper'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
-
 
 let midiPlayer = new MidiPlayer()
 const midiCargado = ref(false)
@@ -39,13 +38,9 @@ function cargarCancion() {
   if (!midiCargado.value) {
     return
   }
-  midiPlayer.loadSequence([
-    { note: 'C4', duration: '4n', time: '0:0:0' },
-    { note: 'D4', duration: '4n', time: '0:1:0' },
-    { note: 'E4', duration: '4n', time: '0:2:0' }
-  ])
+  const helper = new MidiHelper()
+  midiPlayer.loadSequence(helper.GetSecuencia(props.cancion))
 }
-
 
 const mediaVista = new MediaVista()
 mediaVista.setGetTiempoDesdeInicio(() => {
@@ -58,7 +53,6 @@ mediaVista.setIniciar(() => {
 mediaVista.setPausar(() => {
   stop()
 })
-
 
 onUnmounted(() => {
   const appStore = useAppStore()
@@ -83,12 +77,11 @@ function stop() {
   }
   midiPlayer.stop()
 }
-
 </script>
 <template>
-<span @click="iniciar" v-if="!midiCargado">[INICIAR MIDI]</span>
-<span @click="cargarCancion" v-if="midiCargado">[CARGAR CANCIÓN]</span>
-<span @click="play" v-if="midiCargado">[PLAY]</span>
-<span @click="stop" v-if="midiCargado">[PAUSA]</span>
-Pentagramas : {{ props.cancion.pentagramas.length }}
+  <span @click="iniciar" v-if="!midiCargado">[INICIAR MIDI]</span>
+  <span @click="cargarCancion" v-if="midiCargado">[CARGAR CANCIÓN]</span>
+  <span @click="play" v-if="midiCargado">[PLAY]</span>
+  <span @click="stop" v-if="midiCargado">[PAUSA]</span>
+  Pentagramas : {{ props.cancion.pentagramas.length }}
 </template>

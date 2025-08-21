@@ -1,4 +1,5 @@
 import * as Tone from 'tone'
+import type { MidiSecuencia } from './MidiSecuencia'
 
 export class MidiPlayer {
   private instrument: Tone.Sampler
@@ -19,10 +20,9 @@ export class MidiPlayer {
   }
 
   // 🎼 Cargar secuencia para reproducción sincronizada
-  public loadSequence(
-    seq: { note: string; duration: string; time: string }[],
-  ): void {
-    this.sequence = seq
+  public loadSequence(secuencia: MidiSecuencia): void {
+    Tone.getTransport().bpm.value = secuencia.bpm
+    this.sequence = secuencia.notas
     if (this.part) this.part.dispose()
 
     this.part = new Tone.Part((time, value) => {

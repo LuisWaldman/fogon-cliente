@@ -28,7 +28,6 @@ watch(
 )
 </script>
 <template>
-  
   <div class="componenteMusical">
     <div v-for="(renglon, index) in display.renglones" :key="index">
       <renglonPentagrama
