@@ -19,7 +19,9 @@ export class MidiPlayer {
   }
 
   // 🎼 Cargar secuencia para reproducción sincronizada
-  public loadSequence(seq: { note: string; duration: string; time: string }[]): void {
+  public loadSequence(
+    seq: { note: string; duration: string; time: string }[],
+  ): void {
     this.sequence = seq
     if (this.part) this.part.dispose()
 
@@ -64,4 +66,3 @@ export class MidiPlayer {
     this.instrument.triggerRelease(note)
   }
 }
-

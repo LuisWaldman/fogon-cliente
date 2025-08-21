@@ -1,6 +1,7 @@
 import { Acordes } from './acordes'
 import { Letra } from './letra'
 import type { Media } from './media'
+import type { Pentagrama } from './pentagrama'
 
 // src/cancion.ts
 export class Cancion {
@@ -15,6 +16,7 @@ export class Cancion {
   public compasUnidad: number
   public escala: string = 'C'
   public medias: Media[] = []
+  public pentagramas: Pentagrama[] = []
 
   public static GetDefault(nombre: string): Cancion {
     return new Cancion(nombre, 'sin banda', new Acordes([], []), new Letra([]))

@@ -1,7 +1,7 @@
 import { Formatter, RenderContext, Stave, StaveNote } from 'vexflow'
-import type { CompasPentagrama } from './compaspentagrama'
+import type { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 
-export class Pentagrama {
+export class DisplayClavePentagrama {
   getStave(context: RenderContext): Stave {
     console.log('DIBUJANDO PENTAGRAMA')
     const stave = new Stave(10, 0, 700)
@@ -9,7 +9,10 @@ export class Pentagrama {
 
     const misNotas: StaveNote[] = []
     for (const compas of this.compases) {
-      misNotas.push(...compas.getStaveNote())
+      const staveNotes = compas.getStaveNote()
+      if (staveNotes) {
+        misNotas.push(...staveNotes)
+      }
     }
 
     // Dibujar el pentagrama primero
@@ -29,9 +32,9 @@ export class Pentagrama {
 
     return stave
   }
-  public compases: CompasPentagrama[] = []
+  public compases: DisplayCompasPentagrama[] = []
 
-  constructor(compases: CompasPentagrama[] = []) {
+  constructor(compases: DisplayCompasPentagrama[] = []) {
     this.compases = compases
   }
 }

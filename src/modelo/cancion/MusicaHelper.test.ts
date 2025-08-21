@@ -109,5 +109,10 @@ describe('MusicaHelper', () => {
     expect(helper.GetNotasdeacorde('A5')).toEqual(['A', 'E'])
     expect(helper.GetNotasdeacorde('D5')).toEqual(['D', 'A'])
     expect(helper.GetNotasdeacorde('C7')).toEqual(['C', 'E', 'G', 'B'])
+    expect(helper.GetNotasdeacorde('C6')).toEqual(['C', 'E', 'G', 'A'])
+    expect(helper.GetNotasdeacorde('A6')).toEqual(['A', 'C#', 'E', 'F#'])
+    expect(helper.GetNotasdeacorde('C4')).toEqual(['C', 'E', 'F', 'G'])
+    expect(helper.GetNotasdeacorde('F#4')).toEqual(['F#', 'A#', 'B', 'C#'])
+
   })
 })

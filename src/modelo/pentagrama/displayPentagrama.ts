@@ -1,5 +1,5 @@
-import type { RenglonPentagrama } from './renglonpentagrama'
+import type { DisplayRenglonPentagrama } from './DisplayRenglonPentagrama'
 
 export class DisplayPentagrama {
-  public renglones: RenglonPentagrama[] = []
+  public renglones: DisplayRenglonPentagrama[] = []
 }

@@ -1,8 +1,8 @@
-import type { NotaPentagrama } from './notapentagrama'
+import type { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 
 export class AcordePentagrama {
-  public notas: NotaPentagrama[]
-  constructor(notas: NotaPentagrama[]) {
+  public notas: DisplayNotaPentagrama[]
+  constructor(notas: DisplayNotaPentagrama[]) {
     this.notas = notas
   }
 }

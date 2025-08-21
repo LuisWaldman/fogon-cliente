@@ -8,6 +8,7 @@ import { CancionUrlManager } from './CancionUrlManager'
 import { CancionIndexedDBManager } from './CancionIndexedDBManager'
 import { CancionSubidasManager } from './CancionSubidasUrlManager'
 import { CancionFogonManager } from './CancionFogonManager'
+import { HelperPentagramas } from '../pentagrama/helperPentagramas'
 
 export class CancionManager {
   private static instance: CancionManager
@@ -107,6 +108,8 @@ export class CancionManager {
   public async Get(origencancion: OrigenCancion): Promise<Cancion> {
     const cancion = this.InternalGet(origencancion)
     const acancion = await cancion
+    const helpPenta = new HelperPentagramas()
+    acancion.pentagramas[0] = helpPenta.creaPentagrama(acancion)
     const item = ItemIndiceCancion.BuildFromCancion(acancion, origencancion)
     const ultimas = new UltimasCanciones()
     ultimas.agregar(item)

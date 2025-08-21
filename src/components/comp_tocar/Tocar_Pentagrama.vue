@@ -4,7 +4,7 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
 
-import { DisplayPentagrama } from '../../modelo/pentagrama/displayPentagrama'
+import { DisplayPentagrama } from '../../modelo/pentagrama/DisplayPentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 
 const props = defineProps<{
@@ -28,6 +28,7 @@ watch(
 )
 </script>
 <template>
+  
   <div class="componenteMusical">
     <div v-for="(renglon, index) in display.renglones" :key="index">
       <renglonPentagrama

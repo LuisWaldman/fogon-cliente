@@ -275,13 +275,25 @@ export class MusicaHelper {
     const toRet: string[] = []
     let acordeBase = acorde
     let tiene5 = false
+    let tiene6 = false
     let tiene7 = false
+    let tiene4 = false
     if (acorde.includes('/')) {
       acordeBase = acorde.split('/')[0]
+    }
+
+    if (acorde.includes('4')) {
+      acordeBase = acordeBase.replace('4', '')
+      tiene4 = true
     }
     if (acorde.includes('5')) {
       acordeBase = acordeBase.replace('5', '')
       tiene5 = true
+    }
+
+    if (acorde.includes('6')) {
+      acordeBase = acordeBase.replace('6', '')
+      tiene6 = true
     }
     if (acorde.includes('7')) {
       acordeBase = acordeBase.replace('7', '')
@@ -292,9 +304,15 @@ export class MusicaHelper {
     if (!tiene5) {
       toRet.push(notas[2])
     }
+    if (tiene4) {
+      toRet.push(notas[3])
+    }
     toRet.push(notas[4])
     if (tiene7) {
       toRet.push(notas[6])
+    }
+    if (tiene6) {
+      toRet.push(notas[5])
     }
 
     return toRet

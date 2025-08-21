@@ -1,4 +1,2 @@
 <script lang="ts" setup></script>
-<template>
-  MIDI
-</template>
+<template>MIDI</template>

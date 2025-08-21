@@ -8,11 +8,11 @@ import {
   Beam,
   StaveConnector,
 } from 'vexflow'
-import type { RenglonPentagrama } from '../../modelo/pentagrama/renglonpentagrama'
+import type { DisplayRenglonPentagrama } from '../../modelo/pentagrama/DisplayRenglonPentagrama'
 import type { Cancion } from '../../modelo/cancion/cancion'
 
 const props = defineProps<{
-  renglon: RenglonPentagrama
+  renglon: DisplayRenglonPentagrama
   cancion: Cancion
 }>()
 
@@ -20,7 +20,7 @@ const scoreContainer = ref<HTMLDivElement | null>(null)
 
 onMounted(() => {
   if (!scoreContainer.value) return
-
+  
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
   renderer.resize(900, 100)
   const context = renderer.getContext()
