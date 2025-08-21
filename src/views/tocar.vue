@@ -42,6 +42,7 @@ vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
 vista.value.proximosAcordes =
   localStorage.getItem('proximosAcordes') == 'true' ? true : false
 vista.value.media = localStorage.getItem('media') == 'true' ? true : false
+vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
 
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia

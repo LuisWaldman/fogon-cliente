@@ -49,7 +49,7 @@ function tocar() {
   const note =
     instrumentosBateria[sonidoxgolpe.value[appStore.golpeDelCompas + 1]].nota
   if (note != '') {
-    midiPlayer.play(note, 0.05, 0)
+    midiPlayer.tocarysoltar(note, 0.05, 0)
   }
 }
 

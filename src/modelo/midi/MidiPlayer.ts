@@ -35,21 +35,21 @@ export class MidiPlayer {
 
   // ▶️ Control de reproducción
   public start(): void {
-    Tone.Transport.start()
+    Tone.getTransport().start()
   }
 
   public pause(): void {
-    Tone.Transport.pause()
+    Tone.getTransport().pause()
   }
 
   public stop(): void {
-    Tone.Transport.stop()
-    Tone.Transport.seconds = 0
+    Tone.getTransport().stop()
+    Tone.getTransport().seconds = 0
   }
 
   // ⏱️ Tiempo actual en milisegundos
   public getCurrentTime(): number {
-    return Tone.Transport.seconds * 1000
+    return Tone.getTransport().seconds * 1000
   }
 
   // 🎯 Reproducción directa de nota con duración y delay
