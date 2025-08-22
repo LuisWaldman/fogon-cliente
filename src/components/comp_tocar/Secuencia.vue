@@ -108,9 +108,17 @@ Actualizar(props.cancion)
             >{{ cancion.acordes.partes[parte].nombre }}</span
           ></div>
         <div class="ordendiv">
-          <span class="acordeSecuencia" v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte].acordes" :key="acordeIndex">
+          <span class="acordeSecuencia" 
+
+          v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte].acordes" :key="acordeIndex"
+          :class="{
+            acordeSeleccionado: mostrandoCompasparte === acordeIndex && mostrandoResumenParteIndex === index
+          }"
+          >
             {{ acorde }}
+            
           </span>
+          
           
         </div>
         <div class="repeticion" v-if="reperesu[index] > 1">
@@ -143,6 +151,11 @@ Actualizar(props.cancion)
   padding: 5px;
   border-radius: 5px;
 }
+.acordeSeleccionado {
+  background-color: #a9a8f6;
+  color: black;
+}
+
 .ordendiv {
   margin: 1px;
   padding: 5px;
