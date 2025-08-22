@@ -15,7 +15,7 @@ const emit = defineEmits<{
 }>()
 
 const urlYoutube = ref('')
-const media = ref('dQw4w9WgXcQ')
+const media = ref('')
 const delay = ref(0)
 
 const shouldLoad = ref(false)

@@ -3,7 +3,9 @@ import { ref, type Ref } from 'vue'
 //import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
+import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarYoutube from '../components/comp_tocar/Tocar_Youtube.vue'
+import TocarMidi from '../components/comp_tocar/Tocar_Midi.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
@@ -27,6 +29,7 @@ const appStore = useAppStore()
 class vistaTocar {
   viendo: string = 'karaoke'
   media: boolean = false
+  midi: boolean = false
   secuencia: boolean = true
   partes: boolean = true
   proximosAcordes: boolean = false
@@ -39,6 +42,7 @@ vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
 vista.value.proximosAcordes =
   localStorage.getItem('proximosAcordes') == 'true' ? true : false
 vista.value.media = localStorage.getItem('media') == 'true' ? true : false
+vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
 
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
@@ -52,6 +56,11 @@ function clickPartes() {
 function clickMedia() {
   vista.value.media = !vista.value.media
   localStorage.setItem('media', vista.value.media ? 'true' : 'false')
+}
+
+function clickMidi() {
+  vista.value.midi = !vista.value.midi
+  localStorage.setItem('midi', vista.value.midi ? 'true' : 'false')
 }
 
 function clickAcordes() {
@@ -78,7 +87,9 @@ function estiloVistaPrincipal() {
   if (
     vista.value.secuencia ||
     vista.value.proximosAcordes ||
-    vista.value.partes
+    vista.value.partes ||
+    vista.value.midi ||
+    vista.value.media
   ) {
     ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
   }
@@ -90,7 +101,9 @@ function estiloVistaSecundaria() {
   if (
     vista.value.secuencia ||
     vista.value.proximosAcordes ||
-    vista.value.partes
+    vista.value.partes ||
+    vista.value.midi ||
+    vista.value.media
   ) {
     ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
   }
@@ -151,6 +164,11 @@ function cambioestado(estado: number) {
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarAcorde>
+        <TocarPentagrama
+          v-if="vista.viendo == 'pentagrama'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarPentagrama>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <TocarYoutube
@@ -159,13 +177,19 @@ function cambioestado(estado: number) {
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarYoutube>
+        <TocarMidi
+          v-if="vista.midi"
+          @cambioEstado="cambioestado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarMidi>
 
-        <div style="max-height: 50%; overflow-y: auto" v-if="vista.secuencia">
-          <Secuencia
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-          ></Secuencia>
-        </div>
+        <Secuencia
+          v-if="vista.secuencia"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></Secuencia>
+
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"
@@ -200,12 +224,22 @@ function cambioestado(estado: number) {
           <li v-on:click="cambiarVista('soloacordes')">
             <a class="dropdown-item" href="#">Solo Acordes</a>
           </li>
+          <li v-on:click="cambiarVista('pentagrama')">
+            <a class="dropdown-item" href="#">Pentagrama</a>
+          </li>
           <li><hr class="dropdown-divider" /></li>
 
           <li v-on:click="clickMedia()">
             <a class="dropdown-item" href="#">
               <i class="bi bi-check-circle" v-if="vista.media"></i>
               Media</a
+            >
+          </li>
+
+          <li v-on:click="clickMidi()">
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-check-circle" v-if="vista.midi"></i>
+              Midi</a
             >
           </li>
           <li v-on:click="clickSecuencia()">

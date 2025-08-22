@@ -228,9 +228,7 @@ export class MusicaHelper {
 
     let notaInd = this.numeroNota(buscar)
     const modoSusecion: number[] = this.modos[modoEscala]
-    const modoParaacorde: string[] = this.modosParaacorde[modoEscala]
-
-    const acordes = [this.notas[notaInd] + modoParaacorde[0]]
+    const acordes = [this.notas[notaInd]]
     for (let i = 0; i < modoSusecion.length; i++) {
       notaInd += modoSusecion[i]
       acordes.push(this.notas[notaInd % this.notas.length])
@@ -273,22 +271,83 @@ export class MusicaHelper {
     }
     return false
   }
-  getNotasdeacorde(acorde: string, escala: string = ''): string[] {
+  GetNotasdeacorde(acorde: string, octava: number): string[] {
     const toRet: string[] = []
-    const notas = this.GetNotasdeescala(acorde)
-    let escaPut = escala
-    toRet.push(notas[0] + escaPut)
-    if (this.esMenor(notas[2], notas[0])) {
-      console.log(escaPut, escala, notas[2], notas[0])
-      escaPut = (parseInt(escaPut) + 1).toString()
-      console.log(escaPut, escala)
+    let acordeBase = acorde
+    let tiene5 = false
+    let tiene6 = false
+    let tiene7 = false
+    let tiene4 = false
+    let tiene9 = false
+    if (acorde.includes('/')) {
+      acordeBase = acorde.split('/')[0]
     }
-    toRet.push(notas[2] + escaPut)
-    if (this.esMenor(notas[4], notas[0]) && escaPut == escala) {
-      escaPut = (parseInt(escaPut) + 1).toString()
-    }
-    toRet.push(notas[4] + escaPut)
 
+    if (acorde.includes('4')) {
+      acordeBase = acordeBase.replace('4', '')
+      tiene4 = true
+    }
+    if (acorde.includes('9')) {
+      acordeBase = acordeBase.replace('9', '')
+      tiene9 = true
+    }
+    if (acorde.includes('5')) {
+      acordeBase = acordeBase.replace('5', '')
+      tiene5 = true
+    }
+
+    if (acorde.includes('6')) {
+      acordeBase = acordeBase.replace('6', '')
+      tiene6 = true
+    }
+    if (acorde.includes('7')) {
+      acordeBase = acordeBase.replace('7', '')
+      tiene7 = true
+    }
+    const notas = this.GetNotasdeescala(acordeBase)
+    const nronota = this.notas.indexOf(notas[0])
+    let octavaActual = octava.toString()
+    toRet.push(notas[0] + octavaActual)
+
+    if (!tiene5) {
+      if (this.notas.indexOf(notas[2]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[2] + octavaActual)
+    }
+    if (tiene4) {
+      if (this.notas.indexOf(notas[3]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[3] + octavaActual)
+    }
+    if (this.notas.indexOf(notas[4]) < nronota) {
+      octavaActual = (octava + 1).toString()
+    }
+    toRet.push(notas[4] + octavaActual)
+
+    if (tiene6) {
+      if (this.notas.indexOf(notas[5]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[5] + octavaActual)
+    }
+
+    if (tiene7) {
+      if (this.notas.indexOf(notas[6]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[6] + octavaActual)
+    }
+
+    if (tiene9) {
+      if (this.notas.indexOf(notas[1]) < nronota) {
+        octavaActual = (octava + 2).toString()
+      } else {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[1] + octavaActual)
+    }
     return toRet
   }
 }

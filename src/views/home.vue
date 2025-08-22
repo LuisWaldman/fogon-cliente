@@ -75,8 +75,7 @@ function clickTocar(cancion: OrigenCancion) {
 <template>
   <div class="home">
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
-      Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
-      off-line. En esta version, podes ver las noticias locales
+      Intentando conectar ...
     </p>
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Revisa los servidores en configuracion y conectate a un fogon

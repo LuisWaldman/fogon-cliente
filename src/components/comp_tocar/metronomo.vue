@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { watch } from 'vue'
-import MidiPlayer from '../../modelo/midi/MidiPlayer'
+
 let midiPlayer = new MidiPlayer()
 import { useAppStore } from '../../stores/appStore'
+import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 const appStore = useAppStore()
 const midiCargado = ref(false)
 let sonidoxgolpe = ref([1, 1, 1, 1, 1, 1, 1, 1, 1])
@@ -48,7 +49,7 @@ function tocar() {
   const note =
     instrumentosBateria[sonidoxgolpe.value[appStore.golpeDelCompas + 1]].nota
   if (note != '') {
-    midiPlayer.play(note, 0.05, 0)
+    midiPlayer.tocarysoltar(note, 0.05, 0)
   }
 }
 

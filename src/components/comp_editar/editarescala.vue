@@ -159,5 +159,3 @@ th {
   color: #a9a8f6;
 }
 </style>
-
-function emit(arg0: string) { throw new Error('Function not implemented.') }
