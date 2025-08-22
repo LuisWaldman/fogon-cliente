@@ -11,11 +11,17 @@ export class DisplayCompasPentagrama {
     const keys = this.Notas.filter((nota) => nota.nota !== undefined).map(
       (nota) => nota.nota.toLowerCase() + '/' + nota.octava,
     )
+
     const notes = [
-      new StaveNote({ keys: keys, duration: this.duracion.toString() }),
+      new StaveNote({
+        keys: keys,
+        duration: this.duracion.toString(),
+      }),
     ]
+
+    console.log('Steve para duracion:', this.duracion, 'keys:', keys)
     return notes
   }
   public Notas: DisplayNotaPentagrama[] = []
-  public duracion: string = 'qd'
+  public duracion: string = '2'
 }

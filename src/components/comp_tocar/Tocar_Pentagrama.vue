@@ -18,7 +18,6 @@ onMounted(() => {
   display.value = helper.creaDisplayPentagrama(props.cancion)
 })
 
-// Also add a watcher in case the cancion prop changes
 watch(
   () => props.cancion,
   (newCancion) => {
@@ -28,6 +27,11 @@ watch(
 </script>
 <template>
   <div class="componenteMusical">
+    <div>
+      <div v-for="(pentagrama, index) in cancion.pentagramas" :key="index">
+        {{ pentagrama.instrumento }}
+      </div>
+    </div>
     <div v-for="(renglon, index) in display.renglones" :key="index">
       <renglonPentagrama
         :renglon="renglon"

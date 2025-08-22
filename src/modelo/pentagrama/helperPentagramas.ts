@@ -13,6 +13,7 @@ export class HelperPentagramas {
   private musica = new MusicaHelper()
   public creaPentagrama(cancion: Cancion): Pentagrama {
     const pentagrama = new Pentagrama()
+    pentagrama.instrumento = 'Piano-izq'
     const acordes = cancion.acordes.GetTodosLosAcordes()
     for (const acorde of acordes) {
       let acoPost = acorde
@@ -41,7 +42,7 @@ export class HelperPentagramas {
       const compPenta = this.creaCompasPentagrama(pentagrama.compases[i])
       nuevorenglon.pentagramas[0].compases.push(compPenta)
 
-      if (i > 0 && i % 3 === 0) {
+      if (i > 0 && (i + 1) % 4 === 0) {
         display.renglones.push(nuevorenglon)
         nuevorenglon = new DisplayRenglonPentagrama()
         nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
@@ -57,8 +58,11 @@ export class HelperPentagramas {
     pentagramaCompas: PentagramaCompas,
   ): DisplayCompasPentagrama {
     const compas = new DisplayCompasPentagrama()
+    compas.duracion = '1' // Default duration
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       for (const nota of pentagramaCompas.notas[i]) {
+        compas.duracion = nota.duracion // Set duration based on the last note
+        console.log("ESTABLECE DURACION:", compas.duracion)
         let notaOk = nota.nota
         let octava = 4
 

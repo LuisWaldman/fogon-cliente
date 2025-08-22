@@ -3,7 +3,6 @@ import type { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 
 export class DisplayInstrumentoPentagrama {
   getStave(context: RenderContext): Stave {
-    console.log('DIBUJANDO PENTAGRAMA')
     const stave = new Stave(10, 0, 700)
     stave.addClef('treble').addTimeSignature('4/4')
 

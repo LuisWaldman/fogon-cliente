@@ -110,6 +110,8 @@ export class CancionManager {
     const acancion = await cancion
     const helpPenta = new HelperPentagramas()
     acancion.pentagramas[0] = helpPenta.creaPentagrama(acancion)
+    acancion.pentagramas[1] = helpPenta.creaPentagrama(acancion)
+    acancion.pentagramas[1].instrumento = 'Piano-der'
     const item = ItemIndiceCancion.BuildFromCancion(acancion, origencancion)
     const ultimas = new UltimasCanciones()
     ultimas.agregar(item)
