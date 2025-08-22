@@ -19,7 +19,6 @@ export class DisplayCompasPentagrama {
       }),
     ]
 
-    console.log('Steve para duracion:', this.duracion, 'keys:', keys)
     return notes
   }
   public Notas: DisplayNotaPentagrama[] = []

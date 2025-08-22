@@ -17,7 +17,12 @@ defineProps<{
 }>()
 
 const viendo = ref('' as string)
+const emit = defineEmits(['editarPentagramas'])
 function clickCambiar(nviendo: string) {
+  if (nviendo === 'pentagramas') {
+    emit('editarPentagramas')
+    return
+  }
   viendo.value = nviendo
 }
 
@@ -52,6 +57,9 @@ function clickCerrar(modificado: boolean) {
     >
     <label>Medios: {{ cancion.medias.length }}</label
     ><label @click="clickCambiar('medias')">🔄</label>
+    
+    <label>Pentagramas: {{ cancion.pentagramas.length }}</label
+    ><label @click="clickCambiar('pentagramas')">🔄</label>
     <div>
       <editarmedias
         v-if="viendo == 'medias'"

@@ -4,11 +4,15 @@ import cabecera from '../components/comp_editar/editarcabecera.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
+import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import Secuencia from '../components/comp_editar/Secuencia.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
+import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
+
 import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
+import { vi } from 'vitest'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -51,7 +55,7 @@ function cambiarVista(nvista: string) {
   localStorage.setItem('viendo_vista_editando', nvista)
 }
 
-function clickCerrarEditarTexto() {
+function clickCerrarEditar() {
   // Set the current view to 'inicio'
   cambiarVista('inicio')
 }
@@ -85,6 +89,7 @@ watch(
   <cabecera
     :cancion="appStore.editandocancion"
     :origen="appStore.origenEditando"
+    @editarPentagramas="cambiarVista('pentagramas')"
   ></cabecera>
   <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
     <div style="width: 70%" :style="estiloVistaPrincipal()">
@@ -96,8 +101,16 @@ watch(
         🔄
       </div>
 
+      <TocarPentagrama
+        v-if="vista.viendo === 'pentagramas'"
+        :cancion="appStore.editandocancion"
+        :compas="editandoCompas"
+        ref="ctrlEditarTexto"
+        @clickCompas="cambiarCompas"
+      ></TocarPentagrama>
+
       <TocarLetraAcorde
-        v-if="vista.viendo != 'editartexto'"
+        v-if="vista.viendo != 'editartexto' && vista.viendo != 'pentagramas'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         ref="ctrlEditarTexto"
@@ -106,7 +119,7 @@ watch(
 
       <editartexto
         v-if="vista.viendo == 'editartexto'"
-        @cerrar="clickCerrarEditarTexto"
+        @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
         :ver-acordes="vista.verEditandoAcordes"
@@ -114,7 +127,16 @@ watch(
       ></editartexto>
     </div>
 
-    <div :style="estiloVistaSecundaria()">
+    <div :style="estiloVistaSecundaria()" v-if="vista.viendo === 'pentagramas'">
+<editarpentagrama
+        @cerrar="clickCerrarEditar"
+        :cancion="appStore.editandocancion"
+        :compas="appStore.compas"
+>
+
+</editarpentagrama>
+    </div>
+    <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">
       <sugerencias
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
@@ -133,7 +155,7 @@ watch(
 
       <consola-acordes
         v-if="vista.viendo == 'editconsolaacordes'"
-        @cerrar="clickCerrarEditarTexto"
+        @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
       ></consola-acordes>

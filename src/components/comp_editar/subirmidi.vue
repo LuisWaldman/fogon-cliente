@@ -2,8 +2,11 @@
 import { ref } from 'vue'
 import { MidiHelper } from '../../modelo/midi/MidiHelper'
 import { Midi } from '@tonejs/midi'
-import type { Pentagrama } from '../../modelo/cancion/pentagrama'
-
+import { Pentagrama } from '../../modelo/cancion/pentagrama'
+import { Cancion } from '../../modelo/cancion/cancion';
+const props = defineProps<{
+  cancion: Cancion
+}>()
 const estadoSubida = ref('')
 const fileInput = ref<HTMLInputElement | null>(null)
 const pentagramas = ref<Pentagrama[]>([])
@@ -54,9 +57,7 @@ function manejarSeleccionArchivo(event: Event) {
 </script>
 
 <template>
-  <div class="cancion" @click="abrirDialogoArchivo">
-    <div class="nombreCancion">SUBIR MIDI</div>
-    {{ estadoSubida }}
+  <span @click="abrirDialogoArchivo">[Subir Midi] {{ estadoSubida }}</span>
     <input
       ref="fileInput"
       type="file"
@@ -64,8 +65,8 @@ function manejarSeleccionArchivo(event: Event) {
       style="display: none"
       @change="manejarSeleccionArchivo"
     />
-  </div>
-  <div>
+  
+  <div v-if="pentagramas.length > 0">
     {{ pentagramas }}
   </div>
 </template>
