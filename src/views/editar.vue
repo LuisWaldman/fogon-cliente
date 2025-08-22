@@ -49,6 +49,7 @@ function estiloVistaSecundaria() {
 }
 const ctrlEditarTexto = ref()
 const ctrlSecuencia = ref()
+const ctrlTocarPentagrama = ref()
 
 function cambiarVista(nvista: string) {
   vista.value.viendo = nvista
@@ -64,6 +65,7 @@ function Actualizar() {
   if (ctrlEditarTexto.value) {
     ctrlEditarTexto.value.Actualizar()
     ctrlSecuencia.value.Actualizar()
+    ctrlTocarPentagrama.value.Actualizar()
   }
 }
 
@@ -105,8 +107,8 @@ watch(
         v-if="vista.viendo === 'pentagramas'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
-        ref="ctrlEditarTexto"
         @clickCompas="cambiarCompas"
+        ref="ctrlTocarPentagrama"
       ></TocarPentagrama>
 
       <TocarLetraAcorde
@@ -130,6 +132,7 @@ watch(
     <div :style="estiloVistaSecundaria()" v-if="vista.viendo === 'pentagramas'">
 <editarpentagrama
         @cerrar="clickCerrarEditar"
+        @actualizoPentagrama="Actualizar"
         :cancion="appStore.editandocancion"
         :compas="appStore.compas"
 >

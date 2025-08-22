@@ -15,15 +15,20 @@ const display = ref(new DisplayPentagrama())
 
 const helper = new HelperPentagramas()
 onMounted(() => {
-  display.value = helper.creaDisplayPentagrama(props.cancion)
+  Actualizar()
 })
+
+function Actualizar() {
+  display.value = helper.creaDisplayPentagrama(props.cancion)
+}
 
 watch(
   () => props.cancion,
-  (newCancion) => {
-    display.value = helper.creaDisplayPentagrama(newCancion)
+  () => {
+    Actualizar()
   },
 )
+defineExpose({ Actualizar })
 </script>
 <template>
   <div class="componenteMusical">
