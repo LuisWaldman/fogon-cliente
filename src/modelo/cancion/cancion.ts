@@ -19,7 +19,9 @@ export class Cancion {
   public pentagramas: Pentagrama[] = []
 
   public static GetDefault(nombre: string): Cancion {
-    return new Cancion(nombre, 'sin banda', new Acordes([], []), new Letra([]))
+    const ret = new Cancion(nombre, 'sin banda', new Acordes([], []), new Letra([]))
+    ret.escala = 'C'
+    return ret
   }
 
   public get duracionCompas(): number {
