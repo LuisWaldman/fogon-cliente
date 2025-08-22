@@ -1,13 +1,13 @@
 import type { Cancion } from '../cancion/cancion'
 import { MusicaHelper } from '../cancion/MusicaHelper'
 import { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
-import { DisplayPentagrama } from './DisplayPentagrama'
 import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 import { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
 import { DisplayRenglonPentagrama } from './DisplayRenglonPentagrama'
 import { Pentagrama } from '../cancion/pentagrama'
 import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { PentagramaNotas } from '../cancion/pentagramanotas'
+import { DisplayPentagrama } from './DisplayPentagrama'
 
 export class HelperPentagramas {
   private musica = new MusicaHelper()
