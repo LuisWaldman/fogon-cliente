@@ -96,32 +96,22 @@ Actualizar(props.cancion)
   <div v-if="Actualizado()" @click="Actualizar(props.cancion)">
     .. No cargada ..
   </div>
-  <div v-if="reperesu.length == 0">
-    <span style="font-size: large">Secuencia</span>
-    <div class="secuencia">
-      <div
-        v-for="(parte, index) in cancion.acordes.ordenPartes"
-        :key="index"
-        class="ordendiv"
-      >
-        <span :class="{ compas_actual: mostrandoParte === index }">{{
-          cancion.acordes.partes[parte].nombre
-        }}</span>
-      </div>
-    </div>
-  </div>
-
   <div v-if="reperesu.length > 0">
-    <span style="font-size: large">Secuencia</span>
+    
     <div style="display: flex; flex-wrap: wrap">
       <div v-for="(parte, index) in secuResu" :key="index" class="secuencia">
-        <div class="ordendiv">
-          <span
+        <div>
+        <span style="color: #a9a8f6; font-size: small"
             :class="{
               compas_actual: mostrandoResumenParteIndex === index,
             }"
             >{{ cancion.acordes.partes[parte].nombre }}</span
-          >
+          ></div>
+        <div class="ordendiv">
+          <span class="acordeSecuencia" v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte].acordes" :key="acordeIndex">
+            {{ acorde }}
+          </span>
+          
         </div>
         <div class="repeticion" v-if="reperesu[index] > 1">
           <span v-if="mostrandoResumenParteIndex != index"
@@ -140,9 +130,13 @@ Actualizar(props.cancion)
 .read-the-docs {
   color: #888;
 }
+.acordeSecuencia {
+  color: #a9a8f6;
+  font-size: var(--tamanio-parte);
+  margin-right: 5px;
+}
 .secuencia {
   font-size: var(--tamanio-parte);
-  display: flex;
   flex-wrap: wrap;
   border: 1px solid;
   margin: 1px;
