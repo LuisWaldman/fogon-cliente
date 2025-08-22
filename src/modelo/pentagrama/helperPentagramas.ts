@@ -62,7 +62,7 @@ export class HelperPentagramas {
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       for (const nota of pentagramaCompas.notas[i]) {
         compas.duracion = nota.duracion // Set duration based on the last note
-        console.log("ESTABLECE DURACION:", compas.duracion)
+        console.log('ESTABLECE DURACION:', compas.duracion)
         let notaOk = nota.nota
         let octava = 4
 

@@ -57,7 +57,7 @@ function clickCerrar(modificado: boolean) {
     >
     <label>Medios: {{ cancion.medias.length }}</label
     ><label @click="clickCambiar('medias')">🔄</label>
-    
+
     <label>Pentagramas: {{ cancion.pentagramas.length }}</label
     ><label @click="clickCambiar('pentagramas')">🔄</label>
     <div>

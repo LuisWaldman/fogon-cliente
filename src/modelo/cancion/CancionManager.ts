@@ -8,7 +8,6 @@ import { CancionUrlManager } from './CancionUrlManager'
 import { CancionIndexedDBManager } from './CancionIndexedDBManager'
 import { CancionSubidasManager } from './CancionSubidasUrlManager'
 import { CancionFogonManager } from './CancionFogonManager'
-import { HelperPentagramas } from '../pentagrama/helperPentagramas'
 
 export class CancionManager {
   private static instance: CancionManager

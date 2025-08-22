@@ -19,7 +19,12 @@ export class Cancion {
   public pentagramas: Pentagrama[] = []
 
   public static GetDefault(nombre: string): Cancion {
-    const ret = new Cancion(nombre, 'sin banda', new Acordes([], []), new Letra([]))
+    const ret = new Cancion(
+      nombre,
+      'sin banda',
+      new Acordes([], []),
+      new Letra([]),
+    )
     ret.escala = 'C'
     return ret
   }

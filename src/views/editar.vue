@@ -12,7 +12,6 @@ import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 
 import { ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
-import { vi } from 'vitest'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -65,7 +64,6 @@ function Actualizar() {
   if (ctrlEditarTexto.value) {
     ctrlEditarTexto.value.Actualizar()
     ctrlSecuencia.value.Actualizar()
-    
   } else {
     ctrlTocarPentagrama.value.Actualizar()
   }
@@ -133,13 +131,12 @@ watch(
     </div>
 
     <div :style="estiloVistaSecundaria()" v-if="vista.viendo === 'pentagramas'">
-<editarpentagrama
+      <editarpentagrama
         @cerrar="clickCerrarEditar"
         @actualizoPentagrama="Actualizar"
         :cancion="appStore.editandocancion"
->
-
-</editarpentagrama>
+      >
+      </editarpentagrama>
     </div>
     <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">
       <sugerencias

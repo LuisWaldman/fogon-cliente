@@ -183,13 +183,13 @@ function cambioestado(estado: number) {
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarMidi>
-        
-          <Secuencia
+
+        <Secuencia
           v-if="vista.secuencia"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-          ></Secuencia>
-        
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></Secuencia>
+
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"

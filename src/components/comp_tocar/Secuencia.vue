@@ -97,29 +97,31 @@ Actualizar(props.cancion)
     .. No cargada ..
   </div>
   <div v-if="reperesu.length > 0">
-    
     <div style="display: flex; flex-wrap: wrap">
       <div v-for="(parte, index) in secuResu" :key="index" class="secuencia">
         <div>
-        <span style="color: #a9a8f6; font-size: small"
+          <span
+            style="color: #a9a8f6; font-size: small"
             :class="{
               compas_actual: mostrandoResumenParteIndex === index,
             }"
             >{{ cancion.acordes.partes[parte].nombre }}</span
-          ></div>
+          >
+        </div>
         <div class="ordendiv">
-          <span class="acordeSecuencia" 
-
-          v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte].acordes" :key="acordeIndex"
-          :class="{
-            acordeSeleccionado: mostrandoCompasparte === acordeIndex && mostrandoResumenParteIndex === index
-          }"
+          <span
+            class="acordeSecuencia"
+            v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte]
+              .acordes"
+            :key="acordeIndex"
+            :class="{
+              acordeSeleccionado:
+                mostrandoCompasparte === acordeIndex &&
+                mostrandoResumenParteIndex === index,
+            }"
           >
             {{ acorde }}
-            
           </span>
-          
-          
         </div>
         <div class="repeticion" v-if="reperesu[index] > 1">
           <span v-if="mostrandoResumenParteIndex != index"
