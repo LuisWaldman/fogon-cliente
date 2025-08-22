@@ -19,8 +19,8 @@ export class HelperPentagramas {
       if (acorde.includes(' ')) {
         acoPost = acorde.split(' ')[0]
       }
-      const notas = this.musica.GetNotasdeacorde(acoPost).map((nota) => {
-        return new PentagramaNotas(nota + '4', 1)
+      const notas = this.musica.GetNotasdeacorde(acoPost, 4).map((nota) => {
+        return new PentagramaNotas(nota, '1')
       })
       const nuevoCompas = new PentagramaCompas()
       nuevoCompas.notas.push(notas)

@@ -271,13 +271,14 @@ export class MusicaHelper {
     }
     return false
   }
-  GetNotasdeacorde(acorde: string): string[] {
+  GetNotasdeacorde(acorde: string, octava: number): string[] {
     const toRet: string[] = []
     let acordeBase = acorde
     let tiene5 = false
     let tiene6 = false
     let tiene7 = false
     let tiene4 = false
+    let tiene9 = false
     if (acorde.includes('/')) {
       acordeBase = acorde.split('/')[0]
     }
@@ -285,6 +286,10 @@ export class MusicaHelper {
     if (acorde.includes('4')) {
       acordeBase = acordeBase.replace('4', '')
       tiene4 = true
+    }
+    if (acorde.includes('9')) {
+      acordeBase = acordeBase.replace('9', '')
+      tiene9 = true
     }
     if (acorde.includes('5')) {
       acordeBase = acordeBase.replace('5', '')
@@ -300,21 +305,49 @@ export class MusicaHelper {
       tiene7 = true
     }
     const notas = this.GetNotasdeescala(acordeBase)
-    toRet.push(notas[0])
+    const nronota = this.notas.indexOf(notas[0])
+    let octavaActual = octava.toString()
+    toRet.push(notas[0] + octavaActual)
+
     if (!tiene5) {
-      toRet.push(notas[2])
+      if (this.notas.indexOf(notas[2]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[2] + octavaActual)
     }
     if (tiene4) {
-      toRet.push(notas[3])
+      if (this.notas.indexOf(notas[3]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[3] + octavaActual)
     }
-    toRet.push(notas[4])
-    if (tiene7) {
-      toRet.push(notas[6])
+    if (this.notas.indexOf(notas[4]) < nronota) {
+      octavaActual = (octava + 1).toString()
     }
+    toRet.push(notas[4] + octavaActual)
+
     if (tiene6) {
-      toRet.push(notas[5])
+      if (this.notas.indexOf(notas[5]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[5] + octavaActual)
     }
 
+    if (tiene7) {
+      if (this.notas.indexOf(notas[6]) < nronota) {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[6] + octavaActual)
+    }
+
+    if (tiene9) {
+      if (this.notas.indexOf(notas[1]) < nronota) {
+        octavaActual = (octava + 2).toString()
+      } else {
+        octavaActual = (octava + 1).toString()
+      }
+      toRet.push(notas[1] + octavaActual)
+    }
     return toRet
   }
 }
