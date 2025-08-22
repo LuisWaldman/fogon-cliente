@@ -1,8 +1,8 @@
 export class PentagramaNotas {
-  public notas: string[]
-  public duracion: number
-  constructor(notas: string[], duracion: number) {
-    this.notas = notas
+  public nota: string
+  public duracion: string
+  constructor(nota: string, duracion: string) {
+    this.nota = nota
     this.duracion = duracion
   }
 }

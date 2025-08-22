@@ -6,6 +6,7 @@ import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 
 import cancionComp from '../components/comp_home/cancion.vue'
 import subircancion from '../components/comp_home/subircancion.vue'
+import subirmidi from '../components/comp_editar/subirmidi.vue'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
@@ -74,6 +75,7 @@ function clickTocar(cancion: OrigenCancion) {
 </script>
 <template>
   <div class="home">
+    <subirmidi></subirmidi>
     <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
       Esta desconectado! No Pasa nada, el fogon esta preparado para funcionar
       off-line. En esta version, podes ver las noticias locales

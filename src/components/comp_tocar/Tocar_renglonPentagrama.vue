@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import {
-  Renderer,
-  Stave,
-  StaveNote,
-  Formatter,
-  Beam,
-  StaveConnector,
-} from 'vexflow'
+import { Renderer } from 'vexflow'
 import type { DisplayRenglonPentagrama } from '../../modelo/pentagrama/DisplayRenglonPentagrama'
 import type { Cancion } from '../../modelo/cancion/cancion'
 

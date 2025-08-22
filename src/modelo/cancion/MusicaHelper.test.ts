@@ -54,7 +54,7 @@ describe('MusicaHelper', () => {
       'F#',
     ])
     expect(helper.GetNotasdeescala('Am')).toEqual([
-      'Am',
+      'A',
       'B',
       'C',
       'D',
@@ -63,7 +63,7 @@ describe('MusicaHelper', () => {
       'G',
     ])
     expect(helper.GetNotasdeescala('Dm')).toEqual([
-      'Dm',
+      'D',
       'E',
       'F',
       'G',

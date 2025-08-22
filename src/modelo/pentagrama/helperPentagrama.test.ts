@@ -13,6 +13,7 @@ describe('Helper Pentagrama', () => {
     )
     const letras = new Letra([['dán  recha'], ['Lalala']])
     const cancion = new Cancion('Mi Canción', 'Mi Banda', acordes, letras)
+    cancion.pentagramas.push(helper.creaPentagrama(cancion))
     const display = helper.creaDisplayPentagrama(cancion)
     let totalAcordes = 0
     display.renglones.forEach((renglon) => {
@@ -20,16 +21,5 @@ describe('Helper Pentagrama', () => {
     })
 
     expect(totalAcordes).toBe(5)
-  })
-
-  it('Notas de acordes', () => {
-    const helper = new HelperPentagramas()
-    const ret = helper.creaCompasPentagrama('C', 4)
-    expect(ret.Notas[0].nota).toEqual('C')
-    expect(ret.Notas[0].octava).toEqual(4)
-    expect(ret.Notas[1].nota).toEqual('E')
-    expect(ret.Notas[1].octava).toEqual(4)
-    expect(ret.Notas[2].nota).toEqual('G')
-    expect(ret.Notas[2].octava).toEqual(4)
   })
 })

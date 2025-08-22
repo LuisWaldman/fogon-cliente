@@ -66,6 +66,7 @@ onMounted(() => {
 
             <input
               type="file"
+              accept=".jpg,.jpeg,.png,.bmp"
               id="image"
               class="fileUp"
               @change="handleImageUpload"

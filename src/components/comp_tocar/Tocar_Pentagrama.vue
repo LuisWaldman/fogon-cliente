@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import renglonPentagrama from './Tocar_renglonPentagrama.vue'
-import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
-import { Pantalla } from '../../modelo/pantalla'
 
 import { DisplayPentagrama } from '../../modelo/pentagrama/DisplayPentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
