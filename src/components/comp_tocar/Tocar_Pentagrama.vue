@@ -11,7 +11,7 @@ const props = defineProps<{
   cancion: Cancion
 }>()
 
-const display = ref(new DisplayPentagrama())
+const display = ref<DisplayPentagrama>(new DisplayPentagrama())
 
 const helper = new HelperPentagramas()
 onMounted(() => {
@@ -19,7 +19,10 @@ onMounted(() => {
 })
 
 function Actualizar() {
-  display.value = helper.creaDisplayPentagrama(props.cancion)
+  console.log('Actualizando display')
+  const newDisplay = helper.creaDisplayPentagrama(props.cancion)
+  display.value = new DisplayPentagrama()
+  display.value = newDisplay
 }
 
 watch(

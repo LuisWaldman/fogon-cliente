@@ -65,6 +65,8 @@ function Actualizar() {
   if (ctrlEditarTexto.value) {
     ctrlEditarTexto.value.Actualizar()
     ctrlSecuencia.value.Actualizar()
+    
+  } else {
     ctrlTocarPentagrama.value.Actualizar()
   }
 }
@@ -123,6 +125,7 @@ watch(
         v-if="vista.viendo == 'editartexto'"
         @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
+        @actualizoPentagrama="Actualizar"
         :compas="appStore.compas"
         :ver-acordes="vista.verEditandoAcordes"
         :ver-metrica-es="vista.verEditandoMetricaEs"
@@ -134,7 +137,6 @@ watch(
         @cerrar="clickCerrarEditar"
         @actualizoPentagrama="Actualizar"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
 >
 
 </editarpentagrama>

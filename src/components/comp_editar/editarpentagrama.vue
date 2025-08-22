@@ -32,6 +32,7 @@ function clickGenerarPentagrama() {
   
     const helpPenta = new HelperPentagramas()
     props.cancion.pentagramas[idPentagramaEditando.value] = helpPenta.creaPentagrama(props.cancion)
+    emit('actualizoPentagrama')
     
 }
 
