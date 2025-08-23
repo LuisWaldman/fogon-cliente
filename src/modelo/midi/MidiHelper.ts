@@ -78,7 +78,7 @@ export class MidiHelper {
     compas: number,
     notas: ResumenNotaMidi[],
   ): PentagramaCompas {
-    const pentagramaCompas = new PentagramaCompas()
+    const pentagramaCompas = new PentagramaCompas([])
     // Agrupar notas por cuarto
     const cuartoDelCompas = compas * 4
     const notasPorCuarto: { [key: number]: ResumenNotaMidi[] } = {}
