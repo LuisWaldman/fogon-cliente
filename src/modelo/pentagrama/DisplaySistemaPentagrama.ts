@@ -1,4 +1,4 @@
-import type { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
+import { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
 
 export class DisplaySistemaPentagrama {
   public pentagramas: DisplayInstrumentoPentagrama[] = []
