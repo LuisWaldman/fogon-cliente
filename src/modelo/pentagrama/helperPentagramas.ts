@@ -1,5 +1,5 @@
 import type { Cancion } from '../cancion/cancion'
-import { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
+import { DisplayAcordesPentagrama } from './DisplayAcordesPentagrama'
 import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 import { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
 import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
@@ -32,7 +32,7 @@ export class HelperPentagramas {
     nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
     for (let i = 0; i < pentagrama.compases.length; i++) {
       const compPenta = this.creaCompasPentagrama(pentagrama.compases[i])
-      nuevorenglon.pentagramas[0].compases.push(compPenta)
+      nuevorenglon.pentagramas[0].acordes.push(compPenta)
 
       if (i > 0 && (i + 1) % 4 === 0) {
         display.renglones.push(nuevorenglon)
@@ -40,7 +40,7 @@ export class HelperPentagramas {
         nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
       }
     }
-    if (nuevorenglon.pentagramas[0].compases.length > 0) {
+    if (nuevorenglon.pentagramas[0].acordes.length > 0) {
       display.renglones.push(nuevorenglon)
     }
     return display
@@ -48,8 +48,8 @@ export class HelperPentagramas {
 
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
-  ): DisplayCompasPentagrama {
-    const compas = new DisplayCompasPentagrama()
+  ): DisplayAcordesPentagrama {
+    const compas = new DisplayAcordesPentagrama()
     compas.duracion = '1' // Default duration
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       for (const nota of pentagramaCompas.notas[i]) {
