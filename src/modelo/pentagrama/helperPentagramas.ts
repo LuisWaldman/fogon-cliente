@@ -1,31 +1,23 @@
 import type { Cancion } from '../cancion/cancion'
-import { MusicaHelper } from '../cancion/MusicaHelper'
 import { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 import { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
 import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
 import { Pentagrama } from '../cancion/pentagrama'
 import { PentagramaCompas } from '../cancion/pentagramacompas'
-import { PentagramaNotas } from '../cancion/pentagramanotas'
 import { DisplayPentagrama } from './displayPentagrama'
+import { EstiloEditandoCompas } from './EstiloEditandoCompas'
 
 export class HelperPentagramas {
-  private musica = new MusicaHelper()
-  public creaPentagrama(cancion: Cancion): Pentagrama {
+  public creaPentagrama(
+    cancion: Cancion,
+    estiloAcorde: EstiloEditandoCompas,
+  ): Pentagrama {
     const pentagrama = new Pentagrama()
     pentagrama.instrumento = 'Piano-izq'
     const acordes = cancion.acordes.GetTodosLosAcordes()
     for (const acorde of acordes) {
-      let acoPost = acorde
-      if (acorde.includes(' ')) {
-        acoPost = acorde.split(' ')[0]
-      }
-      const notas = this.musica.GetNotasdeacorde(acoPost, 4).map((nota) => {
-        return new PentagramaNotas(nota, '1')
-      })
-      const nuevoCompas = new PentagramaCompas()
-      nuevoCompas.notas.push(notas)
-      pentagrama.compases.push(nuevoCompas)
+      pentagrama.compases.push(estiloAcorde.GetCompas(acorde))
     }
     return pentagrama
   }
