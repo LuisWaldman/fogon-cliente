@@ -7,7 +7,7 @@ import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
 import { Pentagrama } from '../cancion/pentagrama'
 import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { PentagramaNotas } from '../cancion/pentagramanotas'
-import { DisplayPentagrama } from './DisplayPentagrama'
+import { DisplayPentagrama } from './displayPentagrama'
 
 export class HelperPentagramas {
   private musica = new MusicaHelper()
