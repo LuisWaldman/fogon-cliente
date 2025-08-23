@@ -1,4 +1,4 @@
-import type { DisplayRenglonPentagrama as DisplaySistemaPentagrama } from './DisplayRenglonPentagrama'
+import type { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
 
 export class DisplayPentagrama {
   public renglones: DisplaySistemaPentagrama[] = []

@@ -3,7 +3,7 @@ import { MusicaHelper } from '../cancion/MusicaHelper'
 import { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 import { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
-import { DisplayRenglonPentagrama } from './DisplayRenglonPentagrama'
+import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
 import { Pentagrama } from '../cancion/pentagrama'
 import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { PentagramaNotas } from '../cancion/pentagramanotas'
@@ -36,7 +36,7 @@ export class HelperPentagramas {
       return display
     }
     const pentagrama = pentagramas[0]
-    let nuevorenglon = new DisplayRenglonPentagrama()
+    let nuevorenglon = new DisplaySistemaPentagrama()
     nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
     for (let i = 0; i < pentagrama.compases.length; i++) {
       const compPenta = this.creaCompasPentagrama(pentagrama.compases[i])
@@ -44,7 +44,7 @@ export class HelperPentagramas {
 
       if (i > 0 && (i + 1) % 4 === 0) {
         display.renglones.push(nuevorenglon)
-        nuevorenglon = new DisplayRenglonPentagrama()
+        nuevorenglon = new DisplaySistemaPentagrama()
         nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
       }
     }

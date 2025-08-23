@@ -1,5 +1,5 @@
 import type { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
 
-export class DisplayRenglonPentagrama {
+export class DisplaySistemaPentagrama {
   public pentagramas: DisplayInstrumentoPentagrama[] = []
 }
