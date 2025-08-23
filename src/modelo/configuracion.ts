@@ -5,6 +5,7 @@ export class VistaTocar {
   public tamanioLetra: number = 22
   public tamanioAcorde: number = 23
   public tamanioAcordesolo: number = 16
+  public viendoResumenVerso: boolean = true
   public tamanioParte: number = 16
   public tamanioAcordeParte: number = 26
   public anchoPrincipal: number = 70 // Ancho de la parte principal

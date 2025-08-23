@@ -102,6 +102,13 @@ watch(configPantalla.value, () => {
       />
       <span>{{ configPantalla.tamanioAcordeParte }} px</span>
     </div>
+      <div class="config-row">
+      <span>Ver resumen verso</span>
+      <input
+        type="checkbox"
+        v-model="configPantalla.viendoResumenVerso"/>
+      <span>{{ configPantalla.viendoResumenVerso }}</span>
+    </div>
     <div class="config-row">
       <span>Ancho Pantalla Principal</span>
       <input

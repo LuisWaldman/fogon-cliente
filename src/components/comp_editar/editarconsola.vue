@@ -82,8 +82,8 @@ function clickConfirmarAcorde() {
           :cols="configuracionPantalla.columnas"
         ></textarea>
       </div>
-      <div class="preview" ref="refPreview">
-        <template v-for="(verso, index) in displayRef.Versos" :key="index">
+      <div class="preview" ref="refPreview" v-if="!configuracionPantalla.viendoResumenVerso">
+        <template v-for="(verso, index) in displayRef.Versos" :key="index" >
           <div
             v-for="(renglon, rIndex) in verso.renglonesDisplay"
             :key="rIndex"
@@ -97,6 +97,19 @@ function clickConfirmarAcorde() {
               {{ acorde.contenido }}
             </div>
           </div>
+        </template>
+      </div>
+      <div class="preview" ref="refPreview" v-if="configuracionPantalla.viendoResumenVerso">
+        <template v-for="(verso, indexvers) in displayRef.Versos" :key="indexvers" >
+          
+            <div
+              
+              
+              class="acordeconsola"
+            >
+              {{ verso.resumenverso }}
+            </div>
+          
         </template>
       </div>
     </div>

@@ -106,7 +106,7 @@ defineExpose({ Actualizar })
       ref="letraDiv"
     >
       <div v-for="(verso, index) in displayRef.Versos" :key="index" style="position: relative">
-        <div class="resumen">
+        <div class="resumen" v-if="configuracionPantalla.viendoResumenVerso">
         {{ verso.resumenverso }}
         </div>
         <div
