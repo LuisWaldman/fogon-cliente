@@ -108,14 +108,11 @@ function clickConfirmarAcorde() {
         ref="refPreview"
         v-if="configuracionPantalla.viendoResumenVerso"
       >
-        <template
-          v-for="(verso, indexvers) in displayRef.Versos"
-          :key="indexvers"
-        >
+        <div v-for="(verso, index) in displayRef.Versos" :key="index">
           <div class="acordeconsola">
             {{ verso.resumenverso }}
           </div>
-        </template>
+        </div>
       </div>
     </div>
   </div>
