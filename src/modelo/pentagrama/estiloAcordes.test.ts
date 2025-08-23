@@ -11,6 +11,5 @@ describe('Estilo acordes', () => {
     expect(estilo3.GetDuracionPentagrama()).toBe('8')
     const estilo4 = new EstiloAcorde(4, 1)
     expect(estilo4.GetDuracionPentagrama()).toBe('16')
-
   })
 })
