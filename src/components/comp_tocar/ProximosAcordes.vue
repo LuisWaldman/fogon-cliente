@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
 import Acorde from './Acorde.vue'
@@ -43,10 +43,17 @@ watch(
     calcularAcordes(newCompas)
   },
 )
+
+onMounted(() => {
+  calcularAcordes(props.compas)
+})
+  
+
 </script>
 
 <template>
   <span style="font-size: large">Proximos Acordes</span>
+  
   <div class="acordesPantalla">
     <Acorde
       :acorde="acorde"
