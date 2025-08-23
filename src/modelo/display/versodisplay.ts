@@ -1,9 +1,11 @@
+import { SeparadorSilabas } from '../cancion/SeparadorSilabas'
 import { RenglonDisplay } from './renglondisplay'
 
 export class VersoDisplay {
   public contenido: string = ''
   public hastaAcorde: number = 0
   public desdeAcorde: number = 0
+  public resumenverso: string = ''
   renglonesDisplay: RenglonDisplay[] = []
   public constructor(
     verso: string[],
@@ -11,6 +13,7 @@ export class VersoDisplay {
     anchoLetras: number = 80,
   ) {
     this.contenido = verso.join('')
+    this.CalcularResumenVerso()
     if (this.contenido.length < anchoLetras) {
       this.renglonesDisplay.push(new RenglonDisplay(verso, acordes))
     } else {
@@ -40,5 +43,17 @@ export class VersoDisplay {
       }
       this.renglonesDisplay.push(new RenglonDisplay(versoAcu, acordesAco))
     }
+  }
+  CalcularResumenVerso() {
+    const palabras = this.contenido.split(' ')
+    let silabas = 0
+    this.resumenverso = palabras.length + ' Palabras '
+    const sepSilabas = new SeparadorSilabas()
+    for (let i = 0; i < palabras.length; i++) {
+      const silabasPalabra = sepSilabas.getSilabas(palabras[i])
+      silabas += silabasPalabra.silabas.length
+      //this.resumenverso += silabasPalabra.silabas.length
+    }
+    this.resumenverso += silabas + ' Sílabas'
   }
 }

@@ -5,7 +5,6 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 
 import cancionComp from '../components/comp_home/cancion.vue'
-import subircancion from '../components/comp_home/subircancion.vue'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
@@ -89,9 +88,6 @@ function clickTocar(cancion: OrigenCancion) {
           <input type="text" v-model="busqueda" placeholder="Buscar..." />
           <button @click="buscarCanciones()">Buscar</button>
           {{ refEstadoBusqueda }}
-        </div>
-        <div>
-          <subircancion />
         </div>
       </div>
 

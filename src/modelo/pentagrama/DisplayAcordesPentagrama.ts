@@ -1,7 +1,7 @@
 import { StaveNote } from 'vexflow'
 import type { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 
-export class DisplayCompasPentagrama {
+export class DisplayAcordesPentagrama {
   getStaveNote(): StaveNote[] | null {
     for (const nota of this.Notas) {
       if (nota.nota === undefined || nota.octava === undefined) {

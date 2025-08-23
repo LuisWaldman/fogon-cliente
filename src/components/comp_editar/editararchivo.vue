@@ -5,7 +5,7 @@ import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
 import { HelperJSON } from '../../modelo/cancion/HelperJSON'
 import { CancionManager } from '../../modelo/cancion/CancionManager'
-
+import subircancion from './subircancion.vue'
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
   cancion: Cancion
@@ -74,6 +74,7 @@ function guardarCambios() {
     </span>
 
     <span class="lblCabecera" @click="clickNuevo">[nuevo]</span>
+    <subircancion></subircancion>
     <span class="lblCabecera" @click="DescargarJSON">[descargar]</span>
   </div>
   <div style="width: 100%">

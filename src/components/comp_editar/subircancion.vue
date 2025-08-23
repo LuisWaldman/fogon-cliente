@@ -5,9 +5,6 @@ import { ref } from 'vue'
 import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { CancionManager } from '../../modelo/cancion/CancionManager'
 import { useAppStore } from '../../stores/appStore'
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
 
 const fileInput = ref<HTMLInputElement | null>(null)
 
@@ -44,9 +41,7 @@ function manejarSeleccionArchivo(event: Event) {
         .Save(origen, cancion)
         .then(() => {
           const appStore = useAppStore()
-          appStore.aplicacion.SetCancion(origen).then(() => {
-            router.push('/tocar')
-          })
+          appStore.aplicacion.SetCancion(origen)
         })
     } catch (error) {
       console.error('Error al procesar el archivo JSON:', error)
@@ -63,16 +58,15 @@ function manejarSeleccionArchivo(event: Event) {
 </script>
 
 <template>
-  <div class="cancion" @click="abrirDialogoArchivo">
-    <div class="nombreCancion">SUBIR</div>
-    <input
-      ref="fileInput"
-      type="file"
-      accept=".json"
-      style="display: none"
-      @change="manejarSeleccionArchivo"
-    />
-  </div>
+  <span @click="abrirDialogoArchivo">[Subir]</span>
+
+  <input
+    ref="fileInput"
+    type="file"
+    accept=".json"
+    style="display: none"
+    @change="manejarSeleccionArchivo"
+  />
 </template>
 
 <style scoped>
