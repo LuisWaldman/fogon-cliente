@@ -1,7 +1,10 @@
 <script setup lang="ts">
 //import ChordBox from 'vexchords'
 import { onMounted, ref, watch } from 'vue'
-import { AcordesGuitarra, AcordesGuitarraHelper } from '../../modelo/GuitarAcordes'
+import {
+  AcordesGuitarra,
+  AcordesGuitarraHelper,
+} from '../../modelo/GuitarAcordes'
 
 const props = defineProps<{
   acorde: string
@@ -22,9 +25,12 @@ onMounted(() => {
 })
 
 // Watch para detectar cambios en la prop acorde
-watch(() => props.acorde, () => {
-  updateAcorde()
-})
+watch(
+  () => props.acorde,
+  () => {
+    updateAcorde()
+  },
+)
 </script>
 
 <template>

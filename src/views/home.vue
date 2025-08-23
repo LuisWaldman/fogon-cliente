@@ -89,7 +89,6 @@ function clickTocar(cancion: OrigenCancion) {
           <button @click="buscarCanciones()">Buscar</button>
           {{ refEstadoBusqueda }}
         </div>
-        
       </div>
 
       <div>

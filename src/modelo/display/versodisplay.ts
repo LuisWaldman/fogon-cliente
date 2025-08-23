@@ -47,7 +47,7 @@ export class VersoDisplay {
   CalcularResumenVerso() {
     const palabras = this.contenido.split(' ')
     let silabas = 0
-    this.resumenverso = palabras.length +  ' Palabras '
+    this.resumenverso = palabras.length + ' Palabras '
     const sepSilabas = new SeparadorSilabas()
     for (let i = 0; i < palabras.length; i++) {
       const silabasPalabra = sepSilabas.getSilabas(palabras[i])

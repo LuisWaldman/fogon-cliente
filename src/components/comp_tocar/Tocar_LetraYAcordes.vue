@@ -105,9 +105,13 @@ defineExpose({ Actualizar })
       :style="styleDivTocar()"
       ref="letraDiv"
     >
-      <div v-for="(verso, index) in displayRef.Versos" :key="index" style="position: relative">
+      <div
+        v-for="(verso, index) in displayRef.Versos"
+        :key="index"
+        style="position: relative"
+      >
         <div class="resumen" v-if="configuracionPantalla.viendoResumenVerso">
-        {{ verso.resumenverso }}
+          {{ verso.resumenverso }}
         </div>
         <div
           class="renglonDisplay"
@@ -142,7 +146,6 @@ defineExpose({ Actualizar })
             {{ acorde.contenido }}
           </div>
         </div>
-        
       </div>
     </div>
   </div>
