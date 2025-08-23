@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { Renderer } from 'vexflow'
-import type { DisplayRenglonPentagrama } from '../../modelo/pentagrama/DisplayRenglonPentagrama'
-import type { Cancion } from '../../modelo/cancion/cancion'
+import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
+import { Cancion } from '../../modelo/cancion/cancion'
 
 const props = defineProps<{
-  renglon: DisplayRenglonPentagrama
+  renglon: DisplaySistemaPentagrama
   cancion: Cancion
 }>()
 
