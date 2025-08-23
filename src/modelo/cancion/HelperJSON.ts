@@ -2,6 +2,9 @@ import { Acordes, Parte } from './acordes'
 import { Cancion } from './cancion'
 import { Letra } from './letra'
 import { Media } from './media'
+import { Pentagrama } from './pentagrama'
+import { PentagramaCompas } from './pentagramacompas'
+import { PentagramaNotas } from './pentagramanotas' // Agregar esta importación
 
 export class HelperJSON {
   public static CancionToJSON(cancion: Cancion): string {
@@ -26,6 +29,13 @@ export class HelperJSON {
         id: media.id,
         delay: media.delay || 0,
       })),
+      pentagramas: cancion.pentagramas.map((pentagrama) => ({
+        instrumento: pentagrama.instrumento,
+        compases: pentagrama.compases.map((compas) => ({
+          notas: compas.notas,
+        })),
+      })),
+      archivo: cancion.archivo,
     })
     return cancionJSON
   }
@@ -47,29 +57,27 @@ export class HelperJSON {
     }
 
     const acordes = new Acordes(partes, ordenPartes)
+
     let bpm = data.bpm
     if (bpm === undefined) {
-      bpm = data.bpm
+      bpm = 120 // valor por defecto
     }
 
     let compasUnidad = data.compasUnidad
     if (compasUnidad === undefined) {
-      compasUnidad = data.compas_unidad
-    }
-
-    let compasesTiempo = data.compasesTiempo
-    if (compasesTiempo === undefined) {
-      compasesTiempo = data.compases_tiempo
+      compasUnidad = data.compas_unidad || 4 // valor por defecto
     }
 
     let compasCantidad = data.compasCantidad
     if (compasCantidad === undefined) {
-      compasCantidad = data.compas_cantidad
+      compasCantidad = data.compas_cantidad || 4 // valor por defecto
     }
-    let renglones = data.letras.renglones
-    if (renglones === undefined) {
-      renglones = data.letras
+
+    let renglones = data.letras
+    if (data.letras && data.letras.renglones) {
+      renglones = data.letras.renglones
     }
+
     const toRet: Cancion = new Cancion(
       data.cancion,
       data.banda,
@@ -78,16 +86,40 @@ export class HelperJSON {
       bpm,
       data.calidad,
       compasCantidad,
-      compasesTiempo,
+      compasUnidad, // Corregido: era compasesTiempo
       data.escala,
     )
+
     if (data.medias) {
       toRet.medias = data.medias.map(
         (media: { tipo: string; id: string; delay: number }) =>
           new Media(media.tipo, media.id, media.delay || 0),
       )
     }
+
+    if (data.pentagramas) {
+      toRet.pentagramas = data.pentagramas.map(
+        (penta: {
+          instrumento: string
+          compases: { notas: PentagramaNotas[][] }[]
+        }) => {
+          const pentagrama = new Pentagrama()
+          pentagrama.instrumento = penta.instrumento
+          pentagrama.compases = [] // Asegurar que esté inicializado
+          penta.compases.forEach(
+            (compasData: { notas: PentagramaNotas[][] }) => {
+              pentagrama.compases.push(new PentagramaCompas(compasData.notas))
+            },
+          )
+          return pentagrama
+        },
+      )
+    }
+    if (data.archivo) {
+      toRet.archivo = data.archivo
+    }
     toRet.archivo = data.archivo
+
     toRet.normalizar()
     return toRet
   }

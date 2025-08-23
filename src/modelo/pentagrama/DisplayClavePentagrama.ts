@@ -6,7 +6,7 @@ export class DisplayInstrumentoPentagrama {
     const stave = new Stave(10, 0, 700)
     stave.addClef('treble').addTimeSignature('4/4')
     stave.setContext(context).draw()
-    
+
     const misNotas: StaveNote[] = []
     for (const acorde of this.acordes) {
       const staveNotes = acorde.getStaveNote()
@@ -21,10 +21,10 @@ export class DisplayInstrumentoPentagrama {
         //Formatter.FormatAndDraw(context, stave, staveNotes)
       }
     }
-    
+
     Formatter.FormatAndDraw(context, stave, misNotas)
     // Dibujar el pentagrama primero
-    
+
     return stave
   }
   public acordes: DisplayAcordesPentagrama[] = []

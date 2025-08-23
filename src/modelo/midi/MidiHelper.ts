@@ -20,20 +20,15 @@ export class MidiHelper {
     const pentagrama = pentagramas[0]
     for (let i = 0; i < pentagrama.compases.length; i++) {
       for (const nota of pentagrama.compases[i].notas) {
+        let cuartoTiempo = 0
+        const divisorCuarto = 0
         for (const notam in nota) {
-          const duracion = '1n'
-          const tiempo = `${i}:0:0`
-          console.log(
-            `Nota: ${nota[notam]}, Duración: ${duracion}, Tiempo: ${tiempo}`,
-          )
+          const tiempo = `${i}:${cuartoTiempo}:${divisorCuarto}`
           secuencia.notas.push(
-            new NotaMidi(
-              nota[notam].nota,
-              nota[notam].duracion.toString(),
-              tiempo,
-            ),
+            new NotaMidi(nota[notam].nota, nota[notam].duracionMidi(), tiempo),
           )
         }
+        cuartoTiempo++
       }
     }
     return secuencia
