@@ -27,6 +27,7 @@ function iniciar() {
       midiPlayer.setInstrument(samples)
       midiPlayer.initialize()
       midiCargado.value = true
+      cargarCancion()
     })
     .catch((error) => {
       console.error('Error loading samples:', error)
@@ -60,6 +61,7 @@ onUnmounted(() => {
 })
 
 onMounted(() => {
+  iniciar()
   const appStore = useAppStore()
   appStore.aplicacion.setMediaVista(mediaVista)
 })
@@ -79,8 +81,6 @@ function stop() {
 }
 </script>
 <template>
-  <span @click="iniciar" v-if="!midiCargado">[INICIAR MIDI]</span>
-  <span @click="cargarCancion" v-if="midiCargado">[CARGAR CANCIÓN]</span>
   <span @click="play" v-if="midiCargado">[PLAY]</span>
   <span @click="stop" v-if="midiCargado">[PAUSA]</span>
   Pentagramas : {{ props.cancion.pentagramas.length }}

@@ -18,7 +18,6 @@ const emit = defineEmits(['cerrar', 'actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
 
 // Obtener tipos y duraciones desde métodos estáticos
-const tiposDisponibles = computed(() => EstiloAcorde.GetTipos())
 const duracionesDisponibles = computed(() => EstiloAcorde.GetDuraciones())
 
 function clickCancelarEdit() {

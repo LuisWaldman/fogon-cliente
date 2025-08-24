@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import { Renderer } from 'vexflow'
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { Cancion } from '../../modelo/cancion/cancion'
@@ -11,13 +11,21 @@ const props = defineProps<{
 
 const scoreContainer = ref<HTMLDivElement | null>(null)
 
-onMounted(() => {
+watch(
+  () => props.renglon,
+  () => {
+    if (!scoreContainer.value) return
+
+    const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
+    renderer.resize(900, 100)
+  },
+)
+function Dibujar() {
   if (!scoreContainer.value) return
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
   renderer.resize(900, 100)
   const context = renderer.getContext()
-
   // Establecer los colores ANTES de crear y dibujar el pentagrama
   context.setFillStyle('#a9a8f6')
   context.setStrokeStyle('#a9a8f6')
@@ -25,6 +33,10 @@ onMounted(() => {
   for (const pentagrama of props.renglon.pentagramas) {
     pentagrama.getStave(context)
   }
+}
+
+onMounted(() => {
+  Dibujar()
 })
 </script>
 <template>
