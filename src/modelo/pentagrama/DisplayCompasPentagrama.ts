@@ -1,5 +1,4 @@
 import { StaveNote } from 'vexflow'
-import type { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 import type { DisplayAcordesPentagrama } from './DisplayAcordesPentagrama'
 
 export class DisplayCompasPentagrama {
