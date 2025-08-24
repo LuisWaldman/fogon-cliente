@@ -31,6 +31,11 @@ function clickAgregarPentagrama() {
   props.cancion.pentagramas.push(nPentagrama)
 }
 
+function clickBorrarPentagrama() {
+  props.cancion.pentagramas[idPentagramaEditando.value].compases = []
+  emit('actualizoPentagrama')
+}
+
 function clickGenerarPentagrama() {
   const helpPenta = new HelperPentagramas()
   props.cancion.pentagramas[idPentagramaEditando.value] =
@@ -39,7 +44,9 @@ function clickGenerarPentagrama() {
 }
 
 function agregarAcorde() {
-  refEditandoAcorde.value.acordes.push(new EstiloAcorde(0, 0))
+  refEditandoAcorde.value.acordes.push(
+    new EstiloAcorde(1, refEditandoAcorde.value.notas.length),
+  )
   //refEditandoAcorde.value.agregarAcorde()
 }
 
@@ -68,12 +75,52 @@ function quitarAcorde(index: number) {
   </div>
   <div>
     <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
+    <span @click="clickBorrarPentagrama">[Borrar Pentagrama]</span>
   </div>
 
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Ritmo</th>
+          <th v-for="(acorde, index) in refEditandoAcorde.acordes" :key="index">
+            <div>
+              <select v-model="acorde.duracionId">
+                <option
+                  v-for="(duracion, index) in duracionesDisponibles"
+                  :key="index"
+                  :value="index"
+                >
+                  {{ duracion }}
+                </option>
+              </select>
+            </div>
+            <div>
+              <span @click="quitarAcorde(index)">[X]</span>
+            </div>
+          </th>
+          <th><span @click="agregarAcorde">[Agregar Acorde]</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(nota, index) in refEditandoAcorde.notas" :key="index">
+          <td>{{ nota }}</td>
+          <td
+            v-for="(acorde, indexnotaaco) in refEditandoAcorde.acordes"
+            :key="indexnotaaco"
+            @click="acorde.CambiarTipoNota(index)"
+          >
+            {{ acorde.tiposNota[index] }}
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    {{ refEditandoAcorde.notas }}
+  </div>
   <!-- Acordes dinámicos -->
   <div>
     <h3>Acordes</h3>
-    <button @click="agregarAcorde">[Agregar Acorde]</button>
 
     <div
       v-for="(acorde, index) in refEditandoAcorde.acordes"
@@ -82,22 +129,10 @@ function quitarAcorde(index: number) {
     >
       <div>
         <label>Acorde {{ index + 1 }}:</label>
-        <button @click="quitarAcorde(index)">[Quitar]</button>
       </div>
 
       <div>
-        Tipo:
-        <select v-model="acorde.TipoId">
-          <option
-            v-for="(tipo, index) in tiposDisponibles"
-            :key="index"
-            :value="index"
-          >
-            {{ tipo }}
-          </option>
-        </select>
-
-        Duración:
+        Tipo: Duración:
         <select v-model="acorde.duracionId">
           <option
             v-for="(duracion, index) in duracionesDisponibles"

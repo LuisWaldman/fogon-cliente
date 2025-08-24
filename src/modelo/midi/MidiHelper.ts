@@ -24,7 +24,14 @@ export class MidiHelper {
       for (const nota of pentagrama.compases[i].notas as PentagramaNotas[][]) {
         for (const notaItem of nota as PentagramaNotas[]) {
           const tiempo = this.GetTiempoMidi(i)
-          console.log('Nota:', notaItem.nota, 'Duracion:', notaItem.duracion, 'Tiempo:', tiempo)
+          console.log(
+            'Nota:',
+            notaItem.nota,
+            'Duracion:',
+            notaItem.duracion,
+            'Tiempo:',
+            tiempo,
+          )
           secuencia.notas.push(
             new NotaMidi(
               notaItem.nota,

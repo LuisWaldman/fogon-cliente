@@ -237,6 +237,25 @@ export class MusicaHelper {
     return acordes
   }
 
+  // Prepara a un acorde para ser usado en una escala, quitandole numeros y dim
+  GetEscalaDelAcorde(acorde: string) {
+    let acordeBase = acorde
+    // Remove slash notation if present
+
+    if (acorde.includes(' ')) {
+      acordeBase = acorde.split(' ')[0]
+    }
+
+    if (acorde.includes('/')) {
+      acordeBase = acorde.split('/')[0]
+    }
+
+    // Remove all numbers from the chord
+    acordeBase = acordeBase.replace(/[0-9]/g, '')
+
+    return this.GetNotasdeescala(acordeBase)
+  }
+
   GetAcordesdeescala(escala: string) {
     if (escala == '') return []
     if (escala == undefined) return []

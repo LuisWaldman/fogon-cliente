@@ -69,7 +69,7 @@ describe('Helper Midi', () => {
       new PentagramaNotas('C4', '4.'),
       new PentagramaNotas('D4', '2'),
     ])
-    expect(helper.parteCompas).toBeCloseTo(0.4375 + (0.25 * 1.5)) // 0.4375 + 0.25 * 1.5
+    expect(helper.parteCompas).toBeCloseTo(0.4375 + 0.25 * 1.5) // 0.4375 + 0.25 * 1.5
   })
 
   it('DuracionCuartosToDuracionNota', () => {
