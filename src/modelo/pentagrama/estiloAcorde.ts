@@ -14,8 +14,8 @@ export class EstiloAcorde {
     })
   }
   GetDuracionPentagrama(): string {
-    const duracionesVexFlow = ['w', 'h', 'q', '8', '16', '32', '64']
-    return duracionesVexFlow[this.duracionId] || 'q'
+    const duracionesVexFlow = ['1', '2', '4', '8', '16', '32', '64']
+    return duracionesVexFlow[this.duracionId] || '4'
   }
   public duracionId: number
   public TipoId: number

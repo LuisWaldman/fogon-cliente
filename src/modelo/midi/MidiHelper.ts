@@ -9,6 +9,7 @@ import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { PentagramaNotas } from '../cancion/pentagramanotas'
 
 export class MidiHelper {
+  public parteCompas = 0
   public GetSecuencia(cancion: Cancion): MidiSecuencia {
     const secuencia = new MidiSecuencia()
     secuencia.bpm = cancion.bpm ? cancion.bpm : 40
@@ -19,20 +20,44 @@ export class MidiHelper {
 
     const pentagrama = pentagramas[0]
     for (let i = 0; i < pentagrama.compases.length; i++) {
-      for (const nota of pentagrama.compases[i].notas) {
-        let cuartoTiempo = 0
-        const divisorCuarto = 0
-        for (const notam in nota) {
-          const tiempo = `${i}:${cuartoTiempo}:${divisorCuarto}`
+      this.parteCompas = 0
+      for (const nota of pentagrama.compases[i].notas as PentagramaNotas[][]) {
+        for (const notaItem of nota as PentagramaNotas[]) {
+          const tiempo = this.GetTiempoMidi(i)
+          console.log('Nota:', notaItem.nota, 'Duracion:', notaItem.duracion, 'Tiempo:', tiempo)
           secuencia.notas.push(
-            new NotaMidi(nota[notam].nota, nota[notam].duracionMidi(), tiempo),
+            new NotaMidi(
+              notaItem.nota,
+              PentagramaNotas.duracionMidi(notaItem.duracion),
+              tiempo,
+            ),
           )
         }
-        cuartoTiempo++
+        this.ActualizarTiempos(nota)
       }
     }
     return secuencia
   }
+  GetTiempoMidi(compas: number): string {
+    const cuarto = Math.floor(this.parteCompas * 4)
+    const divisor = Math.round((this.parteCompas * 4 - cuarto) * 4)
+    return `${compas}:${cuarto}:${divisor}`
+  }
+  DuracionEnCompas(duracion: string): number {
+    const base = parseInt(duracion)
+    const tienePuntillo = duracion.includes('.')
+    let fraccion = 1 / base
+    if (tienePuntillo) fraccion *= 1.5
+    return fraccion
+  }
+  ActualizarTiempos(notas: PentagramaNotas[]) {
+    if (notas.length === 0) return
+
+    const duraciones = notas.map((n) => this.DuracionEnCompas(n.duracion))
+    const minima = Math.min(...duraciones)
+    this.parteCompas += minima
+  }
+
   private ppq = 0
   public MidiToPentagramas(midi: Midi): Pentagrama[] {
     const pentagramas: Pentagrama[] = []
