@@ -107,6 +107,16 @@ Actualizar(props.cancion)
             }"
             >{{ cancion.acordes.partes[parte].nombre }}</span
           >
+
+          
+        <div class="repeticion" v-if="reperesu[index] > 1">
+          <span v-if="mostrandoResumenParteIndex != index"
+            >&nbsp; x {{ reperesu[index] }}</span
+          >
+          <span v-if="mostrandoResumenParteIndex == index"
+            >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
+          >
+        </div>
         </div>
         <div class="ordendiv">
           <span
@@ -122,14 +132,6 @@ Actualizar(props.cancion)
           >
             {{ acorde }}
           </span>
-        </div>
-        <div class="repeticion" v-if="reperesu[index] > 1">
-          <span v-if="mostrandoResumenParteIndex != index"
-            >x {{ reperesu[index] }}</span
-          >
-          <span v-if="mostrandoResumenParteIndex == index"
-            >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
-          >
         </div>
       </div>
     </div>

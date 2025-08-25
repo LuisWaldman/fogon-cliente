@@ -5,7 +5,7 @@ import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
-import Secuencia from '../components/comp_editar/Secuencia.vue'
+import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import sugerencias from '../components/comp_editar/sugerencias.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
@@ -124,7 +124,7 @@ watch(
         @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
         @actualizoPentagrama="Actualizar"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
         :ver-acordes="vista.verEditandoAcordes"
         :ver-metrica-es="vista.verEditandoMetricaEs"
       ></editartexto>
@@ -141,7 +141,7 @@ watch(
     <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">
       <sugerencias
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
         @cambioCompas="cambiarCompas"
         @actualizarCancion="Actualizar"
         v-if="
@@ -152,14 +152,14 @@ watch(
       <editAcordes
         v-if="vista.viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
       ></editAcordes>
 
       <consola-acordes
         v-if="vista.viendo == 'editconsolaacordes'"
         @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
       ></consola-acordes>
       <div
         style="position: relative; left: 96%"

@@ -3,32 +3,23 @@ import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
 import type { Parte } from '../../modelo/cancion/acordes'
-
 import editarParte from './editarParte.vue'
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
-
+const mostrandoCompasparte = ref(-1)
 const currentCompas = ref(0)
-const viendoSecuencia = ref(0)
+const viendoSecuencia = ref(-1)
 const viendoRepSecuencia = ref(0)
 
+const mostrandoParte = ref(-1)
 const emit = defineEmits(['cambioCompas'])
 const viendoParte = ref(false)
 const parte = ref(null as Parte | null)
 function cambiarCompas(compas: number) {
   emit('cambioCompas', compas)
-  currentCompas.value = compas
-}
-
-function clickSecuencia(secuencia: number) {
-  viendoSecuencia.value = secuencia
-  viendoRepSecuencia.value = 0
-  viendoParte.value = true
-  parte.value = props.cancion.acordes.partes[secuResu.value[secuencia]]
-
-  cambiarCompas(desdeacorde.value[secuencia])
+  //currentCompas.value = compas
 }
 
 const secuResu = ref([] as number[])
@@ -78,10 +69,43 @@ function Actualizado() {
   return false
 }
 
+watch(
+  () => props.compas,
+  (newCompas) => {
+    console.log("CCompas", newCompas)
+    let totalCompases = 0
+    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
+      let compasesxparte =
+        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
+          .acordes.length
+      if (newCompas < totalCompases + compasesxparte) {
+        mostrandoParte.value = i
+        mostrandoCompasparte.value = newCompas - totalCompases
+        console.log("UBICANDO", mostrandoParte.value, mostrandoCompasparte.value)
+        break
+      }
+      totalCompases += compasesxparte
+    }
+    currentCompas.value = newCompas
+    ActualizarCancion(props.cancion)
+  },
+)
+
 ActualizarCancion(props.cancion)
 function Actualizar() {
   ActualizarCancion(props.cancion)
 }
+function clickAcorde(acorde: number, index: number)
+{
+  mostrandoCompasparte.value = acorde
+  mostrandoResumenParteIndex.value = index
+  console.log("Cambiando compás a:", desdeacorde.value[index] + mostrandoCompasparte.value)
+  cambiarCompas(
+      desdeacorde.value[index] + mostrandoCompasparte.value,
+    )
+}
+
+
 
 defineExpose({
   Actualizar,
@@ -91,24 +115,26 @@ defineExpose({
 <template>
   <div v-if="Actualizado()" @click="ActualizarCancion(props.cancion)">
     .. No cargada ..
+    
   </div>
+  {{ compas }} {{ currentCompas }}
   <div v-if="reperesu.length > 0">
-    <span style="font-size: large">Secuencia</span>
     <div style="display: flex; flex-wrap: wrap">
       <div
         v-for="(parte, index) in secuResu"
         :key="index"
         class="secuencia"
-        @click="clickSecuencia(index)"
+        :class="{ secuencia_actual: viendoSecuencia === index }"
+        
       >
-        <div class="ordendiv">
+              <div>
           <span
+            style="color: #a9a8f6; font-size: small"
             :class="{
               compas_actual: mostrandoResumenParteIndex === index,
             }"
             >{{ cancion.acordes.partes[parte].nombre }}</span
           >
-        </div>
         <div class="repeticion" v-if="reperesu[index] > 1">
           <span v-if="mostrandoResumenParteIndex != index"
             >x {{ reperesu[index] }}</span
@@ -116,6 +142,19 @@ defineExpose({
           <span v-if="mostrandoResumenParteIndex == index"
             >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
           >
+        </div>
+        </div>
+        <div class="ordendiv">
+          <span
+            class="acordeSecuencia"
+            v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte]
+              .acordes"
+            :key="acordeIndex"
+            @click="clickAcorde(acordeIndex, index)"
+            :class="{ 'acordeSeleccionado': mostrandoCompasparte === acordeIndex && mostrandoResumenParteIndex === index }"
+          >
+          {{ acorde }}
+          </span>
         </div>
       </div>
     </div>
@@ -130,18 +169,29 @@ defineExpose({
 </template>
 
 <style scoped>
+
 .read-the-docs {
-  color: #888;
+  color: #292828;
+}
+.acordeSecuencia {
+  font-size: var(--tamanio-parte);
+  margin-right: 5px;
 }
 .secuencia {
   font-size: var(--tamanio-parte);
-  display: flex;
   flex-wrap: wrap;
   border: 1px solid;
   margin: 1px;
   padding: 5px;
   border-radius: 5px;
 }
+.acordeSeleccionado {
+  border: 1px solid;
+  border: 1px solid;
+  color: rgb(202, 49, 49);
+  font-size: large;
+}
+
 .ordendiv {
   margin: 1px;
   padding: 5px;
@@ -190,8 +240,8 @@ defineExpose({
 }
 
 .compas_actual {
-  background-color: red;
-  color: white;
+  background-color: rgb(190, 120, 120);
+  color: rgb(54, 52, 52);
 }
 
 .domi {
@@ -219,5 +269,8 @@ defineExpose({
 .tituloSecuencia {
   color: #a9a8f6;
   margin-top: 10px;
+}
+.secuencia_actual {
+  background-color: #424141 !important;
 }
 </style>
