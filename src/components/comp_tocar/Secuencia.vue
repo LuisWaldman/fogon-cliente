@@ -73,7 +73,7 @@ Actualizar(props.cancion)
           v-if="resumenSecuencia.parte === index"
             >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /
             {{ parte.cantPartes }}</span
-          ><span>&nbsp; x {{ parte.cantPartes }}</span>
+          ><span v-else>&nbsp; x {{ parte.cantPartes }}</span>
           
         </div>
       </div>
