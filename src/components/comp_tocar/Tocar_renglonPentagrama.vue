@@ -14,10 +14,7 @@ const scoreContainer = ref<HTMLDivElement | null>(null)
 watch(
   () => props.renglon,
   () => {
-    if (!scoreContainer.value) return
-
-    const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-    renderer.resize(900, 100)
+    Dibujar()
   },
 )
 function Dibujar() {

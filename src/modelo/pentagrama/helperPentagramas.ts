@@ -8,6 +8,7 @@ import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { DisplayPentagrama } from './displayPentagrama'
 import { EstiloEditandoCompas } from './EstiloEditandoCompas'
 import { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
+import { DisplayModoPentagrama } from './displayModoPentagrama'
 
 export class HelperPentagramas {
   public creaPentagrama(
@@ -15,34 +16,38 @@ export class HelperPentagramas {
     estiloAcorde: EstiloEditandoCompas,
   ): Pentagrama {
     const pentagrama = new Pentagrama()
-    pentagrama.instrumento = 'Piano-izq'
+    pentagrama.instrumento = '1'
     const acordes = cancion.acordes.GetTodosLosAcordes()
     for (const acorde of acordes) {
       pentagrama.compases.push(estiloAcorde.GetCompas(acorde))
     }
     return pentagrama
   }
-  public creaDisplayPentagrama(cancion: Cancion): DisplayPentagrama {
+  public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
+    const modos: DisplayModoPentagrama[] = []
+    const clave = 'treble'
+    for (const pentagrama of cancion.pentagramas) {
+      modos.push(new DisplayModoPentagrama(clave, true, pentagrama.instrumento))
+    }
+    return modos
+  }
+  public creaDisplayPentagrama(
+    cancion: Cancion,
+    modos: DisplayModoPentagrama[],
+  ): DisplayPentagrama {
     const display = new DisplayPentagrama()
     const pentagramas = cancion.pentagramas
     if (pentagramas.length === 0) {
       return display
     }
-    const pentagrama = pentagramas[0]
-    let nuevorenglon = new DisplaySistemaPentagrama()
-    nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
-    for (let i = 0; i < pentagrama.compases.length; i++) {
-      const compPenta = this.creaCompasPentagrama(pentagrama.compases[i])
-      nuevorenglon.pentagramas[0].compases.push(compPenta)
 
-      if (i > 0 && (i + 1) % 4 === 0) {
-        display.renglones.push(nuevorenglon)
-        nuevorenglon = new DisplaySistemaPentagrama()
-        nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
+    for (let contmod = 0; contmod < modos.length; contmod++) {
+      if (modos[contmod].Ver) {
+        display.AgregarPartitura(
+          cancion.pentagramas[contmod],
+          modos[contmod].Clave,
+        )
       }
-    }
-    if (nuevorenglon.pentagramas[0].compases.length > 0) {
-      display.renglones.push(nuevorenglon)
     }
     return display
   }
