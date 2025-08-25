@@ -93,7 +93,6 @@ function guardarCambios() {
         type="text"
         v-model="nombrebanda"
         :style="{ width: nombrebanda.length + 1 + 'ch' }"
-        class="input-editable"
       />
     </div>
   </div>
@@ -103,7 +102,6 @@ function guardarCambios() {
       type="text"
       v-model="nombrearchivo"
       :style="{ width: nombrearchivo.length + 'ch' }"
-      class="input-editable"
     />
     Origen:
     <select v-model="origenDestino">
@@ -119,12 +117,4 @@ function guardarCambios() {
   </div>
   <div></div>
 </template>
-<style scoped>
-.input-editable {
-  border: none;
-  outline: none;
-  background: transparent;
-  width: fit-content;
-  color: rgb(97, 95, 202);
-}
-</style>
+<style scoped></style>

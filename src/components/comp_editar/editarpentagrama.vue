@@ -12,8 +12,9 @@ const props = defineProps<{
 }>()
 
 const refEditandoAcorde = ref<EstiloEditandoCompas>(new EstiloEditandoCompas())
-refEditandoAcorde.value.acordes.push(new EstiloAcorde(1, refEditandoAcorde.value.notas.length),
-  )
+refEditandoAcorde.value.acordes.push(
+  new EstiloAcorde(1, refEditandoAcorde.value.notas.length),
+)
 
 const emit = defineEmits(['cerrar', 'actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
@@ -38,7 +39,7 @@ function clickBorrarPentagrama() {
 
 function clickGenerarPentagrama() {
   const helpPenta = new HelperPentagramas()
-  console.log("ACtualizando", refEditandoAcorde.value)
+  console.log('ACtualizando', refEditandoAcorde.value)
   props.cancion.pentagramas[idPentagramaEditando.value].compases =
     helpPenta.creaPentagrama(props.cancion, refEditandoAcorde.value).compases
   emit('actualizoPentagrama')

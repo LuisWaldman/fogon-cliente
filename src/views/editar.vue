@@ -17,6 +17,7 @@ const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
 function cambiarCompas(compas: number) {
   editandoCompas.value = compas
+  Actualizar()
 }
 const appStore = useAppStore()
 class vistaTocar {
@@ -171,7 +172,7 @@ watch(
       <Secuencia
         ref="ctrlSecuencia"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
         @cambioCompas="cambiarCompas"
         v-if="
           vista.viendo !== 'editconsolaacordes' &&

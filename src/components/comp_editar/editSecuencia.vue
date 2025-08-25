@@ -1,179 +1,169 @@
+
+
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
-import type { Parte } from '../../modelo/cancion/acordes'
-import editarParte from './editarParte.vue'
-const props = defineProps<{
-  compas: number
-  cancion: Cancion
-}>()
-const mostrandoCompasparte = ref(-1)
-const currentCompas = ref(0)
-const viendoSecuencia = ref(-1)
-const viendoRepSecuencia = ref(0)
-
-const mostrandoParte = ref(-1)
+import { ResumenSecuencia } from '../../modelo/cancion/ResumenSecuencia'
 const emit = defineEmits(['cambioCompas'])
-const viendoParte = ref(false)
-const parte = ref(null as Parte | null)
 function cambiarCompas(compas: number) {
   emit('cambioCompas', compas)
   //currentCompas.value = compas
 }
 
-const secuResu = ref([] as number[])
-const reperesu = ref([] as number[])
-const desdeacorde = ref([] as number[])
+const props = defineProps<{
+  compas: number
+  cancion: Cancion
+}>()
 
-const mostrandoResumenParteIndex = ref(-1)
-const mostrandoResumenParte = ref(-1)
+const resumenSecuencia = ref<ResumenSecuencia>(
+  ResumenSecuencia.GetResumen(props.cancion),
+)
+
+function Actualizar(cancion: Cancion) {
+  resumenSecuencia.value = ResumenSecuencia.GetResumen(cancion)
+}
+
+onMounted(() => {
+  Actualizar(props.cancion)
+})
 
 watch(
   () => props.cancion,
   (newCancion) => {
-    ActualizarCancion(newCancion)
+    Actualizar(newCancion)
   },
 )
-
-function ActualizarCancion(cancion: Cancion) {
-  let newresu: number[] = []
-  let newpartesresu: number[] = []
-  let newdesdeacorde: number[] = []
-  let metiendo = -1
-  let desdeCont = 0
-  cancion.acordes.ordenPartes.forEach((element) => {
-    if (metiendo != element) {
-      newresu.push(element)
-      newpartesresu.push(1)
-      metiendo = element
-      newdesdeacorde.push(desdeCont)
-    } else {
-      newpartesresu[newpartesresu.length - 1] += 1
-    }
-    desdeCont += cancion.acordes.partes[element].acordes.length
-  })
-  desdeacorde.value = newdesdeacorde
-  secuResu.value = newresu
-  reperesu.value = newpartesresu
-}
-
-let actualizadoAsk = false
-function Actualizado() {
-  if (reperesu.value.length == 0) {
-    if (actualizadoAsk) {
-      actualizadoAsk = true
-      ActualizarCancion(props.cancion)
-    }
-  }
-  return false
-}
 
 watch(
   () => props.compas,
   (newCompas) => {
-    console.log("CCompas", newCompas)
-    let totalCompases = 0
-    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
-      let compasesxparte =
-        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
-          .acordes.length
-      if (newCompas < totalCompases + compasesxparte) {
-        mostrandoParte.value = i
-        mostrandoCompasparte.value = newCompas - totalCompases
-        console.log("UBICANDO", mostrandoParte.value, mostrandoCompasparte.value)
-        break
-      }
-      totalCompases += compasesxparte
-    }
-    currentCompas.value = newCompas
-    ActualizarCancion(props.cancion)
+    resumenSecuencia.value?.ActualizarCompas(newCompas)
   },
 )
 
-ActualizarCancion(props.cancion)
-function Actualizar() {
-  ActualizarCancion(props.cancion)
+let actualizadoAsk = false
+function Actualizado() {
+  if (actualizadoAsk) {
+    actualizadoAsk = true
+    Actualizar(props.cancion)
+  }
+
+  return false
 }
-function clickAcorde(acorde: number, index: number)
-{
-  mostrandoCompasparte.value = acorde
-  mostrandoResumenParteIndex.value = index
-  console.log("Cambiando compás a:", desdeacorde.value[index] + mostrandoCompasparte.value)
-  cambiarCompas(
-      desdeacorde.value[index] + mostrandoCompasparte.value,
-    )
+function Click_actualizarSecuencia() {
+  resumenSecuencia.value?.SetCancion(props.cancion)
+  Actualizar(props.cancion)
+  cambiarCompas(props.compas)
+}
+Actualizar(props.cancion)
+const refActualizandoSecuencia = ref(false)
+function ActualizarSecuencia() {
+  refActualizandoSecuencia.value = true
 }
 
+function CancelarActualizarSecuencia() {
+  refActualizandoSecuencia.value = false
+}
+function clickAgregarSecuencia(index: number) {
+  resumenSecuencia.value?.AgregarSecuencia(index)
 
-
-defineExpose({
-  Actualizar,
-})
+}
 </script>
 
 <template>
-  <div v-if="Actualizado()" @click="ActualizarCancion(props.cancion)">
+  <div v-if="Actualizado()" @click="Actualizar(props.cancion)">
     .. No cargada ..
-    
   </div>
-  {{ compas }} {{ currentCompas }}
-  <div v-if="reperesu.length > 0">
-    <div style="display: flex; flex-wrap: wrap">
-      <div
-        v-for="(parte, index) in secuResu"
-        :key="index"
-        class="secuencia"
-        :class="{ secuencia_actual: viendoSecuencia === index }"
-        
-      >
-              <div>
-          <span
-            style="color: #a9a8f6; font-size: small"
-            :class="{
-              compas_actual: mostrandoResumenParteIndex === index,
-            }"
-            >{{ cancion.acordes.partes[parte].nombre }}</span
-          >
-        <div class="repeticion" v-if="reperesu[index] > 1">
-          <span v-if="mostrandoResumenParteIndex != index"
-            >x {{ reperesu[index] }}</span
-          >
-          <span v-if="mostrandoResumenParteIndex == index"
-            >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
-          >
-        </div>
-        </div>
-        <div class="ordendiv">
-          <span
-            class="acordeSecuencia"
-            v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte]
-              .acordes"
-            :key="acordeIndex"
-            @click="clickAcorde(acordeIndex, index)"
-            :class="{ 'acordeSeleccionado': mostrandoCompasparte === acordeIndex && mostrandoResumenParteIndex === index }"
-          >
-          {{ acorde }}
-          </span>
+<div>
+    <span v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia">[AGREGAR SECUENCIA]</span>
+    <span v-if="refActualizandoSecuencia" @click="CancelarActualizarSecuencia">[CANCELAR]</span>
+
+
+</div>
+  <div style="display: flex; flex-wrap: wrap">
+    <div class="secuencia agregarSecuencia"  v-if="refActualizandoSecuencia" @click="clickAgregarSecuencia(-1)">
+      +
+    </div>
+
+
+
+
+
+
+
+    <div
+      v-for="(parte, index) in resumenSecuencia.resumenPartes"
+      :key="index"
+      style="display: flex;"
+      
+    >
+    
+<div
+class="secuencia"
+      :class="{
+            secuencia_actual: resumenSecuencia.parte === index,
+          }"
+>
+    
+
+    <div>
+      <div>
+        <span
+          style="color: #a9a8f6; font-size: small"
+          
+          >{{ cancion.acordes.partes[parte.parteId].nombre }}</span
+        >
+
+        <div class="repeticion">
+          x
+          <span v-if="resumenSecuencia.parte === index"
+            >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /</span>
+          <input type="number" min="0" max="50" v-model="parte.cantPartes" @change="Click_actualizarSecuencia"></input>
+          
+          
         </div>
       </div>
+      <div class="ordendiv">
+        <span
+          class="acordeSecuencia"
+          v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte.parteId]
+            .acordes"
+          :key="acordeIndex"
+          :class="{
+            acordeSeleccionado:
+              resumenSecuencia.compasdeparte === acordeIndex &&
+              resumenSecuencia.parte === index,
+          }"
+        >
+          {{ acorde }}
+        </span>
+      </div>
+
+
+
     </div>
-  </div>
-  <div v-if="viendoParte && parte !== null">
-    <span style="font-size: large">Partes</span>
-    <editarParte :parte="parte"></editarParte>
-  </div>
-  <div>
-    <span style="font-size: large">Modificar:</span>
+
+
+
+
+
+</div>
+    <div class="secuencia agregarSecuencia" @click="clickAgregarSecuencia(index)"  v-if="refActualizandoSecuencia">
+      +
+    </div>
+    </div>
+
+
   </div>
 </template>
 
 <style scoped>
-
 .read-the-docs {
-  color: #292828;
+  color: #888;
 }
 .acordeSecuencia {
+  color: #a9a8f6;
   font-size: var(--tamanio-parte);
   margin-right: 5px;
 }
@@ -186,10 +176,8 @@ defineExpose({
   border-radius: 5px;
 }
 .acordeSeleccionado {
-  border: 1px solid;
-  border: 1px solid;
-  color: rgb(202, 49, 49);
-  font-size: large;
+  background-color: #a9a8f6;
+  color: black;
 }
 
 .ordendiv {
@@ -239,9 +227,9 @@ defineExpose({
   flex-wrap: wrap;
 }
 
-.compas_actual {
-  background-color: rgb(190, 120, 120);
-  color: rgb(54, 52, 52);
+.secuencia_actual {
+  background-color: rgb(156, 125, 125);
+  color: white;
 }
 
 .domi {
@@ -269,8 +257,5 @@ defineExpose({
 .tituloSecuencia {
   color: #a9a8f6;
   margin-top: 10px;
-}
-.secuencia_actual {
-  background-color: #424141 !important;
 }
 </style>
