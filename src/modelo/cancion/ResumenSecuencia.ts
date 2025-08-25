@@ -1,3 +1,4 @@
+import { Parte } from './acordes'
 import { Cancion } from './cancion'
 
 export class ResumenParteSecuencia {
@@ -35,8 +36,24 @@ export class ResumenSecuencia {
       this.resumenPartes[parte].desdeAcorde -
       this.repeticionparte * this.resumenPartes[parte].cantAcordes
   }
-  public AgregarSecuencia(index: number) {
-    
+  public AgregarSecuencia(cancion: Cancion, index: number, parteid: number) {
+    const newResumen = []
+    if (parteid == -1) {
+      cancion.acordes.partes.push(new Parte('agregada', [cancion.escala]))
+      parteid = cancion.acordes.partes.length - 1
+    }
+    if (index == -1) {
+      newResumen.push(parteid)
+    }
+    for (let i = 0; i < this.resumenPartes.length; i++) {
+      for (let j = 0; j < this.resumenPartes[i].cantPartes; j++) {
+        newResumen.push(this.resumenPartes[i].parteId)
+      }
+      if (i == index) {
+        newResumen.push(parteid)
+      }
+    }
+    cancion.acordes.ordenPartes = newResumen
   }
 
   static GetResumen(cancion: Cancion): ResumenSecuencia {

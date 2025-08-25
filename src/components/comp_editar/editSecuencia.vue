@@ -65,8 +65,12 @@ function ActualizarSecuencia() {
 function CancelarActualizarSecuencia() {
   refActualizandoSecuencia.value = false
 }
+
+const ParteNuevaSecuencia = ref(0)
 function clickAgregarSecuencia(index: number) {
-  resumenSecuencia.value?.AgregarSecuencia(index)
+  resumenSecuencia.value?.AgregarSecuencia(props.cancion, index, ParteNuevaSecuencia.value)
+  refActualizandoSecuencia.value = false
+  Actualizar(props.cancion)
 
 }
 </script>
@@ -79,6 +83,16 @@ function clickAgregarSecuencia(index: number) {
     <span v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia">[AGREGAR SECUENCIA]</span>
     <span v-if="refActualizandoSecuencia" @click="CancelarActualizarSecuencia">[CANCELAR]</span>
 
+        <select v-model="ParteNuevaSecuencia" v-if="refActualizandoSecuencia">
+          <option
+            v-for="(parteSelect, parteIndex) in cancion.acordes.partes"
+            :key="parteIndex"
+            :value="parteIndex"
+            
+            >
+          {{ parteSelect.nombre }}</option>
+          <option value="-1">Nueva</option>
+        </select>
 
 </div>
   <div style="display: flex; flex-wrap: wrap">
@@ -109,8 +123,17 @@ class="secuencia"
 
     <div>
       <div>
+        <select v-model="parte.parteId" @change="Click_actualizarSecuencia">
+          <option
+            v-for="(parteSelect, parteIndex) in cancion.acordes.partes"
+            :key="parteIndex"
+            :value="parteIndex"
+            
+            >
+          {{ parteSelect.nombre }}</option>
+        </select>
         <span
-          style="color: #a9a8f6; font-size: small"
+          
           
           >{{ cancion.acordes.partes[parte.parteId].nombre }}</span
         >
@@ -257,5 +280,9 @@ class="secuencia"
 .tituloSecuencia {
   color: #a9a8f6;
   margin-top: 10px;
+}
+.agregarSecuencia {
+  width: 20px;
+  height: 100%;
 }
 </style>
