@@ -36,6 +36,15 @@ watch(
     Actualizar()
   },
 )
+
+watch(
+  modos,
+  () => {
+    Actualizar()
+  },
+  { deep: true }
+)
+
 defineExpose({ Actualizar })
 </script>
 <template>

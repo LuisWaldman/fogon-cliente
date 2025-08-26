@@ -24,15 +24,17 @@ function Dibujar() {
   scoreContainer.value.innerHTML = ''
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  renderer.resize(900, 100)
+  renderer.resize(900, 200)
   const context = renderer.getContext()
 
   // Establecer los colores ANTES de crear y dibujar el pentagrama
   context.setFillStyle('#a9a8f6')
   context.setStrokeStyle('#a9a8f6')
 
+  let x = 0
   for (const pentagrama of props.renglon.pentagramas) {
-    pentagrama.getStave(context)
+    pentagrama.getStave(context, x)
+    x += 100 // Incrementar x para la siguiente posición
   }
 }
 
