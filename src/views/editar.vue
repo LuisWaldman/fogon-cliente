@@ -140,16 +140,6 @@ watch(
       </editarpentagrama>
     </div>
     <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">
-      <sugerencias
-        :cancion="appStore.editandocancion"
-        :compas="editandoCompas"
-        @cambioCompas="cambiarCompas"
-        @actualizarCancion="Actualizar"
-        v-if="
-          vista.viendo !== 'editconsolaacordes' &&
-          vista.viendo !== 'editaracordes'
-        "
-      ></sugerencias>
       <editAcordes
         v-if="vista.viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"

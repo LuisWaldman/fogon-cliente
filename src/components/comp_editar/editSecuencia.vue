@@ -51,6 +51,9 @@ const resumenSecuencia = ref<ResumenSecuencia>(
 )
 
 function Actualizar(cancion: Cancion) {
+  if (cancion == undefined) {
+    cancion = props.cancion
+  }
   resumenSecuencia.value = ResumenSecuencia.GetResumen(cancion)
 }
 
@@ -101,8 +104,16 @@ function clickAgregarSecuencia(index: number) {
   resumenSecuencia.value?.AgregarSecuencia(props.cancion, index, ParteNuevaSecuencia.value)
   refActualizandoSecuencia.value = false
   Actualizar(props.cancion)
-
 }
+function CortarSecuencia(index: number) {
+  resumenSecuencia.value?.ActualizarCompas(props.compas)
+  resumenSecuencia.value?.CortarSecuencia(props.cancion)
+  refActualizandoSecuencia.value = false
+  Actualizar(props.cancion)
+}
+
+
+defineExpose({ Actualizar })
 </script>
 
 <template>
@@ -123,6 +134,7 @@ function clickAgregarSecuencia(index: number) {
           {{ parteSelect.nombre }}</option>
           <option value="-1">Nueva</option>
         </select>
+        <span @click="CortarSecuencia" v-if="compas != -1">[CORTAR]</span>
 
 </div>
   <div style="display: flex; flex-wrap: wrap">
@@ -192,8 +204,8 @@ class="secuencia"
         
       </div>
 <input type="text" v-if="refEditandoSecuencia == index" v-model="refAcordesEditando"></input>
-<span @click="click_Sieditarsecuencia(index)" v-if="refEditandoSecuencia == index">[Si]</span>
-        <span @click="click_Noeditarsecuencia(index)" v-if="refEditandoSecuencia == index">[No]</span>
+<span @click="click_Sieditarsecuencia()" v-if="refEditandoSecuencia == index">[Si]</span>
+        <span @click="click_Noeditarsecuencia()" v-if="refEditandoSecuencia == index">[No]</span>
 
     </div>
 

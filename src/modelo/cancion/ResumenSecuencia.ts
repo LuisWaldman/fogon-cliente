@@ -36,6 +36,43 @@ export class ResumenSecuencia {
       this.resumenPartes[parte].desdeAcorde -
       this.repeticionparte * this.resumenPartes[parte].cantAcordes
   }
+  public CortarSecuencia(cancion: Cancion) {
+    const newResumen = []
+    if (this.compasdeparte == 0) {
+      return
+    }
+    const parteACortor = this.resumenPartes[this.parte].parteId
+    const acordesTotales = cancion.acordes.partes[parteACortor].acordes
+    const acordesViejaParte = []
+    const acordesNuevaParte = []
+    for (let i = 0; i < acordesTotales.length; i++) {
+      if (i < this.compasdeparte) {
+        acordesViejaParte.push(acordesTotales[i])
+      } else {
+        acordesNuevaParte.push(acordesTotales[i])
+      }
+    }
+
+    cancion.acordes.partes.push(
+      new Parte(
+        cancion.acordes.partes[parteACortor].nombre + 'B',
+        acordesNuevaParte,
+      ),
+    )
+    cancion.acordes.partes[parteACortor].acordes = acordesViejaParte
+    const nuevaParteId = cancion.acordes.partes.length - 1
+    for (let i = 0; i < this.resumenPartes.length; i++) {
+      for (let j = 0; j < this.resumenPartes[i].cantPartes; j++) {
+        if (this.resumenPartes[i].parteId == parteACortor) {
+          newResumen.push(this.resumenPartes[i].parteId)
+          newResumen.push(nuevaParteId)
+        } else {
+          newResumen.push(this.resumenPartes[i].parteId)
+        }
+      }
+    }
+    cancion.acordes.ordenPartes = newResumen
+  }
   public AgregarSecuencia(cancion: Cancion, index: number, parteid: number) {
     const newResumen = []
     if (parteid == -1) {
