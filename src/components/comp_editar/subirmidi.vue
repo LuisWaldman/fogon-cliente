@@ -4,7 +4,7 @@ import { MidiHelper } from '../../modelo/midi/MidiHelper'
 import { Midi } from '@tonejs/midi'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { Cancion } from '../../modelo/cancion/cancion'
-defineProps<{
+const props = defineProps<{
   cancion: Cancion
 }>()
 const estadoSubida = ref('')
@@ -42,7 +42,7 @@ function manejarSeleccionArchivo(event: Event) {
       estadoSubida.value = 'MIDI Ok'
       // Podés guardar el objeto midi en un ref o estado global si lo necesitás
       objetoMidi.value = midi
-      pentagramas.value = midiHelper.MidiToPentagramas(midi)
+      props.cancion.pentagramas = midiHelper.MidiToPentagramas(midi)
       estadoSubida.value = 'Pentagramas cargados'
     } catch (error) {
       console.error('Error al procesar el archivo MIDI:', error)
@@ -66,8 +66,5 @@ function manejarSeleccionArchivo(event: Event) {
     @change="manejarSeleccionArchivo"
   />
 
-  <div v-if="pentagramas.length > 0">
-    {{ pentagramas }}
-  </div>
 </template>
 <style scoped></style>
