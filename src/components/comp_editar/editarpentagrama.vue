@@ -25,9 +25,10 @@ const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
   new DisplaySistemaPentagrama(),
 )
 
-const refEstiloEditandoAcorde = ref<EstiloEditandoCompas>(new EstiloEditandoCompas())
+const refEstiloEditandoAcorde = ref<EstiloEditandoCompas>(
+  new EstiloEditandoCompas(),
+)
 const refPatrones = ref(PatronRitmico.GetPatrones())
-
 
 refDisplayPentagrama.value.pentagramas.push(new DisplayInstrumentoPentagrama())
 const refCompasPentagrama = ref<DisplayCompasPentagrama>(
@@ -43,10 +44,10 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
 )
 const helpPenta = new HelperPentagramas()
 refEstiloEditandoAcorde.value =
-    refPatrones.value[patronSeleccionado.value].GetEstilo()
-  const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde)
-  refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(pentaObtenido)
+  refPatrones.value[patronSeleccionado.value].GetEstilo()
+const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde)
+refDisplayPentagrama.value.pentagramas[0].compases[0] =
+  helpPenta.creaCompasPentagrama(pentaObtenido)
 const CtrlrenglonPentagrama = ref()
 function ActualizarRitmo() {
   const helpPenta = new HelperPentagramas()
@@ -56,7 +57,6 @@ function ActualizarRitmo() {
   CtrlrenglonPentagrama.value.Dibujar()
 }
 
-
 function cambiarPatronSeleccionado() {
   refEstiloEditandoAcorde.value =
     refPatrones.value[patronSeleccionado.value].GetEstilo()
@@ -64,7 +64,7 @@ function cambiarPatronSeleccionado() {
 }
 
 refEstiloEditandoAcorde.value =
-    refPatrones.value[patronSeleccionado.value].GetEstilo()
+  refPatrones.value[patronSeleccionado.value].GetEstilo()
 
 const emit = defineEmits(['cerrar', 'actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
@@ -91,7 +91,10 @@ function clickGenerarPentagrama() {
   const helpPenta = new HelperPentagramas()
   console.log('ACtualizando', refEstiloEditandoAcorde.value)
   props.cancion.pentagramas[idPentagramaEditando.value].compases =
-    helpPenta.creaPentagrama(props.cancion, refEstiloEditandoAcorde.value).compases
+    helpPenta.creaPentagrama(
+      props.cancion,
+      refEstiloEditandoAcorde.value,
+    ).compases
   emit('actualizoPentagrama')
 }
 
@@ -111,7 +114,6 @@ function quitarAcorde(index: number) {
   refEstiloEditandoAcorde.value.acordes.splice(index, 1)
   ActualizarRitmo()
 }
-
 </script>
 <template>
   {{ acorde }}
@@ -141,21 +143,22 @@ function quitarAcorde(index: number) {
   <div>
     Patron Ritmico
     <select @click="cambiarPatronSeleccionado()" v-model="patronSeleccionado">
-<option
+      <option
         v-for="(patron, index) in refPatrones"
         :key="index"
         :value="index"
-        
       >
         {{ patron.nombre }}
       </option>
-
     </select>
     <table>
       <thead>
         <tr>
           <th>Ritmo</th>
-          <th v-for="(acorde, index) in refEstiloEditandoAcorde.acordes" :key="index">
+          <th
+            v-for="(acorde, index) in refEstiloEditandoAcorde.acordes"
+            :key="index"
+          >
             <div>
               <select v-model="acorde.duracionId" @change="ActualizarRitmo()">
                 <option

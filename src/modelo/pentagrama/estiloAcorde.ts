@@ -19,6 +19,9 @@ export class EstiloAcorde {
         )
       }
     }
+    if (toRet.length === 0) {
+      toRet.push(new PentagramaNotas('C4', this.GetDuracionPentagrama() + 'r'))
+    }
     return toRet
   }
   GetDuracionPentagrama(): string {
