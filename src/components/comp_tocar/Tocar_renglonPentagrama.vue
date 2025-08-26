@@ -26,7 +26,7 @@ function Dibujar() {
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
   renderer.resize(900, 100)
   const context = renderer.getContext()
-  
+
   // Establecer los colores ANTES de crear y dibujar el pentagrama
   context.setFillStyle('#a9a8f6')
   context.setStrokeStyle('#a9a8f6')

@@ -12,31 +12,59 @@ import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayIns
 import { DisplayCompasPentagrama } from '../../modelo/pentagrama/DisplayCompasPentagrama'
 import { DisplayAcordesPentagrama } from '../../modelo/pentagrama/DisplayAcordesPentagrama'
 import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentagrama'
+import { PatronRitmico } from '../../modelo/pentagrama/PatronRitmico'
 
 const props = defineProps<{
   cancion: Cancion
 }>()
 const refEditandoCompas = ref(0)
-const acorde = props.cancion.acordes.GetTodosLosAcordes()[refEditandoCompas.value]
-const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(new DisplaySistemaPentagrama())
+const patronSeleccionado = ref(0)
+const acorde =
+  props.cancion.acordes.GetTodosLosAcordes()[refEditandoCompas.value]
+const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
+  new DisplaySistemaPentagrama(),
+)
+
+const refEstiloEditandoAcorde = ref<EstiloEditandoCompas>(new EstiloEditandoCompas())
+const refPatrones = ref(PatronRitmico.GetPatrones())
+
+
 refDisplayPentagrama.value.pentagramas.push(new DisplayInstrumentoPentagrama())
-const refCompasPentagrama = ref<DisplayCompasPentagrama>(new DisplayCompasPentagrama())
+const refCompasPentagrama = ref<DisplayCompasPentagrama>(
+  new DisplayCompasPentagrama(),
+)
 refCompasPentagrama.value.acordes.push(new DisplayAcordesPentagrama())
-refCompasPentagrama.value.acordes[0].Notas.push(new DisplayNotaPentagrama('C',4))
+refCompasPentagrama.value.acordes[0].Notas.push(
+  new DisplayNotaPentagrama('C', 4),
+)
 refCompasPentagrama.value.acordes[0].duracion = '4'
-refDisplayPentagrama.value.pentagramas[0].compases.push(refCompasPentagrama.value)
+refDisplayPentagrama.value.pentagramas[0].compases.push(
+  refCompasPentagrama.value,
+)
+const helpPenta = new HelperPentagramas()
+refEstiloEditandoAcorde.value =
+    refPatrones.value[patronSeleccionado.value].GetEstilo()
+  const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde)
+  refDisplayPentagrama.value.pentagramas[0].compases[0] =
+    helpPenta.creaCompasPentagrama(pentaObtenido)
 const CtrlrenglonPentagrama = ref()
 function ActualizarRitmo() {
   const helpPenta = new HelperPentagramas()
-  const pentaObtenido = refEditandoAcorde.value.GetCompas(acorde)
-  refDisplayPentagrama.value.pentagramas[0].compases[0] = helpPenta.creaCompasPentagrama(pentaObtenido)
+  const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde)
+  refDisplayPentagrama.value.pentagramas[0].compases[0] =
+    helpPenta.creaCompasPentagrama(pentaObtenido)
   CtrlrenglonPentagrama.value.Dibujar()
 }
-const refEditandoAcorde = ref<EstiloEditandoCompas>(new EstiloEditandoCompas())
-refEditandoAcorde.value.acordes.push(
-  new EstiloAcorde(1, refEditandoAcorde.value.notas.length),
-)
-refEditandoAcorde.value.acordes[0].tiposNota[0] = 'o'
+
+
+function cambiarPatronSeleccionado() {
+  refEstiloEditandoAcorde.value =
+    refPatrones.value[patronSeleccionado.value].GetEstilo()
+  ActualizarRitmo()
+}
+
+refEstiloEditandoAcorde.value =
+    refPatrones.value[patronSeleccionado.value].GetEstilo()
 
 const emit = defineEmits(['cerrar', 'actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
@@ -61,15 +89,15 @@ function clickBorrarPentagrama() {
 
 function clickGenerarPentagrama() {
   const helpPenta = new HelperPentagramas()
-  console.log('ACtualizando', refEditandoAcorde.value)
+  console.log('ACtualizando', refEstiloEditandoAcorde.value)
   props.cancion.pentagramas[idPentagramaEditando.value].compases =
-    helpPenta.creaPentagrama(props.cancion, refEditandoAcorde.value).compases
+    helpPenta.creaPentagrama(props.cancion, refEstiloEditandoAcorde.value).compases
   emit('actualizoPentagrama')
 }
 
 function agregarAcorde() {
-  refEditandoAcorde.value.acordes.push(
-    new EstiloAcorde(1, refEditandoAcorde.value.notas.length),
+  refEstiloEditandoAcorde.value.acordes.push(
+    new EstiloAcorde(1, refEstiloEditandoAcorde.value.notas.length),
   )
   ActualizarRitmo()
 }
@@ -80,9 +108,10 @@ function click_CambiarTipoNota(acorde: EstiloAcorde, index: number) {
 }
 
 function quitarAcorde(index: number) {
-  refEditandoAcorde.value.acordes.splice(index, 1)
+  refEstiloEditandoAcorde.value.acordes.splice(index, 1)
   ActualizarRitmo()
 }
+
 </script>
 <template>
   {{ acorde }}
@@ -110,11 +139,23 @@ function quitarAcorde(index: number) {
   </div>
 
   <div>
+    Patron Ritmico
+    <select @click="cambiarPatronSeleccionado()" v-model="patronSeleccionado">
+<option
+        v-for="(patron, index) in refPatrones"
+        :key="index"
+        :value="index"
+        
+      >
+        {{ patron.nombre }}
+      </option>
+
+    </select>
     <table>
       <thead>
         <tr>
           <th>Ritmo</th>
-          <th v-for="(acorde, index) in refEditandoAcorde.acordes" :key="index">
+          <th v-for="(acorde, index) in refEstiloEditandoAcorde.acordes" :key="index">
             <div>
               <select v-model="acorde.duracionId" @change="ActualizarRitmo()">
                 <option
@@ -130,14 +171,14 @@ function quitarAcorde(index: number) {
               <span @click="quitarAcorde(index)">[X]</span>
             </div>
           </th>
-          <th><span @click="agregarAcorde">[Agregar Acorde]</span></th>
+          <th><span @click="agregarAcorde">[+]</span></th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(nota, index) in refEditandoAcorde.notas" :key="index">
+        <tr v-for="(nota, index) in refEstiloEditandoAcorde.notas" :key="index">
           <td>{{ nota }}</td>
           <td
-            v-for="(acorde, indexnotaaco) in refEditandoAcorde.acordes"
+            v-for="(acorde, indexnotaaco) in refEstiloEditandoAcorde.acordes"
             :key="indexnotaaco"
             @click="click_CambiarTipoNota(acorde, index)"
           >
@@ -147,10 +188,12 @@ function quitarAcorde(index: number) {
         </tr>
       </tbody>
     </table>
-    
   </div>
-  {{ refDisplayPentagrama }}
-<renglonpentagrama ref="CtrlrenglonPentagrama" :cancion="cancion" :renglon="refDisplayPentagrama" />
+  <renglonpentagrama
+    ref="CtrlrenglonPentagrama"
+    :cancion="cancion"
+    :renglon="refDisplayPentagrama"
+  />
 </template>
 
 <style scoped>
