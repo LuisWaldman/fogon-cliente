@@ -1,10 +1,14 @@
 import { Formatter, RenderContext, Stave, StaveNote } from 'vexflow'
 import type { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
+import type { Cancion } from '../cancion/cancion'
 
 export class DisplayInstrumentoPentagrama {
-  getStave(context: RenderContext, y: number = 0): Stave {
+  getStave(context: RenderContext, cancion: Cancion, y: number = 0): Stave {
     const stave = new Stave(0, y, 700)
-    stave.addClef(this.clave).addTimeSignature('4/4')
+    //addKeySignature
+    const key = `${cancion.escala}`
+    const compas = `${cancion.compasCantidad}/${cancion.compasUnidad}`
+    stave.addClef(this.clave).addKeySignature(key).addTimeSignature(compas)
     stave.setContext(context).draw()
     const todasLasNotas: StaveNote[] = []
     for (const compas of this.compases) {
