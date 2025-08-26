@@ -23,14 +23,16 @@ export class MidiHelper {
       this.parteCompas = 0
       for (const nota of pentagrama.compases[i].notas as PentagramaNotas[][]) {
         for (const notaItem of nota as PentagramaNotas[]) {
-          const tiempo = this.GetTiempoMidi(i)
-          secuencia.notas.push(
-            new NotaMidi(
-              notaItem.nota,
-              PentagramaNotas.duracionMidi(notaItem.duracion),
-              tiempo,
-            ),
-          )
+          if (!notaItem.duracion.includes('r')) {
+            const tiempo = this.GetTiempoMidi(i)
+            secuencia.notas.push(
+              new NotaMidi(
+                notaItem.nota,
+                PentagramaNotas.duracionMidi(notaItem.duracion),
+                tiempo,
+              ),
+            )
+          }
         }
         this.ActualizarTiempos(nota)
       }
