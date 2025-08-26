@@ -21,9 +21,20 @@ export class MidiPlayer {
 
   // 🎼 Cargar secuencia para reproducción sincronizada
   public loadSequence(secuencia: MidiSecuencia): void {
+    // Detener y limpiar completamente el transport
+    Tone.getTransport().stop()
+    Tone.getTransport().cancel() // ✨ Cancela todos los eventos programados
+    Tone.getTransport().seconds = 0
+
+    // Limpiar la parte anterior
+    if (this.part) {
+      this.part.dispose()
+      this.part = null
+    }
+
+    // Configurar nueva secuencia
     Tone.getTransport().bpm.value = secuencia.bpm
     this.sequence = secuencia.notas
-    if (this.part) this.part.dispose()
 
     this.part = new Tone.Part((time, value) => {
       this.instrument.triggerAttackRelease(value.note, value.duration, time)

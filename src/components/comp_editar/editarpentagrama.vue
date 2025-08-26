@@ -13,11 +13,15 @@ import { DisplayCompasPentagrama } from '../../modelo/pentagrama/DisplayCompasPe
 import { DisplayAcordesPentagrama } from '../../modelo/pentagrama/DisplayAcordesPentagrama'
 import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentagrama'
 import { PatronRitmico } from '../../modelo/pentagrama/PatronRitmico'
+import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 
 const props = defineProps<{
   cancion: Cancion
 }>()
 const refEditandoCompas = ref(0)
+
+const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
+
 const patronSeleccionado = ref(0)
 const acorde =
   props.cancion.acordes.GetTodosLosAcordes()[refEditandoCompas.value]
@@ -78,7 +82,7 @@ function clickCancelarEdit() {
 
 function clickAgregarPentagrama() {
   const nPentagrama = new Pentagrama()
-  nPentagrama.instrumento = 'Nuevo Instrumento'
+  nPentagrama.instrumento = 'Piano'
   props.cancion.pentagramas.push(nPentagrama)
 }
 
@@ -138,7 +142,15 @@ function quitarAcorde(index: number) {
 
   <div v-if="cancion.pentagramas[idPentagramaEditando]">
     Instrumento:
-    <input v-model="cancion.pentagramas[idPentagramaEditando].instrumento" />
+    <select v-model="cancion.pentagramas[idPentagramaEditando].instrumento" >
+      <option
+        v-for="(inst, index) in refInstrumentos"
+        :key="index"
+        :value="inst.nombre"
+      >
+        {{ inst.nombre }}
+      </option>
+    </select>
     <select v-model="cancion.pentagramas[idPentagramaEditando].clave">
       <option value="treble">Sol</option>
       <option value="bass">Fa</option>
