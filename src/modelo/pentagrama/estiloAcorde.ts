@@ -31,6 +31,7 @@ export class EstiloAcorde {
   public constructor(duracionId: number, cantNotas: number) {
     this.duracionId = duracionId
     this.tiposNota = new Array(cantNotas).fill('x')
+    this.tiposNota[0] = 'o'
   }
   public CambiarTipoNota(indice: number): void {
     this.tiposNota[indice] = this.tiposNota[indice] === 'x' ? 'o' : 'x'

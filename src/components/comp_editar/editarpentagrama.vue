@@ -23,13 +23,20 @@ refDisplayPentagrama.value.pentagramas.push(new DisplayInstrumentoPentagrama())
 const refCompasPentagrama = ref<DisplayCompasPentagrama>(new DisplayCompasPentagrama())
 refCompasPentagrama.value.acordes.push(new DisplayAcordesPentagrama())
 refCompasPentagrama.value.acordes[0].Notas.push(new DisplayNotaPentagrama('C',4))
-refCompasPentagrama.value.acordes[0].duracion = '1'
+refCompasPentagrama.value.acordes[0].duracion = '4'
 refDisplayPentagrama.value.pentagramas[0].compases.push(refCompasPentagrama.value)
-
+const CtrlrenglonPentagrama = ref()
+function ActualizarRitmo() {
+  const helpPenta = new HelperPentagramas()
+  const pentaObtenido = refEditandoAcorde.value.GetCompas(acorde)
+  refDisplayPentagrama.value.pentagramas[0].compases[0] = helpPenta.creaCompasPentagrama(pentaObtenido)
+  CtrlrenglonPentagrama.value.Dibujar()
+}
 const refEditandoAcorde = ref<EstiloEditandoCompas>(new EstiloEditandoCompas())
 refEditandoAcorde.value.acordes.push(
   new EstiloAcorde(1, refEditandoAcorde.value.notas.length),
 )
+refEditandoAcorde.value.acordes[0].tiposNota[0] = 'o'
 
 const emit = defineEmits(['cerrar', 'actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
@@ -64,11 +71,17 @@ function agregarAcorde() {
   refEditandoAcorde.value.acordes.push(
     new EstiloAcorde(1, refEditandoAcorde.value.notas.length),
   )
-  //refEditandoAcorde.value.agregarAcorde()
+  ActualizarRitmo()
+}
+
+function click_CambiarTipoNota(acorde: EstiloAcorde, index: number) {
+  acorde.CambiarTipoNota(index)
+  ActualizarRitmo()
 }
 
 function quitarAcorde(index: number) {
   refEditandoAcorde.value.acordes.splice(index, 1)
+  ActualizarRitmo()
 }
 </script>
 <template>
@@ -103,7 +116,7 @@ function quitarAcorde(index: number) {
           <th>Ritmo</th>
           <th v-for="(acorde, index) in refEditandoAcorde.acordes" :key="index">
             <div>
-              <select v-model="acorde.duracionId">
+              <select v-model="acorde.duracionId" @change="ActualizarRitmo()">
                 <option
                   v-for="(duracion, index) in duracionesDisponibles"
                   :key="index"
@@ -126,7 +139,7 @@ function quitarAcorde(index: number) {
           <td
             v-for="(acorde, indexnotaaco) in refEditandoAcorde.acordes"
             :key="indexnotaaco"
-            @click="acorde.CambiarTipoNota(index)"
+            @click="click_CambiarTipoNota(acorde, index)"
           >
             {{ acorde.tiposNota[index] }}
           </td>
@@ -136,7 +149,8 @@ function quitarAcorde(index: number) {
     </table>
     
   </div>
-<renglonpentagrama :cancion="cancion" :renglon="refDisplayPentagrama" />
+  {{ refDisplayPentagrama }}
+<renglonpentagrama ref="CtrlrenglonPentagrama" :cancion="cancion" :renglon="refDisplayPentagrama" />
 </template>
 
 <style scoped>

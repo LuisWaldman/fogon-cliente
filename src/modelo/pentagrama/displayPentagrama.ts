@@ -7,6 +7,7 @@ import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
 
 export class DisplayPentagrama {
+  public renglones: DisplaySistemaPentagrama[] = []
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
   ): DisplayCompasPentagrama {
@@ -64,5 +65,4 @@ export class DisplayPentagrama {
       renglon.pentagramas.push(nInstru)
     }
   }
-  public renglones: DisplaySistemaPentagrama[] = []
 }
