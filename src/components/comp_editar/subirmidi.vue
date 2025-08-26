@@ -2,14 +2,12 @@
 import { ref } from 'vue'
 import { MidiHelper } from '../../modelo/midi/MidiHelper'
 import { Midi } from '@tonejs/midi'
-import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { Cancion } from '../../modelo/cancion/cancion'
 const props = defineProps<{
   cancion: Cancion
 }>()
 const estadoSubida = ref('')
 const fileInput = ref<HTMLInputElement | null>(null)
-const pentagramas = ref<Pentagrama[]>([])
 const midiHelper = new MidiHelper()
 function abrirDialogoArchivo() {
   estadoSubida.value = 'iniciando'
@@ -65,6 +63,5 @@ function manejarSeleccionArchivo(event: Event) {
     style="display: none"
     @change="manejarSeleccionArchivo"
   />
-
 </template>
 <style scoped></style>

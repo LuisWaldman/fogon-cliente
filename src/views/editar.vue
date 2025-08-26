@@ -6,7 +6,6 @@ import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import Secuencia from '../components/comp_editar/editSecuencia.vue'
-import sugerencias from '../components/comp_editar/sugerencias.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 

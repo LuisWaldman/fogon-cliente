@@ -32,10 +32,7 @@ function clickNuevo() {
   emit('cerrar', true)
 }
 function DescargarJSON() {
-  console.log('Descargando JSON de la canción actual...')
   const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
-  console.log('Descargando JSON:', cancionJSON)
-
   const blob = new Blob([cancionJSON], { type: 'application/json' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')

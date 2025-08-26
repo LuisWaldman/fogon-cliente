@@ -1,8 +1,6 @@
 import type { Cancion } from '../cancion/cancion'
 import { DisplayAcordesPentagrama } from './DisplayAcordesPentagrama'
 import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
-import { DisplayInstrumentoPentagrama } from './DisplayInstrumentoPentagrama'
-import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
 import { Pentagrama } from '../cancion/pentagrama'
 import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { DisplayPentagrama } from './displayPentagrama'
@@ -25,9 +23,8 @@ export class HelperPentagramas {
   }
   public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
     const modos: DisplayModoPentagrama[] = []
-    const clave = 'treble'
     for (const pentagrama of cancion.pentagramas) {
-      modos.push(new DisplayModoPentagrama(clave, true, pentagrama.instrumento))
+      modos.push(new DisplayModoPentagrama(pentagrama.instrumento, true))
     }
     return modos
   }
@@ -43,10 +40,7 @@ export class HelperPentagramas {
 
     for (let contmod = 0; contmod < modos.length; contmod++) {
       if (modos[contmod].Ver) {
-        display.AgregarPartitura(
-          cancion.pentagramas[contmod],
-          modos[contmod].Clave,
-        )
+        display.AgregarPartitura(cancion.pentagramas[contmod])
       }
     }
     return display

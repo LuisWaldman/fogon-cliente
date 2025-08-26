@@ -31,12 +31,14 @@ export class HelperJSON {
       })),
       pentagramas: cancion.pentagramas.map((pentagrama) => ({
         instrumento: pentagrama.instrumento,
+        clave: pentagrama.clave,
         compases: pentagrama.compases.map((compas) => ({
           notas: compas.notas,
         })),
       })),
       archivo: cancion.archivo,
     })
+    console.log(cancion.pentagramas[0].clave)
     return cancionJSON
   }
 
@@ -101,10 +103,12 @@ export class HelperJSON {
       toRet.pentagramas = data.pentagramas.map(
         (penta: {
           instrumento: string
+          clave: string
           compases: { notas: PentagramaNotas[][] }[]
         }) => {
           const pentagrama = new Pentagrama()
           pentagrama.instrumento = penta.instrumento
+          pentagrama.clave = penta.clave
           pentagrama.compases = [] // Asegurar que esté inicializado
           penta.compases.forEach(
             (compasData: { notas: PentagramaNotas[][] }) => {

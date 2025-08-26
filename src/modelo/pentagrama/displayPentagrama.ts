@@ -40,11 +40,11 @@ export class DisplayPentagrama {
     return this.renglones[idsistema]
   }
 
-  AgregarPartitura(pentagrama: Pentagrama, Clave: string) {
+  AgregarPartitura(pentagrama: Pentagrama) {
     let sistema = 0
     let renglon = this.GetSistema(sistema)
     let nInstru = new DisplayInstrumentoPentagrama()
-    nInstru.clave = Clave
+    //pentagrama.clave = pentagrama.clave != '' ? pentagrama.clave : 'treble'
     renglon.pentagramas.push(nInstru)
 
     for (let i = 0; i < pentagrama.compases.length; i++) {
@@ -56,7 +56,7 @@ export class DisplayPentagrama {
         renglon = this.GetSistema(sistema)
         renglon.pentagramas.push(nInstru)
         nInstru = new DisplayInstrumentoPentagrama()
-        nInstru.clave = Clave
+        nInstru.clave = pentagrama.clave
       }
     }
     if (nInstru.compases.length > 0) {

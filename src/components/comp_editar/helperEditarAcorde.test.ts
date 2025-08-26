@@ -1,5 +1,4 @@
 import { describe, it, expect } from 'vitest'
-import { HelperMusica } from './HelperMusica'
 import { helperEditarAcorde } from './helperEditarAcorde'
 
 describe('helperEditarAcorde', () => {

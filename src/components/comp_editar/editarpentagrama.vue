@@ -105,7 +105,7 @@ function agregarAcorde() {
   ActualizarRitmo()
 }
 
-function click_CambiarTipoNota(acorde: EstiloAcorde, index: number) {
+function clickCambiarTipoNota(acorde: EstiloAcorde, index: number) {
   acorde.CambiarTipoNota(index)
   ActualizarRitmo()
 }
@@ -134,6 +134,15 @@ function quitarAcorde(index: number) {
       </option>
     </select>
     <span @click="clickAgregarPentagrama">[Agregar]</span>
+  </div>
+
+  <div v-if="cancion.pentagramas[idPentagramaEditando]">
+    Instrumento:
+    <input v-model="cancion.pentagramas[idPentagramaEditando].instrumento" />
+    <select v-model="cancion.pentagramas[idPentagramaEditando].clave">
+      <option value="treble">Sol</option>
+      <option value="bass">Fa</option>
+    </select>
   </div>
   <div>
     <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
@@ -183,7 +192,7 @@ function quitarAcorde(index: number) {
           <td
             v-for="(acorde, indexnotaaco) in refEstiloEditandoAcorde.acordes"
             :key="indexnotaaco"
-            @click="click_CambiarTipoNota(acorde, index)"
+            @click="clickCambiarTipoNota(acorde, index)"
           >
             {{ acorde.tiposNota[index] }}
           </td>

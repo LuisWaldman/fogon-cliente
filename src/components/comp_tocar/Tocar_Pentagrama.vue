@@ -42,7 +42,7 @@ watch(
   () => {
     Actualizar()
   },
-  { deep: true }
+  { deep: true },
 )
 
 defineExpose({ Actualizar })
@@ -51,18 +51,11 @@ defineExpose({ Actualizar })
   <div class="componenteMusical">
     <div>
       <div v-for="(modo, index) in modos" :key="index">
-        {{ modo.Instrumento }} <input type="checkbox" v-model="modo.Ver">Ver</input>
-        <select v-model="modo.Clave">
-          <option value="treble">Treble</option>
-          <option value="bass">Bass</option>
-        </select>
-
+        {{ modo.Instrumento }} <input type="checkbox" v-model="modo.Ver" />
       </div>
-      <div @click="Actualizar">
-        [ACTUALIZAR]
-      </div>
+      <div @click="Actualizar">[ACTUALIZAR]</div>
     </div>
-    
+
     <div v-for="(renglon, index) in display.renglones" :key="index">
       <renglonPentagrama
         :renglon="renglon"

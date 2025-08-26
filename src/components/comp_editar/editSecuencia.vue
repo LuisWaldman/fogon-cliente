@@ -1,5 +1,3 @@
-
-
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
@@ -7,31 +5,33 @@ import { watch } from 'vue'
 import { ResumenSecuencia } from '../../modelo/cancion/ResumenSecuencia'
 import { helperEditarAcorde } from './helperEditarAcorde'
 
-
-
-        /*<span @click="click_editarsecuencia(index)" v-if="refEditandoSecuencia != index">🔄</span>
+/*<span @click="click_editarsecuencia(index)" v-if="refEditandoSecuencia != index">🔄</span>
         <span @click="click_Sieditarsecuencia(index)" v-if="refEditandoSecuencia == index">[Si]</span>
         <span @click="click_Noeditarsecuencia(index)" v-if="refEditandoSecuencia == index">[No]</span>
 */
 
-const refAcordesEditando = ref("")
+const refAcordesEditando = ref('')
 const refEditandoSecuencia = ref(-1)
-const refNombreEditando = ref("")
-function click_editarsecuencia(index: number) {
+const refNombreEditando = ref('')
+function clickEditarsecuencia(index: number) {
   refEditandoSecuencia.value = index
   const editandoParte = resumenSecuencia.value?.resumenPartes[index].parteId
   refNombreEditando.value = props.cancion.acordes.partes[editandoParte].nombre
-  refAcordesEditando.value = helperEditarAcorde.AcordesToRenglon(props.cancion.acordes.partes[editandoParte].acordes)
+  refAcordesEditando.value = helperEditarAcorde.AcordesToRenglon(
+    props.cancion.acordes.partes[editandoParte].acordes,
+  )
 }
 
-function click_Sieditarsecuencia() {
-  const editandoParte = resumenSecuencia.value?.resumenPartes[refEditandoSecuencia.value].parteId
-  props.cancion.acordes.partes[editandoParte].acordes = helperEditarAcorde.RenglonToAcordes(refAcordesEditando.value)
+function clickSieditarsecuencia() {
+  const editandoParte =
+    resumenSecuencia.value?.resumenPartes[refEditandoSecuencia.value].parteId
+  props.cancion.acordes.partes[editandoParte].acordes =
+    helperEditarAcorde.RenglonToAcordes(refAcordesEditando.value)
   refEditandoSecuencia.value = -1
   emit('cambioCompas', props.compas)
 }
 
-function click_Noeditarsecuencia() {
+function clickNoeditarsecuencia() {
   refEditandoSecuencia.value = -1
 }
 
@@ -84,7 +84,7 @@ function Actualizado() {
 
   return false
 }
-function Click_actualizarSecuencia() {
+function ClickActualizarSecuencia() {
   resumenSecuencia.value?.SetCancion(props.cancion)
   Actualizar(props.cancion)
   cambiarCompas(props.compas)
@@ -101,17 +101,20 @@ function CancelarActualizarSecuencia() {
 
 const ParteNuevaSecuencia = ref(0)
 function clickAgregarSecuencia(index: number) {
-  resumenSecuencia.value?.AgregarSecuencia(props.cancion, index, ParteNuevaSecuencia.value)
+  resumenSecuencia.value?.AgregarSecuencia(
+    props.cancion,
+    index,
+    ParteNuevaSecuencia.value,
+  )
   refActualizandoSecuencia.value = false
   Actualizar(props.cancion)
 }
-function CortarSecuencia(index: number) {
+function CortarSecuencia() {
   resumenSecuencia.value?.ActualizarCompas(props.compas)
   resumenSecuencia.value?.CortarSecuencia(props.cancion)
   refActualizandoSecuencia.value = false
   Actualizar(props.cancion)
 }
-
 
 defineExpose({ Actualizar })
 </script>
@@ -120,106 +123,128 @@ defineExpose({ Actualizar })
   <div v-if="Actualizado()" @click="Actualizar(props.cancion)">
     .. No cargada ..
   </div>
-<div>
-    <span v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia">[AGREGAR SECUENCIA]</span>
-    <span v-if="refActualizandoSecuencia" @click="CancelarActualizarSecuencia">[CANCELAR]</span>
+  <div>
+    <span v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia"
+      >[AGREGAR SECUENCIA]</span
+    >
+    <span v-if="refActualizandoSecuencia" @click="CancelarActualizarSecuencia"
+      >[CANCELAR]</span
+    >
 
-        <select v-model="ParteNuevaSecuencia" v-if="refActualizandoSecuencia">
-          <option
-            v-for="(parteSelect, parteIndex) in cancion.acordes.partes"
-            :key="parteIndex"
-            :value="parteIndex"
-            
-            >
-          {{ parteSelect.nombre }}</option>
-          <option value="-1">Nueva</option>
-        </select>
-        <span @click="CortarSecuencia" v-if="compas != -1">[CORTAR]</span>
-
-</div>
+    <select v-model="ParteNuevaSecuencia" v-if="refActualizandoSecuencia">
+      <option
+        v-for="(parteSelect, parteIndex) in cancion.acordes.partes"
+        :key="parteIndex"
+        :value="parteIndex"
+      >
+        {{ parteSelect.nombre }}
+      </option>
+      <option value="-1">Nueva</option>
+    </select>
+    <span @click="CortarSecuencia" v-if="compas != -1">[CORTAR]</span>
+  </div>
   <div style="display: flex; flex-wrap: wrap">
-    <div class="secuencia agregarSecuencia"  v-if="refActualizandoSecuencia" @click="clickAgregarSecuencia(-1)">
+    <div
+      class="secuencia agregarSecuencia"
+      v-if="refActualizandoSecuencia"
+      @click="clickAgregarSecuencia(-1)"
+    >
       +
     </div>
-
-
-
-
-
-
 
     <div
       v-for="(parte, index) in resumenSecuencia.resumenPartes"
       :key="index"
-      style="display: flex;"
-      
+      style="display: flex"
     >
-    
-<div
-class="secuencia"
-      :class="{
-            secuencia_actual: resumenSecuencia.parte === index,
-          }"
->
-    
-
-    <div>
-      <div>
-        <select v-if="refEditandoSecuencia != index" v-model="parte.parteId" @change="Click_actualizarSecuencia">
-          <option
-            v-for="(parteSelect, parteIndex) in cancion.acordes.partes"
-            :key="parteIndex"
-            :value="parteIndex"
-            
+      <div
+        class="secuencia"
+        :class="{
+          secuencia_actual: resumenSecuencia.parte === index,
+        }"
+      >
+        <div>
+          <div>
+            <select
+              v-if="refEditandoSecuencia != index"
+              v-model="parte.parteId"
+              @change="ClickActualizarSecuencia"
             >
-          {{ parteSelect.nombre }}</option>
-        </select>
-        <input type="text" v-if="refEditandoSecuencia == index" v-model="refNombreEditando"></input>
-        
-        <div class="repeticion">
-          x
-          <span v-if="resumenSecuencia.parte === index"
-            >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /</span>
-          <input type="number" min="0" max="50" v-model="parte.cantPartes" @change="Click_actualizarSecuencia"></input>
-          
-          
+              <option
+                v-for="(parteSelect, parteIndex) in cancion.acordes.partes"
+                :key="parteIndex"
+                :value="parteIndex"
+              >
+                {{ parteSelect.nombre }}
+              </option>
+            </select>
+            <input
+              type="text"
+              v-if="refEditandoSecuencia == index"
+              v-model="refNombreEditando"
+            />
+
+            <div class="repeticion">
+              x
+              <span v-if="resumenSecuencia.parte === index"
+                >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /</span
+              >
+              <input
+                type="number"
+                min="0"
+                max="50"
+                v-model="parte.cantPartes"
+                @change="ClickActualizarSecuencia"
+              />
+            </div>
+          </div>
+          <div class="ordendiv" v-if="refEditandoSecuencia !== index">
+            <span
+              class="acordeSecuencia"
+              v-for="(acorde, acordeIndex) in cancion.acordes.partes[
+                parte.parteId
+              ].acordes"
+              :key="acordeIndex"
+              :class="{
+                acordeSeleccionado:
+                  resumenSecuencia.compasdeparte === acordeIndex &&
+                  resumenSecuencia.parte === index,
+              }"
+            >
+              {{ acorde }}
+            </span>
+
+            <span
+              @click="clickEditarsecuencia(index)"
+              v-if="refEditandoSecuencia != index"
+              >🔄</span
+            >
+          </div>
+          <input
+            type="text"
+            v-if="refEditandoSecuencia == index"
+            v-model="refAcordesEditando"
+          />
+          <span
+            @click="clickSieditarsecuencia()"
+            v-if="refEditandoSecuencia == index"
+            >[Si]</span
+          >
+          <span
+            @click="clickNoeditarsecuencia()"
+            v-if="refEditandoSecuencia == index"
+            >[No]</span
+          >
         </div>
       </div>
-      <div class="ordendiv" v-if="refEditandoSecuencia !== index">
-        <span 
-          class="acordeSecuencia"
-          v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte.parteId]
-            .acordes"
-          :key="acordeIndex"
-          :class="{
-            acordeSeleccionado:
-              resumenSecuencia.compasdeparte === acordeIndex &&
-              resumenSecuencia.parte === index,
-          }"
-        >
-          {{ acorde }}
-        </span>
-        
-        <span @click="click_editarsecuencia(index)" v-if="refEditandoSecuencia != index">🔄</span>
-        
+      <div
+        class="secuencia agregarSecuencia"
+        @click="clickAgregarSecuencia(index)"
+        v-if="refActualizandoSecuencia"
+      >
+        +
       </div>
-<input type="text" v-if="refEditandoSecuencia == index" v-model="refAcordesEditando"></input>
-<span @click="click_Sieditarsecuencia()" v-if="refEditandoSecuencia == index">[Si]</span>
-        <span @click="click_Noeditarsecuencia()" v-if="refEditandoSecuencia == index">[No]</span>
-
     </div>
-
-
-
-
-
-</div>
-    <div class="secuencia agregarSecuencia" @click="clickAgregarSecuencia(index)"  v-if="refActualizandoSecuencia">
-      +
-    </div>
-    </div>
-
-
   </div>
 </template>
 
