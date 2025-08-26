@@ -6,10 +6,25 @@ import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloAcorde } from '../../modelo/pentagrama/estiloAcorde'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
+import renglonpentagrama from '../comp_tocar/Tocar_renglonPentagrama.vue'
+import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
+import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayInstrumentoPentagrama'
+import { DisplayCompasPentagrama } from '../../modelo/pentagrama/DisplayCompasPentagrama'
+import { DisplayAcordesPentagrama } from '../../modelo/pentagrama/DisplayAcordesPentagrama'
+import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentagrama'
 
 const props = defineProps<{
   cancion: Cancion
 }>()
+const refEditandoCompas = ref(0)
+const acorde = props.cancion.acordes.GetTodosLosAcordes()[refEditandoCompas.value]
+const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(new DisplaySistemaPentagrama())
+refDisplayPentagrama.value.pentagramas.push(new DisplayInstrumentoPentagrama())
+const refCompasPentagrama = ref<DisplayCompasPentagrama>(new DisplayCompasPentagrama())
+refCompasPentagrama.value.acordes.push(new DisplayAcordesPentagrama())
+refCompasPentagrama.value.acordes[0].Notas.push(new DisplayNotaPentagrama('C',4))
+refCompasPentagrama.value.acordes[0].duracion = '1'
+refDisplayPentagrama.value.pentagramas[0].compases.push(refCompasPentagrama.value)
 
 const refEditandoAcorde = ref<EstiloEditandoCompas>(new EstiloEditandoCompas())
 refEditandoAcorde.value.acordes.push(
@@ -57,6 +72,7 @@ function quitarAcorde(index: number) {
 }
 </script>
 <template>
+  {{ acorde }}
   <div>
     <span @click="clickCancelarEdit">[Cancelar]</span>
 
@@ -118,35 +134,9 @@ function quitarAcorde(index: number) {
         </tr>
       </tbody>
     </table>
-    {{ refEditandoAcorde.notas }}
+    
   </div>
-  <!-- Acordes dinámicos -->
-  <div>
-    <h3>Acordes</h3>
-
-    <div
-      v-for="(acorde, index) in refEditandoAcorde.acordes"
-      :key="index"
-      class="acorde-item"
-    >
-      <div>
-        <label>Acorde {{ index + 1 }}:</label>
-      </div>
-
-      <div>
-        Tipo: Duración:
-        <select v-model="acorde.duracionId">
-          <option
-            v-for="(duracion, index) in duracionesDisponibles"
-            :key="index"
-            :value="index"
-          >
-            {{ duracion }}
-          </option>
-        </select>
-      </div>
-    </div>
-  </div>
+<renglonpentagrama :cancion="cancion" :renglon="refDisplayPentagrama" />
 </template>
 
 <style scoped>
