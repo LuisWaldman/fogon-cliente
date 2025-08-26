@@ -2,10 +2,10 @@ import { StaveNote } from 'vexflow'
 import type { DisplayAcordesPentagrama } from './DisplayAcordesPentagrama'
 
 export class DisplayCompasPentagrama {
-  getStaveNote(): StaveNote[] {
+  getStaveNote(clave: string): StaveNote[] {
     const ret: StaveNote[] = []
     for (const acorde of this.acordes) {
-      ret.push(acorde.getStaveNote())
+      ret.push(acorde.getStaveNote(clave))
     }
     return ret
   }

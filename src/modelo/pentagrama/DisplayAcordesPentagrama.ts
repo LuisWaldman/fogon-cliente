@@ -2,7 +2,7 @@ import { StaveNote } from 'vexflow'
 import type { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 
 export class DisplayAcordesPentagrama {
-  getStaveNote(): StaveNote {
+  getStaveNote(clave: string): StaveNote {
     const keys = this.Notas.filter((nota) => nota.nota !== undefined).map(
       (nota) => nota.nota.toLowerCase() + '/' + nota.octava,
     )
@@ -10,6 +10,7 @@ export class DisplayAcordesPentagrama {
     return new StaveNote({
       keys: keys,
       duration: this.duracion.toString(),
+      clef: clave
     })
   }
   public Notas: DisplayNotaPentagrama[] = []
