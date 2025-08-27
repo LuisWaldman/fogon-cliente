@@ -2,7 +2,7 @@ import { MusicaHelper } from '../cancion/MusicaHelper'
 import { PentagramaNotas } from '../cancion/pentagramanotas'
 
 export class EstiloAcorde {
-  GetNotas(acorde: string): PentagramaNotas[] {
+  GetNotas(acorde: string, octava: number): PentagramaNotas[] {
     let acoPost = acorde
 
     if (acorde.includes(' ')) {
@@ -15,7 +15,10 @@ export class EstiloAcorde {
     for (let i = 0; i < this.tiposNota.length; i++) {
       if (notas[i] && this.tiposNota[i] === 'o') {
         toRet.push(
-          new PentagramaNotas(notas[i] + '4', this.GetDuracionPentagrama()),
+          new PentagramaNotas(
+            notas[i] + octava.toString(),
+            this.GetDuracionPentagrama(),
+          ),
         )
       }
     }

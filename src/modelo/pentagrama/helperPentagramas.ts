@@ -12,12 +12,13 @@ export class HelperPentagramas {
   public creaPentagrama(
     cancion: Cancion,
     estiloAcorde: EstiloEditandoCompas,
+    octava: number
   ): Pentagrama {
     const pentagrama = new Pentagrama()
     pentagrama.instrumento = '1'
     const acordes = cancion.acordes.GetTodosLosAcordes()
     for (const acorde of acordes) {
-      pentagrama.compases.push(estiloAcorde.GetCompas(acorde))
+      pentagrama.compases.push(estiloAcorde.GetCompas(acorde, octava))
     }
     return pentagrama
   }

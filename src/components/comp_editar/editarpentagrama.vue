@@ -19,6 +19,7 @@ const props = defineProps<{
   cancion: Cancion
 }>()
 const refEditandoCompas = ref(0)
+const refDesdeOctava = ref(4)
 
 const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
 
@@ -34,7 +35,9 @@ const refEstiloEditandoAcorde = ref<EstiloEditandoCompas>(
 )
 const refPatrones = ref(PatronRitmico.GetPatrones())
 
-refDisplayPentagrama.value.pentagramas.push(new DisplayInstrumentoPentagrama([], 'treble'))
+refDisplayPentagrama.value.pentagramas.push(
+  new DisplayInstrumentoPentagrama([], 'treble'),
+)
 const refCompasPentagrama = ref<DisplayCompasPentagrama>(
   new DisplayCompasPentagrama(),
 )
@@ -49,13 +52,16 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
 const helpPenta = new HelperPentagramas()
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
-const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde)
+const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde, refDesdeOctava.value)
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
   helpPenta.creaCompasPentagrama(pentaObtenido)
 const CtrlrenglonPentagrama = ref()
 function ActualizarRitmo() {
   const helpPenta = new HelperPentagramas()
-  const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde)
+  const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
+    acorde,
+    refDesdeOctava.value,
+  )
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
     helpPenta.creaCompasPentagrama(pentaObtenido)
   CtrlrenglonPentagrama.value.Dibujar()
@@ -98,6 +104,7 @@ function clickGenerarPentagrama() {
     helpPenta.creaPentagrama(
       props.cancion,
       refEstiloEditandoAcorde.value,
+      refDesdeOctava.value,
     ).compases
   emit('actualizoPentagrama')
 }
@@ -118,9 +125,13 @@ function quitarAcorde(index: number) {
   refEstiloEditandoAcorde.value.acordes.splice(index, 1)
   ActualizarRitmo()
 }
+function cambioClave() {
+  refDisplayPentagrama.value.pentagramas[0].clave =
+    props.cancion.pentagramas[idPentagramaEditando.value].clave
+  ActualizarRitmo()
+}
 </script>
 <template>
-  {{ acorde }}
   <div>
     <span @click="clickCancelarEdit">[Cancelar]</span>
 
@@ -151,7 +162,10 @@ function quitarAcorde(index: number) {
         {{ inst.nombre }}
       </option>
     </select>
-    <select v-model="cancion.pentagramas[idPentagramaEditando].clave">
+    <select
+      v-model="cancion.pentagramas[idPentagramaEditando].clave"
+      @change="cambioClave"
+    >
       <option value="treble">Sol</option>
       <option value="bass">Fa</option>
     </select>
@@ -212,6 +226,16 @@ function quitarAcorde(index: number) {
         </tr>
       </tbody>
     </table>
+  </div>
+  <div>
+    {{ acorde }}
+    <input
+      v-model="refDesdeOctava"
+      @change="ActualizarRitmo"
+      type="number"
+      min="2"
+      max="7"
+    />
   </div>
   <renglonpentagrama
     ref="CtrlrenglonPentagrama"
