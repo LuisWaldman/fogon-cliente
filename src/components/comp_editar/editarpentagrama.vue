@@ -142,7 +142,7 @@ function quitarAcorde(index: number) {
 
   <div v-if="cancion.pentagramas[idPentagramaEditando]">
     Instrumento:
-    <select v-model="cancion.pentagramas[idPentagramaEditando].instrumento" >
+    <select v-model="cancion.pentagramas[idPentagramaEditando].instrumento">
       <option
         v-for="(inst, index) in refInstrumentos"
         :key="index"

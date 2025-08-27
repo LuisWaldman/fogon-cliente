@@ -6,7 +6,6 @@ export class DisplayAcordesPentagrama {
     const keys = this.Notas.filter((nota) => nota.nota !== undefined).map(
       (nota) => nota.nota.toLowerCase() + '/' + nota.octava,
     )
-    console.log('KEYS', keys, 'clef', clave)
     return new StaveNote({
       keys: keys,
       duration: this.duracion.toString(),

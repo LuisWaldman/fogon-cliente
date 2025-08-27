@@ -13,6 +13,21 @@ const props = defineProps<{
 
 let midiPlayer = new MidiPlayer()
 const midiCargado = ref(false)
+const mediaVista = new MediaVista()
+mediaVista.setGetTiempoDesdeInicio(() => {
+  const time = midiPlayer.getCurrentTime()
+  return time
+})
+
+function cargarCancion() {
+  const helper = new MidiHelper()
+  midiPlayer.borrarSequence()
+  const bpm = props.cancion.bpm ? props.cancion.bpm : 40
+  for (let i = 0; i < props.cancion.pentagramas.length; i++) {
+    const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
+    midiPlayer.loadSequence(secuencia)
+  }
+}
 function iniciar() {
   //appStore.midiPlayer.setInstrument
   if (midiCargado.value) {
@@ -35,19 +50,6 @@ function iniciar() {
   console.log('Iniciar')
 }
 
-function cargarCancion() {
-  if (!midiCargado.value) {
-    return
-  }
-  const helper = new MidiHelper()
-  midiPlayer.loadSequence(helper.GetSecuencia(props.cancion))
-}
-
-const mediaVista = new MediaVista()
-mediaVista.setGetTiempoDesdeInicio(() => {
-  const time = midiPlayer.getCurrentTime()
-  return time
-})
 mediaVista.setIniciar(() => {
   play()
 })
@@ -61,9 +63,10 @@ onUnmounted(() => {
 })
 
 onMounted(() => {
-  iniciar()
   const appStore = useAppStore()
   appStore.aplicacion.setMediaVista(mediaVista)
+  iniciar()
+  cargarCancion()
 })
 
 function play() {
@@ -81,7 +84,7 @@ function stop() {
 }
 </script>
 <template>
-  <span @click="play" v-if="midiCargado">[PLAY]</span>
-  <span @click="stop" v-if="midiCargado">[PAUSA]</span>
+  <span @click="play">[PLAY]</span>
+  <span @click="stop">[PAUSA]</span>
   Pentagramas : {{ props.cancion.pentagramas.length }}
 </template>

@@ -19,9 +19,7 @@ export class MidiPlayer {
     Tone.start()
   }
 
-  // 🎼 Cargar secuencia para reproducción sincronizada
-  public loadSequence(secuencia: MidiSecuencia): void {
-    // Detener y limpiar completamente el transport
+  public borrarSequence(): void {
     Tone.getTransport().stop()
     Tone.getTransport().cancel() // ✨ Cancela todos los eventos programados
     Tone.getTransport().seconds = 0
@@ -31,6 +29,11 @@ export class MidiPlayer {
       this.part.dispose()
       this.part = null
     }
+
+  }
+  // 🎼 Cargar secuencia para reproducción sincronizada
+  public loadSequence(secuencia: MidiSecuencia): void {
+    // Detener y limpiar completamente el transport
 
     // Configurar nueva secuencia
     Tone.getTransport().bpm.value = secuencia.bpm

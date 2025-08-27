@@ -10,15 +10,10 @@ import { PentagramaNotas } from '../cancion/pentagramanotas'
 
 export class MidiHelper {
   public parteCompas = 0
-  public GetSecuencia(cancion: Cancion): MidiSecuencia {
+  public GetSecuencia(pentagrama: Pentagrama, bpm: number): MidiSecuencia {
     const secuencia = new MidiSecuencia()
-    secuencia.bpm = cancion.bpm ? cancion.bpm : 40
-    const pentagramas = cancion.pentagramas
-    if (pentagramas.length === 0) {
-      return secuencia
-    }
+    secuencia.bpm = bpm ? bpm : 40
 
-    const pentagrama = pentagramas[0]
     for (let i = 0; i < pentagrama.compases.length; i++) {
       this.parteCompas = 0
       for (const nota of pentagrama.compases[i].notas as PentagramaNotas[][]) {

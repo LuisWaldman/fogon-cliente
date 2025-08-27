@@ -8,12 +8,10 @@ export class DisplayInstrumentoPentagrama {
     //addKeySignature
     const key = `${cancion.escala}`
     const compas = `${cancion.compasCantidad}/${cancion.compasUnidad}`
-    console.log('DUBJANDO CLAVE', this.clave, key, compas)
     stave.addClef(this.clave).addKeySignature(key).addTimeSignature(compas)
     stave.setContext(context).draw()
     const todasLasNotas: StaveNote[] = []
     for (const compas of this.compases) {
-      console.log('MANDA CLAVE', this.clave)
       const staveNotes = compas.getStaveNote(this.clave)
       if (staveNotes) {
         todasLasNotas.push(...staveNotes) // Usar spread operator para aplanar el array
