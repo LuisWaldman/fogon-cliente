@@ -25,7 +25,7 @@ function cargarCancion() {
   const bpm = props.cancion.bpm ? props.cancion.bpm : 40
   for (let i = 0; i < props.cancion.pentagramas.length; i++) {
     const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
-    midiPlayer.loadSequence('Guitarra', secuencia)
+    midiPlayer.loadSequence(props.cancion.pentagramas[i].instrumento, secuencia)
   }
 }
 function iniciar() {
@@ -36,7 +36,8 @@ function iniciar() {
   }
   console.log('Cargar')
   midiPlayer = new MidiPlayer()
-  midiPlayer.cargarInstrumentos(['Guitarra']).then(() => {
+  const Instrumentos = props.cancion.pentagramas.map(p => p.instrumento)
+  midiPlayer.cargarInstrumentos(Instrumentos).then(() => {
     midiCargado.value = true
     console.log("Instrumentos cargados")
     cargarCancion()
