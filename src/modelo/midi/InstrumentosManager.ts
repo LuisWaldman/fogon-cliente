@@ -9,12 +9,12 @@ export class InstrumentosManager {
   private constructor() {
     // Initialization code here
   }
-  private instrumentsCache: Record<string, Tone.Sampler> = {}
+  public instrumentosCargados: Record<string, Tone.Sampler> = {}
 
-  public async getInstrumento(nombre: string): Promise<Tone.Sampler> {
+  public async cargarInstrumento(nombre: string): Promise<Tone.Sampler> {
     // Check if we already have this instrument cached
-    if (this.instrumentsCache[nombre]) {
-      return this.instrumentsCache[nombre]
+    if (this.instrumentosCargados[nombre]) {
+      return this.instrumentosCargados[nombre]
     }
 
     const instrumento = this.instrumentos.find((i) => i.nombre === nombre)
@@ -33,7 +33,7 @@ export class InstrumentosManager {
       const instrument = new Tone.Sampler(samples).toDestination()
 
       // Cache the result for future requests
-      this.instrumentsCache[nombre] = instrument
+      this.instrumentosCargados[nombre] = instrument
 
       return instrument
     } catch (error) {

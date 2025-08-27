@@ -25,7 +25,7 @@ function cargarCancion() {
   const bpm = props.cancion.bpm ? props.cancion.bpm : 40
   for (let i = 0; i < props.cancion.pentagramas.length; i++) {
     const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
-    midiPlayer.loadSequence(secuencia)
+    midiPlayer.loadSequence('Guitarra', secuencia)
   }
 }
 function iniciar() {
@@ -36,6 +36,13 @@ function iniciar() {
   }
   console.log('Cargar')
   midiPlayer = new MidiPlayer()
+  midiPlayer.cargarInstrumentos(['Guitarra']).then(() => {
+    midiCargado.value = true
+    console.log("Instrumentos cargados")
+    cargarCancion()
+  })
+
+  /*
   fetch('InstrumentosMIDI/piano.json')
     .then((response) => response.json())
     .then((samples) => {
@@ -47,7 +54,7 @@ function iniciar() {
     .catch((error) => {
       console.error('Error loading samples:', error)
     })
-  console.log('Iniciar')
+  console.log('Iniciar')*/
 }
 
 mediaVista.setIniciar(() => {

@@ -1,13 +1,24 @@
 import * as Tone from 'tone'
 import type { MidiSecuencia } from './MidiSecuencia'
+import { InstrumentosManager } from './InstrumentosManager'
 
 export class MidiPlayer {
+  async cargarInstrumentos(instrumentos: string[])
+  {
+    // Esperar a que todos los instrumentos se carguen
+    await Promise.all(
+      instrumentos.map(instrumento => 
+        this.instrumentosManager.cargarInstrumento(instrumento)
+      )
+    )
+  }
   private instrument: Tone.Sampler
-  private sequence: { note: string; duration: string; time: string }[] = []
+  private instrumentosManager: InstrumentosManager
   private part: Tone.Part | null = null
 
   constructor() {
     this.instrument = new Tone.Sampler().toDestination()
+    this.instrumentosManager = InstrumentosManager.getInstance()
   }
 
   public setInstrument(samples: { [note: string]: string }): void {
@@ -31,16 +42,16 @@ export class MidiPlayer {
     }
   }
   // 🎼 Cargar secuencia para reproducción sincronizada
-  public loadSequence(secuencia: MidiSecuencia): void {
+  public loadSequence(instrumento: string, secuencia: MidiSecuencia): void {
     // Detener y limpiar completamente el transport
 
     // Configurar nueva secuencia
     Tone.getTransport().bpm.value = secuencia.bpm
-    this.sequence = secuencia.notas
+    
 
     this.part = new Tone.Part((time, value) => {
-      this.instrument.triggerAttackRelease(value.note, value.duration, time)
-    }, this.sequence).start(0)
+      this.instrumentosManager.instrumentosCargados[instrumento].triggerAttackRelease(value.note, value.duration, time)
+    }, secuencia.notas).start(0)
 
     this.part.loop = false
     console.log('Secuencia cargada')
