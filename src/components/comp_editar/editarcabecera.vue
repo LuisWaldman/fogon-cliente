@@ -52,9 +52,6 @@ function clickCerrar(modificado: boolean) {
       >BPM: {{ cancion.bpm }} Compas: {{ cancion.compasCantidad }}/
       {{ cancion.compasUnidad }}</label
     >&nbsp;
-    <label
-      >Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
-    >
     <label>Medios: {{ cancion.medias.length }}</label
     ><label @click="clickCambiar('medias')">🔄</label>
 
