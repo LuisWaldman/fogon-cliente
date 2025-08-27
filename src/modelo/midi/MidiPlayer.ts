@@ -31,9 +31,7 @@ export class MidiPlayer {
   }
 
   public borrarSequence(): void {
-    Tone.getTransport().stop()
     Tone.getTransport().cancel() // ✨ Cancela todos los eventos programados
-    Tone.getTransport().seconds = 0
 
     // Limpiar la parte anterior
     if (this.part) {

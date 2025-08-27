@@ -24,38 +24,38 @@ function cargarCancion() {
   midiPlayer.borrarSequence()
   const bpm = props.cancion.bpm ? props.cancion.bpm : 40
   for (let i = 0; i < props.cancion.pentagramas.length; i++) {
+    if (InstrumentosSelecconados.value.indexOf(props.cancion.pentagramas[i].instrumento) < 0) {
+      continue
+    }
     const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
     midiPlayer.loadSequence(props.cancion.pentagramas[i].instrumento, secuencia)
   }
 }
+const todosInstrumentos = ref<string[]>([])
+const InstrumentosSelecconados = ref<string[]>([])
+function click_Instrumentos(instrumento: string) {
+  const index = InstrumentosSelecconados.value.indexOf(instrumento)
+  if (index >= 0) {
+    InstrumentosSelecconados.value.splice(index, 1)
+  } else {
+    InstrumentosSelecconados.value.push(instrumento)
+  }
+  cargarCancion()
+}
 function iniciar() {
-  //appStore.midiPlayer.setInstrument
   if (midiCargado.value) {
     midiCargado.value = false
     return
   }
   console.log('Cargar')
   midiPlayer = new MidiPlayer()
-  const Instrumentos = props.cancion.pentagramas.map(p => p.instrumento)
-  midiPlayer.cargarInstrumentos(Instrumentos).then(() => {
+  todosInstrumentos.value = [...new Set(props.cancion.pentagramas.map(p => p.instrumento))]
+  InstrumentosSelecconados.value = [...todosInstrumentos.value]
+  midiPlayer.cargarInstrumentos(todosInstrumentos.value).then(() => {
     midiCargado.value = true
     console.log("Instrumentos cargados")
     cargarCancion()
   })
-
-  /*
-  fetch('InstrumentosMIDI/piano.json')
-    .then((response) => response.json())
-    .then((samples) => {
-      midiPlayer.setInstrument(samples)
-      midiPlayer.initialize()
-      midiCargado.value = true
-      cargarCancion()
-    })
-    .catch((error) => {
-      console.error('Error loading samples:', error)
-    })
-  console.log('Iniciar')*/
 }
 
 mediaVista.setIniciar(() => {
@@ -92,7 +92,31 @@ function stop() {
 }
 </script>
 <template>
+  <div>
   <span @click="play">[PLAY]</span>
   <span @click="stop">[PAUSA]</span>
   Pentagramas : {{ props.cancion.pentagramas.length }}
+
+  </div>
+  <div style="display: flex; ">
+    <div v-for="instrumento in todosInstrumentos" :key="instrumento" 
+    class="instrumento"
+    :class="{'seleccionado': InstrumentosSelecconados.includes(instrumento)}"
+    @click="click_Instrumentos(instrumento)">
+      {{ instrumento }}
+    </div>
+    <div></div>
+  </div>
 </template>
+<style scoped>
+.seleccionado {
+  border: 1px solid ;
+  background-color: lightcyan;
+  color: black;
+}
+.instrumento {
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid;
+}
+</style>
