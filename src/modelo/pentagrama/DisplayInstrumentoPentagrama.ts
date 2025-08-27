@@ -1,23 +1,37 @@
-import { Formatter, RenderContext, Stave, StaveNote } from 'vexflow'
+import { Dot, Formatter, RenderContext, Stave, StaveNote } from 'vexflow'
 import type { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 import type { Cancion } from '../cancion/cancion'
 
 export class DisplayInstrumentoPentagrama {
   getStave(context: RenderContext, cancion: Cancion, y: number = 0): Stave {
-    const stave = new Stave(0, y, 700)
+    let x = 0
+    const anchoPrimerStave = 100
+    const anchoCompasStave = 200
+    const stave = new Stave(x, y, anchoPrimerStave)
     //addKeySignature
     const key = `${cancion.escala}`
     const compas = `${cancion.compasCantidad}/${cancion.compasUnidad}`
     stave.addClef(this.clave).addKeySignature(key).addTimeSignature(compas)
     stave.setContext(context).draw()
-    const todasLasNotas: StaveNote[] = []
+    x += anchoPrimerStave
+
+    
     for (const compas of this.compases) {
+      const staveCompas = new Stave(x, y, anchoCompasStave)
+      x += anchoCompasStave
       const staveNotes = compas.getStaveNote(this.clave)
       if (staveNotes) {
-        todasLasNotas.push(...staveNotes) // Usar spread operator para aplanar el array
+        Formatter.FormatAndDraw(context, staveCompas, staveNotes)
+        staveCompas.setContext(context).draw()
       }
+      
     }
-    Formatter.FormatAndDraw(context, stave, todasLasNotas)
+    /*
+    Para dibujar el puntillo
+    Dot.buildAndAttach([todasLasNotas[0]], { index: 0 })
+    */
+    
+    
 
     return stave
   }

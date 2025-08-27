@@ -7,6 +7,7 @@ import { Cancion } from '../../modelo/cancion/cancion'
 const props = defineProps<{
   renglon: DisplaySistemaPentagrama
   cancion: Cancion
+  compas: number
 }>()
 
 const scoreContainer = ref<HTMLDivElement | null>(null)
