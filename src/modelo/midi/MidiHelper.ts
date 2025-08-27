@@ -1,5 +1,4 @@
 import type { Midi } from '@tonejs/midi'
-import type { Cancion } from '../cancion/cancion'
 import { Pentagrama } from '../cancion/pentagrama'
 import { MidiSecuencia } from './MidiSecuencia'
 import { NotaMidi } from './NotaMidi'

@@ -34,7 +34,7 @@ const refEstiloEditandoAcorde = ref<EstiloEditandoCompas>(
 )
 const refPatrones = ref(PatronRitmico.GetPatrones())
 
-refDisplayPentagrama.value.pentagramas.push(new DisplayInstrumentoPentagrama())
+refDisplayPentagrama.value.pentagramas.push(new DisplayInstrumentoPentagrama([], 'treble'))
 const refCompasPentagrama = ref<DisplayCompasPentagrama>(
   new DisplayCompasPentagrama(),
 )

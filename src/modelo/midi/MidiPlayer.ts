@@ -29,7 +29,6 @@ export class MidiPlayer {
       this.part.dispose()
       this.part = null
     }
-
   }
   // 🎼 Cargar secuencia para reproducción sincronizada
   public loadSequence(secuencia: MidiSecuencia): void {
