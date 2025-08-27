@@ -58,6 +58,7 @@ defineExpose({ Actualizar })
 
     <div v-for="(renglon, index) in display.renglones" :key="index">
       <renglonPentagrama
+        :compas="props.compas"
         :renglon="renglon"
         :cancion="props.cancion"
       ></renglonPentagrama>

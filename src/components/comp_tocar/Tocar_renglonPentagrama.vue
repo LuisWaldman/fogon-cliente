@@ -34,7 +34,7 @@ function Dibujar() {
 
   let x = 0
   for (const pentagrama of props.renglon.pentagramas) {
-    pentagrama.getStave(context, props.cancion, x)
+    pentagrama.getStave(context, props.cancion, x, props.compas)
     x += 100 // Incrementar x para la siguiente posición
   }
 }

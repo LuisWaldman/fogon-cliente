@@ -9,5 +9,10 @@ export class DisplayCompasPentagrama {
     }
     return ret
   }
+  public nroCompas: number
+  constructor(nroCompas: number) {
+    this.nroCompas = nroCompas
+  }
+
   public acordes: DisplayAcordesPentagrama[] = []
 }

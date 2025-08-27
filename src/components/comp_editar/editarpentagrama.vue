@@ -39,7 +39,7 @@ refDisplayPentagrama.value.pentagramas.push(
   new DisplayInstrumentoPentagrama([], 'treble'),
 )
 const refCompasPentagrama = ref<DisplayCompasPentagrama>(
-  new DisplayCompasPentagrama(),
+  new DisplayCompasPentagrama(0),
 )
 refCompasPentagrama.value.acordes.push(new DisplayAcordesPentagrama())
 refCompasPentagrama.value.acordes[0].Notas.push(
@@ -54,7 +54,7 @@ refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
 const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde, refDesdeOctava.value)
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
-  helpPenta.creaCompasPentagrama(pentaObtenido)
+  helpPenta.creaCompasPentagrama(pentaObtenido, 0)
 const CtrlrenglonPentagrama = ref()
 function ActualizarRitmo() {
   const helpPenta = new HelperPentagramas()
@@ -63,7 +63,7 @@ function ActualizarRitmo() {
     refDesdeOctava.value,
   )
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(pentaObtenido)
+    helpPenta.creaCompasPentagrama(pentaObtenido, 0)
   CtrlrenglonPentagrama.value.Dibujar()
 }
 
@@ -239,6 +239,7 @@ function cambioClave() {
   </div>
   <renglonpentagrama
     ref="CtrlrenglonPentagrama"
+    :compas="-1"
     :cancion="cancion"
     :renglon="refDisplayPentagrama"
   />

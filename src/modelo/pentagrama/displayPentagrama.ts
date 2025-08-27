@@ -10,8 +10,9 @@ export class DisplayPentagrama {
   public renglones: DisplaySistemaPentagrama[] = []
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
+    nroCompas: number
   ): DisplayCompasPentagrama {
-    const compas = new DisplayCompasPentagrama()
+    const compas = new DisplayCompasPentagrama(nroCompas)
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       const nuevoAcorde = new DisplayAcordesPentagrama()
       for (const nota of pentagramaCompas.notas[i]) {
@@ -47,7 +48,7 @@ export class DisplayPentagrama {
     renglon.pentagramas.push(nInstru)
 
     for (let i = 0; i < pentagrama.compases.length; i++) {
-      const compPenta = this.creaCompasPentagrama(pentagrama.compases[i])
+      const compPenta = this.creaCompasPentagrama(pentagrama.compases[i], i)
       nInstru.compases.push(compPenta)
 
       if (i > 0 && (i + 1) % 4 === 0) {

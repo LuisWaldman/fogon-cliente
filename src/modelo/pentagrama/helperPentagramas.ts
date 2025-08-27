@@ -49,8 +49,9 @@ export class HelperPentagramas {
 
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
+    nroCompas: number
   ): DisplayCompasPentagrama {
-    const compas = new DisplayCompasPentagrama()
+    const compas = new DisplayCompasPentagrama(nroCompas)
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       const nuevoAcorde = new DisplayAcordesPentagrama()
       for (const nota of pentagramaCompas.notas[i]) {
