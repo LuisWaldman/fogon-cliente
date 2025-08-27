@@ -3,7 +3,12 @@ import type { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 import type { Cancion } from '../cancion/cancion'
 
 export class DisplayInstrumentoPentagrama {
-  getStave(context: RenderContext, cancion: Cancion, y: number = 0, compasActual: number): Stave {
+  getStave(
+    context: RenderContext,
+    cancion: Cancion,
+    y: number = 0,
+    compasActual: number,
+  ): Stave {
     let x = 0
     context.setFillStyle('#a9a8f6')
     context.setStrokeStyle('#a9a8f6')
@@ -17,31 +22,26 @@ export class DisplayInstrumentoPentagrama {
     stave.setContext(context).draw()
     x += anchoPrimerStave
 
-    
     for (const compas of this.compases) {
       const staveCompas = new Stave(x, y, anchoCompasStave)
       x += anchoCompasStave
       const staveNotes = compas.getStaveNote(this.clave)
       if (staveNotes) {
         if (compasActual == compas.nroCompas) {
-
-            context.setFillStyle('#ff2600ff')
-            context.setStrokeStyle('#ff2600ff')
+          context.setFillStyle('#ff2600ff')
+          context.setStrokeStyle('#ff2600ff')
         } else {
-            context.setFillStyle('#a9a8f6')
-            context.setStrokeStyle('#a9a8f6')
+          context.setFillStyle('#a9a8f6')
+          context.setStrokeStyle('#a9a8f6')
         }
         Formatter.FormatAndDraw(context, staveCompas, staveNotes)
         staveCompas.setContext(context).draw()
       }
-      
     }
     /*
     Para dibujar el puntillo
     Dot.buildAndAttach([todasLasNotas[0]], { index: 0 })
     */
-    
-    
 
     return stave
   }

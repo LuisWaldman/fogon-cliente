@@ -52,7 +52,10 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
 const helpPenta = new HelperPentagramas()
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
-const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(acorde, refDesdeOctava.value)
+const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
+  acorde,
+  refDesdeOctava.value,
+)
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
   helpPenta.creaCompasPentagrama(pentaObtenido, 0)
 const CtrlrenglonPentagrama = ref()

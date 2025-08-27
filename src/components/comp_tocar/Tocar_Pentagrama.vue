@@ -49,11 +49,21 @@ defineExpose({ Actualizar })
 </script>
 <template>
   <div class="componenteMusical">
-    <div>
-      <div v-for="(modo, index) in modos" :key="index">
-        {{ modo.Instrumento }} <input type="checkbox" v-model="modo.Ver" />
-      </div>
-      <div @click="Actualizar">[ACTUALIZAR]</div>
+    <div class="dropdown dropdown-superior-derecha">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <i class="bi bi-eye"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li v-for="(modo, index) in modos" :key="index">
+          <input type="checkbox" v-model="modo.Ver" />{{ modo.Instrumento }}
+        </li>
+      </ul>
     </div>
 
     <div v-for="(renglon, index) in display.renglones" :key="index">
@@ -72,5 +82,13 @@ defineExpose({ Actualizar })
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  position: relative;
+}
+
+.dropdown-superior-derecha {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 5;
 }
 </style>

@@ -3,13 +3,12 @@ import type { MidiSecuencia } from './MidiSecuencia'
 import { InstrumentosManager } from './InstrumentosManager'
 
 export class MidiPlayer {
-  async cargarInstrumentos(instrumentos: string[])
-  {
+  async cargarInstrumentos(instrumentos: string[]) {
     // Esperar a que todos los instrumentos se carguen
     await Promise.all(
-      instrumentos.map(instrumento => 
-        this.instrumentosManager.cargarInstrumento(instrumento)
-      )
+      instrumentos.map((instrumento) =>
+        this.instrumentosManager.cargarInstrumento(instrumento),
+      ),
     )
   }
   private instrument: Tone.Sampler
@@ -45,10 +44,11 @@ export class MidiPlayer {
 
     // Configurar nueva secuencia
     Tone.getTransport().bpm.value = secuencia.bpm
-    
 
     this.part = new Tone.Part((time, value) => {
-      this.instrumentosManager.instrumentosCargados[instrumento].triggerAttackRelease(value.note, value.duration, time)
+      this.instrumentosManager.instrumentosCargados[
+        instrumento
+      ].triggerAttackRelease(value.note, value.duration, time)
     }, secuencia.notas).start(0)
 
     this.part.loop = false

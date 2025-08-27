@@ -12,7 +12,7 @@ export class HelperPentagramas {
   public creaPentagrama(
     cancion: Cancion,
     estiloAcorde: EstiloEditandoCompas,
-    octava: number
+    octava: number,
   ): Pentagrama {
     const pentagrama = new Pentagrama()
     pentagrama.instrumento = '1'
@@ -24,8 +24,11 @@ export class HelperPentagramas {
   }
   public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
     const modos: DisplayModoPentagrama[] = []
-    for (const pentagrama of cancion.pentagramas) {
-      modos.push(new DisplayModoPentagrama(pentagrama.instrumento, true))
+    const instumentos = [
+      ...new Set(cancion.pentagramas.map((p) => p.instrumento)),
+    ]
+    for (const pentagrama of instumentos) {
+      modos.push(new DisplayModoPentagrama(pentagrama, true))
     }
     return modos
   }
@@ -38,10 +41,10 @@ export class HelperPentagramas {
     if (pentagramas.length === 0) {
       return display
     }
-
-    for (let contmod = 0; contmod < modos.length; contmod++) {
-      if (modos[contmod].Ver) {
-        display.AgregarPartitura(cancion.pentagramas[contmod])
+    const instOk = modos.filter((m) => m.Ver).map((m) => m.Instrumento)
+    for (let conPenta = 0; conPenta < cancion.pentagramas.length; conPenta++) {
+      if (instOk.includes(cancion.pentagramas[conPenta].instrumento)) {
+        display.AgregarPartitura(cancion.pentagramas[conPenta])
       }
     }
     return display
@@ -49,7 +52,7 @@ export class HelperPentagramas {
 
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
-    nroCompas: number
+    nroCompas: number,
   ): DisplayCompasPentagrama {
     const compas = new DisplayCompasPentagrama(nroCompas)
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {

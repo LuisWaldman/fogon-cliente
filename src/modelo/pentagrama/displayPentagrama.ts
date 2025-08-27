@@ -10,7 +10,7 @@ export class DisplayPentagrama {
   public renglones: DisplaySistemaPentagrama[] = []
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
-    nroCompas: number
+    nroCompas: number,
   ): DisplayCompasPentagrama {
     const compas = new DisplayCompasPentagrama(nroCompas)
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
@@ -59,7 +59,7 @@ export class DisplayPentagrama {
       }
     }
     if (nInstru.compases.length > 0) {
-      sistema++      
+      sistema++
       renglon = this.GetSistema(sistema)
       renglon.pentagramas.push(nInstru)
     }

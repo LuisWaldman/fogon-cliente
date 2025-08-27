@@ -19,7 +19,6 @@ watch(
   },
 )
 
-
 watch(
   () => props.compas,
   () => {
@@ -33,7 +32,8 @@ function Dibujar() {
   scoreContainer.value.innerHTML = ''
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  renderer.resize(900, 200)
+  const ancho = (props.renglon.pentagramas.length * 100)
+  renderer.resize(900, ancho)
   const context = renderer.getContext()
 
   // Establecer los colores ANTES de crear y dibujar el pentagrama

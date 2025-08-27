@@ -24,7 +24,11 @@ function cargarCancion() {
   midiPlayer.borrarSequence()
   const bpm = props.cancion.bpm ? props.cancion.bpm : 40
   for (let i = 0; i < props.cancion.pentagramas.length; i++) {
-    if (InstrumentosSelecconados.value.indexOf(props.cancion.pentagramas[i].instrumento) < 0) {
+    if (
+      InstrumentosSelecconados.value.indexOf(
+        props.cancion.pentagramas[i].instrumento,
+      ) < 0
+    ) {
       continue
     }
     const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
@@ -49,11 +53,13 @@ function iniciar() {
   }
   console.log('Cargar')
   midiPlayer = new MidiPlayer()
-  todosInstrumentos.value = [...new Set(props.cancion.pentagramas.map(p => p.instrumento))]
+  todosInstrumentos.value = [
+    ...new Set(props.cancion.pentagramas.map((p) => p.instrumento)),
+  ]
   InstrumentosSelecconados.value = [...todosInstrumentos.value]
   midiPlayer.cargarInstrumentos(todosInstrumentos.value).then(() => {
     midiCargado.value = true
-    console.log("Instrumentos cargados")
+    console.log('Instrumentos cargados')
     cargarCancion()
   })
 }
@@ -93,16 +99,18 @@ function stop() {
 </script>
 <template>
   <div>
-  <span @click="play">[PLAY]</span>
-  <span @click="stop">[PAUSA]</span>
-  Pentagramas : {{ props.cancion.pentagramas.length }}
-
+    <span @click="play">[PLAY]</span>
+    <span @click="stop">[PAUSA]</span>
+    Pentagramas : {{ props.cancion.pentagramas.length }}
   </div>
-  <div style="display: flex; ">
-    <div v-for="instrumento in todosInstrumentos" :key="instrumento" 
-    class="instrumento"
-    :class="{'seleccionado': InstrumentosSelecconados.includes(instrumento)}"
-    @click="click_Instrumentos(instrumento)">
+  <div style="display: flex">
+    <div
+      v-for="instrumento in todosInstrumentos"
+      :key="instrumento"
+      class="instrumento"
+      :class="{ seleccionado: InstrumentosSelecconados.includes(instrumento) }"
+      @click="click_Instrumentos(instrumento)"
+    >
       {{ instrumento }}
     </div>
     <div></div>
@@ -110,7 +118,7 @@ function stop() {
 </template>
 <style scoped>
 .seleccionado {
-  border: 1px solid ;
+  border: 1px solid;
   background-color: lightcyan;
   color: black;
 }
