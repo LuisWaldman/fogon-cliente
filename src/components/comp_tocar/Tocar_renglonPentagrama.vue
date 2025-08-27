@@ -18,6 +18,14 @@ watch(
     Dibujar()
   },
 )
+
+
+watch(
+  () => props.compas,
+  () => {
+    Dibujar()
+  },
+)
 function Dibujar() {
   if (!scoreContainer.value) return
 

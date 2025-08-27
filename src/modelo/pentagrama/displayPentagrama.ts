@@ -45,21 +45,21 @@ export class DisplayPentagrama {
     let sistema = 0
     let renglon = this.GetSistema(sistema)
     let nInstru = new DisplayInstrumentoPentagrama([], pentagrama.clave)
-    renglon.pentagramas.push(nInstru)
+    //renglon.pentagramas.push(nInstru)
 
     for (let i = 0; i < pentagrama.compases.length; i++) {
       const compPenta = this.creaCompasPentagrama(pentagrama.compases[i], i)
       nInstru.compases.push(compPenta)
 
-      if (i > 0 && (i + 1) % 4 === 0) {
-        sistema++
+      if ((i + 1) % 4 === 0) {
         renglon = this.GetSistema(sistema)
         renglon.pentagramas.push(nInstru)
         nInstru = new DisplayInstrumentoPentagrama([], pentagrama.clave)
+        sistema++
       }
     }
     if (nInstru.compases.length > 0) {
-      sistema++
+      sistema++      
       renglon = this.GetSistema(sistema)
       renglon.pentagramas.push(nInstru)
     }
