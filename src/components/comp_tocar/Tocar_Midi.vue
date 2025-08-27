@@ -37,7 +37,7 @@ function cargarCancion() {
 }
 const todosInstrumentos = ref<string[]>([])
 const InstrumentosSelecconados = ref<string[]>([])
-function click_Instrumentos(instrumento: string) {
+function clickInstrumentos(instrumento: string) {
   const index = InstrumentosSelecconados.value.indexOf(instrumento)
   if (index >= 0) {
     InstrumentosSelecconados.value.splice(index, 1)
@@ -109,7 +109,7 @@ function stop() {
       :key="instrumento"
       class="instrumento"
       :class="{ seleccionado: InstrumentosSelecconados.includes(instrumento) }"
-      @click="click_Instrumentos(instrumento)"
+      @click="clickInstrumentos(instrumento)"
     >
       {{ instrumento }}
     </div>

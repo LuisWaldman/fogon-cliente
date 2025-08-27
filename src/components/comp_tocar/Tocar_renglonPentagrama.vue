@@ -32,7 +32,7 @@ function Dibujar() {
   scoreContainer.value.innerHTML = ''
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  const ancho = (props.renglon.pentagramas.length * 100)
+  const ancho = props.renglon.pentagramas.length * 100
   renderer.resize(900, ancho)
   const context = renderer.getContext()
 
