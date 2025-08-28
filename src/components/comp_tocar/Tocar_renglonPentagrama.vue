@@ -25,6 +25,9 @@ watch(
     Dibujar()
   },
 )
+
+const anchoPrimerStave = 100
+const anchoCompasStave = 200
 function Dibujar() {
   if (!scoreContainer.value) return
 
@@ -47,6 +50,12 @@ function Dibujar() {
   }
 }
 
+const emit = defineEmits(['clickCompas'])
+function handleClick(event: MouseEvent) {
+  const compas = Math.floor((event.offsetX - anchoPrimerStave) / anchoCompasStave)
+  emit('clickCompas', props.renglon.pentagramas[0].compases[0].nroCompas +  compas)
+}
+
 onMounted(() => {
   Dibujar()
 })
@@ -55,7 +64,7 @@ defineExpose({ Dibujar })
 </script>
 <template>
   <div>
-    <div ref="scoreContainer" class="score"></div>
+    <div ref="scoreContainer" @click="handleClick" class="score"></div>
   </div>
 </template>
 

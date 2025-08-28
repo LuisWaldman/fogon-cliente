@@ -6,6 +6,7 @@ import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { DisplayPentagrama } from '../../modelo/pentagrama/displayPentagrama'
 import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 
+const emit = defineEmits(['clickCompas'])
 const props = defineProps<{
   compas: number
   cancion: Cancion
@@ -71,6 +72,7 @@ defineExpose({ Actualizar })
         :compas="props.compas"
         :renglon="renglon"
         :cancion="props.cancion"
+        @clickCompas="emit('clickCompas', $event)"
       ></renglonPentagrama>
     </div>
   </div>

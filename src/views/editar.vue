@@ -135,6 +135,9 @@ watch(
         @cerrar="clickCerrarEditar"
         @actualizoPentagrama="Actualizar"
         :cancion="appStore.editandocancion"
+        :compas="editandoCompas"
+        @clickCompas="cambiarCompas"
+      >
       >
       </editarpentagrama>
     </div>
