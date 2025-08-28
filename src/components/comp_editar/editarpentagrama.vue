@@ -1,12 +1,13 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
-import type { Cancion } from '../../modelo/cancion/cancion'
+import { Cancion } from '../../modelo/cancion/cancion'
 import subirmidi from './subirmidi.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloAcorde } from '../../modelo/pentagrama/estiloAcorde'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import renglonpentagrama from '../comp_tocar/Tocar_renglonPentagrama.vue'
+import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
 
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayInstrumentoPentagrama'
@@ -65,6 +66,7 @@ refDisplayPentagrama.value.pentagramas[0].compases[0] =
   helpPenta.creaCompasPentagrama(pentaObtenido, 0)
 const CtrlrenglonPentagrama = ref()
 function ActualizarRitmo() {
+  return
   const helpPenta = new HelperPentagramas()
   const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
     acorde,
@@ -195,6 +197,12 @@ function ActualizorInstrumento() {
       <option value="bass">Fa</option>
     </select>
   </div>
+  <editarCompas
+    :cancion="cancion"
+    :pentagramaId="idPentagramaEditando"
+    :compas="compas"
+  ></editarCompas>
+
   <div>
     <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
     <span @click="clickBorrarPentagrama">[Borrar Pentagrama]</span>
@@ -263,12 +271,6 @@ function ActualizorInstrumento() {
       max="7"
     />
   </div>
-  <renglonpentagrama
-    ref="CtrlrenglonPentagrama"
-    :compas="-1"
-    :cancion="cancion"
-    :renglon="refDisplayPentagrama"
-  />
 </template>
 
 <style scoped>

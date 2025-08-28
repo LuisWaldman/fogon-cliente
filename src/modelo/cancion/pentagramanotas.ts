@@ -21,7 +21,19 @@ export class PentagramaNotas {
     '8d': '8n.', // corchea con puntillo
     '16d': '16n.', // semicorchea con puntillo
   }
+
+  static mapaDuracionRitmo: Record<string, number> = {
+    '1': 1, // redonda
+    '2': 2, // blanca
+    '4': 4, // negra
+    q: 4, // negra
+    '8': 8, // corchea
+    '16': 16, // semicorchea
+  }
   public static duracionMidi(duracionId: string): string {
     return this.mapaDuraciones[duracionId] ?? '4n' // Valor por defecto si no se encuentra
+  }
+  public static duracionRitmo(duracionId: string): number {
+    return this.mapaDuracionRitmo[duracionId] ?? 4 // Valor por defecto si no se encuentra
   }
 }
