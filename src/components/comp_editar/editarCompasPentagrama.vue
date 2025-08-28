@@ -41,15 +41,18 @@ const props = defineProps<{
 const refCompas = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const editCompas = ref(new EditCompasPentagrama())
+const refAcorde = ref(props.cancion.acordes.GetTodosLosAcordes()[props.compas])
+const editCompas = ref(new EditCompasPentagrama('C4'))
 const helper = new HelperEditPentagrama()
 function Actualizar() {
   refCompas.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
-
-  
+  refAcorde.value = props.cancion.acordes.GetTodosLosAcordes()[props.compas]
   if (refCompas.value) {
-    editCompas.value = helper.getDisplay(refCompas.value)
+    editCompas.value = helper.getDisplayEditCompas(
+      refCompas.value,
+      refAcorde.value,
+    )
     refDisplayPentagrama.value.pentagramas[0].compases[0] =
       helpPenta.creaCompasPentagrama(refCompas.value, 0)
     CtrlrenglonPentagrama.value.Dibujar()
@@ -81,10 +84,39 @@ watch(
 </script>
 <template>
   <div>
+    {{ editCompas.acorde.acorde }}
+    <input
+      v-model="editCompas.acorde.octava"
+      style="width: 30px"
+      type="number"
+      min="1"
+      max="8"
+    />
+  </div>
+  <div>
     <span @click="Redibujar()">[Actualizar]</span>
   </div>
   <div>
-    {{ editCompas }}
+    <div style="display: flex">
+      <div class="divNotaEdit"></div>
+      <div class="divRitmo" v-for="(r, index) in editCompas.ritmo" :key="index">
+        {{ r }}
+      </div>
+    </div>
+    <div
+      style="display: flex"
+      v-for="(a, aIndex) in editCompas.acorde.notas"
+      :key="aIndex"
+    >
+      <div class="divNotaEdit">{{ a }}</div>
+      <div
+        class="divPatronRitmo"
+        v-for="(r, index) in editCompas.ritmo"
+        :key="index"
+      >
+        {{ editCompas.notaacordes[index].patrones[aIndex] }}
+      </div>
+    </div>
   </div>
 
   <renglonpentagrama
@@ -94,3 +126,16 @@ watch(
     :renglon="refDisplayPentagrama"
   />
 </template>
+<style scoped>
+.divNotaEdit {
+  width: 30px;
+}
+.divRitmo {
+  width: 20px;
+}
+.divPatronRitmo {
+  border: 1px solid;
+  margin: 0px;
+  width: 20px;
+}
+</style>
