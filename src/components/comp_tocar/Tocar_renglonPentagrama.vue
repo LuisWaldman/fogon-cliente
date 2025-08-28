@@ -52,8 +52,13 @@ function Dibujar() {
 
 const emit = defineEmits(['clickCompas'])
 function handleClick(event: MouseEvent) {
-  const compas = Math.floor((event.offsetX - anchoPrimerStave) / anchoCompasStave)
-  emit('clickCompas', props.renglon.pentagramas[0].compases[0].nroCompas +  compas)
+  const compas = Math.floor(
+    (event.offsetX - anchoPrimerStave) / anchoCompasStave,
+  )
+  emit(
+    'clickCompas',
+    props.renglon.pentagramas[0].compases[0].nroCompas + compas,
+  )
 }
 
 onMounted(() => {

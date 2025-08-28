@@ -138,7 +138,7 @@ watch(
         :compas="editandoCompas"
         @clickCompas="cambiarCompas"
       >
-      >
+        >
       </editarpentagrama>
     </div>
     <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">

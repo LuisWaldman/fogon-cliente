@@ -31,7 +31,7 @@ export class HelperPentagramas {
       ...new Set(cancion.pentagramas.map((p) => p.instrumento)),
     ]
     for (const pentagrama of instumentos) {
-      modos.push(new DisplayModoPentagrama(pentagrama, true))
+      modos.push(new DisplayModoPentagrama(pentagrama, false))
     }
     return modos
   }

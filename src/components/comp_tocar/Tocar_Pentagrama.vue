@@ -20,8 +20,6 @@ const modos = ref<DisplayModoPentagrama[]>([])
 
 const helper = new HelperPentagramas()
 onMounted(() => {
-  modos.value = helper.GetModos(props.cancion)
-
   Actualizar()
 })
 
@@ -29,11 +27,32 @@ function Actualizar() {
   const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value)
   display.value = newDisplay
 }
-
+cargarModos()
+function cargarModos() {
+  modos.value = helper.GetModos(props.cancion)
+  const instrumentosenLocalstorage =
+    localStorage.getItem('instrumentosPentagrama') || ''
+  modos.value = helper.GetModos(props.cancion)
+  if (instrumentosenLocalstorage != '' && modos.value.length > 0) {
+    let encontradoTotal = false
+    modos.value.forEach((modo) => {
+      const encontrado = instrumentosenLocalstorage
+        .split(',')
+        .find((inst) => inst == modo.Instrumento)
+      modo.Ver = encontrado ? true : false
+      if (encontrado) {
+        encontradoTotal = true
+      }
+    })
+    if (!encontradoTotal && modos.value.length > 0) {
+      modos.value[0].Ver = true
+    }
+  }
+}
 watch(
   () => props.cancion,
   () => {
-    modos.value = helper.GetModos(props.cancion)
+    cargarModos()
     Actualizar()
   },
 )
@@ -45,6 +64,17 @@ watch(
   },
   { deep: true },
 )
+function verInstrumento(modo: DisplayModoPentagrama) {
+  modo.Ver = !modo.Ver
+  const instrumentosSeleccionados = modos.value
+    .filter((m) => m.Ver)
+    .map((m) => m.Instrumento)
+  localStorage.setItem(
+    'instrumentosPentagrama',
+    instrumentosSeleccionados.join(','),
+  )
+  Actualizar()
+}
 
 defineExpose({ Actualizar })
 </script>
@@ -61,8 +91,13 @@ defineExpose({ Actualizar })
         <i class="bi bi-eye"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li v-for="(modo, index) in modos" :key="index">
-          <input type="checkbox" v-model="modo.Ver" />{{ modo.Instrumento }}
+        <li
+          v-for="(modo, index) in modos"
+          :key="index"
+          @click="verInstrumento(modo)"
+        >
+          <i class="bi bi-check-circle" v-if="modo.Ver"></i>
+          {{ modo.Instrumento }}
         </li>
       </ul>
     </div>
