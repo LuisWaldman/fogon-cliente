@@ -12,6 +12,14 @@ import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistema
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
+
+const props = defineProps<{
+  pentagramaId: number
+  cancion: Cancion
+  compas: number
+}>()
+
+
 const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
   new DisplaySistemaPentagrama(),
 )
@@ -32,11 +40,6 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
 const helpPenta = new HelperPentagramas()
 
 const CtrlrenglonPentagrama = ref()
-const props = defineProps<{
-  pentagramaId: number
-  cancion: Cancion
-  compas: number
-}>()
 
 const refCompas = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
@@ -53,6 +56,8 @@ function Actualizar() {
       refCompas.value,
       refAcorde.value,
     )
+    refDisplayPentagrama.value.pentagramas[0].clave =
+      props.cancion.pentagramas[props.pentagramaId].clave
     refDisplayPentagrama.value.pentagramas[0].compases[0] =
       helpPenta.creaCompasPentagrama(refCompas.value, 0)
     CtrlrenglonPentagrama.value.Dibujar()
@@ -81,6 +86,14 @@ watch(
     Actualizar()
   },
 )
+function clickPatron(aIndex: number, rIndex: number) {
+  const val = editCompas.value.notaacordes[rIndex].patrones[aIndex]
+  if (val === 'x') {
+    editCompas.value.notaacordes[rIndex].patrones[aIndex] = 'o'
+  } else {
+    editCompas.value.notaacordes[rIndex].patrones[aIndex] = 'x'
+  }
+} 
 </script>
 <template>
   <div>
@@ -113,6 +126,7 @@ watch(
         class="divPatronRitmo"
         v-for="(r, index) in editCompas.ritmo"
         :key="index"
+        @click="clickPatron(aIndex, index)  "
       >
         {{ editCompas.notaacordes[index].patrones[aIndex] }}
       </div>

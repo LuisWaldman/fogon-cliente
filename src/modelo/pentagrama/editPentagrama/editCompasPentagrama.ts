@@ -8,7 +8,6 @@ export class EditCompasPentagrama {
     acordePentagrama.forEach((s) => {
       const notaTexto = s.nota.substring(0, s.nota.length - 1)
       const notaOctava = parseInt(s.nota.substring(s.nota.length - 1))
-      console.log(notaTexto, this.acorde.notassola)
       const existe = this.acorde.notassola.indexOf(notaTexto)
       if (existe !== -1) {
         toPush.patrones[existe] = 'o'
