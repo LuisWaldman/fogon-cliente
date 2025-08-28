@@ -12,16 +12,36 @@ export class MidiHelper {
   public GetSecuencia(pentagrama: Pentagrama, bpm: number): MidiSecuencia {
     const secuencia = new MidiSecuencia()
     secuencia.bpm = bpm ? bpm : 40
-
+    const esBateria = pentagrama.instrumento
+      .toLocaleLowerCase()
+      .includes('bater')
+    const mapeoBateriaDesde = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
+    const mapeoBateriaHasta = [
+      'C1',
+      'E4',
+      'A#3',
+      'C#3',
+      'D#3',
+      'G#3',
+      'C5',
+      'F5',
+    ]
     for (let i = 0; i < pentagrama.compases.length; i++) {
       this.parteCompas = 0
       for (const nota of pentagrama.compases[i].notas as PentagramaNotas[][]) {
         for (const notaItem of nota as PentagramaNotas[]) {
           if (!notaItem.duracion.includes('r')) {
             const tiempo = this.GetTiempoMidi(i)
+
+            let nota = notaItem.nota
+            if (esBateria) {
+              if (mapeoBateriaDesde.indexOf(nota) !== -1) {
+                nota = mapeoBateriaHasta[mapeoBateriaDesde.indexOf(nota)]
+              }
+            }
             secuencia.notas.push(
               new NotaMidi(
-                notaItem.nota,
+                nota,
                 PentagramaNotas.duracionMidi(notaItem.duracion),
                 tiempo,
               ),

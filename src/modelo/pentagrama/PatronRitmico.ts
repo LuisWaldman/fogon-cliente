@@ -30,15 +30,15 @@ export class PatronRitmico {
   private static patrones: PatronRitmico[] = []
   private static GenerarPatrones() {
     const Acorde = new PatronRitmico('Acorde', [
-      new PatronRitmicoAcorde(0, ['o', 'x', 'o', 'x', 'o', 'x', 'x']),
+      new PatronRitmicoAcorde(0, ['o', 'x', 'o', 'x', 'o', 'x', 'x', 'x']),
     ])
     this.patrones.push(Acorde)
 
     const Melodico = new PatronRitmico('Melodico', [
-      new PatronRitmicoAcorde(2, ['o', 'x', 'o', 'x', 'o', 'x', 'x']),
-      new PatronRitmicoAcorde(2, ['o', 'x', 'x', 'x', 'x', 'x', 'x']),
-      new PatronRitmicoAcorde(2, ['x', 'x', 'o', 'x', 'x', 'x', 'x']),
-      new PatronRitmicoAcorde(2, ['x', 'x', 'x', 'x', 'o', 'x', 'x']),
+      new PatronRitmicoAcorde(2, ['o', 'x', 'o', 'x', 'o', 'x', 'x', 'x']),
+      new PatronRitmicoAcorde(2, ['o', 'x', 'x', 'x', 'x', 'x', 'x', 'x']),
+      new PatronRitmicoAcorde(2, ['x', 'x', 'o', 'x', 'x', 'x', 'x', 'x']),
+      new PatronRitmicoAcorde(2, ['x', 'x', 'x', 'x', 'o', 'x', 'x', 'x']),
     ])
     this.patrones.push(Melodico)
   }

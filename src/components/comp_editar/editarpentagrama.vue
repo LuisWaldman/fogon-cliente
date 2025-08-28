@@ -7,6 +7,7 @@ import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloAcorde } from '../../modelo/pentagrama/estiloAcorde'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import renglonpentagrama from '../comp_tocar/Tocar_renglonPentagrama.vue'
+
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayInstrumentoPentagrama'
 import { DisplayCompasPentagrama } from '../../modelo/pentagrama/DisplayCompasPentagrama'
@@ -17,6 +18,7 @@ import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 
 const props = defineProps<{
   cancion: Cancion
+  compas: number
 }>()
 const refEditandoCompas = ref(0)
 const refDesdeOctava = ref(4)
@@ -52,9 +54,12 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
 const helpPenta = new HelperPentagramas()
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
+const notas = ref(refEstiloEditandoAcorde.value.notasInstrumentos)
+const notasBateria = ref(false)
 const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
   acorde,
   refDesdeOctava.value,
+  notasBateria.value,
 )
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
   helpPenta.creaCompasPentagrama(pentaObtenido, 0)
@@ -64,18 +69,19 @@ function ActualizarRitmo() {
   const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
     acorde,
     refDesdeOctava.value,
+    notasBateria.value,
   )
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
     helpPenta.creaCompasPentagrama(pentaObtenido, 0)
   CtrlrenglonPentagrama.value.Dibujar()
 }
-
+/*
 function cambiarPatronSeleccionado() {
   refEstiloEditandoAcorde.value =
     refPatrones.value[patronSeleccionado.value].GetEstilo()
   ActualizarRitmo()
 }
-
+*/
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
 
@@ -108,13 +114,14 @@ function clickGenerarPentagrama() {
       props.cancion,
       refEstiloEditandoAcorde.value,
       refDesdeOctava.value,
+      notasBateria.value,
     ).compases
   emit('actualizoPentagrama')
 }
 
 function agregarAcorde() {
   refEstiloEditandoAcorde.value.acordes.push(
-    new EstiloAcorde(1, refEstiloEditandoAcorde.value.notas.length),
+    new EstiloAcorde(1, notas.value.length),
   )
   ActualizarRitmo()
 }
@@ -133,22 +140,34 @@ function cambioClave() {
     props.cancion.pentagramas[idPentagramaEditando.value].clave
   ActualizarRitmo()
 }
+function ActualizorInstrumento() {
+  const esBateria = props.cancion.pentagramas[
+    idPentagramaEditando.value
+  ].instrumento
+    .toLowerCase()
+    .includes('bater')
+  if (esBateria != notasBateria.value) {
+    notasBateria.value = esBateria
+    if (esBateria) notas.value = refEstiloEditandoAcorde.value.notasBateria
+    else notas.value = refEstiloEditandoAcorde.value.notasInstrumentos
+  }
+}
 </script>
 <template>
   <div>
-    <span @click="clickCancelarEdit">[Cancelar]</span>
+    <span @click="clickCancelarEdit">[Ok]</span>
 
     <subirmidi :cancion="cancion"></subirmidi>
   </div>
   <div>
     Pentagramas
-    <select v-model="idPentagramaEditando">
+    <select v-model="idPentagramaEditando" @change="ActualizorInstrumento">
       <option
         v-for="(pentagrama, index) in props.cancion.pentagramas"
         :key="index"
         :value="index"
       >
-        {{ pentagrama.instrumento }}
+        {{ pentagrama.instrumento }} - {{ pentagrama.clave }}
       </option>
     </select>
     <span @click="clickAgregarPentagrama">[Agregar]</span>
@@ -156,7 +175,10 @@ function cambioClave() {
 
   <div v-if="cancion.pentagramas[idPentagramaEditando]">
     Instrumento:
-    <select v-model="cancion.pentagramas[idPentagramaEditando].instrumento">
+    <select
+      v-model="cancion.pentagramas[idPentagramaEditando].instrumento"
+      @change="ActualizorInstrumento"
+    >
       <option
         v-for="(inst, index) in refInstrumentos"
         :key="index"
@@ -179,6 +201,7 @@ function cambioClave() {
   </div>
 
   <div>
+    <!-- 
     Patron Ritmico
     <select @click="cambiarPatronSeleccionado()" v-model="patronSeleccionado">
       <option
@@ -188,7 +211,7 @@ function cambioClave() {
       >
         {{ patron.nombre }}
       </option>
-    </select>
+    </select>-->
     <table>
       <thead>
         <tr>
@@ -216,7 +239,7 @@ function cambioClave() {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(nota, index) in refEstiloEditandoAcorde.notas" :key="index">
+        <tr v-for="(nota, index) in notas" :key="index">
           <td>{{ nota }}</td>
           <td
             v-for="(acorde, indexnotaaco) in refEstiloEditandoAcorde.acordes"
