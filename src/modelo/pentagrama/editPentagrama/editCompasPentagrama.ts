@@ -3,6 +3,19 @@ import { EditAcordePatronNotas } from './editAcordeNotas'
 import { EditAcordePentagrama } from './editAcordePentagrama'
 
 export class EditCompasPentagrama {
+  CompletarRitmo() {
+    const divisores = [1, 2, 4, 8, 16, 32] // sin puntillo
+    const total = this.ritmo.reduce((acc, d) => acc + 1 / d, 0)
+    let restante = 1 - total
+
+    while (restante > 0.00001) {
+      const candidato = divisores.find((d) => 1 / d <= restante)
+      if (!candidato) break
+      this.ritmo.push(candidato)
+      this.AddAcorde([])
+      restante -= 1 / candidato
+    }
+  }
   AddAcorde(acordePentagrama: PentagramaNotas[]) {
     const toPush = new EditAcordePatronNotas(this.acorde.totalNotas())
     acordePentagrama.forEach((s) => {

@@ -112,7 +112,6 @@ function clickBorrarPentagrama() {
 }
 
 function clickGenerarPentagrama() {
-  const helpPenta = new HelperPentagramas()
   console.log('ACtualizando', refEstiloEditandoAcorde.value)
   helperEdit.CopiarEnPentagrama(
     props.cancion,
@@ -122,22 +121,6 @@ function clickGenerarPentagrama() {
   emit('actualizoPentagrama')
 }
 
-function agregarAcorde() {
-  refEstiloEditandoAcorde.value.acordes.push(
-    new EstiloAcorde(1, notas.value.length),
-  )
-  ActualizarRitmo()
-}
-
-function clickCambiarTipoNota(acorde: EstiloAcorde, index: number) {
-  acorde.CambiarTipoNota(index)
-  ActualizarRitmo()
-}
-
-function quitarAcorde(index: number) {
-  refEstiloEditandoAcorde.value.acordes.splice(index, 1)
-  ActualizarRitmo()
-}
 function cambioClave() {
   refDisplayPentagrama.value.pentagramas[0].clave =
     props.cancion.pentagramas[idPentagramaEditando.value].clave

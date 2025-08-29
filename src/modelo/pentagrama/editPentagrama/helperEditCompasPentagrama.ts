@@ -46,13 +46,14 @@ export class HelperEditPentagrama {
       acordePentagrama.forEach((nota) => {
         min = Math.min(min, PentagramaNotas.duracionRitmo(nota.duracion))
       })
-      ret.ritmo.push(min)
       if (cPrimer) {
         cPrimer = false
         ret.acorde.SetOctavaFromNotas(acordePentagrama)
       }
-      ret.AddAcorde(acordePentagrama, esBateria)
+      ret.ritmo.push(min)
+      ret.AddAcorde(acordePentagrama)
     })
+    ret.CompletarRitmo()
     return ret
   }
   public getCompas(edit: EditCompasPentagrama): PentagramaCompas {
