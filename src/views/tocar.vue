@@ -35,15 +35,22 @@ class vistaTocar {
   proximosAcordes: boolean = false
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
-vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
-vista.value.secuencia =
-  localStorage.getItem('secuencia') == 'true' ? true : false
-vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
-vista.value.proximosAcordes =
-  localStorage.getItem('proximosAcordes') == 'true' ? true : false
-vista.value.media = localStorage.getItem('media') == 'true' ? true : false
-vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
 
+onMounted(() => {
+
+  vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
+  if (vista.value.viendo == 'pentagrama' && appStore.cancion.pentagramas.length == 0) {
+    vista.value.viendo = 'acordes'
+  }
+  vista.value.secuencia =
+    localStorage.getItem('secuencia') == 'true' ? true : false
+  vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
+  vista.value.proximosAcordes =
+    localStorage.getItem('proximosAcordes') == 'true' ? true : false
+  vista.value.media = localStorage.getItem('media') == 'true' ? true : false
+  vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
+
+})
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
   localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')
@@ -224,7 +231,7 @@ function cambioestado(estado: number) {
           <li v-on:click="cambiarVista('soloacordes')">
             <a class="dropdown-item" href="#">Solo Acordes</a>
           </li>
-          <li v-on:click="cambiarVista('pentagrama')">
+          <li v-on:click="cambiarVista('pentagrama')" v-if="appStore.cancion.pentagramas.length > 0">
             <a class="dropdown-item" href="#">Pentagrama</a>
           </li>
           <li><hr class="dropdown-divider" /></li>

@@ -5,6 +5,7 @@ import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
 import { useAppStore } from '../../stores/appStore'
 import { MidiHelper } from '../../modelo/midi/MidiHelper'
+import { Tiempo } from '../../modelo/tiempo'
 
 const props = defineProps<{
   compas: number
@@ -14,8 +15,10 @@ const props = defineProps<{
 let midiPlayer = new MidiPlayer()
 const midiCargado = ref(false)
 const mediaVista = new MediaVista()
+const refTiempo = ref(0)
 mediaVista.setGetTiempoDesdeInicio(() => {
   const time = midiPlayer.getCurrentTime()
+  refTiempo.value = time
   return time
 })
 
@@ -33,6 +36,7 @@ function cargarCancion() {
     }
     const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
     midiPlayer.loadSequence(props.cancion.pentagramas[i].instrumento, secuencia)
+    
   }
 }
 const todosInstrumentos = ref<string[]>([])
@@ -71,6 +75,7 @@ mediaVista.setPausar(() => {
   stop()
 })
 
+
 onUnmounted(() => {
   const appStore = useAppStore()
   appStore.aplicacion.quitarMediaVista()
@@ -96,12 +101,14 @@ function stop() {
   }
   midiPlayer.stop()
 }
+
+const tiempo = new Tiempo()
 </script>
 <template>
   <div>
     <span @click="play">[PLAY]</span>
     <span @click="stop">[PAUSA]</span>
-    Pentagramas : {{ props.cancion.pentagramas.length }}
+      {{ tiempo.formatSegundos(refTiempo / 1000) }}
   </div>
   <div style="display: flex">
     <div

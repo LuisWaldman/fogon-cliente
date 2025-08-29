@@ -91,24 +91,6 @@ function updateCompas() {
             />
           </td>
         </tr>
-        <!-- 
-        <tr class="partes_control" v-if="'1'=='24'">
-          <td
-            style="
-              text-align: center;
-              border: 1px solid;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              font-size: small;
-            "
-            v-for="(i, a) in appStore.cancion.acordes.ordenPartes"
-            :key="a"
-            :colspan="appStore.cancion.acordes.partes[i].acordes.length"
-          >
-            {{ appStore.cancion.acordes.partes[i].nombre }}
-          </td>
-        </tr>-->
       </tbody>
     </table>
 
