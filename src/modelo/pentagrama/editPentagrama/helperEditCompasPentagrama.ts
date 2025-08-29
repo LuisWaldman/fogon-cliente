@@ -1,13 +1,16 @@
+import type { B } from 'vitest/dist/chunks/worker.d.tQu2eJQy.js'
 import { PentagramaCompas } from '../../cancion/pentagramacompas'
 import { PentagramaNotas } from '../../cancion/pentagramanotas'
 import { EditCompasPentagrama } from './editCompasPentagrama'
+import { EditAcordePentagrama } from './editAcordePentagrama'
 
 export class HelperEditPentagrama {
   public getDisplayEditCompas(
     pentagrama: PentagramaCompas,
     acorde: string,
+    esBateria: boolean,
   ): EditCompasPentagrama {
-    const ret = new EditCompasPentagrama(acorde)
+    const ret = new EditCompasPentagrama(acorde, esBateria)
     let cPrimer = true
     pentagrama.notas.forEach((acordePentagrama) => {
       let min = 9999999999
@@ -19,7 +22,7 @@ export class HelperEditPentagrama {
         cPrimer = false
         ret.acorde.SetOctavaFromNotas(acordePentagrama)
       }
-      ret.AddAcorde(acordePentagrama)
+      ret.AddAcorde(acordePentagrama, esBateria)
     })
     return ret
   }

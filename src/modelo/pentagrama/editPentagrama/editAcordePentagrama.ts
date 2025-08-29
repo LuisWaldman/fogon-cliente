@@ -28,9 +28,10 @@ export class EditAcordePentagrama {
     this.notas.push(nota + escala.toString())
     this.notassola.push(nota)
   }
-
-  constructor(acorde: string) {
+  private esBateria: boolean
+  constructor(acorde: string, esBateria: boolean = false) {
     this.acorde = acorde
+    this.esBateria = esBateria
     this.Calcular()
   }
   Calcular() {
@@ -42,7 +43,17 @@ export class EditAcordePentagrama {
     this.addNote = false
     this.addNotaOctava = 0
     this.addNota = ''
-    
+    if (this.esBateria) {
+      this.notas = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
+      this.notassola = ['D', 'F', 'A', 'C', 'E', 'G', 'A', 'C']
+      this.octavas = [0, 0, 0, 1, 1, 1, 1, 1]
+      this.tiene3 = true
+      this.addNote = false
+      this.addNotaOctava = 0
+      this.addNota = ''
+      return
+    }
+
     this.escalaDelAcorde = helper.GetEscalaDelAcorde(this.acorde)
     const todaslasnotas = helper.GetNotas()
     const indicePrimera = todaslasnotas.indexOf(this.escalaDelAcorde[0])

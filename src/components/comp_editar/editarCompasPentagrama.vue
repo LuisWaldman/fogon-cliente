@@ -22,7 +22,7 @@ const props = defineProps<{
 
 /* DISPLAY */
 const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
-  DisplaySistemaPentagrama.GetDefault()
+  DisplaySistemaPentagrama.GetDefault(),
 )
 const helpPenta = new HelperPentagramas()
 const CtrlrenglonPentagrama = ref()
@@ -32,20 +32,30 @@ const CtrlrenglonPentagrama = ref()
 const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const AcordeActual = ref(props.cancion.acordes.GetTodosLosAcordes()[props.compas])
+const AcordeActual = ref(
+  props.cancion.acordes.GetTodosLosAcordes()[props.compas],
+)
 const editorDisplay = ref(new EditCompasPentagrama('C4'))
 const helper = new HelperEditPentagrama()
-
-
 
 function Actualizar() {
   refCompasEnPentagrama.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
-  AcordeActual.value = props.cancion.acordes.GetTodosLosAcordes()[props.compas]
+
+  const AcordeActual = ref(
+    props.cancion.acordes.GetTodosLosAcordes()[props.compas],
+  )
   if (refCompasEnPentagrama.value) {
+    console.log(
+      'Actualizo editor',
+      props.cancion.pentagramas[props.pentagramaId].instrumento.toLowerCase(),
+    )
     editorDisplay.value = helper.getDisplayEditCompas(
       refCompasEnPentagrama.value,
       AcordeActual.value,
+      props.cancion.pentagramas[props.pentagramaId].instrumento
+        .toLowerCase()
+        .includes('ater'),
     )
     DibujarMuestra()
   }
@@ -86,7 +96,7 @@ function clickPatron(aIndex: number, rIndex: number) {
 }
 
 function ImpactarCambiosEditor() {
-props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
+  props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
     helper.getCompas(editorDisplay.value)
 
   emit('actualizoPentagrama')
@@ -95,8 +105,6 @@ props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
 function CambioOctava() {
   editorDisplay.value.acorde.Calcular()
   ImpactarCambiosEditor()
-  
-
 }
 
 function ActualizarPentagramas() {
@@ -123,7 +131,11 @@ function ActualizarPentagramas() {
   <div>
     <div style="display: flex">
       <div class="divNotaEdit"></div>
-      <div class="divRitmo" v-for="(r, index) in editorDisplay.ritmo" :key="index">
+      <div
+        class="divRitmo"
+        v-for="(r, index) in editorDisplay.ritmo"
+        :key="index"
+      >
         {{ r }}
       </div>
     </div>

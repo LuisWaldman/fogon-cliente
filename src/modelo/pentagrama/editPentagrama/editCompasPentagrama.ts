@@ -18,7 +18,7 @@ export class EditCompasPentagrama {
   public ritmo: number[] = []
   public acorde: EditAcordePentagrama
   public acordespatron: EditAcordePatronNotas[] = []
-  constructor(acorde: string) {
-    this.acorde = new EditAcordePentagrama(acorde)
+  constructor(acorde: string, esBateria: boolean) {
+    this.acorde = new EditAcordePentagrama(acorde, esBateria)
   }
 }
