@@ -30,6 +30,19 @@ const refCompasEnPentagrama = ref(
 const editorDisplay = ref<EditCompasPentagrama>(
   new EditCompasPentagrama('C4', false),
 )
+
+const editandoRitmo = ref(-1)
+const puedeUnirPrev = ref(false)
+const puedeUnirPost = ref(false)
+const puedeDivider = ref(false)
+
+function clickEditarRitmo(indice: number) {
+  editandoRitmo.value = indice
+  puedeUnirPrev.value = indice > 0
+  puedeUnirPost.value = indice < editorDisplay.value.ritmo.length - 1
+  puedeDivider.value = editorDisplay.value.ritmo[indice] < 16
+}
+
 const helper = new HelperEditPentagrama()
 const refEsBatera = ref(false)
 function Actualizar() {
@@ -99,6 +112,19 @@ function CambioOctava() {
   editorDisplay.value.acorde.Calcular()
   ImpactarCambiosEditor()
 }
+
+function clickUnirRitmo(indice: number) {
+  editorDisplay.value.UnirRitmo(indice)
+  editandoRitmo.value = -1
+  ImpactarCambiosEditor()
+}
+
+function clickDividirRitmo(indice: number) {
+  editorDisplay.value.DividirRitmo(indice)
+  editandoRitmo.value = -1
+  ImpactarCambiosEditor()
+}
+
 const instroBateria = EditAcordePentagrama.InstrumentosBateria
 </script>
 <template>
@@ -120,8 +146,40 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
         class="divRitmo"
         v-for="(r, index) in editorDisplay.ritmo"
         :key="index"
+        @click="clickEditarRitmo(index)"
+        :class="{ EditandoRitmo: editandoRitmo === index }"
       >
-        {{ r }}
+        <div>{{ r }}</div>
+        <div
+          style="width: 50px; position: relative"
+          v-if="editandoRitmo === index"
+        >
+          <div
+            style="position: absolute; left: 10px"
+            class="btnRitmo"
+            v-if="puedeUnirPrev"
+            @click="clickUnirRitmo(index)"
+          >
+            +
+          </div>
+          <div
+            style="position: absolute; left: 30px"
+            class="btnRitmo"
+            v-if="puedeDivider"
+            @click="clickDividirRitmo(index)"
+          >
+            /
+          </div>
+          <div
+            style="position: absolute; left: 60px"
+            class="btnRitmo"
+            v-if="puedeUnirPost"
+            @click="clickUnirRitmo(index + 1)"
+          >
+            +
+          </div>
+          <div>&nbsp;</div>
+        </div>
       </div>
     </div>
     <div
@@ -158,14 +216,23 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
   width: 130px;
 }
 .divRitmo {
-  width: 50px;
+  width: 80px;
   text-align: center;
 }
 .divPatronRitmo {
   border: 1px solid;
   margin: 0px;
-  width: 50px;
+  width: 80px;
   padding: 2px;
   text-align: center;
+}
+.EditandoRitmo {
+  background-color: rgb(65, 65, 39);
+}
+.btnRitmo {
+  border: 1px solid;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
 }
 </style>

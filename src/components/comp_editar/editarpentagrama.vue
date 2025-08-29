@@ -96,7 +96,9 @@ function clickCancelarEdit() {
 }
 
 function clickAgregarPentagrama() {
-  const nPentagrama = new Pentagrama()
+  const nPentagrama = Pentagrama.GetPentagramaDefault(
+    props.cancion.totalCompases,
+  )
   nPentagrama.instrumento = 'Piano'
   props.cancion.pentagramas.push(nPentagrama)
 }
@@ -107,7 +109,7 @@ function clickBorrarPentagrama() {
 }
 
 function clickGenerarPentagrama() {
-  console.log('ACtualizando', refEstiloEditandoAcorde.value)
+  console.log('Actualizando', refEstiloEditandoAcorde.value)
   helperEdit.CopiarEnPentagrama(
     props.cancion,
     idPentagramaEditando.value,
@@ -177,6 +179,7 @@ function ActualizorInstrumento() {
     </select>
   </div>
   <editarCompas
+    v-if="cancion.pentagramas[idPentagramaEditando]"
     :cancion="cancion"
     :pentagramaId="idPentagramaEditando"
     :compas="compas"
