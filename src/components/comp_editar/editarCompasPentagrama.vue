@@ -27,7 +27,9 @@ const CtrlrenglonPentagrama = ref()
 const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const editorDisplay = ref<EditCompasPentagrama>(new EditCompasPentagrama('C4', false))
+const editorDisplay = ref<EditCompasPentagrama>(
+  new EditCompasPentagrama('C4', false),
+)
 const helper = new HelperEditPentagrama()
 const refEsBatera = ref(false)
 function Actualizar() {
@@ -87,13 +89,11 @@ function clickPatron(aIndex: number, rIndex: number) {
 }
 
 function ImpactarCambiosEditor() {
-
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
     helper.getCompas(editorDisplay.value)
 
   emit('actualizoPentagrama')
   Actualizar()
-
 }
 function CambioOctava() {
   editorDisplay.value.acorde.Calcular()
