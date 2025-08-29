@@ -34,6 +34,16 @@ export class EditAcordePentagrama {
     this.esBateria = esBateria
     this.Calcular()
   }
+  public static InstrumentosBateria: string[] = [
+    'Bombo',
+    'Caja',
+    'Matraca',
+    'Platillo cerrado',
+    'Platillo abierto',
+    'Triangulo',
+    'Silbato',
+    'Crash',
+  ]
   Calcular() {
     const helper = new MusicaHelper()
     this.notas = []

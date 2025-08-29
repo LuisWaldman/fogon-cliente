@@ -127,6 +127,12 @@ describe('Helper Pentagrama', () => {
     retEdit.CompletarRitmo()
     expect(retEdit.ritmo).toEqual([2, 2])
 
+    
+    // Media blanca → se completa con otra igual
+    retEdit.ritmo = [4, 4, 2]
+    retEdit.CompletarRitmo()
+    expect(retEdit.ritmo).toEqual([4, 4, 2])
+
     // Ya está completo con dos medias
     retEdit.ritmo = [2, 2]
     retEdit.CompletarRitmo()
@@ -156,6 +162,5 @@ describe('Helper Pentagrama', () => {
     retEdit.ritmo = [4, 4, 4]
     retEdit.CompletarRitmo()
     expect(retEdit.ritmo).toEqual([4, 4, 4, 4])
-
   })
 })

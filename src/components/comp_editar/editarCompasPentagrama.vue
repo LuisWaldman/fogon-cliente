@@ -12,6 +12,7 @@ import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistema
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
+import { EditAcordePentagrama } from '../../modelo/pentagrama/editPentagrama/editAcordePentagrama'
 
 const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
@@ -34,7 +35,7 @@ const refCompasEnPentagrama = ref(
 )
 const editorDisplay = ref(new EditCompasPentagrama('C4', false))
 const helper = new HelperEditPentagrama()
-
+const refEsBatera = ref(false)
 function Actualizar() {
   refCompasEnPentagrama.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
@@ -43,16 +44,13 @@ function Actualizar() {
     props.cancion.acordes.GetTodosLosAcordes()[props.compas],
   )
   if (refCompasEnPentagrama.value) {
-    console.log(
-      'Actualizo editor',
-      props.cancion.pentagramas[props.pentagramaId].instrumento.toLowerCase(),
-    )
+    refEsBatera.value = props.cancion.pentagramas[props.pentagramaId].instrumento
+      .toLowerCase()
+      .includes('batería')
     editorDisplay.value = helper.getDisplayEditCompas(
       refCompasEnPentagrama.value,
       AcordeActual.value,
-      props.cancion.pentagramas[props.pentagramaId].instrumento
-        .toLowerCase()
-        .includes('ater'),
+      refEsBatera.value,
     )
     DibujarMuestra()
   }
@@ -103,15 +101,7 @@ function CambioOctava() {
   editorDisplay.value.acorde.Calcular()
   ImpactarCambiosEditor()
 }
-
-function ActualizarPentagramas() {
-  props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
-    helper.getCompas(editorDisplay.value)
-  refCompasEnPentagrama.value =
-    props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
-  emit('actualizoPentagrama')
-  Actualizar()
-}
+const instroBateria = EditAcordePentagrama.InstrumentosBateria
 </script>
 <template>
   <div>
@@ -141,7 +131,13 @@ function ActualizarPentagramas() {
       v-for="(a, aIndex) in editorDisplay.acorde.notas"
       :key="aIndex"
     >
-      <div class="divNotaEdit">{{ a }}</div>
+    
+      <div class="divNotaEdit" v-if="!refEsBatera">
+        {{ a }}
+      </div>
+      <div class="divNotaEdit" v-if="refEsBatera">
+        {{ instroBateria[aIndex] }}
+      </div>
       <div
         class="divPatronRitmo"
         v-for="(r, index) in editorDisplay.ritmo"
@@ -162,14 +158,17 @@ function ActualizarPentagramas() {
 </template>
 <style scoped>
 .divNotaEdit {
-  width: 30px;
+  width: 130px;
 }
 .divRitmo {
-  width: 20px;
+  width: 50px;
+  text-align: center;
 }
 .divPatronRitmo {
   border: 1px solid;
   margin: 0px;
-  width: 20px;
+  width: 50px;
+  padding: 2px;
+  text-align: center;
 }
 </style>
