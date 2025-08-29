@@ -3,6 +3,12 @@ import { EditAcordePatronNotas } from './editAcordeNotas'
 import { EditAcordePentagrama } from './editAcordePentagrama'
 
 export class EditCompasPentagrama {
+  public ritmo: number[] = []
+  public acorde: EditAcordePentagrama
+  public acordespatron: EditAcordePatronNotas[] = []
+  constructor(acorde: string, esBateria: boolean) {
+    this.acorde = new EditAcordePentagrama(acorde, esBateria)
+  }
   CompletarRitmo() {
     const divisores = [1, 2, 4, 8, 16, 32] // sin puntillo
     const total = this.ritmo.reduce((acc, d) => acc + 1 / d, 0)
@@ -27,11 +33,5 @@ export class EditCompasPentagrama {
     })
 
     this.acordespatron.push(toPush)
-  }
-  public ritmo: number[] = []
-  public acorde: EditAcordePentagrama
-  public acordespatron: EditAcordePatronNotas[] = []
-  constructor(acorde: string, esBateria: boolean) {
-    this.acorde = new EditAcordePentagrama(acorde, esBateria)
   }
 }

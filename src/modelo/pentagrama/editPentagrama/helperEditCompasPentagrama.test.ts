@@ -127,7 +127,6 @@ describe('Helper Pentagrama', () => {
     retEdit.CompletarRitmo()
     expect(retEdit.ritmo).toEqual([2, 2])
 
-    
     // Media blanca → se completa con otra igual
     retEdit.ritmo = [4, 4, 2]
     retEdit.CompletarRitmo()

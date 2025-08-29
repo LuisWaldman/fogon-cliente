@@ -20,6 +20,7 @@ export class EditAcordePentagrama {
   public octavas: number[] = []
   public tiene3: boolean = false
   public addNote: boolean = false
+  public esBateria: boolean = false
   public totalNotas(): number {
     return this.notas.length + (this.addNote ? 1 : 0)
   }
@@ -28,7 +29,6 @@ export class EditAcordePentagrama {
     this.notas.push(nota + escala.toString())
     this.notassola.push(nota)
   }
-  private esBateria: boolean
   constructor(acorde: string, esBateria: boolean = false) {
     this.acorde = acorde
     this.esBateria = esBateria

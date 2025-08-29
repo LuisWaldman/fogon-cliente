@@ -1,13 +1,7 @@
 <script lang="ts" setup>
 import { onMounted, ref, watch } from 'vue'
-import QRCode from 'qrcode'
 import type { Cancion } from '../../modelo/cancion/cancion'
-import type { Pentagrama } from '../../modelo/cancion/pentagrama'
 import renglonpentagrama from '../comp_tocar/Tocar_renglonPentagrama.vue'
-import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayInstrumentoPentagrama'
-import { DisplayCompasPentagrama } from '../../modelo/pentagrama/DisplayCompasPentagrama'
-import { DisplayAcordesPentagrama } from '../../modelo/pentagrama/DisplayAcordesPentagrama'
-import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentagrama'
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
@@ -33,7 +27,7 @@ const CtrlrenglonPentagrama = ref()
 const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const editorDisplay = ref(new EditCompasPentagrama('C4', false))
+const editorDisplay = ref<EditCompasPentagrama>(new EditCompasPentagrama('C4', false))
 const helper = new HelperEditPentagrama()
 const refEsBatera = ref(false)
 function Actualizar() {
@@ -44,7 +38,9 @@ function Actualizar() {
     props.cancion.acordes.GetTodosLosAcordes()[props.compas],
   )
   if (refCompasEnPentagrama.value) {
-    refEsBatera.value = props.cancion.pentagramas[props.pentagramaId].instrumento
+    refEsBatera.value = props.cancion.pentagramas[
+      props.pentagramaId
+    ].instrumento
       .toLowerCase()
       .includes('batería')
     editorDisplay.value = helper.getDisplayEditCompas(
@@ -91,11 +87,13 @@ function clickPatron(aIndex: number, rIndex: number) {
 }
 
 function ImpactarCambiosEditor() {
+
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
     helper.getCompas(editorDisplay.value)
 
   emit('actualizoPentagrama')
   Actualizar()
+
 }
 function CambioOctava() {
   editorDisplay.value.acorde.Calcular()
@@ -131,7 +129,6 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
       v-for="(a, aIndex) in editorDisplay.acorde.notas"
       :key="aIndex"
     >
-    
       <div class="divNotaEdit" v-if="!refEsBatera">
         {{ a }}
       </div>
@@ -140,7 +137,7 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
       </div>
       <div
         class="divPatronRitmo"
-        v-for="(r, index) in editorDisplay.ritmo"
+        v-for="(_r, index) in editorDisplay.ritmo"
         :key="index"
         @click="clickPatron(aIndex, index)"
       >

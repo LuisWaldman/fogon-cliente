@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import subirmidi from './subirmidi.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
-import { EstiloAcorde } from '../../modelo/pentagrama/estiloAcorde'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
-import renglonpentagrama from '../comp_tocar/Tocar_renglonPentagrama.vue'
 import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
 
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
@@ -92,9 +90,6 @@ refEstiloEditandoAcorde.value =
 
 const emit = defineEmits(['cerrar', 'actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
-
-// Obtener tipos y duraciones desde métodos estáticos
-const duracionesDisponibles = computed(() => EstiloAcorde.GetDuraciones())
 
 function clickCancelarEdit() {
   emit('cerrar')

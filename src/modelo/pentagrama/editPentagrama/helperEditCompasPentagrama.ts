@@ -1,5 +1,4 @@
 import type { Cancion } from '../../cancion/cancion'
-import { Pentagrama } from '../../cancion/pentagrama'
 import { PentagramaCompas } from '../../cancion/pentagramacompas'
 import { PentagramaNotas } from '../../cancion/pentagramanotas'
 import { EditCompasPentagrama } from './editCompasPentagrama'
