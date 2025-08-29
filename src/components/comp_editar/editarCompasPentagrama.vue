@@ -32,10 +32,7 @@ const CtrlrenglonPentagrama = ref()
 const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const AcordeActual = ref(
-  props.cancion.acordes.GetTodosLosAcordes()[props.compas],
-)
-const editorDisplay = ref(new EditCompasPentagrama('C4'))
+const editorDisplay = ref(new EditCompasPentagrama('C4', false))
 const helper = new HelperEditPentagrama()
 
 function Actualizar() {

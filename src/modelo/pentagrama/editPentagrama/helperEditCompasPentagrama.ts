@@ -1,10 +1,39 @@
-import type { B } from 'vitest/dist/chunks/worker.d.tQu2eJQy.js'
+import type { Cancion } from '../../cancion/cancion'
+import { Pentagrama } from '../../cancion/pentagrama'
 import { PentagramaCompas } from '../../cancion/pentagramacompas'
 import { PentagramaNotas } from '../../cancion/pentagramanotas'
 import { EditCompasPentagrama } from './editCompasPentagrama'
-import { EditAcordePentagrama } from './editAcordePentagrama'
 
 export class HelperEditPentagrama {
+  CopiarEnPentagrama(cancion: Cancion, pentagraId: number, compas: number) {
+    if (cancion.pentagramas.length < pentagraId) {
+      return
+    }
+    const pentagrama = cancion.pentagramas[pentagraId]
+    if (compas > pentagrama.compases.length) {
+      return
+    }
+    const acorde = cancion.acordes.GetTodosLosAcordes()[compas]
+    const esBateria = pentagrama.instrumento.toLowerCase().includes('ater')
+    const display = this.getDisplayEditCompas(
+      pentagrama.compases[compas],
+      acorde,
+      esBateria,
+    )
+    pentagrama.compases = []
+    for (let i = 0; i < cancion.acordes.ordenPartes.length; i++) {
+      const ordenParte = cancion.acordes.ordenPartes[i]
+      for (
+        let j = 0;
+        j < cancion.acordes.partes[ordenParte].acordes.length;
+        j++
+      ) {
+        display.acorde.acorde = cancion.acordes.partes[ordenParte].acordes[j]
+        display.acorde.Calcular()
+        pentagrama.compases.push(this.getCompas(display))
+      }
+    }
+  }
   public getDisplayEditCompas(
     pentagrama: PentagramaCompas,
     acorde: string,

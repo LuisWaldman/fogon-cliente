@@ -16,11 +16,14 @@ import { DisplayAcordesPentagrama } from '../../modelo/pentagrama/DisplayAcordes
 import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentagrama'
 import { PatronRitmico } from '../../modelo/pentagrama/PatronRitmico'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
+import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 
 const props = defineProps<{
   cancion: Cancion
   compas: number
 }>()
+const helperEdit = new HelperEditPentagrama()
+
 const refEditandoCompas = ref(0)
 const refDesdeOctava = ref(4)
 
@@ -111,13 +114,11 @@ function clickBorrarPentagrama() {
 function clickGenerarPentagrama() {
   const helpPenta = new HelperPentagramas()
   console.log('ACtualizando', refEstiloEditandoAcorde.value)
-  props.cancion.pentagramas[idPentagramaEditando.value].compases =
-    helpPenta.creaPentagrama(
-      props.cancion,
-      refEstiloEditandoAcorde.value,
-      refDesdeOctava.value,
-      notasBateria.value,
-    ).compases
+  helperEdit.CopiarEnPentagrama(
+    props.cancion,
+    idPentagramaEditando.value,
+    props.compas,
+  )
   emit('actualizoPentagrama')
 }
 
