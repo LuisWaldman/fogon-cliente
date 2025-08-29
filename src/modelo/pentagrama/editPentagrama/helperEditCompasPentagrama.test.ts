@@ -76,7 +76,7 @@ describe('Helper Pentagrama', () => {
     expect(acorde.notas[0]).toBe('C4')
     expect(acorde.notas[1]).toBe('E4')
     expect(acorde.notas[2]).toBe('G4')
-    expect(acorde.agregada).toBe('B4')
+    expect(acorde.addNota).toBe('B4')
   })
 
   it('Acordes de 5', () => {

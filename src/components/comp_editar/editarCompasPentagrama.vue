@@ -22,21 +22,7 @@ const props = defineProps<{
 
 /* DISPLAY */
 const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
-  new DisplaySistemaPentagrama(),
-)
-refDisplayPentagrama.value.pentagramas.push(
-  new DisplayInstrumentoPentagrama([], 'treble'),
-)
-const refCompasPentagrama = ref<DisplayCompasPentagrama>(
-  new DisplayCompasPentagrama(0),
-)
-refCompasPentagrama.value.acordes.push(new DisplayAcordesPentagrama())
-refCompasPentagrama.value.acordes[0].Notas.push(
-  new DisplayNotaPentagrama('C', 4),
-)
-refCompasPentagrama.value.acordes[0].duracion = '4'
-refDisplayPentagrama.value.pentagramas[0].compases.push(
-  refCompasPentagrama.value,
+  DisplaySistemaPentagrama.GetDefault()
 )
 const helpPenta = new HelperPentagramas()
 const CtrlrenglonPentagrama = ref()
@@ -46,17 +32,20 @@ const CtrlrenglonPentagrama = ref()
 const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const refAcorde = ref(props.cancion.acordes.GetTodosLosAcordes()[props.compas])
-const editCompas = ref(new EditCompasPentagrama('C4'))
+const AcordeActual = ref(props.cancion.acordes.GetTodosLosAcordes()[props.compas])
+const editorDisplay = ref(new EditCompasPentagrama('C4'))
 const helper = new HelperEditPentagrama()
+
+
+
 function Actualizar() {
   refCompasEnPentagrama.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
-  refAcorde.value = props.cancion.acordes.GetTodosLosAcordes()[props.compas]
+  AcordeActual.value = props.cancion.acordes.GetTodosLosAcordes()[props.compas]
   if (refCompasEnPentagrama.value) {
-    editCompas.value = helper.getDisplayEditCompas(
+    editorDisplay.value = helper.getDisplayEditCompas(
       refCompasEnPentagrama.value,
-      refAcorde.value,
+      AcordeActual.value,
     )
     DibujarMuestra()
   }
@@ -66,15 +55,7 @@ function DibujarMuestra() {
     props.cancion.pentagramas[props.pentagramaId].clave
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
     helpPenta.creaCompasPentagrama(refCompasEnPentagrama.value, 0)
-  console.log('VUELKVE A DIBUJAR')
   CtrlrenglonPentagrama.value.Dibujar()
-}
-function Confirmar() {
-  const helper = new HelperEditPentagrama()
-  props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
-    helper.getCompas(editCompas.value)
-  emit('actualizoPentagrama')
-  Actualizar()
 }
 
 onMounted(() => {
@@ -95,15 +76,32 @@ watch(
   },
 )
 function clickPatron(aIndex: number, rIndex: number) {
-  const val = editCompas.value.acordespatron[rIndex].patrones[aIndex]
+  const val = editorDisplay.value.acordespatron[rIndex].patrones[aIndex]
   if (val === 'x') {
-    editCompas.value.acordespatron[rIndex].patrones[aIndex] = 'o'
+    editorDisplay.value.acordespatron[rIndex].patrones[aIndex] = 'o'
   } else {
-    editCompas.value.acordespatron[rIndex].patrones[aIndex] = 'x'
+    editorDisplay.value.acordespatron[rIndex].patrones[aIndex] = 'x'
   }
+  ImpactarCambiosEditor()
+}
 
+function ImpactarCambiosEditor() {
+props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
+    helper.getCompas(editorDisplay.value)
+
+  emit('actualizoPentagrama')
+  Actualizar()
+}
+function CambioOctava() {
+  editorDisplay.value.acorde.Calcular()
+  ImpactarCambiosEditor()
+  
+
+}
+
+function ActualizarPentagramas() {
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
-    helper.getCompas(editCompas.value)
+    helper.getCompas(editorDisplay.value)
   refCompasEnPentagrama.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
   emit('actualizoPentagrama')
@@ -112,38 +110,36 @@ function clickPatron(aIndex: number, rIndex: number) {
 </script>
 <template>
   <div>
-    {{ editCompas.acorde.acorde }}
+    {{ editorDisplay.acorde.acorde }}
     <input
-      v-model="editCompas.acorde.octava"
+      v-model="editorDisplay.acorde.octava"
       style="width: 30px"
       type="number"
+      @change="CambioOctava"
       min="1"
       max="8"
     />
   </div>
   <div>
-    <span @click="Confirmar()">[Confirmar]</span>
-  </div>
-  <div>
     <div style="display: flex">
       <div class="divNotaEdit"></div>
-      <div class="divRitmo" v-for="(r, index) in editCompas.ritmo" :key="index">
+      <div class="divRitmo" v-for="(r, index) in editorDisplay.ritmo" :key="index">
         {{ r }}
       </div>
     </div>
     <div
       style="display: flex"
-      v-for="(a, aIndex) in editCompas.acorde.notas"
+      v-for="(a, aIndex) in editorDisplay.acorde.notas"
       :key="aIndex"
     >
       <div class="divNotaEdit">{{ a }}</div>
       <div
         class="divPatronRitmo"
-        v-for="(r, index) in editCompas.ritmo"
+        v-for="(r, index) in editorDisplay.ritmo"
         :key="index"
         @click="clickPatron(aIndex, index)"
       >
-        {{ editCompas.acordespatron[index].patrones[aIndex] }}
+        {{ editorDisplay.acordespatron[index].patrones[aIndex] }}
       </div>
     </div>
   </div>

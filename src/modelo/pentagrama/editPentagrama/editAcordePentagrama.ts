@@ -15,8 +15,8 @@ export class EditAcordePentagrama {
   public notassola: string[] = []
   public escalaDelAcorde: string[] = []
   public octava: number = 4
-  public agregada: string = ''
-  public agregadaoctava: number = 0
+  public addNota: string = ''
+  public addNotaOctava: number = 0
   public octavas: number[] = []
   public tiene3: boolean = false
   public addNote: boolean = false
@@ -30,25 +30,36 @@ export class EditAcordePentagrama {
   }
 
   constructor(acorde: string) {
+    this.acorde = acorde
+    this.Calcular()
+  }
+  Calcular() {
     const helper = new MusicaHelper()
-    this.escalaDelAcorde = helper.GetEscalaDelAcorde(acorde)
+    this.notas = []
+    this.notassola = []
+    this.octavas = []
+    this.tiene3 = true
+    this.addNote = false
+    this.addNotaOctava = 0
+    this.addNota = ''
+    
+    this.escalaDelAcorde = helper.GetEscalaDelAcorde(this.acorde)
     const todaslasnotas = helper.GetNotas()
     const indicePrimera = todaslasnotas.indexOf(this.escalaDelAcorde[0])
     this.escalaDelAcorde.forEach((nota) => {
       const indiceNota = todaslasnotas.indexOf(nota)
       this.octavas.push(indicePrimera > indiceNota ? 1 : 0)
     })
-    this.acorde = acorde
     this.pushNota(this.escalaDelAcorde[0], this.octava + this.octavas[0])
     this.pushNota(this.escalaDelAcorde[2], this.octava + this.octavas[2])
     this.pushNota(this.escalaDelAcorde[4], this.octava + this.octavas[4])
-    if (acorde.indexOf('5') >= 0) {
+    if (this.acorde.indexOf('5') >= 0) {
       this.tiene3 = false
     }
-    if (acorde.indexOf('7') >= 0) {
+    if (this.acorde.indexOf('7') >= 0) {
       this.addNote = true
-      this.agregada = this.escalaDelAcorde[6] + (this.octava + this.octavas[6])
-      this.agregadaoctava = this.octava + this.octavas[6]
+      this.addNota = this.escalaDelAcorde[6] + (this.octava + this.octavas[6])
+      this.addNotaOctava = this.octava + this.octavas[6]
     }
   }
 }
