@@ -99,7 +99,7 @@ function clickAgregarPentagrama() {
   const nPentagrama = Pentagrama.GetPentagramaDefault(
     props.cancion.totalCompases,
   )
-  nPentagrama.instrumento = 'Piano'
+
   props.cancion.pentagramas.push(nPentagrama)
 }
 
