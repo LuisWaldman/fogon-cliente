@@ -42,15 +42,12 @@ export default class Aplicacion {
     }
   }
 
-  onMounted() {
+  onMounted(cancion: string | null) {
     console.log('Aplicacion montada')
 
     const appStore = useAppStore()
     appStore.perfil =
       this.configuracion.perfil || new Perfil('', '', '', '', '')
-
-    const urlParams = new URLSearchParams(window.location.search)
-    const cancion = urlParams.get('cancion')
     if (cancion) {
       console.log('cancion', cancion)
       this.SetCancion(new OrigenCancion('sitio', cancion, ''))

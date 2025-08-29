@@ -6,7 +6,24 @@ import Cabecera from './components/comp_cabecera/cabecera.vue'
 const appStore = useAppStore()
 
 onMounted(() => {
-  appStore.aplicacion.onMounted()
+  const urlParams = new URLSearchParams(window.location.search)
+  const cancionUrl = urlParams.get('cancion')
+  // Redirect from fogon.ar to www.fogon.ar with the same parameters
+  const currentHost = window.location.hostname
+  const currentPath = window.location.pathname
+  const fullParams = window.location.search
+
+  if (currentHost === 'fogon.ar') {
+    // Redirect to www.fogon.ar preserving path and query parameters
+    window.location.href = `https://www.fogon.ar${currentPath}${fullParams}`
+    return
+  } else if (currentPath !== '/' && !cancionUrl) {
+    // If we're on any route other than root and there's no cancion parameter,
+    // redirect to the root
+    window.location.href = '/'
+    return
+  }
+  appStore.aplicacion.onMounted(cancionUrl)
 })
 </script>
 
