@@ -1,6 +1,5 @@
 import { PentagramaCompas } from '../../cancion/pentagramacompas'
 import { PentagramaNotas } from '../../cancion/pentagramanotas'
-import type { EditAcordeNota } from './editAcordeNotas'
 import { EditCompasPentagrama } from './editCompasPentagrama'
 
 export class HelperEditPentagrama {
@@ -25,6 +24,22 @@ export class HelperEditPentagrama {
     return ret
   }
   public getCompas(edit: EditCompasPentagrama): PentagramaCompas {
-    return new PentagramaCompas([])
+    const pentas: PentagramaNotas[][] = []
+    edit.ritmo.forEach((ritmo, index) => {
+      const pentatoAdd: PentagramaNotas[] = []
+      edit.acordespatron[index].patrones.forEach((patron, patronid) => {
+        if (patron === 'o') {
+          const nota = edit.acorde.notas[patronid]
+          console.log(nota, ritmo)
+          pentatoAdd.push(new PentagramaNotas(nota, ritmo.toString()))
+        }
+      })
+      if (pentatoAdd.length == 0) {
+        pentatoAdd.push(new PentagramaNotas('C4', ritmo.toString() + 'r'))
+      }
+
+      pentas.push(pentatoAdd)
+    })
+    return new PentagramaCompas(pentas)
   }
 }

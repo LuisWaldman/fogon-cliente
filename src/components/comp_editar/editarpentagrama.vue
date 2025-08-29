@@ -201,75 +201,12 @@ function ActualizorInstrumento() {
     :cancion="cancion"
     :pentagramaId="idPentagramaEditando"
     :compas="compas"
+    @actualizoPentagrama="emit('actualizoPentagrama')"
   ></editarCompas>
 
   <div>
     <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
     <span @click="clickBorrarPentagrama">[Borrar Pentagrama]</span>
-  </div>
-
-  <div>
-    <!-- 
-    Patron Ritmico
-    <select @click="cambiarPatronSeleccionado()" v-model="patronSeleccionado">
-      <option
-        v-for="(patron, index) in refPatrones"
-        :key="index"
-        :value="index"
-      >
-        {{ patron.nombre }}
-      </option>
-    </select>-->
-    <table>
-      <thead>
-        <tr>
-          <th>Ritmo</th>
-          <th
-            v-for="(acorde, index) in refEstiloEditandoAcorde.acordes"
-            :key="index"
-          >
-            <div>
-              <select v-model="acorde.duracionId" @change="ActualizarRitmo()">
-                <option
-                  v-for="(duracion, index) in duracionesDisponibles"
-                  :key="index"
-                  :value="index"
-                >
-                  {{ duracion }}
-                </option>
-              </select>
-            </div>
-            <div>
-              <span @click="quitarAcorde(index)">[X]</span>
-            </div>
-          </th>
-          <th><span @click="agregarAcorde">[+]</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(nota, index) in notas" :key="index">
-          <td>{{ nota }}</td>
-          <td
-            v-for="(acorde, indexnotaaco) in refEstiloEditandoAcorde.acordes"
-            :key="indexnotaaco"
-            @click="clickCambiarTipoNota(acorde, index)"
-          >
-            {{ acorde.tiposNota[index] }}
-          </td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div>
-    {{ acorde }}
-    <input
-      v-model="refDesdeOctava"
-      @change="ActualizarRitmo"
-      type="number"
-      min="2"
-      max="7"
-    />
   </div>
 </template>
 

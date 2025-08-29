@@ -13,13 +13,14 @@ import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
 
+const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
   pentagramaId: number
   cancion: Cancion
   compas: number
 }>()
 
-
+/* DISPLAY */
 const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
   new DisplaySistemaPentagrama(),
 )
@@ -38,35 +39,42 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
   refCompasPentagrama.value,
 )
 const helpPenta = new HelperPentagramas()
-
 const CtrlrenglonPentagrama = ref()
 
-const refCompas = ref(
+/**/
+
+const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
 const refAcorde = ref(props.cancion.acordes.GetTodosLosAcordes()[props.compas])
 const editCompas = ref(new EditCompasPentagrama('C4'))
 const helper = new HelperEditPentagrama()
 function Actualizar() {
-  refCompas.value =
+  refCompasEnPentagrama.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
   refAcorde.value = props.cancion.acordes.GetTodosLosAcordes()[props.compas]
-  if (refCompas.value) {
+  if (refCompasEnPentagrama.value) {
     editCompas.value = helper.getDisplayEditCompas(
-      refCompas.value,
+      refCompasEnPentagrama.value,
       refAcorde.value,
     )
-    refDisplayPentagrama.value.pentagramas[0].clave =
-      props.cancion.pentagramas[props.pentagramaId].clave
-    refDisplayPentagrama.value.pentagramas[0].compases[0] =
-      helpPenta.creaCompasPentagrama(refCompas.value, 0)
-    CtrlrenglonPentagrama.value.Dibujar()
+    DibujarMuestra()
   }
 }
-
-function Redibujar() {
+function DibujarMuestra() {
+  refDisplayPentagrama.value.pentagramas[0].clave =
+    props.cancion.pentagramas[props.pentagramaId].clave
+  refDisplayPentagrama.value.pentagramas[0].compases[0] =
+    helpPenta.creaCompasPentagrama(refCompasEnPentagrama.value, 0)
+  console.log('VUELKVE A DIBUJAR')
+  CtrlrenglonPentagrama.value.Dibujar()
+}
+function Confirmar() {
+  const helper = new HelperEditPentagrama()
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
     helper.getCompas(editCompas.value)
+  emit('actualizoPentagrama')
+  Actualizar()
 }
 
 onMounted(() => {
@@ -87,13 +95,20 @@ watch(
   },
 )
 function clickPatron(aIndex: number, rIndex: number) {
-  const val = editCompas.value.notaacordes[rIndex].patrones[aIndex]
+  const val = editCompas.value.acordespatron[rIndex].patrones[aIndex]
   if (val === 'x') {
-    editCompas.value.notaacordes[rIndex].patrones[aIndex] = 'o'
+    editCompas.value.acordespatron[rIndex].patrones[aIndex] = 'o'
   } else {
-    editCompas.value.notaacordes[rIndex].patrones[aIndex] = 'x'
+    editCompas.value.acordespatron[rIndex].patrones[aIndex] = 'x'
   }
-} 
+
+  props.cancion.pentagramas[props.pentagramaId].compases[props.compas] =
+    helper.getCompas(editCompas.value)
+  refCompasEnPentagrama.value =
+    props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
+  emit('actualizoPentagrama')
+  Actualizar()
+}
 </script>
 <template>
   <div>
@@ -107,7 +122,7 @@ function clickPatron(aIndex: number, rIndex: number) {
     />
   </div>
   <div>
-    <span @click="Redibujar()">[Actualizar]</span>
+    <span @click="Confirmar()">[Confirmar]</span>
   </div>
   <div>
     <div style="display: flex">
@@ -126,9 +141,9 @@ function clickPatron(aIndex: number, rIndex: number) {
         class="divPatronRitmo"
         v-for="(r, index) in editCompas.ritmo"
         :key="index"
-        @click="clickPatron(aIndex, index)  "
+        @click="clickPatron(aIndex, index)"
       >
-        {{ editCompas.notaacordes[index].patrones[aIndex] }}
+        {{ editCompas.acordespatron[index].patrones[aIndex] }}
       </div>
     </div>
   </div>
