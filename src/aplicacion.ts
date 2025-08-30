@@ -14,56 +14,74 @@ import { CancionManager } from './modelo/cancion/CancionManager'
 import { ReproductorMedia } from './modelo/reproduccion/reproductorMedia'
 import type { MediaVista } from './modelo/reproduccion/MediaVista'
 import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
+import type { Servidor } from './modelo/servidor'
+import { h } from 'vue'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
   reproductorDesconectado: Reproductor = this.reproductor
   reproductorConectado: ReproductorConectado | null = null
-  reproductorMedia: ReproductorMedia | null = null
   configuracion: Configuracion = Configuracion.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
 
   constructor() {
     // Inicialización de la aplicación
+    console.log('App: Iniciando aplicacion.')
     CancionManager.getInstance().SetDB()
     const ultimas = new UltimasCanciones()
     ultimas.filtrarSubidas()
-    console.log('Aplicacion inicializada')
+  }
+  public GetServerDefault(): Servidor | null {
     if (this.configuracion.conectarServerDefault) {
       const servidor = this.configuracion.servidores.find(
         (s) => s.nombre === this.configuracion.conectarServerDefault,
       )
       if (servidor) {
-        this.conectar(servidor.direccion)
-      } else {
-        console.warn('Servidor por defecto no encontrado')
+        return servidor
       }
     }
+
+    return null
   }
 
   onMounted(cancion: string | null) {
     console.log('Aplicacion montada')
 
     const appStore = useAppStore()
+    appStore.estadosApp.texto = 'Iniciando aplicacion...'
     appStore.perfil =
       this.configuracion.perfil || new Perfil('', '', '', '', '')
+    if (navigator.onLine) {
+      const servidor = this.GetServerDefault()
+      if (servidor) {
+        this.conectar(servidor.direccion)
+      } else {
+      }
+    } else {
+      this.PrepararPaginaInicio()
+    }
+
     if (cancion) {
       console.log('cancion', cancion)
-      this.SetCancion(new OrigenCancion('sitio', cancion, ''))
+      // PreparaPaginaTocar
+      //this.SetCancion(new OrigenCancion('sitio', cancion, ''))
     }
+    this.PrepararPaginaInicio()
+
+  }
+  PrepararPaginaInicio() {
+    const appStore = useAppStore()
+    appStore.estadosApp.texto = 'Preparando pagina de inicio...'
+    appStore.estadosApp.paginaLista = ''
+    /* CARGA TODO DE LA PAGINA DE INICIO */
+    appStore.estadosApp.paginaLista = 'inicio'
+    appStore.estadosApp.estado = 'ok'
+
   }
 
   setMediaVista(mediaVista: MediaVista): void {
-    if (this.reproductorMedia == null) {
-      this.reproductorMedia = new ReproductorMedia()
-    }
-    this.reproductorMedia.setMediaVista(mediaVista)
-
-    const appStore = useAppStore()
-    if (appStore.estadoSesion !== 'conectado') {
-      this.reproductor = this.reproductorMedia
-    }
+    console.log('SetMediaVista en aplicacion', mediaVista)
   }
 
   quitarMediaVista(): void {
@@ -101,6 +119,7 @@ export default class Aplicacion {
     this.url = url
     const appStore = useAppStore()
     appStore.estado = 'conectando'
+    appStore.estadosApp.texto = 'Conectando al servidor...'
     this.cliente = new ClienteSocket(url)
     this.cliente.setconexionStatusHandler((status: string) => {
       console.log('status:', status)
@@ -110,13 +129,28 @@ export default class Aplicacion {
           helper.setCliente(this.cliente)
           helper.ActualizarDelayReloj()
           appStore.estado = 'conectado'
+          appStore.estadosApp.estadoconeccion = 'conectado'
+          appStore.estadosApp.texto = 'Conectado al servidor'
         }
       }
       if (status === 'desconectado') {
         appStore.estado = 'desconectado'
+        appStore.estadosApp.estadoconeccion = 'desconectado'
+        appStore.estadosApp.texto = 'Desconectado del servidor'
         this.reproductor.detenerReproduccion()
         this.reproductor = this.reproductorDesconectado
-        this.cliente = null
+        // this.cliente = null
+      }
+      if (status === 'error') {
+        appStore.estado = 'desconectado'
+        appStore.estadosApp.estadoconeccion = 'error'
+        appStore.estadosApp.texto =
+          'Error ' +
+          this.cliente?.intentosRealizados.toString() +
+          '/' +
+          this.cliente?.maxIntentos.toString() +
+          ' en  conexión con el servidor'
+        //this.cliente = null
       }
     })
     this.cliente.setConectadoHandler((token: string) => {
