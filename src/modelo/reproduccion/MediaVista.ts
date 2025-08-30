@@ -1,6 +1,12 @@
 import type { Media } from '../cancion/media'
 
 export class MediaVista {
+  public tipo: string
+  public rector: boolean = false
+  public sincronizar: boolean = true
+  public constructor(tipo: string) {
+    this.tipo = tipo
+  }
   public GetTiempoDesdeInicio?: () => number
   public Iniciar?: () => void
   public Pausar?: () => void

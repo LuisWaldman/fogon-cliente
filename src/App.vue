@@ -20,8 +20,8 @@ onMounted(() => {
   } else if (currentPath !== '/' && !cancionUrl) {
     // If we're on any route other than root and there's no cancion parameter,
     // redirect to the root
-    window.location.href = '/'
-    return
+    //window.location.href = '/'
+    //return
   }
 
   const router = useRouter()

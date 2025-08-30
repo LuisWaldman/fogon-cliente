@@ -16,7 +16,6 @@ import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 import type { Servidor } from './modelo/servidor'
 import { IndiceHelper } from './modelo/indices/IndiceHelper'
 import type { Router } from 'vue-router'
-import router from './router'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -86,11 +85,32 @@ export default class Aplicacion {
   }
 
   setMediaVista(mediaVista: MediaVista): void {
+    const appStore = useAppStore()
+    for (let i = 0; i < appStore.MediaVistas.length; i++) {
+      if (appStore.MediaVistas[i].tipo === mediaVista.tipo) {
+        const eraRector = appStore.MediaVistas[i].rector
+        appStore.MediaVistas[i] = mediaVista
+        appStore.MediaVistas[i].rector = eraRector
+        return
+      }
+    }
+    if (appStore.MediaVistas.length == 0) {
+      mediaVista.rector = true
+    }
+    appStore.MediaVistas.push(mediaVista)
     console.log('SetMediaVista en aplicacion', mediaVista)
   }
 
-  quitarMediaVista(): void {
-    this.reproductor = this.reproductorDesconectado
+  quitarMediaVista(mediaVista: MediaVista): void {
+    const appStore = useAppStore()
+    for (let i = 0; i < appStore.MediaVistas.length; i++) {
+      if (appStore.MediaVistas[i].tipo === mediaVista.tipo) {
+        appStore.MediaVistas.splice(i, 1)
+        if (mediaVista.rector && appStore.MediaVistas.length > 0) {
+          appStore.MediaVistas[0].rector = true
+        }
+      }
+    }
   }
 
   async SetCancion(origen: OrigenCancion) {
@@ -108,17 +128,17 @@ export default class Aplicacion {
     appStore.estadosApp.estado = 'cargando'
     appStore.estadosApp.texto = 'Cargando cancion...'
     const cancionObtenida = await CancionManager.getInstance().Get(origen)
+    appStore.MediaVistas = []
     if (cancionObtenida.pentagramas.length > 0) {
       appStore.estadosApp.texto = 'Cargando Midis...'
-    } 
+    }
 
-      appStore.cancion = cancionObtenida
-      appStore.compas = 0
-      appStore.estadoReproduccion = 'pausado'
-      appStore.estadosApp.texto = 'Cancion Cargada'
-      appStore.estadosApp.estado = 'ok'
-      this.router?.push('/tocar')
-    
+    appStore.cancion = cancionObtenida
+    appStore.compas = 0
+    appStore.estadoReproduccion = 'pausado'
+    appStore.estadosApp.texto = 'Cancion Cargada'
+    appStore.estadosApp.estado = 'ok'
+    this.router?.push('/tocar')
   }
   updateCompas(compas: number) {
     this.reproductor.updateCompas(compas)

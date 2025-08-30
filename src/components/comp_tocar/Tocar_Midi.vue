@@ -14,7 +14,7 @@ const props = defineProps<{
 
 let midiPlayer = new MidiPlayer()
 const midiCargado = ref(false)
-const mediaVista = new MediaVista()
+const mediaVista = new MediaVista('MIDI')
 const refTiempo = ref(0)
 mediaVista.setGetTiempoDesdeInicio(() => {
   const time = midiPlayer.getCurrentTime()

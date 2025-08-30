@@ -4,7 +4,7 @@ import { Configuracion, VistaTocar } from '../../modelo/configuracion'
 import { Pantalla } from '../../modelo/pantalla'
 
 const exvistapantalla = ref(new VistaTocar())
-const emit = defineEmits(['cerrarEditSize'])
+const emit = defineEmits(['cerrar'])
 
 const pantalla = new Pantalla()
 const config = Configuracion.getInstance()
@@ -24,7 +24,7 @@ exvistapantalla.value.columnas = configPantalla.value.columnas
 
 function guardarConfiguracionPantalla() {
   config.guardarEnLocalStorage()
-  emit('cerrarEditSize')
+  emit('cerrar')
 }
 
 function cancelarConfiguracionPantalla() {
@@ -42,7 +42,7 @@ function cancelarConfiguracionPantalla() {
     exvistapantalla.value.tamanioAcordeParte
   configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
   pantalla.setearEstilos()
-  emit('cerrarEditSize')
+  emit('cerrar')
 }
 watch(configPantalla.value, () => {
   pantalla.setearEstilos()
