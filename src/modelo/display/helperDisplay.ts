@@ -1,15 +1,7 @@
 import type { Cancion } from '../cancion/cancion'
 import { Display } from './display'
 
-/**
- * Helper class for creating display objects from song data.
- */
 export class HelperDisplay {
-  /**
-   * Creates a Display object from a Cancion object.
-   * @param cancion The song data to convert to a Display.
-   * @returns A Display object representing the song.
-   */
   public getDisplay(cancion: Cancion, anchoRenglones: number): Display {
     const ret = new Display(anchoRenglones)
     const acordes = cancion.acordes.GetTodosLosAcordes()

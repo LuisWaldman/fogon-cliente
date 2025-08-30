@@ -5,6 +5,7 @@ import type { Cancion } from '../../modelo/cancion/cancion'
 
 import { ref, onMounted, watch, onUnmounted } from 'vue'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
+
 const props = defineProps<{
   compas: number
   cancion: Cancion
@@ -16,9 +17,18 @@ const emit = defineEmits<{
 
 const urlYoutube = ref('')
 const media = ref('')
-const delay = ref(0)
+const delay = ref(-1)
 
 const shouldLoad = ref(false)
+function CalcularDelay(): number {
+  if (delay.value === -1) {
+    const item = props.cancion.medias.find((m) => m.tipo === 'Youtube')
+    if (item) {
+      delay.value = item?.delay || 0
+    }
+  }
+  return delay.value
+}
 watch(
   () => props.cancion,
   (newCancion: Cancion) => {
@@ -35,10 +45,10 @@ watch(
     }
   },
 )
-const mediaVista = new MediaVista()
+const mediaVista = new MediaVista('YOUTUBE')
 mediaVista.setGetTiempoDesdeInicio(() => {
   const time = playerRef.value?.getCurrentTime()
-  return time ? time * 1000 - delay.value : 0 // Convert to milliseconds
+  return time ? time * 1000 - CalcularDelay() : 0 // Convert to milliseconds
 })
 mediaVista.setIniciar(() => {
   playerRef.value?.playVideo()
@@ -49,7 +59,7 @@ mediaVista.setPausar(() => {
 
 onUnmounted(() => {
   const appStore = useAppStore()
-  appStore.aplicacion.quitarMediaVista()
+  appStore.aplicacion.quitarMediaVista(mediaVista)
 })
 
 onMounted(() => {
@@ -68,6 +78,7 @@ onMounted(() => {
 const playerRef = ref<InstanceType<typeof YouTube> | null>(null)
 function onReady() {
   //playerRef.value?.playVideo();
+  console.log('Reproductor listo')
 }
 function onStateChange(event: { data: number }) {
   console.log('Estado del reproductor:', event.data)
@@ -78,7 +89,6 @@ function onStateChange(event: { data: number }) {
 <template>
   <div v-if="urlYoutube == ''">No hay media cargada para esta canción</div>
   <YouTube
-    v-if="shouldLoad"
     :src="urlYoutube"
     ref="playerRef"
     @ready="onReady"

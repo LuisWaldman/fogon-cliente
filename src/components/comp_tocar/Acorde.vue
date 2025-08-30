@@ -10,8 +10,6 @@ const props = defineProps<{
   acorde: string
 }>()
 
-const controlDiv = ref<HTMLElement | null>(null) // Ref to the div
-
 //console.log('Acorde.vue', props.acorde)
 const refAcorde = ref<AcordesGuitarra | null>(null)
 
@@ -34,16 +32,39 @@ watch(
 </script>
 
 <template>
-  <div>
-    <div id="divponerAcorde" ref="controlDiv"></div>
+  <div class="divTocarAcorde">
     <div class="">{{ acorde }}</div>
-    {{ refAcorde }}
+
+    <div style="display: flex">
+      <span>{{ refAcorde?.cejilla }}</span>
+      <span v-for="(_, index) in refAcorde?.cuerda" :key="index">-</span>
+    </div>
+
+    <div v-for="n in 4" :key="n" style="display: flex; margin: 0px">
+      <span>&nbsp;</span>
+      <div
+        style="margin: 0px; padding: 0px; height: 10px"
+        v-for="(nota, notaid) in refAcorde?.cuerda"
+        :key="notaid"
+      >
+        <span v-if="nota.toString() === n.toString()" class="">O</span>
+        <span v-else class="">|</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .acordesPantalla {
-  color: red;
+  color: #a9a8f6;
   font-size: 200px;
+}
+.divTocarAcorde {
+  border: 1px solid #a9a8f6;
+}
+.divTocarAcorde span {
+  margin: 0px;
+  font-size: 20px;
+  padding: 0px;
 }
 </style>

@@ -1,6 +1,18 @@
-import type { PentagramaCompas } from './pentagramacompas'
+import { PentagramaCompas } from './pentagramacompas'
+import { PentagramaNotas } from './pentagramanotas'
 
 export class Pentagrama {
   public compases: PentagramaCompas[] = []
   instrumento: string = ''
+  clave: string = 'treble'
+  public static GetPentagramaDefault(compases: number): Pentagrama {
+    const penta = new Pentagrama()
+    penta.instrumento = 'Piano'
+    const notas: PentagramaNotas[][] = []
+    notas.push([new PentagramaNotas('C4', '1r')])
+    for (let i = 0; i < compases; i++) {
+      penta.compases.push(new PentagramaCompas(notas))
+    }
+    return penta
+  }
 }

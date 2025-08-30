@@ -5,8 +5,7 @@ import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
-import Secuencia from '../components/comp_editar/Secuencia.vue'
-import sugerencias from '../components/comp_editar/sugerencias.vue'
+import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 
@@ -17,6 +16,7 @@ const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
 function cambiarCompas(compas: number) {
   editandoCompas.value = compas
+  Actualizar()
 }
 const appStore = useAppStore()
 class vistaTocar {
@@ -124,7 +124,7 @@ watch(
         @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
         @actualizoPentagrama="Actualizar"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
         :ver-acordes="vista.verEditandoAcordes"
         :ver-metrica-es="vista.verEditandoMetricaEs"
       ></editartexto>
@@ -135,31 +135,24 @@ watch(
         @cerrar="clickCerrarEditar"
         @actualizoPentagrama="Actualizar"
         :cancion="appStore.editandocancion"
+        :compas="editandoCompas"
+        @clickCompas="cambiarCompas"
       >
+        >
       </editarpentagrama>
     </div>
     <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">
-      <sugerencias
-        :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
-        @cambioCompas="cambiarCompas"
-        @actualizarCancion="Actualizar"
-        v-if="
-          vista.viendo !== 'editconsolaacordes' &&
-          vista.viendo !== 'editaracordes'
-        "
-      ></sugerencias>
       <editAcordes
         v-if="vista.viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
       ></editAcordes>
 
       <consola-acordes
         v-if="vista.viendo == 'editconsolaacordes'"
         @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
       ></consola-acordes>
       <div
         style="position: relative; left: 96%"
@@ -171,7 +164,7 @@ watch(
       <Secuencia
         ref="ctrlSecuencia"
         :cancion="appStore.editandocancion"
-        :compas="appStore.compas"
+        :compas="editandoCompas"
         @cambioCompas="cambiarCompas"
         v-if="
           vista.viendo !== 'editconsolaacordes' &&

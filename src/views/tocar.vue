@@ -13,6 +13,7 @@ import Partes from '../components/comp_tocar/Partes.vue'
 import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
+import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
 import { useRouter } from 'vue-router'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -35,14 +36,23 @@ class vistaTocar {
   proximosAcordes: boolean = false
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
-vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
-vista.value.secuencia =
-  localStorage.getItem('secuencia') == 'true' ? true : false
-vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
-vista.value.proximosAcordes =
-  localStorage.getItem('proximosAcordes') == 'true' ? true : false
-vista.value.media = localStorage.getItem('media') == 'true' ? true : false
-vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
+
+onMounted(() => {
+  vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
+  if (
+    vista.value.viendo == 'pentagrama' &&
+    appStore.cancion.pentagramas.length == 0
+  ) {
+    vista.value.viendo = 'acordes'
+  }
+  vista.value.secuencia =
+    localStorage.getItem('secuencia') == 'true' ? true : false
+  vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
+  vista.value.proximosAcordes =
+    localStorage.getItem('proximosAcordes') == 'true' ? true : false
+  vista.value.media = localStorage.getItem('media') == 'true' ? true : false
+  vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
+})
 
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
@@ -109,9 +119,19 @@ function estiloVistaSecundaria() {
   }
   return `width: ${100 - ancho}%;`
 }
-const refEditSize = ref(false)
-function editarPantalla() {
-  refEditSize.value = true
+const refEditandoVista = ref(false)
+function ajustarVista() {
+  refEditandoVista.value = true
+}
+
+const refSincronizandoMedios = ref(false)
+function clickSincronizarMedios() {
+  // Lógica para sincronizar medios
+  refSincronizandoMedios.value = true
+}
+
+function clickCerrarMedios() {
+  refSincronizandoMedios.value = false
 }
 
 const router = useRouter()
@@ -128,7 +148,7 @@ function clickEditar() {
 }
 
 function cerrareditarPantalla() {
-  refEditSize.value = false
+  refEditandoVista.value = false
 }
 function cambioestado(estado: number) {
   console.log('Cambio de estado en tocar.vue', estado)
@@ -139,9 +159,13 @@ function cambioestado(estado: number) {
 <template>
   <div class="tocar-fluid">
     <editVista
-      v-if="refEditSize"
-      @cerrarEditSize="cerrareditarPantalla"
+      v-if="refEditandoVista"
+      @cerrar="cerrareditarPantalla"
     ></editVista>
+    <sincronizarMedias
+      v-if="refSincronizandoMedios"
+      @cerrar="clickCerrarMedios"
+    ></sincronizarMedias>
 
     <div
       class="pantallaPlay"
@@ -224,7 +248,10 @@ function cambioestado(estado: number) {
           <li v-on:click="cambiarVista('soloacordes')">
             <a class="dropdown-item" href="#">Solo Acordes</a>
           </li>
-          <li v-on:click="cambiarVista('pentagrama')">
+          <li
+            v-on:click="cambiarVista('pentagrama')"
+            v-if="appStore.cancion.pentagramas.length > 0"
+          >
             <a class="dropdown-item" href="#">Pentagrama</a>
           </li>
           <li><hr class="dropdown-divider" /></li>
@@ -242,6 +269,12 @@ function cambioestado(estado: number) {
               Midi</a
             >
           </li>
+
+          <li v-on:click="clickSincronizarMedios()">
+            <a class="dropdown-item" href="#"> Sincronizacion Medios</a>
+          </li>
+
+          <li><hr class="dropdown-divider" /></li>
           <li v-on:click="clickSecuencia()">
             <a class="dropdown-item" href="#">
               <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
@@ -257,13 +290,13 @@ function cambioestado(estado: number) {
           <li v-on:click="clickAcordes()">
             <a class="dropdown-item" href="#">
               <i class="bi bi-check-circle" v-if="vista.proximosAcordes"></i>
-              Proximos Acordes</a
+              Instrucciones al musico</a
             >
           </li>
 
           <li><hr class="dropdown-divider" /></li>
-          <li v-on:click="editarPantalla()">
-            <a class="dropdown-item" href="#"> Ajustar Tamaños</a>
+          <li v-on:click="ajustarVista()">
+            <a class="dropdown-item" href="#"> Ajustar Vista</a>
           </li>
 
           <li><hr class="dropdown-divider" /></li>

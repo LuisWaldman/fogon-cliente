@@ -2,19 +2,48 @@
 import { onMounted } from 'vue'
 import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
+import { useRouter } from 'vue-router'
 
 const appStore = useAppStore()
-
 onMounted(() => {
-  appStore.aplicacion.onMounted()
+  const urlParams = new URLSearchParams(window.location.search)
+  const cancionUrl = urlParams.get('cancion')
+  // Redirect from fogon.ar to www.fogon.ar with the same parameters
+  const currentHost = window.location.hostname
+  const currentPath = window.location.pathname
+  const fullParams = window.location.search
+
+  if (currentHost === 'fogon.ar') {
+    // Redirect to www.fogon.ar preserving path and query parameters
+    window.location.href = `https://www.fogon.ar${currentPath}${fullParams}`
+    return
+  } else if (currentPath !== '/' && !cancionUrl) {
+    // If we're on any route other than root and there's no cancion parameter,
+    // redirect to the root
+    //window.location.href = '/'
+    //return
+  }
+
+  const router = useRouter()
+  console.log('Router en App.vue', router)
+  appStore.aplicacion.setRouter(router)
+  appStore.aplicacion.onMounted(cancionUrl)
 })
 </script>
 
 <template>
   <div id="contenedor-musical" class="pantalla">
     <Cabecera />
-
-    <router-view />
+    <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
+      <img
+        src="/img/iconogrande.png"
+        style="width: 300px; height: auto"
+        class="logo vue"
+        alt="Vue logo"
+      />
+      <div>{{ appStore.estadosApp.texto }}</div>
+    </div>
+    <router-view v-if="appStore.estadosApp.estado === 'ok'" />
   </div>
 </template>
 

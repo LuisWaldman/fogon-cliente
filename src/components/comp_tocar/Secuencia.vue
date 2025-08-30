@@ -1,22 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
+import { ResumenSecuencia } from '../../modelo/cancion/ResumenSecuencia'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
 
-const mostrandoParte = ref(-1)
-const mostrandoCompasparte = ref(-1)
-const currentCompas = ref(0)
+const resumenSecuencia = ref<ResumenSecuencia>(
+  ResumenSecuencia.GetResumen(props.cancion),
+)
 
-const secuResu = ref([] as number[])
-const reperesu = ref([] as number[])
+function Actualizar(cancion: Cancion) {
+  resumenSecuencia.value = ResumenSecuencia.GetResumen(cancion)
+}
 
-const mostrandoResumenParteIndex = ref(-1)
-const mostrandoResumenParte = ref(-1)
+onMounted(() => {
+  Actualizar(props.cancion)
+})
 
 watch(
   () => props.cancion,
@@ -25,67 +28,20 @@ watch(
   },
 )
 
-function Actualizar(cancion: Cancion) {
-  let newresu: number[] = []
-  let newpartesresu: number[] = []
-  let metiendo = -1
-  cancion.acordes.ordenPartes.forEach((element) => {
-    if (metiendo != element) {
-      newresu.push(element)
-      newpartesresu.push(1)
-      metiendo = element
-    } else {
-      newpartesresu[newpartesresu.length - 1] += 1
-    }
-  })
-  secuResu.value = newresu
-  reperesu.value = newpartesresu
-}
-
 watch(
   () => props.compas,
   (newCompas) => {
-    let totalCompases = 0
-    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
-      let compasesxparte =
-        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
-          .acordes.length
-      if (newCompas < totalCompases + compasesxparte) {
-        mostrandoParte.value = i
-        mostrandoCompasparte.value = newCompas - totalCompases
-        break
-      }
-      totalCompases += compasesxparte
-    }
-    currentCompas.value = newCompas
-    calcularresumenparte()
+    resumenSecuencia.value?.ActualizarCompas(newCompas)
   },
 )
 
-function calcularresumenparte() {
-  if (reperesu.value.length == 0) {
-    return
-  }
-
-  let cont = reperesu.value[0]
-  let i = 0
-  while (cont <= mostrandoParte.value) {
-    i++
-    cont += reperesu.value[i]
-  }
-
-  mostrandoResumenParteIndex.value = i
-  mostrandoResumenParte.value =
-    reperesu.value[i] - (cont - mostrandoParte.value)
-}
 let actualizadoAsk = false
 function Actualizado() {
-  if (reperesu.value.length == 0) {
-    if (actualizadoAsk) {
-      actualizadoAsk = true
-      Actualizar(props.cancion)
-    }
+  if (actualizadoAsk) {
+    actualizadoAsk = true
+    Actualizar(props.cancion)
   }
+
   return false
 }
 
@@ -96,41 +52,43 @@ Actualizar(props.cancion)
   <div v-if="Actualizado()" @click="Actualizar(props.cancion)">
     .. No cargada ..
   </div>
-  <div v-if="reperesu.length > 0">
-    <div style="display: flex; flex-wrap: wrap">
-      <div v-for="(parte, index) in secuResu" :key="index" class="secuencia">
-        <div>
-          <span
-            style="color: #a9a8f6; font-size: small"
-            :class="{
-              compas_actual: mostrandoResumenParteIndex === index,
-            }"
-            >{{ cancion.acordes.partes[parte].nombre }}</span
-          >
+
+  <div style="display: flex; flex-wrap: wrap">
+    <div
+      v-for="(parte, index) in resumenSecuencia.resumenPartes"
+      :key="index"
+      class="secuencia"
+    >
+      <div>
+        <span
+          style="color: #a9a8f6; font-size: small"
+          :class="{
+            compas_actual: resumenSecuencia.parte === index,
+          }"
+          >{{ cancion.acordes.partes[parte.parteId].nombre }}</span
+        >
+
+        <div class="repeticion" v-if="parte.cantPartes > 1">
+          <span v-if="resumenSecuencia.parte === index"
+            >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /
+            {{ parte.cantPartes }}</span
+          ><span v-else>&nbsp; x {{ parte.cantPartes }}</span>
         </div>
-        <div class="ordendiv">
-          <span
-            class="acordeSecuencia"
-            v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte]
-              .acordes"
-            :key="acordeIndex"
-            :class="{
-              acordeSeleccionado:
-                mostrandoCompasparte === acordeIndex &&
-                mostrandoResumenParteIndex === index,
-            }"
-          >
-            {{ acorde }}
-          </span>
-        </div>
-        <div class="repeticion" v-if="reperesu[index] > 1">
-          <span v-if="mostrandoResumenParteIndex != index"
-            >x {{ reperesu[index] }}</span
-          >
-          <span v-if="mostrandoResumenParteIndex == index"
-            >{{ mostrandoResumenParte + 1 }} / {{ reperesu[index] }}</span
-          >
-        </div>
+      </div>
+      <div class="ordendiv">
+        <span
+          class="acordeSecuencia"
+          v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte.parteId]
+            .acordes"
+          :key="acordeIndex"
+          :class="{
+            acordeSeleccionado:
+              resumenSecuencia.compasdeparte === acordeIndex &&
+              resumenSecuencia.parte === index,
+          }"
+        >
+          {{ acorde }}
+        </span>
       </div>
     </div>
   </div>

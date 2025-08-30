@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import { Renderer } from 'vexflow'
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { Cancion } from '../../modelo/cancion/cancion'
@@ -7,29 +7,69 @@ import { Cancion } from '../../modelo/cancion/cancion'
 const props = defineProps<{
   renglon: DisplaySistemaPentagrama
   cancion: Cancion
+  compas: number
 }>()
 
 const scoreContainer = ref<HTMLDivElement | null>(null)
 
-onMounted(() => {
+watch(
+  () => props.renglon,
+  () => {
+    Dibujar()
+  },
+)
+
+watch(
+  () => props.compas,
+  () => {
+    Dibujar()
+  },
+)
+
+const anchoPrimerStave = 100
+const anchoCompasStave = 200
+function Dibujar() {
   if (!scoreContainer.value) return
 
+  // Limpiar completamente el contenedor antes de crear el nuevo renderer
+  scoreContainer.value.innerHTML = ''
+
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  renderer.resize(900, 100)
+  const ancho = props.renglon.pentagramas.length * 100
+  renderer.resize(900, ancho)
   const context = renderer.getContext()
 
   // Establecer los colores ANTES de crear y dibujar el pentagrama
   context.setFillStyle('#a9a8f6')
   context.setStrokeStyle('#a9a8f6')
 
+  let x = 0
   for (const pentagrama of props.renglon.pentagramas) {
-    pentagrama.getStave(context)
+    pentagrama.getStave(context, props.cancion, x, props.compas)
+    x += 100 // Incrementar x para la siguiente posición
   }
+}
+
+const emit = defineEmits(['clickCompas'])
+function handleClick(event: MouseEvent) {
+  const compas = Math.floor(
+    (event.offsetX - anchoPrimerStave) / anchoCompasStave,
+  )
+  emit(
+    'clickCompas',
+    props.renglon.pentagramas[0].compases[0].nroCompas + compas,
+  )
+}
+
+onMounted(() => {
+  Dibujar()
 })
+
+defineExpose({ Dibujar })
 </script>
 <template>
   <div>
-    <div ref="scoreContainer" class="score"></div>
+    <div ref="scoreContainer" @click="handleClick" class="score"></div>
   </div>
 </template>
 

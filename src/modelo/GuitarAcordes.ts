@@ -1,27 +1,11 @@
-export class ChordNote {
-  string: number
-  fret: number | 'x'
-  label?: string
-
-  constructor(string: number, fret: number | 'x', label?: string) {
-    this.string = string
-    this.fret = fret
-    this.label = label
-  }
-}
-
 export class AcordesGuitarra {
-  position?: number
-  barres?: { fromString: number; toString: number; fret: number }[]
-  chord: (string | number)[][]
-  constructor(
-    chord: (string | number)[][],
-    position?: number,
-    barres?: { fromString: number; toString: number; fret: number }[],
-  ) {
-    this.chord = chord
-    this.position = position
-    this.barres = barres
+  cejilla?: number
+  cuerda: string[] = []
+  acorde: string = ''
+  constructor(acorde: string, cejilla?: number, notas: string[] = []) {
+    this.acorde = acorde
+    this.cejilla = cejilla
+    this.cuerda = notas
   }
 }
 
@@ -32,44 +16,35 @@ export class AcordesGuitarraHelper {
    */
   static getAcorde(chordStr: string): AcordesGuitarra {
     console.log('getAcorde', chordStr)
-    const partes: (string | number)[][] = [
-      [1, 0],
-      [2, 0],
-      [3, 0],
-      [4, 0], // fret 0 = open string
-      [5, 0], // fret x = muted string
-      [6, 0],
-    ]
-
-    const position: number = 0
-    const barres: { fromString: number; toString: number; fret: number }[] = []
+    const cuerda: string[] = ['0', '0', '0', '0', '0', '0']
+    const cejilla: number = 0
 
     if (chordStr === 'B7') {
-      partes[0] = [1, 3]
-      partes[2] = [3, 3]
-      partes[3] = [4, 2]
-      partes[4] = [5, 3]
-      partes[5] = [6, 'x']
+      cuerda[0] = '2'
+      cuerda[2] = '2'
+      cuerda[3] = '1'
+      cuerda[4] = '2'
+      cuerda[5] = 'x'
     }
     if (chordStr === 'G') {
-      partes[0] = [1, 3]
-      partes[4] = [5, 2]
-      partes[5] = [6, 3]
+      cuerda[0] = '3'
+      cuerda[4] = '2'
+      cuerda[5] = '3'
     }
     if (chordStr === 'C') {
-      partes[1] = [2, 1]
-      partes[3] = [4, 2]
-      partes[4] = [5, 3]
-      partes[5] = [6, 'x']
+      cuerda[1] = '1'
+      cuerda[3] = '2'
+      cuerda[4] = '3'
+      cuerda[5] = 'x'
     }
     if (chordStr === 'E') {
-      partes[3] = [4, 2]
-      partes[4] = [5, 2]
+      cuerda[3] = '2'
+      cuerda[4] = '2'
     }
     if (chordStr === 'Em') {
-      partes[3] = [4, 2]
-      partes[4] = [5, 2]
+      cuerda[3] = '2'
+      cuerda[4] = '2'
     }
-    return new AcordesGuitarra(partes, position, barres)
+    return new AcordesGuitarra(chordStr, cejilla, cuerda)
   }
 }

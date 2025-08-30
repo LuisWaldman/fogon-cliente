@@ -1,5 +1,4 @@
 import type { Midi } from '@tonejs/midi'
-import type { Cancion } from '../cancion/cancion'
 import { Pentagrama } from '../cancion/pentagrama'
 import { MidiSecuencia } from './MidiSecuencia'
 import { NotaMidi } from './NotaMidi'
@@ -9,30 +8,71 @@ import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { PentagramaNotas } from '../cancion/pentagramanotas'
 
 export class MidiHelper {
-  public GetSecuencia(cancion: Cancion): MidiSecuencia {
+  public parteCompas = 0
+  public GetSecuencia(pentagrama: Pentagrama, bpm: number): MidiSecuencia {
     const secuencia = new MidiSecuencia()
-    secuencia.bpm = cancion.bpm ? cancion.bpm : 40
-    const pentagramas = cancion.pentagramas
-    if (pentagramas.length === 0) {
-      return secuencia
-    }
-
-    const pentagrama = pentagramas[0]
+    secuencia.bpm = bpm ? bpm : 40
+    const esBateria = pentagrama.instrumento
+      .toLocaleLowerCase()
+      .includes('bater')
+    const mapeoBateriaDesde = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
+    const mapeoBateriaHasta = [
+      'C1',
+      'E4',
+      'A#3',
+      'C#3',
+      'D#3',
+      'G#3',
+      'C5',
+      'F5',
+    ]
     for (let i = 0; i < pentagrama.compases.length; i++) {
-      for (const nota of pentagrama.compases[i].notas) {
-        let cuartoTiempo = 0
-        const divisorCuarto = 0
-        for (const notam in nota) {
-          const tiempo = `${i}:${cuartoTiempo}:${divisorCuarto}`
-          secuencia.notas.push(
-            new NotaMidi(nota[notam].nota, nota[notam].duracionMidi(), tiempo),
-          )
+      this.parteCompas = 0
+      for (const nota of pentagrama.compases[i].notas as PentagramaNotas[][]) {
+        for (const notaItem of nota as PentagramaNotas[]) {
+          if (!notaItem.duracion.includes('r')) {
+            const tiempo = this.GetTiempoMidi(i)
+
+            let nota = notaItem.nota
+            if (esBateria) {
+              if (mapeoBateriaDesde.indexOf(nota) !== -1) {
+                nota = mapeoBateriaHasta[mapeoBateriaDesde.indexOf(nota)]
+              }
+            }
+            secuencia.notas.push(
+              new NotaMidi(
+                nota,
+                PentagramaNotas.duracionMidi(notaItem.duracion),
+                tiempo,
+              ),
+            )
+          }
         }
-        cuartoTiempo++
+        this.ActualizarTiempos(nota)
       }
     }
     return secuencia
   }
+  GetTiempoMidi(compas: number): string {
+    const cuarto = Math.floor(this.parteCompas * 4)
+    const divisor = Math.round((this.parteCompas * 4 - cuarto) * 4)
+    return `${compas}:${cuarto}:${divisor}`
+  }
+  DuracionEnCompas(duracion: string): number {
+    const base = parseInt(duracion)
+    const tienePuntillo = duracion.includes('.')
+    let fraccion = 1 / base
+    if (tienePuntillo) fraccion *= 1.5
+    return fraccion
+  }
+  ActualizarTiempos(notas: PentagramaNotas[]) {
+    if (notas.length === 0) return
+
+    const duraciones = notas.map((n) => this.DuracionEnCompas(n.duracion))
+    const minima = Math.min(...duraciones)
+    this.parteCompas += minima
+  }
+
   private ppq = 0
   public MidiToPentagramas(midi: Midi): Pentagrama[] {
     const pentagramas: Pentagrama[] = []

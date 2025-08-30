@@ -5,6 +5,7 @@ import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
 import { useAppStore } from '../../stores/appStore'
 import { MidiHelper } from '../../modelo/midi/MidiHelper'
+import { Tiempo } from '../../modelo/tiempo'
 
 const props = defineProps<{
   compas: number
@@ -13,40 +14,59 @@ const props = defineProps<{
 
 let midiPlayer = new MidiPlayer()
 const midiCargado = ref(false)
+const mediaVista = new MediaVista('MIDI')
+const refTiempo = ref(0)
+mediaVista.setGetTiempoDesdeInicio(() => {
+  const time = midiPlayer.getCurrentTime()
+  refTiempo.value = time
+  return time
+})
+
+function cargarCancion() {
+  const helper = new MidiHelper()
+  midiPlayer.borrarSequence()
+  const bpm = props.cancion.bpm ? props.cancion.bpm : 40
+  for (let i = 0; i < props.cancion.pentagramas.length; i++) {
+    if (
+      InstrumentosSelecconados.value.indexOf(
+        props.cancion.pentagramas[i].instrumento,
+      ) < 0
+    ) {
+      continue
+    }
+    const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
+    midiPlayer.loadSequence(props.cancion.pentagramas[i].instrumento, secuencia)
+  }
+}
+const todosInstrumentos = ref<string[]>([])
+const InstrumentosSelecconados = ref<string[]>([])
+function clickInstrumentos(instrumento: string) {
+  const index = InstrumentosSelecconados.value.indexOf(instrumento)
+  if (index >= 0) {
+    InstrumentosSelecconados.value.splice(index, 1)
+  } else {
+    InstrumentosSelecconados.value.push(instrumento)
+  }
+  cargarCancion()
+}
 function iniciar() {
-  //appStore.midiPlayer.setInstrument
   if (midiCargado.value) {
     midiCargado.value = false
     return
   }
   console.log('Cargar')
   midiPlayer = new MidiPlayer()
-  fetch('InstrumentosMIDI/piano.json')
-    .then((response) => response.json())
-    .then((samples) => {
-      midiPlayer.setInstrument(samples)
-      midiPlayer.initialize()
-      midiCargado.value = true
-    })
-    .catch((error) => {
-      console.error('Error loading samples:', error)
-    })
-  console.log('Iniciar')
+  todosInstrumentos.value = [
+    ...new Set(props.cancion.pentagramas.map((p) => p.instrumento)),
+  ]
+  InstrumentosSelecconados.value = [...todosInstrumentos.value]
+  midiPlayer.cargarInstrumentos(todosInstrumentos.value).then(() => {
+    midiCargado.value = true
+    console.log('Instrumentos cargados')
+    cargarCancion()
+  })
 }
 
-function cargarCancion() {
-  if (!midiCargado.value) {
-    return
-  }
-  const helper = new MidiHelper()
-  midiPlayer.loadSequence(helper.GetSecuencia(props.cancion))
-}
-
-const mediaVista = new MediaVista()
-mediaVista.setGetTiempoDesdeInicio(() => {
-  const time = midiPlayer.getCurrentTime()
-  return time
-})
 mediaVista.setIniciar(() => {
   play()
 })
@@ -56,12 +76,14 @@ mediaVista.setPausar(() => {
 
 onUnmounted(() => {
   const appStore = useAppStore()
-  appStore.aplicacion.quitarMediaVista()
+  appStore.aplicacion.quitarMediaVista(mediaVista)
 })
 
 onMounted(() => {
   const appStore = useAppStore()
   appStore.aplicacion.setMediaVista(mediaVista)
+  iniciar()
+  cargarCancion()
 })
 
 function play() {
@@ -77,11 +99,37 @@ function stop() {
   }
   midiPlayer.stop()
 }
+
+const tiempo = new Tiempo()
 </script>
 <template>
-  <span @click="iniciar" v-if="!midiCargado">[INICIAR MIDI]</span>
-  <span @click="cargarCancion" v-if="midiCargado">[CARGAR CANCIÓN]</span>
-  <span @click="play" v-if="midiCargado">[PLAY]</span>
-  <span @click="stop" v-if="midiCargado">[PAUSA]</span>
-  Pentagramas : {{ props.cancion.pentagramas.length }}
+  <div>
+    <span @click="play">[PLAY]</span>
+    <span @click="stop">[PAUSA]</span>
+    {{ tiempo.formatSegundos(refTiempo / 1000) }}
+  </div>
+  <div style="display: flex">
+    <div
+      v-for="instrumento in todosInstrumentos"
+      :key="instrumento"
+      class="instrumento"
+      :class="{ seleccionado: InstrumentosSelecconados.includes(instrumento) }"
+      @click="clickInstrumentos(instrumento)"
+    >
+      {{ instrumento }}
+    </div>
+    <div></div>
+  </div>
 </template>
+<style scoped>
+.seleccionado {
+  border: 1px solid;
+  background-color: lightcyan;
+  color: black;
+}
+.instrumento {
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid;
+}
+</style>

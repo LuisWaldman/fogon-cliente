@@ -34,6 +34,10 @@ interface ClientToServerEvents {
 
 export class ClienteSocket {
   private socket!: Socket<ServerToClientEvents, ClientToServerEvents>
+  public reintentos: number = 3
+  public intentosRealizados: number = 0
+  public maxIntentos: number = 3
+  private reconectando: boolean = false
 
   private loginSuccessHandler?: () => void
   public setLoginSuccessHandler(handler: () => void): void {
@@ -129,29 +133,66 @@ export class ClienteSocket {
   }
   public disconnect(): void {
     if (this.socket) {
+      this.reconectando = false
+      this.intentosRealizados = 0
       this.socket.disconnect()
       console.log('socket disconnected manually')
     }
   }
 
   public connectar(): void {
+    // Resetear contador de intentos
+    this.intentosRealizados = 0
+    this.reconectando = false
+
     const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io(
       this.urlserver,
       {
-        autoConnect: true,
         rejectUnauthorized: false,
         transports: ['websocket'],
+        reconnectionAttempts: this.reintentos,
+        reconnectionDelay: 1000, // Delay entre intentos
+        reconnectionDelayMax: 5000, // Máximo delay
+        timeout: 10000, // Timeout de conexión
       },
     )
 
     socket.on('connect', () => {
       console.log('socket connected')
+      this.intentosRealizados = 0 // Resetear en conexión exitosa
+      this.reconectando = false
       this.conexionStatusHandler?.('conectado')
+    })
+
+    socket.on('connect_error', (error) => {
+      this.intentosRealizados++
+      console.error(
+        `Connection error (attempt ${this.intentosRealizados}/${this.maxIntentos}):`,
+        error.message,
+      )
+
+      if (this.intentosRealizados >= this.maxIntentos) {
+        console.log('Máximo número de intentos alcanzado, desconectando...')
+        socket.disconnect()
+        this.conexionStatusHandler?.('error')
+      } else {
+        this.conexionStatusHandler?.('error')
+      }
     })
 
     socket.on('disconnect', (reason) => {
       console.log('socket disconnected:', reason)
+
+      // Si fue desconexión manual, no intentar reconectar
+      if (reason === 'io client disconnect') {
+        this.reconectando = false
+      }
+
       this.conexionStatusHandler?.('desconectado')
+    })
+    socket.on('conectado', (data: { token: string }) => {
+      console.log('conectado received with token:', data.token)
+      this.conectadoHandler?.(data.token)
     })
 
     socket.on('cancionActualizada', () => {
@@ -174,11 +215,6 @@ export class ClienteSocket {
     socket.on('loginSuccess', () => {
       console.log('loginSuccess received')
       this.loginSuccessHandler?.()
-    })
-
-    socket.on('conectado', (data: { token: string }) => {
-      console.log('conectado received with token:', data.token)
-      this.conectadoHandler?.(data.token)
     })
 
     socket.on('loginFailed', (error: string) => {
@@ -258,5 +294,15 @@ export class ClienteSocket {
 
   public gettime(): void {
     this.socket.emit('gettime')
+  }
+
+  // Método para verificar si está intentando reconectar
+  public isReconnecting(): boolean {
+    return this.reconectando
+  }
+
+  // Método para obtener el número de intentos realizados
+  public getIntentosRealizados(): number {
+    return this.intentosRealizados
   }
 }

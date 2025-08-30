@@ -4,9 +4,9 @@ import { EstiloAcorde } from './estiloAcorde'
 describe('Estilo acordes', () => {
   it('Devuelve tiempos Ok', () => {
     const estilo1 = new EstiloAcorde(1, 1)
-    expect(estilo1.GetDuracionPentagrama()).toBe('h')
+    expect(estilo1.GetDuracionPentagrama()).toBe('2')
     const estilo2 = new EstiloAcorde(2, 1)
-    expect(estilo2.GetDuracionPentagrama()).toBe('q')
+    expect(estilo2.GetDuracionPentagrama()).toBe('4')
     const estilo3 = new EstiloAcorde(3, 1)
     expect(estilo3.GetDuracionPentagrama()).toBe('8')
     const estilo4 = new EstiloAcorde(4, 1)

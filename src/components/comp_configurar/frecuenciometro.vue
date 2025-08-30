@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { ref, watch } from 'vue'
+import { watch } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 
 const emit = defineEmits(['verfrecuencia'])
-const mostrandoNota = ref<number>(0)
 
 const props = defineProps<{
   notasSonido: NotaSonido[]
   frecuencia: number
   ancho: number
+  mostrandoNota: number
 }>()
 // Watch for changes in tipoAfinacion and cantidadNotas to recalculate notes
 
@@ -16,12 +16,9 @@ watch(
   () => props.frecuencia,
   (newFrecuencia) => {
     if (newFrecuencia > 0) {
-      const index = CorrespondeNota(newFrecuencia)
-      mostrandoNota.value = index
-
       const contenedor = document.getElementById('contenedorFrecuenciometro')
       if (contenedor) {
-        let scroll = index * 50 - 300
+        let scroll = props.mostrandoNota * 50 - 300
         if (scroll < 0) scroll = 0
         contenedor.scrollLeft = scroll // Ajusta el desplazamiento horizontal
       }
@@ -33,7 +30,6 @@ function clickVerFrecuencia(frecuencia: NotaSonido) {
   emit('verfrecuencia', frecuencia)
 }
 
-mostrandoNota.value = CorrespondeNota(props.frecuencia)
 function StyleNotaLinea(frecuencia: NotaSonido) {
   let fontSize = 18
   let backgroundColor = 'white'
@@ -57,25 +53,6 @@ function StyleNotaLinea(frecuencia: NotaSonido) {
     'padding-top': '-12px',
   }
 }
-
-function CorrespondeNota(frecuencia: number): number {
-  const FrecuenciaNotas = props.notasSonido.map((nota) => nota.frecuencia)
-  for (let i = 0; i < FrecuenciaNotas.length; i++) {
-    if (frecuencia < FrecuenciaNotas[i]) {
-      if (i == 0) {
-        return i
-      }
-      if (
-        Math.abs(frecuencia - FrecuenciaNotas[i - 1]) <
-        Math.abs(frecuencia - FrecuenciaNotas[i])
-      ) {
-        return i - 1
-      }
-      return i
-    }
-  }
-  return 0
-}
 </script>
 <template>
   <div class="clsFrecuencia" id="contenedorFrecuenciometro">
@@ -85,7 +62,7 @@ function CorrespondeNota(frecuencia: number): number {
       :key="index"
       :style="StyleNotaLinea(nota)"
       :class="{
-        notaMostrada: mostrandoNota === index,
+        notaMostrada: props.mostrandoNota === index,
         clsNota: true,
       }"
     >

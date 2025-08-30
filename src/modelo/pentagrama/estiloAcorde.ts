@@ -2,27 +2,72 @@ import { MusicaHelper } from '../cancion/MusicaHelper'
 import { PentagramaNotas } from '../cancion/pentagramanotas'
 
 export class EstiloAcorde {
-  GetNotas(acorde: string): PentagramaNotas[] {
+  GetNotas(
+    acorde: string,
+    octava: number,
+    esBateria: boolean,
+  ): PentagramaNotas[] {
     let acoPost = acorde
+    if (esBateria) return this.GetNotasBateria()
 
     if (acorde.includes(' ')) {
       acoPost = acorde.split(' ')[0]
     }
     const musica = new MusicaHelper()
-    return musica.GetNotasdeacorde(acoPost, 4).map((nota) => {
-      return new PentagramaNotas(nota, this.GetDuracionPentagrama())
-    })
+    const notas = musica.GetEscalaDelAcorde(acoPost)
+    const toRet: PentagramaNotas[] = []
+    for (let i = 0; i < this.tiposNota.length; i++) {
+      if (notas[i] && this.tiposNota[i] === 'o') {
+        toRet.push(
+          new PentagramaNotas(
+            notas[i] + octava.toString(),
+            this.GetDuracionPentagrama(),
+          ),
+        )
+      }
+    }
+    if (toRet.length === 0) {
+      toRet.push(new PentagramaNotas('C4', this.GetDuracionPentagrama() + 'r'))
+    }
+    return toRet
+  }
+  GetNotasBateria(): PentagramaNotas[] {
+    const notasBateria: string[] = [
+      'D4',
+      'F4',
+      'A4',
+      'C5',
+      'E5',
+      'G5',
+      'A5',
+      'C6',
+    ]
+    const toRet: PentagramaNotas[] = []
+    for (let i = 0; i < this.tiposNota.length; i++) {
+      if (this.tiposNota[i] === 'o') {
+        toRet.push(
+          new PentagramaNotas(notasBateria[i], this.GetDuracionPentagrama()),
+        )
+      }
+    }
+    if (toRet.length === 0) {
+      toRet.push(new PentagramaNotas('C4', this.GetDuracionPentagrama() + 'r'))
+    }
+    return toRet
   }
   GetDuracionPentagrama(): string {
-    const duracionesVexFlow = ['w', 'h', 'q', '8', '16', '32', '64']
-    return duracionesVexFlow[this.duracionId] || 'q'
+    const duracionesVexFlow = ['1', '2', '4', '8', '16', '32', '64']
+    return duracionesVexFlow[this.duracionId] || '4'
   }
   public duracionId: number
-  public TipoId: number
+  public tiposNota: string[]
 
-  public constructor(duracionId: number, TipoId: number) {
+  public constructor(duracionId: number, cantNotas: number) {
     this.duracionId = duracionId
-    this.TipoId = TipoId
+    this.tiposNota = new Array(cantNotas).fill('')
+  }
+  public CambiarTipoNota(indice: number): void {
+    this.tiposNota[indice] = this.tiposNota[indice] === 'x' ? 'o' : 'x'
   }
 
   private static duraciones: string[] = [

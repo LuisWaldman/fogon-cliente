@@ -9,11 +9,12 @@ import { Letra } from '../modelo/cancion/letra'
 import { Noticia } from '../modelo/noticia'
 import { Perfil } from '../modelo/perfil'
 import { Sesion } from '../modelo/sesion'
-
 import { SincroCancion } from '../modelo/sincro/SincroCancion'
 import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
 import type { UserSesion } from '../modelo/userSesion'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
+import { EstadosAplicacion } from '../EstadosAplicacion'
+import type { MediaVista } from '../modelo/reproduccion/MediaVista'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
@@ -32,7 +33,8 @@ export const useAppStore = defineStore('app', () => {
       new Letra([]),
     ),
   )
-
+  const MediaVisas = ref<MediaVista[]>([])
+  const estadosApp = ref<EstadosAplicacion>(new EstadosAplicacion())
   const editandocancion = ref<Cancion>(
     new Cancion(
       'nueva cancion',
@@ -81,10 +83,12 @@ export const useAppStore = defineStore('app', () => {
 
   const usuariosSesion = ref([] as UserSesion[])
   return {
+    estadosApp,
     usuariosSesion,
     aplicacion,
     origenCancion,
     origenEditando,
+    MediaVistas: MediaVisas,
     cancionModificada,
     cancion,
     editandocancion,

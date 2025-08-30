@@ -6,7 +6,7 @@ export class PentagramaNotas {
     this.duracion = duracion
   }
 
-  mapaDuraciones: Record<string, string> = {
+  static mapaDuraciones: Record<string, string> = {
     '1': '1n', // redonda
     '2': '2n', // blanca
     '4': '4n', // negra
@@ -21,7 +21,19 @@ export class PentagramaNotas {
     '8d': '8n.', // corchea con puntillo
     '16d': '16n.', // semicorchea con puntillo
   }
-  public duracionMidi(): string {
-    return this.mapaDuraciones[this.duracion] ?? '4n' // Valor por defecto si no se encuentra
+
+  static mapaDuracionRitmo: Record<string, number> = {
+    '1': 1, // redonda
+    '2': 2, // blanca
+    '4': 4, // negra
+    q: 4, // negra
+    '8': 8, // corchea
+    '16': 16, // semicorchea
+  }
+  public static duracionMidi(duracionId: string): string {
+    return this.mapaDuraciones[duracionId] ?? '4n' // Valor por defecto si no se encuentra
+  }
+  public static duracionRitmo(duracionId: string): number {
+    return this.mapaDuracionRitmo[duracionId] ?? 4 // Valor por defecto si no se encuentra
   }
 }

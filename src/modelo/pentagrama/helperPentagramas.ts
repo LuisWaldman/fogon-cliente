@@ -1,62 +1,69 @@
 import type { Cancion } from '../cancion/cancion'
 import { DisplayAcordesPentagrama } from './DisplayAcordesPentagrama'
 import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
-import { DisplayInstrumentoPentagrama } from './DisplayClavePentagrama'
-import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
 import { Pentagrama } from '../cancion/pentagrama'
 import { PentagramaCompas } from '../cancion/pentagramacompas'
 import { DisplayPentagrama } from './displayPentagrama'
 import { EstiloEditandoCompas } from './EstiloEditandoCompas'
+import { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
+import { DisplayModoPentagrama } from './displayModoPentagrama'
 
 export class HelperPentagramas {
   public creaPentagrama(
     cancion: Cancion,
     estiloAcorde: EstiloEditandoCompas,
+    octava: number,
+    esBateria: boolean,
   ): Pentagrama {
     const pentagrama = new Pentagrama()
-    pentagrama.instrumento = 'Piano-izq'
+    pentagrama.instrumento = '1'
     const acordes = cancion.acordes.GetTodosLosAcordes()
     for (const acorde of acordes) {
-      pentagrama.compases.push(estiloAcorde.GetCompas(acorde))
+      pentagrama.compases.push(
+        estiloAcorde.GetCompas(acorde, octava, esBateria),
+      )
     }
     return pentagrama
   }
-  public creaDisplayPentagrama(cancion: Cancion): DisplayPentagrama {
+  public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
+    const modos: DisplayModoPentagrama[] = []
+    const instumentos = [
+      ...new Set(cancion.pentagramas.map((p) => p.instrumento)),
+    ]
+    for (const pentagrama of instumentos) {
+      modos.push(new DisplayModoPentagrama(pentagrama, false))
+    }
+    return modos
+  }
+  public creaDisplayPentagrama(
+    cancion: Cancion,
+    modos: DisplayModoPentagrama[],
+  ): DisplayPentagrama {
     const display = new DisplayPentagrama()
     const pentagramas = cancion.pentagramas
     if (pentagramas.length === 0) {
       return display
     }
-    const pentagrama = pentagramas[0]
-    let nuevorenglon = new DisplaySistemaPentagrama()
-    nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
-    for (let i = 0; i < pentagrama.compases.length; i++) {
-      const compPenta = this.creaCompasPentagrama(pentagrama.compases[i])
-      nuevorenglon.pentagramas[0].acordes.push(compPenta)
-
-      if (i > 0 && (i + 1) % 4 === 0) {
-        display.renglones.push(nuevorenglon)
-        nuevorenglon = new DisplaySistemaPentagrama()
-        nuevorenglon.pentagramas.push(new DisplayInstrumentoPentagrama())
+    const instOk = modos.filter((m) => m.Ver).map((m) => m.Instrumento)
+    for (let conPenta = 0; conPenta < cancion.pentagramas.length; conPenta++) {
+      if (instOk.includes(cancion.pentagramas[conPenta].instrumento)) {
+        display.AgregarPartitura(cancion.pentagramas[conPenta])
       }
-    }
-    if (nuevorenglon.pentagramas[0].acordes.length > 0) {
-      display.renglones.push(nuevorenglon)
     }
     return display
   }
 
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
-  ): DisplayAcordesPentagrama {
-    const compas = new DisplayAcordesPentagrama()
-    compas.duracion = '1' // Default duration
+    nroCompas: number,
+  ): DisplayCompasPentagrama {
+    const compas = new DisplayCompasPentagrama(nroCompas)
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
+      const nuevoAcorde = new DisplayAcordesPentagrama()
       for (const nota of pentagramaCompas.notas[i]) {
-        compas.duracion = nota.duracion // Set duration based on the last note
-        console.log('ESTABLECE DURACION:', compas.duracion)
         let notaOk = nota.nota
         let octava = 4
+        nuevoAcorde.duracion = nota.duracion.toString()
 
         // Check if the note ends with a number
         const match = notaOk.match(/(\D+)(\d+)$/)
@@ -65,10 +72,9 @@ export class HelperPentagramas {
           notaOk = match[1]
           octava = parseInt(match[2])
         }
-
-        const notaPentagrama = new DisplayNotaPentagrama(notaOk, octava)
-        compas.Notas.push(notaPentagrama)
+        nuevoAcorde.Notas.push(new DisplayNotaPentagrama(notaOk, octava))
       }
+      compas.acordes.push(nuevoAcorde)
     }
     return compas
   }
