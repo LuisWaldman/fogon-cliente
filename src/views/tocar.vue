@@ -52,6 +52,7 @@ onMounted(() => {
   vista.value.media = localStorage.getItem('media') == 'true' ? true : false
   vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
 })
+
 function clickSecuencia() {
   vista.value.secuencia = !vista.value.secuencia
   localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')

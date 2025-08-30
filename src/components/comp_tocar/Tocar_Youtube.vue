@@ -68,6 +68,7 @@ onMounted(() => {
 const playerRef = ref<InstanceType<typeof YouTube> | null>(null)
 function onReady() {
   //playerRef.value?.playVideo();
+  console.log('Reproductor listo');
 }
 function onStateChange(event: { data: number }) {
   console.log('Estado del reproductor:', event.data)
@@ -78,7 +79,6 @@ function onStateChange(event: { data: number }) {
 <template>
   <div v-if="urlYoutube == ''">No hay media cargada para esta canción</div>
   <YouTube
-    v-if="shouldLoad"
     :src="urlYoutube"
     ref="playerRef"
     @ready="onReady"
