@@ -14,7 +14,7 @@ export class MidiPlayer {
   private instrument: Tone.Sampler
   private instrumentosManager: InstrumentosManager
   private part: Tone.Part | null = null
-  public duracion: string = ""
+  public duracion: string = ''
   constructor() {
     this.instrument = new Tone.Sampler().toDestination()
     this.instrumentosManager = InstrumentosManager.getInstance()

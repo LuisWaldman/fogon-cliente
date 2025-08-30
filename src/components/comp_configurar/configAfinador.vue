@@ -26,7 +26,7 @@ const audioContext = ref<AudioContext | null>(null)
 const analyserNode = ref<AnalyserNode | null>(null)
 const sourceNode = ref<MediaStreamAudioSourceNode | null>(null)
 const buffer = new Float32Array(2048)
-
+const viendoAfindado = ref('simple')
 const notas: string[] = [
   'A',
   'A#',
@@ -137,7 +137,10 @@ const detectFrequency = () => {
   frequency.value = autoCorrelate(buffer, audioContext.value!.sampleRate)
 
   if (frequency.value !== -1) {
-    console.log(`🎯 Frecuencia detectada: ${frequency.value.toFixed(2)} Hz`)
+    mostrandoNota.value = HelperSonidos.GetNotaDesdeFrecuenciaConNotasSonido(
+      frequency.value,
+      notasSonido.value,
+    )
   }
 
   requestAnimationFrame(detectFrequency)
@@ -215,7 +218,9 @@ onUnmounted(() => {
   DejarEscuchar()
 })
 
-function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
+const mostrandoNota = ref<number>(0)
+
+function formatFrequency(freq: number, totalDigits = 4, decimalPlaces = 2) {
   if (freq < 0) {
     freq = 0
   }
@@ -224,11 +229,114 @@ function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
   const paddedInt = intPart.padStart(totalDigits, '0') // Ej: "00012"
   return `${paddedInt},${decPart}` // Ej: "00012,43"
 }
+
+const mostrandoNotas = ref<number[]>([7, 12, 17, 22, 26, 31])
+const constNombre = ref<string[]>(['6ta', '5ta', '4ta', '3ra', '2da', '1ra'])
+function ajusteTexto(
+  frecuenciaIdeal: number,
+  frecuenciaActual: number,
+): string {
+  const diferencia = frecuenciaActual - frecuenciaIdeal
+  const porcentaje = Math.abs(diferencia / frecuenciaIdeal)
+
+  if (porcentaje < 0.01) {
+    return 'Ok'
+  }
+
+  if (diferencia > 0) {
+    if (porcentaje < 0.03) return 'Aflojar'
+    return 'Aflojar >>'
+  } else {
+    if (porcentaje < 0.03) return 'Tensar'
+    return 'Tensar >>'
+  }
+}
 </script>
 
 <template>
   <div :style="styleDivAfinador()" class="divAfinador" id="divAfinador">
-    <div style="display: flex">
+    <div class="dropdown dropdown-superior-derecha">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <i class="bi bi-eye"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li>
+          <a class="dropdown-item" href="#" @click="viendoAfindado = 'simple'"
+            >Simple</a
+          >
+          <a class="dropdown-item" href="#" @click="viendoAfindado = 'circulo'"
+            >Circulo</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div v-if="viendoAfindado === 'simple'">
+      <div style="display: flex">
+        <div class="contDatos">
+          <div>FRECUENCIA</div>
+          <div
+            style="
+              font-size: xx-large;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            "
+          >
+            {{ formatFrequency(frequency) }} Hz
+          </div>
+        </div>
+        <div v-if="notasSonido[mostrandoNota]" class="contDatos">
+          <div>Nota</div>
+          <div
+            style="
+              font-size: xx-large;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            "
+          >
+            {{ notasSonido[mostrandoNota].nota }}
+            {{ notasSonido[mostrandoNota].octava }}
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-for="(nota, index) in mostrandoNotas"
+        :key="index"
+        style="display: flex; height: 80px; border: 1px solid;|"
+      >
+        <div>
+          <div
+            style="font-size: xx-large; padding-left: 5px; padding-right: 5px"
+          >
+            {{ constNombre[index] }}
+          </div>
+
+          <div v-if="notasSonido[nota]">
+            <span style="font-size: x-large; margin-right: 10px"
+              >{{ notasSonido[nota].nota }}{{ notasSonido[nota].octava }} </span
+            >{{ notasSonido[nota].frecuencia.toFixed(2) }} Hz
+          </div>
+        </div>
+        <div>
+          <div
+            v-if="notasSonido[nota] && mostrandoNota == nota"
+            style="font-size: xx-large"
+          >
+            {{ ajusteTexto(notasSonido[nota].frecuencia, frequency) }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex" v-if="viendoAfindado === 'circulo'">
       <div>
         <div>FRECUENCIA</div>
         <div
@@ -242,14 +350,14 @@ function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
           {{ formatFrequency(frequency) }} Hz
         </div>
       </div>
-
       <frecuen
+        :mostrandoNota="mostrandoNota"
         :notasSonido="notasSonido"
         :frecuencia="frequency"
         :ancho="ancho"
       ></frecuen>
     </div>
-    <div style="display: flex">
+    <div style="display: flex" v-if="viendoAfindado === 'circulo'">
       <div>
         <div>
           <input
@@ -268,66 +376,6 @@ function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
             </option>
           </select>
         </div>
-
-        <!--
-        <div>Viendo: {{ refViendoFrecuencia.toFixed(0) }} Hz</div>
-        <div>
-          Afinacion
-          <input
-            type="number"
-            v-model="tipoAfinacion"
-            min="1"
-            max="999"
-            @focus="clickVerFrecuencia(tipoAfinacion)"
-          />
-          Hz Total de Notas:
-          <input type="number" v-model="cantidadNotas" min="1" max="24" />
-        </div>
-        <div>
-          Permisos Mic:
-          <span v-if="refMicEstado === 'granted'" @click="Solicitar">✔️</span>
-          <span
-            v-if="refMicEstado === 'granted' && !escuchando"
-            @click="Solicitar"
-            >[Escuchar]</span
-          >
-          <span v-if="escuchando" @click="DejarEscuchar"
-            >[Dejar de escuchar]</span
-          >
-
-          <span v-else-if="refMicEstado === 'denied'">❌</span>
-          <span v-else-if="refMicEstado === 'error'">⚠️</span>
-
-          <span v-else-if="refMicEstado === 'prompt'" @click="Solicitar"
-            >[SOLICITAR]</span
-          >
-          <span v-else>{{ refMicEstado }}</span>
-          <span>{{ frequency }}</span>
-        </div>
-        <div>
-          <div
-            v-for="nota in notasAfinar"
-            :key="nota.nombre"
-            :class="{ sonandoNota: Math.abs(frequency - nota.frecuencia) < 12 }"
-          >
-            {{ nota.nombre }} ({{ nota.nota }}) :
-            <span @click="clickVerFrecuencia(nota.frecuencia)">{{
-              nota.frecuencia
-            }}</span>
-            Hz
-
-            <div v-if="Math.abs(frequency - nota.frecuencia) < 12">
-              <div v-if="frequency < nota.frecuencia">
-                [TENSAR]{{ Math.abs(frequency - nota.frecuencia).toFixed(2) }}
-              </div>
-              <div v-else>
-                [DESTENSAR]{{
-                  Math.abs(frequency - nota.frecuencia).toFixed(2)
-                }}
-              </div>
-            </div>
-          </div>
-        </div>-->
       </div>
       <circulo
         :notasSonido="notasSonido"
@@ -339,6 +387,11 @@ function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
 </template>
 
 <style scoped>
+.contDatos {
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+}
 .sonandoNota {
   background-color: lightgreen;
   color: black;
@@ -347,6 +400,12 @@ function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
 .circulodiv {
   position: relative;
 }
+
+.dropdown-superior-derecha {
+  position: absolute;
+  left: 100%;
+}
+
 .viendoFrecuencia {
   background-color: rgb(133, 104, 202);
   color: white;
@@ -354,6 +413,7 @@ function formatFrequency(freq: number, totalDigits = 5, decimalPlaces = 2) {
   border: 1px solid black;
 }
 .divAfinador {
+  position: relative;
   width: 100%;
 }
 

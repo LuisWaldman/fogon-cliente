@@ -36,7 +36,6 @@ function cargarCancion() {
     }
     const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
     midiPlayer.loadSequence(props.cancion.pentagramas[i].instrumento, secuencia)
-    
   }
 }
 const todosInstrumentos = ref<string[]>([])
@@ -75,7 +74,6 @@ mediaVista.setPausar(() => {
   stop()
 })
 
-
 onUnmounted(() => {
   const appStore = useAppStore()
   appStore.aplicacion.quitarMediaVista()
@@ -108,7 +106,7 @@ const tiempo = new Tiempo()
   <div>
     <span @click="play">[PLAY]</span>
     <span @click="stop">[PAUSA]</span>
-      {{ tiempo.formatSegundos(refTiempo / 1000) }}
+    {{ tiempo.formatSegundos(refTiempo / 1000) }}
   </div>
   <div style="display: flex">
     <div
