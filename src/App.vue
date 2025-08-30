@@ -2,9 +2,9 @@
 import { onMounted } from 'vue'
 import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
+import { useRouter } from 'vue-router'
 
 const appStore = useAppStore()
-
 onMounted(() => {
   const urlParams = new URLSearchParams(window.location.search)
   const cancionUrl = urlParams.get('cancion')
@@ -23,6 +23,10 @@ onMounted(() => {
     window.location.href = '/'
     return
   }
+
+  const router = useRouter()
+  console.log('Router en App.vue', router)
+  appStore.aplicacion.setRouter(router)
   appStore.aplicacion.onMounted(cancionUrl)
 })
 </script>

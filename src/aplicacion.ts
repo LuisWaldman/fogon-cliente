@@ -15,6 +15,8 @@ import type { MediaVista } from './modelo/reproduccion/MediaVista'
 import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 import type { Servidor } from './modelo/servidor'
 import { IndiceHelper } from './modelo/indices/IndiceHelper'
+import type { Router } from 'vue-router'
+import router from './router'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -23,7 +25,11 @@ export default class Aplicacion {
   configuracion: Configuracion = Configuracion.getInstance()
   indiceHelper: IndiceHelper = IndiceHelper.getInstance()
   cliente: ClienteSocket | null = null
+  router: Router | null = null
   token: string = ''
+  public setRouter(router: Router) {
+    this.router = router
+  }
 
   constructor() {
     // Inicialización de la aplicación
@@ -95,6 +101,25 @@ export default class Aplicacion {
         this.reproductor.SetCancion(origen, cancion)
       })
   }
+
+  async ClickTocar(origen: OrigenCancion) {
+    const appStore = useAppStore()
+    appStore.estadosApp.paginaLista = ''
+    appStore.estadosApp.estado = 'cargando'
+    appStore.estadosApp.texto = 'Cargando cancion...'
+    const cancionObtenida = await CancionManager.getInstance().Get(origen)
+    if (cancionObtenida.pentagramas.length > 0) {
+      appStore.estadosApp.texto = 'Cargando Midis...'
+    } 
+
+      appStore.cancion = cancionObtenida
+      appStore.compas = 0
+      appStore.estadoReproduccion = 'pausado'
+      appStore.estadosApp.texto = 'Cancion Cargada'
+      appStore.estadosApp.estado = 'ok'
+      this.router?.push('/tocar')
+    
+  }
   updateCompas(compas: number) {
     this.reproductor.updateCompas(compas)
   }
@@ -141,15 +166,7 @@ export default class Aplicacion {
         // this.cliente = null
       }
       if (status === 'error') {
-        appStore.estado = 'desconectado'
         appStore.estadosApp.estadoconeccion = 'error'
-        appStore.estadosApp.texto =
-          'Error ' +
-          this.cliente?.intentosRealizados.toString() +
-          '/' +
-          this.cliente?.maxIntentos.toString() +
-          ' en  conexión con el servidor'
-        //this.cliente = null
       }
     })
     this.cliente.setConectadoHandler((token: string) => {

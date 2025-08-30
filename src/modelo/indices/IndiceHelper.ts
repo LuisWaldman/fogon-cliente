@@ -24,9 +24,10 @@ export class IndiceHelper {
     for (let i = 0; i < filtros.length; i++) {
       resultado = this.filtrarvectores(filtros[i], resultado)
     }
-    this.BusquedaCanciones = resultado.length > 30 ? resultado.slice(0, 30) : resultado
+    this.BusquedaCanciones =
+      resultado.length > 30 ? resultado.slice(0, 30) : resultado
     console.log('Busqueda Canciones', this.BusquedaCanciones)
-}
+  }
 
   public filtrarvectores(filtro: string, vector: ItemIndiceCancion[]) {
     return vector.filter(

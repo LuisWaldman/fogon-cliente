@@ -3,7 +3,6 @@ import { useAppStore } from '../stores/appStore'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import cancionComp from '../components/comp_home/cancion.vue'
-import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 
@@ -12,42 +11,46 @@ const appStore = useAppStore()
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
 refUltimasCanciones.value = ultimasCanciones.canciones
-const refResultadoCanciones = ref<ItemIndiceCancion[]>(appStore.aplicacion.indiceHelper.BusquedaCanciones)
+const refResultadoCanciones = ref<ItemIndiceCancion[]>(
+  appStore.aplicacion.indiceHelper.BusquedaCanciones,
+)
 const totalUltimas = ref(0)
 totalUltimas.value = ultimasCanciones.canciones.length
 const refEstadoBusqueda = ref('')
 const busqueda = ref('')
 
-
-const router = useRouter()
 function clickTocar(cancion: OrigenCancion) {
   // Redirect to edit page for the current song
-  appStore.aplicacion.SetCancion(cancion).then(() => {
-    router.push('/tocar')
-  })
+  appStore.aplicacion.ClickTocar(cancion)
 }
 
 function buscarCanciones() {
-
   refEstadoBusqueda.value = 'buscando...'
-  appStore.aplicacion.indiceHelper.Buscar(busqueda.value).then(() => {
-    refResultadoCanciones.value = appStore.aplicacion.indiceHelper.BusquedaCanciones
-    refEstadoBusqueda.value = ''
-  }).catch(() => {
-    refEstadoBusqueda.value = 'error'
-  })
+  appStore.aplicacion.indiceHelper
+    .Buscar(busqueda.value)
+    .then(() => {
+      refResultadoCanciones.value =
+        appStore.aplicacion.indiceHelper.BusquedaCanciones
+      refEstadoBusqueda.value = ''
+    })
+    .catch(() => {
+      refEstadoBusqueda.value = 'error'
+    })
 }
-
 </script>
 <template>
   <div class="home">
-    <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
-      Intentando conectar ...
-    </p>
-    <p class="primer-parrafo" v-if="appStore.estado === 'conectando'">
-      Revisa los servidores en configuracion y conectate a un fogon
-    </p>
-
+    <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0">
+      <p class="primer-parrafo">Ultimas {{ totalUltimas }} Canciones</p>
+      <div style="display: flex; flex-wrap: wrap">
+        <cancionComp
+          v-for="(cancion, index) in refUltimasCanciones"
+          :key="index"
+          :cancion="cancion"
+          @click="clickTocar(cancion.origen)"
+        />
+      </div>
+    </div>
     <div>
       <p class="primer-parrafo">Busca Canciones</p>
 
@@ -69,21 +72,6 @@ function buscarCanciones() {
         </div>
       </div>
     </div>
-
-    <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0">
-      <p class="primer-parrafo">Ultimas {{ totalUltimas }} Canciones</p>
-      <div style="display: flex; flex-wrap: wrap">
-        <cancionComp
-          v-for="(cancion, index) in refUltimasCanciones"
-          :key="index"
-          :cancion="cancion"
-          @click="clickTocar(cancion.origen)"
-        />
-      </div>
-    </div>
-    <p class="primer-parrafo" v-if="appStore.estado === 'conectado'">
-      Conectado!
-    </p>
   </div>
 </template>
 <style scoped>
