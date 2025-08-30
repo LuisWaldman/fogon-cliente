@@ -180,16 +180,6 @@ export class ClienteSocket {
       }
     })
 
-    socket.on('reconnect_attempt', (attemptNumber) => {
-      console.log(`Intento de reconexión: ${attemptNumber}`)
-      this.reconectando = true
-    })
-
-    socket.on('reconnect_failed', () => {
-      console.log('Falló la reconexión después de todos los intentos')
-      this.conexionStatusHandler?.('reconexion_fallida')
-    })
-
     socket.on('disconnect', (reason) => {
       console.log('socket disconnected:', reason)
 

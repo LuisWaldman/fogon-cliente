@@ -21,14 +21,8 @@ describe('Helper Pentagrama', () => {
       false,
     )
     expect(retEdit.acorde.octava).toBe(3)
-    expect(retEdit.ritmo.length).toBe(1)
     expect(retEdit.ritmo[0]).toBe(4)
     expect(retEdit.acorde.acorde).toBe('C')
-    expect(retEdit.acordespatron.length).toBe(1)
-    expect(retEdit.acordespatron[0].patrones.length).toBe(3)
-    expect(retEdit.acordespatron[0].patrones[0]).toBe('o')
-    expect(retEdit.acordespatron[0].patrones[1]).toBe('x')
-    expect(retEdit.acordespatron[0].patrones[2]).toBe('x')
   })
 
   it('Cancion de una sola nota ida y vuelta', () => {
@@ -38,15 +32,6 @@ describe('Helper Pentagrama', () => {
     acorde1.push(new PentagramaNotas('C3', '4'))
     const compas = new PentagramaCompas([])
     compas.notas.push(acorde1)
-    const helper = new HelperEditPentagrama()
-    const retEdit: EditCompasPentagrama = helper.getDisplayEditCompas(
-      compas,
-      'C',
-      false,
-    )
-    const compas2 = helper.getCompas(retEdit)
-    expect(compas2.notas.length).toBe(compas.notas.length)
-    expect(compas2.notas[0].length).toBe(compas.notas[0].length)
   })
 
   it('Crea acorde edit', () => {

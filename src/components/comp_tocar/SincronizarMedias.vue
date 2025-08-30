@@ -29,6 +29,12 @@ function cancelarConfiguracionPantalla() {
         <div>
           <input type="checkbox" v-model="mediaVista.sincronizar" />Sincronizar
         </div>
+        <div v-if="mediaVista.sincronizar">
+          Delay con tiempo: {{ mediaVista.delayconrector.toFixed(0) }} ms
+        </div>
+        <div v-if="mediaVista.rector">
+          Delay con tiempo: {{ mediaVista.delay.toFixed(0) }} ms
+        </div>
       </div>
     </div>
     <div class="botonera">

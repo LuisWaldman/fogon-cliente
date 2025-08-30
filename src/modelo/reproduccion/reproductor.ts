@@ -85,8 +85,8 @@ export class Reproductor {
       if (appStore.MediaVistas[i].rector) {
         //appStore.MediaVistas[i].Iniciar?.()
         const tiempo = appStore.MediaVistas[i].GetTiempoDesdeInicio?.() || 0
+        appStore.MediaVistas[i].delay = momento - (sincro.timeInicio + tiempo)
         momento = sincro.timeInicio + tiempo
-        console.log(`Momento segun rector ${appStore.MediaVistas[i].tipo}: ${momento} `)
       }
     }
 
@@ -96,6 +96,17 @@ export class Reproductor {
     appStore.golpeDelCompas = est.golpeEnCompas
     appStore.estadoReproduccion = est.estado
     this.reloj.setDelay(est.delay)
+
+    // Activo Medias
+    for (let i = 0; i < appStore.MediaVistas.length; i++) {
+      if (appStore.MediaVistas[i].sincronizar) {
+        //appStore.MediaVistas[i].Iniciar?.()
+        const tiempo = appStore.MediaVistas[i].GetTiempoDesdeInicio?.() || 0
+        appStore.MediaVistas[i].delayconrector =
+          momento - (sincro.timeInicio + tiempo)
+        momento = sincro.timeInicio + tiempo
+      }
+    }
   }
   onInicioCiclo() {
     this.sincronizar()

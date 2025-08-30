@@ -76,7 +76,7 @@ mediaVista.setPausar(() => {
 
 onUnmounted(() => {
   const appStore = useAppStore()
-  appStore.aplicacion.quitarMediaVista()
+  appStore.aplicacion.quitarMediaVista(mediaVista)
 })
 
 onMounted(() => {

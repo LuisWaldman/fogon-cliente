@@ -23,6 +23,6 @@ describe('Helper Sonido', () => {
 
     notaId = HelperSonidos.GetNotaDesdeFrecuenciaConNotasSonido(131, notas)
     expect(notas[notaId].nota).toBe('C')
-    expect(notas[notaId].octava).toBe(2)
+    expect(notas[notaId].octava).toBe(3)
   })
 })

@@ -6,7 +6,7 @@ describe('helperEditarAcorde', () => {
     expect(helperEditarAcorde.CorregirAcorde('c')).toBe('C')
     expect(helperEditarAcorde.CorregirAcorde('Cc')).toBe('Cc')
     expect(helperEditarAcorde.CorregirAcorde('BB')).toBe('Bb')
-    expect(helperEditarAcorde.CorregirAcorde('bB')).toBe('Bn')
+    expect(helperEditarAcorde.CorregirAcorde('bB')).toBe('Bb')
     expect(helperEditarAcorde.CorregirAcorde('fB')).toBe('Fb')
     expect(helperEditarAcorde.CorregirAcorde('gB')).toBe('Gb')
     expect(helperEditarAcorde.CorregirAcorde('bB')).toBe('Bb')
