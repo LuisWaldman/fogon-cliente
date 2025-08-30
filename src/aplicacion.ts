@@ -11,17 +11,17 @@ import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
 import { OrigenCancion } from './modelo/cancion/origencancion'
 import { CancionManager } from './modelo/cancion/CancionManager'
-import { ReproductorMedia } from './modelo/reproduccion/reproductorMedia'
 import type { MediaVista } from './modelo/reproduccion/MediaVista'
 import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 import type { Servidor } from './modelo/servidor'
-import { h } from 'vue'
+import { IndiceHelper } from './modelo/indices/IndiceHelper'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
   reproductorDesconectado: Reproductor = this.reproductor
   reproductorConectado: ReproductorConectado | null = null
   configuracion: Configuracion = Configuracion.getInstance()
+  indiceHelper: IndiceHelper = IndiceHelper.getInstance()
   cliente: ClienteSocket | null = null
   token: string = ''
 
@@ -68,16 +68,15 @@ export default class Aplicacion {
       //this.SetCancion(new OrigenCancion('sitio', cancion, ''))
     }
     this.PrepararPaginaInicio()
-
   }
-  PrepararPaginaInicio() {
+  async PrepararPaginaInicio() {
     const appStore = useAppStore()
     appStore.estadosApp.texto = 'Preparando pagina de inicio...'
     appStore.estadosApp.paginaLista = ''
     /* CARGA TODO DE LA PAGINA DE INICIO */
+    await this.indiceHelper.CargarIndice()
     appStore.estadosApp.paginaLista = 'inicio'
     appStore.estadosApp.estado = 'ok'
-
   }
 
   setMediaVista(mediaVista: MediaVista): void {

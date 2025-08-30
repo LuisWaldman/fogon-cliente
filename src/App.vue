@@ -30,7 +30,7 @@ onMounted(() => {
 <template>
   <div id="contenedor-musical" class="pantalla">
     <Cabecera />
-    <div style="text-align: center"  v-if="appStore.estadosApp.estado != 'ok'" >
+    <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
       <img
         src="/img/iconogrande.png"
         style="width: 300px; height: auto"

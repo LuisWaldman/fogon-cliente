@@ -1,67 +1,23 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
-
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
-
 import cancionComp from '../components/comp_home/cancion.vue'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
-import { CancionUrlManager } from '../modelo/cancion/CancionUrlManager'
+
+const appStore = useAppStore()
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
-const totalUltimas = ref(0)
 refUltimasCanciones.value = ultimasCanciones.canciones
+const refResultadoCanciones = ref<ItemIndiceCancion[]>(appStore.aplicacion.indiceHelper.BusquedaCanciones)
+const totalUltimas = ref(0)
 totalUltimas.value = ultimasCanciones.canciones.length
-const refResultadoCanciones = ref([] as ItemIndiceCancion[])
-const refTodasCanciones = ref([] as ItemIndiceCancion[])
 const refEstadoBusqueda = ref('')
 const busqueda = ref('')
 
-function buscarCanciones() {
-  if (refTodasCanciones.value.length === 0) {
-    refEstadoBusqueda.value = 'cargando'
-    refTodasCanciones.value = ultimasCanciones.canciones as ItemIndiceCancion[]
-    CancionUrlManager.GetIndice()
-      .then((resultado) => {
-        refTodasCanciones.value = resultado
-        filtrar()
-      })
-      .catch((error) => {
-        console.error('Error trayendo indice:', error)
-        refEstadoBusqueda.value = 'error'
-      })
-  } else {
-    filtrar()
-  }
-
-  function filtrarvectores(filtro: string, vector: ItemIndiceCancion[]) {
-    return vector.filter(
-      (cancion) =>
-        cancion.banda.toLowerCase().includes(filtro.toLowerCase()) ||
-        cancion.cancion.toLowerCase().includes(filtro.toLowerCase()),
-    )
-  }
-  function filtrar() {
-    refEstadoBusqueda.value = 'filtrando'
-    if (busqueda.value === '') {
-      refResultadoCanciones.value = refTodasCanciones.value
-    } else {
-      let resultado = refTodasCanciones.value as ItemIndiceCancion[]
-      const filtros = busqueda.value.split(',')
-      for (let i = 0; i < filtros.length; i++) {
-        resultado = filtrarvectores(filtros[i], resultado)
-      }
-      refResultadoCanciones.value = resultado
-    }
-    refEstadoBusqueda.value = 'listo'
-  }
-  refEstadoBusqueda.value = 'listo'
-}
-
-const appStore = useAppStore()
 
 const router = useRouter()
 function clickTocar(cancion: OrigenCancion) {
@@ -70,6 +26,18 @@ function clickTocar(cancion: OrigenCancion) {
     router.push('/tocar')
   })
 }
+
+function buscarCanciones() {
+
+  refEstadoBusqueda.value = 'buscando...'
+  appStore.aplicacion.indiceHelper.Buscar(busqueda.value).then(() => {
+    refResultadoCanciones.value = appStore.aplicacion.indiceHelper.BusquedaCanciones
+    refEstadoBusqueda.value = ''
+  }).catch(() => {
+    refEstadoBusqueda.value = 'error'
+  })
+}
+
 </script>
 <template>
   <div class="home">
@@ -90,7 +58,6 @@ function clickTocar(cancion: OrigenCancion) {
           {{ refEstadoBusqueda }}
         </div>
       </div>
-
       <div>
         <div style="display: flex; flex-wrap: wrap">
           <cancionComp
