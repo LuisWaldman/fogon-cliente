@@ -124,6 +124,14 @@ function clickDividirRitmo(indice: number) {
   editandoRitmo.value = -1
   ImpactarCambiosEditor()
 }
+function estiloRitmo(rIndex: number, aIndex: number) {
+  const val = editorDisplay.value.acordespatron[rIndex].patrones[aIndex]
+  if (val === 'x') {
+    return 'background-color: black; color: white; cursor: pointer; text-align: center'
+  } else {
+    return 'background-color: white; color: black; cursor: pointer; text-align: center'
+  }
+}
 
 const instroBateria = EditAcordePentagrama.InstrumentosBateria
 </script>
@@ -140,68 +148,70 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
     />
   </div>
   <div>
-    <div style="display: flex">
-      <div class="divNotaEdit"></div>
-      <div
-        class="divRitmo"
-        v-for="(r, index) in editorDisplay.ritmo"
-        :key="index"
-        @click="clickEditarRitmo(index)"
-        :class="{ EditandoRitmo: editandoRitmo === index }"
-      >
-        <div>{{ r }}</div>
-        <div
-          style="width: 50px; position: relative"
-          v-if="editandoRitmo === index"
-        >
-          <div
-            style="position: absolute; left: 10px"
-            class="btnRitmo"
-            v-if="puedeUnirPrev"
-            @click="clickUnirRitmo(index)"
+    <table class="tablaRitmos">
+      <thead>
+        <tr>
+          <th>Nota</th>
+          <th
+            v-for="(r, index) in editorDisplay.ritmo"
+            :key="index"
+            :colspan="16 / r"
+            @click="clickEditarRitmo(index)"
+            :class="{ EditandoRitmo: editandoRitmo === index }"
           >
-            +
-          </div>
-          <div
-            style="position: absolute; left: 30px"
-            class="btnRitmo"
-            v-if="puedeDivider"
-            @click="clickDividirRitmo(index)"
+            {{ r }}
+
+            <div style="display: flex" v-if="editandoRitmo === index">
+              <div
+                class="btnRitmo"
+                v-if="puedeUnirPrev"
+                @click="clickUnirRitmo(index)"
+              >
+                +
+              </div>
+              <div
+                class="btnRitmo"
+                v-if="puedeDivider"
+                @click="clickDividirRitmo(index)"
+              >
+                /
+              </div>
+              <div
+                class="btnRitmo"
+                v-if="puedeUnirPost"
+                @click="clickUnirRitmo(index + 1)"
+              >
+                +
+              </div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- PUNTOS-->
+        <tr>
+          <td>.</td>
+          <td v-for="n in 16" :key="n">.</td>
+        </tr>
+
+        <tr v-for="(nota, index) in editorDisplay.acorde.notas" :key="index">
+          <td v-if="!refEsBatera">{{ nota }}</td>
+          <td  v-if="refEsBatera">{{ instroBateria[index] }}</td>
+
+          <td
+            v-for="(r, ritindex) in editorDisplay.ritmo"
+            :key="ritindex"
+            @click="clickPatron(index, ritindex)"
+            :style="estiloRitmo(ritindex, index)"
+            :colspan="16 / r"
           >
-            /
-          </div>
-          <div
-            style="position: absolute; left: 60px"
-            class="btnRitmo"
-            v-if="puedeUnirPost"
-            @click="clickUnirRitmo(index + 1)"
-          >
-            +
-          </div>
-          <div>&nbsp;</div>
-        </div>
-      </div>
-    </div>
-    <div
-      style="display: flex"
-      v-for="(a, aIndex) in editorDisplay.acorde.notas"
-      :key="aIndex"
-    >
-      <div class="divNotaEdit" v-if="!refEsBatera">
-        {{ a }}
-      </div>
-      <div class="divNotaEdit" v-if="refEsBatera">
-        {{ instroBateria[aIndex] }}
-      </div>
-      <div
-        class="divPatronRitmo"
-        v-for="(_r, index) in editorDisplay.ritmo"
-        :key="index"
-        @click="clickPatron(aIndex, index)"
-      >
-        {{ editorDisplay.acordespatron[index].patrones[aIndex] }}
-      </div>
-    </div>
+            {{ editorDisplay.acordespatron[ritindex].patrones[index] }}
+            
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
   </div>
 
   <renglonpentagrama
@@ -234,5 +244,16 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
   width: 20px;
   text-align: center;
   cursor: pointer;
+}
+.tablaRitmos {
+  border: 1px solid;
+}
+.tablaRitmos tr,
+td,
+th {
+  border: 1px solid;
+}
+.tablaRitmos {
+  border: 1px solid;
 }
 </style>

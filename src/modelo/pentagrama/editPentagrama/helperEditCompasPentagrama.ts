@@ -62,7 +62,9 @@ export class HelperEditPentagrama {
       edit.acordespatron[index].patrones.forEach((patron, patronid) => {
         if (patron === 'o') {
           const nota = edit.acorde.notas[patronid]
-          pentatoAdd.push(new PentagramaNotas(nota, ritmo.toString()))
+          if (nota) {
+            pentatoAdd.push(new PentagramaNotas(nota, ritmo.toString()))
+          }
         }
       })
       if (pentatoAdd.length == 0) {

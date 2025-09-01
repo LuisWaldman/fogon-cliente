@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { table } from 'console'
 import { useAppStore } from '../../stores/appStore'
 
 const emit = defineEmits(['cerrar'])
