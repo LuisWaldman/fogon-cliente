@@ -103,7 +103,6 @@ watch(configPantalla.value, () => {
       <span>{{ configPantalla.tamanioAcordeParte }} px</span>
     </div>
     <div class="config-row">
-      
       <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
       <span>Ver resumen verso</span>
     </div>

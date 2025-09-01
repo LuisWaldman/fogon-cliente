@@ -29,17 +29,18 @@ export class Reproductor {
         appStore.compas || 0, // desdeCompas
       )
       console.log(`Iniciando reproducción de la canción: ${momento}`)
-      this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
-      this.reloj.setIniciaCicloHandler(this.onInicioCiclo.bind(this))
 
       // Activo Medias
       for (let i = 0; i < appStore.MediaVistas.length; i++) {
-        if (appStore.MediaVistas[i].sincronizar) {
+        if (appStore.MediaVistas[i].rector) {
           appStore.MediaVistas[i].Iniciar?.()
         }
       }
 
+      this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
+      this.reloj.setIniciaCicloHandler(this.onInicioCiclo.bind(this))
       this.reloj.iniciar()
+      //this.sincronizar()
       appStore.estadoReproduccion = 'Iniciando'
       if (appStore.compas < 0) {
         appStore.compas = 0
@@ -62,6 +63,13 @@ export class Reproductor {
   updateCompas(compas: number) {
     const appStore = useAppStore()
     appStore.compas = compas
+    // Activo Medias
+    for (let i = 0; i < appStore.MediaVistas.length; i++) {
+      if (appStore.MediaVistas[i].sincronizar) {
+        const duracionCompas = appStore.cancion.duracionCompas * 1000
+        appStore.MediaVistas[i].SetTiempoDesdeInicio?.(compas * duracionCompas)
+      }
+    }
   }
   sincronizar() {
     const appStore = useAppStore()
@@ -79,11 +87,10 @@ export class Reproductor {
     appStore.sesSincroCancion = sincro
 
     // Calculo el estado segun el momento
-    let momento = helper.MomentoSincro()
+    let momento: number = helper.MomentoSincro()
     // Activo Medias
     for (let i = 0; i < appStore.MediaVistas.length; i++) {
       if (appStore.MediaVistas[i].rector) {
-        //appStore.MediaVistas[i].Iniciar?.()
         const tiempo = appStore.MediaVistas[i].GetTiempoDesdeInicio?.() || 0
         appStore.MediaVistas[i].delay = momento - (sincro.timeInicio + tiempo)
         momento = sincro.timeInicio + tiempo
@@ -100,11 +107,24 @@ export class Reproductor {
     // Activo Medias
     for (let i = 0; i < appStore.MediaVistas.length; i++) {
       if (appStore.MediaVistas[i].sincronizar) {
-        //appStore.MediaVistas[i].Iniciar?.()
-        const tiempo = appStore.MediaVistas[i].GetTiempoDesdeInicio?.() || 0
+        const tiempoReproduccion =
+          appStore.MediaVistas[i].GetTiempoDesdeInicio?.() || 0
         appStore.MediaVistas[i].delayconrector =
-          momento - (sincro.timeInicio + tiempo)
-        momento = sincro.timeInicio + tiempo
+          momento - (sincro.timeInicio + tiempoReproduccion)
+        if (!appStore.MediaVistas[i].rector) {
+          if (est.estado !== 'Reproduciendo') {
+            appStore.MediaVistas[i].Pausar?.()
+          } else {
+            if (est.compas >= 0) {
+              const momento =
+                est.compas * appStore.cancion.duracionCompas * 1000 +
+                est.golpeEnCompas * appStore.cancion.duracionGolpe * 1000 -
+                est.delay
+              appStore.MediaVistas[i].SetTiempoDesdeInicio?.(momento)
+              appStore.MediaVistas[i].Iniciar?.()
+            }
+          }
+        }
       }
     }
   }

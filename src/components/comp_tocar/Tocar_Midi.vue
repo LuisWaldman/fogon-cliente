@@ -73,6 +73,13 @@ mediaVista.setIniciar(() => {
 mediaVista.setPausar(() => {
   stop()
 })
+mediaVista.setSetTiempoDesdeInicio((numero: number) => {
+  midiPlayer.setCurrentTime(numero)
+})
+
+mediaVista.setGetEstado(() => {
+  return midiPlayer.getPlayerState() || -1
+})
 
 onUnmounted(() => {
   const appStore = useAppStore()

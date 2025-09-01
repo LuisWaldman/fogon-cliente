@@ -3,6 +3,12 @@ import type { MidiSecuencia } from './MidiSecuencia'
 import { InstrumentosManager } from './InstrumentosManager'
 
 export class MidiPlayer {
+  getPlayerState(): number {
+    return Tone.getTransport().state === 'started' ? 1 : 0
+  }
+  setCurrentTime(numero: number) {
+    Tone.getTransport().seconds = numero / 1000
+  }
   async cargarInstrumentos(instrumentos: string[]) {
     // Esperar a que todos los instrumentos se carguen
     await Promise.all(
