@@ -8,6 +8,7 @@ export class Pentagrama {
   public static GetPentagramaDefault(compases: number): Pentagrama {
     const penta = new Pentagrama()
     penta.instrumento = 'Piano'
+    penta.clave = 'treble'
     const notas: PentagramaNotas[][] = []
     notas.push([new PentagramaNotas('C4', '1r')])
     for (let i = 0; i < compases; i++) {

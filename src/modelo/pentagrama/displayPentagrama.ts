@@ -37,7 +37,10 @@ export class DisplayPentagrama {
   GetSistema(idsistema: number): DisplaySistemaPentagrama {
     if (this.renglones.length <= idsistema) {
       this.renglones.push(new DisplaySistemaPentagrama())
-    }
+    }/* else {
+      this.renglones[idsistema] = new DisplaySistemaPentagrama()
+      return this.renglones[idsistema]
+    }*/
     return this.renglones[idsistema]
   }
 
