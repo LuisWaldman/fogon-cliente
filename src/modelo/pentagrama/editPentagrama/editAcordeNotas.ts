@@ -1,3 +1,4 @@
+/*
 export class EditAcordePatronNotas {
   public patrones: string[] = []
   public constructor(compasDivisor: number) {
@@ -6,3 +7,4 @@ export class EditAcordePatronNotas {
     }
   }
 }
+*/

@@ -8,16 +8,15 @@ export class HelperEditPentagrama {
     if (cancion.pentagramas.length < pentagraId) {
       return
     }
+    console.log('CopiarEnPentagrama', pentagraId, compas)
+    return
+    /*
     const pentagrama = cancion.pentagramas[pentagraId]
     if (compas > pentagrama.compases.length) {
       return
     }
-    const acorde = cancion.acordes.GetTodosLosAcordes()[compas]
-    const esBateria = pentagrama.instrumento.toLowerCase().includes('ater')
     const display = this.getDisplayEditCompas(
       pentagrama.compases[compas],
-      acorde,
-      esBateria,
     )
     pentagrama.compases = []
     for (let i = 0; i < cancion.acordes.ordenPartes.length; i++) {
@@ -31,24 +30,26 @@ export class HelperEditPentagrama {
         display.acorde.Calcular()
         pentagrama.compases.push(this.getCompas(display))
       }
-    }
+    }*/
   }
   public getDisplayEditCompas(
     pentagrama: PentagramaCompas,
-    acorde: string,
-    esBateria: boolean,
   ): EditCompasPentagrama {
-    const ret = new EditCompasPentagrama(acorde, esBateria)
-    let cPrimer = true
+    const ret = new EditCompasPentagrama()
+    // Recorro el pentagrama buscando acordes fuera del compas
+    pentagrama.notas.forEach((acordePentagrama) => {
+      acordePentagrama.forEach((nota) => {
+        if (!ret.notas.includes(nota.nota)) {
+          ret.notas.push(nota.nota)
+        }
+      })
+    })
     pentagrama.notas.forEach((acordePentagrama) => {
       let min = 9999999999
       acordePentagrama.forEach((nota) => {
         min = Math.min(min, PentagramaNotas.duracionRitmo(nota.duracion))
       })
-      if (cPrimer) {
-        cPrimer = false
-        ret.acorde.SetOctavaFromNotas(acordePentagrama)
-      }
+
       ret.ritmo.push(min)
       ret.AddAcorde(acordePentagrama)
     })
@@ -59,9 +60,9 @@ export class HelperEditPentagrama {
     const pentas: PentagramaNotas[][] = []
     edit.ritmo.forEach((ritmo, index) => {
       const pentatoAdd: PentagramaNotas[] = []
-      edit.acordespatron[index].patrones.forEach((patron, patronid) => {
-        if (patron === 'o') {
-          const nota = edit.acorde.notas[patronid]
+      edit.patron[index].forEach((patron, patronid) => {
+        if (patron) {
+          const nota = edit.notas[patronid]
           if (nota) {
             pentatoAdd.push(new PentagramaNotas(nota, ritmo.toString()))
           }

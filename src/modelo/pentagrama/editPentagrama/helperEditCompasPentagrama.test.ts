@@ -7,33 +7,6 @@ import { HelperEditPentagrama } from './helperEditCompasPentagrama'
 import { EditAcordePentagrama } from './editAcordePentagrama'
 
 describe('Helper Pentagrama', () => {
-  it('Cancion de una sola nota', () => {
-    const penta = new Pentagrama()
-    penta.clave = 'treble'
-    const acorde1: PentagramaNotas[] = []
-    acorde1.push(new PentagramaNotas('C3', '4'))
-    const compas = new PentagramaCompas([])
-    compas.notas.push(acorde1)
-    const helper = new HelperEditPentagrama()
-    const retEdit: EditCompasPentagrama = helper.getDisplayEditCompas(
-      compas,
-      'C',
-      false,
-    )
-    expect(retEdit.acorde.octava).toBe(3)
-    expect(retEdit.ritmo[0]).toBe(4)
-    expect(retEdit.acorde.acorde).toBe('C')
-  })
-
-  it('Cancion de una sola nota ida y vuelta', () => {
-    const penta = new Pentagrama()
-    penta.clave = 'treble'
-    const acorde1: PentagramaNotas[] = []
-    acorde1.push(new PentagramaNotas('C3', '4'))
-    const compas = new PentagramaCompas([])
-    compas.notas.push(acorde1)
-  })
-
   it('Crea acorde edit', () => {
     let acorde = new EditAcordePentagrama('C')
     expect(acorde.notas.length).toBe(3)
@@ -59,29 +32,25 @@ describe('Helper Pentagrama', () => {
 
   it('Acordes con 7, 9, 11', () => {
     const acorde = new EditAcordePentagrama('C7')
-    expect(acorde.notas.length).toBe(3)
+    expect(acorde.notas.length).toBe(4)
     expect(acorde.notas[0]).toBe('C4')
     expect(acorde.notas[1]).toBe('E4')
     expect(acorde.notas[2]).toBe('G4')
-    expect(acorde.addNota).toBe('B4')
+    expect(acorde.notas[3]).toBe('B4')
   })
 
   it('Acordes de 5', () => {
     const acorde = new EditAcordePentagrama('C5')
-    expect(acorde.notas.length).toBe(3)
+    expect(acorde.notas.length).toBe(2)
     expect(acorde.notas[0]).toBe('C4')
-    expect(acorde.notas[1]).toBe('E4')
-    expect(acorde.notas[2]).toBe('G4')
-    expect(acorde.tiene3).toBe(false)
+    expect(acorde.notas[1]).toBe('G4')
   })
 
   it('Acordes de 5', () => {
     const acorde = new EditAcordePentagrama('C5')
-    expect(acorde.notas.length).toBe(3)
+    expect(acorde.notas.length).toBe(2)
     expect(acorde.notas[0]).toBe('C4')
-    expect(acorde.notas[1]).toBe('E4')
-    expect(acorde.notas[2]).toBe('G4')
-    expect(acorde.tiene3).toBe(false)
+    expect(acorde.notas[1]).toBe('G4')
   })
 
   it('Actualizar ritmo', () => {
@@ -92,11 +61,7 @@ describe('Helper Pentagrama', () => {
     const compas = new PentagramaCompas([])
     compas.notas.push(acorde1)
     const helper = new HelperEditPentagrama()
-    const retEdit: EditCompasPentagrama = helper.getDisplayEditCompas(
-      compas,
-      'C',
-      false,
-    )
+    const retEdit: EditCompasPentagrama = helper.getDisplayEditCompas(compas)
     // Compás vacío → se completa con una blanca
     retEdit.ritmo = []
     retEdit.CompletarRitmo()

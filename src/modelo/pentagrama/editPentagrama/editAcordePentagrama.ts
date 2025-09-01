@@ -2,6 +2,12 @@ import { MusicaHelper } from '../../cancion/MusicaHelper'
 import type { PentagramaNotas } from '../../cancion/pentagramanotas'
 
 export class EditAcordePentagrama {
+  IncludeSiNoExiste(nota: string) {
+    if (!this.notas.includes(nota)) {
+      this.notas.push(nota)
+    }
+  }
+
   SetOctavaFromNotas(acordePentagrama: PentagramaNotas[]) {
     if (acordePentagrama.length > 0) {
       const nota = acordePentagrama[0]
@@ -60,10 +66,10 @@ export class EditAcordePentagrama {
       this.octavas.push(indicePrimera > indiceNota ? 1 : 0)
     })
     this.pushNota(this.escalaDelAcorde[0], this.octava + this.octavas[0])
-    this.pushNota(this.escalaDelAcorde[4], this.octava + this.octavas[4])
     if (this.acorde.indexOf('5') === -1) {
       this.pushNota(this.escalaDelAcorde[2], this.octava + this.octavas[2])
     }
+    this.pushNota(this.escalaDelAcorde[4], this.octava + this.octavas[4])
     if (this.acorde.indexOf('7') >= 0) {
       this.pushNota(this.escalaDelAcorde[6], this.octava + this.octavas[6])
     }

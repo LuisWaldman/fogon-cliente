@@ -27,9 +27,7 @@ const CtrlrenglonPentagrama = ref()
 const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const editorDisplay = ref<EditCompasPentagrama>(
-  new EditCompasPentagrama('C4', false),
-)
+const editorDisplay = ref<EditCompasPentagrama>(new EditCompasPentagrama())
 
 const editandoRitmo = ref(-1)
 const puedeUnirPrev = ref(false)
@@ -49,9 +47,6 @@ function Actualizar() {
   refCompasEnPentagrama.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
 
-  const AcordeActual = ref(
-    props.cancion.acordes.GetTodosLosAcordes()[props.compas],
-  )
   if (refCompasEnPentagrama.value) {
     refEsBatera.value = props.cancion.pentagramas[
       props.pentagramaId
@@ -60,8 +55,6 @@ function Actualizar() {
       .includes('batería')
     editorDisplay.value = helper.getDisplayEditCompas(
       refCompasEnPentagrama.value,
-      AcordeActual.value,
-      refEsBatera.value,
     )
     DibujarMuestra()
   }
@@ -92,11 +85,11 @@ watch(
   },
 )
 function clickPatron(aIndex: number, rIndex: number) {
-  const val = editorDisplay.value.acordespatron[rIndex].patrones[aIndex]
-  if (val === 'x') {
-    editorDisplay.value.acordespatron[rIndex].patrones[aIndex] = 'o'
+  const val = editorDisplay.value.patron[rIndex][aIndex]
+  if (val) {
+    editorDisplay.value.patron[rIndex][aIndex] = false
   } else {
-    editorDisplay.value.acordespatron[rIndex].patrones[aIndex] = 'x'
+    editorDisplay.value.patron[rIndex][aIndex] = true
   }
   ImpactarCambiosEditor()
 }
@@ -109,7 +102,7 @@ function ImpactarCambiosEditor() {
   Actualizar()
 }
 function CambioOctava() {
-  editorDisplay.value.acorde.Calcular()
+  // editorDisplay.value.acorde.Calcular()
   ImpactarCambiosEditor()
 }
 
@@ -125,8 +118,8 @@ function clickDividirRitmo(indice: number) {
   ImpactarCambiosEditor()
 }
 function estiloRitmo(rIndex: number, aIndex: number) {
-  const val = editorDisplay.value.acordespatron[rIndex].patrones[aIndex]
-  if (val === 'x') {
+  const val = editorDisplay.value.patron[rIndex][aIndex]
+  if (val) {
     return 'background-color: black; color: white; cursor: pointer; text-align: center'
   } else {
     return 'background-color: white; color: black; cursor: pointer; text-align: center'
@@ -137,9 +130,7 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
 </script>
 <template>
   <div>
-    {{ editorDisplay.acorde.acorde }}
     <input
-      v-model="editorDisplay.acorde.octava"
       style="width: 30px"
       type="number"
       @change="CambioOctava"
@@ -194,9 +185,9 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
           <td v-for="n in 16" :key="n">.</td>
         </tr>
 
-        <tr v-for="(nota, index) in editorDisplay.acorde.notas" :key="index">
+        <tr v-for="(nota, index) in editorDisplay.notas" :key="index">
           <td v-if="!refEsBatera">{{ nota }}</td>
-          <td  v-if="refEsBatera">{{ instroBateria[index] }}</td>
+          <td v-if="refEsBatera">{{ instroBateria[index] }}</td>
 
           <td
             v-for="(r, ritindex) in editorDisplay.ritmo"
@@ -205,11 +196,9 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
             :style="estiloRitmo(ritindex, index)"
             :colspan="16 / r"
           >
-            {{ editorDisplay.acordespatron[ritindex].patrones[index] }}
-            
+            {{ editorDisplay.patron[ritindex][index] }}
           </td>
         </tr>
-
       </tbody>
     </table>
   </div>
