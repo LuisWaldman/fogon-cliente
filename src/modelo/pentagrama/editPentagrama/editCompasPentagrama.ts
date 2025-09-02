@@ -68,7 +68,7 @@ export class EditCompasPentagrama {
       const existe = this.notas.indexOf(s.nota)
       if (existe !== -1) {
         if (!s.duracion.endsWith('r')) {
-            toPush[existe] = true
+          toPush[existe] = true
         }
       }
     })

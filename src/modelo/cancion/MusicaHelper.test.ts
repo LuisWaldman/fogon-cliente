@@ -121,4 +121,27 @@ describe('MusicaHelper', () => {
     expect(helper.GetNotasdeacorde('C9', 4)).toEqual(['C4', 'E4', 'G4', 'D5'])
     expect(helper.GetNotasdeacorde('D9', 4)).toEqual(['D4', 'F#4', 'A4', 'E5'])
   })
+
+  it('Distancia entre acordes', () => {
+    const helper = new MusicaHelper()
+    expect(helper.DistanciaAcordes('C', 'D')).toEqual(2)
+    expect(helper.DistanciaAcordes('D', 'C')).toEqual(-2)
+    expect(helper.DistanciaAcordes('C', 'C')).toEqual(0)
+    expect(helper.DistanciaAcordes('C', 'C#')).toEqual(1)
+    expect(helper.DistanciaAcordes('C#', 'D')).toEqual(1)
+    expect(helper.DistanciaAcordes('B', 'C')).toEqual(-11)
+    expect(helper.DistanciaAcordes('B', 'C#')).toEqual(-10)
+    expect(helper.DistanciaAcordes('C', 'B')).toEqual(11)
+    expect(helper.DistanciaAcordes('C#', 'B')).toEqual(10)
+  })
+
+  it('Nota dezplazada', () => {
+    const helper = new MusicaHelper()
+    expect(helper.NotaMasDiferencial('C4', 2)).toEqual('D4')
+    expect(helper.NotaMasDiferencial('C4', 1)).toEqual('C#4')
+    expect(helper.NotaMasDiferencial('C4', -1)).toEqual('B3')
+    expect(helper.NotaMasDiferencial('C4', -2)).toEqual('A#3')
+    expect(helper.NotaMasDiferencial('D4', -2)).toEqual('C4')
+    expect(helper.NotaMasDiferencial('C4', -12)).toEqual('C3')
+  })
 })

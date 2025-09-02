@@ -141,34 +141,24 @@ function clickOkAgregarNota() {
     editorDisplay.value.patron.forEach((r) => {
       r.push(false)
     })
-    
-  agregandonota.value = false
-  nuevaNota.value = ''
+
+    agregandonota.value = false
+    nuevaNota.value = ''
   }
-  
 }
 
-const instroBateria =  [
-    'Bombo',
-    'Caja',
-    'Matraca',
-    'Platillo cerrado',
-    'Platillo abierto',
-    'Triangulo',
-    'Silbato',
-    'Crash',
-  ]
-  
-const notasBateria =   [
-      'D4',
-      'F4',
-      'A4',
-      'C5',
-      'E5',
-      'G5',
-      'A5',
-      'C6',
-    ]
+const instroBateria = [
+  'Bombo',
+  'Caja',
+  'Matraca',
+  'Platillo cerrado',
+  'Platillo abierto',
+  'Triangulo',
+  'Silbato',
+  'Crash',
+]
+
+const notasBateria = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
 </script>
 <template>
   <div>
@@ -229,7 +219,9 @@ const notasBateria =   [
 
         <tr v-for="(nota, index) in editorDisplay.notas" :key="index">
           <td v-if="!refEsBatera">{{ nota }}</td>
-          <td v-if="refEsBatera">{{ instroBateria[notasBateria.indexOf(nota)] || nota }}</td>
+          <td v-if="refEsBatera">
+            {{ instroBateria[notasBateria.indexOf(nota)] || nota }}
+          </td>
 
           <td
             v-for="(r, ritindex) in editorDisplay.ritmo"
@@ -237,9 +229,7 @@ const notasBateria =   [
             @click="clickPatron(index, ritindex)"
             :style="estiloRitmo(ritindex, index)"
             :colspan="16 / r"
-          >
-            
-          </td>
+          ></td>
         </tr>
       </tbody>
     </table>
@@ -250,14 +240,17 @@ const notasBateria =   [
     <div v-if="agregandonota">
       <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
       <select v-if="refEsBatera" v-model="nuevaNota">
-        <option v-for="(nota, index) in instroBateria" :key="index" :value="notasBateria[index]">
+        <option
+          v-for="(nota, index) in instroBateria"
+          :key="index"
+          :value="notasBateria[index]"
+        >
           {{ nota }}
         </option>
       </select>
 
       <span @click="clickOkAgregarNota">[Ok]</span>
-    <span @click="clickCancelarAgregarNota">[Cancelar]</span>
-
+      <span @click="clickCancelarAgregarNota">[Cancelar]</span>
     </div>
   </div>
 

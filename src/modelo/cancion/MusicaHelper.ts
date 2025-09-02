@@ -195,6 +195,36 @@ export class MusicaHelper {
     'B',
   ]
 
+  public LimpiarAcordes(aco1: string): string {
+    // Remove numbers and "m" from the chord
+    return aco1.replace(/[0-9m]/g, '')
+  }
+  public DistanciaAcordes(aco1: string, aco2: string): number {
+    const limpio1 = this.LimpiarAcordes(aco1)
+    const limpio2 = this.LimpiarAcordes(aco2)
+    const index1 = this.notas.indexOf(limpio1)
+    const index2 = this.notas.indexOf(limpio2)
+    if (index1 === -1 || index2 === -1) {
+      return 0
+    }
+    return index2 - index1
+  }
+
+  public NotaMasDiferencial(nota: string, diferencial: number): string {
+    const notaSola = nota.substring(0, nota.length - 1)
+    let octava = parseInt(nota.substring(nota.length - 1))
+    let index = this.notas.indexOf(notaSola) + diferencial
+    if (index < 0) {
+      octava--
+      index = this.notas.length + index
+    }
+    if (index > this.notas.length - 1) {
+      octava++
+      index = index - this.notas.length
+    }
+    return this.notas[index] + octava
+  }
+
   GetNotas() {
     return this.notas
   }

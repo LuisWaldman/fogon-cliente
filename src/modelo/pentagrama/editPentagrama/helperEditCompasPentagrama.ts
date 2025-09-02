@@ -1,4 +1,5 @@
 import type { Cancion } from '../../cancion/cancion'
+import { MusicaHelper } from '../../cancion/MusicaHelper'
 import { PentagramaCompas } from '../../cancion/pentagramacompas'
 import { PentagramaNotas } from '../../cancion/pentagramanotas'
 import { EditCompasPentagrama } from './editCompasPentagrama'
@@ -8,29 +9,21 @@ export class HelperEditPentagrama {
     if (cancion.pentagramas.length < pentagraId) {
       return
     }
-    console.log('CopiarEnPentagrama', pentagraId, compas)
-    return
-    /*
+
     const pentagrama = cancion.pentagramas[pentagraId]
     if (compas > pentagrama.compases.length) {
       return
     }
-    const display = this.getDisplayEditCompas(
-      pentagrama.compases[compas],
-    )
+    const display = this.getDisplayEditCompas(pentagrama.compases[compas])
     pentagrama.compases = []
-    for (let i = 0; i < cancion.acordes.ordenPartes.length; i++) {
-      const ordenParte = cancion.acordes.ordenPartes[i]
-      for (
-        let j = 0;
-        j < cancion.acordes.partes[ordenParte].acordes.length;
-        j++
-      ) {
-        display.acorde.acorde = cancion.acordes.partes[ordenParte].acordes[j]
-        display.acorde.Calcular()
-        pentagrama.compases.push(this.getCompas(display))
-      }
-    }*/
+    const acordes = cancion.acordes.GetTodosLosAcordes()
+    const desdeacorde: string = acordes[compas]
+    const musica = new MusicaHelper()
+    for (let i = 0; i < acordes.length; i++) {
+      const hastaacorde: string = acordes[i]
+      const desplaza = musica.DistanciaAcordes(desdeacorde, hastaacorde)
+      pentagrama.compases.push(this.getCompasDesplazado(display, desplaza))
+    }
   }
   public getDisplayEditCompas(
     pentagrama: PentagramaCompas,
@@ -65,6 +58,32 @@ export class HelperEditPentagrama {
           const nota = edit.notas[patronid]
           if (nota) {
             pentatoAdd.push(new PentagramaNotas(nota, ritmo.toString()))
+          }
+        }
+      })
+      if (pentatoAdd.length == 0) {
+        pentatoAdd.push(new PentagramaNotas('C4', ritmo.toString() + 'r'))
+      }
+
+      pentas.push(pentatoAdd)
+    })
+    return new PentagramaCompas(pentas)
+  }
+
+  public getCompasDesplazado(
+    edit: EditCompasPentagrama,
+    corrimiento: number,
+  ): PentagramaCompas {
+    const musica = new MusicaHelper()
+    const pentas: PentagramaNotas[][] = []
+    edit.ritmo.forEach((ritmo, index) => {
+      const pentatoAdd: PentagramaNotas[] = []
+      edit.patron[index].forEach((patron, patronid) => {
+        if (patron) {
+          const nota = edit.notas[patronid]
+          if (nota) {
+            const nNota = musica.NotaMasDiferencial(nota, corrimiento)
+            pentatoAdd.push(new PentagramaNotas(nNota, ritmo.toString()))
           }
         }
       })
