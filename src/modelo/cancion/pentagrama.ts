@@ -9,9 +9,9 @@ export class Pentagrama {
     const penta = new Pentagrama()
     penta.instrumento = 'Piano'
     penta.clave = 'treble'
-    const notas: PentagramaNotas[][] = []
-    notas.push([new PentagramaNotas('C4', '1r')])
     for (let i = 0; i < compases; i++) {
+      const notas: PentagramaNotas[][] = []
+      notas.push([new PentagramaNotas('C4', '1r')])
       penta.compases.push(new PentagramaCompas(notas))
     }
     return penta

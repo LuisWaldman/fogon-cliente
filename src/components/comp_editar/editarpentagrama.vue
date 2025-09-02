@@ -101,6 +101,8 @@ function clickAgregarPentagrama() {
   )
 
   props.cancion.pentagramas.push(nPentagrama)
+
+  emit('actualizoPentagrama')
 }
 
 function clickBorrarPentagrama() {
