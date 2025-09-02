@@ -119,11 +119,31 @@ function clickDividirRitmo(indice: number) {
 }
 function estiloRitmo(rIndex: number, aIndex: number) {
   const val = editorDisplay.value.patron[rIndex][aIndex]
-  if (val) {
+  if (!val) {
     return 'background-color: black; color: white; cursor: pointer; text-align: center'
   } else {
     return 'background-color: white; color: black; cursor: pointer; text-align: center'
   }
+}
+
+const agregandonota = ref(false)
+const nuevaNota = ref('')
+function clickAgregarNota() {
+  agregandonota.value = true
+}
+function clickCancelarAgregarNota() {
+  agregandonota.value = false
+  nuevaNota.value = ''
+}
+function clickOkAgregarNota() {
+  if (nuevaNota.value.trim() !== '') {
+    editorDisplay.value.notas.push(nuevaNota.value.trim())
+    editorDisplay.value.patron.forEach((r) => {
+      r.push(false)
+    })
+    
+  }
+  
 }
 
 const instroBateria = EditAcordePentagrama.InstrumentosBateria
@@ -196,11 +216,21 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
             :style="estiloRitmo(ritindex, index)"
             :colspan="16 / r"
           >
-            {{ editorDisplay.patron[ritindex][index] }}
+            
           </td>
         </tr>
       </tbody>
     </table>
+  </div>
+  <div>
+    <span @click="clickAgregarNota">[Agregar Nota]</span>
+
+    <div v-if="agregandonota">
+      <input type="text" v-model="nuevaNota" />
+      <span @click="clickOkAgregarNota">[Ok]</span>
+    <span @click="clickCancelarAgregarNota">[Cancelar]</span>
+
+    </div>
   </div>
 
   <renglonpentagrama

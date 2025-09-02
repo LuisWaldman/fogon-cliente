@@ -67,7 +67,9 @@ export class EditCompasPentagrama {
     acordePentagrama.forEach((s) => {
       const existe = this.notas.indexOf(s.nota)
       if (existe !== -1) {
-        toPush[existe] = true
+        if (!s.duracion.endsWith('r')) {
+            toPush[existe] = true
+        }
       }
     })
 

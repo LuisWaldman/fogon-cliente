@@ -78,13 +78,7 @@ function ActualizarRitmo() {
     helpPenta.creaCompasPentagrama(pentaObtenido, 0)
   CtrlrenglonPentagrama.value.Dibujar()
 }
-/*
-function cambiarPatronSeleccionado() {
-  refEstiloEditandoAcorde.value =
-    refPatrones.value[patronSeleccionado.value].GetEstilo()
-  ActualizarRitmo()
-}
-*/
+
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
 
@@ -181,7 +175,7 @@ function ActualizorInstrumento() {
     </select>
   </div>
   <editarCompas
-    v-if="cancion.pentagramas[idPentagramaEditando]"
+    v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
     :cancion="cancion"
     :pentagramaId="idPentagramaEditando"
     :compas="compas"
