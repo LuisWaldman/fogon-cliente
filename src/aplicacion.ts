@@ -138,6 +138,9 @@ export default class Aplicacion {
     appStore.estadoReproduccion = 'pausado'
     appStore.estadosApp.texto = 'Cancion Cargada'
     appStore.estadosApp.estado = 'ok'
+    if (appStore.estadoSesion == 'conectado') {
+      this.reproductorConectado?.SetCancion(origen, cancionObtenida)
+    }
     this.router?.push('/tocar')
   }
   updateCompas(compas: number) {
