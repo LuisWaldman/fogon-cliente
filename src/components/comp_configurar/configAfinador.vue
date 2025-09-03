@@ -12,6 +12,7 @@ const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
 const micHelper = new MicHelper()
+const musicaHelper = new MusicaHelper()
 const refMicEstado = ref('')
 const mediaStream = ref<MediaStream | null>(null)
 const notasAfinar = ref([] as NotaAfinar[])
@@ -43,6 +44,8 @@ const notas: string[] = [
 ]
 const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
+const EscuchandoAcorde = ref<string>('')
+
 const mostrarEscala = ref(false)
 const escalaMenor = ref(false)
 const refViendoEscala = ref(0)
@@ -165,7 +168,7 @@ function detectMultipleFrequencies(
   }
 
   // Encontrar picos en el espectro
-  const threshold = Math.max(...spectrum) * 0.1 // 10% del pico máximo
+  const threshold = Math.max(...spectrum) * 0.6 // Aumentar de 0.1 a 0.3
   const minFreq = 80 // Frecuencia mínima para guitarra
   const maxFreq = 2000 // Frecuencia máxima relevante
 
@@ -205,9 +208,10 @@ function detectMultipleFrequencies(
   })
 
   indexedFreqs.sort((a, b) => b.magnitude - a.magnitude)
-  
-  const frequenciesret: FrecuenciaDetectada[] = indexedFreqs.map((item) => (
-    new FrecuenciaDetectada(item.freq, item.magnitude)  ))
+
+  const frequenciesret: FrecuenciaDetectada[] = indexedFreqs.map(
+    (item) => new FrecuenciaDetectada(item.freq, item.magnitude),
+  )
   return frequenciesret
 }
 const detectFrequency = () => {
@@ -227,10 +231,18 @@ const detectFrequency = () => {
 
   // Filtrar frecuencias válidas y remover la principal si está presente
   otrasFrecuencias.value = detectedFreqs
-    .filter((freq) => freq.frecuencia > 0 && Math.abs(freq.frecuencia - mainFreq) > 5) // Evitar duplicados cercanos
+    .filter(
+      (freq) => freq.frecuencia > 0 && Math.abs(freq.frecuencia - mainFreq) > 5,
+    ) // Evitar duplicados cercanos
     .slice(0, 5) // Máximo 5 frecuencias adicionales
   otrasNotas.value = otrasFrecuencias.value.map((freq) => {
-    const nota = notasSonido.value[HelperSonidos.GetNotaDesdeFrecuenciaConNotasSonido(freq.frecuencia, notasSonido.value)]
+    const nota =
+      notasSonido.value[
+        HelperSonidos.GetNotaDesdeFrecuenciaConNotasSonido(
+          freq.frecuencia,
+          notasSonido.value,
+        )
+      ]
     return nota.nota + nota.octava
   })
   if (frequency.value !== -1) {
@@ -239,6 +251,13 @@ const detectFrequency = () => {
       notasSonido.value,
     )
   }
+  EscuchandoAcorde.value =
+    musicaHelper.GetAcordeDeNotas(
+      notasSonido.value[mostrandoNota.value].nota +
+        notasSonido.value[mostrandoNota.value].octava,
+      otrasNotas.value,
+    ).nombre || ''
+  
 
   requestAnimationFrame(detectFrequency)
 }
@@ -306,6 +325,7 @@ import { onMounted, onUnmounted } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import { HelperSonidos } from '../../modelo/sonido/helperSonido'
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
+import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
 
 onMounted(() => {
   Solicitar()
@@ -405,8 +425,8 @@ function ajusteTexto(
           </div>
         </div>
 
-        <div v-for="(nota, index) in otrasNotas" :key="index" class="contDatos">
-          <div>Mg: {{ otrasFrecuencias[index].magnitud.toFixed(3) }}</div>
+        <div class="contDatos">
+          <div>Acorde</div>
           <div
             style="
               font-size: xx-large;
@@ -415,12 +435,9 @@ function ajusteTexto(
               text-overflow: ellipsis;
             "
           >
-            {{ nota }}
-            
+            {{ EscuchandoAcorde }}
           </div>
         </div>
-        
-  
       </div>
 
       <div
