@@ -34,6 +34,6 @@ export class PentagramaNotas {
     return this.mapaDuraciones[duracionId] ?? '4n' // Valor por defecto si no se encuentra
   }
   public static duracionRitmo(duracionId: string): number {
-    return this.mapaDuracionRitmo[duracionId] ?? 4 // Valor por defecto si no se encuentra
+    return this.mapaDuracionRitmo[duracionId.replace('r', '')] ?? 4 // Valor por defecto si no se encuentra
   }
 }
