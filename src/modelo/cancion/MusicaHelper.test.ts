@@ -215,6 +215,5 @@ describe('MusicaHelper', () => {
     expect(
       helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'Bb4', 'D5']).nombre,
     ).toEqual('Cadd9')
-
   })
 })

@@ -2,6 +2,7 @@
 import { onMounted, ref, watch } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import renglonpentagrama from '../comp_tocar/Tocar_renglonPentagrama.vue'
+import editarPatron from './editarCompasPatron.vue'
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
@@ -159,6 +160,10 @@ const instroBateria = [
 ]
 
 const notasBateria = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
+const viendoPatron = ref(false)
+function clickVerPatron() {
+  viendoPatron.value = !viendoPatron.value
+}
 </script>
 <template>
   <div>
@@ -236,7 +241,15 @@ const notasBateria = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
   </div>
   <div>
     <span @click="clickAgregarNota">[Agregar Nota]</span>
-
+    <span @click="clickVerPatron">[PATRON]</span>
+    <editarPatron
+      v-if="viendoPatron"
+      :cancion="cancion"
+      :pentagramaId="pentagramaId"
+      :compas="compas"
+      :editorDisplay="editorDisplay"
+      @actualizoPentagrama="ImpactarCambiosEditor()"
+    ></editarPatron>
     <div v-if="agregandonota">
       <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
       <select v-if="refEsBatera" v-model="nuevaNota">

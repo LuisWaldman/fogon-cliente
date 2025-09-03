@@ -8,8 +8,6 @@ export class DisplaySistemaPentagrama {
   public static GetDefault(): DisplaySistemaPentagrama {
     const sistema = new DisplaySistemaPentagrama()
     sistema.pentagramas.push(new DisplayInstrumentoPentagrama([], 'treble'))
-
-    sistema.pentagramas.push(new DisplayInstrumentoPentagrama([], 'treble'))
     const refCompasPentagrama = new DisplayCompasPentagrama(0)
     refCompasPentagrama.acordes.push(new DisplayAcordesPentagrama())
     refCompasPentagrama.acordes[0].Notas.push(new DisplayNotaPentagrama('C', 4))

@@ -19,10 +19,15 @@ export class HelperEditPentagrama {
     const acordes = cancion.acordes.GetTodosLosAcordes()
     const desdeacorde: string = acordes[compas]
     const musica = new MusicaHelper()
+    const esBat = pentagrama.instrumento.includes('ater')
     for (let i = 0; i < acordes.length; i++) {
-      const hastaacorde: string = acordes[i]
-      const desplaza = musica.DistanciaAcordes(desdeacorde, hastaacorde)
-      pentagrama.compases.push(this.getCompasDesplazado(display, desplaza))
+      if (esBat) {
+        pentagrama.compases.push(this.getCompas(display))
+      } else {
+        const hastaacorde: string = acordes[i]
+        const desplaza = musica.DistanciaAcordes(desdeacorde, hastaacorde)
+        pentagrama.compases.push(this.getCompasDesplazado(display, desplaza))
+      }
     }
   }
   public getDisplayEditCompas(

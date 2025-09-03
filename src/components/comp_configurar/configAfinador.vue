@@ -168,7 +168,7 @@ function detectMultipleFrequencies(
   }
 
   // Encontrar picos en el espectro
-  const threshold = Math.max(...spectrum) * 0.6 // Aumentar de 0.1 a 0.3
+  const threshold = Math.max(...spectrum) * 0.3 // Aumentar de 0.1 a 0.3
   const minFreq = 80 // Frecuencia mínima para guitarra
   const maxFreq = 2000 // Frecuencia máxima relevante
 
@@ -257,7 +257,6 @@ const detectFrequency = () => {
         notasSonido.value[mostrandoNota.value].octava,
       otrasNotas.value,
     ).nombre || ''
-  
 
   requestAnimationFrame(detectFrequency)
 }

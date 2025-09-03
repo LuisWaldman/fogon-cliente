@@ -1,6 +1,17 @@
 import type { PentagramaNotas } from '../../cancion/pentagramanotas'
 
 export class EditCompasPentagrama {
+  SetNewRitmo(parRitmo: number[]) {
+    const nuevoRitmo: number[] = []
+    const nuevoAcordespatron: boolean[][] = []
+    for (let i = 0; i < parRitmo.length; i++) {
+      nuevoRitmo.push(parRitmo[i])
+      nuevoAcordespatron.push(new Array(this.notas.length).fill(true))
+    }
+
+    this.ritmo = nuevoRitmo
+    this.patron = nuevoAcordespatron
+  }
   public ritmo: number[] = []
   public notas: string[] = []
   public patron: boolean[][] = []
