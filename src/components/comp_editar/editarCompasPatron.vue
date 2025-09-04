@@ -32,6 +32,18 @@ function clickOkPatron() {
     const notasAcorde = musica.GetNotasdeacorde(acordeEdit, agregandoNotasAcordeOctava.value)
     props.editorDisplay.SetNotas(notasAcorde)
     emit('actualizoPentagrama')
+  } else if (agregandoPatronBateria.value) {
+    props.editorDisplay.SetNewRitmo([8,8,8,8,8,8,8,8])
+    props.editorDisplay.SetNotas(["D4", "E5", "F4"])
+    props.editorDisplay.patron[0] = [true, true, false]
+    props.editorDisplay.patron[1] = [false, true, true]
+    props.editorDisplay.patron[2] = [true, true, false]
+    props.editorDisplay.patron[3] = [false, true, true]
+    props.editorDisplay.patron[4] = [false, true, false]
+    props.editorDisplay.patron[5] = [false, true, false]
+    props.editorDisplay.patron[6] = [false, true, false]
+    props.editorDisplay.patron[7] = [false, true, false]    
+    emit('actualizoPentagrama')
   }
 }
 const cambiandoRitmo = ref(false)
@@ -41,18 +53,34 @@ const nuevoRitmoEdit = ref('')
 function cambiarRitmo() {
   cambiandoRitmo.value = true
   agregandoNotasAcorde.value = false
+  agregandoPatronBateria.value = false
 }
 
 const agregandoNotasAcordeOctava = ref(4)
 function agregarNota() {
   cambiandoRitmo.value = false
   agregandoNotasAcorde.value = true
+  agregandoPatronBateria.value = false
+}
+
+const agregandoPatronBateria = ref(false)
+const agregandoPatronBateriaIndice = ref(1)
+function agregarPatron() {
+  cambiandoRitmo.value = false
+  agregandoNotasAcorde.value = false
+  agregandoPatronBateria.value = true
+
 }
 </script>
 <template>
+  
   <div>
+    <div>
     <span @click="cambiarRitmo">[Cambiar ritmo]</span>
     <span @click="agregarNota">[Agregar Notas Acorde]</span>
+    <span @click="agregarPatron">[Agregar Patron Bateria]</span>
+    </div>
+    <div>
     <select v-model="nuevoRitmo" v-if="cambiandoRitmo">
       <option value="1">Una redonda</option>
       <option value="2,2">Dos blancas</option>
@@ -82,6 +110,13 @@ function agregarNota() {
       <option value="7">7</option>
       <option value="8">8</option>
     </select>
+
+    <select v-model="agregandoPatronBateriaIndice" v-if="agregandoPatronBateria">
+      <option value="1">Rock</option>
+      <option value="2">Rock II</option>
+      <option value="3">Balada</option>
+      <option value="4">Tropical</option>
+    </select></div>
     <span @click="clickOkPatron">[Ok]</span>
   </div>
 </template>
