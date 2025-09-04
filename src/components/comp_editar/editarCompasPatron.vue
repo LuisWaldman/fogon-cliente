@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import type { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
+import { a } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 
 const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
@@ -22,7 +23,8 @@ function clickOkPatron() {
       nuevoRitmo.value === 'otro' ? nuevoRitmoEdit.value : nuevoRitmo.value
     props.editorDisplay.SetNewRitmo(ritmo.split(',').map((x) => parseInt(x)))
     emit('actualizoPentagrama')
-  } else if (agregandoNotasAcorde.value) {
+  } 
+  if (agregandoNotasAcorde.value) {
     const musica = new MusicaHelper()
     const todosAcordes = props.cancion.acordes.GetTodosLosAcordes()
     const acordeEdit = todosAcordes[props.compas]
@@ -32,7 +34,8 @@ function clickOkPatron() {
     )
     props.editorDisplay.SetNotas(notasAcorde)
     emit('actualizoPentagrama')
-  } else if (agregandoPatronBateria.value) {
+  }
+  if (agregandoPatronBateria.value) {
     props.editorDisplay.SetNewRitmo([8, 8, 8, 8, 8, 8, 8, 8])
     props.editorDisplay.SetNotas(['D4', 'E5', 'F4'])
     props.editorDisplay.patron[0] = [true, true, false]
@@ -43,6 +46,31 @@ function clickOkPatron() {
     props.editorDisplay.patron[5] = [false, true, false]
     props.editorDisplay.patron[6] = [false, true, false]
     props.editorDisplay.patron[7] = [false, true, false]
+    emit('actualizoPentagrama')
+  }
+  if (agregaGuitarreo.value) {
+    const ritmonuevo: number[] = []
+    const connota: boolean[] = []
+    for (let i = 0; i < 4; i++) {
+      const pri = guitarreo.value[i * 2]
+      const seg = guitarreo.value[i * 2 + 1]
+      if (!seg) {
+        ritmonuevo.push(4)
+        connota.push(pri)
+      } else {
+        ritmonuevo.push(8)
+        ritmonuevo.push(8)
+        connota.push(pri)
+        connota.push(seg)
+      }
+    }
+    props.editorDisplay.SetNewRitmo(ritmonuevo)
+    for (let i = 0; i < ritmonuevo.length; i++) {
+      for (let j = 0; j < props.editorDisplay.patron[i].length; j++) {
+        props.editorDisplay.patron[i][j] = connota[i]
+      }
+    }
+
     emit('actualizoPentagrama')
   }
 }
@@ -135,8 +163,8 @@ function clickParteGuitarreo(index: number) {
         <div v-for="(i, index) in guitarreo" :key="index" style="display: flex;">
           <div @click="clickParteGuitarreo(index)">
             <span v-if="!i">*</span>
-          <span v-if="i && index % 2 === 0">⬆️</span>
-          <span v-if="i && index % 2 !== 0">⬇️</span>
+          <span v-if="i && index % 2 === 0">⬇️</span>
+          <span v-if="i && index % 2 !== 0">⬆️</span>
           <span v-if="index % 2 !== 0 && index < 7">-</span>
           </div>
           
