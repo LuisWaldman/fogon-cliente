@@ -202,7 +202,7 @@ function detectMultipleFrequencies(
   }
 
   // Ordenar por magnitud (más fuerte primero) y tomar máximo 6 frecuencias
-  const indexedFreqs = frequencies.map((freq, index) => {
+  const indexedFreqs = frequencies.map((freq) => {
     const k = Math.round((freq * SIZE) / sampleRate)
     return { freq, magnitude: spectrum[k] || 0 }
   })

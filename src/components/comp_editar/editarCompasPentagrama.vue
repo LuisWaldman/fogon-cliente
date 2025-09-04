@@ -7,7 +7,6 @@ import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistema
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
-import { EditAcordePentagrama } from '../../modelo/pentagrama/editPentagrama/editAcordePentagrama'
 
 const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
