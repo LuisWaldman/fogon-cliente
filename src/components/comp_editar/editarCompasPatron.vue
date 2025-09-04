@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import type { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
-import { a } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
+import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 
 const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
@@ -13,29 +13,30 @@ const props = defineProps<{
   editorDisplay: EditCompasPentagrama
 }>()
 
-function clickOkPatron() {
-  if (cambiandoRitmo.value) {
-    if (nuevoRitmo.value === 'otro' && nuevoRitmoEdit.value.trim() === '') {
+function setRitmo() 
+{
+  if (nuevoRitmo.value === 'otro' && nuevoRitmoEdit.value.trim() === '') {
       alert('Escribe el ritmo separado por comas')
       return
     }
     const ritmo =
       nuevoRitmo.value === 'otro' ? nuevoRitmoEdit.value : nuevoRitmo.value
     props.editorDisplay.SetNewRitmo(ritmo.split(',').map((x) => parseInt(x)))
-    emit('actualizoPentagrama')
-  } 
-  if (agregandoNotasAcorde.value) {
+}
+function HacerPatron(cambiarRitmo: boolean, agregarNotasAcorde: boolean, agregaGuitarreo: boolean, acordeAgregar: string, octavaAgregar: number, agregandoPatronBateria: boolean) {
+    if (cambiarRitmo) {
+    setRitmo()
+  }
+
+  if (agregarNotasAcorde) {
     const musica = new MusicaHelper()
-    const todosAcordes = props.cancion.acordes.GetTodosLosAcordes()
-    const acordeEdit = todosAcordes[props.compas]
     const notasAcorde = musica.GetNotasdeacorde(
-      acordeEdit,
-      agregandoNotasAcordeOctava.value,
+      acordeAgregar,
+      octavaAgregar,
     )
     props.editorDisplay.SetNotas(notasAcorde)
-    emit('actualizoPentagrama')
   }
-  if (agregandoPatronBateria.value) {
+  if (agregandoPatronBateria) {
     props.editorDisplay.SetNewRitmo([8, 8, 8, 8, 8, 8, 8, 8])
     props.editorDisplay.SetNotas(['D4', 'E5', 'F4'])
     props.editorDisplay.patron[0] = [true, true, false]
@@ -46,9 +47,10 @@ function clickOkPatron() {
     props.editorDisplay.patron[5] = [false, true, false]
     props.editorDisplay.patron[6] = [false, true, false]
     props.editorDisplay.patron[7] = [false, true, false]
-    emit('actualizoPentagrama')
+
   }
-  if (agregaGuitarreo.value) {
+  if (agregaGuitarreo) {
+    console.log("Agregar guitarreo")
     const ritmonuevo: number[] = []
     const connota: boolean[] = []
     for (let i = 0; i < 4; i++) {
@@ -71,44 +73,102 @@ function clickOkPatron() {
       }
     }
 
-    emit('actualizoPentagrama')
+    
   }
+
 }
+function clickOkPatron() {
+  
+   const todosAcordes = props.cancion.acordes.GetTodosLosAcordes()
+  const acordeEdit = todosAcordes[props.compas]
+  HacerPatron(cambiandoRitmo.value, agregandoNotasAcorde.value, agregaGuitarreo.value, acordeEdit, parseInt(agregandoNotasAcordeOctava.value), agregandoPatronBateria.value)
+  emit('actualizoPentagrama')
+}
+function clickEnTodos() {
+  
+   const todosAcordes = props.cancion.acordes.GetTodosLosAcordes()
+   const editHelper = new HelperEditPentagrama()
+      for (let i = 0; i < props.cancion.pentagramas[props.pentagramaId].compases.length; i++) {
+    const acordeEdit = todosAcordes[i]
+    HacerPatron(cambiandoRitmo.value, agregandoNotasAcorde.value, agregaGuitarreo.value, acordeEdit, parseInt(agregandoNotasAcordeOctava.value), agregandoPatronBateria.value)
+    props.cancion.pentagramas[props.pentagramaId].compases[i] = editHelper.getCompas(props.editorDisplay)
+   }
+  emit('actualizoPentagrama')
+}
+
+function clickEnParte() {
+
+    let totalCompases = 0
+    let mostrandoParte = 0
+    let mostrandoCompasparte = 0
+
+    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
+      let compasesxparte =
+        props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]]
+          .acordes.length
+      if (props.compas < totalCompases + compasesxparte) {
+        mostrandoParte = i
+        mostrandoCompasparte = props.compas - totalCompases
+        break
+      }
+      totalCompases += compasesxparte
+    }
+   
+    const todosAcordes = props.cancion.acordes.GetTodosLosAcordes()
+    const editHelper = new HelperEditPentagrama()
+    let cont = 0
+    for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {
+      for (let j = 0; j < props.cancion.acordes.partes[props.cancion.acordes.ordenPartes[i]].acordes.length; j++) {
+        if (props.cancion.acordes.ordenPartes[i] === mostrandoParte) {
+          const acordeEdit = todosAcordes[cont]
+          HacerPatron(cambiandoRitmo.value, agregandoNotasAcorde.value, agregaGuitarreo.value, acordeEdit, parseInt(agregandoNotasAcordeOctava.value), agregandoPatronBateria.value)
+          props.cancion.pentagramas[props.pentagramaId].compases[cont] = editHelper.getCompas(props.editorDisplay)
+
+        } 
+
+          cont++
+
+        }
+    }
+
+  emit('actualizoPentagrama')
+}
+
 const cambiandoRitmo = ref(false)
 const agregaGuitarreo = ref(false)
 const agregandoNotasAcorde = ref(false)
 const nuevoRitmo = ref('1')
 const nuevoRitmoEdit = ref('')
 function cambiarRitmo() {
-  cambiandoRitmo.value = true
-  agregandoNotasAcorde.value = false
-  agregandoPatronBateria.value = false
-  agregaGuitarreo.value = false
+  cambiandoRitmo.value = !cambiandoRitmo.value 
 }
 const guitarreo = ref([true, true, true, true, true, true, true, true])
 
 function agregarGuitarreo() {
-  agregaGuitarreo.value = true
-  cambiandoRitmo.value = false
-  agregandoNotasAcorde.value = false
-  agregandoPatronBateria.value = false
+  agregaGuitarreo.value = !agregaGuitarreo.value
 }
 
-const agregandoNotasAcordeOctava = ref(4)
+const agregandoNotasAcordeOctava = ref("4")
 function agregarNota() {
-  cambiandoRitmo.value = false
-  agregandoNotasAcorde.value = true
-  agregandoPatronBateria.value = false
-  agregaGuitarreo.value = false
+  agregandoNotasAcorde.value = !agregandoNotasAcorde.value 
+}
+
+/*
+clickEnTodos" v-if="viendoMasQueOk">[En todos]</span>
+    <span @click="clickEnParte"  v-if="viendoMasQueOk">[En parte]</span>
+    <span @click="clickEnAcordeParte"  v-if="viendoMasQueOk
+
+*/
+const viendoMasQueOk = ref(false)
+function clickMasPatron() {
+  viendoMasQueOk.value = !viendoMasQueOk.value
 }
 
 const agregandoPatronBateria = ref(false)
 const agregandoPatronBateriaIndice = ref(1)
 function agregarPatron() {
-  cambiandoRitmo.value = false
-  agregandoNotasAcorde.value = false
-  agregandoPatronBateria.value = true
-  agregaGuitarreo.value = false
+  agregandoPatronBateria.value = !agregandoPatronBateria.value 
+  
 }
 function clickParteGuitarreo(index: number) {
   guitarreo.value[index] = !guitarreo.value[index]
@@ -172,6 +232,10 @@ function clickParteGuitarreo(index: number) {
       </div>
     </div>
     <span @click="clickOkPatron">[Ok]</span>
+    <span @click="clickMasPatron">[+]</span>
+    <span @click="clickEnTodos" v-if="viendoMasQueOk">[En todos]</span>
+    <span @click="clickEnParte"  v-if="viendoMasQueOk">[En parte]</span>
+    <span @click="clickEnAcordeParte"  v-if="viendoMasQueOk">[En acorde de partes]</span>
   </div>
 </template>
 <style scoped></style>
