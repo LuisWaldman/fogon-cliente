@@ -57,6 +57,8 @@ function cambiarRitmo() {
   agregandoPatronBateria.value = false
   agregaGuitarreo.value = false
 }
+const guitarreo = ref([true, true, true, true, true, true, true, true])
+
 function agregarGuitarreo() {
   agregaGuitarreo.value = true
   cambiandoRitmo.value = false
@@ -79,6 +81,9 @@ function agregarPatron() {
   agregandoNotasAcorde.value = false
   agregandoPatronBateria.value = true
   agregaGuitarreo.value = false
+}
+function clickParteGuitarreo(index: number) {
+  guitarreo.value[index] = !guitarreo.value[index]
 }
 </script>
 <template>
@@ -127,9 +132,14 @@ function agregarPatron() {
         <option value="4">Tropical</option>
       </select>
       <div v-if="agregaGuitarreo" style="display: flex">
-        <div v-for="i in 4" :key="i" style="display: flex;">
-          <div>⬆️</div>
-          <div>⬇️</div>
+        <div v-for="(i, index) in guitarreo" :key="index" style="display: flex;">
+          <div @click="clickParteGuitarreo(index)">
+            <span v-if="!i">*</span>
+          <span v-if="i && index % 2 === 0">⬆️</span>
+          <span v-if="i && index % 2 !== 0">⬇️</span>
+          <span v-if="index % 2 !== 0 && index < 7">-</span>
+          </div>
+          
         </div>
       </div>
     </div>
