@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
+import type { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada';
 const octavasCirculo = ref(7)
 const DesdeOctavasCirculo = ref(4)
 
@@ -8,7 +9,7 @@ const props = defineProps<{
   notasSonido: NotaSonido[]
   clasenotasSonido: string[]
   frecuencia: number
-  otrasNotas?: number[]
+  otrasNotas?: FrecuenciaDetectada[]
 }>()
 
 const maxRadio = 500
@@ -133,11 +134,11 @@ function StyleFrecuenciaNotaAcorde(frecuencia: number) {
         <div
           v-for="(value, index) in otrasNotas"
           :key="index"
-          :style="StyleFrecuenciaNotaAcorde(value)"
+          :style="StyleFrecuenciaNotaAcorde(value.frecuencia)"
           class="frecuencia viendoFrecuencia"
         >
           <span>
-            {{ value.toFixed(0) }}
+            {{ value.frecuencia.toFixed(0) }}
           </span>
         </div>
       </div>
