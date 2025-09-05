@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
-import type { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada';
+import type { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
 const octavasCirculo = ref(7)
 const DesdeOctavasCirculo = ref(4)
 

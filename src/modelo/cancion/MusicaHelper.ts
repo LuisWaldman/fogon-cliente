@@ -323,6 +323,9 @@ export class MusicaHelper {
     }
 
     let notaInd = this.numeroNota(buscar)
+    if (notaInd < 0) {
+      return []
+    }
     const modoSusecion: number[] = this.modos[modoEscala]
     const acordes = [this.notas[notaInd]]
     for (let i = 0; i < modoSusecion.length; i++) {
@@ -420,6 +423,7 @@ export class MusicaHelper {
       tiene7 = true
     }
     const notas = this.GetNotasdeescala(acordeBase)
+    if (notas.length == 0) return toRet
     const nronota = this.notas.indexOf(notas[0])
     let octavaActual = octava.toString()
     toRet.push(notas[0] + octavaActual)
