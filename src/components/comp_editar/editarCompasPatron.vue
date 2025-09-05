@@ -40,16 +40,31 @@ function HacerPatron(
     props.editorDisplay.SetNotas(notasAcorde)
   }
   if (agregandoPatronBateria) {
-    props.editorDisplay.SetNewRitmo([8, 8, 8, 8, 8, 8, 8, 8])
-    props.editorDisplay.SetNotas(['D4', 'E5', 'F4'])
-    props.editorDisplay.patron[0] = [true, true, false]
-    props.editorDisplay.patron[1] = [false, true, true]
-    props.editorDisplay.patron[2] = [true, true, false]
-    props.editorDisplay.patron[3] = [false, true, true]
-    props.editorDisplay.patron[4] = [false, true, false]
-    props.editorDisplay.patron[5] = [false, true, false]
-    props.editorDisplay.patron[6] = [false, true, false]
-    props.editorDisplay.patron[7] = [false, true, false]
+    if (agregandoPatronBateriaIndice.value === 1) {
+      // Rock
+      props.editorDisplay.SetNewRitmo([8, 8, 8, 8, 8, 8, 8, 8])
+      props.editorDisplay.SetNotas(['D4', 'E5', 'F4'])
+      props.editorDisplay.patron[0] = [true, true, false]
+      props.editorDisplay.patron[1] = [false, true, true]
+      props.editorDisplay.patron[2] = [true, true, false]
+      props.editorDisplay.patron[3] = [false, true, true]
+      props.editorDisplay.patron[4] = [false, true, false]
+      props.editorDisplay.patron[5] = [false, true, false]
+      props.editorDisplay.patron[6] = [false, true, false]
+      props.editorDisplay.patron[7] = [false, true, false]
+    }
+
+    if (agregandoPatronBateriaIndice.value === 2) {
+      // Balada rock
+      props.editorDisplay.SetNewRitmo([4, 4, 8, 8, 8, 8])
+      props.editorDisplay.SetNotas(['D4', 'F4', 'E5'])
+      props.editorDisplay.patron[0] = [true, false, false]
+      props.editorDisplay.patron[1] = [false, true, false]
+      props.editorDisplay.patron[2] = [true, true, true]
+      props.editorDisplay.patron[3] = [false, true, false]
+      props.editorDisplay.patron[4] = [true, true, true]
+      props.editorDisplay.patron[5] = [false, true, false]
+    }
   }
   if (agregaGuitarreo) {
     console.log('Agregar guitarreo')
@@ -284,10 +299,10 @@ function clickParteGuitarreo(index: number) {
         v-model="agregandoPatronBateriaIndice"
         v-if="agregandoPatronBateria"
       >
-        <option value="1">Rock</option>
-        <option value="2">Rock II</option>
-        <option value="3">Balada</option>
-        <option value="4">Tropical</option>
+        <option :value="1">Rock</option>
+        <option :value="2">Rock II</option>
+        <option :value="3">Balada</option>
+        <option :value="4">Tropical</option>
       </select>
       <div v-if="agregaGuitarreo" style="display: flex">
         <div v-for="(i, index) in guitarreo" :key="index" style="display: flex">
