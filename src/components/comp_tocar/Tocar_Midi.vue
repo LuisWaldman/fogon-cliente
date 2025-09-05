@@ -108,27 +108,41 @@ function stop() {
 }
 
 const tiempo = new Tiempo()
+function setinstrumentovolumen(instrumento: string, volumen: string) {
+  midiPlayer.setInstrumentVolume(instrumento, parseFloat(volumen))
+}
+
 </script>
 <template>
-  <div>
-    <span @click="play">[PLAY]</span>
-    <span @click="stop">[PAUSA]</span>
-    {{ tiempo.formatSegundos(refTiempo / 1000) }}
-  </div>
-  <div style="display: flex">
+  <div >
     <div
       v-for="instrumento in todosInstrumentos"
       :key="instrumento"
       class="instrumento"
-      :class="{ seleccionado: InstrumentosSelecconados.includes(instrumento) }"
-      @click="clickInstrumentos(instrumento)"
+      
     >
+    <div
+    :class="{ seleccionado: InstrumentosSelecconados.includes(instrumento) }"
+      @click="clickInstrumentos(instrumento)">
       {{ instrumento }}
+      </div>
+      <div v-if="InstrumentosSelecconados.includes(instrumento)">
+      <input type="range" min="-10" max="5" step="0.1" @input="setinstrumentovolumen(instrumento, $event.target.value)" />
+      </div>
     </div>
-    <div></div>
+      <div class="tiempoMidi">
+    TIEMPO: 
+    {{ tiempo.formatSegundos(refTiempo / 1000) }}
+  </div>
+
   </div>
 </template>
 <style scoped>
+.tiempoMidi {
+  font-size: x-large;
+  border: 1px solid;
+  padding: 4px;
+}
 .seleccionado {
   border: 1px solid;
   background-color: lightcyan;
