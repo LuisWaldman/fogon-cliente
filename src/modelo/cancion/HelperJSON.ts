@@ -38,7 +38,6 @@ export class HelperJSON {
       })),
       archivo: cancion.archivo,
     })
-    console.log(cancion.pentagramas[0].clave)
     return cancionJSON
   }
 
