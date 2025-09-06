@@ -25,7 +25,9 @@ export class PentagramaNotas {
   static mapaDuracionRitmo: Record<string, number> = {
     '1': 1, // redonda
     '2': 2, // blanca
+    '2d': 3, // blanca
     '4': 4, // negra
+    '4d': 6, // negra
     q: 4, // negra
     '8': 8, // corchea
     '16': 16, // semicorchea

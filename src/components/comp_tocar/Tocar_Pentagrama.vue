@@ -24,7 +24,6 @@ onMounted(() => {
 })
 
 function Actualizar() {
-  console.log('Actualizando con', props.cancion.pentagramas.length, modos.value)
   cargarModos()
   const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value)
   display.value = newDisplay

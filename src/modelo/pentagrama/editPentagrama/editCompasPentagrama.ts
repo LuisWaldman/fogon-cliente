@@ -46,8 +46,7 @@ export class EditCompasPentagrama {
       if (i == indice - 1) {
         const ritmo = this.ritmo[i]
         const ritmoAunir = this.ritmo[i + 1]
-        const ritmoResultante = Math.round(1 / (1 / ritmo + 1 / ritmoAunir))
-        console.log(ritmo, ritmoAunir, ritmoResultante)
+        const ritmoResultante = 1 / (1 / ritmo + 1 / ritmoAunir)
         nuevoRitmo.push(ritmoResultante)
         nuevoAcordespatron.push(this.patron[i])
       } else if (i !== indice) {

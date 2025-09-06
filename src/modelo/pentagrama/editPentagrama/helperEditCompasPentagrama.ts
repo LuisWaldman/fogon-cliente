@@ -57,12 +57,17 @@ export class HelperEditPentagrama {
   public getCompas(edit: EditCompasPentagrama): PentagramaCompas {
     const pentas: PentagramaNotas[][] = []
     edit.ritmo.forEach((ritmo, index) => {
+      let ritmoReal = ritmo.toString()
+      if (!Number.isInteger(ritmo)) {
+        ritmoReal = Math.floor(ritmo).toString() + 'd'
+      }
+
       const pentatoAdd: PentagramaNotas[] = []
       edit.patron[index].forEach((patron, patronid) => {
         if (patron) {
           const nota = edit.notas[patronid]
           if (nota) {
-            pentatoAdd.push(new PentagramaNotas(nota, ritmo.toString()))
+            pentatoAdd.push(new PentagramaNotas(nota, ritmoReal))
           }
         }
       })
