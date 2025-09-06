@@ -25,9 +25,8 @@ onMounted(() => {
   }
 
   const router = useRouter()
-  console.log('Router en App.vue', router)
   appStore.aplicacion.setRouter(router)
-  appStore.aplicacion.onMounted(cancionUrl)
+  appStore.aplicacion.onMounted()
 })
 </script>
 

@@ -50,7 +50,6 @@ function guardarCambios() {
       props.cancion,
     )
     .then(() => {
-      console.log('Cambios guardados exitosamente')
       emit('cerrar', true)
     })
     .catch((error) => {

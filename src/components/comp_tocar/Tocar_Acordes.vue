@@ -47,7 +47,6 @@ watch(
 
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 function moverScroll(posX: number) {
-  console.log('moverScroll', posX, letraDiv.value)
   letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
 }
 </script>

@@ -40,7 +40,6 @@ watch(
           let ve = index * (tamanioLetra + tamanioAcorde) * factorScroll
           ve -= (tamanioLetra + tamanioAcorde) * 10
           const nuevaPos = Math.max(ve, 0)
-          console.log(`Scrolling to ${nuevaPos}px`)
           moverScroll(nuevaPos)
           return
         }
@@ -66,7 +65,6 @@ function clickEditarRenglon(event: MouseEvent, index: number) {
   // Estimar la posición del carácter (usando el ancho promedio del carácter)
   const caracterPos = Math.round(clickX / anchoCaracter)
   editandoCaracter.value = Math.min(caracterPos, renglones.value[index].length)
-  console.log(`Editando renglon ${index}, caracter ${editandoCaracter.value}`)
   // Hacer focus en el input en el próximo tick
   setTimeout(() => {
     const doc = document.getElementById(
@@ -196,7 +194,6 @@ function Actualizado() {
   return false
 }
 function Actualizar() {
-  console.log('CONTROLAS...')
   ActualizarCancion(props.cancion)
 }
 
