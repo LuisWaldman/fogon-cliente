@@ -38,7 +38,7 @@ function clickEditarRitmo(indice: number) {
   editandoRitmo.value = indice
   puedeUnirPrev.value = indice > 0
   puedeUnirPost.value = indice < editorDisplay.value.ritmo.length - 1
-  puedeDivider.value = editorDisplay.value.ritmo[indice] < 16
+  puedeDivider.value = editorDisplay.value.ritmo[indice] != '16'
 }
 
 const helper = new HelperEditPentagrama()
@@ -182,7 +182,7 @@ function clickVerPatron() {
           <th
             v-for="(r, index) in editorDisplay.ritmo"
             :key="index"
-            :colspan="16 / r"
+            :colspan="16 / parseInt(r)"
             @click="clickEditarRitmo(index)"
             :class="{ EditandoRitmo: editandoRitmo === index }"
           >
@@ -232,7 +232,7 @@ function clickVerPatron() {
             :key="ritindex"
             @click="clickPatron(index, ritindex)"
             :style="estiloRitmo(ritindex, index)"
-            :colspan="16 / r"
+            :colspan="16 / parseInt(r)"
           ></td>
         </tr>
       </tbody>

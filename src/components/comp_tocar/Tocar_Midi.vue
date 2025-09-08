@@ -108,7 +108,8 @@ function stop() {
 }
 
 const tiempo = new Tiempo()
-function setinstrumentovolumen(instrumento: string, volumen: string) {
+function setinstrumentovolumen(instrumento: string, target: EventTarget | null) {
+  const volumen = (target as HTMLInputElement).value
   midiPlayer.setInstrumentVolume(instrumento, parseFloat(volumen))
 }
 </script>
@@ -133,7 +134,7 @@ function setinstrumentovolumen(instrumento: string, volumen: string) {
           min="-10"
           max="5"
           step="0.1"
-          @input="setinstrumentovolumen(instrumento, $event.target.value)"
+          @input="setinstrumentovolumen(instrumento, $event.target)"
         />
       </div>
     </div>
