@@ -45,10 +45,10 @@ export class HelperEditPentagrama {
     pentagrama.notas.forEach((acordePentagrama) => {
       let min = 9999999999
       acordePentagrama.forEach((nota) => {
-        min = Math.min(min, PentagramaNotas.duracionRitmo(nota.duracion))
+        min = Math.min(min, PentagramaNotas.staticDuracionRitmo(nota.duracion))
       })
-
-      ret.ritmo.push(min.toString())
+      const ritmo = PentagramaNotas.duracionToNota(min)
+      ret.ritmo.push(ritmo)
       ret.AddAcorde(acordePentagrama)
     })
     ret.CompletarRitmo()

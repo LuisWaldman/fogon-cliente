@@ -9,8 +9,8 @@ export class EditCompasPentagrama {
     }
     this.patron = nuevoAcordespatron
   }
-  SetNewRitmo(parRitmo: number[]) {
-    const nuevoRitmo: number[] = []
+  SetNewRitmo(parRitmo: string[]) {
+    const nuevoRitmo: string[] = []
     const nuevoAcordespatron: boolean[][] = []
     for (let i = 0; i < parRitmo.length; i++) {
       nuevoRitmo.push(parRitmo[i])
@@ -26,7 +26,14 @@ export class EditCompasPentagrama {
 
   CompletarRitmo() {
     const divisores = [1, 2, 4, 8, 16, 32] // sin puntillo
-    const total = this.ritmo.reduce((acc, d) => acc + 1 / parseInt(d), 0)
+    const total = this.ritmo.reduce((acc, d) => {
+      let toAdd = 1 / parseInt(d)
+      if (d.endsWith('d')) {
+        toAdd *= 1.5
+      }
+      const a = acc + toAdd
+      return a
+    }, 0)
     let restante = 1 - total
 
     while (restante > 0.00001) {

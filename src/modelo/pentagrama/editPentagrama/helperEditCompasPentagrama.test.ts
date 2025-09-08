@@ -39,6 +39,23 @@ describe('Helper Pentagrama', () => {
     expect(acorde.notas[3]).toBe('B4')
   })
 
+  it('Duracion notas', () => {
+    let acorde = new PentagramaNotas('C7', '4')
+    expect(PentagramaNotas.duracionToNota(acorde.duracionRitmo())).toBe('4')
+    expect(acorde.duracion).toBe('4')
+    expect(acorde.duracionRitmo()).toBe(0.25)
+
+    acorde = new PentagramaNotas('C7', '4d')
+    expect(PentagramaNotas.duracionToNota(acorde.duracionRitmo())).toBe('4d')
+    expect(acorde.duracion).toBe('4d')
+    expect(acorde.duracionRitmo()).toBe(0.375)
+
+    acorde = new PentagramaNotas('C7', '2d')
+    PentagramaNotas.duracionToNota(acorde.duracionRitmo())
+    expect(acorde.duracion).toBe('2d')
+    expect(acorde.duracionRitmo()).toBe(0.75)
+  })
+
   it('Acordes de 5', () => {
     const acorde = new EditAcordePentagrama('C5')
     expect(acorde.notas.length).toBe(2)
@@ -66,6 +83,13 @@ describe('Helper Pentagrama', () => {
     retEdit.ritmo = []
     retEdit.CompletarRitmo()
     expect(retEdit.ritmo).toEqual(['1'])
+    retEdit.ritmo = ['2d']
+    retEdit.CompletarRitmo()
+    expect(retEdit.ritmo).toEqual(['2d', '4'])
+
+    retEdit.ritmo = ['2', '4d']
+    retEdit.CompletarRitmo()
+    expect(retEdit.ritmo).toEqual(['2', '4d', '8'])
 
     // Ya tiene una blanca → no se agrega nada
     retEdit.ritmo = ['1']

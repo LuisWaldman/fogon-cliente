@@ -20,7 +20,7 @@ function setRitmo() {
   }
   const ritmo =
     nuevoRitmo.value === 'otro' ? nuevoRitmoEdit.value : nuevoRitmo.value
-  props.editorDisplay.SetNewRitmo(ritmo.split(',').map((x) => parseInt(x)))
+  props.editorDisplay.SetNewRitmo(ritmo.split(',').map((x) => x))
 }
 function HacerPatron(
   cambiarRitmo: boolean,
@@ -271,6 +271,7 @@ function clickParteGuitarreo(index: number) {
       <select v-model="nuevoRitmo" v-if="cambiandoRitmo">
         <option value="1">Una redonda</option>
         <option value="2,2">Dos blancas</option>
+        <option value="2d,4">Blanca con puntilla</option>
         <option value="4,4,4">4 negras</option>
         <option value="2,4,4">2 y 4</option>
         <option value="4,4,2">4 y 2</option>
