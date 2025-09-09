@@ -42,7 +42,7 @@ function HacerPatron(
   if (agregandoPatronBateria) {
     if (agregandoPatronBateriaIndice.value === 1) {
       // Rock
-      props.editorDisplay.SetNewRitmo([8, 8, 8, 8, 8, 8, 8, 8])
+      props.editorDisplay.SetNewRitmo(['8', '8', '8', '8', '8', '8', '8', '8'])
       props.editorDisplay.SetNotas(['D4', 'E5', 'F4'])
       props.editorDisplay.patron[0] = [true, true, false]
       props.editorDisplay.patron[1] = [false, true, true]
@@ -56,7 +56,7 @@ function HacerPatron(
 
     if (agregandoPatronBateriaIndice.value === 2) {
       // Balada rock
-      props.editorDisplay.SetNewRitmo([4, 4, 8, 8, 8, 8])
+      props.editorDisplay.SetNewRitmo(['4', '4', '8', '8', '8', '8'])
       props.editorDisplay.SetNotas(['D4', 'F4', 'E5'])
       props.editorDisplay.patron[0] = [true, false, false]
       props.editorDisplay.patron[1] = [false, true, false]
@@ -68,17 +68,17 @@ function HacerPatron(
   }
   if (agregaGuitarreo) {
     console.log('Agregar guitarreo')
-    const ritmonuevo: number[] = []
+    const ritmonuevo: string[] = []
     const connota: boolean[] = []
     for (let i = 0; i < 4; i++) {
       const pri = guitarreo.value[i * 2]
       const seg = guitarreo.value[i * 2 + 1]
       if (!seg) {
-        ritmonuevo.push(4)
+        ritmonuevo.push('4')
         connota.push(pri)
       } else {
-        ritmonuevo.push(8)
-        ritmonuevo.push(8)
+        ritmonuevo.push('8')
+        ritmonuevo.push('8')
         connota.push(pri)
         connota.push(seg)
       }

@@ -1,38 +1,10 @@
 import { Pentagrama } from '../cancion/pentagrama'
-import { PentagramaCompas } from '../cancion/pentagramacompas'
-import { DisplayAcordesPentagrama } from './DisplayAcordesPentagrama'
-import { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 import { DisplayInstrumentoPentagrama } from './DisplayInstrumentoPentagrama'
-import { DisplayNotaPentagrama } from './DisplayNotapentagrama'
 import { DisplaySistemaPentagrama } from './DisplaySistemaPentagrama'
+import { HelperPentagramas } from './helperPentagramas'
 
 export class DisplayPentagrama {
   public renglones: DisplaySistemaPentagrama[] = []
-  public creaCompasPentagrama(
-    pentagramaCompas: PentagramaCompas,
-    nroCompas: number,
-  ): DisplayCompasPentagrama {
-    const compas = new DisplayCompasPentagrama(nroCompas)
-    for (let i = 0; i < pentagramaCompas.notas.length; i++) {
-      const nuevoAcorde = new DisplayAcordesPentagrama()
-      for (const nota of pentagramaCompas.notas[i]) {
-        let notaOk = nota.nota
-        let octava = 4
-        nuevoAcorde.duracion = nota.duracion.toString()
-
-        // Check if the note ends with a number
-        const match = notaOk.match(/(\D+)(\d+)$/)
-        if (match) {
-          // Extract the note name and octave
-          notaOk = match[1]
-          octava = parseInt(match[2])
-        }
-        nuevoAcorde.Notas.push(new DisplayNotaPentagrama(notaOk, octava))
-      }
-      compas.acordes.push(nuevoAcorde)
-    }
-    return compas
-  }
 
   GetSistema(idsistema: number): DisplaySistemaPentagrama {
     if (this.renglones.length <= idsistema) {
@@ -44,14 +16,19 @@ export class DisplayPentagrama {
     return this.renglones[idsistema]
   }
 
-  AgregarPartitura(pentagrama: Pentagrama) {
+  AgregarPartitura(pentagrama: Pentagrama, escala: string): void {
     let sistema = 0
     let renglon = this.GetSistema(sistema)
     let nInstru = new DisplayInstrumentoPentagrama([], pentagrama.clave)
+    const helper = new HelperPentagramas()
     //renglon.pentagramas.push(nInstru)
 
     for (let i = 0; i < pentagrama.compases.length; i++) {
-      const compPenta = this.creaCompasPentagrama(pentagrama.compases[i], i)
+      const compPenta = helper.creaCompasPentagrama(
+        pentagrama.compases[i],
+        i,
+        escala,
+      )
       nInstru.compases.push(compPenta)
 
       if ((i + 1) % 4 === 0) {

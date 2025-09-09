@@ -60,7 +60,6 @@ export class PentagramaNotas {
     }
   }
 
-
   public static staticDuracionRitmo(duracion: string): number {
     if (duracion.includes('d')) {
       return 1.5 / parseInt(duracion.replace('d', ''), 10)

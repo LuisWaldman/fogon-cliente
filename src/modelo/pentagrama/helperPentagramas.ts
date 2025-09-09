@@ -47,16 +47,37 @@ export class HelperPentagramas {
     const instOk = modos.filter((m) => m.Ver).map((m) => m.Instrumento)
     for (let conPenta = 0; conPenta < cancion.pentagramas.length; conPenta++) {
       if (instOk.includes(cancion.pentagramas[conPenta].instrumento)) {
-        display.AgregarPartitura(cancion.pentagramas[conPenta])
+        display.AgregarPartitura(cancion.pentagramas[conPenta], cancion.escala)
       }
     }
     return display
   }
 
+  static notas: string[] = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+  static mapaDuraciones: Record<string, string[]> = {
+    C: ['', '', '', '', '', '', '', ''],
+    G: ['', '', '', '#', '', '', '', ''],
+    D: ['#', '', '', '#', '', '', '', ''],
+    A: ['#', '', '', '#', '#', '', '', ''],
+    E: ['#', '#', '', '#', '#', '', '', ''],
+    B: ['#', '#', '', '#', '#', '#', '', ''],
+    'F#': ['#', '#', '', '#', '#', '#', '#', ''],
+    'C#': ['#', '#', '#', '#', '#', '#', '#', ''],
+    F: ['', '', '', '', '', '', 'b', ''],
+    Bb: ['', '', '', '', 'b', '', 'b', ''],
+    Eb: ['', '', 'b', '', 'b', '', 'b', ''],
+    Ab: ['', 'b', 'b', '', 'b', '', 'b', ''],
+    Db: ['b', 'b', 'b', '', 'b', '', 'b', ''],
+    Gb: ['b', 'b', 'b', 'b', 'b', '', 'b', ''],
+    Cb: ['b', 'b', 'b', 'b', 'b', 'b', 'b', ''],
+  }
+
   public creaCompasPentagrama(
     pentagramaCompas: PentagramaCompas,
     nroCompas: number,
+    escala: string,
   ): DisplayCompasPentagrama {
+    const mapa = HelperPentagramas.mapaDuraciones[escala]
     const compas = new DisplayCompasPentagrama(nroCompas)
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       const nuevoAcorde = new DisplayAcordesPentagrama()
@@ -72,7 +93,14 @@ export class HelperPentagramas {
           notaOk = match[1]
           octava = parseInt(match[2])
         }
-        nuevoAcorde.Notas.push(new DisplayNotaPentagrama(notaOk, octava))
+        const notaDisplay = new DisplayNotaPentagrama(notaOk, octava)
+        const notaSola = notaOk.substring(0, 1)
+        const modificador = notaOk.substring(1)
+        const indice = HelperPentagramas.notas.indexOf(notaSola)
+        if (mapa[indice] !== modificador) {
+          notaDisplay.modificador = modificador
+        }
+        nuevoAcorde.Notas.push(notaDisplay)
       }
       compas.acordes.push(nuevoAcorde)
     }

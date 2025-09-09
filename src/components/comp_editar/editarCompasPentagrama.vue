@@ -63,7 +63,11 @@ function DibujarMuestra() {
   refDisplayPentagrama.value.pentagramas[0].clave =
     props.cancion.pentagramas[props.pentagramaId].clave
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(refCompasEnPentagrama.value, 0)
+    helpPenta.creaCompasPentagrama(
+      refCompasEnPentagrama.value,
+      0,
+      props.cancion.escala,
+    )
   CtrlrenglonPentagrama.value.Dibujar()
 }
 
