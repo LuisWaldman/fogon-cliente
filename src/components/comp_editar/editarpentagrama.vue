@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import subirmidi from './subirmidi.vue'
+import subirxml from './subirxml.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
@@ -135,7 +136,7 @@ function ActualizorInstrumento() {
 <template>
   <div>
     <span @click="clickCancelarEdit">[Ok]</span>
-
+    <subirxml :cancion="cancion"></subirxml>
     <subirmidi :cancion="cancion"></subirmidi>
   </div>
   <div>
