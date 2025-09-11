@@ -361,7 +361,8 @@ function cambioestado(estado: number) {
   font: 2em;
   padding: 8px;
   border-radius: 10px;
-  background-color: rgba(136, 136, 136, 0.65);
+  background-color: rgb(41, 37, 37);
+  color: white;
   z-index: 1000;
   border: 3px solid #8b4513;
 }

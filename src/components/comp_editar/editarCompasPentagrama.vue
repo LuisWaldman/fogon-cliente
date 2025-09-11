@@ -2,11 +2,11 @@
 import { onMounted, ref, watch } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import renglonpentagrama from '../comp_tocar/Tocar_renglonPentagrama.vue'
+import editarPatron from './editarCompasPatron.vue'
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
-import { EditAcordePentagrama } from '../../modelo/pentagrama/editPentagrama/editAcordePentagrama'
 
 const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
@@ -27,9 +27,7 @@ const CtrlrenglonPentagrama = ref()
 const refCompasEnPentagrama = ref(
   props.cancion.pentagramas[props.pentagramaId].compases[props.compas],
 )
-const editorDisplay = ref<EditCompasPentagrama>(
-  new EditCompasPentagrama('C4', false),
-)
+const editorDisplay = ref<EditCompasPentagrama>(new EditCompasPentagrama())
 
 const editandoRitmo = ref(-1)
 const puedeUnirPrev = ref(false)
@@ -40,7 +38,7 @@ function clickEditarRitmo(indice: number) {
   editandoRitmo.value = indice
   puedeUnirPrev.value = indice > 0
   puedeUnirPost.value = indice < editorDisplay.value.ritmo.length - 1
-  puedeDivider.value = editorDisplay.value.ritmo[indice] < 16
+  puedeDivider.value = editorDisplay.value.ritmo[indice] != '16'
 }
 
 const helper = new HelperEditPentagrama()
@@ -49,9 +47,6 @@ function Actualizar() {
   refCompasEnPentagrama.value =
     props.cancion.pentagramas[props.pentagramaId].compases[props.compas]
 
-  const AcordeActual = ref(
-    props.cancion.acordes.GetTodosLosAcordes()[props.compas],
-  )
   if (refCompasEnPentagrama.value) {
     refEsBatera.value = props.cancion.pentagramas[
       props.pentagramaId
@@ -60,8 +55,6 @@ function Actualizar() {
       .includes('batería')
     editorDisplay.value = helper.getDisplayEditCompas(
       refCompasEnPentagrama.value,
-      AcordeActual.value,
-      refEsBatera.value,
     )
     DibujarMuestra()
   }
@@ -70,7 +63,11 @@ function DibujarMuestra() {
   refDisplayPentagrama.value.pentagramas[0].clave =
     props.cancion.pentagramas[props.pentagramaId].clave
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(refCompasEnPentagrama.value, 0)
+    helpPenta.creaCompasPentagrama(
+      refCompasEnPentagrama.value,
+      0,
+      props.cancion.escala,
+    )
   CtrlrenglonPentagrama.value.Dibujar()
 }
 
@@ -92,11 +89,11 @@ watch(
   },
 )
 function clickPatron(aIndex: number, rIndex: number) {
-  const val = editorDisplay.value.acordespatron[rIndex].patrones[aIndex]
-  if (val === 'x') {
-    editorDisplay.value.acordespatron[rIndex].patrones[aIndex] = 'o'
+  const val = editorDisplay.value.patron[rIndex][aIndex]
+  if (val) {
+    editorDisplay.value.patron[rIndex][aIndex] = false
   } else {
-    editorDisplay.value.acordespatron[rIndex].patrones[aIndex] = 'x'
+    editorDisplay.value.patron[rIndex][aIndex] = true
   }
   ImpactarCambiosEditor()
 }
@@ -109,7 +106,7 @@ function ImpactarCambiosEditor() {
   Actualizar()
 }
 function CambioOctava() {
-  editorDisplay.value.acorde.Calcular()
+  // editorDisplay.value.acorde.Calcular()
   ImpactarCambiosEditor()
 }
 
@@ -124,14 +121,56 @@ function clickDividirRitmo(indice: number) {
   editandoRitmo.value = -1
   ImpactarCambiosEditor()
 }
+function estiloRitmo(rIndex: number, aIndex: number) {
+  const val = editorDisplay.value.patron[rIndex][aIndex]
+  if (!val) {
+    return 'background-color: black; color: white; cursor: pointer; text-align: center'
+  } else {
+    return 'background-color: white; color: black; cursor: pointer; text-align: center'
+  }
+}
 
-const instroBateria = EditAcordePentagrama.InstrumentosBateria
+const agregandonota = ref(false)
+const nuevaNota = ref('')
+function clickAgregarNota() {
+  agregandonota.value = true
+}
+function clickCancelarAgregarNota() {
+  agregandonota.value = false
+  nuevaNota.value = ''
+}
+function clickOkAgregarNota() {
+  if (nuevaNota.value.trim() !== '') {
+    editorDisplay.value.notas.push(nuevaNota.value.trim())
+    editorDisplay.value.patron.forEach((r) => {
+      r.push(false)
+    })
+
+    agregandonota.value = false
+    nuevaNota.value = ''
+  }
+}
+
+const instroBateria = [
+  'Bombo',
+  'Caja',
+  'Matraca',
+  'Platillo cerrado',
+  'Platillo abierto',
+  'Triangulo',
+  'Silbato',
+  'Crash',
+]
+
+const notasBateria = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
+const viendoPatron = ref(false)
+function clickVerPatron() {
+  viendoPatron.value = !viendoPatron.value
+}
 </script>
 <template>
   <div>
-    {{ editorDisplay.acorde.acorde }}
     <input
-      v-model="editorDisplay.acorde.octava"
       style="width: 30px"
       type="number"
       @change="CambioOctava"
@@ -140,67 +179,94 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
     />
   </div>
   <div>
-    <div style="display: flex">
-      <div class="divNotaEdit"></div>
-      <div
-        class="divRitmo"
-        v-for="(r, index) in editorDisplay.ritmo"
-        :key="index"
-        @click="clickEditarRitmo(index)"
-        :class="{ EditandoRitmo: editandoRitmo === index }"
-      >
-        <div>{{ r }}</div>
-        <div
-          style="width: 50px; position: relative"
-          v-if="editandoRitmo === index"
+    <table class="tablaRitmos">
+      <thead>
+        <tr>
+          <th>Nota</th>
+          <th
+            v-for="(r, index) in editorDisplay.ritmo"
+            :key="index"
+            :colspan="16 / parseInt(r)"
+            @click="clickEditarRitmo(index)"
+            :class="{ EditandoRitmo: editandoRitmo === index }"
+          >
+            {{ r }}
+
+            <div style="display: flex" v-if="editandoRitmo === index">
+              <div
+                class="btnRitmo"
+                v-if="puedeUnirPrev"
+                @click="clickUnirRitmo(index)"
+              >
+                +
+              </div>
+              <div
+                class="btnRitmo"
+                v-if="puedeDivider"
+                @click="clickDividirRitmo(index)"
+              >
+                /
+              </div>
+              <div
+                class="btnRitmo"
+                v-if="puedeUnirPost"
+                @click="clickUnirRitmo(index + 1)"
+              >
+                +
+              </div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- PUNTOS-->
+        <tr>
+          <td>.</td>
+          <td v-for="n in 16" :key="n">.</td>
+        </tr>
+
+        <tr v-for="(nota, index) in editorDisplay.notas" :key="index">
+          <td v-if="!refEsBatera">{{ nota }}</td>
+          <td v-if="refEsBatera">
+            {{ instroBateria[notasBateria.indexOf(nota)] || nota }}
+          </td>
+
+          <td
+            v-for="(r, ritindex) in editorDisplay.ritmo"
+            :key="ritindex"
+            @click="clickPatron(index, ritindex)"
+            :style="estiloRitmo(ritindex, index)"
+            :colspan="16 / parseInt(r)"
+          ></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <span @click="clickAgregarNota">[Agregar Nota]</span>
+    <span @click="clickVerPatron">[PATRON]</span>
+    <editarPatron
+      v-if="viendoPatron"
+      :cancion="cancion"
+      :pentagramaId="pentagramaId"
+      :compas="compas"
+      :editorDisplay="editorDisplay"
+      @actualizoPentagrama="ImpactarCambiosEditor()"
+    ></editarPatron>
+    <div v-if="agregandonota">
+      <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
+      <select v-if="refEsBatera" v-model="nuevaNota">
+        <option
+          v-for="(nota, index) in instroBateria"
+          :key="index"
+          :value="notasBateria[index]"
         >
-          <div
-            style="position: absolute; left: 10px"
-            class="btnRitmo"
-            v-if="puedeUnirPrev"
-            @click="clickUnirRitmo(index)"
-          >
-            +
-          </div>
-          <div
-            style="position: absolute; left: 30px"
-            class="btnRitmo"
-            v-if="puedeDivider"
-            @click="clickDividirRitmo(index)"
-          >
-            /
-          </div>
-          <div
-            style="position: absolute; left: 60px"
-            class="btnRitmo"
-            v-if="puedeUnirPost"
-            @click="clickUnirRitmo(index + 1)"
-          >
-            +
-          </div>
-          <div>&nbsp;</div>
-        </div>
-      </div>
-    </div>
-    <div
-      style="display: flex"
-      v-for="(a, aIndex) in editorDisplay.acorde.notas"
-      :key="aIndex"
-    >
-      <div class="divNotaEdit" v-if="!refEsBatera">
-        {{ a }}
-      </div>
-      <div class="divNotaEdit" v-if="refEsBatera">
-        {{ instroBateria[aIndex] }}
-      </div>
-      <div
-        class="divPatronRitmo"
-        v-for="(_r, index) in editorDisplay.ritmo"
-        :key="index"
-        @click="clickPatron(aIndex, index)"
-      >
-        {{ editorDisplay.acordespatron[index].patrones[aIndex] }}
-      </div>
+          {{ nota }}
+        </option>
+      </select>
+
+      <span @click="clickOkAgregarNota">[Ok]</span>
+      <span @click="clickCancelarAgregarNota">[Cancelar]</span>
     </div>
   </div>
 
@@ -234,5 +300,16 @@ const instroBateria = EditAcordePentagrama.InstrumentosBateria
   width: 20px;
   text-align: center;
   cursor: pointer;
+}
+.tablaRitmos {
+  border: 1px solid;
+}
+.tablaRitmos tr,
+td,
+th {
+  border: 1px solid;
+}
+.tablaRitmos {
+  border: 1px solid;
 }
 </style>

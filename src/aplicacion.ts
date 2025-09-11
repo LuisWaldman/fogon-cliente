@@ -31,8 +31,6 @@ export default class Aplicacion {
   }
 
   constructor() {
-    // Inicialización de la aplicación
-    console.log('App: Iniciando aplicacion.')
     CancionManager.getInstance().SetDB()
     const ultimas = new UltimasCanciones()
     ultimas.filtrarSubidas()
@@ -50,9 +48,7 @@ export default class Aplicacion {
     return null
   }
 
-  onMounted(cancion: string | null) {
-    console.log('Aplicacion montada')
-
+  onMounted() {
     const appStore = useAppStore()
     appStore.estadosApp.texto = 'Iniciando aplicacion...'
     appStore.perfil =
@@ -65,12 +61,6 @@ export default class Aplicacion {
       }
     } else {
       this.PrepararPaginaInicio()
-    }
-
-    if (cancion) {
-      console.log('cancion', cancion)
-      // PreparaPaginaTocar
-      //this.SetCancion(new OrigenCancion('sitio', cancion, ''))
     }
     this.PrepararPaginaInicio()
   }
@@ -98,7 +88,6 @@ export default class Aplicacion {
       mediaVista.rector = true
     }
     appStore.MediaVistas.push(mediaVista)
-    console.log('SetMediaVista en aplicacion', mediaVista)
   }
 
   quitarMediaVista(mediaVista: MediaVista): void {
@@ -117,7 +106,6 @@ export default class Aplicacion {
     CancionManager.getInstance()
       .Get(origen)
       .then((cancion) => {
-        console.log('Canción obtenida:', cancion)
         this.reproductor.SetCancion(origen, cancion)
       })
   }
@@ -138,6 +126,9 @@ export default class Aplicacion {
     appStore.estadoReproduccion = 'pausado'
     appStore.estadosApp.texto = 'Cancion Cargada'
     appStore.estadosApp.estado = 'ok'
+    if (appStore.estadoSesion == 'conectado') {
+      this.reproductorConectado?.SetCancion(origen, cancionObtenida)
+    }
     this.router?.push('/tocar')
   }
   updateCompas(compas: number) {
@@ -166,7 +157,6 @@ export default class Aplicacion {
     appStore.estadosApp.texto = 'Conectando al servidor...'
     this.cliente = new ClienteSocket(url)
     this.cliente.setconexionStatusHandler((status: string) => {
-      console.log('status:', status)
       if (status === 'conectado') {
         if (this.cliente) {
           const helper = HelperSincro.getInstance()
@@ -190,7 +180,6 @@ export default class Aplicacion {
       }
     })
     this.cliente.setConectadoHandler((token: string) => {
-      console.log(`Conectado: ${token}`)
       this.token = token
 
       if (this.cliente) {
@@ -214,9 +203,7 @@ export default class Aplicacion {
     })
 
     this.cliente.connectar()
-    console.log(`Conectando al servidor: ${url}`)
     this.cliente.setEnsesionHandler((sesionCreada: string) => {
-      console.log(`En sesion: ${sesionCreada}`)
       const appStore = useAppStore()
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
@@ -236,7 +223,6 @@ export default class Aplicacion {
       appStore.estadoSesion = 'error'
     })
     this.cliente.setRolSesionHandler((mensaje: string) => {
-      console.log(`Rol de sesión recibido: ${mensaje}`)
       const appStore = useAppStore()
       appStore.rolSesion = mensaje
     })
@@ -252,7 +238,6 @@ export default class Aplicacion {
     })
 
     this.cliente.setMensajesesionHandler((msj: string) => {
-      console.log(`Mensaje de sesión recibido: ${msj}`)
       const appStore = useAppStore()
       appStore.mensajes.push(msj)
     })
@@ -361,7 +346,6 @@ export default class Aplicacion {
     else if (estado == 2) this.reproductor.detenerReproduccion()
   }
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
-    console.log('HTTPPost', urlPost, this.token)
     return fetch(this.url + urlPost, {
       method: 'POST',
       headers: {
@@ -372,11 +356,9 @@ export default class Aplicacion {
     })
   }
   login(datos: datosLogin): boolean {
-    console.log(`Intentando iniciar sesión con usuario: ${datos.usuario}`)
     const appStore = useAppStore()
     appStore.estadoLogin = 'init-login'
     if (!this.cliente) {
-      console.error('Cliente no conectado. No se puede iniciar sesión.')
       return false
     }
     this.cliente.login(datos)
@@ -387,7 +369,6 @@ export default class Aplicacion {
     const appStore = useAppStore()
     appStore.estadoLogin = ''
     if (!this.cliente) {
-      console.error('Cliente no conectado. ')
       return false
     }
     this.cliente.Logout()
@@ -395,9 +376,7 @@ export default class Aplicacion {
   }
 
   CrearSesion(nombre: string): void {
-    console.log(`Intentando crear sesion: ${nombre}`)
     if (!this.cliente) {
-      console.error('Cliente no conectado. No se puede iniciar sesión.')
       return
     }
     const appStore = useAppStore()
@@ -406,20 +385,17 @@ export default class Aplicacion {
   }
 
   UnirmeSesion(nombre: string): void {
-    console.log(`Intentando unirse sesion: ${nombre}`)
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
     if (!this.cliente) {
-      console.error('Cliente no conectado. No se puede iniciar sesión.')
       return
     }
     this.cliente.UnirmeSesion(nombre)
   }
 
   SalirSesion(): void {
-    console.log(`Intentando SalirSesion sesion`)
     if (!this.cliente) {
-      console.error('Cliente no conectado. No se puede iniciar sesión.')
+      console.error('Cliente no conectado. No se puede salir de la sesión.')
       return
     }
     const appStore = useAppStore()
@@ -431,7 +407,6 @@ export default class Aplicacion {
   }
 
   MensajeASesion(msj: string): void {
-    console.log(`envieando mensaje sesion: ${msj}`)
     if (!this.cliente) {
       console.error('Cliente no conectado. No se puede Mandar mensajes.')
       return

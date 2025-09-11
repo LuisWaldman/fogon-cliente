@@ -60,7 +60,7 @@ export class MidiHelper {
   }
   DuracionEnCompas(duracion: string): number {
     const base = parseInt(duracion)
-    const tienePuntillo = duracion.includes('.')
+    const tienePuntillo = duracion.includes('d')
     let fraccion = 1 / base
     if (tienePuntillo) fraccion *= 1.5
     return fraccion

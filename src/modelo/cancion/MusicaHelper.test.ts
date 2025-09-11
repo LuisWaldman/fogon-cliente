@@ -103,9 +103,14 @@ describe('MusicaHelper', () => {
 
   it('Notas del compas', () => {
     const helper = new MusicaHelper()
+    expect(helper.GetNotasdeacorde('𝄽', 4)).toEqual([])
+    expect(helper.GetNotasdeacorde('', 4)).toEqual([])
+    expect(helper.GetNotasdeacorde('C', 4)).toEqual(['C4', 'E4', 'G4'])
     expect(helper.GetNotasdeacorde('C', 4)).toEqual(['C4', 'E4', 'G4'])
     expect(helper.GetNotasdeacorde('D', 4)).toEqual(['D4', 'F#4', 'A4'])
     expect(helper.GetNotasdeacorde('Am', 3)).toEqual(['A3', 'C4', 'E4'])
+    expect(helper.GetNotasdeacorde('C#m', 3)).toEqual(['C#3', 'E3', 'G#3'])
+    expect(helper.GetNotasdeacorde('C#', 3)).toEqual(['C#3', 'F3', 'G#3'])
     expect(helper.GetNotasdeacorde('A5', 4)).toEqual(['A4', 'E5'])
     expect(helper.GetNotasdeacorde('D5', 3)).toEqual(['D3', 'A3'])
     expect(helper.GetNotasdeacorde('C7', 3)).toEqual(['C3', 'E3', 'G3', 'B3'])
@@ -120,5 +125,101 @@ describe('MusicaHelper', () => {
     ])
     expect(helper.GetNotasdeacorde('C9', 4)).toEqual(['C4', 'E4', 'G4', 'D5'])
     expect(helper.GetNotasdeacorde('D9', 4)).toEqual(['D4', 'F#4', 'A4', 'E5'])
+    expect(helper.GetNotasdeacorde('D9', 4)).toEqual(['D4', 'F#4', 'A4', 'E5'])
+  })
+
+  it('Distancia entre acordes', () => {
+    const helper = new MusicaHelper()
+    expect(helper.DistanciaAcordes('C', 'D')).toEqual(2)
+    expect(helper.DistanciaAcordes('D', 'C')).toEqual(-2)
+    expect(helper.DistanciaAcordes('C', 'C')).toEqual(0)
+    expect(helper.DistanciaAcordes('C', 'C#')).toEqual(1)
+    expect(helper.DistanciaAcordes('C#', 'D')).toEqual(1)
+    expect(helper.DistanciaAcordes('B', 'C')).toEqual(-11)
+    expect(helper.DistanciaAcordes('B', 'C#')).toEqual(-10)
+    expect(helper.DistanciaAcordes('C', 'B')).toEqual(11)
+    expect(helper.DistanciaAcordes('C#', 'B')).toEqual(10)
+  })
+
+  it('Nota dezplazada', () => {
+    const helper = new MusicaHelper()
+    expect(helper.NotaMasDiferencial('C4', 2)).toEqual('D4')
+    expect(helper.NotaMasDiferencial('C4', 1)).toEqual('C#4')
+    expect(helper.NotaMasDiferencial('C4', -1)).toEqual('B3')
+    expect(helper.NotaMasDiferencial('C4', -2)).toEqual('A#3')
+    expect(helper.NotaMasDiferencial('D4', -2)).toEqual('C4')
+    expect(helper.NotaMasDiferencial('C4', -12)).toEqual('C3')
+  })
+
+  it('Acorde desde notas', () => {
+    const helper = new MusicaHelper()
+    expect(helper.GetAcordeDeNotas('C4', []).nombre).toEqual('C')
+    expect(helper.GetAcordeDeNotas('C4', ['C5']).nombre).toEqual('C')
+    expect(helper.GetAcordeDeNotas('C4', ['C5']).nombre).toEqual('C')
+    expect(helper.GetAcordeDeNotas('C4', ['G5']).nombre).toEqual('C5')
+    expect(helper.GetAcordeDeNotas('C4', ['G5', 'D#5']).nombre).toEqual('Cm')
+    expect(helper.GetAcordeDeNotas('C4', ['G5', 'E5', 'B5']).nombre).toEqual(
+      'Cmaj7',
+    )
+
+    // Acordes mayores y menores
+    expect(helper.GetAcordeDeNotas('D4', ['F#4', 'A4']).nombre).toEqual('D')
+    expect(helper.GetAcordeDeNotas('A3', ['C4', 'E4']).nombre).toEqual('Am')
+
+    // Acordes con séptima menor
+    expect(helper.GetAcordeDeNotas('G3', ['B3', 'D4', 'F4']).nombre).toEqual(
+      'G7',
+    )
+    expect(helper.GetAcordeDeNotas('E3', ['G#3', 'B3', 'D4']).nombre).toEqual(
+      'E7',
+    )
+
+    // Acordes suspendidos
+    expect(helper.GetAcordeDeNotas('D4', ['G4', 'A4']).nombre).toEqual('Dsus4')
+    expect(helper.GetAcordeDeNotas('D4', ['E4', 'A4']).nombre).toEqual('Dsus2')
+
+    // Acordes aumentados y disminuidos
+    expect(helper.GetAcordeDeNotas('C4', ['E4', 'G#4']).nombre).toEqual('Caug')
+    expect(helper.GetAcordeDeNotas('B3', ['D4', 'F4']).nombre).toEqual('Bdim')
+
+    // Acordes con notas duplicadas
+    expect(helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'C5']).nombre).toEqual(
+      'C',
+    )
+    expect(
+      helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'C5', 'G5']).nombre,
+    ).toEqual('C')
+
+    // Acordes con tensiones
+    expect(helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'D5']).nombre).toEqual(
+      'Cadd9',
+    )
+    expect(helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'A4']).nombre).toEqual(
+      'C6',
+    )
+
+    expect(helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'B4']).nombre).toEqual(
+      'Cmaj7',
+    )
+    expect(helper.GetAcordeDeNotas('D4', ['F#4', 'A4', 'C5']).nombre).toEqual(
+      'D7',
+    )
+    expect(helper.GetAcordeDeNotas('F4', ['A4', 'C5', 'E5']).nombre).toEqual(
+      'Fmaj7',
+    )
+    expect(helper.GetAcordeDeNotas('G4', ['B4', 'D#5']).nombre).toEqual('Gaug')
+    expect(helper.GetAcordeDeNotas('B3', ['D4', 'F4']).nombre).toEqual('Bdim')
+    expect(helper.GetAcordeDeNotas('D4', ['G4', 'A4']).nombre).toEqual('Dsus4')
+    expect(helper.GetAcordeDeNotas('D4', ['E4', 'A4']).nombre).toEqual('Dsus2')
+    expect(helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'D5']).nombre).toEqual(
+      'Cadd9',
+    )
+    expect(helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'A4']).nombre).toEqual(
+      'C6',
+    )
+
+    expect(
+      helper.GetAcordeDeNotas('C4', ['E4', 'G4', 'Bb4', 'D5']).nombre,
+    ).toEqual('Cadd9')
   })
 })

@@ -10,10 +10,18 @@ export class MediaVista {
     this.tipo = tipo
   }
   public GetTiempoDesdeInicio?: () => number
+  public GetEstado?: () => number
+  public SetTiempoDesdeInicio?: (tiempo: number) => void
   public Iniciar?: () => void
   public Pausar?: () => void
   public setGetTiempoDesdeInicio(handler: () => number): void {
     this.GetTiempoDesdeInicio = handler
+  }
+  public setGetEstado(handler: () => number): void {
+    this.GetEstado = handler
+  }
+  public setSetTiempoDesdeInicio(handler: (tiempo: number) => void): void {
+    this.SetTiempoDesdeInicio = handler
   }
   public setIniciar(handler: () => void): void {
     this.Iniciar = handler

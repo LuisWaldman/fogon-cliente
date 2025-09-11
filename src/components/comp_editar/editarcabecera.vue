@@ -28,7 +28,6 @@ function clickCambiar(nviendo: string) {
 
 const appStore = useAppStore()
 function clickCerrar(modificado: boolean) {
-  console.log('clickCerrar', modificado)
   viendo.value = ''
   if (modificado) {
     appStore.cancionModificada = true

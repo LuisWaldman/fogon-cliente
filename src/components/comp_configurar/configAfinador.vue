@@ -12,6 +12,7 @@ const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
 const micHelper = new MicHelper()
+const musicaHelper = new MusicaHelper()
 const refMicEstado = ref('')
 const mediaStream = ref<MediaStream | null>(null)
 const notasAfinar = ref([] as NotaAfinar[])
@@ -43,6 +44,8 @@ const notas: string[] = [
 ]
 const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
+const EscuchandoAcorde = ref<string>('')
+
 const mostrarEscala = ref(false)
 const escalaMenor = ref(false)
 const refViendoEscala = ref(0)
@@ -130,18 +133,130 @@ function autoCorrelate(buffer: Float32Array, sampleRate: number): number {
   return sampleRate / T0
 }
 const frequency = ref(0)
+const otrasFrecuencias = ref<FrecuenciaDetectada[]>([])
+const otrasNotas = ref<string[]>([])
+function detectMultipleFrequencies(
+  buffer: Float32Array,
+  sampleRate: number,
+): FrecuenciaDetectada[] {
+  const SIZE = buffer.length
+  const frequencies: number[] = []
+
+  // Convertir a espectro de frecuencias usando FFT básica
+  const fftSize = SIZE / 2
+  const spectrum = new Float32Array(fftSize)
+
+  // Aplicar ventana de Hanning para reducir ruido
+  const windowedBuffer = new Float32Array(SIZE)
+  for (let i = 0; i < SIZE; i++) {
+    const window = 0.5 * (1 - Math.cos((2 * Math.PI * i) / (SIZE - 1)))
+    windowedBuffer[i] = buffer[i] * window
+  }
+
+  // Calcular magnitudes del espectro
+  for (let k = 0; k < fftSize; k++) {
+    let real = 0
+    let imag = 0
+
+    for (let n = 0; n < SIZE; n++) {
+      const angle = (-2 * Math.PI * k * n) / SIZE
+      real += windowedBuffer[n] * Math.cos(angle)
+      imag += windowedBuffer[n] * Math.sin(angle)
+    }
+
+    spectrum[k] = Math.sqrt(real * real + imag * imag)
+  }
+
+  // Encontrar picos en el espectro
+  const threshold = Math.max(...spectrum) * 0.3 // Aumentar de 0.1 a 0.3
+  const minFreq = 80 // Frecuencia mínima para guitarra
+  const maxFreq = 2000 // Frecuencia máxima relevante
+
+  for (let k = 1; k < fftSize - 1; k++) {
+    const freq = (k * sampleRate) / SIZE
+
+    if (freq < minFreq || freq > maxFreq) continue
+
+    // Verificar si es un pico local
+    if (
+      spectrum[k] > spectrum[k - 1] &&
+      spectrum[k] > spectrum[k + 1] &&
+      spectrum[k] > threshold
+    ) {
+      // Interpolación parabólica para mayor precisión
+      const y1 = spectrum[k - 1]
+      const y2 = spectrum[k]
+      const y3 = spectrum[k + 1]
+
+      const a = (y1 - 2 * y2 + y3) / 2
+      const b = (y3 - y1) / 2
+
+      let peakOffset = 0
+      if (a !== 0) {
+        peakOffset = -b / (2 * a)
+      }
+
+      const refinedFreq = ((k + peakOffset) * sampleRate) / SIZE
+      frequencies.push(refinedFreq)
+    }
+  }
+
+  // Ordenar por magnitud (más fuerte primero) y tomar máximo 6 frecuencias
+  const indexedFreqs = frequencies.map((freq) => {
+    const k = Math.round((freq * SIZE) / sampleRate)
+    return { freq, magnitude: spectrum[k] || 0 }
+  })
+
+  indexedFreqs.sort((a, b) => b.magnitude - a.magnitude)
+
+  const frequenciesret: FrecuenciaDetectada[] = indexedFreqs.map(
+    (item) => new FrecuenciaDetectada(item.freq, item.magnitude),
+  )
+  return frequenciesret
+}
 const detectFrequency = () => {
   if (!analyserNode.value) return
 
   analyserNode.value.getFloatTimeDomainData(buffer)
-  frequency.value = autoCorrelate(buffer, audioContext.value!.sampleRate)
 
+  // Detectar frecuencia principal con autocorrelación
+  const mainFreq = autoCorrelate(buffer, audioContext.value!.sampleRate)
+  frequency.value = mainFreq
+
+  // Detectar múltiples frecuencias
+  const detectedFreqs = detectMultipleFrequencies(
+    buffer,
+    audioContext.value!.sampleRate,
+  )
+
+  // Filtrar frecuencias válidas y remover la principal si está presente
+  otrasFrecuencias.value = detectedFreqs
+    .filter(
+      (freq) => freq.frecuencia > 0 && Math.abs(freq.frecuencia - mainFreq) > 5,
+    ) // Evitar duplicados cercanos
+    .slice(0, 5) // Máximo 5 frecuencias adicionales
+  otrasNotas.value = otrasFrecuencias.value.map((freq) => {
+    const nota =
+      notasSonido.value[
+        HelperSonidos.GetNotaDesdeFrecuenciaConNotasSonido(
+          freq.frecuencia,
+          notasSonido.value,
+        )
+      ]
+    return nota.nota + nota.octava
+  })
   if (frequency.value !== -1) {
     mostrandoNota.value = HelperSonidos.GetNotaDesdeFrecuenciaConNotasSonido(
       frequency.value,
       notasSonido.value,
     )
   }
+  EscuchandoAcorde.value =
+    musicaHelper.GetAcordeDeNotas(
+      notasSonido.value[mostrandoNota.value].nota +
+        notasSonido.value[mostrandoNota.value].octava,
+      otrasNotas.value,
+    ).nombre || ''
 
   requestAnimationFrame(detectFrequency)
 }
@@ -208,6 +323,8 @@ function styleDivAfinador() {
 import { onMounted, onUnmounted } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import { HelperSonidos } from '../../modelo/sonido/helperSonido'
+import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
+import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
 
 onMounted(() => {
   Solicitar()
@@ -306,6 +423,20 @@ function ajusteTexto(
             {{ notasSonido[mostrandoNota].octava }}
           </div>
         </div>
+
+        <div class="contDatos">
+          <div>Acorde</div>
+          <div
+            style="
+              font-size: xx-large;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            "
+          >
+            {{ EscuchandoAcorde }}
+          </div>
+        </div>
       </div>
 
       <div
@@ -380,6 +511,7 @@ function ajusteTexto(
       <circulo
         :notasSonido="notasSonido"
         :clasenotasSonido="clsNotas"
+        :otrasNotas="otrasFrecuencias"
         :frecuencia="frequency"
       ></circulo>
     </div>

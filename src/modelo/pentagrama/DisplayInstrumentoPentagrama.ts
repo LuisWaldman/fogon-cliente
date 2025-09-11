@@ -38,11 +38,6 @@ export class DisplayInstrumentoPentagrama {
         staveCompas.setContext(context).draw()
       }
     }
-    /*
-    Para dibujar el puntillo
-    Dot.buildAndAttach([todasLasNotas[0]], { index: 0 })
-    */
-
     return stave
   }
 

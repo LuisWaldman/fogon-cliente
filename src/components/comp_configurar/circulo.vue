@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
+import type { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
 const octavasCirculo = ref(7)
 const DesdeOctavasCirculo = ref(4)
 
@@ -8,6 +9,7 @@ const props = defineProps<{
   notasSonido: NotaSonido[]
   clasenotasSonido: string[]
   frecuencia: number
+  otrasNotas?: FrecuenciaDetectada[]
 }>()
 
 const maxRadio = 500
@@ -71,6 +73,35 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
     color: color,
   }
 }
+
+function StyleFrecuenciaNotaAcorde(frecuencia: number) {
+  let backgroundColor = 'gray'
+  let color = 'black'
+  let enOctava =
+    Math.floor(Math.log2(frecuencia / 440)) + DesdeOctavasCirculo.value
+
+  const baseOctava = 440 * Math.pow(2, Math.floor(Math.log2(frecuencia / 440)))
+  const portentajeEnOctava = (frecuencia - baseOctava) / baseOctava
+
+  if (enOctava < 0) {
+    enOctava = 0
+  }
+  // Calcular el porcentaje de la octava
+  const radio =
+    minRadio +
+    ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (enOctava - 1)
+  const left =
+    centroLeft + Math.cos(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
+  const top =
+    centroTop + Math.sin(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
+
+  return {
+    top: top + 'px',
+    left: left + 'px',
+    'background-color': backgroundColor,
+    color: color,
+  }
+}
 </script>
 <template>
   <div style="position: relative">
@@ -97,6 +128,19 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
         class="frecuencia viendoFrecuencia"
       >
         {{ viendoFrecuencia.frecuencia.toFixed(0) }}
+      </div>
+
+      <div v-if="otrasNotas">
+        <div
+          v-for="(value, index) in otrasNotas"
+          :key="index"
+          :style="StyleFrecuenciaNotaAcorde(value.frecuencia)"
+          class="frecuencia viendoFrecuencia"
+        >
+          <span>
+            {{ value.frecuencia.toFixed(0) }}
+          </span>
+        </div>
       </div>
     </div>
   </div>

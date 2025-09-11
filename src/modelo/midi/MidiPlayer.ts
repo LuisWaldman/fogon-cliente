@@ -3,6 +3,12 @@ import type { MidiSecuencia } from './MidiSecuencia'
 import { InstrumentosManager } from './InstrumentosManager'
 
 export class MidiPlayer {
+  getPlayerState(): number {
+    return Tone.getTransport().state === 'started' ? 1 : 0
+  }
+  setCurrentTime(numero: number) {
+    Tone.getTransport().seconds = numero / 1000
+  }
   async cargarInstrumentos(instrumentos: string[]) {
     // Esperar a que todos los instrumentos se carguen
     await Promise.all(
@@ -14,7 +20,10 @@ export class MidiPlayer {
   private instrument: Tone.Sampler
   private instrumentosManager: InstrumentosManager
   private part: Tone.Part | null = null
+  // Nuevo: Map para almacenar los controles de volumen por instrumento
+  private volumeNodes: Map<string, Tone.Volume> = new Map()
   public duracion: string = ''
+
   constructor() {
     this.instrument = new Tone.Sampler().toDestination()
     this.instrumentosManager = InstrumentosManager.getInstance()
@@ -25,24 +34,66 @@ export class MidiPlayer {
     console.log('Instrumento MIDI configurado')
   }
 
+  // Nuevo: Método para configurar el volumen de un instrumento específico
+  public setInstrumentVolume(instrumento: string, volumeDb: number): void {
+    if (!this.volumeNodes.has(instrumento)) {
+      // Crear nodo de volumen si no existe
+      const volumeNode = new Tone.Volume(volumeDb).toDestination()
+      this.volumeNodes.set(instrumento, volumeNode)
+
+      // Reconectar el instrumento al nodo de volumen
+      const instrumentoTone =
+        this.instrumentosManager.instrumentosCargados[instrumento]
+      if (instrumentoTone) {
+        instrumentoTone.disconnect()
+        instrumentoTone.connect(volumeNode)
+      }
+    } else {
+      // Actualizar volumen existente
+      this.volumeNodes.get(instrumento)!.volume.value = volumeDb
+    }
+  }
+
+  // Nuevo: Método para obtener el volumen actual de un instrumento
+  public getInstrumentVolume(instrumento: string): number {
+    const volumeNode = this.volumeNodes.get(instrumento)
+    return volumeNode ? volumeNode.volume.value : 0
+  }
+
+  // Nuevo: Método para conectar un instrumento con su nodo de volumen
+  private conectarInstrumentoConVolumen(instrumento: string): void {
+    const instrumentoTone =
+      this.instrumentosManager.instrumentosCargados[instrumento]
+    if (instrumentoTone) {
+      if (!this.volumeNodes.has(instrumento)) {
+        // Crear nodo de volumen con valor por defecto (0 dB = sin cambio)
+        const volumeNode = new Tone.Volume(0).toDestination()
+        this.volumeNodes.set(instrumento, volumeNode)
+      }
+
+      // Conectar instrumento al nodo de volumen
+      instrumentoTone.disconnect()
+      instrumentoTone.connect(this.volumeNodes.get(instrumento)!)
+    }
+  }
+
   public initialize(): void {
     Tone.start()
   }
 
   public borrarSequence(): void {
-    Tone.getTransport().cancel() // ✨ Cancela todos los eventos programados
+    Tone.getTransport().cancel()
 
-    // Limpiar la parte anterior
     if (this.part) {
       this.part.dispose()
       this.part = null
     }
   }
-  // 🎼 Cargar secuencia para reproducción sincronizada
-  public loadSequence(instrumento: string, secuencia: MidiSecuencia): void {
-    // Detener y limpiar completamente el transport
 
-    // Configurar nueva secuencia
+  public loadSequence(instrumento: string, secuencia: MidiSecuencia): void {
+    // Asegurar que el instrumento tiene configurado su control de volumen
+    this.conectarInstrumentoConVolumen(instrumento)
+
     Tone.getTransport().bpm.value = secuencia.bpm
 
     this.part = new Tone.Part((time, value) => {
@@ -86,5 +137,14 @@ export class MidiPlayer {
 
   public soltarNota(note: string): void {
     this.instrument.triggerRelease(note)
+  }
+
+  // Nuevo: Limpiar recursos al destruir la instancia
+  public dispose(): void {
+    this.volumeNodes.forEach((volumeNode) => volumeNode.dispose())
+    this.volumeNodes.clear()
+    if (this.part) {
+      this.part.dispose()
+    }
   }
 }

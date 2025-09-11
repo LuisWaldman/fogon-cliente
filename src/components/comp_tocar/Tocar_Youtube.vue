@@ -53,8 +53,14 @@ mediaVista.setGetTiempoDesdeInicio(() => {
 mediaVista.setIniciar(() => {
   playerRef.value?.playVideo()
 })
+mediaVista.setGetEstado(() => {
+  return playerRef.value?.getPlayerState() || -1
+})
 mediaVista.setPausar(() => {
   playerRef.value?.pauseVideo()
+})
+mediaVista.setSetTiempoDesdeInicio((numero: number) => {
+  playerRef.value?.seekTo(numero / 1000, true)
 })
 
 onUnmounted(() => {

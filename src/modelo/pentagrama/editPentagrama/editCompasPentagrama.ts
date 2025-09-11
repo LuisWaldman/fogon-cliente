@@ -1,80 +1,103 @@
 import type { PentagramaNotas } from '../../cancion/pentagramanotas'
-import { EditAcordePatronNotas } from './editAcordeNotas'
-import { EditAcordePentagrama } from './editAcordePentagrama'
 
 export class EditCompasPentagrama {
-  public ritmo: number[] = []
-  public acorde: EditAcordePentagrama
-  public acordespatron: EditAcordePatronNotas[] = []
-  constructor(acorde: string, esBateria: boolean) {
-    this.acorde = new EditAcordePentagrama(acorde, esBateria)
+  SetNotas(notasAcorde: string[]) {
+    this.notas = notasAcorde
+    const nuevoAcordespatron: boolean[][] = []
+    for (let i = 0; i < this.ritmo.length; i++) {
+      nuevoAcordespatron.push(new Array(this.notas.length).fill(true))
+    }
+    this.patron = nuevoAcordespatron
   }
+  SetNewRitmo(parRitmo: string[]) {
+    const nuevoRitmo: string[] = []
+    const nuevoAcordespatron: boolean[][] = []
+    for (let i = 0; i < parRitmo.length; i++) {
+      nuevoRitmo.push(parRitmo[i])
+      nuevoAcordespatron.push(new Array(this.notas.length).fill(i === 0))
+    }
+
+    this.ritmo = nuevoRitmo.map((r) => r.toString())
+    this.patron = nuevoAcordespatron
+  }
+  public ritmo: string[] = []
+  public notas: string[] = []
+  public patron: boolean[][] = []
+
   CompletarRitmo() {
     const divisores = [1, 2, 4, 8, 16, 32] // sin puntillo
-    const total = this.ritmo.reduce((acc, d) => acc + 1 / d, 0)
+    const total = this.ritmo.reduce((acc, d) => {
+      let toAdd = 1 / parseInt(d)
+      if (d.endsWith('d')) {
+        toAdd *= 1.5
+      }
+      const a = acc + toAdd
+      return a
+    }, 0)
     let restante = 1 - total
 
     while (restante > 0.00001) {
       const candidato = divisores.find((d) => 1 / d <= restante)
       if (!candidato) break
-      this.ritmo.push(candidato)
+      this.ritmo.push(candidato.toString())
       this.AddAcorde([])
       restante -= 1 / candidato
     }
   }
 
   public UnirRitmo(indice: number) {
-    const nuevoRitmo: number[] = []
-    const nuevoAcordespatron: EditAcordePatronNotas[] = []
-    console.log(indice)
+    const nuevoRitmo: string[] = []
+    const nuevoAcordespatron: boolean[][] = []
     for (let i = 0; i < this.ritmo.length; i++) {
       if (i == indice - 1) {
         const ritmo = this.ritmo[i]
         const ritmoAunir = this.ritmo[i + 1]
-        const ritmoResultante = Math.round(1 / (1 / ritmo + 1 / ritmoAunir))
-        console.log(ritmo, ritmoAunir, ritmoResultante)
-        nuevoRitmo.push(ritmoResultante)
-        nuevoAcordespatron.push(this.acordespatron[i])
+        const ritmoResultante =
+          1 / (1 / parseInt(ritmo) + 1 / parseInt(ritmoAunir))
+        nuevoRitmo.push(ritmoResultante.toString())
+        nuevoAcordespatron.push(this.patron[i])
       } else if (i !== indice) {
         nuevoRitmo.push(this.ritmo[i])
-        nuevoAcordespatron.push(this.acordespatron[i])
+        nuevoAcordespatron.push(this.patron[i])
       }
     }
 
     this.ritmo = nuevoRitmo
-    this.acordespatron = nuevoAcordespatron
+    this.patron = nuevoAcordespatron
   }
 
   public DividirRitmo(indice: number) {
-    const nuevoRitmo: number[] = []
-    const nuevoAcordespatron: EditAcordePatronNotas[] = []
+    const nuevoRitmo: string[] = []
+    const nuevoAcordespatron: boolean[][] = []
 
     for (let i = 0; i < this.ritmo.length; i++) {
       if (i !== indice) {
         nuevoRitmo.push(this.ritmo[i])
-        nuevoAcordespatron.push(this.acordespatron[i])
+        nuevoAcordespatron.push(this.patron[i])
       } else {
-        const ritmo = this.ritmo[i] * 2
-        nuevoRitmo.push(ritmo)
-        nuevoAcordespatron.push(this.acordespatron[i])
-        nuevoRitmo.push(ritmo)
-        nuevoAcordespatron.push(this.acordespatron[i])
+        const ritmo = parseInt(this.ritmo[i]) * 2
+        nuevoRitmo.push(ritmo.toString())
+        nuevoAcordespatron.push(this.patron[i])
+        nuevoRitmo.push(ritmo.toString())
+        nuevoAcordespatron.push(this.patron[i])
       }
     }
 
     this.ritmo = nuevoRitmo
-    this.acordespatron = nuevoAcordespatron
+    this.patron = nuevoAcordespatron
   }
+
   AddAcorde(acordePentagrama: PentagramaNotas[]) {
-    const toPush = new EditAcordePatronNotas(this.acorde.totalNotas())
+    const toPush: boolean[] = new Array(this.notas.length).fill(false)
     acordePentagrama.forEach((s) => {
-      const notaTexto = s.nota.substring(0, s.nota.length - 1)
-      const existe = this.acorde.notassola.indexOf(notaTexto)
+      const existe = this.notas.indexOf(s.nota)
       if (existe !== -1) {
-        toPush.patrones[existe] = 'o'
+        if (!s.duracion.endsWith('r')) {
+          toPush[existe] = true
+        }
       }
     })
 
-    this.acordespatron.push(toPush)
+    this.patron.push(toPush)
   }
 }

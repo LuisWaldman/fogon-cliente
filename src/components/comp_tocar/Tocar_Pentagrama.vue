@@ -24,6 +24,7 @@ onMounted(() => {
 })
 
 function Actualizar() {
+  cargarModos()
   const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value)
   display.value = newDisplay
 }
@@ -52,18 +53,10 @@ function cargarModos() {
 watch(
   () => props.cancion,
   () => {
-    cargarModos()
     Actualizar()
   },
 )
 
-watch(
-  modos,
-  () => {
-    Actualizar()
-  },
-  { deep: true },
-)
 function verInstrumento(modo: DisplayModoPentagrama) {
   modo.Ver = !modo.Ver
   const instrumentosSeleccionados = modos.value

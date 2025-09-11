@@ -1,5 +1,13 @@
 import { AnalisisArmonico } from './analisisArmonico'
 import type { Cancion } from './cancion'
+type Acorde = {
+  nombre: string // Ej: "Cmaj7"
+  fundamental: string // Ej: "C"
+  bajo: string // Ej: "E" si es inversión
+  intervalos: number[] // Ej: [0, 4, 7, 11]
+  tipo: string // Ej: "maj7", "m", "dim", etc.
+  notas: string[] // Ej: ["C", "E", "G", "B"]
+}
 
 export class MusicaHelper {
   ActualizarEscala(
@@ -49,6 +57,64 @@ export class MusicaHelper {
         return this.GetNotaNuevaEscala(acorde, desdeEscala, hastaEscala)
       })
       .join(' ')
+  }
+
+  GetAcordeDeNotas(nota: string, otrasnotas: string[]): Acorde {
+    const notaBase = nota.replace(/[0-9]/g, '')
+    const todasNotas = [
+      notaBase,
+      ...otrasnotas.map((n) => n.replace(/[0-9]/g, '')),
+    ]
+
+    const nroNotas = todasNotas.map((n) => this.notas.indexOf(n))
+    const nroBase = nroNotas[0]
+
+    // Intervalos relativos al bajo
+    const intervalos = nroNotas
+      .map((n) => (n - nroBase + 12) % 12)
+      .sort((a, b) => a - b)
+
+    const acordes: { tipo: string; estructura: number[] }[] = [
+      { tipo: 'add9', estructura: [0, 4, 7, 2] }, // C + E + G + D
+      { tipo: 'add11', estructura: [0, 4, 7, 5] }, // C + E + G + F
+      { tipo: '6', estructura: [0, 4, 7, 9] }, // C + E + G + A
+      { tipo: 'maj7', estructura: [0, 4, 7, 11] },
+      { tipo: '7', estructura: [0, 4, 7, 10] },
+      { tipo: 'm7', estructura: [0, 3, 7, 10] },
+      { tipo: 'm', estructura: [0, 3, 7] },
+      { tipo: '', estructura: [0, 4, 7] },
+      { tipo: 'dim', estructura: [0, 3, 6] },
+      { tipo: 'aug', estructura: [0, 4, 8] },
+      { tipo: 'sus2', estructura: [0, 2, 7] },
+      { tipo: 'sus4', estructura: [0, 5, 7] },
+      { tipo: '5', estructura: [0, 7] },
+    ]
+
+    for (const { tipo, estructura } of acordes) {
+      const estructuraReducida = estructura
+        .map((i) => i % 12)
+        .sort((a, b) => a - b)
+      const coincide = estructuraReducida.every((i) => intervalos.includes(i))
+      if (coincide) {
+        return {
+          nombre: notaBase + tipo,
+          fundamental: notaBase,
+          bajo: todasNotas[0],
+          intervalos,
+          tipo,
+          notas: todasNotas,
+        }
+      }
+    }
+
+    return {
+      nombre: notaBase,
+      fundamental: notaBase,
+      bajo: todasNotas[0],
+      intervalos,
+      tipo: 'desconocido',
+      notas: todasNotas,
+    }
   }
 
   GetNotaNuevaEscala(
@@ -195,6 +261,36 @@ export class MusicaHelper {
     'B',
   ]
 
+  public LimpiarAcordes(aco1: string): string {
+    // Remove numbers and "m" from the chord
+    return aco1.replace(/[0-9m]/g, '')
+  }
+  public DistanciaAcordes(aco1: string, aco2: string): number {
+    const limpio1 = this.LimpiarAcordes(aco1)
+    const limpio2 = this.LimpiarAcordes(aco2)
+    const index1 = this.notas.indexOf(limpio1)
+    const index2 = this.notas.indexOf(limpio2)
+    if (index1 === -1 || index2 === -1) {
+      return 0
+    }
+    return index2 - index1
+  }
+
+  public NotaMasDiferencial(nota: string, diferencial: number): string {
+    const notaSola = nota.substring(0, nota.length - 1)
+    let octava = parseInt(nota.substring(nota.length - 1))
+    let index = this.notas.indexOf(notaSola) + diferencial
+    if (index < 0) {
+      octava--
+      index = this.notas.length + index
+    }
+    if (index > this.notas.length - 1) {
+      octava++
+      index = index - this.notas.length
+    }
+    return this.notas[index] + octava
+  }
+
   GetNotas() {
     return this.notas
   }
@@ -227,6 +323,9 @@ export class MusicaHelper {
     }
 
     let notaInd = this.numeroNota(buscar)
+    if (notaInd < 0) {
+      return []
+    }
     const modoSusecion: number[] = this.modos[modoEscala]
     const acordes = [this.notas[notaInd]]
     for (let i = 0; i < modoSusecion.length; i++) {
@@ -324,6 +423,7 @@ export class MusicaHelper {
       tiene7 = true
     }
     const notas = this.GetNotasdeescala(acordeBase)
+    if (notas.length == 0) return toRet
     const nronota = this.notas.indexOf(notas[0])
     let octavaActual = octava.toString()
     toRet.push(notas[0] + octavaActual)

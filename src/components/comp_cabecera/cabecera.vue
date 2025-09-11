@@ -35,7 +35,6 @@ const crearSesion = () => {
   const nombreSesion = appStore.perfil?.nombre
     ? `${appStore.perfil.nombre} fogon`
     : 'default'
-  console.log('Creando sesión', nombreSesion)
 
   appStore.aplicacion.CrearSesion(nombreSesion)
 }

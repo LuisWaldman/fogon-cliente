@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import subirmidi from './subirmidi.vue'
+import subirxml from './subirxml.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
@@ -64,7 +65,7 @@ const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
   notasBateria.value,
 )
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
-  helpPenta.creaCompasPentagrama(pentaObtenido, 0)
+  helpPenta.creaCompasPentagrama(pentaObtenido, 0, props.cancion.escala)
 const CtrlrenglonPentagrama = ref()
 function ActualizarRitmo() {
   return
@@ -75,16 +76,10 @@ function ActualizarRitmo() {
     notasBateria.value,
   )
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(pentaObtenido, 0)
+    helpPenta.creaCompasPentagrama(pentaObtenido, 0, props.cancion.escala)
   CtrlrenglonPentagrama.value.Dibujar()
 }
-/*
-function cambiarPatronSeleccionado() {
-  refEstiloEditandoAcorde.value =
-    refPatrones.value[patronSeleccionado.value].GetEstilo()
-  ActualizarRitmo()
-}
-*/
+
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
 
@@ -101,10 +96,12 @@ function clickAgregarPentagrama() {
   )
 
   props.cancion.pentagramas.push(nPentagrama)
+
+  emit('actualizoPentagrama')
 }
 
 function clickBorrarPentagrama() {
-  props.cancion.pentagramas[idPentagramaEditando.value].compases = []
+  props.cancion.pentagramas.splice(idPentagramaEditando.value, 1)
   emit('actualizoPentagrama')
 }
 
@@ -139,7 +136,7 @@ function ActualizorInstrumento() {
 <template>
   <div>
     <span @click="clickCancelarEdit">[Ok]</span>
-
+    <subirxml :cancion="cancion"></subirxml>
     <subirmidi :cancion="cancion"></subirmidi>
   </div>
   <div>
@@ -154,6 +151,7 @@ function ActualizorInstrumento() {
       </option>
     </select>
     <span @click="clickAgregarPentagrama">[Agregar]</span>
+    <span @click="clickBorrarPentagrama">[Borrar]</span>
   </div>
 
   <div v-if="cancion.pentagramas[idPentagramaEditando]">
@@ -179,7 +177,7 @@ function ActualizorInstrumento() {
     </select>
   </div>
   <editarCompas
-    v-if="cancion.pentagramas[idPentagramaEditando]"
+    v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
     :cancion="cancion"
     :pentagramaId="idPentagramaEditando"
     :compas="compas"
@@ -188,7 +186,6 @@ function ActualizorInstrumento() {
 
   <div>
     <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
-    <span @click="clickBorrarPentagrama">[Borrar Pentagrama]</span>
   </div>
 </template>
 

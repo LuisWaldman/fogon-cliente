@@ -57,14 +57,12 @@ watch(
   () => props.compas,
   (newCompas) => {
     const renglon = CalcularRenglon(newCompas)
-    console.log('Renglon:', renglon)
 
     const ScrollTo =
       renglon *
       (configuracionPantalla.tamanioLetra +
         configuracionPantalla.tamanioAcorde) *
       configuracionPantalla.factorScroll
-    console.log('ScrollTo:', ScrollTo)
     moverScroll(ScrollTo)
   },
 )
