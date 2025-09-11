@@ -46,6 +46,10 @@ export default defineConfig({
         ],
       },
       /* eslint-enable camelcase */
+      workbox: {
+        // aumentar a 5 MiB
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+      },
     }),
   ],
 })
