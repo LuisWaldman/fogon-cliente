@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import JSZip from 'jszip'
-import { MidiHelper } from '../../modelo/midi/MidiHelper'
+import { XMLHelper } from '../../modelo/pentagrama/XMLHelper'
 import { Cancion } from '../../modelo/cancion/cancion'
 const props = defineProps<{
   cancion: Cancion
 }>()
 const estadoSubida = ref('')
 const fileInput = ref<HTMLInputElement | null>(null)
-const midiHelper = new MidiHelper()
+const xmlHelper = new XMLHelper()
 function abrirDialogoArchivo() {
   estadoSubida.value = 'iniciando'
   fileInput.value?.click()
@@ -42,7 +42,7 @@ async function manejarSeleccionArchivo(event: Event) {
 
       // Si existe container.xml, usarlo para localizar el rootfile (full-path)
       const containerName = fileNames.find((n) =>
-        n.toLowerCase().endsWith('container.xml')
+        n.toLowerCase().endsWith('container.xml'),
       )
 
       if (containerName) {
@@ -58,13 +58,16 @@ async function manejarSeleccionArchivo(event: Event) {
             xmlContent = await zip.files[fullPath].async('string')
           } else {
             // fallback: buscar cualquier otro .xml distinto a container.xml
-            const otherXml = fileNames.find((n) =>
-              n.toLowerCase().endsWith('.xml') && n !== containerName
+            const otherXml = fileNames.find(
+              (n) => n.toLowerCase().endsWith('.xml') && n !== containerName,
             )
             if (otherXml) xmlContent = await zip.files[otherXml].async('string')
           }
         } catch (parseErr) {
-          console.warn('No se pudo parsear container.xml, intentando otros .xml', parseErr)
+          console.warn(
+            'No se pudo parsear container.xml, intentando otros .xml',
+            parseErr,
+          )
         }
       } else {
         // Sin container.xml, tomar el primer .xml disponible
@@ -79,9 +82,7 @@ async function manejarSeleccionArchivo(event: Event) {
 
       estadoSubida.value = 'MXL descomprimido'
       objetoMxl.value = xmlContent
-      console.log(xmlContent)
-
-      // ...seguir con la conversión a pentagramas...
+      props.cancion.pentagramas = xmlHelper.XMLToPentagramas(xmlContent)
     } catch (error) {
       console.error('Error al procesar el archivo MXL:', error)
       estadoSubida.value = 'error al procesar MXL'

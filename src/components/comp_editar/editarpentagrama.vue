@@ -101,7 +101,7 @@ function clickAgregarPentagrama() {
 }
 
 function clickBorrarPentagrama() {
-  props.cancion.pentagramas[idPentagramaEditando.value].compases = []
+  props.cancion.pentagramas.splice(idPentagramaEditando.value, 1)
   emit('actualizoPentagrama')
 }
 
@@ -151,6 +151,7 @@ function ActualizorInstrumento() {
       </option>
     </select>
     <span @click="clickAgregarPentagrama">[Agregar]</span>
+    <span @click="clickBorrarPentagrama">[Borrar]</span>
   </div>
 
   <div v-if="cancion.pentagramas[idPentagramaEditando]">
@@ -185,7 +186,6 @@ function ActualizorInstrumento() {
 
   <div>
     <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
-    <span @click="clickBorrarPentagrama">[Borrar Pentagrama]</span>
   </div>
 </template>
 

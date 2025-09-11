@@ -44,6 +44,7 @@ function DescargarJSON() {
   URL.revokeObjectURL(url)
 }
 function guardarCambios() {
+  props.cancion.archivo = nombrearchivo.value
   CancionManager.getInstance()
     .Save(
       new OrigenCancion(origenDestino.value, nombrearchivo.value, ''),

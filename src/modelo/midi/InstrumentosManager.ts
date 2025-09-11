@@ -17,9 +17,10 @@ export class InstrumentosManager {
       return this.instrumentosCargados[nombre]
     }
 
-    const instrumento = this.instrumentos.find((i) => i.nombre === nombre)
+    let instrumento = this.instrumentos.find((i) => i.nombre === nombre)
     if (!instrumento) {
-      throw new Error(`Instrumento "${nombre}" no encontrado`)
+      instrumento = this.instrumentos[0] // Default to the first instrument if not found
+      //throw new Error(`Instrumento "${nombre}" no encontrado`)
     }
 
     try {
