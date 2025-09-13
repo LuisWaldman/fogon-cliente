@@ -89,7 +89,7 @@ describe('XML HELPER', () => {
     expect(compas1.notes[4].isChord).toBe(false)
     expect(compas1.notes[5].isChord).toBe(false)
 
-    const compasPart: PentagramaCompas = compas1.GetPentagramaCompas()
+    const compasPart: PentagramaCompas = compas1.GetPentagramaCompas(1)
     expect(compasPart.notas.length).toBe(4)
     expect(compasPart.notas[0].length).toBe(3)
     expect(compasPart.notas[0][0].nota).toBe('C4')
@@ -109,25 +109,37 @@ describe('XML HELPER', () => {
   it('Procesa Vals.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
     const score = helper.XMLTToScore(pruebaXmlVals)
-    assert(score.parts.length === 1)
   })
 
-  it('Procesa flaca.musicxml XMLToPentagramas', () => {
+  it('Procesa flaca.musicxml XMLTToScore', () => {
     const helper = new XMLHelper()
     const score = helper.XMLTToScore(pruebaXmlFlaca)
-    assert(score.parts.length === 1)
+    expect(score.parts.length).toBe(1)
+    expect(score.parts[0].claves).toEqual(['G', 'F'])
+  })
+
+  it('Flaca.musicxml Los dos pentagramas del piano', () => {
+    const helper = new XMLHelper()
+    const pentagramas = helper.XMLToPentagramas(pruebaXmlFlaca)
+    expect(pentagramas.length).toBe(2)
+    expect(pentagramas[0].clave).toEqual('treble')
+    expect(pentagramas[1].clave).toEqual('bass')
+    expect(pentagramas[0].compases.length).toBe(49)
+    expect(pentagramas[1].compases.length).toBe(49)
+    expect(pentagramas[0].compases[0].notas.length > 0).toBe(true)
+    expect(pentagramas[1].compases[0].notas.length > 0).toBe(true)
   })
 
   it('Procesa prueba1.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
     const score = helper.XMLTToScore(pruebaXmlDeMi)
-    assert(score.parts.length === 1)
+    expect(score.parts.length).toBe(1)
   })
 
   it('Procesa adios.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
     const score = helper.XMLTToScore(pruebaXmlAdios)
-    assert(score.parts.length === 1)
+    expect(score.parts.length).toBe(4)
   })
 
   it('Procesa OpusChopin.musicxml XMLToPentagramas', () => {

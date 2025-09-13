@@ -20,6 +20,7 @@ export class Note {
   public octave?: number
   public alter?: number
   public duration?: number
+  public staff?: number
   public type?: string
   public tie?: string
 
