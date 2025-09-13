@@ -8,12 +8,16 @@ import { Note } from './xmlpentagrama/Note'
 export class XMLHelper {
   public XMLToPentagramas(xml: string): Pentagrama[] {
     const ret: Pentagrama[] = []
-    const parser = new XMLParser({
-      ignoreAttributes: false,
-      attributeNamePrefix: '',
-    })
-    const jsonObj = parser.parse(xml)
-    console.log('JSON OBJ', jsonObj)
+    const score = this.XMLTToScore(xml)
+    for (const p of score.parts) {
+      const pentagrama = new Pentagrama()
+      pentagrama.instrumento = p.id || 'Piano'
+      pentagrama.clave = 'treble' // podría mejorarse leyendo el XML
+      for (const m of p.measures) {
+        pentagrama.compases.push(m.GetPentagramaCompas())
+      }
+      ret.push(pentagrama)
+    }
     return ret
   }
 
@@ -62,6 +66,13 @@ export class XMLHelper {
           const isRest = !!n.rest
           const note = new Note()
           note.isRest = isRest
+
+          // detectar <chord/>: comprobar existencia de la propiedad
+          note.isChord =
+            typeof n.chord !== 'undefined' &&
+            n.chord !== null &&
+            n.chord !== false
+
           if (!isRest && n.pitch) {
             const pitch = n.pitch
             note.step = pitch.step ?? pitch['step']
@@ -70,6 +81,11 @@ export class XMLHelper {
           }
           note.duration = n.duration ? Number(n.duration) : undefined
           note.type = n.type ?? undefined
+
+          // si esta nota forma parte de un acorde, marcar la nota anterior como raíz
+          if (note.isChord && measure.notes.length > 0) {
+            ;(measure.notes[measure.notes.length - 1] as Note).chordRoot = true
+          }
 
           // handle tie element (may be object or array)
           if (n.tie) {

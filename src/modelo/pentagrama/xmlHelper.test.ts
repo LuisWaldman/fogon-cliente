@@ -1,8 +1,9 @@
 // ahora importa el helper que podría invocar xsltproc en la carga
 import { XMLHelper } from './XMLHelper'
-import { assert, describe, it } from 'vitest'
+import { assert, describe, expect, it } from 'vitest'
 import fs from 'fs'
 import path from 'path'
+import type { PentagramaCompas } from '../cancion/pentagramacompas'
 
 // leer el XML conocido antes de crear el mock
 const pruebaPath = path.join(
@@ -54,43 +55,84 @@ describe('XML HELPER', () => {
 
   it('Procesa prueba1.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
-    const pentagrama = helper.XMLToPentagramas(pruebaXml)
-    assert(pentagrama.length >= 0)
-  })
-
-  it('Procesa prueba1.musicxml XMLToPentagramas', () => {
-    const helper = new XMLHelper()
     const pentagrama = helper.XMLToPentagramas(pruebaXmlSimple)
-    assert(pentagrama.length >= 0)
+    expect(pentagrama.length).toBe(1)
+    expect(pentagrama[0].instrumento).toBe('P1')
+    expect(pentagrama[0].clave).toBe('treble')
+    expect(pentagrama[0].compases.length).toBe(32)
+    expect(pentagrama[0].compases[0].notas.length).toBe(4)
+    expect(pentagrama[0].compases[0].notas[0].length).toBe(3)
+    expect(pentagrama[0].compases[0].notas[0][0].nota).toBe('C4')
+    expect(pentagrama[0].compases[0].notas[0][1].nota).toBe('E4')
+    expect(pentagrama[0].compases[0].notas[0][2].nota).toBe('G4')
+    expect(pentagrama[0].compases[0].notas[0][0].duracion).equal('4')
+    expect(pentagrama[0].compases[0].notas[0][1].duracion).equal('4')
+    expect(pentagrama[0].compases[0].notas[0][2].duracion).equal('4')
+    expect(pentagrama[0].compases[0].notas[1].length).toBe(1)
+    expect(pentagrama[0].compases[0].notas[1][0].nota).toBe('C4')
+    expect(pentagrama[0].compases[0].notas[1][0].duracion).equal('4')
   })
 
   it('Procesa prueba1.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
-    const pentagrama = helper.XMLToPentagramas(pruebaXmlVals)
-    assert(pentagrama.length >= 0)
+    const score = helper.XMLTToScore(pruebaXmlSimple)
+    expect(score.parts.length).toBe(1)
+    const parte1 = score.parts[0]
+    expect(parte1.measures.length).toBe(32)
+    const compas1 = parte1.measures[0]
+    expect(compas1.notes.length).toBe(6)
+
+    expect(compas1.notes[0].isChord).toBe(false)
+    expect(compas1.notes[1].isChord).toBe(true)
+    expect(compas1.notes[2].isChord).toBe(true)
+    expect(compas1.notes[3].isChord).toBe(false)
+    expect(compas1.notes[4].isChord).toBe(false)
+    expect(compas1.notes[5].isChord).toBe(false)
+
+    const compasPart: PentagramaCompas = compas1.GetPentagramaCompas()
+    expect(compasPart.notas.length).toBe(4)
+    expect(compasPart.notas[0].length).toBe(3)
+    expect(compasPart.notas[0][0].nota).toBe('C4')
+    expect(compasPart.notas[0][1].nota).toBe('E4')
+    expect(compasPart.notas[0][2].nota).toBe('G4')
+    expect(compasPart.notas[0][0].duracion).equal('4')
+    expect(compasPart.notas[0][1].duracion).equal('4')
+    expect(compasPart.notas[0][2].duracion).equal('4')
+    expect(compasPart.notas[1].length).toBe(1)
+    expect(compasPart.notas[1][0].nota).toBe('C4')
+    expect(compasPart.notas[1].length).toBe(1)
+    expect(compasPart.notas[1][0].nota).toBe('C4')
+    expect(compasPart.notas[1].length).toBe(1)
+    expect(compasPart.notas[1][0].nota).toBe('C4')
+  })
+
+  it('Procesa Vals.musicxml XMLToPentagramas', () => {
+    const helper = new XMLHelper()
+    const score = helper.XMLTToScore(pruebaXmlVals)
+    assert(score.parts.length === 1)
+  })
+
+  it('Procesa flaca.musicxml XMLToPentagramas', () => {
+    const helper = new XMLHelper()
+    const score = helper.XMLTToScore(pruebaXmlFlaca)
+    assert(score.parts.length === 1)
   })
 
   it('Procesa prueba1.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
-    const pentagrama = helper.XMLToPentagramas(pruebaXmlFlaca)
-    assert(pentagrama.length >= 0)
+    const score = helper.XMLTToScore(pruebaXmlDeMi)
+    assert(score.parts.length === 1)
   })
 
-  it('Procesa prueba1.musicxml XMLToPentagramas', () => {
+  it('Procesa adios.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
-    const pentagrama = helper.XMLToPentagramas(pruebaXmlDeMi)
-    assert(pentagrama.length >= 0)
+    const score = helper.XMLTToScore(pruebaXmlAdios)
+    assert(score.parts.length === 1)
   })
 
-  it('Procesa prueba1.musicxml XMLToPentagramas', () => {
+  it('Procesa OpusChopin.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
-    const pentagrama = helper.XMLToPentagramas(pruebaXmlAdios)
-    assert(pentagrama.length >= 0)
-  })
-
-  it('Procesa prueba1.musicxml XMLToPentagramas', () => {
-    const helper = new XMLHelper()
-    const pentagrama = helper.XMLToPentagramas(pruebaXmlOpusChopin)
-    assert(pentagrama.length >= 0)
+    const score = helper.XMLTToScore(pruebaXmlOpusChopin)
+    assert(score.parts.length === 1)
   })
 })
