@@ -32,12 +32,10 @@ const pruebaPathAdios = path.join(
   '../../../tests/MusicXML/adios-nonino-astor-piazzolla-adios-nonino.musicxml',
 )
 
-
 const pruebaPathOpus = path.join(
   __dirname,
   '../../../tests/MusicXML/chopin-nocturne-op-9-no-2-e-flat-major.musicxml',
 )
-
 
 const pruebaXml = fs.readFileSync(pruebaPath, 'utf8')
 const pruebaXmlSimple = fs.readFileSync(pruebaPathsimple, 'utf8')
@@ -47,9 +45,7 @@ const pruebaXmlDeMi = fs.readFileSync(pruebaPathDeMi, 'utf8')
 const pruebaXmlAdios = fs.readFileSync(pruebaPathAdios, 'utf8')
 const pruebaXmlOpusChopin = fs.readFileSync(pruebaPathOpus, 'utf8')
 
-  describe('XML HELPER', () => {
-
-    
+describe('XML HELPER', () => {
   it('Procesa prueba1.musicxml XMLTToScore', () => {
     const helper = new XMLHelper()
     const score = helper.XMLTToScore(pruebaXml)
@@ -61,7 +57,7 @@ const pruebaXmlOpusChopin = fs.readFileSync(pruebaPathOpus, 'utf8')
     const pentagrama = helper.XMLToPentagramas(pruebaXml)
     assert(pentagrama.length >= 0)
   })
-  
+
   it('Procesa prueba1.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
     const pentagrama = helper.XMLToPentagramas(pruebaXmlSimple)
@@ -73,7 +69,7 @@ const pruebaXmlOpusChopin = fs.readFileSync(pruebaPathOpus, 'utf8')
     const pentagrama = helper.XMLToPentagramas(pruebaXmlVals)
     assert(pentagrama.length >= 0)
   })
-  
+
   it('Procesa prueba1.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
     const pentagrama = helper.XMLToPentagramas(pruebaXmlFlaca)
@@ -91,11 +87,10 @@ const pruebaXmlOpusChopin = fs.readFileSync(pruebaPathOpus, 'utf8')
     const pentagrama = helper.XMLToPentagramas(pruebaXmlAdios)
     assert(pentagrama.length >= 0)
   })
-  
+
   it('Procesa prueba1.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
     const pentagrama = helper.XMLToPentagramas(pruebaXmlOpusChopin)
     assert(pentagrama.length >= 0)
   })
-
 })
