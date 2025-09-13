@@ -6,7 +6,7 @@ export class Measure {
   GetPentagramaCompas(staff: number): PentagramaCompas {
     const notas: PentagramaNotas[][] = []
     for (const n of this.notes) {
-      if (n.staff === staff || staff === 1) {
+      if (n.staff === staff || (staff === 1 && n.staff === undefined)) {
         if (n.isRest) {
           notas.push([new PentagramaNotas('C4', `${n.GetDuracionString()}r`)])
         } else {
