@@ -10,7 +10,7 @@ export class Measure {
         notas.push([new PentagramaNotas('C4', `${n.duration?.toString()}r`)])
       } else {
         const nuevaNota = new PentagramaNotas(
-          `${n.step ?? ''}${n.octave ?? ''}${n.alter ? (n.alter > 0 ? '#' : 'b') : ''}`,
+          `${n.step ?? ''}${n.alter ? (n.alter > 0 ? '#' : 'b') : ''}${n.octave ?? ''}`,
           n.GetDuracionString(),
         )
         if (n.isChord) {
