@@ -116,6 +116,30 @@ describe('XML HELPER', () => {
     const score = helper.XMLTToScore(pruebaXmlFlaca)
     expect(score.parts.length).toBe(1)
     expect(score.parts[0].claves).toEqual(['G', 'F'])
+    
+  })
+
+  it('Procesa flaca.musicxml To pentagrama', () => {
+    const helper = new XMLHelper()
+    const pentagramas = helper.XMLToPentagramas(pruebaXmlFlaca)
+    expect(pentagramas.length).toBe(2)
+    expect(pentagramas[0].clave).toEqual('treble')
+    expect(pentagramas[1].clave).toEqual('bass')
+    const pentaSol = pentagramas[0]
+    pentaSol.compases.forEach((c, nrocompas) => {
+      // console.log(c.notas)
+      c.notas.forEach((n, indexno) => {
+        n.forEach((nn, indexno2) => {
+          if (nn.nota === '') {
+            console.log('Compás con nota sin paso', nrocompas, indexno, indexno2)
+            expect(nn.nota).toMatch(/^[A-G][#b]?[0-9]$/)
+          }
+          expect(nn.nota).toMatch(/^[A-G][#b]?[0-9]$/)
+        })
+      })
+    })
+    expect(pentagramas[0].compases.length).toBe(49)
+    expect(pentagramas[1].compases.length).toBe(49)
   })
 
   it('Flaca.musicxml Los dos pentagramas del piano', () => {

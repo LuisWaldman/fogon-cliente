@@ -84,6 +84,38 @@ export class XMLHelper {
         const measure = new Measure()
         measure.number =
           Number(m.number ?? m['@number'] ?? m['@_number'] ?? NaN) || undefined
+        // detectar <barline> / <repeat> y asignar direction / times al Measure
+        const barlinesRaw = m.barline
+          ? Array.isArray(m.barline)
+            ? m.barline
+            : [m.barline]
+          : []
+        for (const b of barlinesRaw) {
+          const repeatRaw = b.repeat ?? b['repeat'] ?? undefined
+          if (!repeatRaw) continue
+          const repeats = Array.isArray(repeatRaw) ? repeatRaw : [repeatRaw]
+          for (const r of repeats) {
+            const dir =
+              r.direction ?? r['direction'] ?? r['@direction'] ?? undefined
+            if (dir === 'forward' || dir === 'backward') {
+              measure.direction = dir as 'forward' | 'backward'
+            }
+            const timesRaw = r.times ?? r['times'] ?? undefined
+            if (typeof timesRaw !== 'undefined') {
+              // times puede venir como string o como objeto con texto
+              const timesVal =
+                typeof timesRaw === 'object'
+                  ? (timesRaw['#text'] ??
+                    timesRaw['#'] ??
+                    Object.values(timesRaw)[0])
+                  : timesRaw
+              const timesNum = Number(timesVal)
+              if (!Number.isNaN(timesNum) && timesNum > 0) {
+                measure.times = timesNum
+              }
+            }
+          }
+        }
 
         const notesRaw = m.note
           ? Array.isArray(m.note)
@@ -92,7 +124,8 @@ export class XMLHelper {
           : []
 
         for (const n of notesRaw) {
-          const isRest = !!n.rest
+          // detectar rest aunque venga como objeto vacío, string o con atributos
+          const isRest = typeof n.rest !== 'undefined' && n.rest !== null
           const note = new Note()
           note.isRest = isRest
 

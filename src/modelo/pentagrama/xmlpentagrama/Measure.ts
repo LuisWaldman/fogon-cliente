@@ -8,7 +8,7 @@ export class Measure {
     for (const n of this.notes) {
       if (n.staff === staff || staff === 1) {
         if (n.isRest) {
-          notas.push([new PentagramaNotas('C4', `${n.duration?.toString()}r`)])
+          notas.push([new PentagramaNotas('C4', `${n.GetDuracionString()}r`)])
         } else {
           const nuevaNota = new PentagramaNotas(
             `${n.step ?? ''}${n.alter ? (n.alter > 0 ? '#' : 'b') : ''}${n.octave ?? ''}`,
@@ -26,6 +26,8 @@ export class Measure {
     return toReturn
   }
   number?: number
+  direction?: 'forward' | 'backward'
+  times?: number
   notes: Note[] = []
 
   constructor(init?: Partial<Measure>) {
