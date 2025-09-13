@@ -1,6 +1,6 @@
 // ahora importa el helper que podría invocar xsltproc en la carga
 import { XMLHelper } from './XMLHelper'
-import { assert, describe, expect, it } from 'vitest'
+import { assert, describe, it } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 
