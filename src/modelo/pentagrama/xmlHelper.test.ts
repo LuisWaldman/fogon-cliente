@@ -109,6 +109,7 @@ describe('XML HELPER', () => {
   it('Procesa Vals.musicxml XMLToPentagramas', () => {
     const helper = new XMLHelper()
     const score = helper.XMLTToScore(pruebaXmlVals)
+    expect(score.parts.length).toBe(12)
   })
 
   it('Procesa flaca.musicxml XMLTToScore', () => {
@@ -116,7 +117,6 @@ describe('XML HELPER', () => {
     const score = helper.XMLTToScore(pruebaXmlFlaca)
     expect(score.parts.length).toBe(1)
     expect(score.parts[0].claves).toEqual(['G', 'F'])
-    
   })
 
   it('Procesa flaca.musicxml To pentagrama', () => {
@@ -131,7 +131,12 @@ describe('XML HELPER', () => {
       c.notas.forEach((n, indexno) => {
         n.forEach((nn, indexno2) => {
           if (nn.nota === '') {
-            console.log('Compás con nota sin paso', nrocompas, indexno, indexno2)
+            console.log(
+              'Compás con nota sin paso',
+              nrocompas,
+              indexno,
+              indexno2,
+            )
             expect(nn.nota).toMatch(/^[A-G][#b]?[0-9]$/)
           }
           expect(nn.nota).toMatch(/^[A-G][#b]?[0-9]$/)

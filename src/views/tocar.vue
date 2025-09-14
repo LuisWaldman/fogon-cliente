@@ -75,7 +75,6 @@ function clickMidi() {
   localStorage.setItem('midi', vista.value.midi ? 'true' : 'false')
 }
 
-
 function clickEscuchar() {
   vista.value.escucha = !vista.value.escucha
   localStorage.setItem('escucha', vista.value.escucha ? 'true' : 'false')
@@ -205,9 +204,10 @@ function cambioestado(estado: number) {
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
         <TocarEscucha
           v-if="vista.escucha"
-         @cambioEstado="cambioestado"
+          @cambioEstado="cambioestado"
           :cancion="appStore.cancion"
-          :compas="appStore.compas"></TocarEscucha>
+          :compas="appStore.compas"
+        ></TocarEscucha>
         <TocarYoutube
           v-if="vista.media"
           @cambioEstado="cambioestado"

@@ -12,7 +12,9 @@ const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
-const refTodosLosAcordes = ref<string[]>(props.cancion.acordes.GetTodosLosAcordes())
+const refTodosLosAcordes = ref<string[]>(
+  props.cancion.acordes.GetTodosLosAcordes(),
+)
 const audioContext = ref<AudioContext | null>(null)
 const analyserNode = ref<AnalyserNode | null>(null)
 const sourceNode = ref<MediaStreamAudioSourceNode | null>(null)
@@ -49,7 +51,6 @@ function CalcularNotas() {
     clsNotas.value[i] = ''
   }
 }
-
 
 watch(mediaStream, (stream) => {
   if (!stream) return
@@ -233,9 +234,8 @@ const detectFrequency = () => {
     if (refTodosLosAcordes.value[props.compas + 1] === EscuchandoAcorde.value) {
       appStore.aplicacion.updateCompas(props.compas + 1)
     }
-
   }
-  
+
   requestAnimationFrame(detectFrequency)
 }
 
@@ -290,7 +290,6 @@ function Solicitar() {
     })
 }
 
-
 // Añadir log para montaje y desmontaje del componente
 import { onMounted, onUnmounted } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
@@ -310,40 +309,38 @@ onUnmounted(() => {
 })
 
 const mostrandoNota = ref<number>(0)
-
 </script>
 
 <template>
-  
   <div class="divAfinador">
-        <div v-if="notasSonido[mostrandoNota]" class="contDatos">
-          <div>Nota</div>
-          <div
-            style="
-              font-size: xx-large;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-            "
-          >
-            {{ notasSonido[mostrandoNota].nota }}
-            {{ notasSonido[mostrandoNota].octava }}
-          </div>
-        </div>
+    <div v-if="notasSonido[mostrandoNota]" class="contDatos">
+      <div>Nota</div>
+      <div
+        style="
+          font-size: xx-large;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        "
+      >
+        {{ notasSonido[mostrandoNota].nota }}
+        {{ notasSonido[mostrandoNota].octava }}
+      </div>
+    </div>
 
-        <div class="contDatos">
-          <div>Acorde</div>
-          <div
-            style="
-              font-size: xx-large;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-            "
-          >
-            {{ EscuchandoAcorde }}
-          </div>
-        </div>
+    <div class="contDatos">
+      <div>Acorde</div>
+      <div
+        style="
+          font-size: xx-large;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        "
+      >
+        {{ EscuchandoAcorde }}
+      </div>
+    </div>
   </div>
 </template>
 

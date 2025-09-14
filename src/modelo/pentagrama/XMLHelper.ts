@@ -58,6 +58,7 @@ export class XMLHelper {
       // Buscar un compás que tenga <attributes> y extraer sus <clef>
       const attribMeasure =
         measuresRaw.find(
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           (m: any) => m.attributes || m['attributes'] || m['@attributes'],
         ) ?? undefined
       const attributes =
