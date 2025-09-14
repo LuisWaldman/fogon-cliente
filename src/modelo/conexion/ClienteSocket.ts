@@ -1,5 +1,6 @@
 import { io, Socket } from 'socket.io-client'
 import type { datosLogin } from '../datosLogin'
+import type { ObjetoPosteable } from '../objetoPosteable'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -40,6 +41,7 @@ export class ClienteSocket {
   private reconectando: boolean = false
 
   private loginSuccessHandler?: () => void
+  token: any
   public setLoginSuccessHandler(handler: () => void): void {
     this.loginSuccessHandler = handler
   }
@@ -128,6 +130,26 @@ export class ClienteSocket {
     return this.urlserver
   }
 
+  public async HTTPGET(action: string): Promise<Response> {
+    return fetch(this.UrlServer + action, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${this.token}`,
+      },
+    })
+  }
+
+  async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
+    return fetch(this.UrlServer + urlPost, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${this.token}`,
+      },
+      body: JSON.stringify(body),
+    })
+  }
+
   constructor(urlserver: string) {
     this.urlserver = urlserver
   }
@@ -192,6 +214,7 @@ export class ClienteSocket {
     })
     socket.on('conectado', (data: { token: string }) => {
       console.log('conectado received with token:', data.token)
+      this.token = data.token
       this.conectadoHandler?.(data.token)
     })
 

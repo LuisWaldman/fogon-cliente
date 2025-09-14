@@ -334,26 +334,14 @@ export default class Aplicacion {
   }
 
   async HTTPGet(urlGet: string): Promise<Response> {
-    return fetch(this.url + urlGet, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${this.token}`,
-      },
-    })
+    return this.cliente?.HTTPGET(urlGet) as Promise<Response>
   }
   CambioEstadoMedio(estado: number) {
     if (estado == 1) this.reproductor.iniciarReproduccion()
     else if (estado == 2) this.reproductor.detenerReproduccion()
   }
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
-    return fetch(this.url + urlPost, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${this.token}`,
-      },
-      body: JSON.stringify(body),
-    })
+    return this.cliente?.HTTPPost(urlPost, body) as Promise<Response>
   }
   login(datos: datosLogin): boolean {
     const appStore = useAppStore()

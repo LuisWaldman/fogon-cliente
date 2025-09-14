@@ -7,15 +7,9 @@ export class CancionFogonManager {
   public static async GetCancion(
     origencancion: OrigenCancion,
     cliente: ClienteSocket | null = null,
-    token: string = '',
   ): Promise<Cancion> {
-    const response = await fetch(cliente?.UrlServer + 'cancionsesion', {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    })
-    const dataRes = await response.json()
+    const response = await cliente?.HTTPGET('cancionsesion')
+    const dataRes = await response?.json()
     if (dataRes.datosJSON === null) {
       return Cancion.GetDefault('Sin cancion en el fogón')
     }
@@ -34,15 +28,12 @@ export class CancionFogonManager {
       datosJSON: cancion,
     }
     return new Promise<void>(async (resolve, reject) => {
-      const response = await fetch(cliente?.UrlServer + 'cancionsesion', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(cancionData),
-      })
-      if (response.ok) {
+      const response = await cliente?.HTTPPOST(
+        'cancionsesion',
+        JSON.stringify(cancionData),
+        token,
+      )
+      if (response?.ok) {
         resolve()
       } else {
         reject(new Error('Error al guardar la canción'))

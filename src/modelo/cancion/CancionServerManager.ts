@@ -7,18 +7,11 @@ export class CancionServerManager {
   public static async GetCancion(
     origencancion: OrigenCancion,
     cliente: ClienteSocket | null = null,
-    token: string = '',
   ): Promise<Cancion> {
-    const response = await fetch(
-      cliente?.UrlServer + 'cancion?nombre=' + origencancion.fileName,
-      {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      },
+    const response = await cliente?.HTTPGET(
+      'cancion?nombre=' + origencancion.fileName,
     )
-    const dataRes = await response.json()
+    const dataRes = await response?.json()
     const cancion = HelperJSON.JSONToCancion(JSON.stringify(dataRes.datosJSON))
     cancion.archivo = origencancion.fileName
     return cancion
@@ -26,27 +19,13 @@ export class CancionServerManager {
 
   public static async SaveCancion(
     cancion: Cancion,
-    cliente: ClienteSocket | null = null,
-    token: string = '',
+    cliente: ClienteSocket | null = null
   ): Promise<void> {
     const cancionData = {
       nombreArchivo: cancion.archivo,
       datosJSON: cancion,
     }
-    return new Promise<void>(async (resolve, reject) => {
-      const response = await fetch(cliente?.UrlServer + 'cancion', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(cancionData),
-      })
-      if (response.ok) {
-        resolve()
-      } else {
-        reject(new Error('Error al guardar la canción'))
-      }
-    })
+    await cliente?.HTTPPost('cancion', cancionData)
+    return
   }
 }
