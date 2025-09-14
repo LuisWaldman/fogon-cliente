@@ -7,6 +7,9 @@ export class EstiloAcorde {
     octava: number,
     esBateria: boolean,
   ): PentagramaNotas[] {
+    if (acorde === undefined || acorde.trim() === '') {
+      return []
+    }
     let acoPost = acorde
     if (esBateria) return this.GetNotasBateria()
 

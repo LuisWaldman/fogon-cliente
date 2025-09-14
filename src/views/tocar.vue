@@ -6,6 +6,7 @@ import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarYoutube from '../components/comp_tocar/Tocar_Youtube.vue'
 import TocarMidi from '../components/comp_tocar/Tocar_Midi.vue'
+import TocarEscucha from '../components/comp_tocar/Tocar_Escucha.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
@@ -30,6 +31,7 @@ const appStore = useAppStore()
 class vistaTocar {
   viendo: string = 'karaoke'
   media: boolean = false
+  escucha: boolean = false
   midi: boolean = false
   secuencia: boolean = true
   partes: boolean = true
@@ -71,6 +73,11 @@ function clickMedia() {
 function clickMidi() {
   vista.value.midi = !vista.value.midi
   localStorage.setItem('midi', vista.value.midi ? 'true' : 'false')
+}
+
+function clickEscuchar() {
+  vista.value.escucha = !vista.value.escucha
+  localStorage.setItem('escucha', vista.value.escucha ? 'true' : 'false')
 }
 
 function clickAcordes() {
@@ -195,6 +202,12 @@ function cambioestado(estado: number) {
         ></TocarPentagrama>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
+        <TocarEscucha
+          v-if="vista.escucha"
+          @cambioEstado="cambioestado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarEscucha>
         <TocarYoutube
           v-if="vista.media"
           @cambioEstado="cambioestado"
@@ -268,6 +281,9 @@ function cambioestado(estado: number) {
               <i class="bi bi-check-circle" v-if="vista.midi"></i>
               Midi</a
             >
+          </li>
+          <li v-on:click="clickEscuchar()">
+            <a class="dropdown-item" href="#"> Escuchar</a>
           </li>
 
           <li v-on:click="clickSincronizarMedios()">
