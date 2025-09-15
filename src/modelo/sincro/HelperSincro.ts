@@ -96,9 +96,43 @@ export class HelperSincro {
         this.ciclos = 0
         this.delayCalculadorRTC = new DelayCalculador()
         this.momentoEnviado = this.MomentoLocal()
-        this.clienteRTC?.SendTimestamp()
+        this.clienteRTC?.SendGetTime()
       }
       this.sincronizandoRTC = false
+    })
+    this.clienteRTC.setOnMensajeHandler((msg: string) => {
+      if (msg === 'gettime') {
+        this.clienteRTC?.SendTime(this.MomentoSincro())
+        return
+      } else {
+        if (this.momentoEnviado == null) {
+          return
+        }
+        this.momentoRecibido = this.MomentoLocal()
+        const tardo = HelperSincro.Diferencia(
+          this.momentoEnviado,
+          this.momentoRecibido,
+        )
+        const hora = parseInt(msg)
+        const timeServerReal = hora + tardo / 2
+        const delay = this.momentoRecibido - timeServerReal
+        this.delayCalculadorRTC.addDelaySet(new DelaySet(tardo * -1, delay))
+        this.delayReloj = this.delayCalculadorRTC.getDelay()
+        this.ErrorReloj = this.delayCalculadorRTC.getError()
+        console.log(
+          'Ajustando, delayReloj:',
+          this.delayReloj,
+          'ErrorReloj:',
+          this.ErrorReloj,
+        )
+        if (this.ciclos < this.maxCiclos) {
+          this.ciclos++
+          this.momentoEnviado = this.MomentoLocal()
+          this.clienteRTC?.SendGetTime()
+        } else {
+          this.clienteRTC?.closeConn()
+        }
+      }
     })
   }
 

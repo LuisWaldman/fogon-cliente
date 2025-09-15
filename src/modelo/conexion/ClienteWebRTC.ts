@@ -32,11 +32,17 @@ export class ClienteWebRTC {
     }
 
     this.dataChannel.onmessage = (event) => {
-      const msg = JSON.parse(event.data)
-      console.log('📩 Mensaje recibido:', msg)
+      if (event.data === 'close') {
+        this.cerrarYreiniciar()
+      } else {
+        this.OnMensaje?.(event.data)
+      }
     }
   }
-
+  private OnMensaje?: (msg: string) => void
+  public setOnMensajeHandler(handler: (msg: string) => void): void {
+    this.OnMensaje = handler
+  }
   private OnConnOpened?: () => void
   public setOnConnOpenedHandler(handler: () => void): void {
     this.OnConnOpened = handler
@@ -96,11 +102,24 @@ export class ClienteWebRTC {
     console.log('✅ Respuesta SDP establecida correctamente')
   }
 
+  cerrarYreiniciar() {
+    // Close the data channel if it exists
+    console.log('Cerrando conexión WebRTC y reiniciando...')
+  }
+
+  closeConn(): void {
+    this.dataChannel?.send('close')
+    this.cerrarYreiniciar()
+  }
   // Método para enviar un timestamp por el canal
-  SendTimestamp(): void {
-    console.log('⏰ Enviando timestamp por el canal de datos', this.dataChannel?.readyState)
+  SendGetTime(): void {
     if (this.dataChannel?.readyState === 'open') {
-      this.dataChannel.send(JSON.stringify({ type: 'ping', time: Date.now() }))
+      this.dataChannel.send('gettime')
+    }
+  }
+  SendTime(time: number): void {
+    if (this.dataChannel?.readyState === 'open') {
+      this.dataChannel.send(time.toString())
     }
   }
 }
