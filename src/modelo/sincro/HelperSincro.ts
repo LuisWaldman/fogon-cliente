@@ -91,7 +91,11 @@ export class HelperSincro {
       console.log('SDP generado, enviando al servidor...', sdp)
       this.cliente?.HTTPPost('webrtc', { sdp: sdp })
     })
-    this.clienteRTC.setOnConnOpenedHandler(() => {
+    this.SetClienteRTC()
+  }
+
+  public SetClienteRTC() {
+    this.clienteRTC?.setOnConnOpenedHandler(() => {
       if (this.sincronizandoRTC) {
         this.ciclos = 0
         this.delayCalculadorRTC = new DelayCalculador()
@@ -100,7 +104,7 @@ export class HelperSincro {
       }
       this.sincronizandoRTC = false
     })
-    this.clienteRTC.setOnMensajeHandler((msg: string) => {
+    this.clienteRTC?.setOnMensajeHandler((msg: string) => {
       if (msg === 'gettime') {
         this.clienteRTC?.SendTime(this.MomentoSincro())
         return
@@ -133,6 +137,14 @@ export class HelperSincro {
           this.clienteRTC?.closeConn()
         }
       }
+    })
+    this.clienteRTC?.setOnReiniciarHandler(() => {
+      this.clienteRTC = new ClienteWebRTC()
+      this.clienteRTC.GetSDP().then((sdp) => {
+        console.log('SDP generado, enviando al servidor...', sdp)
+        this.cliente?.HTTPPost('updatertc', { sdp: sdp })
+      })
+      this.SetClienteRTC()
     })
   }
 

@@ -43,6 +43,11 @@ export class ClienteWebRTC {
   public setOnMensajeHandler(handler: (msg: string) => void): void {
     this.OnMensaje = handler
   }
+
+  private Reiniciar?: () => void
+  public setOnReiniciarHandler(handler: () => void): void {
+    this.Reiniciar = handler
+  }
   private OnConnOpened?: () => void
   public setOnConnOpenedHandler(handler: () => void): void {
     this.OnConnOpened = handler
@@ -105,6 +110,14 @@ export class ClienteWebRTC {
   cerrarYreiniciar() {
     // Close the data channel if it exists
     console.log('Cerrando conexión WebRTC y reiniciando...')
+    if (this.dataChannel && this.dataChannel.readyState === 'open') {
+      this.dataChannel.close()
+      this.dataChannel = null
+    }
+    this.peerConnection.close()
+    if (this.Reiniciar) {
+      this.Reiniciar()
+    }
   }
 
   closeConn(): void {
