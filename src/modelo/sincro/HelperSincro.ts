@@ -18,6 +18,7 @@ export class HelperSincro {
   private momentoRecibido: number = 0
 
   private delayCalculador: DelayCalculador = new DelayCalculador()
+  private delayCalculadorRTC: DelayCalculador = new DelayCalculador()
   ErrorReloj: number = 0
   setCliente(cliente: ClienteSocket) {
     this.cliente = cliente
@@ -62,16 +63,18 @@ export class HelperSincro {
     this.momentoEnviado = this.MomentoLocal()
     this.cliente.gettime()
   }
-  SincronizarConCliente(cliente: number) {
-    this.cliente
-      ?.HTTPGET(`webrtc?usuarioid=${cliente}`)
-      .then((response) => response.json())
-      .then((sdp: SDPStruct) => {
-        console.log('SDP recibido del servidor:', sdp.sdp)
-        this.clienteRTC?.SetRemoteSDP(sdp.sdp).then(() => {
-          this.clienteRTC?.SendTimestamp()
-        })
-      })
+  sincronizandoRTC: boolean = false
+  async SincronizarConClienteRTC(cliente: number) {
+    this.sincronizandoRTC = true
+    const response = await this.cliente?.HTTPGET(`webrtc?usuarioid=${cliente}`)
+    const sdp: SDPStruct = await response?.json()
+    await this.clienteRTC?.SetRemoteOffer(sdp.sdp)
+    const answer = await this.clienteRTC?.CreateAnswerSDP()
+    console.log('SDP de respuesta generado, enviando al servidor...', answer)
+    this.cliente?.HTTPPost('answerrtc', { sdp: answer, usuarioid: cliente })
+  }
+  async IniciarActualizacionRTC(sdp: string) {
+    await this.clienteRTC?.SetRemoteSDP(sdp)
   }
   ActualizarDelayRelojRTC() {
     if (!this.cliente) {
@@ -79,11 +82,23 @@ export class HelperSincro {
     }
     this.clienteRTC = new ClienteWebRTC()
     this.cliente.setSincronizarRTCHandler((n: number) => {
-      this.SincronizarConCliente(n)
+      this.SincronizarConClienteRTC(n)
+    })
+    this.cliente.setAnswerRTCHandler((sdp: string) => {
+      this.IniciarActualizacionRTC(sdp)
     })
     this.clienteRTC.GetSDP().then((sdp) => {
       console.log('SDP generado, enviando al servidor...', sdp)
       this.cliente?.HTTPPost('webrtc', { sdp: sdp })
+    })
+    this.clienteRTC.setOnConnOpenedHandler(() => {
+      if (this.sincronizandoRTC) {
+        this.ciclos = 0
+        this.delayCalculadorRTC = new DelayCalculador()
+        this.momentoEnviado = this.MomentoLocal()
+        this.clienteRTC?.SendTimestamp()
+      }
+      this.sincronizandoRTC = false
     })
   }
 

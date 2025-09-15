@@ -155,7 +155,7 @@ function ActualizarCancion(cancion: Cancion) {
     CompasAcorde.value.push(compasActual)
   }
 }
- 
+
 function CalcularResaltado(newCompas: number) {
   let totalCompases = 0
   for (let i = 0; i < props.cancion.acordes.ordenPartes.length; i++) {

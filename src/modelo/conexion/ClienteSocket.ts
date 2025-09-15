@@ -19,6 +19,7 @@ interface ServerToClientEvents {
   actualizarusuarios: () => void
   time: (hora: number) => void
   sincronizarRTC: (usuario: number) => void
+  answerRTC: (SDP: string) => void
 }
 
 interface ClientToServerEvents {
@@ -59,7 +60,10 @@ export class ClienteSocket {
   public setConectadoHandler(handler: (token: string) => void): void {
     this.conectadoHandler = handler
   }
-
+  private answerRTCHandler?: (SDP: string) => void
+  public setAnswerRTCHandler(handler: (SDP: string) => void): void {
+    this.answerRTCHandler = handler
+  }
   private cancionActualizadaHandler?: () => void
   public setCancionActualizadaHandler(handler: () => void): void {
     this.cancionActualizadaHandler = handler
@@ -278,7 +282,10 @@ export class ClienteSocket {
       console.log('compasActualizado received with compas:', compas)
       this.compasActualizadoHandler?.(compas)
     })
-
+    socket.on('answerRTC', (SDP: string) => {
+      console.log('answerRTC received with SDP:', SDP)
+      this.answerRTCHandler?.(SDP)
+    })
     socket.on('time', (hora: number) => {
       this.timeHandler?.(hora)
     })
