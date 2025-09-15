@@ -15,12 +15,10 @@ export class CancionManager {
   private constructor() {}
 
   private cliente: ClienteSocket | null = null
-  private token: string = ''
   private db: IDBDatabase | null = null
 
-  public setCliente(cliente: ClienteSocket, token: string): void {
+  public setCliente(cliente: ClienteSocket): void {
     this.cliente = cliente
-    this.token = token
   }
   private getDBConnection(): Promise<IDBDatabase> {
     return new Promise((resolve, reject) => {
@@ -70,22 +68,14 @@ export class CancionManager {
 
   private async InternalGet(origencancion: OrigenCancion): Promise<Cancion> {
     if (origencancion.origenUrl === 'server') {
-      return CancionServerManager.GetCancion(
-        origencancion,
-        this.cliente,
-        this.token,
-      )
+      return CancionServerManager.GetCancion(origencancion, this.cliente)
     }
     if (origencancion.origenUrl === 'subida') {
       return CancionSubidasManager.GetCancion(origencancion)
     }
 
     if (origencancion.origenUrl === 'fogon') {
-      return CancionFogonManager.GetCancion(
-        origencancion,
-        this.cliente,
-        this.token,
-      )
+      return CancionFogonManager.GetCancion(origencancion, this.cliente)
     }
     if (origencancion.origenUrl === 'local') {
       if (!this.db) {
@@ -96,11 +86,7 @@ export class CancionManager {
     }
     console.log('Recuperando canción desde URL:', origencancion.origenUrl)
     if (origencancion.origenUrl === 'server') {
-      return CancionServerManager.GetCancion(
-        origencancion,
-        this.cliente,
-        this.token,
-      )
+      return CancionServerManager.GetCancion(origencancion, this.cliente)
     }
     return CancionUrlManager.GetCancion(origencancion)
   }
@@ -115,9 +101,9 @@ export class CancionManager {
 
   public async Save(origen: OrigenCancion, cancion: Cancion): Promise<void> {
     if (origen.origenUrl === 'server') {
-      CancionServerManager.SaveCancion(cancion, this.cliente, this.token)
+      CancionServerManager.SaveCancion(cancion, this.cliente)
     } else if (origen.origenUrl === 'fogon') {
-      CancionFogonManager.SaveCancion(cancion, this.cliente, this.token)
+      CancionFogonManager.SaveCancion(cancion, this.cliente)
     } else if (origen.origenUrl === 'subida') {
       CancionSubidasManager.SaveCancion(cancion)
     } else if (origen.origenUrl === 'local') {

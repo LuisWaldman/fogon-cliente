@@ -21,17 +21,15 @@ export class CancionFogonManager {
   public static async SaveCancion(
     cancion: Cancion,
     cliente: ClienteSocket | null = null,
-    token: string = '',
   ): Promise<void> {
     const cancionData = {
       nombreArchivo: cancion.archivo,
       datosJSON: cancion,
     }
     return new Promise<void>(async (resolve, reject) => {
-      const response = await cliente?.HTTPPOST(
+      const response = await cliente?.HTTPPost(
         'cancionsesion',
         JSON.stringify(cancionData),
-        token,
       )
       if (response?.ok) {
         resolve()

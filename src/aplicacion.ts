@@ -183,7 +183,7 @@ export default class Aplicacion {
       this.token = token
 
       if (this.cliente) {
-        CancionManager.getInstance().setCliente(this.cliente, token)
+        CancionManager.getInstance().setCliente(this.cliente)
       }
       if (this.configuracion && this.configuracion.perfil) {
         this.enviarPerfil(this.configuracion.perfil)
