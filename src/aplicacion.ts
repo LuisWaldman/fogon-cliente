@@ -155,11 +155,11 @@ export default class Aplicacion {
     const appStore = useAppStore()
     appStore.estado = 'conectando'
     appStore.estadosApp.texto = 'Conectando al servidor...'
+    const helper = HelperSincro.getInstance()
     this.cliente = new ClienteSocket(url)
     this.cliente.setconexionStatusHandler((status: string) => {
       if (status === 'conectado') {
         if (this.cliente) {
-          const helper = HelperSincro.getInstance()
           helper.setCliente(this.cliente)
           helper.ActualizarDelayReloj()
           appStore.estado = 'conectado'
@@ -207,6 +207,7 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
+      helper.ActualizarDelayRelojRTC()
       if (this.cliente != null) {
         this.reproductorConectado = new ReproductorConectado(
           this.cliente,
@@ -368,7 +369,7 @@ export default class Aplicacion {
       return
     }
     const appStore = useAppStore()
-    appStore.rolSesion = 'default'
+    appStore.rolSesion = 'director'
     this.cliente.CrearSesion(nombre)
   }
 

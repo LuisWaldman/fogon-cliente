@@ -3,12 +3,15 @@ import { EstadoSincroCancion } from './EstadoSincroCancion'
 import { ClienteSocket } from '../conexion/ClienteSocket'
 import { DelayCalculador } from './DelayCalculador'
 import { DelaySet } from './DelaySet'
+import { ClienteWebRTC } from '../conexion/ClienteWebRTC'
+import type { ObjetoPosteable } from '../objetoPosteable'
 
 export class HelperSincro {
   GetDetalleCalculo(): DelaySet[] {
     return this.delayCalculador.getDetalleCalculo()
   }
   private cliente: ClienteSocket | null = null
+  private clienteRTC: ClienteWebRTC | null = null
   private ciclos = 0
   private maxCiclos = 12
   private momentoEnviado: number = 0
@@ -59,6 +62,18 @@ export class HelperSincro {
     this.momentoEnviado = this.MomentoLocal()
     this.cliente.gettime()
   }
+
+  ActualizarDelayRelojRTC() {
+    if (!this.cliente) {
+      return
+    }
+    this.clienteRTC = new ClienteWebRTC()
+    this.clienteRTC.GetSDP().then((sdp) => {
+      console.log('SDP generado, enviando al servidor...', sdp)
+      this.cliente?.HTTPPost('webrtc', { sdp: sdp })
+    })
+  }
+
   public MomentoSincro(): number {
     // delay = this.momentoRecibido - timeServerReal
     const momento = this.MomentoLocal() - this.delayReloj
