@@ -21,8 +21,11 @@ const helper = HelperSincro.getInstance()
 const momentoLocal = ref(0)
 const momentoSincro = ref(0)
 const actualizandoMomento = ref(false)
-const delaySincroReloj = ref(helper.delayReloj)
+const delayReloj = ref(helper.delayReloj)
 const ErrorReloj = ref(helper.ErrorReloj)
+const SincronizadoRTC = ref(helper.SincronizadoRTC)
+const delayRelojRTC = ref(helper.delayRelojRTC)
+const ErrorRelojRTC = ref(helper.ErrorRelojRTC)
 
 const delayactualizar = ref(0)
 
@@ -40,7 +43,7 @@ reloj.setIniciaCicloHandler(() => {
 function actualizarDelay() {
   momentoLocal.value = helper.MomentoLocal()
   momentoSincro.value = helper.MomentoSincro()
-  delaySincroReloj.value = helper.delayReloj
+  delayReloj.value = helper.delayReloj
   ErrorReloj.value = helper.ErrorReloj
   const mili = momentoSincro.value % 1000
   delayactualizar.value = 1000 - mili
@@ -67,6 +70,14 @@ function calcularDetalle() {
   if (verDetalle.value) {
     const helper = HelperSincro.getInstance()
     detalleCalculo.value = helper.GetDetalleCalculo()
+  }
+}
+
+function calcularDetalleRTC() {
+  verDetalle.value = !verDetalle.value
+  if (verDetalle.value) {
+    const helper = HelperSincro.getInstance()
+    detalleCalculo.value = helper.GetDetalleCalculoRTC()
   }
 }
 
@@ -112,12 +123,19 @@ function cerrarRelojes() {
         </div>
         <div>
           <div>
-            Delay en Sincro: {{ Math.floor(delaySincroReloj / 1000) }}s
-            {{ (delaySincroReloj % 1000).toFixed(0) }}ms +/-
+            Diferencia con servidor: {{ Math.floor(delayReloj / 1000) }}s
+            {{ (delayReloj % 1000).toFixed(0) }}ms +/-
             {{ ErrorReloj.toFixed(2) }}ms
           </div>
+
+          <div v-if="SincronizadoRTC">
+            Diferencia con RTC: {{ Math.floor(delayRelojRTC / 1000) }}s
+            {{ (delayRelojRTC % 1000).toFixed(0) }}ms +/-
+            {{ ErrorRelojRTC.toFixed(2) }}ms
+            <button @click="calcularDetalleRTC">🔍</button>
+          </div>
           <div>
-            Delay actualizando: {{ Math.floor(delayactualizar / 1000) }}s
+            Delay Refresh Pantalla: {{ Math.floor(delayactualizar / 1000) }}s
             {{ (delayactualizar % 1000).toFixed(0) }}ms
           </div>
         </div>

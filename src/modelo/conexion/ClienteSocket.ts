@@ -1,5 +1,6 @@
 import { io, Socket } from 'socket.io-client'
 import type { datosLogin } from '../datosLogin'
+import type { ObjetoPosteable } from '../objetoPosteable'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -17,6 +18,8 @@ interface ServerToClientEvents {
   sesionesActualizadas: () => void
   actualizarusuarios: () => void
   time: (hora: number) => void
+  sincronizarRTC: (usuario: number) => void
+  answerRTC: (SDP: string) => void
 }
 
 interface ClientToServerEvents {
@@ -40,6 +43,7 @@ export class ClienteSocket {
   private reconectando: boolean = false
 
   private loginSuccessHandler?: () => void
+  token: string = ''
   public setLoginSuccessHandler(handler: () => void): void {
     this.loginSuccessHandler = handler
   }
@@ -48,12 +52,18 @@ export class ClienteSocket {
   public setSesionesActualizadasHandler(handler: () => void): void {
     this.sesionesActualizadasHandler = handler
   }
-
+  private sincronizarRTCHandler?: (usuario: number) => void
+  public setSincronizarRTCHandler(handler: (usuario: number) => void): void {
+    this.sincronizarRTCHandler = handler
+  }
   private conectadoHandler?: (token: string) => void
   public setConectadoHandler(handler: (token: string) => void): void {
     this.conectadoHandler = handler
   }
-
+  private answerRTCHandler?: (SDP: string) => void
+  public setAnswerRTCHandler(handler: (SDP: string) => void): void {
+    this.answerRTCHandler = handler
+  }
   private cancionActualizadaHandler?: () => void
   public setCancionActualizadaHandler(handler: () => void): void {
     this.cancionActualizadaHandler = handler
@@ -128,6 +138,26 @@ export class ClienteSocket {
     return this.urlserver
   }
 
+  public async HTTPGET(action: string): Promise<Response> {
+    return fetch(this.UrlServer + action, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${this.token}`,
+      },
+    })
+  }
+
+  async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
+    return fetch(this.UrlServer + urlPost, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${this.token}`,
+      },
+      body: JSON.stringify(body),
+    })
+  }
+
   constructor(urlserver: string) {
     this.urlserver = urlserver
   }
@@ -192,6 +222,7 @@ export class ClienteSocket {
     })
     socket.on('conectado', (data: { token: string }) => {
       console.log('conectado received with token:', data.token)
+      this.token = data.token
       this.conectadoHandler?.(data.token)
     })
 
@@ -243,12 +274,18 @@ export class ClienteSocket {
       console.log('cancionDetenida received')
       this.cancionDetenidaHandler?.()
     })
-
+    socket.on('sincronizarRTC', (usuario: number) => {
+      console.log('sincronizarRTC received with usuario:', usuario)
+      this.sincronizarRTCHandler?.(usuario)
+    })
     socket.on('compasActualizado', (compas: number) => {
       console.log('compasActualizado received with compas:', compas)
       this.compasActualizadoHandler?.(compas)
     })
-
+    socket.on('answerRTC', (SDP: string) => {
+      console.log('answerRTC received with SDP:', SDP)
+      this.answerRTCHandler?.(SDP)
+    })
     socket.on('time', (hora: number) => {
       this.timeHandler?.(hora)
     })
