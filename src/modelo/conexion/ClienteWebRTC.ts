@@ -17,7 +17,6 @@ export class ClienteWebRTC {
       console.log('📩 Mensaje recibido:', msg)
     }
   }
-
   async GetSDP(): Promise<string> {
     const offer = await this.peerConnection.createOffer()
     await this.peerConnection.setLocalDescription(offer)

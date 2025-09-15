@@ -18,6 +18,7 @@ interface ServerToClientEvents {
   sesionesActualizadas: () => void
   actualizarusuarios: () => void
   time: (hora: number) => void
+  sincronizarRTC: (usuario: number) => void
 }
 
 interface ClientToServerEvents {
@@ -41,7 +42,7 @@ export class ClienteSocket {
   private reconectando: boolean = false
 
   private loginSuccessHandler?: () => void
-  token: any
+  token: string = ''
   public setLoginSuccessHandler(handler: () => void): void {
     this.loginSuccessHandler = handler
   }
@@ -50,7 +51,10 @@ export class ClienteSocket {
   public setSesionesActualizadasHandler(handler: () => void): void {
     this.sesionesActualizadasHandler = handler
   }
-
+  private sincronizarRTCHandler?: (usuario: number) => void
+  public setSincronizarRTCHandler(handler: (usuario: number) => void): void {
+    this.sincronizarRTCHandler = handler
+  }
   private conectadoHandler?: (token: string) => void
   public setConectadoHandler(handler: (token: string) => void): void {
     this.conectadoHandler = handler
@@ -266,7 +270,10 @@ export class ClienteSocket {
       console.log('cancionDetenida received')
       this.cancionDetenidaHandler?.()
     })
-
+    socket.on('sincronizarRTC', (usuario: number) => {
+      console.log('sincronizarRTC received with usuario:', usuario)
+      this.sincronizarRTCHandler?.(usuario)
+    })
     socket.on('compasActualizado', (compas: number) => {
       console.log('compasActualizado received with compas:', compas)
       this.compasActualizadoHandler?.(compas)

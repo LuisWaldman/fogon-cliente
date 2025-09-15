@@ -4,7 +4,7 @@ import { ClienteSocket } from '../conexion/ClienteSocket'
 import { DelayCalculador } from './DelayCalculador'
 import { DelaySet } from './DelaySet'
 import { ClienteWebRTC } from '../conexion/ClienteWebRTC'
-import type { ObjetoPosteable } from '../objetoPosteable'
+import type { SDPStruct } from '../conexion/SDPStruct'
 
 export class HelperSincro {
   GetDetalleCalculo(): DelaySet[] {
@@ -62,12 +62,25 @@ export class HelperSincro {
     this.momentoEnviado = this.MomentoLocal()
     this.cliente.gettime()
   }
-
+  SincronizarConCliente(cliente: number) {
+    this.cliente
+      ?.HTTPGET(`webrtc?usuarioid=${cliente}`)
+      .then((response) => response.json())
+      .then((sdp: SDPStruct) => {
+        console.log('SDP recibido del servidor:', sdp.sdp)
+        this.clienteRTC?.SetRemoteSDP(sdp.sdp).then(() => {
+          this.clienteRTC?.SendTimestamp()
+        })
+      })
+  }
   ActualizarDelayRelojRTC() {
     if (!this.cliente) {
       return
     }
     this.clienteRTC = new ClienteWebRTC()
+    this.cliente.setSincronizarRTCHandler((n: number) => {
+      this.SincronizarConCliente(n)
+    })
     this.clienteRTC.GetSDP().then((sdp) => {
       console.log('SDP generado, enviando al servidor...', sdp)
       this.cliente?.HTTPPost('webrtc', { sdp: sdp })
