@@ -10,6 +10,10 @@ export class HelperSincro {
   GetDetalleCalculo(): DelaySet[] {
     return this.delayCalculador.getDetalleCalculo()
   }
+  GetDetalleCalculoRTC(): DelaySet[] {
+    return this.delayCalculadorRTC.getDetalleCalculo()
+  }
+
   private cliente: ClienteSocket | null = null
   private clienteRTC: ClienteWebRTC | null = null
   private ciclos = 0
@@ -19,7 +23,13 @@ export class HelperSincro {
 
   private delayCalculador: DelayCalculador = new DelayCalculador()
   private delayCalculadorRTC: DelayCalculador = new DelayCalculador()
-  ErrorReloj: number = 0
+  public ErrorReloj: number = 0
+  public delayReloj: number = 0
+  public delay: number = 0
+  public SincronizadoRTC: boolean = false
+  public ErrorRelojRTC: number = 0
+  public delayRelojRTC: number = 0
+
   setCliente(cliente: ClienteSocket) {
     this.cliente = cliente
     this.cliente.setTimeHandler((hora: number) => {
@@ -35,6 +45,7 @@ export class HelperSincro {
       const delay = this.momentoRecibido - timeServerReal
       this.delayCalculador.addDelaySet(new DelaySet(tardo * -1, delay))
       this.delayReloj = this.delayCalculador.getDelay()
+      this.delay = this.delayReloj
       this.ErrorReloj = this.delayCalculador.getError()
       if (this.ciclos < this.maxCiclos) {
         this.ciclos++
@@ -45,8 +56,6 @@ export class HelperSincro {
   }
 
   private static instance: HelperSincro
-  public delayReloj: number = 0
-
   public static getInstance(): HelperSincro {
     if (!HelperSincro.instance) {
       HelperSincro.instance = new HelperSincro()
@@ -121,8 +130,8 @@ export class HelperSincro {
         const timeServerReal = hora + tardo / 2
         const delay = this.momentoRecibido - timeServerReal
         this.delayCalculadorRTC.addDelaySet(new DelaySet(tardo * -1, delay))
-        this.delayReloj = this.delayCalculadorRTC.getDelay()
-        this.ErrorReloj = this.delayCalculadorRTC.getError()
+        this.delayRelojRTC = this.delayCalculadorRTC.getDelay()
+        this.ErrorRelojRTC = this.delayCalculadorRTC.getError()
         console.log(
           'Ajustando, delayReloj:',
           this.delayReloj,
@@ -134,6 +143,8 @@ export class HelperSincro {
           this.momentoEnviado = this.MomentoLocal()
           this.clienteRTC?.SendGetTime()
         } else {
+          this.SincronizadoRTC = true
+          this.delay = this.delayRelojRTC
           this.clienteRTC?.closeConn()
         }
       }
@@ -150,7 +161,8 @@ export class HelperSincro {
 
   public MomentoSincro(): number {
     // delay = this.momentoRecibido - timeServerReal
-    const momento = this.MomentoLocal() - this.delayReloj
+    const momento = this.MomentoLocal() - this.delay
+
     if (momento < 0) {
       return momento + 3600000
     }
