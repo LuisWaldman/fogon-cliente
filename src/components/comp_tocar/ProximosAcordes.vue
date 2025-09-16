@@ -50,8 +50,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <span style="font-size: large" @click="calcularAcordes">Proximos Acordes</span>
-{{ acordes }}
+  <span style="font-size: large">Proximos Acordes</span>
   <div class="acordesPantalla">
     <Acorde
       :acorde="acorde"
