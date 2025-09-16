@@ -35,26 +35,26 @@ export class ReproductorConectado extends Reproductor {
     this.reloj.setDelay(est.delay)
   }
 
-  GetCancionDelFogon() {
+  async GetCancionDelFogon() {
     const origen = new OrigenCancion('fogon', '', '')
-    CancionManager.getInstance()
-      .Get(origen)
-      .then((cancion) => {
-        const appStore = useAppStore()
-        appStore.cancion = cancion
-        appStore.origenCancion = origen
-      })
+    const cancion = await CancionManager.getInstance().Get(origen)
+    const appStore = useAppStore()
+    appStore.cancion = cancion
+    appStore.origenCancion = origen
   }
   constructor(cliente: ClienteSocket, token: string) {
     super()
+    const appStore = useAppStore()
     this.token = token
     this.cliente = cliente
-    this.cliente.setCancionActualizadaHandler(() => {
-      this.GetCancionDelFogon()
+    this.cliente.setCancionActualizadaHandler(async () => {
+      appStore.estadosApp.estado = ''
+      appStore.estadosApp.texto = 'Obteniendo cancion...'
+      await this.GetCancionDelFogon()
+      appStore.estadosApp.estado = 'ok'
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
-      const appStore = useAppStore()
       const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
       appStore.sesSincroCancion = new SincroCancion(
         duracionGolpe,
@@ -89,11 +89,18 @@ export class ReproductorConectado extends Reproductor {
   override onInicioCiclo() {
     this.sincronizar()
   }
-
-  override async SetCancion(_: OrigenCancion, cancion: Cancion) {
+  async EnviarCancion(cancion: Cancion) {
     const origenN = new OrigenCancion('fogon', '', '')
-    console.log('Guardando canción en el fogón')
     CancionManager.getInstance().Save(origenN, cancion)
+  }
+
+  override async ClickCancion(origen: OrigenCancion) {
+    const appStore = useAppStore()
+    appStore.estadosApp.texto = 'Obteniendo cancion...'
+    const cancionObtenida = await CancionManager.getInstance().Get(origen)
+    appStore.origenCancion = origen
+    appStore.estadosApp.texto = 'Enviando cancion...'
+    await this.EnviarCancion(cancionObtenida)
   }
 
   override async iniciarReproduccion() {

@@ -26,6 +26,7 @@ export default class Aplicacion {
   cliente: ClienteSocket | null = null
   router: Router | null = null
   token: string = ''
+  creandoSesion: boolean = false
   public setRouter(router: Router) {
     this.router = router
   }
@@ -102,35 +103,15 @@ export default class Aplicacion {
     }
   }
 
-  async SetCancion(origen: OrigenCancion) {
-    CancionManager.getInstance()
-      .Get(origen)
-      .then((cancion) => {
-        this.reproductor.SetCancion(origen, cancion)
-      })
-  }
-
   async ClickTocar(origen: OrigenCancion) {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''
     appStore.estadosApp.estado = 'cargando'
     appStore.estadosApp.texto = 'Cargando cancion...'
-    const cancionObtenida = await CancionManager.getInstance().Get(origen)
-    appStore.MediaVistas = []
-    if (cancionObtenida.pentagramas.length > 0) {
-      appStore.estadosApp.texto = 'Cargando Midis...'
-    }
-
-    appStore.cancion = cancionObtenida
-    appStore.compas = 0
-    appStore.estadoReproduccion = 'pausado'
-    appStore.estadosApp.texto = 'Cancion Cargada'
-    appStore.estadosApp.estado = 'ok'
-    if (appStore.estadoSesion == 'conectado') {
-      this.reproductorConectado?.SetCancion(origen, cancionObtenida)
-    }
+    this.reproductor.ClickCancion(origen)
     this.router?.push('/tocar')
   }
+
   updateCompas(compas: number) {
     this.reproductor.updateCompas(compas)
   }
@@ -216,6 +197,10 @@ export default class Aplicacion {
         this.reproductorConectado.GetCancionDelFogon()
         this.reproductor.detenerReproduccion()
         this.reproductor = this.reproductorConectado
+        if (this.creandoSesion) {
+          this.reproductorConectado.EnviarCancion(appStore.cancion)
+        }
+        this.creandoSesion = false
       }
     })
     this.cliente.setSesionFailedHandler((error: string) => {
@@ -370,6 +355,9 @@ export default class Aplicacion {
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'director'
+    appStore.estadosApp.estado = ''
+    appStore.estadosApp.texto = 'Creando sesión...'
+    this.creandoSesion = true
     this.cliente.CrearSesion(nombre)
   }
 
