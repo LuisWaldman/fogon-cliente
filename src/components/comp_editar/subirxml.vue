@@ -2,11 +2,18 @@
 import { ref } from 'vue'
 import JSZip from 'jszip'
 import { XMLHelper } from '../../modelo/pentagrama/XMLHelper'
+import { useAppStore } from '../../stores/appStore'
 import { Cancion } from '../../modelo/cancion/cancion'
 const props = defineProps<{
   cancion: Cancion
 }>()
 const estadoSubida = ref('')
+const subido = ref(false)
+const subidoDesde = ref(0)
+
+
+const appStore = useAppStore()
+
 const fileInput = ref<HTMLInputElement | null>(null)
 const xmlHelper = new XMLHelper()
 function abrirDialogoArchivo() {
@@ -27,6 +34,8 @@ async function manejarSeleccionArchivo(event: Event) {
     estadoSubida.value = 'error: extensión de archivo'
     return
   }
+  appStore.estadosApp.estado = ''
+  appStore.estadosApp.texto = 'Cargando MXL...'
 
   const reader = new FileReader()
   reader.onload = async (e) => {
@@ -36,8 +45,6 @@ async function manejarSeleccionArchivo(event: Event) {
       // Descomprimir .mxl (es un ZIP que contiene el MusicXML .xml)
       const zip = await JSZip.loadAsync(arrayBuffer)
       const fileNames = Object.keys(zip.files)
-      console.log('Entradas del ZIP:', fileNames)
-
       let xmlContent: string | null = null
 
       // Si existe container.xml, usarlo para localizar el rootfile (full-path)
@@ -77,12 +84,19 @@ async function manejarSeleccionArchivo(event: Event) {
 
       if (!xmlContent) {
         estadoSubida.value = 'error: no se encontró archivo MusicXML en .mxl'
+        appStore.estadosApp.estado = 'ok'
         return
       }
 
       estadoSubida.value = 'MXL descomprimido'
       objetoMxl.value = xmlContent
-      props.cancion.pentagramas = xmlHelper.XMLToPentagramas(xmlContent)
+
+      subidoDesde.value = props.cancion.pentagramas.length
+      props.cancion.pentagramas.push(...xmlHelper.XMLToPentagramas(xmlContent))
+      estadoSubida.value = 'Pentagramas agregados'
+      subido.value = true
+      appStore.estadosApp.estado = 'ok'
+
     } catch (error) {
       console.error('Error al procesar el archivo MXL:', error)
       estadoSubida.value = 'error al procesar MXL'
@@ -104,6 +118,8 @@ async function manejarSeleccionArchivo(event: Event) {
     style="display: none"
     @change="manejarSeleccionArchivo"
   />
-  {{ objetoMxl }}
+  <div v-if="subido">
+    
+  </div>
 </template>
 <style scoped></style>

@@ -28,7 +28,7 @@ export class HelperPentagramas {
   public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
     const modos: DisplayModoPentagrama[] = []
     const instumentos = [
-      ...new Set(cancion.pentagramas.map((p) => p.instrumento)),
+      ...new Set(cancion.pentagramas.map((p) => p.nombre || p.instrumento)),
     ]
     for (const pentagrama of instumentos) {
       modos.push(new DisplayModoPentagrama(pentagrama, false))
