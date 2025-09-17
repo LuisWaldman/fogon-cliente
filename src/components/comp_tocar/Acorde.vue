@@ -37,13 +37,14 @@ watch(
 
     <div style="display: flex">
       <span>{{ refAcorde?.cejilla }}</span>
-      <span v-for="(_, index) in refAcorde?.cuerda" :key="index">-</span>
+      <span v-for="(nota, index) in refAcorde?.cuerda" :key="index">{{
+        nota === 'x' ? 'x' : '-'
+      }}</span>
     </div>
 
-    <div v-for="n in 4" :key="n" style="display: flex; margin: 0px">
-      <span>&nbsp;</span>
+    <div v-for="n in 4" :key="n" style="display: flex; margin-left: 12px">
       <div
-        style="margin: 0px; padding: 0px; height: 10px"
+        style="margin: 0px; padding: 0px; height: 25px"
         v-for="(nota, notaid) in refAcorde?.cuerda"
         :key="notaid"
       >
@@ -61,10 +62,14 @@ watch(
 }
 .divTocarAcorde {
   border: 1px solid #a9a8f6;
+  padding: 10px;
 }
 .divTocarAcorde span {
-  margin: 0px;
   font-size: 20px;
+  padding: 0px;
+}
+.sinmargen {
+  margin: 0px;
   padding: 0px;
 }
 </style>

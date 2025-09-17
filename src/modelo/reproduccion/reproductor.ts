@@ -1,9 +1,9 @@
-import { Cancion } from '../cancion/cancion'
 import type { OrigenCancion } from '../cancion/origencancion'
 import { Reloj } from '../reloj'
 import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroCancion } from '../sincro/SincroCancion'
 import { useAppStore } from '../../stores/appStore'
+import { CancionManager } from '../cancion/CancionManager'
 
 export class Reproductor {
   reloj: Reloj = new Reloj()
@@ -11,9 +11,16 @@ export class Reproductor {
   public get Cancion() {
     return this.cancion
   }
-  SetCancion(origen: OrigenCancion, cancion: Cancion) {
+  async ClickCancion(origen: OrigenCancion) {
     const appStore = useAppStore()
-    appStore.cancion = cancion
+    const cancionObtenida = await CancionManager.getInstance().Get(origen)
+    appStore.MediaVistas = []
+    if (cancionObtenida.pentagramas.length > 0) {
+      appStore.estadosApp.texto = 'Cargando Midis...'
+    }
+    appStore.cancion = cancionObtenida
+    appStore.compas = 0
+    appStore.estadosApp.estado = 'ok'
     appStore.origenCancion = origen
   }
 

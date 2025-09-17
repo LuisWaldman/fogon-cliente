@@ -27,10 +27,7 @@ export class CancionFogonManager {
       datosJSON: cancion,
     }
     return new Promise<void>(async (resolve, reject) => {
-      const response = await cliente?.HTTPPost(
-        'cancionsesion',
-        JSON.stringify(cancionData),
-      )
+      const response = await cliente?.HTTPPost('cancionsesion', cancionData)
       if (response?.ok) {
         resolve()
       } else {

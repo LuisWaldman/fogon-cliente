@@ -10,7 +10,7 @@ const props = defineProps<{
 }>()
 
 const acordes = ref([] as string[])
-const todosAcordes = ref([] as string[])
+const todosAcordes = ref(props.cancion.acordes.GetTodosLosAcordes() as string[])
 
 function calcularAcordes(compas: number) {
   acordes.value = []
@@ -51,7 +51,6 @@ onMounted(() => {
 
 <template>
   <span style="font-size: large">Proximos Acordes</span>
-
   <div class="acordesPantalla">
     <Acorde
       :acorde="acorde"
