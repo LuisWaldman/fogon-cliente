@@ -2,6 +2,8 @@
 import { ref, watch } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import type { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
+import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
+import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 const octavasCirculo = ref(7)
 const DesdeOctavasCirculo = ref(4)
 
@@ -102,9 +104,75 @@ function StyleFrecuenciaNotaAcorde(frecuencia: number) {
     color: color,
   }
 }
+const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
+const instrumento = ref('pad_1_new_age.json')
+
+
+const midiCargado = ref(false)
+const CargandoMidi = ref(false)
+let midiPlayer = new MidiPlayer()
+function iniciar() {
+  console.log('Cargar')
+  midiPlayer = new MidiPlayer()
+  fetch('InstrumentosMIDI/' + instrumento.value)
+    .then((response) => response.json())
+    .then((samples) => {
+      midiPlayer.setInstrument(samples)
+      midiPlayer.initialize()
+      midiCargado.value = true
+    })
+    .catch((error) => {
+      console.error('Error loading samples:', error)
+    })
+  console.log('Iniciar')
+}
+
+function ActualizarInstrumento() {
+  midiCargado.value = false
+  CargandoMidi.value = true
+  iniciar()
+  console.log(instrumento.value)
+  
+}
+
+function TocarNota(nota: string) {
+  if (!midiCargado.value) {
+    return
+  }
+  midiPlayer.tocarNota(nota)  
+}
+
+
+function SoltarNota(nota: string) {
+  if (!midiCargado.value) {
+    return
+  }
+  midiPlayer.soltarNota(nota)  
+}
+
+
 </script>
 <template>
   <div style="position: relative">
+        <select
+        v-if="midiCargado"
+      v-model="instrumento"
+      @change="ActualizarInstrumento"
+    >
+      <option
+        v-for="(inst, index) in refInstrumentos"
+        :key="index"
+        :value="inst.archivo"
+      >
+        {{ inst.nombre }}
+      </option>
+    </select>
+
+  <span @click="iniciar" v-if="!midiCargado && !CargandoMidi">[Tocar]</span>
+  <span v-if="CargandoMidi">Cargando instrumento...</span>
+  
+    
+  
     <div class="circulodiv" style="display: flex; width: 800px">
       <div v-for="i in octavasCirculo" :key="i">
         <div :style="StyleOctava(i)" class="circuloOctava"></div>
@@ -117,7 +185,7 @@ function StyleFrecuenciaNotaAcorde(frecuencia: number) {
         :class="clasenotasSonido[index]"
         :style="StyleFrecuencia(nota)"
       >
-        <div>
+        <div @mousedown="TocarNota(nota.nota + nota.octava)" @mouseup="SoltarNota(nota.nota + nota.octava)" style="cursor: pointer">
           {{ nota.nota }}
         </div>
       </div>
