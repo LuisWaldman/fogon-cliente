@@ -107,7 +107,6 @@ function StyleFrecuenciaNotaAcorde(frecuencia: number) {
 const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
 const instrumento = ref('pad_1_new_age.json')
 
-
 const midiCargado = ref(false)
 const CargandoMidi = ref(false)
 let midiPlayer = new MidiPlayer()
@@ -132,30 +131,26 @@ function ActualizarInstrumento() {
   CargandoMidi.value = true
   iniciar()
   console.log(instrumento.value)
-  
 }
 
 function TocarNota(nota: string) {
   if (!midiCargado.value) {
     return
   }
-  midiPlayer.tocarNota(nota)  
+  midiPlayer.tocarNota(nota)
 }
-
 
 function SoltarNota(nota: string) {
   if (!midiCargado.value) {
     return
   }
-  midiPlayer.soltarNota(nota)  
+  midiPlayer.soltarNota(nota)
 }
-
-
 </script>
 <template>
   <div style="position: relative">
-        <select
-        v-if="midiCargado"
+    <select
+      v-if="midiCargado"
       v-model="instrumento"
       @change="ActualizarInstrumento"
     >
@@ -168,11 +163,9 @@ function SoltarNota(nota: string) {
       </option>
     </select>
 
-  <span @click="iniciar" v-if="!midiCargado && !CargandoMidi">[Tocar]</span>
-  <span v-if="CargandoMidi">Cargando instrumento...</span>
-  
-    
-  
+    <span @click="iniciar" v-if="!midiCargado && !CargandoMidi">[Tocar]</span>
+    <span v-if="CargandoMidi">Cargando instrumento...</span>
+
     <div class="circulodiv" style="display: flex; width: 800px">
       <div v-for="i in octavasCirculo" :key="i">
         <div :style="StyleOctava(i)" class="circuloOctava"></div>
@@ -185,7 +178,11 @@ function SoltarNota(nota: string) {
         :class="clasenotasSonido[index]"
         :style="StyleFrecuencia(nota)"
       >
-        <div @mousedown="TocarNota(nota.nota + nota.octava)" @mouseup="SoltarNota(nota.nota + nota.octava)" style="cursor: pointer">
+        <div
+          @mousedown="TocarNota(nota.nota + nota.octava)"
+          @mouseup="SoltarNota(nota.nota + nota.octava)"
+          style="cursor: pointer"
+        >
           {{ nota.nota }}
         </div>
       </div>

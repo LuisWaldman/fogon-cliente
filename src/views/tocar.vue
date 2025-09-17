@@ -4,6 +4,7 @@ import { ref, type Ref } from 'vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
+import TocarCuadrado from '../components/comp_tocar/Tocar_Cuadrado.vue'
 import TocarYoutube from '../components/comp_tocar/Tocar_Youtube.vue'
 import TocarMidi from '../components/comp_tocar/Tocar_Midi.vue'
 import TocarEscucha from '../components/comp_tocar/Tocar_Escucha.vue'
@@ -185,6 +186,11 @@ function cambioestado(estado: number) {
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarLetraAcorde>
+        <TocarCuadrado
+          v-if="vista.viendo == 'cuadrado'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarCuadrado>
         <TocarLetra
           v-if="vista.viendo == 'karaoke'"
           :cancion="appStore.cancion"
@@ -258,6 +264,10 @@ function cambioestado(estado: number) {
           <li v-on:click="cambiarVista('acordes')">
             <a class="dropdown-item" href="#">Acordes</a>
           </li>
+          <li v-on:click="cambiarVista('cuadrado')">
+            <a class="dropdown-item" href="#">Cuadrado</a>
+          </li>
+
           <li v-on:click="cambiarVista('soloacordes')">
             <a class="dropdown-item" href="#">Solo Acordes</a>
           </li>
