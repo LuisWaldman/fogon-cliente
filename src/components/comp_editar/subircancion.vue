@@ -4,7 +4,6 @@ import { HelperJSON } from '../../modelo/cancion/HelperJSON'
 import { ref } from 'vue'
 import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { CancionManager } from '../../modelo/cancion/CancionManager'
-import { useAppStore } from '../../stores/appStore'
 
 const fileInput = ref<HTMLInputElement | null>(null)
 
@@ -40,8 +39,8 @@ function manejarSeleccionArchivo(event: Event) {
       CancionManager.getInstance()
         .Save(origen, cancion)
         .then(() => {
-          const appStore = useAppStore()
-          appStore.aplicacion.SetCancion(origen)
+          //const appStore = useAppStore()
+          //appStore.aplicacion.SetCancion(origen)
         })
     } catch (error) {
       console.error('Error al procesar el archivo JSON:', error)

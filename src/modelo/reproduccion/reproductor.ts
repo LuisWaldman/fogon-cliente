@@ -1,4 +1,3 @@
-import { Cancion } from '../cancion/cancion'
 import type { OrigenCancion } from '../cancion/origencancion'
 import { Reloj } from '../reloj'
 import { HelperSincro } from '../sincro/HelperSincro'
