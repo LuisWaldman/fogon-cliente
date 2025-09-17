@@ -17,7 +17,7 @@ export class AcordesGuitarraHelper {
   static getAcorde(chordStr: string): AcordesGuitarra {
     console.log('getAcorde', chordStr)
     const cuerda: string[] = ['0', '0', '0', '0', '0', '0']
-    const cejilla: number = 0
+    let cejilla: number = 0
 
     if (chordStr === 'B7') {
       cuerda[0] = '2'
@@ -28,22 +28,40 @@ export class AcordesGuitarraHelper {
     }
     if (chordStr === 'G') {
       cuerda[0] = '3'
-      cuerda[4] = '2'
+      cuerda[1] = '2'
       cuerda[5] = '3'
     }
     if (chordStr === 'C') {
-      cuerda[1] = '1'
+      cuerda[0] = 'x'
+      cuerda[1] = '3'
       cuerda[3] = '2'
-      cuerda[4] = '3'
-      cuerda[5] = 'x'
+      cuerda[4] = '1'
     }
     if (chordStr === 'E') {
-      cuerda[3] = '2'
-      cuerda[4] = '2'
+      cuerda[1] = '2'
+      cuerda[2] = '2'
+      cuerda[3] = '1'
     }
     if (chordStr === 'Em') {
       cuerda[3] = '2'
       cuerda[4] = '2'
+    }
+    if (chordStr === 'A') {
+      cuerda[2] = '2'
+      cuerda[3] = '2'
+      cuerda[4] = '2'
+    }
+    if (chordStr === 'Am') {
+      cuerda[2] = '2'
+      cuerda[3] = '2'
+      cuerda[4] = '1'
+    }
+
+    if (chordStr === 'Cm') {
+      cejilla = 2
+      cuerda[2] = '2'
+      cuerda[3] = '2'
+      cuerda[4] = '1'
     }
     return new AcordesGuitarra(chordStr, cejilla, cuerda)
   }
