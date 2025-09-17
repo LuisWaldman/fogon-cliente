@@ -59,9 +59,7 @@ export class Reproductor {
     const appStore = useAppStore()
     // Pauso Medias
     for (let i = 0; i < appStore.MediaVistas.length; i++) {
-      if (appStore.MediaVistas[i].sincronizar) {
-        appStore.MediaVistas[i].Pausar?.()
-      }
+      appStore.MediaVistas[i].Pausar?.()
     }
     appStore.estadoReproduccion = 'pausado'
     appStore.golpeDelCompas = 0
