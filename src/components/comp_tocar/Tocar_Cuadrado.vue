@@ -60,10 +60,10 @@ const tocandoNotas = ref<string[]>([])
 watch(
   () => props.compas,
   (newCompas) => {
-    if (newCompas != props.compas) {
-      const toEr = tocandoNotas.value
-      toEr.map((n) => SoltarNota(n))
-    }
+    
+    const toEr = tocandoNotas.value.map((n) => n)
+    toEr.map((n) => SoltarNota(n))
+    
     acordeActual.value = acordes.value[newCompas]
     notasacorde.value = musicaHelper
       .GetNotasdeacorde(acordeActual.value, 0)
@@ -184,6 +184,8 @@ function SoltarNota(nota: string) {
           :key="nota"
           @mousedown="TocarNota(nota + octava)"
           @mouseup="SoltarNota(nota + octava)"
+          @touchstart="TocarNota(nota + octava)"
+          @touchend="SoltarNota(nota + octava)"
           :class="{
             'tocando-nota': tocandoNotas.includes(nota + octava),
             notaEscala: notasescala.includes(nota),
