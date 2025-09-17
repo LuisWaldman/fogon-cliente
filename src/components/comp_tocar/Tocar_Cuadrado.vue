@@ -60,10 +60,9 @@ const tocandoNotas = ref<string[]>([])
 watch(
   () => props.compas,
   (newCompas) => {
-    
     const toEr = tocandoNotas.value.map((n) => n)
     toEr.map((n) => SoltarNota(n))
-    
+
     acordeActual.value = acordes.value[newCompas]
     notasacorde.value = musicaHelper
       .GetNotasdeacorde(acordeActual.value, 0)
