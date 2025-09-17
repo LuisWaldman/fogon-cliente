@@ -181,6 +181,8 @@ function SoltarNota(nota: string) {
         <div
           @mousedown="TocarNota(nota.nota + nota.octava)"
           @mouseup="SoltarNota(nota.nota + nota.octava)"
+          @touchstart="TocarNota(nota.nota + nota.octava)"
+          @touchend="SoltarNota(nota.nota + nota.octava)"
           style="cursor: pointer"
         >
           {{ nota.nota }}
