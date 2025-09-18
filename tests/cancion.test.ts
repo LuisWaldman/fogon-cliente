@@ -19,7 +19,7 @@ describe('Cancion', () => {
       'C',
     )
     expect(cancion.duracionCompas).toBeCloseTo(2)
-  }) 
+  })
 
   it('debería calcular correctamente totalCompases', () => {
     const acordes = new Acordes(
