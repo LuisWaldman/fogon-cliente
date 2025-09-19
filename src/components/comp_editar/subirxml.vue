@@ -11,7 +11,6 @@ const estadoSubida = ref('')
 const subido = ref(false)
 const subidoDesde = ref(0)
 
-
 const appStore = useAppStore()
 
 const fileInput = ref<HTMLInputElement | null>(null)
@@ -96,7 +95,6 @@ async function manejarSeleccionArchivo(event: Event) {
       estadoSubida.value = 'Pentagramas agregados'
       subido.value = true
       appStore.estadosApp.estado = 'ok'
-
     } catch (error) {
       console.error('Error al procesar el archivo MXL:', error)
       estadoSubida.value = 'error al procesar MXL'
@@ -118,8 +116,6 @@ async function manejarSeleccionArchivo(event: Event) {
     style="display: none"
     @change="manejarSeleccionArchivo"
   />
-  <div v-if="subido">
-    
-  </div>
+  <div v-if="subido"></div>
 </template>
 <style scoped></style>
