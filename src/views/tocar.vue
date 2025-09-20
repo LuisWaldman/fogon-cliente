@@ -36,7 +36,7 @@ onMounted(() => {
 
 function GetStylePantallaPlay() {
   //
-  let direccion = pantalla.getConfiguracionPantalla().invertido
+  let direccion: 'row' | 'row-reverse' | 'column' | 'column-reverse' = pantalla.getConfiguracionPantalla().invertido
     ? 'row-reverse'
     : 'row'
 
