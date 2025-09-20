@@ -4,10 +4,13 @@ import { PentagramaNotas } from './pentagramanotas'
 export class Pentagrama {
   public compases: PentagramaCompas[] = []
   instrumento: string = ''
+  nombre: string = ''
+  esBeat: boolean = false
   clave: string = 'treble'
   public static GetPentagramaDefault(compases: number): Pentagrama {
     const penta = new Pentagrama()
-    penta.instrumento = 'Piano'
+    penta.instrumento = ''
+    penta.nombre = ''
     penta.clave = 'treble'
     for (let i = 0; i < compases; i++) {
       const notas: PentagramaNotas[][] = []

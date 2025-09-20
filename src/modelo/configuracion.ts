@@ -3,16 +3,29 @@ import { Servidor } from './servidor' // Nueva importación
 import { Perfil } from './perfil'
 export class VistaTocar {
   public tamanioLetra: number = 22
+  public modo: string = 'doble' // 'simple', 'doble', 'triple'
+  public muestra: string = 'letrayacordes' // 'simple', 'doble', 'triple'
+  public reproduce: string = 'video' // 'simple', 'doble', 'triple'
+  public invertido: boolean = false
+  public viendoSecuencia: boolean = false
+  public viendoInstrucciones: boolean = false
+  public viendoCuadrado: boolean = false
+  public viendoSecuencia3: boolean = false
+  public viendoInstrucciones3: boolean = false
+  public viendoCuadrado3: boolean = false
   public tamanioAcorde: number = 23
   public tamanioAcordesolo: number = 16
   public viendoResumenVerso: boolean = true
   public tamanioParte: number = 16
   public tamanioAcordeParte: number = 26
   public anchoPrincipal: number = 70 // Ancho de la parte principal
+  public anchoTerciaria: number = 30 // Ancho de la parte terciaria
   public altoPantallaDescuento: number = 200 // Nueva propiedad
+  public AutoScroll: boolean = true
   public factorScroll: number = 1.4 // Nueva propiedad para el factor de scroll
   public columnas: number = 78 // Nueva propiedad para el número de columnas
 }
+
 export class Configuracion {
   obtenerURLConectar(serverName: string) {
     const server = this.servidores.find((s) => s.nombre === serverName)

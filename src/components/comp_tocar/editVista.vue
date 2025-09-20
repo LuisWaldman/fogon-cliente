@@ -26,8 +26,17 @@ function guardarConfiguracionPantalla() {
   config.guardarEnLocalStorage()
   emit('cerrar')
 }
-
+const refModoVista = ref(configPantalla.value.modo)
+function ClickSetModoVista(modo: string) {
+  refModoVista.value = modo
+  configPantalla.value.modo = modo
+}
 function cancelarConfiguracionPantalla() {
+  configPantalla.value.muestra = exvistapantalla.value.muestra
+  configPantalla.value.reproduce = exvistapantalla.value.reproduce
+  configPantalla.value.invertido = exvistapantalla.value.invertido
+  configPantalla.value.modo = exvistapantalla.value.modo
+  configPantalla.value.columnas = exvistapantalla.value.columnas
   configPantalla.value.altoPantallaDescuento =
     exvistapantalla.value.altoPantallaDescuento
   configPantalla.value.altoPantallaDescuento =
@@ -50,37 +59,221 @@ watch(configPantalla.value, () => {
 </script>
 
 <template>
-  <div class="editSize">
-    <div class="tituloeditSize">Tamaños</div>
+  <div class="vistaedit">
+    <div class="tituloeditSize">VISTA GENERAL</div>
     <div class="config-row">
-      <span>Letra</span>
-      <input
-        type="range"
-        min="8"
-        max="40"
-        v-model.number="configPantalla.tamanioLetra"
-      />
-      <span>{{ configPantalla.tamanioLetra }} px</span>
+      <span>Columnas</span>
+      <span
+        :class="{ seleccionada: refModoVista === 'simple' }"
+        @click="ClickSetModoVista('simple')"
+        >[Simple]</span
+      >
+      <span
+        :class="{ seleccionada: refModoVista === 'doble' }"
+        @click="ClickSetModoVista('doble')"
+        >[Doble]</span
+      >
+      <span
+        :class="{ seleccionada: refModoVista === 'triple' }"
+        @click="ClickSetModoVista('triple')"
+        >[Triple]</span
+      >
+      <input type="checkbox" v-model="configPantalla.invertido" /> ↩️
     </div>
     <div class="config-row">
-      <span>Acorde</span>
-      <input
-        type="range"
-        min="8"
-        max="40"
-        v-model.number="configPantalla.tamanioAcorde"
-      />
-      <span>{{ configPantalla.tamanioAcorde }} px</span>
+      <span v-if="refModoVista !== 'simple'">% Ancho</span>
+      <span v-if="refModoVista === 'simple'">% Alto</span>
+      <div style="width: 50%">
+        <input
+          type="range"
+          style="width: 100%"
+          min="3"
+          max="98"
+          v-model.number="configPantalla.anchoPrincipal"
+        />
+      </div>
+
+      <span>{{ configPantalla.anchoPrincipal }} </span>
     </div>
+    <div class="config-row" v-if="refModoVista === 'triple'">
+      <span>% Terciaria</span>
+
+      <div style="width: 50%">
+        <input
+          type="range"
+          style="width: 100%"
+          min="3"
+          max="98"
+          v-model.number="configPantalla.anchoTerciaria"
+        />
+      </div>
+
+      <span>{{ configPantalla.anchoTerciaria }} </span>
+    </div>
+    <div
+      :style="{
+        display: 'flex',
+        'flex-direction': configPantalla.invertido
+          ? 'column-reverse'
+          : 'column',
+      }"
+    >
+      <div>
+        <div class="config-row">
+          Ejecuta
+          <select v-model="configPantalla.muestra">
+            <option value="letrayacordes">Letra y Acordes</option>
+            <option value="acordes">Acordes</option>
+            <option value="karaoke">Letra</option>
+            <option value="partitura">Partitura</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="">Nada</option>
+          </select>
+        </div>
+
+        <div class="config-row">
+          <div
+            class="config-box"
+            v-if="
+              configPantalla.muestra === 'letrayacordes' ||
+              configPantalla.muestra === 'karaoke'
+            "
+          >
+            <span>Letra</span>
+            <input
+              type="number"
+              min="8"
+              max="80"
+              v-model.number="configPantalla.tamanioLetra"
+            />
+            <span>px</span>
+          </div>
+          <div
+            class="config-box"
+            v-if="configPantalla.muestra === 'letrayacordes'"
+          >
+            <span>Acorde</span>
+            <input
+              type="number"
+              min="8"
+              max="80"
+              v-model.number="configPantalla.tamanioAcorde"
+            />
+            <span>px</span>
+          </div>
+          <div class="config-box" v-if="configPantalla.muestra === 'acordes'">
+            <span>Acorde</span>
+            <input
+              type="number"
+              min="8"
+              max="80"
+              v-model.number="configPantalla.tamanioAcordesolo"
+            />
+            <span>px</span>
+          </div>
+        </div>
+        <div
+          class="config-row"
+          v-if="
+            configPantalla.muestra !== 'cuadrado' &&
+            configPantalla.muestra !== ''
+          "
+        >
+          <div class="config-box">
+            <input type="checkbox" v-model="configPantalla.AutoScroll" />
+            <span>Auto Scroll</span>
+          </div>
+          <div class="config-box">
+            <span>Factor Scroll</span>
+            <input
+              type="number"
+              min="0.2"
+              max="3"
+              step="0.1"
+              v-model.number="configPantalla.factorScroll"
+            />
+          </div>
+        </div>
+
+        <div
+          class="config-row"
+          v-if="configPantalla.muestra === 'letrayacordes'"
+        >
+          <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
+          <span>Modo poeta</span>
+        </div>
+
+        <div
+          class="config-row"
+          v-if="configPantalla.muestra === 'letrayacordes'"
+        >
+          <span>Columnas</span>
+          <input
+            type="range"
+            min="10"
+            max="120"
+            v-model.number="configPantalla.columnas"
+          />
+          <span>{{ configPantalla.columnas }}</span>
+        </div>
+      </div>
+      <div class="config-row">
+        Reproduce
+        <select v-model="configPantalla.reproduce">
+          <option value="nada">Nada</option>
+          <option value="video">Video</option>
+          <option value="midi">MIDI</option>
+        </select>
+      </div>
+    </div>
+
     <div class="config-row">
-      <span>Acorde Solo</span>
-      <input
-        type="range"
-        min="8"
-        max="40"
-        v-model.number="configPantalla.tamanioAcordesolo"
-      />
-      <span>{{ configPantalla.tamanioAcordesolo }} px</span>
+      <span>Muestra</span>
+      <span
+        :class="{ seleccionada: configPantalla.viendoSecuencia }"
+        @click="
+          configPantalla.viendoSecuencia = !configPantalla.viendoSecuencia
+        "
+        >[Secuencia]</span
+      >
+      <span
+        :class="{ seleccionada: configPantalla.viendoInstrucciones }"
+        @click="
+          configPantalla.viendoInstrucciones =
+            !configPantalla.viendoInstrucciones
+        "
+        >[Instrucciones]</span
+      >
+      <span
+        :class="{ seleccionada: configPantalla.viendoCuadrado }"
+        @click="configPantalla.viendoCuadrado = !configPantalla.viendoCuadrado"
+        >[Cuadrado]</span
+      >
+    </div>
+    <div class="config-row" v-if="refModoVista === 'triple'">
+      <span>Muestra</span>
+      <span
+        :class="{ seleccionada: configPantalla.viendoSecuencia3 }"
+        @click="
+          configPantalla.viendoSecuencia3 = !configPantalla.viendoSecuencia3
+        "
+        >[Secuencia]</span
+      >
+      <span
+        :class="{ seleccionada: configPantalla.viendoInstrucciones3 }"
+        @click="
+          configPantalla.viendoInstrucciones3 =
+            !configPantalla.viendoInstrucciones3
+        "
+        >[Instrucciones]</span
+      >
+      <span
+        :class="{ seleccionada: configPantalla.viendoCuadrado3 }"
+        @click="
+          configPantalla.viendoCuadrado3 = !configPantalla.viendoCuadrado3
+        "
+        >[Cuadrado]</span
+      >
     </div>
     <div class="config-row">
       <span>Secuencia</span>
@@ -92,51 +285,7 @@ watch(configPantalla.value, () => {
       />
       <span>{{ configPantalla.tamanioParte }} px</span>
     </div>
-    <div class="config-row">
-      <span>Acorde Parte</span>
-      <input
-        type="range"
-        min="8"
-        max="40"
-        v-model.number="configPantalla.tamanioAcordeParte"
-      />
-      <span>{{ configPantalla.tamanioAcordeParte }} px</span>
-    </div>
-    <div class="config-row">
-      <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
-      <span>Ver resumen verso</span>
-    </div>
-    <div class="config-row">
-      <span>Ancho Pantalla Principal</span>
-      <input
-        type="range"
-        min="3"
-        max="98"
-        v-model.number="configPantalla.anchoPrincipal"
-      />
-      <span>{{ configPantalla.anchoPrincipal }} </span>
-    </div>
-    <div class="config-row">
-      <span>Columnas</span>
-      <input
-        type="range"
-        min="10"
-        max="120"
-        v-model.number="configPantalla.columnas"
-      />
-      <span>{{ configPantalla.columnas }}</span>
-    </div>
-    <div class="config-row">
-      <span>Factor Scroll</span>
-      <input
-        type="range"
-        min="0.2"
-        max="3"
-        step="0.1"
-        v-model.number="configPantalla.factorScroll"
-      />
-      <span>{{ configPantalla.factorScroll }}</span>
-    </div>
+
     <div class="botonera">
       <button @click="guardarConfiguracionPantalla()" class="btnGuardar">
         Guardar
@@ -147,3 +296,38 @@ watch(configPantalla.value, () => {
     </div>
   </div>
 </template>
+<style scoped>
+.seleccionada {
+  font-weight: bold;
+  background-color: rgb(223, 177, 51);
+}
+.vistaedit {
+  font-size: x-large;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  font: 2em;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgb(41, 37, 37);
+  color: white;
+  z-index: 1000;
+  border: 3px solid #8b4513;
+}
+.config-row {
+  display: flex;
+  align-items: center;
+}
+.config-box {
+  align-items: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .vistaedit {
+    left: 10%;
+    top: 10%;
+    font-size: small;
+  }
+}
+</style>

@@ -26,6 +26,7 @@ class vistaTocar {
   verEditandoAcordes: boolean = true
 }
 const vista: Ref<vistaTocar> = ref(new vistaTocar())
+vista.value.viendo = localStorage.getItem('viendo_vista_editando') || 'inicio'
 function GetStylePantallaEdit() {
   return {
     width: pantalla.getAnchoPantalla() + 'px',

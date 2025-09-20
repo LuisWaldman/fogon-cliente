@@ -28,7 +28,7 @@ export class HelperPentagramas {
   public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
     const modos: DisplayModoPentagrama[] = []
     const instumentos = [
-      ...new Set(cancion.pentagramas.map((p) => p.instrumento)),
+      ...new Set(cancion.pentagramas.map((p) => p.nombre || p.instrumento)),
     ]
     for (const pentagrama of instumentos) {
       modos.push(new DisplayModoPentagrama(pentagrama, false))
@@ -95,7 +95,9 @@ export class HelperPentagramas {
     nroCompas: number,
     escala: string,
   ): DisplayCompasPentagrama {
-    const mapa = HelperPentagramas.mapaDuraciones[escala]
+    // Remove any numbers from the escala
+    const escalaLimpia = escala.replace(/\d+/g, '')
+    const mapa = HelperPentagramas.mapaDuraciones[escalaLimpia]
     const compas = new DisplayCompasPentagrama(nroCompas)
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       const nuevoAcorde = new DisplayAcordesPentagrama()

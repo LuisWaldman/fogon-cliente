@@ -11,7 +11,6 @@ import TocarEscucha from '../components/comp_tocar/Tocar_Escucha.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
-import Partes from '../components/comp_tocar/Partes.vue'
 import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import editVista from '../components/comp_tocar/editVista.vue'
@@ -21,6 +20,7 @@ import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
+import { VistaTocar } from '../modelo/configuracion'
 
 const pantalla = new Pantalla()
 onMounted(() => {
@@ -28,116 +28,98 @@ onMounted(() => {
 })
 
 const appStore = useAppStore()
-
-class vistaTocar {
-  viendo: string = 'karaoke'
-  media: boolean = false
-  escucha: boolean = false
-  midi: boolean = false
-  secuencia: boolean = true
-  partes: boolean = true
-  proximosAcordes: boolean = false
-}
-const vista: Ref<vistaTocar> = ref(new vistaTocar())
+const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
 onMounted(() => {
-  vista.value.viendo = localStorage.getItem('viendo_vista_tocando') || 'karaoke'
-  if (
-    vista.value.viendo == 'pentagrama' &&
-    appStore.cancion.pentagramas.length == 0
-  ) {
-    vista.value.viendo = 'acordes'
-  }
-  vista.value.secuencia =
-    localStorage.getItem('secuencia') == 'true' ? true : false
-  vista.value.partes = localStorage.getItem('partes') == 'true' ? true : false
-  vista.value.proximosAcordes =
-    localStorage.getItem('proximosAcordes') == 'true' ? true : false
-  vista.value.media = localStorage.getItem('media') == 'true' ? true : false
-  vista.value.midi = localStorage.getItem('midi') == 'true' ? true : false
+  vista.value = pantalla.getConfiguracionPantalla()
 })
 
-function clickSecuencia() {
-  vista.value.secuencia = !vista.value.secuencia
-  localStorage.setItem('secuencia', vista.value.secuencia ? 'true' : 'false')
-}
-
-function clickPartes() {
-  vista.value.partes = !vista.value.partes
-  localStorage.setItem('partes', vista.value.partes ? 'true' : 'false')
-}
-function clickMedia() {
-  vista.value.media = !vista.value.media
-  localStorage.setItem('media', vista.value.media ? 'true' : 'false')
-}
-
-function clickMidi() {
-  vista.value.midi = !vista.value.midi
-  localStorage.setItem('midi', vista.value.midi ? 'true' : 'false')
-}
-
-function clickEscuchar() {
-  vista.value.escucha = !vista.value.escucha
-  localStorage.setItem('escucha', vista.value.escucha ? 'true' : 'false')
-}
-
-function clickAcordes() {
-  vista.value.proximosAcordes = !vista.value.proximosAcordes
-  localStorage.setItem(
-    'proximosAcordes',
-    vista.value.proximosAcordes ? 'true' : 'false',
-  )
-}
-
 function GetStylePantallaPlay() {
+  //
+  let direccion = pantalla.getConfiguracionPantalla().invertido
+    ? 'row-reverse'
+    : 'row'
+
+  if (pantalla.getConfiguracionPantalla().modo == 'simple') {
+    direccion = pantalla.getConfiguracionPantalla().invertido
+      ? 'column'
+      : 'column-reverse'
+  }
   return {
     width: pantalla.getAnchoPantalla() + 'px',
     height: pantalla.getAltoPantalla() + 'px',
+    'flex-direction': direccion,
   }
 }
 
-function cambiarVista(nvista: string) {
-  vista.value.viendo = nvista
-  localStorage.setItem('viendo_vista_tocando', nvista)
-}
 function estiloVistaPrincipal() {
-  let ancho = 100
-  if (
-    vista.value.secuencia ||
-    vista.value.proximosAcordes ||
-    vista.value.partes ||
-    vista.value.midi ||
-    vista.value.media
-  ) {
-    ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
+  let ancho = vista.value.anchoPrincipal
+  let height = 100
+  let display = 'block'
+  const hayPrimeraPantalla = vista.value.muestra != 'nada  '
+  const HaySegundaPantalla =
+    vista.value.reproduce != 'nada' ||
+    vista.value.viendoCuadrado ||
+    vista.value.viendoInstrucciones ||
+    vista.value.viendoSecuencia
+  if (!hayPrimeraPantalla) {
+    ancho = 0
+    height = 0
+    display = 'none'
   }
-  return `width: ${ancho}%; height: 100%; `
+  if (HaySegundaPantalla) {
+    ancho = vista.value.anchoPrincipal
+  }
+  if (vista.value.modo == 'simple') {
+    ancho = 100
+    height = vista.value.anchoPrincipal
+  }
+
+  return `width: ${ancho}%; height: ${height}%; display: ${display};`
 }
 
 function estiloVistaSecundaria() {
-  let ancho = 100
-  if (
-    vista.value.secuencia ||
-    vista.value.proximosAcordes ||
-    vista.value.partes ||
-    vista.value.midi ||
-    vista.value.media
-  ) {
-    ancho = pantalla.getConfiguracionPantalla().anchoPrincipal
+  let ancho = 100 - vista.value.anchoPrincipal - vista.value.anchoTerciaria
+  let height = 100
+  let display = 'block'
+
+  const hayPrimeraPantalla = vista.value.muestra != 'nada  '
+  const HaySegundaPantalla =
+    vista.value.reproduce != 'nada' ||
+    vista.value.viendoCuadrado ||
+    vista.value.viendoInstrucciones ||
+    vista.value.viendoSecuencia
+  if (HaySegundaPantalla) {
+    ancho = vista.value.anchoPrincipal
+  } else {
+    ancho = 0
+    display = 'none'
   }
-  return `width: ${100 - ancho}%;`
+  if (vista.value.modo == 'simple') {
+    ancho = 0
+    height = 100 - vista.value.anchoPrincipal
+  } else {
+    if (!HaySegundaPantalla) {
+      ancho = 0
+    }
+  }
+  if (!hayPrimeraPantalla) {
+    ancho = 100
+  }
+  return `width: ${100 - ancho}%; height: ${height}%; display: ${display};`
 }
+
+function estiloVistaTerciaria() {
+  let ancho = vista.value.anchoTerciaria
+  return `width: ${ancho}%;`
+}
+
 const refEditandoVista = ref(false)
 function ajustarVista() {
   refEditandoVista.value = true
 }
 
 const refSincronizandoMedios = ref(false)
-function clickSincronizarMedios() {
-  // Lógica para sincronizar medios
-  refSincronizandoMedios.value = true
-}
-
 function clickCerrarMedios() {
   refSincronizandoMedios.value = false
 }
@@ -162,6 +144,9 @@ function cambioestado(estado: number) {
   console.log('Cambio de estado en tocar.vue', estado)
   appStore.aplicacion.CambioEstadoMedio(estado)
 }
+function escuchar() {
+  console.log('Escuchar')
+}
 </script>
 
 <template>
@@ -180,55 +165,13 @@ function cambioestado(estado: number) {
       :style="GetStylePantallaPlay()"
       v-if="appStore.cancion"
     >
-      <div class="columnas" :style="estiloVistaPrincipal()">
-        <TocarLetraAcorde
-          v-if="vista.viendo == 'acordes'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarLetraAcorde>
-        <TocarCuadrado
-          v-if="vista.viendo == 'cuadrado'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarCuadrado>
-        <TocarLetra
-          v-if="vista.viendo == 'karaoke'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarLetra>
-        <TocarAcorde
-          v-if="vista.viendo == 'soloacordes'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarAcorde>
-        <TocarPentagrama
-          v-if="vista.viendo == 'pentagrama'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarPentagrama>
-      </div>
-      <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <TocarEscucha
-          v-if="vista.escucha"
-          @cambioEstado="cambioestado"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarEscucha>
-        <TocarYoutube
-          v-if="vista.media"
-          @cambioEstado="cambioestado"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarYoutube>
-        <TocarMidi
-          v-if="vista.midi"
-          @cambioEstado="cambioestado"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarMidi>
-
+      <div
+        class="columnas lateral-container"
+        :style="estiloVistaTerciaria()"
+        v-if="vista.modo === 'triple'"
+      >
         <Secuencia
-          v-if="vista.secuencia"
+          v-if="vista.viendoSecuencia3"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></Secuencia>
@@ -236,15 +179,80 @@ function cambioestado(estado: number) {
         <ProximosAcordes
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          v-if="vista.proximosAcordes"
+          v-if="vista.viendoInstrucciones3"
         ></ProximosAcordes>
-        <Partes
-          v-if="vista.partes"
+
+        <TocarCuadrado
+          v-if="vista.viendoCuadrado3"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          :secuencia="vista.secuencia"
-          :partes="vista.partes"
-        ></Partes>
+        ></TocarCuadrado>
+      </div>
+
+      <div class="columnas lateral-container" :style="estiloVistaPrincipal()">
+        <TocarLetraAcorde
+          v-if="vista.muestra == 'letrayacordes'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarLetraAcorde>
+        <TocarCuadrado
+          v-if="vista.muestra == 'cuadrado'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarCuadrado>
+        <TocarLetra
+          v-if="vista.muestra == 'karaoke'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarLetra>
+        <TocarAcorde
+          v-if="vista.muestra == 'acordes'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarAcorde>
+        <TocarPentagrama
+          v-if="vista.muestra == 'partitura'"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarPentagrama>
+      </div>
+      <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
+        <TocarEscucha
+          v-if="vista.muestra == 'escucha'"
+          @cambioEstado="cambioestado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarEscucha>
+        <TocarYoutube
+          v-if="vista.reproduce == 'video'"
+          @cambioEstado="cambioestado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarYoutube>
+        <TocarMidi
+          v-if="vista.reproduce == 'midi'"
+          @cambioEstado="cambioestado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarMidi>
+
+        <Secuencia
+          v-if="vista.viendoSecuencia"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></Secuencia>
+
+        <ProximosAcordes
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          v-if="vista.viendoInstrucciones"
+        ></ProximosAcordes>
+
+        <TocarCuadrado
+          v-if="vista.viendoCuadrado"
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+        ></TocarCuadrado>
       </div>
 
       <div class="dropdown dropdown-superior-derecha">
@@ -258,66 +266,8 @@ function cambioestado(estado: number) {
           <i class="bi bi-eye"></i>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li v-on:click="cambiarVista('karaoke')">
-            <a class="dropdown-item" href="#">Karaoke</a>
-          </li>
-          <li v-on:click="cambiarVista('acordes')">
-            <a class="dropdown-item" href="#">Acordes</a>
-          </li>
-          <li v-on:click="cambiarVista('cuadrado')">
-            <a class="dropdown-item" href="#">Cuadrado</a>
-          </li>
-
-          <li v-on:click="cambiarVista('soloacordes')">
-            <a class="dropdown-item" href="#">Solo Acordes</a>
-          </li>
-          <li
-            v-on:click="cambiarVista('pentagrama')"
-            v-if="appStore.cancion.pentagramas.length > 0"
-          >
-            <a class="dropdown-item" href="#">Pentagrama</a>
-          </li>
-          <li><hr class="dropdown-divider" /></li>
-
-          <li v-on:click="clickMedia()">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.media"></i>
-              Media</a
-            >
-          </li>
-
-          <li v-on:click="clickMidi()">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.midi"></i>
-              Midi</a
-            >
-          </li>
-          <li v-on:click="clickEscuchar()">
+          <li v-on:click="escuchar()">
             <a class="dropdown-item" href="#"> Escuchar</a>
-          </li>
-
-          <li v-on:click="clickSincronizarMedios()">
-            <a class="dropdown-item" href="#"> Sincronizacion Medios</a>
-          </li>
-
-          <li><hr class="dropdown-divider" /></li>
-          <li v-on:click="clickSecuencia()">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.secuencia"></i>
-              Secuencia</a
-            >
-          </li>
-          <li v-on:click="clickPartes()">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.partes"></i>
-              Partes</a
-            >
-          </li>
-          <li v-on:click="clickAcordes()">
-            <a class="dropdown-item" href="#">
-              <i class="bi bi-check-circle" v-if="vista.proximosAcordes"></i>
-              Instrucciones al musico</a
-            >
           </li>
 
           <li><hr class="dropdown-divider" /></li>
