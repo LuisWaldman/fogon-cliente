@@ -23,27 +23,27 @@ const notasacorde = ref<string[]>(
     .map((n) => n.slice(0, -1)),
 )
 const muestranotas = ref<string[]>([])
-const soloEscala = ref<boolean>(false)
-const soloAcorde = ref<boolean>(false)
 const desdeIndex = ref<number>(3)
-const desdeAcorde = ref<boolean>(false)
-const desdeEscala = ref<boolean>(true)
+const desdeOctava = ref<number>(2)
+const hastaOctava = ref<number>(4)
+const muestraNota = ref<string>('acorde')
+const desdeNota = ref<string>('acorde')
 function calcularNotas() {
   let toMost: string[] = notas.value
-  if (soloEscala.value) {
+  if (muestraNota.value == 'escala') {
     toMost = notasescala.value
   }
-  if (soloAcorde.value) {
+  if (muestraNota.value == 'acorde') {
     toMost = notasacorde.value
   }
   desdeIndex.value = 0
-  if (desdeAcorde.value) {
+  if (desdeNota.value == 'acorde') {
     const indexAcorde = toMost.indexOf(notasacorde.value[0])
     if (indexAcorde >= 0) {
       desdeIndex.value = indexAcorde
     }
   }
-  if (desdeEscala.value) {
+  if (desdeNota.value == 'escala') {
     const indexEscala = toMost.indexOf(notasescala.value[0])
     if (indexEscala >= 0) {
       desdeIndex.value = indexEscala
@@ -139,33 +139,38 @@ function SoltarNota(nota: string) {
           {{ inst.nombre }}
         </option>
       </select>
-    </div>
-    <div style="display: flex">
-      <input type="checkbox" v-model="desdeEscala" @change="calcularNotas" />
-      Desde Escala
-      <input type="checkbox" v-model="desdeAcorde" @change="calcularNotas" />
-      Desde acorde
-      <input type="checkbox" v-model="soloEscala" @change="calcularNotas" />
-      Solo escala
-      <input
-        type="checkbox"
-        v-model="soloAcorde"
-        @change="calcularNotas"
-        style="margin-left: 10px"
-      />
-      Solo acorde
+      Mostrando
+      <select v-model="muestraNota" @change="calcularNotas">
+        <option value="">Todas</option>
+        <option value="escala">Escala</option>
+        <option value="acorde">Acorde</option>
+      </select>
+      Desde
+      <select v-model="desdeNota" @change="calcularNotas">
+        <option value="acorde">Acorde</option>
+        <option value="escala">Escala</option>
+        <option value="">C</option>
+      </select>
     </div>
     <span v-if="CargandoMidi">Cargando instrumento...</span>
   </div>
-  <table class="tabla-cuadrado">
+  <table class="tabla-cuadrado noselect">
     <thead>
       <tr>
-        <th></th>
+        <th style="width: 120px">
+          <input type="number" min="1" max="8" v-model.number="desdeOctava" />-
+          <input type="number" min="1" max="8" v-model.number="hastaOctava" />
+        </th>
         <th v-for="nota in muestranotas" :key="nota">{{ nota }}</th>
       </tr>
     </thead>
     <tbody>
-      <tr v-for="octava in muestraoctavas" :key="octava">
+      <tr
+        v-for="octava in muestraoctavas.filter(
+          (o) => Number(o) >= desdeOctava && Number(o) <= hastaOctava,
+        )"
+        :key="octava"
+      >
         <td>{{ octava }}</td>
         <td
           v-for="nota in muestranotas"
@@ -191,7 +196,7 @@ function SoltarNota(nota: string) {
 <style scoped>
 .tabla-cuadrado {
   width: 100%;
-  height: 100%;
+  height: 80%;
   border: 1px solid #ccc;
 }
 
@@ -218,5 +223,10 @@ th {
 .tocando-nota {
   background-color: #ffcc00 !important;
   font-size: x-large;
+}
+.noselect {
+  user-select: none;
+  -webkit-user-select: none; /* Safari/Chrome */
+  -ms-user-select: none; /* IE/Edge */
 }
 </style>
