@@ -33,7 +33,7 @@ export const useAppStore = defineStore('app', () => {
       new Letra([]),
     ),
   )
-  
+
   const MediaVisas = ref<MediaVista[]>([])
   const estadosApp = ref<EstadosAplicacion>(new EstadosAplicacion())
   const editandocancion = ref<Cancion>(

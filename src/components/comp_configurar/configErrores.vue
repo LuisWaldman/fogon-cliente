@@ -2,7 +2,6 @@
 import { useAppStore } from '../../stores/appStore'
 
 const appStore = useAppStore()
-appStore.compas
 </script>
 
 <template>
