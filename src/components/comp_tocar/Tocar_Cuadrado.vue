@@ -4,6 +4,7 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
+import { InstrumentosRitmos } from './instrumentosritmos'
 
 const props = defineProps<{
   compas: number
@@ -28,6 +29,32 @@ const desdeOctava = ref<number>(2)
 const hastaOctava = ref<number>(4)
 const muestraNota = ref<string>('acorde')
 const desdeNota = ref<string>('acorde')
+const refInstrumentosRitmos = ref<InstrumentosRitmos[]>([])
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('BOMBO', 'C1', 40, 20, 15, 70, true),
+)
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('CAJA', 'E4', 40, 20, 45, 70, false),
+)
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('PLATILLO CERR', 'C#3', 10, 40, 15, 40, true),
+)
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('PLATILLO', 'D#3', 10, 40, 15, 30, true),
+)
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('MATRACA', 'A#3', 10, 10, 40, 10, true, '26px'),
+)
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('TRIANGULO', 'G#4', 10, 10, 55, 10, true),
+)
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('Silbato', 'C5', 10, 10, 70, 10, true),
+)
+refInstrumentosRitmos.value.push(
+  new InstrumentosRitmos('Crash', 'F6', 10, 10, 85, 10, true),
+)
+
 function calcularNotas() {
   let toMost: string[] = notas.value
   if (muestraNota.value == 'escala') {
@@ -72,7 +99,7 @@ watch(
 )
 
 const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
-const instrumento = ref('pad_1_new_age.json')
+const instrumento = ref('piano.json')
 const midiCargado = ref(false)
 const CargandoMidi = ref(false)
 
@@ -122,6 +149,17 @@ function SoltarNota(nota: string) {
   }
   midiPlayer.soltarNota(nota)
 }
+
+function styleInstrumentoRitmo(instrumento: InstrumentosRitmos) {
+  return {
+    top: instrumento.top + '%',
+    left: instrumento.left + '%',
+    width: instrumento.ancho + '%',
+    height: instrumento.alto + '%',
+    borderRadius: instrumento.circulo ? '50%' : '0%',
+    fontSize: instrumento.size,
+  }
+}
 </script>
 <template>
   <div style="display: flex">
@@ -144,6 +182,7 @@ function SoltarNota(nota: string) {
         <option value="">Todas</option>
         <option value="escala">Escala</option>
         <option value="acorde">Acorde</option>
+        <option value="ritmo">Ritmo</option>
       </select>
       Desde
       <select v-model="desdeNota" @change="calcularNotas">
@@ -154,12 +193,12 @@ function SoltarNota(nota: string) {
     </div>
     <span v-if="CargandoMidi">Cargando instrumento...</span>
   </div>
-  <table class="tabla-cuadrado noselect">
+  <table v-if="muestraNota != 'ritmo'" class="tabla-cuadrado noselect">
     <thead>
       <tr>
         <th style="width: 120px">
-          <input type="number" min="1" max="8" v-model.number="desdeOctava" />-
-          <input type="number" min="1" max="8" v-model.number="hastaOctava" />
+          <input type="number" min="1" max="7" v-model.number="desdeOctava" />-
+          <input type="number" min="2" max="8" v-model.number="hastaOctava" />
         </th>
         <th v-for="nota in muestranotas" :key="nota">{{ nota }}</th>
       </tr>
@@ -191,9 +230,46 @@ function SoltarNota(nota: string) {
       </tr>
     </tbody>
   </table>
+  <div v-if="muestraNota === 'ritmo'" class="ritmo-cuadrado noselect">
+    <div
+      v-for="(instrumento, index) in refInstrumentosRitmos"
+      :key="index"
+      @mousedown="TocarNota(instrumento.nota)"
+      @mouseup="SoltarNota(instrumento.nota)"
+      @touchstart="TocarNota(instrumento.nota)"
+      @touchend="SoltarNota(instrumento.nota)"
+      :class="{ 'tocando-nota': tocandoNotas.includes(instrumento.nota) }"
+      class="instrumento"
+      :style="styleInstrumentoRitmo(instrumento)"
+    >
+      {{ instrumento.texto }}
+    </div>
+  </div>
 </template>
 
 <style scoped>
+.instrumento {
+  position: absolute;
+  border: 1px solid #ccc;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ritmo-cuadrado {
+  width: 100%;
+  height: 99%;
+  position: relative;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #555;
+}
 .tabla-cuadrado {
   width: 100%;
   height: 80%;

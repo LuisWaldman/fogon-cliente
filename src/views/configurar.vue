@@ -5,6 +5,7 @@ import configlogin from '../components/comp_configurar/configLogin.vue'
 import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
+import configErrores from '../components/comp_configurar/configErrores.vue'
 
 import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
@@ -24,7 +25,16 @@ if (appStore.estado === 'conectado') {
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
-// Detectar cuál vista corresponde a la pantalla actual
+
+const viendoMas = ref(false)
+viendoMas.value = false
+function clickMas(masmenos: string) {
+  if (masmenos == '+') {
+    viendoMas.value = false
+  } else {
+    viendoMas.value = true
+  }
+}
 </script>
 
 <template>
@@ -42,22 +52,7 @@ function clickOpcion(viendostr: string) {
                 Perfil
               </a>
             </div>
-            <div
-              @click="clickOpcion('login')"
-              class="config-menu-item"
-              v-if="
-                appStore.estado === 'conectado' ||
-                appStore.estado === 'logueado'
-              "
-            >
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'login' }"
-              >
-                Login
-              </a>
-            </div>
+
             <div
               @click="clickOpcion('sesion')"
               class="config-menu-item"
@@ -77,16 +72,7 @@ function clickOpcion(viendostr: string) {
                 class="nav-link text-white"
                 :class="{ activo: viendo === 'servidores' }"
               >
-                Servidores
-              </a>
-            </div>
-            <div @click="clickOpcion('relojes')" class="config-menu-item">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'relojes' }"
-              >
-                Relojes
+                Conexion
               </a>
             </div>
             <div @click="clickOpcion('Afinar')" class="config-menu-item">
@@ -98,6 +84,52 @@ function clickOpcion(viendostr: string) {
                 Afinar
               </a>
             </div>
+            <div
+              @click="clickMas('-')"
+              v-if="!viendoMas"
+              class="config-menu-item"
+            >
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'relojes' }"
+              >
+                +
+              </a>
+            </div>
+            <div
+              @click="clickMas('+')"
+              v-if="viendoMas"
+              class="config-menu-item"
+            >
+              <a href="#" class="nav-link text-white activo"> - </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-if="viendoMas">
+        <div class="config-menu">
+          <div class="config-menu-group">
+            <div @click="clickOpcion('relojes')" class="config-menu-item">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'relojes' }"
+              >
+                Relojes
+              </a>
+            </div>
+            <div @click="clickOpcion('errores')" class="config-menu-item">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'errores' }"
+              >
+                Errores
+              </a>
+            </div>
+
             <div @click="clickOpcion('acercade')" class="config-menu-item">
               <a
                 href="#"
@@ -112,14 +144,15 @@ function clickOpcion(viendostr: string) {
       </div>
 
       <div class="innerConfig">
-        <configlogin v-if="viendo == 'login'"></configlogin>
         <configPerfil v-if="viendo == 'perfil'"></configPerfil>
+        <configlogin v-if="viendo == 'login'"></configlogin>
         <configsesion v-if="viendo == 'sesion'"> </configsesion>
         <configServidores v-if="viendo == 'servidores'"> </configServidores>
+
         <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
         <ConfigAfinador v-if="viendo == 'Afinar'"></ConfigAfinador>
-
         <verRelojes v-if="viendo == 'relojes'"></verRelojes>
+        <configErrores v-if="viendo == 'errores'"></configErrores>
       </div>
     </div>
   </div>
