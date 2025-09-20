@@ -45,7 +45,7 @@ function clickFogon() {
   <div class="navbar-brand" @click="clickFogon" style="color: inherit">
     <div class="iconofogon">
       <div class="relative-container">
-        <div v-if="appStore.estadoSesion === 'conectado'">
+        <div v-if="appStore.estadosApp.estadoSesion === 'conectado'">
           <div
             v-for="(user, idx) in appStore.usuariosSesion"
             :key="idx"
@@ -68,7 +68,7 @@ function clickFogon() {
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/troncossesion.png"
-            v-if="appStore.estadoSesion === 'conectado'"
+            v-if="appStore.estadosApp.estadoSesion === 'conectado'"
             style="z-index: 1"
           />
 
@@ -76,7 +76,7 @@ function clickFogon() {
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/troncosconectado.png"
-            v-if="appStore.estado === 'conectado'"
+            v-if="appStore.estadosApp.estadoconeccion === 'conectado'"
             style="z-index: 1"
           />
 
@@ -84,7 +84,7 @@ function clickFogon() {
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/troncoslogueado.png"
-            v-if="appStore.estado === 'logueado'"
+            v-if="appStore.estadosApp.estadoLogin === 'logueado'"
             style="z-index: 1"
           />
 
@@ -140,10 +140,16 @@ function clickFogon() {
       </div>
 
       <div style="margin-top: 50px">
-        <div class="titulo-Fogon" v-if="appStore.estadoSesion != 'conectado'">
-          El Fogon.
+        <div
+          class="titulo-Fogon"
+          v-if="appStore.estadosApp.estadoSesion != 'conectado'"
+        >
+          El_Fogon
         </div>
-        <div class="titulo-Fogon" v-if="appStore.estadoSesion === 'conectado'">
+        <div
+          class="titulo-Fogon"
+          v-if="appStore.estadosApp.estadoSesion === 'conectado'"
+        >
           {{ appStore.sesion.nombre }}
         </div>
       </div>

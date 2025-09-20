@@ -186,7 +186,7 @@ export default class Aplicacion {
     this.cliente.connectar()
     this.cliente.setEnsesionHandler((sesionCreada: string) => {
       const appStore = useAppStore()
-      appStore.estadoSesion = 'conectado'
+      appStore.estadosApp.estadoSesion = 'conectado'
       appStore.sesion.nombre = sesionCreada
       helper.ActualizarDelayRelojRTC()
       if (this.cliente != null) {
@@ -206,7 +206,7 @@ export default class Aplicacion {
     this.cliente.setSesionFailedHandler((error: string) => {
       console.error(`Error al crear sesión: ${error}`)
       const appStore = useAppStore()
-      appStore.estadoSesion = 'error'
+      appStore.estadosApp.estadoSesion = 'error'
     })
     this.cliente.setRolSesionHandler((mensaje: string) => {
       const appStore = useAppStore()
@@ -215,12 +215,12 @@ export default class Aplicacion {
     this.cliente.setLoginSuccessHandler(() => {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
-      appStore.estadoLogin = 'logueado'
+      appStore.estadosApp.estadoLogin = 'logueado'
     })
     this.cliente.setLoginFailedHandler((error: string) => {
       console.error(`Error al Loguearse: ${error}`)
       const appStore = useAppStore()
-      appStore.estadoLogin = 'error'
+      appStore.estadosApp.estadoLogin = 'error'
     })
 
     this.cliente.setMensajesesionHandler((msj: string) => {
@@ -331,7 +331,7 @@ export default class Aplicacion {
   }
   login(datos: datosLogin): boolean {
     const appStore = useAppStore()
-    appStore.estadoLogin = 'init-login'
+    appStore.estadosApp.estadoLogin = 'init-login'
     if (!this.cliente) {
       return false
     }
@@ -341,7 +341,7 @@ export default class Aplicacion {
 
   logout(): boolean {
     const appStore = useAppStore()
-    appStore.estadoLogin = ''
+    appStore.estadosApp.estadoLogin = 'desconectado'
     if (!this.cliente) {
       return false
     }
@@ -377,7 +377,7 @@ export default class Aplicacion {
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
-    appStore.estadoSesion = 'desconectado'
+    appStore.estadosApp.estadoSesion = 'desconectado'
     this.reproductor.detenerReproduccion()
     this.reproductor = this.reproductorDesconectado
     this.cliente.SalirSesion()

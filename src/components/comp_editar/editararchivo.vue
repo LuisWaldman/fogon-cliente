@@ -104,10 +104,16 @@ function guardarCambios() {
     <select v-model="origenDestino">
       <option value="sitio">🌐Sitio</option>
       <option value="local">💾LocalStorage</option>
-      <option value="fogon" v-if="appStore.estadoSesion === 'conectado'">
+      <option
+        value="fogon"
+        v-if="appStore.estadosApp.estadoSesion === 'conectado'"
+      >
         🔥Fogón
       </option>
-      <option value="server" v-if="appStore.estadoLogin === 'logueado'">
+      <option
+        value="server"
+        v-if="appStore.estadosApp.estadoSesion === 'logueado'"
+      >
         🔌Servidor
       </option>
     </select>

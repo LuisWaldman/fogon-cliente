@@ -37,7 +37,7 @@ onMounted(() => {
 const appStore = useAppStore()
 function loginWithCredentials() {
   if (username.value.trim() === '' || password.value.trim() === '') {
-    appStore.estadoLogin = 'error'
+    appStore.estadosApp.estadoLogin = 'error'
     return
   }
 
@@ -57,7 +57,7 @@ function loginWithCredentials() {
     })
     .catch((error) => {
       console.error('Error al crear el login seguro:', error)
-      appStore.estadoLogin = 'error'
+      appStore.estadosApp.estadoLogin = 'error'
     })
 
   // Aquí iría la lógica de autenticación con tu backend
@@ -86,7 +86,7 @@ function logout() {
   <div class="config-login">
     <h2>Login</h2>
     <span
-      v-if="appStore.estadoLogin == 'error'"
+      v-if="appStore.estadosApp.estadoLogin == 'error'"
       style="font-size: 20px; color: red"
       >Hay errores</span
     >
@@ -123,14 +123,22 @@ function logout() {
       <div class="buttons">
         <button
           @click="loginWithCredentials"
-          v-if="appStore.estadoLogin == '' || appStore.estadoLogin == 'error'"
+          v-if="
+            appStore.estadosApp.estadoLogin == '' ||
+            appStore.estadosApp.estadoLogin == 'error'
+          "
         >
           Login
         </button>
-        <button @click="logout" v-if="appStore.estadoLogin == 'logueado'">
+        <button
+          @click="logout"
+          v-if="appStore.estadosApp.estadoLogin == 'logueado'"
+        >
           Salir
         </button>
-        <span v-if="appStore.estadoLogin == 'init-login'">Iniciando...</span>
+        <span v-if="appStore.estadosApp.estadoLogin == 'init-login'"
+          >Iniciando...</span
+        >
       </div>
     </div>
 

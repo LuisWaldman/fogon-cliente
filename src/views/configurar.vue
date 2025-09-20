@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import configsesion from '../components/comp_configurar/configSesion.vue'
+import configsesiones from '../components/comp_configurar/configSesiones.vue'
 import configlogin from '../components/comp_configurar/configLogin.vue'
 import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
@@ -11,21 +12,18 @@ import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
 const appStore = useAppStore()
-// Definir la canción y el contexto
 const viendo = ref('perfil')
-/*
-if (appStore.estado === 'conectado') {
-  viendo.value = 'login'
-} else if (appStore.estadoLogin === 'logueado') {
-  viendo.value = 'sesion'
-} else {
-  viendo.value = 'servidores'
-}*/
+const viendoConexion = ref('servidores')
 
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
+  if (['perfil', 'conexion', 'afinar'].includes(viendostr)) {
+    viendoMas.value = false
+  }
 }
-
+function clickOpcionConectado(viendostr: string) {
+  viendoConexion.value = viendostr
+}
 const viendoMas = ref(false)
 viendoMas.value = false
 function clickMas(masmenos: string) {
@@ -53,33 +51,20 @@ function clickMas(masmenos: string) {
               </a>
             </div>
 
-            <div
-              @click="clickOpcion('sesion')"
-              class="config-menu-item"
-              v-if="appStore.estado == 'conectado'"
-            >
+            <div @click="clickOpcion('conexion')" class="config-menu-item">
               <a
                 href="#"
                 class="nav-link text-white"
-                :class="{ activo: viendo === 'sesion' }"
-              >
-                Sesion
-              </a>
-            </div>
-            <div @click="clickOpcion('servidores')" class="config-menu-item">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'servidores' }"
+                :class="{ activo: viendo === 'conexion' }"
               >
                 Conexion
               </a>
             </div>
-            <div @click="clickOpcion('Afinar')" class="config-menu-item">
+            <div @click="clickOpcion('afinar')" class="config-menu-item">
               <a
                 href="#"
                 class="nav-link text-white"
-                :class="{ activo: viendo === 'Afinar' }"
+                :class="{ activo: viendo === 'afinar' }"
               >
                 Afinar
               </a>
@@ -143,14 +128,91 @@ function clickMas(masmenos: string) {
         </div>
       </div>
 
+      <div v-if="viendo == 'conexion'">
+        <div class="config-menu">
+          <div class="config-menu-group">
+            <div
+              @click="clickOpcionConectado('servidores')"
+              class="config-menu-item"
+            >
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendoConexion === 'servidores' }"
+              >
+                {{
+                  appStore.estadosApp.estadoconeccion === 'conectado'
+                    ? 'Conectado'
+                    : 'Servidores'
+                }}
+              </a>
+            </div>
+            <div
+              @click="clickOpcionConectado('login')"
+              class="config-menu-item"
+              v-if="appStore.estadosApp.estadoconeccion === 'conectado'"
+            >
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendoConexion === 'login' }"
+              >
+                {{
+                  appStore.estadosApp.estadoLogin === 'Logueado'
+                    ? 'Logueado:' + 'BUSCAR USUARIO'
+                    : 'Login'
+                }}
+              </a>
+            </div>
+            <div
+              @click="clickOpcionConectado('sesiones')"
+              class="config-menu-item"
+              v-if="appStore.estadosApp.estadoconeccion === 'conectado'"
+            >
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendoConexion === 'sesiones' }"
+              >
+                Sesiones (CA)
+              </a>
+            </div>
+            <div
+              @click="clickOpcionConectado('sesion')"
+              class="config-menu-item"
+            >
+              <a
+                href="#"
+                class="nav-link text-white"
+                v-if="appStore.estadosApp.estadoSesion === 'conectado'"
+                :class="{ activo: viendoConexion === 'sesion' }"
+              >
+                Sesion actual: Sesion Actual
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="innerConfig">
         <configPerfil v-if="viendo == 'perfil'"></configPerfil>
-        <configlogin v-if="viendo == 'login'"></configlogin>
-        <configsesion v-if="viendo == 'sesion'"> </configsesion>
-        <configServidores v-if="viendo == 'servidores'"> </configServidores>
+        <configlogin
+          v-if="viendo == 'conexion' && viendoConexion === 'login'"
+        ></configlogin>
+        <configsesion
+          v-if="viendo == 'conexion' && viendoConexion === 'sesion'"
+        >
+        </configsesion>
+        <configsesiones
+          v-if="viendo == 'conexion' && viendoConexion === 'sesiones'"
+        >
+        </configsesiones>
+        <configServidores
+          v-if="viendo == 'conexion' && viendoConexion === 'servidores'"
+        >
+        </configServidores>
 
         <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
-        <ConfigAfinador v-if="viendo == 'Afinar'"></ConfigAfinador>
+        <ConfigAfinador v-if="viendo == 'afinar'"></ConfigAfinador>
         <verRelojes v-if="viendo == 'relojes'"></verRelojes>
         <configErrores v-if="viendo == 'errores'"></configErrores>
       </div>

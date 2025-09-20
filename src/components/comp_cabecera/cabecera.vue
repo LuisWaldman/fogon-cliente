@@ -101,8 +101,8 @@ function arreglartexto(texto: string): string {
             :src="appStore.perfil?.imagen || '/img/usuariofantasma.png'"
             alt="User"
             :class="{
-              imgLogueado: appStore.estadoLogin == 'logueado',
-              imgConectado: appStore.estadoSesion === 'conectado',
+              imgLogueado: appStore.estadosApp.estadoLogin == 'logueado',
+              imgConectado: appStore.estadosApp.estadoSesion === 'conectado',
             }"
             style="
               width: 40px;
@@ -134,13 +134,13 @@ function arreglartexto(texto: string): string {
               🔥 Fogon
             </a>
             <ul class="">
-              <li v-if="appStore.estadoSesion != 'conectado'">
+              <li v-if="appStore.estadosApp.estadoSesion != 'conectado'">
                 <a class="dropdown-item" href="#" @click="crearSesion">
                   <i class="bi bi-plus-circle"></i>
                   Crear Fogon
                 </a>
               </li>
-              <div v-if="appStore.estadoSesion != 'conectado'">
+              <div v-if="appStore.estadosApp.estadoSesion != 'conectado'">
                 <li v-for="(sesion, id) in appStore.sesiones" :key="id">
                   <a
                     class="dropdown-item"
@@ -153,13 +153,13 @@ function arreglartexto(texto: string): string {
                 </li>
               </div>
 
-              <li v-if="appStore.estadoSesion === 'conectado'">
+              <li v-if="appStore.estadosApp.estadoSesion === 'conectado'">
                 <a class="dropdown-item" href="#" @click="SalirSesion">
                   <i class="bi bi-box-arrow-in-right"></i>
                   Salir
                 </a>
               </li>
-              <li v-if="appStore.estadoSesion === 'conectado'">
+              <li v-if="appStore.estadosApp.estadoSesion === 'conectado'">
                 <a class="dropdown-item" href="#" @click="compartir">
                   <i class="bi bi-share"></i>
                   Compartir

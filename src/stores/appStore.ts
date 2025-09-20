@@ -23,6 +23,8 @@ export const useAppStore = defineStore('app', () => {
   const EstadoSincro = ref<EstadoSincroCancion>(
     new EstadoSincroCancion(-1, 0, '-', 0),
   )
+  const rolSesion = ref<string>('') // invitado, participante, admin, owner
+  const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
 
   // Estados centrales en Pinia
   const cancion = ref<Cancion>(
@@ -57,14 +59,8 @@ export const useAppStore = defineStore('app', () => {
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
   const errores = ref<Error[]>([])
   const noticias = ref<Noticia[]>([])
-
-  const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
-  const estadoSesion = ref<string>('no-conectado') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
-  const rolSesion = ref<string>('default') // Estados : 'No iniciado', 'Conectado', 'Desconectado'
-
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
   const estado = ref<string>('No iniciado')
-  const estadoLogin = ref<string>('')
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
     estado.value = nuevoEstado
@@ -96,19 +92,17 @@ export const useAppStore = defineStore('app', () => {
     editandocancion,
     listaCanciones,
     compas,
+    sesion,
     estado,
     estadoConexion,
-    estadoSesion,
-    estadoLogin,
-    rolSesion,
     sesSincroCancion,
     EstadoSincro,
+    rolSesion,
     perfil,
     estadoReproduccion,
     nroCancion,
     golpeDelCompas,
     noticias,
-    sesion,
     mensajes,
     sesiones,
     actualizarEstado,
