@@ -124,11 +124,8 @@ function SoltarNota(nota: string) {
 }
 </script>
 <template>
-  <table class="tabla-cuadrado">
-    <thead>
-      <tr>
-        <th style="width: 20%">
-          <div>
+  <div style="display: flex;">
+              <div>
             <select
               v-if="midiCargado"
               v-model="instrumento"
@@ -171,6 +168,12 @@ function SoltarNota(nota: string) {
             Solo acorde
           </div>
           <span v-if="CargandoMidi">Cargando instrumento...</span>
+  </div>
+  <table class="tabla-cuadrado">
+    <thead>
+      <tr>
+        <th>
+
         </th>
         <th v-for="nota in muestranotas" :key="nota">{{ nota }}</th>
       </tr>
