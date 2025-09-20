@@ -124,57 +124,43 @@ function SoltarNota(nota: string) {
 }
 </script>
 <template>
-  <div style="display: flex;">
-              <div>
-            <select
-              v-if="midiCargado"
-              v-model="instrumento"
-              @change="ActualizarInstrumento"
-            >
-              <option
-                v-for="(inst, index) in refInstrumentos"
-                :key="index"
-                :value="inst.archivo"
-              >
-                {{ inst.nombre }}
-              </option>
-            </select>
-          </div>
-          <div style="display: flex">
-            <input
-              type="checkbox"
-              v-model="desdeEscala"
-              @change="calcularNotas"
-            />
-            Desde Escala
-            <input
-              type="checkbox"
-              v-model="desdeAcorde"
-              @change="calcularNotas"
-            />
-            Desde acorde
-            <input
-              type="checkbox"
-              v-model="soloEscala"
-              @change="calcularNotas"
-            />
-            Solo escala
-            <input
-              type="checkbox"
-              v-model="soloAcorde"
-              @change="calcularNotas"
-              style="margin-left: 10px"
-            />
-            Solo acorde
-          </div>
-          <span v-if="CargandoMidi">Cargando instrumento...</span>
+  <div style="display: flex">
+    <div>
+      <select
+        v-if="midiCargado"
+        v-model="instrumento"
+        @change="ActualizarInstrumento"
+      >
+        <option
+          v-for="(inst, index) in refInstrumentos"
+          :key="index"
+          :value="inst.archivo"
+        >
+          {{ inst.nombre }}
+        </option>
+      </select>
+    </div>
+    <div style="display: flex">
+      <input type="checkbox" v-model="desdeEscala" @change="calcularNotas" />
+      Desde Escala
+      <input type="checkbox" v-model="desdeAcorde" @change="calcularNotas" />
+      Desde acorde
+      <input type="checkbox" v-model="soloEscala" @change="calcularNotas" />
+      Solo escala
+      <input
+        type="checkbox"
+        v-model="soloAcorde"
+        @change="calcularNotas"
+        style="margin-left: 10px"
+      />
+      Solo acorde
+    </div>
+    <span v-if="CargandoMidi">Cargando instrumento...</span>
   </div>
   <table class="tabla-cuadrado">
     <thead>
       <tr>
-        <th>
-
-        </th>
+        <th></th>
         <th v-for="nota in muestranotas" :key="nota">{{ nota }}</th>
       </tr>
     </thead>
