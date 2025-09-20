@@ -23,6 +23,10 @@ function MensajeASesion(msj: string) {
   appStore.aplicacion.MensajeASesion(msj)
 }
 
+function unirmeSesion(sesion: string) {
+  appStore.aplicacion.UnirmeSesion(sesion)
+}
+
 function SalirSesion() {
   appStore.aplicacion.SalirSesion()
 }
@@ -100,36 +104,6 @@ if (appStore.estadosApp.estadoSesion === 'conectado') {
             </div>
           </div>
         </div>
-        <div>
-          <div style="display: flex">
-            <h3>Usuarios en la sesión</h3>
-            <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
-          </div>
-          <table v-if="appStore.usuariosSesion.length" style="width: 100%">
-            <thead>
-              <tr>
-                <th>Usuario</th>
-                <th>Perfil</th>
-                <th>Rol</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(user, idx) in appStore.usuariosSesion" :key="idx">
-                <td>{{ user.ID }} , {{ user.Usuario }}</td>
-                <td>
-                  <img
-                    v-if="user.PerfilUsr && user.PerfilUsr.imagen"
-                    :src="user.PerfilUsr.imagen"
-                    alt="Profile image"
-                    class="profile-image"
-                  />
-                  {{ user.PerfilUsr.nombre }}
-                </td>
-                <td>{{ user.RolSesion }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
     </div>
     <div
@@ -150,6 +124,32 @@ if (appStore.estadosApp.estadoSesion === 'conectado') {
       <button @click="cargarSesiones">Actualizar Sesiones</button>
       {{ appStore.estadosApp.estadoSesion }} - {{ appStore.rolSesion }}
     </div>
+
+    <table v-if="appStore.sesiones.length">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Usuarios</th>
+          <th>Estado</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(sesion, idx) in appStore.sesiones" :key="idx">
+          <td>{{ sesion.nombre }}</td>
+          <td>{{ sesion.usuarios }}</td>
+          <td>{{ sesion.estado }}</td>
+          <td>
+            <button
+              v-if="appStore.estadosApp.estadoSesion != 'conectado'"
+              @click="unirmeSesion(sesion.nombre)"
+            >
+              Unirse
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
