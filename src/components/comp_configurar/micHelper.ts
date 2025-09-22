@@ -148,9 +148,9 @@ export class MicHelper {
   detectFrequency() {
     if (!this.analyserNode) return
     console.log('Detectando frecuencia...')
-
+    if (!this.buffer) return
     this.analyserNode.getFloatTimeDomainData(this.buffer)
-
+    if (!this.audioContext) return
     // Detectar frecuencia principal con autocorrelación
     const mainFreq = this.autoCorrelate(
       this.buffer,

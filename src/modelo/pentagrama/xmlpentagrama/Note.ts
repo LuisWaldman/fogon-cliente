@@ -1,3 +1,5 @@
+import type { Beam } from './beam'
+
 export class Note {
   GetDuracionString(): string {
     return Note.mapaDuraciones[this.type ?? 'quarter'] ?? '4'
@@ -23,6 +25,7 @@ export class Note {
   public staff?: number
   public type?: string
   public tie?: string
+  public beam: Beam[] = []
 
   constructor(init?: Partial<Note>) {
     Object.assign(this, init)
