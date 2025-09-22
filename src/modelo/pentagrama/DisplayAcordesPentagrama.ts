@@ -7,7 +7,12 @@ export class DisplayAcordesPentagrama {
       (nota) => nota.nota.toLowerCase() + '/' + nota.octava,
     )
     const duracion = this.duracion.replace('d', '')
+
     const tienePuntillo = this.duracion.includes('d')
+    if (tienePuntillo) {
+      // Si tiene puntillo, VexFlow lo maneja automáticamente con Dot
+      console.log('duracion', this.duracion, duracion)
+    }
     const toret = new StaveNote({
       keys: keys,
       duration: duracion.toString(),

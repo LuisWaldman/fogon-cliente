@@ -2,9 +2,11 @@ import type { Beam } from './beam'
 
 export class Note {
   GetDuracionString(): string {
-    return (
-      Note.mapaDuraciones[this.type ?? 'quarter'] ?? '4' + (this.dot ? 'd' : '')
-    )
+    let ret = Note.mapaDuraciones[this.type ?? 'quarter'] ?? '4'
+    if (this.dot) {
+      ret += 'd'
+    }
+    return ret
   }
 
   static mapaDuraciones: Record<string, string> = {
