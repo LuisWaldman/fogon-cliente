@@ -2,7 +2,9 @@ import type { Beam } from './beam'
 
 export class Note {
   GetDuracionString(): string {
-    return Note.mapaDuraciones[this.type ?? 'quarter'] ?? '4'
+    return (
+      Note.mapaDuraciones[this.type ?? 'quarter'] ?? '4' + (this.dot ? 'd' : '')
+    )
   }
 
   static mapaDuraciones: Record<string, string> = {
@@ -25,6 +27,7 @@ export class Note {
   public staff?: number
   public type?: string
   public tie?: string
+  public dot: boolean = false
   public beam: Beam[] = []
 
   constructor(init?: Partial<Note>) {

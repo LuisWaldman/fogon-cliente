@@ -145,6 +145,7 @@ export class XMLHelper {
           }
           note.duration = n.duration ? Number(n.duration) : undefined
           note.type = n.type ?? undefined
+          note.dot = typeof n.dot !== 'undefined' && n.dot !== null
 
           // asignar número de staff si viene en la nota (<staff>1</staff> en MusicXML)
           const staffRaw =

@@ -96,7 +96,8 @@ export class HelperPentagramas {
     escala: string,
   ): DisplayCompasPentagrama {
     // Remove any numbers from the escala
-    const escalaLimpia = escala.replace(/\d+/g, '')
+    const escalaLimpia = escala.replace(/\d+/g, '').replace('maj', '')
+
     const mapa = HelperPentagramas.mapaDuraciones[escalaLimpia]
     const compas = new DisplayCompasPentagrama(nroCompas)
     compas.beams = pentagramaCompas.beams
