@@ -1,7 +1,9 @@
 import { StaveNote } from 'vexflow'
 import type { DisplayAcordesPentagrama } from './DisplayAcordesPentagrama'
+import type { PentagramaBeam } from '../cancion/pentagramabeam'
 
 export class DisplayCompasPentagrama {
+  beams: PentagramaBeam[] = []
   getStaveNote(clave: string): StaveNote[] {
     const ret: StaveNote[] = []
     for (const acorde of this.acordes) {

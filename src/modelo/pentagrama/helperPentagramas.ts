@@ -99,6 +99,7 @@ export class HelperPentagramas {
     const escalaLimpia = escala.replace(/\d+/g, '')
     const mapa = HelperPentagramas.mapaDuraciones[escalaLimpia]
     const compas = new DisplayCompasPentagrama(nroCompas)
+    compas.beams = pentagramaCompas.beams
     for (let i = 0; i < pentagramaCompas.notas.length; i++) {
       const nuevoAcorde = new DisplayAcordesPentagrama()
       for (const nota of pentagramaCompas.notas[i]) {
