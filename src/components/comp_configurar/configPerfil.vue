@@ -86,6 +86,19 @@ onMounted(() => {
             <label for="instrument">Instrumento:</label>
             <input type="text" id="instrument" v-model="perfil.instrumento" />
           </div>
+
+          <div>
+            <label for="coso">Nombre de sesion:</label>
+            <input type="text" id="coso" v-model="perfil.nombreSesion" />
+          </div>
+        </div>
+        <div>
+          <label for="cifrado">Cifrado latino:</label>
+          <input
+            type="checkbox"
+            id="cifrado"
+            v-model="perfil.CifradoLatino"
+          />
         </div>
       </div>
       <div class="classBotonera">

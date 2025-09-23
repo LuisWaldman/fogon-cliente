@@ -1,8 +1,5 @@
 import { assert, describe, it } from 'vitest'
-import { Acordes, Parte } from '../cancion/acordes'
-import { Letra } from '../cancion/letra'
 import { Cancion } from '../cancion/cancion'
-import { Pentagrama } from '../cancion/pentagrama'
 import { XMLHelper } from './XMLHelper'
 import fs from 'fs'
 import path from 'path'

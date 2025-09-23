@@ -6,6 +6,9 @@ export class Perfil extends ObjetoPosteable {
   usuario: string
   descripcion: string
   instrumento: string
+  nombreSesion: string = ''
+  CifradoLatino: boolean = false
+  instrumentosFavoritos: string[] = []
 
   constructor(
     imagen: string,
