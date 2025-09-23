@@ -94,11 +94,7 @@ onMounted(() => {
         </div>
         <div>
           <label for="cifrado">Cifrado latino:</label>
-          <input
-            type="checkbox"
-            id="cifrado"
-            v-model="perfil.CifradoLatino"
-          />
+          <input type="checkbox" id="cifrado" v-model="perfil.CifradoLatino" />
         </div>
       </div>
       <div class="classBotonera">

@@ -4,6 +4,8 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
 import { Display } from '../../modelo/display/display'
 import { HelperDisplay } from '../../modelo/display/helperDisplay'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number
@@ -14,6 +16,9 @@ const configuracionPantalla = pantalla.getConfiguracionPantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 const renglones = ref([] as string[])
 const displayRef = ref(new Display(configuracionPantalla.columnas))
+const helper = HelperDisplayAcordesLatino.getInstance()
+const appStore = useAppStore()
+helper.latino = appStore.perfil.CifradoLatino
 
 const emit = defineEmits(['clickCompas'])
 function clickCompas(compas: number) {
@@ -141,7 +146,7 @@ defineExpose({ Actualizar })
             :class="{ en_compas: acorde.compas === compas }"
             class="acordediv"
           >
-            {{ acorde.contenido }}
+            {{ helper.GetAcorde(acorde.contenido) }}
           </div>
         </div>
       </div>
