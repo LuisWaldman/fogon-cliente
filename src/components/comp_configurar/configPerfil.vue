@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
 import { Perfil } from '../../modelo/perfil'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { Configuracion } from '../../modelo/configuracion'
+import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 
+const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
+const refCategoria = ref(InstrumentoMidi.GetCategoria())
 const appStore = useAppStore()
 const perfil = ref(new Perfil('', '', '', '', ''))
 const imageBase64 = ref('')
 const config = Configuracion.getInstance()
-config.perfil.SetDefaults()
+config.perfil?.SetDefaults()
 
 function updateProfileWeb() {
   perfil.value.imagen = imageBase64.value
@@ -41,6 +44,29 @@ onMounted(() => {
 
   imageBase64.value = perfil.value.imagen
 })
+
+const categoriaSeleccionada = ref('')
+const instrumentoSeleccionado = ref('')
+
+const instrumentosFiltrados = computed(() =>
+  refInstrumentos.value.filter(
+    (inst: any) => inst.categoria === categoriaSeleccionada.value,
+  ),
+)
+
+function agregarInstrumentoFavorito() {
+  if (
+    instrumentoSeleccionado.value &&
+    !perfil.value.instrumentosFavoritos.includes(instrumentoSeleccionado.value)
+  ) {
+    perfil.value.instrumentosFavoritos.push(instrumentoSeleccionado.value)
+    instrumentoSeleccionado.value = ''
+  }
+}
+
+function eliminarInstrumentoFavorito(idx: number) {
+  perfil.value.instrumentosFavoritos.splice(idx, 1)
+}
 </script>
 
 <template>
@@ -96,10 +122,53 @@ onMounted(() => {
           </div>
 
           <div>
-            <label for="instrument">Instrumentos Midi:</label>
-            {{ perfil.instrumentosFavoritos }}
+            <label>Instrumentos Favoritos:</label>
+            <div v-if="perfil.instrumentosFavoritos.length === 0">
+              No hay instrumentos favoritos.
+            </div>
+            <div style="display: flex;">
+            <div
+              v-for="(inst, idx) in perfil.instrumentosFavoritos"
+              :key="inst"
+              style="display: flex; align-items: center; margin-bottom: 5px"
+            >
+              <span style="flex: 1">{{ inst }}</span>
+              <span
+                @click="eliminarInstrumentoFavorito(idx)"
+                style="margin-left: 10px"
+              >
+                [X]
+              </span>
+            </div>
+            </div>
+            <div style="margin-top: 10px">
+              <select v-model="categoriaSeleccionada">
+                <option disabled value="">Selecciona categoría</option>
+                <option v-for="cat in refCategoria" :key="cat" :value="cat">
+                  {{ cat }}
+                </option>
+              </select>
+              <select
+                v-model="instrumentoSeleccionado"
+                :disabled="!categoriaSeleccionada"
+              >
+                <option disabled value="">Selecciona instrumento</option>
+                <option
+                  v-for="inst in instrumentosFiltrados"
+                  :key="inst.nombre"
+                  :value="inst.nombre"
+                >
+                  {{ inst.nombre }}
+                </option>
+              </select>
+              <button
+                @click="agregarInstrumentoFavorito"
+                :disabled="!instrumentoSeleccionado"
+              >
+                Agregar
+              </button>
+            </div>
           </div>
-
           <div>
             <label for="coso">Nombre de sesion:</label>
             <input type="text" id="coso" v-model="perfil.nombreSesion" />
@@ -133,17 +202,7 @@ textarea {
   border-radius: 4px;
   color: white !important;
 }
-button {
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #0056b3;
-}
+
 .controlPerfil {
   display: flex;
   flex-wrap: wrap;

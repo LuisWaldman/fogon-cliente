@@ -6,8 +6,7 @@ export class Perfil extends ObjetoPosteable {
       this.instrumentosFavoritos = ['Guitarra', 'Piano', 'Ukelele']
       this.nombreSesion =
         'Fogon de ' +
-        (this.nombre || 'invitado') +
-        Math.floor(Math.random() * 20000)
+        (this.nombre || 'invitado' + Math.floor(Math.random() * 20000))
       this.instrumento = this.instrumento || 'Guitarra'
     }
   }
