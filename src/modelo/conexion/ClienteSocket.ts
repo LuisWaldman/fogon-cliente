@@ -1,6 +1,7 @@
 import { io, Socket } from 'socket.io-client'
 import type { datosLogin } from '../datosLogin'
 import type { ObjetoPosteable } from '../objetoPosteable'
+import type { Servidor } from '../servidor'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -133,9 +134,12 @@ export class ClienteSocket {
     this.actualizarUsuariosHandler = handler
   }
 
-  private urlserver: string
+  private servidor: Servidor
   public get UrlServer(): string {
-    return this.urlserver
+    return this.servidor.direccion
+  }
+  public GetServerNombre(): string {
+    return this.servidor.nombre
   }
 
   public async HTTPGET(action: string): Promise<Response> {
@@ -158,8 +162,8 @@ export class ClienteSocket {
     })
   }
 
-  constructor(urlserver: string) {
-    this.urlserver = urlserver
+  constructor(servidor: Servidor) {
+    this.servidor = servidor
   }
   public disconnect(): void {
     if (this.socket) {
@@ -176,7 +180,7 @@ export class ClienteSocket {
     this.reconectando = false
 
     const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io(
-      this.urlserver,
+      this.servidor.direccion,
       {
         rejectUnauthorized: false,
         transports: ['websocket'],

@@ -7,4 +7,5 @@ export class EstadosAplicacion {
   public estadoLogin: string = 'desconectado'
   public estadoReproduccion: string = 'pausa'
   public estadoSesion: string = 'desconectado'
+  public nombreServidor: string = ''
 }

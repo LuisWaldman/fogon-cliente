@@ -138,11 +138,14 @@ function clickMas(masmenos: string) {
               <a
                 href="#"
                 class="nav-link text-white"
-                :class="{ activo: viendoConexion === 'servidores' }"
+                :class="{ conectado: appStore.estadosApp.estadoconeccion === 'conectado',
+                activo: viendoConexion === 'servidores',
+                  
+                 }"
               >
                 {{
                   appStore.estadosApp.estadoconeccion === 'conectado'
-                    ? 'Conectado'
+                    ? 'Conectado: ' + appStore.estadosApp.nombreServidor
                     : 'Servidores'
                 }}
               </a>
@@ -269,5 +272,9 @@ function clickMas(masmenos: string) {
 
 .config-row span {
   width: 100px;
+}
+.conectado {
+  font-weight: bold;
+  background-color: darkkhaki;
 }
 </style>

@@ -7,10 +7,10 @@ import { useAppStore } from '../../stores/appStore'
 const configuracion = Configuracion.getInstance() // Get Configuracion instance
 const servidores = ref<Servidor[]>(configuracion.servidores) // servidores ref
 const conectarServerDefault = ref(configuracion.conectarServerDefault) // ref for default server name
-
+const agregando = ref(false)
 // Initialize serverName with the address of the default server, or first, or a hardcoded default.
 const serverName = ref('')
-
+const appStore = useAppStore()
 const respuestas = ref([] as string[])
 const conectado = ref(false)
 const nuevoServidorNombre = ref('') // For new server name
@@ -63,40 +63,12 @@ watch(
   { deep: true },
 )
 
-// Watch for external changes to conectarServerDefault (e.g. if another component changes it)
-watch(
-  () => configuracion.conectarServerDefault,
-  (newDefaultServerName) => {
-    conectarServerDefault.value = newDefaultServerName
-    // Optionally, update serverName to the new default server if it exists
-    const newDefaultServer = servidores.value.find(
-      (s) => s.nombre === newDefaultServerName,
-    )
-    if (newDefaultServer) {
-      serverName.value = newDefaultServer.direccion
-    }
-  },
-)
 
-function conectar() {
-  if (serverName.value.trim() === '') {
-    respuestas.value.push('Por favor ingrese un nombre de servidor.')
-    return
-  }
+function conectarServidor(index: number) {
   const appStore = useAppStore()
-  appStore.aplicacion.conectar(serverName.value)
+  appStore.aplicacion.conectar(servidores.value[index])
   conectado.value = true
-  respuestas.value.push(`Intenta conectar: ${serverName.value}`)
-}
-
-function mandarMensaje(tipo: string) {
-  if (!conectado.value) {
-    respuestas.value.push('Debe conectarse primero.')
-    return
-  }
-  respuestas.value.push(
-    `Mensaje ${tipo} enviando al servidor ${serverName.value}`,
-  )
+  respuestas.value.push(`Intenta conectar: ${servidores.value[index].nombre}`)
 }
 
 // Function to add a new server
@@ -105,6 +77,7 @@ function agregarServidor() {
     nuevoServidorNombre.value.trim() !== '' &&
     nuevoServidorDireccion.value.trim() !== ''
   ) {
+    agregando.value = false
     const nuevo = new Servidor(
       nuevoServidorNombre.value,
       nuevoServidorDireccion.value,
@@ -118,6 +91,7 @@ function agregarServidor() {
       respuestas.value.push('Ya existe un servidor con ese nombre o dirección.')
       return
     }
+    
     configuracion.servidores.push(nuevo)
     servidores.value = [...configuracion.servidores] // Update reactive ref first
     // If this is the first server added, or no default is set, make it the default
@@ -158,7 +132,17 @@ function setConectarPorDefault(nombreServidor: string) {
   configuracion.guardarEnLocalStorage()
 }
 
-// Computed property to check if a server is the default one
+function cancelarAgregar() {
+  agregando.value = false
+  nuevoServidorNombre.value = ''
+  nuevoServidorDireccion.value = ''
+}
+function ClickAgregarServidor() {
+  agregando.value = true
+}
+
+// Computed property to check if a 
+// server is the default one
 const esServidorPorDefecto = computed(() => {
   return (nombreServidor: string) =>
     conectarServerDefault.value === nombreServidor
@@ -166,73 +150,78 @@ const esServidorPorDefecto = computed(() => {
 </script>
 <template>
   <div class="config-sesion">
-    <label for="serverSelect">Servidor:</label>
-    <select id="serverSelect" v-model="serverName">
-      <option v-if="servidores.length === 0" value="" disabled>
-        No hay servidores configurados
-      </option>
-      <option
-        v-for="servidor in servidores"
-        :key="servidor.direccion"
-        :value="servidor.direccion"
-      >
-        {{ servidor.nombre }} ({{ servidor.direccion }})
-        {{ esServidorPorDefecto(servidor.nombre) ? '[Default]' : '' }}
-      </option>
-    </select>
+    <h1>Servidores</h1>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>Acciones
+            <button @click="ClickAgregarServidor">Agregar Servidor</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-if="agregando">
+          <td>
+            <input
+              v-model="nuevoServidorNombre"
+              placeholder="Nombre del servidor"
+            />
+          </td>
+          <td>
+            <input
+              v-model="nuevoServidorDireccion"
+              placeholder="Dirección del servidor"
+            />
+          </td>
+          <td>
+            <button @click="agregarServidor">Agregar</button>
+            <button @click="cancelarAgregar">Cancelar</button>
+          </td>
+        </tr>
+        <tr v-for="(servidor, index) in servidores" :key="servidor.direccion" 
+        :class="{ conectado: servidor.nombre === appStore.estadosApp.nombreServidor }">
+          <td>{{ servidor.nombre }}</td>
+          <td>{{ servidor.direccion }}</td>
+          <td>
+            
+            <button @click="conectarServidor(index)">Conectar</button>
+            <button @click="setConectarPorDefault(servidor.nombre)">
+              {{ esServidorPorDefecto(servidor.nombre) ? 'Predeterminado' : 'Conectar por default' }}
+            </button>
+            <button @click="eliminarServidor(index)">Eliminar</button>
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
 
-    <div class="buttons">
-      <button @click="conectar">Conectar</button>
-      <button @click="mandarMensaje('A')">Mandar mensaje A</button>
-      <button @click="mandarMensaje('B')">Mandar mensaje B</button>
-    </div>
-
-    <div class="respuestas">
-      <h3>Respuestas:</h3>
-      <div v-for="(respuesta, index) in respuestas" :key="index">
-        {{ respuesta }}
-      </div>
-    </div>
-
-    <!-- Sección para administrar servidores -->
-    <div class="admin-servidores">
-      <h3>Administrar Servidores</h3>
-      <div>
-        <input
-          v-model="nuevoServidorNombre"
-          placeholder="Nombre del servidor"
-        />
-        <input
-          v-model="nuevoServidorDireccion"
-          placeholder="Dirección del servidor"
-        />
-        <button @click="agregarServidor">Agregar Servidor</button>
-      </div>
-      <ul>
-        <li v-for="(servidor, index) in servidores" :key="index">
-          {{ servidor.nombre }} ({{ servidor.direccion }})
-          <button
-            @click="setConectarPorDefault(servidor.nombre)"
-            :disabled="esServidorPorDefecto(servidor.nombre)"
-          >
-            {{
-              esServidorPorDefecto(servidor.nombre)
-                ? 'Predeterminado'
-                : 'Conectar por default'
-            }}
-          </button>
-          <button @click="eliminarServidor(index)">Eliminar</button>
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 
 <style scoped>
 .config-sesion {
-  max-width: 400px;
   margin: 0 auto;
+  width: 100%;
 }
+.tabla {
+  width: 80%;
+  margin-left: 5%;
+  border: 1px solid;
+}
+
+.tabla th,
+.tabla td {
+  border: 1px solid;
+  padding: 8px;
+  text-align: left;
+  font-size: x-large;
+}
+
+
 .buttons {
   margin: 10px 0;
 }
@@ -282,5 +271,9 @@ const esServidorPorDefecto = computed(() => {
 
 .admin-servidores li button {
   margin-left: 5px; /* Adjust margin for multiple buttons */
+}
+.conectado {
+  color: white;
+  background-color: darkkhaki;
 }
 </style>
