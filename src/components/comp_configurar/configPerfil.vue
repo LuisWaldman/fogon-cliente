@@ -88,7 +88,9 @@ function eliminarInstrumentoFavorito(idx: number) {
           >
             <!-- Imagen de perfil con click para abrir el input file -->
             <img
-              :src="imageBase64 !== '' ? imageBase64 : '/img/usuariofantasma.png'"
+              :src="
+                imageBase64 !== '' ? imageBase64 : '/img/usuariofantasma.png'
+              "
               alt="Profile Image"
               style="max-width: 200px; max-height: 200px; cursor: pointer"
               @click="openFileDialog"
@@ -132,20 +134,20 @@ function eliminarInstrumentoFavorito(idx: number) {
             <div v-if="perfil.instrumentosFavoritos.length === 0">
               No hay instrumentos favoritos.
             </div>
-            <div style="display: flex;">
-            <div
-              v-for="(inst, idx) in perfil.instrumentosFavoritos"
-              :key="inst"
-              style="display: flex; align-items: center; margin-bottom: 5px"
-            >
-              <span style="flex: 1">{{ inst }}</span>
-              <span
-                @click="eliminarInstrumentoFavorito(idx)"
-                style="margin-left: 10px"
+            <div style="display: flex">
+              <div
+                v-for="(inst, idx) in perfil.instrumentosFavoritos"
+                :key="inst"
+                style="display: flex; align-items: center; margin-bottom: 5px"
               >
-                [X]
-              </span>
-            </div>
+                <span style="flex: 1">{{ inst }}</span>
+                <span
+                  @click="eliminarInstrumentoFavorito(idx)"
+                  style="margin-left: 10px"
+                >
+                  [X]
+                </span>
+              </div>
             </div>
             <div style="margin-top: 10px">
               <select v-model="categoriaSeleccionada">

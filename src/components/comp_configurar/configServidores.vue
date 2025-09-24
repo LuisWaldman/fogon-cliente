@@ -63,7 +63,6 @@ watch(
   { deep: true },
 )
 
-
 function conectarServidor(index: number) {
   const appStore = useAppStore()
   appStore.aplicacion.conectar(servidores.value[index])
@@ -91,7 +90,7 @@ function agregarServidor() {
       respuestas.value.push('Ya existe un servidor con ese nombre o dirección.')
       return
     }
-    
+
     configuracion.servidores.push(nuevo)
     servidores.value = [...configuracion.servidores] // Update reactive ref first
     // If this is the first server added, or no default is set, make it the default
@@ -141,7 +140,7 @@ function ClickAgregarServidor() {
   agregando.value = true
 }
 
-// Computed property to check if a 
+// Computed property to check if a
 // server is the default one
 const esServidorPorDefecto = computed(() => {
   return (nombreServidor: string) =>
@@ -156,7 +155,8 @@ const esServidorPorDefecto = computed(() => {
         <tr>
           <th>Nombre</th>
           <th>Dirección</th>
-          <th>Acciones
+          <th>
+            Acciones
             <button @click="ClickAgregarServidor">Agregar Servidor</button>
           </th>
         </tr>
@@ -180,25 +180,29 @@ const esServidorPorDefecto = computed(() => {
             <button @click="cancelarAgregar">Cancelar</button>
           </td>
         </tr>
-        <tr v-for="(servidor, index) in servidores" :key="servidor.direccion" 
-        :class="{ conectado: servidor.nombre === appStore.estadosApp.nombreServidor }">
+        <tr
+          v-for="(servidor, index) in servidores"
+          :key="servidor.direccion"
+          :class="{
+            conectado: servidor.nombre === appStore.estadosApp.nombreServidor,
+          }"
+        >
           <td>{{ servidor.nombre }}</td>
           <td>{{ servidor.direccion }}</td>
           <td>
-            
             <button @click="conectarServidor(index)">Conectar</button>
             <button @click="setConectarPorDefault(servidor.nombre)">
-              {{ esServidorPorDefecto(servidor.nombre) ? 'Predeterminado' : 'Conectar por default' }}
+              {{
+                esServidorPorDefecto(servidor.nombre)
+                  ? 'Predeterminado'
+                  : 'Conectar por default'
+              }}
             </button>
             <button @click="eliminarServidor(index)">Eliminar</button>
-            
           </td>
         </tr>
-        
       </tbody>
     </table>
-    
-
   </div>
 </template>
 
@@ -220,7 +224,6 @@ const esServidorPorDefecto = computed(() => {
   text-align: left;
   font-size: x-large;
 }
-
 
 .buttons {
   margin: 10px 0;
