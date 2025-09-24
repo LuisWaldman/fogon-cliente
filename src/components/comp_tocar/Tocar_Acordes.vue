@@ -3,8 +3,8 @@ import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
 import { Pantalla } from '../../modelo/pantalla'
-import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino';
-import { useAppStore } from '../../stores/appStore';
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number

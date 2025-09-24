@@ -8,6 +8,7 @@ const appStore = useAppStore()
 const perfil = ref(new Perfil('', '', '', '', ''))
 const imageBase64 = ref('')
 const config = Configuracion.getInstance()
+config.perfil.SetDefaults()
 
 function updateProfileWeb() {
   perfil.value.imagen = imageBase64.value
@@ -84,7 +85,19 @@ onMounted(() => {
           </div>
           <div>
             <label for="instrument">Instrumento:</label>
-            <input type="text" id="instrument" v-model="perfil.instrumento" />
+            <select id="instrument" v-model="perfil.instrumento">
+              <option value="Guitarra">Guitarra</option>
+              <option value="Piano">Piano</option>
+              <option value="Ukelele">Ukelele</option>
+              <option value="Bajo">Bajo</option>
+              <option value="Percusion">Percusion</option>
+              <option value="Harmonica">Harmonica</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="instrument">Instrumentos Midi:</label>
+            {{ perfil.instrumentosFavoritos }}
           </div>
 
           <div>

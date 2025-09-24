@@ -3,8 +3,8 @@ import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
 import { ResumenSecuencia } from '../../modelo/cancion/ResumenSecuencia'
-import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino';
-import { useAppStore } from '../../stores/appStore';
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number
@@ -48,7 +48,6 @@ function Actualizado() {
 }
 
 Actualizar(props.cancion)
-
 
 const helper = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()

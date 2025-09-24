@@ -3,8 +3,6 @@ import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
 import Acorde from './Acorde.vue'
-import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino';
-import { useAppStore } from '../../stores/appStore';
 
 const props = defineProps<{
   compas: number
@@ -49,9 +47,6 @@ watch(
 onMounted(() => {
   calcularAcordes(props.compas)
 })
-
-
-
 </script>
 
 <template>

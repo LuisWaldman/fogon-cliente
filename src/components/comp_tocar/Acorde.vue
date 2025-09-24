@@ -5,8 +5,8 @@ import {
   AcordesGuitarra,
   AcordesGuitarraHelper,
 } from '../../modelo/GuitarAcordes'
-import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino';
-import { useAppStore } from '../../stores/appStore';
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   acorde: string
@@ -31,7 +31,6 @@ watch(
     updateAcorde()
   },
 )
-
 
 const helper = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
