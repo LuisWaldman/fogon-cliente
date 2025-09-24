@@ -5,6 +5,8 @@ import {
   AcordesGuitarra,
   AcordesGuitarraHelper,
 } from '../../modelo/GuitarAcordes'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   acorde: string
@@ -29,11 +31,15 @@ watch(
     updateAcorde()
   },
 )
+
+const helper = HelperDisplayAcordesLatino.getInstance()
+const appStore = useAppStore()
+helper.latino = appStore.perfil.CifradoLatino
 </script>
 
 <template>
   <div class="divTocarAcorde">
-    <div class="">{{ acorde }}</div>
+    <div class="">{{ helper.GetAcorde(acorde) }}</div>
 
     <div style="display: flex">
       <span>{{ refAcorde?.cejilla }}</span>

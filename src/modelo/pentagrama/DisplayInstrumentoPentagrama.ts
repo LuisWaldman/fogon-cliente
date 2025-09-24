@@ -1,4 +1,4 @@
-import { Formatter, RenderContext, Stave } from 'vexflow'
+import { Formatter, RenderContext, Stave, Beam } from 'vexflow'
 import type { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 import type { Cancion } from '../cancion/cancion'
 
@@ -26,7 +26,7 @@ export class DisplayInstrumentoPentagrama {
       const staveCompas = new Stave(x, y, anchoCompasStave)
       x += anchoCompasStave
       const staveNotes = compas.getStaveNote(this.clave)
-      if (staveNotes) {
+      if (staveNotes && staveNotes.length > 0) {
         if (compasActual == compas.nroCompas) {
           context.setFillStyle('#ff2600ff')
           context.setStrokeStyle('#ff2600ff')
@@ -36,6 +36,21 @@ export class DisplayInstrumentoPentagrama {
         }
         Formatter.FormatAndDraw(context, staveCompas, staveNotes)
         staveCompas.setContext(context).draw()
+
+        // DIBUJAR BEAMS
+        if (compas.beams && compas.beams.length > 0) {
+          for (const beamData of compas.beams) {
+            // beamData.inicio y beamData.fin son los índices de las notas
+            const notesForBeam = staveNotes.slice(
+              beamData.inicio,
+              beamData.fin + 1,
+            )
+            if (notesForBeam.length > 0) {
+              const beam = new Beam(notesForBeam)
+              beam.setContext(context).draw()
+            }
+          }
+        }
       }
     }
     return stave

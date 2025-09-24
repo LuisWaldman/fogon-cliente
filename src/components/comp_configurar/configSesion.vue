@@ -2,29 +2,17 @@
 import { useAppStore } from '../../stores/appStore'
 import { Sesion } from '../../modelo/sesion'
 import { ref, watch } from 'vue'
+import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 
 const newsesio = ref(new Sesion('default', 0, '', 0, 0))
 const sesionDefault = ref('')
 sesionDefault.value = localStorage.getItem('sesionDefault') || ''
-function setSesionDefault() {
-  localStorage.setItem('sesionDefault', newsesio.value.nombre)
-  sesionDefault.value = newsesio.value.nombre
-}
 function cargarSesiones() {
   appStore.aplicacion.cargarSesiones()
 }
-const msj = ref('')
 const appStore = useAppStore()
 function crearSesion() {
   appStore.aplicacion.CrearSesion(newsesio.value.nombre)
-}
-
-function MensajeASesion(msj: string) {
-  appStore.aplicacion.MensajeASesion(msj)
-}
-
-function SalirSesion() {
-  appStore.aplicacion.SalirSesion()
 }
 
 watch(
@@ -51,60 +39,17 @@ function cargarUsuariosSesion() {
 if (appStore.estadosApp.estadoSesion === 'conectado') {
   cargarUsuariosSesion()
 }
+function SincronizarCon(usuario: string) {
+  const helper = HelperSincro.getInstance()
+  helper.SincronizarConClienteRTC(parseInt(usuario))
+}
 </script>
 <template>
   <div class="configSesion">
-    <div
-      v-if="appStore.estadosApp.estadoSesion === 'conectado'"
-      style="margin-top: 5px"
-    >
-      <div>
-        <h1>Sesion</h1>
-
-        <button
-          @click="SalirSesion"
-          v-if="appStore.estadosApp.estadoSesion == 'conectado'"
-        >
-          Salir de Sesión
-        </button>
-        <button
-          @click="setSesionDefault"
-          :disabled="newsesio.nombre === sesionDefault"
-          v-if="appStore.estadosApp.estadoSesion == 'conectado'"
-        >
-          Set Default
-        </button>
-      </div>
-
-      <div>
+    <h1>Sesion</h1>
+    <div>
+      <div style="width: 100%">
         <div>
-          <form @submit.prevent="MensajeASesion(msj)">
-            <input
-              type="text"
-              v-model="msj"
-              placeholder="Escribe un mensaje"
-              required
-            />
-            <button type="submit">Enviar</button>
-          </form>
-          <div
-            v-if="appStore.mensajes && appStore.mensajes.length"
-            style="margin-top: 1em"
-          >
-            <div
-              v-for="(mensaje, idx) in appStore.mensajes"
-              :key="idx"
-              style="margin-bottom: 0.5em"
-            >
-              {{ mensaje }}
-            </div>
-          </div>
-        </div>
-        <div>
-          <div style="display: flex">
-            <h3>Usuarios en la sesión</h3>
-            <button @click="cargarUsuariosSesion">Actualizar Usuarios</button>
-          </div>
           <table v-if="appStore.usuariosSesion.length" style="width: 100%">
             <thead>
               <tr>
@@ -115,7 +60,6 @@ if (appStore.estadosApp.estadoSesion === 'conectado') {
             </thead>
             <tbody>
               <tr v-for="(user, idx) in appStore.usuariosSesion" :key="idx">
-                <td>{{ user.ID }} , {{ user.Usuario }}</td>
                 <td>
                   <img
                     v-if="user.PerfilUsr && user.PerfilUsr.imagen"
@@ -123,9 +67,15 @@ if (appStore.estadosApp.estadoSesion === 'conectado') {
                     alt="Profile image"
                     class="profile-image"
                   />
-                  {{ user.PerfilUsr.nombre }}
+                  {{ user.Usuario }}
                 </td>
+
                 <td>{{ user.RolSesion }}</td>
+                <td>
+                  <button @click="SincronizarCon(user.Usuario)">
+                    Sincronizar RTC
+                  </button>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -183,6 +133,7 @@ form {
 }
 .configSesion {
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 

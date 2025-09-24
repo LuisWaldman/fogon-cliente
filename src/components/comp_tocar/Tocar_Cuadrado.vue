@@ -5,12 +5,17 @@ import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
 import { InstrumentosRitmos } from './instrumentosritmos'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
 
+const helper = HelperDisplayAcordesLatino.getInstance()
+const appStore = useAppStore()
+helper.latino = appStore.perfil.CifradoLatino
 const musicaHelper = new MusicaHelper()
 const acordes = ref<string[]>(props.cancion.acordes.GetTodosLosAcordes())
 const acordeActual = ref<string>(acordes.value[props.compas])
@@ -200,7 +205,9 @@ function styleInstrumentoRitmo(instrumento: InstrumentosRitmos) {
           <input type="number" min="1" max="7" v-model.number="desdeOctava" />-
           <input type="number" min="2" max="8" v-model.number="hastaOctava" />
         </th>
-        <th v-for="nota in muestranotas" :key="nota">{{ nota }}</th>
+        <th v-for="nota in muestranotas" :key="nota">
+          {{ helper.GetAcorde(nota) }}
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -225,7 +232,9 @@ function styleInstrumentoRitmo(instrumento: InstrumentosRitmos) {
             notaAcorde: notasacorde.includes(nota),
           }"
         >
-          <div style="text-align: center">{{ nota + octava }}</div>
+          <div style="text-align: center">
+            {{ helper.GetAcorde(nota) + octava }}
+          </div>
         </td>
       </tr>
     </tbody>

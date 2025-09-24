@@ -108,6 +108,15 @@ export class Configuracion {
               obj.perfil.descripcion,
               obj.perfil.instrumento,
             )
+            conf.perfil.nombreSesion = obj.perfil.nombreSesion || ''
+            conf.perfil.CifradoLatino = obj.perfil.CifradoLatino || false
+            conf.perfil.instrumentosFavoritos =
+              Array.isArray(obj.perfil.instrumentosFavoritos) &&
+              obj.perfil.instrumentosFavoritos.every(
+                (i: unknown) => typeof i === 'string',
+              )
+                ? obj.perfil.instrumentosFavoritos
+                : []
           }
 
           if (

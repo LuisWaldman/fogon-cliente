@@ -57,7 +57,7 @@ export default class Aplicacion {
     if (navigator.onLine) {
       const servidor = this.GetServerDefault()
       if (servidor) {
-        this.conectar(servidor.direccion)
+        this.conectar(servidor)
       } else {
       }
     } else {
@@ -130,14 +130,17 @@ export default class Aplicacion {
   }
 
   url = ''
-  conectar(url: string) {
+  conectar(servidor: Servidor) {
     const config = Configuracion.getInstance()
-    this.url = url
+    this.url = servidor.direccion
     const appStore = useAppStore()
     appStore.estado = 'conectando'
+    appStore.estadosApp.estadoconeccion = 'conectando'
+    appStore.estadosApp.estadoSesion = 'desconectado'
+    appStore.estadosApp.estadoLogin = 'desconectado'
     appStore.estadosApp.texto = 'Conectando al servidor...'
     const helper = HelperSincro.getInstance()
-    this.cliente = new ClienteSocket(url)
+    this.cliente = new ClienteSocket(servidor)
     this.cliente.setconexionStatusHandler((status: string) => {
       if (status === 'conectado') {
         if (this.cliente) {
@@ -162,7 +165,7 @@ export default class Aplicacion {
     })
     this.cliente.setConectadoHandler((token: string) => {
       this.token = token
-
+      appStore.estadosApp.nombreServidor = this.cliente?.GetServerNombre() || ''
       if (this.cliente) {
         CancionManager.getInstance().setCliente(this.cliente)
       }

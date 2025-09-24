@@ -3,6 +3,8 @@ import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
 import { Pantalla } from '../../modelo/pantalla'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const props = defineProps<{
   compas: number
@@ -12,7 +14,9 @@ const props = defineProps<{
 const mostrandoParte = ref(-1)
 const mostrandoCompasParte = ref(-1)
 const currentCompas = ref(0)
-
+const helper = HelperDisplayAcordesLatino.getInstance()
+const appStore = useAppStore()
+helper.latino = appStore.perfil.CifradoLatino
 const pantalla = new Pantalla()
 function styleDivTocar() {
   return {
@@ -65,7 +69,7 @@ function moverScroll(posX: number) {
               mostrandoParte === index && mostrandoCompasParte === index_aco,
           }"
         >
-          {{ aco }}
+          {{ helper.GetAcorde(aco) }}
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { Score } from './xmlpentagrama/Score'
 import { Part } from './xmlpentagrama/Part'
 import { Measure } from './xmlpentagrama/Measure'
 import { Note } from './xmlpentagrama/Note'
+import { Beam } from './xmlpentagrama/beam'
 
 export class XMLHelper {
   public XMLToPentagramas(xml: string): Pentagrama[] {
@@ -144,8 +145,7 @@ export class XMLHelper {
           }
           note.duration = n.duration ? Number(n.duration) : undefined
           note.type = n.type ?? undefined
-
-          // asignar número de staff si viene en la nota (<staff>1</staff> en MusicXML)
+          note.dot = typeof n.dot !== 'undefined'
           const staffRaw =
             n.staff ?? n['staff'] ?? n['@staff'] ?? n['@_staff'] ?? undefined
           note.staff =
@@ -166,6 +166,31 @@ export class XMLHelper {
               note.tie =
                 n.tie.type ?? (typeof n.tie === 'string' ? n.tie : undefined)
             }
+          }
+
+          // Capturar los beam de la nota
+          if (n.beam) {
+            const beamsRaw = Array.isArray(n.beam) ? n.beam : [n.beam]
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            note.beam = beamsRaw.map((b: any) => {
+              // Puede venir como objeto o string
+              const number =
+                b.number ??
+                b['@number'] ??
+                b['@_number'] ??
+                (typeof b === 'object' ? undefined : undefined)
+              const type =
+                b['#text'] ??
+                b.type ??
+                b['@type'] ??
+                b['@_type'] ??
+                (typeof b === 'string' ? b : undefined)
+              // Si es string, puede ser solo el tipo
+              return new Beam(
+                number ? Number(number) : 1,
+                type ?? (typeof b === 'string' ? b : 'begin'),
+              )
+            })
           }
 
           measure.notes.push(note)

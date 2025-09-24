@@ -1,6 +1,12 @@
+import type { Beam } from './beam'
+
 export class Note {
   GetDuracionString(): string {
-    return Note.mapaDuraciones[this.type ?? 'quarter'] ?? '4'
+    let ret = Note.mapaDuraciones[this.type ?? 'quarter'] ?? '4'
+    if (this.dot) {
+      ret += 'd'
+    }
+    return ret
   }
 
   static mapaDuraciones: Record<string, string> = {
@@ -23,6 +29,8 @@ export class Note {
   public staff?: number
   public type?: string
   public tie?: string
+  public dot: boolean = false
+  public beam: Beam[] = []
 
   constructor(init?: Partial<Note>) {
     Object.assign(this, init)
