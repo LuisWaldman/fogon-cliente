@@ -5,7 +5,9 @@ import { ref, onMounted, computed } from 'vue'
 import { Configuracion } from '../../modelo/configuracion'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 
-const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
+const refInstrumentos = ref<InstrumentoMidi[]>(
+  InstrumentoMidi.GetInstrumentos(),
+)
 const refCategoria = ref(InstrumentoMidi.GetCategoria())
 const appStore = useAppStore()
 const config = Configuracion.getInstance()
@@ -58,7 +60,7 @@ const instrumentoSeleccionado = ref('')
 
 const instrumentosFiltrados = computed(() =>
   refInstrumentos.value.filter(
-    (inst: any) => inst.categoria === categoriaSeleccionada.value,
+    (inst: InstrumentoMidi) => inst.categoria === categoriaSeleccionada.value,
   ),
 )
 

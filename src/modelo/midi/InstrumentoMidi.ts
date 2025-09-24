@@ -1,5 +1,5 @@
 export class InstrumentoMidi {
-  static GetCategoria(): any {
+  static GetCategoria(): string[] {
     // Puedes ajustar el tipo de retorno según lo que necesites
     return [
       'Cuerdas',
