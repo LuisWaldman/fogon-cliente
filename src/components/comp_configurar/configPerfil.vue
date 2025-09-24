@@ -8,10 +8,13 @@ import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
 const refCategoria = ref(InstrumentoMidi.GetCategoria())
 const appStore = useAppStore()
-const perfil = ref(new Perfil('', '', '', '', ''))
-const imageBase64 = ref('')
 const config = Configuracion.getInstance()
-config.perfil?.SetDefaults()
+const perfil = ref(config.perfil || new Perfil('', '', '', '', ''))
+perfil.value.SetDefaults()
+const imageBase64 = ref('')
+
+// Nueva referencia para el input file
+const fileInputRef = ref<HTMLInputElement | null>(null)
 
 function updateProfileWeb() {
   perfil.value.imagen = imageBase64.value
@@ -35,6 +38,11 @@ function handleImageUpload(event: Event) {
     }
     reader.readAsDataURL(file)
   }
+}
+
+// Nueva función para abrir el input file
+function openFileDialog() {
+  fileInputRef.value?.click()
 }
 
 onMounted(() => {
@@ -78,25 +86,23 @@ function eliminarInstrumentoFavorito(idx: number) {
           <div
             style="display: flex; flex-direction: column; align-items: center"
           >
+            <!-- Imagen de perfil con click para abrir el input file -->
             <img
-              :src="imageBase64"
-              v-if="imageBase64 !== ''"
+              :src="imageBase64 !== '' ? imageBase64 : '/img/usuariofantasma.png'"
               alt="Profile Image"
-              style="max-width: 200px; max-height: 200px"
-            />
-            <img
-              v-if="imageBase64 === ''"
-              alt="Profile Image"
-              src="/img/usuariofantasma.png"
-              style="max-width: 200px; max-height: 200px"
+              style="max-width: 200px; max-height: 200px; cursor: pointer"
+              @click="openFileDialog"
             />
 
+            <!-- Input file oculto -->
             <input
               type="file"
               accept=".jpg,.jpeg,.png,.bmp"
               id="image"
               class="fileUp"
+              ref="fileInputRef"
               @change="handleImageUpload"
+              style="display: none"
             />
           </div>
         </div>
@@ -208,12 +214,9 @@ textarea {
   flex-wrap: wrap;
 }
 
+/* Oculta el input file */
 .fileUp {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 200px;
+  display: none;
 }
 
 .classBotonera {

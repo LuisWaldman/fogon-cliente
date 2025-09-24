@@ -2,6 +2,7 @@ import { ObjetoPosteable } from './objetoPosteable.ts'
 
 export class Perfil extends ObjetoPosteable {
   SetDefaults() {
+    console.log('SetDefaults perfil', this.instrumentosFavoritos)
     if (this.instrumentosFavoritos.length === 0) {
       this.instrumentosFavoritos = ['Guitarra', 'Piano', 'Ukelele']
       this.nombreSesion =
