@@ -71,8 +71,8 @@ function SincronizarCon(usuario: string) {
                 </td>
 
                 <td>{{ user.RolSesion }}</td>
-                <td>
-                  <button @click="SincronizarCon(user.Usuario)">
+                <td> 
+                  <button @click="SincronizarCon(user.ID)">
                     Sincronizar RTC
                   </button>
                 </td>
