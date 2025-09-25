@@ -3,6 +3,8 @@ import type { MidiSecuencia } from './MidiSecuencia'
 import { InstrumentosManager } from './InstrumentosManager'
 
 export class MidiPlayer {
+  compasUnidad: number = 4
+  compasCantidad: number = 4
   getPlayerState(): number {
     return Tone.getTransport().state === 'started' ? 1 : 0
   }
@@ -95,6 +97,7 @@ export class MidiPlayer {
     this.conectarInstrumentoConVolumen(instrumento)
 
     Tone.getTransport().bpm.value = secuencia.bpm
+    Tone.getTransport().timeSignature = [this.compasCantidad, this.compasUnidad]
 
     this.part = new Tone.Part((time, value) => {
       this.instrumentosManager.instrumentosCargados[

@@ -35,6 +35,8 @@ function cargarCancion() {
       continue
     }
     const secuencia = helper.GetSecuencia(props.cancion.pentagramas[i], bpm)
+    midiPlayer.compasCantidad = props.cancion.compasCantidad
+    midiPlayer.compasUnidad = props.cancion.compasUnidad
     midiPlayer.loadSequence(props.cancion.pentagramas[i].instrumento, secuencia)
   }
 }

@@ -3,6 +3,7 @@ import { Cancion } from './cancion'
 import { Letra } from './letra'
 import { Media } from './media'
 import { Pentagrama } from './pentagrama'
+import type { PentagramaBeam } from './pentagramabeam'
 import { PentagramaCompas } from './pentagramacompas'
 import { PentagramaNotas } from './pentagramanotas' // Agregar esta importación
 
@@ -34,6 +35,7 @@ export class HelperJSON {
         clave: pentagrama.clave,
         compases: pentagrama.compases.map((compas) => ({
           notas: compas.notas,
+          beams: compas.beams,
         })),
       })),
       archivo: cancion.archivo,
@@ -103,15 +105,20 @@ export class HelperJSON {
         (penta: {
           instrumento: string
           clave: string
-          compases: { notas: PentagramaNotas[][] }[]
+          compases: { notas: PentagramaNotas[][]; beams?: PentagramaBeam[] }[]
         }) => {
           const pentagrama = new Pentagrama()
           pentagrama.instrumento = penta.instrumento
           pentagrama.clave = penta.clave
           pentagrama.compases = [] // Asegurar que esté inicializado
           penta.compases.forEach(
-            (compasData: { notas: PentagramaNotas[][] }) => {
-              pentagrama.compases.push(new PentagramaCompas(compasData.notas))
+            (compasData: {
+              notas: PentagramaNotas[][]
+              beams?: PentagramaBeam[]
+            }) => {
+              const mostrandoCompas = new PentagramaCompas(compasData.notas)
+              mostrandoCompas.beams = compasData.beams || []
+              pentagrama.compases.push(mostrandoCompas)
             },
           )
           return pentagrama
