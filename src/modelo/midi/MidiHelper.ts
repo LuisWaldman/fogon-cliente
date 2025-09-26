@@ -28,30 +28,92 @@ export class MidiHelper {
     ]
     for (let i = 0; i < pentagrama.compases.length; i++) {
       this.parteCompas = 0
+      let notaId = 0
       for (const nota of pentagrama.compases[i].notas as PentagramaNotas[][]) {
+        const esLigada = pentagrama.compases[i].ligaduras?.some(
+          (ligadura) => ligadura.desdeNota === notaId,
+        )
+        const FinLigada = pentagrama.compases[i].ligaduras?.some(
+          (ligadura) => ligadura.hastaNota === notaId,
+        )
+
         for (const notaItem of nota as PentagramaNotas[]) {
           if (!notaItem.duracion.includes('r')) {
             const tiempo = this.GetTiempoMidi(i)
-
+            let duracion = PentagramaNotas.duracionMidi(notaItem.duracion)
             let nota = notaItem.nota
             if (esBateria) {
               if (mapeoBateriaDesde.indexOf(nota) !== -1) {
                 nota = mapeoBateriaHasta[mapeoBateriaDesde.indexOf(nota)]
               }
             }
-            secuencia.notas.push(
-              new NotaMidi(
-                nota,
-                PentagramaNotas.duracionMidi(notaItem.duracion),
-                tiempo,
-              ),
-            )
+            if (esLigada) {
+              const ligadura = pentagrama.compases[i].ligaduras?.find(
+                (ligadura) => ligadura.desdeNota === notaId,
+              )
+              if (ligadura) {
+                // Use the ligadura as needed
+                // This finds the first ligadura that starts from the current note
+                if (pentagrama.compases[i].notas[ligadura.hastaNota]) {
+                  const ligadoHa = PentagramaNotas.duracionMidi(
+                    pentagrama.compases[i].notas[ligadura.hastaNota][0]
+                      .duracion,
+                  )
+                  duracion = this.SumarMidisDuracion(duracion, ligadoHa)
+                }
+              }
+            }
+            if (!FinLigada) {
+              secuencia.notas.push(new NotaMidi(nota, duracion, tiempo))
+            }
           }
         }
+        notaId++
         this.ActualizarTiempos(nota)
       }
     }
     return secuencia
+  }
+
+  duraciones: { [key: string]: number } = {
+    '1n': 4,
+    '2n': 2,
+    '2n.': 3,
+    '4n': 1,
+    '4n.': 1.5,
+    '8n': 0.5,
+    '8n.': 0.75,
+    '16n': 0.25,
+    '16n.': 0.375,
+    // etc.
+  }
+
+  SumarMidisDuracion(duracion: string, ligadoHa: string): string {
+    // Calculate the total duration by looking up values in the duraciones object
+    const valor1 = this.duraciones[duracion] || 0
+    const valor2 = this.duraciones[ligadoHa] || 0
+    const totalDuracion = valor1 + valor2
+
+    // Find the closest matching duration
+    for (const [notacion, valor] of Object.entries(this.duraciones)) {
+      if (Math.abs(valor - totalDuracion) < 0.01) {
+        return notacion
+      }
+    }
+
+    // If no exact match, find the closest approximation
+    let closest = '4n'
+    let minDiff = Number.MAX_VALUE
+
+    for (const [notacion, valor] of Object.entries(this.duraciones)) {
+      const diff = Math.abs(valor - totalDuracion)
+      if (diff < minDiff) {
+        minDiff = diff
+        closest = notacion
+      }
+    }
+
+    return closest
   }
   GetTiempoMidi(compas: number): string {
     const cuarto = Math.floor(this.parteCompas * 4)
