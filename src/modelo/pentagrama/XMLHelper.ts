@@ -192,7 +192,6 @@ export class XMLHelper {
               )
             })
           }
-
           measure.notes.push(note)
         }
 

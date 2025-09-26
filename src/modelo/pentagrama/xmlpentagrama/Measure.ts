@@ -16,6 +16,7 @@ export class Measure {
             `${n.step ?? ''}${n.alter ? (n.alter > 0 ? '#' : 'b') : ''}${n.octave ?? ''}`,
             n.GetDuracionString(),
           )
+          nuevaNota.tie = n.tie ? n.tie : ''
           n.beam?.forEach((b) => {
             if (b.type === 'begin') {
               beams.push(new PentagramaBeam(b.number, notas.length, -1))
