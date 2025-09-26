@@ -5,6 +5,7 @@ import { Media } from './media'
 import { Pentagrama } from './pentagrama'
 import type { PentagramaBeam } from './pentagramabeam'
 import { PentagramaCompas } from './pentagramacompas'
+import type { PentagramaLigadura } from './pentagramaligadura'
 import { PentagramaNotas } from './pentagramanotas' // Agregar esta importación
 
 export class HelperJSON {
@@ -36,6 +37,7 @@ export class HelperJSON {
         compases: pentagrama.compases.map((compas) => ({
           notas: compas.notas,
           beams: compas.beams,
+          ligaduras: compas.ligaduras,
         })),
       })),
       archivo: cancion.archivo,
@@ -115,9 +117,12 @@ export class HelperJSON {
             (compasData: {
               notas: PentagramaNotas[][]
               beams?: PentagramaBeam[]
+              ligaduras?: PentagramaLigadura[]
             }) => {
               const mostrandoCompas = new PentagramaCompas(compasData.notas)
               mostrandoCompas.beams = compasData.beams || []
+              mostrandoCompas.ligaduras = compasData.ligaduras || []
+
               pentagrama.compases.push(mostrandoCompas)
             },
           )
