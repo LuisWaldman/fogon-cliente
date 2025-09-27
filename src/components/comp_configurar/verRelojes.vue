@@ -203,9 +203,10 @@ function cerrarRelojes() {
   margin: 2px;
 }
 .divRelojes {
-  font-size: 2em;
   padding: 8px;
+  width: 95%;
   z-index: 1000;
+  font-size: xx-large;
 }
 
 .detalleCalculo {
@@ -213,4 +214,11 @@ function cerrarRelojes() {
   padding: 5px;
   margin: 2px;
 }
+
+@media (max-width: 768px) {
+  .divRelojes {
+    font-size: inherit;
+  }
+}
+
 </style>
