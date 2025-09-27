@@ -105,10 +105,11 @@ function cerrarRelojes() {
     <div
       style="display: flex; justify-content: space-between; align-items: center"
     ></div>
-    <div >
+    <div>
       <div>
         <div style="display: flex">
-          Hora Local <RelojControl :fecha="momentoLocal"></RelojControl>Hora Sincronizada
+          Hora Local <RelojControl :fecha="momentoLocal"></RelojControl>Hora
+          Sincronizada
           <RelojControl :fecha="momentoSincro"></RelojControl>
         </div>
       </div>
@@ -120,11 +121,11 @@ function cerrarRelojes() {
             {{ (delayReloj % 1000).toFixed(0) }}ms +/-
             {{ ErrorReloj.toFixed(2) }}ms
             <div>
-            <button @click="sincronizar">🔄</button>
-          </div>
-          <div>
-            <button @click="calcularDetalle">🔍</button>
-          </div>
+              <button @click="sincronizar">🔄</button>
+            </div>
+            <div>
+              <button @click="calcularDetalle">🔍</button>
+            </div>
           </div>
 
           <div v-if="SincronizadoRTC">
@@ -205,7 +206,6 @@ function cerrarRelojes() {
   font-size: 2em;
   padding: 8px;
   z-index: 1000;
-  
 }
 
 .detalleCalculo {

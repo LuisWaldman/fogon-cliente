@@ -4,6 +4,7 @@ import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import type { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
+import { useAppStore } from '../../stores/appStore'
 const octavasCirculo = ref(7)
 const DesdeOctavasCirculo = ref(4)
 
@@ -122,6 +123,7 @@ function iniciar() {
     })
     .catch((error) => {
       console.error('Error loading samples:', error)
+      useAppStore().errores.push(new Error(`Error loading samples: ${error}`))
     })
   console.log('Iniciar')
 }

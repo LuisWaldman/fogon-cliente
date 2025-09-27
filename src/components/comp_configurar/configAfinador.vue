@@ -120,6 +120,9 @@ micHelper
   })
   .catch((error) => {
     console.error('Error al obtener el estado del micrófono:', error)
+    useAppStore().errores.push(
+      new Error(`Error al obtener el estado del micrófono: ${error}`),
+    )
     refMicEstado.value = 'Error'
   })
 const escuchando = ref(false)
@@ -137,6 +140,9 @@ function Solicitar() {
     })
     .catch((error) => {
       console.error('Error al solicitar permiso del micrófono:', error)
+      useAppStore().errores.push(
+        new Error(`Error al solicitar permiso del micrófono: ${error}`),
+      )
       refMicEstado.value = 'Error'
     })
 }
@@ -154,6 +160,7 @@ import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import { HelperSonidos } from '../../modelo/sonido/helperSonido'
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
+import { useAppStore } from '../../stores/appStore'
 
 onMounted(() => {
   Solicitar()

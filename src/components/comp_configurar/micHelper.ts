@@ -192,6 +192,7 @@ export class MicHelper {
       return stream
     } catch (error) {
       console.error('Error al solicitar acceso al micrófono:', error)
+      useAppStore().errores.push(new Error(`Error al solicitar acceso al micrófono: ${error}`))
       return null
     }
   }
