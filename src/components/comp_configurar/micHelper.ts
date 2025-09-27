@@ -1,4 +1,5 @@
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
+import { useAppStore } from '../../stores/appStore'
 
 export class MicHelper {
   private permissionState: PermissionState | null = null
@@ -192,7 +193,9 @@ export class MicHelper {
       return stream
     } catch (error) {
       console.error('Error al solicitar acceso al micrófono:', error)
-      useAppStore().errores.push(new Error(`Error al solicitar acceso al micrófono: ${error}`))
+      useAppStore().errores.push(
+        new Error(`Error al solicitar acceso al micrófono: ${error}`),
+      )
       return null
     }
   }
