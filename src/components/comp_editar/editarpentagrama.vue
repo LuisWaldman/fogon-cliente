@@ -89,8 +89,11 @@ const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
   refDesdeOctava.value,
   notasBateria.value,
 )
+const pentagrama = Pentagrama.GetPentagramaDefault(1)
+pentagrama.compases[0] = pentaObtenido
+
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
-  helpPenta.creaCompasPentagrama(pentaObtenido, 0, props.cancion.escala)
+  helpPenta.creaCompasPentagrama(pentagrama, 0, props.cancion.escala)
 const CtrlrenglonPentagrama = ref()
 function ActualizarRitmo() {
   return
@@ -100,8 +103,11 @@ function ActualizarRitmo() {
     refDesdeOctava.value,
     notasBateria.value,
   )
+  
+const pentagrama = Pentagrama.GetPentagramaDefault(1)
+pentagrama.compases[0] = pentaObtenido
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(pentaObtenido, 0, props.cancion.escala)
+    helpPenta.creaCompasPentagrama(pentagrama, 0, props.cancion.escala)
   CtrlrenglonPentagrama.value.Dibujar()
 }
 

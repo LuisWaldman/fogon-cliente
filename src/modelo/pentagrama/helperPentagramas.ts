@@ -91,12 +91,13 @@ export class HelperPentagramas {
   }
 
   public creaCompasPentagrama(
-    pentagramaCompas: PentagramaCompas,
+    pentagrama: Pentagrama,
     nroCompas: number,
     escala: string,
   ): DisplayCompasPentagrama {
     // Remove any numbers from the escala
     const escalaLimpia = escala.replace(/\d+/g, '').replace('maj', '')
+    const pentagramaCompas = pentagrama.compases[nroCompas] as PentagramaCompas
 
     const mapa = HelperPentagramas.mapaDuraciones[escalaLimpia]
     const compas = new DisplayCompasPentagrama(nroCompas)
@@ -125,6 +126,15 @@ export class HelperPentagramas {
         }
         nuevoAcorde.Notas.push(notaDisplay)
       }
+      compas.acordes.push(nuevoAcorde)
+    }
+    if (pentagramaCompas.notas.length === 0) {
+      const nuevoAcorde = new DisplayAcordesPentagrama()
+      nuevoAcorde.duracion = '1r'
+
+      nuevoAcorde.Notas.push(
+        new DisplayNotaPentagrama('C', pentagrama.clave === 'bass' ? 3 : 5),
+      )
       compas.acordes.push(nuevoAcorde)
     }
     return compas

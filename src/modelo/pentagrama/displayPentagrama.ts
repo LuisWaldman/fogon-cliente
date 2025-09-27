@@ -24,11 +24,7 @@ export class DisplayPentagrama {
     //renglon.pentagramas.push(nInstru)
 
     for (let i = 0; i < pentagrama.compases.length; i++) {
-      const compPenta = helper.creaCompasPentagrama(
-        pentagrama.compases[i],
-        i,
-        escala,
-      )
+      const compPenta = helper.creaCompasPentagrama(pentagrama, i, escala)
       nInstru.compases.push(compPenta)
 
       if ((i + 1) % 4 === 0) {

@@ -10,16 +10,16 @@ export class XMLHelper {
   public XMLToPentagramas(xml: string): Pentagrama[] {
     const ret: Pentagrama[] = []
     const score = this.XMLTToScore(xml)
-    let pentagramaid = 1
     for (const p of score.parts) {
+      let pentagramaid = 1
       for (const c of p.claves) {
         const pentagrama = new Pentagrama()
         pentagrama.instrumento = p.instrumento || 'Piano'
-        console.log('Parte:', p)
         pentagrama.nombre = p.nombre || pentagrama.instrumento || 'noname'
         pentagrama.clave = c === 'F' ? 'bass' : 'treble'
         for (const m of p.measures) {
-          pentagrama.compases.push(m.GetPentagramaCompas(pentagramaid))
+          const compas = m.GetPentagramaCompas(pentagramaid)
+          pentagrama.compases.push(compas)
         }
         ret.push(pentagrama)
         pentagramaid++
