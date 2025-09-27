@@ -44,6 +44,8 @@ function DescargarJSON() {
   URL.revokeObjectURL(url)
 }
 function guardarCambios() {
+  props.cancion.cancion = nombrecancion.value
+  props.cancion.banda = nombrebanda.value
   props.cancion.archivo = nombrearchivo.value
   CancionManager.getInstance()
     .Save(
