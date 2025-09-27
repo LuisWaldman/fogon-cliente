@@ -133,6 +133,7 @@ function DejarEscuchar() {
 // Solicitar acceso al micrófono
 function Solicitar() {
   escuchando.value = true
+  micHelper.detectar = true
   micHelper
     .requestMicAccess()
     .then(() => {
@@ -168,6 +169,7 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
+  micHelper.detectar = false
   DejarEscuchar()
 })
 

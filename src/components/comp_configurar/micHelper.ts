@@ -145,10 +145,10 @@ export class MicHelper {
     const T0 = maxpos
     return sampleRate / T0
   }
-
+  public detectar = false
   detectFrequency() {
     if (!this.analyserNode) return
-    console.log('Detectando frecuencia...')
+    if (!this.detectar) return
     if (!this.buffer) return
     this.analyserNode.getFloatTimeDomainData(this.buffer)
     if (!this.audioContext) return
