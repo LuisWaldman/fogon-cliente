@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
-import subirmidi from './subirmidi.vue'
 import subirxml from './subirxml.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
@@ -16,11 +15,37 @@ import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentag
 import { PatronRitmico } from '../../modelo/pentagrama/PatronRitmico'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
+import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 
 const props = defineProps<{
   cancion: Cancion
   compas: number
 }>()
+
+const modos = ref<DisplayModoPentagrama[]>([])
+const helper = new HelperPentagramas()
+
+cargarModos()
+function cargarModos() {
+  const instrumentosenLocalstorage =
+    localStorage.getItem('instrumentosPentagrama') || ''
+  modos.value = helper.GetModos(props.cancion)
+  if (instrumentosenLocalstorage != '' && modos.value.length > 0) {
+    let encontradoTotal = false
+    modos.value.forEach((modo) => {
+      const encontrado = instrumentosenLocalstorage
+        .split(',')
+        .find((inst) => inst == modo.Nombre)
+      modo.Ver = encontrado ? true : false
+      if (encontrado) {
+        encontradoTotal = true
+      }
+    })
+    if (!encontradoTotal && modos.value.length > 0) {
+      modos.value[0].Ver = true
+    }
+  }
+}
 const helperEdit = new HelperEditPentagrama()
 
 const refEditandoCompas = ref(0)
@@ -134,10 +159,10 @@ function ActualizorInstrumento() {
 }
 </script>
 <template>
+  {{ modos }}
   <div>
     <span @click="clickCancelarEdit">[Ok]</span>
     <subirxml :cancion="cancion"></subirxml>
-    <subirmidi :cancion="cancion"></subirmidi>
   </div>
   <div>
     Pentagramas

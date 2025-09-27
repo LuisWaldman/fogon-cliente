@@ -44,9 +44,9 @@ export class HelperPentagramas {
     if (pentagramas.length === 0) {
       return display
     }
-    const instOk = modos.filter((m) => m.Ver).map((m) => m.Instrumento)
+    const instOk = modos.filter((m) => m.Ver).map((m) => m.Nombre)
     for (let conPenta = 0; conPenta < cancion.pentagramas.length; conPenta++) {
-      if (instOk.includes(cancion.pentagramas[conPenta].instrumento)) {
+      if (instOk.includes(cancion.pentagramas[conPenta].nombre)) {
         display.AgregarPartitura(cancion.pentagramas[conPenta], cancion.escala)
       }
     }

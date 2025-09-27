@@ -41,7 +41,6 @@ export class Measure {
             } else if (n.tie === 'start') {
               // Si es start, agregar una nueva ligadura
               ligaduras.push(new PentagramaLigadura(notas.length))
-              console.log('nueva ligadura', ligaduras[ligaduras.length - 1])
             }
           }
           if (n.isChord) {

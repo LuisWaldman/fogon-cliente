@@ -53,7 +53,6 @@ export class DisplayInstrumentoPentagrama {
         }
 
         if (compas.ligaduras && compas.ligaduras.length > 0) {
-          console.log('ligaduras', compas.ligaduras)
           for (const ligaduraData of compas.ligaduras) {
             const startNote = staveNotes[ligaduraData.desdeNota]
             const endNote = staveNotes[ligaduraData.hastaNota]

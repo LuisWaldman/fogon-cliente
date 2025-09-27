@@ -30,7 +30,6 @@ function Actualizar() {
 }
 cargarModos()
 function cargarModos() {
-  modos.value = helper.GetModos(props.cancion)
   const instrumentosenLocalstorage =
     localStorage.getItem('instrumentosPentagrama') || ''
   modos.value = helper.GetModos(props.cancion)
@@ -39,7 +38,7 @@ function cargarModos() {
     modos.value.forEach((modo) => {
       const encontrado = instrumentosenLocalstorage
         .split(',')
-        .find((inst) => inst == modo.Instrumento)
+        .find((inst) => inst == modo.Nombre)
       modo.Ver = encontrado ? true : false
       if (encontrado) {
         encontradoTotal = true
@@ -61,7 +60,7 @@ function verInstrumento(modo: DisplayModoPentagrama) {
   modo.Ver = !modo.Ver
   const instrumentosSeleccionados = modos.value
     .filter((m) => m.Ver)
-    .map((m) => m.Instrumento)
+    .map((m) => m.Nombre)
   localStorage.setItem(
     'instrumentosPentagrama',
     instrumentosSeleccionados.join(','),
@@ -90,7 +89,7 @@ defineExpose({ Actualizar })
           @click="verInstrumento(modo)"
         >
           <i class="bi bi-check-circle" v-if="modo.Ver"></i>
-          {{ modo.Instrumento }}
+          {{ modo.Nombre }}
         </li>
       </ul>
     </div>

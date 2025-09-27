@@ -1,8 +1,8 @@
 export class DisplayModoPentagrama {
   public Ver: boolean
-  public Instrumento: string
-  public constructor(Instrumento: string, Ver: boolean) {
+  public Nombre: string
+  public constructor(Nombre: string, Ver: boolean) {
     this.Ver = Ver
-    this.Instrumento = Instrumento
+    this.Nombre = Nombre
   }
 }

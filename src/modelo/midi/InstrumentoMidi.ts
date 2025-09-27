@@ -25,6 +25,7 @@ export class InstrumentoMidi {
 
   public static GetInstrumentos(): InstrumentoMidi[] {
     return [
+      new InstrumentoMidi('Piano', 'piano.json', 'Teclados'),
       new InstrumentoMidi('Accordion', 'accordion.json', 'Vientos'),
       new InstrumentoMidi('Bateria', 'bateria.json', 'Percusion'),
       new InstrumentoMidi('Acoustic Bass', 'acoustic_bass.json', 'Cuerdas'),
