@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useAppStore } from '../../stores/appStore'
 import RelojControl from './VReloj.vue'
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 import type { DelaySet } from '../../modelo/sincro/DelaySet'
@@ -59,6 +59,13 @@ function actualizarMomento() {
   reloj.iniciar()
 }
 
+onMounted(() => {
+  actualizarMomento()
+})
+
+onUnmounted(() => {
+  dejarActualizarMomento()
+})
 function dejarActualizarMomento() {
   actualizandoMomento.value = false
   reloj.pausar()
@@ -98,34 +105,26 @@ function cerrarRelojes() {
     <div
       style="display: flex; justify-content: space-between; align-items: center"
     ></div>
-    <div style="display: flex">
+    <div >
       <div>
         <div style="display: flex">
-          Local <RelojControl :fecha="momentoLocal"></RelojControl> Sincro
+          Hora Local <RelojControl :fecha="momentoLocal"></RelojControl>Hora Sincronizada
           <RelojControl :fecha="momentoSincro"></RelojControl>
         </div>
       </div>
 
       <div>
-        <div style="display: flex">
-          <div>
-            <button v-if="!actualizandoMomento" @click="actualizarMomento">
-              ⌛
-            </button>
-            <button v-else @click="dejarActualizarMomento">⏸️</button>
-          </div>
-          <div>
+        <div>
+          <div style="display: flex; align-items: center">
+            Diferencia con servidor: {{ Math.floor(delayReloj / 1000) }}s
+            {{ (delayReloj % 1000).toFixed(0) }}ms +/-
+            {{ ErrorReloj.toFixed(2) }}ms
+            <div>
             <button @click="sincronizar">🔄</button>
           </div>
           <div>
             <button @click="calcularDetalle">🔍</button>
           </div>
-        </div>
-        <div>
-          <div>
-            Diferencia con servidor: {{ Math.floor(delayReloj / 1000) }}s
-            {{ (delayReloj % 1000).toFixed(0) }}ms +/-
-            {{ ErrorReloj.toFixed(2) }}ms
           </div>
 
           <div v-if="SincronizadoRTC">
@@ -141,7 +140,7 @@ function cerrarRelojes() {
         </div>
       </div>
     </div>
-    <div v-if="verDetalle">
+    <div v-if="verDetalle" class="detalleCalculo">
       <div v-for="(detalleCalculoItem, item) in detalleCalculo" :key="item">
         <div :class="{ highlight: detalleCalculoItem.Seleccionada }">
           Delay en Sincro: {{ detalleCalculoItem.Delay }} RTT:
@@ -205,9 +204,13 @@ function cerrarRelojes() {
 .divRelojes {
   font-size: 2em;
   padding: 8px;
-  border-radius: 10px;
   z-index: 1000;
-  backdrop-filter: blur(2px);
-  border: 3px solid #8b4513;
+  
+}
+
+.detalleCalculo {
+  border: 1px solid;
+  padding: 5px;
+  margin: 2px;
 }
 </style>
