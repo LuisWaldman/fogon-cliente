@@ -189,7 +189,7 @@ export class MicHelper {
       this.analyserNode.fftSize = 2048
 
       this.sourceNode.connect(this.analyserNode)
-
+      this.mediaStream = stream
       return stream
     } catch (error) {
       console.error('Error al solicitar acceso al micrófono:', error)
