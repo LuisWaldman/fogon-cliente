@@ -6,7 +6,7 @@ import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { DisplayPentagrama } from '../../modelo/pentagrama/displayPentagrama'
 import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 
-const emit = defineEmits(['clickCompas'])
+const emit = defineEmits(['clickCompas', 'clickCambioModo'])
 const props = defineProps<{
   compas: number
   cancion: Cancion
@@ -14,9 +14,6 @@ const props = defineProps<{
 }>()
 
 const display = ref<DisplayPentagrama>(new DisplayPentagrama())
-/*
-GetModos
-*/
 const modos = ref<DisplayModoPentagrama[]>([])
 
 const helper = new HelperPentagramas()
@@ -70,7 +67,7 @@ watch(
   },
 )
 
-function verInstrumento(modo: DisplayModoPentagrama) {
+function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   if (props.editando) {
 
   localStorage.setItem(
@@ -78,6 +75,7 @@ function verInstrumento(modo: DisplayModoPentagrama) {
     modo.Nombre,
   )
     Actualizar()
+    emit('clickCambioModo', index)
     return
   }
   modo.Ver = !modo.Ver
@@ -109,7 +107,7 @@ defineExpose({ Actualizar })
         <li
           v-for="(modo, index) in modos"
           :key="index"
-          @click="verInstrumento(modo)"
+          @click="verInstrumento(modo, index)"
         >
           <i class="bi bi-check-circle" v-if="modo.Ver"></i>
           {{ modo.Nombre }}

@@ -172,14 +172,41 @@ function clickVerPatron() {
 }
 </script>
 <template>
+  <h5>Compas</h5>
+  
+  <renglonpentagrama
+    ref="CtrlrenglonPentagrama"
+    :compas="-1"
+    :cancion="cancion"
+    :renglon="refDisplayPentagrama"
+  />
+  
   <div>
-    <input
-      style="width: 30px"
-      type="number"
-      @change="CambioOctava"
-      min="1"
-      max="8"
-    />
+    <span @click="clickAgregarNota">[Agregar Nota]</span>
+    <span @click="clickVerPatron">[PATRON]</span>
+    <editarPatron
+      v-if="viendoPatron"
+      :cancion="cancion"
+      :pentagramaId="pentagramaId"
+      :compas="compas"
+      :editorDisplay="editorDisplay"
+      @actualizoPentagrama="ImpactarCambiosEditor()"
+    ></editarPatron>
+    <div v-if="agregandonota">
+      <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
+      <select v-if="refEsBatera" v-model="nuevaNota">
+        <option
+          v-for="(nota, index) in instroBateria"
+          :key="index"
+          :value="notasBateria[index]"
+        >
+          {{ nota }}
+        </option>
+      </select>
+
+      <span @click="clickOkAgregarNota">[Ok]</span>
+      <span @click="clickCancelarAgregarNota">[Cancelar]</span>
+    </div>
   </div>
   <div>
     <table class="tablaRitmos">
@@ -245,40 +272,7 @@ function clickVerPatron() {
       </tbody>
     </table>
   </div>
-  <div>
-    <span @click="clickAgregarNota">[Agregar Nota]</span>
-    <span @click="clickVerPatron">[PATRON]</span>
-    <editarPatron
-      v-if="viendoPatron"
-      :cancion="cancion"
-      :pentagramaId="pentagramaId"
-      :compas="compas"
-      :editorDisplay="editorDisplay"
-      @actualizoPentagrama="ImpactarCambiosEditor()"
-    ></editarPatron>
-    <div v-if="agregandonota">
-      <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
-      <select v-if="refEsBatera" v-model="nuevaNota">
-        <option
-          v-for="(nota, index) in instroBateria"
-          :key="index"
-          :value="notasBateria[index]"
-        >
-          {{ nota }}
-        </option>
-      </select>
 
-      <span @click="clickOkAgregarNota">[Ok]</span>
-      <span @click="clickCancelarAgregarNota">[Cancelar]</span>
-    </div>
-  </div>
-
-  <renglonpentagrama
-    ref="CtrlrenglonPentagrama"
-    :compas="-1"
-    :cancion="cancion"
-    :renglon="refDisplayPentagrama"
-  />
 </template>
 <style scoped>
 .divNotaEdit {

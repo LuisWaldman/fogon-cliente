@@ -87,6 +87,10 @@ watch(
     }
   },
 )
+const viendoModo = ref(0)
+function cambioModo(index: number) {
+  viendoModo.value = index
+}
 </script>
 <template>
   <cabecera
@@ -109,6 +113,7 @@ watch(
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         @clickCompas="cambiarCompas"
+        @clickCambioModo="cambioModo"
         :editando="true"
         ref="ctrlTocarPentagrama"
       ></TocarPentagrama>
@@ -138,6 +143,7 @@ watch(
         @actualizoPentagrama="Actualizar"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
+        :editandoModo="viendoModo"
         @clickCompas="cambiarCompas"
       >
         >

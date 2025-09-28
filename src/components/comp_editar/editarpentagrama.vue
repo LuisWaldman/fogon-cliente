@@ -21,6 +21,7 @@ import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoP
 const props = defineProps<{
   cancion: Cancion
   compas: number
+  editandoModo: number
 }>()
 
 const modos = ref<DisplayModoPentagrama[]>([])
@@ -176,58 +177,15 @@ function ActualizorInstrumento() {
     <subirxml :cancion="cancion"></subirxml>
   </div>
   <div>
-    <div v-for="modo in modos" :key="modo.Nombre">
-      <div>{{ modo.Nombre }}</div>
-      <div>
-        
+    <div><strong>Nombre</strong> <input v-model="modos[editandoModo].Nombre" /></div>
+    <div><strong>Instrumento</strong>
         <combo
-          :instrumento="modo.Instrumento"
-          @changeInstrumento="(nuevo) => cambioInstrumento(modo, nuevo)"
+          :instrumento="modos[editandoModo].Instrumento"
+          @changeInstrumento="(nuevo) => cambioInstrumento(modos[editandoModo], nuevo)"
         ></combo>
-        <div v-for="clave in modo.Claves" :key="clave">{{ clave }}</div>
-      </div>
-      <div>
-        <div @click="clickBorrarModo(modo)">[BORRAR]</div>
-      </div>
-    </div>
   </div>
-  <div>
-    Pentagramas
-    <select v-model="idPentagramaEditando" @change="ActualizorInstrumento">
-      <option
-        v-for="(pentagrama, index) in props.cancion.pentagramas"
-        :key="index"
-        :value="index"
-      >
-        {{ pentagrama.instrumento }} - {{ pentagrama.clave }}
-      </option>
-    </select>
-    <span @click="clickAgregarPentagrama">[Agregar]</span>
-    
-  </div>
+</div>
 
-  <div v-if="cancion.pentagramas[idPentagramaEditando]">
-    Instrumento:
-    <select
-      v-model="cancion.pentagramas[idPentagramaEditando].instrumento"
-      @change="ActualizorInstrumento"
-    >
-      <option
-        v-for="(inst, index) in refInstrumentos"
-        :key="index"
-        :value="inst.nombre"
-      >
-        {{ inst.nombre }}
-      </option>
-    </select>
-    <select
-      v-model="cancion.pentagramas[idPentagramaEditando].clave"
-      @change="cambioClave"
-    >
-      <option value="treble">Sol</option>
-      <option value="bass">Fa</option>
-    </select>
-  </div>
   <editarCompas
     v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
     :cancion="cancion"
