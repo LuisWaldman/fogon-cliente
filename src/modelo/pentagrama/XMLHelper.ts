@@ -5,7 +5,6 @@ import { Part } from './xmlpentagrama/Part'
 import { Measure } from './xmlpentagrama/Measure'
 import { Note } from './xmlpentagrama/Note'
 import { Beam } from './xmlpentagrama/beam'
-import { InstrumentoMidi } from '../midi/InstrumentoMidi'
 
 export class XMLHelper {
   public XMLToPentagramas(xml: string): Pentagrama[] {

@@ -10,6 +10,7 @@ const emit = defineEmits(['clickCompas'])
 const props = defineProps<{
   compas: number
   cancion: Cancion
+  editando: boolean
 }>()
 
 const display = ref<DisplayPentagrama>(new DisplayPentagrama())
@@ -28,7 +29,20 @@ function Actualizar() {
   const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value)
   display.value = newDisplay
 }
+
+
+
 cargarModos()
+if(props.editando) {
+  const items = localStorage.getItem('instrumentosPentagrama') || ''
+  if (items.includes(',')) {
+    console.log('Borrando instrumentos seleccionados en modo editar')
+    localStorage.setItem('instrumentosPentagrama', items.split(',')[0] || '')    
+  }
+}
+
+
+
 function cargarModos() {
   const instrumentosenLocalstorage =
     localStorage.getItem('instrumentosPentagrama') || ''
@@ -57,6 +71,15 @@ watch(
 )
 
 function verInstrumento(modo: DisplayModoPentagrama) {
+  if (props.editando) {
+
+  localStorage.setItem(
+    'instrumentosPentagrama',
+    modo.Nombre,
+  )
+    Actualizar()
+    return
+  }
   modo.Ver = !modo.Ver
   const instrumentosSeleccionados = modos.value
     .filter((m) => m.Ver)

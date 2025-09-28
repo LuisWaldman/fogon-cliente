@@ -109,6 +109,7 @@ watch(
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         @clickCompas="cambiarCompas"
+        :editando="true"
         ref="ctrlTocarPentagrama"
       ></TocarPentagrama>
 

@@ -7,6 +7,7 @@ import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistema
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
+import { Pentagrama } from '../../modelo/cancion/pentagrama'
 
 const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
@@ -60,11 +61,13 @@ function Actualizar() {
   }
 }
 function DibujarMuestra() {
+  
+  
   refDisplayPentagrama.value.pentagramas[0].clave =
     props.cancion.pentagramas[props.pentagramaId].clave
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
     helpPenta.creaCompasPentagrama(
-      refCompasEnPentagrama.value,
+      props.cancion.pentagramas[props.pentagramaId],
       0,
       props.cancion.escala,
     )
