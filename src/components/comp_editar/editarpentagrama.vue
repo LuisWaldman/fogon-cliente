@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import subirxml from './subirxml.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
-import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
+import { HelperPentagramas } from '../../modelo/pentagrama/HelperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
 import combo from '../comp_editar/comboInstrumentos.vue'
@@ -29,7 +29,6 @@ const helper = new HelperPentagramas()
 cargarModos()
 function cargarModos() {
   modos.value = helper.GetModos(props.cancion)
-  
 }
 const helperEdit = new HelperEditPentagrama()
 
@@ -88,9 +87,9 @@ function ActualizarRitmo() {
     refDesdeOctava.value,
     notasBateria.value,
   )
-  
-const pentagrama = Pentagrama.GetPentagramaDefault(1)
-pentagrama.compases[0] = pentaObtenido
+
+  const pentagrama = Pentagrama.GetPentagramaDefault(1)
+  pentagrama.compases[0] = pentaObtenido
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
     helpPenta.creaCompasPentagrama(pentagrama, 0, props.cancion.escala)
   CtrlrenglonPentagrama.value.Dibujar()
@@ -134,13 +133,23 @@ function clickGenerarPentagrama() {
   emit('actualizoPentagrama')
 }
 
-function cambioInstrumento(modo: DisplayModoPentagrama) {
-  props.cancion.pentagramas.forEach((element: Pentagrama) => {
-    if (element.nombre == modo.Nombre) {
-      element.instrumento = modo.Instrumento
+function cambioInstrumento(modo: DisplayModoPentagrama, instrumento: string) {
+  // actualiza el modo mostrado
+  modo.Instrumento = instrumento
+
+  // sincroniza los pentagramas que correspondan con ese modo
+  for (const element of props.cancion.pentagramas) {
+    if (element.nombre === modo.Nombre) {
+      element.instrumento = instrumento
     }
-    
-  });
+  }
+
+  // actualizar estados relacionados y notificar al padre
+  ActualizorInstrumento()
+  cargarModos() // opcional: si quieres regenerar la lista de modos desde la canción
+  emit('actualizoPentagrama')
+
+  console.log('Cambiado instrumento de modo', modo.Nombre, 'a', instrumento)
 }
 
 function cambioClave() {
@@ -162,7 +171,6 @@ function ActualizorInstrumento() {
 }
 </script>
 <template>
-
   <div>
     <span @click="clickCancelarEdit">[Ok]</span>
     <subirxml :cancion="cancion"></subirxml>
@@ -171,13 +179,17 @@ function ActualizorInstrumento() {
     <div v-for="modo in modos" :key="modo.Nombre">
       <div>{{ modo.Nombre }}</div>
       <div>
-        <combo :instrumento="modo.Instrumento" @changeInstrumento="cambioInstrumento(modo)"></combo>
+        
+        <combo
+          :instrumento="modo.Instrumento"
+          @changeInstrumento="(nuevo) => cambioInstrumento(modo, nuevo)"
+        ></combo>
         <div v-for="clave in modo.Claves" :key="clave">{{ clave }}</div>
       </div>
       <div>
         <div @click="clickBorrarModo(modo)">[BORRAR]</div>
       </div>
-  </div>
+    </div>
   </div>
   <div>
     Pentagramas
@@ -191,7 +203,7 @@ function ActualizorInstrumento() {
       </option>
     </select>
     <span @click="clickAgregarPentagrama">[Agregar]</span>
-    <span @click="clickBorrarPentagrama">[Borrar]</span>
+    
   </div>
 
   <div v-if="cancion.pentagramas[idPentagramaEditando]">

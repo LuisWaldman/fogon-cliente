@@ -31,7 +31,6 @@ function getImageStyle() {
 
 const router = useRouter()
 function clickFogon() {
-  
   console.log('click_Fogon', router.currentRoute.value.path)
   if (router.currentRoute.value.path === '/tocar') {
     router.push('/')

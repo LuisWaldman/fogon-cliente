@@ -49,7 +49,7 @@ export class InstrumentoMidi {
       new InstrumentoMidi('Applause', 'applause.json', 'Efectos'),
       new InstrumentoMidi('Bagpipe', 'bagpipe.json', 'Vientos'),
       new InstrumentoMidi('Banjo', 'banjo.json', 'Cuerdas'),
-      new InstrumentoMidi('Baritone Sax', 'baritone_sax.json', 'Maderas'),
+      new InstrumentoMidi('Baritone Sax', 'baritone_sax.json', 'Vientos'),
       new InstrumentoMidi('Bassoon', 'bassoon.json', 'Maderas'),
       new InstrumentoMidi('Bird Tweet', 'bird_tweet.json', 'Efectos'),
       new InstrumentoMidi('Blown Bottle', 'blown_bottle.json', 'Vientos'),

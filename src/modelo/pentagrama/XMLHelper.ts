@@ -5,6 +5,7 @@ import { Part } from './xmlpentagrama/Part'
 import { Measure } from './xmlpentagrama/Measure'
 import { Note } from './xmlpentagrama/Note'
 import { Beam } from './xmlpentagrama/beam'
+import { InstrumentoMidi } from '../midi/InstrumentoMidi'
 
 export class XMLHelper {
   public XMLToPentagramas(xml: string): Pentagrama[] {
@@ -25,6 +26,7 @@ export class XMLHelper {
         pentagramaid++
       }
     }
+    NormalizarInstrumentos(ret)
     return ret
   }
 
@@ -255,5 +257,41 @@ export class XMLHelper {
     }
 
     return score
+  }
+}
+function NormalizarInstrumentos(pentagramas: Pentagrama[]) {
+  //const Instrumentos = InstrumentoMidi.GetInstrumentos()
+  for (const p of pentagramas) {
+    if (!p.instrumento) {
+      p.instrumento = 'Piano'
+    } else {
+      if (p.instrumento.includes('Flauta')) {
+        p.instrumento = 'Flute' // corregir nombre
+      }
+      if (p.instrumento.includes('Clarinete')) {
+        p.instrumento = 'Clarinet' // corregir nombre
+      }
+      if (p.instrumento.includes('Saxos Alto')) {
+        p.instrumento = 'Alto Sax' // corregir nombre
+      }
+      if (p.instrumento.includes('Saxos Tenor')) {
+        p.instrumento = 'Tenor Sax' // corregir nombre
+      }
+      if (p.instrumento.includes('Saxos Baritono')) {
+        p.instrumento = 'Baritone Sax' // corregir nombre
+      }
+      if (p.instrumento.includes('Trompeta')) {
+        p.instrumento = 'Trumpet' // corregir nombre
+      }
+      if (p.instrumento.includes('Trompas en Fa')) {
+        p.instrumento = 'French Horn' // corregir nombre
+      }
+      if (p.instrumento.includes('Trombon')) {
+        p.instrumento = 'Trombone' // corregir nombre
+      }
+      if (p.instrumento.includes('Bombardino')) {
+        p.instrumento = 'Euphonium' // corregir nombre
+      }
+    }
   }
 }
