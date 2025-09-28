@@ -6,6 +6,7 @@ import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
+import combo from '../comp_editar/comboInstrumentos.vue'
 
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayInstrumentoPentagrama'
@@ -27,24 +28,8 @@ const helper = new HelperPentagramas()
 
 cargarModos()
 function cargarModos() {
-  const instrumentosenLocalstorage =
-    localStorage.getItem('instrumentosPentagrama') || ''
   modos.value = helper.GetModos(props.cancion)
-  if (instrumentosenLocalstorage != '' && modos.value.length > 0) {
-    let encontradoTotal = false
-    modos.value.forEach((modo) => {
-      const encontrado = instrumentosenLocalstorage
-        .split(',')
-        .find((inst) => inst == modo.Nombre)
-      modo.Ver = encontrado ? true : false
-      if (encontrado) {
-        encontradoTotal = true
-      }
-    })
-    if (!encontradoTotal && modos.value.length > 0) {
-      modos.value[0].Ver = true
-    }
-  }
+  
 }
 const helperEdit = new HelperEditPentagrama()
 
@@ -131,8 +116,11 @@ function clickAgregarPentagrama() {
   emit('actualizoPentagrama')
 }
 
-function clickBorrarPentagrama() {
-  props.cancion.pentagramas.splice(idPentagramaEditando.value, 1)
+function clickBorrarModo(modo: DisplayModoPentagrama) {
+  props.cancion.pentagramas = props.cancion.pentagramas.filter(
+    (penta) => penta.nombre != modo.Nombre,
+  )
+  cargarModos()
   emit('actualizoPentagrama')
 }
 
@@ -144,6 +132,15 @@ function clickGenerarPentagrama() {
     props.compas,
   )
   emit('actualizoPentagrama')
+}
+
+function cambioInstrumento(modo: DisplayModoPentagrama) {
+  props.cancion.pentagramas.forEach((element: Pentagrama) => {
+    if (element.nombre == modo.Nombre) {
+      element.instrumento = modo.Instrumento
+    }
+    
+  });
 }
 
 function cambioClave() {
@@ -165,10 +162,22 @@ function ActualizorInstrumento() {
 }
 </script>
 <template>
-  {{ modos }}
+
   <div>
     <span @click="clickCancelarEdit">[Ok]</span>
     <subirxml :cancion="cancion"></subirxml>
+  </div>
+  <div>
+    <div v-for="modo in modos" :key="modo.Nombre">
+      <div>{{ modo.Nombre }}</div>
+      <div>
+        <combo :instrumento="modo.Instrumento" @changeInstrumento="cambioInstrumento(modo)"></combo>
+        <div v-for="clave in modo.Claves" :key="clave">{{ clave }}</div>
+      </div>
+      <div>
+        <div @click="clickBorrarModo(modo)">[BORRAR]</div>
+      </div>
+  </div>
   </div>
   <div>
     Pentagramas
