@@ -176,7 +176,7 @@ function ActualizorInstrumento() {
     <span @click="clickCancelarEdit">[Ok]</span>
     <subirxml :cancion="cancion"></subirxml>
   </div>
-  <div>
+  <div v-if="modos.length > 0">
     <div><strong>Nombre</strong> <input v-model="modos[editandoModo].Nombre" /><span @click="clickBorrarModo(modos[editandoModo])">[BORRAR]</span></div>
     <div><strong>Instrumento</strong>
         <combo
