@@ -177,7 +177,7 @@ function ActualizorInstrumento() {
     <subirxml :cancion="cancion"></subirxml>
   </div>
   <div>
-    <div><strong>Nombre</strong> <input v-model="modos[editandoModo].Nombre" /></div>
+    <div><strong>Nombre</strong> <input v-model="modos[editandoModo].Nombre" /><span @click="clickBorrarModo(modos[editandoModo])">[BORRAR]</span></div>
     <div><strong>Instrumento</strong>
         <combo
           :instrumento="modos[editandoModo].Instrumento"
