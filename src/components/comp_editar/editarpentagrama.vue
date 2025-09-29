@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import subirxml from './subirxml.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
@@ -36,8 +36,13 @@ const helperEdit = new HelperEditPentagrama()
 const refEditandoCompas = ref(0)
 const refDesdeOctava = ref(4)
 
-const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
 
+watch(
+  () => props.editandoModo,
+  () => {
+    calcularPentagramaEditando()
+  },
+)
 const patronSeleccionado = ref(0)
 const acorde =
   props.cancion.acordes.GetTodosLosAcordes()[refEditandoCompas.value]
@@ -146,19 +151,24 @@ function cambioInstrumento(modo: DisplayModoPentagrama, instrumento: string) {
   }
 
   // actualizar estados relacionados y notificar al padre
-  ActualizorInstrumento()
+  ActualizarInstrumento()
   cargarModos() // opcional: si quieres regenerar la lista de modos desde la canción
   emit('actualizoPentagrama')
 
   console.log('Cambiado instrumento de modo', modo.Nombre, 'a', instrumento)
 }
 
-function cambioClave() {
-  refDisplayPentagrama.value.pentagramas[0].clave =
-    props.cancion.pentagramas[idPentagramaEditando.value].clave
-  ActualizarRitmo()
+const editandoClave = ref("treble")
+function calcularPentagramaEditando() {
+  let cont = 0
+  props.cancion.pentagramas.forEach((penta) => {
+    if (penta.nombre === modos.value[props.editandoModo].Nombre && (editandoClave.value === penta.clave || modos.value[props.editandoModo].Claves.length === 1)) {
+      idPentagramaEditando.value = cont
+    }
+    cont++
+  })
 }
-function ActualizorInstrumento() {
+function ActualizarInstrumento() {
   const esBateria = props.cancion.pentagramas[
     idPentagramaEditando.value
   ].instrumento
@@ -184,6 +194,14 @@ function ActualizorInstrumento() {
           @changeInstrumento="(nuevo) => cambioInstrumento(modos[editandoModo], nuevo)"
         ></combo>
   </div>
+  
+  <h5>Clave <template v-if="modos[editandoModo].Claves.length > 1">
+    <select v-model="editandoClave" @change="calcularPentagramaEditando()">
+      <option v-for="clave in modos[editandoModo].Claves" :key="clave" :value="clave">{{ clave === 'treble' ? 'Sol' : clave === 'bass' ? 'Fa' : clave }}</option>
+    </select>
+
+  </template></h5>
+  
 </div>
 
   <editarCompas

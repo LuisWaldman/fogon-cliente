@@ -172,7 +172,6 @@ function clickVerPatron() {
 }
 </script>
 <template>
-  <h5>Compas</h5>
   
   <renglonpentagrama
     ref="CtrlrenglonPentagrama"
