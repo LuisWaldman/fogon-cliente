@@ -61,8 +61,6 @@ function Actualizar() {
   }
 }
 function DibujarMuestra() {
-  
-  
   refDisplayPentagrama.value.pentagramas[0].clave =
     props.cancion.pentagramas[props.pentagramaId].clave
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
@@ -172,14 +170,13 @@ function clickVerPatron() {
 }
 </script>
 <template>
-  
   <renglonpentagrama
     ref="CtrlrenglonPentagrama"
     :compas="-1"
     :cancion="cancion"
     :renglon="refDisplayPentagrama"
   />
-  
+
   <div>
     <span @click="clickAgregarNota">[Agregar Nota]</span>
     <span @click="clickVerPatron">[PATRON]</span>
@@ -271,7 +268,6 @@ function clickVerPatron() {
       </tbody>
     </table>
   </div>
-
 </template>
 <style scoped>
 .divNotaEdit {

@@ -14,12 +14,15 @@ const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
 const selected = ref(props.instrumento)
 
 // si el padre cambia el prop, sincronizamos la ref local
-watch(() => props.instrumento, v => {
-  selected.value = v
-})
+watch(
+  () => props.instrumento,
+  (v) => {
+    selected.value = v
+  },
+)
 
 // cuando la ref local cambia emitimos al padre
-watch(selected, v => {
+watch(selected, (v) => {
   emit('changeInstrumento', v)
 })
 </script>

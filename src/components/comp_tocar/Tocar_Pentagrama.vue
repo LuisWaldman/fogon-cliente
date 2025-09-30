@@ -27,18 +27,14 @@ function Actualizar() {
   display.value = newDisplay
 }
 
-
-
 cargarModos()
-if(props.editando) {
+if (props.editando) {
   const items = localStorage.getItem('instrumentosPentagrama') || ''
   if (items.includes(',')) {
     console.log('Borrando instrumentos seleccionados en modo editar')
-    localStorage.setItem('instrumentosPentagrama', items.split(',')[0] || '')    
+    localStorage.setItem('instrumentosPentagrama', items.split(',')[0] || '')
   }
 }
-
-
 
 function cargarModos() {
   const instrumentosenLocalstorage =
@@ -69,11 +65,7 @@ watch(
 
 function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   if (props.editando) {
-
-  localStorage.setItem(
-    'instrumentosPentagrama',
-    modo.Nombre,
-  )
+    localStorage.setItem('instrumentosPentagrama', modo.Nombre)
     Actualizar()
     emit('clickCambioModo', index)
     return
