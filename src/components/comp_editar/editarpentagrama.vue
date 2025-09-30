@@ -3,7 +3,7 @@ import { ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import subirxml from './subirxml.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
-import { HelperPentagramas } from '../../modelo/pentagrama/HelperPentagramas'
+import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
 import combo from '../comp_editar/comboInstrumentos.vue'
@@ -14,7 +14,6 @@ import { DisplayCompasPentagrama } from '../../modelo/pentagrama/DisplayCompasPe
 import { DisplayAcordesPentagrama } from '../../modelo/pentagrama/DisplayAcordesPentagrama'
 import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentagrama'
 import { PatronRitmico } from '../../modelo/pentagrama/PatronRitmico'
-import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 
@@ -33,7 +32,6 @@ function cargarModos() {
 }
 const helperEdit = new HelperEditPentagrama()
 
-
 const refDesdeOctava = ref(4)
 
 watch(
@@ -50,8 +48,7 @@ watch(
   },
 )
 const patronSeleccionado = ref(0)
-const acorde =
-  props.cancion.acordes.GetTodosLosAcordes()[props.compas]
+const acorde = props.cancion.acordes.GetTodosLosAcordes()[props.compas]
 const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
   new DisplaySistemaPentagrama(),
 )
@@ -78,7 +75,6 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
 const helpPenta = new HelperPentagramas()
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
-const notas = ref(refEstiloEditandoAcorde.value.notasInstrumentos)
 const notasBateria = ref(false)
 const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
   acorde,
@@ -90,22 +86,6 @@ pentagrama.compases[0] = pentaObtenido
 
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
   helpPenta.creaCompasPentagrama(pentagrama, 0, props.cancion.escala)
-const CtrlrenglonPentagrama = ref()
-function ActualizarRitmo() {
-  return
-  const helpPenta = new HelperPentagramas()
-  const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
-    acorde,
-    refDesdeOctava.value,
-    notasBateria.value,
-  )
-
-  const pentagrama = Pentagrama.GetPentagramaDefault(1)
-  pentagrama.compases[0] = pentaObtenido
-  refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(pentagrama, 0, props.cancion.escala)
-  CtrlrenglonPentagrama.value.Dibujar()
-}
 
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
@@ -116,7 +96,6 @@ const idPentagramaEditando = ref(0)
 function clickCancelarEdit() {
   emit('cerrar')
 }
-
 
 function clickBorrarModo(modo: DisplayModoPentagrama) {
   props.cancion.pentagramas = props.cancion.pentagramas.filter(
@@ -148,9 +127,8 @@ function cambioInstrumento(modo: DisplayModoPentagrama, instrumento: string) {
   }
 
   // actualizar estados relacionados y notificar al padre
-  cargarModos() 
+  cargarModos()
   emit('actualizoPentagrama')
-
 }
 
 const editandoClave = ref('treble')
@@ -178,12 +156,12 @@ function clickCancelAddPentagrama() {
   agregandoPentagrama.value = false
 }
 function clickAddOkPentagrama() {
-
   const nPentagrama = Pentagrama.GetPentagramaDefault(
     props.cancion.totalCompases,
   )
   nPentagrama.clave =
-    nuevoPentagramaClave.value === 'Sol' || nuevoPentagramaClave.value === 'Sol y Fa'
+    nuevoPentagramaClave.value === 'Sol' ||
+    nuevoPentagramaClave.value === 'Sol y Fa'
       ? 'treble'
       : 'bass'
   nPentagrama.nombre = `Pentagrama ${pentagramaAgregado.value}`
@@ -198,11 +176,10 @@ function clickAddOkPentagrama() {
   }
   pentagramaAgregado.value++
   agregandoPentagrama.value = false
-  
+
   emit('actualizoPentagrama')
   cargarModos()
   calcularPentagramaEditando()
-
 }
 </script>
 <template>

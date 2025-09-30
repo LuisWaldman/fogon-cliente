@@ -7,7 +7,6 @@ import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistema
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import { EditCompasPentagrama } from '../../modelo/pentagrama/editPentagrama/editCompasPentagrama'
-import { Pentagrama } from '../../modelo/cancion/pentagrama'
 
 const emit = defineEmits(['actualizoPentagrama'])
 const props = defineProps<{
@@ -185,7 +184,6 @@ function clickVerPatron() {
       :editorDisplay="editorDisplay"
       @actualizoPentagrama="ImpactarCambiosEditor()"
     ></editarPatron>
-   
   </div>
   <div v-if="viendoEdicion">
     <table class="tablaRitmos">
@@ -252,7 +250,7 @@ function clickVerPatron() {
     </table>
     <span @click="clickAgregarNota">[Agregar Nota]</span>
     <span @click="clickAgregarNota">[FIN EDICION]</span>
-     <div v-if="agregandonota">
+    <div v-if="agregandonota">
       <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
       <select v-if="refEsBatera" v-model="nuevaNota">
         <option
