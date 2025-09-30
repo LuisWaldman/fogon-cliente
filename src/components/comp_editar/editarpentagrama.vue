@@ -33,7 +33,7 @@ function cargarModos() {
 }
 const helperEdit = new HelperEditPentagrama()
 
-const refEditandoCompas = ref(0)
+
 const refDesdeOctava = ref(4)
 
 watch(
@@ -42,9 +42,16 @@ watch(
     calcularPentagramaEditando()
   },
 )
+
+watch(
+  () => props.compas,
+  () => {
+    calcularPentagramaEditando()
+  },
+)
 const patronSeleccionado = ref(0)
 const acorde =
-  props.cancion.acordes.GetTodosLosAcordes()[refEditandoCompas.value]
+  props.cancion.acordes.GetTodosLosAcordes()[props.compas]
 const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
   new DisplaySistemaPentagrama(),
 )
@@ -119,7 +126,7 @@ function clickBorrarModo(modo: DisplayModoPentagrama) {
   emit('actualizoPentagrama')
 }
 
-function clickGenerarPentagrama() {
+function clickCopiarEnPentagrama() {
   console.log('Actualizando', refEstiloEditandoAcorde.value)
   helperEdit.CopiarEnPentagrama(
     props.cancion,
@@ -141,11 +148,9 @@ function cambioInstrumento(modo: DisplayModoPentagrama, instrumento: string) {
   }
 
   // actualizar estados relacionados y notificar al padre
-  ActualizarInstrumento()
-  cargarModos() // opcional: si quieres regenerar la lista de modos desde la canción
+  cargarModos() 
   emit('actualizoPentagrama')
 
-  console.log('Cambiado instrumento de modo', modo.Nombre, 'a', instrumento)
 }
 
 const editandoClave = ref('treble')
@@ -161,18 +166,6 @@ function calcularPentagramaEditando() {
     }
     cont++
   })
-}
-function ActualizarInstrumento() {
-  const esBateria = props.cancion.pentagramas[
-    idPentagramaEditando.value
-  ].instrumento
-    .toLowerCase()
-    .includes('bater')
-  if (esBateria != notasBateria.value) {
-    notasBateria.value = esBateria
-    if (esBateria) notas.value = refEstiloEditandoAcorde.value.notasBateria
-    else notas.value = refEstiloEditandoAcorde.value.notasInstrumentos
-  }
 }
 
 const agregandoPentagrama = ref(false)
@@ -205,9 +198,11 @@ function clickAddOkPentagrama() {
   }
   pentagramaAgregado.value++
   agregandoPentagrama.value = false
+  
   emit('actualizoPentagrama')
   cargarModos()
   calcularPentagramaEditando()
+
 }
 </script>
 <template>
@@ -269,7 +264,7 @@ function clickAddOkPentagrama() {
   ></editarCompas>
 
   <div>
-    <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
+    <span @click="clickCopiarEnPentagrama">[COPIAR EN PENTAGRAMA]</span>
   </div>
 </template>
 

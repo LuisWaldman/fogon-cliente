@@ -66,7 +66,7 @@ function DibujarMuestra() {
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
     helpPenta.creaCompasPentagrama(
       props.cancion.pentagramas[props.pentagramaId],
-      0,
+      props.compas,
       props.cancion.escala,
     )
   CtrlrenglonPentagrama.value.Dibujar()
@@ -105,10 +105,6 @@ function ImpactarCambiosEditor() {
 
   emit('actualizoPentagrama')
   Actualizar()
-}
-function CambioOctava() {
-  // editorDisplay.value.acorde.Calcular()
-  ImpactarCambiosEditor()
 }
 
 function clickUnirRitmo(indice: number) {
@@ -165,6 +161,7 @@ const instroBateria = [
 
 const notasBateria = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
 const viendoPatron = ref(false)
+const viendoEdicion = ref(false)
 function clickVerPatron() {
   viendoPatron.value = !viendoPatron.value
 }
@@ -178,7 +175,7 @@ function clickVerPatron() {
   />
 
   <div>
-    <span @click="clickAgregarNota">[Agregar Nota]</span>
+    <span @click="viendoEdicion = true">[EDITAR]</span>
     <span @click="clickVerPatron">[PATRON]</span>
     <editarPatron
       v-if="viendoPatron"
@@ -188,23 +185,9 @@ function clickVerPatron() {
       :editorDisplay="editorDisplay"
       @actualizoPentagrama="ImpactarCambiosEditor()"
     ></editarPatron>
-    <div v-if="agregandonota">
-      <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
-      <select v-if="refEsBatera" v-model="nuevaNota">
-        <option
-          v-for="(nota, index) in instroBateria"
-          :key="index"
-          :value="notasBateria[index]"
-        >
-          {{ nota }}
-        </option>
-      </select>
-
-      <span @click="clickOkAgregarNota">[Ok]</span>
-      <span @click="clickCancelarAgregarNota">[Cancelar]</span>
-    </div>
+   
   </div>
-  <div>
+  <div v-if="viendoEdicion">
     <table class="tablaRitmos">
       <thead>
         <tr>
@@ -267,6 +250,23 @@ function clickVerPatron() {
         </tr>
       </tbody>
     </table>
+    <span @click="clickAgregarNota">[Agregar Nota]</span>
+    <span @click="clickAgregarNota">[FIN EDICION]</span>
+     <div v-if="agregandonota">
+      <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
+      <select v-if="refEsBatera" v-model="nuevaNota">
+        <option
+          v-for="(nota, index) in instroBateria"
+          :key="index"
+          :value="notasBateria[index]"
+        >
+          {{ nota }}
+        </option>
+      </select>
+
+      <span @click="clickOkAgregarNota">[Ok]</span>
+      <span @click="clickCancelarAgregarNota">[Cancelar]</span>
+    </div>
   </div>
 </template>
 <style scoped>
