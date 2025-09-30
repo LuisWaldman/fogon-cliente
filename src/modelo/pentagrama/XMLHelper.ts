@@ -10,19 +10,22 @@ export class XMLHelper {
   public XMLToPentagramas(xml: string): Pentagrama[] {
     const ret: Pentagrama[] = []
     const score = this.XMLTToScore(xml)
-    let pentagramaid = 1
     for (const p of score.parts) {
+      let pentagramaid = 1
       for (const c of p.claves) {
         const pentagrama = new Pentagrama()
-        pentagrama.instrumento = p.id || 'Piano'
+        pentagrama.instrumento = p.instrumento || 'Piano'
+        pentagrama.nombre = p.nombre || pentagrama.instrumento || 'noname'
         pentagrama.clave = c === 'F' ? 'bass' : 'treble'
         for (const m of p.measures) {
-          pentagrama.compases.push(m.GetPentagramaCompas(pentagramaid))
+          const compas = m.GetPentagramaCompas(pentagramaid)
+          pentagrama.compases.push(compas)
         }
         ret.push(pentagrama)
         pentagramaid++
       }
     }
+    NormalizarInstrumentos(ret)
     return ret
   }
 
@@ -47,9 +50,60 @@ export class XMLHelper {
         : [scoreObj.part]
       : []
 
+    // Extraer información de part-list / score-part (id -> nombre/instrumento)
+    const partInfoMap: Record<string, string | undefined> = {}
+    const partList =
+      scoreObj['part-list'] ??
+      scoreObj['partList'] ??
+      scoreObj['partList'] ??
+      undefined
+    if (partList) {
+      const scorePartsRaw = partList['score-part']
+        ? Array.isArray(partList['score-part'])
+          ? partList['score-part']
+          : [partList['score-part']]
+        : []
+      for (const sp of scorePartsRaw) {
+        const pid = sp.id ?? sp['@id'] ?? sp['@_id'] ?? undefined
+        let pname =
+          sp['part-name'] ??
+          sp['partName'] ??
+          sp.name ??
+          sp['part-name'] ??
+          undefined
+        if (!pname && sp['score-instrument']) {
+          if (Array.isArray(sp['score-instrument'])) {
+            pname = sp['score-instrument'][0]?.['instrument-name'] ?? undefined
+          } else {
+            pname = sp['score-instrument']?.['instrument-name'] ?? undefined
+          }
+        }
+        if (pid) partInfoMap[String(pid)] = pname
+      }
+    }
+
     for (const p of partsRaw) {
       const part = new Part()
-      part.id = p.id ?? p['@id'] ?? p['@_id'] ?? undefined
+      // nombre/instrumento pueden venir desde <score-part> en part-list (vinculado por id)
+      const pid = p.id ?? p['@id'] ?? p['@_id'] ?? undefined
+      part.nombre =
+        p['part-name'] ??
+        p['partName'] ??
+        p['name'] ??
+        partInfoMap[String(pid)] ??
+        undefined
+      // Extraer instrumento: primero del propio part, si no usar part-list map
+      if (p['score-instrument'] && p['score-instrument']['instrument-name']) {
+        part.instrumento = p['score-instrument']['instrument-name']
+      } else if (
+        Array.isArray(p['score-instrument']) &&
+        p['score-instrument'][0]?.['instrument-name']
+      ) {
+        part.instrumento = p['score-instrument'][0]['instrument-name']
+      } else {
+        part.instrumento = partInfoMap[String(pid)] ?? undefined
+      }
+
       const measuresRaw = p.measure
         ? Array.isArray(p.measure)
           ? p.measure
@@ -192,7 +246,6 @@ export class XMLHelper {
               )
             })
           }
-
           measure.notes.push(note)
         }
 
@@ -203,5 +256,41 @@ export class XMLHelper {
     }
 
     return score
+  }
+}
+function NormalizarInstrumentos(pentagramas: Pentagrama[]) {
+  //const Instrumentos = InstrumentoMidi.GetInstrumentos()
+  for (const p of pentagramas) {
+    if (!p.instrumento) {
+      p.instrumento = 'Piano'
+    } else {
+      if (p.instrumento.includes('Flauta')) {
+        p.instrumento = 'Flute' // corregir nombre
+      }
+      if (p.instrumento.includes('Clarinete')) {
+        p.instrumento = 'Clarinet' // corregir nombre
+      }
+      if (p.instrumento.includes('Saxos Alto')) {
+        p.instrumento = 'Alto Sax' // corregir nombre
+      }
+      if (p.instrumento.includes('Saxos Tenor')) {
+        p.instrumento = 'Tenor Sax' // corregir nombre
+      }
+      if (p.instrumento.includes('Saxos Baritono')) {
+        p.instrumento = 'Baritone Sax' // corregir nombre
+      }
+      if (p.instrumento.includes('Trompeta')) {
+        p.instrumento = 'Trumpet' // corregir nombre
+      }
+      if (p.instrumento.includes('Trompas en Fa')) {
+        p.instrumento = 'French Horn' // corregir nombre
+      }
+      if (p.instrumento.includes('Trombon')) {
+        p.instrumento = 'Trombone' // corregir nombre
+      }
+      if (p.instrumento.includes('Bombardino')) {
+        p.instrumento = 'Euphonium' // corregir nombre
+      }
+    }
   }
 }

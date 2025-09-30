@@ -74,7 +74,7 @@ describe('XML HELPER', () => {
     const helper = new XMLHelper()
     const pentagrama = helper.XMLToPentagramas(pruebaXmlSimple)
     expect(pentagrama.length).toBe(1)
-    expect(pentagrama[0].instrumento).toBe('P1')
+    expect(pentagrama[0].instrumento).toBe('Piano')
     expect(pentagrama[0].clave).toBe('treble')
     expect(pentagrama[0].compases.length).toBe(32)
     expect(pentagrama[0].compases[0].notas.length).toBe(4)
@@ -140,6 +140,8 @@ describe('XML HELPER', () => {
     const helper = new XMLHelper()
     const pentagramas = helper.XMLToPentagramas(pruebaXmlFlaca)
     expect(pentagramas.length).toBe(2)
+    expect(pentagramas[0].instrumento).toEqual('Piano')
+    expect(pentagramas[1].instrumento).toEqual('Piano')
     expect(pentagramas[0].clave).toEqual('treble')
     expect(pentagramas[1].clave).toEqual('bass')
     const pentaSol = pentagramas[0]

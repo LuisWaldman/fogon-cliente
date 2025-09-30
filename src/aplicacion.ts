@@ -209,6 +209,7 @@ export default class Aplicacion {
     this.cliente.setSesionFailedHandler((error: string) => {
       console.error(`Error al crear sesión: ${error}`)
       const appStore = useAppStore()
+      appStore.errores.push(new Error(`Error al crear sesión: ${error}`))
       appStore.estadosApp.estadoSesion = 'error'
     })
     this.cliente.setRolSesionHandler((mensaje: string) => {
@@ -223,6 +224,7 @@ export default class Aplicacion {
     this.cliente.setLoginFailedHandler((error: string) => {
       console.error(`Error al Loguearse: ${error}`)
       const appStore = useAppStore()
+      appStore.errores.push(new Error(`Error al Loguearse: ${error}`))
       appStore.estadosApp.estadoLogin = 'error'
     })
 
@@ -245,6 +247,8 @@ export default class Aplicacion {
       })
       .catch((error: Error) => {
         console.error('Error updating profile:', error)
+        const appStore = useAppStore()
+        appStore.errores.push(new Error(`Error updating profile: ${error}`))
       })
   }
 
@@ -287,6 +291,10 @@ export default class Aplicacion {
       })
       .catch((error) => {
         console.error('Error al obtener usuarios de la sesion:', error)
+        const appStore = useAppStore()
+        appStore.errores.push(
+          new Error(`Error al obtener usuarios de la sesion: ${error}`),
+        )
       })
   }
 
@@ -319,6 +327,10 @@ export default class Aplicacion {
       })
       .catch((error) => {
         console.error('Error al obtener las sesiones del usuario:', error)
+        const appStore = useAppStore()
+        appStore.errores.push(
+          new Error(`Error al obtener las sesiones del usuario: ${error}`),
+        )
       })
   }
 
@@ -376,6 +388,10 @@ export default class Aplicacion {
   SalirSesion(): void {
     if (!this.cliente) {
       console.error('Cliente no conectado. No se puede salir de la sesión.')
+      const appStore = useAppStore()
+      appStore.errores.push(
+        new Error('Cliente no conectado. No se puede salir de la sesión.'),
+      )
       return
     }
     const appStore = useAppStore()
@@ -388,7 +404,6 @@ export default class Aplicacion {
 
   MensajeASesion(msj: string): void {
     if (!this.cliente) {
-      console.error('Cliente no conectado. No se puede Mandar mensajes.')
       return
     }
     this.cliente.MensajeASesion(msj)

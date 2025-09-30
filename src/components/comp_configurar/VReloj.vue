@@ -53,7 +53,6 @@ const progresoMinuto = computed(() => {
 .contenido-reloj {
   position: relative;
   display: flex;
-  font-size: xxx-large;
   z-index: 2;
   width: 100%;
 }

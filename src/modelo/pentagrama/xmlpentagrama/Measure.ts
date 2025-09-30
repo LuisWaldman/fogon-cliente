@@ -1,5 +1,6 @@
 import { PentagramaBeam } from '../../cancion/pentagramabeam'
 import { PentagramaCompas } from '../../cancion/pentagramacompas'
+import { PentagramaLigadura } from '../../cancion/pentagramaligadura'
 import { PentagramaNotas } from '../../cancion/pentagramanotas'
 import { Note } from './Note'
 
@@ -7,6 +8,7 @@ export class Measure {
   GetPentagramaCompas(staff: number): PentagramaCompas {
     const notas: PentagramaNotas[][] = []
     const beams: PentagramaBeam[] = []
+    const ligaduras: PentagramaLigadura[] = []
     for (const n of this.notes) {
       if (n.staff === staff || (staff === 1 && n.staff === undefined)) {
         if (n.isRest) {
@@ -28,6 +30,19 @@ export class Measure {
               }
             }
           })
+          if (n.tie) {
+            if (n.tie === 'stop' && ligaduras.length > 0) {
+              const existingLigadura = ligaduras.find(
+                (lig) => lig.hastaNota === -1,
+              )
+              if (existingLigadura) {
+                existingLigadura.hastaNota = notas.length
+              }
+            } else if (n.tie === 'start') {
+              // Si es start, agregar una nueva ligadura
+              ligaduras.push(new PentagramaLigadura(notas.length))
+            }
+          }
           if (n.isChord) {
             notas[notas.length - 1].push(nuevaNota)
           } else {
@@ -38,6 +53,7 @@ export class Measure {
     }
     const toReturn: PentagramaCompas = new PentagramaCompas(notas)
     toReturn.beams = beams
+    toReturn.ligaduras = ligaduras
     return toReturn
   }
   number?: number

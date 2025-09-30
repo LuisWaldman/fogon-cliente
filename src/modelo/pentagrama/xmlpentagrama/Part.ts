@@ -1,8 +1,8 @@
 import { Measure } from './Measure'
 
 export class Part {
-  id?: string
-  name?: string
+  nombre?: string
+  instrumento?: string
   measures: Measure[] = []
   claves: string[] = []
 

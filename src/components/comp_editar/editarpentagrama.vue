@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
-import subirmidi from './subirmidi.vue'
 import subirxml from './subirxml.vue'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
+import combo from '../comp_editar/comboInstrumentos.vue'
 
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayInstrumentoPentagrama'
@@ -14,23 +14,41 @@ import { DisplayCompasPentagrama } from '../../modelo/pentagrama/DisplayCompasPe
 import { DisplayAcordesPentagrama } from '../../modelo/pentagrama/DisplayAcordesPentagrama'
 import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentagrama'
 import { PatronRitmico } from '../../modelo/pentagrama/PatronRitmico'
-import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
+import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 
 const props = defineProps<{
   cancion: Cancion
   compas: number
+  editandoModo: number
 }>()
+
+const modos = ref<DisplayModoPentagrama[]>([])
+const helper = new HelperPentagramas()
+
+cargarModos()
+function cargarModos() {
+  modos.value = helper.GetModos(props.cancion)
+}
 const helperEdit = new HelperEditPentagrama()
 
-const refEditandoCompas = ref(0)
 const refDesdeOctava = ref(4)
 
-const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
+watch(
+  () => props.editandoModo,
+  () => {
+    calcularPentagramaEditando()
+  },
+)
 
+watch(
+  () => props.compas,
+  () => {
+    calcularPentagramaEditando()
+  },
+)
 const patronSeleccionado = ref(0)
-const acorde =
-  props.cancion.acordes.GetTodosLosAcordes()[refEditandoCompas.value]
+const acorde = props.cancion.acordes.GetTodosLosAcordes()[props.compas]
 const refDisplayPentagrama = ref<DisplaySistemaPentagrama>(
   new DisplaySistemaPentagrama(),
 )
@@ -57,28 +75,17 @@ refDisplayPentagrama.value.pentagramas[0].compases.push(
 const helpPenta = new HelperPentagramas()
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
-const notas = ref(refEstiloEditandoAcorde.value.notasInstrumentos)
 const notasBateria = ref(false)
 const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
   acorde,
   refDesdeOctava.value,
   notasBateria.value,
 )
+const pentagrama = Pentagrama.GetPentagramaDefault(1)
+pentagrama.compases[0] = pentaObtenido
+
 refDisplayPentagrama.value.pentagramas[0].compases[0] =
-  helpPenta.creaCompasPentagrama(pentaObtenido, 0, props.cancion.escala)
-const CtrlrenglonPentagrama = ref()
-function ActualizarRitmo() {
-  return
-  const helpPenta = new HelperPentagramas()
-  const pentaObtenido = refEstiloEditandoAcorde.value.GetCompas(
-    acorde,
-    refDesdeOctava.value,
-    notasBateria.value,
-  )
-  refDisplayPentagrama.value.pentagramas[0].compases[0] =
-    helpPenta.creaCompasPentagrama(pentaObtenido, 0, props.cancion.escala)
-  CtrlrenglonPentagrama.value.Dibujar()
-}
+  helpPenta.creaCompasPentagrama(pentagrama, 0, props.cancion.escala)
 
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
@@ -90,22 +97,15 @@ function clickCancelarEdit() {
   emit('cerrar')
 }
 
-function clickAgregarPentagrama() {
-  const nPentagrama = Pentagrama.GetPentagramaDefault(
-    props.cancion.totalCompases,
+function clickBorrarModo(modo: DisplayModoPentagrama) {
+  props.cancion.pentagramas = props.cancion.pentagramas.filter(
+    (penta) => penta.nombre != modo.Nombre,
   )
-
-  props.cancion.pentagramas.push(nPentagrama)
-
+  cargarModos()
   emit('actualizoPentagrama')
 }
 
-function clickBorrarPentagrama() {
-  props.cancion.pentagramas.splice(idPentagramaEditando.value, 1)
-  emit('actualizoPentagrama')
-}
-
-function clickGenerarPentagrama() {
+function clickCopiarEnPentagrama() {
   console.log('Actualizando', refEstiloEditandoAcorde.value)
   helperEdit.CopiarEnPentagrama(
     props.cancion,
@@ -115,67 +115,123 @@ function clickGenerarPentagrama() {
   emit('actualizoPentagrama')
 }
 
-function cambioClave() {
-  refDisplayPentagrama.value.pentagramas[0].clave =
-    props.cancion.pentagramas[idPentagramaEditando.value].clave
-  ActualizarRitmo()
-}
-function ActualizorInstrumento() {
-  const esBateria = props.cancion.pentagramas[
-    idPentagramaEditando.value
-  ].instrumento
-    .toLowerCase()
-    .includes('bater')
-  if (esBateria != notasBateria.value) {
-    notasBateria.value = esBateria
-    if (esBateria) notas.value = refEstiloEditandoAcorde.value.notasBateria
-    else notas.value = refEstiloEditandoAcorde.value.notasInstrumentos
+function cambioInstrumento(modo: DisplayModoPentagrama, instrumento: string) {
+  // actualiza el modo mostrado
+  modo.Instrumento = instrumento
+
+  // sincroniza los pentagramas que correspondan con ese modo
+  for (const element of props.cancion.pentagramas) {
+    if (element.nombre === modo.Nombre) {
+      element.instrumento = instrumento
+    }
   }
+
+  // actualizar estados relacionados y notificar al padre
+  cargarModos()
+  emit('actualizoPentagrama')
+}
+
+const editandoClave = ref('treble')
+function calcularPentagramaEditando() {
+  let cont = 0
+  props.cancion.pentagramas.forEach((penta) => {
+    if (
+      penta.nombre === modos.value[props.editandoModo].Nombre &&
+      (editandoClave.value === penta.clave ||
+        modos.value[props.editandoModo].Claves.length === 1)
+    ) {
+      idPentagramaEditando.value = cont
+    }
+    cont++
+  })
+}
+
+const agregandoPentagrama = ref(false)
+const pentagramaAgregado = ref(1)
+const nuevoPentagramaClave = ref('Sol')
+function clickAddPentagrama() {
+  agregandoPentagrama.value = !agregandoPentagrama.value
+}
+function clickCancelAddPentagrama() {
+  agregandoPentagrama.value = false
+}
+function clickAddOkPentagrama() {
+  const nPentagrama = Pentagrama.GetPentagramaDefault(
+    props.cancion.totalCompases,
+  )
+  nPentagrama.clave =
+    nuevoPentagramaClave.value === 'Sol' ||
+    nuevoPentagramaClave.value === 'Sol y Fa'
+      ? 'treble'
+      : 'bass'
+  nPentagrama.nombre = `Pentagrama ${pentagramaAgregado.value}`
+  props.cancion.pentagramas.push(nPentagrama)
+  if (nuevoPentagramaClave.value === 'Sol y Fa') {
+    const nPentagrama2 = Pentagrama.GetPentagramaDefault(
+      props.cancion.totalCompases,
+    )
+    nPentagrama2.clave = 'bass'
+    nPentagrama2.nombre = `Pentagrama ${pentagramaAgregado.value}`
+    props.cancion.pentagramas.push(nPentagrama2)
+  }
+  pentagramaAgregado.value++
+  agregandoPentagrama.value = false
+
+  emit('actualizoPentagrama')
+  cargarModos()
+  calcularPentagramaEditando()
 }
 </script>
 <template>
   <div>
     <span @click="clickCancelarEdit">[Ok]</span>
     <subirxml :cancion="cancion"></subirxml>
-    <subirmidi :cancion="cancion"></subirmidi>
+    <span @click="clickAddPentagrama">[Agregar Pentagrama]</span>
+    <div v-if="agregandoPentagrama">
+      Clave nuevo pentagrama<select v-model="nuevoPentagramaClave">
+        <option value="Sol">Sol</option>
+        <option value="Fa">Fa</option>
+        <option value="Sol y Fa">Sol y Fa</option>
+        <option value="Bateria">Bateria</option>
+      </select>
+      <span @click="clickAddOkPentagrama">[Si]</span>
+      <span @click="clickCancelAddPentagrama">[No]</span>
+    </div>
   </div>
-  <div>
-    Pentagramas
-    <select v-model="idPentagramaEditando" @change="ActualizorInstrumento">
-      <option
-        v-for="(pentagrama, index) in props.cancion.pentagramas"
-        :key="index"
-        :value="index"
+  <div v-if="modos.length > 0">
+    <div>
+      <strong>Nombre</strong>
+      <input v-model="modos[editandoModo].Nombre" /><span
+        @click="clickBorrarModo(modos[editandoModo])"
+        >[BORRAR]</span
       >
-        {{ pentagrama.instrumento }} - {{ pentagrama.clave }}
-      </option>
-    </select>
-    <span @click="clickAgregarPentagrama">[Agregar]</span>
-    <span @click="clickBorrarPentagrama">[Borrar]</span>
+    </div>
+    <div>
+      <strong>Instrumento</strong>
+      <combo
+        :instrumento="modos[editandoModo].Instrumento"
+        @changeInstrumento="
+          (nuevo) => cambioInstrumento(modos[editandoModo], nuevo)
+        "
+      ></combo>
+    </div>
+
+    <h5>
+      Clave
+      <template v-if="modos[editandoModo].Claves.length > 1">
+        <select v-model="editandoClave" @change="calcularPentagramaEditando()">
+          <option
+            v-for="clave in modos[editandoModo].Claves"
+            :key="clave"
+            :value="clave"
+          >
+            {{ clave === 'treble' ? 'Sol' : clave === 'bass' ? 'Fa' : clave }}
+          </option>
+        </select>
+      </template>
+    </h5>
   </div>
 
-  <div v-if="cancion.pentagramas[idPentagramaEditando]">
-    Instrumento:
-    <select
-      v-model="cancion.pentagramas[idPentagramaEditando].instrumento"
-      @change="ActualizorInstrumento"
-    >
-      <option
-        v-for="(inst, index) in refInstrumentos"
-        :key="index"
-        :value="inst.nombre"
-      >
-        {{ inst.nombre }}
-      </option>
-    </select>
-    <select
-      v-model="cancion.pentagramas[idPentagramaEditando].clave"
-      @change="cambioClave"
-    >
-      <option value="treble">Sol</option>
-      <option value="bass">Fa</option>
-    </select>
-  </div>
   <editarCompas
     v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
     :cancion="cancion"
@@ -185,7 +241,7 @@ function ActualizorInstrumento() {
   ></editarCompas>
 
   <div>
-    <span @click="clickGenerarPentagrama">[Generar Pentagrama]</span>
+    <span @click="clickCopiarEnPentagrama">[COPIAR EN PENTAGRAMA]</span>
   </div>
 </template>
 

@@ -6,16 +6,14 @@ import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { DisplayPentagrama } from '../../modelo/pentagrama/displayPentagrama'
 import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 
-const emit = defineEmits(['clickCompas'])
+const emit = defineEmits(['clickCompas', 'clickCambioModo'])
 const props = defineProps<{
   compas: number
   cancion: Cancion
+  editando: boolean
 }>()
 
 const display = ref<DisplayPentagrama>(new DisplayPentagrama())
-/*
-GetModos
-*/
 const modos = ref<DisplayModoPentagrama[]>([])
 
 const helper = new HelperPentagramas()
@@ -28,9 +26,17 @@ function Actualizar() {
   const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value)
   display.value = newDisplay
 }
+
 cargarModos()
+if (props.editando) {
+  const items = localStorage.getItem('instrumentosPentagrama') || ''
+  if (items.includes(',')) {
+    console.log('Borrando instrumentos seleccionados en modo editar')
+    localStorage.setItem('instrumentosPentagrama', items.split(',')[0] || '')
+  }
+}
+
 function cargarModos() {
-  modos.value = helper.GetModos(props.cancion)
   const instrumentosenLocalstorage =
     localStorage.getItem('instrumentosPentagrama') || ''
   modos.value = helper.GetModos(props.cancion)
@@ -39,7 +45,7 @@ function cargarModos() {
     modos.value.forEach((modo) => {
       const encontrado = instrumentosenLocalstorage
         .split(',')
-        .find((inst) => inst == modo.Instrumento)
+        .find((inst) => inst == modo.Nombre)
       modo.Ver = encontrado ? true : false
       if (encontrado) {
         encontradoTotal = true
@@ -57,11 +63,17 @@ watch(
   },
 )
 
-function verInstrumento(modo: DisplayModoPentagrama) {
+function verInstrumento(modo: DisplayModoPentagrama, index: number) {
+  if (props.editando) {
+    localStorage.setItem('instrumentosPentagrama', modo.Nombre)
+    Actualizar()
+    emit('clickCambioModo', index)
+    return
+  }
   modo.Ver = !modo.Ver
   const instrumentosSeleccionados = modos.value
     .filter((m) => m.Ver)
-    .map((m) => m.Instrumento)
+    .map((m) => m.Nombre)
   localStorage.setItem(
     'instrumentosPentagrama',
     instrumentosSeleccionados.join(','),
@@ -87,10 +99,10 @@ defineExpose({ Actualizar })
         <li
           v-for="(modo, index) in modos"
           :key="index"
-          @click="verInstrumento(modo)"
+          @click="verInstrumento(modo, index)"
         >
           <i class="bi bi-check-circle" v-if="modo.Ver"></i>
-          {{ modo.Instrumento }}
+          {{ modo.Nombre }}
         </li>
       </ul>
     </div>

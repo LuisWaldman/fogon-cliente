@@ -3,7 +3,9 @@ import { Cancion } from './cancion'
 import { Letra } from './letra'
 import { Media } from './media'
 import { Pentagrama } from './pentagrama'
+import type { PentagramaBeam } from './pentagramabeam'
 import { PentagramaCompas } from './pentagramacompas'
+import type { PentagramaLigadura } from './pentagramaligadura'
 import { PentagramaNotas } from './pentagramanotas' // Agregar esta importación
 
 export class HelperJSON {
@@ -31,9 +33,12 @@ export class HelperJSON {
       })),
       pentagramas: cancion.pentagramas.map((pentagrama) => ({
         instrumento: pentagrama.instrumento,
+        nombre: pentagrama.nombre,
         clave: pentagrama.clave,
         compases: pentagrama.compases.map((compas) => ({
           notas: compas.notas,
+          beams: compas.beams,
+          ligaduras: compas.ligaduras,
         })),
       })),
       archivo: cancion.archivo,
@@ -102,16 +107,26 @@ export class HelperJSON {
       toRet.pentagramas = data.pentagramas.map(
         (penta: {
           instrumento: string
+          nombre: string
           clave: string
-          compases: { notas: PentagramaNotas[][] }[]
+          compases: { notas: PentagramaNotas[][]; beams?: PentagramaBeam[] }[]
         }) => {
           const pentagrama = new Pentagrama()
           pentagrama.instrumento = penta.instrumento
           pentagrama.clave = penta.clave
+          pentagrama.nombre = penta.nombre
           pentagrama.compases = [] // Asegurar que esté inicializado
           penta.compases.forEach(
-            (compasData: { notas: PentagramaNotas[][] }) => {
-              pentagrama.compases.push(new PentagramaCompas(compasData.notas))
+            (compasData: {
+              notas: PentagramaNotas[][]
+              beams?: PentagramaBeam[]
+              ligaduras?: PentagramaLigadura[]
+            }) => {
+              const mostrandoCompas = new PentagramaCompas(compasData.notas)
+              mostrandoCompas.beams = compasData.beams || []
+              mostrandoCompas.ligaduras = compasData.ligaduras || []
+
+              pentagrama.compases.push(mostrandoCompas)
             },
           )
           return pentagrama

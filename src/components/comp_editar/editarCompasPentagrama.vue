@@ -64,8 +64,8 @@ function DibujarMuestra() {
     props.cancion.pentagramas[props.pentagramaId].clave
   refDisplayPentagrama.value.pentagramas[0].compases[0] =
     helpPenta.creaCompasPentagrama(
-      refCompasEnPentagrama.value,
-      0,
+      props.cancion.pentagramas[props.pentagramaId],
+      props.compas,
       props.cancion.escala,
     )
   CtrlrenglonPentagrama.value.Dibujar()
@@ -104,10 +104,6 @@ function ImpactarCambiosEditor() {
 
   emit('actualizoPentagrama')
   Actualizar()
-}
-function CambioOctava() {
-  // editorDisplay.value.acorde.Calcular()
-  ImpactarCambiosEditor()
 }
 
 function clickUnirRitmo(indice: number) {
@@ -164,21 +160,32 @@ const instroBateria = [
 
 const notasBateria = ['D4', 'F4', 'A4', 'C5', 'E5', 'G5', 'A5', 'C6']
 const viendoPatron = ref(false)
+const viendoEdicion = ref(false)
 function clickVerPatron() {
   viendoPatron.value = !viendoPatron.value
 }
 </script>
 <template>
+  <renglonpentagrama
+    ref="CtrlrenglonPentagrama"
+    :compas="-1"
+    :cancion="cancion"
+    :renglon="refDisplayPentagrama"
+  />
+
   <div>
-    <input
-      style="width: 30px"
-      type="number"
-      @change="CambioOctava"
-      min="1"
-      max="8"
-    />
+    <span @click="viendoEdicion = true">[EDITAR]</span>
+    <span @click="clickVerPatron">[PATRON]</span>
+    <editarPatron
+      v-if="viendoPatron"
+      :cancion="cancion"
+      :pentagramaId="pentagramaId"
+      :compas="compas"
+      :editorDisplay="editorDisplay"
+      @actualizoPentagrama="ImpactarCambiosEditor()"
+    ></editarPatron>
   </div>
-  <div>
+  <div v-if="viendoEdicion">
     <table class="tablaRitmos">
       <thead>
         <tr>
@@ -241,18 +248,8 @@ function clickVerPatron() {
         </tr>
       </tbody>
     </table>
-  </div>
-  <div>
     <span @click="clickAgregarNota">[Agregar Nota]</span>
-    <span @click="clickVerPatron">[PATRON]</span>
-    <editarPatron
-      v-if="viendoPatron"
-      :cancion="cancion"
-      :pentagramaId="pentagramaId"
-      :compas="compas"
-      :editorDisplay="editorDisplay"
-      @actualizoPentagrama="ImpactarCambiosEditor()"
-    ></editarPatron>
+    <span @click="clickAgregarNota">[FIN EDICION]</span>
     <div v-if="agregandonota">
       <input type="text" v-if="!refEsBatera" v-model="nuevaNota" />
       <select v-if="refEsBatera" v-model="nuevaNota">
@@ -269,13 +266,6 @@ function clickVerPatron() {
       <span @click="clickCancelarAgregarNota">[Cancelar]</span>
     </div>
   </div>
-
-  <renglonpentagrama
-    ref="CtrlrenglonPentagrama"
-    :compas="-1"
-    :cancion="cancion"
-    :renglon="refDisplayPentagrama"
-  />
 </template>
 <style scoped>
 .divNotaEdit {

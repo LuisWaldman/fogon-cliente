@@ -16,6 +16,38 @@ describe('Helper Midi', () => {
     expect(compas.notas[0][0].duracion).toBe('4')
   })
 
+  it('Suma de MIDIS', () => {
+    const helper = new MidiHelper()
+    expect(helper.SumarMidisDuracion('2n.', '4n')).toBe('1n')
+    expect(helper.SumarMidisDuracion('2n.', '4n')).toBe('1n') // 3 + 1 = 4 negras → redonda
+    expect(helper.SumarMidisDuracion('4n.', '8n')).toBe('2n') // 1.5 + 0.5 = 2 negras → blanca
+    expect(helper.SumarMidisDuracion('8n.', '16n')).toBe('4n') // 0.75 + 0.25 = 1 negra → negra
+    expect(helper.SumarMidisDuracion('16n.', '16n')).toBe('8n') // 0.375 + 0.25 = 0.625 → redondea a corchea
+    expect(helper.SumarMidisDuracion('2n', '2n')).toBe('1n') // 2 + 2 = 4 negras → redonda
+    expect(helper.SumarMidisDuracion('4n', '4n')).toBe('2n') // 1 + 1 = 2 negras → blanca
+    expect(helper.SumarMidisDuracion('8n', '8n')).toBe('4n') // 0.5 + 0.5 = 1 negra → negra
+    expect(helper.SumarMidisDuracion('16n', '16n')).toBe('8n') // 0.25 + 0.25 = 0.5 → corcheas
+
+    /*
+    2n. + 4n 
+    
+    '1': '1n', // redonda
+    '2': '2n', // blanca
+    '4': '4n', // negra
+    q: '4n', // negra
+    '8': '8n', // corchea
+    '16': '16n', // semicorchea
+    '32': '32n', // fusa
+    '64': '64n', // semifusa
+    '128': '128n', // garrapatea
+    '4d': '4n.', // negra con puntillo
+    '2d': '2n.', // blanca con puntillo
+    qd: '4n.', // negra con puntillo
+    '8d': '8n.', // corchea con puntillo
+    '16d': '16n.', // semicorchea con puntillo
+    */
+  })
+
   it('Tiempo de la nota', () => {
     const helper = new MidiHelper()
     helper.parteCompas = 0

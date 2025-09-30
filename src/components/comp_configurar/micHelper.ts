@@ -1,4 +1,5 @@
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
+import { useAppStore } from '../../stores/appStore'
 
 export class MicHelper {
   private permissionState: PermissionState | null = null
@@ -144,10 +145,10 @@ export class MicHelper {
     const T0 = maxpos
     return sampleRate / T0
   }
-
+  public detectar = false
   detectFrequency() {
     if (!this.analyserNode) return
-    console.log('Detectando frecuencia...')
+    if (!this.detectar) return
     if (!this.buffer) return
     this.analyserNode.getFloatTimeDomainData(this.buffer)
     if (!this.audioContext) return
@@ -188,10 +189,13 @@ export class MicHelper {
       this.analyserNode.fftSize = 2048
 
       this.sourceNode.connect(this.analyserNode)
-
+      this.mediaStream = stream
       return stream
     } catch (error) {
       console.error('Error al solicitar acceso al micrófono:', error)
+      useAppStore().errores.push(
+        new Error(`Error al solicitar acceso al micrófono: ${error}`),
+      )
       return null
     }
   }

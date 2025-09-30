@@ -212,6 +212,7 @@ function escuchar() {
         <TocarPentagrama
           v-if="vista.muestra == 'partitura'"
           :cancion="appStore.cancion"
+          :editando="false"
           :compas="appStore.compas"
         ></TocarPentagrama>
       </div>

@@ -57,6 +57,9 @@ function loginWithCredentials() {
     })
     .catch((error) => {
       console.error('Error al crear el login seguro:', error)
+      appStore.errores.push(
+        new Error(`Error al crear el login seguro: ${error}`),
+      )
       appStore.estadosApp.estadoLogin = 'error'
     })
 
@@ -69,6 +72,10 @@ function handleSuccess(response: unknown) {
 
 function handleError(error: unknown) {
   console.error('Error en el inicio de sesión con Google:', error)
+  appStore.estadosApp.estadoLogin = 'error'
+  appStore.errores.push(
+    new Error(`Error en el inicio de sesión con Google: ${error}`),
+  )
 }
 function logout() {
   mantenerseLogeado.value = false

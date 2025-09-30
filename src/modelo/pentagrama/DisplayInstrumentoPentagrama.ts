@@ -1,4 +1,4 @@
-import { Formatter, RenderContext, Stave, Beam } from 'vexflow'
+import { Formatter, RenderContext, Stave, Beam, StaveTie } from 'vexflow'
 import type { DisplayCompasPentagrama } from './DisplayCompasPentagrama'
 import type { Cancion } from '../cancion/cancion'
 
@@ -48,6 +48,22 @@ export class DisplayInstrumentoPentagrama {
             if (notesForBeam.length > 0) {
               const beam = new Beam(notesForBeam)
               beam.setContext(context).draw()
+            }
+          }
+        }
+
+        if (compas.ligaduras && compas.ligaduras.length > 0) {
+          for (const ligaduraData of compas.ligaduras) {
+            const startNote = staveNotes[ligaduraData.desdeNota]
+            const endNote = staveNotes[ligaduraData.hastaNota]
+            if (startNote && endNote) {
+              const tie = new StaveTie({
+                firstNote: startNote,
+                lastNote: endNote,
+                firstIndexes: [0],
+                lastIndexes: [0],
+              })
+              tie.setContext(context).draw()
             }
           }
         }
