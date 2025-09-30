@@ -74,7 +74,7 @@ describe('XML HELPER', () => {
     const helper = new XMLHelper()
     const pentagrama = helper.XMLToPentagramas(pruebaXmlSimple)
     expect(pentagrama.length).toBe(1)
-    expect(pentagrama[0].instrumento).toBe('P1')
+    expect(pentagrama[0].instrumento).toBe('Piano')
     expect(pentagrama[0].clave).toBe('treble')
     expect(pentagrama[0].compases.length).toBe(32)
     expect(pentagrama[0].compases[0].notas.length).toBe(4)
