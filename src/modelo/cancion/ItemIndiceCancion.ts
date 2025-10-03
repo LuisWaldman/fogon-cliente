@@ -34,6 +34,8 @@ export class ItemIndiceCancion {
   public compasCantidad: number
   public bpm: number
   public calidad: number
+  public video: boolean = false
+  public pentagramas: string[] = []
   public etiquetas: string[]
 
   public origen: OrigenCancion
