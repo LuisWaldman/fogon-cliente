@@ -6,7 +6,6 @@ import { Tiempo } from '../../modelo/tiempo'
 const calidad = ['web', 'revisada', 'garantizada']
 const props = defineProps<{
   cancion: ItemIndiceCancion
-  verDetalle: boolean
 }>()
 const tiempo = new Tiempo()
 const viendoDetalle = ref(false)

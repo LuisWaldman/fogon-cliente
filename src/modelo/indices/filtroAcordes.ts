@@ -1,7 +1,7 @@
 import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { FiltroIndice } from './filtroIndice'
 
-export class DuracionTempo extends FiltroIndice {
+export class filtroAcordes extends FiltroIndice {
   minDur: number
   maxDur: number
   constructor(minDur: number, maxDur: number) {
@@ -10,6 +10,6 @@ export class DuracionTempo extends FiltroIndice {
     this.maxDur = maxDur
   }
   override FiltroOk(item: ItemIndiceCancion): boolean {
-    return item.duracion >= this.minDur && item.duracion <= this.maxDur
+    return item.cantacordes >= this.minDur && item.cantacordes <= this.maxDur
   }
 }

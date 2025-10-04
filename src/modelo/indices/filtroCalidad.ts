@@ -6,10 +6,10 @@ export class FiltroCalidad extends FiltroIndice {
   maxCalidad: number
   constructor(minCalidad: number, maxCalidad: number) {
     super()
-    this.minDur = minDur
-    this.maxDur = maxDur
+    this.minCalidad = minCalidad
+    this.maxCalidad = maxCalidad
   }
   override FiltroOk(item: ItemIndiceCancion): boolean {
-    return item.duracion >= this.minDur && item.duracion <= this.maxDur
+    return item.calidad >= this.minCalidad && item.calidad <= this.maxCalidad
   }
 }

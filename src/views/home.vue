@@ -8,8 +8,8 @@ import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import type { FiltroIndice } from '../modelo/indices/filtroIndice'
 import { FiltroIndiceBusqueda } from '../modelo/indices/filtroIndiceBusqueda'
 import { FiltroEscala } from '../modelo/indices/filtroEscala'
-import { FiltroTempo } from '../modelo/indices/FiltroTempo'
-
+import { FiltroTempo } from '../modelo/indices/filtroTempo'
+import { FiltroVideo } from '../modelo/indices/filtroVideo'
 const appStore = useAppStore()
 
 let ultimasCanciones = new UltimasCanciones()
@@ -27,7 +27,7 @@ const busqueda = ref('')
 const filtroEscala = ref(false)
 const filtroEscalaMenor = ref(false)
 const filtroTempo = ref(false)
-const filtroVideo = ref(false)
+const cfiltroVideo = ref(false)
 const filtroPartitura = ref(false)
 const filtroCantAcordes1 = ref(false)
 const filtroDuracion = ref(false)
@@ -79,7 +79,7 @@ function buscarCanciones() {
       }
     }
   }
-  if (filtroVideo.value) {
+  if (cfiltroVideo.value) {
     filtros.push(new FiltroVideo())
   }
   appStore.aplicacion.indiceHelper
@@ -212,8 +212,8 @@ function VerFiltros() {
         </div>
 
         <!-- Video sincronizado -->
-        <div class="filtro" :class="{ seleccionado: filtroVideo }">
-          <div class="filtro-header" @click="filtroVideo = !filtroVideo">
+        <div class="filtro" :class="{ seleccionado: cfiltroVideo }">
+          <div class="filtro-header" @click="cfiltroVideo = !cfiltroVideo">
             Video
           </div>
         </div>

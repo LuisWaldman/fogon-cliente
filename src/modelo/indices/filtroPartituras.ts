@@ -8,6 +8,9 @@ export class FiltroPartituras extends FiltroIndice {
     this.partitura = partitura
   }
   override FiltroOk(item: ItemIndiceCancion): boolean {
-    return item.partitura === this.partitura
+    if (this.partitura === '') {
+      return true
+    }
+    return item.pentagramas.includes(this.partitura)
   }
 }
