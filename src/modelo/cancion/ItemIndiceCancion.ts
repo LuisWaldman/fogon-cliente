@@ -43,8 +43,10 @@ export class ItemIndiceCancion {
   public origen: OrigenCancion
   public cancion: string
   public banda: string
+  public acordes: string
   constructor(_origen: OrigenCancion, _cancion: string, _banda: string) {
     this.origen = _origen
+    this.acordes = ''
     this.cancion = _cancion
     this.banda = _banda
     this.etiquetas = []
