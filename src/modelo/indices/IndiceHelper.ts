@@ -1,5 +1,6 @@
 import { CancionUrlManager } from '../cancion/CancionUrlManager'
 import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import type { FiltroIndice } from './filtroIndice'
 
 export class IndiceHelper {
   private static instance: IndiceHelper
@@ -14,27 +15,27 @@ export class IndiceHelper {
     this.TodasLasCanciones = await CancionUrlManager.GetIndice()
   }
 
-  public async Buscar(busqueda: string) {
-    if (busqueda.trim() === '') {
-      this.BusquedaCanciones = []
-      return
+  public async Buscar(filtros: FiltroIndice[]) {
+    this.BusquedaCanciones = []
+    const resultado: ItemIndiceCancion[] = []
+    for (let i = 0; i < this.TodasLasCanciones.length; i++) {
+      let ok = true
+      for (let j = 0; j < filtros.length; j++) {
+        ok = filtros[j].FiltroOk(this.TodasLasCanciones[i])
+        if (!ok) {
+          break
+        }
+      }
+      if (ok) {
+        resultado.push(this.TodasLasCanciones[i])
+        if (resultado.length >= 100) {
+          this.BusquedaCanciones = resultado
+          break
+        }
+      }
     }
-    let resultado: ItemIndiceCancion[] = this.TodasLasCanciones
-    const filtros = busqueda.split(',')
-    for (let i = 0; i < filtros.length; i++) {
-      resultado = this.filtrarvectores(filtros[i], resultado)
-    }
-    this.BusquedaCanciones =
-      resultado.length > 30 ? resultado.slice(0, 30) : resultado
-    console.log('Busqueda Canciones', this.BusquedaCanciones)
-  }
 
-  public filtrarvectores(filtro: string, vector: ItemIndiceCancion[]) {
-    return vector.filter(
-      (cancion) =>
-        cancion.banda.toLowerCase().includes(filtro.toLowerCase()) ||
-        cancion.cancion.toLowerCase().includes(filtro.toLowerCase()),
-    )
+    this.BusquedaCanciones = resultado
   }
 
   public static getInstance(): IndiceHelper {

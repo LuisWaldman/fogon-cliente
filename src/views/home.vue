@@ -5,6 +5,10 @@ import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import cancionComp from '../components/comp_home/cancion.vue'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
+import type { FiltroIndice } from '../modelo/indices/filtroIndice'
+import { FiltroIndiceBusqueda } from '../modelo/indices/filtroIndiceBusqueda'
+import { FiltroEscala } from '../modelo/indices/filtroEscala'
+import { FiltroTempo } from '../modelo/indices/FiltroTempo'
 
 const appStore = useAppStore()
 
@@ -16,11 +20,12 @@ const refResultadoCanciones = ref<ItemIndiceCancion[]>(
 )
 const totalUltimas = ref(0)
 totalUltimas.value = ultimasCanciones.canciones.length
-const refEstadoBusqueda = ref('')
+const refEstadoBusqueda = ref(' ')
 const busqueda = ref('')
 
 /* nuevos refs para controlar los filtros (false = no seleccionado) */
 const filtroEscala = ref(false)
+const filtroEscalaMenor = ref(false)
 const filtroTempo = ref(false)
 const filtroVideo = ref(false)
 const filtroPartitura = ref(false)
@@ -34,10 +39,51 @@ function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }
 
+const notas: string[] = [
+  'C',
+  'C#',
+  'D',
+  'D#',
+  'E',
+  'F',
+  'F#',
+  'G',
+  'G#',
+  'A',
+  'A#',
+  'B',
+]
+const filtroEscalaNota = ref('C')
+const filtroTempoBPM = ref('0_60')
 function buscarCanciones() {
+  console.log('buscando canciones...')
   refEstadoBusqueda.value = 'buscando...'
+  const filtros: FiltroIndice[] = []
+  if (busqueda.value.trim() !== '') {
+    filtros.push(new FiltroIndiceBusqueda(busqueda.value.trim()))
+  }
+  if (filtroEscala.value) {
+    filtros.push(
+      new FiltroEscala(
+        filtroEscalaNota.value + (filtroEscalaMenor.value ? 'm' : ''),
+      ),
+    )
+  }
+  if (filtroTempo.value) {
+    const partes = filtroTempoBPM.value.split('_')
+    if (partes.length === 2) {
+      const min = parseInt(partes[0], 10)
+      const max = parseInt(partes[1], 10)
+      if (!isNaN(min) && !isNaN(max)) {
+        filtros.push(new FiltroTempo(min, max))
+      }
+    }
+  }
+  if (filtroVideo.value) {
+    filtros.push(new FiltroVideo())
+  }
   appStore.aplicacion.indiceHelper
-    .Buscar(busqueda.value)
+    .Buscar(filtros)
     .then(() => {
       refResultadoCanciones.value =
         appStore.aplicacion.indiceHelper.BusquedaCanciones
@@ -134,8 +180,10 @@ function VerFiltros() {
           <div class="filtro-header" @click="filtroEscala = !filtroEscala">
             Escala
           </div>
-          <select v-if="filtroEscala" @click.stop>
-            <option value="todas">Todas</option>
+          <select v-if="filtroEscala" @click.stop v-model="filtroEscalaNota">
+            <option v-for="nota in notas" :key="nota" :value="nota">
+              {{ nota }}
+            </option>
           </select>
           <input
             type="checkbox"
@@ -150,8 +198,16 @@ function VerFiltros() {
           <div class="filtro-header" @click="filtroTempo = !filtroTempo">
             Tempo
           </div>
-          <select v-if="filtroTempo" @click.stop>
-            <option value="todas">Todas</option>
+          <select v-if="filtroTempo" @click.stop v-model="filtroTempoBPM">
+            <option value="0_60">Largo</option>
+            <option value="61_66">Largo a Adagio</option>
+            <option value="67_76">Adagio</option>
+            <option value="77_108">Andante</option>
+            <option value="109_120">Moderato</option>
+            <option value="121_168">Allegro</option>
+            <option value="169_176">Vivace</option>
+            <option value="177_200">Presto</option>
+            <option value="201_300">Prestissimo</option>
           </select>
         </div>
 
