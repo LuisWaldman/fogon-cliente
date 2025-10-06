@@ -73,7 +73,7 @@ function arreglartexto(texto: string): string {
       <iconofogon />
 
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        Bienvendido al Fogon
+        FOGON.AR
       </span>
 
       <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
@@ -306,9 +306,10 @@ function arreglartexto(texto: string): string {
 
   .titulocancioncontrol {
     font-size: 1.5rem; /* Reduce el tamaño del texto en móviles */
-    margin-left: 0; /* Alinea a la izquierda */
-    margin-right: 0; /* Elimina el margen derecho */
+    margin-left: 0px; /* Alinea a la izquierda */
+    margin-right: 0px; /* Elimina el margen derecho */
     text-align: center; /* Centra el texto */
+    flex-grow: 0; /* Allow title to take available space */
   }
 
   .dropdown-superior-derecha {

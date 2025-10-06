@@ -15,6 +15,7 @@ export class Cancion {
   public compasCantidad: number
   public compasUnidad: number
   public escala: string = 'C'
+  public etiquetas: string[] = []
   public medias: Media[] = []
   public pentagramas: Pentagrama[] = []
 

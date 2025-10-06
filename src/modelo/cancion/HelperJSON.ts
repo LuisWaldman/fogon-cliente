@@ -42,6 +42,7 @@ export class HelperJSON {
         })),
       })),
       archivo: cancion.archivo,
+      etiquetas: cancion.etiquetas,
     })
     return cancionJSON
   }
@@ -102,7 +103,9 @@ export class HelperJSON {
           new Media(media.tipo, media.id, media.delay || 0),
       )
     }
-
+    if (data.etiquetas) {
+      toRet.etiquetas = data.etiquetas
+    }
     if (data.pentagramas) {
       toRet.pentagramas = data.pentagramas.map(
         (penta: {

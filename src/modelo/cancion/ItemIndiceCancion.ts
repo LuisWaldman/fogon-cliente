@@ -33,14 +33,21 @@ export class ItemIndiceCancion {
   public compasUnidad: number
   public compasCantidad: number
   public bpm: number
+  public cantacordes: number
+  public cantpartes: number
   public calidad: number
+  public duracion: number
+  public video: boolean
+  public pentagramas: string[]
   public etiquetas: string[]
 
   public origen: OrigenCancion
   public cancion: string
   public banda: string
+  public acordes: string
   constructor(_origen: OrigenCancion, _cancion: string, _banda: string) {
     this.origen = _origen
+    this.acordes = ''
     this.cancion = _cancion
     this.banda = _banda
     this.etiquetas = []
@@ -50,6 +57,11 @@ export class ItemIndiceCancion {
     this.compasCantidad = 4
     this.bpm = 60
     this.calidad = 1
+    this.duracion = 0
+    this.cantpartes = 0
+    this.cantacordes = 0
+    this.video = false
+    this.pentagramas = []
     this.escala = ''
   }
 
