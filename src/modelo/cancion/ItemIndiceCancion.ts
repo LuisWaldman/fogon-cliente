@@ -34,6 +34,7 @@ export class ItemIndiceCancion {
   public compasCantidad: number
   public bpm: number
   public cantacordes: number
+  public cantpartes: number
   public calidad: number
   public duracion: number
   public video: boolean
@@ -57,6 +58,7 @@ export class ItemIndiceCancion {
     this.bpm = 60
     this.calidad = 1
     this.duracion = 0
+    this.cantpartes = 0
     this.cantacordes = 0
     this.video = false
     this.pentagramas = []

@@ -2,14 +2,18 @@ import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { FiltroIndice } from './filtroIndice'
 
 export class FiltroTempo extends FiltroIndice {
-  minBPM: number
-  maxBPM: number
-  constructor(minBPM: number, maxBPM: number) {
+  tempos: string[] = []
+  constructor(tempos: string) {
     super()
-    this.minBPM = minBPM
-    this.maxBPM = maxBPM
+    this.tempos = tempos.split(',')
   }
   override FiltroOk(item: ItemIndiceCancion): boolean {
-    return item.bpm >= this.minBPM && item.bpm <= this.maxBPM
+    for (const tempo of this.tempos) {
+      const [min, max] = tempo.split('_').map(Number)
+      if (item.bpm >= min && item.bpm <= max) {
+        return true
+      }
+    }
+    return false
   }
 }
