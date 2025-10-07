@@ -4,8 +4,11 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import cancionComp from '../components/comp_home/cancion.vue'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
+import tablacanciones from '../components/comp_home/tablacanciones.vue'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
+import { table } from 'console'
+import { TextNote } from 'vexflow'
 
 const appStore = useAppStore()
 
@@ -32,6 +35,7 @@ const viendoOrigen = ref('localstorage')
 function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
 }
+const viendoFiltroTabla = ref(false)
 </script>
 
 <template>
@@ -134,6 +138,11 @@ function clickOrigen(viendostr: string) {
         />
       </div>
     </div>
+
+    <tablacanciones 
+      v-if="viendo === 'canciones'" 
+      :canciones="refUltimasCanciones" 
+    />
   </div>
 </template>
 
