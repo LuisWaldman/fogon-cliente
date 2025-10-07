@@ -28,6 +28,10 @@ const viendo = ref('inicio')
 function clickOpcion(viendostr: string) {
   viendo.value = viendostr
 }
+const viendoOrigen = ref('localstorage')
+function clickOrigen(viendostr: string) {
+  viendoOrigen.value = viendostr
+}
 </script>
 
 <template>
@@ -44,11 +48,11 @@ function clickOpcion(viendostr: string) {
           </a>
         </div>
 
-        <div @click="clickOpcion('conexion')" class="config-menu-item">
+        <div @click="clickOpcion('canciones')" class="config-menu-item">
           <a
             href="#"
             class="nav-link text-white"
-            :class="{ activo: viendo === 'conexion' }"
+            :class="{ activo: viendo === 'canciones' }"
           >
             Tus Canciones
           </a>
@@ -67,6 +71,32 @@ function clickOpcion(viendostr: string) {
     </div>
   </div>
 
+  <div style="width: 100%" v-if="viendo === 'canciones' || viendo === 'listas'">
+    <div class="config-menu">
+      <div class="config-menu-group">
+        <div @click="clickOrigen('localstorage')" class="config-menu-item">
+          <a
+            href="#"
+            class="nav-link text-white"
+            :class="{ activo: viendoOrigen === 'localstorage' }"
+          >
+            LocalStorage
+          </a>
+        </div>
+
+
+        <div @click="clickOrigen('server')" class="config-menu-item">
+          <a
+            href="#"
+            class="nav-link text-white"
+            :class="{ activo: viendoOrigen === 'server' }"
+          >
+            Servidor
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="home">
     <div
       style="
@@ -77,10 +107,10 @@ function clickOpcion(viendostr: string) {
       "
     >
       <!-- Componente de búsqueda -->
-      <busquedaCanciones @resultados="handleResultados" />
+      <busquedaCanciones @resultados="handleResultados" v-if="viendo === 'inicio'"/>
 
       <!-- Mostrar resultados de búsqueda -->
-      <div style="width: 100%" v-if="refResultadoCanciones.length > 0">
+      <div style="width: 100%" v-if="refResultadoCanciones.length > 0 && viendo === 'inicio'">
         <div style="display: flex; flex-wrap: wrap">
           <cancionComp
             v-for="(cancion, index) in refResultadoCanciones"
@@ -93,7 +123,7 @@ function clickOpcion(viendostr: string) {
     </div>
 
     <!-- Últimas canciones -->
-    <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0">
+    <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0 && viendo === 'inicio'">
       <p class="primer-parrafo">Ultimas {{ totalUltimas }} Canciones</p>
       <div style="display: flex; flex-wrap: wrap">
         <cancionComp
