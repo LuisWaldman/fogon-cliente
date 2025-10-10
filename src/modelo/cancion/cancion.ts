@@ -1,6 +1,8 @@
 import { Acordes } from './acordes'
+import { ItemIndiceCancion } from './ItemIndiceCancion'
 import { Letra } from './letra'
 import type { Media } from './media'
+import { OrigenCancion } from './origencancion'
 import type { Pentagrama } from './pentagrama'
 
 // src/cancion.ts
@@ -28,6 +30,28 @@ export class Cancion {
     )
     ret.escala = 'C'
     return ret
+  }
+
+  public GetItemIndice(): ItemIndiceCancion {
+    const origen = new OrigenCancion('local', this.archivo, '')
+    const item = new ItemIndiceCancion(origen, this.cancion, this.banda)
+    item.calidad = this.calidad ?? 0
+    item.bpm = this.bpm ?? 60
+    const acordes = this.acordes?.GetTotalAcordes()
+    const acordesDistintos: string[] = []
+    for (let i = 0; i < acordes.length; i++) {
+      const acorde = acordes[i]
+      if (acorde !== '' && !acordesDistintos.includes(acorde)) {
+        acordesDistintos.push(acorde)
+      }
+    }
+
+    item.cantacordes = acordesDistintos.length
+    item.compasCantidad = this.compasCantidad ?? 4
+    item.compasUnidad = this.compasUnidad ?? 4
+    item.escala = this.escala ?? ''
+
+    return item
   }
 
   public get duracionCompas(): number {

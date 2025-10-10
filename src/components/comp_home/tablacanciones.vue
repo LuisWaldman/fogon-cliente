@@ -49,7 +49,10 @@ function VerDetalle(index: number) {
           </th>
         </template>
         <th>
-          <span @click="viendoFiltroTabla = !viendoFiltroTabla" style="cursor: pointer">
+          <span
+            @click="viendoFiltroTabla = !viendoFiltroTabla"
+            style="cursor: pointer"
+          >
             [ {{ viendoFiltroTabla ? '-' : 'FILTRAR' }} ]
           </span>
         </th>
@@ -67,11 +70,11 @@ function VerDetalle(index: number) {
           </td>
         </tr>
         <tr v-if="viendoDetalle === index">
-          <td colspan="5"> 
+          <td colspan="5">
             <span @click="Reproducir(index)">[Tocar]</span>
             <span @click="Reproducir(index)">[Borrar]</span>
             <span @click="Reproducir(index)">[Agregar a Lista]</span>
-             </td>
+          </td>
         </tr>
       </template>
 
@@ -84,4 +87,3 @@ function VerDetalle(index: number) {
     </tbody>
   </table>
 </template>
-

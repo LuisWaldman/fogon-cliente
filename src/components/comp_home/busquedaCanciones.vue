@@ -168,9 +168,9 @@ function buscarCanciones() {
   if (filtroCantAcordes1.value) {
     const acordesSeleccionados = filtroCantAcordesSeleccionada.value.join(',')
     // Suponiendo que tienes un filtro para cantidad de acordes
-     filtros.push(new filtroAcordes(acordesSeleccionados))
+    filtros.push(new filtroAcordes(acordesSeleccionados))
   }
-  
+
   if (cfiltroVideo.value) {
     filtros.push(new FiltroVideo())
   }

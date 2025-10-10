@@ -88,7 +88,6 @@ const viendoFiltroTabla = ref(false)
           </a>
         </div>
 
-
         <div @click="clickOrigen('server')" class="config-menu-item">
           <a
             href="#"
@@ -111,10 +110,16 @@ const viendoFiltroTabla = ref(false)
       "
     >
       <!-- Componente de búsqueda -->
-      <busquedaCanciones @resultados="handleResultados" v-if="viendo === 'inicio'"/>
+      <busquedaCanciones
+        @resultados="handleResultados"
+        v-if="viendo === 'inicio'"
+      />
 
       <!-- Mostrar resultados de búsqueda -->
-      <div style="width: 100%" v-if="refResultadoCanciones.length > 0 && viendo === 'inicio'">
+      <div
+        style="width: 100%"
+        v-if="refResultadoCanciones.length > 0 && viendo === 'inicio'"
+      >
         <div style="display: flex; flex-wrap: wrap">
           <cancionComp
             v-for="(cancion, index) in refResultadoCanciones"
@@ -127,7 +132,10 @@ const viendoFiltroTabla = ref(false)
     </div>
 
     <!-- Últimas canciones -->
-    <div class="ultimasCanciones" v-if="refUltimasCanciones.length > 0 && viendo === 'inicio'">
+    <div
+      class="ultimasCanciones"
+      v-if="refUltimasCanciones.length > 0 && viendo === 'inicio'"
+    >
       <p class="primer-parrafo">Ultimas {{ totalUltimas }} Canciones</p>
       <div style="display: flex; flex-wrap: wrap">
         <cancionComp
@@ -139,9 +147,9 @@ const viendoFiltroTabla = ref(false)
       </div>
     </div>
 
-    <tablacanciones 
-      v-if="viendo === 'canciones'" 
-      :canciones="refUltimasCanciones" 
+    <tablacanciones
+      v-if="viendo === 'canciones'"
+      :canciones="refUltimasCanciones"
     />
   </div>
 </template>

@@ -42,6 +42,7 @@ export class CancionIndexedDBManager {
     if (!db) {
       return Promise.reject(new Error('Base de datos no inicializada'))
     }
+    
     const cancionJSON = HelperJSON.CancionToJSON(cancion)
 
     // Crear objeto con archivo como clave
