@@ -74,6 +74,7 @@ export class ItemIndiceCancion {
     ret.totalCompases = cancion.totalCompases ? cancion.totalCompases : 0
     ret.compasUnidad = cancion.compasUnidad ? cancion.compasUnidad : 0
     ret.compasCantidad = cancion.compasCantidad ? cancion.compasCantidad : 4
+    ret.cantpartes = cancion.acordes.partes.length
     ret.bpm = cancion.bpm ? cancion.bpm : 60
     ret.calidad = cancion.calidad ? cancion.calidad : 0
     ret.origen = new OrigenCancion(

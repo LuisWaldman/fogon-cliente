@@ -7,10 +7,15 @@ import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
-import { table } from 'console'
-import { TextNote } from 'vexflow'
+import { CancionIndexedDBManager } from '../modelo/cancion/CancionIndexedDBManager'
+import { CancionManager } from '../modelo/cancion/CancionManager'
 
 const appStore = useAppStore()
+const IndiceCanciones = ref<ItemIndiceCancion[]>([])
+CancionManager.getInstance().GetDBIndex().then((indices: ItemIndiceCancion[]) => {
+  IndiceCanciones.value = indices
+})
+
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
@@ -35,7 +40,6 @@ const viendoOrigen = ref('localstorage')
 function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
 }
-const viendoFiltroTabla = ref(false)
 </script>
 
 <template>
@@ -149,7 +153,7 @@ const viendoFiltroTabla = ref(false)
 
     <tablacanciones
       v-if="viendo === 'canciones'"
-      :canciones="refUltimasCanciones"
+      :canciones="IndiceCanciones"
     />
   </div>
 </template>

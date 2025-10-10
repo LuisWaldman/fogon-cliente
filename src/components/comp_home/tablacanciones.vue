@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 
-const props = defineProps<{
+defineProps<{
   canciones: ItemIndiceCancion[]
 }>()
 function arreglartexto(texto: string): string {
@@ -78,12 +78,6 @@ function VerDetalle(index: number) {
         </tr>
       </template>
 
-      <tr>
-        <td>tema</td>
-        <td>df</td>
-        <td></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
 </template>
