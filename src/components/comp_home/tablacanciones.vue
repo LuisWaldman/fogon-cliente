@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
+import { Tiempo } from '../../modelo/tiempo';
 
 defineProps<{
   canciones: ItemIndiceCancion[]
@@ -31,10 +32,12 @@ function VerDetalle(index: number) {
     viendoDetalle.value = index
   }
 }
+
+const tiempo = new Tiempo()
 </script>
 
 <template>
-  <table style="width: 100%; margin-top: 20px">
+  <table style="width: 90%; margin-top: 20px; border: 1px solid;">
     <thead>
       <tr>
         <template v-if="!viendoFiltroTabla">
@@ -58,19 +61,30 @@ function VerDetalle(index: number) {
         </th>
       </tr>
     </thead>
-    <tbody>
+    <tbody v-if="canciones.length === 0">
+      <tr >
+        <td colspan="5" style="text-align: center">No tenes canciones en el LocalStorage</td>
+      </tr>
+    </tbody>
+    <tbody v-if="canciones.length > 0">
       <template v-for="(cancion, index) in canciones" :key="index">
-        <tr>
+        <tr @click="VerDetalle(index)">
           <td>{{ arreglartexto(cancion.cancion) }}</td>
           <td>{{ arreglartexto(cancion.banda) }}</td>
-          <td>{{ cancion.duracion }}</td>
+          <td>{{ 
+            tiempo.formatSegundos(
+              (60 / cancion.bpm) *
+                cancion.totalCompases *
+                cancion.compasCantidad,
+            )
+          }} </td>
           <td>{{ cancion.escala }}</td>
           <td>
-            <span @click="VerDetalle(index)">[ + ]</span>
+            
           </td>
         </tr>
         <tr v-if="viendoDetalle === index">
-          <td colspan="5">
+          <td colspan="5" style="text-align: right">
             <span @click="Reproducir(index)">[Tocar]</span>
             <span @click="Reproducir(index)">[Borrar]</span>
             <span @click="Reproducir(index)">[Agregar a Lista]</span>
