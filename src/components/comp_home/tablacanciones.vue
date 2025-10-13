@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
-import { Tiempo } from '../../modelo/tiempo';
+import { Tiempo } from '../../modelo/tiempo'
 
-defineProps<{
+const emit = defineEmits(['tocar', 'borrar', 'agregarALista'])
+const props = defineProps<{
   canciones: ItemIndiceCancion[]
 }>()
 function arreglartexto(texto: string): string {
@@ -34,10 +35,20 @@ function VerDetalle(index: number) {
 }
 
 const tiempo = new Tiempo()
+function Reproducir(index: number) {
+  emit('tocar', props.canciones[index].origen)
+}
+function Borrar(index: number) {
+  emit('borrar', props.canciones[index].origen)
+}
+
+function AgregarALista(index: number) {
+  emit('agregarALista', props.canciones[index])
+}
 </script>
 
 <template>
-  <table style="width: 90%; margin-top: 20px; border: 1px solid;">
+  <table style="width: 90%; margin-top: 20px; border: 1px solid">
     <thead>
       <tr>
         <template v-if="!viendoFiltroTabla">
@@ -62,8 +73,10 @@ const tiempo = new Tiempo()
       </tr>
     </thead>
     <tbody v-if="canciones.length === 0">
-      <tr >
-        <td colspan="5" style="text-align: center">No tenes canciones en el LocalStorage</td>
+      <tr>
+        <td colspan="5" style="text-align: center">
+          No tenes canciones en el LocalStorage
+        </td>
       </tr>
     </tbody>
     <tbody v-if="canciones.length > 0">
@@ -71,27 +84,45 @@ const tiempo = new Tiempo()
         <tr @click="VerDetalle(index)">
           <td>{{ arreglartexto(cancion.cancion) }}</td>
           <td>{{ arreglartexto(cancion.banda) }}</td>
-          <td>{{ 
-            tiempo.formatSegundos(
-              (60 / cancion.bpm) *
-                cancion.totalCompases *
-                cancion.compasCantidad,
-            )
-          }} </td>
-          <td>{{ cancion.escala }}</td>
           <td>
-            
+            {{
+              tiempo.formatSegundos(
+                (60 / cancion.bpm) *
+                  cancion.totalCompases *
+                  cancion.compasCantidad,
+              )
+            }}
           </td>
+          <td>{{ cancion.escala }}</td>
+          <td></td>
         </tr>
-        <tr v-if="viendoDetalle === index">
+        <tr v-if="viendoDetalle === index" data-detail>
           <td colspan="5" style="text-align: right">
             <span @click="Reproducir(index)">[Tocar]</span>
-            <span @click="Reproducir(index)">[Borrar]</span>
-            <span @click="Reproducir(index)">[Agregar a Lista]</span>
+            <span @click="Borrar(index)">[Borrar]</span>
+            <span @click="AgregarALista(index)">[Agregar a Lista]</span>
           </td>
         </tr>
       </template>
-
     </tbody>
   </table>
 </template>
+
+<style scoped>
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Remove bottom border from row when detail is shown */
+tr:has(+ tr[data-detail]) {
+  border-bottom: none;
+}
+
+th, td {
+  padding: 8px;
+}
+</style>

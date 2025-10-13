@@ -85,6 +85,67 @@ export class CancionIndexedDBManager {
     })
   }
 
+  static Borrar(db: IDBDatabase, cancion: ItemIndiceCancion): Promise<void> {
+    if (!db) {
+      return Promise.reject(new Error('Base de datos no inicializada'))
+    }
+
+    return new Promise<void>((resolve, reject) => {
+      // Crear transacción que incluya ambos object stores
+      const transaction = db.transaction(['canciones', 'indice'], 'readwrite')
+
+      // Obtener los stores
+      const cancionesStore = transaction.objectStore('canciones')
+      const indiceStore = transaction.objectStore('indice')
+
+      // Contador para rastrear operaciones completadas
+      let operacionesCompletadas = 0
+      const totalOperaciones = 2
+
+      // Función para verificar si todas las operaciones están completas
+      const verificarComplecion = () => {
+        operacionesCompletadas++
+        if (operacionesCompletadas === totalOperaciones) {
+          console.log('Canción borrada completamente:', cancion.origen.fileName)
+          resolve()
+        }
+      }
+
+      // Borrar la canción del store de canciones
+      const deleteCancionRequest = cancionesStore.delete(
+        cancion.origen.fileName,
+      )
+      deleteCancionRequest.onsuccess = () => {
+        console.log(
+          'Canción borrada del store de canciones:',
+          cancion.origen.fileName,
+        )
+        verificarComplecion()
+      }
+      deleteCancionRequest.onerror = (event) => {
+        console.error('Error al borrar canción del store de canciones:', event)
+        reject(event)
+      }
+
+      // Borrar la canción del índice
+      const deleteIndiceRequest = indiceStore.delete(cancion.origen.fileName)
+      deleteIndiceRequest.onsuccess = () => {
+        console.log('Canción borrada del índice:', cancion.origen.fileName)
+        verificarComplecion()
+      }
+      deleteIndiceRequest.onerror = (event) => {
+        console.error('Error al borrar canción del índice:', event)
+        reject(event)
+      }
+
+      // Manejar errores de la transacción
+      transaction.onerror = (event) => {
+        console.error('Error en la transacción de borrado:', event)
+        reject(event)
+      }
+    })
+  }
+
   static SaveCancion(
     db: IDBDatabase,
     cancion: Cancion,

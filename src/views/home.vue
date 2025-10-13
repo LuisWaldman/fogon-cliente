@@ -12,10 +12,11 @@ import { CancionManager } from '../modelo/cancion/CancionManager'
 
 const appStore = useAppStore()
 const IndiceCanciones = ref<ItemIndiceCancion[]>([])
-CancionManager.getInstance().GetDBIndex().then((indices: ItemIndiceCancion[]) => {
-  IndiceCanciones.value = indices
-})
-
+CancionManager.getInstance()
+  .GetDBIndex()
+  .then((indices: ItemIndiceCancion[]) => {
+    IndiceCanciones.value = indices
+  })
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
@@ -26,6 +27,13 @@ totalUltimas.value = ultimasCanciones.canciones.length
 
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
+}
+
+function clickBorrarLocalStorage(cancion: OrigenCancion) {
+  IndiceCanciones.value = IndiceCanciones.value.filter(
+    (c) => c.origen !== cancion,
+  )
+  ultimasCanciones.Borrar(cancion)
 }
 
 function handleResultados(canciones: ItemIndiceCancion[]) {
@@ -154,6 +162,8 @@ function clickOrigen(viendostr: string) {
     <tablacanciones
       v-if="viendo === 'canciones'"
       :canciones="IndiceCanciones"
+      @borrar="clickBorrarLocalStorage"
+      @tocar="clickTocar"
     />
   </div>
 </template>

@@ -125,6 +125,16 @@ export class CancionManager {
     ultimas.agregar(item)
   }
 
+  public async Borrar(cancion: ItemIndiceCancion): Promise<void> {
+    if (cancion.origen.origenUrl === 'local') {
+      if (!this.db) {
+        console.error('No se ha establecido la conexión a IndexedDB')
+        throw new Error('No se ha establecido la conexión a IndexedDB')
+      }
+      return CancionIndexedDBManager.Borrar(this.db, cancion)
+    }
+  }
+
   public async GetDBIndex(): Promise<ItemIndiceCancion[]> {
     if (!this.db) {
       console.error('No se ha establecido la conexión a IndexedDB')
