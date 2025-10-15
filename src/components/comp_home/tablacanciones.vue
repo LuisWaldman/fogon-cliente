@@ -122,7 +122,8 @@ tr:has(+ tr[data-detail]) {
   border-bottom: none;
 }
 
-th, td {
+th,
+td {
   padding: 8px;
 }
 </style>
