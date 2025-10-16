@@ -1,8 +1,6 @@
 import { Acordes } from './acordes'
-import { ItemIndiceCancion } from './ItemIndiceCancion'
 import { Letra } from './letra'
 import type { Media } from './media'
-import { OrigenCancion } from './origencancion'
 import type { Pentagrama } from './pentagrama'
 
 // src/cancion.ts

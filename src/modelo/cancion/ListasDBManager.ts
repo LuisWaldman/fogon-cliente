@@ -5,11 +5,7 @@ export class ListasDBManager {
   private version = 1
   private db: IDBDatabase | null = null
 
-  constructor() {
-    this.initDB()
-  }
-
-  private async initDB(): Promise<void> {
+  public async initDB(): Promise<void> {
     return new Promise((resolve, reject) => {
       const request = indexedDB.open(this.dbName, this.version)
 

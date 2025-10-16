@@ -7,8 +7,24 @@ import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
-import { CancionIndexedDBManager } from '../modelo/cancion/CancionIndexedDBManager'
 import { CancionManager } from '../modelo/cancion/CancionManager'
+import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
+
+const listasManager: ListasDBManager = new ListasDBManager()
+const selectedLista = ref<string>('')
+const nuevaLista = ref<string>('')
+const addingLista = ref<boolean>(false)
+const renamingLista = ref<boolean>(false)
+const viendoListas = ref<string[]>([])
+const ListasEnStorage = ref<string[]>([])
+listasManager.initDB().then(() => {
+  listasManager.GetListas().then((listas) => {
+    console.log('Listas de reproducción:', listas)
+    ListasEnStorage.value = listas
+    viendoListas.value = ListasEnStorage.value
+    selectedLista.value = listas.length > 0 ? listas[0] : ''
+  })
+})
 
 const appStore = useAppStore()
 const IndiceCanciones = ref<ItemIndiceCancion[]>([])
@@ -29,11 +45,10 @@ function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }
 
-function clickBorrarLocalStorage(cancion: OrigenCancion) {
+function clickBorrarLista(cancion: OrigenCancion) {
   IndiceCanciones.value = IndiceCanciones.value.filter(
     (c) => c.origen !== cancion,
   )
-  ultimasCanciones.Borrar(cancion)
 }
 
 function handleResultados(canciones: ItemIndiceCancion[]) {
@@ -47,6 +62,93 @@ function clickOpcion(viendostr: string) {
 const viendoOrigen = ref('localstorage')
 function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
+}
+
+function confirmarNuevaLista() {
+  if (nuevaLista.value.trim() === '') {
+    alert('El nombre de la lista no puede estar vacío.')
+    return
+  }
+  if (ListasEnStorage.value.includes(nuevaLista.value)) {
+    alert('Ya existe una lista con ese nombre.')
+    return
+  }
+  listasManager.AgregarLista(nuevaLista.value).then(() => {
+    ListasEnStorage.value.push(nuevaLista.value)
+    viendoListas.value = ListasEnStorage.value
+    selectedLista.value = nuevaLista.value
+    nuevaLista.value = ''
+    addingLista.value = false
+  })
+}
+
+function renombrarLista() {
+  if (!selectedLista.value) {
+    alert('Por favor, selecciona una lista para renombrar.')
+    return
+  }
+  nuevaLista.value = selectedLista.value
+  renamingLista.value = true
+}
+
+function confirmarRenombrarLista() {
+  if (nuevaLista.value.trim() === '') {
+    alert('El nombre de la lista no puede estar vacío.')
+    return
+  }
+  if (nuevaLista.value === selectedLista.value) {
+    renamingLista.value = false
+    nuevaLista.value = ''
+    return
+  }
+  if (ListasEnStorage.value.includes(nuevaLista.value)) {
+    alert('Ya existe una lista con ese nombre.')
+    return
+  }
+  
+  const oldName = selectedLista.value
+  listasManager.RenombrarLista(oldName, nuevaLista.value).then(() => {
+    const index = ListasEnStorage.value.indexOf(oldName)
+    if (index !== -1) {
+      ListasEnStorage.value[index] = nuevaLista.value
+    }
+    viendoListas.value = ListasEnStorage.value
+    selectedLista.value = nuevaLista.value
+    nuevaLista.value = ''
+    renamingLista.value = false
+  }).catch(() => {
+    alert('Error al renombrar la lista.')
+  })
+}
+
+function cancelarOperacion() {
+  addingLista.value = false
+  renamingLista.value = false
+  nuevaLista.value = ''
+}
+
+function borrarLista() {
+  if (!selectedLista.value) {
+    alert('Por favor, selecciona una lista para borrar.')
+    return
+  }
+  if (!ListasEnStorage.value.includes(selectedLista.value)) {
+    alert('La lista seleccionada no existe.')
+    return
+  }
+  if (
+    confirm(
+      `¿Estás seguro de que deseas borrar la lista "${selectedLista.value}"?`,
+    )
+  ) {
+    listasManager.BorrarLista(selectedLista.value).then(() => {
+      ListasEnStorage.value = ListasEnStorage.value.filter(
+        (lista) => lista !== selectedLista.value,
+      )
+      viendoListas.value = ListasEnStorage.value
+      selectedLista.value = ''
+    })
+  }
 }
 </script>
 
@@ -158,11 +260,36 @@ function clickOrigen(viendostr: string) {
         />
       </div>
     </div>
-
+    <div style="width: 100%;" v-if="viendo === 'listas'">
+      <div>
+      <select v-model="selectedLista" style="width: 80%;">
+        <option
+          v-for="(lista, index) in viendoListas"
+          :key="index"
+          :value="lista"
+        >
+          {{ lista }}
+        </option>
+      </select>
+      <button @click="addingLista = true">Nueva Lista</button>
+      <button @click="borrarLista">Borrar Lista</button>
+      <button @click="renombrarLista">Renombrar Lista</button>
+      </div>
+      <div v-if="addingLista || renamingLista">
+        <input 
+          v-model="nuevaLista" 
+          :placeholder="renamingLista ? 'Nuevo nombre de la lista' : 'Nueva lista'" 
+        />
+        <button @click="renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()">
+          {{ renamingLista ? 'Renombrar' : 'Agregar' }}
+        </button>
+        <button @click="cancelarOperacion">Cancelar</button>
+      </div>
+    </div>
     <tablacanciones
       v-if="viendo === 'canciones'"
       :canciones="IndiceCanciones"
-      @borrar="clickBorrarLocalStorage"
+      @borrar="clickBorrarLista"
       @tocar="clickTocar"
     />
   </div>
