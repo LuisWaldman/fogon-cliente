@@ -224,6 +224,7 @@ function VerFiltros() {
         v-model="busqueda"
         placeholder="Buscar..."
         style="width: 60%"
+        @keydown.enter="buscarCanciones()"
       />
       {{ refEstadoBusqueda }}
     </div>
