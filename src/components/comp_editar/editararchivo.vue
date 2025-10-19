@@ -114,7 +114,7 @@ function guardarCambios() {
       </option>
       <option
         value="server"
-        v-if="appStore.estadosApp.estadoSesion === 'logueado'"
+        v-if="appStore.estadosApp.estadoLogin === 'logueado'"
       >
         🔌Servidor
       </option>

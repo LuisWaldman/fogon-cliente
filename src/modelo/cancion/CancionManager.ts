@@ -142,4 +142,46 @@ export class CancionManager {
     }
     return CancionIndexedDBManager.GetDBIndex(this.db)
   }
+
+  public async GetServerIndex(): Promise<ItemIndiceCancion[]> {
+    const response = await this.cliente?.HTTPGET('indice/owner')
+    if (!response) {
+      return []
+    }
+
+    const data = await response.json()
+    if (!Array.isArray(data)) {
+      return []
+    }
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return data.map((item: any) => {
+      const origen = new OrigenCancion(
+        'server',
+        item.origen?.fileName || '',
+        item.owner || '',
+      )
+      const indiceItem = new ItemIndiceCancion(
+        origen,
+        item.cancion || '',
+        item.banda || '',
+      )
+
+      // Mapear propiedades adicionales si existen en la respuesta
+      indiceItem.escala = item.escala || ''
+      indiceItem.totalCompases = item.totalCompases || 0
+      indiceItem.compasUnidad = item.compasUnidad || 0
+      indiceItem.compasCantidad = item.compasCantidad || 4
+      indiceItem.bpm = item.bpm || 60
+      indiceItem.cantacordes = item.cantacordes || 0
+      indiceItem.cantpartes = item.cantpartes || 0
+      indiceItem.calidad = item.calidad || 1
+      indiceItem.video = item.video || false
+      indiceItem.pentagramas = item.pentagramas || []
+      indiceItem.etiquetas = item.etiquetas || []
+      indiceItem.owner = item.owner || ''
+
+      return indiceItem
+    })
+  }
 }

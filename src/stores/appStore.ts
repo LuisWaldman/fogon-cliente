@@ -15,6 +15,7 @@ import type { UserSesion } from '../modelo/userSesion'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { EstadosAplicacion } from '../EstadosAplicacion'
 import type { MediaVista } from '../modelo/reproduccion/MediaVista'
+import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
@@ -61,6 +62,8 @@ export const useAppStore = defineStore('app', () => {
   const noticias = ref<Noticia[]>([])
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
   const estado = ref<string>('No iniciado')
+  const listaIndices = ref<ItemIndiceCancion[]>([])
+
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
     estado.value = nuevoEstado
@@ -105,6 +108,7 @@ export const useAppStore = defineStore('app', () => {
     noticias,
     mensajes,
     sesiones,
+    IndicesServer: listaIndices,
     actualizarEstado,
     actualizarEstadoConexion,
     actualizarEstadoReproduccion,

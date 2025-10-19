@@ -74,9 +74,7 @@ function AgregarALista(index: number) {
     </thead>
     <tbody v-if="canciones.length === 0">
       <tr>
-        <td colspan="5" style="text-align: center">
-          No tenes canciones en el LocalStorage
-        </td>
+        <td colspan="5" style="text-align: center">Sin canciones</td>
       </tr>
     </tbody>
     <tbody v-if="canciones.length > 0">

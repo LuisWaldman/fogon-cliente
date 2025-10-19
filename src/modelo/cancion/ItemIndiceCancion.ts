@@ -44,6 +44,7 @@ export class ItemIndiceCancion {
   public cancion: string
   public banda: string
   public acordes: string
+  public owner: string
   constructor(_origen: OrigenCancion, _cancion: string, _banda: string) {
     this.origen = _origen
     this.acordes = ''
@@ -61,6 +62,7 @@ export class ItemIndiceCancion {
     this.video = false
     this.pentagramas = []
     this.escala = ''
+    this.owner = ''
   }
 
   public static BuildFromCancion(
