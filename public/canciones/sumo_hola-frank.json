@@ -1,1 +1,58 @@
-{"cancion": "hola-frank", "banda": "sumo", "escala": "A", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "F#", "D"]}, {"nombre": "parte2", "acordes": ["E", "A", "F#", "B", "E"]}], "orden_partes": [0, 1]}, "letras": [["de ", "tele", "fon", "o:/n"], ["Sunday morning blues, yo", "u know/n"], ["Just ain't the bet", ""]], "medias": [{"tipo": "Youtube", "id": "J6l-nr6o-Hg", "delay": 0}]}
+{
+    "cancion": "hola-frank",
+    "banda": "sumo",
+    "escala": "A",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "F#",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "A",
+                    "F#",
+                    "B",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "de ",
+            "tele",
+            "fon",
+            "o:/n"
+        ],
+        [
+            "Sunday morning blues, yo",
+            "u know/n"
+        ],
+        [
+            "Just ain't the bet",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "J6l-nr6o-Hg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

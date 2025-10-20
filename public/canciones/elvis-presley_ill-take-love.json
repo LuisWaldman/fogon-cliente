@@ -1,1 +1,321 @@
-{"cancion": "Ill-Take-Love", "banda": "elvis-presley", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "A", "D"]}, {"nombre": "parte2", "acordes": ["G"]}, {"nombre": "parte3", "acordes": ["A7"]}, {"nombre": "parte4", "acordes": ["D"]}, {"nombre": "parte5", "acordes": ["A"]}], "orden_partes": [0, 1, 2, 1, 0, 1, 2, 1, 1, 3, 1, 3, 1, 3, 4, 4, 3, 1, 2, 1, 0, 1, 2, 1, 0, 1, 2, 1, 1, 3, 1, 3, 1, 3, 4, 4, 3, 1, 2, 1, 1, 3, 4, 2, 4, 2, 4, 0, 1, 2, 1, 0, 1, 2, 1, 1, 3, 1, 3, 1, 3, 4, 4, 3, 1, 2, 1, 1, 3, 4, 2, 4, 2, 4, 0, 1, 2, 1, 0, 1, 2, 1, 1, 3, 1, 3, 1, 3, 4, 4, 3, 1, 4, 3, 1, 4, 3, 1, 4, 3, 2, 3]}, "letras": [["Some people t", "hink that pot of go", "ld", "", "", "/n"], ["Is all they e", "ver want to ho", "ld", "", "", "/n"], ["But there's a t", "reasure, I ", " think more of", "/n"], ["Measure for m", "easure  ..", "..  ", "I'll take love", "", "", "", "/n"], ["Some people t", "hink that their suc-ce", "ss", "", "", "/n"], ["Is all they n", "eed for, happi-ne", "ss", "", "", "/n"], ["But there's a p", "leasure, I ", " think more of", "/n"], ["Measure for  m", "easure  ..", "..  ", " I'll take love", "", "", "", "/n"], ["Pound for pound oh yeah and/n"], [" Ounce for ounce, l", "ove is, al", "l that, rea", "lly counts", "", "/n"], ["So let them h", "ave their wealth and fa", "me", "", "", "/n"], ["Eat cavi-a", "r and drink cham-pa", "gne", "", "", "/n"], ["You're all the t", "reasure I'", "m dreaming of", "/n"], ["Measure for m", "easure  ..", ".. I", "'ll take love", "", "", "", "/n"], ["Pound for pound oh yeah and/n"], ["Ounce for ounce, l", "ove is, al", "l that, rea", "lly counts", "", "/n"], ["So let them h", "ave their wealth and fa", "me", "", "", "/n"], ["Eat cavi-a", "r and drink cham-pa", "gne", "", "", "/n"], ["You're all the t", "reasure I'", "m dreaming of", "/n"], ["Measure for m", "easure  ..", ".. I", "'ll take love", "", "", "/nI'll take "], ["love,  ", "    ", " I'll take lov", "e", "", "/nI'll take "], ["love I", "'LL TAKE LO", "VE!"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "c6YFlrotINc", "delay": 0}]}
+{
+    "cancion": "Ill-Take-Love",
+    "banda": "elvis-presley",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            4,
+            4,
+            3,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            4,
+            4,
+            3,
+            1,
+            2,
+            1,
+            1,
+            3,
+            4,
+            2,
+            4,
+            2,
+            4,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            4,
+            4,
+            3,
+            1,
+            2,
+            1,
+            1,
+            3,
+            4,
+            2,
+            4,
+            2,
+            4,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            4,
+            4,
+            3,
+            1,
+            4,
+            3,
+            1,
+            4,
+            3,
+            1,
+            4,
+            3,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "Some people t",
+            "hink that pot of go",
+            "ld",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Is all they e",
+            "ver want to ho",
+            "ld",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "But there's a t",
+            "reasure, I ",
+            " think more of",
+            "/n"
+        ],
+        [
+            "Measure for m",
+            "easure  ..",
+            "..  ",
+            "I'll take love",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Some people t",
+            "hink that their suc-ce",
+            "ss",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Is all they n",
+            "eed for, happi-ne",
+            "ss",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "But there's a p",
+            "leasure, I ",
+            " think more of",
+            "/n"
+        ],
+        [
+            "Measure for  m",
+            "easure  ..",
+            "..  ",
+            " I'll take love",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pound for pound oh yeah and/n"
+        ],
+        [
+            " Ounce for ounce, l",
+            "ove is, al",
+            "l that, rea",
+            "lly counts",
+            "",
+            "/n"
+        ],
+        [
+            "So let them h",
+            "ave their wealth and fa",
+            "me",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Eat cavi-a",
+            "r and drink cham-pa",
+            "gne",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "You're all the t",
+            "reasure I'",
+            "m dreaming of",
+            "/n"
+        ],
+        [
+            "Measure for m",
+            "easure  ..",
+            ".. I",
+            "'ll take love",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pound for pound oh yeah and/n"
+        ],
+        [
+            "Ounce for ounce, l",
+            "ove is, al",
+            "l that, rea",
+            "lly counts",
+            "",
+            "/n"
+        ],
+        [
+            "So let them h",
+            "ave their wealth and fa",
+            "me",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Eat cavi-a",
+            "r and drink cham-pa",
+            "gne",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "You're all the t",
+            "reasure I'",
+            "m dreaming of",
+            "/n"
+        ],
+        [
+            "Measure for m",
+            "easure  ..",
+            ".. I",
+            "'ll take love",
+            "",
+            "",
+            "/nI'll take "
+        ],
+        [
+            "love,  ",
+            "    ",
+            " I'll take lov",
+            "e",
+            "",
+            "/nI'll take "
+        ],
+        [
+            "love I",
+            "'LL TAKE LO",
+            "VE!"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "c6YFlrotINc",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

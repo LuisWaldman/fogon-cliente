@@ -1,1 +1,460 @@
-{"cancion": "rejection", "banda": "ac-dc", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "G", "D"]}, {"nombre": "parte2", "acordes": ["D/C"]}, {"nombre": "parte3", "acordes": ["D"]}, {"nombre": "parte4", "acordes": ["E", "D", "G"]}, {"nombre": "parte5", "acordes": ["A", "D", "G"]}], "orden_partes": [0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 0, 0, 3, 2, 1, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 4, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 0, 0, 3, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 0, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 0, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2]}, "letras": [["Vers", "e 1]", "", "", "/nYou better g"], ["ive  ", " me what I wan", "t", "", "/nOr I'll b"], ["eat on you", "", "", "", "/nYou don't g"], ["ive  ", "  me what I nee", "d", "", "/nAnd I'll c"], ["ome for you", "", "", "", "/nBetter k"], ["eep me on yo", "ur side, or I'll find you in the night", "/nI got your n"], ["ame and your nu", "mber and I'll set you all ablaze", "/nBest g"], ["ive   ", " me what I want", "/nOr I'll come for y"], ["ou", "", "/nYes, I'll c"], ["ome for you", "/nIf you rej"], ["e---", "--ct me,", "/nI'll "], ["take wha", "t I  want", "", "", "", "", "/nDisresp"], ["e----", "ct me,", "", "", "/nAnd you get b"], ["urned", "", "", "", "/nBest keep m"], ["e    ", "satisfied, o", "r you know", " I'll eat ", "you alive", "/nIf you rej"], ["e---", "--ct me,", "/nI'll "], ["take wha", "t I  want", "", "", "", "", "/nI got a b"], ["all   ", "  and chai", "n", "", "/nAnd I'll hunt for y"], ["ou", "", "", "", "/nI ain't g"], ["ot   ", " no nam", "e", "", "/nI'll look out for y"], ["ou", "", "", "", "/nR"], ["evenge it ain't a si", "n, won't doubt I'm comin' in", "/nK"], ["ick me when I'm do", "wn, stand up without a sound", "/nBetter pl"], ["ay   ", " my game", "/nOr I'll b"], ["eat on yo", "u", "/nGet to f"], ["eed on you/nIf you rej"], ["e---", "--ct me,", "/nI'll "], ["take wha", "t I  want", "", "", "/nT"], ["ake what I wa", "nt/nDisresp"], ["e----", "ct me,", "", "", "/nAnd you get b"], ["urned", "", "", "", "/n"], [" Now, I don't wa", "nt your money, agreed", "/n"], [" You better give me", " just what I need", "/nIf you rej"], ["e---", "--ct me,", "/nI'll "], ["take wha", "t I  want", "", "/nHey,"], [" hey,  ", "take what", " I want/n["], ["Chor", "us]", "", "", "/nIf you rej"], ["e---", "--ct me,", "/nI'll "], ["take wha", "t I  want", "", "", "", "", "/nDisresp"], ["e----", "ct me,", "", "", "/nAnd you get b"], ["urned", "", "", "", "/n"], [" Now, I don't wa", "nt your money, agreed", "/n"], [" You better give me", " just what I need", "/nIf you rej"], ["e---", "--ct me,", "/nI'll"], [" take wh", "at I  wan", "t", "/nHey,"], [" hey,  ", "take what", " I want", "", "", "/n"], [" Take wha", "t I want", "", "", "/n"], [" Take wha", "t I want/n"], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "goy-I4RtILI", "delay": 0}]}
+{
+    "cancion": "rejection",
+    "banda": "ac-dc",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D/C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            3,
+            2,
+            1,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            4,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            3,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Vers",
+            "e 1]",
+            "",
+            "",
+            "/nYou better g"
+        ],
+        [
+            "ive  ",
+            " me what I wan",
+            "t",
+            "",
+            "/nOr I'll b"
+        ],
+        [
+            "eat on you",
+            "",
+            "",
+            "",
+            "/nYou don't g"
+        ],
+        [
+            "ive  ",
+            "  me what I nee",
+            "d",
+            "",
+            "/nAnd I'll c"
+        ],
+        [
+            "ome for you",
+            "",
+            "",
+            "",
+            "/nBetter k"
+        ],
+        [
+            "eep me on yo",
+            "ur side, or I'll find you in the night",
+            "/nI got your n"
+        ],
+        [
+            "ame and your nu",
+            "mber and I'll set you all ablaze",
+            "/nBest g"
+        ],
+        [
+            "ive   ",
+            " me what I want",
+            "/nOr I'll come for y"
+        ],
+        [
+            "ou",
+            "",
+            "/nYes, I'll c"
+        ],
+        [
+            "ome for you",
+            "/nIf you rej"
+        ],
+        [
+            "e---",
+            "--ct me,",
+            "/nI'll "
+        ],
+        [
+            "take wha",
+            "t I  want",
+            "",
+            "",
+            "",
+            "",
+            "/nDisresp"
+        ],
+        [
+            "e----",
+            "ct me,",
+            "",
+            "",
+            "/nAnd you get b"
+        ],
+        [
+            "urned",
+            "",
+            "",
+            "",
+            "/nBest keep m"
+        ],
+        [
+            "e    ",
+            "satisfied, o",
+            "r you know",
+            " I'll eat ",
+            "you alive",
+            "/nIf you rej"
+        ],
+        [
+            "e---",
+            "--ct me,",
+            "/nI'll "
+        ],
+        [
+            "take wha",
+            "t I  want",
+            "",
+            "",
+            "",
+            "",
+            "/nI got a b"
+        ],
+        [
+            "all   ",
+            "  and chai",
+            "n",
+            "",
+            "/nAnd I'll hunt for y"
+        ],
+        [
+            "ou",
+            "",
+            "",
+            "",
+            "/nI ain't g"
+        ],
+        [
+            "ot   ",
+            " no nam",
+            "e",
+            "",
+            "/nI'll look out for y"
+        ],
+        [
+            "ou",
+            "",
+            "",
+            "",
+            "/nR"
+        ],
+        [
+            "evenge it ain't a si",
+            "n, won't doubt I'm comin' in",
+            "/nK"
+        ],
+        [
+            "ick me when I'm do",
+            "wn, stand up without a sound",
+            "/nBetter pl"
+        ],
+        [
+            "ay   ",
+            " my game",
+            "/nOr I'll b"
+        ],
+        [
+            "eat on yo",
+            "u",
+            "/nGet to f"
+        ],
+        [
+            "eed on you/nIf you rej"
+        ],
+        [
+            "e---",
+            "--ct me,",
+            "/nI'll "
+        ],
+        [
+            "take wha",
+            "t I  want",
+            "",
+            "",
+            "/nT"
+        ],
+        [
+            "ake what I wa",
+            "nt/nDisresp"
+        ],
+        [
+            "e----",
+            "ct me,",
+            "",
+            "",
+            "/nAnd you get b"
+        ],
+        [
+            "urned",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Now, I don't wa",
+            "nt your money, agreed",
+            "/n"
+        ],
+        [
+            " You better give me",
+            " just what I need",
+            "/nIf you rej"
+        ],
+        [
+            "e---",
+            "--ct me,",
+            "/nI'll "
+        ],
+        [
+            "take wha",
+            "t I  want",
+            "",
+            "/nHey,"
+        ],
+        [
+            " hey,  ",
+            "take what",
+            " I want/n["
+        ],
+        [
+            "Chor",
+            "us]",
+            "",
+            "",
+            "/nIf you rej"
+        ],
+        [
+            "e---",
+            "--ct me,",
+            "/nI'll "
+        ],
+        [
+            "take wha",
+            "t I  want",
+            "",
+            "",
+            "",
+            "",
+            "/nDisresp"
+        ],
+        [
+            "e----",
+            "ct me,",
+            "",
+            "",
+            "/nAnd you get b"
+        ],
+        [
+            "urned",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Now, I don't wa",
+            "nt your money, agreed",
+            "/n"
+        ],
+        [
+            " You better give me",
+            " just what I need",
+            "/nIf you rej"
+        ],
+        [
+            "e---",
+            "--ct me,",
+            "/nI'll"
+        ],
+        [
+            " take wh",
+            "at I  wan",
+            "t",
+            "/nHey,"
+        ],
+        [
+            " hey,  ",
+            "take what",
+            " I want",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Take wha",
+            "t I want",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Take wha",
+            "t I want/n"
+        ],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "goy-I4RtILI",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

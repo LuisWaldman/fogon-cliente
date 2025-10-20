@@ -1,1 +1,413 @@
-{"cancion": "instant-crush", "banda": "daft-punk", "escala": "F", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "Dm", "Am", "G"]}, {"nombre": "parte2", "acordes": ["Am", "G", "F", "Em", "Dm", "Am", "G"]}, {"nombre": "parte3", "acordes": ["Em", "Am", "G", "F", "Em", "Dm", "Am", "G"]}, {"nombre": "parte4", "acordes": ["Em", "Am", "Am", "F", "Dm", "G"]}, {"nombre": "parte5", "acordes": ["Am", "F", "Dm", "G"]}], "orden_partes": [0, 0, 0, 0, 0, 1, 2, 2, 2, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, 4, 1, 2, 2, 2, 3, 4, 4, 4]}, "letras": [[], [], ["I didn't want to be the one to forget/n"], ["I thought of everything I'd never regret/n"], ["A little time with you is all that I get/n"], ["That's all we need because it's all we can take/n"], ["One thing I never see the same when you're 'round/n"], ["I don't believe in him, his lips on the ground./n"], ["I want to take you to that place in the Roche/n"], ["But no one gives us any time anymore/n"], ["He asked me once if I'd look in on his dog/n"], ["You made an offer for it, then you ran off/n"], ["I got a picture of us kids in my head/n"], ["And all I hear is the last thing that you said:/n"], ["\"I listened to your problems, now listen to mine\"/nI didn't "], ["want to anymore/n"], ["And we will never be a", "lone aga", "in/nCause it doesn't "], ["happen everyd", "ay/nKinda counted on you "], ["being a f", "riend/nCan I "], ["give it up or give it aw", "ay/nNow I thought "], ["about what I wanna s", "ay/nBut I never "], ["really know where to g", "o/nSo I chained "], ["myself to a f", "riend/n'Cause I know it "], ["unlocks like a d", "oor/nAnd we will never be "], ["alone aga", "in/nCause it doesn't "], ["happen everyd", "ay/nKinda counted on you "], ["being a f", "riend/nCan I give it"], [" up or give it aw", "ay/nNow I thought about wh"], ["at I wanna s", "ay/nBut I never really kno"], ["w where to go", "/nSo I chained mysel"], ["f to a fri", "end/nSome "], ["more again", "/n"], ["It didn't matter what they wanted to see/n"], ["You thought he saw someone that looked just like me/n"], ["The summer memory that just never dies/n"], ["We worked too long and hard to give it no time/n"], ["He sees right through me, it's so easy with lies/n"], ["Cracks in the road that I would try and disguise/n"], ["He runs the scissor at the seam in the wall/n"], ["He cannot break it down or else he would fall/n"], ["1000 lonely stars/n"], ["Hiding in the cold/n"], ["Take it, oh I don't wanna s", "ing anymore/n[S"], ["olo]", "", "", "/n"], ["\"I listened to your problems, now listen to mine\"/n"], ["I didn't want to anymore/n"], ["And we will never", " be alone agai", "n/nCause it doesn't "], ["happen everyda", "y/nKinda counted on yo"], ["u being a fr", "iend/nCan I give it up or"], [" give it awa", "y/nNow I thought about w"], ["hat I wanna sa", "y/nBut I never really k"], ["now where to g", "o/nSo I chained myse"], ["lf to a fri", "end/n'Cause I know it unlo"], ["cks like a doo", "r/nAnd we will never "], ["be alone aga", "in/n'Cause it doesn't h"], ["appen everyd", "ay/nKinda counted on yo"], ["u being a fri", "end/nCan I give it up o"], ["r give it away", "/nNow I thought about "], ["what I wanna s", "ay/nBut I never really k"], ["now where to g", "o/nSo I chained myself "], ["to a frien", "d/n'Cause I know it unlock"], ["s like a d", "oor/n"], ["(I) don't underst", "and/ndon't get up"], ["set/nI'm not with "], ["you/n"], ["We're swimming ar", "ound/nIt's all I "], ["do when I'm with y", "ou/n"], ["And we will neve", "r be alone aga", "in/nCause it doesn't h"], ["appen everyda", "y/nKinda counted on you"], [" being a fri", "end/nCan I give it up or g"], ["ive it away", "/nNow I thought about wha"], ["t I wanna sa", "y/nBut I never really know"], [" where to ", "go/nSo I chained myself"], [" to a fri", "end/n'Cause I know it unlo"], ["cks like a doo", "r/nAnd we will never b"], ["e alone aga", "in/n'Cause it doesn't ha"], ["ppen everyd", "ay/nKinda counted on you b"], ["eing a fri", "end/nCan I give it up or g"], ["ive it away", "/nNow I thought about wh"], ["at I wanna sa", "y/nBut I never really know"], [" where to go", "/nSo I chained myself"], [" to a frie", "nd/n'Cause I know it unl"], ["ocks like a doo", "r/n"], [], [], [], []], "medias": [{"tipo": "Youtube", "id": "a5uQMwRMHcs", "delay": 0}]}
+{
+    "cancion": "instant-crush",
+    "banda": "daft-punk",
+    "escala": "F",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "F",
+                    "Em",
+                    "Dm",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Am",
+                    "G",
+                    "F",
+                    "Em",
+                    "Dm",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            2,
+            3,
+            4,
+            1,
+            2,
+            2,
+            2,
+            3,
+            4,
+            4,
+            4
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "I didn't want to be the one to forget/n"
+        ],
+        [
+            "I thought of everything I'd never regret/n"
+        ],
+        [
+            "A little time with you is all that I get/n"
+        ],
+        [
+            "That's all we need because it's all we can take/n"
+        ],
+        [
+            "One thing I never see the same when you're 'round/n"
+        ],
+        [
+            "I don't believe in him, his lips on the ground./n"
+        ],
+        [
+            "I want to take you to that place in the Roche/n"
+        ],
+        [
+            "But no one gives us any time anymore/n"
+        ],
+        [
+            "He asked me once if I'd look in on his dog/n"
+        ],
+        [
+            "You made an offer for it, then you ran off/n"
+        ],
+        [
+            "I got a picture of us kids in my head/n"
+        ],
+        [
+            "And all I hear is the last thing that you said:/n"
+        ],
+        [
+            "\"I listened to your problems, now listen to mine\"/nI didn't "
+        ],
+        [
+            "want to anymore/n"
+        ],
+        [
+            "And we will never be a",
+            "lone aga",
+            "in/nCause it doesn't "
+        ],
+        [
+            "happen everyd",
+            "ay/nKinda counted on you "
+        ],
+        [
+            "being a f",
+            "riend/nCan I "
+        ],
+        [
+            "give it up or give it aw",
+            "ay/nNow I thought "
+        ],
+        [
+            "about what I wanna s",
+            "ay/nBut I never "
+        ],
+        [
+            "really know where to g",
+            "o/nSo I chained "
+        ],
+        [
+            "myself to a f",
+            "riend/n'Cause I know it "
+        ],
+        [
+            "unlocks like a d",
+            "oor/nAnd we will never be "
+        ],
+        [
+            "alone aga",
+            "in/nCause it doesn't "
+        ],
+        [
+            "happen everyd",
+            "ay/nKinda counted on you "
+        ],
+        [
+            "being a f",
+            "riend/nCan I give it"
+        ],
+        [
+            " up or give it aw",
+            "ay/nNow I thought about wh"
+        ],
+        [
+            "at I wanna s",
+            "ay/nBut I never really kno"
+        ],
+        [
+            "w where to go",
+            "/nSo I chained mysel"
+        ],
+        [
+            "f to a fri",
+            "end/nSome "
+        ],
+        [
+            "more again",
+            "/n"
+        ],
+        [
+            "It didn't matter what they wanted to see/n"
+        ],
+        [
+            "You thought he saw someone that looked just like me/n"
+        ],
+        [
+            "The summer memory that just never dies/n"
+        ],
+        [
+            "We worked too long and hard to give it no time/n"
+        ],
+        [
+            "He sees right through me, it's so easy with lies/n"
+        ],
+        [
+            "Cracks in the road that I would try and disguise/n"
+        ],
+        [
+            "He runs the scissor at the seam in the wall/n"
+        ],
+        [
+            "He cannot break it down or else he would fall/n"
+        ],
+        [
+            "1000 lonely stars/n"
+        ],
+        [
+            "Hiding in the cold/n"
+        ],
+        [
+            "Take it, oh I don't wanna s",
+            "ing anymore/n[S"
+        ],
+        [
+            "olo]",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "\"I listened to your problems, now listen to mine\"/n"
+        ],
+        [
+            "I didn't want to anymore/n"
+        ],
+        [
+            "And we will never",
+            " be alone agai",
+            "n/nCause it doesn't "
+        ],
+        [
+            "happen everyda",
+            "y/nKinda counted on yo"
+        ],
+        [
+            "u being a fr",
+            "iend/nCan I give it up or"
+        ],
+        [
+            " give it awa",
+            "y/nNow I thought about w"
+        ],
+        [
+            "hat I wanna sa",
+            "y/nBut I never really k"
+        ],
+        [
+            "now where to g",
+            "o/nSo I chained myse"
+        ],
+        [
+            "lf to a fri",
+            "end/n'Cause I know it unlo"
+        ],
+        [
+            "cks like a doo",
+            "r/nAnd we will never "
+        ],
+        [
+            "be alone aga",
+            "in/n'Cause it doesn't h"
+        ],
+        [
+            "appen everyd",
+            "ay/nKinda counted on yo"
+        ],
+        [
+            "u being a fri",
+            "end/nCan I give it up o"
+        ],
+        [
+            "r give it away",
+            "/nNow I thought about "
+        ],
+        [
+            "what I wanna s",
+            "ay/nBut I never really k"
+        ],
+        [
+            "now where to g",
+            "o/nSo I chained myself "
+        ],
+        [
+            "to a frien",
+            "d/n'Cause I know it unlock"
+        ],
+        [
+            "s like a d",
+            "oor/n"
+        ],
+        [
+            "(I) don't underst",
+            "and/ndon't get up"
+        ],
+        [
+            "set/nI'm not with "
+        ],
+        [
+            "you/n"
+        ],
+        [
+            "We're swimming ar",
+            "ound/nIt's all I "
+        ],
+        [
+            "do when I'm with y",
+            "ou/n"
+        ],
+        [
+            "And we will neve",
+            "r be alone aga",
+            "in/nCause it doesn't h"
+        ],
+        [
+            "appen everyda",
+            "y/nKinda counted on you"
+        ],
+        [
+            " being a fri",
+            "end/nCan I give it up or g"
+        ],
+        [
+            "ive it away",
+            "/nNow I thought about wha"
+        ],
+        [
+            "t I wanna sa",
+            "y/nBut I never really know"
+        ],
+        [
+            " where to ",
+            "go/nSo I chained myself"
+        ],
+        [
+            " to a fri",
+            "end/n'Cause I know it unlo"
+        ],
+        [
+            "cks like a doo",
+            "r/nAnd we will never b"
+        ],
+        [
+            "e alone aga",
+            "in/n'Cause it doesn't ha"
+        ],
+        [
+            "ppen everyd",
+            "ay/nKinda counted on you b"
+        ],
+        [
+            "eing a fri",
+            "end/nCan I give it up or g"
+        ],
+        [
+            "ive it away",
+            "/nNow I thought about wh"
+        ],
+        [
+            "at I wanna sa",
+            "y/nBut I never really know"
+        ],
+        [
+            " where to go",
+            "/nSo I chained myself"
+        ],
+        [
+            " to a frie",
+            "nd/n'Cause I know it unl"
+        ],
+        [
+            "ocks like a doo",
+            "r/n"
+        ],
+        [],
+        [],
+        [],
+        []
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "a5uQMwRMHcs",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

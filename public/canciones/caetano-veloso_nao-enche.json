@@ -1,1 +1,371 @@
-{"cancion": "nao-enche", "banda": "caetano-veloso", "escala": "E7(5+)", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E7(5+)", "D11+/A", "Bb7M", "Cm7", "F7", "Bb7M", "Cm7", "F7", "Bb7M", "Fm7", "Bb7", "Eb7M", "Gm7", "C7", "Cm7", "F7", "Cm7", "F7", "Cm7", "F7", "Bb7M", "Cm7", "F7", "Bb7M", "Fm7", "Bb7", "Eb7M", "Gm7", "C7", "Cm7", "F7", "Cm7", "F7", "Ebm7", "Cm7", "F7", "Ebm7", "Cm7", "F7", "Ebm7", "Cm7", "F7", "Ebm7", "Cm7", "F7", "Cm7", "F7", "Bb7M", "Cm7", "F7", "Bb7M", "Fm7", "Bb7", "Eb7M", "Gm7", "C7", "Cm7", "F7", "Cm7", "F7", "Cm7", "F7", "Bb7M", "Cm7", "F7", "Bb7M", "Fm7", "Bb7", "Eb7M", "Gm7", "C7M", "Cm7", "F7", "Cm7", "F7", "Ebm7", "Ebm7", "Cm7", "F7", "Ebm7", "Cm7", "F7", "Cm7", "F7", "Bb7M", "Cm7", "F7", "Bb7M", "Fm7", "Bb7", "Eb7M", "Gm7", "C7", "Cm7", "F7", "Cm7", "F7", "Cm7", "F7", "Bb7M", "Cm7", "F7", "Bb7M", "Fm7", "Bb7", "Eb7M", "Gm7", "C7", "Cm7", "F7", "Cm7", "F7(9-)", "Bb7M", "Gm7", "Cm7", "F7", "Ebm7", "Gm7", "Cm7", "F7", "Ebm7", "Gm7", "Cm7", "F7", "Bb7M/9"]}], "orden_partes": [0]}, "letras": [[], ["e larga, n", "o enche/n"], ["Voc\u00ea n\u00e3o entende nada e eu n\u00e3o vou te fazer entender/n"], ["Me encara, d", "e frente/n"], [" que voc\u00ea nunca quis ver n\u00e3o vai querer entender/n"], ["Meu lado, m", "eu jeito/n"], ["O que eu herdei da minha gente e nunca posso perder/n"], ["Me larga, n", "o enche/nMe d"], ["eixa viver, me dei", "xa viver, me deixa ", "viver, me deixa v", "iver/n"], ["Cuidado, o", "xente !/n"], ["Est\u00e1 no meu querer poder fazer voc\u00ea desabar/n"], ["Do salto, ", "nem tente/n"], ["Manter as coisas como est\u00e3o porque n\u00e3o d\u00e1, n\u00e3o vai dar/n"], ["Quadrada, d", "emente/n"], ["A melodia do meu samba p\u00f5e voce no lugar/n"], ["Me larga, n", "o enche/nMe d"], ["eixa cantar, me dei", "xa cantar, me deixa", " cantar, me deixa c", "antar/nEu vo"], ["u/nClarifi"], ["car", "/nA minha "], ["voz/nGritando: "], ["na...d", "a mais de n", "s!/nMando me"], ["u bando", " anuncia", "r/nVou me "], ["livrar de v", "oce/n"], ["Harpia, a", "ranha/n"], ["Sabedoria de rapina e de enredar, de enredar/n"], ["Perua, pi", "ranha/n"], ["Minha energia \u00e9 que mant\u00e9m voc\u00ea suspensa no ar/n"], ["Pra rua! s", "e manda/n"], ["Sai do meu sangue sanguessuga, que s\u00f3 sabe sugar/n"], ["Pirata, ma", "landra/nMe d"], ["eixa gozar, me dei", "xa gozar, me deixa", " gozar, me deixa g", "ozar/n"], ["Vagaba, v", "ampira/n"], ["O velho esquema desmorona desta vez pra valer/n"], ["Tarada, m", "esquinha/n"], ["pensa que \u00e9 a dona e eu lhe pergunto:quem lhe deu tanto ax\u00e9?/n"], ["-toa, ", "vadia/n"], ["Come\u00e7a uma outra hist\u00f3ria aqui na luz deste dia d/n"], ["Na boa, na", " minha/nEu v"], ["ou viver dez/nEu v"], ["ou viver cem/nEu v"], ["ou vou viver mil/nEu v"], ["ou viver sem vo", "c\u00ea/n"], [], [], [], ["Vagaba, v", "ampira/n"], ["O velho esquema desmorona desta vez pra valer/n"], ["Tarada, m", "esquinha/n"], ["pensa que \u00e9 a dona e eu lhe pergunto:quem lhe deu tanto ax\u00e9?/n"], ["-toa, ", "vadia/n"], ["Come\u00e7a uma outra hist\u00f3ria aqui na luz deste dia d/n"], ["Na boa, na", " minha/nEu v"], ["ou viver dez/nEu v"], ["ou viver cem/nEu v"], ["ou vou viver mil/nEu v"], ["ou viver sem voc", "\u00ea", "", "/nEu "], ["vou viver sem voc", "\u00ea", "", "/nNa l"], ["uz desse dia D", "", "", "/nEu v"], ["ou viver sem voc", "\u00ea"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "x2Dg_GPjYRk", "delay": 0}]}
+{
+    "cancion": "nao-enche",
+    "banda": "caetano-veloso",
+    "escala": "E7(5+)",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E7(5+)",
+                    "D11+/A",
+                    "Bb7M",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Fm7",
+                    "Bb7",
+                    "Eb7M",
+                    "Gm7",
+                    "C7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Fm7",
+                    "Bb7",
+                    "Eb7M",
+                    "Gm7",
+                    "C7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Fm7",
+                    "Bb7",
+                    "Eb7M",
+                    "Gm7",
+                    "C7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Fm7",
+                    "Bb7",
+                    "Eb7M",
+                    "Gm7",
+                    "C7M",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Fm7",
+                    "Bb7",
+                    "Eb7M",
+                    "Gm7",
+                    "C7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Fm7",
+                    "Bb7",
+                    "Eb7M",
+                    "Gm7",
+                    "C7",
+                    "Cm7",
+                    "F7",
+                    "Cm7",
+                    "F7(9-)",
+                    "Bb7M",
+                    "Gm7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Gm7",
+                    "Cm7",
+                    "F7",
+                    "Ebm7",
+                    "Gm7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M/9"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "e larga, n",
+            "o enche/n"
+        ],
+        [
+            "Você não entende nada e eu não vou te fazer entender/n"
+        ],
+        [
+            "Me encara, d",
+            "e frente/n"
+        ],
+        [
+            " que você nunca quis ver não vai querer entender/n"
+        ],
+        [
+            "Meu lado, m",
+            "eu jeito/n"
+        ],
+        [
+            "O que eu herdei da minha gente e nunca posso perder/n"
+        ],
+        [
+            "Me larga, n",
+            "o enche/nMe d"
+        ],
+        [
+            "eixa viver, me dei",
+            "xa viver, me deixa ",
+            "viver, me deixa v",
+            "iver/n"
+        ],
+        [
+            "Cuidado, o",
+            "xente !/n"
+        ],
+        [
+            "Está no meu querer poder fazer você desabar/n"
+        ],
+        [
+            "Do salto, ",
+            "nem tente/n"
+        ],
+        [
+            "Manter as coisas como estão porque não dá, não vai dar/n"
+        ],
+        [
+            "Quadrada, d",
+            "emente/n"
+        ],
+        [
+            "A melodia do meu samba põe voce no lugar/n"
+        ],
+        [
+            "Me larga, n",
+            "o enche/nMe d"
+        ],
+        [
+            "eixa cantar, me dei",
+            "xa cantar, me deixa",
+            " cantar, me deixa c",
+            "antar/nEu vo"
+        ],
+        [
+            "u/nClarifi"
+        ],
+        [
+            "car",
+            "/nA minha "
+        ],
+        [
+            "voz/nGritando: "
+        ],
+        [
+            "na...d",
+            "a mais de n",
+            "s!/nMando me"
+        ],
+        [
+            "u bando",
+            " anuncia",
+            "r/nVou me "
+        ],
+        [
+            "livrar de v",
+            "oce/n"
+        ],
+        [
+            "Harpia, a",
+            "ranha/n"
+        ],
+        [
+            "Sabedoria de rapina e de enredar, de enredar/n"
+        ],
+        [
+            "Perua, pi",
+            "ranha/n"
+        ],
+        [
+            "Minha energia é que mantém você suspensa no ar/n"
+        ],
+        [
+            "Pra rua! s",
+            "e manda/n"
+        ],
+        [
+            "Sai do meu sangue sanguessuga, que só sabe sugar/n"
+        ],
+        [
+            "Pirata, ma",
+            "landra/nMe d"
+        ],
+        [
+            "eixa gozar, me dei",
+            "xa gozar, me deixa",
+            " gozar, me deixa g",
+            "ozar/n"
+        ],
+        [
+            "Vagaba, v",
+            "ampira/n"
+        ],
+        [
+            "O velho esquema desmorona desta vez pra valer/n"
+        ],
+        [
+            "Tarada, m",
+            "esquinha/n"
+        ],
+        [
+            "pensa que é a dona e eu lhe pergunto:quem lhe deu tanto axé?/n"
+        ],
+        [
+            "-toa, ",
+            "vadia/n"
+        ],
+        [
+            "Começa uma outra história aqui na luz deste dia d/n"
+        ],
+        [
+            "Na boa, na",
+            " minha/nEu v"
+        ],
+        [
+            "ou viver dez/nEu v"
+        ],
+        [
+            "ou viver cem/nEu v"
+        ],
+        [
+            "ou vou viver mil/nEu v"
+        ],
+        [
+            "ou viver sem vo",
+            "cê/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "Vagaba, v",
+            "ampira/n"
+        ],
+        [
+            "O velho esquema desmorona desta vez pra valer/n"
+        ],
+        [
+            "Tarada, m",
+            "esquinha/n"
+        ],
+        [
+            "pensa que é a dona e eu lhe pergunto:quem lhe deu tanto axé?/n"
+        ],
+        [
+            "-toa, ",
+            "vadia/n"
+        ],
+        [
+            "Começa uma outra história aqui na luz deste dia d/n"
+        ],
+        [
+            "Na boa, na",
+            " minha/nEu v"
+        ],
+        [
+            "ou viver dez/nEu v"
+        ],
+        [
+            "ou viver cem/nEu v"
+        ],
+        [
+            "ou vou viver mil/nEu v"
+        ],
+        [
+            "ou viver sem voc",
+            "ê",
+            "",
+            "/nEu "
+        ],
+        [
+            "vou viver sem voc",
+            "ê",
+            "",
+            "/nNa l"
+        ],
+        [
+            "uz desse dia D",
+            "",
+            "",
+            "/nEu v"
+        ],
+        [
+            "ou viver sem voc",
+            "ê"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "x2Dg_GPjYRk",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

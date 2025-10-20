@@ -1,1 +1,462 @@
-{"cancion": "sunshine", "banda": "aerosmith", "escala": "F#m", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F#m", "B", "D", "A", "F#5", "B5", "D5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "D5", "A5", "C#5", "B5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "D5", "A5", "C#5", "B5", "A5", "G#5", "F#5", "D5", "B5", "G#5", "F#5", "D5", "C#5", "B5", "F#5", "D5", "B5", "G#", "F#", "D", "C#", "B", "C#5", "B5", "A5", "F#5", "F#5", "B5", "D5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "D5", "A5", "C#5", "B5", "A5", "G#5", "F#5", "D5", "B5", "G#5", "F#5", "D5", "C#5", "B5", "F#5", "D5", "B5", "G#5", "F#5", "D5", "C#5", "B5", "C#5", "B5", "A5", "F#5", "C#", "B", "Abm", "B", "C#", "B", "Abm", "B", "C#", "B", "Abm", "B", "C#", "B", "F#5", "B5", "D5", "A5", "G#5", "F#5", "B5", "D5", "A5", "G#5", "D5", "A5", "C#5", "B5", "A5", "G#5", "F#5", "D5", "B5", "G#5", "F#5", "D5", "C#5", "B5", "F#5", "D5", "B5", "G#5", "F#5", "D5", "C#5", "B5", "F#5", "D5", "B5", "G#5", "F#5", "D5", "C#5", "B5", "F#5", "D5", "B5", "G#5", "F#5", "D5", "C#5", "B5", "C#5", "B5", "C#5", "B5", "A5"]}], "orden_partes": [0]}, "letras": [[], ["I sold my s", "oul for a one", " night stand", "", "/n"], ["I followed ", "Alice into Wo", "nderland", "", "/n"], ["I ate the mu", "shroom and ", "I danced wi", "th th", "e queen/nYeah we d"], ["anced in", " between all", " the li", "nes", "", "/n"], ["I followed ", "daylight righ", "t into the da", "rk", "/n"], ["Took to the", " Hatter like ", "a walk in the", " park", "/n"], ["But then I ", "met her yeah ", "she felt so r", "ight", "/nNo child o"], ["f the nig", "ht yeah was ", "she", "", "", "/nThey called her"], [" sunshi", "ne", "/nThe "], ["kind that everybo", "dy know", "s/n"], ["Yeah yea", "h/nS"], ["unshine", "", "/nShe fi"], ["ner than a pa", "inted ros", "e/n"], ["Yeah ye", "ah/n"], ["Sun..s", "hine ", "yeah", "/n"], ["Her kind of", " love's what", " I adore", "", "/n"], ["What kind ", "of trouble am", " I in for", "", "/n"], ["My kind of", " heaven lies ", "at hell's back", " doo", "r/nAnd I got "], ["more tha", "n I need", "", "", "", "/nCuz I need suns"], ["hine", "", "/nThe "], ["kind that everybo", "dy know", "s/n"], ["Yeah yea", "h/nMy "], ["sunshin", "e", "/nShe "], ["finer than a paint", "ed rose", "/n"], ["Yeah yea", "h/n"], ["Sunsh", "ine ye", "ah", "/n      "], ["Abm   ", " G#  ", "G      ", "F# (a", "queles", " sons", " eletron", "icos)", "", "", "", "", "", "/n"], ["I got the ka", "rma but it do", "n't come fre", "e", "/n"], ["The caterpi", "llar's tryin' t", "o cop a plea", "", "/nBut the sm"], ["oke ain", "'t got nothin' ", "on me", "", "", "/nYa gotta have m"], ["y suns", "hine", "/nThe "], ["kind that everybo", "dy know", "s/nY"], ["eah yea", "h My sunsh", "ine", "", "/nShe f"], ["iner than a pain", "ted rose", "/nY"], ["eah yea", "h/nShe's s"], ["unshin", "e", "/nThe k"], ["ind that eve", "rybody know", "s/nY"], ["eah yea", "h/nS"], ["unshi", "ne", "/nShe f"], ["iner than a pain", "ted rose", "/n"], ["Yeah yea", "h/n"], ["Sunshi", "ne/n"], ["Sunsh", "ine yeah", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "sFCb_8ZX9Q4", "delay": 0}]}
+{
+    "cancion": "sunshine",
+    "banda": "aerosmith",
+    "escala": "F#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "B",
+                    "D",
+                    "A",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "D5",
+                    "A5",
+                    "C#5",
+                    "B5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "D5",
+                    "A5",
+                    "C#5",
+                    "B5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "C#5",
+                    "B5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#",
+                    "F#",
+                    "D",
+                    "C#",
+                    "B",
+                    "C#5",
+                    "B5",
+                    "A5",
+                    "F#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "D5",
+                    "A5",
+                    "C#5",
+                    "B5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "C#5",
+                    "B5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "C#5",
+                    "B5",
+                    "C#5",
+                    "B5",
+                    "A5",
+                    "F#5",
+                    "C#",
+                    "B",
+                    "Abm",
+                    "B",
+                    "C#",
+                    "B",
+                    "Abm",
+                    "B",
+                    "C#",
+                    "B",
+                    "Abm",
+                    "B",
+                    "C#",
+                    "B",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "B5",
+                    "D5",
+                    "A5",
+                    "G#5",
+                    "D5",
+                    "A5",
+                    "C#5",
+                    "B5",
+                    "A5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "C#5",
+                    "B5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "C#5",
+                    "B5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "C#5",
+                    "B5",
+                    "F#5",
+                    "D5",
+                    "B5",
+                    "G#5",
+                    "F#5",
+                    "D5",
+                    "C#5",
+                    "B5",
+                    "C#5",
+                    "B5",
+                    "C#5",
+                    "B5",
+                    "A5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "I sold my s",
+            "oul for a one",
+            " night stand",
+            "",
+            "/n"
+        ],
+        [
+            "I followed ",
+            "Alice into Wo",
+            "nderland",
+            "",
+            "/n"
+        ],
+        [
+            "I ate the mu",
+            "shroom and ",
+            "I danced wi",
+            "th th",
+            "e queen/nYeah we d"
+        ],
+        [
+            "anced in",
+            " between all",
+            " the li",
+            "nes",
+            "",
+            "/n"
+        ],
+        [
+            "I followed ",
+            "daylight righ",
+            "t into the da",
+            "rk",
+            "/n"
+        ],
+        [
+            "Took to the",
+            " Hatter like ",
+            "a walk in the",
+            " park",
+            "/n"
+        ],
+        [
+            "But then I ",
+            "met her yeah ",
+            "she felt so r",
+            "ight",
+            "/nNo child o"
+        ],
+        [
+            "f the nig",
+            "ht yeah was ",
+            "she",
+            "",
+            "",
+            "/nThey called her"
+        ],
+        [
+            " sunshi",
+            "ne",
+            "/nThe "
+        ],
+        [
+            "kind that everybo",
+            "dy know",
+            "s/n"
+        ],
+        [
+            "Yeah yea",
+            "h/nS"
+        ],
+        [
+            "unshine",
+            "",
+            "/nShe fi"
+        ],
+        [
+            "ner than a pa",
+            "inted ros",
+            "e/n"
+        ],
+        [
+            "Yeah ye",
+            "ah/n"
+        ],
+        [
+            "Sun..s",
+            "hine ",
+            "yeah",
+            "/n"
+        ],
+        [
+            "Her kind of",
+            " love's what",
+            " I adore",
+            "",
+            "/n"
+        ],
+        [
+            "What kind ",
+            "of trouble am",
+            " I in for",
+            "",
+            "/n"
+        ],
+        [
+            "My kind of",
+            " heaven lies ",
+            "at hell's back",
+            " doo",
+            "r/nAnd I got "
+        ],
+        [
+            "more tha",
+            "n I need",
+            "",
+            "",
+            "",
+            "/nCuz I need suns"
+        ],
+        [
+            "hine",
+            "",
+            "/nThe "
+        ],
+        [
+            "kind that everybo",
+            "dy know",
+            "s/n"
+        ],
+        [
+            "Yeah yea",
+            "h/nMy "
+        ],
+        [
+            "sunshin",
+            "e",
+            "/nShe "
+        ],
+        [
+            "finer than a paint",
+            "ed rose",
+            "/n"
+        ],
+        [
+            "Yeah yea",
+            "h/n"
+        ],
+        [
+            "Sunsh",
+            "ine ye",
+            "ah",
+            "/n      "
+        ],
+        [
+            "Abm   ",
+            " G#  ",
+            "G      ",
+            "F# (a",
+            "queles",
+            " sons",
+            " eletron",
+            "icos)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I got the ka",
+            "rma but it do",
+            "n't come fre",
+            "e",
+            "/n"
+        ],
+        [
+            "The caterpi",
+            "llar's tryin' t",
+            "o cop a plea",
+            "",
+            "/nBut the sm"
+        ],
+        [
+            "oke ain",
+            "'t got nothin' ",
+            "on me",
+            "",
+            "",
+            "/nYa gotta have m"
+        ],
+        [
+            "y suns",
+            "hine",
+            "/nThe "
+        ],
+        [
+            "kind that everybo",
+            "dy know",
+            "s/nY"
+        ],
+        [
+            "eah yea",
+            "h My sunsh",
+            "ine",
+            "",
+            "/nShe f"
+        ],
+        [
+            "iner than a pain",
+            "ted rose",
+            "/nY"
+        ],
+        [
+            "eah yea",
+            "h/nShe's s"
+        ],
+        [
+            "unshin",
+            "e",
+            "/nThe k"
+        ],
+        [
+            "ind that eve",
+            "rybody know",
+            "s/nY"
+        ],
+        [
+            "eah yea",
+            "h/nS"
+        ],
+        [
+            "unshi",
+            "ne",
+            "/nShe f"
+        ],
+        [
+            "iner than a pain",
+            "ted rose",
+            "/n"
+        ],
+        [
+            "Yeah yea",
+            "h/n"
+        ],
+        [
+            "Sunshi",
+            "ne/n"
+        ],
+        [
+            "Sunsh",
+            "ine yeah",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "sFCb_8ZX9Q4",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

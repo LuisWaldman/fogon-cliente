@@ -1,1 +1,368 @@
-{"cancion": "Billy-4", "banda": "bob-dylan", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "A", "Asus4"]}, {"nombre": "parte2", "acordes": ["A"]}, {"nombre": "parte3", "acordes": ["D"]}, {"nombre": "parte4", "acordes": ["Asus4"]}, {"nombre": "parte5", "acordes": ["E"]}], "orden_partes": [0, 0, 1, 2, 1, 3, 1, 4, 1, 3, 0, 0, 1, 2, 1, 3, 1, 4, 1, 3, 0, 0, 1, 2, 1, 3, 1, 4, 1, 3, 0, 0, 1, 2, 1, 3, 1, 4, 1, 3, 0, 1, 3, 0, 1, 3, 1, 2, 1, 4, 1, 3, 1, 4, 1, 3, 0, 0, 1, 2, 1, 3, 1, 4, 1, 3, 0, 0, 1, 2, 1, 3, 1, 4, 1, 3, 0, 0, 1, 2, 1, 4, 1, 3, 0, 0, 1, 2, 1, 4, 1, 3, 1, 4, 1, 3, 1, 4, 1, 3, 1]}, "letras": [["[Verse 1]/n"], ["There's guns across the river a", "bout to po", "und you/n"], ["There's a lawman on your trail like ", "to surro", "und you/n"], ["   Bounty hunters are dancing all a", "round you", "", "/n"], ["   Billy, they don't like you to be so f", "ree.", "", "/n"], ["Camping out all night on t", "he veran", "da/n"], ["Walking in the streets down by the ", "hacienda", "/n"], ["  Up to Boot Hill they'd like to s", "end ya", "", "/n"], ["  Billy, don't you turn your back on me", ".", "", "/n"], ["There's mills inside the minds of c", "razy fa", "ces/n"], ["Bullet holes and rifles i", "n their ca", "ses/n"], ["  There is always one more notch in four more a", "ces", "", "/n"], ["  Billy, and you're playing all alone.", "", "", "/n"], ["Playing around with some sweet s", "ignorit", "a/n"], ["Into her dark chamber ", "she will gr", "eet ya/n"], ["  In the shadows of the maizes she will l", "ead you", "", "/n"], ["  Billy, and you're going all alo", "ne.", "", "/n"], ["They say that Pat Garrett's g", "ot your nu", "mber", "", "/n"], ["So sleep with one eye open, ", "when you wa", "nder", "", "/n"], ["  Every little sound just might be t", "hunder/n"], ["Thunder from the barrel of his g", "un.", "", "/n"], [], [], [], ["[Verse 6]", "", "", "/n"], ["There's always another stranger s", "neaking gl", "ances/n"], ["Some trigger-happy fool willing t", "o take cha", "nces/n"], ["  Some old whore from San Pedro'll make adv", "ances", "", "/n"], ["Advances on your spirit and your s", "oul.", "", "/n"], ["The businessmen from Taos want y", "ou to go", " down/n"], ["So they've hired mister Garrett, h", "e'll force you to sl", "ow down/n"], ["  Billy, don't let it make you feel so l", "ow down", "", "/n"], ["  To be hunted by the man who was your f", "riend.", "", "/n"], ["So hang on to your woman, i", "f you go", "t one/n"], ["Remember in El Paso o", "nce you sh", "ot one/n"], ["  I'll be in Santa Fe-a ab", "out one/n"], ["Billy, you've been running for so lon", "g.", "", "/n"], ["Gypsy queens will play your g", "rand fina", "le/n"], ["Way down in some Tula - ", "rosa  al", "ley/n"], [" Maybe in La Rio Pecas v", "alley/n"], ["Billy, you're so far away from h", "ome", "", "/nBilly, you're so far away from home"], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "BLp-Mp8GfMw", "delay": 0}]}
+{
+    "cancion": "Billy-4",
+    "banda": "bob-dylan",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            0,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            0,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            0,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            0,
+            1,
+            3,
+            0,
+            1,
+            3,
+            1,
+            2,
+            1,
+            4,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            0,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            0,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            0,
+            0,
+            1,
+            2,
+            1,
+            4,
+            1,
+            3,
+            0,
+            0,
+            1,
+            2,
+            1,
+            4,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            1,
+            4,
+            1,
+            3,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "[Verse 1]/n"
+        ],
+        [
+            "There's guns across the river a",
+            "bout to po",
+            "und you/n"
+        ],
+        [
+            "There's a lawman on your trail like ",
+            "to surro",
+            "und you/n"
+        ],
+        [
+            "   Bounty hunters are dancing all a",
+            "round you",
+            "",
+            "/n"
+        ],
+        [
+            "   Billy, they don't like you to be so f",
+            "ree.",
+            "",
+            "/n"
+        ],
+        [
+            "Camping out all night on t",
+            "he veran",
+            "da/n"
+        ],
+        [
+            "Walking in the streets down by the ",
+            "hacienda",
+            "/n"
+        ],
+        [
+            "  Up to Boot Hill they'd like to s",
+            "end ya",
+            "",
+            "/n"
+        ],
+        [
+            "  Billy, don't you turn your back on me",
+            ".",
+            "",
+            "/n"
+        ],
+        [
+            "There's mills inside the minds of c",
+            "razy fa",
+            "ces/n"
+        ],
+        [
+            "Bullet holes and rifles i",
+            "n their ca",
+            "ses/n"
+        ],
+        [
+            "  There is always one more notch in four more a",
+            "ces",
+            "",
+            "/n"
+        ],
+        [
+            "  Billy, and you're playing all alone.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Playing around with some sweet s",
+            "ignorit",
+            "a/n"
+        ],
+        [
+            "Into her dark chamber ",
+            "she will gr",
+            "eet ya/n"
+        ],
+        [
+            "  In the shadows of the maizes she will l",
+            "ead you",
+            "",
+            "/n"
+        ],
+        [
+            "  Billy, and you're going all alo",
+            "ne.",
+            "",
+            "/n"
+        ],
+        [
+            "They say that Pat Garrett's g",
+            "ot your nu",
+            "mber",
+            "",
+            "/n"
+        ],
+        [
+            "So sleep with one eye open, ",
+            "when you wa",
+            "nder",
+            "",
+            "/n"
+        ],
+        [
+            "  Every little sound just might be t",
+            "hunder/n"
+        ],
+        [
+            "Thunder from the barrel of his g",
+            "un.",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[Verse 6]",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "There's always another stranger s",
+            "neaking gl",
+            "ances/n"
+        ],
+        [
+            "Some trigger-happy fool willing t",
+            "o take cha",
+            "nces/n"
+        ],
+        [
+            "  Some old whore from San Pedro'll make adv",
+            "ances",
+            "",
+            "/n"
+        ],
+        [
+            "Advances on your spirit and your s",
+            "oul.",
+            "",
+            "/n"
+        ],
+        [
+            "The businessmen from Taos want y",
+            "ou to go",
+            " down/n"
+        ],
+        [
+            "So they've hired mister Garrett, h",
+            "e'll force you to sl",
+            "ow down/n"
+        ],
+        [
+            "  Billy, don't let it make you feel so l",
+            "ow down",
+            "",
+            "/n"
+        ],
+        [
+            "  To be hunted by the man who was your f",
+            "riend.",
+            "",
+            "/n"
+        ],
+        [
+            "So hang on to your woman, i",
+            "f you go",
+            "t one/n"
+        ],
+        [
+            "Remember in El Paso o",
+            "nce you sh",
+            "ot one/n"
+        ],
+        [
+            "  I'll be in Santa Fe-a ab",
+            "out one/n"
+        ],
+        [
+            "Billy, you've been running for so lon",
+            "g.",
+            "",
+            "/n"
+        ],
+        [
+            "Gypsy queens will play your g",
+            "rand fina",
+            "le/n"
+        ],
+        [
+            "Way down in some Tula - ",
+            "rosa  al",
+            "ley/n"
+        ],
+        [
+            " Maybe in La Rio Pecas v",
+            "alley/n"
+        ],
+        [
+            "Billy, you're so far away from h",
+            "ome",
+            "",
+            "/nBilly, you're so far away from home"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "BLp-Mp8GfMw",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

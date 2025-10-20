@@ -1,1 +1,364 @@
-{"cancion": "i-must-have-lost-it-in-the-wind", "banda": "elton-john", "escala": "G", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "D", "G", "D", "E", "G", "C", "G", "D", "A/C#", "Bm", "G", "A", "Bm", "C", "G", "D", "Em", "G", "A", "Bm", "F#m", "G", "D", "Bm", "G", "D", "Bm", "F#m", "G", "D", "G", "A7", "D", "G", "D", "G", "D", "E", "G", "C", "G", "D", "A/C#", "Bm", "G", "A", "Bm", "C", "G", "D", "Em", "G", "A", "Bm", "F#m", "G", "D", "Bm", "G", "D", "Bm", "F#m", "G", "D", "G", "A7", "D", "G", "D", "G", "D", "E", "Em7", "A7", "Em7", "A7", "G", "A", "D", "A/C#", "Bm", "F#m", "G", "D", "Bm", "G", "D", "Bm", "F#m", "G", "D", "G", "A7", "D", "A/C#", "Bm", "F#m", "G", "D", "Bm", "G", "D", "Bm", "F#m", "G", "D", "G", "A", "D", "G", "A", "D", "G", "A", "Bm", "F#m", "G", "D", "G", "A", "D", "G", "D", "G", "D", "E"]}], "orden_partes": [0]}, "letras": [[], [], [], ["VERSE/n"], ["I'm no longer counting I", "'m not ke", "eping score", "/nI could s"], ["ay my list of l", "overs doesn't matt", "er anymore/nBut "], ["some are always in", " my heart/nAnd "], ["some I'm not so su", "re/nEither "], ["way they all l", "eft their mark/nAnd for "], ["some I found a c", "ure/nAnd from "], ["one you learn so", "mething/nA"], ["nother you learn, n", "othing/nAnd there's "], ["one who might te", "ach you everyth", "ing/nBe"], ["fore I learned to l", "isten/nAnd if "], ["indeed someone sa", "id it/nThen I "], ["guess I must have l", "ost it on the wi", "nd/n"], [], [], [], ["VERSE/n"], ["Back when I was younger each o", "ne wa", "s a pri", "ze/n"], ["Love just came a", "long and hit you ri", "ght between the eyes/n"], ["And one was just a t", "rophy catch/nAnd "], ["one was like a c", "urse/n"], ["Some would want to b", "leed you dry/n"], ["Some might quench your t", "hirst/nAnd from "], ["one you learn so", "mething/nA"], ["nother you learn, n", "othing/nAnd there's "], ["one who might te", "ach you everyth", "ing/nBe"], ["fore I learned to l", "isten/nAnd if "], ["indeed someone sa", "id it/nThen I "], ["guess I must have l", "ost it on the wi", "nd/n"], [], [], [], ["       (organ solo)/n"], ["CHORU", "S", "", "", "", "", "", "/nAnd from "], ["one you learn so", "mething/nA"], ["nother you learn, n", "othing/nAnd there's "], ["one who might te", "ach you everyth", "ing/nBe"], ["fore I learned to l", "isten/nAnd if "], ["indeed someone sa", "id it/nThen I "], ["guess I must have l", "ost it on the wi", "nd/n"], ["In cold w", "ater I went fi", "shing in warm sea", "s I cast a line", "/nAnd swore the "], ["heart I was reeling i", "n was perfect at the ti", "me/nYou couldn't "], ["tell me I was w", "rong, you couldn't te", "ll me anythi", "ng/nAnd if you did then I "], ["guess I must have l", "ost it on the wi", "nd/nAnd if you did then I "], ["guess I must have l", "ost it on the wi", "nd/nAnd if you did then I "], ["guess I must have l", "ost it on the wi", "nd", "", "", "/nAnd if you did then I "], ["guess I must have l", "ost it on the wi", "nd/n"], [], [], [], ["====================================================="]], "medias": [{"tipo": "Youtube", "id": "-9dJy5TIRYE", "delay": 0}]}
+{
+    "cancion": "i-must-have-lost-it-in-the-wind",
+    "banda": "elton-john",
+    "escala": "G",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "E",
+                    "G",
+                    "C",
+                    "G",
+                    "D",
+                    "A/C#",
+                    "Bm",
+                    "G",
+                    "A",
+                    "Bm",
+                    "C",
+                    "G",
+                    "D",
+                    "Em",
+                    "G",
+                    "A",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "G",
+                    "A7",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "E",
+                    "G",
+                    "C",
+                    "G",
+                    "D",
+                    "A/C#",
+                    "Bm",
+                    "G",
+                    "A",
+                    "Bm",
+                    "C",
+                    "G",
+                    "D",
+                    "Em",
+                    "G",
+                    "A",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "G",
+                    "A7",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "E",
+                    "Em7",
+                    "A7",
+                    "Em7",
+                    "A7",
+                    "G",
+                    "A",
+                    "D",
+                    "A/C#",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "G",
+                    "A7",
+                    "D",
+                    "A/C#",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "G",
+                    "A",
+                    "D",
+                    "G",
+                    "A",
+                    "D",
+                    "G",
+                    "A",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "G",
+                    "A",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [
+            "VERSE/n"
+        ],
+        [
+            "I'm no longer counting I",
+            "'m not ke",
+            "eping score",
+            "/nI could s"
+        ],
+        [
+            "ay my list of l",
+            "overs doesn't matt",
+            "er anymore/nBut "
+        ],
+        [
+            "some are always in",
+            " my heart/nAnd "
+        ],
+        [
+            "some I'm not so su",
+            "re/nEither "
+        ],
+        [
+            "way they all l",
+            "eft their mark/nAnd for "
+        ],
+        [
+            "some I found a c",
+            "ure/nAnd from "
+        ],
+        [
+            "one you learn so",
+            "mething/nA"
+        ],
+        [
+            "nother you learn, n",
+            "othing/nAnd there's "
+        ],
+        [
+            "one who might te",
+            "ach you everyth",
+            "ing/nBe"
+        ],
+        [
+            "fore I learned to l",
+            "isten/nAnd if "
+        ],
+        [
+            "indeed someone sa",
+            "id it/nThen I "
+        ],
+        [
+            "guess I must have l",
+            "ost it on the wi",
+            "nd/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "VERSE/n"
+        ],
+        [
+            "Back when I was younger each o",
+            "ne wa",
+            "s a pri",
+            "ze/n"
+        ],
+        [
+            "Love just came a",
+            "long and hit you ri",
+            "ght between the eyes/n"
+        ],
+        [
+            "And one was just a t",
+            "rophy catch/nAnd "
+        ],
+        [
+            "one was like a c",
+            "urse/n"
+        ],
+        [
+            "Some would want to b",
+            "leed you dry/n"
+        ],
+        [
+            "Some might quench your t",
+            "hirst/nAnd from "
+        ],
+        [
+            "one you learn so",
+            "mething/nA"
+        ],
+        [
+            "nother you learn, n",
+            "othing/nAnd there's "
+        ],
+        [
+            "one who might te",
+            "ach you everyth",
+            "ing/nBe"
+        ],
+        [
+            "fore I learned to l",
+            "isten/nAnd if "
+        ],
+        [
+            "indeed someone sa",
+            "id it/nThen I "
+        ],
+        [
+            "guess I must have l",
+            "ost it on the wi",
+            "nd/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "       (organ solo)/n"
+        ],
+        [
+            "CHORU",
+            "S",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/nAnd from "
+        ],
+        [
+            "one you learn so",
+            "mething/nA"
+        ],
+        [
+            "nother you learn, n",
+            "othing/nAnd there's "
+        ],
+        [
+            "one who might te",
+            "ach you everyth",
+            "ing/nBe"
+        ],
+        [
+            "fore I learned to l",
+            "isten/nAnd if "
+        ],
+        [
+            "indeed someone sa",
+            "id it/nThen I "
+        ],
+        [
+            "guess I must have l",
+            "ost it on the wi",
+            "nd/n"
+        ],
+        [
+            "In cold w",
+            "ater I went fi",
+            "shing in warm sea",
+            "s I cast a line",
+            "/nAnd swore the "
+        ],
+        [
+            "heart I was reeling i",
+            "n was perfect at the ti",
+            "me/nYou couldn't "
+        ],
+        [
+            "tell me I was w",
+            "rong, you couldn't te",
+            "ll me anythi",
+            "ng/nAnd if you did then I "
+        ],
+        [
+            "guess I must have l",
+            "ost it on the wi",
+            "nd/nAnd if you did then I "
+        ],
+        [
+            "guess I must have l",
+            "ost it on the wi",
+            "nd/nAnd if you did then I "
+        ],
+        [
+            "guess I must have l",
+            "ost it on the wi",
+            "nd",
+            "",
+            "",
+            "/nAnd if you did then I "
+        ],
+        [
+            "guess I must have l",
+            "ost it on the wi",
+            "nd/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "====================================================="
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "-9dJy5TIRYE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

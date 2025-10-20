@@ -1,1 +1,389 @@
-{"cancion": "stay", "banda": "miranda", "escala": "G", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "D", "C", "Am", "C", "G", "D", "C", "Am", "C", "G", "Am", "G#", "C", "D", "G", "D", "C", "Am", "G#", "C", "D", "G", "D", "C", "C", "D", "G", "G", "C", "D", "G", "C", "D", "G", "C", "D", "G", "C", "D", "G", "D", "C", "Am", "C", "G", "D", "C", "Am", "C", "G", "Am", "G#m", "C", "D", "G", "F", "Am", "G#", "C", "D", "G", "Bm", "D", "E", "C", "D", "G", "C", "D", "G", "C", "D", "G", "C", "D", "G", "C", "D", "G", "D", "C", "Am", "C", "G", "D", "C", "Am", "C", "G", "Am", "G#", "G", "D", "G", "F#m", "E", "Am", "G#", "G", "D", "G", "Dm", "D", "E", "C", "D", "G", "C", "D", "G", "C", "D", "G", "C", "D", "G", "C", "D", "G", "C", "D", "G", "G", "D", "C", "G", "C", "D", "G", "D", "G"]}], "orden_partes": [0]}, "letras": [[" Baby i", "f you leave me no", "w/nThere's no "], ["telling what I'll d", "o or if I'll ma", "ke it out/nGive me "], ["something I can k", "eep/nWith me "], ["all those lonely n", "ights that I can't fa", "ll asleep/nCuz I "], ["have a heart/nDes"], ["pite what you may t", "hink or what I sa", "y/nAnd I "], ["wouldn't have it a", "ny other wa", "y/nEven "], ["though it hurts/nIt's "], ["killing me with e", "very passing da", "y/nYou can "], ["heal me now it m", "akes it worth the pa", "in/nBut don't "], ["leave me now I'm b", "egging you to st", "ay/n"], ["Stay o", "h pl", "ease/n"], ["Stay p", "lease ju", "st/n"], ["Stay o", "h pl", "ease/n"], ["Stay p", "lease ju", "st/n"], ["  Baby i", "f you leave me no", "w/nI won't "], ["make it through the s", "urface I'm just go", "nna sink back down/nAnd we "], ["know it isn't l", "ove/nIt gets "], ["harder every d", "ay but it just ha", "s to be enough/nOh it's "], ["happening again/nI know this "], ["feeling like I'm losing/nEveryt"], ["hing is slipping through me and I", "'m gone/n"], ["I'd leave it all for a moment with you, is that w", "rong?/n"], ["  Is this the n", "ew normal?/n"], ["  It's getting l", "ate/n"], ["  I have to s", "ay that it", "'s oka", "y/n"], ["  But it isn't and I'm b", "egging you to/n"], ["Stay p", "lease jus", "t/n"], ["Stay o", "h ple", "ase/n"], ["Stay p", "lease jus", "t/n"], ["Stay o", "h ple", "ase/n"], ["Sta", "y", "/nOh I'm "], ["begging you to s", "tay and make this fe", "eling go away/nSt"], ["ay ", "(I'm begging you, oh baby stay)/nOh I'm "], ["begging you to s", "tay you know I ha", "te to feel this way/nCuz I"], [" have a heart/n"], ["Despite what you may t", "hink or what I sa", "y/nAnd I "], ["wouldn't have it a", "ny other w", "ay/nEven "], ["though it hurts/nIt's "], ["killing me with e", "very passing da", "y/nYou can "], ["heal me now it m", "akes it wo", "rth the pai", "n/n"], [" And still I'm b", "egging you to/n"], ["Stay p", "lease ju", "st/n"], ["Stay d", "on't go", "/n"], ["Stay p", "lease ju", "st/n"], ["Stay w", "on't yo", "u/n"], ["Stay (Don't leave I'm begging you to stay)/n"], ["please j", "ust st", "ay(I need you make it go away)/n"], ["Stay o", "h pl", "ease (Don't leave I'm begging you to stay, I need you oh)/n"], ["Stay p", "lease ju", "st/n"], ["Stay oh j", "ust st", "ay"]]}
+{
+    "cancion": "stay",
+    "banda": "miranda",
+    "escala": "G",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "C",
+                    "Am",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "Am",
+                    "C",
+                    "G",
+                    "Am",
+                    "G#",
+                    "C",
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "Am",
+                    "G#",
+                    "C",
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "D",
+                    "G",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "Am",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "Am",
+                    "C",
+                    "G",
+                    "Am",
+                    "G#m",
+                    "C",
+                    "D",
+                    "G",
+                    "F",
+                    "Am",
+                    "G#",
+                    "C",
+                    "D",
+                    "G",
+                    "Bm",
+                    "D",
+                    "E",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "Am",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "Am",
+                    "C",
+                    "G",
+                    "Am",
+                    "G#",
+                    "G",
+                    "D",
+                    "G",
+                    "F#m",
+                    "E",
+                    "Am",
+                    "G#",
+                    "G",
+                    "D",
+                    "G",
+                    "Dm",
+                    "D",
+                    "E",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "C",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            " Baby i",
+            "f you leave me no",
+            "w/nThere's no "
+        ],
+        [
+            "telling what I'll d",
+            "o or if I'll ma",
+            "ke it out/nGive me "
+        ],
+        [
+            "something I can k",
+            "eep/nWith me "
+        ],
+        [
+            "all those lonely n",
+            "ights that I can't fa",
+            "ll asleep/nCuz I "
+        ],
+        [
+            "have a heart/nDes"
+        ],
+        [
+            "pite what you may t",
+            "hink or what I sa",
+            "y/nAnd I "
+        ],
+        [
+            "wouldn't have it a",
+            "ny other wa",
+            "y/nEven "
+        ],
+        [
+            "though it hurts/nIt's "
+        ],
+        [
+            "killing me with e",
+            "very passing da",
+            "y/nYou can "
+        ],
+        [
+            "heal me now it m",
+            "akes it worth the pa",
+            "in/nBut don't "
+        ],
+        [
+            "leave me now I'm b",
+            "egging you to st",
+            "ay/n"
+        ],
+        [
+            "Stay o",
+            "h pl",
+            "ease/n"
+        ],
+        [
+            "Stay p",
+            "lease ju",
+            "st/n"
+        ],
+        [
+            "Stay o",
+            "h pl",
+            "ease/n"
+        ],
+        [
+            "Stay p",
+            "lease ju",
+            "st/n"
+        ],
+        [
+            "  Baby i",
+            "f you leave me no",
+            "w/nI won't "
+        ],
+        [
+            "make it through the s",
+            "urface I'm just go",
+            "nna sink back down/nAnd we "
+        ],
+        [
+            "know it isn't l",
+            "ove/nIt gets "
+        ],
+        [
+            "harder every d",
+            "ay but it just ha",
+            "s to be enough/nOh it's "
+        ],
+        [
+            "happening again/nI know this "
+        ],
+        [
+            "feeling like I'm losing/nEveryt"
+        ],
+        [
+            "hing is slipping through me and I",
+            "'m gone/n"
+        ],
+        [
+            "I'd leave it all for a moment with you, is that w",
+            "rong?/n"
+        ],
+        [
+            "  Is this the n",
+            "ew normal?/n"
+        ],
+        [
+            "  It's getting l",
+            "ate/n"
+        ],
+        [
+            "  I have to s",
+            "ay that it",
+            "'s oka",
+            "y/n"
+        ],
+        [
+            "  But it isn't and I'm b",
+            "egging you to/n"
+        ],
+        [
+            "Stay p",
+            "lease jus",
+            "t/n"
+        ],
+        [
+            "Stay o",
+            "h ple",
+            "ase/n"
+        ],
+        [
+            "Stay p",
+            "lease jus",
+            "t/n"
+        ],
+        [
+            "Stay o",
+            "h ple",
+            "ase/n"
+        ],
+        [
+            "Sta",
+            "y",
+            "/nOh I'm "
+        ],
+        [
+            "begging you to s",
+            "tay and make this fe",
+            "eling go away/nSt"
+        ],
+        [
+            "ay ",
+            "(I'm begging you, oh baby stay)/nOh I'm "
+        ],
+        [
+            "begging you to s",
+            "tay you know I ha",
+            "te to feel this way/nCuz I"
+        ],
+        [
+            " have a heart/n"
+        ],
+        [
+            "Despite what you may t",
+            "hink or what I sa",
+            "y/nAnd I "
+        ],
+        [
+            "wouldn't have it a",
+            "ny other w",
+            "ay/nEven "
+        ],
+        [
+            "though it hurts/nIt's "
+        ],
+        [
+            "killing me with e",
+            "very passing da",
+            "y/nYou can "
+        ],
+        [
+            "heal me now it m",
+            "akes it wo",
+            "rth the pai",
+            "n/n"
+        ],
+        [
+            " And still I'm b",
+            "egging you to/n"
+        ],
+        [
+            "Stay p",
+            "lease ju",
+            "st/n"
+        ],
+        [
+            "Stay d",
+            "on't go",
+            "/n"
+        ],
+        [
+            "Stay p",
+            "lease ju",
+            "st/n"
+        ],
+        [
+            "Stay w",
+            "on't yo",
+            "u/n"
+        ],
+        [
+            "Stay (Don't leave I'm begging you to stay)/n"
+        ],
+        [
+            "please j",
+            "ust st",
+            "ay(I need you make it go away)/n"
+        ],
+        [
+            "Stay o",
+            "h pl",
+            "ease (Don't leave I'm begging you to stay, I need you oh)/n"
+        ],
+        [
+            "Stay p",
+            "lease ju",
+            "st/n"
+        ],
+        [
+            "Stay oh j",
+            "ust st",
+            "ay"
+        ]
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,376 @@
-{"cancion": "mayores", "banda": "bad-bunny", "escala": "Em", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "Am", "Em", "B", "Em", "Am", "Em", "Am", "Em", "B7", "Em", "Em", "Am", "Em", "Am", "Em", "B7", "Em", "Em", "Am", "Em", "Am", "Em", "B7", "Em", "Em", "Am", "Em", "Am", "C", "D", "Em", "Em", "Am", "Em", "Am", "C", "D", "Em", "C", "D", "Em", "C", "D", "Em", "Em", "Am", "Em", "Am", "Em", "Am", "Em", "Am", "B7", "Em", "Am", "Em", "Am", "Em", "Am", "Em", "Am", "B7", "Em", "Am", "Em", "Am", "Em", "Am", "Em", "B7", "Em", "Am", "Em", "Am", "C", "D", "Em", "Em", "Am", "Em", "Am", "C", "D", "Em", "C", "D", "Em", "C", "D", "Em", "Em", "Am", "Em", "Am", "Em", "Am", "B7", "Em", "Am", "Em", "Am", "Em", "Am", "B7", "Em", "Am", "Em", "Am", "C", "D", "Em", "Em", "Am", "Em", "Am", "C", "D", "Em", "C", "D", "Em", "C", "D", "Em"]}], "orden_partes": [0]}, "letras": [["Whoah oh, oh, o", "h/n"], ["Oh, oh, oh", "/nA m\u00ed me gu"], ["sta qu", "e me traten co", "mo dama/nA"], ["unque a veces se me olvid", "e cuando estamo", "s en la cama", "/nA m\u00ed me g"], ["usta q", "ue me digan po", "es\u00eda/nA"], ["l o\u00eddo por la n", "oche cuando hac", "emos groser\u00ed", "as/nMe gusta un"], [" caballero, que sea inter", "esante/nQue sea un buen a"], ["migo, pero m\u00e1s un buen am", "ante/n"], ["Qu\u00e9 importan ", "unos a\u00f1os de", " m\u00e1s?/nA m\u00ed me gustan may"], ["ores", "/nDe esos que llaman se"], ["ores", "/nDe los que te abren la pue"], ["rta y te man", "dan flores", "/nA m\u00ed me gustan m\u00e1"], ["s grand", "es/nQue no me quepa en "], ["la boca", "/nLos besos que quiera d"], ["arme y que me vu", "elva loca", "/nLoca, w"], ["hoah o", "h, oh, oh", "/nLoca, "], ["whoah oh,", " oh, o", "h/n"], ["Yo no soy viejo pero t", "engo la cuenta como uno", "/nB  quieres A A  c"], ["ama yo te llevo el desayu", "no/nComo yo nin"], ["guno, un", " caballero con veintiun", "o", "/n"], ["Yo estoy puesto pa' toas' tus ", "locuras/nT\u00fa quiere' un"], [" viejo \u00bfTas' segura", "?/nYo te pro"], ["meto un mill\u00f3n de aven", "turas/nY en la c"], ["ama te duro lo que \u00e9l no d", "ura", "/nYo est"], ["oy activo 24/", "7/nCon"], ["migo no hacen faltan los jugue", "tes/nYo "], ["todav\u00eda nuevo de paq", "uete/nPero si te g"], ["usta abusar pues con otro ", "vete/nA m\u00ed me gustan may"], ["ores", "/nDe esos que llaman se"], ["ores", "/nDe los que te abren la pue"], ["rta y te man", "dan flores", "/nA m\u00ed me gustan m\u00e1"], ["s grand", "es/nQue no me quepa en "], ["la boca", "/nLos besos que quiera d"], ["arme y que me vu", "elva loca", "/nLoca, w"], ["hoah o", "h, oh, oh", "/nLoca, "], ["whoah oh,", " oh, o", "h/n"], ["Yo no quiero un ni", "\u00f1o que no se", "pa nada", "/n"], ["Yo prefiero un tip", "o que me de", " la talla/n"], ["Yo no quiero un ni", "\u00f1o que no se", "pa nada", "/n"], ["Yo prefiero un tip", "o que me de", " la talla/nA m\u00ed me gustan may"], ["ores", "/nDe esos que llaman se"], ["ores", "/nDe los que te abren la pue"], ["rta y te man", "dan flores", "/nA m\u00ed me gustan m\u00e1"], ["s grand", "es/nQue no me quepa en "], ["la boca", "/nLos besos que quiera d"], ["arme y que me vu", "elva loca", "/nLoca, w"], ["hoah o", "h, oh, oh", "/nLoca, "], ["whoah oh,", " oh, o", "h"]], "medias": [{"tipo": "Youtube", "id": "GMFewiplIbw", "delay": 0}]}
+{
+    "cancion": "mayores",
+    "banda": "bad-bunny",
+    "escala": "Em",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Am",
+                    "Em",
+                    "B",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Whoah oh, oh, o",
+            "h/n"
+        ],
+        [
+            "Oh, oh, oh",
+            "/nA mí me gu"
+        ],
+        [
+            "sta qu",
+            "e me traten co",
+            "mo dama/nA"
+        ],
+        [
+            "unque a veces se me olvid",
+            "e cuando estamo",
+            "s en la cama",
+            "/nA mí me g"
+        ],
+        [
+            "usta q",
+            "ue me digan po",
+            "esía/nA"
+        ],
+        [
+            "l oído por la n",
+            "oche cuando hac",
+            "emos groserí",
+            "as/nMe gusta un"
+        ],
+        [
+            " caballero, que sea inter",
+            "esante/nQue sea un buen a"
+        ],
+        [
+            "migo, pero más un buen am",
+            "ante/n"
+        ],
+        [
+            "Qué importan ",
+            "unos años de",
+            " más?/nA mí me gustan may"
+        ],
+        [
+            "ores",
+            "/nDe esos que llaman se"
+        ],
+        [
+            "ores",
+            "/nDe los que te abren la pue"
+        ],
+        [
+            "rta y te man",
+            "dan flores",
+            "/nA mí me gustan má"
+        ],
+        [
+            "s grand",
+            "es/nQue no me quepa en "
+        ],
+        [
+            "la boca",
+            "/nLos besos que quiera d"
+        ],
+        [
+            "arme y que me vu",
+            "elva loca",
+            "/nLoca, w"
+        ],
+        [
+            "hoah o",
+            "h, oh, oh",
+            "/nLoca, "
+        ],
+        [
+            "whoah oh,",
+            " oh, o",
+            "h/n"
+        ],
+        [
+            "Yo no soy viejo pero t",
+            "engo la cuenta como uno",
+            "/nB  quieres A A  c"
+        ],
+        [
+            "ama yo te llevo el desayu",
+            "no/nComo yo nin"
+        ],
+        [
+            "guno, un",
+            " caballero con veintiun",
+            "o",
+            "/n"
+        ],
+        [
+            "Yo estoy puesto pa' toas' tus ",
+            "locuras/nTú quiere' un"
+        ],
+        [
+            " viejo ¿Tas' segura",
+            "?/nYo te pro"
+        ],
+        [
+            "meto un millón de aven",
+            "turas/nY en la c"
+        ],
+        [
+            "ama te duro lo que él no d",
+            "ura",
+            "/nYo est"
+        ],
+        [
+            "oy activo 24/",
+            "7/nCon"
+        ],
+        [
+            "migo no hacen faltan los jugue",
+            "tes/nYo "
+        ],
+        [
+            "todavía nuevo de paq",
+            "uete/nPero si te g"
+        ],
+        [
+            "usta abusar pues con otro ",
+            "vete/nA mí me gustan may"
+        ],
+        [
+            "ores",
+            "/nDe esos que llaman se"
+        ],
+        [
+            "ores",
+            "/nDe los que te abren la pue"
+        ],
+        [
+            "rta y te man",
+            "dan flores",
+            "/nA mí me gustan má"
+        ],
+        [
+            "s grand",
+            "es/nQue no me quepa en "
+        ],
+        [
+            "la boca",
+            "/nLos besos que quiera d"
+        ],
+        [
+            "arme y que me vu",
+            "elva loca",
+            "/nLoca, w"
+        ],
+        [
+            "hoah o",
+            "h, oh, oh",
+            "/nLoca, "
+        ],
+        [
+            "whoah oh,",
+            " oh, o",
+            "h/n"
+        ],
+        [
+            "Yo no quiero un ni",
+            "ño que no se",
+            "pa nada",
+            "/n"
+        ],
+        [
+            "Yo prefiero un tip",
+            "o que me de",
+            " la talla/n"
+        ],
+        [
+            "Yo no quiero un ni",
+            "ño que no se",
+            "pa nada",
+            "/n"
+        ],
+        [
+            "Yo prefiero un tip",
+            "o que me de",
+            " la talla/nA mí me gustan may"
+        ],
+        [
+            "ores",
+            "/nDe esos que llaman se"
+        ],
+        [
+            "ores",
+            "/nDe los que te abren la pue"
+        ],
+        [
+            "rta y te man",
+            "dan flores",
+            "/nA mí me gustan má"
+        ],
+        [
+            "s grand",
+            "es/nQue no me quepa en "
+        ],
+        [
+            "la boca",
+            "/nLos besos que quiera d"
+        ],
+        [
+            "arme y que me vu",
+            "elva loca",
+            "/nLoca, w"
+        ],
+        [
+            "hoah o",
+            "h, oh, oh",
+            "/nLoca, "
+        ],
+        [
+            "whoah oh,",
+            " oh, o",
+            "h"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "GMFewiplIbw",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

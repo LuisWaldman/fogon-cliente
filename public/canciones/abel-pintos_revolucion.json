@@ -1,1 +1,365 @@
-{"cancion": "revolucion", "banda": "abel-pintos", "escala": "Bm", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm", "E", "G", "F#", "G", "E", "Bm", "Bm", "E", "G", "F#", "G", "E", "Bm", "F#", "Bm", "E", "G", "F#", "Bm", "E", "G", "F#", "Bm", "F#", "G", "F#", "Bm", "E", "G", "F#", "Bm", "E", "G", "F#", "Bm", "Bm", "E", "G", "F#", "Bm", "E", "G", "F#", "Bm", "E", "G", "F#", "G", "F#", "G", "F#", "Bm", "E", "G", "F#", "G", "E", "Bm", "Bm", "E", "G", "F#", "G", "E", "Bm", "F#", "Bm", "E", "G", "F#", "Bm", "E", "G", "F#", "Bm", "C#m", "F#", "A", "G#", "C#m", "F#", "A", "G#", "C#m", "C#m", "F#", "A", "G#", "C#m", "F#", "A", "G#", "C#m", "F#", "A", "G#", "A", "G#", "F#m", "D", "A", "E", "F#m", "D", "A", "G#", "G#7", "C#m", "F#", "A", "G#", "C#m", "F#", "A", "G#", "C#m", "F#", "A", "G#", "A", "G#", "C#m", "F#", "A", "G#", "C#m", "F#", "A", "G#", "C#m", "F#", "A", "G#", "A", "G#", "C#m"]}], "orden_partes": [0]}, "letras": [[], [], ["Me canse de tropez", "ar/nY romperme la ca"], ["beza contra l", "a pared/n"], ["Y si no lo cambio y", "o/nEsta historia se r"], ["epite/nSiempre una y otra "], ["vez/n"], [], ["Hay una revoluci", "n despertando/nEn el c"], ["entro de mi esp", "ritu/n"], ["Sin violencia ni do", "lor/nNo hace falta estar desp"], ["ierto/nPara "], ["ver la luz del so", "l/n"], ["Cuando c", "ae la noch", "e azul", "/n"], ["Luna llo", "ra sob", "re el mar", "/n"], ["Nadie du", "erme po", "r aqu\u00ed", "/nTodos sa"], ["len a caz", "ar/nTodos sa"], ["len a caz", "ar/n"], [], [], ["Tu poder es sider", "al/nLo que viva en tu inter"], ["ior sera tu r", "ealidad/n"], ["Para bien o para m", "al/nEs tu fe la que sost"], ["iene/nY alim"], ["enta tu ver", "dad/n"], ["Cada uno es especi", "al/nY no existe nadie co"], ["mo vos, com", "o yo/n"], ["Cada cual en su mis", "i\u00f3n/nVos haciendo tu ca"], ["mino/nYo cantand"], ["o esta canc", "i\u00f3n/n"], ["Cuando ca", "e la noc", "he azul", "/n"], ["Luna l", "lora sob", "re el ma", "r/n"], ["Nadie due", "rme po", "r aqui", "/nTodos s"], ["alen a caz", "ar/n"], ["Devoramo", "s a otros/n"], ["Sin creer en nosotros/nNuestro instinto animal es "], ["as\u00ed/n"], ["Desafian", "do lo incierto/nEs mi ley tu deseo"], ["/nY a"], ["qu\u00ed... ", "as\u00ed/n"], ["Cuando ca", "e la noc", "he azul", "/n"], ["Luna l", "lora sob", "re el ma", "r/n"], ["Nadie due", "rme po", "r aqui", "/nTodos s"], ["alen a caz", "ar/n"], ["Cuando ca", "e la noc", "he azul", "/n"], ["Luna l", "lora sob", "re el ma", "r/n"], ["Nadie due", "rme po", "r aqui", "/nTodos s"], ["alen a cazar/nTodos s"], ["alen a buscar/n"], ["Su amor"]], "medias": [{"tipo": "Youtube", "id": "38x_zM6Rqu0", "delay": 0}]}
+{
+    "cancion": "revolucion",
+    "banda": "abel-pintos",
+    "escala": "Bm",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "G",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "G",
+                    "E",
+                    "Bm",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "F#",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "G",
+                    "F#",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "G",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "G",
+                    "E",
+                    "Bm",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "G",
+                    "F#",
+                    "Bm",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "A",
+                    "G#",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "G#",
+                    "G#7",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "G#",
+                    "A",
+                    "G#",
+                    "C#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "Me canse de tropez",
+            "ar/nY romperme la ca"
+        ],
+        [
+            "beza contra l",
+            "a pared/n"
+        ],
+        [
+            "Y si no lo cambio y",
+            "o/nEsta historia se r"
+        ],
+        [
+            "epite/nSiempre una y otra "
+        ],
+        [
+            "vez/n"
+        ],
+        [],
+        [
+            "Hay una revoluci",
+            "n despertando/nEn el c"
+        ],
+        [
+            "entro de mi esp",
+            "ritu/n"
+        ],
+        [
+            "Sin violencia ni do",
+            "lor/nNo hace falta estar desp"
+        ],
+        [
+            "ierto/nPara "
+        ],
+        [
+            "ver la luz del so",
+            "l/n"
+        ],
+        [
+            "Cuando c",
+            "ae la noch",
+            "e azul",
+            "/n"
+        ],
+        [
+            "Luna llo",
+            "ra sob",
+            "re el mar",
+            "/n"
+        ],
+        [
+            "Nadie du",
+            "erme po",
+            "r aquí",
+            "/nTodos sa"
+        ],
+        [
+            "len a caz",
+            "ar/nTodos sa"
+        ],
+        [
+            "len a caz",
+            "ar/n"
+        ],
+        [],
+        [],
+        [
+            "Tu poder es sider",
+            "al/nLo que viva en tu inter"
+        ],
+        [
+            "ior sera tu r",
+            "ealidad/n"
+        ],
+        [
+            "Para bien o para m",
+            "al/nEs tu fe la que sost"
+        ],
+        [
+            "iene/nY alim"
+        ],
+        [
+            "enta tu ver",
+            "dad/n"
+        ],
+        [
+            "Cada uno es especi",
+            "al/nY no existe nadie co"
+        ],
+        [
+            "mo vos, com",
+            "o yo/n"
+        ],
+        [
+            "Cada cual en su mis",
+            "ión/nVos haciendo tu ca"
+        ],
+        [
+            "mino/nYo cantand"
+        ],
+        [
+            "o esta canc",
+            "ión/n"
+        ],
+        [
+            "Cuando ca",
+            "e la noc",
+            "he azul",
+            "/n"
+        ],
+        [
+            "Luna l",
+            "lora sob",
+            "re el ma",
+            "r/n"
+        ],
+        [
+            "Nadie due",
+            "rme po",
+            "r aqui",
+            "/nTodos s"
+        ],
+        [
+            "alen a caz",
+            "ar/n"
+        ],
+        [
+            "Devoramo",
+            "s a otros/n"
+        ],
+        [
+            "Sin creer en nosotros/nNuestro instinto animal es "
+        ],
+        [
+            "así/n"
+        ],
+        [
+            "Desafian",
+            "do lo incierto/nEs mi ley tu deseo"
+        ],
+        [
+            "/nY a"
+        ],
+        [
+            "quí... ",
+            "así/n"
+        ],
+        [
+            "Cuando ca",
+            "e la noc",
+            "he azul",
+            "/n"
+        ],
+        [
+            "Luna l",
+            "lora sob",
+            "re el ma",
+            "r/n"
+        ],
+        [
+            "Nadie due",
+            "rme po",
+            "r aqui",
+            "/nTodos s"
+        ],
+        [
+            "alen a caz",
+            "ar/n"
+        ],
+        [
+            "Cuando ca",
+            "e la noc",
+            "he azul",
+            "/n"
+        ],
+        [
+            "Luna l",
+            "lora sob",
+            "re el ma",
+            "r/n"
+        ],
+        [
+            "Nadie due",
+            "rme po",
+            "r aqui",
+            "/nTodos s"
+        ],
+        [
+            "alen a cazar/nTodos s"
+        ],
+        [
+            "alen a buscar/n"
+        ],
+        [
+            "Su amor"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "38x_zM6Rqu0",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

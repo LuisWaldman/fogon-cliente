@@ -1,1 +1,391 @@
-{"cancion": "Te-Conozco", "banda": "arjona-ricardo", "escala": "Bbm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bbm", "Bbm/Ab", "Eb/G", "Gb6", "Bbm", "Bbm/Ab", "Eb/G", "Gb6", "Bb7", "Bb", "F/A", "Gm", "F", "Eb", "D7", "Am7(5-)", "D7", "Gm", "C", "Bb/D", "C", "F", "F4", "F", "Bb", "F", "Gm", "Dm", "Eb", "D", "Am7(5-)", "D7", "Gm", "C", "F4", "F", "Bb", "F/A", "Gm", "F", "Bb", "F/A", "Gm", "Dm", "Eb", "F", "Bb", "F", "Bb", "F/A", "Gm", "F", "Bb", "F", "Gm", "Dm", "Eb", "F", "Bb", "Bb", "C", "F", "Gm", "G#", "Eb/G", "F", "Bb", "F/A", "Gm", "F", "Eb", "D", "Am7(5-)", "D7", "Gm", "C/E", "Bb/D", "C", "F", "Bb", "F/A", "Gm", "F", "Eb", "D", "Am7(5-)", "D7", "Gm", "C/E", "F4", "F", "Bb", "F/A", "Gm", "F", "Bb", "F/A", "Gm", "Dm", "Eb", "F", "Bb", "F", "Bb", "F/A", "Gm", "F", "Bb", "F", "Gm", "Dm", "Eb", "F", "Ab", "Bb", "Bb4", "Eb", "Bb", "F/A", "F7(4/9)", "Bb", "F/A", "Gm", "F", "Bb", "F", "Gm", "Dm", "Eb", "F", "Bb", "Gm", "Ab7M", "C", "F4", "F", "Bb", "Bb", "Eb", "Bb", "Ab"]}], "orden_partes": [0]}, "letras": [[], [], ["onozco desde el pe", "lo/nHasta la p"], ["unta de los pi", "es/nSe que r"], ["oncas por las no", "ches/nY que du"], ["ermes   de", " rev\u00e9", "s/nSe que d"], ["ices que tienes veinte/nCuando ti"], ["enes vei", "ntitr\u00e9", "s", "", "/nTe con"], ["ozco cuando r\u00ed", "es/nY tus g"], ["estos al ama", "r/nSe de aqu"], ["ella cirug", "a/nQue a nadie l"], ["e has   de", " contar", "/nSe que "], ["odias la rutina/nUn poco mas que a la coc"], ["ina", "/nDime si "], ["el te cono", "ce la mitad", "/nD"], ["ime si e", "l tiene la ", "sensibilidad", "/nDe encontr"], ["ar el punto exa", "cto/nDonde expl"], ["otas al ama", "r", "/nDime si "], ["el te cono", "ce la mitad", "/nD"], ["ime si e", "l te am", "a la mitad", "/nDe lo qu"], ["e te ama este lo", "co/nQue deja"], ["ste en liberta", "d/n"], [], ["a Par", "te]", "/nRecon"], ["ozco lo que pie", "nsas/nAntes qu"], ["e empieces a habla", "r/nSe de t"], ["us ciento cincuen", "ta/nDietas p"], ["ara    ade", "lgazar", "/nS\u00e9 que "], ["padeces de insomnio/nY que f"], ["umas  si", "n parar", "/nImag"], ["ino esas charl", "as/nQue en mi ho"], ["nor han de entabla", "r/nY hasta s"], ["\u00e9 lo que este vi", "ernes/nLe has de hac"], ["er    para", " cenar", "/nY es que t"], ["anto te conozco/nQue hasta s\u00e9 me has de extra"], ["\u00f1ar", "/nDime si "], ["el te cono", "ce la mitad", "/nD"], ["ime si e", "l tiene la ", "sensibilidad", "/nDe encontr"], ["ar el punto exa", "cto/nDonde expl"], ["otas al ama", "r", "/nDime si "], ["el te cono", "ce la mitad", "/nD"], ["ime si e", "l te am", "a la mitad", "/nDe lo qu"], ["e te ama este lo", "co/nQue deja"], ["ste en liberta", "d/n"], [], [], ["el te cono", "ce la mitad", "/nD"], ["ime si e", "l te am", "a la mitad", "/nDe lo qu"], ["e te ama este lo", "co/nQue deja"], ["ste en liberta", "d/n"], [], ["nto te conozco/nQue hasta podr\u00eda ju"], ["rar", "/nTe mueres por regres"], ["ar/n"], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "x71_gzr95iE", "delay": 0}]}
+{
+    "cancion": "Te-Conozco",
+    "banda": "arjona-ricardo",
+    "escala": "Bbm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bbm",
+                    "Bbm/Ab",
+                    "Eb/G",
+                    "Gb6",
+                    "Bbm",
+                    "Bbm/Ab",
+                    "Eb/G",
+                    "Gb6",
+                    "Bb7",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Eb",
+                    "D7",
+                    "Am7(5-)",
+                    "D7",
+                    "Gm",
+                    "C",
+                    "Bb/D",
+                    "C",
+                    "F",
+                    "F4",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Gm",
+                    "Dm",
+                    "Eb",
+                    "D",
+                    "Am7(5-)",
+                    "D7",
+                    "Gm",
+                    "C",
+                    "F4",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "Dm",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Gm",
+                    "Dm",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Gm",
+                    "G#",
+                    "Eb/G",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Eb",
+                    "D",
+                    "Am7(5-)",
+                    "D7",
+                    "Gm",
+                    "C/E",
+                    "Bb/D",
+                    "C",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Eb",
+                    "D",
+                    "Am7(5-)",
+                    "D7",
+                    "Gm",
+                    "C/E",
+                    "F4",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "Dm",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Gm",
+                    "Dm",
+                    "Eb",
+                    "F",
+                    "Ab",
+                    "Bb",
+                    "Bb4",
+                    "Eb",
+                    "Bb",
+                    "F/A",
+                    "F7(4/9)",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Gm",
+                    "Dm",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "Gm",
+                    "Ab7M",
+                    "C",
+                    "F4",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Eb",
+                    "Bb",
+                    "Ab"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "onozco desde el pe",
+            "lo/nHasta la p"
+        ],
+        [
+            "unta de los pi",
+            "es/nSe que r"
+        ],
+        [
+            "oncas por las no",
+            "ches/nY que du"
+        ],
+        [
+            "ermes   de",
+            " revé",
+            "s/nSe que d"
+        ],
+        [
+            "ices que tienes veinte/nCuando ti"
+        ],
+        [
+            "enes vei",
+            "ntitré",
+            "s",
+            "",
+            "/nTe con"
+        ],
+        [
+            "ozco cuando rí",
+            "es/nY tus g"
+        ],
+        [
+            "estos al ama",
+            "r/nSe de aqu"
+        ],
+        [
+            "ella cirug",
+            "a/nQue a nadie l"
+        ],
+        [
+            "e has   de",
+            " contar",
+            "/nSe que "
+        ],
+        [
+            "odias la rutina/nUn poco mas que a la coc"
+        ],
+        [
+            "ina",
+            "/nDime si "
+        ],
+        [
+            "el te cono",
+            "ce la mitad",
+            "/nD"
+        ],
+        [
+            "ime si e",
+            "l tiene la ",
+            "sensibilidad",
+            "/nDe encontr"
+        ],
+        [
+            "ar el punto exa",
+            "cto/nDonde expl"
+        ],
+        [
+            "otas al ama",
+            "r",
+            "/nDime si "
+        ],
+        [
+            "el te cono",
+            "ce la mitad",
+            "/nD"
+        ],
+        [
+            "ime si e",
+            "l te am",
+            "a la mitad",
+            "/nDe lo qu"
+        ],
+        [
+            "e te ama este lo",
+            "co/nQue deja"
+        ],
+        [
+            "ste en liberta",
+            "d/n"
+        ],
+        [],
+        [
+            "a Par",
+            "te]",
+            "/nRecon"
+        ],
+        [
+            "ozco lo que pie",
+            "nsas/nAntes qu"
+        ],
+        [
+            "e empieces a habla",
+            "r/nSe de t"
+        ],
+        [
+            "us ciento cincuen",
+            "ta/nDietas p"
+        ],
+        [
+            "ara    ade",
+            "lgazar",
+            "/nSé que "
+        ],
+        [
+            "padeces de insomnio/nY que f"
+        ],
+        [
+            "umas  si",
+            "n parar",
+            "/nImag"
+        ],
+        [
+            "ino esas charl",
+            "as/nQue en mi ho"
+        ],
+        [
+            "nor han de entabla",
+            "r/nY hasta s"
+        ],
+        [
+            "é lo que este vi",
+            "ernes/nLe has de hac"
+        ],
+        [
+            "er    para",
+            " cenar",
+            "/nY es que t"
+        ],
+        [
+            "anto te conozco/nQue hasta sé me has de extra"
+        ],
+        [
+            "ñar",
+            "/nDime si "
+        ],
+        [
+            "el te cono",
+            "ce la mitad",
+            "/nD"
+        ],
+        [
+            "ime si e",
+            "l tiene la ",
+            "sensibilidad",
+            "/nDe encontr"
+        ],
+        [
+            "ar el punto exa",
+            "cto/nDonde expl"
+        ],
+        [
+            "otas al ama",
+            "r",
+            "/nDime si "
+        ],
+        [
+            "el te cono",
+            "ce la mitad",
+            "/nD"
+        ],
+        [
+            "ime si e",
+            "l te am",
+            "a la mitad",
+            "/nDe lo qu"
+        ],
+        [
+            "e te ama este lo",
+            "co/nQue deja"
+        ],
+        [
+            "ste en liberta",
+            "d/n"
+        ],
+        [],
+        [],
+        [
+            "el te cono",
+            "ce la mitad",
+            "/nD"
+        ],
+        [
+            "ime si e",
+            "l te am",
+            "a la mitad",
+            "/nDe lo qu"
+        ],
+        [
+            "e te ama este lo",
+            "co/nQue deja"
+        ],
+        [
+            "ste en liberta",
+            "d/n"
+        ],
+        [],
+        [
+            "nto te conozco/nQue hasta podría ju"
+        ],
+        [
+            "rar",
+            "/nTe mueres por regres"
+        ],
+        [
+            "ar/n"
+        ],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "x71_gzr95iE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

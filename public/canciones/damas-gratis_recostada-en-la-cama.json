@@ -1,1 +1,375 @@
-{"cancion": "recostada-en-la-cama", "banda": "damas-gratis", "escala": "F", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "A", "C", "A", "G", "B", "D", "B", "A", "Am", "Am", "A", "Am", "Am", "F", "A", "C", "A", "G", "B", "D", "B", "A", "F", "A", "C", "A", "G", "B", "D", "B", "A", "Am", "Am", "A", "Am", "Am", "F", "A", "C", "A", "G", "B", "D", "B", "A", "G", "A", "A", "G", "A", "E", "C", "E", "D", "C", "B", "A", "A", "G", "A", "E", "C", "E", "D", "C", "B", "A", "A", "G", "A", "E", "E", "E", "A", "A", "G", "A", "E", "E", "E", "A", "A", "G", "A", "E", "E", "E", "A", "A", "G", "A", "E", "Am", "Dm", "G", "C", "E", "Am", "F", "E", "Am", "Dm", "G", "C", "E", "Am", "F", "A", "E", "Am", "Am", "Dm", "G", "C", "E", "Am", "Dm", "G", "C", "E", "Am", "C", "Am", "Am", "Dm", "G", "C", "E", "Am", "E", "Am", "E", "Am", "Am", "Dm", "G", "C", "E", "Am", "Dm", "G", "C", "E", "Am", "C", "Am", "Am", "Dm", "G", "C", "E", "Am", "Dm", "G", "C", "E", "Am", "C", "Am", "Am", "Dm", "G", "C", "E", "Am", "Dm", "G", "C", "E", "Am", "C", "Am"]}], "orden_partes": [0]}, "letras": [[], [], [], ["Con ", "acor", "deon", "", "", "", "", "", "", "", "/n"], [], [], [], ["mi(=", ")mi(", "+)Re(", "=)re", "(+)d", "o(=)", "do(+", ")si(", "=)si", "(+)la", "", "/nSe canso de espe"], ["rar,/nrecostada en la "], ["cama,/nyo llegue muy "], ["tarde ya ella dorm", "\u00eda/nOtra "], ["vez que se queda con g", "anas/nOtra "], ["vez que le amargo la v", "ida/nSe canso de espe"], ["rar esa noche so", "ada/nde frotarse la "], ["piel pura y moj", "ada/notra "], ["vez que se queda con g", "anas/notra "], ["vez que se queda con n", "ada, ", "con nad", "a/nPor que ella nece"], ["sita que duerma en su c", "ama/nque cene en su "], ["mesa, que sue\u00f1e en su al", "mohada", "/nPor que ella nece"], ["sita que suba en su c", "uerpo, la mueva y la be", "se/nse muere de "], ["ganas, se cans", "o de esperar... ", "recostad", "a en la cama", "/nSe canso de inven"], ["tar, de jugar siempre s", "ola/nde frotarse la "], ["piel, pura y moj", "ada/nOtra "], ["vez que se queda con g", "anas/notra "], ["vez que se queda con n", "ada, c", "on nad", "a/nPor que ella nece"], ["sita que duerma en su c", "ama/nque cene en su "], ["mesa, que sue\u00f1e en su al", "mohada", "/nPor que ella nece"], ["sita que suba en su c", "uerpo, la mueva y la be", "se/nse muere de "], ["ganas, se cans", "o de esperar... ", "recostad", "a en la cama", "/nPor que ella nece"], ["sita que duerma en su c", "ama/nque cene en su "], ["mesa, que sue\u00f1e en su al", "mohada", "/nPor que ella nece"], ["sita que suba en su c", "uerpo, la mueva y la be", "se/nse muere de "], ["ganas, se cans", "o de esperar... ", "recostad", "a en la cama", "/nPor que ella nece"], ["sita que duerma en su c", "ama/nque cene en su "], ["mesa, que sue\u00f1e en su al", "mohada", "/nPor que ella nece"], ["sita que suba en su c", "uerpo, la mueva y la be", "se/nse muere de "], ["ganas, se cans", "o de esperar... ", "recostad", "a en la cama", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "y6RTuMqAIzE", "delay": 0}]}
+{
+    "cancion": "recostada-en-la-cama",
+    "banda": "damas-gratis",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "A",
+                    "C",
+                    "A",
+                    "G",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "Am",
+                    "Am",
+                    "A",
+                    "Am",
+                    "Am",
+                    "F",
+                    "A",
+                    "C",
+                    "A",
+                    "G",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "F",
+                    "A",
+                    "C",
+                    "A",
+                    "G",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "Am",
+                    "Am",
+                    "A",
+                    "Am",
+                    "Am",
+                    "F",
+                    "A",
+                    "C",
+                    "A",
+                    "G",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "E",
+                    "C",
+                    "E",
+                    "D",
+                    "C",
+                    "B",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "E",
+                    "C",
+                    "E",
+                    "D",
+                    "C",
+                    "B",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "F",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "F",
+                    "A",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "E",
+                    "Am",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E",
+                    "Am",
+                    "C",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [
+            "Con ",
+            "acor",
+            "deon",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "mi(=",
+            ")mi(",
+            "+)Re(",
+            "=)re",
+            "(+)d",
+            "o(=)",
+            "do(+",
+            ")si(",
+            "=)si",
+            "(+)la",
+            "",
+            "/nSe canso de espe"
+        ],
+        [
+            "rar,/nrecostada en la "
+        ],
+        [
+            "cama,/nyo llegue muy "
+        ],
+        [
+            "tarde ya ella dorm",
+            "ía/nOtra "
+        ],
+        [
+            "vez que se queda con g",
+            "anas/nOtra "
+        ],
+        [
+            "vez que le amargo la v",
+            "ida/nSe canso de espe"
+        ],
+        [
+            "rar esa noche so",
+            "ada/nde frotarse la "
+        ],
+        [
+            "piel pura y moj",
+            "ada/notra "
+        ],
+        [
+            "vez que se queda con g",
+            "anas/notra "
+        ],
+        [
+            "vez que se queda con n",
+            "ada, ",
+            "con nad",
+            "a/nPor que ella nece"
+        ],
+        [
+            "sita que duerma en su c",
+            "ama/nque cene en su "
+        ],
+        [
+            "mesa, que sueñe en su al",
+            "mohada",
+            "/nPor que ella nece"
+        ],
+        [
+            "sita que suba en su c",
+            "uerpo, la mueva y la be",
+            "se/nse muere de "
+        ],
+        [
+            "ganas, se cans",
+            "o de esperar... ",
+            "recostad",
+            "a en la cama",
+            "/nSe canso de inven"
+        ],
+        [
+            "tar, de jugar siempre s",
+            "ola/nde frotarse la "
+        ],
+        [
+            "piel, pura y moj",
+            "ada/nOtra "
+        ],
+        [
+            "vez que se queda con g",
+            "anas/notra "
+        ],
+        [
+            "vez que se queda con n",
+            "ada, c",
+            "on nad",
+            "a/nPor que ella nece"
+        ],
+        [
+            "sita que duerma en su c",
+            "ama/nque cene en su "
+        ],
+        [
+            "mesa, que sueñe en su al",
+            "mohada",
+            "/nPor que ella nece"
+        ],
+        [
+            "sita que suba en su c",
+            "uerpo, la mueva y la be",
+            "se/nse muere de "
+        ],
+        [
+            "ganas, se cans",
+            "o de esperar... ",
+            "recostad",
+            "a en la cama",
+            "/nPor que ella nece"
+        ],
+        [
+            "sita que duerma en su c",
+            "ama/nque cene en su "
+        ],
+        [
+            "mesa, que sueñe en su al",
+            "mohada",
+            "/nPor que ella nece"
+        ],
+        [
+            "sita que suba en su c",
+            "uerpo, la mueva y la be",
+            "se/nse muere de "
+        ],
+        [
+            "ganas, se cans",
+            "o de esperar... ",
+            "recostad",
+            "a en la cama",
+            "/nPor que ella nece"
+        ],
+        [
+            "sita que duerma en su c",
+            "ama/nque cene en su "
+        ],
+        [
+            "mesa, que sueñe en su al",
+            "mohada",
+            "/nPor que ella nece"
+        ],
+        [
+            "sita que suba en su c",
+            "uerpo, la mueva y la be",
+            "se/nse muere de "
+        ],
+        [
+            "ganas, se cans",
+            "o de esperar... ",
+            "recostad",
+            "a en la cama",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "y6RTuMqAIzE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

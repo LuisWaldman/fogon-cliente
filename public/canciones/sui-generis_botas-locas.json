@@ -1,1 +1,359 @@
-{"cancion": "Botas-Locas", "banda": "sui-generis", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "C", "G", "C", "G", "Am"]}, {"nombre": "parte2", "acordes": ["G", "C", "G", "Am", "G"]}, {"nombre": "parte3", "acordes": ["Em", "B11", "Am7", "D", "C", "D", "G"]}, {"nombre": "parte4", "acordes": ["C", "G", "D", "G", "C", "G"]}, {"nombre": "parte5", "acordes": ["D", "C", "D", "E", "Am", "C", "D", "G"]}], "orden_partes": [0, 0, 1, 2, 2, 3, 3, 4, 0, 0, 1, 2, 2, 3, 3, 4, 0, 0, 1, 2, 2, 3, 3, 4, 0, 0, 1]}, "letras": [["Yo forme pa", "rte de un eje", "rcito loco/ntenia ve"], ["inte a", "os y el pe", "lo muy corto/n"], ["pero mi am", "igo hubo una co", "nfusi\u00f3n/n"], ["porque para el", "los el loc", "o era yo.", "", "", "", "", "/n"], ["Es un juego simp", "le el de ser solda", "do/n"], ["ellos siempre insu", "ltan yo siem", "pre calla", "do/n"], ["descanse muy poc", "o y me puse ma", "lo/n"], ["las estupide", "ces empiez", "an tempra", "no./nLos int"], ["oler", "ante", "s no entendiero", "n na", "da", "/nellos d"], ["ec\u00ed", "an g", "uerra yo dec\u00eda", " no ", "grac", "ias/n"], ["amar a la pa", "tria bien nos ", "exigi", "eron/n"], ["si ellos son la", " pat", "ria yo soy extranj", "ero./n"], ["Yo forme pa", "rte de un eje", "rcito loco/ntenia ve"], ["inte a", "os y el pe", "lo muy corto/n"], ["pero mi am", "igo hubo una co", "nfusi\u00f3n/n"], ["porque para el", "los el loc", "o era yo.", "", "", "", "", "/n"], ["Se dar\u00e1n c", "uenta que aquel lu", "gar/n"], ["era insoporta", "ble para alg", "uien norm", "al/n"], ["por eso me ", "dije basta de quej", "arme/n"], ["yo me vuelvo a ca", "sa y decid", "\u00ed largar", "me./nLes gr"], ["ite bi", "en fuer", "te lo que yo c", "re\u00ed", "a", "/nacer"], ["ca d", "e todo", " lo que ellos ", "hac", "an", "/ne"], ["videntemen", "te les cayo", " muy mal", "/n"], ["as\u00ed es que me ", "echa", "ron del Cuartel Ge", "neral/n"], ["Yo forme pa", "rte de un eje", "rcito loco/ntenia ve"], ["inte a", "os y el pe", "lo muy corto/n"], ["pero mi am", "igo hubo una co", "nfusi\u00f3n/n"], ["porque para el", "los el loc", "o era yo.", "", "", "", "", "/n"], ["si todos ju", "ntos formamos la i", "dea/n"], ["que la libert", "ad no es una", " pelea", "/n"], ["se cambiar", "an todos los pape", "les/n"], ["y estar\u00edan v", "ac\u00edos muchos m", "as cuarte", "les/nPorque a u"], ["sar la", "s armas", " bien nos ense", "\u00f1ar", "on", "/ny cr"], ["eo qu", "e eso", " es lo deli", "cad", "o", "/n"], ["pi\u00e9nselo un mo", "mento Se", "or Gene", "ral/n"], ["porque yo que", " ust", "ed me sentir\u00eda muy m", "al/n"], ["Yo forme pa", "rte de un eje", "rcito loco/ntenia ve"], ["inte a", "os y el pe", "lo muy corto/n"], ["pero mi am", "igo hubo una co", "nfusi\u00f3n/n"], ["porque para el", "los el loc", "o era yo.", "", "", "", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "qHEctqcjfxo", "delay": 0}]}
+{
+    "cancion": "Botas-Locas",
+    "banda": "sui-generis",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "B11",
+                    "Am7",
+                    "D",
+                    "C",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "C",
+                    "D",
+                    "E",
+                    "Am",
+                    "C",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            0,
+            0,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            0,
+            0,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Yo forme pa",
+            "rte de un eje",
+            "rcito loco/ntenia ve"
+        ],
+        [
+            "inte a",
+            "os y el pe",
+            "lo muy corto/n"
+        ],
+        [
+            "pero mi am",
+            "igo hubo una co",
+            "nfusión/n"
+        ],
+        [
+            "porque para el",
+            "los el loc",
+            "o era yo.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es un juego simp",
+            "le el de ser solda",
+            "do/n"
+        ],
+        [
+            "ellos siempre insu",
+            "ltan yo siem",
+            "pre calla",
+            "do/n"
+        ],
+        [
+            "descanse muy poc",
+            "o y me puse ma",
+            "lo/n"
+        ],
+        [
+            "las estupide",
+            "ces empiez",
+            "an tempra",
+            "no./nLos int"
+        ],
+        [
+            "oler",
+            "ante",
+            "s no entendiero",
+            "n na",
+            "da",
+            "/nellos d"
+        ],
+        [
+            "ecí",
+            "an g",
+            "uerra yo decía",
+            " no ",
+            "grac",
+            "ias/n"
+        ],
+        [
+            "amar a la pa",
+            "tria bien nos ",
+            "exigi",
+            "eron/n"
+        ],
+        [
+            "si ellos son la",
+            " pat",
+            "ria yo soy extranj",
+            "ero./n"
+        ],
+        [
+            "Yo forme pa",
+            "rte de un eje",
+            "rcito loco/ntenia ve"
+        ],
+        [
+            "inte a",
+            "os y el pe",
+            "lo muy corto/n"
+        ],
+        [
+            "pero mi am",
+            "igo hubo una co",
+            "nfusión/n"
+        ],
+        [
+            "porque para el",
+            "los el loc",
+            "o era yo.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Se darán c",
+            "uenta que aquel lu",
+            "gar/n"
+        ],
+        [
+            "era insoporta",
+            "ble para alg",
+            "uien norm",
+            "al/n"
+        ],
+        [
+            "por eso me ",
+            "dije basta de quej",
+            "arme/n"
+        ],
+        [
+            "yo me vuelvo a ca",
+            "sa y decid",
+            "í largar",
+            "me./nLes gr"
+        ],
+        [
+            "ite bi",
+            "en fuer",
+            "te lo que yo c",
+            "reí",
+            "a",
+            "/nacer"
+        ],
+        [
+            "ca d",
+            "e todo",
+            " lo que ellos ",
+            "hac",
+            "an",
+            "/ne"
+        ],
+        [
+            "videntemen",
+            "te les cayo",
+            " muy mal",
+            "/n"
+        ],
+        [
+            "así es que me ",
+            "echa",
+            "ron del Cuartel Ge",
+            "neral/n"
+        ],
+        [
+            "Yo forme pa",
+            "rte de un eje",
+            "rcito loco/ntenia ve"
+        ],
+        [
+            "inte a",
+            "os y el pe",
+            "lo muy corto/n"
+        ],
+        [
+            "pero mi am",
+            "igo hubo una co",
+            "nfusión/n"
+        ],
+        [
+            "porque para el",
+            "los el loc",
+            "o era yo.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "si todos ju",
+            "ntos formamos la i",
+            "dea/n"
+        ],
+        [
+            "que la libert",
+            "ad no es una",
+            " pelea",
+            "/n"
+        ],
+        [
+            "se cambiar",
+            "an todos los pape",
+            "les/n"
+        ],
+        [
+            "y estarían v",
+            "acíos muchos m",
+            "as cuarte",
+            "les/nPorque a u"
+        ],
+        [
+            "sar la",
+            "s armas",
+            " bien nos ense",
+            "ñar",
+            "on",
+            "/ny cr"
+        ],
+        [
+            "eo qu",
+            "e eso",
+            " es lo deli",
+            "cad",
+            "o",
+            "/n"
+        ],
+        [
+            "piénselo un mo",
+            "mento Se",
+            "or Gene",
+            "ral/n"
+        ],
+        [
+            "porque yo que",
+            " ust",
+            "ed me sentiría muy m",
+            "al/n"
+        ],
+        [
+            "Yo forme pa",
+            "rte de un eje",
+            "rcito loco/ntenia ve"
+        ],
+        [
+            "inte a",
+            "os y el pe",
+            "lo muy corto/n"
+        ],
+        [
+            "pero mi am",
+            "igo hubo una co",
+            "nfusión/n"
+        ],
+        [
+            "porque para el",
+            "los el loc",
+            "o era yo.",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "qHEctqcjfxo",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

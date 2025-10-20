@@ -1,1 +1,383 @@
-{"cancion": "me-enamore", "banda": "shakira", "escala": "F", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "Dm", "Am", "G5", "F", "F", "Dm"]}, {"nombre": "parte2", "acordes": ["Am", "G5", "F", "Dm", "Dm6", "Am", "G5"]}, {"nombre": "parte3", "acordes": ["Am", "Dm", "Dm6", "F", "C", "G"]}, {"nombre": "parte4", "acordes": ["Am", "Dm", "G"]}, {"nombre": "parte5", "acordes": ["F", "Dm", "Am", "Am", "G5", "F", "Dm", "Dm6"]}], "orden_partes": [0, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]}, "letras": [["La vida me empez\u00f3 a camb", "iar la noche que te conoc", "/nTen\u00eda poco que per"], ["der y la cosa sigui\u00f3 a", "s\u00ed/n"], ["Yo con mis sost\u00e9n a r", "ayas y mi pelo a medio hace", "r/nPens\u00e9: \"Este todav\u00eda es un"], [" ni\u00f1o\" pero, Qu\u00e9 le voy a hacer?/n"], ["Es lo que andaba buscando", "    El doctor rec", "omendando/n"], ["Cre\u00ed que estaba so\u00f1ando,", " oh, oh/n"], ["De qu\u00e9 me andaba quejando?/n"], ["No s\u00e9 qu\u00e9 estaba pen", "sando/n"], ["Hoy pal cielo voy pateando, o", "h, oh", "/n"], ["Me enamor\u00e9, me ena-na-na-na-nam", "or\u00e9/n"], ["Lo vi solito y me la", "nc\u00e9 Me ena-na-na-na-na-namo", "r\u00e9/n"], ["Me Ena-na-namo/n"], ["Mira que cosa bonita qu", "e boca m\u00e1", "s redondita/n"], ["Me gusta esa barbita", "", "/n"], ["Y bail\u00e9 hasta que me cans", "\u00e9/n"], ["Hasta que me cans", " bail\u00e9/nY me ena-na-namor"], ["\u00e9        /n"], ["Nos enamoramos/n"], ["Un mojito, dos mojitos mi", "ra que ojit", "os bonitos/n"], ["Me quedo otro ratito", "", "/n"], ["Contigo yo tendr\u00eda 10 h", "ijos empecemos por un pa", "r/n"], ["Solamente te lo digo Po", "r si quieres practicar/n"], ["Lo \u00fanico que estoy diciendo/n"], ["Vay\u00e1monos conociend", "o/n"], ["Es lo que est\u00e1 proponiendo, ", "oh, oh/n"], ["Nos vamos entusiasmando/n"], ["Todo nos va resulta", "ndo/n"], ["Qu\u00e9 bien lo estamos pasando, ", "oh, oh/n"], ["Me enamor\u00e9, me ena-na-na-na-namor", "\u00e9/n"], ["Lo vi solito y me lanc", " Me ena-na-na-na-na-namor", "/n"], ["Me Ena-na-namo/n"], ["Mira que cosa bonita Qu", "e boca m\u00e1s redondi", "ta/n"], ["Me gusta esa barbita", "", "/n"], ["Y bail\u00e9 hasta que me c", "ans\u00e9/n"], ["Hasta que me cans", " bail\u00e9/nY me ena-na-n"], ["amor\u00e9        /n"], ["Nos enamoramos/n"], ["Un mojito, dos mojitos mi", "ra que ojit", "os bonitos/n"], ["Me quedo otro ratito", "", "/n"], ["Nunca crei", " que fuer", "a as\u00ed", "/nC\u00f3mo te "], ["fijar\u00edas en ", "m\u00ed?/n"], ["Toda una no", "che lo ", "pens\u00e9", "/n"], ["Es-es pa' m", ", es pa' m\u00e1s nadie/n"], ["Es-es pa' m\u00ed, es pa' m\u00e1s nadie/n"], ["Es-es-es pa' m", ", es pa' m\u00e1s nadie/n"], ["Me enamor\u00e9, me ena-na-na-na-namor", "\u00e9/n"], ["Lo vi solito y me la", "nc\u00e9 Me ena-na-na-na-na-namor", "/n"], ["Me Ena-na-namo/n"], ["Mira que cosa bonita Qu", "e boca m\u00e1s redondi", "ta/n"], ["Me gusta esa barbita", "", "/n"], ["Y bail\u00e9 hasta que me c", "ans\u00e9/n"], ["Hasta que me cans", " bail\u00e9/nY me ena-na-n"], ["amor\u00e9        /n"], ["Nos enamoramos/n"], ["Un mojito, dos mojitos mi", "ra que ojit", "os bonitos/n"], ["Me quedo otro ratito", "", "/n"], ["Nunca crei", " que fuer", "a as\u00ed/n"], ["C\u00f3mo te f", "ijar\u00edas en m", "\u00ed?/n"], ["Toda una no", "che lo ", "pens\u00e9/n"], ["Este es pa' m\u00ed, es pa' m\u00e1s nadie/n"], ["Es-es pa' m\u00ed, ", "es pa' m\u00e1s nadie/n"], ["Es-es pa' m\u00ed, es pa' m\u00e1s nadie/n"], ["Es-es-es pa' m\u00ed, ", "es pa' m\u00e1s nadie"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "sPTn0QEhxds", "delay": 0}]}
+{
+    "cancion": "me-enamore",
+    "banda": "shakira",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G5",
+                    "F",
+                    "F",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "G5",
+                    "F",
+                    "Dm",
+                    "Dm6",
+                    "Am",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Dm6",
+                    "F",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "G5",
+                    "F",
+                    "Dm",
+                    "Dm6"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            1,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "La vida me empezó a camb",
+            "iar la noche que te conoc",
+            "/nTenía poco que per"
+        ],
+        [
+            "der y la cosa siguió a",
+            "sí/n"
+        ],
+        [
+            "Yo con mis sostén a r",
+            "ayas y mi pelo a medio hace",
+            "r/nPensé: \"Este todavía es un"
+        ],
+        [
+            " niño\" pero, Qué le voy a hacer?/n"
+        ],
+        [
+            "Es lo que andaba buscando",
+            "    El doctor rec",
+            "omendando/n"
+        ],
+        [
+            "Creí que estaba soñando,",
+            " oh, oh/n"
+        ],
+        [
+            "De qué me andaba quejando?/n"
+        ],
+        [
+            "No sé qué estaba pen",
+            "sando/n"
+        ],
+        [
+            "Hoy pal cielo voy pateando, o",
+            "h, oh",
+            "/n"
+        ],
+        [
+            "Me enamoré, me ena-na-na-na-nam",
+            "oré/n"
+        ],
+        [
+            "Lo vi solito y me la",
+            "ncé Me ena-na-na-na-na-namo",
+            "ré/n"
+        ],
+        [
+            "Me Ena-na-namo/n"
+        ],
+        [
+            "Mira que cosa bonita qu",
+            "e boca má",
+            "s redondita/n"
+        ],
+        [
+            "Me gusta esa barbita",
+            "",
+            "/n"
+        ],
+        [
+            "Y bailé hasta que me cans",
+            "é/n"
+        ],
+        [
+            "Hasta que me cans",
+            " bailé/nY me ena-na-namor"
+        ],
+        [
+            "é        /n"
+        ],
+        [
+            "Nos enamoramos/n"
+        ],
+        [
+            "Un mojito, dos mojitos mi",
+            "ra que ojit",
+            "os bonitos/n"
+        ],
+        [
+            "Me quedo otro ratito",
+            "",
+            "/n"
+        ],
+        [
+            "Contigo yo tendría 10 h",
+            "ijos empecemos por un pa",
+            "r/n"
+        ],
+        [
+            "Solamente te lo digo Po",
+            "r si quieres practicar/n"
+        ],
+        [
+            "Lo único que estoy diciendo/n"
+        ],
+        [
+            "Vayámonos conociend",
+            "o/n"
+        ],
+        [
+            "Es lo que está proponiendo, ",
+            "oh, oh/n"
+        ],
+        [
+            "Nos vamos entusiasmando/n"
+        ],
+        [
+            "Todo nos va resulta",
+            "ndo/n"
+        ],
+        [
+            "Qué bien lo estamos pasando, ",
+            "oh, oh/n"
+        ],
+        [
+            "Me enamoré, me ena-na-na-na-namor",
+            "é/n"
+        ],
+        [
+            "Lo vi solito y me lanc",
+            " Me ena-na-na-na-na-namor",
+            "/n"
+        ],
+        [
+            "Me Ena-na-namo/n"
+        ],
+        [
+            "Mira que cosa bonita Qu",
+            "e boca más redondi",
+            "ta/n"
+        ],
+        [
+            "Me gusta esa barbita",
+            "",
+            "/n"
+        ],
+        [
+            "Y bailé hasta que me c",
+            "ansé/n"
+        ],
+        [
+            "Hasta que me cans",
+            " bailé/nY me ena-na-n"
+        ],
+        [
+            "amoré        /n"
+        ],
+        [
+            "Nos enamoramos/n"
+        ],
+        [
+            "Un mojito, dos mojitos mi",
+            "ra que ojit",
+            "os bonitos/n"
+        ],
+        [
+            "Me quedo otro ratito",
+            "",
+            "/n"
+        ],
+        [
+            "Nunca crei",
+            " que fuer",
+            "a así",
+            "/nCómo te "
+        ],
+        [
+            "fijarías en ",
+            "mí?/n"
+        ],
+        [
+            "Toda una no",
+            "che lo ",
+            "pensé",
+            "/n"
+        ],
+        [
+            "Es-es pa' m",
+            ", es pa' más nadie/n"
+        ],
+        [
+            "Es-es pa' mí, es pa' más nadie/n"
+        ],
+        [
+            "Es-es-es pa' m",
+            ", es pa' más nadie/n"
+        ],
+        [
+            "Me enamoré, me ena-na-na-na-namor",
+            "é/n"
+        ],
+        [
+            "Lo vi solito y me la",
+            "ncé Me ena-na-na-na-na-namor",
+            "/n"
+        ],
+        [
+            "Me Ena-na-namo/n"
+        ],
+        [
+            "Mira que cosa bonita Qu",
+            "e boca más redondi",
+            "ta/n"
+        ],
+        [
+            "Me gusta esa barbita",
+            "",
+            "/n"
+        ],
+        [
+            "Y bailé hasta que me c",
+            "ansé/n"
+        ],
+        [
+            "Hasta que me cans",
+            " bailé/nY me ena-na-n"
+        ],
+        [
+            "amoré        /n"
+        ],
+        [
+            "Nos enamoramos/n"
+        ],
+        [
+            "Un mojito, dos mojitos mi",
+            "ra que ojit",
+            "os bonitos/n"
+        ],
+        [
+            "Me quedo otro ratito",
+            "",
+            "/n"
+        ],
+        [
+            "Nunca crei",
+            " que fuer",
+            "a así/n"
+        ],
+        [
+            "Cómo te f",
+            "ijarías en m",
+            "í?/n"
+        ],
+        [
+            "Toda una no",
+            "che lo ",
+            "pensé/n"
+        ],
+        [
+            "Este es pa' mí, es pa' más nadie/n"
+        ],
+        [
+            "Es-es pa' mí, ",
+            "es pa' más nadie/n"
+        ],
+        [
+            "Es-es pa' mí, es pa' más nadie/n"
+        ],
+        [
+            "Es-es-es pa' mí, ",
+            "es pa' más nadie"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "sPTn0QEhxds",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,367 @@
-{"cancion": "gaston", "banda": "disney", "escala": "D", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "A7", "D", "A7", "D", "A7", "A", "Bm", "Bm", "Bm", "Bm", "Bm", "Bm", "Bm", "Bm", "D", "D", "D", "D", "Bm", "Bm/A", "E/G#", "E", "A", "B", "A", "D", "A", "A", "D", "Bm", "Em", "Em", "A", "D", "Bm", "G", "Bb", "Bb", "Bb", "A", "C", "A", "A+", "D", "A", "A", "D", "Bm", "E", "Bb", "A", "D", "D", "A", "A/A#", "A/B", "A/C", "A/C#", "E", "A", "A+", "D", "A", "A", "D", "Bm", "Em", "Em", "A", "Bm", "Bm", "G", "Bb", "Bb", "A", "F", "D", "A", "A", "D", "Bm", "E", "Bb", "A", "D", "F#", "Bm", "E", "A", "A", "Bm", "Bm/A", "E/G#", "E", "A", "G", "A", "A+", "D", "A", "A", "Bb7", "D/A", "E/G#", "E", "A", "A", "A", "G", "A", "E/G#", "E", "E", "D", "E", "G", "E/G#", "A", "Bm", "G", "F#7", "Bm", "G", "E/G#", "A", "B7", "Em", "A", "A", "D", "Bb", "A", "D"]}], "orden_partes": [0]}, "letras": [[], [], ["Gosh, it disturbs me to s", "ee you Gaston, lo", "oking so down in the dum", "ps/n"], ["Every guy here'd love to b", "e you, Gaston! Eve", "n when taking your lump", "s/n"], ["There's no man in town as adm", "ired as you, you're ev", "eryone's favorite guy", "/n"], ["Everyone's aw", "ed and insp", "ired by you, and it's not", " very hard to see why", "/n"], [], ["No one's ", "slick as Gaston, No one's q", "uick as Gaston/nNo one's n"], ["eck's as incredibly t", "hick as Gaston/nFor there's "], ["no man in town half as m", "anly perf", "ect, a pure", " paragon!", "/nYou can "], ["ask any Tom, Dick, or S", "tanley/nAnd they'll "], ["tell you whose t", "eam they'd pr", "efer to be on", "/n"], [], ["Who pl", "ays da", "rts like Gaston?, Who breaks hear", "ts like Gaston?/nWho's much m"], ["ore than the sum of his p", "arts like Gaston?/nAs a "], ["specimen, yes, I'm i", "ntimidating!/n"], ["My, what a g", "uy, that Ga", "ston!/n"], [], ["needed encouragement, t", "hank you, LeFou/nWell, there's "], ["no one as ea", "sy to bol", "ster as you!   Too much? ...Yep/n"], [], ["No o", "ne figh", "ts like Gaston, douses ligh", "ts like Gaston/n"], ["In a wrestling match, nobody b", "ites like Gaston/nWhen I "], ["hunt, I sneak up with my q", "uiver and be", "asts of the fie", "ld say a pray", "er/nFirst, I "], ["carefully aim for the l", "iver, then I sh", "oot from behind/nIs that "], ["fair? I don't care", "/n"], [], ["hits like Gaston, Matches w", "its like Gaston/nIn a "], ["spitting match, nobody sp", "its like Gaston/nI'm "], ["especially good at e", "xpectorating! (Spits)  ", " Ten", " points for Gasto", "n!/n"], ["When I was a lad, I ate fo", "ur dozen eggs every mor", "ning to help me get lar", "ge/n"], ["And now that I'm grown, I eat f", "ive dozen eggs", "/nSo I'm "], ["roughly the si", "ze of a ba", "rge!/n"], [], ["Who h", "as br", "ains like Gaston? Entert", "ains like Gaston?/n"], ["Who can make up these endless r", "efrains like Gaston?/nI use "], ["antlers in all of my dec", "orating", "/n"], ["Say it again", "", "", "", "/nWho's a "], ["man among men?", "", "", "", "/nWho's the "], ["super succes", "s? Don't you kn", "ow? Can't you gues", "s?/nAsk his "], ["fans and his f", "ive hangers-on", "/nThere's just "], ["one guy in t", "own, who's go", "t all of it dow", "n/nAnd his "], ["name's G-A-S", "...T...I believe there's another T/nAnd I've never actually had to spell it out loud before"], ["/n"], ["Gaston!", "", "", ""]], "medias": [{"tipo": "Youtube", "id": "n5Ib_rgtJX8", "delay": 0}]}
+{
+    "cancion": "gaston",
+    "banda": "disney",
+    "escala": "D",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "D",
+                    "A7",
+                    "D",
+                    "A7",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm/A",
+                    "E/G#",
+                    "E",
+                    "A",
+                    "B",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "A",
+                    "D",
+                    "Bm",
+                    "G",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "A",
+                    "C",
+                    "A",
+                    "A+",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "Bm",
+                    "E",
+                    "Bb",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "A/A#",
+                    "A/B",
+                    "A/C",
+                    "A/C#",
+                    "E",
+                    "A",
+                    "A+",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Bb",
+                    "Bb",
+                    "A",
+                    "F",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "Bm",
+                    "E",
+                    "Bb",
+                    "A",
+                    "D",
+                    "F#",
+                    "Bm",
+                    "E",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm/A",
+                    "E/G#",
+                    "E",
+                    "A",
+                    "G",
+                    "A",
+                    "A+",
+                    "D",
+                    "A",
+                    "A",
+                    "Bb7",
+                    "D/A",
+                    "E/G#",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "E/G#",
+                    "E",
+                    "E",
+                    "D",
+                    "E",
+                    "G",
+                    "E/G#",
+                    "A",
+                    "Bm",
+                    "G",
+                    "F#7",
+                    "Bm",
+                    "G",
+                    "E/G#",
+                    "A",
+                    "B7",
+                    "Em",
+                    "A",
+                    "A",
+                    "D",
+                    "Bb",
+                    "A",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "Gosh, it disturbs me to s",
+            "ee you Gaston, lo",
+            "oking so down in the dum",
+            "ps/n"
+        ],
+        [
+            "Every guy here'd love to b",
+            "e you, Gaston! Eve",
+            "n when taking your lump",
+            "s/n"
+        ],
+        [
+            "There's no man in town as adm",
+            "ired as you, you're ev",
+            "eryone's favorite guy",
+            "/n"
+        ],
+        [
+            "Everyone's aw",
+            "ed and insp",
+            "ired by you, and it's not",
+            " very hard to see why",
+            "/n"
+        ],
+        [],
+        [
+            "No one's ",
+            "slick as Gaston, No one's q",
+            "uick as Gaston/nNo one's n"
+        ],
+        [
+            "eck's as incredibly t",
+            "hick as Gaston/nFor there's "
+        ],
+        [
+            "no man in town half as m",
+            "anly perf",
+            "ect, a pure",
+            " paragon!",
+            "/nYou can "
+        ],
+        [
+            "ask any Tom, Dick, or S",
+            "tanley/nAnd they'll "
+        ],
+        [
+            "tell you whose t",
+            "eam they'd pr",
+            "efer to be on",
+            "/n"
+        ],
+        [],
+        [
+            "Who pl",
+            "ays da",
+            "rts like Gaston?, Who breaks hear",
+            "ts like Gaston?/nWho's much m"
+        ],
+        [
+            "ore than the sum of his p",
+            "arts like Gaston?/nAs a "
+        ],
+        [
+            "specimen, yes, I'm i",
+            "ntimidating!/n"
+        ],
+        [
+            "My, what a g",
+            "uy, that Ga",
+            "ston!/n"
+        ],
+        [],
+        [
+            "needed encouragement, t",
+            "hank you, LeFou/nWell, there's "
+        ],
+        [
+            "no one as ea",
+            "sy to bol",
+            "ster as you!   Too much? ...Yep/n"
+        ],
+        [],
+        [
+            "No o",
+            "ne figh",
+            "ts like Gaston, douses ligh",
+            "ts like Gaston/n"
+        ],
+        [
+            "In a wrestling match, nobody b",
+            "ites like Gaston/nWhen I "
+        ],
+        [
+            "hunt, I sneak up with my q",
+            "uiver and be",
+            "asts of the fie",
+            "ld say a pray",
+            "er/nFirst, I "
+        ],
+        [
+            "carefully aim for the l",
+            "iver, then I sh",
+            "oot from behind/nIs that "
+        ],
+        [
+            "fair? I don't care",
+            "/n"
+        ],
+        [],
+        [
+            "hits like Gaston, Matches w",
+            "its like Gaston/nIn a "
+        ],
+        [
+            "spitting match, nobody sp",
+            "its like Gaston/nI'm "
+        ],
+        [
+            "especially good at e",
+            "xpectorating! (Spits)  ",
+            " Ten",
+            " points for Gasto",
+            "n!/n"
+        ],
+        [
+            "When I was a lad, I ate fo",
+            "ur dozen eggs every mor",
+            "ning to help me get lar",
+            "ge/n"
+        ],
+        [
+            "And now that I'm grown, I eat f",
+            "ive dozen eggs",
+            "/nSo I'm "
+        ],
+        [
+            "roughly the si",
+            "ze of a ba",
+            "rge!/n"
+        ],
+        [],
+        [
+            "Who h",
+            "as br",
+            "ains like Gaston? Entert",
+            "ains like Gaston?/n"
+        ],
+        [
+            "Who can make up these endless r",
+            "efrains like Gaston?/nI use "
+        ],
+        [
+            "antlers in all of my dec",
+            "orating",
+            "/n"
+        ],
+        [
+            "Say it again",
+            "",
+            "",
+            "",
+            "/nWho's a "
+        ],
+        [
+            "man among men?",
+            "",
+            "",
+            "",
+            "/nWho's the "
+        ],
+        [
+            "super succes",
+            "s? Don't you kn",
+            "ow? Can't you gues",
+            "s?/nAsk his "
+        ],
+        [
+            "fans and his f",
+            "ive hangers-on",
+            "/nThere's just "
+        ],
+        [
+            "one guy in t",
+            "own, who's go",
+            "t all of it dow",
+            "n/nAnd his "
+        ],
+        [
+            "name's G-A-S",
+            "...T...I believe there's another T/nAnd I've never actually had to spell it out loud before"
+        ],
+        [
+            "/n"
+        ],
+        [
+            "Gaston!",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "n5Ib_rgtJX8",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

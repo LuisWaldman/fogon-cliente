@@ -1,1 +1,73 @@
-{"cancion": "Shattered", "banda": "the-rolling-stones", "escala": "C#5", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C#5", "E5", "A5", "D5", "G5", "C"]}, {"nombre": "parte2", "acordes": ["A5", "C#5", "E5", "A5", "D5", "G5", "C5", "B5"]}], "orden_partes": [0, 1]}, "letras": [["/           /    /", "                 / ", "                / /", "/n "], ["/                /", "                  (g", "uitar 1 plays fill 1 here/n "], ["/                 /", "                 / ", "     /          /  ", "     //n "], ["/     /           /", "      /          (guitar 1 plays fill", " 2 here"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "Wjz6l_4MqHM", "delay": 0}]}
+{
+    "cancion": "Shattered",
+    "banda": "the-rolling-stones",
+    "escala": "C#5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "G5",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A5",
+                    "C#5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "G5",
+                    "C5",
+                    "B5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "/           /    /",
+            "                 / ",
+            "                / /",
+            "/n "
+        ],
+        [
+            "/                /",
+            "                  (g",
+            "uitar 1 plays fill 1 here/n "
+        ],
+        [
+            "/                 /",
+            "                 / ",
+            "     /          /  ",
+            "     //n "
+        ],
+        [
+            "/     /           /",
+            "      /          (guitar 1 plays fill",
+            " 2 here"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Wjz6l_4MqHM",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

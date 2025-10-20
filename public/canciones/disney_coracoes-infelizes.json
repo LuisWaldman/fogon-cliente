@@ -1,1 +1,296 @@
-{"cancion": "coracoes-infelizes", "banda": "disney", "escala": "Cm9", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Cm9", "Db", "Ab/C", "G/B", "Ab/C", "G/B", "Ab/C", "Db", "G/D", "Cm9", "Db", "Ab/C", "G/B", "Ab/C", "G/B", "Ab/C", "Db", "G/D", "Cm9", "Db", "Ab/C", "G/B", "Ab/C", "G/B", "D", "G", "Cm9", "Db", "Ab/C", "G/B", "Ab/C", "G/B", "D", "G", "G", "Cm", "Ab", "Fm", "G4", "G", "Cm", "Db", "Ab/C", "Db", "Cm", "Cm9", "Db", "Ab/C", "G/B", "Ab/C", "G/B", "Ab/C", "Db", "G/D", "Cm9", "Db", "Ab/C", "G/B", "Ab/C", "G/B", "Ab/C", "Db", "G/D", "Cm9", "G/B", "Cm9", "Ab/C", "G/B", "Ab/C", "G/B", "D", "G", "G", "Cm", "Cm9", "G/D", "Cm9", "Ab/C", "G/B", "Ab/C", "G/B", "Ab/C", "G/D", "Cm", "Ab/C", "Cm"]}], "orden_partes": [0]}, "letras": [["   Eu confesso que j\u00e1 fui muito malvada/nEra pouco me chamarem s\u00f3 de br"], ["uxa/nMas d"], ["epois de arrepend", "ida, fiqu", "ei mais comedid", "a/nE "], ["at\u00e9 mais gene", "rosa e gorduch", "a/nFeliz"], ["mente eu conhe\u00e7o uma magia/n um talento que eu sempre pos"], ["su\u00ed/nE hoje \u00e9"], [" esse o meu o", "f\u00edcio/n"], ["Uso em benef", "\u00edcio do infe", "liz ou sofredo", "r que vem aqui", "/n"], ["Cora\u00e7\u00f5es infelizes/nPrecisam de "], ["mim/nUma q"], ["uer ser mais mag", "rinha/nOutro q"], ["uer a namorad", "a/nEu res"], ["olvo? Claro que si", "m!/nS\u00e3o"], [" cora\u00e7\u00f5es infelizes/nEm busca de tu"], ["do/nTodos "], ["eles chegam i", "mplorando/n"], ["Fa\u00e7a-me um fei", "ti\u00e7o/n"], ["   ", "O que \u00e9 que eu fa\u00e7o?", "   ", " Eu ajudo!/nMas me "], ["lembro no come\u00e7o/nAlguns n"], ["\u00e3o pagaram o pre\u00e7o/nE fui for"], ["\u00e7ada a casti", "gar os infel", "izes/nSe rec"], ["lamam n\u00e3o ad", "ianta/n"], ["Pois em geral eu sou uma santa/nPara os cora\u00e7\u00f5es in"], ["felizes/nO "], ["homem abomina tagarelas/nGarota caladinha ele a"], ["dora/nSe a m"], ["ulher ficar fal", "ando/nO dia i"], ["nteiro e fofoc", "ando/nO homem se "], ["zanga, diz ad", "eus e vai emb", "ora/nN\u00e3o"], [" v\u00e1 querer jogar conversa fora/nQue os homens fazem tudo pra evi"], ["tar/nSabe "], ["quem \u00e9 mais que", "rida?/n a "], ["garota retr", "a\u00edda!/nE"], [" s\u00f3 as bem quie", "tinhas v\u00e3o ca", "sar!/n"], [" hora de resolver/nO neg\u00f3ci"], ["o   entre ", "n\u00f3s/nEu sou"], [" muito ocu", "pada/nE n\u00e3"], ["o tenho o dia in", "teiro/nO meu pre\u00e7o"], ["?  ", "  sua voz!", "", "/nV"], ["oc\u00ea que \u00e9 t\u00e3o infeliz/nN\u00e3o va"], ["i   ser mais", "/nSe qu"], ["iser atravessar a p", "onte/nE"], ["xiste um pagam", "ento/nVamos l\u00e1, tome coragem"], ["!/nAssine o documento"], ["/n dia de al"], ["egria!/nGa"], ["nhei o que eu quer", "ia!"]], "medias": [{"tipo": "Youtube", "id": "MperUFHbNuY", "delay": 0}]}
+{
+    "cancion": "coracoes-infelizes",
+    "banda": "disney",
+    "escala": "Cm9",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Cm9",
+                    "Db",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "Db",
+                    "G/D",
+                    "Cm9",
+                    "Db",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "Db",
+                    "G/D",
+                    "Cm9",
+                    "Db",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "D",
+                    "G",
+                    "Cm9",
+                    "Db",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "D",
+                    "G",
+                    "G",
+                    "Cm",
+                    "Ab",
+                    "Fm",
+                    "G4",
+                    "G",
+                    "Cm",
+                    "Db",
+                    "Ab/C",
+                    "Db",
+                    "Cm",
+                    "Cm9",
+                    "Db",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "Db",
+                    "G/D",
+                    "Cm9",
+                    "Db",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "Db",
+                    "G/D",
+                    "Cm9",
+                    "G/B",
+                    "Cm9",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "D",
+                    "G",
+                    "G",
+                    "Cm",
+                    "Cm9",
+                    "G/D",
+                    "Cm9",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/B",
+                    "Ab/C",
+                    "G/D",
+                    "Cm",
+                    "Ab/C",
+                    "Cm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "   Eu confesso que já fui muito malvada/nEra pouco me chamarem só de br"
+        ],
+        [
+            "uxa/nMas d"
+        ],
+        [
+            "epois de arrepend",
+            "ida, fiqu",
+            "ei mais comedid",
+            "a/nE "
+        ],
+        [
+            "até mais gene",
+            "rosa e gorduch",
+            "a/nFeliz"
+        ],
+        [
+            "mente eu conheço uma magia/n um talento que eu sempre pos"
+        ],
+        [
+            "suí/nE hoje é"
+        ],
+        [
+            " esse o meu o",
+            "fício/n"
+        ],
+        [
+            "Uso em benef",
+            "ício do infe",
+            "liz ou sofredo",
+            "r que vem aqui",
+            "/n"
+        ],
+        [
+            "Corações infelizes/nPrecisam de "
+        ],
+        [
+            "mim/nUma q"
+        ],
+        [
+            "uer ser mais mag",
+            "rinha/nOutro q"
+        ],
+        [
+            "uer a namorad",
+            "a/nEu res"
+        ],
+        [
+            "olvo? Claro que si",
+            "m!/nSão"
+        ],
+        [
+            " corações infelizes/nEm busca de tu"
+        ],
+        [
+            "do/nTodos "
+        ],
+        [
+            "eles chegam i",
+            "mplorando/n"
+        ],
+        [
+            "Faça-me um fei",
+            "tiço/n"
+        ],
+        [
+            "   ",
+            "O que é que eu faço?",
+            "   ",
+            " Eu ajudo!/nMas me "
+        ],
+        [
+            "lembro no começo/nAlguns n"
+        ],
+        [
+            "ão pagaram o preço/nE fui for"
+        ],
+        [
+            "çada a casti",
+            "gar os infel",
+            "izes/nSe rec"
+        ],
+        [
+            "lamam não ad",
+            "ianta/n"
+        ],
+        [
+            "Pois em geral eu sou uma santa/nPara os corações in"
+        ],
+        [
+            "felizes/nO "
+        ],
+        [
+            "homem abomina tagarelas/nGarota caladinha ele a"
+        ],
+        [
+            "dora/nSe a m"
+        ],
+        [
+            "ulher ficar fal",
+            "ando/nO dia i"
+        ],
+        [
+            "nteiro e fofoc",
+            "ando/nO homem se "
+        ],
+        [
+            "zanga, diz ad",
+            "eus e vai emb",
+            "ora/nNão"
+        ],
+        [
+            " vá querer jogar conversa fora/nQue os homens fazem tudo pra evi"
+        ],
+        [
+            "tar/nSabe "
+        ],
+        [
+            "quem é mais que",
+            "rida?/n a "
+        ],
+        [
+            "garota retr",
+            "aída!/nE"
+        ],
+        [
+            " só as bem quie",
+            "tinhas vão ca",
+            "sar!/n"
+        ],
+        [
+            " hora de resolver/nO negóci"
+        ],
+        [
+            "o   entre ",
+            "nós/nEu sou"
+        ],
+        [
+            " muito ocu",
+            "pada/nE nã"
+        ],
+        [
+            "o tenho o dia in",
+            "teiro/nO meu preço"
+        ],
+        [
+            "?  ",
+            "  sua voz!",
+            "",
+            "/nV"
+        ],
+        [
+            "ocê que é tão infeliz/nNão va"
+        ],
+        [
+            "i   ser mais",
+            "/nSe qu"
+        ],
+        [
+            "iser atravessar a p",
+            "onte/nE"
+        ],
+        [
+            "xiste um pagam",
+            "ento/nVamos lá, tome coragem"
+        ],
+        [
+            "!/nAssine o documento"
+        ],
+        [
+            "/n dia de al"
+        ],
+        [
+            "egria!/nGa"
+        ],
+        [
+            "nhei o que eu quer",
+            "ia!"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "MperUFHbNuY",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

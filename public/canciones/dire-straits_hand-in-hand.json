@@ -1,1 +1,355 @@
-{"cancion": "hand-in-hand", "banda": "dire-straits", "escala": "C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Am", "C", "Am", "C", "Am", "C", "Am", "Am", "Em", "Em", "Am", "C", "G", "C", "Am", "C", "Am", "Am", "Em", "Am", "C", "G", "G", "Am", "G", "F", "G", "Am", "G", "F", "G7", "G", "Am", "Em", "Am", "G", "F", "G7/E", "Dm", "Dm/C", "G", "C", "Am", "C", "Am", "Am", "Em", "Em", "Am", "C", "G", "C", "Am", "C", "Am", "Am", "Em", "Am", "C", "G", "G", "Am", "G", "F", "G", "Am", "G", "F", "G7", "G", "Am", "Em", "Am", "G", "F", "G7/E", "Dm", "Dm/C", "G", "C", "Am", "C", "Am", "Am", "Em", "Em", "Am", "C", "Am", "C", "Am", "Am", "Em", "Am", "C", "G", "G", "Am", "G", "F", "G", "Am", "G", "F", "G7", "G", "Am", "Em", "Am", "G", "F", "G7/E", "Dm", "Dm/C", "G", "C", "Am", "C", "Am", "Am", "Em", "Em", "Am", "C", "G"]}], "orden_partes": [0]}, "letras": [[], ["the sky is crying the s", "treets are full of tears /n"], ["rain come down and w", "ash away my fears /n"], ["and all this w", "riting on the wall /n"], ["oh i can read between the l", "ines ", "", "/n"], ["rain come down forg", "ive this dirty town /n"], ["rain come down and giv", "e this dirty town /n"], ["a drink of w", "ater        a drink of wi", "ne ", "", "/n      "], ["  if i been h", "ard on yo", "u   i n", "ever chose to be /n      "], ["  i never w", "anted no on", "e els", "e ", "/n      "], ["  i tried my b", "est to be somebo", "dy you'd be clo", "se to ", "/n      "], ["  hand i", "n   ha", "nd lik", "e love", "rs are supposed to/n"], ["As you'd sleep I'd think my heart would break in t", "wo/n"], ["I'd kiss your cheek I'd stop myself from waking y", "ou/n"], ["But in the dark you'd spe", "ak my name/n"], ["You'd say baby what's wrong ?", "", "", "/n"], ["Oh ? Here I am baby I'm coming back for more", "/n"], ["I'm like a wave that's got to roll into the shore", "/n"], ["Yes and if my love's in ", "vain how come my love is so strong ?", "", "", "/n      "], ["  if i been h", "ard on yo", "u   i n", "ever chose to be /n      "], ["  i never w", "anted no on", "e els", "e ", "/n      "], ["  i tried my b", "est to be somebo", "dy you'd be clo", "se to ", "/n      "], ["  hand i", "n   ha", "nd lik", "e love", "rs are supposed to/n"], ["Now you and me go parallel together and apart", "/n"], ["And you keep your perfect distance and it's tearing at my heart", "/n"], ["Did you never ", "feel the distance/n"], ["You never tried to cross no line", "/n"], ["'Cause it's another dirty river and another dirty scar", "/n"], ["And I don't know who's kissing you and I don't know where you are", "/n"], ["So far from", " home /nDon't you think of me sometime"], ["", "", "/n      "], ["  if i been h", "ard on yo", "u   i n", "ever chose to be /n      "], ["  i never w", "anted no on", "e els", "e ", "/n      "], ["  i tried my b", "est to be somebo", "dy you'd be clo", "se to ", "/n      "], ["  hand i", "n   ha", "nd lik", "e love", "rs are supposed to/n"], ["the sky is crying the s", "treets are full of tears /n"], ["rain come down and w", "ash away my fears /n"], ["and all this w", "riting on the wall /n"], ["oh i can read between the l", "ines", "", ""]], "medias": [{"tipo": "Youtube", "id": "7N1a9W5D_EI", "delay": 0}]}
+{
+    "cancion": "hand-in-hand",
+    "banda": "dire-straits",
+    "escala": "C",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "G",
+                    "Am",
+                    "G",
+                    "F",
+                    "G",
+                    "Am",
+                    "G",
+                    "F",
+                    "G7",
+                    "G",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "G",
+                    "F",
+                    "G7/E",
+                    "Dm",
+                    "Dm/C",
+                    "G",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "G",
+                    "Am",
+                    "G",
+                    "F",
+                    "G",
+                    "Am",
+                    "G",
+                    "F",
+                    "G7",
+                    "G",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "G",
+                    "F",
+                    "G7/E",
+                    "Dm",
+                    "Dm/C",
+                    "G",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "G",
+                    "Am",
+                    "G",
+                    "F",
+                    "G",
+                    "Am",
+                    "G",
+                    "F",
+                    "G7",
+                    "G",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "G",
+                    "F",
+                    "G7/E",
+                    "Dm",
+                    "Dm/C",
+                    "G",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "the sky is crying the s",
+            "treets are full of tears /n"
+        ],
+        [
+            "rain come down and w",
+            "ash away my fears /n"
+        ],
+        [
+            "and all this w",
+            "riting on the wall /n"
+        ],
+        [
+            "oh i can read between the l",
+            "ines ",
+            "",
+            "/n"
+        ],
+        [
+            "rain come down forg",
+            "ive this dirty town /n"
+        ],
+        [
+            "rain come down and giv",
+            "e this dirty town /n"
+        ],
+        [
+            "a drink of w",
+            "ater        a drink of wi",
+            "ne ",
+            "",
+            "/n      "
+        ],
+        [
+            "  if i been h",
+            "ard on yo",
+            "u   i n",
+            "ever chose to be /n      "
+        ],
+        [
+            "  i never w",
+            "anted no on",
+            "e els",
+            "e ",
+            "/n      "
+        ],
+        [
+            "  i tried my b",
+            "est to be somebo",
+            "dy you'd be clo",
+            "se to ",
+            "/n      "
+        ],
+        [
+            "  hand i",
+            "n   ha",
+            "nd lik",
+            "e love",
+            "rs are supposed to/n"
+        ],
+        [
+            "As you'd sleep I'd think my heart would break in t",
+            "wo/n"
+        ],
+        [
+            "I'd kiss your cheek I'd stop myself from waking y",
+            "ou/n"
+        ],
+        [
+            "But in the dark you'd spe",
+            "ak my name/n"
+        ],
+        [
+            "You'd say baby what's wrong ?",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh ? Here I am baby I'm coming back for more",
+            "/n"
+        ],
+        [
+            "I'm like a wave that's got to roll into the shore",
+            "/n"
+        ],
+        [
+            "Yes and if my love's in ",
+            "vain how come my love is so strong ?",
+            "",
+            "",
+            "/n      "
+        ],
+        [
+            "  if i been h",
+            "ard on yo",
+            "u   i n",
+            "ever chose to be /n      "
+        ],
+        [
+            "  i never w",
+            "anted no on",
+            "e els",
+            "e ",
+            "/n      "
+        ],
+        [
+            "  i tried my b",
+            "est to be somebo",
+            "dy you'd be clo",
+            "se to ",
+            "/n      "
+        ],
+        [
+            "  hand i",
+            "n   ha",
+            "nd lik",
+            "e love",
+            "rs are supposed to/n"
+        ],
+        [
+            "Now you and me go parallel together and apart",
+            "/n"
+        ],
+        [
+            "And you keep your perfect distance and it's tearing at my heart",
+            "/n"
+        ],
+        [
+            "Did you never ",
+            "feel the distance/n"
+        ],
+        [
+            "You never tried to cross no line",
+            "/n"
+        ],
+        [
+            "'Cause it's another dirty river and another dirty scar",
+            "/n"
+        ],
+        [
+            "And I don't know who's kissing you and I don't know where you are",
+            "/n"
+        ],
+        [
+            "So far from",
+            " home /nDon't you think of me sometime"
+        ],
+        [
+            "",
+            "",
+            "/n      "
+        ],
+        [
+            "  if i been h",
+            "ard on yo",
+            "u   i n",
+            "ever chose to be /n      "
+        ],
+        [
+            "  i never w",
+            "anted no on",
+            "e els",
+            "e ",
+            "/n      "
+        ],
+        [
+            "  i tried my b",
+            "est to be somebo",
+            "dy you'd be clo",
+            "se to ",
+            "/n      "
+        ],
+        [
+            "  hand i",
+            "n   ha",
+            "nd lik",
+            "e love",
+            "rs are supposed to/n"
+        ],
+        [
+            "the sky is crying the s",
+            "treets are full of tears /n"
+        ],
+        [
+            "rain come down and w",
+            "ash away my fears /n"
+        ],
+        [
+            "and all this w",
+            "riting on the wall /n"
+        ],
+        [
+            "oh i can read between the l",
+            "ines",
+            "",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "7N1a9W5D_EI",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

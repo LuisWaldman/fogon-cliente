@@ -1,1 +1,351 @@
-{"cancion": "try-some-buy-some", "banda": "david-bowie", "escala": "Dm/C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm/C", "Dm/B", "Dm/Bb", "Dm/A", "A7", "Bb/F", "Gm/E", "Gm/Eb", "Gm/D", "Dbdim", "C", "F", "F", "Fmaj7", "F(add9)", "Fmaj7", "F", "Fmaj7", "F(add9)", "Fmaj7", "F", "Bbm", "Bbm", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "F", "F/E", "Dm7", "F/C", "Bdim7", "Bdim7", "Bb", "F", "Fmaj7", "F(add9)", "Fmaj7", "Dm/C", "Dm/B", "Dm/Bb", "Dm/A", "A7", "Bb/F", "Gm/E", "Gm/Eb", "Gm/D", "Dbdim", "C", "F", "F", "Fmaj7", "F(add9)", "Fmaj7", "F", "Fmaj7", "F(add9)", "Fmaj7", "F", "Bbm", "Bbm", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "F", "F/E", "Dm7", "F/C", "Bdim7", "Bdim7", "Bb", "F", "Fmaj7", "F(add9)", "Fmaj7", "F", "F7", "Bbm", "Bbm", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "Db7", "F", "F/E", "Dm7", "F/C", "Bdim7", "Bb", "F", "F/E", "Dm7", "F/C", "F", "F/E", "Dm7", "F/C", "F", "F/E", "Dm7", "F/C", "F", "F/E", "Dm7", "F/C", "F", "F/E", "Dm7", "F/C", "F", "F/E", "Dm7", "F/C"]}], "orden_partes": [0]}, "letras": [["try some/nI "], ["tried some/nNow "], ["buy some - I b", "ought some .../nOh-oh, "], ["oh-oh-oh/nWhen I had "], ["tried them/nDe"], ["nied them/nI "], ["opened my e", "yes and/nI "], ["saw-aw-aw you-o", "u-ou-ou-ou-", "ou .../n"], [], ["     ", "         ", "Not a thi", "ng did I have", "/n  "], ["         And your lo", "ve came to me", "/n  "], ["              O", "h, oh, oh oh", ", oh, oh/n  "], ["              O", "h, oh, oh oh", ", oh, oh/n[I"], ["nterlude]/n  "], ["     ", "       ", "    Oh,", " oh, oh, oh-oh", "/n"], [], ["erse]", "", "", "/nI've seen "], ["grey sky,/nMet "], ["big fry,/nSeen "], ["them die to g", "et high .../nOh-oh, "], ["oh-oh-oh/nI would "], ["always/nBe "], ["lonely/nI "], ["opened my e", "yes and/nI "], ["saw-aw-aw you-o", "u-ou-ou-ou-", "ou .../n"], [], ["     ", "         ", "Not a thi", "ng did I feel", "/n  "], ["         And your lo", "ve sure did gro", "w/n  "], ["              O", "h, oh, oh oh", ", oh, oh/n  "], ["              O", "h, oh, oh oh", ", oh, oh/n[I"], ["nterlude]/n  "], ["     ", "       ", "    Oh,", " oh, oh, oh-oh", "/n"], [], ["uild ", "up]", "", "/n  "], ["1 + 2 + 3 +   1", " + 2 ", "+ 3 +   1 +", " 2 + 3 +   1 + ", "2 + 3 +/n  "], ["1 + 2 + 3 +   1", " + 2 + 3 +   1 ", "+ 2 + 3 +", "/n[I"], ["nterlude]", "", "/n"], [], ["utro]", "/nWon't you t"], ["ry so", "me", "", "/nBaby won't you b"], ["uy so", "me", "", "/nWon't you t"], ["ry so", "me", "", "/nBaby won't you "], ["buy s", "ome", "", "/nOh, oh, oh"], [", oh-", "oh", "", "/nOh, oh, oh"], [", oh-", "oh", "", ""]], "medias": [{"tipo": "Youtube", "id": "vNKabvzalC4", "delay": 0}]}
+{
+    "cancion": "try-some-buy-some",
+    "banda": "david-bowie",
+    "escala": "Dm/C",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm/C",
+                    "Dm/B",
+                    "Dm/Bb",
+                    "Dm/A",
+                    "A7",
+                    "Bb/F",
+                    "Gm/E",
+                    "Gm/Eb",
+                    "Gm/D",
+                    "Dbdim",
+                    "C",
+                    "F",
+                    "F",
+                    "Fmaj7",
+                    "F(add9)",
+                    "Fmaj7",
+                    "F",
+                    "Fmaj7",
+                    "F(add9)",
+                    "Fmaj7",
+                    "F",
+                    "Bbm",
+                    "Bbm",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "Bdim7",
+                    "Bdim7",
+                    "Bb",
+                    "F",
+                    "Fmaj7",
+                    "F(add9)",
+                    "Fmaj7",
+                    "Dm/C",
+                    "Dm/B",
+                    "Dm/Bb",
+                    "Dm/A",
+                    "A7",
+                    "Bb/F",
+                    "Gm/E",
+                    "Gm/Eb",
+                    "Gm/D",
+                    "Dbdim",
+                    "C",
+                    "F",
+                    "F",
+                    "Fmaj7",
+                    "F(add9)",
+                    "Fmaj7",
+                    "F",
+                    "Fmaj7",
+                    "F(add9)",
+                    "Fmaj7",
+                    "F",
+                    "Bbm",
+                    "Bbm",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "Bdim7",
+                    "Bdim7",
+                    "Bb",
+                    "F",
+                    "Fmaj7",
+                    "F(add9)",
+                    "Fmaj7",
+                    "F",
+                    "F7",
+                    "Bbm",
+                    "Bbm",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "Db7",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "Bdim7",
+                    "Bb",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "try some/nI "
+        ],
+        [
+            "tried some/nNow "
+        ],
+        [
+            "buy some - I b",
+            "ought some .../nOh-oh, "
+        ],
+        [
+            "oh-oh-oh/nWhen I had "
+        ],
+        [
+            "tried them/nDe"
+        ],
+        [
+            "nied them/nI "
+        ],
+        [
+            "opened my e",
+            "yes and/nI "
+        ],
+        [
+            "saw-aw-aw you-o",
+            "u-ou-ou-ou-",
+            "ou .../n"
+        ],
+        [],
+        [
+            "     ",
+            "         ",
+            "Not a thi",
+            "ng did I have",
+            "/n  "
+        ],
+        [
+            "         And your lo",
+            "ve came to me",
+            "/n  "
+        ],
+        [
+            "              O",
+            "h, oh, oh oh",
+            ", oh, oh/n  "
+        ],
+        [
+            "              O",
+            "h, oh, oh oh",
+            ", oh, oh/n[I"
+        ],
+        [
+            "nterlude]/n  "
+        ],
+        [
+            "     ",
+            "       ",
+            "    Oh,",
+            " oh, oh, oh-oh",
+            "/n"
+        ],
+        [],
+        [
+            "erse]",
+            "",
+            "",
+            "/nI've seen "
+        ],
+        [
+            "grey sky,/nMet "
+        ],
+        [
+            "big fry,/nSeen "
+        ],
+        [
+            "them die to g",
+            "et high .../nOh-oh, "
+        ],
+        [
+            "oh-oh-oh/nI would "
+        ],
+        [
+            "always/nBe "
+        ],
+        [
+            "lonely/nI "
+        ],
+        [
+            "opened my e",
+            "yes and/nI "
+        ],
+        [
+            "saw-aw-aw you-o",
+            "u-ou-ou-ou-",
+            "ou .../n"
+        ],
+        [],
+        [
+            "     ",
+            "         ",
+            "Not a thi",
+            "ng did I feel",
+            "/n  "
+        ],
+        [
+            "         And your lo",
+            "ve sure did gro",
+            "w/n  "
+        ],
+        [
+            "              O",
+            "h, oh, oh oh",
+            ", oh, oh/n  "
+        ],
+        [
+            "              O",
+            "h, oh, oh oh",
+            ", oh, oh/n[I"
+        ],
+        [
+            "nterlude]/n  "
+        ],
+        [
+            "     ",
+            "       ",
+            "    Oh,",
+            " oh, oh, oh-oh",
+            "/n"
+        ],
+        [],
+        [
+            "uild ",
+            "up]",
+            "",
+            "/n  "
+        ],
+        [
+            "1 + 2 + 3 +   1",
+            " + 2 ",
+            "+ 3 +   1 +",
+            " 2 + 3 +   1 + ",
+            "2 + 3 +/n  "
+        ],
+        [
+            "1 + 2 + 3 +   1",
+            " + 2 + 3 +   1 ",
+            "+ 2 + 3 +",
+            "/n[I"
+        ],
+        [
+            "nterlude]",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "utro]",
+            "/nWon't you t"
+        ],
+        [
+            "ry so",
+            "me",
+            "",
+            "/nBaby won't you b"
+        ],
+        [
+            "uy so",
+            "me",
+            "",
+            "/nWon't you t"
+        ],
+        [
+            "ry so",
+            "me",
+            "",
+            "/nBaby won't you "
+        ],
+        [
+            "buy s",
+            "ome",
+            "",
+            "/nOh, oh, oh"
+        ],
+        [
+            ", oh-",
+            "oh",
+            "",
+            "/nOh, oh, oh"
+        ],
+        [
+            ", oh-",
+            "oh",
+            "",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "vNKabvzalC4",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

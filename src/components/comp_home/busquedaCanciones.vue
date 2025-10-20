@@ -9,6 +9,7 @@ import { FiltroTempo } from '../../modelo/indices/filtroTempo'
 import { FiltroVideo } from '../../modelo/indices/filtroVideo'
 import { FiltroPartes } from '../../modelo/indices/filtroPartes'
 import { filtroAcordes } from '../../modelo/indices/filtroAcordes'
+import { FiltroEtiquetas } from '../../modelo/indices/filtroEtiquetas'
 
 const appStore = useAppStore()
 
@@ -120,7 +121,7 @@ const opcionesCalidad = [
 
 const opcionesGrupo = [
   { value: 'rock_nacional', label: 'Rock Nacional' },
-  { value: 'tango', label: 'Tango' },
+  { value: 'Tango', label: 'Tango' },
   { value: 'folclore', label: 'Folclore' },
   { value: 'cumbia', label: 'Cumbia' },
   { value: 'rock_internacional', label: 'Rock Internacional' },
@@ -179,6 +180,12 @@ function buscarCanciones() {
     const partesSeleccionadas = filtroPartesSeleccionada.value.join(',')
     filtros.push(new FiltroPartes(partesSeleccionadas))
   }
+
+  if (filtroGrupo.value) {
+    const partesSeleccionadas = filtroGrupoSeleccionado.value.join(',')
+    filtros.push(new FiltroEtiquetas(partesSeleccionadas))
+  }
+  //FiltroEtiquetas
 
   appStore.aplicacion.indiceHelper
     .Buscar(filtros)

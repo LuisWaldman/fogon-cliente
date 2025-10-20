@@ -1,1 +1,375 @@
-{"cancion": "Marchin-To-The-City", "banda": "bob-dylan", "escala": "Eb/Bb", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Eb/Bb", "Bb", "Eb/Bb"]}, {"nombre": "parte2", "acordes": ["Bb"]}, {"nombre": "parte3", "acordes": ["Eb7", "Bb7", "Eb/Bb", "Bb", "F", "Eb", "Bb", "Eb/Bb"]}, {"nombre": "parte4", "acordes": ["Eb/Bb", "Eb", "Eb/Bb"]}], "orden_partes": [0, 1, 0, 1, 2, 1, 0, 1, 0, 1, 2, 1, 0, 1, 3, 1, 2, 1, 0, 1, 0, 1, 2, 1, 0, 1, 0, 1, 2, 1, 0, 1, 0, 1, 2, 1, 0, 1, 0, 1, 2, 1]}, "letras": [["sitting in c", "hurch/nIn an "], ["old wooden c", "hair/nI"], [" knew nobo", "dy/nWould "], ["look for me t", "here/nSorrow and p"], ["ity/nLooking for "], ["nothing/n"], ["Anyone's e", "yes/nOnce I had pretty "], ["girls/nDid me "], ["wrong/nNow I'm marching to the "], ["city/nAnd the r"], ["oad ain't lo", "ng/nSnowfl"], ["akes are fal", "ling/nAr"], ["ound my he", "ad/nL"], ["ord have merc", "y/nIt f"], ["eel heavy like l", "ead/nI been hit too ha"], ["rd/nNothing can h"], ["eal me now/n"], ["But your to", "uch/nOnce I had a pretty "], ["girl/nShe done me "], ["wrong/nNow I'm marching to the "], ["city/nAnd the "], ["road ain't l", "ong/n"], ["Loneliness", "/n"], ["Got a mind of its o", "wn/nThe "], ["more people ar", "ound/nThe "], ["more you feel al", "one/nI'm chained to the e"], ["arth/nTrying to break "], ["free/n"], ["From the death s", "tockade/nOnce I had a pretty g"], ["irl/nDone me "], ["wrong/nNow I'm marching to the "], ["city/nAnd the r"], ["oad ain't lon", "g/nBoys "], ["in the stree", "t/nBe"], ["ginning to pl", "ay/n"], ["Girls like bi", "rds/n"], ["Flying away", "/nI'm carrying the "], ["roses/nAnd I'm thinking about pa"], ["radise/n"], ["Wondering what it mi", "ght be/nOnce I had a pretty "], ["girl/nShe done me "], ["wrong/nNow I'm marching to the "], ["city/nAnd the ro"], ["ad ain't lon", "g/nG"], ["o over to Lon", "don/nM"], ["aybe gay Pare", "e/nFo"], ["llow the river", "/nYo"], ["u get to the s", "ea/nI was hoping we could dr"], ["ink from/nI was hoping we could "], ["dream/nLi"], ["fe's pleasant dr", "eams/nOnce I had a pretty "], ["girl/nBut she done me "], ["wrong/nNow I'm marching to the "], ["city/n"], ["And the road ain't l", "ong/nWel"], ["l the weak get w", "eaker/nAnd"], [" the strong stay s", "trong/nThe "], ["train keeps roll", "ing/n"], ["All night l", "ong/nShe looked at "], ["me/nWith a smil"], ["e/nThat coul"], ["d make all the planets da", "nce/nOnce I had a pretty g"], ["irl/nShe did me "], ["wrong/nNow I'm marching to the "], ["city/n"], ["And the road ain't l", "ong/nMy "], ["house is on fi", "re/n"], ["Burning to the sk", "ies/n"], ["I thought the rain c", "louds/n"], ["But the clouds passed b", "y/nWhen I'm go"], ["ne/nI'm gonna win my "], ["way/n"], ["To wealth and fa", "me/nOnce I had a pretty "], ["girl/nBut she did me "], ["wrong/nNow I'm marching to the "], ["city/n"], ["And the road ain't l", "ong"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "Jio_iUILG3Y", "delay": 0}]}
+{
+    "cancion": "Marchin-To-The-City",
+    "banda": "bob-dylan",
+    "escala": "Eb/Bb",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Eb/Bb",
+                    "Bb",
+                    "Eb/Bb"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Eb7",
+                    "Bb7",
+                    "Eb/Bb",
+                    "Bb",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "Eb/Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Eb/Bb",
+                    "Eb",
+                    "Eb/Bb"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            3,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "sitting in c",
+            "hurch/nIn an "
+        ],
+        [
+            "old wooden c",
+            "hair/nI"
+        ],
+        [
+            " knew nobo",
+            "dy/nWould "
+        ],
+        [
+            "look for me t",
+            "here/nSorrow and p"
+        ],
+        [
+            "ity/nLooking for "
+        ],
+        [
+            "nothing/n"
+        ],
+        [
+            "Anyone's e",
+            "yes/nOnce I had pretty "
+        ],
+        [
+            "girls/nDid me "
+        ],
+        [
+            "wrong/nNow I'm marching to the "
+        ],
+        [
+            "city/nAnd the r"
+        ],
+        [
+            "oad ain't lo",
+            "ng/nSnowfl"
+        ],
+        [
+            "akes are fal",
+            "ling/nAr"
+        ],
+        [
+            "ound my he",
+            "ad/nL"
+        ],
+        [
+            "ord have merc",
+            "y/nIt f"
+        ],
+        [
+            "eel heavy like l",
+            "ead/nI been hit too ha"
+        ],
+        [
+            "rd/nNothing can h"
+        ],
+        [
+            "eal me now/n"
+        ],
+        [
+            "But your to",
+            "uch/nOnce I had a pretty "
+        ],
+        [
+            "girl/nShe done me "
+        ],
+        [
+            "wrong/nNow I'm marching to the "
+        ],
+        [
+            "city/nAnd the "
+        ],
+        [
+            "road ain't l",
+            "ong/n"
+        ],
+        [
+            "Loneliness",
+            "/n"
+        ],
+        [
+            "Got a mind of its o",
+            "wn/nThe "
+        ],
+        [
+            "more people ar",
+            "ound/nThe "
+        ],
+        [
+            "more you feel al",
+            "one/nI'm chained to the e"
+        ],
+        [
+            "arth/nTrying to break "
+        ],
+        [
+            "free/n"
+        ],
+        [
+            "From the death s",
+            "tockade/nOnce I had a pretty g"
+        ],
+        [
+            "irl/nDone me "
+        ],
+        [
+            "wrong/nNow I'm marching to the "
+        ],
+        [
+            "city/nAnd the r"
+        ],
+        [
+            "oad ain't lon",
+            "g/nBoys "
+        ],
+        [
+            "in the stree",
+            "t/nBe"
+        ],
+        [
+            "ginning to pl",
+            "ay/n"
+        ],
+        [
+            "Girls like bi",
+            "rds/n"
+        ],
+        [
+            "Flying away",
+            "/nI'm carrying the "
+        ],
+        [
+            "roses/nAnd I'm thinking about pa"
+        ],
+        [
+            "radise/n"
+        ],
+        [
+            "Wondering what it mi",
+            "ght be/nOnce I had a pretty "
+        ],
+        [
+            "girl/nShe done me "
+        ],
+        [
+            "wrong/nNow I'm marching to the "
+        ],
+        [
+            "city/nAnd the ro"
+        ],
+        [
+            "ad ain't lon",
+            "g/nG"
+        ],
+        [
+            "o over to Lon",
+            "don/nM"
+        ],
+        [
+            "aybe gay Pare",
+            "e/nFo"
+        ],
+        [
+            "llow the river",
+            "/nYo"
+        ],
+        [
+            "u get to the s",
+            "ea/nI was hoping we could dr"
+        ],
+        [
+            "ink from/nI was hoping we could "
+        ],
+        [
+            "dream/nLi"
+        ],
+        [
+            "fe's pleasant dr",
+            "eams/nOnce I had a pretty "
+        ],
+        [
+            "girl/nBut she done me "
+        ],
+        [
+            "wrong/nNow I'm marching to the "
+        ],
+        [
+            "city/n"
+        ],
+        [
+            "And the road ain't l",
+            "ong/nWel"
+        ],
+        [
+            "l the weak get w",
+            "eaker/nAnd"
+        ],
+        [
+            " the strong stay s",
+            "trong/nThe "
+        ],
+        [
+            "train keeps roll",
+            "ing/n"
+        ],
+        [
+            "All night l",
+            "ong/nShe looked at "
+        ],
+        [
+            "me/nWith a smil"
+        ],
+        [
+            "e/nThat coul"
+        ],
+        [
+            "d make all the planets da",
+            "nce/nOnce I had a pretty g"
+        ],
+        [
+            "irl/nShe did me "
+        ],
+        [
+            "wrong/nNow I'm marching to the "
+        ],
+        [
+            "city/n"
+        ],
+        [
+            "And the road ain't l",
+            "ong/nMy "
+        ],
+        [
+            "house is on fi",
+            "re/n"
+        ],
+        [
+            "Burning to the sk",
+            "ies/n"
+        ],
+        [
+            "I thought the rain c",
+            "louds/n"
+        ],
+        [
+            "But the clouds passed b",
+            "y/nWhen I'm go"
+        ],
+        [
+            "ne/nI'm gonna win my "
+        ],
+        [
+            "way/n"
+        ],
+        [
+            "To wealth and fa",
+            "me/nOnce I had a pretty "
+        ],
+        [
+            "girl/nBut she did me "
+        ],
+        [
+            "wrong/nNow I'm marching to the "
+        ],
+        [
+            "city/n"
+        ],
+        [
+            "And the road ain't l",
+            "ong"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Jio_iUILG3Y",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

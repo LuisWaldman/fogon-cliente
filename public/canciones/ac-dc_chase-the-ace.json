@@ -1,1 +1,113 @@
-{"cancion": "chase-the-ace", "banda": "ac-dc", "escala": "C5", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C5", "D5", "A5"]}, {"nombre": "parte2", "acordes": ["G5", "D", "C", "G5", "A", "C5", "D5"]}, {"nombre": "parte3", "acordes": ["A5"]}], "orden_partes": [0, 0, 0, 0, 0, 1, 2, 2, 0, 2, 0, 1]}, "letras": [["    ", "    ", " ^ slight palm mute      ", "    ", "  ^ ", "slight palm mute/nGuita"], ["rs I", " and", " II", "", "", "/nRhyth"], ["m:", "", "", "", "", "", "", "", "", "", "/n     "], ["^ slight palm mute", "", "", "/nGuitars"], [" I and II", "", "", "/nThat'"], ["s th", "e rhyth", "m part ", "of the ", "song.  ", "The ", "song is instrumental, meaning there are no lyrics."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "oYw-ZTLqIpg", "delay": 0}]}
+{
+    "cancion": "chase-the-ace",
+    "banda": "ac-dc",
+    "escala": "C5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C5",
+                    "D5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G5",
+                    "D",
+                    "C",
+                    "G5",
+                    "A",
+                    "C5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            0,
+            2,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "    ",
+            "    ",
+            " ^ slight palm mute      ",
+            "    ",
+            "  ^ ",
+            "slight palm mute/nGuita"
+        ],
+        [
+            "rs I",
+            " and",
+            " II",
+            "",
+            "",
+            "/nRhyth"
+        ],
+        [
+            "m:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n     "
+        ],
+        [
+            "^ slight palm mute",
+            "",
+            "",
+            "/nGuitars"
+        ],
+        [
+            " I and II",
+            "",
+            "",
+            "/nThat'"
+        ],
+        [
+            "s th",
+            "e rhyth",
+            "m part ",
+            "of the ",
+            "song.  ",
+            "The ",
+            "song is instrumental, meaning there are no lyrics."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "oYw-ZTLqIpg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

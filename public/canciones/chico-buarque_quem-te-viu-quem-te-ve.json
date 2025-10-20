@@ -1,1 +1,332 @@
-{"cancion": "quem-te-viu-quem-te-ve", "banda": "chico-buarque", "escala": "Cm7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Cm7", "Fm6/C", "B\u00ba", "Cm/Bb", "F7/A"]}, {"nombre": "parte2", "acordes": ["Bb/Ab", "Bb7(9)", "Eb7M", "Cm7/A#", "A\u00b0", "Ab\u00b0", "Gb\u00b0", "G4(7/9)"]}, {"nombre": "parte3", "acordes": ["G7", "C6/G", "G4(7/9)", "G7(9)", "E7/G#", "Gm6", "F7M", "G7/B"]}, {"nombre": "parte4", "acordes": ["C/Bb", "F7M/A", "G7", "E7/B", "A7", "F7M/A", "G7(13)", "Cm7"]}, {"nombre": "parte5", "acordes": ["Bb/Ab", "Bb7(9)", "A#6", "Cm7/A#", "A\u00b0", "Ab\u00b0", "Gb\u00b0", "G4(7/9)"]}], "orden_partes": [0, 1, 2, 3, 0, 4, 2, 3, 0, 4, 2, 3, 0, 4, 2, 3, 0, 4, 2, 3]}, "letras": [["   Voc\u00ea era a mais bon", "i_____ta das cabro", "chas dessa a_", "____la/nVoc\u00ea"], [" era a favori_", "____ta onde eu", " era  mest", "re-sala/nH"], ["oje a gente nem se fa__la", ", mas a festa continu___", "a/nSuas noites s\u00e3o de "], ["ga___la, nosso samba ainda \u00e9 na ", "ru________a/nHoje o s"], ["amba sai", "u    (lai-alai", "-a)    procu", "rando voc\u00ea", "/nQu"], ["em te viu,  ", "  quem te ", "v\u00ea", "/nQuem n\u00e3o a con"], ["he_____ce n\u00e3o pode mais ", "ver pra cr", "er/nQu"], ["em jamais a esque", "_____ce n\u00e3o pode reco", "____nhecer", "/n"], ["   Quando o samba come\u00e7", "a_____va voc\u00ea er", "a a mais brilha", "n_____te/nE se "], ["a gente se ca", "nsa_____va, voc\u00ea s", "   seguia", " adiante/nH"], ["oje a gente anda dista", "n__te do calor do seu gin", "ga___do/nVoc\u00ea s\u00f3 d\u00e1 ch\u00e1 "], ["dan\u00e7an___te onde eu n\u00e3o sou c", "onvida_____do/nHoje o s"], ["amba sa", "iu    (lai-alai", "-a)   procura", "ndo voc\u00ea", "/nQ"], ["uem te viu, ", "   quem te ", "v\u00ea", "/nQuem n\u00e3o a con"], ["he_____ce n\u00e3o pode mais ", "ver pra cr", "er/nQu"], ["em jamais a esque_", "____ce n\u00e3o pode reco__", "__nhecer", "/n"], ["   O meu samba se marca", "_____va na cad\u00ea", "ncia dos seu", "s pas_____sos/nO m"], ["eu sono se emba", "la_____va no carin", "ho dos seu", "s bra\u00e7os/nH"], ["oje de teimoso eu pas__so", " bem em frente ao seu por", "t\u00e3o/nPra lembrar que sobr"], ["a espa___\u00e7o no barraco e no cord", "\u00e3o/nHoje o s"], ["amba sa", "iu    (lai-alai", "-a)   procura", "ndo voc\u00ea", "/nQu"], ["em te viu, ", "   quem te ", "v\u00ea", "/nQuem n\u00e3o a con"], ["he_____ce n\u00e3o pode mais ", "ver pra cr", "er/nQu"], ["em jamais a esque_", "____ce n\u00e3o pode reco__", "__nhecer", "/n"], ["   Todo ano eu lhe fazi", "_____a uma cabroc", "ha de alta clas_", "____se/nDe d"], ["ourado lhe ve", "sti_____a pra que o pov", "o admirass", "e/n"], ["Eu n\u00e3o sei bem com certe", "__za por que foi que um be", "lo di___a/nQuem brincava de princ"], ["e___sa acostumou na fantasi__", "______a/nHoje o s"], ["amba sai", "u    (lai-alai", "-a)   procu", "rando voc\u00ea", "/nQu"], ["em te viu, ", "   quem te ", "v\u00ea", "/nQuem n\u00e3o a con"], ["he_____ce n\u00e3o pode mais ", "ver pra cr", "er/nQu"], ["em jamais a esque", "_____ce n\u00e3o pode reco__", "__nhecer", "/n"], ["   Hoje eu vou sambar na", " pis_____ta, voc\u00ea", " vai de galeri_", "____a/nQuer"], ["o que oc\u00ea ass", "is_____ta na mais fina", " companhia", "/nS"], ["e voc\u00ea sentir sauda__d", "e, por favor, n\u00e3o d\u00ea na ", "vis___ta/nBate palmas com vont"], ["a___de, faz de conta que \u00e9 tur", "is________ta/nHoje o s"], ["amba sa", "iu     (lai-al", "ai-a)  procu", "rando voc\u00ea", "/nQu"], ["em te viu,  ", "  quem te ", "v\u00ea", "/nQuem n\u00e3o a con"], ["he_____ce n\u00e3o pode mais ", "ver pra cr", "er/nQu"], ["em jamais a esque_", "____ce n\u00e3o pode reco_", "___nhecer", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "rTVFaqMIWD4", "delay": 0}]}
+{
+    "cancion": "quem-te-viu-quem-te-ve",
+    "banda": "chico-buarque",
+    "escala": "Cm7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Cm7",
+                    "Fm6/C",
+                    "Bº",
+                    "Cm/Bb",
+                    "F7/A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb/Ab",
+                    "Bb7(9)",
+                    "Eb7M",
+                    "Cm7/A#",
+                    "A°",
+                    "Ab°",
+                    "Gb°",
+                    "G4(7/9)"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G7",
+                    "C6/G",
+                    "G4(7/9)",
+                    "G7(9)",
+                    "E7/G#",
+                    "Gm6",
+                    "F7M",
+                    "G7/B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C/Bb",
+                    "F7M/A",
+                    "G7",
+                    "E7/B",
+                    "A7",
+                    "F7M/A",
+                    "G7(13)",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb/Ab",
+                    "Bb7(9)",
+                    "A#6",
+                    "Cm7/A#",
+                    "A°",
+                    "Ab°",
+                    "Gb°",
+                    "G4(7/9)"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            4,
+            2,
+            3,
+            0,
+            4,
+            2,
+            3,
+            0,
+            4,
+            2,
+            3,
+            0,
+            4,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "   Você era a mais bon",
+            "i_____ta das cabro",
+            "chas dessa a_",
+            "____la/nVocê"
+        ],
+        [
+            " era a favori_",
+            "____ta onde eu",
+            " era  mest",
+            "re-sala/nH"
+        ],
+        [
+            "oje a gente nem se fa__la",
+            ", mas a festa continu___",
+            "a/nSuas noites são de "
+        ],
+        [
+            "ga___la, nosso samba ainda é na ",
+            "ru________a/nHoje o s"
+        ],
+        [
+            "amba sai",
+            "u    (lai-alai",
+            "-a)    procu",
+            "rando você",
+            "/nQu"
+        ],
+        [
+            "em te viu,  ",
+            "  quem te ",
+            "vê",
+            "/nQuem não a con"
+        ],
+        [
+            "he_____ce não pode mais ",
+            "ver pra cr",
+            "er/nQu"
+        ],
+        [
+            "em jamais a esque",
+            "_____ce não pode reco",
+            "____nhecer",
+            "/n"
+        ],
+        [
+            "   Quando o samba começ",
+            "a_____va você er",
+            "a a mais brilha",
+            "n_____te/nE se "
+        ],
+        [
+            "a gente se ca",
+            "nsa_____va, você s",
+            "   seguia",
+            " adiante/nH"
+        ],
+        [
+            "oje a gente anda dista",
+            "n__te do calor do seu gin",
+            "ga___do/nVocê só dá chá "
+        ],
+        [
+            "dançan___te onde eu não sou c",
+            "onvida_____do/nHoje o s"
+        ],
+        [
+            "amba sa",
+            "iu    (lai-alai",
+            "-a)   procura",
+            "ndo você",
+            "/nQ"
+        ],
+        [
+            "uem te viu, ",
+            "   quem te ",
+            "vê",
+            "/nQuem não a con"
+        ],
+        [
+            "he_____ce não pode mais ",
+            "ver pra cr",
+            "er/nQu"
+        ],
+        [
+            "em jamais a esque_",
+            "____ce não pode reco__",
+            "__nhecer",
+            "/n"
+        ],
+        [
+            "   O meu samba se marca",
+            "_____va na cadê",
+            "ncia dos seu",
+            "s pas_____sos/nO m"
+        ],
+        [
+            "eu sono se emba",
+            "la_____va no carin",
+            "ho dos seu",
+            "s braços/nH"
+        ],
+        [
+            "oje de teimoso eu pas__so",
+            " bem em frente ao seu por",
+            "tão/nPra lembrar que sobr"
+        ],
+        [
+            "a espa___ço no barraco e no cord",
+            "ão/nHoje o s"
+        ],
+        [
+            "amba sa",
+            "iu    (lai-alai",
+            "-a)   procura",
+            "ndo você",
+            "/nQu"
+        ],
+        [
+            "em te viu, ",
+            "   quem te ",
+            "vê",
+            "/nQuem não a con"
+        ],
+        [
+            "he_____ce não pode mais ",
+            "ver pra cr",
+            "er/nQu"
+        ],
+        [
+            "em jamais a esque_",
+            "____ce não pode reco__",
+            "__nhecer",
+            "/n"
+        ],
+        [
+            "   Todo ano eu lhe fazi",
+            "_____a uma cabroc",
+            "ha de alta clas_",
+            "____se/nDe d"
+        ],
+        [
+            "ourado lhe ve",
+            "sti_____a pra que o pov",
+            "o admirass",
+            "e/n"
+        ],
+        [
+            "Eu não sei bem com certe",
+            "__za por que foi que um be",
+            "lo di___a/nQuem brincava de princ"
+        ],
+        [
+            "e___sa acostumou na fantasi__",
+            "______a/nHoje o s"
+        ],
+        [
+            "amba sai",
+            "u    (lai-alai",
+            "-a)   procu",
+            "rando você",
+            "/nQu"
+        ],
+        [
+            "em te viu, ",
+            "   quem te ",
+            "vê",
+            "/nQuem não a con"
+        ],
+        [
+            "he_____ce não pode mais ",
+            "ver pra cr",
+            "er/nQu"
+        ],
+        [
+            "em jamais a esque",
+            "_____ce não pode reco__",
+            "__nhecer",
+            "/n"
+        ],
+        [
+            "   Hoje eu vou sambar na",
+            " pis_____ta, você",
+            " vai de galeri_",
+            "____a/nQuer"
+        ],
+        [
+            "o que ocê ass",
+            "is_____ta na mais fina",
+            " companhia",
+            "/nS"
+        ],
+        [
+            "e você sentir sauda__d",
+            "e, por favor, não dê na ",
+            "vis___ta/nBate palmas com vont"
+        ],
+        [
+            "a___de, faz de conta que é tur",
+            "is________ta/nHoje o s"
+        ],
+        [
+            "amba sa",
+            "iu     (lai-al",
+            "ai-a)  procu",
+            "rando você",
+            "/nQu"
+        ],
+        [
+            "em te viu,  ",
+            "  quem te ",
+            "vê",
+            "/nQuem não a con"
+        ],
+        [
+            "he_____ce não pode mais ",
+            "ver pra cr",
+            "er/nQu"
+        ],
+        [
+            "em jamais a esque_",
+            "____ce não pode reco_",
+            "___nhecer",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "rTVFaqMIWD4",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

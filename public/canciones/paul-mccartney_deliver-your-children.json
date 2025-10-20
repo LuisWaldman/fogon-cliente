@@ -1,1 +1,321 @@
-{"cancion": "Deliver-Your-Children", "banda": "paul-mccartney", "escala": "Em", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "Em/F#", "G", "D", "Em", "D", "A", "Em", "Em/F#", "G", "D", "Bm", "Em", "Bm", "Em", "D", "D/C#", "Bm", "G", "Bm", "Em", "D", "D/C#", "Bm", "D", "F#m", "Bm", "G", "Bm", "Em", "Em", "Em/F#", "G", "D", "Em", "D", "A", "Em", "G", "D", "Bm", "Em", "Bm", "Em", "D", "D/C#", "Bm", "G", "Bm", "Em", "D", "D/C#", "Bm", "D", "F#m", "Bm", "G", "Bm", "Em", "Am", "Am/B", "C", "G", "Am", "G", "D", "Am", "Am/B", "C", "G", "Em", "Am", "Em", "Em7", "Am", "Am", "Am/B", "C", "G", "Am", "G", "D", "Am", "Am/B", "C", "G", "Em", "Am", "Em", "Em7", "Am", "D", "D/C#", "Bm", "G", "Bm", "Em", "D", "D/C#", "Bm", "D", "F#m", "Bm", "G", "Bm", "Em", "Em", "Em/F#", "G", "D", "Bm", "Em", "Bm", "Em"]}], "orden_partes": [0]}, "letras": [["Well, the rain was a-falling and the ground turned t", "o     mu", "d", "/nI was "], ["watching all the people running from the f", "lood", "/nSo I "], ["started to prayin' though I ain't no prayi", "n'   ma", "n", "/nfor the "], ["Lord to come a h", "elpin' knowing he", "'d understan", "d./n"], ["Deliver your c", "hildren to the go", "od good life/n"], ["give 'em peace and s", "helter and a fo", "rk and knife/nshine a "], ["light in the m", "orning and a li", "ght at night/nand if a "], ["thing g", "oes wr", "ong you'd better mak", "e it r", "ight", "./n"], ["Well, I had me a woman, she was good a", "nd clean", "", "/nshe "], ["spent all day with the washing mach", "ine", "/nbut w"], ["hen it came to lovin' she was never aro", "und", "/nshe was "], ["out getting d", "irty --- al", "l over tow", "n./n"], ["Deliver your c", "hildren to the go", "od good life/n"], ["give 'em peace and s", "helter and a fo", "rk and knife/nshine a "], ["light in the m", "orning and a li", "ght at night/nand if a "], ["thing g", "oes wr", "ong you'd better mak", "e it r", "ight", "./nWell, I was "], ["low on money and my truck b", "roke do", "wn", "/nI was "], ["on my way to the lost and f", "ound", "/nso I "], ["took it to a dealer, I said make i", "t run", "", "/nwell, I "], ["ain't got no m", "oney, but I go", "t me ", "a gun.", "/nI said you "], ["robbed me before so I'm robbing y", "ou  ba", "ck", "/nand if it "], ["don't put you straight it'll put you on the right t", "rack", "/nwell, I "], ["ain't no devil and I ain't n", "o   sa", "int", "/nbut "], ["I can tell a d", "ealer by the co", "lor of ", "his pain", "t./n"], ["Deliver your c", "hildren to the go", "od good life/n"], ["give 'em peace and s", "helter and a fo", "rk and knife/nshine a "], ["light in the m", "orning and a li", "ght at night/nand if a "], ["thing g", "oes wr", "ong you'd better mak", "e it r", "ight", "./nIf you "], ["want good eggs you gotta feed t", "hat  he", "n", "/nand if you "], ["wanna hear some m", "ore/nwell, I'll "], ["sing it agai", "n."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "7X_t5xQtwlQ", "delay": 0}]}
+{
+    "cancion": "Deliver-Your-Children",
+    "banda": "paul-mccartney",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em/F#",
+                    "G",
+                    "D",
+                    "Em",
+                    "D",
+                    "A",
+                    "Em",
+                    "Em/F#",
+                    "G",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em/F#",
+                    "G",
+                    "D",
+                    "Em",
+                    "D",
+                    "A",
+                    "Em",
+                    "G",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "Am",
+                    "Am/B",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "D",
+                    "Am",
+                    "Am/B",
+                    "C",
+                    "G",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Em7",
+                    "Am",
+                    "Am",
+                    "Am/B",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "D",
+                    "Am",
+                    "Am/B",
+                    "C",
+                    "G",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Em7",
+                    "Am",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em/F#",
+                    "G",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Well, the rain was a-falling and the ground turned t",
+            "o     mu",
+            "d",
+            "/nI was "
+        ],
+        [
+            "watching all the people running from the f",
+            "lood",
+            "/nSo I "
+        ],
+        [
+            "started to prayin' though I ain't no prayi",
+            "n'   ma",
+            "n",
+            "/nfor the "
+        ],
+        [
+            "Lord to come a h",
+            "elpin' knowing he",
+            "'d understan",
+            "d./n"
+        ],
+        [
+            "Deliver your c",
+            "hildren to the go",
+            "od good life/n"
+        ],
+        [
+            "give 'em peace and s",
+            "helter and a fo",
+            "rk and knife/nshine a "
+        ],
+        [
+            "light in the m",
+            "orning and a li",
+            "ght at night/nand if a "
+        ],
+        [
+            "thing g",
+            "oes wr",
+            "ong you'd better mak",
+            "e it r",
+            "ight",
+            "./n"
+        ],
+        [
+            "Well, I had me a woman, she was good a",
+            "nd clean",
+            "",
+            "/nshe "
+        ],
+        [
+            "spent all day with the washing mach",
+            "ine",
+            "/nbut w"
+        ],
+        [
+            "hen it came to lovin' she was never aro",
+            "und",
+            "/nshe was "
+        ],
+        [
+            "out getting d",
+            "irty --- al",
+            "l over tow",
+            "n./n"
+        ],
+        [
+            "Deliver your c",
+            "hildren to the go",
+            "od good life/n"
+        ],
+        [
+            "give 'em peace and s",
+            "helter and a fo",
+            "rk and knife/nshine a "
+        ],
+        [
+            "light in the m",
+            "orning and a li",
+            "ght at night/nand if a "
+        ],
+        [
+            "thing g",
+            "oes wr",
+            "ong you'd better mak",
+            "e it r",
+            "ight",
+            "./nWell, I was "
+        ],
+        [
+            "low on money and my truck b",
+            "roke do",
+            "wn",
+            "/nI was "
+        ],
+        [
+            "on my way to the lost and f",
+            "ound",
+            "/nso I "
+        ],
+        [
+            "took it to a dealer, I said make i",
+            "t run",
+            "",
+            "/nwell, I "
+        ],
+        [
+            "ain't got no m",
+            "oney, but I go",
+            "t me ",
+            "a gun.",
+            "/nI said you "
+        ],
+        [
+            "robbed me before so I'm robbing y",
+            "ou  ba",
+            "ck",
+            "/nand if it "
+        ],
+        [
+            "don't put you straight it'll put you on the right t",
+            "rack",
+            "/nwell, I "
+        ],
+        [
+            "ain't no devil and I ain't n",
+            "o   sa",
+            "int",
+            "/nbut "
+        ],
+        [
+            "I can tell a d",
+            "ealer by the co",
+            "lor of ",
+            "his pain",
+            "t./n"
+        ],
+        [
+            "Deliver your c",
+            "hildren to the go",
+            "od good life/n"
+        ],
+        [
+            "give 'em peace and s",
+            "helter and a fo",
+            "rk and knife/nshine a "
+        ],
+        [
+            "light in the m",
+            "orning and a li",
+            "ght at night/nand if a "
+        ],
+        [
+            "thing g",
+            "oes wr",
+            "ong you'd better mak",
+            "e it r",
+            "ight",
+            "./nIf you "
+        ],
+        [
+            "want good eggs you gotta feed t",
+            "hat  he",
+            "n",
+            "/nand if you "
+        ],
+        [
+            "wanna hear some m",
+            "ore/nwell, I'll "
+        ],
+        [
+            "sing it agai",
+            "n."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "7X_t5xQtwlQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

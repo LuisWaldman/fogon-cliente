@@ -1,1 +1,336 @@
-{"cancion": "Sou-Eu", "banda": "chico-buarque", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "E/D", "D", "E/D", "D", "E/D", "D", "E/D", "G", "A/G", "G", "A/G", "G", "D", "E/D", "D", "E/D", "D", "E/D", "D", "E/D", "G", "A/G", "G", "A/G", "G", "A/G", "G", "A/G", "G", "D7M(9)", "F#7(b13)", "G7M", "G#\u00ba", "A6", "Bb\u00ba", "Bm7", "B7(b9)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Gm6", "D7M(9)", "D7M(9)", "F#7(b13)", "G7M", "G#\u00ba", "A6", "Bb\u00ba", "Bm7", "E7(9)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Gm6", "F#7", "F#m7", "B7(9)", "Em7(9)", "A7", "A7/G", "F#m7", "B7(9)", "Em7(9)", "A7", "A7/G", "F#m7", "B7(9)", "Em7(9)", "A7", "A7/G", "F#m7", "B7(9)", "Em7(9)", "A7(9/13)", "D", "E/D", "D", "E/D", "D", "E/D", "D", "D7M(9)", "F#7(b13)", "G7M", "G#\u00ba", "A6", "Bb\u00ba", "Bm7", "B7(b9)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Gm6", "D7M(9)", "D7M(9)", "F#7(b13)", "G7M", "G#\u00ba", "A6", "Bb\u00ba", "Bm7", "E7(9)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Em7(9)", "A7(9/13)", "Gm6", "F#7", "F#m7", "B7(9)", "Em7(9)", "A7", "A7/G", "F#m7", "B7(9)", "Em7(9)", "A7", "A7/G", "F#m7", "B7(9)", "Em7(9)", "A7", "A7/G", "F#m7", "B7(9)", "Em7(9)", "A7(9/13)"]}], "orden_partes": [0]}, "letras": [[], [], [], [], [], [], [], ["a m\u00e3o o c", "ora\u00e7\u00e3o    ", "balan", "a/nQuando ela se l"], ["an\u00e7a ", "no sal", "\u00e3o", "/nP"], ["ra esse ela bamb", "oleia/nPra "], ["aquele ela roda ", "a saia/nC"], ["om outro ela se d", "esfaz da san", "d\u00e1lia", "/n"], ["Por\u00e9m depois que essa m", "ulher   esp", "alha", "/nSeu fogo de p"], ["alha n", "o sal", "o", "/nPra"], [" quem que ela arrast", "a a asa/nQue"], ["m vai lhe apagar ", "a brasa/nQu"], ["em \u00e9 que carrega ", "a mo\u00e7a pra", " casa", "/nS"], ["ou eu", "", "/nS\u00f3 q"], ["uem sabe", " dela sou", " eu", "", "/nQuem d"], ["an\u00e7a", " com ela s", "ou eu ", "", "/nQuem m"], ["anda no ", "samba sou ", "eu", "", "", "/n"], [], ["\u00e3o na minha ", "m\u00e3o    sus", "pira", "/nQuando ela se "], ["atira n", "o sal", "o", "/nP"], ["ra esse ela pisca um o", "lho/nPra "], ["aquele ela quebra um ga", "lho/nC"], ["om o outro ela quase ca", "i na   gand", "aia", "/n"], ["Por\u00e9m depois que essa m", "ulher   esp", "alha", "/nSeu fogo de p"], ["alha n", "o sal", "o", "/nPra"], [" quem que ela arrast", "a a asa/nQue"], ["m vai lhe apagar ", "a brasa/nQu"], ["em \u00e9 que carrega ", "a mo\u00e7a pra", " casa", "/nS"], ["ou eu", "", "/nS\u00f3 q"], ["uem sabe", " dela sou", " eu", "", "/nQuem d"], ["a o b", "aralho so", "u eu", "", "/nQuem b"], ["rinca na", " area sou ", "eu     ", "  sou   ", " eu", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "hXOWrFyEl5E", "delay": 0}]}
+{
+    "cancion": "Sou-Eu",
+    "banda": "chico-buarque",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "G",
+                    "A/G",
+                    "G",
+                    "A/G",
+                    "G",
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "G",
+                    "A/G",
+                    "G",
+                    "A/G",
+                    "G",
+                    "A/G",
+                    "G",
+                    "A/G",
+                    "G",
+                    "D7M(9)",
+                    "F#7(b13)",
+                    "G7M",
+                    "G#º",
+                    "A6",
+                    "Bbº",
+                    "Bm7",
+                    "B7(b9)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Gm6",
+                    "D7M(9)",
+                    "D7M(9)",
+                    "F#7(b13)",
+                    "G7M",
+                    "G#º",
+                    "A6",
+                    "Bbº",
+                    "Bm7",
+                    "E7(9)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Gm6",
+                    "F#7",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7",
+                    "A7/G",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7",
+                    "A7/G",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7",
+                    "A7/G",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "D",
+                    "E/D",
+                    "D",
+                    "D7M(9)",
+                    "F#7(b13)",
+                    "G7M",
+                    "G#º",
+                    "A6",
+                    "Bbº",
+                    "Bm7",
+                    "B7(b9)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Gm6",
+                    "D7M(9)",
+                    "D7M(9)",
+                    "F#7(b13)",
+                    "G7M",
+                    "G#º",
+                    "A6",
+                    "Bbº",
+                    "Bm7",
+                    "E7(9)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Em7(9)",
+                    "A7(9/13)",
+                    "Gm6",
+                    "F#7",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7",
+                    "A7/G",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7",
+                    "A7/G",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7",
+                    "A7/G",
+                    "F#m7",
+                    "B7(9)",
+                    "Em7(9)",
+                    "A7(9/13)"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "a mão o c",
+            "oração    ",
+            "balan",
+            "a/nQuando ela se l"
+        ],
+        [
+            "ança ",
+            "no sal",
+            "ão",
+            "/nP"
+        ],
+        [
+            "ra esse ela bamb",
+            "oleia/nPra "
+        ],
+        [
+            "aquele ela roda ",
+            "a saia/nC"
+        ],
+        [
+            "om outro ela se d",
+            "esfaz da san",
+            "dália",
+            "/n"
+        ],
+        [
+            "Porém depois que essa m",
+            "ulher   esp",
+            "alha",
+            "/nSeu fogo de p"
+        ],
+        [
+            "alha n",
+            "o sal",
+            "o",
+            "/nPra"
+        ],
+        [
+            " quem que ela arrast",
+            "a a asa/nQue"
+        ],
+        [
+            "m vai lhe apagar ",
+            "a brasa/nQu"
+        ],
+        [
+            "em é que carrega ",
+            "a moça pra",
+            " casa",
+            "/nS"
+        ],
+        [
+            "ou eu",
+            "",
+            "/nSó q"
+        ],
+        [
+            "uem sabe",
+            " dela sou",
+            " eu",
+            "",
+            "/nQuem d"
+        ],
+        [
+            "ança",
+            " com ela s",
+            "ou eu ",
+            "",
+            "/nQuem m"
+        ],
+        [
+            "anda no ",
+            "samba sou ",
+            "eu",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "ão na minha ",
+            "mão    sus",
+            "pira",
+            "/nQuando ela se "
+        ],
+        [
+            "atira n",
+            "o sal",
+            "o",
+            "/nP"
+        ],
+        [
+            "ra esse ela pisca um o",
+            "lho/nPra "
+        ],
+        [
+            "aquele ela quebra um ga",
+            "lho/nC"
+        ],
+        [
+            "om o outro ela quase ca",
+            "i na   gand",
+            "aia",
+            "/n"
+        ],
+        [
+            "Porém depois que essa m",
+            "ulher   esp",
+            "alha",
+            "/nSeu fogo de p"
+        ],
+        [
+            "alha n",
+            "o sal",
+            "o",
+            "/nPra"
+        ],
+        [
+            " quem que ela arrast",
+            "a a asa/nQue"
+        ],
+        [
+            "m vai lhe apagar ",
+            "a brasa/nQu"
+        ],
+        [
+            "em é que carrega ",
+            "a moça pra",
+            " casa",
+            "/nS"
+        ],
+        [
+            "ou eu",
+            "",
+            "/nSó q"
+        ],
+        [
+            "uem sabe",
+            " dela sou",
+            " eu",
+            "",
+            "/nQuem d"
+        ],
+        [
+            "a o b",
+            "aralho so",
+            "u eu",
+            "",
+            "/nQuem b"
+        ],
+        [
+            "rinca na",
+            " area sou ",
+            "eu     ",
+            "  sou   ",
+            " eu",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "hXOWrFyEl5E",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

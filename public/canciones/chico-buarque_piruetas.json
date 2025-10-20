@@ -1,1 +1,483 @@
-{"cancion": "Piruetas", "banda": "chico-buarque", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "D", "C#", "C", "B", "Bb", "Bb", "A", "G#", "G", "F#", "F#", "F", "E", "D#", "D", "F#", "G", "Am", "Am", "G", "G", "C", "C", "G", "D", "D5(9)", "D", "G", "C", "G", "D", "D5(9)", "D", "G", "G#", "A#m", "A#m", "G#", "G#", "C#", "C#", "G#", "D#", "D#5(9)", "D#", "G#", "C#", "G#", "D#", "D#5(9)", "D#", "G#", "A#m", "D#", "G#", "A#m", "D#", "G#", "A#m", "G#", "A#m", "G#", "A#m", "G#", "A#m", "G#", "A#m", "D#", "Cm", "F", "A#m", "D#", "C#", "Gm", "G#", "G#", "A#m", "A#m", "G#", "G#", "C#", "C#", "G#", "D#", "D#5(9)", "D#", "G#", "C#", "G#", "D#", "D#5(9)", "D#", "G#", "A#m", "D#", "G#", "A#m", "D#", "G#", "A#m", "G#", "A#m", "G#", "A#m", "G#", "A#m", "G#", "A#m", "D#", "Cm", "F", "A#m", "D#", "C#", "Gm", "G#", "G#", "A#m", "A#m", "G#", "G#", "C#", "C#", "G#", "D#", "G#", "C#", "G#", "D#", "G#", "A", "Bm", "Bm", "A", "A", "D", "D", "A", "D", "A", "D", "A", "F#m", "D", "A", "D", "A"]}], "orden_partes": [0]}, "letras": [[], ["Uma pirueta/nBravo, br"], ["avo/n"], ["Superpiruetas/nBravo, br"], ["avo/n"], ["Salta sobre/nE tomba de n"], ["ariz/n"], ["Que a mo", "ada/n"], ["Vai", " pedir ", "bis", "/n"], ["Que a mo", "ada/n"], ["Vai", " pedir ", "bis", "/n"], ["Quatro cambalhotas/nBravo, b"], ["ravo/n"], ["Arquicambalhotas/nBravo, b"], ["ravo/n"], ["Rompe a lona/nTomba de na"], ["riz/n"], ["Que os jov", "ens/n"], ["V\u00e3o", " pedir b", "is", "/n"], ["Que os jov", "ens/n"], ["V\u00e3o", " pedir b", "is", "/nNo inter"], ["valo/nTem cheir"], ["im de macarr", "o/nE a bar"], ["riga ronca/n"], ["Mais do que um trov\u00e3", "o/n"], ["Quero um prato/n"], ["C\u00ea t\u00e1 louco/n"], ["Quero um pouco/n"], ["C\u00ea t\u00e1 chato/n"], ["S\u00f3 um peda\u00e7o/n"], ["C\u00ea t\u00e1 gordo/n"], ["Eu te mordo/n"], ["Seu palha\u00e7o/nOlha o p\u00fa"], ["blico/n"], ["Cansado de esp", "erar", "/nO espe"], ["t\u00e1culo n\u00e3o/n"], ["Pode", " par", "ar", "/n"], ["Vinte piruetas/nBravo, b"], ["ravo/n"], ["Polipiruetas/nBravo, b"], ["ravo/n"], ["Sobe ao c\u00e9u/nE tomba de bu"], ["mbum/n"], ["Que a pato", "ta/n"], ["Grit", "a mais u", "m", "/n"], ["Que a pato", "ta/n"], ["Grit", "a mais u", "m", "/nNo inte"], ["rvalo/nTem cheir"], ["im de macarr", "o/nE a bar"], ["riga ronca/n"], ["Mais do que um l", "e\u00e3o/nQuero um p"], ["rato/nC\u00ea t\u00e1"], [" louco/nQuero um p"], ["ouco/nC\u00ea t\u00e1"], [" chato/nS\u00f3 um p"], ["eda\u00e7o/nC\u00ea t\u00e1"], [" gordo/nEu te "], ["mordo/nSeu pal"], ["ha\u00e7o/nOlha o p\u00fa"], ["blico/n"], ["Cansado de esp", "erar", "/nO espe"], ["t\u00e1culo/n"], ["N\u00e3o", " pod", "e pa", "rar/n"], ["Dez mil cambalhotas/nBravo, b"], ["ravo/n"], ["Maxicambalhotas/nBravo, b"], ["ravo/n"], ["Salta al\u00e9m/nE cai onde "], ["cair/nQ"], ["ue a gal", "era/n"], ["Morre de", " rir/n"], ["Que a ga", "lera/n"], ["Morre de", " rir/n"], ["Ai, minhas costelas/nBravo, "], ["bravo/n"], ["Ai, minha cachola/nBravo, b"], ["ravo/n"], ["Lona... nuvens/nTomba no hospi"], ["tal/nUma pir"], ["ueta/nUma cab"], ["riola/nUma cam"], ["balhota/nN\u00e3o t"], [" bom da bola/n"], ["E o pessoa", "l", "/nDel"], ["ira.../n"], ["Maxipirulito.../nB"], ["ravo, br", "avo!"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "3wQgfjSvgXo", "delay": 0}]}
+{
+    "cancion": "Piruetas",
+    "banda": "chico-buarque",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C#",
+                    "C",
+                    "B",
+                    "Bb",
+                    "Bb",
+                    "A",
+                    "G#",
+                    "G",
+                    "F#",
+                    "F#",
+                    "F",
+                    "E",
+                    "D#",
+                    "D",
+                    "F#",
+                    "G",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "D5(9)",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "D",
+                    "D5(9)",
+                    "D",
+                    "G",
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "G#",
+                    "G#",
+                    "C#",
+                    "C#",
+                    "G#",
+                    "D#",
+                    "D#5(9)",
+                    "D#",
+                    "G#",
+                    "C#",
+                    "G#",
+                    "D#",
+                    "D#5(9)",
+                    "D#",
+                    "G#",
+                    "A#m",
+                    "D#",
+                    "G#",
+                    "A#m",
+                    "D#",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "D#",
+                    "Cm",
+                    "F",
+                    "A#m",
+                    "D#",
+                    "C#",
+                    "Gm",
+                    "G#",
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "G#",
+                    "G#",
+                    "C#",
+                    "C#",
+                    "G#",
+                    "D#",
+                    "D#5(9)",
+                    "D#",
+                    "G#",
+                    "C#",
+                    "G#",
+                    "D#",
+                    "D#5(9)",
+                    "D#",
+                    "G#",
+                    "A#m",
+                    "D#",
+                    "G#",
+                    "A#m",
+                    "D#",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "G#",
+                    "A#m",
+                    "D#",
+                    "Cm",
+                    "F",
+                    "A#m",
+                    "D#",
+                    "C#",
+                    "Gm",
+                    "G#",
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "G#",
+                    "G#",
+                    "C#",
+                    "C#",
+                    "G#",
+                    "D#",
+                    "G#",
+                    "C#",
+                    "G#",
+                    "D#",
+                    "G#",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "F#m",
+                    "D",
+                    "A",
+                    "D",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Uma pirueta/nBravo, br"
+        ],
+        [
+            "avo/n"
+        ],
+        [
+            "Superpiruetas/nBravo, br"
+        ],
+        [
+            "avo/n"
+        ],
+        [
+            "Salta sobre/nE tomba de n"
+        ],
+        [
+            "ariz/n"
+        ],
+        [
+            "Que a mo",
+            "ada/n"
+        ],
+        [
+            "Vai",
+            " pedir ",
+            "bis",
+            "/n"
+        ],
+        [
+            "Que a mo",
+            "ada/n"
+        ],
+        [
+            "Vai",
+            " pedir ",
+            "bis",
+            "/n"
+        ],
+        [
+            "Quatro cambalhotas/nBravo, b"
+        ],
+        [
+            "ravo/n"
+        ],
+        [
+            "Arquicambalhotas/nBravo, b"
+        ],
+        [
+            "ravo/n"
+        ],
+        [
+            "Rompe a lona/nTomba de na"
+        ],
+        [
+            "riz/n"
+        ],
+        [
+            "Que os jov",
+            "ens/n"
+        ],
+        [
+            "Vão",
+            " pedir b",
+            "is",
+            "/n"
+        ],
+        [
+            "Que os jov",
+            "ens/n"
+        ],
+        [
+            "Vão",
+            " pedir b",
+            "is",
+            "/nNo inter"
+        ],
+        [
+            "valo/nTem cheir"
+        ],
+        [
+            "im de macarr",
+            "o/nE a bar"
+        ],
+        [
+            "riga ronca/n"
+        ],
+        [
+            "Mais do que um trovã",
+            "o/n"
+        ],
+        [
+            "Quero um prato/n"
+        ],
+        [
+            "Cê tá louco/n"
+        ],
+        [
+            "Quero um pouco/n"
+        ],
+        [
+            "Cê tá chato/n"
+        ],
+        [
+            "Só um pedaço/n"
+        ],
+        [
+            "Cê tá gordo/n"
+        ],
+        [
+            "Eu te mordo/n"
+        ],
+        [
+            "Seu palhaço/nOlha o pú"
+        ],
+        [
+            "blico/n"
+        ],
+        [
+            "Cansado de esp",
+            "erar",
+            "/nO espe"
+        ],
+        [
+            "táculo não/n"
+        ],
+        [
+            "Pode",
+            " par",
+            "ar",
+            "/n"
+        ],
+        [
+            "Vinte piruetas/nBravo, b"
+        ],
+        [
+            "ravo/n"
+        ],
+        [
+            "Polipiruetas/nBravo, b"
+        ],
+        [
+            "ravo/n"
+        ],
+        [
+            "Sobe ao céu/nE tomba de bu"
+        ],
+        [
+            "mbum/n"
+        ],
+        [
+            "Que a pato",
+            "ta/n"
+        ],
+        [
+            "Grit",
+            "a mais u",
+            "m",
+            "/n"
+        ],
+        [
+            "Que a pato",
+            "ta/n"
+        ],
+        [
+            "Grit",
+            "a mais u",
+            "m",
+            "/nNo inte"
+        ],
+        [
+            "rvalo/nTem cheir"
+        ],
+        [
+            "im de macarr",
+            "o/nE a bar"
+        ],
+        [
+            "riga ronca/n"
+        ],
+        [
+            "Mais do que um l",
+            "eão/nQuero um p"
+        ],
+        [
+            "rato/nCê tá"
+        ],
+        [
+            " louco/nQuero um p"
+        ],
+        [
+            "ouco/nCê tá"
+        ],
+        [
+            " chato/nSó um p"
+        ],
+        [
+            "edaço/nCê tá"
+        ],
+        [
+            " gordo/nEu te "
+        ],
+        [
+            "mordo/nSeu pal"
+        ],
+        [
+            "haço/nOlha o pú"
+        ],
+        [
+            "blico/n"
+        ],
+        [
+            "Cansado de esp",
+            "erar",
+            "/nO espe"
+        ],
+        [
+            "táculo/n"
+        ],
+        [
+            "Não",
+            " pod",
+            "e pa",
+            "rar/n"
+        ],
+        [
+            "Dez mil cambalhotas/nBravo, b"
+        ],
+        [
+            "ravo/n"
+        ],
+        [
+            "Maxicambalhotas/nBravo, b"
+        ],
+        [
+            "ravo/n"
+        ],
+        [
+            "Salta além/nE cai onde "
+        ],
+        [
+            "cair/nQ"
+        ],
+        [
+            "ue a gal",
+            "era/n"
+        ],
+        [
+            "Morre de",
+            " rir/n"
+        ],
+        [
+            "Que a ga",
+            "lera/n"
+        ],
+        [
+            "Morre de",
+            " rir/n"
+        ],
+        [
+            "Ai, minhas costelas/nBravo, "
+        ],
+        [
+            "bravo/n"
+        ],
+        [
+            "Ai, minha cachola/nBravo, b"
+        ],
+        [
+            "ravo/n"
+        ],
+        [
+            "Lona... nuvens/nTomba no hospi"
+        ],
+        [
+            "tal/nUma pir"
+        ],
+        [
+            "ueta/nUma cab"
+        ],
+        [
+            "riola/nUma cam"
+        ],
+        [
+            "balhota/nNão t"
+        ],
+        [
+            " bom da bola/n"
+        ],
+        [
+            "E o pessoa",
+            "l",
+            "/nDel"
+        ],
+        [
+            "ira.../n"
+        ],
+        [
+            "Maxipirulito.../nB"
+        ],
+        [
+            "ravo, br",
+            "avo!"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "3wQgfjSvgXo",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

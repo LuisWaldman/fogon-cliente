@@ -1,1 +1,414 @@
-{"cancion": "Must-Be-Santa", "banda": "bob-dylan", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "A", "E", "A", "D", "A", "E", "A", "D", "A", "E", "A", "D", "A", "E", "A", "A", "E", "E", "A", "A", "E", "E", "A", "A", "A", "Bm", "E", "A", "F#m", "Bm", "E", "A", "A", "A", "E", "E", "A", "A", "E", "E", "A", "A", "A", "A", "A", "Bm", "E", "A", "F#m", "Bm", "E", "A", "A", "A", "E", "E", "A", "A", "E", "E", "A", "A", "A", "A", "A", "A", "A", "Bm", "E", "A", "F#m", "Bm", "E", "A", "Bb", "Eb", "F", "Bb", "Bb", "Eb", "F", "Bb", "Bb", "F", "F", "Bb", "Bb", "F", "F", "Bb", "Bb", "Bb", "Bb", "Bb", "Bb", "Bb", "Bb", "Bb", "Cm", "F", "Bb", "Gm", "Cm", "F", "Bb", "B", "E", "F#", "B", "B", "E", "F#", "B", "F#", "F#", "F#", "F#", "B", "B", "B", "B", "B", "B", "B", "B", "C#m", "F#", "B", "G#m", "C#m", "F#", "B", "C#m", "F#", "B", "G#m", "C#m", "F#", "B", "E", "B", "F#", "B", "E", "B", "F#", "B", "E", "B", "F#", "B", "E", "B", "F#", "B"]}], "orden_partes": [0]}, "letras": [[], ["ers", "e 1]", "", "", "", "", "", "/n"], ["Who's got a beard that's l", "ong and white?/n("], ["Santa's got a beard that's l", "ong and white)/n"], ["Who comes around on a s", "pecial night?/n"], ["(Santa comes around on a s", "pecial night)/n"], ["Special night, b", "eard that's white/n"], [" Must be S", "anta, mu", "st be San", "ta/n"], [" Must be S", "anta, Santa Cl", "aus", "/n"], ["Who wears boots and a s", "uit of red?/n("], ["Santa wears boots and a s", "uit of red)/n"], ["Who wears a long cap o", "n his head?/n("], ["Santa wears a long cap o", "n his head)/n"], ["Cap on head, s", "uit that's red/n"], ["Special night, b", "eard that's white/n"], [" Must be S", "anta, mu", "st be San", "ta/n"], [" Must be S", "anta, Santa Cl", "aus", "/n"], ["Who's got a big red c", "herry nose?/n("], ["Santa's got a big red c", "herry nose)/n"], ["Who laughs this way, \"h", "o, ho, ho!\"?/n("], ["Santa laughs this way, \"h", "o, ho, ho!\" )/n"], ["Ho, ho, ho, c", "herry nose/n"], ["Cap on head, s", "uit that's red/n"], ["Special night, b", "eard that's white/n"], [" Must be S", "anta, mu", "st be San", "ta/n"], [" Must be S", "anta, Santa Cl", "aus/n"], [], ["erse 4", "]", "", "/n"], ["Who very soon will c", "ome our way?/n("], ["Santa very soon will c", "ome our way)/n"], ["Eight little reindeer p", "ull his sleigh/n("], ["Santa's little reindeer p", "ull his sleigh)/n"], ["Reindeer sleigh, c", "ome our way/n"], ["Ho, ho, ho, c", "herry nose/n"], ["Cap on head, s", "uit that's red/n"], ["Special night, b", "eard that's white/n"], [" Must be S", "anta, mu", "st be San", "ta/n"], [" Must be S", "anta, Santa Cl", "aus/n"], [], ["erse ", "5] (v", "ariati", "on)/n"], ["Dasher, Dancer, Prancer, Vixen/n"], ["Eisenhower, Kennedy, Johnson, Nixon/n"], ["Dasher, Dancer, Prancer, Vixen/n"], ["Carter, Reagan, Bush, and Clinton/n"], ["Reindeer sleigh, c", "ome our way/n"], ["Ho, ho, ho, c", "herry nose/n"], ["Cap on head, s", "uit that's red/n"], ["Special night, b", "eard that's white/n"], [" Must be S", "anta, mu", "st be San", "ta/n"], [" Must be S", "anta, Santa Cl", "aus/n"], [" Must be S", "anta, mu", "st be San", "ta/n"], [" Must be S", "anta, Santa Cl", "aus/n"], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "a8qE6WQmNus", "delay": 0}]}
+{
+    "cancion": "Must-Be-Santa",
+    "banda": "bob-dylan",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "E",
+                    "A",
+                    "F#m",
+                    "Bm",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "E",
+                    "A",
+                    "F#m",
+                    "Bm",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "E",
+                    "A",
+                    "F#m",
+                    "Bm",
+                    "E",
+                    "A",
+                    "Bb",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Cm",
+                    "F",
+                    "Bb",
+                    "Gm",
+                    "Cm",
+                    "F",
+                    "Bb",
+                    "B",
+                    "E",
+                    "F#",
+                    "B",
+                    "B",
+                    "E",
+                    "F#",
+                    "B",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "C#m",
+                    "F#",
+                    "B",
+                    "G#m",
+                    "C#m",
+                    "F#",
+                    "B",
+                    "C#m",
+                    "F#",
+                    "B",
+                    "G#m",
+                    "C#m",
+                    "F#",
+                    "B",
+                    "E",
+                    "B",
+                    "F#",
+                    "B",
+                    "E",
+                    "B",
+                    "F#",
+                    "B",
+                    "E",
+                    "B",
+                    "F#",
+                    "B",
+                    "E",
+                    "B",
+                    "F#",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "ers",
+            "e 1]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Who's got a beard that's l",
+            "ong and white?/n("
+        ],
+        [
+            "Santa's got a beard that's l",
+            "ong and white)/n"
+        ],
+        [
+            "Who comes around on a s",
+            "pecial night?/n"
+        ],
+        [
+            "(Santa comes around on a s",
+            "pecial night)/n"
+        ],
+        [
+            "Special night, b",
+            "eard that's white/n"
+        ],
+        [
+            " Must be S",
+            "anta, mu",
+            "st be San",
+            "ta/n"
+        ],
+        [
+            " Must be S",
+            "anta, Santa Cl",
+            "aus",
+            "/n"
+        ],
+        [
+            "Who wears boots and a s",
+            "uit of red?/n("
+        ],
+        [
+            "Santa wears boots and a s",
+            "uit of red)/n"
+        ],
+        [
+            "Who wears a long cap o",
+            "n his head?/n("
+        ],
+        [
+            "Santa wears a long cap o",
+            "n his head)/n"
+        ],
+        [
+            "Cap on head, s",
+            "uit that's red/n"
+        ],
+        [
+            "Special night, b",
+            "eard that's white/n"
+        ],
+        [
+            " Must be S",
+            "anta, mu",
+            "st be San",
+            "ta/n"
+        ],
+        [
+            " Must be S",
+            "anta, Santa Cl",
+            "aus",
+            "/n"
+        ],
+        [
+            "Who's got a big red c",
+            "herry nose?/n("
+        ],
+        [
+            "Santa's got a big red c",
+            "herry nose)/n"
+        ],
+        [
+            "Who laughs this way, \"h",
+            "o, ho, ho!\"?/n("
+        ],
+        [
+            "Santa laughs this way, \"h",
+            "o, ho, ho!\" )/n"
+        ],
+        [
+            "Ho, ho, ho, c",
+            "herry nose/n"
+        ],
+        [
+            "Cap on head, s",
+            "uit that's red/n"
+        ],
+        [
+            "Special night, b",
+            "eard that's white/n"
+        ],
+        [
+            " Must be S",
+            "anta, mu",
+            "st be San",
+            "ta/n"
+        ],
+        [
+            " Must be S",
+            "anta, Santa Cl",
+            "aus/n"
+        ],
+        [],
+        [
+            "erse 4",
+            "]",
+            "",
+            "/n"
+        ],
+        [
+            "Who very soon will c",
+            "ome our way?/n("
+        ],
+        [
+            "Santa very soon will c",
+            "ome our way)/n"
+        ],
+        [
+            "Eight little reindeer p",
+            "ull his sleigh/n("
+        ],
+        [
+            "Santa's little reindeer p",
+            "ull his sleigh)/n"
+        ],
+        [
+            "Reindeer sleigh, c",
+            "ome our way/n"
+        ],
+        [
+            "Ho, ho, ho, c",
+            "herry nose/n"
+        ],
+        [
+            "Cap on head, s",
+            "uit that's red/n"
+        ],
+        [
+            "Special night, b",
+            "eard that's white/n"
+        ],
+        [
+            " Must be S",
+            "anta, mu",
+            "st be San",
+            "ta/n"
+        ],
+        [
+            " Must be S",
+            "anta, Santa Cl",
+            "aus/n"
+        ],
+        [],
+        [
+            "erse ",
+            "5] (v",
+            "ariati",
+            "on)/n"
+        ],
+        [
+            "Dasher, Dancer, Prancer, Vixen/n"
+        ],
+        [
+            "Eisenhower, Kennedy, Johnson, Nixon/n"
+        ],
+        [
+            "Dasher, Dancer, Prancer, Vixen/n"
+        ],
+        [
+            "Carter, Reagan, Bush, and Clinton/n"
+        ],
+        [
+            "Reindeer sleigh, c",
+            "ome our way/n"
+        ],
+        [
+            "Ho, ho, ho, c",
+            "herry nose/n"
+        ],
+        [
+            "Cap on head, s",
+            "uit that's red/n"
+        ],
+        [
+            "Special night, b",
+            "eard that's white/n"
+        ],
+        [
+            " Must be S",
+            "anta, mu",
+            "st be San",
+            "ta/n"
+        ],
+        [
+            " Must be S",
+            "anta, Santa Cl",
+            "aus/n"
+        ],
+        [
+            " Must be S",
+            "anta, mu",
+            "st be San",
+            "ta/n"
+        ],
+        [
+            " Must be S",
+            "anta, Santa Cl",
+            "aus/n"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "a8qE6WQmNus",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

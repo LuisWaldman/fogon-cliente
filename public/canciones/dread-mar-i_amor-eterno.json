@@ -1,1 +1,338 @@
-{"cancion": "amor-eterno", "banda": "dread-mar-i", "escala": "F", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "Gm", "C7", "F", "F", "Gm", "C7", "F", "F", "Gm", "C7", "F", "F", "Gm", "C7", "F", "F", "Gm", "C7", "F", "F", "Gm", "A#", "C7", "F", "F", "Gm", "C7", "F", "F", "Gm", "A#", "C7", "F", "F", "Gm", "C7", "Gm", "C7", "F", "F", "Gm", "C7", "Gm", "C7", "F", "F", "Gm", "C7", "Gm", "C7", "F", "F", "Gm", "C7", "Gm", "C7", "F", "F", "Gm", "C7", "F", "F", "Gm", "A#", "C7", "F", "F", "Gm", "C7", "F", "F", "Gm", "A#", "C7", "F", "Gm", "C7", "F", "Gm", "C7", "F", "Gm", "C7", "F", "Gm", "C7", "Gm", "C7", "F", "Gm", "C7", "Gm", "C7", "F", "Gm", "C7", "F", "Gm", "C7", "F", "Gm", "C7", "C7", "F", "F", "Gm", "C7", "F"]}], "orden_partes": [0]}, "letras": [["Tu eres la tristeza de mis oj", "os/nque"], [" lloran el silencio por tu a", "mor/nm"], ["e miro en el espejo y veo en mi r", "ostro/nEl "], ["tiempo que he sufrido por tu adi", "\u00f3s./nO"], ["bligo a que te olvide el pensamien", "to/npues s"], ["iempre estoy pensando en el ay", "er/np"], ["refiero estar dormido que despiert", "o/nDe "], ["tanto y tanto que me duele que no est", "\u00e9s./nP"], ["ero como quisiera", "", "/nque tu vivieras"], ["/nq"], ["ue tus oji", "tos jam\u00e1s se hub", "ieran cerrado nunc", "a/nY estar mir\u00e1"], ["ndolos./n"], ["Amor eterno", "", "/neh inolvidabl"], ["e/nP"], ["ero tarde o tem", "prano yo voy a estar cont", "igo/nPara seg"], ["uir...am\u00e1ndono", "s./n"], ["Yo he sufrido mu", "cho por tu ausenci", "a/ndesde "], ["ese d\u00eda hasta ", "hoy no soy feliz", "/n"], ["Y aunque tengo y muy tranquila mi conci", "encia", "/nYo se que p"], ["ude y se que pu", "de haber yo hecho mas por ti", "./n"], ["Oscura soledad estoy viv", "iendo yo", "/nla m"], ["isma soleda", "d de tu sepulc", "ro mama/n"], ["Y es que tu eres y es que tu eres el amo", "r del cual yo tengo", "/nel ma"], ["s triste recu", "erdo de Acapulco", "/nP"], ["ero como quisiera", "", "/nque tu vivieras"], ["/nq"], ["ue tus oji", "tos jam\u00e1s se hub", "ieran cerrado nunc", "a/nY estar mir\u00e1"], ["ndolos./n"], ["Amor eterno", "", "/neh inolvidabl"], ["e/nP"], ["ero tarde o tem", "prano yo voy a estar cont", "igo/nPara seg"], ["uir...am\u00e1ndono", "s./n"], ["ojos que", " hallan derramado tantas lagrimas por p", "ena/n"], ["de dolor ", "de amor de tantas despedidas y de espera", "/n"], ["soledad ", "eso es todo lo que tengo ahora y tus recu", "erdos/nQue hacen "], ["mas/nt"], ["riste la angu", "stia de vivir pe", "nsando como siempre en", " ti/n"], ["Ojos que", " me dieron", " tanto/ny que no han v"], ["uelto a verte hasta el sol", " de hoy/n"], ["Tristes ", "de tanto extra\u00f1arte y de tanto esperarte desde aqu", "el adi\u00f3s/n"], ["Soledad ", "eso es todo es lo que tengo ahora y tus recuerdos", "/nQue hacen "], ["mas triste la angus", "tia/nde vivir p"], ["ensando como siempre y para siempre en ", "ti/n"], ["Amor eterno", "", "/nEt"], ["erno amor"]], "medias": [{"tipo": "Youtube", "id": "SAFl36-Gh8U", "delay": 0}]}
+{
+    "cancion": "amor-eterno",
+    "banda": "dread-mar-i",
+    "escala": "F",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "A#",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "A#",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "A#",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "A#",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "C7",
+                    "F",
+                    "F",
+                    "Gm",
+                    "C7",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Tu eres la tristeza de mis oj",
+            "os/nque"
+        ],
+        [
+            " lloran el silencio por tu a",
+            "mor/nm"
+        ],
+        [
+            "e miro en el espejo y veo en mi r",
+            "ostro/nEl "
+        ],
+        [
+            "tiempo que he sufrido por tu adi",
+            "ós./nO"
+        ],
+        [
+            "bligo a que te olvide el pensamien",
+            "to/npues s"
+        ],
+        [
+            "iempre estoy pensando en el ay",
+            "er/np"
+        ],
+        [
+            "refiero estar dormido que despiert",
+            "o/nDe "
+        ],
+        [
+            "tanto y tanto que me duele que no est",
+            "és./nP"
+        ],
+        [
+            "ero como quisiera",
+            "",
+            "/nque tu vivieras"
+        ],
+        [
+            "/nq"
+        ],
+        [
+            "ue tus oji",
+            "tos jamás se hub",
+            "ieran cerrado nunc",
+            "a/nY estar mirá"
+        ],
+        [
+            "ndolos./n"
+        ],
+        [
+            "Amor eterno",
+            "",
+            "/neh inolvidabl"
+        ],
+        [
+            "e/nP"
+        ],
+        [
+            "ero tarde o tem",
+            "prano yo voy a estar cont",
+            "igo/nPara seg"
+        ],
+        [
+            "uir...amándono",
+            "s./n"
+        ],
+        [
+            "Yo he sufrido mu",
+            "cho por tu ausenci",
+            "a/ndesde "
+        ],
+        [
+            "ese día hasta ",
+            "hoy no soy feliz",
+            "/n"
+        ],
+        [
+            "Y aunque tengo y muy tranquila mi conci",
+            "encia",
+            "/nYo se que p"
+        ],
+        [
+            "ude y se que pu",
+            "de haber yo hecho mas por ti",
+            "./n"
+        ],
+        [
+            "Oscura soledad estoy viv",
+            "iendo yo",
+            "/nla m"
+        ],
+        [
+            "isma soleda",
+            "d de tu sepulc",
+            "ro mama/n"
+        ],
+        [
+            "Y es que tu eres y es que tu eres el amo",
+            "r del cual yo tengo",
+            "/nel ma"
+        ],
+        [
+            "s triste recu",
+            "erdo de Acapulco",
+            "/nP"
+        ],
+        [
+            "ero como quisiera",
+            "",
+            "/nque tu vivieras"
+        ],
+        [
+            "/nq"
+        ],
+        [
+            "ue tus oji",
+            "tos jamás se hub",
+            "ieran cerrado nunc",
+            "a/nY estar mirá"
+        ],
+        [
+            "ndolos./n"
+        ],
+        [
+            "Amor eterno",
+            "",
+            "/neh inolvidabl"
+        ],
+        [
+            "e/nP"
+        ],
+        [
+            "ero tarde o tem",
+            "prano yo voy a estar cont",
+            "igo/nPara seg"
+        ],
+        [
+            "uir...amándono",
+            "s./n"
+        ],
+        [
+            "ojos que",
+            " hallan derramado tantas lagrimas por p",
+            "ena/n"
+        ],
+        [
+            "de dolor ",
+            "de amor de tantas despedidas y de espera",
+            "/n"
+        ],
+        [
+            "soledad ",
+            "eso es todo lo que tengo ahora y tus recu",
+            "erdos/nQue hacen "
+        ],
+        [
+            "mas/nt"
+        ],
+        [
+            "riste la angu",
+            "stia de vivir pe",
+            "nsando como siempre en",
+            " ti/n"
+        ],
+        [
+            "Ojos que",
+            " me dieron",
+            " tanto/ny que no han v"
+        ],
+        [
+            "uelto a verte hasta el sol",
+            " de hoy/n"
+        ],
+        [
+            "Tristes ",
+            "de tanto extrañarte y de tanto esperarte desde aqu",
+            "el adiós/n"
+        ],
+        [
+            "Soledad ",
+            "eso es todo es lo que tengo ahora y tus recuerdos",
+            "/nQue hacen "
+        ],
+        [
+            "mas triste la angus",
+            "tia/nde vivir p"
+        ],
+        [
+            "ensando como siempre y para siempre en ",
+            "ti/n"
+        ],
+        [
+            "Amor eterno",
+            "",
+            "/nEt"
+        ],
+        [
+            "erno amor"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "SAFl36-Gh8U",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

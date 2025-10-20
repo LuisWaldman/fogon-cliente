@@ -1,1 +1,347 @@
-{"cancion": "Mesias", "banda": "arjona-ricardo", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "F", "G", "Am", "F", "G", "Am", "F", "G", "Am", "Am", "F", "G", "Am", "F", "G", "Am", "D", "Am", "F", "F", "C", "Em", "Am", "F", "G", "Am", "F", "G", "Am", "D", "Dm", "E7", "Am", "G", "Am", "D", "F", "G", "Am", "D", "Dm", "E7", "Am", "F", "G", "Am", "Am", "F", "G", "C", "Em", "Am", "F", "G", "Am", "C", "G", "F", "C", "Am", "D", "F", "G", "Am", "F", "C", "G", "F", "G", "Am", "Am", "F", "G", "Am", "F", "G", "Am", "F", "G", "Am", "Am", "F", "G", "Am", "F", "G", "Am", "D", "Am", "F", "F", "C", "Em", "Am", "F", "G", "C", "G", "F", "C", "Am", "D", "F", "G", "Am", "F", "C", "G", "F", "G", "Am", "Am", "F", "Am", "D", "Dm", "G", "Am"]}], "orden_partes": [0]}, "letras": [["Ha nacido el mes", "ias en nu", "eva yor", "k/nanda en auto blind"], ["ado por p", "recauci", "on/nel papa le te"], ["me a algun despi", "do en ma", "sa./n"], ["Viene rasurado y ", "de christ", "ian dio", "r/nPara estar a la a"], ["ltura de ", "la situ", "aci\u00f3n/nLos judios di"], ["cen que ese es el que esper", "aban/n"], ["Tiene un pentho", "use en manhatan/nY un p"], ["iso e", "n paris", "", "/nUn doct"], ["orado en harvard/nY un affair con una a"], ["criz/nToma un trago en el v"], ["illage co", "n bill gat", "es/nOye un p"], ["oco de ja", "zz por dis", "tracci", "n/nRevisa la bo"], ["lsa y le invierte a la igl", "esia/nHace un po"], ["co de jog", "ging en cen", "tral park", "/nApr"], ["ende kung fu", " en chi", "na town", "/nPrepara un g"], ["olpe y nadie sa", "be la f", "echa.", "/n"], [" Tiene una esco", "lta armada/nCon "], ["tipos d", "e israel", "/n"], [" Y una m\u00e1gnum ", "45... para e", "l./n"], ["Dicen que vi", "no y juro que iba", " a regresar", "/n"], ["Que se hizo cirug", "a en las manos par", "a dis", "imular", "/n"], ["Que es el enviado del cie", "lo y que esta en manhatt", "am/n"], ["Y que esta vez su estrateg", "ia... no es igua", "l./n"], ["Tiene un socio en Jap", "\u00f3n, y otro en Afg", "anist\u00e1", "n/nHabla diar"], ["io con dios por el I", "nternet", "/nPromuev"], ["e un cambio y se ha", " ganado enemi", "gos/n"], ["Ya compro CNN y e", "sta usand", "o su es", "pacio/nCon disc"], ["ursos que invi", "tan a quitarn", "os el velo/nE"], ["l caos impera y el planet", "a se espanta./n"], ["La iglesia lo a", "cusa de hereje/nY el "], ["pent", "gono d", "e terr", "orista/nY en el"], [" filo de la navaja... la fe./n"], ["Dicen que vi", "no y juro que iba", " a regresar", "/n"], ["Que se hizo cirug", "a en las manos par", "a dis", "imular", "/n"], ["Que es el enviado del cie", "lo y que esta en manhatt", "am/n"], ["Y que esta vez su estrateg", "ia... no es igua", "l./n"], ["Se ha suicidado un magna", "te en la gran manzan", "a/nSe lee en la port"], ["ada del New York T", "imes/nY una nube de d"], ["udas le hacen so", "mbra al sol."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "rVI8xjQEna4", "delay": 0}]}
+{
+    "cancion": "Mesias",
+    "banda": "arjona-ricardo",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "D",
+                    "Am",
+                    "F",
+                    "F",
+                    "C",
+                    "Em",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "D",
+                    "Dm",
+                    "E7",
+                    "Am",
+                    "G",
+                    "Am",
+                    "D",
+                    "F",
+                    "G",
+                    "Am",
+                    "D",
+                    "Dm",
+                    "E7",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "Em",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "Am",
+                    "D",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "D",
+                    "Am",
+                    "F",
+                    "F",
+                    "C",
+                    "Em",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "Am",
+                    "D",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Am",
+                    "D",
+                    "Dm",
+                    "G",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Ha nacido el mes",
+            "ias en nu",
+            "eva yor",
+            "k/nanda en auto blind"
+        ],
+        [
+            "ado por p",
+            "recauci",
+            "on/nel papa le te"
+        ],
+        [
+            "me a algun despi",
+            "do en ma",
+            "sa./n"
+        ],
+        [
+            "Viene rasurado y ",
+            "de christ",
+            "ian dio",
+            "r/nPara estar a la a"
+        ],
+        [
+            "ltura de ",
+            "la situ",
+            "ación/nLos judios di"
+        ],
+        [
+            "cen que ese es el que esper",
+            "aban/n"
+        ],
+        [
+            "Tiene un pentho",
+            "use en manhatan/nY un p"
+        ],
+        [
+            "iso e",
+            "n paris",
+            "",
+            "/nUn doct"
+        ],
+        [
+            "orado en harvard/nY un affair con una a"
+        ],
+        [
+            "criz/nToma un trago en el v"
+        ],
+        [
+            "illage co",
+            "n bill gat",
+            "es/nOye un p"
+        ],
+        [
+            "oco de ja",
+            "zz por dis",
+            "tracci",
+            "n/nRevisa la bo"
+        ],
+        [
+            "lsa y le invierte a la igl",
+            "esia/nHace un po"
+        ],
+        [
+            "co de jog",
+            "ging en cen",
+            "tral park",
+            "/nApr"
+        ],
+        [
+            "ende kung fu",
+            " en chi",
+            "na town",
+            "/nPrepara un g"
+        ],
+        [
+            "olpe y nadie sa",
+            "be la f",
+            "echa.",
+            "/n"
+        ],
+        [
+            " Tiene una esco",
+            "lta armada/nCon "
+        ],
+        [
+            "tipos d",
+            "e israel",
+            "/n"
+        ],
+        [
+            " Y una mágnum ",
+            "45... para e",
+            "l./n"
+        ],
+        [
+            "Dicen que vi",
+            "no y juro que iba",
+            " a regresar",
+            "/n"
+        ],
+        [
+            "Que se hizo cirug",
+            "a en las manos par",
+            "a dis",
+            "imular",
+            "/n"
+        ],
+        [
+            "Que es el enviado del cie",
+            "lo y que esta en manhatt",
+            "am/n"
+        ],
+        [
+            "Y que esta vez su estrateg",
+            "ia... no es igua",
+            "l./n"
+        ],
+        [
+            "Tiene un socio en Jap",
+            "ón, y otro en Afg",
+            "anistá",
+            "n/nHabla diar"
+        ],
+        [
+            "io con dios por el I",
+            "nternet",
+            "/nPromuev"
+        ],
+        [
+            "e un cambio y se ha",
+            " ganado enemi",
+            "gos/n"
+        ],
+        [
+            "Ya compro CNN y e",
+            "sta usand",
+            "o su es",
+            "pacio/nCon disc"
+        ],
+        [
+            "ursos que invi",
+            "tan a quitarn",
+            "os el velo/nE"
+        ],
+        [
+            "l caos impera y el planet",
+            "a se espanta./n"
+        ],
+        [
+            "La iglesia lo a",
+            "cusa de hereje/nY el "
+        ],
+        [
+            "pent",
+            "gono d",
+            "e terr",
+            "orista/nY en el"
+        ],
+        [
+            " filo de la navaja... la fe./n"
+        ],
+        [
+            "Dicen que vi",
+            "no y juro que iba",
+            " a regresar",
+            "/n"
+        ],
+        [
+            "Que se hizo cirug",
+            "a en las manos par",
+            "a dis",
+            "imular",
+            "/n"
+        ],
+        [
+            "Que es el enviado del cie",
+            "lo y que esta en manhatt",
+            "am/n"
+        ],
+        [
+            "Y que esta vez su estrateg",
+            "ia... no es igua",
+            "l./n"
+        ],
+        [
+            "Se ha suicidado un magna",
+            "te en la gran manzan",
+            "a/nSe lee en la port"
+        ],
+        [
+            "ada del New York T",
+            "imes/nY una nube de d"
+        ],
+        [
+            "udas le hacen so",
+            "mbra al sol."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "rVI8xjQEna4",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

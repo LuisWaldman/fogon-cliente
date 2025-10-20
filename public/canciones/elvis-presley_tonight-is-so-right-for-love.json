@@ -1,1 +1,410 @@
-{"cancion": "Tonight-Is-So-Right-For-Love", "banda": "elvis-presley", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G7", "C", "G7", "C", "G7", "C", "G7", "C", "C7", "C", "C7", "G7", "G", "G7", "Dm", "C", "C", "G7", "C", "G7", "C", "C7", "C", "C", "G", "G7", "G", "G7", "Dm", "C", "C", "G7", "C", "G7", "C", "Am", "G7", "Dm", "G7", "Dm", "C", "C", "G7", "C", "G7", "C", "Am", "G7", "Dm", "G7", "Dm", "C", "C", "G7", "C", "G7", "C", "C7", "C7", "C", "C7", "F", "F", "F", "D", "D7", "D", "G", "G", "G", "Em", "Em", "G7", "G7", "G7", "G", "C", "C7", "C", "G7", "Dm", "G7", "G6", "Em", "A", "Dm", "Fmaj7", "G7", "C", "C", "Am", "G", "G", "G7", "C", "C7", "C", "C", "Dm", "Fmaj7", "C", "C", "Dm", "G7", "C", "C", "Am", "F", "C", "Am", "F", "Em", "Em7", "F", "Em", "A", "Dm", "Fmaj7", "G7", "C", "C", "Am", "G", "G", "G7", "C", "C7", "C", "C", "Dm", "Fmaj7", "C", "C", "Dm", "G7", "C", "C", "Am", "F", "C", "Am", "F", "Em", "Em7", "F", "C", "G7", "C", "G7", "C", "G7", "D7", "G7", "G7", "G7", "C", "C", "C", "C", "G", "C"]}], "orden_partes": [0]}, "letras": [[], ["Hold m", "e ti", "ght", "/nThe "], ["moon is so bright/nTo"], ["night i", "s so ri", "ght for lov", "e", "", "", "", "/n"], ["Now'", "s th", "e time", "/nto "], ["say you'll be m", "ine/nTo"], ["night i", "s so ri", "ght for lov", "e", "", "", "", "/n"], ["One by  o", "ne,   the st", "ars appea", "r/n"], [" They twinkle i", "n your ey", "es", "", "", "", "/n"], ["Who'd bel", "ieve that we", "'d be ", "here/n"], [" So near to p", "aradi", "se", "", "", "", "/n"], ["This could be the k", "iss", "/nTo un"], ["lock h", "eaven's do", "or", "/n"], ["That magic h", "our of bl", "iss/nThat we "], ["both waited f", "or", "/n"], ["I  l", "ove,  yo", "u mor", "e,  and ", "more'", "ohh", "/n"], ["Oh-o", "h' we co", "uld fly /nright "], ["up  to the sky/ndo "], ["things we've been d", "reami", "ng of", "", "/n"], ["  And how r", "eal  they wo", "uld seem", "", "", "", "/n"], ["  A mid-s", "ummernight's dr", "eam", "mm", "", "/n"], ["  Can't you s", "ee that toni", "ght's ", "/nso "], ["right, f", "or lo", "ve", "", "", "", "", "", "", "", "", "", "", "/n"], ["  And how r", "eal  they wo", "uld seem", "", "", "", "/n"], ["  A mid-s", "ummernight's dr", "eam", "mm", "", "/n"], ["  Can't you s", "ee that toni", "ght's ", "/nso "], ["right, f", "or lo", "ve", "", "", "", "", "", "", "", "", "", "", "", "", "/n"], ["Hold me tight/nThe "], ["moon's so bright/n"], ["Tonight,/nis so "], ["right,", "/n"], ["for l", "ove    ", "   ", " ! ", "!", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "DIOh9CC7klo", "delay": 0}]}
+{
+    "cancion": "Tonight-Is-So-Right-For-Love",
+    "banda": "elvis-presley",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C",
+                    "C7",
+                    "G7",
+                    "G",
+                    "G7",
+                    "Dm",
+                    "C",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C",
+                    "C",
+                    "G",
+                    "G7",
+                    "G",
+                    "G7",
+                    "Dm",
+                    "C",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "Am",
+                    "G7",
+                    "Dm",
+                    "G7",
+                    "Dm",
+                    "C",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "Am",
+                    "G7",
+                    "Dm",
+                    "G7",
+                    "Dm",
+                    "C",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C7",
+                    "C",
+                    "C7",
+                    "F",
+                    "F",
+                    "F",
+                    "D",
+                    "D7",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G",
+                    "C",
+                    "C7",
+                    "C",
+                    "G7",
+                    "Dm",
+                    "G7",
+                    "G6",
+                    "Em",
+                    "A",
+                    "Dm",
+                    "Fmaj7",
+                    "G7",
+                    "C",
+                    "C",
+                    "Am",
+                    "G",
+                    "G",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Fmaj7",
+                    "C",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "Am",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Em7",
+                    "F",
+                    "Em",
+                    "A",
+                    "Dm",
+                    "Fmaj7",
+                    "G7",
+                    "C",
+                    "C",
+                    "Am",
+                    "G",
+                    "G",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Fmaj7",
+                    "C",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "Am",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Em7",
+                    "F",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "C",
+                    "G7",
+                    "D7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Hold m",
+            "e ti",
+            "ght",
+            "/nThe "
+        ],
+        [
+            "moon is so bright/nTo"
+        ],
+        [
+            "night i",
+            "s so ri",
+            "ght for lov",
+            "e",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Now'",
+            "s th",
+            "e time",
+            "/nto "
+        ],
+        [
+            "say you'll be m",
+            "ine/nTo"
+        ],
+        [
+            "night i",
+            "s so ri",
+            "ght for lov",
+            "e",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "One by  o",
+            "ne,   the st",
+            "ars appea",
+            "r/n"
+        ],
+        [
+            " They twinkle i",
+            "n your ey",
+            "es",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Who'd bel",
+            "ieve that we",
+            "'d be ",
+            "here/n"
+        ],
+        [
+            " So near to p",
+            "aradi",
+            "se",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "This could be the k",
+            "iss",
+            "/nTo un"
+        ],
+        [
+            "lock h",
+            "eaven's do",
+            "or",
+            "/n"
+        ],
+        [
+            "That magic h",
+            "our of bl",
+            "iss/nThat we "
+        ],
+        [
+            "both waited f",
+            "or",
+            "/n"
+        ],
+        [
+            "I  l",
+            "ove,  yo",
+            "u mor",
+            "e,  and ",
+            "more'",
+            "ohh",
+            "/n"
+        ],
+        [
+            "Oh-o",
+            "h' we co",
+            "uld fly /nright "
+        ],
+        [
+            "up  to the sky/ndo "
+        ],
+        [
+            "things we've been d",
+            "reami",
+            "ng of",
+            "",
+            "/n"
+        ],
+        [
+            "  And how r",
+            "eal  they wo",
+            "uld seem",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "  A mid-s",
+            "ummernight's dr",
+            "eam",
+            "mm",
+            "",
+            "/n"
+        ],
+        [
+            "  Can't you s",
+            "ee that toni",
+            "ght's ",
+            "/nso "
+        ],
+        [
+            "right, f",
+            "or lo",
+            "ve",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "  And how r",
+            "eal  they wo",
+            "uld seem",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "  A mid-s",
+            "ummernight's dr",
+            "eam",
+            "mm",
+            "",
+            "/n"
+        ],
+        [
+            "  Can't you s",
+            "ee that toni",
+            "ght's ",
+            "/nso "
+        ],
+        [
+            "right, f",
+            "or lo",
+            "ve",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hold me tight/nThe "
+        ],
+        [
+            "moon's so bright/n"
+        ],
+        [
+            "Tonight,/nis so "
+        ],
+        [
+            "right,",
+            "/n"
+        ],
+        [
+            "for l",
+            "ove    ",
+            "   ",
+            " ! ",
+            "!",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "DIOh9CC7klo",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

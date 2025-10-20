@@ -1,1 +1,427 @@
-{"cancion": "Cmon-People", "banda": "paul-mccartney", "escala": "Eb", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Eb", "Eb9/F", "Eb", "Eb9/F", "Ab", "Gm7", "Cm", "Ab", "Bb", "C", "C4", "C2", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "Eb", "Eb9/F", "Eb", "Eb9/F", "Ab", "Gm7", "Cm", "Ab", "Bb", "C", "C4", "C2", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "Ab6", "Gm7", "Bb", "Cm", "Ab6", "Gm7", "Bb", "Cm", "Eb", "Eb9/F", "Eb", "Eb9/F", "Ab", "Gm7", "Cm", "Ab", "Bb", "C", "C4", "C2", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "Eb", "Ab6", "Gm7", "Bb", "Cm", "Eb", "Cm", "Ab6", "Gm7", "Bb", "Cm", "Eb", "Cm", "Ab6", "Gm7", "Bb", "Cm", "Eb", "Cm", "Ab6", "Gm7", "Bb", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "C7", "C6", "C7M", "C", "Gm/C", "C", "E", "F#7/C#", "A/E", "E", "Ab", "A", "E", "F#7/C#", "A/E", "E", "E", "F#7/C#", "A/E", "E", "E", "F#7/C#", "E4/C", "F7M"]}], "orden_partes": [0]}, "letras": [["Well we're going to, yeah we're going to", "/n"], ["We're going to, really going to/n"], ["Raise it to the sky/n"], ["People are ready to forgi", "ve a few mistak", "es/n"], ["But let's get started, form a pa", "rty/nDon't you know how long it ta"], ["kes", "", "", "/n"], ["C'mon pe", "ople let the fu", "n begin", "/n"], ["We've got a fu", "ture and it's ru", "shing in", "/n"], ["Call all the m", "instrels from the an", "cient shrine", "/n"], ["Pass down the me", "ssage that it's rig", "ht this time", "/n"], ["Well I'm trying to, yeah I'm crying to", "/n"], ["We're trying to, really dying to/n"], ["Get it right this time/n"], ["So many yearning for the w", "ay it's gonna be", "/n"], ["Believe it when you see it h", "appening to you/nYou know it's r"], ["eal", "", "", "/n"], ["C'mon pe", "ople let the wo", "rld begin", "/n"], ["We've got a fu", "ture and it's ch", "arging in", "/n"], ["We'll make the be", "st of all we ha", "ve, and more", "/n"], ["We'll do what ne", "ver has been do", "ne before", "/n"], ["Oh yeah", "", "", "/n"], ["Oh yeah oh yeah", "", "", "/n"], ["Well I'm going to, yeah I'm going to", "/n"], ["I'm going to, really going to/n"], ["Raise it to the sky/n"], ["I must admit I may have m", "ade a few mist", "akes/n"], ["But let's get started, from a p", "arty/nDon't you know how long it "], ["takes", "", "", "/n"], ["So c'mon p", "eople let the f", "un begin", "/n"], ["We've got a f", "uture and it's ru", "shing in", "/n"], ["Call all the m", "instrels from the a", "ncient shri", "ne/n"], ["Pass down the m", "essage that it's rig", "ht this time", "", "/n"], ["Oh yeah", "", "", "", "", "/n"], ["Oh yeah oh yeah", "", "", "", "", "/n"], ["Oh yeah", "", "", "", "", "/n"], ["Oh yeah oh yeah", "", "", "/n"], ["C'mon pe", "ople let the wor", "ld begin", "/n"], ["We've got a fu", "ture and it's c", "ha----", "rgin", "g in", "/n"], [], [], [], [], [], [], ["Come and be cosmically conscio", "us/n"], ["Cosmically conscious with m", "e/n"], ["Come and be cosmically conscio", "us/n"], ["Cosmically conscious with m", "e/nSuch a "], ["joy, joy, j", "oy, joy, joy, jo", "y/nIt's such a "], ["joy"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "c0aY3oUPO3o", "delay": 0}]}
+{
+    "cancion": "Cmon-People",
+    "banda": "paul-mccartney",
+    "escala": "Eb",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Eb",
+                    "Eb9/F",
+                    "Eb",
+                    "Eb9/F",
+                    "Ab",
+                    "Gm7",
+                    "Cm",
+                    "Ab",
+                    "Bb",
+                    "C",
+                    "C4",
+                    "C2",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "Eb",
+                    "Eb9/F",
+                    "Eb",
+                    "Eb9/F",
+                    "Ab",
+                    "Gm7",
+                    "Cm",
+                    "Ab",
+                    "Bb",
+                    "C",
+                    "C4",
+                    "C2",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "Ab6",
+                    "Gm7",
+                    "Bb",
+                    "Cm",
+                    "Ab6",
+                    "Gm7",
+                    "Bb",
+                    "Cm",
+                    "Eb",
+                    "Eb9/F",
+                    "Eb",
+                    "Eb9/F",
+                    "Ab",
+                    "Gm7",
+                    "Cm",
+                    "Ab",
+                    "Bb",
+                    "C",
+                    "C4",
+                    "C2",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "Eb",
+                    "Ab6",
+                    "Gm7",
+                    "Bb",
+                    "Cm",
+                    "Eb",
+                    "Cm",
+                    "Ab6",
+                    "Gm7",
+                    "Bb",
+                    "Cm",
+                    "Eb",
+                    "Cm",
+                    "Ab6",
+                    "Gm7",
+                    "Bb",
+                    "Cm",
+                    "Eb",
+                    "Cm",
+                    "Ab6",
+                    "Gm7",
+                    "Bb",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "C7",
+                    "C6",
+                    "C7M",
+                    "C",
+                    "Gm/C",
+                    "C",
+                    "E",
+                    "F#7/C#",
+                    "A/E",
+                    "E",
+                    "Ab",
+                    "A",
+                    "E",
+                    "F#7/C#",
+                    "A/E",
+                    "E",
+                    "E",
+                    "F#7/C#",
+                    "A/E",
+                    "E",
+                    "E",
+                    "F#7/C#",
+                    "E4/C",
+                    "F7M"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Well we're going to, yeah we're going to",
+            "/n"
+        ],
+        [
+            "We're going to, really going to/n"
+        ],
+        [
+            "Raise it to the sky/n"
+        ],
+        [
+            "People are ready to forgi",
+            "ve a few mistak",
+            "es/n"
+        ],
+        [
+            "But let's get started, form a pa",
+            "rty/nDon't you know how long it ta"
+        ],
+        [
+            "kes",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C'mon pe",
+            "ople let the fu",
+            "n begin",
+            "/n"
+        ],
+        [
+            "We've got a fu",
+            "ture and it's ru",
+            "shing in",
+            "/n"
+        ],
+        [
+            "Call all the m",
+            "instrels from the an",
+            "cient shrine",
+            "/n"
+        ],
+        [
+            "Pass down the me",
+            "ssage that it's rig",
+            "ht this time",
+            "/n"
+        ],
+        [
+            "Well I'm trying to, yeah I'm crying to",
+            "/n"
+        ],
+        [
+            "We're trying to, really dying to/n"
+        ],
+        [
+            "Get it right this time/n"
+        ],
+        [
+            "So many yearning for the w",
+            "ay it's gonna be",
+            "/n"
+        ],
+        [
+            "Believe it when you see it h",
+            "appening to you/nYou know it's r"
+        ],
+        [
+            "eal",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C'mon pe",
+            "ople let the wo",
+            "rld begin",
+            "/n"
+        ],
+        [
+            "We've got a fu",
+            "ture and it's ch",
+            "arging in",
+            "/n"
+        ],
+        [
+            "We'll make the be",
+            "st of all we ha",
+            "ve, and more",
+            "/n"
+        ],
+        [
+            "We'll do what ne",
+            "ver has been do",
+            "ne before",
+            "/n"
+        ],
+        [
+            "Oh yeah",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh yeah oh yeah",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Well I'm going to, yeah I'm going to",
+            "/n"
+        ],
+        [
+            "I'm going to, really going to/n"
+        ],
+        [
+            "Raise it to the sky/n"
+        ],
+        [
+            "I must admit I may have m",
+            "ade a few mist",
+            "akes/n"
+        ],
+        [
+            "But let's get started, from a p",
+            "arty/nDon't you know how long it "
+        ],
+        [
+            "takes",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "So c'mon p",
+            "eople let the f",
+            "un begin",
+            "/n"
+        ],
+        [
+            "We've got a f",
+            "uture and it's ru",
+            "shing in",
+            "/n"
+        ],
+        [
+            "Call all the m",
+            "instrels from the a",
+            "ncient shri",
+            "ne/n"
+        ],
+        [
+            "Pass down the m",
+            "essage that it's rig",
+            "ht this time",
+            "",
+            "/n"
+        ],
+        [
+            "Oh yeah",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh yeah oh yeah",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh yeah",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh yeah oh yeah",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C'mon pe",
+            "ople let the wor",
+            "ld begin",
+            "/n"
+        ],
+        [
+            "We've got a fu",
+            "ture and it's c",
+            "ha----",
+            "rgin",
+            "g in",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "Come and be cosmically conscio",
+            "us/n"
+        ],
+        [
+            "Cosmically conscious with m",
+            "e/n"
+        ],
+        [
+            "Come and be cosmically conscio",
+            "us/n"
+        ],
+        [
+            "Cosmically conscious with m",
+            "e/nSuch a "
+        ],
+        [
+            "joy, joy, j",
+            "oy, joy, joy, jo",
+            "y/nIt's such a "
+        ],
+        [
+            "joy"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "c0aY3oUPO3o",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

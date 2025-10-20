@@ -1,1 +1,381 @@
-{"cancion": "Desde-la-calle-33", "banda": "arjona-ricardo", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "F", "G7"]}, {"nombre": "parte2", "acordes": ["C"]}, {"nombre": "parte3", "acordes": ["Am", "Em", "F", "G7", "C", "G7", "Am", "Em"]}, {"nombre": "parte4", "acordes": ["F", "G7"]}, {"nombre": "parte5", "acordes": ["G7", "Am"]}], "orden_partes": [0, 0, 1, 0, 0, 1, 2, 3, 1, 4, 3, 0, 0, 1, 2, 3, 1, 4, 3, 0, 0, 1, 4, 3, 0, 0, 1, 4, 3, 1, 0, 1, 0, 1, 2, 3, 3, 0, 1, 4, 3, 0, 0, 1, 4, 3, 0, 0, 1, 4, 3, 0, 0, 1, 4, 3, 1]}, "letras": [["Nac\u00ed en un barrio b", "arato/nfu\u00ed "], ["vecino de una panader", "ia/nmi mejor juguete era un g"], ["ato/nsu maul"], ["lido me inspir\u00f3 melod", "\u00edas./nCre"], ["c\u00ed en la ", "33/ny hab"], ["\u00eda de todo un ", "poco/nhombres que mor\u00edan de s"], ["tress,/n"], ["viudas, trasvestis, lo", "cos./n"], ["Era un mundo gri", "s/nel col"], ["or lo pintaban tus g", "anas de vivir", "", "/n"], ["mas era feli", "z/nlos su"], ["e\u00f1os no apuntaban mas al", "l\u00e1 de la nar", "\u00edz", "", "/nq"], ["uer\u00eda ser bombero de la c", "ompa\u00f1\u00eda 26./n"], ["Un d\u00eda conoc\u00ed la e", "scuela/ny por "], ["falta de entus", "iasmo/nconoc\u00ed mis primeras"], [" penas/ny por"], ["t\u00e9 las orejas de a", "sno./n"], ["Pero aprend\u00ed a l", "eer/ny con e"], ["so aumentaron mis ga", "nas de sab", "er", "/n"], ["conoc\u00ed a B", "orges/na M"], ["\u00e1rquez y tambi\u00e9n", " al se\u00f1or V", "idal", "", "/ny un"], [" matutino me con", "t\u00f3 que exist\u00eda Viet", "nam./n"], ["Desde la c", "alle 33", "/n"], ["desde la c", "alle 33", "/nall\u00ed d"], ["onde no existe la ", "ley/n"], ["nacen historias sin", " rumbo/nde lo simple a lo prof"], ["undo./n"], ["Desde la c", "alle 33", "/n"], ["desde la c", "alle 33", "/nall\u00ed "], ["donde no existe ", "ley/nu"], ["na guitarra fue mi no", "mbre/ny se\u00f1"], ["al\u00f3 mi rumbo./n"], ["Prob\u00e9 mi primer cer", "veza/ny a los "], ["12 mi primer ciga", "rro/nme hice h"], ["ombre junto a una pri", "ncesa/nen la pa"], ["rte posterior de un ca", "rro./n"], ["Mientras las dr", "ogas/neran pa"], ["ra mis amigos la n", "ueva travesura", "", "/n"], ["yo volando en mi alco", "ba/nencont"], ["r\u00e9 el camino/nque h"], ["oy me trajo hasta aqui./n"], ["Desde la c", "alle 33", "/n"], ["desde la c", "alle 33", "/nall\u00ed d"], ["onde no existe la ", "ley/n"], ["nacen historias sin", " rumbo/nde lo simple a lo prof"], ["undo./n"], ["Desde la c", "alle 33", "/n"], ["desde la c", "alle 33", "/nall\u00ed "], ["donde no existe ", "ley/nu"], ["na guitarra fue mi no", "mbre/ny se\u00f1"], ["al\u00f3 mi rumbo./n"], ["Desde la c", "alle 33", "/n"], ["desde la c", "alle 33", "/nall\u00ed d"], ["onde no existe la ", "ley/n"], ["nacen historias sin", " rumbo/nde lo simple a lo prof"], ["undo./n"], ["Desde la c", "alle 33", "/n"], ["desde la c", "alle 33", "/nall\u00ed "], ["donde no existe ", "ley/nu"], ["na guitarra fue mi no", "mbre/ny se\u00f1"], ["al\u00f3 mi rumbo."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "jloWtJMXflg", "delay": 0}]}
+{
+    "cancion": "Desde-la-calle-33",
+    "banda": "arjona-ricardo",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Em",
+                    "F",
+                    "G7",
+                    "C",
+                    "G7",
+                    "Am",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G7",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            2,
+            3,
+            1,
+            4,
+            3,
+            0,
+            0,
+            1,
+            2,
+            3,
+            1,
+            4,
+            3,
+            0,
+            0,
+            1,
+            4,
+            3,
+            0,
+            0,
+            1,
+            4,
+            3,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            3,
+            3,
+            0,
+            1,
+            4,
+            3,
+            0,
+            0,
+            1,
+            4,
+            3,
+            0,
+            0,
+            1,
+            4,
+            3,
+            0,
+            0,
+            1,
+            4,
+            3,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Nací en un barrio b",
+            "arato/nfuí "
+        ],
+        [
+            "vecino de una panader",
+            "ia/nmi mejor juguete era un g"
+        ],
+        [
+            "ato/nsu maul"
+        ],
+        [
+            "lido me inspiró melod",
+            "ías./nCre"
+        ],
+        [
+            "cí en la ",
+            "33/ny hab"
+        ],
+        [
+            "ía de todo un ",
+            "poco/nhombres que morían de s"
+        ],
+        [
+            "tress,/n"
+        ],
+        [
+            "viudas, trasvestis, lo",
+            "cos./n"
+        ],
+        [
+            "Era un mundo gri",
+            "s/nel col"
+        ],
+        [
+            "or lo pintaban tus g",
+            "anas de vivir",
+            "",
+            "/n"
+        ],
+        [
+            "mas era feli",
+            "z/nlos su"
+        ],
+        [
+            "eños no apuntaban mas al",
+            "lá de la nar",
+            "íz",
+            "",
+            "/nq"
+        ],
+        [
+            "uería ser bombero de la c",
+            "ompañía 26./n"
+        ],
+        [
+            "Un día conocí la e",
+            "scuela/ny por "
+        ],
+        [
+            "falta de entus",
+            "iasmo/nconocí mis primeras"
+        ],
+        [
+            " penas/ny por"
+        ],
+        [
+            "té las orejas de a",
+            "sno./n"
+        ],
+        [
+            "Pero aprendí a l",
+            "eer/ny con e"
+        ],
+        [
+            "so aumentaron mis ga",
+            "nas de sab",
+            "er",
+            "/n"
+        ],
+        [
+            "conocí a B",
+            "orges/na M"
+        ],
+        [
+            "árquez y también",
+            " al señor V",
+            "idal",
+            "",
+            "/ny un"
+        ],
+        [
+            " matutino me con",
+            "tó que existía Viet",
+            "nam./n"
+        ],
+        [
+            "Desde la c",
+            "alle 33",
+            "/n"
+        ],
+        [
+            "desde la c",
+            "alle 33",
+            "/nallí d"
+        ],
+        [
+            "onde no existe la ",
+            "ley/n"
+        ],
+        [
+            "nacen historias sin",
+            " rumbo/nde lo simple a lo prof"
+        ],
+        [
+            "undo./n"
+        ],
+        [
+            "Desde la c",
+            "alle 33",
+            "/n"
+        ],
+        [
+            "desde la c",
+            "alle 33",
+            "/nallí "
+        ],
+        [
+            "donde no existe ",
+            "ley/nu"
+        ],
+        [
+            "na guitarra fue mi no",
+            "mbre/ny señ"
+        ],
+        [
+            "aló mi rumbo./n"
+        ],
+        [
+            "Probé mi primer cer",
+            "veza/ny a los "
+        ],
+        [
+            "12 mi primer ciga",
+            "rro/nme hice h"
+        ],
+        [
+            "ombre junto a una pri",
+            "ncesa/nen la pa"
+        ],
+        [
+            "rte posterior de un ca",
+            "rro./n"
+        ],
+        [
+            "Mientras las dr",
+            "ogas/neran pa"
+        ],
+        [
+            "ra mis amigos la n",
+            "ueva travesura",
+            "",
+            "/n"
+        ],
+        [
+            "yo volando en mi alco",
+            "ba/nencont"
+        ],
+        [
+            "ré el camino/nque h"
+        ],
+        [
+            "oy me trajo hasta aqui./n"
+        ],
+        [
+            "Desde la c",
+            "alle 33",
+            "/n"
+        ],
+        [
+            "desde la c",
+            "alle 33",
+            "/nallí d"
+        ],
+        [
+            "onde no existe la ",
+            "ley/n"
+        ],
+        [
+            "nacen historias sin",
+            " rumbo/nde lo simple a lo prof"
+        ],
+        [
+            "undo./n"
+        ],
+        [
+            "Desde la c",
+            "alle 33",
+            "/n"
+        ],
+        [
+            "desde la c",
+            "alle 33",
+            "/nallí "
+        ],
+        [
+            "donde no existe ",
+            "ley/nu"
+        ],
+        [
+            "na guitarra fue mi no",
+            "mbre/ny señ"
+        ],
+        [
+            "aló mi rumbo./n"
+        ],
+        [
+            "Desde la c",
+            "alle 33",
+            "/n"
+        ],
+        [
+            "desde la c",
+            "alle 33",
+            "/nallí d"
+        ],
+        [
+            "onde no existe la ",
+            "ley/n"
+        ],
+        [
+            "nacen historias sin",
+            " rumbo/nde lo simple a lo prof"
+        ],
+        [
+            "undo./n"
+        ],
+        [
+            "Desde la c",
+            "alle 33",
+            "/n"
+        ],
+        [
+            "desde la c",
+            "alle 33",
+            "/nallí "
+        ],
+        [
+            "donde no existe ",
+            "ley/nu"
+        ],
+        [
+            "na guitarra fue mi no",
+            "mbre/ny señ"
+        ],
+        [
+            "aló mi rumbo."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "jloWtJMXflg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

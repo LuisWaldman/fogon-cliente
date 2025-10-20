@@ -1,1 +1,279 @@
-{"cancion": "callaita", "banda": "bad-bunny", "escala": "G", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "D", "Bm", "Em", "G", "Dmaj7", "Bm", "G"]}, {"nombre": "parte2", "acordes": ["D", "Em", "Bm", "G"]}, {"nombre": "parte3", "acordes": ["D", "Bm", "G"]}, {"nombre": "parte4", "acordes": ["A", "G", "D", "Bm", "G"]}, {"nombre": "parte5", "acordes": ["G", "G", "Dmaj7", "G", "D", "B", "G"]}], "orden_partes": [0, 1, 1, 2, 2, 2, 2, 3, 1, 1, 2, 4, 2, 2, 1, 1, 1, 2]}, "letras": [[], ["   Se acost\u00f3 temprano, ma\u00f1ana hay que est", "udiar, eh/n"], ["Pero llam\u00f3 la amiga diciendo pa' jang", "uear, e", "h/nTiene un culito ah\u00ed que lo acab\u00f3 de"], [" textear, eh", "/nPero en bajita, ella no es de front"], ["ear/nPero pal' sexo es atrev"], ["ida, yo s\u00e9/nMarihuana y beb"], ["ida", "/nGoz\u00e1ndose la v"], ["ida, como es/nPero pal' sexo es atrev"], ["ida, yo s\u00e9/nMarihuana y beb"], ["ida", "/nGoz\u00e1ndose la v"], ["ida, como es/nElla no era as\u00ed, ella no era a"], ["s\u00ed/n"], ["Ella no era as\u00ed, ella no era as\u00ed/nNo s\u00e9 qui\u00e9n la da\u00f1o, p"], ["ero/n"], ["Es panita/nDel que vende, e"], ["y/n"], ["No s\u00e9 si me miente, pero/nS\u00e9 que tiene mas de veinte"], ["/nLos shots de tequila ni los siente"], ["/nAhora ve la vida diferente"], ["/nLa baby llega y se siente la presi\u00f3n"], ["/n"], ["Ey, el perreo es su profesi", "n/nSiempre puesta pa'"], [" la misi\u00f3n/n"], ["La baby llega y se siente la presi\u00f3n/n"], ["Ella ni trata y llama la atenci\u00f3n, /n"], ["Ey, el perreo es su profesi\u00f3", "n/nPero pal' sexo es atrev"], ["ida, yo s\u00e9/nMarihuana y beb"], ["ida", "/nGoz\u00e1ndose la v"], ["ida, como es/nPero pal' sexo es atrev"], ["ida, yo s\u00e9/nMarihuana y beb"], ["ida", "/nGoz\u00e1ndose la v"], ["ida, como es/nAnda con una amiga q"], ["ue es como su jeva/nQue les trajo cinco do"], ["ce pa' que se las beba/nElla es call"], ["aita, no es que no se atreva/nSi hay sol,"], [" hay playa/nSi hay playa"], [", hay alcohol/nSi hay alco"], ["hol, hay sexo/nSi es contig"], ["o, mejor/nSi hay playa, h"], ["ay alcohol/nSi hay alcoh"], ["ol, hay sexo/nSi es conti"], ["go, mejor/nD\u00edas de pl"], ["aya, noches de terror/nEn la ga"], ["veta dejo el temor/nPa' las envidio"], ["sas paz y amor/nYeah, yeah, yeah, yeah,"], [" yeah/nTainy, Tainy, "], ["ey/nBad Bunny baby, be"], ["be/nPero pal' sexo es atrev"], ["ida, yo s\u00e9/nMarihuana y beb"], ["ida", "/nGoz\u00e1ndose la v"], ["ida, como es/nPero pal' sexo es atrev"], ["ida, yo s\u00e9/nMarihuana y beb"], ["ida", "/nGoz\u00e1ndose la v"], ["ida, como es/nPero pal' sexo es atrev"], ["ida, yo s\u00e9/nMarihuana y beb"], ["ida", "/nGoz\u00e1ndose la v"], ["ida, como es/nElla no era as\u00ed, ella no era as\u00ed"], [], [], []], "medias": [{"tipo": "Youtube", "id": "acEOASYioGY", "delay": 0}]}
+{
+    "cancion": "callaita",
+    "banda": "bad-bunny",
+    "escala": "G",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "G",
+                    "Dmaj7",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "G",
+                    "D",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Dmaj7",
+                    "G",
+                    "D",
+                    "B",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3,
+            1,
+            1,
+            2,
+            4,
+            2,
+            2,
+            1,
+            1,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "   Se acostó temprano, mañana hay que est",
+            "udiar, eh/n"
+        ],
+        [
+            "Pero llamó la amiga diciendo pa' jang",
+            "uear, e",
+            "h/nTiene un culito ahí que lo acabó de"
+        ],
+        [
+            " textear, eh",
+            "/nPero en bajita, ella no es de front"
+        ],
+        [
+            "ear/nPero pal' sexo es atrev"
+        ],
+        [
+            "ida, yo sé/nMarihuana y beb"
+        ],
+        [
+            "ida",
+            "/nGozándose la v"
+        ],
+        [
+            "ida, como es/nPero pal' sexo es atrev"
+        ],
+        [
+            "ida, yo sé/nMarihuana y beb"
+        ],
+        [
+            "ida",
+            "/nGozándose la v"
+        ],
+        [
+            "ida, como es/nElla no era así, ella no era a"
+        ],
+        [
+            "sí/n"
+        ],
+        [
+            "Ella no era así, ella no era así/nNo sé quién la daño, p"
+        ],
+        [
+            "ero/n"
+        ],
+        [
+            "Es panita/nDel que vende, e"
+        ],
+        [
+            "y/n"
+        ],
+        [
+            "No sé si me miente, pero/nSé que tiene mas de veinte"
+        ],
+        [
+            "/nLos shots de tequila ni los siente"
+        ],
+        [
+            "/nAhora ve la vida diferente"
+        ],
+        [
+            "/nLa baby llega y se siente la presión"
+        ],
+        [
+            "/n"
+        ],
+        [
+            "Ey, el perreo es su profesi",
+            "n/nSiempre puesta pa'"
+        ],
+        [
+            " la misión/n"
+        ],
+        [
+            "La baby llega y se siente la presión/n"
+        ],
+        [
+            "Ella ni trata y llama la atención, /n"
+        ],
+        [
+            "Ey, el perreo es su profesió",
+            "n/nPero pal' sexo es atrev"
+        ],
+        [
+            "ida, yo sé/nMarihuana y beb"
+        ],
+        [
+            "ida",
+            "/nGozándose la v"
+        ],
+        [
+            "ida, como es/nPero pal' sexo es atrev"
+        ],
+        [
+            "ida, yo sé/nMarihuana y beb"
+        ],
+        [
+            "ida",
+            "/nGozándose la v"
+        ],
+        [
+            "ida, como es/nAnda con una amiga q"
+        ],
+        [
+            "ue es como su jeva/nQue les trajo cinco do"
+        ],
+        [
+            "ce pa' que se las beba/nElla es call"
+        ],
+        [
+            "aita, no es que no se atreva/nSi hay sol,"
+        ],
+        [
+            " hay playa/nSi hay playa"
+        ],
+        [
+            ", hay alcohol/nSi hay alco"
+        ],
+        [
+            "hol, hay sexo/nSi es contig"
+        ],
+        [
+            "o, mejor/nSi hay playa, h"
+        ],
+        [
+            "ay alcohol/nSi hay alcoh"
+        ],
+        [
+            "ol, hay sexo/nSi es conti"
+        ],
+        [
+            "go, mejor/nDías de pl"
+        ],
+        [
+            "aya, noches de terror/nEn la ga"
+        ],
+        [
+            "veta dejo el temor/nPa' las envidio"
+        ],
+        [
+            "sas paz y amor/nYeah, yeah, yeah, yeah,"
+        ],
+        [
+            " yeah/nTainy, Tainy, "
+        ],
+        [
+            "ey/nBad Bunny baby, be"
+        ],
+        [
+            "be/nPero pal' sexo es atrev"
+        ],
+        [
+            "ida, yo sé/nMarihuana y beb"
+        ],
+        [
+            "ida",
+            "/nGozándose la v"
+        ],
+        [
+            "ida, como es/nPero pal' sexo es atrev"
+        ],
+        [
+            "ida, yo sé/nMarihuana y beb"
+        ],
+        [
+            "ida",
+            "/nGozándose la v"
+        ],
+        [
+            "ida, como es/nPero pal' sexo es atrev"
+        ],
+        [
+            "ida, yo sé/nMarihuana y beb"
+        ],
+        [
+            "ida",
+            "/nGozándose la v"
+        ],
+        [
+            "ida, como es/nElla no era así, ella no era así"
+        ],
+        [],
+        [],
+        []
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "acEOASYioGY",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,312 @@
-{"cancion": "smooth-dancer", "banda": "deep-purple", "escala": "A5", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A5", "A", "G", "D", "A", "G", "A", "G", "D", "A", "F#", "A", "G", "A", "G", "D", "A", "G", "A", "G", "A", "G", "D", "A", "E", "F", "F#", "G", "A", "E", "F", "F#", "G", "E", "F", "F#", "G", "G#", "C", "B", "D", "B", "A", "B", "D", "B", "A", "B", "D", "B", "A", "B", "D", "A", "B", "A", "B", "B", "G", "B", "A", "E", "A", "B", "A", "B", "A", "B", "A", "E", "A", "B", "A", "B", "A", "E", "A", "B", "D", "B", "A", "B", "A", "G", "E", "D", "B", "B", "A", "B", "A", "E", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "E", "A", "B", "F#", "G", "G#", "A", "A#", "B"]}], "orden_partes": [0]}, "letras": [["E +H.             +E  E E E E E E E/n  E Q  E +E  Q  E    E E "], ["E E Q  E a  E    +Q    E E E E E E   Q", "  Q  Q ", " E E/n  "], ["+E  E +Q   +Q    E E   E", " E ", "+H     E E   +Q   E E E E E E   Q  ", "Q  Q  E", " E", "/n  +Q   Q  E E E "], ["E   +E  E", " +H     E ", "E  ", " +Q   E E E E E E   Q  Q", "  Q  E ", "E", "/n  +H.      E "], ["E   E", " E +H     E ", "S S  ", " +Q   E E E E E E   Q  Q", "  Q  E ", "E", "/n             "], ["              ", "             ", "  2/4", "/n 4/4"], ["", "/n         "], ["             ", "   2/4         ", "   4/4/n  "], ["      ", "            ", "              ", "            ", "2/4/n 4/4"], ["/n  "], ["+E  E Q  Q  E E   +E  E +Q    Q  E E/n  +E  E Q  Q  E "], ["E   +E  E", " Q  Q  E E ", "  +E  E Q", "  Q  E E   E E E E  E E E E/n  +E  E Q   Q   E "], ["E   +E  E", " Q   Q   E E", "/n  +E  "], ["E S E.   E E E E   E E E E  E E E E/n  +E  E Q   Q   E "], ["E   +E  E", " Q   Q   E E", "/n  +E  "], ["E S E.   E E E E   E E E E E E E E/n  "], ["H..       E", "   +E  E ", "+Q    E  E E E   H..       E   +Q    Q  E E E E/n  H..       "], ["E   +E  E", " +Q    E E E E/n  E E E E E E E E   E  E E E E E E E    E E "], ["Q  E E", " E E   E ", "E E E E E E E/n  "], ["Q  Q  Q", "  E E ", "  H..", "       E   ", "E E H", "    E E   ", "+Q ", "   E E E E E E", "/n  Q  Q  "], ["Q  E E", "   W ", "         a E E H    E E", "   ", "E E E E E E E E/n  "], ["Q  Q  Q", "  E E ", "  E E", " E E E E E E ", "  E E H", "    E E   ", "E E", " E E E E E E/n  "], ["Q  E E", " a Q ", " E E  ", " E E E ", "E E E E E   E E H    ", "E E   ", "E E", " E E E E E E/n  "], ["Q  Q  Q", "  E E ", "  Q  ", "S S S S ", "E S S Q/n  "], ["E E Q  +E  E E", " E ", "  S S S S", " S S ", "S S S", " S S ", "S E E", "", "/n  "], ["Q  Q  Q", "  E E ", "  Q  ", "H    E E   ", " +Q   E E +Q ", "  E E   +Q", "   E E +Q   ", "E E", "/n 2/4     "], ["   4/4"]], "medias": [{"tipo": "Youtube", "id": "V5-lcDX0lG0", "delay": 0}]}
+{
+    "cancion": "smooth-dancer",
+    "banda": "deep-purple",
+    "escala": "A5",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A5",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "F#",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "E",
+                    "F",
+                    "F#",
+                    "G",
+                    "A",
+                    "E",
+                    "F",
+                    "F#",
+                    "G",
+                    "E",
+                    "F",
+                    "F#",
+                    "G",
+                    "G#",
+                    "C",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "B",
+                    "D",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "B",
+                    "G",
+                    "B",
+                    "A",
+                    "E",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "E",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "E",
+                    "A",
+                    "B",
+                    "D",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "G",
+                    "E",
+                    "D",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "E",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "E",
+                    "A",
+                    "B",
+                    "F#",
+                    "G",
+                    "G#",
+                    "A",
+                    "A#",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "E +H.             +E  E E E E E E E/n  E Q  E +E  Q  E    E E "
+        ],
+        [
+            "E E Q  E a  E    +Q    E E E E E E   Q",
+            "  Q  Q ",
+            " E E/n  "
+        ],
+        [
+            "+E  E +Q   +Q    E E   E",
+            " E ",
+            "+H     E E   +Q   E E E E E E   Q  ",
+            "Q  Q  E",
+            " E",
+            "/n  +Q   Q  E E E "
+        ],
+        [
+            "E   +E  E",
+            " +H     E ",
+            "E  ",
+            " +Q   E E E E E E   Q  Q",
+            "  Q  E ",
+            "E",
+            "/n  +H.      E "
+        ],
+        [
+            "E   E",
+            " E +H     E ",
+            "S S  ",
+            " +Q   E E E E E E   Q  Q",
+            "  Q  E ",
+            "E",
+            "/n             "
+        ],
+        [
+            "              ",
+            "             ",
+            "  2/4",
+            "/n 4/4"
+        ],
+        [
+            "",
+            "/n         "
+        ],
+        [
+            "             ",
+            "   2/4         ",
+            "   4/4/n  "
+        ],
+        [
+            "      ",
+            "            ",
+            "              ",
+            "            ",
+            "2/4/n 4/4"
+        ],
+        [
+            "/n  "
+        ],
+        [
+            "+E  E Q  Q  E E   +E  E +Q    Q  E E/n  +E  E Q  Q  E "
+        ],
+        [
+            "E   +E  E",
+            " Q  Q  E E ",
+            "  +E  E Q",
+            "  Q  E E   E E E E  E E E E/n  +E  E Q   Q   E "
+        ],
+        [
+            "E   +E  E",
+            " Q   Q   E E",
+            "/n  +E  "
+        ],
+        [
+            "E S E.   E E E E   E E E E  E E E E/n  +E  E Q   Q   E "
+        ],
+        [
+            "E   +E  E",
+            " Q   Q   E E",
+            "/n  +E  "
+        ],
+        [
+            "E S E.   E E E E   E E E E E E E E/n  "
+        ],
+        [
+            "H..       E",
+            "   +E  E ",
+            "+Q    E  E E E   H..       E   +Q    Q  E E E E/n  H..       "
+        ],
+        [
+            "E   +E  E",
+            " +Q    E E E E/n  E E E E E E E E   E  E E E E E E E    E E "
+        ],
+        [
+            "Q  E E",
+            " E E   E ",
+            "E E E E E E E/n  "
+        ],
+        [
+            "Q  Q  Q",
+            "  E E ",
+            "  H..",
+            "       E   ",
+            "E E H",
+            "    E E   ",
+            "+Q ",
+            "   E E E E E E",
+            "/n  Q  Q  "
+        ],
+        [
+            "Q  E E",
+            "   W ",
+            "         a E E H    E E",
+            "   ",
+            "E E E E E E E E/n  "
+        ],
+        [
+            "Q  Q  Q",
+            "  E E ",
+            "  E E",
+            " E E E E E E ",
+            "  E E H",
+            "    E E   ",
+            "E E",
+            " E E E E E E/n  "
+        ],
+        [
+            "Q  E E",
+            " a Q ",
+            " E E  ",
+            " E E E ",
+            "E E E E E   E E H    ",
+            "E E   ",
+            "E E",
+            " E E E E E E/n  "
+        ],
+        [
+            "Q  Q  Q",
+            "  E E ",
+            "  Q  ",
+            "S S S S ",
+            "E S S Q/n  "
+        ],
+        [
+            "E E Q  +E  E E",
+            " E ",
+            "  S S S S",
+            " S S ",
+            "S S S",
+            " S S ",
+            "S E E",
+            "",
+            "/n  "
+        ],
+        [
+            "Q  Q  Q",
+            "  E E ",
+            "  Q  ",
+            "H    E E   ",
+            " +Q   E E +Q ",
+            "  E E   +Q",
+            "   E E +Q   ",
+            "E E",
+            "/n 2/4     "
+        ],
+        [
+            "   4/4"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "V5-lcDX0lG0",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,474 @@
-{"cancion": "porch-swing-in-tupelo", "banda": "elton-john", "escala": "Eb", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Eb", "Bb", "F", "Eb", "Bb", "F", "C", "C#dim7", "Dm", "C7/E", "F", "C", "Dm", "Bb", "F/A", "Eb", "Bb", "F", "F/E", "Dm7", "F/C", "Bb", "F", "A7", "A7/C#", "Bb/D", "Eb", "F", "C", "C#dim7", "Dm", "C7/E", "F", "C", "Dm", "Bb", "F/A", "Eb", "Bb", "F", "F/E", "Dm7", "F/C", "Bb", "F", "A7", "A7/C#", "Bb/D", "Eb", "F", "F", "Bb", "F", "G", "G7", "C7", "C#dim7", "Dm", "F/C", "Bb", "F", "A7", "Dm", "F/C", "Bb", "F", "Eb", "Bb", "F", "C", "C#dim7", "Dm", "C7/E", "F", "C", "Dm", "Bb", "F/A", "Eb", "Bb", "F", "F/E", "Dm7", "F/C", "Bb", "F", "A7", "A7/C#", "Bb/D", "Eb", "F", "F", "Bb", "F", "G", "G7", "C7", "C#dim7", "Dm", "F/C", "Bb", "F", "A7", "Dm", "F/C", "Bb", "F", "Eb", "Bb", "F", "C", "C#dim7", "Dm", "C7/E", "F", "C", "Dm", "Bb", "F/A", "Eb", "Bb", "F", "F/E", "Dm7", "F/C", "Bb", "F", "A7", "A7/C#", "Bb/D", "Eb", "F", "F", "Bb", "F", "G", "G7", "C7", "C#dim7", "Dm", "F/C", "Bb", "F", "A7", "Dm", "F/C", "Bb", "F", "Eb", "Bb", "F", "F", "Bb", "F", "G", "G7", "C7", "C#dim7", "Dm", "F/C", "Bb", "F", "A7", "Dm", "F/C", "Bb", "F", "Eb", "Bb", "F", "F", "Eb", "Bb", "F", "F", "Eb", "Bb", "F"]}], "orden_partes": [0]}, "letras": [[], ["[Ver", "se 1", "]", "", "/nThere's a "], ["porch swing", " in Tup", "elo/nIn the "], ["shade of the sou", "th/nWhere the "], ["sweet honey drips off that o", "ld hush-your-mo", "uth", "/nIt's a "], ["slow r", "oad on do", "wn", "/nThat "], ["old Natchez t", "race/nThrough "], ["Alabama c", "otton fiel", "ds to a sta", "te of grace", "", "/n"], ["It's a c", "risp go", "lden aut", "umn/nOn the "], ["tennessee l", "ine/nRolling "], ["down the Missis", "sippi like you headed ba", "ck in tim", "e/n"], ["Town's c", "losed on Su", "nday", "/nEvery"], ["body's in c", "hurch/nIt's empty as the "], ["moon ", "this pla", "ce her", "e on eart", "h/n"], ["And this place don't c", "hange/nSome places move "], ["slow/nI'm just rocking "], ["myself on this po", "rch swing in Tupelo", "/nI got "], ["nothing to do ex", "cept ha", "ng in the bre", "eze/nGhosts of the "], ["old south a", "ll around me", "/n"], ["Yeah swing hi", "gh, yeah swing lo", "w/nHere on this "], ["porch swing in Tu", "pelo", "", "", "/nHis "], ["mama must h", "ave lov", "ed him/nThat "], ["truck driving b", "oy/nWith the g"], ["rease monkey look and the r", "ock and roll voice", "", "/nWell i was "], ["just t", "hinking abou", "t him", "/nBecause I "], ["guess he sat here", "/nSinging al"], ["l pr", "aise to Go", "d throu", "gh poverty's tear", "s/n"], ["And this place don't c", "hange/nSome places move "], ["slow/nI'm just rocking "], ["myself on this po", "rch swing in Tupelo", "/nI got "], ["nothing to do ex", "cept ha", "ng in the bre", "eze/nGhosts of the "], ["old south a", "ll around me", "/n"], ["Yeah swing hi", "gh, yeah swing lo", "w/nHere on this "], ["porch swing in Tu", "pelo", "", "", "/n"], [], [], [], [], [], ["[Cho", "rus]", "", "", "/n"], ["And this place don't c", "hange/nSome places move "], ["slow/nI'm just rocking "], ["myself on this po", "rch swing in Tupelo", "/nI got "], ["nothing to do ex", "cept ha", "ng in the bre", "eze/nGhosts of the "], ["old south a", "ll around me", "/n"], ["Yeah swing hi", "gh, yeah swing lo", "w/nHere on this "], ["porch swing in Tu", "pelo", "/n"], ["And this place don't c", "hange/nSome places move "], ["slow/nI'm just rocking "], ["myself on this po", "rch swing in Tupelo", "/nI got "], ["nothing to do ex", "cept ha", "ng in the bre", "eze/nGhosts of the "], ["old south a", "ll around me", "/n"], ["Yeah swing hi", "gh, yeah swing lo", "w/nHere on this "], ["porch swing in Tu", "pelo", "/n"], ["Here on this p", "orch swing in Tu", "pelo", "/n"], ["Here on this p", "orch swing in Tu", "pelo", ""]], "medias": [{"tipo": "Youtube", "id": "9XgDc3ANufY", "delay": 0}]}
+{
+    "cancion": "porch-swing-in-tupelo",
+    "banda": "elton-john",
+    "escala": "Eb",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "C",
+                    "C#dim7",
+                    "Dm",
+                    "C7/E",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F/A",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "A7/C#",
+                    "Bb/D",
+                    "Eb",
+                    "F",
+                    "C",
+                    "C#dim7",
+                    "Dm",
+                    "C7/E",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F/A",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "A7/C#",
+                    "Bb/D",
+                    "Eb",
+                    "F",
+                    "F",
+                    "Bb",
+                    "F",
+                    "G",
+                    "G7",
+                    "C7",
+                    "C#dim7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "C",
+                    "C#dim7",
+                    "Dm",
+                    "C7/E",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F/A",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "A7/C#",
+                    "Bb/D",
+                    "Eb",
+                    "F",
+                    "F",
+                    "Bb",
+                    "F",
+                    "G",
+                    "G7",
+                    "C7",
+                    "C#dim7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "C",
+                    "C#dim7",
+                    "Dm",
+                    "C7/E",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F/A",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "F/E",
+                    "Dm7",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "A7/C#",
+                    "Bb/D",
+                    "Eb",
+                    "F",
+                    "F",
+                    "Bb",
+                    "F",
+                    "G",
+                    "G7",
+                    "C7",
+                    "C#dim7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "Bb",
+                    "F",
+                    "G",
+                    "G7",
+                    "C7",
+                    "C#dim7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "A7",
+                    "Dm",
+                    "F/C",
+                    "Bb",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "[Ver",
+            "se 1",
+            "]",
+            "",
+            "/nThere's a "
+        ],
+        [
+            "porch swing",
+            " in Tup",
+            "elo/nIn the "
+        ],
+        [
+            "shade of the sou",
+            "th/nWhere the "
+        ],
+        [
+            "sweet honey drips off that o",
+            "ld hush-your-mo",
+            "uth",
+            "/nIt's a "
+        ],
+        [
+            "slow r",
+            "oad on do",
+            "wn",
+            "/nThat "
+        ],
+        [
+            "old Natchez t",
+            "race/nThrough "
+        ],
+        [
+            "Alabama c",
+            "otton fiel",
+            "ds to a sta",
+            "te of grace",
+            "",
+            "/n"
+        ],
+        [
+            "It's a c",
+            "risp go",
+            "lden aut",
+            "umn/nOn the "
+        ],
+        [
+            "tennessee l",
+            "ine/nRolling "
+        ],
+        [
+            "down the Missis",
+            "sippi like you headed ba",
+            "ck in tim",
+            "e/n"
+        ],
+        [
+            "Town's c",
+            "losed on Su",
+            "nday",
+            "/nEvery"
+        ],
+        [
+            "body's in c",
+            "hurch/nIt's empty as the "
+        ],
+        [
+            "moon ",
+            "this pla",
+            "ce her",
+            "e on eart",
+            "h/n"
+        ],
+        [
+            "And this place don't c",
+            "hange/nSome places move "
+        ],
+        [
+            "slow/nI'm just rocking "
+        ],
+        [
+            "myself on this po",
+            "rch swing in Tupelo",
+            "/nI got "
+        ],
+        [
+            "nothing to do ex",
+            "cept ha",
+            "ng in the bre",
+            "eze/nGhosts of the "
+        ],
+        [
+            "old south a",
+            "ll around me",
+            "/n"
+        ],
+        [
+            "Yeah swing hi",
+            "gh, yeah swing lo",
+            "w/nHere on this "
+        ],
+        [
+            "porch swing in Tu",
+            "pelo",
+            "",
+            "",
+            "/nHis "
+        ],
+        [
+            "mama must h",
+            "ave lov",
+            "ed him/nThat "
+        ],
+        [
+            "truck driving b",
+            "oy/nWith the g"
+        ],
+        [
+            "rease monkey look and the r",
+            "ock and roll voice",
+            "",
+            "/nWell i was "
+        ],
+        [
+            "just t",
+            "hinking abou",
+            "t him",
+            "/nBecause I "
+        ],
+        [
+            "guess he sat here",
+            "/nSinging al"
+        ],
+        [
+            "l pr",
+            "aise to Go",
+            "d throu",
+            "gh poverty's tear",
+            "s/n"
+        ],
+        [
+            "And this place don't c",
+            "hange/nSome places move "
+        ],
+        [
+            "slow/nI'm just rocking "
+        ],
+        [
+            "myself on this po",
+            "rch swing in Tupelo",
+            "/nI got "
+        ],
+        [
+            "nothing to do ex",
+            "cept ha",
+            "ng in the bre",
+            "eze/nGhosts of the "
+        ],
+        [
+            "old south a",
+            "ll around me",
+            "/n"
+        ],
+        [
+            "Yeah swing hi",
+            "gh, yeah swing lo",
+            "w/nHere on this "
+        ],
+        [
+            "porch swing in Tu",
+            "pelo",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[Cho",
+            "rus]",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "And this place don't c",
+            "hange/nSome places move "
+        ],
+        [
+            "slow/nI'm just rocking "
+        ],
+        [
+            "myself on this po",
+            "rch swing in Tupelo",
+            "/nI got "
+        ],
+        [
+            "nothing to do ex",
+            "cept ha",
+            "ng in the bre",
+            "eze/nGhosts of the "
+        ],
+        [
+            "old south a",
+            "ll around me",
+            "/n"
+        ],
+        [
+            "Yeah swing hi",
+            "gh, yeah swing lo",
+            "w/nHere on this "
+        ],
+        [
+            "porch swing in Tu",
+            "pelo",
+            "/n"
+        ],
+        [
+            "And this place don't c",
+            "hange/nSome places move "
+        ],
+        [
+            "slow/nI'm just rocking "
+        ],
+        [
+            "myself on this po",
+            "rch swing in Tupelo",
+            "/nI got "
+        ],
+        [
+            "nothing to do ex",
+            "cept ha",
+            "ng in the bre",
+            "eze/nGhosts of the "
+        ],
+        [
+            "old south a",
+            "ll around me",
+            "/n"
+        ],
+        [
+            "Yeah swing hi",
+            "gh, yeah swing lo",
+            "w/nHere on this "
+        ],
+        [
+            "porch swing in Tu",
+            "pelo",
+            "/n"
+        ],
+        [
+            "Here on this p",
+            "orch swing in Tu",
+            "pelo",
+            "/n"
+        ],
+        [
+            "Here on this p",
+            "orch swing in Tu",
+            "pelo",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "9XgDc3ANufY",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

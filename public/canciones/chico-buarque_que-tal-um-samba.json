@@ -1,1 +1,356 @@
-{"cancion": "Que-Tal-Um-Samba", "banda": "chico-buarque", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "D", "E", "A", "D", "E", "D", "E", "F#m", "D", "E", "A", "D", "E", "A", "D", "D", "E", "E", "A", "D", "E", "F#", "E", "A", "D", "B", "E", "A", "D", "E", "C#", "D", "E", "A", "D", "E", "A", "D", "E", "D", "E", "A", "D", "E", "A", "D", "E", "F#m", "E", "A", "D", "F#", "B7", "E", "A", "D", "E", "C#", "D", "E", "D", "E", "D", "E", "C#m", "E", "D", "E", "C#m", "D", "E", "D", "E", "F#m", "A", "D", "B", "E", "C#", "D", "E", "D", "E", "D", "E", "A", "D", "E", "D", "E", "F#m", "D", "E", "D", "E", "A", "D", "E", "D", "E", "D", "E", "A", "D", "E", "D", "E", "A", "D", "E", "D", "E", "C#", "D", "E", "D", "E"]}], "orden_partes": [0]}, "letras": [[], ["Um samba/nQue tal u"], ["m samba?/n"], ["Puxar um sa", "mba, que tal?/n"], ["Para espantar o temp", "o feio", "/n"], ["Para remediar o estrago", "", "/nQue tal "], ["um trago?", "/n"], ["Um desafogo, um deva", "neio", "/n"], ["Um samba pra alegra", "r o dia, pra zer", "ar o jogo/nC"], ["ora\u00e7\u00e3o peg", "ando fogo e cabe", "\u00e7a fria/n"], ["Um samba com categoria, com calma/nCair no mar, lavar a "], ["alma", "/n"], ["Tomar um banho de sal gros", "so, que", " tal?/n"], ["Sair do fundo do po", "o", "", "/nAndar de"], [" boa", "/n"], ["Ver um batuque l\u00e1 no c", "ais do Valongo/n"], ["Dan\u00e7ar o jongo l\u00e1 na P", "edra ", "do Sal/n"], ["Entrar na roda da Gamb", "oa", "/n"], ["Fazer um gol de bic", "icleta, dar de gole", "ada/n"], ["Deitar na cama da am", "ada e despert", "ar poeta", "/nAchar a rima que com"], ["pleta o estribilho/nFazer um f"], ["ilho, ", "que tal?/n"], ["Pra ver crescer, criar", " um filho", "/n"], ["Num bom lugar, numa cid", "ade le", "gal/nUm filho com a pele es"], ["cura", "/nCom for"], ["mosura", "/nBem brasi"], ["leiro, que tal?", "/nN\u00e3o com"], [" dinheiro", "", "/n"], ["Mas a cultura/n"], ["Que tal uma beleza pu", "ra no fim da bor", "rasca?/nJ\u00e1 depois de criar"], [" casca e perder a te", "rnura/nDepois de muita bola "], ["fora da meta/nDe novo com a coluna e"], ["reta, q", "ue tal?/n"], ["Juntar os cacos, ir \u00e0 lu", "ta/n"], ["Manter o rumo e a cad", "\u00eancia/n"], ["Desconjurar a ignor", "ncia, q", "ue tal?/n"], ["Desmantelar a for\u00e7a br", "uta/n"], ["Ent\u00e3o, que tal puxar um s", "amba?", "", "/nPuxar um s"], ["amba legal", "/nPuxar um samba "], ["porret", "a/n"], ["Depois de tanta mutreta", "/n"], ["Depois de tanta casc", "ata/n"], ["Depois de tanta de", "rrota", "/n"], ["Depois de tanta dem\u00ean", "cia/n"], ["E uma dor filha da puta", ", que ", "tal?", "/nPuxar um s"], ["amba", "/nQ"], ["ue tal um sam", "ba?", "/n"], ["Um samba", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "1yW77WeLYYc", "delay": 0}]}
+{
+    "cancion": "Que-Tal-Um-Samba",
+    "banda": "chico-buarque",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "F#m",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "F#",
+                    "E",
+                    "A",
+                    "D",
+                    "B",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "C#",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "F#m",
+                    "E",
+                    "A",
+                    "D",
+                    "F#",
+                    "B7",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "C#",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "C#m",
+                    "E",
+                    "D",
+                    "E",
+                    "C#m",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "F#m",
+                    "A",
+                    "D",
+                    "B",
+                    "E",
+                    "C#",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "F#m",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "C#",
+                    "D",
+                    "E",
+                    "D",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Um samba/nQue tal u"
+        ],
+        [
+            "m samba?/n"
+        ],
+        [
+            "Puxar um sa",
+            "mba, que tal?/n"
+        ],
+        [
+            "Para espantar o temp",
+            "o feio",
+            "/n"
+        ],
+        [
+            "Para remediar o estrago",
+            "",
+            "/nQue tal "
+        ],
+        [
+            "um trago?",
+            "/n"
+        ],
+        [
+            "Um desafogo, um deva",
+            "neio",
+            "/n"
+        ],
+        [
+            "Um samba pra alegra",
+            "r o dia, pra zer",
+            "ar o jogo/nC"
+        ],
+        [
+            "oração peg",
+            "ando fogo e cabe",
+            "ça fria/n"
+        ],
+        [
+            "Um samba com categoria, com calma/nCair no mar, lavar a "
+        ],
+        [
+            "alma",
+            "/n"
+        ],
+        [
+            "Tomar um banho de sal gros",
+            "so, que",
+            " tal?/n"
+        ],
+        [
+            "Sair do fundo do po",
+            "o",
+            "",
+            "/nAndar de"
+        ],
+        [
+            " boa",
+            "/n"
+        ],
+        [
+            "Ver um batuque lá no c",
+            "ais do Valongo/n"
+        ],
+        [
+            "Dançar o jongo lá na P",
+            "edra ",
+            "do Sal/n"
+        ],
+        [
+            "Entrar na roda da Gamb",
+            "oa",
+            "/n"
+        ],
+        [
+            "Fazer um gol de bic",
+            "icleta, dar de gole",
+            "ada/n"
+        ],
+        [
+            "Deitar na cama da am",
+            "ada e despert",
+            "ar poeta",
+            "/nAchar a rima que com"
+        ],
+        [
+            "pleta o estribilho/nFazer um f"
+        ],
+        [
+            "ilho, ",
+            "que tal?/n"
+        ],
+        [
+            "Pra ver crescer, criar",
+            " um filho",
+            "/n"
+        ],
+        [
+            "Num bom lugar, numa cid",
+            "ade le",
+            "gal/nUm filho com a pele es"
+        ],
+        [
+            "cura",
+            "/nCom for"
+        ],
+        [
+            "mosura",
+            "/nBem brasi"
+        ],
+        [
+            "leiro, que tal?",
+            "/nNão com"
+        ],
+        [
+            " dinheiro",
+            "",
+            "/n"
+        ],
+        [
+            "Mas a cultura/n"
+        ],
+        [
+            "Que tal uma beleza pu",
+            "ra no fim da bor",
+            "rasca?/nJá depois de criar"
+        ],
+        [
+            " casca e perder a te",
+            "rnura/nDepois de muita bola "
+        ],
+        [
+            "fora da meta/nDe novo com a coluna e"
+        ],
+        [
+            "reta, q",
+            "ue tal?/n"
+        ],
+        [
+            "Juntar os cacos, ir à lu",
+            "ta/n"
+        ],
+        [
+            "Manter o rumo e a cad",
+            "ência/n"
+        ],
+        [
+            "Desconjurar a ignor",
+            "ncia, q",
+            "ue tal?/n"
+        ],
+        [
+            "Desmantelar a força br",
+            "uta/n"
+        ],
+        [
+            "Então, que tal puxar um s",
+            "amba?",
+            "",
+            "/nPuxar um s"
+        ],
+        [
+            "amba legal",
+            "/nPuxar um samba "
+        ],
+        [
+            "porret",
+            "a/n"
+        ],
+        [
+            "Depois de tanta mutreta",
+            "/n"
+        ],
+        [
+            "Depois de tanta casc",
+            "ata/n"
+        ],
+        [
+            "Depois de tanta de",
+            "rrota",
+            "/n"
+        ],
+        [
+            "Depois de tanta demên",
+            "cia/n"
+        ],
+        [
+            "E uma dor filha da puta",
+            ", que ",
+            "tal?",
+            "/nPuxar um s"
+        ],
+        [
+            "amba",
+            "/nQ"
+        ],
+        [
+            "ue tal um sam",
+            "ba?",
+            "/n"
+        ],
+        [
+            "Um samba",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "1yW77WeLYYc",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

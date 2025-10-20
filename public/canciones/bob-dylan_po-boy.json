@@ -1,1 +1,231 @@
-{"cancion": "Po-Boy", "banda": "bob-dylan", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Bm7(b5)", "E7", "Am", "D9"]}, {"nombre": "parte2", "acordes": ["Em"]}, {"nombre": "parte3", "acordes": ["B7"]}, {"nombre": "parte4", "acordes": ["E7", "Am"]}, {"nombre": "parte5", "acordes": ["D9", "C"]}], "orden_partes": [0, 0, 0, 1, 2, 1, 2, 1, 2, 1, 3, 3, 3, 4, 2, 1, 2, 1, 1, 2, 1, 3, 3, 1, 2, 1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 2, 1, 3, 3, 3, 4, 1, 2, 1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 2, 1]}, "letras": [[], ["Man came to the door I say, \"For wh", "om are you loo", "king?\"/nHe says, \"Yo"], ["ur wife\", I say, \"She's bus", "y in the kitchen cookin'\"/nI say,"], [" \"How much you want for that?\", I ", "go into the st", "ore/nThe m"], ["an says, \"Three dollars\", \"All right\", I say, \"Will yo", "u take four?\"/nW"], ["orkin' like on the mainline, w", "orkin' like the d", "evil/nThe g"], ["ame is the same it's just up ", "on a different level/n"], ["Poor boy", " in a red ho", "t town", "/n"], ["Out beyond t", "he twinklin' st", "ars/n"], ["Ridin' first cla", "ss trains - making", " the rounds", "/n"], ["Tryin' to keep from fal", "lin' betwee", "n the cars", "/nOthello "], ["told Desdemo", "na, \"I'm cold, ", "cover me with a blan", "ket/n"], ["By the way, wha", "t happened to that poison win", "e?\"/n"], ["She says, \"I", " gave it to you, y", "ou drank it.\"", "/n"], ["Time and love h", "as branded me with", " its claws", "/n"], ["Had to go to Fl", "orida, dodgin' them Geor", "gia laws/n"], ["My mother wa", "s a daughter of ", "a wealthy farme", "r/n"], ["My father was a tra", "veling salesman, I nev", "er met him/n"], ["When my mother d", "ied, my uncle ", "took me in - he ran a funeral parl", "or/n"], ["He did a lot of nic", "e things for me and I won", "'t forget him", "/n"], ["All I know is th", "at I'm thril", "led by your kiss", "/n"], ["I don't know any", " more than thi", "s/nKnockin' on the door, I say, \"Who is it and where are you from?\""], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "Q1Nx7ojiZv0", "delay": 0}]}
+{
+    "cancion": "Po-Boy",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Bm7(b5)",
+                    "E7",
+                    "Am",
+                    "D9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E7",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D9",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            3,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            3,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Man came to the door I say, \"For wh",
+            "om are you loo",
+            "king?\"/nHe says, \"Yo"
+        ],
+        [
+            "ur wife\", I say, \"She's bus",
+            "y in the kitchen cookin'\"/nI say,"
+        ],
+        [
+            " \"How much you want for that?\", I ",
+            "go into the st",
+            "ore/nThe m"
+        ],
+        [
+            "an says, \"Three dollars\", \"All right\", I say, \"Will yo",
+            "u take four?\"/nW"
+        ],
+        [
+            "orkin' like on the mainline, w",
+            "orkin' like the d",
+            "evil/nThe g"
+        ],
+        [
+            "ame is the same it's just up ",
+            "on a different level/n"
+        ],
+        [
+            "Poor boy",
+            " in a red ho",
+            "t town",
+            "/n"
+        ],
+        [
+            "Out beyond t",
+            "he twinklin' st",
+            "ars/n"
+        ],
+        [
+            "Ridin' first cla",
+            "ss trains - making",
+            " the rounds",
+            "/n"
+        ],
+        [
+            "Tryin' to keep from fal",
+            "lin' betwee",
+            "n the cars",
+            "/nOthello "
+        ],
+        [
+            "told Desdemo",
+            "na, \"I'm cold, ",
+            "cover me with a blan",
+            "ket/n"
+        ],
+        [
+            "By the way, wha",
+            "t happened to that poison win",
+            "e?\"/n"
+        ],
+        [
+            "She says, \"I",
+            " gave it to you, y",
+            "ou drank it.\"",
+            "/n"
+        ],
+        [
+            "Time and love h",
+            "as branded me with",
+            " its claws",
+            "/n"
+        ],
+        [
+            "Had to go to Fl",
+            "orida, dodgin' them Geor",
+            "gia laws/n"
+        ],
+        [
+            "My mother wa",
+            "s a daughter of ",
+            "a wealthy farme",
+            "r/n"
+        ],
+        [
+            "My father was a tra",
+            "veling salesman, I nev",
+            "er met him/n"
+        ],
+        [
+            "When my mother d",
+            "ied, my uncle ",
+            "took me in - he ran a funeral parl",
+            "or/n"
+        ],
+        [
+            "He did a lot of nic",
+            "e things for me and I won",
+            "'t forget him",
+            "/n"
+        ],
+        [
+            "All I know is th",
+            "at I'm thril",
+            "led by your kiss",
+            "/n"
+        ],
+        [
+            "I don't know any",
+            " more than thi",
+            "s/nKnockin' on the door, I say, \"Who is it and where are you from?\""
+        ],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Q1Nx7ojiZv0",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

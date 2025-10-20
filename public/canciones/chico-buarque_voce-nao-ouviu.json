@@ -1,1 +1,241 @@
-{"cancion": "voce-nao-ouviu", "banda": "chico-buarque", "escala": "C#m7(b5)", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C#m7(b5)", "F#7", "B", "Bm7(b5)", "E7", "Am7", "B7", "Em", "F#7", "B7", "D7(9)", "C#m7(b5)", "F#7", "B", "Bm7(b5)", "E7", "Am7", "B7", "Em", "Em/D", "C#m7(b5)", "F#7", "D7(9)", "C", "G/B", "Am7", "D7(9)", "G6", "G7M", "Am7", "B7", "Em", "Fm#7/(b5)", "B7", "Em", "Em/D", "F#7/C#", "F#7", "B7", "E7", "Am7", "E7", "Am7", "Fm#7/(b5)", "B7", "Em", "Em/D", "F#7/C#", "F#7", "B7", "D7(9)", "G7M", "Am7", "B7", "Em", "Fm#7/(b5)", "B7", "Em", "Em/D", "F#7/C#", "F#7", "B7", "E7", "Am7", "E7", "Am7", "Fm#7/(b5)", "B7", "Em", "Em/D", "F#7/C#", "F#7", "B7", "D7(9)", "C", "G/B", "Am7", "D7(9)", "G6", "C", "G/B", "Am7", "D7(9)", "G6"]}], "orden_partes": [0]}, "letras": [[], ["Voc\u00ea      ", "n\u00e3o ou", "viu", "/nO "], ["samba que eu lhe tr", "ouxe/nAi, "], ["eu lhe trouxe r", "osas", "/nAi, "], ["eu lhe trou", "xe um doc", "e/nAs r"], ["osas v", "\u00e3o murch", "ando/nE o que era "], ["doce acab", "ou-se/nVoc\u00ea me desc"], ["onserta /nPensa que est\u00e1"], [" certa, por\u00e9m", " n\u00e3o se i", "luda/nNo fim do"], [" m\u00eas, quando o d", "inheiro ap", "erta /nVoc\u00ea"], [" corre es", "perta e vem p", "edir aju", "da /nEu lhe "], ["procuro, mas voc\u00ea se esconde /nN\u00e3o me diz"], [" aonde, nem quer ", "ver seu f", "ilho /nNo fim do"], [" m\u00eas \u00e9 que v", "oc\u00ea re", "sponde /nE no "], ["primeiro b", "onde vem pedi", "r aux\u00edl", "io", "/nVoc\u00ea diz que minha rosa "], ["\u00e9 fr\u00e1gil /nQue o meu samba \u00e9"], [" pl\u00e1gio e \u00e9 s", "\u00f3 lugar ", "comum/nNo fim do "], ["m\u00eas sei que v", "oc\u00ea vem ", "\u00e1gil/nPassa um "], ["curto est", "\u00e1gio e eu fico s", "em nenh", "um/nA sua "], ["dan\u00e7a vai durar enquanto/nVoc\u00ea tem e"], ["ncanto e n\u00e3o tem", " soli", "d\u00e3o/nNo fim da "], ["festa h\u00e1 de escut", "ar meu c", "anto/nE vir cor"], ["rendo em p", "ranto me pedi", "r perd\u00e3", "o (ou n", "\u00e3o?) /nAs r"], ["osas v", "\u00e3o murch", "ando/nE o que era "], ["doce acab", "ou-se/nAs r"], ["osas v", "\u00e3o murch", "ando/nE o que era "], ["doce acab", "ou-se"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "uTQBYZs_TIA", "delay": 0}]}
+{
+    "cancion": "voce-nao-ouviu",
+    "banda": "chico-buarque",
+    "escala": "C#m7(b5)",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#m7(b5)",
+                    "F#7",
+                    "B",
+                    "Bm7(b5)",
+                    "E7",
+                    "Am7",
+                    "B7",
+                    "Em",
+                    "F#7",
+                    "B7",
+                    "D7(9)",
+                    "C#m7(b5)",
+                    "F#7",
+                    "B",
+                    "Bm7(b5)",
+                    "E7",
+                    "Am7",
+                    "B7",
+                    "Em",
+                    "Em/D",
+                    "C#m7(b5)",
+                    "F#7",
+                    "D7(9)",
+                    "C",
+                    "G/B",
+                    "Am7",
+                    "D7(9)",
+                    "G6",
+                    "G7M",
+                    "Am7",
+                    "B7",
+                    "Em",
+                    "Fm#7/(b5)",
+                    "B7",
+                    "Em",
+                    "Em/D",
+                    "F#7/C#",
+                    "F#7",
+                    "B7",
+                    "E7",
+                    "Am7",
+                    "E7",
+                    "Am7",
+                    "Fm#7/(b5)",
+                    "B7",
+                    "Em",
+                    "Em/D",
+                    "F#7/C#",
+                    "F#7",
+                    "B7",
+                    "D7(9)",
+                    "G7M",
+                    "Am7",
+                    "B7",
+                    "Em",
+                    "Fm#7/(b5)",
+                    "B7",
+                    "Em",
+                    "Em/D",
+                    "F#7/C#",
+                    "F#7",
+                    "B7",
+                    "E7",
+                    "Am7",
+                    "E7",
+                    "Am7",
+                    "Fm#7/(b5)",
+                    "B7",
+                    "Em",
+                    "Em/D",
+                    "F#7/C#",
+                    "F#7",
+                    "B7",
+                    "D7(9)",
+                    "C",
+                    "G/B",
+                    "Am7",
+                    "D7(9)",
+                    "G6",
+                    "C",
+                    "G/B",
+                    "Am7",
+                    "D7(9)",
+                    "G6"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Você      ",
+            "não ou",
+            "viu",
+            "/nO "
+        ],
+        [
+            "samba que eu lhe tr",
+            "ouxe/nAi, "
+        ],
+        [
+            "eu lhe trouxe r",
+            "osas",
+            "/nAi, "
+        ],
+        [
+            "eu lhe trou",
+            "xe um doc",
+            "e/nAs r"
+        ],
+        [
+            "osas v",
+            "ão murch",
+            "ando/nE o que era "
+        ],
+        [
+            "doce acab",
+            "ou-se/nVocê me desc"
+        ],
+        [
+            "onserta /nPensa que está"
+        ],
+        [
+            " certa, porém",
+            " não se i",
+            "luda/nNo fim do"
+        ],
+        [
+            " mês, quando o d",
+            "inheiro ap",
+            "erta /nVocê"
+        ],
+        [
+            " corre es",
+            "perta e vem p",
+            "edir aju",
+            "da /nEu lhe "
+        ],
+        [
+            "procuro, mas você se esconde /nNão me diz"
+        ],
+        [
+            " aonde, nem quer ",
+            "ver seu f",
+            "ilho /nNo fim do"
+        ],
+        [
+            " mês é que v",
+            "ocê re",
+            "sponde /nE no "
+        ],
+        [
+            "primeiro b",
+            "onde vem pedi",
+            "r auxíl",
+            "io",
+            "/nVocê diz que minha rosa "
+        ],
+        [
+            "é frágil /nQue o meu samba é"
+        ],
+        [
+            " plágio e é s",
+            "ó lugar ",
+            "comum/nNo fim do "
+        ],
+        [
+            "mês sei que v",
+            "ocê vem ",
+            "ágil/nPassa um "
+        ],
+        [
+            "curto est",
+            "ágio e eu fico s",
+            "em nenh",
+            "um/nA sua "
+        ],
+        [
+            "dança vai durar enquanto/nVocê tem e"
+        ],
+        [
+            "ncanto e não tem",
+            " soli",
+            "dão/nNo fim da "
+        ],
+        [
+            "festa há de escut",
+            "ar meu c",
+            "anto/nE vir cor"
+        ],
+        [
+            "rendo em p",
+            "ranto me pedi",
+            "r perdã",
+            "o (ou n",
+            "ão?) /nAs r"
+        ],
+        [
+            "osas v",
+            "ão murch",
+            "ando/nE o que era "
+        ],
+        [
+            "doce acab",
+            "ou-se/nAs r"
+        ],
+        [
+            "osas v",
+            "ão murch",
+            "ando/nE o que era "
+        ],
+        [
+            "doce acab",
+            "ou-se"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "uTQBYZs_TIA",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

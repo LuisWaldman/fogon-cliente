@@ -1,1 +1,52 @@
-{"cancion": "Roll-On-John", "banda": "bob-dylan", "escala": "G#", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G#", "C#", "G#"]}, {"nombre": "parte2", "acordes": ["C#", "G#", "C#", "D#", "C#", "G#"]}], "orden_partes": [0, 1]}, "letras": [[], ["ctor, ", "doctor, .../nShine your light ..."], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "pL7pKbtYmkQ", "delay": 0}]}
+{
+    "cancion": "Roll-On-John",
+    "banda": "bob-dylan",
+    "escala": "G#",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G#",
+                    "C#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#",
+                    "G#",
+                    "C#",
+                    "D#",
+                    "C#",
+                    "G#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "ctor, ",
+            "doctor, .../nShine your light ..."
+        ],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "pL7pKbtYmkQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

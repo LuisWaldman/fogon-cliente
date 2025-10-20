@@ -1,1 +1,427 @@
-{"cancion": "ride-on", "banda": "ac-dc", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "F/C", "C", "F/C", "F/C", "Bb", "F/C", "Bb", "G5", "C5", "Bb", "F", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "F/C", "Bb", "F/C", "Bb", "G5", "C5", "Bb", "F", "C", "F/C", "C", "F/C", "F", "F#", "C", "G", "F", "C", "Bb", "F", "F", "C", "C", "G", "G", "C", "F/C", "C", "F/C", "F/C", "Bb", "F/C", "Bb", "G5", "C5", "Bb", "F", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "F/C", "Bb", "F/C", "Bb", "G5", "C5", "Bb", "F", "C", "F/C", "C", "F/C", "F", "F#", "C", "G", "F", "C", "Bb", "F", "F", "C", "C", "G", "G", "F5", "F5", "F5", "F5", "F5", "F5", "F5", "F5", "F5", "F5", "F5", "F5", "F5", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "F/C", "Bb", "F/C", "Bb", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "F/C", "Bb", "F/C", "Bb", "C", "F/C", "C", "F/C", "F", "C", "C", "G", "F", "C", "Bb", "F", "F", "C", "C", "G", "G", "F", "C", "C", "G", "F", "C", "Bb", "F", "F", "C", "C", "G", "F", "C"]}], "orden_partes": [0]}, "letras": [["other lonely e", "vening", "", "/nIn a"], ["nother lonely t", "own", "", "/nBut I "], ["ain't too young to w", "orry/nAnd I "], ["ain't too old to cr", "y/nWhen a "], ["woman gets me d", "own", "", "/nGot an"], ["other empty b", "ottle", "", "/nAnd a"], ["nother empty b", "ed", "", "/nAin't "], ["too young to admi", "t it/nAnd I'm "], ["not too old to lie", "/nI'm just an"], ["other empty he", "ad", "", "/nThat's why I'm "], ["lonely/nI'm so "], ["lonely/n"], ["Ride o", "n/n("], ["Ride o", "n) Standing on the edge of the road/n("], ["Ride o", "n) Thumb in the air/n("], ["Ride o", "n) One of these days I'm g", "onna ch", "ange my evil ways, huh", "/n"], ["Broke another p", "romise", "", "/nAnd I "], ["broke another he", "art", "", "/nBut I "], ["ain't too young to r", "ealize/nThat I "], ["ain't too old to t", "ry/nTry to "], ["get back to the st", "art", "", "/nAnd it's a"], ["nother red-light ", "nightmare", "", "/nWoah, an"], ["other red-light s", "treet", "", "/nAnd I "], ["ain't too old to h", "urry/nCause I "], ["ain't too old to d", "ie/nBut "], ["I sure am ha", "rd to beat", "", "/n  But I'm "], ["lonely/n Lord I'm "], ["lonely/n("], ["Ride o", "n) Got myself a one-way ticket/n("], ["Ride o", "n)/n("], ["Ride o", "n) Goin' the wrong way/n("], ["Ride o", "n) Gonna change my evil ways/n("], ["Ride o", "n) One of these days", "/n"], ["    ", "    ", "    ", "    ", " One", " of ", "thes", "e da", "ys", "", "", "", "/n"], [], [], [], [], [], [], [], ["F  F#", "  G    ", "     ", "   /n("], ["Ride o", "n)/n("], ["Ride o", "n)/nI'm gonna "], ["ride o", "n/n("], ["Ride o", "n) Mmm, lookin' for a truck/n("], ["Ride o", "n) Mmm-mmm/n("], ["Ride o", "n) Keep on ri", "ding/n("], ["Ride o", "n)/n("], ["Ride o", "n) Gonna have myself a good time/n("], ["Ride o", "n) Ooh, yeah/n("], ["Ride o", "n) Ride, ride, ride/n("], ["Ride o", "n) One of these days/n("], ["Ride o", "n) One of these days/n"], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "EEpwhkE5zZg", "delay": 0}]}
+{
+    "cancion": "ride-on",
+    "banda": "ac-dc",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F/C",
+                    "Bb",
+                    "F/C",
+                    "Bb",
+                    "G5",
+                    "C5",
+                    "Bb",
+                    "F",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F/C",
+                    "Bb",
+                    "F/C",
+                    "Bb",
+                    "G5",
+                    "C5",
+                    "Bb",
+                    "F",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F",
+                    "F#",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F/C",
+                    "Bb",
+                    "F/C",
+                    "Bb",
+                    "G5",
+                    "C5",
+                    "Bb",
+                    "F",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F/C",
+                    "Bb",
+                    "F/C",
+                    "Bb",
+                    "G5",
+                    "C5",
+                    "Bb",
+                    "F",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F",
+                    "F#",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F/C",
+                    "Bb",
+                    "F/C",
+                    "Bb",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F/C",
+                    "Bb",
+                    "F/C",
+                    "Bb",
+                    "C",
+                    "F/C",
+                    "C",
+                    "F/C",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "F",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "other lonely e",
+            "vening",
+            "",
+            "/nIn a"
+        ],
+        [
+            "nother lonely t",
+            "own",
+            "",
+            "/nBut I "
+        ],
+        [
+            "ain't too young to w",
+            "orry/nAnd I "
+        ],
+        [
+            "ain't too old to cr",
+            "y/nWhen a "
+        ],
+        [
+            "woman gets me d",
+            "own",
+            "",
+            "/nGot an"
+        ],
+        [
+            "other empty b",
+            "ottle",
+            "",
+            "/nAnd a"
+        ],
+        [
+            "nother empty b",
+            "ed",
+            "",
+            "/nAin't "
+        ],
+        [
+            "too young to admi",
+            "t it/nAnd I'm "
+        ],
+        [
+            "not too old to lie",
+            "/nI'm just an"
+        ],
+        [
+            "other empty he",
+            "ad",
+            "",
+            "/nThat's why I'm "
+        ],
+        [
+            "lonely/nI'm so "
+        ],
+        [
+            "lonely/n"
+        ],
+        [
+            "Ride o",
+            "n/n("
+        ],
+        [
+            "Ride o",
+            "n) Standing on the edge of the road/n("
+        ],
+        [
+            "Ride o",
+            "n) Thumb in the air/n("
+        ],
+        [
+            "Ride o",
+            "n) One of these days I'm g",
+            "onna ch",
+            "ange my evil ways, huh",
+            "/n"
+        ],
+        [
+            "Broke another p",
+            "romise",
+            "",
+            "/nAnd I "
+        ],
+        [
+            "broke another he",
+            "art",
+            "",
+            "/nBut I "
+        ],
+        [
+            "ain't too young to r",
+            "ealize/nThat I "
+        ],
+        [
+            "ain't too old to t",
+            "ry/nTry to "
+        ],
+        [
+            "get back to the st",
+            "art",
+            "",
+            "/nAnd it's a"
+        ],
+        [
+            "nother red-light ",
+            "nightmare",
+            "",
+            "/nWoah, an"
+        ],
+        [
+            "other red-light s",
+            "treet",
+            "",
+            "/nAnd I "
+        ],
+        [
+            "ain't too old to h",
+            "urry/nCause I "
+        ],
+        [
+            "ain't too old to d",
+            "ie/nBut "
+        ],
+        [
+            "I sure am ha",
+            "rd to beat",
+            "",
+            "/n  But I'm "
+        ],
+        [
+            "lonely/n Lord I'm "
+        ],
+        [
+            "lonely/n("
+        ],
+        [
+            "Ride o",
+            "n) Got myself a one-way ticket/n("
+        ],
+        [
+            "Ride o",
+            "n)/n("
+        ],
+        [
+            "Ride o",
+            "n) Goin' the wrong way/n("
+        ],
+        [
+            "Ride o",
+            "n) Gonna change my evil ways/n("
+        ],
+        [
+            "Ride o",
+            "n) One of these days",
+            "/n"
+        ],
+        [
+            "    ",
+            "    ",
+            "    ",
+            "    ",
+            " One",
+            " of ",
+            "thes",
+            "e da",
+            "ys",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "F  F#",
+            "  G    ",
+            "     ",
+            "   /n("
+        ],
+        [
+            "Ride o",
+            "n)/n("
+        ],
+        [
+            "Ride o",
+            "n)/nI'm gonna "
+        ],
+        [
+            "ride o",
+            "n/n("
+        ],
+        [
+            "Ride o",
+            "n) Mmm, lookin' for a truck/n("
+        ],
+        [
+            "Ride o",
+            "n) Mmm-mmm/n("
+        ],
+        [
+            "Ride o",
+            "n) Keep on ri",
+            "ding/n("
+        ],
+        [
+            "Ride o",
+            "n)/n("
+        ],
+        [
+            "Ride o",
+            "n) Gonna have myself a good time/n("
+        ],
+        [
+            "Ride o",
+            "n) Ooh, yeah/n("
+        ],
+        [
+            "Ride o",
+            "n) Ride, ride, ride/n("
+        ],
+        [
+            "Ride o",
+            "n) One of these days/n("
+        ],
+        [
+            "Ride o",
+            "n) One of these days/n"
+        ],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "EEpwhkE5zZg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

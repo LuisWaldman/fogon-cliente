@@ -1,1 +1,407 @@
-{"cancion": "Stop-Where-You-Are", "banda": "elvis-presley", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "G", "C", "D", "D7", "C", "G", "D", "G", "C", "G", "D", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "G", "C", "D", "D7", "C", "G", "D", "G", "C", "G", "D", "G", "C", "D", "D7", "G", "C", "D", "D7", "C", "C7", "G", "D", "A", "D", "C", "D", "C", "D7", "C", "D", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "G", "C", "D", "D7", "C", "G", "D", "G", "C", "G", "D", "G", "C", "D", "D7", "G", "C", "D", "D7", "C", "C7", "G", "D", "A", "D", "C", "D", "C", "D7", "C", "D", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "C", "D", "D7", "G", "D", "G", "D", "G", "D", "G"]}], "orden_partes": [0]}, "letras": [["Ver", "se ", "1", "", "", "", "", "/n"], ["STOP ! .........w", "here you ar", "e", "/n"], ["Don't, m", "ove an in", "ch", "/n"], ["Don't come any c", "loser now ba", "by/n"], ["You'll be i", "n a pi", "nch", "/n"], ["Don't start w", "hat you can't finish/n"], ["I warn you w", "hat's in store/n"], ["If it's love you're l", "ooking to get/nYou're gonna "], ["get what you're looking f", "or", "", "", "", "", "", "", "/n"], ["STOP ! ........w", "here you ar", "e", "/n"], ["You'd b", "etter fr", "eeze", "/n"], ["Don't pull the f", "ire now ba", "by/n"], ["Don't b", "e a te", "ase", "/n"], ["Don't start w", "hat you can't finish/n"], ["I told you o", "nce before/n"], ["If it's love you're l", "ooking to get/nYou're gonna "], ["get what you're looking f", "or", "", "", "", "", "", "", "/n"], ["Don't you know, you're w", "alking on da", "ngerous ground/n"], ["Listen babe when I", " make love/nI "], ["just don't f", "ool a-ro", "und, no I don", "'t/nI "], ["just don't p", "lay a-ro", "und/n"], ["STOP ! ........w", "here you ar", "e", "/n"], ["Just t", "ake it sl", "ow", "/n"], ["Once I put my h", "ands on you ba", "by/n"], ["I won't l", "et you go", "", "/n"], ["Don't start w", "hat you can't finish/n"], ["One kiss and", " I want more/n"], ["If it's love you're l", "ooking to get/nYou're gonna "], ["get what you're looking f", "or", "", "", "", "", "", "", "/n"], ["Don't you know, you're w", "alking on da", "ngerous ground/n"], ["Listen babe when I", " make love/nI "], ["just don't f", "ool a-ro", "und, no I don", "'t/nI "], ["just don't p", "lay a-ro", "und/n"], ["STOP ! ........ ", "where you a", "re", "/n"], ["Don't m", "ove an in", "ch", "/n"], ["STOP ! ........w", "here you ar", "e", "/n"], ["You're gonna be i", "n a pi", "nch", "/n"], ["STOP ! ........ w", "here you ar", "e", "/n"], ["Ba Ba , B", "a Ba, Ba", " Ba Ba, Ba ", "Ba Ba , Ba B", "a,  Ba Ba", " Ba , Ba! ", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "00TOMn2WktQ", "delay": 0}]}
+{
+    "cancion": "Stop-Where-You-Are",
+    "banda": "elvis-presley",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "C",
+                    "C7",
+                    "G",
+                    "D",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "C",
+                    "D7",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "C",
+                    "C7",
+                    "G",
+                    "D",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "C",
+                    "D7",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "C",
+                    "D",
+                    "D7",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Ver",
+            "se ",
+            "1",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "STOP ! .........w",
+            "here you ar",
+            "e",
+            "/n"
+        ],
+        [
+            "Don't, m",
+            "ove an in",
+            "ch",
+            "/n"
+        ],
+        [
+            "Don't come any c",
+            "loser now ba",
+            "by/n"
+        ],
+        [
+            "You'll be i",
+            "n a pi",
+            "nch",
+            "/n"
+        ],
+        [
+            "Don't start w",
+            "hat you can't finish/n"
+        ],
+        [
+            "I warn you w",
+            "hat's in store/n"
+        ],
+        [
+            "If it's love you're l",
+            "ooking to get/nYou're gonna "
+        ],
+        [
+            "get what you're looking f",
+            "or",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "STOP ! ........w",
+            "here you ar",
+            "e",
+            "/n"
+        ],
+        [
+            "You'd b",
+            "etter fr",
+            "eeze",
+            "/n"
+        ],
+        [
+            "Don't pull the f",
+            "ire now ba",
+            "by/n"
+        ],
+        [
+            "Don't b",
+            "e a te",
+            "ase",
+            "/n"
+        ],
+        [
+            "Don't start w",
+            "hat you can't finish/n"
+        ],
+        [
+            "I told you o",
+            "nce before/n"
+        ],
+        [
+            "If it's love you're l",
+            "ooking to get/nYou're gonna "
+        ],
+        [
+            "get what you're looking f",
+            "or",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Don't you know, you're w",
+            "alking on da",
+            "ngerous ground/n"
+        ],
+        [
+            "Listen babe when I",
+            " make love/nI "
+        ],
+        [
+            "just don't f",
+            "ool a-ro",
+            "und, no I don",
+            "'t/nI "
+        ],
+        [
+            "just don't p",
+            "lay a-ro",
+            "und/n"
+        ],
+        [
+            "STOP ! ........w",
+            "here you ar",
+            "e",
+            "/n"
+        ],
+        [
+            "Just t",
+            "ake it sl",
+            "ow",
+            "/n"
+        ],
+        [
+            "Once I put my h",
+            "ands on you ba",
+            "by/n"
+        ],
+        [
+            "I won't l",
+            "et you go",
+            "",
+            "/n"
+        ],
+        [
+            "Don't start w",
+            "hat you can't finish/n"
+        ],
+        [
+            "One kiss and",
+            " I want more/n"
+        ],
+        [
+            "If it's love you're l",
+            "ooking to get/nYou're gonna "
+        ],
+        [
+            "get what you're looking f",
+            "or",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Don't you know, you're w",
+            "alking on da",
+            "ngerous ground/n"
+        ],
+        [
+            "Listen babe when I",
+            " make love/nI "
+        ],
+        [
+            "just don't f",
+            "ool a-ro",
+            "und, no I don",
+            "'t/nI "
+        ],
+        [
+            "just don't p",
+            "lay a-ro",
+            "und/n"
+        ],
+        [
+            "STOP ! ........ ",
+            "where you a",
+            "re",
+            "/n"
+        ],
+        [
+            "Don't m",
+            "ove an in",
+            "ch",
+            "/n"
+        ],
+        [
+            "STOP ! ........w",
+            "here you ar",
+            "e",
+            "/n"
+        ],
+        [
+            "You're gonna be i",
+            "n a pi",
+            "nch",
+            "/n"
+        ],
+        [
+            "STOP ! ........ w",
+            "here you ar",
+            "e",
+            "/n"
+        ],
+        [
+            "Ba Ba , B",
+            "a Ba, Ba",
+            " Ba Ba, Ba ",
+            "Ba Ba , Ba B",
+            "a,  Ba Ba",
+            " Ba , Ba! ",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "00TOMn2WktQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,321 @@
-{"cancion": "finish-line", "banda": "elton-john", "escala": "Gm7", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Gm7", "C", "F", "C/E", "Dm7", "Gm7", "C", "F", "C/E", "Dm7", "Gm7", "C", "F", "F7", "Bb", "C", "Am7", "Dm7", "Gm7", "C", "Dm", "Bb", "F/A", "C/G", "F", "C/E", "Dm7", "C", "Bb", "F/A", "C/G", "F", "Gm7", "C", "F", "C/E", "Dm7", "Gm7", "C", "F", "F7", "Bb", "C", "Am7", "Dm7", "C", "Bb", "F/A", "Gm7", "C", "Dm", "C", "Dm", "Bb", "F/A", "C/G", "F", "C/E", "Dm7", "C", "Bb", "F/A", "C/G", "F", "Gm7", "C", "F", "C/E", "Dm7", "Gm7", "C", "F", "F7", "Bb", "C", "Am7", "Dm7", "C", "Bb", "F/A", "Gm7", "C", "Dm", "C", "Dm", "Bb", "F/A", "C/G", "F", "C/E", "Dm7", "C", "Bb", "F/A", "C/G", "F", "Bb", "F/A", "C/G", "F", "C/E", "Dm7", "C", "Bb", "F/A", "C/G", "F", "Bb", "F/A", "C/G", "F", "C/E", "Dm7", "C", "Bb", "F/A", "C/G", "F"]}], "orden_partes": [0]}, "letras": [["[Vers", "e 1]", "", "", "/n"], ["You, oh yo", "u/nAre still a b"], ["eauty ", "to behol", "d/n"], ["Youve been my ", "muse/nEvery "], ["story that Ive", " told/nOh, t"], ["ake me back some ye", "ars/nTo when we were y"], ["oung without a fe", "ar/nAll al"], ["ong you have been the s", "ong that I wanna hea", "r/nIve bee"], ["n down the darkest", " alleys/nBeen to the "], ["bottom where the angels c", "ry", "", "/nThought "], ["it had a", "ll been, all for no", "thing/nUntil I "], ["saw you at the finish l", "ine/n"], ["Forgive m", "e, for the wa", "ys Ive let y", "ou dow", "n/n"], ["Wont you give ", "me, another ", "chance to make you pro", "ud/nOh, "], ["flash forward twenty ye", "ars/nForever keep me y"], ["oung and my conscience cle", "ar", "", "/n"], ["All alo", "ng, you have been the so", "ng that I wanna hear", ", ooh", " yea", "h, ah/nIve bee"], ["n down the darkest", " alleys/nBeen to the b"], ["ottom where the angels cr", "y (W", "here ", "the angels cry)/nThought "], ["it had a", "ll been, all for no", "thing/nUntil I "], ["saw you at the finish l", "ine/n"], [], [], [], ["(Yeah,", " yeah", ")", "", "/nYes, Ive bee"], ["n down the darkest", " alleys/nBeen to the "], ["bottom where the angels c", "ry (", "Angel", "s cry)/nThought "], ["it had a", "ll been, all for no", "thing/nUntil I "], ["saw you at the finish l", "ine (At the finish line)/nOh, Ive bee"], ["n down the darkest", " alleys/nBeen to the "], ["bottom watching life go b", "y (W", "atchi", "ng life go by)/nThought "], ["it had a", "ll been, all for no", "thing/nUntil I "], ["saw you at the finish l", "ine (Finish line)/n"], ["Ive been down the darkest", " alleys/nBeen to the "], ["bottom where the angels c", "ry", "", "/nThought "], ["it had a", "ll been, all for no", "thing/nUntil I s"], ["aw you at the finish li", "ne"]], "medias": [{"tipo": "Youtube", "id": "bDnwBeRSJag", "delay": 0}]}
+{
+    "cancion": "finish-line",
+    "banda": "elton-john",
+    "escala": "Gm7",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Gm7",
+                    "C",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "Gm7",
+                    "C",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "Gm7",
+                    "C",
+                    "F",
+                    "F7",
+                    "Bb",
+                    "C",
+                    "Am7",
+                    "Dm7",
+                    "Gm7",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "C",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "Gm7",
+                    "C",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "Gm7",
+                    "C",
+                    "F",
+                    "F7",
+                    "Bb",
+                    "C",
+                    "Am7",
+                    "Dm7",
+                    "C",
+                    "Bb",
+                    "F/A",
+                    "Gm7",
+                    "C",
+                    "Dm",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "C",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "Gm7",
+                    "C",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "Gm7",
+                    "C",
+                    "F",
+                    "F7",
+                    "Bb",
+                    "C",
+                    "Am7",
+                    "Dm7",
+                    "C",
+                    "Bb",
+                    "F/A",
+                    "Gm7",
+                    "C",
+                    "Dm",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "C",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "C",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F",
+                    "C/E",
+                    "Dm7",
+                    "C",
+                    "Bb",
+                    "F/A",
+                    "C/G",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "[Vers",
+            "e 1]",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "You, oh yo",
+            "u/nAre still a b"
+        ],
+        [
+            "eauty ",
+            "to behol",
+            "d/n"
+        ],
+        [
+            "Youve been my ",
+            "muse/nEvery "
+        ],
+        [
+            "story that Ive",
+            " told/nOh, t"
+        ],
+        [
+            "ake me back some ye",
+            "ars/nTo when we were y"
+        ],
+        [
+            "oung without a fe",
+            "ar/nAll al"
+        ],
+        [
+            "ong you have been the s",
+            "ong that I wanna hea",
+            "r/nIve bee"
+        ],
+        [
+            "n down the darkest",
+            " alleys/nBeen to the "
+        ],
+        [
+            "bottom where the angels c",
+            "ry",
+            "",
+            "/nThought "
+        ],
+        [
+            "it had a",
+            "ll been, all for no",
+            "thing/nUntil I "
+        ],
+        [
+            "saw you at the finish l",
+            "ine/n"
+        ],
+        [
+            "Forgive m",
+            "e, for the wa",
+            "ys Ive let y",
+            "ou dow",
+            "n/n"
+        ],
+        [
+            "Wont you give ",
+            "me, another ",
+            "chance to make you pro",
+            "ud/nOh, "
+        ],
+        [
+            "flash forward twenty ye",
+            "ars/nForever keep me y"
+        ],
+        [
+            "oung and my conscience cle",
+            "ar",
+            "",
+            "/n"
+        ],
+        [
+            "All alo",
+            "ng, you have been the so",
+            "ng that I wanna hear",
+            ", ooh",
+            " yea",
+            "h, ah/nIve bee"
+        ],
+        [
+            "n down the darkest",
+            " alleys/nBeen to the b"
+        ],
+        [
+            "ottom where the angels cr",
+            "y (W",
+            "here ",
+            "the angels cry)/nThought "
+        ],
+        [
+            "it had a",
+            "ll been, all for no",
+            "thing/nUntil I "
+        ],
+        [
+            "saw you at the finish l",
+            "ine/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "(Yeah,",
+            " yeah",
+            ")",
+            "",
+            "/nYes, Ive bee"
+        ],
+        [
+            "n down the darkest",
+            " alleys/nBeen to the "
+        ],
+        [
+            "bottom where the angels c",
+            "ry (",
+            "Angel",
+            "s cry)/nThought "
+        ],
+        [
+            "it had a",
+            "ll been, all for no",
+            "thing/nUntil I "
+        ],
+        [
+            "saw you at the finish l",
+            "ine (At the finish line)/nOh, Ive bee"
+        ],
+        [
+            "n down the darkest",
+            " alleys/nBeen to the "
+        ],
+        [
+            "bottom watching life go b",
+            "y (W",
+            "atchi",
+            "ng life go by)/nThought "
+        ],
+        [
+            "it had a",
+            "ll been, all for no",
+            "thing/nUntil I "
+        ],
+        [
+            "saw you at the finish l",
+            "ine (Finish line)/n"
+        ],
+        [
+            "Ive been down the darkest",
+            " alleys/nBeen to the "
+        ],
+        [
+            "bottom where the angels c",
+            "ry",
+            "",
+            "/nThought "
+        ],
+        [
+            "it had a",
+            "ll been, all for no",
+            "thing/nUntil I s"
+        ],
+        [
+            "aw you at the finish li",
+            "ne"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "bDnwBeRSJag",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

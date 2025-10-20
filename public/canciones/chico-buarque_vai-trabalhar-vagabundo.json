@@ -1,1 +1,268 @@
-{"cancion": "Vai-Trabalhar-Vagabundo", "banda": "chico-buarque", "escala": "D7(4/9)", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D7(4/9)", "G6", "E7(4/9)", "Am7", "F#7(4/9)", "Bm7", "D7(4/9)", "G6"]}, {"nombre": "parte2", "acordes": ["D7/F#", "Em7", "G7/D", "C6", "Eb/Db", "G/D"]}, {"nombre": "parte3", "acordes": ["Bb/Ab", "D7/A"]}, {"nombre": "parte4", "acordes": ["D7(9/#11)"]}], "orden_partes": [0, 0, 1, 2, 1, 2, 2, 2, 2, 0, 0, 1, 2, 1, 2, 2, 2, 2, 0, 0, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3]}, "letras": [[], [], ["Vai     trabalhar,", "  vagabundo  Va", "i     trabalhar,  ", " criatura/n"], ["Deus     permite a ", "   todo mundo  Um", "a     loucu-ra", "/n"], ["Passa   o domin-", "-go em fam\u00edlia  S", "egunda-fei--", "-ra beleza/n"], ["Embarca  com ", "   alegria  Na", "      corrente-za", "/n"], ["Prepara o teu ", "   documento  Ca", "rimba o teu   ", "cora\u00e7\u00e3o/n"], ["N\u00e3o   perde nem", "    um momento  P", "erde a raz", "o/n"], ["Pode  esquecer ", "   a mulata  Po", "de esquecer   ", "o bilhar/n"], ["Pode  apertar ", "   a gravata  Va", "i   te enforcar", "/n"], ["Vai   te entreg", "ar    V", "ai   te estraga", "r    Va", "i   trabalha", "r/n"], ["V\u00ea      se n\u00e3o do", "r--me no ponto  ", "Re\u00fane   as e", "---conomias/n"], ["Perde    os tr\u00eas con", "---tos no conto  D", "a      loteri--", "a/n"], ["Passa   o domin-", "-go no mangue  Se", "gunda-fei---", "ra vazia/n"], ["Ganha    no ban-", "--co de sangue  Pr", "a     mais um di--a", "/n"], ["Cuidado com o ", "   viaduto  Cu", "idado com   ", "o avi\u00e3o/n"], ["N\u00e3o   perde mais", "    um minuto  P", "erde a quest", "o/n"], ["Tenta pensar ", "   no futuro  No", "   escuro ten--t", "a pensar/n"], ["Vai   renovar ", "   teu seguro Va", "i   caducar", "/n"], ["Vai   te entreg", "ar    V", "ai   te estraga", "r    Va", "i   trabalha", "r/n"], ["Passa   o domin-", "-go sozinho  Se", "gunda-fei---", "ra a desgra\u00e7a/n"], ["Sem      pai nem m\u00e3e", ",   sem vizinho  E", "m      plena pra--", "\u00e7a/n"], ["Vai     terminar ", "  moribundo  Co", "m     um pouco de   ", " paci\u00eancia/n"], ["No       fim da fi-", "--la do fundo  Da", "      previd\u00ean-c", "ia/n"], ["Parte tranq\u00fci", "---lo, \u00f3 irm\u00e3o ", " Descansa na", "   paz de Deus/n"], ["Deixaste ca-", "--sa e pens\u00e3o  S", "\u00f3    para os t", "eus/n"], ["A     crian\u00e7a", "---da chorando  T", "ua  mulher  ", " vai suar/n"], ["Pra   botar ou-", "--tro malandro No", "    teu lugar", "/n"], ["Vai   te entreg", "ar    V", "ai   te estraga", "r    Va", "i   te enforcar", "/n"], ["Vai   caducar    Vai   trabalhar   Vai   trabalhar/nVai   trabalhar   Vagabundo"], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "Y6QYIrrlOSg", "delay": 0}]}
+{
+    "cancion": "Vai-Trabalhar-Vagabundo",
+    "banda": "chico-buarque",
+    "escala": "D7(4/9)",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D7(4/9)",
+                    "G6",
+                    "E7(4/9)",
+                    "Am7",
+                    "F#7(4/9)",
+                    "Bm7",
+                    "D7(4/9)",
+                    "G6"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D7/F#",
+                    "Em7",
+                    "G7/D",
+                    "C6",
+                    "Eb/Db",
+                    "G/D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bb/Ab",
+                    "D7/A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D7(9/#11)"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "Vai     trabalhar,",
+            "  vagabundo  Va",
+            "i     trabalhar,  ",
+            " criatura/n"
+        ],
+        [
+            "Deus     permite a ",
+            "   todo mundo  Um",
+            "a     loucu-ra",
+            "/n"
+        ],
+        [
+            "Passa   o domin-",
+            "-go em família  S",
+            "egunda-fei--",
+            "-ra beleza/n"
+        ],
+        [
+            "Embarca  com ",
+            "   alegria  Na",
+            "      corrente-za",
+            "/n"
+        ],
+        [
+            "Prepara o teu ",
+            "   documento  Ca",
+            "rimba o teu   ",
+            "coração/n"
+        ],
+        [
+            "Não   perde nem",
+            "    um momento  P",
+            "erde a raz",
+            "o/n"
+        ],
+        [
+            "Pode  esquecer ",
+            "   a mulata  Po",
+            "de esquecer   ",
+            "o bilhar/n"
+        ],
+        [
+            "Pode  apertar ",
+            "   a gravata  Va",
+            "i   te enforcar",
+            "/n"
+        ],
+        [
+            "Vai   te entreg",
+            "ar    V",
+            "ai   te estraga",
+            "r    Va",
+            "i   trabalha",
+            "r/n"
+        ],
+        [
+            "Vê      se não do",
+            "r--me no ponto  ",
+            "Reúne   as e",
+            "---conomias/n"
+        ],
+        [
+            "Perde    os três con",
+            "---tos no conto  D",
+            "a      loteri--",
+            "a/n"
+        ],
+        [
+            "Passa   o domin-",
+            "-go no mangue  Se",
+            "gunda-fei---",
+            "ra vazia/n"
+        ],
+        [
+            "Ganha    no ban-",
+            "--co de sangue  Pr",
+            "a     mais um di--a",
+            "/n"
+        ],
+        [
+            "Cuidado com o ",
+            "   viaduto  Cu",
+            "idado com   ",
+            "o avião/n"
+        ],
+        [
+            "Não   perde mais",
+            "    um minuto  P",
+            "erde a quest",
+            "o/n"
+        ],
+        [
+            "Tenta pensar ",
+            "   no futuro  No",
+            "   escuro ten--t",
+            "a pensar/n"
+        ],
+        [
+            "Vai   renovar ",
+            "   teu seguro Va",
+            "i   caducar",
+            "/n"
+        ],
+        [
+            "Vai   te entreg",
+            "ar    V",
+            "ai   te estraga",
+            "r    Va",
+            "i   trabalha",
+            "r/n"
+        ],
+        [
+            "Passa   o domin-",
+            "-go sozinho  Se",
+            "gunda-fei---",
+            "ra a desgraça/n"
+        ],
+        [
+            "Sem      pai nem mãe",
+            ",   sem vizinho  E",
+            "m      plena pra--",
+            "ça/n"
+        ],
+        [
+            "Vai     terminar ",
+            "  moribundo  Co",
+            "m     um pouco de   ",
+            " paciência/n"
+        ],
+        [
+            "No       fim da fi-",
+            "--la do fundo  Da",
+            "      previdên-c",
+            "ia/n"
+        ],
+        [
+            "Parte tranqüi",
+            "---lo, ó irmão ",
+            " Descansa na",
+            "   paz de Deus/n"
+        ],
+        [
+            "Deixaste ca-",
+            "--sa e pensão  S",
+            "ó    para os t",
+            "eus/n"
+        ],
+        [
+            "A     criança",
+            "---da chorando  T",
+            "ua  mulher  ",
+            " vai suar/n"
+        ],
+        [
+            "Pra   botar ou-",
+            "--tro malandro No",
+            "    teu lugar",
+            "/n"
+        ],
+        [
+            "Vai   te entreg",
+            "ar    V",
+            "ai   te estraga",
+            "r    Va",
+            "i   te enforcar",
+            "/n"
+        ],
+        [
+            "Vai   caducar    Vai   trabalhar   Vai   trabalhar/nVai   trabalhar   Vagabundo"
+        ],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Y6QYIrrlOSg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,353 @@
-{"cancion": "eres-tu", "banda": "luis-miguel", "escala": "Ab", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Ab", "Db", "Eb", "Ab", "Db", "Eb", "Ab", "Ab", "Eb", "Db", "Ab", "F#", "Db", "Ab", "Eb", "Db", "Eb", "Ab", "Eb", "Db", "Cm7", "Ab", "Eb", "Ab", "Eb7", "Ab", "Eb", "Db", "Ab", "F#", "Db", "Ab", "Eb", "Db", "Eb", "Ab", "Eb", "Db", "Cm7", "Ab", "Eb", "Ab", "Eb7", "Ab", "Eb7", "Fm", "Db", "Bb", "Ab", "Eb", "Eb7", "Ab", "Db", "Ab", "Eb", "Ab", "Db", "Ab", "Eb7", "Fm", "Db", "Bb", "Ab", "Eb", "Eb7", "Ab", "Db", "Ab", "Eb", "Ab", "Ab9", "Ab", "Ab9", "Ab", "Ab", "Eb", "Db", "Ab", "F#", "Db", "Ab", "Eb", "Db", "Eb", "Ab", "Eb", "Db", "Cm7", "Ab", "Eb", "Ab", "Bbm7", "Cm7", "Db", "Eb", "E7", "A", "E7", "F#m", "D", "B", "A", "E", "E7", "A", "D", "A", "E", "A", "D", "A", "E7", "F#m", "D", "B", "A", "E", "E7", "A", "D", "A", "E7", "A", "D", "E", "A", "E7", "F#m", "D", "B", "A", "E", "E7", "A", "D", "A", "E7", "A", "D"]}], "orden_partes": [0]}, "letras": [[], ["Como una prom", "esa eres tu", ", eres tu", "", "", "", "/nComo una ma"], ["\u00f1ana de ve", "rano", "", "/nComo una son"], ["risa eres t", "u, eres tu", "/nA"], ["s\u00ed, a", "s\u00ed eres ", "tu", "/n"], ["Como una espera", "nza eres tu", ", eres tu", "", "", "", "/nComo lluvia "], ["fresca en mis m", "anos", "", "/nComo fuerte "], ["brisa eres t", "u, eres tu", "/nA"], ["s\u00ed, a", "s\u00ed eres ", "tu", "/n"], ["E-re", "s  tu", " como el agu", "a de m", "i fuent", "e", "/n"], ["Eres t", "u   ", "el fuego deee", "e  m", "i hogar", "", "/n"], ["Algo asi eres t", "u uuu", " alg", "o as\u00ed como el fueg", "o de mi hoguera", "", "/n"], ["Algo as\u00ed eres tu ", "   u", "uu", "/nen mi vida algo a"], ["s\u00ed eres ", "tu", "", "", "", "/n"], ["Como mi po", "ema eres tu", ", eres tu", "", "", "", "/nComo una gui"], ["tarra en la n", "oche", "", "/nComo mi hori"], ["zonte eres t", "u, eres tu", "/nA"], ["s\u00ed, a", "s\u00ed eres ", "tu", "", "", "", "", "/n"], ["E-re", "s  tu", " como el agu", "a de m", "i fuente", "", "/n"], ["Eres tu", "   ", "el fuego deee", "e  ", "mi hogar", "", "/n"], ["Algo asi eres t", "u uuu", "  alg", "o as\u00ed como el fuego", " de mi hoguera", "", "/n"], ["Algo as\u00ed eres tu ", "   uuu", "/nen mi "], ["vida algo as", " eres tu", "", "", "/n"], ["Algo asi eres t", "u uuu", "   al", "go as\u00ed como el agua", " de mi fuente", "", "/n"], ["Algo as\u00ed eres tu ", "   uuu", "/nel fuego d"], ["eee", " mi hogar", "    ", "...."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "KlVzX88qyKE", "delay": 0}]}
+{
+    "cancion": "eres-tu",
+    "banda": "luis-miguel",
+    "escala": "Ab",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Ab",
+                    "Db",
+                    "Eb",
+                    "Ab",
+                    "Db",
+                    "Eb",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Ab",
+                    "F#",
+                    "Db",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Eb",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Cm7",
+                    "Ab",
+                    "Eb",
+                    "Ab",
+                    "Eb7",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Ab",
+                    "F#",
+                    "Db",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Eb",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Cm7",
+                    "Ab",
+                    "Eb",
+                    "Ab",
+                    "Eb7",
+                    "Ab",
+                    "Eb7",
+                    "Fm",
+                    "Db",
+                    "Bb",
+                    "Ab",
+                    "Eb",
+                    "Eb7",
+                    "Ab",
+                    "Db",
+                    "Ab",
+                    "Eb",
+                    "Ab",
+                    "Db",
+                    "Ab",
+                    "Eb7",
+                    "Fm",
+                    "Db",
+                    "Bb",
+                    "Ab",
+                    "Eb",
+                    "Eb7",
+                    "Ab",
+                    "Db",
+                    "Ab",
+                    "Eb",
+                    "Ab",
+                    "Ab9",
+                    "Ab",
+                    "Ab9",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Ab",
+                    "F#",
+                    "Db",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Eb",
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Cm7",
+                    "Ab",
+                    "Eb",
+                    "Ab",
+                    "Bbm7",
+                    "Cm7",
+                    "Db",
+                    "Eb",
+                    "E7",
+                    "A",
+                    "E7",
+                    "F#m",
+                    "D",
+                    "B",
+                    "A",
+                    "E",
+                    "E7",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "E7",
+                    "F#m",
+                    "D",
+                    "B",
+                    "A",
+                    "E",
+                    "E7",
+                    "A",
+                    "D",
+                    "A",
+                    "E7",
+                    "A",
+                    "D",
+                    "E",
+                    "A",
+                    "E7",
+                    "F#m",
+                    "D",
+                    "B",
+                    "A",
+                    "E",
+                    "E7",
+                    "A",
+                    "D",
+                    "A",
+                    "E7",
+                    "A",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Como una prom",
+            "esa eres tu",
+            ", eres tu",
+            "",
+            "",
+            "",
+            "/nComo una ma"
+        ],
+        [
+            "ñana de ve",
+            "rano",
+            "",
+            "/nComo una son"
+        ],
+        [
+            "risa eres t",
+            "u, eres tu",
+            "/nA"
+        ],
+        [
+            "sí, a",
+            "sí eres ",
+            "tu",
+            "/n"
+        ],
+        [
+            "Como una espera",
+            "nza eres tu",
+            ", eres tu",
+            "",
+            "",
+            "",
+            "/nComo lluvia "
+        ],
+        [
+            "fresca en mis m",
+            "anos",
+            "",
+            "/nComo fuerte "
+        ],
+        [
+            "brisa eres t",
+            "u, eres tu",
+            "/nA"
+        ],
+        [
+            "sí, a",
+            "sí eres ",
+            "tu",
+            "/n"
+        ],
+        [
+            "E-re",
+            "s  tu",
+            " como el agu",
+            "a de m",
+            "i fuent",
+            "e",
+            "/n"
+        ],
+        [
+            "Eres t",
+            "u   ",
+            "el fuego deee",
+            "e  m",
+            "i hogar",
+            "",
+            "/n"
+        ],
+        [
+            "Algo asi eres t",
+            "u uuu",
+            " alg",
+            "o así como el fueg",
+            "o de mi hoguera",
+            "",
+            "/n"
+        ],
+        [
+            "Algo así eres tu ",
+            "   u",
+            "uu",
+            "/nen mi vida algo a"
+        ],
+        [
+            "sí eres ",
+            "tu",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Como mi po",
+            "ema eres tu",
+            ", eres tu",
+            "",
+            "",
+            "",
+            "/nComo una gui"
+        ],
+        [
+            "tarra en la n",
+            "oche",
+            "",
+            "/nComo mi hori"
+        ],
+        [
+            "zonte eres t",
+            "u, eres tu",
+            "/nA"
+        ],
+        [
+            "sí, a",
+            "sí eres ",
+            "tu",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E-re",
+            "s  tu",
+            " como el agu",
+            "a de m",
+            "i fuente",
+            "",
+            "/n"
+        ],
+        [
+            "Eres tu",
+            "   ",
+            "el fuego deee",
+            "e  ",
+            "mi hogar",
+            "",
+            "/n"
+        ],
+        [
+            "Algo asi eres t",
+            "u uuu",
+            "  alg",
+            "o así como el fuego",
+            " de mi hoguera",
+            "",
+            "/n"
+        ],
+        [
+            "Algo así eres tu ",
+            "   uuu",
+            "/nen mi "
+        ],
+        [
+            "vida algo as",
+            " eres tu",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Algo asi eres t",
+            "u uuu",
+            "   al",
+            "go así como el agua",
+            " de mi fuente",
+            "",
+            "/n"
+        ],
+        [
+            "Algo así eres tu ",
+            "   uuu",
+            "/nel fuego d"
+        ],
+        [
+            "eee",
+            " mi hogar",
+            "    ",
+            "...."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "KlVzX88qyKE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

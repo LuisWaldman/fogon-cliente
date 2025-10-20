@@ -1,1 +1,373 @@
-{"cancion": "Hermanos", "banda": "fito-paez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "D/F#", "Em7", "Bm", "C", "G", "A7", "Dsus4", "D", "G", "D/F#", "Em7", "Bm", "C", "G", "A7sus4", "A7", "D", "G", "D/F#", "Em7", "Bm", "C", "G", "A7sus4", "A7", "D", "Em", "B7", "C", "A7", "G", "B7", "Em", "A7", "C", "G", "C", "A7", "Am7", "D7", "G", "G", "D/F#", "Em7", "Bm", "C", "G", "A7sus4", "A7", "D", "G", "D/F#", "Em7", "Bm", "C", "G", "A7sus4", "A7", "D", "Em", "B7", "C", "A7", "G", "B7", "Em", "A7", "C", "G", "C", "A7", "Am7", "D7", "A", "A", "E/G#", "F#m7", "C#m", "D", "A", "B7sus4", "B7", "E", "A", "E/G#", "F#m7", "C#m", "D", "A", "B7sus4", "B7", "E", "A", "E/G#", "F#m7", "C#m", "D", "A", "B7sus4", "B7", "E", "A", "E/G#", "F#m7", "C#m", "D", "A", "B7sus4", "B7", "E", "A", "E/G#", "F#m7", "C#m", "D", "A", "B7sus4", "B7", "E"]}], "orden_partes": [0]}, "letras": [["[Ver", "se]", "", "", "", "", "", "", "/n"], ["  Cuando en la v", "ida te perd", "s,/ny te des"], ["piertas al rev", "\u00e9s,/ncuando co"], ["mienza a oscurec", "er,", "/npor la ma"], ["\u00f1ana./n"], ["Vos ten\u00e9s que s", "obrevivir,", "/nafuera a"], [" la calle a re", "sistir,/nvamos a c"], ["aminar, mi am", "or,", "/ns\u00e9 que l"], ["o necesit\u00e1s./n"], ["      Es ahora, es al", "l\u00e1,/n"], ["      a las luc", "es/nvamos ya a can"], ["tar./nEs"], ["ta canci\u00f3n te abra", "zar\u00e1.", "/n"], ["Descubrir el n", "uevo sol,/nna"], ["ciendo una vez m", "\u00e1s,/n"], ["vida pura, v", "amos a brillar.", "/n"], ["Y si el infierno", " te quem\u00f3,", "/nte fuist"], ["e de mambo, te arras", "./nY si la n"], ["oche se llev", "\u00f3,", "/ntoda tu em"], ["oci\u00f3n./n"], ["Yo siempre estar", "\u00e9 aqu\u00ed,", "/nsiempre "], ["a tu lado, hasta morir", "./nYo soy tu her"], ["mano del amo", "r,", "/nhermano del cor"], ["az\u00f3n./n"], ["      Es ahora", ", es all\u00e1,/n"], ["      a las luc", "es/nvamos ya a can"], ["tar./nEs"], ["ta canci\u00f3n te abr", "azar\u00e1.", "/n"], ["descubrir de n", "uevo el sol/n"], ["naciendo en alta mar", "./n"], ["Dale loco, vamos", " a brillar", "/n"], ["  Laa laa la", "a laa    laa la", "a laa laaa/nLaa laa l"], ["aa laa       laa la", "a laa laaa/nLaa laa l"], ["aa laa        ", "laa laa ", "laa laaa/nLaa laa la"], ["a laa laa laaaa/n"], ["  Si de la mont", "a\u00f1a te ca", "s,/ny si a tu est"], ["rella no la v", "es,/nas\u00ed su m"], ["irada ya no es", "t\u00e9,", "/ny pierdas toda "], ["raz\u00f3n./n"], ["La luz en el ag", "ua, el agua", " en el calor,/ntodo florece "], ["en tecnicolor", "./nSiembra "], ["la tierra y no", " llores ", "m\u00e1s,/nsiempre hablar "], ["de pasi\u00f3n./n"], ["  Laa laa la", "a laa    laa la", "a laa laaa/nLaa laa l"], ["aa laa       laa la", "a laa laaa/nLaa laa l"], ["aa laa        ", "laa laa ", "laa laaa/nLaa laa la"], ["a laa laa laaaa/n"], ["  Laa laa la", "a laa    laa la", "a laa laaa/nLaa laa l"], ["aa laa       laa la", "a laa laaa/nLaa laa l"], ["aa laa        ", "laa laa ", "laa laaa/nLaa laa la"], ["a laa laa laaaa"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "O8dyYCRwFrE", "delay": 0}]}
+{
+    "cancion": "Hermanos",
+    "banda": "fito-paez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D/F#",
+                    "Em7",
+                    "Bm",
+                    "C",
+                    "G",
+                    "A7",
+                    "Dsus4",
+                    "D",
+                    "G",
+                    "D/F#",
+                    "Em7",
+                    "Bm",
+                    "C",
+                    "G",
+                    "A7sus4",
+                    "A7",
+                    "D",
+                    "G",
+                    "D/F#",
+                    "Em7",
+                    "Bm",
+                    "C",
+                    "G",
+                    "A7sus4",
+                    "A7",
+                    "D",
+                    "Em",
+                    "B7",
+                    "C",
+                    "A7",
+                    "G",
+                    "B7",
+                    "Em",
+                    "A7",
+                    "C",
+                    "G",
+                    "C",
+                    "A7",
+                    "Am7",
+                    "D7",
+                    "G",
+                    "G",
+                    "D/F#",
+                    "Em7",
+                    "Bm",
+                    "C",
+                    "G",
+                    "A7sus4",
+                    "A7",
+                    "D",
+                    "G",
+                    "D/F#",
+                    "Em7",
+                    "Bm",
+                    "C",
+                    "G",
+                    "A7sus4",
+                    "A7",
+                    "D",
+                    "Em",
+                    "B7",
+                    "C",
+                    "A7",
+                    "G",
+                    "B7",
+                    "Em",
+                    "A7",
+                    "C",
+                    "G",
+                    "C",
+                    "A7",
+                    "Am7",
+                    "D7",
+                    "A",
+                    "A",
+                    "E/G#",
+                    "F#m7",
+                    "C#m",
+                    "D",
+                    "A",
+                    "B7sus4",
+                    "B7",
+                    "E",
+                    "A",
+                    "E/G#",
+                    "F#m7",
+                    "C#m",
+                    "D",
+                    "A",
+                    "B7sus4",
+                    "B7",
+                    "E",
+                    "A",
+                    "E/G#",
+                    "F#m7",
+                    "C#m",
+                    "D",
+                    "A",
+                    "B7sus4",
+                    "B7",
+                    "E",
+                    "A",
+                    "E/G#",
+                    "F#m7",
+                    "C#m",
+                    "D",
+                    "A",
+                    "B7sus4",
+                    "B7",
+                    "E",
+                    "A",
+                    "E/G#",
+                    "F#m7",
+                    "C#m",
+                    "D",
+                    "A",
+                    "B7sus4",
+                    "B7",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "[Ver",
+            "se]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "  Cuando en la v",
+            "ida te perd",
+            "s,/ny te des"
+        ],
+        [
+            "piertas al rev",
+            "és,/ncuando co"
+        ],
+        [
+            "mienza a oscurec",
+            "er,",
+            "/npor la ma"
+        ],
+        [
+            "ñana./n"
+        ],
+        [
+            "Vos tenés que s",
+            "obrevivir,",
+            "/nafuera a"
+        ],
+        [
+            " la calle a re",
+            "sistir,/nvamos a c"
+        ],
+        [
+            "aminar, mi am",
+            "or,",
+            "/nsé que l"
+        ],
+        [
+            "o necesitás./n"
+        ],
+        [
+            "      Es ahora, es al",
+            "lá,/n"
+        ],
+        [
+            "      a las luc",
+            "es/nvamos ya a can"
+        ],
+        [
+            "tar./nEs"
+        ],
+        [
+            "ta canción te abra",
+            "zará.",
+            "/n"
+        ],
+        [
+            "Descubrir el n",
+            "uevo sol,/nna"
+        ],
+        [
+            "ciendo una vez m",
+            "ás,/n"
+        ],
+        [
+            "vida pura, v",
+            "amos a brillar.",
+            "/n"
+        ],
+        [
+            "Y si el infierno",
+            " te quemó,",
+            "/nte fuist"
+        ],
+        [
+            "e de mambo, te arras",
+            "./nY si la n"
+        ],
+        [
+            "oche se llev",
+            "ó,",
+            "/ntoda tu em"
+        ],
+        [
+            "oción./n"
+        ],
+        [
+            "Yo siempre estar",
+            "é aquí,",
+            "/nsiempre "
+        ],
+        [
+            "a tu lado, hasta morir",
+            "./nYo soy tu her"
+        ],
+        [
+            "mano del amo",
+            "r,",
+            "/nhermano del cor"
+        ],
+        [
+            "azón./n"
+        ],
+        [
+            "      Es ahora",
+            ", es allá,/n"
+        ],
+        [
+            "      a las luc",
+            "es/nvamos ya a can"
+        ],
+        [
+            "tar./nEs"
+        ],
+        [
+            "ta canción te abr",
+            "azará.",
+            "/n"
+        ],
+        [
+            "descubrir de n",
+            "uevo el sol/n"
+        ],
+        [
+            "naciendo en alta mar",
+            "./n"
+        ],
+        [
+            "Dale loco, vamos",
+            " a brillar",
+            "/n"
+        ],
+        [
+            "  Laa laa la",
+            "a laa    laa la",
+            "a laa laaa/nLaa laa l"
+        ],
+        [
+            "aa laa       laa la",
+            "a laa laaa/nLaa laa l"
+        ],
+        [
+            "aa laa        ",
+            "laa laa ",
+            "laa laaa/nLaa laa la"
+        ],
+        [
+            "a laa laa laaaa/n"
+        ],
+        [
+            "  Si de la mont",
+            "aña te ca",
+            "s,/ny si a tu est"
+        ],
+        [
+            "rella no la v",
+            "es,/nasí su m"
+        ],
+        [
+            "irada ya no es",
+            "té,",
+            "/ny pierdas toda "
+        ],
+        [
+            "razón./n"
+        ],
+        [
+            "La luz en el ag",
+            "ua, el agua",
+            " en el calor,/ntodo florece "
+        ],
+        [
+            "en tecnicolor",
+            "./nSiembra "
+        ],
+        [
+            "la tierra y no",
+            " llores ",
+            "más,/nsiempre hablar "
+        ],
+        [
+            "de pasión./n"
+        ],
+        [
+            "  Laa laa la",
+            "a laa    laa la",
+            "a laa laaa/nLaa laa l"
+        ],
+        [
+            "aa laa       laa la",
+            "a laa laaa/nLaa laa l"
+        ],
+        [
+            "aa laa        ",
+            "laa laa ",
+            "laa laaa/nLaa laa la"
+        ],
+        [
+            "a laa laa laaaa/n"
+        ],
+        [
+            "  Laa laa la",
+            "a laa    laa la",
+            "a laa laaa/nLaa laa l"
+        ],
+        [
+            "aa laa       laa la",
+            "a laa laaa/nLaa laa l"
+        ],
+        [
+            "aa laa        ",
+            "laa laa ",
+            "laa laaa/nLaa laa la"
+        ],
+        [
+            "a laa laa laaaa"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "O8dyYCRwFrE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

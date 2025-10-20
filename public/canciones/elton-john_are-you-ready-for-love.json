@@ -1,1 +1,329 @@
-{"cancion": "are-you-ready-for-love", "banda": "elton-john", "escala": "Am", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "C", "Am", "C", "F", "C", "C", "Em", "Am", "F", "C", "F", "C", "C", "Em", "Am", "F", "C", "F", "C", "Am", "F", "G", "Am", "F", "G", "G", "F", "C", "Am", "C", "F", "C", "C", "Am", "C", "F", "C", "Am", "F", "C", "Am", "F", "C", "Em", "Am", "F", "C", "F", "C", "C", "Em", "Am", "F", "C", "F", "C", "Am", "F", "G", "Am", "F", "G", "G", "F", "C", "Am", "C", "F", "C", "F", "C", "Am", "C", "F", "C", "F", "C", "Am", "C", "F", "C", "F", "C", "Am", "C", "F", "C", "F", "C", "Am", "C", "F", "C", "F", "C", "Am", "C", "F", "C", "F", "C", "Am", "C", "F", "F", "C", "Am", "C", "F", "C"]}], "orden_partes": [0]}, "letras": [[], ["h a star if you can", "/nWis"], ["h for something special/nLet "], ["it be me", ", my lov", "e is free", "/nSi"], ["ng a song to yours", "elf/nThink of som"], ["eone listening/nOne m"], ["elody, ", "you're", " all for me", "/nI'l"], ["l write a symphony just for you ", "and me/nIf you let me lov"], ["e you/nI'll pai"], ["nt a masterpiece just for you ", "to see/nIf you le"], ["t me love you, le", "t me love you/nA"], ["re yo", "u ready, are ", "you ready for love", "?/nYes "], ["I am, ", "are you?/nAr"], ["e you ready, are ", "you ready for love?", "/nYes I"], [" am, ", "are you?", "/nAr"], ["e you", " ready, are yo", "u ready for love?", "/nYou're the "], ["one like the su", "n/nShin"], ["e your love around me/nYou'll"], [" always b", "e the one f", "or me", "/nS"], ["ay the word and I'll be ther", "e/nLovi"], ["ng you forever/nDon't"], [" let me go,", " just sa", "y it's so", "/nWe"], ["'ll hear the music ring from the mount", "ain tops/nTo the va"], ["lley below us/nWe'll seren"], ["ade the world with a lull", "aby/nSo the angel"], ["s will know us, angels will kno", "w us/nAre y"], ["ou ready", ", are you ready", " for love?", "/nYes I a"], ["m, oh yea", "h/nAre"], [" you ready", ", are you r", "eady for love?", "/nYes "], ["I am, yes I ", "am,/nOh"], [", are you ", "ready, are yo", "u ready for love?", "/nYes"], [" I am, are ", "you?/nAre y"], ["ou read", "y, are you ready ", "for love?", "/nYes I"], [" am, are yo", "u?/nAre"], [" you read", "y, are you re", "ady for love?", "/nYes "], ["I am, are y", "ou?/nAr"], ["e you ready,", " are you ready ", "for love?", "/nYes "], ["I am, are you", "?/nAr"], ["e you re", "ady, are yo", "u ready for love?", "/nYes"], [" I am, are you?/nAre"], [" you ready", ", are you r", "eady for love?", "/nYes I "], ["am, are you", "?"]], "medias": [{"tipo": "Youtube", "id": "4QSA7pSvh-o", "delay": 0}]}
+{
+    "cancion": "are-you-ready-for-love",
+    "banda": "elton-john",
+    "escala": "Am",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "Em",
+                    "Am",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "Em",
+                    "Am",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "C",
+                    "Em",
+                    "Am",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "Em",
+                    "Am",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "Am",
+                    "C",
+                    "F",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "h a star if you can",
+            "/nWis"
+        ],
+        [
+            "h for something special/nLet "
+        ],
+        [
+            "it be me",
+            ", my lov",
+            "e is free",
+            "/nSi"
+        ],
+        [
+            "ng a song to yours",
+            "elf/nThink of som"
+        ],
+        [
+            "eone listening/nOne m"
+        ],
+        [
+            "elody, ",
+            "you're",
+            " all for me",
+            "/nI'l"
+        ],
+        [
+            "l write a symphony just for you ",
+            "and me/nIf you let me lov"
+        ],
+        [
+            "e you/nI'll pai"
+        ],
+        [
+            "nt a masterpiece just for you ",
+            "to see/nIf you le"
+        ],
+        [
+            "t me love you, le",
+            "t me love you/nA"
+        ],
+        [
+            "re yo",
+            "u ready, are ",
+            "you ready for love",
+            "?/nYes "
+        ],
+        [
+            "I am, ",
+            "are you?/nAr"
+        ],
+        [
+            "e you ready, are ",
+            "you ready for love?",
+            "/nYes I"
+        ],
+        [
+            " am, ",
+            "are you?",
+            "/nAr"
+        ],
+        [
+            "e you",
+            " ready, are yo",
+            "u ready for love?",
+            "/nYou're the "
+        ],
+        [
+            "one like the su",
+            "n/nShin"
+        ],
+        [
+            "e your love around me/nYou'll"
+        ],
+        [
+            " always b",
+            "e the one f",
+            "or me",
+            "/nS"
+        ],
+        [
+            "ay the word and I'll be ther",
+            "e/nLovi"
+        ],
+        [
+            "ng you forever/nDon't"
+        ],
+        [
+            " let me go,",
+            " just sa",
+            "y it's so",
+            "/nWe"
+        ],
+        [
+            "'ll hear the music ring from the mount",
+            "ain tops/nTo the va"
+        ],
+        [
+            "lley below us/nWe'll seren"
+        ],
+        [
+            "ade the world with a lull",
+            "aby/nSo the angel"
+        ],
+        [
+            "s will know us, angels will kno",
+            "w us/nAre y"
+        ],
+        [
+            "ou ready",
+            ", are you ready",
+            " for love?",
+            "/nYes I a"
+        ],
+        [
+            "m, oh yea",
+            "h/nAre"
+        ],
+        [
+            " you ready",
+            ", are you r",
+            "eady for love?",
+            "/nYes "
+        ],
+        [
+            "I am, yes I ",
+            "am,/nOh"
+        ],
+        [
+            ", are you ",
+            "ready, are yo",
+            "u ready for love?",
+            "/nYes"
+        ],
+        [
+            " I am, are ",
+            "you?/nAre y"
+        ],
+        [
+            "ou read",
+            "y, are you ready ",
+            "for love?",
+            "/nYes I"
+        ],
+        [
+            " am, are yo",
+            "u?/nAre"
+        ],
+        [
+            " you read",
+            "y, are you re",
+            "ady for love?",
+            "/nYes "
+        ],
+        [
+            "I am, are y",
+            "ou?/nAr"
+        ],
+        [
+            "e you ready,",
+            " are you ready ",
+            "for love?",
+            "/nYes "
+        ],
+        [
+            "I am, are you",
+            "?/nAr"
+        ],
+        [
+            "e you re",
+            "ady, are yo",
+            "u ready for love?",
+            "/nYes"
+        ],
+        [
+            " I am, are you?/nAre"
+        ],
+        [
+            " you ready",
+            ", are you r",
+            "eady for love?",
+            "/nYes I "
+        ],
+        [
+            "am, are you",
+            "?"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "4QSA7pSvh-o",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

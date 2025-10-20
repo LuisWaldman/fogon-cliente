@@ -1,1 +1,414 @@
-{"cancion": "soldiers", "banda": "bee-gees", "escala": "D", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "D", "G", "D", "A", "G", "B", "E", "D", "G", "D", "A", "G", "B", "E", "Dm", "Bb", "Bb", "C/Bb", "Bb", "C", "Bb", "Bb", "C/Bb", "Bb", "Dm", "Bb", "Bb", "C/Bb", "Bb", "D", "D", "D", "G", "D", "A", "G", "B", "E", "Dm", "Bb", "Bb", "C/Bb", "Bb", "C", "Bb", "Bb", "C/Bb", "Bb", "Dm", "Bb", "Bb", "C/Bb", "Bb", "D", "D", "D", "G", "G", "D", "G", "G", "D", "A", "G", "B", "E", "Dm", "Bb", "Bb", "C/Bb", "Bb", "C", "Bb", "Bb", "C/Bb", "Bb", "Dm", "Bb", "Bb", "C/Bb", "Bb", "Dm", "Dm", "Bb", "Bb", "C/Bb", "Bb", "C", "Bb", "Bb", "C/Bb", "Bb", "Dm", "Bb", "Bb", "C/Bb", "Bb", "C", "Bb", "Bb", "C/Bb", "Bb", "Dm", "Bb", "Bb", "C/Bb", "Bb", "C", "Bb", "Bb", "C/Bb", "Bb", "Dm", "Bb", "Bb", "C/Bb", "Bb", "C", "Bb", "Bb", "C/Bb", "Bb"]}], "orden_partes": [0]}, "letras": [["erse 1]/nI "], ["memorize, I walk in line/ncarry my "], ["sacrifice for the sake of the m", "illions/n"], ["All night you be the light on the w", "ater/nYou be the pride and the "], ["sorrow/nShower your love to me "], ["there/n"], ["Summer dies before the rain/nUnify "], ["every soul together be l", "onely/n"], ["Ride on, follow me to the s", "unrise/nSave me the world that is "], ["broken/nNothing but love to be "], ["there/n"], ["Soldiers, father and son/nWe're "], ["soldiers, nowhere to run/nWe "], ["fight o", "r   we", " die/nFor what are we "], ["livin' f", "or?/n"], ["Boys n", "e - ve", "r cry/n"], ["Soldiers, mother and child/nWe're "], ["soldiers, the meek and the mild/nWe "], ["stand o", "r   we", " fall", "", "/n"], ["Never mind, dry your eyes/nYou'll never be "], ["far away, forever bes", "ide me/n"], ["Hold out, I will be your tom", "orrow/nI will walk through the "], ["fire/nNothing but love to be "], ["there/n"], ["Soldiers, father and son/nWe're "], ["soldiers, nowhere to run/nWe "], ["fight o", "r   we", " die/nFor what are we "], ["livin' f", "or?/n"], ["Boys n", "e - ve", "r cry/n"], ["Soldiers, mother and child/nWe're "], ["soldiers, the meek and the mild/nWe "], ["stand o", "r   we", " fall", "", "/n"], ["  I'm a little misunderstood", "/nLiving all the "], ["daydreams and nightmares/ndon't do me no "], ["good/nI'm a little bit on the moo"], ["n/nBut when the "], ["word is - you love me/nNo moment is too s"], ["oon/n"], ["All night give me the light on the w", "ater/nGive me the pride and the "], ["sorrow/nShowing your love to me "], ["there/n"], ["Soldiers, father and son/nWe're "], ["soldiers, nowhere to run/nWe "], ["fight o", "r   we", " die/nFor what are we "], ["livin' f", "or?/n"], ["Boys n", "e - ve", "r cry/n"], ["Soldiers, mother and child/nWe're "], ["soldiers, the meek and the mild/nWe "], ["stand o", "r   we", " fall", "/n"], ["Soldiers, father and son/nWe're "], ["soldiers, nowhere to run/nWe "], ["fight o", "r   we", " die/nFor what are we "], ["livin' f", "or?/n"], ["Boys n", "e - ve", "r cry/n"], ["Soldiers, mother and child/nWe're "], ["soldiers, the meek and the mild/nWe "], ["stand o", "r   we", " fall/nFor what are we "], ["livin' f", "or?/n"], ["Boys n", "e - ve", "r cry/n"], ["Soldiers, father and son/nWe're "], ["soldiers, nowhere to run/nWe "], ["fight o", "r   we", " die/nFor what are we "], ["livin' f", "or?/n"], ["Boys n", "e - ve", "r cry/n"], ["Soldiers, mother and child/nWe're "], ["soldiers, the meek and the mild/nWe "], ["stand o", "r   we", " fall/nFor what are we "], ["livin' f", "or?/n"], ["Boys n", "e - ve", "r cry"]], "medias": [{"tipo": "Youtube", "id": "rmACXfwDHyg", "delay": 0}]}
+{
+    "cancion": "soldiers",
+    "banda": "bee-gees",
+    "escala": "D",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "B",
+                    "E",
+                    "D",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "B",
+                    "E",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "B",
+                    "E",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "B",
+                    "E",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C/Bb",
+                    "Bb"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "erse 1]/nI "
+        ],
+        [
+            "memorize, I walk in line/ncarry my "
+        ],
+        [
+            "sacrifice for the sake of the m",
+            "illions/n"
+        ],
+        [
+            "All night you be the light on the w",
+            "ater/nYou be the pride and the "
+        ],
+        [
+            "sorrow/nShower your love to me "
+        ],
+        [
+            "there/n"
+        ],
+        [
+            "Summer dies before the rain/nUnify "
+        ],
+        [
+            "every soul together be l",
+            "onely/n"
+        ],
+        [
+            "Ride on, follow me to the s",
+            "unrise/nSave me the world that is "
+        ],
+        [
+            "broken/nNothing but love to be "
+        ],
+        [
+            "there/n"
+        ],
+        [
+            "Soldiers, father and son/nWe're "
+        ],
+        [
+            "soldiers, nowhere to run/nWe "
+        ],
+        [
+            "fight o",
+            "r   we",
+            " die/nFor what are we "
+        ],
+        [
+            "livin' f",
+            "or?/n"
+        ],
+        [
+            "Boys n",
+            "e - ve",
+            "r cry/n"
+        ],
+        [
+            "Soldiers, mother and child/nWe're "
+        ],
+        [
+            "soldiers, the meek and the mild/nWe "
+        ],
+        [
+            "stand o",
+            "r   we",
+            " fall",
+            "",
+            "/n"
+        ],
+        [
+            "Never mind, dry your eyes/nYou'll never be "
+        ],
+        [
+            "far away, forever bes",
+            "ide me/n"
+        ],
+        [
+            "Hold out, I will be your tom",
+            "orrow/nI will walk through the "
+        ],
+        [
+            "fire/nNothing but love to be "
+        ],
+        [
+            "there/n"
+        ],
+        [
+            "Soldiers, father and son/nWe're "
+        ],
+        [
+            "soldiers, nowhere to run/nWe "
+        ],
+        [
+            "fight o",
+            "r   we",
+            " die/nFor what are we "
+        ],
+        [
+            "livin' f",
+            "or?/n"
+        ],
+        [
+            "Boys n",
+            "e - ve",
+            "r cry/n"
+        ],
+        [
+            "Soldiers, mother and child/nWe're "
+        ],
+        [
+            "soldiers, the meek and the mild/nWe "
+        ],
+        [
+            "stand o",
+            "r   we",
+            " fall",
+            "",
+            "/n"
+        ],
+        [
+            "  I'm a little misunderstood",
+            "/nLiving all the "
+        ],
+        [
+            "daydreams and nightmares/ndon't do me no "
+        ],
+        [
+            "good/nI'm a little bit on the moo"
+        ],
+        [
+            "n/nBut when the "
+        ],
+        [
+            "word is - you love me/nNo moment is too s"
+        ],
+        [
+            "oon/n"
+        ],
+        [
+            "All night give me the light on the w",
+            "ater/nGive me the pride and the "
+        ],
+        [
+            "sorrow/nShowing your love to me "
+        ],
+        [
+            "there/n"
+        ],
+        [
+            "Soldiers, father and son/nWe're "
+        ],
+        [
+            "soldiers, nowhere to run/nWe "
+        ],
+        [
+            "fight o",
+            "r   we",
+            " die/nFor what are we "
+        ],
+        [
+            "livin' f",
+            "or?/n"
+        ],
+        [
+            "Boys n",
+            "e - ve",
+            "r cry/n"
+        ],
+        [
+            "Soldiers, mother and child/nWe're "
+        ],
+        [
+            "soldiers, the meek and the mild/nWe "
+        ],
+        [
+            "stand o",
+            "r   we",
+            " fall",
+            "/n"
+        ],
+        [
+            "Soldiers, father and son/nWe're "
+        ],
+        [
+            "soldiers, nowhere to run/nWe "
+        ],
+        [
+            "fight o",
+            "r   we",
+            " die/nFor what are we "
+        ],
+        [
+            "livin' f",
+            "or?/n"
+        ],
+        [
+            "Boys n",
+            "e - ve",
+            "r cry/n"
+        ],
+        [
+            "Soldiers, mother and child/nWe're "
+        ],
+        [
+            "soldiers, the meek and the mild/nWe "
+        ],
+        [
+            "stand o",
+            "r   we",
+            " fall/nFor what are we "
+        ],
+        [
+            "livin' f",
+            "or?/n"
+        ],
+        [
+            "Boys n",
+            "e - ve",
+            "r cry/n"
+        ],
+        [
+            "Soldiers, father and son/nWe're "
+        ],
+        [
+            "soldiers, nowhere to run/nWe "
+        ],
+        [
+            "fight o",
+            "r   we",
+            " die/nFor what are we "
+        ],
+        [
+            "livin' f",
+            "or?/n"
+        ],
+        [
+            "Boys n",
+            "e - ve",
+            "r cry/n"
+        ],
+        [
+            "Soldiers, mother and child/nWe're "
+        ],
+        [
+            "soldiers, the meek and the mild/nWe "
+        ],
+        [
+            "stand o",
+            "r   we",
+            " fall/nFor what are we "
+        ],
+        [
+            "livin' f",
+            "or?/n"
+        ],
+        [
+            "Boys n",
+            "e - ve",
+            "r cry"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "rmACXfwDHyg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

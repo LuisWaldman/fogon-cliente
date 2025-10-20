@@ -1,1 +1,376 @@
-{"cancion": "Cada-Qual-Com-Sua-Mania", "banda": "caetano-veloso", "escala": "AM7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["AM7", "E", "E7", "AM7", "E", "E7", "AM7", "DM7", "AM7", "DM7", "AM7", "DM7", "AM7", "DM7", "AM7", "A7", "DM7", "C#m7", "Bm7", "E7", "AM7", "DM7", "AM7", "A7", "DM7", "C#m7", "Bm7", "E7", "AM7", "C#m7", "Cm7", "Bm7", "E7", "AM7", "DM7", "AM7", "DM7", "AM7", "F#m7", "Bm7", "E7", "AM7", "C#7", "F#m7", "Fm7", "Em7", "A7", "DM7", "F#7", "C#", "Bm7", "E7", "AM7", "C#7", "F#m7", "A7", "DM7", "C#m7", "Bm7", "E7", "AM7", "F#m7", "B7", "F7", "E7", "AM7", "AM7", "G#m7", "C#7", "F#m7", "Em7", "A7", "D", "F#7", "C#", "Bm7", "C#m7", "E7", "D", "AM7", "DM7", "Bm7", "E7", "A", "A", "DM7", "Bm7", "E7", "AM7", "DM7", "Bm7", "B7", "Dm6", "E7", "AM7", "DM7", "Bm7", "E7", "AM7", "DM7", "Bm7", "E7", "Bm7", "E7", "AM7", "DM7", "AM7", "E7", "AM7", "E7", "AM7", "A", "DM7", "Bm7", "E7", "AM7", "DM7", "Bm7", "B7", "Dm6", "E7", "AM7", "DM7", "Bm7", "E7", "AM7", "DM7", "Bm7", "E7", "Bm7", "E7", "AM7", "DM7", "AM7", "E7", "AM7", "E7", "AM7"]}], "orden_partes": [0]}, "letras": [[], ["ual   ", "   com sua man", "ia", "/no go"], ["sto  ", "    n", "o se ", "discut", "e.", "/nArte"], ["fatos, bestas, hom", "ens e mulhe", "res", "", "/ncada "], ["um \u00e9 como ", "\u00e9/ncada "], ["um    ", "     ", " \u00e9  ", " cada qual", ".", "/ne se m"], ["anda pela es", "cada como que", "r,/n"], ["Mas se ti", "ver que escolher, ", "sou partid\u00e1", "rio/ndas v"], ["ozes vivas da ru", "a     ", "     ", "mais que ", "do dicion\u00e1rio", ".", "", "", "/nE gosto mais do ba"], ["irros que do cen", "tro da cidade", "/ne dos art"], ["es\u00e3os mais ", "    que da feito", "ria.", "", "/nDa raz\u00e3o que"], [" da for\u00e7a, do instinto", " que da urbanidade/ne dos i"], ["ndios que do S", "\u00e9timo de ca", "valaria", ".", "/nPrefiro os c"], ["aminhos ", "s frontei", "ras", "/ne uma borbol"], ["eta ao Rockef", "eller Ce", "nter", "", "", "/ne o far"], ["oleiro  ", "    ", "  de Capdep", "era", "", "/n"], ["aos vi", "gias de Ocidente./nPref"], ["iro que", "rer a poder./nTatear a pisar."], ["/nAmar a quer"], ["er./nPegar a pe"], ["dir./nDan\u00e7ar a de"], ["sfilar", "/ne "], ["desfrutar a m", "edir.", "", "/nPrefiro voar a c"], ["orrer./nFazer a pensar."], ["/nBeijar a br"], ["igar./nGanhar a "], ["perder./nMais do que tudo, "], ["sou", "", "/nparti"], ["d\u00e1rio ", "de vive", "r.", "", "", "", "", "", "/nPr"], ["efiro q", "uerer a poder./nTatear a pisar."], ["/nAmar a quer"], ["er./nPegar a pe"], ["dir./nDan\u00e7ar a de"], ["sfilar", "/ne "], ["desfrutar a m", "edir.", "", "/nPrefiro voar a c"], ["orrer./nFazer a pensar."], ["/nBeijar a br"], ["igar./nGanhar a "], ["perder./nMais do que tudo, "], ["sou", "", "/nparti"], ["d\u00e1rio ", "de vive", "r.", "", "", "", "", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "OTqVJjEvN0w", "delay": 0}]}
+{
+    "cancion": "Cada-Qual-Com-Sua-Mania",
+    "banda": "caetano-veloso",
+    "escala": "AM7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "AM7",
+                    "E",
+                    "E7",
+                    "AM7",
+                    "E",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "A7",
+                    "DM7",
+                    "C#m7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "A7",
+                    "DM7",
+                    "C#m7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "C#m7",
+                    "Cm7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "F#m7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "C#7",
+                    "F#m7",
+                    "Fm7",
+                    "Em7",
+                    "A7",
+                    "DM7",
+                    "F#7",
+                    "C#",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "C#7",
+                    "F#m7",
+                    "A7",
+                    "DM7",
+                    "C#m7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "F#m7",
+                    "B7",
+                    "F7",
+                    "E7",
+                    "AM7",
+                    "AM7",
+                    "G#m7",
+                    "C#7",
+                    "F#m7",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "F#7",
+                    "C#",
+                    "Bm7",
+                    "C#m7",
+                    "E7",
+                    "D",
+                    "AM7",
+                    "DM7",
+                    "Bm7",
+                    "E7",
+                    "A",
+                    "A",
+                    "DM7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "Bm7",
+                    "B7",
+                    "Dm6",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "Bm7",
+                    "E7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "E7",
+                    "AM7",
+                    "E7",
+                    "AM7",
+                    "A",
+                    "DM7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "Bm7",
+                    "B7",
+                    "Dm6",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "Bm7",
+                    "E7",
+                    "Bm7",
+                    "E7",
+                    "AM7",
+                    "DM7",
+                    "AM7",
+                    "E7",
+                    "AM7",
+                    "E7",
+                    "AM7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "ual   ",
+            "   com sua man",
+            "ia",
+            "/no go"
+        ],
+        [
+            "sto  ",
+            "    n",
+            "o se ",
+            "discut",
+            "e.",
+            "/nArte"
+        ],
+        [
+            "fatos, bestas, hom",
+            "ens e mulhe",
+            "res",
+            "",
+            "/ncada "
+        ],
+        [
+            "um é como ",
+            "é/ncada "
+        ],
+        [
+            "um    ",
+            "     ",
+            " é  ",
+            " cada qual",
+            ".",
+            "/ne se m"
+        ],
+        [
+            "anda pela es",
+            "cada como que",
+            "r,/n"
+        ],
+        [
+            "Mas se ti",
+            "ver que escolher, ",
+            "sou partidá",
+            "rio/ndas v"
+        ],
+        [
+            "ozes vivas da ru",
+            "a     ",
+            "     ",
+            "mais que ",
+            "do dicionário",
+            ".",
+            "",
+            "",
+            "/nE gosto mais do ba"
+        ],
+        [
+            "irros que do cen",
+            "tro da cidade",
+            "/ne dos art"
+        ],
+        [
+            "esãos mais ",
+            "    que da feito",
+            "ria.",
+            "",
+            "/nDa razão que"
+        ],
+        [
+            " da força, do instinto",
+            " que da urbanidade/ne dos i"
+        ],
+        [
+            "ndios que do S",
+            "étimo de ca",
+            "valaria",
+            ".",
+            "/nPrefiro os c"
+        ],
+        [
+            "aminhos ",
+            "s frontei",
+            "ras",
+            "/ne uma borbol"
+        ],
+        [
+            "eta ao Rockef",
+            "eller Ce",
+            "nter",
+            "",
+            "",
+            "/ne o far"
+        ],
+        [
+            "oleiro  ",
+            "    ",
+            "  de Capdep",
+            "era",
+            "",
+            "/n"
+        ],
+        [
+            "aos vi",
+            "gias de Ocidente./nPref"
+        ],
+        [
+            "iro que",
+            "rer a poder./nTatear a pisar."
+        ],
+        [
+            "/nAmar a quer"
+        ],
+        [
+            "er./nPegar a pe"
+        ],
+        [
+            "dir./nDançar a de"
+        ],
+        [
+            "sfilar",
+            "/ne "
+        ],
+        [
+            "desfrutar a m",
+            "edir.",
+            "",
+            "/nPrefiro voar a c"
+        ],
+        [
+            "orrer./nFazer a pensar."
+        ],
+        [
+            "/nBeijar a br"
+        ],
+        [
+            "igar./nGanhar a "
+        ],
+        [
+            "perder./nMais do que tudo, "
+        ],
+        [
+            "sou",
+            "",
+            "/nparti"
+        ],
+        [
+            "dário ",
+            "de vive",
+            "r.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/nPr"
+        ],
+        [
+            "efiro q",
+            "uerer a poder./nTatear a pisar."
+        ],
+        [
+            "/nAmar a quer"
+        ],
+        [
+            "er./nPegar a pe"
+        ],
+        [
+            "dir./nDançar a de"
+        ],
+        [
+            "sfilar",
+            "/ne "
+        ],
+        [
+            "desfrutar a m",
+            "edir.",
+            "",
+            "/nPrefiro voar a c"
+        ],
+        [
+            "orrer./nFazer a pensar."
+        ],
+        [
+            "/nBeijar a br"
+        ],
+        [
+            "igar./nGanhar a "
+        ],
+        [
+            "perder./nMais do que tudo, "
+        ],
+        [
+            "sou",
+            "",
+            "/nparti"
+        ],
+        [
+            "dário ",
+            "de vive",
+            "r.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "OTqVJjEvN0w",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

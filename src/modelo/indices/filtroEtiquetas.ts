@@ -2,12 +2,13 @@ import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { FiltroIndice } from './filtroIndice'
 
 export class FiltroEtiquetas extends FiltroIndice {
-  etiqueta: string = ''
+  etiquetas: string[] = []
   constructor(etiqueta: string) {
     super()
-    this.etiqueta = etiqueta
+    this.etiquetas = etiqueta.split(',')
   }
   override FiltroOk(item: ItemIndiceCancion): boolean {
-    return item.etiquetas.includes(this.etiqueta)
+    console.log('Filtrando por etiqueta:', this.etiquetas, 'en', item.etiquetas)
+    return this.etiquetas.some((etiqueta) => item.etiquetas.includes(etiqueta))
   }
 }

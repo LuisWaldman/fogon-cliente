@@ -1,1 +1,404 @@
-{"cancion": "Let-Me", "banda": "elvis-presley", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "G", "G", "G", "D", "D", "D", "G", "G7", "G", "D7", "G", "C", "G", "Am", "G", "G", "G", "G", "D", "D", "G", "G7", "G", "D7", "G", "C", "G", "Am", "G", "G", "G", "G", "G7", "C", "C7", "C", "G", "G", "G", "Am", "D", "G", "G7", "G7", "D", "G", "G7", "G7", "C", "D", "G", "G", "D", "D", "G", "G7", "G", "D7", "G", "C", "G", "Am", "G", "G", "G", "G", "D", "D", "G", "G7", "G", "D7", "D", "G", "C", "G", "Am", "G", "G", "G", "G", "G7", "C", "C7", "C", "G", "G", "G", "Am", "D", "G", "G7", "G7", "D", "G", "G7", "G7", "C", "D", "G", "G", "D", "D", "G", "G7", "G", "D7", "G", "C", "G", "Am", "G", "G", "G", "G", "D", "D", "G", "G7", "G", "D7", "G", "C", "G", "Am", "G", "G", "G", "G", "G7", "C", "C7", "C", "G", "G", "G", "Am", "D", "G", "G7", "G7", "D", "G", "G7", "G7", "C", "Am", "D", "D7", "G", "D", "G"]}], "orden_partes": [0]}, "letras": [[], ["When-e", "ver I dance with the gi", "rl I lov", "e/nMy "], ["head goes round and round/n"], ["When she's c", "lose to me/nI "], ["can't stay o", "n the gr", "ound, Oh Ooo", ", Ooo Hoo", "", "", "/n"], ["When-e", "ver I dance with the gi", "rl I lov", "e/nI "], ["never have a care/n"], ["All night I", "'m so light/nI "], ["walk right o", "n the ai", "r, the air", ", the air", "", "/n"], ["Oh! l", "et me, oh", " hon", "ey let ", "me", "/n"], ["Let me d", "o what you kn", "ow I love to do", "", "/n"], ["Please t", "ake another chance and le", "t me", "/n"], ["Let me h", "ave another da", "nce with you", "", "", "/n"], ["When-e", "ver I feel those pr", "etty arm", "s/n"], ["Reaching round about/nThat "], ["feeling goes t", "o  my toes/nAnd "], ["all the l", "ights go ou", "t, go out", ", go out", "", "", "/n"], ["When-e", "ver I see those ey", "es of blu", "e/n"], ["Smiling up so s", "hy/n"], ["I'm in s", "uch a spin /nI "], ["take right o", "ff and fl", "y, I I, ", " Mmm Hmm", "", "/n"], ["Oh! l", "et me, oh", " hon", "ey let ", "me", "/n"], ["Let me d", "o what you kn", "ow I love to do", "", "/n"], ["Please t", "ake another chance and le", "t me", "/n"], ["Let me h", "ave another da", "nce with you", "", "", "/n"], ["So l", "et me dance in the ar", "ms I lov", "e/n"], ["Thrill me through and through/n"], ["I'm so d", "runk with love/nThat "], ["all I   s", "ee is yo", "u, Ooo Ooo", ", Ooo, Ooo", "", "", "/n"], ["I  n", "ever hear the mu", "sic pla", "y/nI "], ["never see the crowd/n"], ["Only  y", "ou  and me/n"], ["Dancing o", "n a cl", "oud, a clo", "ud, a clou", "d", "/n"], ["Oh! l", "et me, oh", " hon", "ey let ", "me", "/n"], ["Let me d", "o what you kn", "ow I love to do", "", "/n"], ["Please t", "ake another chance and le", "t me", "/n"], ["Let me h", "ave!.... a-no", "ther dan", "ce! wiii", "iith youuu", "uuuuuuuuuuuu    !  !", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "gs3dQDoQNzE", "delay": 0}]}
+{
+    "cancion": "Let-Me",
+    "banda": "elvis-presley",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G7",
+                    "G",
+                    "D7",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G7",
+                    "G",
+                    "D7",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "D",
+                    "G",
+                    "G7",
+                    "G7",
+                    "D",
+                    "G",
+                    "G7",
+                    "G7",
+                    "C",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G7",
+                    "G",
+                    "D7",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G7",
+                    "G",
+                    "D7",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "D",
+                    "G",
+                    "G7",
+                    "G7",
+                    "D",
+                    "G",
+                    "G7",
+                    "G7",
+                    "C",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G7",
+                    "G",
+                    "D7",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G7",
+                    "G",
+                    "D7",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G7",
+                    "C",
+                    "C7",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "D",
+                    "G",
+                    "G7",
+                    "G7",
+                    "D",
+                    "G",
+                    "G7",
+                    "G7",
+                    "C",
+                    "Am",
+                    "D",
+                    "D7",
+                    "G",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "When-e",
+            "ver I dance with the gi",
+            "rl I lov",
+            "e/nMy "
+        ],
+        [
+            "head goes round and round/n"
+        ],
+        [
+            "When she's c",
+            "lose to me/nI "
+        ],
+        [
+            "can't stay o",
+            "n the gr",
+            "ound, Oh Ooo",
+            ", Ooo Hoo",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "When-e",
+            "ver I dance with the gi",
+            "rl I lov",
+            "e/nI "
+        ],
+        [
+            "never have a care/n"
+        ],
+        [
+            "All night I",
+            "'m so light/nI "
+        ],
+        [
+            "walk right o",
+            "n the ai",
+            "r, the air",
+            ", the air",
+            "",
+            "/n"
+        ],
+        [
+            "Oh! l",
+            "et me, oh",
+            " hon",
+            "ey let ",
+            "me",
+            "/n"
+        ],
+        [
+            "Let me d",
+            "o what you kn",
+            "ow I love to do",
+            "",
+            "/n"
+        ],
+        [
+            "Please t",
+            "ake another chance and le",
+            "t me",
+            "/n"
+        ],
+        [
+            "Let me h",
+            "ave another da",
+            "nce with you",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "When-e",
+            "ver I feel those pr",
+            "etty arm",
+            "s/n"
+        ],
+        [
+            "Reaching round about/nThat "
+        ],
+        [
+            "feeling goes t",
+            "o  my toes/nAnd "
+        ],
+        [
+            "all the l",
+            "ights go ou",
+            "t, go out",
+            ", go out",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "When-e",
+            "ver I see those ey",
+            "es of blu",
+            "e/n"
+        ],
+        [
+            "Smiling up so s",
+            "hy/n"
+        ],
+        [
+            "I'm in s",
+            "uch a spin /nI "
+        ],
+        [
+            "take right o",
+            "ff and fl",
+            "y, I I, ",
+            " Mmm Hmm",
+            "",
+            "/n"
+        ],
+        [
+            "Oh! l",
+            "et me, oh",
+            " hon",
+            "ey let ",
+            "me",
+            "/n"
+        ],
+        [
+            "Let me d",
+            "o what you kn",
+            "ow I love to do",
+            "",
+            "/n"
+        ],
+        [
+            "Please t",
+            "ake another chance and le",
+            "t me",
+            "/n"
+        ],
+        [
+            "Let me h",
+            "ave another da",
+            "nce with you",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "So l",
+            "et me dance in the ar",
+            "ms I lov",
+            "e/n"
+        ],
+        [
+            "Thrill me through and through/n"
+        ],
+        [
+            "I'm so d",
+            "runk with love/nThat "
+        ],
+        [
+            "all I   s",
+            "ee is yo",
+            "u, Ooo Ooo",
+            ", Ooo, Ooo",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I  n",
+            "ever hear the mu",
+            "sic pla",
+            "y/nI "
+        ],
+        [
+            "never see the crowd/n"
+        ],
+        [
+            "Only  y",
+            "ou  and me/n"
+        ],
+        [
+            "Dancing o",
+            "n a cl",
+            "oud, a clo",
+            "ud, a clou",
+            "d",
+            "/n"
+        ],
+        [
+            "Oh! l",
+            "et me, oh",
+            " hon",
+            "ey let ",
+            "me",
+            "/n"
+        ],
+        [
+            "Let me d",
+            "o what you kn",
+            "ow I love to do",
+            "",
+            "/n"
+        ],
+        [
+            "Please t",
+            "ake another chance and le",
+            "t me",
+            "/n"
+        ],
+        [
+            "Let me h",
+            "ave!.... a-no",
+            "ther dan",
+            "ce! wiii",
+            "iith youuu",
+            "uuuuuuuuuuuu    !  !",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "gs3dQDoQNzE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

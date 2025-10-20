@@ -1,1 +1,391 @@
-{"cancion": "something-just-like-this", "banda": "coldplay", "escala": "Bm7", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm7", "A", "G", "A"]}, {"nombre": "parte2", "acordes": ["Bm7", "D", "G", "A"]}, {"nombre": "parte3", "acordes": ["Bm7", "A", "A", "G", "A"]}, {"nombre": "parte4", "acordes": ["Bm7", "A"]}], "orden_partes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 2, 2, 3]}, "letras": [["I've been readi", "ng books of ol", "d/nThe leg"], ["ends and the my", "ths/n"], ["Achilles and his go", "ld/nHercule"], ["s and his gifts", "/nSp"], ["iderman's contro", "l/nAnd Batman"], [" with his fi", "sts", "/nAnd clearly "], ["I don't see mysel", "f upon that lis", "t/nBut she said, "], ["where'd you wanna go", "?/nHow m"], ["uch you wanna ri", "sk?/nI'm not l"], ["ooking for some", "body/nWith some s"], ["uperhuman gi", "fts/nSome s"], ["uperhero", "/nSome fa"], ["irytale bli", "ss/nJust som"], ["ething I can tu", "rn to/nSomeb"], ["ody I can ki", "ss/nI want s"], ["omething just like thi", "s/nDoo-doo-d"], ["oo, doo-doo-doo", "/nDoo-doo-d"], ["oo, doo-doo", "/nDoo-doo-d"], ["oo, doo-doo-doo", "/nOh I want s"], ["omething just like", " this/nDoo-doo-d"], ["oo, doo-doo-do", "o/nDoo-doo-d"], ["oo, doo-doo", "/nDoo-doo-d"], ["oo, doo-doo-doo", "/nOh I want s"], ["omething just like", " this", "", "", "", "", "", "/nI want s"], ["omething just like", " this", "", "", "", "", "", "/nI've been r"], ["eading books of o", "ld/nThe l"], ["egends and the my", "ths/nThe t"], ["estaments they to", "ld/nThe m"], ["oon and its ecli", "pse/nAnd S"], ["uperman u", "nrolls/nA s"], ["uit before he li", "fts", "/nBut I'm n"], ["ot the kind of pe", "rson that it fit", "s/nShe said, "], ["where'd you wanna g", "o?/nHow m"], ["uch you wanna ri", "sk?/nI'm not l"], ["ooking for some", "body/nWith some s"], ["uperhuman gi", "fts/nSome s"], ["uperhero", "/nSome fa"], ["irytale bli", "ss/nJust som"], ["ething I can tu", "rn to/nSomeb"], ["ody I can mi", "ss/nOh I w"], ["ant something just", " like", " this", "", "", "", "", "/nI want s"], ["omething just like", " this", "", "", "", "", "", "/n"], ["I want something just ", "like this/nDoo-doo-d"], ["oo, doo-doo-doo", "/nDoo-doo-d"], ["oo, doo-doo", "/nDoo-doo-d"], ["oo, doo-doo-doo", "/nOh I want s"], ["omething just like", " this/nDoo-doo-d"], ["oo, doo-doo-do", "o/nDoo-doo-d"], ["oo, doo-doo", "/nDoo-doo-d"], ["oo, doo-doo-doo", "/nWh"], ["ere'd ya wanna", " go?/nHow m"], ["uch you wanna ri", "sk?/nI'm not l"], ["ooking for so", "mebody/nWith some s"], ["uperhuman gi", "fts/nSome s"], ["uperhero", "/nSome f"], ["airytale bli", "ss/nJust s"], ["omething I can tu", "rn to/nSomeb"], ["ody I can ki", "ss/nI want s"], ["omething just like", " this", "", "", "/n"], [], [], ["ant something ju", "st lik", "e this", "", "/n"], [], [], [], [], [], [], [], [], [], [], [], [], [], []], "medias": [{"tipo": "Youtube", "id": "FM7MFYoylVs", "delay": 0}]}
+{
+    "cancion": "something-just-like-this",
+    "banda": "coldplay",
+    "escala": "Bm7",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm7",
+                    "A",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm7",
+                    "D",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm7",
+                    "A",
+                    "A",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm7",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "I've been readi",
+            "ng books of ol",
+            "d/nThe leg"
+        ],
+        [
+            "ends and the my",
+            "ths/n"
+        ],
+        [
+            "Achilles and his go",
+            "ld/nHercule"
+        ],
+        [
+            "s and his gifts",
+            "/nSp"
+        ],
+        [
+            "iderman's contro",
+            "l/nAnd Batman"
+        ],
+        [
+            " with his fi",
+            "sts",
+            "/nAnd clearly "
+        ],
+        [
+            "I don't see mysel",
+            "f upon that lis",
+            "t/nBut she said, "
+        ],
+        [
+            "where'd you wanna go",
+            "?/nHow m"
+        ],
+        [
+            "uch you wanna ri",
+            "sk?/nI'm not l"
+        ],
+        [
+            "ooking for some",
+            "body/nWith some s"
+        ],
+        [
+            "uperhuman gi",
+            "fts/nSome s"
+        ],
+        [
+            "uperhero",
+            "/nSome fa"
+        ],
+        [
+            "irytale bli",
+            "ss/nJust som"
+        ],
+        [
+            "ething I can tu",
+            "rn to/nSomeb"
+        ],
+        [
+            "ody I can ki",
+            "ss/nI want s"
+        ],
+        [
+            "omething just like thi",
+            "s/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-doo",
+            "/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo",
+            "/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-doo",
+            "/nOh I want s"
+        ],
+        [
+            "omething just like",
+            " this/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-do",
+            "o/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo",
+            "/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-doo",
+            "/nOh I want s"
+        ],
+        [
+            "omething just like",
+            " this",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/nI want s"
+        ],
+        [
+            "omething just like",
+            " this",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/nI've been r"
+        ],
+        [
+            "eading books of o",
+            "ld/nThe l"
+        ],
+        [
+            "egends and the my",
+            "ths/nThe t"
+        ],
+        [
+            "estaments they to",
+            "ld/nThe m"
+        ],
+        [
+            "oon and its ecli",
+            "pse/nAnd S"
+        ],
+        [
+            "uperman u",
+            "nrolls/nA s"
+        ],
+        [
+            "uit before he li",
+            "fts",
+            "/nBut I'm n"
+        ],
+        [
+            "ot the kind of pe",
+            "rson that it fit",
+            "s/nShe said, "
+        ],
+        [
+            "where'd you wanna g",
+            "o?/nHow m"
+        ],
+        [
+            "uch you wanna ri",
+            "sk?/nI'm not l"
+        ],
+        [
+            "ooking for some",
+            "body/nWith some s"
+        ],
+        [
+            "uperhuman gi",
+            "fts/nSome s"
+        ],
+        [
+            "uperhero",
+            "/nSome fa"
+        ],
+        [
+            "irytale bli",
+            "ss/nJust som"
+        ],
+        [
+            "ething I can tu",
+            "rn to/nSomeb"
+        ],
+        [
+            "ody I can mi",
+            "ss/nOh I w"
+        ],
+        [
+            "ant something just",
+            " like",
+            " this",
+            "",
+            "",
+            "",
+            "",
+            "/nI want s"
+        ],
+        [
+            "omething just like",
+            " this",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I want something just ",
+            "like this/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-doo",
+            "/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo",
+            "/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-doo",
+            "/nOh I want s"
+        ],
+        [
+            "omething just like",
+            " this/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-do",
+            "o/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo",
+            "/nDoo-doo-d"
+        ],
+        [
+            "oo, doo-doo-doo",
+            "/nWh"
+        ],
+        [
+            "ere'd ya wanna",
+            " go?/nHow m"
+        ],
+        [
+            "uch you wanna ri",
+            "sk?/nI'm not l"
+        ],
+        [
+            "ooking for so",
+            "mebody/nWith some s"
+        ],
+        [
+            "uperhuman gi",
+            "fts/nSome s"
+        ],
+        [
+            "uperhero",
+            "/nSome f"
+        ],
+        [
+            "airytale bli",
+            "ss/nJust s"
+        ],
+        [
+            "omething I can tu",
+            "rn to/nSomeb"
+        ],
+        [
+            "ody I can ki",
+            "ss/nI want s"
+        ],
+        [
+            "omething just like",
+            " this",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [
+            "ant something ju",
+            "st lik",
+            "e this",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "FM7MFYoylVs",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

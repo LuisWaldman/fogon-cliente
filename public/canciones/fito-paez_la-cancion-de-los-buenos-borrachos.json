@@ -1,1 +1,370 @@
-{"cancion": "la-cancion-de-los-buenos-borrachos", "banda": "fito-paez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "A", "G", "D", "G", "D"]}, {"nombre": "parte2", "acordes": ["A", "D"]}, {"nombre": "parte3", "acordes": ["G"]}, {"nombre": "parte4", "acordes": ["A", "Bm", "G", "Bm"]}], "orden_partes": [0, 1, 0, 2, 3, 2, 0, 1, 0, 1, 0, 1, 2, 1, 1, 2, 0, 1, 0, 1, 0, 1, 0, 1, 2, 1, 2, 1, 0, 1, 0, 1, 0, 1, 0, 1]}, "letras": [["Cuatro gotas/nde alq"], ["uitran en la voz,/nsiete "], ["notas/nempap"], ["adas de alcohol/ncampa"], ["nadas/nen el "], ["fondo del mar,/ncarcaj"], ["adas/nque me hicieron l"], ["lorar.../nCon un "], ["loro/nque blasf"], ["ema en latin,/nle hacen "], ["coro/nlos 'sul"], ["tanes del swing'/ny una b"], ["ig band/ncon un trom"], ["bon y bombin/n"], ["de Nu", "eva Orlean", "s/n"], ["en mi funeral", "", "/nY ese t"], ["ango/ncompadr"], ["ito del sur/ny un fand"], ["ango/nde git"], ["ano andaluz/ny un p"], ["iano/ncon dos c"], ["opas de mas,/ny unas m"], ["anos/nque lo sepan t"], ["ocar./nOraci"], ["ones/npara g"], ["ente sin fe,/ntentaci"], ["ones/nde volv"], ["er a beber/nel ven"], ["eno/nque tus l"], ["abios me dan,/nel obsc"], ["eno/nbeso de la verd"], ["ad./nLa bal"], ["ada/nde la c"], ["asada infiel,/ndemasi"], ["adas/ncosas p"], ["or aprender,/nel port"], ["ero/nde la Pu"], ["erta del Sol,/nel cart"], ["ero/nde tus c"], ["artas de amor,/nel pria"], ["mero/nen sac"], ["arte a baila", "r/n"], ["un va", "ls./nEl v"], ["als/nde la trist"], ["eza mas triste del mu", "ndo,/nla bell"], ["eza que dilapid", "e,/nla per"], ["eza de los vagab", "undos,/nel rompecab"], ["ezas que no termin", "e/nLa pal"], ["abra secreta, la ma", "no/nque planta vio"], ["letas en el hormig", "on,/nla mald"], ["ita cancion del ver", "ano,/nla casa de c"], ["itas de mi coraz", "on./nY el mi"], ["lagro del abeced", "ario,/nla tor"], ["tuga que rompe a vol", "ar,/nla ter"], ["nura de los dinosa", "urios,/nel aniver"], ["sario de la soled", "ad./nLa lit"], ["urgia de las desped", "idas/nla bala per"], ["dida que viene por m", "i,/nla nos"], ["talgia que amarga la hu", "ida,/nla banda so"], ["nora de lo que viv", "i./nla banda so"], ["nora de l", "o que vivi", "/nla banda so"], ["nora de l", "o que vivi", "/nLa canc"], ["ion de los buenos borr", "achos/nque, de madru"], ["gada, vuelven al hog", "ar,/nla canc"], ["ion que atropella los t", "achos/nllenos de ba"], ["sura de la Capit", "al./nLa canc"], ["ion que se canta al o", "ido,/nla canc"], ["ion que no quieres o", "ir,/nla can"], ["tamos los malos ma", "ridos/ncuando, en el olv"], ["ido, pensamos en t", "i/nLa canc"], ["ion de los buenos borr", "achos/nque, de madru"], ["gada, vuelven al hog", "ar,/nla canc"], ["ion que atropella los t", "achos/nllenos de ba"], ["sura de la Capit", "al./nLa canc"], ["ion que se canta al o", "ido,/nla canc"], ["ion que no supe escrib", "ir,/nla can"], ["tamos los malos mar", "idos/ncuando, en el ol"], ["vido, pensamos en t", "i"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "sefZbwgTVMs", "delay": 0}]}
+{
+    "cancion": "la-cancion-de-los-buenos-borrachos",
+    "banda": "fito-paez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A",
+                    "G",
+                    "D",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "G",
+                    "Bm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            3,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Cuatro gotas/nde alq"
+        ],
+        [
+            "uitran en la voz,/nsiete "
+        ],
+        [
+            "notas/nempap"
+        ],
+        [
+            "adas de alcohol/ncampa"
+        ],
+        [
+            "nadas/nen el "
+        ],
+        [
+            "fondo del mar,/ncarcaj"
+        ],
+        [
+            "adas/nque me hicieron l"
+        ],
+        [
+            "lorar.../nCon un "
+        ],
+        [
+            "loro/nque blasf"
+        ],
+        [
+            "ema en latin,/nle hacen "
+        ],
+        [
+            "coro/nlos 'sul"
+        ],
+        [
+            "tanes del swing'/ny una b"
+        ],
+        [
+            "ig band/ncon un trom"
+        ],
+        [
+            "bon y bombin/n"
+        ],
+        [
+            "de Nu",
+            "eva Orlean",
+            "s/n"
+        ],
+        [
+            "en mi funeral",
+            "",
+            "/nY ese t"
+        ],
+        [
+            "ango/ncompadr"
+        ],
+        [
+            "ito del sur/ny un fand"
+        ],
+        [
+            "ango/nde git"
+        ],
+        [
+            "ano andaluz/ny un p"
+        ],
+        [
+            "iano/ncon dos c"
+        ],
+        [
+            "opas de mas,/ny unas m"
+        ],
+        [
+            "anos/nque lo sepan t"
+        ],
+        [
+            "ocar./nOraci"
+        ],
+        [
+            "ones/npara g"
+        ],
+        [
+            "ente sin fe,/ntentaci"
+        ],
+        [
+            "ones/nde volv"
+        ],
+        [
+            "er a beber/nel ven"
+        ],
+        [
+            "eno/nque tus l"
+        ],
+        [
+            "abios me dan,/nel obsc"
+        ],
+        [
+            "eno/nbeso de la verd"
+        ],
+        [
+            "ad./nLa bal"
+        ],
+        [
+            "ada/nde la c"
+        ],
+        [
+            "asada infiel,/ndemasi"
+        ],
+        [
+            "adas/ncosas p"
+        ],
+        [
+            "or aprender,/nel port"
+        ],
+        [
+            "ero/nde la Pu"
+        ],
+        [
+            "erta del Sol,/nel cart"
+        ],
+        [
+            "ero/nde tus c"
+        ],
+        [
+            "artas de amor,/nel pria"
+        ],
+        [
+            "mero/nen sac"
+        ],
+        [
+            "arte a baila",
+            "r/n"
+        ],
+        [
+            "un va",
+            "ls./nEl v"
+        ],
+        [
+            "als/nde la trist"
+        ],
+        [
+            "eza mas triste del mu",
+            "ndo,/nla bell"
+        ],
+        [
+            "eza que dilapid",
+            "e,/nla per"
+        ],
+        [
+            "eza de los vagab",
+            "undos,/nel rompecab"
+        ],
+        [
+            "ezas que no termin",
+            "e/nLa pal"
+        ],
+        [
+            "abra secreta, la ma",
+            "no/nque planta vio"
+        ],
+        [
+            "letas en el hormig",
+            "on,/nla mald"
+        ],
+        [
+            "ita cancion del ver",
+            "ano,/nla casa de c"
+        ],
+        [
+            "itas de mi coraz",
+            "on./nY el mi"
+        ],
+        [
+            "lagro del abeced",
+            "ario,/nla tor"
+        ],
+        [
+            "tuga que rompe a vol",
+            "ar,/nla ter"
+        ],
+        [
+            "nura de los dinosa",
+            "urios,/nel aniver"
+        ],
+        [
+            "sario de la soled",
+            "ad./nLa lit"
+        ],
+        [
+            "urgia de las desped",
+            "idas/nla bala per"
+        ],
+        [
+            "dida que viene por m",
+            "i,/nla nos"
+        ],
+        [
+            "talgia que amarga la hu",
+            "ida,/nla banda so"
+        ],
+        [
+            "nora de lo que viv",
+            "i./nla banda so"
+        ],
+        [
+            "nora de l",
+            "o que vivi",
+            "/nla banda so"
+        ],
+        [
+            "nora de l",
+            "o que vivi",
+            "/nLa canc"
+        ],
+        [
+            "ion de los buenos borr",
+            "achos/nque, de madru"
+        ],
+        [
+            "gada, vuelven al hog",
+            "ar,/nla canc"
+        ],
+        [
+            "ion que atropella los t",
+            "achos/nllenos de ba"
+        ],
+        [
+            "sura de la Capit",
+            "al./nLa canc"
+        ],
+        [
+            "ion que se canta al o",
+            "ido,/nla canc"
+        ],
+        [
+            "ion que no quieres o",
+            "ir,/nla can"
+        ],
+        [
+            "tamos los malos ma",
+            "ridos/ncuando, en el olv"
+        ],
+        [
+            "ido, pensamos en t",
+            "i/nLa canc"
+        ],
+        [
+            "ion de los buenos borr",
+            "achos/nque, de madru"
+        ],
+        [
+            "gada, vuelven al hog",
+            "ar,/nla canc"
+        ],
+        [
+            "ion que atropella los t",
+            "achos/nllenos de ba"
+        ],
+        [
+            "sura de la Capit",
+            "al./nLa canc"
+        ],
+        [
+            "ion que se canta al o",
+            "ido,/nla canc"
+        ],
+        [
+            "ion que no supe escrib",
+            "ir,/nla can"
+        ],
+        [
+            "tamos los malos mar",
+            "idos/ncuando, en el ol"
+        ],
+        [
+            "vido, pensamos en t",
+            "i"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "sefZbwgTVMs",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

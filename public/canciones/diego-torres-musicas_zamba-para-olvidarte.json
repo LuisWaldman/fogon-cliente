@@ -1,1 +1,425 @@
-{"cancion": "zamba-para-olvidarte", "banda": "diego-torres-musicas", "escala": "G#m", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G#m", "E", "B7", "B", "E", "G#", "G#7", "C#m", "D#m7", "Emaj7", "G#", "C#m", "G#7", "C#m", "C#m", "G#m", "C#m", "G#m", "C#m", "G#m", "C#m", "A", "G#m", "A", "F#m7", "G#m", "G#", "A", "G#m", "C#m", "F#", "C#m", "G#", "G#7", "C#m", "G#m", "C#m", "G#m", "C#m", "G#m", "C#m", "E", "Amaj7", "A", "G#m", "A", "F#m", "G#7", "G#", "C#m", "Am", "B", "C#m", "F#m", "F#", "C#m", "B7", "A7", "G#7", "C#m", "E", "A", "F#m7", "G#7", "G#", "A", "G#m", "F#m", "A", "A7", "G#7", "A", "E", "F#7", "A7", "G#7", "G#", "C#m", "C#m", "A", "G#", "Amaj7", "B7", "G#m7", "C#7", "F#m7", "G#7", "A7", "F#", "F#7", "G#7", "F#", "A", "G#m7", "C#m", "F#", "A", "C#", "C#m", "G#m7", "C#m7", "G#m7", "C#m7", "E7", "Amaj7", "G#m7", "A", "F#m", "F#m7", "G#", "G#m", "C#", "F#m", "B", "C#m", "F#m7", "C#m", "G#m", "C#m", "G#m", "C#m", "G#m", "C#m", "G#m", "C#m", "E7", "Amaj7", "G#m", "Amaj7", "A", "F#m", "F#m7", "G#7", "G#", "C#", "A", "G#m", "C#m", "F#", "C#m", "B7", "A", "G#7", "G#", "C#m", "E", "Amaj7", "F#m", "G#7", "Amaj7", "G#m7", "F#m7", "A7", "G#7", "A", "G#7", "F#7", "A", "G#", "C#m", "G#m", "C#m"]}], "orden_partes": [0]}, "letras": [[], [], [], [], [], [], [], ["[Verse 1]/n"], ["    No s\u00e9 para ", "qu\u00e9 vo", "lviste", "/n"], ["    si ya ", "empezaba a", " olvidar./n"], ["  No s\u00e9 si ya lo sa", "br\u00e1s,/nllo"], ["r\u00e9 cuando", " vos te f", "uiste", "./nNo "], ["s\u00e9 para qu\u00e9 vo", "lviste,/nqu\u00e9"], [" mal me hace ", "recorda", "r.", "", "/n"], ["    La tarde se ha pu", "esto tr", "iste", "/n"], ["y yo pre", "fiero call", "ar.", "/n"], ["     Para qu\u00e9 vamos ", "a habl", "ar/nde "], ["cosas que ", "ya no exii", "iisten", "/nNo "], ["s\u00e9 para qu", " volv", "iste,/nya v"], ["es, es mej", "oooor", " no hab", "lar.", "", "/nQu\u00e9 p"], ["eeena me da/nsa"], ["ber que al final/n"], ["de este am", "or ya no qued", "a nada", "./n"], ["S\u00f3lo u", "na po", "bre canci", "n/nda vu"], ["eltas", " por mi guita", "rra,/n"], ["  y hace rato ", "que te extr", "a\u00f1a,/nmi z"], ["amba ", "   pa", "ra olvidar.", "/n"], [], [], [], [], [], [], [], [], [], [], [], [], [], [], ["[Ver", "se 3]/nMi zam"], ["ba vivi\u00f3 con", "miiigo", "/n"], ["parte de m", "i soled", "ad.", "/n"], ["     No s\u00e9 si ya lo sabr", "\u00e1s,/nMi v"], ["ida ", "   se fue  c", "ontiii", "go.", "/nCont"], ["igo, mi amor,", "   contigo,", "/nqu\u00e9"], [" mal me hace r", "ecordar.", "/n"], ["    Mis manos ", " ya son d", "e bar", "ro", "/n"], ["    tanto", " apretar el dolor", ".", "/n"], ["     Y ahora que me falta el so", "ool/nno "], ["s\u00e9   qu", "\u00e9 ven", "\u00eds busc", "aaaaaa", "aandoo", "o./nLlor"], ["aaan", "do, mi amor, llora", "ndo,/ntamb"], ["i\u00e9n olvida", "aame vo", "oos.", "", "/nQu\u00e9 "], ["peeena me da", "/nsa"], ["ber que al final/nde"], [" este amo", "r ya no queda", " naaaad", "a./n"], ["     S\u00f3lo una ", "pobre canci", "\u00f3n/nda vu"], ["eltas por mi guitarr", "a,/ny"], [" hace rato que ", "te extra\u00f1", "a,/nmi z"], ["amba", " para olvidar", ".", "", ""]], "medias": [{"tipo": "Youtube", "id": "4Q__F9gVFUY", "delay": 0}]}
+{
+    "cancion": "zamba-para-olvidarte",
+    "banda": "diego-torres-musicas",
+    "escala": "G#m",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G#m",
+                    "E",
+                    "B7",
+                    "B",
+                    "E",
+                    "G#",
+                    "G#7",
+                    "C#m",
+                    "D#m7",
+                    "Emaj7",
+                    "G#",
+                    "C#m",
+                    "G#7",
+                    "C#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "A",
+                    "G#m",
+                    "A",
+                    "F#m7",
+                    "G#m",
+                    "G#",
+                    "A",
+                    "G#m",
+                    "C#m",
+                    "F#",
+                    "C#m",
+                    "G#",
+                    "G#7",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "E",
+                    "Amaj7",
+                    "A",
+                    "G#m",
+                    "A",
+                    "F#m",
+                    "G#7",
+                    "G#",
+                    "C#m",
+                    "Am",
+                    "B",
+                    "C#m",
+                    "F#m",
+                    "F#",
+                    "C#m",
+                    "B7",
+                    "A7",
+                    "G#7",
+                    "C#m",
+                    "E",
+                    "A",
+                    "F#m7",
+                    "G#7",
+                    "G#",
+                    "A",
+                    "G#m",
+                    "F#m",
+                    "A",
+                    "A7",
+                    "G#7",
+                    "A",
+                    "E",
+                    "F#7",
+                    "A7",
+                    "G#7",
+                    "G#",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "G#",
+                    "Amaj7",
+                    "B7",
+                    "G#m7",
+                    "C#7",
+                    "F#m7",
+                    "G#7",
+                    "A7",
+                    "F#",
+                    "F#7",
+                    "G#7",
+                    "F#",
+                    "A",
+                    "G#m7",
+                    "C#m",
+                    "F#",
+                    "A",
+                    "C#",
+                    "C#m",
+                    "G#m7",
+                    "C#m7",
+                    "G#m7",
+                    "C#m7",
+                    "E7",
+                    "Amaj7",
+                    "G#m7",
+                    "A",
+                    "F#m",
+                    "F#m7",
+                    "G#",
+                    "G#m",
+                    "C#",
+                    "F#m",
+                    "B",
+                    "C#m",
+                    "F#m7",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "G#m",
+                    "C#m",
+                    "E7",
+                    "Amaj7",
+                    "G#m",
+                    "Amaj7",
+                    "A",
+                    "F#m",
+                    "F#m7",
+                    "G#7",
+                    "G#",
+                    "C#",
+                    "A",
+                    "G#m",
+                    "C#m",
+                    "F#",
+                    "C#m",
+                    "B7",
+                    "A",
+                    "G#7",
+                    "G#",
+                    "C#m",
+                    "E",
+                    "Amaj7",
+                    "F#m",
+                    "G#7",
+                    "Amaj7",
+                    "G#m7",
+                    "F#m7",
+                    "A7",
+                    "G#7",
+                    "A",
+                    "G#7",
+                    "F#7",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "G#m",
+                    "C#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[Verse 1]/n"
+        ],
+        [
+            "    No sé para ",
+            "qué vo",
+            "lviste",
+            "/n"
+        ],
+        [
+            "    si ya ",
+            "empezaba a",
+            " olvidar./n"
+        ],
+        [
+            "  No sé si ya lo sa",
+            "brás,/nllo"
+        ],
+        [
+            "ré cuando",
+            " vos te f",
+            "uiste",
+            "./nNo "
+        ],
+        [
+            "sé para qué vo",
+            "lviste,/nqué"
+        ],
+        [
+            " mal me hace ",
+            "recorda",
+            "r.",
+            "",
+            "/n"
+        ],
+        [
+            "    La tarde se ha pu",
+            "esto tr",
+            "iste",
+            "/n"
+        ],
+        [
+            "y yo pre",
+            "fiero call",
+            "ar.",
+            "/n"
+        ],
+        [
+            "     Para qué vamos ",
+            "a habl",
+            "ar/nde "
+        ],
+        [
+            "cosas que ",
+            "ya no exii",
+            "iisten",
+            "/nNo "
+        ],
+        [
+            "sé para qu",
+            " volv",
+            "iste,/nya v"
+        ],
+        [
+            "es, es mej",
+            "oooor",
+            " no hab",
+            "lar.",
+            "",
+            "/nQué p"
+        ],
+        [
+            "eeena me da/nsa"
+        ],
+        [
+            "ber que al final/n"
+        ],
+        [
+            "de este am",
+            "or ya no qued",
+            "a nada",
+            "./n"
+        ],
+        [
+            "Sólo u",
+            "na po",
+            "bre canci",
+            "n/nda vu"
+        ],
+        [
+            "eltas",
+            " por mi guita",
+            "rra,/n"
+        ],
+        [
+            "  y hace rato ",
+            "que te extr",
+            "aña,/nmi z"
+        ],
+        [
+            "amba ",
+            "   pa",
+            "ra olvidar.",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[Ver",
+            "se 3]/nMi zam"
+        ],
+        [
+            "ba vivió con",
+            "miiigo",
+            "/n"
+        ],
+        [
+            "parte de m",
+            "i soled",
+            "ad.",
+            "/n"
+        ],
+        [
+            "     No sé si ya lo sabr",
+            "ás,/nMi v"
+        ],
+        [
+            "ida ",
+            "   se fue  c",
+            "ontiii",
+            "go.",
+            "/nCont"
+        ],
+        [
+            "igo, mi amor,",
+            "   contigo,",
+            "/nqué"
+        ],
+        [
+            " mal me hace r",
+            "ecordar.",
+            "/n"
+        ],
+        [
+            "    Mis manos ",
+            " ya son d",
+            "e bar",
+            "ro",
+            "/n"
+        ],
+        [
+            "    tanto",
+            " apretar el dolor",
+            ".",
+            "/n"
+        ],
+        [
+            "     Y ahora que me falta el so",
+            "ool/nno "
+        ],
+        [
+            "sé   qu",
+            "é ven",
+            "ís busc",
+            "aaaaaa",
+            "aandoo",
+            "o./nLlor"
+        ],
+        [
+            "aaan",
+            "do, mi amor, llora",
+            "ndo,/ntamb"
+        ],
+        [
+            "ién olvida",
+            "aame vo",
+            "oos.",
+            "",
+            "/nQué "
+        ],
+        [
+            "peeena me da",
+            "/nsa"
+        ],
+        [
+            "ber que al final/nde"
+        ],
+        [
+            " este amo",
+            "r ya no queda",
+            " naaaad",
+            "a./n"
+        ],
+        [
+            "     Sólo una ",
+            "pobre canci",
+            "ón/nda vu"
+        ],
+        [
+            "eltas por mi guitarr",
+            "a,/ny"
+        ],
+        [
+            " hace rato que ",
+            "te extrañ",
+            "a,/nmi z"
+        ],
+        [
+            "amba",
+            " para olvidar",
+            ".",
+            "",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "4Q__F9gVFUY",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

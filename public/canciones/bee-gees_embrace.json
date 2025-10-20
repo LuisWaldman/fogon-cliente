@@ -1,1 +1,388 @@
-{"cancion": "embrace", "banda": "bee-gees", "escala": "B", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["B", "F#", "E", "F#", "B", "F#", "E", "F#", "B", "F#", "E", "A", "E", "B", "F#", "E", "A", "E", "A", "B", "F#", "E", "F#", "B", "F#", "E", "B", "F#", "E", "F#", "B", "F#", "E", "B", "F#", "E", "A", "B", "F#", "E", "A", "B", "B", "F#", "E", "F#", "C", "G", "F", "Bb", "F", "C", "G", "F", "Bb", "F", "C", "G", "F", "G", "C", "G", "F", "C", "G", "F", "G", "C", "G", "F", "C", "G", "F", "Bb", "C", "G", "F", "Bb", "C", "G", "F", "G", "C", "G", "F", "C", "G", "F", "G", "C", "G", "F", "G", "D", "A", "G", "D", "A", "G", "D", "A", "G", "C", "D", "A", "G", "C", "D", "A", "G", "C", "D", "A", "G", "C", "D", "A", "G", "C", "D", "C", "G"]}], "orden_partes": [0]}, "letras": [["I don't know what you want/n"], ["I don't hear what you said/n"], ["Truth behind the lies/n"], ["Cause I can't see what's in your head/nAnd "], ["spread your wings and fly/n"], ["Out in a brave new world/n"], ["Let this be my prayer/n"], ["To keep you safe when I'm not there/n"], ["Can we love and liv", "e apart", "?/n"], ["I don't know, no, I", " don't know/n"], ["How can we divi", "de the he", "art?/n"], ["I don't know, no, I", " don't know", "/n"], ["And when the n", "ight falls, a", "nd when the sky", " falls/n"], ["I long for y", "our embrac", "e/n"], ["And in the c", "old night, un", "der the str", "eet light/n"], ["I long for y", "our embrac", "e/n"], ["Livin' separate li", "ves/nI have "], ["faith in you, awa", "y from you/n"], ["Like a lonely chi", "ld/nI will ha"], ["ng on every wo", "rd/nEmbr"], ["ace/n"], ["Through the mists of time/n"], ["Lovers can be friends/n"], ["The power of the human heart/n"], ["The secrets in the souls of men/n"], ["All my blessings i", "n disguis", "e/n"], ["I don't know, no, I", " don't know/n"], ["Reunited we", " will ris", "e/n"], ["I don't know, no, I", " don't know/n"], ["And when the n", "ight falls, a", "nd when the sky", " falls/n"], ["I long for y", "our embrac", "e/n"], ["And in the c", "old night, u", "nder the str", "eet light/n"], ["I long for y", "our embrac", "e/n"], ["Livin' separate li", "ves/nI have f"], ["aith in you, awa", "y from you/n"], ["Like a lonely c", "hild/nI will "], ["hang on every w", "ord/n"], ["And when the n", "ight falls, a", "nd when the sky", " falls/n"], ["I long for y", "our embrac", "e/n"], ["Another d", "aybreak, a", "nother hea", "rtache/n"], ["I long for y", "our embrac", "e", "/n"], ["Living separate l", "ives/nAw"], ["ay from you/nEmbr"], ["ace, embra", "ce/nThe l"], ["onely, lonely life/n"], ["Lonely days and n", "ights (away from you)/n"], ["We can live our l", "ife/n"], ["(Embrace, embr", "ace)/n"], ["With our separate l", "ives/n"], ["Embrace, embr", "ace/nThe l"], ["onely, lonely l", "ives/n"], ["Lonely days and n", "ights/nI will "], ["never send a", "way/nEmbr"], ["ace, embra", "ce/nThe "], ["lonely, lonely li", "ves/nEm"], ["brace the child insi", "de/nThe l"], ["onely, lonely lives"]], "medias": [{"tipo": "Youtube", "id": "qlOoGwWE7Ck", "delay": 0}]}
+{
+    "cancion": "embrace",
+    "banda": "bee-gees",
+    "escala": "B",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B",
+                    "F#",
+                    "E",
+                    "F#",
+                    "B",
+                    "F#",
+                    "E",
+                    "F#",
+                    "B",
+                    "F#",
+                    "E",
+                    "A",
+                    "E",
+                    "B",
+                    "F#",
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "B",
+                    "F#",
+                    "E",
+                    "F#",
+                    "B",
+                    "F#",
+                    "E",
+                    "B",
+                    "F#",
+                    "E",
+                    "F#",
+                    "B",
+                    "F#",
+                    "E",
+                    "B",
+                    "F#",
+                    "E",
+                    "A",
+                    "B",
+                    "F#",
+                    "E",
+                    "A",
+                    "B",
+                    "B",
+                    "F#",
+                    "E",
+                    "F#",
+                    "C",
+                    "G",
+                    "F",
+                    "Bb",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "Bb",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "Bb",
+                    "C",
+                    "G",
+                    "F",
+                    "Bb",
+                    "C",
+                    "G",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "F",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "C",
+                    "D",
+                    "A",
+                    "G",
+                    "C",
+                    "D",
+                    "A",
+                    "G",
+                    "C",
+                    "D",
+                    "A",
+                    "G",
+                    "C",
+                    "D",
+                    "A",
+                    "G",
+                    "C",
+                    "D",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "I don't know what you want/n"
+        ],
+        [
+            "I don't hear what you said/n"
+        ],
+        [
+            "Truth behind the lies/n"
+        ],
+        [
+            "Cause I can't see what's in your head/nAnd "
+        ],
+        [
+            "spread your wings and fly/n"
+        ],
+        [
+            "Out in a brave new world/n"
+        ],
+        [
+            "Let this be my prayer/n"
+        ],
+        [
+            "To keep you safe when I'm not there/n"
+        ],
+        [
+            "Can we love and liv",
+            "e apart",
+            "?/n"
+        ],
+        [
+            "I don't know, no, I",
+            " don't know/n"
+        ],
+        [
+            "How can we divi",
+            "de the he",
+            "art?/n"
+        ],
+        [
+            "I don't know, no, I",
+            " don't know",
+            "/n"
+        ],
+        [
+            "And when the n",
+            "ight falls, a",
+            "nd when the sky",
+            " falls/n"
+        ],
+        [
+            "I long for y",
+            "our embrac",
+            "e/n"
+        ],
+        [
+            "And in the c",
+            "old night, un",
+            "der the str",
+            "eet light/n"
+        ],
+        [
+            "I long for y",
+            "our embrac",
+            "e/n"
+        ],
+        [
+            "Livin' separate li",
+            "ves/nI have "
+        ],
+        [
+            "faith in you, awa",
+            "y from you/n"
+        ],
+        [
+            "Like a lonely chi",
+            "ld/nI will ha"
+        ],
+        [
+            "ng on every wo",
+            "rd/nEmbr"
+        ],
+        [
+            "ace/n"
+        ],
+        [
+            "Through the mists of time/n"
+        ],
+        [
+            "Lovers can be friends/n"
+        ],
+        [
+            "The power of the human heart/n"
+        ],
+        [
+            "The secrets in the souls of men/n"
+        ],
+        [
+            "All my blessings i",
+            "n disguis",
+            "e/n"
+        ],
+        [
+            "I don't know, no, I",
+            " don't know/n"
+        ],
+        [
+            "Reunited we",
+            " will ris",
+            "e/n"
+        ],
+        [
+            "I don't know, no, I",
+            " don't know/n"
+        ],
+        [
+            "And when the n",
+            "ight falls, a",
+            "nd when the sky",
+            " falls/n"
+        ],
+        [
+            "I long for y",
+            "our embrac",
+            "e/n"
+        ],
+        [
+            "And in the c",
+            "old night, u",
+            "nder the str",
+            "eet light/n"
+        ],
+        [
+            "I long for y",
+            "our embrac",
+            "e/n"
+        ],
+        [
+            "Livin' separate li",
+            "ves/nI have f"
+        ],
+        [
+            "aith in you, awa",
+            "y from you/n"
+        ],
+        [
+            "Like a lonely c",
+            "hild/nI will "
+        ],
+        [
+            "hang on every w",
+            "ord/n"
+        ],
+        [
+            "And when the n",
+            "ight falls, a",
+            "nd when the sky",
+            " falls/n"
+        ],
+        [
+            "I long for y",
+            "our embrac",
+            "e/n"
+        ],
+        [
+            "Another d",
+            "aybreak, a",
+            "nother hea",
+            "rtache/n"
+        ],
+        [
+            "I long for y",
+            "our embrac",
+            "e",
+            "/n"
+        ],
+        [
+            "Living separate l",
+            "ives/nAw"
+        ],
+        [
+            "ay from you/nEmbr"
+        ],
+        [
+            "ace, embra",
+            "ce/nThe l"
+        ],
+        [
+            "onely, lonely life/n"
+        ],
+        [
+            "Lonely days and n",
+            "ights (away from you)/n"
+        ],
+        [
+            "We can live our l",
+            "ife/n"
+        ],
+        [
+            "(Embrace, embr",
+            "ace)/n"
+        ],
+        [
+            "With our separate l",
+            "ives/n"
+        ],
+        [
+            "Embrace, embr",
+            "ace/nThe l"
+        ],
+        [
+            "onely, lonely l",
+            "ives/n"
+        ],
+        [
+            "Lonely days and n",
+            "ights/nI will "
+        ],
+        [
+            "never send a",
+            "way/nEmbr"
+        ],
+        [
+            "ace, embra",
+            "ce/nThe "
+        ],
+        [
+            "lonely, lonely li",
+            "ves/nEm"
+        ],
+        [
+            "brace the child insi",
+            "de/nThe l"
+        ],
+        [
+            "onely, lonely lives"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "qlOoGwWE7Ck",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

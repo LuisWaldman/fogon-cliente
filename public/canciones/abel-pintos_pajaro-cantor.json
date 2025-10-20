@@ -1,1 +1,390 @@
-{"cancion": "pajaro-cantor", "banda": "abel-pintos", "escala": "Bm", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm", "A", "E", "F#m", "D", "A", "D", "E", "Bm", "A", "E", "F#m", "D", "A", "D", "E", "B", "E", "B", "F#", "C#m", "G#m", "B", "F#", "B", "E", "D#7", "G#m", "E", "B", "G#m", "F#", "E", "F#", "G#m", "Bm", "A", "E", "F#m", "D", "A", "D", "E", "Bm", "A", "E", "F#m", "D", "A", "D", "E", "B", "E", "B", "F#", "C#m", "G#m", "B", "F#", "B", "E", "D#7", "G#m", "E", "B", "G#m", "F#", "E", "F#", "G#m", "Bm", "A", "E", "F#m", "D", "A", "D", "E", "Bm", "A", "E", "F#m", "D", "A", "E", "B", "E", "B", "F#", "C#m", "G#m", "B", "F#", "B", "E", "D#7", "G#m", "E", "B", "G#m", "F#", "E", "F#", "B", "E", "B", "G#m", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "G#m", "B", "F#", "E", "F#", "G#m"]}], "orden_partes": [0]}, "letras": [["Hay un modo de ve", "r las cosas/n"], ["que no tiene sen", "tido/n"], ["yo vivo para los d", "os/n"], ["y vos quem\u00e1s lo ", "vivido./n"], ["Vuelo siempre a tu alr", "ededor/n"], ["acaso no lo ", "ves/n"], ["cuando m\u00e1s pienso en ", "todo/n"], ["me sale todo al r", "ev\u00e9s./n"], ["No tengo que vo", "lver/n"], ["si nunca me f", "ui/n"], ["siempre dimos una vu", "elta m\u00e1s/n"], ["antes de dor", "mir/n"], ["No tengo que g", "anar/n"], ["si nunca p", "erd\u00ed/n"], ["este canto a\u00f1il de p", "\u00e1jaro cantor/n"], ["que canta hasta mor", "ir/n"], ["canta ha", "sta mor", "ir...    (PERMANECE EN G#m)/n"], ["Caminos por la c", "ornisa/n"], ["cada vez que i", "ntentamos/n"], ["apagar el i", "ncendio/n"], ["tom\u00e1ndonos de la ", "manos/n"], ["Ardo siempre a tu ", "alrededor/n"], ["acaso no lo ", "ves/n"], ["cuando caigo en tus o", "jos/n"], ["me cae todo al r", "ev\u00e9s./n"], ["No tengo que v", "olver/n"], ["si nunca me f", "ui/n"], ["siempre dimos una vu", "elta m\u00e1s/n"], ["antes de do", "rmir/n"], ["No puedo ol", "vidar/n"], ["si nunca se", "nt\u00ed/n"], ["este vuelo hostil espina de t", "u amor/n"], ["que duele hasta m", "orir/n"], ["duele h", "asta mor", "ir.../n"], ["Carnavales en p", "leno invierno/n"], ["cancioncita d", "ivina/n"], ["pa\u00f1uelos para el ", "adi\u00f3s/n"], ["y que Dios no lo per", "mita.../n"], ["Quiero vivir a tu a", "lrededor/n"], ["\u00bfAcaso no lo ", "ves?/n"], ["cuando te vas queda t", "odo/nal r"], ["ev\u00e9s.../n"], ["No tengo que v", "olver/n"], ["si nunca me f", "ui/n"], ["siempre dimos una v", "uelta m\u00e1s/n"], ["antes de d", "ormir./n"], ["No voy a a", "bandonar/n"], ["si nunca cu", "mpl\u00ed/n"], ["este sue\u00f1o fiel de loco ", "so\u00f1ador/n"], ["que sue\u00f1a hasta ", "morir/n"], ["sue\u00f1a h", "asta mo", "rir.../n"], ["Siempre dimos una vu", "elta mas/n"], ["antes de dorm", "ir.../n"], ["Este canto a\u00f1il de ", "p\u00e1jaro cantor..", "./n"], ["Este duelo hostil es", "pina de tu amor...", "/n"], ["Este sue\u00f1o fiel de ", "loco so\u00f1ador/n"], ["que sue\u00f1a has", "ta morir", ".../n"], ["Canta ha", "sta mor", "ir..."]], "medias": [{"tipo": "Youtube", "id": "PcjILDwbqcA", "delay": 0}]}
+{
+    "cancion": "pajaro-cantor",
+    "banda": "abel-pintos",
+    "escala": "Bm",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "D",
+                    "E",
+                    "Bm",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "D",
+                    "E",
+                    "B",
+                    "E",
+                    "B",
+                    "F#",
+                    "C#m",
+                    "G#m",
+                    "B",
+                    "F#",
+                    "B",
+                    "E",
+                    "D#7",
+                    "G#m",
+                    "E",
+                    "B",
+                    "G#m",
+                    "F#",
+                    "E",
+                    "F#",
+                    "G#m",
+                    "Bm",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "D",
+                    "E",
+                    "Bm",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "D",
+                    "E",
+                    "B",
+                    "E",
+                    "B",
+                    "F#",
+                    "C#m",
+                    "G#m",
+                    "B",
+                    "F#",
+                    "B",
+                    "E",
+                    "D#7",
+                    "G#m",
+                    "E",
+                    "B",
+                    "G#m",
+                    "F#",
+                    "E",
+                    "F#",
+                    "G#m",
+                    "Bm",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "D",
+                    "E",
+                    "Bm",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "B",
+                    "E",
+                    "B",
+                    "F#",
+                    "C#m",
+                    "G#m",
+                    "B",
+                    "F#",
+                    "B",
+                    "E",
+                    "D#7",
+                    "G#m",
+                    "E",
+                    "B",
+                    "G#m",
+                    "F#",
+                    "E",
+                    "F#",
+                    "B",
+                    "E",
+                    "B",
+                    "G#m",
+                    "F#",
+                    "E",
+                    "B",
+                    "F#",
+                    "E",
+                    "B",
+                    "F#",
+                    "E",
+                    "B",
+                    "G#m",
+                    "B",
+                    "F#",
+                    "E",
+                    "F#",
+                    "G#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Hay un modo de ve",
+            "r las cosas/n"
+        ],
+        [
+            "que no tiene sen",
+            "tido/n"
+        ],
+        [
+            "yo vivo para los d",
+            "os/n"
+        ],
+        [
+            "y vos quemás lo ",
+            "vivido./n"
+        ],
+        [
+            "Vuelo siempre a tu alr",
+            "ededor/n"
+        ],
+        [
+            "acaso no lo ",
+            "ves/n"
+        ],
+        [
+            "cuando más pienso en ",
+            "todo/n"
+        ],
+        [
+            "me sale todo al r",
+            "evés./n"
+        ],
+        [
+            "No tengo que vo",
+            "lver/n"
+        ],
+        [
+            "si nunca me f",
+            "ui/n"
+        ],
+        [
+            "siempre dimos una vu",
+            "elta más/n"
+        ],
+        [
+            "antes de dor",
+            "mir/n"
+        ],
+        [
+            "No tengo que g",
+            "anar/n"
+        ],
+        [
+            "si nunca p",
+            "erdí/n"
+        ],
+        [
+            "este canto añil de p",
+            "ájaro cantor/n"
+        ],
+        [
+            "que canta hasta mor",
+            "ir/n"
+        ],
+        [
+            "canta ha",
+            "sta mor",
+            "ir...    (PERMANECE EN G#m)/n"
+        ],
+        [
+            "Caminos por la c",
+            "ornisa/n"
+        ],
+        [
+            "cada vez que i",
+            "ntentamos/n"
+        ],
+        [
+            "apagar el i",
+            "ncendio/n"
+        ],
+        [
+            "tomándonos de la ",
+            "manos/n"
+        ],
+        [
+            "Ardo siempre a tu ",
+            "alrededor/n"
+        ],
+        [
+            "acaso no lo ",
+            "ves/n"
+        ],
+        [
+            "cuando caigo en tus o",
+            "jos/n"
+        ],
+        [
+            "me cae todo al r",
+            "evés./n"
+        ],
+        [
+            "No tengo que v",
+            "olver/n"
+        ],
+        [
+            "si nunca me f",
+            "ui/n"
+        ],
+        [
+            "siempre dimos una vu",
+            "elta más/n"
+        ],
+        [
+            "antes de do",
+            "rmir/n"
+        ],
+        [
+            "No puedo ol",
+            "vidar/n"
+        ],
+        [
+            "si nunca se",
+            "ntí/n"
+        ],
+        [
+            "este vuelo hostil espina de t",
+            "u amor/n"
+        ],
+        [
+            "que duele hasta m",
+            "orir/n"
+        ],
+        [
+            "duele h",
+            "asta mor",
+            "ir.../n"
+        ],
+        [
+            "Carnavales en p",
+            "leno invierno/n"
+        ],
+        [
+            "cancioncita d",
+            "ivina/n"
+        ],
+        [
+            "pañuelos para el ",
+            "adiós/n"
+        ],
+        [
+            "y que Dios no lo per",
+            "mita.../n"
+        ],
+        [
+            "Quiero vivir a tu a",
+            "lrededor/n"
+        ],
+        [
+            "¿Acaso no lo ",
+            "ves?/n"
+        ],
+        [
+            "cuando te vas queda t",
+            "odo/nal r"
+        ],
+        [
+            "evés.../n"
+        ],
+        [
+            "No tengo que v",
+            "olver/n"
+        ],
+        [
+            "si nunca me f",
+            "ui/n"
+        ],
+        [
+            "siempre dimos una v",
+            "uelta más/n"
+        ],
+        [
+            "antes de d",
+            "ormir./n"
+        ],
+        [
+            "No voy a a",
+            "bandonar/n"
+        ],
+        [
+            "si nunca cu",
+            "mplí/n"
+        ],
+        [
+            "este sueño fiel de loco ",
+            "soñador/n"
+        ],
+        [
+            "que sueña hasta ",
+            "morir/n"
+        ],
+        [
+            "sueña h",
+            "asta mo",
+            "rir.../n"
+        ],
+        [
+            "Siempre dimos una vu",
+            "elta mas/n"
+        ],
+        [
+            "antes de dorm",
+            "ir.../n"
+        ],
+        [
+            "Este canto añil de ",
+            "pájaro cantor..",
+            "./n"
+        ],
+        [
+            "Este duelo hostil es",
+            "pina de tu amor...",
+            "/n"
+        ],
+        [
+            "Este sueño fiel de ",
+            "loco soñador/n"
+        ],
+        [
+            "que sueña has",
+            "ta morir",
+            ".../n"
+        ],
+        [
+            "Canta ha",
+            "sta mor",
+            "ir..."
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "PcjILDwbqcA",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

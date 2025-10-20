@@ -1,1 +1,395 @@
-{"cancion": "Another-Day", "banda": "paul-mccartney", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "B7", "Em", "Am", "D", "G", "C", "G", "C", "G", "C", "G", "A7", "A7", "D", "G", "G", "B7", "Em", "Am", "D", "G", "C", "Am", "D", "G", "E7", "Am", "D", "G", "G", "D/F#", "Em", "Em", "Em", "C", "C", "A/C#", "C", "Em", "Em", "Em", "Em", "C", "C", "A/C#", "C", "Em", "Em", "E", "E", "Am", "Am", "D", "D(#5)", "Bm/D", "B7", "Em", "Em", "C", "C", "A/C#", "C", "Em", "G", "B7", "Em", "Am", "D", "G", "C", "Am", "D", "G", "E7", "Am", "D", "G", "G", "D/F#", "Em", "Em", "Em", "C", "C", "A/C#", "C", "Em", "Em", "Em", "Em", "C", "C", "A/C#", "C", "Em", "Em", "E", "E", "Am", "Am", "D", "D(#5)", "Bm/D", "B7", "Em", "Em", "C", "C", "A/C#", "C", "Em", "G", "B7", "Em", "Am", "D", "G", "C", "G", "C", "G", "C", "G", "A7", "A7", "D", "G", "C", "Am", "D", "G", "E7", "Am", "D", "G", "G", "F", "C", "G"]}], "orden_partes": [0]}, "letras": [["y day she takes a morning bath She", " wets her hair/nWr"], ["aps a towel around her as she's he", "ading for the bedroom chair/nIt's just ano"], ["ther da", "y/nSl"], ["iping into sto", "ckings  Step", "ing into shoe", "s/nDi"], ["ping in the po", "cket of her rai", "ncoat/n      "], ["       ", " It's just another day", "/nAt the o"], ["ffice where the papers grow she ta", "kes a break/nDr"], ["inks another coffee and she fi", "nds it hard to stay awake/nIt's just ano"], ["ther day", "     d", "u du du du du du", "/nIt's just a"], ["nother day", "   du du du du", " du  du", "/nIt's just an"], ["other day", "", "", "", "/n     "], ["So sad,", "     s", "o sad", "/nSo"], ["metimes she fe", "els so sad", "", "/nAlo"], ["ne in ap", "artment she'd dwe", "ll/nTill the ma"], ["n of her dre", "ams comes to brea", "k, the spell", "", "/nAh"], ["!     ", "Stay!", "   Don't", " stand around", "/nAnd he co"], ["mes, and he stay", "s,/nbut he le"], ["aves the next da", "y,   ", "so sad!", "", "/nSo"], ["metimes she fe", "els so sad", "/n      As she p"], ["ost another letter to the so", "und of five/nPe"], ["ople gather round her and she fi", "nds it hard to stay alive/nIt's just an"], ["other day", "     d", "u du du du du du", "/nIt's just a"], ["nother day", "   du du du du", " du  du", "/nIt's just an"], ["other day", "", "", "", "/n "], ["    So ", "sad,  ", "   so ", "sad/nSo"], ["metimes she fe", "els so sad", "", "/nAlo"], ["ne in ap", "artment she'd dwe", "ll/nTill the ma"], ["n of her dre", "ams comes to brea", "k, the spell", "", "/nAh"], ["!     ", "Stay!", "   Don't", " stand around", "/nAnd he co"], ["mes, and he stay", "s,/nbut he le"], ["aves the next da", "y,   ", "so sad!", "", "/nSo"], ["metimes she fe", "els so sad", "/n  "], [" Every day she takes a morning bat", "h She wets her hair/nWr"], ["aps a towel around her as she's he", "ading for the bedroom chair/nIt's just ano"], ["ther da", "y/nS"], ["liping into st", "ockings  Ste", "ping into sho", "es/nDi"], ["ping in the po", "cket of her rai", "ncoat/n      "], ["       ", " It's just another day", "/nI"], ["t's just another da", "y     du du du du du du/nIt's just a"], ["nother day", "   du du du du", " du  du", "/nFINAL:"], ["", "/n"], ["It's", " jus", "t an", "other day"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "hhoiwDLVTnE", "delay": 0}]}
+{
+    "cancion": "Another-Day",
+    "banda": "paul-mccartney",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "A7",
+                    "A7",
+                    "D",
+                    "G",
+                    "G",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "D",
+                    "G",
+                    "C",
+                    "Am",
+                    "D",
+                    "G",
+                    "E7",
+                    "Am",
+                    "D",
+                    "G",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "A/C#",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "A/C#",
+                    "C",
+                    "Em",
+                    "Em",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D(#5)",
+                    "Bm/D",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "A/C#",
+                    "C",
+                    "Em",
+                    "G",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "D",
+                    "G",
+                    "C",
+                    "Am",
+                    "D",
+                    "G",
+                    "E7",
+                    "Am",
+                    "D",
+                    "G",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "A/C#",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "A/C#",
+                    "C",
+                    "Em",
+                    "Em",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D(#5)",
+                    "Bm/D",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "A/C#",
+                    "C",
+                    "Em",
+                    "G",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "A7",
+                    "A7",
+                    "D",
+                    "G",
+                    "C",
+                    "Am",
+                    "D",
+                    "G",
+                    "E7",
+                    "Am",
+                    "D",
+                    "G",
+                    "G",
+                    "F",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "y day she takes a morning bath She",
+            " wets her hair/nWr"
+        ],
+        [
+            "aps a towel around her as she's he",
+            "ading for the bedroom chair/nIt's just ano"
+        ],
+        [
+            "ther da",
+            "y/nSl"
+        ],
+        [
+            "iping into sto",
+            "ckings  Step",
+            "ing into shoe",
+            "s/nDi"
+        ],
+        [
+            "ping in the po",
+            "cket of her rai",
+            "ncoat/n      "
+        ],
+        [
+            "       ",
+            " It's just another day",
+            "/nAt the o"
+        ],
+        [
+            "ffice where the papers grow she ta",
+            "kes a break/nDr"
+        ],
+        [
+            "inks another coffee and she fi",
+            "nds it hard to stay awake/nIt's just ano"
+        ],
+        [
+            "ther day",
+            "     d",
+            "u du du du du du",
+            "/nIt's just a"
+        ],
+        [
+            "nother day",
+            "   du du du du",
+            " du  du",
+            "/nIt's just an"
+        ],
+        [
+            "other day",
+            "",
+            "",
+            "",
+            "/n     "
+        ],
+        [
+            "So sad,",
+            "     s",
+            "o sad",
+            "/nSo"
+        ],
+        [
+            "metimes she fe",
+            "els so sad",
+            "",
+            "/nAlo"
+        ],
+        [
+            "ne in ap",
+            "artment she'd dwe",
+            "ll/nTill the ma"
+        ],
+        [
+            "n of her dre",
+            "ams comes to brea",
+            "k, the spell",
+            "",
+            "/nAh"
+        ],
+        [
+            "!     ",
+            "Stay!",
+            "   Don't",
+            " stand around",
+            "/nAnd he co"
+        ],
+        [
+            "mes, and he stay",
+            "s,/nbut he le"
+        ],
+        [
+            "aves the next da",
+            "y,   ",
+            "so sad!",
+            "",
+            "/nSo"
+        ],
+        [
+            "metimes she fe",
+            "els so sad",
+            "/n      As she p"
+        ],
+        [
+            "ost another letter to the so",
+            "und of five/nPe"
+        ],
+        [
+            "ople gather round her and she fi",
+            "nds it hard to stay alive/nIt's just an"
+        ],
+        [
+            "other day",
+            "     d",
+            "u du du du du du",
+            "/nIt's just a"
+        ],
+        [
+            "nother day",
+            "   du du du du",
+            " du  du",
+            "/nIt's just an"
+        ],
+        [
+            "other day",
+            "",
+            "",
+            "",
+            "/n "
+        ],
+        [
+            "    So ",
+            "sad,  ",
+            "   so ",
+            "sad/nSo"
+        ],
+        [
+            "metimes she fe",
+            "els so sad",
+            "",
+            "/nAlo"
+        ],
+        [
+            "ne in ap",
+            "artment she'd dwe",
+            "ll/nTill the ma"
+        ],
+        [
+            "n of her dre",
+            "ams comes to brea",
+            "k, the spell",
+            "",
+            "/nAh"
+        ],
+        [
+            "!     ",
+            "Stay!",
+            "   Don't",
+            " stand around",
+            "/nAnd he co"
+        ],
+        [
+            "mes, and he stay",
+            "s,/nbut he le"
+        ],
+        [
+            "aves the next da",
+            "y,   ",
+            "so sad!",
+            "",
+            "/nSo"
+        ],
+        [
+            "metimes she fe",
+            "els so sad",
+            "/n  "
+        ],
+        [
+            " Every day she takes a morning bat",
+            "h She wets her hair/nWr"
+        ],
+        [
+            "aps a towel around her as she's he",
+            "ading for the bedroom chair/nIt's just ano"
+        ],
+        [
+            "ther da",
+            "y/nS"
+        ],
+        [
+            "liping into st",
+            "ockings  Ste",
+            "ping into sho",
+            "es/nDi"
+        ],
+        [
+            "ping in the po",
+            "cket of her rai",
+            "ncoat/n      "
+        ],
+        [
+            "       ",
+            " It's just another day",
+            "/nI"
+        ],
+        [
+            "t's just another da",
+            "y     du du du du du du/nIt's just a"
+        ],
+        [
+            "nother day",
+            "   du du du du",
+            " du  du",
+            "/nFINAL:"
+        ],
+        [
+            "",
+            "/n"
+        ],
+        [
+            "It's",
+            " jus",
+            "t an",
+            "other day"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "hhoiwDLVTnE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}
