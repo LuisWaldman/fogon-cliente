@@ -9,6 +9,7 @@ import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
+import { vi } from 'vitest'
 
 const listasManager: ListasDBManager = new ListasDBManager()
 const selectedLista = ref<string>('')
@@ -31,7 +32,6 @@ const appStore = useAppStore()
 const ViendoCanciones = ref<ItemIndiceCancion[]>([])
 const CancionesLocalstorage = ref<ItemIndiceCancion[]>([])
 
-//appStore.IndicesServer
 CancionManager.getInstance()
   .GetDBIndex()
   .then((indices: ItemIndiceCancion[]) => {
@@ -78,7 +78,7 @@ function clickOrigen(viendostr: string) {
       ViendoCanciones.value = appStore.IndicesServer
     } else if (viendo.value === 'listas') {
       // Aquí podrías implementar la lógica para obtener las listas del servidor
-      viendoListas.value = [] // Placeholder
+      viendoListas.value = appStore.listasEnServer
     }
   }
 }
@@ -88,17 +88,28 @@ function confirmarNuevaLista() {
     alert('El nombre de la lista no puede estar vacío.')
     return
   }
-  if (ListasEnStorage.value.includes(nuevaLista.value)) {
+  if (viendoListas.value.includes(nuevaLista.value)) {
     alert('Ya existe una lista con ese nombre.')
     return
   }
-  listasManager.AgregarLista(nuevaLista.value).then(() => {
-    ListasEnStorage.value.push(nuevaLista.value)
-    viendoListas.value = ListasEnStorage.value
-    selectedLista.value = nuevaLista.value
-    nuevaLista.value = ''
-    addingLista.value = false
-  })
+  if (viendoOrigen.value === 'server') {
+    CancionManager.getInstance()
+      .listasServerManager?.AgregarLista(nuevaLista.value)
+      .then(() => {
+        appStore.listasEnServer.push(nuevaLista.value)
+        nuevaLista.value = ''
+        selectedLista.value = nuevaLista.value
+        addingLista.value = false
+      })
+  } else {
+    listasManager.AgregarLista(nuevaLista.value).then(() => {
+      ListasEnStorage.value.push(nuevaLista.value)
+      selectedLista.value = nuevaLista.value
+      nuevaLista.value = ''
+      addingLista.value = false
+      
+    })
+  }
 }
 
 function renombrarLista() {
@@ -124,7 +135,25 @@ function confirmarRenombrarLista() {
     alert('Ya existe una lista con ese nombre.')
     return
   }
+if (viendoOrigen.value === 'server') {
+    CancionManager.getInstance()
+      .listasServerManager?.RenombrarLista(selectedLista.value, nuevaLista.value)
+      .then(() => {
+        const index = appStore.listasEnServer.indexOf(selectedLista.value)
+        if (index !== -1) {
+          appStore.listasEnServer[index] = nuevaLista.value
+        }
+        viendoListas.value = appStore.listasEnServer
+        selectedLista.value = nuevaLista.value
+        nuevaLista.value = ''
+        renamingLista.value = false
+      })
+      .catch(() => {
+        alert('Error al renombrar la lista.')
+      })
+    return 
 
+}
   const oldName = selectedLista.value
   listasManager
     .RenombrarLista(oldName, nuevaLista.value)
@@ -163,6 +192,21 @@ function borrarLista() {
       `¿Estás seguro de que deseas borrar la lista "${selectedLista.value}"?`,
     )
   ) {
+
+    if (viendoOrigen.value === 'server') {
+      CancionManager.getInstance()
+        .listasServerManager?.BorrarLista(selectedLista.value)
+        .then(() => {
+          appStore.listasEnServer = appStore.listasEnServer.filter(
+            (lista) => lista !== selectedLista.value,
+          )
+          viendoListas.value = appStore.listasEnServer
+          selectedLista.value = ''
+        })
+      return
+    }
+
+
     listasManager.BorrarLista(selectedLista.value).then(() => {
       ListasEnStorage.value = ListasEnStorage.value.filter(
         (lista) => lista !== selectedLista.value,

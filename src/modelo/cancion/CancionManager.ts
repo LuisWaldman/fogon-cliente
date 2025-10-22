@@ -8,6 +8,7 @@ import { CancionUrlManager } from './CancionUrlManager'
 import { CancionIndexedDBManager } from './CancionIndexedDBManager'
 import { CancionSubidasManager } from './CancionSubidasUrlManager'
 import { CancionFogonManager } from './CancionFogonManager'
+import { ListasServerManager } from './ListasServerManager'
 
 export class CancionManager {
   private static instance: CancionManager
@@ -16,9 +17,10 @@ export class CancionManager {
 
   private cliente: ClienteSocket | null = null
   private db: IDBDatabase | null = null
-
+  public listasServerManager: ListasServerManager | null = null
   public setCliente(cliente: ClienteSocket): void {
     this.cliente = cliente
+    this.listasServerManager = new ListasServerManager(cliente)
   }
   private getDBConnection(): Promise<IDBDatabase> {
     return new Promise((resolve, reject) => {
