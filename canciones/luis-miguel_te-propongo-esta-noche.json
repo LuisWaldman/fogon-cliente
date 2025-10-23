@@ -1,1 +1,362 @@
-{"cancion": "Te-propongo-esta-noche", "banda": "luis-miguel", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "F", "G", "Gm", "F", "G", "F", "C", "Eb", "Fm", "Eb", "Fm", "Ab", "Bb", "Ab", "Bb", "Eb", "Fm", "Eb", "Fm", "Ab", "Bb", "Ab", "Bb", "Eb", "Fm", "Ab", "Bb", "Eb", "Fm", "Ab", "Bb", "Eb", "Fm", "Eb", "Fm", "Ab", "Bb", "Eb", "Eb", "Fm", "Eb", "Fm", "Ab", "Bb", "Am", "Bb", "Eb", "Fm", "Eb", "Fm", "Ab", "Bb", "Ab", "Bb", "Eb", "Fm", "Ab", "Bb", "Eb", "Fm", "Ab", "Bb", "Ab", "Gm", "Ab", "Eb", "Ab", "Bb", "Ab", "Bb", "E", "F", "A", "B", "E", "F", "A", "B", "E", "F", "E", "F", "A", "B", "E", "F", "A", "B", "E", "F", "A", "B", "E", "F", "E", "F", "A", "B", "E", "C#m", "C#m", "E", "C#m", "E", "C#m", "E", "Gbm", "E", "Gbm", "A", "B", "C#m", "C#m", "E", "Gbm", "C#m", "E", "Gbm", "E", "Gbm", "E", "Gbm", "A", "B", "C#m"]}], "orden_partes": [0]}, "letras": [[], ["ame a los oj", "os por favor/n quiero "], ["ver si te queda algo de amo", "r/n de ca"], ["lor, de ternu", "ra o de pasi\u00f3", "n/n de amis"], ["tad puede ser/n M\u00edr"], ["ame estoy s", "olo pero bien/n te extra"], ["\u00f1\u00e9 porque siempre te esp", "er\u00e9/n sabes "], ["que estas be", "lla amor/n porque "], ["no te prob", "amos otra vez/n"], ["  Te propongo esta noch", "e     ", "al amor darle opo", "rtunidad", "/n olvidar lo pasa"], ["do     ", " entre luces y m\u00fa", "sica bailar", "/n que hoy es noche de l"], ["una llena/n y h"], ["uele a amor   ", "         ", "  hay que dejar hablar ", "al coraz\u00f3n.", "/n M\u00edr"], ["ame tengo g", "anas de so\u00f1ar/n suena bi"], ["en que volvamos a empeza", "r/n y si "], ["no Quiero ima", "ginar que tu y yo", "/n nos a"], ["mamos de verdad./n M\u00edr"], ["ame lo que ", "pase pasar\u00e9/n sabes b"], ["ien que es mejor no programa", "r/n que el am"], ["or vuelva a s", "er amor/n o tal v"], ["ez tan ami", "gos como siempre-e", "/n Te propongo esta noc"], ["he    ", " cuerpo a cuerpo besar", "nos y volar", "/n inventando dese"], ["os    ", " y en lugar del olvido", " al fin amar.", "/n El amor es tan d"], ["esigual  ", " nadie manda en el cor", "az\u00f3n", "/n es ternura es des"], ["ilusion place", "r, dolor tod", "o nace del amor.", "/n Te propongo esta noch"], ["e   ", "al amor darle op", "ortunidad", "/n olvidar lo pasad"], ["o    ", "entre luces y m\u00fa", "sica bailar", "/n que hoy es noche de l"], ["una llena y hue", "le a amor", "", "/n hay que dejar habl"], ["ar al coraz", "n./n Te propongo esta noch"], ["e   ", "cuerpo a cuerpo besar", "nos y volar", "/n inventando deseo"], ["s   ", "y en lugar del olvid", "o al fin amar.", "/n que hoy es noche de l"], ["una llena y hue", "le a amor", "", "/n hay que dejar habl"], ["ar al coraz", "n./nINTERMEDIO         "], ["     Te propongo, te propongo..../n"], ["  Te propongo, te propongo esta noch", "e/n te propongo, te propongo esta n"], ["oche/n te propongo, te propongo esta noch"], ["e/n y en lugar del olv"], ["ido al fin amar", "/n que hoy e noche de "], ["luna llena y hue", "le a amor", "", "/n hay que dejar habl"], ["ar al coraz", "n./n Te propongo, te propongo esta noc"], ["he d\u00e9jate llev", "ar, vamos a vol", "ar/n te propongo, te propongo esta noc"], ["he d\u00e9jate llev", "ar, vamos a vol", "ar/n "], [" que hoy es noche de l", "una llena y huel", "e amor", "", "/n hay que dejar habl"], ["ar al coraz", "n."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "Iz-eQlk-vb8", "delay": 0}]}
+{
+    "cancion": "Te-propongo-esta-noche",
+    "banda": "luis-miguel",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "F",
+                    "G",
+                    "Gm",
+                    "F",
+                    "G",
+                    "F",
+                    "C",
+                    "Eb",
+                    "Fm",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Ab",
+                    "Bb",
+                    "Eb",
+                    "Fm",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Ab",
+                    "Bb",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Eb",
+                    "Fm",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Eb",
+                    "Eb",
+                    "Fm",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Am",
+                    "Bb",
+                    "Eb",
+                    "Fm",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Ab",
+                    "Bb",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Eb",
+                    "Fm",
+                    "Ab",
+                    "Bb",
+                    "Ab",
+                    "Gm",
+                    "Ab",
+                    "Eb",
+                    "Ab",
+                    "Bb",
+                    "Ab",
+                    "Bb",
+                    "E",
+                    "F",
+                    "A",
+                    "B",
+                    "E",
+                    "F",
+                    "A",
+                    "B",
+                    "E",
+                    "F",
+                    "E",
+                    "F",
+                    "A",
+                    "B",
+                    "E",
+                    "F",
+                    "A",
+                    "B",
+                    "E",
+                    "F",
+                    "A",
+                    "B",
+                    "E",
+                    "F",
+                    "E",
+                    "F",
+                    "A",
+                    "B",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "C#m",
+                    "E",
+                    "C#m",
+                    "E",
+                    "Gbm",
+                    "E",
+                    "Gbm",
+                    "A",
+                    "B",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "Gbm",
+                    "C#m",
+                    "E",
+                    "Gbm",
+                    "E",
+                    "Gbm",
+                    "E",
+                    "Gbm",
+                    "A",
+                    "B",
+                    "C#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "ame a los oj",
+            "os por favor/n quiero "
+        ],
+        [
+            "ver si te queda algo de amo",
+            "r/n de ca"
+        ],
+        [
+            "lor, de ternu",
+            "ra o de pasió",
+            "n/n de amis"
+        ],
+        [
+            "tad puede ser/n Mír"
+        ],
+        [
+            "ame estoy s",
+            "olo pero bien/n te extra"
+        ],
+        [
+            "ñé porque siempre te esp",
+            "eré/n sabes "
+        ],
+        [
+            "que estas be",
+            "lla amor/n porque "
+        ],
+        [
+            "no te prob",
+            "amos otra vez/n"
+        ],
+        [
+            "  Te propongo esta noch",
+            "e     ",
+            "al amor darle opo",
+            "rtunidad",
+            "/n olvidar lo pasa"
+        ],
+        [
+            "do     ",
+            " entre luces y mú",
+            "sica bailar",
+            "/n que hoy es noche de l"
+        ],
+        [
+            "una llena/n y h"
+        ],
+        [
+            "uele a amor   ",
+            "         ",
+            "  hay que dejar hablar ",
+            "al corazón.",
+            "/n Mír"
+        ],
+        [
+            "ame tengo g",
+            "anas de soñar/n suena bi"
+        ],
+        [
+            "en que volvamos a empeza",
+            "r/n y si "
+        ],
+        [
+            "no Quiero ima",
+            "ginar que tu y yo",
+            "/n nos a"
+        ],
+        [
+            "mamos de verdad./n Mír"
+        ],
+        [
+            "ame lo que ",
+            "pase pasaré/n sabes b"
+        ],
+        [
+            "ien que es mejor no programa",
+            "r/n que el am"
+        ],
+        [
+            "or vuelva a s",
+            "er amor/n o tal v"
+        ],
+        [
+            "ez tan ami",
+            "gos como siempre-e",
+            "/n Te propongo esta noc"
+        ],
+        [
+            "he    ",
+            " cuerpo a cuerpo besar",
+            "nos y volar",
+            "/n inventando dese"
+        ],
+        [
+            "os    ",
+            " y en lugar del olvido",
+            " al fin amar.",
+            "/n El amor es tan d"
+        ],
+        [
+            "esigual  ",
+            " nadie manda en el cor",
+            "azón",
+            "/n es ternura es des"
+        ],
+        [
+            "ilusion place",
+            "r, dolor tod",
+            "o nace del amor.",
+            "/n Te propongo esta noch"
+        ],
+        [
+            "e   ",
+            "al amor darle op",
+            "ortunidad",
+            "/n olvidar lo pasad"
+        ],
+        [
+            "o    ",
+            "entre luces y mú",
+            "sica bailar",
+            "/n que hoy es noche de l"
+        ],
+        [
+            "una llena y hue",
+            "le a amor",
+            "",
+            "/n hay que dejar habl"
+        ],
+        [
+            "ar al coraz",
+            "n./n Te propongo esta noch"
+        ],
+        [
+            "e   ",
+            "cuerpo a cuerpo besar",
+            "nos y volar",
+            "/n inventando deseo"
+        ],
+        [
+            "s   ",
+            "y en lugar del olvid",
+            "o al fin amar.",
+            "/n que hoy es noche de l"
+        ],
+        [
+            "una llena y hue",
+            "le a amor",
+            "",
+            "/n hay que dejar habl"
+        ],
+        [
+            "ar al coraz",
+            "n./nINTERMEDIO         "
+        ],
+        [
+            "     Te propongo, te propongo..../n"
+        ],
+        [
+            "  Te propongo, te propongo esta noch",
+            "e/n te propongo, te propongo esta n"
+        ],
+        [
+            "oche/n te propongo, te propongo esta noch"
+        ],
+        [
+            "e/n y en lugar del olv"
+        ],
+        [
+            "ido al fin amar",
+            "/n que hoy e noche de "
+        ],
+        [
+            "luna llena y hue",
+            "le a amor",
+            "",
+            "/n hay que dejar habl"
+        ],
+        [
+            "ar al coraz",
+            "n./n Te propongo, te propongo esta noc"
+        ],
+        [
+            "he déjate llev",
+            "ar, vamos a vol",
+            "ar/n te propongo, te propongo esta noc"
+        ],
+        [
+            "he déjate llev",
+            "ar, vamos a vol",
+            "ar/n "
+        ],
+        [
+            " que hoy es noche de l",
+            "una llena y huel",
+            "e amor",
+            "",
+            "/n hay que dejar habl"
+        ],
+        [
+            "ar al coraz",
+            "n."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Iz-eQlk-vb8",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

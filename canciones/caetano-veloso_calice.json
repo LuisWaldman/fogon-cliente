@@ -1,1 +1,240 @@
-{"cancion": "calice", "banda": "caetano-veloso", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "G#", "A", "A/Bb", "E/B", "B7"]}, {"nombre": "parte2", "acordes": ["E"]}, {"nombre": "parte3", "acordes": ["C#m", "C#m7M", "C#m7", "F#7/C#", "A7M", "F#7/C#", "B7/6", "B7/5+"]}, {"nombre": "parte4", "acordes": ["C#m", "C#m7M", "C#m7", "F#7/C#", "A7M", "F#/A#", "B7/6", "B7/5+"]}], "orden_partes": [0, 1, 2, 1, 2, 1, 0, 1, 3, 1, 2, 1, 0, 1, 2, 1, 2, 1, 0, 1, 2, 1, 2, 1]}, "letras": [["Pai, afasta de mim esse c", "lice, Pai, afasta de mim esse c", "\u00e1lice/nPai, "], ["afasta de mim esse c", "\u00e1lice de v", "inho tinto de sa", "ngue/nComo beb"], ["er dessa bebida am", "arga, tragar a do", "r, engolir a l", "abuta/nMesmo cal"], ["ada a boca resta o p", "eito, sil\u00eancio ", "na cidade", " n\u00e3o se escut", "a/nDe que m"], ["e vale ser filho d", "a santa, melhor s", "eria ser filho", " da outra/nOutra rea"], ["lidade menos morta, ", "tanta mentira, t", "anta for", "a bruta", "/n"], ["Pai, afasta de mim esse c", "lice, Pai, afasta de mim esse c", "\u00e1lice/nPai, "], ["afasta de mim esse c", "\u00e1lice de v", "inho tinto de sa", "ngue/nComo \u00e9 "], ["dif\u00edcil acordar c", "alado, se na cala", "da da noite eu", " me dano/nQuero lan"], ["\u00e7ar um grito desum", "ano que \u00e9 uma maneir", "a de ser ", "escutado", "/nEsse sil"], ["\u00eancio todo me ato", "rdoa, atordoado e", "u permane\u00e7o a", "tento/nNa arquib"], ["ancada, pr\u00e1 qualque", "r momento, ver e", "mergir o ", "monstro da lag", "oa/n"], ["Pai, afasta de mim esse c", "lice, Pai, afasta de mim esse c", "\u00e1lice/nPai, "], ["afasta de mim esse c", "\u00e1lice de v", "inho tinto de sa", "ngue/nDe muito"], [" gorda a porca j\u00e1", " n\u00e3o anda, de mu", "ito usada a fa", "ca j\u00e1 n\u00e3o corta/nComo \u00e9 d"], ["if\u00edcil, pai, abrir ", "a porta, essa pa", "lavra pre", "sa na garganta", "/nEsse pil"], ["eque hom\u00e9rico no ", "mundo, de que adi", "anta ter boa v", "ontade/nMesmo cal"], ["ado o peito, resta a", " cuca dos b\u00eabad", "os do cen", "tro da cidade", "/n"], ["Pai, afasta de mim esse c", "lice, Pai, afasta de mim esse c", "\u00e1lice/nPai, "], ["afasta de mim esse c", "\u00e1lice de v", "inho tinto de sa", "ngue/nTalvez o"], [" mundo n\u00e3o seja p", "equeno, nem seja ", "a vida um fato", " consumado/nQuero inv"], ["entar o meu pr\u00f3prio", " pecado, quero m", "orrer do ", "meu pr\u00f3prio v", "eneno/nQuero pe"], ["rder de vez tua ca", "be\u00e7a, minha cabe", "\u00e7a perder teu", " ju\u00edzo/nQuero che"], ["irar fuma\u00e7a de \u00f3le", "o diesel, me emb", "riagar at", "\u00e9 que algu\u00e9m", " me esque\u00e7a"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "9y2xB90A0CY", "delay": 0}]}
+{
+    "cancion": "calice",
+    "banda": "caetano-veloso",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "G#",
+                    "A",
+                    "A/Bb",
+                    "E/B",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#m",
+                    "C#m7M",
+                    "C#m7",
+                    "F#7/C#",
+                    "A7M",
+                    "F#7/C#",
+                    "B7/6",
+                    "B7/5+"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C#m",
+                    "C#m7M",
+                    "C#m7",
+                    "F#7/C#",
+                    "A7M",
+                    "F#/A#",
+                    "B7/6",
+                    "B7/5+"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            0,
+            1,
+            3,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Pai, afasta de mim esse c",
+            "lice, Pai, afasta de mim esse c",
+            "álice/nPai, "
+        ],
+        [
+            "afasta de mim esse c",
+            "álice de v",
+            "inho tinto de sa",
+            "ngue/nComo beb"
+        ],
+        [
+            "er dessa bebida am",
+            "arga, tragar a do",
+            "r, engolir a l",
+            "abuta/nMesmo cal"
+        ],
+        [
+            "ada a boca resta o p",
+            "eito, silêncio ",
+            "na cidade",
+            " não se escut",
+            "a/nDe que m"
+        ],
+        [
+            "e vale ser filho d",
+            "a santa, melhor s",
+            "eria ser filho",
+            " da outra/nOutra rea"
+        ],
+        [
+            "lidade menos morta, ",
+            "tanta mentira, t",
+            "anta for",
+            "a bruta",
+            "/n"
+        ],
+        [
+            "Pai, afasta de mim esse c",
+            "lice, Pai, afasta de mim esse c",
+            "álice/nPai, "
+        ],
+        [
+            "afasta de mim esse c",
+            "álice de v",
+            "inho tinto de sa",
+            "ngue/nComo é "
+        ],
+        [
+            "difícil acordar c",
+            "alado, se na cala",
+            "da da noite eu",
+            " me dano/nQuero lan"
+        ],
+        [
+            "çar um grito desum",
+            "ano que é uma maneir",
+            "a de ser ",
+            "escutado",
+            "/nEsse sil"
+        ],
+        [
+            "êncio todo me ato",
+            "rdoa, atordoado e",
+            "u permaneço a",
+            "tento/nNa arquib"
+        ],
+        [
+            "ancada, prá qualque",
+            "r momento, ver e",
+            "mergir o ",
+            "monstro da lag",
+            "oa/n"
+        ],
+        [
+            "Pai, afasta de mim esse c",
+            "lice, Pai, afasta de mim esse c",
+            "álice/nPai, "
+        ],
+        [
+            "afasta de mim esse c",
+            "álice de v",
+            "inho tinto de sa",
+            "ngue/nDe muito"
+        ],
+        [
+            " gorda a porca já",
+            " não anda, de mu",
+            "ito usada a fa",
+            "ca já não corta/nComo é d"
+        ],
+        [
+            "ifícil, pai, abrir ",
+            "a porta, essa pa",
+            "lavra pre",
+            "sa na garganta",
+            "/nEsse pil"
+        ],
+        [
+            "eque homérico no ",
+            "mundo, de que adi",
+            "anta ter boa v",
+            "ontade/nMesmo cal"
+        ],
+        [
+            "ado o peito, resta a",
+            " cuca dos bêbad",
+            "os do cen",
+            "tro da cidade",
+            "/n"
+        ],
+        [
+            "Pai, afasta de mim esse c",
+            "lice, Pai, afasta de mim esse c",
+            "álice/nPai, "
+        ],
+        [
+            "afasta de mim esse c",
+            "álice de v",
+            "inho tinto de sa",
+            "ngue/nTalvez o"
+        ],
+        [
+            " mundo não seja p",
+            "equeno, nem seja ",
+            "a vida um fato",
+            " consumado/nQuero inv"
+        ],
+        [
+            "entar o meu próprio",
+            " pecado, quero m",
+            "orrer do ",
+            "meu próprio v",
+            "eneno/nQuero pe"
+        ],
+        [
+            "rder de vez tua ca",
+            "beça, minha cabe",
+            "ça perder teu",
+            " juízo/nQuero che"
+        ],
+        [
+            "irar fumaça de óle",
+            "o diesel, me emb",
+            "riagar at",
+            "é que alguém",
+            " me esqueça"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "9y2xB90A0CY",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

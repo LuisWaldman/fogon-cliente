@@ -1,1 +1,318 @@
-{"cancion": "Tu-Retrato", "banda": "arjona-ricardo", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Cadd9", "Am", "F", "D/F", "Cadd9", "C", "Cadd9", "Am", "F", "C", "C", "Cadd9", "Am", "F", "C", "Am", "Em", "F", "C", "Cadd9", "Am", "Em", "F", "G", "C", "Cadd9", "Am", "F", "D/F", "Cadd9", "Am", "G", "F", "F", "D/F", "G", "Am", "Em", "F", "G", "C", "C", "Cadd9", "Am", "F", "C", "C", "Cadd9", "Am", "F", "C", "Am", "Em", "F", "C", "Cadd9", "Am", "Em", "F", "G", "C", "Cadd9", "Am", "F", "D/F", "Cadd9", "Am", "G", "F", "F", "D/F", "G", "Am", "Em", "F", "G", "C", "C", "Cadd9", "Am", "F", "C", "C", "Cadd9", "Am", "F", "C", "C", "Cadd9", "Am", "F", "D/F", "Cadd9", "Am", "G", "F", "F", "D/F", "G", "Am", "Em", "F", "G", "C", "F", "G", "C"]}], "orden_partes": [0]}, "letras": [[], ["trato sigue a", "qu\u00ed como si ", "nada/nexhi"], ["bido en la pared de la me", "moria/ncon el "], ["pelo de hur", "ac\u00e1n que te ado", "rnaba/ny tu "], ["boca de humedad haciendo his", "toria./nTu re"], ["trato tiene un sol que no apa", "rece/ny una "], ["sombra que te ataca por la izqu", "ierda", "/ny ese "], ["brillo en tus pupilas se agra", "decen/ntu re"], ["trato solo est\u00e1 para el que se a", "cuerda./nY en el "], ["\u00f3leo de mi", " cielo en madru", "gada/npinto est"], ["rellas con la ", "luz de tu re", "cuerdo/ny el in"], ["somnio de esta ", "luna enamo", "rada/ny este "], ["sol que est\u00e1 ", "borracho de esp", "erarte./nTu re"], ["trato es el canvas de un su", "spiro/ncon el "], ["marco de tu ol", "or por todas par", "tes./nT"], ["u retrato es el velo", "rio de una risa", "/ne"], ["l carm\u00edn de un rojo fucsia como he", "rida/ntu"], [" retrato es un Van Go", "gh hecho depris", "a/ny una l"], ["\u00ednea de Mir\u00f3 que anda pe", "rdida./n"], ["Tu retrato no es un cuadro que se ah", "orca/nni"], [" una triste necedad para tenert", "e", "/nes"], [" lo poco que me queda y que me exh", "orta/na"], ["l usar estas pupilas para ver", "te./nY en el "], ["\u00f3leo de mi", " cielo en madru", "gada/npinto est"], ["rellas con la ", "luz de tu re", "cuerdo/ny el in"], ["somnio de esta ", "luna enamo", "rada/ny este "], ["sol que est\u00e1 ", "borracho de esp", "erarte./n"], ["Tu ret", "rato, tu", " retr", "ato", "/n"], ["tu retrato es", " mi retrato h", "echo pedazos/np"], ["orque nunca he sido el mismo con tu ause", "ncia/n"], ["es armar un crucigra", "ma con retazos", "/na"], ["unque la nostalgia pierda la pacie", "ncia./nY en el "], ["\u00f3leo de ", "mi cielo en mad", "rugada/npinto est"], ["rellas con la ", "luz de tu re", "cuerdo/ny el in"], ["somnio de esta ", "luna enamo", "rada/ny este "], ["sol que est\u00e1 ", "borracho de esp", "erarte./nYo no "], ["s\u00e9 cuando empez\u00f3 lo ter", "minado/no es mi "], ["pago de aran", "cel con la nos", "talgia/n"], ["tu ", "ret", "rato."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "cWFbutPlvDU", "delay": 0}]}
+{
+    "cancion": "Tu-Retrato",
+    "banda": "arjona-ricardo",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "D/F",
+                    "Cadd9",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "C",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "C",
+                    "Am",
+                    "Em",
+                    "F",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "Em",
+                    "F",
+                    "G",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "D/F",
+                    "Cadd9",
+                    "Am",
+                    "G",
+                    "F",
+                    "F",
+                    "D/F",
+                    "G",
+                    "Am",
+                    "Em",
+                    "F",
+                    "G",
+                    "C",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "C",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "C",
+                    "Am",
+                    "Em",
+                    "F",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "Em",
+                    "F",
+                    "G",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "D/F",
+                    "Cadd9",
+                    "Am",
+                    "G",
+                    "F",
+                    "F",
+                    "D/F",
+                    "G",
+                    "Am",
+                    "Em",
+                    "F",
+                    "G",
+                    "C",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "C",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "C",
+                    "C",
+                    "Cadd9",
+                    "Am",
+                    "F",
+                    "D/F",
+                    "Cadd9",
+                    "Am",
+                    "G",
+                    "F",
+                    "F",
+                    "D/F",
+                    "G",
+                    "Am",
+                    "Em",
+                    "F",
+                    "G",
+                    "C",
+                    "F",
+                    "G",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "trato sigue a",
+            "quí como si ",
+            "nada/nexhi"
+        ],
+        [
+            "bido en la pared de la me",
+            "moria/ncon el "
+        ],
+        [
+            "pelo de hur",
+            "acán que te ado",
+            "rnaba/ny tu "
+        ],
+        [
+            "boca de humedad haciendo his",
+            "toria./nTu re"
+        ],
+        [
+            "trato tiene un sol que no apa",
+            "rece/ny una "
+        ],
+        [
+            "sombra que te ataca por la izqu",
+            "ierda",
+            "/ny ese "
+        ],
+        [
+            "brillo en tus pupilas se agra",
+            "decen/ntu re"
+        ],
+        [
+            "trato solo está para el que se a",
+            "cuerda./nY en el "
+        ],
+        [
+            "óleo de mi",
+            " cielo en madru",
+            "gada/npinto est"
+        ],
+        [
+            "rellas con la ",
+            "luz de tu re",
+            "cuerdo/ny el in"
+        ],
+        [
+            "somnio de esta ",
+            "luna enamo",
+            "rada/ny este "
+        ],
+        [
+            "sol que está ",
+            "borracho de esp",
+            "erarte./nTu re"
+        ],
+        [
+            "trato es el canvas de un su",
+            "spiro/ncon el "
+        ],
+        [
+            "marco de tu ol",
+            "or por todas par",
+            "tes./nT"
+        ],
+        [
+            "u retrato es el velo",
+            "rio de una risa",
+            "/ne"
+        ],
+        [
+            "l carmín de un rojo fucsia como he",
+            "rida/ntu"
+        ],
+        [
+            " retrato es un Van Go",
+            "gh hecho depris",
+            "a/ny una l"
+        ],
+        [
+            "ínea de Miró que anda pe",
+            "rdida./n"
+        ],
+        [
+            "Tu retrato no es un cuadro que se ah",
+            "orca/nni"
+        ],
+        [
+            " una triste necedad para tenert",
+            "e",
+            "/nes"
+        ],
+        [
+            " lo poco que me queda y que me exh",
+            "orta/na"
+        ],
+        [
+            "l usar estas pupilas para ver",
+            "te./nY en el "
+        ],
+        [
+            "óleo de mi",
+            " cielo en madru",
+            "gada/npinto est"
+        ],
+        [
+            "rellas con la ",
+            "luz de tu re",
+            "cuerdo/ny el in"
+        ],
+        [
+            "somnio de esta ",
+            "luna enamo",
+            "rada/ny este "
+        ],
+        [
+            "sol que está ",
+            "borracho de esp",
+            "erarte./n"
+        ],
+        [
+            "Tu ret",
+            "rato, tu",
+            " retr",
+            "ato",
+            "/n"
+        ],
+        [
+            "tu retrato es",
+            " mi retrato h",
+            "echo pedazos/np"
+        ],
+        [
+            "orque nunca he sido el mismo con tu ause",
+            "ncia/n"
+        ],
+        [
+            "es armar un crucigra",
+            "ma con retazos",
+            "/na"
+        ],
+        [
+            "unque la nostalgia pierda la pacie",
+            "ncia./nY en el "
+        ],
+        [
+            "óleo de ",
+            "mi cielo en mad",
+            "rugada/npinto est"
+        ],
+        [
+            "rellas con la ",
+            "luz de tu re",
+            "cuerdo/ny el in"
+        ],
+        [
+            "somnio de esta ",
+            "luna enamo",
+            "rada/ny este "
+        ],
+        [
+            "sol que está ",
+            "borracho de esp",
+            "erarte./nYo no "
+        ],
+        [
+            "sé cuando empezó lo ter",
+            "minado/no es mi "
+        ],
+        [
+            "pago de aran",
+            "cel con la nos",
+            "talgia/n"
+        ],
+        [
+            "tu ",
+            "ret",
+            "rato."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "cWFbutPlvDU",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,76 @@
-{"cancion": "This-Land-Is-Your-Land", "banda": "bob-dylan", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G", "G", "G", "G"]}, {"nombre": "parte2", "acordes": ["C", "G", "D", "G"]}], "orden_partes": [0, 1, 1]}, "letras": [[":   .   .   .     :   .   .   .     :", "   .   .   .     :   .   .   ./n  :   .   .   .     :   ."], ["   .   .     :   .   .   .     :   .   .   ./n  :   .   .   .     :"], ["   .   .   .     :   .   .   .     :   .   .   ./n  :   .   .   .     :"], ["   .   .   .     :   .   .   .     :   .   .   ./nAs I went "], ["walking, that ribbon of h", "ighway,/nI saw a"], ["bove me that endless s", "kyway,/nI saw be"], ["low me that golden v", "alley./n"], ["This land was made for you and m", "e."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "KfYj8TUdyCc", "delay": 0}]}
+{
+    "cancion": "This-Land-Is-Your-Land",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "D",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1
+        ]
+    },
+    "letras": [
+        [
+            ":   .   .   .     :   .   .   .     :",
+            "   .   .   .     :   .   .   ./n  :   .   .   .     :   ."
+        ],
+        [
+            "   .   .     :   .   .   .     :   .   .   ./n  :   .   .   .     :"
+        ],
+        [
+            "   .   .   .     :   .   .   .     :   .   .   ./n  :   .   .   .     :"
+        ],
+        [
+            "   .   .   .     :   .   .   .     :   .   .   ./nAs I went "
+        ],
+        [
+            "walking, that ribbon of h",
+            "ighway,/nI saw a"
+        ],
+        [
+            "bove me that endless s",
+            "kyway,/nI saw be"
+        ],
+        [
+            "low me that golden v",
+            "alley./n"
+        ],
+        [
+            "This land was made for you and m",
+            "e."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "KfYj8TUdyCc",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

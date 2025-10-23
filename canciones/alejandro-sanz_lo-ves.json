@@ -1,1 +1,291 @@
-{"cancion": "Lo-Ves", "banda": "alejandro-sanz", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G", "Am", "C", "Am", "G7/4", "G7", "C", "G", "Am", "C", "Am", "G11", "Dm", "G", "E", "Am", "Dm", "G", "E", "Dm", "G", "C", "E4", "E", "Am9", "G9", "F", "Em", "Dm7", "E5+", "E7", "Dm", "G", "E", "Am", "Dm", "G", "E", "Dm", "G", "C", "E4", "E", "Am9", "G9", "F", "Em", "Dm7", "E5+", "E7", "E7", "Dm", "G9", "F6", "E4", "E7", "Am4", "Am", "Dm", "G", "E", "Am", "Am", "F7+", "Em7", "Dm7", "E5+", "E", "C", "G", "Am", "C", "Am", "G7/4", "G7", "C", "G", "Am", "C", "Am", "G11", "G", "Dm", "G9", "F6", "E4", "E7", "Am4", "Am", "Dm", "G", "E", "Am", "Dm", "G", "E", "Am", "F7+", "Em7", "Dm7", "E5+", "E", "E", "Dm", "G", "E", "Am", "Am", "F7+", "Em7", "Dm", "Em7", "F7+", "G", "C", "G", "Am", "G7/4", "G7"]}], "orden_partes": [0]}, "letras": [[], ["MOR ERA IGUAL ", "QUE UNA TA", "RDE DE ABRIL", ",/n        QUE TAM"], ["BIEN ES FUG", "AZ COMO SE", "R FELIZ./n        PUDO "], ["SER Y NO FUE,", " POR SER LA VI", "DA COMO ES:", "/n        NOS "], ["DIO LA VUE", "LTA DEL", " REVES, L", "O VES, LO", " VES.", "", "", "/n        NUESTRO A"], ["MOR ERA IGUAL", " QUE UNA MAA", "NA SIN FI", "N,/n        IMPO"], ["SIBLE TAMB", "IEN COMO", " MORIR./n        DEJO DE "], ["SER O SERA,", " POR QUE EL DIABL", "O ES COMO ES:", "/n        JUE"], ["GA CONTI", "GO A ES", "CONDER", ", LO VES, LO", " VES.", "", "", "/n   "], ["     Y AHORA S", "OMOS COMO DOS EXTRAOS Q", "UE SE VAN, SIN MA", "S,/n        COMO "], ["DOS EXTRAOS ", "MAS, QUE VAN QUED", "ANDOSE DE", "TRAS./n        YO SIGO ES"], ["TANDO ENAM", "ORADO/n        Y TU "], ["SIGUES SIN SABER SI LO HAS EST", "ADO/n        Y SI TE "], ["QUISE ALGUNA VEZ,", " LO VES, ", "LO VES", "/n"], [], [], [], ["HEMOS VUELTO A VER ALGUNA VE", "Z Y SIEMPRE IGU", "AL,/n        COMO "], ["DOS EXTRAOS ", "MAS, QUE VAN QUED", "ANDOSE DE", "TRAS./n        ESTE EX"], ["TRAO SE HA ENTRE", "GADO/n        HASTA "], ["SER COMO LAS PALMAS DE TUS M", "ANOS./n        Y TU "], ["SOLO HAS ACTUA", "DO./n        Y YO, AUN SA"], ["BIENDO QUE MENTIAS, ME CALL", "E./n        Y ME PREGUNTAS SI TE AM"], ["E, NO VES,", " NO VES.", "", "", "/n    "], ["    YO QUE LO HAB", "IA ADIVINA", "DO/n        Y TU "], ["SIGUES SIN CREER QUE SE HA ACAB", "ADO./n        POR UNA "], ["VEZ ESCUCHAME:", " NO VES, ", "NO VES.", "/n        "], ["MIRANDONOS A", "QUI DICIE", "NDO ADIO", "S./n"], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "FGzdgPuHvHU", "delay": 0}]}
+{
+    "cancion": "Lo-Ves",
+    "banda": "alejandro-sanz",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Am",
+                    "G7/4",
+                    "G7",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Am",
+                    "G11",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E4",
+                    "E",
+                    "Am9",
+                    "G9",
+                    "F",
+                    "Em",
+                    "Dm7",
+                    "E5+",
+                    "E7",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E4",
+                    "E",
+                    "Am9",
+                    "G9",
+                    "F",
+                    "Em",
+                    "Dm7",
+                    "E5+",
+                    "E7",
+                    "E7",
+                    "Dm",
+                    "G9",
+                    "F6",
+                    "E4",
+                    "E7",
+                    "Am4",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Am",
+                    "Am",
+                    "F7+",
+                    "Em7",
+                    "Dm7",
+                    "E5+",
+                    "E",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Am",
+                    "G7/4",
+                    "G7",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Am",
+                    "G11",
+                    "G",
+                    "Dm",
+                    "G9",
+                    "F6",
+                    "E4",
+                    "E7",
+                    "Am4",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Am",
+                    "F7+",
+                    "Em7",
+                    "Dm7",
+                    "E5+",
+                    "E",
+                    "E",
+                    "Dm",
+                    "G",
+                    "E",
+                    "Am",
+                    "Am",
+                    "F7+",
+                    "Em7",
+                    "Dm",
+                    "Em7",
+                    "F7+",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "G7/4",
+                    "G7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "MOR ERA IGUAL ",
+            "QUE UNA TA",
+            "RDE DE ABRIL",
+            ",/n        QUE TAM"
+        ],
+        [
+            "BIEN ES FUG",
+            "AZ COMO SE",
+            "R FELIZ./n        PUDO "
+        ],
+        [
+            "SER Y NO FUE,",
+            " POR SER LA VI",
+            "DA COMO ES:",
+            "/n        NOS "
+        ],
+        [
+            "DIO LA VUE",
+            "LTA DEL",
+            " REVES, L",
+            "O VES, LO",
+            " VES.",
+            "",
+            "",
+            "/n        NUESTRO A"
+        ],
+        [
+            "MOR ERA IGUAL",
+            " QUE UNA MAA",
+            "NA SIN FI",
+            "N,/n        IMPO"
+        ],
+        [
+            "SIBLE TAMB",
+            "IEN COMO",
+            " MORIR./n        DEJO DE "
+        ],
+        [
+            "SER O SERA,",
+            " POR QUE EL DIABL",
+            "O ES COMO ES:",
+            "/n        JUE"
+        ],
+        [
+            "GA CONTI",
+            "GO A ES",
+            "CONDER",
+            ", LO VES, LO",
+            " VES.",
+            "",
+            "",
+            "/n   "
+        ],
+        [
+            "     Y AHORA S",
+            "OMOS COMO DOS EXTRAOS Q",
+            "UE SE VAN, SIN MA",
+            "S,/n        COMO "
+        ],
+        [
+            "DOS EXTRAOS ",
+            "MAS, QUE VAN QUED",
+            "ANDOSE DE",
+            "TRAS./n        YO SIGO ES"
+        ],
+        [
+            "TANDO ENAM",
+            "ORADO/n        Y TU "
+        ],
+        [
+            "SIGUES SIN SABER SI LO HAS EST",
+            "ADO/n        Y SI TE "
+        ],
+        [
+            "QUISE ALGUNA VEZ,",
+            " LO VES, ",
+            "LO VES",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "HEMOS VUELTO A VER ALGUNA VE",
+            "Z Y SIEMPRE IGU",
+            "AL,/n        COMO "
+        ],
+        [
+            "DOS EXTRAOS ",
+            "MAS, QUE VAN QUED",
+            "ANDOSE DE",
+            "TRAS./n        ESTE EX"
+        ],
+        [
+            "TRAO SE HA ENTRE",
+            "GADO/n        HASTA "
+        ],
+        [
+            "SER COMO LAS PALMAS DE TUS M",
+            "ANOS./n        Y TU "
+        ],
+        [
+            "SOLO HAS ACTUA",
+            "DO./n        Y YO, AUN SA"
+        ],
+        [
+            "BIENDO QUE MENTIAS, ME CALL",
+            "E./n        Y ME PREGUNTAS SI TE AM"
+        ],
+        [
+            "E, NO VES,",
+            " NO VES.",
+            "",
+            "",
+            "/n    "
+        ],
+        [
+            "    YO QUE LO HAB",
+            "IA ADIVINA",
+            "DO/n        Y TU "
+        ],
+        [
+            "SIGUES SIN CREER QUE SE HA ACAB",
+            "ADO./n        POR UNA "
+        ],
+        [
+            "VEZ ESCUCHAME:",
+            " NO VES, ",
+            "NO VES.",
+            "/n        "
+        ],
+        [
+            "MIRANDONOS A",
+            "QUI DICIE",
+            "NDO ADIO",
+            "S./n"
+        ],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "FGzdgPuHvHU",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

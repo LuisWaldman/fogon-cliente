@@ -1,1 +1,391 @@
-{"cancion": "fisurar", "banda": "bersuit-vergarabat", "escala": "G", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "G", "Bm", "E", "Am", "Cm", "G", "E", "Am", "D7", "G", "D7", "G", "Bm", "E", "Am", "Cm", "G", "E", "Am", "D7", "G", "D", "C#", "D", "G", "F#", "F", "E", "Am", "Cm", "G", "E", "Am", "D7", "G", "F", "Bb", "D7", "G7", "C7", "F7", "D7", "Eb", "C7", "Bb", "G7", "C7", "F#7", "F7", "F#7", "F7", "Bb", "D7", "G7", "C7", "F7", "D7", "Eb", "C7", "Bb", "G7", "C7", "F7", "Bb", "D7", "Gm", "F", "Eb", "Bb", "Cm", "Gm", "A", "D", "Gm", "F", "Eb", "Bb", "Cm", "Gm", "A", "D", "Gm", "F", "Eb", "Bb", "Cm", "Gm", "A", "G", "G7", "F#7", "F7", "E7", "Am", "Cm", "G7", "E7", "Am", "D7", "G", "D7", "G", "F#", "F", "E", "Am", "Cm", "G", "E", "Am", "D", "G", "D", "G", "D", "G", "D", "G", "D", "G", "G"]}], "orden_partes": [0]}, "letras": [["\u00a1Ayyy que dolor de cabeza!\u00bfVes?\u00a1Otra vez fui para all\u00e1, la puta que lo pari\u00f3!/n"], ["Fisurar/ndicen que es "], ["como llorar/ndicen que es "], ["como quedar atrapado/npor el foso "], ["de una g", "ran languide", "z,/nhija de una adrena"], ["lina tal/nque hace "], ["bien,/npero enseguida te con"], ["dena./nA eso le llaman "], ["fisurar", "/n"], ["Fisurar/ndicen que es "], ["como meterse en la ducha/nsin impor"], ["tar que est\u00e9 tibia, est\u00e9 fr\u00eda,/naunque salga mor"], ["tal,/ni"], ["gual temblar", "\u00e1s,/ncual fantasma de la os"], ["curidad;/naunque "], ["sea el mejor d\u00eda de ", "sol,/ndicen que vas a "], ["fisurar./n"], ["Fisurar/ndicen que es m\u00e1s que a"], ["nhelar tu can", "dor,/n"], ["Fisurar/ndicen que es "], ["levantarse a escuchar/npero un "], ["poco m\u00e1s./nDicen que es "], ["recibir muchos roscazos/nque vienen de a"], ["dentro de v", "os,/npuching "], ["ball de tantas horas de ab", "erraci\u00f3n/ne intermi"], ["nables confesiones y prom", "esas/nque te ayudan s\u00f3lo a"], [" fisurar.", "/nDicen que "], ["despu\u00e9s de ", "los grandes m", "omentos/nhay un va"], ["c\u00edo, que po", "d\u00e9s alimen", "tar/nsi ten\u00e9s suficientes"], [" ganas de su", "frir", "/ny explorar "], ["hondo en todas t", "us miserias,/nque "], ["van por aqu", "\u00ed, que est", "\u00e1n por al", "l\u00e1./nSe dice "], ["que puede dur", "ar dos d\u00edas en", "teros,/nquiz\u00e1s ta"], ["mbi\u00e9n toda tu", " vida,/neso de"], ["pende de lo que hayas hecho/ny no "], ["es s\u00f3lo el vil me", "tal.", "/n\u00a1Se puede"], [" fisurar/npor "], ["tantas cosas q", "ue te hacen fi", "surar!", "/n"], ["Dicen que todo tiene un p", "recio y no/n"], ["se trata del billete q", "ue se vol\u00f3/n"], ["hay muchas ventanillas p", "ara pagar/n"], ["los platos rotos de esas n", "oches de gloria./n"], ["Dicen que el sue\u00f1o te pue", "de enderezar,/n"], ["mimarse a uno mismo es f", "undamental./n"], ["Si ten\u00e9s a alguien que te ", "pueda aguantar/n"], ["o a un psic\u00f3logo a quien ", "fisurarle./n"], ["Mucho mejor si es con la m", "ina que am\u00e1s,/n"], ["nunca te pierdas esa op", "ortunidad,/n"], ["y si no hablamos de la R", "eina del Mal,/nten\u00e9s que h"], ["uir de la ciu", "dad./n"], [], ["Fisurar/ndicen que "], ["es padecer sacrificios, ausencias/no eu"], ["foria total,/ny todo "], ["tipo de encierros,/ntristezas o felici"], ["dad,/nque te "], ["suele mostr", "ar,/nal otro d\u00eda,"], [" sus dientes bien afilados/ny de "], ["ah\u00ed te empieza lentamente a a", "sesinar./nEso es "], ["fisurar;", "/nEso se llama "], ["fisurar;", "/na eso le dicen "], ["fisurar;", "/na eso le dicen "], ["fisurar./n"], ["\u00a1Fisurar!", "Fisurar!/n"], ["          III     II      I             III    II    I"]], "medias": [{"tipo": "Youtube", "id": "XXhBhl8OVFQ", "delay": 0}]}
+{
+    "cancion": "fisurar",
+    "banda": "bersuit-vergarabat",
+    "escala": "G",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
+                    "E",
+                    "Am",
+                    "Cm",
+                    "G",
+                    "E",
+                    "Am",
+                    "D7",
+                    "G",
+                    "D7",
+                    "G",
+                    "Bm",
+                    "E",
+                    "Am",
+                    "Cm",
+                    "G",
+                    "E",
+                    "Am",
+                    "D7",
+                    "G",
+                    "D",
+                    "C#",
+                    "D",
+                    "G",
+                    "F#",
+                    "F",
+                    "E",
+                    "Am",
+                    "Cm",
+                    "G",
+                    "E",
+                    "Am",
+                    "D7",
+                    "G",
+                    "F",
+                    "Bb",
+                    "D7",
+                    "G7",
+                    "C7",
+                    "F7",
+                    "D7",
+                    "Eb",
+                    "C7",
+                    "Bb",
+                    "G7",
+                    "C7",
+                    "F#7",
+                    "F7",
+                    "F#7",
+                    "F7",
+                    "Bb",
+                    "D7",
+                    "G7",
+                    "C7",
+                    "F7",
+                    "D7",
+                    "Eb",
+                    "C7",
+                    "Bb",
+                    "G7",
+                    "C7",
+                    "F7",
+                    "Bb",
+                    "D7",
+                    "Gm",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "Cm",
+                    "Gm",
+                    "A",
+                    "D",
+                    "Gm",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "Cm",
+                    "Gm",
+                    "A",
+                    "D",
+                    "Gm",
+                    "F",
+                    "Eb",
+                    "Bb",
+                    "Cm",
+                    "Gm",
+                    "A",
+                    "G",
+                    "G7",
+                    "F#7",
+                    "F7",
+                    "E7",
+                    "Am",
+                    "Cm",
+                    "G7",
+                    "E7",
+                    "Am",
+                    "D7",
+                    "G",
+                    "D7",
+                    "G",
+                    "F#",
+                    "F",
+                    "E",
+                    "Am",
+                    "Cm",
+                    "G",
+                    "E",
+                    "Am",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "¡Ayyy que dolor de cabeza!¿Ves?¡Otra vez fui para allá, la puta que lo parió!/n"
+        ],
+        [
+            "Fisurar/ndicen que es "
+        ],
+        [
+            "como llorar/ndicen que es "
+        ],
+        [
+            "como quedar atrapado/npor el foso "
+        ],
+        [
+            "de una g",
+            "ran languide",
+            "z,/nhija de una adrena"
+        ],
+        [
+            "lina tal/nque hace "
+        ],
+        [
+            "bien,/npero enseguida te con"
+        ],
+        [
+            "dena./nA eso le llaman "
+        ],
+        [
+            "fisurar",
+            "/n"
+        ],
+        [
+            "Fisurar/ndicen que es "
+        ],
+        [
+            "como meterse en la ducha/nsin impor"
+        ],
+        [
+            "tar que esté tibia, esté fría,/naunque salga mor"
+        ],
+        [
+            "tal,/ni"
+        ],
+        [
+            "gual temblar",
+            "ás,/ncual fantasma de la os"
+        ],
+        [
+            "curidad;/naunque "
+        ],
+        [
+            "sea el mejor día de ",
+            "sol,/ndicen que vas a "
+        ],
+        [
+            "fisurar./n"
+        ],
+        [
+            "Fisurar/ndicen que es más que a"
+        ],
+        [
+            "nhelar tu can",
+            "dor,/n"
+        ],
+        [
+            "Fisurar/ndicen que es "
+        ],
+        [
+            "levantarse a escuchar/npero un "
+        ],
+        [
+            "poco más./nDicen que es "
+        ],
+        [
+            "recibir muchos roscazos/nque vienen de a"
+        ],
+        [
+            "dentro de v",
+            "os,/npuching "
+        ],
+        [
+            "ball de tantas horas de ab",
+            "erración/ne intermi"
+        ],
+        [
+            "nables confesiones y prom",
+            "esas/nque te ayudan sólo a"
+        ],
+        [
+            " fisurar.",
+            "/nDicen que "
+        ],
+        [
+            "después de ",
+            "los grandes m",
+            "omentos/nhay un va"
+        ],
+        [
+            "cío, que po",
+            "dés alimen",
+            "tar/nsi tenés suficientes"
+        ],
+        [
+            " ganas de su",
+            "frir",
+            "/ny explorar "
+        ],
+        [
+            "hondo en todas t",
+            "us miserias,/nque "
+        ],
+        [
+            "van por aqu",
+            "í, que est",
+            "án por al",
+            "lá./nSe dice "
+        ],
+        [
+            "que puede dur",
+            "ar dos días en",
+            "teros,/nquizás ta"
+        ],
+        [
+            "mbién toda tu",
+            " vida,/neso de"
+        ],
+        [
+            "pende de lo que hayas hecho/ny no "
+        ],
+        [
+            "es sólo el vil me",
+            "tal.",
+            "/n¡Se puede"
+        ],
+        [
+            " fisurar/npor "
+        ],
+        [
+            "tantas cosas q",
+            "ue te hacen fi",
+            "surar!",
+            "/n"
+        ],
+        [
+            "Dicen que todo tiene un p",
+            "recio y no/n"
+        ],
+        [
+            "se trata del billete q",
+            "ue se voló/n"
+        ],
+        [
+            "hay muchas ventanillas p",
+            "ara pagar/n"
+        ],
+        [
+            "los platos rotos de esas n",
+            "oches de gloria./n"
+        ],
+        [
+            "Dicen que el sueño te pue",
+            "de enderezar,/n"
+        ],
+        [
+            "mimarse a uno mismo es f",
+            "undamental./n"
+        ],
+        [
+            "Si tenés a alguien que te ",
+            "pueda aguantar/n"
+        ],
+        [
+            "o a un psicólogo a quien ",
+            "fisurarle./n"
+        ],
+        [
+            "Mucho mejor si es con la m",
+            "ina que amás,/n"
+        ],
+        [
+            "nunca te pierdas esa op",
+            "ortunidad,/n"
+        ],
+        [
+            "y si no hablamos de la R",
+            "eina del Mal,/ntenés que h"
+        ],
+        [
+            "uir de la ciu",
+            "dad./n"
+        ],
+        [],
+        [
+            "Fisurar/ndicen que "
+        ],
+        [
+            "es padecer sacrificios, ausencias/no eu"
+        ],
+        [
+            "foria total,/ny todo "
+        ],
+        [
+            "tipo de encierros,/ntristezas o felici"
+        ],
+        [
+            "dad,/nque te "
+        ],
+        [
+            "suele mostr",
+            "ar,/nal otro día,"
+        ],
+        [
+            " sus dientes bien afilados/ny de "
+        ],
+        [
+            "ahí te empieza lentamente a a",
+            "sesinar./nEso es "
+        ],
+        [
+            "fisurar;",
+            "/nEso se llama "
+        ],
+        [
+            "fisurar;",
+            "/na eso le dicen "
+        ],
+        [
+            "fisurar;",
+            "/na eso le dicen "
+        ],
+        [
+            "fisurar./n"
+        ],
+        [
+            "¡Fisurar!",
+            "Fisurar!/n"
+        ],
+        [
+            "          III     II      I             III    II    I"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "XXhBhl8OVFQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

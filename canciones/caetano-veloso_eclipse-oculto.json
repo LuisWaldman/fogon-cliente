@@ -1,1 +1,333 @@
-{"cancion": "Eclipse-Oculto", "banda": "caetano-veloso", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "A", "E"]}, {"nombre": "parte2", "acordes": ["A"]}, {"nombre": "parte3", "acordes": ["E", "Bm", "F#m", "G", "F#", "F", "E"]}, {"nombre": "parte4", "acordes": ["F#", "F", "E", "E"]}], "orden_partes": [0, 1, 2, 1, 0, 1, 2, 1, 0, 1, 0, 1, 3, 1, 0, 1, 2, 1, 0, 1, 2, 0, 1, 0, 1, 3, 1, 0, 1, 2, 1, 0, 1, 2, 1, 0, 1, 0, 1, 3, 1]}, "letras": [["osso amor n\u00e3o deu ce", "rto/nGargalhadas e l\u00e1"], ["grimas/nDe pe"], ["rto fomos quase nada", "/nTipo de am"], ["or que n\u00e3o pode dar c", "erto na luz da manh", "\u00e3 /nE desperdi"], ["\u00e7amos os b", "lues do Dj", "avan", "/nD"], ["emasiadas palavra", "s/nFraco impulso de v"], ["ida/nTra"], ["vada a mente na ideologia", "/nE o corpo n\u00e3o "], ["agia/nComo se o cora"], ["\u00e7\u00e3o tivesse antes que opt", "ar/nEntre o in"], ["seto e o in", "seticida", "", "/nN\u00e3o me que"], ["ixo/n"], ["Eu n\u00e3o so", "ube te amar", "/nMas n\u00e3o de"], ["ixo/nD"], ["e querer co", "nquistar", "/nUma coi"], ["sa qual", "quer em voc\u00ea", "/nO que se"], ["r\u00e1?", "/n"], ["Como nunca se mo", "stra/nO outro lado da lu"], ["a/nEu desejo via"], ["jar/nPro outro lado da s"], ["ua/nMeu cora\u00e7\u00e3o ga"], ["linha de le\u00e3o/nN\u00e3o quer m"], ["ais amarrar frusta", "\u00e3o/nO eclipse ocu"], ["lto na lu", "z do ver\u00e3o", "", "/n"], ["Mas bem que n\u00f3s fomos muito feli", "zes/nS\u00f3 durante o pre"], ["l\u00fadio/nGargalhadas e l"], ["grimas/nAt\u00e9 irmos pro es"], ["t\u00fadio/nMas na hora da c"], ["ama nada pintou dir", "eito/n minha cara f"], ["alar/nN\u00e3o sou pro"], ["veito/nSou p"], ["ura fama", "/nN\u00e3o me que"], ["ixo/n"], ["Eu n\u00e3o so", "ube te amar", "/nMas n\u00e3o de"], ["ixo/nD"], ["e querer co", "nquistar", "/nUma coi"], ["sa qual", "quer em voc\u00ea", "/nO que se"], ["r\u00e1?", "/n"], ["Nada tem que dar ce", "rto/nNosso amor \u00e9 b"], ["onito/nS\u00f3 n\u00e3o disse ao que"], [" veio/nAtrasado e af"], ["lito/nE paramos no m"], ["eio/nSem saber os des"], ["ejos/nAonde \u00e9 que iam "], ["dar/nE aquele pro"], ["jeto/nAinda "], ["estar\u00e1 ", "no ar", "?/n"], ["N\u00e3o quero que vo", "c\u00ea/nFique fera co"], ["migo/nQuero ser seu a"], ["mor/nQuero ser seu a"], ["migo/nQuero que tudo s"], ["aia/nComo o som de Tim "], ["Maia/nSem grilos de mi"], ["m/nSem deses"], ["pero, sem t\u00e9", "dio, sem fi", "m", "/nN\u00e3o me que"], ["ixo/n"], ["Eu n\u00e3o so", "ube te amar", "/nMas n\u00e3o de"], ["ixo/nD"], ["e querer co", "nquistar", "/nUma coi"], ["sa qual", "quer em voc\u00ea", "/nO que se"], ["r\u00e1?", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "2R2b-l9Wj0o", "delay": 0}]}
+{
+    "cancion": "Eclipse-Oculto",
+    "banda": "caetano-veloso",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "F#",
+                    "F",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#",
+                    "F",
+                    "E",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            3,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            1,
+            3,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            3,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "osso amor não deu ce",
+            "rto/nGargalhadas e lá"
+        ],
+        [
+            "grimas/nDe pe"
+        ],
+        [
+            "rto fomos quase nada",
+            "/nTipo de am"
+        ],
+        [
+            "or que não pode dar c",
+            "erto na luz da manh",
+            "ã /nE desperdi"
+        ],
+        [
+            "çamos os b",
+            "lues do Dj",
+            "avan",
+            "/nD"
+        ],
+        [
+            "emasiadas palavra",
+            "s/nFraco impulso de v"
+        ],
+        [
+            "ida/nTra"
+        ],
+        [
+            "vada a mente na ideologia",
+            "/nE o corpo não "
+        ],
+        [
+            "agia/nComo se o cora"
+        ],
+        [
+            "ção tivesse antes que opt",
+            "ar/nEntre o in"
+        ],
+        [
+            "seto e o in",
+            "seticida",
+            "",
+            "/nNão me que"
+        ],
+        [
+            "ixo/n"
+        ],
+        [
+            "Eu não so",
+            "ube te amar",
+            "/nMas não de"
+        ],
+        [
+            "ixo/nD"
+        ],
+        [
+            "e querer co",
+            "nquistar",
+            "/nUma coi"
+        ],
+        [
+            "sa qual",
+            "quer em você",
+            "/nO que se"
+        ],
+        [
+            "rá?",
+            "/n"
+        ],
+        [
+            "Como nunca se mo",
+            "stra/nO outro lado da lu"
+        ],
+        [
+            "a/nEu desejo via"
+        ],
+        [
+            "jar/nPro outro lado da s"
+        ],
+        [
+            "ua/nMeu coração ga"
+        ],
+        [
+            "linha de leão/nNão quer m"
+        ],
+        [
+            "ais amarrar frusta",
+            "ão/nO eclipse ocu"
+        ],
+        [
+            "lto na lu",
+            "z do verão",
+            "",
+            "/n"
+        ],
+        [
+            "Mas bem que nós fomos muito feli",
+            "zes/nSó durante o pre"
+        ],
+        [
+            "lúdio/nGargalhadas e l"
+        ],
+        [
+            "grimas/nAté irmos pro es"
+        ],
+        [
+            "túdio/nMas na hora da c"
+        ],
+        [
+            "ama nada pintou dir",
+            "eito/n minha cara f"
+        ],
+        [
+            "alar/nNão sou pro"
+        ],
+        [
+            "veito/nSou p"
+        ],
+        [
+            "ura fama",
+            "/nNão me que"
+        ],
+        [
+            "ixo/n"
+        ],
+        [
+            "Eu não so",
+            "ube te amar",
+            "/nMas não de"
+        ],
+        [
+            "ixo/nD"
+        ],
+        [
+            "e querer co",
+            "nquistar",
+            "/nUma coi"
+        ],
+        [
+            "sa qual",
+            "quer em você",
+            "/nO que se"
+        ],
+        [
+            "rá?",
+            "/n"
+        ],
+        [
+            "Nada tem que dar ce",
+            "rto/nNosso amor é b"
+        ],
+        [
+            "onito/nSó não disse ao que"
+        ],
+        [
+            " veio/nAtrasado e af"
+        ],
+        [
+            "lito/nE paramos no m"
+        ],
+        [
+            "eio/nSem saber os des"
+        ],
+        [
+            "ejos/nAonde é que iam "
+        ],
+        [
+            "dar/nE aquele pro"
+        ],
+        [
+            "jeto/nAinda "
+        ],
+        [
+            "estará ",
+            "no ar",
+            "?/n"
+        ],
+        [
+            "Não quero que vo",
+            "cê/nFique fera co"
+        ],
+        [
+            "migo/nQuero ser seu a"
+        ],
+        [
+            "mor/nQuero ser seu a"
+        ],
+        [
+            "migo/nQuero que tudo s"
+        ],
+        [
+            "aia/nComo o som de Tim "
+        ],
+        [
+            "Maia/nSem grilos de mi"
+        ],
+        [
+            "m/nSem deses"
+        ],
+        [
+            "pero, sem té",
+            "dio, sem fi",
+            "m",
+            "/nNão me que"
+        ],
+        [
+            "ixo/n"
+        ],
+        [
+            "Eu não so",
+            "ube te amar",
+            "/nMas não de"
+        ],
+        [
+            "ixo/nD"
+        ],
+        [
+            "e querer co",
+            "nquistar",
+            "/nUma coi"
+        ],
+        [
+            "sa qual",
+            "quer em você",
+            "/nO que se"
+        ],
+        [
+            "rá?",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "2R2b-l9Wj0o",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

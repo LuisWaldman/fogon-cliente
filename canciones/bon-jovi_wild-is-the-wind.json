@@ -1,1 +1,361 @@
-{"cancion": "wild-is-the-wind", "banda": "bon-jovi", "escala": "Em", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "G", "D", "C", "G", "Em", "G", "D", "C", "G", "Em", "G", "D", "F", "Am", "G", "C", "G", "Am", "C", "Em", "Am", "C", "G", "Am", "F", "G", "C", "G", "Am", "C", "Em", "F", "G", "Am", "F", "G", "Am", "F", "G", "Am", "F", "Am", "Em", "G", "D", "C", "G", "Em", "G", "D", "F", "Am", "G", "C", "G", "Am", "C", "Em", "Am", "C", "G", "Am", "F", "G", "C", "G", "Am", "C", "Em", "Am", "C", "Em", "F", "G", "Am", "F", "G", "Am", "F", "G", "Am", "F", "F", "G", "Am", "G", "F", "Am", "G", "C", "G", "Am", "C", "Em", "Am", "C", "G", "Am", "F", "G", "C", "G", "Am", "C", "Em", "Am", "C", "Em", "F", "G", "Am", "F", "G", "Am", "F", "G", "Am", "F", "Am"]}], "orden_partes": [0]}, "letras": [[], ["  I tried to make you happy/n"], ["  Lord knows I tried so hard to be", "/nWhat you h"], ["oped that ", "I would be", "/n"], ["  God couldn't give you what you nee", "d/nYou wanted m"], ["ore from me/nThan I could "], ["ever be/nYou wanted h"], ["eart and soul/n"], ["Wild, ", "wild is the wind", "/nThat takes me aw"], ["ay f", "rom yo", "u/nCaught in the n"], ["ight witho", "ut your lov", "e/nTo see me th"], ["rough", "/n"], ["Wild, ", "wild is the wind", "/nThat blows through my he"], ["art", "/n"], [" Wild i", "s the wind", ",/n"], [" Wild i", "s the wind", "/n"], [" You got to un", "derstand", ", baby/n"], [" Wild is the wind", "/n"], [" You need someone to hold you/n"], [" Somebody to be there night and day", "/nSomeone to k"], ["iss your fe", "ars away", "/n"], [" Too weak, too proud, too tough to say", "/nI couldn't b"], ["e the one/nTo make your dr"], ["eams come true/nThat's why I h"], ["ad to run/n"], ["Wild, ", "wild is the wind", "/nThat takes me aw"], ["ay f", "rom yo", "u/nCaught in the n"], ["ight witho", "ut your lov", "e/nTo see me th"], ["rough", "/n"], ["Wild, ", "wild is the wind", "/nThat blows through my "], ["heart ", "tonig", "ht/nThat tear us a"], ["part", "/n"], [" Wild i", "s the wind", ",/n"], [" Wild i", "s the wind", "/n"], [" You got to un", "derstand", ", baby/n"], [" Wild is the wind/n"], [], ["etter man/nWould live and d"], ["ie for you/nBaby, a b"], ["etter man would/n"], ["Wild, ", "wild is the wind", "/nThat takes me aw"], ["ay f", "rom yo", "u/nCaught in the n"], ["ight witho", "ut your lov", "e/nTo see me th"], ["rough", "/n"], ["Wild, ", "wild is the wind", "/nThat blows through my "], ["heart ", "tonig", "ht/nThat tear us a"], ["part", "/n"], [" Wild i", "s the wind", ",/n"], [" Wild i", "s the wind", "/n"], [" You got to un", "derstand", ", baby/n"], [" Wild is the wind", ""]], "medias": [{"tipo": "Youtube", "id": "0VvVJ2FPeFs", "delay": 0}]}
+{
+    "cancion": "wild-is-the-wind",
+    "banda": "bon-jovi",
+    "escala": "Em",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "D",
+                    "C",
+                    "G",
+                    "Em",
+                    "G",
+                    "D",
+                    "C",
+                    "G",
+                    "Em",
+                    "G",
+                    "D",
+                    "F",
+                    "Am",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Em",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "Am",
+                    "Em",
+                    "G",
+                    "D",
+                    "C",
+                    "G",
+                    "Em",
+                    "G",
+                    "D",
+                    "F",
+                    "Am",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Em",
+                    "Am",
+                    "C",
+                    "Em",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "F",
+                    "G",
+                    "Am",
+                    "G",
+                    "F",
+                    "Am",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Em",
+                    "Am",
+                    "C",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "Am",
+                    "C",
+                    "Em",
+                    "Am",
+                    "C",
+                    "Em",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "  I tried to make you happy/n"
+        ],
+        [
+            "  Lord knows I tried so hard to be",
+            "/nWhat you h"
+        ],
+        [
+            "oped that ",
+            "I would be",
+            "/n"
+        ],
+        [
+            "  God couldn't give you what you nee",
+            "d/nYou wanted m"
+        ],
+        [
+            "ore from me/nThan I could "
+        ],
+        [
+            "ever be/nYou wanted h"
+        ],
+        [
+            "eart and soul/n"
+        ],
+        [
+            "Wild, ",
+            "wild is the wind",
+            "/nThat takes me aw"
+        ],
+        [
+            "ay f",
+            "rom yo",
+            "u/nCaught in the n"
+        ],
+        [
+            "ight witho",
+            "ut your lov",
+            "e/nTo see me th"
+        ],
+        [
+            "rough",
+            "/n"
+        ],
+        [
+            "Wild, ",
+            "wild is the wind",
+            "/nThat blows through my he"
+        ],
+        [
+            "art",
+            "/n"
+        ],
+        [
+            " Wild i",
+            "s the wind",
+            ",/n"
+        ],
+        [
+            " Wild i",
+            "s the wind",
+            "/n"
+        ],
+        [
+            " You got to un",
+            "derstand",
+            ", baby/n"
+        ],
+        [
+            " Wild is the wind",
+            "/n"
+        ],
+        [
+            " You need someone to hold you/n"
+        ],
+        [
+            " Somebody to be there night and day",
+            "/nSomeone to k"
+        ],
+        [
+            "iss your fe",
+            "ars away",
+            "/n"
+        ],
+        [
+            " Too weak, too proud, too tough to say",
+            "/nI couldn't b"
+        ],
+        [
+            "e the one/nTo make your dr"
+        ],
+        [
+            "eams come true/nThat's why I h"
+        ],
+        [
+            "ad to run/n"
+        ],
+        [
+            "Wild, ",
+            "wild is the wind",
+            "/nThat takes me aw"
+        ],
+        [
+            "ay f",
+            "rom yo",
+            "u/nCaught in the n"
+        ],
+        [
+            "ight witho",
+            "ut your lov",
+            "e/nTo see me th"
+        ],
+        [
+            "rough",
+            "/n"
+        ],
+        [
+            "Wild, ",
+            "wild is the wind",
+            "/nThat blows through my "
+        ],
+        [
+            "heart ",
+            "tonig",
+            "ht/nThat tear us a"
+        ],
+        [
+            "part",
+            "/n"
+        ],
+        [
+            " Wild i",
+            "s the wind",
+            ",/n"
+        ],
+        [
+            " Wild i",
+            "s the wind",
+            "/n"
+        ],
+        [
+            " You got to un",
+            "derstand",
+            ", baby/n"
+        ],
+        [
+            " Wild is the wind/n"
+        ],
+        [],
+        [
+            "etter man/nWould live and d"
+        ],
+        [
+            "ie for you/nBaby, a b"
+        ],
+        [
+            "etter man would/n"
+        ],
+        [
+            "Wild, ",
+            "wild is the wind",
+            "/nThat takes me aw"
+        ],
+        [
+            "ay f",
+            "rom yo",
+            "u/nCaught in the n"
+        ],
+        [
+            "ight witho",
+            "ut your lov",
+            "e/nTo see me th"
+        ],
+        [
+            "rough",
+            "/n"
+        ],
+        [
+            "Wild, ",
+            "wild is the wind",
+            "/nThat blows through my "
+        ],
+        [
+            "heart ",
+            "tonig",
+            "ht/nThat tear us a"
+        ],
+        [
+            "part",
+            "/n"
+        ],
+        [
+            " Wild i",
+            "s the wind",
+            ",/n"
+        ],
+        [
+            " Wild i",
+            "s the wind",
+            "/n"
+        ],
+        [
+            " You got to un",
+            "derstand",
+            ", baby/n"
+        ],
+        [
+            " Wild is the wind",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "0VvVJ2FPeFs",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

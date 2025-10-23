@@ -1,1 +1,329 @@
-{"cancion": "Ob-La-Di-Ob-La-Da", "banda": "the-beatles", "escala": "E7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E7", "F#m7", "A", "A", "A", "A", "A", "E", "E7", "A", "A7", "D", "A", "E", "A", "A", "E", "F#m7", "A", "E", "A", "A", "E", "F#m7", "A", "E", "A", "A", "E", "E7", "A", "A7", "D", "A", "E", "A", "A", "E", "F#m7", "A", "E", "A", "A", "E", "F#m7", "A", "E", "A", "D", "A", "Asus2", "A", "A7", "D", "A/E", "E", "A", "E", "E7", "A", "A7", "D", "A", "E", "A", "A", "E", "F#m7", "A", "E", "A", "A", "E", "F#m7", "A", "E", "A", "D", "A", "Asus2", "A", "A7", "D", "A/E", "E", "A", "E", "E7", "A", "A7", "D", "A", "E", "A", "A", "E", "F#m7", "A", "E", "A", "A", "E", "F#m7", "A", "E", "F#m", "E", "A"]}], "orden_partes": [0]}, "letras": [[], ["[Intro]/n["], ["Verse ", "1]", "", "/n"], ["Desmond has a barrow in the m", "arket place,/n"], ["Molly is a singer in the b", "and./n"], ["Desmond says to Molly, girl, I l", "ike your face/nAnd Molly "], ["says this as she t", "akes him by the ha", "nd,/n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./n"], ["Desmond takes a trolley to the j", "eweller's store./n"], ["Buys a twenty carat golden r", "ing./n"], ["Takes it back to Molly waiting a", "t the door./nAnd as he "], ["gives it to her s", "he begins to si", "ng,/n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./n"], ["In a couple of years they have built a home sweet home.", "", "", "", "/n"], ["With a couple of kids running in the yard,/nOf "], ["Desmond and Molly J", "ones. (ha ha ha ha)/n"], ["Happy ever after in the m", "arket place,/n"], ["Desmond lets the children lend a h", "and./n"], ["Molly stays at home and does her p", "retty face/nAnd in the "], ["evening she still s", "ings it with the ba", "nd./n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./n"], ["In a couple of years they have built a home sweet home.", "", "", "", "/n"], ["With a couple of kids running in the yard,/nOf "], ["Desmond and Molly J", "ones. (ha ha ha ha)/n"], ["Happy ever after in the m", "arket place,/n"], ["Molly lets the children lend a h", "and./n"], ["Desmond stays at home and does his p", "retty face/nAnd in the "], ["evening she's a s", "inger with the ba", "nd./n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./n"], ["Ob-La-Di, Ob-La-Da, life goes o", "n.. br", "a./n"], ["La-la how their l", "ife goes on", "./nAnd if you want some fun, sing "], ["Ob-La-Di-Bla-D", "a"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "_J9NpHKrKMw", "delay": 0}]}
+{
+    "cancion": "Ob-La-Di-Ob-La-Da",
+    "banda": "the-beatles",
+    "escala": "E7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E7",
+                    "F#m7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E7",
+                    "A",
+                    "A7",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E7",
+                    "A",
+                    "A7",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "Asus2",
+                    "A",
+                    "A7",
+                    "D",
+                    "A/E",
+                    "E",
+                    "A",
+                    "E",
+                    "E7",
+                    "A",
+                    "A7",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "Asus2",
+                    "A",
+                    "A7",
+                    "D",
+                    "A/E",
+                    "E",
+                    "A",
+                    "E",
+                    "E7",
+                    "A",
+                    "A7",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m7",
+                    "A",
+                    "E",
+                    "F#m",
+                    "E",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "[Intro]/n["
+        ],
+        [
+            "Verse ",
+            "1]",
+            "",
+            "/n"
+        ],
+        [
+            "Desmond has a barrow in the m",
+            "arket place,/n"
+        ],
+        [
+            "Molly is a singer in the b",
+            "and./n"
+        ],
+        [
+            "Desmond says to Molly, girl, I l",
+            "ike your face/nAnd Molly "
+        ],
+        [
+            "says this as she t",
+            "akes him by the ha",
+            "nd,/n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./n"
+        ],
+        [
+            "Desmond takes a trolley to the j",
+            "eweller's store./n"
+        ],
+        [
+            "Buys a twenty carat golden r",
+            "ing./n"
+        ],
+        [
+            "Takes it back to Molly waiting a",
+            "t the door./nAnd as he "
+        ],
+        [
+            "gives it to her s",
+            "he begins to si",
+            "ng,/n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./n"
+        ],
+        [
+            "In a couple of years they have built a home sweet home.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "With a couple of kids running in the yard,/nOf "
+        ],
+        [
+            "Desmond and Molly J",
+            "ones. (ha ha ha ha)/n"
+        ],
+        [
+            "Happy ever after in the m",
+            "arket place,/n"
+        ],
+        [
+            "Desmond lets the children lend a h",
+            "and./n"
+        ],
+        [
+            "Molly stays at home and does her p",
+            "retty face/nAnd in the "
+        ],
+        [
+            "evening she still s",
+            "ings it with the ba",
+            "nd./n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./n"
+        ],
+        [
+            "In a couple of years they have built a home sweet home.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "With a couple of kids running in the yard,/nOf "
+        ],
+        [
+            "Desmond and Molly J",
+            "ones. (ha ha ha ha)/n"
+        ],
+        [
+            "Happy ever after in the m",
+            "arket place,/n"
+        ],
+        [
+            "Molly lets the children lend a h",
+            "and./n"
+        ],
+        [
+            "Desmond stays at home and does his p",
+            "retty face/nAnd in the "
+        ],
+        [
+            "evening she's a s",
+            "inger with the ba",
+            "nd./n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./n"
+        ],
+        [
+            "Ob-La-Di, Ob-La-Da, life goes o",
+            "n.. br",
+            "a./n"
+        ],
+        [
+            "La-la how their l",
+            "ife goes on",
+            "./nAnd if you want some fun, sing "
+        ],
+        [
+            "Ob-La-Di-Bla-D",
+            "a"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "_J9NpHKrKMw",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

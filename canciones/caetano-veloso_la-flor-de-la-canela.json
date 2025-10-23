@@ -1,1 +1,409 @@
-{"cancion": "La-Flor-de-La-Canela", "banda": "caetano-veloso", "escala": "D7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D7", "Gm6", "Gm6", "D7", "Gm6", "G7", "Cm7", "Gm6", "Gm6", "D7", "Gm6", "Gm6", "Gm6", "D7", "Gm7", "Gm6", "Gm6", "G7", "Cm7", "F7", "Bb7M", "D7", "Gm7", "F7", "Eb7", "D7", "D7", "Gm7", "Cm7", "G7", "Cm6", "Cm7", "F7", "F7", "Bb7M", "D7", "Gm7", "Gm6", "Cm7", "F7", "Bb7M", "Bb6", "C#7(b5)", "Cm7", "F7", "Bb7M", "Cm7", "Dm7", "C#7(b5)", "Cm7", "F7", "Dm7", "G7", "Cm7", "F7", "Bb7M", "Cm7", "Dm7", "C#7", "Cm7", "F7", "Bb7M", "Dm7", "C#7(b5)", "Cm7", "F7", "Bb7M", "Cm7", "Dm7", "C#7(b5)", "Cm7", "F7", "Dm7", "G7", "Cm7", "F7", "Bb7M", "D7", "Am7(b5)", "D7", "Gm7", "Gm6", "D7", "Am7(b5)", "D7", "Gm7", "D7", "Am7(b5)", "D7", "Gm", "Gm6", "D7", "Am7", "D7", "Gm7", "Gm7", "F7", "Eb7", "D7", "Gm6", "D7", "Gm6", "Eb7M", "D7", "Am7(b5)", "D7", "Gm7", "Gm6", "Am7(b5)", "D7", "Gm7", "D7", "Gm6", "Eb7M", "D7", "Am7(b5)", "D7", "Gm6", "F7", "Cm7", "F7", "Bb7M", "Bb6", "C#7(b5)", "Cm7", "F7", "Bb7M", "Cm7", "Dm7", "C#7(b5)", "Cm7", "F7", "Dm7", "G7", "Cm7", "F7", "Bb7M", "Cm7", "Dm7", "C#7(b5)", "Cm7", "F7", "Bb7M", "Dm7", "C#7(b5)", "Cm7", "F7", "Bb7M", "Cm7", "Dm7", "C#7(b5)", "Cm7", "F7", "Dm7", "G7", "Cm7", "F7", "Bb7M"]}], "orden_partes": [0]}, "letras": [[], [], [], [], ["D\u00e9jame que te c", "uente lim", "e\u00f1o", "/n"], ["D\u00e9jame que te d", "iga la gl", "oria/nDel en"], ["sue\u00f1o que evoca la me", "moria/nDel viejo p"], ["uente del r\u00edo y la ala", "meda", "", "", "/nD\u00e9jame que "], ["cuente l", "ime\u00f1o/n"], ["Ahora que a\u00fan pe", "rdura el recue", "rdo", "/n"], ["Ahora que a\u00fan se m", "ece en un su", "e\u00f1o/nEl viejo pu"], ["ente el r\u00edo y la al", "ameda", "/nJazmines en el p"], ["elo y r", "osas en la car", "a,   airosa", "/nC"], ["ami - naba", " la flor,    la", " flor de la canela", "", "", "/nDerrama"], ["ba     lisu", "ra y a su ", "paso dejaba", "/nAr"], ["omas de mist", "ura que en el", " pecho lleva", "ba", "", "/n"], ["Del puente a la alame", "da menu", "do pie la lleva", "/nPor la    ver"], ["eda que s", "e estre - mec", "e al ritmo", "/nDe su ca"], ["dera   ", "      ", "   recog", "\u00eda la risa ", "de la br", "isa/nDel "], ["r\u00edo y al v", "iento la l", "anzaba/nDel p"], ["uente a la alame", "da/nD"], ["\u00e9jame que te c", "uen  -  te", " lime", "o/nAy! D"], ["eja que te dig", "a moreno   ", "      mi pen", "samien", "to/nA v"], ["er si as\u00ed des", "pier - tas", " del sue\u00f1", "o, del sue\u00f1", "o/nQue entre"], ["tiene, moreno, ", "   tus se", "ntimie", "ntos", "", "", "/n"], ["Aspira de la li", "sura que da la Fl", "or de Canela", "/nAdor"], ["nada con j", "azmines mat", "izando     s", "u hermo", "su - ra", "/n"], ["Alfombra d", "e nuevo el pue", "nte, y engala", "na la alameda", "/nQue el "], ["r\u00edo acompas", "ar\u00e1 tu ", "paso        ", " por la ver", "eda/nY recuerda qu"], ["e/nJazmines en el p"], ["elo y r", "osas en la car", "a,   airosa", "/nC"], ["ami - naba", " la flor,    la", " flor de la canela", "", "", "/nDerrama"], ["ba     lisu", "ra y a su ", "paso dejaba", "/nAr"], ["omas de mist", "ura que en el", " pecho lleva", "ba", "", "/n"], ["Del puente a la alameda m", "enudo p", "ie la lleva", "/nPor la    ver"], ["eda que s", "e estre - mec", "e al ritmo", "/nDe su ca"], ["dera   ", "      ", "   recog", "\u00eda la risa ", "de la br", "isa/nDel "], ["r\u00edo y al v", "iento la l", "anzaba/nDel p"], ["uente a la alame", "da"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "X1sZtuMQrJM", "delay": 0}]}
+{
+    "cancion": "La-Flor-de-La-Canela",
+    "banda": "caetano-veloso",
+    "escala": "D7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D7",
+                    "Gm6",
+                    "Gm6",
+                    "D7",
+                    "Gm6",
+                    "G7",
+                    "Cm7",
+                    "Gm6",
+                    "Gm6",
+                    "D7",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "D7",
+                    "Gm7",
+                    "Gm6",
+                    "Gm6",
+                    "G7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "D7",
+                    "Gm7",
+                    "F7",
+                    "Eb7",
+                    "D7",
+                    "D7",
+                    "Gm7",
+                    "Cm7",
+                    "G7",
+                    "Cm6",
+                    "Cm7",
+                    "F7",
+                    "F7",
+                    "Bb7M",
+                    "D7",
+                    "Gm7",
+                    "Gm6",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Bb6",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "Dm7",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Dm7",
+                    "G7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "Dm7",
+                    "C#7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Dm7",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "Dm7",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Dm7",
+                    "G7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "D7",
+                    "Am7(b5)",
+                    "D7",
+                    "Gm7",
+                    "Gm6",
+                    "D7",
+                    "Am7(b5)",
+                    "D7",
+                    "Gm7",
+                    "D7",
+                    "Am7(b5)",
+                    "D7",
+                    "Gm",
+                    "Gm6",
+                    "D7",
+                    "Am7",
+                    "D7",
+                    "Gm7",
+                    "Gm7",
+                    "F7",
+                    "Eb7",
+                    "D7",
+                    "Gm6",
+                    "D7",
+                    "Gm6",
+                    "Eb7M",
+                    "D7",
+                    "Am7(b5)",
+                    "D7",
+                    "Gm7",
+                    "Gm6",
+                    "Am7(b5)",
+                    "D7",
+                    "Gm7",
+                    "D7",
+                    "Gm6",
+                    "Eb7M",
+                    "D7",
+                    "Am7(b5)",
+                    "D7",
+                    "Gm6",
+                    "F7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Bb6",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "Dm7",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Dm7",
+                    "G7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "Dm7",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Dm7",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Bb7M",
+                    "Cm7",
+                    "Dm7",
+                    "C#7(b5)",
+                    "Cm7",
+                    "F7",
+                    "Dm7",
+                    "G7",
+                    "Cm7",
+                    "F7",
+                    "Bb7M"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [],
+        [
+            "Déjame que te c",
+            "uente lim",
+            "eño",
+            "/n"
+        ],
+        [
+            "Déjame que te d",
+            "iga la gl",
+            "oria/nDel en"
+        ],
+        [
+            "sueño que evoca la me",
+            "moria/nDel viejo p"
+        ],
+        [
+            "uente del río y la ala",
+            "meda",
+            "",
+            "",
+            "/nDéjame que "
+        ],
+        [
+            "cuente l",
+            "imeño/n"
+        ],
+        [
+            "Ahora que aún pe",
+            "rdura el recue",
+            "rdo",
+            "/n"
+        ],
+        [
+            "Ahora que aún se m",
+            "ece en un su",
+            "eño/nEl viejo pu"
+        ],
+        [
+            "ente el río y la al",
+            "ameda",
+            "/nJazmines en el p"
+        ],
+        [
+            "elo y r",
+            "osas en la car",
+            "a,   airosa",
+            "/nC"
+        ],
+        [
+            "ami - naba",
+            " la flor,    la",
+            " flor de la canela",
+            "",
+            "",
+            "/nDerrama"
+        ],
+        [
+            "ba     lisu",
+            "ra y a su ",
+            "paso dejaba",
+            "/nAr"
+        ],
+        [
+            "omas de mist",
+            "ura que en el",
+            " pecho lleva",
+            "ba",
+            "",
+            "/n"
+        ],
+        [
+            "Del puente a la alame",
+            "da menu",
+            "do pie la lleva",
+            "/nPor la    ver"
+        ],
+        [
+            "eda que s",
+            "e estre - mec",
+            "e al ritmo",
+            "/nDe su ca"
+        ],
+        [
+            "dera   ",
+            "      ",
+            "   recog",
+            "ía la risa ",
+            "de la br",
+            "isa/nDel "
+        ],
+        [
+            "río y al v",
+            "iento la l",
+            "anzaba/nDel p"
+        ],
+        [
+            "uente a la alame",
+            "da/nD"
+        ],
+        [
+            "éjame que te c",
+            "uen  -  te",
+            " lime",
+            "o/nAy! D"
+        ],
+        [
+            "eja que te dig",
+            "a moreno   ",
+            "      mi pen",
+            "samien",
+            "to/nA v"
+        ],
+        [
+            "er si así des",
+            "pier - tas",
+            " del sueñ",
+            "o, del sueñ",
+            "o/nQue entre"
+        ],
+        [
+            "tiene, moreno, ",
+            "   tus se",
+            "ntimie",
+            "ntos",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aspira de la li",
+            "sura que da la Fl",
+            "or de Canela",
+            "/nAdor"
+        ],
+        [
+            "nada con j",
+            "azmines mat",
+            "izando     s",
+            "u hermo",
+            "su - ra",
+            "/n"
+        ],
+        [
+            "Alfombra d",
+            "e nuevo el pue",
+            "nte, y engala",
+            "na la alameda",
+            "/nQue el "
+        ],
+        [
+            "río acompas",
+            "ará tu ",
+            "paso        ",
+            " por la ver",
+            "eda/nY recuerda qu"
+        ],
+        [
+            "e/nJazmines en el p"
+        ],
+        [
+            "elo y r",
+            "osas en la car",
+            "a,   airosa",
+            "/nC"
+        ],
+        [
+            "ami - naba",
+            " la flor,    la",
+            " flor de la canela",
+            "",
+            "",
+            "/nDerrama"
+        ],
+        [
+            "ba     lisu",
+            "ra y a su ",
+            "paso dejaba",
+            "/nAr"
+        ],
+        [
+            "omas de mist",
+            "ura que en el",
+            " pecho lleva",
+            "ba",
+            "",
+            "/n"
+        ],
+        [
+            "Del puente a la alameda m",
+            "enudo p",
+            "ie la lleva",
+            "/nPor la    ver"
+        ],
+        [
+            "eda que s",
+            "e estre - mec",
+            "e al ritmo",
+            "/nDe su ca"
+        ],
+        [
+            "dera   ",
+            "      ",
+            "   recog",
+            "ía la risa ",
+            "de la br",
+            "isa/nDel "
+        ],
+        [
+            "río y al v",
+            "iento la l",
+            "anzaba/nDel p"
+        ],
+        [
+            "uente a la alame",
+            "da"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "X1sZtuMQrJM",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

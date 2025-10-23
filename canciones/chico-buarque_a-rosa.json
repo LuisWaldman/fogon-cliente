@@ -1,1 +1,390 @@
-{"cancion": "A-Rosa", "banda": "chico-buarque", "escala": "C7M(9)", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C7M(9)", "G7(9)", "C6/9", "E7", "Am6", "E7/G#", "Gm7", "Gm6"]}, {"nombre": "parte2", "acordes": ["Ab7", "C7M", "B7", "Gm6/Bb", "A7(b13)", "F7M/A", "Fm6/Ab"]}, {"nombre": "parte3", "acordes": ["C7M/G", "G7(9)", "C6/9", "E7", "Am6", "E7/G#", "Gm7", "Gm6"]}, {"nombre": "parte4", "acordes": ["C7M/G", "B7/D#", "Gm6/D", "A7/C#", "F7M/C", "Bbm6/Db", "Dm7(9)"]}, {"nombre": "parte5", "acordes": ["C7M(9)"]}], "orden_partes": [0, 1, 2, 1, 3, 1, 2, 1, 2, 1, 3, 1, 2, 1, 2, 1, 3, 1, 2, 1, 2, 1, 3, 1, 4]}, "letras": [["______sa o meu ", "    projeto de vi__", "__da", "/nQueri"], ["___da, estre_", "____la do meu cami__", "_nho", "/nEspi"], ["___nho cravado em minha gargan_", "__ta Gargan__", "ta/nA san"], ["______ta \u00e0s ve", "_______zes troca meu no_", "____me/nE so"], ["______me E so_", "____me nas al__", "___tas da madruga___", "_da", "/nCoita"], ["___da, trabal", "ha  de plantonis__", "_ta", "/nArtis"], ["___ta, \u00e9 doida pela Porte", "___la i e", "__la/ni "], ["e______la, vesti", "_______da de verde e ro_", "____sa/nA Ro"], ["______sa A Ro_", "____sa garante", "   que \u00e9 sempre mi__", "___nha", "/nQuieti"], ["_____nha, saiu ", "       pra comprar cigar__", "____ro/nQue sar"], ["___ro, trouxe umas coisas do Nor_", "__te Que sor__", "te/nQue sor"], ["______te, voltou ", "      toda sorriden__", "___te", "/nDemen"], ["_____te, inven_", "____ta cada car\u00ed_", "___cia", "/nEg\u00ed"], ["p___cia, me encon", "_____tra e me vira a ca_", "__ra", "/nOda"], ["___ra, gravou meu nome na blu_", "__sa/nAbu"], ["__sa, me acus_", "_____a Revis__", "_____ta os bolsos da cal___", "__\u00e7a", "/nA fal"], ["_____sa limpou ", "    a minha cartei__", "__ra", "/nManei"], ["___ra, pagou ", "    a nossa des__", "_pesa", "/nBele"], ["___za, na hora do bom me dei_", "__xa, se quei__", "xa/nA guei"], ["______xa Que coi_", "______sa mais amoro__", "___sa A Ro___", "___sa/nAh, Ro"], ["_____sa, e o meu ", "    projeto de vi__", "___da?", "/nBandi"], ["_____da, cad\u00ea", "        minha estrela gui_", "_____a?/nVadi"], ["___a, me esquece na noite escu_", "__ra Mas ju__", "ra/nMe ju"], ["______ra que um di_", "______a volta pra ca__", "___sa", "/nArra"], ["_____sa o meu ", "    projeto de vi__", "__da", "/nQueri"], ["___da, estre_", "____la do meu cami__", "_nho", "/nEspi"], ["___nho cravado em minha gargan_", "__ta Gargan__", "ta/nA san"], ["______ta \u00e0s ve", "_______zes me chama Alber_", "____to Alber__", "____to/nDecer"], ["____to sonhou ", "    com alguma nove__", "__la", "/nPen"], ["___lope, espe", "_____ra por mim bordan_", "__do", "/nSuan"], ["___do, ficou de cama com fe_", "__bre Que fe__", "bre/nA le"], ["______bre, como \u00e9", "       que ela \u00e9 t\u00e3o fog", "o_____sa A Ro", "______sa/nA Ro"], ["_____sa jurou ", "    seu amor eter__", "___no", "/nMeu ter"], ["_____no ficou ", "       na tinturari__", "____a/nUm di"], ["___a me trouxe uma roupa jus_", "__ta Me gus__", "ta, me gus___", "___ta/nCismou"], ["       de dan\u00e7ar um tan", "_____go", "/nMeu ran"], ["_____go sumiu ", "    l\u00e1 da geladei_", "___ra", "/nCasei"], ["___ra, seu mo_", "____lho \u00e9 uma maravi_", "__lha", "/nQue fi"], ["___lha, visita a fam\u00edlia em Sam", "___pa s pam", "__pa, \u00e0s pam", "______pa/nVoltou"], ["       toda descasca_", "____da", "/nA fa"], ["_____da, aca_", "____ba com a minha li__", "__ra", "/nA gi"], ["___ra, esgo_", "____ta a minha larin__", "_ge", "/nEsfin"], ["___ge, devora a minha pesso_", "__a/n-t"], ["o__a, a bo", "______a Que coi_", "______sa mais saboro__", "___sa A Ro___", "___sa/nAh, Ro"], ["_____sa, e o ", "    meu projeto de vi__", "___da?", "/nBandi"], ["_____da, cad\u00ea", "        minha estrela gui_", "_____a?/nVadi"], ["___a, me esquece na noite escu_", "__ra Mas ju__", "ra/nMe ju"], ["______ra que um di_", "______a volta pra ca__", "___sa    ", "    Arra____", "__sa/n"], [], [], [], [], [], [], [], [], [], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "DULrJTmUkm8", "delay": 0}]}
+{
+    "cancion": "A-Rosa",
+    "banda": "chico-buarque",
+    "escala": "C7M(9)",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C7M(9)",
+                    "G7(9)",
+                    "C6/9",
+                    "E7",
+                    "Am6",
+                    "E7/G#",
+                    "Gm7",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Ab7",
+                    "C7M",
+                    "B7",
+                    "Gm6/Bb",
+                    "A7(b13)",
+                    "F7M/A",
+                    "Fm6/Ab"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C7M/G",
+                    "G7(9)",
+                    "C6/9",
+                    "E7",
+                    "Am6",
+                    "E7/G#",
+                    "Gm7",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C7M/G",
+                    "B7/D#",
+                    "Gm6/D",
+                    "A7/C#",
+                    "F7M/C",
+                    "Bbm6/Db",
+                    "Dm7(9)"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C7M(9)"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            4
+        ]
+    },
+    "letras": [
+        [
+            "______sa o meu ",
+            "    projeto de vi__",
+            "__da",
+            "/nQueri"
+        ],
+        [
+            "___da, estre_",
+            "____la do meu cami__",
+            "_nho",
+            "/nEspi"
+        ],
+        [
+            "___nho cravado em minha gargan_",
+            "__ta Gargan__",
+            "ta/nA san"
+        ],
+        [
+            "______ta às ve",
+            "_______zes troca meu no_",
+            "____me/nE so"
+        ],
+        [
+            "______me E so_",
+            "____me nas al__",
+            "___tas da madruga___",
+            "_da",
+            "/nCoita"
+        ],
+        [
+            "___da, trabal",
+            "ha  de plantonis__",
+            "_ta",
+            "/nArtis"
+        ],
+        [
+            "___ta, é doida pela Porte",
+            "___la i e",
+            "__la/ni "
+        ],
+        [
+            "e______la, vesti",
+            "_______da de verde e ro_",
+            "____sa/nA Ro"
+        ],
+        [
+            "______sa A Ro_",
+            "____sa garante",
+            "   que é sempre mi__",
+            "___nha",
+            "/nQuieti"
+        ],
+        [
+            "_____nha, saiu ",
+            "       pra comprar cigar__",
+            "____ro/nQue sar"
+        ],
+        [
+            "___ro, trouxe umas coisas do Nor_",
+            "__te Que sor__",
+            "te/nQue sor"
+        ],
+        [
+            "______te, voltou ",
+            "      toda sorriden__",
+            "___te",
+            "/nDemen"
+        ],
+        [
+            "_____te, inven_",
+            "____ta cada carí_",
+            "___cia",
+            "/nEgí"
+        ],
+        [
+            "p___cia, me encon",
+            "_____tra e me vira a ca_",
+            "__ra",
+            "/nOda"
+        ],
+        [
+            "___ra, gravou meu nome na blu_",
+            "__sa/nAbu"
+        ],
+        [
+            "__sa, me acus_",
+            "_____a Revis__",
+            "_____ta os bolsos da cal___",
+            "__ça",
+            "/nA fal"
+        ],
+        [
+            "_____sa limpou ",
+            "    a minha cartei__",
+            "__ra",
+            "/nManei"
+        ],
+        [
+            "___ra, pagou ",
+            "    a nossa des__",
+            "_pesa",
+            "/nBele"
+        ],
+        [
+            "___za, na hora do bom me dei_",
+            "__xa, se quei__",
+            "xa/nA guei"
+        ],
+        [
+            "______xa Que coi_",
+            "______sa mais amoro__",
+            "___sa A Ro___",
+            "___sa/nAh, Ro"
+        ],
+        [
+            "_____sa, e o meu ",
+            "    projeto de vi__",
+            "___da?",
+            "/nBandi"
+        ],
+        [
+            "_____da, cadê",
+            "        minha estrela gui_",
+            "_____a?/nVadi"
+        ],
+        [
+            "___a, me esquece na noite escu_",
+            "__ra Mas ju__",
+            "ra/nMe ju"
+        ],
+        [
+            "______ra que um di_",
+            "______a volta pra ca__",
+            "___sa",
+            "/nArra"
+        ],
+        [
+            "_____sa o meu ",
+            "    projeto de vi__",
+            "__da",
+            "/nQueri"
+        ],
+        [
+            "___da, estre_",
+            "____la do meu cami__",
+            "_nho",
+            "/nEspi"
+        ],
+        [
+            "___nho cravado em minha gargan_",
+            "__ta Gargan__",
+            "ta/nA san"
+        ],
+        [
+            "______ta às ve",
+            "_______zes me chama Alber_",
+            "____to Alber__",
+            "____to/nDecer"
+        ],
+        [
+            "____to sonhou ",
+            "    com alguma nove__",
+            "__la",
+            "/nPen"
+        ],
+        [
+            "___lope, espe",
+            "_____ra por mim bordan_",
+            "__do",
+            "/nSuan"
+        ],
+        [
+            "___do, ficou de cama com fe_",
+            "__bre Que fe__",
+            "bre/nA le"
+        ],
+        [
+            "______bre, como é",
+            "       que ela é tão fog",
+            "o_____sa A Ro",
+            "______sa/nA Ro"
+        ],
+        [
+            "_____sa jurou ",
+            "    seu amor eter__",
+            "___no",
+            "/nMeu ter"
+        ],
+        [
+            "_____no ficou ",
+            "       na tinturari__",
+            "____a/nUm di"
+        ],
+        [
+            "___a me trouxe uma roupa jus_",
+            "__ta Me gus__",
+            "ta, me gus___",
+            "___ta/nCismou"
+        ],
+        [
+            "       de dançar um tan",
+            "_____go",
+            "/nMeu ran"
+        ],
+        [
+            "_____go sumiu ",
+            "    lá da geladei_",
+            "___ra",
+            "/nCasei"
+        ],
+        [
+            "___ra, seu mo_",
+            "____lho é uma maravi_",
+            "__lha",
+            "/nQue fi"
+        ],
+        [
+            "___lha, visita a família em Sam",
+            "___pa s pam",
+            "__pa, às pam",
+            "______pa/nVoltou"
+        ],
+        [
+            "       toda descasca_",
+            "____da",
+            "/nA fa"
+        ],
+        [
+            "_____da, aca_",
+            "____ba com a minha li__",
+            "__ra",
+            "/nA gi"
+        ],
+        [
+            "___ra, esgo_",
+            "____ta a minha larin__",
+            "_ge",
+            "/nEsfin"
+        ],
+        [
+            "___ge, devora a minha pesso_",
+            "__a/n-t"
+        ],
+        [
+            "o__a, a bo",
+            "______a Que coi_",
+            "______sa mais saboro__",
+            "___sa A Ro___",
+            "___sa/nAh, Ro"
+        ],
+        [
+            "_____sa, e o ",
+            "    meu projeto de vi__",
+            "___da?",
+            "/nBandi"
+        ],
+        [
+            "_____da, cadê",
+            "        minha estrela gui_",
+            "_____a?/nVadi"
+        ],
+        [
+            "___a, me esquece na noite escu_",
+            "__ra Mas ju__",
+            "ra/nMe ju"
+        ],
+        [
+            "______ra que um di_",
+            "______a volta pra ca__",
+            "___sa    ",
+            "    Arra____",
+            "__sa/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "DULrJTmUkm8",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

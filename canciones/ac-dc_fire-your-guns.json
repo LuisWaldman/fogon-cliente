@@ -1,1 +1,460 @@
-{"cancion": "fire-your-guns", "banda": "ac-dc", "escala": "C5", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C5", "D5", "A", "B5", "C5/B", "Am/C", "Am/C", "A5", "Am/A5", "Am/C", "Am/C", "A5", "Am/A5", "Am/C", "Am/C", "A5", "Am/A5", "Am/C", "Am/C", "A5", "Am/A5", "A5", "Am/A5", "A5", "Am/A5", "Am/C", "A5Am/C", "A5", "AmA5", "A5", "Am/A5", "A5", "Am/A5", "Am/C", "A5Am/C", "AmA5", "Am/C", "A5Am/C", "A5", "Am/CA5", "C5D5", "C5A", "C5", "A", "C5A", "C5D5", "C5", "A", "C5", "B5A", "C5D5", "C5A", "C5A", "C5", "A", "C5", "D5", "C5", "A", "C5", "B5", "A", "AmA5", "Am/CA5", "A5", "AmA5", "AmA5", "Am/CA5", "E", "E", "E", "E", "E", "E", "E", "E", "A5", "AmA5", "AmA5", "Am/C", "A5", "A5", "AmA5", "AmA5", "Am/C", "A5", "A5", "AmA5", "Am/A5", "Am/C", "A5", "A5", "Am/C", "A5", "Am/C", "A5", "Am/C", "A5", "A5", "Am/C", "A5", "A5", "A5", "Am/A5", "A5", "A5", "Am/C", "A5", "G5", "Asus4/A5", "C5", "A5", "G5", "Asus4/D", "A5", "C5", "A5", "C5", "C5/B", "AmA5", "AmA5", "E", "E", "E", "E", "E", "E", "E", "E", "A5", "AmA5", "AmA5", "AmA5", "A5", "AmA5", "AmA5", "AmA5", "A5", "AmA5", "AmA5", "AmA5", "A5", "AmA5", "AmA5", "Am/A5", "A5", "AmA5", "AmA5", "A5", "A5", "A5", "Am/C", "A5", "Am/C", "A5", "Am/C", "A5", "E", "E", "E", "E", "E", "E", "E", "E", "A5", "Am/C", "A5", "C5A5", "C5", "A5", "C5", "A5", "C5A5", "C5", "A5", "C5A5", "C5", "A5"]}], "orden_partes": [0]}, "letras": [["5 5 x x          x x 0", " 2 3 x          x 0 2 2", " 2 x          x 2 4 4", " x x/n      x 2"], [" 5 5 x x/n   4/4"], ["", "", "", "", "", "", "", "/n    Gt"], ["rs I, II", "", "", "", "", "", "", "/n    H    E "], ["E E E   Q  ", "E E H      H    E E ", "E E   Q  E ", "E H     4x/n    E "], ["E  E  E", " E  E  E ", "E   Q  E E", " H     4x/n    H    E "], ["E E E   Q  ", "E E H      H    E E ", "E E   Q  E ", "E H     4x/n  E "], ["E  E  E", " H           H    ", "  E E E E/n  H "], ["       ", " E  E  E ", "E   a    E  e a    +H.", "/n                          "], ["Gtr III", "", "", "", "/n  "], ["E E E E Q          ", "E  E ", "   Q ", "   E E ", "+H/n  "], ["E E E E +Q  E", " E   E ", "E  E ", " E +H", "                     E  ", " E E   ", "E Q   E   E", "", "/n  "], ["Q       E", "   E ", "   +H                E   E E", "   E E   ", "E   E E/n  "], ["Q               E", "  E  H/n"], [], ["    /", " / ", "  / /", "   ", "/   /", "   /", "", "/n  "], ["Q     E", " E  H                    E   E ", "E E  E ", "   E E ", "E/n  "], ["      Q     E", " E  H        E    E ", "E    E  E ", "  E   ", "E   E/n       "], [" Q    E", " E H/n   E "], [" E  E    E     ", "E    E ", "    E    E      Q ", "       E  ", "  E    ", " H/n   E   "], ["E      ", "E   E E ", "     E ", "  E E        Q  ", "  E   ", "E H", "/n   H                  E   "], ["E    E    E/n  "], [" Q     ", "E  E H           H       E  E", "          E  E/n  "], ["  Q            ", " E  E ", " H/n  "], ["Gtr II", "", "", "/n         "], ["  H                          ", " Q                 ", "Q/n  "], ["         Q        E         ", " E  +H/n  "], [" H                          ", "H/n"], [], ["    /", " / ", "/ /", " / ", "   ", "      /    /", "", "/n  "], ["  Q   E", "   E   H      E E ", "E E E E", " E E/n  "], ["Q  E", " E          H/n    E   "], ["E E E E", " E E E   Q ", " E E", " H/n  E "], ["E E E E", " E E E   Q ", " E E", " H                    E   E  E", " E  E  E", "  E     E/n  "], ["  Q    E", " E H                    E   E ", " E E  E ", " E  ", "E  E/n         "], ["  Q       ", "E          ", "E    H/n"], [], ["     /", "          / ", "  /  ", "/   ", "       /   /", "  /", "", "/n         "], ["        ", "           ", "                  Gtr I", "I", "", "/n    E  "], ["  E    E", " E E ", "E          Q       E    E", "    E E ", "E E  ", "        E    E/n    Q    "], [" E      ", " E   +H"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "BuSHlWVjDIM", "delay": 0}]}
+{
+    "cancion": "fire-your-guns",
+    "banda": "ac-dc",
+    "escala": "C5",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C5",
+                    "D5",
+                    "A",
+                    "B5",
+                    "C5/B",
+                    "Am/C",
+                    "Am/C",
+                    "A5",
+                    "Am/A5",
+                    "Am/C",
+                    "Am/C",
+                    "A5",
+                    "Am/A5",
+                    "Am/C",
+                    "Am/C",
+                    "A5",
+                    "Am/A5",
+                    "Am/C",
+                    "Am/C",
+                    "A5",
+                    "Am/A5",
+                    "A5",
+                    "Am/A5",
+                    "A5",
+                    "Am/A5",
+                    "Am/C",
+                    "A5Am/C",
+                    "A5",
+                    "AmA5",
+                    "A5",
+                    "Am/A5",
+                    "A5",
+                    "Am/A5",
+                    "Am/C",
+                    "A5Am/C",
+                    "AmA5",
+                    "Am/C",
+                    "A5Am/C",
+                    "A5",
+                    "Am/CA5",
+                    "C5D5",
+                    "C5A",
+                    "C5",
+                    "A",
+                    "C5A",
+                    "C5D5",
+                    "C5",
+                    "A",
+                    "C5",
+                    "B5A",
+                    "C5D5",
+                    "C5A",
+                    "C5A",
+                    "C5",
+                    "A",
+                    "C5",
+                    "D5",
+                    "C5",
+                    "A",
+                    "C5",
+                    "B5",
+                    "A",
+                    "AmA5",
+                    "Am/CA5",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "Am/CA5",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "Am/C",
+                    "A5",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "Am/C",
+                    "A5",
+                    "A5",
+                    "AmA5",
+                    "Am/A5",
+                    "Am/C",
+                    "A5",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "Am/A5",
+                    "A5",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "G5",
+                    "Asus4/A5",
+                    "C5",
+                    "A5",
+                    "G5",
+                    "Asus4/D",
+                    "A5",
+                    "C5",
+                    "A5",
+                    "C5",
+                    "C5/B",
+                    "AmA5",
+                    "AmA5",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "AmA5",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "AmA5",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "AmA5",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "Am/A5",
+                    "A5",
+                    "AmA5",
+                    "AmA5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A5",
+                    "Am/C",
+                    "A5",
+                    "C5A5",
+                    "C5",
+                    "A5",
+                    "C5",
+                    "A5",
+                    "C5A5",
+                    "C5",
+                    "A5",
+                    "C5A5",
+                    "C5",
+                    "A5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "5 5 x x          x x 0",
+            " 2 3 x          x 0 2 2",
+            " 2 x          x 2 4 4",
+            " x x/n      x 2"
+        ],
+        [
+            " 5 5 x x/n   4/4"
+        ],
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n    Gt"
+        ],
+        [
+            "rs I, II",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n    H    E "
+        ],
+        [
+            "E E E   Q  ",
+            "E E H      H    E E ",
+            "E E   Q  E ",
+            "E H     4x/n    E "
+        ],
+        [
+            "E  E  E",
+            " E  E  E ",
+            "E   Q  E E",
+            " H     4x/n    H    E "
+        ],
+        [
+            "E E E   Q  ",
+            "E E H      H    E E ",
+            "E E   Q  E ",
+            "E H     4x/n  E "
+        ],
+        [
+            "E  E  E",
+            " H           H    ",
+            "  E E E E/n  H "
+        ],
+        [
+            "       ",
+            " E  E  E ",
+            "E   a    E  e a    +H.",
+            "/n                          "
+        ],
+        [
+            "Gtr III",
+            "",
+            "",
+            "",
+            "/n  "
+        ],
+        [
+            "E E E E Q          ",
+            "E  E ",
+            "   Q ",
+            "   E E ",
+            "+H/n  "
+        ],
+        [
+            "E E E E +Q  E",
+            " E   E ",
+            "E  E ",
+            " E +H",
+            "                     E  ",
+            " E E   ",
+            "E Q   E   E",
+            "",
+            "/n  "
+        ],
+        [
+            "Q       E",
+            "   E ",
+            "   +H                E   E E",
+            "   E E   ",
+            "E   E E/n  "
+        ],
+        [
+            "Q               E",
+            "  E  H/n"
+        ],
+        [],
+        [
+            "    /",
+            " / ",
+            "  / /",
+            "   ",
+            "/   /",
+            "   /",
+            "",
+            "/n  "
+        ],
+        [
+            "Q     E",
+            " E  H                    E   E ",
+            "E E  E ",
+            "   E E ",
+            "E/n  "
+        ],
+        [
+            "      Q     E",
+            " E  H        E    E ",
+            "E    E  E ",
+            "  E   ",
+            "E   E/n       "
+        ],
+        [
+            " Q    E",
+            " E H/n   E "
+        ],
+        [
+            " E  E    E     ",
+            "E    E ",
+            "    E    E      Q ",
+            "       E  ",
+            "  E    ",
+            " H/n   E   "
+        ],
+        [
+            "E      ",
+            "E   E E ",
+            "     E ",
+            "  E E        Q  ",
+            "  E   ",
+            "E H",
+            "/n   H                  E   "
+        ],
+        [
+            "E    E    E/n  "
+        ],
+        [
+            " Q     ",
+            "E  E H           H       E  E",
+            "          E  E/n  "
+        ],
+        [
+            "  Q            ",
+            " E  E ",
+            " H/n  "
+        ],
+        [
+            "Gtr II",
+            "",
+            "",
+            "/n         "
+        ],
+        [
+            "  H                          ",
+            " Q                 ",
+            "Q/n  "
+        ],
+        [
+            "         Q        E         ",
+            " E  +H/n  "
+        ],
+        [
+            " H                          ",
+            "H/n"
+        ],
+        [],
+        [
+            "    /",
+            " / ",
+            "/ /",
+            " / ",
+            "   ",
+            "      /    /",
+            "",
+            "/n  "
+        ],
+        [
+            "  Q   E",
+            "   E   H      E E ",
+            "E E E E",
+            " E E/n  "
+        ],
+        [
+            "Q  E",
+            " E          H/n    E   "
+        ],
+        [
+            "E E E E",
+            " E E E   Q ",
+            " E E",
+            " H/n  E "
+        ],
+        [
+            "E E E E",
+            " E E E   Q ",
+            " E E",
+            " H                    E   E  E",
+            " E  E  E",
+            "  E     E/n  "
+        ],
+        [
+            "  Q    E",
+            " E H                    E   E ",
+            " E E  E ",
+            " E  ",
+            "E  E/n         "
+        ],
+        [
+            "  Q       ",
+            "E          ",
+            "E    H/n"
+        ],
+        [],
+        [
+            "     /",
+            "          / ",
+            "  /  ",
+            "/   ",
+            "       /   /",
+            "  /",
+            "",
+            "/n         "
+        ],
+        [
+            "        ",
+            "           ",
+            "                  Gtr I",
+            "I",
+            "",
+            "/n    E  "
+        ],
+        [
+            "  E    E",
+            " E E ",
+            "E          Q       E    E",
+            "    E E ",
+            "E E  ",
+            "        E    E/n    Q    "
+        ],
+        [
+            " E      ",
+            " E   +H"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "BuSHlWVjDIM",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

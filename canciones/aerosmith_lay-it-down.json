@@ -1,1 +1,391 @@
-{"cancion": "lay-it-down", "banda": "aerosmith", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "Dm", "Em", "F", "Bb", "Am", "G", "C", "Fm", "C", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "Am", "F", "Dm", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "Dm", "Em", "F", "Bb", "Am", "G", "C", "Fm", "C", "Bb", "Am", "Ab", "C", "Bb", "Am", "Ab", "C", "Bb", "Am", "G", "Am", "F", "Dm", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "Dm", "Em", "F", "Bb", "Am", "G", "C", "Fm", "C", "Fm", "C", "Fm", "C", "F", "G", "Em", "Bb", "Ab", "Bb", "Am", "Ab", "C"]}], "orden_partes": [0]}, "letras": [["uby red, her li", "ps were on fi", "re", "/nD"], ["o me with a kis", "s if you plea", "se", "/nT"], ["ell me what you", "r sweet heart ", "desires", "/nT"], ["ell he how you wan", "t it to be", "", "/n'Cause if it's l"], ["ove you wan", "t then you", " won't min", "d/nA little te"], ["nderne", "ss that someti", "mes is so hard to find/n(Lay it d"], ["own)/nLay it do"], ["wn - make it a", "lrigh", "t/n(Lay it d"], ["own)/nLay it d"], ["own - hold you s", "o tigh", "t/n(Lay it d"], ["own)/nOhh, bef"], ["ore a moment lig", "ht/nIs goin' to "], ["be al", "right", "/nOhh - lay i"], ["t down/nCome and l"], ["ay it down toni", "ght/nT"], ["ell me how you ", "feel when we ", "make love", "/nT"], ["ell me is it re", "al or just ma", "ke believe", "/nY"], ["ou will never k", "now what you'", "re made of", "/n'"], ["Till you open u", "p your heart ", "to receive", "/n'Cause if the "], ["love you g", "ots that sa", "me old cri", "me/nWe're talkin' "], ["tenderne", "ss that's", " so hard to find/nAnd I'm h"], ["ere to remind you/n(Lay it d"], ["own)/nLay it do"], ["wn - make it a", "lright", "/n(Lay it d"], ["own)/nLay it do"], ["wn - hold you s", "o tigh", "t/n(Lay"], [" it down)/nYeah, be"], ["fore a moment lig", "ht/nIs goin' to "], ["be al", "right", "/nOhh - lay it do"], ["wn/nCome and l"], ["ay it down toni", "ght/nYou re"], ["member the times/nTalkin"], ["' in your sleep/nWith a"], [" body full of promise you nev", "er gonna keep/nFrom y"], ["our best friend's lover/nYou dr"], ["eamt to find a man/nWhen you're p"], ["ullin' under covers the vo", "ices in your head sayin'/nIf you"], [" want it ba", "d/nYou don't n"], ["ever let it slip away/n'Cause if it's "], ["love you w", "ant then te", "ndernes", "s/n(Lay it d"], ["own)/nLay it do"], ["wn - make it a", "lright", "/n(Lay it d"], ["own)/nLay it do"], ["wn - hold you s", "o tigh", "t/n(Lay it d"], ["own)/nOhh, be"], ["fore a moment l", "ight/nIs goin' to "], ["be al", "right", "/nOhh - lay it d"], ["own/nGonna l"], ["ay it down toni", "ght/nBefore I co"], ["me around toni", "ght/nYou go"], ["tta lay it dow", "n/n"], ["Dm  [x 0 0 2 3 1]/n"], [], [], [], ["Fm  [x 3 3 1 1 1]/n"], [], [], [], ["================================================================="]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "mhrAcyWZrs8", "delay": 0}]}
+{
+    "cancion": "lay-it-down",
+    "banda": "aerosmith",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "F",
+                    "Am",
+                    "G",
+                    "C",
+                    "F",
+                    "Am",
+                    "G",
+                    "Dm",
+                    "Em",
+                    "F",
+                    "Bb",
+                    "Am",
+                    "G",
+                    "C",
+                    "Fm",
+                    "C",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "C",
+                    "F",
+                    "Am",
+                    "G",
+                    "C",
+                    "F",
+                    "Am",
+                    "G",
+                    "Dm",
+                    "Em",
+                    "F",
+                    "Bb",
+                    "Am",
+                    "G",
+                    "C",
+                    "Fm",
+                    "C",
+                    "Bb",
+                    "Am",
+                    "Ab",
+                    "C",
+                    "Bb",
+                    "Am",
+                    "Ab",
+                    "C",
+                    "Bb",
+                    "Am",
+                    "G",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "G",
+                    "C",
+                    "F",
+                    "Am",
+                    "G",
+                    "C",
+                    "F",
+                    "Am",
+                    "G",
+                    "Dm",
+                    "Em",
+                    "F",
+                    "Bb",
+                    "Am",
+                    "G",
+                    "C",
+                    "Fm",
+                    "C",
+                    "Fm",
+                    "C",
+                    "Fm",
+                    "C",
+                    "F",
+                    "G",
+                    "Em",
+                    "Bb",
+                    "Ab",
+                    "Bb",
+                    "Am",
+                    "Ab",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "uby red, her li",
+            "ps were on fi",
+            "re",
+            "/nD"
+        ],
+        [
+            "o me with a kis",
+            "s if you plea",
+            "se",
+            "/nT"
+        ],
+        [
+            "ell me what you",
+            "r sweet heart ",
+            "desires",
+            "/nT"
+        ],
+        [
+            "ell he how you wan",
+            "t it to be",
+            "",
+            "/n'Cause if it's l"
+        ],
+        [
+            "ove you wan",
+            "t then you",
+            " won't min",
+            "d/nA little te"
+        ],
+        [
+            "nderne",
+            "ss that someti",
+            "mes is so hard to find/n(Lay it d"
+        ],
+        [
+            "own)/nLay it do"
+        ],
+        [
+            "wn - make it a",
+            "lrigh",
+            "t/n(Lay it d"
+        ],
+        [
+            "own)/nLay it d"
+        ],
+        [
+            "own - hold you s",
+            "o tigh",
+            "t/n(Lay it d"
+        ],
+        [
+            "own)/nOhh, bef"
+        ],
+        [
+            "ore a moment lig",
+            "ht/nIs goin' to "
+        ],
+        [
+            "be al",
+            "right",
+            "/nOhh - lay i"
+        ],
+        [
+            "t down/nCome and l"
+        ],
+        [
+            "ay it down toni",
+            "ght/nT"
+        ],
+        [
+            "ell me how you ",
+            "feel when we ",
+            "make love",
+            "/nT"
+        ],
+        [
+            "ell me is it re",
+            "al or just ma",
+            "ke believe",
+            "/nY"
+        ],
+        [
+            "ou will never k",
+            "now what you'",
+            "re made of",
+            "/n'"
+        ],
+        [
+            "Till you open u",
+            "p your heart ",
+            "to receive",
+            "/n'Cause if the "
+        ],
+        [
+            "love you g",
+            "ots that sa",
+            "me old cri",
+            "me/nWe're talkin' "
+        ],
+        [
+            "tenderne",
+            "ss that's",
+            " so hard to find/nAnd I'm h"
+        ],
+        [
+            "ere to remind you/n(Lay it d"
+        ],
+        [
+            "own)/nLay it do"
+        ],
+        [
+            "wn - make it a",
+            "lright",
+            "/n(Lay it d"
+        ],
+        [
+            "own)/nLay it do"
+        ],
+        [
+            "wn - hold you s",
+            "o tigh",
+            "t/n(Lay"
+        ],
+        [
+            " it down)/nYeah, be"
+        ],
+        [
+            "fore a moment lig",
+            "ht/nIs goin' to "
+        ],
+        [
+            "be al",
+            "right",
+            "/nOhh - lay it do"
+        ],
+        [
+            "wn/nCome and l"
+        ],
+        [
+            "ay it down toni",
+            "ght/nYou re"
+        ],
+        [
+            "member the times/nTalkin"
+        ],
+        [
+            "' in your sleep/nWith a"
+        ],
+        [
+            " body full of promise you nev",
+            "er gonna keep/nFrom y"
+        ],
+        [
+            "our best friend's lover/nYou dr"
+        ],
+        [
+            "eamt to find a man/nWhen you're p"
+        ],
+        [
+            "ullin' under covers the vo",
+            "ices in your head sayin'/nIf you"
+        ],
+        [
+            " want it ba",
+            "d/nYou don't n"
+        ],
+        [
+            "ever let it slip away/n'Cause if it's "
+        ],
+        [
+            "love you w",
+            "ant then te",
+            "ndernes",
+            "s/n(Lay it d"
+        ],
+        [
+            "own)/nLay it do"
+        ],
+        [
+            "wn - make it a",
+            "lright",
+            "/n(Lay it d"
+        ],
+        [
+            "own)/nLay it do"
+        ],
+        [
+            "wn - hold you s",
+            "o tigh",
+            "t/n(Lay it d"
+        ],
+        [
+            "own)/nOhh, be"
+        ],
+        [
+            "fore a moment l",
+            "ight/nIs goin' to "
+        ],
+        [
+            "be al",
+            "right",
+            "/nOhh - lay it d"
+        ],
+        [
+            "own/nGonna l"
+        ],
+        [
+            "ay it down toni",
+            "ght/nBefore I co"
+        ],
+        [
+            "me around toni",
+            "ght/nYou go"
+        ],
+        [
+            "tta lay it dow",
+            "n/n"
+        ],
+        [
+            "Dm  [x 0 0 2 3 1]/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "Fm  [x 3 3 1 1 1]/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "================================================================="
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "mhrAcyWZrs8",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

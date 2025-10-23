@@ -1,1 +1,350 @@
-{"cancion": "Hello", "banda": "beyonce", "escala": "G#m7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G#m7", "D#m7", "F#9"]}, {"nombre": "parte2", "acordes": ["C#9"]}, {"nombre": "parte3", "acordes": ["G#m", "F#9", "D#m7"]}, {"nombre": "parte4", "acordes": ["G#m", "A#m", "B9"]}], "orden_partes": [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2, 1, 2, 1, 2, 1, 3, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1]}, "letras": [[], [], ["  I love to see you walking into the room/n"], [" By the shining light in up the place/n"], ["  And when you talk everybody stop/n'C"], ["ause they know you know just what you're sayin'/n"], [" The way that you protect your friends/n"], ["   Baby, I respect you for that/n"], ["And when you roll you take everyone you l", "ove along/nD"], ["on't fly me a", "way/nYou don't need to b"], ["uy a diamond ke", "y/nTo unlock my h"], ["eart/nYou shelter my s"], ["oul/nYou're my fire when I'm c"], ["old/nY"], ["ou had me at hello", " (hello)/nHell"], ["o (hello)/nHell"], ["o (hello)/nY"], ["ou had me at hello", " (hello)/nHell"], ["o (hello)/nHell"], ["o (hello)/nIt w"], ["as many years ago", " (ago)/nBaby, when"], [" you stole my c", "ool/nCuz you "], ["had me at hello", " (hello)/nHe"], ["llo (hello)/nHe"], ["llo ooh", "/n"], ["  I get so excited when you travel with me,", " baby/n"], ["   And never will I ever let my hustle/n"], ["Come between me and my family time and/n"], ["  You keep me humble out of this hype/n"], ["   Cuz you know there's more to life/n"], ["   And if I need ya, you will be here/n"], ["You will make the sacrifice/nD"], ["on't fly me a", "way/nYou don't need to b"], ["uy a diamond ke", "y/nTo unlock my h"], ["eart/nYou shelter my s"], ["oul/nYou're my fire when I'm c"], ["old/nY"], ["ou had me at hello", " (hello)/nHe"], ["llo (hello)/nHel"], ["lo (hello)/nY"], ["ou had me at hello", " (hello)/nHe"], ["llo (hello)/nHel"], ["lo (hello)/nIt "], ["was many years ago", " (ago)/nBaby, when"], [" you stole my co", "ol/nCuz you h"], ["ad me at hello", " (hello)/nH"], ["ello (hello)/nHe"], ["llo ooh", "/n"], ["   Gotta fee", "l you/nAnd be n"], ["ear you/nYou're the "], ["air that I breathe to survi", "ve/nGotta h"], ["old you/nWant to sh"], ["ow you/nThat with"], ["out you my Sun doesn't shi", "ne/nYou don't have to tr"], ["y so/nHard for me to"], [" love you  /nBoy with"], ["out you my life just ain't the sa", "me/nYou don't have to tr"], ["y so/nHard for me to l"], ["ove you/nY"], ["ou had me at hello", " (hello)/nHel"], ["lo (hello)/nHell"], ["o (hello)/nY"], ["ou had me at hello", " (hello)/nHell"], ["o (hello)/nHell"], ["o (hello)/nIt "], ["was many years ago", " (ago)/nBaby, when"], [" you stole my c", "ool/nCuz you "], ["had me at hello", " (hello)/nH"], ["ello (hello)/nH"], ["ello oo", "h/n"], [], [], [], [], [], [], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "60gOJYc93J8", "delay": 0}]}
+{
+    "cancion": "Hello",
+    "banda": "beyonce",
+    "escala": "G#m7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G#m7",
+                    "D#m7",
+                    "F#9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#9"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#m",
+                    "F#9",
+                    "D#m7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#m",
+                    "A#m",
+                    "B9"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "  I love to see you walking into the room/n"
+        ],
+        [
+            " By the shining light in up the place/n"
+        ],
+        [
+            "  And when you talk everybody stop/n'C"
+        ],
+        [
+            "ause they know you know just what you're sayin'/n"
+        ],
+        [
+            " The way that you protect your friends/n"
+        ],
+        [
+            "   Baby, I respect you for that/n"
+        ],
+        [
+            "And when you roll you take everyone you l",
+            "ove along/nD"
+        ],
+        [
+            "on't fly me a",
+            "way/nYou don't need to b"
+        ],
+        [
+            "uy a diamond ke",
+            "y/nTo unlock my h"
+        ],
+        [
+            "eart/nYou shelter my s"
+        ],
+        [
+            "oul/nYou're my fire when I'm c"
+        ],
+        [
+            "old/nY"
+        ],
+        [
+            "ou had me at hello",
+            " (hello)/nHell"
+        ],
+        [
+            "o (hello)/nHell"
+        ],
+        [
+            "o (hello)/nY"
+        ],
+        [
+            "ou had me at hello",
+            " (hello)/nHell"
+        ],
+        [
+            "o (hello)/nHell"
+        ],
+        [
+            "o (hello)/nIt w"
+        ],
+        [
+            "as many years ago",
+            " (ago)/nBaby, when"
+        ],
+        [
+            " you stole my c",
+            "ool/nCuz you "
+        ],
+        [
+            "had me at hello",
+            " (hello)/nHe"
+        ],
+        [
+            "llo (hello)/nHe"
+        ],
+        [
+            "llo ooh",
+            "/n"
+        ],
+        [
+            "  I get so excited when you travel with me,",
+            " baby/n"
+        ],
+        [
+            "   And never will I ever let my hustle/n"
+        ],
+        [
+            "Come between me and my family time and/n"
+        ],
+        [
+            "  You keep me humble out of this hype/n"
+        ],
+        [
+            "   Cuz you know there's more to life/n"
+        ],
+        [
+            "   And if I need ya, you will be here/n"
+        ],
+        [
+            "You will make the sacrifice/nD"
+        ],
+        [
+            "on't fly me a",
+            "way/nYou don't need to b"
+        ],
+        [
+            "uy a diamond ke",
+            "y/nTo unlock my h"
+        ],
+        [
+            "eart/nYou shelter my s"
+        ],
+        [
+            "oul/nYou're my fire when I'm c"
+        ],
+        [
+            "old/nY"
+        ],
+        [
+            "ou had me at hello",
+            " (hello)/nHe"
+        ],
+        [
+            "llo (hello)/nHel"
+        ],
+        [
+            "lo (hello)/nY"
+        ],
+        [
+            "ou had me at hello",
+            " (hello)/nHe"
+        ],
+        [
+            "llo (hello)/nHel"
+        ],
+        [
+            "lo (hello)/nIt "
+        ],
+        [
+            "was many years ago",
+            " (ago)/nBaby, when"
+        ],
+        [
+            " you stole my co",
+            "ol/nCuz you h"
+        ],
+        [
+            "ad me at hello",
+            " (hello)/nH"
+        ],
+        [
+            "ello (hello)/nHe"
+        ],
+        [
+            "llo ooh",
+            "/n"
+        ],
+        [
+            "   Gotta fee",
+            "l you/nAnd be n"
+        ],
+        [
+            "ear you/nYou're the "
+        ],
+        [
+            "air that I breathe to survi",
+            "ve/nGotta h"
+        ],
+        [
+            "old you/nWant to sh"
+        ],
+        [
+            "ow you/nThat with"
+        ],
+        [
+            "out you my Sun doesn't shi",
+            "ne/nYou don't have to tr"
+        ],
+        [
+            "y so/nHard for me to"
+        ],
+        [
+            " love you  /nBoy with"
+        ],
+        [
+            "out you my life just ain't the sa",
+            "me/nYou don't have to tr"
+        ],
+        [
+            "y so/nHard for me to l"
+        ],
+        [
+            "ove you/nY"
+        ],
+        [
+            "ou had me at hello",
+            " (hello)/nHel"
+        ],
+        [
+            "lo (hello)/nHell"
+        ],
+        [
+            "o (hello)/nY"
+        ],
+        [
+            "ou had me at hello",
+            " (hello)/nHell"
+        ],
+        [
+            "o (hello)/nHell"
+        ],
+        [
+            "o (hello)/nIt "
+        ],
+        [
+            "was many years ago",
+            " (ago)/nBaby, when"
+        ],
+        [
+            " you stole my c",
+            "ool/nCuz you "
+        ],
+        [
+            "had me at hello",
+            " (hello)/nH"
+        ],
+        [
+            "ello (hello)/nH"
+        ],
+        [
+            "ello oo",
+            "h/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "60gOJYc93J8",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

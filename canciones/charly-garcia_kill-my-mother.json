@@ -1,1 +1,456 @@
-{"cancion": "Kill-My-Mother", "banda": "charly-garcia", "escala": "Dm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm", "Dm", "G", "G", "Dm", "Dm", "G", "Dm", "Dm", "G", "Dm", "Dm", "G", "Dm", "D", "F", "F", "G", "G", "F", "F", "E", "Eb", "Dm", "G", "D", "G", "D", "G", "D", "G", "D", "G", "Em", "Em", "A", "D", "G", "D", "G", "D", "G", "A", "D", "G", "Dm", "G", "Dm", "G", "Dm", "G", "Dm", "D", "G", "D", "D", "A", "D", "F#/D", "G", "A", "D", "D", "F#/D", "G", "G", "Gm", "A/D", "Bm", "Bm", "G", "G", "A/D", "Bm", "G", "D", "A", "D", "G", "D", "G", "D", "G", "D", "E", "G", "A", "D", "A", "G", "A", "D", "Em", "G", "D", "D", "C#/A", "B/G", "A", "D", "Em", "G", "D", "D", "C#/A", "B/G", "G", "A", "D", "D", "A", "A", "D", "F#/D", "G", "A", "A", "Dm", "G", "D", "G", "D", "G", "D", "G", "D", "D", "G", "A", "D", "D", "G", "G", "F#7", "F#7", "Bm", "E7", "D", "D", "D", "D", "F#7", "Bm", "G#/E", "E", "Asus4", "Asus4", "A", "A", "D", "D", "G", "G", "D", "D", "F#7", "Bb", "Bm", "Bm", "D7", "D7", "Gmaj7", "Gmaj7", "F#7", "Bb", "Bm", "Bm", "D7", "D7", "Gmaj7", "Gmaj7", "F#", "Bb", "Bm", "Bm", "E7", "E7", "A", "A", "A", "A", "D", "D", "G", "G", "D", "D", "D", "D", "D", "D", "Gm", "A/D", "Bb", "Bm", "G#/E", "E", "Asus4", "D", "D", "G", "G", "F#7", "F#7", "Bm", "Bm", "Gmaj7", "Gmaj7", "F#/D", "Em", "Em", "A7", "A7", "A7", "A7"]}], "orden_partes": [0]}, "letras": [[], ["Kill my mother ", " ", "/n"], ["kill the floor ", " ", "/n"], ["kill the refrig", "erato", "r  /n"], ["say no more  ", "", "/nBut"], [" don't ", "kill me  /n"], ["don't kill me", "  /n"], ["don't kill m", "e  ", "/n"], [], ["I used to live like p", "erson  /n"], ["I used to live like a", " child  /n"], ["to undrestand my only", " illusion  /n"], ["I undertand the reaso", "n why  /nI give you my"], [" world  /n"], ["but you just w", "ant to kill me", "  ", "/nIt's not only l"], ["ove  /n"], ["no no no it's me", " baby  /nIt's "], ["me what you'r ", "looking for bab", "e  ", "/n"], ["kill the", " floor  ", "/n"], ["Kill the re", "frigerator  /n"], ["Say no mo", "re  /n"], [], ["Please st", "op killing me", "  /n"], ["Please st", "op -------", "-----  /n"], ["I give you the worl", "d  /n"], ["I gave you ev", "erything I h", "ad  /n"], ["I give you e", "verything you ne", "ed ..i gave you all of my time  /nand you just want to ki"], ["ll me  /n"], [], ["It's only lo", "ve  /nd"], ["on't kill me/n"], [], [], ["When i was d", "own  /n"], ["you just came and see", " me  /n"], ["You see me o", "n the street  /n"], ["you always act surp", "rise  /n"], ["you say h", "ow are you, goo", "d luck  /nbut you don'"], ["t mean it  /n"], ["Well, I wish just for ju", "st one time  /n"], ["you can stand ins", "ide my shoes  /n"], ["don't", " you under", "stand  /nIt's "], ["not my pro", "blem  /n"], [], ["I gave ", "you  th", "e world", "  /n"], [], ["Mother`", "  /n"], [], [], [".....Vo", "y a hacer un agujero en Europa.  /n"], [], [], [], [], [], [], [], [], ["Mel", "odi", "a i", "nst", "rum", "ent", "al ", " ", "", "", "", "", "", "/n"], [], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "MngKmTXAKpk", "delay": 0}]}
+{
+    "cancion": "Kill-My-Mother",
+    "banda": "charly-garcia",
+    "escala": "Dm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "D",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "E",
+                    "Eb",
+                    "Dm",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "Em",
+                    "Em",
+                    "A",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "A",
+                    "D",
+                    "G",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "F#/D",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "F#/D",
+                    "G",
+                    "G",
+                    "Gm",
+                    "A/D",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "A/D",
+                    "Bm",
+                    "G",
+                    "D",
+                    "A",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "E",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "Em",
+                    "G",
+                    "D",
+                    "D",
+                    "C#/A",
+                    "B/G",
+                    "A",
+                    "D",
+                    "Em",
+                    "G",
+                    "D",
+                    "D",
+                    "C#/A",
+                    "B/G",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "F#/D",
+                    "G",
+                    "A",
+                    "A",
+                    "Dm",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "F#7",
+                    "F#7",
+                    "Bm",
+                    "E7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "F#7",
+                    "Bm",
+                    "G#/E",
+                    "E",
+                    "Asus4",
+                    "Asus4",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "F#7",
+                    "Bb",
+                    "Bm",
+                    "Bm",
+                    "D7",
+                    "D7",
+                    "Gmaj7",
+                    "Gmaj7",
+                    "F#7",
+                    "Bb",
+                    "Bm",
+                    "Bm",
+                    "D7",
+                    "D7",
+                    "Gmaj7",
+                    "Gmaj7",
+                    "F#",
+                    "Bb",
+                    "Bm",
+                    "Bm",
+                    "E7",
+                    "E7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Gm",
+                    "A/D",
+                    "Bb",
+                    "Bm",
+                    "G#/E",
+                    "E",
+                    "Asus4",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "F#7",
+                    "F#7",
+                    "Bm",
+                    "Bm",
+                    "Gmaj7",
+                    "Gmaj7",
+                    "F#/D",
+                    "Em",
+                    "Em",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Kill my mother ",
+            " ",
+            "/n"
+        ],
+        [
+            "kill the floor ",
+            " ",
+            "/n"
+        ],
+        [
+            "kill the refrig",
+            "erato",
+            "r  /n"
+        ],
+        [
+            "say no more  ",
+            "",
+            "/nBut"
+        ],
+        [
+            " don't ",
+            "kill me  /n"
+        ],
+        [
+            "don't kill me",
+            "  /n"
+        ],
+        [
+            "don't kill m",
+            "e  ",
+            "/n"
+        ],
+        [],
+        [
+            "I used to live like p",
+            "erson  /n"
+        ],
+        [
+            "I used to live like a",
+            " child  /n"
+        ],
+        [
+            "to undrestand my only",
+            " illusion  /n"
+        ],
+        [
+            "I undertand the reaso",
+            "n why  /nI give you my"
+        ],
+        [
+            " world  /n"
+        ],
+        [
+            "but you just w",
+            "ant to kill me",
+            "  ",
+            "/nIt's not only l"
+        ],
+        [
+            "ove  /n"
+        ],
+        [
+            "no no no it's me",
+            " baby  /nIt's "
+        ],
+        [
+            "me what you'r ",
+            "looking for bab",
+            "e  ",
+            "/n"
+        ],
+        [
+            "kill the",
+            " floor  ",
+            "/n"
+        ],
+        [
+            "Kill the re",
+            "frigerator  /n"
+        ],
+        [
+            "Say no mo",
+            "re  /n"
+        ],
+        [],
+        [
+            "Please st",
+            "op killing me",
+            "  /n"
+        ],
+        [
+            "Please st",
+            "op -------",
+            "-----  /n"
+        ],
+        [
+            "I give you the worl",
+            "d  /n"
+        ],
+        [
+            "I gave you ev",
+            "erything I h",
+            "ad  /n"
+        ],
+        [
+            "I give you e",
+            "verything you ne",
+            "ed ..i gave you all of my time  /nand you just want to ki"
+        ],
+        [
+            "ll me  /n"
+        ],
+        [],
+        [
+            "It's only lo",
+            "ve  /nd"
+        ],
+        [
+            "on't kill me/n"
+        ],
+        [],
+        [],
+        [
+            "When i was d",
+            "own  /n"
+        ],
+        [
+            "you just came and see",
+            " me  /n"
+        ],
+        [
+            "You see me o",
+            "n the street  /n"
+        ],
+        [
+            "you always act surp",
+            "rise  /n"
+        ],
+        [
+            "you say h",
+            "ow are you, goo",
+            "d luck  /nbut you don'"
+        ],
+        [
+            "t mean it  /n"
+        ],
+        [
+            "Well, I wish just for ju",
+            "st one time  /n"
+        ],
+        [
+            "you can stand ins",
+            "ide my shoes  /n"
+        ],
+        [
+            "don't",
+            " you under",
+            "stand  /nIt's "
+        ],
+        [
+            "not my pro",
+            "blem  /n"
+        ],
+        [],
+        [
+            "I gave ",
+            "you  th",
+            "e world",
+            "  /n"
+        ],
+        [],
+        [
+            "Mother`",
+            "  /n"
+        ],
+        [],
+        [],
+        [
+            ".....Vo",
+            "y a hacer un agujero en Europa.  /n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "Mel",
+            "odi",
+            "a i",
+            "nst",
+            "rum",
+            "ent",
+            "al ",
+            " ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "MngKmTXAKpk",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

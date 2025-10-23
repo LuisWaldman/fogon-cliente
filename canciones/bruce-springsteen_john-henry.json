@@ -1,1 +1,83 @@
-{"cancion": "John-Henry", "banda": "bruce-springsteen", "escala": "F", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "C", "F"]}, {"nombre": "parte2", "acordes": ["A#", "F", "A#", "F", "Dm"]}], "orden_partes": [0, 1, 0, 0, 1, 0]}, "letras": [["One,", " two", ", th", "ree ", "", "", "", "", "", "", "/n"], ["Well, John Henry was a little baby /nSittin' on his dady's knee "], ["/nHe pick up a h"], ["ammer and a little piece of stee", "l, /nAnd, \"God, hammer's go"], ["nna be the death of me, ", "Lord, Lord ", "", "/n"], ["Hammer's gonna be the death o", "f me\" ", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "hIh74VC7oXc", "delay": 0}]}
+{
+    "cancion": "John-Henry",
+    "banda": "bruce-springsteen",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A#",
+                    "F",
+                    "A#",
+                    "F",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "One,",
+            " two",
+            ", th",
+            "ree ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Well, John Henry was a little baby /nSittin' on his dady's knee "
+        ],
+        [
+            "/nHe pick up a h"
+        ],
+        [
+            "ammer and a little piece of stee",
+            "l, /nAnd, \"God, hammer's go"
+        ],
+        [
+            "nna be the death of me, ",
+            "Lord, Lord ",
+            "",
+            "/n"
+        ],
+        [
+            "Hammer's gonna be the death o",
+            "f me\" ",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "hIh74VC7oXc",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

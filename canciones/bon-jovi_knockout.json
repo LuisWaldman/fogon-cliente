@@ -1,1 +1,364 @@
-{"cancion": "knockout", "banda": "bon-jovi", "escala": "Bm", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm", "G", "A", "A/F#", "Bm", "G", "A", "A/F#", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "G", "A", "F#m", "A", "Bm", "G", "A", "F#m", "A", "Bm", "G", "A", "A/F#", "Bm", "G", "A", "F#m", "A", "Bm", "Bm", "G", "A", "A/F#", "Bm", "G", "A", "A/F#", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "G", "A", "F#m", "A", "Bm", "G", "A", "F#m", "A", "Bm", "G", "A", "A/F#", "Bm", "G", "A", "F#m", "Bm", "G", "A", "F#m", "Bm", "G", "A", "F#m", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "Bm", "G", "A", "F#m", "A", "Bm", "G", "A", "F#m", "A", "Bm", "G", "A", "A/F#", "Bm", "G", "A", "F#m", "A", "Bm"]}], "orden_partes": [0]}, "letras": [["Everyday I wake up with my b", "ack against the wall", "", "/n"], ["Anytime you get up someone w", "ants to see you fall", "", "/nIf you'"], ["re afraid to lose it all, you're n", "ever gonna wi", "n/nI'll "], ["be giving you the finger, S", "ticking out my ch", "in/n"], ["Boom, boom, boom", "", "/nHere comes the "], ["boom, boom, boom/nHere comes the "], ["knockout/nMy time is "], ["right now/nTurning your "], ["lights out/nI'm "], ["throwi", "ng do", "wn /nHere comes the "], ["knockout/nUntil the "], ["last round/nI'm "], ["throwi", "ng do", "wn/nGo start a "], ["fire, go start a fight", "/nNo re"], ["grets, this is your l", "ife/nHere comes the "], ["knockout/nMy time is "], ["right now/nI'm "], ["throwi", "ng do", "wn/nAre you "], ["living in a nightmare, Are you l", "iving in a dream?", "", "/n"], ["Do you stand for something, Will you f", "all for anything", "", "/nIt's "], ["easier to count me out but y", "ou can count me in", "/nCause I'm "], ["giving you the finger, S", "ticking out my ch", "in/n"], ["Boom, boom, boom", "", "/nHere comes the "], ["boom, boom, boom/nHere comes the "], ["knockout/nMy time is "], ["right now/nTurning your "], ["lights out/nI'm "], ["throwi", "ng do", "wn /nHere comes the "], ["knockout/nUntil the "], ["last round/nI'm "], ["throwi", "ng do", "wn/nGo start a "], ["fire, go start a fight", "/nNo re"], ["grets, this is your l", "ife/nHere comes the "], ["knockout/nMy time is "], ["right now/nI'm thr"], ["owing  do", "wn, down, down", "/n"], ["Down, down/nThr"], ["owing   dow", "n, down, down", "/n"], ["Down, down", "/n"], ["Did you really live your life/nOr "], ["did it pass you b", "y?/n"], ["What's it take to tell yourself/nYou "], ["really were ali", "ve/n"], ["    L", "ook me in the ey", "e/nHere comes the "], ["knockout/nMy time is "], ["right now/nTurning your "], ["lights out/nI'm "], ["throwi", "ng do", "wn /nHere comes the "], ["knockout/nUntil the "], ["last round/nI'm "], ["throwi", "ng do", "wn/nGo start a "], ["fire, go start a fight", "/nNo re"], ["grets, this is your l", "ife/nHere comes the "], ["knockout/nMy time is "], ["right now/nI'm "], ["throwi", "ng do", "wn"]], "medias": [{"tipo": "Youtube", "id": "LWr3WuThh-c", "delay": 0}]}
+{
+    "cancion": "knockout",
+    "banda": "bon-jovi",
+    "escala": "Bm",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "G",
+                    "A",
+                    "A/F#",
+                    "Bm",
+                    "G",
+                    "A",
+                    "A/F#",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "G",
+                    "A",
+                    "A/F#",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "A",
+                    "A/F#",
+                    "Bm",
+                    "G",
+                    "A",
+                    "A/F#",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "G",
+                    "A",
+                    "A/F#",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "G",
+                    "A",
+                    "A/F#",
+                    "Bm",
+                    "G",
+                    "A",
+                    "F#m",
+                    "A",
+                    "Bm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Everyday I wake up with my b",
+            "ack against the wall",
+            "",
+            "/n"
+        ],
+        [
+            "Anytime you get up someone w",
+            "ants to see you fall",
+            "",
+            "/nIf you'"
+        ],
+        [
+            "re afraid to lose it all, you're n",
+            "ever gonna wi",
+            "n/nI'll "
+        ],
+        [
+            "be giving you the finger, S",
+            "ticking out my ch",
+            "in/n"
+        ],
+        [
+            "Boom, boom, boom",
+            "",
+            "/nHere comes the "
+        ],
+        [
+            "boom, boom, boom/nHere comes the "
+        ],
+        [
+            "knockout/nMy time is "
+        ],
+        [
+            "right now/nTurning your "
+        ],
+        [
+            "lights out/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn /nHere comes the "
+        ],
+        [
+            "knockout/nUntil the "
+        ],
+        [
+            "last round/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn/nGo start a "
+        ],
+        [
+            "fire, go start a fight",
+            "/nNo re"
+        ],
+        [
+            "grets, this is your l",
+            "ife/nHere comes the "
+        ],
+        [
+            "knockout/nMy time is "
+        ],
+        [
+            "right now/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn/nAre you "
+        ],
+        [
+            "living in a nightmare, Are you l",
+            "iving in a dream?",
+            "",
+            "/n"
+        ],
+        [
+            "Do you stand for something, Will you f",
+            "all for anything",
+            "",
+            "/nIt's "
+        ],
+        [
+            "easier to count me out but y",
+            "ou can count me in",
+            "/nCause I'm "
+        ],
+        [
+            "giving you the finger, S",
+            "ticking out my ch",
+            "in/n"
+        ],
+        [
+            "Boom, boom, boom",
+            "",
+            "/nHere comes the "
+        ],
+        [
+            "boom, boom, boom/nHere comes the "
+        ],
+        [
+            "knockout/nMy time is "
+        ],
+        [
+            "right now/nTurning your "
+        ],
+        [
+            "lights out/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn /nHere comes the "
+        ],
+        [
+            "knockout/nUntil the "
+        ],
+        [
+            "last round/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn/nGo start a "
+        ],
+        [
+            "fire, go start a fight",
+            "/nNo re"
+        ],
+        [
+            "grets, this is your l",
+            "ife/nHere comes the "
+        ],
+        [
+            "knockout/nMy time is "
+        ],
+        [
+            "right now/nI'm thr"
+        ],
+        [
+            "owing  do",
+            "wn, down, down",
+            "/n"
+        ],
+        [
+            "Down, down/nThr"
+        ],
+        [
+            "owing   dow",
+            "n, down, down",
+            "/n"
+        ],
+        [
+            "Down, down",
+            "/n"
+        ],
+        [
+            "Did you really live your life/nOr "
+        ],
+        [
+            "did it pass you b",
+            "y?/n"
+        ],
+        [
+            "What's it take to tell yourself/nYou "
+        ],
+        [
+            "really were ali",
+            "ve/n"
+        ],
+        [
+            "    L",
+            "ook me in the ey",
+            "e/nHere comes the "
+        ],
+        [
+            "knockout/nMy time is "
+        ],
+        [
+            "right now/nTurning your "
+        ],
+        [
+            "lights out/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn /nHere comes the "
+        ],
+        [
+            "knockout/nUntil the "
+        ],
+        [
+            "last round/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn/nGo start a "
+        ],
+        [
+            "fire, go start a fight",
+            "/nNo re"
+        ],
+        [
+            "grets, this is your l",
+            "ife/nHere comes the "
+        ],
+        [
+            "knockout/nMy time is "
+        ],
+        [
+            "right now/nI'm "
+        ],
+        [
+            "throwi",
+            "ng do",
+            "wn"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LWr3WuThh-c",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

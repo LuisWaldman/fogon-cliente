@@ -1,1 +1,402 @@
-{"cancion": "Only-A-Pawn-In-Their-Game", "banda": "bob-dylan", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C", "G"]}, {"nombre": "parte2", "acordes": ["C"]}, {"nombre": "parte3", "acordes": ["G"]}, {"nombre": "parte4", "acordes": ["D"]}, {"nombre": "parte5", "acordes": ["Bm", "Am"]}], "orden_partes": [0, 1, 2, 2, 1, 3, 0, 1, 0, 1, 0, 2, 3, 1, 2, 2, 4, 1, 2, 2, 1, 3, 0, 1, 0, 1, 0, 1, 0, 1, 0, 2, 3, 1, 2, 2, 4, 1, 2, 2, 1, 3, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2, 2, 3, 1, 2, 2, 4, 1, 2, 2, 1, 3, 0, 1, 0, 1, 0, 1, 0, 1, 0, 2, 3, 1, 2, 2, 4, 1, 2, 2, 1, 3, 0, 1, 1, 0, 1, 0, 1, 2, 2, 3, 1, 2]}, "letras": [["bullet from the b", "ack of a bu", "sh took Med", "gar Ever's bloo", "d/nA "], ["finger fired the t", "rigger to his na", "me/nA "], ["handle h", "id out in the da", "rk/nA "], ["hand set the s", "park/nT"], ["wo eyes took the a", "im/nBe"], ["hind a man's b", "rain/nBut "], ["he can't be b", "lamed/nHe's "], ["only a p", "awn in", " their gam", "e/nA "], ["South polit", "ician pr", "eaches to the poo", "r white man", "/nYou got "], ["more than the b", "lacks, don't compl", "ain/nYou're "], ["better than t", "hem, you been bo", "rn with white ski", "n, they expl", "ain/nAnd the "], ["Negro's n", "ame/nIs "], ["used it is p", "lain/nFor the "], ["politician's g", "ain/nAs he "], ["rises to f", "ame/nAnd the "], ["poor white r", "emains/nOn the "], ["caboose of the t", "rain/nBut it "], ["ain't him to b", "lame/nHe's "], ["only a p", "awn in", " their gam", "e/nThe "], ["deputy s", "heriffs, the s", "oldiers, the gov", "ernors get paid", "/nAnd the "], ["marshals and c", "ops get the sa", "me/nBut the "], ["poor white man's u", "sed in the ha", "nds of them all", " like a tool", "/nHe's "], ["taught in his s", "chool/nFrom the "], ["start by the r", "ules/nThat the "], ["laws are with h", "im/nTo "], ["protect his white s", "kin/nTo "], ["keep up his h", "ate/nSo he "], ["never thinks s", "traight/n'Bout the "], ["shape that he's i", "n/nBut it "], ["ain't him to b", "lame/nHe's "], ["only a p", "awn in", " their gam", "e/nFrom the "], ["poverty s", "hacks, he lo", "oks from the cra", "cks to the trac", "ks/nAnd the "], ["hoof beats p", "ound in his br", "ain/nAnd he's "], ["taught how to w", "alk in a pa", "ck/n"], ["Shoot in the b", "ack, with his fi", "st in a cli", "nch/nTo "], ["hang and to l", "ynch/nTo "], ["hide 'neath the h", "ood/nTo "], ["kill with no p", "ain/nLike a "], ["dog on a c", "hain/nHe "], ["ain't a-got no n", "ame/nBut it "], ["ain't him to b", "lame/nHe's "], ["only a p", "awn in", " their gam", "e/nTo"], ["day, Medgar E", "vers was bu", "ried from the bul", "let he caug", "ht/nThey "], ["lowered him d", "own as a ki", "ng/nBut when the "], ["shadowy s", "un/n"], ["Sets on the o", "ne/nThat "], ["fired the g", "un/nHe'll "], ["see by his g", "rave/nOn the "], ["stone that r", "emains/nCarved "], ["next to his n", "ame/nHis "], ["epitaph p", "lain/n"], ["Only a p", "awn in", " their gam", "e"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "8X0UmfBwA_U", "delay": 0}]}
+{
+    "cancion": "Only-A-Pawn-In-Their-Game",
+    "banda": "bob-dylan",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            3,
+            1,
+            2,
+            2,
+            4,
+            1,
+            2,
+            2,
+            1,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            3,
+            1,
+            2,
+            2,
+            4,
+            1,
+            2,
+            2,
+            1,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            2,
+            3,
+            1,
+            2,
+            2,
+            4,
+            1,
+            2,
+            2,
+            1,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            3,
+            1,
+            2,
+            2,
+            4,
+            1,
+            2,
+            2,
+            1,
+            3,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            2,
+            3,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "bullet from the b",
+            "ack of a bu",
+            "sh took Med",
+            "gar Ever's bloo",
+            "d/nA "
+        ],
+        [
+            "finger fired the t",
+            "rigger to his na",
+            "me/nA "
+        ],
+        [
+            "handle h",
+            "id out in the da",
+            "rk/nA "
+        ],
+        [
+            "hand set the s",
+            "park/nT"
+        ],
+        [
+            "wo eyes took the a",
+            "im/nBe"
+        ],
+        [
+            "hind a man's b",
+            "rain/nBut "
+        ],
+        [
+            "he can't be b",
+            "lamed/nHe's "
+        ],
+        [
+            "only a p",
+            "awn in",
+            " their gam",
+            "e/nA "
+        ],
+        [
+            "South polit",
+            "ician pr",
+            "eaches to the poo",
+            "r white man",
+            "/nYou got "
+        ],
+        [
+            "more than the b",
+            "lacks, don't compl",
+            "ain/nYou're "
+        ],
+        [
+            "better than t",
+            "hem, you been bo",
+            "rn with white ski",
+            "n, they expl",
+            "ain/nAnd the "
+        ],
+        [
+            "Negro's n",
+            "ame/nIs "
+        ],
+        [
+            "used it is p",
+            "lain/nFor the "
+        ],
+        [
+            "politician's g",
+            "ain/nAs he "
+        ],
+        [
+            "rises to f",
+            "ame/nAnd the "
+        ],
+        [
+            "poor white r",
+            "emains/nOn the "
+        ],
+        [
+            "caboose of the t",
+            "rain/nBut it "
+        ],
+        [
+            "ain't him to b",
+            "lame/nHe's "
+        ],
+        [
+            "only a p",
+            "awn in",
+            " their gam",
+            "e/nThe "
+        ],
+        [
+            "deputy s",
+            "heriffs, the s",
+            "oldiers, the gov",
+            "ernors get paid",
+            "/nAnd the "
+        ],
+        [
+            "marshals and c",
+            "ops get the sa",
+            "me/nBut the "
+        ],
+        [
+            "poor white man's u",
+            "sed in the ha",
+            "nds of them all",
+            " like a tool",
+            "/nHe's "
+        ],
+        [
+            "taught in his s",
+            "chool/nFrom the "
+        ],
+        [
+            "start by the r",
+            "ules/nThat the "
+        ],
+        [
+            "laws are with h",
+            "im/nTo "
+        ],
+        [
+            "protect his white s",
+            "kin/nTo "
+        ],
+        [
+            "keep up his h",
+            "ate/nSo he "
+        ],
+        [
+            "never thinks s",
+            "traight/n'Bout the "
+        ],
+        [
+            "shape that he's i",
+            "n/nBut it "
+        ],
+        [
+            "ain't him to b",
+            "lame/nHe's "
+        ],
+        [
+            "only a p",
+            "awn in",
+            " their gam",
+            "e/nFrom the "
+        ],
+        [
+            "poverty s",
+            "hacks, he lo",
+            "oks from the cra",
+            "cks to the trac",
+            "ks/nAnd the "
+        ],
+        [
+            "hoof beats p",
+            "ound in his br",
+            "ain/nAnd he's "
+        ],
+        [
+            "taught how to w",
+            "alk in a pa",
+            "ck/n"
+        ],
+        [
+            "Shoot in the b",
+            "ack, with his fi",
+            "st in a cli",
+            "nch/nTo "
+        ],
+        [
+            "hang and to l",
+            "ynch/nTo "
+        ],
+        [
+            "hide 'neath the h",
+            "ood/nTo "
+        ],
+        [
+            "kill with no p",
+            "ain/nLike a "
+        ],
+        [
+            "dog on a c",
+            "hain/nHe "
+        ],
+        [
+            "ain't a-got no n",
+            "ame/nBut it "
+        ],
+        [
+            "ain't him to b",
+            "lame/nHe's "
+        ],
+        [
+            "only a p",
+            "awn in",
+            " their gam",
+            "e/nTo"
+        ],
+        [
+            "day, Medgar E",
+            "vers was bu",
+            "ried from the bul",
+            "let he caug",
+            "ht/nThey "
+        ],
+        [
+            "lowered him d",
+            "own as a ki",
+            "ng/nBut when the "
+        ],
+        [
+            "shadowy s",
+            "un/n"
+        ],
+        [
+            "Sets on the o",
+            "ne/nThat "
+        ],
+        [
+            "fired the g",
+            "un/nHe'll "
+        ],
+        [
+            "see by his g",
+            "rave/nOn the "
+        ],
+        [
+            "stone that r",
+            "emains/nCarved "
+        ],
+        [
+            "next to his n",
+            "ame/nHis "
+        ],
+        [
+            "epitaph p",
+            "lain/n"
+        ],
+        [
+            "Only a p",
+            "awn in",
+            " their gam",
+            "e"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "8X0UmfBwA_U",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

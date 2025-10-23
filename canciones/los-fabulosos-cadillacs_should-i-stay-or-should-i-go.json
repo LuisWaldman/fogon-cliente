@@ -1,1 +1,322 @@
-{"cancion": "should-i-stay-or-should-i-go", "banda": "los-fabulosos-cadillacs", "escala": "A", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "D", "A", "D", "C", "D", "A", "D", "A", "E", "E", "E", "A", "D", "A", "A", "D", "A", "A", "D", "A", "D", "C", "D", "A", "D", "A", "E", "E", "E", "A", "D", "A", "A", "B", "A", "D", "C", "D", "A", "E", "A", "E", "A", "D", "A", "A", "D", "A", "A", "D", "A", "D", "C", "D", "A", "D", "A", "E", "E", "G", "A", "D", "A", "A", "D", "A", "A", "D", "A", "D", "C", "D", "A", "D", "A", "E", "E", "E", "A", "D", "A", "A", "E", "A", "A", "E", "A", "A", "C", "A", "A", "D", "A", "E", "E", "E", "A", "E", "A", "A", "B", "A", "A", "D", "A", "D", "C", "D", "A", "D", "A", "E", "E", "E", "A", "D", "A"]}], "orden_partes": [0]}, "letras": [["", "", "/nHay veces que no puedo m"], ["\u00c3\u00a1s", "", "/nSiento que llega el fi"], ["nal", "", "/nPero quiero saberlo h"], ["oy", "", "/nSi me quedo o me v"], ["oy", "", "/nDec\u00c3\u00ad que si, si,"], [" si", "...", "./nYo no paro de suf"], ["rir", "", "/nUn d\u00c3\u00ada bien un d\u00c3\u00ada"], [" ma", "l", "/nLa indecisi\u00c3\u00b3n me va a "], ["mat", "ar", "/nPero quiero saberlo h"], ["oy", "", "/nSi me quedo o me "], ["voy", "", "/nSi me quedo o me "], ["voy", "", "/nEsa si que es mi condena"], ["aa", "", "/nEso si es lo que me que"], ["ma", "", "/nPero quiero saberlo ho"], ["y....", "", "", "/nSi yo no paro de sufrir "], [" (T", "u i", "ndecision me molesta)/nEl corazon se va a parti"], ["r  ", "(Si", " no me quieres librame)/nY aunque no deje latir  "], ["(Y ", "hom", "bre, pretendo ser)/nPor dentro me siento mori"], ["r  ", "(Ta", "l vez la ropa me queda)/nYo quiero saberlo hoy "], ["  (", "Que", " es lo que tienes que decir)/nSi me quedo o me voy"], ["  (", "Deb", "o ir o quedarme)/n"], [], ["o f", "rio", " por los ojos", ")", "", "", "", "", "", "", "", "/nShould I stay or should I go n"], ["ow ", " (T", "engo frio por los ojos)/nSi me quedo o me vo"], ["y  ", "(Te", "ngo frio por los ojos)/nEsa si que es mi conde"], ["na ", " (S", "i me dejas estoy listo)/nEso si es lo que me que"], ["ma ", " (S", "i me quiebro es noble)/nSi te amo en realida"], ["d  ", "(Pe", "ro me tienes que decir)/nSi me quedo o me vo"], ["y  ", "(Te", "ngo frio por los ojos)/nSi me quedo o me vo"], ["y  ", "(Te", "ngo frio por los ojos)/nSi me quedo o me vo"], ["y  ", "(Te", "ngo frio por los ojos)/nEsa si que es mi con"], ["den", "a  ", "(Si me dejas estoy listo)/nEso si es lo que me qu"], ["ema", "  (", "Si me quiebro es noble)/nSi te amo en realidad"], ["  (", "Per", "o me tienes que decir)/nSi me que"], ["do o m", "e voy!", ""]]}
+{
+    "cancion": "should-i-stay-or-should-i-go",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "A",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "A",
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "E",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "C",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "D",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/nHay veces que no puedo m"
+        ],
+        [
+            "Ã¡s",
+            "",
+            "/nSiento que llega el fi"
+        ],
+        [
+            "nal",
+            "",
+            "/nPero quiero saberlo h"
+        ],
+        [
+            "oy",
+            "",
+            "/nSi me quedo o me v"
+        ],
+        [
+            "oy",
+            "",
+            "/nDecÃ­ que si, si,"
+        ],
+        [
+            " si",
+            "...",
+            "./nYo no paro de suf"
+        ],
+        [
+            "rir",
+            "",
+            "/nUn dÃ­a bien un dÃ­a"
+        ],
+        [
+            " ma",
+            "l",
+            "/nLa indecisiÃ³n me va a "
+        ],
+        [
+            "mat",
+            "ar",
+            "/nPero quiero saberlo h"
+        ],
+        [
+            "oy",
+            "",
+            "/nSi me quedo o me "
+        ],
+        [
+            "voy",
+            "",
+            "/nSi me quedo o me "
+        ],
+        [
+            "voy",
+            "",
+            "/nEsa si que es mi condena"
+        ],
+        [
+            "aa",
+            "",
+            "/nEso si es lo que me que"
+        ],
+        [
+            "ma",
+            "",
+            "/nPero quiero saberlo ho"
+        ],
+        [
+            "y....",
+            "",
+            "",
+            "/nSi yo no paro de sufrir "
+        ],
+        [
+            " (T",
+            "u i",
+            "ndecision me molesta)/nEl corazon se va a parti"
+        ],
+        [
+            "r  ",
+            "(Si",
+            " no me quieres librame)/nY aunque no deje latir  "
+        ],
+        [
+            "(Y ",
+            "hom",
+            "bre, pretendo ser)/nPor dentro me siento mori"
+        ],
+        [
+            "r  ",
+            "(Ta",
+            "l vez la ropa me queda)/nYo quiero saberlo hoy "
+        ],
+        [
+            "  (",
+            "Que",
+            " es lo que tienes que decir)/nSi me quedo o me voy"
+        ],
+        [
+            "  (",
+            "Deb",
+            "o ir o quedarme)/n"
+        ],
+        [],
+        [
+            "o f",
+            "rio",
+            " por los ojos",
+            ")",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/nShould I stay or should I go n"
+        ],
+        [
+            "ow ",
+            " (T",
+            "engo frio por los ojos)/nSi me quedo o me vo"
+        ],
+        [
+            "y  ",
+            "(Te",
+            "ngo frio por los ojos)/nEsa si que es mi conde"
+        ],
+        [
+            "na ",
+            " (S",
+            "i me dejas estoy listo)/nEso si es lo que me que"
+        ],
+        [
+            "ma ",
+            " (S",
+            "i me quiebro es noble)/nSi te amo en realida"
+        ],
+        [
+            "d  ",
+            "(Pe",
+            "ro me tienes que decir)/nSi me quedo o me vo"
+        ],
+        [
+            "y  ",
+            "(Te",
+            "ngo frio por los ojos)/nSi me quedo o me vo"
+        ],
+        [
+            "y  ",
+            "(Te",
+            "ngo frio por los ojos)/nSi me quedo o me vo"
+        ],
+        [
+            "y  ",
+            "(Te",
+            "ngo frio por los ojos)/nEsa si que es mi con"
+        ],
+        [
+            "den",
+            "a  ",
+            "(Si me dejas estoy listo)/nEso si es lo que me qu"
+        ],
+        [
+            "ema",
+            "  (",
+            "Si me quiebro es noble)/nSi te amo en realidad"
+        ],
+        [
+            "  (",
+            "Per",
+            "o me tienes que decir)/nSi me que"
+        ],
+        [
+            "do o m",
+            "e voy!",
+            ""
+        ]
+    ],
+    "etiquetas": []
+}

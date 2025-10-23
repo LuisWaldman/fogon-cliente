@@ -1,1 +1,65 @@
-{"cancion": "Percys-Song", "banda": "bob-dylan", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "C", "F"]}, {"nombre": "parte2", "acordes": ["C", "C", "C", "F", "F", "Dm", "Dm", "F"]}], "orden_partes": [0, 1]}, "letras": [["Bad news,    bad n", "ews,   come to me ", "      where I slee", "p,               /n   "], ["one of      your f", "riends       is in", "       trouble dee", "p/n   "], ["turn,            t", "urn      to the ra", "in     and the"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "z8Y8wbXurjg", "delay": 0}]}
+{
+    "cancion": "Percys-Song",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Bad news,    bad n",
+            "ews,   come to me ",
+            "      where I slee",
+            "p,               /n   "
+        ],
+        [
+            "one of      your f",
+            "riends       is in",
+            "       trouble dee",
+            "p/n   "
+        ],
+        [
+            "turn,            t",
+            "urn      to the ra",
+            "in     and the"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "z8Y8wbXurjg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

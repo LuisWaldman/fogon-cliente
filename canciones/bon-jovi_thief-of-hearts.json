@@ -1,1 +1,428 @@
-{"cancion": "thief-of-hearts", "banda": "bon-jovi", "escala": "A", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "F#m", "E/G#", "A", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "F#m", "E/G#", "A", "D", "G", "Em", "A", "D/F#", "G", "D/F#", "Em", "A", "Bm", "G", "D", "Em", "C", "Bm", "A", "G", "Bm", "A", "G", "A", "D", "D", "A", "G", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "F#m", "E/G#", "A", "D", "G", "Em", "A", "D/F#", "G", "D/F#", "Em", "A", "Bm", "G", "D", "Em", "C", "Bm", "A", "Bm", "G", "D", "Em", "C", "D", "D", "D/C#", "Bm", "G", "D", "Em", "C", "Bm", "A", "G", "Bm", "A", "G", "A", "D", "D", "A", "G", "D/F#", "G", "Em", "A", "D/F#", "G", "D/F#", "Em", "A", "Bm", "G", "D", "Em", "C", "Bm", "A", "Bm", "G", "D", "Em", "C", "D", "D", "D/C#", "Bm", "G", "D", "Em", "C", "Bm", "A", "G", "Bm", "A", "G", "A", "D", "D", "A", "G", "D", "A", "G", "D", "A", "G"]}], "orden_partes": [0]}, "letras": [["lock up a", "ll the do", "ors", "/nPull up the "], ["covers Turn o", "ut the li", "ghts", "/n"], ["I'll know w", "here you ar", "e", "/nIt's al"], ["right", "", "/nYou can "], ["go ahe", "ad and hi", "de", "/nYou know "], ["you can't k", "eep me ou", "t", "/nI'll "], ["find my w", "ay I'm he", "re to sta", "y/nEven the "], ["cops can't s", "ave you no", "w/n"], ["Hey b", "aby Theres no", "thing you can do", "/n"], ["Hey bab", "y It", " isn't up ", "to you", "/nI "], ["am the t", "hief of he", "arts/nDon't "], ["hide or t", "ry to ru", "n", "/nI'll "], ["play the p", "art. I'm the thief of he", "arts/nI've "], ["come to s", "teal your lo", "ve/nI "], ["am ", "the thief of he", "arts/nYou can "], ["hold on t", "o your he", "art", "/n"], ["You ain't g", "onna win", "", "/n"], ["Go ahea", "d and dr", "aw the bli", "nds/nI"], ["'m still c", "oming in", "/n"], ["Hey b", "aby I", "'m gonna wear you dow", "n/n"], ["hey bab", "y Be", "tter liste", "n to me now", "/nI"], ["'m the t", "hief of he", "arts/nThe "], ["shadow o", "n your wa", "ll", "/nA wh"], ["isper in", " your ea", "r/nA "], ["footstep i", "n the ha", "ll", "", "/nI'"], ["m the th", "ief of he", "arts/nDon't"], [" hide or t", "ry to r", "un", "/nI'll "], ["play the p", "art, I'm the thief of he", "arts/nI'm "], ["gonna s", "teal your lo", "ve/n"], ["I am", " the thief of he", "arts/n"], ["Hey bab", "y Theres noth", "ing you can do", "/n"], ["Hey, ba", "by Y", "ou know the", "re ain't no use", "/nI "], ["am the t", "hief of he", "arts/n"], ["Guilty o", "f the ch", "arge", "/nYou can "], ["throw a", "way the ke", "ys/nAnd "], ["double u", "p the ba", "rs", "", "/nI "], ["am the t", "hief of he", "arts/nDon't "], ["hide or t", "ry to ru", "n", "/nI'll "], ["play the p", "art, I'm the thief of he", "arts/nI'm "], ["gonna st", "eal your lo", "ve/nI "], ["am t", "he thief of he", "arts/nI "], ["am t", "he thief of he", "arts/nI "], ["am t", "he thief of he", "arts..............."]], "medias": [{"tipo": "Youtube", "id": "-OW1TSB5DJE", "delay": 0}]}
+{
+    "cancion": "thief-of-hearts",
+    "banda": "bon-jovi",
+    "escala": "A",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "F#m",
+                    "E/G#",
+                    "A",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "F#m",
+                    "E/G#",
+                    "A",
+                    "D",
+                    "G",
+                    "Em",
+                    "A",
+                    "D/F#",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "A",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "A",
+                    "A/G#",
+                    "F#m",
+                    "D",
+                    "F#m",
+                    "E/G#",
+                    "A",
+                    "D",
+                    "G",
+                    "Em",
+                    "A",
+                    "D/F#",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "A",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "A",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "D/F#",
+                    "G",
+                    "Em",
+                    "A",
+                    "D/F#",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "A",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "A",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "D",
+                    "D",
+                    "D/C#",
+                    "Bm",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "A",
+                    "G",
+                    "Bm",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "lock up a",
+            "ll the do",
+            "ors",
+            "/nPull up the "
+        ],
+        [
+            "covers Turn o",
+            "ut the li",
+            "ghts",
+            "/n"
+        ],
+        [
+            "I'll know w",
+            "here you ar",
+            "e",
+            "/nIt's al"
+        ],
+        [
+            "right",
+            "",
+            "/nYou can "
+        ],
+        [
+            "go ahe",
+            "ad and hi",
+            "de",
+            "/nYou know "
+        ],
+        [
+            "you can't k",
+            "eep me ou",
+            "t",
+            "/nI'll "
+        ],
+        [
+            "find my w",
+            "ay I'm he",
+            "re to sta",
+            "y/nEven the "
+        ],
+        [
+            "cops can't s",
+            "ave you no",
+            "w/n"
+        ],
+        [
+            "Hey b",
+            "aby Theres no",
+            "thing you can do",
+            "/n"
+        ],
+        [
+            "Hey bab",
+            "y It",
+            " isn't up ",
+            "to you",
+            "/nI "
+        ],
+        [
+            "am the t",
+            "hief of he",
+            "arts/nDon't "
+        ],
+        [
+            "hide or t",
+            "ry to ru",
+            "n",
+            "/nI'll "
+        ],
+        [
+            "play the p",
+            "art. I'm the thief of he",
+            "arts/nI've "
+        ],
+        [
+            "come to s",
+            "teal your lo",
+            "ve/nI "
+        ],
+        [
+            "am ",
+            "the thief of he",
+            "arts/nYou can "
+        ],
+        [
+            "hold on t",
+            "o your he",
+            "art",
+            "/n"
+        ],
+        [
+            "You ain't g",
+            "onna win",
+            "",
+            "/n"
+        ],
+        [
+            "Go ahea",
+            "d and dr",
+            "aw the bli",
+            "nds/nI"
+        ],
+        [
+            "'m still c",
+            "oming in",
+            "/n"
+        ],
+        [
+            "Hey b",
+            "aby I",
+            "'m gonna wear you dow",
+            "n/n"
+        ],
+        [
+            "hey bab",
+            "y Be",
+            "tter liste",
+            "n to me now",
+            "/nI"
+        ],
+        [
+            "'m the t",
+            "hief of he",
+            "arts/nThe "
+        ],
+        [
+            "shadow o",
+            "n your wa",
+            "ll",
+            "/nA wh"
+        ],
+        [
+            "isper in",
+            " your ea",
+            "r/nA "
+        ],
+        [
+            "footstep i",
+            "n the ha",
+            "ll",
+            "",
+            "/nI'"
+        ],
+        [
+            "m the th",
+            "ief of he",
+            "arts/nDon't"
+        ],
+        [
+            " hide or t",
+            "ry to r",
+            "un",
+            "/nI'll "
+        ],
+        [
+            "play the p",
+            "art, I'm the thief of he",
+            "arts/nI'm "
+        ],
+        [
+            "gonna s",
+            "teal your lo",
+            "ve/n"
+        ],
+        [
+            "I am",
+            " the thief of he",
+            "arts/n"
+        ],
+        [
+            "Hey bab",
+            "y Theres noth",
+            "ing you can do",
+            "/n"
+        ],
+        [
+            "Hey, ba",
+            "by Y",
+            "ou know the",
+            "re ain't no use",
+            "/nI "
+        ],
+        [
+            "am the t",
+            "hief of he",
+            "arts/n"
+        ],
+        [
+            "Guilty o",
+            "f the ch",
+            "arge",
+            "/nYou can "
+        ],
+        [
+            "throw a",
+            "way the ke",
+            "ys/nAnd "
+        ],
+        [
+            "double u",
+            "p the ba",
+            "rs",
+            "",
+            "/nI "
+        ],
+        [
+            "am the t",
+            "hief of he",
+            "arts/nDon't "
+        ],
+        [
+            "hide or t",
+            "ry to ru",
+            "n",
+            "/nI'll "
+        ],
+        [
+            "play the p",
+            "art, I'm the thief of he",
+            "arts/nI'm "
+        ],
+        [
+            "gonna st",
+            "eal your lo",
+            "ve/nI "
+        ],
+        [
+            "am t",
+            "he thief of he",
+            "arts/nI "
+        ],
+        [
+            "am t",
+            "he thief of he",
+            "arts/nI "
+        ],
+        [
+            "am t",
+            "he thief of he",
+            "arts..............."
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "-OW1TSB5DJE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

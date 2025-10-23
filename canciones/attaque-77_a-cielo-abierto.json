@@ -1,1 +1,361 @@
-{"cancion": "a-cielo-abierto", "banda": "attaque-77", "escala": "E", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "B", "G", "D", "A", "E", "C", "F", "E", "D", "F", "C", "D", "G#", "A#", "G", "C", "D", "A#", "F", "G", "A#", "D#", "F", "G", "F", "A", "G", "C", "G", "F", "A", "C", "Gm", "Fm", "A", "C", "G", "D", "D", "A#", "G", "F", "D", "A#", "F", "G", "D", "F", "G", "D", "A#", "G", "F", "D", "A#", "F", "G", "Bm", "E", "D", "F#", "D", "A", "E", "D", "E", "A", "D", "E", "A", "D", "E", "B", "E", "B", "A", "D", "A", "B", "E", "A", "D", "D", "E", "F#", "B", "D", "E", "A", "A", "G", "B", "E", "B", "E", "F", "C", "G", "F", "C", "E", "D#", "A#", "F", "C", "G", "A#", "F", "C", "A#", "F", "C", "G", "A#", "F", "G", "F", "C", "A#", "F", "C", "A#", "G", "D", "A#", "G"]}], "orden_partes": [0]}, "letras": [[], [], [], [], [], ["Cuatro veces sin base./n"], [], ["Arriesgan los Glaciares, ", "destruyendo Los Andes/n"], ["Cinco siglos despu", "\u00e9s, la historia r", "epiti\u00e9ndose/n"], ["Son las corporaciones, los nuevo", "s conquistadores/n"], ["Y le entregan el o", "ro a nuestros go", "bernadores/n"], ["Y el cami\u00f3n con dinamita", " pasa enfrente de la plaza/n"], ["Por el frente de la escuela y a la v", "uelta de tu casa/n"], ["Invaden la monta\u00f1", "a no es un ej\u00e9rcit", "o", "", "/n"], ["Es una compa\u00f1\u00eda extran", "jera de inversi", "\u00f3n/nY no trajeron "], ["armas, sino din", "ero/nY enseg"], ["uida pudieron impone", "r la corrupci\u00f3n (la corrupci\u00f3", "n!)/n"], ["Despierta/n"], [], [], ["Nos est\u00e1n invadiendo no fueron los chilenos/nSer\u00e1 tal vez por eso que el pa\u00eds no "], ["reac", "cion\u00f3/n"], ["Y encima aquellos p", "ueblos est\u00e1", "n tan le", "jos/nQue a "], ["nadie le inter", "esa qu\u00e9 cara", "jo les pas\u00f3", "/n"], ["\u00bfQu\u00e9 hiciste cuando Menem privatiz\u00f3 los bie", "nes", "?/n"], ["Vendr\u00e1n por el agua, ya ", "est\u00e1n por el oro/ncomp"], ["rando silencio c", "on sus sobornos./nLe inven"], ["taron una causa y lo mand", "aron a prisi\u00f3n./n"], ["Todo e", "sto en democra", "cia, la ", "de la co", "ncertaci\u00f3n.", "/n"], ["Bajo la alumbrera, agua ri", "ca, veladero,/nPascua "], ["Lama sin controles del gobie", "rno.", "", "/nCu\u00e1nto"], [" oro que se llevan, cu\u00e1nta", " agua que extrajeron,/ncu\u00e1nta m"], ["ierda t\u00f3xica en el basu", "rero./n"], ["\u00bfQu\u00e9 nos dejar\u00e1n, si no fr", "enamos el saqu", "eo?", "/n"], ["\u00bfQu\u00e9 nos dejar\u00e1n, si no fr", "enamos el saqu", "eo?/n"], ["(re", "pite)/n"], [], [], ["Van de la mano las armas y la democ", "racia,", "/n"], ["mandan las corporacio", "nes de nuestras desgra", "cias./n"], ["En Bel\u00e9n y ", "Andalgal\u00e1,/n"], ["en Amicha y S", "anta Cruz,/n"], ["en toda la Cordill", "era,/n"], ["por el norte, centro y sur./n"], ["En Esquel y Famati", "na,/nen Ig"], ["lesia y Ongam", "ira,/n"], ["en Pirquitas y ", "Uspallata,/n"], ["los hombres del salar, las mujeres de J\u00e1chal./n"], ["Los Mapuches en R\u00edo Negro, Andacollo y Loncopu\u00e9./n"], ["Hay alerta, hay alerta/n"], ["cuando un pueblo se", " despierta./n"], ["Hay alerta, hay alerta/n"], ["cuando un pueblo se", " despierta./n"], ["Hay alerta, hay alerta/n"], ["cuando un pueblo s", "e despierta."]], "medias": [{"tipo": "Youtube", "id": "wEQtqQFm4hA", "delay": 0}]}
+{
+    "cancion": "a-cielo-abierto",
+    "banda": "attaque-77",
+    "escala": "E",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "B",
+                    "G",
+                    "D",
+                    "A",
+                    "E",
+                    "C",
+                    "F",
+                    "E",
+                    "D",
+                    "F",
+                    "C",
+                    "D",
+                    "G#",
+                    "A#",
+                    "G",
+                    "C",
+                    "D",
+                    "A#",
+                    "F",
+                    "G",
+                    "A#",
+                    "D#",
+                    "F",
+                    "G",
+                    "F",
+                    "A",
+                    "G",
+                    "C",
+                    "G",
+                    "F",
+                    "A",
+                    "C",
+                    "Gm",
+                    "Fm",
+                    "A",
+                    "C",
+                    "G",
+                    "D",
+                    "D",
+                    "A#",
+                    "G",
+                    "F",
+                    "D",
+                    "A#",
+                    "F",
+                    "G",
+                    "D",
+                    "F",
+                    "G",
+                    "D",
+                    "A#",
+                    "G",
+                    "F",
+                    "D",
+                    "A#",
+                    "F",
+                    "G",
+                    "Bm",
+                    "E",
+                    "D",
+                    "F#",
+                    "D",
+                    "A",
+                    "E",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "B",
+                    "E",
+                    "B",
+                    "A",
+                    "D",
+                    "A",
+                    "B",
+                    "E",
+                    "A",
+                    "D",
+                    "D",
+                    "E",
+                    "F#",
+                    "B",
+                    "D",
+                    "E",
+                    "A",
+                    "A",
+                    "G",
+                    "B",
+                    "E",
+                    "B",
+                    "E",
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "C",
+                    "E",
+                    "D#",
+                    "A#",
+                    "F",
+                    "C",
+                    "G",
+                    "A#",
+                    "F",
+                    "C",
+                    "A#",
+                    "F",
+                    "C",
+                    "G",
+                    "A#",
+                    "F",
+                    "G",
+                    "F",
+                    "C",
+                    "A#",
+                    "F",
+                    "C",
+                    "A#",
+                    "G",
+                    "D",
+                    "A#",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "Cuatro veces sin base./n"
+        ],
+        [],
+        [
+            "Arriesgan los Glaciares, ",
+            "destruyendo Los Andes/n"
+        ],
+        [
+            "Cinco siglos despu",
+            "és, la historia r",
+            "epitiéndose/n"
+        ],
+        [
+            "Son las corporaciones, los nuevo",
+            "s conquistadores/n"
+        ],
+        [
+            "Y le entregan el o",
+            "ro a nuestros go",
+            "bernadores/n"
+        ],
+        [
+            "Y el camión con dinamita",
+            " pasa enfrente de la plaza/n"
+        ],
+        [
+            "Por el frente de la escuela y a la v",
+            "uelta de tu casa/n"
+        ],
+        [
+            "Invaden la montañ",
+            "a no es un ejércit",
+            "o",
+            "",
+            "/n"
+        ],
+        [
+            "Es una compañía extran",
+            "jera de inversi",
+            "ón/nY no trajeron "
+        ],
+        [
+            "armas, sino din",
+            "ero/nY enseg"
+        ],
+        [
+            "uida pudieron impone",
+            "r la corrupción (la corrupció",
+            "n!)/n"
+        ],
+        [
+            "Despierta/n"
+        ],
+        [],
+        [],
+        [
+            "Nos están invadiendo no fueron los chilenos/nSerá tal vez por eso que el país no "
+        ],
+        [
+            "reac",
+            "cionó/n"
+        ],
+        [
+            "Y encima aquellos p",
+            "ueblos está",
+            "n tan le",
+            "jos/nQue a "
+        ],
+        [
+            "nadie le inter",
+            "esa qué cara",
+            "jo les pasó",
+            "/n"
+        ],
+        [
+            "¿Qué hiciste cuando Menem privatizó los bie",
+            "nes",
+            "?/n"
+        ],
+        [
+            "Vendrán por el agua, ya ",
+            "están por el oro/ncomp"
+        ],
+        [
+            "rando silencio c",
+            "on sus sobornos./nLe inven"
+        ],
+        [
+            "taron una causa y lo mand",
+            "aron a prisión./n"
+        ],
+        [
+            "Todo e",
+            "sto en democra",
+            "cia, la ",
+            "de la co",
+            "ncertación.",
+            "/n"
+        ],
+        [
+            "Bajo la alumbrera, agua ri",
+            "ca, veladero,/nPascua "
+        ],
+        [
+            "Lama sin controles del gobie",
+            "rno.",
+            "",
+            "/nCuánto"
+        ],
+        [
+            " oro que se llevan, cuánta",
+            " agua que extrajeron,/ncuánta m"
+        ],
+        [
+            "ierda tóxica en el basu",
+            "rero./n"
+        ],
+        [
+            "¿Qué nos dejarán, si no fr",
+            "enamos el saqu",
+            "eo?",
+            "/n"
+        ],
+        [
+            "¿Qué nos dejarán, si no fr",
+            "enamos el saqu",
+            "eo?/n"
+        ],
+        [
+            "(re",
+            "pite)/n"
+        ],
+        [],
+        [],
+        [
+            "Van de la mano las armas y la democ",
+            "racia,",
+            "/n"
+        ],
+        [
+            "mandan las corporacio",
+            "nes de nuestras desgra",
+            "cias./n"
+        ],
+        [
+            "En Belén y ",
+            "Andalgalá,/n"
+        ],
+        [
+            "en Amicha y S",
+            "anta Cruz,/n"
+        ],
+        [
+            "en toda la Cordill",
+            "era,/n"
+        ],
+        [
+            "por el norte, centro y sur./n"
+        ],
+        [
+            "En Esquel y Famati",
+            "na,/nen Ig"
+        ],
+        [
+            "lesia y Ongam",
+            "ira,/n"
+        ],
+        [
+            "en Pirquitas y ",
+            "Uspallata,/n"
+        ],
+        [
+            "los hombres del salar, las mujeres de Jáchal./n"
+        ],
+        [
+            "Los Mapuches en Río Negro, Andacollo y Loncopué./n"
+        ],
+        [
+            "Hay alerta, hay alerta/n"
+        ],
+        [
+            "cuando un pueblo se",
+            " despierta./n"
+        ],
+        [
+            "Hay alerta, hay alerta/n"
+        ],
+        [
+            "cuando un pueblo se",
+            " despierta./n"
+        ],
+        [
+            "Hay alerta, hay alerta/n"
+        ],
+        [
+            "cuando un pueblo s",
+            "e despierta."
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "wEQtqQFm4hA",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

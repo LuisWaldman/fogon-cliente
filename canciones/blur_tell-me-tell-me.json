@@ -1,1 +1,371 @@
-{"cancion": "tell-me-tell-me", "banda": "blur", "escala": "E", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "E5", "A5", "E5", "A5", "E5", "A5", "E", "E5", "A5", "E5", "A5", "E", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "D5", "E5", "A5", "D5", "B5", "E5", "A5", "E5", "A5", "E5", "A5", "E", "E5", "A5", "E5", "A5", "E", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "D5", "E5", "A5", "D5", "B5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "E5", "A5", "E5", "A5", "E", "E5", "A5", "E5", "A5", "E", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "E5", "A5", "D5", "E5", "A5", "D5", "B5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "D5", "A5", "E5", "D5", "A5", "E5"]}], "orden_partes": [0]}, "letras": [[], [], [], ["[Vers", "e 1]", "", "", "/n"], ["Tell me, tell me, t", "ell me please/n"], ["What is this that o", "ffends me/n"], ["Drives me to a s", "tate of hopelessne", "-ess", "/n"], ["Has it any s", "ense at all/n"], ["Has it any w", "orth at all/nOr "], ["is it just an u", "tter me", "-e-ess", "/n"], ["Yah-yah-yah-yah-y", "ay!", "/n"], ["Yah-yah-y", "ah-yah-ya", "y!", "/n"], [], ["[Vers", "e 2]", "", "", "/nThe "], ["funny thing that m", "akes me do/nThe "], ["things that I d", "o to you/nAlthough I "], ["know they are s", "o damn very co", "-old", "/nI'm "], ["in a stupor, can't e", "xplain/nMy "], ["mind is gone, my m", "ind is gone/nThere "], ["seems so very l", "ittle I can do", "-o", "/n"], ["Yah-yah-yah-yah-y", "ay!", "/n"], ["Yah-yah-y", "ah-yah-ya", "y!/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Won't you tell me -", " please!", "/n"], [], ["[Vers", "e 3]", "", "", "/nMy "], ["head's so full of e", "mptiness/nIt's "], ["so hard to s", "ustain the mess/nI "], ["have no idea who I", " am at a-", "all", "/nSo tell "], ["me, tell me, t", "ell me please/n"], ["What is this that o", "ffends me/nBe"], ["fore I smash my h", "ead against the wa", "-all", "/n"], ["Yah-yah-yah-yah-y", "ay!", "/n"], ["Yah-yah-y", "ah-yah-ya", "y!/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Won't you tell me -", " please!", "/n"], ["[Chorus]/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Tell me, tell me, t", "ell me, please (a-", "a-a a-a-a-a)/n"], ["Won't you tell me -", " yay!", ""]], "medias": [{"tipo": "Youtube", "id": "9dLxCVaLQ7A", "delay": 0}]}
+{
+    "cancion": "tell-me-tell-me",
+    "banda": "blur",
+    "escala": "E",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "B5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "B5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "E5",
+                    "A5",
+                    "D5",
+                    "B5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5",
+                    "D5",
+                    "A5",
+                    "E5"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [
+            "[Vers",
+            "e 1]",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me please/n"
+        ],
+        [
+            "What is this that o",
+            "ffends me/n"
+        ],
+        [
+            "Drives me to a s",
+            "tate of hopelessne",
+            "-ess",
+            "/n"
+        ],
+        [
+            "Has it any s",
+            "ense at all/n"
+        ],
+        [
+            "Has it any w",
+            "orth at all/nOr "
+        ],
+        [
+            "is it just an u",
+            "tter me",
+            "-e-ess",
+            "/n"
+        ],
+        [
+            "Yah-yah-yah-yah-y",
+            "ay!",
+            "/n"
+        ],
+        [
+            "Yah-yah-y",
+            "ah-yah-ya",
+            "y!",
+            "/n"
+        ],
+        [],
+        [
+            "[Vers",
+            "e 2]",
+            "",
+            "",
+            "/nThe "
+        ],
+        [
+            "funny thing that m",
+            "akes me do/nThe "
+        ],
+        [
+            "things that I d",
+            "o to you/nAlthough I "
+        ],
+        [
+            "know they are s",
+            "o damn very co",
+            "-old",
+            "/nI'm "
+        ],
+        [
+            "in a stupor, can't e",
+            "xplain/nMy "
+        ],
+        [
+            "mind is gone, my m",
+            "ind is gone/nThere "
+        ],
+        [
+            "seems so very l",
+            "ittle I can do",
+            "-o",
+            "/n"
+        ],
+        [
+            "Yah-yah-yah-yah-y",
+            "ay!",
+            "/n"
+        ],
+        [
+            "Yah-yah-y",
+            "ah-yah-ya",
+            "y!/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Won't you tell me -",
+            " please!",
+            "/n"
+        ],
+        [],
+        [
+            "[Vers",
+            "e 3]",
+            "",
+            "",
+            "/nMy "
+        ],
+        [
+            "head's so full of e",
+            "mptiness/nIt's "
+        ],
+        [
+            "so hard to s",
+            "ustain the mess/nI "
+        ],
+        [
+            "have no idea who I",
+            " am at a-",
+            "all",
+            "/nSo tell "
+        ],
+        [
+            "me, tell me, t",
+            "ell me please/n"
+        ],
+        [
+            "What is this that o",
+            "ffends me/nBe"
+        ],
+        [
+            "fore I smash my h",
+            "ead against the wa",
+            "-all",
+            "/n"
+        ],
+        [
+            "Yah-yah-yah-yah-y",
+            "ay!",
+            "/n"
+        ],
+        [
+            "Yah-yah-y",
+            "ah-yah-ya",
+            "y!/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Won't you tell me -",
+            " please!",
+            "/n"
+        ],
+        [
+            "[Chorus]/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Tell me, tell me, t",
+            "ell me, please (a-",
+            "a-a a-a-a-a)/n"
+        ],
+        [
+            "Won't you tell me -",
+            " yay!",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "9dLxCVaLQ7A",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,330 @@
-{"cancion": "Se-me-olvido-todo-al-verte", "banda": "alejandro-sanz", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "Bm7", "G9", "D", "Bm7", "G9", "D", "Bm7", "G9", "D", "Bm7", "G9", "D", "Bm7", "G9", "D", "Bm7", "G9", "D", "Bm7", "G9", "D", "Bm7", "G", "C", "Dm4", "G11", "C", "Dm4", "G11", "C", "Dm4", "G11", "C", "Am7", "Dm7", "G11", "C", "Am7", "Am7", "Dm", "G11", "Dm7", "G", "G11", "Am7", "Em7", "F", "C", "Em7", "Em9", "Am", "Em7", "Dm7", "G11", "D", "Em7", "D", "Em7", "D", "Em7/4", "A4", "D", "Bm7", "Em7/4", "A11", "D", "Bm7", "Em7", "A11", "Em7", "A11", "C", "Dm7", "G7", "C", "Dm7", "G7/4", "C", "Dm7", "G7", "Am7", "Am7/4", "G11", "Am7", "Em7", "F", "C", "Em7", "Em9", "Am", "Em7", "Dm7", "G11", "D", "Em7", "A11", "D", "Em7", "A7", "D", "Em7", "A7", "D", "Bm7", "Em7", "A7", "C", "Dm7", "G7", "C", "Dm7", "G7", "C", "Dm7", "G7", "C", "F", "G", "D", "Em7", "A7", "D", "Em", "A7"]}], "orden_partes": [0]}, "letras": [[], ["COSAS PASARON MUY", " DEPRISA/n        Y "], ["LOS RECUERDOS TAN DESPACIO/n        "], ["SON TAN BREVES TUS S", "ONRISAS/n        Y "], ["TANTO TIEMPO EL QUE ESPERADO/n        "], ["PARA MI JAMAS", " TE FUISTE/n        "], ["PORQUE EL MUNDO SE QUEDO PARADO/n        "], ["AUNQUE A SIDO UN", " POCO RARO...", "/n        "], ["AHORA VIENDOTE DE NUEVO/n        "], ["ME DOY CUENTA QUE", " TE ECHE DE MENOS/n        "], ["AHORA SE QUE NO SOY DUEO/n        "], ["DE MIS S", "ENTIMIENTOS/n        "], ["QUE NO IMPORTAN LOS PROBLEMAS/n        "], ["PORQUE AL DECIRME QUE T", "E QUEDAS.../n        SE "], ["ME OLVIDO", "/n        QUE ME JU"], ["RE OLVIDARTE PAR", "A SIEMPRE/n        SE "], ["ME OLVIDO", "/n        "], ["QUE PROMETI", " POR UNA VE", "Z SER FUERTE", "", "/n     "], ["   Y ES QUE Y", "A NI ME ACORDABA CO", "RAZON/n        QUE ME "], ["GUSTA TU MIRADA T", "ANTO AMOR/n        "], ["QUE S", "IGUE HABI", "ENDO ALGO FUERTE ENTRE NOSOT", "ROS DOS/n        Y AHORA "], ["QUE TE TENGO EN FRENTE N", "ADA ES DIFERENTE/n        "], ["ME HACE TAN FELIZ QUE VUELVAS/n        "], ["NUNCA QUISE QUE TE FUERAS/n        "], ["DE QUE VALE TANTO ORGULLO/n        "], ["TANTA ESTUPIDA PELEA/n        "], ["Y PERDER EN UN SEGUNDO /n        LO QU"], ["E HAS BUSCADO U", "NA VIDA ENTERA/n        SE "], ["ME OLVID", "O/n        QUE NO HE DE"], ["JADO NUNCA D", "E QUERERTE/n        SE "], ["ME OLVID", "O/n        QUE EN EL A"], ["MOR NO VALE S", "ER VALIENTE", "", "", "", "", "", "", "", "", "", "/n"], [], ["YA NI ME ACORDABA C", "ORAZON/n        QUE ME "], ["GUSTA TU MIRADA T", "ANTO AMOR/n        "], ["QUE S", "IGUE HABI", "ENDO ALGO FUERTE ENTRE NOSOT", "ROS DOS/n        Y AHORA "], ["QUE TE TENGO EN FRENTE N", "ADA ES DIFERENTE/n        SE "], ["ME OLVIDO/n        QUE NO HE DE"], ["JADO NUNCA D", "E QUERERTE", "", "", "/n        SE "], ["ME OLVIDO/n        QUE EN EL A"], ["MOR NO VALE SER", " VALIENTE", "", "", "", "/n"], [], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "E9s9BNZFQLA", "delay": 0}]}
+{
+    "cancion": "Se-me-olvido-todo-al-verte",
+    "banda": "alejandro-sanz",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "Bm7",
+                    "G9",
+                    "D",
+                    "Bm7",
+                    "G9",
+                    "D",
+                    "Bm7",
+                    "G9",
+                    "D",
+                    "Bm7",
+                    "G9",
+                    "D",
+                    "Bm7",
+                    "G9",
+                    "D",
+                    "Bm7",
+                    "G9",
+                    "D",
+                    "Bm7",
+                    "G9",
+                    "D",
+                    "Bm7",
+                    "G",
+                    "C",
+                    "Dm4",
+                    "G11",
+                    "C",
+                    "Dm4",
+                    "G11",
+                    "C",
+                    "Dm4",
+                    "G11",
+                    "C",
+                    "Am7",
+                    "Dm7",
+                    "G11",
+                    "C",
+                    "Am7",
+                    "Am7",
+                    "Dm",
+                    "G11",
+                    "Dm7",
+                    "G",
+                    "G11",
+                    "Am7",
+                    "Em7",
+                    "F",
+                    "C",
+                    "Em7",
+                    "Em9",
+                    "Am",
+                    "Em7",
+                    "Dm7",
+                    "G11",
+                    "D",
+                    "Em7",
+                    "D",
+                    "Em7",
+                    "D",
+                    "Em7/4",
+                    "A4",
+                    "D",
+                    "Bm7",
+                    "Em7/4",
+                    "A11",
+                    "D",
+                    "Bm7",
+                    "Em7",
+                    "A11",
+                    "Em7",
+                    "A11",
+                    "C",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "Dm7",
+                    "G7/4",
+                    "C",
+                    "Dm7",
+                    "G7",
+                    "Am7",
+                    "Am7/4",
+                    "G11",
+                    "Am7",
+                    "Em7",
+                    "F",
+                    "C",
+                    "Em7",
+                    "Em9",
+                    "Am",
+                    "Em7",
+                    "Dm7",
+                    "G11",
+                    "D",
+                    "Em7",
+                    "A11",
+                    "D",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "Bm7",
+                    "Em7",
+                    "A7",
+                    "C",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "F",
+                    "G",
+                    "D",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "Em",
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "COSAS PASARON MUY",
+            " DEPRISA/n        Y "
+        ],
+        [
+            "LOS RECUERDOS TAN DESPACIO/n        "
+        ],
+        [
+            "SON TAN BREVES TUS S",
+            "ONRISAS/n        Y "
+        ],
+        [
+            "TANTO TIEMPO EL QUE ESPERADO/n        "
+        ],
+        [
+            "PARA MI JAMAS",
+            " TE FUISTE/n        "
+        ],
+        [
+            "PORQUE EL MUNDO SE QUEDO PARADO/n        "
+        ],
+        [
+            "AUNQUE A SIDO UN",
+            " POCO RARO...",
+            "/n        "
+        ],
+        [
+            "AHORA VIENDOTE DE NUEVO/n        "
+        ],
+        [
+            "ME DOY CUENTA QUE",
+            " TE ECHE DE MENOS/n        "
+        ],
+        [
+            "AHORA SE QUE NO SOY DUEO/n        "
+        ],
+        [
+            "DE MIS S",
+            "ENTIMIENTOS/n        "
+        ],
+        [
+            "QUE NO IMPORTAN LOS PROBLEMAS/n        "
+        ],
+        [
+            "PORQUE AL DECIRME QUE T",
+            "E QUEDAS.../n        SE "
+        ],
+        [
+            "ME OLVIDO",
+            "/n        QUE ME JU"
+        ],
+        [
+            "RE OLVIDARTE PAR",
+            "A SIEMPRE/n        SE "
+        ],
+        [
+            "ME OLVIDO",
+            "/n        "
+        ],
+        [
+            "QUE PROMETI",
+            " POR UNA VE",
+            "Z SER FUERTE",
+            "",
+            "/n     "
+        ],
+        [
+            "   Y ES QUE Y",
+            "A NI ME ACORDABA CO",
+            "RAZON/n        QUE ME "
+        ],
+        [
+            "GUSTA TU MIRADA T",
+            "ANTO AMOR/n        "
+        ],
+        [
+            "QUE S",
+            "IGUE HABI",
+            "ENDO ALGO FUERTE ENTRE NOSOT",
+            "ROS DOS/n        Y AHORA "
+        ],
+        [
+            "QUE TE TENGO EN FRENTE N",
+            "ADA ES DIFERENTE/n        "
+        ],
+        [
+            "ME HACE TAN FELIZ QUE VUELVAS/n        "
+        ],
+        [
+            "NUNCA QUISE QUE TE FUERAS/n        "
+        ],
+        [
+            "DE QUE VALE TANTO ORGULLO/n        "
+        ],
+        [
+            "TANTA ESTUPIDA PELEA/n        "
+        ],
+        [
+            "Y PERDER EN UN SEGUNDO /n        LO QU"
+        ],
+        [
+            "E HAS BUSCADO U",
+            "NA VIDA ENTERA/n        SE "
+        ],
+        [
+            "ME OLVID",
+            "O/n        QUE NO HE DE"
+        ],
+        [
+            "JADO NUNCA D",
+            "E QUERERTE/n        SE "
+        ],
+        [
+            "ME OLVID",
+            "O/n        QUE EN EL A"
+        ],
+        [
+            "MOR NO VALE S",
+            "ER VALIENTE",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "YA NI ME ACORDABA C",
+            "ORAZON/n        QUE ME "
+        ],
+        [
+            "GUSTA TU MIRADA T",
+            "ANTO AMOR/n        "
+        ],
+        [
+            "QUE S",
+            "IGUE HABI",
+            "ENDO ALGO FUERTE ENTRE NOSOT",
+            "ROS DOS/n        Y AHORA "
+        ],
+        [
+            "QUE TE TENGO EN FRENTE N",
+            "ADA ES DIFERENTE/n        SE "
+        ],
+        [
+            "ME OLVIDO/n        QUE NO HE DE"
+        ],
+        [
+            "JADO NUNCA D",
+            "E QUERERTE",
+            "",
+            "",
+            "/n        SE "
+        ],
+        [
+            "ME OLVIDO/n        QUE EN EL A"
+        ],
+        [
+            "MOR NO VALE SER",
+            " VALIENTE",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "E9s9BNZFQLA",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

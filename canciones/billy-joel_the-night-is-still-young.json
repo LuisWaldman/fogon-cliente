@@ -1,1 +1,424 @@
-{"cancion": "the-night-is-still-young", "banda": "billy-joel", "escala": "G", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C/G", "G", "D/G", "G", "C/G", "G", "D/G", "F", "Bb/F", "F", "C/F", "D", "D#dim7", "Em7", "Dm7", "Bbmaj7", "Ebmaj7", "Em7", "F", "Dm7", "C", "G", "C/G", "G", "D/G", "G", "C/G", "G", "D/G", "F", "Bb/F", "F", "C/F", "D", "D#dim7", "Em7", "Dm7", "Bmaj7", "Ebmaj7", "Em7", "F", "Dm7", "C", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C/G", "G", "D/G", "G", "C/G", "G", "D/G", "F", "Bb/F", "F", "C/F", "D", "D#dim7", "Em7", "Dm7", "Bmaj7", "Ebmaj7", "Em7", "F", "Dm7", "C", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C/G", "G", "D/G", "G", "C/G", "G", "D/G", "F", "Bb/F", "F", "C/F", "D", "G", "F", "Em7", "G", "F", "Em7", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C", "F", "Bb", "Dm7", "G", "C/G", "G", "D/G", "G", "C/G", "G", "D/G", "F", "Bb/F", "F", "C/F", "D", "D#dim7", "G", "C/G", "G", "D/G", "G", "C/G", "G", "D/G", "F", "Bb/F", "F", "C/F", "D", "D#dim7"]}], "orden_partes": [0]}, "letras": [[], [], ["[Ve", "rse]", "", "", "", "/n"], ["I'm young enough to still see the passionate boy that I u", "sed to be/nBu"], ["t I'm old enough to say I got a good look at the other side", "/n"], ["I know we got to work real hard, maybe even for the r", "est of our lives/nBut "], ["right now I just want to take what I can get tonig", "ht/n"], ["   ", "     ", "   ", "While the night is still young/n"], ["   ", "     ", "   ", "I want to keep making love to you/nWhile the "], ["night is still young", "", "", "", "", "/n"], ["I'd like to settle down, get married/nAnd maybe have a "], ["child someday/nI can "], ["see a time coming when/nI'm gonna throw my suitcase o"], ["ut/n"], ["No more separations/nWhere you have to say goodnight to a t"], ["elephone/n"], ["Baby I've decided that ain't what this life is all a", "bout/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["   ", "     ", "   ", "While the night is still young/n"], ["   ", "     ", "   ", "I want to try to make the world brand new/nWhile the "], ["night is still young", "", "", "", "", "/n"], ["Rock and Roll music was the only thing I ever gave a d", "amn about/nThere was s"], ["omething that was missing but I never used to wonder w", "hy/n"], ["Now I know you're the one I need to make things r", "ight again/nAn"], ["d I may lose the battle but you're giving me the will to t", "ry/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["   ", "     ", "   ", "Because the night is still young/n"], ["   ", "     ", "   ", "I got a lot of catching up I gotta do/nWhile the "], ["night is still young", "", "", "/nOh the night is still yo"], ["ung/n"], [], ["[Bridg", "e]", "/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], ["Oh", "", "", "", "/n"], [], [], [], [], [], []], "medias": [{"tipo": "Youtube", "id": "C3ogFWISPuw", "delay": 0}]}
+{
+    "cancion": "the-night-is-still-young",
+    "banda": "billy-joel",
+    "escala": "G",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "F",
+                    "Bb/F",
+                    "F",
+                    "C/F",
+                    "D",
+                    "D#dim7",
+                    "Em7",
+                    "Dm7",
+                    "Bbmaj7",
+                    "Ebmaj7",
+                    "Em7",
+                    "F",
+                    "Dm7",
+                    "C",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "F",
+                    "Bb/F",
+                    "F",
+                    "C/F",
+                    "D",
+                    "D#dim7",
+                    "Em7",
+                    "Dm7",
+                    "Bmaj7",
+                    "Ebmaj7",
+                    "Em7",
+                    "F",
+                    "Dm7",
+                    "C",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "F",
+                    "Bb/F",
+                    "F",
+                    "C/F",
+                    "D",
+                    "D#dim7",
+                    "Em7",
+                    "Dm7",
+                    "Bmaj7",
+                    "Ebmaj7",
+                    "Em7",
+                    "F",
+                    "Dm7",
+                    "C",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "F",
+                    "Bb/F",
+                    "F",
+                    "C/F",
+                    "D",
+                    "G",
+                    "F",
+                    "Em7",
+                    "G",
+                    "F",
+                    "Em7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C",
+                    "F",
+                    "Bb",
+                    "Dm7",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "F",
+                    "Bb/F",
+                    "F",
+                    "C/F",
+                    "D",
+                    "D#dim7",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "G",
+                    "C/G",
+                    "G",
+                    "D/G",
+                    "F",
+                    "Bb/F",
+                    "F",
+                    "C/F",
+                    "D",
+                    "D#dim7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "[Ve",
+            "rse]",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I'm young enough to still see the passionate boy that I u",
+            "sed to be/nBu"
+        ],
+        [
+            "t I'm old enough to say I got a good look at the other side",
+            "/n"
+        ],
+        [
+            "I know we got to work real hard, maybe even for the r",
+            "est of our lives/nBut "
+        ],
+        [
+            "right now I just want to take what I can get tonig",
+            "ht/n"
+        ],
+        [
+            "   ",
+            "     ",
+            "   ",
+            "While the night is still young/n"
+        ],
+        [
+            "   ",
+            "     ",
+            "   ",
+            "I want to keep making love to you/nWhile the "
+        ],
+        [
+            "night is still young",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I'd like to settle down, get married/nAnd maybe have a "
+        ],
+        [
+            "child someday/nI can "
+        ],
+        [
+            "see a time coming when/nI'm gonna throw my suitcase o"
+        ],
+        [
+            "ut/n"
+        ],
+        [
+            "No more separations/nWhere you have to say goodnight to a t"
+        ],
+        [
+            "elephone/n"
+        ],
+        [
+            "Baby I've decided that ain't what this life is all a",
+            "bout/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "   ",
+            "     ",
+            "   ",
+            "While the night is still young/n"
+        ],
+        [
+            "   ",
+            "     ",
+            "   ",
+            "I want to try to make the world brand new/nWhile the "
+        ],
+        [
+            "night is still young",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Rock and Roll music was the only thing I ever gave a d",
+            "amn about/nThere was s"
+        ],
+        [
+            "omething that was missing but I never used to wonder w",
+            "hy/n"
+        ],
+        [
+            "Now I know you're the one I need to make things r",
+            "ight again/nAn"
+        ],
+        [
+            "d I may lose the battle but you're giving me the will to t",
+            "ry/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "   ",
+            "     ",
+            "   ",
+            "Because the night is still young/n"
+        ],
+        [
+            "   ",
+            "     ",
+            "   ",
+            "I got a lot of catching up I gotta do/nWhile the "
+        ],
+        [
+            "night is still young",
+            "",
+            "",
+            "/nOh the night is still yo"
+        ],
+        [
+            "ung/n"
+        ],
+        [],
+        [
+            "[Bridg",
+            "e]",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "C3ogFWISPuw",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

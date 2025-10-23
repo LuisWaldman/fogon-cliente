@@ -1,1 +1,65 @@
-{"cancion": "Meet-Me-In-The-Morning", "banda": "bob-dylan", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "A7", "E"]}, {"nombre": "parte2", "acordes": ["A7", "E", "B7", "Bb7", "A7", "A7", "E"]}], "orden_partes": [0, 1]}, "letras": [["meet me in the morning, 5", "6 blah blah blah blah", "/n"], ["meet me in the morning, 56 blah blah blah blah", "/n"], ["honey we could be in kansas", "", "/n"], ["everything?s been darkness since you been gone", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "VE6-uc1zr3s", "delay": 0}]}
+{
+    "cancion": "Meet-Me-In-The-Morning",
+    "banda": "bob-dylan",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "A7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7",
+                    "E",
+                    "B7",
+                    "Bb7",
+                    "A7",
+                    "A7",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "meet me in the morning, 5",
+            "6 blah blah blah blah",
+            "/n"
+        ],
+        [
+            "meet me in the morning, 56 blah blah blah blah",
+            "/n"
+        ],
+        [
+            "honey we could be in kansas",
+            "",
+            "/n"
+        ],
+        [
+            "everything?s been darkness since you been gone",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "VE6-uc1zr3s",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

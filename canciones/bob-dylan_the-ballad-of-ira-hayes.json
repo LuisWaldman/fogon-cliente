@@ -1,1 +1,385 @@
-{"cancion": "The-Ballad-Of-Ira-Hayes", "banda": "bob-dylan", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C", "Cmaj7", "Am", "D", "C", "Cmaj7"]}, {"nombre": "parte2", "acordes": ["G"]}, {"nombre": "parte3", "acordes": ["G/F#", "G7/F", "C", "Cmaj7", "Am", "D", "C/G"]}], "orden_partes": [0, 0, 1, 0, 0, 1, 1, 2, 1, 1, 2, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 0, 1, 1, 2, 1]}, "letras": [["Gather round me, people, and a sto", "ry I wi", "ll tell", "/n"], ["About a brave young Indian y", "ou should r", "emember well", "/nFrom the tribe of Pima Indians, a "], ["proud and a ", "peaceful ban", "d,/nThey "], ["farmed the Phoenix valley in A", "rizo", "na land", "./n"], ["Down their ditches for a thousand years the s", "parkling", " water rush", "ed,/n"], ["Till the white man stole their water rights and the ru", "nning w", "ater hushe", "d./nNow Ira's folks were hungry, and their "], ["farms grew ", "crops of weed", "s./nBut when"], [" war came, he volunteered and for", "got the w", "hite man's gree", "d./nCall him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to w", "ar./nYes, call him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to w", "ar./n"], ["They started up Iwo Jima hill, two", " hundre", "d and fift", "y men,/n"], ["But only twenty-seven lived to wa", "lk back dow", "n that hill ", "again./n"], ["And when the fight was over and O", "ld Gl", "ory raise", "d/n"], ["One of the men who held it high was t", "he Ind", "ian, Ira Hay", "es./nCall him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to w", "ar./nYes, call him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to ", "war./n"], ["Now, Ira returned a hero, celebrat", "ed thro", "ughout the", " land/n"], ["He was wined and speeched and hon", "ored, every", "body shook h", "is hand./n"], ["But he was just a Pima Indian - no", " money,", " no crops,", " no chance -/n"], ["And at home nobody cared what Ira'd d", "one, a", "nd when do t", "he Indians dance?/nCall him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to w", "ar./nYes, call him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to ", "war./n"], ["Then Ira started drinking hard, ja", "il was ", "often his ", "home./n"], ["They let him raise the flag there and lower it like you'd th", "row a ", "dog a bone.", "/n"], ["He died drunk early one morning, alone in the land h", "e'd fou", "ght to sav", "e./n"], ["Two inches of water in a lonely ditch was the gr", "ave f", "or Ira Hayes", "./nCall him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to w", "ar./nYes, call him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to ", "war./n"], ["Yes, call him drunken Ira Hayes, but his land", " is sti", "ll as dry,", "/n"], ["And his ghost is lying thirsty In the dit", "ch whe", "re Ira died.", "/nCall him "], ["drunken ", "Ira Ha", "yes/nHe won't "], ["answer", " anymor", "e,/nNot the "], ["whiskey-drinking Indian/nOr the "], ["Marine who went to w", "ar."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "EBwUQ_yuIjM", "delay": 0}]}
+{
+    "cancion": "The-Ballad-Of-Ira-Hayes",
+    "banda": "bob-dylan",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Cmaj7",
+                    "Am",
+                    "D",
+                    "C",
+                    "Cmaj7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G/F#",
+                    "G7/F",
+                    "C",
+                    "Cmaj7",
+                    "Am",
+                    "D",
+                    "C/G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Gather round me, people, and a sto",
+            "ry I wi",
+            "ll tell",
+            "/n"
+        ],
+        [
+            "About a brave young Indian y",
+            "ou should r",
+            "emember well",
+            "/nFrom the tribe of Pima Indians, a "
+        ],
+        [
+            "proud and a ",
+            "peaceful ban",
+            "d,/nThey "
+        ],
+        [
+            "farmed the Phoenix valley in A",
+            "rizo",
+            "na land",
+            "./n"
+        ],
+        [
+            "Down their ditches for a thousand years the s",
+            "parkling",
+            " water rush",
+            "ed,/n"
+        ],
+        [
+            "Till the white man stole their water rights and the ru",
+            "nning w",
+            "ater hushe",
+            "d./nNow Ira's folks were hungry, and their "
+        ],
+        [
+            "farms grew ",
+            "crops of weed",
+            "s./nBut when"
+        ],
+        [
+            " war came, he volunteered and for",
+            "got the w",
+            "hite man's gree",
+            "d./nCall him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to w",
+            "ar./nYes, call him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to w",
+            "ar./n"
+        ],
+        [
+            "They started up Iwo Jima hill, two",
+            " hundre",
+            "d and fift",
+            "y men,/n"
+        ],
+        [
+            "But only twenty-seven lived to wa",
+            "lk back dow",
+            "n that hill ",
+            "again./n"
+        ],
+        [
+            "And when the fight was over and O",
+            "ld Gl",
+            "ory raise",
+            "d/n"
+        ],
+        [
+            "One of the men who held it high was t",
+            "he Ind",
+            "ian, Ira Hay",
+            "es./nCall him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to w",
+            "ar./nYes, call him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to ",
+            "war./n"
+        ],
+        [
+            "Now, Ira returned a hero, celebrat",
+            "ed thro",
+            "ughout the",
+            " land/n"
+        ],
+        [
+            "He was wined and speeched and hon",
+            "ored, every",
+            "body shook h",
+            "is hand./n"
+        ],
+        [
+            "But he was just a Pima Indian - no",
+            " money,",
+            " no crops,",
+            " no chance -/n"
+        ],
+        [
+            "And at home nobody cared what Ira'd d",
+            "one, a",
+            "nd when do t",
+            "he Indians dance?/nCall him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to w",
+            "ar./nYes, call him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to ",
+            "war./n"
+        ],
+        [
+            "Then Ira started drinking hard, ja",
+            "il was ",
+            "often his ",
+            "home./n"
+        ],
+        [
+            "They let him raise the flag there and lower it like you'd th",
+            "row a ",
+            "dog a bone.",
+            "/n"
+        ],
+        [
+            "He died drunk early one morning, alone in the land h",
+            "e'd fou",
+            "ght to sav",
+            "e./n"
+        ],
+        [
+            "Two inches of water in a lonely ditch was the gr",
+            "ave f",
+            "or Ira Hayes",
+            "./nCall him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to w",
+            "ar./nYes, call him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to ",
+            "war./n"
+        ],
+        [
+            "Yes, call him drunken Ira Hayes, but his land",
+            " is sti",
+            "ll as dry,",
+            "/n"
+        ],
+        [
+            "And his ghost is lying thirsty In the dit",
+            "ch whe",
+            "re Ira died.",
+            "/nCall him "
+        ],
+        [
+            "drunken ",
+            "Ira Ha",
+            "yes/nHe won't "
+        ],
+        [
+            "answer",
+            " anymor",
+            "e,/nNot the "
+        ],
+        [
+            "whiskey-drinking Indian/nOr the "
+        ],
+        [
+            "Marine who went to w",
+            "ar."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "EBwUQ_yuIjM",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

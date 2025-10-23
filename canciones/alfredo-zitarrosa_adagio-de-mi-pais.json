@@ -1,1 +1,341 @@
-{"cancion": "adagio-de-mi-pais", "banda": "alfredo-zitarrosa", "escala": "Bm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm", "F#7", "Bm"]}, {"nombre": "parte2", "acordes": ["D"]}, {"nombre": "parte3", "acordes": ["A"]}, {"nombre": "parte4", "acordes": ["G"]}], "orden_partes": [0, 1, 2, 1, 3, 1, 2, 1, 3, 1, 2, 1, 2, 0, 1, 2, 0, 1, 2, 1, 3, 1, 2, 1, 3, 2, 2, 1, 2, 0, 1, 2, 0, 1, 2, 1, 3, 1, 2, 1, 3, 1, 2, 1, 2, 1, 2, 0, 1, 2, 0, 1, 2, 1, 3, 1, 2, 1, 3, 1, 2, 1, 2, 0, 1, 2, 1, 3, 1, 2, 1, 3, 1, 2, 1, 2, 1, 2, 1, 1, 2, 1, 3, 1, 2, 1, 2, 1, 2, 1]}, "letras": [["En mi pa", "\u00eds, que tr", "isteza /nLa p"], ["obre", "za y el rencor /n"], ["Dice m", "i padre que ", "ya llegar\u00e1 /nDesde "], ["el fondo d", "el tiempo otro tiempo /nY me"], [" dice que el", " sol brillar\u00e1 /nSobre un"], [" pueblo que sue\u00f1a /nLabr"], ["ando su verd", "e solar /n"], ["En mi pa", "\u00eds, que tr", "isteza /nLa p"], ["obr", "eza y el rencor. /n"], ["Tu no pe", "diste la gu", "erra /nMadr"], ["e ti", "erra, yo lo s\u00e9 /n"], ["Dice m", "i padre que ", "un solo traidor /nPuede "], ["con mil valientes /nEl sie"], ["nte que e", "l pueblo /nEn su inm"], ["enso dolor /nHoy "], ["se niega a beber /nEn la"], [" fuente", " clara del honor /n"], ["Tu no pe", "diste la gu", "erra /nMadr"], ["e ti", "erra, yo lo s\u00e9. /n"], ["En mi pa", "\u00eds somos", " duros /nEl fut"], ["uro ", "lo dir\u00e1 /n"], ["Canta ", "mi pueblo un", "a canci\u00f3n de paz /nDetr\u00e1s"], [" de cada ", "puerta /nEst\u00e1"], [" alerta mi p", "ueblo /nY ya nadi"], ["e podr\u00e1 /n"], ["Silenciar su", " canci\u00f3n /nY ma"], ["\u00f1ana ", "tambi\u00e9n cantar\u00e1 /n"], ["En mi pa", "\u00eds somos", " duros /nEl fut"], ["uro ", "lo dir\u00e1 /n"], ["En mi pa", "\u00eds que tib", "ieza /nCuan"], ["do e", "mpieza a amanecer /n"], ["Dice m", "i pueblo que", " puede leer /nEn su m"], ["ano de o", "brero el destino /nY qu"], ["e no hay adi", "vino ni Rey /nQue le pu"], ["eda marcar e", "l camino /nQue "], ["va a recorrer /n"], ["En mi pa", "\u00eds que tib", "ieza /nCuan"], ["do e", "mpieza a amanecer /n"], ["En mi ", "pa\u00eds somos mi", "les y miles /n"], ["De l\u00e1grima", "s y fusiles /nUn p"], ["u\u00f1o y un canto v", "ibrante /nUna "], ["llama encendida, un", " gigante /nQue "], ["grita: a", "delant", "e, a", "delante. /n"], ["En mi ", "pa\u00eds b", "rillar\u00e1 /nYo lo"], [" s\u00e9 e", "l sol del pueblo /nArd"], ["er\u00e1 nue", "vamente /nAlum"], ["brando a", " mi ", "tierr", "a."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "LYifzzIRSXg", "delay": 0}]}
+{
+    "cancion": "adagio-de-mi-pais",
+    "banda": "alfredo-zitarrosa",
+    "escala": "Bm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "F#7",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            3,
+            2,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "En mi pa",
+            "ís, que tr",
+            "isteza /nLa p"
+        ],
+        [
+            "obre",
+            "za y el rencor /n"
+        ],
+        [
+            "Dice m",
+            "i padre que ",
+            "ya llegará /nDesde "
+        ],
+        [
+            "el fondo d",
+            "el tiempo otro tiempo /nY me"
+        ],
+        [
+            " dice que el",
+            " sol brillará /nSobre un"
+        ],
+        [
+            " pueblo que sueña /nLabr"
+        ],
+        [
+            "ando su verd",
+            "e solar /n"
+        ],
+        [
+            "En mi pa",
+            "ís, que tr",
+            "isteza /nLa p"
+        ],
+        [
+            "obr",
+            "eza y el rencor. /n"
+        ],
+        [
+            "Tu no pe",
+            "diste la gu",
+            "erra /nMadr"
+        ],
+        [
+            "e ti",
+            "erra, yo lo sé /n"
+        ],
+        [
+            "Dice m",
+            "i padre que ",
+            "un solo traidor /nPuede "
+        ],
+        [
+            "con mil valientes /nEl sie"
+        ],
+        [
+            "nte que e",
+            "l pueblo /nEn su inm"
+        ],
+        [
+            "enso dolor /nHoy "
+        ],
+        [
+            "se niega a beber /nEn la"
+        ],
+        [
+            " fuente",
+            " clara del honor /n"
+        ],
+        [
+            "Tu no pe",
+            "diste la gu",
+            "erra /nMadr"
+        ],
+        [
+            "e ti",
+            "erra, yo lo sé. /n"
+        ],
+        [
+            "En mi pa",
+            "ís somos",
+            " duros /nEl fut"
+        ],
+        [
+            "uro ",
+            "lo dirá /n"
+        ],
+        [
+            "Canta ",
+            "mi pueblo un",
+            "a canción de paz /nDetrás"
+        ],
+        [
+            " de cada ",
+            "puerta /nEstá"
+        ],
+        [
+            " alerta mi p",
+            "ueblo /nY ya nadi"
+        ],
+        [
+            "e podrá /n"
+        ],
+        [
+            "Silenciar su",
+            " canción /nY ma"
+        ],
+        [
+            "ñana ",
+            "también cantará /n"
+        ],
+        [
+            "En mi pa",
+            "ís somos",
+            " duros /nEl fut"
+        ],
+        [
+            "uro ",
+            "lo dirá /n"
+        ],
+        [
+            "En mi pa",
+            "ís que tib",
+            "ieza /nCuan"
+        ],
+        [
+            "do e",
+            "mpieza a amanecer /n"
+        ],
+        [
+            "Dice m",
+            "i pueblo que",
+            " puede leer /nEn su m"
+        ],
+        [
+            "ano de o",
+            "brero el destino /nY qu"
+        ],
+        [
+            "e no hay adi",
+            "vino ni Rey /nQue le pu"
+        ],
+        [
+            "eda marcar e",
+            "l camino /nQue "
+        ],
+        [
+            "va a recorrer /n"
+        ],
+        [
+            "En mi pa",
+            "ís que tib",
+            "ieza /nCuan"
+        ],
+        [
+            "do e",
+            "mpieza a amanecer /n"
+        ],
+        [
+            "En mi ",
+            "país somos mi",
+            "les y miles /n"
+        ],
+        [
+            "De lágrima",
+            "s y fusiles /nUn p"
+        ],
+        [
+            "uño y un canto v",
+            "ibrante /nUna "
+        ],
+        [
+            "llama encendida, un",
+            " gigante /nQue "
+        ],
+        [
+            "grita: a",
+            "delant",
+            "e, a",
+            "delante. /n"
+        ],
+        [
+            "En mi ",
+            "país b",
+            "rillará /nYo lo"
+        ],
+        [
+            " sé e",
+            "l sol del pueblo /nArd"
+        ],
+        [
+            "erá nue",
+            "vamente /nAlum"
+        ],
+        [
+            "brando a",
+            " mi ",
+            "tierr",
+            "a."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LYifzzIRSXg",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}
