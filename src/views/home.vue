@@ -4,7 +4,7 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
-import { ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
@@ -33,23 +33,30 @@ CancionManager.getInstance()
   .GetDBIndex()
   .then((indices: ItemIndiceCancion[]) => {
     CancionesLocalstorage.value = indices
-    refViendoCanciones.value = indices
+    
   })
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
 refUltimasCanciones.value = ultimasCanciones.canciones
-const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 const refViendoCanciones = ref<ItemIndiceCancion[]>([])
+const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
-refViendoCanciones.value = ultimasCanciones.canciones
 const textoMostrando = ref(
-  'Ultimas ' + refViendoCanciones.value.length + ' canciones',
+  refViendoCanciones.value.length === 0 ? '' : 'Ultimas ' + refViendoCanciones.value.length + ' canciones',
 )
 
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }
+
+onMounted(() => {
+  refViendoCanciones.value = refUltimasCanciones.value
+  textoMostrando.value = refViendoCanciones.value.length === 0 ? '' : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
+})
+
+
+
 
 function clickBorrarLista(cancion: OrigenCancion) {
   refViendoCanciones.value = refViendoCanciones.value.filter(
@@ -113,6 +120,8 @@ function confirmarNuevaLista() {
     })
   }
 }
+
+  
 
 function renombrarLista() {
   if (!selectedLista.value) {
@@ -351,7 +360,8 @@ function borrarLista() {
       <p class="primer-parrafo" v-if="viendo === 'inicio'">
         {{ textoMostrando }}
       </p>
-      <tablacanciones
+      
+      <tablacanciones v-if="textoMostrando != ''"
         :canciones="refViendoCanciones"
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
