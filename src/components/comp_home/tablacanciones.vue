@@ -48,13 +48,12 @@ function AgregarALista(index: number) {
 </script>
 
 <template>
-  <table style="width: 90%; margin-top: 20px; border: 1px solid">
+  <table style="width: 85%; margin-top: 20px; border: 1px solid">
     <thead>
       <tr>
         <template v-if="!viendoFiltroTabla">
           <th>Tema</th>
           <th>Banda</th>
-          <th>Duracion</th>
           <th>Escala</th>
         </template>
         <template v-if="viendoFiltroTabla">
@@ -67,7 +66,7 @@ function AgregarALista(index: number) {
             @click="viendoFiltroTabla = !viendoFiltroTabla"
             style="cursor: pointer"
           >
-            [ {{ viendoFiltroTabla ? '-' : 'FILTRAR' }} ]
+            {{ viendoFiltroTabla ? '❌' : '🔍' }}
           </span>
         </th>
       </tr>
@@ -82,7 +81,13 @@ function AgregarALista(index: number) {
         <tr @click="VerDetalle(index)">
           <td>{{ arreglartexto(cancion.cancion) }}</td>
           <td>{{ arreglartexto(cancion.banda) }}</td>
-          <td>
+
+          <td>{{ cancion.escala }}</td>
+          <td></td>
+        </tr>
+        <tr v-if="viendoDetalle === index" data-detail>
+          <td colspan="5" style="text-align: right">
+            Duracion:
             {{
               tiempo.formatSegundos(
                 (60 / cancion.bpm) *
@@ -90,12 +95,6 @@ function AgregarALista(index: number) {
                   cancion.compasCantidad,
               )
             }}
-          </td>
-          <td>{{ cancion.escala }}</td>
-          <td></td>
-        </tr>
-        <tr v-if="viendoDetalle === index" data-detail>
-          <td colspan="5" style="text-align: right">
             <span @click="Reproducir(index)">[Tocar]</span>
             <span @click="Borrar(index)">[Borrar]</span>
             <span @click="AgregarALista(index)">[Agregar a Lista]</span>
