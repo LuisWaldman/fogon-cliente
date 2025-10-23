@@ -237,11 +237,22 @@ function VerFiltros() {
     </div>
 
     <div
+      style="
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+      "
+    >
+      <button @click="buscarCanciones()">Buscar</button>
+      <button @click="VerFiltros()">Filtros</button>
+    </div>
+
+    <div
       v-if="viendoFiltros"
       style="
         width: 100%;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
       "
@@ -275,6 +286,35 @@ function VerFiltros() {
         </div>
       </div>
 
+      
+      <!-- Grupo de Bandas -->
+      <div class="filtro" :class="{ seleccionado: filtroGrupo }">
+        <div class="filtro-header" @click="filtroGrupo = !filtroGrupo">
+          Etiquetas
+        </div>
+        <div v-if="filtroGrupo" class="dropdown-container">
+          <div
+            class="dropdown-header"
+            @click="dropdownGrupoAbierto = !dropdownGrupoAbierto"
+          >
+            Seleccionar ({{ filtroGrupoSeleccionado.length }}) ▼
+          </div>
+          <div v-if="dropdownGrupoAbierto" class="dropdown-content">
+            <label
+              v-for="opcion in opcionesGrupo"
+              :key="opcion.value"
+              class="checkbox-item"
+            >
+              <input
+                type="checkbox"
+                :checked="filtroGrupoSeleccionado.includes(opcion.value)"
+                @change="toggleCheckbox(filtroGrupoSeleccionado, opcion.value)"
+              />
+              {{ opcion.label }}
+            </label>
+          </div>
+        </div>
+      </div>
       <!-- Tempo -->
       <div class="filtro" :class="{ seleccionado: filtroTempo }">
         <div class="filtro-header" @click="filtroTempo = !filtroTempo">
@@ -467,46 +507,6 @@ function VerFiltros() {
         </div>
       </div>
 
-      <!-- Grupo de Bandas -->
-      <div class="filtro" :class="{ seleccionado: filtroGrupo }">
-        <div class="filtro-header" @click="filtroGrupo = !filtroGrupo">
-          Etiquetas
-        </div>
-        <div v-if="filtroGrupo" class="dropdown-container">
-          <div
-            class="dropdown-header"
-            @click="dropdownGrupoAbierto = !dropdownGrupoAbierto"
-          >
-            Seleccionar ({{ filtroGrupoSeleccionado.length }}) ▼
-          </div>
-          <div v-if="dropdownGrupoAbierto" class="dropdown-content">
-            <label
-              v-for="opcion in opcionesGrupo"
-              :key="opcion.value"
-              class="checkbox-item"
-            >
-              <input
-                type="checkbox"
-                :checked="filtroGrupoSeleccionado.includes(opcion.value)"
-                @change="toggleCheckbox(filtroGrupoSeleccionado, opcion.value)"
-              />
-              {{ opcion.label }}
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 10px;
-      "
-    >
-      <button @click="buscarCanciones()">Buscar</button>
-      <button @click="VerFiltros()">Filtros</button>
     </div>
 
     <div
@@ -526,22 +526,26 @@ function VerFiltros() {
 }
 
 .filtro {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 4px 8px;
   border-radius: 6px;
   cursor: default;
   position: relative;
-  min-width: 200px;
+  min-width: 120px;
+  border: 1px solid transparent;
 }
 .filtro .filtro-header {
   font-weight: 600;
   cursor: pointer;
+  font-size: 14px;
 }
 .filtro.seleccionado {
   background-color: rgba(138, 43, 226);
   border: 1px solid rgba(138, 43, 226, 0.4);
   color: white;
+  padding: 6px 12px;
+  min-width: 200px;
 }
 
 /* Dropdown styles */
