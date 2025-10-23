@@ -34,17 +34,24 @@ export class ListasServerManager {
   async AddCancion(
     nameLista: string,
     elemento: ItemIndiceCancion,
-  ): Promise<void> {}
+  ): Promise<void> {
+    console.log('AddCancion:', nameLista, elemento)
+  }
 
-  async RemoveCancion(nameLista: string, index: number): Promise<void> {}
+  async RemoveCancion(nameLista: string, index: number): Promise<void> {
+    console.log('RemoveCancion:', nameLista, index)
+  }
 
   async ReorderCancion(
     nameLista: string,
     index: number,
     orden: number,
-  ): Promise<void> {}
+  ): Promise<void> {
+    console.log('ReorderCancion:', nameLista, index, orden)
+  }
 
   async GetCanciones(nameLista: string): Promise<ItemIndiceCancion[]> {
+    console.log('GetCanciones:', nameLista)
     return []
   }
 }

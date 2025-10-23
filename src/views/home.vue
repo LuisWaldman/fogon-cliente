@@ -10,7 +10,6 @@ import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
 
-
 const listasManager: ListasDBManager = new ListasDBManager()
 const selectedLista = ref<string>('')
 const nuevaLista = ref<string>('')
@@ -107,7 +106,6 @@ function confirmarNuevaLista() {
       selectedLista.value = nuevaLista.value
       nuevaLista.value = ''
       addingLista.value = false
-      
     })
   }
 }
@@ -135,9 +133,12 @@ function confirmarRenombrarLista() {
     alert('Ya existe una lista con ese nombre.')
     return
   }
-if (viendoOrigen.value === 'server') {
+  if (viendoOrigen.value === 'server') {
     CancionManager.getInstance()
-      .listasServerManager?.RenombrarLista(selectedLista.value, nuevaLista.value)
+      .listasServerManager?.RenombrarLista(
+        selectedLista.value,
+        nuevaLista.value,
+      )
       .then(() => {
         const index = appStore.listasEnServer.indexOf(selectedLista.value)
         if (index !== -1) {
@@ -151,9 +152,8 @@ if (viendoOrigen.value === 'server') {
       .catch(() => {
         alert('Error al renombrar la lista.')
       })
-    return 
-
-}
+    return
+  }
   const oldName = selectedLista.value
   listasManager
     .RenombrarLista(oldName, nuevaLista.value)
@@ -192,7 +192,6 @@ function borrarLista() {
       `¿Estás seguro de que deseas borrar la lista "${selectedLista.value}"?`,
     )
   ) {
-
     if (viendoOrigen.value === 'server') {
       CancionManager.getInstance()
         .listasServerManager?.BorrarLista(selectedLista.value)
@@ -205,7 +204,6 @@ function borrarLista() {
         })
       return
     }
-
 
     listasManager.BorrarLista(selectedLista.value).then(() => {
       ListasEnStorage.value = ListasEnStorage.value.filter(
@@ -238,7 +236,7 @@ function borrarLista() {
             class="nav-link text-white"
             :class="{ activo: viendo === 'canciones' }"
           >
-            Tus Canciones
+            Canciones
           </a>
         </div>
 
@@ -248,7 +246,7 @@ function borrarLista() {
             class="nav-link text-white"
             :class="{ activo: viendo === 'listas' }"
           >
-            Listas de Reproduccion
+            Listas
           </a>
         </div>
       </div>
@@ -331,9 +329,11 @@ function borrarLista() {
           :listasstore="ListasEnStorage"
           :listasserverstore="appStore.listasEnServer"
           @click="clickTocar(cancion.origen)"
-          @agregar="(lista, cancion) => {
-            console.log('Agregar a lista:', lista, cancion)
-          }"
+          @agregar="
+            (lista, cancion) => {
+              console.log('Agregar a lista:', lista, cancion)
+            }
+          "
         />
       </div>
     </div>
