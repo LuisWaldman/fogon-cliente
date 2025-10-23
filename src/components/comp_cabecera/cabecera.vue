@@ -332,8 +332,7 @@ function arreglartexto(texto: string): string {
   .dropdown-superior-derecha {
     position: relative;
     top: auto;
-    right: auto;
-    margin-left: 10px;
+    margin-left: 30px;
     flex-shrink: 0;
   }
 }

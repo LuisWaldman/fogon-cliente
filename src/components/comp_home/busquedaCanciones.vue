@@ -250,12 +250,7 @@ function VerFiltros() {
 
     <div
       v-if="viendoFiltros"
-      style="
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-      "
+      style="width: 100%; display: flex; flex-wrap: wrap; gap: 15px"
     >
       <!-- Escala -->
       <div class="filtro" :class="{ seleccionado: filtroEscala }">
@@ -286,7 +281,6 @@ function VerFiltros() {
         </div>
       </div>
 
-      
       <!-- Grupo de Bandas -->
       <div class="filtro" :class="{ seleccionado: filtroGrupo }">
         <div class="filtro-header" @click="filtroGrupo = !filtroGrupo">
@@ -506,7 +500,6 @@ function VerFiltros() {
           </div>
         </div>
       </div>
-
     </div>
 
     <div

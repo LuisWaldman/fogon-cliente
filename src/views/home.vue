@@ -2,7 +2,6 @@
 import { useAppStore } from '../stores/appStore'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
-import cancionComp from '../components/comp_home/cancion.vue'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
 import { ref } from 'vue'
@@ -28,35 +27,40 @@ listasManager.initDB().then(() => {
 })
 
 const appStore = useAppStore()
-const ViendoCanciones = ref<ItemIndiceCancion[]>([])
 const CancionesLocalstorage = ref<ItemIndiceCancion[]>([])
 
 CancionManager.getInstance()
   .GetDBIndex()
   .then((indices: ItemIndiceCancion[]) => {
     CancionesLocalstorage.value = indices
-    ViendoCanciones.value = indices
+    refViendoCanciones.value = indices
   })
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
 refUltimasCanciones.value = ultimasCanciones.canciones
 const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
-const totalUltimas = ref(0)
-totalUltimas.value = ultimasCanciones.canciones.length
+const refViendoCanciones = ref<ItemIndiceCancion[]>([])
+
+refViendoCanciones.value = ultimasCanciones.canciones
+const textoMostrando = ref(
+  'Ultimas ' + refViendoCanciones.value.length + ' canciones',
+)
 
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }
 
 function clickBorrarLista(cancion: OrigenCancion) {
-  ViendoCanciones.value = ViendoCanciones.value.filter(
+  refViendoCanciones.value = refViendoCanciones.value.filter(
     (c) => c.origen !== cancion,
   )
 }
 
 function handleResultados(canciones: ItemIndiceCancion[]) {
   refResultadoCanciones.value = canciones
+  textoMostrando.value = 'Mostrando ' + canciones.length + '  de búsqueda'
+  refViendoCanciones.value = canciones
 }
 
 const viendo = ref('inicio')
@@ -68,13 +72,13 @@ function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
   if (viendoOrigen.value === 'localstorage') {
     if (viendo.value === 'canciones') {
-      ViendoCanciones.value = CancionesLocalstorage.value
+      refViendoCanciones.value = CancionesLocalstorage.value
     } else if (viendo.value === 'listas') {
       viendoListas.value = ListasEnStorage.value
     }
   } else if (viendoOrigen.value === 'server') {
     if (viendo.value === 'canciones') {
-      ViendoCanciones.value = appStore.IndicesServer
+      refViendoCanciones.value = appStore.IndicesServer
     } else if (viendo.value === 'listas') {
       // Aquí podrías implementar la lógica para obtener las listas del servidor
       viendoListas.value = appStore.listasEnServer
@@ -297,84 +301,62 @@ function borrarLista() {
         v-if="viendo === 'inicio'"
       />
 
-      <!-- Mostrar resultados de búsqueda -->
-      <div
-        style="width: 100%"
-        v-if="refResultadoCanciones.length > 0 && viendo === 'inicio'"
-      >
-        <div style="display: flex; flex-wrap: wrap">
-          <cancionComp
-            v-for="(cancion, index) in refResultadoCanciones"
-            :key="index"
-            :cancion="cancion"
-            :listasstore="ListasEnStorage"
-            :listasserverstore="appStore.listasEnServer"
-            @click="clickTocar(cancion.origen)"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Últimas canciones -->
-    <div
-      class="ultimasCanciones"
-      v-if="refUltimasCanciones.length > 0 && viendo === 'inicio'"
-    >
-      <p class="primer-parrafo">Ultimas {{ totalUltimas }} Canciones</p>
-      <div style="display: flex; flex-wrap: wrap">
-        <cancionComp
-          v-for="(cancion, index) in refUltimasCanciones"
-          :key="index"
-          :cancion="cancion"
-          :listasstore="ListasEnStorage"
-          :listasserverstore="appStore.listasEnServer"
-          @click="clickTocar(cancion.origen)"
-          @agregar="
-            (lista, cancion) => {
-              console.log('Agregar a lista:', lista, cancion)
-            }
-          "
-        />
-      </div>
-    </div>
-    <div style="width: 100%" v-if="viendo === 'listas'">
-      <div>
-        <select v-model="selectedLista" style="width: 80%">
-          <option
-            v-for="(lista, index) in viendoListas"
-            :key="index"
-            :value="lista"
-          >
-            {{ lista }}
-          </option>
-        </select>
-        <button @click="addingLista = true">Nueva Lista</button>
-        <button @click="borrarLista">Borrar Lista</button>
-        <button @click="renombrarLista">Renombrar Lista</button>
-      </div>
-      <div v-if="addingLista || renamingLista">
-        <input
-          v-model="nuevaLista"
-          :placeholder="
-            renamingLista ? 'Nuevo nombre de la lista' : 'Nueva lista'
-          "
-        />
-        <button
-          @click="
-            renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()
+      <div style="width: 90%" v-if="viendo === 'listas'">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
           "
         >
-          {{ renamingLista ? 'Renombrar' : 'Agregar' }}
-        </button>
-        <button @click="cancelarOperacion">Cancelar</button>
+          <select v-model="selectedLista" style="width: 70%">
+            <option
+              v-for="(lista, index) in viendoListas"
+              :key="index"
+              :value="lista"
+            >
+              {{ lista }}
+            </option>
+          </select>
+          <div style="margin-left: auto">
+            <button @click="addingLista = true">
+              ➕<span class="button-text"> Agregar</span>
+            </button>
+            <button @click="renombrarLista">
+              🔄<span class="button-text"> Renombrar</span>
+            </button>
+            <button @click="borrarLista">
+              🗑<span class="button-text"> Borrar</span>
+            </button>
+          </div>
+        </div>
+        <div v-if="addingLista || renamingLista">
+          <input
+            v-model="nuevaLista"
+            :placeholder="
+              renamingLista ? 'Nuevo nombre de la lista' : 'Nueva lista'
+            "
+          />
+          <button
+            @click="
+              renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()
+            "
+          >
+            {{ renamingLista ? 'Renombrar' : 'Agregar' }}
+          </button>
+          <button @click="cancelarOperacion">Cancelar</button>
+        </div>
       </div>
+
+      <p class="primer-parrafo" v-if="viendo === 'inicio'">
+        {{ textoMostrando }}
+      </p>
+      <tablacanciones
+        :canciones="refViendoCanciones"
+        @borrar="clickBorrarLista"
+        @tocar="clickTocar"
+      />
     </div>
-    <tablacanciones
-      v-if="viendo === 'canciones'"
-      :canciones="ViendoCanciones"
-      @borrar="clickBorrarLista"
-      @tocar="clickTocar"
-    />
   </div>
 </template>
 
@@ -404,5 +386,12 @@ function borrarLista() {
 .activo {
   color: white;
   background-color: blueviolet;
+}
+
+/* Hide button text on mobile devices */
+@media (max-width: 768px) {
+  .button-text {
+    display: none;
+  }
 }
 </style>
