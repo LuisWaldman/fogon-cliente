@@ -1,1 +1,334 @@
-{"cancion": "Desafio-do-Malandro", "banda": "chico-buarque", "escala": "Dm7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm7", "G7/B", "G7", "C", "Cm", "Bm", "E7", "Am7", "D7", "G", "G", "Dm7", "G7", "C", "B7", "Em7", "A7", "Am7", "D7", "Am7", "D7", "G", "Dm7", "G7", "C", "B7", "Em7", "Em/D", "A7/C#", "D7", "G", "G", "Dm7", "G7", "C", "B7", "Em7", "A7", "Am7", "D7", "Am7", "D7", "G", "Dm7", "G7", "C", "B7", "Em7", "Em/D", "A7/C#", "D7", "Dm7", "Dm7", "G7", "C", "B7", "E7", "Am7", "Fm7", "Bb7", "Eb", "Eb7/Db", "A7/C#", "D7", "D7", "Bm7", "G7", "Cm6", "Bm7(5-)", "G7(9)", "C", "Em7", "Am7", "A#\u00b0", "G/B", "E7", "A7", "D7", "G", "G", "Dm7", "G7", "C", "B7", "Em7", "A7", "Am7", "D7", "Am7", "D7", "G", "Dm7", "G7", "C", "B7", "Em7", "Em/D", "A7/C#", "D7", "G"]}], "orden_partes": [0]}, "letras": [[], ["c\u00ea t\u00e1 pensando qu", "e \u00e9/nDa alta s"], ["ociedade", "/nOu vai montar expos"], ["i\u00e7\u00e3o/nDe souvenir de g"], ["ringo/nOu foi fazer a f\u00e9 no "], ["bingo/nEm ch\u00e1 de cari"], ["dade/nEu n\u00e3o sei "], ["n\u00e3o , e", "u n\u00e3o sei n\u00e3", "o/nS\u00f3"], [" sei que voc\u00ea vem com five o'", "clock/nVery we"], ["ll, my fri", "end/nA carriola leva um c"], ["hoque/nNego n\u00e3o en"], ["tende/nE deita e "], ["rola e sai coment", "ando/nQue grande m"], ["alandro \u00e9 vo", "c\u00ea/n- Vo"], ["c\u00ea t\u00e1 fazendo ", "piada/nOu vai qu"], ["erer que eu chore", "/nA sua estampa eu j\u00e1 co"], ["nhe\u00e7o/nDo museu do imp"], ["\u00e9rio/nOu mausol\u00e9u de cemi"], ["t\u00e9rio/nOu feira de folc"], ["lore/nEu n\u00e3o sei "], ["n\u00e3o , e", "u n\u00e3o sei n", "\u00e3o/nS\u00f3"], [" sei que voc\u00ea vem com reco-", "reco/nBerim"], ["bau,faro", "fa/nA curriola tem um t"], ["reco/nNego faz gal"], ["hofa/nE deita e r"], ["ola e sai coment", "ando/nQue grande mala"], ["ndro \u00e9 v", "oc\u00ea/nV"], ["oc\u00ea que era um suj", "eito tipo/nJovia"], ["l Agora at\u00e9 mudou de nome/nVoc"], [" infelizme", "nte continua/nIgual"], [" Fala bonito e passa fome/nVai ve"], ["r que ainda vai", " virar trabalhador ", "Que/nHo"], ["rror/nTraba"], ["lho a minha nega e morro de ca", "lor/nFal"], ["ta malandro se casar e ser av\u00f4/nV"], ["oc\u00ea n\u00e3o sabe ", "nem o que \u00e9 o amor/nMa"], ["landro infeliz/nA"], ["mor igual ao s", "eu, malandro tem/nQuar"], ["enta e n\u00e3o d", "iz/n Respe"], ["ite uma mulh", "er que \u00e9 boa e me suste", "nta/n Ela j\u00e1 foi aposen"], ["tada/n Ela me alisa e me alime"], ["nta/n A bolsa dela t\u00e1 fur"], ["ada/n E a sua m\u00e3e t\u00e1 na "], ["rua/nEu n"], ["\u00e3o vou sujar a nava", "lha/nNem sa"], ["ir no tapa", "/n mais sutil sumir da "], ["Lapa/nEu n\u00e3o jogo a to"], ["alha/nOnde \u00e9 que acaba essa bat"], ["alha?/nEm fundo de ca"], ["\u00e7apa/nEu n\u00e3o sei "], ["n\u00e3o, ", "eu n\u00e3o sei ", "n\u00e3o/nS\u00f3 "], ["sei que voc\u00ea perde a compo", "stura quando/nEu p"], ["ego o tac", "o/nA curriola n\u00e3o s"], ["egura/nNego co\u00e7a o "], ["saco/nE deita e "], ["rola e sai coment", "ando/nQue grande mal"], ["andro \u00e9 vo", "c\u00ea"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "FuN853WAJu0", "delay": 0}]}
+{
+    "cancion": "Desafio-do-Malandro",
+    "banda": "chico-buarque",
+    "escala": "Dm7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm7",
+                    "G7/B",
+                    "G7",
+                    "C",
+                    "Cm",
+                    "Bm",
+                    "E7",
+                    "Am7",
+                    "D7",
+                    "G",
+                    "G",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "B7",
+                    "Em7",
+                    "A7",
+                    "Am7",
+                    "D7",
+                    "Am7",
+                    "D7",
+                    "G",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "B7",
+                    "Em7",
+                    "Em/D",
+                    "A7/C#",
+                    "D7",
+                    "G",
+                    "G",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "B7",
+                    "Em7",
+                    "A7",
+                    "Am7",
+                    "D7",
+                    "Am7",
+                    "D7",
+                    "G",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "B7",
+                    "Em7",
+                    "Em/D",
+                    "A7/C#",
+                    "D7",
+                    "Dm7",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "B7",
+                    "E7",
+                    "Am7",
+                    "Fm7",
+                    "Bb7",
+                    "Eb",
+                    "Eb7/Db",
+                    "A7/C#",
+                    "D7",
+                    "D7",
+                    "Bm7",
+                    "G7",
+                    "Cm6",
+                    "Bm7(5-)",
+                    "G7(9)",
+                    "C",
+                    "Em7",
+                    "Am7",
+                    "A#°",
+                    "G/B",
+                    "E7",
+                    "A7",
+                    "D7",
+                    "G",
+                    "G",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "B7",
+                    "Em7",
+                    "A7",
+                    "Am7",
+                    "D7",
+                    "Am7",
+                    "D7",
+                    "G",
+                    "Dm7",
+                    "G7",
+                    "C",
+                    "B7",
+                    "Em7",
+                    "Em/D",
+                    "A7/C#",
+                    "D7",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "cê tá pensando qu",
+            "e é/nDa alta s"
+        ],
+        [
+            "ociedade",
+            "/nOu vai montar expos"
+        ],
+        [
+            "ição/nDe souvenir de g"
+        ],
+        [
+            "ringo/nOu foi fazer a fé no "
+        ],
+        [
+            "bingo/nEm chá de cari"
+        ],
+        [
+            "dade/nEu não sei "
+        ],
+        [
+            "não , e",
+            "u não sei nã",
+            "o/nSó"
+        ],
+        [
+            " sei que você vem com five o'",
+            "clock/nVery we"
+        ],
+        [
+            "ll, my fri",
+            "end/nA carriola leva um c"
+        ],
+        [
+            "hoque/nNego não en"
+        ],
+        [
+            "tende/nE deita e "
+        ],
+        [
+            "rola e sai coment",
+            "ando/nQue grande m"
+        ],
+        [
+            "alandro é vo",
+            "cê/n- Vo"
+        ],
+        [
+            "cê tá fazendo ",
+            "piada/nOu vai qu"
+        ],
+        [
+            "erer que eu chore",
+            "/nA sua estampa eu já co"
+        ],
+        [
+            "nheço/nDo museu do imp"
+        ],
+        [
+            "ério/nOu mausoléu de cemi"
+        ],
+        [
+            "tério/nOu feira de folc"
+        ],
+        [
+            "lore/nEu não sei "
+        ],
+        [
+            "não , e",
+            "u não sei n",
+            "ão/nSó"
+        ],
+        [
+            " sei que você vem com reco-",
+            "reco/nBerim"
+        ],
+        [
+            "bau,faro",
+            "fa/nA curriola tem um t"
+        ],
+        [
+            "reco/nNego faz gal"
+        ],
+        [
+            "hofa/nE deita e r"
+        ],
+        [
+            "ola e sai coment",
+            "ando/nQue grande mala"
+        ],
+        [
+            "ndro é v",
+            "ocê/nV"
+        ],
+        [
+            "ocê que era um suj",
+            "eito tipo/nJovia"
+        ],
+        [
+            "l Agora até mudou de nome/nVoc"
+        ],
+        [
+            " infelizme",
+            "nte continua/nIgual"
+        ],
+        [
+            " Fala bonito e passa fome/nVai ve"
+        ],
+        [
+            "r que ainda vai",
+            " virar trabalhador ",
+            "Que/nHo"
+        ],
+        [
+            "rror/nTraba"
+        ],
+        [
+            "lho a minha nega e morro de ca",
+            "lor/nFal"
+        ],
+        [
+            "ta malandro se casar e ser avô/nV"
+        ],
+        [
+            "ocê não sabe ",
+            "nem o que é o amor/nMa"
+        ],
+        [
+            "landro infeliz/nA"
+        ],
+        [
+            "mor igual ao s",
+            "eu, malandro tem/nQuar"
+        ],
+        [
+            "enta e não d",
+            "iz/n Respe"
+        ],
+        [
+            "ite uma mulh",
+            "er que é boa e me suste",
+            "nta/n Ela já foi aposen"
+        ],
+        [
+            "tada/n Ela me alisa e me alime"
+        ],
+        [
+            "nta/n A bolsa dela tá fur"
+        ],
+        [
+            "ada/n E a sua mãe tá na "
+        ],
+        [
+            "rua/nEu n"
+        ],
+        [
+            "ão vou sujar a nava",
+            "lha/nNem sa"
+        ],
+        [
+            "ir no tapa",
+            "/n mais sutil sumir da "
+        ],
+        [
+            "Lapa/nEu não jogo a to"
+        ],
+        [
+            "alha/nOnde é que acaba essa bat"
+        ],
+        [
+            "alha?/nEm fundo de ca"
+        ],
+        [
+            "çapa/nEu não sei "
+        ],
+        [
+            "não, ",
+            "eu não sei ",
+            "não/nSó "
+        ],
+        [
+            "sei que você perde a compo",
+            "stura quando/nEu p"
+        ],
+        [
+            "ego o tac",
+            "o/nA curriola não s"
+        ],
+        [
+            "egura/nNego coça o "
+        ],
+        [
+            "saco/nE deita e "
+        ],
+        [
+            "rola e sai coment",
+            "ando/nQue grande mal"
+        ],
+        [
+            "andro é vo",
+            "cê"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "FuN853WAJu0",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

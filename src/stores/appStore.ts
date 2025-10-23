@@ -15,6 +15,7 @@ import type { UserSesion } from '../modelo/userSesion'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { EstadosAplicacion } from '../EstadosAplicacion'
 import type { MediaVista } from '../modelo/reproduccion/MediaVista'
+import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
@@ -35,7 +36,7 @@ export const useAppStore = defineStore('app', () => {
       new Letra([]),
     ),
   )
-
+  const listasEnServer = ref<string[]>([])
   const MediaVisas = ref<MediaVista[]>([])
   const estadosApp = ref<EstadosAplicacion>(new EstadosAplicacion())
   const editandocancion = ref<Cancion>(
@@ -52,7 +53,7 @@ export const useAppStore = defineStore('app', () => {
   const cancionModificada = ref<boolean>(false)
 
   const sesiones = ref<Sesion[]>([] as Sesion[])
-  const listaCanciones = ref<itemLista[]>([])
+  const listaReproduccion = ref<itemLista[]>([])
   const mensajes = ref<string[]>([])
   const nroCancion = ref<number>(1)
   const compas = ref<number>(-1)
@@ -61,6 +62,8 @@ export const useAppStore = defineStore('app', () => {
   const noticias = ref<Noticia[]>([])
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
   const estado = ref<string>('No iniciado')
+  const listaIndices = ref<ItemIndiceCancion[]>([])
+
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
     estado.value = nuevoEstado
@@ -84,13 +87,14 @@ export const useAppStore = defineStore('app', () => {
     usuariosSesion,
     aplicacion,
     origenCancion,
+    listasEnServer,
     origenEditando,
     errores,
     MediaVistas: MediaVisas,
     cancionModificada,
     cancion,
     editandocancion,
-    listaCanciones,
+    listaReproduccion,
     compas,
     sesion,
     estado,
@@ -105,6 +109,7 @@ export const useAppStore = defineStore('app', () => {
     noticias,
     mensajes,
     sesiones,
+    IndicesServer: listaIndices,
     actualizarEstado,
     actualizarEstadoConexion,
     actualizarEstadoReproduccion,

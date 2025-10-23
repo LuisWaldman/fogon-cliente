@@ -1,1 +1,405 @@
-{"cancion": "baile-inolvidable", "banda": "bad-bunny", "escala": "F", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "Am", "F", "Dm", "Am", "F", "Dm", "Am", "F", "Dm", "Am", "F", "Dm", "Am", "F", "Dm", "Am", "F", "Dm", "Am", "Am", "F", "Dm", "Am", "Am", "G", "Am", "E", "Am", "G", "Am", "E", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "Am", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "E", "E7", "Am", "E", "Am", "E", "Am", "E", "Am", "E", "Dm", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am", "Dm", "E", "Am", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "G", "F", "Dm", "Am", "Am", "F"]}], "orden_partes": [0]}, "letras": [["  Pensaba que contigo iba a e", "nvejecer/nEn otra vida, en otro mundo podr\u00e1"], [" ser/n"], ["En esta solo queda irme un d", "a/nY solamente verte en el "], ["atardecer/n"], ["Si me ven solo y triste, no me h", "ablen/nSi me ven solo y triste, soy "], ["culpable/n"], ["La vida es una fiesta que un d\u00eda ", "termina/nY fuiste t\u00fa mi baile inolvidable"], ["", "", "/nY fuiste t\u00fa mi baile inolvidable"], ["", "", "/n"], [], [], [], ["efr\u00e3", "o ]", "", "/n"], ["   Pensaba que co", "ntigo iba a env", "ejecer/nEn otra vida, en otro mundo "], ["podr\u00e1 ", "ser/nEn esta "], ["solo queda irme un d\u00eda", "/nY ver pa'l cielo a ver si te v"], ["eo ca", "er/n"], ["Si me ven solo y triste, no me ha", "blen/nSi me ven solo y triste, s"], ["oy cu", "lpable/n"], ["La vida es una fiesta que un d\u00eda ", "termina/nY fuiste t\u00fa mi baile"], [" inolvidable/n"], [], ["    ", " No, no te puedo olvidar/n"], ["No, no te puedo borrar/n"], ["T\u00fa me ense\u00f1aste a querer/n"], ["Me ense\u00f1aste a bailar/n"], [], ["No, no te puedo olvidar/n"], ["No, no te puedo borrar/n"], ["T\u00fa me ense\u00f1aste a querer/n"], ["Me ense\u00f1aste a bailar/n"], ["Yeah-yeah-yeah-yeah, ey/nDime c\u00f3mo le hago pa' o"], ["lvidarte/nHay un paso nuevo que quiero ens"], ["e\u00f1arte/nLo que hago es so\u00f1art"], ["e/n"], ["No, no te puedo olvidar/n"], ["No, no te puedo borrar/n"], ["T\u00fa me ense\u00f1aste a quere", "r/n"], ["C\u00f3mo t\u00fa me besabas, c\u00f3mo yo te lo hac\u00eda/n"], ["C\u00f3mo t\u00fa me mirabas, bellaquito me pon\u00eda/n"], ["Se siente feo no tenerte cerquita/nLa nueva mama bien, pero no es tu "], ["boquita", "/n"], ["Mi diabla, mi \u00e1ngel, mi loquita/n"], ["Mi diabla, mi \u00e1ngel, mi loquita, ", "ey/n"], [], ["    'T", "o suena cabr\u00f3n/n"], ["     V", "amo' a hacerlo otra ve'/n"], ["     ", "Como anoche, como anoche/n"], ["     ", " Tan-tan, ta-na-na, ta-na-na/n"], ["Aprieta, chamaquito, aprieta", "", "", "", "/n\u00a1"], ["Ah\u00ed,", " ah\u00ed", ", ah", ", va", "mo' ", "all\u00e1!/n"], ["No, no te puedo olvidar/n"], ["No, no te puedo borrar/n"], ["T\u00fa me ense\u00f1aste a q", "uerer/n"], ["Ay, yo con cualquiera me puedo acostar/nPero no con c"], ["ualquiera quiero despertar/n"], ["Solo con usted, con usted/nYo bailo con usted, na' m\u00e1s con u"], ["sted/n"], ["Un beso donde est\u00e9s, donde est\u00e9s, beb\u00e9/n"], ["No, no te puedo olvidar/n"], ["No, no te puedo borrar/n"], ["T\u00fa me ense\u00f1aste a quere", "r/n"], ["Y yo ten\u00eda muchas novia'/n"], ["Pero como t\u00fa, ninguna/n"], ["Ya no tengo mi sol, me paso en la luna/nSi te pienso, me tiro"], [" de una", "/nEh-eh,"], [" mi diabla, mi \u00e1ngel, mi loquita/n"], ["Mi diabla, mi \u00e1ngel, ", "mi loquita, eh-eh/n"], [], [], []], "medias": [{"tipo": "Youtube", "id": "a1Femq4NPxs", "delay": 0}]}
+{
+    "cancion": "baile-inolvidable",
+    "banda": "bad-bunny",
+    "escala": "F",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "G",
+                    "Am",
+                    "E",
+                    "Am",
+                    "G",
+                    "Am",
+                    "E",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "E",
+                    "E7",
+                    "Am",
+                    "E",
+                    "Am",
+                    "E",
+                    "Am",
+                    "E",
+                    "Am",
+                    "E",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "E",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "  Pensaba que contigo iba a e",
+            "nvejecer/nEn otra vida, en otro mundo podrá"
+        ],
+        [
+            " ser/n"
+        ],
+        [
+            "En esta solo queda irme un d",
+            "a/nY solamente verte en el "
+        ],
+        [
+            "atardecer/n"
+        ],
+        [
+            "Si me ven solo y triste, no me h",
+            "ablen/nSi me ven solo y triste, soy "
+        ],
+        [
+            "culpable/n"
+        ],
+        [
+            "La vida es una fiesta que un día ",
+            "termina/nY fuiste tú mi baile inolvidable"
+        ],
+        [
+            "",
+            "",
+            "/nY fuiste tú mi baile inolvidable"
+        ],
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "efrã",
+            "o ]",
+            "",
+            "/n"
+        ],
+        [
+            "   Pensaba que co",
+            "ntigo iba a env",
+            "ejecer/nEn otra vida, en otro mundo "
+        ],
+        [
+            "podrá ",
+            "ser/nEn esta "
+        ],
+        [
+            "solo queda irme un día",
+            "/nY ver pa'l cielo a ver si te v"
+        ],
+        [
+            "eo ca",
+            "er/n"
+        ],
+        [
+            "Si me ven solo y triste, no me ha",
+            "blen/nSi me ven solo y triste, s"
+        ],
+        [
+            "oy cu",
+            "lpable/n"
+        ],
+        [
+            "La vida es una fiesta que un día ",
+            "termina/nY fuiste tú mi baile"
+        ],
+        [
+            " inolvidable/n"
+        ],
+        [],
+        [
+            "    ",
+            " No, no te puedo olvidar/n"
+        ],
+        [
+            "No, no te puedo borrar/n"
+        ],
+        [
+            "Tú me enseñaste a querer/n"
+        ],
+        [
+            "Me enseñaste a bailar/n"
+        ],
+        [],
+        [
+            "No, no te puedo olvidar/n"
+        ],
+        [
+            "No, no te puedo borrar/n"
+        ],
+        [
+            "Tú me enseñaste a querer/n"
+        ],
+        [
+            "Me enseñaste a bailar/n"
+        ],
+        [
+            "Yeah-yeah-yeah-yeah, ey/nDime cómo le hago pa' o"
+        ],
+        [
+            "lvidarte/nHay un paso nuevo que quiero ens"
+        ],
+        [
+            "eñarte/nLo que hago es soñart"
+        ],
+        [
+            "e/n"
+        ],
+        [
+            "No, no te puedo olvidar/n"
+        ],
+        [
+            "No, no te puedo borrar/n"
+        ],
+        [
+            "Tú me enseñaste a quere",
+            "r/n"
+        ],
+        [
+            "Cómo tú me besabas, cómo yo te lo hacía/n"
+        ],
+        [
+            "Cómo tú me mirabas, bellaquito me ponía/n"
+        ],
+        [
+            "Se siente feo no tenerte cerquita/nLa nueva mama bien, pero no es tu "
+        ],
+        [
+            "boquita",
+            "/n"
+        ],
+        [
+            "Mi diabla, mi ángel, mi loquita/n"
+        ],
+        [
+            "Mi diabla, mi ángel, mi loquita, ",
+            "ey/n"
+        ],
+        [],
+        [
+            "    'T",
+            "o suena cabrón/n"
+        ],
+        [
+            "     V",
+            "amo' a hacerlo otra ve'/n"
+        ],
+        [
+            "     ",
+            "Como anoche, como anoche/n"
+        ],
+        [
+            "     ",
+            " Tan-tan, ta-na-na, ta-na-na/n"
+        ],
+        [
+            "Aprieta, chamaquito, aprieta",
+            "",
+            "",
+            "",
+            "/n¡"
+        ],
+        [
+            "Ahí,",
+            " ahí",
+            ", ah",
+            ", va",
+            "mo' ",
+            "allá!/n"
+        ],
+        [
+            "No, no te puedo olvidar/n"
+        ],
+        [
+            "No, no te puedo borrar/n"
+        ],
+        [
+            "Tú me enseñaste a q",
+            "uerer/n"
+        ],
+        [
+            "Ay, yo con cualquiera me puedo acostar/nPero no con c"
+        ],
+        [
+            "ualquiera quiero despertar/n"
+        ],
+        [
+            "Solo con usted, con usted/nYo bailo con usted, na' más con u"
+        ],
+        [
+            "sted/n"
+        ],
+        [
+            "Un beso donde estés, donde estés, bebé/n"
+        ],
+        [
+            "No, no te puedo olvidar/n"
+        ],
+        [
+            "No, no te puedo borrar/n"
+        ],
+        [
+            "Tú me enseñaste a quere",
+            "r/n"
+        ],
+        [
+            "Y yo tenía muchas novia'/n"
+        ],
+        [
+            "Pero como tú, ninguna/n"
+        ],
+        [
+            "Ya no tengo mi sol, me paso en la luna/nSi te pienso, me tiro"
+        ],
+        [
+            " de una",
+            "/nEh-eh,"
+        ],
+        [
+            " mi diabla, mi ángel, mi loquita/n"
+        ],
+        [
+            "Mi diabla, mi ángel, ",
+            "mi loquita, eh-eh/n"
+        ],
+        [],
+        [],
+        []
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "a1Femq4NPxs",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,237 @@
-{"cancion": "onde-andaras", "banda": "caetano-veloso", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "C#7(b9)", "F#m", "Bm", "E7", "C#m", "C7", "Bm", "E7", "A7M", "A7(#5)", "D7M", "Dm6", "G7", "E7", "E/D", "C#m", "C7", "Bm7", "E7", "A7M", "A7(#5)", "D7M", "Dm6", "G7", "E7(4)", "E7(b9)", "Am", "Bm7(b5)", "E7(b9)", "Am", "Bm7(b5)", "E7", "F#", "G#m", "A#m", "B", "A#m", "D#7(b9)", "G#m", "C#7(b9)", "F#m", "F\u00b0", "F#m", "C#7(b9)", "E\u00b0", "F#7/C#", "Bm7", "E7", "A7M", "E7(#9)", "C#m", "C7", "Bm7", "E7", "A", "C#7(b9)", "F#m", "Bm", "E7", "C#m", "C7", "Bm", "E7", "A7M", "A7(#5)", "D7M", "Dm6", "G7", "E7", "E/D", "C#m", "C7", "Bm7", "E7", "A7M", "A7(#5)", "D7M", "Dm6", "G7", "E7(b9)", "Am"]}], "orden_partes": [0]}, "letras": [[" Onde andar\u00e1s nesta tar___de vazia", "", "/n"], ["       T\u00e3o clar", "a e sem fim", "", "", "", "/nEnquanto o mar bate azul"], [" em Ipanema", "", "/nEm que bar, em que cinema"], ["", "", "/nTe es"], ["queces de mim", "", "", "/n"], ["Enquanto o mar bate az", "ul em Ipane", "ma", "/nEm que bar, em que cinema"], ["", "", "/nTe es"], ["queces./nEu "], ["sei, meu endere\u00e7o   ", "       ap", "agaste do ", "teu cora\u00e7\u00e3o", "", "/nA cigarr"], ["a do apartamen", "to", "/nO ch\u00e3o"], [" de cimento", " existem em ", "v\u00e3o", "", "/n"], ["N\u00e3o serve pra na__da a", " escada, o elevador", "", "/nJ\u00e1 n\u00e3o serve"], [" pra nada a jane", "la", "/nA cortina"], [" amarela, per", "di meu amor", "", "", "", "", "/nE \u00e9 por is__"], ["so que eu sa_____io pra ", "ru___a", "/n"], ["       Sem sab", "er pra qu\u00ea", "", "", "", "/nNa esperan___"], ["a talvez de qu", "e o acaso", "/nPor mero descaso     m"], ["e leve ", "a voc\u00ea", "", "", "", "", "", "/nNa esperan__"], ["_\u00e7a talvez de que ", "o acaso", "/nPor mero descaso"], ["", "/nMe "], ["leve. eu s", "ei"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "HYANGCrmo_E", "delay": 0}]}
+{
+    "cancion": "onde-andaras",
+    "banda": "caetano-veloso",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "C#7(b9)",
+                    "F#m",
+                    "Bm",
+                    "E7",
+                    "C#m",
+                    "C7",
+                    "Bm",
+                    "E7",
+                    "A7M",
+                    "A7(#5)",
+                    "D7M",
+                    "Dm6",
+                    "G7",
+                    "E7",
+                    "E/D",
+                    "C#m",
+                    "C7",
+                    "Bm7",
+                    "E7",
+                    "A7M",
+                    "A7(#5)",
+                    "D7M",
+                    "Dm6",
+                    "G7",
+                    "E7(4)",
+                    "E7(b9)",
+                    "Am",
+                    "Bm7(b5)",
+                    "E7(b9)",
+                    "Am",
+                    "Bm7(b5)",
+                    "E7",
+                    "F#",
+                    "G#m",
+                    "A#m",
+                    "B",
+                    "A#m",
+                    "D#7(b9)",
+                    "G#m",
+                    "C#7(b9)",
+                    "F#m",
+                    "F°",
+                    "F#m",
+                    "C#7(b9)",
+                    "E°",
+                    "F#7/C#",
+                    "Bm7",
+                    "E7",
+                    "A7M",
+                    "E7(#9)",
+                    "C#m",
+                    "C7",
+                    "Bm7",
+                    "E7",
+                    "A",
+                    "C#7(b9)",
+                    "F#m",
+                    "Bm",
+                    "E7",
+                    "C#m",
+                    "C7",
+                    "Bm",
+                    "E7",
+                    "A7M",
+                    "A7(#5)",
+                    "D7M",
+                    "Dm6",
+                    "G7",
+                    "E7",
+                    "E/D",
+                    "C#m",
+                    "C7",
+                    "Bm7",
+                    "E7",
+                    "A7M",
+                    "A7(#5)",
+                    "D7M",
+                    "Dm6",
+                    "G7",
+                    "E7(b9)",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            " Onde andarás nesta tar___de vazia",
+            "",
+            "/n"
+        ],
+        [
+            "       Tão clar",
+            "a e sem fim",
+            "",
+            "",
+            "",
+            "/nEnquanto o mar bate azul"
+        ],
+        [
+            " em Ipanema",
+            "",
+            "/nEm que bar, em que cinema"
+        ],
+        [
+            "",
+            "",
+            "/nTe es"
+        ],
+        [
+            "queces de mim",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Enquanto o mar bate az",
+            "ul em Ipane",
+            "ma",
+            "/nEm que bar, em que cinema"
+        ],
+        [
+            "",
+            "",
+            "/nTe es"
+        ],
+        [
+            "queces./nEu "
+        ],
+        [
+            "sei, meu endereço   ",
+            "       ap",
+            "agaste do ",
+            "teu coração",
+            "",
+            "/nA cigarr"
+        ],
+        [
+            "a do apartamen",
+            "to",
+            "/nO chão"
+        ],
+        [
+            " de cimento",
+            " existem em ",
+            "vão",
+            "",
+            "/n"
+        ],
+        [
+            "Não serve pra na__da a",
+            " escada, o elevador",
+            "",
+            "/nJá não serve"
+        ],
+        [
+            " pra nada a jane",
+            "la",
+            "/nA cortina"
+        ],
+        [
+            " amarela, per",
+            "di meu amor",
+            "",
+            "",
+            "",
+            "",
+            "/nE é por is__"
+        ],
+        [
+            "so que eu sa_____io pra ",
+            "ru___a",
+            "/n"
+        ],
+        [
+            "       Sem sab",
+            "er pra quê",
+            "",
+            "",
+            "",
+            "/nNa esperan___"
+        ],
+        [
+            "a talvez de qu",
+            "e o acaso",
+            "/nPor mero descaso     m"
+        ],
+        [
+            "e leve ",
+            "a você",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/nNa esperan__"
+        ],
+        [
+            "_ça talvez de que ",
+            "o acaso",
+            "/nPor mero descaso"
+        ],
+        [
+            "",
+            "/nMe "
+        ],
+        [
+            "leve. eu s",
+            "ei"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "HYANGCrmo_E",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

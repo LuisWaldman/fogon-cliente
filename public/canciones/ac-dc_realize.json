@@ -1,1 +1,457 @@
-{"cancion": "realize", "banda": "ac-dc", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "G", "G", "A", "D", "D", "A", "G", "G", "A", "D", "D", "A", "G", "D", "A", "G", "A", "A", "G", "D", "A", "G", "A", "A", "G", "D", "A", "G", "A", "A", "G", "D", "A", "G", "A", "A", "G", "A", "G", "A", "A", "G", "A", "G", "A", "G", "G", "A", "G", "A", "G", "A", "D", "C", "D", "C", "A", "G", "A/C#", "D", "D", "A", "G", "A/C#", "D", "D", "A", "G", "A", "D", "A", "G", "A", "D", "A", "G", "A/C#", "D", "A", "G", "A", "D", "A", "G", "D", "A", "G", "A", "A", "G", "D", "A", "G", "A", "A", "G", "D", "A", "G", "A", "G", "D", "A", "G", "A", "A", "G", "A", "G", "A", "A", "G", "A", "G", "A", "G", "G", "A", "G", "A", "G", "A", "D", "C", "D", "C", "A", "G", "A/C#", "D", "D", "A", "G", "A/C#", "D", "D", "A", "G", "A", "D", "A", "G", "A", "D", "A", "G", "A", "D", "A", "G", "A/C#", "D", "B", "A", "B", "E", "D", "C", "D", "C", "A", "G", "A/C#", "D", "D", "A", "G", "A/C#", "D", "D", "A", "G", "A", "D", "A", "G", "A", "D", "A", "G", "A/C#", "D", "A", "G", "A", "D"]}], "orden_partes": [0]}, "letras": [[], ["    ", "         ", "          ", "The ", "moment yo", "u realize/n[V"], ["erse ", "1]", "", "", "", "/n"], ["   Those mo", "ments just pa", "ss y", "ou by", "", "/n"], [], ["   Gonna take", " you to pa-", "ra-d", "ise", "", "/nM"], ["ove it", "", "", "", "/nMake you p"], ["rove it,", " yeah", "", "", "/nBreakin' "], ["out/nBreak it d"], ["own/nFeel the ch"], ["ill, feel the chi", "ll/nMovin' d"], ["own your spi", "ne", "/n"], [], ["all a", "nd/nRea"], ["lize", "/n"], [], ["lize", "/n"], [], [" I've got the po", "wer to hyp", "notize", "/n"], [" Make a pl", "ay, mes", "merize", "/n"], [" Feel the c", "hills up and do", "wn your spi", "ne/n"], [" I'm gonna ma", "ke you", " fly", "/n"], [" Your eye", "s playin' tric", "ks on ", "you", "", "/n"], [], [" Your mi", "nd will seek", " the t", "ruth", "", "/nYou kn"], ["ow you're gonna ma", "ke it", " throug", "h", "/nI said m"], ["ove it", "", "", "", "/nMak\u0435 you p"], ["rove it", "", "", "", "/nShake it "], ["up/nShake it d"], ["own/nFeel th\u0435 c"], ["hill, feel the ch", "ill/nMovin' d"], ["own your spi", "ne", "/n"], [], ["all a", "nd/nRea"], ["lize", "/n"], [], ["lize", "/n"], [], [" I got the po", "wer to elec", "trify", "/n"], [" Make or br", "eak, or sat", "isfy", "/n"], [" Feel a c", "hill up and do", "wn your spi", "ne/n"], [" I'm gonna m", "ake you fl", "y", "/n"], ["Fly, f", "ly!", "", "/n"], [], ["all a", "nd/nRea"], ["lize", "/n"], [], ["lize", "/n"], [], [" I've got the po", "wer to hyp", "notize", "/n"], [" Make a pl", "ay, mes", "merize", "/n"], [" Feel the c", "hills up and do", "wn your spi", "ne/n"], [" I'm gonna ma", "ke you", " fly", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "ga5qfM2-kog", "delay": 0}]}
+{
+    "cancion": "realize",
+    "banda": "ac-dc",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "C",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "C",
+                    "D",
+                    "C",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "B",
+                    "A",
+                    "B",
+                    "E",
+                    "D",
+                    "C",
+                    "D",
+                    "C",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "A",
+                    "G",
+                    "A/C#",
+                    "D",
+                    "A",
+                    "G",
+                    "A",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "    ",
+            "         ",
+            "          ",
+            "The ",
+            "moment yo",
+            "u realize/n[V"
+        ],
+        [
+            "erse ",
+            "1]",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "   Those mo",
+            "ments just pa",
+            "ss y",
+            "ou by",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "   Gonna take",
+            " you to pa-",
+            "ra-d",
+            "ise",
+            "",
+            "/nM"
+        ],
+        [
+            "ove it",
+            "",
+            "",
+            "",
+            "/nMake you p"
+        ],
+        [
+            "rove it,",
+            " yeah",
+            "",
+            "",
+            "/nBreakin' "
+        ],
+        [
+            "out/nBreak it d"
+        ],
+        [
+            "own/nFeel the ch"
+        ],
+        [
+            "ill, feel the chi",
+            "ll/nMovin' d"
+        ],
+        [
+            "own your spi",
+            "ne",
+            "/n"
+        ],
+        [],
+        [
+            "all a",
+            "nd/nRea"
+        ],
+        [
+            "lize",
+            "/n"
+        ],
+        [],
+        [
+            "lize",
+            "/n"
+        ],
+        [],
+        [
+            " I've got the po",
+            "wer to hyp",
+            "notize",
+            "/n"
+        ],
+        [
+            " Make a pl",
+            "ay, mes",
+            "merize",
+            "/n"
+        ],
+        [
+            " Feel the c",
+            "hills up and do",
+            "wn your spi",
+            "ne/n"
+        ],
+        [
+            " I'm gonna ma",
+            "ke you",
+            " fly",
+            "/n"
+        ],
+        [
+            " Your eye",
+            "s playin' tric",
+            "ks on ",
+            "you",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            " Your mi",
+            "nd will seek",
+            " the t",
+            "ruth",
+            "",
+            "/nYou kn"
+        ],
+        [
+            "ow you're gonna ma",
+            "ke it",
+            " throug",
+            "h",
+            "/nI said m"
+        ],
+        [
+            "ove it",
+            "",
+            "",
+            "",
+            "/nMakе you p"
+        ],
+        [
+            "rove it",
+            "",
+            "",
+            "",
+            "/nShake it "
+        ],
+        [
+            "up/nShake it d"
+        ],
+        [
+            "own/nFeel thе c"
+        ],
+        [
+            "hill, feel the ch",
+            "ill/nMovin' d"
+        ],
+        [
+            "own your spi",
+            "ne",
+            "/n"
+        ],
+        [],
+        [
+            "all a",
+            "nd/nRea"
+        ],
+        [
+            "lize",
+            "/n"
+        ],
+        [],
+        [
+            "lize",
+            "/n"
+        ],
+        [],
+        [
+            " I got the po",
+            "wer to elec",
+            "trify",
+            "/n"
+        ],
+        [
+            " Make or br",
+            "eak, or sat",
+            "isfy",
+            "/n"
+        ],
+        [
+            " Feel a c",
+            "hill up and do",
+            "wn your spi",
+            "ne/n"
+        ],
+        [
+            " I'm gonna m",
+            "ake you fl",
+            "y",
+            "/n"
+        ],
+        [
+            "Fly, f",
+            "ly!",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "all a",
+            "nd/nRea"
+        ],
+        [
+            "lize",
+            "/n"
+        ],
+        [],
+        [
+            "lize",
+            "/n"
+        ],
+        [],
+        [
+            " I've got the po",
+            "wer to hyp",
+            "notize",
+            "/n"
+        ],
+        [
+            " Make a pl",
+            "ay, mes",
+            "merize",
+            "/n"
+        ],
+        [
+            " Feel the c",
+            "hills up and do",
+            "wn your spi",
+            "ne/n"
+        ],
+        [
+            " I'm gonna ma",
+            "ke you",
+            " fly",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "ga5qfM2-kog",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

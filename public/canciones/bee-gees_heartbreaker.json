@@ -1,1 +1,387 @@
-{"cancion": "heartbreaker", "banda": "bee-gees", "escala": "Bm", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm", "Bm", "Em", "Bm", "A", "Bm", "A", "Bm", "Bm", "Em", "Bm", "A", "G", "G", "G", "D/F#", "Em", "Am", "Am7", "D", "G", "G", "D/F#", "Em", "Am", "Am7", "D", "Bm", "Em", "Bm", "Em", "Bm", "Am7", "D", "Bm", "Bm", "Em", "Bm", "Em", "Bm", "C", "Cm", "G", "Am", "D", "Bm", "C", "D", "Bm", "Em", "Bm", "Em", "C", "Bm", "G", "Am", "D", "Bm", "C", "D", "Bm", "Em", "Bm", "Em", "C", "Bm", "Am", "G", "G", "G", "D/F#", "Em", "Am", "Am7", "D", "Bm", "Em", "Bm", "Em", "Bm", "C", "Cm", "G", "Am", "D", "Bm", "C", "D", "Bm", "Em", "Bm", "Em", "C", "Bm", "Bm", "Bm", "Em", "Bm", "A", "G", "G", "G", "D/E", "A", "Bm", "E", "C#m", "D", "E", "C#m", "F#m", "C#m", "F#m", "D", "C#m", "A", "Bm", "E", "C#m", "D", "E", "C#m", "F#m", "C#m", "F#m", "D", "C#m", "A", "Bm", "E", "C#m", "D", "E", "C#m", "F#m", "C#m", "F#m", "D", "C#m"]}], "orden_partes": [0]}, "letras": [[], [], ["I got to say it and it's hard for me  ", "", "", "/nYou got me cryin' like I thought I would never "], ["be  /nLove is believin' but you let me down "], [" /nHow can I love you when you "], ["  ain't around  /n"], ["Get to the morning and you never call  ", "", "", "/nLove should be ev'rything or not at all "], [" /nAnd it don't matter what ever you do "], [" /nI made a life out of"], [" lovin' you  /n"], ["Only to f", "ind any dream", " that I foll", "ow is dying", "  /nI'm "], ["cryin' i", "n the ra", "in  /n"], ["I could be se", "archin' my wor", "ld for a lov", "e everlasti", "ng  /nFe"], ["eling no pain, when will w", "e meet again  /n"], ["Why do you have to be a  ", "  heartbre", "aker  ", "/nIs it a lesson that I "], ["  never kne", "w?  /n"], ["Gotta get o", "ut of the sp", "ell that I'm und", "er  ", "/nMy love "], ["for you  /n"], ["Why do you have to be a  ", "  heartbre", "aker  ", "/nWhen I was bein' what you w"], ["ant me to be", "  /n"], ["Suddenly e", "v'rything I ", "ever want", "ed   ha", "s passed me by", "  /nThis world may "], ["end  /nNot you and "], ["I  /n"], ["My love is stronger than the universe  ", "", "", "/nAnd that can not be reversed "], [" /nYou made the rules but you could not see "], [" /nYou made a life out of h"], ["urtin' me  /n"], ["Out of my mi", "nd  /nI am "], ["held by the po", "wer of you", " love  /nTell me w"], ["hen do we try  /nWhy should"], [" we say goodbye?/n"], ["Why do you have to be a  ", "  heartbre", "aker  ", "/nIs it a lesson that I "], ["  never kne", "w?  /n"], ["Gotta get o", "ut of the sp", "ell that I'm und", "er  ", "/nMy love "], ["for you  /nOhhh,  "], ["", "", "", "", "", "", "", "", "/n"], ["Why do you have to be a  ", "  heartbre", "aker?  ", "/nIs it a lesson that I "], ["  never kne", "w?  /n"], ["Gotta get o", "ut of the sp", "ell that I'm und", "er  ", "/nMy love "], ["for you  /n"], ["Why do you have to be a  ", "  heartbre", "aker  ", "/nWhen I was bein' what you w"], ["ant me to be", "?  /n"], ["Suddenly e", "v'rything I ", "ever want", "ed   ha", "s passed me by", ", my love/n"], ["Why do you have to be a  ", "  heartbre", "aker?  ", "/nIs it a lesson that I "], ["  never kne", "w?  /n"], ["Gotta get o", "ut of the sp", "ell that I'm und", "er  ", "/nMy love "], ["for you"]], "medias": [{"tipo": "Youtube", "id": "mJule_2mx3I", "delay": 0}]}
+{
+    "cancion": "heartbreaker",
+    "banda": "bee-gees",
+    "escala": "Bm",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "A",
+                    "Bm",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "Am",
+                    "Am7",
+                    "D",
+                    "G",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "Am",
+                    "Am7",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Am7",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "C",
+                    "Cm",
+                    "G",
+                    "Am",
+                    "D",
+                    "Bm",
+                    "C",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "G",
+                    "Am",
+                    "D",
+                    "Bm",
+                    "C",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "D/F#",
+                    "Em",
+                    "Am",
+                    "Am7",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "C",
+                    "Cm",
+                    "G",
+                    "Am",
+                    "D",
+                    "Bm",
+                    "C",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "D/E",
+                    "A",
+                    "Bm",
+                    "E",
+                    "C#m",
+                    "D",
+                    "E",
+                    "C#m",
+                    "F#m",
+                    "C#m",
+                    "F#m",
+                    "D",
+                    "C#m",
+                    "A",
+                    "Bm",
+                    "E",
+                    "C#m",
+                    "D",
+                    "E",
+                    "C#m",
+                    "F#m",
+                    "C#m",
+                    "F#m",
+                    "D",
+                    "C#m",
+                    "A",
+                    "Bm",
+                    "E",
+                    "C#m",
+                    "D",
+                    "E",
+                    "C#m",
+                    "F#m",
+                    "C#m",
+                    "F#m",
+                    "D",
+                    "C#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "I got to say it and it's hard for me  ",
+            "",
+            "",
+            "/nYou got me cryin' like I thought I would never "
+        ],
+        [
+            "be  /nLove is believin' but you let me down "
+        ],
+        [
+            " /nHow can I love you when you "
+        ],
+        [
+            "  ain't around  /n"
+        ],
+        [
+            "Get to the morning and you never call  ",
+            "",
+            "",
+            "/nLove should be ev'rything or not at all "
+        ],
+        [
+            " /nAnd it don't matter what ever you do "
+        ],
+        [
+            " /nI made a life out of"
+        ],
+        [
+            " lovin' you  /n"
+        ],
+        [
+            "Only to f",
+            "ind any dream",
+            " that I foll",
+            "ow is dying",
+            "  /nI'm "
+        ],
+        [
+            "cryin' i",
+            "n the ra",
+            "in  /n"
+        ],
+        [
+            "I could be se",
+            "archin' my wor",
+            "ld for a lov",
+            "e everlasti",
+            "ng  /nFe"
+        ],
+        [
+            "eling no pain, when will w",
+            "e meet again  /n"
+        ],
+        [
+            "Why do you have to be a  ",
+            "  heartbre",
+            "aker  ",
+            "/nIs it a lesson that I "
+        ],
+        [
+            "  never kne",
+            "w?  /n"
+        ],
+        [
+            "Gotta get o",
+            "ut of the sp",
+            "ell that I'm und",
+            "er  ",
+            "/nMy love "
+        ],
+        [
+            "for you  /n"
+        ],
+        [
+            "Why do you have to be a  ",
+            "  heartbre",
+            "aker  ",
+            "/nWhen I was bein' what you w"
+        ],
+        [
+            "ant me to be",
+            "  /n"
+        ],
+        [
+            "Suddenly e",
+            "v'rything I ",
+            "ever want",
+            "ed   ha",
+            "s passed me by",
+            "  /nThis world may "
+        ],
+        [
+            "end  /nNot you and "
+        ],
+        [
+            "I  /n"
+        ],
+        [
+            "My love is stronger than the universe  ",
+            "",
+            "",
+            "/nAnd that can not be reversed "
+        ],
+        [
+            " /nYou made the rules but you could not see "
+        ],
+        [
+            " /nYou made a life out of h"
+        ],
+        [
+            "urtin' me  /n"
+        ],
+        [
+            "Out of my mi",
+            "nd  /nI am "
+        ],
+        [
+            "held by the po",
+            "wer of you",
+            " love  /nTell me w"
+        ],
+        [
+            "hen do we try  /nWhy should"
+        ],
+        [
+            " we say goodbye?/n"
+        ],
+        [
+            "Why do you have to be a  ",
+            "  heartbre",
+            "aker  ",
+            "/nIs it a lesson that I "
+        ],
+        [
+            "  never kne",
+            "w?  /n"
+        ],
+        [
+            "Gotta get o",
+            "ut of the sp",
+            "ell that I'm und",
+            "er  ",
+            "/nMy love "
+        ],
+        [
+            "for you  /nOhhh,  "
+        ],
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Why do you have to be a  ",
+            "  heartbre",
+            "aker?  ",
+            "/nIs it a lesson that I "
+        ],
+        [
+            "  never kne",
+            "w?  /n"
+        ],
+        [
+            "Gotta get o",
+            "ut of the sp",
+            "ell that I'm und",
+            "er  ",
+            "/nMy love "
+        ],
+        [
+            "for you  /n"
+        ],
+        [
+            "Why do you have to be a  ",
+            "  heartbre",
+            "aker  ",
+            "/nWhen I was bein' what you w"
+        ],
+        [
+            "ant me to be",
+            "?  /n"
+        ],
+        [
+            "Suddenly e",
+            "v'rything I ",
+            "ever want",
+            "ed   ha",
+            "s passed me by",
+            ", my love/n"
+        ],
+        [
+            "Why do you have to be a  ",
+            "  heartbre",
+            "aker?  ",
+            "/nIs it a lesson that I "
+        ],
+        [
+            "  never kne",
+            "w?  /n"
+        ],
+        [
+            "Gotta get o",
+            "ut of the sp",
+            "ell that I'm und",
+            "er  ",
+            "/nMy love "
+        ],
+        [
+            "for you"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "mJule_2mx3I",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

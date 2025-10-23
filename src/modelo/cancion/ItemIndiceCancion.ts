@@ -36,7 +36,6 @@ export class ItemIndiceCancion {
   public cantacordes: number
   public cantpartes: number
   public calidad: number
-  public duracion: number
   public video: boolean
   public pentagramas: string[]
   public etiquetas: string[]
@@ -45,6 +44,7 @@ export class ItemIndiceCancion {
   public cancion: string
   public banda: string
   public acordes: string
+  public owner: string
   constructor(_origen: OrigenCancion, _cancion: string, _banda: string) {
     this.origen = _origen
     this.acordes = ''
@@ -57,12 +57,12 @@ export class ItemIndiceCancion {
     this.compasCantidad = 4
     this.bpm = 60
     this.calidad = 1
-    this.duracion = 0
     this.cantpartes = 0
     this.cantacordes = 0
     this.video = false
     this.pentagramas = []
     this.escala = ''
+    this.owner = ''
   }
 
   public static BuildFromCancion(
@@ -74,6 +74,7 @@ export class ItemIndiceCancion {
     ret.totalCompases = cancion.totalCompases ? cancion.totalCompases : 0
     ret.compasUnidad = cancion.compasUnidad ? cancion.compasUnidad : 0
     ret.compasCantidad = cancion.compasCantidad ? cancion.compasCantidad : 4
+    ret.cantpartes = cancion.acordes.partes.length
     ret.bpm = cancion.bpm ? cancion.bpm : 60
     ret.calidad = cancion.calidad ? cancion.calidad : 0
     ret.origen = new OrigenCancion(

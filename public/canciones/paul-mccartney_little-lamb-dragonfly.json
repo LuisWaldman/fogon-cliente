@@ -1,1 +1,387 @@
-{"cancion": "Little-Lamb-Dragonfly", "banda": "paul-mccartney", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "D6", "D", "D7", "G", "A7", "D", "C", "D6", "D", "Dm", "G7", "C", "C", "D6", "D", "Dm", "G7", "C", "D6", "D", "A", "Bm", "Bm", "F#", "Em7", "A", "D", "D#\u00ba", "Em", "A7", "A7M(5+)/F", "D", "Bm", "F#", "Em7", "A", "D", "D", "D6", "D", "D7", "G", "A7", "D", "C", "D6", "D", "Dm", "G7", "C", "C", "D6", "D", "Dm", "G7", "C", "E", "E", "F#m", "F#m7", "B7", "E", "E7", "A", "A7M", "Em7", "A7", "C#m", "Em7", "A7", "D", "F#m", "B", "F#m", "B", "E", "E", "F#m", "F#m7", "B7", "E", "E7", "A", "A7M", "Em7", "A7", "C#m", "Em7", "A7", "D", "F#m", "B", "F#m", "B", "F#m", "D6", "D", "D6", "D", "A", "Bm", "F#", "Em7", "A7", "D", "D", "D6", "D", "D7", "G", "A7", "D", "E", "E", "F#m", "F#m7", "B7", "E", "E7", "A", "A7M", "Em7", "A7", "C#m", "Em7", "A7", "D", "F#m", "B", "F#m", "B", "F#m", "B", "D6", "D", "A", "Bm", "Bm", "F#", "Em7", "A", "D", "D", "D6", "D", "D7", "G", "A7", "D", "C", "D6", "D", "Dm", "G7", "C", "C", "D6", "D", "Dm", "G7", "C", "C", "D6", "D", "Dm", "G7", "C", "C", "D6", "D", "Dm", "G7", "C"]}], "orden_partes": [0]}, "letras": [[], [], [], [], ["answer for you Li", "ttle Lamb/n"], ["    But I ca", "nnot help you in", "/n"], ["   Sometimes you think that life is h", "ard/n"], ["   And this is o", "nly one of them", "/n"], ["   My heart is breaking for you Li", "ttle Lamb/n"], ["    But we may ne", "ver meet agai", "n/n"], [], ["La l", "a la", "", "", "", "/n"], ["La l", "a la", "", "", "", "/n"], [], ["agonfly...  Fly by my wi", "ndow/nY"], ["ou and I...  Sti", "ll have a way to go", "", "/nD"], ["on't know why", "...   ", "  You hang aroun", "d my door", "/n"], ["    I don't live he", "re anymor", "e/nSince you've g"], ["one... I never kno", "w/nI go "], ["on... Miss you so", "", "/nDr"], ["agonfly... Don't keep me wa", "iting/nW"], ["hen we try...  ", "  Will have a way to go", "", "/nDr"], ["agonfly", "...    ", "  You've been away ", "too long", "/n"], ["    How did two ri", "ghts make a wron", "g?/nSince you've g"], ["one... I never kno", "w/nI go "], ["on... Miss you so", "/nIn my h"], ["eart... Feel the pai", "n", "/nK"], ["eeps coming ba", "ck ag", "ain", "/n"], [], [], ["agonfly...  Fly by my wi", "ndow/nY"], ["ou and I... ", " Can find a way to see", "", "/nDr"], ["agonfly", ".. . ", "  The years ahead", " will show", "/n"], ["    How little we", " really know", "/nSince you've g"], ["one... It's never ri", "ght/nThey go "], ["on... The lonely", " nights/nCome on h"], ["ome... Make it ri", "ght", "", "", "", "/nI have no "], ["answer for you Li", "ttle Lamb/n"], ["    But I ca", "nnot help you in", "/n"], [], [], [], [], ["", "", "", "", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "1iPaRZT7XSc", "delay": 0}]}
+{
+    "cancion": "Little-Lamb-Dragonfly",
+    "banda": "paul-mccartney",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D6",
+                    "D",
+                    "D7",
+                    "G",
+                    "A7",
+                    "D",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "D6",
+                    "D",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "F#",
+                    "Em7",
+                    "A",
+                    "D",
+                    "D#º",
+                    "Em",
+                    "A7",
+                    "A7M(5+)/F",
+                    "D",
+                    "Bm",
+                    "F#",
+                    "Em7",
+                    "A",
+                    "D",
+                    "D",
+                    "D6",
+                    "D",
+                    "D7",
+                    "G",
+                    "A7",
+                    "D",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m7",
+                    "B7",
+                    "E",
+                    "E7",
+                    "A",
+                    "A7M",
+                    "Em7",
+                    "A7",
+                    "C#m",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "B",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m7",
+                    "B7",
+                    "E",
+                    "E7",
+                    "A",
+                    "A7M",
+                    "Em7",
+                    "A7",
+                    "C#m",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "D6",
+                    "D",
+                    "D6",
+                    "D",
+                    "A",
+                    "Bm",
+                    "F#",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "D",
+                    "D6",
+                    "D",
+                    "D7",
+                    "G",
+                    "A7",
+                    "D",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m7",
+                    "B7",
+                    "E",
+                    "E7",
+                    "A",
+                    "A7M",
+                    "Em7",
+                    "A7",
+                    "C#m",
+                    "Em7",
+                    "A7",
+                    "D",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "B",
+                    "D6",
+                    "D",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "F#",
+                    "Em7",
+                    "A",
+                    "D",
+                    "D",
+                    "D6",
+                    "D",
+                    "D7",
+                    "G",
+                    "A7",
+                    "D",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "D6",
+                    "D",
+                    "Dm",
+                    "G7",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [],
+        [
+            "answer for you Li",
+            "ttle Lamb/n"
+        ],
+        [
+            "    But I ca",
+            "nnot help you in",
+            "/n"
+        ],
+        [
+            "   Sometimes you think that life is h",
+            "ard/n"
+        ],
+        [
+            "   And this is o",
+            "nly one of them",
+            "/n"
+        ],
+        [
+            "   My heart is breaking for you Li",
+            "ttle Lamb/n"
+        ],
+        [
+            "    But we may ne",
+            "ver meet agai",
+            "n/n"
+        ],
+        [],
+        [
+            "La l",
+            "a la",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La l",
+            "a la",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "agonfly...  Fly by my wi",
+            "ndow/nY"
+        ],
+        [
+            "ou and I...  Sti",
+            "ll have a way to go",
+            "",
+            "/nD"
+        ],
+        [
+            "on't know why",
+            "...   ",
+            "  You hang aroun",
+            "d my door",
+            "/n"
+        ],
+        [
+            "    I don't live he",
+            "re anymor",
+            "e/nSince you've g"
+        ],
+        [
+            "one... I never kno",
+            "w/nI go "
+        ],
+        [
+            "on... Miss you so",
+            "",
+            "/nDr"
+        ],
+        [
+            "agonfly... Don't keep me wa",
+            "iting/nW"
+        ],
+        [
+            "hen we try...  ",
+            "  Will have a way to go",
+            "",
+            "/nDr"
+        ],
+        [
+            "agonfly",
+            "...    ",
+            "  You've been away ",
+            "too long",
+            "/n"
+        ],
+        [
+            "    How did two ri",
+            "ghts make a wron",
+            "g?/nSince you've g"
+        ],
+        [
+            "one... I never kno",
+            "w/nI go "
+        ],
+        [
+            "on... Miss you so",
+            "/nIn my h"
+        ],
+        [
+            "eart... Feel the pai",
+            "n",
+            "/nK"
+        ],
+        [
+            "eeps coming ba",
+            "ck ag",
+            "ain",
+            "/n"
+        ],
+        [],
+        [],
+        [
+            "agonfly...  Fly by my wi",
+            "ndow/nY"
+        ],
+        [
+            "ou and I... ",
+            " Can find a way to see",
+            "",
+            "/nDr"
+        ],
+        [
+            "agonfly",
+            ".. . ",
+            "  The years ahead",
+            " will show",
+            "/n"
+        ],
+        [
+            "    How little we",
+            " really know",
+            "/nSince you've g"
+        ],
+        [
+            "one... It's never ri",
+            "ght/nThey go "
+        ],
+        [
+            "on... The lonely",
+            " nights/nCome on h"
+        ],
+        [
+            "ome... Make it ri",
+            "ght",
+            "",
+            "",
+            "",
+            "/nI have no "
+        ],
+        [
+            "answer for you Li",
+            "ttle Lamb/n"
+        ],
+        [
+            "    But I ca",
+            "nnot help you in",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "1iPaRZT7XSc",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

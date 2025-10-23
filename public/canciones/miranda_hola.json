@@ -1,1 +1,223 @@
-{"cancion": "hola", "banda": "miranda", "escala": "Gm", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Gm", "Cm", "D"]}, {"nombre": "parte2", "acordes": ["Gm", "Cm", "Gm", "F", "Gm"]}, {"nombre": "parte3", "acordes": ["Cm", "D", "Gm"]}, {"nombre": "parte4", "acordes": ["Cm", "Gm", "F", "Gm"]}], "orden_partes": [0, 0, 1, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2]}, "letras": [["\u00a9 tal?, \u00c2\u00bfC\u00c3\u00b3mo te va?..\u00c2\u00a1Qu\u00c3\u00a9 frase m\u00c3\u00a1s vulgar", "!/nCon l"], ["a que me voy a presentar/n"], ["Cuando a lo lejos oigo un gong Yo s\u00c3\u00a9 que est\u00c3\u00a1s a", "h\u00c3\u00ad/nY de"], [" una u otra forma seguro te vas a acercar a", " mi/nQuiero conoc"], ["erte Cambiar\u00c3\u00adas un poquito de mi sue", "rte/nSigue la corrie"], ["nte/nEl impulso de tu piel nunca te m"], ["iente/nEl di"], ["sco de mi men", "te Se re siente", " con tu coraz\u00c3\u00b3n/n\"El d"], ["isco de tu co", "raz\u00c3\u00b3n\" \"El disc", "o de tu coraz\u00c3\u00b3n\"/nNo v"], ["es que es nece", "s\u00c3\u00a1rio  Terminar", " en una habitaci\u00c3\u00b3n/n\"Inv"], ["\u00c3\u00adtame a tu ha", "bitaci\u00c3\u00b3n... \u00c2", "\u00a1\u00c2\u00a1YA!!\"/nS"], ["i no tiene nada que ver... Por dios disculp", "ame/nNo "], ["s\u00c3\u00a9 ni como tuve el tupe/n"], ["De proponermelo de hacer/nA la primera "], ["vez Tal f\u00c3\u00a1cil es decirlo/nQue no va a ser ta"], ["n facil que se de/nEl di"], ["sco de mi men", "te Se re siente", " con tu coraz\u00c3\u00b3n/n\"El d"], ["isco de tu co", "raz\u00c3\u00b3n\" \"El disc", "o de tu coraz\u00c3\u00b3n\"/nNo v"], ["es que es nece", "s\u00c3\u00a1rio  Terminar", " en una habitaci\u00c3\u00b3n/n\"Inv"], ["\u00c3\u00adtame a tu ha", "bitaci\u00c3\u00b3n... \u00c2", "\u00a1\u00c2\u00a1YA!!\"/nNo v"], ["es que es nece", "s\u00c3\u00a1rio  Terminar", " en una habitaci\u00c3\u00b3n/n\"Inv"], ["\u00c3\u00adtame a tu ha", "bitaci\u00c3\u00b3n", "/nP"], ["asemos a lo bu", "eno Desh", "azte de tu ropa/nY dime \"O"], ["h\", \"oh\", o", "h\", \"oh\", \"u", "oh/nMu"], ["\u00c3\u00b1eca te lo r", "uego Ag\u00c3", "\u00adtame la boca/nY dime \"O"], ["h\", \"oh\", ", "oh\", \"oh\", ", "\"uoh/nQuiero conoc"], ["erte Cambiar\u00c3\u00adas un poquito de", " mi suerte/nSigue la corrie"], ["nte/nEl impulso de tu piel nunca te m"], ["iente/n\"El "], ["disco de tu co", "raz\u00c3\u00b3n\"El disc", "o de tu coraz\u00c3\u00b3n/n\"Inv\u00c3\u00adt"], ["ame a tu habit", "aci\u00c3\u00b3n... \u00c2\u00a1\u00c2\u00a1", "YA!!\"/nPasemo"], ["s a lo bueno D", "eshazte de tu ", "ropa/nY d"], ["ime \"Oh\",\"oh\",", "oh\",\"oh\",\"uoh,", " oh/nMu\u00c3"], ["\u00b1eca te lo rue", "go Ag\u00c3\u00adtame la", " boca"]]}
+{
+    "cancion": "hola",
+    "banda": "miranda",
+    "escala": "Gm",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Gm",
+                    "Cm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Gm",
+                    "Cm",
+                    "Gm",
+                    "F",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Cm",
+                    "D",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Cm",
+                    "Gm",
+                    "F",
+                    "Gm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "© tal?, Â¿CÃ³mo te va?..Â¡QuÃ© frase mÃ¡s vulgar",
+            "!/nCon l"
+        ],
+        [
+            "a que me voy a presentar/n"
+        ],
+        [
+            "Cuando a lo lejos oigo un gong Yo sÃ© que estÃ¡s a",
+            "hÃ­/nY de"
+        ],
+        [
+            " una u otra forma seguro te vas a acercar a",
+            " mi/nQuiero conoc"
+        ],
+        [
+            "erte CambiarÃ­as un poquito de mi sue",
+            "rte/nSigue la corrie"
+        ],
+        [
+            "nte/nEl impulso de tu piel nunca te m"
+        ],
+        [
+            "iente/nEl di"
+        ],
+        [
+            "sco de mi men",
+            "te Se re siente",
+            " con tu corazÃ³n/n\"El d"
+        ],
+        [
+            "isco de tu co",
+            "razÃ³n\" \"El disc",
+            "o de tu corazÃ³n\"/nNo v"
+        ],
+        [
+            "es que es nece",
+            "sÃ¡rio  Terminar",
+            " en una habitaciÃ³n/n\"Inv"
+        ],
+        [
+            "Ã­tame a tu ha",
+            "bitaciÃ³n... Â",
+            "¡Â¡YA!!\"/nS"
+        ],
+        [
+            "i no tiene nada que ver... Por dios disculp",
+            "ame/nNo "
+        ],
+        [
+            "sÃ© ni como tuve el tupe/n"
+        ],
+        [
+            "De proponermelo de hacer/nA la primera "
+        ],
+        [
+            "vez Tal fÃ¡cil es decirlo/nQue no va a ser ta"
+        ],
+        [
+            "n facil que se de/nEl di"
+        ],
+        [
+            "sco de mi men",
+            "te Se re siente",
+            " con tu corazÃ³n/n\"El d"
+        ],
+        [
+            "isco de tu co",
+            "razÃ³n\" \"El disc",
+            "o de tu corazÃ³n\"/nNo v"
+        ],
+        [
+            "es que es nece",
+            "sÃ¡rio  Terminar",
+            " en una habitaciÃ³n/n\"Inv"
+        ],
+        [
+            "Ã­tame a tu ha",
+            "bitaciÃ³n... Â",
+            "¡Â¡YA!!\"/nNo v"
+        ],
+        [
+            "es que es nece",
+            "sÃ¡rio  Terminar",
+            " en una habitaciÃ³n/n\"Inv"
+        ],
+        [
+            "Ã­tame a tu ha",
+            "bitaciÃ³n",
+            "/nP"
+        ],
+        [
+            "asemos a lo bu",
+            "eno Desh",
+            "azte de tu ropa/nY dime \"O"
+        ],
+        [
+            "h\", \"oh\", o",
+            "h\", \"oh\", \"u",
+            "oh/nMu"
+        ],
+        [
+            "Ã±eca te lo r",
+            "uego AgÃ",
+            "­tame la boca/nY dime \"O"
+        ],
+        [
+            "h\", \"oh\", ",
+            "oh\", \"oh\", ",
+            "\"uoh/nQuiero conoc"
+        ],
+        [
+            "erte CambiarÃ­as un poquito de",
+            " mi suerte/nSigue la corrie"
+        ],
+        [
+            "nte/nEl impulso de tu piel nunca te m"
+        ],
+        [
+            "iente/n\"El "
+        ],
+        [
+            "disco de tu co",
+            "razÃ³n\"El disc",
+            "o de tu corazÃ³n/n\"InvÃ­t"
+        ],
+        [
+            "ame a tu habit",
+            "aciÃ³n... Â¡Â¡",
+            "YA!!\"/nPasemo"
+        ],
+        [
+            "s a lo bueno D",
+            "eshazte de tu ",
+            "ropa/nY d"
+        ],
+        [
+            "ime \"Oh\",\"oh\",",
+            "oh\",\"oh\",\"uoh,",
+            " oh/nMuÃ"
+        ],
+        [
+            "±eca te lo rue",
+            "go AgÃ­tame la",
+            " boca"
+        ]
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,105 @@
-{"cancion": "el-sueno", "banda": "carlos-gardel", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "G#m", "E"]}, {"nombre": "parte2", "acordes": ["D", "C#m", "E", "A"]}, {"nombre": "parte3", "acordes": ["D", "E", "A"]}, {"nombre": "parte4", "acordes": ["E", "A", "E"]}], "orden_partes": [0, 1, 2, 1, 3, 1, 2, 2]}, "letras": [["Anoche mie", "ntras dorm\u00ed", "a del cansan", "cio fati", "gado,", "", "/nno s\u00e9 qu\u00e9 "], ["sue\u00f1o ad", "ora", "do cruz", "\u00f3 por la m", "ente m", "a.", "/nSo\u00f1\u00e9 de que te "], ["ve\u00eda y vos me estabas m", "irando,/nque yo te estaba cont"], ["ando mi vi", "da triste,", " muy trist", "e,", "/ny qu"], ["e desapareci", "ste ", "al despertarm", "e llorando", ".", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "PYQcSEvvLxQ", "delay": 0}]}
+{
+    "cancion": "el-sueno",
+    "banda": "carlos-gardel",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "G#m",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "C#m",
+                    "E",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "E",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Anoche mie",
+            "ntras dormí",
+            "a del cansan",
+            "cio fati",
+            "gado,",
+            "",
+            "/nno sé qué "
+        ],
+        [
+            "sueño ad",
+            "ora",
+            "do cruz",
+            "ó por la m",
+            "ente m",
+            "a.",
+            "/nSoñé de que te "
+        ],
+        [
+            "veía y vos me estabas m",
+            "irando,/nque yo te estaba cont"
+        ],
+        [
+            "ando mi vi",
+            "da triste,",
+            " muy trist",
+            "e,",
+            "/ny qu"
+        ],
+        [
+            "e desapareci",
+            "ste ",
+            "al despertarm",
+            "e llorando",
+            ".",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "PYQcSEvvLxQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": [
+        "Tango"
+    ]
+}

@@ -8,6 +8,7 @@ import { CancionUrlManager } from './CancionUrlManager'
 import { CancionIndexedDBManager } from './CancionIndexedDBManager'
 import { CancionSubidasManager } from './CancionSubidasUrlManager'
 import { CancionFogonManager } from './CancionFogonManager'
+import { ListasServerManager } from './ListasServerManager'
 
 export class CancionManager {
   private static instance: CancionManager
@@ -16,13 +17,14 @@ export class CancionManager {
 
   private cliente: ClienteSocket | null = null
   private db: IDBDatabase | null = null
-
+  public listasServerManager: ListasServerManager | null = null
   public setCliente(cliente: ClienteSocket): void {
     this.cliente = cliente
+    this.listasServerManager = new ListasServerManager(cliente)
   }
   private getDBConnection(): Promise<IDBDatabase> {
     return new Promise((resolve, reject) => {
-      const request = indexedDB.open('MiBaseDeDatos', 1)
+      const request = indexedDB.open('MiBaseDeDatos', 2) // Cambiar versión de 1 a 2
 
       request.onupgradeneeded = (event: IDBVersionChangeEvent) => {
         const db = (event.target as IDBOpenDBRequest).result
@@ -30,6 +32,11 @@ export class CancionManager {
         // Crear el objectStore si no existe
         if (!db.objectStoreNames.contains('canciones')) {
           db.createObjectStore('canciones', { keyPath: 'archivo' })
+        }
+
+        // Crear el objectStore para el índice si no existe
+        if (!db.objectStoreNames.contains('indice')) {
+          db.createObjectStore('indice', { keyPath: 'origen.fileName' })
         }
       }
 
@@ -118,5 +125,65 @@ export class CancionManager {
     const ultimas = new UltimasCanciones()
     console.log('Guardando en ultimas', item)
     ultimas.agregar(item)
+  }
+
+  public async Borrar(cancion: ItemIndiceCancion): Promise<void> {
+    if (cancion.origen.origenUrl === 'local') {
+      if (!this.db) {
+        console.error('No se ha establecido la conexión a IndexedDB')
+        throw new Error('No se ha establecido la conexión a IndexedDB')
+      }
+      return CancionIndexedDBManager.Borrar(this.db, cancion)
+    }
+  }
+
+  public async GetDBIndex(): Promise<ItemIndiceCancion[]> {
+    if (!this.db) {
+      console.error('No se ha establecido la conexión a IndexedDB')
+      throw new Error('No se ha establecido la conexión a IndexedDB')
+    }
+    return CancionIndexedDBManager.GetDBIndex(this.db)
+  }
+
+  public async GetServerIndex(): Promise<ItemIndiceCancion[]> {
+    const response = await this.cliente?.HTTPGET('indice/owner')
+    if (!response) {
+      return []
+    }
+
+    const data = await response.json()
+    if (!Array.isArray(data)) {
+      return []
+    }
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return data.map((item: any) => {
+      const origen = new OrigenCancion(
+        'server',
+        item.origen?.fileName || '',
+        item.owner || '',
+      )
+      const indiceItem = new ItemIndiceCancion(
+        origen,
+        item.cancion || '',
+        item.banda || '',
+      )
+
+      // Mapear propiedades adicionales si existen en la respuesta
+      indiceItem.escala = item.escala || ''
+      indiceItem.totalCompases = item.totalCompases || 0
+      indiceItem.compasUnidad = item.compasUnidad || 0
+      indiceItem.compasCantidad = item.compasCantidad || 4
+      indiceItem.bpm = item.bpm || 60
+      indiceItem.cantacordes = item.cantacordes || 0
+      indiceItem.cantpartes = item.cantpartes || 0
+      indiceItem.calidad = item.calidad || 1
+      indiceItem.video = item.video || false
+      indiceItem.pentagramas = item.pentagramas || []
+      indiceItem.etiquetas = item.etiquetas || []
+      indiceItem.owner = item.owner || ''
+
+      return indiceItem
+    })
   }
 }

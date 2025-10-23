@@ -1,1 +1,419 @@
-{"cancion": "be-alright", "banda": "ariana-grande", "escala": "Am", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "F", "Em", "Am", "Am", "Dm", "G", "Am", "Am", "F", "Em", "Am", "Am", "Dm", "Em", "Am", "Am", "F", "Em", "Am", "Am", "Dm", "G", "Am", "Am", "F", "G", "Am", "Am", "Dm", "Em", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "Am", "Am", "Dm", "Em", "Am", "Am", "F", "Em", "Am", "Am", "Dm", "G", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "G", "Am", "Am", "Dm", "G", "Am", "Am", "F", "G", "Am", "Am", "Dm", "Em", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "Am", "Am", "Dm", "Em", "Am", "Am", "F", "Em", "Am", "Am", "Dm", "G", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "G", "Am", "Am", "F", "Em", "G", "Am", "Am", "Dm", "Em", "Am"]}], "orden_partes": [0]}, "letras": [[], [], [], [" [Ve", "rse ", "1]", "/n "], ["Midni", "ght sh", "adow", "s/n We're "], ["finding l", "ove, it's a ba", "ttl", "e/n But the "], ["dayl", "ight is so", " clo", "se/n So "], ["don't you w", "orry about a th", "ing", "/n We'll be al"], ["right", "", "", "", "/n"], [], ["right", "", "", "", "/n[Re"], ["frain]", "", "", "", "/n"], [" Baby, d", "on't you know/n"], [" all of them tears g", "on' come and go?/n"], [" Baby, you just gotta m", "ake up your mind/n That "], ["every little things gon", "na be alright/n"], [" Baby, d", "on't you know/n"], [" all of them tears g", "on' come and go?/n"], [" Baby, you just gotta m", "ake up your mind/n "], ["We decide that/n We'll be alrigh"], ["t", "", "", "/n"], [], ["right", "", "", "", "/n [V"], ["erse 2", "] ", "", "", "/n "], ["In s", "low- mo", "tio", "n/n Can't "], ["seem to g", "et where we're go", "in'", "/n But the "], ["hard t", "imes are go", "lden", "/n 'Cause "], ["they all l", "ead to better da", "ys", "/n We'll be al"], ["right", "", "", "", "/n"], [], ["right", "", "", "", "/n[Re"], ["frain]", "", "", "", "/n"], [" Baby, d", "on't you know/n"], [" all of them tears g", "on' come and go?/n"], [" Baby, you just gotta m", "ake up your mind/n That "], ["every little things gon", "na be alright/n"], [" Baby, d", "on't you know/n"], [" all of them tears g", "on' come and go?/n"], [" Baby, you just gotta m", "ake up your mind/n "], ["We decide that/n We'll be alrigh"], ["t", "", "", "/n"], [], ["right", "", "", "", "/n[En"], ["ding]", "", "", "", "/n"], [], [], [], ["____", "____", "________", "_____________"]], "medias": [{"tipo": "Youtube", "id": "eBAHqRnSgRw", "delay": 0}]}
+{
+    "cancion": "be-alright",
+    "banda": "ariana-grande",
+    "escala": "Am",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Em",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [
+            " [Ve",
+            "rse ",
+            "1]",
+            "/n "
+        ],
+        [
+            "Midni",
+            "ght sh",
+            "adow",
+            "s/n We're "
+        ],
+        [
+            "finding l",
+            "ove, it's a ba",
+            "ttl",
+            "e/n But the "
+        ],
+        [
+            "dayl",
+            "ight is so",
+            " clo",
+            "se/n So "
+        ],
+        [
+            "don't you w",
+            "orry about a th",
+            "ing",
+            "/n We'll be al"
+        ],
+        [
+            "right",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "right",
+            "",
+            "",
+            "",
+            "/n[Re"
+        ],
+        [
+            "frain]",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Baby, d",
+            "on't you know/n"
+        ],
+        [
+            " all of them tears g",
+            "on' come and go?/n"
+        ],
+        [
+            " Baby, you just gotta m",
+            "ake up your mind/n That "
+        ],
+        [
+            "every little things gon",
+            "na be alright/n"
+        ],
+        [
+            " Baby, d",
+            "on't you know/n"
+        ],
+        [
+            " all of them tears g",
+            "on' come and go?/n"
+        ],
+        [
+            " Baby, you just gotta m",
+            "ake up your mind/n "
+        ],
+        [
+            "We decide that/n We'll be alrigh"
+        ],
+        [
+            "t",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "right",
+            "",
+            "",
+            "",
+            "/n [V"
+        ],
+        [
+            "erse 2",
+            "] ",
+            "",
+            "",
+            "/n "
+        ],
+        [
+            "In s",
+            "low- mo",
+            "tio",
+            "n/n Can't "
+        ],
+        [
+            "seem to g",
+            "et where we're go",
+            "in'",
+            "/n But the "
+        ],
+        [
+            "hard t",
+            "imes are go",
+            "lden",
+            "/n 'Cause "
+        ],
+        [
+            "they all l",
+            "ead to better da",
+            "ys",
+            "/n We'll be al"
+        ],
+        [
+            "right",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "right",
+            "",
+            "",
+            "",
+            "/n[Re"
+        ],
+        [
+            "frain]",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Baby, d",
+            "on't you know/n"
+        ],
+        [
+            " all of them tears g",
+            "on' come and go?/n"
+        ],
+        [
+            " Baby, you just gotta m",
+            "ake up your mind/n That "
+        ],
+        [
+            "every little things gon",
+            "na be alright/n"
+        ],
+        [
+            " Baby, d",
+            "on't you know/n"
+        ],
+        [
+            " all of them tears g",
+            "on' come and go?/n"
+        ],
+        [
+            " Baby, you just gotta m",
+            "ake up your mind/n "
+        ],
+        [
+            "We decide that/n We'll be alrigh"
+        ],
+        [
+            "t",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [
+            "right",
+            "",
+            "",
+            "",
+            "/n[En"
+        ],
+        [
+            "ding]",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [],
+        [],
+        [],
+        [
+            "____",
+            "____",
+            "________",
+            "_____________"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "eBAHqRnSgRw",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

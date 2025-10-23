@@ -1,1 +1,363 @@
-{"cancion": "vienna", "banda": "billy-joel", "escala": "Bb5+", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bb5+", "Ab7(11+)", "A\u00ba", "Eb/Bb", "Gb6(11+)", "F7", "Bb", "Gm", "Bb", "F", "Ab", "Eb", "Bb", "C7", "D4", "D7", "Gm", "Bb", "F", "Ab", "Eb", "Bb", "Am7", "D4", "D7", "Eb", "F", "Bb", "F/A", "Gm7", "Bb/F", "Eb", "Am7", "D7", "Gm7", "C7", "Gb7", "F7", "Bb", "Gm", "Bb", "F", "Ab", "Eb", "Bb", "C", "D4", "D7", "Gm", "Bb", "F", "Ab", "Eb", "Bb", "Am7", "D4", "D7", "Eb", "F7", "Bb", "F/A", "Gm7", "Bb/F", "Eb", "Am7", "D7", "Gm7", "C7", "Gb7", "F7", "Bb", "Gm", "Bb", "F", "Ab", "Eb", "Bb", "Am7", "D4", "D7", "Eb", "F", "Bb", "F/A", "Gm", "Bb/F", "Eb", "Am7", "D7", "Gm7", "C7", "Gb7", "F7", "Bb", "Eb", "F", "Bb", "F/A", "Gm", "Bb/F", "Eb", "Am7", "D7", "Gm7", "C7", "Gb7", "F7", "Bb", "G7", "C7(4)", "F7", "Bb5+", "Ab7(11+)", "A\u00ba", "Eb/Bb", "Gb6(11+)", "F7", "Bb"]}], "orden_partes": [0]}, "letras": [[], [], ["   Slow down, you cra", "zy child/nYou're s"], ["o ambitious for a  ", "  juvenile/nBut then if y"], ["ou're so smart, tell me/nWh"], ["y are you still so afra", "id?", "", "/n"], ["   Where's the fire/nWhat's the h"], ["urry about?/nYou'd better "], ["  cool it off /nBefore you b"], ["urn it out/nYou've got s"], ["o much to do and/nOnly s"], ["o many hours in a da", "y", "", "/n"], ["   But you know that /nWhen the tr"], ["uth is told/nThat you can g"], ["et what you wa", "nt /nOr you can j"], ["ust get o", "ld/nYou're gonna "], ["   kick off /nBefore you "], ["even get ha", "lfway/n"], ["    Through, uh u", "h/nWhen will you r"], ["ealize/n"], ["   Vienna waits for yo", "u?/n"], ["   Slow down, you're do", "ing fine/nYou can't be "], ["everything you want to be/nBef"], ["ore your time, although it's/nS"], ["o romantic on the  ", "  borderline/nTon"], ["ight, toni", "ght", "/n"], ["   Too bad but it's the li", "fe you lead/nYou're so ah"], ["ead of yourself /nThat you forg"], ["ot what you need/nThough you can s"], ["ee when you're wrong/nYou know you c"], ["an't always see /nWhen you're r"], ["ight/nYou're r"], ["ight", "/n"], ["   You've got your passion/nYou've g"], ["ot your pride/nBut d"], ["on't you know that o", "nly fools /n"], ["    Are satisfi", "ed?/n"], ["   Dream on, but don't ima", "gine /nThey'll "], ["all come tru", "e, uh uh", "/nWhen will you r"], ["ealize/n"], ["   Vienna waits ", "  for you?/n"], [], [], ["   Slow down, you cra", "zy child/nAnd take the ph"], ["one off the ho", "ok /nAnd disappea"], ["r for awhi", "le/n"], ["   It's all right, you can affo", "rd to lose /nA d"], ["ay or two", ", uh uh", "/nWhen will you r"], ["ealize/n"], ["   Vienna waits  ", "  for you?/n"], ["    And you know that when /nThe tr"], ["uth is told/nThat you can g"], ["et what you wa", "nt /nOr you can j"], ["ust get o", "ld/nYou're gonna "], ["   kick off /nBefore you "], ["even get ha", "lfway/n"], ["   Through, uh u", "h/nWhy don\u00b4t you "], ["realize/n"], ["   Vienna waits  ", "  for you?/n"], ["   When will you re", "alize/n"], ["   Vienna waits for you?/n"], [], []], "medias": [{"tipo": "Youtube", "id": "3jL4S4X97sQ", "delay": 0}]}
+{
+    "cancion": "vienna",
+    "banda": "billy-joel",
+    "escala": "Bb5+",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bb5+",
+                    "Ab7(11+)",
+                    "Aº",
+                    "Eb/Bb",
+                    "Gb6(11+)",
+                    "F7",
+                    "Bb",
+                    "Gm",
+                    "Bb",
+                    "F",
+                    "Ab",
+                    "Eb",
+                    "Bb",
+                    "C7",
+                    "D4",
+                    "D7",
+                    "Gm",
+                    "Bb",
+                    "F",
+                    "Ab",
+                    "Eb",
+                    "Bb",
+                    "Am7",
+                    "D4",
+                    "D7",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm7",
+                    "Bb/F",
+                    "Eb",
+                    "Am7",
+                    "D7",
+                    "Gm7",
+                    "C7",
+                    "Gb7",
+                    "F7",
+                    "Bb",
+                    "Gm",
+                    "Bb",
+                    "F",
+                    "Ab",
+                    "Eb",
+                    "Bb",
+                    "C",
+                    "D4",
+                    "D7",
+                    "Gm",
+                    "Bb",
+                    "F",
+                    "Ab",
+                    "Eb",
+                    "Bb",
+                    "Am7",
+                    "D4",
+                    "D7",
+                    "Eb",
+                    "F7",
+                    "Bb",
+                    "F/A",
+                    "Gm7",
+                    "Bb/F",
+                    "Eb",
+                    "Am7",
+                    "D7",
+                    "Gm7",
+                    "C7",
+                    "Gb7",
+                    "F7",
+                    "Bb",
+                    "Gm",
+                    "Bb",
+                    "F",
+                    "Ab",
+                    "Eb",
+                    "Bb",
+                    "Am7",
+                    "D4",
+                    "D7",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "Bb/F",
+                    "Eb",
+                    "Am7",
+                    "D7",
+                    "Gm7",
+                    "C7",
+                    "Gb7",
+                    "F7",
+                    "Bb",
+                    "Eb",
+                    "F",
+                    "Bb",
+                    "F/A",
+                    "Gm",
+                    "Bb/F",
+                    "Eb",
+                    "Am7",
+                    "D7",
+                    "Gm7",
+                    "C7",
+                    "Gb7",
+                    "F7",
+                    "Bb",
+                    "G7",
+                    "C7(4)",
+                    "F7",
+                    "Bb5+",
+                    "Ab7(11+)",
+                    "Aº",
+                    "Eb/Bb",
+                    "Gb6(11+)",
+                    "F7",
+                    "Bb"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "   Slow down, you cra",
+            "zy child/nYou're s"
+        ],
+        [
+            "o ambitious for a  ",
+            "  juvenile/nBut then if y"
+        ],
+        [
+            "ou're so smart, tell me/nWh"
+        ],
+        [
+            "y are you still so afra",
+            "id?",
+            "",
+            "/n"
+        ],
+        [
+            "   Where's the fire/nWhat's the h"
+        ],
+        [
+            "urry about?/nYou'd better "
+        ],
+        [
+            "  cool it off /nBefore you b"
+        ],
+        [
+            "urn it out/nYou've got s"
+        ],
+        [
+            "o much to do and/nOnly s"
+        ],
+        [
+            "o many hours in a da",
+            "y",
+            "",
+            "/n"
+        ],
+        [
+            "   But you know that /nWhen the tr"
+        ],
+        [
+            "uth is told/nThat you can g"
+        ],
+        [
+            "et what you wa",
+            "nt /nOr you can j"
+        ],
+        [
+            "ust get o",
+            "ld/nYou're gonna "
+        ],
+        [
+            "   kick off /nBefore you "
+        ],
+        [
+            "even get ha",
+            "lfway/n"
+        ],
+        [
+            "    Through, uh u",
+            "h/nWhen will you r"
+        ],
+        [
+            "ealize/n"
+        ],
+        [
+            "   Vienna waits for yo",
+            "u?/n"
+        ],
+        [
+            "   Slow down, you're do",
+            "ing fine/nYou can't be "
+        ],
+        [
+            "everything you want to be/nBef"
+        ],
+        [
+            "ore your time, although it's/nS"
+        ],
+        [
+            "o romantic on the  ",
+            "  borderline/nTon"
+        ],
+        [
+            "ight, toni",
+            "ght",
+            "/n"
+        ],
+        [
+            "   Too bad but it's the li",
+            "fe you lead/nYou're so ah"
+        ],
+        [
+            "ead of yourself /nThat you forg"
+        ],
+        [
+            "ot what you need/nThough you can s"
+        ],
+        [
+            "ee when you're wrong/nYou know you c"
+        ],
+        [
+            "an't always see /nWhen you're r"
+        ],
+        [
+            "ight/nYou're r"
+        ],
+        [
+            "ight",
+            "/n"
+        ],
+        [
+            "   You've got your passion/nYou've g"
+        ],
+        [
+            "ot your pride/nBut d"
+        ],
+        [
+            "on't you know that o",
+            "nly fools /n"
+        ],
+        [
+            "    Are satisfi",
+            "ed?/n"
+        ],
+        [
+            "   Dream on, but don't ima",
+            "gine /nThey'll "
+        ],
+        [
+            "all come tru",
+            "e, uh uh",
+            "/nWhen will you r"
+        ],
+        [
+            "ealize/n"
+        ],
+        [
+            "   Vienna waits ",
+            "  for you?/n"
+        ],
+        [],
+        [],
+        [
+            "   Slow down, you cra",
+            "zy child/nAnd take the ph"
+        ],
+        [
+            "one off the ho",
+            "ok /nAnd disappea"
+        ],
+        [
+            "r for awhi",
+            "le/n"
+        ],
+        [
+            "   It's all right, you can affo",
+            "rd to lose /nA d"
+        ],
+        [
+            "ay or two",
+            ", uh uh",
+            "/nWhen will you r"
+        ],
+        [
+            "ealize/n"
+        ],
+        [
+            "   Vienna waits  ",
+            "  for you?/n"
+        ],
+        [
+            "    And you know that when /nThe tr"
+        ],
+        [
+            "uth is told/nThat you can g"
+        ],
+        [
+            "et what you wa",
+            "nt /nOr you can j"
+        ],
+        [
+            "ust get o",
+            "ld/nYou're gonna "
+        ],
+        [
+            "   kick off /nBefore you "
+        ],
+        [
+            "even get ha",
+            "lfway/n"
+        ],
+        [
+            "   Through, uh u",
+            "h/nWhy don´t you "
+        ],
+        [
+            "realize/n"
+        ],
+        [
+            "   Vienna waits  ",
+            "  for you?/n"
+        ],
+        [
+            "   When will you re",
+            "alize/n"
+        ],
+        [
+            "   Vienna waits for you?/n"
+        ],
+        [],
+        []
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "3jL4S4X97sQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

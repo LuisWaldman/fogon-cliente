@@ -1,1 +1,334 @@
-{"cancion": "What-We-Said", "banda": "shakira", "escala": "F", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "C", "G", "F", "C"]}, {"nombre": "parte2", "acordes": ["G"]}, {"nombre": "parte3", "acordes": ["Am", "Dm"]}, {"nombre": "parte4", "acordes": ["E", "Dm"]}, {"nombre": "parte5", "acordes": ["F", "G", "C", "G", "F", "F"]}], "orden_partes": [0, 1, 0, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 0, 1, 0, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 0, 1, 0, 4, 4, 1, 2, 2, 2, 2, 0, 1, 0]}, "letras": [["I'm leaving with a broken heart", "/nI never mea"], ["nt to do you harm", "/nDon't ever wanna see you cr"], ["y, again", "/n"], ["And everybody hurts sometime", "s/nI never mea"], ["nt to do you wron", "g/nI know you're gonna be just fi"], ["ne, he said/nI"], [" wish we could go ba", "ck in time/nS"], ["ee the world with di", "fferent eyes/nK"], ["nowing what we both", " know now/nC"], ["ould've made it wor", "k somehow/nWhat we s"], ["aid, what we sa", "y/nWhat we m"], ["ade we can't un", "make/nWhat we g"], ["ive is what we ", "get/nAnd this "], ["is what we're s", "tuck with now/nBut we sa"], ["id, whatever that we sa", "id/nWhat we m"], ["ade you know we can", "'t unmake/nWhat we g"], ["ive is only what w", "e get/nAnd this "], ["is what we're s", "tuck with now/n"], ["I'm leaving with a broken heart", "/nI never mea"], ["nt to do you harm", "/nDon't ever wanna see you cr"], ["y, again", "/n"], ["And everybody hurts sometime", "s/nI never mea"], ["nt to do you wron", "g/nI know you're gonna be just fi"], ["ne, he said/nI"], [" wish we could go ba", "ck in time/nF"], ["ind a road that does", "n't wind/nR"], ["ight now darling we ", "would be/nB"], ["eautiful like harmo", "ny/nWhat we s"], ["aid, what we sa", "y/nWhat we m"], ["ade we can't un", "make/nWhat we g"], ["ive is what we ", "get/nAnd this "], ["is what we're s", "tuck with now/nBut we sa"], ["id, whatever that we sa", "id/nWhat we m"], ["ade you know we can", "'t unmake/nWhat we g"], ["ive is only what w", "e get/nAnd this "], ["is what we're s", "tuck with now/n"], ["I'm leaving with a broken heart", "/nI never mea"], ["nt to do you harm", "/nDon't ever wanna see you cr"], ["y, again", "/n"], ["And everybody hurts sometime", "s/nI never mea"], ["nt to do you wron", "g/nI know you're gonna be just fi"], ["ne, he said/n"], ["Do you remem", "ber how you us", "ed to get los", "t in my eyes?", "/n"], ["(I remember, darling)/n"], ["Do you remem", "ber how you pr", "omised you'd neve", "r say goodbye?", "/n"], ["I remember, I remember, I remem", "ber/nWhat we s"], ["aid, what we sa", "y/nWhat we m"], ["ade we can't un", "make/nWhat we g"], ["ive is what we ", "get/nAnd this "], ["is what we're s", "tuck with now/n"], ["I'm leaving with a broken heart", "/nI never mea"], ["nt to do you harm", "/nDon't ever wanna see you cr"], ["y, again", "/n"], ["And everybody hurts sometime", "s/nI never mea"], ["nt to do you wron", "g/nI know you're gonna be just fi"], ["ne, he said"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "_RAUYoqdFrw", "delay": 0}]}
+{
+    "cancion": "What-We-Said",
+    "banda": "shakira",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "C",
+                    "G",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            1,
+            0,
+            4,
+            4,
+            1,
+            2,
+            2,
+            2,
+            2,
+            0,
+            1,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "I'm leaving with a broken heart",
+            "/nI never mea"
+        ],
+        [
+            "nt to do you harm",
+            "/nDon't ever wanna see you cr"
+        ],
+        [
+            "y, again",
+            "/n"
+        ],
+        [
+            "And everybody hurts sometime",
+            "s/nI never mea"
+        ],
+        [
+            "nt to do you wron",
+            "g/nI know you're gonna be just fi"
+        ],
+        [
+            "ne, he said/nI"
+        ],
+        [
+            " wish we could go ba",
+            "ck in time/nS"
+        ],
+        [
+            "ee the world with di",
+            "fferent eyes/nK"
+        ],
+        [
+            "nowing what we both",
+            " know now/nC"
+        ],
+        [
+            "ould've made it wor",
+            "k somehow/nWhat we s"
+        ],
+        [
+            "aid, what we sa",
+            "y/nWhat we m"
+        ],
+        [
+            "ade we can't un",
+            "make/nWhat we g"
+        ],
+        [
+            "ive is what we ",
+            "get/nAnd this "
+        ],
+        [
+            "is what we're s",
+            "tuck with now/nBut we sa"
+        ],
+        [
+            "id, whatever that we sa",
+            "id/nWhat we m"
+        ],
+        [
+            "ade you know we can",
+            "'t unmake/nWhat we g"
+        ],
+        [
+            "ive is only what w",
+            "e get/nAnd this "
+        ],
+        [
+            "is what we're s",
+            "tuck with now/n"
+        ],
+        [
+            "I'm leaving with a broken heart",
+            "/nI never mea"
+        ],
+        [
+            "nt to do you harm",
+            "/nDon't ever wanna see you cr"
+        ],
+        [
+            "y, again",
+            "/n"
+        ],
+        [
+            "And everybody hurts sometime",
+            "s/nI never mea"
+        ],
+        [
+            "nt to do you wron",
+            "g/nI know you're gonna be just fi"
+        ],
+        [
+            "ne, he said/nI"
+        ],
+        [
+            " wish we could go ba",
+            "ck in time/nF"
+        ],
+        [
+            "ind a road that does",
+            "n't wind/nR"
+        ],
+        [
+            "ight now darling we ",
+            "would be/nB"
+        ],
+        [
+            "eautiful like harmo",
+            "ny/nWhat we s"
+        ],
+        [
+            "aid, what we sa",
+            "y/nWhat we m"
+        ],
+        [
+            "ade we can't un",
+            "make/nWhat we g"
+        ],
+        [
+            "ive is what we ",
+            "get/nAnd this "
+        ],
+        [
+            "is what we're s",
+            "tuck with now/nBut we sa"
+        ],
+        [
+            "id, whatever that we sa",
+            "id/nWhat we m"
+        ],
+        [
+            "ade you know we can",
+            "'t unmake/nWhat we g"
+        ],
+        [
+            "ive is only what w",
+            "e get/nAnd this "
+        ],
+        [
+            "is what we're s",
+            "tuck with now/n"
+        ],
+        [
+            "I'm leaving with a broken heart",
+            "/nI never mea"
+        ],
+        [
+            "nt to do you harm",
+            "/nDon't ever wanna see you cr"
+        ],
+        [
+            "y, again",
+            "/n"
+        ],
+        [
+            "And everybody hurts sometime",
+            "s/nI never mea"
+        ],
+        [
+            "nt to do you wron",
+            "g/nI know you're gonna be just fi"
+        ],
+        [
+            "ne, he said/n"
+        ],
+        [
+            "Do you remem",
+            "ber how you us",
+            "ed to get los",
+            "t in my eyes?",
+            "/n"
+        ],
+        [
+            "(I remember, darling)/n"
+        ],
+        [
+            "Do you remem",
+            "ber how you pr",
+            "omised you'd neve",
+            "r say goodbye?",
+            "/n"
+        ],
+        [
+            "I remember, I remember, I remem",
+            "ber/nWhat we s"
+        ],
+        [
+            "aid, what we sa",
+            "y/nWhat we m"
+        ],
+        [
+            "ade we can't un",
+            "make/nWhat we g"
+        ],
+        [
+            "ive is what we ",
+            "get/nAnd this "
+        ],
+        [
+            "is what we're s",
+            "tuck with now/n"
+        ],
+        [
+            "I'm leaving with a broken heart",
+            "/nI never mea"
+        ],
+        [
+            "nt to do you harm",
+            "/nDon't ever wanna see you cr"
+        ],
+        [
+            "y, again",
+            "/n"
+        ],
+        [
+            "And everybody hurts sometime",
+            "s/nI never mea"
+        ],
+        [
+            "nt to do you wron",
+            "g/nI know you're gonna be just fi"
+        ],
+        [
+            "ne, he said"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "_RAUYoqdFrw",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

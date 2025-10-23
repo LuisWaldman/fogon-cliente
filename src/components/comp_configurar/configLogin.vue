@@ -132,7 +132,8 @@ function logout() {
           @click="loginWithCredentials"
           v-if="
             appStore.estadosApp.estadoLogin == '' ||
-            appStore.estadosApp.estadoLogin == 'error'
+            appStore.estadosApp.estadoLogin == 'error' ||
+            appStore.estadosApp.estadoLogin == 'desconectado'
           "
         >
           Login

@@ -1,1 +1,234 @@
-{"cancion": "Mary-Ann", "banda": "bob-dylan", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C/G", "G", "C/G"]}, {"nombre": "parte2", "acordes": ["G", "D"]}, {"nombre": "parte3", "acordes": ["C/G", "G", "C/G"]}, {"nombre": "parte4", "acordes": ["G", "C/G", "G", "F#", "Em"]}], "orden_partes": [0, 1, 0, 0, 2, 0, 0, 1, 3, 0, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0]}, "letras": [["Oh fare thee w", "ell my ow", "n true lov", "e/n"], ["Fare thee well but for a w", "hile/nAn' "], ["I am b", "ound aw", "ay for the sea", ",/nMary "], ["Ann    ", " Aaa      ", "Aaa      A", "aa/nI am "], ["bound  a", "way for the se", "a, Mary Ann", "", "", "", "/n"], ["Ten thousand m", "iles away", " from home", "/n"], ["Ten thousand miles or m", "ore/nThe "], ["sea may f", "reeze an' the ea", "rth  may", "  burn", "/nIf I "], ["never n", "o-more re", "turn to you", ",/nMary "], ["Ann    ", " Aaa      ", "Aaa      A", "aa/nIf I "], ["never n", "o-more re", "turn to you", ", Mary Ann", "", "", "", "/n"], ["Oh don't you s", "ee that cr", "ow fly hig", "h/n"], ["She'll surely turn to w", "hite/nIf "], ["ever I p", "rove fa", "lse  to ", "  you", "/nLet the "], ["day  t", "urn to ni", "ght, my dea", "r/nMary "], ["Ann    ", " Aaa   ", "  Aaa  ", "   Aaa/nLet the "], ["day  t", "urn to ni", "ght, my dea", "r.  Mary Ann.", "", "", "", "/n"], ["Oh, if I h", "ad a fl", "ask of gin", "/nan' "], ["sugar here for t", "wo/nAn' a "], ["great big b", "owl for to mi", "x  it ", " in", "/nI'd "], ["pour a d", "rink for yo", "u, my dea", "r/nMary "], ["Ann    ", " Aaa   ", "  Aaa  ", "   Aaa/nYes I'd "], ["pour a d", "rink for yo", "u, my dea", "r. Mary Ann.", "", "", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "1h-16THWgqs", "delay": 0}]}
+{
+    "cancion": "Mary-Ann",
+    "banda": "bob-dylan",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C/G",
+                    "G",
+                    "C/G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C/G",
+                    "G",
+                    "C/G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "C/G",
+                    "G",
+                    "F#",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Oh fare thee w",
+            "ell my ow",
+            "n true lov",
+            "e/n"
+        ],
+        [
+            "Fare thee well but for a w",
+            "hile/nAn' "
+        ],
+        [
+            "I am b",
+            "ound aw",
+            "ay for the sea",
+            ",/nMary "
+        ],
+        [
+            "Ann    ",
+            " Aaa      ",
+            "Aaa      A",
+            "aa/nI am "
+        ],
+        [
+            "bound  a",
+            "way for the se",
+            "a, Mary Ann",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ten thousand m",
+            "iles away",
+            " from home",
+            "/n"
+        ],
+        [
+            "Ten thousand miles or m",
+            "ore/nThe "
+        ],
+        [
+            "sea may f",
+            "reeze an' the ea",
+            "rth  may",
+            "  burn",
+            "/nIf I "
+        ],
+        [
+            "never n",
+            "o-more re",
+            "turn to you",
+            ",/nMary "
+        ],
+        [
+            "Ann    ",
+            " Aaa      ",
+            "Aaa      A",
+            "aa/nIf I "
+        ],
+        [
+            "never n",
+            "o-more re",
+            "turn to you",
+            ", Mary Ann",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh don't you s",
+            "ee that cr",
+            "ow fly hig",
+            "h/n"
+        ],
+        [
+            "She'll surely turn to w",
+            "hite/nIf "
+        ],
+        [
+            "ever I p",
+            "rove fa",
+            "lse  to ",
+            "  you",
+            "/nLet the "
+        ],
+        [
+            "day  t",
+            "urn to ni",
+            "ght, my dea",
+            "r/nMary "
+        ],
+        [
+            "Ann    ",
+            " Aaa   ",
+            "  Aaa  ",
+            "   Aaa/nLet the "
+        ],
+        [
+            "day  t",
+            "urn to ni",
+            "ght, my dea",
+            "r.  Mary Ann.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh, if I h",
+            "ad a fl",
+            "ask of gin",
+            "/nan' "
+        ],
+        [
+            "sugar here for t",
+            "wo/nAn' a "
+        ],
+        [
+            "great big b",
+            "owl for to mi",
+            "x  it ",
+            " in",
+            "/nI'd "
+        ],
+        [
+            "pour a d",
+            "rink for yo",
+            "u, my dea",
+            "r/nMary "
+        ],
+        [
+            "Ann    ",
+            " Aaa   ",
+            "  Aaa  ",
+            "   Aaa/nYes I'd "
+        ],
+        [
+            "pour a d",
+            "rink for yo",
+            "u, my dea",
+            "r. Mary Ann.",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "1h-16THWgqs",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

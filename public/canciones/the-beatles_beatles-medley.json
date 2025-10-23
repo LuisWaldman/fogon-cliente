@@ -1,1 +1,437 @@
-{"cancion": "Beatles-Medley", "banda": "the-beatles", "escala": "C/G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C/G", "Em", "C/G", "Em", "Dm7", "E", "E7", "Am", "Am7", "Am", "F", "E", "Am", "G", "C", "G", "B7", "Bm", "Bm7M", "Bm7", "Bm6", "Bm", "Bm7M", "Bm7", "Bm6", "C", "Em7/B", "Am7", "D7", "G", "G", "C9", "D", "G", "C9", "D", "G", "C9", "D", "D", "G", "Bm", "Em", "Em7", "C", "G/B", "A9", "G", "Bm", "Em", "Em7", "C/G", "F7M/C", "Em", "Em7", "C/G", "F7M/C", "Em", "C/G", "D", "D/C", "G/B", "Gm/Bb", "D/A", "A", "F", "F7M", "F7", "Gm", "Gm/F", "Eb/Bb", "Eb/Bb", "F7", "Bb", "Dm7/A", "Gm", "Eb/Bb", "F7", "Eb/Bb", "Bb", "Dm", "G", "C", "Am", "Dm", "G7", "C", "Bm", "E7(4/9)", "E7", "G", "Bm", "Em", "Bm", "Am", "D", "G", "Am7", "G/B", "G", "C", "C#\u00b0", "D", "D#5-", "Em", "Eb", "D", "Db\u00b0", "C", "Cm", "G/B", "A7", "C/D", "G", "D7", "G", "Eb7", "E7", "A7", "D7", "G", "F#", "F", "G5", "B5", "A5", "G5", "A5", "A", "D", "B7", "A", "Cm", "Gm", "Ab/Bb", "Eb", "Eb7", "Ab", "Ab7M", "Ab", "A", "A7", "G", "D", "A", "G", "F", "Dm", "G7", "C", "D/C", "Cm7", "F/C", "C"]}], "orden_partes": [0]}, "letras": [["Ah! Look at all the lonely pe", "ople/n"], ["Ah! Look at all the lonely pe", "ople/n"], ["Keeping an eye on the w", "orld going by", " my win", "dow,  ", "     t", "aking ", "my time /n"], ["Lying there and staring at the c", "eiling, Wa", "iting for", " a slee", "py feeli", "ng/n"], ["Ooh  ", " you were mea", "nt to be near ", "me/n"], ["Ooh  ", " and I wan", "t you hear ", "me/n"], ["Say we'll b", "e togeth", "er ever", "y day", "/n"], ["Lucy in the sk", "y with di", "amonds/nL"], ["ucy in the sky", " with dia", "monds/nL"], ["ucy in the sky", " with dia", "monds/n"], ["Ahh/n"], ["  I read the n", "ews today oh bo", "y", "/n"], ["  About a l", "ucky man who ma", "de the grade/n"], ["  And though the n", "ews was rather sa", "d", "/n"], ["  Well I just h", "ad to laugh", "", "/n"], ["  I saw the p", "hotograph", "", "/n"], ["The magical myster", "y tour is hopi", "ng to take you away", "/n"], ["Hoping to take you awa", "y/n"], ["Living is ea", "sy with eye", "s closed/n"], ["Misunderst", "anding all you se", "e/n"], ["It\u00b4s getting hard", " to be someone", "/nBut it"], [" all works o", "ut/n"], [" It dosen't ma", "tter much to m", "e", "/nF"], ["riday night arrives without a s", "uitcase/nS"], ["unday morning creeping like a n", "un/nM"], ["onday's child has learned to tie his bo", "otlace see", " how ", "they'll run", "", "/n"], ["  I don't know why", "     ", "  nobody tol", "d you/n"], ["   How to unfold your lo", "ve/n"], ["Blackbird s", "inging in the de", "ad of nig", "ht/n"], ["Take these b", "roken w", "ings and l", "earn to ", "fly", "/n"], ["All yo", "ur   l", "ife", "/n"], ["You were only wa", "iting for this mo", "ment to aris", "e/n"], ["Oh/n"], ["Honey Pie/nMy position is "], ["tragic/n"], ["Come and show me the m", "agic/n"], ["Of your Hollywood S", "ong", "", "/n"], ["  One thing I can tell you is you got to be free/nCome tog"], ["ether, ri", "ght now", ",  ov", "er me/n"], ["  Here comes the sun/n"], ["  Here comes the su", "n and I say/n"], ["  It's all right/n"], ["The long an", "d windin", "g road/nThat "], ["leads ", "to your do", "or", "", "/nNothin"], ["g's gonna change my world", "/n"], ["Nothing's gonna change my w", "orld/n"], ["And in the end the l", "ove you take/nIs "], ["equal to the l", "ove     ", "  you/n"], ["Make", "", "", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "z8bEgY_m6pQ", "delay": 0}]}
+{
+    "cancion": "Beatles-Medley",
+    "banda": "the-beatles",
+    "escala": "C/G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C/G",
+                    "Em",
+                    "C/G",
+                    "Em",
+                    "Dm7",
+                    "E",
+                    "E7",
+                    "Am",
+                    "Am7",
+                    "Am",
+                    "F",
+                    "E",
+                    "Am",
+                    "G",
+                    "C",
+                    "G",
+                    "B7",
+                    "Bm",
+                    "Bm7M",
+                    "Bm7",
+                    "Bm6",
+                    "Bm",
+                    "Bm7M",
+                    "Bm7",
+                    "Bm6",
+                    "C",
+                    "Em7/B",
+                    "Am7",
+                    "D7",
+                    "G",
+                    "G",
+                    "C9",
+                    "D",
+                    "G",
+                    "C9",
+                    "D",
+                    "G",
+                    "C9",
+                    "D",
+                    "D",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "Em7",
+                    "C",
+                    "G/B",
+                    "A9",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "Em7",
+                    "C/G",
+                    "F7M/C",
+                    "Em",
+                    "Em7",
+                    "C/G",
+                    "F7M/C",
+                    "Em",
+                    "C/G",
+                    "D",
+                    "D/C",
+                    "G/B",
+                    "Gm/Bb",
+                    "D/A",
+                    "A",
+                    "F",
+                    "F7M",
+                    "F7",
+                    "Gm",
+                    "Gm/F",
+                    "Eb/Bb",
+                    "Eb/Bb",
+                    "F7",
+                    "Bb",
+                    "Dm7/A",
+                    "Gm",
+                    "Eb/Bb",
+                    "F7",
+                    "Eb/Bb",
+                    "Bb",
+                    "Dm",
+                    "G",
+                    "C",
+                    "Am",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "Bm",
+                    "E7(4/9)",
+                    "E7",
+                    "G",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Am",
+                    "D",
+                    "G",
+                    "Am7",
+                    "G/B",
+                    "G",
+                    "C",
+                    "C#°",
+                    "D",
+                    "D#5-",
+                    "Em",
+                    "Eb",
+                    "D",
+                    "Db°",
+                    "C",
+                    "Cm",
+                    "G/B",
+                    "A7",
+                    "C/D",
+                    "G",
+                    "D7",
+                    "G",
+                    "Eb7",
+                    "E7",
+                    "A7",
+                    "D7",
+                    "G",
+                    "F#",
+                    "F",
+                    "G5",
+                    "B5",
+                    "A5",
+                    "G5",
+                    "A5",
+                    "A",
+                    "D",
+                    "B7",
+                    "A",
+                    "Cm",
+                    "Gm",
+                    "Ab/Bb",
+                    "Eb",
+                    "Eb7",
+                    "Ab",
+                    "Ab7M",
+                    "Ab",
+                    "A",
+                    "A7",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "F",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "D/C",
+                    "Cm7",
+                    "F/C",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Ah! Look at all the lonely pe",
+            "ople/n"
+        ],
+        [
+            "Ah! Look at all the lonely pe",
+            "ople/n"
+        ],
+        [
+            "Keeping an eye on the w",
+            "orld going by",
+            " my win",
+            "dow,  ",
+            "     t",
+            "aking ",
+            "my time /n"
+        ],
+        [
+            "Lying there and staring at the c",
+            "eiling, Wa",
+            "iting for",
+            " a slee",
+            "py feeli",
+            "ng/n"
+        ],
+        [
+            "Ooh  ",
+            " you were mea",
+            "nt to be near ",
+            "me/n"
+        ],
+        [
+            "Ooh  ",
+            " and I wan",
+            "t you hear ",
+            "me/n"
+        ],
+        [
+            "Say we'll b",
+            "e togeth",
+            "er ever",
+            "y day",
+            "/n"
+        ],
+        [
+            "Lucy in the sk",
+            "y with di",
+            "amonds/nL"
+        ],
+        [
+            "ucy in the sky",
+            " with dia",
+            "monds/nL"
+        ],
+        [
+            "ucy in the sky",
+            " with dia",
+            "monds/n"
+        ],
+        [
+            "Ahh/n"
+        ],
+        [
+            "  I read the n",
+            "ews today oh bo",
+            "y",
+            "/n"
+        ],
+        [
+            "  About a l",
+            "ucky man who ma",
+            "de the grade/n"
+        ],
+        [
+            "  And though the n",
+            "ews was rather sa",
+            "d",
+            "/n"
+        ],
+        [
+            "  Well I just h",
+            "ad to laugh",
+            "",
+            "/n"
+        ],
+        [
+            "  I saw the p",
+            "hotograph",
+            "",
+            "/n"
+        ],
+        [
+            "The magical myster",
+            "y tour is hopi",
+            "ng to take you away",
+            "/n"
+        ],
+        [
+            "Hoping to take you awa",
+            "y/n"
+        ],
+        [
+            "Living is ea",
+            "sy with eye",
+            "s closed/n"
+        ],
+        [
+            "Misunderst",
+            "anding all you se",
+            "e/n"
+        ],
+        [
+            "It´s getting hard",
+            " to be someone",
+            "/nBut it"
+        ],
+        [
+            " all works o",
+            "ut/n"
+        ],
+        [
+            " It dosen't ma",
+            "tter much to m",
+            "e",
+            "/nF"
+        ],
+        [
+            "riday night arrives without a s",
+            "uitcase/nS"
+        ],
+        [
+            "unday morning creeping like a n",
+            "un/nM"
+        ],
+        [
+            "onday's child has learned to tie his bo",
+            "otlace see",
+            " how ",
+            "they'll run",
+            "",
+            "/n"
+        ],
+        [
+            "  I don't know why",
+            "     ",
+            "  nobody tol",
+            "d you/n"
+        ],
+        [
+            "   How to unfold your lo",
+            "ve/n"
+        ],
+        [
+            "Blackbird s",
+            "inging in the de",
+            "ad of nig",
+            "ht/n"
+        ],
+        [
+            "Take these b",
+            "roken w",
+            "ings and l",
+            "earn to ",
+            "fly",
+            "/n"
+        ],
+        [
+            "All yo",
+            "ur   l",
+            "ife",
+            "/n"
+        ],
+        [
+            "You were only wa",
+            "iting for this mo",
+            "ment to aris",
+            "e/n"
+        ],
+        [
+            "Oh/n"
+        ],
+        [
+            "Honey Pie/nMy position is "
+        ],
+        [
+            "tragic/n"
+        ],
+        [
+            "Come and show me the m",
+            "agic/n"
+        ],
+        [
+            "Of your Hollywood S",
+            "ong",
+            "",
+            "/n"
+        ],
+        [
+            "  One thing I can tell you is you got to be free/nCome tog"
+        ],
+        [
+            "ether, ri",
+            "ght now",
+            ",  ov",
+            "er me/n"
+        ],
+        [
+            "  Here comes the sun/n"
+        ],
+        [
+            "  Here comes the su",
+            "n and I say/n"
+        ],
+        [
+            "  It's all right/n"
+        ],
+        [
+            "The long an",
+            "d windin",
+            "g road/nThat "
+        ],
+        [
+            "leads ",
+            "to your do",
+            "or",
+            "",
+            "/nNothin"
+        ],
+        [
+            "g's gonna change my world",
+            "/n"
+        ],
+        [
+            "Nothing's gonna change my w",
+            "orld/n"
+        ],
+        [
+            "And in the end the l",
+            "ove you take/nIs "
+        ],
+        [
+            "equal to the l",
+            "ove     ",
+            "  you/n"
+        ],
+        [
+            "Make",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "z8bEgY_m6pQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

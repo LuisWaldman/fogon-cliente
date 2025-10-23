@@ -8,6 +8,8 @@ import { FiltroEscala } from '../../modelo/indices/filtroEscala'
 import { FiltroTempo } from '../../modelo/indices/filtroTempo'
 import { FiltroVideo } from '../../modelo/indices/filtroVideo'
 import { FiltroPartes } from '../../modelo/indices/filtroPartes'
+import { filtroAcordes } from '../../modelo/indices/filtroAcordes'
+import { FiltroEtiquetas } from '../../modelo/indices/filtroEtiquetas'
 
 const appStore = useAppStore()
 
@@ -93,10 +95,10 @@ const opcionesPartitura = [
 ]
 
 const opcionesAcordes = [
-  { value: '3_o_menos', label: '3 o menos' },
-  { value: '4', label: '4' },
-  { value: '4_a_6', label: '4 a 6' },
-  { value: 'mas_de_6', label: 'más de 6' },
+  { value: '0_3', label: '3 o menos' },
+  { value: '4_4', label: '4' },
+  { value: '4_6', label: '4 a 6' },
+  { value: '6_100', label: 'más de 6' },
 ]
 
 const opcionesDuracion = [
@@ -119,7 +121,7 @@ const opcionesCalidad = [
 
 const opcionesGrupo = [
   { value: 'rock_nacional', label: 'Rock Nacional' },
-  { value: 'tango', label: 'Tango' },
+  { value: 'Tango', label: 'Tango' },
   { value: 'folclore', label: 'Folclore' },
   { value: 'cumbia', label: 'Cumbia' },
   { value: 'rock_internacional', label: 'Rock Internacional' },
@@ -164,6 +166,12 @@ function buscarCanciones() {
     const temposSeleccionados = filtroTempoBPM.value.join(',')
     filtros.push(new FiltroTempo(temposSeleccionados))
   }
+  if (filtroCantAcordes1.value) {
+    const acordesSeleccionados = filtroCantAcordesSeleccionada.value.join(',')
+    // Suponiendo que tienes un filtro para cantidad de acordes
+    filtros.push(new filtroAcordes(acordesSeleccionados))
+  }
+
   if (cfiltroVideo.value) {
     filtros.push(new FiltroVideo())
   }
@@ -172,6 +180,12 @@ function buscarCanciones() {
     const partesSeleccionadas = filtroPartesSeleccionada.value.join(',')
     filtros.push(new FiltroPartes(partesSeleccionadas))
   }
+
+  if (filtroGrupo.value) {
+    const partesSeleccionadas = filtroGrupoSeleccionado.value.join(',')
+    filtros.push(new FiltroEtiquetas(partesSeleccionadas))
+  }
+  //FiltroEtiquetas
 
   appStore.aplicacion.indiceHelper
     .Buscar(filtros)
@@ -217,6 +231,7 @@ function VerFiltros() {
         v-model="busqueda"
         placeholder="Buscar..."
         style="width: 60%"
+        @keydown.enter="buscarCanciones()"
       />
       {{ refEstadoBusqueda }}
     </div>

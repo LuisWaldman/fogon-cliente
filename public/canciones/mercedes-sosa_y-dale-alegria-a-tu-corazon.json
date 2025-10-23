@@ -1,1 +1,343 @@
-{"cancion": "y-dale-alegria-a-tu-corazon", "banda": "mercedes-sosa", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "D7", "G", "A", "G"]}, {"nombre": "parte2", "acordes": ["D"]}, {"nombre": "parte3", "acordes": ["C7", "F", "F7", "Bb", "C", "Bb", "F"]}, {"nombre": "parte4", "acordes": ["F", "F7", "Bb", "C", "Bb"]}, {"nombre": "parte5", "acordes": ["F", "A7"]}], "orden_partes": [0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]}, "letras": [["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/nes lo "], ["\u00fanico que te ", "pido, al menos h", "oy,/ny "], ["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/ny q"], ["ue se enciendan la", "s luces de este amo", "r./nY "], ["ya ver", "\u00e1s como", " se transforma el ai", "re del lugar,", "/ny "], ["ya, ya ver", "\u00e1s, que n", "o necesitare", "mos nada m\u00e1", "s./nY "], ["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/nque ay"], ["er no tuve un buen d", "a por favo", "r,/ny "], ["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/nque "], ["si me das aleg", "r\u00eda estoy me", "jor./nY "], ["ya ver", "\u00e1s, las s", "ombras que aqu\u00ed estuv", "ieron, no estar", "n,/ny "], ["ya, ya ver", "\u00e1s, que n", "o necesitare", "mos nada m\u00e1", "s.", "/nY "], ["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/nes lo "], ["\u00fanico que te ", "pido, al menos h", "oy,/ny "], ["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/na"], ["fuera se ir\u00e1n las ", "penas y el dolo", "r./nY "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya, ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya, ve", "r\u00e1s, que no", " necesitare", "mos nada m\u00e1s", "./nY "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya, ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya, ve", "r\u00e1s, que no", " necesitare", "mos nada m\u00e1s", "./nY "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya, ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya, ve", "r\u00e1s, que no", " necesitare", "mos nada m\u00e1s", ".", "/nY "], ["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/nes lo "], ["\u00fanico que te ", "pido, al menos h", "oy,/ny "], ["dale alegr\u00eda, ale", "gr\u00eda a mi cora", "z\u00f3n/na"], ["fuera se ir\u00e1n la ", "pena y el dol", "or./nY "], ["ya ver", "\u00e1s, las s", "ombras que aqu\u00ed estuv", "ieron, no estar", "n,/ny "], ["ya ver", "\u00e1s, beb", "amos y emborrach", "emos la ciudad,", "/ny "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed estu", "vieron, no esta", "r\u00e1n,/ny "], ["ya ver", "\u00e1s, las ", "sombras que aqu\u00ed est", "uvieron, no esta", "r\u00e1n,/ny "], ["ya ya ver", "\u00e1s, que n", "o necesitare", "mos nada m\u00e1", "s."]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "AtSHbZBEpRA", "delay": 0}]}
+{
+    "cancion": "y-dale-alegria-a-tu-corazon",
+    "banda": "mercedes-sosa",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D7",
+                    "G",
+                    "A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C7",
+                    "F",
+                    "F7",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F7",
+                    "Bb",
+                    "C",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/nes lo "
+        ],
+        [
+            "único que te ",
+            "pido, al menos h",
+            "oy,/ny "
+        ],
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/ny q"
+        ],
+        [
+            "ue se enciendan la",
+            "s luces de este amo",
+            "r./nY "
+        ],
+        [
+            "ya ver",
+            "ás como",
+            " se transforma el ai",
+            "re del lugar,",
+            "/ny "
+        ],
+        [
+            "ya, ya ver",
+            "ás, que n",
+            "o necesitare",
+            "mos nada má",
+            "s./nY "
+        ],
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/nque ay"
+        ],
+        [
+            "er no tuve un buen d",
+            "a por favo",
+            "r,/ny "
+        ],
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/nque "
+        ],
+        [
+            "si me das aleg",
+            "ría estoy me",
+            "jor./nY "
+        ],
+        [
+            "ya ver",
+            "ás, las s",
+            "ombras que aquí estuv",
+            "ieron, no estar",
+            "n,/ny "
+        ],
+        [
+            "ya, ya ver",
+            "ás, que n",
+            "o necesitare",
+            "mos nada má",
+            "s.",
+            "/nY "
+        ],
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/nes lo "
+        ],
+        [
+            "único que te ",
+            "pido, al menos h",
+            "oy,/ny "
+        ],
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/na"
+        ],
+        [
+            "fuera se irán las ",
+            "penas y el dolo",
+            "r./nY "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya, ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya, ve",
+            "rás, que no",
+            " necesitare",
+            "mos nada más",
+            "./nY "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya, ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya, ve",
+            "rás, que no",
+            " necesitare",
+            "mos nada más",
+            "./nY "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya, ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya, ve",
+            "rás, que no",
+            " necesitare",
+            "mos nada más",
+            ".",
+            "/nY "
+        ],
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/nes lo "
+        ],
+        [
+            "único que te ",
+            "pido, al menos h",
+            "oy,/ny "
+        ],
+        [
+            "dale alegría, ale",
+            "gría a mi cora",
+            "zón/na"
+        ],
+        [
+            "fuera se irán la ",
+            "pena y el dol",
+            "or./nY "
+        ],
+        [
+            "ya ver",
+            "ás, las s",
+            "ombras que aquí estuv",
+            "ieron, no estar",
+            "n,/ny "
+        ],
+        [
+            "ya ver",
+            "ás, beb",
+            "amos y emborrach",
+            "emos la ciudad,",
+            "/ny "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí estu",
+            "vieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya ver",
+            "ás, las ",
+            "sombras que aquí est",
+            "uvieron, no esta",
+            "rán,/ny "
+        ],
+        [
+            "ya ya ver",
+            "ás, que n",
+            "o necesitare",
+            "mos nada má",
+            "s."
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "AtSHbZBEpRA",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

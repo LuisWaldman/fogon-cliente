@@ -1,1 +1,381 @@
-{"cancion": "Boas-Vindas", "banda": "caetano-veloso", "escala": "A#m", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A#m", "D#7", "G#", "A#m", "D#7", "G#", "G#", "C#", "D#7", "G#", "A#m", "D#7", "G#", "A#m", "D#7", "G#", "G#", "C#", "D#7", "G#", "A#m", "D#7", "G#", "A#m", "D#7", "G#", "A#m7", "D#7", "Gm7", "C7", "Fm7", "Gm", "C7", "Fm7", "D#m7", "G#m7", "C#7", "F7", "A#m7", "A#m7", "Am7", "G#m7", "C#7", "F#", "D#m7", "G#m7", "C#7", "F#", "D#m7", "G#m", "C#7", "F#", "D#m7", "G#m7", "C#7", "F#", "D#m", "G#m7", "C#7", "F#", "D#m7", "G#m7", "C#7", "F#", "D#m", "G#m7", "C#7", "F#", "C#/D#", "D#7", "G#", "G#", "C#", "D#7", "G#", "A#m7", "D#7", "G#", "A#m7", "D#7", "G#", "A#m7", "D#7", "Gm7", "C7", "Fm7", "Gm", "C7", "Fm7", "D#m7", "G#m7", "C#7", "F7", "A#m7", "A#m7", "Am7", "G#m7", "C#7", "F#", "D#m7", "G#m7", "C#7", "F#", "D#m7", "G#m", "C#7", "F#", "D#m7", "G#m7", "C#7", "F#", "D#m", "G#m7", "C#7", "F#", "D#m7", "G#m7", "C#7", "F#", "D#m", "G#m7", "C#7", "F#", "D#7", "G#", "G#", "C#", "D#7", "G#", "A#m", "D#7", "G#", "A#m", "D#7", "G#", "A#m", "D#7", "G#"]}], "orden_partes": [0]}, "letras": [[], ["Sua m\u00e3e e ", "eu/n"], ["Seu irm\u00e3o e e", "u/nE a "], ["m\u00e3e do s", "eu irm\u00e3", "o", "", "", "/n"], ["Meus irm\u00e3o", "s e eu/n"], ["Minha m\u00e3e e e", "u/nE os "], ["pais da s", "ua m\u00e3e", "", "", "", "/nE a "], ["irm\u00e3 da s", "ua m\u00e3e", "", "", "/nLhe d"], ["amos as bo", "as-vind", "as/nBoas"], ["-vindas, boa", "s-vindas ", "/nVenha "], ["conhecer", " a vida", "", "", "/nEu "], ["digo que ela \u00e9", " gostos", "a", "/nTem o "], ["sol e tem a lu", "a/nTem o "], ["medo e tem a ros", "a/nEu "], ["digo que ela \u00e9 gos", "tosa", "", "/nTem a "], ["noite e tem o dia", "/nA poes"], ["ia e tem a pr", "osa/nEu"], [" digo que ela \u00e9 gos", "tosa", "", "/nTem a "], ["morte e tem o amo", "r/nE tem o "], ["mote e tem a gl", "osa/nEu d"], ["igo que ela \u00e9 gosto", "sa/nEu "], ["digo que ela", " \u00e9 gosto", "sa/n"], ["Sua m\u00e3e e ", "eu/n"], ["Seu irm\u00e3o e ", "eu/nE o "], ["irm\u00e3o da ", "sua m\u00e3e", "", "", "", "/nE a i"], ["rm\u00e3 da su", "a m\u00e3e", "", "", "/nLhe d"], ["amos as bo", "as-vind", "as/nBoas-"], ["vindas, bo", "as-vindas", " /nVenha "], ["conhecer", " a vida", "", "", "/nEu d"], ["igo que ela \u00e9 gosto", "sa", "", "/nTem o"], [" sol e tem a l", "ua/nTem o "], ["medo e tem a ros", "a/nEu "], ["digo que ela \u00e9 gosto", "sa", "", "/nTem a "], ["noite e tem o dia", "/nA poes"], ["ia e tem a pr", "osa/nE"], ["u digo que ela \u00e9 gos", "tosa", "", "/nTem a "], ["morte e tem o amo", "r/nE tem o "], ["mote e tem a gl", "osa/nEu d"], ["igo que ela \u00e9 gosto", "sa/nEu dig"], ["o que ela \u00e9", " gostosa/n"], ["Sua m\u00e3e e ", "eu/n"], ["Seu irm\u00e3o e ", "eu/nE a "], ["m\u00e3e do s", "eu irm", "o/n"], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "-IgHuYT6I2o", "delay": 0}]}
+{
+    "cancion": "Boas-Vindas",
+    "banda": "caetano-veloso",
+    "escala": "A#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "G#",
+                    "C#",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "G#",
+                    "C#",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "A#m7",
+                    "D#7",
+                    "Gm7",
+                    "C7",
+                    "Fm7",
+                    "Gm",
+                    "C7",
+                    "Fm7",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F7",
+                    "A#m7",
+                    "A#m7",
+                    "Am7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "C#/D#",
+                    "D#7",
+                    "G#",
+                    "G#",
+                    "C#",
+                    "D#7",
+                    "G#",
+                    "A#m7",
+                    "D#7",
+                    "G#",
+                    "A#m7",
+                    "D#7",
+                    "G#",
+                    "A#m7",
+                    "D#7",
+                    "Gm7",
+                    "C7",
+                    "Fm7",
+                    "Gm",
+                    "C7",
+                    "Fm7",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F7",
+                    "A#m7",
+                    "A#m7",
+                    "Am7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m7",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#m",
+                    "G#m7",
+                    "C#7",
+                    "F#",
+                    "D#7",
+                    "G#",
+                    "G#",
+                    "C#",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#",
+                    "A#m",
+                    "D#7",
+                    "G#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Sua mãe e ",
+            "eu/n"
+        ],
+        [
+            "Seu irmão e e",
+            "u/nE a "
+        ],
+        [
+            "mãe do s",
+            "eu irmã",
+            "o",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Meus irmão",
+            "s e eu/n"
+        ],
+        [
+            "Minha mãe e e",
+            "u/nE os "
+        ],
+        [
+            "pais da s",
+            "ua mãe",
+            "",
+            "",
+            "",
+            "/nE a "
+        ],
+        [
+            "irmã da s",
+            "ua mãe",
+            "",
+            "",
+            "/nLhe d"
+        ],
+        [
+            "amos as bo",
+            "as-vind",
+            "as/nBoas"
+        ],
+        [
+            "-vindas, boa",
+            "s-vindas ",
+            "/nVenha "
+        ],
+        [
+            "conhecer",
+            " a vida",
+            "",
+            "",
+            "/nEu "
+        ],
+        [
+            "digo que ela é",
+            " gostos",
+            "a",
+            "/nTem o "
+        ],
+        [
+            "sol e tem a lu",
+            "a/nTem o "
+        ],
+        [
+            "medo e tem a ros",
+            "a/nEu "
+        ],
+        [
+            "digo que ela é gos",
+            "tosa",
+            "",
+            "/nTem a "
+        ],
+        [
+            "noite e tem o dia",
+            "/nA poes"
+        ],
+        [
+            "ia e tem a pr",
+            "osa/nEu"
+        ],
+        [
+            " digo que ela é gos",
+            "tosa",
+            "",
+            "/nTem a "
+        ],
+        [
+            "morte e tem o amo",
+            "r/nE tem o "
+        ],
+        [
+            "mote e tem a gl",
+            "osa/nEu d"
+        ],
+        [
+            "igo que ela é gosto",
+            "sa/nEu "
+        ],
+        [
+            "digo que ela",
+            " é gosto",
+            "sa/n"
+        ],
+        [
+            "Sua mãe e ",
+            "eu/n"
+        ],
+        [
+            "Seu irmão e ",
+            "eu/nE o "
+        ],
+        [
+            "irmão da ",
+            "sua mãe",
+            "",
+            "",
+            "",
+            "/nE a i"
+        ],
+        [
+            "rmã da su",
+            "a mãe",
+            "",
+            "",
+            "/nLhe d"
+        ],
+        [
+            "amos as bo",
+            "as-vind",
+            "as/nBoas-"
+        ],
+        [
+            "vindas, bo",
+            "as-vindas",
+            " /nVenha "
+        ],
+        [
+            "conhecer",
+            " a vida",
+            "",
+            "",
+            "/nEu d"
+        ],
+        [
+            "igo que ela é gosto",
+            "sa",
+            "",
+            "/nTem o"
+        ],
+        [
+            " sol e tem a l",
+            "ua/nTem o "
+        ],
+        [
+            "medo e tem a ros",
+            "a/nEu "
+        ],
+        [
+            "digo que ela é gosto",
+            "sa",
+            "",
+            "/nTem a "
+        ],
+        [
+            "noite e tem o dia",
+            "/nA poes"
+        ],
+        [
+            "ia e tem a pr",
+            "osa/nE"
+        ],
+        [
+            "u digo que ela é gos",
+            "tosa",
+            "",
+            "/nTem a "
+        ],
+        [
+            "morte e tem o amo",
+            "r/nE tem o "
+        ],
+        [
+            "mote e tem a gl",
+            "osa/nEu d"
+        ],
+        [
+            "igo que ela é gosto",
+            "sa/nEu dig"
+        ],
+        [
+            "o que ela é",
+            " gostosa/n"
+        ],
+        [
+            "Sua mãe e ",
+            "eu/n"
+        ],
+        [
+            "Seu irmão e ",
+            "eu/nE a "
+        ],
+        [
+            "mãe do s",
+            "eu irm",
+            "o/n"
+        ],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "-IgHuYT6I2o",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

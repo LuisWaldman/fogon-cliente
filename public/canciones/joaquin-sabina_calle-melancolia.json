@@ -1,1 +1,330 @@
-{"cancion": "calle-melancolia", "banda": "joaquin-sabina", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "Bm", "G"]}, {"nombre": "parte2", "acordes": ["A", "D"]}, {"nombre": "parte3", "acordes": ["E", "A", "C", "G", "F"]}], "orden_partes": [0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1]}, "letras": [["Como quien viaja a l", "omos de", " una yeg", "ua sombr\u00eda", "/n"], ["Por la ciudad cam", "ino, no ", "preg", "unteis a d\u00f3nd", "e/n"], ["Busco a caso un enc", "uentro qu", "e me ilumin", "e el d\u00eda", "/n"], ["Y no hallo m\u00e1s que ", "puertas que ni", "egan lo ", "que escond", "en/n"], ["Las chimeneas vier", "ten su v\u00f3mit", "o de humo", "", "/n"], ["A un cielo cada vez ", "m\u00e1s lejan", "o y m\u00e1s", " alto", "/n"], ["Por las paredes ocre", "s se despa", "rrama el zum", "o", "/n"], ["De una fruta de sang", "re crecida en", " el asfal", "to", "/n"], ["Ya el campo estar\u00e1 ", "verde. D", "ebe ser ", "primavera", "/n"], ["Cruza por mi mirada u", "n tren int", "erminabl", "e", "/n"], ["El barrio donde habi", "to no es ni", "nguna prad", "era", "/n"], ["Desolado paisaje de a", "ntenas y de", " cables", "", "/n"], ["Vivo en el n\u00famero 7", ", calle ", "Melancol", "\u00eda", "/n"], ["Quiero mudarme hac", "e a\u00f1os al b", "arrio d", "e la Alegr\u00eda", "/n"], ["Pero siempre que lo i", "ntento ha", " salido ya ", "el tranv\u00eda", "/n"], ["En la escalera me sien", "to a silba", "r mi me", "lod\u00eda", "/n"], ["Como quien viaja a b", "ordo de ", "un barco", " enloquecid", "o/n"], ["Que viene de la noch", "e y va a n", "inguna pa", "rte", "/n"], ["As\u00ed mis pies descien", "den la cues", "ta del olv", "ido", "/n"], ["Fatigados de tanto a", "ndar sin en", "contrarte", "", "/n"], ["Luego, de vuelta a c", "asa, enc", "iendo un", " cigarrillo", "/n"], ["Ordeno mis papeles, ", "resuelvo un", " crucig", "rama", "/n"], ["Me enfado con las somb", "ras que pueb", "lan los pa", "sillos", "/n"], ["Y me abrazo a la aus", "encia que ", "dejas en m", "i cama", "/n"], ["Trepo por tu recuerd", "o como u", "na enred", "adera", "/n"], ["Que no encuentra ven", "tanas dond", "e agarrar", "se. Soy", "/n"], ["Esa absurda epidemia ", "que sufren", " las aceras", "", "/n"], ["Si quieres encontrar", "me, ya sab", "es d\u00f3nde", " estoy", "/n"], ["Vivo en el n\u00famero 7", ", calle ", "Melancol", "\u00eda", "/n"], ["Quiero mudarme hac", "e a\u00f1os al b", "arrio d", "e la Alegr\u00eda", "/n"], ["Pero siempre que lo i", "ntento ha", " salido ya ", "el tranv\u00eda", "/n"], ["En la escalera me sien", "to a silba", "r mi me", "lod\u00eda", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "HpFqPj2ILaQ", "delay": 0}]}
+{
+    "cancion": "calle-melancolia",
+    "banda": "joaquin-sabina",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "A",
+                    "C",
+                    "G",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Como quien viaja a l",
+            "omos de",
+            " una yeg",
+            "ua sombría",
+            "/n"
+        ],
+        [
+            "Por la ciudad cam",
+            "ino, no ",
+            "preg",
+            "unteis a dónd",
+            "e/n"
+        ],
+        [
+            "Busco a caso un enc",
+            "uentro qu",
+            "e me ilumin",
+            "e el día",
+            "/n"
+        ],
+        [
+            "Y no hallo más que ",
+            "puertas que ni",
+            "egan lo ",
+            "que escond",
+            "en/n"
+        ],
+        [
+            "Las chimeneas vier",
+            "ten su vómit",
+            "o de humo",
+            "",
+            "/n"
+        ],
+        [
+            "A un cielo cada vez ",
+            "más lejan",
+            "o y más",
+            " alto",
+            "/n"
+        ],
+        [
+            "Por las paredes ocre",
+            "s se despa",
+            "rrama el zum",
+            "o",
+            "/n"
+        ],
+        [
+            "De una fruta de sang",
+            "re crecida en",
+            " el asfal",
+            "to",
+            "/n"
+        ],
+        [
+            "Ya el campo estará ",
+            "verde. D",
+            "ebe ser ",
+            "primavera",
+            "/n"
+        ],
+        [
+            "Cruza por mi mirada u",
+            "n tren int",
+            "erminabl",
+            "e",
+            "/n"
+        ],
+        [
+            "El barrio donde habi",
+            "to no es ni",
+            "nguna prad",
+            "era",
+            "/n"
+        ],
+        [
+            "Desolado paisaje de a",
+            "ntenas y de",
+            " cables",
+            "",
+            "/n"
+        ],
+        [
+            "Vivo en el número 7",
+            ", calle ",
+            "Melancol",
+            "ía",
+            "/n"
+        ],
+        [
+            "Quiero mudarme hac",
+            "e años al b",
+            "arrio d",
+            "e la Alegría",
+            "/n"
+        ],
+        [
+            "Pero siempre que lo i",
+            "ntento ha",
+            " salido ya ",
+            "el tranvía",
+            "/n"
+        ],
+        [
+            "En la escalera me sien",
+            "to a silba",
+            "r mi me",
+            "lodía",
+            "/n"
+        ],
+        [
+            "Como quien viaja a b",
+            "ordo de ",
+            "un barco",
+            " enloquecid",
+            "o/n"
+        ],
+        [
+            "Que viene de la noch",
+            "e y va a n",
+            "inguna pa",
+            "rte",
+            "/n"
+        ],
+        [
+            "Así mis pies descien",
+            "den la cues",
+            "ta del olv",
+            "ido",
+            "/n"
+        ],
+        [
+            "Fatigados de tanto a",
+            "ndar sin en",
+            "contrarte",
+            "",
+            "/n"
+        ],
+        [
+            "Luego, de vuelta a c",
+            "asa, enc",
+            "iendo un",
+            " cigarrillo",
+            "/n"
+        ],
+        [
+            "Ordeno mis papeles, ",
+            "resuelvo un",
+            " crucig",
+            "rama",
+            "/n"
+        ],
+        [
+            "Me enfado con las somb",
+            "ras que pueb",
+            "lan los pa",
+            "sillos",
+            "/n"
+        ],
+        [
+            "Y me abrazo a la aus",
+            "encia que ",
+            "dejas en m",
+            "i cama",
+            "/n"
+        ],
+        [
+            "Trepo por tu recuerd",
+            "o como u",
+            "na enred",
+            "adera",
+            "/n"
+        ],
+        [
+            "Que no encuentra ven",
+            "tanas dond",
+            "e agarrar",
+            "se. Soy",
+            "/n"
+        ],
+        [
+            "Esa absurda epidemia ",
+            "que sufren",
+            " las aceras",
+            "",
+            "/n"
+        ],
+        [
+            "Si quieres encontrar",
+            "me, ya sab",
+            "es dónde",
+            " estoy",
+            "/n"
+        ],
+        [
+            "Vivo en el número 7",
+            ", calle ",
+            "Melancol",
+            "ía",
+            "/n"
+        ],
+        [
+            "Quiero mudarme hac",
+            "e años al b",
+            "arrio d",
+            "e la Alegría",
+            "/n"
+        ],
+        [
+            "Pero siempre que lo i",
+            "ntento ha",
+            " salido ya ",
+            "el tranvía",
+            "/n"
+        ],
+        [
+            "En la escalera me sien",
+            "to a silba",
+            "r mi me",
+            "lodía",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "HpFqPj2ILaQ",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

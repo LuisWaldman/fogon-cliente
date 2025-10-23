@@ -1,1 +1,395 @@
-{"cancion": "Guess-Im-Doin-Fine", "banda": "bob-dylan", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Dm7", "C"]}, {"nombre": "parte2", "acordes": ["C"]}, {"nombre": "parte3", "acordes": ["F"]}, {"nombre": "parte4", "acordes": ["Dm7"]}, {"nombre": "parte5", "acordes": ["G"]}], "orden_partes": [0, 0, 0, 0, 1, 2, 1, 2, 3, 4, 1, 3, 4, 2, 1, 3, 4, 0, 0, 0, 0, 1, 2, 1, 2, 3, 4, 1, 3, 4, 2, 1, 3, 4, 0, 0, 0, 0, 1, 2, 1, 2, 3, 4, 1, 3, 4, 2, 1, 3, 4, 0, 0, 0, 0, 1, 2, 1, 2, 3, 4, 1, 3, 4, 2, 1, 3, 4, 0, 3, 1, 3, 4, 0, 3, 4, 1, 0, 1, 2, 1, 3, 4, 2, 1, 3, 4, 0, 0, 0, 0, 1, 2, 1, 2, 3, 4, 1, 3, 4, 2, 1, 3, 4]}, "letras": [[" I ain't a-got m", "y child", "-hood/nOr "], ["friends I o", "nce did ", "know/nNo I "], ["ain't a-got my c", "hildho", "od/nOr "], ["friends I o", "nce did kn", "ow/nBut "], ["I still got my vo", "ice left", "/nI can "], ["take it anyw", "here I ", "go", "/n"], ["Hey hey so I g", "uess I'm do", "in' fin", "e.", "", "/nAn I've "], ["never had much m", "oney", "/nBut"], [" I'm still ", "around s", "omehow/nNo I'"], ["ve never had muc", "h mone", "y/nBut"], [" I'm still aro", "und someh", "ow/nMany"], [" times I've b", "ended", "/nBut I "], ["ain't never ", "yet bow", "ed", "/n"], ["Hey hey so I g", "uess I'm do", "in' fin", "e.", "", "/nTrouble "], ["oh trou", "ble", "/nI'v"], ["e trouble o", "n my min", "d/nTroub"], ["le oh trou", "ble", "/nTro"], ["uble on my", " mind", "/nBut "], ["the trouble in the wo", "rld, Lor", "d/nIs muc"], ["h more bigger th", "an mine", "", "/n"], ["Hey hey so I g", "uess I'm do", "in' fin", "e.", "", "/nAn' I ne"], ["ver had no armie", "s", "/nTo "], ["jump at my ", "command", "/nNo I "], ["ain't a-got no a", "rmies", "/nTo "], ["jump at my ", "command", "/nBut "], ["I don't need no ", "armies", "/nI got "], ["me one good ", "friend", "", "/n"], ["Hey hey so I g", "uess I'm do", "in' fin", "e.", "", "/nI been"], [" kicked an' whipped an' t", "rampled on/nI been "], ["shot at j", "ust like yo", "u", "", "/nI been "], ["kicked an' whipped an' t", "rampled on", "/nI been "], ["shot at j", "ust like yo", "u/nBut"], [" as long as the world ke", "eps turnin'", "/nI ju"], ["st keep turn", "in' too", "/n"], ["Hey hey so I g", "uess I'm do", "in' fin", "e.", "", "/nWell my "], ["road might be ro", "cky", "/nThe"], [" stones might cu", "t my face", "/nMy ro"], ["ad might be r", "ocky", "/nThe"], [" stones might cu", "t my face", "/nBut "], ["there's some folks ain't got no ", "road at ", "all/nThey g"], ["otta stand in the same ", "old pla", "ce", "/n"], ["Hey hey so I g", "uess I'm do", "in' fin", "e.", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "BSXY5xxZ9UM", "delay": 0}]}
+{
+    "cancion": "Guess-Im-Doin-Fine",
+    "banda": "bob-dylan",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Dm7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            3,
+            4,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            3,
+            4,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            3,
+            4,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            3,
+            4,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4,
+            0,
+            3,
+            1,
+            3,
+            4,
+            0,
+            3,
+            4,
+            1,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            3,
+            4,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4
+        ]
+    },
+    "letras": [
+        [
+            " I ain't a-got m",
+            "y child",
+            "-hood/nOr "
+        ],
+        [
+            "friends I o",
+            "nce did ",
+            "know/nNo I "
+        ],
+        [
+            "ain't a-got my c",
+            "hildho",
+            "od/nOr "
+        ],
+        [
+            "friends I o",
+            "nce did kn",
+            "ow/nBut "
+        ],
+        [
+            "I still got my vo",
+            "ice left",
+            "/nI can "
+        ],
+        [
+            "take it anyw",
+            "here I ",
+            "go",
+            "/n"
+        ],
+        [
+            "Hey hey so I g",
+            "uess I'm do",
+            "in' fin",
+            "e.",
+            "",
+            "/nAn I've "
+        ],
+        [
+            "never had much m",
+            "oney",
+            "/nBut"
+        ],
+        [
+            " I'm still ",
+            "around s",
+            "omehow/nNo I'"
+        ],
+        [
+            "ve never had muc",
+            "h mone",
+            "y/nBut"
+        ],
+        [
+            " I'm still aro",
+            "und someh",
+            "ow/nMany"
+        ],
+        [
+            " times I've b",
+            "ended",
+            "/nBut I "
+        ],
+        [
+            "ain't never ",
+            "yet bow",
+            "ed",
+            "/n"
+        ],
+        [
+            "Hey hey so I g",
+            "uess I'm do",
+            "in' fin",
+            "e.",
+            "",
+            "/nTrouble "
+        ],
+        [
+            "oh trou",
+            "ble",
+            "/nI'v"
+        ],
+        [
+            "e trouble o",
+            "n my min",
+            "d/nTroub"
+        ],
+        [
+            "le oh trou",
+            "ble",
+            "/nTro"
+        ],
+        [
+            "uble on my",
+            " mind",
+            "/nBut "
+        ],
+        [
+            "the trouble in the wo",
+            "rld, Lor",
+            "d/nIs muc"
+        ],
+        [
+            "h more bigger th",
+            "an mine",
+            "",
+            "/n"
+        ],
+        [
+            "Hey hey so I g",
+            "uess I'm do",
+            "in' fin",
+            "e.",
+            "",
+            "/nAn' I ne"
+        ],
+        [
+            "ver had no armie",
+            "s",
+            "/nTo "
+        ],
+        [
+            "jump at my ",
+            "command",
+            "/nNo I "
+        ],
+        [
+            "ain't a-got no a",
+            "rmies",
+            "/nTo "
+        ],
+        [
+            "jump at my ",
+            "command",
+            "/nBut "
+        ],
+        [
+            "I don't need no ",
+            "armies",
+            "/nI got "
+        ],
+        [
+            "me one good ",
+            "friend",
+            "",
+            "/n"
+        ],
+        [
+            "Hey hey so I g",
+            "uess I'm do",
+            "in' fin",
+            "e.",
+            "",
+            "/nI been"
+        ],
+        [
+            " kicked an' whipped an' t",
+            "rampled on/nI been "
+        ],
+        [
+            "shot at j",
+            "ust like yo",
+            "u",
+            "",
+            "/nI been "
+        ],
+        [
+            "kicked an' whipped an' t",
+            "rampled on",
+            "/nI been "
+        ],
+        [
+            "shot at j",
+            "ust like yo",
+            "u/nBut"
+        ],
+        [
+            " as long as the world ke",
+            "eps turnin'",
+            "/nI ju"
+        ],
+        [
+            "st keep turn",
+            "in' too",
+            "/n"
+        ],
+        [
+            "Hey hey so I g",
+            "uess I'm do",
+            "in' fin",
+            "e.",
+            "",
+            "/nWell my "
+        ],
+        [
+            "road might be ro",
+            "cky",
+            "/nThe"
+        ],
+        [
+            " stones might cu",
+            "t my face",
+            "/nMy ro"
+        ],
+        [
+            "ad might be r",
+            "ocky",
+            "/nThe"
+        ],
+        [
+            " stones might cu",
+            "t my face",
+            "/nBut "
+        ],
+        [
+            "there's some folks ain't got no ",
+            "road at ",
+            "all/nThey g"
+        ],
+        [
+            "otta stand in the same ",
+            "old pla",
+            "ce",
+            "/n"
+        ],
+        [
+            "Hey hey so I g",
+            "uess I'm do",
+            "in' fin",
+            "e.",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "BSXY5xxZ9UM",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

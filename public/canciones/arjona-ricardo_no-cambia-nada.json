@@ -1,1 +1,323 @@
-{"cancion": "No-Cambia-Nada", "banda": "arjona-ricardo", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "D", "C"]}, {"nombre": "parte2", "acordes": ["G"]}, {"nombre": "parte3", "acordes": ["D"]}, {"nombre": "parte4", "acordes": ["C"]}, {"nombre": "parte5", "acordes": ["Em7"]}], "orden_partes": [0, 1, 0, 0, 2, 3, 2, 1, 4, 3, 4, 3, 1, 3, 0, 2, 3, 2, 3, 2, 0, 1, 3, 1, 3, 1, 3, 1, 4, 3, 1, 2, 0, 1, 3, 1, 3, 1, 3, 1, 3, 1, 4, 3, 1, 2, 0, 2, 1, 0, 0, 2, 3, 2, 0, 1, 3, 1, 3, 1, 3, 1, 4, 3, 1, 2, 0, 1, 3, 1, 3, 1, 3, 1, 3, 1, 4, 3, 1, 2, 0, 2, 1]}, "letras": [[], ["Afuera llueve, como si n", "ada/n"], ["Y los paraguas son desfiles de medusas/nDesplaz\u00e1ndose al azar como si "], ["nada/n"], ["Una sirena, de polic", "a/n"], ["Se une a la fauna persiguiendo alg\u00fan delito como/nHa sido y lo ser\u00e1 hasta el inf"], ["inito/n"], ["S\u00ed no est\u00e1s", " t\u00fa,", " si no est\u00e1s", " t\u00fa/n"], ["No cambia n", "ada/n"], ["La misma renta a fin de me", "s/n"], ["El mismo idiota en la T", "V/nEl cenic"], ["ero, el clima afu", "era/n"], ["La corrupci\u00f3n y la tert", "ulia en los caf", "s", "/nS\u00ed no est\u00e1"], ["s t\u00fa", ", si no est\u00e1", "s t\u00fa", "/nNo cambia n"], ["ada, n", "ada de nad", "a/n"], ["Vendr\u00e1 otra v", "ez el carnava", "l/nY las fi"], ["nales de f\u00fatb", "ol/nLos reyes m"], ["agos, navida", "d/nY alg\u00fan p"], ["ol\u00edtico a men", "tir sobre el fut", "uro", "/nNo cambia n"], ["ada, n", "ada de nad", "a/n"], ["El r\u00edo i", "r\u00e1 bajando al m", "ar/nY estar\u00e1 el "], ["sol en su lug", "ar/nPor cada n"], ["oche habr\u00e1 otro d", "\u00eda/nPor cada s"], ["ue\u00f1o, pesad", "illa/nY habr\u00e1 me"], ["ntira y tert", "ulia en los caf", "s", "/nS\u00ed no est\u00e1s"], [" t\u00fa", ", excepto ", "yo, ", "no cambia na", "da/n"], [], ["Afuera escampa, como si na", "da/n"], ["Y hay un olor a historia vieja, naftalina, mal caf\u00e9 y/nTierra mo"], ["jada", "/nS\u00ed no est\u00e1"], ["s t\u00fa", ", si no est\u00e1", "s t", "/nNo cambia n"], ["ada, n", "ada de nad", "a/n"], ["Vendr\u00e1 otra v", "ez el carnava", "l/nY las fi"], ["nales de f\u00fatb", "ol/nLos reyes m"], ["agos, navida", "d/nY alg\u00fan p"], ["ol\u00edtico a men", "tir sobre el fut", "uro", "/nNo cambia n"], ["ada, n", "ada de nad", "a/n"], ["El r\u00edo i", "r\u00e1 bajando al m", "ar/nY estar\u00e1 el "], ["sol en su lug", "ar/nPor cada n"], ["oche habr\u00e1 otro d", "\u00eda/nPor cada s"], ["ue\u00f1o, pesad", "illa/nY habr\u00e1 me"], ["ntira y tertulia en los caf\u00e9s/nS\u00ed no est\u00e1s t\u00fa, excepto yo, no cambia nada"], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "C7XFyoIFgH4", "delay": 0}]}
+{
+    "cancion": "No-Cambia-Nada",
+    "banda": "arjona-ricardo",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            3,
+            2,
+            1,
+            4,
+            3,
+            4,
+            3,
+            1,
+            3,
+            0,
+            2,
+            3,
+            2,
+            3,
+            2,
+            0,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            4,
+            3,
+            1,
+            2,
+            0,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            4,
+            3,
+            1,
+            2,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2,
+            3,
+            2,
+            0,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            4,
+            3,
+            1,
+            2,
+            0,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            4,
+            3,
+            1,
+            2,
+            0,
+            2,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Afuera llueve, como si n",
+            "ada/n"
+        ],
+        [
+            "Y los paraguas son desfiles de medusas/nDesplazándose al azar como si "
+        ],
+        [
+            "nada/n"
+        ],
+        [
+            "Una sirena, de polic",
+            "a/n"
+        ],
+        [
+            "Se une a la fauna persiguiendo algún delito como/nHa sido y lo será hasta el inf"
+        ],
+        [
+            "inito/n"
+        ],
+        [
+            "Sí no estás",
+            " tú,",
+            " si no estás",
+            " tú/n"
+        ],
+        [
+            "No cambia n",
+            "ada/n"
+        ],
+        [
+            "La misma renta a fin de me",
+            "s/n"
+        ],
+        [
+            "El mismo idiota en la T",
+            "V/nEl cenic"
+        ],
+        [
+            "ero, el clima afu",
+            "era/n"
+        ],
+        [
+            "La corrupción y la tert",
+            "ulia en los caf",
+            "s",
+            "/nSí no está"
+        ],
+        [
+            "s tú",
+            ", si no está",
+            "s tú",
+            "/nNo cambia n"
+        ],
+        [
+            "ada, n",
+            "ada de nad",
+            "a/n"
+        ],
+        [
+            "Vendrá otra v",
+            "ez el carnava",
+            "l/nY las fi"
+        ],
+        [
+            "nales de fútb",
+            "ol/nLos reyes m"
+        ],
+        [
+            "agos, navida",
+            "d/nY algún p"
+        ],
+        [
+            "olítico a men",
+            "tir sobre el fut",
+            "uro",
+            "/nNo cambia n"
+        ],
+        [
+            "ada, n",
+            "ada de nad",
+            "a/n"
+        ],
+        [
+            "El río i",
+            "rá bajando al m",
+            "ar/nY estará el "
+        ],
+        [
+            "sol en su lug",
+            "ar/nPor cada n"
+        ],
+        [
+            "oche habrá otro d",
+            "ía/nPor cada s"
+        ],
+        [
+            "ueño, pesad",
+            "illa/nY habrá me"
+        ],
+        [
+            "ntira y tert",
+            "ulia en los caf",
+            "s",
+            "/nSí no estás"
+        ],
+        [
+            " tú",
+            ", excepto ",
+            "yo, ",
+            "no cambia na",
+            "da/n"
+        ],
+        [],
+        [
+            "Afuera escampa, como si na",
+            "da/n"
+        ],
+        [
+            "Y hay un olor a historia vieja, naftalina, mal café y/nTierra mo"
+        ],
+        [
+            "jada",
+            "/nSí no está"
+        ],
+        [
+            "s tú",
+            ", si no está",
+            "s t",
+            "/nNo cambia n"
+        ],
+        [
+            "ada, n",
+            "ada de nad",
+            "a/n"
+        ],
+        [
+            "Vendrá otra v",
+            "ez el carnava",
+            "l/nY las fi"
+        ],
+        [
+            "nales de fútb",
+            "ol/nLos reyes m"
+        ],
+        [
+            "agos, navida",
+            "d/nY algún p"
+        ],
+        [
+            "olítico a men",
+            "tir sobre el fut",
+            "uro",
+            "/nNo cambia n"
+        ],
+        [
+            "ada, n",
+            "ada de nad",
+            "a/n"
+        ],
+        [
+            "El río i",
+            "rá bajando al m",
+            "ar/nY estará el "
+        ],
+        [
+            "sol en su lug",
+            "ar/nPor cada n"
+        ],
+        [
+            "oche habrá otro d",
+            "ía/nPor cada s"
+        ],
+        [
+            "ueño, pesad",
+            "illa/nY habrá me"
+        ],
+        [
+            "ntira y tertulia en los cafés/nSí no estás tú, excepto yo, no cambia nada"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "C7XFyoIFgH4",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

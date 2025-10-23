@@ -1,1 +1,434 @@
-{"cancion": "amapola-del-66", "banda": "divididos", "escala": "B", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["B", "A", "B", "A", "B", "A", "G", "F#", "F#", "A", "B", "A", "F#", "A", "B", "A", "F#", "A", "B", "A", "F#", "A", "B", "A", "F#", "A", "B", "A", "F#", "A", "B", "A", "F#", "A", "B", "A", "F#", "A", "B", "B", "A", "B", "A", "B", "A", "F#", "A", "B", "B", "F#", "A", "B", "B", "F#", "A", "B", "A", "F#", "A", "B", "F#", "A", "B", "A", "F#", "A", "B", "F#", "A", "B", "A", "F#", "A", "B", "F#", "A", "B", "A", "F#", "A", "B", "B", "A", "B", "A", "B", "A", "G", "F#", "D", "G", "F", "D", "G", "F", "D", "D", "F#", "A", "B", "B", "F#", "A", "B", "B", "F#", "A", "B", "A", "F#", "A", "B", "F#", "A", "B", "A", "F#", "A", "B", "F#", "A", "B", "A", "F#", "A", "B", "F#", "A", "B", "A", "F#", "A", "B", "B", "A", "B", "A", "B", "A", "G", "F#", "E", "F#", "E", "F#", "E", "F#", "E", "F#", "E", "F#", "E", "F#", "E", "F#", "E", "F#"]}], "orden_partes": [0]}, "letras": [["Buen", "o, co", "n es", "as ac", "lara", "cione", "s pa", "samos a la canci\u00f3n.-/n  Despu"], ["\u00e9s de llov", "er, ba\u00f1", "aron las a", "ves/n"], ["  Su cansa", "ncio de ayer", "", "/n"], ["  Socieda", "d de car", "as robada", "s/n"], ["  Te despre", "nden la piel", "", "/nSi"], ["embra poes", "a de sue", "\u00f1os de aye", "r/n"], ["  Que trascien", "de al ser", "", "/nVi"], ["ejo crista", "l atrasan", "do mi viaje", "/n"], ["  No deci", "de al fin", "/n"], ["  No es re edici", "n/n"], ["  Es redenci", "n/n"], ["  Ponte de pie", "/n"], [], ["Verso", "", "", "/nS"], ["iguen las llu", "vias de un no ", "ancestral", "/n"], ["  Pero el tie", "mpo es hoy", "/nTr"], ["enes de mi", "mbre/nDe su"], ["e\u00f1o de r", "ock/n"], ["  De esa ing", "enuidad", "/nT"], ["odo esta vi", "vo a pesar", " del dolor", "/n"], ["  Si me so", "nre\u00eds", "/nR"], ["\u00edos de cu", "erdas que vie", "nen de vos", "/n"], ["  Justo a mi", " coraz\u00f3", "n/n"], ["  No es re edici", "n/n"], ["  Es redenci", "n/n"], ["  Ponte de pie", "/nH"], ["ombre ilusi", "n/n"], ["Despu\u00e9s de tanto andar/nCa\u00ed en m\u00ed"], ["", "/n"], ["Un universo esper\u00e1ndome/nNo hay fantasma ni desesperaci\u00f3n"], ["", "/n"], ["Ahora s\u00e9 que estas ah\u00ed/n"], ["Amapola de 66/n"], [], ["Vers", "o", "", "/nS"], ["iguen las llu", "vias de un no ", "ancestral", "/n"], ["  Pero el tie", "mpo es hoy", "/nTr"], ["enes de mi", "mbre/nDe su"], ["e\u00f1o de r", "ock/n"], ["  De esa ing", "enuidad", "/nT"], ["odo esta vi", "vo a pesar", " del dolor", "/n"], ["  Si me so", "nre\u00eds", "/nR"], ["\u00edos de cu", "erdas que vie", "nen de vos", "/n"], ["  Justo a mi", " coraz\u00f3", "n/n"], ["  No es re edici", "n/n"], ["  Es redenci", "n/n"], ["  Ponte de pie", "/nH"], ["ombre ilusi", "n/n"], [], ["  Hombre ilusi", "n/n"], [], ["  Hombre ilusi", "n/n"], [], ["  Ohhhh  ohh  o", "hh/n"], [], ["Detalle del", ""]], "medias": [{"tipo": "Youtube", "id": "dPKaszjLdDM", "delay": 0}]}
+{
+    "cancion": "amapola-del-66",
+    "banda": "divididos",
+    "escala": "B",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "G",
+                    "F#",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "G",
+                    "F#",
+                    "D",
+                    "G",
+                    "F",
+                    "D",
+                    "G",
+                    "F",
+                    "D",
+                    "D",
+                    "F#",
+                    "A",
+                    "B",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "F#",
+                    "A",
+                    "B",
+                    "A",
+                    "F#",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "G",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Buen",
+            "o, co",
+            "n es",
+            "as ac",
+            "lara",
+            "cione",
+            "s pa",
+            "samos a la canción.-/n  Despu"
+        ],
+        [
+            "és de llov",
+            "er, bañ",
+            "aron las a",
+            "ves/n"
+        ],
+        [
+            "  Su cansa",
+            "ncio de ayer",
+            "",
+            "/n"
+        ],
+        [
+            "  Socieda",
+            "d de car",
+            "as robada",
+            "s/n"
+        ],
+        [
+            "  Te despre",
+            "nden la piel",
+            "",
+            "/nSi"
+        ],
+        [
+            "embra poes",
+            "a de sue",
+            "ños de aye",
+            "r/n"
+        ],
+        [
+            "  Que trascien",
+            "de al ser",
+            "",
+            "/nVi"
+        ],
+        [
+            "ejo crista",
+            "l atrasan",
+            "do mi viaje",
+            "/n"
+        ],
+        [
+            "  No deci",
+            "de al fin",
+            "/n"
+        ],
+        [
+            "  No es re edici",
+            "n/n"
+        ],
+        [
+            "  Es redenci",
+            "n/n"
+        ],
+        [
+            "  Ponte de pie",
+            "/n"
+        ],
+        [],
+        [
+            "Verso",
+            "",
+            "",
+            "/nS"
+        ],
+        [
+            "iguen las llu",
+            "vias de un no ",
+            "ancestral",
+            "/n"
+        ],
+        [
+            "  Pero el tie",
+            "mpo es hoy",
+            "/nTr"
+        ],
+        [
+            "enes de mi",
+            "mbre/nDe su"
+        ],
+        [
+            "eño de r",
+            "ock/n"
+        ],
+        [
+            "  De esa ing",
+            "enuidad",
+            "/nT"
+        ],
+        [
+            "odo esta vi",
+            "vo a pesar",
+            " del dolor",
+            "/n"
+        ],
+        [
+            "  Si me so",
+            "nreís",
+            "/nR"
+        ],
+        [
+            "íos de cu",
+            "erdas que vie",
+            "nen de vos",
+            "/n"
+        ],
+        [
+            "  Justo a mi",
+            " corazó",
+            "n/n"
+        ],
+        [
+            "  No es re edici",
+            "n/n"
+        ],
+        [
+            "  Es redenci",
+            "n/n"
+        ],
+        [
+            "  Ponte de pie",
+            "/nH"
+        ],
+        [
+            "ombre ilusi",
+            "n/n"
+        ],
+        [
+            "Después de tanto andar/nCaí en mí"
+        ],
+        [
+            "",
+            "/n"
+        ],
+        [
+            "Un universo esperándome/nNo hay fantasma ni desesperación"
+        ],
+        [
+            "",
+            "/n"
+        ],
+        [
+            "Ahora sé que estas ahí/n"
+        ],
+        [
+            "Amapola de 66/n"
+        ],
+        [],
+        [
+            "Vers",
+            "o",
+            "",
+            "/nS"
+        ],
+        [
+            "iguen las llu",
+            "vias de un no ",
+            "ancestral",
+            "/n"
+        ],
+        [
+            "  Pero el tie",
+            "mpo es hoy",
+            "/nTr"
+        ],
+        [
+            "enes de mi",
+            "mbre/nDe su"
+        ],
+        [
+            "eño de r",
+            "ock/n"
+        ],
+        [
+            "  De esa ing",
+            "enuidad",
+            "/nT"
+        ],
+        [
+            "odo esta vi",
+            "vo a pesar",
+            " del dolor",
+            "/n"
+        ],
+        [
+            "  Si me so",
+            "nreís",
+            "/nR"
+        ],
+        [
+            "íos de cu",
+            "erdas que vie",
+            "nen de vos",
+            "/n"
+        ],
+        [
+            "  Justo a mi",
+            " corazó",
+            "n/n"
+        ],
+        [
+            "  No es re edici",
+            "n/n"
+        ],
+        [
+            "  Es redenci",
+            "n/n"
+        ],
+        [
+            "  Ponte de pie",
+            "/nH"
+        ],
+        [
+            "ombre ilusi",
+            "n/n"
+        ],
+        [],
+        [
+            "  Hombre ilusi",
+            "n/n"
+        ],
+        [],
+        [
+            "  Hombre ilusi",
+            "n/n"
+        ],
+        [],
+        [
+            "  Ohhhh  ohh  o",
+            "hh/n"
+        ],
+        [],
+        [
+            "Detalle del",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "dPKaszjLdDM",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

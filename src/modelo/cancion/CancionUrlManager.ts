@@ -51,10 +51,7 @@ export class CancionUrlManager {
       cancion.calidad = item.calidad
       cancion.cantacordes = item.cantacordes
       cancion.acordes = item.acordes
-      cancion.duracion = item.duracion
-      if (item.etiquetas) {
-        cancion.etiquetas = item.etiquetas
-      }
+      cancion.etiquetas = item.etiquetas
       cancion.bpm = item.bpm
       cancion.compasUnidad = item.compasUnidad
       cancion.compasCantidad = item.compasCantidad

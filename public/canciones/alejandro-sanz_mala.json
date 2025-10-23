@@ -1,1 +1,393 @@
-{"cancion": "Mala", "banda": "alejandro-sanz", "escala": "Bm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm", "F#m", "Bm", "F#m", "Bm", "F#m", "G", "D", "D#m", "C#", "Bm", "F#m", "G", "D", "D#m", "C#", "Bm", "F#m", "G", "D", "D#m", "C#", "Bm", "Bm", "F#m", "Bm", "F#m", "Bm", "F#m", "G", "D", "D#m", "C#", "Bm", "F#m", "G", "D", "D#m", "C#", "Bm", "F#m", "A", "E", "A", "G", "D", "F#m", "Bm", "G", "D", "E", "F#m", "Bm", "F#m", "G", "D", "D#m", "C#", "G", "Bm", "F#m", "Bm", "F#m", "Bm", "F#m", "G", "D", "D#m", "C#", "Bm", "F#m", "G", "D", "D#m", "C#", "Bm", "F#m", "A", "G", "A", "G", "D", "F#m", "Bm", "G", "D", "F#m", "Bm", "G", "D", "E", "F#m", "Bm", "F#m", "G", "D", "D#m", "C#", "G", "Bm", "C#", "D", "Bm", "Em", "G", "D", "Bm", "F#m", "Bm", "G", "D", "F#m", "Bm", "G", "D", "F#m", "Bm", "G", "D", "E", "F#m", "Bm", "F#m", "G", "D", "D#m", "C#", "G", "Bm"]}], "orden_partes": [0]}, "letras": [[], ["Est\u00e1s mintiendo/n"], ["Y no te achicas/nE"], ["s algo que te funcion", "a bie", "n", "/nY"], ["o a ti te pienso/n"], ["T\u00fa no me extra\u00f1as/nHay"], [" algo en ti de misterio y ", "es", "", "/n"], ["Que yo te espero/n"], ["Y t\u00fa te largas/n"], ["No hay nada que te de miedo", " amor", "", "/n"], ["Siempre vas un poco m\u00e1s all\u00e1/n"], [], ["Yo no me extiendo/n"], ["Ni te retengo/n"], ["Te doy tu tiempo yo soy ", "cordi", "al", "/n"], ["T\u00fa te me escurres/n"], ["Te me diluyes/n"], ["Y te disuelves con f", "acili", "dad", "/n"], ["Frente al espejo y", "o me pregunto/n"], ["Que demonios es lo q", "ue querr\u00e1/nY yo "], ["s\u00e9 que todo te da igual, mala", "/nEres impa"], ["rable/n"], ["Y te abrazo y tu a m", "\u00ed me ara\u00f1as", "/nEres ins"], ["aciable", "/nTe beso "], ["mala, mala, mala/n"], ["S\u00e9 que me enga\u00f1as/n"], ["De todos modos", "/nNo te dejo por na"], ["'", "", "/nY te qu"], ["iero incluso un poco m\u00e1s, mal", "a", "", "", "/n"], ["T\u00fa que contabas que has r", "oto corazones/nA lo"], ["s m\u00e1s guapos del lugar", "", "", "/n"], ["Y presum\u00edas que jug", "abas con sus almas/nY lu"], ["ego las quemabas", "", "", "/n"], ["Yo no comprendo, ", "vienes corriendo", "/nMe juras amor pero lueg"], ["o te vas/nY me dej"], ["as queri\u00e9ndote m\u00e1s, mala", "/nEres infla"], ["mable", "/nMe quemas y me p"], ["ones agua/n"], ["Incontrolabl", "e", "/nEste des"], ["eo mala, mala", "/nEres indo"], ["mable", "/nTu boca no hay qu"], ["ien la pare/n"], ["Comes manzanas e", "nvenenadas", "/nY no te puedo dej"], ["ar", "", "/nY te qui"], ["ero incluso un poco m\u00e1s    ", "     ", "     ", "  ma", "la", "", "", "/n"], ["Que yo te espero/n"], ["Y t\u00fa te largas", "/nTu boca no hay quien la pare"], ["/nEres infla"], ["mable", "/nMe quemas y me p"], ["ones agua/n"], ["Incontrolabl", "e", "/nEste des"], ["eo mala, mala", "/nEres indo"], ["mable", "/nTu boca no hay qu"], ["ien la pare/n"], ["Comes manzanas e", "nvenenadas", "/nY no te puedo dej"], ["ar", "", "/nY te qui"], ["ero incluso un poco m\u00e1s mala", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "VGpXVcWBz84", "delay": 0}]}
+{
+    "cancion": "Mala",
+    "banda": "alejandro-sanz",
+    "escala": "Bm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "Bm",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "Bm",
+                    "F#m",
+                    "A",
+                    "E",
+                    "A",
+                    "G",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "D",
+                    "E",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "G",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "Bm",
+                    "F#m",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "D",
+                    "E",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "G",
+                    "Bm",
+                    "C#",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "G",
+                    "D",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "D",
+                    "E",
+                    "F#m",
+                    "Bm",
+                    "F#m",
+                    "G",
+                    "D",
+                    "D#m",
+                    "C#",
+                    "G",
+                    "Bm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "Estás mintiendo/n"
+        ],
+        [
+            "Y no te achicas/nE"
+        ],
+        [
+            "s algo que te funcion",
+            "a bie",
+            "n",
+            "/nY"
+        ],
+        [
+            "o a ti te pienso/n"
+        ],
+        [
+            "Tú no me extrañas/nHay"
+        ],
+        [
+            " algo en ti de misterio y ",
+            "es",
+            "",
+            "/n"
+        ],
+        [
+            "Que yo te espero/n"
+        ],
+        [
+            "Y tú te largas/n"
+        ],
+        [
+            "No hay nada que te de miedo",
+            " amor",
+            "",
+            "/n"
+        ],
+        [
+            "Siempre vas un poco más allá/n"
+        ],
+        [],
+        [
+            "Yo no me extiendo/n"
+        ],
+        [
+            "Ni te retengo/n"
+        ],
+        [
+            "Te doy tu tiempo yo soy ",
+            "cordi",
+            "al",
+            "/n"
+        ],
+        [
+            "Tú te me escurres/n"
+        ],
+        [
+            "Te me diluyes/n"
+        ],
+        [
+            "Y te disuelves con f",
+            "acili",
+            "dad",
+            "/n"
+        ],
+        [
+            "Frente al espejo y",
+            "o me pregunto/n"
+        ],
+        [
+            "Que demonios es lo q",
+            "ue querrá/nY yo "
+        ],
+        [
+            "sé que todo te da igual, mala",
+            "/nEres impa"
+        ],
+        [
+            "rable/n"
+        ],
+        [
+            "Y te abrazo y tu a m",
+            "í me arañas",
+            "/nEres ins"
+        ],
+        [
+            "aciable",
+            "/nTe beso "
+        ],
+        [
+            "mala, mala, mala/n"
+        ],
+        [
+            "Sé que me engañas/n"
+        ],
+        [
+            "De todos modos",
+            "/nNo te dejo por na"
+        ],
+        [
+            "'",
+            "",
+            "/nY te qu"
+        ],
+        [
+            "iero incluso un poco más, mal",
+            "a",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tú que contabas que has r",
+            "oto corazones/nA lo"
+        ],
+        [
+            "s más guapos del lugar",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Y presumías que jug",
+            "abas con sus almas/nY lu"
+        ],
+        [
+            "ego las quemabas",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo no comprendo, ",
+            "vienes corriendo",
+            "/nMe juras amor pero lueg"
+        ],
+        [
+            "o te vas/nY me dej"
+        ],
+        [
+            "as queriéndote más, mala",
+            "/nEres infla"
+        ],
+        [
+            "mable",
+            "/nMe quemas y me p"
+        ],
+        [
+            "ones agua/n"
+        ],
+        [
+            "Incontrolabl",
+            "e",
+            "/nEste des"
+        ],
+        [
+            "eo mala, mala",
+            "/nEres indo"
+        ],
+        [
+            "mable",
+            "/nTu boca no hay qu"
+        ],
+        [
+            "ien la pare/n"
+        ],
+        [
+            "Comes manzanas e",
+            "nvenenadas",
+            "/nY no te puedo dej"
+        ],
+        [
+            "ar",
+            "",
+            "/nY te qui"
+        ],
+        [
+            "ero incluso un poco más    ",
+            "     ",
+            "     ",
+            "  ma",
+            "la",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que yo te espero/n"
+        ],
+        [
+            "Y tú te largas",
+            "/nTu boca no hay quien la pare"
+        ],
+        [
+            "/nEres infla"
+        ],
+        [
+            "mable",
+            "/nMe quemas y me p"
+        ],
+        [
+            "ones agua/n"
+        ],
+        [
+            "Incontrolabl",
+            "e",
+            "/nEste des"
+        ],
+        [
+            "eo mala, mala",
+            "/nEres indo"
+        ],
+        [
+            "mable",
+            "/nTu boca no hay qu"
+        ],
+        [
+            "ien la pare/n"
+        ],
+        [
+            "Comes manzanas e",
+            "nvenenadas",
+            "/nY no te puedo dej"
+        ],
+        [
+            "ar",
+            "",
+            "/nY te qui"
+        ],
+        [
+            "ero incluso un poco más mala",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "VGpXVcWBz84",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

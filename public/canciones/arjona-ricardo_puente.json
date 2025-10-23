@@ -1,1 +1,295 @@
-{"cancion": "Puente", "banda": "arjona-ricardo", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "F", "E", "Am", "F", "Dm", "B\u00ba", "E", "F", "Dm", "E", "F", "C", "G", "Dm", "B\u00ba", "E", "F", "C", "G", "Dm", "B\u00ba", "E", "F", "C", "G", "Dm", "E", "Am", "F", "E", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "C#7", "F#m", "E", "D", "A", "E", "A7", "D", "B7", "D", "B7", "E", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "C#7", "F#m", "E", "D", "B7", "E", "F#m", "Bm", "B7", "A", "G", "D", "E", "A", "G", "D", "E", "A", "G", "D", "E", "A", "G", "D", "E"]}], "orden_partes": [0]}, "letras": [["Habana, Siempre a las mitad", "es tan mitad espa", "\u00f1ola tan mitad afri", "cana/nSaben bien las ol"], ["as que en cada ven", "tana siempre hay un testi", "go/n"], ["Habana, Juran los que sab", "en que no sab", "en nada pa entender lo tuy", "o/nMientras la flo"], ["rida que es como esa t", "a que se fue a otro la", "do/nSe sienta a ext"], ["ra\u00f1arte en la calle al d", "\u00eda de las coincide", "ncias/nY yo que no t"], ["oco vela en este ent", "ierro muero por la pen", "a,/nDe no hacerle al "], ["mago y construir un pu", "ente de 90 milla", "s/nPara que los pr"], ["imos corran a abra", "zarse como se merec", "en/nY la ideolo"], ["g\u00eda no se meta m", "\u00e1s en lo que no le im", "porta,/nQue la historia es l"], ["arga, y la vida es cor", "ta./n"], ["Hay un cuba", "no en la ha", "bana,", "/n"], ["Vendiendo h", "abanos proh", "ibidos", "/n"], ["Se le han q", "uedado en l", "a cama, ta", "ntos sue\u00f1os dormid", "os/n"], ["Un cubano en la", " habana,", "/n"], ["Que es inve", "ntor de fut", "uros", "/n"], ["Bloqueado a", " la america", "na el ene", "migo cianuro,", "/n"], ["Un cub", "ano en la haba", "na/nUn c"], ["ubano en la ha", "bana", "", "/n"], ["Que se se", "quen los pies los que pers", "iguen la florida,", "/n"], ["Que otros se lavan las ma", "nos con jab", "\u00f3n de diploma", "cia/n"], ["Puen", "te h", "abr\u00eda que", " hacer un/n"], ["pue", "nte ", "Pa unir", " a tanta gent", "e,", "", "/nEn medio del co"], ["nflicto ha viv", "ido y vive gent", "e/nEl tie"], ["mpo va gastando el", " reloj de arena en tanto esper", "ar/n"], ["Vamos a hace", "r un pue", "nte un puen", "te hermano/n"], ["Vamos a unir", "nos todo", "s con este ", "tumbao/n"], ["All\u00e1 en fi", "nal del r", "\u00edo se siem", "bra bajo el sol,/n"], ["Tabaco cont", "ra el fr", "o cervecit", "a con b\u00e9isbol"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "1FjioLylS8Q", "delay": 0}]}
+{
+    "cancion": "Puente",
+    "banda": "arjona-ricardo",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "E",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Bº",
+                    "E",
+                    "F",
+                    "Dm",
+                    "E",
+                    "F",
+                    "C",
+                    "G",
+                    "Dm",
+                    "Bº",
+                    "E",
+                    "F",
+                    "C",
+                    "G",
+                    "Dm",
+                    "Bº",
+                    "E",
+                    "F",
+                    "C",
+                    "G",
+                    "Dm",
+                    "E",
+                    "Am",
+                    "F",
+                    "E",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "C#7",
+                    "F#m",
+                    "E",
+                    "D",
+                    "A",
+                    "E",
+                    "A7",
+                    "D",
+                    "B7",
+                    "D",
+                    "B7",
+                    "E",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "A",
+                    "E",
+                    "F#m",
+                    "D",
+                    "C#7",
+                    "F#m",
+                    "E",
+                    "D",
+                    "B7",
+                    "E",
+                    "F#m",
+                    "Bm",
+                    "B7",
+                    "A",
+                    "G",
+                    "D",
+                    "E",
+                    "A",
+                    "G",
+                    "D",
+                    "E",
+                    "A",
+                    "G",
+                    "D",
+                    "E",
+                    "A",
+                    "G",
+                    "D",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Habana, Siempre a las mitad",
+            "es tan mitad espa",
+            "ñola tan mitad afri",
+            "cana/nSaben bien las ol"
+        ],
+        [
+            "as que en cada ven",
+            "tana siempre hay un testi",
+            "go/n"
+        ],
+        [
+            "Habana, Juran los que sab",
+            "en que no sab",
+            "en nada pa entender lo tuy",
+            "o/nMientras la flo"
+        ],
+        [
+            "rida que es como esa t",
+            "a que se fue a otro la",
+            "do/nSe sienta a ext"
+        ],
+        [
+            "rañarte en la calle al d",
+            "ía de las coincide",
+            "ncias/nY yo que no t"
+        ],
+        [
+            "oco vela en este ent",
+            "ierro muero por la pen",
+            "a,/nDe no hacerle al "
+        ],
+        [
+            "mago y construir un pu",
+            "ente de 90 milla",
+            "s/nPara que los pr"
+        ],
+        [
+            "imos corran a abra",
+            "zarse como se merec",
+            "en/nY la ideolo"
+        ],
+        [
+            "gía no se meta m",
+            "ás en lo que no le im",
+            "porta,/nQue la historia es l"
+        ],
+        [
+            "arga, y la vida es cor",
+            "ta./n"
+        ],
+        [
+            "Hay un cuba",
+            "no en la ha",
+            "bana,",
+            "/n"
+        ],
+        [
+            "Vendiendo h",
+            "abanos proh",
+            "ibidos",
+            "/n"
+        ],
+        [
+            "Se le han q",
+            "uedado en l",
+            "a cama, ta",
+            "ntos sueños dormid",
+            "os/n"
+        ],
+        [
+            "Un cubano en la",
+            " habana,",
+            "/n"
+        ],
+        [
+            "Que es inve",
+            "ntor de fut",
+            "uros",
+            "/n"
+        ],
+        [
+            "Bloqueado a",
+            " la america",
+            "na el ene",
+            "migo cianuro,",
+            "/n"
+        ],
+        [
+            "Un cub",
+            "ano en la haba",
+            "na/nUn c"
+        ],
+        [
+            "ubano en la ha",
+            "bana",
+            "",
+            "/n"
+        ],
+        [
+            "Que se se",
+            "quen los pies los que pers",
+            "iguen la florida,",
+            "/n"
+        ],
+        [
+            "Que otros se lavan las ma",
+            "nos con jab",
+            "ón de diploma",
+            "cia/n"
+        ],
+        [
+            "Puen",
+            "te h",
+            "abría que",
+            " hacer un/n"
+        ],
+        [
+            "pue",
+            "nte ",
+            "Pa unir",
+            " a tanta gent",
+            "e,",
+            "",
+            "/nEn medio del co"
+        ],
+        [
+            "nflicto ha viv",
+            "ido y vive gent",
+            "e/nEl tie"
+        ],
+        [
+            "mpo va gastando el",
+            " reloj de arena en tanto esper",
+            "ar/n"
+        ],
+        [
+            "Vamos a hace",
+            "r un pue",
+            "nte un puen",
+            "te hermano/n"
+        ],
+        [
+            "Vamos a unir",
+            "nos todo",
+            "s con este ",
+            "tumbao/n"
+        ],
+        [
+            "Allá en fi",
+            "nal del r",
+            "ío se siem",
+            "bra bajo el sol,/n"
+        ],
+        [
+            "Tabaco cont",
+            "ra el fr",
+            "o cervecit",
+            "a con béisbol"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "1FjioLylS8Q",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

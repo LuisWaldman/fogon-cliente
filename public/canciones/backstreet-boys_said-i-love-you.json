@@ -1,1 +1,365 @@
-{"cancion": "said-i-love-you", "banda": "backstreet-boys", "escala": "Am", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Dm", "G", "Dm"]}, {"nombre": "parte2", "acordes": ["Am", "Dm", "G"]}, {"nombre": "parte3", "acordes": ["Am", "Dm", "Dm", "G", "Dm"]}, {"nombre": "parte4", "acordes": ["Am", "Dm", "Am", "Dm", "G", "Dm"]}], "orden_partes": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "letras": [["I let the heat,", " let the mom", "ent", "/nLet it "], ["take contr", "ol of me", "", "/nA couple d"], ["rinks", " had me zon", "e in", "/nMight have s"], ["aid a co", "uple thin", "gs", "/nThat I didn't mean to "], ["say, I pro", "bably should explai", "n/n"], ["So, you don't think it's j", "ust the liq", "uor talk", "ing?", "/nYeah, you give me f"], ["eels, but y", "ou should know the real", "/nI h"], ["ope you don't get m", "ad when I ", "say I", "/nSaid I love you but I l"], ["ied", "/n"], ["Said I lo", "ve you but I lie", "d", "/n"], ["Said I lo", "ve you but I lie", "d", "/n"], ["Said I lo", "ve you but I lie", "d", "/n"], ["You're so much more than tha", "t", "/nYou got me "], ["bad  ", "  in the wor", "st way", "/nAnd it "], ["never fel", "t so goo", "d", "/nI'm so at"], ["tached,", " I'm beggin' mer", "cy", "/nI wouldn't s"], ["top it if ", "I could/nThat I didn't mean to "], ["say, I pro", "bably should explai", "n/n"], ["So, you don't think it's j", "ust the liq", "uor talk", "ing?", "/nYeah, you give me f"], ["eels, but y", "ou should know the real", "/nI h"], ["ope you don't get m", "ad when I ", "say I", "/nSaid I love you but I l"], ["ied", "/n"], ["Said I lo", "ve you but I lie", "d", "/n"], ["Said I lo", "ve you but I lie", "d", "/n"], ["Said I lo", "ve you but I lie", "d", "/n"], ["You're so much more than tha", "t/nSaid I "], ["love you but I", "", "/n"], ["Said I lo", "ve you but I", "", "/n"], ["But I li", "ed", "", "/n"], ["Said I lo", "ve you but I lie", "d/n"], ["You're so much more than tha", "t", "/n"], ["You're so much, you're s", "o much more/n"], ["You're so much, you're s", "o much more/n"], ["You're so much, you're s", "o much more (You are so much more)/n"], ["You're so much mo", "re than that/n"], ["You're so much, you're s", "o much more/n"], ["You're so much, you're s", "o much more (You)/n"], ["You're so much, you're s", "o much more (So much)/n"], ["You're so much mo", "re than that (Oh, no)/n"], ["You're so much, you're s", "o much more/n"], ["Said I lo", "ve you but I/n"], ["You're so much, you're s", "o much more/n"], ["But I li", "ed/n"], ["You're so much, you're s", "o much more/n"], ["Said I lo", "ve you but I lied/n"], ["You're so much, you're s", "o much more/n"], ["You're so much mo", "re than that/n"], ["You're so much, you're s", "o much more (You're so much, you're so much more)/n"], ["You're so much, you're s", "o much more", "", "/n"], ["You're so much m", "ore than that/n"], ["You're so much, you're s", "o much more (You're so much, you're so much more)/n"], ["You're so much, you're s", "o much more", "", "/n"], ["You're so much m", "ore than that"]], "medias": [{"tipo": "Youtube", "id": "Jk68UEGbYEA", "delay": 0}]}
+{
+    "cancion": "said-i-love-you",
+    "banda": "backstreet-boys",
+    "escala": "Am",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "G",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "letras": [
+        [
+            "I let the heat,",
+            " let the mom",
+            "ent",
+            "/nLet it "
+        ],
+        [
+            "take contr",
+            "ol of me",
+            "",
+            "/nA couple d"
+        ],
+        [
+            "rinks",
+            " had me zon",
+            "e in",
+            "/nMight have s"
+        ],
+        [
+            "aid a co",
+            "uple thin",
+            "gs",
+            "/nThat I didn't mean to "
+        ],
+        [
+            "say, I pro",
+            "bably should explai",
+            "n/n"
+        ],
+        [
+            "So, you don't think it's j",
+            "ust the liq",
+            "uor talk",
+            "ing?",
+            "/nYeah, you give me f"
+        ],
+        [
+            "eels, but y",
+            "ou should know the real",
+            "/nI h"
+        ],
+        [
+            "ope you don't get m",
+            "ad when I ",
+            "say I",
+            "/nSaid I love you but I l"
+        ],
+        [
+            "ied",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lie",
+            "d",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lie",
+            "d",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lie",
+            "d",
+            "/n"
+        ],
+        [
+            "You're so much more than tha",
+            "t",
+            "/nYou got me "
+        ],
+        [
+            "bad  ",
+            "  in the wor",
+            "st way",
+            "/nAnd it "
+        ],
+        [
+            "never fel",
+            "t so goo",
+            "d",
+            "/nI'm so at"
+        ],
+        [
+            "tached,",
+            " I'm beggin' mer",
+            "cy",
+            "/nI wouldn't s"
+        ],
+        [
+            "top it if ",
+            "I could/nThat I didn't mean to "
+        ],
+        [
+            "say, I pro",
+            "bably should explai",
+            "n/n"
+        ],
+        [
+            "So, you don't think it's j",
+            "ust the liq",
+            "uor talk",
+            "ing?",
+            "/nYeah, you give me f"
+        ],
+        [
+            "eels, but y",
+            "ou should know the real",
+            "/nI h"
+        ],
+        [
+            "ope you don't get m",
+            "ad when I ",
+            "say I",
+            "/nSaid I love you but I l"
+        ],
+        [
+            "ied",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lie",
+            "d",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lie",
+            "d",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lie",
+            "d",
+            "/n"
+        ],
+        [
+            "You're so much more than tha",
+            "t/nSaid I "
+        ],
+        [
+            "love you but I",
+            "",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I",
+            "",
+            "/n"
+        ],
+        [
+            "But I li",
+            "ed",
+            "",
+            "/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lie",
+            "d/n"
+        ],
+        [
+            "You're so much more than tha",
+            "t",
+            "/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more (You are so much more)/n"
+        ],
+        [
+            "You're so much mo",
+            "re than that/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more (You)/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more (So much)/n"
+        ],
+        [
+            "You're so much mo",
+            "re than that (Oh, no)/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more/n"
+        ],
+        [
+            "But I li",
+            "ed/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more/n"
+        ],
+        [
+            "Said I lo",
+            "ve you but I lied/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more/n"
+        ],
+        [
+            "You're so much mo",
+            "re than that/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more (You're so much, you're so much more)/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more",
+            "",
+            "/n"
+        ],
+        [
+            "You're so much m",
+            "ore than that/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more (You're so much, you're so much more)/n"
+        ],
+        [
+            "You're so much, you're s",
+            "o much more",
+            "",
+            "/n"
+        ],
+        [
+            "You're so much m",
+            "ore than that"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Jk68UEGbYEA",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

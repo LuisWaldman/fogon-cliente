@@ -151,6 +151,29 @@ export class ClienteSocket {
     })
   }
 
+  public async HTTPDELETE(action: string): Promise<Response> {
+    return fetch(this.UrlServer + action, {
+      method: 'DELETE',
+      headers: {
+        Authorization: `Bearer ${this.token}`,
+      },
+    })
+  }
+
+  public async HTTPPUT(
+    urlPut: string,
+    body: ObjetoPosteable,
+  ): Promise<Response> {
+    return fetch(this.UrlServer + urlPut, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${this.token}`,
+      },
+      body: JSON.stringify(body),
+    })
+  }
+
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
     return fetch(this.UrlServer + urlPost, {
       method: 'POST',

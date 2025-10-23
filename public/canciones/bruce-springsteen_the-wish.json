@@ -1,1 +1,309 @@
-{"cancion": "The-Wish", "banda": "bruce-springsteen", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "D", "E"]}, {"nombre": "parte2", "acordes": ["A"]}, {"nombre": "parte3", "acordes": ["E"]}, {"nombre": "parte4", "acordes": ["D"]}, {"nombre": "parte5", "acordes": ["Bm"]}], "orden_partes": [0, 1, 2, 1, 3, 4, 1, 2, 1, 2, 0, 1, 2, 1, 3, 4, 1, 2, 1, 2, 0, 1, 2, 1, 3, 4, 1, 2, 1, 2, 0, 1, 2, 1, 3, 4, 1, 2, 1, 2, 1, 1, 3, 3, 2, 2, 1, 2, 1, 1, 3, 4, 1, 2, 1, 2, 0, 1, 2, 1, 3, 4, 1, 2, 1, 2, 0, 1, 2, 1, 3, 4, 1, 2, 1, 1, 1, 3, 3, 2, 2, 1, 2, 1, 1, 3, 4, 1, 2, 1, 2]}, "letras": [["Dirty old street all slushed up in the rain and s", "now/nLittle boy and his "], ["ma shivering outside a rundown music store w", "indow", "/nThat night on "], ["top of a Christmas tree shines one beautiful s", "tar", "/nAnd lyin"], ["g underneath a b", "rand new Japanese gu", "itar", "/nI "], ["remember in the morning, ma, hearing your alarm clock r", "ing/nI'd lie in bed and "], ["listen to you gettin' ready for work/nThe sound of your makeup case on the "], ["sink", "/nAnd the "], ["ladies at the office, all lipstick, perfume, and rustlin' s", "kirts", "/nAnd how "], ["proud and happy you always looked w", "alking home from wo", "rk", "/nIf pa's "], ["eyes were windows into a world so deadly and t", "rue/nYou couldn't stop "], ["me from looking but you kept me from crawlin' t", "hrough", "/nAnd it's a "], ["funny old world, mama, where a little boy's wishes come t", "rue", "/nWell I got a few "], ["left in my pocket and a s", "pecial one just for yo", "u", "/nIt ain't no "], ["phone call on Sunday, flowers or a mother's day c", "ard/nIt ain't no "], ["house on a hill with a garden and a nice little y", "ard", "/nI got my "], ["hot rod down on Bond Street, I'm older but you'll know me in a ", "glance", "/nWe'll find us a little "], ["rock 'n' roll bar and b", "aby we'll go out and da", "nce", "/n"], ["[Vers", "e 5]", "", "", "", "", "", "", "", "", "", "", "", "", "", "/nWell it was me in "], ["my Beatle boots, you in pink curlers and matador p", "ants/nPullin' me "], ["up off the couch to do the twist for my uncles and a", "unts", "/nWell I found a girl "], ["of my own now, ma, I popped the question on your birthd", "ay/nShe stood waiting "], ["on the front porch while you were t", "elling me to get out there/nAnd "], ["say what it was that I had to s", "ay", "/nLast "], ["night we all sat around laughing at the things that guitar b", "ought us/nAnd I "], ["layed awake thinking 'bout the other things it's b", "rought us", "/nWell tonight I'm taking "], ["requests here in the kitchen/nThis one's for you, ma, let me come right out and say "], ["it", "/nIt's overdue, but baby, if you re "], ["looking for a sad song, w", "ell I ain't gonna pl", "ay it/n"], ["(fade", " out)", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "KgkOPd5nHJk", "delay": 0}]}
+{
+    "cancion": "The-Wish",
+    "banda": "bruce-springsteen",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            3,
+            3,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            1,
+            1,
+            3,
+            3,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "Dirty old street all slushed up in the rain and s",
+            "now/nLittle boy and his "
+        ],
+        [
+            "ma shivering outside a rundown music store w",
+            "indow",
+            "/nThat night on "
+        ],
+        [
+            "top of a Christmas tree shines one beautiful s",
+            "tar",
+            "/nAnd lyin"
+        ],
+        [
+            "g underneath a b",
+            "rand new Japanese gu",
+            "itar",
+            "/nI "
+        ],
+        [
+            "remember in the morning, ma, hearing your alarm clock r",
+            "ing/nI'd lie in bed and "
+        ],
+        [
+            "listen to you gettin' ready for work/nThe sound of your makeup case on the "
+        ],
+        [
+            "sink",
+            "/nAnd the "
+        ],
+        [
+            "ladies at the office, all lipstick, perfume, and rustlin' s",
+            "kirts",
+            "/nAnd how "
+        ],
+        [
+            "proud and happy you always looked w",
+            "alking home from wo",
+            "rk",
+            "/nIf pa's "
+        ],
+        [
+            "eyes were windows into a world so deadly and t",
+            "rue/nYou couldn't stop "
+        ],
+        [
+            "me from looking but you kept me from crawlin' t",
+            "hrough",
+            "/nAnd it's a "
+        ],
+        [
+            "funny old world, mama, where a little boy's wishes come t",
+            "rue",
+            "/nWell I got a few "
+        ],
+        [
+            "left in my pocket and a s",
+            "pecial one just for yo",
+            "u",
+            "/nIt ain't no "
+        ],
+        [
+            "phone call on Sunday, flowers or a mother's day c",
+            "ard/nIt ain't no "
+        ],
+        [
+            "house on a hill with a garden and a nice little y",
+            "ard",
+            "/nI got my "
+        ],
+        [
+            "hot rod down on Bond Street, I'm older but you'll know me in a ",
+            "glance",
+            "/nWe'll find us a little "
+        ],
+        [
+            "rock 'n' roll bar and b",
+            "aby we'll go out and da",
+            "nce",
+            "/n"
+        ],
+        [
+            "[Vers",
+            "e 5]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/nWell it was me in "
+        ],
+        [
+            "my Beatle boots, you in pink curlers and matador p",
+            "ants/nPullin' me "
+        ],
+        [
+            "up off the couch to do the twist for my uncles and a",
+            "unts",
+            "/nWell I found a girl "
+        ],
+        [
+            "of my own now, ma, I popped the question on your birthd",
+            "ay/nShe stood waiting "
+        ],
+        [
+            "on the front porch while you were t",
+            "elling me to get out there/nAnd "
+        ],
+        [
+            "say what it was that I had to s",
+            "ay",
+            "/nLast "
+        ],
+        [
+            "night we all sat around laughing at the things that guitar b",
+            "ought us/nAnd I "
+        ],
+        [
+            "layed awake thinking 'bout the other things it's b",
+            "rought us",
+            "/nWell tonight I'm taking "
+        ],
+        [
+            "requests here in the kitchen/nThis one's for you, ma, let me come right out and say "
+        ],
+        [
+            "it",
+            "/nIt's overdue, but baby, if you re "
+        ],
+        [
+            "looking for a sad song, w",
+            "ell I ain't gonna pl",
+            "ay it/n"
+        ],
+        [
+            "(fade",
+            " out)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "KgkOPd5nHJk",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

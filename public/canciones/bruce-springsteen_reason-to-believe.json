@@ -1,1 +1,333 @@
-{"cancion": "Reason-To-Believe", "banda": "bruce-springsteen", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "C", "G"]}, {"nombre": "parte2", "acordes": ["G"]}, {"nombre": "parte3", "acordes": ["C"]}, {"nombre": "parte4", "acordes": ["D"]}], "orden_partes": [0, 1, 2, 1, 1, 1, 1, 3, 3, 1, 2, 1, 1, 2, 1, 3, 1, 1, 2, 1, 3, 1, 1, 2, 1, 3, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3, 3, 1, 2, 1, 1, 2, 1, 3, 1, 1, 2, 1, 3, 1, 1, 2, 1, 3, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3, 3, 1, 2, 1, 1, 2, 3, 1, 1, 2, 1, 3, 1, 1, 2, 1, 3, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3, 3, 1, 2, 1, 1, 2, 3, 3, 3, 3, 1, 1, 2, 1, 3, 1, 1, 2, 1, 3, 1]}, "letras": [[], [], ["Reaso", "n to Believe (live)/n"], ["  Seen a man standin' over a de", "ad dog   ", "by the highway in a ditc", "h/n"], [" He's lookin' down kinda pu", "zzled   pok", "in' that dog with a stick", "/n"], [" Got his car door flung o", "pen   he's stan", "din' out on Highway 31", "/n"], [" Like if he stood there lo", "ng enoug", "h   t", "hat dog'd get up and run", "/n"], [" Man it struck me kinda fu", "nny ", "  seem kinda funn", "y sir to me", "/n"], [" How at the end of every ha", "rd earned day", " people find", " some reason to believe", "", "", "/n"], [" Now Mary Lou loved Jo", "hnny   ", "with a love mean and true", "/n"], [" She said \"Baby I'll work for you e", "very day   ", "and bring my money home to you\"", "/n"], [" One day he up and le", "ft her   ", "and ever since of that", "/n"], [" She waits down at the end of that di", "rt roa", "d  for ", "young Johnny to come back", "/n"], [" Man it struck me kinda fu", "nny ", "seemed kind of funn", "y sir to me", "/n"], [" How at the end of every ha", "rd earned day", " people find", " some reason to belie", "ve", "", "/n"], [" Take a baby to the ri", "ver   ", "Kyle William they call", "ed him/n"], [" They wash the baby in the wa", "ter   ", "take away little Kyle's sin", "/n"], [" In a whitewash sho", "tgun shack an ol", "d man passes away", "/n"], [" They take his body to the gra", "veyard   ", "and over him they pray", "/n"], [" Lord now won't you te", "ll us", " tell us what ", "does it mean", "/n"], [" Still at the end of every ha", "rd earned day", " people find", " some reason to believe", "", "", "/n"], [" Congregation ga", "thers   ", "down by the riverside", "/n"], [" Preacher stands with his Bi", "ble   ", "groom stands waitin' for his bride", "/n"], [" Congregation go", "ne and the sun sets behin", "d a weepin' willow tree", "/n"], [" Groom stands alo", "ne and watches the riv", "er rush on    ", "   ", " so", " effortlessly", "/n"], [" Lord and he's wo", "nderin", "' where can ", "his baby be", "/n"], [" Still at the end of every hard earned day people find some reason to believe/n"], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "H49obsV6oZ0", "delay": 0}]}
+{
+    "cancion": "Reason-To-Believe",
+    "banda": "bruce-springsteen",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            1,
+            2,
+            1,
+            1,
+            2,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            1,
+            2,
+            1,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "Reaso",
+            "n to Believe (live)/n"
+        ],
+        [
+            "  Seen a man standin' over a de",
+            "ad dog   ",
+            "by the highway in a ditc",
+            "h/n"
+        ],
+        [
+            " He's lookin' down kinda pu",
+            "zzled   pok",
+            "in' that dog with a stick",
+            "/n"
+        ],
+        [
+            " Got his car door flung o",
+            "pen   he's stan",
+            "din' out on Highway 31",
+            "/n"
+        ],
+        [
+            " Like if he stood there lo",
+            "ng enoug",
+            "h   t",
+            "hat dog'd get up and run",
+            "/n"
+        ],
+        [
+            " Man it struck me kinda fu",
+            "nny ",
+            "  seem kinda funn",
+            "y sir to me",
+            "/n"
+        ],
+        [
+            " How at the end of every ha",
+            "rd earned day",
+            " people find",
+            " some reason to believe",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Now Mary Lou loved Jo",
+            "hnny   ",
+            "with a love mean and true",
+            "/n"
+        ],
+        [
+            " She said \"Baby I'll work for you e",
+            "very day   ",
+            "and bring my money home to you\"",
+            "/n"
+        ],
+        [
+            " One day he up and le",
+            "ft her   ",
+            "and ever since of that",
+            "/n"
+        ],
+        [
+            " She waits down at the end of that di",
+            "rt roa",
+            "d  for ",
+            "young Johnny to come back",
+            "/n"
+        ],
+        [
+            " Man it struck me kinda fu",
+            "nny ",
+            "seemed kind of funn",
+            "y sir to me",
+            "/n"
+        ],
+        [
+            " How at the end of every ha",
+            "rd earned day",
+            " people find",
+            " some reason to belie",
+            "ve",
+            "",
+            "/n"
+        ],
+        [
+            " Take a baby to the ri",
+            "ver   ",
+            "Kyle William they call",
+            "ed him/n"
+        ],
+        [
+            " They wash the baby in the wa",
+            "ter   ",
+            "take away little Kyle's sin",
+            "/n"
+        ],
+        [
+            " In a whitewash sho",
+            "tgun shack an ol",
+            "d man passes away",
+            "/n"
+        ],
+        [
+            " They take his body to the gra",
+            "veyard   ",
+            "and over him they pray",
+            "/n"
+        ],
+        [
+            " Lord now won't you te",
+            "ll us",
+            " tell us what ",
+            "does it mean",
+            "/n"
+        ],
+        [
+            " Still at the end of every ha",
+            "rd earned day",
+            " people find",
+            " some reason to believe",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            " Congregation ga",
+            "thers   ",
+            "down by the riverside",
+            "/n"
+        ],
+        [
+            " Preacher stands with his Bi",
+            "ble   ",
+            "groom stands waitin' for his bride",
+            "/n"
+        ],
+        [
+            " Congregation go",
+            "ne and the sun sets behin",
+            "d a weepin' willow tree",
+            "/n"
+        ],
+        [
+            " Groom stands alo",
+            "ne and watches the riv",
+            "er rush on    ",
+            "   ",
+            " so",
+            " effortlessly",
+            "/n"
+        ],
+        [
+            " Lord and he's wo",
+            "nderin",
+            "' where can ",
+            "his baby be",
+            "/n"
+        ],
+        [
+            " Still at the end of every hard earned day people find some reason to believe/n"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "H49obsV6oZ0",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

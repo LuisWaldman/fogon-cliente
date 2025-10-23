@@ -216,10 +216,17 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.rolSesion = mensaje
     })
-    this.cliente.setLoginSuccessHandler(() => {
+    this.cliente.setLoginSuccessHandler(async () => {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       appStore.estadosApp.estadoLogin = 'logueado'
+      appStore.IndicesServer =
+        await CancionManager.getInstance().GetServerIndex()
+      CancionManager.getInstance()
+        .listasServerManager?.GetListas()
+        .then((listas) => {
+          appStore.listasEnServer = listas
+        })
     })
     this.cliente.setLoginFailedHandler((error: string) => {
       console.error(`Error al Loguearse: ${error}`)

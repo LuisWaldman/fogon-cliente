@@ -1,1 +1,388 @@
-{"cancion": "mamas-de-moises", "banda": "arjona-ricardo", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C", "G", "C", "G", "C", "G", "C", "G", "C", "G", "C", "G", "B7", "Em", "C", "D", "Em", "C", "G", "C", "G", "C", "G", "C", "G", "C", "G", "B7", "Em", "C", "D", "Em", "C", "G", "C", "G", "C", "G", "B", "Am", "F", "G", "C", "G", "B", "Am", "F", "G", "E", "Em", "G#", "Am", "F", "G", "Am", "G", "C", "G", "C", "G", "C", "G", "C", "G", "B7", "Em", "C", "D", "Em", "C", "C", "G", "C", "G", "C", "G", "B", "Am", "F", "G", "C", "G", "Bm", "Am", "F", "G", "E", "Em", "G#", "Am", "F", "G", "Am", "Bb", "F", "F/A", "Bb", "F", "D", "D/C", "Gm", "C", "Bb", "F", "G", "F/A", "G/B", "C", "G", "B", "Am", "F", "G", "C", "G", "B", "Am", "F", "G", "E", "Em", "G#", "Am", "F", "G", "Am", "F", "Am", "C", "D", "G", "C", "G"]}], "orden_partes": [0]}, "letras": [["[Ver", "se 1", "]", "/nCara"], ["vanas de pubert", "os/nhacen f"], ["ila en la fro", "ntera/nser\u00e1 m"], ["ejor lejos que ", "muertos/ngrita u"], ["na abuela en la ", "trinchera/nel presente es un d"], ["esierto/ny el fut"], ["uro una olla exp", "ress/nmientras ll"], ["ora otra m", "am\u00e1 de ", "Mois\u00e9s", "/nDeshi"], ["cieron su can", "asta, los echaron r\u00ed", "o abajo", "/nla paci"], ["encia dijo bas", "ta, y el exhilio es ", "un ataj", "o/ny un alumno se hace o"], ["brero/ny un minu"], ["to se hace un ", "mes/nmientras l"], ["lora otra ma", "m\u00e1 de Mois", "\u00e9s/n"], ["Sue\u00f1os, como aviones de pa", "pel/n"], ["due\u00f1os, de otra torre de B", "abel/n"], ["Otro l", "der s", "e apunt", "\u00f3/na la lis"], ["ta negra de", " la historia/n"], ["con sus", " \u00ednfu", "las de ", "Dios/naferrad"], ["o a un trono sin", " memoria/n"], ["desa", "yuna ", "con Cham", "pagne/nmientras ll"], ["ora otra mam", "\u00e1 de Mo", "is\u00e9s/nLi"], ["bertad en cautive", "rio y mentira en la orat", "oria", "/nsi la muer"], ["te es minist", "erio la venganza es la m", "emoria", "/nfirman cheques con la izq"], ["uierda/ny hacen com"], ["pras en ingl", "\u00e9s/nmientras ll"], ["ora otra mam", " de ", "Mois\u00e9s", "/n"], ["Sue\u00f1os, como barcos de pap", "el/n"], ["due\u00f1os, de otra torre de B", "abel/n"], ["Otro l", "der s", "e apunt", "\u00f3/na la lis"], ["ta negra de", " la historia/n"], ["con sus", " \u00ednfu", "las de D", "ios/naferrad"], ["o a un trono sin", " memoria/n"], ["desa", "yuna ", "con Cham", "pagne/nmientras ll"], ["ora otra mam", "\u00e1 de Mo", "is\u00e9s/n"], ["La bandera po", "pular,", "/n"], ["se dusfraza en un o", "ffhsore/n"], ["ya cotiza ", "en Nueva York", "/n"], ["y tiene c", "asa frente al mar", ".", "", "", "/n"], ["Otro l", "der s", "e apunt", "\u00f3/na la lis"], ["ta negra de", " la historia/n"], ["con sus", " \u00ednfu", "las de ", "Dios/naferrad"], ["o a un trono sin", " memoria/n"], ["desa", "yuna ", "con Cham", "pagne/nmientras ll"], ["ora otra mam", "\u00e1 de Mo", "is\u00e9s/n"], [], ["nas de puberto", "s/nhacen fila en la fr"], ["ontera"]], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "XGqcpjuXaR8", "delay": 0}]}
+{
+    "cancion": "mamas-de-moises",
+    "banda": "arjona-ricardo",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "B7",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "B7",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "B",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "B",
+                    "Am",
+                    "F",
+                    "G",
+                    "E",
+                    "Em",
+                    "G#",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "B7",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "B",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "Bm",
+                    "Am",
+                    "F",
+                    "G",
+                    "E",
+                    "Em",
+                    "G#",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "Bb",
+                    "F",
+                    "F/A",
+                    "Bb",
+                    "F",
+                    "D",
+                    "D/C",
+                    "Gm",
+                    "C",
+                    "Bb",
+                    "F",
+                    "G",
+                    "F/A",
+                    "G/B",
+                    "C",
+                    "G",
+                    "B",
+                    "Am",
+                    "F",
+                    "G",
+                    "C",
+                    "G",
+                    "B",
+                    "Am",
+                    "F",
+                    "G",
+                    "E",
+                    "Em",
+                    "G#",
+                    "Am",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "Am",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "[Ver",
+            "se 1",
+            "]",
+            "/nCara"
+        ],
+        [
+            "vanas de pubert",
+            "os/nhacen f"
+        ],
+        [
+            "ila en la fro",
+            "ntera/nserá m"
+        ],
+        [
+            "ejor lejos que ",
+            "muertos/ngrita u"
+        ],
+        [
+            "na abuela en la ",
+            "trinchera/nel presente es un d"
+        ],
+        [
+            "esierto/ny el fut"
+        ],
+        [
+            "uro una olla exp",
+            "ress/nmientras ll"
+        ],
+        [
+            "ora otra m",
+            "amá de ",
+            "Moisés",
+            "/nDeshi"
+        ],
+        [
+            "cieron su can",
+            "asta, los echaron rí",
+            "o abajo",
+            "/nla paci"
+        ],
+        [
+            "encia dijo bas",
+            "ta, y el exhilio es ",
+            "un ataj",
+            "o/ny un alumno se hace o"
+        ],
+        [
+            "brero/ny un minu"
+        ],
+        [
+            "to se hace un ",
+            "mes/nmientras l"
+        ],
+        [
+            "lora otra ma",
+            "má de Mois",
+            "és/n"
+        ],
+        [
+            "Sueños, como aviones de pa",
+            "pel/n"
+        ],
+        [
+            "dueños, de otra torre de B",
+            "abel/n"
+        ],
+        [
+            "Otro l",
+            "der s",
+            "e apunt",
+            "ó/na la lis"
+        ],
+        [
+            "ta negra de",
+            " la historia/n"
+        ],
+        [
+            "con sus",
+            " ínfu",
+            "las de ",
+            "Dios/naferrad"
+        ],
+        [
+            "o a un trono sin",
+            " memoria/n"
+        ],
+        [
+            "desa",
+            "yuna ",
+            "con Cham",
+            "pagne/nmientras ll"
+        ],
+        [
+            "ora otra mam",
+            "á de Mo",
+            "isés/nLi"
+        ],
+        [
+            "bertad en cautive",
+            "rio y mentira en la orat",
+            "oria",
+            "/nsi la muer"
+        ],
+        [
+            "te es minist",
+            "erio la venganza es la m",
+            "emoria",
+            "/nfirman cheques con la izq"
+        ],
+        [
+            "uierda/ny hacen com"
+        ],
+        [
+            "pras en ingl",
+            "és/nmientras ll"
+        ],
+        [
+            "ora otra mam",
+            " de ",
+            "Moisés",
+            "/n"
+        ],
+        [
+            "Sueños, como barcos de pap",
+            "el/n"
+        ],
+        [
+            "dueños, de otra torre de B",
+            "abel/n"
+        ],
+        [
+            "Otro l",
+            "der s",
+            "e apunt",
+            "ó/na la lis"
+        ],
+        [
+            "ta negra de",
+            " la historia/n"
+        ],
+        [
+            "con sus",
+            " ínfu",
+            "las de D",
+            "ios/naferrad"
+        ],
+        [
+            "o a un trono sin",
+            " memoria/n"
+        ],
+        [
+            "desa",
+            "yuna ",
+            "con Cham",
+            "pagne/nmientras ll"
+        ],
+        [
+            "ora otra mam",
+            "á de Mo",
+            "isés/n"
+        ],
+        [
+            "La bandera po",
+            "pular,",
+            "/n"
+        ],
+        [
+            "se dusfraza en un o",
+            "ffhsore/n"
+        ],
+        [
+            "ya cotiza ",
+            "en Nueva York",
+            "/n"
+        ],
+        [
+            "y tiene c",
+            "asa frente al mar",
+            ".",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Otro l",
+            "der s",
+            "e apunt",
+            "ó/na la lis"
+        ],
+        [
+            "ta negra de",
+            " la historia/n"
+        ],
+        [
+            "con sus",
+            " ínfu",
+            "las de ",
+            "Dios/naferrad"
+        ],
+        [
+            "o a un trono sin",
+            " memoria/n"
+        ],
+        [
+            "desa",
+            "yuna ",
+            "con Cham",
+            "pagne/nmientras ll"
+        ],
+        [
+            "ora otra mam",
+            "á de Mo",
+            "isés/n"
+        ],
+        [],
+        [
+            "nas de puberto",
+            "s/nhacen fila en la fr"
+        ],
+        [
+            "ontera"
+        ]
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "XGqcpjuXaR8",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

@@ -1,1 +1,367 @@
-{"cancion": "these-days", "banda": "bon-jovi", "escala": "C2", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C2", "D2", "Em9", "C2", "D2", "Em9", "C2", "D2", "Em9", "C2", "D2", "Em9", "C2", "D2", "G", "C2", "D2", "Em9", "C2", "D2", "Em9", "C2", "D2", "Em9", "C2", "D", "Em9", "C2", "D2", "G", "C9", "D/F#", "Em7", "C9", "D/F#", "G", "C9", "D9", "G/B", "C9", "D9", "G", "C2", "D2", "Em9", "C2", "D2", "Em9", "C2", "D2", "Em9", "C9", "D", "Em9", "C2", "D2", "G", "C9", "D/F#", "Em7", "C9", "D/F#", "G", "C9", "D9", "G/B", "C9", "D9", "G", "C", "Am", "C", "Am", "C", "Am", "C", "Am", "D", "C", "G", "D", "C", "G", "D", "C9", "D/F#", "Em7", "C9", "D/F#", "G", "C9", "D9", "G/B", "C9", "D9", "G", "C9", "D/F#", "Em7", "C9", "D/F#", "G", "C9", "D9", "G/B", "C9", "D9", "Em", "C9", "D9", "G", "C", "D", "Em", "C9", "D9", "G"]}], "orden_partes": [0]}, "letras": [[], ["alking around/nJust a f"], ["ace in the crowd /nTry to k"], ["eep myself out of the rain/nSaw a v"], ["agabond king wear /nA styr"], ["ofoam crown wondered /n"], ["If I might end up the same/nThere's a m"], ["an out on the co", "rner /nS"], ["inging old songs abo", "ut change /nEverybody got their cr"], ["oss to bare /nThese d"], ["ays/nShe came l"], ["ooking for some she", "lter /nWith a s"], ["uitcase full of dreams/nTo a m"], ["otel room on the bo", "ulevard /nI guess she's tr"], ["ying to be james dean/nShe's s"], ["een all the disci", "ples /nAnd "], ["all the 'wanna be", "'s' /nNo one wants to b"], ["e themselfs these da", "ys/nStill there's n"], ["othing /nTo hold "], ["on to but the", "se days/nThese d"], ["ays the sta", "rs ain't out of rea", "ch /nTh"], ["ese days there a", "in't a ladder /nFrom the str"], ["eets oh no no/nThese d"], ["ays are fast/nN"], ["othing lasts in thi", "s graceless ag", "e /nThere ain't nobody l"], ["eft but us the", "se days/nJimmy sh"], ["oes busted both hi", "s legs/nTr"], ["ying to learn to fly/nFrom a s"], ["econd story wi", "ndow/nHe just j"], ["umped and closed his eyes/nHis m"], ["omma said he was cra", "zy /nHe said m"], ["omma \"I've got to try", "\" /nDon't you know that "], ["all my heroes di", "ed/nAnd I gu"], ["ess I rather di", "e f f f fade aw", "ay yeah/nThese d"], ["ays the sta", "rs ain't out of rea", "ch /nTh"], ["ese days there a", "in't a ladder /nFrom the str"], ["eets oh no no/nThese d"], ["ays are fast/nN"], ["othing lasts in thi", "s graceless ag", "e /nThere ain't nobody l"], ["eft but us the", "se days/n"], [], ["  I know ro", "me's still burning /n"], ["  Though the ti", "mes have changed/n"], ["  This wo", "rld keeps turning rou", "nd /n"], [], [], ["ays the sta", "rs ain't out of rea", "ch /nTh"], ["ese days there a", "in't a ladder /nFrom the str"], ["eets oh no no/nThese d"], ["ays are fast/nN"], ["othing lasts in thi", "s graceless ag", "e /nThere ain't nobody l"], ["eft but us the", "se days/nThese d"], ["ays the sta", "rs ain't out of rea", "ch /nTh"], ["ese days there a", "in't a ladder /nFrom the str"], ["eets oh no no/nThese d"], ["ays are fast/nN"], ["othing lasts in thi", "s graceless ag", "e /nThere ain't nobody l"], ["eft but us the", "se days/n"], ["Ain't nobody le", "ft but us thes", "e days/n"], [], ["Ain't nobody le", "ft but us thes", "e days"]], "medias": [{"tipo": "Youtube", "id": "UCUzwEst3pE", "delay": 0}]}
+{
+    "cancion": "these-days",
+    "banda": "bon-jovi",
+    "escala": "C2",
+    "bpm": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "G",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "G",
+                    "C9",
+                    "D/F#",
+                    "Em7",
+                    "C9",
+                    "D/F#",
+                    "G",
+                    "C9",
+                    "D9",
+                    "G/B",
+                    "C9",
+                    "D9",
+                    "G",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "Em9",
+                    "C9",
+                    "D",
+                    "Em9",
+                    "C2",
+                    "D2",
+                    "G",
+                    "C9",
+                    "D/F#",
+                    "Em7",
+                    "C9",
+                    "D/F#",
+                    "G",
+                    "C9",
+                    "D9",
+                    "G/B",
+                    "C9",
+                    "D9",
+                    "G",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "D",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "G",
+                    "D",
+                    "C9",
+                    "D/F#",
+                    "Em7",
+                    "C9",
+                    "D/F#",
+                    "G",
+                    "C9",
+                    "D9",
+                    "G/B",
+                    "C9",
+                    "D9",
+                    "G",
+                    "C9",
+                    "D/F#",
+                    "Em7",
+                    "C9",
+                    "D/F#",
+                    "G",
+                    "C9",
+                    "D9",
+                    "G/B",
+                    "C9",
+                    "D9",
+                    "Em",
+                    "C9",
+                    "D9",
+                    "G",
+                    "C",
+                    "D",
+                    "Em",
+                    "C9",
+                    "D9",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [
+            "alking around/nJust a f"
+        ],
+        [
+            "ace in the crowd /nTry to k"
+        ],
+        [
+            "eep myself out of the rain/nSaw a v"
+        ],
+        [
+            "agabond king wear /nA styr"
+        ],
+        [
+            "ofoam crown wondered /n"
+        ],
+        [
+            "If I might end up the same/nThere's a m"
+        ],
+        [
+            "an out on the co",
+            "rner /nS"
+        ],
+        [
+            "inging old songs abo",
+            "ut change /nEverybody got their cr"
+        ],
+        [
+            "oss to bare /nThese d"
+        ],
+        [
+            "ays/nShe came l"
+        ],
+        [
+            "ooking for some she",
+            "lter /nWith a s"
+        ],
+        [
+            "uitcase full of dreams/nTo a m"
+        ],
+        [
+            "otel room on the bo",
+            "ulevard /nI guess she's tr"
+        ],
+        [
+            "ying to be james dean/nShe's s"
+        ],
+        [
+            "een all the disci",
+            "ples /nAnd "
+        ],
+        [
+            "all the 'wanna be",
+            "'s' /nNo one wants to b"
+        ],
+        [
+            "e themselfs these da",
+            "ys/nStill there's n"
+        ],
+        [
+            "othing /nTo hold "
+        ],
+        [
+            "on to but the",
+            "se days/nThese d"
+        ],
+        [
+            "ays the sta",
+            "rs ain't out of rea",
+            "ch /nTh"
+        ],
+        [
+            "ese days there a",
+            "in't a ladder /nFrom the str"
+        ],
+        [
+            "eets oh no no/nThese d"
+        ],
+        [
+            "ays are fast/nN"
+        ],
+        [
+            "othing lasts in thi",
+            "s graceless ag",
+            "e /nThere ain't nobody l"
+        ],
+        [
+            "eft but us the",
+            "se days/nJimmy sh"
+        ],
+        [
+            "oes busted both hi",
+            "s legs/nTr"
+        ],
+        [
+            "ying to learn to fly/nFrom a s"
+        ],
+        [
+            "econd story wi",
+            "ndow/nHe just j"
+        ],
+        [
+            "umped and closed his eyes/nHis m"
+        ],
+        [
+            "omma said he was cra",
+            "zy /nHe said m"
+        ],
+        [
+            "omma \"I've got to try",
+            "\" /nDon't you know that "
+        ],
+        [
+            "all my heroes di",
+            "ed/nAnd I gu"
+        ],
+        [
+            "ess I rather di",
+            "e f f f fade aw",
+            "ay yeah/nThese d"
+        ],
+        [
+            "ays the sta",
+            "rs ain't out of rea",
+            "ch /nTh"
+        ],
+        [
+            "ese days there a",
+            "in't a ladder /nFrom the str"
+        ],
+        [
+            "eets oh no no/nThese d"
+        ],
+        [
+            "ays are fast/nN"
+        ],
+        [
+            "othing lasts in thi",
+            "s graceless ag",
+            "e /nThere ain't nobody l"
+        ],
+        [
+            "eft but us the",
+            "se days/n"
+        ],
+        [],
+        [
+            "  I know ro",
+            "me's still burning /n"
+        ],
+        [
+            "  Though the ti",
+            "mes have changed/n"
+        ],
+        [
+            "  This wo",
+            "rld keeps turning rou",
+            "nd /n"
+        ],
+        [],
+        [],
+        [
+            "ays the sta",
+            "rs ain't out of rea",
+            "ch /nTh"
+        ],
+        [
+            "ese days there a",
+            "in't a ladder /nFrom the str"
+        ],
+        [
+            "eets oh no no/nThese d"
+        ],
+        [
+            "ays are fast/nN"
+        ],
+        [
+            "othing lasts in thi",
+            "s graceless ag",
+            "e /nThere ain't nobody l"
+        ],
+        [
+            "eft but us the",
+            "se days/nThese d"
+        ],
+        [
+            "ays the sta",
+            "rs ain't out of rea",
+            "ch /nTh"
+        ],
+        [
+            "ese days there a",
+            "in't a ladder /nFrom the str"
+        ],
+        [
+            "eets oh no no/nThese d"
+        ],
+        [
+            "ays are fast/nN"
+        ],
+        [
+            "othing lasts in thi",
+            "s graceless ag",
+            "e /nThere ain't nobody l"
+        ],
+        [
+            "eft but us the",
+            "se days/n"
+        ],
+        [
+            "Ain't nobody le",
+            "ft but us thes",
+            "e days/n"
+        ],
+        [],
+        [
+            "Ain't nobody le",
+            "ft but us thes",
+            "e days"
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "UCUzwEst3pE",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}

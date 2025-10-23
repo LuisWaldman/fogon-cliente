@@ -1,1 +1,336 @@
-{"cancion": "Apnea", "banda": "arjona-ricardo", "escala": "F", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "Dm", "Bb", "C", "F", "Dm", "Bb", "C", "F", "Bb", "F", "Am", "Bb", "F", "C", "Dm", "Bb", "C", "Dm", "F", "Bb", "F", "Am", "Bb", "F", "C", "Dm", "Bb", "C", "F", "F", "C", "Dm", "Bb", "F", "C", "F", "C", "Dm", "Bb", "F", "C", "Am", "Bb", "C", "F", "Dm", "Bb", "C", "F", "Dm", "Bb", "C", "F", "Bb", "F", "Am", "Bb", "F", "C", "Dm", "Bb", "C", "Dm", "Bb", "C", "F", "C", "Dm", "Bb", "F", "C", "F", "C", "Dm", "Bb", "F", "C", "Am", "Bb", "C", "F", "Dm", "Bb", "C", "F", "Dm", "Bb", "C", "Dm", "C", "Bb", "C", "Dm", "C", "Bb", "C", "F", "C", "Dm", "Bb", "F", "C", "F", "C", "Dm", "Bb", "F", "C", "Am", "Bb", "C", "F", "Dm", "Bb", "C", "F", "Dm", "Bb", "C", "F"]}], "orden_partes": [0]}, "letras": [[], [], ["Cabe un siglo en e", "ste martes por la noc", "he/nDueles m"], ["\u00e1s que el peor dolor que se in", "vent\u00f3/n"], ["El espejo lanza dar", "dos de reproche", "/n"], ["Hoy empieza lo que ", "ya se termin", "/n"], ["La esperanza se ti", "r\u00f3 por la ventana", "/nEl "], ["insomnio se qued\u00f3 a vivir a", "qu\u00ed/n"], ["El ayer lo dej\u00f3 to", "do pa' ma\u00f1ana", "/n"], ["Y el ma\u00f1ana cuando", " est\u00e9 yo ya me f", "ui/n"], ["No consi", "go respira", "r/n"], ["Hago apnea desde el", " d\u00eda en que no est", "\u00e1s/n"], ["Caigo hasta", " el fondo del m", "ar/n"], ["Ara\u00f1ando la burbuj", "a en que no est\u00e1", "s/n"], ["Imposible respira", "r/nEl ox\u00edgeno se"], [" fue de este lu", "gar", "", "", "", "", "", "", "/n"], ["Te regalo esta ca", "nci\u00f3n desespera", "da/nDes"], ["abrida como lunes por la tard", "e/n"], ["Colapsado caigo al ", "fondo y en pica", "da/n"], ["Y no tengo ni el va", "lor pa' ser co", "barde", "", "/n"], ["No consi", "go respira", "r/n"], ["Hago apnea desde el", " d\u00eda en que no est", "\u00e1s/n"], ["Caigo hasta", " el fondo del m", "ar/n"], ["Ara\u00f1ando la burbuj", "a en que no est", "s/n"], ["Imposible respira", "r/nEl ox\u00edgeno se"], [" fue de este lu", "gar", "", "", "", "", "", "", "/n"], ["Prisa de rendirse y claudicar/n"], ["Descenso en espiral profundidad/n"], ["Amnesia de pelear por respirar/n"], ["Deseo de rendirse en soledad/n"], ["Ox\u00edgeno golpeando una pared/n"], ["El pulso tropezando sin radar/n"], ["Colapsa coraz\u00f3n a su merced/n"], ["Morir ser\u00e1 mejor que recordar/n"], ["No consi", "go respira", "r/n"], ["Hago apnea desde el", " d\u00eda en que no est", "\u00e1s/n"], ["Caigo hasta", " el fondo del m", "ar/n"], ["Ara\u00f1ando la burbuj", "a en que no est\u00e1s", "/n"], ["Imposible respira", "r/nEl ox\u00edgeno se"], [" fue de este lugar/n"], [], []], "bpm": 80, "medias": [{"tipo": "Youtube", "id": "NspeO7eK_CM", "delay": 0}]}
+{
+    "cancion": "Apnea",
+    "banda": "arjona-ricardo",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Am",
+                    "Bb",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "Dm",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Am",
+                    "Bb",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F",
+                    "C",
+                    "Am",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Am",
+                    "Bb",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F",
+                    "C",
+                    "Am",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "Dm",
+                    "C",
+                    "Bb",
+                    "C",
+                    "Dm",
+                    "C",
+                    "Bb",
+                    "C",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F",
+                    "C",
+                    "Am",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F",
+                    "Dm",
+                    "Bb",
+                    "C",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [
+            "Cabe un siglo en e",
+            "ste martes por la noc",
+            "he/nDueles m"
+        ],
+        [
+            "ás que el peor dolor que se in",
+            "ventó/n"
+        ],
+        [
+            "El espejo lanza dar",
+            "dos de reproche",
+            "/n"
+        ],
+        [
+            "Hoy empieza lo que ",
+            "ya se termin",
+            "/n"
+        ],
+        [
+            "La esperanza se ti",
+            "ró por la ventana",
+            "/nEl "
+        ],
+        [
+            "insomnio se quedó a vivir a",
+            "quí/n"
+        ],
+        [
+            "El ayer lo dejó to",
+            "do pa' mañana",
+            "/n"
+        ],
+        [
+            "Y el mañana cuando",
+            " esté yo ya me f",
+            "ui/n"
+        ],
+        [
+            "No consi",
+            "go respira",
+            "r/n"
+        ],
+        [
+            "Hago apnea desde el",
+            " día en que no est",
+            "ás/n"
+        ],
+        [
+            "Caigo hasta",
+            " el fondo del m",
+            "ar/n"
+        ],
+        [
+            "Arañando la burbuj",
+            "a en que no está",
+            "s/n"
+        ],
+        [
+            "Imposible respira",
+            "r/nEl oxígeno se"
+        ],
+        [
+            " fue de este lu",
+            "gar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Te regalo esta ca",
+            "nción desespera",
+            "da/nDes"
+        ],
+        [
+            "abrida como lunes por la tard",
+            "e/n"
+        ],
+        [
+            "Colapsado caigo al ",
+            "fondo y en pica",
+            "da/n"
+        ],
+        [
+            "Y no tengo ni el va",
+            "lor pa' ser co",
+            "barde",
+            "",
+            "/n"
+        ],
+        [
+            "No consi",
+            "go respira",
+            "r/n"
+        ],
+        [
+            "Hago apnea desde el",
+            " día en que no est",
+            "ás/n"
+        ],
+        [
+            "Caigo hasta",
+            " el fondo del m",
+            "ar/n"
+        ],
+        [
+            "Arañando la burbuj",
+            "a en que no est",
+            "s/n"
+        ],
+        [
+            "Imposible respira",
+            "r/nEl oxígeno se"
+        ],
+        [
+            " fue de este lu",
+            "gar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Prisa de rendirse y claudicar/n"
+        ],
+        [
+            "Descenso en espiral profundidad/n"
+        ],
+        [
+            "Amnesia de pelear por respirar/n"
+        ],
+        [
+            "Deseo de rendirse en soledad/n"
+        ],
+        [
+            "Oxígeno golpeando una pared/n"
+        ],
+        [
+            "El pulso tropezando sin radar/n"
+        ],
+        [
+            "Colapsa corazón a su merced/n"
+        ],
+        [
+            "Morir será mejor que recordar/n"
+        ],
+        [
+            "No consi",
+            "go respira",
+            "r/n"
+        ],
+        [
+            "Hago apnea desde el",
+            " día en que no est",
+            "ás/n"
+        ],
+        [
+            "Caigo hasta",
+            " el fondo del m",
+            "ar/n"
+        ],
+        [
+            "Arañando la burbuj",
+            "a en que no estás",
+            "/n"
+        ],
+        [
+            "Imposible respira",
+            "r/nEl oxígeno se"
+        ],
+        [
+            " fue de este lugar/n"
+        ],
+        [],
+        []
+    ],
+    "bpm": 80,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "NspeO7eK_CM",
+            "delay": 0
+        }
+    ],
+    "etiquetas": []
+}
