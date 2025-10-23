@@ -10,6 +10,7 @@ export class DuracionTempo extends FiltroIndice {
     this.maxDur = maxDur
   }
   override FiltroOk(item: ItemIndiceCancion): boolean {
-    return item.duracion >= this.minDur && item.duracion <= this.maxDur
+    console.log('FiltroDuracionTempo.FiltroOk called', item)
+    return true //item.duracion >= this.minDur && item.duracion <= this.maxDur
   }
 }
