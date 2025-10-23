@@ -9,7 +9,7 @@ import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
-import { vi } from 'vitest'
+
 
 const listasManager: ListasDBManager = new ListasDBManager()
 const selectedLista = ref<string>('')
@@ -309,6 +309,8 @@ function borrarLista() {
             v-for="(cancion, index) in refResultadoCanciones"
             :key="index"
             :cancion="cancion"
+            :listasstore="ListasEnStorage"
+            :listasserverstore="appStore.listasEnServer"
             @click="clickTocar(cancion.origen)"
           />
         </div>
@@ -326,7 +328,12 @@ function borrarLista() {
           v-for="(cancion, index) in refUltimasCanciones"
           :key="index"
           :cancion="cancion"
+          :listasstore="ListasEnStorage"
+          :listasserverstore="appStore.listasEnServer"
           @click="clickTocar(cancion.origen)"
+          @agregar="(lista, cancion) => {
+            console.log('Agregar a lista:', lista, cancion)
+          }"
         />
       </div>
     </div>

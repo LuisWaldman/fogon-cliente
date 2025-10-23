@@ -4,11 +4,16 @@ import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import emoticonOrigen from './emoticonOrigen.vue'
 import { Tiempo } from '../../modelo/tiempo'
 const calidad = ['web', 'revisada', 'garantizada']
+const agregandoLista = ref(false)
 const props = defineProps<{
   cancion: ItemIndiceCancion
+  listasstore: string[]
+  listasserverstore: string[]
 }>()
+const listaseleccionada = ref<string>("actual")
 const tiempo = new Tiempo()
 const viendoDetalle = ref(false)
+
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
   let processed = texto.replace(/-/g, ' ')
@@ -26,12 +31,15 @@ function arreglartexto(texto: string): string {
   return processed
 }
 
-defineEmits(['click'])
+const emit = defineEmits(['click', 'agregar', 'borrar'])
+function clickAgregar() {
+  emit('agregar',  listaseleccionada.value)
+}
 </script>
 
 <template>
-  <div class="cancion" @click="viendoDetalle = !viendoDetalle">
-    <div class="nombreCancion">{{ arreglartexto(props.cancion.cancion) }}</div>
+  <div class="cancion">
+    <div @click="viendoDetalle = !viendoDetalle" class="nombreCancion">{{ arreglartexto(props.cancion.cancion) }}</div>
     <div class="origen-indicador">
       <emoticonOrigen :origen="props.cancion.origen.origenUrl" />
     </div>
@@ -86,8 +94,39 @@ defineEmits(['click'])
     </div>
     <div v-if="viendoDetalle">
       <span @click="$emit('click')">[Tocar]</span>
-      <span>[+ Lista]</span>
+      <span @click="agregandoLista = !agregandoLista">[Agregar]</span>
       <span>[Borrar]</span>
+    </div>
+    <div style="display: flex;" v-if="viendoDetalle && agregandoLista">
+      <select v-model="listaseleccionada" style="width: 60%;">
+        <optgroup>
+          <option value="actual">Lista Actual</option>
+        </optgroup>
+        <optgroup>
+        <option
+          v-for="lista in props.listasstore"
+          :key="lista"
+          :value="'local_' + lista"
+        >
+          💾 {{ lista }}
+        </option>
+        </optgroup>
+        <optgroup>
+        <option
+          v-for="lista in props.listasserverstore"
+          :key="lista"
+          :value="'server_' + lista"
+        >
+          🔌 {{ lista }}
+        </option>
+        </optgroup>
+      </select>
+      <div @click="clickAgregar">
+        [AGREGAR]
+      </div>
+      <div @click="agregandoLista = false">
+        [CANCELAR]
+      </div>
     </div>
   </div>
 </template>
