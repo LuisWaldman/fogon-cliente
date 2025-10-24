@@ -501,7 +501,6 @@ function VerFiltros() {
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

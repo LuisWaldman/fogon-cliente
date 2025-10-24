@@ -3,7 +3,6 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import Aplicacion from '../aplicacion'
 import { Cancion } from '../modelo/cancion/cancion'
-import { itemLista } from '../modelo/item_lista'
 import { Acordes, Parte } from '../modelo/cancion/acordes'
 import { Letra } from '../modelo/cancion/letra'
 import { Noticia } from '../modelo/noticia'
@@ -53,16 +52,15 @@ export const useAppStore = defineStore('app', () => {
   const cancionModificada = ref<boolean>(false)
 
   const sesiones = ref<Sesion[]>([] as Sesion[])
-  const listaReproduccion = ref<itemLista[]>([])
-  const mensajes = ref<string[]>([])
+  const listaReproduccion = ref<ItemIndiceCancion[]>([])
   const nroCancion = ref<number>(1)
+  const mensajes = ref<string[]>([])
   const compas = ref<number>(-1)
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
   const errores = ref<Error[]>([])
   const noticias = ref<Noticia[]>([])
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
   const estado = ref<string>('No iniciado')
-  const listaIndices = ref<ItemIndiceCancion[]>([])
 
   // Método para actualizar el estado de reproducción
   const actualizarEstado = (nuevoEstado: string) => {
@@ -109,7 +107,6 @@ export const useAppStore = defineStore('app', () => {
     noticias,
     mensajes,
     sesiones,
-    IndicesServer: listaIndices,
     actualizarEstado,
     actualizarEstadoConexion,
     actualizarEstadoReproduccion,

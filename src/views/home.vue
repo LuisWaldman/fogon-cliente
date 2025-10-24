@@ -33,7 +33,6 @@ CancionManager.getInstance()
   .GetDBIndex()
   .then((indices: ItemIndiceCancion[]) => {
     CancionesLocalstorage.value = indices
-    
   })
 
 let ultimasCanciones = new UltimasCanciones()
@@ -43,7 +42,9 @@ const refViendoCanciones = ref<ItemIndiceCancion[]>([])
 const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
 const textoMostrando = ref(
-  refViendoCanciones.value.length === 0 ? '' : 'Ultimas ' + refViendoCanciones.value.length + ' canciones',
+  refViendoCanciones.value.length === 0
+    ? ''
+    : 'Ultimas ' + refViendoCanciones.value.length + ' canciones',
 )
 
 function clickTocar(cancion: OrigenCancion) {
@@ -52,11 +53,11 @@ function clickTocar(cancion: OrigenCancion) {
 
 onMounted(() => {
   refViendoCanciones.value = refUltimasCanciones.value
-  textoMostrando.value = refViendoCanciones.value.length === 0 ? '' : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
+  textoMostrando.value =
+    refViendoCanciones.value.length === 0
+      ? ''
+      : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
 })
-
-
-
 
 function clickBorrarLista(cancion: OrigenCancion) {
   refViendoCanciones.value = refViendoCanciones.value.filter(
@@ -71,10 +72,25 @@ function handleResultados(canciones: ItemIndiceCancion[]) {
 }
 
 const viendo = ref('inicio')
-function clickOpcion(viendostr: string) {
-  viendo.value = viendostr
-}
 const viendoOrigen = ref('localstorage')
+function clickOpcion(viendostr: string) {
+  if (viendostr === 'inicio') {
+    refViendoCanciones.value = refUltimasCanciones.value
+    textoMostrando.value =
+      refViendoCanciones.value.length === 0
+        ? ''
+        : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
+  } else if (viendostr === 'canciones') { 
+  } else if (viendostr === 'listas') {
+    
+    refViendoCanciones.value = appStore.listaReproduccion
+    if (appStore.listaReproduccion.length > 0) {
+      viendoOrigen.value = 'reproduccion'
+    }
+  } 
+  viendo.value = viendostr
+
+}
 function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
   if (viendoOrigen.value === 'localstorage') {
@@ -85,7 +101,7 @@ function clickOrigen(viendostr: string) {
     }
   } else if (viendoOrigen.value === 'server') {
     if (viendo.value === 'canciones') {
-      refViendoCanciones.value = appStore.IndicesServer
+      //refViendoCanciones.value = appStore.IndicesServer
     } else if (viendo.value === 'listas') {
       // Aquí podrías implementar la lógica para obtener las listas del servidor
       viendoListas.value = appStore.listasEnServer
@@ -120,8 +136,6 @@ function confirmarNuevaLista() {
     })
   }
 }
-
-  
 
 function renombrarLista() {
   if (!selectedLista.value) {
@@ -227,6 +241,16 @@ function borrarLista() {
     })
   }
 }
+
+function AgregarLista(index: number, listaseleccionada: string) {
+  console.log('Agregar a lista:', index, listaseleccionada)
+  if (listaseleccionada === 'actual') {
+    appStore.aplicacion.ClickAgregarAListaReproduccion(
+      refViendoCanciones.value[index],
+    )
+    return
+  }
+}
 </script>
 
 <template>
@@ -269,6 +293,17 @@ function borrarLista() {
   <div style="width: 100%" v-if="viendo === 'canciones' || viendo === 'listas'">
     <div class="config-menu">
       <div class="config-menu-group">
+
+
+        <div v-if="appStore.listaReproduccion.length" @click="clickOrigen('reproduccion')" class="config-menu-item">
+          <a
+            href="#"
+            class="nav-link text-white"
+            :class="{ activo: viendoOrigen === 'reproduccion' }"
+          >
+            Reproduciendo ( {{ appStore.listaReproduccion.length }} )
+          </a>
+        </div>
         <div @click="clickOrigen('localstorage')" class="config-menu-item">
           <a
             href="#"
@@ -310,7 +345,7 @@ function borrarLista() {
         v-if="viendo === 'inicio'"
       />
 
-      <div style="width: 90%" v-if="viendo === 'listas'">
+      <div style="width: 90%" v-if="viendo === 'listas' && viendoOrigen !== 'reproduccion' ">
         <div
           style="
             display: flex;
@@ -360,11 +395,15 @@ function borrarLista() {
       <p class="primer-parrafo" v-if="viendo === 'inicio'">
         {{ textoMostrando }}
       </p>
-      
-      <tablacanciones v-if="textoMostrando != ''"
+
+      <tablacanciones
+        v-if="textoMostrando != ''"
         :canciones="refViendoCanciones"
+        :listasserverstore="appStore.listasEnServer"
+        :listasstore="ListasEnStorage"
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
+        @agregar="AgregarLista"
       />
     </div>
   </div>

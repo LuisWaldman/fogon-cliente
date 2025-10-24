@@ -3,10 +3,18 @@ import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
 
-const emit = defineEmits(['tocar', 'borrar', 'agregarALista'])
+const emit = defineEmits(['tocar', 'borrar', 'agregar'])
+const agregandoLista = ref(false)
 const props = defineProps<{
   canciones: ItemIndiceCancion[]
+  listasstore: string[]
+  listasserverstore: string[]
 }>()
+const listaseleccionada = ref<string>('actual')
+
+function clickAgregar(index: number) {
+  emit('agregar', index, listaseleccionada.value)
+}
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
   let processed = texto.replace(/-/g, ' ')
@@ -97,7 +105,35 @@ function AgregarALista(index: number) {
             }}
             <span @click="Reproducir(index)">[Tocar]</span>
             <span @click="Borrar(index)">[Borrar]</span>
-            <span @click="AgregarALista(index)">[Agregar a Lista]</span>
+            <span @click="agregandoLista = true">[Agregar a Lista]</span>
+
+            <div style="display: flex" v-if="agregandoLista">
+              <select v-model="listaseleccionada" style="width: 60%">
+                <optgroup>
+                  <option value="actual">Lista de reproduccion</option>
+                </optgroup>
+                <optgroup>
+                  <option
+                    v-for="lista in props.listasstore"
+                    :key="lista"
+                    :value="'local_' + lista"
+                  >
+                    💾 {{ lista }}
+                  </option>
+                </optgroup>
+                <optgroup>
+                  <option
+                    v-for="lista in props.listasserverstore"
+                    :key="lista"
+                    :value="'server_' + lista"
+                  >
+                    🔌 {{ lista }}
+                  </option>
+                </optgroup>
+              </select>
+              <div @click="clickAgregar(index)">[AGREGAR]</div>
+              <div @click="agregandoLista = false">[CANCELAR]</div>
+            </div>
           </td>
         </tr>
       </template>
