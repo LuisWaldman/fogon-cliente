@@ -16,6 +16,7 @@ import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 import type { Servidor } from './modelo/servidor'
 import { IndiceHelper } from './modelo/indices/IndiceHelper'
 import type { Router } from 'vue-router'
+import type { ItemIndiceCancion } from './modelo/cancion/ItemIndiceCancion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -110,6 +111,10 @@ export default class Aplicacion {
     appStore.estadosApp.texto = 'Cargando cancion...'
     this.reproductor.ClickCancion(origen)
     this.router?.push('/tocar')
+  }
+
+  async ClickAgregarAListaReproduccion(item: ItemIndiceCancion) {
+    this.reproductor.AgregarAListaReproduccion(item)
   }
 
   updateCompas(compas: number) {
@@ -220,8 +225,6 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       appStore.estadosApp.estadoLogin = 'logueado'
-      appStore.IndicesServer =
-        await CancionManager.getInstance().GetServerIndex()
       CancionManager.getInstance()
         .listasServerManager?.GetListas()
         .then((listas) => {

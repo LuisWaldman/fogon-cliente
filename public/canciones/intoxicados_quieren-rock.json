@@ -8,8 +8,21 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "A5",
                     "A5",
                     "A5",
                     "A5"
@@ -19,38 +32,246 @@
                 "nombre": "parte2",
                 "acordes": [
                     "A5",
-                    "B5",
-                    "B5",
-                    "B5",
-                    "B5"
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "icos saben donde esta la accion/nse e"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "stan preparando mientras baja el sol/nLa b"
+            "Si no",
+            "sabe dónde está la acción,",
+            "está p",
+            "preparan mientras baja el sol./n"
         ],
         [
-            "anda que les gusta se presenta hoy/nch"
+            "La banda q",
+            "qu les gusta se presenta c",
+            "chi",
+            "chicas",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "cantan como siempre./n"
         ],
         [
-            "icos y chicas quieren rock/n"
+            "Que salga l",
+            "l banda que queremos rock,",
+            "queremos rock,",
+            "queremo rock./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Est",
+            "es una canción en español de rock argentino./n"
+        ],
+        [
+            "Está pr",
+            "prepara mientras baja el sol./n"
+        ],
+        [
+            "La banda qu",
+            "q les gusta se presenta hoy./n"
+        ],
+        [
+            "Chica",
+            "chicas quieren rock,",
+            "quieren ro",
+            "ro Quiero, quiero, quier",
+            "q quiero, quiero",
+            "quiero, quiero,",
+            "quiero, quiero, quier",
+            "q quiero, quiero, qu",
+            "quie",
+            "qu",
+            "qui/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Quiero, quier",
+            "q quiero, quiero, qui",
+            "qui",
+            "",
+            "qu",
+            "qu",
+            "q/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Qui/n"
+        ],
+        [
+            "Qui",
+            "quier",
+            "q quiero, quiero, quiero, quiero."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 86,
     "medias": [
         {
             "tipo": "Youtube",
@@ -58,8 +279,9 @@
             "delay": 0
         }
     ],
-    "procesando": 2,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

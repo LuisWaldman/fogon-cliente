@@ -4,7 +4,7 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
@@ -33,23 +33,31 @@ CancionManager.getInstance()
   .GetDBIndex()
   .then((indices: ItemIndiceCancion[]) => {
     CancionesLocalstorage.value = indices
-    refViendoCanciones.value = indices
   })
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
 refUltimasCanciones.value = ultimasCanciones.canciones
-const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 const refViendoCanciones = ref<ItemIndiceCancion[]>([])
+const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
-refViendoCanciones.value = ultimasCanciones.canciones
 const textoMostrando = ref(
-  'Ultimas ' + refViendoCanciones.value.length + ' canciones',
+  refViendoCanciones.value.length === 0
+    ? ''
+    : 'Ultimas ' + refViendoCanciones.value.length + ' canciones',
 )
 
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }
+
+onMounted(() => {
+  refViendoCanciones.value = refUltimasCanciones.value
+  textoMostrando.value =
+    refViendoCanciones.value.length === 0
+      ? ''
+      : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
+})
 
 function clickBorrarLista(cancion: OrigenCancion) {
   refViendoCanciones.value = refViendoCanciones.value.filter(
@@ -64,10 +72,23 @@ function handleResultados(canciones: ItemIndiceCancion[]) {
 }
 
 const viendo = ref('inicio')
+const viendoOrigen = ref('localstorage')
 function clickOpcion(viendostr: string) {
+  if (viendostr === 'inicio') {
+    refViendoCanciones.value = refUltimasCanciones.value
+    textoMostrando.value =
+      refViendoCanciones.value.length === 0
+        ? ''
+        : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
+  } else if (viendostr === 'canciones') {
+  } else if (viendostr === 'listas') {
+    refViendoCanciones.value = appStore.listaReproduccion
+    if (appStore.listaReproduccion.length > 0) {
+      viendoOrigen.value = 'reproduccion'
+    }
+  }
   viendo.value = viendostr
 }
-const viendoOrigen = ref('localstorage')
 function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
   if (viendoOrigen.value === 'localstorage') {
@@ -78,7 +99,7 @@ function clickOrigen(viendostr: string) {
     }
   } else if (viendoOrigen.value === 'server') {
     if (viendo.value === 'canciones') {
-      refViendoCanciones.value = appStore.IndicesServer
+      //refViendoCanciones.value = appStore.IndicesServer
     } else if (viendo.value === 'listas') {
       // Aquí podrías implementar la lógica para obtener las listas del servidor
       viendoListas.value = appStore.listasEnServer
@@ -218,6 +239,16 @@ function borrarLista() {
     })
   }
 }
+
+function AgregarLista(index: number, listaseleccionada: string) {
+  console.log('Agregar a lista:', index, listaseleccionada)
+  if (listaseleccionada === 'actual') {
+    appStore.aplicacion.ClickAgregarAListaReproduccion(
+      refViendoCanciones.value[index],
+    )
+    return
+  }
+}
 </script>
 
 <template>
@@ -250,7 +281,7 @@ function borrarLista() {
             class="nav-link text-white"
             :class="{ activo: viendo === 'listas' }"
           >
-            Listas
+            🗒️ Listas
           </a>
         </div>
       </div>
@@ -260,6 +291,19 @@ function borrarLista() {
   <div style="width: 100%" v-if="viendo === 'canciones' || viendo === 'listas'">
     <div class="config-menu">
       <div class="config-menu-group">
+        <div
+          v-if="appStore.listaReproduccion.length"
+          @click="clickOrigen('reproduccion')"
+          class="config-menu-item"
+        >
+          <a
+            href="#"
+            class="nav-link text-white"
+            :class="{ activo: viendoOrigen === 'reproduccion' }"
+          >
+            Reproduciendo ( {{ appStore.listaReproduccion.length }} )
+          </a>
+        </div>
         <div @click="clickOrigen('localstorage')" class="config-menu-item">
           <a
             href="#"
@@ -301,7 +345,10 @@ function borrarLista() {
         v-if="viendo === 'inicio'"
       />
 
-      <div style="width: 90%" v-if="viendo === 'listas'">
+      <div
+        style="width: 90%"
+        v-if="viendo === 'listas' && viendoOrigen !== 'reproduccion'"
+      >
         <div
           style="
             display: flex;
@@ -351,10 +398,15 @@ function borrarLista() {
       <p class="primer-parrafo" v-if="viendo === 'inicio'">
         {{ textoMostrando }}
       </p>
+
       <tablacanciones
+        v-if="textoMostrando != ''"
         :canciones="refViendoCanciones"
+        :listasserverstore="appStore.listasEnServer"
+        :listasstore="ListasEnStorage"
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
+        @agregar="AgregarLista"
       />
     </div>
   </div>

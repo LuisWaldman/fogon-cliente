@@ -501,15 +501,6 @@ function VerFiltros() {
         </div>
       </div>
     </div>
-
-    <div
-      style="width: 100%"
-      v-if="refEstadoBusqueda == '' && refResultadoCanciones.length > 0"
-    >
-      <p class="primer-parrafo">
-        Resultados ({{ refResultadoCanciones.length }})
-      </p>
-    </div>
   </div>
 </template>
 

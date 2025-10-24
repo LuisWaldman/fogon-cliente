@@ -4,6 +4,7 @@ import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroCancion } from '../sincro/SincroCancion'
 import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
+import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 
 export class Reproductor {
   reloj: Reloj = new Reloj()
@@ -22,6 +23,12 @@ export class Reproductor {
     appStore.compas = 0
     appStore.estadosApp.estado = 'ok'
     appStore.origenCancion = origen
+  }
+
+  async AgregarAListaReproduccion(item: ItemIndiceCancion) {
+    const appStore = useAppStore()
+    appStore.listaReproduccion.push(item)
+    console.log(appStore.listaReproduccion)
   }
 
   iniciarReproduccion() {
