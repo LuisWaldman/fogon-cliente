@@ -283,7 +283,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
             class="nav-link text-white"
             :class="{ activo: viendo === 'listas' }"
           >
-            Listas
+            🗒️ Listas
           </a>
         </div>
       </div>
