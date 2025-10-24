@@ -8,21 +8,123 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G5",
-                    "C5",
+                    "D5",
                     "G5",
-                    "D5",
-                    "C5",
-                    "D5",
-                    "C5",
                     "G5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "C5",
+                    "D5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
                     "D5"
                 ]
             }
@@ -30,43 +132,113 @@
         "orden_partes": [
             0,
             1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "amos en el tiempo en que el ser humano vive con razon de ser/n  co"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "n solo unas palabras su caso puede resol",
-            "ver/n  p"
+            "Es/n"
         ],
         [
-            "ero pega una trompada y ",
-            "tira todo/n  se"
+            "Esta en u",
+            "u tiempo en que el ser hu",
+            "hum vive con razó",
+            "de ser./n"
         ],
         [
-            " cree ya muy listo p",
-            "or su modo de s",
-            "er",
-            "/n  un "
+            "No es solo unas palab",
+            "pal un caso puede r",
+            "resolve/n",
+            ""
         ],
         [
-            "hombre sin historia, sin tiempo y sin memoria/n  "
+            "Pero pega una trom",
+            "tro tira todo",
+            "t se crea muy li",
+            "li con su mod",
+            "m de ser./n",
+            ""
         ],
         [
-            "pero no se da cuenta, su personalidad en venta est",
-            "á/nel ho"
+            "Un hombre sin historia,",
+            "sin tiempo sin memori",
+            "puede razona",
+            "así. P/n"
         ],
         [
-            "mbre suburbano sigue s",
-            "u rutina, sin dars",
-            "e cuenta que su",
-            " vida terminara",
+            "Pe no se da cuenta",
+            "su personalidad delm",
+            "del está./n",
+            ""
+        ],
+        [
+            "El hombre suburbano si",
+            "si su rutina,",
+            "si te hace cuenta qu",
+            "q su vida terminará./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Un h",
+            "homb sin historia, sin tie",
+            "ti sin memoria pue",
+            "p razonar así./n"
+        ],
+        [
+            "Pero n",
+            "n se da cuenta, su p",
+            "personalid delmente es",
+            "es/n"
+        ],
+        [
+            "El hom",
+            "ho suburbano sigue su",
+            "rutina si te ha",
+            "h cuenta que s",
+            "s vida terminará.",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
@@ -74,5 +246,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -8,298 +8,498 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
                     "Em",
-                    "E7",
-                    "F"
+                    "Em",
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "F",
-                    "C",
+                    "F",
                     "Dm",
-                    "G"
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Am",
-                    "Am/G",
-                    "F#m7(5-)",
-                    "D",
-                    "Dm",
-                    "F",
-                    "Dm",
-                    "G"
+                    "C",
+                    "C",
+                    "E7",
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "F",
+                    "F",
                     "C",
-                    "Em7",
-                    "E7",
-                    "F"
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Am/G#",
-                    "Am/G",
-                    "D",
+                    "Am",
+                    "Am",
+                    "G",
+                    "F#m7(5-)"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Em",
+                    "E7",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "C",
+                    "Em",
+                    "E7",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "C",
+                    "E7",
+                    "E7",
+                    "F",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "F#m7(5-)",
+                    "F#m7(5-)"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "Dm",
                     "Dm",
                     "F",
                     "Dm",
+                    "G",
+                    "C",
+                    "Em",
+                    "E7",
+                    "E7",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "Em",
+                    "E7",
+                    "E7",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am/G#",
+                    "Am/G#",
+                    "D",
+                    "D",
+                    "Dm",
+                    "Am/G#",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "G",
+                    "C",
+                    "Em",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "Em",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Dm",
+                    "F",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Dm C",
+                    "Dm",
+                    "Dm C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Am/G#",
+                    "Am/G#",
+                    "Am/G#"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "F",
+                    "Dm",
+                    "F#m7(5-)",
+                    "Dm",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
-            0,
-            1,
             3,
-            1,
-            0,
-            1,
-            2,
-            0,
-            1,
-            3,
-            1,
             4,
-            0,
-            1,
-            3,
-            1,
-            1,
-            1,
-            1
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "o tengo ganas de se",
-            "guir/nPero ta"
-        ],
-        [
-            "mpoco tengo ga",
-            "nas de parar/nTend"
-        ],
-        [
-            "ría que pensar qué me e",
-            "stá pasando/nPero "
-        ],
-        [
-            "es que estoy cansad",
-            "o de pensar/nPod"
-        ],
-        [
-            "ría quedarme durm",
-            "iendo todo el día/nO po"
-        ],
-        [
-            "dría también t",
-            "ratar de encontrarte/nPodr"
-        ],
-        [
-            "ía dejarle mi des",
-            "tino a la suerte/nY es pro"
-        ],
-        [
-            "bable que me vista y sal",
-            "ga a buscarte/n"
-        ],
-        [
-            "Vengo apostando todo l",
-            "o que tengo/n"
-        ],
-        [
-            "A un caballo que nunca gana",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Voy a tener que dej",
-            "ar este juego/n"
+            "N te",
+            "te ganas de se",
+            "seg pero ta",
+            "tamp tengo g",
+            "gana de parar Te/n"
         ],
         [
-            "O cambiar de caballo ma",
-            "ana/nY es que t"
+            "Tend que pensar q",
+            "q me está pasando pe",
+            "p es que estoy ca",
+            "cans de pensar P/n"
         ],
         [
-            "engo que dejar de pe",
-            "nsar en vos/nPero t"
+            "Podrí quedarme",
+            "durmiend todo el dí",
+            "d podría también tra",
+            "tr de encontrarte/n"
         ],
         [
-            "engo también tantas g",
-            "anas de verte/nV"
+            "Podrí dejarl",
+            "d mi destino la suerte",
+            "es probable que me vis",
+            "v salga buscarte/n"
         ],
         [
-            "oy a desconectarme",
-            " por un rato/nY d"
+            "Veng apostand",
+            "por lo que teng",
+            "t un caballo que nu",
+            "nu gana/n"
         ],
         [
-            "ejar que a mi destino lo mane",
-            "je la suerte/nN"
+            "Voy tener q",
+            "qu dejar este jue",
+            "j cambiar de cabal",
+            "c mañana E/n"
         ],
         [
-            "o tengo ganas de se",
-            "guir/nPero ta"
+            "E que tengo que dej",
+            "d de pensar en vo",
+            "v pero tengo también t",
+            "tanta ganas de ver",
+            "v Voy de",
+            "desconecta por el",
+            "rato dejar que mi des",
+            "des lo maneje la suer",
+            "su/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "mpoco tengo ga",
-            "nas de parar/nTend"
+            "N",
+            "tengo gan",
+            "g de seguir pe",
+            "p tampoco ten",
+            "t ganas de p",
+            "para Tendría que p",
+            "pens que me está pasa",
+            "pa pero es que e",
+            "est cansado de",
+            "pensa Podría sa",
+            "sa buscarte",
+            "podría que",
+            "qued durmiendo e",
+            "casa No sé bien q",
+            "qu es lo que q",
+            "quier pero creo qu",
+            "q en el fondo sé qué es l",
+            "l que pasa Cuant",
+            "tiempo tengo pe",
+            "perdien hundiendo e",
+            "e este agujero/n"
         ],
         [
-            "ría que pensar qué me e",
-            "stá pasando/nPero "
+            "Como e",
+            "extrañ salir por l",
+            "la mañanas fumar ba",
+            "b el sol con el per",
+            "p Es que tengo q",
+            "qu dejar de pensar e",
+            "e vos pero tengo",
+            "tambié tantas gana",
+            "g de verte Voy",
+            "desconectarme",
+            "po el rato dejar qu",
+            "q mi destino lo manej",
+            "la suerte No teng",
+            "t ganas de seguir",
+            "per tampoco t",
+            "teng gan",
+            "g de parar Tendrí",
+            "que pensar que me está",
+            "pasand pero e",
+            "e que estoy cansa",
+            "c de pensar/n",
+            ""
         ],
         [
-            "es que estoy cansad",
-            "o de pensar/nPod"
+            "Muchacho, perdónenme si es",
+            "es cambiando pe",
+            "p es que me pasa como la ce",
+            "ceni Nada m",
+            "m que después de la nube la c",
+            "cher me rueda",
+            "r la pata por la escalera",
+            "me transfo",
+            "tra me t",
+            "tran",
+            "tra Co/n"
         ],
         [
-            "ría salir a busca",
-            "rte/nO po"
+            "C extraño sali",
+            "por las mañanas f",
+            "fum bajo el sol con el p",
+            "perr Es q",
+            "q tengo que dejar de p",
+            "pens en vos per",
+            "tengo también tantas",
+            "gana de verte V/n"
         ],
         [
-            "dría quedarme d",
-            "urmiendo en casa/nNo s"
+            "V desconec",
+            "desc por el rato",
+            "dejar que mi destino lo m",
+            "manej la suerte N/n"
         ],
         [
-            "é bien qué es lo",
-            " que quiero/nPero cre"
+            "N tengo ganas de seg",
+            "se pero tamp",
+            "ta tengo ga",
+            "gan de parar Te/n"
         ],
         [
-            "o que en el fondo sé qu",
-            "e es lo que pasa/n"
+            "Tend que pensar qu",
+            "me está pasando pe",
+            "p es que estoy ca",
+            "cans de pensar/n",
+            "",
+            "",
+            ""
         ],
         [
-            "Cuanto tiempo vengo pe",
-            "rdiendo/n"
+            "No",
+            "s bien qué e",
+            "e lo que quiero p",
+            "per creo que en el fondo s",
+            "s que es lo que pasa/n",
+            "",
+            "",
+            ""
         ],
         [
-            "Hundiéndome en este agujer",
-            "o/n"
+            "T/n"
         ],
         [
-            "Como extraño salir p",
-            "or las mañanas/n"
+            "Tendrí que pensar q",
+            "q me está pasando pe",
+            "p es que estoy c",
+            "cansa de pensa/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "A fumar bajo el sol con ",
-            "el perro/nEs que t"
+            "Hola, no sé s",
+            "s pizzería hablo con l",
+            "l gasistas pero Y/n"
         ],
         [
-            "engo que dejar de pe",
-            "nsar en vos/nPero t"
+            "Y necesito tener gas, soy e",
+            "e doctor Álvarez, tengo una familia",
+            "respetabl sea, e",
+            "e una ridiculeza eso sea Claro/n"
         ],
         [
-            "engo también tantas g",
-            "anas de verte/nVo"
-        ],
-        [
-            "y a desconectarme por",
-            " un rato/nY d"
-        ],
-        [
-            "ejar que a mi destino lo mane",
-            "je la suerte/nN"
-        ],
-        [
-            "o tengo ganas de se",
-            "guir/nPero ta"
-        ],
-        [
-            "mpoco tengo ga",
-            "nas de parar/nTend"
-        ],
-        [
-            "ría que pensar qué me e",
-            "stá pasando/nPero "
-        ],
-        [
-            "es que estoy cansad",
-            "o de pensar/n"
-        ],
-        [],
-        [
-            " perdonen me si es",
-            "toy cambiando/nPer"
-        ],
-        [
-            "o es que me pasa co",
-            "mo a la cenicienta, viste/n"
-        ],
-        [
-            "Como extraño salir p",
-            "or las mañanas/nA f"
-        ],
-        [
-            "umar bajo el sol con el p",
-            "erro/nEs que t"
-        ],
-        [
-            "engo que dejar de pe",
-            "nsar en vos/nPero t"
-        ],
-        [
-            "engo también tantas g",
-            "anas de verte/nVoy"
-        ],
-        [
-            " a desconectarme",
-            " por un rato/nY d"
-        ],
-        [
-            "ejar que a mi destino lo mane",
-            "je la suerte/nN"
-        ],
-        [
-            "o tengo ganas de se",
-            "guir/nPero ta"
-        ],
-        [
-            "mpoco tengo ga",
-            "nas de parar/nTend"
-        ],
-        [
-            "ría que pensar qué me e",
-            "stá pasando/nPero "
-        ],
-        [
-            "es que estoy cansad",
-            "o de pensar/nNo s"
-        ],
-        [
-            "é bien que es lo ",
-            "que quiero/nPero cre"
-        ],
-        [
-            "o que en el fondo sé que es lo que pasa/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "C sea, esto por teléfo",
+            "t no se puede hablar, tienes razón",
+            "yo voy pas",
+            "p ahora porque imaginate que nec",
+            "nece tener gas ya No, m",
+            "mira no tengo la mejor idea en este evento"
+        ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
@@ -307,8 +507,9 @@
             "delay": 0
         }
     ],
-    "procesando": 2,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }
