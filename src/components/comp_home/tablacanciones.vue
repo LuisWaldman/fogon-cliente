@@ -4,7 +4,11 @@ import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
 const emit = defineEmits(['tocar', 'borrar', 'agregar'])
-const vectorCalidades: string[] = ['De Internet', 'Texto Sincronizado', 'Corregida']
+const vectorCalidades: string[] = [
+  'De Internet',
+  'Texto Sincronizado',
+  'Corregida',
+]
 const agregandoLista = ref(false)
 const props = defineProps<{
   canciones: ItemIndiceCancion[]
@@ -50,10 +54,6 @@ function Reproducir(index: number) {
 function Borrar(index: number) {
   emit('borrar', props.canciones[index].origen)
 }
-
-function AgregarALista(index: number) {
-  emit('agregarALista', props.canciones[index])
-}
 </script>
 
 <template>
@@ -89,86 +89,108 @@ function AgregarALista(index: number) {
       <template v-for="(cancion, index) in canciones" :key="index">
         <tr @click="VerDetalle(index)">
           <td>
-            
-            <emoticonOrigen :origen="cancion.origen.origenUrl" />{{ arreglartexto(cancion.banda) }}
-            <div class="textoGrande"> {{ arreglartexto(cancion.cancion) }}</div>
-
+            <emoticonOrigen :origen="cancion.origen.origenUrl" />{{
+              arreglartexto(cancion.banda)
+            }}
+            <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>
           </td>
-          
-<td class="textoGrande duracion-column">{{
+
+          <td class="textoGrande duracion-column">
+            {{
               tiempo.formatSegundos(
                 (60 / cancion.bpm) *
                   cancion.totalCompases *
                   cancion.compasCantidad,
               )
-            }}</td>
+            }}
+          </td>
           <td class="textoGrande">{{ cancion.escala }}</td>
           <td></td>
         </tr>
         <tr v-if="viendoDetalle === index" data-detail>
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
-
               <div class="contDetalles">
-                <div class="divItemDetalle duracion-detalle">Duracion:
-                <strong>
-                {{
-              tiempo.formatSegundos(
-                (60 / cancion.bpm) *
-                  cancion.totalCompases *
-                  cancion.compasCantidad,
-              )
-            }}</strong>
+                <div class="divItemDetalle duracion-detalle">
+                  Duracion:
+                  <strong>
+                    {{
+                      tiempo.formatSegundos(
+                        (60 / cancion.bpm) *
+                          cancion.totalCompases *
+                          cancion.compasCantidad,
+                      )
+                    }}</strong
+                  >
                 </div>
-              <div class="divItemDetalle">Compas:
-                <strong>{{ cancion.compasCantidad }} / {{ cancion.compasUnidad }}</strong>
-              </div>  
-              <div class="divItemDetalle"><strong>Calidad:</strong>{{ vectorCalidades[cancion.calidad] }}</div>
-              <div class="divItemDetalle" v-if="cancion.acordes.length > 0"><strong>Acordes:</strong>{{ cancion.acordes }}</div>
-              <div class="divItemDetalle"><strong>Tempo:</strong>{{ cancion.bpm }} BPM</div>
-              <div class="divItemDetalle itemSeleccionable" v-if="cancion.video"> 📺</div>
-              <div class="divItemDetalle"><strong>Tempo:</strong>{{ cancion.bpm }} BPM</div>
-              <div class="divItemDetalle"><strong>Partitura:</strong>{{ cancion.pentagramas.length }}</div>
-              <div class="divItemDetalle"><strong>Partitura:</strong>{{ cancion.pentagramas.length }}</div>
-         </div>
-
-<div class="botoneraDetalle">
-<button @click="Reproducir(index)">▶ Tocar</button>
-            <button @click="agregandoLista = true">🗒️ Lista</button>
-            <button @click="Borrar(index)">🗑 Borrar</button>
-
-</div>
-            
-            <div style="display: flex" v-if="agregandoLista">
-              <select v-model="listaseleccionada" style="width: 60%">
-                <optgroup>
-                  <option value="actual">Lista de reproduccion</option>
-                </optgroup>
-                <optgroup>
-                  <option
-                    v-for="lista in props.listasstore"
-                    :key="lista"
-                    :value="'local_' + lista"
+                <div class="divItemDetalle">
+                  Compas:
+                  <strong
+                    >{{ cancion.compasCantidad }} /
+                    {{ cancion.compasUnidad }}</strong
                   >
-                    💾 {{ lista }}
-                  </option>
-                </optgroup>
-                <optgroup>
-                  <option
-                    v-for="lista in props.listasserverstore"
-                    :key="lista"
-                    :value="'server_' + lista"
-                  >
-                    🔌 {{ lista }}
-                  </option>
-                </optgroup>
-              </select>
-              <div @click="clickAgregar(index)">[AGREGAR]</div>
-              <div @click="agregandoLista = false">[CANCELAR]</div>
+                </div>
+                <div class="divItemDetalle">
+                  <strong>Calidad:</strong
+                  >{{ vectorCalidades[cancion.calidad] }}
+                </div>
+                <div class="divItemDetalle" v-if="cancion.acordes.length > 0">
+                  <strong>Acordes:</strong>{{ cancion.acordes }}
+                </div>
+                <div class="divItemDetalle">
+                  <strong>Tempo:</strong>{{ cancion.bpm }} BPM
+                </div>
+                <div
+                  class="divItemDetalle itemSeleccionable"
+                  v-if="cancion.video"
+                >
+                  📺
+                </div>
+                <div class="divItemDetalle">
+                  <strong>Tempo:</strong>{{ cancion.bpm }} BPM
+                </div>
+                <div class="divItemDetalle">
+                  <strong>Partitura:</strong>{{ cancion.pentagramas.length }}
+                </div>
+                <div class="divItemDetalle">
+                  <strong>Partitura:</strong>{{ cancion.pentagramas.length }}
+                </div>
+              </div>
+
+              <div class="botoneraDetalle">
+                <button @click="Reproducir(index)">▶ Tocar</button>
+                <button @click="agregandoLista = true">🗒️ Lista</button>
+                <button @click="Borrar(index)">🗑 Borrar</button>
+              </div>
+
+              <div style="display: flex" v-if="agregandoLista">
+                <select v-model="listaseleccionada" style="width: 60%">
+                  <optgroup>
+                    <option value="actual">Lista de reproduccion</option>
+                  </optgroup>
+                  <optgroup>
+                    <option
+                      v-for="lista in props.listasstore"
+                      :key="lista"
+                      :value="'local_' + lista"
+                    >
+                      💾 {{ lista }}
+                    </option>
+                  </optgroup>
+                  <optgroup>
+                    <option
+                      v-for="lista in props.listasserverstore"
+                      :key="lista"
+                      :value="'server_' + lista"
+                    >
+                      🔌 {{ lista }}
+                    </option>
+                  </optgroup>
+                </select>
+                <div @click="clickAgregar(index)">[AGREGAR]</div>
+                <div @click="agregandoLista = false">[CANCELAR]</div>
+              </div>
             </div>
-              
-            </div>
-            
           </td>
         </tr>
       </template>
@@ -202,13 +224,10 @@ td {
   border: 1px solid;
   width: 80%;
   margin-left: 10%;
-
-  
 }
 .contDetalles {
   display: flex;
   flex-wrap: wrap;
-  
 }
 .duracion-detalle {
   display: none;
@@ -219,7 +238,7 @@ td {
   font-size: x-large;
 }
 .itemSeleccionable {
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 8px;
 }
 
@@ -228,20 +247,19 @@ td {
   .duracion-column {
     display: none;
   }
-  
-.duracion-detalle {
-  display: inherit;
 
-}
+  .duracion-detalle {
+    display: inherit;
+  }
 
-.divItemDetalle {
-  margin: 3px;
-  margin-left: 3px;
-  font-size: small;
-}
-.divDetalle {
-  width: 95%;
-  margin-left: 2.5%;
-}
+  .divItemDetalle {
+    margin: 3px;
+    margin-left: 3px;
+    font-size: small;
+  }
+  .divDetalle {
+    width: 95%;
+    margin-left: 2.5%;
+  }
 }
 </style>

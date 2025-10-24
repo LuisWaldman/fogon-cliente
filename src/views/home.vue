@@ -4,7 +4,7 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
@@ -80,16 +80,14 @@ function clickOpcion(viendostr: string) {
       refViendoCanciones.value.length === 0
         ? ''
         : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
-  } else if (viendostr === 'canciones') { 
+  } else if (viendostr === 'canciones') {
   } else if (viendostr === 'listas') {
-    
     refViendoCanciones.value = appStore.listaReproduccion
     if (appStore.listaReproduccion.length > 0) {
       viendoOrigen.value = 'reproduccion'
     }
-  } 
+  }
   viendo.value = viendostr
-
 }
 function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
@@ -293,9 +291,11 @@ function AgregarLista(index: number, listaseleccionada: string) {
   <div style="width: 100%" v-if="viendo === 'canciones' || viendo === 'listas'">
     <div class="config-menu">
       <div class="config-menu-group">
-
-
-        <div v-if="appStore.listaReproduccion.length" @click="clickOrigen('reproduccion')" class="config-menu-item">
+        <div
+          v-if="appStore.listaReproduccion.length"
+          @click="clickOrigen('reproduccion')"
+          class="config-menu-item"
+        >
           <a
             href="#"
             class="nav-link text-white"
@@ -345,7 +345,10 @@ function AgregarLista(index: number, listaseleccionada: string) {
         v-if="viendo === 'inicio'"
       />
 
-      <div style="width: 90%" v-if="viendo === 'listas' && viendoOrigen !== 'reproduccion' ">
+      <div
+        style="width: 90%"
+        v-if="viendo === 'listas' && viendoOrigen !== 'reproduccion'"
+      >
         <div
           style="
             display: flex;
