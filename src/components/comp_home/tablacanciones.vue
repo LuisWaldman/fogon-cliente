@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
-
+import emoticonOrigen from './emoticonOrigen.vue'
 const emit = defineEmits(['tocar', 'borrar', 'agregar'])
 const agregandoLista = ref(false)
 const props = defineProps<{
@@ -61,7 +61,7 @@ function AgregarALista(index: number) {
       <tr>
         <template v-if="!viendoFiltroTabla">
           <th>Tema</th>
-          <th>Banda</th>
+          <th class="duracion-column">Duracion</th>
           <th>Escala</th>
         </template>
         <template v-if="viendoFiltroTabla">
@@ -87,26 +87,31 @@ function AgregarALista(index: number) {
     <tbody v-if="canciones.length > 0">
       <template v-for="(cancion, index) in canciones" :key="index">
         <tr @click="VerDetalle(index)">
-          <td>{{ arreglartexto(cancion.cancion) }}</td>
-          <td>{{ arreglartexto(cancion.banda) }}</td>
+          <td>
+            <div class="textoGrande"> {{ arreglartexto(cancion.cancion) }}</div>
 
-          <td>{{ cancion.escala }}</td>
-          <td></td>
-        </tr>
-        <tr v-if="viendoDetalle === index" data-detail>
-          <td colspan="5" style="text-align: right">
-            Duracion:
-            {{
+            <emoticonOrigen :origen="cancion.origen.origenUrl" />{{ arreglartexto(cancion.banda) }}
+          </td>
+          
+<td class="textoGrande duracion-column">{{
               tiempo.formatSegundos(
                 (60 / cancion.bpm) *
                   cancion.totalCompases *
                   cancion.compasCantidad,
               )
-            }}
+            }}</td>
+          <td class="textoGrande">{{ cancion.escala }}</td>
+          <td></td>
+        </tr>
+        <tr v-if="viendoDetalle === index" data-detail>
+          <td colspan="5" style="text-align: right">
+            <div class="divDetalle">
+
+            <div>
             <span @click="Reproducir(index)">[Tocar]</span>
             <span @click="Borrar(index)">[Borrar]</span>
             <span @click="agregandoLista = true">[Agregar a Lista]</span>
-
+</div>
             <div style="display: flex" v-if="agregandoLista">
               <select v-model="listaseleccionada" style="width: 60%">
                 <optgroup>
@@ -134,6 +139,9 @@ function AgregarALista(index: number) {
               <div @click="clickAgregar(index)">[AGREGAR]</div>
               <div @click="agregandoLista = false">[CANCELAR]</div>
             </div>
+              
+            </div>
+            
           </td>
         </tr>
       </template>
@@ -158,5 +166,26 @@ tr:has(+ tr[data-detail]) {
 th,
 td {
   padding: 8px;
+}
+.textoGrande {
+  font-size: xx-large;
+}
+
+.divDetalle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid;
+  width: 80%;
+  margin-left: 10%;
+  padding: 5px;
+  gap: 10px;
+}
+
+/* Hide duration column on mobile devices */
+@media (max-width: 767px) {
+  .duracion-column {
+    display: none;
+  }
 }
 </style>
