@@ -257,6 +257,9 @@ td {
     margin-left: 3px;
     font-size: small;
   }
+  .textoGrande {
+    font-size: large;
+  }
   .divDetalle {
     width: 95%;
     margin-left: 2.5%;
