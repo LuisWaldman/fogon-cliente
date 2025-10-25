@@ -55,6 +55,8 @@ export class CancionUrlManager {
       cancion.bpm = item.bpm
       cancion.compasUnidad = item.compasUnidad
       cancion.compasCantidad = item.compasCantidad
+      cancion.totalCompases = item.totalCompases
+      cancion.video = item.video
       cancion.escala = item.escala
       cancion.normalizar()
       toRet.push(cancion)

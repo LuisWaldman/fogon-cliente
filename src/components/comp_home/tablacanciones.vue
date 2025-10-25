@@ -7,7 +7,8 @@ const emit = defineEmits(['tocar', 'borrar', 'agregar'])
 const vectorCalidades: string[] = [
   'De Internet',
   'Texto Sincronizado',
-  'Corregida',
+  'Texto Corregido',
+  'Ok',
 ]
 const agregandoLista = ref(false)
 const props = defineProps<{
