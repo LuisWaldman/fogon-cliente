@@ -167,6 +167,28 @@ function arreglartexto(texto: string): string {
               </li>
             </ul>
           </li>
+          
+          <li>
+            <router-link
+              class="dropdown-item"
+              to="/configurar"
+              v-if="$route.path != '/configurar'"
+            >
+              
+              👁️‍🗨️ Vista
+            </router-link>
+          </li>
+          
+          <li>
+            <router-link
+              class="dropdown-item"
+              to="/configurar"
+              v-if="$route.path != '/configurar'"
+            >
+              
+              ✍️ Editar
+            </router-link>
+          </li>
 
           <li>
             <router-link
@@ -174,8 +196,8 @@ function arreglartexto(texto: string): string {
               to="/configurar"
               v-if="$route.path != '/configurar'"
             >
-              <i class="bi bi-gear"></i>
-              Configurar
+              
+              ⚙️ Configurar
             </router-link>
           </li>
         </ul>

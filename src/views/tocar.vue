@@ -113,10 +113,6 @@ function estiloVistaTerciaria() {
   return `width: ${ancho}%;`
 }
 
-const refEditandoVista = ref(false)
-function ajustarVista() {
-  refEditandoVista.value = true
-}
 
 const refSincronizandoMedios = ref(false)
 function clickCerrarMedios() {
@@ -150,10 +146,7 @@ function escuchar() {
 
 <template>
   <div class="tocar-fluid">
-    <editVista
-      v-if="refEditandoVista"
-      @cerrar="cerrareditarPantalla"
-    ></editVista>
+
     <sincronizarMedias
       v-if="refSincronizandoMedios"
       @cerrar="clickCerrarMedios"
@@ -255,32 +248,6 @@ function escuchar() {
         ></TocarCuadrado>
       </div>
 
-      <div class="dropdown dropdown-superior-derecha">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="bi bi-eye"></i>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li v-on:click="escuchar()">
-            <a class="dropdown-item" href="#"> Escuchar</a>
-          </li>
-
-          <li><hr class="dropdown-divider" /></li>
-          <li v-on:click="ajustarVista()">
-            <a class="dropdown-item" href="#"> Ajustar Vista</a>
-          </li>
-
-          <li><hr class="dropdown-divider" /></li>
-          <li v-on:click="clickEditar()">
-            <a class="dropdown-item" href="#">Editar</a>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <div class="controladoresTiempo">

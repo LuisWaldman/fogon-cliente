@@ -3,6 +3,7 @@ import { onMounted } from 'vue'
 import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
 import { useRouter } from 'vue-router'
+import editVista from './components/comp_tocar/editVista.vue'
 
 const appStore = useAppStore()
 onMounted(() => {
@@ -43,6 +44,11 @@ onMounted(() => {
       <div>{{ appStore.estadosApp.texto }}</div>
     </div>
     <router-view v-if="appStore.estadosApp.estado === 'ok'" />
+        <editVista
+      v-if="refEditandoVista"
+      @cerrar="cerrareditarPantalla"
+    ></editVista>
+
   </div>
 </template>
 
