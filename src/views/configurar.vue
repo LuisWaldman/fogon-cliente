@@ -6,13 +6,14 @@ import configlogin from '../components/comp_configurar/configLogin.vue'
 import configPerfil from '../components/comp_configurar/configPerfil.vue'
 import configServidores from '../components/comp_configurar/configServidores.vue'
 import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
+import configBienvenida from '../components/comp_configurar/configBienvenida.vue'
 import configErrores from '../components/comp_configurar/configErrores.vue'
 
 import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
 const appStore = useAppStore()
-const viendo = ref('perfil')
+const viendo = ref('bienvenida')
 const viendoConexion = ref('servidores')
 
 function clickOpcion(viendostr: string) {
@@ -41,6 +42,15 @@ function clickMas(masmenos: string) {
       <div>
         <div class="config-menu">
           <div class="config-menu-group">
+            <div @click="clickOpcion('bienvenida')" class="config-menu-item">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'bienvenida' }"
+              >
+                Hola
+              </a>
+            </div>
             <div @click="clickOpcion('perfil')" class="config-menu-item">
               <a
                 href="#"
@@ -216,6 +226,7 @@ function clickMas(masmenos: string) {
         </configServidores>
 
         <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
+        <configBienvenida v-if="viendo == 'bienvenida'"></configBienvenida>
         <ConfigAfinador v-if="viendo == 'afinar'"></ConfigAfinador>
         <verRelojes v-if="viendo == 'relojes'"></verRelojes>
         <configErrores v-if="viendo == 'errores'"></configErrores>
