@@ -8,9 +8,26 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "C",
                     "C",
                     "G"
                 ]
@@ -18,38 +35,184 @@
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "D",
                     "C",
                     "G",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "us entra por la puerta /nCuando el bl"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "us entra por la puerta /nla trist"
+            "Cu/n"
         ],
         [
-            "eza sale por la ventana. /nA v"
+            "Cua el blues entra p",
+            "p la puerta,",
+            "la tristeza sale por l",
+            "l ventana. Cu/n"
         ],
         [
-            "eces hace falta e",
-            "so /ndesde prim"
+            "Cua el blues entra po",
+            "p la puerta,",
+            "la tristeza sale por l",
+            "l ventana.",
+            "veces hace fal",
+            "f eso des",
+            "d primera hora de l",
+            "l mañana. Cu/n"
         ],
         [
-            "eras hora de la mañ",
-            "ana. "
+            "Cua el boogie entra por l",
+            "l puerta, la",
+            "tristeza baja por la e",
+            "escaler Cuand",
+            "el boogie entra por l",
+            "l puerta, la t",
+            "triste baja en la escalera",
+            "e/n"
+        ],
+        [
+            "Hay que creer por l",
+            "menos en eso porque n",
+            "nad es com",
+            "era. Cuando e",
+            "e rock entra por la pu",
+            "puer la tris",
+            "tri se va d",
+            "d",
+            "d l",
+            "l",
+            "l can",
+            "can Pasa mejo",
+            "m así porque la vida e",
+            "e corta pero anch",
+            "a",
+            "veces h",
+            "h que sacar l",
+            "l tristeza de tu vida por",
+            "po la envenen",
+            "e veces",
+            "ha que sacar l",
+            "l tristeza de tu vida porq",
+            "p la envenena.",
+            "lo digo po",
+            "por no puedo so",
+            "s un alma en pen",
+            "p/n"
+        ],
+        [
+            "Cuando el blues entra p",
+            "po la puerta,",
+            "la tristeza sale p",
+            "p la ventana.",
+            "",
+            "",
+            "",
+            "",
+            "veces hace fa",
+            "fa eso de",
+            "de primera hora de l",
+            "l mañana.",
+            "",
+            "¡Adiós",
+            "¡",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 172,
     "medias": [
         {
             "tipo": "Youtube",
@@ -59,5 +222,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

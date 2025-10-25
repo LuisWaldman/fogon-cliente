@@ -8,18 +8,133 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "C7",
-                    "G"
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
                     "D",
                     "C7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C7",
+                    "G",
+                    "G",
                     "G"
                 ]
             }
@@ -27,53 +142,114 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "Este es el final de mi carrera/n"
+            "/n"
         ],
         [
-            "Este es el final de mi carrera/nse t"
+            "Este es el fin",
+            "f de mi carrera",
+            "c si termino",
+            "la pr",
+            "pri",
+            "pri/n",
+            "",
+            ""
         ],
         [
-            "erminó la primavera./nMe d"
+            "Me dan los últi",
+            "úl gustos",
+            "con los últi",
+            "úl gustos. V/n"
         ],
         [
-            "an los últimos g",
-            "ustos/n"
+            "Vo quedarme e",
+            "e la segunda fila",
+            "f tal vez en la",
+            "tercera/n",
+            "",
+            "",
+            ""
         ],
         [
-            "con los últimos sustos./n"
+            "Nada e",
+            "e lo que antes e",
+            "era este e",
+            "e el final de mi",
+            "carrera This is t",
+            "t end, little f",
+            "frien Y/n"
         ],
         [
-            "This is the end my little friend/nThis is the "
+            "Y me di cuenta lo que",
+            "pasa This is the e",
+            "end little fr",
+            "frie Y/n"
         ],
         [
-            "end my little friend/n"
+            "Y me di cuenta lo que p",
+            "pas Me pasa",
+            "que me quedes en cas",
+            "c This is the e",
+            "end little friend",
+            "f El black e",
+            "e el black,",
+            "el negro es negr",
+            "n/n"
         ],
         [
-            "ya me di cuenta de lo que pasa./n"
+            "El black e",
+            "e black,",
+            "el negro es negro",
+            "n/n"
         ],
         [
-            "Pasa que me quedé sin c",
-            "asa/nThis is the "
+            "No puede fa",
+            "fal mucho más q",
+            "q me desi",
+            "desint/n"
         ],
         [
-            "end little friend./nCuatro n"
+            "Es mi c",
+            "cuar día sin dorm",
+            "do nada más pref",
+            "pre vivir./n"
         ],
         [
-            "oches desvela",
-            "do/ncon el c"
+            "Es mi c",
+            "cuar día sin dormi",
+            "d nada más prefe",
+            "pr vivir./n"
         ],
         [
-            "orazón en el cuarto de al lado."
+            "Borges nunca pu",
+            "p ser feliz,",
+            "yo también soy d",
+            "desdichad/n"
+        ],
+        [
+            "Cuatro noches",
+            "desvelado",
+            "con el corazón en el c",
+            "cuar de al lado.",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
@@ -81,8 +257,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -8,25 +8,29 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "D",
-                    "Am",
-                    "C",
-                    "G"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
-                    "D",
-                    "G",
-                    "B",
-                    "C",
-                    "D#",
-                    "G",
                     "D"
                 ]
             },
@@ -34,11 +38,6 @@
                 "nombre": "parte3",
                 "acordes": [
                     "G",
-                    "C",
-                    "G",
-                    "Am",
-                    "G",
-                    "C",
                     "G",
                     "A"
                 ]
@@ -46,27 +45,234 @@
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
-                    "Dm",
-                    "G",
-                    "F",
-                    "C",
-                    "G",
-                    "F",
-                    "C"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "G",
-                    "B",
-                    "Em",
+                    "D",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
                     "C",
                     "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "B",
+                    "B",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "F",
                     "F",
                     "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "C",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "C",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -75,89 +281,222 @@
             1,
             2,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
         ]
     },
     "letras": [
         [
-            "Algunas veces",
-            " me recuerdo a algui",
-            "en,",
-            "/n"
-        ],
-        [
-            "algunas veces m",
-            "e trato de usted",
-            "/n"
-        ],
-        [
-            "cuando entro en el salón/n"
-        ],
-        [
-            "se acaba el baile",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "cuando me engaño/n"
+            "A/n"
         ],
         [
-            "no sé a quién cre",
-            "er/n"
+            "Algun veces m",
+            "m recuerdo",
+            "alguien A/n"
         ],
         [
-            "Tu sabes correr/n"
+            "Al/n"
         ],
         [
+            "Al vec",
+            "v me trato d",
+            "d usted/n"
+        ],
+        [
+            "Cu/n"
+        ],
+        [
+            "Cua entro en el sal",
+            "s se acab",
+            "el baile C/n"
+        ],
+        [
+            "Cua/n"
+        ],
+        [
+            "C me en",
+            "eng no sé",
+            "quién te d",
+            "d/n"
+        ],
+        [
+            "Algunas",
+            "noches no d",
+            "duer conmi",
+            "c M/n"
+        ],
+        [
+            "M de una v",
+            "ve no ten",
+            "t dónde ir",
+            "",
+            "veces",
+            "ni predico,",
+            "ni doy trigo/n"
+        ],
+        [
+            "Desp/n"
+        ],
+        [
+            "Desp",
+            "en casa",
+            "ya no vivo aquí/n",
+            ""
+        ],
+        [
+            "Tú sab",
+            "s correr, yo qui",
+            "qu aprender Si t",
+            "t me llamas yo me escapo d",
+            "de hospital Ro/n"
+        ],
+        [
+            "R un azabúl, me c",
+            "clav en la cruz S/n"
+        ],
+        [
+            "S me remuerde la cong",
+            "cong le pongo un b",
+            "bot/n",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Alguna veces r",
+            "rega no q",
+            "que en el M/n"
+        ],
+        [
+            "M/n"
+        ],
+        [
+            "M de una ve",
+            "v alquilo u",
+            "u corazón/n",
+            ""
+        ],
+        [
+            "Algunas veces n",
+            "n hay dios q",
+            "q me consuel",
+            "c Alg/n"
+        ],
+        [
+            "Alg l",
+            "labi no vie",
+            "vi perdón/n",
+            ""
+        ],
+        [
+            "T sabes corr",
+            "co yo quiero apre",
+            "apr Si tú me ll",
+            "lla yo me escapo del hos",
+            "hosp Robo un",
+            "azabúl me clavo e",
+            "e la cruz Si me re",
+            "remue la congenia",
+            "le pongo un botó",
+            "b ¡Oh!/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Algun/n"
+        ],
+        [
+            "A nubes duran todo el",
+            "añ Alguno",
+            "martes soy un ani",
+            "an Lo/n"
+        ],
+        [
+            "L miércoles son húmedos",
+            "extraños De alg",
+            "alg jueves el mejor m",
+            "m habrá Lo/n"
+        ],
+        [
+            "L viernes dan pelíc",
+            "pel de miedo Lo",
+            "sábados te vas",
+            "yo me quedo Las noch",
+            "n de domingo aca",
+            "ac mal Las noc",
+            "no de domingo aca",
+            "ac mal/n"
+        ],
+        [
+            "Tú sabes correr,",
             "yo quiero aprender/n"
         ],
         [
-            "si tu me llamas yo me escapo d",
-            "el hospital/n"
+            "S tú me llamas y",
+            "y me escapo del hospital/n"
         ],
         [
-            "Robo un ataúd,",
-            " me clavo en la cruz/n"
-        ],
-        [
-            "Si me remuerde la conciencia/nle pongo un boz"
-        ],
-        [
-            "al",
-            "/n"
-        ],
-        [
-            "I:",
+            "Rob un a",
+            "azabú me clavo en la c",
+            "cru Si me remuerd",
+            "r la congenia, l",
+            "l pongo un botón",
             "",
             "",
             "",
             "",
             "",
-            "/n"
-        ],
-        [
-            "Algunos lunes duran todo el año/nalguno"
-        ],
-        [
-            "s martes soy un animal/nlos mi"
-        ],
-        [
-            "rcoles son húmedos y extraños/nde algunos ju"
-        ],
-        [
-            "eves es mejor ni hablar/nlos"
-        ],
-        [
-            " viernes dan películas de miedo/nlos sába"
-        ],
-        [
-            "dos te vas y yo me quedo/n"
-        ],
-        [
-            "las noches de domingo de acaban mal"
+            "",
+            "¡O",
+            "¡",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
@@ -165,5 +504,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -8,12 +8,26 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Gm",
-                    "D",
                     "Gm",
-                    "Cm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "Gm",
+                    "Gm",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "Gm",
+                    "Gm",
+                    "D",
                     "D"
                 ]
             },
@@ -24,82 +38,156 @@
                     "Cm",
                     "F",
                     "Bb",
+                    "Bb",
                     "Eb",
-                    "Cm",
-                    "D",
-                    "Gm"
+                    "Eb",
+                    "Eb",
+                    "Eb"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "F",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "E",
-                    "Am",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "D",
+                    "D",
                     "E",
-                    "Am",
-                    "Dm",
-                    "E",
-                    "Am",
-                    "Am9"
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            "gusta el mambo como ayer a la no",
-            "che/naunque al día siguiente no exist"
-        ],
-        [
-            "a/nme gusta el mambo tirándome por el piso"
-        ],
-        [
+            "",
+            "",
             "/n"
         ],
         [
-            "   y olvidarme de to",
-            "do./nPor e"
+            "Me gusta e",
+            "e mambo como ayer",
+            "la noche, a",
+            "aunq",
+            "a día siguiente no e",
+            "exista",
+            "me gusta el mambo tirá",
+            "tirá por el pi",
+            "p",
+            "olv",
+            "olvid de todo./n"
         ],
         [
-            "so el mambo es importante/n"
+            "Por eso el m",
+            "mamb es importante",
+            "alivia los senti",
+            "sentimi abre l",
+            "l puerta la locu",
+            "l que tod",
+            "locura",
+            "",
+            "lo alivia un poco/n"
         ],
         [
-            "   alivia los sentimientos/n"
+            "Ca/n"
         ],
         [
-            "   abre la puerta a la locu",
-            "ra/nque todo lo cur"
+            "C uno tiene un ma",
+            "ma que lo está esperan",
+            "es",
+            "para bailarlo con el ca",
+            "caudi cualquiera,",
+            "si que alg",
+            "alg va leer los pl",
+            "pla rotos",
+            "r cuando a",
+            "a día siguie",
+            "sig E/n"
         ],
         [
-            "a/n"
+            "E mambo no es para",
+            "cualquiera t",
+            "tie que aguantar la ca",
+            "cade porque se pu",
+            "pu romper. M/n"
         ],
         [
-            "   o lo alivia un",
-            " poco./n"
-        ],
-        [
-            "   Me g",
-            "usta el mambo como ayer a la noch",
-            "e/naunque al día siguiente no e"
-        ],
-        [
-            "xista/nme gusta el mambo tirándome por el piso"
-        ],
-        [
-            "/n"
-        ],
-        [
-            "   y olvidarme de to",
-            "do."
+            "M gusta el",
+            "m",
+            "m",
+            "m",
+            "m",
+            "m",
+            "m como a",
+            "ay la noche",
+            "n aunq",
+            "a al día siguient",
+            "s no exist",
+            "e me gusta el ma",
+            "ma tirándome por e",
+            "e piso.",
+            "",
+            "",
+            "¡Oh",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
@@ -107,8 +195,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -8,13 +8,24 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "F/G",
-                    "C/E",
-                    "Cm",
-                    "F"
+                    "F/G"
                 ]
             },
             {
@@ -24,35 +35,55 @@
                     "G",
                     "F/G",
                     "C/E",
-                    "Cm",
-                    "F",
-                    "Bb",
-                    "Am7"
+                    "C/E",
+                    "C/E",
+                    "C/E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "Em",
                     "D/F#",
                     "G",
-                    "C",
-                    "Am",
-                    "F"
+                    "G",
+                    "G",
+                    "D/F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "F/G",
+                    "F/G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
-                    "D",
+                    "F/G",
+                    "F/G",
+                    "F/G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "G",
-                    "A/G",
                     "G",
-                    "Cm",
-                    "F",
-                    "G"
+                    "G",
+                    "G",
+                    "G",
+                    "F/G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G",
+                    "F/G"
                 ]
             }
         ],
@@ -60,72 +91,73 @@
             0,
             1,
             2,
-            2,
-            3
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "  Y sin saber por que,/n"
-        ],
-        [
-            "  me quedo viendo el sol cae",
-            "r,/n"
-        ],
-        [
-            "  otr",
-            "a vez",
-            "./n"
-        ],
-        [
-            "  El día terminó,/n"
-        ],
-        [
-            "  mañana será un día ",
-            "igual,/nun dom"
-        ],
-        [
-            "ingo co",
-            "n perió",
-            "dicos ",
-            "normal.",
-            "/n"
-        ],
-        [
-            "     ",
-            "No conectab",
-            "a con tanta",
-            " comida china",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "     ",
-            "y tuve un bre",
-            "ve lapso de m",
-            "ística quí",
-            "mica/ncon k"
+            "sin saber por qué m",
+            "m quedo viendo el sol c",
+            "ca/n"
         ],
         [
-            "e ta",
-            " lar",
-            "./n"
+            "Otra vez e",
+            "e día terminó,",
+            "mañana será un día ig",
+            "ig Un domi",
+            "do con peri",
+            "perió normal/n",
+            ""
         ],
         [
-            "  Y sin saber por que/n"
+            "Nos conectaba c",
+            "co tanta comida china",
+            "",
+            "",
+            "tu en breve el l",
+            "lap de mística quí",
+            "quí",
+            "sin s",
+            "sabe por qué me que",
+            "q viendo el sol ca",
+            "c/n"
         ],
         [
-            "  me quedo viendo el sol cae",
-            "r/n"
+            "El día",
+            "terminó mañana s",
+            "se un día igual/n"
         ],
         [
-            "o  tr",
-            "a vez",
-            "."
+            "Uno de esos d",
+            "dí gris es t",
+            "tod mal",
+            "sin sabe",
+            "por qué me quedo vien",
+            "v el sol caer U/n"
+        ],
+        [
+            "U d",
+            "dí igua",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 83,
     "medias": [
         {
             "tipo": "Youtube",
@@ -135,5 +167,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

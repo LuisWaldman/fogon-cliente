@@ -8,10 +8,50 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7 D",
+                    "B7 D",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7 D",
+                    "B7 D",
+                    "B7 D",
+                    "B7 D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "C",
                     "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "Am",
+                    "D",
+                    "D",
+                    "G",
+                    "C",
+                    "Am",
+                    "D",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "D",
                     "D",
                     "G",
                     "C",
@@ -19,92 +59,311 @@
                     "B7",
                     "Em"
                 ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "B7",
+                    "B7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "G",
+                    "G",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "F",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "ces esperando las oportunidade",
-            "s,/nno se v"
-        ],
-        [
-            "en y se tira todo a la marchanta",
-            "/ny v"
-        ],
-        [
-            "os tan orgullosa que nunca me avisa",
-            "ste/nque tamb"
-        ],
-        [
-            "ién fuiste mía aquel ve",
-            "rano.../nMir"
-        ],
-        [
-            "ando las golondrinas en el cie",
-            "lo,/nno se v"
-        ],
-        [
-            "en otras golondrinas al alcance de la ma",
-            "no/nes c"
-        ],
-        [
-            "uando la estupidez gana por afa",
-            "no/na la s"
-        ],
-        [
-            "uerte que nunca llega si la estamos esper",
-            "ando/n"
-        ],
-        [
-            "¿Cómo? ,¿cuándo? y ¿Por qu",
-            "?/nson demasiadas preguntas para hace"
-        ],
-        [
-            "rle al destino",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "a veces estamos finos y otras veces",
-            " nada que ver/n"
+            "veces",
+            "esperand las op",
+            "oportunida N/n"
         ],
         [
-            "pues hay que caminar ante",
-            "s de empezar a correr/n"
+            "N se ven s",
+            "s tira toda la mar",
+            "march",
+            "vos tan orgullo",
+            "o nunca me avisas",
+            "a Que tal",
+            "ve fuiste mía aq",
+            "aq veran",
+            "v Mirando l",
+            "l golondrinas en el",
+            "ciel N/n"
         ],
         [
-            "La culpa es un invento muy poco gener",
-            "oso,/ny el ti"
+            "N se ven lo trajo, golon",
+            "golon al alcance de la m",
+            "man E",
+            "cuando la estupide",
+            "gana por afa",
+            "a la suerte q",
+            "qu nunca llega si la estamos",
+            "esperand C/n"
         ],
         [
-            "empo tremendo invento sabandija",
-            ",/nser"
+            "Co cuand",
+            "por qué son",
+            "demasiada preguntas Pa/n"
         ],
         [
-            "á que será suficiente con que uno el",
-            "ija,/npor"
+            "P hacerle a",
+            "a dest",
+            "de",
+            "veces estamos fino",
+            "otras veces nada que",
+            "ve Pues hay q",
+            "qu caminar antes de em",
+            "empe correr L/n"
         ],
         [
-            "que si no la buena fortuna pasa de la",
-            "rgo/n"
+            "L culpa es u",
+            "invento muy poco gene",
+            "gen e",
+            "e tiempo tremend",
+            "invento esa ban",
+            "ban Será q",
+            "q será suficiente con qu",
+            "uno elija Po/n"
         ],
-        [],
         [
-            "os tan orgullosa que nunca me avisast",
-            "e/nque tal"
+            "Por si no la bu",
+            "bu fortuna pasa de l",
+            "larg",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "vo",
+            "tan orgullosa nunca m",
+            "m avisaste Q/n"
         ],
         [
-            " vez, fuiste mía un veran",
-            "o..."
+            "Q tal vez fu",
+            "fui mía aquel v",
+            "vera",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "vos t",
+            "t orgullosa nunca me",
+            "avisast Q/n"
+        ],
+        [
+            "Q tal vez fuis",
+            "f mía aquel veran",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "vos tan",
+            "orgullos nunca me a",
+            "avisas Qu/n"
+        ],
+        [
+            "Q tal vez fuiste",
+            "mí un verano Q/n"
+        ],
+        [
+            "Qu tal v",
+            "ve fuiste mí",
+            "m un verano Q/n"
+        ],
+        [
+            "Qu tal ve",
+            "v fuiste mía un",
+            "veran/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Mis a",
+            "amig de la Bersuí/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Llevo en mis o",
+            "oído la más maravillosa música q",
+            "q es la voz, la palabra del pueblo argent",
+            "ar Lo dijo Perón, lo digo yo tam",
+            "tamb gracias"
         ]
     ],
-    "bpm": 80,
+    "bpm": 117,
     "medias": [
         {
             "tipo": "Youtube",
@@ -112,8 +371,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

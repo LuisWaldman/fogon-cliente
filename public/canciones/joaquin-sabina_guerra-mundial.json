@@ -8,59 +8,455 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D7",
-                    "A7",
-                    "D7",
-                    "A7"
+                    "D7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A7",
                     "G",
                     "D",
-                    "A"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A7",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "A7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "A7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
         ]
     },
     "letras": [
         [
-            "Malas noticias en la r",
-            "adio/n      "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ya vienen dicen los di",
-            "arios,/n      "
+            "L can",
+            "can en español de rock argentino es una canción en español de rock argentino./n"
         ],
         [
-            "con solo apretar un bot",
-            "ón/n      "
+            "Malas noticias e",
+            "e la radio, y",
+            "y viene dice en lo",
+            "l diarios./n"
         ],
         [
-            "el kiosco va a hacer explo",
-            "sión./n      Cuidado y"
+            "Co solo apretar un",
+            "botón",
+            "el kiosco va hacer",
+            "explosión Cui/n"
         ],
         [
-            "a está aquí la Te",
-            "rcera Guerra Mund",
-            "ial./n      Muy pronto"
+            "Cuid ya está aquí l",
+            "l tercera guerra mu",
+            "mundi/n"
         ],
         [
-            " va a estallar la Terc",
-            "era Guerra Mundia",
-            "l."
+            "Muy p",
+            "pront para estallar l",
+            "l tercera guerra m",
+            "mundial/n",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "L/n"
+        ],
+        [
+            "Lo azules culp",
+            "c los negros, l",
+            "lo verdes",
+            "lo amarillos./n"
+        ],
+        [
+            "Los rojos gri",
+            "gr me defiendo, l",
+            "lo verdes di",
+            "di yo no he sido.",
+            "mientras t",
+            "tan tú,",
+            "cambiando d",
+            "d shampoo./n"
+        ],
+        [
+            "Cuando va est",
+            "esta la tercera gue",
+            "gu mundial./n"
+        ],
+        [
+            "C/n"
+        ],
+        [
+            "Cuidad ya está a",
+            "aq la tercera gue",
+            "gue mundial./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Cuidado ya es",
+            "e aquí la tercera",
+            "guerr mundial./n"
+        ],
+        [
+            "M/n"
+        ],
+        [
+            "Mu pronto para e",
+            "estall la tercera",
+            "guerr mundial./n",
+            ""
+        ],
+        [
+            "Lo/n"
+        ],
+        [
+            "L políticos estrechan sus m",
+            "mano",
+            "lo generales brindan co",
+            "c champán.",
+            "tú llorando porque tu amor t",
+            "t ha dejado,",
+            "haciendo régimen para",
+            "adelgazar Q/n"
+        ],
+        [
+            "Q ganas con ahorrar",
+            "s",
+            "s vamos vo",
+            "vol Por los",
+            "aire en la ter",
+            "ter guerra mundial/n",
+            ""
+        ],
+        [
+            "Muy pronto p",
+            "par estallar la te",
+            "terc guerra mundia",
+            "m/n"
+        ],
+        [
+            "Cuidado",
+            "ya está aquí la t",
+            "terce guerra mundi",
+            "mu/n"
+        ],
+        [
+            "Muy pront",
+            "p para estallar la t",
+            "tercer guerra mun",
+            "mund/n"
+        ],
+        [
+            "Cuidad/n"
+        ],
+        [
+            "C ya está aquí l",
+            "tercera guerra mun",
+            "mund/n"
+        ],
+        [
+            "Muy pr",
+            "pro para estallar l",
+            "l tercera guerra m",
+            "mundia/n"
+        ],
+        [
+            "Cuida/n"
+        ],
+        [
+            "Cu ya está aquí l",
+            "l tercera guerra m",
+            "mundia",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
@@ -68,5 +464,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

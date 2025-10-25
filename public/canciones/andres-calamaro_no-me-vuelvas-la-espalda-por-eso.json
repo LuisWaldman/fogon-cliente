@@ -8,105 +8,135 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
+                    "C",
                     "Em",
-                    "Cm",
-                    "D"
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "D",
+                    "Em",
+                    "Am7/B",
+                    "Am7/B",
+                    "Am7/B",
+                    "Am7/B",
+                    "Am7/B",
+                    "C",
+                    "D",
+                    "Em Am7",
+                    "Am7/B"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "D",
-                    "Em",
-                    "Cm",
                     "Am7",
-                    "Am7/B",
-                    "D"
+                    "Am7/B"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G"
+                    "Cm",
+                    "Am7/B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Cm Am7/B",
+                    "Am7/B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am7/B",
+                    "Cm",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0,
-            0,
-            0,
-            2
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            "tuve bien, ",
-            "/ndije cosa"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "s que nunca debi decir,",
-            " /n"
+            "Y/n"
         ],
         [
-            "  paso el tiempo,",
-            " /ny siemp"
+            "Y no estuve bie",
+            "b dije cosas que nunca deb",
+            "d decir. Pasó el t",
+            "tiem siempre te vuelvo hablar",
+            "así Así n",
+            "n me haces daño, no tra",
+            "tr todo el tiempo de corr",
+            "cor mi vida, pero no me vuelvas la espald",
+            "por eso.",
+            "",
+            "",
+            "",
+            "¿Por qu",
+            "q sos tan directa si est",
+            "e interesada en m",
+            "m parte prohibida, pero no me vuelvas la esp",
+            "esp por eso?/n"
         ],
         [
-            "re te vuelvo a hablar asi",
-            ". /n"
+            "No, no, no me vuelvas la e",
+            "espal por eso. Y/n"
         ],
         [
-            "   Asi no me haces da",
-            "o, /nno trates todo el tie"
+            "Y soy perfecto, pero no me vuelvas l",
+            "l espalda por eso./n"
         ],
         [
-            "mpo, /nde co"
+            "Yo soy perfecto, pero no me vuelvas la",
+            "espald por eso./n"
         ],
         [
-            "rregir mi vida, /npero "
+            "No soy perf",
+            "perf pero",
+            "n me vuelvas la espalda por eso./n",
+            ""
         ],
         [
-            "no me v",
-            "uelvas la espa",
-            "lda por eso. /n"
-        ],
-        [
-            "   Porque sos tan direc",
-            "ta, /nsi estas intere"
-        ],
-        [
-            "sada, /nen mi"
-        ],
-        [
-            " parte prohibida, /npero n"
-        ],
-        [
-            "o me vu",
-            "elvas la espal",
-            "da por eso",
-            ",     ",
-            " no no, /n"
-        ],
-        [
-            "no me vuelvas la espald",
-            "a por eso,",
-            " /n"
-        ],
-        [],
-        [],
-        [],
-        []
+            "No me vuelvas la espalda por eso."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 66,
     "medias": [
         {
             "tipo": "Youtube",
@@ -114,8 +144,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

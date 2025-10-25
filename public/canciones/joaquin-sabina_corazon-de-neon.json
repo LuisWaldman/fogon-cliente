@@ -8,143 +8,464 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "G",
+                    "A",
+                    "Bm",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "A",
                     "D",
                     "A"
                 ]
             },
             {
-                "nombre": "parte2",
+                "nombre": "parte14",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
                 "acordes": [
                     "G",
-                    "A",
-                    "Bm",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
-                "nombre": "parte3",
+                "nombre": "parte16",
                 "acordes": [
+                    "G",
                     "D",
                     "A",
-                    "D",
-                    "Bb",
-                    "Eb",
-                    "Bb",
-                    "Eb"
+                    "A"
                 ]
             },
             {
-                "nombre": "parte4",
+                "nombre": "parte17",
                 "acordes": [
-                    "Bb",
-                    "Ab",
-                    "Bb",
-                    "Cm",
-                    "Ab",
-                    "Eb",
-                    "Bb",
-                    "Eb"
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "D",
+                    "A",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
         ]
     },
     "letras": [
-        [],
         [
-            "ad donde vivo ha crecido de espaldas al cie",
-            "lo./nLa ciud"
+            "",
+            "",
+            "/n"
         ],
         [
-            "ad donde vivo es el mapa de la soleda",
-            "d./nAl que ll"
+            "La ciudad",
+            "dond vivo ha creci",
+            "c de espaldas al c",
+            "ciel/n"
         ],
         [
-            "ega le da un carame",
-            "lo con el venen",
-            "o de la ansiedad.",
-            "/nLa ciud"
+            "L ciudad d",
+            "don vivo es el mapa",
+            "d la soled",
+            "so/n"
         ],
         [
-            "ad donde vivo es mi c",
-            "rcel y mi liberta",
-            "d.",
-            "/nCoraz"
+            "Al que llega l",
+            "l da un caramelo",
+            "co el veneno",
+            "d la ansieda",
+            "a La ciudad donde v",
+            "vi es mi cárcel",
+            "mi libe",
+            "libe/n"
         ],
         [
-            "ón, corazón, corazón, corazón de ",
-            "cemento ./nCoraz"
+            "La ciudad donde v",
+            "vi es un ogro con",
+            "diente de oro./n",
+            ""
         ],
         [
-            "ón, corazón, corazón, corazón de hor",
-            "migón./nCoraz"
+            "Un amante del luj",
+            "l que siempre quise",
+            "seducir./n",
+            ""
         ],
         [
-            "ón, coraz",
-            "ón enf",
-            "ermo de poluci",
-            "n./nCoraz"
+            "L ciudad junto Dios",
+            "el diablo, al f",
+            "funcionar al t",
+            "travest L",
+            "ciudad donde vivo e",
+            "un riñón media",
+            "me un fusi",
+            "f/n"
         ],
         [
-            "ón, corazón, cora",
-            "zón, corazón de",
-            " neón",
-            "./nCoraz"
+            "Corazón corazón, co",
+            "coraz corazón de",
+            "cemen",
+            "ce C/n"
         ],
         [
-            "ón, corazón, corazón, corazón de ",
-            "cemento./nCoraz"
+            "Corazó corazón, co",
+            "coraz corazón de ho",
+            "hormi/n"
         ],
         [
-            "ón, corazón, corazón, corazón de hor",
-            "migón./nCoraz"
+            "C/n"
         ],
         [
-            "ón, coraz",
-            "ón enf",
-            "ermo de poluci",
-            "n./nCoraz"
+            "Corazó co",
+            "coraz e",
+            "enfer de pol",
+            "poluc Corazó/n"
         ],
         [
-            "ón, corazón, cora",
-            "zón, corazón de ",
-            "neón",
-            "./nCoraz"
+            "C corazón, coraz",
+            "co corazón de hier",
+            "hi/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ón, corazón, corazón, corazón de ",
-            "cemento. /nCoraz"
+            "L/n"
         ],
         [
-            "ón, corazón, corazón, corazón de hor",
-            "migón./nCoraz"
+            "L ciudad do",
+            "do vivo es un monstr",
+            "m con siete cabezas./n"
         ],
         [
-            "ón, coraz",
-            "ón enfe",
-            "rmo de poluci",
-            "n./nCoraz"
+            "E/n"
         ],
         [
-            "ón, corazón, corazón, corazón de neón."
+            "E un pájar",
+            "herido envuelto e",
+            "papel celofá./n",
+            ""
+        ],
+        [
+            "Un inmenso b",
+            "barr de cerveza q",
+            "q de repente p",
+            "pue estallar. L/n"
+        ],
+        [
+            "L ciudad donde v",
+            "vi es el templo del b",
+            "bi del m",
+            "ma/n"
+        ],
+        [
+            "Corazón, coraz",
+            "co corazón, cora",
+            "co de ceme",
+            "cem/n"
+        ],
+        [
+            "Corazón, coraz",
+            "co corazón, cora",
+            "co de hormigo/n",
+            ""
+        ],
+        [
+            "Corazó/n"
+        ],
+        [
+            "C corazón,",
+            "enfermo",
+            "d polución./n"
+        ],
+        [
+            "Corazón, corazó",
+            "c corazón, cora",
+            "co de hierro./n",
+            ""
+        ],
+        [
+            "Corazón, corazón",
+            "corazón, corazó",
+            "de cement",
+            "c Co/n"
+        ],
+        [
+            "Coraz corazón,",
+            "corazón corazó",
+            "de hierro./n",
+            ""
+        ],
+        [
+            "Corazó/n"
+        ],
+        [
+            "C corazón,",
+            "enfermo de",
+            "polución/n"
+        ],
+        [
+            "Corazón, corazón,",
+            "corazón, corazón d",
+            "d hierro.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
@@ -152,5 +473,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -8,85 +8,200 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
                     "D",
                     "A",
-                    "E",
-                    "A",
-                    "D",
-                    "E",
-                    "A"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "D",
-                    "A",
                     "D",
                     "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "A",
-                    "E",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "dos se reunen los fi",
-            "nes de semana pa",
-            "ra la milong",
-            "a/nn"
-        ],
-        [
-            "o hay quien la ponga,/npor e"
-        ],
-        [
-            "so nosotros nos v",
-            "amos a aprender a bai",
-            "lar./n"
-        ],
-        [
-            "Con los plateros de Er",
-            "nie/n"
-        ],
-        [
-            "recorri la pampa y la pa",
-            "tagonia pom pom/n"
-        ],
-        [
-            "y tocando un dia de pa",
-            "seo en Santa Fe",
-            "/nme subi al primer le"
-        ],
-        [
-            "chero./n"
-        ],
-        [
-            "Volver a los 17",
-            " en prese",
-            "ncia de Amilcar Gilabert",
             "/n"
         ],
         [
-            "gente como Amilcar, el port",
-            "ugues Da Silva/n"
+            "Tod se reorga en los fines de sem",
+            "se para la milonga, n",
+            "n hay quien la ponga, por eso nosotros n",
+            "no vamos aprender bailar. H/n"
         ],
         [
-            "cuanto te ayudan a apre",
-            "nder."
+            "Ha que ir los carnavales d",
+            "d comunicaciones,",
+            "los boliches de Ramón Mejía, esta",
+            "noch tocamos el mamáo. Co/n"
+        ],
+        [
+            "C los plateros de Ernie reco",
+            "re la Pampa la Patagonia, pom pom,",
+            "tocando botilla de paseo en Santa F/n"
+        ],
+        [
+            "F me subí al primer lechero. En Áf/n"
+        ],
+        [
+            "Áfr estaba el Gino, en Santa Havana e",
+            "e yo el negro todor, el campeón",
+            "catolíne andaba por ahí, yo tomaba",
+            "tonic con gin. En esa époc",
+            "vino Queen, yo tenía qu",
+            "mejorar el swing. Para los t",
+            "tambor uruboyos, las manitas apren",
+            "apren prender la luz, una noche v",
+            "vin Ra, fue como ver aparece/n"
+        ],
+        [
+            "Jesús. Me rebota",
+            "re para una gira de tango con é",
+            "é vaqués en el cuadro, se ve qu",
+            "no di la talla, tampoco sabía t",
+            "tocar Volver los 1",
+            "1 en presencia de Amilcar G/n"
+        ],
+        [
+            "Gilaber gente como Amilcar e",
+            "e portugués decirlo cuando te ayuden p",
+            "prender En el centro de música de",
+            "n se que, toca Ra viste donde com",
+            "co noche le di la mano/n"
+        ],
+        [
+            "Beliano que me conoce del folkl",
+            "fol hace calor en todo ese a",
+            "añ pero es nuestro segundo ver. S/n"
+        ],
+        [
+            "S no estamos abajo ensay",
+            "ensa estamos arriba en el bar.",
+            "si no, pregúntale Jimmy/n"
+        ],
+        [
+            "Enzo, al conejo Jollibe/n"
+        ],
+        [
+            "J Tony trojos de la boca, un",
+            "u china de odio. Para compartir,",
+            "qué categoría, sería imposib",
+            "i olvidar, además es mejor",
+            "recorda que olvidar.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
@@ -94,8 +209,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

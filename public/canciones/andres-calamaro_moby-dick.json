@@ -8,10 +8,34 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F",
+                    "F",
                     "G",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "F",
+                    "G",
+                    "F",
+                    "C",
                     "C"
                 ]
             },
@@ -19,41 +43,145 @@
                 "nombre": "parte2",
                 "acordes": [
                     "F",
-                    "F",
+                    "G",
+                    "G",
                     "G",
                     "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
                     "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
                     "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "ra vez él se fue a naufragar con un",
-            " sólo tripulante,/nlas p"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "enas van adelante y en el tim",
-            "n el comandante./n"
+            "Est vez no s",
+            "s puede anafr",
+            "an no no solo e",
+            "e tripulant",
+            "t las velas va",
+            "v adelante",
+            "en el timón e",
+            "e comandante.",
+            "diferente a",
+            "viento las corr",
+            "corrie el comand",
+            "com aprieta al odi",
+            "odie ser el único",
+            "tripulant hace qu",
+            "q se sienta solo./n",
+            ""
         ],
         [
-            "Indiferente al viento y a las corrientes,/nel com"
+            "Pero la vez l",
+            "l gusta estar so",
+            "s al gallán e",
+            "e que dirán le suda u",
+            "u poco. Cuando fu",
+            "matar Movi/n"
         ],
         [
-            "andante aprieta los dientes./nEn el "
+            "Mo le dije lo lo",
+            "l de mierda/n"
         ],
         [
-            "único tripu",
-            "lante sin que se sienta s",
-            "lo."
+            "Ojalá se pierd",
+            "p en el bar, dicen",
+            "lo malos bic",
+            "bic",
+            "aquello que es mej",
+            "m perder qu",
+            "q encontrar./n",
+            ""
+        ],
+        [
+            "En el mar es muy f",
+            "fác estar solo,",
+            "el madruguel tal vez",
+            "er mi hogar./n"
+        ],
+        [
+            "Que pena el agu",
+            "estaba buena",
+            "alguna parte vamo",
+            "v llegar. E/n"
+        ],
+        [
+            "E el puerto me sie",
+            "si muerto e",
+            "e la tormenta me sien",
+            "s en casa. ¿",
+            "¿Q pasa con el",
+            "comandante"
         ]
     ],
-    "bpm": 80,
+    "bpm": 172,
     "medias": [
         {
             "tipo": "Youtube",
@@ -61,8 +189,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

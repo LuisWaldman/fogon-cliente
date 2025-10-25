@@ -8,94 +8,443 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
                     "A",
-                    "E"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#m",
-                    "E",
-                    "F#m",
-                    "E",
-                    "F#m",
-                    "B",
                     "A",
-                    "D"
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
-                    "D",
-                    "E",
-                    "D",
-                    "E",
-                    "D",
-                    "E",
+                    "A",
+                    "A",
+                    "A",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
         [
-            "Voy cruzando las etapas de una noche larga/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "abro puertas en mi mente, quiero enloque",
-            "cer,/n"
+            "E/n"
         ],
         [
-            "todas esas luces giran sobre mi cabeza/n"
+            "Es es una canción en español de rock argentino./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "y nuevos sonidos se adueñaron de ",
-            "mí./n"
+            "Voy cruz",
+            "cru las etapas d",
+            "d una noche l",
+            "lar/n"
         ],
         [
-            "Estoy sintiendo que mi cuerpo q",
-            "uema/n"
+            "Abro pue",
+            "pue en mi mente qui",
+            "qui enloque",
+            "en/n"
         ],
         [
-            "y los sonidos entran por mis v",
-            "enas/n"
+            "Todas es",
+            "e luces giran sobr",
+            "mi cabez",
+            "",
+            "nuevos s",
+            "sonid se adue",
+            "adue de mi/n"
         ],
         [
-            "ya nunca quiero que esto lle",
-            "gue hasta el fin",
-            "./n"
+            "Es/n"
         ],
         [
-            "Voy buscando el cie",
-            "lo/nestoy ba"
+            "Es sintiendo que mi c",
+            "cuer quema",
+            "los sonidos entran p",
+            "po mis venas Y/n"
         ],
         [
-            "ilando en el infi",
-            "erno,/n"
+            "Y nunca quiero que",
+            "esto llegu",
+            "hasta el f",
+            "fi V/n"
         ],
         [
-            "voy buscando el cie",
-            "lo/nestoy ba"
+            "V buscando",
+            "e cielo,",
+            "estoy bailando en e",
+            "e infierno/n"
         ],
         [
-            "ilando en el infi",
-            "erno, hasta el fi",
-            "n."
+            "Vo buscando e",
+            "e cielo,",
+            "estoy bailando en e",
+            "e infierno hast",
+            "el f",
+            "f/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "V/n"
+        ],
+        [
+            "V buscando el cielo, estoy bailando en el infierno hasta el fin/n"
+        ],
+        [
+            "Voy c",
+            "cruzan las etap",
+            "e de una noche l",
+            "la",
+            "l Abr",
+            "puertas en mi mente",
+            "quiero enloq",
+            "enlo/n"
+        ],
+        [
+            "Toda",
+            "esas luces giran s",
+            "sob mi cabe",
+            "c",
+            "nuevo",
+            "sonidos se ad",
+            "adueña de m",
+            "m E/n"
+        ],
+        [
+            "Est sintiendo que m",
+            "m cuerpo quem",
+            "los sonidos ent",
+            "en por mis vena",
+            "v Ya nunca quiero q",
+            "q esto llegu",
+            "hasta el fi/n",
+            ""
+        ],
+        [
+            "Vo busca",
+            "bu el cielo,",
+            "estoy bailando en",
+            "e infier",
+            "i Voy buscand",
+            "b el cielo,",
+            "estoy bailando en e",
+            "e infierno has",
+            "h el f",
+            "f",
+            "f/n",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Hast/n"
+        ],
+        [
+            "H el fin/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Hasta e",
+            "e fin",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
@@ -103,5 +452,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

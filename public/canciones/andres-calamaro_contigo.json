@@ -8,56 +8,248 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
                     "G",
-                    "D",
-                    "G"
+                    "G",
+                    "A",
+                    "A",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "D",
+                    "F#m",
+                    "D7",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "G",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
                     "D",
                     "F#m",
                     "D7"
                 ]
             },
             {
-                "nombre": "parte3",
+                "nombre": "parte8",
                 "acordes": [
                     "G",
-                    "A",
-                    "Bm",
-                    "G",
-                    "D",
-                    "G",
-                    "E7",
                     "A"
                 ]
             },
             {
-                "nombre": "parte4",
+                "nombre": "parte9",
                 "acordes": [
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E7",
+                    "E7",
+                    "A",
                     "G",
                     "D",
-                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "G",
-                    "A",
-                    "Bm",
-                    "E7",
                     "A"
                 ]
             },
             {
-                "nombre": "parte5",
+                "nombre": "parte12",
                 "acordes": [
-                    "A#",
+                    "Bm",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "A",
-                    "Dm",
-                    "Dm/C#",
-                    "Dm/C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "D",
+                    "F#m",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "A",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "A",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "F#m",
+                    "D7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "G",
+                    "E7",
+                    "E7",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "E7",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "E7",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "G",
+                    "G",
+                    "A",
+                    "D",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
                     "A"
                 ]
             }
@@ -66,215 +258,204 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
             3,
-            0,
-            1,
-            2,
             4,
-            1,
-            2,
-            3,
-            3,
-            3
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
         ]
     },
     "letras": [
         [
-            "ero un amor civiliza",
-            "do/ncon rec"
+            "",
+            "",
+            "/n"
         ],
         [
-            "ibos y escenas de sof",
-            ",/nYo no qui"
+            "Yo no q",
+            "quier un amor civi",
+            "civil co",
+            "recibos escenas d",
+            "sofá. Y/n"
         ],
         [
-            "ero que viajes al pasa",
-            "do/ny vuelvas del merc"
+            "Y no quiero que viajes a",
+            "pasado vuelvas del",
+            "mercad con ganas d",
+            "d llorar. Yo n",
+            "n quiero vecinas co",
+            "c pucheros./n"
         ],
         [
-            "ado con ganas de llora",
-            "r./nYo no qui"
+            "Yo no quiero sembrar ni c",
+            "comparti/n"
         ],
         [
-            "ero vecinas con puche",
-            "ro,/nYo no qui"
+            "Yo no quiero 14 d",
+            "d febrero cu",
+            "cumplea feliz./n"
         ],
         [
-            "ero sembrar ni comparti",
-            "r,/nYo no qui"
+            "Yo",
+            "n quiero cargar con t",
+            "tu maletas. Y/n"
         ],
         [
-            "ero 14 de febre",
-            "ro/ny cumpleaños fe"
+            "Y no quiero que elijas m",
+            "m shampoo./n"
         ],
         [
-            "liz./nYo no qui"
+            "Yo no quiero mudarme d",
+            "d planeta, cortarme l",
+            "l coleta, brindar",
+            "tu salud. Y/n"
         ],
         [
-            "ero cargar con tus male",
-            "tas,/nYo no qui"
+            "Y no quiero domingo",
+            "por la tarde./n"
         ],
         [
-            "ero que elijas mi shampo",
-            "o,/nYo no qui"
+            "Yo no quiero columpio e",
+            "e el jardín. L/n"
         ],
         [
-            "ero mudarme de plane",
-            "ta,/ncortarme la col"
+            "L que yo quiero,",
+            "corazón cobarde,",
+            "es que mueras por mí.",
+            "",
+            "morirme conti",
+            "c si te matas.",
+            "matarme conti",
+            "c si te mueres./n"
         ],
         [
-            "eta, brindar a tu salu",
-            "d./nYo no qui"
+            "Porque el amor cuando n",
+            "n muere mata./n"
         ],
         [
-            "ero domingos por la ta",
-            "rde,/nYo no qui"
+            "Porque amores que m",
+            "mat nunca mueren/n"
         ],
         [
-            "ero columpio en el jard",
-            "n,/nLo que yo qui"
+            "Yo no quiero jun",
+            "ju para mañana./n"
         ],
         [
-            "ero, corazón co",
-            "barde,/nes que mueras por m"
+            "No me pidas lle",
+            "ll al fin de mes./n"
         ],
         [
-            "í./nY mor"
+            "Yo no quiero co",
+            "come una manzana do",
+            "d veces por semana si",
+            "s ganas de comer./n"
         ],
         [
-            "irme contigo si te ma",
-            "tas/ny mat"
+            "Yo no quiero ca",
+            "ca de invernadero./n"
         ],
         [
-            "arme contigo si te mue",
-            "res/nPorque el am"
+            "Yo no quiero be",
+            "be tu cicatriz./n"
         ],
         [
-            "or cuando no muere ma",
-            "ta/nPorque am"
+            "Yo no quie",
+            "q París con agua cero/n"
         ],
         [
-            "ores que matan nunca mue",
-            "ren/nYo no qui"
+            "Venecia sin ti./n",
+            ""
         ],
         [
-            "ero juntar para mañ",
-            "ana,/nNo me p"
+            "No me esferes",
+            "las dos en el juzgado./n"
         ],
         [
-            "idas llegar a fin de me",
-            "s,/nYo no qui"
+            "No me digas",
+            "volvamo empezar./n"
         ],
         [
-            "ero comer una manza",
-            "na/ndos veces por sem"
+            "Yo no quiero n",
+            "n libre ni ocupado./n"
         ],
         [
-            "ana sin ganas de come",
-            "r./nYo no qui"
+            "Ni carne ni pecado,",
+            "ni orgullo ni pie",
+            "pie Yo no quier",
+            "saber por qué lo hiciste/n"
         ],
         [
-            "ero calor de invernade",
-            "ro,/nYo no qui"
-        ],
-        [
-            "ero besar tu cicatri",
-            "z,/nYo no qui"
-        ],
-        [
-            "ero Paris con aguace",
-            "ro/nni Venecia sin t"
-        ],
-        [
-            "i./nNo me esp"
-        ],
-        [
-            "eres a las doce en el juzga",
-            "do,/nNo me d"
-        ],
-        [
-            "igas volva",
-            "mos a e",
-            "mpezar,",
-            "/nYo no qui"
-        ],
-        [
-            "ero ni libre, ni ocupa",
-            "do,/nni carne, ni pec"
-        ],
-        [
-            "ado, ni orgullo, ni pieda",
-            "d./nYo no qui"
-        ],
-        [
-            "ero saber porque lo hici",
-            "ste/nYo no qui"
-        ],
-        [
-            "ero contigo ni sin ti",
-            "/nLo que yo qui"
-        ],
-        [
-            "ero, muchacha de ojos tr",
-            "istes,/nes que mueras por m"
-        ],
-        [
-            "í./nY mor"
-        ],
-        [
-            "irme contigo si te ma",
-            "tas/ny mat"
-        ],
-        [
-            "arme contigo si te mue",
-            "res/nPorque el am"
-        ],
-        [
-            "or cuando no muere ma",
-            "ta/nPorque am"
-        ],
-        [
-            "ores que matan nunca mue",
-            "ren/nY mor"
-        ],
-        [
-            "irme contigo si te ma",
-            "tas/ny mat"
-        ],
-        [
-            "arme contigo si te mue",
-            "res/nPorque el am"
-        ],
-        [
-            "or cuando no muere ma",
-            "ta/nPorque am"
-        ],
-        [
-            "ores que matan nunca mue",
-            "ren/nY mor"
-        ],
-        [
-            "irme contigo si te ma",
-            "tas/ny mat"
-        ],
-        [
-            "arme contigo si te mue",
-            "res/nPorque el am"
-        ],
-        [
-            "or cuando no muere ma",
-            "ta/nPorque am"
-        ],
-        [
-            "ores que matan nunca mue",
-            "ren/n"
-        ],
-        []
+            "Yo no quie",
+            "q contigo ni sin ti",
+            "t Lo que yo quier",
+            "q muchacha de ojos tris",
+            "tri es que mueras p",
+            "p mí.",
+            "mori",
+            "mo contigo si te ma",
+            "mat mata",
+            "ma contigo si te muer",
+            "mu Porque el am",
+            "a cuando no muere mat",
+            "m Porque amor e",
+            "e que matar nunca",
+            "muere mor",
+            "mor contigo si te m",
+            "mata ma",
+            "mata contigo si te mu",
+            "muer Porque el a",
+            "am cuando no muere ma",
+            "ma Porque amo",
+            "es que matar nunc",
+            "n muere. m",
+            "morir contigo si te",
+            "matas m",
+            "matar contigo si te m",
+            "muere Porque el a",
+            "amo cuando no muere m",
+            "mat Porque am",
+            "a es que matar nunca",
+            "muere m",
+            "morir contigo si te",
+            "matas",
+            "matarme contigo si te m",
+            "muere Porque e",
+            "e amor cuando no mue",
+            "m mata. Porque a",
+            "am es que matar nun",
+            "n muere.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "morirme contigo si te matas."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
@@ -284,5 +465,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -8,10 +8,23 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "Em",
+                    "Am",
+                    "Am",
                     "Am"
                 ]
             },
@@ -19,157 +32,443 @@
                 "nombre": "parte2",
                 "acordes": [
                     "D7",
+                    "D7",
+                    "D7",
+                    "C",
+                    "C",
                     "C",
                     "D7",
                     "Bm7",
-                    "Em",
-                    "Am",
-                    "D7"
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D7",
-                    "E",
-                    "Am",
-                    "D7",
-                    "Bm",
-                    "Em"
+                    "Bm7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am",
-                    "D7",
+                    "Em",
+                    "Em",
                     "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "C",
-                    "D",
-                    "G",
-                    "C",
-                    "G",
-                    "C",
-                    "D7",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "E",
+                    "E",
+                    "E",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
             3,
-            0,
-            2,
-            3,
-            0,
-            2,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
         ]
     },
     "letras": [
         [
-            "a vez también pude llegar",
-            "/nA consegu"
-        ],
-        [
-            "ir lo que siempre soñé",
-            "/nTuve un lugar,"
-        ],
-        [
-            " tuve un amor",
-            "/nY me quedé "
-        ],
-        [
-            "sin tu foto en el cajón",
-            "/nPara mirar"
-        ],
-        [
-            " alguna vez",
-            "/nAlgun"
-        ],
-        [
-            "a vez no supe renunciar",
-            "/nY me sirvi"
-        ],
-        [
-            "ó para sufrir",
-            "/nPorque"
-        ],
-        [
-            " vivir",
-            " no es vivir",
-            "/nSin liberta"
-        ],
-        [
-            "d y quien querer",
-            "/nVoy a pode"
-        ],
-        [
-            "r, si nunca ",
-            "sale el sol",
+            "",
             "/n"
         ],
         [
-            " Voy a escribir mil veces más",
-            "/nCanciones qu"
+            "Alg/n"
         ],
         [
-            "e ya escribí",
-            "/nQuiero volar"
-        ],
-        [
-            " entre ",
-            "los edificios",
-            "/nCruzar el ma"
-        ],
-        [
-            "r como gaviotas",
-            "/nY ser de nuev"
-        ],
-        [
-            "o lo que soy yo,",
-            " como sie",
-            "mpre/n"
-        ],
-        [
-            "Podría ser posible que el tiempo te olvide",
-            "/nY que seg"
-        ],
-        [
-            "uir será complicado",
-            "/nMejor "
-        ],
-        [
-            "será ",
-            "sacarme de costado",
-            "/nEse puñal "
-        ],
-        [
-            "que quema todo el ",
-            "tiempo/nY que la sang"
-        ],
-        [
-            "re limpie lo",
-            " que pueda",
+            "Al vez",
+            "tambié pude l",
+            "llega",
             "",
             "",
-            "",
-            "",
-            "/nLimpie todo lo que pueda"
+            "conseguir l",
+            "l que s",
+            "siemp so",
+            "s/n"
         ],
         [
+            "Tuve un",
+            "lugar",
+            "",
+            "tuve un a",
+            "am",
+            "",
+            "me qu",
+            "qu s",
+            "si tu foto en e",
+            "e cajó/n",
+            "",
             ""
+        ],
+        [
+            "Par/n"
+        ],
+        [
+            "P mira",
+            "alguna v",
+            "v/n"
+        ],
+        [
+            "Algu/n"
+        ],
+        [
+            "A ve",
+            "v n",
+            "n sufrí red",
+            "red",
+            "",
+            "me s",
+            "si",
+            "s pa",
+            "p sufrir/n",
+            ""
+        ],
+        [
+            "Porque v",
+            "vivi n",
+            "n",
+            "n es vivi",
+            "v/n",
+            ""
+        ],
+        [
+            "S/n"
+        ],
+        [
+            "Si lib",
+            "libe ni que",
+            "qu/n",
+            ""
+        ],
+        [
+            "Voy p",
+            "pod/n",
+            "",
+            ""
+        ],
+        [
+            "Si n",
+            "nun sale",
+            "un solo/n"
+        ],
+        [
+            "Voy escr",
+            "esc mil veces",
+            "má/n",
+            ""
+        ],
+        [
+            "Cancione q",
+            "q y",
+            "y",
+            "escrib",
+            "e/n",
+            ""
+        ],
+        [
+            "Quier v",
+            "vol De e",
+            "ent los edificios",
+            "",
+            "u",
+            "usa el mar/n"
+        ],
+        [
+            "C/n"
+        ],
+        [
+            "Com un a",
+            "avió",
+            "",
+            "estar de vu",
+            "vue/n"
+        ],
+        [
+            "L/n"
+        ],
+        [
+            "L que so/n",
+            ""
+        ],
+        [
+            "Como s",
+            "siemp",
+            "hacer posible q",
+            "q no te olvi",
+            "ol",
+            "",
+            "que seguir/n"
+        ],
+        [
+            "N/n"
+        ],
+        [
+            "N sea comp",
+            "compl/n"
+        ],
+        [
+            "L/n"
+        ],
+        [
+            "L mejor se",
+            "s/n"
+        ],
+        [
+            "Acerca/n"
+        ],
+        [
+            "Ac de cost",
+            "co/n"
+        ],
+        [
+            "Qu siem",
+            "si ya",
+            "",
+            "que más todo el",
+            "tiemp",
+            "",
+            "que las s",
+            "sombr",
+            "que lo",
+            "qu pueda",
+            "",
+            "",
+            "",
+            "",
+            "que todo lo que p",
+            "pue",
+            "",
+            "",
+            "",
+            "",
+            "que todo lo que pueda"
         ]
     ],
-    "bpm": 80,
+    "bpm": 143,
     "medias": [
         {
             "tipo": "Youtube",
@@ -177,8 +476,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -8,48 +8,167 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "E7",
+                    "E7",
                     "F",
-                    "G"
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "E7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "Am",
-                    "F",
-                    "E"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Al cuaderno donde escribo y",
-            "o/nse "
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "le acabaron los renglo",
-            "nes/ne"
+            "E/n"
         ],
         [
-            "scribí alguna canción",
-            " buena/n"
+            "E cuaderno q",
+            "qu escribo yo,",
+            "se le acaba",
+            "ac los rengones",
+            "escribí algun",
+            "a canción buena,",
+            "las otras son bue",
+            "bu canciones. S/n"
         ],
         [
-            "las otras son buenas cancio",
-            "nes"
+            "S le escribo de los",
+            "setenta que vaya d",
+            "d cuenta, tengo casi c",
+            "cuarent y",
+            "y busqué corazón e",
+            "e venta, con chicle d",
+            "d menta con música le",
+            "len Es una",
+            "lista sobre la rea",
+            "reali",
+            "entonces no hay verso que v",
+            "valg solam",
+            "sol cabe la verd",
+            "ve una frase dulc",
+            "la otra amarga/n"
+        ],
+        [
+            "Si empez",
+            "emp recorda",
+            "r recordar",
+            "demasiad lar",
+            "la si no me",
+            "acuerd de nada, y",
+            "y ni corta la",
+            "letra al final,",
+            "si vivo par",
+            "p olvidar, va ser",
+            "par llorar. Entonces mejor",
+            "no escribo nada,",
+            "quiero la let",
+            "l sagrada, porque s",
+            "s no hay, no puedo",
+            "cantar",
+            "mejor mirar par",
+            "p otro lado,",
+            "mientras yo pido un verso p",
+            "plantad",
+            "hoy me levanté",
+            "cansad ay",
+            "ay ni me fui ac",
+            "acost/n",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Si n",
+            "n hay, no puedo cantar, porque si vivo para olvidar, va ser para llorar."
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
@@ -57,8 +176,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -8,54 +8,484 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "F#m",
+                    "C",
+                    "C",
+                    "B7",
+                    "B7",
+                    "E Bm",
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "Bm",
-                    "Am",
-                    "G",
-                    "A",
-                    "B7",
-                    "E"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
-                    "B7",
-                    "E",
-                    "E7",
-                    "A",
-                    "B7",
-                    "G#m",
-                    "C#m"
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#m",
-                    "B7",
-                    "C",
-                    "G",
-                    "D",
-                    "E",
-                    "C",
-                    "G"
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
-                    "G",
-                    "G7",
-                    "C",
-                    "D",
-                    "C",
+                    "E",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B7",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "B7",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "G",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "E",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte32",
+                "acordes": [
+                    "G",
+                    "A",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte33",
+                "acordes": [
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte34",
+                "acordes": [
+                    "A",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte35",
+                "acordes": [
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte36",
+                "acordes": [
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte37",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "B7",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte38",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte39",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte40",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte41",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte42",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte43",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte44",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte45",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte46",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte47",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte48",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte49",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte50",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte51",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte52",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte53",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte54",
+                "acordes": [
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -64,106 +494,380 @@
             1,
             2,
             3,
-            0,
-            1,
-            2
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
         ]
     },
     "letras": [
         [
-            "ay mujeres que arrastran maletas, ",
-            "cargadas de lluvia/nh"
+            "El primer invitado. Esto es un",
+            "conciert con invitados. El pri",
+            "pri os pido que seáis piadoso",
+            "con él, porque es la primera vez que se s",
+            "sub un escenario de esta enj",
+            "enjun Es un ext",
+            "ext personaje que apareció po",
+            "p Madrid hace un par de m",
+            "meses En esos dos meses cons",
+            "cons hacerse tan amigo mío como para",
+            "esta aquí esta noche dispu",
+            "disp con ventaja el título de Rey de l",
+            "l Noche madrileña, aprovechando q",
+            "q yo estaba preparando este concierto",
+            "retirado. Reparte p",
+            "p ahí unas extrañas tarjetas donde ase",
+            "ase que es un vocalista",
+            "polifacétic",
+            "todos creemos que ocult",
+            "un inconfesable pasado. Seño/n"
         ],
         [
-            "ay mujeres que nunca reciven pos",
-            "tales de amor/nh"
+            "Se señores, el debut mundia",
+            "m de Ricardo Solfa./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ay mujeres que ba",
-            "ilan desnudas, en carc",
-            "eles de oro/nh"
+            "Reci/n"
         ],
         [
-            "ay mujeres que bu",
-            "scan deceo y encue",
-            "ntran piedad",
-            "/nh"
+            "R una carta de Joaquín instá",
+            "inst estar aquí esta noche",
+            "se la trasladé",
+            "mi compositor habitual, el maestro Ar/n"
         ],
         [
-            "ay mujeres atad",
-            "as de manos y pies",
-            ", al olvido",
-            "/nh"
+            "Arma Llamado, para que le pusiera u",
+            "un notas de Solfeo./n",
+            ""
         ],
         [
-            "ay mujeres que huy",
-            "en, pe",
-            "rseguidas por su ",
-            "soledad",
-            "/n"
+            "E/n"
         ],
         [
-            "Coro.../nH"
+            "E una carta como no hablando de",
+            "la mujeres./n",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ay mujeres veneno, mujeres y ma",
-            "r/nh"
+            "Se la voy",
+            "leer ustedes./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ay mujeres de fuego y elado meta",
-            "l",
-            "/nh"
+            "Ha/n"
         ],
         [
-            "ay mujeres consuelo, h",
-            "ay mujeres consuelo/nh"
+            "H mujeres que arrast",
+            "ar maletas carg",
+            "car de lluvia./n"
         ],
         [
-            "ay mujeres consu",
-            "elo, mujeres fatal",
-            "/nh"
+            "H/n"
         ],
         [
-            "ay mujeres que tocan y curan, que ",
-            "besan y matan/nh"
+            "Ha mujeres q",
+            "q no recibe",
+            "postales de",
+            "amor/n"
         ],
         [
-            "ay mujeres que ni cuando mienten",
-            " dicen la verdad/nh"
+            "Hay mu",
+            "muje que sueñan con",
+            "trenes llenos d",
+            "d soldados./n"
         ],
         [
-            "ay mujeres embuel",
-            "tas en pieles sin cuer",
-            "po debajo/nh"
+            "H/n"
         ],
         [
-            "ay mujeres que en",
-            " cuyas caderas no ",
-            "se pone el sol",
-            "/nh"
+            "H mujeres que d",
+            "dic que sí cuando",
+            "dice que no./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ay mujeres que ",
-            "van al amor como v",
-            "an al traba",
-            "jo/nh"
+            "Ha/n"
         ],
         [
-            "ay mujeres capaces",
-            " de ha",
-            "cerme perder la r",
-            "azon",
-            "/n"
+            "H mujeres que bai",
+            "ba desnudas en cá",
+            "cárce de oro./n"
         ],
         [
-            "Coro.../nH"
+            "H/n"
         ],
         [
-            "ay mujeres veneno, mujeres y mar",
-            "..."
+            "H mujeres que bu",
+            "bus deseos en",
+            "encuent piedad/n",
+            ""
+        ],
+        [
+            "Ha mujeres a",
+            "atad de manos",
+            "pies a",
+            "a olvido./n"
+        ],
+        [
+            "Hay mujere",
+            "que huyen",
+            "perseguirl",
+            "p por su so",
+            "soled/n",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Hay mu",
+            "muje veneno, mu",
+            "muje man./n",
+            ""
+        ],
+        [
+            "Hay m",
+            "mujer de fuego",
+            "helado metal./n",
+            ""
+        ],
+        [
+            "Hay m",
+            "mujer con suelo./n"
+        ],
+        [
+            "Hay m",
+            "mujer con suelo/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Ha/n"
+        ],
+        [
+            "H mujeres con suelo./n",
+            ""
+        ],
+        [
+            "Hay mujeres q",
+            "q tocan curan, q",
+            "qu ves animad",
+            "a/n"
+        ],
+        [
+            "Ha/n"
+        ],
+        [
+            "H mujeres que ni cuando m",
+            "m entienden dicen l",
+            "verdad./n"
+        ],
+        [
+            "Ha",
+            "mujeres que exploran e",
+            "estancia secreta",
+            "del alma./n"
+        ],
+        [
+            "Hay",
+            "mujere que empiezan l",
+            "l guerra firmando l",
+            "l paz./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Ha",
+            "mujeres envuelta",
+            "en piel sin cuerp",
+            "de bajo./n"
+        ],
+        [
+            "Ha/n"
+        ],
+        [
+            "H mujeres en cuy",
+            "c caderas no se p",
+            "pon sol./n"
+        ],
+        [
+            "Ha/n"
+        ],
+        [
+            "H mujeres que va",
+            "v al amor como v",
+            "v al trabaj",
+            "t H/n"
+        ],
+        [
+            "H mujeres cap",
+            "cap d",
+            "d hacerme perd",
+            "p el arr",
+            "arr/n",
+            "",
+            ""
+        ],
+        [
+            "H/n"
+        ],
+        [
+            "H mujeres v",
+            "venen mujeres",
+            "man./n"
+        ],
+        [
+            "H/n"
+        ],
+        [
+            "Ha mujeres d",
+            "d fuego helado me",
+            "met H/n"
+        ],
+        [
+            "Ha mu",
+            "muje c",
+            "c suelo. H/n"
+        ],
+        [
+            "Ha mujeres co",
+            "c suelo./n"
+        ],
+        [
+            "Hay mujeres con",
+            "suelo Mujeres fa",
+            "fat/n",
+            ""
+        ],
+        [
+            "Hay mujeres ve",
+            "vene mujeres",
+            "man./n"
+        ],
+        [
+            "H/n"
+        ],
+        [
+            "H mujeres de fue",
+            "f helado metal./n"
+        ],
+        [
+            "Ha/n"
+        ],
+        [
+            "H muje",
+            "mu con s",
+            "suel Ha/n"
+        ],
+        [
+            "H mujeres con su",
+            "sue H/n"
+        ],
+        [
+            "H mujeres con suelo/n"
+        ],
+        [
+            "Mujeres fatal./n",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "H/n"
+        ],
+        [
+            "H muje",
+            "mu en cuyas caderas no se ponen sol."
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
@@ -171,5 +875,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

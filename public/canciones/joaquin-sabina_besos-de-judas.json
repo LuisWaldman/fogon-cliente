@@ -8,14 +8,21 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "Em",
-                    "C",
                     "G",
-                    "C",
-                    "G",
+                    "D",
                     "D"
                 ]
             },
@@ -23,57 +30,507 @@
                 "nombre": "parte2",
                 "acordes": [
                     "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
                     "G",
                     "C",
                     "D",
-                    "Em",
-                    "Am",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "C",
+                    "C",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "C",
+                    "C",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
         ]
     },
     "letras": [
         [
-            "No soporta el dolor, le divierte inve",
-            "ntar/nque vive lejos"
-        ],
-        [
-            " en un raro pais",
-            "/ncuando viaja "
-        ],
-        [
-            "en sue?os lo hace sin mi",
-            "/ncada vez "
-        ],
-        [
-            "que se aburre de andar",
-            "/nda un salto mortal."
-        ],
-        [
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "  Cuanto mas le doy, ella menos me da",
-            "/npor eso es que tengo dudas"
+            "N/n"
         ],
         [
-            "/nno sera un tal judas"
+            "N soporta el dolor,",
+            "le divierte inventar qu",
+            "q vive lejos en un raro p",
+            "país Cuan/n"
         ],
         [
-            "/n"
+            "C viaje en sueños lo hace s",
+            "s mí, cada",
+            "vez que se aburre de a",
+            "and da un salto mor",
+            "mor/n"
         ],
         [
-            "  el que ense?o a ",
-            "besar."
+            "Cuando e",
+            "sol fatigado se de",
+            "ded manchar de rosa l",
+            "l macetas de mi balcón./n"
+        ],
+        [
+            "Fuega conmi",
+            "c al gato al rato,",
+            "si le pid",
+            "p quedarte un poco más,",
+            "se vista se va./n",
+            ""
+        ],
+        [
+            "Cua/n"
+        ],
+        [
+            "Cu más le doy el",
+            "e menos me da,",
+            "por eso veces tengo d",
+            "dudas no serán tan d",
+            "duda/n"
+        ],
+        [
+            "El que le ens",
+            "en besar./n"
+        ],
+        [
+            "C/n"
+        ],
+        [
+            "Cuant más le do",
+            "d ella menos me da,",
+            "por eso veces te",
+            "te dudas, no serán",
+            "tan dudas./n"
+        ],
+        [
+            "El que l",
+            "l enseñó besar./n"
+        ],
+        [
+            "Nu/n"
+        ],
+        [
+            "Nu me dice ver, si",
+            "siem se hace esperar de no",
+            "no como el sueño tarda en ve",
+            "ven Dibu/n"
+        ],
+        [
+            "D lunes con saliva car",
+            "car cobra",
+            "car cada brazo que da",
+            "d no acostumbra f",
+            "fia/n"
+        ],
+        [
+            "Cuando grit",
+            "g de alarma suenan por",
+            "la ciudad, cuando los sabi",
+            "s dicen no hay solución./n"
+        ],
+        [
+            "Ella pretende q",
+            "q hagamos el amor e",
+            "e una c",
+            "ca de cristal,",
+            "orillas del mar./n",
+            ""
+        ],
+        [
+            "Cuant",
+            "más le doy ell",
+            "menos me da, po",
+            "p eso veces tengo du",
+            "dud no serán tan du",
+            "dud/n"
+        ],
+        [
+            "E que le enseñ",
+            "e besar./n"
+        ],
+        [
+            "Cu/n"
+        ],
+        [
+            "Cua más le doy e",
+            "ell menos me da,",
+            "por eso veces ten",
+            "t dudas, no serán t",
+            "t dudas./n"
+        ],
+        [
+            "El que le e",
+            "enseñ besar./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Yo que siempre",
+            "trat de aprender",
+            "barajarlo no hay pesa al es",
+            "est del triunfador. A/n"
+        ],
+        [
+            "Ahor me veo jugá",
+            "jugá farol, m",
+            "mientra su mang",
+            "m esconde unas, n",
+            "n sabe ganar./n",
+            ""
+        ],
+        [
+            "Cuanto m",
+            "má le doy ella m",
+            "men me da, por",
+            "es veces tengo dud",
+            "du no serán tan dud",
+            "du/n"
+        ],
+        [
+            "El que le enseñó",
+            "besar./n"
+        ],
+        [
+            "Cua/n"
+        ],
+        [
+            "Cu más le doy e",
+            "el menos me da, p",
+            "po eso veces tengo",
+            "dudas no serán tan",
+            "dudas/n"
+        ],
+        [
+            "El que le en",
+            "ens besar./n",
+            ""
+        ],
+        [
+            "Cuanto más le d",
+            "d ella menos me da,",
+            "por eso neces",
+            "ne ayudar, aunque se",
+            "s tan dudas./n"
+        ],
+        [
+            "Bes/n"
+        ],
+        [
+            "Be un poco más/n",
+            ""
+        ],
+        [
+            "Cuanto más l",
+            "l doy ella menos m",
+            "m da, por eso v",
+            "vec tengo dudas, no",
+            "será tan dudas.",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
@@ -81,5 +538,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

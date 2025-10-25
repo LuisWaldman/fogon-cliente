@@ -8,154 +8,503 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
-                    "D",
-                    "C"
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C7",
-                    "C",
-                    "B7"
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B7",
                     "Em",
-                    "D",
-                    "C",
-                    "B7",
-                    "F",
-                    "G",
-                    "C"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "B7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "F",
-                    "F#",
-                    "G",
+                    "F",
+                    "F",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C7",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
                     "C",
                     "D",
-                    "B7",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "C7",
+                    "F#",
+                    "C",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "F#",
+                    "F#",
+                    "C",
+                    "Dm",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
             2,
             3,
-            0,
-            1
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
         ]
     },
     "letras": [
         [
-            "  Bajo una luz/nyo me quitara mi sombre"
+            "/n"
         ],
         [
-            "ro,/nlo mantearía detrás"
+            "voy in",
+            "invi subir al escenario para cantar c",
+            "c nosotros, un gran amigo mío",
+            "m un auténtico can",
+            "canta un fa",
+            "fabulo un cádila que es Vice/n"
         ],
         [
-            " tuya./n"
+            "Vicen Vicentico, un aplauso para/n"
         ],
         [
-            "Mocita como v",
-            "os/nno vi n"
+            "Vicentico",
+            "que vamos cantar juntos./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "inguna/n"
+            "V/n"
         ],
         [
-            "   La muchacha que les digo/nni segundo apel"
+            "Vamo Vamos cantante./n",
+            "",
+            "",
+            ""
         ],
         [
-            "lido./nVive esclava de su t"
+            "Y/n"
         ],
         [
-            "iempo,/nyo conde"
+            "Y soy el c",
+            "cantan qu",
+            "q hoy han venido e",
+            "escuch lo m",
+            "mejo del r",
+            "repertor",
+            "ustedes voy",
+            "invitar M/n"
         ],
         [
-            "nado a viv",
-            "ir/ncon lo que "
+            "M canto la vida d",
+            "d risas penas,",
+            "de momentos malos",
+            "de cosas buenas./n"
         ],
         [
-            "tengo/nEn el "
+            "Vinieron divertirse",
+            "me pagaron en la puerta,",
+            "hay tiempo para tristeza./n"
         ],
         [
-            "mismo lugar,/nen la calle donde me pe"
+            "Vamos cantante comi",
+            "comi/n",
+            ""
         ],
         [
-            "días/nque mi gente te can"
+            "M/n"
         ],
         [
-            "tara/npor bule"
+            "M paran siemp",
+            "s en la calle, m",
+            "much gente q",
+            "qu comenta./n"
         ],
         [
-            "rías/nEn el "
+            "Oye André lo que t",
+            "t estás hecho,",
+            "siempre con",
+            "embras esperant",
+            "e Si nadie preg",
+            "preg si sufro, si l",
+            "llor si tengo una",
+            "pen que hiere muy",
+            "hondo Yo soy el c",
+            "cantant porque lo mío es c",
+            "canta el público",
+            "paga para, para p",
+            "poder escuc",
+            "esc/n",
+            ""
         ],
         [
-            "mismo lugar,/nen la calle donde tú ba"
+            "Porqu yo",
+            "so el canta",
+            "can m",
+            "m popular donde qu",
+            "quie pero cua",
+            "cu el show se a",
+            "acab",
+            "soy un humano cualqu",
+            "cual Viv/n"
         ],
         [
-            "ilabas/nyo contaba los pa"
+            "V mi vida con r",
+            "ris penas, con mo",
+            "momen malos c",
+            "co cosas buenas. Yo s",
+            "so el cantante m",
+            "m negocio es cantar",
+            "los que me siga",
+            "mi ca",
+            "canc vo",
+            "v brindar./n"
         ],
         [
-            "sitos/nque tú me "
+            "Voy",
+            "brinda",
+            "mi mejores fregones./n"
         ],
         [
-            "dabas./nDel "
+            "Hoy te dedico mi",
+            "m mejores fregones./n",
+            "",
+            ""
         ],
         [
-            "palo, soy del palo que tú ",
-            "quieras/nese quitapenas l"
+            "Ho te dedico m",
+            "m mejores fregones./n",
+            ""
         ],
         [
-            "levo en mí, car",
-            "gando./nDel "
+            "H/n"
         ],
         [
-            "palo, dicen que ",
-            "soy del pa",
-            "lo/nhazlo por mí, vida "
+            "Ho te dedico m",
+            "mi mejores fregones./n"
         ],
         [
-            "mía./nSi no, "
+            "Soy mejor que los de ant",
+            "an compárenme critic",
+            "crit Hoy te dedico",
+            "mi mejores fregone",
+            "f Cantas si quier",
+            "q cantar, bailas si qui",
+            "qui bailar. Hoy te dedi",
+            "d mis mejores fregon",
+            "fr Hoy t",
+            "t",
+            "t ded",
+            "de mis m",
+            "m",
+            "m",
+            "m",
+            "m fre",
+            "frego/n",
+            ""
         ],
         [
-            "malo, y otra v",
-            "ez a la juder",
-            "a/n"
+            "Hoy te d",
+            "dedi mis mejores fr",
+            "fregon Hoy te ded",
+            "de mis mejores fregones. Hoy te dedico mis mejores fregones. No muera,",
+            "no me llores./n"
         ],
         [
-            "   Nunca más volví yo a ver/nvive ahora des"
+            "No me llores,",
+            "no me llores./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ierta./nMedio fino de lo"
+            "N/n"
         ],
         [
-            "cura/nel otro "
-        ],
-        [
-            "medio de p",
-            "ena y amargu",
-            "ra"
+            "N me",
+            "l",
+            "l",
+            "l",
+            "l",
+            "l no me llores."
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
@@ -163,8 +512,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

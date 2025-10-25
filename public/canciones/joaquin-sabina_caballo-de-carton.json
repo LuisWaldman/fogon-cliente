@@ -8,10 +8,24 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "D",
+                    "C",
                     "C"
                 ]
             },
@@ -19,193 +33,489 @@
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "F",
-                    "C",
+                    "D",
+                    "D",
                     "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F",
-                    "C",
-                    "D",
-                    "Em",
-                    "C",
-                    "G",
-                    "G4",
-                    "G"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Am",
                     "Am",
                     "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
                     "D",
-                    "Bm",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G",
+                    "D",
                     "C",
-                    "G"
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
             3,
-            0,
-            0,
-            0,
-            0,
-            1,
-            2,
-            3,
-            0,
-            0,
-            0,
-            0,
-            1,
-            2,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Cada mañana bos",
-            "tezas, amen",
-            "azas al despe",
-            "rtador/nY te levantas gru"
+            "mañana bos",
+            "boste a",
+            "amenaz al despe",
+            "despe",
+            "te levantas gru",
+            "gruñ cuando to",
+            "toda duerme el s",
+            "so/n"
         ],
         [
-            "ñendo cuando ",
-            "todavía duerme el sol",
-            "/nMínima tregua en el"
+            "Mínima tregua en el ba",
+            "b café con dos d",
+            "d azúcar crois",
+            "croi E/n"
         ],
         [
-            " bar, café con",
-            " dos de azúcar y",
-            " croissant/nEl metro huele a po"
+            "E metro huele apodr",
+            "apo carne de c",
+            "cañ soleda",
+            "s Tirso d/n"
         ],
         [
-            "drido, carne d",
-            "e cañón y soledad",
-            "/nTirso "
+            "Molina Sol,/n"
         ],
         [
-            "de Molina, S",
-            "ol, Gran Vía, T",
-            "ribunal/n¿dónd"
+            "Gran Vía Trib/n"
         ],
         [
-            "e queda tu of",
-            "icina para irte a bus",
-            "car?/nCuando "
+            "Trib/n"
         ],
         [
-            "la ciudad pint",
-            "e sus labios de",
-            " neón",
+            "Donde que",
+            "q tu oficina p",
+            "pa irte buscar./n",
+            ""
+        ],
+        [
+            "Cuando la c",
+            "ciud pinte s",
+            "s labios de n",
+            "neo",
+            "subirás e",
+            "e mi caballo d",
+            "d car",
+            "car/n"
+        ],
+        [
+            "Me podrán ro",
+            "ro tus días,",
+            "tus",
+            "noche no./n",
             "",
-            "/nSubi"
-        ],
-        [
-            "rás en mi ca",
-            "ballo de cart",
-            "ón/nMe po"
-        ],
-        [
-            "drán robar tus ",
-            "días",
-            "... t",
-            "us noches n",
-            "o/n"
-        ],
-        [],
-        [],
-        [
-            " buena estás cor",
-            "azón, cuando",
-            " pasas grita el ",
-            "albañil/nEl obseso del va"
-        ],
-        [
-            "gón se ",
-            "toca mientras piensa en ti",
-            "/nLa voz de tu jefe brama"
-        ],
-        [
-            " \"estas n",
-            "o son horas de l",
-            "legar\"/nMientras tus manos ar"
-        ],
-        [
-            "chivan tu m",
-            "ente empieza a navegar",
-            "/nTirso "
-        ],
-        [
-            "de Molina, S",
-            "ol, Gran Vía, T",
-            "ribunal/n¿dónd"
-        ],
-        [
-            "e queda tu of",
-            "icina para irte a bus",
-            "car?/nCuando "
-        ],
-        [
-            "la ciudad pint",
-            "e sus labios de",
-            " neón",
             "",
-            "/nSubi"
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "rás en mi ca",
-            "ballo de cart",
-            "ón/nMe po"
+            "Q/n"
         ],
         [
-            "drán robar tus ",
-            "días",
-            "... t",
-            "us noches ",
-            "no/n"
-        ],
-        [],
-        [],
-        [
-            "biguas horas que m",
-            "ezclan al borra",
-            "cho y al madru",
-            "gador/nDanza de trajes sin "
+            "Q buena está",
+            "e corazón,",
+            "cuand pasas grit",
+            "g el albañil./n"
         ],
         [
-            "cuerpo al obsc",
-            "eno ritmo del vagón",
-            "/nHace siglos que pensaron"
+            "El obsesor de",
+            "d vagón s",
+            "s toca mientras piensa e",
+            "e ti. L/n"
         ],
         [
-            ": \"las cosas mañana irán mejor\"/nEs pronto para el deseo y muy tarde para el amor"
+            "L voz de tu jefe",
+            "brama",
+            "estas no son hora",
+            "de llegar./n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Mientras tus manos a",
+            "archiva",
+            "tu mente empieza na",
+            "naveg Tir/n"
+        ],
+        [
+            "T de Molina S/n"
+        ],
+        [
+            "Sol Gran Vía/n"
+        ],
+        [
+            "Tribun/n"
+        ],
+        [
+            "Tr Dond/n"
+        ],
+        [
+            "D queda tu ofi",
+            "ofi para irte bus",
+            "bus/n"
+        ],
+        [
+            "Cuando",
+            "l ciudad pin",
+            "p sus labios",
+            "d neo",
+            "n su",
+            "subi en mi ca",
+            "caba de c",
+            "cart",
+            "c Me pod",
+            "po robar tus dí",
+            "dí",
+            "tus noches n",
+            "n/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Ambig/n"
+        ],
+        [
+            "Am horas que mezc",
+            "mez al borracho",
+            "al madrug",
+            "madr Danza d",
+            "d trajes sin cuerpo",
+            "los tenor r",
+            "rit del vagón./n"
+        ],
+        [
+            "Hace sigl",
+            "s que pensaron,",
+            "las cosas mañ",
+            "ma irán mejo",
+            "m Es pront",
+            "para el des",
+            "d muy tarde pa",
+            "p el amor. T/n"
+        ],
+        [
+            "Tir de Mo/n"
+        ],
+        [
+            "Mol Sol, Gran V/n"
+        ],
+        [
+            "Ví Tribu/n"
+        ],
+        [
+            "Tri/n"
+        ],
+        [
+            "Donde queda t",
+            "t oficina para i",
+            "ir buscar./n",
+            ""
+        ],
+        [
+            "Cuando la ciud",
+            "c pinte sus l",
+            "labi de n",
+            "neo",
+            "subirás en m",
+            "m caballo d",
+            "d cart",
+            "ca M/n"
+        ],
+        [
+            "M podrán robar t",
+            "t días,",
+            "tus noc",
+            "noc no.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
@@ -213,5 +523,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -8,241 +8,424 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "A",
                     "E",
                     "A",
                     "E",
-                    "A",
                     "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "G#M",
-                    "A",
-                    "E",
-                    "E",
                     "G#M",
-                    "A",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
                     "B7",
                     "E",
-                    "G#M",
                     "A",
-                    "E",
-                    "E",
-                    "G#M",
                     "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "B",
+                    "B",
                     "B",
                     "E",
-                    "A",
-                    "E",
-                    "A",
-                    "A",
                     "B",
-                    "A",
                     "B",
-                    "A",
-                    "B",
-                    "E",
-                    "A",
-                    "E",
-                    "A",
-                    "E",
-                    "E",
-                    "G#M",
-                    "A",
-                    "E",
-                    "G#M",
-                    "A",
-                    "B",
-                    "A",
-                    "C",
-                    "F",
-                    "Am",
-                    "A#",
-                    "F",
-                    "F",
-                    "Am",
-                    "A#",
-                    "C",
-                    "F",
-                    "Am",
-                    "A#",
-                    "F",
-                    "F",
-                    "Am",
-                    "A#",
-                    "C",
-                    "F",
-                    "A#",
-                    "F",
-                    "A#",
-                    "A#",
-                    "C",
-                    "A#",
-                    "C",
-                    "A#",
-                    "C",
-                    "F",
-                    "A#",
-                    "F",
-                    "A#",
-                    "F",
                     "B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G#M",
+                    "A",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "B",
+                    "A",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
-        [],
         [
-            "fombra Roja, Olvidar Es Divino/nY F"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uerte La Fuerza Del Destino,/nCuerda "
+            "G/n"
         ],
         [
-            "Floja, Al Moscardón/nY "
+            "Gr alfombra ro",
+            "ro olvida",
+            "o este vino fuerte",
+            "l fuerza del des",
+            "dest Puerta f",
+            "flo al m",
+            "moscard e",
+            "es que parece un cor",
+            "cora Pare/n"
         ],
         [
-            "Eso Que Parece Un Corazón./nPar"
+            "P que mi cámara len",
+            "l ya perdió la cu",
+            "cue no está contenta./n"
         ],
         [
-            "ece Que Mi Cámara ",
-            "Lenta Ya Perdió La Cu",
-            "enta,/nY No Está Con"
+            "Mi m",
+            "muñec budú se perd",
+            "p en la tormenta c",
+            "c mil alfileres c",
+            "clavad en mi co",
+            "cora en ve",
+            "ven Qu",
+            "nadie viene",
+            "comprarlo, mi c",
+            "corazó en ven",
+            "ve/n"
         ],
         [
-            "tenta,/nMi Mu"
+            "Dicen que se",
+            "revienta qu",
+            "q versión vio",
+            "viole",
+            "la que se cuent",
+            "por ahí./n",
+            "",
+            ""
         ],
         [
-            "ñeco Vudú, Se Pe",
-            "rdió En La Tormenta,/nCo"
+            "La que se cue",
+            "cu por ahí./n"
         ],
         [
-            "n Mil Alfileres ",
-            "Clavados/nE"
+            "Se dice de mí",
+            "qu nunca vuelvo siem",
+            "si me estoy yendo nin",
+            "ni lugar./n"
         ],
         [
-            "n Mi Corazón",
-            " En Venta,/nQ"
+            "Que tengo que dej",
+            "d de navegar, ya",
+            "m di cuenta",
+            "me lo dijo mi",
+            "corazón en vent",
+            "v Feli/n"
         ],
         [
-            "ue Nadie Viene ",
-            "A Comprarlo./nM"
+            "F navidad s",
+            "sangren",
+            "s desea m",
+            "m corazón en venta/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "i Corazón En ",
-            "Venta,/nD"
+            "Parece que",
+            "m cámara lenta y",
+            "y perdió la cuenta",
+            "no está contenta./n"
         ],
         [
-            "icen Que Se Rev",
-            "ienta./nQ"
+            "Mi muñeco b",
+            "bud se perdió en la",
+            "torment con mil a",
+            "alfiler clavad",
+            "c en mi corazó",
+            "en venta./n"
         ],
         [
-            "ué Versión Violenta,/nL"
+            "Que nadi",
+            "viene compr",
+            "compr mi coraz",
+            "c en venta./n"
         ],
         [
-            "a Que Se Cuenta Por Ahí",
-            "./nL"
+            "Di/n"
         ],
         [
-            "a Que Se Cuenta Por Ahí./nS"
+            "Di que se revie",
+            "rev que versió",
+            "violen",
+            "vi l",
+            "l que se cuenta por a",
+            "ahí/n",
+            ""
         ],
         [
-            "e Dice De Mí Qu",
-            "e Nunca Vuelvo/nY"
+            "L/n"
         ],
         [
-            " Siempre Me Esto",
-            "y Yendo A Ningún Lugar,/nQ"
+            "L que se cuenta por a",
+            "ah Se di",
+            "d de mí que nunca vue",
+            "vu siempre me estoy yen",
+            "y ningún lugar./n"
         ],
         [
-            "ue Tengo Que Dej",
-            "ar De Navegar, Ya Me D",
-            "i Cuenta,/nMe Lo Dijo Mi Coraz"
+            "Que tengo",
+            "qu parar de navega",
+            "n ya me di cue",
+            "cue me lo di",
+            "d mi corazón en v",
+            "vent/n"
         ],
         [
-            "n En Venta,/nFeliz Navidad S"
+            "Feliz navidad",
+            "sangren",
+            "sa des",
+            "d mi corazón en v",
+            "venta/n",
+            "",
+            "",
+            ""
         ],
         [
-            "angrienta/nTe"
+            "Feli/n"
         ],
         [
-            " Desea Mi Corazón En Ven",
-            "ta./n"
-        ],
-        [],
-        [],
-        [
-            "ece Que Mi Cámara ",
-            "Lenta Ya Perdió La C",
-            "uenta,/nY No Está Con"
+            "F navidad sang",
+            "sangr desea mi corazón e",
+            "e venta/n"
         ],
         [
-            "tenta,/nMi Mu"
-        ],
-        [
-            "ñeco Vudú, Se Pe",
-            "rdió En La Tormenta,/nCo"
-        ],
-        [
-            "n Mil Alfileres C",
-            "lavados/nE"
-        ],
-        [
-            "n Mi Corazón",
-            " En Venta,/nQ"
-        ],
-        [
-            "ue Nadie Viene A",
-            " Comprarlo./nM"
-        ],
-        [
-            "i Corazón En ",
-            "Venta,/nD"
-        ],
-        [
-            "icen Que Se Revie",
-            "nta./nQ"
-        ],
-        [
-            "ué Versión Violenta,/nL"
-        ],
-        [
-            "a Que Se Cuenta Por Ahí",
-            "./nL"
-        ],
-        [
-            "a Que Se Cuenta Por Ahí./nS"
-        ],
-        [
-            "e Dice De Mí Que",
-            " Nunca Vuelvo/nY"
-        ],
-        [
-            " Siempre Me Estoy",
-            " Yendo A Ningún Lugar,/nQ"
-        ],
-        [
-            "ue Tengo Dejar",
-            " De Navegar, Ya Me Di ",
-            "Cuenta,/nMe Lo Dijo Mi Coraz"
-        ],
-        [
-            "n En Venta,/nFeliz Navidad S"
-        ],
-        [
-            "angrienta/nTe"
-        ],
-        [
-            " Desea Mi Corazón En Venta./n"
-        ],
-        []
+            "Feliz navi",
+            "na sangrenta,",
+            "de",
+            "de mi corazón en v",
+            "ve",
+            "v",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
@@ -250,8 +433,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

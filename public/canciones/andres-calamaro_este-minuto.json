@@ -8,63 +8,212 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "A",
-                    "E",
-                    "B",
-                    "E",
-                    "A",
-                    "F#m",
-                    "A",
-                    "B",
                     "C#m",
-                    "B",
-                    "A",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#m",
                     "E",
                     "C#m",
-                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "A",
-                    "F#m",
-                    "E",
-                    "A",
-                    "F#m",
-                    "B",
-                    "E",
-                    "A",
-                    "E",
-                    "B",
-                    "E",
-                    "A",
-                    "E",
-                    "A",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "A",
                     "B",
+                    "A",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "F#m",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C#m",
+                    "B",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C#m",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
@@ -77,77 +226,125 @@
             "",
             "",
             "",
-            "/nDe re"
-        ],
-        [
-            "ír, de vol",
-            "ar tantas ve",
-            "ces me olvido",
-            "./n"
-        ],
-        [
-            "   Del sol caye",
-            "ndo en el mar",
-            ".",
-            "/nDe gri"
-        ],
-        [
-            "tar, de llora",
-            "r tantas vec",
-            "es me olvido",
             "/n"
         ],
         [
-            " Sigo pensa",
-            "ndo en qué vendr",
-            "./nP"
+            "De re",
+            "re de volar, tant",
+            "t veces me olvido. D/n"
         ],
         [
-            "orque ya no te",
-            "ngo nada que ",
-            "jugar./n"
+            "De sol cayendo en el m",
+            "ma de gri",
+            "gri de llorar, tanta",
+            "veces me olvido/n"
         ],
         [
-            "Este es el tiempo y e",
-            "l lugar/nN"
+            "Sigo pensando en que v",
+            "vendr Me/n"
         ],
         [
-            "ada puede ser mejo",
-            "r/nCans"
+            "Me no pensar en e",
+            "paso del tiempo,",
+            "una sola duda me p",
+            "pued matar. N/n"
         ],
         [
-            "ado de vivir, quema",
-            "ndo el tiempo/nAh"
+            "N pido consejos, qu",
+            "qui un remedio,",
+            "porque ya no tengo nada q",
+            "q curar./n"
         ],
         [
-            "ora que el sueño se acab",
-            "o/nDe re"
+            "Este es el tiempo e",
+            "e el lugar,",
+            "nada puede ser mej",
+            "me Cans/n"
         ],
         [
-            "ír, de vol",
-            "ar tantas ve",
-            "ces me olvido",
-            "./n"
+            "Ca de vivir quema",
+            "qu el tiempo,",
+            "ahora que el sueño se a",
+            "acabó",
+            "¿Dónde f",
+            "f tu ideal de u",
+            "u mundo perfecto?",
+            "¿De dónde sos? ¿A",
+            "dónd vas? des",
+            "des que vendrá, no q",
+            "quie saberlo,",
+            "este es el momento el l",
+            "luga/n"
         ],
         [
-            "   Del sol caye",
-            "ndo en el mar",
-            ".",
-            "/nDe gri"
+            "Aferrado cosas que n",
+            "n tienen sentido,",
+            "me puedo equivoc",
+            "eq L/n"
         ],
         [
-            "tar, de llora",
-            "r tantas vec",
-            "es me olvido",
-            "/n"
+            "L prosperidad en un e",
+            "enva vacío. N/n"
         ],
         [
-            " Sigo pensa",
-            "ndo en qué vendr",
+            "N olvides de dónde sos",
+            "dónde vas./n"
+        ],
+        [
+            "Este es el tiempo es e",
+            "e lugar,",
+            "nada puede ser mej",
+            "me Ya no v",
+            "v vivir quema",
+            "qu el tiempo, a",
+            "ahor que el sueño se a",
+            "acab/n",
+            ""
+        ],
+        [
+            "Aho/n"
+        ],
+        [
+            "A que el sueño se a",
+            "acab/n",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Est/n"
+        ],
+        [
+            "E es el tiempo e",
+            "e el lugar, n",
+            "na puede ser mejor./n"
+        ],
+        [
+            "Ya no v",
+            "v vivir quema",
+            "qu el tiempo, aho",
+            "a que el sueño se a",
+            "acab/n"
+        ],
+        [
+            "D/n"
+        ],
+        [
+            "D reír, de vol",
+            "vo tantas veces me o",
+            "olvid Del sol cayen",
+            "c en el mar./n"
+        ],
+        [
+            "De gritar, de llora",
+            "l tantas veces me o",
+            "olvid Sigo pensan",
+            "p en tu venganza.",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
@@ -157,5 +354,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

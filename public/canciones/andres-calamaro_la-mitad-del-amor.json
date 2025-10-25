@@ -8,155 +8,495 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C",
                     "Am",
                     "C",
                     "Am",
-                    "C",
+                    "Am",
                     "Am",
                     "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "Am",
                     "C",
-                    "Am",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "F",
                     "G",
                     "Am",
-                    "F",
-                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
                     "Am",
                     "C",
-                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F",
                     "Em",
-                    "F",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
                     "G",
                     "C",
+                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
                     "C",
                     "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
                     "G",
                     "Am",
-                    "Em",
-                    "F",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
                     "G",
                     "C",
+                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
                     "D",
                     "A",
                     "Bm",
-                    "F#m",
-                    "G",
-                    "A",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
                     "D",
                     "A",
-                    "D",
+                    "A",
                     "A",
                     "Bm",
-                    "F#m",
-                    "G",
-                    "A",
-                    "D",
-                    "B",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "B",
-                    "E"
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
         ]
     },
     "letras": [
-        [],
         [
-            "mar unos ap",
-            "untes, voy a toma",
-            "r para olvidar",
-            ",/nvoy a to"
-        ],
-        [
-            "mar unas med",
-            "idas urge",
-            "ntes urge",
-            "ntes,/nvoy a to"
-        ],
-        [
-            "marme hasta el p",
-            "elo, mi pelo por fav",
-            "or/nvoy a to"
-        ],
-        [
-            "marme hasta los t",
-            "renes/nque no van a v"
-        ],
-        [
-            "enir./n"
-        ],
-        [
-            "Parte de m",
-            "i, no cambi",
-            "ó y a la ve",
-            "z,/nya no "
-        ],
-        [
-            "soy el viejo Andr",
-            "és, que n",
-            "o dormía jam",
-            "s,/n"
-        ],
-        [
-            "que subid",
-            "ón , que mom",
-            "ento idea",
-            "l,/nencon"
-        ],
-        [
-            "tré la mi",
-            "tad del am",
-            "or./n"
-        ],
-        [
-            "Una parte de m",
-            "i, no cambi",
-            "ó y a la ve",
-            "z,/nya no "
-        ],
-        [
-            "soy el viejo Andr",
-            "és, que n",
-            "o dormía jam",
-            "s,/n"
-        ],
-        [
-            "Dicen que para r",
-            "eír, no hace f",
-            "alta mirar atr",
-            "ás,/nY esta "
-        ],
-        [
-            "vez para m",
-            "i, tienen raz",
-            "n.",
+            "",
+            "",
             "/n"
         ],
         [
-            "Que subid",
-            "ón , que mom",
-            "ento ideal",
-            ",/nencont"
+            "Voy",
+            "tomar uno",
+            "apuntes, voy",
+            "tomar para o",
+            "olvida Voy",
+            "tomar un",
+            "u medidas ur",
+            "urgent",
+            "urgentes. V/n"
         ],
         [
-            "ré la mi",
-            "tad del amo",
-            "r."
+            "Vo tomarme h",
+            "has el pelo, mi pe",
+            "p por favor co",
+            "c mucho hielo. V/n"
+        ],
+        [
+            "Vo tomarme ha",
+            "ha los trenes que n",
+            "n van veni",
+            "v/n"
+        ],
+        [
+            "Voy tomar p",
+            "pa no llor",
+            "ll lágrim",
+            "l de cocodrilo./n"
+        ],
+        [
+            "Voy tom",
+            "tom mi tiempo",
+            "par vivi",
+            "tranquilo/n"
+        ],
+        [
+            "Voy tom",
+            "tom hasta el pelo,",
+            "mi pelo por favo",
+            "f con mucho hie",
+            "hi Voy toma",
+            "to hasta los tre",
+            "tr que no van v",
+            "veni/n",
+            ""
+        ],
+        [
+            "Parte de m",
+            "m lo ca",
+            "cam la v",
+            "ve ya no",
+            "so el viejo And/n"
+        ],
+        [
+            "An que n",
+            "n dormía j",
+            "jamá Qu/n"
+        ],
+        [
+            "Q subi",
+            "sub qué m",
+            "momen i",
+            "ide enc",
+            "enco la m",
+            "mit del",
+            "amor/n"
+        ],
+        [
+            "Voy",
+            "tomarme e",
+            "e olivo, voy",
+            "tomar que t",
+            "ten sed. Vo/n"
+        ],
+        [
+            "V tomar agua",
+            "bendita vo",
+            "v beber pa",
+            "p creer. Vo/n"
+        ],
+        [
+            "V tomarme h",
+            "has el pelo, mi pel",
+            "p por favor co",
+            "c mucho hielo./n"
+        ],
+        [
+            "Voy tomarme h",
+            "has los trenes que n",
+            "n van ve",
+            "ven/n",
+            ""
+        ],
+        [
+            "Parte de m",
+            "lo cambi",
+            "la ve",
+            "ya no soy e",
+            "e viejo And/n"
+        ],
+        [
+            "An que no d",
+            "dorm jam",
+            "ja Qu/n"
+        ],
+        [
+            "Q subidó",
+            "s qué mome",
+            "mo idea",
+            "encont",
+            "e la mit",
+            "m del am",
+            "am/n"
+        ],
+        [
+            "U/n"
+        ],
+        [
+            "U parte de m",
+            "m lo cam",
+            "ca la v",
+            "ve ya no s",
+            "so el viejo And/n"
+        ],
+        [
+            "An que n",
+            "n dormía j",
+            "jamá D/n"
+        ],
+        [
+            "Dic que para r",
+            "re hace",
+            "falt mirar a",
+            "atr esta",
+            "ve para m",
+            "m tiene ra",
+            "raz/n",
+            ""
+        ],
+        [
+            "Qué su",
+            "subid qu",
+            "q momento i",
+            "idea en",
+            "encon l",
+            "mitad de",
+            "d amor./n"
+        ],
+        [
+            "D/n"
+        ],
+        [
+            "Dice que par",
+            "p reír ha",
+            "h falta mi",
+            "mi atrás",
+            "esta vez p",
+            "par mí tie",
+            "t razón./n",
+            ""
+        ],
+        [
+            "Qué",
+            "subidón",
+            "qué momen",
+            "m ideal",
+            "encontr l",
+            "l mitad",
+            "del amor./n",
+            ""
+        ],
+        [
+            "Dice/n"
+        ],
+        [
+            "D que para reí",
+            "hace falt",
+            "f mirar atrá",
+            "a esta v",
+            "v para mí..",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 143,
     "medias": [
         {
             "tipo": "Youtube",
@@ -164,8 +504,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }
