@@ -23,7 +23,7 @@ onMounted(() => {
     // If we're on any route other than root and there's no cancion parameter,
     // redirect to the root
     //window.location.href = '/'
-    //return
+    //      return
   }
 
   const router = useRouter()
@@ -34,7 +34,6 @@ const refEditandoVista = ref(false)
 function cerrareditarPantalla() {
   refEditandoVista.value = false
 }
-
 
 const router = useRouter()
 function clickEditar() {
@@ -56,7 +55,10 @@ function abrirVistaEdicion() {
 
 <template>
   <div id="contenedor-musical" class="pantalla">
-    <Cabecera @abrirVistaEdicion="abrirVistaEdicion" @editarCancion="clickEditar" />
+    <Cabecera
+      @abrirVistaEdicion="abrirVistaEdicion"
+      @editarCancion="clickEditar"
+    />
     <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
       <img
         src="/img/iconogrande.png"

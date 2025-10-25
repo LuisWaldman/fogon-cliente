@@ -264,7 +264,6 @@ function AgregarLista(index: number, listaseleccionada: string) {
             Inicio
           </a>
         </div>
-        
 
         <div @click="clickOpcion('listas')" class="config-menu-item">
           <a

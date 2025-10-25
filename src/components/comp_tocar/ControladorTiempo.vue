@@ -35,10 +35,8 @@ function play() {
 }
 
 function next() {
-  
   appStore.aplicacion.next()
 }
-
 
 function pause() {
   appStore.aplicacion.pause()
@@ -64,15 +62,13 @@ function updateCompas() {
       >
         ▶️
       </button>
-      
+
       <button
         class="boton_controller"
         @click="pause"
         v-if="appStore.estadoReproduccion !== 'pausado'"
       >
         ⏸️
-
-
       </button>
       <button
         class="boton_controller"

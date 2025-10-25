@@ -191,13 +191,7 @@ function clickEditar() {
           </li>
 
           <li v-if="$route.path === '/tocar'">
-            
-            <a
-              class="dropdown-item"
-              href="#"
-              @click="clickEditar"
-              
-            >
+            <a class="dropdown-item" href="#" @click="clickEditar">
               ✍️ Editar
             </a>
           </li>

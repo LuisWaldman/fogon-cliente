@@ -135,7 +135,10 @@ function Borrar(index: number) {
                   <strong>Calidad:</strong
                   >{{ vectorCalidades[cancion.calidad] }}
                 </div>
-                <div class="divItemDetalle" v-if="cancion.acordes.length > 0">
+                <div
+                  class="divItemDetalle"
+                  v-if="cancion.acordes && cancion.acordes.length > 0"
+                >
                   <strong>Acordes:</strong>{{ cancion.acordes }}
                 </div>
                 <div class="divItemDetalle">

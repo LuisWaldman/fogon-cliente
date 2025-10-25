@@ -23,11 +23,20 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { VistaTocar } from '../modelo/configuracion'
 
 const pantalla = new Pantalla()
+
+const appStore = useAppStore()
+
+const urlParams = new URLSearchParams(window.location.search)
+const sesionurl = urlParams.get('cancion')
+if (sesionurl) {
+  const origen = OrigenCancion.GetFromQuery(sesionurl)
+  appStore.aplicacion.ClickTocar(origen)
+}
+
 onMounted(() => {
   pantalla.setearEstilos()
 })
 
-const appStore = useAppStore()
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
 onMounted(() => {
@@ -117,7 +126,6 @@ const refSincronizandoMedios = ref(false)
 function clickCerrarMedios() {
   refSincronizandoMedios.value = false
 }
-
 
 function cambioestado(estado: number) {
   console.log('Cambio de estado en tocar.vue', estado)
@@ -230,7 +238,7 @@ function cambioestado(estado: number) {
     </div>
 
     <div class="controladoresTiempo">
-      <ControladorTiempo > </ControladorTiempo>
+      <ControladorTiempo> </ControladorTiempo>
 
       <Metronomo ref="metronomeRef"></Metronomo>
     </div>
@@ -238,9 +246,6 @@ function cambioestado(estado: number) {
 </template>
 
 <style scoped>
-.tocar-fluid {
-}
-
 .controladoresTiempo {
   width: 100%;
   position: absolute;
