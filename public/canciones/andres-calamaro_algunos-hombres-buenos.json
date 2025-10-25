@@ -8,50 +8,370 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "A",
+                    "D",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
                     "F#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Bm",
-                    "A",
+                    "F#",
+                    "G",
                     "G",
                     "D",
-                    "Em7",
+                    "D",
                     "E7",
-                    "A",
-                    "A7"
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "E7",
                     "B",
-                    "G",
-                    "A",
-                    "D",
-                    "F#",
-                    "Bm",
-                    "Bm/A",
-                    "A"
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Em7",
                     "G",
+                    "G",
+                    "D",
+                    "D",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "G",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "Bm",
+                    "Bm/A",
+                    "Bm/A",
+                    "A",
+                    "Em7 D",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "D",
                     "A",
                     "Em7",
-                    "G",
+                    "Em7",
+                    "Em7",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "Bm/A",
+                    "A",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em7",
+                    "D",
                     "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "F#",
+                    "Bm/A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "Bm/A",
+                    "A",
+                    "Em7 D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Em7",
+                    "G",
+                    "A",
+                    "A",
+                    "Em7 D",
+                    "Em7 D"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Em7"
                 ]
             }
         ],
@@ -59,57 +379,320 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
         ]
     },
     "letras": [
         [
-            "Hay algunos hombres malos",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "hay algunos hombres b",
-            "uenos",
-            "/n"
+            "H",
+            "ay alg",
+            "unos hombres ma",
+            "los, h",
+            "a",
+            "y alg",
+            "unos hombres b",
+            "uenos./n",
+            ""
         ],
         [
-            "hay algunas m",
-            "iradas que no mir",
-            "an nad",
-            "a, que olvid",
-            "aremos",
-            "/n"
+            "Ha",
+            "y algunas m",
+            "iradas",
+            "que no miran n",
+            "ada,",
+            "que olvi",
+            "daremos./n"
         ],
         [
-            "Hay algunos que se duermen /nAl"
+            "H",
+            "ay alg",
+            "unos que se d",
+            "uer",
+            "men",
+            "en sus v",
+            "iejos la",
+            "ureles./n",
+            ""
         ],
         [
-            "gunos hombres ",
-            "apenas si",
-            " nacieron /nlos"
+            "Hay a",
+            "lgunas muj",
+            "eres q",
+            "ue los q",
+            "uieren p",
+            "ara",
+            "siempre./n"
         ],
         [
-            " hombres no se hicieron para",
-            " ser pr",
-            "isioneros /nPorque a"
+            "E",
+            "n el",
+            "fondo de mi c",
+            "asa",
+            "te",
+            "ngo u",
+            "n árbol de la v",
+            "ida",
+            "./n"
         ],
         [
-            "lgunos hombres bu",
-            "enos hay que",
-            " lo sigue",
-            "n siendo/nalg"
+            "Reg",
+            "aré con s",
+            "aliva l",
+            "as r",
+            "aíce",
+            "s esc",
+            "ondi",
+            "das. Alg",
+            "unos hombres a",
+            "penas si na",
+            "cieron./n",
+            ""
         ],
         [
-            "unos hombres ",
-            "son buenos por",
-            "que tienen",
-            " miedo/n"
+            "Los hombres no se h",
+            "icieron para s",
+            "er pris",
+            "ioneros. Porque",
+            "algunos hombre",
+            "s buenos hay q",
+            "ue los siguen s",
+            "iendo./n"
         ],
         [
-            "Hay algunos hombres buenos hay algunos hombres menos "
+            "Algunos hombr",
+            "es son buenos po",
+            "rque tienen mi",
+            "edo./n"
+        ],
+        [
+            "Hay",
+            "algunos hombres",
+            "lej",
+            "os",
+            "",
+            "una pata de c",
+            "onejo./n",
+            ""
+        ],
+        [
+            "Sie",
+            "te años de",
+            "espejos,",
+            "de ped",
+            "azos rot",
+            "os de los",
+            "corazones./n",
+            ""
+        ],
+        [
+            "Hay",
+            "algunos que",
+            "despi",
+            "ertan",
+            "s",
+            "us recuerdos",
+            "dormidos./n",
+            ""
+        ],
+        [
+            "H",
+            "ay algunos",
+            "amigos q",
+            "ue m",
+            "e esp",
+            "eran por",
+            "perdido",
+            "s. E",
+            "n e",
+            "l fondo estam",
+            "os so",
+            "los,",
+            "en",
+            "un desierto d",
+            "e gente",
+            "./n"
+        ],
+        [
+            "Pero h",
+            "ay que ser muy va",
+            "liente,",
+            "apretar l",
+            "os dientes",
+            "la sol",
+            "edad./n"
+        ],
+        [
+            "Al",
+            "gunos hombres",
+            "son buenos ca",
+            "rpinte",
+            "ros. L",
+            "os hombres n",
+            "o nacieron par",
+            "a ser pr",
+            "isioneros. Porq",
+            "ue algunos hom",
+            "bres buenos h",
+            "ay que los siguen",
+            "siendo./n"
+        ],
+        [
+            "Algunos ho",
+            "mbres son buenos p",
+            "orque tienen m",
+            "iedo./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Ha",
+            "y algunos hombres",
+            "buenos./n",
+            ""
+        ],
+        [
+            "A",
+            "lgunos ho",
+            "mbres menos",
+            "./n",
+            ""
+        ],
+        [
+            "Hay algun",
+            "as palabras q",
+            "ue nunc",
+            "a diremos,",
+            "que olvi",
+            "daremos./n",
+            ""
+        ],
+        [
+            "Tres",
+            "monedas en l",
+            "a fu",
+            "en",
+            "te,",
+            "mucha gente indi",
+            "ferente./n",
+            ""
+        ],
+        [
+            "M",
+            "ucha uña much",
+            "o dient",
+            "e,",
+            "permane",
+            "nte, pa",
+            "ra siempre./n",
+            ""
+        ],
+        [
+            "Y",
+            "o ni tiene una p",
+            "istol",
+            "a,",
+            "y",
+            "a dejó la Coc",
+            "a -Cola./n",
+            ""
+        ],
+        [
+            "H",
+            "ay algunos hombres",
+            "buenos",
+            "p",
+            "ocas",
+            "mujeres si",
+            "rven solas./n"
+        ],
+        [
+            "A",
+            "lgunos hombr",
+            "es son buenos ca",
+            "rpinte",
+            "ros./n"
+        ],
+        [
+            "Los hombres n",
+            "o nacieron p",
+            "ara ser pr",
+            "isioneros. Porque",
+            "algunos ho",
+            "mbres buenos ha",
+            "y que los sigu",
+            "en siendo./n"
+        ],
+        [
+            "Algunos ho",
+            "mbres son buenos p",
+            "orque tiene",
+            "n miedo. A",
+            "lgunos hom",
+            "bres buenos ha",
+            "y que los siguen",
+            "siendo./n"
+        ],
+        [
+            "Algunos hombr",
+            "es son buenos por",
+            "que tienen m",
+            "iedo./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Gracias por ver el vídeo."
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
@@ -117,8 +700,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

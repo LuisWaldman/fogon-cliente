@@ -8,29 +8,82 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
                     "G",
                     "D",
                     "G"
                 ]
             },
             {
-                "nombre": "parte2",
+                "nombre": "parte5",
                 "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "C",
+                    "D",
                     "D"
-                ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "C"
-                ]
-            },
-            {
-                "nombre": "parte4",
-                "acordes": [
-                    "G"
                 ]
             }
         ],
@@ -38,104 +91,76 @@
             0,
             1,
             2,
-            1,
             3,
-            2,
-            1,
-            0,
-            1,
-            3,
-            2,
-            1,
-            3,
-            2,
-            1,
-            0,
-            1,
-            3,
-            2,
-            1,
-            3,
-            2,
-            0,
-            2,
-            1,
-            3,
-            2,
-            1,
-            3,
-            3
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "nemos nuestras cicatr",
-            "ices/nnuest"
+            "/n"
         ],
         [
-            "ras propias marcar por ba",
-            "tir/nes una f"
+            "Todos",
+            "tenemos nuestras c",
+            "icatrices./n"
         ],
         [
-            "orma de vivi",
-            "r, como cualq",
-            "uier otra/ncuan"
+            "Nuestras propi",
+            "as marcas por bat",
+            "ir. Es u",
+            "na forma de vivir",
+            "como cualquier otra",
+            "cuando ya hay algo",
+            "que mirar",
+            "atrás. So",
+            "mos feos pero t",
+            "enemos nuestras canci",
+            "ones que n",
+            "os ayudan un poco ayud",
+            "an los demás.",
+            "si después de",
+            "cantar ya no sé qué",
+            "hacer se",
+            "rá por pu",
+            "ra predic",
+            "ación. T",
+            "odos tenemos nuestro l",
+            "ado oscur",
+            "o. No hay cosas q",
+            "ue jamás vamos c",
+            "ontar./n"
         ],
         [
-            "do ya hay algo que mir",
-            "ar atrá",
-            "s.../nSomos f"
+            "Espero que si a",
+            "lguna vez vuelvo empe",
+            "zar un poco tard",
+            "e. Que sea co",
+            "n buen bien.",
+            "",
+            "si el destino quiere que l",
+            "lega viejo",
+            ". Voy contar",
+            "la historia de todos nosotros./n"
         ],
         [
-            "eos pero tenemos nuestras canci",
-            "ones,/nque nos ay"
+            "Somos",
+            "feos pero tenemos nue",
+            "stras canciones que nos ay",
+            "udan un poco./n"
         ],
         [
-            "udan y ayudan un poco a los dem",
-            "ás,/ny si des"
-        ],
-        [
-            "pués de can",
-            "tar  ya no se que hace",
-            "r",
-            "/nserá por "
-        ],
-        [
-            "pura dedicaci",
-            "n./n"
-        ],
-        [
-            " Y si el destino quiere que llegue a v",
-            "iejo,/n"
-        ],
-        [
-            " voy contar la historia de todos noso",
-            "tros,/nsomos f"
-        ],
-        [
-            "eos pero tene",
-            "mos nuestras cancio",
-            "nes,/nque nos a"
-        ],
-        [
-            "yudan un poco o",
-            " ay",
-            "udan los demás.",
-            "/nY si despu"
-        ],
-        [
-            "és de can",
-            "tar ya no se que hace",
-            "r,",
-            "/nserá por p"
-        ],
-        [
-            "ura dedicaci",
-            "n, a la canci",
+            "Ayudan los de",
+            "más. s",
+            "i después de cantar ya n",
+            "o sé qué hac",
+            "er se",
+            "rá por pura de",
+            "dicación la canci",
             "ón."
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
@@ -145,5 +170,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

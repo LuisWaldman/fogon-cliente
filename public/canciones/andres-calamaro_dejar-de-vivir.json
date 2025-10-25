@@ -8,34 +8,51 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "G",
                     "G",
                     "D",
                     "C",
                     "G",
-                    "C"
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "G",
+                    "C",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "C",
                     "D",
-                    "G",
                     "D",
                     "G",
                     "C",
-                    "G"
+                    "C",
+                    "G",
+                    "G",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "C",
+                    "C",
                     "G",
-                    "D",
+                    "G",
                     "G"
                 ]
             }
@@ -44,53 +61,50 @@
             0,
             1,
             2,
-            2
+            3
         ]
     },
     "letras": [
         [
-            "eron y no lo escuch",
-            "é, /ny ah"
+            "M",
+            "e lo dijeron n",
+            "o lo escuchen.",
+            "ahora que s",
+            "olo que estoy,",
+            "nadie viene para h",
+            "ablar conmigo. N",
+            "o me queda un am",
+            "igo ya más./n"
         ],
         [
-            "ora que solo que esto",
-            "y /nnadie v"
+            "Creo que estoy paga",
+            "ndo factura d",
+            "e tanta polemia",
+            "aventura. L",
+            "a cosa se va p",
+            "oner dura, si no es q",
+            "ue se puso ya dur",
+            "a de más./n"
         ],
         [
-            "iene para hablar conm",
-            "igo ",
-            "/nno me qu"
+            "Falta que me p",
+            "egue un tiro",
+            "que salte las vía",
+            "s del tren. L",
+            "legué al final del",
+            "camino, nadie l",
+            "e importa un comino d",
+            "e mil./n"
         ],
         [
-            "eda un amigo ya m",
-            "ás. /n"
-        ],
-        [
-            "Falta que me pegue un t",
-            "iro /no que s"
-        ],
-        [
-            "alte a las vías del tr",
-            "en. /nLleg"
-        ],
-        [
-            "ué al final del cam",
-            "ino, /na nadie le imp"
-        ],
-        [
-            "orta un comino de m",
-            "í. /nLleg"
-        ],
-        [
-            "ué hasta donde se l",
-            "lega, /ntan sólo me "
-        ],
-        [
-            "queda dejar de viv",
-            "ir."
+            "Llegué hasta donde s",
+            "e llega, tan solo m",
+            "e queda dejar de",
+            "vivir.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 89,
     "medias": [
         {
             "tipo": "Youtube",
@@ -100,5 +114,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

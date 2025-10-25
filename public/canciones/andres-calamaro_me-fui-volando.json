@@ -8,42 +8,120 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "D",
-                    "Bm",
-                    "Bm7"
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "G",
-                    "A",
-                    "A7"
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm7",
+                    "Bm7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3
         ]
     },
     "letras": [
         [
-            "Pronto cuando no esté en este",
-            " lugar/ndonde "
+            "este lugar,",
+            "donde nací,",
+            "donde no aprendí",
+            "vivir, t",
+            "e vas acordar de m",
+            "í./n"
         ],
         [
-            "nací, donde no aprendí ",
-            "a vivir,/nte vas a acordar de"
+            "Perdón,",
+            "si alguna vez n",
+            "o me di cuenta n",
+            "o estabas conten",
+            "ta, tampoco estuve",
+            "ahí,",
+            "no te v",
+            "i otra vez./n"
         ],
         [
-            " mí.",
+            "F",
+            "ui ciego,",
+            "ciego, n",
+            "o supe habar, sordom",
+            "o de sin aliento",
+            "en el viento m",
+            "e perdí./n"
+        ],
+        [
+            "Me v",
+            "olé, me fui v",
+            "olando,",
+            "",
+            "vol",
+            "ando",
+            "donde nunca s",
+            "e vuelve sin vo",
+            "lar, pero no sé",
+            "volar,",
+            "ni sé maneja",
+            "r, ni s",
+            "é controlar.",
+            "",
+            "",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
@@ -53,5 +131,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

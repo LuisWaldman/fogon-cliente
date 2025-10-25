@@ -8,48 +8,242 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "G#m",
-                    "C#m"
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B",
-                    "A",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
                     "G#m",
                     "F#m",
-                    "G#m",
-                    "A",
                     "F#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "G#m",
                     "E",
-                    "C#m",
-                    "A",
-                    "F#m",
-                    "A",
-                    "F#m",
-                    "B"
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "E",
+                    "E",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B",
+                    "E",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "G",
-                    "D",
-                    "C",
-                    "D",
-                    "Em",
-                    "D",
                     "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             }
@@ -58,53 +252,216 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "demasiados meses que",
-            " mis payasadas no provocan ",
-            "tus /n         g"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "anas de reir",
-            "    no",
-            " es que ya no me intere",
-            "sas/n         "
+            "La canción es una canción en español de rock a",
+            "rgentino./n"
         ],
         [
-            "pero el tiempo de los besos y el su",
-            "dor /n         es"
+            "No es qu",
+            "e ya no me intere",
+            "ses, pero el",
+            "tiempo de los b",
+            "esos el sud",
+            "or es l",
+            "a hora de dormir./n",
+            ""
         ],
         [
-            " la hora de dorm",
-            "ir /nCAMBIO: un dios "
+            "Duele",
+            "verte removi",
+            "endo la c",
+            "ajita de cen",
+            "izas que el place",
+            "r, t",
+            "raste si dejó",
+            "./n"
         ],
         [
-            "triste y envidioso nos cas",
-            "tigo                 /n        por tr"
+            "Mal",
+            "tarde estoy cumpl",
+            "iendo la pal",
+            "abra que te d",
+            "i cuando ju",
+            "ré escri",
+            "birte una canción./n",
+            ""
         ],
         [
-            "epar juntos al arbol/n        y a"
+            "Un dios t",
+            "riste envidi",
+            "oso nos cast",
+            "igó p",
+            "or tre",
+            "par juntos al a",
+            "rbol atra",
+            "carnos con la fl",
+            "or de la pas",
+            "ión p",
+            "or pr",
+            "obar aq",
+            "uel sabo",
+            "r./n",
+            ""
         ],
         [
-            "tracarnos con la flor de la p",
-            "asion /n        por p"
+            "El agua paga el f",
+            "uego al ardor los añ",
+            "os./n",
+            ""
         ],
         [
-            "robar aquel sab",
-            "or/nESTRIB:  el "
+            "Amor se llama el j",
+            "uego en el que un par de cie",
+            "gos juegan hacerse",
+            "daño",
+            "",
+            "cada vez pe",
+            "or cada vez má",
+            "s rotos.",
+            "",
+            "cada vez más t",
+            "ú cada vez más y",
+            "o sin rastro de no",
+            "sotros./n"
         ],
         [
-            "agua apaga el fueg",
-            "o    y al ardor los años/n         juegan a hacerse daño y cada vez peor"
+            "Li",
+            "nocentes ni culpabl",
+            "es, coraz",
+            "ones que desbr",
+            "oza el temporal,",
+            "ca",
+            "rnes de cañón./n",
+            ""
         ],
-        [],
-        []
+        [
+            "No soy",
+            "yo ni tú ni nadie",
+            ", son los",
+            "dedos misera",
+            "bles que me da,",
+            "cu",
+            "erda mi reloj",
+            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "no hay l",
+            "ágrimas que valga",
+            "para volver",
+            "",
+            "meter",
+            "nos en el coc",
+            "he donde aqu",
+            "ella noche en p",
+            "leno carnav",
+            "al t",
+            "e emp",
+            "ece",
+            "desnudar./n",
+            "",
+            ""
+        ],
+        [
+            "El agua paga el fue",
+            "go al ardor los año",
+            "s./n",
+            ""
+        ],
+        [
+            "Amor se llama el jue",
+            "go en el que un par de cieg",
+            "os juegan hacerse d",
+            "año",
+            "ca",
+            "da vez peo",
+            "r cada vez más",
+            "rotos.",
+            "",
+            "cada vez más t",
+            "ú cada vez más y",
+            "o sin rastro de noso",
+            "tros./n",
+            ""
+        ],
+        [
+            "El agua paga el fue",
+            "go al ardor los añ",
+            "os./n",
+            ""
+        ],
+        [
+            "Amor se llama el juego",
+            "en el que un par de cieg",
+            "os juegan hacerse da",
+            "ño",
+            "",
+            "cada vez peo",
+            "r cada vez más",
+            "rotos.",
+            "",
+            "cada vez más t",
+            "ú cada vez más y",
+            "o sin rastro de nosotr",
+            "os./n",
+            ""
+        ],
+        [
+            "El agua paga el fueg",
+            "o al ardor los año",
+            "s./n",
+            ""
+        ],
+        [
+            "Amor se llama el juego",
+            "en el que un par de cieg",
+            "os juegan hacerse d",
+            "año",
+            "",
+            "cada vez peo",
+            "r cada vez más",
+            "rotos.",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
@@ -112,5 +469,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

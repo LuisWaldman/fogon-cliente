@@ -8,54 +8,68 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
-                    "G",
-                    "C7",
+                    "A",
+                    "A",
+                    "A",
                     "G",
                     "D7",
-                    "C7",
-                    "G"
+                    "D7",
+                    "A",
+                    "D7",
+                    "D7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
                     "A",
+                    "G",
+                    "G",
+                    "C7",
+                    "G",
+                    "D7 G",
                     "D7",
-                    "A",
-                    "E7",
-                    "D7",
-                    "A",
-                    "D7"
+                    "G",
+                    "G",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "A",
-                    "D7",
-                    "A",
-                    "B",
-                    "E7",
-                    "E",
-                    "B",
                     "E7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "E7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B",
                     "B",
                     "E7",
-                    "B",
-                    "E7",
-                    "B",
-                    "F#m7",
-                    "E7",
-                    "B"
+                    "E7"
                 ]
             }
         ],
@@ -63,77 +77,75 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "tengo una novia que no se puede creer /nla "
+            "/n"
         ],
         [
-            "llaman detenida y me pone en situacion compromet",
-            "ida /nvive fuera de la l"
+            "Ahí grab",
+            "a./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ey /nsi la "
+            "Contrabando",
+            "de drogas, corrupción",
+            "menor, te prefiero d",
+            "etenida, no declares contr",
+            "a mí. mí te",
+            "acaraste, contrabandista, vi",
+            "torracional, yo tengo una",
+            "novia que vive siempre en l",
+            "a seccional. Yo se lo pido sa",
+            "rgento, lo aleje de m",
+            "í, no, no./n",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "viera caminando por la c",
-            "alle /nla querria dete"
+            "Yo tengo u",
+            "na novia que no se puede creer, lo llamo de",
+            "tenida me pone sin un salto bat",
+            "ida. Vivo fuera de la le",
+            "y, si la viera cami",
+            "nando por la calle la que río de Pe",
+            "nea. Oh, deteni",
+            "da, no declares contra mí",
+            ". De",
+            "tenida, te lo pido por favor./n"
         ],
         [
-            "ner /n"
+            "Det",
+            "enida, no declares contra mí./n"
         ],
         [
-            "Exibiciones obsc",
-            "enas,desacato a la autoridad /ncontrabando de "
+            "Deten",
+            "ida, te lo pido por favor./n"
         ],
         [
-            "drogas,corrupcion al men",
-            "or /nte prefiero dete"
-        ],
-        [
-            "nida,n",
-            "o declares contra mi",
-            " /nhabil decla"
-        ],
-        [
-            "rante,contrabandista intern",
-            "acional /nyo tengo una "
-        ],
-        [
-            "novia que vive siempre en la s",
-            "eccional /nyo se lo pido sar"
-        ],
-        [
-            "gento,no la aleje de m",
-            "i ",
-            "/nDete"
-        ],
-        [
-            "nida,no declares contra mi /ndete"
-        ],
-        [
-            "nida,te lo pido por fav",
-            "or /ndete"
-        ],
-        [
-            "nida,no declares contra m",
-            "i /ndete"
-        ],
-        [
-            "nida,te lo pido por fav",
-            "or /nyo se lo pido sar"
-        ],
-        [
-            "gento,se lo pido sarg",
-            "ento /nno la eleje de "
-        ],
-        [
-            "mi"
+            "Yo se lo pido sargento",
+            ", se lo pido sargent",
+            "o, no lo deje de mí.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
@@ -141,8 +153,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

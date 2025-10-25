@@ -8,68 +8,80 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "E",
                     "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "Bm",
                     "C#m",
-                    "F#m",
-                    "E",
-                    "D",
-                    "A"
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Bm",
-                    "C#m",
-                    "D",
-                    "C#m",
-                    "F#m",
-                    "E",
-                    "D",
-                    "Bm"
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2
         ]
     },
     "letras": [
         [
-            "o de saliva ",
-            "y sangre,/n"
-        ],
-        [
-            "  e",
-            "s ver",
-            "dad,",
             "",
             "/n"
         ],
         [
-            "y tal vez  ",
-            "   no",
-            " te voy a perdonar",
-            "/n"
+            "Nuest",
+            "ro Vietná,",
+            "hecho de saliva",
+            "sangre,",
+            "e",
+            "s verdad.",
+            "",
+            "",
+            "",
+            "tal v",
+            "ez n",
+            "o te v",
+            "oy pe",
+            "rdonar",
+            "nuestro Viet",
+            "ná, bien./n",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "Nuestro vietna",
-            "m.",
-            "/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Esta es una canción en español de rock argentino."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 117,
     "medias": [
         {
             "tipo": "Youtube",
@@ -77,8 +89,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
+    "procesando": 0,
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -8,170 +8,431 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "C",
-                    "Bm",
-                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
                     "F",
                     "Em",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
                     "Am",
-                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "C",
                     "C",
                     "G",
-                    "C",
+                    "G",
                     "G",
                     "F",
-                    "Em",
-                    "D",
-                    "C",
-                    "Bm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
                     "Am",
-                    "G",
-                    "C",
-                    "G",
-                    "C",
-                    "G",
-                    "G",
-                    "C",
-                    "G",
-                    "C",
-                    "G",
-                    "Em",
-                    "C",
-                    "G",
-                    "D",
                     "Am",
-                    "Bm",
-                    "D",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "F",
                     "G",
                     "F",
                     "C",
-                    "D",
-                    "C",
-                    "Bm",
-                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "G",
-                    "C",
                     "G",
-                    "C",
                     "G",
-                    "Em",
-                    "C",
                     "G",
-                    "D",
-                    "A",
-                    "Am",
-                    "Bm",
-                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "G",
                     "F",
-                    "C",
-                    "D",
-                    "C",
-                    "Bm",
-                    "Am",
-                    "E",
-                    "G",
-                    "D",
-                    "A",
-                    "E",
                     "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
                     "C",
-                    "D",
                     "C",
-                    "Bm",
-                    "Am",
+                    "C",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
                     "G"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "O:  ",
-            "(gui",
-            "tarra",
-            " port",
-            "ugues",
-            "a)",
-            "/n"
-        ],
-        [],
-        [
-            "No permita la virgen que t",
-            "engas po",
-            "der sobre lágrimas, eg",
-            "os, haciendas,",
-            "/n  "
-        ],
-        [
-            "No te pases un pelo de listo,",
-            " no invie",
-            "rtas en cristos, n",
-            "o te hagas el tonto,",
-            "/n  "
-        ],
-        [
-            "El caballo de Atila no ",
-            "sabe trotar sin hollar",
-            " azulejos silvestres,",
-            "/n  "
-        ],
-        [
-            "los vencejos con ánimo d",
-            "e molestar coleccion",
-            "an estatuas ecuestres.",
-            "/n  "
-        ],
-        [
-            "carnavales en los arra",
-            "bales de mi corazón.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",
             "/n"
         ],
-        [],
-        [],
         [
-            "(A:O,2,3)C          G     C",
-            "                    G",
-            "",
-            "/n  "
+            "N",
+            "o permita la vir",
+            "gen que t",
+            "engas poder so",
+            "bre lágrimas, s",
+            "igos haciendas./n"
         ],
         [
-            "no me quieras querer, no me quier",
-            "as matar, corazón",
-            ".",
-            "",
-            "",
-            "/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [
-            "e repiten los acordes de la A, mientras se tararea lo de abajo./n  "
+            "Cuan",
+            "do labios si",
+            "n ánima, quier",
+            "an quererte al co",
+            "ntado, liq",
+            "uida la tienda./n"
         ],
         [
-            "cardenales en los funera",
-            "les de mi corazón",
-            ".",
-            "",
-            "",
-            "/n  "
+            "No t",
+            "e pases un p",
+            "elo de listo,",
+            "no inviertas en crist",
+            "o, no te",
+            "hagas el tonto./n"
         ],
         [
-            "No permita la virgen que tengas poder."
+            "Las h",
+            "ogueras, pri",
+            "mera vista, c",
+            "uché de revista,",
+            "se apaga bie",
+            "n pronto./n"
+        ],
+        [
+            "El cabal",
+            "lo de Attila n",
+            "o sabe trot",
+            "ar, sino ya",
+            "tu lejos s",
+            "ilvestres./n"
+        ],
+        [
+            "Los pencej",
+            "os con ánimo",
+            "de molestar c",
+            "oleccionan",
+            "estatuas sec",
+            "uestres. Co",
+            "sas de q",
+            "uitaip",
+            "ón, m",
+            "ariposas d",
+            "e sangre ma",
+            "rrón, c",
+            "arnavales",
+            "en los arrab",
+            "ales de mi",
+            "corazón./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "L",
+            "a belleza es u",
+            "n rabo de nube q",
+            "ue sube d",
+            "e dos en dos l",
+            "as escaleras./n"
+        ],
+        [
+            "U",
+            "n carnet exclus",
+            "ivo de socio d",
+            "e pingüe ne",
+            "gocio de l",
+            "a primavera./n"
+        ],
+        [
+            "Un",
+            "barril de cerveza",
+            "que mata de",
+            "ser un m",
+            "elón con pezón d",
+            "e sandia./n"
+        ],
+        [
+            "Un e",
+            "spía enemigo,",
+            "un contigo al re",
+            "vés, es un ombl",
+            "igo de bisu",
+            "tería. C",
+            "osas d",
+            "e quita",
+            "ipón,",
+            "mariposa",
+            "s de sangre",
+            "marrón,",
+            "no me quier",
+            "as querer, no m",
+            "e quieras matar c",
+            "orazón./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "L",
+            "a belleza es un b",
+            "a",
+            "r",
+            "ril",
+            "de cerveza que mata de ser un melón con pezó",
+            "n de sandia. Cosas de quitaipón, mariposas de sangre marrón, carnavales e",
+            "n los arrabales de mi corazón./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Cos",
+            "as de qui",
+            "taipón,",
+            "marip",
+            "osas de",
+            "sangre marr",
+            "ón, carn",
+            "avales en",
+            "los arrabales d",
+            "e mi corazón. N",
+            "o p",
+            "er",
+            "mi",
+            "ta la virgen",
+            "que ten",
+            "gas poder.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
@@ -179,5 +440,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

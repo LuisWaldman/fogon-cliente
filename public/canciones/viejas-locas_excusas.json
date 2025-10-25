@@ -8,155 +8,454 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
                     "F#5",
-                    "A5"
+                    "F#5",
+                    "F#5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D5",
-                    "B5",
                     "A5",
-                    "D5",
-                    "B5",
-                    "D5",
-                    "E5"
+                    "A5",
+                    "C#5",
+                    "C#5",
+                    "C#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E5",
-                    "B5",
-                    "A5",
-                    "B5",
-                    "C#5",
+                    "F#5",
                     "D5",
-                    "E5",
+                    "D5",
+                    "D5",
+                    "B5",
+                    "B5",
+                    "B5",
                     "B5"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "A5",
                     "B5",
-                    "A5",
+                    "D5",
                     "D5",
                     "B5",
+                    "F#5",
+                    "F#5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "F#5",
+                    "A5",
+                    "A5",
                     "D5",
                     "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "B5",
+                    "F#5",
                     "F#5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#5",
+                    "D5",
+                    "D5",
+                    "B5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "F#5",
+                    "F#5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A5",
+                    "B5",
+                    "B5",
+                    "C#5",
+                    "B5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "A5",
+                    "A5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            0,
-            0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "or las dudas que seas vos/nl"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "a primera en bajar el pu",
-            "lgar/na"
+            "Por l",
+            "as dud",
+            "as, que se",
+            "as vos,",
+            "",
+            "la primera en bajar e",
+            "l pul",
+            "gar./n"
         ],
         [
-            "ntes me largo yo,porque esperar a ver/nc"
+            "Antes m",
+            "e largo y",
+            "o, al que",
+            "esperar v",
+            "er,",
+            "cuál es tu de",
+            "cisión./n",
+            ""
         ],
         [
-            "ual es tu desicion?",
-            "/nP"
+            "P",
+            "or las dudas,",
+            "cómo para n",
+            "o quedar,",
+            "un perdedor./n",
+            "",
+            "",
+            ""
         ],
         [
-            "or las dudas como para no",
-            " quedar/ntan "
+            "Co",
+            "n alguna ex",
+            "cusa tengo qu",
+            "e zafar,",
+            "t",
+            "an solo una e",
+            "xcusa nada m",
+            "ás./n"
         ],
         [
-            "perdedor/nc"
+            "Me",
+            "confundido e",
+            "stoy, en",
+            "algún tiempo me v",
+            "es,",
+            "para pens",
+            "ar lo mejor./n",
+            ""
         ],
         [
-            "on alguna excusa te",
-            "ngo que zafar/nt"
+            "No m",
+            "e puedo acu",
+            "sar de no ser y",
+            "o merece",
+            "dor,",
+            "de tan bue",
+            "na muje",
+            "r./n"
         ],
         [
-            "an solo una excusa nad",
-            "a mas/nQ"
+            "Ten",
+            "go mano e",
+            "xcusas fin d",
+            "e evitar,",
+            "en papel",
+            "ón./n",
+            "",
+            ""
         ],
         [
-            "ue confundido estoy, que algun tiempo me des/np"
+            "C",
+            "on alguna e",
+            "xcusa nada",
+            "más./n"
         ],
         [
-            "ara pensarlo mejo",
-            "r,/no"
+            "A",
+            "ntes que m",
+            "e bajes, no s",
+            "é el pulg",
+            "ar, lo bajo",
+            "yo./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            " me puedo acusar de no ser yo el merecedor/nd"
+            "Pu",
+            "edo adivin",
+            "ar, tu d",
+            "ecisión,",
+            "por qu",
+            "é esperar./n",
+            "",
+            ""
         ],
         [
-            "e tan buena mujer,",
-            "/nT"
+            "C",
+            "uantay que no me du",
+            "ermas hoy, antes",
+            "que vos voy",
+            "escapar, no s",
+            "olo con exc",
+            "usas nada m",
+            "ás./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "engo a mano excusas a ",
-            "fin de evitar el pape",
-            "lon/nc"
+            "P",
+            "ara n",
+            "o quedar tan",
+            "perd",
+            "edor,",
+            "antes d",
+            "e evitarme u",
+            "n papelón./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "on alguna excusa, n",
-            "ada mas,/na"
+            "Con a",
+            "lguna excusa",
+            "tengo que z",
+            "afar,",
+            "antes q",
+            "ue me baje",
+            "s, no sé el p",
+            "ulgar,",
+            "lo bajo y",
+            "o./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ntes que me bajes v",
-            "os el pulgar/nS"
+            "Cuant",
+            "ay que no me duermas hoy, antes que vos me bajes, no solo con excusas nada más./n",
+            ""
         ],
         [
-            "i puedo adivinar tu desic",
-            "ion, porque ",
-            "esperar?/nc"
-        ],
-        [
-            "on tal que no me duermas hoy/na"
-        ],
-        [
-            "ntes que vos voy a escapar/nt"
-        ],
-        [
-            "an solo con excusas nada m",
-            "as./nP"
-        ],
-        [
-            "ara no quedar tan ",
-            "perdedor/na"
-        ],
-        [
-            "ntes de evitar un pap",
-            "elon/nC"
-        ],
-        [
-            "on alguna excusa t",
-            "engo que zafar/na"
-        ],
-        [
-            "ntes que me bajes v",
-            "os el pulgar/nte lo bajo yo."
-        ],
-        []
+            "Subtítulos por la comunidad de Amara .org"
+        ]
     ],
-    "bpm": 80,
+    "bpm": 143,
     "medias": [
         {
             "tipo": "Youtube",
@@ -164,5 +463,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

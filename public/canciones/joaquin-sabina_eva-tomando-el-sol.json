@@ -8,249 +8,547 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "Am",
+                    "G",
                     "C",
-                    "D",
-                    "C",
-                    "G"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "G",
                     "D",
                     "C",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "G",
+                    "G",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "C",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
             1,
             2,
-            1,
-            2,
-            1,
-            0,
-            0,
-            1,
-            1,
-            2,
-            1,
-            2,
-            1
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
         ]
     },
     "letras": [
         [
-            "do empezó cuando aquella serpiente/nme trajo un"
-        ],
-        [
-            "a manzana y dijo pru",
-            "eba/nyo me llam"
-        ],
-        [
-            "aba Adán, seguram",
-            "ente tu te llamabas Ev",
-            "a./nViví"
-        ],
-        [
-            "amos de scuoters en un piso/nabandon"
-        ],
-        [
-            "ado de Moratal",
-            "az/nsi no has est"
-        ],
-        [
-            "ado allí no has visto el ",
-            "paraíso terren",
-            "al./nCogimos u"
-        ],
-        [
-            "n colchón de una basura/ndos sillas "
-        ],
-        [
-            "y una mesa con tres patas/nmientras yo emb"
-        ],
-        [
-            "orronaba partitu",
-            "ras/ntu freías las p"
-        ],
-        [
-            "atatas./nPlantamos"
-        ],
-        [
-            " cañamones de ketama/ny un tiesto"
-        ],
-        [
-            " nos creció ante el ventanal/ncon una rama de"
-        ],
-        [
-            " árbol de la ci",
-            "encia/ndel bien y del m"
-        ],
-        [
-            "al./nA "
-        ],
-        [
-            "Eva le gustaba estar morena/ny se tumbab"
-        ],
-        [
-            "a cada tarde al sol",
-            "/nnadie vio "
-        ],
-        [
-            "nunca una sirena t",
-            "an desnuda en un balc",
-            "n/nPr"
-        ],
-        [
-            "onto en cada ventana hubo un marido/nA la hora e"
-        ],
-        [
-            "n que montaba el show mi chi",
-            "ca/naunque la tel"
-        ],
-        [
-            "e diera en diferido",
-            " Real Madrid - Benf",
-            "ica/nUn día l"
-        ],
-        [
-            "a víbora del entresuelo/nen trance a"
-        ],
-        [
-            " su consorte sorprendió/nformo un revuel"
-        ],
-        [
-            "o y telefoneo",
-            "/nal cero noventa "
-        ],
-        [
-            "y dos/nY como no"
-        ],
-        [
-            " teníamos apellidos/nni hojas de"
-        ],
-        [
-            " parra, ni un tío concejal/nni mas dios que"
-        ],
-        [
-            " Cupido no sirvió d",
-            "e nada/nprotestar"
-        ],
-        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "uuuuu",
-            "         Eva tomando el ",
-            "sol/n"
+            "To",
+            "do empezó cuando aquel",
+            "la serpiente m",
+            "e trajo una manzana",
+            "dijo ¡Prueba!/n"
         ],
         [
-            "uuuu",
-            "         bendito descontr",
-            "ol/n"
+            "Yo me llamaba Adam,",
+            "seguramente tú",
+            "te llamaba Seba./n",
+            ""
         ],
         [
-            "uuuu ",
-            "        besos cebolla y ",
-            "pan/n"
+            "Vivíamos de Escu",
+            "áterse en un fiso aba",
+            "ndonado de/n"
         ],
         [
-            "uuuu",
-            "     que mas quieres.. Ad",
-            "án/nUn"
+            "Moratala./n"
         ],
         [
-            " juez que se creía Dios dispuso/nque precint"
+            "Si no has estado allí n",
+            "o has visto el paraí",
+            "so terrenal./n",
+            ""
         ],
         [
-            "ara un guardia nuestro piso",
-            "/nno quedan pla"
+            "Tocinos un col",
+            "chón de una basura,",
+            "dos sillas una",
+            "mesa con tres patas./n"
         ],
         [
-            "zas para dos intrusos",
-            " en el paraíso",
-            "/nEs"
+            "Mientras yo embor",
+            "ronaba partituras t",
+            "ú creías las patatas",
+            "./n"
         ],
         [
-            "tábamos sobre el colchón desnudos/njugando a n"
+            "Cuentamos cañ",
+            "amones de quétama",
+            "un tiesto nos c",
+            "reció ante el ventana./n"
         ],
         [
-            "uestro juego favorit",
-            "o/nal ver en"
+            "Con una ra",
+            "ma de árbol de la cien",
+            "cia te viene del",
+            "m",
+            "a",
+            "l",
+            "o",
+            "./n",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "trar la pasma Eva no pudo ",
-            "sofocar un grit",
-            "o/nA golpes "
+            "Pronto en c",
+            "ada ventana hubo un ma",
+            "rido, la ho",
+            "ra en que montaba el show mi chi",
+            "ca. Aunque",
+            "las teledieras en dife",
+            "rido el real me verifi",
+            "can./n"
         ],
         [
-            "la bajo por la escalera/nun ángel d"
+            "Un d",
+            "ía la víbora del entre s",
+            "ueno entran",
+            "ce su consorte sorprendió./n"
         ],
         [
-            "isfrazado de alguacil/nsin importarle "
+            "Form",
+            "o un repuelo telefo",
+            "neo ante el 9",
+            "2.",
+            "",
+            "como no teníamos ape",
+            "llidos mi",
+            "hojas de parra ni un tío co",
+            "n ceja. N",
+            "i más dios que cumplieron",
+            "nos sirvió de nada pr",
+            "otestar./n",
+            "",
+            ""
         ],
         [
-            "un pijo que estu",
-            "viera/nen cinta de Caí"
+            "Evar tom",
+            "an el sol,",
+            "be",
+            "nd",
+            "ito",
+            "descontrao,",
+            "",
+            "",
+            "beso",
+            "s de golpe pan,",
+            "",
+            "",
+            "que m",
+            "ás quieres saber./n",
+            ""
         ],
         [
-            "n/nHoy Eva v"
+            "Un juez que se cre",
+            "ía dios dispuso, q",
+            "ue presentara u",
+            "n guardia nuestro piso./n"
         ],
         [
-            "ende en un supermercado/nmanzanas de"
+            "No quedan plazas",
+            "para dos intrusos e",
+            "n el paraíso./n",
+            ""
         ],
         [
-            "l pecado original/nyo canto en la "
+            "Estábamos so",
+            "bre el colchón de snudos,",
+            "jugando nuestro",
+            "juego favorito./n"
         ],
         [
-            "calle Preciados",
-            "/ntodos me llaman "
+            "Al ver entrar l",
+            "a pasma, Eva no pud",
+            "o soportar un grito.",
+            "",
+            "golpes l",
+            "a bajó por la escalera,",
+            "con un ángel",
+            "disfrazado de algo así./n"
         ],
         [
-            "Adán./n"
+            "Sin impor",
+            "tarle un piso que estuvie",
+            "ra encinta del pa",
+            "ís./n"
         ],
         [
-            "uuuuu",
-            "         Eva tomando el ",
-            "sol/n"
+            "Hoy E",
+            "va vende un supermercad",
+            "o, manzan",
+            "as del pecado original./n"
         ],
         [
-            "uuuu",
-            "         bendito descontr",
-            "ol/n"
+            "Yo ca",
+            "nto en la calle preciados,",
+            "todos me llaman na",
+            "da./n",
+            "",
+            ""
         ],
         [
-            "uuuu ",
-            "        besos cebolla y ",
-            "pan/n"
+            "Eva toman e",
+            "l sol, b",
+            "en",
+            "di",
+            "to des",
+            "contrao,",
+            "",
+            "",
+            "besos de g",
+            "olpe pan./n",
+            "",
+            ""
         ],
         [
-            "uuuu",
-            "     que mas quieres.. Ad",
-            "án"
+            "Que más qui",
+            "eres saber./n",
+            "",
+            ""
+        ],
+        [
+            "Eva to",
+            "man el sol,",
+            "b",
+            "en",
+            "dito",
+            "desco",
+            "ntrao,",
+            "",
+            "beso",
+            "s de golpe pan./n",
+            "",
+            ""
+        ],
+        [
+            "Que m",
+            "ás quieres saber./n",
+            "",
+            ""
+        ],
+        [
+            "Ev",
+            "a toman el sol.",
+            "",
+            "",
+            "",
+            "¡Suscríbete!"
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
@@ -258,5 +556,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -8,9 +8,19 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "C#",
                     "C#",
                     "A"
                 ]
@@ -18,38 +28,250 @@
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
                     "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
                     "G",
                     "A",
+                    "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            " Nadie hay en la avenida, /n"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   nadie hay debajo del farol, /nhoy el bar "
+            "Nadie hay en la ave",
+            "nida, nadie hay debajo del far",
+            "ol Hoy el bar está cerrado",
+            ", todo temprano terminó/n"
         ],
         [
-            "esta cerrado, /ntodo temprano"
+            "Pero tu corazón, si la",
+            "te, pide acción/n"
         ],
         [
-            " termino. /nTene"
+            "Nadie te acomp",
+            "aña, te falló toda la raz",
+            "a humana/n",
+            ""
         ],
         [
-            "s que bailar sola, bai",
-            "lar sola el rock.!",
-            " "
+            "Tienes que bailar sol",
+            "a, bailar sola rock/n"
+        ],
+        [
+            "Tienes que bailar sol",
+            "a, bailar sola ro",
+            "ck Tenías puesto tu mej",
+            "or traje, tu mejor h",
+            "umor, una botella bai",
+            "lar sobre el rock/n"
+        ],
+        [
+            "Terminaste la beb",
+            "ida, cansada ahora estás de",
+            "bailar, ahora tacto ta",
+            "cto Ahora estás de t",
+            "acto/n",
+            ""
+        ],
+        [
+            "Tienes que bailar sol",
+            "a, bailar sola rock/n"
+        ],
+        [
+            "Tienes que bailar sol",
+            "a, bailar sola rock/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Tienes que bailar sola",
+            ", bailar sola rock/n"
+        ],
+        [
+            "Tienes que bailar sol",
+            "a, bailar sola rock/n"
+        ],
+        [
+            "Tienes que bailar sola,",
+            "bailar sola rock/n"
+        ],
+        [
+            "Tienes que bailar sola",
+            ", bailar sola rock/n"
+        ],
+        [
+            "Tienes que bailar sola, bail",
+            "ar sola rock/n"
+        ],
+        [
+            "Tienes que bailar sola, bai",
+            "lar sola roc",
+            "k Tienes que bailar sola,",
+            "bailar sola ro",
+            "ck Tienes que bailar sola, bailar sola rock Tienes que bailar sola, bail",
+            "ar sola rock/n",
+            "",
+            ""
+        ],
+        [
+            "Tienes que b",
+            "ailar sola, bailar s",
+            "ola rock Tienes que bailar sola, bai",
+            "lar sola rock",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 89,
     "medias": [
         {
             "tipo": "Youtube",
@@ -59,5 +281,7 @@
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

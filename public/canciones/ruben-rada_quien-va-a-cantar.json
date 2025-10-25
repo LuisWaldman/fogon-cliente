@@ -1,12 +1,16 @@
 {
     "cancion": "Quien-va-a-Cantar",
     "banda": "ruben-rada",
-    "escala": "Bm7",
-    "tempo": 60,
-    "compas_cantidad": 4,
-    "compas_unidad": 4,
     "acordes": {
         "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
             {
                 "nombre": "parte1",
                 "acordes": [
@@ -14,210 +18,196 @@
                     "Bm7",
                     "Bm7",
                     "G7",
-                    "F#7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E7",
+                    "Bm7",
                     "Bm7",
                     "E7",
                     "Bm7",
-                    "E7",
-                    "Bm7",
-                    "G7",
-                    "F#7",
-                    "Bm7",
-                    "F#m7",
-                    "B7/F",
-                    "Em",
-                    "A7(4)",
-                    "A7",
                     "D7",
-                    "G7",
-                    "F#7",
-                    "Bm7",
-                    "F#m7",
-                    "B7/F",
-                    "Em",
-                    "A7(4)",
-                    "A7",
                     "D7",
-                    "G7",
-                    "F#7",
-                    "Bm7",
-                    "E7",
-                    "Bm7",
-                    "Bm7",
-                    "Bm7",
-                    "G7",
-                    "F#7",
-                    "Bm7",
-                    "E7",
-                    "Bm7",
-                    "E7",
-                    "Bm7",
-                    "G7",
-                    "F#7",
-                    "Bm7",
-                    "E7",
-                    "F#m7",
-                    "B7/F",
-                    "A",
-                    "Em",
-                    "A7(4)",
-                    "A7",
                     "D7",
-                    "G7",
-                    "F#7",
-                    "Bm7",
-                    "E7",
-                    "F#m7",
-                    "B7/F",
                     "Em",
-                    "A7(4)",
-                    "A7",
                     "D7",
-                    "G7",
-                    "F#7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "Bm7",
-                    "E7"
+                    "Bm7 D7",
+                    "E7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm7",
+                    "G7",
+                    "Bm7",
+                    "Bm7",
+                    "Em",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Em",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Em",
+                    "D7",
+                    "D7",
+                    "Bm7",
+                    "Em",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Em",
+                    "D7",
+                    "D7",
+                    "Bm7",
+                    "Em",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4
         ]
     },
+    "escala": "Bm7",
     "letras": [
         [
-            "pierda toda la poesía/nCuando la "
-        ],
-        [
-            "gente solo sobreviva/nCuando el "
-        ],
-        [
-            "cansancio mate la al",
-            "egría/nSeremos una máqu"
-        ],
-        [
-            "ina de tra",
-            "bajar/n"
-        ],
-        [],
-        [
-            "lizan nuestro pensamiento/nSolo habrá un"
-        ],
-        [
-            " libro con el mismo/nSin esa "
-        ],
-        [
-            "magia de la fantasí",
-            "a/nLa música del mun"
-        ],
-        [
-            "do no tendr",
-            " lugar/nPregunto"
-        ],
-        [
-            " yo quien",
-            " va a cant",
-            "ar/n"
-        ],
-        [
-            "  Quien v",
-            "a a soñ",
-            "ar/n"
-        ],
-        [
-            "Quien va a tocar la mel",
-            "odía del/n"
-        ],
-        [
-            "Amor/n"
-        ],
-        [
-            "    Quien",
-            " va a can",
-            "tar/n"
-        ],
-        [
-            "  Quien v",
-            "a a soñ",
-            "ar/n"
-        ],
-        [
-            "Quien va a pedir para qu",
-            "e no calle/n El can"
-        ],
-        [
-            "tor",
-            "/nSi cada "
-        ],
-        [
-            "pueblo tiene un presidente/nQue por "
-        ],
-        [
-            "lo menos rime con la gente/nCuando el r"
-        ],
-        [
-            "eparto sea mas cohere",
-            "nte/nTendremos un planeta co"
-        ],
-        [
-            "n identidad/n"
-        ],
-        [],
-        [
-            "amor sea lo mas urgente/nNo tendrá"
-        ],
-        [
-            " caso la guerra de oriente/nCuando el ra"
-        ],
-        [
-            "cismo no tenga par",
-            "ientes/nMe sentiré orgulloso de "
-        ],
-        [
-            "la/n"
-        ],
-        [
-            "Humanida",
-            "d/n"
-        ],
-        [
-            "    Quien v",
-            "a a ca",
-            "ntar",
+            "",
+            "",
             "/n"
         ],
         [
-            "  Quien v",
-            "a a soñ",
-            "ar/n"
+            "Cuando s",
+            "e pierda toda la poesía, cuando",
+            "la gente solo sobreviva, cuando h",
+            "ay cansancio más de la alegría, seremos u",
+            "na máquina de trabajar, s",
+            "í, claro./n"
         ],
         [
-            "Quien va a tocar la mel",
-            "odía del/n"
+            "Si globaliza nuestro pens",
+            "amiento, solo habrá un libro con el mismo",
+            "cuento, sin esa margen de la fan",
+            "tasía, la música del mundo no tendrá l",
+            "ugar, pregunto yo ¿quién va c",
+            "antar? ¿quién va s",
+            "oñar? ¿quién va t",
+            "ocar la melodía del",
+            "amor? ¿quién va",
+            "cantar? ¿quién v",
+            "a soñar? ¿quién va p",
+            "edir para que no cante el ca",
+            "nto?/n"
         ],
         [
-            "Amor",
-            "/n"
+            "Si c",
+            "ada pueblo tiene un presidente, que p",
+            "or lo menos rime con la gente, cua",
+            "ndo el reparto sea más coherente, tendremos u",
+            "n planeta con identidad./n",
+            ""
         ],
         [
-            "    Quien ",
-            "va a canta",
-            "r/n"
-        ],
-        [
-            "  Quien v",
-            "a a soñ",
-            "ar/n"
-        ],
-        [
-            "Quien va a pedir para qu",
-            "e no calle/n"
-        ],
-        [
-            " Al cant",
-            "or"
+            "Cuando el amor sea lo más u",
+            "rgente, no tendrá caso la guerra de",
+            "oriente, cuando el racismo no tenga par",
+            "ientes, me sentiré orgulloso de la hum",
+            "anidad. ¿quién va",
+            "cantar? ¿quién va s",
+            "oñar? ¿quién va t",
+            "ocar la melodía del",
+            "amor? ¿quién va",
+            "cantar? ¿quién va",
+            "soñar? ¿quién va p",
+            "edir para que no cante el c",
+            "anto?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿quién va canta",
+            "r? ¿quién va soñar",
+            "? ¿quién va tocar la me",
+            "lodía del amor?",
+            "¿quién va cantar?",
+            "¿quién va soña",
+            "r? ¿quién va pedir para q",
+            "ue no cante el canto?",
+            "¿quién va canta",
+            "r? ¿quién va soñar",
+            "? ¿quién va tocar la me",
+            "lodía del amor?",
+            "¿quién va cantar?",
+            "¿quién va soña",
+            "r? ¿quién va pedir para q",
+            "ue no cante el canto?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
-    "etiquetas": []
+    "bpm": 86,
+    "calidad": 1,
+    "compasCantidad": 4,
+    "compasUnidad": 4,
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "wXS5HVXCOtc",
+            "delay": 0
+        }
+    ],
+    "pentagramas": [],
+    "archivo": "ruben-rada_quien-va-a-cantar",
+    "etiquetas": [],
+    "procesando": 0,
+    "compas_cantidad": 4,
+    "compas_unidad": 4
 }
