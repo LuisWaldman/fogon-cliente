@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
 import { useRouter } from 'vue-router'
@@ -7,6 +7,7 @@ import editVista from './components/comp_tocar/editVista.vue'
 
 const appStore = useAppStore()
 onMounted(() => {
+
   const urlParams = new URLSearchParams(window.location.search)
   const cancionUrl = urlParams.get('cancion')
   // Redirect from fogon.ar to www.fogon.ar with the same parameters
@@ -29,11 +30,20 @@ onMounted(() => {
   appStore.aplicacion.setRouter(router)
   appStore.aplicacion.onMounted()
 })
+const refEditandoVista = ref(false)
+function cerrareditarPantalla() {
+  refEditandoVista.value = false
+}
+
+function abrirVistaEdicion() {
+  refEditandoVista.value = true
+}
+
 </script>
 
 <template>
   <div id="contenedor-musical" class="pantalla">
-    <Cabecera />
+    <Cabecera @abrirVistaEdicion="abrirVistaEdicion" />
     <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
       <img
         src="/img/iconogrande.png"
