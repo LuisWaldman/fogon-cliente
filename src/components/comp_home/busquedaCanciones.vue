@@ -72,7 +72,7 @@ const filtroPartituraSeleccionada = ref(['todas'])
 const filtroCantAcordesSeleccionada = ref(['todas'])
 const filtroDuracionSeleccionada = ref(['todas'])
 const filtroCalidadSeleccionada = ref(['todas'])
-const filtroGrupoSeleccionado = ref(['rock_nacional'])
+const filtroGrupoSeleccionado = ref([])
 const filtroPartesSeleccionada = ref(['una'])
 
 // Opciones para los dropdowns
@@ -120,12 +120,12 @@ const opcionesCalidad = [
 ]
 
 const opcionesGrupo = [
-  { value: 'rock_nacional', label: 'Rock Nacional' },
+  { value: 'Rock Nacional', label: 'Rock Nacional' },
   { value: 'Tango', label: 'Tango' },
-  { value: 'folclore', label: 'Folclore' },
-  { value: 'cumbia', label: 'Cumbia' },
-  { value: 'rock_internacional', label: 'Rock Internacional' },
-  { value: 'musica_moderna', label: 'Música Moderna' },
+  { value: 'Folclore', label: 'Folclore' },
+  { value: 'Cumbia', label: 'Cumbia' },
+  { value: 'Rock Internacional', label: 'Rock Internacional' },
+  { value: 'Música Moderna', label: 'Música Moderna' },
   { value: 'sonetos', label: 'Sonetos' },
   { value: 'brasilero', label: 'Brasilero' },
   { value: 'chanson_francesa', label: 'Francés' },

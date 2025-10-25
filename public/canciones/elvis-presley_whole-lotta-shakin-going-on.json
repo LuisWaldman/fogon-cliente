@@ -1,1 +1,317 @@
-{"cancion": "Whole-Lotta-Shakin-Going-On", "banda": "elvis-presley", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "F#m", "D", "F"]}, {"nombre": "parte2", "acordes": ["D"]}, {"nombre": "parte3", "acordes": ["C"]}, {"nombre": "parte4", "acordes": ["F#m"]}, {"nombre": "parte5", "acordes": ["Em"]}], "orden_partes": [0, 1, 1, 2, 1, 3, 1, 3, 3, 1, 3, 4, 1, 2, 1, 3, 2, 1, 4, 4, 1, 2, 3, 1, 3, 4, 1, 3, 1, 3, 4, 1, 2, 3, 1, 3, 4, 1, 2, 1, 1, 3, 3, 4, 1, 2, 3, 1, 3, 4, 1, 3, 1, 1, 1, 3, 4, 1, 2, 1, 1, 3, 3, 4, 1]}, "letras": [["[Chorus]", "", "/nI "], ["said come on over baby/nA-whole lot of "], ["shaking going on/n"], ["Yeah I said come on over baby/nA-whole lot of shaking "], ["going on/nWell we ain't "], ["faking/nA-whole lot of shaking "], ["going on/nMm, I said "], ["come on over baby/nWe got chicken in the "], ["barn/n"], ["Whose barn, what barn, my barn/n"], ["Come on over baby/nWe got the bull by the "], ["horns/nYeah, we ain't "], ["faking/nA-"], ["whole lot of shaking going on/n"], ["Well, I said shake baby, s", "hake/nI said "], ["shake, baby shake now/nI said "], ["shake it baby, shake it/nI said "], ["shake it baby, s", "hake/n"], ["We ain't faking/nA-"], ["whole lot of shaking going on/n"], ["Well, I said come on over baby/nA-"], ["whole lot-ta shaking going on/nI "], ["said come on over baby/nA-whole lot of shaking "], ["going on/nWell we ain't "], ["faking/nA-"], ["whole lot of shaking going on/nWell my mom-mom-"], ["mom/nI said shake it baby, "], ["shake it/nI said "], ["shake it baby, shake it/nWe "], ["ain't faking/nA-"], ["whole lot of shaking going on/n"], ["Well, I said come on over baby/nA-"], ["whole lot-ta shaking going on/nI "], ["said come on over baby/nA-whole lot of shaking "], ["going on/nWell we ain't "], ["faking/nA-"], ["whole lot of shaking going on/nI said "], ["shake it baby, s", "hake it/nI said "], ["shake it baby, shake it/nI said "], ["shake it baby, shake all right/nI said "], ["shake it baby, shake it/nWe "], ["ain't faking/nA-"], ["whole lot of shaking going on/n"], ["Well, I said come on over baby/nA-"], ["whole lot-ta shaking going on/nI "], ["said come on over baby/nA-whole lot of shaking "], ["going on/nWell we ain't "], ["faking/nA-"], ["whole lot of shaking going on/nWell my mom-mom-"], ["mom/nI said shake it baby, "], ["shake it/n"], ["I said shake it baby, shake it/n"], ["I said shake it baby, shake all right/nI said "], ["shake it baby, shake it/nWe "], ["ain't faking/nA-"], ["whole lot of shaking going on/nI said "], ["shake it baby, s", "hake it/nI said "], ["shake it baby, shake it/nI said "], ["shake it baby, shake all right/nI said "], ["shake it baby, shake it/nWe "], ["ain't faking/nA-"], ["whole lot of shaking going on"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "asGttQF_0wk", "delay": 0}]}
+{
+    "cancion": "Whole-Lotta-Shakin-Going-On",
+    "banda": "elvis-presley",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "F#m",
+                    "D",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            3,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            3,
+            2,
+            1,
+            4,
+            4,
+            1,
+            2,
+            3,
+            1,
+            3,
+            4,
+            1,
+            3,
+            1,
+            3,
+            4,
+            1,
+            2,
+            3,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            1,
+            3,
+            3,
+            4,
+            1,
+            2,
+            3,
+            1,
+            3,
+            4,
+            1,
+            3,
+            1,
+            1,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            1,
+            3,
+            3,
+            4,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "[Chorus]",
+            "",
+            "/nI "
+        ],
+        [
+            "said come on over baby/nA-whole lot of "
+        ],
+        [
+            "shaking going on/n"
+        ],
+        [
+            "Yeah I said come on over baby/nA-whole lot of shaking "
+        ],
+        [
+            "going on/nWell we ain't "
+        ],
+        [
+            "faking/nA-whole lot of shaking "
+        ],
+        [
+            "going on/nMm, I said "
+        ],
+        [
+            "come on over baby/nWe got chicken in the "
+        ],
+        [
+            "barn/n"
+        ],
+        [
+            "Whose barn, what barn, my barn/n"
+        ],
+        [
+            "Come on over baby/nWe got the bull by the "
+        ],
+        [
+            "horns/nYeah, we ain't "
+        ],
+        [
+            "faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/n"
+        ],
+        [
+            "Well, I said shake baby, s",
+            "hake/nI said "
+        ],
+        [
+            "shake, baby shake now/nI said "
+        ],
+        [
+            "shake it baby, shake it/nI said "
+        ],
+        [
+            "shake it baby, s",
+            "hake/n"
+        ],
+        [
+            "We ain't faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/n"
+        ],
+        [
+            "Well, I said come on over baby/nA-"
+        ],
+        [
+            "whole lot-ta shaking going on/nI "
+        ],
+        [
+            "said come on over baby/nA-whole lot of shaking "
+        ],
+        [
+            "going on/nWell we ain't "
+        ],
+        [
+            "faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/nWell my mom-mom-"
+        ],
+        [
+            "mom/nI said shake it baby, "
+        ],
+        [
+            "shake it/nI said "
+        ],
+        [
+            "shake it baby, shake it/nWe "
+        ],
+        [
+            "ain't faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/n"
+        ],
+        [
+            "Well, I said come on over baby/nA-"
+        ],
+        [
+            "whole lot-ta shaking going on/nI "
+        ],
+        [
+            "said come on over baby/nA-whole lot of shaking "
+        ],
+        [
+            "going on/nWell we ain't "
+        ],
+        [
+            "faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/nI said "
+        ],
+        [
+            "shake it baby, s",
+            "hake it/nI said "
+        ],
+        [
+            "shake it baby, shake it/nI said "
+        ],
+        [
+            "shake it baby, shake all right/nI said "
+        ],
+        [
+            "shake it baby, shake it/nWe "
+        ],
+        [
+            "ain't faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/n"
+        ],
+        [
+            "Well, I said come on over baby/nA-"
+        ],
+        [
+            "whole lot-ta shaking going on/nI "
+        ],
+        [
+            "said come on over baby/nA-whole lot of shaking "
+        ],
+        [
+            "going on/nWell we ain't "
+        ],
+        [
+            "faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/nWell my mom-mom-"
+        ],
+        [
+            "mom/nI said shake it baby, "
+        ],
+        [
+            "shake it/n"
+        ],
+        [
+            "I said shake it baby, shake it/n"
+        ],
+        [
+            "I said shake it baby, shake all right/nI said "
+        ],
+        [
+            "shake it baby, shake it/nWe "
+        ],
+        [
+            "ain't faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on/nI said "
+        ],
+        [
+            "shake it baby, s",
+            "hake it/nI said "
+        ],
+        [
+            "shake it baby, shake it/nI said "
+        ],
+        [
+            "shake it baby, shake all right/nI said "
+        ],
+        [
+            "shake it baby, shake it/nWe "
+        ],
+        [
+            "ain't faking/nA-"
+        ],
+        [
+            "whole lot of shaking going on"
+        ]
+    ],
+    "bpm": 80,
+    "etiquetas": [
+        "Rock Internacional"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "asGttQF_0wk",
+            "delay": 0
+        }
+    ]
+}
