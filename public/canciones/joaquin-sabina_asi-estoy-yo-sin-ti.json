@@ -20,19 +20,25 @@
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "D2"
+                    "D2",
+                    "C",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "D"
+                    "D",
+                    "C",
+                    "A/C#"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "G",
+                    "D/F#",
                     "C",
                     "D"
                 ]
@@ -40,68 +46,32 @@
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
-                    "A/C#"
-                ]
-            },
-            {
-                "nombre": "parte5",
-                "acordes": [
-                    "G",
-                    "D/F#"
-                ]
-            },
-            {
-                "nombre": "parte6",
-                "acordes": [
-                    "C",
-                    "D"
-                ]
-            },
-            {
-                "nombre": "parte7",
-                "acordes": [
                     "B7",
-                    "B7"
-                ]
-            },
-            {
-                "nombre": "parte8",
-                "acordes": [
+                    "B7",
                     "Em/D Am",
                     "Am"
                 ]
             },
             {
-                "nombre": "parte9",
+                "nombre": "parte5",
                 "acordes": [
                     "Am7",
-                    "Am7"
-                ]
-            },
-            {
-                "nombre": "parte10",
-                "acordes": [
+                    "Am7",
                     "G",
                     "Em"
                 ]
             },
             {
-                "nombre": "parte11",
+                "nombre": "parte6",
                 "acordes": [
                     "Am",
-                    "Am G"
-                ]
-            },
-            {
-                "nombre": "parte12",
-                "acordes": [
+                    "Am G",
                     "D",
                     "C"
                 ]
             },
             {
-                "nombre": "parte13",
+                "nombre": "parte7",
                 "acordes": [
                     "D",
                     "Am7 G",
@@ -109,7 +79,7 @@
                 ]
             },
             {
-                "nombre": "parte14",
+                "nombre": "parte8",
                 "acordes": [
                     "G",
                     "Am",
@@ -118,79 +88,49 @@
                 ]
             },
             {
-                "nombre": "parte15",
+                "nombre": "parte9",
                 "acordes": [
                     "Am7",
-                    "Am7"
-                ]
-            },
-            {
-                "nombre": "parte16",
-                "acordes": [
+                    "Am7",
                     "Em",
                     "D2"
                 ]
             },
             {
-                "nombre": "parte17",
+                "nombre": "parte10",
                 "acordes": [
+                    "G",
+                    "G",
                     "G",
                     "G"
                 ]
             },
             {
-                "nombre": "parte18",
+                "nombre": "parte11",
                 "acordes": [
                     "G",
-                    "G"
-                ]
-            },
-            {
-                "nombre": "parte19",
-                "acordes": [
+                    "D",
                     "G",
                     "D"
                 ]
             },
             {
-                "nombre": "parte20",
+                "nombre": "parte12",
                 "acordes": [
                     "G",
-                    "D"
-                ]
-            },
-            {
-                "nombre": "parte21",
-                "acordes": [
                     "G",
-                    "G"
-                ]
-            },
-            {
-                "nombre": "parte22",
-                "acordes": [
                     "Em/D",
                     "Am",
-                    "D"
-                ]
-            },
-            {
-                "nombre": "parte23",
-                "acordes": [
+                    "D",
                     "Am7",
                     "D2",
                     "B7"
                 ]
             },
             {
-                "nombre": "parte24",
+                "nombre": "parte13",
                 "acordes": [
-                    "B7"
-                ]
-            },
-            {
-                "nombre": "parte25",
-                "acordes": [
+                    "B7",
                     "C",
                     "Em",
                     "C",
@@ -200,7 +140,7 @@
                 ]
             },
             {
-                "nombre": "parte26",
+                "nombre": "parte14",
                 "acordes": [
                     "G",
                     "G",
@@ -217,7 +157,7 @@
                 ]
             },
             {
-                "nombre": "parte27",
+                "nombre": "parte15",
                 "acordes": [
                     "D",
                     "D C",
@@ -225,32 +165,17 @@
                 ]
             },
             {
-                "nombre": "parte28",
-                "acordes": [
-                    "C"
-                ]
-            },
-            {
-                "nombre": "parte29",
+                "nombre": "parte16",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
+                    "G",
                     "C"
                 ]
             },
             {
-                "nombre": "parte30",
-                "acordes": [
-                    "G"
-                ]
-            },
-            {
-                "nombre": "parte31",
-                "acordes": [
-                    "C"
-                ]
-            },
-            {
-                "nombre": "parte32",
+                "nombre": "parte17",
                 "acordes": [
                     "D",
                     "Am7",
@@ -258,7 +183,7 @@
                 ]
             },
             {
-                "nombre": "parte33",
+                "nombre": "parte18",
                 "acordes": [
                     "G",
                     "G",
@@ -288,22 +213,7 @@
             15,
             16,
             17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33
+            18
         ]
     },
     "letras": [
@@ -315,117 +225,93 @@
         ],
         [
             "Extraño como un pato e",
-            "e el mal fanares To/n"
-        ],
-        [
-            "To como un suicida s",
-            "s vocación/n"
+            "n el mal fanares To",
+            "rpe como un suicida s",
+            "in vocación/n"
         ],
         [
             "Absurdo como un verga p",
-            "p soleares Pa/n"
-        ],
-        [
-            "Pa como una isla s",
-            "s Robinson/n"
+            "or soleares Pa",
+            "cío como una isla s",
+            "in Robinson/n"
         ],
         [
             "Oscuro como un túnel si",
-            "s tren expreso Neg/n"
-        ],
-        [
-            "N como los ángeles d",
-            "d machín/n"
+            "n tren expreso Neg",
+            "ro como los ángeles d",
+            "e machín/n"
         ],
         [
             "Febril como la carta de am",
-            "a de un preso As/n"
-        ],
-        [
-            "A estoy yo, así esto",
-            "e yo sin ti/n"
+            "or de un preso As",
+            "í estoy yo, así esto",
+            "y yo sin ti/n"
         ],
         [
             "Perdido c",
-            "co un quinto en día de permiso Co/n"
-        ],
-        [
-            "C un santo sin paraíso c",
-            "co el ojo del barriquí/n"
+            "omo un quinto en día de permiso Co",
+            "mo un santo sin paraíso c",
+            "omo el ojo del barriquí/n"
         ],
         [
             "Por año co",
-            "c un dandy con lamparones Co/n"
-        ],
-        [
-            "C un barco sin polizones, a",
-            "as estoy yo sin ti/n"
+            "mo un dandy con lamparones Co",
+            "mo un barco sin polizones, a",
+            "sí estoy yo sin ti/n"
         ],
         [
             "Más triste que un",
-            "torer al otro lado",
-            "de telón de acero/n"
+            "torero al otro lado",
+            "del telón de acero/n"
         ],
         [
             "Así estoy y",
-            "yo así estoy",
+            "o, así estoy",
             "y",
-            "y sin ti/n"
+            "o sin ti/n"
         ],
         [
             "Mentido como u",
-            "u viejo que pierde al tute Ca/n"
-        ],
-        [
-            "Cast como e",
-            "e beso del coronel/n"
+            "n viejo que pierde al tute Ca",
+            "stivo como e",
+            "l beso del coronel/n"
         ],
         [
             "Furtivo como el",
-            "lut cuando era lute In/n"
-        ],
-        [
-            "Inqui com",
+            "lute cuando era lute In",
+            "quieto como",
             "un parroco en un purdel/n"
         ],
         [
             "Mierrante como un t",
-            "tax por el desierto Qu/n"
-        ],
-        [
-            "Quem como el c",
-            "cie de Chernobyl/n"
+            "axi por el desierto Qu",
+            "emado como el c",
+            "ielo de Chernobyl/n"
         ],
         [
             "Solo como u",
-            "u poeta en el aeropuerto A/n"
+            "n poeta en el aeropuerto A",
+            "sí estoy yo, as",
+            "í estoy yo sin t",
+            "i Inú",
+            "til como un sello aportificad",
+            "or Como el semen de los ánge",
+            "les como el libro del porvenir/n"
         ],
         [
-            "A estoy yo, as",
-            "a estoy yo sin t",
-            "t Inú/n"
-        ],
-        [
-            "In como un sello aportificad",
-            "a Como el semen de los ánge",
-            "án como el libro del porveni/n"
-        ],
-        [
-            "Viole/n"
-        ],
-        [
-            "Vi como un niño sin cumple año",
-            "a Como el perfume del desenga",
-            "de así estoy yo sin t",
-            "t Más triste",
-            "qu un torero al otr",
-            "lado del telón de acer/n"
+            "Viole",
+            "nto como un niño sin cumple año",
+            "s Como el perfume del desenga",
+            "ño, así estoy yo sin t",
+            "i Más triste",
+            "que un torero al otro",
+            "lado del telón de acero/n"
         ],
         [
             "Así e",
-            "est yo, así e",
-            "est yo así e",
-            "est yo sin ti/n",
+            "stoy yo, así e",
+            "stoy yo así e",
+            "stoy yo sin ti/n",
             "",
             "",
             "",
@@ -438,30 +324,24 @@
         [
             "Más triste",
             "que un torero al otro lado del teló",
-            "t de acero/n"
+            "n de acero/n"
         ],
         [
-            "Como una boda por lo que vi M/n"
-        ],
-        [
-            "Macabr c",
-            "co el vientre de los misiles C/n"
-        ],
-        [
-            "Com un pájaro en un despío A/n"
-        ],
-        [
-            "A estoy yo sin ti/n"
+            "Como una boda por lo que vi M",
+            "acabro c",
+            "omo el vientre de los misiles C",
+            "omo un pájaro en un despío A",
+            "sí estoy yo sin ti/n"
         ],
         [
             "Más triste que u",
-            "u torero al otro la",
-            "l del telón de acero/n"
+            "n torero al otro la",
+            "do del telón de acero/n"
         ],
         [
-            "Así esto",
+            "Así estoy",
             "yo, así esto",
-            "e yo así esto",
+            "y yo así estoy",
             "yo sin ti",
             "",
             ""

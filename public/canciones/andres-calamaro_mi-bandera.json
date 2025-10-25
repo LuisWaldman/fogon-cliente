@@ -12,19 +12,27 @@
                 "acordes": [
                     "A",
                     "A",
-                    "A"
+                    "A",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "E"
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
+                    "A",
+                    "E",
                     "E"
                 ]
             },
@@ -33,15 +41,18 @@
                 "acordes": [
                     "F#m",
                     "F#m",
-                    "A",
-                    "A"
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "A",
-                    "A"
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7"
                 ]
             },
             {
@@ -54,20 +65,27 @@
             {
                 "nombre": "parte6",
                 "acordes": [
-                    "F#m",
-                    "F#m",
-                    "F#m"
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "E",
+                    "B7",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte7",
                 "acordes": [
-                    "F#m"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte8",
                 "acordes": [
+                    "A",
+                    "A",
+                    "B7",
+                    "B7",
                     "E",
                     "E"
                 ]
@@ -77,49 +95,6 @@
                 "acordes": [
                     "E",
                     "B7",
-                    "B7"
-                ]
-            },
-            {
-                "nombre": "parte10",
-                "acordes": [
-                    "E",
-                    "E"
-                ]
-            },
-            {
-                "nombre": "parte11",
-                "acordes": [
-                    "C#m",
-                    "C#m",
-                    "A",
-                    "E",
-                    "B7",
-                    "A"
-                ]
-            },
-            {
-                "nombre": "parte12",
-                "acordes": [
-                    "A"
-                ]
-            },
-            {
-                "nombre": "parte13",
-                "acordes": [
-                    "A",
-                    "A",
-                    "B7",
-                    "B7",
-                    "E",
-                    "E"
-                ]
-            },
-            {
-                "nombre": "parte14",
-                "acordes": [
-                    "E",
-                    "B7",
                     "E",
                     "F#m",
                     "B7",
@@ -127,25 +102,15 @@
                 ]
             },
             {
-                "nombre": "parte15",
+                "nombre": "parte10",
                 "acordes": [
                     "E",
                     "E",
                     "E",
                     "F#",
                     "F#",
-                    "F#"
-                ]
-            },
-            {
-                "nombre": "parte16",
-                "acordes": [
-                    "F#"
-                ]
-            },
-            {
-                "nombre": "parte17",
-                "acordes": [
+                    "F#",
+                    "F#",
                     "F#",
                     "F#",
                     "C#7",
@@ -153,14 +118,9 @@
                 ]
             },
             {
-                "nombre": "parte18",
+                "nombre": "parte11",
                 "acordes": [
-                    "F#"
-                ]
-            },
-            {
-                "nombre": "parte19",
-                "acordes": [
+                    "F#",
                     "C#7",
                     "F#",
                     "G",
@@ -194,122 +154,98 @@
             8,
             9,
             10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19
+            11
         ]
     },
     "letras": [
         [
             "fue que me o",
-            "olvi cuando me f",
-            "fu D/n"
+            "lvidé cuando me f",
+            "ui D",
+            "e cada lug",
+            "ar donde viví/n"
         ],
         [
-            "D cada lug",
-            "l donde viví/n"
-        ],
-        [
-            "N/n"
-        ],
-        [
-            "N pude darme c",
-            "cuen hasta ho",
-            "h No pedí nacer",
-            "as/n"
+            "N",
+            "o pude darme c",
+            "uenta hasta ho",
+            "y No pedí nacer",
+            "así/n"
         ],
         [
             "Pero así so",
-            "s Int/n"
-        ],
-        [
-            "Int no volve",
-            "v la vista atrá/n"
+            "y Int",
+            "ento no volve",
+            "r la vista atrás/n"
         ],
         [
             "No c",
-            "cre que sea u",
-            "un actitud/n"
+            "reo que sea u",
+            "na actitud/n"
         ],
         [
-            "Conser/n"
-        ],
-        [
-            "Co la estupidez",
-            "la salud E/n"
-        ],
-        [
-            "E el premio que la v",
-            "vid me di",
-            "d por venir/n"
+            "Conser",
+            "var la estupidez",
+            "la salud E",
+            "s el premio que la v",
+            "ida me di",
+            "o por venir/n"
         ],
         [
             "Tengo herm",
-            "her una hermana/n"
+            "anos una hermana/n"
         ],
         [
             "Además d",
-            "d todas las r",
-            "raz del mundo",
+            "e todas las r",
+            "azas del mundo",
             "la chica más",
-            "hermos que se ll",
-            "ll/n"
+            "hermosa que se ll",
+            "ama/n"
         ],
         [
-            "Liberta/n"
+            "Libertad/n"
         ],
         [
             "Mi bande",
-            "b es la madera de",
-            "cualquier Que e",
-            "escuc el til",
-            "t de su co",
-            "cora/n"
+            "ra es la madera de",
+            "cualquiera Que e",
+            "scuche el til",
+            "ín de su co",
+            "razón/n"
         ],
         [
-            "Solament",
+            "Solamente",
             "tengo en mente lo d",
-            "d siempre No se t",
-            "tra nada má",
-            "m que de v",
-            "viv/n"
+            "e siempre No se t",
+            "rata nada má",
+            "s que de v",
+            "ivir/n"
         ],
         [
             "Tal tiempo",
             "posible nave",
-            "na en la altu",
-            "a Si no, la vid",
+            "gar en la altu",
+            "ra Si no, la vida",
             "es dura Porque s",
-            "s Por/n"
-        ],
-        [
-            "Po sí M/n"
-        ],
-        [
-            "M perdí el t",
-            "tr de los demás",
+            "í Por",
+            "que sí M",
+            "e perdí el t",
+            "ren de los demás",
             "ahora quiero sol",
-            "solam una canción/n"
+            "amente una canción/n"
         ],
         [
-            "Vo/n"
-        ],
-        [
-            "V siguiendo e",
-            "e ejemplo del sal",
-            "sa Solo creo e",
-            "e mi propia direcci",
-            "d en la ver",
-            "ve",
+            "Vo",
+            "y siguiendo e",
+            "l ejemplo del sal",
+            "món Solo creo e",
+            "n mi propia direcci",
+            "ón en la ver",
+            "dad",
             "",
             "",
-            "e",
+            "en",
             "la verdad",
             "",
             "",
