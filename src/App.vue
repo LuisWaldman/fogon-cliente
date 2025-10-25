@@ -4,10 +4,10 @@ import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
 import { useRouter } from 'vue-router'
 import editVista from './components/comp_tocar/editVista.vue'
+import { OrigenCancion } from './modelo/cancion/origencancion'
 
 const appStore = useAppStore()
 onMounted(() => {
-
   const urlParams = new URLSearchParams(window.location.search)
   const cancionUrl = urlParams.get('cancion')
   // Redirect from fogon.ar to www.fogon.ar with the same parameters
@@ -35,15 +35,28 @@ function cerrareditarPantalla() {
   refEditandoVista.value = false
 }
 
+
+const router = useRouter()
+function clickEditar() {
+  // Redirect to edit page for the current song
+  appStore.editandocancion = appStore.cancion
+  appStore.origenEditando = new OrigenCancion(
+    appStore.origenCancion.origenUrl,
+    appStore.origenCancion.fileName,
+    appStore.origenCancion.usuario,
+  )
+  appStore.cancionModificada = false
+  router.push('/editar')
+}
+
 function abrirVistaEdicion() {
   refEditandoVista.value = true
 }
-
 </script>
 
 <template>
   <div id="contenedor-musical" class="pantalla">
-    <Cabecera @abrirVistaEdicion="abrirVistaEdicion" />
+    <Cabecera @abrirVistaEdicion="abrirVistaEdicion" @editarCancion="clickEditar" />
     <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
       <img
         src="/img/iconogrande.png"
@@ -54,11 +67,10 @@ function abrirVistaEdicion() {
       <div>{{ appStore.estadosApp.texto }}</div>
     </div>
     <router-view v-if="appStore.estadosApp.estado === 'ok'" />
-        <editVista
+    <editVista
       v-if="refEditandoVista"
       @cerrar="cerrareditarPantalla"
     ></editVista>
-
   </div>
 </template>
 

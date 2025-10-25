@@ -113,40 +113,20 @@ function estiloVistaTerciaria() {
   return `width: ${ancho}%;`
 }
 
-
 const refSincronizandoMedios = ref(false)
 function clickCerrarMedios() {
   refSincronizandoMedios.value = false
 }
 
-const router = useRouter()
-function clickEditar() {
-  // Redirect to edit page for the current song
-  appStore.editandocancion = appStore.cancion
-  appStore.origenEditando = new OrigenCancion(
-    appStore.origenCancion.origenUrl,
-    appStore.origenCancion.fileName,
-    appStore.origenCancion.usuario,
-  )
-  appStore.cancionModificada = false
-  router.push('/editar')
-}
 
-function cerrareditarPantalla() {
-  refEditandoVista.value = false
-}
 function cambioestado(estado: number) {
   console.log('Cambio de estado en tocar.vue', estado)
   appStore.aplicacion.CambioEstadoMedio(estado)
-}
-function escuchar() {
-  console.log('Escuchar')
 }
 </script>
 
 <template>
   <div class="tocar-fluid">
-
     <sincronizarMedias
       v-if="refSincronizandoMedios"
       @cerrar="clickCerrarMedios"
@@ -247,7 +227,6 @@ function escuchar() {
           :compas="appStore.compas"
         ></TocarCuadrado>
       </div>
-
     </div>
 
     <div class="controladoresTiempo">
