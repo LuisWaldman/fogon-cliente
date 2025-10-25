@@ -230,9 +230,9 @@ function cambioestado(estado: number) {
     </div>
 
     <div class="controladoresTiempo">
-      <ControladorTiempo v-if="$route.path === '/tocar'"> </ControladorTiempo>
+      <ControladorTiempo > </ControladorTiempo>
 
-      <Metronomo v-if="$route.path === '/tocar'" ref="metronomeRef"></Metronomo>
+      <Metronomo ref="metronomeRef"></Metronomo>
     </div>
   </div>
 </template>

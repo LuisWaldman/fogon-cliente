@@ -125,6 +125,14 @@ export default class Aplicacion {
     this.reproductor.iniciarReproduccion()
   }
 
+  next() {
+    const appStore = useAppStore()
+    appStore.estadosApp.paginaLista = ''
+    appStore.estadosApp.estado = 'cargando'
+    appStore.estadosApp.texto = 'Cargando cancion...'
+    this.reproductor.Next()
+  }
+
   pause() {
     this.reproductor.detenerReproduccion()
   }

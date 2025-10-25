@@ -264,16 +264,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
             Inicio
           </a>
         </div>
-
-        <div @click="clickOpcion('canciones')" class="config-menu-item">
-          <a
-            href="#"
-            class="nav-link text-white"
-            :class="{ activo: viendo === 'canciones' }"
-          >
-            Canciones
-          </a>
-        </div>
+        
 
         <div @click="clickOpcion('listas')" class="config-menu-item">
           <a
@@ -282,6 +273,16 @@ function AgregarLista(index: number, listaseleccionada: string) {
             :class="{ activo: viendo === 'listas' }"
           >
             🗒️ Listas
+          </a>
+        </div>
+
+        <div @click="clickOpcion('canciones')" class="config-menu-item">
+          <a
+            href="#"
+            class="nav-link text-white"
+            :class="{ activo: viendo === 'canciones' }"
+          >
+            Canciones
           </a>
         </div>
       </div>
