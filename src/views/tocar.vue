@@ -13,9 +13,7 @@ import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
-import editVista from '../components/comp_tocar/editVista.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
-import { useRouter } from 'vue-router'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
@@ -131,6 +129,7 @@ function cambioestado(estado: number) {
   console.log('Cambio de estado en tocar.vue', estado)
   appStore.aplicacion.CambioEstadoMedio(estado)
 }
+const refAdvertencia = ref(true)
 </script>
 
 <template>
@@ -170,8 +169,43 @@ function cambioestado(estado: number) {
       </div>
 
       <div class="columnas lateral-container" :style="estiloVistaPrincipal()">
+        <div
+          class="sinPentagrama"
+          v-if="
+            appStore.cancion.pentagramas.length === 0 &&
+            vista.muestra == 'partitura'
+          "
+        >
+          No hay partituras
+        </div>
+                <div
+          class="advertencia"
+          @click="refAdvertencia = false"
+          v-if="
+          (vista.muestra == 'karaoke') &&
+          refAdvertencia &&
+          (appStore.cancion.calidad != undefined && (appStore.cancion.calidad < 1))
+            
+          "
+
+        >
+          Texto No Calibrados. Corregilos desde: ✍️ Editar
+        </div>
+        <div
+          class="advertencia"
+          @click="refAdvertencia = false"
+          v-if="
+          refAdvertencia &&
+      ((appStore.cancion.calidad != undefined && (appStore.cancion.calidad < 2)) &&
+            (vista.muestra == 'letrayacordes'  || vista.muestra == 'acordes'))
+          "
+
+        >
+          Acordes No Calibrados. Corregilos desde: ✍️ Editar
+        </div>
         <TocarLetraAcorde
-          v-if="vista.muestra == 'letrayacordes'"
+          v-if="vista.muestra == 'letrayacordes' || (appStore.cancion.pentagramas.length === 0 &&
+            vista.muestra == 'partitura')"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarLetraAcorde>
@@ -191,7 +225,10 @@ function cambioestado(estado: number) {
           :compas="appStore.compas"
         ></TocarAcorde>
         <TocarPentagrama
-          v-if="vista.muestra == 'partitura'"
+          v-if="
+            vista.muestra == 'partitura' &&
+            appStore.cancion.pentagramas.length > 0
+          "
           :cancion="appStore.cancion"
           :editando="false"
           :compas="appStore.compas"
@@ -335,5 +372,16 @@ input[type='range'] {
   .config-row {
     font-size: 1em;
   }
+}
+.sinPentagrama {
+  width: 100%;
+  background-color: brown;
+  font-size: 1.2em;
+}
+.advertencia {
+  width: 100%;
+  background-color: rgb(219, 172, 85);
+  color: red;
+  font-size: 1.2em;
 }
 </style>

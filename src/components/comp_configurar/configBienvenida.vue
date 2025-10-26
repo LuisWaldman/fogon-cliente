@@ -10,9 +10,21 @@
     <div>
       Podes cantar canciones como:
 
-      <li><a href="/tocar?cancion=andres-calamaro_flaca">Flaca, Andres Calamaro</a></li>
-      <li><a href="/tocar?cancion=sui-generis_botas-locas">Botas Locas, Sui Generis</a></li>
-      <li><a href="/tocar?cancion=ruben-rada_quien-va-a-cantar">"Quien va a cantar", Ruben Rada</a></li>
+      <li>
+        <a href="/tocar?cancion=andres-calamaro_flaca"
+          >Flaca, Andres Calamaro</a
+        >
+      </li>
+      <li>
+        <a href="/tocar?cancion=sui-generis_botas-locas"
+          >Botas Locas, Sui Generis</a
+        >
+      </li>
+      <li>
+        <a href="/tocar?cancion=ruben-rada_quien-va-a-cantar"
+          >"Quien va a cantar", Ruben Rada</a
+        >
+      </li>
     </div>
 
     <div>
