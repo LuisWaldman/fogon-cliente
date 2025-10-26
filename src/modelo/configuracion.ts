@@ -6,8 +6,6 @@ export class VistaTocar {
   public modo: string = 'doble' // 'simple', 'doble', 'triple'
   public muestra: string = 'letrayacordes' // 'simple', 'doble', 'triple'
   public muestraLetra: boolean = false
-  public viendoLetra: boolean = false
-  public viendoAcordes: boolean = false
   public viendoPartituras: boolean = false
   public reproduce: string = 'video' // 'simple', 'doble', 'triple'
   public invertido: boolean = false

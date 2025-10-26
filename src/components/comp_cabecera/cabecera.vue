@@ -186,7 +186,7 @@ function clickEditar() {
               @click="abrirVistaEdicion"
               v-if="$route.path != '/configurar'"
             >
-              👁️‍🗨️ Vista
+              👁️‍🗨️ Ver
             </a>
           </li>
 
