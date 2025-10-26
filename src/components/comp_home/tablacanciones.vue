@@ -179,7 +179,7 @@ function Borrar(index: number) {
                       :key="lista"
                       :value="'local_' + lista"
                     >
-                      💾 {{ lista }}
+                      🧠 {{ lista }}
                     </option>
                   </optgroup>
                   <optgroup>
@@ -188,7 +188,7 @@ function Borrar(index: number) {
                       :key="lista"
                       :value="'server_' + lista"
                     >
-                      🔌 {{ lista }}
+                      🗄️ {{ lista }}
                     </option>
                   </optgroup>
                 </select>

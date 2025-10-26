@@ -110,7 +110,7 @@ function clickAgregar() {
             :key="lista"
             :value="'local_' + lista"
           >
-            💾 {{ lista }}
+            🧠 {{ lista }}
           </option>
         </optgroup>
         <optgroup>
@@ -119,7 +119,7 @@ function clickAgregar() {
             :key="lista"
             :value="'server_' + lista"
           >
-            🔌 {{ lista }}
+            🗄️ {{ lista }}
           </option>
         </optgroup>
       </select>

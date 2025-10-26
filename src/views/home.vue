@@ -310,7 +310,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
             class="nav-link text-white"
             :class="{ activo: viendoOrigen === 'localstorage' }"
           >
-            💾 LocalStorage
+            🧠 LocalStorage
           </a>
         </div>
 
@@ -324,7 +324,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
             class="nav-link text-white"
             :class="{ activo: viendoOrigen === 'server' }"
           >
-            🔌 Servidor
+            🗄️ Servidor
           </a>
         </div>
       </div>
