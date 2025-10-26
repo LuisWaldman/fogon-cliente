@@ -182,7 +182,7 @@ const refAdvertencia = ref(true)
           class="advertencia"
           @click="refAdvertencia = false"
           v-if="
-          (vista.muestra == 'karaoke') &&
+          (vista.muestra == 'karaoke') && vista.reproduce == 'video' &&
           refAdvertencia &&
           (appStore.cancion.calidad != undefined && (appStore.cancion.calidad < 1))
             
@@ -195,7 +195,7 @@ const refAdvertencia = ref(true)
           class="advertencia"
           @click="refAdvertencia = false"
           v-if="
-          refAdvertencia &&
+          refAdvertencia && vista.reproduce == 'video' &&
       ((appStore.cancion.calidad != undefined && (appStore.cancion.calidad < 2)) &&
             (vista.muestra == 'letrayacordes'  || vista.muestra == 'acordes'))
           "
