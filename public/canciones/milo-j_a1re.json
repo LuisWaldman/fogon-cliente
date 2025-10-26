@@ -2,134 +2,221 @@
     "cancion": "a1re",
     "banda": "milo-j",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F7M(11+)",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "B7(11)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
                     "Am",
                     "B7(11)",
-                    "F7M(11+)"
+                    "B7(11)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "Em",
-                    "F7M(11+)",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B7(11)",
-                    "C",
-                    "Em",
                     "F7M(11+)",
                     "C",
-                    "B7(11)",
                     "C",
-                    "A7"
+                    "C",
+                    "Am",
+                    "C",
+                    "B7(11)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)",
+                    "F7M(11+)"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "A7"
+                    "F7M(11+)",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "ugada, suelo ahogarme/nSin pensar en quiÃ©n ve"
+            "Por la mar ahoga",
+            "da suelo ahogarme/n"
         ],
         [
-            "ndrÃ¡ a salvarme/nY hasta que se ent"
+            "Sin pensar en quien v",
+            "endrá salvarme",
+            "hasta que se ente",
+            "re en el pecho me d",
+            "uele no logro mov",
+            "erme, falta el a",
+            "ire Por la mar ah",
+            "ogada suelo ahog",
+            "arme Sin pensar en",
+            "quien vendrá sa",
+            "lvarme hasta que se",
+            "entere en el pecho",
+            "me duele no logro",
+            "moverme, falta",
+            "el aire tam",
+            "bién gente la cual pre",
+            "guntar Contar la mierda que",
+            "me guardo porque suelo",
+            "es que tal vez me",
+            "llames loco por cosa",
+            "s externas Pensan",
+            "do de mal la noche se h",
+            "acen eternas",
+            "mi sal fuerte hasta que no",
+            "lo aguanté Avanzan",
+            "las pericias hay heridas que",
+            "aún no cerré La vida e",
+            "stá saliendo poco la",
+            "muerte se acerca De",
+            "moños de la mente están p",
+            "idiendo que venga/n"
         ],
         [
-            "eren, el pecho me duele/nY no logro move"
+            "No",
+            "hay lugar",
+            "donde ir,",
+            "salve",
+            "me/n"
         ],
         [
-            "rme y falta el aire/nPor la madr"
-        ],
-        [
-            "ugada, suelo ahogarme/nSin pensar en quiÃ©n ve"
-        ],
-        [
-            "ndrÃ¡ a salvarme/nY hasta que se ente"
-        ],
-        [
-            "ren, el pecho me duele/nY no logro move"
-        ],
-        [
-            "rme y falta el aire/nY tambiÃ©n g"
-        ],
-        [
-            "ente a la cual preguntar/nContar la mierda que me "
-        ],
-        [
-            "guardo, porque lloro al soltar/nY es que tal vez me llamen "
-        ],
-        [
-            "loco, por cosas externas/nPensando de m"
-        ],
-        [
-            "Ã¡', las noches se hacen e",
-            "ternas/nY me hice e"
-        ],
-        [
-            "l fuerte hasta que no lo aguantÃ©/nAvanzan las pericias, "
-        ],
-        [
-            "y hay heridas que aÃºn no cerrÃ©/nLa vida estÃ¡ sabiendo a"
-        ],
-        [
-            " poco y la muerte se acerca/nDemonio' de la men"
-        ],
-        [
-            "te estÃ¡n pidiendo que v",
-            "enga",
-            "/nNo hay lugar a donde i"
-        ],
-        [
-            "r/n"
-        ],
-        [
-            "Por las madrugadas suelo ahogarme/nSin pensar en qu"
-        ],
-        [
-            "iÃ©n vendrÃ¡ a salvarme/nY hasta que se en"
-        ],
-        [
-            "teren, el pecho me duele/nY no logro mov"
-        ],
-        [
-            "erme y falta el aire/nPor las madr"
-        ],
-        [
-            "ugadas suelo ahogarme",
+            "Por la mar ahog",
+            "ada suelo ahoga",
+            "rme Sin pensar en quie",
+            "n vendrá salv",
+            "arme hasta que se en",
+            "tere en el pecho me",
+            "duele no logro m",
+            "overme, falta el",
+            "aire",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
-        [],
-        []
+        [
+            "No",
+            "hay lugar",
+            "donde ir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No hay lugar donde ir"
+        ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "ydqMRSjE4Jo",
+            "delay": 150.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

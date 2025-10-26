@@ -2,28 +2,222 @@
     "cancion": "vudu",
     "banda": "milo-j",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 184,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
                     "D",
-                    "Am",
-                    "E",
-                    "B7"
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Em",
-                    "D",
+                    "Am",
                     "Am",
                     "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "B7"
                 ]
             }
@@ -31,141 +225,202 @@
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "mÃ¡s de lo que alguna vez llegamos a soÃ±ar/n"
+            "No quie",
+            "ro más",
+            "de lo que alg",
+            "una vez seamos",
+            "soñar/n"
         ],
         [
-            "Eso se quedÃ³ en mi mente por tu horrible ser/n"
+            "Eso se que",
+            "dó en mi mente por",
+            "torrilecer./n"
         ],
         [
-            "Tal vez fue la vida quien manchÃ³ tu cora",
-            "zÃ³n/nOjalÃ¡ algÃºn dÃ­a est"
+            "Tal",
+            "vez fue la vida que",
+            "manchó tu co",
+            "razón. Ojal",
+            "algún día te mejor,",
+            "pero me hicist",
+            "e mal./n"
         ],
         [
-            "Ã©s mejor, pero me hiciste mal/n"
+            "Júgate conmi",
+            "go por tu fe",
+            "licidad a",
+            "cepte ser el p",
+            "erdedor de un ju",
+            "ego de astre.",
+            "/n"
         ],
         [
-            "Jugaste conmigo y, por tu felicidad/n"
+            "Yo",
+            "vi al muñec",
+            "budo que volve",
+            "rá te latimar.",
+            "veces el fuego i",
+            "ntern",
+            "le ti",
+            "ra de aguas sin",
+            "pensarl",
+            "o. Te im",
+            "portó un carajo el",
+            "sentimien",
+            "que t",
+            "uvimos",
+            "alguna vez",
+            "./n"
         ],
         [
-            "AceptÃ© ser el perdedor de un juego de a",
-            " tres/nYo fui el muÃ±eco vudÃº qu"
+            "No",
+            "quiero cha",
+            "rlarlo./n"
         ],
         [
-            "e vos lograste lastima",
-            "r/nA ese fuego in"
+            "Ya te di cha",
+            "nce de arreglar tu",
+            "mambo./n"
         ],
         [
-            "terno/nLe tiraste agua sin pen"
+            "Yo seré impe",
+            "rfecto, pero vos",
+            "sos mala",
+            "nunca act",
+            "uve dentro de tu",
+            "corazón.",
+            "",
+            "",
+            "",
+            "sí, tus",
+            "ojos que afea",
+            "lumbraron ese",
+            "diariz. Pero",
+            "el tiempo te hizo ser",
+            "lo que me habías j",
+            "urado destruir./n"
         ],
         [
-            "sarlo/nTe importÃ³ un carajo el sent"
+            "Tu boc",
+            "a no era mala, p",
+            "ero sus palabr",
+            "as sí.",
+            "",
+            "no",
+            "sé muy bi",
+            "en qué",
+            "pasó",
+            "con el am",
+            "or",
+            "que de",
+            "cíamos tene",
+            "r,",
+            "que",
+            "fingíamos te",
+            "ner./n"
         ],
         [
-            "imiento/nQue tuvimos alguna "
+            "No q",
+            "uiero más",
+            "de lo que",
+            "alguna vez sea",
+            "mos soñ",
+            "ar. Eso se",
+            "quedó en mi mente",
+            "por torrile",
+            "cer./n"
         ],
         [
-            "vez",
-            "/nNo quiero char"
+            "Tal vez fue la v",
+            "ida que manchó",
+            "tu corazón. O",
+            "jalá algún día te m",
+            "ejor, pero me h",
+            "iciste mal. J",
+            "úbate c",
+            "onmigo por tu",
+            "felicida",
+            "acepte ser",
+            "el perdedor de un",
+            "juego de as",
+            "tre.",
+            "/n"
         ],
         [
-            "larlo/nYa te di chance de arreglar tu' "
+            "Yo vi al muñ",
+            "eco budo que vo",
+            "lverá te latim",
+            "ar. Ese fue",
+            "go inte",
+            "rno le",
+            "tiraste agua",
+            "sin pensa",
+            "rlo. Te",
+            "importó un carajo",
+            "el sentimi",
+            "ento que",
+            "tuvimo",
+            "s alguna v",
+            "ez./n"
         ],
         [
-            "mambo'/nYo serÃ© imperfecto, pero vos sos"
+            "No",
+            "quiero",
+            "charlar",
+            "lo. Ya te di",
+            "chance de arregl",
+            "ar tu mamb",
+            "o. Yo seré",
+            "imperfecto, pero",
+            "vos sos ma",
+            "la nunc",
+            "actuve dentro",
+            "de tu corazón.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " mala y/nNunca estuve dentro de tu cora"
-        ],
-        [
-            "zÃ³n",
-            "/nY"
-        ],
-        [
-            " sÃ­, tus ojos cafÃ© alumbraron ese d",
-            "Ã­a gris/nPero el tiempo te hizo ser lo que me habÃ­as jurado"
-        ],
-        [
-            " destruir/nTu boca no era mala, pero sus pa"
-        ],
-        [
-            "labras, sÃ­",
-            "/nY no "
-        ],
-        [
-            "sÃ© muy bien/nQuÃ© pasÃ³ co"
-        ],
-        [
-            "n el amor/nQue decÃ­"
-        ],
-        [
-            "amos tener/nQue fingÃ­"
-        ],
-        [
-            "amos tene",
-            "r/nNo quiero "
-        ],
-        [
-            "mÃ¡s de lo que alguna vez llegamos a soÃ±ar/n"
-        ],
-        [
-            "Eso se quedÃ³ en mi mente por tu horrible ser/n"
-        ],
-        [
-            "Tal vez fue la vida quien manchÃ³ tu cora",
-            "zÃ³n/nOjalÃ¡ algÃºn dÃ­a est"
-        ],
-        [
-            "Ã©s mejor, pero me hiciste mal/n"
-        ],
-        [
-            "Jugaste conmigo y, por tu felicidad/n"
-        ],
-        [
-            "AceptÃ© ser el perdedor de un juego de a",
-            " 3/nYo fui el muÃ±eco"
-        ],
-        [
-            " vudÃº que vos lograste las",
-            "timar/nA ese fuego in"
-        ],
-        [
-            "terno/nLe tiraste agua sin pen"
-        ],
-        [
-            "sarlo/nTe importÃ³ un carajo el sent"
-        ],
-        [
-            "imiento/nQue tuvimos alguna "
-        ],
-        [
-            "vez",
-            "/nNo quiero char"
-        ],
-        [
-            "larlo/nYa te di chance de arreglar tu' "
-        ],
-        [
-            "mambo'/nYo serÃ© imperfecto, pero vos sos"
-        ],
-        [
-            " mala y/nNunca estuve dentro de tu cora"
-        ],
-        [
-            "zÃ³n",
-            ""
+            "No quiero más de lo que alguna vez se amaba."
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "_uopUKmactQ",
+            "delay": 0.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }
