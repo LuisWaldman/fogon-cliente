@@ -4,7 +4,7 @@ import { Perfil } from './perfil'
 export class VistaTocar {
   public tamanioLetra: number = 22
   public modo: string = 'doble' // 'simple', 'doble', 'triple'
-  public muestra: string = 'letrayacordes' // 'simple', 'doble', 'triple'
+  public muestra: string = 'karaoke' // 'simple', 'doble', 'triple'
   public muestraLetra: boolean = false
   public viendoPartituras: boolean = false
   public reproduce: string = 'video' // 'simple', 'doble', 'triple'

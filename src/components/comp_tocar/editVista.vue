@@ -13,6 +13,10 @@ const verLetra = ref(configPantalla.value.muestra === 'letrayacordes' || configP
 const verAcordes = ref(configPantalla.value.muestra === 'acordes' || configPantalla.value.muestra === 'letrayacordes')
 const verPartitura = ref(configPantalla.value.muestra === 'partitura')
 
+// Solo Sincro controls
+const soloVideo = ref(configPantalla.value.reproduce === 'video')
+const soloMidi = ref(configPantalla.value.reproduce === 'midi')
+
 exvistapantalla.value.altoPantallaDescuento =
   configPantalla.value.altoPantallaDescuento
 exvistapantalla.value.anchoPrincipal = configPantalla.value.anchoPrincipal
@@ -58,6 +62,12 @@ function cancelarConfiguracionPantalla() {
 }
 watch(configPantalla.value, () => {
   pantalla.setearEstilos()
+})
+
+// Watch for changes in reproduce to update solo buttons
+watch(() => configPantalla.value.reproduce, (newValue) => {
+  soloVideo.value = newValue === 'video'
+  soloMidi.value = newValue === 'midi'
 })
 
 
@@ -107,6 +117,33 @@ function ClickViendoPartitura() {
   actualizarModoMostrar()
 }
 
+// Solo Sincro functions
+function ClickSoloVideo() {
+  if (soloVideo.value) {
+    // If already selected, deselect
+    soloVideo.value = false
+    configPantalla.value.reproduce = 'nada'
+  } else {
+    // Select video and deselect MIDI
+    soloVideo.value = true
+    soloMidi.value = false
+    configPantalla.value.reproduce = 'video'
+  }
+}
+
+function ClickSoloMidi() {
+  if (soloMidi.value) {
+    // If already selected, deselect
+    soloMidi.value = false
+    configPantalla.value.reproduce = 'nada'
+  } else {
+    // Select MIDI and deselect video
+    soloMidi.value = true
+    soloVideo.value = false
+    configPantalla.value.reproduce = 'midi'
+  }
+}
+
 </script>
 
 <template>
@@ -114,8 +151,20 @@ function ClickViendoPartitura() {
     <div class="tituloeditSize">VISTA GENERAL</div>
           <div>
         <div class="config-row">
+▶️ Toca
+        <span
+          :class="{ seleccionada: soloVideo }"
+          @click="ClickSoloVideo()"
+        >[VIDEO 🎬]</span>
+        <span
+          :class="{ seleccionada: soloMidi }"
+          @click="ClickSoloMidi()"
+        >[MIDI 🎹]</span>
+        </div>
+
+        <div class="config-row">
           
-👁️‍🗨️ 
+👁️‍🗨️ Vista
       <span
         :class="{ seleccionada: verLetra  }"
         @click="ClickViendoLetra()"
@@ -251,14 +300,6 @@ function ClickViendoPartitura() {
       }"
     >
 
-      <div class="config-row">
-        Reproduce
-        <select v-model="configPantalla.reproduce">
-          <option value="nada">Nada</option>
-          <option value="video">Video</option>
-          <option value="midi">MIDI</option>
-        </select>
-      </div>
     </div>
 
     <div class="config-row">
