@@ -4,14 +4,12 @@ import Home from './views/home.vue'
 import Tocar from './views/tocar.vue'
 import Buscar from './views/buscar.vue'
 import Editar from './views/editar.vue'
-import Listas from './views/listas.vue'
 import Configurar from './views/configurar.vue'
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: Home },
   { path: '/editar', component: Editar },
   { path: '/tocar', component: Tocar, props: true },
-  { path: '/listas', component: Listas },
   { path: '/buscar', component: Buscar },
   { path: '/configurar', component: Configurar },
 ]

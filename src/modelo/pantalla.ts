@@ -4,10 +4,7 @@ export class Pantalla {
   public configuracion: Configuracion = Configuracion.getInstance()
 
   public getConfiguracionPantalla() {
-    return this.configuracion.GetConfiguracionPantalla(
-      window.innerWidth,
-      window.innerHeight,
-    )
+    return this.configuracion.GetConfiguracionPantalla()
   }
 
   public getAnchoPantalla() {

@@ -2,14 +2,12 @@ import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { FiltroIndice } from './filtroIndice'
 
 export class FiltroCalidad extends FiltroIndice {
-  minCalidad: number
-  maxCalidad: number
-  constructor(minCalidad: number, maxCalidad: number) {
+  calidad: string[] = []
+  constructor(calidad: string) {
     super()
-    this.minCalidad = minCalidad
-    this.maxCalidad = maxCalidad
+    this.calidad = calidad.split(',')
   }
   override FiltroOk(item: ItemIndiceCancion): boolean {
-    return item.calidad >= this.minCalidad && item.calidad <= this.maxCalidad
+    return this.calidad.some((calidad) => parseInt(calidad) == item.calidad)
   }
 }

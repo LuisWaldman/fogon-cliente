@@ -8,29 +8,116 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
                     "C",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D"
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
@@ -39,88 +126,108 @@
             1,
             2,
             3,
-            1,
-            1,
-            0,
-            1,
-            2,
-            3,
-            1,
-            0,
-            0,
-            0,
-            3,
-            1,
-            2,
-            0,
-            1,
-            2,
-            3,
-            1,
-            2
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "Anoche hubo fiesta e",
-            "n el club del blues local",
-            " /n"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Anoche hubo fiesta en el club del blues loca",
-            "l /n"
+            "Anoche hub",
+            "o f",
+            "i",
+            "e",
+            "s",
+            "tas en",
+            "el club de blues local,",
+            "sent",
+            "ados e",
+            "n una mesa co",
+            "n amigos de verdad./n",
+            ""
         ],
         [
-            "Sentados en una mesa ",
-            "con amigos de verdad",
-            " /n"
+            "Es",
+            "tamos tomando",
+            "vino fino natural,",
+            "est",
+            "amos",
+            "tomando v",
+            "ino fino natura",
+            "l,",
+            "que buen",
+            "o estuvo la fiesta e",
+            "n el club de blues local",
+            "./n",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "Estabamos tomando ",
-            "vino fino natural",
-            " /n"
+            "Estam",
+            "os fumando",
+            "una p",
+            "la",
+            "nt",
+            "a natural. Recorde q",
+            "u",
+            "e",
+            "",
+            "me dijiste q",
+            "ue querías",
+            "r",
+            "e",
+            "g",
+            "r",
+            "esar,",
+            "siempre t",
+            "e estaré esperando e",
+            "n el club de blues loc",
+            "al./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "Estabamos tomando vino fino natura",
-            "l /n"
+            "Anoche hu",
+            "bo fiestas e",
+            "n el club de blues local./n",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "Que bueno estuvo la fiesta ",
-            "en el club del blues local",
-            " /n"
-        ],
-        [
-            "Estabamos fumando una planta natura",
-            "l /n"
-        ],
-        [
-            "Recorde que me dijiste ",
-            "que querias regresar",
-            " /n"
-        ],
-        [
-            "Recorde que me dijiste ",
-            "que querias regresar",
-            " /n"
-        ],
-        [
-            "Siempre te estare esperando ",
-            "en el club del blues local",
-            " /n"
-        ],
-        [
-            "Anoche hubo fiesta ",
-            "en el club del blues local",
-            " /n"
-        ],
-        [
-            "Anoche hubo fiesta en el club del blues loca",
-            "l /nSentados en una mesa con amigos de verdad "
-        ],
-        []
+            "Sentados en u",
+            "na mesa con a",
+            "migos de verdad.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
@@ -128,5 +235,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

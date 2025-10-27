@@ -8,26 +8,181 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
-                    "Bm",
-                    "E",
-                    "D",
                     "A",
-                    "D"
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D/C#",
                     "Bm",
+                    "D",
+                    "D Bm",
+                    "D",
+                    "D",
+                    "D Bm",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
                     "E",
                     "D",
-                    "E",
+                    "D",
+                    "D",
                     "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
                     "A"
                 ]
             }
@@ -35,75 +190,156 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Ay! Rocío, caviar de Riofrío,/ntortolica en c"
+            "Hay rocillo, ca",
+            "viar de río frío, sol",
+            "a entre el gentío, tort",
+            "olica en celón./n",
+            ""
         ],
         [
-            "elo,/ncomo un "
+            "Como un grano de anís,",
+            "un huiquén en Paris,",
+            "un deshielón./n"
         ],
         [
-            "grano de anís,/nun wee"
+            "Un",
+            "ducados de más, q",
+            "ue desastre de adanes",
+            "llevas.",
+            "",
+            "quizá una canción, si",
+            "supieras que yo te hago c",
+            "aso de ombligos",
+            "brevas./n"
         ],
         [
-            "kend en París,/nun des"
+            "Cuantas n",
+            "oches al alma me v",
+            "arán jolacalba, que amena",
+            "za debajo del pelo",
+            "./n"
         ],
         [
-            "hielo./nUn Du"
+            "Cuantas tard",
+            "es dormido, volvido",
+            "la flor del subsuelo.",
+            "",
+            "después re",
+            "sucito como rat",
+            "oncito silvest",
+            "re./n"
         ],
         [
-            "cados de má",
-            "s,/nqué d"
+            "Tan boino, t",
+            "an paisano, tan bribo, t",
+            "an urbano, tan fulano, t",
+            "an picapedrestre./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "esastre de A",
-            "danes y E",
-            "vas,/nsi su"
+            "Cada mes cumples a",
+            "ños, saltando pelda",
+            "ños, dos dos, tres tres,",
+            "cinco cuatro./n"
         ],
         [
-            "pieras que yo/nte hago "
+            "C",
+            "omo un terco baby d",
+            "el vagón, al arce d",
+            "el teatro./n"
         ],
         [
-            "caso de omb",
-            "ligos a br",
-            "evas./nCuántas"
+            "Y",
+            "o te miro crecer c",
+            "on lavaba, mojando",
+            "zahuanes.",
+            "",
+            "me quedo dos velas c",
+            "on tan poquita tela, que",
+            "cortarte malditos don/n"
         ],
         [
-            " noches al alba/nque amenaza debajo del "
+            "Juanes./n"
         ],
         [
-            "pelo,/ncuántas"
+            "Sufro",
+            "tu adolescencia com",
+            "o una insolencia, que d",
+            "isfruta volviéndome l",
+            "oco./n"
         ],
         [
-            " tardes dormido,/nol"
+            "No seas h",
+            "ija de puta, si me d",
+            "as hakemate me enroco",
+            ".",
+            "me veng",
+            "o cantando conta",
+            "ndo mentiras ripiosas./n",
+            ""
         ],
         [
-            "vido la flor del subsu",
-            "elo./nY des"
+            "Sweet meloc",
+            "otoncita, bendición af",
+            "rodita, coronita d",
+            "e espinas rosas./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "pués resucit",
-            "o/ncomo "
+            "N",
+            "o me cuentes tu",
+            "vida, que no es comerci",
+            "al, me decías en ema",
+            "il parricida./n"
         ],
         [
-            "un ratonc",
-            "ito silve",
-            "stre,/ntan bri"
+            "Y",
+            "a no tienes edad,",
+            "añadías basta d",
+            "e despedidas.",
+            "",
+            "en lugar de llorar c",
+            "omo mano tenía u",
+            "n pentagrama./n"
         ],
         [
-            "bón, tan urbano,/ntan fu"
-        ],
-        [
-            "lano, tan p",
-            "icapedre",
-            "stre."
+            "Em",
+            "pecé esta canción pa",
+            "ra tu corazón, s",
+            "i la acabo me meto e",
+            "n la cama."
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
@@ -111,5 +347,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

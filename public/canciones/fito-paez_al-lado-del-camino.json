@@ -1,51 +1,56 @@
 {
     "cancion": "Al-Lado-Del-Camino",
     "banda": "fito-paez",
-    "escala": "C",
-    "tempo": 60,
-    "compas_cantidad": 4,
-    "compas_unidad": 4,
     "acordes": {
         "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C"
+                ]
+            },
             {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
+                    "C",
                     "F",
-                    "C"
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C/B",
-                    "Am",
-                    "Am/G",
+                    "C",
+                    "C",
+                    "C",
                     "F",
-                    "C"
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
-                    "C/B",
-                    "F/A",
-                    "G#",
-                    "C/G",
-                    "D7/F#"
+                    "Am",
+                    "Am",
+                    "F",
+                    "Am/G",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Fm",
-                    "C/E",
-                    "Eb",
-                    "D7",
-                    "Db",
-                    "G7",
-                    "C",
+                    "Am",
+                    "Am",
+                    "Am/G",
+                    "F",
+                    "F",
                     "F"
                 ]
             },
@@ -53,336 +58,622 @@
                 "nombre": "parte5",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Am/G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am/G",
+                    "Am/G",
+                    "Am/G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Am/G",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am/G",
+                    "Am/G",
+                    "Am/G",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "F/A",
+                    "Am/G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am/G",
+                    "F",
+                    "C",
+                    "C",
+                    "F",
+                    "Am",
+                    "Am/G",
+                    "F",
+                    "F",
+                    "F",
+                    "Am/G",
+                    "Am",
+                    "C",
+                    "Am/G",
+                    "Am/G",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am/G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "Am",
+                    "F",
+                    "Am/G",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am/G",
+                    "Am/G",
+                    "Am/G",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F/A",
+                    "F/A"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C/G",
+                    "C",
+                    "C",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C/E",
+                    "Eb",
+                    "Eb",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
                     "Fm",
                     "C",
-                    "F"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
             1,
             2,
             3,
             4,
-            4,
-            4,
-            4,
-            4,
-            4
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
+    "escala": "C",
     "letras": [
-        [],
-        [],
         [
-            " Me gusta estar al lado del camino/n"
-        ],
-        [
-            "Fumando el humo mientras tod",
-            "o pasa/n"
-        ],
-        [
-            " Me gusta abrir los ojos y estar vivo/n"
-        ],
-        [
-            " Tener que vérmelas con l",
-            "a resaca",
             "/n"
         ],
         [
-            " Entonces navegar se h",
-            "ace preciso/nEn b"
+            "Me",
+            "gusta es",
+            "tar al lado del ca",
+            "mino,",
+            "fumando",
+            "el humo mientras t",
+            "odo pasa./n"
         ],
         [
-            "arcos que se estrellen en la na",
-            "da",
+            "Me gusta abri",
+            "r los ojos esta",
+            "vivo,",
+            "tener que ver",
+            "melas con la r",
+            "esaca./n"
+        ],
+        [
+            "Entonces n",
+            "avegar se hace p",
+            "reciso en",
+            "barcos que se est",
+            "rellen en la nad",
+            "a./n"
+        ],
+        [
+            "Vivir atormen",
+            "tado de sentido",
+            "creo que esta",
+            "sí es la par",
+            "te más pesad",
+            "a./n"
+        ],
+        [
+            "En tiempos donde na",
+            "die escucha nad",
+            "ie,",
+            "en tiempos donde t",
+            "odos contra todo",
+            "s,",
+            "en tiempos ego",
+            "ístas mezqu",
+            "inos,",
+            "en tiempos donde si",
+            "empre estamos s",
+            "olos,",
+            "habrá que declarars",
+            "incompeten",
+            "te en tod",
+            "as las materias",
+            "de mercado./n"
+        ],
+        [
+            "Hab",
+            "rá que declararse",
+            "inocen",
+            "te habrá que",
+            "ser abyecto",
+            "desalma",
+            "do. Yo",
+            "ya no pertenezco",
+            "ningún ism",
+            "o, me",
+            "considero vivo",
+            "enterrado./n"
+        ],
+        [
+            "Yo",
+            "puse las canciones en",
+            "tu boca,",
+            "el ti",
+            "empo mi me puso",
+            "en otro lado",
+            ". Tendré que",
+            "hacer lo que es",
+            "no debido,",
+            "tendré que hacer",
+            "el bien hacer",
+            "el daño",
+            ". No olv",
+            "ides que el perdón es",
+            "lo divino",
+            "errar ve",
+            "ces suele ser h",
+            "umano./n"
+        ],
+        [
+            "No es bueno n",
+            "unca hacerse de",
+            "enemigos que",
+            "no estén",
+            "la altura del co",
+            "nflicto,",
+            "que pi",
+            "ensan que hacen una",
+            "guerra",
+            "se hacen pis en",
+            "cima como chi",
+            "cos,",
+            "que rondan por",
+            "siniestros min",
+            "isterios haci",
+            "endo la p",
+            "arodia del arti",
+            "sta./n"
+        ],
+        [
+            "Que todo",
+            "lo que brilla en este m",
+            "undo tan",
+            "solo les da c",
+            "aspa les da envidia.",
             "/n"
         ],
         [
-            " Vivir atormentado de sen",
-            "tido/nCreo que esta s"
+            "Yo era un p",
+            "ibe triste enca",
+            "ntado, re",
+            "pitus, cann",
+            "alegui maravill",
+            "as./n"
         ],
         [
-            "í, esta es la parte más pe",
-            "sada/n"
-        ],
-        [
-            " En tiempos donde nadie escucha a nadie/n"
-        ],
-        [
-            " En tiempos donde todos cont",
-            "ra todos/n"
-        ],
-        [
-            " En tiempos egoístas y mezquinos/n"
-        ],
-        [
-            "En tiempos donde siempre esta",
-            "mos solos",
+            "Los libros, las",
+            "canciones los",
+            "pianos, el c",
+            "ine, las traicione",
+            "s, los enig",
+            "mas. Mi padre",
+            "la cerveza,",
+            "las pastillas,",
+            "los misterios, el whi",
+            "sky, malo, los óleos,",
+            "el amor, los es",
+            "cenarios. El",
+            "hambre, el frío, el",
+            "crimen, el dinero mis",
+            "diez días me hici",
+            "eron este hombre",
+            "enrebrad",
             "/n"
         ],
         [
-            " Habrá que declararse incompet",
-            "ente/nEn t"
+            "Si alguna vez me c",
+            "ruzas por la c",
+            "alle,",
+            "regálame tu b",
+            "eso no te af",
+            "lijas./n"
         ],
         [
-            "odas las materias del merca",
-            "do",
+            "Si ves que estoy pens",
+            "ando en otra cos",
+            "a, no",
+            "es nada malo es",
+            "que pasó una b",
+            "risa, la",
+            "brisa de la muert",
+            "e enamorad",
+            "que ronda c",
+            "omo un ángel a",
+            "sesino./n"
+        ],
+        [
+            "Mas",
+            "no te asustes, sie",
+            "mpre se me pasa,",
+            "es solo la",
+            "intuición de",
+            "mi desti",
+            "no. Me gusta",
+            "estar al lado del",
+            "cami",
+            "no, fum",
+            "ando el humo mientr",
+            "as todo pas",
+            "a. Me gust",
+            "regresarme del",
+            "olvid",
+            "o, para aco",
+            "rdarme los sueños de",
+            "mi casa,",
+            "del chico que j",
+            "ugaba la pe",
+            "lota. De",
+            "cuatro, nue",
+            "ve, cinco, och",
+            "o, cinco,",
+            "nadie nos",
+            "prometió un jardín de",
+            "rosas,",
+            "hablados del pe",
+            "ligro de estar v",
+            "ivo./n"
+        ],
+        [
+            "No vine diverti",
+            "r tu famili",
+            "a,",
+            "mientras el mundo",
+            "se cae ped",
+            "azos./n"
+        ],
+        [
+            "Me gusta esta",
+            "al lado del cami",
+            "no,",
+            "me gusta sen",
+            "tirte mi la",
+            "do./n"
+        ],
+        [
+            "Me gusta estar al",
+            "lado del cam",
+            "ino, d",
+            "ormirte cada noch",
+            "e entre mis b",
+            "ra",
+            "zo",
+            "s.",
             "/n"
         ],
         [
-            " Habrá que declararse un",
-            " inocente/nO habrá que se"
-        ],
-        [
-            "r abyecto y desalm",
-            "ado/n"
-        ],
-        [
-            "Yo ya no pertenezco a ningún istmo/n"
-        ],
-        [
-            "Me considero vivo y enterrad",
-            "o/n"
-        ],
-        [
-            "Yo puse las canciones en tu walkman/n"
-        ],
-        [
-            "El tiempo a mi me puso en otr",
-            "o lado",
-            "/n"
-        ],
-        [
-            "Tendré que hacer lo que es y n",
-            "o debido/nTend"
-        ],
-        [
-            "ré que hacer el bien y hac",
-            "er el ",
-            "daño/n"
-        ],
-        [
-            "No olvides que el perdón",
-            " es lo divino/nY errar a veces"
-        ],
-        [
-            " suele ser humano",
-            "/n"
-        ],
-        [
-            "No es bueno nunca hacerse de enemigos/n"
-        ],
-        [
-            "Que no estén a la altura de",
-            "l conflicto/n"
-        ],
-        [
-            "Que piensan que hacen una guerra/n"
-        ],
-        [
-            "Y se hacen pis encima como ch",
-            "icos",
-            "/n"
-        ],
-        [
-            "Que rondan por siniestros minis",
-            "terios/nHaci"
-        ],
-        [
-            "endo la parodia del artista",
+            "Al lado del",
+            "ca",
+            "mi",
+            "no,",
+            "al",
+            "",
+            "lado del",
+            "cam",
+            "ino",
+            "",
+            "al",
+            "",
+            "lado del",
+            "cam",
+            "ino.",
             "",
             "/n"
         ],
         [
-            "Que todo lo que brilla en",
-            " este mundo/nTan solo les da"
-        ],
-        [
-            " caspa y les da en",
-            "vidia/n"
-        ],
-        [
-            "Yo era un pibe triste y encantado/n"
-        ],
-        [
-            "De Beatles, Caña legui y ma",
-            "ravillas/n"
-        ],
-        [
-            "Los libros, las canciones y los pianos/n"
-        ],
-        [
-            "El cine, las traiciones, los ",
-            "enigmas",
-            "/n"
-        ],
-        [
-            "Mi padre, las cervezas, las pas",
-            "tillas, los misterios, el whisky malo/nLos "
-        ],
-        [
-            "óleos, el amor, los escena",
-            "rios",
-            "/n"
-        ],
-        [
-            "El hambre, el frío, el c",
-            "rimen, el dinero y mis 10 tías/nMe hicieron est"
-        ],
-        [
-            "e hombre enreverad",
-            "o/n"
-        ],
-        [
-            "Si alguna vez me cruzas por la calle/n"
-        ],
-        [
-            "Regálame tu beso y no te af",
-            "lijas/n"
-        ],
-        [
-            "Si ves que estoy pensando en otra cosa/n"
-        ],
-        [
-            "No es nada malo es que paso u",
-            "na brisa",
-            "/n"
-        ],
-        [
-            "La brisa de la muerte enamorada",
-            "/nQue "
-        ],
-        [
-            "ronda como un ángel asesin",
-            "o",
-            "/n"
-        ],
-        [
-            "Mas no te asustes siempre",
-            " se me pasa/nEs sólo la int"
-        ],
-        [
-            "uición de mi dest",
-            "ino/n"
-        ],
-        [
-            "Me gusta estar al lado del camino/n"
-        ],
-        [
-            "Fumando el humo mientras tod",
-            "o pasa/n"
-        ],
-        [
-            "Me gusta regresarme del olvido/n"
-        ],
-        [
-            "Para acordarme en sueños de ",
-            "mi casa",
-            "/n"
-        ],
-        [
-            "El chico que jugaba a la pelota",
-            "/nDel "
-        ],
-        [
-            "cuatro nueve cinco ocho cin",
-            "co",
-            "/n"
-        ],
-        [
-            "Nadie nos prometió un ja",
-            "rdín de rosas/nHablamos del pe"
-        ],
-        [
-            "ligro de estar viv",
-            "os/n"
-        ],
-        [
-            " No vine a divertir a ",
-            "tu familia/nMient"
-        ],
-        [
-            "ras el mundo se cae a peda",
-            "zos/n"
-        ],
-        [
-            " Me gusta estar al lado del cam",
-            "ino/n"
-        ],
-        [
-            " Me gusta sentirte a mi l",
-            "ado/nMe g"
-        ],
-        [
-            "usta estar al lado del cam",
-            "ino/nDor"
-        ],
-        [
-            "mirte cada no",
-            "che entre mis braz",
-            "os",
+            "Es más",
+            "entretenido más",
+            "bara",
+            "to,",
+            "al",
+            "",
+            "",
+            "lado del c",
+            "amin",
+            "o,",
+            "",
+            "",
+            "",
+            "al lado del",
+            "camin",
+            "o.",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            " Al lado del cam",
-            "ino, ",
-            "    ",
-            "  al ",
-            "lado del camino",
+            "Mmm...",
             "",
             "",
-            "/n"
-        ],
-        [
-            " Al lado del cami",
-            "no   ",
-            "    ",
-            "es m",
-            "s entretenido/nY mas bar"
-        ],
-        [
-            "ato/n Al lado del camino,       al lado del camino"
-        ],
-        [],
-        []
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 184,
+    "calidad": 1,
+    "compasCantidad": 4,
+    "compasUnidad": 4,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QlWvuc0ALbg",
-            "delay": 0
+            "delay": 13000.0
         }
     ],
-    "etiquetas": []
+    "pentagramas": [],
+    "archivo": "fito-paez_al-lado-del-camino",
+    "etiquetas": [
+        "Rock Nacional"
+    ],
+    "compas_cantidad": 4,
+    "compas_unidad": 4
 }

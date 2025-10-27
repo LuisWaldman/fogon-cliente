@@ -13,9 +13,7 @@ import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
-import editVista from '../components/comp_tocar/editVista.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
-import { useRouter } from 'vue-router'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
@@ -23,11 +21,20 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { VistaTocar } from '../modelo/configuracion'
 
 const pantalla = new Pantalla()
+
+const appStore = useAppStore()
+
+const urlParams = new URLSearchParams(window.location.search)
+const sesionurl = urlParams.get('cancion')
+if (sesionurl) {
+  const origen = OrigenCancion.GetFromQuery(sesionurl)
+  appStore.aplicacion.ClickTocar(origen)
+}
+
 onMounted(() => {
   pantalla.setearEstilos()
 })
 
-const appStore = useAppStore()
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
 onMounted(() => {
@@ -113,47 +120,20 @@ function estiloVistaTerciaria() {
   return `width: ${ancho}%;`
 }
 
-const refEditandoVista = ref(false)
-function ajustarVista() {
-  refEditandoVista.value = true
-}
-
 const refSincronizandoMedios = ref(false)
 function clickCerrarMedios() {
   refSincronizandoMedios.value = false
 }
 
-const router = useRouter()
-function clickEditar() {
-  // Redirect to edit page for the current song
-  appStore.editandocancion = appStore.cancion
-  appStore.origenEditando = new OrigenCancion(
-    appStore.origenCancion.origenUrl,
-    appStore.origenCancion.fileName,
-    appStore.origenCancion.usuario,
-  )
-  appStore.cancionModificada = false
-  router.push('/editar')
-}
-
-function cerrareditarPantalla() {
-  refEditandoVista.value = false
-}
 function cambioestado(estado: number) {
   console.log('Cambio de estado en tocar.vue', estado)
   appStore.aplicacion.CambioEstadoMedio(estado)
 }
-function escuchar() {
-  console.log('Escuchar')
-}
+const refAdvertencia = ref(true)
 </script>
 
 <template>
   <div class="tocar-fluid">
-    <editVista
-      v-if="refEditandoVista"
-      @cerrar="cerrareditarPantalla"
-    ></editVista>
     <sincronizarMedias
       v-if="refSincronizandoMedios"
       @cerrar="clickCerrarMedios"
@@ -189,8 +169,47 @@ function escuchar() {
       </div>
 
       <div class="columnas lateral-container" :style="estiloVistaPrincipal()">
+        <div
+          class="sinPentagrama"
+          v-if="
+            appStore.cancion.pentagramas.length === 0 &&
+            vista.muestra == 'partitura'
+          "
+        >
+          No hay partituras
+        </div>
+        <div
+          class="advertencia"
+          @click="refAdvertencia = false"
+          v-if="
+            vista.muestra == 'karaoke' &&
+            vista.reproduce == 'video' &&
+            refAdvertencia &&
+            appStore.cancion.calidad != undefined &&
+            appStore.cancion.calidad < 1
+          "
+        >
+          Texto No Calibrados. Corregilos desde: ✍️ Editar
+        </div>
+        <div
+          class="advertencia"
+          @click="refAdvertencia = false"
+          v-if="
+            refAdvertencia &&
+            vista.reproduce == 'video' &&
+            appStore.cancion.calidad != undefined &&
+            appStore.cancion.calidad < 2 &&
+            (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
+          "
+        >
+          Acordes No Calibrados. Corregilos desde: ✍️ Editar
+        </div>
         <TocarLetraAcorde
-          v-if="vista.muestra == 'letrayacordes'"
+          v-if="
+            vista.muestra == 'letrayacordes' ||
+            (appStore.cancion.pentagramas.length === 0 &&
+              vista.muestra == 'partitura')
+          "
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarLetraAcorde>
@@ -210,7 +229,10 @@ function escuchar() {
           :compas="appStore.compas"
         ></TocarAcorde>
         <TocarPentagrama
-          v-if="vista.muestra == 'partitura'"
+          v-if="
+            vista.muestra == 'partitura' &&
+            appStore.cancion.pentagramas.length > 0
+          "
           :cancion="appStore.cancion"
           :editando="false"
           :compas="appStore.compas"
@@ -254,47 +276,17 @@ function escuchar() {
           :compas="appStore.compas"
         ></TocarCuadrado>
       </div>
-
-      <div class="dropdown dropdown-superior-derecha">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="bi bi-eye"></i>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li v-on:click="escuchar()">
-            <a class="dropdown-item" href="#"> Escuchar</a>
-          </li>
-
-          <li><hr class="dropdown-divider" /></li>
-          <li v-on:click="ajustarVista()">
-            <a class="dropdown-item" href="#"> Ajustar Vista</a>
-          </li>
-
-          <li><hr class="dropdown-divider" /></li>
-          <li v-on:click="clickEditar()">
-            <a class="dropdown-item" href="#">Editar</a>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <div class="controladoresTiempo">
-      <ControladorTiempo v-if="$route.path === '/tocar'"> </ControladorTiempo>
+      <ControladorTiempo> </ControladorTiempo>
 
-      <Metronomo v-if="$route.path === '/tocar'" ref="metronomeRef"></Metronomo>
+      <Metronomo ref="metronomeRef"></Metronomo>
     </div>
   </div>
 </template>
 
 <style scoped>
-.tocar-fluid {
-}
-
 .controladoresTiempo {
   width: 100%;
   position: absolute;
@@ -384,5 +376,16 @@ input[type='range'] {
   .config-row {
     font-size: 1em;
   }
+}
+.sinPentagrama {
+  width: 100%;
+  background-color: brown;
+  font-size: 1.2em;
+}
+.advertencia {
+  width: 100%;
+  background-color: rgb(219, 172, 85);
+  color: red;
+  font-size: 1.2em;
 }
 </style>

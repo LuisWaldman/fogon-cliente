@@ -8,10 +8,25 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G9",
-                    "Dadd9",
                     "G9",
                     "Dadd9"
                 ]
@@ -19,136 +34,397 @@
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G9",
                     "Dadd9",
-                    "Em7",
-                    "A",
-                    "G",
-                    "D",
-                    "G",
-                    "Em7"
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A"
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Asus",
+                    "Em7",
+                    "Em7",
+                    "Em7",
                     "A",
-                    "G9",
+                    "A",
                     "A",
                     "G",
-                    "D/F#",
-                    "Em",
+                    "D",
                     "D"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "G",
+                    "D",
+                    "G9",
                     "A",
-                    "G",
-                    "D/F#",
+                    "G9"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G9",
+                    "G9",
+                    "A",
+                    "A",
                     "Em",
-                    "D"
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "G9",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G9",
+                    "G9",
+                    "G9",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Em7",
+                    "G9",
+                    "G9",
+                    "G9"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G9",
+                    "Dadd9",
+                    "Dadd9"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Dadd9",
+                    "Dadd9",
+                    "G9",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dadd9",
+                    "A",
+                    "G9",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Dadd9",
+                    "Dadd9",
+                    "Dadd9",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G9",
+                    "G9",
+                    "A",
+                    "A",
+                    "Em",
+                    "D",
+                    "A",
+                    "G9"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G9",
+                    "G9",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
             3,
-            2,
-            3,
-            2,
             4,
-            2
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "1:",
             "",
             "",
-            "/n  "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   Sólo cumplo años los años bisiestos",
-            " que acaban en dos./n  "
+            "Sol",
+            "o con los años, los a",
+            "ños bisiestos que ac",
+            "aban en dos./n"
         ],
         [
-            "    Gasto más que gano, vivo con lo puesto m",
-            "enos un botón./n  "
+            "Ga",
+            "sto más que gano,",
+            "vivo con lo puesto,",
+            "menos un bot",
+            "ón./n"
         ],
         [
-            "    No tengo costumbre de guardar la ropa",
-            " si voy a nadar./n  "
+            "No tengo costumbre",
+            "de guardar la ro",
+            "pa si voy na",
+            "dar./n"
         ],
         [
-            "    Nunca le hago ascos a la última cop",
-            "a ni al próximo bar./n      Vendí por amo"
+            "Nunca le hago as",
+            "cos la última c",
+            "opa ni al próximo bar",
+            ". Vendí por amo",
+            "res no por dine",
+            "ro,",
+            "mi alma del eg",
+            "o de las do",
+            "s majas de Goya./n"
         ],
         [
-            "res y no por dinero mi",
-            " alma a Belcebú./n     Y de las dos ma"
+            "P",
+            "refiero la misma que t",
+            "ú, que voy hacer",
+            "de yo./n"
         ],
         [
-            "jas de Goya prefier",
-            "o       ",
-            "  la misma que tú.",
-            "/n        "
+            "Si",
+            "me gusta el whisky si",
+            "n soda, el se",
+            "xo sin bod",
+            "a, las pe",
+            "nas con pan,",
+            "que vo",
+            "y hacer de yo./n"
         ],
         [
-            "Qué voy a hacerle ",
-            "yo/n         Si me g"
-        ],
-        [
-            "usta el whisky sin soda,/n         El sexo sin b"
-        ],
-        [
-            "o - d",
-            "a,",
-            "/n         Las p"
-        ],
-        [
-            "enas con pan",
-            "?",
-            "/n         "
-        ],
-        [
-            "Qué voy a hacerle ",
-            "yo,/n        Si el am"
-        ],
-        [
-            "or me gusta sin celos,/n         La muerte sin du"
-        ],
-        [
-            "e - l",
+            "S",
+            "i el amor me gu",
+            "sta sin celos, l",
+            "a muerte sin r",
+            "eloj,",
+            "he vacunad",
             "o,",
-            "/n         E"
+            "he vacuna",
+            "do,",
+            "he vacuna",
+            "do./n",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "va con Ad",
-            "n/n         Eva con A"
+            "Si e",
+            "l amor me gusta sin ce",
+            "lo",
+            "s, l",
+            "a muerte sin reloj,",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "he vacunado, he vacunado. Le sie",
+            "ntan fatal,",
+            "",
+            "nunca entiendo el móvil del cr",
+            "imen, menos que",
+            "sea pasional./n",
+            ""
         ],
         [
-            "dán/n         Eva con Ad"
+            "Si estrene algún imen,",
+            "si rompe algún plato,",
+            "en mi mocedad./n"
         ],
         [
-            "án/n"
+            "H",
+            "oy ya he retira",
+            "do, solo robo mat",
+            "o por necesidad./n"
         ],
-        [],
-        []
+        [
+            "Siempre que la mu",
+            "erte viene tras mi pis",
+            "ta, me e",
+            "scapo por pies./n"
+        ],
+        [
+            "Hay que espabil",
+            "arse si eres trapeci",
+            "sta",
+            "salta sin reí",
+            "r, que voy hacer de y",
+            "o./n"
+        ],
+        [
+            "Si me g",
+            "usta el whisky sin so",
+            "da, el sexo s",
+            "in boda,",
+            "las penas c",
+            "on pan,",
+            "que voy hacer",
+            "de yo./n"
+        ],
+        [
+            "Si e",
+            "l amor me gusta si",
+            "n celos, la muerte s",
+            "in re",
+            "loj, he v",
+            "acunado,",
+            "he",
+            "vacunado,",
+            "he",
+            "vacunado./n",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "H",
+            "e vacunado, h",
+            "e vacun",
+            "ado, h",
+            "e v",
+            "a",
+            "c",
+            "u",
+            "n",
+            "a",
+            "do./n",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Subtítulos realizados por la comunidad de Amara .org"
+        ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
@@ -156,5 +432,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

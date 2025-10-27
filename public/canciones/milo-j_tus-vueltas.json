@@ -2,16 +2,48 @@
     "cancion": "tus-vueltas",
     "banda": "milo-j",
     "escala": "Ebm",
-    "bpm": 60,
+    "bpm": 107,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "G#m",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "G#m",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "G#m",
+                    "G#m",
+                    "Ebm",
+                    "Ebm",
+                    "G#m",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Ebm",
-                    "G#m",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
                     "Ebm"
                 ]
             },
@@ -19,9 +51,21 @@
                 "nombre": "parte2",
                 "acordes": [
                     "G#m",
-                    "Ebm",
                     "G#m",
                     "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm",
+                    "Ebm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "G#m"
                 ]
             }
@@ -29,69 +73,82 @@
         "orden_partes": [
             0,
             1,
-            0,
-            0,
-            1
+            2,
+            3
         ]
     },
     "letras": [
         [
-            "ailando/nRaspando el cemento de la plaza de mi bar"
+            "Hola, hola, hola",
+            "ho",
+            "la, hola,",
+            "hola",
+            "hola",
+            ",",
+            "hola, hola, hola,",
+            "hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hol",
+            "a, hola, hola, hola, hola, hola, hola, hola,",
+            "hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, hola, h",
+            "ola, hola, hola",
+            ", hol",
+            "a, hola Si es",
+            "que fuera mía Mien",
+            "tras escribía que Quiero be",
+            "sarte en la cama Desnuda con ropa c",
+            "antarte poesía De esa que te escribo par",
+            "a vos nomás hacer el amor solo",
+            "con vos Mira las pe",
+            "netrantes Parecen medusa Movimie",
+            "ntos de moro ya hay cara rusa No vi ni",
+            "tu blusa por tu cara hermosa sé que no",
+            "es excusa Pero",
+            "es que es con vos Sentí algo que no había sen",
+            "tido la noche mis sueños son solo con",
+            "tigo Mi panza dejaste un lindo coquil",
+            "leo mi mente un tema que aún no ter",
+            "mino Solo te sería infiel con la l",
+            "una Pero ni siquiera no tienes tu esti",
+            "lo No tienes tu estil",
+            ".M. Te vi baila",
+            "ndo Rapando el cemen",
+            "to De las plazas de mi bar",
+            "rio Tu vuelta cautivaba En",
+            "la mirada de unos cuant",
+            "os Tal vez yo era uno más Pe",
+            "ro decía que fuera mía/n"
         ],
         [
-            "rio/nTus vueltas cautivaban las miradas de unos cuant"
+            "Mientras escribía",
+            "que Quiero besarte en la cama Desnud",
+            "con ropa cantarte poesía De esa que",
+            "te escribo para vos nomás hacer el",
+            "amor solo con vos/n"
         ],
         [
-            "os/nTal vez, yo era uno mÃ¡s, pero deseÃ© que fuera"
+            "Mira las penetrantes Parecen m",
+            "edusa Movimientos de moro ya hay cara r",
+            "usa No vi ni tu blusa por tu cara he",
+            "rmosa sé que no es excusa",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "s mÃ­a/nQuiero besarte en la ca"
-        ],
-        [
-            "ma, desnuda o con ropa/nY cantarte poesÃ­a, de esas que te escribo para vos n"
-        ],
-        [
-            "omÃ¡s/nMirada penet"
-        ],
-        [
-            "rante, parece Medusa/nNo vi ni tu b"
-        ],
-        [
-            "lusa, por tu cara hermosa/nP"
-        ],
-        [
-            "ero es que, con vos, sentÃ­ algo que no habÃ­a sentido/nA la noche, mis sueÃ±os son solo con"
-        ],
-        [
-            "tigo/nY, en mi mente, un tema que aÃºn no ter"
-        ],
-        [
-            "mino/nTe vi "
-        ],
-        [
-            "bailando/nRaspando el cemento de la plaza de mi bar"
-        ],
-        [
-            "rio/nTus vueltas cautivaban las miradas de unos cuant"
-        ],
-        [
-            "os/nTal vez, yo era uno mÃ¡s, pero deseÃ© que fuera"
-        ],
-        [
-            "s mÃ­a/nQuiero besarte en la ca"
-        ],
-        [
-            "ma, desnuda o con ropa/nY cantarte poesÃ­a, de esas que te escribo para vos n"
-        ],
-        [
-            "omÃ¡s/nMirada penet"
-        ],
-        [
-            "rante, parece Medusa/nNo vi ni tu b"
-        ],
-        [
-            "lusa, por tu cara hermosa"
+            "Subtítulos realizados por la comunidad de Amara .org"
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "PmVejpfw_yU",
+            "delay": 750.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

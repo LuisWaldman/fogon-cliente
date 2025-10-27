@@ -8,238 +8,353 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C#m",
-                    "F#m",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "E",
-                    "B",
-                    "G#",
                     "C#m",
                     "F#m",
-                    "G#",
-                    "C#m",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "A",
-                    "G#",
-                    "C#m",
-                    "C#m",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "F#m",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "E",
-                    "B",
-                    "G#",
-                    "C#m",
                     "F#m",
-                    "G#",
+                    "F#m",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "C#m",
                     "A",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "G#",
-                    "C#m",
-                    "B",
-                    "A",
-                    "B",
-                    "E",
-                    "C#m",
-                    "A",
-                    "G#",
-                    "C#m",
-                    "E",
-                    "A",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "G#",
                     "C#m",
                     "C#m",
                     "F#m",
                     "G#",
-                    "C#m",
-                    "A",
-                    "G#",
-                    "C#m",
-                    "C#m",
                     "F#m",
-                    "G#",
                     "C#m",
                     "A",
-                    "E",
-                    "B",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "C#m",
+                    "C#m",
                     "G#",
                     "C#m",
+                    "C#m",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "F#m",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "G#",
-                    "A#m",
-                    "C#m",
-                    "A",
-                    "B",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "G#",
-                    "C#m",
-                    "E",
-                    "A",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "G#",
-                    "A#m",
-                    "E",
-                    "A",
-                    "B",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "G#",
                     "A#m",
                     "B",
-                    "A",
+                    "B",
+                    "C#m",
                     "G#",
-                    "C#m"
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G#",
+                    "C#m",
+                    "C#m",
+                    "G#",
+                    "C#m",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#m",
+                    "A#m",
+                    "B",
+                    "E",
+                    "C#m",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Mi ranc",
-            "hera es la",
-            " vida que me ",
-            "toca/n"
-        ],
-        [
-            "En la mesa del ri",
-            "ncón estoy bebi",
-            "endo",
+            "",
             "/n"
         ],
         [
-            "Siento ",
-            "tanto el sentim",
-            "iento que me ",
-            "quema/nMientras t"
+            "M",
+            "i ranc",
+            "hera es",
+            "la vida que m",
+            "e toca./n"
         ],
         [
-            "anto por in",
-            "ercia voy viviend",
-            "o/n"
+            "En la mesa del r",
+            "incón estoy",
+            "bebiendo./n",
+            ""
         ],
         [
-            "No hay ",
-            "derecho a tra",
-            "tarme de este",
-            " modo/nPues que aca"
+            "Siento",
+            "tanto el",
+            "sentimiento que m",
+            "e quema./n"
         ],
         [
-            "so tú me ocu",
-            "ltas un secre",
-            "to",
-            "/n"
+            "Mientras tanto p",
+            "or inercia v",
+            "oy viviendo./n"
         ],
         [
-            "He vivi",
-            "do pero no ap",
-            "rendí a la f",
-            "uerza/nA ol"
+            "N",
+            "o ha",
+            "y derecho",
+            "tratarme de e",
+            "ste modo.",
+            "es que acas",
+            "o tú me ocult",
+            "as un secre",
+            "to./n"
         ],
         [
-            "vidarte aunq",
-            "ue no estés conm",
-            "igo/n"
+            "H",
+            "e vivi",
+            "do pero no apre",
+            "ndí la fuerza",
+            "olvid",
+            "arte aunque n",
+            "o estés conmi",
+            "go./n",
+            ""
         ],
         [
-            "Pocas cosa",
-            "s son más cru",
-            "das que una cr",
-            "uda/nQu"
+            "Pocas cos",
+            "as son más c",
+            "rudas que una c",
+            "ruda./n"
         ],
         [
-            "izás sea",
-            " por la for",
-            "ma en que te fu",
-            "iste/nSi"
+            "Quizás s",
+            "ea por la fo",
+            "rma en que te fui",
+            "ste./n"
         ],
         [
-            "n un bes",
-            "o ni un ab",
-            "razo/n"
+            "Si no un b",
+            "eso un a",
+            "brazo mejor",
+            "hubiera sido des",
+            "pedirte de m",
+            "í con un ba",
+            "lazo./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "Mejor hubier",
-            "a sido de",
-            "spedirte de mí con",
-            " un balazo/n"
-        ],
-        [],
-        [
-            "En la c",
-            "abeza teng",
-            "o las preocup",
-            "aciones/nY en pe"
+            "E",
+            "n la cab",
+            "eza tengo l",
+            "as preocupaci",
+            "ones en e",
+            "l pecho sigue e",
+            "l corazón abie",
+            "rto./n"
         ],
         [
-            "cho sigue",
-            " el corazón abi",
-            "erto",
-            "/n"
+            "P",
+            "or que a",
+            "lto no",
+            "estar co",
+            "nmigo",
+            "ya el a",
+            "mor está desie",
+            "rto./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "Porque al",
-            " tu no est",
-            "ar conmigo",
-            "/nYa el a"
+            "Pocas cos",
+            "as son más c",
+            "rudas que una c",
+            "ruda./n"
         ],
         [
-            "mor est",
-            " desier",
-            "to/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [
-            "Pocas cosa",
-            "s son más cru",
-            "das que una cr",
-            "uda/nQ"
+            "Quizás s",
+            "ea por la forma",
+            "en que te fuist",
+            "e./n"
         ],
         [
-            "uizás se",
-            "a por la fo",
-            "rma en que te f",
-            "uiste",
-            "/nSi"
-        ],
-        [
-            "n un bes",
-            "o ni un ab",
-            "razo",
-            "/nMe"
-        ],
-        [
-            "jor hubie",
-            "ra sido despedirte ",
-            "de mí con un balazo"
+            "Si no un be",
+            "so un abr",
+            "azo mejor hub",
+            "iera sido despe",
+            "dirte de mí c",
+            "on un bala",
+            "zo.",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
@@ -247,6 +362,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
-    "etiquetas": []
+    "procesando": 0,
+    "etiquetas": [
+        "Rock Nacional"
+    ],
+    "calidad": 1
 }

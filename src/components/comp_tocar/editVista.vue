@@ -9,6 +9,19 @@ const emit = defineEmits(['cerrar'])
 const pantalla = new Pantalla()
 const config = Configuracion.getInstance()
 const configPantalla = ref(pantalla.getConfiguracionPantalla())
+const verLetra = ref(
+  configPantalla.value.muestra === 'letrayacordes' ||
+    configPantalla.value.muestra === 'karaoke',
+)
+const verAcordes = ref(
+  configPantalla.value.muestra === 'acordes' ||
+    configPantalla.value.muestra === 'letrayacordes',
+)
+const verPartitura = ref(configPantalla.value.muestra === 'partitura')
+
+// Solo Sincro controls
+const soloVideo = ref(configPantalla.value.reproduce === 'video')
+const soloMidi = ref(configPantalla.value.reproduce === 'midi')
 
 exvistapantalla.value.altoPantallaDescuento =
   configPantalla.value.altoPantallaDescuento
@@ -56,11 +69,174 @@ function cancelarConfiguracionPantalla() {
 watch(configPantalla.value, () => {
   pantalla.setearEstilos()
 })
+
+// Watch for changes in reproduce to update solo buttons
+watch(
+  () => configPantalla.value.reproduce,
+  (newValue) => {
+    soloVideo.value = newValue === 'video'
+    soloMidi.value = newValue === 'midi'
+  },
+)
+
+function actualizarModoMostrar() {
+  if (verPartitura.value) {
+    configPantalla.value.muestra = 'partitura'
+  } else {
+    if (verLetra.value && verAcordes.value) {
+      configPantalla.value.muestra = 'letrayacordes'
+    } else if (verLetra.value && !verAcordes.value) {
+      configPantalla.value.muestra = 'karaoke'
+    } else if (!verLetra.value && verAcordes.value) {
+      configPantalla.value.muestra = 'acordes'
+    } else {
+      // Default to letra
+      configPantalla.value.muestra = 'karaoke'
+      verLetra.value = true
+    }
+  }
+}
+
+function ClickViendoLetra() {
+  verLetra.value = !verLetra.value
+  if (!verPartitura.value && !verAcordes.value && !verLetra.value) {
+    // At least one must be selected
+    verLetra.value = true
+  }
+  actualizarModoMostrar()
+}
+
+function ClickViendoAcordes() {
+  verAcordes.value = !verAcordes.value
+  if (!verPartitura.value && !verAcordes.value && !verLetra.value) {
+    // At least one must be selected
+    verLetra.value = true
+  }
+  actualizarModoMostrar()
+}
+function ClickViendoPartitura() {
+  verPartitura.value = !verPartitura.value
+  if (!verPartitura.value && !verAcordes.value && !verLetra.value) {
+    // At least one must be selected
+    verLetra.value = true
+  }
+  actualizarModoMostrar()
+}
+
+// Solo Sincro functions
+function ClickSoloVideo() {
+  if (soloVideo.value) {
+    // If already selected, deselect
+    soloVideo.value = false
+    configPantalla.value.reproduce = 'nada'
+  } else {
+    // Select video and deselect MIDI
+    soloVideo.value = true
+    soloMidi.value = false
+    configPantalla.value.reproduce = 'video'
+  }
+}
+
+function ClickSoloMidi() {
+  if (soloMidi.value) {
+    // If already selected, deselect
+    soloMidi.value = false
+    configPantalla.value.reproduce = 'nada'
+  } else {
+    // Select MIDI and deselect video
+    soloMidi.value = true
+    soloVideo.value = false
+    configPantalla.value.reproduce = 'midi'
+  }
+}
 </script>
 
 <template>
   <div class="vistaedit">
     <div class="tituloeditSize">VISTA GENERAL</div>
+    <div>
+      <div class="config-row">
+        ▶️ Toca
+        <span :class="{ seleccionada: soloVideo }" @click="ClickSoloVideo()"
+          >[VIDEO 🎬]</span
+        >
+        <span :class="{ seleccionada: soloMidi }" @click="ClickSoloMidi()"
+          >[MIDI 🎹]</span
+        >
+      </div>
+
+      <div class="config-row">
+        👁️‍🗨️ Vista
+        <span :class="{ seleccionada: verLetra }" @click="ClickViendoLetra()"
+          >[LETRA
+          <input
+            type="number"
+            min="8"
+            max="80"
+            v-model.number="configPantalla.tamanioLetra"
+            @click.stop
+          />
+          <span>px</span>]</span
+        >
+        <span
+          :class="{ seleccionada: verAcordes }"
+          @click="ClickViendoAcordes()"
+          >[ACORDES
+          <input
+            type="number"
+            min="8"
+            max="80"
+            v-model.number="configPantalla.tamanioAcorde"
+            @click.stop
+          />
+          <span>px</span>
+          ]</span
+        >
+        <span
+          :class="{ seleccionada: verPartitura }"
+          @click="ClickViendoPartitura()"
+          >[PARTITURA]</span
+        >
+      </div>
+
+      <div
+        class="config-row"
+        v-if="
+          configPantalla.muestra !== 'cuadrado' && configPantalla.muestra !== ''
+        "
+      >
+        <div class="config-box">
+          <input type="checkbox" v-model="configPantalla.AutoScroll" />
+          <span>Auto Scroll</span>
+        </div>
+        <div class="config-box">
+          <span>Factor Scroll</span>
+          <input
+            type="number"
+            min="0.2"
+            max="3"
+            step="0.1"
+            v-model.number="configPantalla.factorScroll"
+          />
+        </div>
+      </div>
+
+      <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
+        <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
+        <span>Modo poeta</span>
+      </div>
+
+      <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
+        <span>Caracteres por renglon</span>
+        <input
+          type="range"
+          min="10"
+          max="120"
+          v-model.number="configPantalla.columnas"
+        />
+        <span>{{ configPantalla.columnas }}</span>
+      </div>
+    </div>
     <div class="config-row">
       <span>Columnas</span>
       <span
@@ -117,115 +293,7 @@ watch(configPantalla.value, () => {
           ? 'column-reverse'
           : 'column',
       }"
-    >
-      <div>
-        <div class="config-row">
-          Ejecuta
-          <select v-model="configPantalla.muestra">
-            <option value="letrayacordes">Letra y Acordes</option>
-            <option value="acordes">Acordes</option>
-            <option value="karaoke">Letra</option>
-            <option value="partitura">Partitura</option>
-            <option value="cuadrado">Cuadrado</option>
-            <option value="">Nada</option>
-          </select>
-        </div>
-
-        <div class="config-row">
-          <div
-            class="config-box"
-            v-if="
-              configPantalla.muestra === 'letrayacordes' ||
-              configPantalla.muestra === 'karaoke'
-            "
-          >
-            <span>Letra</span>
-            <input
-              type="number"
-              min="8"
-              max="80"
-              v-model.number="configPantalla.tamanioLetra"
-            />
-            <span>px</span>
-          </div>
-          <div
-            class="config-box"
-            v-if="configPantalla.muestra === 'letrayacordes'"
-          >
-            <span>Acorde</span>
-            <input
-              type="number"
-              min="8"
-              max="80"
-              v-model.number="configPantalla.tamanioAcorde"
-            />
-            <span>px</span>
-          </div>
-          <div class="config-box" v-if="configPantalla.muestra === 'acordes'">
-            <span>Acorde</span>
-            <input
-              type="number"
-              min="8"
-              max="80"
-              v-model.number="configPantalla.tamanioAcordesolo"
-            />
-            <span>px</span>
-          </div>
-        </div>
-        <div
-          class="config-row"
-          v-if="
-            configPantalla.muestra !== 'cuadrado' &&
-            configPantalla.muestra !== ''
-          "
-        >
-          <div class="config-box">
-            <input type="checkbox" v-model="configPantalla.AutoScroll" />
-            <span>Auto Scroll</span>
-          </div>
-          <div class="config-box">
-            <span>Factor Scroll</span>
-            <input
-              type="number"
-              min="0.2"
-              max="3"
-              step="0.1"
-              v-model.number="configPantalla.factorScroll"
-            />
-          </div>
-        </div>
-
-        <div
-          class="config-row"
-          v-if="configPantalla.muestra === 'letrayacordes'"
-        >
-          <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
-          <span>Modo poeta</span>
-        </div>
-
-        <div
-          class="config-row"
-          v-if="configPantalla.muestra === 'letrayacordes'"
-        >
-          <span>Columnas</span>
-          <input
-            type="range"
-            min="10"
-            max="120"
-            v-model.number="configPantalla.columnas"
-          />
-          <span>{{ configPantalla.columnas }}</span>
-        </div>
-      </div>
-      <div class="config-row">
-        Reproduce
-        <select v-model="configPantalla.reproduce">
-          <option value="nada">Nada</option>
-          <option value="video">Video</option>
-          <option value="midi">MIDI</option>
-        </select>
-      </div>
-    </div>
+    ></div>
 
     <div class="config-row">
       <span>Muestra</span>

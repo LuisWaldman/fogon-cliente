@@ -7,7 +7,8 @@ const emit = defineEmits(['tocar', 'borrar', 'agregar'])
 const vectorCalidades: string[] = [
   'De Internet',
   'Texto Sincronizado',
-  'Corregida',
+  'Texto Corregido',
+  'Ok',
 ]
 const agregandoLista = ref(false)
 const props = defineProps<{
@@ -134,7 +135,10 @@ function Borrar(index: number) {
                   <strong>Calidad:</strong
                   >{{ vectorCalidades[cancion.calidad] }}
                 </div>
-                <div class="divItemDetalle" v-if="cancion.acordes.length > 0">
+                <div
+                  class="divItemDetalle"
+                  v-if="cancion.acordes && cancion.acordes.length > 0"
+                >
                   <strong>Acordes:</strong>{{ cancion.acordes }}
                 </div>
                 <div class="divItemDetalle">
@@ -163,7 +167,8 @@ function Borrar(index: number) {
                 <button @click="Borrar(index)">🗑 Borrar</button>
               </div>
 
-              <div style="display: flex" v-if="agregandoLista">
+              <div class="botoneraDetalle" v-if="agregandoLista">
+                <button @click="clickAgregar(index)">AGREGAR</button>
                 <select v-model="listaseleccionada" style="width: 60%">
                   <optgroup>
                     <option value="actual">Lista de reproduccion</option>
@@ -174,7 +179,7 @@ function Borrar(index: number) {
                       :key="lista"
                       :value="'local_' + lista"
                     >
-                      💾 {{ lista }}
+                      🧠 {{ lista }}
                     </option>
                   </optgroup>
                   <optgroup>
@@ -183,12 +188,12 @@ function Borrar(index: number) {
                       :key="lista"
                       :value="'server_' + lista"
                     >
-                      🔌 {{ lista }}
+                      🗄️ {{ lista }}
                     </option>
                   </optgroup>
                 </select>
-                <div @click="clickAgregar(index)">[AGREGAR]</div>
-                <div @click="agregandoLista = false">[CANCELAR]</div>
+
+                <button @click="agregandoLista = false">❌</button>
               </div>
             </div>
           </td>
@@ -256,6 +261,9 @@ td {
     margin: 3px;
     margin-left: 3px;
     font-size: small;
+  }
+  .textoGrande {
+    font-size: large;
   }
   .divDetalle {
     width: 95%;

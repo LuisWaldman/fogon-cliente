@@ -25,6 +25,21 @@ export class Reproductor {
     appStore.origenCancion = origen
   }
 
+  async Next() {
+    const appStore = useAppStore()
+    appStore.nroCancion++
+    const origen = appStore.listaReproduccion[appStore.nroCancion - 1].origen
+    const cancionObtenida = await CancionManager.getInstance().Get(origen)
+    appStore.MediaVistas = []
+    if (cancionObtenida.pentagramas.length > 0) {
+      appStore.estadosApp.texto = 'Cargando Midis...'
+    }
+    appStore.cancion = cancionObtenida
+    appStore.compas = 0
+    appStore.estadosApp.estado = 'ok'
+    appStore.origenCancion = origen
+  }
+
   async AgregarAListaReproduccion(item: ItemIndiceCancion) {
     const appStore = useAppStore()
     appStore.listaReproduccion.push(item)

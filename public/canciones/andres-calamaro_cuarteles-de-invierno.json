@@ -8,27 +8,59 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "F",
-                    "C",
-                    "E7",
                     "Am",
                     "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "E",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Dm",
+                    "B7",
+                    "B7",
+                    "B7",
                     "F",
+                    "E",
                     "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
                     "Dm",
-                    "Am",
+                    "Dm",
+                    "B7",
+                    "B7",
                     "F",
                     "C",
+                    "E",
                     "F",
+                    "F G",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
@@ -36,21 +68,41 @@
                 "nombre": "parte3",
                 "acordes": [
                     "Dm",
-                    "C",
-                    "Am",
+                    "Dm",
+                    "Dm",
                     "B7",
-                    "E"
+                    "B7",
+                    "F",
+                    "Am",
+                    "Am",
+                    "F",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "F",
-                    "C",
+                    "F G",
                     "G",
-                    "E",
+                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Am",
-                    "Dm"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E"
                 ]
             }
         ],
@@ -59,8 +111,8 @@
             1,
             2,
             3,
-            3,
-            1
+            4,
+            5
         ]
     },
     "letras": [
@@ -68,61 +120,84 @@
             "",
             "",
             "",
+            "/n"
+        ],
+        [
+            "Tengo plan",
+            "es musicales",
+            "para los cuarteles",
+            "invernales",
+            "me voy echánd",
+            "ole menos la",
+            "s pequeñas grandes cosas",
+            "los vecinos buenos",
             "",
             "",
             "",
             "",
-            "/n"
+            "buscar mis a",
+            "limentos, buscarme la r",
+            "utina que Argentina voy",
+            "encontrar, no lo sé L",
+            "o sospecho con",
+            "el pecho, una lagrima no",
+            "brota, echo de menos m",
+            "i techo pero no se me nota/n"
         ],
         [
-            "Tengo pl",
-            "anes music",
-            "ales",
-            "/n"
+            "Porque la procesi",
+            "ón va por dentro, saco",
+            "fuerza me voy al en",
+            "cuentro de mi destino V",
+            "uelvo al frío infi",
+            "erno de los cuarte",
+            "les de invierno,",
+            "una cosec",
+            "ha de canciones lleva l",
+            "os renglones/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "Para los cuar",
-            "teles invernales",
-            "/n"
+            "Cuando",
+            "la procesión va p",
+            "or dentro, saco pecho",
+            "me voy al encuentro",
+            "de mi destino Vuelvo a",
+            "l frío infierno d",
+            "e los cuarteles de",
+            "invierno,",
+            "una cosecha de ca",
+            "nciones lleva los ren",
+            "glones/n"
         ],
         [
-            "Porque la procesión va por den",
-            "tro",
-            "/n"
+            "Vuelvo a",
+            "l frío infierno de l",
+            "os cuarteles de in",
+            "vierno,",
+            "una cosecha de canci",
+            "ones lleva los reng",
+            "lones/n",
+            "",
+            ""
         ],
         [
-            "Saco fuerza y me voy al encuentro",
-            " de mi destino/n"
-        ],
-        [
-            "Vuelvo al fr",
-            "ío infier",
-            "no en los",
-            " cuartele",
-            "s de invierno",
-            "/n"
-        ],
-        [
-            "Una cosec",
-            "ha de cancione",
-            "s llev",
-            "o en los renglon",
-            "es",
-            "/n"
-        ],
-        [
-            "Me vuelvo ",
-            "echando de ",
-            "menos alg",
-            "unos amigos buenos",
-            "/n"
-        ],
-        [
-            "Y además ",
-            "las pequeñas grandes cosas"
+            "Me v",
+            "uelvo echando de m",
+            "enos algunos amigos bu",
+            "enos",
+            "además las pequeñas",
+            "grandes cosas"
         ]
     ],
-    "bpm": 80,
+    "bpm": 78,
     "medias": [
         {
             "tipo": "Youtube",
@@ -130,5 +205,9 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [
+        "Rock Nacional"
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

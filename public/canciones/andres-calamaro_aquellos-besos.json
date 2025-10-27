@@ -8,155 +8,310 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D7/9",
+                    "D7/9",
+                    "D7/9",
+                    "D7/9",
+                    "D7/9",
+                    "D7/9",
+                    "D7/9",
+                    "D7/9"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Bm7",
-                    "D7/9",
+                    "C#m7/11",
+                    "C#m7/11",
                     "G7+",
-                    "F#7/5+",
+                    "Asus4",
+                    "Asus4",
+                    "C#m7/11",
+                    "Asus4",
+                    "G7+",
+                    "G7+",
                     "C#m7/11",
                     "F#7/5+",
+                    "G#m7/5-",
+                    "Bm7",
+                    "Bm7",
+                    "D7/9",
+                    "D7/9",
+                    "Bm7",
+                    "D7/9",
+                    "Bm7",
+                    "Bm7",
+                    "F#7/5+",
+                    "G#m7/5-",
+                    "G#m7/5-",
+                    "D",
+                    "G#m7/5-",
+                    "D7/9",
+                    "D7/9",
+                    "D7/9",
+                    "D7/9",
                     "G7+",
+                    "G7+",
+                    "G7+",
+                    "G7+",
+                    "G7+",
+                    "G#m7/5-",
+                    "G#m7/5-"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "G#m7/5-",
                     "Em7/9",
                     "Asus4",
                     "D",
-                    "Bm7",
-                    "D7/9",
-                    "G7+",
-                    "F#7/5+",
-                    "Bm7",
-                    "D7/9",
-                    "G7+",
-                    "C7/9",
-                    "C#m7/11",
+                    "D",
                     "F#7/5+",
                     "G7+",
-                    "G#m7/5-",
-                    "Em7/9",
-                    "C7/9",
-                    "Bm7",
-                    "D7/9",
-                    "G7+",
-                    "F#7/5+",
-                    "Bm7",
-                    "D7/9",
-                    "G7+",
-                    "C7/9",
-                    "C#m7/11",
-                    "F#7/5+",
-                    "G7+",
-                    "G#m7/5-",
-                    "G7+",
-                    "G#m7/5-",
-                    "Em7/9",
                     "Asus4",
-                    "D",
-                    "Bb7+",
-                    "Am7",
-                    "Gm7",
-                    "Dm7",
-                    "Bb7+",
-                    "Am7",
-                    "Dsus4",
-                    "D",
-                    "Dsus4",
-                    "D",
-                    "D/C#",
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#m7/5-",
+                    "G#m7/5-",
+                    "G#m7/5-",
+                    "Asus4",
+                    "G#m7/5-",
+                    "G#m7/5-",
                     "Bm7",
-                    "D7/9",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm7",
+                    "C#m7/11",
+                    "C#m7/11",
+                    "C#m7/11",
+                    "C#m7/11",
+                    "C#m7/11",
+                    "C#m7/11",
+                    "C#m7/11",
+                    "C#m7/11",
+                    "C#m7/11"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C#m7/11",
+                    "C#m7/11",
+                    "Asus4",
+                    "Asus4",
+                    "C#m7/11",
+                    "Asus4",
+                    "Asus4",
                     "G7+",
-                    "F#7/5+"
+                    "G7+",
+                    "G7+",
+                    "G#m7/5-",
+                    "G#m7/5-",
+                    "G7+",
+                    "Asus4",
+                    "Asus4",
+                    "Asus4 Bb7+",
+                    "Bb7+",
+                    "Am7",
+                    "Bb7+",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bb7+",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bb7+",
+                    "Bm7",
+                    "Bb7+",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm7",
+                    "Bb7+ Bm7",
+                    "Bm7",
+                    "Bb7+",
+                    "Bb7+",
+                    "Bb7+",
+                    "Bb7+",
+                    "Bm7",
+                    "Bb7+",
+                    "Bb7+",
+                    "Bb7+",
+                    "Bb7+",
+                    "Bb7+",
+                    "Bb7+"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D7/9"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
         [
-            "5omit  *",
             "",
             "",
-            "/n"
-        ],
-        [],
-        [
-            "besos",
-            "   que y",
-            "a no v",
-            "uelven/n"
-        ],
-        [
-            "   Convi",
-            "erten mi vida en al",
-            "go rar",
-            "o/n"
-        ],
-        [
-            "5omit  *",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "  La única ",
-            "luz que guiaba mi r",
-            "umbo/nEn "
+            "Aquellos be",
+            "sos que ya no",
+            "vuelven Conviar",
+            "te en mi vida en",
+            "algo raro Tus",
+            "besos eran m",
+            "i faro L",
+            "a única luz qu",
+            "e guiaba mi rumbo L",
+            "a oscuridad d",
+            "el mar la t",
+            "ormenta No existe n",
+            "ada igual q",
+            "ue aquellos bes",
+            "os mío",
+            "s Tus beso",
+            "s, aquellos be",
+            "sos tan dul",
+            "ces Como aquel",
+            "los besos nuestr",
+            "os Que son del c",
+            "olor de tu ropa",
+            "interior Siemp",
+            "re me volvieron loco d",
+            "e amor Graci",
+            "as Jaime por l",
+            "a frase",
+            "apurarme una s",
+            "onrisa No",
+            "se puede creer do",
+            "nde hubo amor Q",
+            "ueda brisa c",
+            "eniza N",
+            "o sé si enterarte d",
+            "e mi pena,",
+            "penita pena/n"
         ],
         [
-            "la oscuridad",
-            " del m",
-            "ar y  la ",
-            "tormenta",
-            "/n    "
+            "Pa",
+            "' dar más rabia",
+            "ni siquiera me",
+            "dedicas eso C",
+            "ómo me puedo sen",
+            "tir cuando sé que no",
+            "voy encontrar Una",
+            "chica igual m",
+            "i otra amistad/n"
         ],
         [
-            "      ",
-            "         5o",
-            "mit  *",
+            "La otra dueña d",
+            "e aquellos besos Qu",
+            "e eran mi descanso,",
+            "mi fantasía se",
+            "xual Las ganas de vo",
+            "lver casa encon",
+            "trar Todo igual",
+            "aquellos besos m",
+            "íos/n"
+        ],
+        [
+            "Tu",
+            "s besos/n",
             "",
             "",
-            "/nque aquellos "
-        ],
-        [
-            "besos ",
-            "míos/n"
-        ],
-        [
-            "           ",
-            "     tus ",
-            "besos/n"
-        ],
-        [
-            "     No sé si enter",
-            "arte de mi p",
-            "ena/nPenita pena"
-        ],
-        [
             "",
-            "/nte va a dar más "
-        ],
-        [
-            "rabia/no ni si"
-        ],
-        [
-            "quiera m",
-            "e de",
-            "dicas eso",
             "",
-            "/nUn "
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "beso  ",
-            "  de aqu",
-            "ellos b",
-            "esos,"
+            "Aquellos besos",
+            "que ya no vuel",
+            "ven Conviarte en mi vi",
+            "da en algo ra",
+            "ro Tus besos e",
+            "ran mi único f",
+            "aro Mi ú",
+            "nica l",
+            "uz No sé s",
+            "i enterarte d",
+            "e mi pena, penita",
+            "pena",
+            "si te pa' dar m",
+            "ás rabia n",
+            "i siquiera me dedicas e",
+            "so U",
+            "n beso d",
+            "e aquellos besos U",
+            "n beso de aquellos, a",
+            "quellos besos U",
+            "n beso,",
+            "aquellos besos U",
+            "n beso de aquellos,",
+            "aquellos besos U",
+            "n beso,",
+            "aquellos besos Un",
+            "beso de aquellos,",
+            "aquellos besos Un",
+            "beso de a",
+            "quellos besos/n"
+        ],
+        [
+            "U",
+            "n beso de aquellos, aquellos besos Un beso de aquellos,",
+            "aquellos besos Un",
+            "b",
+            "e",
+            "so de aquellos,",
+            "",
+            "aquellos besos Un",
+            "b",
+            "eso",
+            "de aquellos, aquellos besos Un beso de aquellos, aquellos besos Un beso de aquellos, aquellos besos Un beso de aquellos, aquellos besos Un b",
+            "eso de aquellos, aquellos besos U",
+            "n be",
+            "so de aquellos, aquellos besos/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de Amara .org"
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
@@ -164,5 +319,9 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [
+        "Rock Nacional"
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

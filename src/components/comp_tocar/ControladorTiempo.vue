@@ -34,6 +34,10 @@ function play() {
   appStore.aplicacion.play()
 }
 
+function next() {
+  appStore.aplicacion.next()
+}
+
 function pause() {
   appStore.aplicacion.pause()
 }
@@ -56,21 +60,29 @@ function updateCompas() {
         @click="play"
         v-if="appStore.estadoReproduccion === 'pausado'"
       >
-        <i class="bi bi-play-fill"></i>
+        ▶️
       </button>
+
       <button
         class="boton_controller"
         @click="pause"
         v-if="appStore.estadoReproduccion !== 'pausado'"
       >
-        <i class="bi bi-pause-fill"></i>
+        ⏸️
       </button>
       <button
         class="boton_controller"
         @click="stop"
         v-if="appStore.estadoReproduccion !== 'pausado'"
       >
-        <i class="bi bi-stop-fill"></i>
+        ⏹️
+      </button>
+      <button
+        class="boton_controller boton_controllerplay"
+        @click="next"
+        v-if="appStore.listaReproduccion.length > 0"
+      >
+        ⏭️
       </button>
     </div>
     <table

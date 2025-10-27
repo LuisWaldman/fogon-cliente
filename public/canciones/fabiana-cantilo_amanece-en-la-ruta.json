@@ -1,1 +1,263 @@
-{"cancion": "amanece-en-la-ruta", "banda": "fabiana-cantilo", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "D", "C"]}, {"nombre": "parte2", "acordes": ["D"]}, {"nombre": "parte3", "acordes": ["C"]}, {"nombre": "parte4", "acordes": ["Bm"]}, {"nombre": "parte5", "acordes": ["Em"]}], "orden_partes": [0, 1, 0, 1, 2, 1, 3, 4, 1, 2, 1, 3, 4, 2, 0, 1, 0, 1, 2, 1, 3, 4, 1, 2, 1, 3, 4, 0, 1, 0, 1, 2, 1, 3, 4, 1, 2, 1, 3, 4, 2, 1, 4, 3, 2, 2, 1, 3, 4, 2, 1, 4, 2, 1, 3, 4, 1, 2, 1, 3, 4, 2, 2, 1, 3, 4, 2, 1, 3, 4, 2, 1, 3, 4, 2]}, "letras": [["  Amanece en la ru", "ta, no me impor", "ta d\u00f3nde esto", "y/n"], ["  Me he dormido viaja", "ndo y he so\u00f1", "ado tan inten", "so/n"], ["  Y en ese sue\u00f1o yo me v", "e\u00eda en ese ", "auto, pero n", "o", "/n"], ["  No era el mismo porque e", "staba todo rot", "o en su interior", "", "/n"], ["  Este paisaje ", "es tan extra", "\u00f1o, se parece", " al de un tren el\u00e9ctrico/n"], ["  Esos \u00e1rboles", " tienen cont", "ornos, darme c", "uenta es tan hermoso/n"], ["  Y en ese sue", "o yo me ve\u00ed", "a en ese auto, pe", "ro no", "/n"], ["  No era el mis", "mo porque ten", "\u00eda fuego en ", "su interior/n"], ["  A medida que ", "aceleramos m", "is recuerdos", " se estremecen/n"], ["  Y en un soplo", " veo proyect", "ado como un ", "film toda mi vida/n"], ["  Ya no se si el cielo es", "ta arriba, ab", "ajo o dentro ", "de mi", "/n"], [" Y aunque el pa", "isaje sea tan", " extra\u00f1o cre", "o haber estado aqui/nD\u00f3nde"], [" voy, d\u00f3nde ", "estoy, qui\u00e9n ", "soy yo/n"], ["Qu\u00e9 hora e", "s, d\u00f3nde estar\u00e9?/nSi a"], ["fuera no es noche, ta", "mpoco es de d\u00eda/nN"], ["o hay tristezas, t", "an solo alegr\u00edas en mi", " co", "raz\u00f3", "n/n"], ["Y ahora todo es una lu", "z tan clara que a mi ", "lado ya no hay nad", "a", "/n"], ["  Solo alegr\u00eda, pa", "z y armon\u00eda y es", "a luz que es tan ", "tibia", "/n"], ["  Y bien comprendo q", "ue eso no era un s", "ue\u00f1o en ese auto estab", "a yo/n"], ["  Y ese auto estaba ", "todo roto y con fue", "go en su interio", "r/nD\u00f3nde"], [" voy, d\u00f3nde ", "estoy, qui\u00e9n ", "soy yo/nQu\u00e9 hora "], ["es, d\u00f3nde ", "estar\u00e9?"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "c-Ul91rd7uI", "delay": 0}]}
+{
+    "cancion": "amanece-en-la-ruta",
+    "banda": "fabiana-cantilo",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            3,
+            4,
+            2,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            3,
+            4,
+            0,
+            1,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            3,
+            4,
+            2,
+            1,
+            4,
+            3,
+            2,
+            2,
+            1,
+            3,
+            4,
+            2,
+            1,
+            4,
+            2,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            3,
+            4,
+            2,
+            2,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4,
+            2
+        ]
+    },
+    "letras": [
+        [
+            "  Amanece en la ru",
+            "ta, no me impor",
+            "ta dónde esto",
+            "y/n"
+        ],
+        [
+            "  Me he dormido viaja",
+            "ndo y he soñ",
+            "ado tan inten",
+            "so/n"
+        ],
+        [
+            "  Y en ese sueño yo me v",
+            "eía en ese ",
+            "auto, pero n",
+            "o",
+            "/n"
+        ],
+        [
+            "  No era el mismo porque e",
+            "staba todo rot",
+            "o en su interior",
+            "",
+            "/n"
+        ],
+        [
+            "  Este paisaje ",
+            "es tan extra",
+            "ño, se parece",
+            " al de un tren eléctrico/n"
+        ],
+        [
+            "  Esos árboles",
+            " tienen cont",
+            "ornos, darme c",
+            "uenta es tan hermoso/n"
+        ],
+        [
+            "  Y en ese sue",
+            "o yo me veí",
+            "a en ese auto, pe",
+            "ro no",
+            "/n"
+        ],
+        [
+            "  No era el mis",
+            "mo porque ten",
+            "ía fuego en ",
+            "su interior/n"
+        ],
+        [
+            "  A medida que ",
+            "aceleramos m",
+            "is recuerdos",
+            " se estremecen/n"
+        ],
+        [
+            "  Y en un soplo",
+            " veo proyect",
+            "ado como un ",
+            "film toda mi vida/n"
+        ],
+        [
+            "  Ya no se si el cielo es",
+            "ta arriba, ab",
+            "ajo o dentro ",
+            "de mi",
+            "/n"
+        ],
+        [
+            " Y aunque el pa",
+            "isaje sea tan",
+            " extraño cre",
+            "o haber estado aqui/nDónde"
+        ],
+        [
+            " voy, dónde ",
+            "estoy, quién ",
+            "soy yo/n"
+        ],
+        [
+            "Qué hora e",
+            "s, dónde estaré?/nSi a"
+        ],
+        [
+            "fuera no es noche, ta",
+            "mpoco es de día/nN"
+        ],
+        [
+            "o hay tristezas, t",
+            "an solo alegrías en mi",
+            " co",
+            "razó",
+            "n/n"
+        ],
+        [
+            "Y ahora todo es una lu",
+            "z tan clara que a mi ",
+            "lado ya no hay nad",
+            "a",
+            "/n"
+        ],
+        [
+            "  Solo alegría, pa",
+            "z y armonía y es",
+            "a luz que es tan ",
+            "tibia",
+            "/n"
+        ],
+        [
+            "  Y bien comprendo q",
+            "ue eso no era un s",
+            "ueño en ese auto estab",
+            "a yo/n"
+        ],
+        [
+            "  Y ese auto estaba ",
+            "todo roto y con fue",
+            "go en su interio",
+            "r/nDónde"
+        ],
+        [
+            " voy, dónde ",
+            "estoy, quién ",
+            "soy yo/nQué hora "
+        ],
+        [
+            "es, dónde ",
+            "estaré?"
+        ]
+    ],
+    "bpm": 80,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "c-Ul91rd7uI",
+            "delay": 0
+        }
+    ]
+}

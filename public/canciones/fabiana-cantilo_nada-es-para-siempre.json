@@ -1,1 +1,363 @@
-{"cancion": "nada-es-para-siempre", "banda": "fabiana-cantilo", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "C/B", "Am", "Am/G", "F", "C", "Dm", "G7", "C", "C/B", "Am", "Am/G", "F", "C", "Dm", "G7", "F", "G", "C", "F", "G", "C", "F", "G", "Am", "F", "G", "Dm", "G7", "C9", "Gm", "F", "C", "Dm", "G7", "C", "C", "C/B", "Am", "Am/G", "F", "C", "Dm", "G7", "C", "C/B", "Am", "Am/G", "F", "C", "Dm", "G7", "F", "G", "C", "F", "G", "C", "F", "G", "Am", "F", "G", "Dm", "G7", "C9", "Gm", "F", "C", "Dm", "G7", "C", "C9", "Gm", "F", "C", "Dm", "G7", "C", "C", "Gm", "F", "C", "C", "Gm", "F", "C", "Gm", "Am", "Dm", "G7", "C", "Gm", "F", "C", "Gm", "F", "C"]}], "orden_partes": [0]}, "letras": [["Sin querer te la", "stim\u00e9/n"], ["Sin querer te aban", "don\u00e9/n"], ["Solo s\u00e9 que yo", " no s\u00e9/n"], ["Cuidarte de mi amo", "r/n"], ["Necesito tu pe", "rd\u00f3n/n"], ["Necesito verte", " hoy/n"], ["Solo s\u00e9 que ", "yo no s\u00e9/n"], ["Cuidarte de mi amo", "r/nSi "], ["al final/nSiempre el tiempo se "], ["va/nDonde caen los d"], ["as/nSi a"], ["l final/nAbrazarse al d"], ["olor/nNo nos deja br"], ["illar/nDime qu\u00e9 "], ["ser\u00e1/nQu\u00e9 ser\u00e1 de lo"], ["s dos/nCuando pase la v"], ["ida/nAlgo ocur"], ["rir\u00e1/nTengo la sen"], ["saci\u00f3n/nUna carta gu"], ["ardada/nUn buen signo del"], [" sol/nNada es para sie"], ["mpre/nNada es para si"], ["empre/nNo me d"], ["igas mi amor/nQue te fa"], ["lta valor/nPorque n"], ["ada es para s", "iempre", "/nSi p"], ["udi\u00e9ramos", " hablar/nSi p"], ["udi\u00e9ramos", " dejarlo/n"], ["Vos sab\u00e9s que ", "yo no s\u00e9/nCuid"], ["arte de mi amo", "r/nOtra"], [" vez me equ", "ivoqu\u00e9/nOtra"], [" vez te aba", "ndon\u00e9/n"], ["Vos sab\u00e9s que ", "yo no s\u00e9/nCu"], ["idarte de mi amo", "r/nEl "], ["azar,nos permite/nCam"], ["biar/nNuestro incierto d"], ["estino/nEl tem"], ["or,que nos puede/nV"], ["encer/nSin mirar m"], ["\u00e1s all\u00e1/nYo creo que "], ["al final/nNunca s\u00e9 d\u00f3n"], ["de voy/nPero sigo un cam"], ["ino/nAlgo ocurr"], ["ir\u00e1, tengo la/nSensac"], ["i\u00f3n/nUna carta m"], ["arcada/nUn buen signo del s"], ["ol/nNada es para sie"], ["mpre/nNada es para si"], ["empre/nNo me d"], ["igas mi amor/nQue te fa"], ["lta valor/nPorque n"], ["ada es para s", "iempre", "/nNada es para"], [" siempre/nNada es para s"], ["iempre/nSi t"], ["u risa escap\u00f3/nSi n"], ["o escuchas mi voz, sabes/n"], ["Nada es para s", "iempre", "/n"], ["Todo vuelve a m\u00ed", "/nUna vez "], ["m\u00e1s", "/n"], ["Todo vuelve a m\u00ed", "/nUna vez m"], ["\u00e1s, ", "ah-ah/n"], ["Una vez m\u00e1s/nTe aliv"], ["iar\u00e1/nTe aliv"], ["iar\u00e1", "/nT"], ["an cerca de m", "\u00ed/nUna vez m"], ["\u00e1s", "/nTodo vuelve a "], ["m\u00ed/nUna vez "], ["m\u00e1s", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "iumfq-Xfl4M", "delay": 0}]}
+{
+    "cancion": "nada-es-para-siempre",
+    "banda": "fabiana-cantilo",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C/B",
+                    "Am",
+                    "Am/G",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C/B",
+                    "Am",
+                    "Am/G",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "F",
+                    "G",
+                    "C",
+                    "F",
+                    "G",
+                    "C",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Dm",
+                    "G7",
+                    "C9",
+                    "Gm",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "C/B",
+                    "Am",
+                    "Am/G",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C/B",
+                    "Am",
+                    "Am/G",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "F",
+                    "G",
+                    "C",
+                    "F",
+                    "G",
+                    "C",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "G",
+                    "Dm",
+                    "G7",
+                    "C9",
+                    "Gm",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C9",
+                    "Gm",
+                    "F",
+                    "C",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "C",
+                    "Gm",
+                    "F",
+                    "C",
+                    "C",
+                    "Gm",
+                    "F",
+                    "C",
+                    "Gm",
+                    "Am",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "Gm",
+                    "F",
+                    "C",
+                    "Gm",
+                    "F",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [
+            "Sin querer te la",
+            "stimé/n"
+        ],
+        [
+            "Sin querer te aban",
+            "doné/n"
+        ],
+        [
+            "Solo sé que yo",
+            " no sé/n"
+        ],
+        [
+            "Cuidarte de mi amo",
+            "r/n"
+        ],
+        [
+            "Necesito tu pe",
+            "rdón/n"
+        ],
+        [
+            "Necesito verte",
+            " hoy/n"
+        ],
+        [
+            "Solo sé que ",
+            "yo no sé/n"
+        ],
+        [
+            "Cuidarte de mi amo",
+            "r/nSi "
+        ],
+        [
+            "al final/nSiempre el tiempo se "
+        ],
+        [
+            "va/nDonde caen los d"
+        ],
+        [
+            "as/nSi a"
+        ],
+        [
+            "l final/nAbrazarse al d"
+        ],
+        [
+            "olor/nNo nos deja br"
+        ],
+        [
+            "illar/nDime qué "
+        ],
+        [
+            "será/nQué será de lo"
+        ],
+        [
+            "s dos/nCuando pase la v"
+        ],
+        [
+            "ida/nAlgo ocur"
+        ],
+        [
+            "rirá/nTengo la sen"
+        ],
+        [
+            "sación/nUna carta gu"
+        ],
+        [
+            "ardada/nUn buen signo del"
+        ],
+        [
+            " sol/nNada es para sie"
+        ],
+        [
+            "mpre/nNada es para si"
+        ],
+        [
+            "empre/nNo me d"
+        ],
+        [
+            "igas mi amor/nQue te fa"
+        ],
+        [
+            "lta valor/nPorque n"
+        ],
+        [
+            "ada es para s",
+            "iempre",
+            "/nSi p"
+        ],
+        [
+            "udiéramos",
+            " hablar/nSi p"
+        ],
+        [
+            "udiéramos",
+            " dejarlo/n"
+        ],
+        [
+            "Vos sabés que ",
+            "yo no sé/nCuid"
+        ],
+        [
+            "arte de mi amo",
+            "r/nOtra"
+        ],
+        [
+            " vez me equ",
+            "ivoqué/nOtra"
+        ],
+        [
+            " vez te aba",
+            "ndoné/n"
+        ],
+        [
+            "Vos sabés que ",
+            "yo no sé/nCu"
+        ],
+        [
+            "idarte de mi amo",
+            "r/nEl "
+        ],
+        [
+            "azar,nos permite/nCam"
+        ],
+        [
+            "biar/nNuestro incierto d"
+        ],
+        [
+            "estino/nEl tem"
+        ],
+        [
+            "or,que nos puede/nV"
+        ],
+        [
+            "encer/nSin mirar m"
+        ],
+        [
+            "ás allá/nYo creo que "
+        ],
+        [
+            "al final/nNunca sé dón"
+        ],
+        [
+            "de voy/nPero sigo un cam"
+        ],
+        [
+            "ino/nAlgo ocurr"
+        ],
+        [
+            "irá, tengo la/nSensac"
+        ],
+        [
+            "ión/nUna carta m"
+        ],
+        [
+            "arcada/nUn buen signo del s"
+        ],
+        [
+            "ol/nNada es para sie"
+        ],
+        [
+            "mpre/nNada es para si"
+        ],
+        [
+            "empre/nNo me d"
+        ],
+        [
+            "igas mi amor/nQue te fa"
+        ],
+        [
+            "lta valor/nPorque n"
+        ],
+        [
+            "ada es para s",
+            "iempre",
+            "/nNada es para"
+        ],
+        [
+            " siempre/nNada es para s"
+        ],
+        [
+            "iempre/nSi t"
+        ],
+        [
+            "u risa escapó/nSi n"
+        ],
+        [
+            "o escuchas mi voz, sabes/n"
+        ],
+        [
+            "Nada es para s",
+            "iempre",
+            "/n"
+        ],
+        [
+            "Todo vuelve a mí",
+            "/nUna vez "
+        ],
+        [
+            "más",
+            "/n"
+        ],
+        [
+            "Todo vuelve a mí",
+            "/nUna vez m"
+        ],
+        [
+            "ás, ",
+            "ah-ah/n"
+        ],
+        [
+            "Una vez más/nTe aliv"
+        ],
+        [
+            "iará/nTe aliv"
+        ],
+        [
+            "iará",
+            "/nT"
+        ],
+        [
+            "an cerca de m",
+            "í/nUna vez m"
+        ],
+        [
+            "ás",
+            "/nTodo vuelve a "
+        ],
+        [
+            "mí/nUna vez "
+        ],
+        [
+            "más",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "iumfq-Xfl4M",
+            "delay": 0
+        }
+    ]
+}

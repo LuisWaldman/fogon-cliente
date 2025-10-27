@@ -1,1 +1,336 @@
-{"cancion": "Im-Gonna-Live-Til-I-Die", "banda": "frank-sinatra", "escala": "A7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A7", "Bb6", "Bb7", "C7", "Eb9", "Ebm7b5", "F", "Dm", "Dmmaj7", "Dm7", "Eb9", "Bb7", "Bb7", "A7", "A7", "A7", "Dm7", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Dmmaj7", "Dm7", "Eb9", "A7", "Bb7", "A7", "Em7b5", "Bb7", "Dm", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Dmmaj7", "Dm7", "Eb9", "A7", "Bb7", "A7", "Em7b5", "Bb7", "Dm", "C7", "F", "C7", "F", "Bb7", "A7", "Bb7", "Dm", "Bb7", "A7", "Bb6", "Bb7", "A7", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Dmmaj7", "Dm7", "Eb9", "A7", "Bb7", "A7", "Em7b5", "A7", "Eb9", "Bb7", "Dm", "C7", "F", "C7", "F", "Bb7", "A7", "Bb7", "Dm", "Bb7", "A7", "Bb6", "Bb7", "A7", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Bb6", "Dm", "Bb7", "A7", "Dm", "Dmmaj7", "Dm7", "Eb9", "A7", "Bb7", "A7", "Em7b5", "A7", "Eb9", "Bb7", "Dm"]}], "orden_partes": [0]}, "letras": [[], [], [], ["Dm      x57765/n"], [], [], ["[Intro]/n"], [], ["[Vers", "e]", "", "", "", "/n"], ["I'm gonna l", "ive   ", " til", "l I  die!", "/n"], ["I'm gonna l", "augh  ", " 'ste", "ad of cry", ",/n"], ["I'm gonna take the t", "own and turn it up", "side dow", "n,/n"], ["I'm gon", "na liv", "e, liv", "e, live unti", "l I die.", "/n"], ["They're gon", "na say", "  Wha", "t a guy!", "/n"], ["I'm go", "nna pl", "ay  for", " the sky.", "/n"], ["Ain't gonna miss a t", "hing, I'm gonna ha", "ve my fl", "ing,/n"], ["I'm gon", "na live", ", live", ", live unti", "l I die.", "/n"], ["The blues I lay low, I'll make them stay lo", "w,/n"], ["They'll never trail over my he", "ad./n"], ["I'll b", "e a devil, til", "l I'm an", " angel,/n"], ["But unti", "l then", ", Hallel", "ujah!", "/n"], ["Gonna", " dance", ", gon", "na fly,", "/n"], ["I'll tak", "e a ch", "ance rid", "ing high", ",/n"], ["Before my number's u", "p, I'm gonna fi", "ll my cu", "p,/n"], ["I'm gon", "na li", "ve, liv", "e, live", ", live,", " live  until ", "I die!", "/n"], ["The blues I lay low, I'll make them stay lo", "w,/n"], ["They'll never trail over my he", "ad./n"], ["I'll b", "e a devil, til", "l I'm an", " angel,/n"], ["But unti", "l then", ", Hallel", "ujah!", "/n"], ["Gonna", " dance", ", gon", "na fly,", "/n"], ["I'll tak", "e a ch", "ance rid", "ing high", ",/n"], ["Before my number's u", "p, I'm gonna fi", "ll my cu", "p,/n"], ["I'm gon", "na li", "ve, liv", "e, live", ", live,", " live  until ", "I die!", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "ebnpNqczWpM", "delay": 0}]}
+{
+    "cancion": "Im-Gonna-Live-Til-I-Die",
+    "banda": "frank-sinatra",
+    "escala": "A7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A7",
+                    "Bb6",
+                    "Bb7",
+                    "C7",
+                    "Eb9",
+                    "Ebm7b5",
+                    "F",
+                    "Dm",
+                    "Dmmaj7",
+                    "Dm7",
+                    "Eb9",
+                    "Bb7",
+                    "Bb7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Dm7",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Dmmaj7",
+                    "Dm7",
+                    "Eb9",
+                    "A7",
+                    "Bb7",
+                    "A7",
+                    "Em7b5",
+                    "Bb7",
+                    "Dm",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Dmmaj7",
+                    "Dm7",
+                    "Eb9",
+                    "A7",
+                    "Bb7",
+                    "A7",
+                    "Em7b5",
+                    "Bb7",
+                    "Dm",
+                    "C7",
+                    "F",
+                    "C7",
+                    "F",
+                    "Bb7",
+                    "A7",
+                    "Bb7",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Bb6",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Dmmaj7",
+                    "Dm7",
+                    "Eb9",
+                    "A7",
+                    "Bb7",
+                    "A7",
+                    "Em7b5",
+                    "A7",
+                    "Eb9",
+                    "Bb7",
+                    "Dm",
+                    "C7",
+                    "F",
+                    "C7",
+                    "F",
+                    "Bb7",
+                    "A7",
+                    "Bb7",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Bb6",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Bb6",
+                    "Dm",
+                    "Bb7",
+                    "A7",
+                    "Dm",
+                    "Dmmaj7",
+                    "Dm7",
+                    "Eb9",
+                    "A7",
+                    "Bb7",
+                    "A7",
+                    "Em7b5",
+                    "A7",
+                    "Eb9",
+                    "Bb7",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0
+        ]
+    },
+    "letras": [
+        [],
+        [],
+        [],
+        [
+            "Dm      x57765/n"
+        ],
+        [],
+        [],
+        [
+            "[Intro]/n"
+        ],
+        [],
+        [
+            "[Vers",
+            "e]",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I'm gonna l",
+            "ive   ",
+            " til",
+            "l I  die!",
+            "/n"
+        ],
+        [
+            "I'm gonna l",
+            "augh  ",
+            " 'ste",
+            "ad of cry",
+            ",/n"
+        ],
+        [
+            "I'm gonna take the t",
+            "own and turn it up",
+            "side dow",
+            "n,/n"
+        ],
+        [
+            "I'm gon",
+            "na liv",
+            "e, liv",
+            "e, live unti",
+            "l I die.",
+            "/n"
+        ],
+        [
+            "They're gon",
+            "na say",
+            "  Wha",
+            "t a guy!",
+            "/n"
+        ],
+        [
+            "I'm go",
+            "nna pl",
+            "ay  for",
+            " the sky.",
+            "/n"
+        ],
+        [
+            "Ain't gonna miss a t",
+            "hing, I'm gonna ha",
+            "ve my fl",
+            "ing,/n"
+        ],
+        [
+            "I'm gon",
+            "na live",
+            ", live",
+            ", live unti",
+            "l I die.",
+            "/n"
+        ],
+        [
+            "The blues I lay low, I'll make them stay lo",
+            "w,/n"
+        ],
+        [
+            "They'll never trail over my he",
+            "ad./n"
+        ],
+        [
+            "I'll b",
+            "e a devil, til",
+            "l I'm an",
+            " angel,/n"
+        ],
+        [
+            "But unti",
+            "l then",
+            ", Hallel",
+            "ujah!",
+            "/n"
+        ],
+        [
+            "Gonna",
+            " dance",
+            ", gon",
+            "na fly,",
+            "/n"
+        ],
+        [
+            "I'll tak",
+            "e a ch",
+            "ance rid",
+            "ing high",
+            ",/n"
+        ],
+        [
+            "Before my number's u",
+            "p, I'm gonna fi",
+            "ll my cu",
+            "p,/n"
+        ],
+        [
+            "I'm gon",
+            "na li",
+            "ve, liv",
+            "e, live",
+            ", live,",
+            " live  until ",
+            "I die!",
+            "/n"
+        ],
+        [
+            "The blues I lay low, I'll make them stay lo",
+            "w,/n"
+        ],
+        [
+            "They'll never trail over my he",
+            "ad./n"
+        ],
+        [
+            "I'll b",
+            "e a devil, til",
+            "l I'm an",
+            " angel,/n"
+        ],
+        [
+            "But unti",
+            "l then",
+            ", Hallel",
+            "ujah!",
+            "/n"
+        ],
+        [
+            "Gonna",
+            " dance",
+            ", gon",
+            "na fly,",
+            "/n"
+        ],
+        [
+            "I'll tak",
+            "e a ch",
+            "ance rid",
+            "ing high",
+            ",/n"
+        ],
+        [
+            "Before my number's u",
+            "p, I'm gonna fi",
+            "ll my cu",
+            "p,/n"
+        ],
+        [
+            "I'm gon",
+            "na li",
+            "ve, liv",
+            "e, live",
+            ", live,",
+            " live  until ",
+            "I die!",
+            ""
+        ]
+    ],
+    "bpm": 80,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "ebnpNqczWpM",
+            "delay": 0
+        }
+    ]
+}

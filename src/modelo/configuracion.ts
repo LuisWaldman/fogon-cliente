@@ -4,7 +4,9 @@ import { Perfil } from './perfil'
 export class VistaTocar {
   public tamanioLetra: number = 22
   public modo: string = 'doble' // 'simple', 'doble', 'triple'
-  public muestra: string = 'letrayacordes' // 'simple', 'doble', 'triple'
+  public muestra: string = 'karaoke' // 'simple', 'doble', 'triple'
+  public muestraLetra: boolean = false
+  public viendoPartituras: boolean = false
   public reproduce: string = 'video' // 'simple', 'doble', 'triple'
   public invertido: boolean = false
   public viendoSecuencia: boolean = false
@@ -15,7 +17,7 @@ export class VistaTocar {
   public viendoCuadrado3: boolean = false
   public tamanioAcorde: number = 23
   public tamanioAcordesolo: number = 16
-  public viendoResumenVerso: boolean = true
+  public viendoResumenVerso: boolean = false
   public tamanioParte: number = 16
   public tamanioAcordeParte: number = 26
   public anchoPrincipal: number = 70 // Ancho de la parte principal
@@ -37,27 +39,17 @@ export class Configuracion {
   public vistasTocar: VistaTocar[] = [
     // 0: Celular, 1: PC, 2: Pantalla grande
     new VistaTocar(),
-    new VistaTocar(),
-    new VistaTocar(),
   ]
   public servidores: Servidor[] = []
   public conectarServerDefault: string = ''
   public loginDefault: datosLogin | null = null
   public perfil: Perfil | null = null
 
-  GetConfiguracionPantalla(innerWidth: number, innerHeight: number) {
-    // 0: Celular, 1: PC, 2: Pantalla grande
-    let idx = 1 // PC por defecto
-    if (innerWidth < 700) {
-      idx = 0 // Celular
-    } else if (innerWidth > 1700 && innerHeight > 1000) {
-      idx = 2 // Pantalla grande
-    }
-    return this.vistasTocar[idx]
+  GetConfiguracionPantalla() {
+    return this.vistasTocar[0] // Siempre retorna la configuración para PC
   }
   private static instance: Configuracion | null = null
-  static VERSION = 7 // Incremented version
-  public tema: string = 'claro'
+  static VERSION = 8 // Incremented version
   public volumen: number = 50
   public mostrarAcordes: boolean = true
 
@@ -78,7 +70,6 @@ export class Configuracion {
         const obj = JSON.parse(data)
         if (obj.VERSION === Configuracion.VERSION) {
           // Version match: load everything
-          conf.tema = obj.tema
           conf.volumen = obj.volumen
           conf.mostrarAcordes = obj.mostrarAcordes
 
@@ -122,7 +113,7 @@ export class Configuracion {
           if (
             obj.vistasTocar &&
             Array.isArray(obj.vistasTocar) &&
-            obj.vistasTocar.length === 3
+            obj.vistasTocar.length === 1
           ) {
             conf.vistasTocar = obj.vistasTocar.map((v: unknown) =>
               Object.assign(new VistaTocar(), v),
@@ -170,7 +161,6 @@ export class Configuracion {
       'configuracion',
       JSON.stringify({
         VERSION: Configuracion.VERSION,
-        tema: this.tema,
         volumen: this.volumen,
         mostrarAcordes: this.mostrarAcordes,
         vistasTocar: this.vistasTocar,

@@ -8,18 +8,118 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "C7",
-                    "G"
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C7",
+                    "C7",
+                    "G",
+                    "G",
                     "D",
                     "C7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C7",
+                    "G",
+                    "G",
                     "G"
                 ]
             }
@@ -27,53 +127,105 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "Este es el final de mi carrera/n"
+            "/n"
         ],
         [
-            "Este es el final de mi carrera/nse t"
+            "Este es el fin",
+            "al de mi carrera",
+            ", si termino",
+            "la pr",
+            "ima",
+            "vera./n",
+            "",
+            ""
         ],
         [
-            "erminó la primavera./nMe d"
+            "Me dan los últi",
+            "mos gustos,",
+            "con los últi",
+            "mos gustos. V",
+            "oy quedarme e",
+            "n la segunda fila",
+            ", tal vez en la",
+            "tercera./n",
+            "",
+            "",
+            ""
         ],
         [
-            "an los últimos g",
-            "ustos/n"
+            "Nada e",
+            "s lo que antes e",
+            "ra, este e",
+            "s el final de mi",
+            "carrera. This is t",
+            "he end, little f",
+            "riend. Y",
+            "a me di cuenta lo que",
+            "pasa. This is the e",
+            "nd, little fr",
+            "iend. Y",
+            "a me di cuenta lo que p",
+            "asa. Me pasa",
+            "que me quedes en cas",
+            "a. This is the e",
+            "nd, little friend",
+            ". El black e",
+            "s el black,",
+            "el negro es negr",
+            "o./n"
         ],
         [
-            "con los últimos sustos./n"
+            "El black e",
+            "s black,",
+            "el negro es negro",
+            "./n"
         ],
         [
-            "This is the end my little friend/nThis is the "
+            "No puede fa",
+            "ltar mucho más q",
+            "ue me desi",
+            "ntegró./n"
         ],
         [
-            "end my little friend/n"
+            "Es mi c",
+            "uarto día sin dorm",
+            "ir, nada más pref",
+            "ería vivir./n"
         ],
         [
-            "ya me di cuenta de lo que pasa./n"
+            "Es mi c",
+            "uarto día sin dormi",
+            "r, nada más prefe",
+            "ría vivir./n"
         ],
         [
-            "Pasa que me quedé sin c",
-            "asa/nThis is the "
+            "Borges nunca pu",
+            "do ser feliz,",
+            "yo también soy d",
+            "esdichado./n"
         ],
         [
-            "end little friend./nCuatro n"
-        ],
-        [
-            "oches desvela",
-            "do/ncon el c"
-        ],
-        [
-            "orazón en el cuarto de al lado."
+            "Cuatro noches",
+            "desvelado,",
+            "con el corazón en el c",
+            "uarto de al lado.",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
@@ -81,6 +233,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
-    "etiquetas": []
+    "procesando": 0,
+    "etiquetas": [
+        "Rock Nacional"
+    ],
+    "calidad": 1
 }

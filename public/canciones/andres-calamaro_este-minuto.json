@@ -8,63 +8,158 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "A",
-                    "E",
+                    "C#m",
                     "B",
+                    "C#m",
                     "E",
+                    "C#m",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "A",
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
                     "F#m",
-                    "A",
-                    "B",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "A",
                     "F#m",
                     "E",
-                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
                     "F#m",
-                    "B",
+                    "F#m",
                     "E",
-                    "A",
-                    "E",
-                    "B",
-                    "E",
-                    "A",
-                    "E",
-                    "A",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "C#m",
-                    "B",
-                    "A",
-                    "E",
-                    "A",
-                    "B",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "F#m",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "C#m",
+                    "B",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C#m",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
@@ -77,77 +172,107 @@
             "",
             "",
             "",
-            "/nDe re"
-        ],
-        [
-            "ír, de vol",
-            "ar tantas ve",
-            "ces me olvido",
-            "./n"
-        ],
-        [
-            "   Del sol caye",
-            "ndo en el mar",
-            ".",
-            "/nDe gri"
-        ],
-        [
-            "tar, de llora",
-            "r tantas vec",
-            "es me olvido",
             "/n"
         ],
         [
-            " Sigo pensa",
-            "ndo en qué vendr",
-            "./nP"
+            "De re",
+            "ír, de volar, tant",
+            "as veces me olvido. D",
+            "el sol cayendo en el m",
+            "ar, de gri",
+            "tar, de llorar, tantas",
+            "veces me olvido./n"
         ],
         [
-            "orque ya no te",
-            "ngo nada que ",
-            "jugar./n"
+            "Sigo pensando en que v",
+            "endrá. Me",
+            "jor no pensar en el",
+            "paso del tiempo,",
+            "una sola duda me p",
+            "uede matar. N",
+            "o pido consejos, qu",
+            "iero un remedio,",
+            "porque ya no tengo nada q",
+            "ue curar./n"
         ],
         [
-            "Este es el tiempo y e",
-            "l lugar/nN"
+            "Este es el tiempo e",
+            "s el lugar,",
+            "nada puede ser mej",
+            "or. Cans",
+            "ado de vivir quema",
+            "ndo el tiempo,",
+            "ahora que el sueño se a",
+            "cabó.",
+            "¿Dónde f",
+            "ue tu ideal de u",
+            "n mundo perfecto?",
+            "¿De dónde sos? ¿A",
+            "dónde vas? des",
+            "pués que vendrá, no q",
+            "uiero saberlo,",
+            "este es el momento el l",
+            "ugar./n"
         ],
         [
-            "ada puede ser mejo",
-            "r/nCans"
+            "Aferrado cosas que n",
+            "o tienen sentido,",
+            "me puedo equivoc",
+            "ar. L",
+            "a prosperidad en un e",
+            "nvase vacío. N",
+            "o olvides de dónde sos",
+            "dónde vas./n"
         ],
         [
-            "ado de vivir, quema",
-            "ndo el tiempo/nAh"
+            "Este es el tiempo es e",
+            "l lugar,",
+            "nada puede ser mej",
+            "or. Ya no v",
+            "oy vivir quema",
+            "ndo el tiempo, a",
+            "hora que el sueño se a",
+            "cabó./n",
+            ""
         ],
         [
-            "ora que el sueño se acab",
-            "o/nDe re"
+            "Aho",
+            "ra que el sueño se a",
+            "cabó./n",
+            "",
+            "",
+            ""
         ],
         [
-            "ír, de vol",
-            "ar tantas ve",
-            "ces me olvido",
-            "./n"
+            "Est",
+            "e es el tiempo e",
+            "s el lugar, n",
+            "ada puede ser mejor./n"
         ],
         [
-            "   Del sol caye",
-            "ndo en el mar",
-            ".",
-            "/nDe gri"
+            "Ya no v",
+            "oy vivir quema",
+            "ndo el tiempo, aho",
+            "ra que el sueño se a",
+            "cabó./n"
         ],
         [
-            "tar, de llora",
-            "r tantas vec",
-            "es me olvido",
-            "/n"
+            "D",
+            "e reír, de vol",
+            "ar, tantas veces me o",
+            "lvido. Del sol cayen",
+            "do en el mar./n"
         ],
         [
-            " Sigo pensa",
-            "ndo en qué vendr",
+            "De gritar, de llora",
+            "r, tantas veces me o",
+            "lvido. Sigo pensan",
+            "do en tu venganza.",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
@@ -155,5 +280,9 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [
+        "Rock Nacional"
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

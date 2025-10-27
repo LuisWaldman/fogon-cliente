@@ -2,64 +2,197 @@
     "cancion": "carencias-de-cordura",
     "banda": "milo-j",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 184,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "G",
+                    "Em",
+                    "B7",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "B7",
+                    "Cm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
                     "Bm",
-                    "Bbm"
+                    "Bm",
+                    "Bbm",
+                    "Bbm",
+                    "Bbm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "Bm",
                     "B7",
-                    "Em",
-                    "Bm"
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Bbm",
-                    "Am",
-                    "Bm",
+                    "B7",
+                    "B7",
+                    "B7",
                     "B7",
                     "C",
+                    "C",
+                    "Bm",
+                    "Bm",
                     "Bm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am",
-                    "B7",
                     "C",
-                    "Bm",
                     "C",
-                    "Am",
-                    "D4",
-                    "Em"
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Bbm",
-                    "Am",
-                    "B7",
-                    "Am",
+                    "C",
+                    "Em",
+                    "C",
                     "Bm",
                     "C",
+                    "Bm",
+                    "Bm",
+                    "Bbm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Am",
-                    "D4"
+                    "Am",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Am",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B7"
                 ]
             }
         ],
@@ -68,116 +201,183 @@
             1,
             2,
             3,
-            0,
-            1,
-            2,
-            1,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
-        [],
         [
-            "No sÃ© quiÃ©n mÃ¡s conoces lo que m",
-            "e pasa al ver tu caminar/n"
-        ],
-        [
-            "Tal vez el tie",
-            "mpo, sepa quÃ© siento/n"
-        ],
-        [
-            "Cuando me hablÃ¡s, y me cont",
-            "Ã¡s tu dÃ­",
-            "a/nMi alma me pidiÃ³ que te ame cuando"
-        ],
-        [
-            " oÃ­a tu voz una vez ",
-            "mÃ¡s/n"
-        ],
-        [
-            "Contento, y sin aliento, mirÃ© hacia",
-            " arriba",
-            "/nCuando se llenÃ³ la"
-        ],
-        [
-            " luna, vi tu rostro en un",
-            "a estrella/nY en cuanto comprendi lo "
-        ],
-        [
-            "bella que es, sentÃ­ yo no estar a la/n"
-        ],
-        [
-            "Altura/nCon vos entendÃ­ que nadie es"
-        ],
-        [
-            " perfecto/nPor tu carencias de "
-        ],
-        [
-            "cordura/nPero es que son tus mismos "
-        ],
-        [
-            "defÐµctos/nQue te hacen sÐµr una"
-        ],
-        [
-            " ternura",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Con vos nuca hubo nada que dudar/nSi mis "
+            "Cóm",
+            "o sé quién",
+            "más conoc",
+            "í, lo que me p",
+            "asa Al ver",
+            "tu caminar",
+            "tal vez el ti",
+            "empo sepa",
+            "qué siento Cu",
+            "ando me hab",
+            "lás me c",
+            "ontá",
+            "tu día/n"
         ],
         [
-            "miedos pesan menos que mi amor/nY las ganas"
+            "Mi alma me",
+            "pidió que te ames",
+            "cuando oí",
+            "as Tu voz una",
+            "vez más",
+            "contento",
+            "sin ali",
+            "ento Miré h",
+            "acia arriba",
+            "cuan",
+            "do se cerró",
+            "la lu",
+            "na Vi",
+            "tu rostro en una",
+            "estre",
+            "lla en cu",
+            "anto comprendí lo",
+            "ves Ay,",
+            "qué sentici",
+            "ón estaré la a",
+            "ltura/n"
         ],
         [
-            " que te",
-            "ngo, de volverte a abraz",
-            "ar/nY "
+            "Cómo ente",
+            "ndí que nadie es",
+            "perfec",
+            "to por tus car",
+            "encias de gor",
+            "dura P",
+            "ero es que son",
+            "tus mismos de",
+            "fecto/n"
         ],
         [
-            "decirte que me muero por t",
-            "enerte/nMe cambiaste el mundo con una "
+            "Que te hacen ser",
+            "una ter",
+            "nura",
+            "",
+            "/n"
         ],
         [
-            "sonrisa/nDe repente el sol ya no brilla t"
+            "Cómo",
+            "nunca hago nada de",
+            "que duda",
+            "r Sin mi mie",
+            "do pesa en manos que",
+            "mi amor las",
+            "ganas que t",
+            "engo/n"
         ],
         [
-            "an fue",
-            "rte/nComo esos dos ojitos que me "
+            "De volv",
+            "erte abra",
+            "zar d",
+            "ecirte que me am",
+            "oró por tene",
+            "rte Me cam",
+            "biaste el mundo con",
+            "una sonri",
+            "sa De repen",
+            "te el sol ya no bri",
+            "lla tan fuert/n"
         ],
         [
-            "hipnotizan/n"
+            "Cómo esos",
+            "dos ojitos que",
+            "me hipnotiz",
+            "an Ay, qué d",
+            "elicios No aguanté",
+            "las ganas",
+            "de verte un l",
+            "aio Pa' co",
+            "nocernos nos basta",
+            "ron dos mirad",
+            "as Pero esa",
+            "noche co",
+            "nocí al diablo",
+            ", el diablo r",
+            "eía, el diabl",
+            "bailaba/n"
         ],
         [
-            "Ay, que delicia/nNo aguantÃ© las "
+            "Cua",
+            "ndo se cerró",
+            "la lu",
+            "na Vi",
+            "tu rostro en",
+            "una estr",
+            "ella",
+            "en cuanto comprendí",
+            "lo ves Ay,",
+            "qué sent",
+            "ición estaré la",
+            "altur",
+            "a Cómo e",
+            "ntendí que nadie",
+            "es perf",
+            "ecto por tus",
+            "carencias de go",
+            "rdura/n"
         ],
         [
-            "ganas de ver tus labios/n"
+            "Pero es que",
+            "son tus mismos d",
+            "efect",
+            "os Que te hacen",
+            "ser una ter",
+            "nura",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Pa' conocernos nos bastaron dos miradas/nPero esa "
-        ],
-        [
-            "noche conocÃ­ el diablo/nEl diablo "
-        ],
-        [
-            "reÃ­a, el diablo bailab",
-            "a/nCuando se llenÃ³ la"
-        ],
-        [
-            " luna, vi tu rostro en una ",
-            "estrella/nY en cuanto comprendi l"
-        ],
-        [
-            "o bell",
-            "a que es, sentÃ­ yo no estar a la/nAltura"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Subtítulos realizados por la comunidad de Amara .org"
+        ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "hfABkoRgNRg",
+            "delay": 0.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

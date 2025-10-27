@@ -6,6 +6,9 @@ import iconofogon from './iconofogon.vue'
 
 const appStore = useAppStore()
 
+// Define el evento
+const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
+
 const copiado = ref(false)
 const urlcompartida = ref('')
 const compartiendo = ref(false)
@@ -61,6 +64,14 @@ function arreglartexto(texto: string): string {
   }
 
   return processed
+}
+
+function abrirVistaEdicion() {
+  emit('abrirVistaEdicion')
+}
+
+function clickEditar() {
+  emit('editarCancion')
 }
 </script>
 
@@ -169,13 +180,29 @@ function arreglartexto(texto: string): string {
           </li>
 
           <li>
+            <a
+              class="dropdown-item"
+              href="#"
+              @click="abrirVistaEdicion"
+              v-if="$route.path != '/configurar'"
+            >
+              👁️‍🗨️ Ver
+            </a>
+          </li>
+
+          <li v-if="$route.path === '/tocar'">
+            <a class="dropdown-item" href="#" @click="clickEditar">
+              ✍️ Editar
+            </a>
+          </li>
+
+          <li>
             <router-link
               class="dropdown-item"
               to="/configurar"
               v-if="$route.path != '/configurar'"
             >
-              <i class="bi bi-gear"></i>
-              Configurar
+              ⚙️ Configurar
             </router-link>
           </li>
         </ul>

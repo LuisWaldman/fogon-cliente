@@ -10,6 +10,7 @@ import { FiltroVideo } from '../../modelo/indices/filtroVideo'
 import { FiltroPartes } from '../../modelo/indices/filtroPartes'
 import { filtroAcordes } from '../../modelo/indices/filtroAcordes'
 import { FiltroEtiquetas } from '../../modelo/indices/filtroEtiquetas'
+import { FiltroCalidad } from '../../modelo/indices/filtroCalidad'
 
 const appStore = useAppStore()
 
@@ -32,7 +33,7 @@ const filtroPartitura = ref(false)
 const filtroCantAcordes1 = ref(false)
 const filtroDuracion = ref(false)
 const filtroCalidad = ref(false)
-const filtroGrupo = ref(false)
+const filtroEtiquetas = ref(false)
 const filtroPartes = ref(false)
 
 // Refs para controlar qué dropdown está abierto
@@ -68,12 +69,12 @@ const escalas = [
 
 const filtroEscalaNota = ref(['C'])
 const filtroTempoBPM = ref(['0_60'])
-const filtroPartituraSeleccionada = ref(['todas'])
-const filtroCantAcordesSeleccionada = ref(['todas'])
+const filtroPartituraSeleccionada = ref([''])
+const filtroCantAcordesSeleccionada = ref([''])
 const filtroDuracionSeleccionada = ref(['todas'])
-const filtroCalidadSeleccionada = ref(['todas'])
-const filtroGrupoSeleccionado = ref(['rock_nacional'])
-const filtroPartesSeleccionada = ref(['una'])
+const filtroCalidadSeleccionada = ref(['0', '1', '2', '3'])
+const filtroGrupoSeleccionado = ref([])
+const filtroPartesSeleccionada = ref([''])
 
 // Opciones para los dropdowns
 const opcionesTempo = [
@@ -109,23 +110,19 @@ const opcionesDuracion = [
 ]
 
 const opcionesCalidad = [
-  { value: 'web', label: 'Web' },
-  { value: 'analisis_anulado', label: 'Análisis Anulado' },
-  { value: 'analisis_malo', label: 'Análisis Malo' },
-  { value: 'analisis_regular', label: 'Análisis Regular' },
-  { value: 'analisis_bueno', label: 'Análisis Bueno' },
-  { value: 'analisis_excelente', label: 'Análisis Excelente' },
-  { value: 'aprobado_fogon', label: 'Aprobado por Fogon.ar' },
-  { value: 'aprobado_usuario', label: 'Aprobado Usuario' },
+  { value: '0', label: 'De Internet' },
+  { value: '1', label: 'Texto Sincronizado' },
+  { value: '2', label: 'Texto Corregido' },
+  { value: '3', label: 'Ok' },
 ]
 
 const opcionesGrupo = [
-  { value: 'rock_nacional', label: 'Rock Nacional' },
+  { value: 'Rock Nacional', label: 'Rock Nacional' },
   { value: 'Tango', label: 'Tango' },
-  { value: 'folclore', label: 'Folclore' },
-  { value: 'cumbia', label: 'Cumbia' },
-  { value: 'rock_internacional', label: 'Rock Internacional' },
-  { value: 'musica_moderna', label: 'Música Moderna' },
+  { value: 'Folclore', label: 'Folclore' },
+  { value: 'Cumbia', label: 'Cumbia' },
+  { value: 'Rock Internacional', label: 'Rock Internacional' },
+  { value: 'Música Moderna', label: 'Música Moderna' },
   { value: 'sonetos', label: 'Sonetos' },
   { value: 'brasilero', label: 'Brasilero' },
   { value: 'chanson_francesa', label: 'Francés' },
@@ -171,6 +168,11 @@ function buscarCanciones() {
     // Suponiendo que tienes un filtro para cantidad de acordes
     filtros.push(new filtroAcordes(acordesSeleccionados))
   }
+  if (filtroCalidad.value) {
+    const calidadesSeleccionadas = filtroCalidadSeleccionada.value.join(',')
+    // Suponiendo que tienes un filtro para cantidad de acordes
+    filtros.push(new FiltroCalidad(calidadesSeleccionadas))
+  }
 
   if (cfiltroVideo.value) {
     filtros.push(new FiltroVideo())
@@ -181,7 +183,7 @@ function buscarCanciones() {
     filtros.push(new FiltroPartes(partesSeleccionadas))
   }
 
-  if (filtroGrupo.value) {
+  if (filtroEtiquetas.value) {
     const partesSeleccionadas = filtroGrupoSeleccionado.value.join(',')
     filtros.push(new FiltroEtiquetas(partesSeleccionadas))
   }
@@ -282,11 +284,11 @@ function VerFiltros() {
       </div>
 
       <!-- Grupo de Bandas -->
-      <div class="filtro" :class="{ seleccionado: filtroGrupo }">
-        <div class="filtro-header" @click="filtroGrupo = !filtroGrupo">
+      <div class="filtro" :class="{ seleccionado: filtroEtiquetas }">
+        <div class="filtro-header" @click="filtroEtiquetas = !filtroEtiquetas">
           Etiquetas
         </div>
-        <div v-if="filtroGrupo" class="dropdown-container">
+        <div v-if="filtroEtiquetas" class="dropdown-container">
           <div
             class="dropdown-header"
             @click="dropdownGrupoAbierto = !dropdownGrupoAbierto"

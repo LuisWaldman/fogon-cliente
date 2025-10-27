@@ -8,156 +8,385 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "B7",
-                    "E",
                     "A",
                     "B7",
                     "E",
                     "G#",
+                    "F#m",
+                    "E",
+                    "B7",
+                    "A",
+                    "B7",
+                    "E",
+                    "G#",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "G#",
+                    "G#",
+                    "E",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B7",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "C#m",
+                    "A",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F#m",
                     "F#m",
                     "B7",
-                    "E",
+                    "B7",
+                    "B7",
                     "B7",
                     "E",
-                    "A",
-                    "B7",
                     "E",
-                    "G#",
-                    "C#m",
+                    "E",
                     "F#m",
-                    "B7",
                     "F#m",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "B7",
+                    "A",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
                     "F#m",
-                    "B7",
-                    "A",
-                    "B7",
-                    "E",
-                    "C#m",
-                    "B7",
-                    "C#m",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "E",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "B7",
-                    "E",
-                    "A",
-                    "B7",
-                    "E",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "B7",
-                    "E",
-                    "G#",
-                    "A",
-                    "A#",
-                    "B"
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "llero en e",
-            "dad de merec",
-            "er,/n con "
-        ],
-        [
-            "un pelo de to",
-            "nto, cuatro canas",
-            "/n el pas"
-        ],
-        [
-            "ado resuelto y muchas ga",
-            "nas/n y"
-        ],
-        [
-            "a sabe usted de que",
-            "./n Inform"
-        ],
-        [
-            "al, ilustra",
-            "do, manejab",
-            "le/n m"
-        ],
-        [
-            "as amigo de ga",
-            "tos que de per",
-            "ros./n Con d"
-        ],
-        [
-            "os pulseras y una inexplic",
-            "able/n mal"
-        ],
-        [
-            "a salud de hierro.",
-            "/n Solic"
-        ],
-        [
-            "ita con fines poco se",
-            "rios/n se"
-        ],
-        [
-            "ora aficionada al adult",
-            "erio/n o señor"
-        ],
-        [
-            "ita de entre qu",
-            "ince y cuare",
-            "nta/n (si n"
-        ],
-        [
-            "o los apare",
-            "nta)./n Las c"
-        ],
-        [
-            "artas a",
-            " República Españ",
-            "ola,/n h"
-        ],
-        [
-            "oy Avenida Juan Carlos Prime",
-            "ro./n con f"
-        ],
-        [
-            "oto que prefiero de cue",
-            "rpo entero y sola",
             "",
             "",
-            "/n a vu"
+            "/n"
         ],
         [
-            "elta de corre",
-            "o ira la mí",
-            "a/n con tr"
+            "Cabal",
+            "lero, en edad de mere",
+            "cer Con",
+            "un pelo de tonto, cuatro c",
+            "anas El p",
+            "asado resuelto muchas g",
+            "anas Ya sabe usted d",
+            "e qué Info",
+            "rma ilustrado manej",
+            "able Má",
+            "s amigo de gatas que de p",
+            "erros",
+            "dos ulceras una inexplic",
+            "able Mala salud d",
+            "e hierro Soli",
+            "citan con fines c",
+            "oserios Señor",
+            "a aficionada la ulter",
+            "ior seño",
+            "rita, entre quince cua",
+            "renta Si no los aparen",
+            "ta Las",
+            "cartas República Españ",
+            "ola Hoy,",
+            "avenida Juan Carlos/n"
         ],
         [
-            "aje gris y mas chulo que un o",
-            "cho/n porque la t"
+            "Con fo",
+            "tos que prefiero De",
+            "cuerpo entero sola",
+            "vuelta de correo ir la m",
+            "ía Contraje g",
+            "ris machulo que un",
+            "o",
+            "c",
+            "h",
+            "o/n"
         ],
         [
-            "engo,",
-            " como le dir",
-            "a",
+            "Se aceptan femin",
+            "istas sin pancarta C",
+            "urses enamo",
+            "radas del amor",
+            "pesimistas har",
+            "tas de estar hartas De",
+            "decirme que no/n"
+        ],
+        [
+            "Igual me da mujer",
+            "de mala nota Q",
+            "ue especialista e",
+            "n Borges Lacan/n"
+        ],
+        [
+            "Si no viene tocán",
+            "dome con Juan Salvador/n"
+        ],
+        [
+            "Las pelotas/n"
+        ],
+        [
+            "Dispuesto todo In",
+            "cluso defraudarte A",
+            "lérgico al d",
+            "eporte alrededor/n"
+        ],
+        [
+            "Con un preco tal",
+            "ento para el arte De l",
+            "a ella culadilla L",
+            "as cartas C",
+            "alle Melancolia H",
+            "oy, travesía a",
+            "l pared del manzano/n"
+        ],
+        [
+            "Con dos fotograf",
+            "ías del último vera",
+            "no vuelta de correo",
+            "ir la mía/n"
+        ],
+        [
+            "Donde aunque flaco",
+            "pálido Destaco por te",
+            "nerla más larga todavía/n"
+        ],
+        [
+            "Q",
+            "ue un lunescita v",
+            "a con el amor",
             "",
             "",
+            "",
+            "",
+            "nivel",
+            "ser monjitas de clau",
+            "sura Abtengan",
+            "se fanáticas abste",
+            "mias La pas",
+            "ión con controles de alcohol en y",
+            "a No me la pone dura/n"
+        ],
+        [
+            "Podr",
+            "án buscarse amantes de oc",
+            "asión Cuand",
+            "o la decadencia lo aco",
+            "nseje Que traiga",
+            "referencias se d",
+            "eje Ganar al dom",
+            "inó",
+            "las interesadas aseg",
+            "uró Páxi",
+            "ma indiscreción, ninguna pr",
+            "isa Buen",
+            "a conversación, besos con r",
+            "isas noches sin fut",
+            "uro Car",
+            "tas al bulevar de Ma",
+            "lvivir Tal b",
+            "ien llamado de los sueños rotos/n"
+        ],
+        [
+            "Ajunt",
+            "e un par de fotos De frente",
+            "de envertir v",
+            "uelta de correo ir la mía/n"
+        ],
+        [
+            "Como se d",
+            "é poeta parnaciano/n"
+        ],
+        [
+            "Ufano de ten",
+            "erla todavía M",
+            "ás l",
+            "arga que el pirano/n"
+        ],
+        [
+            "Más la",
+            "rga que el pirano M",
+            "ás la",
+            "rga que el pi",
+            "rano",
             "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 78,
     "medias": [
         {
             "tipo": "Youtube",
@@ -165,5 +394,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
 import { useRouter } from 'vue-router'
+import editVista from './components/comp_tocar/editVista.vue'
+import { OrigenCancion } from './modelo/cancion/origencancion'
 
 const appStore = useAppStore()
 onMounted(() => {
@@ -21,18 +23,42 @@ onMounted(() => {
     // If we're on any route other than root and there's no cancion parameter,
     // redirect to the root
     //window.location.href = '/'
-    //return
+    //      return
   }
 
   const router = useRouter()
   appStore.aplicacion.setRouter(router)
   appStore.aplicacion.onMounted()
 })
+const refEditandoVista = ref(false)
+function cerrareditarPantalla() {
+  refEditandoVista.value = false
+}
+
+const router = useRouter()
+function clickEditar() {
+  // Redirect to edit page for the current song
+  appStore.editandocancion = appStore.cancion
+  appStore.origenEditando = new OrigenCancion(
+    appStore.origenCancion.origenUrl,
+    appStore.origenCancion.fileName,
+    appStore.origenCancion.usuario,
+  )
+  appStore.cancionModificada = false
+  router.push('/editar')
+}
+
+function abrirVistaEdicion() {
+  refEditandoVista.value = true
+}
 </script>
 
 <template>
   <div id="contenedor-musical" class="pantalla">
-    <Cabecera />
+    <Cabecera
+      @abrirVistaEdicion="abrirVistaEdicion"
+      @editarCancion="clickEditar"
+    />
     <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
       <img
         src="/img/iconogrande.png"
@@ -43,6 +69,10 @@ onMounted(() => {
       <div>{{ appStore.estadosApp.texto }}</div>
     </div>
     <router-view v-if="appStore.estadosApp.estado === 'ok'" />
+    <editVista
+      v-if="refEditandoVista"
+      @cerrar="cerrareditarPantalla"
+    ></editVista>
   </div>
 </template>
 
