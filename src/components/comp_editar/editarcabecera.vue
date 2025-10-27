@@ -56,7 +56,7 @@ helper.latino = appStore.perfil.CifradoLatino
 
 <template>
   <div class="navbarFogon">
-    <div style="display: flex;">
+    <div style="display: flex; flex-wrap: wrap;">
     <div class="divctrlEdit">
       <div style="display: flex;"> 
       <emoticonOrigen :origen="origen.origenUrl" />
