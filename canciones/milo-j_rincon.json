@@ -2,161 +2,241 @@
     "cancion": "rincon",
     "banda": "milo-j",
     "escala": "D#",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "D#",
                     "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A#",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
                     "D7",
-                    "Cm"
+                    "Cm",
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "D7",
+                    "D7",
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "A#",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Cm",
+                    "Cm",
+                    "D#",
+                    "A#",
+                    "A#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D#",
-                    "A#",
+                    "D",
                     "D",
                     "Cm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "A#",
+                    "D7",
+                    "D7",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "A#",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D#",
+                    "D#",
+                    "A#",
+                    "A#",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Hoy mi arma/n"
+            "Hoy mi arma",
+            "es la",
+            "calma/n"
         ],
         [
-            "Es la calma/n"
+            "Me tem",
+            "o, algo me f",
+            "alta Ser",
+            "sincer",
+            "me saco al k",
+            "arma Per",
+            "soy solitar",
+            "io Mi alma es a",
+            "nuala Las",
+            "noches son feas",
+            "acabo de con la i",
+            "dea De suena un",
+            "alma vacia",
+            "por mas que no q",
+            "uiera Los c",
+            "olores se",
+            "hacen gris",
+            "es No hay r",
+            "incón al",
+            "que escap",
+            "ar Ilusi",
+            "ones,",
+            "infelic",
+            "es Mi conf",
+            "ort es la",
+            "soledad Yo que",
+            "no soy tan buen",
+            "o Como un día p",
+            "rometí el",
+            "insomnio pregunt/n"
         ],
         [
-            "Me temo/n"
+            "Cuanto puedo se",
+            "guir Ritánd",
+            "ole al destin/n"
         ],
         [
-            "Algo me falta/n"
+            "No te olvides de",
+            "mi aunque v",
+            "arios lo hiciero/n"
         ],
         [
-            "Ser sincero/n"
+            "Aún no puedo m",
+            "orir",
+            "aunque no acepte que ya no",
+            "es Ta se mi reality Da",
+            "ifursosamente tu belleza ada",
+            "ptarme Fuiste el mas bellísimo ca",
+            "lambre Pero debí soltarme",
+            "un pájaro",
+            "aunque no acepte que ya no es/n"
         ],
         [
-            "Me sacÃ³ el karma/n"
-        ],
-        [
-            "Pero soy solitario/n"
-        ],
-        [
-            "Mi alma ya no habla/n"
-        ],
-        [
-            "Las noches son feas/n"
-        ],
-        [
-            "Y acabÃ© con la idea/n"
-        ],
-        [
-            "De llenar un alma vacÃ­a/n"
-        ],
-        [
-            "Y por mÃ¡s que no quiera/n"
-        ],
-        [
-            "Los colores se hacen g",
-            "rises/nNo hay rin"
-        ],
-        [
-            "cÃ³n al que escapar",
+            "Ta se mi reality Da i",
+            "fursosamente tu belleza adapta",
+            "rme Fuiste el mas bellísimo cal",
+            "ambre Pero debí soltarme un",
+            "pájaro Que conoce otros a",
+            "ires Los",
+            "colores",
+            "se hacen gr",
+            "ises No hay",
+            "rincó",
+            "al que esc",
+            "apar",
             "/n"
         ],
         [
-            "Ilusiones, infelic",
-            "es/n"
-        ],
-        [
-            "Mi confort en la soleda",
-            "d/nCreo que no soy tan "
-        ],
-        [
-            "bueno/nComo un dÃ­a promet"
-        ],
-        [
-            "Ã­/nY el insomnio pregunta"
-        ],
-        [
-            "/nCuÃ¡nto puedo segui"
-        ],
-        [
-            "r/nGritÃ¡ndole al dest"
-        ],
-        [
-            "ino/nNo te olvides de mÃ"
-        ],
-        [
-            "­/nY aunque varios lo hic"
-        ],
-        [
-            "ieron/nAÃºn no puedo m"
-        ],
-        [
-            "orir/n"
-        ],
-        [
-            "Y aunque no acepte que ya no estÃ¡s en mi realidad/n"
-        ],
-        [
-            "Y forzosamente tuve que adaptarme/nFuiste el mÃ¡s bell"
-        ],
-        [
-            "Ã­simo calambre/nPero debÃ­ soltar"
-        ],
-        [
-            "me/n"
-        ],
-        [
-            "Y aunque no acepte que ya no estÃ¡s en mi realidad/n"
-        ],
-        [
-            "Y forzosamente tuve que adaptarme/nFuiste el mÃ¡s bel"
-        ],
-        [
-            "lÃ­simo calambre/nPero debÃ­ soltarm"
-        ],
-        [
-            "e/n"
-        ],
-        [
-            "Los colores se hacen gr",
-            "ises/nNo hay rinc"
-        ],
-        [
-            "Ã³n al que escapar",
-            "/nIlusion"
-        ],
-        [
-            "es, infelices",
-            "/nMi conf"
-        ],
-        [
-            "ort en la soledad",
+            "Ilusiones, in",
+            "felices Mi",
+            "confort es",
+            "la sole",
+            "dad",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Qip3xXCTzh4",
+            "delay": 2700.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

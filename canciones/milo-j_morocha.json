@@ -2,25 +2,123 @@
     "cancion": "morocha",
     "banda": "milo-j",
     "escala": "A#m",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "A#",
+                    "C#",
+                    "A#m",
                     "A#m",
                     "F#",
+                    "G#",
+                    "C#",
+                    "C#",
+                    "G#",
+                    "C#",
+                    "C#",
+                    "F",
+                    "G#",
+                    "C#"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "F#",
+                    "F#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "F#",
+                    "F#",
+                    "G#",
+                    "G#",
                     "G#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A#m",
+                    "A#m",
+                    "A#m",
+                    "G#",
+                    "F#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "A#m",
+                    "F#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "A#m",
+                    "A#m",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A#m",
+                    "A#m",
+                    "A#m",
+                    "A#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
                     "G#",
                     "A#m",
                     "F#",
+                    "F#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A#m",
+                    "A#m",
+                    "F#",
+                    "F#",
+                    "A#m",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
                     "G#",
                     "G#"
                 ]
@@ -29,94 +127,121 @@
         "orden_partes": [
             0,
             1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "¡mono' ahora/nNo  dejemos que pasen "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "las horas/nSolo dame una oport"
+            "Nena",
+            "si querés vámonos",
+            "ahora No d",
+            "ejemos que pasen las",
+            "horas Solo",
+            "dame una oportunid",
+            "ad tal vez ma",
+            "ñana no estés más s",
+            "ola No soy",
+            "pao pero pido una ch",
+            "ance Por la n",
+            "oche espero tu men",
+            "saje sé que",
+            "no crees pero moro",
+            "cha Tu alma rot",
+            "a va recupe",
+            "rarse/n"
         ],
         [
-            "unidad/nY tal vez maÃ±ana no estÃ©s"
+            "Por fu",
+            "era sos linda pero que",
+            "por dentro no hay otra Como",
+            "vos ni pensándola dos",
+            "veces Sos un ser",
+            "libre te deseo lo me",
+            "jor Por eso te quiero pa'",
+            "mi los días, los años, los",
+            "meses Desde hace ti",
+            "empo por las noches Me hago im",
+            "ágenes mentales De lo que",
+            "sería un amor yo pe",
+            "rfecto No somos tan",
+            "políticamente corre",
+            "ctos Hagámonos los mudo",
+            "dejemos hablar al ti",
+            "empo me gusta esa",
+            "cara tierna Que pones cuan",
+            "do te frus",
+            "traes",
+            "es que nunca va haber n",
+            "ada igual Como tus besos",
+            "en la nuca/n"
         ],
         [
-            " mÃ¡s sola/nNo soy Pau, pero pido una"
+            "Porque sos",
+            "de barrio",
+            "yo soy",
+            "de barri/n"
         ],
         [
-            " chance/nPor la noche espero tu m"
+            "Los dos so",
+            "mos uno/n"
         ],
         [
-            "ensaje/nY sÃ© que no crees, per"
-        ],
-        [
-            "o morocha/nTu alma rota, va a recupera"
-        ],
-        [
-            "rse, yeah/n"
-        ],
-        [
-            "Por fuera sos linda pero es que/nPor dentro no hay otra como v"
-        ],
-        [
-            "os/n"
-        ],
-        [
-            "Sos un ser libre y te deseo lo mejor/nD"
-        ],
-        [
-            "esde hace tiempo y por las noches/nMe hago imÃ¡genes men"
-        ],
-        [
-            "tales de lo que serÃ­a/n"
-        ],
-        [
-            "No somos tan polÃ­ticamente correctos/nY "
-        ],
-        [
-            "me gusta esa cara tierna que pones/nCuando te"
-        ],
-        [
-            " frusta/n"
-        ],
-        [
-            "Y es que nunca va a haber nada igual/n"
-        ],
-        [
-            "Porque sos de barrio/nY yo soy de bar"
-        ],
-        [
-            "rio/nLos dos somo"
-        ],
-        [
-            "s uno sin lÃ­mites ni horario/nNena si querÃ©s, vÃ"
-        ],
-        [
-            "¡mono' ahora/nNo  dejemos que pasen "
-        ],
-        [
-            "las horas/nSolo dame una oport"
-        ],
-        [
-            "unidad/nY tal vez maÃ±ana no estÃ©s"
-        ],
-        [
-            " mÃ¡s sola/nNo soy Pau, pero pido una"
-        ],
-        [
-            " chance/nPor la noche espero tu mensaje"
-        ],
-        [],
-        [],
-        []
+            "Sin limites ni",
+            "horarios Ne",
+            "na, si querés vámono",
+            "ahora No",
+            "dejemos que pasen",
+            "las horas So",
+            "lo dame una oportu",
+            "nidad tal vez m",
+            "añana no estés más",
+            "sola No",
+            "soy pao pero pido una c",
+            "hance Por",
+            "la noche espero tu me",
+            "nsaje sé",
+            "que no crees pero mo",
+            "ro Chao, tu alma ro",
+            "ta va recup",
+            "erarse",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "jMNRg3nHwU0",
+            "delay": 0.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

@@ -8,147 +8,561 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "E",
+                    "E",
                     "B",
-                    "A"
+                    "B",
+                    "B"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B",
-                    "E",
-                    "A",
-                    "B",
-                    "A",
-                    "B",
-                    "E",
-                    "A"
+                    "B"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A",
                     "A",
                     "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
                     "B",
                     "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "E",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
                     "B",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "B",
+                    "E",
+                    "E",
+                    "A",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
-            0,
-            1,
-            0,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
         [
-            "Cuando aprendí a tragar fuego/nde Albacete a Nueva Yor"
-        ],
-        [
-            "k./n¿qu"
-        ],
-        [
-            "ién ha men",
-            "tido, mi am",
-            "or?/n"
-        ],
-        [
-            "La canción que estoy cantando/ny acaba en un hospita"
-        ],
-        [
-            "l./np"
-        ],
-        [
-            "or fulan",
-            "ita de tal",
-            "?/nCuando el flaut"
-        ],
-        [
-            "ista de Hamelín/nsacó un ra"
-        ],
-        [
-            "tón de su bombín,/nPolichin"
-        ],
-        [
-            "ela se fugó ",
-            "con Arlequ",
-            "n./nHay marip"
-        ],
-        [
-            "osas de arrabal/nque nunca apre"
-        ],
-        [
-            "nden a volar,/nvinagre y r"
-        ],
-        [
-            "osas,/na la h"
-        ],
-        [
-            "ora de",
-            " cenar.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "La trapecista polaca/ncaminito de Mosc"
+            "Cuando",
+            "aprendí tr",
+            "agar fuego, e",
+            "l círculo",
+            "ya se ha",
+            "bía ido d",
+            "e albacete./n"
         ],
         [
-            "ú./nno va"
+            "Nueva/n"
         ],
         [
-            "lgo me",
-            "nos que tú",
-            "./nEl "
+            "York, e",
+            "l",
+            "",
+            "ele",
+            "fante está ciego,",
+            "",
+            "el doma",
+            "rón mal herido,",
+            "quien",
+            "ha ment",
+            "ido mi amor./n",
+            ""
         ],
         [
-            "lanzador de cuchillos/ntrabaja de afilado"
+            "L",
+            "a canc",
+            "ión que e",
+            "stoy cantando,",
+            "empie",
+            "za e",
+            "n otras canciones",
+            "",
+            "acaba en un",
+            "hospital./n",
+            "",
+            ""
         ],
         [
-            "r./nde "
+            "Porque",
+            "me sigo",
+            "jugando l",
+            "a vida",
+            "par",
+            "es nones p",
+            "or",
+            "fulanita d",
+            "e tal./n",
+            ""
         ],
         [
-            "tanto de",
-            "cir adiós.",
-            "/nCuando el f"
+            "Cuando e",
+            "l flautista d",
+            "e Amel",
+            "ie sacó",
+            "un ratón d",
+            "e su bombín./n",
+            ""
         ],
         [
-            "lautista de Hamelín/nsacó un ra"
+            "Polichinela s",
+            "e fugó c",
+            "on Arl",
+            "equín./n",
+            ""
         ],
         [
-            "tón de su bombín,/nPolichin"
+            "Ha",
+            "y mariposas d",
+            "e arr",
+            "apa que",
+            "nunca pren",
+            "den v",
+            "olar. Vi",
+            "nagre ro",
+            "sas la h",
+            "ora d",
+            "e ce",
+            "na",
+            "r./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         [
-            "ela se fug",
-            " con Arlequí",
-            "n./nHay marip"
+            "L",
+            "a trapecista",
+            "polaca s",
+            "e",
+            "encaprichó d",
+            "e un forzud",
+            "o. Un c",
+            "aminito d",
+            "e Mo",
+            "scú c",
+            "am",
+            "bió",
+            "mi oro por s",
+            "u alpaca./n"
         ],
         [
-            "osas de arrabal/nque nunca apr"
+            "Mal",
+            "dita ley de",
+            "l embudo, n",
+            "o va",
+            "algo menos q",
+            "ue tú./n",
+            ""
         ],
         [
-            "enden a volar,/nvinagre y r"
+            "E",
+            "l lanz",
+            "ador de cuc",
+            "hillos po",
+            "r llevarse",
+            "algo al bo",
+            "lsillo,",
+            "traba",
+            "ja de afilad",
+            "o./n",
+            ""
         ],
         [
-            "osas,/na la "
+            "E",
+            "l hombre v",
+            "a la senfada,",
+            "s",
+            "u pólvora e",
+            "stá empapada,",
+            "d",
+            "e tanto de",
+            "cir adi",
+            "ós./n"
         ],
         [
-            "hora d",
-            "e cenar",
-            "."
+            "Cua",
+            "ndo el flaut",
+            "ista de/n"
+        ],
+        [
+            "Amelie s",
+            "acó un r",
+            "atón de s",
+            "u bombín./n"
+        ],
+        [
+            "Polich",
+            "inela s",
+            "e fugó con/n"
+        ],
+        [
+            "Arlequ",
+            "ín./n"
+        ],
+        [
+            "H",
+            "ay mari",
+            "posas d",
+            "e arrapa q",
+            "ue nunca p",
+            "renden",
+            "volar./n"
+        ],
+        [
+            "Vinagre",
+            "rosas",
+            "la hora",
+            "de c",
+            "enar./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Maldi",
+            "ta ley d",
+            "e",
+            "l e",
+            "mb",
+            "ud",
+            "o, no va algo menos que tú./n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Mald",
+            "ita ley del embudo, no va algo menos que tú."
         ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
@@ -156,5 +570,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

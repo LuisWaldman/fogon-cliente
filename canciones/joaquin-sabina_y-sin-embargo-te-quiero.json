@@ -8,163 +8,434 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "Em",
                     "B",
                     "B/A",
                     "E",
                     "Em",
-                    "Am",
+                    "Em",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
                     "F",
+                    "F",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "E",
                     "E",
                     "Am",
                     "B7",
-                    "C",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
                     "F",
-                    "Em",
-                    "B7",
-                    "Em",
-                    "E7",
-                    "Am",
-                    "D7",
                     "G",
-                    "C",
-                    "B7",
-                    "C",
-                    "B7",
-                    "Am",
-                    "B7",
-                    "Em",
-                    "E7",
-                    "Am",
-                    "B7",
-                    "Em",
-                    "B7",
-                    "Em",
-                    "D",
-                    "D7",
                     "G",
-                    "Em",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
                     "Am",
-                    "C",
-                    "B7",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "F",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B/A",
+                    "B/A",
+                    "B/A",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
                     "Em",
-                    "E7",
-                    "Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "B7",
                     "Em",
                     "B7",
-                    "C",
+                    "B7",
+                    "D7",
+                    "D7",
                     "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "D7",
+                    "D7",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B7",
+                    "B/A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B/A",
+                    "B/A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B/A",
+                    "B/A",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "Am B/A",
+                    "Am B/A",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F",
+                    "F B/A"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "Me lo dijeron mil veces,/nPero nunca quise poner aten"
+            "ven, es una cantante espectacular,",
+            "una linda chica",
+            "además buena g",
+            "ente, pero beb",
+            "e./n"
         ],
         [
-            "ción/nYa estabas muy "
+            "Me lo",
+            "dijeron mil veces, m",
+            "as yo nunca quise poner atenc",
+            "ión, cuan",
+            "do vinieron los lla",
+            "ntos Ya estaba muy dentro",
+            "de mi corazón,",
+            "te esperaba hasta",
+            "muy tarde,",
+            "ningún",
+            "reproche te hacía/n"
         ],
         [
-            "dentro de mi coraz",
-            "ón.",
-            "/nTe esperaba hasta muy "
+            "Lo más qu",
+            "e te preguntab",
+            "a, e",
+            "ra que si me quer",
+            "ías Contestaré",
+            "solo en presencia de mi abogado",
+            "bajo tus besos",
+            "por la madrugada,",
+            "sin que tú no te hará la cru",
+            "z de mi angustia solía",
+            "cantar A",
+            "h,",
+            "t",
+            "e quiero más q",
+            "ue mis oj",
+            "os, te quiero m",
+            "ás que mi vida/n"
         ],
         [
-            "tarde",
+            "Más que al aire",
+            "que arraspero,",
+            "más que al amar m",
+            "ío Qu",
+            "e se me pare los puros sol",
+            "os, si te dejó de qu",
+            "erer Que las cam",
+            "panas me doblen,",
+            "si te fue tu",
+            "orgullo/n"
+        ],
+        [
+            "N",
+            "ape era m",
+            "i vida/n",
             "",
-            "/nNingún reproche té "
-        ],
-        [
-            "hacia/n"
-        ],
-        [
-            "Lo más que te pregun",
-            "taba",
-            "/nEra que si me q"
-        ],
-        [
-            "uerías./n"
-        ],
-        [
-            " En la madru",
-            "gá/n"
-        ],
-        [
-            "Sin que tu no",
-            "taras/nLa "
-        ],
-        [
-            "cruz de mi angu",
-            "stia/n"
-        ],
-        [
-            "Solía can",
-            "tar.A",
-            "h, ah, ah, ah, ah,ah",
-            "hh./nTe quiero "
-        ],
-        [
-            "más qu",
-            "e a mis o",
-            "jos/n"
-        ],
-        [
-            "Te quiero más que a mi ",
-            "vida/nMás que al"
-        ],
-        [
-            " aire que res",
-            "piro/nY más"
-        ],
-        [
-            " que a la mare m",
-            "ia/nQue se me paren los "
-        ],
-        [
-            "pulsos/nSi te d"
-        ],
-        [
-            "ejo de quere",
-            "r/nQue las cam"
-        ],
-        [
-            "panas me d",
-            "oblen/nSí t"
-        ],
-        [
-            " falto alguna",
-            " vez./n"
-        ],
-        [
-            "Eres mi v",
-            "ida y mi mue",
-            "rte/n"
-        ],
-        [
-            "Te lo juro compa",
-            "era/nNo debía"
-        ],
-        [
-            " de quererte",
-            "/nNo debía de que"
-        ],
-        [
-            "rerte/nY sin embargo te qu"
-        ],
-        [
-            "iero",
-            ".",
             ""
+        ],
+        [
+            "Na",
+            "pe era mi vida N",
+            "ape",
+            "",
+            "",
+            "",
+            "e",
+            "ra mi vida s",
+            "in embargo/n",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "De sobras sabes",
+            "que eres la primera,",
+            "que no miento si juro qued",
+            "aría Por ti la vida e",
+            "ntera, por ti la vida e",
+            "ntera",
+            "sin embargo un rato cada d",
+            "ía, ya ves, t",
+            "e engañaría con cualquiera, t",
+            "e cambiaría por cualqui",
+            "era Me h",
+            "e tan arrepentido ni encantado d",
+            "e haberme conocido lo co",
+            "nfieso ¿Tú qué tanto has bes",
+            "ado tú que me has en",
+            "señado ti?/n"
+        ],
+        [
+            "Sabes mejor que yo que hasta l",
+            "os huesos solo ganan",
+            "los besos que no han dado l",
+            "os labios del pecado/n"
+        ],
+        [
+            "Porque una casa s",
+            "in ti es una embajada/n"
+        ],
+        [
+            "Del pasillo de u",
+            "n tren de madrugada como un",
+            "laberinto, sin luz ni vin",
+            "o tinto U",
+            "n velo de alquitrán en la m",
+            "irada",
+            "me envenenan los besos que voy",
+            "dar sin embargo c",
+            "uando duermo sin ti cont",
+            "igo sueño",
+            "con todo has sido expr",
+            "esabilad",
+            "si te vas, me voy por los te",
+            "jados como un gato s",
+            "in dueño Pe",
+            "rdido en el pañuelo d",
+            "e amargu",
+            "ra/n",
+            "",
+            ""
+        ],
+        [
+            "N",
+            "o debería acotarlo sin embargo cuando pido la llave de un hotel No debería acotarlo",
+            "",
+            "",
+            "",
+            "sin embargo c",
+            "uando pido la llave de un h",
+            "otel med",
+            "ianoche encargo un buen champan",
+            "francés c",
+            "ena con velitas para",
+            "dos, siempre es con ot",
+            "ro amor no ca contigo B",
+            "ien sabes lo que digo/n"
+        ],
+        [
+            "Porque una casa s",
+            "in ti es una oficina/n"
+        ],
+        [
+            "Un teléfono a",
+            "rdiendo en la cabina, una",
+            "palmea en el museo",
+            "de Tera U",
+            "n exodo de oscuras colon",
+            "drías",
+            "me envenenan los besos que voy",
+            "dar sin embargo c",
+            "uando duermo sin ti cont",
+            "igo sueño c",
+            "on todo has sido expre",
+            "sabilad",
+            "si te vas, me voy por los t",
+            "ejados como un gato s",
+            "in dueño/n"
+        ],
+        [
+            "Perdido en el pañuelo d",
+            "e amargura Q",
+            "ue el baño es sin mancharla h",
+            "ermosura",
+            "cuando vuelves hay fiesta en la coc",
+            "ina bailes sin or",
+            "questa ramos de rosas con",
+            "espina/n"
+        ],
+        [
+            "Pero no es igual de",
+            "urubasón",
+            "el lunes al café desde el s",
+            "aio Vuelve la guerra f",
+            "ría",
+            "al cielo de tu boca e",
+            "l pulgatorio",
+            "al dormitorio en paz de ca",
+            "da vida",
+            "me envenenan los besos que voy",
+            "dar sin embargo",
+            "cuando duermo sin ti co",
+            "ntigo sueño",
+            "con todo has sido exp",
+            "resabilad s",
+            "i te vas, me voy por los tejados como un gato sin dueño Perdido en el pañuelo de amargura cuando vuelves hay fiesta en la cocina bailes sin orquesta ramos de rosas con espina Pero no es igual de urubasón el lunes al café del desayuno Vuelve la guerra fría al cielo de tu boca el pulgatorio al dormitorio en paz de cada vida me envenenan los besos que voy dar sin embargo cuando duermo sin ti contigo sueño con todo has sido expresabilad si te vas, me voy por los tejados como un gato sin dueño Perdido en el pañuelo de amargura Gracias Buenos Aires cuando vuelves hay fiesta en la cocina bailes sin orquesta ramos de rosas con espina Pero no es igual de urubasón el lunes al café del desayuno Vuelve la guerra fría al cielo de tu boca el pulgatorio al dormitorio en paz de cada vida me envenenan los besos que voy dando"
         ]
     ],
     "bpm": 80,
@@ -175,5 +446,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

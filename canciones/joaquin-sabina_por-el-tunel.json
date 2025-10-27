@@ -8,90 +8,500 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "D",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
                     "A",
                     "D",
-                    "A",
+                    "D",
+                    "D",
+                    "D",
                     "Bm",
-                    "E",
-                    "D"
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#m",
-                    "C#m",
                     "Bm",
-                    "E",
                     "D",
                     "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
                     "Bm",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
         ]
     },
     "letras": [
         [
-            "Regreso al tiempo en qu",
-            "e te conocí",
-            ",/ncuando el mundo acaba"
+            "Regreso al tiempo",
+            "en que te con",
+            "ocí/n"
         ],
         [
-            "ba en tu jard",
-            "n,/n"
+            "Cu",
+            "ando el mundo acab",
+            "aba en tu jar",
+            "dín/n"
         ],
         [
-            "yo era el cowboy mas duro de la uni",
+            "Y",
+            "o era el cowboy más d",
+            "uro de la un",
+            "ión",
+            "",
+            "tú la bailari",
+            "na del saló",
             "n/n"
         ],
         [
-            "y tu la bailarina del sal",
-            "n./nDesde que aqu"
+            "To",
+            "das te aventaja",
+            "ban en vir",
+            "tud/n"
         ],
         [
-            "el invierno termin",
-            ",/ndesde que a"
+            "Pe",
+            "ro ninguna da",
+            "ba lo que t",
+            "ú/n"
         ],
         [
-            "quel amigo se esfum",
-            ",/ndesde que "
+            "Lueg",
+            "o volaste, al",
+            "guien me contó/n",
+            ""
         ],
         [
-            "decidiste abandon",
-            "ar,/ndesde que c"
+            "Que h",
+            "as hecho del amor e",
+            "n tu profesión/n",
+            ""
         ],
         [
-            "omenzaste a resbala",
-            "r/npor el t"
+            "Desde que aqu",
+            "el invierno t",
+            "erm",
+            "inó/n"
         ],
         [
-            "únel que lleva adonde crec",
-            "e/nla m"
+            "Desde que aqu",
+            "el amigo s",
+            "e esf",
+            "umó/n"
         ],
         [
-            "as oscura flor de la ciuda",
-            "d."
+            "Desde que de",
+            "cidiste ab",
+            "andonar/n",
+            ""
+        ],
+        [
+            "Desde que co",
+            "menzaste",
+            "resbal",
+            "ar/n"
+        ],
+        [
+            "Por el t",
+            "únel que ll",
+            "eva donde cre",
+            "ce/n"
+        ],
+        [
+            "L",
+            "a más oscura fl",
+            "or de la ciu",
+            "dad/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Y",
+            "o sigo igual, ya sabe",
+            "s, en Madrid/n",
+            ""
+        ],
+        [
+            "La",
+            "s cosas no dan",
+            "mucho más de sí/n",
+            ""
+        ],
+        [
+            "Yo sigo igual, ya sabes, en Madrid U",
+            "n día te llamo v",
+            "amos ce",
+            "nar/n"
+        ],
+        [
+            "Esp",
+            "ero me harás",
+            "un precio especial/n",
+            ""
+        ],
+        [
+            "E",
+            "l resto de la banda",
+            "se perdió/n",
+            ""
+        ],
+        [
+            "E",
+            "l maldito rel",
+            "oj los engulló/n",
+            ""
+        ],
+        [
+            "Ha",
+            "cen quiñe en las hijo",
+            "s, van al bar/n"
+        ],
+        [
+            "E",
+            "l cofi",
+            "cio no es peor",
+            "que los dem",
+            "ás/n"
+        ],
+        [
+            "Desde que aqu",
+            "el invierno term",
+            "inó/n"
+        ],
+        [
+            "D",
+            "esde que aq",
+            "uel amigo s",
+            "e esfumó/n",
+            ""
+        ],
+        [
+            "Desde que d",
+            "ecidiste ab",
+            "andonar/n",
+            ""
+        ],
+        [
+            "Desde que c",
+            "omenzaste",
+            "resbal",
+            "ar/n"
+        ],
+        [
+            "Por el",
+            "túnel que l",
+            "leva donde cr",
+            "ece/n"
+        ],
+        [
+            "L",
+            "a más oscura f",
+            "lor de la c",
+            "iudad/n",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Yo sigo igual, ya sabes"
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
@@ -99,5 +509,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

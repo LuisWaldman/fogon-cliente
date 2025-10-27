@@ -4,159 +4,494 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Em",
-                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "C",
-                    "G",
-                    "C",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Bm",
-                    "Am"
+                    "C",
+                    "Em",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G",
+                    "Em",
+                    "D",
+                    "D",
+                    "G",
+                    "Em",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
                     "C",
                     "D",
-                    "B/D#"
+                    "D",
+                    "Em",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G",
+                    "Em",
+                    "D",
+                    "D",
+                    "G",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
             1,
             2,
-            2,
-            2,
-            0,
-            0,
-            0
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "escala": "Em",
     "letras": [
         [
-            "   Oh..   o",
-            "h...   oh",
-            "...   oh",
             "",
             "",
-            "/n"
-        ],
-        [
-            "   Oh..   o",
-            "h...   oh",
-            "...   oh",
             "",
             "",
-            "/n"
-        ],
-        [
-            "    Sin dec",
-            "ir   un",
-            "a palabr",
-            "a",
             "",
-            "/n"
-        ],
-        [
-            "    Casi s",
-            "in    decir",
-            "nos nad",
-            "a",
             "",
-            "/n"
-        ],
-        [
-            "    Sin mir",
-            "arnos   a ",
-            "los ojo",
-            "s/n"
-        ],
-        [
-            "   Y",
-            "o me pregunto porqu",
-            "é/n    Me tuvo "
-        ],
-        [
-            "que pas",
-            "ar a m",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "  Y estoy cansándome",
-            " de esperar/nPero "
-        ],
-        [
-            "igual no tengo donde ir",
-            "/n"
-        ],
-        [
-            "  Y me dice la gente/nQue "
-        ],
-        [
-            "deje de pensar en t",
-            "í/nY "
-        ],
-        [
-            "sé que es en vano/nBrindar esta "
-        ],
-        [
-            "noche por nosotros d",
-            "os/n"
-        ],
-        [
-            "   Y sé que es en vano/nBrindar esta "
-        ],
-        [
-            "noche/nPor nosotros "
-        ],
-        [
-            "dos/n"
-        ],
-        [
-            "Oh..   o",
-            "h...   oh",
-            "...   oh.",
-            "..   sin m",
-            "irarno",
-            "s a los ojos",
-            "/nOh..   "
-        ],
-        [
-            "oh...   o",
-            "h...   oh",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "Oh..   o",
-            "h...   oh",
-            "...   oh.",
-            "..  a los ",
-            "ojos",
+            "Esta es una canción en español de rock argentino./n",
             ""
+        ],
+        [
+            "Si",
+            "n decir u",
+            "na palabr",
+            "a/n"
+        ],
+        [
+            "C",
+            "asi sin d",
+            "ecir más nada/n",
+            ""
+        ],
+        [
+            "S",
+            "in mirarn",
+            "os los ojos/n"
+        ],
+        [
+            "Me p",
+            "regunto por qué m",
+            "e tuvo que p",
+            "asar mí/n"
+        ],
+        [
+            "Me p",
+            "regunto por qué m",
+            "e tuvo que p",
+            "asar m",
+            "í/n",
+            ""
+        ],
+        [
+            "Estoy c",
+            "ansándome de es",
+            "peranza/n"
+        ],
+        [
+            "Pero el m",
+            "ar igual n",
+            "o teme ped",
+            "ir",
+            "",
+            "me dicen",
+            "gente que deje",
+            "de pensar en ti/n",
+            ""
+        ],
+        [
+            "Oh, oh",
+            ", oh, oh/n",
+            "",
+            ""
+        ],
+        [
+            "Oh, o",
+            "h, oh",
+            ",",
+            "",
+            "oh Sin deci",
+            "r una pal",
+            "abra/n",
+            ""
+        ],
+        [
+            "Casi si",
+            "n decir más n",
+            "ada/n"
+        ],
+        [
+            "S",
+            "in mira",
+            "rnos los o",
+            "jos M",
+            "e pregunto por qu",
+            "é me tuvo qu",
+            "e pasar m",
+            "í Me",
+            "pregunto por qué",
+            "me tuvo qu",
+            "e pasar m",
+            "í/n",
+            ""
+        ],
+        [
+            "Estoy",
+            "cansándome de esp",
+            "eranza/n"
+        ],
+        [
+            "Pero el m",
+            "ar igual no",
+            "teme pedir",
+            "",
+            "",
+            "me dicen",
+            "gente que deje",
+            "de pensar en ti/n"
+        ],
+        [
+            "Pensar en t",
+            "i/n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Oh, oh, o",
+            "h, o",
+            "h",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "sé que se van b",
+            "rindar esta noche po",
+            "r nosotros do",
+            "s S",
+            "in decir u",
+            "na palabra/n",
+            "",
+            ""
+        ],
+        [
+            "Casi sin",
+            "decir más na",
+            "da/n"
+        ],
+        [
+            "S",
+            "in mirar",
+            "nos los oj",
+            "os Me",
+            "pregunto por qué m",
+            "e tuvo que p",
+            "asar m",
+            "í M",
+            "e pregunto por qué",
+            "me tuvo que",
+            "pasar m",
+            "í",
+            "",
+            "sé que se van",
+            "brindar esta noche p",
+            "or nosotros do",
+            "s O",
+            "h, oh, o",
+            "h, o",
+            "h los ojo",
+            "s O",
+            "h, oh,",
+            "oh, oh",
+            "l",
+            "os ojos/n"
+        ],
+        [
+            "Oh, oh,",
+            "oh, oh/n",
+            "",
+            ""
+        ],
+        [
+            "O",
+            "h,",
+            "",
+            "",
+            "oh,",
+            "o",
+            "h",
+            ",",
+            "oh"
         ]
     ],
-    "bpm": "112",
-    "calidad": 0,
+    "bpm": 135,
+    "calidad": 1,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "medias": [
@@ -166,6 +501,8 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
-    "etiquetas": []
+    "procesando": 0,
+    "etiquetas": [
+        "Rock Nacional"
+    ]
 }

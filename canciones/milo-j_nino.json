@@ -2,300 +2,366 @@
     "cancion": "nino",
     "banda": "milo-j",
     "escala": "B7",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B7",
-                    "Em",
-                    "Em/C",
+                    "B7",
+                    "B7",
+                    "B7",
                     "B7",
                     "Em",
+                    "Em",
                     "B7",
                     "Em",
-                    "Em/C",
-                    "B7",
                     "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B7",
                     "G7M",
                     "G/F",
+                    "G/F",
+                    "Em",
                     "Em",
                     "Cm",
                     "G7M",
-                    "B7",
+                    "Em",
                     "Em",
                     "A7",
                     "D4",
                     "D",
+                    "D",
+                    "G7M",
                     "G7M",
                     "G/F",
                     "Em",
-                    "Cm",
-                    "G7M",
-                    "B7",
                     "Em",
+                    "Cm",
+                    "B7",
+                    "Cm",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A7",
-                    "D4",
-                    "D",
+                    "A7 Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "C7M",
+                    "C7M",
+                    "Bm",
+                    "Bm",
+                    "G7M"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "A7",
+                    "A7",
+                    "A7 G7M",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "G7M",
+                    "G/F",
+                    "G/F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G7M",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "G",
+                    "B7",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "C7M",
+                    "Bm",
                     "Bm",
                     "B7",
                     "Em",
-                    "A7",
-                    "D4",
-                    "D",
-                    "G",
-                    "G4",
-                    "G",
-                    "G7M",
-                    "G/F",
                     "Em",
-                    "Cm",
-                    "G7M",
-                    "B7",
-                    "Em",
-                    "A7",
-                    "D4",
-                    "Am",
-                    "G",
-                    "B7",
-                    "Am",
-                    "G",
-                    "B7",
-                    "Am",
-                    "G",
-                    "B7",
-                    "Am",
-                    "C7M",
-                    "Bm",
-                    "B7",
-                    "Em",
-                    "A7",
+                    "A7 Am",
+                    "D4"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "D4",
                     "C7M",
                     "Bm",
-                    "B7",
+                    "Bm",
+                    "Bm",
                     "Em",
-                    "A7",
-                    "D4",
-                    "D",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G7M",
                     "G7M",
                     "G/F",
                     "C7M",
+                    "C7M",
                     "Cm",
                     "G7M",
-                    "B7",
+                    "G7M",
                     "Em",
                     "A7",
-                    "D4",
-                    "D"
+                    "A7",
+                    "A7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "tarÃ¡n en la ensenada el/nViejo Zeib"
+            "Como esta",
+            "rán, en la encenad",
+            "el viejo se iba/n"
         ],
         [
-            "al/nLos jazmineros y orq"
+            "Los caminer",
+            "os orquídeas se",
+            "infló, donde cant",
+            "dulcemente el s",
+            "orsal Q",
+            "uiero vol",
+            "ver contempl",
+            "arme en tus ojos, ca",
+            "nva que me b",
+            "eses como te b",
+            "esé, bajo la s",
+            "ombra del jaca",
+            "randa",
+            "/n"
         ],
         [
-            "uÃ­deas en f",
-            "lor/nDonde cantÃ³ dulcemente el zor"
+            "Niño, apóy",
+            "ate en mis recuerdo",
+            "s, intenta dormir en",
+            "paz Siento el",
+            "peso en tu concienc",
+            "ia por el llanto de",
+            "mamá que el",
+            "miedo al abandon",
+            "o, no te deja re",
+            "spirar Sient",
+            "el nudo de tu pan",
+            "za, cuando te hablan de",
+            "pa",
+            "pá Niñ",
+            "o, haz las paces con",
+            "la vida, nuev",
+            "de piedra al patis",
+            "al La notagia",
+            "de tu antes no",
+            "te deja caminar Q",
+            "uién mató tu s",
+            "onrisita, de",
+            "ilusión de bondad/n"
         ],
         [
-            "zal?/nQuiero volv"
+            "Sé que te quer",
+            "és dormir pa' no v",
+            "olver desper",
+            "tar/n"
         ],
         [
-            "er a contemplarme en tus/nOjos Kam"
+            "Amor, no",
+            "llore",
+            "s, veo",
+            "luz en",
+            "tus males/n"
         ],
         [
-            "ba/nY que me beses co"
-        ],
-        [
-            "mo te bes",
-            "Ã©/nBajo la sombra del jacaran"
-        ],
-        [
-            "dÃ¡/n"
-        ],
-        [
-            "NiÃ±o, apoyate en mis recuer",
-            "dos/nIntentÃ¡ dormir en"
-        ],
-        [
-            " paz/nSiento el peso en tu conc"
-        ],
-        [
-            "iencia por/nEl llanto de ma"
-        ],
-        [
-            "mÃ¡/nVi que el m"
-        ],
-        [
-            "iedo al aband",
-            "ono no te/nDeja respi"
-        ],
-        [
-            "rar/nSiento el nudo de tu "
-        ],
-        [
-            "panza cuando te/nH"
-        ],
-        [
-            "ablan de papÃ¡/n"
-        ],
-        [
-            "NiÃ±o, haz las paces con la v",
-            "ida/nNo es de piedra el pasti"
-        ],
-        [
-            "zal/nLa nostalgia de tu a"
-        ],
-        [
-            "ntes no te deja/nCamin"
-        ],
-        [
-            "ar/nÂ¿QuiÃ©n m"
-        ],
-        [
-            "atÃ³ tu sonr",
-            "isita de ilusiÃ³n/n Y de bond"
-        ],
-        [
-            "ad?/nSÃ© que te querÃ©s dor"
-        ],
-        [
-            "mir pa' no/nVolver a despert"
-        ],
-        [
-            "ar/nA"
-        ],
-        [
-            "mor, no ll",
-            "ores, veo luz",
-            " en tus/n"
-        ],
-        [
-            "Males/nSiguiÃ©ndote el"
-        ],
-        [
-            " corazÃ³n, bailando en/nUn c"
-        ],
-        [
-            "anto de zorza",
-            "les",
-            "",
+            "Siguiendote el co",
+            "razón, bailand",
+            "en un canto de s",
+            "orsales",
             "",
             "/n"
         ],
         [
-            "NiÃ±o, soy un hombre con tris",
-            "teza/nSÃ© del peso en tu ver"
+            "Niñ",
+            "o, soy un hombre con t",
+            "risteza, sé del",
+            "peso en tu verda/n"
         ],
         [
-            "dad/nEscaparte por rob"
+            "Escaparte por",
+            "robar, porque r",
+            "obás para cenar/n"
         ],
         [
-            "ar, porque robÃ¡s/nPara cen"
+            "Vi tus dedos en",
+            "el bar, con",
+            "honor libertad/n"
         ],
         [
-            "ar/nVi tus "
+            "Sé que te quer",
+            "és dormir pa' no v",
+            "olver despert",
+            "ar Por el",
+            "mundo va de pil",
+            "lo, con alma de c",
+            "aramelo Vi la",
+            "vida en tus nudices,",
+            "su odio en tus",
+            "ojos Le r",
+            "ezaté los amigos,",
+            "pues no todos van",
+            "al cielo Pero",
+            "vos sos un gr",
+            "ial/n"
         ],
         [
-            "dedos en el b",
-            "arro con olor a/n Libert"
+            "Amor",
+            "no llo",
+            "res, veo",
+            "luz",
+            "en tus mal",
+            "es Siguiendote el",
+            "corazón,",
+            "bailando en un canto de",
+            "sorsales/n"
         ],
         [
-            "ad/nSÃ© que te querÃ©s do"
-        ],
-        [
-            "rmir pa' no/n"
-        ],
-        [
-            " Por el mundo vas de pillo ",
-            "con alma/n De "
-        ],
-        [
-            "caramelo/n"
-        ],
-        [
-            " Vi la vida en tus nudillos ",
-            "y su/nOdio e"
-        ],
-        [
-            "n tus hoyuelos (ah, ah, ah/n"
-        ],
-        [
-            " Le rezaste a unos amigos, ",
-            "pues no/nTodos van al "
-        ],
-        [
-            "cielo/n"
-        ],
-        [
-            "Pero vos sos un grial/nA"
-        ],
-        [
-            "mor, no ll",
-            "ores, veo luz",
-            " en tus/n"
-        ],
-        [
-            "Males/nSiguiÃ©ndote el"
-        ],
-        [
-            " corazÃ³n, bailando en/nUn c"
-        ],
-        [
-            "anto de zorzaâ€“/nA"
-        ],
-        [
-            "mor, no ll",
-            "ores, veo luz",
-            " en tus/n"
-        ],
-        [
-            "Males/nSiguiÃ©ndote el"
-        ],
-        [
-            " corazÃ³n",
+            "Am",
+            "or, no ll",
+            "ores, veo",
+            "luz",
+            "en tus mal",
+            "es Siguiendote",
+            "el corazón",
             "",
             "/n"
         ],
         [
-            "Hijo, me robaron tus oj",
-            "itos/nLos momentos que per"
-        ],
-        [
-            "dÃ­/nPedÃ­ tiempo a mi des"
-        ],
-        [
-            "tino, y dijo/n\"Hoy te toca a "
-        ],
-        [
-            "ti\"/nSÃ© que un"
-        ],
-        [
-            " dÃ­a serÃ¡s",
-            " grande, sÃ© que/nUn dÃ­a entende"
-        ],
-        [
-            "rÃ¡s/nLos consejos de tu v"
-        ],
-        [
-            "iejo, estoy/nD"
-        ],
-        [
-            "escansando en paz"
+            "Hijo, me robar",
+            "on tus ojitos,",
+            "los momentos que p",
+            "erdí Pedí tie",
+            "mpo mi destino",
+            "dijo hoy te toca",
+            "ti Sé que un",
+            "día serás grande,",
+            "sé que un día te",
+            "andarás Los con",
+            "sejos de tu vie",
+            "jo estoy descansand",
+            "en paz",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "eflkgHn6Mo0",
+            "delay": 900.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

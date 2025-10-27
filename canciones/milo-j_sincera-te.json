@@ -2,25 +2,32 @@
     "cancion": "sincera-te",
     "banda": "milo-j",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 75,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "C#7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#m",
-                    "D",
-                    "C#7"
+                    "F#m",
+                    "C#7",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D7M",
                     "C#7",
-                    "Bm7",
                     "C#7"
                 ]
             },
@@ -28,114 +35,304 @@
                 "nombre": "parte3",
                 "acordes": [
                     "F#m",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#7",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "D",
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C#7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C#7",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "D",
+                    "C#7",
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C#7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "queda tiempo pa' dudar/nLe grito al corazÃ³n"
-        ],
-        [
-            " que recuerde tu bondad/n"
-        ],
-        [
-            "  Tu' cuento' largo' solo d",
-            "ieron inseguridad/nPero cuando habla', solo "
-        ],
-        [
-            "escucho una linda canciÃ³n",
+            "",
+            "",
             "/n"
         ],
         [
-            "Â¿MentirÃ­",
-            "a' pa' ocultar/nQue hay en tu "
+            "Siempre",
+            "queda tiempo pa' dud",
+            "ar Le diré tu al corazón",
+            "que recuerde tu bondad/n"
         ],
         [
-            "mente algo o a",
-            "lguien?/n"
+            "Tus cuentos largos sol",
+            "dieron insegurida/n"
         ],
         [
-            "DesearÃ­",
-            "a ser tu corazÃ³n/nPa' c"
+            "Pero cuando hablas solo e",
+            "scucho una linda canc",
+            "ión/n"
         ],
         [
-            "onocerte, sincÃ©r",
-            "ate/n"
-        ],
-        [],
-        [
-            "Mi aura se desarma/n"
+            "Mentirías",
+            "pa' ocultar que hay en",
+            "tu mente alg",
+            "o alguien/n"
         ],
         [
-            "No debo averiguarla/n"
+            "Desearía",
+            "ser tu corazón pa'",
+            "conocerte,",
+            "sincerarte",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Pero tu' palabra'/n"
+            "Tú",
+            "me ahora se desama",
+            "cosas no me cuadran/n"
         ],
         [
-            "Hace tiempo no me hablan bien de vos a tus espaldas/n"
-        ],
-        [
-            "Nena, me ando desangrando/n"
-        ],
-        [
-            "En furia, duda y desconfianza/n"
+            "No debo averiguarla,",
+            "pero tus palabras h",
+            "ace tiempo No me habla",
+            "bien de vos tus espaldas",
+            "nena Me ando desangrando en",
+            "foria, duda desconfianza/n"
         ],
         [
             "No logro olvidarme mierdas del pasado/n"
         ],
         [
-            "Yo no elegÃ­ amarte, simplemente te amo/n"
+            "Que están afectando ahora mi presente/n"
         ],
         [
-            "AsÃ­ que me hago el tonto y sigo la corriente/n"
+            "Yo no elegí amarte, simplemente te amo/n"
+        ],
+        [
+            "Así que me hago el tonto sigo la corriente/n"
         ],
         [
             "Tal vez sea incoherente echarte la culpa/n"
         ],
         [
-            "Aunque a veces pienso que tenÃ©s respuestas/n"
+            "Por tener preguntas que no me contestaron A",
+            "unque veces pienso que tenés respuestas/n"
         ],
         [
-            "Que, por mi disgusto, me estÃ¡s ocultando/n"
+            "Que por mi disgusto me estás ocultando/n"
         ],
         [
-            "Â¿MentirÃ­",
-            "a' pa' ocultar/nQue hay en tu "
+            "Mentirías",
+            "pa' ocultar que hay en",
+            "tu mente alg",
+            "o alguien/n"
         ],
         [
-            "mente algo o a",
-            "lguien?/n"
+            "Desearía",
+            "ser tu corazón pa'",
+            "conocerte,",
+            "sincerarte",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "DesearÃ­",
-            "a ser tu corazÃ³n/nPa' cono"
+            "Siempre",
+            "queda tiempo pa' dudar/n"
         ],
         [
-            "certe, s",
-            "incÃ©rate/n"
+            "Le he dicho al corazón",
+            "que recuerde tu bonda",
+            "d Tus cuentos largos sol",
+            "dieron inseguridad P",
+            "ero cuando la solo e",
+            "scucho una linda canció",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Subtítulos realizados por la comunidad de Amara .org"
+        ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "du9pnst_JVs",
+            "delay": 0.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

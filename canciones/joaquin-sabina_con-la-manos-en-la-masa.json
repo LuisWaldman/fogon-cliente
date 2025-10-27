@@ -8,54 +8,72 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "Am",
-                    "Dm",
-                    "F",
-                    "E",
                     "Dm",
                     "Am",
-                    "G7"
-                ]
-            },
-            {
-                "nombre": "parte2",
-                "acordes": [
-                    "E",
-                    "E",
-                    "F",
-                    "Am",
-                    "F",
-                    "E",
-                    "Am",
-                    "G"
-                ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "E",
-                    "E7",
-                    "Am",
-                    "G",
-                    "F",
-                    "Em",
                     "Dm",
                     "Am"
                 ]
             },
             {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "E",
+                    "E",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte4",
                 "acordes": [
-                    "E7",
-                    "G7",
                     "E",
-                    "Fm",
+                    "E",
+                    "E",
+                    "G7",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Am",
-                    "G7",
-                    "E",
-                    "Fm"
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
@@ -63,87 +81,65 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "casa/nme pillas en la coci"
+            "que vuelves casa,",
+            "mantillas en la cocina,",
+            "el padurnada de harina,",
+            "con las manos en la masa./n"
         ],
         [
-            "na/nembadurnada de harin"
+            "Niñ",
+            "a, no quiero platostin",
+            "o, ven",
+            "go del trabajo",
+            "no me apetece pat",
+            "o chino. ver s",
+            "i me alineas u",
+            "n gazpacho con su ajo",
+            "su pepino./n"
         ],
         [
-            "a/ncon las manos en la m"
+            "Papas con arroz bonit",
+            "o, con tomate, coche frit",
+            "o, calderedas, nio",
+            "s con chocolate, el febollet",
+            "a, el vinagreta, el morteruelo,",
+            "la con congred",
+            "os, macalabas, frijol,",
+            "un poquito perejil./n"
         ],
         [
-            "asa./n"
+            "Chiquillo, q",
+            "ue lleve un cursillo,",
+            "para acordarle./n"
         ],
         [
-            "Niña!, no quiero platos ",
-            "finos,/nv"
+            "Eso ya lo sé,",
+            "pero chiquilla, dam",
+            "e pepino yo,",
+            "yo los remojaré c",
+            "on una copita de ojé./n"
         ],
         [
-            "engo del traba",
-            "jo/n"
-        ],
-        [
-            "y no me apetece pato c",
-            "hino./nA ver si me aliñ"
-        ],
-        [
-            "as/nu"
-        ],
-        [
-            "n gazpacho con su ajo y su pe",
-            "pino./nPapas"
-        ],
-        [
-            " con arroz,/nbonito con toma"
-        ],
-        [
-            "te,/ncaldereta,"
-        ],
-        [
-            "/n"
-        ],
-        [
-            "migas con chocolat",
-            "e,/ncebolleta en vinagret"
-        ],
-        [
-            "a,/nlacón con grelos,"
-        ],
-        [
-            "/ny un poquito'e pereji"
-        ],
-        [
-            "l./n"
-        ],
-        [
-            "¡Chiquillo! que yo hice un cu",
-            "rsillo/np"
-        ],
-        [
-            "ara cordon ble",
-            "u./nEs"
-        ],
-        [
-            "o ya lo sé pero, ¡chiqui",
-            "lla!/nDame pepinill"
-        ],
-        [
-            "os/ny "
-        ],
-        [
-            "yo los remoja",
-            "ré/ncon una copita de Oj"
-        ],
-        [
-            "én."
+            "Papas con arroz bonito,",
+            "con tomate, coche frito,",
+            "calderedas, nios c",
+            "on chocolate, el febolleta,",
+            "el vinagreta, el morteruelo,",
+            "la con congredos,",
+            "macalabas, frijol, un poqui",
+            "to perejil. P",
+            "apas con arroz bonito, con",
+            "tomate, coche frito, calderedas,"
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
@@ -151,5 +147,7 @@
             "delay": 0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 0,
+    "calidad": 1
 }

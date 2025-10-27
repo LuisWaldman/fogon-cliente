@@ -2,235 +2,441 @@
     "cancion": "pasos-al-costado",
     "banda": "milo-j",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "C#m",
+                    "E",
+                    "A",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "F#m",
-                    "C#m",
-                    "E"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#m",
                     "A",
-                    "E"
+                    "F#m",
+                    "C#m",
+                    "C#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B",
-                    "D",
+                    "C#m",
+                    "E",
                     "A",
-                    "E"
+                    "A",
+                    "A",
+                    "F#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Bm",
-                    "F#m",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "A",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "F#m",
+                    "A",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "E",
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
             3,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            3,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
-        [],
         [
-            "mÃ­ tan poco, tal vez viva demas",
-            "iado/nNo reco"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "nozco el punto justo donde hay qu",
-            "e frenar/nMe pregu"
+            "Nun",
+            "ca dormí tampoco,",
+            "tal vez viv",
+            "demasiado/n"
         ],
         [
-            "ntaba lo que habÃ­a dado y lo que",
-            " me habÃ­an dejado/nMe resp"
+            "No",
+            "reconozco el pu",
+            "nto justo donde hay",
+            "que frena/n"
         ],
         [
-            "ondieron que en la vida hay que a",
-            "ceptar/nDe cualquier "
+            "Me",
+            "preguntaba lo que h",
+            "abía dado lo que me ha",
+            "bían dejad",
+            "o Me",
+            "respondieron que",
+            "en la vida hay",
+            "que ace",
+            "ptar/n"
         ],
         [
-            "modo que te toque estÃ¡ bi",
-            "en/nDe cualquier "
+            "De cualquier modo que te",
+            "toque está bien/n"
         ],
         [
-            "modo que te toque estÃ¡ ",
-            "mal/nMejor a"
+            "De cualquier modo que te",
+            "toque está mal/n"
         ],
         [
+            "Mejor abrir los oj",
+            "os para saber lo que",
+            "te gustaría",
+            "ser",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "ebo haber",
+            "estado dand",
+            "o pasos al co",
+            "stado Par",
+            "alizad",
+            "por el miedo",
+            "de saber la ver",
+            "dad Me",
+            "imagina",
+            "ba que lo que habíamos pasad",
+            "había quedado pis",
+            "ado Pe",
+            "ro encontr",
+            "amos una nu",
+            "eva forma de h",
+            "ablar/n"
+        ],
+        [
+            "De cualquier m",
+            "odo que te toque está b",
+            "ien De cualquier m",
+            "odo que te toque es",
+            "tá mal Mejor a",
             "brir los ojos para sab",
-            "er lo que te gustarÃ­a",
-            " hacer/nDebo ha"
+            "er lo que te gust",
+            "aría ser/n"
         ],
         [
-            "ber estado dando pasos al cost",
-            "ado/nPar"
+            "Es",
+            "el momento en que",
+            "todo comienza de",
+            "vuelt/n"
         ],
         [
-            "alizado por el miedo de saber la ver",
-            "dad/nMe imagin"
+            "Mi",
+            "corazón est",
+            "á alerta el tuyo",
+            "tambié/n"
         ],
         [
-            "aba que lo que habÃ­amos pasado habÃ­a quedado pis",
-            "ado/nPero enco"
-        ],
-        [
-            "ntramos una nueva forma de habl",
-            "ar/nDe cualquier "
-        ],
-        [
-            "modo que te toque estÃ¡ bie",
-            "n/nDe cualquier m"
-        ],
-        [
-            "odo que te toque estÃ¡ m",
-            "al/nMejor a"
-        ],
-        [
-            "brir los ojos para sabe",
-            "r lo que te gustarÃ­a ",
-            "hacer/nEs el mo"
-        ],
-        [
-            "mento en que todo com",
-            "ienza de vuelta",
-            "/nMi cor"
-        ],
-        [
-            "azÃ³n estÃ¡ ale",
-            "rta y el tuyo tambiÃ",
-            "©n/nT"
-        ],
-        [
-            "odo este tiempo vi",
-            "vido me sirve de eje",
-            "mplo/n"
-        ],
-        [
-            "Para no volve",
-            "r",
+            "Con",
+            "este tiempo",
+            "vivido me sirve",
+            "de ejemp",
+            "lo Par",
+            "a no volve",
+            "r, par",
+            "a no vol",
+            "ver Par",
+            "a no vo",
+            "lver",
+            "caer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Para no volve",
-            "r",
+            "De cualquier modo que te",
+            "toque está bien/n"
+        ],
+        [
+            "De cualquier modo que",
+            "te toque está mal/n"
+        ],
+        [
+            "Mejor abrir los oj",
+            "os para saber lo que",
+            "te gustaría",
+            "ser/n"
+        ],
+        [
+            "Es el",
+            "momento en que todo c",
+            "omienza de vu",
+            "elta/n"
+        ],
+        [
+            "Mi c",
+            "orazón está alerta",
+            "el tuyo tam",
+            "bién/n"
+        ],
+        [
+            "Tod",
+            "este tiempo vivi",
+            "do me sirve de",
+            "ejemplo P",
+            "ara no v",
+            "olver, p",
+            "ara no v",
+            "olver P",
+            "ara no",
+            "volve",
+            "c",
+            "aer P",
+            "ara no",
+            "volver,",
+            "para no",
+            "volver Para",
+            "no",
+            "volv",
+            "er c",
+            "aer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Para no volve",
-            "r/n"
-        ],
-        [
-            "A caer/nDe cualquier "
-        ],
-        [
-            "modo que te toque estÃ¡ b",
-            "ien/nDe cualquier "
-        ],
-        [
-            "modo que te toque estÃ¡ ",
-            "mal/nMejor "
-        ],
-        [
-            "abrir los ojos para sabe",
-            "r lo que te gustarÃ",
-            "­a hacer/nEs el mom"
-        ],
-        [
-            "ento que todo comien",
-            "za de vuelta",
-            "/n"
-        ],
-        [
-            "Mi corazÃ³n estÃ¡ ale",
-            "rta y el tuyo tambiÃ©",
-            "n/n"
-        ],
-        [
-            "Todo este tiempo vi",
-            "vido me sirve de eje",
-            "mplo/n"
-        ],
-        [
-            "Para no volve",
-            "r",
-            "/n"
-        ],
-        [
-            "Para no volve",
-            "r",
-            "/n"
-        ],
-        [
-            "Para no volve",
-            "r/n"
-        ],
-        [
-            "A caer/n"
-        ],
-        [
-            "Para no volve",
-            "r",
-            "/n"
-        ],
-        [
-            "Para no volve",
-            "r",
-            "/n"
-        ],
-        [
-            "Para no volve",
-            "r",
-            "/n"
-        ],
-        [
-            "Para no volve",
-            "r/nPara no volver"
-        ],
-        [],
-        []
+            "Para no volver caer"
+        ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "F50LVtbQ5Qk",
+            "delay": 0.0
+        }
+    ],
+    "procesando": 0,
+    "calidad": 1
 }

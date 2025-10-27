@@ -8,86 +8,206 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "Em",
+                    "C",
+                    "C",
                     "Am",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "F",
-                    "G",
-                    "C",
-                    "C",
-                    "Em",
                     "Am",
-                    "G",
-                    "F"
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G",
-                    "E",
-                    "Am",
-                    "F",
-                    "D",
-                    "G",
                     "C",
-                    "G"
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Ya estoy yo, pa",
-            "ra grandes canc",
-            "iones,/npara reve"
-        ],
-        [
-            "lar emociones,",
             "/n"
         ],
         [
-            "   para gloria matina",
-            "l./nHoy no estoy par"
+            "Ya estoy y",
+            "o para grandes c",
+            "anciones para",
+            "revelar emocion",
+            "es, para gloria",
+            "matinal./n"
         ],
         [
-            "a mensajes univers",
-            "ales,",
-            "/npara melan"
+            "Hoy no estoy",
+            "para mensajes un",
+            "iversales, para",
+            "melancolías,",
+            "para curar",
+            "debidas por hace",
+            "r. Nadie me va ente",
+            "nder, hoy estoy p",
+            "ara seguir,",
+            "para qu",
+            "e romperse la",
+            "camisa deb",
+            "ajo de la ri",
+            "sa de un ven",
+            "tilador. S",
+            "i porque te",
+            "ngo el día cam",
+            "biado, estoy d",
+            "esorientado,",
+            "tengo horas para",
+            "escribirse tratar de v",
+            "ivirlo. Ho",
+            "y estoy para se",
+            "guir,",
+            "acá estoy co",
+            "mo hoy, como sie",
+            "mpre,",
+            "para l",
+            "o que usted guste mandar./n"
         ],
         [
-            "colias,",
-            "/npara curar"
+            "U",
+            "na, dos, en e",
+            "l cuarto de al la",
+            "do, alguien despertándo",
+            "se al costado, m",
+            "e dicen que n",
+            "o estoy solo,",
+            "que",
+            "estoy acompañado./n"
         ],
         [
-            " heridas p",
-            "or",
-            "/nnadie me "
+            "Y",
+            "a me estoy haci",
+            "endo una idea",
+            ", justo cuan",
+            "do pensaba en vos",
+            "me despierto./n"
         ],
         [
-            "va a entender,",
-            "/nhoy estoy para s"
+            "Est",
+            "oy vivo",
+            "abro los ojos,",
+            "compruebo que todo fu",
+            "nciona,",
+            "hay que vivir, no va",
+            "le la pena sufri",
+            "r, hoy esto",
+            "y para seguir./n",
+            ""
         ],
         [
-            "eguir.",
-            "",
+            "Ya estoy yo p",
+            "ara grandes canciones",
+            "para revelar e",
+            "mociones, no",
+            "estoy para seguir,",
+            "no vale la pena s",
+            "ufrir.",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 89,
     "medias": [
         {
             "tipo": "Youtube",
@@ -95,6 +215,9 @@
             "delay": 0
         }
     ],
-    "procesando": 1,
-    "etiquetas": []
+    "procesando": 0,
+    "etiquetas": [
+        "Rock Nacional"
+    ],
+    "calidad": 1
 }
