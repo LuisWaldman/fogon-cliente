@@ -3,6 +3,9 @@ import { ref } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+
+const helper = HelperDisplayAcordesLatino.getInstance()
 const emit = defineEmits(['tocar', 'borrar', 'agregar'])
 const vectorCalidades: string[] = [
   'De Internet',
@@ -105,7 +108,7 @@ function Borrar(index: number) {
               )
             }}
           </td>
-          <td class="textoGrande">{{ cancion.escala }}</td>
+          <td class="textoGrande">{{ helper.GetAcorde(cancion.escala) }}</td>
           <td></td>
         </tr>
         <tr v-if="viendoDetalle === index" data-detail>

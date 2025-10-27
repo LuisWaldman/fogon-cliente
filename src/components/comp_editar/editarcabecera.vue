@@ -37,12 +37,12 @@ function clickCerrar(modificado: boolean) {
 
 <template>
   <div class="navbarFogon">
-    <emoticonOrigen :origen="origen.origenUrl" />
-    <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
-    <label>{{ cancion.cancion }} - {{ cancion.banda }}</label
-    ><label v-if="appStore.cancionModificada">*</label>
-
-    Escala: - {{ cancion.escala }}
+    <div>
+      <emoticonOrigen :origen="origen.origenUrl" />
+      <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
+      <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
+    </div>
+    s Escala: - {{ cancion.escala }}
     <select v-model="cancion.calidad">
       <option value="-1">Reprocesar</option>
       <option value="0">De Internet</option>

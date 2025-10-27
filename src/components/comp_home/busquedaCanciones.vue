@@ -11,8 +11,11 @@ import { FiltroPartes } from '../../modelo/indices/filtroPartes'
 import { filtroAcordes } from '../../modelo/indices/filtroAcordes'
 import { FiltroEtiquetas } from '../../modelo/indices/filtroEtiquetas'
 import { FiltroCalidad } from '../../modelo/indices/filtroCalidad'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
 const appStore = useAppStore()
+const helper = HelperDisplayAcordesLatino.getInstance()
+helper.latino = appStore.perfil.CifradoLatino
 
 // Definir emisores
 const emit = defineEmits<{
@@ -63,8 +66,14 @@ const notas: string[] = [
 
 // Crear escalas mayores y menores
 const escalas = [
-  ...notas.map((nota) => ({ value: nota, label: `${nota} Mayor` })),
-  ...notas.map((nota) => ({ value: `${nota}m`, label: `${nota}m Menor` })),
+  ...notas.map((nota) => ({
+    value: nota,
+    label: `${helper.GetAcorde(nota)} Mayor`,
+  })),
+  ...notas.map((nota) => ({
+    value: `${nota}m`,
+    label: `${helper.GetAcorde(nota)}m Menor`,
+  })),
 ]
 
 const filtroEscalaNota = ref(['C'])
@@ -303,7 +312,6 @@ function VerFiltros() {
             >
               <input
                 type="checkbox"
-                :checked="filtroGrupoSeleccionado.includes(opcion.value)"
                 @change="toggleCheckbox(filtroGrupoSeleccionado, opcion.value)"
               />
               {{ opcion.label }}
