@@ -1,342 +1,421 @@
 {
     "cancion": "A-Rodar-Mi-Vida",
     "banda": "fito-paez",
-    "escala": "A",
-    "tempo": 60,
-    "compas_cantidad": 4,
-    "compas_unidad": 4,
     "acordes": {
         "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
             {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "E",
-                    "D",
                     "A",
-                    "B7",
-                    "E",
                     "A",
-                    "E",
-                    "D",
                     "A",
-                    "E",
                     "A",
-                    "E",
                     "A",
-                    "E",
-                    "D",
                     "A",
-                    "B7",
-                    "E",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "E",
-                    "A",
-                    "E",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "B7",
-                    "E",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "E",
-                    "A",
-                    "E",
-                    "D7",
-                    "A",
-                    "D7",
-                    "A",
-                    "D7",
-                    "C#7",
-                    "F#m",
-                    "B7",
-                    "D",
-                    "E",
-                    "F#m",
-                    "D",
-                    "E",
-                    "F#m",
-                    "D",
-                    "C#7",
-                    "F#m",
-                    "B7",
-                    "D",
-                    "E",
-                    "A",
-                    "E",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "B7",
-                    "E",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "B7",
-                    "E",
-                    "A",
-                    "D7",
-                    "A",
-                    "D",
-                    "A",
-                    "D7",
-                    "C#7",
-                    "F#m",
-                    "B7",
-                    "D",
-                    "E",
-                    "F#m",
-                    "D",
-                    "E",
-                    "F#m",
-                    "D",
-                    "C#7",
-                    "F#m",
-                    "B7",
-                    "D",
-                    "E",
-                    "F#m",
-                    "D",
-                    "E",
-                    "F#m",
-                    "D",
-                    "E",
-                    "A",
-                    "E",
-                    "A",
-                    "G",
-                    "A",
-                    "G",
-                    "A",
-                    "G",
-                    "D",
-                    "E",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "C#7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C#7",
+                    "C#7",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "C#7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "C#7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "D",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C#7",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "D",
+                    "C#7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
+    "escala": "A",
     "letras": [
         [
-            "Se me hacia t",
-            "arde, ya me i",
-            "ba/n"
+            "Se me hacía t",
+            "arde, ya me",
+            "iba S",
+            "iem",
+            "pre se hace t",
+            "arde en la c",
+            "iudad/n"
         ],
         [
-            "Siempre se hace t",
-            "arde en la ciudad",
+            "Cuan",
+            "do me di cue",
+            "nta estaba v",
+            "ivo V",
+            "iv",
+            "o para siem",
+            "pre de verda",
             "/n"
         ],
         [
-            "Cuando me di cu",
-            "enta estaba v",
-            "ivo/n"
+            "Hoy c",
+            "ompré revist",
+            "as en el me",
+            "tro/n"
         ],
         [
-            "Vivo para s",
-            "iempre de verdad",
+            "No p",
+            "ensaba nada",
+            ", nada más",
+            "",
+            "",
+            "caí que al fin e",
+            "sto es un jue",
+            "go T",
+            "odo e",
+            "mpieza siempre,",
+            "nada más",
+            "",
+            "rodar, r",
+            "odar, rodar,",
+            "rodar mi vida",
+            "",
+            "rodar, r",
+            "odar, rodar, r",
+            "odar mi amor",
+            "/n"
+        ],
+        [
+            "Yo no sé dónde",
+            "va, yo no sé dónde",
+            "va mi vida/n"
+        ],
+        [
+            "Yo",
+            "no sé dónde va,",
+            "pero tampoco creo que s",
+            "epas vos",
+            "/n"
+        ],
+        [
+            "Quie",
+            "ro salir,",
+            "sí, qu",
+            "iero vivir",
+            "q",
+            "uiero dejar",
+            "una suerte del",
+            "señal Si",
+            "un corazón triste p",
+            "udo cerrar luz/n"
+        ],
+        [
+            "Si sé más limpiar",
+            "los besos de tu cru",
+            "z Nada más me importa en",
+            "esta vida Ch",
+            "ao, hasta mañana",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "r",
+            "o",
+            "d",
+            "a",
+            "r",
+            ",",
+            "",
+            "rodar, r",
+            "odar, rodar mi v",
+            "ida",
+            "rod",
+            "ar, rodar, rod",
+            "ar, rodar mi am",
+            "or/n"
+        ],
+        [
+            "Yo no sé d",
+            "ónde va, yo no sé",
+            "dónde va mi vida/n"
+        ],
+        [
+            "Yo",
+            "no sé",
+            "dónde va, pero tampoco c",
+            "reo que sepas vos",
+            "/n"
+        ],
+        [
+            "Q",
+            "uiero sali",
+            "r,",
+            "sí, quiero viv",
+            "ir",
+            "quiero dej",
+            "ar una suert",
+            "del señ",
+            "al Si un coraz",
+            "ón triste pudo cerrar",
+            "luz Si sé más",
+            "limpiar los besos de tu",
+            "cruz Nadie tiene",
+            "nadie, yo te tengo",
+            "aún Dentro de",
+            "mi alm",
+            "a siento que",
+            "me ama",
+            "s Chao, hasta m",
+            "añana",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Hoy compre r",
-            "evistas en el m",
-            "etro/n"
-        ],
-        [
-            "No pensaba en n",
-            "ada, nada ma",
-            "s/n"
-        ],
-        [
-            "Y caí que al ",
-            "fin esto en un ",
-            "juego/n"
-        ],
-        [
-            "Todo empieza s",
-            "iempre una vez ma",
-            "s",
-            "/n"
-        ],
-        [
-            "Y a rodar, y a rodar, y a rod",
-            "ar/nY a rodar mi "
-        ],
-        [
-            "vida/n"
-        ],
-        [
-            "Y a rodar, y a rodar, y a rod",
-            "ar/nY a rodar mi am"
-        ],
-        [
-            "or/nYo no "
-        ],
-        [
-            "se donde va/nYo no "
-        ],
-        [
-            "se donde va mi v",
-            "ida/nYo no "
-        ],
-        [
-            "se donde va/nPero tam"
-        ],
-        [
-            "poco creo que/nSepa"
-        ],
-        [
-            "s vos",
-            "/n"
-        ],
-        [
-            " Quiero salir",
-            ", si,  ",
-            "quiero vivir",
-            "/n"
-        ],
-        [
-            "Quiero dej",
-            "ar una sue",
-            "rte de señal",
-            "/n"
-        ],
-        [
-            "Si un corazon triste pudo ve",
-            "r la luz",
-            "/n"
-        ],
-        [
-            "Si hice mas liviano el peso de",
-            " tu cru",
-            "z/n"
-        ],
-        [
-            "Nada mas me imp",
-            "orta en esta vi",
-            "da, uh",
-            "/n"
-        ],
-        [
-            "Chau, hasta ma",
-            "ana",
+            "C",
+            "hao,",
+            "hasta mañana",
+            "",
             "",
             "/n"
         ],
         [
-            "Y a rodar, y a rodar, y a rod",
-            "ar/nY a rodar mi "
-        ],
-        [
-            "vida/n"
-        ],
-        [
-            "Y a rodar, y a rodar, y a rod",
-            "ar/nY a rodar mi am"
-        ],
-        [
-            "or/nYo no "
-        ],
-        [
-            "se donde va/nYo no "
-        ],
-        [
-            "se donde va mi v",
-            "ida/nYo no "
-        ],
-        [
-            "se donde va/nPero tam"
-        ],
-        [
-            "poco creo que/n"
-        ],
-        [
-            "Sepas v",
-            "os/n"
-        ],
-        [
-            " Quiero salir",
-            ", si,  ",
-            "quiero vivir",
-            "/n"
-        ],
-        [
-            "Quiero dej",
-            "ar una sue",
-            "rte de señal",
-            "/n"
-        ],
-        [
-            "Si un corazon triste pudo",
-            " ver la ",
-            "luz/n"
-        ],
-        [
-            "Si hice mas liviano el peso ",
-            "de tu c",
-            "ruz/nNad"
-        ],
-        [
-            "ie tiene a nadi",
-            "e, yo te tengo",
-            " aun",
-            "/n"
-        ],
-        [
-            "Dentro de mi a",
-            "lma",
-            "/n"
-        ],
-        [
-            "Siento que me a",
-            "mas",
-            "/n"
-        ],
-        [
-            "Chau, hasta ma",
-            "ana",
+            "Chao, has",
+            "ta mañana",
             "",
-            "/n"
-        ],
-        [],
-        [
-            "Sha na, sha na na/n"
-        ],
-        [
-            "Sha na, sha na na/n"
-        ],
-        [
-            "Sha na, sha na na/n"
-        ],
-        [
-            "Sha na, c",
-            "hau hasta mañ",
-            "ana",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
+    "calidad": 1,
+    "compasCantidad": 4,
+    "compasUnidad": 4,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "1DYUNaJ_rfU",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
+    "pentagramas": [],
+    "archivo": "fito-paez_a-rodar-mi-vida",
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "compas_cantidad": 4,
+    "compas_unidad": 4
 }
