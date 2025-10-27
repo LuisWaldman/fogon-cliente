@@ -66,8 +66,14 @@ const notas: string[] = [
 
 // Crear escalas mayores y menores
 const escalas = [
-  ...notas.map((nota) => ({ value: nota, label: `${helper.GetAcorde(nota)} Mayor` })),
-  ...notas.map((nota) => ({ value: `${nota}m`, label: `${helper.GetAcorde(nota)}m Menor` })),
+  ...notas.map((nota) => ({
+    value: nota,
+    label: `${helper.GetAcorde(nota)} Mayor`,
+  })),
+  ...notas.map((nota) => ({
+    value: `${nota}m`,
+    label: `${helper.GetAcorde(nota)}m Menor`,
+  })),
 ]
 
 const filtroEscalaNota = ref(['C'])
