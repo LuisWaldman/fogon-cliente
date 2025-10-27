@@ -303,7 +303,6 @@ function VerFiltros() {
             >
               <input
                 type="checkbox"
-                :checked="filtroGrupoSeleccionado.includes(opcion.value)"
                 @change="toggleCheckbox(filtroGrupoSeleccionado, opcion.value)"
               />
               {{ opcion.label }}
