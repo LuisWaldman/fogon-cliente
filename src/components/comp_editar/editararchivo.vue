@@ -119,6 +119,14 @@ function guardarCambios() {
         🗄️Servidor
       </option>
     </select>
+    
+    <select v-model="cancion.calidad">
+      <option value="-1">♻️ Reprocesar</option>
+      <option value="0">⭐⚫⚫⚫⚫    De Internet</option>
+      <option value="1">⭐⭐⚫⚫⚫   Texto Sincronizado</option>
+      <option value="2">⭐⭐⭐⚫⚫   Texto Corregido</option>
+      <option value="3">      Ok</option>
+    </select>
   </div>
   <div></div>
 </template>

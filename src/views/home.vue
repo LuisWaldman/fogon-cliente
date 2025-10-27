@@ -347,7 +347,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
 
       <div
         style="width: 90%"
-        v-if="viendo === 'listas' && viendoOrigen !== 'reproduccion'"
+        v-if="viendo === 'listas' || viendo === 'canciones'"
       >
         <div
           style="
@@ -356,7 +356,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
             justify-content: space-between;
           "
         >
-          <select v-model="selectedLista" style="width: 70%">
+          <select v-model="selectedLista" style="width: 70%" v-if="viendo === 'listas'">
             <option
               v-for="(lista, index) in viendoListas"
               :key="index"
@@ -366,13 +366,19 @@ function AgregarLista(index: number, listaseleccionada: string) {
             </option>
           </select>
           <div style="margin-left: auto">
-            <button @click="addingLista = true">
-              ➕<span class="button-text"> Agregar</span>
+            <button @click="addingLista = true" v-if="viendo === 'canciones'">
+              ➕<span class="button-text"> Cancion</span>
             </button>
-            <button @click="renombrarLista">
+            <button @click="addingLista = true" v-if="viendo === 'canciones'">
+              ⬆️<span class="button-text"> SUBIR</span>
+            </button>
+            <button @click="addingLista = true" v-if="viendo === 'listas'">
+              ➕<span class="button-text"> LISTA</span>
+            </button>
+            <button @click="renombrarLista" v-if="viendo === 'listas' ">
               🔄<span class="button-text"> Renombrar</span>
             </button>
-            <button @click="borrarLista">
+            <button @click="borrarLista" v-if="viendo === 'listas'">
               🗑<span class="button-text"> Borrar</span>
             </button>
           </div>

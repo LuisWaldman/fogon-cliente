@@ -10,7 +10,24 @@ const tiempo = new Tiempo()
 import { ref } from 'vue'
 import type { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+const helper = HelperDisplayAcordesLatino.getInstance()
+function arreglartexto(texto: string): string {
+  if (texto == null || texto === undefined) return ''
+  let processed = texto.replace(/-/g, ' ')
+  if (processed.length === 0) return processed
 
+  // First letter lowercase, rest uppercase
+  processed =
+    processed.charAt(0).toUpperCase() + processed.slice(1).toLocaleLowerCase()
+
+  // Truncate if longer than 50 characters
+  if (processed.length > 50) {
+    processed = processed.substring(0, 47) + '...'
+  }
+
+  return processed
+}
 defineProps<{
   cancion: Cancion
   origen: OrigenCancion
@@ -33,35 +50,71 @@ function clickCerrar(modificado: boolean) {
     appStore.cancionModificada = true
   }
 }
+helper.latino = appStore.perfil.CifradoLatino
+
 </script>
 
 <template>
   <div class="navbarFogon">
-    <div>
+    <div style="display: flex;">
+    <div class="divctrlEdit">
+      <div style="display: flex;"> 
       <emoticonOrigen :origen="origen.origenUrl" />
+      <label>{{ arreglartexto(cancion.banda) }}</label>
+      <label v-if="cancion.calidad==-1">♻️</label>
+      <label v-else-if="cancion.calidad==0">⭐⚫⚫⚫⚫</label>
+      <label v-else-if="cancion.calidad==1">⭐⭐⚫⚫⚫</label>
+      <label v-else-if="cancion.calidad==2">⭐⭐⭐⚫⚫</label>
+      
       <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
-      <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
+      </div>
+      <div class="tituloCancion">
+      {{ arreglartexto(cancion.cancion) }}
+      </div>
     </div>
-    s Escala: - {{ cancion.escala }}
-    <select v-model="cancion.calidad">
-      <option value="-1">Reprocesar</option>
-      <option value="0">De Internet</option>
-      <option value="1">Texto Sincronizado</option>
-      <option value="2">Texto Corregido</option>
-      <option value="3">Ok</option>
-    </select>
-    <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
+    <div class="divctrlEdit">
+      <label>BPM: {{ cancion.bpm }} <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label></label>
+      <div><label class="tituloCancion">{{ tiempo.formatSegundos(cancion.duracionCancion) }}</label>
+        </div>
+    </div>
+    <div class="divctrlEdit">
+      <label>Escala</label><label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
+      <div><label class="tituloCancion" v-if="cancion.escala">{{ helper.GetAcorde(cancion.escala) }}</label>
+        </div>
+    </div>
+    <div class="divctrlEdit">
+      <label>📺 Video</label><label @click="clickCambiar('medias')">🔄</label>
+      <div>
+        <label class="tituloCancion" v-if="cancion.medias.length > 0">📺</label>
+        <label class="tituloCancion" v-else>No</label>
+        </div>
+    </div>
+    <div class="divctrlEdit">
+      <label>Partituras</label><label @click="clickCambiar('pentagramas')">🔄</label>
+      <div><label class="tituloCancion">
+        🎼 {{ cancion.pentagramas.length }}
+      </label>
+        </div>
+    </div>
 
-    <label>Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
-    ><label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
-    <label
-      >BPM: {{ cancion.bpm }} Compas: {{ cancion.compasCantidad }}/
-      {{ cancion.compasUnidad }}</label
-    >&nbsp; <label>Medios: {{ cancion.medias.length }}</label
-    ><label @click="clickCambiar('medias')">🔄</label>
+    
+    <div class="divctrlEdit">
+    <button >🧠 Guardar  
 
-    <label>Pentagramas: {{ cancion.pentagramas.length }}</label
-    ><label @click="clickCambiar('pentagramas')">🔄</label>
+</button>
+    <button >o en 🗄️ </button>
+    
+    
+    </div>
+    </div>
+
+    
+    
+    
+
+    
+    
+    
     <div>
       <editarmedias
         v-if="viendo == 'medias'"
@@ -353,5 +406,36 @@ function clickCerrar(modificado: boolean) {
 }
 .conectado {
   border-color: #f5da09;
+}
+.tituloCancion {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.divctrlEdit {
+  padding: 12px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border:1px solid;
+}
+
+.divctrlEdit button {
+  height: 80%;
+  font-size: large;
+}
+
+
+@media (max-width: 768px) {
+  .divctrlEdit {
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    font-size: small;
+    font-size: small;
+  }
+  .tituloCancion {
+    font-size: medium;
+  }
 }
 </style>
