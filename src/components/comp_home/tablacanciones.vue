@@ -192,7 +192,7 @@ function Borrar(index: number) {
                     </option>
                   </optgroup>
                 </select>
-                
+
                 <button @click="agregandoLista = false">❌</button>
               </div>
             </div>

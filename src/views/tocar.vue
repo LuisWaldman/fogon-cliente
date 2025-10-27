@@ -178,16 +178,16 @@ const refAdvertencia = ref(true)
         >
           No hay partituras
         </div>
-                <div
+        <div
           class="advertencia"
           @click="refAdvertencia = false"
           v-if="
-          (vista.muestra == 'karaoke') && vista.reproduce == 'video' &&
-          refAdvertencia &&
-          (appStore.cancion.calidad != undefined && (appStore.cancion.calidad < 1))
-            
+            vista.muestra == 'karaoke' &&
+            vista.reproduce == 'video' &&
+            refAdvertencia &&
+            appStore.cancion.calidad != undefined &&
+            appStore.cancion.calidad < 1
           "
-
         >
           Texto No Calibrados. Corregilos desde: ✍️ Editar
         </div>
@@ -195,17 +195,21 @@ const refAdvertencia = ref(true)
           class="advertencia"
           @click="refAdvertencia = false"
           v-if="
-          refAdvertencia && vista.reproduce == 'video' &&
-      ((appStore.cancion.calidad != undefined && (appStore.cancion.calidad < 2)) &&
-            (vista.muestra == 'letrayacordes'  || vista.muestra == 'acordes'))
+            refAdvertencia &&
+            vista.reproduce == 'video' &&
+            appStore.cancion.calidad != undefined &&
+            appStore.cancion.calidad < 2 &&
+            (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
           "
-
         >
           Acordes No Calibrados. Corregilos desde: ✍️ Editar
         </div>
         <TocarLetraAcorde
-          v-if="vista.muestra == 'letrayacordes' || (appStore.cancion.pentagramas.length === 0 &&
-            vista.muestra == 'partitura')"
+          v-if="
+            vista.muestra == 'letrayacordes' ||
+            (appStore.cancion.pentagramas.length === 0 &&
+              vista.muestra == 'partitura')
+          "
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarLetraAcorde>
