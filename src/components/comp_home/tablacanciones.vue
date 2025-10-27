@@ -108,7 +108,7 @@ function Borrar(index: number) {
               )
             }}
           </td>
-          <td class="textoGrande">{{ helper.GetAcorde(cancion.escala) }}</td>
+          <td class="textoGrande"><span v-if="cancion.escala">{{ helper.GetAcorde(cancion.escala) }}</span></td>
           <td></td>
         </tr>
         <tr v-if="viendoDetalle === index" data-detail>
