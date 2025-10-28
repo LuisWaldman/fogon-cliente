@@ -8,60 +8,138 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Bb",
                     "F",
-                    "C"
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "iempo",
-            " dem",
-            "oliendo hoteles/nmientras los "
+            "/n"
         ],
         [
-            "plomo",
-            "s juntan los cabl",
-            "es cazan rehenes./nHoy paso el t"
+            "Yo que cre",
+            "c con /n Videla, yo que n",
+            "ac sin poder, yo que l",
+            "uch por la libertad pero nunca la pud",
+            "temer. /n Yo que v",
+            "iv entre parchistas, yo que m",
+            "or en el altar, yo que n",
+            "ac con los que estaban bien pero la noche estaba t",
+            "odo mal. /n Hoy paso el ti",
+            "emp demoliéndote",
+            "mientras los robos junt",
+            "a los cabos que hacen rehenes./n"
         ],
         [
-            "iempo",
-            " dem",
-            "oliendo hoteles/nmientras los "
+            "Hoy paso el ti",
+            "emp demoliéndote",
+            "mientras los chicos all",
+            "en la esquina resaltan genes.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "chico",
-            "s allá en la esq",
-            "uina pegan",
-            ""
+            "Hoy paso el ti",
+            "emp demoliéndote,",
+            "mientras los robos juntan los cabos que hacen rehenes. /n Hoy paso el tiempo demoliéndote, mientras los robos",
+            "junta los cabos que hacen rehe",
+            "nes /n Hoy paso el tiem",
+            "p demoliéndote,",
+            "mientras los chicos allá e",
+            "n la esquina resaltan genes.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Gracias p",
+            "or ver el video."
         ]
     ],
-    "bpm": 80,
+    "bpm": 78,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Mm3IgrVsu24",
-            "delay": 0
+            "delay": 4450.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

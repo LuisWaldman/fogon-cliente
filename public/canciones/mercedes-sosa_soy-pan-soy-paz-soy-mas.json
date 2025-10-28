@@ -8,20 +8,35 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E7M",
+                    "E7M",
+                    "E7M"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E7M",
-                    "F#m7",
                     "E7M",
                     "F#m7",
                     "E7M",
-                    "F#m7",
-                    "Am"
+                    "E7M"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "E7M",
                     "E7M"
                 ]
             },
@@ -29,12 +44,11 @@
                 "nombre": "parte3",
                 "acordes": [
                     "F#m7",
-                    "E7M",
                     "F#m7",
-                    "Am",
-                    "E7M",
-                    "A",
-                    "E7M",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
                     "F#m7"
                 ]
             },
@@ -42,169 +56,407 @@
                 "nombre": "parte4",
                 "acordes": [
                     "F#m7",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7M",
+                    "F#m7",
+                    "F#m7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m7",
+                    "F#m7",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "E7M",
+                    "E7M",
+                    "F#m7",
+                    "F#m7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m7",
+                    "F#m7",
+                    "B7",
+                    "B7",
+                    "F#m7",
                     "B7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E7M",
+                    "F#m7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E7M",
+                    "E7M",
+                    "E7M"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E7M",
+                    "F#m7",
+                    "F#m7",
+                    "E7M",
+                    "E7M",
+                    "E7M"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F#m7",
+                    "F#m7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F#m7",
+                    "F#m7",
+                    "Am",
+                    "E7M"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E7M",
+                    "E7M",
+                    "E7M"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F#m7",
+                    "F#m7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F#m7",
+                    "F#m7",
+                    "B7",
+                    "B7",
+                    "F#m7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E7M",
+                    "E7M",
+                    "F#m7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "B7",
+                    "E7M",
+                    "E7M"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "E7M",
+                    "E7M",
+                    "E7M"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F#m7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E7M",
+                    "F#m7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "B7",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M",
+                    "E7M"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
             2,
-            1,
             3,
-            1,
-            3,
-            1,
-            3,
-            1,
-            3,
-            1,
-            1,
-            2,
-            1,
-            3,
-            1,
-            3,
-            1,
-            3,
-            1,
-            3,
-            1,
-            1
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
         ]
     },
     "letras": [
         [
-            "o-o-oy, yo so",
-            "-o-oy, yo so-",
-            "o-oy/nSoy "
+            "",
+            "",
+            "/n"
         ],
         [
-            "mar, Atlántico, viento y América/nSoy un "
+            "Yo s",
+            "oy y",
+            "o soy,",
+            "yo",
+            "s",
+            "o/n"
         ],
         [
-            "montón de cosas santas/nMez"
+            "So",
+            "y agua, playa, ci",
+            "elo casa bla",
+            "nc /n S",
+            "o mar, atlánti",
+            "co viento /n Amé",
+            "ric /n S",
+            "oy un montón d",
+            "e cosas santa",
+            "s/n"
         ],
         [
-            "cladas con cosas humanas/nComo te explico "
+            "Mezclada con c",
+            "osas human",
+            "a /n Co",
+            "m te explic",
+            "o /n Cosas m",
+            "undana",
+            "/n"
         ],
         [
-            ". . . cosas mund",
-            "anas/nFui "
+            "Fu",
+            "niño cuna, tet",
+            "a techo, ma",
+            "nt /n Má",
+            "s miedo, cuco, gri",
+            "to llanto, r",
+            "az /n De",
+            "spué mezclaron las",
+            "palabra/n"
         ],
         [
-            "niño, cuna , teta, techo, manta/nMás"
+            "O",
+            "s escapaban la",
+            "miradas/n"
         ],
         [
-            " miedo, cuco, grito, llanto, raza/nDesp"
+            "Algo p",
+            "asó",
+            "no entendí nad/n"
         ],
         [
-            "ués mezclaron las palabras/nO se"
+            "Va",
+            "mos decime, cánta",
+            "m toda la que vos te es",
+            "tá pasando ahora /n Po",
+            "rqu si no, cuando está t",
+            "u alma sola llora/n"
         ],
         [
-            " escapaban las miradas/nAlgo pa"
+            "H",
+            "a que sacarlo todo a",
+            "fuera /n Como la p",
+            "rimaver /n N",
+            "adi quiere que adentro a",
+            "lg se muera/n"
         ],
         [
-            "só . . . no entendí ",
-            "nada/nVa"
+            "Hab",
+            "la mirándose l",
+            "o ojos /n Sacar lo que s",
+            "e puede afuera /n Par",
+            "a que adentro naz",
+            "c cosas nuevas",
+            "",
+            "/n"
         ],
         [
-            "mos, decime, contame/nTodo lo que a v"
+            "Soy pan, soy paz",
+            ", soy más, soy la que es",
+            "t por acá/n"
         ],
         [
-            "os te está pasando ahora/n"
+            "N quiero má",
+            "s de lo que quieras d",
+            "a /n H",
+            "o se te da, hoy s",
+            "e te quita",
+            "/n"
         ],
         [
-            "Porque sino cuando está el alma sóla ",
-            "llora/n"
+            "Igual que con la",
+            "margarit/n"
         ],
         [
-            "Hay que sacarlo t",
-            "odo afuera, co",
-            "mo la primavera/n"
+            "Igual al",
+            "ma /n I",
+            "gual la vida, la",
+            "vida la vida, la vida/n"
         ],
         [
-            "Nadie quiere que a",
-            "dentro algo se mue",
-            "ra/n"
+            "Vamos, decime, cántame",
+            "tod la que vos te est",
+            "pasando ahora/n"
         ],
         [
-            "Hablar mirándos",
-            "e a los ojos/n"
+            "Porque si no, cuando está tu al",
+            "m sola llora/n"
         ],
         [
-            "Sacar lo que se puede afuera/n"
+            "Hay",
+            "qu sacarlo todo a",
+            "fuer /n Como la primav",
+            "er /n Nadi",
+            "e quiere que adentro al",
+            "g se mu",
+            "er /n Habla",
+            "mirándose los oj",
+            "o /n Sacar lo que se pu",
+            "ed afuera /n Para q",
+            "u adentro nazca c",
+            "osa nuevas",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Para que adentro na",
-            "zcan cosas nue",
-            "vas/nS"
+            "Nue",
+            "vas nuevas, nuevas",
+            "/n"
         ],
         [
-            "oy, pan, soy paz, sos más, soy el que está por acá/nNo q"
+            "Vamos decime, cánta",
+            "m toda la que vos te e",
+            "st pasando ahora/n"
         ],
         [
-            "uiero más de lo que me puedas dar, uuuuuuh/nHo"
+            "Porque si no, cuando está t",
+            "u alma sola llora, por fav",
+            "o /n Ha",
+            "y que sacarlo todo",
+            "afuer /n Como la pri",
+            "maver/n"
         ],
         [
-            "y se te da, hoy se te quita/nI"
+            "Nadi quiere que adentro",
+            "alg se mu",
+            "er /n H",
+            "abla mirándose l",
+            "o ojos /n Sacar lo que",
+            "s puede afuera /n P",
+            "ara que adentro naz",
+            "c cosas nuevas/n"
         ],
         [
-            "gual que con la margarita . . . igual al ma",
-            "r/nIgual la vid"
-        ],
-        [
-            "a, la vida, la vida, la vida/nVa"
-        ],
-        [
-            "mos, decime, contame/nTodo lo que a v"
-        ],
-        [
-            "os te está pasando ahora/n"
-        ],
-        [
-            "Porque sino cuando está el alma sóla ",
-            "llora/n"
-        ],
-        [
-            "Hay que sacarlo t",
-            "odo afuera, co",
-            "mo la primavera/n"
-        ],
-        [
-            "Nadie quiere que a",
-            "dentro algo se mue",
-            "ra/n"
-        ],
-        [
-            "Hablar mirándos",
-            "e a los ojos/n"
-        ],
-        [
-            "Sacar lo que se puede afuera/n"
-        ],
-        [
-            "Para que adentro na",
-            "zcan cosas nue",
-            "vas/n"
-        ],
-        [
-            "Cosas  nuevas, nuevas, nuevas, nuevas"
+            "Nue",
+            "vas nuevas, nuev",
+            "a",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0rr5JVnRHM4",
-            "delay": 0
+            "delay": 4250.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_soy-pan-soy-paz-soy-mas.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_soy-pan-soy-paz-soy-mas.mp3",
+    "calidad": 1
 }

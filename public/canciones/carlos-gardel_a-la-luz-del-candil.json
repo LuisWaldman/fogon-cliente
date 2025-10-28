@@ -8,25 +8,33 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "B7",
-                    "Am",
+                    "Em",
                     "Em",
                     "B7",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
                     "G",
                     "B7",
-                    "Em",
-                    "B7",
-                    "Am",
                     "Em",
                     "Em"
                 ]
@@ -34,26 +42,74 @@
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "C",
-                    "B7",
-                    "Am",
                     "Em",
+                    "Am",
+                    "Am",
+                    "Am",
                     "B7",
-                    "Em"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
+                    "Em",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "G",
                     "B7",
                     "Em",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Em",
                     "D",
-                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
                     "D",
-                    "G"
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
@@ -62,92 +118,104 @@
             1,
             2,
             3,
-            2
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
         [
-            "me da su permiso, señor comi",
-            "sario?/nDisculpe si "
+            "",
+            "",
+            "/n"
         ],
         [
-            "vengo tan mal entrazao,/nYo soy forastero y he caido al ro"
+            "Me",
+            "da su permiso,",
+            "señor comisa",
+            "rio /n Discul",
+            "p si vengo muy mal e",
+            "ntrasado yo soy",
+            "foraster escaro al rosa",
+            "rio /n Traiendo los",
+            "tiento un buen estiri",
+            "pao quizás usted pie",
+            "ns que soy un materero./n"
         ],
         [
-            "sario,/nTrayendo en los ti"
+            "Yo soy gaucho honrado",
+            ", carta cabal,",
+            "no soy ni borracho ni s",
+            "oy un cuaterero/n"
         ],
         [
-            "entos un güen entrip",
-            "ao./nAcaso usted pi"
+            "Se",
+            "ño comisario, yo soy c",
+            "riminal /n Arrésteme,",
+            "sargento, póngame cad",
+            "ena si soy un delin",
+            "cuent que me perdone /n Dios./n"
         ],
         [
-            "ense que soy un matr",
-            "ero,/nYo soy gaucho honr"
+            "Yo he sido un crioso bu",
+            "eno me llamo /n Alberto Arena/n"
         ],
         [
-            "ado a carta caba",
-            "l,/nNo soy un borracho ni soy un cuat"
+            "Señor, me traicionaban",
+            "lo maté los dos. /n M",
+            "i china fue malvada, mi a",
+            "migo era un sotereta./n"
         ],
         [
-            "rero;/n¡señor com"
+            "Mientras yo fui tropago, m",
+            "e basurió la infiel. /n L",
+            "a prueba de la infamia la t",
+            "raig en la maleta, las",
+            "trenza de mi china e",
+            "l corazón d",
+            "e la preta sa",
+            "rgent que no me r",
+            "etobó/n"
         ],
         [
-            "isario... yo soy crimi",
-            "nal!.../n"
+            "Yo quiero que sep",
+            "a la verdad de mí,",
+            "la noche era oscura",
+            "com boquelovo./n"
         ],
         [
-            "¡arrésteme, sar",
-            "gento,/nY p"
-        ],
-        [
-            "óngame cad",
-            "enas!.../n¡si "
-        ],
-        [
-            "soy un delinc",
-            "uente,/nQue "
-        ],
-        [
-            "me perdone di",
-            "os!/nYo he sido un criollo g"
-        ],
-        [
-            "üeno,/nMe llamo alberto ar"
-        ],
-        [
-            "enas./n¡señor... me traici"
-        ],
-        [
-            "onaban,/nY los maté a los "
-        ],
-        [
-            "dos!/nMi china fue mal"
-        ],
-        [
-            "vada,/nMi amigo era un sotr"
-        ],
-        [
-            "eta;/nCuando me fui a otro p"
-        ],
-        [
-            "ago/nMe basureó la infiel."
-        ],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Testigos solitos,",
+            "la luz de un candil to",
+            "ta coacinada, u",
+            "n beso en la sombra, d",
+            "os cuerpos cayeron un",
+            "maldición. /n Señ",
+            "o comisario, si usted",
+            "no se asombra",
+            "yo encontré d",
+            "o vainas para mi p",
+            "acón /n Arrésteme,",
+            "sargento, póngame",
+            "cadena si soy u",
+            "n delincuente qu",
+            "e me perdone /n D",
+            "ios",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "2l4POCBoAFg",
-            "delay": 0
+            "delay": 1500.0
         }
     ],
     "etiquetas": [
         "Tango"
-    ]
+    ],
+    "calidad": 1
 }

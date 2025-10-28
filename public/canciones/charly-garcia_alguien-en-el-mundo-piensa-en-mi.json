@@ -8,148 +8,478 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C/G",
+                    "C/G",
+                    "C/G",
+                    "C/G",
+                    "C/G",
+                    "C/G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C/G",
+                    "C",
+                    "C",
+                    "E",
+                    "G",
+                    "G",
+                    "C",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "C",
+                    "E",
+                    "E",
+                    "C/G",
+                    "C/G",
+                    "G",
+                    "G",
+                    "G",
+                    "F7",
+                    "E",
+                    "E",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
                 "acordes": [
                     "C",
                     "E",
-                    "F",
-                    "G",
-                    "C",
                     "E",
-                    "F",
-                    "G",
-                    "C",
                     "E",
-                    "F",
-                    "D/F#",
-                    "C/G",
-                    "G",
-                    "C",
-                    "G",
+                    "D/A",
+                    "D/A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F7",
+                    "F7",
                     "F7",
                     "C7",
+                    "C7",
                     "F7",
-                    "D7",
-                    "G",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "C/G",
                     "D/A",
                     "A",
-                    "D",
-                    "D",
-                    "C",
-                    "D",
-                    "F#",
-                    "G",
                     "A",
-                    "D",
-                    "F#",
-                    "G",
                     "A",
-                    "D",
-                    "F#",
-                    "G",
-                    "E/G#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
                     "D/A",
-                    "A",
-                    "D",
-                    "A",
-                    "D",
-                    "C",
                     "G",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D/A",
+                    "D/A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D/A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "é q",
-            "ue no soy culpa",
-            "ble. ",
-            "/nYo s"
-        ],
-        [
-            "é q",
-            "ue ahora soy feli",
-            "z. ",
-            "/nYo s"
-        ],
-        [
-            "é q",
-            "ue queria que al",
-            "- gu",
-            "ien, /n"
-        ],
-        [
-            "alguien en el mu",
-            "ndo piense en m",
-            ". ",
-            "/nN"
-        ],
-        [
-            "ada que hacer, nada que ver, /nsólo"
-        ],
-        [
-            " vemos las películas nena. /nN"
-        ],
-        [
-            "ada que hacer, nada que ver. /n"
-        ],
-        [
-            " La vanguardia e",
-            "s así. /n"
-        ],
-        [
-            "Alguien en el mu",
-            "ndo piensa en m",
-            ". /n... piensa en "
-        ],
-        [
-            "mí... piensa en ",
-            "mí... /nYo s"
-        ],
-        [
-            "é ",
-            "que soy inbanca",
-            "ble. ",
-            "/nYo s"
-        ],
-        [
-            "é ",
-            "que ahora soy feli",
-            "z. ",
-            "/nYo s"
-        ],
-        [
-            "é ",
-            "que soy un ama",
-            "ble traido",
-            "r. /n"
-        ],
-        [
-            "Alguien en el mu",
-            "ndo piensa en m",
-            ". ",
-            "/n... piensa en "
-        ],
-        [
-            "mí... ... piensa en ",
-            "mí...",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "t",
+            "a vez tu autochocó la o",
+            "tr mañana recié",
+            "extrañarás tu pequeño p",
+            "err el día de su cumpleaños.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Y",
+            "o sé q",
+            "u no so",
+            "culpa",
+            "ble y",
+            "o s",
+            "é que ahora so",
+            "y feliz./n"
+        ],
+        [
+            "Y",
+            "o s",
+            "é que que",
+            "rí qu",
+            "alguien,",
+            "alguien e",
+            "n el mundo pi",
+            "ens en mí",
+            ". /n Y",
+            "o s",
+            "é que s",
+            "o bac",
+            "ane",
+            "yo s",
+            "é que te h",
+            "ice reír",
+            "./n"
+        ],
+        [
+            "Yo s",
+            "é que soy",
+            "sopor",
+            "tabl",
+            "pero algu",
+            "ie en el mundo p",
+            "iensa en m",
+            "í/n"
+        ],
+        [
+            "Nada qu",
+            "hacer, nada que",
+            "ver solo vemos l",
+            "a películas ne",
+            "gras nada q",
+            "u hacer, nada qu",
+            "ver.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "lguie en el m",
+            "und piensa e",
+            "mí.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Alguie en el m",
+            "und piensa e",
+            "n mí.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo s",
+            "é qu",
+            "e soy b",
+            "acan",
+            "e yo",
+            "s q",
+            "u ahora soy fe",
+            "liz/n"
+        ],
+        [
+            "Yo",
+            "s q",
+            "u soy una m",
+            "adre tra",
+            "idora /n Al",
+            "guie en el",
+            "mund piensa e",
+            "n mí./n"
+        ],
+        [
+            "A",
+            "lguie en el",
+            "mund pien",
+            "s en mí./n"
+        ],
+        [
+            "Piensa",
+            "en mí",
+            ". /n Piensa e",
+            "n m",
+            "í",
+            "/n"
+        ],
+        [
+            "Piensa e",
+            "n mí",
+            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pien",
+            "s en mí.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Piensa en mí."
         ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "j7XwBi4MMNw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }
