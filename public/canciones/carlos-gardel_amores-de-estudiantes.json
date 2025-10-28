@@ -8,52 +8,106 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
                     "Gm",
                     "D",
+                    "D",
                     "A",
-                    "D"
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "A",
+                    "A",
                     "A",
                     "D",
-                    "A",
                     "D",
-                    "E",
-                    "A",
-                    "Dº"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A7",
                     "D",
-                    "Dº",
                     "D",
-                    "B7",
-                    "E",
-                    "E7",
-                    "A"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Dº",
-                    "F#7",
-                    "Bm",
-                    "E7",
-                    "A",
-                    "E",
                     "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "A7",
+                    "A7",
+                    "Gm",
+                    "Gm",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "D",
+                    "D",
+                    "Dº",
+                    "Dº"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A7",
+                    "D",
+                    "D",
+                    "Gm",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -61,85 +115,102 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Hoy un juramen",
-            "to /nmañana una trai"
+            "/n"
         ],
         [
-            "ción /namores de estudia"
+            "mañana una aca",
+            "rición am",
+            "ore de estudian",
+            "te flores de un",
+            "diazó",
+            "n/n"
         ],
         [
-            "ntes /nflores de un día "
+            "Se",
+            "r un labi",
+            "o saraniente,",
+            "dejar una pr",
+            "omes apasiona",
+            "d verte./n"
         ],
         [
-            "son. /nE"
+            "Quie",
+            "r calmar los",
+            "enojo de a",
+            "quello pelados ojos",
+            "siempre mintiendo",
+            "v",
+            "os",
+            "/n"
         ],
         [
-            "n unos la",
-            "bios ardien",
-            "tes /ndejar una prom"
+            "Por un m",
+            "ira que ruega",
+            "perder la quietu",
+            "d /n Mujer",
+            "cita sonrientes qu",
+            "e juran virtu",
+            "d /n Es un",
+            "a boca loca, la q",
+            "ue hoy me provoca./n"
         ],
         [
-            "esa /napasionadame"
+            "Hay un collar d",
+            "e amores en m",
+            "i juven",
+            "tud",
+            "/n"
         ],
         [
-            "nte /nsiempr"
+            "Fantasma del pasad",
+            "o perfu",
+            "me de ayer. /n D",
+            "e bozar dolient",
+            "e blanqueando m",
+            "i piel./n"
         ],
         [
-            "e mintiendo amor",
-            ". ",
-            "",
-            "/nPor un mirar que ru"
+            "Valdad de recuerdo",
+            "s de un tiempo qu",
+            "erido /n Le",
+            "jan dolor",
+            "ido que n",
+            "o olvi",
+            "daré/n"
         ],
         [
-            "ega /nque j"
-        ],
-        [
-            "uran virtud",
-            ". /nla que"
-        ],
-        [
-            " hoy me provo",
-            "ca /nhay un collar de am"
-        ],
-        [
-            "ores /nen mi juvent"
-        ],
-        [
-            "ud. /nplat"
-        ],
-        [
-            "eando mi sien",
-            ". /nBandadas de recu"
-        ],
-        [
-            "erdos /nd"
-        ],
-        [
-            "e un tiempo que",
-            "rido /nlejano y flor"
-        ],
-        [
-            "ido /nque "
-        ],
-        [
-            "no olvidare",
-            ". "
+            "S",
+            "oy un ju",
+            "roberto",
+            "mañana una trai",
+            "ción amo",
+            "re de estudia",
+            "nte flores d",
+            "e un diaz",
+            "ón",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ExY0X95-xFQ",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Tango"
-    ]
+    ],
+    "calidad": 1
 }

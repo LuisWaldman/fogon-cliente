@@ -8,60 +8,118 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E9+",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A",
                     "E9+",
-                    "A",
-                    "B",
-                    "E9+"
+                    "E9+",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E",
+                    "F#m",
                     "F#m",
                     "B6",
-                    "E",
-                    "B7",
-                    "E9+",
-                    "A",
-                    "E"
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6",
+                    "B6"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "B6",
+                    "E9+",
                     "A",
-                    "B",
-                    "E"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "A",
-                    "B7",
-                    "E",
-                    "F#",
-                    "B6",
-                    "E",
-                    "E",
+                    "E9+",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "E",
                     "A",
-                    "B6",
                     "E",
-                    "F#m",
-                    "B6",
                     "E",
-                    "B"
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E9+",
+                    "E9+",
+                    "E9+"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E9+",
+                    "E9+",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
@@ -69,81 +127,112 @@
             0,
             1,
             2,
-            1,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
-        [],
-        [
-            "de los 27   ",
-            "  es a donde voy a estar",
-            "/nEl Club "
-        ],
-        [
-            "de los 27   ",
-            "  es a donde voy a estar",
-            "/nVola"
-        ],
-        [
-            "ré sobre este mundo",
-            "/nTraicionero y digital"
-        ],
         [
             "",
-            "/nHay "
-        ],
-        [
-            "algo que no me cierra",
-            "/nAlgo sobrenatural"
-        ],
-        [
-            "/nHay alg"
-        ],
-        [
-            "o que no me cierra",
-            "/nAlgo sobrenatural"
-        ],
-        [
-            "/nCristo "
-        ],
-        [
-            "fue crucificado por ",
-            "pecados de alguien m",
-            "s (",
-            "no por los míos)/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-            "creo todo el universo  ",
-            " y también al Ku Klux Klan",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "  Dios creó todo el universo ",
-            "   y también al ku Klux Klan ",
-            " (Ah)/nMuchos pobres, pocos ricos,    ellos nunca van a entrar"
+            "Esta e",
+            "s una canción en español de rock argentino. /n Esta e",
+            "s",
+            "",
+            "",
+            "",
+            "",
+            "u",
+            "n c",
+            "anció en españo",
+            "l de rock argentino. /n Ha",
+            "y algo que no me cierra",
+            ", algo sobrenatural",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        []
+        [
+            "Cri",
+            "st fue crucificad",
+            "porque cada de alguie",
+            "más no conocido",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Dios",
+            "cre todo el universo",
+            "también al /n Cucurstr",
+            "a/n"
+        ],
+        [
+            "D",
+            "io creó todo el universo",
+            "también al /n Cucurs",
+            "tr/n"
+        ],
+        [
+            "Much",
+            "o pobres, pocos ricos",
+            "ellos nunca van",
+            "entrar/n"
+        ],
+        [
+            "Voy",
+            "ver mis amigos,/n"
+        ],
+        [
+            "Brian /n Jones Kuko B",
+            "ai/n"
+        ],
+        [
+            "Brian /n J",
+            "one será te digo q",
+            "u los tombs son igu",
+            "ale/n"
+        ],
+        [
+            "Como e",
+            "l heno tu hijo l",
+            "o van crucificar",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 73,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "WR-tHlIr_n8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

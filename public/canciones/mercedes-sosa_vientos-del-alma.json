@@ -8,51 +8,111 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#m",
                     "F#m",
-                    "A",
-                    "Bm",
-                    "D"
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#m"
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A",
-                    "Bm",
                     "D",
+                    "F#m",
                     "Bm",
-                    "D",
+                    "F#m",
+                    "Bm",
+                    "Bm",
                     "A",
-                    "B"
+                    "C#7",
+                    "C#7",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "D",
+                    "F#m",
+                    "A",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "B7",
-                    "D",
-                    "C#7",
                     "F#m",
-                    "B",
+                    "A",
+                    "Bm",
+                    "F#m",
                     "D",
+                    "Bm A",
+                    "A",
+                    "C#7",
                     "C#7"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "E",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "F#m",
                     "A",
-                    "Bm"
+                    "F#m",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A"
                 ]
             }
         ],
@@ -60,183 +120,108 @@
             0,
             1,
             2,
-            1,
             3,
-            1,
             4,
-            1,
-            4,
-            0,
-            1,
-            2,
-            1,
-            3,
-            1,
-            4,
-            1,
-            4,
-            1,
-            1,
-            4,
-            1,
-            4,
-            1
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "Yo soy la noche en la mañana/n"
-        ],
-        [
-            "Vientos del alma en",
-            "vuelto en llamas/n"
-        ],
-        [
-            "Suenan las voces d",
-            "e la quebrada/n"
-        ],
-        [
-            "Traigo la tierra e",
-            "n mil colores/n"
-        ],
-        [
-            "Como un racimo ll",
-            "eno de flores/n"
-        ],
-        [
-            "Traigo la luna co",
-            "n su rocío/n"
-        ],
-        [
-            "Traigo palabras c",
-            "on el sonido y lu",
-            "z/n"
-        ],
-        [
-            "De tu desti",
-            "no.",
             "/n"
         ],
         [
-            "Yo soy la noche, la mañana/nSoy pachamama, soy "
+            "Yo soy l",
+            "noche, la mañ",
+            "ana /n Yo soy el",
+            "fuego, fuego en la oscu",
+            "ridad /n Soy Pacha",
+            "mama soy tu verdad./n"
         ],
         [
-            "tu verdad/n"
+            "Yo soy el can",
+            "to viento de la liber",
+            "tad/n"
         ],
         [
-            "Yo soy el canto v",
-            "iento de la/n"
-        ],
-        [
-            "libertad/nYo soy el cielo, la inm"
-        ],
-        [
-            "ensidad/n"
-        ],
-        [
-            "Yo soy la tierra, ma",
-            "dre de la/net"
-        ],
-        [
-            "ernidad/nSoy pachamama, soy t"
-        ],
-        [
-            "u verdad/n"
-        ],
-        [
-            "Yo soy el canto, vi",
-            "ento de la/n"
-        ],
-        [
-            "libertad./n"
-        ],
-        [
-            "Hoy vuelvo en coplas a",
-            " tu camino/n"
-        ],
-        [
-            "Juntando el eco d",
-            "e torbellinos/n"
-        ],
-        [
-            "Traigo las huellas d",
-            "e los amores/n"
-        ],
-        [
-            "Antigua raza y ro",
-            "stros de cobre/n"
-        ],
-        [
-            "Traigo la luna co",
-            "n su rocío/n"
-        ],
-        [
-            "Traigo palabras c",
-            "on el sonido y lu",
-            "z/n"
-        ],
-        [
-            "De tu dest",
-            "ino.",
+            "Die",
+            "nta del alma envuelto en llamas, suen",
+            "a las voces de la quebrada. /n Traig",
+            "la tierra en mis colores como u",
+            "n rosí muy lleno de flores. /n Traig",
+            "la luna con su rocío. /n Traig",
+            "palabras con el sonido l",
+            "uz d",
+            "tu desti",
+            "no /n Yo soy la n",
+            "oche la mañana. /n Yo soy el fuego, fu",
+            "eg en la oscuridad. /n Soy Pacha",
+            "mama soy tu verdad. /n Yo soy el canto,",
+            "viento de la libertad. /n Yo soy el cie",
+            "lo la inmensidad. /n Yo soy la tierra, ma",
+            "dr de la eternidad. /n Soy Pachama",
+            "ma soy tu verdad. /n Yo soy el canto, vient",
+            "o de la libertad.",
+            "",
+            "",
             "/n"
         ],
         [
-            "Yo soy la noche, la mañana/nSoy pachamama, soy "
+            "Hoy vuelvo en /n Cap",
+            "la tu camino, juntando el ec",
+            "o de torbellinos. /n Traigo las bell",
+            "as de los amores, antigua raza",
+            "rojos de cobre. /n Traigo la luna c",
+            "on su rocío. /n Traigo palabras",
+            "co el sonido lu",
+            "z de tu destino.",
+            "/n"
         ],
         [
-            "tu verdad/n"
+            "Yo soy la noche, la m",
+            "añana /n Yo soy el fuego, fuego en la o",
+            "scuridad /n Soy Pachamama, soy tu",
+            "verdad. /n Yo soy el canto, viento de la l",
+            "ibertad /n Yo soy el cielo, la inmens",
+            "idad /n Yo soy la tierra, madre de la eter",
+            "nidad /n Soy Pachamama, soy tu ver",
+            "dad /n Yo soy el canto, viento de la lib",
+            "ertad /n Yo soy la noche, la mañan",
+            "a /n Yo soy el fuego, fuego en la osc",
+            "uridad /n Soy Pachamama, soy tu verdad./n"
         ],
         [
-            "Yo soy el canto vi",
-            "ento de la lib",
-            "ertad/nYo soy el cielo, la inm"
+            "Yo soy el canto, viento de la lib",
+            "ertad /n Yo soy el cielo, la inmensidad./n"
         ],
         [
-            "ensidad/n"
+            "Yo soy la tierra, madre de la eterni",
+            "dad /n Soy Pachamama, soy tu verdad./n"
         ],
         [
-            "Yo soy la tierra, ma",
-            "dre de la eter",
-            "nidad/nSoy pachamama, soy "
+            "Yo soy el canto, viento de la lib",
+            "ertad/n"
         ],
         [
-            "tu verdad/n"
-        ],
-        [
-            "Yo soy el canto, v",
-            "iento de la lib",
-            "ertad./n"
-        ],
-        [
-            "Yo soy el cielo, la inme",
-            "nsidad/n"
-        ],
-        [
-            "Yo soy la tierra, ma",
-            "dre de la eter",
-            "nidad/nSoy pachamama, soy "
-        ],
-        [
-            "tu verdad/n"
-        ],
-        [
-            "Yo soy el canto, vi",
-            "ento de la libert",
-            "ad."
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
-    "bpm": 80,
+    "bpm": 78,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "e_5C7n8BzgE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_vientos-del-alma.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_vientos-del-alma.mp3",
+    "calidad": 1
 }
