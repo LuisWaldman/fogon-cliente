@@ -2,356 +2,558 @@
     "cancion": "agua",
     "banda": "miranda",
     "escala": "Dm",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "D",
+                    "D",
                     "Dm",
                     "Gm",
                     "Dm",
-                    "Gm"
+                    "Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Bb",
                     "Dm",
-                    "Bb",
-                    "Dm"
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "Gm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G7M",
-                    "F#m",
-                    "G7M",
-                    "F#m"
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "G",
-                    "D",
+                    "Dm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb",
+                    "Bb",
                     "Em",
-                    "C"
+                    "Em",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "Dm",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "G7M",
+                    "Bb",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "D",
+                    "D",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G7M",
+                    "G7M",
+                    "G7M",
+                    "F#m",
+                    "F#m",
+                    "G7M",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "G7M",
+                    "Dm",
+                    "F#m",
+                    "G7M",
+                    "G7M",
+                    "G7M",
+                    "F#m",
+                    "F#m",
+                    "G7M"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G7M",
+                    "Bb",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "D",
+                    "D",
+                    "D",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Bb",
+                    "Bb",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Gm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
             1,
             2,
-            2,
-            2,
-            2,
             3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
         ]
     },
     "letras": [
         [
-            "   A veces, sab",
-            "Ã©s, me enloquecÃ",
-            "©s/n   y otras v"
-        ],
-        [
-            "eces me daÃ±as./n"
-        ],
-        [
-            "   Damos vu",
-            "eltas,/n"
-        ],
-        [
-            "   no nos escuch",
-            "amos,/n   ignor"
-        ],
-        [
-            "Ã¡s (igno",
-            "rÃ¡s) como me ",
-            "callo./n"
-        ],
-        [
-            "   Lleno mi pa",
-            "nza de palab",
-            "ras/n"
-        ],
-        [
-            "   que no dirÃ",
-            "­a jamÃ¡s./n"
-        ],
-        [
-            "   No me apasi",
-            "ona (ah ah)/n"
-        ],
-        [
-            "   tu despreoc",
-            "upaciÃ³n por m",
-            "Ã­./n"
-        ],
-        [
-            "   Nunca compr",
-            "endo por quÃ©/n   "
-        ],
-        [
-            "me tratÃ¡s a",
-            "sÃ­./n   Esta vez "
-        ],
-        [
-            "te dirÃ©,",
-            "(ah ah) recap",
-            "acitarÃ©./n"
-        ],
-        [
-            "   Voy a busc",
-            "arte en mi silen",
-            "cio/n   y en tus "
-        ],
-        [
-            "ojos ciegos./n"
-        ],
-        [
-            "   Agua clara bajo el pue",
-            "nte/n   y en puente vos y "
-        ],
-        [
-            "yo/n   enturbiando nuestras "
-        ],
-        [
-            "aguas/n   complicÃ¡ndonos los"
-        ],
-        [
-            " dos/n   Quisiera llevarme "
-        ],
-        [
-            "algo/n   la "
-        ],
-        [
-            "Ãºltima vez/n   siempre es la "
-        ],
-        [
-            "Ãºltima vez./n"
-        ],
-        [
-            "   A veces, sab",
-            "Ã©s, me enloquecÃ",
-            "©s/n   y otras v"
-        ],
-        [
-            "eces me daÃ±as./n"
-        ],
-        [
-            "   Damos vu",
-            "eltas,/n"
-        ],
-        [
-            "   no nos escuch",
-            "amos,/n   ignor"
-        ],
-        [
-            "Ã¡s (igno",
-            "rÃ¡s) como me ",
-            "callo./n"
-        ],
-        [
-            "   (oh!)Lleno ",
-            "mi panza de ",
-            "palabras/n"
-        ],
-        [
-            "   que no dirÃ",
-            "­a jamÃ¡s./n"
-        ],
-        [
-            "   Agua clara bajo el pue",
-            "nte/n   y en puente vos y "
-        ],
-        [
-            "yo/n   enturbiando nuestras "
-        ],
-        [
-            "aguas/n   complicÃ¡ndonos los"
-        ],
-        [
-            " dos/n   Quisiera llevarme "
-        ],
-        [
-            "algo/n   la "
-        ],
-        [
-            "Ãºltima vez/n   siempre es la "
-        ],
-        [
-            "Ãºltima vez/n"
-        ],
-        [],
-        [
-            "   QuizÃ¡s sea por eso/n   que c"
-        ],
-        [
-            "ada vez que te veo y me vÃ©s/n   me ten"
-        ],
-        [
-            "Ã©s a tus pies./n   Cuando "
-        ],
-        [
-            "no me acuerdo vos siempre/n   te me aparec"
-        ],
-        [
-            "Ã©s, y despuÃ©s/n   te v"
-        ],
-        [
-            "as.../n   Como aquella t"
-        ],
-        [
-            "arde en tu habitaciÃ³n/n   cuando Ã­bamos a"
-        ],
-        [
-            " hacer el amor/n   te llamaron "
-        ],
-        [
-            "por telÃ©fono y te fuiste./n"
-        ],
-        [
-            "   Y ni siquiera mentiste./n   A veces te p"
-        ],
-        [
-            "asas (a veces te pasas)./n   Me dejaste s"
-        ],
-        [
-            "olo en tu propia casa/n   con tu mu"
-        ],
-        [
-            "cama y con un video./n"
-        ],
-        [
-            "   Esto no lo creo, no.../n"
-        ],
-        [
-            "   Agua cla",
-            "ra bajo el pue",
-            "nte/n   y en p"
-        ],
-        [
-            "uente vos y yo",
-            "/n   enturbi"
-        ],
-        [
-            "ando nuestras a",
-            "guas/n   complic"
-        ],
-        [
-            "Ã¡ndonos los d",
-            "os/n   Quisi"
-        ],
-        [
-            "era llevarme a",
-            "lgo/n   siempre "
-        ],
-        [
-            "pienso que hoy es/n   la "
-        ],
-        [
-            "Ãºltima vez/n"
-        ],
-        [
-            "   siempre es la Ã",
-            "ºltima vez",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "   Agua cla",
-            "ra bajo el pue",
-            "nte/n   y en p"
-        ],
-        [
-            "uente vos y yo",
-            " (y en el puente vos y yo)/n   enturbi"
-        ],
-        [
-            "ando nuestras a",
-            "guas/n   complic"
-        ],
-        [
-            "Ã¡ndonos los d",
-            "os/n   Quisi"
-        ],
-        [
-            "era llevarme a",
-            "lgo/n   siempre "
-        ],
-        [
-            "pienso que hoy es/n   la "
-        ],
-        [
-            "Ãºltima vez/n"
-        ],
-        [
-            "   siempre es la Ã",
-            "ºltima vez",
+            "Es",
+            "ta es una canción en español de rock argentin",
+            "o. L",
+            "lenó mi panza",
+            "de palab",
+            "ras que",
+            "no te diría",
+            "jamás.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "   Agua cla",
-            "ra bajo el pue",
-            "nte/n   y en p"
+            "No",
+            "me apas",
+            "iona tu",
+            "despreocupa",
+            "ción por mí.",
+            "/n"
         ],
         [
-            "uente vos y yo",
-            "/n   enturbi"
+            "Nunca compre",
+            "ndo por qué me t",
+            "ratas así. E",
+            "sta vez te",
+            "diré,",
+            "recapa",
+            "citaré./n"
         ],
         [
-            "ando nuestras a",
-            "guas/n   complic"
+            "Voy buscarte",
+            "en mi silenc",
+            "io en tus ojo",
+            "s ciego./n"
         ],
         [
-            "Ã¡ndonos los d",
-            "os/n   Quisi"
+            "Agua cl",
+            "ara bajo el pu",
+            "ente, en el p",
+            "uente vos",
+            "yo. En tu vi",
+            "enda nuestras arm",
+            "as complicán",
+            "donos los do",
+            "s. Quisier",
+            "llevarte a",
+            "lgo. Solo pi",
+            "enso que hoy es la",
+            "última vez/n"
         ],
         [
-            "era llevarme a",
-            "lgo/n   siempre "
+            "Siempre es la",
+            "última vez.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "veces",
+            "veces me enloquec",
+            "es. otras vece",
+            "s me daña",
+            "s. Damos",
+            "vueltas/n"
         ],
         [
-            "pienso que hoy es/n   la "
+            "No nos escu",
+            "chamos ignor",
+            "ar./n"
         ],
         [
-            "Ãºltima vez/n"
+            "Como no me",
+            "call",
+            "o. Llenó mi",
+            "panza de p",
+            "alabras",
+            "que no te",
+            "diría jamás./n"
         ],
         [
-            "   siempre es la Ã",
-            "ºltima vez",
-            ""
+            "Agu",
+            "clara bajo el",
+            "puente, en",
+            "el puente vos",
+            "yo. En",
+            "tu vienda nuestras a",
+            "rmas compl",
+            "icándonos los",
+            "dos. Q",
+            "uisiera llevarte",
+            "algo. S",
+            "olo pienso que hoy",
+            "es la última ve",
+            "z. Siempre",
+            "es la última vez",
+            ".",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Quizás",
+            "sea por eso",
+            "que cada vez que",
+            "te veo me d",
+            "esmeterás",
+            "tus pies. Cu",
+            "ando no me acuerdo",
+            "vos siempre te me",
+            "apareces.",
+            "después",
+            "te ves",
+            "como",
+            "aquella tarde en tu hab",
+            "itación. Cuando",
+            "íbamos hacer el",
+            "amor te llama",
+            "ron por teléf",
+            "ono te fui",
+            "ste. no siquie",
+            "ra mentiste. vec",
+            "es te pas",
+            "as. Me d",
+            "ejaste solo en tu pr",
+            "opia casa con tu",
+            "cama con",
+            "un video./n"
+        ],
+        [
+            "Esto no",
+            "lo creo,",
+            "no./n"
+        ],
+        [
+            "Agua clara ba",
+            "jo el puente",
+            ", en el puente vos",
+            "yo./n"
+        ],
+        [
+            "En tu vienda nue",
+            "stras armas co",
+            "mplicándon",
+            "os los dos./n"
+        ],
+        [
+            "Quisiera llev",
+            "arte algo. S",
+            "olo pienso que",
+            "hoy es la últim",
+            "vez. Si",
+            "empre es la últi",
+            "ma vez.",
+            "/n"
+        ],
+        [
+            "Aua clar",
+            "a bajo el puent",
+            "e, en el pu",
+            "ente",
+            "vos yo. En tu vienda nu",
+            "estras armas c",
+            "omplicándo",
+            "nos los dos./n"
+        ],
+        [
+            "Quisiera lle",
+            "varte algo./n"
+        ],
+        [
+            "Solo pienso que",
+            "hoy es la últi",
+            "ma vez. Sie",
+            "mpre es la últi",
+            "ma vez.",
+            "/n"
+        ],
+        [
+            "Aua clara b",
+            "ajo el puen",
+            "te, en el puente",
+            "vos yo./n"
+        ],
+        [
+            "En tu viend",
+            "nuestras armas",
+            "complicánd",
+            "onos los dos",
+            ". Quisiera ll",
+            "evarte algo",
+            ". Solo piens",
+            "que hoy es la últ",
+            "ima vez./n"
+        ],
+        [
+            "Siempre es la úl",
+            "tima vez.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de Amara .org"
         ]
     ],
     "etiquetas": [],
@@ -359,8 +561,9 @@
         {
             "tipo": "Youtube",
             "id": "Whtch6myGmY",
-            "delay": 0
+            "delay": 12000.0
         }
     ],
-    "procesando": 2
+    "procesando": 2,
+    "calidad": 1
 }
