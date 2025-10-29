@@ -1,1 +1,551 @@
-{"cancion": "un-beso-y-una-flor", "banda": "los-fabulosos-cadillacs", "escala": "G", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "Em", "G", "Em"]}, {"nombre": "parte2", "acordes": ["C7", "Bm", "Em"]}, {"nombre": "parte3", "acordes": ["C7", "Bm", "Cm", "D", "G"]}, {"nombre": "parte4", "acordes": ["D", "Em", "G", "C"]}, {"nombre": "parte5", "acordes": ["G", "C7", "Bm", "C", "G", "C", "D", "G"]}], "orden_partes": [0, 1, 1, 2, 3, 4, 3, 4, 0]}, "letras": [["Dejar\u00c3\u00a9 mi tierra por ti/ndejar\u00c3\u00a9 mis campos y me"], [" ir\u00c3\u00a9/n"], ["Cruzar\u00c3\u00a9 llorando el Jard\u00c3\u00adn/ny con tus recuerdos part"], ["ir\u00c3\u00a9/n"], ["De dia vivir\u00c3\u00a9/np"], ["ensando en tu sonr", "isa/n"], ["de noche las estrellas me ac", "ompa\u00c3\u00b1a", "r\u00c3\u00a1n./n"], ["Ser\u00c3\u00a1s como una luz/nque al"], ["umbre en mi camino/n"], ["me voy pero te juro/nque m"], ["a\u00c3\u00b1ana volver\u00c3\u00a9./n"], ["Al parti", "r un be", "so y una flor/nun te q"], ["uiero, una car", "icia y un adi\u00c3", "\u00b3s/nun "], ["ligero equi", "paje/n"], ["para tan largo ", "viaje/nlas penas pesan "], ["en el coraz", "\u00c3\u00b3n./n"], ["M\u00c3\u00a1s all", "a del ma", "r habr\u00c3\u00a1 un lugar/ndonde el "], ["sol cada ma\u00c3\u00b1ana", " brille ", "m\u00c3\u00a1s/n"], ["forjar\u00c3\u00a1n mi de", "stino/nlas pie"], ["dras del cam", "ino/nlo que nos es qu"], ["erido siempre que", "dara.", "/n"], ["Buscar\u00c3\u00a9 un hogar para ti/ndonde el cielo se une con el"], [" mar/n"], ["Con mis manos y con tu amor/nlograr\u00c3\u00a9 encontrar otra ilu"], ["si\u00c3\u00b3n"]], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "T1bsBNpdd50", "delay": 0}]}
+{
+    "cancion": "un-beso-y-una-flor",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "G",
+    "bpm": 172,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "G",
+                    "G",
+                    "G",
+                    "Cm",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "Em",
+                    "D",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "G",
+                    "C",
+                    "C7",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "Em",
+                    "Em",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Bm",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "G",
+                    "G",
+                    "G",
+                    "Cm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "G",
+                    "G",
+                    "C7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "Em",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "Em",
+                    "D",
+                    "G",
+                    "C",
+                    "C",
+                    "C7",
+                    "G",
+                    "G",
+                    "C",
+                    "C7",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "G",
+                    "C",
+                    "C",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Bm",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Dejaré mi t",
+            "ierra por ti,",
+            "dejaré mis",
+            "campos",
+            "me iré",
+            "lejos",
+            "de aquí",
+            "./n"
+        ],
+        [
+            "Cruzaré llo",
+            "rando el jard",
+            "ín entre tus r",
+            "ecuerdos p",
+            "arti",
+            "ré lejo",
+            "de aquí/n"
+        ],
+        [
+            "De",
+            "ti ti",
+            "diré p",
+            "ensando en tus",
+            "sonrisas",
+            "de noche las",
+            "estrellas me",
+            "acompa",
+            "ñarán.\nS",
+            "erás como",
+            "una luz",
+            "que alumbra en mi",
+            "camino,",
+            "me voy pero",
+            "te juro que",
+            "mañana vo",
+            "lveré.",
+            "",
+            "/n"
+        ],
+        [
+            "Al",
+            "partir",
+            "un beso",
+            "una flor,",
+            "un te quiero, una",
+            "caricia",
+            "un adiós",
+            "./n"
+        ],
+        [
+            "Es liger",
+            "equipaje",
+            "para tan l",
+            "argo viaje,",
+            "las penas p",
+            "esan en el",
+            "corazó",
+            "n./n"
+        ],
+        [
+            "Más",
+            "all",
+            "del mar hab",
+            "rá un lugar do",
+            "nde el sol cad",
+            "a mañana b",
+            "rille más",
+            "/n"
+        ],
+        [
+            "Forjarán",
+            "mi destin",
+            "las piedra",
+            "s del camino,",
+            "lo que no",
+            "seas querido s",
+            "iempre qu",
+            "eda atrá",
+            "s.",
+            "/n"
+        ],
+        [
+            "Busc",
+            "aré un hogar par",
+            "ti, dond",
+            "el cielo se une",
+            "con el m",
+            "ar,",
+            "lejos de a",
+            "quí./n"
+        ],
+        [
+            "Con",
+            "mis manos con",
+            "tu amor logr",
+            "aré encontrar o",
+            "tra ilus",
+            "ión,",
+            "lejos de a",
+            "quí./n"
+        ],
+        [
+            "De",
+            "ti ti di",
+            "ré pensando",
+            "en tus son",
+            "risas,",
+            "de noche las",
+            "estrellas me acomp",
+            "añarán./n"
+        ],
+        [
+            "Se",
+            "rás como una",
+            "luz que",
+            "alumbra en mi camin",
+            "o, me voy",
+            "pero te ju",
+            "ro que maña",
+            "na volve",
+            "ré.",
+            "",
+            "/n"
+        ],
+        [
+            "Al part",
+            "ir un b",
+            "eso una fl",
+            "or, un te qui",
+            "ero, una car",
+            "icia un ad",
+            "iós./n"
+        ],
+        [
+            "Es li",
+            "gero equi",
+            "paje par",
+            "a tan largo via",
+            "je, las",
+            "penas pesa",
+            "en el cor",
+            "azón.",
+            "/n"
+        ],
+        [
+            "Más a",
+            "llá del",
+            "mar habrá un lu",
+            "gar donde el",
+            "sol cada ma",
+            "ñana brill",
+            "más",
+            ".\nFor",
+            "jarán mi de",
+            "stino las",
+            "piedras del ca",
+            "mino, lo",
+            "que no seas qu",
+            "erido siempre",
+            "queda a",
+            "trás.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "al p",
+            "artir un",
+            "beso",
+            "una flor, un",
+            "te quiero, una",
+            "caricia",
+            "un ad",
+            "iós.\nEs",
+            "ligero e",
+            "quipaje p",
+            "ara tan la",
+            "rgo viaje,",
+            "las penas p",
+            "esan en el co",
+            "razón.",
+            "/n"
+        ],
+        [
+            "Más allá",
+            "del",
+            "mar habr",
+            "un lugar do",
+            "nde el sol c",
+            "ada mañana",
+            "brille m",
+            "ás.\nCu",
+            "ando forjen",
+            "mi destin",
+            "o las piedr",
+            "as del camino,",
+            "lo que no s",
+            "eas querido si",
+            "empre que",
+            "da atrá",
+            "s.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "T1bsBNpdd50",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

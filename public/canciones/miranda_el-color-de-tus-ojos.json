@@ -2,217 +2,338 @@
     "cancion": "el-color-de-tus-ojos",
     "banda": "miranda",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Gm",
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "Am",
+                    "A",
+                    "A",
+                    "E",
+                    "C#m",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "F",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
                     "C",
                     "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "Em7",
+                    "Em7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
                     "Dm",
                     "G",
-                    "C",
+                    "G",
+                    "F",
+                    "Em7",
+                    "G",
+                    "G",
+                    "Em7",
+                    "Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "A",
-                    "Dm",
-                    "G",
-                    "C",
                     "A",
-                    "Dm7",
-                    "G",
-                    "C",
-                    "Am7",
-                    "Dm7",
-                    "G",
-                    "C",
-                    "G",
-                    "C",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
                     "F",
-                    "Em7",
-                    "Em",
-                    "Am",
-                    "Dm",
-                    "G",
-                    "G7",
                     "F",
-                    "Em7",
-                    "G",
-                    "Em7",
-                    "Em",
-                    "Am",
-                    "Dm",
                     "F",
-                    "G",
                     "F",
-                    "Cmaj7",
-                    "C",
-                    "Am7",
-                    "Dm7",
-                    "Cmaj7",
-                    "C",
-                    "Am7",
-                    "Dm",
-                    "Fm",
-                    "Cmaj7",
-                    "C",
                     "F",
-                    "Em7",
-                    "Em",
-                    "Am",
-                    "Dm",
-                    "G",
-                    "G7",
                     "F",
-                    "Em7",
-                    "G",
-                    "Em7",
-                    "Em",
-                    "Am",
-                    "Dm",
                     "F",
-                    "G",
                     "F",
-                    "G",
-                    "Am",
-                    "Em",
-                    "C"
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
-        [],
         [
-            " ojos/nDespertÃ³ mi i"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "nterÃ©s/nY solo t"
+            "Esta es una canci",
+            "ón en español de",
+            "rock argentino./n"
         ],
         [
-            "engo ganas de/nVerte ot"
+            "Est",
+            "es",
+            "una",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "c",
+            "a",
+            "n",
+            "c",
+            "en españ",
+            "ol de rock argentino.\nEs",
+            "ta",
+            "es",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "una",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción en español de rock argentino.",
+            "",
+            "/n"
         ],
         [
-            "ra vez/nDime que no estÃ¡ p"
+            "Es",
+            "ta es",
+            "una can",
+            "ción en español de rock",
+            "a",
+            "r",
+            "g",
+            "e",
+            "n",
+            "t",
+            "i",
+            "n",
+            "o",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rohibido/nQuizÃ¡s me animo y te p"
+            "Esta",
+            "es una canción en",
+            "e",
+            "s",
+            "p",
+            "a",
+            "de rock argentino./n"
         ],
         [
-            "ido verte el sÃ¡bado a las",
-            " 10",
-            "/nEl color de tus"
+            "Qué más qu",
+            "isiera que fueras el",
+            "sueño que se v",
+            "uelve real",
+            "idad/n"
         ],
         [
-            " ojos/nSe robÃ³"
+            "Me gustas",
+            "tanto esa es",
+            "toda la ver",
+            "dad\nMe",
+            "siento emocio",
+            "nada, no",
+            "sé si te ha pasad/n"
         ],
         [
-            " mi atenciÃ³n/nTe vas "
+            "Que si pudier",
+            "a te viera de lun",
+            "es domin",
+            "go sin pa",
+            "rar\nE",
+            "sto que si",
+            "ento no se pu",
+            "ede compara",
+            "r",
+            "si ves que me sonro",
+            "jo, si te burla",
+            "no me en",
+            "ojo/n"
         ],
         [
-            "metiendo dentro de mi co",
-            "razÃ³n/nPerfecta en cualquier s"
+            "Yo s",
+            "olo sé",
+            "",
+            "/n"
         ],
         [
-            "entido/nCon pantalÃ³n o ve"
-        ],
-        [
-            "stido robas mi respir",
-            "aciÃ³n/n"
-        ],
-        [
-            "  Que mÃ¡s ",
-            "quisiera que fueras",
-            "/nEl sueÃ±o que se vuelve rea"
-        ],
-        [
-            "lidad/nMe gustas ta"
-        ],
-        [
-            "nto y esa es toda la",
-            " verdad/nMe siento emocion"
-        ],
-        [
-            "ado/nNo se si te ha pa"
-        ],
-        [
-            "sado/nQue si pudi"
-        ],
-        [
-            "era te viera/nDe lu"
-        ],
-        [
-            "nes a domingo si",
-            "n parar",
-            "/nEsto que "
-        ],
-        [
-            "siento no se ",
-            "puede compara",
-            "r/nY si v"
-        ],
-        [
-            "es que me sonrojo/nSi te b"
-        ],
-        [
-            "urlas no me e",
-            "nojo/nYo eso lo"
-        ],
-        [
-            " se/nQue de ti me enamor"
-        ],
-        [
-            "Ã©/n"
-        ],
-        [],
-        [
-            "iera que fueras/nEl sueÃ"
-        ],
-        [
-            "±o que se vuelve real",
-            "idad/nMe gustas ta"
-        ],
-        [
-            "nto y esa es toda la",
-            " verdad/nMe siento emocion"
-        ],
-        [
-            "ado/nNo se si te ha pa"
-        ],
-        [
-            "sado/nQue si pudi"
-        ],
-        [
-            "era te viera/nDe lu"
-        ],
-        [
-            "nes a domingo si",
-            "n parar",
-            "/nEsto que "
-        ],
-        [
-            "siento no se ",
-            "puede compara",
-            "r/nY si v"
-        ],
-        [
-            "es que me sonrojo/nSi te b"
-        ],
-        [
-            "urlas no me e",
-            "nojo/nYo eso lo"
-        ],
-        [
-            " se/nQue de "
-        ],
-        [
-            "ti m",
-            "e en",
-            "amorÃ©",
+            "Que",
+            "",
+            "ti",
+            "me",
+            "a",
+            "m",
+            "o",
+            "res",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -221,9 +342,9 @@
         {
             "tipo": "Youtube",
             "id": "X0bxcPnmUUM",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "calidad": -1,
+    "calidad": 1,
     "procesando": 0
 }
