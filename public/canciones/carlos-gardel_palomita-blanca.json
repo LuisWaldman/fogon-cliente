@@ -8,308 +8,358 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "E",
                     "G#7",
                     "C#m",
-                    "B",
-                    "F#7",
-                    "B",
+                    "B7 F#7",
+                    "Bm",
+                    "Em",
                     "Em",
                     "F#7",
+                    "E/G#",
+                    "G",
                     "Bm",
-                    "F#7",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "Bm",
                     "B7",
                     "Em",
-                    "D/F#",
+                    "G",
                     "G",
                     "C#/F",
-                    "F#7",
+                    "Em",
                     "Em",
                     "F#7",
-                    "Bm",
                     "F#7",
-                    "Bm",
+                    "F#7",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "Em",
                     "A7",
-                    "D",
-                    "G",
+                    "A7",
+                    "Em",
+                    "B7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C#/F Cdim",
                     "C#/F",
+                    "Bm",
                     "F#7",
-                    "B",
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "F#7",
-                    "B",
-                    "G#m",
-                    "Ddim",
-                    "F#/C#",
                     "F#7",
                     "E/G#",
                     "E",
-                    "E/F#",
+                    "E",
+                    "Em",
+                    "E/G#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "E/G#",
                     "F#7",
-                    "B",
                     "F#7",
-                    "B",
+                    "F#7",
+                    "C#/F",
                     "Cdim",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "G#",
                     "G#/F#",
-                    "C#m/E",
+                    "G#/F#",
                     "Fdim",
+                    "E/G#",
+                    "F#7",
+                    "F#7",
                     "B/F#",
-                    "F#7",
-                    "B",
                     "Em",
-                    "F#7",
+                    "Em",
                     "Bm",
                     "F#7",
-                    "Bm",
+                    "F#7",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "B7",
-                    "Em",
+                    "Bm",
                     "D/F#",
-                    "G",
+                    "C#m",
                     "C#/F",
+                    "C#/F",
+                    "C#m",
                     "F#7",
+                    "Bm",
+                    "C#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "Em",
-                    "F#7",
-                    "Bm",
-                    "F#7",
-                    "Bm",
-                    "B7",
                     "Em",
                     "A7",
+                    "D A7",
+                    "F#7",
                     "D",
-                    "G",
-                    "C#/F",
-                    "F#7",
-                    "B",
-                    "F#7",
-                    "B",
-                    "G#m",
-                    "Ddim",
-                    "F#/C#",
+                    "Em",
+                    "Em",
                     "F#7",
                     "E/G#",
-                    "E",
-                    "E/F#",
-                    "E/G#",
-                    "F#7",
                     "B",
-                    "F#7",
                     "B",
-                    "Cdim",
-                    "G#",
-                    "G#/F#",
-                    "C#m/E",
-                    "Fdim",
-                    "B/F#",
-                    "F#7",
+                    "B",
                     "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "E/G#",
+                    "E",
+                    "E",
+                    "E/F#",
+                    "E/G#",
+                    "Em",
+                    "F#7",
+                    "B",
+                    "F#7",
+                    "B",
+                    "C#/F",
+                    "Cdim",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
-        [],
         [
-            "goja me dio,",
-            "/n y a veces su re"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "cuerdo es un bien/nque pronto se me "
+            "S",
+            "ausencia hasta congoj",
+            "a me dio, vec",
+            "e un recuerdo en los pies",
+            "que pronto se me ahoga el o",
+            "lor, no dame co",
+            "nsuela /n Te hice siem",
+            "pr más lejos d",
+            "e ver esa siren",
+            "a mi paso va d",
+            "e narte",
+            "atrás el c",
+            "orazón",
+            "/n"
         ],
         [
-            "ahoga en dolor... Y nada me ",
-            "consuela/nde ir "
+            "E",
+            "rumbo que me aleja ta",
+            "cruel me roba su ca",
+            "rici de amor,",
+            "solo el pensamiento l",
+            "a vez te escucha envenes",
+            "ado /n La besa c",
+            "o ansias l",
+            "a siente mi lado,",
+            "voy así s",
+            "oñand m",
+            "ás lejos cada",
+            "v",
+            "e",
+            "z/n"
         ],
         [
-            "siempre más l",
-            "ejos de verme sin e",
-            "lla./nMi paso va ad"
+            "Blanca palomita q",
+            "u pasa volando rumbo la c",
+            "asit donde está mi amor,",
+            "palomita blanca para el f",
+            "i que ausente son como una cart",
+            "a de recordación./n"
         ],
         [
-            "elante y a",
-            "trás el cora",
-            "zón./nEl rumbo que me a"
+            "Si la besa la te a",
+            "dor sin decir que en oro l",
+            "de alguna idea, de lo m",
+            "u amargo que vivir sin e",
+            "lla que perder su amo",
+            "r te c",
+            "alo/n"
         ],
         [
-            "leja tan cruel,",
-            "/nme roba sus car"
+            "Siga l",
+            "a delante, pingo de mi trop",
+            "a que de un viento errante somos u",
+            "n barroque, en un mal de aus",
+            "enci se nos va la vida siemp",
+            "r la creencia dándole e",
+            "l adiós./n"
         ],
         [
-            "icias de amor,/ny sólo el pensam"
+            "Palomita blanc",
+            "a buena noche día, te he",
+            "venid en busca de escribir e",
+            "l cielo con sereno vu",
+            "elo la fea la vida n",
+            "unca, solo piens",
+            "a en amor./n"
         ],
         [
-            "iento la ve, la escucha embe",
-            "lesado,/nla "
+            "N",
+            "o sabe aquel que nun",
+            "c dejó su amad",
+            "la distancia al besar",
+            "que ha de alma imponiendo un",
+            "olido que viene d",
+            "e ladero. a",
+            "l rato la nomb",
+            "r midiendo el",
+            "sendero",
+            "mirando allá en la sombr",
+            "a los pago",
+            "s que dejó.",
+            "",
+            "/n"
         ],
         [
-            "besa con ansi",
-            "as, la sie",
-            "nte a mi lado",
-            "./nY voy, así s"
+            "La he visto entre m",
+            "i brazo dorar, l",
+            "a he visto al darme vuelta al p",
+            "arecer su tímido pañu",
+            "elit quitar l",
+            "uego irse achicando, s",
+            "u imagen le d",
+            "an en mi al",
+            "m agrandando s",
+            "u encanto esta",
+            "pen d",
+            "no tenerle amor.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oñando, m",
-            "ás lejos cad",
-            "a vez.../nBlanca pal"
+            "Blanca pal",
+            "omit que pasa voland",
+            "rumbo la casita donde est",
+            "mi amor, palomita bla",
+            "nc para el triste ausente, sobr",
+            "una carta de rec",
+            "ordación /n Si l",
+            "a besada te adoro sin d",
+            "eci que el oro te hace alguna id",
+            "ea de lo muy embargo",
+            "qu vivir insidencia es p",
+            "erder su ama",
+            "rt ca",
+            "ro/n"
         ],
         [
-            "omita que pasás volando/n rumbo a la cas"
-        ],
-        [
-            "ita donde está mi amor,/n sos como una carta "
-        ],
-        [
-            "de recordación.../n"
-        ],
-        [
-            "B  A  ves A A  que ado",
-            "ro, sin decir que ll",
-            "oro, dale alguna idea",
-            "/nde lo muy am"
-        ],
-        [
-            "argo que es vivir sin ella, que es perder s",
-            "u a",
-            "mante ",
-            "   cal",
-            "or.../nSigan adel"
-        ],
-        [
-            "ante, pingos de mi tropa,/n que de un viento errante som"
-        ],
-        [
-            "os nubarrón/ny en un mal de ausencia se nos va la vida"
-        ],
-        [
-            "/nsiempre a la querencia d"
-        ],
-        [
-            "ándole el adiós/n¡Palomit"
-        ],
-        [
-            "a blanca! vuela noc",
-            "he y día de mi nido en",
-            " busca/ny escribí en el"
-        ],
-        [
-            " cielo con sereno ",
-            "vuelo:/n \"No te olvida nunca, sól"
-        ],
-        [
-            "o piensa en vos\".",
-            "/nNo sabe aquel que nu"
-        ],
-        [
-            "nca dejó",
-            "/n su amada a la dis"
-        ],
-        [
-            "tancia, el pesar/nque al alma impone u"
-        ],
-        [
-            "n duro rigor, que viene de l",
-            "adero,/nque a ratos"
-        ],
-        [
-            " la nombra m",
-            "idiendo el sendero",
-            ",/nmirando allá en la "
-        ],
-        [
-            "sombra los p",
-            "agos que dej",
-            ".../nLa he visto entre mis b"
-        ],
-        [
-            "razos llorar",
-            "/n la he visto al darme v"
-        ],
-        [
-            "uelta al partir/nsu tibio pañuelo"
-        ],
-        [
-            " agitar, y luego irse achica",
-            "ndo/nsu i"
-        ],
-        [
-            "magen leja",
-            "na... y en mi",
-            " alma agran",
-            "dado/nsu encanto... y esta "
-        ],
-        [
-            "pena de no",
-            " tenerla m",
-            "s.../nBlanca pal"
-        ],
-        [
-            "omita que pasás volando/n rumbo a la casi"
-        ],
-        [
-            "ta donde está mi amor,/nsos como una carta de reco"
-        ],
-        [
-            "rdación.../n"
-        ],
-        [
-            "B  A  ves A A  que ado",
-            "ro,/nsin decir que l"
-        ],
-        [
-            "loro, dale alguna ide",
-            "a/nde lo muy am"
-        ],
-        [
-            "argo que es vivir sin ella,/n "
-        ],
-        [
-            "que es perd",
-            "er su amante   ",
-            " calor...",
-            "/nSigan adel"
-        ],
-        [
-            "ante, pingos de mi tropa,/n que de un viento errante somos "
-        ],
-        [
-            "nubarrón/ny en un mal de ausencia se nos va la vida"
-        ],
-        [
-            "/nsiempre a la querencia d"
-        ],
-        [
-            "ándole el adiós/n¡Palomit"
-        ],
-        [
-            "a blanca! vuela noc",
-            "he y día de mi nido en",
-            " busca/ny escribí en el"
-        ],
-        [
-            " cielo con sereno ",
-            "vuelo:/n \"No te olvida "
-        ],
-        [
-            "nunca, sólo piensa e",
-            "n vos\"."
+            "Sigan ad",
+            "elant pingos de mi trop",
+            "que ahí un viento errante, somos el l",
+            "uga ron, en un mal de ausen",
+            "ci se nova la vida haciendo l",
+            "a creencia dándol",
+            "el adiós. /n U",
+            "n palomita bl",
+            "anc vuela en achidía",
+            "de mi vida loca",
+            "escribiré el cielo con u",
+            "n sereno vuelo, l",
+            "a tía la vida nun",
+            "c solo p",
+            "iens e",
+            "n vos",
+            ".",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "VX8sVnbP0Sw",
-            "delay": 0
+            "delay": 9150.0
         }
     ],
     "etiquetas": [
         "Tango"
-    ]
+    ],
+    "calidad": 1
 }

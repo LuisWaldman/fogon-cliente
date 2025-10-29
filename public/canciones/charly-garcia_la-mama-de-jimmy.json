@@ -8,56 +8,61 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
-                    "Em",
-                    "C"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Em",
-                    "A",
-                    "C",
-                    "D",
                     "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2
         ]
     },
     "letras": [
         [
-            "La mamá de Jimmy es una inglesa  /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "pero no se",
-            " da cuenta  /n"
+            "Esta es una canción en español de rock argentino./n"
         ],
         [
-            "pero no se",
-            " da cuenta  /n"
-        ],
-        [
-            "que en el su",
-            "r están sus oveja",
-            "s "
+            "Esta es una canción en español de rock argentino."
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hEMSTsmiFGU",
-            "delay": 0
+            "delay": 16640.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

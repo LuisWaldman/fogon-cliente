@@ -2,56 +2,154 @@
     "cancion": "fantasmas",
     "banda": "miranda",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
                     "A",
+                    "A",
+                    "G",
                     "Bm",
+                    "G",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "Bm",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
+                    "G",
                     "D",
-                    "A",
+                    "D",
+                    "D",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "Bm",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A",
-                    "G",
+                    "D",
                     "D",
                     "A",
                     "Em",
-                    "G"
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "D",
-                    "A",
-                    "Em",
-                    "G"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
                     "Bm",
-                    "F#m",
-                    "G"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
@@ -60,134 +158,146 @@
             1,
             2,
             3,
-            0,
-            2,
-            3,
-            0,
-            3,
             4,
-            4,
-            3,
-            3,
-            3,
-            3,
-            0,
-            3
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Cuando la luz del sol, iluminÃ³ y ",
-            "te quedaste viendo/n"
-        ],
-        [
-            "Tu corazÃ³n jamÃ¡s, se revelÃ³ ",
-            "y le ganÃ³ ",
-            "el silencio/n"
-        ],
-        [
-            "Te juro que lo vi, estaba ahÃ­ venÃ",
-            "­a sucediendo/n"
-        ],
-        [
-            "Le daba de comer, sin fin ",
-            "a tu resen",
-            "timiento",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Fantasmas en la casa prometen s",
-            "alir pero no, no, no no,",
-            " no, no",
+            "Cuan",
+            "do la luz",
+            "del sol i",
+            "luminó te",
+            "quedaste viend",
+            "o, tu corazón j",
+            "amás se r",
+            "eveló. le g",
+            "anó el silenc",
+            "io, te juro que lo",
+            "vi, estaba a",
+            "hí, venía",
+            "sucediendo",
+            "le daba de co",
+            "mer, sin f",
+            "in, con tu re",
+            "sentimiento.",
             "/n"
         ],
         [
-            "No entiendo lo que pasa me dicen que si per",
-            "o no, no, no no,",
-            " no, no",
+            "Fantasm",
+            "as en la casa promet",
+            "en salir, pero no,",
+            "no, no, no, no,",
+            "no, no entiendo",
+            "lo que pasa, me dicen",
+            "que sí, pero no,",
+            "no, no, no,",
+            "no, no.\nNo",
+            "sé cómo salir",
+            ", adónde ir,",
+            "afuera está ll",
+            "oviendo,",
+            "si te quiero herir",
+            ", perdóname",
+            "si siento lo que",
+            "siento.",
             "/n"
         ],
         [
-            "No se como salir, a donde ir afuera e",
-            "sta lloviendo/n"
-        ],
-        [
-            "Y si te quiero herir, perdÃ³name ",
-            "si siento lo que sient",
-            "o",
+            "Fantasmas en la c",
+            "asa prometen salir,",
+            "pero no, no,",
+            "no, no, no, no,",
+            "no entiendo lo que pa",
+            "sa, me dicen que sí, p",
+            "ero no, no, no,",
+            "no, no, no.\nRe",
+            "cuerdos en mi mente,",
+            "no me puedo escapar,",
+            "para ver si de veras no",
+            "se deja morar",
+            "mensajes inconscientes",
+            "me quieren hundir, pero",
+            "no, no,",
+            "no, no, no.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Fantasmas en la casa prometen s",
-            "alir pero no, no, no no, no",
-            ", no",
+            "No",
+            "puedo encontrar",
+            "explica",
+            "ción,",
+            "",
+            "no hay otro culpable,",
+            "solo yo.",
             "/n"
         ],
         [
-            "No entiendo lo que pasa me dicen que si pe",
-            "ro no, no, no no,",
-            " no, no",
-            "/n"
+            "Fantasmas en la",
+            "casa prometen salir",
+            ", pero no, no,",
+            "no, no, no,",
+            "no, no entiendo lo que p",
+            "asa, me dicen que sí,",
+            "pero no, no,",
+            "no, no, no, no.\nFa",
+            "ntasmas en la ca",
+            "sa prometen salir, pe",
+            "ro no, no, no,",
+            "no, no, no, no, no",
+            "entiendo lo que pasa",
+            "me dicen que sí, per",
+            "o no, no, no,",
+            "no, no, no./n"
         ],
         [
-            "Recuerdos en mi mente no me puedo escapar",
-            "/n"
-        ],
-        [
-            "Palabras indelebles no se dejan bor",
-            "rar/n"
-        ],
-        [
-            "Mensajes inconscientes me",
-            " quieren hundir pe",
-            "ro no, no no",
-            ", no, no/n"
-        ],
-        [],
-        [
-            "No puedo encontrar l",
-            "a explicaciÃ³n ..",
-            ".  No hay ot",
-            "ro culpable sol",
-            "o yo",
-            "/n"
-        ],
-        [
-            "Fantasmas en la casa prometen sal",
-            "ir pero no, no, no no, ",
-            "no, no",
-            "/nNo en"
-        ],
-        [
-            "tiendo lo que pasa m",
-            "e dicen qu",
-            "e si pero no",
-            ", no, no no, no, no/nFant"
-        ],
-        [
-            "asmas en la casa prometen salir ",
-            "pero no, no, no no,",
-            " no, no",
-            "/n"
-        ],
-        [
-            "No entiendo lo que pasa me dicen",
-            " que si pero no, no",
-            ", no no, no, ",
-            "no/nRecuerdos en mi mente no me puedo escapar"
-        ],
-        [],
-        [],
-        []
+            "Recuerdos en mi mente, no",
+            "me puedo escapar,",
+            "para ver si de veras no",
+            "se deja morar,",
+            "mensajes inconscientes me",
+            "quieren hundir, pero",
+            "no, no,",
+            "no, no, no.",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "etiquetas": [],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0YkKqfod4jo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "calidad": -1,
+    "calidad": 1,
     "procesando": 0
 }

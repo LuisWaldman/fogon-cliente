@@ -1,1 +1,402 @@
-{"cancion": "miro-la-vida-pasar", "banda": "miranda", "escala": "A", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "D", "Bm"]}, {"nombre": "parte2", "acordes": ["D", "E", "A"]}, {"nombre": "parte3", "acordes": ["D", "Dm", "A", "E", "A", "A"]}, {"nombre": "parte4", "acordes": ["D", "Bm", "Dm", "E", "A"]}, {"nombre": "parte5", "acordes": ["D", "Bm", "Dm", "E", "D", "E", "A", "F#m"]}], "orden_partes": [0, 1, 2, 3, 3, 2, 3, 4, 1, 3, 3]}, "letras": [["Mi indiferencia natural/nCurtida en mil batallas "], ["contra la pereza/n"], ["Borra del mapa todo amor/nPorque en mi vida todo a"], ["caba como empi", "eza/n"], ["Y en plan travesti radical/nLe doy la espalda a cualquier "], ["muestra de tristeza/n"], ["Melancol\u00c3\u00ada o decepci", "\u00c3\u00b3n, felicidad o tentaci\u00c3", "\u00b3n/nTodo podr\u00c3\u00ada ir a "], ["peor/n"], ["Mientras tanto miro la vida pa", "sar/nY no "], ["sabes cuanto cuesta aceptar que no v", "ol....ver\u00c3", "\u00a1s/n"], ["Por el momento miro la vida pas", "ar/nSin ve"], ["nir a cuento alguien te vuelve a nomb", "rar", "/n"], ["Pasado el tiempo sigo igual/nA veces pienso que he per"], ["dido la cabeza/n"], ["Y algunos dias sin raz", "\u00c3\u00b3n/nYa ni me late el cora"], ["z\u00c3\u00b3n en esta c\u00c3\u00a1rcel de re", "ncor/n"], ["Mientras tanto miro la vida pa", "sar/nY no "], ["sabes cuanto cuesta aceptar que no v", "ol....ver\u00c3", "\u00a1s/n"], ["Por el momento miro la vida pas", "ar/nSin ve"], ["nir a cuento alguien te vuelve a nomb", "rar", "/n"], ["Siempre he sido fu", "erte, aunque a v", "eces he duda", "do/n"], ["Si la suerte no se ha re\u00c3\u00addo de ", "m\u00c3\u00ad/n"], ["Mientras tanto miro la vida pa", "sar/nY no "], ["sabes cuanto cuesta aceptar que no v", "ol....ver\u00c3", "\u00a1s/n"], ["Por el momento miro la vida pas", "ar/nSin ve"], ["nir a cuento alguien te vuelve a nomb", "rar/n"], ["Alguien te vuelve a n", "ombrar"]], "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "RP8TtSZEJc8", "delay": 0}]}
+{
+    "cancion": "miro-la-vida-pasar",
+    "banda": "miranda",
+    "escala": "A",
+    "bpm": 129,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Dm",
+                    "Dm",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "D",
+                    "D",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ]
+    },
+    "letras": [
+        [
+            "Mi",
+            "indiferencia n",
+            "atural",
+            "/n"
+        ],
+        [
+            "Curti",
+            "da en mil bat",
+            "allas contra la",
+            "pereza/n"
+        ],
+        [
+            "Borrad",
+            "a del mapa to",
+            "do amor",
+            "/n"
+        ],
+        [
+            "Porque en",
+            "mi vida to",
+            "do acaba co",
+            "mo empieza",
+            "en pl",
+            "an travesti rad",
+            "ical",
+            "/n"
+        ],
+        [
+            "Le doy",
+            "la espalda cua",
+            "lquier muestra de",
+            "tristeza/n"
+        ],
+        [
+            "M",
+            "elancolía dec",
+            "epción\nFe",
+            "licidad tenta",
+            "ción\nTod",
+            "o podría ir",
+            "peor",
+            "/n"
+        ],
+        [
+            "Mientras tan",
+            "to pido la vi",
+            "da pasar",
+            "",
+            "hoy no sabes cuant",
+            "o cuesta acepta",
+            "que no vo",
+            "lverás/n"
+        ],
+        [
+            "Por el momen",
+            "to miro la vid",
+            "a pasar/n"
+        ],
+        [
+            "Sin",
+            "venir cuent",
+            "o, alguien te vuelve",
+            "nombrar",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pasado el",
+            "tiempo sigo",
+            "igual",
+            "",
+            "veces p",
+            "ienso que he",
+            "perdido la c",
+            "abeza",
+            "alguno",
+            "s días sin ra",
+            "zón\nYa ni",
+            "me late el cora",
+            "zón\nHe perdido la cabeza\nEn est",
+            "a cartel de r",
+            "enco",
+            "/n"
+        ],
+        [
+            "Mientras tanto p",
+            "ido la vida p",
+            "asar",
+            "hoy no",
+            "sabes cuanto cu",
+            "esta aceptar que no",
+            "volver",
+            "ás/n"
+        ],
+        [
+            "Por el momento m",
+            "iro la vida p",
+            "asar/n"
+        ],
+        [
+            "Sin ven",
+            "ir cuento,",
+            "alguien te vuelve no",
+            "mbrar/n"
+        ],
+        [
+            "Si",
+            "empre he sido fuerte/n"
+        ],
+        [
+            "Aunque",
+            "veces he dudado/n"
+        ],
+        [
+            "Sin",
+            "la suerte no",
+            "se ha reído de",
+            "mi/n"
+        ],
+        [
+            "Mient",
+            "ras tanto mi",
+            "ro la vida pasar",
+            "",
+            "hoy no sa",
+            "bes cuanto cues",
+            "ta aceptar que no",
+            "volverás/n"
+        ],
+        [
+            "Por",
+            "el momento mir",
+            "o la vida pasar",
+            "/n"
+        ],
+        [
+            "Sin venir",
+            "cuento, alg",
+            "uien te vuelve no",
+            "mbrar\nAlguie",
+            "n te vuelve nombr",
+            "ar\nAlguien te vuelve nombr",
+            "ar",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "RP8TtSZEJc8",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

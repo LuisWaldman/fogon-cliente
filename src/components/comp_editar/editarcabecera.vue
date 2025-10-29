@@ -8,10 +8,28 @@ import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 import { Tiempo } from '../../modelo/tiempo'
 const tiempo = new Tiempo()
 import { ref } from 'vue'
-import type { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { CancionManager } from '../../modelo/cancion/CancionManager'
+const helper = HelperDisplayAcordesLatino.getInstance()
+function arreglartexto(texto: string): string {
+  if (texto == null || texto === undefined) return ''
+  let processed = texto.replace(/-/g, ' ')
+  if (processed.length === 0) return processed
 
-defineProps<{
+  // First letter lowercase, rest uppercase
+  processed =
+    processed.charAt(0).toUpperCase() + processed.slice(1).toLocaleLowerCase()
+
+  // Truncate if longer than 50 characters
+  if (processed.length > 50) {
+    processed = processed.substring(0, 47) + '...'
+  }
+
+  return processed
+}
+const props = defineProps<{
   cancion: Cancion
   origen: OrigenCancion
 }>()
@@ -33,36 +51,101 @@ function clickCerrar(modificado: boolean) {
     appStore.cancionModificada = true
   }
 }
+helper.latino = appStore.perfil.CifradoLatino
+
+function guardarCambios(origenDestino: string) {
+  props.origen.origenUrl = origenDestino
+  CancionManager.getInstance()
+    .Save(
+      new OrigenCancion(
+        origenDestino,
+        props.origen.fileName,
+        props.origen.usuario,
+      ),
+      props.cancion,
+    )
+    .catch((error) => {
+      console.error('Error al guardar los cambios:', error)
+    })
+}
 </script>
 
 <template>
   <div class="navbarFogon">
-    <div>
-      <emoticonOrigen :origen="origen.origenUrl" />
-      <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
-      <label>{{ cancion.cancion }} - {{ cancion.banda }}</label>
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="divctrlEdit">
+        <div style="display: flex">
+          <emoticonOrigen :origen="origen.origenUrl" />
+          <label>{{ arreglartexto(cancion.banda) }}</label>
+          <label v-if="cancion.calidad == -1">♻️</label>
+          <label v-else-if="cancion.calidad == 0">⭐⚫⚫⚫⚫</label>
+          <label v-else-if="cancion.calidad == 1">⭐⭐⚫⚫⚫</label>
+          <label v-else-if="cancion.calidad == 2">⭐⭐⭐⚫⚫</label>
+
+          <label @click="clickCambiar('archivo')" @cerrar="clickCerrar"
+            >🔄</label
+          >
+        </div>
+        <div class="tituloCancion">
+          {{ arreglartexto(cancion.cancion) }}
+        </div>
+      </div>
+      <div class="divctrlEdit">
+        <label
+          >BPM: {{ cancion.bpm }}
+          <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar"
+            >🔄</label
+          ></label
+        >
+        <div>
+          <label class="tituloCancion">{{
+            tiempo.formatSegundos(cancion.duracionCancion)
+          }}</label>
+        </div>
+      </div>
+      <div class="divctrlEdit">
+        <label>Escala</label
+        ><label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
+        <div>
+          <label class="tituloCancion" v-if="cancion.escala">{{
+            helper.GetAcorde(cancion.escala)
+          }}</label>
+        </div>
+      </div>
+      <div class="divctrlEdit">
+        <label>📺 Video</label><label @click="clickCambiar('medias')">🔄</label>
+        <div>
+          <label class="tituloCancion" v-if="cancion.medias.length > 0"
+            >📺</label
+          >
+          <label class="tituloCancion" v-else>No</label>
+        </div>
+      </div>
+      <div class="divctrlEdit">
+        <label>Partituras</label
+        ><label @click="clickCambiar('pentagramas')">🔄</label>
+        <div>
+          <label class="tituloCancion">
+            🎼 {{ cancion.pentagramas.length }}
+          </label>
+        </div>
+      </div>
+
+      <div class="divctrlEdit">
+        <button @click="guardarCambios('local')">🧠 Guardar</button>
+        <button @click="guardarCambios('server')">o en 🗄️</button>
+      </div>
     </div>
-    s Escala: - {{ cancion.escala }}
-    <select v-model="cancion.calidad">
-      <option value="-1">Reprocesar</option>
-      <option value="0">De Internet</option>
-      <option value="1">Texto Sincronizado</option>
-      <option value="2">Texto Corregido</option>
-      <option value="3">Ok</option>
-    </select>
-    <label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
 
-    <label>Duracion: {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
-    ><label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label>
-    <label
-      >BPM: {{ cancion.bpm }} Compas: {{ cancion.compasCantidad }}/
-      {{ cancion.compasUnidad }}</label
-    >&nbsp; <label>Medios: {{ cancion.medias.length }}</label
-    ><label @click="clickCambiar('medias')">🔄</label>
-
-    <label>Pentagramas: {{ cancion.pentagramas.length }}</label
-    ><label @click="clickCambiar('pentagramas')">🔄</label>
-    <div>
+    <div
+      class="divctrlEdit"
+      v-if="
+        viendo == 'medias' ||
+        viendo == 'archivo' ||
+        viendo == 'escala' ||
+        viendo == 'tiempo'
+      "
+    >
       <editarmedias
         v-if="viendo == 'medias'"
         :cancion="cancion"
@@ -353,5 +436,35 @@ function clickCerrar(modificado: boolean) {
 }
 .conectado {
   border-color: #f5da09;
+}
+.tituloCancion {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.divctrlEdit {
+  padding: 12px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid;
+}
+
+.divctrlEdit button {
+  height: 80%;
+  font-size: large;
+}
+
+@media (max-width: 768px) {
+  .divctrlEdit {
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    font-size: small;
+    font-size: small;
+  }
+  .tituloCancion {
+    font-size: medium;
+  }
 }
 </style>

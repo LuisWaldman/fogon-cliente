@@ -1,1 +1,605 @@
-{"cancion": "venganza", "banda": "los-fabulosos-cadillacs", "escala": "C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Bm", "G", "Am", "Bm"]}, {"nombre": "parte2", "acordes": ["C", "Bm", "G", "Am", "G"]}, {"nombre": "parte3", "acordes": ["C", "D", "D#", "Bm", "Am", "C", "Bm", "G"]}, {"nombre": "parte4", "acordes": ["C", "D", "D#", "Bm", "Am", "D", "Bm", "G"]}], "orden_partes": [0, 1, 1, 1, 2, 3, 0, 1, 1, 2, 3]}, "letras": [["No basta s", "olo con una vi", "da/nPara o"], ["diarte como yo te pude am", "ar/nLos "], ["\u00c3\u00a1ngeles a", "nuncian la veng", "anza a ha", " a ha ", "aa/nA"], ["fuera el viento a\u00c3", "\u00balla y yo tan s", "olo         a ha", "         a ha ", "aa/nY "], ["brotan en mi des", "eos de perde", "rte/nEn el "], ["mar        en el m", "ar/nVen"], ["ganza", "", "/nLa triste melo"], ["d\u00c3\u00ada/nAse"], ["sina de un coraz", "\u00c3\u00b3n/nPerdido en alg\u00c3\u00ban"], [" bar  uoh u", "ouh/nVen"], ["ganza", "", "/nTe fuiste como el "], ["sol en un d\u00c3\u00ada ", "gris/nY e la "], ["soledad/nNos vamos a encon"], ["trar", "/n"], ["No basta s", "olo con una vi", "da/nPara o"], ["diarte como yo te pude    am", "ar/nLos "], ["\u00c3\u00a1ngeles a", "nuncian la veng", "anza        a ha", "        a ha ", "aa/nY "], ["brotan en mi des", "eos de perde", "rte/nEn el "], ["mar        en el m", "ar/nVen"], ["ganza", "", "/nLa triste melo"], ["d\u00c3\u00ada/nAse"], ["sina de un coraz", "\u00c3\u00b3n/nPerdido en alg\u00c3\u00ban"], [" bar  uoh u", "ouh/nVen"], ["ganza", "", "/nTe fuiste como el "], ["sol en un d\u00c3\u00ada ", "gris/nY e la "], ["soledad/nNos vamos a encon"], ["trar", ""]], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "uPq43SgqOe8", "delay": 0}]}
+{
+    "cancion": "venganza",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "C",
+    "bpm": 172,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "C",
+                    "Bm",
+                    "Am",
+                    "D#",
+                    "Am",
+                    "Cm",
+                    "Bm",
+                    "C",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm",
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D#",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No b",
+            "asta so",
+            "lo con una",
+            "vida\nP",
+            "ara",
+            "odiarte c",
+            "omo yo te p",
+            "ude am",
+            "ar\nLos",
+            "ángele",
+            "anuncian",
+            "la venga",
+            "nza",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "fuera",
+            "el viento aúll",
+            "yo tan s",
+            "olo",
+            "",
+            "",
+            "",
+            "",
+            "brot",
+            "an en mis dese",
+            "os de perde",
+            "rte\nEn",
+            "el m",
+            "ar,",
+            "en el",
+            "mar",
+            "/n"
+        ],
+        [
+            "Vengan",
+            "za,",
+            "la tris",
+            "te mel",
+            "odía/n"
+        ],
+        [
+            "Ases",
+            "ina de",
+            "un cora",
+            "zón/n"
+        ],
+        [
+            "P",
+            "erdido en",
+            "la b",
+            "om",
+            "ba",
+            "",
+            "/n"
+        ],
+        [
+            "Venganza,",
+            "",
+            "te fuis",
+            "te como el sol/n"
+        ],
+        [
+            "En",
+            "un día gris",
+            "",
+            "en la s",
+            "ole",
+            "dad nos",
+            "vamos",
+            "encontra",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No ba",
+            "sta solo",
+            "con una",
+            "vida\nP",
+            "ara od",
+            "iarte como",
+            "yo te pude a",
+            "mar/n"
+        ],
+        [
+            "Los á",
+            "ngeles an",
+            "uncian la v",
+            "enga",
+            "nza",
+            "",
+            "",
+            "",
+            "",
+            "brotan en mis",
+            "deseos de p",
+            "erderte/n"
+        ],
+        [
+            "En",
+            "el mar",
+            "en",
+            "el mar",
+            "/n"
+        ],
+        [
+            "Veng",
+            "anza,",
+            "",
+            "la triste m",
+            "elo",
+            "día\nAs",
+            "esina",
+            "de un c",
+            "orazón",
+            "/n"
+        ],
+        [
+            "Perdi",
+            "do en la b",
+            "om",
+            "ba",
+            "",
+            "/n"
+        ],
+        [
+            "Venga",
+            "nza,",
+            "te f",
+            "uiste como el",
+            "sol/n"
+        ],
+        [
+            "En un día g",
+            "ris",
+            "en la s",
+            "oleda",
+            "nos",
+            "vam",
+            "os enco",
+            "ntrar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ven",
+            "ganza, te fuiste como el sol",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Venga",
+            "nza, te",
+            "fuiste como el sol",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ven",
+            "ganza\nVen",
+            "ganza"
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "uPq43SgqOe8",
+            "delay": 9000.0
+        }
+    ],
+    "calidad": 1
+}

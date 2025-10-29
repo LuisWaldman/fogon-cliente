@@ -1,1 +1,375 @@
-{"cancion": "quiero", "banda": "miranda", "escala": "A", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "F#m", "A", "F#m", "A", "F#m", "A", "E"]}, {"nombre": "parte2", "acordes": ["D", "A", "D", "A", "D", "A", "E", "A"]}, {"nombre": "parte3", "acordes": ["A", "A", "A", "A"]}], "orden_partes": [0, 1, 0, 1, 1, 2, 1, 1]}, "letras": [["Dame un poco mas/n"], ["Contra la pared, contra de tu", " frio/n"], ["Estas tan lejos aunque te ten", "ga aqui/n"], ["No ves que mi cora", "zon, se ha ac", "elerado desde que he entrado a tu habitacion?/n"], ["Y aunque nadie lo ha d", "icho amor/n"], ["Es claro lo que p", "asa/n"], ["Vos me llamas a ", "cualquier hora/n"], ["Y yo me ba\u00c3\u00b1o y v", "oy directo a tu casa/n"], ["No quieres hablar/n"], ["Contra la pared, contra de tu", " frio/n"], ["Estas tan lejos aunque te ten", "ga aqui/n"], ["No ves que mi cora", "zon, se ha ac", "elerado desde que he entrado a tu habitacion?/n"], ["Y aunque nadie lo ha d", "icho amor/n"], ["Es claro lo que p", "asa/n"], ["Vos me llamas a ", "cualquier hora/n"], ["Y yo me ba\u00c3\u00b1o y v", "oy directo a tu casa/n"], ["Y no me importa ", "aparentar/n"], ["No escondo lo qu", "e siento/n"], ["Quiero que vuelva", "s a pensar/n"], ["Lo que pensabas de m", "i en un momento/n"], ["Quisiera que desnudes ante mi, tu costado espiritual/n"], ["Quisiera que te entregas corazon de una manera natural/n"], ["Tengo la idea de hacerte creer que me vas a sentir en vos/n"], ["Porque bailando te convencere, vayamos a dormir los dos!/n"], ["Y aunque nadie lo ha d", "icho amor/n"], ["Es claro lo que p", "asa/n"], ["Vos me llamas a ", "cualquier hora/n"], ["Y yo me ba\u00c3\u00b1o y v", "oy directo a tu casa/n"], ["Y no me importa ", "aparentar/n"], ["No escondo lo qu", "e siento/n"], ["Quiero que vuelva", "s a pensar/n"], ["Lo que pensabas de m", "i en un momento/n"], [], [], [], []], "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "6C_gImbeNik", "delay": 0}]}
+{
+    "cancion": "quiero",
+    "banda": "miranda",
+    "escala": "A",
+    "bpm": 129,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "A",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "D",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "letras": [
+        [
+            "Dame un",
+            "poco más,",
+            "si vos",
+            "me llamas/n"
+        ],
+        [
+            "No te hag",
+            "as rogar, si pido un poco má",
+            "s, es solamente un poco",
+            "más/n"
+        ],
+        [
+            "Si me ves",
+            "aquí,",
+            "sabes que es",
+            "por ti\nD",
+            "ebería apr",
+            "ender de mis errores, no",
+            "es esta mi primera vez/n"
+        ],
+        [
+            "Co",
+            "ntra la pared,",
+            "contra del tufrío\nE",
+            "stás tan lejos aunque te",
+            "tenga aquí, no",
+            "ves que mi corazón/n"
+        ],
+        [
+            "Se",
+            "ha acelerado desde que",
+            "he entrado tu habitación",
+            "aunque na",
+            "die lo ha dicho amor,",
+            "es clar",
+            "lo que pasa/n"
+        ],
+        [
+            "Vos me l",
+            "lamas cualquier hora",
+            "yo me van voy direc",
+            "to tu casa",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No",
+            "quieres habla",
+            "r, tal",
+            "vez te co",
+            "nvenga/n"
+        ],
+        [
+            "En este momento pie",
+            "nso cosas que prefer",
+            "iría callar/n"
+        ],
+        [
+            "Contra la",
+            "pared, contra del",
+            "tufrío\nEstás",
+            "tan lejos aunque te tenga a",
+            "quí, no ves que mi",
+            "corazón/n"
+        ],
+        [
+            "Se ha acel",
+            "erado desde que he entrado tu ha",
+            "bitación au",
+            "nque nadie lo ha d",
+            "icho amor, es",
+            "claro lo que",
+            "pasa\nVos",
+            "me llamas cu",
+            "alquier hora yo me van",
+            "voy directo tu c",
+            "asa",
+            "no me importa ap",
+            "artar, no e",
+            "scondo lo que si",
+            "ento\nQuier",
+            "que vuelvas p",
+            "ensar lo que pensab",
+            "as de mí en un momento/n"
+        ],
+        [
+            "Quisiera que des",
+            "nudes ante mí tu costado es",
+            "piritual\nQuisiera que te en",
+            "tregues corazón de una manera n",
+            "atural\nTengo la idea de",
+            "hacerte creer que me vas sentir",
+            "en vos\nPorque bailando te",
+            "convenceré para irnos dormir los",
+            "dos aunque",
+            "nadie lo ha dicho am",
+            "or, es cl",
+            "aro lo que pas/n"
+        ],
+        [
+            "Vos me",
+            "llamas cualquier hor",
+            "a yo me van voy di",
+            "recto tu casa",
+            "no",
+            "me importa aparta",
+            "r, no escon",
+            "do lo que siento/n"
+        ],
+        [
+            "Quiero que",
+            "vuelvas pensar",
+            "lo que pensabas de mí",
+            "en un momento",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ooh,",
+            "",
+            "ooh, o",
+            "oh, ooh, ooh,",
+            "ooh, ooh, ooh, ooh, ooh, ooh,",
+            "ooh,",
+            "ooh, ooh, ooh, ooh, ooh, ooh, ooh,",
+            "ooh",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de\nAmara .org"
+        ]
+    ],
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "6C_gImbeNik",
+            "delay": 10000.0
+        }
+    ],
+    "calidad": 1
+}

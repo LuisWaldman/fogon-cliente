@@ -4,8 +4,6 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
 import { HelperJSON } from '../../modelo/cancion/HelperJSON'
-import { CancionManager } from '../../modelo/cancion/CancionManager'
-import subircancion from './subircancion.vue'
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
   cancion: Cancion
@@ -17,20 +15,39 @@ const nombrebanda = ref('')
 const nombrearchivo = ref('')
 const origenOriginal = ref('')
 const origenDestino = ref('')
+const calidad = ref(props.cancion.calidad)
 nombrecancion.value = props.cancion.cancion
 nombrebanda.value = props.cancion.banda
 nombrearchivo.value = props.cancion.archivo || 'archivo_noload'
 origenOriginal.value = props.origen.origenUrl
 origenDestino.value = props.origen.origenUrl
+
 const appStore = useAppStore()
 function clickCancelarCambiarDatos() {
+  props.cancion.cancion = nombrecancion.value
+  props.cancion.banda = nombrebanda.value
+  props.cancion.archivo = nombrearchivo.value
+  props.cancion.calidad = calidad.value
   emit('cerrar', false)
 }
+function clickOkCambiarDatos() {
+  emit('cerrar', false)
+}
+
+function hacerNombreArchivo() {
+  props.cancion.archivo =
+    props.cancion.banda.replace(/ /g, '_') +
+    '-' +
+    props.cancion.cancion.replace(/ /g, '_')
+}
+
+/*
 function clickNuevo() {
   appStore.editandocancion = Cancion.GetDefault('Nueva')
   appStore.cancion = appStore.editandocancion
   emit('cerrar', true)
 }
+*/
 function DescargarJSON() {
   const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
   const blob = new Blob([cancionJSON], { type: 'application/json' })
@@ -43,83 +60,53 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
-function guardarCambios() {
-  props.cancion.cancion = nombrecancion.value
-  props.cancion.banda = nombrebanda.value
-  props.cancion.archivo = nombrearchivo.value
-  CancionManager.getInstance()
-    .Save(
-      new OrigenCancion(origenDestino.value, nombrearchivo.value, ''),
-      props.cancion,
-    )
-    .then(() => {
-      emit('cerrar', true)
-    })
-    .catch((error) => {
-      console.error('Error al guardar los cambios:', error)
-    })
-}
 </script>
 <template>
-  <div>
-    <span class="lblCabecera" @click="clickCancelarCambiarDatos"
-      >[cancelar]</span
-    >
-    <span
-      v-if="['server', 'local', 'fogon'].includes(origenDestino)"
-      @click="guardarCambios"
-    >
-      [guardar]
-    </span>
-
-    <span class="lblCabecera" @click="clickNuevo">[nuevo]</span>
-    <subircancion></subircancion>
-    <span class="lblCabecera" @click="DescargarJSON">[descargar]</span>
-  </div>
   <div style="width: 100%">
-    <div>
-      <label v-if="origen.origenUrl === 'sitio'">🌐</label>
+    Cancion:
+    <input
+      type="text"
+      v-model="props.cancion.cancion"
+      :style="{ width: props.cancion.cancion.length + 'ch' }"
+      @change="hacerNombreArchivo"
+      class="input-editable"
+    />
+    - Banda:
+    <input
+      type="text"
+      class="input-editable"
+      v-model="props.cancion.banda"
+      @change="hacerNombreArchivo"
+      :style="{ width: props.cancion.banda.length + 1 + 'ch' }"
+    />
 
-      Cancion:
-      <input
-        type="text"
-        v-model="nombrecancion"
-        :style="{ width: nombrecancion.length + 'ch' }"
-        class="input-editable"
-      />
-      - Banda:
-      <input
-        type="text"
-        v-model="nombrebanda"
-        :style="{ width: nombrebanda.length + 1 + 'ch' }"
-      />
-    </div>
-  </div>
-  <div>
     Archivo:
     <input
       type="text"
-      v-model="nombrearchivo"
-      :style="{ width: nombrearchivo.length + 'ch' }"
+      v-model="props.cancion.archivo"
+      :style="{ width: props.cancion.archivo.length + 'ch' }"
     />
-    Origen:
-    <select v-model="origenDestino">
-      <option value="sitio">🌐Sitio</option>
-      <option value="local">🧠LocalStorage</option>
-      <option
-        value="fogon"
-        v-if="appStore.estadosApp.estadoSesion === 'conectado'"
-      >
-        🔥Fogón
-      </option>
-      <option
-        value="server"
-        v-if="appStore.estadosApp.estadoLogin === 'logueado'"
-      >
-        🗄️Servidor
-      </option>
+    Calidad:
+    <select v-model="cancion.calidad">
+      <option value="-1">♻️ Reprocesar</option>
+      <option value="0">⭐⚫⚫⚫⚫ De Internet</option>
+      <option value="1">⭐⭐⚫⚫⚫ Texto Sincronizado</option>
+      <option value="2">⭐⭐⭐⚫⚫ Texto Corregido</option>
+      <option value="3">Ok</option>
     </select>
+
+    <!-- 
+    <span class="lblCabecera" @click="clickNuevo">[nuevo]</span>
+    <subircancion></subircancion>
+    -->
+    <button class="lblCabecera" @click="clickOkCambiarDatos">✔️</button>
+    <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
+    <button @click="DescargarJSON" class="btnDescarga">⬇️ Descargar</button>
   </div>
   <div></div>
 </template>
-<style scoped></style>
+<style scoped>
+.btnDescarga {
+  margin-left: 20px;
+}
+</style>

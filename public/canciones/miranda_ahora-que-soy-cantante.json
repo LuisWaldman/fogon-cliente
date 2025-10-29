@@ -2,107 +2,257 @@
     "cancion": "ahora-que-soy-cantante",
     "banda": "miranda",
     "escala": "B",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#m",
+                    "B",
+                    "B",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B",
-                    "F#",
+                    "B",
                     "G#m",
-                    "E"
+                    "B",
+                    "B",
+                    "G#m",
+                    "B",
+                    "G#m",
+                    "B",
+                    "B",
+                    "G#m",
+                    "B",
+                    "G#m",
+                    "B",
+                    "B",
+                    "G#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "B",
+                    "B",
+                    "G#m",
                     "E",
-                    "F#",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "B",
+                    "B",
+                    "E",
+                    "G#m",
+                    "B",
+                    "E",
+                    "B",
+                    "B",
+                    "G#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "G#m",
+                    "B",
+                    "E",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "G#m",
+                    "G#m",
+                    "E",
+                    "B",
+                    "B",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "G#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "A A  primera vez,  recuerdo que pen",
-            "sÃ©:/n"
-        ],
-        [
-            "Â“ella estÃ¡ fuera de mi ligaÂ”.",
-            "/n"
-        ],
-        [
-            "Y cuando me acerquÃ©  notÃ³ que la ",
-            "notÃ©/n"
-        ],
-        [
-            "pero no hizo nada mÃ¡s.",
-            "/n"
-        ],
-        [
-            "Y desde que la vi  la quise para mÃ",
-            "­,/n"
-        ],
-        [
-            "pero ella nunca me ha dejado.",
-            "/n"
-        ],
-        [
-            "Le dije de bailar, le dije de tomar",
-            ",/n"
-        ],
-        [
-            "y me decÃ­a siempre Â“noÂ”.",
-            "/n"
-        ],
-        [
-            "Y ahora que soy cantante",
-            "/n"
-        ],
-        [
-            "se me aparece por todas partes,",
-            "/n"
-        ],
-        [
-            "y ahora que soy cantante",
-            "/n"
-        ],
-        [
-            "me ha convertido en su obsesiÃ³n",
-            "./n"
-        ],
-        [
-            "Me escribe todos los dÃ­as",
-            "/n"
-        ],
-        [
-            "atormentando con tonterÃ­as,",
-            "/n"
-        ],
-        [
-            "ahora que soy cantante, todo cambiÃ³.",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Ahora que soy cantante, todo cambiÃ³.",
+            "la primera vez",
+            "recuerdo que pensé, ella est",
+            "fuera de mi liga",
+            "cuando me acerqué, no toqu",
+            "la nota, pero no hizo nad",
+            "a más desde",
+            "que la vi, la quise tan mi,",
+            "pero ella nunca me ha deja",
+            "do Le dije de baila",
+            "r, le dije de tomar, me",
+            "decía siempre no",
+            "ahora que soy cantante se",
+            "me aparece por todas",
+            "partes ahora que",
+            "soy cantante me ha con",
+            "vertido en su obsesió/n"
+        ],
+        [
+            "Me escribe todos los",
+            "días atormentando",
+            "con tonterías A",
+            "hora que soy cantante t",
+            "odo cambio, a",
+            "hora que",
+            "soy cantante todo c",
+            "ambio",
+            "/n"
+        ],
+        [
+            "Siempre",
+            "fue tan igual, de trato imperso",
+            "nal, encantadora eva",
+            "siva Combinación fata",
+            "l, oscura celestial, nunca",
+            "lo pude controlar E",
+            "lla decía no, de",
+            "spreciativa no, no serás parte",
+            "de mi vida No qu",
+            "iso caminar, no quiso ir ce",
+            "nar le he dejado de invi",
+            "tar ahora que soy ca",
+            "ntante se me aparece",
+            "por todas partes",
+            "ahora que soy cantant",
+            "me ha convertido en su o",
+            "bsesión Me escrib",
+            "e todos los días atorm",
+            "entando con tonte",
+            "rías Ahora que soy c",
+            "antante todo cambio,",
+            "aho",
+            "ra que soy cantant",
+            "todo cambio",
+            "/n"
+        ],
+        [
+            "Todo c",
+            "ambio, todo cambio",
+            "todo cambio, oh,",
+            "oh, oh, oh/n"
+        ],
+        [
+            "Todo cambio, todo c",
+            "ambio, todo cambio,",
+            "oh,",
             "",
-            ""
+            "oh, oh",
+            "aho",
+            "ra que soy cantante se me",
+            "aparece por todas pa",
+            "rtes ahora que soy",
+            "cantante me ha convert",
+            "ido en su obsesió/n"
+        ],
+        [
+            "Me escribe todos los d",
+            "ías atormentando con",
+            "tonterías Aho",
+            "ra que soy cantante todo",
+            "cambio desde que la vi la",
+            "quise para mí ahora que soy",
+            "cantante todo cambio",
+            "desde que la vi la quise pa",
+            "ra mí",
+            "desde que",
+            "la vi la quise para mí",
+            "ahora que soy cantante todo",
+            "cambio, oh,",
+            "oh, oh, oh Ahora que soy",
+            "cantante todo camb",
+            "io",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos por la comunidad de Amara .org"
         ]
     ],
     "etiquetas": [],
@@ -110,8 +260,9 @@
         {
             "tipo": "Youtube",
             "id": "gY4aXuBkNG4",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
-    "procesando": 2
+    "procesando": 2,
+    "calidad": 1
 }

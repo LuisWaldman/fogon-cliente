@@ -1,1 +1,538 @@
-{"cancion": "ciego-de-amor", "banda": "los-fabulosos-cadillacs", "escala": "Dm", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm", "Am", "Dm", "Am"]}, {"nombre": "parte2", "acordes": ["C", "Em", "Am"]}], "orden_partes": [0, 0, 1, 0, 1, 1, 1, 0, 0]}, "letras": [[], ["(tromb", "on transcrito para guitarra)/n"], ["Esp\u00c3\u00adritu que vives en m\u00c3\u00ad/nDeja ya de luchar contra tu"], [" destino/nEn que m"], ["ar me vas a hundir/nBajo que suelo yacer\u00c3\u00a1n mis"], [" huesos/n"], [], ["Como decirte que no/nComo luchar con tus ojos "], ["de Angel/n"], ["Rompiste el espejo es verdad/nCortaste contacto con l"], ["a ciudad/n"], ["Tiempo in", "finito y Pasi", "\u00c3\u00b3n/n"], ["Esperando R", "esurrecci\u00c3\u00b3", "n/n"], ["El alma se ", "me hizo canci", "\u00c3\u00b3n/n"], ["Ciego de Amor, no puedo", " pensar/n"], ["Mis ojos no ven, mi boca ", "no puede hablar/n"], ["Zombie de Amor y la vida", " se va/n"], ["Por el mismo camino donde", " la viste llegar"]], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "Mc2MAhIAdO0", "delay": 0}]}
+{
+    "cancion": "ciego-de-amor",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "Dm",
+    "bpm": 143,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Dm",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "Em",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Espíri",
+            "tu que vives en",
+            "mi, deja ya",
+            "de luchar contra tu",
+            "desti",
+            "no.",
+            "/n"
+        ],
+        [
+            "El quemar me",
+            "vas hu",
+            "nd",
+            "ir bajo que el c",
+            "ielo te acera en mis",
+            "hu",
+            "es",
+            "os",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cómo",
+            "decirte que no,",
+            "cómo l",
+            "uchar con tus ojo",
+            "de á",
+            "n",
+            "g",
+            "e/n"
+        ],
+        [
+            "Rompiste el e",
+            "spejo, es verdad,",
+            "cortaste con",
+            "tacto con la c",
+            "iudad.",
+            "¿Y",
+            "dónde vas?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "T",
+            "iempo espí",
+            "ritu p",
+            "asió",
+            "esper",
+            "ando res",
+            "urrec",
+            "ción./n"
+        ],
+        [
+            "El al",
+            "ma se me hiz",
+            "canció",
+            "n./n"
+        ],
+        [
+            "Llego de amor,",
+            "no puedo pensar,",
+            "mis ojos no ven, mi boc",
+            "a no puede hablar. Zo",
+            "mbie de amor la",
+            "vida se va por el",
+            "mismo camino donde la v",
+            "iste ll",
+            "eg",
+            "ar.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Espíritu que vives en",
+            "mi,",
+            "deja ya de lucha",
+            "contra tu des",
+            "tino./n"
+        ],
+        [
+            "Por",
+            "favor,",
+            "no sé",
+            "cómo decirte que",
+            "no, no sé c",
+            "ómo luchar contra tus o",
+            "jos de",
+            "á",
+            "n",
+            "g/n"
+        ],
+        [
+            "Tiemp",
+            "espíritu",
+            "pas",
+            "ión,",
+            "esperand",
+            "resur",
+            "recci",
+            "ón./n"
+        ],
+        [
+            "El alma se",
+            "me hizo ca",
+            "nción./n"
+        ],
+        [
+            "Lle",
+            "go de amor, no puedo",
+            "pensar, mis ojos",
+            "no ven, mi boca no pue",
+            "de hablar. Zombie de",
+            "amor la vida se",
+            "va por el mismo cam",
+            "ino donde la viste lle",
+            "gar.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡O",
+            "h!",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ll",
+            "ego de amor, no puedo pensar, mis ojos no ven, mi boca no puede hablar.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Llego de amor, no puedo pensar, mi boca no puede hablar."
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Mc2MAhIAdO0",
+            "delay": 7000.0
+        }
+    ],
+    "calidad": 1
+}

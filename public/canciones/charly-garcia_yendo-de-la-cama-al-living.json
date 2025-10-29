@@ -8,9 +8,24 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Gm7",
+                    "C7",
                     "C7",
                     "Gm7"
                 ]
@@ -22,36 +37,137 @@
                     "Gm7",
                     "C7",
                     "D7(4/9)",
-                    "Gm7",
+                    "D7(4/9)",
                     "Cm7",
-                    "Gm7",
+                    "Cm7",
                     "Cm7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Gm7",
                     "Cm7",
-                    "Gm7",
-                    "Bb5",
-                    "A5",
-                    "C5",
-                    "B5",
-                    "Bb5"
+                    "Cm7",
+                    "Cm7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "A5",
-                    "C5",
-                    "B5",
+                    "D7(4/9)",
+                    "C7",
+                    "C7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C7",
+                    "Gm7",
+                    "C7",
+                    "D7(4/9)",
+                    "D7(4/9)",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bb5",
+                    "Bb5",
                     "D4",
-                    "Eb7M",
-                    "D4",
+                    "Eb7M"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "C7(4)",
-                    "Gm7"
+                    "C7(4)",
+                    "C7(4)",
+                    "C7(4)"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C7(4)",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Cm7"
                 ]
             }
         ],
@@ -59,64 +175,143 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "s pasear en limousine/nCortar"
-        ],
-        [
-            " las flores del jardín/nPodés"
-        ],
-        [
-            " cambiar el sol y esconderte/nSi no quieres verme"
-        ],
-        [
-            "/nPodés ver "
-        ],
-        [
-            "amanecer/nCon caviar"
-        ],
-        [
-            " desde un hotel/nY no t"
-        ],
-        [
-            "enés ni  un poquito de amor para dar",
-            "/n"
-        ],
-        [
-            "  Yendo de la cama al living",
-            "/n"
-        ],
-        [
-            "  Sientes el enci",
-            "erro/n"
-        ],
-        [
-            "  Yendo de la cama al living",
-            "/n"
-        ],
-        [
-            "       ",
-            "Oh, no, no, no",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "  No hay ninguna v",
-            "ibración",
+            ".../n"
+        ],
+        [
+            "Puedes pasear el",
+            "limousine corta las flores de",
+            "l jardín /n Puedes cambiar el s",
+            "ol encontrarte si no quieres verm/n"
+        ],
+        [
+            "Puedes ver a",
+            "manece con cambiar desde u",
+            "n hotel no tienes un poquit",
+            "de amor para d",
+            "a /n Lled",
+            "o de la cama al vivir",
+            ", siente",
+            "el cielo/n"
+        ],
+        [
+            "Lled",
+            "o de la cama al viv",
+            "i/n"
+        ],
+        [
+            "Puedes saltar de un t",
+            "ranquilín batir un récord es b",
+            "atir /n Puedes hacer un c",
+            "olo poder llevar tu broma al ciel/n"
+        ],
+        [
+            "Puedes ser un gr",
+            "an campeón, jugar en la s",
+            "elecció no tienes un poquito d",
+            "e amor para d",
+            "a /n Lled",
+            "o de la cama al vivi",
+            "r siente",
+            "el cielo/n"
+        ],
+        [
+            "Lled",
+            "de la cama al vivir",
+            "",
             "",
             "/n"
         ],
         [
-            "Aunque v",
-            "ives en el ",
-            "mundo de cin",
-            "e/nNo hay señales de algo que vive e"
+            "No ha",
+            "ninguna vibrac",
+            "ión aunque vives e",
+            "l mundo de cine/n"
         ],
         [
-            "n mí"
+            "No hay señales de a",
+            "lgo que viva en m",
+            "i",
+            "/n"
+        ],
+        [
+            "L",
+            "led de la cama al vivir",
+            ", sient",
+            "e el cielo/n"
+        ],
+        [
+            "L",
+            "ledo de la cama al vivir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ll",
+            "ed de l",
+            "a cama al",
+            "v",
+            "i",
+            "v",
+            "i",
+            "r",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lledo de la cama al vivir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lledo de la cama al vivir /n Lledo de la cama al vivir"
         ]
     ],
     "bpm": 80,
@@ -124,10 +319,11 @@
         {
             "tipo": "Youtube",
             "id": "ldgUatPszek",
-            "delay": 0
+            "delay": 1250.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

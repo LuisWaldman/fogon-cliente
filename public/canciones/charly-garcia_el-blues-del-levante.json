@@ -8,13 +8,21 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A5",
-                    "D5",
                     "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "E5",
-                    "D5",
                     "A5"
                 ]
             },
@@ -22,64 +30,483 @@
                 "nombre": "parte2",
                 "acordes": [
                     "A5",
-                    "G5",
-                    "F#5",
-                    "F5",
-                    "E5",
-                    "D5",
-                    "D#5",
-                    "E5"
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A5",
+                    "A5"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
         [
-            "  Dando vueltas por la esquina,/npasan j"
-        ],
-        [
-            "untas todas las minas,/npor del"
-        ],
-        [
-            "ante y por detrás./nSeguí a "
-        ],
-        [
-            "la que más te gus",
-            "te,/nquizá te la puedas ga"
-        ],
-        [
-            "nar.-/n"
-        ],
-        [
-            "Mary,",
-            " Jua",
-            "na, Ma",
-            "ría ",
-            "Elena",
-            ",",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Solo sobre [A5  D5  A5  E5  D5  A5  G5/n"
+            "Por favor, si s",
+            "e pueden sentar, mataría./n"
         ],
-        []
+        [
+            "No tiene nada que ver con nada, p",
+            "ero es así la cosa./n"
+        ],
+        [
+            "Ustedes saben, yo soy como una esp",
+            "eci de judo si",
+            "cariote",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta e",
+            "s la última parte.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "st es la última parte. /n Est",
+            "a e",
+            "s",
+            "",
+            "",
+            "l",
+            "a",
+            "",
+            "ú",
+            "l",
+            "t",
+            "i",
+            "m",
+            "a",
+            "",
+            "",
+            "",
+            "parte. /n Est",
+            "es la",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "última parte/n"
+        ],
+        [
+            "Esta e",
+            "s",
+            "",
+            "la últ",
+            "im parte.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "t es l",
+            "a",
+            "",
+            "",
+            "",
+            "úl",
+            "ti",
+            "m",
+            "p",
+            "a",
+            "r",
+            "t",
+            "e",
+            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es la última parte.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "t e",
+            "l",
+            "a",
+            "",
+            "",
+            "úl",
+            "tim parte. /n Esta es l",
+            "última part",
+            "e /n Esta es la última parte./n"
+        ],
+        [
+            "Esta",
+            "e",
+            "s",
+            "la última parte./n"
+        ],
+        [
+            "Esta es l",
+            "a última parte. /n E",
+            "st e",
+            "s",
+            "",
+            "la última parte. /n Esta e",
+            "s",
+            "",
+            "la últ",
+            "im parte.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es la última parte.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es l",
+            "a última parte. /n Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte. Esta es la última parte."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "OV91iKvTcIo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

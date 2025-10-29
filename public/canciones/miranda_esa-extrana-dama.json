@@ -1,1 +1,366 @@
-{"cancion": "esa-extrana-dama", "banda": "miranda", "escala": "C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Am", "F", "C", "Am"]}, {"nombre": "parte2", "acordes": ["Dm", "F", "G", "E", "Am", "F", "Dm", "G"]}, {"nombre": "parte3", "acordes": ["C", "G", "Dm", "G", "C", "G", "Am", "Cm"]}], "orden_partes": [0, 1, 2, 0, 1, 2]}, "letras": [["Un mont\u00c3\u00b3n de sue\u00c3\u00b1os que s", "o\u00c3\u00b1ando est\u00c3\u00a1n", "/ndesde tu part"], ["ida", "/nme equivoqu\u00c3"], ["\u00a9, no supe ver/nmi j"], ["uventud muri\u00c3\u00b3 reci\u00c3\u00a9n n", "acida.", "/nEl vac\u00c3\u00ado, poco a "], ["poco/nme c"], ["onvirti\u00c3\u00b3 en h", "ija de la vi", "da./nAtorment"], ["ada por amor, muje", "r dolor,/npudo mas la f"], ["e/ny mi coraz"], ["\u00c3\u00b3n cerr\u00c3\u00b3 su herida/ndespi"], ["erta soledad, envu\u00c3", "\u00a9lveme/nsoy "], ["esa extra\u00c3\u00b1a dama", "/n"], ["Llena de recuerdos y res", "ignaci\u00c3\u00b3n", "/nme aferr\u00c3\u00a9 al de"], ["stino", "/nsin descansar"], [", hasta encontrar/nla her"], ["encia que dejaste en mi cam", "ino", "/nla esperanza fue mi g"], ["u\u00c3\u00ada/nlos a"], ["\u00c3\u00b1os acort", "aron mi agon\u00c3", "\u00ada./nAtorment"], ["ada por amor, muje", "r dolor,/npudo mas la f"], ["e/ny mi coraz"], ["\u00c3\u00b3n cerr\u00c3\u00b3 su herida/ndespi"], ["erta soledad, envu\u00c3", "\u00a9lveme/nsoy "], ["esa extra\u00c3\u00b1a dama", ""]], "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "QTF5PzOt9Ls", "delay": 0}]}
+{
+    "cancion": "esa-extrana-dama",
+    "banda": "miranda",
+    "escala": "C",
+    "bpm": 161,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Dm",
+                    "F",
+                    "C",
+                    "Am",
+                    "Am",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "E",
+                    "E",
+                    "E",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "Dm",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "Dm",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Un",
+            "montón de s",
+            "ueños que s",
+            "oñando e",
+            "stán",
+            "desde",
+            "tu p",
+            "arti",
+            "da me",
+            "equi",
+            "voqué no",
+            "supe",
+            "ver mi",
+            "juventud mu",
+            "rió recién n",
+            "aci",
+            "da/n"
+        ],
+        [
+            "El va",
+            "cío poco p",
+            "oco",
+            "me",
+            "convirtió en",
+            "hija de la v",
+            "ida/n"
+        ],
+        [
+            "Atorment",
+            "ada por a",
+            "mor mu",
+            "jer dol",
+            "or pudo más la",
+            "fe",
+            "mi coraz",
+            "ón cerró su he",
+            "rida desp",
+            "ierta soledad",
+            "/n"
+        ],
+        [
+            "Env",
+            "uélveme soy",
+            "esa extraña d",
+            "ama",
+            "está dispu",
+            "esta v",
+            "enc",
+            "er",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lle",
+            "na de recue",
+            "rdos re",
+            "signa",
+            "ción",
+            "me aferr",
+            "al destino",
+            "",
+            "/n"
+        ],
+        [
+            "Sin des",
+            "cansar has",
+            "ta encont",
+            "rar la herenc",
+            "ia que dejast",
+            "en mi camino",
+            "/n"
+        ],
+        [
+            "La",
+            "esperanz",
+            "fue mi g",
+            "uí",
+            "a los año",
+            "s acortaro",
+            "mi ago",
+            "nía A",
+            "tormentada",
+            "por am",
+            "or muje",
+            "dolor p",
+            "udo más la fe",
+            "",
+            "mi corazón ce",
+            "rró su heri",
+            "da despier",
+            "ta soledad",
+            "/n"
+        ],
+        [
+            "Envuélv",
+            "eme soy esa",
+            "extraña da",
+            "ma que e",
+            "stá dispuesta",
+            "vencer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La esperanza fue mi guía los años acortaron mi agonía"
+        ]
+    ],
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "QTF5PzOt9Ls",
+            "delay": 9000.0
+        }
+    ],
+    "calidad": 1
+}

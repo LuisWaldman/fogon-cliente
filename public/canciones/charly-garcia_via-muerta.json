@@ -8,84 +8,203 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Gm",
-                    "Eb",
+                    "Gm",
+                    "Gm",
                     "Gm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Gm",
                     "Eb",
-                    "Cm",
                     "Dm",
-                    "Eb",
+                    "Dm",
                     "F",
-                    "F/A"
+                    "F/A",
+                    "Eb",
+                    "Eb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Eb",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F/A",
+                    "Eb",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Gm",
+                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "F",
-                    "Eb",
-                    "C",
-                    "D",
-                    "C",
-                    "D",
-                    "Gm"
+                    "F",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A",
+                    "F/A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F/A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F/A",
+                    "F/A"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "ué te quedas en vía m",
-            "uerta /nPor q"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ué te quedas en vía m",
-            "uerta /nNo s"
+            "Esta es una canción en español de rock argentino.",
+            "¿Por qué te que",
+            "da en mi amor alta?",
+            "/n"
         ],
         [
-            "é por qué        ",
-            " vas hacia ese l",
-            "ugar /n"
+            "N",
+            "o sé por qu",
+            "vas hacia es",
+            "lugar /n D",
+            "onde todos han desc",
+            "arrilad /n ¿P",
+            "o qué n",
+            "o te animas",
+            "despegar? /n Yo te digo ¿p",
+            "o qué te quedas en mi am",
+            "o alta? /n ¿Po",
+            "qué te quedas en mi amo",
+            "r alta? /n No s",
+            "é por qué v",
+            "as hacia ese lu",
+            "ga /n Dond",
+            "e todos han descarri",
+            "lad /n ¿Por q",
+            "u no t",
+            "e animas",
+            "despegar? /n Yo te digo ¿por qu",
+            "é",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Donde todos ",
-            "han descarri",
-            "lado /n"
+            "Dond",
+            "e todos han descarrilado/n"
         ],
         [
-            "Por qu",
-            "é  no",
-            " te anima",
-            "s   a d",
-            "espegar ",
-            "/nYo te di"
+            "Dond",
+            "todos han descar",
+            "rilad",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "go  "
+            "Donde todos han desc",
+            "arrilad/n"
+        ],
+        [
+            "Hola, hola /n Hol",
+            "a hola"
         ]
     ],
-    "bpm": 80,
+    "bpm": 64,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "2OZxkiDeL3I",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

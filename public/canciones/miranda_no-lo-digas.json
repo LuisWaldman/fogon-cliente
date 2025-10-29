@@ -1,1 +1,335 @@
-{"cancion": "no-lo-digas", "banda": "miranda", "escala": "E", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "G#m", "A", "F#m", "B"]}, {"nombre": "parte2", "acordes": ["A", "B", "C#m", "G#m", "A", "Am"]}], "orden_partes": [0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0]}, "letras": [["  No digas todav\u00c3\u00ada adi\u00c3\u00b3s/n"], ["  Hag\u00c3\u00a1moslo otra vez/n"], ["  Es todo lo que quiero yo/nY no me im"], ["porta lo que venga despu\u00c3", "\u00a9s/n"], ["  Sab\u00c3\u00ada que entre ayer y hoy/n"], ["  Me ibas a abandonar/n"], ["  As\u00c3\u00ad que te lo digo ya/nLa despe"], ["dida acaba de comenz", "ar/nEntonces "], ["qu\u00c3\u00adtate la ropa/n"], ["Mu\u00c3\u00a9rdete la boca/n"], ["Pon en mudo la tev", "e/nD\u00c3\u00a9j"], ["ame, (d\u00c3\u00a9jame) de tu ", "amor, lo me", "jor/nNo, no quiero escu"], ["char/n"], ["No, no quiero ten", "erte en mi memo", "ria y\u00c3\u00a9ndote", "/nY\u00c3\u00a9ndote de "], ["aqu\u00c3\u00ad, (lejos de m\u00c3\u00ad)/nTe juro que no "], ["vi/nQue ya no eras "], ["m\u00c3\u00a1s para ", "m\u00c3\u00ad/n"], ["  No tuve la seguridad/n"], ["  Nunca me lo cre\u00c3\u00ad/n"], ["  Que me quer\u00c3\u00adas de verdad/nSiendo tan "], ["poca cosa yo para t", "i/nTe juro, "], ["luego de esta noche/n"], ["No te har\u00c3\u00a9 reproche/n"], ["S\u00c3\u00b3lo lo supera", "r\u00c3\u00a9/nPiensa en "], ["m\u00c3\u00ad, (piensa en m\u00c3\u00ad)/nSi te va"], ["s, coraz", "\u00c3\u00b3n/nNo, no quiero escu"], ["char/n"], ["No, no quiero ten", "erte en mi memo", "ria y\u00c3\u00a9ndote", "/nY\u00c3\u00a9ndote de "], ["aqu\u00c3\u00ad, (lejos de m\u00c3\u00ad)/nTe juro que no "], ["vi/nQue ya no eras "], ["m\u00c3\u00a1s para ", "m\u00c3\u00ad/nM\u00c3\u00adr"], ["ame, uhuhuh", "uh, m\u00c3\u00adra", "me, ahhhha", "hh/nM\u00c3\u00adr"], ["ame, luego no digas ", "nada/nPorque todo lo "], ["s\u00c3\u00a9, lo s\u00c3\u00a9, lo s\u00c3\u00a9/nNo, no quiero escu"], ["char/n"], ["No, no quiero ten", "erte en mi memo", "ria y\u00c3\u00a9ndote", "/nY\u00c3\u00a9ndote de "], ["aqu\u00c3\u00ad, (lejos de m\u00c3\u00ad)/nTe juro que no "], ["vi/nQue ya no eras "], ["m\u00c3\u00a1s para ", "m\u00c3\u00ad/n"], ["Ohhh ohoh ohoh o", "hhh/n"], ["Ohhh ohoh ohoh o", "hhh/nOh oh "], ["oh"]], "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "ucPgEVR6IYg", "delay": 0}]}
+{
+    "cancion": "no-lo-digas",
+    "banda": "miranda",
+    "escala": "E",
+    "bpm": 123,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "C#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "G#m",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "No digas tod",
+            "avía adi",
+            "ós, hagámoslo ot",
+            "ra vez,",
+            "es todo lo que q",
+            "uiero yo no me im",
+            "porta lo que venga des",
+            "pués./n"
+        ],
+        [
+            "Sabía que entre aye",
+            "r hoy me",
+            "ibas aba",
+            "ndonar,",
+            "así que te lo digo",
+            "ya, la despedida a",
+            "caba de comenzar/n"
+        ],
+        [
+            "Entonces quítat",
+            "la ropa, muérde",
+            "te la boca, pon el n",
+            "udo láter,",
+            "déjame",
+            "de tu amor",
+            "lo mejor./n"
+        ],
+        [
+            "No, no quier",
+            "o escu",
+            "char",
+            "",
+            "no quiero",
+            "tenerte en mi",
+            "memoria y",
+            "éndot",
+            "e, yéndote",
+            "de aquí./n"
+        ],
+        [
+            "Te juro",
+            "que no vi,",
+            "que ya no er",
+            "as más pa",
+            "ra mí./n"
+        ],
+        [
+            "No tuve",
+            "la seguridad,",
+            "nunca me lo",
+            "creí,",
+            "que me querí",
+            "as de verdad, siendo",
+            "tan poca cosa yo para",
+            "ti.\nTe juro",
+            "luego de esta noche no",
+            "te hagas reproches, s",
+            "olo lo supera",
+            "ré, piensa en",
+            "mí, si te",
+            "vas corazón./n"
+        ],
+        [
+            "No, no q",
+            "uiero esc",
+            "ucha",
+            "r,",
+            "no qui",
+            "ero tenerte",
+            "en mi memori",
+            "yéndo",
+            "te, yénd",
+            "ote de aquí./n"
+        ],
+        [
+            "Te ju",
+            "ro que no",
+            "vi, que ya",
+            "no eras más",
+            "para mí./n"
+        ],
+        [
+            "Mírame,",
+            "mí",
+            "ra",
+            "me,",
+            "mírame, per",
+            "no digas ama porque to",
+            "do lo",
+            "sé.",
+            "",
+            "/n"
+        ],
+        [
+            "No,",
+            "no quiero e",
+            "scuc",
+            "har,",
+            "",
+            "no quiero tene",
+            "rte en mi m",
+            "emoria yén",
+            "dote, y",
+            "éndote de aq",
+            "uí.\nTe",
+            "juro que no",
+            "vi,",
+            "que ya no eras",
+            "más para",
+            "mí.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mírame, m",
+            "írame,",
+            "",
+            "m",
+            "í",
+            "r",
+            "a",
+            "",
+            "pero no digas ama porque todo lo sé."
+        ]
+    ],
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "ucPgEVR6IYg",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

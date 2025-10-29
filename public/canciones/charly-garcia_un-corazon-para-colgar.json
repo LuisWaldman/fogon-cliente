@@ -8,35 +8,94 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A",
                     "A",
                     "A"
                 ]
             },
             {
-                "nombre": "parte2",
+                "nombre": "parte3",
                 "acordes": [
                     "A",
+                    "C5",
                     "C",
                     "C5",
-                    "D5",
+                    "C",
                     "C5",
                     "C5"
                 ]
             },
             {
-                "nombre": "parte3",
+                "nombre": "parte4",
                 "acordes": [
-                    "D5",
-                    "E5",
                     "C5",
                     "C5",
-                    "D5",
-                    "A",
-                    "A",
-                    "Em"
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C5"
                 ]
             }
         ],
@@ -44,89 +103,96 @@
             0,
             1,
             2,
-            0,
-            1,
-            2
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            " no voy ni a los velorios ni al carnaval /nUs"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "o avalorios para ir a bailar /nYa "
+            "Soy voy, ni los v",
+            "elorio ni al carn",
+            "aval como su aval",
+            "lo veo para ir bai",
+            "lar /n Ya no me gusta",
+            "tanto estar de p",
+            "ie porque no es p",
+            "eor lo que no se v",
+            "e /n Quiero co",
+            "lgarm un cora",
+            "zón quiero col",
+            "garm una canci",
+            "ón quiero co",
+            "lgarm un",
+            "coraz",
+            "ó/n"
         ],
         [
-            "no me gusta tanto estar de pié /npor"
+            "U",
+            "corazón real.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "ve guitar",
+            "ra que no iba",
+            "comprar. /n No sé si le gust",
+            "aba tan fuert",
+            "e como para",
+            "tirars del ande./n"
         ],
         [
-            "que no espero lo que no se v",
-            "e /nQu"
+            "Un coraz",
+            "ó para colga",
+            "r un corazó",
+            "para real,",
+            "un cora",
+            "zó para co",
+            "lgar/n"
         ],
         [
-            "iero colgar ",
-            "un corazón ",
-            "/nQ"
+            "Un c",
+            "oraz",
+            "ó real.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uiero colga",
-            "rme una ",
-            "canción ",
-            "/nQ"
-        ],
-        [
-            "uiero colgarme un",
-            " corazón",
-            " /nCo"
-        ],
-        [
-            "razón rea",
-            "l /nYo"
-        ],
-        [
-            " ni voy, it was a sail for a new guitar /nA "
-        ],
-        [
-            "ver guitarras que me iba a comprar /nNo"
-        ],
-        [
-            " sé si le gustaba tanto el tren /nCo"
-        ],
-        [
-            "mo para tirarse del andén ",
-            "/nUn"
-        ],
-        [
-            " corazón pa",
-            "ra colgar ",
-            "/nU"
-        ],
-        [
-            "n corazón",
-            " que sea ",
-            "real ",
-            "/nU"
-        ],
-        [
-            "n corazón par",
-            "a colgar ",
-            "/nCo"
-        ],
-        [
-            "razón lea",
-            "l /n"
-        ],
-        []
+            "Un corazón real."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "_wUCKX9qa4o",
-            "delay": 0
+            "delay": 200.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

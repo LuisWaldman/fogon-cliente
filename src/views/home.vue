@@ -17,6 +17,12 @@ const renamingLista = ref<boolean>(false)
 const viendoListas = ref<string[]>([])
 const ListasEnStorage = ref<string[]>([])
 
+let ultimasCanciones = new UltimasCanciones()
+const refUltimasCanciones = ref([] as ItemIndiceCancion[])
+refUltimasCanciones.value = ultimasCanciones.canciones
+const refViendoCanciones = ref<ItemIndiceCancion[]>([])
+const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
+
 listasManager.initDB().then(() => {
   listasManager.GetListas().then((listas) => {
     console.log('Listas de reproducción:', listas)
@@ -34,12 +40,6 @@ CancionManager.getInstance()
   .then((indices: ItemIndiceCancion[]) => {
     CancionesLocalstorage.value = indices
   })
-
-let ultimasCanciones = new UltimasCanciones()
-const refUltimasCanciones = ref([] as ItemIndiceCancion[])
-refUltimasCanciones.value = ultimasCanciones.canciones
-const refViendoCanciones = ref<ItemIndiceCancion[]>([])
-const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
 const textoMostrando = ref(
   refViendoCanciones.value.length === 0
@@ -81,16 +81,46 @@ function clickOpcion(viendostr: string) {
         ? ''
         : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
   } else if (viendostr === 'canciones') {
+    refViendoCanciones.value = CancionesLocalstorage.value
   } else if (viendostr === 'listas') {
+    cambioLista()
+  }
+  viendo.value = viendostr
+}
+function cambioLista() {
+  if (viendoOrigen.value === 'reproduccion') {
     refViendoCanciones.value = appStore.listaReproduccion
     if (appStore.listaReproduccion.length > 0) {
       viendoOrigen.value = 'reproduccion'
     }
+  } else if (viendoOrigen.value === 'localstorage') {
+    console.log('Cargando lista desde LocalStorage:', selectedLista.value)
+    listasManager.GetCanciones(selectedLista.value).then((canciones) => {
+      refViendoCanciones.value = canciones
+    })
+  } else if (viendoOrigen.value === 'server') {
+    refViendoCanciones.value = []
   }
-  viendo.value = viendostr
 }
 function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
+  if (viendo.value === 'canciones') {
+    if (viendoOrigen.value === 'localstorage') {
+      refViendoCanciones.value = CancionesLocalstorage.value
+    } else {
+      //refViendoCanciones.value = appStore.serviciosEnReproduccion
+    }
+  }
+  if (viendo.value === 'listas') {
+    if (viendoOrigen.value === 'localstorage') {
+      viendoListas.value = ListasEnStorage.value
+      selectedLista.value = viendoListas.value.length
+        ? viendoListas.value[0]
+        : ''
+    }
+    cambioLista()
+  }
+
   if (viendoOrigen.value === 'localstorage') {
     if (viendo.value === 'canciones') {
       refViendoCanciones.value = CancionesLocalstorage.value
@@ -248,6 +278,18 @@ function AgregarLista(index: number, listaseleccionada: string) {
     )
     return
   }
+  if (listaseleccionada.startsWith('local_')) {
+    const nombreLista = listaseleccionada.replace('local_', '')
+    listasManager
+      .AddCancion(nombreLista, refViendoCanciones.value[index])
+      .then(() => {
+        alert(`Canción agregada a la lista "${nombreLista}" en LocalStorage.`)
+      })
+      .catch(() => {
+        alert('Error al agregar la canción a la lista.')
+      })
+    return
+  }
 }
 </script>
 
@@ -347,7 +389,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
 
       <div
         style="width: 90%"
-        v-if="viendo === 'listas' && viendoOrigen !== 'reproduccion'"
+        v-if="viendo === 'listas' || viendo === 'canciones'"
       >
         <div
           style="
@@ -356,7 +398,12 @@ function AgregarLista(index: number, listaseleccionada: string) {
             justify-content: space-between;
           "
         >
-          <select v-model="selectedLista" style="width: 70%">
+          <select
+            v-model="selectedLista"
+            @change="cambioLista"
+            style="width: 70%"
+            v-if="viendo === 'listas'"
+          >
             <option
               v-for="(lista, index) in viendoListas"
               :key="index"
@@ -366,13 +413,19 @@ function AgregarLista(index: number, listaseleccionada: string) {
             </option>
           </select>
           <div style="margin-left: auto">
-            <button @click="addingLista = true">
-              ➕<span class="button-text"> Agregar</span>
+            <button @click="addingLista = true" v-if="viendo === 'canciones'">
+              ➕<span class="button-text"> Cancion</span>
             </button>
-            <button @click="renombrarLista">
+            <button @click="addingLista = true" v-if="viendo === 'canciones'">
+              ⬆️<span class="button-text"> SUBIR</span>
+            </button>
+            <button @click="addingLista = true" v-if="viendo === 'listas'">
+              ➕<span class="button-text"> LISTA</span>
+            </button>
+            <button @click="renombrarLista" v-if="viendo === 'listas'">
               🔄<span class="button-text"> Renombrar</span>
             </button>
-            <button @click="borrarLista">
+            <button @click="borrarLista" v-if="viendo === 'listas'">
               🗑<span class="button-text"> Borrar</span>
             </button>
           </div>
@@ -407,6 +460,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
         @agregar="AgregarLista"
+        :ver-borrar="viendo != 'inicio'"
       />
     </div>
   </div>

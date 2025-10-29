@@ -8,101 +8,177 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "G7",
                     "C",
                     "G7",
-                    "C"
+                    "G7",
+                    "C",
+                    "C",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "C",
+                    "G7",
+                    "G7",
+                    "C",
+                    "G7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "F",
                     "F",
                     "C",
-                    "G7",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C",
+                    "C",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "F",
+                    "F",
+                    "C",
+                    "F",
+                    "F",
+                    "G7",
+                    "G7",
+                    "G7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0,
-            1,
-            1
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "zul y gr",
-            "ana/nla au"
+            "pinta de azul g",
+            "rana la aurora de",
+            "l horizonte, e",
+            "s que llegó la mañ",
+            "an despert",
+            "todo el norte./n"
         ],
         [
-            "rora en el horizo",
-            "nte./nEs que viene "
+            "Criosita, abrí tu vent",
+            "ana que ya cant",
+            "a los ortales,",
+            "cancione primavera",
+            "le que llegan a",
+            "l corazón/n"
         ],
         [
-            "la mañ",
-            "ana/ny d"
+            "Criosi",
+            "ta ven mi s",
+            "alad",
+            "a láve",
+            "l el vapor f",
+            "umado",
+            "tus ojos s",
+            "o dos luceros que m",
+            "e hieren traicionero",
+            "s tus ojos me ha",
+            "n amarrado al",
+            "palenqu de tu amo",
+            "r",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "espertó todo el m",
-            "onte./nCrioll"
+            "Allá m",
+            "e voy galopando,",
+            "en mi alasán muy",
+            "contento como",
+            "está esperando",
+            "estarás hoy dejando al vi",
+            "ento serran",
+            "a flor de mis pampas, t",
+            "raigo flores pa' dor",
+            "nart un cant",
+            "o para arrullarte e",
+            "n mis noches de c",
+            "anto./n"
         ],
         [
-            "ita abrí tu ven",
-            "tana/nque ya "
-        ],
-        [
-            "cantan los zorz",
-            "ales/ncanci"
-        ],
-        [
-            "ones primavera",
-            "les/nque ll"
-        ],
-        [
-            "egan al coraz",
-            "n./nCriollita d"
-        ],
-        [
-            "e mis amo",
-            "res,/ncl"
-        ],
-        [
-            "avel, el más perfum",
-            "ado./nTus "
-        ],
-        [
-            "ojos son dos luce",
-            "ros/nque m"
-        ],
-        [
-            "e hieren traicione",
-            "ros,/ntus "
-        ],
-        [
-            "ojos me han amarra",
-            "do/nal p"
-        ],
-        [
-            "alenque de tu amo",
-            "r."
+            "Criosit",
+            "a ven mi s",
+            "alad",
+            "a lável",
+            "el vapor f",
+            "umad",
+            "tus ojos s",
+            "on dos luceros qu",
+            "e me hieren traicione",
+            "ros tus ojos m",
+            "e han amarrado a",
+            "l palenque d",
+            "e tu amo",
+            "r"
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "NuEcfXUd0IY",
-            "delay": 0
+            "delay": 17340.0
         }
     ],
     "etiquetas": [
         "Tango"
-    ]
+    ],
+    "calidad": 1
 }
