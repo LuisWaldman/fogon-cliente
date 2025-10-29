@@ -8,9 +8,10 @@ import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 import { Tiempo } from '../../modelo/tiempo'
 const tiempo = new Tiempo()
 import { ref } from 'vue'
-import type { OrigenCancion } from '../../modelo/cancion/origencancion'
+import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { CancionManager } from '../../modelo/cancion/CancionManager'
 const helper = HelperDisplayAcordesLatino.getInstance()
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
@@ -28,7 +29,7 @@ function arreglartexto(texto: string): string {
 
   return processed
 }
-defineProps<{
+const props = defineProps<{
   cancion: Cancion
   origen: OrigenCancion
 }>()
@@ -52,6 +53,17 @@ function clickCerrar(modificado: boolean) {
 }
 helper.latino = appStore.perfil.CifradoLatino
 
+function guardarCambios(origenDestino: string) {
+  props.origen.origenUrl = origenDestino
+  CancionManager.getInstance()
+    .Save(
+      new OrigenCancion(origenDestino, props.origen.fileName, props.origen.usuario),
+      props.cancion,
+    )
+    .catch((error) => {
+      console.error('Error al guardar los cambios:', error)
+    })
+}
 </script>
 
 <template>
@@ -99,10 +111,10 @@ helper.latino = appStore.perfil.CifradoLatino
 
     
     <div class="divctrlEdit">
-    <button >🧠 Guardar  
+    <button @click="guardarCambios('local')" >🧠 Guardar  
 
 </button>
-    <button >o en 🗄️ </button>
+    <button  @click="guardarCambios('server')">o en 🗄️ </button>
     
     
     </div>
@@ -115,7 +127,7 @@ helper.latino = appStore.perfil.CifradoLatino
     
     
     
-    <div>
+    <div class="divctrlEdit" v-if="viendo == 'medias' || viendo =='archivo' || viendo == 'escala' || viendo == 'tiempo'">
       <editarmedias
         v-if="viendo == 'medias'"
         :cancion="cancion"
