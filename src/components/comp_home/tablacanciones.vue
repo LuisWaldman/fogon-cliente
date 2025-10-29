@@ -18,6 +18,7 @@ const props = defineProps<{
   canciones: ItemIndiceCancion[]
   listasstore: string[]
   listasserverstore: string[]
+  verBorrar: boolean
 }>()
 const listaseleccionada = ref<string>('actual')
 
@@ -167,7 +168,7 @@ function Borrar(index: number) {
               <div class="botoneraDetalle">
                 <button @click="Reproducir(index)">▶ Tocar</button>
                 <button @click="agregandoLista = true">🗒️ Lista</button>
-                <button @click="Borrar(index)">🗑 Borrar</button>
+                <button @click="Borrar(index)" v-if="verBorrar">🗑 Borrar</button>
               </div>
 
               <div class="botoneraDetalle" v-if="agregandoLista">

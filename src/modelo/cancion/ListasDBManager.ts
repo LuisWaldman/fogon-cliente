@@ -103,6 +103,9 @@ export class ListasDBManager {
   ): Promise<void> {
     if (!this.db) await this.initDB()
 
+  // Convertir a objeto plano serializable antes de guardar
+  const plainElemento = JSON.parse(JSON.stringify(elemento))
+
     return new Promise((resolve, reject) => {
       const transaction = this.db!.transaction(['listas'], 'readwrite')
       const store = transaction.objectStore('listas')
@@ -111,7 +114,7 @@ export class ListasDBManager {
       getRequest.onsuccess = () => {
         const lista = getRequest.result
         if (lista) {
-          lista.canciones.push(elemento)
+          lista.canciones.push(plainElemento) // Usar objeto plano aquí
           const putRequest = store.put(lista)
           putRequest.onsuccess = () => resolve()
           putRequest.onerror = () => reject(putRequest.error)
