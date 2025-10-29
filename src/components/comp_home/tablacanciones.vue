@@ -109,7 +109,11 @@ function Borrar(index: number) {
               )
             }}
           </td>
-          <td class="textoGrande"><span v-if="cancion.escala">{{ helper.GetAcorde(cancion.escala) }}</span></td>
+          <td class="textoGrande">
+            <span v-if="cancion.escala">{{
+              helper.GetAcorde(cancion.escala)
+            }}</span>
+          </td>
           <td></td>
         </tr>
         <tr v-if="viendoDetalle === index" data-detail>
@@ -168,7 +172,9 @@ function Borrar(index: number) {
               <div class="botoneraDetalle">
                 <button @click="Reproducir(index)">▶ Tocar</button>
                 <button @click="agregandoLista = true">🗒️ Lista</button>
-                <button @click="Borrar(index)" v-if="verBorrar">🗑 Borrar</button>
+                <button @click="Borrar(index)" v-if="verBorrar">
+                  🗑 Borrar
+                </button>
               </div>
 
               <div class="botoneraDetalle" v-if="agregandoLista">

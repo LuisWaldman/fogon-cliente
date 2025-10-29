@@ -4,8 +4,6 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
 import { HelperJSON } from '../../modelo/cancion/HelperJSON'
-import { CancionManager } from '../../modelo/cancion/CancionManager'
-import subircancion from './subircancion.vue'
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
   cancion: Cancion
@@ -17,7 +15,7 @@ const nombrebanda = ref('')
 const nombrearchivo = ref('')
 const origenOriginal = ref('')
 const origenDestino = ref('')
-const calidad  = ref(props.cancion.calidad)
+const calidad = ref(props.cancion.calidad)
 nombrecancion.value = props.cancion.cancion
 nombrebanda.value = props.cancion.banda
 nombrearchivo.value = props.cancion.archivo || 'archivo_noload'
@@ -37,7 +35,10 @@ function clickOkCambiarDatos() {
 }
 
 function hacerNombreArchivo() {
-  props.cancion.archivo = props.cancion.banda.replace(/ /g, '_') + '-' + props.cancion.cancion.replace(/ /g, '_')
+  props.cancion.archivo =
+    props.cancion.banda.replace(/ /g, '_') +
+    '-' +
+    props.cancion.cancion.replace(/ /g, '_')
 }
 
 /*
@@ -59,29 +60,26 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
-
 </script>
 <template>
   <div style="width: 100%">
-    
+    Cancion:
+    <input
+      type="text"
+      v-model="props.cancion.cancion"
+      :style="{ width: props.cancion.cancion.length + 'ch' }"
+      @change="hacerNombreArchivo"
+      class="input-editable"
+    />
+    - Banda:
+    <input
+      type="text"
+      class="input-editable"
+      v-model="props.cancion.banda"
+      @change="hacerNombreArchivo"
+      :style="{ width: props.cancion.banda.length + 1 + 'ch' }"
+    />
 
-      Cancion:
-      <input
-        type="text"
-        v-model="props.cancion.cancion"
-        :style="{ width: props.cancion.cancion.length + 'ch' }"
-        @change="hacerNombreArchivo"
-        class="input-editable"
-      />
-      - Banda:
-      <input
-        type="text"
-        class="input-editable"
-        v-model="props.cancion.banda"
-        @change="hacerNombreArchivo"
-        :style="{ width: props.cancion.banda.length + 1 + 'ch' }"
-      />
-    
     Archivo:
     <input
       type="text"
@@ -91,22 +89,18 @@ function DescargarJSON() {
     Calidad:
     <select v-model="cancion.calidad">
       <option value="-1">♻️ Reprocesar</option>
-      <option value="0">⭐⚫⚫⚫⚫    De Internet</option>
-      <option value="1">⭐⭐⚫⚫⚫   Texto Sincronizado</option>
-      <option value="2">⭐⭐⭐⚫⚫   Texto Corregido</option>
-      <option value="3">      Ok</option>
+      <option value="0">⭐⚫⚫⚫⚫ De Internet</option>
+      <option value="1">⭐⭐⚫⚫⚫ Texto Sincronizado</option>
+      <option value="2">⭐⭐⭐⚫⚫ Texto Corregido</option>
+      <option value="3">Ok</option>
     </select>
-    
-<!-- 
+
+    <!-- 
     <span class="lblCabecera" @click="clickNuevo">[nuevo]</span>
     <subircancion></subircancion>
     -->
-    <button class="lblCabecera" @click="clickOkCambiarDatos"
-      >✔️</button
-    >
-    <button class="lblCabecera" @click="clickCancelarCambiarDatos"
-      >❌</button
-    >    
+    <button class="lblCabecera" @click="clickOkCambiarDatos">✔️</button>
+    <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
     <button @click="DescargarJSON" class="btnDescarga">⬇️ Descargar</button>
   </div>
   <div></div>

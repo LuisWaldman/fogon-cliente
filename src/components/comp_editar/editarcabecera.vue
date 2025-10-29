@@ -57,7 +57,11 @@ function guardarCambios(origenDestino: string) {
   props.origen.origenUrl = origenDestino
   CancionManager.getInstance()
     .Save(
-      new OrigenCancion(origenDestino, props.origen.fileName, props.origen.usuario),
+      new OrigenCancion(
+        origenDestino,
+        props.origen.fileName,
+        props.origen.usuario,
+      ),
       props.cancion,
     )
     .catch((error) => {
@@ -68,66 +72,80 @@ function guardarCambios(origenDestino: string) {
 
 <template>
   <div class="navbarFogon">
-    <div style="display: flex; flex-wrap: wrap;">
-    <div class="divctrlEdit">
-      <div style="display: flex;"> 
-      <emoticonOrigen :origen="origen.origenUrl" />
-      <label>{{ arreglartexto(cancion.banda) }}</label>
-      <label v-if="cancion.calidad==-1">♻️</label>
-      <label v-else-if="cancion.calidad==0">⭐⚫⚫⚫⚫</label>
-      <label v-else-if="cancion.calidad==1">⭐⭐⚫⚫⚫</label>
-      <label v-else-if="cancion.calidad==2">⭐⭐⭐⚫⚫</label>
-      
-      <label @click="clickCambiar('archivo')" @cerrar="clickCerrar">🔄</label>
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="divctrlEdit">
+        <div style="display: flex">
+          <emoticonOrigen :origen="origen.origenUrl" />
+          <label>{{ arreglartexto(cancion.banda) }}</label>
+          <label v-if="cancion.calidad == -1">♻️</label>
+          <label v-else-if="cancion.calidad == 0">⭐⚫⚫⚫⚫</label>
+          <label v-else-if="cancion.calidad == 1">⭐⭐⚫⚫⚫</label>
+          <label v-else-if="cancion.calidad == 2">⭐⭐⭐⚫⚫</label>
+
+          <label @click="clickCambiar('archivo')" @cerrar="clickCerrar"
+            >🔄</label
+          >
+        </div>
+        <div class="tituloCancion">
+          {{ arreglartexto(cancion.cancion) }}
+        </div>
       </div>
-      <div class="tituloCancion">
-      {{ arreglartexto(cancion.cancion) }}
+      <div class="divctrlEdit">
+        <label
+          >BPM: {{ cancion.bpm }}
+          <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar"
+            >🔄</label
+          ></label
+        >
+        <div>
+          <label class="tituloCancion">{{
+            tiempo.formatSegundos(cancion.duracionCancion)
+          }}</label>
+        </div>
+      </div>
+      <div class="divctrlEdit">
+        <label>Escala</label
+        ><label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
+        <div>
+          <label class="tituloCancion" v-if="cancion.escala">{{
+            helper.GetAcorde(cancion.escala)
+          }}</label>
+        </div>
+      </div>
+      <div class="divctrlEdit">
+        <label>📺 Video</label><label @click="clickCambiar('medias')">🔄</label>
+        <div>
+          <label class="tituloCancion" v-if="cancion.medias.length > 0"
+            >📺</label
+          >
+          <label class="tituloCancion" v-else>No</label>
+        </div>
+      </div>
+      <div class="divctrlEdit">
+        <label>Partituras</label
+        ><label @click="clickCambiar('pentagramas')">🔄</label>
+        <div>
+          <label class="tituloCancion">
+            🎼 {{ cancion.pentagramas.length }}
+          </label>
+        </div>
+      </div>
+
+      <div class="divctrlEdit">
+        <button @click="guardarCambios('local')">🧠 Guardar</button>
+        <button @click="guardarCambios('server')">o en 🗄️</button>
       </div>
     </div>
-    <div class="divctrlEdit">
-      <label>BPM: {{ cancion.bpm }} <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar">🔄</label></label>
-      <div><label class="tituloCancion">{{ tiempo.formatSegundos(cancion.duracionCancion) }}</label>
-        </div>
-    </div>
-    <div class="divctrlEdit">
-      <label>Escala</label><label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
-      <div><label class="tituloCancion" v-if="cancion.escala">{{ helper.GetAcorde(cancion.escala) }}</label>
-        </div>
-    </div>
-    <div class="divctrlEdit">
-      <label>📺 Video</label><label @click="clickCambiar('medias')">🔄</label>
-      <div>
-        <label class="tituloCancion" v-if="cancion.medias.length > 0">📺</label>
-        <label class="tituloCancion" v-else>No</label>
-        </div>
-    </div>
-    <div class="divctrlEdit">
-      <label>Partituras</label><label @click="clickCambiar('pentagramas')">🔄</label>
-      <div><label class="tituloCancion">
-        🎼 {{ cancion.pentagramas.length }}
-      </label>
-        </div>
-    </div>
 
-    
-    <div class="divctrlEdit">
-    <button @click="guardarCambios('local')" >🧠 Guardar  
-
-</button>
-    <button  @click="guardarCambios('server')">o en 🗄️ </button>
-    
-    
-    </div>
-    </div>
-
-    
-    
-    
-
-    
-    
-    
-    <div class="divctrlEdit" v-if="viendo == 'medias' || viendo =='archivo' || viendo == 'escala' || viendo == 'tiempo'">
+    <div
+      class="divctrlEdit"
+      v-if="
+        viendo == 'medias' ||
+        viendo == 'archivo' ||
+        viendo == 'escala' ||
+        viendo == 'tiempo'
+      "
+    >
       <editarmedias
         v-if="viendo == 'medias'"
         :cancion="cancion"
@@ -428,14 +446,13 @@ function guardarCambios(origenDestino: string) {
   margin-left: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-  border:1px solid;
+  border: 1px solid;
 }
 
 .divctrlEdit button {
   height: 80%;
   font-size: large;
 }
-
 
 @media (max-width: 768px) {
   .divctrlEdit {

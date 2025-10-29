@@ -80,7 +80,7 @@ function clickOpcion(viendostr: string) {
       refViendoCanciones.value.length === 0
         ? ''
         : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
-  } else if (viendostr === 'canciones')   {
+  } else if (viendostr === 'canciones') {
     refViendoCanciones.value = CancionesLocalstorage.value
   } else if (viendostr === 'listas') {
     cambioLista()
@@ -95,11 +95,9 @@ function cambioLista() {
     }
   } else if (viendoOrigen.value === 'localstorage') {
     console.log('Cargando lista desde LocalStorage:', selectedLista.value)
-    listasManager
-      .GetCanciones(selectedLista.value)
-      .then((canciones) => {
-        refViendoCanciones.value = canciones
-      })
+    listasManager.GetCanciones(selectedLista.value).then((canciones) => {
+      refViendoCanciones.value = canciones
+    })
   } else if (viendoOrigen.value === 'server') {
     refViendoCanciones.value = []
   }
@@ -115,14 +113,13 @@ function clickOrigen(viendostr: string) {
   }
   if (viendo.value === 'listas') {
     if (viendoOrigen.value === 'localstorage') {
-    viendoListas.value = ListasEnStorage.value
-    selectedLista.value = viendoListas.value.length
-      ? viendoListas.value[0]
-      : ''
+      viendoListas.value = ListasEnStorage.value
+      selectedLista.value = viendoListas.value.length
+        ? viendoListas.value[0]
+        : ''
     }
     cambioLista()
   }
-
 
   if (viendoOrigen.value === 'localstorage') {
     if (viendo.value === 'canciones') {
@@ -284,14 +281,9 @@ function AgregarLista(index: number, listaseleccionada: string) {
   if (listaseleccionada.startsWith('local_')) {
     const nombreLista = listaseleccionada.replace('local_', '')
     listasManager
-      .AddCancion(
-        nombreLista,
-        refViendoCanciones.value[index],
-      )
+      .AddCancion(nombreLista, refViendoCanciones.value[index])
       .then(() => {
-        alert(
-          `Canción agregada a la lista "${nombreLista}" en LocalStorage.`,
-        )
+        alert(`Canción agregada a la lista "${nombreLista}" en LocalStorage.`)
       })
       .catch(() => {
         alert('Error al agregar la canción a la lista.')
@@ -406,10 +398,14 @@ function AgregarLista(index: number, listaseleccionada: string) {
             justify-content: space-between;
           "
         >
-          <select v-model="selectedLista" @change="cambioLista" style="width: 70%" v-if="viendo === 'listas'">
+          <select
+            v-model="selectedLista"
+            @change="cambioLista"
+            style="width: 70%"
+            v-if="viendo === 'listas'"
+          >
             <option
               v-for="(lista, index) in viendoListas"
-              
               :key="index"
               :value="lista"
             >
@@ -426,7 +422,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
             <button @click="addingLista = true" v-if="viendo === 'listas'">
               ➕<span class="button-text"> LISTA</span>
             </button>
-            <button @click="renombrarLista" v-if="viendo === 'listas' ">
+            <button @click="renombrarLista" v-if="viendo === 'listas'">
               🔄<span class="button-text"> Renombrar</span>
             </button>
             <button @click="borrarLista" v-if="viendo === 'listas'">

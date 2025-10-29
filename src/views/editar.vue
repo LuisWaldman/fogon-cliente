@@ -91,8 +91,6 @@ const viendoModo = ref(0)
 function cambioModo(index: number) {
   viendoModo.value = index
 }
-
-
 </script>
 <template>
   <cabecera

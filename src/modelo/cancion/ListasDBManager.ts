@@ -103,8 +103,8 @@ export class ListasDBManager {
   ): Promise<void> {
     if (!this.db) await this.initDB()
 
-  // Convertir a objeto plano serializable antes de guardar
-  const plainElemento = JSON.parse(JSON.stringify(elemento))
+    // Convertir a objeto plano serializable antes de guardar
+    const plainElemento = JSON.parse(JSON.stringify(elemento))
 
     return new Promise((resolve, reject) => {
       const transaction = this.db!.transaction(['listas'], 'readwrite')
