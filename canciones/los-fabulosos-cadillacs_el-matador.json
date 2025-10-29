@@ -1,1 +1,408 @@
-{"cancion": "el-matador", "banda": "los-fabulosos-cadillacs", "escala": "Am", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Dm", "E7"]}, {"nombre": "parte2", "acordes": ["E7", "Am", "Dm"]}, {"nombre": "parte3", "acordes": ["E7", "Am", "Am", "Dm"]}, {"nombre": "parte4", "acordes": ["Am"]}], "orden_partes": [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 3]}, "letras": [["Me dicen el matador, naci en barrcas/n"], ["si hablamos de mat", "ar, mis palab", "ras matan/n"], ["no hace mucho ti", "empo que cay", "o el Leon Santillan/ny aho"], ["ra se que en cualquier mo", "mento me la van ", "a da", "r", "/n("], ["Pa mat", "ador, pa ", "matador)", "/n"], ["donde estas mat", "ador? (", "pa mat", "ador, pa ", "matador)", "/n"], ["Me dicen el matador me estan buscando/n"], ["en una fria pensio", "n los estoy e", "sperando/n"], ["agazapado en lo ma", "s oscuro de m", "i habitacion/n"], ["fusil en mano, es", "pero mi final,", " la cana te busca matador/n"], ["la cana te teme", " matador", "/n"], ["Matador, matad", "or, Donde estas", " matador?/n"], ["matador, matad", "or, no te vay", "as matad", "or, mata", "dor", "/n"], ["viento de libertad, sangre combat", "iva, en los bolsillos/ndel p"], ["ueblo, la v", "ieja herida./n"], ["Depronto el dia", " se me hace", " de noche/nmurmullos, corridas"], [" y el golpe en la puerta/nllego"], [" la fuerza ", "policial.", "", "", "/n"], ["por pelear", " por un mundo ", "mejor/nQue "], ["suena?/n"], ["son balas...me", " alcanzan", "...me a", "trapan..", "./n"], ["resiste... Vict", "or Jara...no c", "alla", "", "/n"], ["Matador, matado", "r, te estan", " buscando.../n"], ["matador te esta", "n mata", "ndo", "", "/n"], ["Me dicen el matador de los cien barrios portenos/n"], ["no tengo por que tener miedo/n"], ["mis palabras son balas/n"], ["balas de paz, balas de justicia/n"], ["soy la voz de los qu", "e hicieron cal", "lar sin razon/npor el solo h"], ["echo de pensar distinto/n"], ["ay Dios... San", "ta Maria de los Buenos Aires/n"], ["si todo estuviera me", "jor... Mat", "ador, mat", "ador,/n"], ["si todo estuviera mejor/n"], ["Matador, matado", "r, a donde va", "s matador?/n"], ["matadoooor..."]], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "pjPA7CXutDw", "delay": 0}]}
+{
+    "cancion": "el-matador",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "Am",
+    "bpm": 95,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "F",
+                    "F#",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E7",
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "E7",
+                    "Am",
+                    "E7",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Se",
+            "están buscando macadones.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "ta es una",
+            "canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta es una canción",
+            "en es",
+            "pañol de rock argentino. Es",
+            "ta es",
+            "",
+            "una",
+            "",
+            "",
+            "canción en",
+            "e",
+            "s",
+            "p",
+            "a",
+            "ñ",
+            "de rock argentino./n"
+        ],
+        [
+            "Matador, matador, ¿dón",
+            "de estás? Matador, m",
+            "atador, ¿dónd",
+            "estás?/n"
+        ],
+        [
+            "Matador,",
+            "matador, ¿dónde estás? Matado",
+            "r, matador, ¿",
+            "dónde estás? Matador",
+            "matador, ¿dónde estás? Matador, mat",
+            "ador, ¿dón",
+            "de estás? Matador, mata",
+            "dor, ¿dónde estás? De p",
+            "ronto el día se me hace de noche Mur",
+            "mullos, corridas que golpean la puert/n"
+        ],
+        [
+            "Llegó la fuerza policial",
+            "/n"
+        ],
+        [
+            "Mira, herma",
+            "no, en qué terminaste Por pele",
+            "ar por un mundo mejor/n"
+        ],
+        [
+            "Qué suen/n"
+        ],
+        [
+            "Son bala",
+            "s Me alcanzan/n"
+        ],
+        [
+            "Me atra",
+            "pan Resiste/n"
+        ],
+        [
+            "Victor Jara/n"
+        ],
+        [
+            "No calla/n"
+        ],
+        [
+            "Matador, ma",
+            "tador, matador te están bus",
+            "cando Matador, matad",
+            "or, te están matando",
+            "/n"
+        ],
+        [
+            "Matador/n"
+        ],
+        [
+            "Matador, mata",
+            "dor, valiente mat",
+            "ador",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me dicen el matador de los cien barr",
+            "ios Por ti ni yo no tengo por qué tener miedo Mis palabra",
+            "son balas, balas de paz Balas",
+            "de justicia Soy la voz de los que hicier",
+            "on callar sin razón Por un solo hecho de",
+            "pensar distinto Ay, Di",
+            "os Santa María de los Bu",
+            "enos Aires Si todo estuviera mej",
+            "or Matador, mat",
+            "ador Si todo estuviera mejo/n"
+        ],
+        [
+            "Matador, matado",
+            "donde vas, matador/n"
+        ],
+        [
+            "Ma",
+            "tador",
+            "/n"
+        ],
+        [
+            "Matador, matado",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "pjPA7CXutDw",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -2,209 +2,293 @@
     "cancion": "hay-una-luz",
     "banda": "miranda",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
+                    "Em",
                     "E2",
-                    "G"
+                    "C",
+                    "Em",
+                    "G",
+                    "E2",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "C",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "E2",
+                    "C",
+                    "Am",
+                    "Em",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
                     "Em",
-                    "C"
+                    "C",
+                    "C",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Em",
+                    "E2",
+                    "E2",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "E2",
+                    "C",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "C",
+                    "Em",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
                     "C",
                     "D",
                     "Bm",
-                    "Em"
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            0,
-            0,
-            1,
-            0,
-            1,
             2,
-            2,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            2,
-            2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Hay una l",
-            "uz q",
-            "ue brilla mÃ¡s/n"
+            "",
+            "",
+            "/n"
         ],
         [
-            "Que brill",
-            "a mÃ¡s ",
-            "que las demÃ¡s/n"
+            "Hay una",
+            "luz que brilla má",
+            "s, que brilla",
+            "más que las demá",
+            "s.\nEs una t",
+            "rampa, es un imá",
+            "n que te hace b",
+            "ien te hace ma",
+            "l.\nVoy acostumbrá",
+            "ndome ti,",
+            "lo que me to",
+            "ca, lo que me to",
+            "ca mi.\nMe sentí de más",
+            "me fui,",
+            "perdóname loc",
+            "a, no sé qué me pus",
+            "o así.\nYo no lo",
+            "vi sucedió,",
+            "el reflect",
+            "or se me afag",
+            "ó, en el rep",
+            "arto de tu sh",
+            "ow tan solo soy",
+            "espectador.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Es una tr",
-            "ampa",
-            ", es un imÃ¡n/n"
+            "Sal",
+            "el sol o",
+            "tra vez,",
+            "para ti p",
+            "ara mí también.\nVoy",
+            "de mal par",
+            "a bien, so",
+            "lo estoy rei",
+            "nventándome.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Que te ha",
-            "ce bien",
-            " y te hace mal/n"
+            "Hay una luz",
+            "que brilla más",
+            "que brilla más que",
+            "las demás./n"
         ],
         [
-            "Voy acost",
-            "umbradome a",
-            " tÃ­/n"
+            "Es una trampa,",
+            "es un imán que",
+            "te hace bien",
+            "te hace mal.\nVoy",
+            "de acompañante ti,",
+            "lo",
+            "que me toca,",
+            "lo que me toca mí ta",
+            "mbién.\nTu nombre en la lista,",
+            "lo que me toca,",
+            "lo que me toca",
+            "mí",
+            "también.",
+            "",
+            "/n"
         ],
         [
-            "Y a lo que me t",
-            "oca y a ",
-            "lo que me toca a mÃ­/n"
-        ],
-        [
-            "Me sentÃ­ ",
-            "demÃ¡s y ",
-            "me fui/n"
-        ],
-        [
-            "PerdÃ³name ",
-            "loca",
-            "  no sÃ© quÃ© me puso asÃ­/n"
-        ],
-        [
-            "Yo no lo ",
-            "vi y",
-            " sucediÃ³/n"
-        ],
-        [
-            "El reflec",
-            "tor se ",
-            "me apagÃ³/n"
-        ],
-        [
-            "Y en el r",
-            "epar",
-            "to de tu show/n"
-        ],
-        [
-            "Tan sÃ³lo",
-            " soy es",
-            "pectador/n"
-        ],
-        [],
-        [
+            "Sale el",
             "sol otra v",
-            "ez/nPara "
+            "ez, para",
+            "ti para mí",
+            "también.\nVoy de",
+            "mal para bi",
+            "en, solo e",
+            "stoy reinvent",
+            "ándome.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tÃ­, para mÃ­",
-            " tambiÃ©n/nVoy de m"
-        ],
-        [
-            "al para bi",
-            "en/nSÃ³lo"
-        ],
-        [
-            " estoy reinve",
-            "ntÃ¡ndome/n"
-        ],
-        [],
-        [
-            "Hay una l",
-            "uz q",
-            "ue brilla mÃ¡s/n"
-        ],
-        [
-            "Que brill",
-            "a mÃ¡s ",
-            "que las demÃ¡s/n"
-        ],
-        [
-            "Es una tr",
-            "ampa",
-            ", es un imÃ¡n/n"
-        ],
-        [
-            "Que te ha",
-            "ce bien",
-            " y te hace mal/n"
-        ],
-        [
-            "Voy de ac",
-            "ompaÃ±ante ",
-            "de tÃ­/n"
-        ],
-        [
-            "Y tÃº me das ce",
-            "los y u",
-            "na cinta para el vip/n"
-        ],
-        [
-            "Tu nombre",
-            " en la list",
-            "a yo vÃ­/n"
-        ],
-        [
-            "Tu nombre mÃ¡s ",
-            "uno p",
-            "ara referirse a mÃ­/nSale el "
-        ],
-        [
+            "Sale el",
             "sol otra v",
-            "ez/nPara tÃ­, para mÃ­ tambiÃ©n"
+            "ez, para",
+            "ti para mí",
+            "también.\nVoy de",
+            "mal para bie",
+            "n, solo es",
+            "toy reinventá",
+            "ndome.",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Reventá",
+            "ndome.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "etiquetas": [],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Hu-IJ_mKbgo",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "calidad": -1,
+    "calidad": 1,
     "procesando": 0
 }

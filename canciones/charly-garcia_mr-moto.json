@@ -8,108 +8,635 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G5",
                     "G5",
+                    "Bb5",
+                    "G5",
                     "C5",
                     "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "Bb5",
                     "A5",
+                    "A5 Bb5",
+                    "Bb5",
+                    "Bb5",
+                    "Bb5",
                     "G5",
-                    "Gm"
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "Bb5",
+                    "Bb5",
+                    "G5",
+                    "G5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C5",
-                    "Gm",
-                    "Gm",
                     "G5",
-                    "A5",
-                    "Bb5",
-                    "C5",
-                    "D5"
+                    "G5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C5",
-                    "Bb5",
-                    "A5",
                     "G5",
-                    "A5",
-                    "Bb5",
-                    "C5",
-                    "D5"
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G5"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
         [
-            "Por la carretera /n"
+            "carre",
+            "ter /n Quie",
+            "r ganar el mot",
+            "o /n Ti",
+            "en su camb",
+            "rer u",
+            "n caballo de me",
+            "ta/n"
         ],
         [
-            "llega Mister Moto. /n"
+            "Él va buscando",
+            "s desti",
+            "n /n Su sueño d",
+            "e libert",
+            "a /n Recorre m",
+            "uchos camino",
+            "s /n Campes de rock",
+            "metal /n U",
+            "sa con la",
+            "vera /n Si",
+            "guiend en muñe",
+            "quera /n Tie",
+            "mbla su p",
+            "as /n Guar",
+            "diáneo de la l",
+            "e /n D",
+            "e la ma",
+            "l naturaleza/n"
         ],
         [
-            "Tiene su campera /n"
+            "Vivió e",
+            "n comunidad/n"
         ],
         [
-            "y un caballo de metal.  /n"
+            "Escucha",
+            "d por /n Rodríguez/n"
         ],
         [
-            "El va bu",
-            "scando su de",
-            "stino, /n"
+            "De",
+            "l luz d",
+            "e día e",
+            "stá aquí /n M",
+            "ira en moto, mira,",
+            "está ahí /n C",
+            "onoci tanti",
+            "t nunca, nunc",
+            "a voy",
+            "i",
+            "r /n El m",
+            "iste mot",
+            "o",
+            "/n"
         ],
         [
-            "Porque él está aquí, /n"
-        ],
-        [
-            "Mister Moto ya está aquí. /n"
-        ],
-        [
-            "Conoció a Tanguito /n"
-        ],
-        [
-            "y nunca, nunca va a morir!!!  /n"
-        ],
-        [
-            "El n",
-            "acio",
-            " para",
-            " ser",
-            " salva",
-            "je ",
+            "E",
+            "mister m",
+            "ot",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "con s",
-            "u pu",
-            "ño d",
-            "e me",
-            "tal "
+            "E",
+            "l mister moto /n El m",
+            "iste moto /n El",
+            "miste m",
+            "ot /n El m",
+            "ist",
+            "e moto /n E",
+            "l",
+            "mister moto /n El mister moto E",
+            "l mis",
+            "te moto /n El mister moto E",
+            "l mister moto/n"
+        ],
+        [
+            "El mi",
+            "ste moto /n El mister",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "moto",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El m",
+            "ister moto /n E",
+            "l mi",
+            "ste moto /n E",
+            "l mi",
+            "ste moto/n"
+        ],
+        [
+            "E mis",
+            "te moto /n El mister moto E",
+            "l mi",
+            "ste moto /n E",
+            "l mis",
+            "te moto",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "l mister moto /n El mister moto El mister moto E",
+            "l m",
+            "iste moto /n E",
+            "l mi",
+            "ste moto /n E",
+            "l",
+            "m",
+            "i",
+            "s",
+            "t",
+            "e",
+            "moto",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "l miste",
+            "moto /n E",
+            "l mist",
+            "e moto /n E",
+            "l m",
+            "is",
+            "te",
+            "r moto /n El",
+            "mis",
+            "te moto /n El mis",
+            "te moto /n El",
+            "miste moto /n El miste",
+            "moto /n El",
+            "miste moto/n"
+        ],
+        [
+            "E",
+            "mi",
+            "st",
+            "e moto /n E",
+            "l mister",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "moto",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "l mister moto /n El mister moto El mis",
+            "te moto /n El",
+            "mist",
+            "e moto /n El mister moto E",
+            "l mi",
+            "ste",
+            "r moto /n El mi",
+            "ste moto",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "l mi",
+            "ste moto",
+            "/n"
+        ],
+        [
+            "E",
+            "l mister moto /n E",
+            "l mist",
+            "e moto /n E",
+            "l",
+            "m",
+            "i",
+            "s",
+            "t",
+            "e",
+            "r",
+            "",
+            "moto",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "l mist",
+            "e m",
+            "o",
+            "t",
+            "o/n"
+        ],
+        [
+            "El m",
+            "i",
+            "s",
+            "t",
+            "moto",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El mister moto"
         ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "dMu_WUOO2KI",
-            "delay": 0
+            "delay": 22590.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

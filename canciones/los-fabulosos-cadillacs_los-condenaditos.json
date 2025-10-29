@@ -1,1 +1,496 @@
-{"cancion": "los-condenaditos", "banda": "los-fabulosos-cadillacs", "escala": "Gm", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Gm", "Gm", "Cm", "A#"]}, {"nombre": "parte2", "acordes": ["Gm", "Gm", "Cm", "Dm"]}, {"nombre": "parte3", "acordes": ["Gm", "Cm", "A#", "G#", "D7", "Gm", "Cm", "A#"]}, {"nombre": "parte4", "acordes": ["Gm", "Cm", "A#", "G#", "D7", "Gm"]}], "orden_partes": [0, 1, 2, 1, 2, 3, 3]}, "letras": [["Donde est\u00c3\u00a1 escondido ese recuerdo tan temido/n"], ["La ra ra la ra ra", " ra ra", " ra r", "a/n"], ["D\u00c3\u00b3nde est\u00c3\u00a1 Escondido, e", "se recuerdo tan preciado/n"], ["Que parte de tu cuerpo guarda to", "do olvidado/n"], ["Por qu\u00c3\u00a9 est\u00c3\u00a1s tan cansado no", " vez que sos pendejo/n"], ["Dej\u00c3\u00a1 de complicarte, qu", "e ya est\u00c3\u00a1s casi muerto/n"], ["La ra ra la ra ra", " ra ra", " ra r", "a/n"], ["D\u00c3\u00a1nde est\u00c3\u00a1 la llave, que te a", "bra la ventana/n"], ["Qui\u00c3\u00a9n dicta la sentencia, que te", " est\u00c3\u00a1 robando el alma/n"], ["Por qu\u00c3\u00a9 est\u00c3\u00a1s tan cansado no", " vez que sos pendejo/n"], ["Dej\u00c3\u00a1 de complicarte, que", " ya esta casi muerto/n"], ["La ra ra la ra ra", " ra ra", " ra r", "a/n"], ["Muerto muerto muerto/n"], ["Mir\u00c3\u00a1 te est\u00c3\u00a1n velando/n"], ["Son todos tus amigos/n"], ["Todos tus recuerdos olvidados (X2)/n"], ["Se nubla se nubla/n"], ["Donde esta escondido ese recuerdo tan temido/n"], ["Muerto muerto muerto/n"], ["Mir\u00c3\u00a1 te est\u00c3\u00a1n velando/n"], ["Son todos tus amigos/n"], ["Todos tus recuerdos olvidados (X2)/n"], ["Se nubla se nubla"]], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "T8sCcEGPuhs", "delay": 0}]}
+{
+    "cancion": "los-condenaditos",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "Gm",
+    "bpm": 86,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Gm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Dm",
+                    "Dm",
+                    "Cm",
+                    "A#",
+                    "G#",
+                    "G#",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Gm",
+                    "Gm",
+                    "Dm",
+                    "Dm",
+                    "Cm",
+                    "A#",
+                    "G#",
+                    "G#",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "A#",
+                    "G#",
+                    "G#",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D7",
+                    "A#",
+                    "G#",
+                    "G#",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Gm",
+                    "Gm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "Gm",
+                    "A#",
+                    "G#",
+                    "G#",
+                    "D7",
+                    "D7",
+                    "A#",
+                    "G#",
+                    "G#",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A#",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "Dm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Gm",
+                    "Dm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Gm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Cm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "A#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G#",
+                    "A#",
+                    "Dm",
+                    "Dm",
+                    "Gm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ]
+    },
+    "letras": [
+        [
+            "¿D",
+            "ónde está escondido ese",
+            "recuerdo tan tenido?/n"
+        ],
+        [
+            "Es parte de tu cuerpo",
+            "vaso e",
+            "scondid",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Dónde está escondid",
+            "ese recuerdo tan preciad",
+            "o? Que parte de tu cue",
+            "rpo guardas como molin",
+            "ado ¿Por qué estás tan ca",
+            "nsado? No ves que sos p",
+            "endejo Deja de compl",
+            "icarte, que ya estás cas",
+            "i muerto/n"
+        ],
+        [
+            "Caminá, caminá,",
+            "ca",
+            "mi",
+            "ná",
+            "¿Quién tiene los ojos que",
+            "te abran la ventana",
+            "¿Quién dicta la sentenc",
+            "ia que te están romando en la b",
+            "uja? ¿Por qué estás tan can",
+            "sado? No ves que sos pe",
+            "ndejo Deja de complic",
+            "arte, que ya estás casi m",
+            "uerto/n"
+        ],
+        [
+            "Caminá, caminá,",
+            "ca",
+            "mi",
+            "ná Mu",
+            "erto, muerto, muerto,",
+            "mira que están velando Son",
+            "todos tus amigos,",
+            "todos tus recuerdos",
+            "olvidados/n"
+        ],
+        [
+            "Muerto, muerto, muerto,",
+            "mira que están velando Son",
+            "todos tus amigo",
+            "s, todos tus recuerd",
+            "os olvidad",
+            "os",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Dónde está esco",
+            "ndido ese recuerdo tan te",
+            "mido? Que parte de tu c",
+            "uerpo guardas todo",
+            "/n"
+        ],
+        [
+            "Escondido, escondi",
+            "do, escondi",
+            "do, escon",
+            "dido Muerto, muert",
+            "o, muerto, mira que están",
+            "velando Son todos tus",
+            "amigos, todos tus",
+            "recuerdos olvidad",
+            "os Muerto, muert",
+            "o, muerto, mira que están",
+            "velando Son todos tus",
+            "amigos, todos tus",
+            "recuerdos olvida",
+            "dos Muerto,",
+            "muer",
+            "to, muer",
+            "to, muer",
+            "to Hay un ni",
+            "ño argentino recostado en",
+            "una esquina Que",
+            "piensa que",
+            "siente que lo alegra una triste",
+            "melodía una p",
+            "resencia ausente, una",
+            "presencia ausente lo desarma",
+            "en oscuridad",
+            "en oscuridad iluminada/n"
+        ],
+        [
+            "No queda nada,",
+            "nada La nada",
+            "es un adorno de crist",
+            "al guardada en un placar de su",
+            "madre Es un adorno s",
+            "obre un piano que",
+            "vibra con las notas/n"
+        ],
+        [
+            "Es",
+            "ta fiesta de hoy,",
+            "este cumpleaños es solo una e",
+            "xcusa para vernos/n"
+        ],
+        [
+            "Este, este de acá es",
+            "un mundo real, est",
+            "e es un mundo real No el m",
+            "undo de esos senadores del alto No",
+            "el mundo de esos políticos de mierda/n"
+        ],
+        [
+            "Este es el mundo real al que nosotro",
+            "debemos vivir El mundo de la música,",
+            "el mundo del arte/n"
+        ],
+        [
+            "Que creemos jueguesos imbéci",
+            "les, no pertenecemos ese mundo E",
+            "ste es nuestro mundo",
+            ", niño argentino,",
+            "no dejes que te duermas Des",
+            "percate, carga la botell",
+            "a, no escuches",
+            "esa gente/n"
+        ],
+        [
+            "Sigamos creciendo con",
+            "este mundo, este mundo es r",
+            "eal, rea/n"
+        ],
+        [
+            "Porque si no niño,",
+            "el cielo se nubla, se nub",
+            "la, se nubla, se nublo/n"
+        ],
+        [
+            "Se nubla, se nubla, se n",
+            "ubla,",
+            "se nu",
+            "bl",
+            "",
+            "/n"
+        ],
+        [
+            "Esta fiesta de hoy, este",
+            "cu",
+            "mp",
+            "le",
+            "añ",
+            "es solo una excusa para vernos Este es",
+            "nuestro mund",
+            "o, niño argentino, no dejes que te duermas Este es nuestro mundo, niño argentino, no dejes que te duermas Este es nuestro mundo, niño argentino,",
+            "no dejes que te duermas ¡Vaya!",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Chau amiguit",
+            "os, muchas pero muchas graci",
+            "as No hace falta que lo viv",
+            "amos, pero de verdad sepamos que e",
+            "sto es nuestro de nadie más/n"
+        ],
+        [
+            "Nadie puede entrometerse en",
+            "nosotros, que tengan una vida feliz como la nuestra S",
+            "omos muy, muy, pero muy felices de haber estado acá estas n",
+            "oches nos vemos muy pronto,",
+            "muy, muy pronto, gracias Subtítulos realizados por la comunidad de Amara .org"
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "T8sCcEGPuhs",
+            "delay": 12000.0
+        }
+    ],
+    "calidad": 1
+}

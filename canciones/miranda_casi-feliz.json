@@ -2,41 +2,49 @@
     "cancion": "casi-feliz",
     "banda": "miranda",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F",
+                    "F",
                     "Dm",
+                    "Dm",
+                    "Bb",
+                    "Dm",
+                    "Bb",
                     "Bb"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
                     "F",
+                    "F",
+                    "Dm",
+                    "Dm",
                     "Dm",
                     "Bb",
                     "C",
-                    "F",
-                    "F"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Dm",
-                    "Gm",
-                    "C7",
                     "F",
-                    "Dm",
-                    "Gm",
-                    "C",
+                    "F",
+                    "F",
                     "F"
                 ]
             },
@@ -44,8 +52,122 @@
                 "nombre": "parte4",
                 "acordes": [
                     "Dm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Gm",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bb",
                     "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
                     "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Gm"
                 ]
             }
         ],
@@ -53,107 +175,136 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
             3,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Viernes a la noche terminando la semana/n"
+            "/n"
         ],
         [
-            "Me emborracho solo, voy y vengo de la cama/n"
+            "Viernes la noche,",
+            "terminando la seman",
+            "a. Me emborracho, sol",
+            "voy vengo de la ca",
+            "ma. Creo que com",
+            "de más que soy cas",
+            "i feliz.",
+            "/n"
         ],
         [
-            "Creo que comÃ­ demÃ¡s y que soy casi f",
-            "eliz/n"
+            "Prendo la TV p",
+            "ero la dejo silenc",
+            "iada. Hago planes im",
+            "posibles que quedan en",
+            "nada. Luego los ca",
+            "ncelaré, es habitu",
+            "al para mí.",
+            "/n"
         ],
         [
-            "Prendo la tv pero la dejo silenciada/n"
+            "Algo de mí, de",
+            "mí, de mí, de",
+            "mí, de mí.",
+            "/n"
         ],
         [
-            "Hago planes imposibles que quedan en nada/n"
+            "Algo de mí,",
+            "no estoy t",
+            "odo feliz/n"
         ],
         [
-            "Luego los cancelarÃ©, e",
-            "s habitual para mi",
-            "/nAlgo de "
+            "Ca",
+            "si feliz, f",
+            "eliz, feliz, f",
+            "eliz, feliz",
+            "/n"
         ],
         [
-            "mi, de mi, de mi, de mi, de ",
-            "mi/nAlgo de"
+            "Casi feli",
+            "z, no alca",
+            "nza para mí.",
+            "/n"
         ],
         [
-            " mi/nNo es del todo fe"
+            "La",
+            "contradicción eterna de",
+            "la raza humana. La",
+            "parodia de la sociedad",
+            "civilizada. Pued",
+            "e que me haga llorar pe",
+            "ro prefiero reí",
+            "r.",
+            "/n"
         ],
         [
-            "liz/nCasi fe"
+            "Estoy en el medio de la v",
+            "ida tengo ganas de",
+            "que salga el sol me des",
+            "pierte la mañana./n"
         ],
         [
-            "liz, feliz, feliz, feliz, fel",
-            "iz/nCasi fe"
+            "Que si sale para mí t",
+            "ambién lo hará para",
+            "ti./n"
         ],
         [
-            "liz/nNo alc"
+            "Algo de",
+            "mí, de mí, de",
+            "mí, de mí, de",
+            "mí./n"
         ],
         [
-            "anza para m",
-            "i/n"
+            "Algo",
+            "de mí, no",
+            "estoy todo f",
+            "eliz./n"
         ],
         [
-            "La contradicciÃ³n eterna de la raza humana/n"
+            "Casi f",
+            "eliz, feliz,",
+            "feliz, feliz,",
+            "feliz./n"
         ],
         [
-            "La parodia de la sociedad civilizada/n"
+            "Cas",
+            "feliz,",
+            "no alcanza pa",
+            "ra mí./n"
         ],
         [
-            "Puede que me haga llorar pero prefiero r",
-            "eÃ­r/n"
+            "Cas",
+            "feliz,",
+            "fel",
+            "iz. C",
+            "asi feliz",
+            "fe",
+            "liz.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Estoy en el medio de la vida y tengo ganas/n"
-        ],
-        [
-            "De que salga el Sol y me despierte a la maÃ±ana/n"
-        ],
-        [
-            "Que si sale para mi, t",
-            "ambiÃ©n lo harÃ¡ para",
-            " ti/n"
-        ],
-        [
-            "Algo de mi, de mi, de mi, de mi, de ",
-            "mi/n"
-        ],
-        [
-            "Algo de mi/n"
-        ],
-        [
-            "No es del todo feliz/n"
-        ],
-        [
-            "Casi feliz, feliz, feliz, feliz,",
-            " feliz/n"
-        ],
-        [
-            "Casi feliz/nNo al"
-        ],
-        [
-            "canza para ",
-            "mi/n"
-        ],
-        [
-            "Casi feliz",
-            ", feli",
-            "z/n"
-        ],
-        [
-            "Casi feliz,",
-            " feliz",
-            ""
+            "Casi feliz, no alcanza para mí."
         ]
     ],
     "etiquetas": [],
@@ -161,8 +312,9 @@
         {
             "tipo": "Youtube",
             "id": "KEVBhZfugNE",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "procesando": 2
+    "procesando": 2,
+    "calidad": 1
 }

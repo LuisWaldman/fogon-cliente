@@ -1,1 +1,666 @@
-{"cancion": "destino-de-paria", "banda": "los-fabulosos-cadillacs", "escala": "A", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "Am", "G"]}, {"nombre": "parte2", "acordes": ["Am", "G", "A", "Am", "D", "G", "B", "A"]}], "orden_partes": [0, 1]}, "letras": [["Y va", " la tarde sobre el barrio/ncon calor el coraz\u00c3\u00b3n va lento"], ["/n"], ["y el destino que se empe\u00c3\u00b1a/nen ponerme siempre frente a vos."], ["/n"], ["Te amo tanto que no veo lo que soy/nme quedo sin tu mirada"], ["/n"], ["solo como un paria si tu amor", "/n"], ["si no hay manera/n"], ["Y fue la tarde noche triste ya llego"]], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "xRKRwBUE2P8", "delay": 0}]}
+{
+    "cancion": "destino-de-paria",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "A",
+    "bpm": 151,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "E",
+                    "Am",
+                    "A",
+                    "Am",
+                    "Am",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte32",
+                "acordes": [
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino.",
+            "la tarde sobre el barrio con",
+            "calor el corazón",
+            "va lent",
+            "o",
+            "el destino que se empe",
+            "ña en ponerme siempre fre",
+            "nte hoy/n"
+        ],
+        [
+            "No",
+            "te amo tanto que no",
+            "veo lo que soy lo que ten",
+            "go delan",
+            "te/n"
+        ],
+        [
+            "De tantas tardes espe",
+            "rando que salieras tal",
+            "vez sea hoy",
+            "/n"
+        ],
+        [
+            "S",
+            "ería un milagro",
+            "si te",
+            "enamoras de",
+            "mi Yo",
+            "solo vivo para",
+            "vos, tan",
+            "solo para vos/n"
+        ],
+        [
+            "Solo en la v",
+            "ida me siento",
+            "sin tu cari",
+            "ño/n"
+        ],
+        [
+            "S",
+            "olo como un",
+            "pare, así com",
+            "/n"
+        ],
+        [
+            "Si no hay ma",
+            "nera de que",
+            "pueda enamorarte",
+            "/n"
+        ],
+        [
+            "I",
+            "rme al ot",
+            "ro lado es lo m",
+            "ejor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Fue la tarde noche tri",
+            "ste ya llegó porque no",
+            "has sali",
+            "do/n"
+        ],
+        [
+            "Es la historia de uno",
+            "más de esta ciudad que se",
+            "murió de am",
+            "or/n"
+        ],
+        [
+            "Si pudieras yo",
+            "sacarte de mi alma",
+            "cambiare el desti",
+            "no Si pudieras yo sacarte de mi alma cambiare el destino/n"
+        ],
+        [
+            "Seguiría es",
+            "tando solo como un pare,",
+            "eso es lo que soy",
+            "",
+            "/n"
+        ],
+        [
+            "Sería un mila",
+            "gro si te",
+            "enamoras de",
+            "mi/n"
+        ],
+        [
+            "Tan solo vivo pa",
+            "ra vos, tan",
+            "solo para",
+            "vos Solo en la v",
+            "ida me siento",
+            "sin tu ca",
+            "riño/n"
+        ],
+        [
+            "So",
+            "lo como un",
+            "pare, así co",
+            "mo/n"
+        ],
+        [
+            "Si no hay m",
+            "anera de que",
+            "pueda enamorart",
+            "/n"
+        ],
+        [
+            "I",
+            "rme al ot",
+            "ro lado es lo m",
+            "ejor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh",
+            "yeah",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Solo en",
+            "la vida me",
+            "siento sin",
+            "tu cariño",
+            "/n"
+        ],
+        [
+            "Solo co",
+            "mo un pare, así c",
+            "omo/n"
+        ],
+        [
+            "Si no",
+            "hay manera de",
+            "que pueda e",
+            "namora",
+            "rte/n"
+        ],
+        [
+            "Irme al",
+            "otro lado es",
+            "lo mejor/n"
+        ],
+        [
+            "Solo",
+            "en la vida",
+            "me siento sin",
+            "tu mir",
+            "ada Que es",
+            "toy solo c",
+            "omo un pare, así",
+            "como/n"
+        ],
+        [
+            "Si no",
+            "hay manera",
+            "de que pueda ena",
+            "morarte",
+            "/n"
+        ],
+        [
+            "Irme al",
+            "otro lado es",
+            "lo mejor/n"
+        ],
+        [
+            "Solo",
+            "en la vida",
+            "me quedo si es",
+            "tas tan lej",
+            "os/n"
+        ],
+        [
+            "Solo c",
+            "omo un pare,",
+            "así como/n"
+        ],
+        [
+            "Si",
+            "no hay manera",
+            "de volver",
+            "enamorarte",
+            "/n"
+        ],
+        [
+            "Irme",
+            "al otro lado es",
+            "lo mejor/n"
+        ],
+        [
+            "Sol",
+            "o en la vida",
+            "me siento sin",
+            "tu mirada",
+            "/n"
+        ],
+        [
+            "Solo c",
+            "omo un pare,",
+            "así como",
+            "/n"
+        ],
+        [
+            "Si no hay manera de que pueda enamorarte"
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "xRKRwBUE2P8",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

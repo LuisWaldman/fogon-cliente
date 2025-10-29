@@ -1,1 +1,563 @@
-{"cancion": "el-crucero-del-amor", "banda": "los-fabulosos-cadillacs", "escala": "C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Dm", "Em", "Dm"]}, {"nombre": "parte2", "acordes": ["C", "Am", "F", "Fm"]}, {"nombre": "parte3", "acordes": ["Am", "D", "Bm", "Em"]}], "orden_partes": [0, 1, 1, 1, 2]}, "letras": [["C - D", "m - Em", " - C# ", "Todo dos veces/nSe fu"], ["e el amor se fue solo me", " dejo/nLos an"], ["illos de mis dedos/nDe rep"], ["ente se llevo/nAdi"], ["os amor adios y no vue", "lvas mas/nYo sab"], ["ia desde siempre/nQue esto t"], ["erminaba mal/nY n"], ["unca me vuelvo a enamora", "r/nNi por t"], ["odo el oro de este mundo/nEso n"], ["o me pasa mas/nQuierem"], ["e   ", " aunque me hag", "as mal", ""]], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "gdnsNZzvBHM", "delay": 0}]}
+{
+    "cancion": "el-crucero-del-amor",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "C",
+    "bpm": 143,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "Dm",
+                    "Am",
+                    "Fm",
+                    "F",
+                    "Fm",
+                    "C",
+                    "D",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Fm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "F",
+                    "C",
+                    "C Dm",
+                    "C",
+                    "C",
+                    "C Dm",
+                    "C Dm",
+                    "C",
+                    "C Dm",
+                    "C Dm",
+                    "C Dm",
+                    "C Dm",
+                    "C",
+                    "C Dm",
+                    "C",
+                    "C Dm",
+                    "C",
+                    "C Dm",
+                    "C Dm",
+                    "C Dm",
+                    "C Dm",
+                    "C Dm",
+                    "C Dm",
+                    "C Dm",
+                    "C",
+                    "C Dm",
+                    "C Dm",
+                    "C",
+                    "C Dm",
+                    "C Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Se",
+            "fue el amor, se f",
+            "ue, solo me d",
+            "ejó Los a",
+            "nillos de 22",
+            "de repente se",
+            "llevó Adiós,",
+            "amor, adiós, si no",
+            "vuelvas más Yo",
+            "sabía desde si",
+            "empre que esto term",
+            "inaba mal",
+            "nunca me vuelvo",
+            "enamorar/n"
+        ],
+        [
+            "Ni por todo el oro",
+            "de este mundo esta noc",
+            "he pasa más",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El cielo es tan a",
+            "zul tan verde el",
+            "mar Las e",
+            "strellas que presenc",
+            "ia querí me dejan p",
+            "ensar Adiós,",
+            "mi reina, adiós, si no",
+            "vuelvas más/n"
+        ],
+        [
+            "Yo sabía desde sie",
+            "mpre que esto term",
+            "inaba mal",
+            "nunca me vuelvo",
+            "enamora",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Adi",
+            "ós, amor, ad",
+            "iós",
+            "si no vuelvas más",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Quéreme",
+            "aunque me hagas mal/n"
+        ],
+        [
+            "Adiós,",
+            "mi reina, adiós, ya no",
+            "vuelvas más/n"
+        ],
+        [
+            "Quéreme,",
+            "aunque me hagas",
+            "mal Soleda",
+            "te llama,",
+            "soledad no vuelvas, pref",
+            "iero llorar Quéreme,",
+            "aunque me ha",
+            "gas mal Rep",
+            "arico, que cui",
+            "das nuestras alm",
+            "as Quéreme, de",
+            "las tormentas Aunque",
+            "me hagas mal de la os",
+            "curidad Repari",
+            "co, quiero estar baj",
+            "o tu techo",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Quéreme, aunque me hagas mal",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tú que llena",
+            "todo De alegrí",
+            "cuento/n"
+        ],
+        [
+            "Que ves fantas",
+            "mas en la noche de",
+            "quietud/n"
+        ],
+        [
+            "Yo te pido que te vayas de",
+            "mí Porque yo",
+            "he ya luc",
+            "hado contra tod",
+            "la maldad T",
+            "engo las manos tan",
+            "deshechas de apre",
+            "tar Yo",
+            "te pido que te vayas de",
+            "mí Vente de mí,",
+            "vente de mí, yo te pido que",
+            "te vayas de mí Qué",
+            "reme,",
+            "aunque me hagas mal/n"
+        ],
+        [
+            "Adiós, mi",
+            "reina, adiós, ya no",
+            "vuelvas más Q",
+            "uéreme,",
+            "aunque me hagas mal/n"
+        ],
+        [
+            "Soledad",
+            "te llama,",
+            "soledad no vuelvas/n"
+        ],
+        [
+            "Quérem",
+            "aunque me hagas",
+            "mal",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Quérem",
+            "",
+            ""
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "gdnsNZzvBHM",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

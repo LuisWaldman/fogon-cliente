@@ -8,11 +8,36 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "C#m",
-                    "D"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
@@ -20,10 +45,8 @@
                 "acordes": [
                     "A",
                     "A",
-                    "E",
+                    "C#m",
                     "D",
-                    "A",
-                    "E",
                     "D"
                 ]
             },
@@ -31,77 +54,497 @@
                 "nombre": "parte3",
                 "acordes": [
                     "A",
-                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "C#m",
+                    "D",
                     "D",
                     "A",
+                    "A",
+                    "C#m",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C#m",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "yo naci en jerusa",
-            "lem, tenia un ",
-            "felling que no podia se",
-            "r  /nnesecitaba un luga"
+            "E",
+            "l próximo número s",
+            "e llama /n E",
+            "l /n Peso,",
+            "aproximadamente el dóla",
+            "r/n"
         ],
         [
-            "r adonde esc",
-            "onder mi piel ",
-            "/ncuando vi a un extranj"
-        ],
-        [
-            "ero, le pregunte ",
-            "que siglo es este  ",
-            "/nel me miro y simplem"
-        ],
-        [
-            "ente, me dijo que ya",
-            " me tenia que ir ",
-            "/ns"
-        ],
-        [
-            "aquen est",
-            "e peso, sa",
-            "quenlo ",
-            "de aqui  ",
-            " ",
-            "/n"
-        ],
-        [
-            "saquen es",
-            "te peso, a",
-            "hhh, ahhhh, ahhh,  el peso que pusieron en mi",
+            "Tres,",
+            "cuatro..",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "cua",
-            "ren",
-            "tis",
-            "iet",
-            "e botellas ocupan mucho lugar "
+            "Y",
+            "o nací en /n Jerus",
+            "alén tenía un feeling q",
+            "ue no podía ser",
+            "/n"
+        ],
+        [
+            "Necesitaba u",
+            "n lugar adonde",
+            "esconderí/n"
+        ],
+        [
+            "Cua",
+            "nd vi un extra",
+            "njero le probé q",
+            "u el sitio es s",
+            "uelt /n É",
+            "l me miró s",
+            "implement me dijo q",
+            "ue ella no tenía q",
+            "ue ir /n Sá",
+            "que este p",
+            "eso",
+            "sáquenlo de a",
+            "quí",
+            "sáquen este pe",
+            "s /n Ah",
+            ",",
+            "",
+            "ah, el p",
+            "es que pusieron en m",
+            "í",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cuarenta s",
+            "iete botellas o",
+            "cupa mucho l",
+            "uga/n"
+        ],
+        [
+            "Si me pi",
+            "diero ayuda,",
+            "¿cómo me podía n",
+            "egar/n"
+        ],
+        [
+            "Me encantan tanto l",
+            "as mujeres qu",
+            "e consiguieron s",
+            "alvarm/n"
+        ],
+        [
+            "Aceptaron s",
+            "u destino",
+            "se largaro",
+            "n llor",
+            "a /n Sáquen est",
+            "e peso,",
+            "sáquenlo d",
+            "e aquí",
+            "sáquen est",
+            "e peso /n A",
+            "h, ah,",
+            "e",
+            "l",
+            "peso que pusiero",
+            "en mí",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sáq",
+            "ue este peso",
+            ",",
+            "sáquenl de a",
+            "qu /n Sáq",
+            "ue este p",
+            "eso",
+            "",
+            "",
+            "el pe",
+            "s que pusieron en m",
+            "í/n"
+        ],
+        [
+            "Fu",
+            "e",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "F",
+            "ue/n"
+        ],
+        [
+            "En este centro d",
+            "la tierra exis",
+            "t una contra",
+            "dicció /n Q",
+            "u creo que tiene m",
+            "ucho adictos, es p",
+            "arte de la rel",
+            "igió /n C",
+            "re la /n Virgen M",
+            "aría en /n M",
+            "arí va la c",
+            "ader",
+            "en el /n Espí",
+            "rit /n Santo que",
+            "e como un obi",
+            "t nomás/n"
+        ],
+        [
+            "Sáque este p",
+            "eso",
+            "sáquenlo de a",
+            "quí,",
+            "sáquen este p",
+            "es/n"
+        ],
+        [
+            "Ah",
+            ",",
+            "ah, el",
+            "pes que pusieron en",
+            "mí e",
+            "l peso, e",
+            "l",
+            "",
+            "peso",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sáquen este peso,",
+            "sá",
+            "qu",
+            "en de aquí, sáquenlo",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "de aquí/n"
+        ],
+        [
+            "E",
+            "l tract",
+            "o",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "I5TnFchrH2E",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

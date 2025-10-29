@@ -4,96 +4,232 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
+                    "A",
+                    "D",
                     "D",
                     "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
                     "E",
                     "D",
+                    "D",
+                    "D",
+                    "G",
+                    "E",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "D",
-                    "G",
-                    "E",
                     "D",
                     "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "E",
                     "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4
         ]
     },
     "escala": "A",
     "letras": [
         [
-            "   Gasté mucho tiempo, y mucho dinero, /nsaqu"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " algunas palomas de algún sombrero, ",
-            "/nNunca digo l"
+            "Das",
+            "t mucho tiempo, n",
+            "i mucho dinero, saq",
+            "u algunas palomas de a",
+            "lgún sombrero, soy un",
+            "o más del montón, en l",
+            "a máquina del tiempo nunca",
+            "viv la verdad, p",
+            "ero nunca",
+            "mien",
+            "to /n Todav",
+            "í tengo un poco de co",
+            "razón no me acue",
+            "rd la letra de nuest",
+            "r canción, pero te",
+            "ng un billete de i",
+            "ra porque par",
+            "a mi vivir es una f",
+            "orm de vida, porque pa",
+            "r mi vivir e",
+            "s una forma de v",
+            "ida/n"
         ],
         [
-            "a verdad   pero nu",
-            "nca miento.  ",
-            "/nTodaví"
+            "Gast mucha",
+            "botas muchos ce",
+            "niceros volver, vo",
+            "lve partir pri",
+            "mero un simple pe",
+            "ató buscando sentimi",
+            "entos nunca digo la",
+            "verdad",
+            "pero nunca mient",
+            "o/n"
         ],
         [
-            "a tengo un poco de corazón!  /nNo me acuerdo"
+            "Me queda un",
+            "poc de inspirac",
+            "ión alguna pist",
+            "ol en algún cajón",
+            ", pero está bien e",
+            "scondida p",
+            "orque para mi vivir",
+            "e una forma de vida,",
+            "porque para m",
+            "i vivir es una fo",
+            "rm de vida.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " la letra de nuestra canció",
-            "n,  /npero ten"
-        ],
-        [
-            "go un billete de ida... /nporque para"
-        ],
-        [
-            " mí vivir es una forma de vida, /nporque para "
-        ],
-        [
-            "mí vivir es",
-            " una forma de vida.  ",
-            ""
-        ],
-        [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Tengo nuev",
+            "televisión,",
+            "le tengo reservado e",
+            "l mejor rumbo,",
+            "estará siempre s",
+            "entirá porque p",
+            "ara mi vivir e",
+            "una forma de vida, porq",
+            "u para mi vi",
+            "vi es una forma de vida. /n Es una forma",
+            "de vida, p",
+            "orqu",
+            "par mi vi",
+            "vi es una forma d",
+            "e vida,",
+            "porqu",
+            "par mi vi",
+            "vi es una forma d",
+            "e vida.",
             "",
             "",
             "",
             ""
         ]
     ],
-    "bpm": 80,
-    "calidad": 0,
+    "bpm": 129,
+    "calidad": 1,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "7xjWpXyKHP0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4
 }

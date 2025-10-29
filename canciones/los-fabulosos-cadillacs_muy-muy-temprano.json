@@ -1,1 +1,532 @@
-{"cancion": "muy-muy-temprano", "banda": "los-fabulosos-cadillacs", "escala": "C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G", "Dm", "F"]}, {"nombre": "parte2", "acordes": ["Dm", "G", "Dm", "G"]}], "orden_partes": [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]}, "letras": [[], ["Hoy despert\u00c3\u00a9 y me sent\u00c3\u00ad e", "nfermo/nque se"], ["r\u00c3\u00a1 lo que habr\u00c3\u00a9 so", "\u00c3\u00b1ado/nse"], ["guro viejo es lo de si", "empre/na"], ["noche termine medio toma", "do./n"], [], ["Hoy despert\u00c3\u00a9 y te odie mas que ", "nunca/nporque te a"], ["m\u00c3\u00a9 y me sent\u00c3\u00ad un ta", "rado/nan"], ["oche yo te apunte con un de", "do/nlos otros "], ["tres dedos me dispara", "ron./n"], ["Estrib", "illo:", " x2", "/nRi"], ["\u00c3\u00a9ndome", "/nri"], ["\u00c3\u00a9ndome", "/n"], [], ["Es temprano aun para llam", "arte/nme v"], ["isto mientras pienso en tu ma", "dre/nan"], ["oche ella me echo de su ca", "sa/nporque "], ["yo te bese a sus espa", "ldas./n"], [], [], [], [], [], [], []], "etiquetas": ["Cumbia"], "medias": [{"tipo": "Youtube", "id": "1-2vhIeIBvA", "delay": 0}]}
+{
+    "cancion": "muy-muy-temprano",
+    "banda": "los-fabulosos-cadillacs",
+    "escala": "C",
+    "bpm": 129,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "C#m",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "G",
+                    "Dm",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy",
+            "desperté me",
+            "sentí enfer",
+            "mo. ¿Qué será lo",
+            "que habré soñado/n"
+        ],
+        [
+            "Seguro viejo,",
+            "es lo de siempre./n"
+        ],
+        [
+            "Anoche terminé m",
+            "edio tomado.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy desperté",
+            "odio más que nun",
+            "ca. Porque te amé",
+            "me sentí un para",
+            "do. Anoche yo",
+            "te apunte con un d",
+            "edo. Dos tres d",
+            "edos me dispararo",
+            "n.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ríendome,",
+            "ríendome,",
+            "ríend",
+            "ome,",
+            "ríend",
+            "ome.",
+            "",
+            "/n"
+        ],
+        [
+            "Ríendome, r",
+            "íendome, ríendom",
+            "e, ríendome. Ríendome",
+            "ríendome, ríendom",
+            "e, ríendome.",
+            "/n"
+        ],
+        [
+            "Ríendome, rí",
+            "endome, ríendom",
+            "e, ríendome.",
+            "/n"
+        ],
+        [
+            "Ríendome,",
+            "ríendome, ríe",
+            "ndome,",
+            "ríendome./n"
+        ],
+        [
+            "Uh,",
+            "uh, uh,",
+            "uh.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es temprano aún p",
+            "ara llamarte./n"
+        ],
+        [
+            "Me viste mientras pie",
+            "nso en tu madre. A",
+            "noche ella me ec",
+            "hó de su casa. Porqu",
+            "e yo te besé",
+            "sus espaldas.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mi padre grita",
+            "que me levant",
+            "e. Salga la call",
+            "e corriéndome./n"
+        ],
+        [
+            "Voy clase al",
+            "frío, tal vez no aguante./n"
+        ],
+        [
+            "Pero sé que mori",
+            "ré ríendome.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ríendome, r",
+            "íendome,",
+            "ríend",
+            "ome,",
+            "ríendom",
+            "e.",
+            "/n"
+        ],
+        [
+            "Ríe",
+            "ndome, ríendome,",
+            "ríen",
+            "dome",
+            "ríendome.",
+            "/n"
+        ],
+        [
+            "Ríendome",
+            "ríendome, ríendome, ríendome. Ríendome, ríendome, ríendo",
+            "me, ríendome.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ríendo",
+            "me, ríendome, ríendome, ríendo",
+            "me.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ríendo",
+            "me, ríendome, ríendome, ríendome.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "R",
+            "íendome, ríen",
+            "dome, r",
+            "í",
+            "e",
+            "n",
+            "d",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ríendome, ríe",
+            "ndome,",
+            "ríendome,",
+            "ríendome.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de Amara .org"
+        ]
+    ],
+    "etiquetas": [
+        "Cumbia"
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "1-2vhIeIBvA",
+            "delay": 6000.0
+        }
+    ],
+    "calidad": 1
+}

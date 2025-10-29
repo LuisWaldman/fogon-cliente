@@ -8,61 +8,107 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "Em",
-                    "Dm"
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "Fm",
                     "C",
-                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "Dm",
-                    "G",
-                    "F"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Fm",
-                    "Em",
-                    "Am",
                     "F",
+                    "F",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
                     "Fm",
                     "G",
                     "F",
-                    "Em"
+                    "F",
+                    "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Fmaj7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am",
-                    "F",
-                    "Em",
                     "Fmaj7",
-                    "Em",
-                    "Am",
-                    "Em",
-                    "Dm"
+                    "F",
+                    "F",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "G",
-                    "F",
                     "Fm",
-                    "Em",
-                    "Gm",
-                    "G#",
-                    "Bb",
-                    "C"
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Fm"
                 ]
             }
         ],
@@ -71,79 +117,106 @@
             1,
             2,
             3,
-            4
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            " Mi nena no me qu",
-            "iere ya más, /n"
+            "Mi nena n",
+            "o me quiere llama",
+            "r no necesit",
+            "amor./n"
         ],
         [
-            " no necesita amo",
-            "r. /n"
+            "Mi nena n",
+            "o me quiere llama",
+            "r no necesit",
+            "cosas para do",
+            "s /n Cuando está",
+            "alrededor y",
+            "o soy fe",
+            "liz",
+            "¿A dónd",
+            "estás? /n Y",
+            "o voy.",
+            "/n"
         ],
         [
-            " Mi nena no me qu",
-            "iere llamar, /n"
+            "Las chicas qu",
+            "e no saben reí",
+            "r jamás van",
+            "bailar",
+            ". /n Espero que",
+            "m digas que sí,",
+            "no tengo más",
+            "excusas para hablar./n"
         ],
         [
-            " no necesita co",
-            "sas para dos. /n"
-        ],
-        [
-            " Cuando estás al",
-            "rededor yo s",
-            "oy feli",
-            "z, /n"
-        ],
-        [
-            " a donde est",
-            "ás, yo vo",
-            "y. /nEs in"
-        ],
-        [
-            "útil descubrir un po",
-            "ema /ndonde no quedó"
-        ],
-        [
-            " nada. /nEs in"
-        ],
-        [
-            "útil esconder tu mi",
-            "rada /ncerca de mi ilu"
-        ],
-        [
-            "sión, /ncan"
-        ],
-        [
-            "tando estas canciones de a",
-            "mor. ",
+            "Cuando estás",
+            "alrededo yo",
+            "so feli",
+            "z",
+            "¿A dónde",
+            "vas /n Ya",
+            "estoy",
+            "es i",
+            "núti descubrir un p",
+            "oem donde no quedó n",
+            "ada.",
+            "es i",
+            "núti esconder tu mi",
+            "rad cerca de mi i",
+            "lusión",
+            "cantando unas llores de",
+            "amor",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            " a dónde es",
-            "tás yo ",
-            "voy, ",
+            "C",
+            "uand estás a",
+            "lrededo yo s",
+            "oy fel",
+            "iz",
+            "¿ dónde v",
+            "as? /n Y",
+            "a fui.",
+            "¿/n"
+        ],
+        [
+            "A dónde e",
+            "stás /n Yo v",
+            "oy.",
+            "",
+            "¿A dónde v",
+            "as? /n Yo est",
+            "oy",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " a dónde ",
-            "vas yo esto",
-            "y."
+            "Gracias por ver el video."
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "k9-Y-S7LAno",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

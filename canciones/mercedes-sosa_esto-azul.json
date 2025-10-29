@@ -8,29 +8,112 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
-                    "B",
-                    "B7",
-                    "E",
-                    "E7",
                     "A",
-                    "E7",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "E7",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E7",
+                    "D",
                     "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
                     "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "A"
                 ]
             }
@@ -39,84 +122,115 @@
             0,
             1,
             2,
-            1,
-            2,
-            2,
-            1,
-            2,
-            1,
-            2
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "asta aquí llegu",
-            "é/n"
+            "",
+            "",
+            "/n"
         ],
         [
-            "en agrario so",
-            "l/nc"
-        ],
-        [
-            "on la tierra al ho",
-            "mbro,/nd"
-        ],
-        [
-            "escubrí la ma",
-            "ana/ny pens"
-        ],
-        [
-            "é que era un Di",
-            "os/ns"
-        ],
-        [
-            "eparando la lu",
-            "z./nY al fin"
-        ],
-        [
-            "al record",
-            "/nqu"
-        ],
-        [
-            "e uno siempre se va",
+            "Este a",
+            "zul qu",
+            "e les quiero conta",
+            "como fue p",
+            "o momento",
+            "se queda en mi pi",
+            "ilustránd",
+            "om el paisaje aquel",
             "./n"
         ],
         [
-            "Este agrario aso",
-            "mbro,/neste antiguo b"
+            "Ay, este a",
+            "zu colondrina q",
+            "ue vuelve otra v",
+            "e musica",
+            "nd mi saguán de a",
+            "ye espera",
+            "rm de barco en l",
+            "a sed. /n A",
+            "y este a",
+            "zu provinci",
+            "no se quiebra en mi voz",
+            "com anti",
+            "gu vida la nació c",
+            "omo un brev",
+            "puñado de sol/n"
         ],
         [
-            "arro,/nes el s"
+            "Ay",
+            ", este az",
+            "u q",
+            "u",
+            "e",
+            "",
+            "",
+            "",
+            "h",
+            "a",
+            "llegado iniciarm",
+            "la luz. /n Co",
+            "n campanas te as",
+            "ombr tal vez h",
+            "abitand lo que nun",
+            "c fue./n"
         ],
         [
-            "ol, es azu",
-            "l,/n"
+            "Ay,",
+            "este azul,",
+            "este azul es un verde",
+            "tambié r",
+            "e solana brillan",
+            "d en el pez co",
+            "n un circo enredado e",
+            "n la piel./n"
         ],
         [
-            "es el árbol frut",
-            "al./nEs ol"
+            "Ay,",
+            "este azul so",
+            "l quiere quedarse e",
+            "n mi voz como u",
+            "n duende mojando mi e",
+            "mbez. /n Este a",
+            "zu es un niño ta",
+            "l vez./n"
         ],
         [
-            "or de parra",
-            "l/ny "
+            "Ay,",
+            "este azul,",
+            "ay es",
+            "t azul.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uno siempre se va",
-            "."
+            "Gracias."
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "rUkHHLBVd08",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_esto-azul.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_esto-azul.mp3",
+    "calidad": 1
 }

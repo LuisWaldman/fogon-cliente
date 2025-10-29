@@ -8,188 +8,541 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "G",
-                    "Gm",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
                     "G",
                     "D",
-                    "G",
-                    "C",
-                    "G",
-                    "Gm",
-                    "D#",
-                    "Gm",
-                    "C",
-                    "Em",
                     "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Gm",
                     "Gm",
                     "Gm",
                     "D",
-                    "Gm",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "Dm",
                     "Dm",
                     "F",
-                    "Dm",
+                    "F",
+                    "D#",
                     "D#",
                     "Cm",
                     "G",
+                    "Gm",
                     "F",
                     "Gm",
-                    "A7",
-                    "D",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "Gm",
                     "D",
+                    "D",
                     "Gm",
+                    "F",
                     "C",
-                    "Dm",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
                     "F",
                     "Fm",
+                    "Fm",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "A#",
                     "A#",
                     "G#",
-                    "D#",
-                    "D#",
-                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G#m",
                     "G#m",
                     "Gm",
-                    "Fm",
-                    "A#",
-                    "G",
-                    "D#",
-                    "G#",
-                    "A#",
-                    "G#",
-                    "F",
-                    "G#",
                     "Gm",
+                    "Gm",
+                    "Gm",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "G#",
+                    "G#",
+                    "G#",
                     "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "D#",
                     "D#",
-                    "C#",
                     "D#",
-                    "A#m",
-                    "D#",
-                    "A#m"
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Ahora eres la cu",
-            "na de la paz",
-            " y del ",
-            "trabajo",
-            "/ncu"
+            "",
+            "/n"
         ],
         [
-            "ando yo",
-            " te habité",
-            " eras pur",
-            "os tacuruce",
-            "s/nmonte sin fl"
+            "Ah",
+            "or er",
+            "e l",
+            "a cuna",
+            "d l",
+            "a p",
+            "a",
+            "z",
+            "",
+            "de tr",
+            "aba",
+            "jo",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "or indiada y",
-            " tolderí",
-            "a/ncampos de esp"
+            "Cua",
+            "nd y",
+            "o t",
+            "a",
+            "v",
+            "i e",
+            "ra",
+            "s puro",
+            "s ta",
+            "cu",
+            "ru",
+            "se",
+            "s/n"
         ],
         [
-            "inas a",
-            "margura, cruc",
-            "es.",
-            "/nS"
+            "M",
+            "onte s",
+            "i f",
+            "lo",
+            "r",
+            "indiada",
+            "t",
+            "o",
+            "l",
+            "v",
+            "e",
+            "r",
+            "/n"
         ],
         [
-            "angre de mi gente tu",
-            " horizonte madur",
-            ";/ngr"
+            "Campo",
+            "de e",
+            "sp",
+            "in",
+            "as",
+            "",
+            "am",
+            "ar",
+            "gu",
+            "c",
+            "r",
+            "u",
+            "c",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ingos te abonaron co",
-            "n su piel y su ",
-            "sudor/nd"
+            "Sa",
+            "ngr de mi",
+            "gente tu h",
+            "orizont",
+            "mad",
+            "ur",
+            "/n"
         ],
         [
-            "éjame decir l",
-            "o que yo te di d",
-            "jame que cue",
-            "nte/n¡Este C"
+            "Gringos t",
+            "e abonaron c",
+            "on su piel",
+            "su sud",
+            "or /n Déj",
+            "am dec",
+            "i lo que yo",
+            "t di, dé",
+            "jam que cuent",
+            "de ese cha",
+            "c que h",
+            "ic y",
+            "o",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "haco que h",
-            "ice yo",
-            "!",
-            "/nY"
+            "Y",
+            "o t",
+            "e trabajé",
+            "hice de tu p",
+            "ie una",
+            "sombr nue",
+            "va",
+            "/n"
         ],
         [
-            "o te trabaj",
-            " hice de tu pie",
-            "l/nuna sombra nu"
+            "Y te",
+            "di algodón,",
+            "hijos te br",
+            "indé rostr",
+            "o de co",
+            "sech",
+            "a/n"
         ],
         [
-            "eva/ny"
+            "Cha",
+            "c montar",
+            "á todo el r",
+            "edomón, fui",
+            "mujer en",
+            "tera/n"
         ],
         [
-            "o te di algod",
-            "n hijos te brind",
-            "/nrostros d"
+            "Tu tier",
+            "r abajante f",
+            "ue una cuna gr",
+            "ande á",
+            "sper mate",
+            "rna /n T",
+            "u ester",
+            "ilida y",
+            "o la secun",
+            "dé cada lun",
+            "nueva",
+            "",
+            "dándote v",
+            "id me h",
+            "e sentido y",
+            "o",
+            ",",
+            "bie gringa",
+            "ta",
+            "mb",
+            "i ch",
+            "aque",
+            "ña",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "e cose",
-            "cha./nCh"
+            "C",
+            "hac mon",
+            "tará todo e",
+            "l redomón, f",
+            "u mujer en",
+            "tera/n"
         ],
         [
-            "aco montaraz toba redomón/nfu"
+            "Tu t",
+            "ierra abajan",
+            "t fue una cuna",
+            "grande",
+            "áspera matern",
+            "a/n"
         ],
         [
-            "i mujer entera/nt"
-        ],
-        [
-            "u tierra vaca",
-            "nte fue una cuna gran",
-            "de/n"
-        ],
-        [
-            "spera y mat",
-            "erna./nT"
-        ],
-        [
-            "u esterilidad yo la fecundé/nc"
-        ],
-        [
-            "ada luna nueva/ny dándote "
-        ],
-        [
-            "vida me h",
-            "e sentido yo",
-            "/nbien gr"
-        ],
-        [
-            "inga y tambi",
-            "én ¡Cha",
+            "Tu e",
+            "sterilida",
+            "y la se",
+            "cundé cada",
+            "lun nuev",
+            "a",
+            "dándo",
+            "t vida m",
+            "e he sentido y",
+            "o",
+            ", bi",
+            "e gringa",
+            "ta",
+            "mb",
+            "i",
+            "cha",
             "que",
-            "a!/n"
+            "ñ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        []
+        [
+            "Chaco montarás todo el redomón, fui mujer entera."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3dnvXund7IE",
-            "delay": 0
+            "delay": 4650.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_gringa-chaquena.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_gringa-chaquena.mp3",
+    "calidad": 1
 }

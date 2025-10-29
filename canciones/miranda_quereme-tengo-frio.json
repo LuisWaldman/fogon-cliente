@@ -1,1 +1,334 @@
-{"cancion": "quereme-tengo-frio", "banda": "miranda", "escala": "D", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "F#m", "A", "E", "G", "D", "G", "A", "D", "G", "A", "D", "Gm", "D", "Bm", "G", "A", "D", "E", "A", "B", "E", "Am", "E", "C#m", "F#m", "B", "E", "E", "G#m", "B", "F#", "A", "E", "A", "B", "E", "A", "B", "E", "Am", "E", "C#m", "F#m", "B", "E", "F#", "B", "C#", "F#", "Bm", "F#", "Eb", "Ab", "C#", "F#", "Bm", "F#", "Eb", "Ab", "C#", "F#", "Bm", "C#m", "F#"]}], "orden_partes": [0]}, "letras": [["arde, un t\u00c3\u00a8 frio, una es", "pera/nY esta "], ["casa buscando tu prese", "ncia/nTe es"], ["pero entre los d", "iscos, los libros y la radio/nTe es"], ["pero como siempre te he esper", "ado./n"], ["Quereme, como la tierra quiere al a", "gua/n"], ["Quereme, como en el mar esa ma\u00c3", "\u00b1ana/n"], ["Quereme, que las disculpas se han perd", "ido/n"], ["Como perdida esto", "y sin vos ..", ". Y tengo frio", ".../n"], ["Quereme, mis pasos van por la ver", "eda/n"], ["Quereme, se que tu casa queda ce", "rca/n"], ["Quereme, hay una luz en mi venta", "na/n"], ["Pero mi sombra esta", " mi amor, d", "esamparad", "a.../n"], ["Vuelvo a calentar agua, suena un ti", "mbre/nPe"], ["ro otras manos, otras puertas a", "bren/nVol"], ["ando en tu recuerdo de pro", "nto me di cuenta/nQue el "], ["agua se ha enfriado ya basta", "nte.../n"], ["Quereme como la tierra quiere al a", "gua/n"], ["Quereme, como en el mar esa ma\u00c3", "\u00b1ana/n"], ["Quereme, que las disculpas se han perd", "ido/n"], ["Como perdida estoy sin ", "vos ..", ". Y tengo frio", ".../n"], ["Quereme, mis pasos van por la ver", "eda/n"], ["Quereme, se que tu casa queda ce", "rca/n"], ["Quereme, hay una luz en mi ven", "tana/n"], ["Pero mi sombra est", "a mi amor, a", "compa\u00c3\u00b1a", "da/n"], ["Quereme, hay una luz en tu vent", "ana/n"], ["Pero tu sombra est", "a mi amor, d", "esampara", "da/n"], ["       ", "   Desamapara", "da...  Bm-C#-F#"]], "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "OW1iMhFUUjo", "delay": 0}]}
+{
+    "cancion": "quereme-tengo-frio",
+    "banda": "miranda",
+    "escala": "D",
+    "bpm": 92,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "Gm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "B",
+                    "B",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Eb",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "Gm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Eb",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ]
+    },
+    "letras": [
+        [
+            "Una tarde,",
+            "un té frío, una esp",
+            "era,",
+            "esta casa buscan",
+            "do tu presencia./n"
+        ],
+        [
+            "Te es",
+            "pero entre los disco",
+            "s, los libros la",
+            "radio.\nTe espero c",
+            "omo siempre te he e",
+            "sperado.",
+            "/n"
+        ],
+        [
+            "Quéreme, como la",
+            "tierra quiere el agua./n"
+        ],
+        [
+            "Quéreme,",
+            "como en el mar esa",
+            "mañana./n"
+        ],
+        [
+            "Quéreme,",
+            "que las disculpas se han perdi",
+            "do.\nComo perdida esto",
+            "sin vos",
+            "tengo frío",
+            ".\nQuéreme,",
+            "mis pasos van por",
+            "la vereda./n"
+        ],
+        [
+            "Quéreme,",
+            "sé que tu casa queda cerc",
+            "a.\nQ",
+            "uéreme, hay una",
+            "luz en tu ventana./n"
+        ],
+        [
+            "Pero tu sombra está, mi amo",
+            "r, a",
+            "compañ",
+            "ada./n"
+        ],
+        [
+            "Vue",
+            "lvo calentar agua, suena un",
+            "timbre.\nP",
+            "ero otras manos",
+            "otras puertas, a",
+            "bren vol",
+            "ando en tu recuerdo./n"
+        ],
+        [
+            "De pronto,",
+            "me di cuenta que el ag",
+            "ua se ha enfriado ya",
+            "bastante.",
+            "/n"
+        ],
+        [
+            "Quéreme, c",
+            "omo la tierra quiere el agu",
+            "a.\nQuére",
+            "me, como en el mar",
+            "esa mañana./n"
+        ],
+        [
+            "Quéreme,",
+            "que las disculpas se han per",
+            "dido.\nComo perdid",
+            "estoy sin vos",
+            "tengo frío.",
+            "/n"
+        ],
+        [
+            "Quéreme, mis pasos van",
+            "por la vereda./n"
+        ],
+        [
+            "Quéreme,",
+            "sé que tu casa queda ce",
+            "rca./n"
+        ],
+        [
+            "Quéreme,",
+            "hay una luz en tu ventana./n"
+        ],
+        [
+            "Pero tu sombra está, mi a",
+            "mor, ac",
+            "ompañada./n"
+        ],
+        [
+            "Quéreme,",
+            "hay una luz en mi ventana./n"
+        ],
+        [
+            "Pero mi sombr",
+            "a está, mi amor,",
+            "desampara",
+            "da.",
+            "/n"
+        ],
+        [
+            "Desamparada.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos por la comunidad de\nAmara .org"
+        ]
+    ],
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "OW1iMhFUUjo",
+            "delay": 6000.0
+        }
+    ],
+    "calidad": 1
+}

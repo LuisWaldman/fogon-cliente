@@ -8,131 +8,235 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "C9",
                     "G",
-                    "Dsus"
+                    "C9",
+                    "Dsus",
+                    "G",
+                    "C9"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
                     "C9",
                     "G",
-                    "D7",
-                    "D7/F#",
                     "G",
-                    "B"
+                    "G",
+                    "G",
+                    "B",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "G",
-                    "B",
                     "G",
-                    "G#m",
-                    "C#7",
-                    "G#m",
-                    "C#7",
-                    "G#m"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C#7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
                     "F#",
                     "B",
-                    "E",
                     "B",
-                    "F#",
-                    "F#7",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "G",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
                     "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            " tiempo es un ",
-            "vidrio/nTu a"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "mor un fa",
-            "kir/nTu cu"
+            "T",
+            "u tiempo e",
+            "un vidrio, tu a",
+            "mor un fakir",
+            ", tu cuerpo un",
+            "a aguja, mi m",
+            "ent un tapir./n"
         ],
         [
-            "erpo una agu",
-            "ja/nTu m"
+            "Si la sangre",
+            "cuelas n",
+            "o pueden he",
+            "rirte",
+            "no existe u",
+            "n escuela q",
+            "u enseñe vi",
+            "vir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ente un tapi",
-            "z/nNo ex"
+            "El áng",
+            "e vigía,",
+            "descubre al ladró",
+            "n le corta l",
+            "a manos, le q",
+            "uit la bol",
+            "a la gente s",
+            "e esconde, tu ap",
+            "ena exis",
+            "te s",
+            "olvida del ho",
+            "mbre se ol",
+            "vid de /n Dio",
+            "s",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "iste una esc",
-            "uela/nQue en"
+            "Viva alrededor,",
+            "her",
+            "ida que vienen, sospechas que v",
+            "a aquí estoy",
+            ", pens",
+            "and en el alma que piensa p",
+            "or pensar no e",
+            "alma.",
+            "/n"
         ],
         [
-            "seña ",
-            "a    ",
-            "vi    vi",
-            "r/nMiro alreded"
+            "N",
+            "o existe u",
+            "n",
+            "a",
+            "",
+            "",
+            "",
+            "escuela",
+            "qu ens",
+            "eñ v",
+            "ivi",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "or/nHer"
-        ],
-        [
-            "idas que vienen sospechas que van/nY aquí es"
-        ],
-        [
-            "toy/nPensan"
-        ],
-        [
-            "do en el alma que piensa/nY por pensar no es "
-        ],
-        [
-            "aaaaaaaaalm",
-            "a/nDes"
-        ],
-        [
-            "aaaaaaaaaaarm",
-            "a/ny sa"
-        ],
-        [
-            "aaaaaaaaaaan",
-            "gra",
-            "/nNo exi"
-        ],
-        [
-            "ste una escuela/nque enseñe a   vi  vir."
-        ],
-        []
+            "No existe una escuela que enseñe vivir."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Hrz8C-Zk63s",
-            "delay": 0
+            "delay": 4100.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_desarma-y-sangra.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_desarma-y-sangra.mp3",
+    "calidad": 1
 }

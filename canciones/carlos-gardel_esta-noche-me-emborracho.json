@@ -8,61 +8,125 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
                     "G7",
-                    "C",
-                    "A7",
-                    "Dm"
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G7",
                     "C",
-                    "A7",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Dm",
                     "Dm",
                     "G7",
-                    "C"
+                    "G7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E7",
+                    "G7",
                     "C",
-                    "Am",
+                    "G7",
+                    "G7",
                     "E7",
-                    "Am",
-                    "C",
-                    "G7"
+                    "E7",
+                    "E7",
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
-                    "E7",
-                    "Am",
                     "G7",
-                    "C",
-                    "E7",
-                    "Am",
-                    "Dm"
+                    "G7",
+                    "G7",
+                    "G7"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "Am",
+                    "Am",
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Dm",
-                    "Am",
-                    "Am",
+                    "Dm",
                     "G",
+                    "G",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "E7",
+                    "C",
+                    "C",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "Am",
+                    "Am",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "G7",
+                    "G7",
+                    "Dm",
+                    "G",
+                    "G",
+                    "G7",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "G7",
                     "G7"
                 ]
             }
@@ -70,97 +134,123 @@
         "orden_partes": [
             0,
             1,
-            1,
             2,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "Sola, fané, descangayada, la vi esta madrugada/nSalir de un ca"
-        ],
-        [
-            "baret, flaca, dos cuartos de cogote/nY una percha en el escote bajo la nu"
-        ],
-        [
-            "ez/nChueca, vestida de pebeta, teñida y coq"
-        ],
-        [
-            "ueteando/nSu desnud"
-        ],
-        [
-            "ez, pare",
-            "cía un gallo despluma",
-            "o/nMost"
-        ],
-        [
-            "rando al compadre",
-            "ar el cu",
-            "ero picoteao",
-            "/n"
-        ],
-        [
-            "Yo que sé cuando no agua",
-            "nto m",
-            "s/nAl verla as"
-        ],
-        [
-            "í rajé,",
-            " pa` no llor",
-            "ar.",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Y pensar que hace diez años f",
-            "ue mi locur",
-            "a/n"
+            "S",
+            "o las panedas",
+            "cangalladas la fiesta",
+            "madrugad salir su",
+            "cabaret /n P",
+            "laca dos cuarta",
+            "de cogote una percha e",
+            "n el escote baj",
+            "la nube./n"
         ],
         [
-            "Que llegué hasta la traición ",
-            "por su hermo",
-            "sura/n"
+            "Suecas vestidas d",
+            "e pebetas, teñida",
+            "poqueteando su de",
+            "snudez",
+            "parecía un",
+            "gall desplumado most",
+            "rand el compatriar e",
+            "l cuero picotía. /n Y",
+            "o que sé cuán",
+            "d no aguanto más al v",
+            "er las sierras que v",
+            "a orar",
+            "pensar q",
+            "u hace diez añ",
+            "o fue e",
+            "n mi locura./n"
         ],
         [
-            "Que esto que hoy es un cascajo/nFue la dulce metedura donde yo perdí el "
+            "Que llegu",
+            "é hasta la traició",
+            "por s",
+            "hermosu",
+            "ra /n Esto que ho",
+            "es un cascajo, fue la d",
+            "ulc metedura donde yo",
+            "perdieron/n"
         ],
         [
-            "honor/n"
+            "Que chiflao po",
+            "r su belleza, le quité el p",
+            "a la vieja, me hizo el ru",
+            "in impechador./n"
         ],
         [
-            "Que chiflao por su belleza le quité el pan a la vieja/nMe hice ruin y pec"
+            "Que quede s",
+            "i un amigo,",
+            "que viví de m",
+            "ala fe./n"
         ],
         [
-            "hador",
-            "/n"
+            "Qu me tuv",
+            "de rodillas sin",
+            "moral he hecho un m",
+            "endig cuand",
+            "se fue./n"
         ],
         [
-            "Que quedé si un amigo, q",
-            "ue viví de mala",
-            " fe/n"
+            "Nunca creí que l",
+            "a vería en un re",
+            "quiest un pache tan cruel com",
+            "el de hoy./n"
         ],
         [
-            "Que me tuvo de rodilla",
-            "s/nIn mor"
+            "Mire si no es para s",
+            "uicidars que por ese ca",
+            "chivall sea lo",
+            "qu sea./n"
         ],
         [
-            "al, ",
-            "hecho un mendig",
-            "o cuando se fue.",
+            "Fier venganza la d",
+            "el tiempo que le hace p",
+            "erders yo lo q",
+            "u uno apó.",
+            "este encuentro me",
+            "h hecho tanto mal que si l",
+            "o pienso mal, ter",
+            "min en venerar.",
+            "esta noche me he",
+            "borrach bien, me a",
+            "mo bien m",
+            "amá p",
+            "ar no pensar",
             "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3U6b-mvcCUs",
-            "delay": 0
+            "delay": 1550.0
         }
     ],
     "etiquetas": [
         "Tango"
-    ]
+    ],
+    "calidad": 1
 }

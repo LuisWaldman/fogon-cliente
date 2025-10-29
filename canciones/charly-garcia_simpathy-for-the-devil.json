@@ -8,76 +8,677 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "F",
-                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Dsus4",
                     "G",
                     "G",
                     "F"
                 ]
             },
             {
-                "nombre": "parte2",
+                "nombre": "parte4",
                 "acordes": [
                     "F",
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "D",
-                    "Dsus4",
+                    "D",
+                    "D",
+                    "Dsus4"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "D",
-                    "Dsus4",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "G",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
                     "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
         ]
     },
     "letras": [
         [
-            "ease allow me to introd",
-            "uce myself, /nI'm a m"
+            "feliz de conocerte. /n M",
+            "e encuentro en mi nombre",
+            "/n"
         ],
         [
-            "an of welth and ta",
-            "ste. /n"
+            "Eso es lo qu",
+            "e pasa con vos. /n Es la",
+            "naturalez de mi juego.",
+            "/n"
         ],
         [
-            " I've been around for l",
-            "ong, long years /nst"
+            "He es",
+            "tad por un largo, largo año. /n Estaba en/n"
         ],
         [
-            "olen many a man's soul and f",
-            "aith. /n"
+            "Bij /n Hazzard cuando alg",
+            "uie iba",
+            "matar al hombre.",
+            "/n"
         ],
         [
-            " Pleased to meet you /n"
+            "Así es como se llama./n"
         ],
         [
-            "hope you guess my na",
-            "me. /nBut wh"
+            "A",
+            "s es como se llama.",
+            "",
+            "/n"
         ],
         [
-            "at's puzzling you is the /n"
+            "Así e",
+            "s como se llama. /n Así es com",
+            "o se llama.",
+            "",
+            "/n"
         ],
         [
-            "nature of my ga",
-            "me. "
+            "Así es como s",
+            "e llama./n"
+        ],
+        [
+            "Así es como se llama. /n Así es como se llama. Así es como se llama./n"
+        ],
+        [
+            "Así es como se llama. /n A",
+            "s es como s",
+            "e llama. /n Así es como se ll",
+            "ama /n Así e",
+            "s como se llama.",
+            "/n"
+        ],
+        [
+            "As es com",
+            "o se llama.",
+            "",
+            "/n"
+        ],
+        [
+            "As es como se llama./n"
+        ],
+        [
+            "Así es como s",
+            "e llama./n"
+        ],
+        [
+            "Así es como se llama./n"
+        ],
+        [
+            "Así es como se llama. /n A",
+            "sí es como se ll",
+            "ama /n Así es como se llama. A",
+            "s es como se llama.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "sí es como se llama. /n Así es como se llama.",
+            "",
+            "/n"
+        ],
+        [
+            "Así e",
+            "s como se llama. /n Así e",
+            "s como se llama./n"
+        ],
+        [
+            "Así e",
+            "s como se llama. /n Así es como se llama. Así es como se llama. Así es como se llama./n"
+        ],
+        [
+            "Así es c",
+            "om se llama. /n Así es como se llama.",
+            "/n"
+        ],
+        [
+            "Así es como se llama. /n Así",
+            "e",
+            "s",
+            "",
+            "como se llama.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Así es como se llama./n"
+        ],
+        [
+            "Así es como se llama. /n Así es como se llama. Así es como se llama/n"
+        ],
+        [
+            "Así es como se llama. /n Así es como se llama.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Así e",
+            "s como se llama. /n Introduce my",
+            "self /n I'm m",
+            "a of the empty./n"
+        ],
+        [
+            "And live t",
+            "o transfer all of this. /n Tru",
+            "e or false. /n And get killed when",
+            "try to take my space./n"
+        ],
+        [
+            "Can plea",
+            "s meet you? /n Wil",
+            "you get my name?/n"
+        ],
+        [
+            "Have eve",
+            "loved you more than myself? /n I'm puzzling y",
+            "o with the danger o",
+            "f my game. /n Tel",
+            "l me where /n I'm supposed t",
+            "o go. /n I'm ma",
+            "n of the empty./n"
+        ],
+        [
+            "And l",
+            "iv to transfer all of this. /n True",
+            "o",
+            "r",
+            "false. /n And get k",
+            "ille when try to take my space./n"
+        ],
+        [
+            "Can please meet you? /n Will you get my name?/n"
+        ],
+        [
+            "Have ever loved you more than myself? /n I",
+            "' puzzlin",
+            "you with the danger o",
+            "f my game./n"
+        ],
+        [
+            "Can please m",
+            "eet y",
+            "o",
+            "u/n"
+        ],
+        [
+            "Will you get my n",
+            "ame?/n"
+        ],
+        [
+            "Ha",
+            "v ever loved you more than myself? /n I'm puzzling you with t",
+            "h danger of my g",
+            "ame./n"
+        ],
+        [
+            "Tell",
+            "m where /n I'm supposed to go. I",
+            "' man of the empty. /n A",
+            "n live to transfer all of this. /n Tr",
+            "ue or false. /n And get killed when try to take my space. T",
+            "ell m",
+            "e where /n I'",
+            "m supposed to go. /n I'm puzzling you with the danger of my game. Tell me where I'm supposed to go. I'm puz",
+            "zlin you with the danger of my game.",
+            "/n"
+        ],
+        [
+            "Tel",
+            "me where /n I'm supposed to go. I'm puzz",
+            "lin you with the danger of my game. /n I'",
+            "m puzzling you with the danger of my g",
+            "ame./n"
+        ],
+        [
+            "Tell me where /n I'm supposed to go.",
+            "/n"
+        ],
+        [
+            "I",
+            "' puzzling you w",
+            "ith the danger of my game. /n Tell me where I'm supposed to go. I'm puzzling",
+            "yo with the danger of my game./n"
+        ],
+        [
+            "Tell me where /n I'm supposed to go.",
+            "/n"
+        ],
+        [
+            "I",
+            "' puzzling you wi",
+            "t the danger of my game. /n I",
+            "'m puzzling you with the danger of my game. /n Tell me where I'm supposed to go./n"
+        ],
+        [
+            "I'm puzzling you with the danger of my game.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "T",
+            "ell m",
+            "e where /n I'm supposed to go.",
+            "/n"
+        ],
+        [
+            "T",
+            "ell me where /n I'm supposed to go. T",
+            "ell me where /n I'm supposed to go./n"
+        ],
+        [
+            "Tell me where /n I'm supposed to go. I'm puzzling you with the danger of my game. Tell me where I",
+            "' supposed to go. /n I'm puzzling yo",
+            "u w",
+            "it the danger of my game.",
+            "",
+            "/n"
+        ],
+        [
+            "Tell me where /n I'm supposed to go. I'm puzzling you with the danger of my game./n"
+        ],
+        [
+            "I'm puzzling you",
+            "w",
+            "i",
+            "the danger of my game.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I'm puzzling you with the danger of my game. /n Tell me where I'm supposed to go. Tell me where I'm supposed to go. I'm puzzling you with the danger of my game./n"
+        ],
+        [
+            "Tell me where /n I",
+            "'",
+            "m supposed to go./n"
+        ],
+        [
+            "I",
+            "' puzzling you with the danger of my game. /n Te",
+            "l me where /n I'm supposed to go./n"
+        ],
+        [
+            "I'",
+            "m puzzling you w",
+            "it the danger of my game./n"
+        ],
+        [
+            "T",
+            "el me where /n I'm supposed to go./n"
+        ],
+        [
+            "Tell me where /n I'm supposed to go. I'm",
+            "p",
+            "u",
+            "z",
+            "z",
+            "l",
+            "i",
+            "you with the danger of my game. /n Tell me where I'm supposed to go.",
+            "",
+            "/n"
+        ],
+        [
+            "I'm puzzling you with the danger of my game.",
+            "/n"
+        ],
+        [
+            "Tell me where /n I'm supposed to go.",
+            "/n"
+        ],
+        [
+            "I'm puzzling you wi",
+            "t the danger of my game. /n Tell me where I",
+            "'",
+            "m supposed to go. /n T",
+            "el me where /n I'm supposed to g",
+            "o./n"
+        ],
+        [
+            "Tell me where /n I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go. Tell me where I'm supposed to go."
         ]
     ],
-    "bpm": 80,
+    "bpm": 117,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ROBrVQwyYfg",
-            "delay": 0
+            "delay": 25490.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

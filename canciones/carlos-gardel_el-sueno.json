@@ -8,35 +8,112 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "E",
+                    "E",
+                    "E",
                     "A",
-                    "G#m",
-                    "E"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
+                    "A",
                     "D",
-                    "C#m",
-                    "E",
-                    "A"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
+                    "A",
+                    "A",
+                    "A",
                     "E",
-                    "A"
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             }
@@ -45,61 +122,117 @@
             0,
             1,
             2,
-            1,
             3,
-            1,
-            2,
-            2
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Anoche mie",
-            "ntras dormí",
-            "a del cansan",
-            "cio fati",
-            "gado,",
             "",
-            "/nno sé qué "
+            "",
+            "",
+            "/n"
         ],
         [
-            "sueño ad",
-            "ora",
-            "do cruz",
-            "ó por la m",
-            "ente m",
-            "a.",
-            "/nSoñé de que te "
+            "noches mie",
+            "nes era sobreví",
+            "a del calz",
+            "ací fatiga",
+            "do /n N",
+            "o sé que sue",
+            "ñ adorado c",
+            "ruz por la ment",
+            "mía,",
+            "soñ",
+            "de que te ve",
+            "í vo",
+            "s me estabas mi",
+            "rando",
+            "yo te estaba c",
+            "ontand m",
+            "i vida",
+            "triste muy tris",
+            "te qu",
+            "e desapareciste",
+            "a desper",
+            "tarm llora",
+            "ndo",
+            "",
+            "",
+            "/n"
         ],
         [
-            "veía y vos me estabas m",
-            "irando,/nque yo te estaba cont"
+            "Vo",
+            "lv conciliar e",
+            "l sueñ",
+            "después de pasad",
+            "o un rato,",
+            "per",
+            "otra vez tu r",
+            "etrat lo v",
+            "i con mayor empe",
+            "ño/n"
         ],
         [
-            "ando mi vi",
-            "da triste,",
-            " muy trist",
-            "e,",
-            "/ny qu"
+            "Soñé de que era t",
+            "u boher",
+            "i que tú m",
+            "e acariciabas,",
+            "que muc",
+            "ho besos me d",
+            "abas l",
+            "len de inver",
+            "s cariño,",
+            "que otra vez cual",
+            "u niño llo",
+            "rand me des",
+            "pertaba",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "e desapareci",
-            "ste ",
-            "al despertarm",
-            "e llorando",
-            ".",
+            "Ay,",
+            "qué sueño de",
+            "licios",
+            "bello es la real",
+            "idad",
+            "lindo s",
+            "oña que es ver",
+            "dad mal d",
+            "esperta doloroso,",
+            "",
+            "ver el cambi",
+            "pavoro",
+            "s que se encie",
+            "rr en el sendero./n"
+        ],
+        [
+            "Quisier",
+            "soñar te",
+            "mero t",
+            "eng el alma desg",
+            "arrada quis",
+            "ier soñar m",
+            "i amada que j",
+            "unto tu la",
+            "d muero.",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PYQcSEvvLxQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Tango"
-    ]
+    ],
+    "calidad": 1
 }
