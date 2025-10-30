@@ -114,11 +114,11 @@ const mostrarAgregarInstrumentos = ref(false)
             />
           </div>
           <div class="ctrlNombre ctrlCabecera">
-            <label for="username">Nombre:</label>
+            <label for="username">Nombre</label>
             <input class="txtUser"  type="text" id="username" v-model.lazy="perfil.nombre" placeholder="Ingresa tu nombre" @change="updateProfile" />
           </div>
           <div class="ctrlCabecera">
-            <div style="margin-bottom: 5px ;"><label for="instrument">Instrumento:</label></div>
+            <div style="margin-bottom: 5px ;"><label for="instrument">Instrumento</label></div>
             <select id="instrument" v-model="perfil.instrumento" @change="updateProfile">
               <option value="Guitarra">Guitarra</option>
               <option value="Piano">Piano</option>
@@ -202,7 +202,7 @@ const mostrarAgregarInstrumentos = ref(false)
 
             
           <div>
-            <label for="coso">Nombre de sesion:</label>
+            <label for="coso">Nombre de tu fogon</label>
             <input type="text" id="coso" v-model.lazy="perfil.nombreSesion" @change="updateProfile" />
           </div>
           </div>
@@ -216,9 +216,9 @@ const mostrarAgregarInstrumentos = ref(false)
       <div>
         
         <div style="margin-top: 30%;">
-          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">✅</span>
-          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">❌</span>
-          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">Cifrado latino</span>
+          <span v-if="perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">✅</span>
+          <span v-if="!perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">❌</span>
+          <span  @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">Modo desarrollador</span>
         </div>
       </div>
     </div>
