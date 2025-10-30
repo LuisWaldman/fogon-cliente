@@ -80,13 +80,12 @@ function eliminarInstrumentoFavorito(idx: number) {
 </script>
 
 <template>
-  <div>
-    <h1>Perfil</h1>
-    <div>
-      <div class="controlPerfil">
-        <div>
+  <div class="divPerfil">
+    <div style="display: flex;">
+      
           <div
-            style="display: flex; flex-direction: column; align-items: center"
+          class="ctrlCabecera"
+            
           >
             <!-- Imagen de perfil con click para abrir el input file -->
             <img
@@ -94,7 +93,7 @@ function eliminarInstrumentoFavorito(idx: number) {
                 imageBase64 !== '' ? imageBase64 : '/img/usuariofantasma.png'
               "
               alt="Profile Image"
-              style="max-width: 200px; max-height: 200px; cursor: pointer"
+              class="profileImage"
               @click="openFileDialog"
             />
 
@@ -109,30 +108,46 @@ function eliminarInstrumentoFavorito(idx: number) {
               style="display: none"
             />
           </div>
-        </div>
-        <div>
-          <div>
+          <div class="ctrlCabecera">
             <label for="username">Nombre:</label>
             <input type="text" id="username" v-model="perfil.nombre" />
           </div>
-          <div>
-            <label for="description">Descripcion:</label>
-            <textarea id="description" v-model="perfil.descripcion"></textarea>
-          </div>
-          <div>
-            <label for="instrument">Instrumento:</label>
+          <div class="ctrlCabecera">
+            <div style="margin-bottom: 5px ;"><label for="instrument">Instrumento:</label></div>
             <select id="instrument" v-model="perfil.instrumento">
               <option value="Guitarra">Guitarra</option>
               <option value="Piano">Piano</option>
               <option value="Ukelele">Ukelele</option>
               <option value="Bajo">Bajo</option>
               <option value="Percusion">Percusion</option>
+              <option value="PGuitarra">Punteo</option>
               <option value="Harmonica">Harmonica</option>
             </select>
           </div>
+</div>
 
+
+    <div>
+      <div class="crlPerfil">
+        <div>
+        </div>
+        
+        <div>
+<div>
+          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">✅</span>
+          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">❌</span>
+          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino">Cifrado latino</span>
+        </div>
+
+
+ 
+
+        </div>
+        <div>
+        
+          
           <div>
-            <label>Instrumentos Favoritos:</label>
+            <label>🎼 Instrumentos Favoritos En Edicion de partituras:</label>
             <div v-if="perfil.instrumentosFavoritos.length === 0">
               No hay instrumentos favoritos.
             </div>
@@ -140,15 +155,15 @@ function eliminarInstrumentoFavorito(idx: number) {
               <div
                 v-for="(inst, idx) in perfil.instrumentosFavoritos"
                 :key="inst"
-                style="display: flex; align-items: center; margin-bottom: 5px"
+                class="instrMidi"
               >
                 <span style="flex: 1">{{ inst }}</span>
-                <span
+                <button
                   @click="eliminarInstrumentoFavorito(idx)"
                   style="margin-left: 10px"
                 >
-                  [X]
-                </span>
+                  🗑 Borrar
+                </button>
               </div>
             </div>
             <div style="margin-top: 10px">
@@ -179,17 +194,15 @@ function eliminarInstrumentoFavorito(idx: number) {
               </button>
             </div>
           </div>
+        </div>
+        
+      </div>
+      <div class="classBotonera">
+        
           <div>
             <label for="coso">Nombre de sesion:</label>
             <input type="text" id="coso" v-model="perfil.nombreSesion" />
           </div>
-        </div>
-        <div>
-          <label for="cifrado">Cifrado latino:</label>
-          <input type="checkbox" id="cifrado" v-model="perfil.CifradoLatino" />
-        </div>
-      </div>
-      <div class="classBotonera">
         <button @click="updateProfile">Actualizar</button>
       </div>
     </div>
@@ -197,9 +210,11 @@ function eliminarInstrumentoFavorito(idx: number) {
 </template>
 
 <style scoped>
-form {
+.divPerfil {
+  margin-left: 4%;
   display: flex;
   flex-direction: column;
+  font-size: x-large;
   gap: 1rem;
 }
 label {
@@ -213,7 +228,7 @@ textarea {
   color: white !important;
 }
 
-.controlPerfil {
+.crlPerfil {
   display: flex;
   flex-wrap: wrap;
 }
@@ -227,5 +242,33 @@ textarea {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+.profileImage {
+  max-width: 200px;
+  max-height: 200px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+.ctrlCabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 12rem;
+  width: 100%;
+}
+
+.instrMidi {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .divPerfil {
+    font-size: small;
+  }
 }
 </style>
