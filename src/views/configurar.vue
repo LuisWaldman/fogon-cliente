@@ -13,7 +13,22 @@ import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
 const appStore = useAppStore()
-const viendo = ref('bienvenida')
+const viendo = ref('perfil')
+
+const urlParams = new URLSearchParams(window.location.search)
+const viendoUrl = urlParams.get('viendo')
+if (
+  viendoUrl == 'perfil' ||
+  viendoUrl == 'conexion' ||
+  viendoUrl == 'afinar' ||
+  viendoUrl == 'relojes' ||
+  viendoUrl == 'errores' ||
+  viendoUrl == 'acercade' ||
+  viendoUrl == 'bienvenida'
+) {
+  viendo.value = viendoUrl
+}
+
 const viendoConexion = ref('servidores')
 
 function clickOpcion(viendostr: string) {
