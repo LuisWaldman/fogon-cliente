@@ -290,6 +290,16 @@ function AgregarLista(index: number, listaseleccionada: string) {
       })
     return
   }
+  if (listaseleccionada.startsWith('server_')) {
+    const nombreLista = listaseleccionada.replace('server_', '')
+    listasManager
+      .AddCancion(nombreLista, refViendoCanciones.value[index])
+      .then(() => {
+      })
+      .catch(() => {
+        alert('Error al agregar la canción a la lista.')
+      })
+  }
 }
 </script>
 
