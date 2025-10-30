@@ -178,7 +178,7 @@ function Borrar(index: number) {
               </div>
 
               <div class="botoneraDetalle" v-if="agregandoLista">
-                <button @click="clickAgregar(index)">AGREGAR</button>
+                
                 <select v-model="listaseleccionada" style="width: 60%">
                   <optgroup>
                     <option value="actual">Lista de reproduccion</option>
@@ -202,7 +202,7 @@ function Borrar(index: number) {
                     </option>
                   </optgroup>
                 </select>
-
+<button @click="clickAgregar(index)">AGREGAR</button>
                 <button @click="agregandoLista = false">❌</button>
               </div>
             </div>

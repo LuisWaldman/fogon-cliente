@@ -145,10 +145,11 @@ const mostrarAgregarInstrumentos = ref(false)
           
           <div>
             <label>🎼 Instrumentos Favoritos En Edicion de partituras:</label>
+            
             <div v-if="perfil.instrumentosFavoritos.length === 0">
               No hay instrumentos favoritos.
             </div>
-            <div style="display: flex">
+            <div style="display: flex; max-height: 200px; overflow-y: auto; border: 1px solid; padding: 10px; margin-bottom: 10px;">
               <div
                 v-for="(inst, idx) in perfil.instrumentosFavoritos"
                 :key="inst"
@@ -161,12 +162,16 @@ const mostrarAgregarInstrumentos = ref(false)
                 >
                   🗑 
                 </button>
+            
               </div>
-            </div>
-            <!-- Botón para mostrar el div de agregar instrumentos -->
-            <button v-if="!mostrarAgregarInstrumentos" @click="mostrarAgregarInstrumentos = true" style="margin-top: 10px">
+            <div v-if="!mostrarAgregarInstrumentos" style="border: 1px solid; margin-left: 10px; padding: 0px 25px 10px 25px;">
+            <button  @click="mostrarAgregarInstrumentos = true" style="margin-top: 10px">
               Agregar
             </button>
+            </div>  
+            </div>
+            <!-- Botón para mostrar el div de agregar instrumentos -->
+            
             <!-- Div de agregar instrumentos solo visible si mostrarAgregarInstrumentos es true -->
             <div v-if="mostrarAgregarInstrumentos" style="margin-top: 10px" class="agregarInstrumentos">
               <select v-model="categoriaSeleccionada">
