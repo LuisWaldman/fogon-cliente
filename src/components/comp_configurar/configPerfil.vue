@@ -3,6 +3,8 @@ import { useAppStore } from '../../stores/appStore'
 import { Perfil } from '../../modelo/perfil'
 import { ref, onMounted, computed } from 'vue'
 import { Configuracion } from '../../modelo/configuracion'
+import { datosLogin } from '../../modelo/datosLogin'
+import bcrypt from 'bcryptjs'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 
 const refInstrumentos = ref<InstrumentoMidi[]>(
@@ -54,6 +56,12 @@ onMounted(() => {
   }
 
   imageBase64.value = perfil.value.imagen
+
+  // Login: cargar datos guardados
+  if (config.loginDefault && config.loginDefault.mantenerseLogeado) {
+    username.value = config.loginDefault.usuario
+    mantenerseLogeado.value = config.loginDefault.mantenerseLogeado
+  }
 })
 
 const categoriaSeleccionada = ref('')
@@ -82,6 +90,57 @@ function eliminarInstrumentoFavorito(idx: number) {
 }
 
 const mostrarAgregarInstrumentos = ref(false)
+
+// Login logic
+const username = ref('')
+const password = ref('')
+const mantenerseLogeado = ref(false)
+const mostrarLogin = ref(false)
+
+async function crearLoginSeguro() {
+  const hash = await bcrypt.hash(password.value, 12)
+  return new datosLogin(
+    'USERPASS',
+    username.value,
+    hash,
+    mantenerseLogeado.value,
+  )
+}
+
+function loginWithCredentials() {
+  if (username.value.trim() === '' || password.value.trim() === '') {
+    appStore.estadosApp.estadoLogin = 'error'
+    return
+  }
+  crearLoginSeguro()
+    .then((secureLoginData) => {
+      appStore.aplicacion.login(secureLoginData)
+      const config = Configuracion.getInstance()
+      if (mantenerseLogeado.value) {
+        config.loginDefault = secureLoginData
+        config.loginDefault.mantenerseLogeado = true
+      } else {
+        config.loginDefault = null
+      }
+      config.guardarEnLocalStorage()
+    })
+    .catch((error) => {
+      appStore.errores.push(
+        new Error(`Error al crear el login seguro: ${error}`),
+      )
+      appStore.estadosApp.estadoLogin = 'error'
+    })
+}
+
+function logout() {
+  mantenerseLogeado.value = false
+  const config = Configuracion.getInstance()
+  if (config.loginDefault) {
+    config.loginDefault.mantenerseLogueado = false
+    config.guardarEnLocalStorage()
+  }
+  appStore.aplicacion.logout()
+}
 </script>
 
 <template>
@@ -219,9 +278,49 @@ const mostrarAgregarInstrumentos = ref(false)
         </div>
         
       </div>
-      <div class="classBotonera">
-        
-        <button>Iniciar sesion</button>
+      <div class="classBotonera" style="align-items: center;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <template v-if="appStore.estadosApp.estadoLogin == 'logueado'">
+            <span style="font-weight: bold;">Usuario: {{ appStore.aplicacion.loginActual?.usuario }}</span>
+            <button @click="logout">Salir</button>
+          </template>
+          <template v-else>
+            <button @click="mostrarLogin = !mostrarLogin">
+              Iniciar sesion
+            </button>
+            <template v-if="mostrarLogin">
+              <input
+                v-model="username"
+                type="text"
+                placeholder="Usuario"
+                style="margin-left: 10px; width: 100px;"
+              />
+              <input
+                v-model="password"
+                type="password"
+                placeholder="Clave"
+                style="margin-left: 10px; width: 100px;"
+              />
+              <label style="margin-left: 10px; display: flex; align-items: center;">
+                <input
+                  v-model="mantenerseLogeado"
+                  type="checkbox"
+                  style="margin-right: 3px;"
+                />
+                Mantenerse logueado
+              </label>
+              <button
+                @click="loginWithCredentials"
+                style="margin-left: 10px;"
+              >
+                Login
+              </button>
+              <span v-if="appStore.estadosApp.estadoLogin == 'error'" style="color: red; margin-left: 10px;">
+                Error
+              </span>
+            </template>
+          </template>
+        </div>
       </div>
     </div>
     
