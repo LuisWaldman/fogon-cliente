@@ -37,6 +37,7 @@ function handleImageUpload(event: Event) {
     const reader = new FileReader()
     reader.onload = () => {
       imageBase64.value = reader.result as string
+      updateProfile() // Actualiza perfil al cambiar imagen
     }
     reader.readAsDataURL(file)
   }
@@ -71,11 +72,13 @@ function agregarInstrumentoFavorito() {
   ) {
     perfil.value.instrumentosFavoritos.push(instrumentoSeleccionado.value)
     instrumentoSeleccionado.value = ''
+    updateProfile() // Actualiza perfil al agregar instrumento
   }
 }
 
 function eliminarInstrumentoFavorito(idx: number) {
   perfil.value.instrumentosFavoritos.splice(idx, 1)
+  updateProfile() // Actualiza perfil al eliminar instrumento
 }
 
 const mostrarAgregarInstrumentos = ref(false)
@@ -112,11 +115,11 @@ const mostrarAgregarInstrumentos = ref(false)
           </div>
           <div class="ctrlNombre ctrlCabecera">
             <label for="username">Nombre:</label>
-            <input class="txtUser"  type="text" id="username" v-model="perfil.nombre" placeholder="Ingresa tu nombre" />
+            <input class="txtUser"  type="text" id="username" v-model.lazy="perfil.nombre" placeholder="Ingresa tu nombre" @change="updateProfile" />
           </div>
           <div class="ctrlCabecera">
             <div style="margin-bottom: 5px ;"><label for="instrument">Instrumento:</label></div>
-            <select id="instrument" v-model="perfil.instrumento">
+            <select id="instrument" v-model="perfil.instrumento" @change="updateProfile">
               <option value="Guitarra">Guitarra</option>
               <option value="Piano">Piano</option>
               <option value="Ukelele">Ukelele</option>
@@ -134,9 +137,9 @@ const mostrarAgregarInstrumentos = ref(false)
         
         <div>
         <div>
-          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">✅</span>
-          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">❌</span>
-          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino">Cifrado latino</span>
+          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">✅</span>
+          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">❌</span>
+          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">Cifrado latino</span>
         </div>
 
           
@@ -200,7 +203,7 @@ const mostrarAgregarInstrumentos = ref(false)
             
           <div>
             <label for="coso">Nombre de sesion:</label>
-            <input type="text" id="coso" v-model="perfil.nombreSesion" />
+            <input type="text" id="coso" v-model.lazy="perfil.nombreSesion" @change="updateProfile" />
           </div>
           </div>
         </div>
@@ -208,16 +211,15 @@ const mostrarAgregarInstrumentos = ref(false)
       </div>
       <div class="classBotonera">
         
-        <button @click="updateProfile">Actualizar</button>
+        <button>Iniciar sesion</button>
       </div>
       <div>
         
         <div style="margin-top: 30%;">
-          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">✅</span>
-          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">❌</span>
-          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino">Cifrado latino</span>
+          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">✅</span>
+          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">❌</span>
+          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">Cifrado latino</span>
         </div>
-
       </div>
     </div>
   </div>
