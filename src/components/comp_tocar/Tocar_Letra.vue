@@ -100,7 +100,7 @@ defineExpose({ Actualizar })
                   mostrandoRenglon === index && mostrandoPalabra === index_aco,
               }"
             >
-              <div class="divletra">
+              <div class="divletra" :class="{ espacio: letra.endsWith(' ') }">
                 {{ letra }}
                 <i v-if="letra.trim() === ''" class="bi bi-music-note"></i>
               </div>
@@ -112,7 +112,7 @@ defineExpose({ Actualizar })
                   mostrandoRenglon === index && mostrandoPalabra === index_aco,
               }"
             >
-              <div class="divletra">
+              <div class="divletra" >
                 {{ letra.split('/n')[0] }}
                 <i
                   v-if="letra.split('/n')[0].trim() === ''"
@@ -124,8 +124,10 @@ defineExpose({ Actualizar })
             <div class="break" v-if="letra.includes('/n')"></div>
 
             <div
+            
               v-if="letra.includes('/n')"
               :class="{
+                espacio: letra.endsWith(' '),
                 en_compas:
                   mostrandoRenglon === index && mostrandoPalabra === index_aco,
               }"
@@ -190,5 +192,8 @@ defineExpose({ Actualizar })
   border-radius: 5px;
   display: inline-block;
   margin-right: 10px;
+}
+.espacio {
+  margin-right: 1ch;
 }
 </style>
