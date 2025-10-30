@@ -8,113 +8,170 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "C",
+                    "G",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "G",
                     "C",
-                    "D",
-                    "G"
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
                     "C",
-                    "B"
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "C",
+                    "C",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Am",
                     "C",
-                    "D",
                     "C",
-                    "D",
                     "C",
-                    "D",
-                    "Em"
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "C",
-                    "D"
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
             3,
-            3,
-            3,
-            3,
-            0
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "qué hay en tu co",
-            "ra-z",
-            "ón/nEso es impo"
+            "Nadie sabe que hay en t",
+            "u  corazón,",
+            "eso es imposible s",
+            "aberl  amor./n"
         ],
         [
-            "sible saberlo a",
-            "-mo",
-            "r/nYo soy ese "
+            "Yo soy ese monstruo si",
+            "n  compasión,",
+            "pero también se pedi",
+            "rt  perdón./n"
         ],
         [
-            "monstruo sin comp",
-            "a-si",
-            "ón/nPero también"
+            "Nadie sabe que hay en t",
+            "u  corazón,",
+            "eso es imposible sab",
+            "erl  amor, p",
+            "ero  no me importa si est",
+            "o con vos. /n Na",
+            "di  sabe que hay en tu",
+            "corazón  t",
+            "od  al trece al mil",
+            "ló  de gracias por hab",
+            "erm  entregado la v",
+            "ida /n To",
+            "d  el tiempo ha puesto amor",
+            ",  mala suerte, buena suert",
+            "e  vive solo hasta la muerte",
+            "es urgente que te e",
+            "ncuentre/n"
         ],
         [
-            " sé pedirte pe",
-            "rdón/nTodo al 13 y "
+            "Gracias por el beso",
+            "que me hizo bie",
+            "n  por aguantarte m",
+            "i  bolude",
+            "z /n Gracias por tu risa q",
+            "u  alumbra el sol/n"
         ],
         [
-            "al mil",
-            "lón/nDoy "
+            "Gracias por amarme d",
+            "e  corazón",
+            "ante  que me vaya l",
+            "a  oscuridad,",
+            "la de para siempre la",
+            "oscuridad /n Y",
+            "o  voy pesarlos co",
+            "emoción,",
+            "para no estar solo ja",
+            "má  amor./n"
         ],
         [
-            "gracias por hab",
-            "erme entrega",
-            "do la vida/nTodo el tiempo a"
-        ],
-        [
-            "puesto a",
-            "mor/nMala "
-        ],
-        [
-            "suerte, buena s",
-            "uerte/nVives "
-        ],
-        [
-            "solo hasta la m",
-            "uerte/nY es ur"
-        ],
-        [
-            "gente que te enc",
-            "uentre/nNadie sabe qué"
-        ],
-        [
-            " hay en tu co",
-            "ra-z",
-            "ón"
+            "Nadie sabe que hay en t",
+            "u  corazón.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "9L9Nj1OBjew",
-            "delay": 0
+            "delay": 1400.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

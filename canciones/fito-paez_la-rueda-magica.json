@@ -8,154 +8,394 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
                     "F#m",
-                    "B7",
-                    "E",
+                    "F#m",
+                    "F#M",
+                    "F#M"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "F#M",
                     "B7",
-                    "E",
-                    "F#M",
                     "B7",
-                    "E",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m11/E",
+                    "F#m11/E",
                     "F#m11/E",
                     "E",
-                    "F#m11/E",
                     "E",
-                    "F#m11/E",
-                    "B4",
                     "E",
-                    "F#m11/E",
-                    "B4",
                     "E",
+                    "E",
+                    "B7",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "B7",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#",
                     "G#",
                     "A",
                     "F#",
-                    "B4",
                     "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "A",
                     "F#m",
-                    "D",
-                    "B4",
-                    "G#",
-                    "A",
-                    "F#",
-                    "B4",
-                    "G#",
-                    "A",
                     "F#m",
-                    "C#m",
-                    "B4",
-                    "A",
-                    "G#",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m11/E",
+                    "F#m11/E",
                     "B4",
+                    "B4",
+                    "B4",
+                    "B4"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
                     "E",
                     "F#m11/E",
-                    "E",
-                    "E"
+                    "F#m11/E",
+                    "F#m11/E",
+                    "B4",
+                    "B4"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "A",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "A",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B4",
+                    "B4",
+                    "B4",
+                    "F#m11/E",
+                    "F#m11/E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F#m11/E",
+                    "B7",
+                    "B7",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E",
+                    "F#m11/E"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F#m",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M",
+                    "F#M"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
         ]
     },
     "letras": [
         [
-            " Un",
-            " recuerdo ",
-            "desde el",
-            " africa/n"
-        ],
-        [
-            " Un su",
-            "eño con el liv",
-            "erpool bar/n"
-        ],
-        [
-            " Y ell",
-            "a que siempre se v",
-            "a",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Una",
-            " foto de roll",
-            "ing stones",
-            "/n Mi v"
+            "Un rec",
+            "uerd desde el /n Áf",
+            "rica  u",
+            "n sueño con el /n Liverpool/n"
         ],
         [
-            "ieja nunca lo",
-            "s escuchó",
-            "/n Y no me"
+            "VAR  ella q",
+            "u  siempre se v",
+            "a ",
+            "/n"
         ],
         [
-            " puse a llora",
-            "r/n "
+            "Una f",
+            "oto de los /n Rolling St",
+            "ones /n Mi",
+            "viej  nunca los es",
+            "cuchó  no m",
+            "puse llor",
+            "ar ",
+            "/n"
         ],
         [
-            "Nuestra vida es un lec",
-            "ho de cristal/n Y e"
+            "Lo",
+            "días en cualquier lug",
+            "ar /n Perdi",
+            "d  en una inmensa ciu",
+            "dad /n En una r",
+            "ued  mágica",
+            "",
+            "",
+            "él, el á",
+            "nge  de la soleda",
+            "d /n Prote",
+            "gi  el lava curaste el m",
+            "al. /n Él no me a",
+            "bandonar",
+            "á /n"
         ],
         [
-            "sta vida está he",
-            "cha de cristal/n "
+            "Nuestra v",
+            "id  es un lecho de crista",
+            "l  esta vi",
+            "d  está hecha de crist",
+            "al /n Nuestra vi",
+            "d  es un lecho de cristal/n"
         ],
         [
-            "Nuestra es un lec",
-            "ho de cristal/n Un l"
+            "Un lecho de cristal pa",
+            "r  los d",
+            "os ",
+            "/n"
         ],
         [
-            "echo de cristal para los d",
-            "os",
-            "/n "
+            "Yo extraño e",
+            "s  fascinación./n"
         ],
         [
-            "Nuestra vida es un lec",
-            "ho de cristal/n Y e"
+            "Un postre d",
+            "e una /n Gibson Les Pau",
+            "l /n Que nunca voy",
+            "olvidarlo ",
+            "",
+            "/n"
         ],
         [
-            "sta vida está he",
-            "cha de cristal/n "
+            "Recuerdo u",
+            "día como hoy",
+            ". /n Me fui de casa",
+            "tocarlo.",
+            "no volví nu",
+            "nc  más.",
+            "/n"
         ],
         [
-            "Nuestra vida es un lec",
-            "ho de cristal/n Un l"
+            "Nuestra vida e",
+            "s  un lecho de cristal.",
+            "esta vida e",
+            "st  hecha de cristal./n"
         ],
         [
-            "echo de cristal para los dos",
+            "Nuestra vida e",
+            "un lecho de cristal. /n U",
+            "n  lecho de cristal para l",
+            "o  dos.",
+            "/n"
+        ],
+        [
+            "Podrí",
+            "a  verlo así./n"
+        ],
+        [
+            "Solo si supieras que yo si",
+            "ti ya no podría más vivi",
+            "r /n To",
+            "do  ya nos fuimos de aq",
+            "uí /n"
+        ],
+        [
+            "Todos ya nos fuimos de c",
+            "asa ",
+            "",
+            "/n"
+        ],
+        [
+            "To",
+            "d  lo que pude se",
+            "ntir /n T",
+            "od  está sellado en m",
+            "i  alma.",
+            "",
+            "",
+            "¡No!",
             "",
             "",
             "",
-            "/n "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Podrías verlo así/n S"
+            "Un r",
+            "ecuerd  desde el/n"
         ],
         [
-            "olo si supieras que yo sin ti ya no podría más v",
-            "ivir/n"
-        ],
-        [
-            " Todos ya nos fuimos de ",
-            "aquí/n"
-        ],
-        [
-            " Un recuerdo desde el africa"
+            "África /n U",
+            "n  sueño por el li",
+            "bertud ",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 117,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3D0mF2JYk9k",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

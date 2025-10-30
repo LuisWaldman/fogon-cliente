@@ -2,238 +2,347 @@
     "cancion": "tu-juego",
     "banda": "miranda",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "F",
+                    "C",
+                    "F",
+                    "F",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A",
+                    "F",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
                     "C",
-                    "A",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
                     "F",
-                    "Em",
                     "F",
-                    "Em"
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "C",
+                    "F",
+                    "F",
+                    "Am",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "G",
                     "Em",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
+                    "Am",
+                    "F",
+                    "F",
+                    "G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
             2,
-            2,
-            2,
-            2,
-            0,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "Me hiciste pensar, que me ibas a amar/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "que me adorarias y ahora te vas/n"
+            "Esta es ",
+            "una canción en español de rock a",
+            "rgentino. \n\nEs",
+            "ta ",
+            "es ",
+            "una canción en español de rock argentino. \n\nEsta es una canción en español de ",
+            "rock argentin",
+            "o. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Pediras hablar, te disculparas,/n"
+            "Es",
+            "ta es una canción en español de rock argentino \n\nEsta es una canción en español de rock arge",
+            "ntino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock arge",
+            "ntino /n"
         ],
         [
-            "lloraras un poco y te marcharas./n"
+            "Esta es una canción en ",
+            "español de rock argentino \n\nEsta es una canción en español de rock argen",
+            "tino \n\nEsta es una canción en español de rock argent",
+            "ino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en es",
+            "pañol de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de r",
+            "ock argentino \n\nEsta es una canción en español de r",
+            "ock argentino \n\nE",
+            "sta es una canción en español de rock argentino ",
+            "",
+            "/n"
         ],
         [
-            "Yo voy a decir que ",
-            "no,/n"
+            "Esta  es una ",
+            "canción en español de rock argentino ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "que no te discu",
-            "lpes/n"
+            "E",
+            "sta es una canción en español ",
+            "de rock argentino \n\nEsta ",
+            "es una canción en español de rock argentino \n\nEsta es una canción en español de rock ",
+            "argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en ",
+            "español de rock argentino \n\nEsta es una canción en español de r",
+            "ock argentino \n\nEsta es una canción en español ",
+            "de ro",
+            "ck argentino ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "No me ves que me hu",
-            "milla/n"
+            "Esta ",
+            "es una canción en español de rock argentino \n\nEsta es una canción en español ",
+            "de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en ",
+            "español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de ",
+            "rock  argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de roc",
+            "k argentino \n\nEsta es una canción en español de rock arg",
+            "entino \n\nEsta es una canción en españo ",
+            "de rock argentino \n\nEsta es una canción en español de ",
+            "rock argentino ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "que me pidas de rod",
-            "illas por favor./n"
+            "Est",
+            "a es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEst",
+            "a es una canción en español de rock argentino \n\nEsta es ",
+            "una canción en español de ro",
+            "ck argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de rock argentino \n\nEsta es una canción en español de ro",
+            "ck argentino \n\nEsta es una canción en español de rock argentino \n\nEst ",
+            "es una canción en español de rock argentino \n\nEsta ",
+            "es una canción en español de roc",
+            "k argentino \n\nSabes que no ",
+            "voy dejarte ir \n\nNo ",
+            "voy dejar que todo resu",
+            "lte tan fácil para ti \n\nNo voy dejar que todo resulte tan fácil para ti /n"
         ],
         [
-            "Comprendo que es tu j",
-            "uego, cubrirte tras un v",
-            "elo/nProvocas sensac"
+            "Trataré de sa",
+            "carte de despartir \n\nTrataré de sacarte de despartir \n\nHaci",
+            "endo lado tu pelo acerc",
+            "ándote hacia mi \n\nHaciendo lado tu pelo acercándote hacia mi /n"
         ],
         [
-            "ion ambigua en mi./n"
+            "Comprendo que tu ju",
+            "ego \n\nComprendo que tu juego cubrirte tras un ",
+            "velo cubrirte tras un velo provoca sensación ambigua en mi provoca sensa",
+            "ción ambigua en ",
+            "mi \n\nHazme un favor ah",
+            "ora \n\nHazme un favor ahora si no es verdad no ",
+            "llores \n\nAl menos de algo ",
+            "me estaré fina /n"
         ],
         [
-            "Hazme un favor ahora,",
-            " si no es verdad no llor",
-            "es/nal menos se alg"
+            "Al menos de algo me estaré final \n\nSi estas hablando en ",
+            "serio \n\nQue quiero que te a",
+            "pures \n\nQuedemos en n",
+            "ovaronos \n\nPero ",
+            "ya no puedo soport",
+            "arlo \n\nPero ya no puedo soportarlo \n\nAl fin me estas de",
+            "jando \n\nQuisiera irm ",
+            "antes de llo",
+            "rar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "o honesta al final./n"
-        ],
-        [
-            "si estas hablando en ",
-            "serio, prefiero que te a",
-            "pures/nquedemos en no "
-        ],
-        [
-            "vernos pero ya./n"
-        ],
-        [
-            "No puedo soportarlo",
-            ", al fin me estas ",
-            "dejando/nquisiera irme a"
-        ],
-        [
-            "ntes de llorar./n"
-        ],
-        [
-            "Que triste se ve, que poco cordial/n"
-        ],
-        [
-            "que te hagas la martir, que quieras hablar/n"
-        ],
-        [
-            "de que en realidad ,no es que no me amas/n"
-        ],
-        [
-            "pero es la mentira me cansa de mas./n"
-        ],
-        [
-            "Comprendo que es tu j",
-            "uego, cubrirte tras un v",
-            "elo/nProvocas sensac"
-        ],
-        [
-            "ion ambigua en mi./n"
-        ],
-        [
-            "Hazme un favor ahora,",
-            " si no es verdad no llor",
-            "es/nal menos se alg"
-        ],
-        [
-            "o honesta al final./n"
-        ],
-        [
-            "si estas hablando en ",
-            "serio, prefiero que te a",
-            "pures/nquedemos en no "
-        ],
-        [
-            "vernos pero ya./n"
-        ],
-        [
-            "No puedo soportarlo",
-            ", al fin me estas ",
-            "dejando/nquisiera irme a"
-        ],
-        [
-            "ntes de llorar./n"
-        ],
-        [
-            "Por favor ,deb",
-            "i suponerlo yo/n"
-        ],
-        [
-            "de tarde cuando me llamaste/n"
-        ],
-        [
-            "senti que me dejarias hoy/n"
-        ],
-        [
-            "pero no, no es",
-            " la primera vez/n"
-        ],
-        [
-            "hace ya bastante tiempo/n"
-        ],
-        [
-            "que espero llegue este momento/n"
-        ],
-        [
-            "Sabes que? no ",
-            "voy a dejarte ir/n"
-        ],
-        [
-            "No voy a dejar que todo/n"
-        ],
-        [
-            "resulte tan facil para ti/n"
-        ],
-        [
-            "tratare besart",
-            "e antes de partir/n"
-        ],
-        [
-            "haciendo a un lado tu pelo/n"
-        ],
-        [
-            "y acercandote hacia mi./n"
-        ],
-        [
-            "Comprendo que es tu j",
-            "uego, cubrirte tras un v",
-            "elo/nProvocas sensac"
-        ],
-        [
-            "ion ambigua en mi./n"
-        ],
-        [
-            "Hazme un favor ahora,",
-            " si no es verdad no llor",
-            "es/nal menos se alg"
-        ],
-        [
-            "o honesta al final./n"
-        ],
-        [
-            "si estas hablando en ",
-            "serio, prefiero que te a",
-            "pures/nquedemos en no "
-        ],
-        [
-            "vernos pero ya./n"
-        ],
-        [
-            "No puedo soportarlo",
-            ", al fin me estas ",
-            "dejando/nquisiera irme a"
-        ],
-        [
-            "ntes de llorar."
+            "Quisiera irme antes de llorar "
         ]
     ],
     "etiquetas": [],
@@ -241,9 +350,9 @@
         {
             "tipo": "Youtube",
             "id": "u0rCAIf_BTI",
-            "delay": 0
+            "delay": 14000.0
         }
     ],
-    "calidad": -1,
+    "calidad": 1,
     "procesando": 0
 }

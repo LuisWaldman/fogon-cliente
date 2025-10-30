@@ -2,46 +2,180 @@
     "cancion": "una-noche-como-hoy",
     "banda": "miranda",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "D",
+                    "C",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
-                    "G",
-                    "C",
-                    "Em",
-                    "G",
-                    "C",
-                    "Em"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "Em",
-                    "G",
-                    "C",
-                    "Em",
-                    "G",
-                    "C",
-                    "Em"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
                     "D",
-                    "Am",
                     "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
                     "C",
                     "Em",
                     "C",
-                    "Em"
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
@@ -49,107 +183,149 @@
             0,
             1,
             2,
-            0,
-            0,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
         [
-            "Una noche como ho",
-            "y/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   Calurosa y estrell",
-            "ada/n   El eclipse que pas"
+            "Una ",
+            "noche como hoy /n"
         ],
         [
-            "Ã³/n"
+            "Calur",
+            "osa estrellada /n"
         ],
         [
-            "   No nos ha dejado na",
-            "da/n   ...n"
+            "El e",
+            "clipse que pasó /n"
         ],
         [
-            "ada/n"
+            "No nos ",
+            "ha dejado nada, ",
+            "nada ",
+            "/n"
         ],
         [
-            "   Una noche como ho",
-            "y/n"
+            "Una n",
+            "oche como hoy /n"
         ],
         [
-            "   Cuando todo me obsesi",
-            "ona/n   Especialmente mi a"
+            "Cuando t",
+            "odo me obsesiona /n"
         ],
         [
-            "mor/n"
+            "Espe",
+            "cialmente mi amor /n"
         ],
         [
-            "   Se congela y no reacci",
-            "ona/n   Y "
+            "Se co",
+            "ngela no reacciona ",
+            "no, ",
+            "no tiene f",
+            "orma de segu",
+            "ir ",
+            "no, ",
+            "no tiene f",
+            "orma de segu",
+            "ir latiendo /n"
         ],
         [
-            "no.. no tiene forma de segu",
-            "ir/n   Y "
+            "De segui",
+            "r latiendo ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "no.. no tiene forma de segui",
-            "r latien",
-            "do/n   De seg"
+            "Una n",
+            "oche como hoy /n"
         ],
         [
-            "uir latie",
-            "ndo/n"
-        ],
-        [],
-        [
-            "   Una noche como h",
-            "oy/n"
+            "Revisan",
+            "do algunas cosas /n"
         ],
         [
-            "   Revisando algunas co",
-            "sas/n   Los recuerdos y el do"
+            "Los rec",
+            "uerdos el dolor /n"
         ],
         [
-            "lor/n"
+            "Una n",
+            "ube de vapor al s",
+            "acar la conclus",
+            "ión \n\nLa verd",
+            "ad definitiv /n"
         ],
         [
-            "   Una nube de vapo",
-            "r/n"
+            "Conge",
+            "ló mi coraz",
+            "ón \n\nUna no",
+            "che como hoy ",
+            "no, ",
+            "no tiene fo",
+            "rma de segu",
+            "ir ",
+            "no, ",
+            "no tiene fo",
+            "rma de segui",
+            "r ardiendo /n"
         ],
         [
-            "   Y a sacar la conclusio",
-            "n/n"
+            "De segu",
+            "ir ardiendo /n"
         ],
         [
-            "   La verdad definiti",
-            "va/n   CongelÃ³ mi coraz"
+            "De segu",
+            "ir ardiendo /n"
         ],
         [
-            "on/n"
+            "De segu",
+            "ir ardiendo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   Una noche como ho",
-            "y/n   Y "
-        ],
-        [
-            "no.. no tiene forma de segu",
-            "ir/n   Y "
-        ],
-        [
-            "no.. no tiene forma de segui",
-            "r ardiendo/n   De seguir ardiendo x3"
-        ],
-        []
+            "De seguir ardiendo "
+        ]
     ],
     "etiquetas": [],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "sks5m5CB-xA",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "calidad": -1,
+    "calidad": 1,
     "procesando": 0
 }

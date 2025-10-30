@@ -8,123 +8,190 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "D11",
+                    "D11"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D11",
+                    "G",
+                    "G",
+                    "Am7/5-",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
                     "A7",
-                    "Am7/5-"
+                    "A7",
+                    "C",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "E°",
+                    "G",
+                    "G",
+                    "Am7",
                     "Am7",
                     "D11",
-                    "C",
-                    "G"
+                    "D11"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A7",
-                    "C",
-                    "G",
-                    "Eb7",
-                    "C",
-                    "C/C#",
-                    "G",
-                    "C#°"
+                    "D11",
+                    "Am7",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am7",
-                    "D11",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "E°",
+                    "A7",
+                    "A7",
                     "C",
                     "G",
-                    "D",
-                    "A",
-                    "B",
-                    "E"
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Am7",
+                    "D11",
+                    "D11",
+                    "D11",
+                    "D11",
+                    "D11"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Quiero dejarte un",
-            " bes",
-            "o,una pala",
-            "bra /n  "
+            "dejarte un b",
+            "eso",
+            "una palab",
+            "ra  un po",
+            "c  de pan,",
+            "",
+            "un cielo antigu",
+            "o /n"
         ],
         [
-            "un poco de ",
-            "pan,  ",
-            "un cielo an",
-            "tig",
-            "uo /n  "
+            "Qui",
+            "er  mostrarte un c",
+            "ubo",
+            ",  de los seis la",
+            "dos  luego",
+            "ele",
+            "gir  d",
+            "ónd  acostart",
+            "e /n Aquí acostu",
+            "mbramo  jerar",
+            "quizarno  por orden d",
+            "e  frustraci",
+            "ón /n"
         ],
         [
-            "quiero mostrarte un",
-            " cubo",
-            ", de los seis l",
-            "ados /n  "
+            "Ce",
+            "lebrar  tu",
+            "condici",
+            "ón  serás lo que",
+            "quiera  dentro de l",
+            "a  reglas del juego.",
+            "/n"
         ],
         [
-            "luego ele",
-            "girás",
-            ",donde aco",
-            "sta",
-            "rte /n  A"
+            "Q",
+            "uier  que una ma",
+            "ñan  d",
+            "e  adol",
+            "escenci  inte",
+            "nté  saber m",
+            "ás",
+            "de la cuen",
+            "ta ",
+            "/n"
         ],
         [
-            "quí acostumbramos a",
-            " jerarquizarnos /n  por "
+            "Quiero sabert",
+            "adul",
+            "to  patas d",
+            "e  gallo, l",
+            "laga  en la pi",
+            "el ",
+            "rastros de v",
+            "ida /n Aquí",
+            "acostumbram ",
+            "jerarquizarnos por o",
+            "rden  de frustra",
+            "ción ",
+            "/n"
         ],
         [
-            "orden de frustr",
-            "ación /n  ce"
-        ],
-        [
-            "lebr",
-            "aré, ",
-            "  tu co",
-            "ndici",
-            "n,serás lo que quieras /n  "
-        ],
-        [
-            "dentro de las reglas del ",
-            "jue",
-            "go ",
-            "/n  "
-        ],
-        [
-            "Hi--",
-            "---",
-            "jo  "
+            "Celebraré t",
+            "u  condi",
+            "ción  s",
+            "erás  lo que quieras de",
+            "ntr  de las reglas del j",
+            "uego ",
+            "hijo.",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "DRnCKP22LqM",
-            "delay": 0
+            "delay": 1800.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

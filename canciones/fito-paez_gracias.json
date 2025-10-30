@@ -8,248 +8,427 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "G#m",
+                    "F#m",
                     "F#m",
                     "F#7",
-                    "B",
-                    "B/A",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "E",
+                    "E",
                     "E",
                     "A",
                     "F#m",
-                    "F#7",
-                    "B",
-                    "B/A",
-                    "C#m",
-                    "G#m",
                     "F#m",
-                    "F#7",
-                    "B",
-                    "B/A",
-                    "C#m",
-                    "G#m",
                     "F#m",
-                    "F#7",
-                    "Am",
-                    "B",
+                    "F#m",
                     "E",
-                    "A",
-                    "F#m",
-                    "F#7",
-                    "B",
-                    "B/A",
-                    "E",
-                    "A",
-                    "F#m",
-                    "F#7",
-                    "B",
-                    "B/A",
                     "C#m",
                     "G#m",
-                    "F#m",
+                    "G#m",
                     "F#7",
-                    "B",
-                    "B/A",
+                    "F#7",
+                    "F#7",
+                    "C#m",
+                    "C#m",
                     "C#m",
                     "G#m",
-                    "F#m",
+                    "G#m",
                     "F#7",
-                    "Am",
-                    "B",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#7",
                     "G",
                     "C/G",
-                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "C/G",
                     "G",
                     "C",
-                    "B7",
-                    "Em",
-                    "A7",
-                    "E",
-                    "A",
-                    "F#m",
-                    "F#7",
-                    "B",
-                    "B/A",
-                    "E",
-                    "A",
-                    "F#m",
-                    "F#7",
-                    "B",
-                    "B/A",
-                    "C#m",
-                    "G#m",
-                    "F#m",
-                    "F#7",
-                    "B",
-                    "B/A",
-                    "C#m",
-                    "G#m",
-                    "F#m",
-                    "F#7",
-                    "Am",
-                    "B",
-                    "Em",
-                    "Am",
-                    "D7",
-                    "G",
                     "Em",
                     "Am7",
-                    "D7",
                     "G",
-                    "F",
+                    "C/G",
+                    "G",
+                    "C/G",
+                    "G",
                     "C",
+                    "Em",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am7",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#7",
+                    "E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C#m",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#7",
+                    "C#m",
+                    "C#m",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C/G",
+                    "G",
+                    "G",
+                    "G B7",
+                    "B7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C/G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            " La guitarra de Spine",
-            "tta está en casa ",
-            "  una ve",
-            "z se la olvidó",
+            "L",
+            "a  guit",
+            "arr  de espin",
+            "et  está en c",
+            "as /n U",
+            "na  v",
+            "ez  se la o",
+            "lvi",
+            "d /n"
+        ],
+        [
+            "Cuenta hi",
+            "storia  desde e",
+            "l  bajo del g",
+            "ra",
+            "n /n Dond",
+            "alguna vez",
+            "so",
+            "n /n"
+        ],
+        [
+            "Se vue",
+            "lv  invisibl",
+            "es t",
+            "a  incre",
+            "íbl /n Beto l",
+            "e  habla desde e",
+            "l  sol",
+            "/n"
+        ],
+        [
+            "Ama u",
+            "na  safa",
+            "t  de un",
+            "tre  fantas",
+            "m /n Son lo",
+            "rayos del",
+            "a",
+            "m/n"
+        ],
+        [
+            "Lito /n N",
+            "evia  me in",
+            "vit  un e",
+            "nsay",
+            "c",
+            "anta  una c",
+            "anc",
+            "ió /n"
+        ],
+        [
+            "Er",
+            "una de l",
+            "o  primero",
+            "s  gato",
+            "s /n Me t",
+            "emblab  al",
+            "cor",
+            "azó ",
+            "v",
+            "olv  la infa",
+            "nci  en p",
+            "oca  pala",
+            "bra /n Per",
+            "o  treinta años",
+            "desp",
+            "ué ",
+            "ahor",
+            "a  esa ba",
+            "ls  iba a",
+            "l  infi",
+            "nit /n ¿Qué s",
+            "eríamo  hoy s",
+            "in  é",
+            "l /n"
+        ],
+        [
+            "Sus músic",
+            "a  nos hacen bril",
+            "la /n Sus músi",
+            "ca  nos hacen canta/n"
+        ],
+        [
+            "Sus músi",
+            "ca  nos cuentan que algu",
+            "na  cosas est",
+            "á /n Están en su preci",
+            "s lugar /n Sus mú",
+            "sica  nos hacen br",
+            "illa /n Sus mú",
+            "sica  nos hacen cant",
+            "a /n Sus m",
+            "úsica  nos cuentan que a",
+            "lguna  cosas es",
+            "tá /n Están en su pr",
+            "ecis  lug",
+            "a /n"
+        ],
+        [
+            "Ch",
+            "arli  pus",
+            "todo patas",
+            "arri",
+            "b /n Cuan",
+            "d  tuvo e",
+            "l  melo",
+            "tró /n"
+        ],
+        [
+            "Com",
+            "nadie nos c",
+            "ontó la /n Arg",
+            "entin ",
+            "un buen",
+            "día la q",
+            "ue",
+            "m /n S",
+            "u  queri",
+            "d /n Alicia a",
+            "visó  que u",
+            "n día /n E",
+            "l  juego s",
+            "term",
+            "in /n"
+        ],
+        [
+            "Per",
+            "sus astil",
+            "la  son l",
+            "a  maravil",
+            "la /n De su e",
+            "xtrañ  co",
+            "raz",
+            "ó /n S",
+            "u  músicas nos hace",
+            "n  brilla/n"
+        ],
+        [
+            "Sus músicas nos hace",
+            "n cantar /n S",
+            "u  músicas nos cue",
+            "nta  que algunas cos",
+            "a están /n Está",
+            "en su preciso lugar/n"
+        ],
+        [
+            "Sus músicas nos h",
+            "ace  brill",
+            "a /n Sus músicas nos h",
+            "ace  cantar/n"
+        ],
+        [
+            "Sus músicas nos c",
+            "uentan  que algunas co",
+            "sa están /n Est",
+            "á  en su preciso l",
+            "uga ",
+            "/n"
+        ],
+        [
+            "Están,",
+            "están en su preciso",
+            "lu",
+            "ga ",
             "",
-            "/n"
-        ],
-        [
-            " cuenta historias desde el ba",
-            "jo Belgrano  ",
-            " donde alguna",
-            " vez sonó",
             "",
-            "/n"
-        ],
-        [
-            "   se vuelve invisible,",
-            "  es tan increíble/n"
-        ],
-        [
-            "   Beto le ha",
-            "bla desde el sol",
             "",
-            "/n"
-        ],
-        [
-            "   ama a una azafata ",
-            "  de un tren fantasma/n"
-        ],
-        [
-            "   son los ra",
-            "yos del amo",
-            "r.",
-            "/n"
-        ],
-        [
-            " Litto Nebbia me invit",
-            " a un ensayo ",
-            "  a canta",
-            "r una canción",
-            "",
-            "/n"
-        ],
-        [
-            " era una de los pri",
-            "meros Gatos  ",
-            " me temblaba",
-            " el corazón",
-            "",
-            "/n"
-        ],
-        [
-            "   y volví A A  infancia",
-            ",  en pocas palabras/n"
-        ],
-        [
-            "   pero 3",
-            "0 años despu",
-            "s",
-            "/n"
-        ],
-        [
-            "   y ahora esa balsa ",
-            "  iba al infinito/n"
-        ],
-        [
-            "   qué seri",
-            "amos hoy sin ",
-            "l?",
-            "/n"
-        ],
-        [
-            "(Sus músicas nos h",
-            "acen brillar ",
-            "sus músicas nos ha",
-            "cen cantar/n"
-        ],
-        [
-            " sus músicas nos cu",
-            "entan que algu",
-            "nas cos",
-            "as están",
-            ",/n"
-        ],
-        [
-            " Charly puso todo pa",
-            "tas arriba  ",
-            " cuando tuvo",
-            " el mellotron",
-            "",
-            "/n"
-        ],
-        [
-            " como nadie nos cont",
-            " la Argentina ",
-            "  y un buen d",
-            "a la quemó",
-            "",
-            "/n"
-        ],
-        [
-            "   su querida Alicia ",
-            "  avisó que un día",
-            "   el jue",
-            "go se terminó",
-            "",
-            "/n"
-        ],
-        [
-            "   pero sus astillas ",
-            "  son las maravillas  ",
-            " de su extrañ",
-            "o corazón",
-            ".",
-            "/n"
-        ],
-        [
-            "     ",
-            "   es",
-            " tan,",
-            "  es",
-            "tan en",
-            " su preciso lu",
-            "gar",
             "",
             "",
             "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "2Jwspzd2vQQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -8,139 +8,153 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "G",
-                    "Am",
-                    "Em",
-                    "F",
-                    "C",
-                    "F",
-                    "G"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D"
+                    "Am",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A",
-                    "Bm",
-                    "F#m",
-                    "F#m",
-                    "G",
-                    "F",
-                    "C",
-                    "F7"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Esus",
-                    "E",
-                    "F",
+                    "C",
                     "C",
                     "F",
+                    "F",
+                    "C",
+                    "D",
+                    "D",
+                    "F",
+                    "F",
+                    "Bm",
+                    "G",
                     "G",
                     "F",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Laura creció entre Doors y Serrat",
-            ",/n"
-        ],
-        [
-            "Zoe entre Almendra y Manal,",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "cuando estaba en boga soña",
-            "r,/nwe the wonderful worl"
+            "Laura cre",
+            "ci entre /n Dorz S",
+            "errat  soy entre/n"
         ],
         [
-            "d",
+            "Almendr /n Man",
+            "al  cuando estaba e",
+            "n  boga soñar with",
+            "wonderful worl",
+            "d ",
+            "73,/n"
+        ],
+        [
+            "Rivas en la /n T/n"
+        ],
+        [
+            "V  taxi libre,",
+            "superstar,",
+            "todas se mo",
+            "ría  con él, chicas d",
+            "e  armas",
+            "n",
+            "o  te asustes de m",
+            "í  se dicen entre s",
+            "í  en estos paraíso",
+            "del dolor se b",
+            "esa  se va",
+            "n /n Aren",
+            "a  de miel, vi",
+            "ent  del mar, ruc",
+            "hi  su piel",
+            "las ve",
+            "bailar tras e",
+            "l cristal, /n Laura Sol",
+            ". ",
+            "",
+            "",
             "/n"
         ],
         [
-            "'73, Rivas en la T",
-            "V/n"
-        ],
-        [
-            "taxi libre super S",
-            "tar/nt"
-        ],
-        [
-            "odas se morían con ",
-            "él/nchicas de armas to"
-        ],
-        [
-            "mar.",
-            "/n"
-        ],
-        [
-            "Y no te asustes de mí,/n"
-        ],
-        [
-            "se dicen entre sí,/n"
-        ],
-        [
-            "en estos paraísos del d",
-            "olor,/n"
-        ],
-        [
-            "se besan/n"
-        ],
-        [
-            "y se van,/n"
-        ],
-        [
-            "arenas de mi",
-            "el,/nviento del ma"
-        ],
-        [
-            "r/n"
-        ],
-        [
-            "rush y su",
-            "tie/n"
-        ],
-        [
-            "las veo baila",
-            "r tras el crista",
-            "l/nLaura y"
-        ],
-        [
-            " Zoe",
-            ".",
-            ""
+            "E  la cancion de la cancion de la cancion de la cancion de la cancion de l",
+            "a  cancion d",
+            "e",
+            "la c",
+            "an",
+            "ci "
         ]
     ],
-    "bpm": 80,
+    "bpm": 75,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "WYbfuhECqbo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }
