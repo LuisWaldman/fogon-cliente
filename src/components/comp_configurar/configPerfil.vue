@@ -141,24 +141,28 @@ function logout() {
   }
   appStore.aplicacion.logout()
 }
+
+// New functions for click handlers
+function toggleModoDesarrollador() {
+  perfil.value.ModoDesarrollador = !perfil.value.ModoDesarrollador
+  updateProfile()
+}
+
+function toggleCifradoLatino() {
+  perfil.value.CifradoLatino = !perfil.value.CifradoLatino
+  updateProfile()
+}
 </script>
 
 <template>
   <div style="margin-top: 30%; position: absolute; bottom: -300px">
-    <span
-      v-if="perfil.ModoDesarrollador"
-      @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()"
+    <span v-if="perfil.ModoDesarrollador" @click="toggleModoDesarrollador"
       >✅</span
     >
-    <span
-      v-if="!perfil.ModoDesarrollador"
-      @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()"
+    <span v-if="!perfil.ModoDesarrollador" @click="toggleModoDesarrollador"
       >❌</span
     >
-    <span
-      @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()"
-      >Modo desarrollador</span
-    >
+    <span @click="toggleModoDesarrollador">Modo desarrollador</span>
   </div>
   <div class="divPerfil">
     <div style="display: flex">
@@ -217,20 +221,13 @@ function logout() {
       <div class="crlPerfil">
         <div>
           <div>
-            <span
-              v-if="perfil.CifradoLatino"
-              @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()"
+            <span v-if="perfil.CifradoLatino" @click="toggleCifradoLatino"
               >✅</span
             >
-            <span
-              v-if="!perfil.CifradoLatino"
-              @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()"
+            <span v-if="!perfil.CifradoLatino" @click="toggleCifradoLatino"
               >❌</span
             >
-            <span
-              @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()"
-              >Cifrado latino</span
-            >
+            <span @click="toggleCifradoLatino">Cifrado latino</span>
           </div>
 
           <div>
