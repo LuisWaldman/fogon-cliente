@@ -132,7 +132,7 @@ function guardarCambios(origenDestino: string) {
       </div>
 
       <div class="divctrlEdit">
-        <button @click="guardarCambios('local')">🧠 Guardar</button>
+        <button @click="guardarCambios('local')">💾 Guardar</button>
         <button @click="guardarCambios('server')">o en 🗄️</button>
       </div>
     </div>

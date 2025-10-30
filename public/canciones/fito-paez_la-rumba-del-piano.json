@@ -8,7 +8,36 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
                 "acordes": [
                     "G",
                     "Am",
@@ -16,368 +45,563 @@
                     "Am",
                     "G",
                     "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
                     "G",
                     "Am",
                     "G",
                     "Am",
                     "G",
-                    "Am",
+                    "G",
                     "G",
                     "Am",
-                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "Am",
                     "G",
-                    "G/B",
-                    "C",
                     "A/C#",
-                    "D",
-                    "Em",
-                    "F",
+                    "A/C#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "D/F#",
                     "G",
-                    "G/B",
                     "C",
-                    "A/C#",
-                    "A/C#",
-                    "D",
-                    "Em",
-                    "F",
-                    "D/F#",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "G/B",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "C",
-                    "A/C#",
-                    "D",
-                    "Em",
-                    "F",
-                    "D/F#",
-                    "G",
-                    "G/B",
-                    "C",
-                    "A/C#",
-                    "A/C#",
-                    "D",
-                    "Em",
-                    "F",
-                    "D/F#",
-                    "G",
-                    "F",
-                    "Em",
                     "Am",
-                    "A/C#",
-                    "C/D",
-                    "G",
-                    "Em",
                     "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C/G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "G",
+                    "Am",
+                    "G",
+                    "Am",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "Am",
+                    "G",
+                    "Am",
+                    "G",
+                    "Am",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "A/C#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A/C#",
+                    "Am G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C/D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "A/C#",
+                    "A/C#"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C/D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C/D",
+                    "C/D",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
         ]
     },
     "letras": [
         [
-            "Hermano de soledad, ",
-            "aquí hoy estamos los dos/n"
-        ],
-        [
-            "bajo esta luz de rubí",
-            ", entre esta gente nueva/n"
-        ],
-        [
-            "Hoy yo te quiero cantar,",
-            " madera que hablas por mi/n"
-        ],
-        [
-            "mezcla de yegua y diván",
-            ", refugio, lengua y fusil./n"
-        ],
-        [
-            "Y si me aplauden a mi también",
-            ", te aplauden a vos/n"
-        ],
-        [
-            "y si me caigo una vez,",
-            " también se cae tu honor./n"
-        ],
-        [
-            "Y ya que hablamos de amor,",
-            " pinceles y monedas/n"
-        ],
-        [
-            "porque no hablamos de vos,",
-            " cuerpito blanco y negro./nTus cuatro p"
-        ],
-        [
-            "atas piden",
-            " fiesta, en",
-            "tonces/nha"
-        ],
-        [
-            "y que dársel",
-            "a..o",
-            "h...oh.",
-            "..oh!",
-            "/nSe va poni"
-        ],
-        [
-            "endo cal",
-            "entito el ai",
-            "re, pide má",
-            "s/npide "
-        ],
-        [
-            "mas y m",
-            "s..o",
-            "h...oh.",
-            "..oh!",
-            "/nCl"
-        ],
-        [
-            "aro",
-            "",
-            "/nse "
-        ],
-        [
-            "vino la ru",
-            "mba del pi",
-            "ano.",
-            "",
-            "/nCl"
-        ],
-        [
-            "aro",
-            "",
-            "/nrum"
-        ],
-        [
-            "ba mamá",
             "",
             "",
             "",
-            "/nCl"
-        ],
-        [
-            "aro, cl",
-            "aro, cla",
-            "ro,/nse "
-        ],
-        [
-            "vino la ru",
-            "mba del pi",
-            "ano.",
             "",
-            "/nCl"
-        ],
-        [
-            "aro, cl",
-            "aro, cla",
-            "ro,/nrum"
-        ],
-        [
-            "ba mamá",
             "",
             "",
             "",
             "/n"
         ],
         [
-            "Mi piano sabe de mí",
-            ", de cigarrillos que queman/n"
-        ],
-        [
-            "de cables, putas y Dios,",
-            " y de esa gente que espera./n"
-        ],
-        [
-            "El otro día lo vi",
-            " corriendo atrás de su amor,/n"
-        ],
-        [
-            "una pianola de azul,",
-            " muy vieja adulta y sin voz./n"
-        ],
-        [
-            "Y se abre como una flor",
-            " ante un acorde sutil,/n"
-        ],
-        [
-            "y cierra su corazó",
-            "n si lo abandono en abril./n"
-        ],
-        [
-            "Mi piano un poco soy yo,",
-            " yo soy un poco de él,/n"
-        ],
-        [
-            "hermanos en la prisión",
-            ", viajando en un carrousell/nTus cuatro p"
-        ],
-        [
-            "atas piden",
-            " fiesta, en",
-            "tonces/nha"
-        ],
-        [
-            "y que dársel",
-            "a..o",
-            "h...oh.",
-            "..oh!",
-            "/nSe va poni"
-        ],
-        [
-            "endo cal",
-            "entito el ai",
-            "re, pide má",
-            "s/npide "
-        ],
-        [
-            "mas y m",
-            "s..o",
-            "h...oh.",
-            "..oh!",
-            "/nSólo te pido un "
-        ],
-        [
-            "poco de ",
-            "aire para re",
-            "spirar/ny dej"
-        ],
-        [
-            "as entrar aquella melod",
-            "ía...",
-            "/nCl"
-        ],
-        [
-            "aro",
+            "Una canción en",
+            "e",
+            "s",
+            "p",
+            "a",
+            "ñ",
+            "o",
+            "de rock argentino.",
             "",
-            "/nse "
-        ],
-        [
-            "vino la ru",
-            "mba del pi",
-            "ano.",
             "",
-            "/nCl"
+            "/n"
         ],
         [
-            "aro",
+            "Hermano de sole",
+            "dad  aquí hoy estamos los d",
+            "os,  bajo esta luz de r",
+            "ubí  entre esta gente nu",
+            "eva /n Hoy yo te quiero ca",
+            "ntar  madera que hablas p",
+            "o  mí, mezcla de yegua",
+            "diván  refugio, lengua",
+            "fusil",
+            ". ",
             "",
-            "/nrum"
+            "",
+            "si me apla",
+            "ude  mí, también te apl",
+            "aude  vos, si me ca",
+            "ig  una vez, también se ca",
+            "e  tu honor. ya que hab",
+            "lamo  de amor, pinceles",
+            "monedas, ¿por qué no h",
+            "ablamos  de vos, cuerpito b",
+            "lanco  neg",
+            "ro /n"
         ],
         [
-            "ba mamá",
+            "Tus cuatro patas pide",
+            "n  fiesta, entonces ha",
+            "que dársela",
+            "/n"
+        ],
+        [
+            "Se va poniendo ca",
+            "lentit  el aire, p",
+            "ide  vacimar.",
+            "/n"
+        ],
+        [
+            "Claro",
+            ", ",
+            "s  vino la rumba de",
+            "piano./n"
+        ],
+        [
+            "Claro",
+            "",
+            "rumba mam",
+            "á /n"
+        ],
+        [
+            "C",
+            "laro  s",
+            "e  vino la rumba d",
+            "e  piano./n"
+        ],
+        [
+            "Cla",
+            "ro ",
+            "rumba mamá.",
             "",
             "",
             "",
-            "/nCl"
-        ],
-        [
-            "aro, cl",
-            "aro, cla",
-            "ro,/nse "
-        ],
-        [
-            "vino la ru",
-            "mba del pi",
-            "ano.",
             "",
-            "/nCl"
+            "",
+            "",
+            "/n"
         ],
         [
-            "aro, cl",
-            "aro, cla",
-            "ro,/nrum"
+            "Mi pi",
+            "an  sabe de mí, de",
+            "cigarrillo  que queman de",
+            "cables  putas dios, d",
+            "e esta gente que espera. /n E",
+            "l  otro día lo vi corri",
+            "end  atrás de su amor, u",
+            "n  pianola de azul muy",
+            "vieja  adulta sin v",
+            "oz. ",
+            "",
+            "",
+            "s",
+            "e  abre como una flor ant",
+            "e  un acorde sutil,",
+            "cierra su corazón si l",
+            "o abandona en abril. /n Mi p",
+            "ian  un poco soy yo, yo",
+            "so  un poco de él,",
+            "hermano  en la prisión viaj",
+            "and  en un carr",
+            "usel /n"
         ],
         [
-            "ba mamá",
+            "Tus cuatro patas p",
+            "ide  fiesta, entonces h",
+            "a  que dársela./n"
+        ],
+        [
+            "Clar",
+            "o  se va poniendo c",
+            "alentito  el aire,",
+            "pide vacimar.",
+            "/n"
+        ],
+        [
+            "Solo t",
+            "e  pido un poco d",
+            "e  aire para r",
+            "espira",
+            "r  dejaste entrar",
+            "aquella melodía./n"
+        ],
+        [
+            "Cl",
+            "aro ",
+            "se vino la rumb",
+            "de",
+            "l  piano./n"
+        ],
+        [
+            "Clar",
+            "o  rumba mam",
+            "á /n"
+        ],
+        [
+            "Claro,",
+            "claro, claro,",
+            "se vino la rumba d",
+            "e piano. /n C",
+            "laro ",
+            "claro,",
+            "rumba mam",
+            "á ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hermano de so",
+            "ledad  aquí hoy estamos lo",
+            "s  dos, bajo esta luz de r",
+            "ubí,  entre esta gente nu",
+            "eva /n Hoy yo te quiero ca",
+            "ntar  madera que hablas po",
+            "mí, muestra de jehuay di",
+            "ván  refugio lema",
+            "fusil/n"
+        ],
+        [
+            "Tus cuat",
+            "r  patas piden fiesta,",
+            "entonces hay que dár",
+            "sela /n"
+        ],
+        [
+            "Se va pon",
+            "iend  calentito el a",
+            "ire  pide vacim",
+            "ar ",
+            "/n"
+        ],
+        [
+            "Claro ",
+            "se vino la rum",
+            "b  del piano./n"
+        ],
+        [
+            "Clar",
+            "o ",
+            "rumba mam",
+            "á /n"
+        ],
+        [
+            "Claro",
+            "claro, claro,",
+            "se vino la rumba de",
+            "l  piano./n"
+        ],
+        [
+            "Claro, c",
+            "laro  claro,",
+            "rumba mamá.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "U",
+            "n aplausazo /n Eiche,/n"
+        ],
+        [
+            "Diego, /n Dani/n"
+        ],
+        [
+            "Saul.",
+            "",
+            "",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "WQ0gTegqUxM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

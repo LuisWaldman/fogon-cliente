@@ -62,7 +62,7 @@ function Borrar(index: number) {
 </script>
 
 <template>
-  <table style="width: 85%; margin-top: 20px; border: 1px solid">
+  <table class="tabla-canciones">
     <thead>
       <tr>
         <template v-if="!viendoFiltroTabla">
@@ -164,9 +164,6 @@ function Borrar(index: number) {
                 <div class="divItemDetalle">
                   <strong>Partitura:</strong>{{ cancion.pentagramas.length }}
                 </div>
-                <div class="divItemDetalle">
-                  <strong>Partitura:</strong>{{ cancion.pentagramas.length }}
-                </div>
               </div>
 
               <div class="botoneraDetalle">
@@ -178,7 +175,6 @@ function Borrar(index: number) {
               </div>
 
               <div class="botoneraDetalle" v-if="agregandoLista">
-                <button @click="clickAgregar(index)">AGREGAR</button>
                 <select v-model="listaseleccionada" style="width: 60%">
                   <optgroup>
                     <option value="actual">Lista de reproduccion</option>
@@ -189,7 +185,7 @@ function Borrar(index: number) {
                       :key="lista"
                       :value="'local_' + lista"
                     >
-                      🧠 {{ lista }}
+                      💾 {{ lista }}
                     </option>
                   </optgroup>
                   <optgroup>
@@ -202,7 +198,7 @@ function Borrar(index: number) {
                     </option>
                   </optgroup>
                 </select>
-
+                <button @click="clickAgregar(index)">AGREGAR</button>
                 <button @click="agregandoLista = false">❌</button>
               </div>
             </div>
@@ -216,6 +212,12 @@ function Borrar(index: number) {
 <style scoped>
 table {
   border-collapse: collapse;
+}
+
+.tabla-canciones {
+  width: 95%;
+  margin-top: 20px;
+  border: 1px solid;
 }
 
 tr {
@@ -278,6 +280,12 @@ td {
   .divDetalle {
     width: 95%;
     margin-left: 2.5%;
+  }
+  .tabla-canciones {
+    width: 98%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
   }
 }
 </style>

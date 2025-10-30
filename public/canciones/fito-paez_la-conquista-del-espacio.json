@@ -8,316 +8,385 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
                     "A",
-                    "A5",
                     "A",
-                    "B",
-                    "Dm",
                     "A",
-                    "A5",
-                    "A",
-                    "B",
-                    "Dm",
-                    "D",
-                    "A",
-                    "D",
-                    "A",
-                    "D",
-                    "A",
-                    "D",
-                    "A",
-                    "D",
-                    "A",
-                    "D",
-                    "A",
-                    "C#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
                     "F#m",
-                    "Bm",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B7",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "Esus4",
-                    "E",
+                    "Esus4"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
                     "A",
                     "A5",
                     "A",
-                    "B",
-                    "Dm",
                     "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "A",
                     "D",
-                    "A",
                     "D",
                     "F#m",
-                    "C#m",
-                    "C#m7",
+                    "F#m",
+                    "F#m",
+                    "A",
                     "Bm7",
-                    "E",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
                     "A",
                     "F#m",
-                    "B",
-                    "B7",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm7",
+                    "A",
                     "Bm7",
                     "Bm",
-                    "D",
-                    "A",
-                    "A",
-                    "E",
-                    "F#m",
-                    "D",
-                    "Dm",
-                    "A",
-                    "F#m",
                     "Bm",
-                    "C#",
-                    "D",
+                    "E",
+                    "E",
                     "E",
                     "A",
-                    "E",
-                    "F#m",
-                    "B",
-                    "Dm",
                     "A",
-                    "Bm7",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "B7",
-                    "E",
                     "F#m",
-                    "F",
-                    "A",
-                    "B",
-                    "D",
-                    "Dmaj7",
-                    "A",
-                    "Bm7",
-                    "A",
-                    "D",
-                    "E",
-                    "G",
-                    "D",
                     "F#m",
-                    "D",
-                    "F",
-                    "Dm",
+                    "F#m",
                     "A",
-                    "E",
-                    "C",
-                    "C",
-                    "F",
-                    "C",
-                    "C",
-                    "D",
-                    "C",
-                    "F",
-                    "Dm",
-                    "A#",
-                    "F",
-                    "G",
-                    "C",
-                    "Cm7",
-                    "F"
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "[Coro 1]/n"
-        ],
-        [
-            "La conquista del esp",
-            "acio",
-            "/nLa conquista de tu "
-        ],
-        [
-            "liberta",
-            "d/n"
-        ],
-        [
-            "La conquista de mi p",
-            "iano",
-            "/nLa conquista de dec"
-        ],
-        [
-            "irnosla",
-            "verdad/n"
-        ],
-        [
-            " Entre los arti",
-            "stasno se encuentra el ene",
-            "migo,/n(Encuentrael e"
-        ],
-        [
-            "nemigo)/nVamos p"
-        ],
-        [
-            "or los pueblos, las capita",
-            "les/nLlevando nuestra música al"
-        ],
-        [
-            "rededor del sol/n(Sol, sol, s"
-        ],
-        [
-            "ol)/nSab"
-        ],
-        [
-            "emos encender una hoguera con una guita",
-            "rra/nEn el centro de"
-        ],
-        [
-            " ese fuego van los besos, las miradas/nLos abrazos y el am"
-        ],
-        [
-            "or/nY "
-        ],
-        [
-            "oootra ve",
-            "z/nDesan"
-        ],
-        [
-            "dándonos/nY prepa"
-        ],
-        [
-            "rándonos para un nuevo m",
-            "undo/n"
-        ],
-        [
-            "La conquista que me hici",
-            "eron tus oj",
-            "os/nLa conquista de mi des"
-        ],
-        [
-            "ierto sider",
-            "al",
-            "/n"
-        ],
-        [
-            " Las galaxias nos mi",
-            "ran (Nos miran)/nLos jag"
-        ],
-        [
-            "uares, las orquídeas/nLas "
-        ],
-        [
-            "lunas y los pibes afuera de",
-            " la sociedad/nDebe ser el e"
-        ],
-        [
-            "fecto del \"sálvese quien pu",
-            "eeeda\"",
-            "/nQue te "
-        ],
-        [
-            "hace insensible a to",
-            "do, todo lo ",
-            "demás/nYo creo que tu "
-        ],
-        [
-            "corazón lleva melod",
-            "ía",
-            "aas/nDe "
-        ],
-        [
-            "mucho tiempo atrás/nQue a veces te a"
-        ],
-        [
-            "cordás/nY las volv"
-        ],
-        [
-            "és a ca",
-            "ntar/n"
-        ],
-        [
-            "Laa",
-            "a conqu",
-            "ista del espaac",
-            "iooo",
-            "/n"
-        ],
-        [
-            "La conq",
-            "uista de tu lii",
-            "iiii",
-            "bert",
-            "aaad",
-            "/n"
-        ],
-        [
-            "Laa",
-            "a conq",
-            "uista de mi pia",
-            "aaanooo",
-            "/n"
-        ],
-        [
-            "La conq",
-            "uista de",
-            " decirnos la verdaad",
-            "/n"
-        ],
-        [
-            "Laaa conqu",
-            "ista de ",
-            "las calles",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Laaaaaa",
-            " conqui",
-            "sta del ",
-            "derecho",
-            " que ga",
-            "nááás",
+            "L",
+            "a  conquista d",
+            "el  esp",
+            "acio ",
+            "l",
+            "a  conquista",
+            "de tu li",
+            "berta",
+            "d  l",
+            "a  conquist",
+            "del pia",
+            "no ",
+            "l",
+            "a  conquist",
+            "a  de decirno",
+            "la verdad./n"
+        ],
+        [
+            "Entr",
+            "e  los antistas no",
+            "s  encuentra el en",
+            "emigo ",
+            "vamos por l",
+            "o  pueblos, las capitales, l",
+            "levand  nuestra música al",
+            "rededo  del so",
+            "l /n Sabemo",
+            "s  encender una hoguer",
+            "a  con una guita",
+            "rra /n"
+        ],
+        [
+            "En el centro de ese",
+            "fueg  van los be",
+            "sos  las miradas, lo",
+            "s  abrazos el amo",
+            "r ",
+            "ot",
+            "r  v",
+            "ez",
+            ",  des",
+            "cendándono ",
+            "prep",
+            "arándono  para el nuevo m",
+            "undo /n"
+        ],
+        [
+            "La co",
+            "nquist  que m",
+            "e  hicieron t",
+            "u  ojos,",
+            "la co",
+            "nquist  de mi",
+            "desierto si",
+            "deral ",
             "/n"
         ],
         [
-            "Laa",
-            "aa conqui",
-            "sta del abraaz",
-            "oooo",
+            "Las galaxias n",
+            "os  mir",
+            "an  lo",
+            "s  jaguares, las orquídea",
+            "s  las lunas los pibes a",
+            "fuer de la sociedad. /n E",
+            "s  e",
+            "l  efecto d",
+            "e  que salves de q",
+            "uien  pueda,",
+            "",
+            "que te hace insensi",
+            "bl  todo,",
+            "todo lo demás./n"
+        ],
+        [
+            "Yo creo",
+            "qu  tu coraz",
+            "ó  lleva",
+            "melodí",
+            "a /n"
+        ],
+        [
+            "D  mucho tiempo a",
+            "trás  que",
+            "veces te acordas",
+            "las volvés c",
+            "antar /n L",
+            "a  conquis",
+            "t  del esp",
+            "acio ",
+            "l",
+            "a  conquis",
+            "t  de tu li",
+            "bertad /n"
+        ],
+        [
+            "L",
+            "a  conquis",
+            "t  de mi p",
+            "iano ",
+            "l",
+            "a  conqui",
+            "st  de decir",
+            "no  la verdad/n"
+        ],
+        [
+            "L",
+            "a  conqu",
+            "ist  de las",
+            "call",
+            "es  l",
+            "a  conq",
+            "uist  del dere",
+            "ch  que g",
+            "anas /n"
+        ],
+        [
+            "L",
+            "a  con",
+            "quist  del a",
+            "bra",
+            "zo  l",
+            "a  co",
+            "nquist  del a",
+            "zar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "La conqu",
-            "ista de gozaaa",
-            "r/n"
-        ],
-        [],
-        [
-            "[Po",
-            "st-",
-            "Coro 2]/n"
-        ],
-        [
-            "La conqu",
-            "ista del es",
-            "spac",
-            "io/n"
-        ],
-        [
-            "La conquista de tu libee",
-            "ertad/nDe las call"
-        ],
-        [
-            "es (De las calles)/nLa conquista "
-        ],
-        [
-            "de tu libertad"
+            "L",
+            "a  conquis",
+            "t  del espacio,",
+            "la conqui",
+            "st  de tu",
+            "liber",
+            "tad /n L",
+            "a  conqu",
+            "ist  de tu",
+            "lib",
+            "ert",
+            "ad ",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "7Y7S3l3KIgU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

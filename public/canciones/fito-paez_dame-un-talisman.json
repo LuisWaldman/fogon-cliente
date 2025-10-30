@@ -8,28 +8,41 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m7",
+                    "F#m7",
+                    "Bm7",
+                    "Bm7",
+                    "F#m7",
+                    "F#m7",
+                    "Em7/9",
+                    "Em7/9"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em7/9",
-                    "F#m7",
-                    "Bm7"
+                    "Em7/9",
+                    "Em7/9"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Em7/9",
-                    "E7",
-                    "G/A"
+                    "F#m7",
+                    "Em7/9",
+                    "Em7/9"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "Bm7",
-                    "Aadd9",
-                    "Gmaj7",
-                    "G/A"
+                    "Bm7 Gmaj7",
+                    "Gmaj7"
                 ]
             },
             {
@@ -37,232 +50,224 @@
                 "acordes": [
                     "Dmaj7",
                     "Em7/D",
-                    "Dmaj7",
                     "C#m7b5",
-                    "F#7",
-                    "Bm7",
-                    "Am7"
+                    "C#m7b5",
+                    "Em7/D",
+                    "Em7/D",
+                    "Em7/D",
+                    "Em7/D",
+                    "Em7/D",
+                    "Em7/D"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "C/D",
-                    "Gmaj7",
-                    "D/F#",
+                    "Em7/D",
+                    "F#m7",
+                    "Em7/9",
+                    "Em7/9"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em7/9",
+                    "F#m7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "E7",
-                    "Gm7",
-                    "Am7",
-                    "Bbmaj7",
+                    "F#m7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Em7/9",
+                    "Bm7",
+                    "Em7/9",
+                    "G/A",
+                    "Aadd9 F#m7",
+                    "Gmaj7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Dmaj7",
+                    "Em7/D",
+                    "C#m7b5",
+                    "C#m7b5",
+                    "Em7/D",
+                    "Em7/D",
+                    "Em7/D",
+                    "Em7/D",
+                    "Em7/D",
+                    "G/A",
+                    "G/A",
+                    "Dmaj7",
+                    "Em7/D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C#m7b5",
+                    "Em7/D",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "G/A",
+                    "G/A",
+                    "G/A",
                     "G/A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            2,
-            3,
-            4,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
             1,
             2,
             3,
             4,
-            3,
-            4
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "   Dorm",
-            "ir nena te",
-            " hace bien/nTe aseguro"
+            "Dormir nena t",
+            "e  hace bien, te ase",
+            "gur  que será mej",
+            "o /n Dor",
+            "mi  por lo m",
+            "enos  hoy, hace dí",
+            "a  que no ves el s",
+            "o /n"
         ],
         [
-            " que se",
-            "rá mej",
-            "or/n"
+            "Salgamos ca",
+            "minar  solo conozco",
+            "u  bar en la estación/n"
         ],
         [
-            "  Dormi",
-            "r por lo me",
-            "nos hoy/nHace "
+            "S",
+            "algamos  sin querer vol",
+            "ver  que es extraña que",
+            "es  sensación/n"
         ],
         [
-            "días que no ",
-            "ves el s",
-            "ol/n"
+            "Cuand  pasaban la",
+            "s  horas, las horas, las",
+            "hora  así/n"
         ],
         [
-            "Salgamo",
-            "s a camina",
-            "r/nYo conozco"
-        ],
-        [
-            " un bar",
-            " en la ",
-            "estación/n"
-        ],
-        [
-            "Salgamo",
-            "s sin quer",
-            "er volver/nQue ya ext"
-        ],
-        [
-            "raño a",
-            "quella ",
-            "sensación/nCuando pas"
-        ],
-        [
-            "aban las ho",
-            "ras, las ho",
-            "ras/nLas h"
-        ],
-        [
-            "oras as",
-            "/nHay ciertas "
-        ],
-        [
-            "cosas que ya no est",
-            "án/n"
-        ],
-        [
-            "Dame un t",
-            "alism",
-            "n/nNo te di"
-        ],
-        [
-            "ré para q",
-            "ué ja",
-            "más.",
+            "Hay ciertas cosas que y",
+            "a  no est",
+            "án  dame un t",
+            "alismán ",
+            "no te diré para qué",
+            "ja",
+            "má ",
+            "",
             "",
             "/n"
         ],
         [
-            "Uh  u",
-            "h   u",
-            "h    uh",
-            "/n"
+            "Luis es",
+            "t  yendo bien, ma",
+            "carit  se lo ve mej",
+            "o /n"
         ],
         [
-            "A Luis ",
-            "le está y",
-            "endo bien/nA Carlitos"
+            "Los chicos cant",
+            "a  en inglés esas",
+            "lluvia  son un gran dolor/n"
         ],
         [
-            " se lo ",
-            "ve mejo",
-            "r/n"
+            "Y",
+            "o  pegué mucho por sal",
+            "i  de allí, la verda",
+            "es que no sé qué p",
+            "as /n Y",
+            "o  solo quiero que lo hag",
+            "amo  bien se van m",
+            "u  lejos de cas",
+            "a /n Cuando el mundo arrasa c",
+            "o  todo, con todo en t",
+            "u  corazón/n"
         ],
         [
-            "Los chi",
-            "cos cantan",
-            " en inglés/nY est"
-        ],
-        [
-            "a lluvia es c",
-            "omo un g",
-            "ran dolor/n"
-        ],
-        [
-            "Yo pele",
-            "é mucho p",
-            "ara salir de allí/nY la verda"
-        ],
-        [
-            "d es qu",
-            "e no s",
-            " qué pasa/n"
-        ],
-        [
-            "Yo solo",
-            " quiero qu",
-            "e lo hagamos bien/nY lle"
-        ],
-        [
-            "varte muy lej",
-            "os de ca",
-            "sa/nCuando el "
-        ],
-        [
-            "mundo arras",
-            "a con todo,",
-            " con todo/nEn tu"
-        ],
-        [
-            " corazó",
-            "n/nHay ciertas "
-        ],
-        [
-            "cosas que ya no est",
-            "án/n"
-        ],
-        [
-            "Dame un t",
-            "alism",
-            "n/nNo te di"
-        ],
-        [
-            "ré para q",
-            "ué ja",
-            "más",
+            "Hay ciertas cosas qu",
+            "e  ya no est",
+            "án  dame u",
+            "n  talismá",
+            "n  no te diré para q",
+            "u  ja",
+            "má ",
             "",
-            "/n"
-        ],
-        [
-            "Uh uh",
-            " uh u",
-            "h",
-            "/nY esto siempre es "
-        ],
-        [
-            "así/nHay ciertas "
-        ],
-        [
-            "cosas que ya no es",
-            "tán/n"
-        ],
-        [
-            "Quiero mi t",
-            "alism",
-            "n/nNo te d"
-        ],
-        [
-            "iré para ",
-            "qué j",
-            "amás",
             "",
-            "/n"
+            "esto siempre",
+            "e  así,",
+            "hay ciertas cosas que y",
+            "a  no están/n"
         ],
         [
-            "Uh  u",
-            "h   u",
-            "h    uh",
-            ""
+            "Quiero un tal",
+            "ismán  no t",
+            "e  diré para qué j",
+            "amá ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "est  siempre es así, hay ciertas cosas que ya no están",
+            "",
+            "esto siempre es así, hay ciertas cosas que ya no están"
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "rBrY5tvm-MM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

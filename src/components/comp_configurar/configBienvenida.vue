@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="divBienvenida">
     <h1>Bienvenido al Fogon</h1>
     <div>
       Este lugar es para compartir Musica, te cuento alguna de las cosas que vas
@@ -57,5 +57,10 @@
 </script>
 
 <style scoped>
-/* Add any specific styles if needed */
+.divBienvenida {
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 </style>

@@ -8,78 +8,335 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F",
                     "F",
                     "F",
-                    "B",
-                    "C",
-                    "F#",
                     "F",
-                    "B"
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "F#"
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Es un criminal mambo/n"
-        ],
-        [
-            "Es un criminal mambo/n"
-        ],
-        [
-            "Criminal criminal Mam--bo",
-            "/n"
-        ],
-        [
-            "Criminal criminal mam--bo",
-            "/n"
-        ],
-        [
-            "Criminal criminal Mam--bo",
-            "/n"
-        ],
-        [
-            "Criminal criminal mam--bo",
-            "/n"
-        ],
-        [
-            "crimin",
-            "al    c",
-            "rimi",
-            "nal/n"
-        ],
-        [
-            "Crimin",
-            "al....",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. \n\nEsta ",
+            "es ",
+            "",
+            "",
+            "",
+            "",
+            "una ",
+            "canción ",
+            "en ",
+            "",
+            "español de rock a",
+            "rgent",
+            "ino. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock ",
+            "arg",
+            "ent",
+            "ino/n"
+        ],
+        [
+            "Esta es una canción en español de r",
+            "oc",
+            "argentino. \n\nEsta es ",
+            "una ",
+            "",
+            "",
+            "canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta  es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Esta es una canción en español de roc",
+            "k argentino. \n\nEsta es ",
+            "una ",
+            "canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino /n"
+        ],
+        [
+            "E",
+            "sta es una canción en español de rock argentino. \n\nEsta es ",
+            "una canción en español de rock argentino. \n\nEs",
+            "ta es una canción en español de rock argentino. \n\nEsta es una canción en español de ",
+            "rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de r",
+            "ock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de roc",
+            "k argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español ",
+            "de ",
+            "rock argentino. \n\nEsta ",
+            "es ",
+            "",
+            "una ",
+            "canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta ",
+            "es ",
+            "una canción en español de rock argentino. /n"
+        ],
+        [
+            "Esta es ",
+            "una canción en español de rock argentino. \n\nEsta es una canción en español de r",
+            "ock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de r",
+            "ock argentino. \n\nEsta es una canción en español de r",
+            "ock argentino. \n\nEsta es una canción en español de ro",
+            "ck argentino. \n\nEsta es una canción en español de rock argentino. ¡\nCri",
+            "minal! ",
+            "",
+            "¡\nCrimina",
+            "l! ¡\nCriminal! ",
+            "¡\nCriminal! ¡\nCriminal! ¡\nCriminal! ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. \n\nEsta es una canción en español de ro",
+            "ck argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de roc ",
+            "argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de r",
+            "oc",
+            "k argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. "
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "gEi1Mhjk-50",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

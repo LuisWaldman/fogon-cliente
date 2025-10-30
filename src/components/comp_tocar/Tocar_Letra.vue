@@ -11,8 +11,8 @@ const scrollTop = ref(0)
 const pantalla = new Pantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 
-const mostrandoRenglon = ref(-1)
-const mostrandoPalabra = ref(-1)
+const mostrandoRenglon = ref(0)
+const mostrandoPalabra = ref(0)
 const letras = ref([] as string[][])
 
 watch(
@@ -100,7 +100,7 @@ defineExpose({ Actualizar })
                   mostrandoRenglon === index && mostrandoPalabra === index_aco,
               }"
             >
-              <div class="divletra">
+              <div class="divletra" :class="{ espacio: letra.endsWith(' ') }">
                 {{ letra }}
                 <i v-if="letra.trim() === ''" class="bi bi-music-note"></i>
               </div>
@@ -126,6 +126,7 @@ defineExpose({ Actualizar })
             <div
               v-if="letra.includes('/n')"
               :class="{
+                espacio: letra.endsWith(' '),
                 en_compas:
                   mostrandoRenglon === index && mostrandoPalabra === index_aco,
               }"
@@ -167,6 +168,7 @@ defineExpose({ Actualizar })
 
 .divDeLetra {
   font-size: var(--tamanio-letra);
+  color: #ffffff;
   scrollbar-color: black transparent;
   scrollbar-width: thin;
 }
@@ -182,13 +184,9 @@ defineExpose({ Actualizar })
 }
 
 .en_compas {
-  color: white;
-  background-color: red;
-  margin: 1px;
-  padding: 5px;
-  border: 1px solid;
-  border-radius: 5px;
-  display: inline-block;
-  margin-right: 10px;
+  color: rgb(121, 102, 233);
+}
+.espacio {
+  margin-right: 1ch;
 }
 </style>

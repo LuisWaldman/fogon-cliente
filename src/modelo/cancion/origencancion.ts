@@ -10,6 +10,6 @@ export class OrigenCancion {
   }
 
   public static GetFromQuery(query: string): OrigenCancion {
-    return new OrigenCancion('url', query, query)
+    return new OrigenCancion('sitio', query, query)
   }
 }

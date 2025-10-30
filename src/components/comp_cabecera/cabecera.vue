@@ -180,12 +180,7 @@ function clickEditar() {
           </li>
 
           <li>
-            <a
-              class="dropdown-item"
-              href="#"
-              @click="abrirVistaEdicion"
-              v-if="$route.path != '/configurar'"
-            >
+            <a class="dropdown-item" href="#" @click="abrirVistaEdicion">
               👁️‍🗨️ Ver
             </a>
           </li>

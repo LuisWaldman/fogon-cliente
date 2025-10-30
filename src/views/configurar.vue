@@ -12,8 +12,26 @@ import configErrores from '../components/comp_configurar/configErrores.vue'
 import verRelojes from '../components/comp_configurar/verRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
+import { Configuracion } from '../modelo/configuracion'
 const appStore = useAppStore()
-const viendo = ref('bienvenida')
+
+const config = Configuracion.getInstance()
+const viendo = ref('perfil')
+
+const urlParams = new URLSearchParams(window.location.search)
+const viendoUrl = urlParams.get('viendo')
+if (
+  viendoUrl == 'perfil' ||
+  viendoUrl == 'conexion' ||
+  viendoUrl == 'afinar' ||
+  viendoUrl == 'relojes' ||
+  viendoUrl == 'errores' ||
+  viendoUrl == 'acercade' ||
+  viendoUrl == 'bienvenida'
+) {
+  viendo.value = viendoUrl
+}
+
 const viendoConexion = ref('servidores')
 
 function clickOpcion(viendostr: string) {
@@ -61,15 +79,6 @@ function clickMas(masmenos: string) {
               </a>
             </div>
 
-            <div @click="clickOpcion('conexion')" class="config-menu-item">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'conexion' }"
-              >
-                Conexion
-              </a>
-            </div>
             <div @click="clickOpcion('afinar')" class="config-menu-item">
               <a
                 href="#"
@@ -79,9 +88,19 @@ function clickMas(masmenos: string) {
                 Afinar
               </a>
             </div>
+
+            <div @click="clickOpcion('acercade')" class="config-menu-item">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'acercade' }"
+              >
+                Acerca de ...
+              </a>
+            </div>
             <div
               @click="clickMas('-')"
-              v-if="!viendoMas"
+              v-if="!viendoMas && config.perfil?.ModoDesarrollador"
               class="config-menu-item"
             >
               <a
@@ -94,7 +113,7 @@ function clickMas(masmenos: string) {
             </div>
             <div
               @click="clickMas('+')"
-              v-if="viendoMas"
+              v-if="viendoMas && config.perfil?.ModoDesarrollador"
               class="config-menu-item"
             >
               <a href="#" class="nav-link text-white activo"> - </a>
@@ -106,6 +125,15 @@ function clickMas(masmenos: string) {
       <div v-if="viendoMas">
         <div class="config-menu">
           <div class="config-menu-group">
+            <div @click="clickOpcion('conexion')" class="config-menu-item">
+              <a
+                href="#"
+                class="nav-link text-white"
+                :class="{ activo: viendo === 'conexion' }"
+              >
+                Conexion
+              </a>
+            </div>
             <div @click="clickOpcion('relojes')" class="config-menu-item">
               <a
                 href="#"
@@ -122,16 +150,6 @@ function clickMas(masmenos: string) {
                 :class="{ activo: viendo === 'errores' }"
               >
                 Errores
-              </a>
-            </div>
-
-            <div @click="clickOpcion('acercade')" class="config-menu-item">
-              <a
-                href="#"
-                class="nav-link text-white"
-                :class="{ activo: viendo === 'acercade' }"
-              >
-                Acerca de ...
               </a>
             </div>
           </div>
