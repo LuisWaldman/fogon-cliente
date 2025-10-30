@@ -294,8 +294,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
     const nombreLista = listaseleccionada.replace('server_', '')
     listasManager
       .AddCancion(nombreLista, refViendoCanciones.value[index])
-      .then(() => {
-      })
+      .then(() => {})
       .catch(() => {
         alert('Error al agregar la canción a la lista.')
       })

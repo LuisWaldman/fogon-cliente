@@ -112,7 +112,7 @@ defineExpose({ Actualizar })
                   mostrandoRenglon === index && mostrandoPalabra === index_aco,
               }"
             >
-              <div class="divletra" >
+              <div class="divletra">
                 {{ letra.split('/n')[0] }}
                 <i
                   v-if="letra.split('/n')[0].trim() === ''"
@@ -124,7 +124,6 @@ defineExpose({ Actualizar })
             <div class="break" v-if="letra.includes('/n')"></div>
 
             <div
-            
               v-if="letra.includes('/n')"
               :class="{
                 espacio: letra.endsWith(' '),
