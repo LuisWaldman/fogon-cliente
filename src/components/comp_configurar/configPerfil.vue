@@ -94,7 +94,7 @@ const mostrarAgregarInstrumentos = ref(false)
 // Login logic
 const username = ref('')
 const password = ref('')
-const mantenerseLogeado = ref(false)
+const mantenerseLogeado = ref(true)
 const mostrarLogin = ref(false)
 
 async function crearLoginSeguro() {
@@ -136,7 +136,7 @@ function logout() {
   mantenerseLogeado.value = false
   const config = Configuracion.getInstance()
   if (config.loginDefault) {
-    config.loginDefault.mantenerseLogueado = false
+    config.loginDefault.mantenerseLogeado = false
     config.guardarEnLocalStorage()
   }
   appStore.aplicacion.logout()
@@ -144,7 +144,7 @@ function logout() {
 </script>
 
 <template>
-  <div style="margin-top: 30%; position: absolute; bottom: -30px">
+  <div style="margin-top: 30%; position: absolute; bottom: -300px">
           <span v-if="perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">✅</span>
           <span v-if="!perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">❌</span>
           <span  @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">Modo desarrollador</span>
@@ -269,59 +269,63 @@ function logout() {
               </button>
             </div>
 
-            
           <div>
             <label for="coso">Nombre de tu fogon</label>
             <input type="text" id="coso" v-model.lazy="perfil.nombreSesion" @change="updateProfile" />
-          </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="classBotonera" style="align-items: center;">
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <template v-if="appStore.estadosApp.estadoLogin == 'logueado'">
-            <span style="font-weight: bold;">Usuario: {{ appStore.aplicacion.loginActual?.usuario }}</span>
-            <button @click="logout">Salir</button>
-          </template>
-          <template v-else>
-            <button @click="mostrarLogin = !mostrarLogin">
-              Iniciar sesion
+          </div>  
+          <div>
+            <label for="coso">Usuario</label>
+            <div style="display: flex;">
+            <input type="text" id="coso" v-model.lazy="username"/>
+            <button @click="mostrarLogin = !mostrarLogin"
+            v-if="!mostrarLogin && appStore.estadosApp.estadoLogin != 'logueado'"
+            >
+              Iniciar
             </button>
-            <template v-if="mostrarLogin">
+            <button  @click="mostrarLogin = !mostrarLogin"
+            v-if="mostrarLogin && appStore.estadosApp.estadoLogin != 'logueado'"
+            >
+              Cancelar
+            </button>
+            <button @click="logout" v-if="appStore.estadosApp.estadoLogin == 'logueado'">Salir</button>
+</div>
+
+          </div>
+
+          
+          
+          <div v-if="mostrarLogin">
+            <label for="password">Clave</label>
+            <div style="display: flex;">
               <input
-                v-model="username"
-                type="text"
-                placeholder="Usuario"
-                style="margin-left: 10px; width: 100px;"
-              />
-              <input
+                id="password"
                 v-model="password"
                 type="password"
                 placeholder="Clave"
-                style="margin-left: 10px; width: 100px;"
               />
-              <label style="margin-left: 10px; display: flex; align-items: center;">
+              <label style="margin-left: 10px; display: flex; align-items: center;" v-if="perfil.ModoDesarrollador">
                 <input
                   v-model="mantenerseLogeado"
                   type="checkbox"
                   style="margin-right: 3px;"
                 />
-                Mantenerse logueado
+                Mantener
               </label>
               <button
                 @click="loginWithCredentials"
                 style="margin-left: 10px;"
               >
-                Login
+                Listo
               </button>
-              <span v-if="appStore.estadosApp.estadoLogin == 'error'" style="color: red; margin-left: 10px;">
-                Error
-              </span>
-            </template>
-          </template>
+
+              </div>
+          </div>  
+
+          </div>
         </div>
+        
       </div>
+      
     </div>
     
   </div>
