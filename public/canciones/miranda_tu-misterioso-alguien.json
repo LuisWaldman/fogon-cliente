@@ -2,293 +2,341 @@
     "cancion": "tu-misterioso-alguien",
     "banda": "miranda",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "Gm",
+                    "Gm",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
                     "F",
                     "Bb",
                     "C",
-                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "Bb",
                     "Bb",
                     "C",
-                    "Gm",
-                    "Dm",
-                    "Gm",
+                    "C",
                     "C",
                     "Gm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
                     "Dm",
+                    "Bb",
                     "Bb",
                     "Dm",
                     "C4",
                     "C",
-                    "F",
-                    "A7",
-                    "Dm",
-                    "Gm",
-                    "Bb",
                     "C",
-                    "A7",
-                    "Dm",
-                    "C",
-                    "Bb",
-                    "Gm",
-                    "C4",
                     "C",
                     "F",
-                    "Bb",
+                    "C",
+                    "C",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "F",
                     "Bb",
+                    "Bb C4",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "C",
-                    "Gm",
-                    "Dm",
-                    "Gm",
                     "C",
-                    "Gm",
-                    "Dm",
-                    "Bb",
-                    "Dm",
-                    "C4",
-                    "C",
-                    "F",
-                    "A7",
-                    "Dm",
-                    "Gm",
-                    "Bb",
-                    "C",
-                    "A7",
-                    "Dm",
-                    "C",
-                    "Bb",
-                    "Gm",
-                    "C",
-                    "Gm",
-                    "Dm",
-                    "Gm",
                     "C",
                     "F",
                     "A7",
-                    "Dm",
-                    "Gm",
-                    "Bb",
                     "C",
                     "A7",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "Dm",
-                    "C",
+                    "A7",
+                    "A7",
                     "Bb",
-                    "Gm",
-                    "C",
-                    "Dm",
-                    "C",
                     "Bb",
-                    "Gm",
-                    "C",
-                    "F",
                     "Bb",
-                    "C",
-                    "F",
                     "Bb",
-                    "C",
-                    "F",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "Bb",
-                    "C",
-                    "F"
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bb"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "alguien en tu vida /nQue estÃ¡ transformÃ¡nd"
+            "Hay alguien en ",
+            "tu vida que e",
+            "stá transformán",
+            "dote /n"
         ],
         [
-            "ote/nHay "
+            "Hay al",
+            "guien que ha cambiado en ti ",
+            "la forma en que te ",
+            "ves /n"
         ],
         [
-            "alguien que ha cambiado/nEn ti la forma en que te v"
+            "Hay a",
+            "lguien nuevo que se a",
+            "pareció ",
+            "que tu corazón r",
+            "obó \n\nYa lo ",
+            "sé, solo d",
+            "ime quién ",
+            "es \n\nQ",
+            "uién es tu nuevo amo",
+            "r, tu nueva ocupaci",
+            "ón, tu misterioso /n"
         ],
         [
-            "es/nHay "
-        ],
-        [
-            "alguien nuevo que se apareciÃ³/nY qu"
-        ],
-        [
-            "e, tu corazÃ³n, robÃ³/nYa lo s"
-        ],
-        [
-            "Ã©/nSolo d"
-        ],
-        [
-            "ime quiÃ©n ",
-            "es",
-            "/nÂ¿QuiÃ©n es tu nuevo "
-        ],
-        [
-            "amor/nTu nueva ocupaci"
-        ],
-        [
-            "Ã³n/nTu misterioso"
-        ],
-        [
-            " alguien?/nA quien has ocult"
-        ],
-        [
-            "ado /nDe mÃ­ todo el t"
-        ],
-        [
-            "iempo/nPara no mat"
-        ],
-        [
-            "arme/nÂ¿QuiÃ©n es tu sedu"
-        ],
-        [
-            "ctor/nÂ¿QuiÃ©n ocupÃ³ el "
-        ],
-        [
-            "lugar/nQue siempre oc"
-        ],
-        [
-            "upÃ© y",
-            "o?/nTu misterioso "
-        ],
-        [
-            "alguien me",
-            " robÃ³",
+            "Algui",
+            "en quien has ocul",
+            "tado de mí todo el ",
+            "tiempo \n\nPara no ",
+            "matarme,  ",
+            "quién es tu seduct",
+            "or, tu rey, tu pe",
+            "ón \n\nQuién ocupó el l",
+            "ugar que siempre ocupa ",
+            "yo, tu misteri",
+            "oso, alguie ",
+            "de nu",
+            "evo ",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
         [
-            "e]",
-            "",
-            "/nAh"
+            "A",
+            "hora te despier",
+            "tas preparas un ",
+            "café \n\nD",
+            "es",
+            "de que me he entera",
+            "do yo no puedo ni ",
+            "comer /n"
         ],
         [
-            "ora te despiertas /nY preparas su caf"
+            "C",
+            "ariño no sopo",
+            "rto estar sin ti, ",
+            "pero parece que ",
+            "tú sí \n\nQu",
+            "ién es él, ",
+            "dime lo ",
+            "mataré /n"
         ],
         [
-            "Ã©/nDesd"
+            "Quién es tu nu",
+            "evo amor, tu nueva oc",
+            "upación, tu mister",
+            "ioso \n\nAlgui",
+            "en quien has ",
+            "ocultado  de mí ",
+            "todo el tiempo \n\nPara ",
+            "no matarm",
+            "e, quién es tu s",
+            "eductor, tu rey, ",
+            "tu peón \n\nQuién oc",
+            "upó el lugar que siempre o",
+            "cupa yo, tu ",
+            "misterioso, algu",
+            "ien de nuevo /n"
         ],
         [
-            "e que me he enterado/nYo no puedo ni com"
+            "Ya lo ",
+            "sé, solo d",
+            "ime quién es \n\nQ",
+            "u",
+            "i",
+            "é",
+            "n",
+            "es ",
+            "tu nuevo amor",
+            ", tu ",
+            "nueva o",
+            "cupación, tu rey, tu peón \n\nQui",
+            "én ocult",
+            "ado de mí todo el tiempo \n\nPara no matarme, quién es tu seductor, tu rey, tu peón ",
+            "/n"
         ],
         [
-            "er/nCar"
+            "Quién ",
+            "es tu seductor, tu ",
+            "rey,  tu peón \n\nQuié ",
+            "ocupó el lugar que si",
+            "empre ocupa yo, ",
+            "tu misterioso, al",
+            "guien de ",
+            "nuevo /n"
         ],
         [
-            "iÃ±o, no soporto estar sin ti/nPer"
-        ],
-        [
-            "o parece que tÃº sÃ­/nÂ¿QuiÃ©n e"
-        ],
-        [
-            "s Ã©l?/nDime, Â¡"
-        ],
-        [
-            "lo matar",
-            "Ã©!",
-            "/nÂ¿QuiÃ©n es tu nuevo "
-        ],
-        [
-            "amor/nTu nueva ocupaci"
-        ],
-        [
-            "Ã³n/nTu misterioso"
-        ],
-        [
-            " alguien?/nA quien has ocult"
-        ],
-        [
-            "ado /nDe mÃ­ todo el t"
-        ],
-        [
-            "iempo/nPara no mat"
-        ],
-        [
-            "arme/nÂ¿QuiÃ©n es tu sedu"
-        ],
-        [
-            "ctor/nÂ¿QuiÃ©n ocupÃ³ el "
-        ],
-        [
-            "lugar/nQue siempre oc"
-        ],
-        [
-            "upÃ© y",
-            "o?/nTu misterioso "
-        ],
-        [
-            "alguien me",
-            " robÃ³/n"
-        ],
-        [
-            "   (Creo saber quiÃ©n es)/nY no me an"
-        ],
-        [
-            "imo a preguntarte por Ã©l/nPorque serÃ­a p"
-        ],
-        [
-            "eor/nDejarlo t"
-        ],
-        [
-            "odo correr/nÂ¿QuiÃ©n es tu nuevo "
-        ],
-        [
-            "amor",
-            "?/n"
-        ],
-        [
-            "   A quien has oculta",
-            "do",
-            "",
-            "/nÂ¿QuiÃ©n es tu sedu"
-        ],
-        [
-            "ctor/nÂ¿QuiÃ©n ocupÃ³ el "
-        ],
-        [
-            "lugar/nQue siempre oc"
-        ],
-        [
-            "upÃ© y",
-            "o?/nTu misterioso "
-        ],
-        [
-            "alguien me",
-            " robÃ³",
+            "Tu ",
+            "misterioso, a",
+            "lguien ",
+            "me robó ",
             "",
             "",
-            "/nTu misterioso "
+            "",
+            "/n"
         ],
         [
-            "alguien ",
-            "/nMe rob"
+            "Me ro",
+            "bó ",
+            "/n"
         ],
         [
-            "Ã³",
+            "Me r",
+            "obó ",
             "",
-            "/nMe rob"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Ã³",
-            "",
-            "/nMe rob"
-        ],
-        [
-            "Ã³",
-            "",
-            "",
-            ""
+            "Me robó "
         ]
     ],
     "etiquetas": [],
@@ -296,9 +344,9 @@
         {
             "tipo": "Youtube",
             "id": "yfzp3LplRew",
-            "delay": 0
+            "delay": 15000.0
         }
     ],
-    "calidad": -1,
+    "calidad": 1,
     "procesando": 0
 }

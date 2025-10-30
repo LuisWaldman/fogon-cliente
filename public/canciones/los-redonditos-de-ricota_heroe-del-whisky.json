@@ -8,54 +8,437 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "B",
+                    "B",
+                    "C#m7",
+                    "C#m7",
+                    "A7",
                     "C#m7",
                     "B",
-                    "A7"
+                    "B",
+                    "B",
+                    "A7",
+                    "B",
+                    "A7",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#m7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C"
+                    "C#m7",
+                    "C#m7",
+                    "C#m7",
+                    "C#m7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#m7",
+                    "C#m7",
+                    "C#m7",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "C#m7",
+                    "C#m7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C#m7",
+                    "C#m7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A7",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B",
+                    "A7",
+                    "B",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A7",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B",
+                    "A7",
+                    "A7",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "Venderá algún milagro (nada de más...)/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "y regresará a su ciudad en la caja de un camión,/n"
+            "V",
+            "enderá algú",
+            "n milagro /n"
         ],
         [
-            "las estrellas ahí nomás, a su alcance, frías./n"
+            "Nad ",
+            "de más de ",
+            "bebedores e",
+            "ntrenados /n"
         ],
         [
-            "Tiene metido hasta las cejas un triste papel/n"
+            "No ",
+            "digo  más amo ",
+            "",
+            "regresar su ci",
+            "udad \n\nEn ",
+            "la caja de un c",
+            "amión \n\nLas ",
+            "estrellas hay no ",
+            "más su alc",
+            "ance fría ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Es lo que puede ofrecer, papeles triste y sed/n"
+            "T",
+            "iene metido has",
+            "ta la ceja /n"
         ],
         [
-            "de boca floja (y perdón para su lengua,lalalalala",
-            ""
+            "Un ",
+            "triste papel /n"
+        ],
+        [
+            "En un menú muy ",
+            "complicad /n"
+        ],
+        [
+            "Te ",
+            "tonizaré a",
+            "mor \n\nEs ",
+            "lo que puede ofre",
+            "cer \n\nP",
+            "apeles tristes ",
+            "sed \n\nDe ",
+            "boca floja p",
+            "erdón \n\nPara su ",
+            "lengua  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pa",
+            "peles tristes sed \n\nDe boca floja perdón \n\nP",
+            "ara su lengua \n\nPapeles tri",
+            "stes sed \n\nDe boca floja perdón ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Par ",
+            "su lengua ",
+            "",
+            "/n"
+        ],
+        [
+            "Papeles ",
+            "tristes  sed \n\nPara su ",
+            "lengua \n\nPapeles tristes sed ",
+            "/n"
+        ],
+        [
+            "De boca ",
+            "floja  perd",
+            "ón \n\nPa",
+            "ra su lengu ",
+            "/n"
+        ],
+        [
+            "Papeles  t",
+            "ristes sed /n"
+        ],
+        [
+            "De boca flo",
+            "ja perdón \n\nP",
+            "ara su lengu /n"
+        ],
+        [
+            "Hay no más ",
+            "su alcance f",
+            "ría \n\nNo va m",
+            "orir frente la c",
+            "opra /n"
+        ],
+        [
+            "No alcanzará /n"
+        ],
+        [
+            "Dice ",
+            "que el amor se ",
+            "muere  ",
+            "no dice ",
+            "más amor /n"
+        ],
+        [
+            "Un héroe ",
+            "del whisky más /n"
+        ],
+        [
+            "El perro ",
+            "se hace notar /n"
+        ],
+        [
+            "Su truco ",
+            "te hace ganar \n\nNi ",
+            "más bohemias ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡\nS\nU\nS\nC\nR\nÍ\nB\nE\nT\nE! "
         ]
     ],
-    "bpm": 80,
+    "bpm": 143,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "U6safBme9ck",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

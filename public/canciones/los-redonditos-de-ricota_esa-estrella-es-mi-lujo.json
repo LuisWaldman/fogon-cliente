@@ -8,97 +8,232 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "Em",
+                    "F",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "F",
                     "F",
                     "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "¿Era todo? Pr",
-            "egunté.",
-            "/nSoy un il"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uso./n"
+            "Es",
+            "ta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "No nos dimos na",
-            "da más,",
-            "/nsólo un buen "
+            "Era ",
+            "todo, pr",
+            "egunté, ",
+            "soy un iluso ",
+            "no nos ",
+            "dimos nada m",
+            "ás, so",
+            "lo un buen gesto",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "gesto./n"
+            "Mordida ",
+            "el suelo una vez ",
+            "más,  ",
+            "siempre un ilus",
+            "o, nuestra es",
+            "trella se ag",
+            "otó, ",
+            "era mi luj",
+            "o. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Mordí el anzu",
-            "elo una ",
-            "vez más./nSiempre u"
+            "Ella fue ",
+            "por esa ",
+            "vez mi h",
+            "éroe vivo, ",
+            "va, fue mi ",
+            "único  hér",
+            "oe, en ",
+            "este  lí",
+            "o, la más li",
+            "nda del amo",
+            "r, que un tont",
+            "o ha visto soñ",
+            "ar, metió, met",
+            "ió mi rock and ro",
+            "ll, ",
+            "bajo e",
+            "ste p",
+            "uls",
+            "o. ",
+            "",
+            "/n"
         ],
         [
-            "n iluso./n"
-        ],
-        [
-            "Nuestra estrel",
-            "la se ag",
-            "otó/nY era mi "
-        ],
-        [
-            "lujo./n"
-        ],
-        [
-            "Ella fue por e",
-            "sa vez",
-            "/nmi héroe"
-        ],
-        [
-            " vivo, bah,/n"
-        ],
-        [
-            "fue mi único ",
-            "héroe",
-            "/nen este l"
-        ],
-        [
-            "ío./n"
-        ],
-        [
-            "La más linda ",
-            "del amor",
-            ",/nque un to"
-        ],
-        [
-            "nto ha visto soñar./n"
-        ],
-        [
-            "Metió, metió",
-            " mi roca",
-            "nrol bajo e",
-            "ste pulso."
+            "Mordida el suelo una vez más, siempre un iluso, no nos dimos nada más, "
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "SePSMFlQcek",
-            "delay": 0
+            "delay": 20000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

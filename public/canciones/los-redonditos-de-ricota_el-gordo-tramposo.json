@@ -8,47 +8,125 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E",
+                    "F#",
+                    "F#",
+                    "E",
+                    "E",
+                    "B",
+                    "B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "F#m",
+                    "A",
+                    "A",
+                    "A",
                     "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0
+            1,
+            2
         ]
     },
     "letras": [
         [
-            "Quiero impresionar a ese gordo tramposo,/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "quiero impresionar a ese gordo tramposo,/n"
+            "Quiero impresionar ",
+            "ese gordo tramposo ",
+            "quiero impresionar ",
+            "esos gordos tramposo",
+            "s, pues se me ha ablandado ",
+            "el corazón mi ",
+            "obra maestr",
+            "a, mi perfección no ",
+            "será. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "pues se me ha ablandado el corazón,/nmi "
-        ],
-        [
-            "obra maestra, mi perfección, grosera./nDe tod"
-        ],
-        [
-            "as ",
-            "sus o",
-            "fert",
-            "as me cago de risa:"
+            "De ",
+            "todas sus ofertas ",
+            "me cago de ris",
+            "a, pasaporte suizo ",
+            "con gato sin prisa, ",
+            "tiras enfermera ",
+            "como atracción, ",
+            "luces morale",
+            "s por un mision ",
+            "verde.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 143,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "oUJ0ShX0CN0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }
