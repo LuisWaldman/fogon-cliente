@@ -8,50 +8,162 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bm7",
-                    "Amaj7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
                     "Bm7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Amaj7",
                     "C#maj7",
-                    "Cm7",
                     "C#maj7",
-                    "Bb7",
-                    "C7",
-                    "Bm7",
-                    "D"
+                    "C#maj7",
+                    "C#maj7",
+                    "C#maj7",
+                    "C#maj7",
+                    "C#maj7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E7/6",
-                    "Amaj7",
-                    "F#m7",
                     "Bm7",
-                    "D",
+                    "D C#maj7",
                     "E7/6",
-                    "Amaj7",
-                    "Fmaj7"
+                    "F#m7",
+                    "F#m7",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m7",
+                    "Bm7",
+                    "C#maj7",
+                    "C#maj7",
+                    "C#maj7",
+                    "C#maj7",
+                    "Bb7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm7",
+                    "Bm7",
+                    "D C#maj7",
+                    "D C#maj7",
+                    "F#m7",
+                    "Bm7",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm7",
+                    "Bm7",
+                    "D C#maj7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm7",
+                    "D",
+                    "D",
+                    "Amaj7",
+                    "Amaj7",
+                    "E",
                     "E",
                     "Amaj7",
-                    "Fmaj7",
-                    "E",
-                    "C#7",
-                    "Fmaj7",
-                    "G",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
                     "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm7",
+                    "D C#maj7",
+                    "E7/6",
+                    "F#m7",
+                    "F#m7 D",
+                    "D",
+                    "D",
+                    "F#m7",
+                    "F#m7",
+                    "D C#maj7",
+                    "Amaj7",
+                    "F#m7",
+                    "Bm7",
+                    "D",
+                    "D",
+                    "F#m7",
+                    "F#m7",
+                    "D",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#m7",
+                    "Bm7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "Amaj7",
+                    "Amaj7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
@@ -59,65 +171,154 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "Que pasó, que pasó, que pasó la vida, extraño carr",
-            "ousel/n"
-        ],
-        [
-            "me dejó, me dejó, me dejó un sabor amargo bajo p",
-            "iel/n"
-        ],
-        [
-            "ya sabes, ya sabes, ya sabes me gusta tener el control",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "pero igual, pero igual, pero igu",
-            "al yo me quiero morir con vos",
-            "/nn"
+            "¿Qué pasó? /n ¿Qué pasó?",
+            "¿Qué pasó? /n La vida extraño,",
+            "cárcel /n M",
+            "e  de",
+            "jó  me dejó, m",
+            "e  dejó un sabor amargo ba",
+            "j  piel.",
+            "/n"
         ],
         [
-            "unca me vo",
-            "y a olvid",
-            "ar del cent",
-            "ro de tu coraz",
-            "n/nes que n"
+            "Ya sabes, ya sabes, ya s",
+            "abes  me gusta tener e",
+            "control. /n Tener el c",
+            "ontrol. /n P",
+            "er  igual, pero igual, pero ig",
+            "ua  yo me quiero morir con",
+            "vos /n"
         ],
         [
-            "unca me vo",
-            "y a olvida",
-            "r nada",
-            "/nvamos ca"
+            "Nunca me voy o",
+            "lvida  el c",
+            "entr  de tu corazó",
+            "n  es que n",
+            "unca  me voy o",
+            "lvida  na",
+            "da /n"
         ],
         [
-            "yendo (vamos cay",
-            "endo) al mun",
-            "do/ny vamos hu"
+            "Es",
+            "pera  espera, espera, sent",
+            "art  al centro de la mesa",
+            ". ",
+            "nunca má",
+            "s  nunca más, nunca más vas",
+            "comerte mi dolo",
+            "r /n"
         ],
         [
-            "yendo   ",
-            " del mun",
-            "do/nvamos ca"
+            "Está bien,",
+            "está bien, está bien que nav",
+            "egamo  en el río",
+            ". ",
+            "esta vez,",
+            "esta vez, esta vez dejaste el p",
+            "uert  yo me voy/n"
         ],
         [
-            "yendo al",
-            " mun",
-            "do"
+            "Nunca me",
+            "voy olvid",
+            "a  el centro de tu",
+            "corazón ",
+            "es que nunca me v",
+            "o  olvi",
+            "da  nada.",
+            "/n"
+        ],
+        [
+            "Nunca me vo",
+            "y  olvid",
+            "a  el centro de tu c",
+            "orazón /n"
+        ],
+        [
+            "Nunca me voy",
+            "olvida",
+            "nada.",
+            "vamos c",
+            "ayend  a",
+            "l ",
+            "mundo ",
+            "vamos h",
+            "uyen",
+            "do  del m",
+            "undo ",
+            "/n"
+        ],
+        [
+            "Nunc  me voy o",
+            "lvida  el ce",
+            "ntr  de tu corazón.",
+            "es que n",
+            "unc  me voy o",
+            "lvida  na",
+            "da ",
+            "es que nu",
+            "nc  me voy o",
+            "lvida  el centro d",
+            "e  tu corazón.",
+            "es que nunca m",
+            "e  voy olv",
+            "ida  nada.",
+            "",
+            "es que nun",
+            "ca  nunca me voy",
+            "olvidar del centro de t",
+            "u  corazón./n"
+        ],
+        [
+            "Es que nunca m",
+            "e  voy olvi",
+            "da  nada/n"
+        ],
+        [
+            "Vam",
+            "o  caye",
+            "nd  a",
+            "l  mundo.",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "pYJfk6us_1E",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }
