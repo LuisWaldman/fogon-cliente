@@ -77,6 +77,8 @@ function agregarInstrumentoFavorito() {
 function eliminarInstrumentoFavorito(idx: number) {
   perfil.value.instrumentosFavoritos.splice(idx, 1)
 }
+
+const mostrarAgregarInstrumentos = ref(false)
 </script>
 
 <template>
@@ -84,7 +86,7 @@ function eliminarInstrumentoFavorito(idx: number) {
     <div style="display: flex;">
       
           <div
-          class="ctrlCabecera"
+          class="ctrlImagen ctrlCabecera"
             
           >
             <!-- Imagen de perfil con click para abrir el input file -->
@@ -108,9 +110,9 @@ function eliminarInstrumentoFavorito(idx: number) {
               style="display: none"
             />
           </div>
-          <div class="ctrlCabecera">
+          <div class="ctrlNombre ctrlCabecera">
             <label for="username">Nombre:</label>
-            <input type="text" id="username" v-model="perfil.nombre" />
+            <input class="txtUser"  type="text" id="username" v-model="perfil.nombre" placeholder="Ingresa tu nombre" />
           </div>
           <div class="ctrlCabecera">
             <div style="margin-bottom: 5px ;"><label for="instrument">Instrumento:</label></div>
@@ -129,22 +131,14 @@ function eliminarInstrumentoFavorito(idx: number) {
 
     <div>
       <div class="crlPerfil">
-        <div>
-        </div>
         
         <div>
-<div>
+        <div>
           <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">✅</span>
           <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">❌</span>
           <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino">Cifrado latino</span>
         </div>
 
-
- 
-
-        </div>
-        <div>
-        
           
           <div>
             <label>🎼 Instrumentos Favoritos En Edicion de partituras:</label>
@@ -162,11 +156,16 @@ function eliminarInstrumentoFavorito(idx: number) {
                   @click="eliminarInstrumentoFavorito(idx)"
                   style="margin-left: 10px"
                 >
-                  🗑 Borrar
+                  🗑 
                 </button>
               </div>
             </div>
-            <div style="margin-top: 10px">
+            <!-- Botón para mostrar el div de agregar instrumentos -->
+            <button v-if="!mostrarAgregarInstrumentos" @click="mostrarAgregarInstrumentos = true" style="margin-top: 10px">
+              Agregar
+            </button>
+            <!-- Div de agregar instrumentos solo visible si mostrarAgregarInstrumentos es true -->
+            <div v-if="mostrarAgregarInstrumentos" style="margin-top: 10px" class="agregarInstrumentos">
               <select v-model="categoriaSeleccionada">
                 <option disabled value="">Selecciona categoría</option>
                 <option v-for="cat in refCategoria" :key="cat" :value="cat">
@@ -192,18 +191,33 @@ function eliminarInstrumentoFavorito(idx: number) {
               >
                 Agregar
               </button>
+              <!-- Botón "Listo" para ocultar el div -->
+              <button @click="mostrarAgregarInstrumentos = false" style="margin-left: 10px">
+                Listo
+              </button>
             </div>
+
+            
+          <div>
+            <label for="coso">Nombre de sesion:</label>
+            <input type="text" id="coso" v-model="perfil.nombreSesion" />
+          </div>
           </div>
         </div>
         
       </div>
       <div class="classBotonera">
         
-          <div>
-            <label for="coso">Nombre de sesion:</label>
-            <input type="text" id="coso" v-model="perfil.nombreSesion" />
-          </div>
         <button @click="updateProfile">Actualizar</button>
+      </div>
+      <div>
+        
+        <div style="margin-top: 30%;">
+          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">✅</span>
+          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino">❌</span>
+          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino">Cifrado latino</span>
+        </div>
+
       </div>
     </div>
   </div>
@@ -244,8 +258,8 @@ textarea {
   margin-top: 20px;
 }
 .profileImage {
-  max-width: 200px;
-  max-height: 200px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
   border-radius: 50%;
   border: 2px solid #ccc;
@@ -254,10 +268,12 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 12rem;
-  width: 100%;
+  margin-right: 2rem;
 }
-
+.ctrlImagen {
+  margin-right: 2rem;
+  
+}
 .instrMidi {
   display: flex;
   align-items: center;
