@@ -184,7 +184,6 @@ function clickEditar() {
               class="dropdown-item"
               href="#"
               @click="abrirVistaEdicion"
-              v-if="$route.path != '/configurar'"
             >
               👁️‍🗨️ Ver
             </a>
