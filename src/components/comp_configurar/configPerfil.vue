@@ -85,6 +85,11 @@ const mostrarAgregarInstrumentos = ref(false)
 </script>
 
 <template>
+  <div style="margin-top: 30%; position: absolute; bottom: -30px">
+          <span v-if="perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">✅</span>
+          <span v-if="!perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">❌</span>
+          <span  @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">Modo desarrollador</span>
+        </div>
   <div class="divPerfil">
     <div style="display: flex;">
       
@@ -164,7 +169,7 @@ const mostrarAgregarInstrumentos = ref(false)
                 </button>
             
               </div>
-            <div v-if="!mostrarAgregarInstrumentos" style="border: 1px solid; margin-left: 10px; padding: 0px 25px 10px 25px;">
+            <div v-if="!mostrarAgregarInstrumentos" style="margin-left: 10px; padding: 0px 5px 0px 5px;">
             <button  @click="mostrarAgregarInstrumentos = true" style="margin-top: 10px">
               Agregar
             </button>
@@ -218,16 +223,11 @@ const mostrarAgregarInstrumentos = ref(false)
         
         <button>Iniciar sesion</button>
       </div>
-      <div>
-        
-        <div style="margin-top: 30%;">
-          <span v-if="perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">✅</span>
-          <span v-if="!perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">❌</span>
-          <span  @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">Modo desarrollador</span>
-        </div>
-      </div>
     </div>
+    
   </div>
+        
+
 </template>
 
 <style scoped>
@@ -237,6 +237,9 @@ const mostrarAgregarInstrumentos = ref(false)
   flex-direction: column;
   font-size: x-large;
   gap: 1rem;
+  border: 1px solid ;
+  padding: 30px;
+  border-radius: 3%;
 }
 label {
   font-weight: bold;
