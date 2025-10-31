@@ -8,81 +8,502 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "A#",
+                    "D5",
+                    "E5",
+                    "E5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "G5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E5",
-                    "G5",
-                    "E5",
-                    "G5"
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "D5",
+                    "D5",
                     "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "G5",
+                    "D5",
+                    "D5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "E5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
                     "D5",
                     "E5",
                     "G5",
-                    "F5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "E5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D5",
+                    "E5",
+                    "G5",
+                    "D5",
+                    "D5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "E5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "E5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
                     "E5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
         [
-            "Dame... da",
-            "me tu vid",
-            "a.",
-            "/n "
-        ],
-        [
-            "Dame y ten",
-            "dras mi pie",
-            "dad.",
-            "/n "
-        ],
-        [
-            "dame la sed de tus ojos a",
-            "corazados",
-            "",
-            "/n "
-        ],
-        [
-            "y dame tu insole",
-            "ncia tambie",
-            "n.",
-            "/n-"
-        ],
-        [
-            "Rara vez esta vida tiene senti",
-            "do, amor/n y asi ves que"
-        ],
-        [
-            " hasta mi sombra brilla/n en esta ciud"
-        ],
-        [
-            "ad.",
             "",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "ta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción ",
+            "en españo ",
+            "de rock argentino. ",
+            "/n"
+        ],
+        [
+            "Dame, ",
+            "dame ",
+            "tu vi",
+            "da \n\nDa",
+            "me ",
+            "tengas mi ",
+            "pie",
+            "dad \n\nDa",
+            "me, dame tus ",
+            "ojos aco",
+            "razad/n"
+        ],
+        [
+            "Mí",
+            "ram",
+            "tu insolencia t",
+            "ambi",
+            "én /n"
+        ],
+        [
+            "Rara  vez esta v",
+            "ida tiene se",
+            "ntido amor ",
+            "así ves que ",
+            "hasta  mi sombr ",
+            "brilla en esta c",
+            "iudad /n"
+        ],
+        [
+            "Ca",
+            "en, caen al ",
+            "fin \n\nCaen los di",
+            "sfraces ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cae",
+            "n, deslutándote \n\nMien",
+            "tras los fanta",
+            "smas vienen s",
+            "alie",
+            "ndo \n\nRíe",
+            "n de vos ",
+            "se rompan tu ",
+            "fe /n"
+        ],
+        [
+            "Vas ",
+            "copiando  tu herid",
+            "a sobre un balcón del ",
+            "otro ojo ya s",
+            "abes que en ",
+            "jugando algo rebo",
+            "tear van ga",
+            "nar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Caen, ca",
+            "en al ",
+            "fin ",
+            "",
+            "/n"
+        ],
+        [
+            "Trampas para ",
+            "tu so",
+            "ñar /n"
+        ],
+        [
+            "No vas ser ",
+            "esclava del ",
+            "paraí",
+            "so /n"
+        ],
+        [
+            "Vas bai",
+            "lar, pero no ",
+            "jug",
+            "ar \n\nNo ",
+            "te ves en ",
+            "el pequeño espej ",
+            "del mundo \n\nNo te voy ",
+            "no quer",
+            "és \n\nQue el anim ",
+            "del tiempo lo vuelva o",
+            "tra vez ",
+            "/n"
+        ],
+        [
+            "Dame am",
+            "or, dame ",
+            "tu vid",
+            "a \n\nDa",
+            "me ",
+            "tendrás mi ",
+            "pieda /n"
+        ],
+        [
+            "Da",
+            "me, dame tus o",
+            "jos aco",
+            "razad/n"
+        ],
+        [
+            "Míra",
+            "me tu ",
+            "insolencia t",
+            "ambié/n"
+        ],
+        [
+            "R",
+            "ara vez esta v",
+            "ida tiene senti",
+            "do amor ",
+            "así ves que h",
+            "asta mi sombra br",
+            "illa en esta c",
+            "iudad ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "aen, caen ",
+            "al ",
+            "fin ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ríen de vos se rompan tu herida sobre un balcón del otro ojo \n\nCaen, ",
+            "cae",
+            "n ",
+            "al ",
+            "fin "
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "6o0DdsgmDkQ",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }
