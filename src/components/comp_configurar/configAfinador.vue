@@ -21,7 +21,7 @@ notasAfinar.value.push(new NotaAfinar('Cuarta Cuerda', 'D3', 146.83))
 notasAfinar.value.push(new NotaAfinar('Tercera Cuerda', 'G3', 196.0))
 notasAfinar.value.push(new NotaAfinar('Segunda Cuerda', 'B3', 246.94))
 notasAfinar.value.push(new NotaAfinar('Primera Cuerda', 'E4', 329.63))
-
+const instrumentoSeleccionado = ref('guitarra')
 const viendoAfindado = ref('simple')
 const notas: string[] = [
   'A',
@@ -39,7 +39,6 @@ const notas: string[] = [
 ]
 const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
-const EscuchandoAcorde = ref<string>('')
 
 const mostrarEscala = ref(false)
 const escalaMenor = ref(false)
@@ -98,12 +97,6 @@ function detectarFrecuencia() {
       notasSonido.value,
     )
   }
-  EscuchandoAcorde.value =
-    musicaHelper.GetAcordeDeNotas(
-      notasSonido.value[mostrandoNota.value].nota +
-        notasSonido.value[mostrandoNota.value].octava,
-      otrasNotas.value,
-    ).nombre || ''
 
   requestAnimationFrame(detectarFrecuencia)
 }
@@ -263,7 +256,7 @@ function ajusteTexto(
         </div>
 
         <div class="contDatos">
-          <div>Acorde</div>
+          <div>Instrumento</div>
           <div
             style="
               font-size: xx-large;
@@ -272,7 +265,18 @@ function ajusteTexto(
               text-overflow: ellipsis;
             "
           >
-            {{ EscuchandoAcorde }}
+            <select v-model="instrumentoSeleccionado">
+              <option value="guitarra">Guitarra</option>
+              <option value="charango">Charango</option>
+              <option value="violin">Violín</option>
+              <option value="ukelele">Ukelele</option>
+              <optgroup>
+                <option value="gabierto">Sol Abierto</option>
+                <option value="gcaida">Sol Caida</option>
+                <option value="dabierto">Re Abierto</option>
+                <option value="dcaida">Re Caida</option>
+              </optgroup>
+            </select>
           </div>
         </div>
       </div>
