@@ -159,9 +159,6 @@ function Borrar(index: number) {
                   📺
                 </div>
                 <div class="divItemDetalle">
-                  <strong>Tempo:</strong>{{ cancion.bpm }} BPM
-                </div>
-                <div class="divItemDetalle">
                   <strong>Partitura:</strong>{{ cancion.pentagramas.length }}
                 </div>
               </div>
