@@ -158,7 +158,10 @@ function Borrar(index: number) {
                 >
                   📺
                 </div>
-                <div class="divItemDetalle" v-if="cancion.pentagramas.length > 0">
+                <div
+                  class="divItemDetalle"
+                  v-if="cancion.pentagramas.length > 0"
+                >
                   🎼<strong>Partitura:</strong>{{ cancion.pentagramas.length }}
                 </div>
               </div>
