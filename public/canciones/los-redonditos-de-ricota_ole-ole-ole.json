@@ -8,57 +8,154 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "F",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "D",
+                    "E",
+                    "E",
+                    "D",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A#5",
                     "G#5",
-                    "A#5",
                     "G#5",
-                    "A#5",
                     "G#5",
-                    "F#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "G#5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Ole ole ole, ole ol",
-            "e ole ola! Ole ole ",
-            "ole, cada día",
-            " te quiero más!/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Hooo, Los Redon",
-            "odos, es un sentimi",
-            "ento, no puedo par",
-            "ar/n"
+            "E",
+            "sta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Ole ole ole, ole ol",
-            "e ole ola! Ole ole ",
-            "ole, cada día",
-            " te quiero más!/n"
+            "Esta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Hooo, Los Redon",
-            "odos, es un sentimi",
-            "ento, no puedo par",
-            "ar."
+            "Esta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. "
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "RC8TKFCxnEI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -94,7 +94,7 @@ const mostrarAgregarInstrumentos = ref(false)
 // Login logic
 const username = ref('')
 const password = ref('')
-const mantenerseLogeado = ref(false)
+const mantenerseLogeado = ref(true)
 const mostrarLogin = ref(false)
 
 async function crearLoginSeguro() {
@@ -136,84 +136,116 @@ function logout() {
   mantenerseLogeado.value = false
   const config = Configuracion.getInstance()
   if (config.loginDefault) {
-    config.loginDefault.mantenerseLogueado = false
+    config.loginDefault.mantenerseLogeado = false
     config.guardarEnLocalStorage()
   }
   appStore.aplicacion.logout()
 }
+
+// New functions for click handlers
+function toggleModoDesarrollador() {
+  perfil.value.ModoDesarrollador = !perfil.value.ModoDesarrollador
+  updateProfile()
+}
+
+function toggleCifradoLatino() {
+  perfil.value.CifradoLatino = !perfil.value.CifradoLatino
+  updateProfile()
+}
 </script>
 
 <template>
-  <div style="margin-top: 30%; position: absolute; bottom: -30px">
-          <span v-if="perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">✅</span>
-          <span v-if="!perfil.ModoDesarrollador" @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">❌</span>
-          <span  @click="perfil.ModoDesarrollador = !perfil.ModoDesarrollador; updateProfile()">Modo desarrollador</span>
-        </div>
+  <div style="margin-top: 30%; position: absolute; bottom: -300px">
+    <span v-if="perfil.ModoDesarrollador" @click="toggleModoDesarrollador"
+      >✅</span
+    >
+    <span v-if="!perfil.ModoDesarrollador" @click="toggleModoDesarrollador"
+      >❌</span
+    >
+    <span @click="toggleModoDesarrollador">Modo desarrollador</span>
+  </div>
   <div class="divPerfil">
-    <div style="display: flex;">
-      
-          <div
-          class="ctrlImagen ctrlCabecera"
-            
-          >
-            <!-- Imagen de perfil con click para abrir el input file -->
-            <img
-              :src="
-                imageBase64 !== '' ? imageBase64 : '/img/usuariofantasma.png'
-              "
-              alt="Profile Image"
-              class="profileImage"
-              @click="openFileDialog"
-            />
+    <div style="display: flex">
+      <div class="ctrlImagen ctrlCabecera">
+        <!-- Imagen de perfil con click para abrir el input file -->
+        <img
+          :src="imageBase64 !== '' ? imageBase64 : '/img/usuariofantasma.png'"
+          alt="Profile Image"
+          class="profileImage"
+          @click="openFileDialog"
+        />
 
-            <!-- Input file oculto -->
-            <input
-              type="file"
-              accept=".jpg,.jpeg,.png,.bmp"
-              id="image"
-              class="fileUp"
-              ref="fileInputRef"
-              @change="handleImageUpload"
-              style="display: none"
-            />
-          </div>
-          <div class="ctrlNombre ctrlCabecera">
-            <label for="username">Nombre</label>
-            <input class="txtUser"  type="text" id="username" v-model.lazy="perfil.nombre" placeholder="Ingresa tu nombre" @change="updateProfile" />
-          </div>
-          <div class="ctrlCabecera">
-            <div style="margin-bottom: 5px ;"><label for="instrument">Instrumento</label></div>
-            <select id="instrument" v-model="perfil.instrumento" @change="updateProfile">
-              <option value="Guitarra">Guitarra</option>
-              <option value="Piano">Piano</option>
-              <option value="Ukelele">Ukelele</option>
-              <option value="Bajo">Bajo</option>
-              <option value="Percusion">Percusion</option>
-              <option value="PGuitarra">Punteo</option>
-              <option value="Harmonica">Harmonica</option>
-            </select>
-          </div>
-</div>
-
+        <!-- Input file oculto -->
+        <input
+          type="file"
+          accept=".jpg,.jpeg,.png,.bmp"
+          id="image"
+          class="fileUp"
+          ref="fileInputRef"
+          @change="handleImageUpload"
+          style="display: none"
+        />
+      </div>
+      <div class="ctrlNombre ctrlCabecera">
+        <label for="username">Nombre</label>
+        <input
+          class="txtUser"
+          type="text"
+          id="username"
+          v-model.lazy="perfil.nombre"
+          placeholder="Ingresa tu nombre"
+          @change="updateProfile"
+        />
+      </div>
+      <div class="ctrlCabecera">
+        <div style="margin-bottom: 5px">
+          <label for="instrument">Instrumento</label>
+        </div>
+        <select
+          id="instrument"
+          v-model="perfil.instrumento"
+          @change="updateProfile"
+        >
+          <option value="Guitarra">Guitarra</option>
+          <option value="Piano">Piano</option>
+          <option value="Ukelele">Ukelele</option>
+          <option value="Bajo">Bajo</option>
+          <option value="Percusion">Percusion</option>
+          <option value="PGuitarra">Punteo</option>
+          <option value="Harmonica">Harmonica</option>
+        </select>
+      </div>
+    </div>
 
     <div>
       <div class="crlPerfil">
-        
         <div>
-        <div>
-          <span v-if="perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">✅</span>
-          <span v-if="!perfil.CifradoLatino" @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">❌</span>
-          <span  @click="perfil.CifradoLatino = !perfil.CifradoLatino; updateProfile()">Cifrado latino</span>
-        </div>
+          <div>
+            <span v-if="perfil.CifradoLatino" @click="toggleCifradoLatino"
+              >✅</span
+            >
+            <span v-if="!perfil.CifradoLatino" @click="toggleCifradoLatino"
+              >❌</span
+            >
+            <span @click="toggleCifradoLatino">Cifrado latino</span>
+          </div>
 
-          
           <div>
             <label>🎼 Instrumentos Favoritos En Edicion de partituras:</label>
-            
+
             <div v-if="perfil.instrumentosFavoritos.length === 0">
               No hay instrumentos favoritos.
             </div>
-            <div style="display: flex; max-height: 200px; overflow-y: auto; border: 1px solid; padding: 10px; margin-bottom: 10px;">
+            <div
+              style="
+                display: flex;
+                max-height: 200px;
+                overflow-y: auto;
+                border: 1px solid;
+                padding: 10px;
+                margin-bottom: 10px;
+              "
+            >
               <div
                 v-for="(inst, idx) in perfil.instrumentosFavoritos"
                 :key="inst"
@@ -224,20 +256,29 @@ function logout() {
                   @click="eliminarInstrumentoFavorito(idx)"
                   style="margin-left: 10px"
                 >
-                  🗑 
+                  🗑
                 </button>
-            
               </div>
-            <div v-if="!mostrarAgregarInstrumentos" style="margin-left: 10px; padding: 0px 5px 0px 5px;">
-            <button  @click="mostrarAgregarInstrumentos = true" style="margin-top: 10px">
-              Agregar
-            </button>
-            </div>  
+              <div
+                v-if="!mostrarAgregarInstrumentos"
+                style="margin-left: 10px; padding: 0px 5px 0px 5px"
+              >
+                <button
+                  @click="mostrarAgregarInstrumentos = true"
+                  style="margin-top: 10px"
+                >
+                  Agregar
+                </button>
+              </div>
             </div>
             <!-- Botón para mostrar el div de agregar instrumentos -->
-            
+
             <!-- Div de agregar instrumentos solo visible si mostrarAgregarInstrumentos es true -->
-            <div v-if="mostrarAgregarInstrumentos" style="margin-top: 10px" class="agregarInstrumentos">
+            <div
+              v-if="mostrarAgregarInstrumentos"
+              style="margin-top: 10px"
+              class="agregarInstrumentos"
+            >
               <select v-model="categoriaSeleccionada">
                 <option disabled value="">Selecciona categoría</option>
                 <option v-for="cat in refCategoria" :key="cat" :value="cat">
@@ -264,69 +305,84 @@ function logout() {
                 Agregar
               </button>
               <!-- Botón "Listo" para ocultar el div -->
-              <button @click="mostrarAgregarInstrumentos = false" style="margin-left: 10px">
+              <button
+                @click="mostrarAgregarInstrumentos = false"
+                style="margin-left: 10px"
+              >
                 Listo
               </button>
             </div>
 
-            
-          <div>
-            <label for="coso">Nombre de tu fogon</label>
-            <input type="text" id="coso" v-model.lazy="perfil.nombreSesion" @change="updateProfile" />
-          </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="classBotonera" style="align-items: center;">
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <template v-if="appStore.estadosApp.estadoLogin == 'logueado'">
-            <span style="font-weight: bold;">Usuario: {{ appStore.aplicacion.loginActual?.usuario }}</span>
-            <button @click="logout">Salir</button>
-          </template>
-          <template v-else>
-            <button @click="mostrarLogin = !mostrarLogin">
-              Iniciar sesion
-            </button>
-            <template v-if="mostrarLogin">
+            <div>
+              <label for="coso">Nombre de tu fogon</label>
               <input
-                v-model="username"
                 type="text"
-                placeholder="Usuario"
-                style="margin-left: 10px; width: 100px;"
+                id="coso"
+                v-model.lazy="perfil.nombreSesion"
+                @change="updateProfile"
               />
-              <input
-                v-model="password"
-                type="password"
-                placeholder="Clave"
-                style="margin-left: 10px; width: 100px;"
-              />
-              <label style="margin-left: 10px; display: flex; align-items: center;">
+            </div>
+            <div>
+              <label for="coso">Usuario</label>
+              <div style="display: flex">
+                <input type="text" id="coso" v-model.lazy="username" />
+                <button
+                  @click="mostrarLogin = !mostrarLogin"
+                  v-if="
+                    !mostrarLogin &&
+                    appStore.estadosApp.estadoLogin != 'logueado'
+                  "
+                >
+                  Iniciar
+                </button>
+                <button
+                  @click="mostrarLogin = !mostrarLogin"
+                  v-if="
+                    mostrarLogin &&
+                    appStore.estadosApp.estadoLogin != 'logueado'
+                  "
+                >
+                  Cancelar
+                </button>
+                <button
+                  @click="logout"
+                  v-if="appStore.estadosApp.estadoLogin == 'logueado'"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+
+            <div v-if="mostrarLogin">
+              <label for="password">Clave</label>
+              <div style="display: flex">
                 <input
-                  v-model="mantenerseLogeado"
-                  type="checkbox"
-                  style="margin-right: 3px;"
+                  id="password"
+                  v-model="password"
+                  type="password"
+                  placeholder="Clave"
                 />
-                Mantenerse logueado
-              </label>
-              <button
-                @click="loginWithCredentials"
-                style="margin-left: 10px;"
-              >
-                Login
-              </button>
-              <span v-if="appStore.estadosApp.estadoLogin == 'error'" style="color: red; margin-left: 10px;">
-                Error
-              </span>
-            </template>
-          </template>
+                <label
+                  style="margin-left: 10px; display: flex; align-items: center"
+                  v-if="perfil.ModoDesarrollador"
+                >
+                  <input
+                    v-model="mantenerseLogeado"
+                    type="checkbox"
+                    style="margin-right: 3px"
+                  />
+                  Mantener
+                </label>
+                <button @click="loginWithCredentials" style="margin-left: 10px">
+                  Listo
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
   </div>
-        
-
 </template>
 
 <style scoped>
@@ -336,7 +392,7 @@ function logout() {
   flex-direction: column;
   font-size: x-large;
   gap: 1rem;
-  border: 1px solid ;
+  border: 1px solid;
   padding: 30px;
   border-radius: 3%;
 }
@@ -381,7 +437,6 @@ textarea {
 }
 .ctrlImagen {
   margin-right: 2rem;
-  
 }
 .instrMidi {
   display: flex;

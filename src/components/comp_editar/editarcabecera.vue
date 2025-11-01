@@ -133,7 +133,7 @@ function guardarCambios(origenDestino: string) {
 
       <div class="divctrlEdit">
         <button @click="guardarCambios('local')">💾 Guardar</button>
-        <button @click="guardarCambios('server')">o en 🗄️</button>
+        <button v-if="appStore.estadosApp.estadoLogin === 'logueado'" @click="guardarCambios('server')">o en 🗄️</button>
       </div>
     </div>
 

@@ -180,11 +180,7 @@ function clickEditar() {
           </li>
 
           <li>
-            <a
-              class="dropdown-item"
-              href="#"
-              @click="abrirVistaEdicion"
-            >
+            <a class="dropdown-item" href="#" @click="abrirVistaEdicion">
               👁️‍🗨️ Ver
             </a>
           </li>

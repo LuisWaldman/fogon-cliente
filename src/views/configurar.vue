@@ -88,7 +88,7 @@ function clickMas(masmenos: string) {
                 Afinar
               </a>
             </div>
-            
+
             <div @click="clickOpcion('acercade')" class="config-menu-item">
               <a
                 href="#"
@@ -111,9 +111,9 @@ function clickMas(masmenos: string) {
                 +
               </a>
             </div>
-            <div 
+            <div
               @click="clickMas('+')"
-              v-if="viendoMas  && config.perfil?.ModoDesarrollador"
+              v-if="viendoMas && config.perfil?.ModoDesarrollador"
               class="config-menu-item"
             >
               <a href="#" class="nav-link text-white activo"> - </a>
@@ -124,9 +124,7 @@ function clickMas(masmenos: string) {
 
       <div v-if="viendoMas">
         <div class="config-menu">
-          
           <div class="config-menu-group">
-            
             <div @click="clickOpcion('conexion')" class="config-menu-item">
               <a
                 href="#"
