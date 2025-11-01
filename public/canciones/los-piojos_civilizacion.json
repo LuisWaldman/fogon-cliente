@@ -2,78 +2,409 @@
     "cancion": "civilizacion",
     "banda": "los-piojos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
                 "acordes": [
                     "Am",
                     "Dm",
                     "C",
                     "G"
                 ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "Dm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
         ]
     },
     "letras": [
         [
-            "Hay algo que está sonando /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "seguro que ya lo oías /n"
+            "Esta es una canción en español de rock argentino. /n H",
+            "a  algo que está sonando,",
+            "seguro que ya lo oías./n"
         ],
         [
-            "la tierra está vibrando /n"
+            "La tierra está vibrando c",
+            "o  distinta melodía./n"
         ],
         [
-            "con distinta melodía. /n"
+            "Ni dioses locos de furia,",
+            "ni demonios vengativos,",
+            "ni naves extraterrestres,",
+            "ni algún cometa perdido./n"
         ],
         [
-            "Ni dioses locos de furia /n"
+            "La historia es mucho más clara",
+            "tiene también sentido. /n L",
+            "a  tierra se está quitando d",
+            "e  encima al peor enemigo./n"
         ],
         [
-            "ni demonios vengativos /n"
+            "Vienen los cuatro jinete",
+            "que, avalgando, vienen digo./n"
         ],
         [
-            "ni naves extraterrestres /n"
+            "Agua, tierra, fuego aire vi",
+            "ene  de tu propio ombli",
+            "go ",
+            "/n"
         ],
         [
-            "ni algún cometa perdido. /n"
+            "Cosas de la civ",
+            "ilización ",
+            "",
+            "/n"
         ],
         [
-            "Oh oh oh oh, ",
-            "/nc"
+            "Cosas de la civi",
+            "lización ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "osas de la civilizaci",
-            "n. /nY "
+            "Q",
+            "u  todo ya está montado,",
+            "que millones de despidos./n"
         ],
         [
-            "si viene un río gris /nque separ"
+            "El camino es complicado,",
+            "quizá como nunca ha sido. /n A",
+            "noch soñé con /n Manu",
+            "esta melodía cantaba./n"
         ],
         [
-            "a al mundo en dos /nquisiera "
+            "Alguien encendía un asado,",
+            "alguien de lejos llegaba.",
+            "si viene un río gris qu",
+            "se pare al mundo en dos, q",
+            "uisiera  quedar del mix co",
+            "la doblera que vos.",
+            "si viene un río gris qu",
+            "se pare al mundo en dos, qui",
+            "sier  quedar del mix co",
+            "n  la doblera que vos.",
+            "",
+            "/n"
         ],
         [
-            "quedar del mismo lad",
-            "o "
+            "Cosas de la civ",
+            "ilización ",
+            "",
+            "/n"
+        ],
+        [
+            "Cosa  de la civ",
+            "ilización /n U",
+            "n  nuevo desierto, un nuevo oranizo,",
+            "¿saben quién lo hizo?/n"
+        ],
+        [
+            "Anda po",
+            "acá./n"
+        ],
+        [
+            "Dios perdona el hombre, veces l",
+            "a  naturaleza nunca./n"
+        ],
+        [
+            "Anda po",
+            "r  acá./n"
+        ],
+        [
+            "No te olvides del mamón, que no terminó el vermo./n"
+        ],
+        [
+            "No te olvides del mamón, que no terminó el ve",
+            "rmo /n Po",
+            "r  allá. s",
+            "i  viene un río gris que s",
+            "e  pare al mundo en dos, qu",
+            "isier  quedar del mix con l",
+            "a  doblera que vos. s",
+            "i  viene un río gris que s",
+            "e  pare al mundo en dos, qu",
+            "isier  quedar del mix con l",
+            "a  doblera que vos.",
+            "",
+            "/n"
+        ],
+        [
+            "Cosas de la civi",
+            "lización ",
+            "/n"
+        ],
+        [
+            "C",
+            "osa  de la civili",
+            "zación ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "osa  de la ci",
+            "vil",
+            "iza",
+            "ció "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "O6kLgryi4Ac",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

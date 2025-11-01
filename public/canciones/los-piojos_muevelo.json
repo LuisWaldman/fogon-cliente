@@ -2,43 +2,207 @@
     "cancion": "muevelo",
     "banda": "los-piojos",
     "escala": "D7",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D7",
-                    "D7",
-                    "D7"
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "C",
-                    "G",
-                    "D"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D7",
                     "C",
-                    "D"
+                    "C",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D7",
+                    "C",
+                    "D7",
+                    "C",
+                    "D7",
+                    "C",
+                    "C",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "D",
-                    "C",
+                    "G",
                     "D",
-                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             }
@@ -46,99 +210,197 @@
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            1,
             2,
             3,
-            1,
-            1,
-            1,
-            1,
-            1
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Uh morena,/nPero ent"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "onces muévelo/n"
+            "Esta es una canción en español de rock argentino. /n T",
+            "u  m",
+            "ore",
+            "n  tiene l",
+            "a  sangre, sangre",
+            "caliente en la",
+            "ver",
+            "a ",
+            "/n"
         ],
         [
-            "Mírenla/nYo te digo n"
+            "Vuel",
+            "velo ",
+            "m",
+            "e  gusta verlo c",
+            "ambiand  de c",
+            "olor /n"
         ],
         [
-            "egra,   ",
-            "que le vamoá hacer",
-            "/nyo te digo n"
+            "N",
+            "a  na, n",
+            "a,  na, no hay nadie",
+            "igual, no hay nad",
+            "i  igual./n"
         ],
         [
-            "egra,   ",
-            "no vas a creer",
-            "/nyo te digo n"
+            "Nadie lo hac",
+            "e  como ella ni s",
+            "u  mamá/n"
         ],
         [
-            "egra,   ",
-            "que nadie nos va ",
-            "alcanzar/n"
+            "T",
+            "odo  se mueve, no, pero en",
+            "tonce  todo se mueve, no, pero e",
+            "ntonce  todo se mueve, no, pero en",
+            "tonce  todo se mueve, no",
+            ", ",
+            "pero entonces todo se mueve, no,",
+            "pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no,",
+            "pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no,",
+            "pero entonces tod",
+            "se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no,",
+            "pero entonces todo se mueve, no,",
+            "pero entonces todo se mueve, no, pero entonces todo se mueve,",
+            "no  pero entonce",
+            "todo s",
+            "e  muev",
+            "e  no, pero ent",
+            "once  todo se mueve, no,",
+            "pero entonces todo",
+            "s",
+            "e",
+            "",
+            "mue",
+            "ve  no, pero entonces t",
+            "odo  se m",
+            "ueve  no, pero entonces t",
+            "odo  se mueve, no, pero entonces todo se mueve, no, pero entonces todo se m",
+            "ueve,  no, pero entonces todo se mueve, no, pero entonces",
+            "tod  se mueve, no, pero entonces todo se mueve, no, pero entonces todo s",
+            "e  mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve,",
+            "no, pero entonces todo se mueve,",
+            "no, pero entonces todo se mueve,",
+            "no, pero entonces todo se mueve,",
+            "no,",
+            "pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se mueve, no, pero entonces todo se m",
+            "ueve no, pero entonces todo se mue /n T",
+            "ierr  mil vestidos",
+            "d  un collar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "negra,   ",
-            "mil vestidos y un c",
-            "ollar./n"
+            "Un m",
+            "oren /n So",
+            "mbra  lanzant",
+            "es  sombras de l",
+            "una  ll",
+            "en /n Qu",
+            "ema  quema, quema,",
+            "quema, quema, quema, quema",
+            "quema, quema, quema, quema, quema,",
+            "quema, quema, quema, quema, quem",
+            "a  quema, qu",
+            "ema  qu",
+            "ema",
+            "quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quem",
+            "a  quema, quema, quema,",
+            "quema",
+            "quema, q",
+            "u",
+            "e",
+            "m",
+            "a",
+            "q",
+            "ue",
+            "m ",
+            "",
+            "/n"
         ],
         [
-            "Uh morena/nD"
+            "Quema",
+            "quema, q",
+            "ue",
+            "ma  quema, quema, q",
+            "uema  qu",
+            "em",
+            "a  quema, qu",
+            "ema,  quem",
+            "a  quema, quema, quema, quema, que",
+            "ma  quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema,",
+            "quema  quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema,",
+            "quema, q",
+            "uema  quema, quema, quema, quema, quema, quema,",
+            "q",
+            "ue",
+            "m ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "igo se viene el tamb",
-            "orcito/n"
-        ],
-        [
-            "digo que suene tu djemb",
-            "é/n"
-        ],
-        [
-            "digo no pares ni un poquit",
-            "o (me gusta)/nd"
-        ],
-        [
-            "igo no pares de mov",
-            "er./n"
-        ],
-        [
-            " Mueve mi neg",
-            "ra y ya no ",
-            "pares más/n"
-        ],
-        [
-            " vienen las tumb",
-            "as tumband",
-            "o de atrás/n"
-        ],
-        [
-            " vienen los san",
-            "tos marchan",
-            "do en el son/n"
-        ],
-        [
-            " ay que se veng",
-            "a moren",
-            "a tu amor./n"
-        ],
-        [
-            " Mueve mi neg",
-            "ra y ya no ",
-            "pare mas..."
+            "Q",
+            "uema  quem",
+            "a  quema, qu",
+            "ema ",
+            "",
+            "quema, quema, quema, quema, quema, quema, quema, quema, quema, quema, quema /n Vienen l",
+            "o  santos marchando e",
+            "n el sol /n Hay",
+            "seña  morena t",
+            "u  am",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "K8ZUueL7gpM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

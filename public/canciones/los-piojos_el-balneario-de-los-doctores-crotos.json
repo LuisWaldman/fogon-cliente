@@ -2,23 +2,43 @@
     "cancion": "el-balneario-de-los-doctores-crotos",
     "banda": "los-piojos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E/D#",
+                    "E/D#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "E",
-                    "E"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E",
                     "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E",
                     "E"
                 ]
@@ -27,270 +47,285 @@
                 "nombre": "parte3",
                 "acordes": [
                     "E",
-                    "B",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Cm",
-                    "F",
-                    "Cm",
-                    "F"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "E",
+                    "E",
+                    "B",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "E/D#",
-                    "E/D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E/D#",
+                    "E/D#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E/D#",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E/D",
+                    "E",
+                    "E",
+                    "E/D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E/D",
+                    "E",
+                    "B",
+                    "E",
+                    "E/D#",
+                    "E/D#",
+                    "E/D#",
+                    "E/D#",
+                    "E/D#",
+                    "E/D#"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            0,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
             2,
             3,
-            3,
-            0,
             4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "Aia ia o pague io/n"
+            "",
+            "/n"
         ],
         [
-            "Aia ia o pague/n"
+            "¡Ay, ay",
+            ",  ay, oh, pa 'e, oh!",
+            "¡Ay, ay, ay, oh, pa 'e, o",
+            "h /n ¡Ay",
+            ",  ay, ay, oh, pa 'e, oh!",
+            "¡Ay, ay, ay, oh",
+            ",  pa 'e, oh!",
+            "¡Ay, ay, ay, oh, pa 'e, oh!",
+            "¡Ay, ay,",
+            "ay, oh, pa 'e, oh",
+            "¡Ay, ay, ay, oh, pa 'e,",
+            "oh /n ¡Ay",
+            ",  ay, ay, oh, pa 'e, o",
+            "h  va confia",
+            "d  el linchera la play",
+            "a  donde ninguno se ba",
+            "ña ¿sabes? /n Salud,",
+            "querida, querida, emin",
+            "encia  la diferencia e",
+            "st en el jaque. /n E",
+            "conocida la vida de e",
+            "ste  croto, su nombre si s",
+            "e  cae ignora la ley./n"
         ],
         [
-            "Iba confiad",
-            "o el linye",
-            "ra a la playa/n"
+            "Lo indemnizaron con u",
+            "nos  por otros, se vol",
+            "vi  loco dice que va l",
+            "ey /n ¡Ay, ay, ay, oh, pa 'e,",
+            "oh! /n ¡Ay,",
+            "ay, ay, oh, pa 'e, oh!",
+            "¡Ay, ay, ay, oh,",
+            "pa 'e, oh!",
+            "¡Ay, ay, ay, oh, pa 'e, oh!/n"
         ],
         [
-            "Donde ning",
-            "uno se ba",
-            "a sabés/n"
+            "Al",
+            "guno  dicen que era mae",
+            "stro  otros afirm",
+            "a  que era doctor./n"
         ],
         [
-            "Salud quer",
-            "ida querid",
-            "a eminencia/n"
+            "Novo dinero para s",
+            "u  genio, la cret",
+            "inad brilló piso. /n A",
+            "hor  la junta v",
+            "ece  lo encierra escucha l",
+            "a  lucha del globo camp",
+            "eón /n El profesor",
+            "arquero seca, s",
+            "ec  su frente renuncia",
+            "al dolor.",
+            "¡Ay",
+            "! ",
+            "¡Ay!",
+            "",
+            "¡Ay ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "La difere",
-            "ncia esta ",
-            "en el jakel/n"
+            "Dale tus ojo",
+            "rojos para que b",
+            "ae, ",
+            "para que b",
+            "ae  siempre gran co",
+            "razón /n"
         ],
         [
-            "Es conocida",
-            " la vida ",
-            "de este croto/n"
+            "Dale t",
+            "us  ojos rojos par",
+            "a  que b",
+            "ae ",
+            "para que bae siempre",
+            "gra  corazón./n"
         ],
         [
-            "Su nombre es ",
-            "Iseka e ig",
-            "nora la ley/n"
+            "Da",
+            "le  tus ojos ro",
+            "jo  para que bae",
+            "para q",
+            "u  bae",
+            "siempr  gran",
+            "c",
+            "o",
+            "r",
+            "a",
+            "z",
+            "ó",
+            "",
+            "",
+            "",
+            "¡Ay, ay, ay, pa 'e, pa 'e, pa 'e! /n En dos co",
+            "rona  de pinas de oro,",
+            "la playa arroníos al",
+            "amanecer /n Mira",
+            "n  los fotos, pluman vasos",
+            "rotos  se ríen toma",
+            "un mate también.",
+            "veces gritan, decúpen,",
+            "putean, se escangan le p",
+            "egan,  se le cante joder./n"
         ],
         [
-            "Lo indemnizaro",
-            "n con uno",
-            "s porotos/n"
+            "Despué  se toman un v",
+            "ino  en la arena, se fernan",
+            "si  pena hasta el amanecer./n"
         ],
         [
-            "Se volvió lo",
-            "co y dice",
-            " que es Baley/n"
-        ],
-        [
-            "Aia ia o pague io/n"
-        ],
-        [
-            "Aia ia o pague/n"
-        ],
-        [
-            "Aia ia o pague io/n"
-        ],
-        [
-            "Aia ia o pague/n"
-        ],
-        [
-            "Algunos dice",
-            "n que",
-            " era maestro/n"
-        ],
-        [
-            "Otros afi",
-            "rman qu",
-            "e era doctor/n"
-        ],
-        [
-            "No hubo d",
-            "inero p",
-            "ara su genio/n"
-        ],
-        [
-            "La cretina",
-            "da priv",
-            "atizo/n"
-        ],
-        [
-            "Ahora la yut",
-            "a a vec",
-            "es lo encierra/n"
-        ],
-        [
-            "Y escucha la luc",
-            "ha del Gl",
-            "obo Campeón/n"
-        ],
-        [
-            "El profe",
-            "sor y ar",
-            "quero Iseka/n"
-        ],
-        [
-            "Seca su f",
-            "rente y r",
-            "enuncia al dolor/n"
-        ],
-        [
-            "     ",
-            " Hey/n"
-        ],
-        [
-            "     ",
-            " Hey/n"
-        ],
-        [
-            "     ",
-            " Hey/n"
-        ],
-        [
-            "     ",
-            " Hey/n"
-        ],
-        [
-            "Dale tus ojos rojos para que baile/n"
-        ],
-        [
-            "Para que baile siempre el gran corazón/n"
-        ],
-        [],
-        [],
-        [
-            "El sol corona de esp",
-            "inas de or",
-            "o/nLa pl"
-        ],
-        [
-            "aya roñosa al ",
-            "   aman",
-            "ecer/nMir"
-        ],
-        [
-            "á los cro",
-            "tos fuman",
-            " fasos rotos/nSe r"
-        ],
-        [
-            "ien y tom",
-            "an un mat",
-            "e también/nA"
-        ],
-        [
-            " veces gr",
-            "itan esc",
-            "upen putean/nSe q"
-        ],
-        [
-            "uejan y les peg",
-            "an, se ",
-            "dejan de joder/n"
-        ],
-        [
-            "Después se t",
-            "oman un vi",
-            "no en la arena/n"
-        ],
-        [
-            "Se duermen sin p",
-            "ena hasta el ama",
-            "necer/nEl c"
-        ],
-        [
-            "roto no es du",
-            "eño del ti",
-            "nto que toma/nDe la "
-        ],
-        [
-            "nafta que lo ll",
-            "eva, ni del cami",
-            "ón/nNi "
-        ],
-        [
-            "del pucho que se f",
-            "uma, ni de la/nL"
-        ],
-        [
-            "ámpara que cuelga/nNi del "
-        ],
-        [
-            "gas, ni del ag",
-            "ua, ni del que",
-            "rosén/n"
-        ],
-        [
-            "Ni de las gal",
-            "linas, las va",
-            "cas, la tierra/nLas l"
-        ],
-        [
-            "atas/nNi de los aviones que ve"
-        ],
-        [],
-        [],
-        []
+            "Destrotando al cuello dios",
+            "distinto  que toma de la na",
+            "t  que no se va ni del camión, n",
+            "i del tren, ni del puño. /n Desde un",
+            "par  la lámpara que cuelga, n",
+            "i  del gano, ni del agua, ni d",
+            "el veroncen. /n ¡Ay, a",
+            "y  ay, pa 'e! la gal",
+            "lina  la paja, la tierra,",
+            "la laza, ni de los a",
+            "vione que ven. /n Las rutas q",
+            "u  recorren, teléfonos que i",
+            "gnoran  las voces en la radio,",
+            "ni las noticias de ayer",
+            ". ",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "2CU9XNTiXak",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

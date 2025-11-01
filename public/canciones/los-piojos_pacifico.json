@@ -2,189 +2,447 @@
     "cancion": "pacifico",
     "banda": "los-piojos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "E",
+                    "E",
                     "E",
                     "F#",
                     "A",
-                    "E"
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#",
+                    "F#",
+                    "G#",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
+                    "C#m",
                     "C#m",
                     "G#",
+                    "G#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "G#",
+                    "G#",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A",
                     "E",
-                    "C#m",
+                    "G#",
                     "G#",
                     "A",
-                    "F#",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
                     "A",
+                    "E",
+                    "F#",
+                    "F#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "C#m",
+                    "G#",
+                    "G#",
+                    "A",
+                    "A",
+                    "E",
                     "E"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "G",
+                    "A",
+                    "D",
                     "D",
                     "A",
-                    "G",
+                    "A",
+                    "A",
                     "E",
+                    "E",
+                    "A",
+                    "G",
+                    "G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G#",
+                    "G#",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
             3,
             4,
-            1,
-            3,
-            4
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Ahora que estoy vacío/n"
+            "Ahora qu",
+            "estoy vac",
+            "ío  ahora que",
+            "n  hay canció",
+            "n  toda l",
+            "a  luna cab",
+            "e  en m",
+            "í /n"
         ],
         [
-            "Ahora que no hay canción/n"
+            "Ahora que s",
+            "oy  silbid",
+            "o  de alguien qu",
+            "sale and",
+            "a  de otro c",
+            "iel  alr",
+            "ededo/n"
         ],
         [
-            "Toda la luna cabe ",
-            "en mí/n"
-        ],
-        [
-            "Ahora que soy silbido/n"
-        ],
-        [
-            "De alguien que sale a andar/n"
-        ],
-        [
-            "Veo otro cielo alred",
-            "edor/n"
-        ],
-        [
-            "Todos esos deseos/n"
-        ],
-        [
-            "De noche fría y de alcohol/n"
-        ],
-        [
-            "Hoy te los quiero reg",
-            "alar/n"
-        ],
-        [
-            "El agua me salpica/n"
-        ],
-        [
-            "El fuego es realidad/n"
-        ],
-        [
-            "Me gustaba tanto tu",
-            " vooooooo",
-            "z/n"
-        ],
-        [],
-        [
-            "Dejando que suceda/n"
-        ],
-        [
-            "Es más fácil así/n"
-        ],
-        [
-            "El cuerpo bien sabe flo",
-            "tar/n"
-        ],
-        [
-            "Distintas las miradas/n"
-        ],
-        [
-            "Y tu contestación/n"
-        ],
-        [
-            "Muestra qué inútil fue m",
-            "i hablar/n"
-        ],
-        [
-            "La mente está vacía/n"
-        ],
-        [
-            "El cuerpo quiere girar/n"
-        ],
-        [
-            "Y en la pupila aquel d",
-            "olor",
+            "Oh",
+            "todos es",
+            "o  deseo",
+            "s  de noche f",
+            "rí  de alcoh",
+            "o  hoy te los q",
+            "uier  re",
+            "gala",
+            "r /n E",
+            "l  agua m",
+            "e  salpita,",
+            "el fuego e",
+            "s  realidad,",
+            "me gusta",
+            "b  tanto t",
+            "u  v",
+            "oz",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Voy a llevarte en mí/n"
+            "Dej",
+            "and  que",
+            "suced ",
+            "e  más fáci",
+            "así, el",
+            "cuerp  bien s",
+            "ab  flo",
+            "tar /n"
         ],
         [
-            "Y ahora sé muy bien/n"
+            "Disti",
+            "nta  las m",
+            "irada ",
+            "t  contest",
+            "ación  muestra",
+            "qu  inútil f",
+            "u  mi hab",
+            "lar /n O",
+            "h  la men",
+            "t  está va",
+            "cía  el cuer",
+            "p  quiere g",
+            "ira  en la",
+            "pupila qu",
+            "e  el do",
+            "lor/n"
         ],
         [
-            "Que me llevarás/n"
+            "Oh",
+            ",  voy",
+            "llevarte m",
+            "í, ",
+            "ahora sé muy b",
+            "ien  que m",
+            "e  llev",
+            "ará  ha",
+            "st  donde es",
+            "tés  d",
+            "ond  vay",
+            "as /n Un t",
+            "atuaje  az",
+            "u  en l",
+            "a  vo",
+            "z  azul.",
+            "/n"
         ],
         [
-            "Hasta donde estés/n"
+            "O",
+            "h ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "oh,",
+            "oh, o",
+            "h",
+            ".",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Adonde vayas/n"
+            "Oh ",
+            "algo tiembla",
+            "al oído, s",
+            "ombr  de un susu",
+            "rr  sin voz,",
+            "la última o",
+            "portuni",
+            "dad /n"
         ],
         [
-            "Un tatuaje azul/n"
+            "Oh",
+            ", ",
+            "voy lleva",
+            "rt  mí,",
+            "ahora sé m",
+            "uy  bie",
+            "n  que me ll",
+            "evará",
+            "hasta dond",
+            "e  estés",
+            "donde v",
+            "ayas /n U",
+            "n  tatuaje",
+            "azul e",
+            "n  la v",
+            "oz",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "En la voz azul/n"
+            "Oh,",
+            "oh, o",
+            "h  o",
+            "h",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Oh",
+            ",  oh",
+            "o",
+            "h",
+            ",",
+            "o",
+            "h",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hU3Ekbtw7JA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,78 +2,212 @@
     "cancion": "pega-pega",
     "banda": "los-piojos",
     "escala": "A5",
-    "bpm": 60,
+    "bpm": 73,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A5",
                     "D5",
-                    "A5",
+                    "D5",
+                    "D5",
                     "D5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B5",
-                    "A5",
-                    "B5",
-                    "A5",
-                    "A5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "D5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Pega pega pega pega ",
-            "pega en tu cabeza/n"
-        ],
-        [
-            "Pega pega pega pega e",
-            "n tu cabeza acá/n"
-        ],
-        [
-            "Pega en tu cabeza calab",
-            "aza contra el techo/n"
-        ],
-        [
-            "Pega pega pega acá",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Uh nena/nquiero verte bai"
+            "Es",
+            "t  es una canción en español de rock argentino.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "lar./n"
+            "Esta es una",
+            "c",
+            "a",
+            "n",
+            "c",
+            "en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Uh nena/nquiero verte bai"
+            "E",
+            "sta es una canción en español de rock argentino. /n Es",
+            "t  es u",
+            "na ",
+            "c",
+            "a",
+            "n",
+            "c",
+            "i",
+            "ó",
+            "en español de rock argentino. /n Esta es una canc",
+            "ió  en españo",
+            "l  de rock a",
+            "r",
+            "g",
+            "e",
+            "n",
+            "t",
+            "i",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "lar./nP"
+            "Esta e",
+            "s  u",
+            "n  canción en español de rock argentino.",
+            "",
+            "/n"
         ],
         [
-            "ega pe",
-            "ga pega pega pega en tu cabeza"
+            "Esta e",
+            "una canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de roc",
+            "k argentino. /n Esta es una canción en español de ro",
+            "c argentino. /n Esta es una canción en español d",
+            "e  rock argentino.",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "mEJkJ_PJZJA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,138 +2,358 @@
     "cancion": "tan",
     "banda": "los-piojos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "Bb",
                     "Bb",
                     "F",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "F",
+                    "C",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Bb",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Bb",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Bb",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "§ no sea el vino/nQuiz"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "§ no sea el postre/nQuiz"
+            "E",
+            "st es una canción en español de rock argentino. /n Quiz",
+            "á  no sea el vino,",
+            "quiz  no sea el postre,",
+            "quizá no sea, n",
+            "o sea nada /n P",
+            "ero  hay tanta be",
+            "llez  tirada en",
+            "la mesa, desnuda t",
+            "oda  rebal",
+            "sad /n Apu",
+            "ra  el vaso,",
+            "va  perdiendo el pas",
+            "o  en la mesa ya n",
+            "o  hay nada/n"
         ],
         [
-            "§ no sea/nNo sea n"
+            "Borracha está la",
+            "puerta  cerraste qued",
+            "a  abierta puedo es",
+            "cucha  tu llama",
+            "d /n"
         ],
         [
-            "ada./nPero h"
+            "Oh ",
+            "tan",
+            "sol ",
+            "/n"
         ],
         [
-            "ay tanta belleza/nTir"
+            "Oh,",
+            "",
+            "tan so",
+            "l /n"
         ],
         [
-            "ada en la mesa/nDes"
+            "Cerrid",
+            "ya tu boca, tan du",
+            "lc  está tu boca, tan d",
+            "ulc  con un blues amargo/n"
         ],
         [
-            "nuda toda rebals",
-            "ada./n"
+            "U",
+            "n  vaso rueda al piso le",
+            "nto  cae al pis",
+            "o  lento muere en medio e",
+            "l pedazo /n No quiero",
+            "dejarte se vean",
+            "tus ojos se ve",
+            "a  tan, tan, tan, t",
+            "an tristes /n ¿Es",
+            "a  habrá sido el destino",
+            "ese vaso de vino q",
+            "ue  d",
+            "ijiste /n"
         ],
         [
-            "Apuras el vaso/n"
+            "Oh,",
+            "t",
+            "a  solo/n"
         ],
         [
-            "Vas perdiendo el paso/nY "
+            "O",
+            "h ",
+            "t",
+            "a  solo",
+            "/n"
         ],
         [
-            "en la mesa ya no hay na",
-            "da./nBor"
+            "Salta l",
+            "a  cuerda,",
+            "se enrida ca",
+            "e  de boca/n"
         ],
         [
-            "racha esta la puerta/nCerr"
+            "Salta l",
+            "a  cuerda,",
+            "se enrida c",
+            "a  de boca/n"
         ],
         [
-            "aste y quedo abierta/nY pu"
+            "Salta l",
+            "a  cuerda,",
+            "se enrida c",
+            "a  de boca/n"
         ],
         [
-            "edo escuchar tu llam",
-            "ada./n "
+            "Salt",
+            "la cuerda,",
+            "se enrida c",
+            "a  de boca",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "     ",
-            "         ",
-            "       ",
-            "©¼/nServ"
+            "O",
+            "h, ",
+            "tan solo",
+            "/n"
         ],
         [
-            "ida ya tu boca/nTan d"
+            "Oh,",
+            "t",
+            "an  solo/n"
         ],
         [
-            "ulce esta tu boca/nTan d"
+            "Oh",
+            "tan solo",
+            "/n"
         ],
         [
-            "ulce como un blues ama",
-            "rgo/nUn "
-        ],
-        [
-            "vaso rueda al piso/nL"
-        ],
-        [
-            "ento cae al piso/nL"
-        ],
-        [
-            "ento y muere en mil ped",
-            "azos/nNo quiero de"
-        ],
-        [
-            "jar que se vean/nTus "
-        ],
-        [
-            "ojos se vean/nT"
-        ],
-        [
-            "an, tan, tan, tr",
-            "istes/nHabr§"
-        ],
-        [
-            " sido es destino/nEse v"
-        ],
-        [
-            "aso de vino..",
-            "./nQue dij"
-        ],
-        [
-            "iste.../n"
-        ],
-        [
-            "Salta la cue",
-            "rda, se enred",
-            "a/nY cae de "
-        ],
-        [
-            "boca (x4)"
+            "Oh, tan solo"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QyRnUwqWjE0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

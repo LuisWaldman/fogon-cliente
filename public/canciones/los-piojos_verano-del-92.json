@@ -2,45 +2,354 @@
     "cancion": "verano-del-92",
     "banda": "los-piojos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
                     "D",
-                    "A"
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "oy a quemar l",
-            "a piedra de tu locu",
-            "ra",
-            ""
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en es",
+            "paño  de rock argentino.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ju",
+            "a /n Pedro Mazola N",
+            "uestr  gran amigo",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Juan /n P",
+            "edro /n Mazol/n"
+        ],
+        [
+            "Nuestro gran amig",
+            "o ",
+            "",
+            "/n"
+        ],
+        [
+            "Jua /n Pedro Mazo",
+            "l /n"
+        ],
+        [
+            "N",
+            "u",
+            "e",
+            "s",
+            "t",
+            "r",
+            "o",
+            "",
+            "gran amigo/n"
+        ],
+        [
+            "Juan /n Pedro M",
+            "azol /n Nuestro",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "gran amigo",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Jua /n Pedro Maz",
+            "ol /n Nuestro gran am",
+            "ig /n Juan P",
+            "edr /n Maz",
+            "ol /n Nuestro gran amigo Juan Pedro Mazola Nuestro gr",
+            "a amigo /n Juan Pedro Maz",
+            "ol /n N",
+            "ue",
+            "st",
+            "gran amigo /n Juan Pedro Mazola/n"
+        ],
+        [
+            "N",
+            "u",
+            "e",
+            "s",
+            "t",
+            "r",
+            "gran amigo/n"
+        ],
+        [
+            "Masolita querid",
+            "o  hazme el cuar",
+            "to  venes por ac",
+            "/n"
+        ],
+        [
+            "Masolita querido,",
+            "que te quiero ver, te quiero bot",
+            "ar  lo más que se vive, lo bien que s",
+            "está",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Masolita querido, que te quiero ver, te quiero botar, lo más que se vive, lo más que se vive/n"
+        ],
+        [
+            "Masolita querido,",
+            "que te quiero botar, lo más que se vive/n"
+        ],
+        [
+            "Juan /n Pedro Mazola N",
+            "ues",
+            "tr gran amigo /n Juan Pedro Mazola/n"
+        ],
+        [
+            "N",
+            "u",
+            "e",
+            "s",
+            "t",
+            "r",
+            "o",
+            "gran amigo /n Jua",
+            "n /n Pedro Mazola/n"
+        ],
+        [
+            "Nu",
+            "es  gran amigo"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "sF2_EcYTuZs",
-            "delay": 0
+            "delay": 19690.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

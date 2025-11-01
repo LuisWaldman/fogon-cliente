@@ -2,127 +2,347 @@
     "cancion": "entrando-en-tu-ciudad",
     "banda": "los-piojos",
     "escala": "Gm",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Gm",
+                    "Gm",
+                    "Gm",
                     "Bb",
-                    "C"
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
-                    "C",
-                    "A"
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm",
                     "C",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
                     "A",
-                    "C",
-                    "A",
-                    "C",
-                    "D",
-                    "A",
-                    "C"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "A",
                     "C",
-                    "A",
                     "C",
-                    "A",
+                    "Am",
                     "C",
-                    "D",
-                    "A"
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "A",
+                    "A",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "C",
+                    "Gm",
+                    "C",
+                    "Gm",
+                    "Gm",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "A",
+                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "  En este bosque donde los a",
-            "rboles son v",
-            "iejos/n"
-        ],
-        [
-            "  Nadie te va a dejar ",
-            "  mostrar tu fue",
-            "go/n"
-        ],
-        [
-            "  Tomando aire para p",
-            "oder expandi",
-            "rte/n"
-        ],
-        [
-            "  Vas a cruzar un mar que so",
-            "lo quiere hundi",
-            "rte",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Con el vient",
-            "o a favor/n"
+            "M",
+            "úsic  rock.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " La noche ",
-            "tibia/n"
+            "E",
+            "n  est",
+            "e  bosque donde l",
+            "os  árboles s",
+            "o  viej",
+            "o  nadie t",
+            "e  va dej",
+            "a  mostrar t",
+            "u  fueg",
+            "o /n Tomand",
+            "aire par",
+            "a  poder ex",
+            "pandi",
+            "r  vas c",
+            "ruza  un mar q",
+            "u  solo quier",
+            "hundir",
+            "t ",
+            "/n"
         ],
         [
-            " Tan lejos ",
-            "de mi amor/nYo es"
+            "Oh -",
+            "o  -oh -",
+            "o -oh -oh /n Oh -",
+            "oh  -oh -",
+            "o -oh -oh /n Oh -",
+            "oh  -oh -oh -",
+            "oh  -oh -",
+            "oh/n"
         ],
         [
-            "toy en",
-            "trando en tu ci",
-            "udad/n"
+            "Pero tu",
+            "sangr  es joven",
+            "va rápido por",
+            "la  ven",
+            "a  el que m",
+            "at  los sueños",
+            "merec  una c",
+            "ondena /n I",
+            "gua  s",
+            "eguí  dán",
+            "dol  para a",
+            "delant ",
+            "haciénd",
+            "o  sentir que m",
+            "i  pueblo es al",
+            "g  grand/n"
         ],
         [
-            " Bailando sin con",
-            "trol/n"
+            "Con el v",
+            "ient  favo",
+            "r  la noc",
+            "h  tib",
+            "i  tan lejo",
+            "s  de mi amor y",
+            "o  estoy ent",
+            "rand  en tu",
+            "ciu",
+            "da /n O",
+            "h  -",
+            "oh  -oh -",
+            "oh -oh -oh /n Oh -",
+            "oh  -oh -o",
+            "h -oh -oh /n Oh -",
+            "oh  -oh -o",
+            "h  -o",
+            "h  -oh -oh/n"
         ],
         [
-            " Todo esto gi",
-            "ra/n"
+            "Yo sé qu",
+            "e  cuesta p",
+            "oder  v",
+            "enir",
+            "alguna g",
+            "ir  cuesta s",
+            "i  ganas d",
+            "e vivir /n P",
+            "ero  en u",
+            "n  beso se t",
+            "e  pas",
+            "a  todo t",
+            "e  vas s",
+            "i  zapatillas p",
+            "er  no te v",
+            "a solo /n C",
+            "o  el v",
+            "ient  favo",
+            "la noch",
+            "e  tibi",
+            "a  tan cerc",
+            "a  de mi amor y",
+            "o  estoy ent",
+            "rand  en tu",
+            "ci",
+            "ud/n"
         ],
         [
-            " Tan lejos d",
-            "el dolor/n Yo es"
+            "Bailand",
+            "sin contr",
+            "o  todo est",
+            "o  gir",
+            "a  tan lejo",
+            "s  del dolor y",
+            "o  estoy ent",
+            "rand  en tu c",
+            "iu",
+            "da /n O",
+            "h",
+            "-",
+            "o",
+            "h  -oh -oh -oh -",
+            "oh /n Oh -",
+            "oh  -oh -oh",
+            "-o  -oh -",
+            "o -oh /n O",
+            "h  -",
+            "oh",
+            "-o",
+            "h  -oh -oh -",
+            "o  -oh -oh -",
+            "o  -oh",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "toy en",
-            "trando en tu ciud",
-            "ad"
+            "Con el viento favor la noche tibia tan lejos de mi amor yo estoy entrando en tu ciudad"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "khKZ3elWuoc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

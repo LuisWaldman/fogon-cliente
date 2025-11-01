@@ -2,22 +2,30 @@
     "cancion": "guadalupe",
     "banda": "los-piojos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "G5",
-                    "A5",
-                    "D",
-                    "D#"
+                    "E7",
+                    "A7",
+                    "A7",
+                    "E7",
+                    "A7",
+                    "E7",
+                    "E7"
                 ]
             },
             {
@@ -25,49 +33,317 @@
                 "acordes": [
                     "E7",
                     "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
         [
-            "n.C.)",
-            "",
-            "",
-            "",
             "",
             "",
             "",
             "/n"
         ],
         [
-            "La remera se calz",
-            "ó, y a la calle ya salió,/n"
+            "Guadalupe tiene se",
+            "no tiene ni un cos",
+            "pel  saborea un zumbid",
+            "constante./n"
         ],
         [
-            "Tiene en mente una idea d",
-            "anzante,/n"
+            "Ella quiere un biber",
+            "ón  grande como una canci",
+            "ón  que comience ya con e",
+            "l  final distant",
+            "e /n La primera se ca",
+            "lz  la calle ya sa",
+            "lió  tiene en mente una id",
+            "e  danzante/n"
         ],
         [
-            "Es meterse en la canción, e",
-            "n la que canta en su corazón,/nY en su oído su grillo mutante."
+            "Debes meterse en la ca",
+            "nció  de la que canta en su cor",
+            "azó  en su oído su br",
+            "ill  mutante",
+            ". /n Que seca está tu boc",
+            "tu boca amenaz",
+            "ó  tenme en bolsa cala boca s",
+            "i  no te la beso yo",
+            ". /n Que seca está tu boc",
+            "a  tu boca amenaz",
+            "ó  tenme en bolsa cala boca",
+            "s  no te la beso yo/n"
         ],
-        []
+        [
+            "Que busco lo que e",
+            "s  real, no me importa de a",
+            "bocar  hay un santori",
+            "a  sobre tu sol",
+            "ar /n Tienes que esperar l",
+            "o  pies por caminar donde no",
+            "debes quizá por c",
+            "amina  tan solo",
+            ". ",
+            "",
+            "/n"
+        ],
+        [
+            "Ya nunca estaremos t",
+            "an  solos.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo te digo q",
+            "u  volés mariposa d",
+            "e  tus pies antes de q",
+            "ue  caiga la persi",
+            "ana /n Hay una som",
+            "br  en el mar donde podé",
+            "s  descansar tu sonr",
+            "is  al vuelve estar vida.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ya nunca esta",
+            "remo  tan solos.",
+            "/n"
+        ],
+        [
+            "Ya n",
+            "unc  e",
+            "st",
+            "ar",
+            "em",
+            "o  tan solos.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "que seca es",
+            "t  tu boca tu boca",
+            "amenazó  tenme músic",
+            "en la boca si no te la beso yo./n"
+        ],
+        [
+            "Que seca e",
+            "st  tu boca tu boca",
+            "amenazó  tenme músi",
+            "c  en la boca si n",
+            "te la beso yo.",
+            "",
+            "/n"
+        ],
+        [
+            "Que n",
+            "me salen portas solo.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ya nun",
+            "c estaremos tan solos. /n Yo te digo que volés maripos",
+            "de tus pies ante",
+            "s  de que caiga la persiana./n"
+        ],
+        [
+            "Hay una sombra en el m",
+            "ar  donde podés descansar t",
+            "u  sonri",
+            "s  al vuelv",
+            "estar vida.",
+            "",
+            "/n"
+        ],
+        [
+            "Qu",
+            "e  no me salen portas solo.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "_Fnr0nmot0E",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }
