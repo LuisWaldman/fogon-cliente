@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { Pantalla } from '../../modelo/pantalla'
 import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
 import frecuen from './frecuenciometro.vue'
-
 import circulo from './circulo.vue'
+
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
 const micHelper = new MicHelper()
-const musicaHelper = new MusicaHelper()
 const refMicEstado = ref('')
 const notasAfinar = ref([] as NotaAfinar[])
 notasAfinar.value.push(new NotaAfinar('Sexta Cuerda', 'E2', 82.41))
@@ -159,6 +158,7 @@ import { useAppStore } from '../../stores/appStore'
 onMounted(() => {
   Solicitar()
   CalcularNotas()
+  updateInstrumentData()
 })
 
 onUnmounted(() => {
@@ -199,6 +199,79 @@ function ajusteTexto(
     return 'Tensar >>'
   }
 }
+
+function updateInstrumentData() {
+  const allInstruments = [...instrumentos, ...otrasAfinaciones]
+  const instrument = allInstruments.find(
+    (inst) => inst.value === instrumentoSeleccionado.value,
+  )
+  if (instrument) {
+    mostrandoNotas.value = instrument.notas
+    constNombre.value = instrument.nombres
+  } else {
+    // Default to guitar
+    mostrandoNotas.value = [7, 12, 17, 22, 26, 31]
+    constNombre.value = ['6ta', '5ta', '4ta', '3ra', '2da', '1ra']
+  }
+}
+
+watch(instrumentoSeleccionado, () => {
+  updateInstrumentData()
+})
+
+const instrumentos = [
+  {
+    value: 'guitarra',
+    label: 'Guitarra',
+    notas: [7, 12, 17, 22, 26, 31],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  },
+  {
+    value: 'charango',
+    label: 'Charango',
+    notas: [10, 15, 19, 24, 31],
+    nombres: ['5ta', '4ta', '3ra', '2da', '1ra'],
+  },
+  {
+    value: 'violin',
+    label: 'Violín',
+    notas: [7, 14, 21, 28],
+    nombres: ['4ta', '3ra', '2da', '1ra'],
+  },
+  {
+    value: 'ukelele',
+    label: 'Ukelele',
+    notas: [7, 12, 16, 21],
+    nombres: ['4ta', '3ra', '2da', '1ra'],
+  },
+]
+
+const otrasAfinaciones = [
+  {
+    value: 'gabierto',
+    label: 'Sol Abierto',
+    notas: [5, 10, 15, 20, 24, 29],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Open G
+  {
+    value: 'gcaida',
+    label: 'Sol Caida',
+    notas: [5, 10, 15, 20, 24, 29],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Drop G
+  {
+    value: 'dabierto',
+    label: 'Re Abierto',
+    notas: [2, 7, 12, 17, 21, 26],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Open D
+  {
+    value: 'dcaida',
+    label: 'Re Caida',
+    notas: [2, 7, 12, 17, 21, 26],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Drop D
+]
 </script>
 
 <template>
@@ -266,15 +339,21 @@ function ajusteTexto(
             "
           >
             <select v-model="instrumentoSeleccionado">
-              <option value="guitarra">Guitarra</option>
-              <option value="charango">Charango</option>
-              <option value="violin">Violín</option>
-              <option value="ukelele">Ukelele</option>
-              <optgroup>
-                <option value="gabierto">Sol Abierto</option>
-                <option value="gcaida">Sol Caida</option>
-                <option value="dabierto">Re Abierto</option>
-                <option value="dcaida">Re Caida</option>
+              <option
+                v-for="inst in instrumentos"
+                :key="inst.value"
+                :value="inst.value"
+              >
+                {{ inst.label }}
+              </option>
+              <optgroup label="Otras Afinaciones">
+                <option
+                  v-for="afin in otrasAfinaciones"
+                  :key="afin.value"
+                  :value="afin.value"
+                >
+                  {{ afin.label }}
+                </option>
               </optgroup>
             </select>
           </div>

@@ -42,9 +42,8 @@ onMounted(() => {
   vista.value = pantalla.getConfiguracionPantalla()
 })
 
-
 function SolicitarCalibracion() {
-  appStore.origenCancion.origenUrl = "server"
+  appStore.origenCancion.origenUrl = 'server'
   appStore.cancion.calidad = -1
   CancionManager.getInstance()
     .Save(
@@ -207,8 +206,18 @@ const refAdvertencia = ref(true)
             appStore.cancion.calidad < 1
           "
         >
-          <span v-if="appStore.cancion.calidad == - 1">♻️ Recalibrando.</span> <span @click="refAdvertencia = false">Texto No Calibrados. Corregilos desde: ✍️ Editar </span><button v-if="appStore.cancion.calidad > -1 && appStore.estadosApp.estadoLogin === 'logueado'" @click="SolicitarCalibracion()">Calibrar!</button>
-          
+          <span v-if="appStore.cancion.calidad == -1">♻️ Recalibrando.</span>
+          <span @click="refAdvertencia = false"
+            >Texto No Calibrados. Corregilos desde: ✍️ Editar </span
+          ><button
+            v-if="
+              appStore.cancion.calidad > -1 &&
+              appStore.estadosApp.estadoLogin === 'logueado'
+            "
+            @click="SolicitarCalibracion()"
+          >
+            Calibrar!
+          </button>
         </div>
         <div
           class="advertencia"
