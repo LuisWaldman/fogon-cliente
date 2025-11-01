@@ -152,7 +152,6 @@ import { onMounted, onUnmounted } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import { HelperSonidos } from '../../modelo/sonido/helperSonido'
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
-import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
 import { useAppStore } from '../../stores/appStore'
 
 onMounted(() => {
