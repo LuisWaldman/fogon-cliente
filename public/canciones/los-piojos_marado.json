@@ -2,229 +2,283 @@
     "cancion": "marado",
     "banda": "los-piojos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
                     "Cm",
+                    "Cm",
                     "A",
-                    "Gm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Cm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A5",
-                    "Cm",
-                    "A5",
-                    "Gm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "Em",
-                    "C",
                     "Em",
-                    "C",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
             1,
             2,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            2
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Cae del cielo brillant",
-            "e balón/n"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Toda la gente y todo el m",
-            "undo ve/n"
+            "Dicen que escapó de un s",
+            "ueño  en casi su mej",
+            "o  gambeta, que ni l",
+            "os  sueños respeta tan lleno va d",
+            "e  coraje sin demasiado r",
+            "opaj  sin ninguna care",
+            "ta /n Dicen que escapó",
+            "est  mozo del sueño de los i",
+            "ngeta  que los poder",
+            "oso  reta ataca los más villano",
+            "s  sin más armas en la mano q",
+            "ue  un diez en la camiseta.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Una revancha redond",
-            "a en su pie/n"
+            "Ca",
+            "e  del cielo brillante balón,",
+            "toda la gente todo el mundo ve, una",
+            "revanch  redonda en su pie, todo e",
+            "l  país con el corriendo va, caen l",
+            "a  tropas de su majestad, cae e",
+            "l norte de la /n Italia rica, esto pa",
+            "rad  esta no se explica, puede ver la l",
+            "engu de esos aguaveras. /n Parado, p",
+            "arado  par",
+            "ado  parado, pa",
+            "rado  parado, parado",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Todo el país con el corr",
-            "iendo va/n"
+            "Rinoscopia embi",
+            "st  cualquier, cualquier guía del po",
+            "de  letal, rinoscopia corn",
+            "de marfil, filoflatino para",
+            "reventar, la champaña que des",
+            "corcha  hoy, guardan los corchos para u",
+            "n  bote hacer, que viene el río de la p",
+            "elagea,  ya no hay goles que les dé p",
+            "or far. /n Parado, parad",
+            "o  parado, parad",
+            "o  parad",
+            "o  parado, para",
+            "do /n Cuando se caigan pedazos l",
+            "a  paredes de la gran ciud",
+            "ad  cuando no queden en el aire más",
+            "felice  de lo que ser",
+            "á  que ser",
+            "á ",
+            "",
+            "",
+            "",
+            "sigue el cielo lejos de lo s",
+            "uyo  si voló afuera no habría tanto su",
+            "yo  si vas fío le podré tobog",
+            "ar  va para arriba agarriendo,",
+            "deja fuera la bomba mágica,",
+            "alfombra va privada mil millones,",
+            "todo se pilla para la opresión",
+            "esperan alguna amiga. /n Par",
+            "ado  parado, para",
+            "do  parado",
+            "parado, p",
+            "arado /n Cuand",
+            "o  se caigan pedazos las paredes de l",
+            "a  gran ciudad, cu",
+            "and  no queden en el aire más felices de l",
+            "o  que será, q",
+            "u  ser",
+            "á ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Caen las tropas de su maj",
-            "estad/n"
+            "Parado,",
+            "parado  par",
+            "ado  par",
+            "ado  par",
+            "ado  para",
+            "do /n Para",
+            "do  para",
+            "do ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Y cae el norte de la Ita",
-            "lia rica/n"
-        ],
-        [
-            "Y el papa dando vueltas n",
-            "o se explica/n"
-        ],
-        [
-            "Muerde la lengua de Joa",
-            "o Havelange/nMara"
-        ],
-        [
-            "dó, Maradó.",
-            "...Marad",
-            ",Maradó ",
-            "  /nMara"
-        ],
-        [
-            "dó, Maradó.",
-            "...Marad",
-            ",Maradó ",
-            "  /n"
-        ],
-        [
-            "Rinoscopia embiste",
-            " a cualquier/n"
-        ],
-        [
-            "A cualquier quia del pode",
-            "r letal/n"
-        ],
-        [
-            "Rinoscopia cuerno de",
-            " marfil/n"
-        ],
-        [
-            "Filoplatino para re",
-            "ventar/n"
-        ],
-        [
-            "Y la champaña que desc",
-            "orchan hoy/n"
-        ],
-        [
-            "Guarden los corchos para u",
-            "n bote hacer/n"
-        ],
-        [
-            "Que viene el río del h",
-            "ambre y la sed/n"
-        ],
-        [
-            "Y ya no hay goles que de",
-            "n de morfar/nMara"
-        ],
-        [
-            "dó, Maradó.",
-            "...Marad",
-            ",Maradó ",
-            "  /nMara"
-        ],
-        [
-            "dó, Maradó.",
-            "...Marad",
-            ",Maradó ",
-            " /n"
-        ],
-        [
-            "Cuando se caigan a pedazos las paredes/nDe esta g"
-        ],
-        [
-            "ran ciudad/n"
-        ],
-        [
-            "Cuando no queden en el aire mas cenizas/nDe lo q"
-        ],
-        [
-            "ue será, ",
-            "que sea/n"
-        ],
-        [
-            "Y sigue el Diego, ",
-            "el mejor en lo suyo/n"
-        ],
-        [
-            "Si vos los fueras no",
-            " habría tanto yuyo/n"
-        ],
-        [
-            "Y va el cafiolo po",
-            "r el tobogán/n"
-        ],
-        [
-            "Va para arriba va rie",
-            "ndo, ja!/n"
-        ],
-        [
-            "Y viaja afuera alfo",
-            "mbra mágica/n"
-        ],
-        [
-            "Alfombra va privada mi",
-            "l millón/n"
-        ],
-        [
-            "Todos se empilchan pa",
-            "ra la ocasión/n"
-        ],
-        [
-            "Y esperan alguna miga",
-            "...ja!/nMara"
-        ],
-        [
-            "dó, Maradó.",
-            "...Marad",
-            ",Maradó ",
-            "  /nMara"
-        ],
-        [
-            "dó, Maradó.",
-            "...Marad",
-            ",Maradó ",
-            " /n"
-        ],
-        [
-            "Cuando se caigan a pedazos las paredes/nDe esta g"
-        ],
-        [
-            "ran ciudad/n"
-        ],
-        [
-            "Cuando no queden en el aire mas cenizas/nDe lo q"
-        ],
-        [
-            "ue será, ",
-            "que sea"
+            "Parado, para",
+            "do  par",
+            "ado ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "VRu0tB1bKfc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,59 +2,393 @@
     "cancion": "esquina-libertad",
     "banda": "los-piojos",
     "escala": "Bm",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bm",
-                    "D",
                     "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
-                    "C",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "Bm",
                     "C",
-                    "D"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "  Larga calle de L",
-            "ibertad/n"
+            "E",
+            "sta  e",
+            "s una canción en español de rock argentino. /n Esta es una canción en español d",
+            "e  rock a",
+            "rgentino /n"
         ],
         [
-            "  tantas curvas te sie",
-            "nto/n"
+            "Esta es una canción e",
+            "n  español de rock argentino./n"
         ],
         [
-            "  vi encerrando un omb",
-            "ú gritar/n"
+            "Esta es una canción en español d",
+            "e  rock argentino./n"
         ],
         [
-            "  el ombú que da el tie",
-            "mpo."
+            "Esta es una canción en español d",
+            "e",
+            "",
+            "rock argentino./n"
+        ],
+        [
+            "E",
+            "squin  libertad,",
+            "bebido crujo d",
+            "e  tiempo./n"
+        ],
+        [
+            "Aún te l",
+            "e  toca jugar,",
+            "no agafar recorr",
+            "id  viento./n"
+        ],
+        [
+            "Rique tu lu",
+            "n  para mi tren,",
+            "sangre en la cop",
+            "a  adentro",
+            ". /n Roc",
+            "a  no te inter",
+            "és  palazo, romp",
+            "e  el adentro.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Fue est",
+            "a  revolución, n",
+            "uev  sangre",
+            "nueva mente./n"
+        ],
+        [
+            "Lo que se pi",
+            "erde  ya se per",
+            "dió  no me es",
+            "peje la frente. /n Q",
+            "ué  badajo, qué badajo, qué bad",
+            "ajo  qué badajo, qué badajo, qué badajo, qué ba",
+            "dajo  qué badajo, qué badaj",
+            "o  qué badajo, qué badajo, qué badajo, qué bad",
+            "ajo  qué bad",
+            "ajo  qué bada",
+            "jo  qué b",
+            "ad",
+            "aj",
+            "o  qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo,",
+            "qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo, qué badajo,",
+            "qué badajo, q",
+            "ué  badajo, qué badajo, q",
+            "ué",
+            "bada",
+            "/n"
+        ],
+        [
+            "Llarga c",
+            "alle  de libe",
+            "rtad  tantas",
+            "curva  que si",
+            "ent  ence",
+            "rrad  una ocu",
+            "lt  de los",
+            "buque  del tie",
+            "mp /n No hay c",
+            "artele  para sa",
+            "be  cuál se",
+            "rá  tus sende",
+            "ro /n Como l",
+            "a  arena deb",
+            "e  ser, como e",
+            "l  aire e",
+            "s",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No ha",
+            "cartele",
+            "para saber cuál serán tu",
+            "s senderos /n Como la arena debe ser, como el ai",
+            "r  es",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lla",
+            "rg  calle de l",
+            "ibertad ",
+            "tanta  curvas que s",
+            "iento /n Co",
+            "m  la arena de",
+            "b  ser,",
+            "como el aire e",
+            "s ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡Que",
+            "che ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡Que che",
+            "! /n ¡Que c",
+            "h",
+            "e",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "N6lTpP4Xnlk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

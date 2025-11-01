@@ -2,142 +2,281 @@
     "cancion": "arco",
     "banda": "los-piojos",
     "escala": "B5",
-    "bpm": 60,
+    "bpm": 83,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B5",
-                    "G",
-                    "D",
+                    "B5",
+                    "B5",
                     "B5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B",
-                    "G",
-                    "D"
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B",
-                    "B",
                     "G",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
                     "D",
-                    "B",
-                    "B",
-                    "B"
+                    "D",
+                    "D",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "B5",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Arco/nen un se"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "gundo se derru",
-            "mba/nde un "
+            "Esta es u",
+            "na  canción en e",
+            "sp",
+            "añ",
+            "de rock argentino.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "suspiro./n"
+            "Arco",
+            ", despacio tiro /n E",
+            "n  un cegoto se derr",
+            "om  de un susp",
+            "ir /n Guarach",
+            "o  de baile mam/n"
         ],
         [
-            "Guachos de pa y de mamá/nJulieta m"
+            "Juliana cría estoy colg",
+            "and  de la esp",
+            "ad /n Luze",
+            "s  de las estrellas/n"
         ],
         [
-            "a estoy colg",
-            "ando/n"
+            "Como encerradas aquí d",
+            "entro  en mi botella",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "de la escala./n"
+            "Guaraches t",
+            "a mal cocidos /n N",
+            "o  va quedando un bicho sa",
+            "n  en este fr",
+            "í /n Papá,",
+            "cerr las piernas /n T",
+            "e  quiero libre del capil",
+            "l  que lo viene/n"
         ],
         [
-            "Luces/ncomo encer"
+            "Nadie d",
+            "el otro lado /n Na",
+            "di  la cuenta,",
+            "nadie ha paga",
+            "d ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rarlas aquí ",
-            "dentro,/n"
+            "Papá, cerra las piernas /n Te quiero libre del capillo que lo vien",
+            "e ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "en mi botella./n"
+            "Papá, cerra",
+            "la",
+            "s piernas /n Te quiero l",
+            "ibr",
+            "e  del capillo que lo vienes",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Parches/nno va qu"
+            "Papá, cerra las piernas /n Te quiero libre del capillo que lo vienes",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "edando un pichón s",
-            "ano/nen este "
-        ],
-        [
-            "nido./n"
-        ],
-        [
-            "Pampa/nte quiero li"
-        ],
-        [
-            "bre del cafis",
-            "ho/n"
-        ],
-        [
-            "que gobierna./n"
-        ],
-        [
-            "Nadie/nnadie la cu"
-        ],
-        [
-            "enta",
-            "/nnadie ha "
-        ],
-        [
-            "pagao./n"
-        ],
-        [
-            "movete así, movete así/n"
-        ],
-        [
-            "ya nunca no, ",
-            "pasará mi p",
-            "ena/n"
-        ],
-        [
-            "movete así, movete así/n"
-        ],
-        [
-            "ya nunca no, ",
-            "pasará mi p",
-            "ena/n"
-        ],
-        [
-            "no pasará mi pena?/n"
-        ],
-        [
-            "Arco..."
+            "Papá, cerra las piernas /n Te quiero libre del capillo que lo vienes Papá, cerra las piernas Te quiero libre del capillo que lo vienes"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "v7Oy2JcQkwI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

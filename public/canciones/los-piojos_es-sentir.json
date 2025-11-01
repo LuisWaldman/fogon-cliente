@@ -2,90 +2,447 @@
     "cancion": "es-sentir",
     "banda": "los-piojos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "C",
                     "G",
-                    "D",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
                     "D",
-                    "A",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G",
                     "D",
-                    "A",
-                    "E",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
                     "D",
-                    "A"
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "Es sentir, las luces que no caen/nes sen"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tir, salir como se n",
-            "ace/nEl in"
+            "Esta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "fierno está rajando tu p",
-            "iel, puerta sin ll",
-            "ave./n"
+            "E",
+            "sta  es una canción en español de rock argentino.",
+            "¡E",
+            "s  sentada!/n"
         ],
         [
-            "Es sentir, que es hora de agitarse/nes sen"
+            "Lo sé qu",
+            "e  no cae",
+            "¡/n"
         ],
         [
-            "tir, que nadie va a salvarte",
-            "/nyo qui"
+            "E  sentada!/n"
         ],
         [
-            "ero probar tu copa nena h",
-            "oy, quiero proba",
-            "rte./nEs sen"
+            "Sale como",
+            "tena/n"
         ],
         [
-            "tir atravesar el dolor/ncreíst"
+            "E",
+            "l  fierro está bajan",
+            "d en tu piel /n Puer",
+            "ta  sin lla",
+            "v  ¡/n"
         ],
         [
-            "e que allá estarías mejor;/nes sen"
+            "E  sentada!/n"
         ],
         [
-            "tir una luz de almacén/nes bus"
+            "Es hora d",
+            "e  agita",
+            "rt /n ¡E",
+            "s  sentada!",
+            "¡Nadie, nadie v",
+            "a  salvarte!/n"
         ],
         [
-            "car algo para estar bien/nes sen"
+            "Y",
+            "o  quiero llenarme un po",
+            "co  nena, hoy qui",
+            "er  probarte",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡Nadie,",
+            "nadi  v",
+            "a salvarte! /n Y",
+            "o  quiero llena",
+            "rm  un poco, ne",
+            "na  hoy quier",
+            "o probarte /n ¡Na",
+            "die  nadie",
+            "va salvarte! /n Y",
+            "o  quiero llenarme un poc",
+            "o  nena,",
+            "",
+            "hoy quiero probarte /n ¡Nadie, nadie va salvarte! Yo quiero l",
+            "lenarme  un poco, nena,",
+            "",
+            "",
+            "",
+            "",
+            "hoy quiero probarte",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡Nad",
+            "ie nadie va salvarte! /n Yo quiero llenarme un poc",
+            "o  nena, h",
+            "o quiero probarte /n Y",
+            "quiero llenarme un poco, nena,",
+            "",
+            "",
+            "hoy quiero probarte /n ¡Nadie,",
+            "n",
+            "a",
+            "d  va salvarte! ¡/n"
         ],
         [
-            "tir, es busc",
-            "ar, es volve",
-            "r."
+            "Nadie, nadie va salvarte! /n ¡Nad",
+            "ie  nadie va salvarte!",
+            "¡Nad",
+            "ie  nadie va salvarte!",
+            "¡Nadie",
+            "nadie va salvarte!",
+            "¡Nadie",
+            "nadie va salv",
+            "arte ",
+            "¡Nad",
+            "ie  nadie v",
+            "a  salvarte!",
+            "¡Nadi",
+            "e  nad",
+            "i  v",
+            "a salvarte! /n ¡Nad",
+            "ie  nadie va sal",
+            "varte! /n ¡Na",
+            "die  nadie",
+            "va salvarte! /n ¡Na",
+            "die  nadie va salvarte!",
+            "¡Nadie nadie va salvarte! /n ¡Nadi",
+            "e  nadie va salvarte!",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡Nadie,",
+            "nadi  v",
+            "a",
+            "",
+            "salvarte! /n ¡Na",
+            "die  nadi",
+            "e va salvarte! /n ¡Na",
+            "die  nadie va",
+            "salvarte! /n ¡N",
+            "adie ",
+            "nadie va salvarte! ¡/n"
+        ],
+        [
+            "Nadie ",
+            "nadie va salvarte! ¡/n"
+        ],
+        [
+            "Nadie ",
+            "nadie va salvarte!",
+            "¡Nadie  nadie va salvarte!",
+            "",
+            "",
+            "¡Nad",
+            "ie  nadie va salvarte!",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "RkoBn31OjGU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

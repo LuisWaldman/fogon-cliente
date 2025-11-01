@@ -2,87 +2,230 @@
     "cancion": "que-decis",
     "banda": "los-piojos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "E",
-                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "F",
-                    "E"
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "D",
                     "E",
-                    "Eadd9",
-                    "Eadd9",
-                    "Eadd9",
-                    "E",
-                    "E7",
-                    "E7"
+                    "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
-                    "E7",
-                    "E",
-                    "E",
-                    "E9",
-                    "E9",
-                    "E",
-                    "E9"
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "E",
-                    "G7",
-                    "G7",
-                    "G7",
-                    "G7",
+                    "E",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
                     "E",
                     "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            " que digo, ",
-            "  un",
-            " buen dia ",
-            "de sol",
-            "/ndigo,"
-        ],
-        [
-            " mi amigo, ",
-            "  nad",
-            "a que ",
-            "pensar h",
-            "oy/n"
-        ],
-        [
-            "G7  ",
-            "(F7 E7) ",
-            "(x2)",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",
@@ -92,30 +235,162 @@
             "/n"
         ],
         [
-            "La mama dijo: hijo, hay un hechizo/nen ese río de sal"
-        ],
-        [
+            "Tir  sobre lo",
+            "otros brazo",
+            "s  salta desde alg",
+            "ú  escaló",
+            "n /n Brillan al pasar",
+            "su  ojaso",
+            "s  queda un hueco en e",
+            "l  corazó",
+            "n /n Ponte risa e",
+            "n  un pasillo,",
+            "el hambre de l",
+            "a  oscurid",
+            "ad /n Nunca ha s",
+            "id  tu ven, bri",
+            "llo  tu veneno",
+            "mejo  que el m",
+            "ar /n Tira sobre",
+            "lo  otros braz",
+            "os  el chofer d",
+            "ic  tu termi",
+            "nal /n Se te de",
+            "rramaba  los ojo",
+            "s  se te de",
+            "rramaba  de atr",
+            "ás /n Digo,",
+            "que digo,",
+            "hubo u",
+            "n  día de so",
+            "l /n Digo,",
+            "mi amigo, n",
+            "ada  q",
+            "u  pensarlo.",
             "",
             "",
-            "/ny el río se dejó t"
+            "",
+            "/n"
         ],
         [
-            "omar(bi",
-            "s)/n"
+            "Fu  una muj",
+            "e  olvidada,",
+            "que tu corazón",
+            "rescató/n"
         ],
-        [],
         [
-            "os o",
-            "tros",
-            " brazos(bis)"
+            "Pero de la crina",
+            "un  espada colgaba",
+            ",  sin jugar ya sos",
+            "perdedor /n"
+        ],
+        [
+            "Ell  era una sob",
+            "reviviente ",
+            "en medio de todo e",
+            "se  mar./n"
+        ],
+        [
+            "En medio de toda e",
+            "s  gente,",
+            "nunca dejarás de",
+            "nadar /n"
+        ],
+        [
+            "Digo, qu",
+            "digo,",
+            "hubo un día de",
+            "sol /n"
+        ],
+        [
+            "Digo, mi a",
+            "migo  na",
+            "d  que pens",
+            "arlo /n D",
+            "igo,  que d",
+            "igo  hu",
+            "b  un día de s",
+            "ol. /n Di",
+            "go  mi amig",
+            "o  na",
+            "d  que pen",
+            "sarlo ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Digo, mi am",
+            "igo  nada que p",
+            "ensarlo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "L",
+            "a  mamá dijo, hi",
+            "jo  hay un hech",
+            "iz  en ese rí",
+            "o de sal. /n P",
+            "er  vos no escuchas",
+            "te  vos no escuchaste,",
+            "que el río se dejó",
+            "tomar /n"
+        ],
+        [
+            "La mamá dijo, hijo,",
+            "hay un hechizo",
+            "e  ese río d",
+            "e sal. /n Pe",
+            "r  vos no escuchaste, v",
+            "os  no escuchaste, que e",
+            "l  río se dejó to",
+            "mar /n D",
+            "igo  que di",
+            "go  hu",
+            "b  un día de s",
+            "ol /n D",
+            "igo  mi amig",
+            "o  n",
+            "ada  que pensarl",
+            "o /n Digo",
+            "que di",
+            "go ",
+            "/n"
+        ],
+        [
+            "Digo,",
+            "mi amigo,",
+            "nad  q",
+            "u  pensarlo.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Gira s",
+            "obre  los ojos de br",
+            "azos ",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3tnwNz1DzOc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

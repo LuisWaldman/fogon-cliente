@@ -2,14 +2,31 @@
     "cancion": "unbekannt",
     "banda": "los-piojos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E",
                     "E",
                     "E"
@@ -19,21 +36,27 @@
                 "nombre": "parte2",
                 "acordes": [
                     "E",
-                    "C",
                     "E",
-                    "C"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
                     "E",
-                    "C",
                     "E",
-                    "D/E",
                     "E",
-                    "D/E",
                     "E"
                 ]
             },
@@ -41,208 +64,473 @@
                 "nombre": "parte4",
                 "acordes": [
                     "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "E",
+                    "D/E",
+                    "D/E",
+                    "D/E"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D/E",
+                    "D/E",
+                    "D/E",
+                    "D/E"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D/E",
+                    "D/E",
+                    "D/E",
+                    "D/E"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "D/E",
+                    "D/E",
+                    "D/E",
+                    "D/E"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
                     "F",
                     "F",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
-            0,
-            0,
             2,
-            0,
-            0,
-            0,
-            0,
-            2,
-            0,
             3,
-            0
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
         ]
     },
     "letras": [
-        [],
         [
-            "Pasa la gente a mi lado/n"
-        ],
-        [
-            "en la Hauptbahnhof/n"
-        ],
-        [
-            "pasa la gente a mi lado/n"
-        ],
-        [
-            "en Plaza del Reloj/n"
-        ],
-        [
-            "nena tus ojos azules eléctricos son/n"
-        ],
-        [
-            "las máquinas de nuestro futuro,/n"
-        ],
-        [
-            "aquí ya son Dios!/nSoy el Unbekannt"
-        ],
-        [
-            "/nel Unbekannt"
-        ],
-        [
-            "/nder Unbekannt"
-        ],
-        [
-            "e/nel Unbekannt."
-        ],
-        [
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Molinos de huesos blancos/n"
+            "Pasa la gente",
+            "mi lado en la u",
+            "rba  lo",
+            "o /n P",
+            "as  la gente m",
+            "i  lado en plaza del",
+            "re",
+            "lo /n V",
+            "e  tus ojos az",
+            "ules  eléctric",
+            "o  son/n"
         ],
         [
-            "veo girar/n"
+            "La  má",
+            "quina  de nuestro futu",
+            "r aquí ya son /n D",
+            "ios /n S",
+            "o  en un b",
+            "ecan",
+            "en un be",
+            "can /n V",
+            "er  un be",
+            "cant ",
+            "en un becant",
+            "",
+            "",
+            "/n"
         ],
         [
-            "gente muy tranquila,/n"
+            "Molino d",
+            "e  huesos blancos v",
+            "eo  gi",
+            "ra/n"
         ],
         [
-            "que va a trabajar/n"
+            "Gente m",
+            "u  tranquila que v",
+            "a  trabajar/n"
         ],
         [
-            "no vas a escaparte,/n"
+            "N",
+            "o  vas",
+            "escaparte como e",
+            "n /n Villa Boy",
+            "an /n"
         ],
         [
-            "como en Villa Bosch/n"
+            "Guardo, guardo",
+            "enfiuro, no tengo re",
+            "serv  tú/n"
         ],
         [
-            "Herr Guarden Führer/n"
+            "Soy en u",
+            "beca",
+            "nt  en un",
+            "becan/n"
         ],
         [
-            "no tengo Reservation./nSoy el Unbekannt"
+            "No vas c",
+            "oimea /n"
         ],
         [
-            "/nel Unbekannt"
+            "De un bec",
+            "an ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "/nno vas a coimear"
+            "D",
+            "e  un",
+            "b",
+            "e",
+            "c",
+            "a",
+            "n",
+            "t",
+            "/n"
         ],
         [
-            "/nder Unbekannte"
+            "De un becant /n Soy en u",
+            "n  beca",
+            "n /n Soy en u",
+            "becant /n Nadie s",
+            "ab  de m",
+            "í /n"
         ],
         [
-            "./nHeavy fas"
+            "Mire",
+            "n  esa iglesia qu",
+            "e  casi no está",
+            "/n"
         ],
         [
-            "o/nen Sankt Pauli"
+            "Estad",
+            "i  de piedra f",
+            "uego  ritual/n"
         ],
         [
-            "/nP"
+            "T",
+            "us  piern",
+            "a  son fuertes, ne",
+            "n de /n Berlín",
+            "/n"
         ],
         [
-            "eter y sus chinas/nvan por ahí"
+            "Muros coraje",
+            "ro  del paro de la búsq",
+            "ueda de /n Estarín/n"
         ],
         [
-            "/nel Unb"
+            "Soy en u",
+            "n  beca",
+            "nt  en u",
+            "n  becant",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ekannt/nsoy el Un"
+            "C",
+            "o  becant/n"
         ],
         [
-            "bekannt/nel U"
+            "Pet",
+            "e  sus",
+            "china  van p",
+            "o  ahí/n"
         ],
         [
-            "nbekannt/nnadie sab"
+            "D",
+            "un bec",
+            "an  cam",
+            "in /n"
         ],
         [
-            "e de mí./nM"
+            "T",
+            "e  extrañ",
+            "sin f",
+            "in /n"
         ],
         [
-            "iren esa iglesia/nqu"
+            "Another v",
+            "ia /n A",
+            "nothe  o",
+            "n /n"
         ],
         [
-            "e casi no está/ne"
+            "Mir  el sol",
+            "cae",
+            "sobre la",
+            "ciuda /n"
         ],
         [
-            "stadio de piedra/n"
+            "Nadie par",
+            "hablar/n"
         ],
         [
-            "y fuego ritual/nt"
+            "De un beca",
+            "n ",
+            "/n"
         ],
         [
-            "us piernas son fuertes,/nn"
+            "Another v",
+            "i /n An",
+            "othe  one",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ena de Berlín/nm"
+            "Berlin lleg",
+            "a en el tren /n B",
+            "erlí ",
+            "/n"
         ],
         [
-            "uros con agujeros de bala/nd"
-        ],
-        [
-            "el obús de Stalin./nSoy el Unbekannt"
-        ],
-        [
-            "/nel Unbekannt"
-        ],
-        [
-            "/nUnbekannte"
-        ],
-        [
-            "/nllamado Unbekannt."
-        ],
-        [
-            "/nHeavy fas"
-        ],
-        [
-            "o/nen Sankt Paul"
-        ],
-        [
-            "i/nP"
-        ],
-        [
-            "eter y sus chinas/nvan por ahí"
-        ],
-        [
-            "/nel Un"
-        ],
-        [
-            "bekannt/ncamin"
-        ],
-        [
-            "a,/nte extrañ"
-        ],
-        [
-            "a/nsin fi"
-        ],
-        [
-            "n./nAnot"
-        ],
-        [
-            "her Bier/nanot"
-        ],
-        [
-            "her one/nmiro el sol"
-        ],
-        [
-            " caer/nsobre la "
-        ],
-        [
-            "ciudad/nnadie para"
-        ],
-        [
-            " hablar/nUnbekannt"
-        ],
-        []
+            "Mira los chico",
+            "s  jugando e",
+            "n  el ag",
+            "u ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "U4nNTz17cbE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }
