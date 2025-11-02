@@ -6,9 +6,17 @@ export class StrategyVista {
     this.vista = vista
   }
 
-  public iniciar(vista: vistaHome): void {
+  public iniciar(): void {
     // Implementación específica para iniciar la vistaHome
-    vista.viendoListas = []
-    console.log('Iniciando vistaHome con appStore:')
+    this.vista.viendoListas = []
+  }
+
+  public cambioLista(): void {
+    // Implementación específica para iniciar la vistaHome
+    this.vista.viendoListas = []
+  }
+  public resultadoBusqueda(): void {
+    // Implementación específica para iniciar la vistaHome
+    this.vista.viendoListas = []
   }
 }

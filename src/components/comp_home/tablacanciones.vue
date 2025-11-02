@@ -88,16 +88,15 @@ function Borrar(index: number) {
     </thead>
     <tbody>
       <tr v-if="props.cargando">
-        <td colspan="5">
-        🔥Cargando...
-      </td></tr>
+        <td colspan="5">🔥Cargando...</td>
+      </tr>
     </tbody>
     <tbody v-if="canciones.length === 0 && props.cargando == false">
       <tr>
         <td colspan="5" style="text-align: center">Sin canciones</td>
       </tr>
     </tbody>
-    <tbody v-if="canciones.length > 0  && props.cargando == false">
+    <tbody v-if="canciones.length > 0 && props.cargando == false">
       <template v-for="(cancion, index) in canciones" :key="index">
         <tr @click="VerDetalle(index)">
           <td>

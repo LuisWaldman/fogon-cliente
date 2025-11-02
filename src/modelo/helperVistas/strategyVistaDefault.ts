@@ -8,6 +8,7 @@ export class StrategyVistaDefault extends StrategyVista {
 
   public override iniciar(): void {
     // Implementación por defecto para iniciar la vistaHome
-    console.log('Iniciando vistaHome con la estrategia por defecto.')
+    this.vista.viendoListas = []
+    this.vista.viendoCanciones = []
   }
 }
