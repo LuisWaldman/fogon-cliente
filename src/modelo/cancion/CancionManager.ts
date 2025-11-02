@@ -24,7 +24,7 @@ export class CancionManager {
   }
   private getDBConnection(): Promise<IDBDatabase> {
     return new Promise((resolve, reject) => {
-      const request = indexedDB.open('MiBaseDeDatos', 2) // Cambiar versión de 1 a 2
+      const request = indexedDB.open('MiBaseDeDatos', 3) // Cambiar versión de 1 a 2
 
       request.onupgradeneeded = (event: IDBVersionChangeEvent) => {
         const db = (event.target as IDBOpenDBRequest).result

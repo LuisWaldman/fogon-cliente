@@ -4,7 +4,6 @@ import { Perfil } from '../../modelo/perfil'
 import { ref, onMounted, computed } from 'vue'
 import { Configuracion } from '../../modelo/configuracion'
 import { datosLogin } from '../../modelo/datosLogin'
-import bcrypt from 'bcryptjs'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 
 const refInstrumentos = ref<InstrumentoMidi[]>(
@@ -326,7 +325,12 @@ function toggleCifradoLatino() {
             <div>
               <label for="coso">Usuario</label>
               <div style="display: flex">
-                <input type="text" id="coso" v-model.lazy="username" :disabled="appStore.estadosApp.estadoLogin == 'logueado'" />
+                <input
+                  type="text"
+                  id="coso"
+                  v-model.lazy="username"
+                  :disabled="appStore.estadosApp.estadoLogin == 'logueado'"
+                />
                 <button
                   @click="mostrarLogin = !mostrarLogin"
                   v-if="

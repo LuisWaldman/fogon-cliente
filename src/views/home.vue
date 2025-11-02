@@ -60,12 +60,6 @@ const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 const appStore = useAppStore()
 const CancionesLocalstorage = ref<ItemIndiceCancion[]>([])
 
-CancionManager.getInstance()
-  .GetDBIndex()
-  .then((indices: ItemIndiceCancion[]) => {
-    CancionesLocalstorage.value = indices
-  })
-
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }

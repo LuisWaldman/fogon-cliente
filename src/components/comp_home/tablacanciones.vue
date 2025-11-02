@@ -130,7 +130,7 @@ function Borrar(index: number) {
                   <strong>Calidad:</strong
                   >{{ vectorCalidades[cancion.calidad] }}
                 </div>
-                
+
                 <div class="divItemDetalle duracion-detalle">
                   Duracion:
                   <strong>
