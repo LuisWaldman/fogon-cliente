@@ -56,9 +56,15 @@ export class ListasServerManager {
     console.log('ReorderCancion:', nameLista, index, orden)
   }
 
-  async GetCanciones(nameLista: string): Promise<ItemIndiceCancion[]> {
+  async GetCanciones(): Promise<ItemIndiceCancion[]> {
+    const response = await this.cliente.HTTPGET('itemcancionusuario')
+    const json = await response.json()
+    return json
+  }
+
+  async GetCancionesLista(nameLista: string): Promise<ItemIndiceCancion[]> {
     const response = await this.cliente.HTTPGET(
-      `cancion/owner?nombreLista=${encodeURIComponent(nameLista)}`,
+      `itemcancionlista?lista=${encodeURIComponent(nameLista)}`,
     )
     const json = await response.json()
     return json
