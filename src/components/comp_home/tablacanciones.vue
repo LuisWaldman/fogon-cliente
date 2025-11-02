@@ -126,6 +126,11 @@ function Borrar(index: number) {
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
               <div class="contDetalles">
+                <div class="divItemDetalle">
+                  <strong>Calidad:</strong
+                  >{{ vectorCalidades[cancion.calidad] }}
+                </div>
+                
                 <div class="divItemDetalle duracion-detalle">
                   Duracion:
                   <strong>
@@ -144,10 +149,6 @@ function Borrar(index: number) {
                     >{{ cancion.compasCantidad }} /
                     {{ cancion.compasUnidad }}</strong
                   >
-                </div>
-                <div class="divItemDetalle">
-                  <strong>Calidad:</strong
-                  >{{ vectorCalidades[cancion.calidad] }}
                 </div>
                 <div
                   class="divItemDetalle"
