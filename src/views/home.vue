@@ -12,7 +12,6 @@ import { vistaHome } from '../modelo/helperVistas/vistaHome'
 
 const listasManager: ListasDBManager = new ListasDBManager()
 
-  
 const vista: vistaHome = new vistaHome()
 const viendo = ref(vista.viendo)
 const viendoOrigen = ref(vista.viendoOrigen)
@@ -51,7 +50,7 @@ const renamingLista = ref<boolean>(false)
 const ListasEnStorage = ref<string[]>([])
 listasManager.GetListas().then((listas: string[]) => {
   ListasEnStorage.value = listas
-})  
+})
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])

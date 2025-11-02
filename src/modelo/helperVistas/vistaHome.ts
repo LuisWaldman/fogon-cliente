@@ -4,6 +4,7 @@ import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { StrategyVistaUltimas50 } from './strategyVistaUltimas50'
 import { StrategyVistaLocal } from './strategyVistaListasLocal'
 import { StrategyVistaServer } from './strategyVistaListaServer'
+import { StrategyCancionesLocal } from './strategyVistaCancionesLocal'
 
 export class vistaHome {
   public viendo: string = 'inicio'
@@ -39,6 +40,12 @@ export class vistaHome {
     } else if (this.viendo === 'listas') {
       if (this.viendoOrigen === 'localstorage') {
         this.strategia = new StrategyVistaLocal(this)
+      } else if (this.viendoOrigen === 'server') {
+        this.strategia = new StrategyVistaServer(this)
+      }
+    } else if (this.viendo === 'canciones') {
+      if (this.viendoOrigen === 'localstorage') {
+        this.strategia = new StrategyCancionesLocal(this)
       } else if (this.viendoOrigen === 'server') {
         this.strategia = new StrategyVistaServer(this)
       }
