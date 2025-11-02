@@ -15,7 +15,6 @@ export class StrategyVistaLocal extends StrategyVista {
     await this.listasManager.initDB()
     this.vista.viendoListas = await this.listasManager.GetListas()
     if (this.vista.viendoListas.length > 0) {
-      console.log('Seleccionando lista por defecto')
       this.vista.viendoLista = this.vista.viendoListas[0]
       await this.cambioLista()
     } else {

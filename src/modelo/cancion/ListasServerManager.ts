@@ -37,7 +37,7 @@ export class ListasServerManager {
   ): Promise<void> {
     console.log('Adding song to server list:', nameLista, elemento)
     await this.cliente.HTTPPost(
-      `itemcancionlista?nombreLista=${encodeURIComponent(nameLista)}`,
+      `itemcancionlista?lista=${encodeURIComponent(nameLista)}`,
       elemento,
     )
   }

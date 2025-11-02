@@ -10,6 +10,9 @@ import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
 import { vistaHome } from '../modelo/helperVistas/vistaHome'
 
+const listasManager: ListasDBManager = new ListasDBManager()
+
+  
 const vista: vistaHome = new vistaHome()
 const viendo = ref(vista.viendo)
 const viendoOrigen = ref(vista.viendoOrigen)
@@ -46,6 +49,9 @@ const nuevaLista = ref<string>('')
 const addingLista = ref<boolean>(false)
 const renamingLista = ref<boolean>(false)
 const ListasEnStorage = ref<string[]>([])
+listasManager.GetListas().then((listas: string[]) => {
+  ListasEnStorage.value = listas
+})  
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
@@ -82,38 +88,25 @@ async function clickOpcion(viendostr: string) {
   cargandoCanciones.value = true
   cargandoListas.value = true
   await vista.clickViendo(viendostr)
-  Cargar()
+  await Cargar()
   return
-
-  if (viendostr === 'inicio') {
-    viendoCanciones.value = refUltimasCanciones.value
-    viendoTexto.value =
-      viendoCanciones.value.length === 0
-        ? ''
-        : 'Ultimas ' + viendoCanciones.value.length + ' canciones'
-  } else if (viendostr === 'canciones') {
-    viendoCanciones.value = CancionesLocalstorage.value
-  } else if (viendostr === 'listas') {
-    cambioLista()
-  }
-  viendo.value = viendostr
 }
-function cambioLista() {
-  vista.cambioLista(viendoLista.value)
+
+async function cambioLista() {
+  cargandoCanciones.value = true
+  await vista.cambioLista(viendoLista.value)
+  actualizarVista()
+  cargandoCanciones.value = false
+  return
+}
+
+async function clickOrigen(viendostr: string) {
+  if (viendoOrigen.value === viendostr) return
+  console.log('Cambiando origen a:', viendostr)
+  await vista.clickViendoOrigen(viendostr)
+  await vista.iniciar()
   actualizarVista()
   return
-  if (viendoOrigen.value === 'reproduccion') {
-    viendoCanciones.value = appStore.listaReproduccion
-    if (appStore.listaReproduccion.length > 0) {
-      viendoOrigen.value = 'reproduccion'
-    }
-  } else if (viendoOrigen.value === 'localstorage') {
-    console.log('Cargando lista desde LocalStorage:', viendoLista.value)
-  } else if (viendoOrigen.value === 'server') {
-    viendoCanciones.value = []
-  }
-}
-function clickOrigen(viendostr: string) {
   viendoOrigen.value = viendostr
   if (viendo.value === 'canciones') {
     if (viendoOrigen.value === 'localstorage') {

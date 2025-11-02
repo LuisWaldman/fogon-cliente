@@ -1,4 +1,5 @@
 import { useAppStore } from '../../stores/appStore'
+import { CancionManager } from '../cancion/CancionManager'
 import { StrategyVista } from './strategyVista'
 import { vistaHome } from './vistaHome'
 
@@ -19,6 +20,9 @@ export class StrategyVistaServer extends StrategyVista {
   }
 
   override async cambioLista(): Promise<void> {
-    this.vista.viendoCanciones = []
+    this.vista.viendoCanciones =
+      (await CancionManager.getInstance().listasServerManager?.GetCancionesLista(
+        this.vista.viendoLista,
+      )) || []
   }
 }

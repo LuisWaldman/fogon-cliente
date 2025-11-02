@@ -45,6 +45,5 @@ export class vistaHome {
     } else {
       this.strategia = new StrategyVistaDefault(this)
     }
-    this.strategia.iniciar()
   }
 }
