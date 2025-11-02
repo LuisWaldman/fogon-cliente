@@ -61,7 +61,7 @@ onMounted(() => {
 
 function clickBorrarLista(cancion: OrigenCancion) {
   refViendoCanciones.value = refViendoCanciones.value.filter(
-    (c) => c.origen !== cancion,
+    (c) => c.fileName !== cancion.fileName,
   )
 }
 
@@ -142,6 +142,10 @@ function confirmarNuevaLista() {
     alert('El nombre de la lista no puede estar vacío.')
     return
   }
+  if (viendoListas.value == null) {
+    viendoListas.value = []
+  }
+
   if (viendoListas.value.includes(nuevaLista.value)) {
     alert('Ya existe una lista con ese nombre.')
     return
@@ -292,11 +296,16 @@ function AgregarLista(index: number, listaseleccionada: string) {
   }
   if (listaseleccionada.startsWith('server_')) {
     const nombreLista = listaseleccionada.replace('server_', '')
-    listasManager
-      .AddCancion(nombreLista, refViendoCanciones.value[index])
-      .then(() => {})
+    CancionManager.getInstance()
+      .listasServerManager?.AddCancion(
+        nombreLista,
+        refViendoCanciones.value[index],
+      )
+      .then(() => {
+        alert(`Canción agregada a la lista "${nombreLista}" en el servidor.`)
+      })
       .catch(() => {
-        alert('Error al agregar la canción a la lista.')
+        alert('Error al agregar la canción a la lista en el servidor.')
       })
   }
 }

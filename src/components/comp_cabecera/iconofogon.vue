@@ -144,7 +144,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          INICIANDO-----🔥
+          |FOGON|__--.🔥
         </div>
         <div
           class="titulo-Fogon"

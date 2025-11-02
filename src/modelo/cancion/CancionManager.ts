@@ -128,7 +128,7 @@ export class CancionManager {
   }
 
   public async Borrar(cancion: ItemIndiceCancion): Promise<void> {
-    if (cancion.origen.origenUrl === 'local') {
+    if (cancion.origenUrl === 'local') {
       if (!this.db) {
         console.error('No se ha establecido la conexión a IndexedDB')
         throw new Error('No se ha establecido la conexión a IndexedDB')

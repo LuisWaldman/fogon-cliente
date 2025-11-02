@@ -54,10 +54,10 @@ function VerDetalle(index: number) {
 
 const tiempo = new Tiempo()
 function Reproducir(index: number) {
-  emit('tocar', props.canciones[index].origen)
+  emit('tocar', props.canciones[index].GetOrigen())
 }
 function Borrar(index: number) {
-  emit('borrar', props.canciones[index].origen)
+  emit('borrar', props.canciones[index].GetOrigen())
 }
 </script>
 
@@ -94,7 +94,7 @@ function Borrar(index: number) {
       <template v-for="(cancion, index) in canciones" :key="index">
         <tr @click="VerDetalle(index)">
           <td>
-            <emoticonOrigen :origen="cancion.origen.origenUrl" />{{
+            <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
             }}
             <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>

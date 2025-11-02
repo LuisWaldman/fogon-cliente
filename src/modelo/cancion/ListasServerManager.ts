@@ -36,10 +36,10 @@ export class ListasServerManager {
     elemento: ItemIndiceCancion,
   ): Promise<void> {
     console.log('Adding song to server list:', nameLista, elemento)
-    await this.cliente.HTTPPost('cancion', {
-      nombreLista: nameLista,
-      cancion: elemento,
-    })
+    await this.cliente.HTTPPost(
+      `itemcancionlista?nombreLista=${encodeURIComponent(nameLista)}`,
+      elemento,
+    )
   }
 
   async RemoveCancion(nameLista: string, index: number): Promise<void> {

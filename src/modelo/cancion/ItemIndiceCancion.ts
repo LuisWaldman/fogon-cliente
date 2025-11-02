@@ -14,11 +14,11 @@ export class ItemIndiceCancion {
       .replace(' ', '_')
   }
   normalizar() {
-    if (this.origen.fileName === undefined) {
-      this.origen.fileName = ''
+    if (this.fileName === undefined) {
+      this.fileName = ''
     }
-    if (this.origen.fileName === '') {
-      this.origen.fileName =
+    if (this.fileName === '') {
+      this.fileName =
         this.normalizartexto(this.banda) +
         '_' +
         this.normalizartexto(this.cancion)
@@ -40,13 +40,19 @@ export class ItemIndiceCancion {
   public pentagramas: string[]
   public etiquetas: string[]
 
-  public origen: OrigenCancion
   public cancion: string
   public banda: string
   public acordes: string
   public owner: string
+  public origenUrl: string
+  public fileName: string
+  public GetOrigen(): OrigenCancion {
+    return new OrigenCancion(this.origenUrl, this.fileName, this.owner)
+  }
   constructor(_origen: OrigenCancion, _cancion: string, _banda: string) {
-    this.origen = _origen
+    this.origenUrl = _origen.origenUrl
+    this.fileName = _origen.fileName
+    this.owner = _origen.usuario
     this.acordes = ''
     this.cancion = _cancion
     this.banda = _banda
@@ -77,11 +83,9 @@ export class ItemIndiceCancion {
     ret.cantpartes = cancion.acordes.partes.length
     ret.bpm = cancion.bpm ? cancion.bpm : 60
     ret.calidad = cancion.calidad ? cancion.calidad : 0
-    ret.origen = new OrigenCancion(
-      origen.origenUrl,
-      origen.fileName,
-      origen.usuario,
-    )
+    ret.origenUrl = origen.origenUrl
+    ret.fileName = origen.fileName
+    ret.owner = origen.usuario
     return ret
   }
 }

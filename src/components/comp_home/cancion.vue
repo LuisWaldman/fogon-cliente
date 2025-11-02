@@ -43,7 +43,7 @@ function clickAgregar() {
       {{ arreglartexto(props.cancion.cancion) }}
     </div>
     <div class="origen-indicador">
-      <emoticonOrigen :origen="props.cancion.origen.origenUrl" />
+      <emoticonOrigen :origen="props.cancion.origenUrl" />
     </div>
     <div>{{ arreglartexto(props.cancion.banda) }}</div>
     <div v-if="viendoDetalle" style="display: flex">
