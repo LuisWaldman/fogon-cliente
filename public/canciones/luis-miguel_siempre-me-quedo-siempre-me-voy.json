@@ -8,272 +8,305 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "A#",
+                    "A#",
+                    "D#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F",
-                    "C",
+                    "F",
+                    "F",
                     "A#",
                     "F",
-                    "Csus4",
-                    "C",
                     "F",
-                    "Am",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "A#",
                     "D#",
-                    "F",
+                    "D#",
                     "A#",
-                    "F",
-                    "Csus4",
-                    "C",
-                    "Dm",
-                    "F7",
                     "A#",
-                    "Am",
-                    "Dm",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "D#",
                     "Gm",
-                    "A#",
-                    "Am",
-                    "Dm",
-                    "F7",
-                    "A#",
-                    "Am",
-                    "Dm",
+                    "F Cm",
                     "D#",
+                    "C",
+                    "G D#",
+                    "D#",
+                    "D#",
+                    "D# Am",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "A#",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "A#",
+                    "A#",
+                    "Gm",
+                    "Gm",
+                    "A#",
+                    "G",
+                    "G",
+                    "F",
+                    "A#",
+                    "A#",
+                    "D#",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
                     "Gm",
                     "F",
-                    "A#",
-                    "F",
-                    "A#",
-                    "F",
-                    "D#",
-                    "Gm",
-                    "C",
-                    "F",
-                    "A#",
-                    "F",
-                    "A#",
-                    "F",
-                    "G",
-                    "D",
-                    "C",
-                    "G",
-                    "Dsus4",
-                    "D",
-                    "G",
-                    "Bm",
-                    "F",
-                    "G",
-                    "C",
-                    "G",
-                    "Dsus4",
-                    "D",
-                    "Em",
-                    "G7",
-                    "C",
-                    "Bm",
-                    "Em",
-                    "F",
                     "Am",
                     "C",
-                    "Bm",
-                    "Em",
-                    "G7",
                     "C",
-                    "Bm",
-                    "Em",
+                    "C",
                     "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "Cm",
                     "Am",
-                    "G",
-                    "C",
-                    "G",
-                    "C",
-                    "G",
-                    "F",
                     "Am",
-                    "D",
-                    "G",
-                    "C",
-                    "G",
-                    "C",
-                    "G",
-                    "F",
                     "Am",
-                    "D",
-                    "D#",
-                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
                     "F",
-                    "G",
                     "F",
-                    "G",
                     "F",
-                    "G",
                     "F",
-                    "G",
+                    "F",
                     "F"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Cada suelo que piso es un poco m",
-            "ío",
-            "/npertenece el "
-        ],
-        [
-            "mar, montes y r",
-            "íos.",
-            "/n"
-        ],
-        [
-            "No soy dueño de nada ni quiero ",
-            "ser",
             "",
             "",
-            "/nno sé cuando me"
-        ],
-        [
-            " marcho o he de vol",
-            "ver.",
-            "",
-            "",
-            "",
-            "/nSi es que acaso me quieres me espera"
-        ],
-        [
-            "rás",
-            "",
-            "/npero si no me "
-        ],
-        [
-            "amas me olvidar",
-            "s.",
             "",
             "",
             "/n"
         ],
         [
-            "Como los colibríes van de flor en ",
-            "flor",
-            "",
-            "/nyo voy de pueblo en "
+            "Cada suelo que ",
+            "piso es un poco m",
+            "ío,",
+            "me pertenece el ma",
+            "r, montes rí",
+            "os. \n\nNo ",
+            "soy dueño de nada, ni quie",
+            "ro ser. /n"
         ],
         [
-            "pueblo con mi canc",
-            "ión./nB."
+            "No sé cuándo me ",
+            "marcho, puede vo",
+            "lver. /n"
         ],
         [
-            "Siempre me q",
-            "uedo, Si",
-            "empre me voy",
-            "/n"
+            "Si es que acaso me quieres, ",
+            "me esperará",
+            "s. \n\nPer ",
+            "si no me amas, me o",
+            "lvidará",
+            "s. \n\nComo los coli",
+            "bríes van de flor en fl",
+            "or. /n"
         ],
         [
-            "donde hay am",
-            "or  yo",
-            " estoy",
-            "./n"
-        ],
-        [
-            "Siempre me q",
-            "uedo, Si",
-            "empre me voy",
-            ",/nA."
-        ],
-        [
-            "Ya ves que yo no soy el chico idea",
-            "l",
-            "/nmás si vienes co"
-        ],
-        [
-            "nmigo te alegra",
-            "rás.",
-            "/n"
-        ],
-        [
-            "No trates de cambiarme de cómo ",
-            "soy",
-            "",
-            "",
-            "/nno sé bien el c"
-        ],
-        [
-            "amino por donde ",
-            "voy.",
-            "",
-            "",
-            "",
-            "/nSi estoy un poco loco déjame "
-        ],
-        [
-            "así",
-            "",
-            "/nde qué vale estar"
-        ],
-        [
-            " cuerdo y no ser fe",
-            "liz.",
+            "Yo voy de pueblo en pueblo ",
+            "con mi canción. \n\nSiempre me ",
+            "quedo,  siempre me voy, d",
+            "onde hay amor yo es",
+            "toy. \n\nSiempre me quedo, ",
+            "siempre me voy, donde hay a",
+            "mor yo estoy ",
             "",
             "",
             "/n"
         ],
         [
-            "No soy pobre ni rico y que más me ",
-            "da",
+            "Si no esperes ",
+            "de mi parte la fr",
+            "ialdad, ",
+            "el calor es mi s",
+            "igno, la identi",
+            "dad. \n\nS",
+            "olo mis alegrías te ",
+            "contar",
+            "é, en cambio mis ",
+            "tristezas las gu",
+            "ardaré. /n"
+        ],
+        [
+            "No tengo tiempo ex",
+            "acto para el amor ",
+            "por",
+            "que rompí hace tiempo con ",
+            "el rel",
+            "oj. \n\nSi es que al",
+            "guien pregunta por mi v",
+            "erdad, ",
+            "dile que soy un ave ",
+            "que viene va. \n\nSiem",
+            "pre me quedo, siempre me vo",
+            "y, donde hay amor yo ",
+            "estoy. ",
             "",
-            "/nsi riqueza la "
-        ],
-        [
-            "tengo en nuestra amist",
-            "ad./nB."
-        ],
-        [
-            "Siempre me q",
-            "uedo, Si",
-            "empre me voy",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "donde hay a",
-            "mor yo",
-            " estoy",
-            "./n"
+            "Ya ",
+            "ves que yo no soy el chico ",
+            "ideal,  ",
+            "más si vienes ",
+            "conmigo  te ale",
+            "grarás. /n"
         ],
         [
-            "Siempre me q",
-            "uedo, Si",
-            "empre me voy",
-            ",/n"
+            "No trate de cambiarme ",
+            "de como soy, ",
+            "hoy no ",
+            "se ve en el camino por d",
+            "onde voy ",
+            "estoy un poc",
+            "o loco, me cambia ",
+            "así mi vivir ",
+            "de que vale estar cuerd ",
+            "no ser feli",
+            "z. \n\nNo ",
+            "soy pobre ni rico ni que ",
+            "más me da, ",
+            "si rica esa la ",
+            "tengo en nuestra amistad. /n"
         ],
         [
-            "donde hay a",
-            "mor yo",
-            " estoy",
+            "Siempre me quedo, siempre me ",
+            "voy, donde hay amor ",
+            "yo estoy. ",
             "",
             "",
-            "",
-            "",
-            "/nyo es"
+            "/n"
         ],
         [
-            "toy, ",
-            "yo esto",
-            "y, yo",
-            " est",
-            "oy",
+            "Yo ",
+            "estoy, ",
+            "",
+            "yo estoy, ",
+            "yo estoy. ",
+            "",
+            "",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 92,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "tUWlbf1TlQg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

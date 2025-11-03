@@ -8,159 +8,387 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "Ebm7",
+                    "Bb",
+                    "Ebm7",
+                    "C#",
+                    "F7",
+                    "Bbm7",
+                    "Bb",
+                    "Bb7",
+                    "C#",
+                    "F7",
+                    "F7",
+                    "Ebm7",
+                    "C#",
+                    "A#m",
+                    "F#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Ebm7",
-                    "Ab7",
-                    "Db7M",
-                    "F#7",
                     "Ebm7",
-                    "F7",
-                    "Bm7",
-                    "Eb7",
-                    "Bm7",
-                    "Eb7",
-                    "Bm7",
-                    "Eb7",
-                    "F7",
-                    "Bm7",
                     "Bb",
-                    "C7",
-                    "F#",
-                    "F7",
-                    "Eb7",
-                    "Bm7",
-                    "Ab7",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb",
+                    "Ebm7",
+                    "Bb",
+                    "Ebm7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Bb",
+                    "Ebm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "C#",
-                    "Eb7",
+                    "C#",
+                    "C#",
+                    "C#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "F7",
-                    "Bm7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Ebm7",
+                    "Ebm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bbm7",
+                    "Eb7",
+                    "Eb7",
+                    "Eb7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "Bb",
                     "C7",
-                    "F7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bb7",
                     "Bb7",
                     "Ebm7",
-                    "Ab7",
+                    "Bb7",
+                    "Bb7",
                     "C#",
                     "Ebm7",
-                    "Ab7",
+                    "Ebm7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "C#",
-                    "Ebm7",
+                    "C#",
+                    "C#",
+                    "C#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "F7",
-                    "Bbm7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F7",
                     "C7",
-                    "F#7",
-                    "F7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Ebm7",
                     "Ebm7",
                     "Bbm7",
-                    "Ab7",
-                    "C#",
-                    "Ebm7",
-                    "F7",
                     "Bbm7",
-                    "F#7",
-                    "F7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
+                    "Bbm7",
                     "Bbm7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Tal vez sería mejor que no",
-            " volvieras/nQu"
-        ],
-        [
-            "izas fuera mejor que me o",
-            "lvidaras/n"
-        ],
-        [
-            "Volver es empe",
-            "zar a atorment",
-            "arnos/n"
-        ],
-        [
-            "A querernos para odiarn",
-            "os/n"
-        ],
-        [
-            "Sin principio ni fi",
-            "nal/n"
-        ],
-        [
-            "Nos hemos hecho tanto ",
-            "tanto daño/n"
-        ],
-        [
-            "Que amor entre nosotros es mart",
-            "irio/n"
-        ],
-        [
-            "Jamás quis",
-            "o llegar el des",
-            "engaño/n"
-        ],
-        [
-            "Ni el olvido ni el deli",
-            "rio/n"
-        ],
-        [
-            "Seguiremos siempre igu",
-            "al/n"
-        ],
-        [
-            "Cariño como el n",
-            "uestro es un castigo",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Que se lleva en el",
-            " alma hasta la muer",
-            "te/n"
+            "Esta  es ",
+            "una c",
+            "anción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Mi suerte necesit",
-            "a de tu suer",
-            "te/n"
+            "Est ",
+            "es una ",
+            "canción en e",
+            "spañol de rock argentino. /n"
         ],
         [
-            "Y tú me ",
-            "necesitas mucho",
-            " más/n"
+            "Esta  ",
+            "es ",
+            "",
+            "",
+            "",
+            "",
+            "una ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción en es",
+            "pañol de rock argentino. /n"
         ],
         [
-            "Por eso no habra nunca desped",
-            "ida/n"
+            "Por eso ",
+            "no habrá nunca ",
+            "desped",
+            "ida /n"
         ],
         [
-            "Ni paz alguna habra de consola",
-            "rnos/n"
+            "Ni paz alg",
+            "una habrá de ",
+            "consola",
+            "rnos \n\nEl ",
+            "vaso ",
+            "del dolor ha de ",
+            "encontrarnos  \n\nDe ",
+            "rodillas en ",
+            "la vida, f",
+            "rente frente n",
+            "ada más ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Y el paso del do",
-            "lor ha de encontrar",
-            "nos/nD"
+            "C",
+            "ariño, como el nue",
+            "stro es un c",
+            "asti/n"
         ],
         [
-            "e rodillas en la ",
-            "vida frente a frente/nY n"
+            "Que se ll",
+            "eva, del al",
+            "ma hasta la m",
+            "uerte /n"
         ],
         [
-            "ada más"
+            "Mi suer",
+            "te en tu nombre \n\nNeces",
+            "ita de tu s",
+            "uerte ",
+            "tú ",
+            "me necesi",
+            "tas mucho más ",
+            "/n"
+        ],
+        [
+            "Por eso ",
+            "no habrá nunc",
+            "a desped",
+            "ida /n"
+        ],
+        [
+            "Ni paz a",
+            "lguna habrá de ",
+            "consol",
+            "arnos /n"
+        ],
+        [
+            "El vas",
+            "o del dolor ha ",
+            "de encontrarnos /n"
+        ],
+        [
+            "De rodillas ",
+            "en la vida, ",
+            "frente fre",
+            "nte ",
+            "nada ",
+            "más ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Lqo6iofHU8U",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

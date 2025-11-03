@@ -2,116 +2,338 @@
     "cancion": "eleuterio-galvan",
     "banda": "atahualpa-yupanqui",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Fm",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "E",
+                    "G",
+                    "G",
+                    "C",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "G",
-                    "C"
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Fm",
-                    "G7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "G",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
-            0,
-            0,
-            0,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Era una vida senci",
-            "lla/nla de Eleuterio Galv"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "án./n"
+            "Esta es una canci",
+            "ón en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Era una vida senci",
-            "lla/nla de Eleuterio Galv"
+            "E",
+            "sta es una ",
+            "canción en español ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "de rock argentino. /n"
         ],
         [
-            "án,/nh"
+            "Ten",
+            "ía un rancho c",
+            "hiquitito cer",
+            "ca del \n\nCañaveral /n"
         ],
         [
-            "ombre ni joven ni vie",
-            "jo/ntan pobre como el que m"
+            "Te",
+            "nía un rancho c",
+            "hiquitito cerc ",
+            "del \n\nCañaveral /n"
         ],
         [
-            "ás/ncon dos "
+            "Bebía un v",
+            "ino dudoso ",
+            "que lo ayudaba pr",
+            "osear \n\nLo de",
+            "más era si",
+            "lencio era ",
+            "cuando hablaba ",
+            "más ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
+            "Las ",
+            "cosas no se emp",
+            "arejan cuando es dur",
+            "o el trajinar /n"
+        ],
+        [
+            "Las cosa ",
+            "no se emparejan ",
+            "cuando  es duro el tr",
+            "ajinar \n\nEra ",
+            "una estrella peque",
+            "ña la esperanza de /n"
+        ],
+        [
+            "Galván  \n\nSoña",
+            "ba con un caba",
+            "llo, nu",
+            "nca lo pudo co",
+            "mpara",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Va",
+            "rios fueron ",
+            "al velorio c",
+            "uando se murió \n\nG",
+            "alván \n\nV",
+            "arios fuer",
+            "on al vel",
+            "orio cuando se ",
+            "murió \n\nGalvá /n"
+        ],
+        [
+            "Pión de sur",
+            "co con un ranc",
+            "ho cerca del \n\nCañ",
+            "averal \n\nHombr",
+            "e, ¿qué haces aquí? \n\nNi joven ",
+            "ni viejo, ",
+            "tan pobre como el ",
+            "quemar \n\nCon dos ",
             "hijos en las ca",
-            "sas/ny otro perd"
-        ],
-        [
-            "ido por ah",
-            "./nV"
-        ],
-        [
-            "arios fueron al velo",
-            "rio/ncuando se murió Gal"
-        ],
-        [
-            "ván./nV"
-        ],
-        [
-            "arios fueron al velo",
-            "rio/ncuando se murió Gal"
-        ],
-        [
-            "ván,/npe"
-        ],
-        [
-            "ón de surco con un r",
-            "ancho/ncerca del cañave"
-        ],
-        [
-            "ral,/nh"
-        ],
-        [
-            "ombre ni joven no vie",
-            "jo,/ntan pobre como el que m"
-        ],
-        [
-            "ás/ncon dos h"
-        ],
-        [
-            "ijos en las ca",
-            "sas/ny otro perd"
-        ],
-        [
-            "ido por ah",
-            "."
+            "sas otro p",
+            "erdido por ahí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Mu5mcPawtgQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

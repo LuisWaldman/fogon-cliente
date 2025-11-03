@@ -8,39 +8,89 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
-                    "F",
+                    "D",
+                    "Eb",
+                    "Eb",
+                    "Ab",
+                    "C#m",
+                    "Eb",
+                    "Ab",
+                    "Eb",
+                    "Gbm",
+                    "Gbm",
+                    "Gbm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Eb",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "Gm",
-                    "F",
+                    "G",
                     "G",
                     "F",
-                    "C",
                     "Eb",
-                    "Fm",
                     "Eb",
-                    "Fm",
+                    "Eb",
+                    "Eb",
                     "Ab",
                     "Bb",
                     "Ab",
-                    "Bb",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "Eb",
-                    "Fm",
                     "Eb",
-                    "Fm",
                     "Ab",
-                    "Bb",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "Ab",
-                    "Bb",
+                    "Ab",
+                    "Ab",
+                    "Ab",
                     "Eb",
-                    "Fm",
-                    "Ab",
-                    "Bb",
                     "Eb",
-                    "Fm",
-                    "Ab",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C#m",
+                    "E",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Eb",
+                    "Bb",
                     "Bb",
                     "Eb",
                     "Fm",
@@ -56,307 +106,406 @@
                     "Ab",
                     "Bb",
                     "Am",
+                    "Eb",
+                    "Eb",
+                    "E",
+                    "Fm",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "G",
+                    "G",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Bb",
+                    "G",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Eb",
+                    "Fm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
                     "Bb",
                     "Eb",
                     "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Eb Ab",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
                     "Eb",
                     "Fm",
-                    "Ab",
-                    "Bb",
-                    "Ab",
-                    "Bb",
-                    "Eb",
                     "Fm",
                     "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
                     "Bb",
+                    "Bb",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
                     "Eb",
                     "Fm",
-                    "Ab",
-                    "Bb",
-                    "Ab",
+                    "Fm",
+                    "Fm",
                     "Gm",
-                    "Ab",
                     "Eb",
-                    "Ab",
-                    "Bb",
-                    "Ab",
-                    "Bb",
-                    "E",
-                    "F",
-                    "A",
-                    "B",
-                    "E",
-                    "F",
-                    "A",
-                    "B",
-                    "E",
-                    "F",
-                    "E",
-                    "F",
-                    "A",
-                    "B",
-                    "E",
-                    "F",
-                    "A",
-                    "B",
-                    "E",
-                    "F",
-                    "A",
-                    "B",
-                    "E",
-                    "F",
-                    "E",
-                    "F",
-                    "A",
-                    "B",
-                    "E",
                     "C#m",
-                    "C#m",
-                    "E",
-                    "C#m",
-                    "E",
-                    "C#m",
-                    "E",
-                    "Gbm",
-                    "E",
-                    "Gbm",
-                    "A",
-                    "B",
-                    "C#m",
-                    "C#m",
-                    "E",
-                    "Gbm",
-                    "C#m",
-                    "E",
-                    "Gbm",
-                    "E",
-                    "Gbm",
-                    "E",
-                    "Gbm",
-                    "A",
-                    "B",
                     "C#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Gbm",
+                    "Gbm",
+                    "Gbm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Gbm",
+                    "G",
+                    "G",
+                    "Gbm",
+                    "E",
+                    "Fm",
+                    "Fm G",
+                    "Eb",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gbm",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F",
+                    "E",
+                    "F",
+                    "Eb",
+                    "Eb",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Gbm",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Eb",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Gbm",
+                    "E",
+                    "Eb",
+                    "Eb"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "ame a los oj",
-            "os por favor/n quiero "
-        ],
-        [
-            "ver si te queda algo de amo",
-            "r/n de ca"
-        ],
-        [
-            "lor, de ternu",
-            "ra o de pasió",
-            "n/n de amis"
-        ],
-        [
-            "tad puede ser/n Mír"
-        ],
-        [
-            "ame estoy s",
-            "olo pero bien/n te extra"
-        ],
-        [
-            "ñé porque siempre te esp",
-            "eré/n sabes "
-        ],
-        [
-            "que estas be",
-            "lla amor/n porque "
-        ],
-        [
-            "no te prob",
-            "amos otra vez/n"
-        ],
-        [
-            "  Te propongo esta noch",
-            "e     ",
-            "al amor darle opo",
-            "rtunidad",
-            "/n olvidar lo pasa"
-        ],
-        [
-            "do     ",
-            " entre luces y mú",
-            "sica bailar",
-            "/n que hoy es noche de l"
-        ],
-        [
-            "una llena/n y h"
-        ],
-        [
-            "uele a amor   ",
-            "         ",
-            "  hay que dejar hablar ",
-            "al corazón.",
-            "/n Mír"
-        ],
-        [
-            "ame tengo g",
-            "anas de soñar/n suena bi"
-        ],
-        [
-            "en que volvamos a empeza",
-            "r/n y si "
-        ],
-        [
-            "no Quiero ima",
-            "ginar que tu y yo",
-            "/n nos a"
-        ],
-        [
-            "mamos de verdad./n Mír"
-        ],
-        [
-            "ame lo que ",
-            "pase pasaré/n sabes b"
-        ],
-        [
-            "ien que es mejor no programa",
-            "r/n que el am"
-        ],
-        [
-            "or vuelva a s",
-            "er amor/n o tal v"
-        ],
-        [
-            "ez tan ami",
-            "gos como siempre-e",
-            "/n Te propongo esta noc"
-        ],
-        [
-            "he    ",
-            " cuerpo a cuerpo besar",
-            "nos y volar",
-            "/n inventando dese"
-        ],
-        [
-            "os    ",
-            " y en lugar del olvido",
-            " al fin amar.",
-            "/n El amor es tan d"
-        ],
-        [
-            "esigual  ",
-            " nadie manda en el cor",
-            "azón",
-            "/n es ternura es des"
-        ],
-        [
-            "ilusion place",
-            "r, dolor tod",
-            "o nace del amor.",
-            "/n Te propongo esta noch"
-        ],
-        [
-            "e   ",
-            "al amor darle op",
-            "ortunidad",
-            "/n olvidar lo pasad"
-        ],
-        [
-            "o    ",
-            "entre luces y mú",
-            "sica bailar",
-            "/n que hoy es noche de l"
-        ],
-        [
-            "una llena y hue",
-            "le a amor",
             "",
-            "/n hay que dejar habl"
-        ],
-        [
-            "ar al coraz",
-            "n./n Te propongo esta noch"
-        ],
-        [
-            "e   ",
-            "cuerpo a cuerpo besar",
-            "nos y volar",
-            "/n inventando deseo"
-        ],
-        [
-            "s   ",
-            "y en lugar del olvid",
-            "o al fin amar.",
-            "/n que hoy es noche de l"
-        ],
-        [
-            "una llena y hue",
-            "le a amor",
             "",
-            "/n hay que dejar habl"
-        ],
-        [
-            "ar al coraz",
-            "n./nINTERMEDIO         "
-        ],
-        [
-            "     Te propongo, te propongo..../n"
-        ],
-        [
-            "  Te propongo, te propongo esta noch",
-            "e/n te propongo, te propongo esta n"
-        ],
-        [
-            "oche/n te propongo, te propongo esta noch"
-        ],
-        [
-            "e/n y en lugar del olv"
-        ],
-        [
-            "ido al fin amar",
-            "/n que hoy e noche de "
-        ],
-        [
-            "luna llena y hue",
-            "le a amor",
             "",
-            "/n hay que dejar habl"
-        ],
-        [
-            "ar al coraz",
-            "n./n Te propongo, te propongo esta noc"
-        ],
-        [
-            "he déjate llev",
-            "ar, vamos a vol",
-            "ar/n te propongo, te propongo esta noc"
-        ],
-        [
-            "he déjate llev",
-            "ar, vamos a vol",
-            "ar/n "
-        ],
-        [
-            " que hoy es noche de l",
-            "una llena y huel",
-            "e amor",
             "",
-            "/n hay que dejar habl"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ar al coraz",
-            "n."
+            "Est",
+            "a es una canción en español de rock argentino. ",
+            "",
+            "/n"
+        ],
+        [
+            "Mir",
+            "ame los ojo ",
+            "por favor quiero ",
+            "ver si te queda a",
+            "lgo de amor, de cal",
+            "or, de ter",
+            "nura, de pa",
+            "sión, de amist",
+            "ad puede ser. \n\nMir",
+            "ame, este es s",
+            "olo para mí, te ex",
+            "trañé porque siemp",
+            "re te esperé sabes ",
+            "que estas ve",
+            "ces amor aunque ",
+            "no lo pro",
+            "bamos otra vez. /n"
+        ],
+        [
+            "Te propongo esta n",
+            "oche, ",
+            "al amor darle o",
+            "portunida/n"
+        ],
+        [
+            "Olvida lo pa",
+            "sado, ",
+            "entre rocas ",
+            "música  baila",
+            "r. \n\nHoy es noche de l",
+            "una llena h",
+            "uele amor. /n"
+        ],
+        [
+            "Hay ",
+            "que dejar ha",
+            "blar al cora",
+            "zón. ",
+            "",
+            "/n"
+        ],
+        [
+            "Mi",
+            "rame, tengo ",
+            "ganas  de soñar, suena ",
+            "bien  que ",
+            "volvamos  empezar ",
+            "si no quier ",
+            "imaginar que tú ",
+            "yo nos ",
+            "amamos de verdad. \n\nM",
+            "irame, lo ",
+            "que pase pasará sabe",
+            "s bien, es ",
+            "mejor no programar que ",
+            "el amor vu",
+            "elva ser amor ",
+            "tal vez pa",
+            "ra amigos como siem",
+            "pre. \n\nTe propongo es",
+            "ta noche, c",
+            "uerpo cuerpo e",
+            "mpezar vociv",
+            "olar, inventando ",
+            "deseos.  ",
+            "en lugar de ",
+            "los olvidos de ",
+            "amar el amor es ",
+            "tan desigual /n"
+        ],
+        [
+            "Nadie mand",
+            "a en el corazó",
+            "n, desternura, ",
+            "desilusió ",
+            "hacer dolo",
+            "r. \n\nTodo nace de ",
+            "amor. \n\nTe propongo ",
+            "esta noche, ",
+            "al amor d",
+            "arle oportun",
+            "idad. \n\nOlvida ",
+            "lo pasado, ",
+            "entre roc",
+            "as música b",
+            "ailar. \n\nHoy es n",
+            "oche de luna ll",
+            "ena huele a",
+            "mor. \n\nMirame, tengo ",
+            "g",
+            "a",
+            "n",
+            "as de so",
+            "ñar, suena bien que ",
+            "vo",
+            "lv",
+            "am",
+            "os empezar si ",
+            "no quiero imaginar que tú yo nos ama",
+            "mos de ",
+            "ve",
+            "rd",
+            "ad. \n\nMirame, ",
+            "lo que pase pasará sabes bien, es mejor no programar que el ",
+            "am",
+            "or ",
+            "v",
+            "u",
+            "e",
+            "l",
+            "v",
+            "a",
+            "ser amor tal ",
+            "vez ",
+            "para a",
+            "migos como si",
+            "empre. /n"
+        ],
+        [
+            "Te p",
+            "rop",
+            "ong",
+            "e",
+            "s",
+            "t",
+            "a noc",
+            "he, ",
+            "el ",
+            "lugar de los olvid",
+            "os de amar. \n\nHoy ",
+            "es noche de luna l",
+            "lena huele amo",
+            "r. /n"
+        ],
+        [
+            "No hay que dejar ",
+            "hablar al cor",
+            "azón. /n"
+        ],
+        [
+            "D",
+            "eja de llevar, vamos vo",
+            "lar. \n\nTe ",
+            "propongo e",
+            "sta noche, ",
+            "el ",
+            "lugar de los olvidos de amar. \n\nHoy es n",
+            "oche de luna lle",
+            "na huele amor ",
+            "/n"
+        ],
+        [
+            "No hay que dejar h",
+            "ablar al coraz",
+            "ón. ",
+            "/n"
+        ],
+        [
+            "Te propongo, te ",
+            "propongo esta noche. \n\nTe ",
+            "propongo e",
+            "sta noche, el lu",
+            "gar de los olvidos de a",
+            "mar. \n\nHoy es noc",
+            "he de luna llen",
+            "a huele amor. /n"
+        ],
+        [
+            "No hay ",
+            "que dejar ha",
+            "blar al corazón /n"
+        ],
+        [
+            "Te propongo e",
+            "sta noche, el lug",
+            "ar ",
+            "de ",
+            "",
+            "",
+            "",
+            "los olvidos de amar. \n\nHoy es noche ",
+            "de luna llena ",
+            "huele amor. /n"
+        ],
+        [
+            "No hay ",
+            "que dejar habl",
+            "ar al corazón. ",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 117,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Iz-eQlk-vb8",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

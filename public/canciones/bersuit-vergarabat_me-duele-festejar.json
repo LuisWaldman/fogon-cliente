@@ -2,101 +2,304 @@
     "cancion": "me-duele-festejar",
     "banda": "bersuit-vergarabat",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
                     "B",
                     "Cm",
-                    "B",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
                     "A",
                     "Cm",
-                    "B"
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
+                    "Cm",
+                    "A",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "A",
+                    "Cm",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "A",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "Cm",
                     "Cm",
                     "B",
                     "A",
-                    "F#7",
+                    "A",
                     "B",
-                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
                     "B"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "y! ",
-            "Me duele festejar /nAunque la es"
+            "",
+            "",
+            "/n"
         ],
         [
-            "pada he",
-            "lada me venga a bus",
-            "car /nIré en mi "
+            "Ahí ",
+            "me duele festej",
+            "ar, me gusta igu",
+            "al. \n\nAhí ",
+            "",
+            "me ",
+            "",
+            "duele festej",
+            "ar, me gusta igu",
+            "al. \n\nAunque la espada h",
+            "elada me venga ",
+            "buscar, con los mandatos s",
+            "everos de la mora",
+            "l. \n\nMe hayan cortado las ",
+            "piernas para bail",
+            "ar, ir en mi silla de ",
+            "ruedas f",
+            "estej",
+            "ar. ",
+            "",
+            "/n"
         ],
         [
-            "silla de ruedas a fest",
-            "ejar /nA"
+            "Ahí me ",
+            "duele festejar ",
+            "me gusta igual. /n"
         ],
         [
-            "y! ",
-            "Me duele festejar /nPor el si"
+            "Por el silencio del m",
+            "iedo de mi ciudad",
+            ", ruidoso cuadro v",
+            "iolento desolado. /n"
         ],
         [
-            "lencio del m",
-            "iedo de mi ciu",
-            "dad /nVoy a pa"
+            "Por la memoria de ",
+            "antiguos  carnava",
+            "les, voy parir con te",
+            "nsión fest",
+            "ejand",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rir contención, feste",
-            "jando /nA"
+            "Ahí me ",
+            "duele festejar, ",
+            "me gusta igual. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "y! ",
-            "Me duele festejar /nAunque me d"
+            "Ahí me ",
+            "duele festejar, ",
+            "me gusta igual. /n"
         ],
         [
-            "uelan los h",
-            "uesos, a feste",
-            "jar /nY aunque a v"
+            "Aunque me duelen los hues",
+            "os festejar, ",
+            "me haga feo el espej",
+            "o, me gusta igual. /n"
         ],
         [
-            "eces me juegue la liber",
-            "tad /nAunque me "
+            "Aunque pierda las neuron",
+            "as festejar, ",
+            "aunque veces me juegue ",
+            "la libertad. \n\nA",
+            "unque me sienta culpable ",
+            "festejar, ",
+            "mis cuatro días fissures ",
+            "me gusta igual. /n"
         ],
         [
-            "sienta culp",
-            "able, a festej",
-            "ar /nY me as"
+            "Aunque pierda el equilibri ",
+            "festejar, ",
+            "me asuste el delir",
+            "io, me gusta ig",
+            "ual. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uste el delirio, me gusta ig",
-            "ual /n"
-        ],
-        [],
-        []
+            "Ahí me duel ",
+            "festejar, me ",
+            "gusta igual. \n\nAun",
+            "que me duelen los huesos ",
+            "festejar, me haga feo el espejo, ",
+            "pierda las neuronas festejar, me j",
+            "uegue la libertad. \n\nAunq",
+            "ue me sienta culpable ",
+            "festejar, mis cuatro días fissures me ",
+            "gusta igual. me ",
+            "asuste el delirio, festejar igual",
+            ". festejar sí, ",
+            "festejar, f",
+            "estejar, bien la vamos, ",
+            "festej",
+            "ar. ",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "MkX12ovfrkI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

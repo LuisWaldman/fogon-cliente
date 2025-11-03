@@ -2,69 +2,329 @@
     "cancion": "el-nino-duerme-sonriendo",
     "banda": "atahualpa-yupanqui",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "A",
+                    "C",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "G",
                     "C",
-                    "C"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "E",
+                    "G",
+                    "G",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
                     "A",
                     "E",
-                    "F",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
                     "A",
                     "E",
-                    "F"
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "a noche co",
-            "n la espumit",
-            "a del río        I/n"
-        ],
-        [
-            "II)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "El niño se está durm",
-            "iendo, sonri",
-            "endo    I/nL"
+            "La ",
+            "noche con ",
+            "la espumi",
+            "ta del río /n"
         ],
         [
-            "ará lará  lar",
-            "aira lara",
-            "ira...   I"
+            "Te ",
+            "está tejien",
+            "do un encaje, ",
+            "mi niño ",
+            "/n"
+        ],
+        [
+            "La noc",
+            "he con la es",
+            "pumita del ",
+            "río /n"
+        ],
+        [
+            "Te está t",
+            "ejiendo un e",
+            "ncaje, mi n",
+            "iñ",
+            "/n"
+        ],
+        [
+            "Quiero ",
+            "la estrella del c",
+            "ielo más b",
+            "ella \n\nP",
+            "ara hacerte ",
+            "un sonajero ",
+            "mi niño /n"
+        ],
+        [
+            "Qui",
+            "ero la estrel",
+            "la del cielo ",
+            "más bell /n"
+        ],
+        [
+            "Para ha",
+            "certe un sona",
+            "jero, mi ni",
+            "ño ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El n",
+            "iño se está ",
+            "durmiendo  so",
+            "nriendo ",
+            "",
+            "mi n",
+            "iño /n"
+        ],
+        [
+            "El ",
+            "niño se ",
+            "está durmiendo ",
+            "sonriendo  ",
+            "",
+            "mi n",
+            "iño ",
+            "/n"
+        ],
+        [
+            "Q",
+            "uiero la es",
+            "trella del cielo ",
+            "más bel",
+            "la ",
+            "mi n",
+            "iñ/n"
+        ],
+        [
+            "Que ",
+            "bello mun",
+            "do es tu mundo, ",
+            "mi niño ",
+            "",
+            "mi ni",
+            "ño /n"
+        ],
+        [
+            "Tra",
+            "e ra ra ra ra ",
+            "ra ra ra ra ",
+            "ra ra ra ",
+            "mi ",
+            "niñ",
+            "o /n"
+        ],
+        [
+            "Trae ",
+            "ra ra ra ra ",
+            "ra ra ra ra ",
+            "ra ra ",
+            "",
+            "",
+            "mi n",
+            "iñ",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "LXOGWRpLBjU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

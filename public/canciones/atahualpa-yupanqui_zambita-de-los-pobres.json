@@ -2,117 +2,203 @@
     "cancion": "zambita-de-los-pobres",
     "banda": "atahualpa-yupanqui",
     "escala": "Cm",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "G",
+                    "Cm",
+                    "Cm",
+                    "Cm7",
+                    "Gm",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Cm",
+                    "Cm",
                     "Fm",
+                    "Cm",
+                    "Fm",
+                    "G7",
+                    "Cm",
+                    "Fm",
+                    "G7",
+                    "Cm",
+                    "Cm",
+                    "Fm",
+                    "Cm7",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Cm",
+                    "Cm",
                     "Cm",
                     "Cm7",
                     "Fm",
-                    "G7",
-                    "Cm"
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Cm",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Fm",
+                    "Fm",
+                    "Cm7",
+                    "Fm",
+                    "Fm",
+                    "Cm",
+                    "Cm",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Cm7",
+                    "Cm",
+                    "Cm",
+                    "Cm7",
+                    "Cm7",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Cuando llega el domingo/nHasta la vi"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "lla bajando vo",
-            "y/nY se q"
+            "Cuan",
+            "do llega el domingo h",
+            "asta la villa bajan",
+            "do voy ",
+            "se queda en mi rancho c",
+            "omo diciendo que s",
+            "olo estoy ",
+            "se queda en mi rancho ",
+            "como  diciendo que s",
+            "olo estoy \n\nB",
+            "ajo de un algarrón ",
+            "una zambita sient ",
+            "cantar ",
+            "el ragido parece que ",
+            "me dijera ven ",
+            "b",
+            "a",
+            "i",
+            "lar /n"
         ],
         [
-            "ueda mi ranch",
-            "o/nComo dici"
+            "Zambita  de los pobres, ",
+            "flor de los valles, luz de ",
+            "amistad  \n\nAlaji",
+            "ta es tu canto en ",
+            "los domingos del \n\nT",
+            "ucumán ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "endo \"qué sólo e",
-            "stoy\"/n"
+            "Cariñito del cerro, ",
+            "mi criolla buena, ¿dónde a",
+            "ndará? \n\nHoy ",
+            "te canto la zamba de ",
+            "tus domingos, p",
+            "alomitae \n\nHoy ",
+            "te canto la zamba de ",
+            "tus domingos, pa",
+            "lomitae \n\nEn ",
+            "ponchada de niebla fu",
+            "iste camino de la c",
+            "iudad \n\nMi za",
+            "mbita te espera crioll",
+            "ita linda, ven ",
+            "baila  ",
+            "",
+            "/n"
         ],
         [
-            "Bajo de un algarrobo/nEsta zambi"
-        ],
-        [
-            "ta siento cant",
-            "ar/nY"
-        ],
-        [
-            " el rasguido ",
-            "parece/nQue me di"
-        ],
-        [
-            "jera \"vení, bai",
-            "lá\"/n"
-        ],
-        [
-            "Zambita de los pobres/nFlor de lo"
-        ],
-        [
-            "s valles, luz ",
-            "de amistad/n"
-        ],
-        [
-            "Alajito es tu can",
-            "to/nEn los do"
-        ],
-        [
-            "mingos del tucum",
-            "án/n"
-        ],
-        [
-            "Cariñito del cerro/nMi criolla"
-        ],
-        [
-            " buena, ¿dón",
-            "de andará?/n"
-        ],
-        [
-            "Hoy te canto la z",
-            "amba/nDe tus d"
-        ],
-        [
-            "omingos, palomit",
-            "ay/n"
-        ],
-        [
-            "Empochada de niebla/nFuiste cam"
-        ],
-        [
-            "ino de la ciud",
-            "ad/n"
-        ],
-        [
-            "Mi zambita te esp",
-            "era/nCriollit"
-        ],
-        [
-            "a linda, \"vení,",
-            " bailá\""
+            "Zamb",
+            "ita de los pobres, flor de ",
+            "los valles, luz de amista",
+            "d \n\nAlajita ",
+            "es tu canto en los do",
+            "mingos del \n\nTucu",
+            "mán ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "YM7zGgfk5eI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

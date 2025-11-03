@@ -2,92 +2,292 @@
     "cancion": "cuando-duerme-la-guitarra",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#m",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "E7",
+                    "Am",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
+                    "Am",
+                    "Am",
                     "E7",
-                    "Am"
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Dm",
-                    "C",
+                    "Am",
+                    "Am",
                     "E7",
+                    "E7",
+                    "Am",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "o le pregunto a la n",
-            "oche:/n¿Cuándo duerme la gu"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "itarra?/nY"
+            "Yo ",
+            "le pregunto la n",
+            "oche cuá",
+            "nto duerme la ",
+            "guitarra  /n"
         ],
         [
-            "o le pregunto a la n",
-            "oche:/n¿Cuándo duerme la gu"
+            "Yo le pregunt ",
+            "la noche cuá",
+            "nto duerme la gui",
+            "tarra \n\nYo ",
+            "que la siento reza ",
+            "su salvo en la ",
+            "madrugada /n"
         ],
         [
-            "itarra?/nY"
+            "Su vidalita en la ",
+            "tarde, ",
+            "su milonga en la ma",
+            "ñana \n\nSu t",
+            "ango quemando vida ",
+            "con amor, con p",
+            "ena rabia \n\nHay ",
+            "noches me ",
+            "dijeras  c",
+            "uánto duerme la ",
+            "guitarra  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿\nQu",
+            "é duende tendrás",
+            ", vihuela, para viv",
+            "ir desvelada? ¿/n"
         ],
         [
-            "o que la siento rez",
-            "ar/nsu salmo en la madru"
+            "Qué ",
+            "duende  tendrás, ",
+            "vihuela, p",
+            "ara vivir desvelada? /n"
         ],
         [
-            "gada,/ns"
+            "Para contarn",
+            "os tu pena so",
+            "lo con media palab",
+            "ra \n\nPara pint",
+            "ar una esquina el a",
+            "mor de una muchacha ",
+            "un adiós que no se d",
+            "ice un olvi",
+            "do que se agranda /n"
         ],
         [
-            "u vidalita en la ta",
-            "rde,/nsu milonga en la ma"
+            "Hay noches me d",
+            "ijeras cu",
+            "ánto duerme la g",
+            "uitarra ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ñana,/ns"
+            "Se vue",
+            "lve toda paisa",
+            "je cuando del campo ",
+            "nos habla ",
+            "en las calles de mi ",
+            "barrio bordo",
+            "neándose de sangra /n"
         ],
         [
-            "u tango quemando v",
-            "ida/ncon amor, con pena y "
+            "En su ",
+            "madero  embrujad ",
+            "caben todas ",
+            "las distancias ",
+            "nos lleva n",
+            "oche aden",
+            "tro nos alient",
+            "a nos mata /n"
         ],
         [
-            "rabia./nAy, noche, si me di"
-        ],
-        [
-            "jeras/ncuándo d"
-        ],
-        [
-            "uerme la gui",
-            "tarra",
-            "./n"
-        ],
-        []
+            "Hay noches me ",
+            "dijeras  c",
+            "uánto duerme la ",
+            "guitarra ",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Dgxx1FoMDHA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

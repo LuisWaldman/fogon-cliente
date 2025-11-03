@@ -2,54 +2,144 @@
     "cancion": "vendedor-de-yuyos",
     "banda": "atahualpa-yupanqui",
     "escala": "D7",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "A",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D7",
                     "G",
-                    "C"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
+                    "B7",
+                    "B7",
+                    "B7",
                     "C",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B7",
                     "Em",
-                    "B7",
                     "Em",
-                    "C"
+                    "Em",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "B7",
                     "Em",
-                    "D7"
+                    "Em",
+                    "C",
+                    "C",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "G",
-                    "C",
+                    "G",
                     "G",
                     "B7",
-                    "Em"
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "D7",
+                    "B7",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
@@ -58,90 +148,115 @@
             1,
             2,
             3,
-            1,
-            3,
-            1,
-            2,
-            1,
-            3,
-            1,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "oleo, carq",
-            "ueja, flo",
-            "r de romer",
-            "illo,/n y"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uyos mila",
-            "greros, yer",
-            "bas pa olvid",
-            "ar/nllenabas las s"
+            "Poleo ",
+            "carquejas, f",
+            "lor de romerillo",
+            "s, lluyos milag",
+            "renos, hierba ",
+            "pa' olvidar. ",
+            "/n"
         ],
         [
-            "iestas con tu voz de gr",
-            "illo/ncuando apa"
+            "Llenabas la ",
+            "siesta con tu voz de ",
+            "grillo,  cu",
+            "ando aparecí",
+            "as por el are",
+            "nal. /n"
         ],
         [
-            "recias por",
-            " el aren",
-            "al/nse te vio en las c"
+            "Se te vio en las ",
+            "carpas en las procesio",
+            "nes, místico paga",
+            "no rezar bai",
+            "lar. /n"
         ],
         [
-            "arpas y en las proc",
-            "esiones/nmi"
+            "Pregonando en m",
+            "edio de las libaciones ",
+            "lluyitos del cam",
+            "po pal bien pal ",
+            "mar. ",
+            "",
+            "/n"
         ],
         [
-            "stico y pro",
-            "fano rez",
-            "ar y bail",
-            "ar/npergonando en m"
+            "Vendedor de ",
+            "lluy",
+            "os, cu",
+            "antas resentida ",
+            "/n"
         ],
         [
-            "edio de las libac",
-            "iones/nyu"
+            "Buscaron tu alfor",
+            "ja sintiendo el ",
+            "prego.  /n"
         ],
         [
-            "yitos del ca",
-            "mpo, pal bie",
-            "n y pal mal",
-            "/nvendedor de y"
+            "Ese fue el desti",
+            "no de tu simple vida ",
+            "vivir en silencio ",
+            "vendiendo  ilu",
+            "sión. /n"
         ],
         [
-            "uyos, cuantos rese",
-            "ntidos/nbuscaban tu al"
+            "Te dormiste un ",
+            "día vendedor de lluy",
+            "os, con un sueño larg",
+            "o cansado de and",
+            "ar. /n"
         ],
         [
-            "forja sintiendo el pr",
-            "egón/nese fue el de"
+            "Nunca más se oyeron ",
+            "los pregones tuyos ",
+            "lluyitos del campo ",
+            "pal bien pal m",
+            "ar. ",
+            "",
+            "/n"
         ],
         [
-            "stino de tu triste v",
-            "ida/nvivir en si"
+            "Pol",
+            "eo, carquejas, ",
+            "flor de romerillos, ",
+            "lluyos  milagrenos, ",
+            "hierbas pa' ",
+            "olvidar. /n"
         ],
         [
-            "lencio vendiendo ilu",
-            "ción/nte dormiste un"
-        ],
-        [
-            " dia, vendedor de yu",
-            "yos/ncon un sueño "
-        ],
-        [
-            "largo cansado de a",
-            "ndar/nnunca mas se o"
-        ],
-        [
-            "yeron los pregones tu",
-            "yos/nyuy"
-        ],
-        [
-            "itos del ca",
-            "mpo, pal bi",
-            "en y pal mal",
+            "Llenaba ",
+            "la siesta con tu ",
+            "voz de gri",
+            "llo, cua",
+            "ndo apar",
+            "ecías ",
+            "por el ar",
+            "enal. ",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -149,10 +264,11 @@
         {
             "tipo": "Youtube",
             "id": "sH5DDVPl8fs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

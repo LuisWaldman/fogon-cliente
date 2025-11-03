@@ -2,73 +2,346 @@
     "cancion": "los-hermanos",
     "banda": "atahualpa-yupanqui",
     "escala": "Dm",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "Gm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Dm",
-                    "A7",
                     "Dm",
-                    "A7",
                     "Dm",
-                    "A7",
-                    "Dm"
+                    "Dm",
+                    "A7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A7",
                     "Dm",
-                    "Gm",
-                    "F",
+                    "Dm",
                     "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
                     "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Gm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Yo tengo tantos herm",
-            "anos que no los puedo conta",
-            "r./nEn el valle, la mon"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "taña, en la pampa y en el ",
-            "mar./nCada cual con sus tra"
+            "Yo ",
+            "tengo  tant",
+            "os herman",
+            "os que no los p",
+            "uedo conta /n"
         ],
         [
-            "bajos, con sus sueños, cada ",
-            "cual./nCon la esperanza ade"
+            "En ",
+            "el valle la ",
+            "montaña,  ",
+            "en la pampa ",
+            "en el mar /n"
         ],
         [
-            "lante, con los recuerdos detr",
-            "ás./nYo tengo tantos her"
+            "C",
+            "ada cual con ",
+            "sus trabajos, ",
+            "con sus su",
+            "eños, cada cu",
+            "al \n\nCon ",
+            "la esperanza de",
+            "lante, con ",
+            "los recuerdos det",
+            "rás \n\nYo tengo t",
+            "antos hermano ",
+            "que no los puedo co",
+            "ntar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "manos que no los pu",
-            "edo conta",
-            "r./n"
+            "Gente ",
+            "de mano calient",
+            "e, por eso ",
+            "de la amistad /n"
         ],
         [
-            "Yo tengo tantos her",
-            "manos que no los puedo conta",
-            "r,/ny una novia muy her"
+            "Con un ",
+            "lloro pa' llorarl",
+            "o, con un ",
+            "rezo  pa' rezar /n"
         ],
         [
-            "mosa que se ll",
-            "ama ¡Liberta",
-            "d!",
+            "Con un ",
+            "horizonte abierto ",
+            "que siempre está más ",
+            "allá ",
+            "esa fuerza pa' ",
+            "buscarlo ",
+            "con tesón vo",
+            "luntad \n\nC",
+            "uando parece más ",
+            "cerca,  es ",
+            "cuando se aleja más /n"
+        ],
+        [
+            "Yo tengo tan",
+            "tos hermanos que ",
+            "no los puedo contar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "así ",
+            "seguimos anda",
+            "ndo curtido ",
+            "de s",
+            "oledad /n"
+        ],
+        [
+            "Nos perdemos ",
+            "por el mundo, ",
+            "nos volvemos ",
+            "encontrar ",
+            "así ",
+            "nos reconocemos ",
+            "por el lejano mir",
+            "ar \n\nPor ",
+            "la copla que mo",
+            "rdemos, sem",
+            "illa de inmens",
+            "idad ",
+            "así seguimos a",
+            "ndando ",
+            "curtidos  de ",
+            "soledad  ",
+            "en nosotros nuestros m",
+            "uertos pa' que ",
+            "nadie quede atrás /n"
+        ],
+        [
+            "Yo tengo t",
+            "antos herm",
+            "anos que no los p",
+            "uedo contar ",
+            "una novia ",
+            "muy hermosa que se ",
+            "llama  libertad /n"
+        ],
+        [
+            "Yo ",
+            "tengo t",
+            "antos he",
+            "rmanos que ",
+            "no los puedo ",
+            "contar ",
+            "una novia muy ",
+            "hermosa ",
+            "que se llama l",
+            "ibertad ",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -76,10 +349,11 @@
         {
             "tipo": "Youtube",
             "id": "NvgTCTbIgTA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

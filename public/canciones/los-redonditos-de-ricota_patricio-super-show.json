@@ -8,44 +8,140 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A7",
+                    "A7",
+                    "F",
+                    "Am",
+                    "A",
+                    "F",
+                    "D",
+                    "F",
+                    "F",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Bm7",
-                    "G",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "A7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3
         ]
     },
     "letras": [
         [
-            "x3 (0.4",
-            "4) Bm7 ",
-            "         Bm7                x3 G/ns"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "upongo que alfinal lo",
-            "s deje en bolas a todos!'?!?..."
+            "Es ",
+            "una canción en español de rock argentino. \n\nEs una canción en ",
+            "e",
+            "s",
+            "p",
+            "a",
+            "ñol ",
+            "de ",
+            "rock a",
+            "r",
+            "g",
+            "e",
+            "n",
+            "t",
+            "i/n"
+        ],
+        [
+            "Es una c",
+            "a",
+            "n",
+            "c",
+            "i",
+            "ó",
+            "n",
+            "",
+            "en ",
+            "",
+            "",
+            "",
+            "esp",
+            "año",
+            "de rock argentino. ",
+            "",
+            "/n"
+        ],
+        [
+            "Es una canción en español de rock argentino. "
         ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "THlMWRiMfys",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

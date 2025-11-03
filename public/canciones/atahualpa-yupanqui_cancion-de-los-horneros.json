@@ -2,25 +2,57 @@
     "cancion": "cancion-de-los-horneros",
     "banda": "atahualpa-yupanqui",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
+                    "Em",
                     "B7",
-                    "Em"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#7",
+                    "Em",
                     "B7",
-                    "Em"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
@@ -28,125 +60,173 @@
                 "acordes": [
                     "B7",
                     "Em",
-                    "F#7",
                     "B7",
-                    "Em"
+                    "Em",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
                     "B7",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            1,
-            0,
-            0,
-            1,
-            2,
-            1,
-            0,
-            0,
-            1,
-            3
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "En la cumbre de mi ra",
-            "ncho anidaron dos horne",
-            "ros /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "En la cumbre de mi ra",
-            "ncho anidaron dos horne",
-            "ros, /nyo parezco un ext"
+            "En ",
+            "la cumbrera de mi ",
+            "rancho anidaron dos ",
+            "horneros. \n\nEn ",
+            "la cumbrera de ",
+            "mi rancho anidaron dos ho",
+            "rneros, yo ",
+            "parezco  un extraño el ",
+            "rancho parece de el",
+            "los, yo pare",
+            "zco un extraño el r",
+            "ancho parece de e",
+            "llos. ",
+            "",
+            "/n"
         ],
         [
-            "raño ",
-            "y el rancho parece d",
-            "e ellos; /nentro sólo,"
+            "Dentro solo salgo ",
+            "solo siempre, solo voy ",
+            "vengo. \n\nD",
+            "entro solo salgo, s",
+            "olo siempre, solo voy v",
+            "engo. \n\nLos hallo junto",
+            "s por el campo el cam",
+            "po parece de ellos. ",
+            "",
+            "/n"
         ],
         [
-            " salgo solo, siempre sólo voy y ",
-            "vengo /nlo´hallo juntos po' el "
+            "Ju",
+            "ntos trabajan cantan ",
+            "tuito lo hacen conte",
+            "ntos, yo no se si ",
+            "mi me miran con lastima ",
+            "con desprecio, ",
+            "ni si asustan cuando pas",
+            "o como si yo fuera un pe",
+            "rro, que no estorb ",
+            "ni hago daño me deja ",
+            "que ande suelt",
+            "o. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "campo ",
-            "y el campo parece de e",
-            "llos /nlo´hallo juntos po' el "
+            "A",
+            "nsina vivo en mi ranch",
+            "o, desde que solo me v",
+            "eo. \n\nAns",
+            "ina vivo en mi ranch",
+            "o, desde que solo me veo. /n"
         ],
         [
-            "campo ",
-            "y el campo parece de e",
-            "llos. /n"
+            "En antes otr ",
+            "era el nido el mund",
+            "o parecía nuestro /n"
         ],
         [
-            "Juntos trabajan y c",
-            "antan y todo lo hacen conte",
-            "ntos /n"
+            "En antes otr ",
+            "era el nido el mundo pa",
+            "recía nuestro. /n"
         ],
         [
-            "Juntos trabajan y c",
-            "antan y todo lo hacen conte",
-            "ntos, /nyo no sé si a mí me"
-        ],
-        [
-            " miran",
-            " con lastima o desp",
-            "recio; /nni se asustan c"
-        ],
-        [
-            "uando paso como si yo fuera un pe",
-            "rro /nque no asusto, ni hago d"
-        ],
-        [
-            "año ",
-            "y me dejan que ande su",
-            "elto /nque no asusto, ni hago d"
-        ],
-        [
-            "año ",
-            "y me dejan que ande su",
-            "elto. /n"
-        ],
-        [
-            "Ansina vivo en mi r",
-            "ancho dende que solo me veo",
-            " /n"
-        ],
-        [
-            "Ansina vivo en mi r",
-            "ancho dende que solo me veo",
-            ", /nenante otro era el c"
-        ],
-        [
-            "anto y",
-            " el mundo parecía nu",
-            "estro /nruegale a Dios horner"
-        ],
-        [
-            "ito que no te pa",
-            "se lo mes",
-            "mo."
+            "Rógale \n\nDios, ",
+            "hornerito, ",
+            "que no te pa",
+            "se lo mismo. ",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "fgIQPrw0scw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

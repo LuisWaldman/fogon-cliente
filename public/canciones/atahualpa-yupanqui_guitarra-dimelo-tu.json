@@ -2,148 +2,290 @@
     "cancion": "guitarra-dimelo-tu",
     "banda": "atahualpa-yupanqui",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "D#",
                     "F#m",
                     "C#7",
                     "F#m",
-                    "E",
-                    "A"
+                    "F#m",
+                    "F#m",
+                    "D#m",
+                    "G#",
+                    "D#m",
+                    "D#m",
+                    "A#",
+                    "A#",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "C#7",
+                    "C#7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C#7",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#7",
                     "F#7",
                     "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "F#m",
-                    "D",
+                    "F#m",
+                    "F#m",
                     "C#7",
-                    "F#m"
+                    "C#7",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#7",
+                    "F#7",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#7",
+                    "C#7",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "C#7",
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "F#7",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
-            1
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "yo le pregunto al mu",
-            "ndo /nel mundo me ha de enga"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ñar /ncada cual cree que no "
+            "Si yo ",
+            "le pregunto al mu",
+            "ndo, el ",
+            "mundo me hace engañar. /n"
         ],
         [
-            "cambia /ny que cambian los dem"
+            "C",
+            "ada cual cr",
+            "ee que no camb",
+            "ia que cambia ",
+            "los demás. ",
+            "paso las ",
+            "madrugadas ",
+            "buscando  un ra",
+            "yo de luz. ",
+            "¿\nPor qué la ",
+            "noche es tan larga",
+            "? ",
+            "¡\nGuitarras! ¡\nDím",
+            "elo tú! ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ás, /ny paso las madrug"
+            "Los hombre ",
+            "son dioses mu",
+            "ertos de ",
+            "un tiempo ya der",
+            "rumbado. \n\nNi ",
+            "sus sueños se ",
+            "salvaron, ",
+            "solo su sombra qu",
+            "edó. ",
+            "paso las madru",
+            "gadas buscan",
+            "do un rayo de lu",
+            "z. ¿\nPor ",
+            "qué la noche es ",
+            "tan larga",
+            "? ¡\nG",
+            "uitarras! ¡\nDímelo tú! ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "adas /nbuscando un rayo de "
+            "Se ",
+            "vuelve  cruda m",
+            "entira lo ",
+            "que fue tierna ve",
+            "rdad. ",
+            "hasta la tierra f",
+            "ecunda se convi",
+            "erte en arenal. ",
+            "yo le ",
+            "pregunto al mundo ",
+            "el mundo me hace e",
+            "ngañar. /n"
         ],
         [
-            "luz /nporque la noche es tan l"
-        ],
-        [
-            "arga  /ngui"
-        ],
-        [
-            "tarra d",
-            "melo t",
-            "ú. /n"
-        ],
-        [
-            "Se vuelve cruda ment",
-            "ira /nlo que fue tierna ver"
-        ],
-        [
-            "dad /ny hasta la tierra fe"
-        ],
-        [
-            "cunda /nse convierte en aren"
-        ],
-        [
-            "al, /ny paso las madrug"
-        ],
-        [
-            "adas /nbuscando un rayo de "
-        ],
-        [
-            "luz /nporque la noche es tan l"
-        ],
-        [
-            "arga  /ngui"
-        ],
-        [
-            "tarra d",
-            "melo t",
-            "ú. /n"
-        ],
-        [
-            "Los hombres son dioses mue",
-            "rtos /nde un templo ya derrum"
-        ],
-        [
-            "bao /nni sus sueños se sal"
-        ],
-        [
-            "varon /nsólo una sombra ha que"
-        ],
-        [
-            "dao, /ny paso las madrug"
-        ],
-        [
-            "adas /nbuscando un rayo de "
-        ],
-        [
-            "luz /nporque la noche es tan l"
-        ],
-        [
-            "arga  /ngui"
-        ],
-        [
-            "tarra d",
-            "melo t",
-            "ú, /ny paso las madrug"
-        ],
-        [
-            "adas /nbuscando un rayo de "
-        ],
-        [
-            "luz /nporque la noche es tan l"
-        ],
-        [
-            "arga  /ngui"
-        ],
-        [
-            "tarra d",
-            "melo t",
-            "ú."
+            "Cada cual cree que no ",
+            "cambia  ",
+            "que cambian los d",
+            "emás. ",
+            "paso las mad",
+            "rugadas buscan",
+            "do un rayo de luz ",
+            "¿\nPor qué la ",
+            "noche  es tan lar",
+            "ga? ",
+            "¡\nGuitarras! ¡\nDímelo tú! ",
+            "¿\nPor ",
+            "qué la noche es ",
+            "tan larga? ",
+            "¡\nGu",
+            "itarras! ",
+            "¡\nDímel ",
+            "tú! ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ajch0QJyUPk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

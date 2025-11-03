@@ -8,212 +8,432 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "C#m7",
+                    "F#",
+                    "G#m",
+                    "F#7",
+                    "Eb7",
+                    "G#m",
+                    "F#",
+                    "C#m",
+                    "F#7",
+                    "Eb7",
+                    "G#",
+                    "G#",
+                    "E",
+                    "A#"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "C#m7",
+                    "C#m7",
+                    "C#m7",
+                    "C#m7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#m7",
+                    "C#m7",
+                    "C#m",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
                 "acordes": [
                     "G#m",
                     "C#m",
                     "F#",
-                    "B",
-                    "C#m7",
-                    "Bb7",
-                    "Eb7",
-                    "G#m",
-                    "C#m",
-                    "F#",
-                    "B",
-                    "Eb",
-                    "G#m",
-                    "F#",
-                    "Edim7",
-                    "G#m",
-                    "C#m",
                     "F#",
                     "B",
                     "Adim7",
-                    "G#7",
+                    "Adim7",
+                    "Adim7",
+                    "Adim7",
+                    "C#m",
+                    "C#m",
                     "C#m",
                     "Eb7",
                     "G#m",
-                    "F#7",
-                    "B",
-                    "Eb7",
                     "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#7",
                     "F#7",
                     "B",
+                    "B",
+                    "G#m",
+                    "G#m",
+                    "B",
+                    "Eb7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Eb7",
+                    "Eb7",
+                    "E",
                     "E",
                     "Bb7",
-                    "Eb7sus4",
-                    "Eb7",
-                    "G#m",
-                    "D#dim7",
-                    "C#m7",
-                    "Eb7",
-                    "E",
-                    "Fdim7",
-                    "Eb7",
+                    "Bb7",
+                    "Bb7",
                     "G#m",
                     "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#m",
+                    "C#m",
                     "C#m",
                     "F#",
-                    "B",
-                    "Adim7",
-                    "G#7",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "C#m",
-                    "Eb7",
+                    "C#m",
+                    "F#",
+                    "F#",
+                    "Adim7",
+                    "Adim7",
+                    "Adim7",
+                    "Adim7",
+                    "Adim7",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
                     "G#m",
+                    "G#m",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#7",
+                    "F#7",
                     "F#7",
                     "B",
-                    "Eb7",
-                    "G#m",
-                    "F#7",
                     "B",
+                    "G#m",
+                    "G#m",
+                    "B",
+                    "Eb7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "Eb7",
+                    "Eb7",
+                    "E",
                     "E",
                     "Bb7",
-                    "Eb7sus4",
+                    "B",
                     "Eb7",
-                    "G#m",
-                    "D#dim7",
-                    "C#m7",
                     "Eb7",
-                    "G#m",
-                    "G#m",
-                    "D#dim7",
-                    "C#m7",
+                    "Eb7",
                     "Eb7",
                     "E",
-                    "C#m7",
-                    "Eb7",
+                    "E",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
                     "G#m"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
-        [],
         [
-            "maban con la fu",
-            "erza del amor",
-            " primero",
-            "/nSe am"
-        ],
-        [
-            "aban, se adora",
-            "ban",
             "",
-            "/nSe am"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "aban, como n",
-            "iños como dio",
-            "ses nuev",
-            "os/nComo "
+            "Se a",
+            "maba con ",
+            "la fuerza de la voz \n\nSe ",
+            "amó pr",
+            "imero ",
+            "con ",
+            "locura  t",
+            "imidez ",
+            "un tiem",
+            "po \n\nSe ",
+            "amab",
+            "a, se a",
+            "dor",
+            "aba",
+            "/n"
         ],
         [
-            "ángeles a",
-            "zules se entreg",
-            "aban, se ama",
-            "ban, se adora",
-            "ban/nMe inter"
+            "Se a",
+            "mab",
+            "como niñ",
+            "os, como di",
+            "oses nuevo",
+            "s \n\nCo",
+            "mo ánge",
+            "les azules ",
+            "se ent",
+            "regaba /n"
         ],
         [
-            "puse en sus caminos suaveme",
-            "nte como niebla/nComo "
+            "Se am",
+            "aba, ",
+            "se ad",
+            "ora",
+            "ba /n"
         ],
         [
-            "lobo ante su presa sutilm",
-            "ente la aceche/nDespe"
+            "Me ",
+            "interpuse en sus ",
+            "caminos,  ",
+            "suavemente  com ",
+            "niebla \n\nCom",
+            "o lobo ante su ",
+            "presa, su",
+            "tilmente las e",
+            "ché \n\nDespe",
+            "rté pasiones n",
+            "egras en el ",
+            "corazón de ",
+            "ella sem",
+            "bré la mala hi",
+            "erba en el ",
+            "corazón de ",
+            "él /n"
         ],
         [
-            "rté pasiones negras en el ",
-            "corazón de ella/nY sem"
+            "Devasté su cu",
+            "erpo, ",
+            "me bebí su b",
+            "oca ",
+            "aho",
+            "ra que ",
+            "prendí ya el f",
+            "uego /n"
         ],
         [
-            "bré la mala hierba en el c",
-            "orazón de él/nDejaste su c"
+            "Me pi",
+            "erdo co",
+            "mo las o",
+            "las ",
+            "se am",
+            "aba, ",
+            "se ama",
+            "ba, ",
+            "se ado",
+            "rab",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uerpo, me bebí su ",
-            "bo------c",
-            "a/nY a"
+            "Se ",
+            "amaba ",
+            "como  niño",
+            "s, como dio",
+            "ses nu",
+            "evos \n\nC",
+            "omo ángel",
+            "es azules, ",
+            "se entr",
+            "egaba /n"
         ],
         [
-            "hora  ",
-            "      que prend",
-            "í ya el fuego, me pie",
-            "rdo como las ola",
-            "s/nY se am"
+            "Se ama",
+            "ba, ",
+            "se ado",
+            "raba ",
+            "/n"
         ],
         [
-            "aban, y ama",
-            "ban, se adorab",
-            "an/nSe am"
+            "Me i",
+            "nterpuse en sus c",
+            "aminos, s",
+            "uavemente como n",
+            "iebla \n\nComo l",
+            "obo ante su ",
+            "presa, sut",
+            "ilmente las e",
+            "ché \n\nDesper",
+            "té pasiones ne",
+            "gras en el ",
+            "corazón de e",
+            "lla semb",
+            "ré la mala hie",
+            "rba en el co",
+            "razón de él /n"
         ],
         [
-            "aban, como n",
-            "iños como dio",
-            "ses nuev",
-            "os/nComo "
+            "De",
+            "vasté su cu",
+            "erpo, ",
+            "me bebí su bo",
+            "ca ",
+            "aho",
+            "ra que ",
+            "prendí ya el f",
+            "uego /n"
         ],
         [
-            "ángeles a",
-            "zules se entreg",
-            "aban, se ama",
-            "ban, se adora",
-            "ban/nMe inter"
-        ],
-        [
-            "puse en sus caminos suaveme",
-            "nte como niebla/nComo "
-        ],
-        [
-            "lobo ante su presa sutilm",
-            "ente la aceche/nDespe"
-        ],
-        [
-            "rté pasiones negras en el ",
-            "corazón de ella/nY sem"
-        ],
-        [
-            "bré la mala hierba en el c",
-            "orazón de él/nDejaste su c"
-        ],
-        [
-            "uerpo, me bebí su ",
-            "bo------c",
-            "a/nY a"
-        ],
-        [
-            "hora  ",
-            "      que prend",
-            "í ya el fuego, me pie",
-            "rdo como las ola",
-            "s/nY a"
-        ],
-        [
-            "hora  ",
-            "      que prend",
-            "í ya el fuego, me pie",
-            "rdo como las ola",
-            "s/nY se am"
-        ],
-        [
-            "aban, y am",
-            "aban, se adora",
-            "ban"
+            "Me pie",
+            "rdo como ",
+            "las o",
+            "las ",
+            "ahora ",
+            "que prend ",
+            "ya el fue",
+            "go \n\nMe ",
+            "pier",
+            "do como ",
+            "las o",
+            "las ",
+            "se am",
+            "aba, ",
+            "se ",
+            "ama",
+            "ba, ",
+            "se a",
+            "dor",
+            "aba ",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "5fAhLC7d9-Q",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -8,243 +8,509 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "D",
                     "Bm",
                     "E",
                     "Bm",
+                    "Bm",
+                    "E",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
                     "Am",
                     "D7",
-                    "G"
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "D7",
+                    "D7",
+                    "D7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Gm",
-                    "G7",
-                    "C",
-                    "D7",
-                    "G",
-                    "Em"
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "F#7",
-                    "G"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Gm",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Am",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "G7",
                     "C",
                     "C",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "Em",
+                    "E7",
+                    "E7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "Bm",
-                    "E7"
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G7",
+                    "G7",
+                    "C",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D7",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "C",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "C",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D7",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "C",
+                    "C",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Am",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            1,
             3,
-            0,
-            0,
-            1,
-            2,
-            1,
             4,
-            1,
-            3,
-            0,
-            0,
-            1,
-            2,
-            1,
-            2,
-            1,
-            2,
-            1,
-            2,
-            1
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Mi ciudad es chin",
-            "ampa en un lago es",
-            "condido",
-            "/n"
-        ],
-        [
-            "Es zenzontle que b",
-            "usca en donde hac",
-            "er nido",
-            "/n"
-        ],
-        [
-            "Rehilete que eng",
-            "aña la vista al gira",
-            "r",
             "",
-            "/nBaila al "
-        ],
-        [
-            "son del te",
-            "quila y de su valenti",
-            "a/nEs ji"
-        ],
-        [
-            "nete que arriesga la v",
-            "ida/nEn un l"
-        ],
-        [
-            "ienzo de fiesta y color",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "Mi ciudad es la cu",
-            "na de un niño do",
-            "rmido",
+            "Mi c",
+            "iudad es \n\nC",
+            "hinampa, en ",
+            "un lago es",
+            "cond",
+            "ido, /n"
+        ],
+        [
+            "Ese ",
+            "ensomple que ",
+            "busca  en ",
+            "donde ha ",
+            "ser",
+            "eni",
+            "do, \n\nR",
+            "eilete que e",
+            "ngaña la ",
+            "vista alq",
+            "uila",
+            "da. \n\nBai",
+            "le al son ",
+            "del tequ",
+            "ila de su ",
+            "valent",
+            "ía, \n\nEs ch",
+            "inate que arri",
+            "esga la vid",
+            "a \n\nEn un l",
+            "ienzo de fies",
+            "ta co",
+            "lor. ",
             "/n"
         ],
         [
-            "Es un bosque de esp",
-            "ejos que cuida un",
-            " castillo",
+            "Mi c",
+            "iudad es la ",
+            "cura  de ",
+            "un niño do",
+            "rmid",
             "/n"
         ],
         [
-            "Monumentos de glo",
-            "ria que velan su anda",
-            "r",
-            "",
-            "/nEs un s"
+            "Es un ",
+            "bosque de es",
+            "pejos que c",
+            "uida un cas",
+            "till",
+            "o, /n"
         ],
         [
-            "ol con pen",
-            "acho y sarape vetea",
-            "do/nQue en las n"
+            "Monu",
+            "mentos de glo",
+            "ria que me ",
+            "lanzo  an",
+            "dar. \n\nEl ",
+            "sol es un ",
+            "sol ",
+            "con penacho ",
+            "sárabe de ",
+            "peador, /n"
         ],
         [
-            "oches se viste de cha",
-            "rro/nY se p"
-        ],
-        [
-            "one a cantarle al amo",
-            "r",
-            "",
-            "/n\"Por las "
-        ],
-        [
-            "tardes con la ll",
-            "uvia/nSe baña su piel"
-        ],
-        [
-            " morena/nY al de"
-        ],
-        [
-            "satarse las tre",
-            "nzas/n"
-        ],
-        [
-            "Sus ojos tristes se cie",
-            "rran\"",
+            "Que en las noc",
+            "hes se viste ",
+            "de charrón ",
+            "se pone ",
+            "cantarle al ",
+            "amor",
+            ". ",
             "",
             "/n"
         ],
         [
-            "Mi ciudad es la cu",
-            "na de un niño do",
-            "rmido",
+            "Por las ta",
+            "rdes ",
+            "con la ll",
+            "uvia se baña ",
+            "su piel mo",
+            "rena, ",
+            "",
+            "las a",
+            "tares de las ",
+            "tre",
+            "nzas ",
+            "sus ojo",
+            "s tristes ",
+            "se cierr",
+            "an. ",
             "/n"
         ],
         [
-            "Es un bosque de esp",
-            "ejos que cuida un",
-            " castillo",
+            "Mi ci",
+            "udad es la c",
+            "ura de un ",
+            "niño do",
+            "rmi",
+            "do, /n"
+        ],
+        [
+            "Es un ",
+            "bosque de es",
+            "pejos que cuida ",
+            "un castill",
+            "o, ",
             "/n"
         ],
         [
-            "Monumentos de glo",
-            "ria que velan su anda",
-            "r",
+            "Mon",
+            "umentos de gl",
+            "oria que me ",
+            "lanzo  ",
+            "and",
+            "ar. \n\nBaile al ",
+            "son ",
+            "del tequila ",
+            "de su valent",
+            "ía, /n"
+        ],
+        [
+            "Es chinat ",
+            "que arriesga la ",
+            "vida /n"
+        ],
+        [
+            "En un lien",
+            "zo de fiesta ",
+            "color.  ",
+            "/n"
+        ],
+        [
+            "Es un ",
+            "sol ",
+            "con penacho ",
+            "sárabe de ",
+            "peador, /n"
+        ],
+        [
+            "Que en las noch",
+            "es se viste de ",
+            "charrón  ",
+            "se pone ",
+            "cantarle al ",
+            "amo",
+            "r. /n"
+        ],
+        [
+            "Baile al ",
+            "son ",
+            "del tequila ",
+            "de su valentía, ",
+            "/n"
+        ],
+        [
+            "Es chinate ",
+            "que arriesga la ",
+            "vida /n"
+        ],
+        [
+            "En un lienz",
+            "o de fiesta ",
+            "color.  ",
+            "/n"
+        ],
+        [
+            "Es ",
+            "un sol ",
+            "con penach",
+            "o sárabe ",
+            "de peador, /n"
+        ],
+        [
+            "Que en las noc",
+            "hes se viste de ",
+            "charrón ",
+            "se pone ",
+            "cantarle al ",
+            "amor",
+            ". ",
             "",
-            "/nBaila al "
+            "",
+            "/n"
         ],
         [
-            "son del te",
-            "quila y de su valenti",
-            "a/nEs ji"
-        ],
-        [
-            "nete que arriesga la v",
-            "ida/nEn un l"
-        ],
-        [
-            "ienzo de fiesta y color",
+            "Al a",
+            "mor, al amor. ",
             "",
             "",
-            "/nEs un s"
-        ],
-        [
-            "ol con pen",
-            "acho y sarape vete",
-            "ado/nQue en las n"
-        ],
-        [
-            "oches se viste de cha",
-            "rro/nY se p"
-        ],
-        [
-            "one a cantarle al amor",
             "",
             "",
-            "/nBaila al "
-        ],
-        [
-            "son del te",
-            "quila y de su valenti",
-            "a/nEs ji"
-        ],
-        [
-            "nete que arriesga la v",
-            "ida/nEn un l"
-        ],
-        [
-            "ienzo de fiesta y color",
             "",
-            "/nEs un sol con penacho y sarape veteado"
-        ],
-        [],
-        [],
-        [],
-        []
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 184,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "SBi9htt8dG8",
-            "delay": 0
+            "delay": 6000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

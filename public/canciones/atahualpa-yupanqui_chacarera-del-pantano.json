@@ -2,73 +2,202 @@
     "cancion": "chacarera-del-pantano",
     "banda": "atahualpa-yupanqui",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "G",
+                    "Am7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
+                    "Em",
                     "Am7",
+                    "Am7",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B7",
+                    "G",
+                    "Em",
                     "Em",
                     "Am7",
-                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
                     "Am7",
                     "G",
+                    "B7 Am7",
+                    "G",
+                    "G",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "Am7",
+                    "Am7",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Am7",
+                    "Am7",
+                    "Em",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "B7 Am7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
             "Por el c",
-            "erro de las cañas/niba cantando un pais"
+            "erro de las cañas iba cant",
+            "ando un paisano, ",
+            "de pasito cuesta arriba en di",
+            "rección del pantano ",
+            "",
+            "/n"
         ],
         [
-            "ano,(*)/ny en dirección d"
+            "Cu",
+            "ando dio con el carril",
+            ", diviso una lucecit",
+            "a, esta de fiesta el boliche ",
+            "que llaman la serrani",
+            "ta. ",
+            "/n"
         ],
         [
-            "el pan",
-            "tano./n         Chaca"
+            "L",
+            "indo ver fletes atad",
+            "os con la lonja palenqu",
+            "era sentir una guit",
+            "arra tocando la chacare",
+            "ra. \n\nChacarera del pa",
+            "ntano que me despierta un q",
+            "uerer, los paisanos ap",
+            "ateando mi caballo sin ",
+            "comer. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rera del pantano,/n         que me "
+            "Un crio",
+            "llo miraba al campo pidiendo al ",
+            "cielo que llueva ",
+            "se quedaba mosqueteando como bizc",
+            "acha en la cueva. ",
+            "",
+            "/n"
         ],
         [
-            "dispierta un querer,/n         los pai"
+            "Sir",
+            "va vino doña rocha, sirva o",
+            "tra vuelta patrona, ",
+            "ya se siente el olorcito de ",
+            "la saude cabrillonas ",
+            "",
+            "/n"
         ],
         [
-            "sanos zapat",
-            "eando/n         y mi ca"
+            "Si",
+            "rva vino doña rocha no me ",
+            "lo quiera cobrar ",
+            "con gatos chacarera ",
+            "yo le he de saber pagar. /n"
         ],
         [
-            "ballo sin com",
-            "er."
+            "Chacarera del panta",
+            "no que me despierta un querer ",
+            "los paisanos apate",
+            "ando mi caballo sin c",
+            "omer. ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "KoAcH8KMyHY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }
