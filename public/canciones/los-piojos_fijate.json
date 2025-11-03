@@ -2,224 +2,249 @@
     "cancion": "fijate",
     "banda": "los-piojos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "A/G",
+                    "C/G",
+                    "G",
+                    "G",
+                    "G#",
+                    "C/G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
             {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "A/G",
                     "C/G",
-                    "G"
+                    "G",
+                    "G",
+                    "G#",
+                    "C/G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "Eb",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
                     "G",
-                    "C",
+                    "A/G",
+                    "G",
+                    "G",
                     "G",
                     "F",
-                    "Eb",
+                    "C/G",
+                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "G",
                     "C5",
-                    "Eb5"
+                    "C5",
+                    "G#",
+                    "F",
+                    "F",
+                    "F",
+                    "G#",
+                    "F",
+                    "C",
+                    "C",
+                    "G#",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G#",
-                    "A#",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "F",
-                    "C"
+                    "F",
+                    "G",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "A/G",
+                    "C/G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
             1,
             2,
-            2,
-            2,
-            1,
-            0
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Todo lo me queda/n"
+            "Todo lo que me",
+            "qued  tiene que ver con v",
+            "os. /n Todo lo que p",
+            "alpit  llega mi cora",
+            "zón /n En la noche se",
+            "ren  siempre hay un nub",
+            "arrón /n Uno busca pro",
+            "blema  para sumánd",
+            "olos ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tiene que ver con vos/n"
+            "Todo lo que me q",
+            "uema  tiene que ver con v",
+            "os. /n Todo lo que pa",
+            "lpit  llega mi coraz",
+            "ón /n En la noche se",
+            "ren  siempre hay un nub",
+            "arrón /n Uno busca pro",
+            "blema  para sumánd",
+            "olos /n En el ca",
+            "min  tendremos que saltar p",
+            "iedras. /n En el ca",
+            "min  cruzaremos almas nu",
+            "evas /n En el ca",
+            "min  te daré lo que m",
+            "queda para p",
+            "ode  seguir as",
+            "í ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "todo lo que palpita/n"
+            "Cómo matar mi p",
+            "ena  cómo contar tu am",
+            "or /n Si la tristeza ll",
+            "eg  duerme en mi coraz",
+            "ón /n Si el camino ter",
+            "min  en un punto hay que vol",
+            "ver /n Tras al otro se",
+            "nder  nuevo para correr.",
+            "en el cam",
+            "in  tendremos que saltar p",
+            "iedras /n En el ca",
+            "min  cruzaremos almas n",
+            "uevas  en el cam",
+            "in  te daré lo que me q",
+            "ueda  para p",
+            "ode  seguir as",
+            "í  fí",
+            "jate  siempre os fi",
+            "jate /n El cielo ca",
+            "mbia  siempre os fi",
+            "jate  fí",
+            "jate  siempre os fi",
+            "jate /n El agua l",
+            "leno  va minar que m",
+            "ate.  fí",
+            "jate  siempre os fi",
+            "jate /n El cielo ca",
+            "mbia  siempre os fij",
+            "ate ",
+            "/n"
         ],
         [
-            "llega a mi corazón./n"
+            "En el cami",
+            "n  tendremos que saltar p",
+            "iedras /n En el cam",
+            "in  cruzaremos almas",
+            "nuevas  en el cam",
+            "in  te daré lo que me q",
+            "ueda  para p",
+            "ode  seguir a",
+            "sí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "En la noche serena/n"
-        ],
-        [
-            "siempre hay un nubarrón/n"
-        ],
-        [
-            "uno busca problemas/n"
-        ],
-        [
-            "para ir sumándolos./n"
-        ],
-        [
-            "Todo lo me queda/n"
-        ],
-        [
-            "tiene que ver con vos/n"
-        ],
-        [
-            "todo lo que palpita/n"
-        ],
-        [
-            "llega a mi corazón./n"
-        ],
-        [
-            "En la noche serena/n"
-        ],
-        [
-            "siempre hay un nubarrón/n"
-        ],
-        [
-            "uno busca problemas/n"
-        ],
-        [
-            "para ir sumándolos./n"
-        ],
-        [
-            "En el camino tendremo",
-            "s que saltar piedras/n"
-        ],
-        [
-            "En el camino cruzare",
-            "mos almas nuevas/n"
-        ],
-        [
-            "Y en el camino te dar",
-            "é lo que me queda/n"
-        ],
-        [
-            "para poder ",
-            "seguir así./n"
-        ],
-        [
-            "Cómo matar mi pena/n"
-        ],
-        [
-            "cómo encontrar tu amor/n"
-        ],
-        [
-            "B  A  tristeza llega/n"
-        ],
-        [
-            "y duerme en mi corazón./n"
-        ],
-        [
-            "Si el camino termina/n"
-        ],
-        [
-            "en un punto y hay que volver/n"
-        ],
-        [
-            "trazaré otro sendero/n"
-        ],
-        [
-            "nuevo para correr./n"
-        ],
-        [
-            "En el camino tendremo",
-            "s que saltar piedras/n"
-        ],
-        [
-            "En el camino cruzare",
-            "mos almas nuevas/n"
-        ],
-        [
-            "Y en el camino te dar",
-            "é lo que me queda/n"
-        ],
-        [
-            "para poder ",
-            "seguir así./n"
-        ],
-        [
-            "Y fijate sie",
-            "mpre vos fijate/n"
-        ],
-        [
-            "el cielo cambia si",
-            "empre vos fijate./n"
-        ],
-        [
-            "Y fijate sie",
-            "mpre vos fijate/n"
-        ],
-        [
-            "el agua hirviendo ",
-            "va a arruinarte el mate/n"
-        ],
-        [
-            "Y fijate sie",
-            "mpre vos fijate/n"
-        ],
-        [
-            "el cielo cambia siem",
-            "pre vos fijate/n"
-        ],
-        [
-            "En el camino tendremo",
-            "s que saltar piedras/n"
-        ],
-        [
-            "En el camino cruzare",
-            "mos almas nuevas/n"
-        ],
-        [
-            "Y en el camino te dar",
-            "é lo que me queda/n"
-        ],
-        [
-            "para poder ",
-            "seguir así./n"
-        ],
-        [
-            "Todo lo me queda/n"
-        ],
-        [
-            "tiene que ver con vos/n"
-        ],
-        [
-            "todo lo que palpita/n"
-        ],
-        [
-            "llega a mi corazón./n"
-        ],
-        []
+            "Todo lo que me qu",
+            "ed  tiene que ver con v",
+            "os /n Todo lo que pal",
+            "pit  llega mi corazón.",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "jdkutFFLjMU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

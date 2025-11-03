@@ -13,20 +13,20 @@ export class UltimasCanciones {
   }
   public filtrarSubidas() {
     this.canciones = this.canciones.filter(
-      (cancion) => cancion.origen.origenUrl !== 'subida',
+      (cancion) => cancion.origenUrl !== 'subida',
     )
     this.guardarEnStorage()
   }
 
   public agregar(cancion: ItemIndiceCancion): void {
-    if (cancion.origen.origenUrl === 'fogon') {
+    if (cancion.origenUrl === 'fogon') {
       return
     }
     this.canciones = this.canciones.filter(
       (c) =>
-        c.origen.origenUrl === 'fogon' ||
-        c.origen.fileName !== cancion.origen.fileName ||
-        c.origen.origenUrl !== cancion.origen.origenUrl,
+        c.origenUrl === 'fogon' ||
+        c.fileName !== cancion.fileName ||
+        c.origenUrl !== cancion.origenUrl,
     )
 
     this.canciones.unshift(cancion)
@@ -50,11 +50,7 @@ export class UltimasCanciones {
         if (Array.isArray(datos)) {
           this.canciones = datos.map((item) => {
             const toRet = new ItemIndiceCancion(
-              new OrigenCancion(
-                item.origen.origenUrl,
-                item.origen.fileName,
-                item.origen.usuario,
-              ),
+              new OrigenCancion(item.origenUrl, item.fileName, item.owner),
               item.cancion,
               item.banda,
             )

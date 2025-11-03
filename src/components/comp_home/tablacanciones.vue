@@ -19,6 +19,7 @@ const props = defineProps<{
   listasstore: string[]
   listasserverstore: string[]
   verBorrar: boolean
+  cargando: boolean
 }>()
 const listaseleccionada = ref<string>('actual')
 
@@ -54,10 +55,10 @@ function VerDetalle(index: number) {
 
 const tiempo = new Tiempo()
 function Reproducir(index: number) {
-  emit('tocar', props.canciones[index].origen)
+  emit('tocar', props.canciones[index].GetOrigen())
 }
 function Borrar(index: number) {
-  emit('borrar', props.canciones[index].origen)
+  emit('borrar', props.canciones[index].GetOrigen())
 }
 </script>
 
@@ -85,16 +86,21 @@ function Borrar(index: number) {
         </th>
       </tr>
     </thead>
-    <tbody v-if="canciones.length === 0">
+    <tbody>
+      <tr v-if="props.cargando">
+        <td colspan="5">🔥Cargando...</td>
+      </tr>
+    </tbody>
+    <tbody v-if="canciones.length === 0 && props.cargando == false">
       <tr>
         <td colspan="5" style="text-align: center">Sin canciones</td>
       </tr>
     </tbody>
-    <tbody v-if="canciones.length > 0">
+    <tbody v-if="canciones.length > 0 && props.cargando == false">
       <template v-for="(cancion, index) in canciones" :key="index">
         <tr @click="VerDetalle(index)">
           <td>
-            <emoticonOrigen :origen="cancion.origen.origenUrl" />{{
+            <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
             }}
             <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>
@@ -120,6 +126,11 @@ function Borrar(index: number) {
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
               <div class="contDetalles">
+                <div class="divItemDetalle">
+                  <strong>Calidad:</strong
+                  >{{ vectorCalidades[cancion.calidad] }}
+                </div>
+
                 <div class="divItemDetalle duracion-detalle">
                   Duracion:
                   <strong>
@@ -139,10 +150,6 @@ function Borrar(index: number) {
                     {{ cancion.compasUnidad }}</strong
                   >
                 </div>
-                <div class="divItemDetalle">
-                  <strong>Calidad:</strong
-                  >{{ vectorCalidades[cancion.calidad] }}
-                </div>
                 <div
                   class="divItemDetalle"
                   v-if="cancion.acordes && cancion.acordes.length > 0"
@@ -158,11 +165,11 @@ function Borrar(index: number) {
                 >
                   📺
                 </div>
-                <div class="divItemDetalle">
-                  <strong>Tempo:</strong>{{ cancion.bpm }} BPM
-                </div>
-                <div class="divItemDetalle">
-                  <strong>Partitura:</strong>{{ cancion.pentagramas.length }}
+                <div
+                  class="divItemDetalle"
+                  v-if="cancion.pentagramas.length > 0"
+                >
+                  🎼<strong>Partitura:</strong>{{ cancion.pentagramas.length }}
                 </div>
               </div>
 

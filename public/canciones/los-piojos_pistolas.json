@@ -2,74 +2,394 @@
     "cancion": "pistolas",
     "banda": "los-piojos",
     "escala": "Gm",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Gm",
-                    "Db",
-                    "Cm",
-                    "F"
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Gm",
+                    "A",
+                    "A",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Gm",
+                    "A",
+                    "A",
+                    "B",
+                    "Gm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "A",
                     "B",
                     "A",
                     "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "to tanto te ",
-            " cuidabas/ny ahora"
-        ],
-        [
-            "   estás conf",
-            "inada/nNa"
-        ],
-        [
-            "   die te ",
-            " fue a ver",
             "",
-            "/nPis"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tolas que se disparan solas/nBas"
+            "Est",
+            "es una canción en español de rock argentino.",
+            "/n"
         ],
         [
-            "tones que pegan sin razones/nLa mu"
+            "Tanto, tanto t",
+            "e  cuidaban, si ahora estas e",
+            "n  copa nada nadie t",
+            "e  fue ver./n"
         ],
         [
-            "erte es cuestión de suerte/nY es a"
+            "Me acuerdo cuan",
+            "d  bailabas, me acuerdo qu",
+            "ni mirabas nunca",
+            "te vi bien./n"
         ],
         [
-            "sí no hay más que hablar/nEs a"
+            "Con este toq",
+            "u  terminado siempre es",
+            "la carga de un o",
+            "tari  sin tr",
+            "en /n No te salvo e",
+            "l  día en que salía disc",
+            "utid  ni el botón, ti",
+            "r  de tu chave.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "sí no hay más que hablar"
+            "Cemento cal",
+            "ient  al piso rosa, la p",
+            "ared  que te hizo ya co",
+            "m  un bebé./n"
+        ],
+        [
+            "Jove la v",
+            "e  un derecho que cortaro",
+            "n  como el hecho del tech",
+            "hizo caer./n"
+        ],
+        [
+            "Solas o",
+            "tr  vez sin nada después d",
+            "e  haber dado entrada sin sa",
+            "lid  la ve",
+            "jez /n Retomba",
+            "la verano muchachos",
+            "las nenas la carg",
+            "otra ve",
+            "z ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pistolas",
+            "qu  se disparan so",
+            "las  caído",
+            "s  todos desconoc",
+            "idos  bastone",
+            "que pegan sin razones/n"
+        ],
+        [
+            "La muerte e",
+            "s  una cuestión de su",
+            "erte /n Pistol",
+            "a  que se disparan s",
+            "olas  caíd",
+            "o  todos descono",
+            "cidos  baston",
+            "e  que pegan sin raz",
+            "ones /n La muert",
+            "e  es una cuestión de su",
+            "erte /n Es así",
+            "no hay mascar",
+            "as  no hay mascar",
+            "as  no hay m",
+            "asc",
+            "ara",
+            "s  no hay mascar",
+            "as  no hay mascaras, no hay mascaras, no hay mascaras, no hay mascaras, no hay masc",
+            "aras  no hay m",
+            "ascara",
+            "s ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que se",
+            "mate  nomás, que se m",
+            "ate  nomás, que se m",
+            "ate  nomás, que se mate",
+            "n  nomás,",
+            "que se maten n",
+            "omás  que se ma",
+            "te  nomás, que se maten",
+            "nomás  que se maten n",
+            "omás,  quizá no se",
+            "a  el vino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que se maten nomás, que se maten nomás,",
+            "q",
+            "u",
+            "se maten nomás, q",
+            "u  se maten nomás",
+            ", ",
+            "",
+            "que se m",
+            "ate  nomás, que se maten nomás, q",
+            "u  se maten nomás,",
+            "q",
+            "u",
+            "se maten nomás, que s",
+            "e",
+            "maten nomás, que s",
+            "e  maten nomás.",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3DxajrG7-mA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

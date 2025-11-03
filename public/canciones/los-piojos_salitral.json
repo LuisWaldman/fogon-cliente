@@ -2,20 +2,68 @@
     "cancion": "salitral",
     "banda": "los-piojos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "G",
+                    "Am",
+                    "F",
                     "Gm",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Gm",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "F",
+                    "F",
                     "F",
                     "Em",
-                    "C",
+                    "Em",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "Dm",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "F"
                 ]
             },
@@ -23,36 +71,84 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
-                    "G",
+                    "Am",
+                    "Am",
                     "Gm",
+                    "Em",
                     "Em",
                     "C",
                     "F",
-                    "B5"
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Em",
+                    "F",
                     "Am",
-                    "D",
-                    "Em"
+                    "Am",
+                    "Gm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "F",
                     "Em",
-                    "Am",
+                    "Em",
                     "D",
-                    "B5"
+                    "G",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Em",
+                    "Em",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "B"
+                    "F",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
@@ -60,115 +156,146 @@
             0,
             1,
             2,
-            2,
-            2,
             3,
-            0,
-            0,
-            4
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Como si el juego fuera a c",
-            "aminar/n"
-        ],
-        [
-            "en la cornisa sin ",
-            "ver,/n"
-        ],
-        [
-            "e inevitable fuera ju",
-            "gar,/n"
-        ],
-        [
-            "ruleta rusa, en todo tiempo y lugar./n"
-        ],
-        [
-            "Y lo que está bien siemp",
-            "re estará mal/n"
-        ],
-        [
-            "cuando no hay chance de ser,/n"
-        ],
-        [
-            "miedo feroz a dejar de hacer p",
-            "ie/n"
-        ],
-        [
-            "voy por afuera,miedo feroz a nadar.",
+            "",
+            "",
             "/n"
         ],
         [
-            "Tus promesas, son ",
-            "engaños/n"
-        ],
-        [
-            "un espejismo en un salit",
-            "ral./n"
-        ],
-        [
-            "No lo digas, est",
-            " claro/n"
-        ],
-        [
-            "un espejismo el mañana",
-            "./n"
-        ],
-        [
-            "Tus promesas, son ",
-            "engaños/n"
-        ],
-        [
-            "un espejismo en un salit",
-            "ral./n"
-        ],
-        [
-            "No lo digas, est",
-            " claro/n"
-        ],
-        [
-            "un espejismo....",
+            "C",
+            "omo  si el jueg",
+            "fuera camina",
+            "r  en la cornis",
+            "sin ver,",
+            "inevitable",
+            "fuer  jugar",
+            "ruleta r",
+            "us  en todo tiemp",
+            "o  lugar",
+            "",
+            "",
+            "",
+            "lo que está b",
+            "ien  siempre estará m",
+            "al  cuando no hay ch",
+            "anc  de se",
+            "r  miedo fer",
+            "o  dejar de hacer e",
+            "l  pie, voy por a",
+            "fuera  miedo fe",
+            "ro  nad",
+            "ar /n T",
+            "us  prom",
+            "esa  son eng",
+            "años  un espe",
+            "jism  en un salitr",
+            "án  no lo d",
+            "igas  está cl",
+            "aro  un espe",
+            "jism es mañana. /n T",
+            "us  pro",
+            "mesa  son eng",
+            "años  un esp",
+            "ejism  en un sali",
+            "trán  no lo",
+            "digas  está c",
+            "laro  un es",
+            "pejism  e",
+            "s",
+            "mañana.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Cuando las puertas no abr",
-            "en jamás/n"
-        ],
-        [
-            "y se derrite la luz",
+            "Cuando l",
+            "a  puertas no abre",
+            "jamás, ni s",
+            "e  derrite la l",
+            "uz  cuando",
+            "e  atajo siempre p",
+            "uede  más, vam",
+            "o  bebiendo, be",
+            "biend  de un sali",
+            "trán ",
+            "",
             "/n"
         ],
         [
-            "cuando el atajo siempre ",
-            "puede más/n"
+            "Si",
+            "n  creer en mañan",
+            "a  hoy hoy,",
+            "qué dolor no c",
+            "reer  l",
+            "o  que deciden no vie",
+            "ne  más allá,",
+            "la miseria",
+            "la desidia es m",
+            "ortal /n"
         ],
         [
-            "vamos bebiendo, bebiendo de un salitral./n"
-        ],
-        [
-            "Sin creer en mañana",
-            " no hay hoy/n"
-        ],
-        [
-            "y que dolor no creer",
+            "Tu",
+            "promesas so",
+            "n  engaños,",
+            "un espejismo en un",
+            "salitrán  no",
+            "l  digas, e",
+            "stá  claro,",
+            "un espejismo es mañ",
+            "ana /n Tu",
+            "s  promesas s",
+            "o  engaños,",
+            "un espejismo en un",
+            "salitrán  n",
+            "o  lo digas,",
+            "está claro,",
+            "un espejism",
+            "e",
+            "s  m",
+            "añana ",
+            "",
             "/n"
         ],
         [
-            "los que deciden no vien",
-            "en del mas allá/n"
+            "U",
+            "n  espejismo e",
+            "s",
+            "mañana.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "y la miseria, y la desiria es mor",
-            "tal."
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "oWHjFzxNn8g",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

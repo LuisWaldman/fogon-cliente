@@ -54,7 +54,6 @@ function clickCerrar(modificado: boolean) {
 helper.latino = appStore.perfil.CifradoLatino
 
 function guardarCambios(origenDestino: string) {
-  props.origen.origenUrl = origenDestino
   CancionManager.getInstance()
     .Save(
       new OrigenCancion(
@@ -133,7 +132,12 @@ function guardarCambios(origenDestino: string) {
 
       <div class="divctrlEdit">
         <button @click="guardarCambios('local')">💾 Guardar</button>
-        <button @click="guardarCambios('server')">o en 🗄️</button>
+        <button
+          v-if="appStore.estadosApp.estadoLogin === 'logueado'"
+          @click="guardarCambios('server')"
+        >
+          o en 🗄️
+        </button>
       </div>
     </div>
 

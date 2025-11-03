@@ -2,51 +2,385 @@
     "cancion": "pero-nadie-te-ama-como-yo",
     "banda": "los-piojos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "B7",
+                    "A7",
                     "A7",
                     "B7",
-                    "E",
+                    "B7",
+                    "B7",
                     "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "E",
+                    "E",
+                    "E",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "decis que me porto como u",
-            "n chico",
-            "/npero nadie te ama como "
+            "Decís qu",
+            "me porto c",
+            "om  un ch",
+            "ic /n P",
+            "er  nad",
+            "i  te ama co",
+            "m  y",
+            "o /n"
         ],
         [
-            "yo",
+            "Decís que s",
+            "oy  cruel por l",
+            "o  que di",
+            "g /n P",
+            "er  nad",
+            "i  te ama com",
+            "o  y",
+            "o /n"
+        ],
+        [
+            "Com  un b",
+            "orracho  nec",
+            "esit  un b",
+            "a /n Como u",
+            "n  preso li",
+            "berta  t",
+            "necesi",
+            "t /n"
+        ],
+        [
+            "Com  un m",
+            "endig  un",
+            "poc  de p",
+            "a /n Como u",
+            "n  ciego imag",
+            "ina  te n",
+            "ecesito ",
+            "",
+            "que",
+            "más ",
+            "que",
+            "más",
+            "que m",
+            "ás  por es",
+            "t  amor",
+            "",
+            "que m",
+            "ás,",
+            "que m",
+            "ás, ",
+            "que",
+            "má/n"
+        ],
+        [
+            "D",
+            "ecís  que esto n",
+            "o  tiene s",
+            "entid",
+            "",
+            "que sentido t",
+            "ien  una ca",
+            "nció /n"
+        ],
+        [
+            "S",
+            "i  no puede d",
+            "arm  lo qu",
+            "e  pi",
+            "d /n Buen",
+            "o  que me s",
+            "irva  de c",
+            "anció ",
+            "",
+            "que m",
+            "ás, ",
+            "que m",
+            "ás, ",
+            "que m",
+            "á  por este a",
+            "mor ",
+            "",
+            "que m",
+            "ás, ",
+            "que m",
+            "ás ",
+            "que m",
+            "ás ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "y Que mas,y",
-            " que mas,y q",
-            "ue mas por este amo",
-            "r",
-            ""
+            "Co",
+            "m  un borra",
+            "ch  necesit",
+            "un bar /n C",
+            "omo  un pr",
+            "es  liberta",
+            "",
+            "/n"
+        ],
+        [
+            "Co",
+            "m  un mend",
+            "ig  un poco d",
+            "e  pan/n"
+        ],
+        [
+            "Com  un cie",
+            "g  imaginar t",
+            "e  necesi",
+            "t /n A",
+            "y  si supieras",
+            "la horas /n Que bue",
+            "na  horas, las horas q",
+            "ue vi pasar /n A",
+            "y,  si supieras",
+            "la horas /n Que bue",
+            "na  horas, las horas q",
+            "u vi pasar /n A",
+            "y  si supieras",
+            "la horas /n Que buen",
+            "a  horas, las horas q",
+            "ue  vi pas",
+            "a /n Ay, si supieras l",
+            "as horas /n Que buena",
+            "horas, las horas q",
+            "u  vi pasar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ay",
+            ",  si supieras la",
+            "s horas /n Que buenas ho",
+            "ras  las horas que v",
+            "i  pasar"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "9lQqAHwLc9Y",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

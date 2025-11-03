@@ -4,7 +4,6 @@ import { Perfil } from '../../modelo/perfil'
 import { ref, onMounted, computed } from 'vue'
 import { Configuracion } from '../../modelo/configuracion'
 import { datosLogin } from '../../modelo/datosLogin'
-import bcrypt from 'bcryptjs'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 
 const refInstrumentos = ref<InstrumentoMidi[]>(
@@ -98,7 +97,8 @@ const mantenerseLogeado = ref(true)
 const mostrarLogin = ref(false)
 
 async function crearLoginSeguro() {
-  const hash = await bcrypt.hash(password.value, 12)
+  //const hash = await bcrypt.hash(password.value, 12)
+  const hash = password.value // Temporalmente sin hash
   return new datosLogin(
     'USERPASS',
     username.value,
@@ -325,7 +325,12 @@ function toggleCifradoLatino() {
             <div>
               <label for="coso">Usuario</label>
               <div style="display: flex">
-                <input type="text" id="coso" v-model.lazy="username" />
+                <input
+                  type="text"
+                  id="coso"
+                  v-model.lazy="username"
+                  :disabled="appStore.estadosApp.estadoLogin == 'logueado'"
+                />
                 <button
                   @click="mostrarLogin = !mostrarLogin"
                   v-if="
@@ -374,7 +379,7 @@ function toggleCifradoLatino() {
                   Mantener
                 </label>
                 <button @click="loginWithCredentials" style="margin-left: 10px">
-                  Listo
+                  Ingresar
                 </button>
               </div>
             </div>

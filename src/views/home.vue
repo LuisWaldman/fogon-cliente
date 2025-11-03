@@ -8,105 +8,102 @@ import { onMounted, ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
+import { vistaHome } from '../modelo/helperVistas/vistaHome'
 
 const listasManager: ListasDBManager = new ListasDBManager()
-const selectedLista = ref<string>('')
+
+const vista: vistaHome = new vistaHome()
+const viendo = ref(vista.viendo)
+const viendoOrigen = ref(vista.viendoOrigen)
+const viendoCanciones = ref<ItemIndiceCancion[]>(vista.viendoCanciones)
+const viendoListas = ref<string[]>(vista.viendoListas)
+const viendoLista = ref<string>('')
+const cargandoCanciones = ref<boolean>(true)
+const cargandoListas = ref<boolean>(true)
+const viendoTexto = ref('')
+
+function actualizarVista() {
+  viendo.value = vista.viendo
+  viendoOrigen.value = vista.viendoOrigen
+  viendoCanciones.value = vista.viendoCanciones
+  viendoListas.value = vista.viendoListas
+  viendoLista.value = vista.viendoLista
+  viendoTexto.value = vista.viendoTexto
+}
+
+async function Cargar() {
+  await vista.iniciar()
+  actualizarVista()
+  cargandoCanciones.value = false
+  cargandoListas.value = false
+}
+
+onMounted(() => {
+  cargandoCanciones.value = true
+  cargandoListas.value = true
+  Cargar()
+})
+
 const nuevaLista = ref<string>('')
 const addingLista = ref<boolean>(false)
 const renamingLista = ref<boolean>(false)
-const viendoListas = ref<string[]>([])
 const ListasEnStorage = ref<string[]>([])
+listasManager.GetListas().then((listas: string[]) => {
+  ListasEnStorage.value = listas
+})
 
 let ultimasCanciones = new UltimasCanciones()
 const refUltimasCanciones = ref([] as ItemIndiceCancion[])
 refUltimasCanciones.value = ultimasCanciones.canciones
-const refViendoCanciones = ref<ItemIndiceCancion[]>([])
 const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
-
-listasManager.initDB().then(() => {
-  listasManager.GetListas().then((listas) => {
-    console.log('Listas de reproducción:', listas)
-    ListasEnStorage.value = listas
-    viendoListas.value = ListasEnStorage.value
-    selectedLista.value = listas.length > 0 ? listas[0] : ''
-  })
-})
 
 const appStore = useAppStore()
 const CancionesLocalstorage = ref<ItemIndiceCancion[]>([])
-
-CancionManager.getInstance()
-  .GetDBIndex()
-  .then((indices: ItemIndiceCancion[]) => {
-    CancionesLocalstorage.value = indices
-  })
-
-const textoMostrando = ref(
-  refViendoCanciones.value.length === 0
-    ? ''
-    : 'Ultimas ' + refViendoCanciones.value.length + ' canciones',
-)
 
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }
 
-onMounted(() => {
-  refViendoCanciones.value = refUltimasCanciones.value
-  textoMostrando.value =
-    refViendoCanciones.value.length === 0
-      ? ''
-      : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
-})
-
 function clickBorrarLista(cancion: OrigenCancion) {
-  refViendoCanciones.value = refViendoCanciones.value.filter(
-    (c) => c.origen !== cancion,
+  viendoCanciones.value = viendoCanciones.value.filter(
+    (c) => c.fileName !== cancion.fileName,
   )
 }
 
 function handleResultados(canciones: ItemIndiceCancion[]) {
   refResultadoCanciones.value = canciones
-  textoMostrando.value = 'Mostrando ' + canciones.length + '  de búsqueda'
-  refViendoCanciones.value = canciones
+  viendoTexto.value = 'Mostrando ' + canciones.length + '  de búsqueda'
+  viendoCanciones.value = canciones
 }
 
-const viendo = ref('inicio')
-const viendoOrigen = ref('localstorage')
-function clickOpcion(viendostr: string) {
-  if (viendostr === 'inicio') {
-    refViendoCanciones.value = refUltimasCanciones.value
-    textoMostrando.value =
-      refViendoCanciones.value.length === 0
-        ? ''
-        : 'Ultimas ' + refViendoCanciones.value.length + ' canciones'
-  } else if (viendostr === 'canciones') {
-    refViendoCanciones.value = CancionesLocalstorage.value
-  } else if (viendostr === 'listas') {
-    cambioLista()
-  }
-  viendo.value = viendostr
+async function clickOpcion(viendostr: string) {
+  if (viendo.value === viendostr) return
+  cargandoCanciones.value = true
+  cargandoListas.value = true
+  await vista.clickViendo(viendostr)
+  await Cargar()
+  return
 }
-function cambioLista() {
-  if (viendoOrigen.value === 'reproduccion') {
-    refViendoCanciones.value = appStore.listaReproduccion
-    if (appStore.listaReproduccion.length > 0) {
-      viendoOrigen.value = 'reproduccion'
-    }
-  } else if (viendoOrigen.value === 'localstorage') {
-    console.log('Cargando lista desde LocalStorage:', selectedLista.value)
-    listasManager.GetCanciones(selectedLista.value).then((canciones) => {
-      refViendoCanciones.value = canciones
-    })
-  } else if (viendoOrigen.value === 'server') {
-    refViendoCanciones.value = []
-  }
+
+async function cambioLista() {
+  cargandoCanciones.value = true
+  await vista.cambioLista(viendoLista.value)
+  actualizarVista()
+  cargandoCanciones.value = false
+  return
 }
-function clickOrigen(viendostr: string) {
+
+async function clickOrigen(viendostr: string) {
+  if (viendoOrigen.value === viendostr) return
+  console.log('Cambiando origen a:', viendostr)
+  await vista.clickViendoOrigen(viendostr)
+  await vista.iniciar()
+  actualizarVista()
+  return
   viendoOrigen.value = viendostr
   if (viendo.value === 'canciones') {
     if (viendoOrigen.value === 'localstorage') {
-      refViendoCanciones.value = CancionesLocalstorage.value
+      viendoCanciones.value = CancionesLocalstorage.value
     } else {
       //refViendoCanciones.value = appStore.serviciosEnReproduccion
     }
@@ -114,16 +111,14 @@ function clickOrigen(viendostr: string) {
   if (viendo.value === 'listas') {
     if (viendoOrigen.value === 'localstorage') {
       viendoListas.value = ListasEnStorage.value
-      selectedLista.value = viendoListas.value.length
-        ? viendoListas.value[0]
-        : ''
+      viendoLista.value = viendoListas.value.length ? viendoListas.value[0] : ''
     }
     cambioLista()
   }
 
   if (viendoOrigen.value === 'localstorage') {
     if (viendo.value === 'canciones') {
-      refViendoCanciones.value = CancionesLocalstorage.value
+      viendoCanciones.value = CancionesLocalstorage.value
     } else if (viendo.value === 'listas') {
       viendoListas.value = ListasEnStorage.value
     }
@@ -142,6 +137,10 @@ function confirmarNuevaLista() {
     alert('El nombre de la lista no puede estar vacío.')
     return
   }
+  if (viendoListas.value == null) {
+    viendoListas.value = []
+  }
+
   if (viendoListas.value.includes(nuevaLista.value)) {
     alert('Ya existe una lista con ese nombre.')
     return
@@ -152,13 +151,13 @@ function confirmarNuevaLista() {
       .then(() => {
         appStore.listasEnServer.push(nuevaLista.value)
         nuevaLista.value = ''
-        selectedLista.value = nuevaLista.value
+        viendoLista.value = nuevaLista.value
         addingLista.value = false
       })
   } else {
     listasManager.AgregarLista(nuevaLista.value).then(() => {
       ListasEnStorage.value.push(nuevaLista.value)
-      selectedLista.value = nuevaLista.value
+      viendoLista.value = nuevaLista.value
       nuevaLista.value = ''
       addingLista.value = false
     })
@@ -166,11 +165,11 @@ function confirmarNuevaLista() {
 }
 
 function renombrarLista() {
-  if (!selectedLista.value) {
+  if (!viendoLista.value) {
     alert('Por favor, selecciona una lista para renombrar.')
     return
   }
-  nuevaLista.value = selectedLista.value
+  nuevaLista.value = viendoLista.value
   renamingLista.value = true
 }
 
@@ -179,7 +178,7 @@ function confirmarRenombrarLista() {
     alert('El nombre de la lista no puede estar vacío.')
     return
   }
-  if (nuevaLista.value === selectedLista.value) {
+  if (nuevaLista.value === viendoLista.value) {
     renamingLista.value = false
     nuevaLista.value = ''
     return
@@ -190,17 +189,14 @@ function confirmarRenombrarLista() {
   }
   if (viendoOrigen.value === 'server') {
     CancionManager.getInstance()
-      .listasServerManager?.RenombrarLista(
-        selectedLista.value,
-        nuevaLista.value,
-      )
+      .listasServerManager?.RenombrarLista(viendoLista.value, nuevaLista.value)
       .then(() => {
-        const index = appStore.listasEnServer.indexOf(selectedLista.value)
+        const index = appStore.listasEnServer.indexOf(viendoLista.value)
         if (index !== -1) {
           appStore.listasEnServer[index] = nuevaLista.value
         }
         viendoListas.value = appStore.listasEnServer
-        selectedLista.value = nuevaLista.value
+        viendoLista.value = nuevaLista.value
         nuevaLista.value = ''
         renamingLista.value = false
       })
@@ -209,7 +205,7 @@ function confirmarRenombrarLista() {
       })
     return
   }
-  const oldName = selectedLista.value
+  const oldName = viendoLista.value
   listasManager
     .RenombrarLista(oldName, nuevaLista.value)
     .then(() => {
@@ -218,7 +214,7 @@ function confirmarRenombrarLista() {
         ListasEnStorage.value[index] = nuevaLista.value
       }
       viendoListas.value = ListasEnStorage.value
-      selectedLista.value = nuevaLista.value
+      viendoLista.value = nuevaLista.value
       nuevaLista.value = ''
       renamingLista.value = false
     })
@@ -234,38 +230,38 @@ function cancelarOperacion() {
 }
 
 function borrarLista() {
-  if (!selectedLista.value) {
+  if (!viendoLista.value) {
     alert('Por favor, selecciona una lista para borrar.')
     return
   }
-  if (!ListasEnStorage.value.includes(selectedLista.value)) {
+  if (!ListasEnStorage.value.includes(viendoLista.value)) {
     alert('La lista seleccionada no existe.')
     return
   }
   if (
     confirm(
-      `¿Estás seguro de que deseas borrar la lista "${selectedLista.value}"?`,
+      `¿Estás seguro de que deseas borrar la lista "${viendoLista.value}"?`,
     )
   ) {
     if (viendoOrigen.value === 'server') {
       CancionManager.getInstance()
-        .listasServerManager?.BorrarLista(selectedLista.value)
+        .listasServerManager?.BorrarLista(viendoLista.value)
         .then(() => {
           appStore.listasEnServer = appStore.listasEnServer.filter(
-            (lista) => lista !== selectedLista.value,
+            (lista) => lista !== viendoLista.value,
           )
           viendoListas.value = appStore.listasEnServer
-          selectedLista.value = ''
+          viendoLista.value = ''
         })
       return
     }
 
-    listasManager.BorrarLista(selectedLista.value).then(() => {
+    listasManager.BorrarLista(viendoLista.value).then(() => {
       ListasEnStorage.value = ListasEnStorage.value.filter(
-        (lista) => lista !== selectedLista.value,
+        (lista) => lista !== viendoLista.value,
       )
       viendoListas.value = ListasEnStorage.value
-      selectedLista.value = ''
+      viendoLista.value = ''
     })
   }
 }
@@ -274,14 +270,14 @@ function AgregarLista(index: number, listaseleccionada: string) {
   console.log('Agregar a lista:', index, listaseleccionada)
   if (listaseleccionada === 'actual') {
     appStore.aplicacion.ClickAgregarAListaReproduccion(
-      refViendoCanciones.value[index],
+      viendoCanciones.value[index],
     )
     return
   }
   if (listaseleccionada.startsWith('local_')) {
     const nombreLista = listaseleccionada.replace('local_', '')
     listasManager
-      .AddCancion(nombreLista, refViendoCanciones.value[index])
+      .AddCancion(nombreLista, viendoCanciones.value[index])
       .then(() => {
         alert(`Canción agregada a la lista "${nombreLista}" en LocalStorage.`)
       })
@@ -292,11 +288,16 @@ function AgregarLista(index: number, listaseleccionada: string) {
   }
   if (listaseleccionada.startsWith('server_')) {
     const nombreLista = listaseleccionada.replace('server_', '')
-    listasManager
-      .AddCancion(nombreLista, refViendoCanciones.value[index])
-      .then(() => {})
+    CancionManager.getInstance()
+      .listasServerManager?.AddCancion(
+        nombreLista,
+        viendoCanciones.value[index],
+      )
+      .then(() => {
+        alert(`Canción agregada a la lista "${nombreLista}" en el servidor.`)
+      })
       .catch(() => {
-        alert('Error al agregar la canción a la lista.')
+        alert('Error al agregar la canción a la lista en el servidor.')
       })
   }
 }
@@ -407,11 +408,14 @@ function AgregarLista(index: number, listaseleccionada: string) {
             justify-content: space-between;
           "
         >
+          <select v-if="cargandoListas" style="width: 70%">
+            <option disabled selected>🔥Cargando...</option>
+          </select>
           <select
-            v-model="selectedLista"
+            v-model="viendoLista"
             @change="cambioLista"
             style="width: 70%"
-            v-if="viendo === 'listas'"
+            v-if="viendo === 'listas' && cargandoListas == false"
           >
             <option
               v-for="(lista, index) in viendoListas"
@@ -458,14 +462,15 @@ function AgregarLista(index: number, listaseleccionada: string) {
       </div>
 
       <p class="primer-parrafo" v-if="viendo === 'inicio'">
-        {{ textoMostrando }}
+        {{ viendoTexto }}
       </p>
 
       <tablacanciones
-        v-if="textoMostrando != ''"
-        :canciones="refViendoCanciones"
+        v-if="viendoTexto != ''"
+        :canciones="viendoCanciones"
         :listasserverstore="appStore.listasEnServer"
         :listasstore="ListasEnStorage"
+        :cargando="cargandoCanciones"
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
         @agregar="AgregarLista"

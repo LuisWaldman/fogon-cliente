@@ -106,20 +106,15 @@ export class CancionIndexedDBManager {
       const verificarComplecion = () => {
         operacionesCompletadas++
         if (operacionesCompletadas === totalOperaciones) {
-          console.log('Canción borrada completamente:', cancion.origen.fileName)
+          console.log('Canción borrada completamente:', cancion.fileName)
           resolve()
         }
       }
 
       // Borrar la canción del store de canciones
-      const deleteCancionRequest = cancionesStore.delete(
-        cancion.origen.fileName,
-      )
+      const deleteCancionRequest = cancionesStore.delete(cancion.fileName)
       deleteCancionRequest.onsuccess = () => {
-        console.log(
-          'Canción borrada del store de canciones:',
-          cancion.origen.fileName,
-        )
+        console.log('Canción borrada del store de canciones:', cancion.fileName)
         verificarComplecion()
       }
       deleteCancionRequest.onerror = (event) => {
@@ -128,9 +123,9 @@ export class CancionIndexedDBManager {
       }
 
       // Borrar la canción del índice
-      const deleteIndiceRequest = indiceStore.delete(cancion.origen.fileName)
+      const deleteIndiceRequest = indiceStore.delete(cancion.fileName)
       deleteIndiceRequest.onsuccess = () => {
-        console.log('Canción borrada del índice:', cancion.origen.fileName)
+        console.log('Canción borrada del índice:', cancion.fileName)
         verificarComplecion()
       }
       deleteIndiceRequest.onerror = (event) => {

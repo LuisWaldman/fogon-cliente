@@ -2,18 +2,42 @@
     "cancion": "rock-and-roll-con-gomina",
     "banda": "los-piojos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
                     "D",
                     "C",
                     "D",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
@@ -21,175 +45,324 @@
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "C",
                     "G",
-                    "E",
-                    "D",
                     "C",
-                    "G"
+                    "C",
+                    "E",
+                    "E",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
                     "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
                     "E",
+                    "E",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
                     "D",
                     "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
-            0,
-            1,
-            0,
             2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "El mundo visto de atrás/nempieza por la Argenti"
-        ],
-        [
-            "na,/ny luego viene Urugua"
-        ],
-        [
-            "y/n"
-        ],
-        [
-            "que esta parado en la esquina",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Los problemas de Uruguay/nse sienten de la Argent"
+            "El m",
+            "undo  visto de at",
+            "rá  empie",
+            "z por la /n Argentin",
+            "",
+            "luego viene /n Uru",
+            "guay ",
+            "que está parado en la esqu",
+            "in /n L",
+            "o problemas de /n Ur",
+            "ugua  s",
+            "e sienten en /n Arge",
+            "ntin /n L",
+            "o  mismo pasa al",
+            "revé ",
+            "po  estas tierras",
+            "vecina/n"
         ],
         [
-            "ina;/nlo mismo pasa al rev"
+            "Si viene de roc",
+            "k  and roll, l",
+            "a  radios s",
+            "e  contami",
+            "na  te tenés qu",
+            "e  banc",
+            "a  lo que la m",
+            "od  decida/n"
         ],
         [
-            "s/n"
+            "Así son nues",
+            "tro  países,",
+            "conserv",
+            "adore  grises/n"
         ],
         [
-            "con estas tierras vecinas",
-            "./n"
+            "Subidos e",
+            "n  el dolo",
+            "r  no aprend",
+            "e  ser felices/n"
         ],
         [
-            "Si viene de rock and rol",
-            "l, (o lo que sea Bob)/nlas radios se contamin"
+            "La d",
+            "eud externa es mi /n Dio",
+            "s  mi pa",
+            "trimoni  mi vida",
+            "l",
+            "a  sabremos cump",
+            "lir  canta",
+            "b  un niño en la esquina,",
+            "pobrecito /n Por/n"
         ],
         [
-            "an.",
-            "/nTe tenes que banc"
+            "Dios lo quiero seg",
+            "uir ",
+            "porque me amarro la vida/n"
         ],
         [
-            "ar/n"
-        ],
-        [
-            "lo que la moda decida.",
+            "M",
+            "e  tomo un mate de d",
+            "os, ",
+            "es la mejor medic",
+            "in ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Así son nuestros países/nconservadores y grise"
+            "El mundo vi",
+            "st  de atrá",
+            "empieza p",
+            "o la /n Argentina",
+            "luego",
+            "vien /n Urug",
+            "uay  que está p",
+            "arad  en la esqu",
+            "in ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "s./nSubidos en el dol"
+            "Todo",
+            "s  queremos ca",
+            "ntar ",
+            "lo que la mente deci",
+            "d /n Ta",
+            "ng  mi longa c",
+            "andomé",
+            "un rock and roll con g",
+            "omin /n Y",
+            "o  solo quiero t",
+            "ocar ",
+            "lo que el corazón m",
+            "pida/n"
         ],
         [
-            "or/n"
+            "Lo  tengo en la ju",
+            "ventud ",
+            "de la músic",
+            "a  divina/n"
         ],
         [
-            "no aprenden a ser felices",
-            "./n"
+            "Yo solo quiero",
+            "cant",
+            "a  lo que el coraz",
+            "ó  me pida/n"
         ],
         [
-            "La deuda externa es mi Dios,/nmi patrimonio, mi vida"
-        ],
-        [
-            ";/ny la sabemos cumpl"
-        ],
-        [
-            "ir/n"
-        ],
-        [
-            "cantaba un niño en la esquin",
-            "a. (Pobrecito)/n"
-        ],
-        [
-            "Por Dios no quiero seguir,",
-            "/npor que me amargo la vi"
-        ],
-        [
-            "da.",
-            "/nMe tomo un mate de a do"
-        ],
-        [
-            "s,/n"
-        ],
-        [
-            "es la mejor medicina",
-            "./n"
-        ],
-        [],
-        [
-            "El mundo visto de atrás/nempieza por la Argentin"
-        ],
-        [
-            "a,/ny luego viene Urugua"
-        ],
-        [
-            "y/n"
-        ],
-        [
-            "que esta parado en la esquina",
-            "./nTodos queremos cant"
-        ],
-        [
-            "ar/nlo que la mente deci"
-        ],
-        [
-            "da",
-            "/ntango, milonga, candomb"
-        ],
-        [
-            "e,/n"
-        ],
-        [
-            "o un rock and roll con gomina.",
-            "/nYo solo quiero toca"
-        ],
-        [
-            "r/nlo que el corazón me p"
-        ],
-        [
-            "ida,",
-            "/npues tengo la juventu"
-        ],
-        [
-            "d/n"
-        ],
-        [
-            "de la música divina",
-            "./nYo solo quiero cantar"
-        ],
-        [],
-        [],
-        [],
-        []
+            "Los tengo en l",
+            "a  juvent",
+            "ud  de la mú",
+            "sic  divina",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "4sn9f-rk5NU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

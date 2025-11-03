@@ -8,297 +8,342 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C#m",
                     "A",
-                    "C#m",
-                    "F#",
-                    "C#m",
-                    "A",
-                    "C#m",
-                    "F#",
-                    "C#m",
-                    "A",
-                    "C#m",
-                    "F#",
-                    "A",
-                    "B",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "G#",
-                    "A",
-                    "B",
-                    "G#",
-                    "C#m",
-                    "A",
-                    "B",
-                    "E",
-                    "B",
-                    "D",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "G#",
-                    "E",
-                    "B",
-                    "D",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "G#",
-                    "F#",
-                    "G#",
-                    "C#m",
-                    "C#m",
-                    "A",
-                    "C#m",
-                    "F#",
-                    "C#m",
-                    "A",
-                    "C#m",
-                    "F#",
-                    "C#m",
                     "A",
                     "F#",
-                    "A",
-                    "B",
                     "G#",
                     "C#m",
                     "A",
-                    "G#",
                     "A",
-                    "B",
-                    "G#",
+                    "A",
+                    "A",
+                    "A",
                     "C#m",
+                    "F#m",
                     "A",
-                    "B",
-                    "E",
-                    "B",
-                    "D",
                     "A",
-                    "E",
-                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "A",
-                    "G#",
-                    "E",
-                    "B",
-                    "D",
-                    "A",
-                    "E",
-                    "D",
-                    "A",
-                    "G#",
-                    "F#",
-                    "G#",
+                    "C#m",
                     "C#m",
                     "C#m",
                     "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "C#m",
-                    "F#",
-                    "E",
-                    "B",
-                    "D",
                     "A",
+                    "A F#",
                     "E",
-                    "B",
-                    "D",
-                    "A",
                     "E",
-                    "D",
-                    "A",
-                    "G#",
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "E",
+                    "F#",
+                    "D",
+                    "F#",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "C#m",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A F#",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#",
+                    "C#m",
+                    "C#m",
+                    "F#",
+                    "E",
+                    "F#",
+                    "E",
+                    "F# D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
         [
-            "Bienvenido, ",
-            "has llegado/nEn el mo"
-        ],
-        [
-            "mento justo/n"
-        ],
-        [
-            "Y al lugar indicado/n"
-        ],
-        [
-            "No todo lo r",
-            "ico engorda/n"
-        ],
-        [
-            "No todo lo ",
-            "bueno es pecado/n"
-        ],
-        [
-            "Yo ser",
-            " tus des",
-            "eos hechos pi",
-            "ernas/nUna i"
-        ],
-        [
-            "dea recurrente de fas",
-            "cinación/n"
-        ],
-        [
-            "Yo ser",
-            " un comp",
-            "lot para tu me",
-            "nte/nEl obj"
-        ],
-        [
-            "eto y la causa de tu p",
-            "erdición/n"
-        ],
-        [
-            "Cuenta del u",
-            "no al diez/nY me es"
-        ],
-        [
-            "condo donde p",
-            "uedas verme/nEs mi "
-        ],
-        [
-            "forma de jug",
-            "ar al escondite ingl",
-            "s",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Bésame ",
-            "de una vez/nY te am"
+            "Bien",
+            "venid  has lleg",
+            "ad  en el momento j",
+            "ust  al lugar i",
+            "ndicado  no tod",
+            "o  lo rico eng",
+            "ord  no toda l",
+            "a  buena es peca",
+            "d /n Y",
+            "seré tu",
+            "deseos hec",
+            "ho  piernas un",
+            "a  idea recu",
+            "rrent  de",
+            "fascinac",
+            "i /n"
         ],
         [
-            "arro a mi sof",
-            "á burgués/nEs mi "
-        ],
-        [
-            "forma de jug",
-            "ar al escondite/nEs mi "
-        ],
-        [
-            "forma de jug",
-            "ar al escondite/nEs mi "
-        ],
-        [
-            "forma de jug",
-            "ar al escondite ingl",
-            "s/n"
-        ],
-        [],
-        [
-            "No me juzgues n",
-            "o soy de esas/nSolo "
-        ],
-        [
-            "porque tengo u",
-            "na mente traviesa/n"
-        ],
-        [
-            "No todo lo r",
-            "ico engorda/nY no el que peca"
-        ],
-        [
-            " empata si reza/n"
-        ],
-        [
-            "Yo ser",
-            " tus des",
-            "eos hechos pi",
-            "ernas/nLa que "
-        ],
-        [
-            "dicte una sentencia a tu imag",
-            "inación/n"
-        ],
-        [
-            "Yo ser",
-            " un comp",
-            "lot para tu me",
-            "nte/nEl ob"
-        ],
-        [
-            "jeto y la causa de tu p",
-            "erdición/n"
-        ],
-        [
-            "Cuenta del u",
-            "no al diez/nY me es"
-        ],
-        [
-            "condo donde p",
-            "uedas verme/nEs mi "
-        ],
-        [
-            "forma de jug",
-            "ar al escondite ingl",
-            "s",
+            "Yo s",
+            "eré  u",
+            "n  complot para tu",
+            "ment /n Lo q",
+            "ue  tuve la",
+            "caus  de tu",
+            "perdició ",
+            "tu buena suerte /n C",
+            "uent  de u",
+            "n  nuevo día sin es",
+            "conda  donde pu",
+            "eda  verme es mi f",
+            "orm  de jugar",
+            "los condites leves",
+            "",
             "/n"
         ],
         [
-            "Bésame ",
-            "de una vez/nY te am"
+            "Besame n",
+            "o  ves si de ma",
+            "rr  me hizo pa b",
+            "urgue  es mi for",
+            "m  de jugar lo",
+            "s  condites es mi form",
+            "a  de jugar los",
+            "condite  es mi form",
+            "a  de jugar los c",
+            "ondite  leves",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "arro a mi sof",
-            "á burgués/nEs mi "
+            "N",
+            "o  me juz",
+            "gue  no soy esa s",
+            "olo  porque ten",
+            "g  una mente tra",
+            "vesad /n No todo l",
+            "o  rico engor",
+            "d  no el que peca e",
+            "n  patas rez/n"
         ],
         [
-            "forma de jug",
-            "ar al escondite/nEs mi "
+            "Yo s",
+            "eré  tus d",
+            "eseo  hecho",
+            "piernas la qu",
+            "e  directe una sent",
+            "enci  tu ima",
+            "ginació ",
+            "/n"
         ],
         [
-            "forma de jug",
-            "ar al escondite/nEs mi "
+            "Yo s",
+            "eré  un compl",
+            "o  para tu m",
+            "ent /n Lo qu",
+            "tuve la ca",
+            "us  de tu pe",
+            "rdició  tu bu",
+            "en suerte /n Cu",
+            "ent  de un nu",
+            "ev  día sin escon",
+            "da  donde pued",
+            "a  verme es mi for",
+            "m  de jugar",
+            "los condites leves",
+            "",
+            "/n"
         ],
         [
-            "forma de jug",
-            "ar al escondite ingl",
-            "s/n"
-        ],
-        [],
-        [
-            "Cuenta del u",
-            "no al diez/nY me es"
-        ],
-        [
-            "condo donde p",
-            "uedas verme/n"
-        ],
-        [
-            "Cuenta del u",
-            "no al diez/nY me es"
-        ],
-        [
-            "condo donde p",
-            "uedas verme/n"
+            "Besam  no v",
+            "e  si de marro",
+            "m  hizo pa burg",
+            "ue  es mi forma d",
+            "e  jugar los con",
+            "dite  es mi forma d",
+            "e  jugar los cond",
+            "ite  es mi forma d",
+            "e  jugar los condit",
+            "e  leves",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uno, dos, ",
-            "uno, dos, u",
-            "no, dos/n"
-        ],
-        [
-            "uno, dos, dos por cinco, d",
-            "iez"
+            "Cuenta d",
+            "e  un nuevo día sin",
+            "esconda  dond",
+            "e  puedas verm",
+            "e",
+            "s",
+            "",
+            "",
+            "m",
+            "i",
+            "",
+            "",
+            "",
+            "form",
+            "a de jugar los condites leves /n Un",
+            "o  dos dos por cinco diez",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "AwxNfgvglb8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

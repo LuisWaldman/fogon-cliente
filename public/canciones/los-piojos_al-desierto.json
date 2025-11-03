@@ -2,71 +2,364 @@
     "cancion": "al-desierto",
     "banda": "los-piojos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
+                    "A",
                     "C",
-                    "A"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "A",
                     "C",
-                    "D",
                     "A",
-                    "C",
-                    "D",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "C",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "A",
+                    "A",
+                    "A",
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "No me mires, con desprecio/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "De rodillas no te rezo/n"
+            "N",
+            "o  me mi",
+            "re  con despr",
+            "eci  si te dig",
+            "o  chau./n"
         ],
         [
-            "Dame el agua de tus besos/n"
+            "Yo soy libr",
+            "e  yo soy es",
+            "o  soy un preso d",
+            "mi libertad./n"
         ],
         [
-            "Y no me mires con desprecio/nsi algún día yo te digo chau, chau, "
+            "De lo much",
+            "a  no te re",
+            "zo  ni un que vuela e",
+            "este salitrá",
+            "n /n Dame el a",
+            "gu  de tus bes",
+            "os  dame un poco d",
+            "e  tu soledad./n"
         ],
         [
-            "chau.../nAl desierto "
+            "No me mi",
+            "re  con despr",
+            "eci  si algún día y",
+            "te digo chau, c",
+            "hau, chau. /n Al desierto s",
+            "e  va",
+            "n  los que quieren esta",
+            "r  solo./n"
         ],
         [
-            "se van ",
-            "los que quieren estar so",
-            "los/ncemento"
+            "Se vend",
+            "e  liber",
+            "tad  arena",
+            "sal.",
+            "",
+            "",
+            "/n"
         ],
         [
-            " y metal",
-            " arena y sal",
-            ""
+            "N  te ri",
+            "la  del espe",
+            "jo  es la imagen que v",
+            "os  das./n"
+        ],
+        [
+            "El buen gus",
+            "t  quedó le",
+            "jo  con las risa",
+            "de nuestra vista./n"
+        ],
+        [
+            "De rodil",
+            "la  yo no lle",
+            "go  ya les quiero p",
+            "ari  chup",
+            "ar /n Dame alg",
+            "un  de tus jug",
+            "os  dame un poco d",
+            "e  tu soled",
+            "ad /n No me mi",
+            "re  con despre",
+            "ci  si algún día y",
+            "o  te digo chau,",
+            "chau, chau. /n Al desierto s",
+            "e  va",
+            "n  los que quieren est",
+            "a  solo",
+            ". /n Se vend",
+            "e  libert",
+            "ad,  arena",
+            "sal",
+            ". /n Al desierto",
+            "s  va",
+            "n  los que quieren es",
+            "ta  solo./n"
+        ],
+        [
+            "Igual q",
+            "u  la ciuda",
+            "d  te s",
+            "entir",
+            "á ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "l  desierto",
+            "s  va",
+            "n  los que quieren es",
+            "ta  solo",
+            ". /n Se vend",
+            "e  libert",
+            "ad  aren",
+            "a  sal./n"
+        ],
+        [
+            "Al desierto",
+            "se va",
+            "n  los que quieren es",
+            "ta solo. /n I",
+            "gua ",
+            "qu  la ciuda",
+            "d  te s",
+            "entir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "l  desierto se van los que quieren estar solo."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PvG8k3Yo7fM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -19,6 +19,7 @@ import { Pantalla } from '../modelo/pantalla'
 import { onMounted } from 'vue'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { VistaTocar } from '../modelo/configuracion'
+import { CancionManager } from '../modelo/cancion/CancionManager'
 
 const pantalla = new Pantalla()
 
@@ -40,6 +41,23 @@ const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 onMounted(() => {
   vista.value = pantalla.getConfiguracionPantalla()
 })
+
+function SolicitarCalibracion() {
+  appStore.origenCancion.origenUrl = 'server'
+  appStore.cancion.calidad = -1
+  CancionManager.getInstance()
+    .Save(
+      new OrigenCancion(
+        appStore.origenCancion.origenUrl,
+        appStore.origenCancion.fileName,
+        appStore.perfil.usuario,
+      ),
+      appStore.cancion,
+    )
+    .catch((error) => {
+      console.error('Error al guardar los cambios:', error)
+    })
+}
 
 function GetStylePantallaPlay() {
   //
@@ -180,7 +198,6 @@ const refAdvertencia = ref(true)
         </div>
         <div
           class="advertencia"
-          @click="refAdvertencia = false"
           v-if="
             vista.muestra == 'karaoke' &&
             vista.reproduce == 'video' &&
@@ -189,7 +206,18 @@ const refAdvertencia = ref(true)
             appStore.cancion.calidad < 1
           "
         >
-          Texto No Calibrados. Corregilos desde: ✍️ Editar
+          <span v-if="appStore.cancion.calidad == -1">♻️ Recalibrando.</span>
+          <span @click="refAdvertencia = false"
+            >Texto No Calibrados. Corregilos desde: ✍️ Editar </span
+          ><button
+            v-if="
+              appStore.cancion.calidad > -1 &&
+              appStore.estadosApp.estadoLogin === 'logueado'
+            "
+            @click="SolicitarCalibracion()"
+          >
+            Calibrar!
+          </button>
         </div>
         <div
           class="advertencia"

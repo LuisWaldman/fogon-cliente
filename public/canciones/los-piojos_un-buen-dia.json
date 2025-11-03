@@ -2,61 +2,314 @@
     "cancion": "un-buen-dia",
     "banda": "los-piojos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
                     "Am",
-                    "Am6"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
-                    "Am4",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "Am6",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
                     "G",
                     "Am",
-                    "C",
-                    "D7"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am6",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am6",
+                    "Am6",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "Am6",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Una cortina de humo negro/n"
-        ],
-        [
-            "Una manzana po",
-            "drida en el lim",
-            "onero",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Un buen día, un buen día nomás/n"
+            "U",
+            "na  corti",
+            "n  de humoner",
+            "o  una pesa",
+            "d  lluvia de invier",
+            "no  una reji",
+            "ll  tapada de ho",
+            "jas  una profu",
+            "nd  mancha de la ro",
+            "pa ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Oh,",
+            "Una manzan",
+            "por mirar el humon",
+            "ero  una canción p",
+            "ar  saber lo que yo te",
+            "ngo  un espejis",
+            "m  en el espejo del te",
+            "cho  una salid",
+            "a  buena es pasear al f",
+            "erro /n Un b",
+            "ue  día",
+            "un",
+            "bue  día nom",
+            "ás  un b",
+            "uen  día",
+            ",  u",
+            "buen día n",
+            "omá",
+            "s ",
             "",
-            ""
+            "/n"
+        ],
+        [
+            "Una p",
+            "ú  abrazada mi",
+            "dedo  una mi",
+            "seri  de todas las que",
+            "leo  una teve",
+            "trentid  de pasar el",
+            "tiempo  una p",
+            "ila  de amores lo que e",
+            "ntendo /n Una por",
+            "ció  de pizarra en el",
+            "imperio  una b",
+            "ala  en el medio de l",
+            "a  cara, una men",
+            "tir  no cerca del cie",
+            "lo  una m",
+            "uje  esperando en la c",
+            "ama. /n U",
+            "n  buen día",
+            ",  u",
+            "n  buen día no",
+            "más  u",
+            "n  buen dí",
+            "a  u",
+            "n  buen día n",
+            "omás /n"
+        ],
+        [
+            "U",
+            "buen día mi d",
+            "edo ",
+            "donde v",
+            "a  u",
+            "n  buen día m",
+            "i  dedo,",
+            "donde va.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Uno e",
+            "s  hacía, uno lo hace el v",
+            "iento,  un",
+            "a  alegría no se le nieg",
+            "a  nadie, yo es",
+            "to  aquí por motivos qui",
+            "é  sabe, un",
+            "galardó  no sirve d",
+            "e nada. /n U",
+            "n  buen d",
+            "ía  u",
+            "n  buen día",
+            "nomás  u",
+            "n  buen d",
+            "ía  u",
+            "n  buen día",
+            "nomás /n"
+        ],
+        [
+            "U",
+            "n  buen día mi",
+            "dedo",
+            "donde v",
+            "a, ",
+            "un buen día m",
+            "i  dedo",
+            "donde",
+            "v",
+            "a",
+            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "81aJ2HDhsW8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

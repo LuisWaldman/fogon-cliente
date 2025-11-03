@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { Pantalla } from '../../modelo/pantalla'
 import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
 import frecuen from './frecuenciometro.vue'
-
 import circulo from './circulo.vue'
+
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
 const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
 const micHelper = new MicHelper()
-const musicaHelper = new MusicaHelper()
 const refMicEstado = ref('')
 const notasAfinar = ref([] as NotaAfinar[])
 notasAfinar.value.push(new NotaAfinar('Sexta Cuerda', 'E2', 82.41))
@@ -21,7 +20,7 @@ notasAfinar.value.push(new NotaAfinar('Cuarta Cuerda', 'D3', 146.83))
 notasAfinar.value.push(new NotaAfinar('Tercera Cuerda', 'G3', 196.0))
 notasAfinar.value.push(new NotaAfinar('Segunda Cuerda', 'B3', 246.94))
 notasAfinar.value.push(new NotaAfinar('Primera Cuerda', 'E4', 329.63))
-
+const instrumentoSeleccionado = ref('guitarra')
 const viendoAfindado = ref('simple')
 const notas: string[] = [
   'A',
@@ -39,7 +38,6 @@ const notas: string[] = [
 ]
 const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
-const EscuchandoAcorde = ref<string>('')
 
 const mostrarEscala = ref(false)
 const escalaMenor = ref(false)
@@ -98,12 +96,6 @@ function detectarFrecuencia() {
       notasSonido.value,
     )
   }
-  EscuchandoAcorde.value =
-    musicaHelper.GetAcordeDeNotas(
-      notasSonido.value[mostrandoNota.value].nota +
-        notasSonido.value[mostrandoNota.value].octava,
-      otrasNotas.value,
-    ).nombre || ''
 
   requestAnimationFrame(detectarFrecuencia)
 }
@@ -160,12 +152,12 @@ import { onMounted, onUnmounted } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import { HelperSonidos } from '../../modelo/sonido/helperSonido'
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
-import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
 import { useAppStore } from '../../stores/appStore'
 
 onMounted(() => {
   Solicitar()
   CalcularNotas()
+  updateInstrumentData()
 })
 
 onUnmounted(() => {
@@ -206,6 +198,79 @@ function ajusteTexto(
     return 'Tensar >>'
   }
 }
+
+function updateInstrumentData() {
+  const allInstruments = [...instrumentos, ...otrasAfinaciones]
+  const instrument = allInstruments.find(
+    (inst) => inst.value === instrumentoSeleccionado.value,
+  )
+  if (instrument) {
+    mostrandoNotas.value = instrument.notas
+    constNombre.value = instrument.nombres
+  } else {
+    // Default to guitar
+    mostrandoNotas.value = [7, 12, 17, 22, 26, 31]
+    constNombre.value = ['6ta', '5ta', '4ta', '3ra', '2da', '1ra']
+  }
+}
+
+watch(instrumentoSeleccionado, () => {
+  updateInstrumentData()
+})
+
+const instrumentos = [
+  {
+    value: 'guitarra',
+    label: 'Guitarra',
+    notas: [7, 12, 17, 22, 26, 31],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  },
+  {
+    value: 'charango',
+    label: 'Charango',
+    notas: [10, 15, 19, 24, 31],
+    nombres: ['5ta', '4ta', '3ra', '2da', '1ra'],
+  },
+  {
+    value: 'violin',
+    label: 'Violín',
+    notas: [7, 14, 21, 28],
+    nombres: ['4ta', '3ra', '2da', '1ra'],
+  },
+  {
+    value: 'ukelele',
+    label: 'Ukelele',
+    notas: [7, 12, 16, 21],
+    nombres: ['4ta', '3ra', '2da', '1ra'],
+  },
+]
+
+const otrasAfinaciones = [
+  {
+    value: 'gabierto',
+    label: 'Sol Abierto',
+    notas: [5, 10, 15, 20, 24, 29],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Open G
+  {
+    value: 'gcaida',
+    label: 'Sol Caida',
+    notas: [5, 10, 15, 20, 24, 29],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Drop G
+  {
+    value: 'dabierto',
+    label: 'Re Abierto',
+    notas: [2, 7, 12, 17, 21, 26],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Open D
+  {
+    value: 'dcaida',
+    label: 'Re Caida',
+    notas: [2, 7, 12, 17, 21, 26],
+    nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
+  }, // Approx. Drop D
+]
 </script>
 
 <template>
@@ -263,7 +328,7 @@ function ajusteTexto(
         </div>
 
         <div class="contDatos">
-          <div>Acorde</div>
+          <div>Instrumento</div>
           <div
             style="
               font-size: xx-large;
@@ -272,7 +337,24 @@ function ajusteTexto(
               text-overflow: ellipsis;
             "
           >
-            {{ EscuchandoAcorde }}
+            <select v-model="instrumentoSeleccionado">
+              <option
+                v-for="inst in instrumentos"
+                :key="inst.value"
+                :value="inst.value"
+              >
+                {{ inst.label }}
+              </option>
+              <optgroup label="Otras Afinaciones">
+                <option
+                  v-for="afin in otrasAfinaciones"
+                  :key="afin.value"
+                  :value="afin.value"
+                >
+                  {{ afin.label }}
+                </option>
+              </optgroup>
+            </select>
           </div>
         </div>
       </div>

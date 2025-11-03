@@ -36,10 +36,10 @@ export class ListasServerManager {
     elemento: ItemIndiceCancion,
   ): Promise<void> {
     console.log('Adding song to server list:', nameLista, elemento)
-    await this.cliente.HTTPPost('cancion', {
-      nombreLista: nameLista,
-      cancion: elemento,
-    })
+    await this.cliente.HTTPPost(
+      `itemcancionlista?lista=${encodeURIComponent(nameLista)}`,
+      elemento,
+    )
   }
 
   async RemoveCancion(nameLista: string, index: number): Promise<void> {
@@ -56,9 +56,15 @@ export class ListasServerManager {
     console.log('ReorderCancion:', nameLista, index, orden)
   }
 
-  async GetCanciones(nameLista: string): Promise<ItemIndiceCancion[]> {
+  async GetCanciones(): Promise<ItemIndiceCancion[]> {
+    const response = await this.cliente.HTTPGET('itemcancionusuario')
+    const json = await response.json()
+    return json
+  }
+
+  async GetCancionesLista(nameLista: string): Promise<ItemIndiceCancion[]> {
     const response = await this.cliente.HTTPGET(
-      `cancion/owner?nombreLista=${encodeURIComponent(nameLista)}`,
+      `itemcancionlista?lista=${encodeURIComponent(nameLista)}`,
     )
     const json = await response.json()
     return json
