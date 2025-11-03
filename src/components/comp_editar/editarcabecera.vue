@@ -54,8 +54,6 @@ function clickCerrar(modificado: boolean) {
 helper.latino = appStore.perfil.CifradoLatino
 
 function guardarCambios(origenDestino: string) {
-  
-
   CancionManager.getInstance()
     .Save(
       new OrigenCancion(

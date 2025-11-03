@@ -2,8 +2,8 @@
   <div class="divBienvenida">
     <h1>Bienvenido al Fogon</h1>
     <div>
-      Este lugar es para compartir Musica y estudiarla. Te cuento alguna de las cosas que vas
-      a poder hacer.
+      Este lugar es para compartir Musica y estudiarla. Te cuento alguna de las
+      cosas que vas a poder hacer.
     </div>
     <div>Empeza completando tu perfil y afinando tu instrumento.</div>
 
@@ -11,9 +11,7 @@
       Podes cantar canciones como:
 
       <li>
-        <a href="/tocar?cancion=andres-calamaro_flaca"
-          >Alguna de </a
-        >
+        <a href="/tocar?cancion=andres-calamaro_flaca">Alguna de </a>
       </li>
       <li>
         <a href="/tocar?cancion=andres-calamaro_flaca"
