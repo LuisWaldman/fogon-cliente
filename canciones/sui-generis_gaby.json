@@ -8,221 +8,385 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
-                    "Gm",
-                    "F7M",
-                    "E7(4)",
-                    "E7",
-                    "Am",
-                    "Gm",
-                    "F7M",
-                    "E7(4)",
-                    "Gm",
-                    "A",
+                    "Am7 Dm9",
                     "Dm7",
-                    "Fm",
-                    "E7(4)",
-                    "Am9",
-                    "Am",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "Dm9",
-                    "Am",
                     "Dm9",
-                    "Am9",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "F7M",
-                    "Dm",
-                    "E7",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Am",
-                    "Am/G",
+                    "Am",
+                    "F7M",
+                    "E7",
+                    "E7",
+                    "Dm7",
+                    "F7M",
+                    "F7M",
+                    "Am",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "E7(4)",
+                    "E7(4)",
+                    "Dm9",
+                    "Dm9",
+                    "F",
+                    "F",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
                     "F",
                     "E",
-                    "Am",
-                    "Am/G",
-                    "F",
                     "E",
                     "Am",
-                    "Am7M",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
                     "Am7",
-                    "Am6",
-                    "Dm7",
-                    "G7",
+                    "Am7",
+                    "Dm7 C7M(9)",
                     "C7M(9)",
-                    "F",
-                    "E7",
-                    "Am",
-                    "E7",
-                    "Am/C",
-                    "A2",
-                    "Am",
-                    "Am7M",
-                    "Am7",
-                    "Am6",
-                    "E7(4)",
-                    "E7",
-                    "Am",
-                    "Am7M",
-                    "Am7",
-                    "Am6",
-                    "Dm7",
-                    "G7",
+                    "C7M(9)"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "C7M(9)",
-                    "F",
-                    "E7(4)",
-                    "E7",
+                    "C7M(9)",
                     "Am",
-                    "E7",
-                    "E7(9-)",
                     "Am",
-                    "Em/B",
-                    "F",
-                    "E7(4)",
-                    "E7",
+                    "Am7M",
+                    "Am7M",
+                    "Am7M",
+                    "Am7M"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am7M",
+                    "Am7M",
+                    "Am7M"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
                     "Am",
                     "Am7",
-                    "Am6",
-                    "F7M",
-                    "E7(4)",
-                    "E7",
+                    "Am7",
+                    "Am7",
                     "Am",
-                    "Am/C",
-                    "B",
-                    "Bb"
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "Gaby toca el s",
-            "axo/n"
-        ],
-        [
-            "En las arenas de",
-            "l circo",
-            "/nF"
-        ],
-        [
-            "antasma, l",
-            "irico/n"
-        ],
-        [
-            "Que aprendió a reir de ",
-            "noche/n"
-        ],
-        [
-            "Bajo un techo et",
-            "erno/n"
-        ],
-        [
-            "Lleno de estrellas de invierno/n"
-        ],
-        [
-            "Virgenes estrellas/n"
-        ],
-        [
-            "Que lo vieron aqui ",
-            "abajo",
             "/n"
         ],
         [
-            "Sentado en la pis",
-            "ta/n"
+            "Est",
+            "a es una canción en español de rock argentino. /n Un mu",
+            "nd  lleno de estr",
+            "ella  de inviern/n"
         ],
         [
-            "Frente a un publico ause",
-            "nte/n"
+            "Virgene",
+            "estrel",
+            "la /n Que lo vieron a",
+            "qu  abaj/n"
         ],
         [
-            "Hacer las cosas d",
-            "e sie",
-            "mpre/n"
-        ],
-        [],
-        [],
-        [
-            "Y tiene un somb",
-            "rero/n"
+            "Sentado e",
+            "n la pista /n F",
+            "rente  al públ",
+            "ic  siempr/n"
         ],
         [
-            "Como Chap",
-            "lin, con una fl",
-            "or/nDonde g"
-        ],
-        [
-            "uarda su ",
-            "amor/nSe es"
-        ],
-        [
-            "conde ",
-            "dentro de un s",
-            "aco/nQue "
-        ],
-        [
-            "es un estro",
-            "pajo/nY"
-        ],
-        [
-            " que lo",
-            " hac",
-            "e invisibl",
-            "e al ",
-            "mundo",
+            "Para hacer las cosa",
+            "de siem",
+            "pr ",
             "",
-            "/n"
-        ],
-        [
-            "Usa pantal",
-            "ones/n"
-        ],
-        [
-            "Que fueron h",
-            "echos por algú",
-            "n/nDuende "
-        ],
-        [
-            "de Vene",
-            "cia/nA med"
-        ],
-        [
-            "ida ",
-            "para un ",
-            "ángel",
-            "/nTrist"
-        ],
-        [
-            "e y des",
-            "hilachado",
             "",
-            "/nQue se ll"
-        ],
-        [
-            "amó...Que se ",
-            "llamó/n"
-        ],
-        [
-            "Pierro",
-            "t",
+            "",
             "",
             "",
             "",
             "",
             "/n"
         ],
-        []
+        [
+            "Cab  toca el",
+            "sax /n E",
+            "n  las arenas del c",
+            "irc  fan",
+            "tasm /n Lí",
+            "ric  que ap",
+            "rendi  reír de n",
+            "och /n Baj",
+            "o  el techo eter",
+            "n /n Llenó d",
+            "e  estrellas de invi",
+            "ern /n Vir",
+            "gene  estre",
+            "lla /n Que lo",
+            "viero  aquí ab",
+            "aj /n S",
+            "entado  en la p",
+            "ist /n Fre",
+            "nt  al público si",
+            "empr /n Pa",
+            "r  hacer las cosas d",
+            "e  si",
+            "emp",
+            "r ",
+            "",
+            "",
+            "",
+            "",
+            "tiene u",
+            "n  sombrero/n"
+        ],
+        [
+            "Com",
+            "o  chaplin c",
+            "o  una flo",
+            "r /n D",
+            "ond  g",
+            "uar",
+            "d  su a",
+            "mo /n"
+        ],
+        [
+            "Se e",
+            "sconde ",
+            "dentr  de u",
+            "n saco /n Qu",
+            "e  es un est",
+            "ropaj ",
+            "que lo hace inv",
+            "isibl  al m",
+            "und /n"
+        ],
+        [
+            "Cruz  pá",
+            "ndalon",
+            "e /n Que fue",
+            "ro  hechos po",
+            "r  algú",
+            "n /n Bu",
+            "e  ver",
+            "é /n"
+        ],
+        [
+            "Ven",
+            "eci  b",
+            "ebid /n"
+        ],
+        [
+            "Mar d",
+            "e  ángel tri",
+            "st  desil",
+            "achad /n E",
+            "se  es",
+            "e ",
+            "amo /n"
+        ],
+        [
+            "Tierr",
+            "a ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ca",
+            "b  toca e",
+            "l saxo /n E",
+            "n  el cir",
+            "c /n Ca",
+            "b  toca e",
+            "l  sax/n"
+        ],
+        [
+            "En el ci",
+            "rc /n C",
+            "ab ",
+            "toca el sa",
+            "x /n En el c",
+            "irc /n En e",
+            "l  cir",
+            "c ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "dzsVEqVsMQU",
-            "delay": 0
+            "delay": 25090.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

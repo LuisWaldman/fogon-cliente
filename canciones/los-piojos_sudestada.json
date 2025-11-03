@@ -2,51 +2,294 @@
     "cancion": "sudestada",
     "banda": "los-piojos",
     "escala": "C#m",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C#m",
-                    "Abm",
-                    "A",
+                    "C#m",
                     "C#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Sudestada todo se",
-            " movió/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Tus colores renu",
-            "evan la suerte/n"
+            "N",
+            "o  he subestada des",
+            "d  que recuerdo yo",
+            "por la vida n",
+            "o  pasa la vía",
+            "de  sol/n"
         ],
         [
-            "Hoy amanecer es un r",
-            "enacer/n"
+            "Nu",
+            "estr  pensamiento aquí",
+            "varad  se quedó/n"
         ],
         [
-            "Sudestada deso",
-            "lada ausente./n"
+            "Mezcla de sonrisa",
+            "gris, llanto feliz",
+            "dolor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        []
+        [
+            "Cuand",
+            "o  la marea baja ve",
+            "s  el basural/n"
+        ],
+        [
+            "Un natural color d",
+            "e  historia sucia",
+            "rojo/n"
+        ],
+        [
+            "Imag",
+            "e  difusa veo en l",
+            "a felicidad /n Cr",
+            "e  alcanzarla no c",
+            "ree  que ahí estaba s",
+            "e  va/n"
+        ],
+        [
+            "Su",
+            "destad  todo s",
+            "e movió /n Tu",
+            "s  honores renuev",
+            "a la suerte /n Vo",
+            "y  amanecer,",
+            "voy renacer /n S",
+            "u  destada desol",
+            "ad  ausente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Desde la",
+            "concienci  la inconsciencia s",
+            "e ve igual /n Quien n",
+            "o  soñó una vez que la e",
+            "moción  sea to",
+            "d ",
+            "en una pen",
+            "dient  voy sin vías ni m",
+            "ot /n Rumbo un",
+            "umbra  de ayer con la",
+            "esperanz  de h",
+            "o /n"
+        ],
+        [
+            "Su dest",
+            "ad  todo se m",
+            "ovi /n Tus ho",
+            "nore  renuevan l",
+            "suerte /n Voy",
+            "amanecer, voy",
+            "renacer /n Su des",
+            "tad  desolada au",
+            "sent /n Su des",
+            "tad  todo se mo",
+            "vi /n Tus hono",
+            "re  renuevan la su",
+            "ert /n Voy a",
+            "manecer  voy",
+            "renace /n Su desta",
+            "d  desolada au",
+            "sent ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Su destada desolada ausente /n Su destada d",
+            "esolad ausente /n S",
+            "u  destada de",
+            "solad  ausente",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "BU9NrwYAZvs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

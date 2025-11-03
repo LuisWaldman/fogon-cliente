@@ -2,14 +2,32 @@
     "cancion": "merecido",
     "banda": "los-piojos",
     "escala": "Bm",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "Bm",
+                    "Bm",
                     "Bm",
                     "Bm",
                     "Bm"
@@ -19,16 +37,117 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "Bm",
+                    "Bm",
                     "G",
                     "G",
-                    "E"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
                     "G",
                     "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "Bm"
                 ]
             }
@@ -36,87 +155,144 @@
         "orden_partes": [
             0,
             1,
-            0,
-            0,
-            0,
             2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            " Tengo un sucio fierro que no puede esperar/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Tengo una locura que no puedo parar/n"
+            "Esta es una canción en españ",
+            "o  de rock argentino.",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Patina y perfume en la bocha tendré/n"
+            "Tengo un sucio fi",
+            "err  que no puede esp",
+            "era /n Tengo una lo",
+            "cur  que no puedo pa",
+            "ra /n L",
+            "a  no",
+            "ch",
+            "será l",
+            "a",
+            "r",
+            "g",
+            "a",
+            ",",
+            "guste como d",
+            "ese /n Será rico f",
+            "amos  el riberito de c",
+            "hofer /n La n",
+            "oc",
+            "h  s",
+            "er  larga, g",
+            "ust como desee /n Será rico",
+            "",
+            "famoso e",
+            "l  r",
+            "i",
+            "b",
+            "e",
+            "r",
+            "i",
+            "de chofer/n"
         ],
         [
-            " Pá cuando aparezca en Crónica TV/n "
+            "Teng",
+            "deformado por la re",
+            "in del bar /n Con u",
+            "n  semi diablo que me lle",
+            "v al hangar /n No p",
+            "ensab  cruzarme con m",
+            "ili de kill /n Ten",
+            "g  cráneos, corpos sonr",
+            "isa sin fin /n Dame",
+            ",  dame, dame lo que v",
+            "eng buscar /n N",
+            "es para dos viejas que no p",
+            "ued hacer mal /n Cha",
+            "t  se va vea te a",
+            "punt la cifra /n Da",
+            "me  dame, dame t",
+            "e  tiro del tronco",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Mirá el pajarito que te viá disparar/n "
+            "Tengo deformado por la reina del bar/n"
         ],
         [
-            "Traigan una pizza que ahora quiero morfar/n La "
+            "Co un semi diablo que me lleva al hangar /n N",
+            "o  pensaba cruzarme con milis de ki",
+            "l /n Tengo cráneos, corpos sonrisas sin fi",
+            "n /n Nunca nadie sabe lo que va",
+            "terminar /n Nadie sabe nunca cómo va termi",
+            "na /n Nunca nadie sabe cuando ya está la r",
+            "oj /n Nadie sabe nunca si es la mano de D",
+            "io /n Aparecido en el Vend",
+            "ava /n Aparecido en el Ven",
+            "dava /n Aparecido en el Ven",
+            "dava /n Aparecido en el Ve",
+            "ndava /n No se mano y",
+            "o  desapa",
+            "rec /n Creo que desde q",
+            "ue  desde que nac/n"
         ],
         [
-            "noche será larga usté acomodesé/n Se"
+            "Aparecido en el /n Ve",
+            "ndava /n Aparecido en el Ve",
+            "ndava /n Aparecido en el V",
+            "endava /n Aparecido en el V",
+            "endava ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ré rico y famosos y Riverito mi chofer/n"
-        ],
-        [
-            "  Bajo un cielo/n"
-        ],
-        [
-            "  Argentino/n"
-        ],
-        [
-            "  Estoy reloco/n"
-        ],
-        [
-            "  Es mi destino/n"
-        ],
-        [
-            "  Bajo un cielo/n"
-        ],
-        [
-            "  Argentino/n"
-        ],
-        [
-            "  Estoy reloco/n"
-        ],
-        [
-            "  Es mi destino/n  Bajo un "
-        ],
-        [
-            "cielo/n  Estoy re"
-        ],
-        [
-            "loco/n"
-        ],
-        [
-            " Aparecido en el vendaval (repite 4 veces)/n"
-        ],
-        [
-            "  No se cuando yo desaparecí/n"
-        ],
-        [
-            "  Creo que desde que, desde que nací/n "
-        ],
-        [
-            " Aparecido en el vendaval"
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Vdfb5YVuR4A",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

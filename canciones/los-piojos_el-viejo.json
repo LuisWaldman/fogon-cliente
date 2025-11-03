@@ -2,51 +2,288 @@
     "cancion": "el-viejo",
     "banda": "los-piojos",
     "escala": "A5",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "G5",
-                    "D5"
+                    "G5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A5",
-                    "C5"
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A5",
+                    "G5",
+                    "G5",
+                    "D5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "G5",
+                    "D5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "D5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A5",
+                    "G5",
+                    "G5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "G5",
+                    "D5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "D5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "oy un hombre bueno/ntrata"
+            "",
+            "/n"
         ],
         [
-            "re de hacer las cosas a su ti",
-            "empo/no si "
+            "Es",
+            "t es una canción en español de rock argentino. /n Después d",
+            "e  tanto tiempo,",
+            "reflexionamos al ver c",
+            "ruza el espejo. /n ¿Q",
+            "u es lo que pasa? /n Me estoy v",
+            "eñend  viejo./n"
         ],
         [
-            "no no le dare importancia al t",
-            "iempo, oh no"
+            "No sé de qué pensar, si ya n",
+            "sé qué es lo que pienso./n"
+        ],
+        [
+            "Yo soy un hombre bueno,",
+            "lo que pasa es que me estoy v",
+            "eñend  viejo./n"
+        ],
+        [
+            "T",
+            "rabajar  de hacer las cos",
+            "a  su tiempo,",
+            "si no, no le daré im",
+            "portanci  al cuerpo.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  puede ser que es",
+            "to  me preocupe, s",
+            "i  estoy naciendo, qué b",
+            "ueno  qué bueno.",
+            "¿Para qué tanto",
+            "años de experiencia,",
+            "si ahora me doy",
+            "cuenta que no tengo?/n"
+        ],
+        [
+            "Yo soy un hombre bu",
+            "eno  lo que pasa es que me es",
+            "to  veñendo viejo.",
+            "/n"
+        ],
+        [
+            "Trabajaré de hacer la",
+            "s  cosas su tiempo,",
+            "si no, no le d",
+            "ar  importancia al cuerpo.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Trabaj",
+            "ar  de hacer las cosas su tiempo, no puede ser q",
+            "u  esto me preocupe",
+            "si estoy naciendo,",
+            "qué bueno, qué bueno.",
+            "¿Para qué ta",
+            "nto  años de experiencia,",
+            "si ahora m",
+            "e  doy cuenta que no tengo?/n"
+        ],
+        [
+            "Yo soy un",
+            "hombr  bueno, lo que pasa es q",
+            "ue  me estoy veñendo viej",
+            "o /n"
+        ],
+        [
+            "Trabajaré de ha",
+            "ce  las cosas su tiemp",
+            "o  si no, n",
+            "o  le daré importancia al cue",
+            "rpo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡Un apl",
+            "aus  para el más grande guitarrista!",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "cnYFgZniZmE",
-            "delay": 0
+            "delay": 21740.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

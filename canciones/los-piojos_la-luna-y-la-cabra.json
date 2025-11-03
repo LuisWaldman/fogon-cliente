@@ -2,53 +2,151 @@
     "cancion": "la-luna-y-la-cabra",
     "banda": "los-piojos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "G",
+                    "D",
+                    "D",
                     "A",
-                    "D"
+                    "Gm",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "D",
-                    "G",
+                    "D",
+                    "D",
+                    "A",
                     "Gm",
+                    "A",
                     "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D7",
-                    "G",
-                    "A",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "F#m",
-                    "G",
-                    "A",
-                    "D"
+                    "Gm",
+                    "Gm",
+                    "D",
+                    "D7"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "D7",
-                    "G",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "A",
+                    "A",
                     "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D7",
+                    "D7",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Gm",
+                    "Gm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             }
@@ -56,102 +154,141 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            2,
             2,
             3,
-            1,
-            3,
-            0,
-            3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
         [
-            "Una Luna plateada en el ci",
-            "elo brillo/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Sobre el monte de una cabr",
-            "a/n"
+            "Una luna",
+            "plate  en el ciel",
+            "brilló /n Sobre e",
+            "l  monte de una ca",
+            "br /n La cabrita d",
+            "e  un salto la luna",
+            "trep /n Antes q",
+            "ue  el sol se aso",
+            "mar /n ¿Qué es l",
+            "o  que pasa con tu",
+            "soledad /n Dij",
+            "o  la cabra al i",
+            "nstant /n Siemp",
+            "r  cambiante, pero si",
+            "empr igual /n Soli",
+            "ta  hermosa d",
+            "istant ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Que es lo que pasa con tu ",
-            "soledad/n"
+            "Una l",
+            "un  platea en e",
+            "cielo brilló /n S",
+            "obr  el monte de una c",
+            "abr /n La cab",
+            "rit  de un salto la",
+            "lun  trep/n"
         ],
         [
-            "Dijo la cabra al instant",
-            "e/n"
-        ],
-        [],
-        [
-            "Una Luna plateada en el ci",
-            "elo brillo/n"
+            "Antes que el sol se as",
+            "omar /n D",
+            "éjam  ver porque t",
+            "ú  eres mujer/n"
         ],
         [
-            "Sobre el monte de una cabr",
-            "a/n"
+            "Vid  la luna l",
+            "a cabra /n Pro",
+            "nt  que si sale e",
+            "l  sol nos ve/n"
         ],
         [
-            "Déjame ver porque tu eres m",
-            "ujer/n"
+            "Lo  cuernos elve q",
+            "uemará ",
+            "salió el sol ah",
+            "í sin querer /n Q",
+            "ue  descansado y",
+            "a  estaba",
+            "allí la cabra",
+            "se hizo miel/n"
         ],
         [
-            "Pidió a la luna la cab",
-            "ra/n"
+            "Par  tu luna",
+            "platea",
+            "d ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "salió el s",
+            "o  ahí sin quere",
+            "r /n Que descansad",
+            "ya estab",
+            "",
+            "/n"
         ],
         [
-            "Y salió el sol hay s",
-            "in querer/n"
+            "Solita en el ciel",
+            "o  no vas est",
+            "a /n Déjame ver p",
+            "orqu  tú eres mu",
+            "je /n Vido la lu",
+            "n  la cab",
+            "r /n S",
+            "ol",
+            "i  en el c",
+            "iel  no vas es",
+            "ta /n Si parto vi",
+            "v  si me quedo m",
+            "uero /n Dijo Ju",
+            "liet /n Rome",
+            "o ",
+            "/n"
         ],
         [
-            "Que descansado ya esta",
-            "ba/n"
-        ],
-        [],
-        [
-            "Y salio el sol hay sin quer",
-            "er/n"
-        ],
-        [
-            "Que descansado ya estab",
-            "a/n"
-        ],
-        [
-            "Aaah, ",
-            "   sol",
-            "ita en el cielo no vas a es",
-            "tar/n"
-        ],
-        [
-            "Dejame ver porque tu eres",
-            " mujer/n"
-        ],
-        [
-            "Pidio a la luna la cabr",
-            "a/n"
-        ],
-        [
-            "Aaah, ",
-            "   sol",
-            "ita en el cielo no vas a es",
-            "tar/nSi parto vivo y si me quedo muero"
-        ],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Solita en el",
+            "ciel  no vas e",
+            "sta  allí l",
+            "cabra se hizo m",
+            "ie /n Para t",
+            "u  luna p",
+            "lat",
+            "ea ",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "bSrA7kXvNnU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

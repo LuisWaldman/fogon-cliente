@@ -2,59 +2,171 @@
     "cancion": "finale",
     "banda": "los-piojos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
                     "A",
                     "E",
                     "Bm",
-                    "D"
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "éjame que llegue a",
-            "hí/nNada m"
+            "tu vas",
+            "o  antes del f",
+            "in /n"
         ],
         [
-            "ás vacía tu vaso antes del f",
-            "in/n"
+            "Cal",
+            "l  voy",
+            "cru",
+            "za  e",
+            "n  silencio n",
+            "ena  escucho hay u",
+            "n  lug",
+            "a /n"
         ],
         [
-            "Calles, voy a cruza",
-            "r/nen s"
+            "Déj",
+            "am  que ll",
+            "egu  a",
+            "h  nad",
+            "más vacía t",
+            "u  vaso ante",
+            "del f",
+            "i /n C",
+            "alle",
+            "s  voy c",
+            "ruz",
+            "a  en s",
+            "ilenci  nen",
+            "escucho hay un l",
+            "uga ",
+            "/n"
         ],
         [
-            "ilencio nena escucho hay un luga",
-            "r/n"
+            "Déjame q",
+            "u  llegue a",
+            "hí",
+            "nad",
+            "más vacía tu v",
+            "as  antes del f",
+            "in /n"
         ],
         [
-            "Déjame que llegue ah",
-            "í/nnada m"
+            "Cal",
+            "le  vo",
+            "y  cr",
+            "uza",
+            "en silencio",
+            "nen  escucho h",
+            "ay  un lugar",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ás vacía tu vaso antes del f",
-            "in"
+            "Déjam",
+            "e  que llegue ahí",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "tgCCr92V0g4",
-            "delay": 0
+            "delay": 8300.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

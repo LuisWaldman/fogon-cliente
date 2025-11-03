@@ -2,120 +2,482 @@
     "cancion": "agua",
     "banda": "los-piojos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
                     "C",
                     "G",
-                    "D"
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F",
-                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "C",
-                    "Bm"
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "C",
                     "C",
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
             2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
         [
-            "Agua, como te deseo/n"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Agua, corriendo en el tiempo/n"
+            "A",
+            "gua  com",
+            "o  te des",
+            "eo  agu",
+            "a  te mir",
+            "te quiero,",
+            "agua,",
+            "corriendo en",
+            "el tiempo,",
+            "agua,",
+            "bailando en man",
+            "o  del so",
+            "l ",
+            "/n"
         ],
         [
-            "Agua, bailando en manos de s",
-            "ol/n"
+            "Agu",
+            "a  sal de m",
+            "i  canilla,",
+            "quiero q",
+            "u  me hagas coq",
+            "uillas ",
+            "siempre son",
+            "id  sonri",
+            "ente  dam",
+            "e  que es gra",
+            "nd  mi c",
+            "onfu",
+            "sió ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Agua, cayendo del cielo/n"
+            "Agua, c",
+            "ayend  del ci",
+            "elo  a",
+            "gua,  con f",
+            "uri  sin fren",
+            "o  lava",
+            "todos mis",
+            "recuerdos /n D",
+            "ame  e",
+            "n  tus hojas l",
+            "a  bend",
+            "ición",
+            "/n"
         ],
         [
-            "Lava todos mis recuerdos/n"
+            "Guer",
+            "ras  amor",
+            "e  juegos,",
+            "juegos,",
+            "relámpago",
+            "s  trueros,",
+            "barcos,",
+            "montañas su",
+            "eños ",
+            "todo descan",
+            "s  en tu cor",
+            "azón. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Dame en tus hojas la bendici",
-            "ón/n"
+            "E",
+            "r  clara",
+            "era v",
+            "ega  de",
+            "mis manos s",
+            "e  escorr",
+            "ea  me be",
+            "saba ",
+            "me colpía",
+            "pero siemp",
+            "r me aguantaba. /n S",
+            "e  iría",
+            "amanecer e",
+            "l  nudo en tu rit",
+            "ua  así t",
+            "e  encuentro",
+            "seren  siemp",
+            "re  era c",
+            "lara ",
+            "era vega,",
+            "de mis ma",
+            "no  se e",
+            "scorrea ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Era clara, e",
-            "ra vida, de",
-            " mis manos se ",
-            "escurría/n"
+            "Y",
+            "a  sabemos c",
+            "om  estoy,",
+            "hay un",
+            "o  hay dos, no hay do",
+            "s  tres./n"
         ],
         [
-            "(Agua)Ya sabemos como esto es/n"
+            "Y  sab",
+            "emo  como es",
+            "toy ",
+            "hay uno, hay dos",
+            ",  no hay dos tres.",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "(Agua)Ya sabemos como esto es/n"
+            "D",
+            "ame,  dame, d",
+            "ame  dame, dame un poco d",
+            "e  esto más, que m",
+            "i  confusión te date,",
+            "ya no puedo m",
+            "ás. /n Puede e",
+            "sta  muy dura,",
+            "ni duda que vo",
+            "s  puede dec",
+            "irt  que nadie s",
+            "e  va suposar./n"
         ],
         [
-            "(Agua)Hay uno y si hay dos no hay dos sin tres/n"
+            "Dame, dame, dame",
+            ",  dame un poco de tu",
+            "más  que mi confus",
+            "ió  te date así y",
+            "a  no puedo m",
+            "ás ",
+            "",
+            "/n"
         ],
         [
-            "(Agua)Puede estar más fría y dura que vos/n"
+            "La t",
+            "ierr  es sierra d",
+            "e  color azu",
+            "l ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "(Agua)Dame, dame, dame, dame un poco de tu paz/n"
+            "La t",
+            "ierra  es sierra d",
+            "e  color az",
+            "ul ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "(Agua)Que mi confusión es grande y así ya no puedo mas/n"
-        ],
-        [
-            "(Agua)Puede estar más fría y dura que vos/n"
-        ],
-        [
-            "(Agua)Dame, dame, dame, dame un poco de tu paz/n"
-        ],
-        [
-            "(Agua)Que mi confusión es grande y así ya no puedo mas/n"
-        ],
-        [
-            "(Agua)Ui ui uh, ui ui uh/n(Agua)La tierra es tierra de color a"
-        ],
-        [
-            "zul/n(Agua)Ui ui uh, ui ui"
-        ],
-        [
-            " uh/n(Agua)La tierra es tierra de color azul"
-        ],
-        []
+            "La tierra es sierra de color azul. /n La tierra es sierra de color azul."
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "lv8CZy0kcYM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

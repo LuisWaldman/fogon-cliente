@@ -8,72 +8,272 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G Em7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "Em7",
-                    "Bm",
-                    "D"
+                    "Em7",
+                    "Em7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Dsus4",
-                    "D",
-                    "A",
+                    "G",
                     "G",
                     "D",
-                    "A",
                     "D",
-                    "Dsus4"
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "Em7",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "Em7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "Em7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "ando solo no pensé/nlo "
-        ],
-        [
-            "que podía pasar después./n¡A"
-        ],
-        [
-            "guante Am  A",
-            "    amistad!",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Pensar que no sabías mentir,/nno c"
+            "E",
+            "s  tanto, solo no pensé l",
+            "o  que podía pasar después.",
+            "",
+            "/n"
         ],
         [
-            "reo que pueda resistir/nla p"
+            "Pero q",
+            "ue  amigo puedo ser,",
+            "si la mentira vuelve se",
+            "r  de pronto l",
+            "a  v",
+            "erdad. /n"
         ],
         [
-            "ena que vos me das./nEs como "
+            "Pensar que no sabía ment",
+            "ir  no creo que pueda resis",
+            "ti  la pena qu",
+            "vos me d",
+            "as /n"
         ],
         [
-            "la revolución/nque avanza "
+            "Es como la revolución q",
+            "u  avanzas sola,",
+            "sin par",
+            "ar /n"
         ],
         [
-            "sola, sin par",
-            "ar.",
-            ""
+            "Esta familia es singu",
+            "lar  que esconde en el rajo e",
+            "n  el mar excusa",
+            "bás",
+            "icas/n"
+        ],
+        [
+            "No sabe cómo respo",
+            "nde  hace todo lo que di",
+            "c  el pequeño monstru",
+            "de p",
+            "ode/n"
+        ],
+        [
+            "Pensar que no sabí",
+            "mentir, no creo que pueda r",
+            "esisti  la pena q",
+            "ue  vos me d",
+            "as. /n E",
+            "s  como la revoluc",
+            "ió  que avanzas sola",
+            ",  sin p",
+            "arar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pensar que n",
+            "o  sabía mentir, no creo que p",
+            "ued  resistir la pe",
+            "n  que vos me d",
+            "as./n"
+        ],
+        [
+            "Es como la re",
+            "volució  que avanzas siemp",
+            "r  sola, si",
+            "parar.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es como la revolución que avanzas siempre sola, sin parar."
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "AvchuAvwFNw",
-            "delay": 0
+            "delay": 7150.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "calidad": 1
 }

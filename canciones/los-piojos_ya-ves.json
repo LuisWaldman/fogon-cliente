@@ -2,58 +2,511 @@
     "cancion": "ya-ves",
     "banda": "los-piojos",
     "escala": "G7",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G7",
-                    "B°",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
                     "F",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "F",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G7",
+                    "F",
+                    "G7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
         ]
     },
     "letras": [
         [
-            "ce bien, cora",
-            "zón loco/nel pens"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ar que olvidó todo eso/npor qu"
+            "Esta es una canción en español de rock argentino.",
+            "/n"
         ],
         [
-            "edarse un poco/nte hace b"
+            "Chávez  eso es q",
+            "ue  digo/n"
         ],
         [
-            "ien, casi na",
-            "da/nel pe"
+            "Chávez, ven",
+            "cuando se olvida /n Ch",
+            "ávez  cari",
+            "ñ  mío/n"
         ],
         [
-            "nsar que olvidó todo eso/npa que n"
+            "Chávez, así l",
+            "a cosa va mal /n Olv",
+            "idast  la pluma negra",
+            "roja /n Es",
+            "a  que tenia un anzuelo que n",
+            "o usar /n Olv",
+            "idast  la serpiente silenciosa/n"
         ],
         [
-            "o la olvidaras/n"
+            "Es",
+            "a  que no morderme",
+            "la tuve que cerrar /n Olvi",
+            "dast  tu camisa desgarrada/n"
         ],
-        [],
-        [],
-        [],
-        []
+        [
+            "Es",
+            "traje tan extraño en mi",
+            "plac /n Olvi",
+            "dast  dinero en casa casi",
+            "tod /n Olvid",
+            "ast  casi todo pero d",
+            "e  la quiero más",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Chávez  eso t",
+            "e  digo/n"
+        ],
+        [
+            "Chávez, ven cu",
+            "and se olvida /n Chá",
+            "vez  cariñ",
+            "o mío /n Ch",
+            "ávez  así l",
+            "a cosa va mal /n Olvid",
+            "ast  los zapatos de t",
+            "rabaj /n Eso",
+            "s  tacos, con tacos que l",
+            "a puerta la mirada /n Olvid",
+            "ast  cada noche tu r",
+            "ecuerd /n Deja",
+            "st  ver dormida una",
+            "lagriman anhuada /n Olvi",
+            "dast  una foto con tu",
+            "s  ojos/n"
+        ],
+        [
+            "Ciega por mi casa no",
+            "llegu en la enterrada /n Le hice v",
+            "ueltas  bailaste re",
+            "molid /n Te mi",
+            "r  mientras te iba h",
+            "ace mi taza /n Me hac",
+            "bien",
+            "",
+            "corazó",
+            "n loco /n He pen",
+            "sad  olvido tod",
+            "esto /n Por quedarse u",
+            "n  poc/n"
+        ],
+        [
+            "Me hace",
+            "bie ",
+            "/n"
+        ],
+        [
+            "Casi nad",
+            "a /n He pen",
+            "sad  olvido todo e",
+            "st /n Pa que no la o",
+            "lvidar ",
+            "",
+            "/n"
+        ],
+        [
+            "Chávez",
+            "/n"
+        ],
+        [
+            "El",
+            "l  tiene todo/n"
+        ],
+        [
+            "El",
+            "l  tiene todo/n"
+        ],
+        [
+            "El",
+            "l tiene todo /n Pe",
+            "r  pantalones/n"
+        ],
+        [
+            "N",
+            "escucha razones",
+            "",
+            "/n"
+        ],
+        [
+            "Rope corazones /n Lluvi",
+            "end casandrío /n V",
+            "a  va, va, va, va, va, va, va, va, va, va, va, va, va, va,",
+            "va, va, va, va, va, va, va, va, va, va, va, va, va, va, va, va",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Chávez /n Ch",
+            "áve /n Yo te digo C",
+            "hávez /n P",
+            "er  cuando yo ven",
+            "g /n Chávez Y",
+            "o  te digo",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ch",
+            "áve /n Chávez/n"
+        ],
+        [
+            "Cháve /n Cháve/n"
+        ],
+        [
+            "Chávez /n Chávez",
+            "/n"
+        ],
+        [
+            "Cháve",
+            "/n"
+        ],
+        [
+            "Cháve",
+            "/n"
+        ],
+        [
+            "Chávez",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Chávez /n Chávez Chávez Chávez Chávez Chávez Chávez Chávez"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "8xocD-g1fM0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

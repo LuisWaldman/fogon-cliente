@@ -2,243 +2,474 @@
     "cancion": "al-atardecer",
     "banda": "los-piojos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
-                    "Am",
-                    "D",
-                    "Am",
                     "C",
                     "G",
-                    "F#7"
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "D",
-                    "Em",
-                    "A9",
-                    "Em",
-                    "A9"
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "C",
-                    "D"
+                    "Em",
+                    "Em",
+                    "A9",
+                    "A9",
+                    "A9"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
-                    "C",
-                    "G",
-                    "F#",
-                    "G",
-                    "C"
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "Am",
+                    "Am",
                     "C",
                     "D",
-                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "G",
+                    "G",
+                    "F#",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "C",
                     "C",
                     "G",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
             3,
-            1,
-            2,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
         ]
     },
     "letras": [
         [
-            "Al atardecer/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Al atardecer  (Fill 1)/n"
+            "Est",
+            "a es una canción en español de rock argentino. /n Al atardecer",
+            "s  va tra",
+            "bajar  a",
+            "atardecer.",
+            "/n"
         ],
         [
-            "Al atardecer/n"
+            "Pasa la es",
+            "tació  se t",
+            "oma  el tren,",
+            "chifland  el fur",
+            "go  ir adelante",
+            "al a",
+            "tardecer ",
+            "/n"
         ],
         [
-            "Al atardecer (Fill 2)/n"
+            "Calles d",
+            "e  luna, dientes s",
+            "i  fortuna s",
+            "in  amor.",
+            "/n"
         ],
         [
-            "Va hasta la estación/n"
+            "Luce",
+            "s  gatos, r",
+            "oce  baratos",
+            "po  un alcoho",
+            "l ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Y se toma el tren/n"
+            "Al at",
+            "ardece  cruza",
+            "l  ciudad,",
+            "al atard",
+            "ecer /n"
         ],
         [
-            "Chiflan del furgón/n"
+            "Las ca",
+            "lle  de tierra v",
+            "a  quedando atrás",
+            "al atar",
+            "decer /n"
         ],
         [
-            "Miran del anden/n"
+            "Ho",
+            "y  cómo estar",
+            "á  cuánto saca",
+            "ré  comi",
+            "sari  sucio,",
+            "ni lo quiero ve",
+            "r  al atar",
+            "decer ",
+            "/n"
         ],
         [
-            "Al atardecer (Fill 3)/n"
+            "Calles de luna",
+            "dientes sin fo",
+            "rtun  sin a",
+            "mor ",
+            "/n"
         ],
         [
-            "Calle de luna/n"
+            "Luces g",
+            "atos  roces",
+            "baratos por u",
+            "n  alcohol.",
+            "/n"
         ],
         [
-            "Y sin amor/n"
+            "No tengo mucho",
+            "tiempo  no ten",
+            "g  mucho tiempo anterior a",
+            "quí  en la ciudad.",
+            "/n"
         ],
         [
-            "Luces y gatos/n"
+            "No teng",
+            "mucho tiempo,",
+            "no hace mucho tiemp",
+            "estoy aquí en la ci",
+            "udad /n El l",
+            "lav  pa",
+            "s  la estaci",
+            "ón  dice toma e",
+            "l  tren, el ter",
+            "ce  vagón m",
+            "e  dio suerte aye",
+            "r  al atard",
+            "ecer ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Por un alcohol/n"
+            "Pasa la",
+            "estación  d",
+            "ic  toma el tren,",
+            "al atar",
+            "decer ",
+            "/n"
         ],
         [
-            "Al atardecer/n"
+            "Calle  de luna,",
+            "dientes sin for",
+            "tun  sin a",
+            "mor. ",
+            "/n"
         ],
         [
-            "Al atardecer/n"
+            "Luces ga",
+            "tos roces baratos por un alcohol. /n B",
+            "arato  por",
+            "u  alcohol",
+            "/n"
         ],
         [
-            "Las calles de tierra/n"
+            "No tengo mucho t",
+            "iempo  no tengo",
+            "much  tiempo señor a",
+            "qu  en la ciudad.",
+            "/n"
         ],
         [
-            "Al atardecer/n"
+            "No tengo m",
+            "uch  tiempo, n",
+            "o  hace mucho tiempo es",
+            "to  aquí en la ci",
+            "udad /n El",
+            "l",
+            "l",
+            "a",
+            "v",
+            "e",
+            "",
+            "pasa la",
+            "e",
+            "s",
+            "t",
+            "a",
+            "c",
+            "i  di",
+            "c  toma el tren.",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Hoy como estará/n"
-        ],
-        [
-            "Cuanto sacare/n"
-        ],
-        [
-            "Comisario sucio/n"
-        ],
-        [
-            "Ni lo quiero ver/n"
-        ],
-        [
-            "Al atardecer/n"
-        ],
-        [
-            "Calle de luna/n"
-        ],
-        [
-            "Y sin amor/n"
-        ],
-        [
-            "Luces y gatos/n"
-        ],
-        [
-            "Por un alcohol/n"
-        ],
-        [
-            "No tengo mucho tiempo/n"
-        ],
-        [
-            "Aquí en la ciudad/n"
-        ],
-        [
-            "No tengo mucho tiempo/n"
-        ],
-        [
-            "Aquí en la ciudad, ya ve/n"
-        ],
-        [
-            "Va hasta la estación/n"
-        ],
-        [
-            "Y se toma el tren/n"
-        ],
-        [
-            "El tercer vagón/n"
-        ],
-        [
-            "Me dio suerte ayer/n"
-        ],
-        [
-            "Va hasta la estación/n"
-        ],
-        [
-            "Y se toma el tren/n"
-        ],
-        [
-            "Al atardecer/n"
-        ],
-        [
-            "Calle de luna/n"
-        ],
-        [
-            "Y sin amor/n"
-        ],
-        [
-            "Luces y gatos/n"
-        ],
-        [
-            "Por un alcohol/n"
-        ],
-        [
-            "No tengo mucho tiempo/n"
-        ],
-        [
-            "Aquí en la ciudad/n"
-        ],
-        [
-            "No tengo mucho tiempo/n"
-        ],
-        [
-            "Aquí en la ciudad, ya ve/n"
-        ],
-        [
-            "No tengo mucho tiempo (y si vos me das)/n"
-        ],
-        [
-            "Aquí en la ciudad (alguien para hablar)/n"
-        ],
-        [
-            "No tengo mucho tiempo (y si vos me das)/n"
-        ],
-        [
-            "Aquí en la ciudad, ya ve (alguien para estar)/n"
-        ],
-        [
-            "Va hasta la estación/n"
-        ],
-        [
-            "Y se toma el tren/nAl a"
-        ],
-        [
-            "tardecer"
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "_-nWMtoOmXI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

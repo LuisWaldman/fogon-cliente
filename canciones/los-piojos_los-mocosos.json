@@ -2,89 +2,277 @@
     "cancion": "los-mocosos",
     "banda": "los-piojos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 73,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Cm",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
                     "D#",
+                    "D#",
+                    "D#",
+                    "C",
+                    "C",
                     "Bb",
-                    "C"
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "D#",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "D#",
+                    "Bb",
+                    "D#",
+                    "D#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D#",
+                    "C",
                     "Bb",
-                    "F",
+                    "D#",
+                    "D#",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "Bb",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Cm",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bb",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "D#",
+                    "Bb",
                     "D#",
                     "Bb",
                     "Bb",
-                    "F",
-                    "D#"
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Cm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "En la tierra del ruido/n"
-        ],
-        [
-            "Y la prostitución/n"
-        ],
-        [
-            "Y lass calles mugrienta",
-            "s./n"
-        ],
-        [
-            "Los mocosos se trepan y se van hacia el s",
-            "ol/n"
-        ],
-        [
-            "En los trenes de piedra",
+            "En l",
+            "a",
+            "",
+            "",
+            "t",
+            "ierra  del ruido la prostit",
+            "ució  las calles mur",
+            "ienta  con mercados hambrientos qu",
+            "e preforan la estación /n Como la",
+            "rga  culebras, los mocosos s",
+            "e  trepan se van hacia el so",
+            "l  de los trenes de pied",
+            "r ",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Na na no",
+            "En la tierra del vin",
+            "o  la drogadicción de los h",
+            "ijo  negados policías bendi",
+            "ga  al periodifractor le b",
+            "esa la mano /n Los mocosos se tre",
+            "pa  se van hacia el sol en bols",
+            "ita de nairoa /n Los mocosos se tr",
+            "epa  se van hacia el sol en bols",
+            "ita de llanto /n N",
+            "a  n",
+            "a",
+            "no, no me dejes olvid",
+            "a esta canción /n N",
+            "a  na no, no me dejes ol",
+            "vidarl /n N",
+            "a  na no, no me dejes olvid",
+            "a esta canción /n N",
+            "a  na no, no me dejes ol",
+            "vida ",
             "/n"
         ],
         [
-            "No me dejes olvidar esta canci",
-            "n/n"
-        ],
-        [
-            "Na na no",
+            "El p",
+            "equeñ  vive en cuenta piedras r",
+            "ojiza  como gotas de sang",
+            "r /n Te pregunto porque esa gente",
+            "n  ve detrás de los ventana",
+            "le /n Los mocosos se trepan se van ha",
+            "ci  el sol buscar sus madr",
+            "e ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "No me dejes olvidarla./n"
+            "E",
+            "n  su lu",
+            "gar  en su lugar/n"
         ],
         [
-            "Creíste esta",
-            "r/n"
+            "Creíste es",
+            "ta  en su lug",
+            "a /n Creíste est",
+            "a  en su lug",
+            "a /n Vas es",
+            "ta en su lugar /n E",
+            "n  la tierra del ruido la prostitu",
+            "ció las calles cubriendo /n So",
+            "n  mercados tan frietos por forma de estac",
+            "ió como largas culebras /n Los",
+            "mocoso  se trepan se van hacia el s",
+            "o en los trenes de piedra /n Los mo",
+            "coso  se trepan se van hacia el so",
+            "l  en los trenes de pi",
+            "edr /n N",
+            "n",
+            "a  no, no me dej",
+            "es  olvidar esta canción/n"
         ],
         [
-            "En su lugar",
-            ""
+            "Na na no, no me dej",
+            "e  olvidarla/n"
+        ],
+        [
+            "Na na no, no me dejes",
+            "olvidar esta canción/n"
+        ],
+        [
+            "N  na no, no me dejes",
+            "olvidarl /n Na n",
+            "a  no, no m",
+            "e dejes olvidarla /n N",
+            "a  na no, n",
+            "o me dejes olvidarla /n N",
+            "a na no, no me dejes olvidarla /n Na n",
+            "a  no, no me dejes olvidarla",
+            "",
+            "/n"
+        ],
+        [
+            "En la tierra del ruido la prostitución las calles cubriendo"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ztmTqDXRXyg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

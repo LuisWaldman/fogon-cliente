@@ -8,48 +8,124 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
-                    "Gmaj7/D",
-                    "D"
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "C9",
-                    "C",
-                    "C9",
+                    "G/B",
                     "D",
-                    "G"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Esus4/F#",
-                    "Em",
-                    "G",
-                    "C",
-                    "Dsus4",
                     "D",
-                    "D/F#",
-                    "C"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G/B",
+                    "G/B",
+                    "G/B"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G/B",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
                     "C",
                     "G/B",
-                    "C",
                     "G/B",
-                    "Am7",
-                    "C/G",
-                    "G"
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B"
                 ]
             }
         ],
@@ -57,64 +133,117 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Buenas no",
-            "ches,/n"
-        ],
-        [],
-        [
-            "Tu voz me hizo ver,/n            y el am"
-        ],
-        [
-            "or me",
-            " hacia",
-            " llor",
-            "ar.",
-            "/n            Pero un "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "dia el hombr",
-            "e mal",
-            "/n            me empezo a tratar"
+            "Esta es una canción en español de rock a",
+            "rgentino ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "/n            "
+            "Buenas noche",
+            "s  el lobo comen",
+            "z  hablar./n"
         ],
         [
-            "abrieron heridas que no cerraran ",
-            "jamas.",
-            "/n            "
+            "Esto  aqu",
+            "í  por última ve",
+            "z  veras.",
+            "",
+            "",
+            "en el bosque",
+            "mi  días suelen",
+            "pasa /n"
         ],
         [
-            "Padre,/n            "
+            "Salvaje",
+            "cruel, seguro en mi s",
+            "oleda ",
+            "/n"
         ],
         [
-            "volvere a ser fe",
-            "roz,/n            "
+            "T",
+            "u  voz me hizo ver,",
+            "tu luz me alejó del m",
+            "ar /n L",
+            "o  niños sonre",
+            "ía  mirarme,",
+            "el amor me hac",
+            "í  llorar/n"
         ],
         [
-            "volvere a dar te",
-            "mor/n            "
+            "P",
+            "er  un día el h",
+            "ombre  mal me emp",
+            "ez  tratar/n"
         ],
         [
-            "Volvere a ser fero",
-            "z,/n            un rayo en la oscuridad."
+            "Abrieron her",
+            "ida  que no cerra",
+            "rá  jamás",
+            "",
+            "padre,",
+            "volver ser fer",
+            "oz  mil garras será m",
+            "orta /n"
         ],
-        []
+        [
+            "V",
+            "olve  dar temo",
+            "r  el miedo ser",
+            "miocán/n"
+        ],
+        [
+            "E",
+            "l  bosque escuchar",
+            "á  aullidos de",
+            "tempesta /n"
+        ],
+        [
+            "Vo",
+            "lve  ser fero",
+            "z  un rayo en la oscuridad",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 86,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "TOB4mH3wp0g",
-            "delay": 0
+            "delay": 7200.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

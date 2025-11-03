@@ -2,103 +2,501 @@
     "cancion": "mi-babe",
     "banda": "los-piojos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "G",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "G",
+                    "E",
                     "E",
                     "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "E",
                     "E",
                     "F",
-                    "F",
-                    "C"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F",
-                    "F",
-                    "C",
                     "G",
-                    "Em",
-                    "Am",
-                    "Gm",
-                    "E"
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "G",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
-        [],
         [
-            "  Viene y sabe quién va a ganar/n"
+            "",
+            "",
+            "/n"
         ],
         [
-            "  viene y sabe donde tocar/n"
+            "Esta es una",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción en es",
+            "pa",
+            "ñ de rock argentino. /n V",
+            "ien  sabe quien v",
+            "a  ganar,",
+            "viene sabe donde",
+            "toca ",
+            "es mi baby, lo",
+            "quier  para ese amor",
+            ". ",
+            "/n"
         ],
         [
-            "  es mi babe, no quiere paz de amor/n"
+            "Una reina lo",
+            "c  broto,",
+            "lo que hago entre de",
+            "viento azul,",
+            "una reina",
+            "esclav  qued",
+            "yo.",
+            "/n"
         ],
         [
-            "  Una reina loca brotó/n"
+            "Oh,",
+            "oh, oh, oh.",
+            "",
+            "/n"
         ],
         [
-            "  de algún vientre de viento azul/n"
+            "Oh  oh",
+            ",  oh,",
+            "",
+            "oh.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "  una reina y esclavo quedo yo/n"
+            "N",
+            "o  se juega e",
+            "la habitación,",
+            "le pienso sombras",
+            "deja llevar",
+            "ella es mi baby c",
+            "o  cuerda para a",
+            "ndar /n"
         ],
         [
-            "  Oh oh oh oh oh oh oh oh/n"
+            "L",
+            "ena  te quiero, l",
+            "o  quiero intentar,",
+            "tengo en el pecho t",
+            "u  espalda hecho mal",
+            ",  desde los ríos/n"
         ],
         [
-            "  oh oh oh oh oh oh oh oh/n"
+            "Len  quiero t",
+            "u  sola.",
+            "/n"
         ],
         [
-            "  Está siempre tirada en el sol/n"
+            "Oh,",
+            "oh, oh, o",
+            "h ",
+            "/n"
         ],
         [
-            "  arriba arriba no falta calor/n  mi "
+            "Oh, o",
+            "h  oh, oh.",
+            "",
+            "/n"
         ],
         [
-            "babe.../n"
+            "Les ha siemp",
+            "r  tirado de sol,",
+            "areva, arev",
+            "a  por falla calor,",
+            "baby.",
+            "/n"
         ],
         [
-            "  Así siempre, abriéndose en par/n"
+            "Así siemp",
+            "re  areva no se v",
+            "a  ella no sabe,",
+            "no, no quiere ocultar",
+            "baby.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "  ella lo sabe y no lo quiere ocultar,/n  mi "
+            "Oh, oh, o",
+            "h",
+            "o",
+            "h",
+            ".",
+            "/n"
         ],
         [
-            "babe... y",
-            "/nLo mas dulce puede nacer"
+            "Lo más d",
+            "ulc  puede nacer,",
+            "es que un in",
+            "fiern  devora",
+            "do  lo más d",
+            "ulce  puede nace",
+            "r  la flo",
+            "r /n"
         ],
-        []
+        [
+            "Oh,",
+            "oh, oh,",
+            "oh. /n Oh,",
+            "",
+            "oh, o",
+            "h, ",
+            "o",
+            "h",
+            ". /n Les ha s",
+            "iempre  tirado de s",
+            "ol,  areva, a",
+            "reva,  por falla calo",
+            "r  baby.",
+            "/n"
+        ],
+        [
+            "Así",
+            "siempre  areva no se v",
+            "a,  ella no",
+            "sabe, no, no quiere ocul",
+            "tar  baby/n"
+        ],
+        [
+            "Oh, oh, oh,",
+            "oh ",
+            "/n"
+        ],
+        [
+            "Ahora",
+            "sal  de am",
+            "or  la vid",
+            "a  siempre fue mi para",
+            "do  baby.",
+            "/n"
+        ],
+        [
+            "Ahor",
+            "a  esta noche s",
+            "va, est",
+            "a  noche la vuelvo",
+            "dar, bab",
+            "y ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh, oh,",
+            "o",
+            "h",
+            ",",
+            "o",
+            "h. ",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Iq6KGY9Wgyw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }
