@@ -2,65 +2,571 @@
     "cancion": "tierra-querida",
     "banda": "atahualpa-yupanqui",
     "escala": "G7",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "C#m",
+                    "G7",
+                    "E7",
+                    "G7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G7",
-                    "C",
+                    "G7",
                     "G7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
                     "E7",
-                    "Am",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
                     "A7",
                     "Dm",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
                     "A7",
-                    "Dm"
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "E7",
+                    "E7",
+                    "G7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "G7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "bella quien la tuvier",
-            "a/npara can"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tarte toda la vida",
-            "          _/n"
-        ],
-        [],
-        [
-            "ijarro que se desp",
-            "eña/n"
+            "Una ",
+            "voz bella quien la ",
+            "tuviera para ca",
+            "ntar de toda la vida /n"
         ],
         [
-            "Andaré por los ce",
-            "rros/nselvas y pampas toda la vida"
+            "Pero  mi estrella me ",
+            "dio este acento ",
+            "así te siento tierra q",
+            "uerida \n\nPero mi est",
+            "rella me dio este acento ",
+            "así te siento tierra q",
+            "uerida \n\nComo un ",
+            "guijarro que se despe",
+            "ña rueda mi copla s",
+            "ueño harida \n\nYo ",
+            "soy arisco como tus br",
+            "eñas así te ",
+            "canto tierra querid /n"
         ],
-        []
+        [
+            "Yo soy arisco como ",
+            "tus breñas así te ",
+            "canto tierra que",
+            "rida \n\nAndar ",
+            "por los cerros, se",
+            "lvas pampas toda la ",
+            "vida  \n\nArrim",
+            "ándole coplas tu ",
+            "esperanza tierra q",
+            "uerida ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me dan ",
+            "sus fuegos cálidos ond",
+            "as, me dan su fuerza br",
+            "avos pamperos en ",
+            "el misterio de las quebr",
+            "adas paga la sombra de mis ",
+            "a",
+            "b",
+            "u",
+            "elos \n\nL",
+            "unas me vieron por esos c",
+            "erros en las lla",
+            "nuras anochecidas /n"
+        ],
+        [
+            "Buscando  el alma de tu p",
+            "aisaje para can",
+            "tar de tierra queri",
+            "da ",
+            "",
+            "/n"
+        ],
+        [
+            "Andaré por ",
+            "los cerros, selvas ",
+            "pampas toda la vi",
+            "da \n\nArrimándole ",
+            "coplas  tu ",
+            "es",
+            "pe",
+            "ra",
+            "nza tierra ",
+            "querid ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En las arenas b",
+            "ailan los remolin",
+            "os el sol jueg",
+            "a en el brillo del ped",
+            "regal pre",
+            "ndido la magia de los c",
+            "aminos el arriero ",
+            "va, el arri",
+            "ero va ",
+            "/n"
+        ],
+        [
+            "Es bandera ",
+            "de niebla su poncho al v",
+            "iento lo salu",
+            "dan las flautas del pa",
+            "gonal g",
+            "uapiando en la senda por ",
+            "esos cerros el arr",
+            "iero va, el arri",
+            "ero va ",
+            "/n"
+        ],
+        [
+            "Las penas las ",
+            "vaquitas se van por la m",
+            "isma senda \n\nLas penas ",
+            "las vaquitas se van por ",
+            "la misma senda \n\nLas p",
+            "enas son de nosotros, las ",
+            "vaquitas  son ajenas \n\nLas ",
+            "penas son de nosotros, las v",
+            "aquitas son ajenas ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Un ",
+            "degüello de soles mues",
+            "tra la tarde ",
+            "se han dormido las luces ",
+            "del pedregal ",
+            "animando la tro",
+            "pa dale, que dale ",
+            "el arriero va, el ",
+            "arriero va ",
+            "/n"
+        ],
+        [
+            "Malaya la noche trai",
+            "ga recuerdos que ",
+            "hagan menos pesada la ",
+            "soledad  \n\nC",
+            "omo sombra en la sombra ",
+            "por esos cerros el ",
+            "arriero va, el ",
+            "arriero va ",
+            "/n"
+        ],
+        [
+            "Las penas las ",
+            "vaquitas se van por la m",
+            "isma senda \n\nLas penas ",
+            "las vaquitas se van por ",
+            "la misma senda \n\nLas p",
+            "enas son de nosotros, las v",
+            "aquitas son ajenas \n\nLas ",
+            "penas son de nosotros, las ",
+            "vaquitas  son ajenas ",
+            "",
+            "",
+            "prendido ",
+            "la magia de los camino ",
+            "el arriero va, ",
+            "el arriero ",
+            "va ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Las penas son de nosotros, las vaquitas son ajenas ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Las penas son de nosotros, las vaquitas son ajenas ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Las ",
+            "penas son de nosotros, las vaquitas son ajenas ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Las penas son de nosotros, las vaquitas son ajenas \n\nLas penas son de nosotros \n\nYo no le canto la luna porque alumbra nada más \n\nLe canto porque ya sabe de mirar no caminar \n\nLe canto porque ya sabe de mirar no caminar \n\nHay lunita tucumana, tamborcito, calcha aquí \n\nCompañera de los gauchos en las sendas de \n\nTafí \n\nCompañera de los gauchos en las sendas de \n\nTafí \n\nPerdido en las razones, quién sabe vivir por dónde andaré \n\nMás cuando salga la luz cantaré, cantaré mi tucumán querido cantaré, cantaré \n\nCon esperanza con pena en los campos de \n\nAcheral \n\nYo he visto la luna buena besando el cañavera \n\nEn algo nos parecemos luna de la soledad \n\nYo voy andando cantando que es mi modo de alumbra \n\nPerdido en las razones, quién sabe vivir por dónde andaré \n\nMás cuando salga la luna cantaré, cantaré mi tucumán querido cantaré, cantaré \n\nPor qué no engrasó los ejes, me llaman abandonado \n\nPor qué no engrasó los ejes, me llaman abandonado \n\nSi mí me gusta que suenen pa' que los quiero engrasar \n\nSi mí me gusta que suenen pa' que los quiero engrasar \n\nEs demasiado aburrido seguir seguir la huella \n\nEs demasiado aburrido seguir seguir la huella \n\nDemasiado largo el camino sin nada que me entretenga \n\nNo necesito silencio, yo no tengo en qué pensar \n\nNo necesito silencio, yo no tengo en qué pensar \n\nTenía \n\nPerú hace tiempo, ahora ya no pienso más \n\nTenía \n\nPerú hace tiempo, ahora ya no pienso más \n\nLos ejes de mi calleta nunca los voy engrasar \n\nYo me hablaba con voz de nieve cumbreña dulce me recordaba las cosas de mi querencia \n\nTú que puedes, vuélvete, me dijo el río llorando \n\nLos cerros que tanto quieres, me dijo, allá te están esperando \n\nEs cosa triste ser río, quién pudiera ser laguna \n\nOír el silbo en el jugo cuando lo ves la luna \n\nQué cosas más parecidas son tu destino el mío \n\nVivir cantando penando por esos largos caminos \n\nTú que puedes, vuélvete, me dijo el río llorando \n\nLos cerros que tanto quieres, me dijo, allá te están esperando \n\nTú que puedes, vuélvete \n\nTu que puedes, vuélvete \n\nTu que puedes, vuélvete \n\nTu que puedes, vuélvete \n\nTu que puedes, vuélvete \n\nTu que puedes, vuélvete \n\nAquí canta un caminante que muy mucho ha caminado ahora vive tranquilo en el cerro colorado \n\nLargo mis coplas al viento por donde quiera que voy \n\nSoy árbol lleno de frutos como plantita en mi sol \n\nCuando encillo mi caballo me largo por las arenas en la mitad del camino ya me he olvidado de las penas \n\nCaminiaga \n\nSanta \n\nElena del yurki rayo cortado \n\nNo hay pago como mi pago, vive el cerro colorado la sombra de un hostal hay hoy sentido de un repente una moza que decía sosiegue que viene gente \n\nTe voy dar un remedio que es muy bueno para las penas \n\nGrasita de guanamacho mezclaita con hierbabuena \n\nChacarera de las piedras criollita como ninguna \n\nNo te metas en los montes si no has salido la luna \n\nCaminiaga \n\nSanta \n\nElena del yurki rayo cortado \n\nNo hay pago como mi pago, vive el cerro colorado \n\nCaminito del indio sendero coya sembrado de piedra \n\nCaminito del indio que junta el valle con las estrellas \n\nCaminito del indio que junta el valle con las estrellas \n\nCaminito que anduvo de sur norte mi raza vieja \n\nAntes que en la montaña la pachamama se ensombreciera \n\nAntes que en la montaña la pachamama se ensombreciera \n\nCantando en el cerro llorando en el río \n\nSe agranda en la noche la pena del indio \n\nEl sol la luna este canto mío \n\nBesaron tus piedras camino del indio \n\nEn la noche serrana llora la quena su onda nostalgia el caminito sabe quien es la chola que el indio llama el caminito sabe quien es la chola que el indio llama \n\nSe levanta en el cerro la voz doliente de la baguala el camino lamenta ser el culpable de la distancia el camino lamenta ser el culpable de la distancia \n\nCantando en el cerro llorando en el río \n\nSe agranda en la noche la pena del indio \n\nEl sol la luna este canto mío \n\nBesaron tus piedras camino del indio \n\nEn la noche serrana llora la quena su onda nostalgia el caminito sabe quien es la chola que el indio llama el camino lamenta ser el culpable de la distancia el camino lamenta ser el culpable de la distancia el camino lamenta ser el culpable de la distancia que le llaman distancia eso me habrán de explicar que le llaman distancia eso me habrán de explicar \n\nSolo están lejos las cosas que no sabemos mirar \n\nLos caminos son caminos en la tierra nada más \n\nLos caminos son caminos en la tierra nada más \n\nLas leguas desaparecen si el alma empieza letear \n\nHondo sentir rumbo fijo corazón claridad \n\nHondo sentir rumbo fijo corazón claridad \n\nSi el mundo está dentro de uno afuera ¿por qué mirar? ¿\nQué cosas tiene la vida misteriosa por demás? ¿\nQué cosas tiene la vida misteriosa por demás? \n\nUno está donde uno quiere muchas veces sin pensar \n\nSi los caminos son leguas en la tierra nada más \n\nSi los caminos son leguas en la tierra nada más que le llaman distancia eso me habrán de explicar \n\nQue mala será mi pena que solo sabe penar \n\nComo me duele esta pena de irme tan lejos de mi \n\nTucumán \n\nComo me duele esta pena de irme tan lejos de mi \n\nTucumán \n\nNo me asustan los caminos ni arenas ni pedregal \n\nPor muchos que hayan el mundo no son los caminos de mi \n\nTucumán \n\nPor muchos que hayan el mundo no son los caminos de mi \n\nTucumán \n\nAdiós mi pago querido, mi rancho de raco, mi lindo salsa \n\nCuando te canten mi samba quién sabe tu gaucho por dónde andará \n\nCuando te canten mi samba quién sabe tu gaucho por dónde andará \n\nMi sillonero \n\nPachuco ya nunca lo encillaré \n\nLo han de cuidar las estrellas adiós mi caballo ya no volveré \n\nLo han de cuidar las estrellas adiós mi caballo ya no volveré \n\nLo han de cuidar las estrellas adiós mi caballo ya no volveré \n\nSendita las de mi tierra, caminitos de tafí \n\nTal vez una \n\nTucumana bailando la samba se acuerde de ti \n\nTal vez una \n\nTucumana bailando la samba se acuerde de mí \n\nAdiós mi pago querido, mi rancho de raco, mi lindo salsa \n\nCuando te canten mi samba quién sabe tu gaucho por dónde andará \n\nCuando te canten mi samba quién sabe tu gaucho por dónde andará \n\nYo tengo tantos hermanos que no los puedo contar \n\nEn el valle, la montaña, en la pampa en el mar \n\nCada cual con sus trabajos, con sus sueños, cada cual \n\nCon la esperanza delante, con los recuerdos detrás \n\nYo tengo tantos hermanos que no los puedo contar \n\nGente de mano caliente, por eso de la amistad \n\nCon un rezo pa' rezarlo, con un llanto pa' llorar \n\nCon un horizonte abierto que siempre está más allá esa fuerza pa' buscarlo con tesor voluntad \n\nCuando parece más cerca es cuando se aleja más \n\nYo tengo tantos hermanos que no los puedo contar así seguimos andando curtidos de soledad \n\nNos perdemos por el mundo, nos volvemos encontrar así nos reconocemos por el lejano mirar \n\nPor la copla que mordemos, semilla de inmensidad así seguimos andando curtidos de soledad en nosotros nuestros muertos pa' que nadie quede atrás \n\nYo tengo tantos hermanos que no los puedo contar una novia muy hermosa que se llama libertad \n\nYo tengo tantos hermanos que no los puedo contar una novia muy hermosa que se llama libertad así seguimos andando curtidos de soledad así seguimos seguimos \n\nEra una cinta de fuego galopando, galopando \n\nGrim revuelta en llamaradas, mi alasante estoy nombrando \n\nTrepo las sierras con luna, cruzo los valles nevando \n\nCien caminos anduvimos, mi alasante estoy nombrando \n\nOscuro lazo de niebla, de piano junto al barranco ¿\nCómo fue que no lo viste? ¿\nQué estrella estabas buscando? \n\nEn el fondo del abismo ni una voz para nombrarlo \n\nSolito se fue muriendo mi caballo, mi caballo \n\nEn una orqueta del tala hay un morral solitario hay un corral sin relinchos, mi alasante estoy nombrando \n\nSí, como dicen algunos, hay cielos pa 'l buen caballo \n\nPor ahí andará mi flete, galopando, galopando \n\nOscuro lazo de niebla, de piano junto al barranco ¿\nCómo fue que no lo viste? ¿\nQué estrella estabas buscando? \n\nEn el fondo del abismo ni una voz para nombrarlo \n\nSolito se fue muriendo mi caballo, mi caballo ¿\nCómo fue que no lo viste? \n\nLe tengo rabia al silencio por lo mucho que perdí \n\nQue no se quede callado quien quiera vivir feliz \n\nQue no se quede callado quien quiera vivir feliz \n\nUn día monte caballo en la selva me metí \n\nUn día monte caballo en la selva me metí sentí que un gran silencio crecía dentro de mí sentí que un gran silencio crecía dentro de mí \n\nHay silencio en mi guitarra cuando canto el yarabi \n\nHay silencio en mi guitarra cuando canto el yarabi lo mejor de mi canto se queda dentro de mí lo mejor de mi canto se queda dentro de mí \n\nCuando el amor me hizo señas todo entero me encendí \n\nCuando el amor me hizo señas todo entero me encendí fuerza de ser callado, callado me consumí fuerza de ser callado, callado me consumí \n\nLe tengo rabia al silencio por lo mucho que perdí \n\nLe tengo rabia al silencio por lo mucho que perdí \n\nQue no se quede callado quien quiera vivir feliz \n\nQue no se quede callado quien quiera vivir feliz "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "LtlMfSxB5xY",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

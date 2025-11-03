@@ -2,85 +2,377 @@
     "cancion": "indiecito-dormido",
     "banda": "atahualpa-yupanqui",
     "escala": "Gm",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "D",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "D",
+                    "D",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Gm",
-                    "D#",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
                     "Gm",
                     "F",
-                    "Gm",
-                    "Gm",
                     "F",
-                    "Gm"
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "F",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "D",
                     "Gm",
                     "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Gm",
                     "D",
-                    "A",
                     "D",
+                    "D",
+                    "D",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
                     "Gm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "oncho de cuatro colo",
-            "res,      I/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Indiecito dormido/np´ acompa"
+            "P",
+            "oncho de c",
+            "uatro colore",
+            "s, cuatro cam",
+            "inos quebrad",
+            "os un sol",
+            "o sueño de co",
+            "bre, está el ",
+            "changuito s",
+            "oñ",
+            "an",
+            "/n"
         ],
         [
-            "ñarte se duerme el ",
-            "río./n"
+            "P",
+            "oncho de cua",
+            "tro colores, ",
+            "cuatro camin",
+            "os quebrados ",
+            "un solo s",
+            "ueño de cobre",
+            ", está el ch",
+            "anguito s",
+            "oña",
+            "ndo ",
+            "",
+            "/n"
         ],
         [
-            "Indiecito dormido/njunto a tu pu"
+            "I",
+            "ndiesito dorm",
+            "ido, pa' acom",
+            "pañarte se duerm ",
+            "el ",
+            "río ",
+            "/n"
         ],
         [
-            "erta pasa el cami",
-            "no./nP"
+            "Indiesit",
+            "o dormido, j",
+            "unto tu puerta pa",
+            "sa el c",
+            "ami",
+            "no ",
+            "/n"
         ],
         [
-            "asa el camino, sí, p",
-            "asa el camino",
-            ",/ncu"
+            "Pasa ",
+            "el camino, ",
+            "sí, ",
+            "pasa el ca",
+            "mino cuando ",
+            "por él te va",
+            "yas \n\nCh",
+            "uy, chuy ",
+            "qué f",
+            "río ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ando por él te v",
-            "ayas/n¡C"
+            "Sueña que es t",
+            "ibia la nieve, ",
+            "que son blandos los ",
+            "jijarros /n"
         ],
         [
-            "huy! ¡Chuy! ¡",
-            "Qué f",
-            "río...!"
+            "Que el viento te c",
+            "uenta cuentos ",
+            "de pastores ",
+            "reba",
+            "ños ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sue",
+            "ña que es tibia la n",
+            "ieve, que son b",
+            "landos los jija",
+            "rros \n\nQue el vie",
+            "nto te cuenta cu",
+            "entos de pa",
+            "stores r",
+            "eba",
+            "ños ",
+            "",
+            "/n"
+        ],
+        [
+            "Indie",
+            "sito dormido, ",
+            "pa' acompañarte se ",
+            "duerme el ",
+            "río ",
+            "/n"
+        ],
+        [
+            "Indi",
+            "esito dormido, ",
+            "junto tu puerta ",
+            "pasa  el c",
+            "amino ",
+            "/n"
+        ],
+        [
+            "Pasa  ",
+            "el camino, ",
+            "sí, pa",
+            "sa el cami",
+            "no cuando por ",
+            "él te vaya",
+            "s /n"
+        ],
+        [
+            "C",
+            "huy, c",
+            "huy, ",
+            "qué f",
+            "rí",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "JD8L9A2ma8w",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

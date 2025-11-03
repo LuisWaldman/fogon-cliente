@@ -2,46 +2,183 @@
     "cancion": "el-cachilo-dormido",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
                     "C",
-                    "D"
+                    "D",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "E7",
-                    "Am"
+                    "C",
+                    "C",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "CUANC  PASES POR SANTIAGO/n"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "CAE NA B N HACER RUIC /n"
+            "Cuando pase",
+            "n por \n\nSantiago camine ",
+            "sin hacer ruido porque ",
+            "en un rincón del pago está ",
+            "el cachilo dormido. ",
+            "",
+            "/n"
         ],
         [
-            "POR QUE EN UN LUGAR DEL PAGO/n"
+            "Est ",
+            "el cachilo dormido con ",
+            "su ponchito de almohad ",
+            "quizá buscando en el sue",
+            "ño el alma de la vi",
+            "dala. ",
+            "",
+            "/n"
         ],
         [
-            "ESTA EL CACHILO C ",
-            "RED O",
+            "El alma de la vidal",
+            "a, florcitas la vin",
+            "era, llegando los carna",
+            "vales se lia vuelve el cha",
+            "carera. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hay un rincó",
+            "n en el cielo donde mora",
+            "n los quichuistas, donde ca",
+            "ntan chacareras al llega ",
+            "la tardecita. ",
+            "",
+            "/n"
+        ],
+        [
+            "Al llegar ",
+            "la tardecita, corazón ",
+            "estremecido,  anda el s",
+            "oco tarareando para el c",
+            "achilo dormido. ",
+            "",
+            "/n"
+        ],
+        [
+            "Para el cac",
+            "hilo dormido, florcitas ",
+            "la vinera, llegando ",
+            "los carnavales se lia v",
+            "uelve el chacarera. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -49,10 +186,11 @@
         {
             "tipo": "Youtube",
             "id": "u5-pi37MPAA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

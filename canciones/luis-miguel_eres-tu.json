@@ -8,346 +8,282 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "Ab"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Ab",
-                    "Db",
-                    "Eb",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "Ab",
-                    "Db",
-                    "Eb",
-                    "Ab",
-                    "Ab",
-                    "Eb",
-                    "Db",
-                    "Ab",
-                    "F#",
-                    "Db",
-                    "Ab",
-                    "Eb",
-                    "Db",
-                    "Eb",
-                    "Ab",
-                    "Eb",
-                    "Db",
-                    "Cm7",
-                    "Ab",
-                    "Eb",
-                    "Ab",
-                    "Eb7",
-                    "Ab",
-                    "Eb",
-                    "Db",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "Ab",
                     "F#",
                     "Db",
-                    "Ab",
-                    "Eb",
                     "Db",
                     "Eb",
+                    "Cm7",
+                    "Eb7",
                     "Ab",
-                    "Eb",
+                    "Ab",
                     "Db",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "Cm7",
                     "Ab",
                     "Eb",
+                    "B",
                     "Ab",
-                    "Eb7",
                     "Ab",
-                    "Eb7",
+                    "Ab",
+                    "Ab",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Ab",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Db",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Cm7",
+                    "Eb",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Ab",
                     "Fm",
-                    "Db",
-                    "Bb",
-                    "Ab",
-                    "Eb",
-                    "Eb7",
-                    "Ab",
-                    "Db",
-                    "Ab",
-                    "Eb",
-                    "Ab",
-                    "Db",
-                    "Ab",
-                    "Eb7",
                     "Fm",
-                    "Db",
-                    "Bb",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "Ab",
-                    "Eb",
-                    "Eb7",
-                    "Ab",
-                    "Db",
-                    "Ab",
-                    "Eb",
-                    "Ab",
-                    "Ab9",
-                    "Ab",
-                    "Ab9",
-                    "Ab",
-                    "Ab",
-                    "Eb",
-                    "Db",
-                    "Ab",
-                    "F#",
-                    "Db",
-                    "Ab",
-                    "Eb",
-                    "Db",
-                    "Eb",
-                    "Ab",
-                    "Eb",
-                    "Db",
-                    "Cm7",
-                    "Ab",
-                    "Eb",
-                    "Ab",
-                    "Bbm7",
-                    "Cm7",
-                    "Db",
-                    "Eb",
-                    "E7",
-                    "A",
-                    "E7",
-                    "F#m",
-                    "D",
+                    "Fm",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "B",
-                    "A",
-                    "E",
-                    "E7",
-                    "A",
-                    "D",
-                    "A",
-                    "E",
-                    "A",
-                    "D",
-                    "A",
-                    "E7",
-                    "F#m",
-                    "D",
-                    "B",
-                    "A",
-                    "E",
-                    "E7",
-                    "A",
-                    "D",
-                    "A",
-                    "E7",
-                    "A",
-                    "D",
-                    "E",
-                    "A",
-                    "E7",
-                    "F#m",
-                    "D",
-                    "B",
-                    "A",
-                    "E",
-                    "E7",
-                    "A",
-                    "D",
-                    "A",
-                    "E7",
-                    "A",
-                    "D"
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
-        [],
         [
-            "Como una prom",
-            "esa eres tu",
-            ", eres tu",
-            "",
-            "",
-            "",
-            "/nComo una ma"
-        ],
-        [
-            "ñana de ve",
-            "rano",
-            "",
-            "/nComo una son"
-        ],
-        [
-            "risa eres t",
-            "u, eres tu",
-            "/nA"
-        ],
-        [
-            "sí, a",
-            "sí eres ",
-            "tu",
-            "/n"
-        ],
-        [
-            "Como una espera",
-            "nza eres tu",
-            ", eres tu",
-            "",
-            "",
-            "",
-            "/nComo lluvia "
-        ],
-        [
-            "fresca en mis m",
-            "anos",
-            "",
-            "/nComo fuerte "
-        ],
-        [
-            "brisa eres t",
-            "u, eres tu",
-            "/nA"
-        ],
-        [
-            "sí, a",
-            "sí eres ",
-            "tu",
-            "/n"
-        ],
-        [
-            "E-re",
-            "s  tu",
-            " como el agu",
-            "a de m",
-            "i fuent",
-            "e",
-            "/n"
-        ],
-        [
-            "Eres t",
-            "u   ",
-            "el fuego deee",
-            "e  m",
-            "i hogar",
-            "",
-            "/n"
-        ],
-        [
-            "Algo asi eres t",
-            "u uuu",
-            " alg",
-            "o así como el fueg",
-            "o de mi hoguera",
-            "",
-            "/n"
-        ],
-        [
-            "Algo así eres tu ",
-            "   u",
-            "uu",
-            "/nen mi vida algo a"
-        ],
-        [
-            "sí eres ",
-            "tu",
-            "",
             "",
             "",
             "/n"
         ],
         [
-            "Como mi po",
-            "ema eres tu",
-            ", eres tu",
-            "",
-            "",
-            "",
-            "/nComo una gui"
+            "Com",
+            "o una promesa e",
+            "res tú, eres tú /n"
         ],
         [
-            "tarra en la n",
-            "oche",
-            "",
-            "/nComo mi hori"
+            "Como una mañana de ",
+            "verano /n"
         ],
         [
-            "zonte eres t",
-            "u, eres tu",
-            "/nA"
+            "Como una sonrisa er",
+            "es tú, eres tú \n\nA",
+            "sí, así, er",
+            "es tú \n\nCo",
+            "mo una esperanza eres ",
+            "tú, eres tú \n\nC",
+            "omo lluvia fresca en mis ",
+            "manos \n\nC",
+            "omo fuerte brisa eres ",
+            "tú, eres tú \n\nAsí",
+            ", así, eres ",
+            "tú \n\nE",
+            "res ",
+            "tú como el ",
+            "agua de mi f",
+            "uente /n"
         ],
         [
-            "sí, a",
-            "sí eres ",
-            "tu",
-            "",
-            "",
+            "Eres ",
+            "tú el fuego ",
+            "de mi h",
+            "ogar \n\nAlg ",
+            "así como ",
+            "el f",
+            "uego de mi ho",
+            "guera \n\nAlgo ",
+            "así eres tú, eres tú /n"
+        ],
+        [
+            "El fuego de mi ho",
+            "gar \n\nAlgo así eres ",
+            "tú /n"
+        ],
+        [
+            "Como mi ",
+            "poema  eres tú, e",
+            "res tú \n\nComo una ",
+            "guitarra  en la no",
+            "che \n\nComo mi h",
+            "orizonte eres tú, er",
+            "es tú \n\nAsí, ",
+            "así,  eres tú ",
             "",
             "",
             "/n"
         ],
         [
-            "E-re",
-            "s  tu",
-            " como el agu",
-            "a de m",
-            "i fuente",
+            "Eres tú ",
+            "como  el agua ",
+            "de mi fue",
+            "nte /n"
+        ],
+        [
+            "Eres tú el ",
+            "fuego de ",
+            "mi hog",
+            "ar \n\nAlgo así eres ",
+            "tú /n"
+        ],
+        [
+            "Algo así como el fuego ",
+            "de mi hogue",
+            "ra \n\nAlgo así eres ",
+            "tú /n"
+        ],
+        [
+            "E",
+            "res tú ",
+            "el ",
+            "fuego de mi h",
+            "og",
+            "ue/n"
+        ],
+        [
+            "Algo así eres tú /n"
+        ],
+        [
+            "Com",
+            "o el fuego de mi ",
+            "hoga /n"
+        ],
+        [
+            "Ere ",
+            "tú como ",
+            "el fuego de mi ",
+            "hoguera  ",
             "",
-            "/n"
-        ],
-        [
-            "Eres tu",
-            "   ",
-            "el fuego deee",
-            "e  ",
-            "mi hogar",
-            "",
-            "/n"
-        ],
-        [
-            "Algo asi eres t",
-            "u uuu",
-            "  alg",
-            "o así como el fuego",
-            " de mi hoguera",
-            "",
-            "/n"
-        ],
-        [
-            "Algo así eres tu ",
-            "   uuu",
-            "/nen mi "
-        ],
-        [
-            "vida algo as",
-            " eres tu",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "Algo asi eres t",
-            "u uuu",
-            "   al",
-            "go así como el agua",
-            " de mi fuente",
-            "",
-            "/n"
-        ],
-        [
-            "Algo así eres tu ",
-            "   uuu",
-            "/nel fuego d"
-        ],
-        [
-            "eee",
-            " mi hogar",
-            "    ",
-            "...."
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 73,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "KlVzX88qyKE",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

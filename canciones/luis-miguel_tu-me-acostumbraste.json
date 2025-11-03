@@ -8,145 +8,209 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "Bb°",
+                    "E7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bb°",
-                    "Bm7",
+                    "Bb°",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "F#m7",
+                    "Eb°",
+                    "E7",
                     "E7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A7+",
-                    "F#m7",
-                    "Bm7",
+                    "E7",
+                    "E7",
+                    "E7",
                     "E7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A7+",
-                    "C°",
-                    "Bm7",
                     "E7",
-                    "F#m7",
-                    "B7/9",
-                    "Bm7"
+                    "E7",
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "E7",
-                    "Bm7",
+                    "E7",
+                    "E7",
+                    "E7",
                     "E7",
                     "A",
-                    "Bm7",
                     "E7",
-                    "Em7",
-                    "A7"
+                    "E7",
+                    "A7",
+                    "A7",
+                    "Eb°",
+                    "Eb°",
+                    "F#7",
+                    "F#7",
+                    "B7/9",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "D7+",
+                    "A7",
+                    "A7",
                     "Eb°",
-                    "C#m7",
+                    "Eb°",
                     "F#7",
                     "B7/9",
-                    "Bm7",
+                    "B7/9",
                     "E7",
-                    "A7+"
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
             2,
             3,
-            4
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Tú me aco",
-            "stumbras",
-            "te/nA todas es"
-        ],
-        [
-            "as cos",
-            "as/nY tú me"
-        ],
-        [
-            " enseñ",
-            "aste/nQue son "
-        ],
-        [
-            "maravillo",
-            "sas",
             "",
-            "/nSu"
+            "",
+            "/n"
         ],
         [
-            "til, llegaste a",
-            " mi/nComo la "
+            "Tu me ",
+            "acostumb",
+            "raste to",
+            "das esas co",
+            "sas ",
+            "tu me enseña",
+            "ste que son ",
+            "marav",
+            "illosas /n"
         ],
         [
-            "tentación",
-            "/nLle"
+            "Su ti ",
+            "llegaste mi c",
+            "omo una tent",
+            "ación /n"
         ],
         [
-            "nando de an",
-            "siedad/nMi cor"
+            "Llenand ",
+            "mi ansiedad, ",
+            "mi corazón /n"
         ],
         [
-            "azón",
-            "/nYo no c"
+            "Yo ",
+            "no compr",
+            "endía cóm ",
+            "se fed",
+            "ía \n\nEn ",
+            "tu mundo ra",
+            "ro por ",
+            "ti apren",
+            "dí \n\nPor eso ",
+            "me preg",
+            "unto ver ",
+            "que me olvidas",
+            "te \n\nPor qué ",
+            "no me enseñaste c",
+            "ómo se vive ",
+            "sin ti ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oncebí",
-            "a/nComo s"
+            "Por eso ",
+            "me pregu",
+            "nto ver que ",
+            "me olvidas",
+            "te \n\nPor qué no ",
+            "me enseñaste cóm ",
+            "se vive sin ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "ti ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "e quería/nEn tu m"
-        ],
-        [
-            "undo rar",
-            "o/nY por ti a"
-        ],
-        [
-            "prendí",
-            "/nPor eso m"
-        ],
-        [
-            "e pregu",
-            "nto/nAl ver que m"
-        ],
-        [
-            "e olvidas",
-            "te/nPor que no "
-        ],
-        [
-            "me enseñaste/nComo se "
-        ],
-        [
-            "vi   -   ",
-            "ve sin t",
-            "i."
+            "Por eso me pregunto ver que me olvidaste "
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "P7ZweQ7a9Is",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

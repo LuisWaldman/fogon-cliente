@@ -2,166 +2,286 @@
     "cancion": "la-flecha",
     "banda": "atahualpa-yupanqui",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "D7",
+                    "E",
+                    "E",
+                    "C",
+                    "F#",
+                    "E",
+                    "B",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "Am",
-                    "B7",
                     "Em",
+                    "B7",
+                    "B7",
                     "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
                     "D7",
-                    "G"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
                     "Am",
                     "D7",
-                    "G",
+                    "Am",
+                    "D7",
                     "Em",
                     "D7",
-                    "G",
                     "B7",
-                    "Em"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B7",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D7",
+                    "Em",
+                    "D7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            " Llenen mi boca de ar",
-            "ena/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " si quieren callar mi v",
-            "oz./n"
+            "Llenen mi bo",
+            "ca de arena, ",
+            "si quieren c",
+            "allar mi v",
+            "oz, no he ",
+            "de morirme de pen",
+            "a, la fl",
+            "echa ya está en el a",
+            "ire, la ",
+            "flecha  ya está en el ",
+            "aire p",
+            "ara llenars ",
+            "de sol. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " De nada s",
-            "irve la pen",
-            "a./n"
+            "A",
+            "nde romper mi ",
+            "guita",
+            "rra para que no c",
+            "ante yo, ",
+            "no he de aflig",
+            "irme por eso, ",
+            "la flecha ya e",
+            "stá en el aire, ",
+            "la flecha ya ",
+            "está  en el a",
+            "ire para l",
+            "lenarse de s",
+            "ol. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " La flecha v",
-            "uela en el ai",
-            "re/n"
+            "Sin amor ",
+            "rodeado de olv",
+            "ido, sol",
+            "itario el corazó",
+            "n, yo ",
+            "no he de bajar los br",
+            "azos, la ",
+            "flecha ya está en el ",
+            "aire, la ",
+            "flecha ya está en ",
+            "el aire p",
+            "ara llenars ",
+            "de sol. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "aunque me ",
+            "quiten  los ojo",
+            "s, lo mism ",
+            "he de verlo yo, ",
+            "con los ",
+            "ojos de mi her",
+            "mano, dond",
+            "e la flecha cayó, ",
+            "con los ",
+            "ojos de mi he",
+            "rmano, do",
+            "nde la flecha c",
+            "ayó, después ",
+            "de volar vola",
+            "ndo, pa",
+            "ra llenarse de s",
+            "ol, despu",
+            "és de volar v",
+            "olando, ",
+            "",
+            "para ll",
+            "enarse de s",
+            "ol. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " La flecha v",
-            "uela en el ai",
-            "re/n"
-        ],
-        [
-            " para llenarse de s",
-            "ol./n"
-        ],
-        [
-            " Han de romper mi guit",
-            "arra/n"
-        ],
-        [
-            " para que no cante y",
-            "o,/n"
-        ],
-        [
-            " yo no me af",
-            "lijo por es",
-            "o./n"
-        ],
-        [
-            " La flecha vu",
-            "ela en el ai",
-            "re/n"
-        ],
-        [
-            " La flecha v",
-            "uela en el ai",
-            "re/n"
-        ],
-        [
-            " para llenarse de s",
-            "ol./n"
-        ],
-        [
-            " Sin amor, rodeado, de olv",
-            "ido,/n"
-        ],
-        [
-            " solitario el coraz",
-            "n,/n"
-        ],
-        [
-            " yo no he de baj",
-            "ar los braz",
-            "os./n"
-        ],
-        [
-            " La flecha vu",
-            "ela en el ai",
-            "re/n"
-        ],
-        [
-            " La flecha v",
-            "uela en el ai",
-            "re/n"
-        ],
-        [
-            " para llenarse de s",
-            "ol./n"
-        ],
-        [
-            " Si me quitaran los o",
-            "jos,/n"
-        ],
-        [
-            " lo mismo he de verlo y",
-            "o/n"
-        ],
-        [
-            " con los o",
-            "jos de mi herma",
-            "no,/n"
-        ],
-        [
-            " donde la fl",
-            "echa cayó",
-            "/n des"
-        ],
-        [
-            "pués de vo",
-            "lar vola",
-            "ndo/n"
-        ],
-        [
-            " para llenarse de s",
-            "ol."
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hfr4TBslPvw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

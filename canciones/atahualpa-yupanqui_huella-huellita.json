@@ -2,74 +2,376 @@
     "cancion": "huella-huellita",
     "banda": "atahualpa-yupanqui",
     "escala": "Dm",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "C#m",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Dm",
-                    "A7",
-                    "G",
-                    "E7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
                     "Dm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A7",
+                    "Dm",
+                    "Dm",
                     "Dm",
                     "Dm",
                     "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "Dm",
                     "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
                     "Dm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "En el cerro está nev",
-            "ando,",
-            "     ",
-            "  I/nHu"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ella, huella, huellita, mi ",
-            "colorao,/nya no me queda nada todo l"
+            "En ",
+            "el cerro está ",
+            "nevand ",
+            "",
+            "la ",
+            "senda ya ",
+            "no se ve. /n"
         ],
         [
-            "o he dao./nHu"
+            "P",
+            "ero te",
+            "ngo bue",
+            "n caball",
+            "o, no ",
+            "me he de quedar ",
+            "de pi",
+            "e. ",
+            "/n"
         ],
         [
-            "ella, huella, huellita, del ",
-            "corazón,/n"
+            "En ",
+            "el cerro está ",
+            "nevand",
+            "o, ",
+            "la s",
+            "enda ya ",
+            "no se ve. ",
+            "/n"
         ],
         [
-            "alúmbrame el cam",
-            "ino que y",
-            "a me voy",
-            "./n"
+            "Pero t",
+            "engo bue",
+            "n caba",
+            "llo, ",
+            "no me ",
+            "he de quedar ",
+            "de pie",
+            ". /n"
         ],
-        []
+        [
+            "Hue",
+            "lla, huella ",
+            "huellita, ",
+            "mi colo",
+            "rado, ya ",
+            "no me queda nada",
+            ", t",
+            "odo lo he dado. /n"
+        ],
+        [
+            "Huella, hue",
+            "lla, huellita, ",
+            "del corazón ",
+            "alumb",
+            "rame el camino ",
+            "que ya me vo",
+            "y. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est",
+            "os fríos nu",
+            "nca ma",
+            "ta",
+            "n, ",
+            "tampoco mata ",
+            "el dolo",
+            "r, ",
+            "rigo",
+            "res ya no me ",
+            "asustan ",
+            "/n"
+        ],
+        [
+            "Sé and",
+            "ar solo ",
+            "sin am",
+            "or, ",
+            "",
+            "estos frí",
+            "os nunc ",
+            "ma",
+            "ta",
+            "n, t",
+            "ampoco mata ",
+            "el dolor",
+            ", ",
+            "r",
+            "igores ya ",
+            "no me as",
+            "usta",
+            "/n"
+        ],
+        [
+            "Sé andar s",
+            "olo sin ",
+            "am",
+            "or",
+            ". /n"
+        ],
+        [
+            "Huella, hu",
+            "ella, huellit",
+            "a, mi co",
+            "lorado, ",
+            "ya no me queda nad",
+            "a, to",
+            "do lo he dado. \n\nHu",
+            "ella, hue",
+            "lla, huellit",
+            "a, del cora",
+            "zón, a",
+            "lumbrame el ca",
+            "mino ",
+            "que ",
+            "ya me vo",
+            "y. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ZSUYpSH5FFc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

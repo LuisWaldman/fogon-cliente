@@ -8,137 +8,522 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "F",
+                    "C",
+                    "D",
                     "Dm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
                     "Bb",
                     "C",
-                    "A7",
-                    "Dm",
+                    "F",
                     "Bb",
-                    "C"
+                    "Bb",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "F",
-                    "Bb",
                     "F",
-                    "Bb",
+                    "F",
                     "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bb",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
                     "C",
                     "Bb",
-                    "C",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
                     "F",
                     "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
                     "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bb",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bb",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
                     "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "Por que prometer/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "y caer en el er",
-            "ror/nde casi tod"
+            "Est ",
+            "es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "os./n"
+            "E",
+            "sta ",
+            "es ",
+            "una ",
+            "",
+            "",
+            "canción en e",
+            "s",
+            "p",
+            "a",
+            "de rock argentino. \n\nQ",
+            "uérrame e",
+            "star beb",
+            "iendo en o",
+            "tro",
+            "s \n\nC",
+            "uando el des",
+            "amor nos l",
+            "leg",
+            "a /n"
         ],
         [
-            "sabiendo que el amor/nen pleno vue"
+            "De que si",
+            "rven al",
+            "ian",
+            "zas /n"
         ],
         [
-            "lo/nperd"
+            "Inyectand ",
+            "amor en ",
+            "ve",
+            "nas /n"
         ],
         [
-            "iendo altura va/npoquito a po"
+            "Se lev",
+            "anta el c",
+            "ora",
+            "zón /n"
         ],
         [
-            "co/n"
+            "Cuando el ",
+            "desamor  nos t",
+            "oca \n\nPara a",
+            "quel caula de ",
+            "oro \n\nIntent",
+            "ando ele boca b",
+            "oca \n\nSe d",
+            "espierta el c",
+            "orazó",
+            "n \n\nMejor ",
+            "mil vec",
+            "es \n\nAmor ",
+            "de hech",
+            "o \n\nMejor ",
+            "mil v",
+            "ec",
+            "es \n\nDe ",
+            "amor ",
+            "dese",
+            "cho \n\nMejo ",
+            "mil ve",
+            "ces \n\nA",
+            "mor de h",
+            "echo \n\nMe",
+            "jor mil v",
+            "ec",
+            "es/n"
         ],
         [
-            "Por que maniatar/ny "
+            "De a",
+            "mor de",
+            "secho ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "obligar al coraz",
-            "ón/na darlo to"
+            "Por qué ma",
+            "niatar los senti",
+            "mientos o",
+            "bliga",
+            "al cor",
+            "azón ",
+            "darlo ",
+            "todo  /n"
         ],
         [
-            "do./n"
+            "Atan",
+            "do unos la",
+            "bios unos ",
+            "bes",
+            "os un ",
+            "día ",
+            "querrán  e",
+            "star /n"
         ],
         [
-            "atando a unos labios/nunos be"
+            "Bebiendo ",
+            "en ot",
+            "ros /n"
         ],
         [
-            "sos/nque un d"
+            "Cuando el ",
+            "desamor nos ",
+            "ll",
+            "ega /n"
         ],
         [
-            "ia querran estar",
-            "/nbebiendo en ot"
+            "De que ",
+            "sirven ",
+            "alia",
+            "nzas /n"
         ],
         [
-            "ros/ncuando el des"
+            "Inye",
+            "ctando amor ",
+            "en ve",
+            "nas /n"
         ],
         [
-            "amor nos llega/nde que sirven alian"
+            "Se ",
+            "levanta el ",
+            "corazón  ",
+            "/n"
         ],
         [
-            "zas/nni inyetando amor en "
+            "Cuan",
+            "do el desamor ",
+            "nos toca \n\nP",
+            "ara aquel cau",
+            "la de oro \n\nI",
+            "ntentando ele ",
+            "boca  boca /n"
         ],
         [
-            "vena/nse levanta el corazo"
+            "Se despierta el ",
+            "coraz",
+            "ón \n\nMej",
+            "or mil vec",
+            "es \n\nA",
+            "mor de h",
+            "echo \n\nMe",
+            "jor mil v",
+            "ec",
+            "es /n"
         ],
         [
-            "n./ncuando el desamor nos t"
+            "De amo",
+            "r dese",
+            "cho \n\nMej",
+            "or mil ve",
+            "ces \n\nA",
+            "mor de ",
+            "hecho  \n\nM",
+            "ejor mil ",
+            "ve",
+            "ces ",
+            "/n"
         ],
         [
-            "oca/npara que jaula de "
+            "De amo",
+            "r de",
+            "secho ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oro/nse despierta el cora"
-        ],
-        [
-            "zon./nmejor "
-        ],
-        [
-            "mil veces/namor de h"
-        ],
-        [
-            "echo/nmejor mil v"
-        ],
-        [
-            "eces",
-            "/nque amor desh"
-        ],
-        [
-            "echo"
+            "De amor desecho "
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0wNEmfWcKDI",
-            "delay": 0
+            "delay": 6000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

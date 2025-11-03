@@ -2,74 +2,283 @@
     "cancion": "camino-a-los-valles",
     "banda": "atahualpa-yupanqui",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
+                    "G",
                     "A7",
-                    "D"
+                    "G",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "D",
-                    "A7",
-                    "G",
-                    "G",
-                    "A7",
+                    "D",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "G",
+                    "A7",
+                    "G",
+                    "G",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A7",
+                    "A7",
+                    "G",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "argueritas gu",
-            "apas/nmarchando adel"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ante;/npi"
+            "C",
+            "anta que te encanta el cam",
+            "ino los valles, que ",
+            "esta pena mía no la sab",
+            "e nadie. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "edras en la se",
-            "nda,    I/nC"
+            "Cargueri",
+            "ta guapa mar",
+            "chando adela",
+            "nte \n\nPiedra ",
+            "en la senda",
+            ", cantos en el a",
+            "ire ",
+            "",
+            "/n"
         ],
         [
-            "anta que te c",
-            "anta/nc"
+            "En los ",
+            "apeadero ",
+            "se aflojan las h",
+            "inchas \n\nMien",
+            "tras en el cer",
+            "ro va muriendo ",
+            "el día ",
+            "",
+            "/n"
         ],
         [
-            "amino a los va",
-            "lles/n¡Q"
+            "Ca",
+            "nta que te encan",
+            "ta el camino los v",
+            "alles, ",
+            "que esta pena mía ",
+            "no la sabe nad",
+            "ie. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ue esta pena m",
-            "ía/nno la sabe n"
+            "P",
+            "asamos la no",
+            "che rodeándolo al ",
+            "fuego \n\nL",
+            "uces de espe",
+            "ranza, sombras de ",
+            "recuerdo /n"
         ],
         [
-            "adie!/n"
+            "Luces  de esper",
+            "anza, sombras de ",
+            "recuerdo  /n"
         ],
-        []
+        [
+            "La aurora sangr",
+            "ando como un ",
+            "corazón ",
+            "enseñar de nu",
+            "evo que falta un ",
+            "tiro ",
+            "enseñar de nue",
+            "vo que falta un ",
+            "tiro \n\nCan",
+            "ta que te encan",
+            "ta el camino los ",
+            "valles, que ",
+            "esta pena mía ",
+            "no la sabe nad",
+            "ie. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Gracias por ver el video. "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kEVYctFKgag",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

@@ -2,37 +2,132 @@
     "cancion": "zamba-del-grillo",
     "banda": "atahualpa-yupanqui",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "D",
+                    "C#",
+                    "C#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "D7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
-                    "A7",
-                    "D7",
-                    "C",
                     "G",
-                    "E7",
-                    "A"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D7",
                     "G",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
                     "G"
                 ]
             }
@@ -41,59 +136,126 @@
             0,
             1,
             2,
-            2,
-            0
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "os cerros",
-            " Tucu",
-            " manos /n   me "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "llevaron l",
-            "os ca",
-            "minos /n   "
+            "Esta  es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "y me trajeron de ",
-            "vuelta              bis en  /n   "
+            "Es",
+            "ta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Como ese grillo del ",
-            "campo /n   "
+            "Esta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "que solitario can",
-            "taba /n   "
+            "E",
+            "sta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "asi perdido en la ",
-            "noche /n   tambièn era un"
+            "Est",
+            "a es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " grillo viday mi",
-            " zamba /n   "
-        ],
-        [
-            "asi perdido en la ",
-            "noche /n   se va mi "
-        ],
-        [
-            "zamba , p",
-            "alomi",
-            " tay.. "
+            "Esta es una canción en español de rock argentino. \n\nE",
+            "sta es una canción en español de rock argentino. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "yVL9wPEksTY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

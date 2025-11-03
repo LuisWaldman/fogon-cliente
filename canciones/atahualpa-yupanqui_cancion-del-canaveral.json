@@ -2,17 +2,33 @@
     "cancion": "cancion-del-canaveral",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
                     "Am",
-                    "Dm"
+                    "Dm",
+                    "Dm",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "Am",
+                    "Am"
                 ]
             },
             {
@@ -20,39 +36,220 @@
                 "acordes": [
                     "Am",
                     "E7",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "----0---/n"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Muele, que muele el trapiche,/n"
+            "Muele que mue",
+            "le el trapiche, ",
+            "en su moler, en su m",
+            "oler. \n\nHasta ",
+            "la vida del hombre muel ",
+            "tan bien, muele ",
+            "tan bien, has",
+            "ta la vida del hombre muele ",
+            "tan bien, muele ",
+            "tan bien. /n"
         ],
         [
-            "Y en su moler, y e",
-            "n su moler,/n"
+            "Tumba",
+            "ú sobre la manoja, ",
+            "pobre  de mí, pobre ",
+            "de mí, ",
+            "sin que me asime consuel",
+            "os el yarabi, el ",
+            "yarabi. /n"
         ],
         [
-            "Hasta la vida del h",
-            "ombre,    ]"
+            "Ver",
+            "de cañita de azúcar, ",
+            "que dulce es, ",
+            "que dulce es, ",
+            "pero  al final de las af",
+            "ras se vuelve hiel, ",
+            "se vuelve hiel. /n"
+        ],
+        [
+            "Yo ",
+            "tengo un sueño secre",
+            "to, vivo por él, v",
+            "ivo por él, ",
+            "no hay trapiche que mi s",
+            "ueño pueda moler, ",
+            "pueda moler, ",
+            "no hay trapiche que mi s",
+            "ueño pueda moler, ",
+            "pueda moler. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ha de ",
+            "llegar algún tiempo, c",
+            "uando será, cuan",
+            "do será, ",
+            "en que te sienta mi amigo \n\nCa",
+            "ña \n\nVeral, \n\nCañ",
+            "a \n\nVeral. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El sol de algun",
+            "a mañana me alum",
+            "brará, me alum",
+            "brará, canta",
+            "ndo sobre los hurcos \n\nCaña /n"
+        ],
+        [
+            "Veral,  \n\nCaña /n"
+        ],
+        [
+            "Veral.  /n"
+        ],
+        [
+            "Muele que ",
+            "muele el trapiche, ",
+            "en su moler, ",
+            "en su moler",
+            ", hasta la vida del hombr ",
+            "muele tan bien, ",
+            "muele tan ",
+            "bien. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hsc_55Y2vOc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

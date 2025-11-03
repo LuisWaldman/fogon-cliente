@@ -2,67 +2,243 @@
     "cancion": "en-aquel-tiempo",
     "banda": "atahualpa-yupanqui",
     "escala": "B",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "B",
+                    "F#",
+                    "Bm",
+                    "G",
+                    "F",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
                     "F#",
-                    "E"
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B",
                     "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B",
+                    "B",
                     "B",
                     "E",
                     "F#",
-                    "B"
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "   Engrillado y entre cua",
-            "tro   I/nas"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "í crucé Buenos Aires,        I/n"
+            "Engr",
+            "illado entre c",
+            "uatro hombres de tor",
+            "bo mirar, \n\nEngril",
+            "lado entre cuatro ",
+            "hombres de torbo ",
+            "mirar, \n\nAsí crucé \n\nBu",
+            "enos \n\nAires por cantar ",
+            "la libertad. \n\nAsí ",
+            "crucé \n\nBuenos \n\nAires por ",
+            "cantar  la ",
+            "l",
+            "i",
+            "b",
+            "e",
+            "r",
+            "t/n"
         ],
         [
-            "   Engrillado y entre cua",
-            "tro/nhombres de torvo mir"
+            "Anchos port",
+            "ones se abrieron para v",
+            "olverse c",
+            "er",
+            "ra/n"
         ],
         [
-            "ar/nas"
+            "Pabellones p",
+            "asadizos al fondo ",
+            "la oscuridad. \n\nPabel",
+            "lones pasadizos al f",
+            "ondo la os",
+            "curi",
+            "dad. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "í crucé Buenos Aires,/npor am"
+            "Por ",
+            "mi mujer mi niño ",
+            "recé  lo que sé ",
+            "rezar,  \n\nPor mi ",
+            "mujer mi niño re",
+            "cé lo que sé reza",
+            "r, \n\nMi guitarra clara ",
+            "onda sabe todo lo de",
+            "más, \n\nMi guitarra cla",
+            "ra onda sabe to",
+            "do lo demás. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ar la liberta",
-            "d."
+            "Engrillado  entre c",
+            "uatro hombres de torbo ",
+            "mirar, \n\nAsí crucé \n\nBu",
+            "enos \n\nAires por amar la ",
+            "li",
+            "be",
+            "rt",
+            "ad. ",
+            "/n"
+        ],
+        [
+            "Duerme ",
+            "el tirano la sies",
+            "ta con metralleta la ",
+            "par,  \n\nDuerme el tir",
+            "ano la siesta con metra",
+            "lleta la par, \n\nPor si p",
+            "asa un inocente canta",
+            "ndo la libertad. \n\nPor ",
+            "si pasa un inocente c",
+            "antando la libert",
+            "ad. ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "wB3fbxO0U2U",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

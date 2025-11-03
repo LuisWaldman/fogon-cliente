@@ -2,16 +2,53 @@
     "cancion": "viene-clareando",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
+                    "Am G",
                     "E",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am"
                 ]
             },
@@ -19,165 +56,160 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
-                    "G",
-                    "F",
+                    "Am",
                     "E",
+                    "Am",
+                    "Am",
                     "Dm",
-                    "C",
+                    "Am",
+                    "G",
+                    "Dm",
                     "E",
-                    "Am"
+                    "Am",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
+                    "Am",
+                    "G Dm",
+                    "Dm",
                     "Am",
                     "G",
-                    "F",
-                    "E",
-                    "Dm",
-                    "C",
-                    "E"
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "G",
-                    "F",
-                    "E",
-                    "Dm",
-                    "C",
-                    "E",
+                    "Am",
                     "Am",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
-            1,
-            0,
             3,
-            1
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Viditay ya me",
-            " voy/nDe los pagos del Tuc"
-        ],
-        [
-            "umán/n"
-        ],
-        [
-            "Y en el aconquija vi",
-            "ene cl",
-            "arean",
-            "do/n"
-        ],
-        [
-            "Viditay nunca te ",
-            "he de ",
-            "olvidar ",
-            "  /n"
-        ],
-        [
-            "Viditay trist",
-            "e está/nSuspirando mi cora"
-        ],
-        [
-            "zón/n"
-        ],
-        [
-            "Y con el pañuelo ",
-            "te v",
-            "oy dicie",
-            "ndo /n"
-        ],
-        [
-            "Paloma vidit",
-            "a adió",
-            "s adió",
-            "s  /nViditay ya m"
-        ],
-        [
-            "e voy/nY se me hace que no hay vo"
-        ],
-        [
-            "lver/nMalaya mi suerte "
-        ],
-        [
-            "tanto q",
-            "uererte",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Vidita y ten",
-            "erte que ",
-            "perder",
-            "/nMalaya mi suerte "
-        ],
-        [
-            "tanto q",
-            "uererte",
+            "Vidita, ",
+            "ya me voy de ",
+            "los pagos del \n\nTucu",
+            "mán. \n\nEn el aconquija vi",
+            "ene clareando, vidita",
+            ", nunca te di olvi",
+            "dar. \n\nEn el aconquija v",
+            "iene clareando, vid",
+            "ita, nunca te di olvi",
+            "dar. \n\nVidita, ",
+            "tristeza, ",
+            "suspirando mi c",
+            "orazón. con el pa",
+            "ñuelo te voy diciendo, ",
+            "vidita, paloma, adi",
+            "ós, adiós. con el pa",
+            "ñuelo te voy diciendo, vi",
+            "dita, paloma, adi",
+            "ós, adiós. con el pañuelo te voy diciendo, vidi",
+            "ta, ",
+            "p",
+            "a",
+            "l",
+            "o",
+            "m",
+            "a, ",
+            "a",
+            "d",
+            "i",
+            "adiós. ",
             "/n"
         ],
         [
-            "Viene clarea",
-            "ndo mi ",
-            "padecer ",
-            "   /n"
+            "Al clar",
+            "ín yo me iré ",
+            "pa' los pagos de \n\nChequ",
+            "iví. hasta las espuela ",
+            "te irán diciendo, vidita, ",
+            "no te olvides de ",
+            "mí. hasta las espuelas ",
+            "te irán diciendo, vidit",
+            "a, no te olvides de ",
+            "mí. \n\nZamba sí, ",
+            "penas no, ",
+            "eso quiere mi corazón. /n"
         ],
         [
-            "Al clarear yo me ir",
-            "é/nA mis pagos de Chasqui"
+            "Pero hasta la zamba se v",
+            "uelve triste, vidita, c",
+            "uando se dice adiós. \n\nP",
+            "ero hasta la zamba se vuel",
+            "ve triste, vidita, cu",
+            "ando se dice adiós. /n"
         ],
         [
-            "vil/nY hasta las espu"
+            "Vidita, ",
+            "ya me voy, se me ",
+            "hace que nueve volver /n"
         ],
         [
-            "elas te ir",
-            "án dicie",
-            "ndo/n"
+            "Mal es mi suerte tanto qu",
+            "ererte, vidita, ",
+            "tenerte que perder. /n"
         ],
         [
-            "Vidita no ",
-            "te olvide",
-            "s de mí ",
-            "/nZambas sí penas"
-        ],
-        [
-            " no/nEso quiere mi coraz"
-        ],
-        [
-            "ón/nPero hasta la z"
-        ],
-        [
-            "amba se vu",
-            "elve tris",
-            "te /n"
-        ],
-        [
-            "Vidita cu",
-            "ando se dic",
-            "e adiós",
-            "    "
+            "Mal es mi suerte tanto querer",
+            "te, viene clareando ",
+            "mi padecer. ",
+            "",
+            "",
+            "",
+            "hasta la zamba se vuelve triste, vidita, cuando se dice adiós. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "pKv9gsFxFcw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

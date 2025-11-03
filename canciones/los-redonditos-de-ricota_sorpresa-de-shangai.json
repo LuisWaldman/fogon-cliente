@@ -8,10 +8,25 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "D",
+                    "Cº",
+                    "E",
+                    "G5",
+                    "G5",
+                    "Cº",
+                    "Cº",
+                    "G5",
+                    "G5",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Cº",
-                    "Cº",
                     "Cº"
                 ]
             },
@@ -19,39 +34,127 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Cº",
-                    "E",
+                    "D",
                     "D",
                     "Cº",
                     "Cº",
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "E",
                     "E",
                     "D",
-                    "E"
+                    "D",
+                    "D",
+                    "D",
+                    "Cº",
+                    "Cº",
+                    "Cº"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "G5",
-                    "B",
-                    "D",
-                    "C",
                     "E",
-                    "D5",
-                    "Cº"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G5",
+                    "D5",
+                    "D5",
+                    "Cº",
+                    "Cº"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "Cº"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Cº",
                     "Cº",
                     "G5",
-                    "B",
-                    "D",
-                    "C",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "Cº",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G5",
+                    "G5",
                     "E",
-                    "D5",
-                    "E5"
+                    "E",
+                    "E",
+                    "E",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
                 ]
             }
         ],
@@ -59,73 +162,146 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "/n      estoy acalorado"
-        ],
-        [
-            "/n      voy a chasquear la lengua, un poco"
-        ],
-        [
-            "/n      voy a escupir misiles"
-        ],
-        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "      ¡Puro vene",
-            "no,/nAcostumbre el pelle"
+            "Est",
+            "a es una canción en español de rock argentino. /n"
         ],
         [
-            "jo/nvoy a tumbarme a la"
+            "Ten",
+            "go el hocico l",
+            "isto, ",
+            "estoy calor",
+            "ado. \n\nVoy ",
+            "chasquear la leng",
+            "ua un poco, ",
+            "voy escupir mi si",
+            "le. \n\nPu",
+            "ro veneno, ",
+            "risa ",
+            "que due",
+            "le. \n\nA",
+            "costumbre el besi",
+            "ejo ",
+            "los ultraviol",
+            "etas. \n\nVoy ",
+            "tumbar de alaba",
+            "rtola sobre u",
+            "nos tercios pelos. /n"
         ],
         [
-            " Bartola/n"
+            "El que ",
+            "abandona,  ",
+            "no tiene ",
+            "prem",
+            "io. ",
+            "quien le ",
+            "importa, ",
+            "toda esa ",
+            "linda. /n"
         ],
         [
-            "¡El que abandona",
+            "Si te s",
+            "oporta, ",
+            "quien le i",
+            "mporta. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "no tiene premio!",
-            "/n   "
+            "E",
+            "stán contando ",
+            "chistes  de",
+            "trás de las ",
+            "paredes.  /n"
         ],
         [
-            " vuelta ",
-            "1",
+            "Si de reír se ",
+            "trata, creo, ",
+            "son verdaderos ",
+            "dramas. /n"
+        ],
+        [
+            "El bote ro",
+            "to, ",
+            "quien le import",
+            "a. \n\nMis ",
+            "penas como p",
+            "iedras, ",
+            "caen, ruedan ",
+            "escapan.  \n\nF",
+            "alopas duras en t",
+            "ipos blandos, ",
+            "ahuecan corazon",
+            "es. \n\nCa",
+            "ras de liebre",
+            ", ",
+            "de liebre muert",
+            "a. ",
+            "",
+            "quien le importa, ",
+            "to",
+            "da esa linda. /n"
+        ],
+        [
+            "Si ",
+            "te soporta ",
+            "qui",
+            "en le importa. /n"
+        ],
+        [
+            "Pur ",
+            "veneno, r",
+            "isas ",
+            "que duel",
+            "e. \n\nSi te ",
+            "soporta ",
+            "quien le ",
+            "importa. ",
             "",
             "",
-            "",
-            "/nEstán contando ch"
-        ],
-        [
-            "istes/nsi de reír se tra"
-        ],
-        [
-            "ta, creo,/n¿A"
-        ],
-        [
-            " quien l",
-            "e impo",
-            "rta? .",
-            "..1er v",
-            "uelta",
-            "/n¿A quien le importa?  a"
-        ],
-        [
-            "h.....   (ultima vuelta [8va)]"
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "iLX_-1_oaCM",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -8,23 +8,53 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A",
+                    "A7",
+                    "A7",
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A7",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
-                    "A",
-                    "Bm",
-                    "Em"
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "A7",
-                    "Em",
+                    "D",
+                    "A",
+                    "A",
                     "A",
                     "Em",
                     "A7",
-                    "A"
+                    "A7",
+                    "Em",
+                    "A",
+                    "A",
+                    "D",
+                    "Em",
+                    "A7",
+                    "A7",
+                    "A7"
                 ]
             },
             {
@@ -32,122 +62,479 @@
                 "acordes": [
                     "A7",
                     "A",
-                    "D",
-                    "Bm",
-                    "Em",
-                    "A7",
-                    "D"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A7",
+                    "D",
+                    "D",
                     "D",
                     "A",
+                    "A",
+                    "Bm",
                     "Bm",
                     "Em",
                     "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "D",
-                    "D"
+                    "A",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "Bm",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "D",
+                    "A",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A7",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
-            0,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "udamos/nporque hic"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "imos sin duda",
-            "rlo/nen esta fa"
+            "Esta  es una canción en español de rock argentino. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rsa que aca",
-            "bamos, un buen pape",
-            "l/ntan perf"
+            "Aplaudamo ",
+            "porque hicimos ",
+            "sin dudar",
+            "lo, ",
+            "en esta farsa que ",
+            "acabamos un ",
+            "buen papel",
+            ". \n\nTan ",
+            "perfecto que ",
+            "si hubiéramos ",
+            "roda",
+            "do los mil \n\nOscar ",
+            "de este año ",
+            "serían nuestros ",
+            "sin querer. ",
+            "/n"
         ],
         [
-            "ecto, que si hubieramos rod",
-            "ado/nlos mil oscars de e"
+            "Aplaudamos por",
+            "que amando sin ",
+            "amarnos ",
+            "jamá ",
+            "notamos nad ",
+            "extraño ni ",
+            "tú ni yo. /n"
         ],
         [
-            "ste año/nserian nuestros sin qu"
+            "Sin ",
+            "ensayos  la ",
+            "secuencia era p",
+            "erfect",
+            "a, tú pensando en ",
+            "otra vida, ",
+            "yo pensando en ",
+            "otro  amor. /n"
         ],
         [
-            "erer/n"
+            "El g",
+            "uión era est",
+            "upendo, dos ",
+            "muchachos  se e",
+            "namoran en ",
+            "la cresta de la ",
+            "ola él d",
+            "escubre otra pe",
+            "rsona ella ",
+            "otro que no ",
+            "es él. /n"
         ],
         [
-            "El guión era estupendo/ndos muchachos se ena"
+            "Pero  t",
+            "emen confe",
+            "sarlo, no se ",
+            "quieren  hacer ",
+            "daño  fin",
+            "giendo ocu",
+            "ltando llega el ",
+            "día en que sus ",
+            "bocas  no se l",
+            "legan en",
+            "tender. /n"
         ],
         [
-            "moran/ny en la cr"
+            "Ya eran b",
+            "esos maquill",
+            "ados, des",
+            "baídos los ab",
+            "razos, era el ",
+            "fin aquella hist",
+            "oria se aca",
+            "baba la p",
+            "arod",
+            "que era ab",
+            "surdo so",
+            "stener/n"
         ],
         [
-            "esta de la ola/nél des"
+            "Brav ",
+            "amor, bra",
+            "vo amor, b",
+            "ravo, ",
+            "que magn",
+            "íficos acto",
+            "res tú ",
+            "yo. /n"
         ],
         [
-            "cubre a otra persona/ny ella "
+            "Bravo  ",
+            "amor,  bravo ",
+            "amor,  br",
+            "avo, ",
+            "nos traji",
+            "mos, nos bu",
+            "rlamos ",
+            "de nuestro a",
+            "mor. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "a otro que no es él/nE"
+            "Aplaud",
+            "amos porque aman",
+            "do sin ama",
+            "rnos, ",
+            "jamás notam",
+            "os nada extra",
+            "ño ni tú ni ",
+            "yo. /n"
         ],
         [
-            "ran besos maquillados/ndes"
+            "Sin ensay",
+            "os la secuencia ",
+            "era perf",
+            "ecta, tú pensa",
+            "ndo en otra vi",
+            "da, yo pensa",
+            "ndo en otro amor. /n"
         ],
         [
-            "vaidos los abrazos/nera el "
+            "El ",
+            "guión era ",
+            "estupendo ",
+            "dos muchacho ",
+            "se enamoran ",
+            "en la cresta ",
+            "de la ola ",
+            "él descubre ",
+            "otra persona ",
+            "ella otro que ",
+            "no es ",
+            "él. \n\nPe",
+            "ro temen c",
+            "onfesarlo, ",
+            "no se quieren h",
+            "acer daño ",
+            "fingiendo ",
+            "ocultando  ll",
+            "ega el día en ",
+            "que sus bocas ",
+            "no se llegan ",
+            "entender /n"
         ],
         [
-            "fin de aquella historia/nse aca"
+            "Ya ",
+            "eran besos m",
+            "aquillados, ",
+            "desbaídos los ",
+            "abrazos, ",
+            "era el fin aquella ",
+            "historia  se ",
+            "acababa la ",
+            "paro",
+            "dia que ",
+            "era absurdo s",
+            "ostener. /n"
         ],
         [
-            "baba la parodia/nque era ab"
+            "Bra",
+            "vo amor ",
+            "bravo amor ",
+            "bra",
+            "vo, que ",
+            "magníficos  a",
+            "ctores tú ",
+            "yo. /n"
         ],
         [
-            "surdo soste",
-            "ner/nBr"
+            "Br",
+            "avo amor, ",
+            "bravo  amor, ",
+            "brav",
+            "o, nos t",
+            "rajimos, nos ",
+            "burla",
+            "mos de ",
+            "nuestro a",
+            "mor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "avo amor, bra",
-            "vo amor , brav",
-            "o/nque magn"
-        ],
-        [
-            "ificos actores tú y ",
-            "yo/nBr"
-        ],
-        [
-            "avo amor, brav",
-            "o amor, brav",
-            "o/nnos re"
-        ],
-        [
-            "mos, nos bur",
-            "lamos/nde nuestro am"
-        ],
-        [
-            "or/nApla"
-        ],
-        [
-            "udamos"
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "cR_MWYqQ05w",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }
