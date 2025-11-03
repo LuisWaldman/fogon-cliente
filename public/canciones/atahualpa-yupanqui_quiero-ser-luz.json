@@ -2,229 +2,364 @@
     "cancion": "quiero-ser-luz",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "E7",
                     "Am",
-                    "Dm",
-                    "F",
-                    "E7"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
-                    "Dm",
-                    "E7",
                     "Am",
-                    "Dm",
                     "E7",
-                    "Am"
+                    "F",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
                     "Dm",
-                    "E7",
-                    "Am",
-                    "E7",
-                    "Am"
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Dm",
+                    "E7",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "G",
-                    "C",
+                    "G",
                     "F",
-                    "E",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "F",
-                    "B7"
+                    "F",
+                    "G",
+                    "B7",
+                    "Dm",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "E7",
+                    "F",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "F",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Dm",
+                    "E7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
+                    "B7",
+                    "Dm",
+                    "E7",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
             3,
-            1,
-            0,
-            2,
-            0,
-            2,
-            3,
-            1
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Se me esta h",
-            "aciendo la no",
-            "che/n"
+            "",
+            "/n"
         ],
         [
-            "En la mitad de la tarde/n"
+            "Se me está siguiendo, ",
+            "se me está siguiendo, se me está siguiendo, ",
+            "se me está siguiendo, ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "No quiero volverme sombras/nQuiero ser "
+            "Se me está siguiendo ",
+            "la noche, ",
+            "en la ",
+            "mitad  de la tarde, /n"
         ],
         [
-            "luz y qued",
-            "arme/n"
+            "No ",
+            "quiero volverme s",
+            "ombra, ",
+            "quiero  ser luz q",
+            "uedarme, /n"
         ],
         [
-            "No q",
-            "uiero volverme so",
-            "mbra/nQuiero ser "
+            "No quiero vol",
+            "verme sombra, ",
+            "quiero ser luz ",
+            "quedarme, /n"
         ],
         [
-            "luz ",
-            "y queda",
-            "rme/n"
+            "Me fui ",
+            "quemando  en la noc",
+            "he, ",
+            "siguiendo  la misma s",
+            "enda, \n\nSie",
+            "mpre traje una gui",
+            "tarra, apague la ",
+            "última est",
+            "rella, \n\nS",
+            "iempre traje una gu",
+            "itarra, apague ",
+            "la última est",
+            "rella, /n"
         ],
         [
-            "Me fui quem",
-            "ando en la no",
-            "che/n"
+            "No sé que dicha b",
+            "usqué, ",
+            "ay que qu",
+            "imera, /n"
         ],
         [
-            "Siguiendo la misma senda/n"
+            "Que samba me quito ",
+            "el sueño",
+            ", que noche mi ",
+            "primaver",
+            "a, \n\nNo quiero volve",
+            "rme sombra, quiero ",
+            "ser luz q",
+            "uedar, ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Siempre atrás de una guitarra/nApagué l"
+            "Hoy que me ",
+            "pongo  pensa",
+            "r, ",
+            "solo  con verso en s",
+            "ilencio, \n\nMe ",
+            "miran los ojos de ",
+            "antes, ",
+            "viejos de ausencia ",
+            "de tiempo, /n"
         ],
         [
-            "a última e",
-            "strella/n"
+            "Me miran los o",
+            "jos de antes, vi",
+            "ejos de ausencia ",
+            "de tiempo, /n"
         ],
         [
-            "Siemp",
-            "re atrás de una guit",
-            "arra/nApagué l"
+            "La mism ",
+            "mirada siempre, ",
+            "de aquellos o",
+            "jos tan lejos, /n"
         ],
         [
-            "a última e",
-            "strella/n"
+            "Por fin ",
+            "me duermo en la noche, ",
+            "que alumbra el ",
+            "lucero viejo, /n"
         ],
         [
-            "No sé que dicha bus",
-            "qué/n"
+            "Por fin me d",
+            "uermo en la noche, que ",
+            "alumbra el lucero ",
+            "viejo,  /n"
         ],
         [
-            "Ay, qué ",
-            "quimera/n"
+            "No sé que d",
+            "icha busqué, ",
+            "ay que ",
+            "quimera, /n"
         ],
         [
-            "Qué zamba me quitó el sueño/nQu"
-        ],
-        [
-            " noche mi primave",
-            "ra/n"
-        ],
-        [
-            "No q",
-            "uiero volverme so",
-            "mbra/nQuiero ser "
-        ],
-        [
-            "luz ",
-            "y queda",
-            "rme/n"
-        ],
-        [
-            "Hoy que me p",
-            "ongo a pensa",
-            "r/n"
-        ],
-        [
-            "Solo converso en silencio/n"
-        ],
-        [
-            "Me miran los ojos de antes/nViejos de au"
-        ],
-        [
-            "sencia y de t",
-            "iempo/n"
-        ],
-        [
-            "Me m",
-            "iran los ojos de a",
-            "ntes/nViejos de au"
-        ],
-        [
-            "sencia y de t",
-            "iempo/n"
-        ],
-        [
-            "La misma m",
-            "irada si",
-            "empre/n"
-        ],
-        [
-            "De aquellos ojos tan lejos/n"
-        ],
-        [
-            "Por fin me duermo en la noche/nQue alumbra el"
-        ],
-        [
-            " lucero vi",
-            "ejo/n"
-        ],
-        [
-            "Por f",
-            "in me duermo en la no",
-            "che/nQue alumbra el"
-        ],
-        [
-            " lucero v",
-            "iejo/n"
-        ],
-        [
-            "No sé que dicha bus",
-            "qué/n"
-        ],
-        [
-            "Ay, qué ",
-            "quimera/n"
-        ],
-        [
-            "Qué zamba me quitó el sueño/nQu"
-        ],
-        [
-            " noche mi primave",
-            "ra/n"
-        ],
-        [
-            "No q",
-            "uiero volverme so",
-            "mbra/nQuiero ser "
-        ],
-        [
-            "luz ",
-            "y queda",
-            "rme"
+            "Que samba me quito ",
+            "el sueño, ",
+            "que noche mi ",
+            "primavera, \n\nNo ",
+            "quiero volver",
+            "me sombra, quiero ",
+            "ser luz ",
+            "quedar.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "UG3wPx8zKbk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

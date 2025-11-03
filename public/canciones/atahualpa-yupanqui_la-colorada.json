@@ -2,59 +2,202 @@
     "cancion": "la-colorada",
     "banda": "atahualpa-yupanqui",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "A",
+                    "A",
+                    "Em",
+                    "Em",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "D7",
-                    "G"
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "A",
-                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Soy del Cerro Colorao,/nande no "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "sabe llov",
-            "er./nAnde n"
+            "Soy de cerro c",
+            "olorauja, ande no sabe l",
+            "lover, anden ahí de ",
+            "paso  el río cuando le da por cr",
+            "ecer. ",
+            "",
+            "/n"
         ],
         [
-            "aide pasa el r",
-            "íio/ncuando"
+            "En piegras ",
+            "moldejones trabajan grandes ",
+            "chingos, martillan",
+            "do todo el día pa' que otro se vue",
+            "lva rico. ",
+            "",
+            "/n"
         ],
         [
-            " le da por cr",
-            "ecer."
+            "Pasaba un ch",
+            "ango cantando en una chat",
+            "a carguera, la mul ",
+            "iba pensando pucha que vida ful",
+            "era. \n\nEl zorro me ",
+            "llevo un pollo una tarda en los r",
+            "astriers, vides que usa",
+            "ba alpargatas si eran del número ",
+            "diez.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me ",
+            "fui para \n\nTacoyaco comprar ",
+            "un marchador, ",
+            "me trugui un zaino flaco, petici",
+            "to roncador. ",
+            "",
+            "/n"
+        ],
+        [
+            "Ag",
+            "ua le di un garabato que se estaba ",
+            "por secar, me ",
+            "ha apagado con flores que alegra mi ",
+            "sole",
+            "dad. ",
+            "/n"
+        ],
+        [
+            "De la mañ",
+            "ana la noche cantaba un chango en ",
+            "los yuyos, según me ",
+            "anoticiaron si había tragado un ",
+            "coyuyo.  \n\nChacarera, ",
+            "chacarera de mi cerro co",
+            "lorau, al mozo que es",
+            "tá bailando lo voy elegir pa' cu",
+            "ñau. ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "837h-6sE-DU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

@@ -2,53 +2,295 @@
     "cancion": "en-las-aguas-del-tolten",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 184,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "A#",
+                    "Am",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "C",
+                    "C",
+                    "G",
+                    "F#",
+                    "A#",
+                    "F",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "C",
                     "Am",
-                    "C"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
-                    "G",
+                    "Am",
+                    "Am",
                     "C",
-                    "G"
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "C",
-                    "G",
                     "Am",
-                    "G",
                     "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am",
-                    "C",
                     "G",
-                    "Am"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
@@ -56,142 +298,258 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
-            0,
             3,
-            2,
-            3,
-            2,
-            0,
-            1,
-            2,
-            0,
-            1,
-            2,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "En las aguas del Tolt",
-            "én,",
-            "/ntras tupido mator"
-        ],
-        [
-            "ral,",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "con donairoso vaiv",
-            "én/nl"
-        ],
-        [
-            "ava la i",
-            "ndia, su",
-            " chamal",
-            ".",
+            "Est ",
+            "es una canción en español de rock argentino. ",
             "",
             "",
             "",
-            "/nSe endereza y se des"
-        ],
-        [
-            "peja",
-            "/nsu amplia frente y, con ra"
-        ],
-        [
-            "zón,",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "lanza al aire su honda qu",
-            "eja/n"
-        ],
-        [
-            "a man",
-            "era d",
-            "e canción",
-            ".",
+            "Esta es una canc",
+            "ión en es",
+            "paño",
+            "de rock argentino. ",
             "",
-            "",
-            "",
-            "/nH"
-        ],
-        [
-            "uinca, t",
-            "regua. Hui",
-            "nca, pil",
-            "lo./n"
-        ],
-        [
-            "Me robar",
-            "on mi potr",
-            "illo/nmi ru"
-        ],
-        [
-            "ca, hua",
-            "ca y terne",
-            "ro. Oh",
-            ", oh, oh",
-            " Oh, ",
-            "oh, oh.",
             "/n"
         ],
         [
-            "Me robaron ",
-            "mi potri",
-            "llo/nmi ru"
-        ],
-        [
-            "ca, h",
-            "uaca y terne",
-            "ro. Oh,",
-            " oh, oh",
-            " Oh, ",
-            "oh, oh.",
-            "/nPero su canto no es "
-        ],
-        [
-            "canto",
-            "/nde alegría que no"
-        ],
-        [
-            " goza,",
+            "Sende",
+            "reza se d",
+            "espej",
+            "levanta su ",
+            "frente al ",
+            "sol ",
+            "lanza ",
+            "al aire su qu",
+            "eja m",
+            "anera de ",
+            "canción.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "es su pena y su quebr",
-            "anto,/n"
-        ],
-        [
-            "es su d",
-            "olor qu",
-            "e rebos",
-            "a.",
+            "Huí",
+            "nca tre",
+            "gua, ",
+            "huínc",
+            "a pillo ",
             "",
             "",
-            "",
-            "/nNgelay  polqui, ngelay "
-        ],
-        [
-            "mulke,",
-            "/nno hay alka, no hay achaw"
-        ],
-        [
-            "all,",
             "/n"
         ],
         [
-            "dice la india y refr",
-            "iega/n"
+            "H",
+            "uínca t",
+            "regua, ",
+            "huín",
+            "ca pillo /n"
         ],
         [
-            "su bur",
-            "do y ne",
-            "gro chamal",
-            ".",
+            "Me qu",
+            "itaste mi ",
+            "potril",
+            "lo, mi c",
+            "azabaca ",
+            "terne",
+            "ro \n\nMe quit",
+            "aste mi po",
+            "trillo, ",
+            "mi ruca g",
+            "uaca tern",
+            "ero /n"
+        ],
+        [
+            "Huín",
+            "ca tregu",
+            "a, ",
+            "huínca  p",
+            "illo /n"
+        ],
+        [
+            "Blan",
+            "co ladrón, ",
+            "blanco lad",
+            "rón ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me quitaste mi potrillo, mi cazabaca ternero \n\nSu c",
+            "anto no es ca",
+            "nto, ",
+            "ni alegrías que ",
+            "no gozan /n"
+        ],
+        [
+            "Es su ",
+            "pena, es su que",
+            "branto, es ",
+            "su dolor ",
+            "que r",
+            "ebo",
+            "san ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No ",
+            "hay nipolle",
+            ", no hay almulq",
+            "ue, no hay r",
+            "uca, no hay alc",
+            "hagual \n\nG",
+            "rita la i",
+            "ndia ref",
+            "riega su ",
+            "tosco  burd",
+            "os all",
+            "á ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Huí",
+            "nca treg",
+            "ua, ",
+            "huínca  p",
+            "ill",
+            "o \n\nHuí",
+            "nca tr",
+            "egua, ",
+            "huí",
+            "nca pi",
+            "llo /n"
+        ],
+        [
+            "Me qu",
+            "itaste mi ",
+            "potrill ",
+            "mi c",
+            "azabaca ",
+            "te",
+            "rne/n"
+        ],
+        [
+            "Me ",
+            "quita",
+            "ste mi pot",
+            "rillo, ",
+            "mi ruca g",
+            "uaca ter",
+            "nero \n\nHu",
+            "ínca t",
+            "regua, ",
+            "h",
+            "uínca p",
+            "illo \n\nB",
+            "lanco la",
+            "drón, ",
+            "blanco l",
+            "adrón \n\nMe ",
+            "quitaste mi ",
+            "potrill",
+            "o, mi c",
+            "azaba",
+            "ter",
+            "nero \n\nH",
+            "uínc",
+            "pill",
+            "o, blanc ",
+            "ladr",
+            "ón, ",
+            "blanco  la",
+            "drón ",
+            "",
             "",
             "",
             "",
@@ -202,10 +560,11 @@
         {
             "tipo": "Youtube",
             "id": "8Qt5080e5g4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

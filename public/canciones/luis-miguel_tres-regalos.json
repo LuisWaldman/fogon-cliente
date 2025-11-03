@@ -8,60 +8,181 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "G#",
+                    "C",
+                    "E7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
-                    "A7",
-                    "Dm",
+                    "E7",
+                    "E7",
                     "E7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
                     "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "Am",
-                    "A7",
-                    "Dm",
-                    "A7",
-                    "D",
-                    "Dm"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "me espero n",
-            "o voy a march",
-            "arme no voy a lejar",
-            "me/n  sin antes dec"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ir    ",
-            "que lloro",
-            " que s",
-            "ufro al mirar",
-            "te/n  y"
+            "Oye ",
+            "la confe",
+            "sión ",
+            "",
+            "/n"
         ],
         [
-            "o que soñe con tener una r",
-            "eina que manda",
-            "ra en mis"
+            "Con un cora",
+            "zón que ",
+            "está des",
+            "ierto /n"
+        ],
+        [
+            "Con tres palabras ",
+            "te dir ",
+            "todas mis c",
+            "osas \n\nCo",
+            "sas del cora",
+            "zón que ",
+            "son pr",
+            "eciosa/n"
+        ],
+        [
+            "Dame tus manos, v",
+            "en",
+            "toma las m",
+            "ías \n\nQue ",
+            "te voy co",
+            "nfiar ",
+            "las ansias m",
+            "ías /n"
+        ],
+        [
+            "Son tres palab",
+            "ras solamente mis ",
+            "angus",
+            "tias ",
+            "esas palabras ",
+            "son co",
+            "mo me gu",
+            "stan ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Son t",
+            "res palabras s",
+            "olamente mis ",
+            "angust",
+            "ias ",
+            "esas palabras ",
+            "son ",
+            "como  me ",
+            "gust",
+            "an ",
+            "",
+            "",
+            "",
+            "",
+            "esas palabras son como me gustan "
         ]
     ],
-    "bpm": 80,
+    "bpm": 83,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "IAGcELbdT7A",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

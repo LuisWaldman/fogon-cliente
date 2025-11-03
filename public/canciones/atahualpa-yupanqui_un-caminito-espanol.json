@@ -2,57 +2,468 @@
     "cancion": "un-caminito-espanol",
     "banda": "atahualpa-yupanqui",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
+                    "D",
                     "A7",
-                    "D"
+                    "A7",
+                    "A7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A7",
+                    "D",
+                    "D",
                     "D",
                     "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "Por un camino de Espa",
-            "a, camina mi corazó",
-            "n,/nantes no se cono"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "cían, hoy son amigos los d",
-            "os/nPor un camino de Es"
+            "Por ",
+            "un ca",
+            "mino de \n\nEspañ",
+            "a cami",
+            "na mi cor",
+            "azón. /n"
         ],
         [
-            "paña, camina mi coraz",
-            "ón."
+            "Antes ",
+            "no se cono",
+            "cían, ",
+            "hoy son amigos los ",
+            "dos. /n"
+        ],
+        [
+            "Por un ",
+            "camino  de \n\nEspaña c",
+            "amina ",
+            "mi corazó",
+            "n. ",
+            "",
+            "veces b",
+            "ajo la lun",
+            "a como una conv",
+            "ersación. /n"
+        ],
+        [
+            "Entre el ",
+            "mar los pi",
+            "nares va c",
+            "antando el c",
+            "orazón. ",
+            "veces bajo la ",
+            "luna como una ",
+            "conversaci",
+            "ón. ",
+            "/n"
+        ],
+        [
+            "Habla ",
+            "de pampas l",
+            "ejanas, ",
+            "de unos arom",
+            "os en flor. /n"
+        ],
+        [
+            "De algún cabal",
+            "lo perdido que ",
+            "en esas tierr",
+            "as quedó. /n"
+        ],
+        [
+            "Habla de p",
+            "ampas lejan",
+            "as unos a",
+            "romos en fl",
+            "or. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "omo en los ",
+            "libros sagra",
+            "dos hay un ",
+            "tiempo de sa",
+            "zón. /n"
+        ],
+        [
+            "Vivían sin ",
+            "encontrar",
+            "se, hoy son ",
+            "amigos  los dos. /n"
+        ],
+        [
+            "Un corazó ",
+            "argentino ",
+            "un ca",
+            "minito españ",
+            "ol. ",
+            "/n"
+        ],
+        [
+            "El camino nu",
+            "nca es triste ",
+            "lo entr",
+            "istece la canción /n"
+        ],
+        [
+            "Si el ",
+            "caminante le cuenta su ",
+            "desvelo ",
+            "su pasión. /n"
+        ],
+        [
+            "El camino n",
+            "unca es triste, ",
+            "lo ent",
+            "ristece la canc",
+            "ión. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El día ",
+            "que se separe",
+            "n, que no ",
+            "se digan adiós. /n"
+        ],
+        [
+            "El cami",
+            "no en su p",
+            "aisaje ",
+            "sin rumb ",
+            "el corazón. /n"
+        ],
+        [
+            "El ",
+            "día que se sep",
+            "aren, que no ",
+            "se digan ad",
+            "iós. ",
+            "/n"
+        ],
+        [
+            "Hermos ",
+            "amor sin o",
+            "lvido, ",
+            "es la amistad de ",
+            "los dos. /n"
+        ],
+        [
+            "Hermoso am",
+            "or sin olvid",
+            "o, es ",
+            "la amistad de los d",
+            "os. \n\nDe un cora",
+            "zón argentino ",
+            "un ca",
+            "minito españ",
+            "ol. /n"
+        ],
+        [
+            "De un corazón arg",
+            "entino ",
+            "un camin",
+            "ito españo",
+            "l. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "WxehMUjzCHU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

@@ -2,64 +2,497 @@
     "cancion": "la-montaraza",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 184,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "A",
+                    "Cm",
                     "Am",
                     "Dm",
                     "G7",
-                    "C"
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G7",
-                    "C",
                     "Am",
-                    "Em"
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
         ]
     },
     "letras": [
-        [],
         [
-            "ermanao con los chañ",
-            "ares/nvivo en el m"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "onte, palomita",
-            "y./nD"
+            "Hermana ",
+            "con los ",
+            "chañares ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "onde se lastima el vie",
-            "nto            I/nGu"
+            "Herm",
+            "anau con los ",
+            "chañares \n\nV",
+            "ivo en el m",
+            "onte \n\nPal",
+            "omita /n"
         ],
         [
-            "itarra, dame tu acento,/nte doy mi copla, soy montaraz."
+            "Do",
+            "nde se las",
+            "tima el vien",
+            "to \n\nCon las ",
+            "espinas del ",
+            "garabatá ",
+            "/n"
         ],
-        [],
-        []
+        [
+            "Donde se l",
+            "astima el vie",
+            "nto \n\nCon ",
+            "las espinas del ",
+            "garabat",
+            "án /n"
+        ],
+        [
+            "Cuando  la ",
+            "noche es osc",
+            "ura \n\nTodavía ",
+            "los perros ",
+            "cerca  el cor",
+            "ral \n\nSe ",
+            "juró que ",
+            "él se hacha puma /n"
+        ],
+        [
+            "Por ahí c",
+            "erquita no ",
+            "más hay ronda /n"
+        ],
+        [
+            "Se ",
+            "juró que ",
+            "él se hacha puma /n"
+        ],
+        [
+            "Por ahí c",
+            "erquita no ",
+            "más hay ronda ",
+            "/n"
+        ],
+        [
+            "Guitarra d",
+            "ame tu ace",
+            "nto \n\nTe doy ",
+            "mi copla, ",
+            "soy montará /n"
+        ],
+        [
+            "R",
+            "uda es mi ma",
+            "no de hachero \n\nP",
+            "ero pal g",
+            "asto me hay ser",
+            "vir no más /n"
+        ],
+        [
+            "Ru",
+            "da es mi man ",
+            "de hachero \n\nP",
+            "ero pal g",
+            "asto me hay serv",
+            "ir no más ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Guita",
+            "rra /n"
+        ],
+        [
+            "Detr",
+            "ás de los alt",
+            "os muelles /n"
+        ],
+        [
+            "Por donde nadi",
+            "e quiere p",
+            "asa/n"
+        ],
+        [
+            "Vive ",
+            "la madre del ",
+            "monte \n\nEn ",
+            "la salamanca ",
+            "del \n\nTata su ",
+            "pai /n"
+        ],
+        [
+            "Vive la ",
+            "madre del m",
+            "onte \n\nEn la ",
+            "salamanca ",
+            "del \n\nTata su ",
+            "pai /n"
+        ],
+        [
+            "Anoc",
+            "he por la quebrad",
+            "a \n\nVuelt ",
+            "mi ranch ",
+            "palomita /n"
+        ],
+        [
+            "Me ",
+            "dijo un ",
+            "verso  la lu",
+            "na \n\nCompad",
+            "ecida de mi ",
+            "soleda",
+            "d \n\nMe ",
+            "dijo un ve",
+            "rso la luna /n"
+        ],
+        [
+            "Compade",
+            "cida de mi s",
+            "oledad /n"
+        ],
+        [
+            "Gu",
+            "itarra dame tu ",
+            "acento \n\nTe ",
+            "doy mi co",
+            "pla, soy mo",
+            "ntarán /n"
+        ],
+        [
+            "Ruda es ",
+            "mi mano de ha",
+            "chero \n\nPer",
+            "o pal gasto me ",
+            "hay servir no ",
+            "más /n"
+        ],
+        [
+            "Ruda es mi ",
+            "mano de hac",
+            "hero \n\nPero ",
+            "pal gasto me ",
+            "hay servir no ",
+            "más ",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "4-IH8gVwY8c",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

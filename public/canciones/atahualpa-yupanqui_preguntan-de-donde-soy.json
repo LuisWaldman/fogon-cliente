@@ -2,167 +2,455 @@
     "cancion": "preguntan-de-donde-soy",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "C#",
+                    "F",
+                    "E",
+                    "E",
+                    "G",
+                    "Am",
+                    "F",
+                    "E",
+                    "Em",
+                    "B7",
+                    "Am",
+                    "C",
+                    "E",
+                    "E",
+                    "F#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
-                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "E",
                     "Am",
                     "F",
-                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "E",
-                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "F",
                     "F",
                     "G",
-                    "C",
-                    "F",
-                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
                     "Bm",
-                    "E",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "C",
-                    "G",
                     "C",
+                    "G",
+                    "G",
                     "F",
                     "C",
                     "F",
-                    "C",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
                     "G",
                     "E",
-                    "Am",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
                     "Em",
-                    "B",
                     "Em",
                     "Em",
-                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "B7",
-                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
                     "C",
                     "G",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "C",
-                    "E",
-                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
                     "F",
-                    "C",
-                    "C",
+                    "F",
+                    "F",
                     "E",
-                    "Am"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "reguntan de donde soy/nY"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " no sé q",
-            "ue respon",
-            "der/n"
+            "E",
+            "sta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "De tanto no ten",
-            "er nada/n"
+            "Esta ",
+            "es ",
+            "una ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "can",
+            "ción en españ",
+            "ol de rock argentino. \n\nDe t",
+            "anto no ten",
+            "er nada /n"
         ],
         [
-            "No tengo de ado",
-            "nde ser/n"
+            "No t",
+            "engo de a",
+            "dor de ser ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Un día voy a quemar/n"
+            "Un ",
+            "día voy ",
+            "que",
+            "mar \n\nTodo ",
+            "el trigo del ",
+            "dolor /n"
         ],
         [
-            "Todo el trigo del do",
-            "lor/n"
+            "Ento",
+            "nces sí t",
+            "enderé pa",
+            "tria ",
+            "no campos de ",
+            "patrón ",
+            "",
+            "no c",
+            "ampos de ",
+            "patrón  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Entonces sí tendré",
-            " patria/n"
+            "Preguntan ",
+            "de dónde ",
+            "soy ",
+            "",
+            "el ",
+            "indio  que cae ",
+            "sabe \n\nC",
+            "uán",
+            "ta tierra es que ",
+            "le toca \n\nP",
+            "ues r",
+            "econoce el s",
+            "abor \n\nDe o",
+            "tros indio ",
+            "en la b",
+            "u",
+            "ca /n"
         ],
         [
-            "Y no campos de p",
-            "atrón/n"
+            "Pues  re",
+            "conoce el sa",
+            "bor \n\nDe o",
+            "tros indios ",
+            "en la bu",
+            "ca ",
+            "/n"
         ],
         [
-            "Preguntan de donde soy/n"
+            "Debaj ",
+            "del campo v",
+            "erde \n\nM",
+            "ucha sa",
+            "ngre hay en el ",
+            "suelo ",
+            "",
+            "/n"
         ],
         [
-            "Y el indio que",
-            " cae sab",
-            "e/n"
+            "Yo sé bi",
+            "en dónde ",
+            "voy /n"
         ],
         [
-            "Cuanta tierra es q",
-            "ue le toca/n"
+            "Sin s",
+            "aber de d",
+            "ónde ven",
+            "go ",
+            "",
+            "",
+            "",
+            "pregunta ",
+            "pregu",
+            "ntan ",
+            "me siguen pr",
+            "eguntando ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Pues reconoce el",
-            " sabor/nD"
+            "Preguntan  ",
+            "de dónde ",
+            "soy ",
+            "",
+            "no ",
+            "sé ",
+            "qué ",
+            "responde /n"
         ],
         [
-            "e otros indio",
-            "s en la boc",
-            "a/n"
+            "De ",
+            "tanto no ",
+            "tener na",
+            "da \n\nNo ",
+            "tengo de ",
+            "ador  de ",
+            "ser \n\nNo ",
+            "tengo de ",
+            "ador de ",
+            "ser /n"
         ],
         [
-            "De bajo del campo ",
-            "verde/n"
+            "No teng",
+            "o de ",
+            "ador  de ",
+            "ser ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Mucha sangre hay en el suelo/n"
-        ],
-        [
-            "Yo bien sepa ad",
-            "onde voy/n"
-        ],
-        [
-            "Sin saber de adonde",
-            " vengo/nY"
-        ],
-        [
-            " preguntan y preguntan/nY"
-        ],
-        [
-            " me siguen pregun",
-            "tando/nP"
-        ],
-        [
-            "reguntan de donde soy/n"
-        ],
-        [
-            "Y no sé qu",
-            "e respon",
-            "der/nD"
-        ],
-        [
-            "e tanto no tene",
-            "r nada/nN"
-        ],
-        [
-            "o tengo de",
-            " adonde se",
-            "r"
+            "No tengo de ador de ser "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "zrM-SY6UvDM",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

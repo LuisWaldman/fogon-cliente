@@ -2,25 +2,50 @@
     "cancion": "tu-que-puedes-vuelvete",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#",
+                    "Am",
+                    "E",
+                    "Am",
+                    "G",
+                    "Dm",
+                    "E",
+                    "E",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "Dm",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
                     "E",
-                    "Am"
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E",
+                    "Am",
                     "A7",
-                    "Dm",
+                    "A7",
+                    "A7",
                     "G7",
+                    "G7",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
@@ -28,24 +53,166 @@
                 "nombre": "parte3",
                 "acordes": [
                     "Am",
-                    "Dm",
-                    "E",
                     "Am",
-                    "G",
-                    "C",
-                    "G"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "Dm",
                     "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
                     "E",
                     "Am",
-                    "Dm",
                     "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
                     "E"
                 ]
             }
@@ -55,107 +222,186 @@
             1,
             2,
             3,
-            2,
-            3,
-            0
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
         [
-            "Soñé que el ",
-            "río me hab",
-            "laba/nCon voz d"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "e nieve cumbreña",
-            "/nY tri"
+            "Soñé que el río ",
+            "me hab",
+            "laba /n"
         ],
         [
-            "ste, me recordaba",
-            "/nLas cosas de mi querencia"
+            "Con ",
+            "voz de nie",
+            "ve cum",
+            "breñ",
+            "",
+            "dulce ",
+            "me recordab",
+            "a las cosas de ",
+            "mi queren",
+            "cia /n"
         ],
         [
-            "/nSon tu destino y el mí"
+            "Tú que pued",
+            "es, vu",
+            "élvete /n"
         ],
         [
-            "o/nVivir cantando y penando"
+            "Me dijo el río ",
+            "lloran",
+            "do /n"
         ],
         [
-            "/nPor esos largos cami"
+            "Los cerr",
+            "os que tanto q",
+            "uieres \n\nMe di",
+            "jo, allá te es",
+            "tán esperando /n"
         ],
         [
-            "nos/nTu que pu"
+            "Los ",
+            "cerros que ",
+            "tanto quie",
+            "res \n\nMe dijo, ",
+            "allá te están e",
+            "sperando ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "edes, vuélvet",
-            "e/nMe "
+            "Es ",
+            "cosa tris",
+            "te ser río ",
+            "/n"
         ],
         [
-            "dijo el río llo",
-            "rando/nLos "
+            "Qu",
+            "ién pudiera ser ",
+            "lagu",
+            "na /n"
         ],
         [
-            "cerros que tanto qui",
-            "eres -me dijo-",
-            "/nalla te estan esperan"
+            "Oír el ",
+            "silbo en el ju",
+            "go cuando lo ves ",
+            "la lun",
+            "a ",
+            "/n"
         ],
         [
-            "do/nLos "
+            "Qué ",
+            "cosas  más p",
+            "areci",
+            "das son ",
+            "tu destino ",
+            "el mío ",
+            "/n"
         ],
         [
-            "cerros que tanto qui",
-            "eres -me dijo-",
-            "/nalla te estan esperan"
+            "Vivir cant",
+            "ando penando ",
+            "por esos lar",
+            "gos camino ",
+            "/n"
         ],
         [
-            "do/nQuién pudiera ser laguna"
+            "Tú que p",
+            "uedes, v",
+            "uélvete /n"
         ],
         [
-            "/nOír el silbo del junco"
+            "Me di",
+            "jo el río llor",
+            "ando /n"
         ],
         [
-            "/nCuando lo besa la luna"
+            "Los ",
+            "cerros que t",
+            "anto quieres \n\nMe ",
+            "dijo, allá ",
+            "te están espe",
+            "rando /n"
         ],
         [
-            "/nTu que pu"
+            "Los cerro ",
+            "que tanto ",
+            "quieres  \n\nMe di",
+            "jo, allá te e",
+            "stán esperando /n"
         ],
         [
-            "edes, vuélvet",
-            "e/nMe "
+            "Tú ",
+            "que puedes, ",
+            "vuélvete /n"
         ],
         [
-            "dijo el río llo",
-            "rando/nLos "
+            "Tú que ",
+            "puedes, ",
+            "vuélv",
+            "ete ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "cerros que tanto qui",
-            "eres -me dijo-",
-            "/nalla te estan esperan"
-        ],
-        [
-            "do/nLos "
-        ],
-        [
-            "cerros que tanto qui",
-            "eres -me dijo-",
-            "/nalla te estan esperan"
-        ],
-        [
-            "do/ntu que p"
-        ],
-        [
-            "uedes vuelvet",
-            "e"
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "4sW4RNPFeDc",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

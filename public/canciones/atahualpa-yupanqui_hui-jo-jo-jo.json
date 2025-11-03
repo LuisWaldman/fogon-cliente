@@ -2,55 +2,142 @@
     "cancion": "hui-jo-jo-jo",
     "banda": "atahualpa-yupanqui",
     "escala": "Gm",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Gm",
+                    "Gm",
                     "F#7",
-                    "A#"
+                    "F#7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#",
+                    "F#7",
                     "A#",
                     "A#",
-                    "D7",
-                    "Gm",
-                    "D7",
-                    "Gm"
+                    "A#"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "A#",
-                    "F#",
-                    "Gm",
-                    "D7",
-                    "Gm",
-                    "D7",
-                    "Gm",
-                    "F#"
+                    "A#",
+                    "A#"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "A#",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "A#",
                     "Gm",
                     "D7",
-                    "Gm",
-                    "Gm",
                     "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#",
                     "Gm",
                     "Gm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "F#",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "A#",
+                    "Gm",
+                    "Gm",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
                 ]
             }
         ],
@@ -58,47 +145,112 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "or la quebrada del Chi",
-            "jra, voy con el sol",
-            ",",
+            "Por la ",
+            "quebrada, por la quebrada, por la quebrada, por la q",
+            "uebra",
+            "da, ",
+            "por ",
+            "la ",
+            "",
+            "quebrada, ",
+            "por ",
+            "la quebrada. ",
+            "/n"
+        ],
+        [
+            "Por ",
+            "la quebrada de ch",
+            "íjara voy con el ",
+            "sol, /n"
+        ],
+        [
+            "Arian",
+            "do mis animales ",
+            "huejos ",
+            "/n"
+        ],
+        [
+            "Caminitos de la c",
+            "uesta, cantan",
+            "do voy, /n"
+        ],
+        [
+            "Gol",
+            "peando los guardamon",
+            "es huejo",
+            "s. /n"
+        ],
+        [
+            "Perde el chacral de la lom",
+            "a, perde aquel sauce ll",
+            "orón, las penas pasan de l",
+            "argos huejos. /n"
+        ],
+        [
+            "Las pena",
+            "s pasan de largos, no hay ",
+            "ser señor, hay una ",
+            "que me hace bulla ad",
+            "entro del corazó",
+            "n. ",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "arriando mis animale",
-            "s ¡Hui, jo jo j",
-            "o..!",
-            "",
+            "Atracitos ",
+            "de las cumbres se acu",
+            "esta el sol ",
             "/n"
         ],
         [
-            "Verde el chacral de la lo",
-            "ma, verde aquel sauce lloró",
-            "n,/nlas penas pasan de l"
+            "Yo voy lleg",
+            "ando al potrero h",
+            "uejo, ",
+            "pa ",
+            "cuando encierre las vac",
+            "as huejo ",
+            "/n"
         ],
         [
-            "argo. ¡Hui, jo jo j",
-            "o..!",
+            "Una bagua",
+            "la en la noche canta",
+            "ré yo. /n"
+        ],
+        [
+            "Perde el ",
+            "chacral de la loma, perde ",
+            "aquel  sauce llorón, las p",
+            "enas pasan de largos hu",
+            "ejos. /n"
+        ],
+        [
+            "Las pe",
+            "nas pasan de largos, no hay ",
+            "ser señor, hay ",
+            "una que me hace bul",
+            "la adentro del ",
+            "corazón. \n\nVang",
+            "a, vanga, ",
+            "vanga hu",
+            "ejo. ",
             "",
-            "/n¿"
-        ],
-        [
-            "Las penas pasan de l",
-            "argo? ¡No ha i ser, Se",
-            "ñor!/nHay una huella que me hace b"
-        ],
-        [
-            "ulla, adentro del coraz",
-            "n./nV"
-        ],
-        [
-            "aca, vaca. Hu",
-            "i jo, jo, jo",
             "",
             ""
         ]
@@ -107,10 +259,11 @@
         {
             "tipo": "Youtube",
             "id": "WoyHMYI96lg",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

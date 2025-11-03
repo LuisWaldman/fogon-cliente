@@ -8,211 +8,410 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "D#",
+                    "C7M",
+                    "Em",
+                    "E7",
+                    "D/C",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "D/C",
+                    "Cm7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "A#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
+                    "E7",
+                    "E7",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
                     "D/F#",
                     "Em",
-                    "Em/D",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "C7M",
                     "A7",
                     "D7",
                     "G",
                     "D/F#",
                     "Em",
-                    "Em/D",
-                    "C#m7(5-)",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C7M",
+                    "C7M",
+                    "C7M",
                     "C7M",
                     "D/C",
+                    "D/C",
+                    "Bm7",
                     "Bm7",
                     "E7",
                     "Am7",
                     "D7",
                     "G",
-                    "D/F#",
-                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Em/D",
+                    "Em/D",
                     "Em/D",
                     "C#m7(5-)",
+                    "C#m7(5-)",
+                    "C7M",
                     "C7M",
                     "D/C",
-                    "Bm7",
+                    "D/C",
                     "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Am7",
+                    "Am7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D/C",
+                    "D/C",
                     "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F7",
                     "F7",
                     "Bm7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "E7",
+                    "E7",
+                    "E7",
                     "E7",
                     "Am7",
                     "D7",
-                    "D/C",
-                    "Bm7",
-                    "E7",
-                    "Cm7",
-                    "F7",
-                    "Bm7",
-                    "E7",
-                    "Am7",
                     "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "D/C",
+                    "D/C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F7",
+                    "F7",
                     "Bm7",
-                    "E7",
-                    "Am7",
-                    "D7",
-                    "G",
-                    "D/F#",
-                    "Em",
-                    "Em/D",
-                    "C#m5-/7",
-                    "C7M",
-                    "D/C",
-                    "Bm7",
-                    "E7",
-                    "Cm7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "F7",
-                    "Dm7",
-                    "G7",
-                    "Cm7",
                     "F7",
-                    "F/Eb",
-                    "Dm7",
-                    "G7",
-                    "Cm7",
                     "F7",
-                    "Bb"
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
-        [],
         [
-            "tú/nPero"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " yo no dejo de pensa",
-            "r/nNi un min"
+            "Es",
+            "ta es una canción en español de rock argentino. \n\nNo sé ",
+            "tú, ",
+            "pero yo ",
+            "no dej ",
+            "de pens",
+            "ar \n\nNi ",
+            "un min",
+            "uto me logro ",
+            "despo",
+            "jar /n"
         ],
         [
-            "uto me logro despo",
-            "jar/nDe tus"
+            "De tus besos, ",
+            "tus abrazo",
+            "s \n\nDe lo bien que ",
+            "la pasam",
+            "os la o",
+            "tra ",
+            "vez /n"
         ],
         [
-            " besos tus abrazo",
-            "s/nDe lo b"
+            "No ",
+            "sé tú, ",
+            "",
+            "pero yo ",
+            "quisiera ",
+            "repe",
+            "tir \n\nEl ",
+            "cansan",
+            "cio que me hic",
+            "iste senti",
+            "r \n\nPor ",
+            "la noche que ",
+            "me diste ",
+            "el momento que ",
+            "con besos ",
+            "construi",
+            "ste \n\nNo sé ",
+            "tú, ",
+            "per ",
+            "yo te he co",
+            "menzado ",
+            "extra",
+            "ñar \n\nEn ",
+            "mi aguada no te ",
+            "dejo  de ",
+            "pensa",
+            "r \n\nCon ",
+            "las gentes mis ",
+            "amigos  \n\nEn ",
+            "las call",
+            "es sin t",
+            "estigos /n"
         ],
         [
-            "ien que la pasamos",
-            "/nL"
+            "No sé ",
+            "tú, ",
+            "pero ",
+            "yo te busco en ",
+            "cada am",
+            "anec",
+            "er \n\nMis d",
+            "eseos no los p",
+            "uedo co",
+            "ntener /n"
         ],
         [
-            "a otra vez",
-            "/nNo s"
+            "En las ",
+            "noches  cuando d",
+            "uermo \n\nSin i",
+            "nsomni",
+            "o yo me ",
+            "enfermo /n"
         ],
         [
-            "é tú/nPero"
+            "Me haces f",
+            "alta,",
+            "mucha f",
+            "alta /n"
         ],
         [
-            " yo quisiera repeti",
-            "r/nEl cans"
+            "No sé ",
+            "tú ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ancio que mi hiciste se",
-            "ntir/nCon l"
+            "No sé ",
+            "tú, ",
+            "pero yo ",
+            "te busco en c",
+            "ada am",
+            "anec",
+            "er \n\nMis deseos ",
+            "no los pued",
+            "o cont",
+            "ener /n"
         ],
         [
-            "a noche que me di",
-            "ste/nY el mom"
+            "En las noche",
+            "s cuando duerm /n"
         ],
         [
-            "ento que con besos construi",
-            "ste/nNo s"
+            "Sin ins",
+            "omnio yo ",
+            "me enfe",
+            "rmo /n"
         ],
         [
-            "é tú/nPero"
+            "Me haces fa",
+            "lta, ",
+            "mucha fa",
+            "lta /n"
         ],
         [
-            " yo te he comenzado a extra",
-            "ar/nEn mi alm"
+            "No ",
+            "sé tú ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ohada no te dejo de pensa",
-            "r/nCon las g"
-        ],
-        [
-            "entes mis ami",
-            "gos/nEn las c"
-        ],
-        [
-            "alles sin testig",
-            "os/nNo s"
-        ],
-        [
-            " tú/nPero "
-        ],
-        [
-            "yo te busco en cada ama",
-            "necer/nMis d"
-        ],
-        [
-            "eseos no los puedo contene",
-            "r/nEn las n"
-        ],
-        [
-            "oches cuando duermo",
-            "/nSí de"
-        ],
-        [
-            " insomnio yo me enf",
-            "ermo/nMe haces f"
-        ],
-        [
-            "alta mucha fa",
-            "lta/nNo sé "
-        ],
-        [
-            "tú/n"
-        ],
-        [],
-        [
-            "inal]",
-            "/nNo sé "
-        ],
-        [
-            "tú/nPero "
-        ],
-        [
-            "yo te busco en cada amane",
-            "cer/nMis d"
-        ],
-        [
-            "eseos no los puedo conte",
-            "ner/nEn las"
-        ],
-        [
-            " noches cuando du",
-            "ermo/nSí de"
-        ],
-        [
-            " insomnio yo me enf",
-            "ermo/nMe haces f"
-        ],
-        [
-            "alta mucha fa",
-            "lta/nNo sé "
-        ],
-        [
-            "tú"
+            "No sé tú "
         ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "T_oE3qkbo5s",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

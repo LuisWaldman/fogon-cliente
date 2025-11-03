@@ -8,159 +8,412 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "G#m",
+                    "Amaj7",
+                    "Fmaj7",
+                    "Gmaj7",
+                    "Fmaj7",
+                    "Amaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Amaj7",
-                    "G#7",
-                    "Gmaj7",
-                    "F#7",
-                    "Fmaj7",
-                    "Dmaj7",
                     "Amaj7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Dmaj7"
+                    "Amaj7",
+                    "Gmaj7",
+                    "Gmaj7",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Fmaj7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Bm6",
-                    "F#m",
-                    "A7",
-                    "Dmaj7",
-                    "Bm6",
-                    "F#m",
-                    "E7sus4",
-                    "E7"
+                    "Fmaj7",
+                    "Fmaj7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Gmaj7",
+                    "Gmaj7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Dmaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Amaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Amaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dmaj7",
                     "Bm6",
-                    "E",
-                    "B",
-                    "G",
-                    "D",
-                    "A",
-                    "E"
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Fmaj7",
+                    "Dmaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Dmaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Gmaj7",
+                    "Gmaj7",
+                    "Fmaj7",
+                    "Bm6",
+                    "Bm6"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm6",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Amaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Bm6",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F#m",
+                    "Amaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Amaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dmaj7",
+                    "Bm6",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Amaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Amaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Bm6",
+                    "Bm6",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "ague la l",
-            "uz   ",
-            "    se encendió el am",
-            "or/n"
-        ],
-        [
-            "     nos amamos y ",
-            "mas   llo",
-            "vía/nte pr"
-        ],
-        [
-            "egunte es ho",
-            "y    ",
-            "    la primera vez",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "      me dijiste que  ",
-            "no   men",
-            "tías/nhoy el "
+            "Ap",
+            "agué la luz /n"
         ],
         [
-            "aire huele a ti  ",
-            "   a complicidad/na h"
+            "Se ",
+            "encendió el a",
+            "mor \n\nNos ",
+            "amamos sin ",
+            "más llo",
+            "vía /n"
         ],
         [
-            "ierba fresca y besos a pasión y oscuri",
-            "dad/nhoy el "
+            "Te preg",
+            "unté soy /n"
         ],
         [
-            "aire huele a ti ",
-            "   pero ya no estas/n"
+            "Por la ",
+            "primera vez /n"
         ],
         [
-            "para recordarlo junto a ",
-            "mí",
-            "/nte d"
+            "Me d",
+            "ijiste que no ",
+            "me",
+            "ntí/n"
         ],
         [
-            "eje inventa",
-            "r    ",
-            "    te volví a ama",
-            "r/n"
+            "Hoy el aire h",
+            "uele ti ",
+            "com",
+            "plicidad ",
+            "hierbas fres",
+            "cas besos ",
+            "pasión os",
+            "curidad \n\nHoy ",
+            "el aire hue",
+            "le ti /n"
         ],
         [
-            "      hasta que se as",
-            "omo  el  d",
-            "ía/nse ence"
-        ],
-        [
-            "ndió la ",
-            "luz   ",
-            "     se apago el amo",
-            "r/n"
-        ],
-        [
-            "      pero aun llevo tu ol",
-            "or  a  ni",
-            "ña/nhoy el "
-        ],
-        [
-            "aire huele a ti  ",
-            "   a complicidad/na h"
-        ],
-        [
-            "ierba fresca y besos a pasión y oscuri",
-            "dad/nhoy el "
-        ],
-        [
-            "aire huele a ti ",
-            "   pero ya no estas/n"
-        ],
-        [
-            "para recordarlo junto a ",
-            "mí",
+            "Pero ya ",
+            "no estás \n\nP",
+            "ara reco",
+            "rdarlo junto ",
+            "mí ",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "E - B - G - D - A - E - cuerdas/n"
+            "Te d",
+            "ejé in",
+            "ventar /n"
         ],
-        [],
         [
-            "2 - 3",
-            " - 4 ",
-            "- 5 -",
-            " 2 - ",
-            "2 CEJILA  2do TRASTE"
+            "Te volví ",
+            "amar  \n\nH",
+            "asta que se a",
+            "somó el ",
+            "día /n"
+        ],
+        [
+            "Se en",
+            "cendió la ",
+            "luz \n\nSe ",
+            "apagó el a",
+            "mor \n\nPe",
+            "ro llegó tu hor",
+            "ror mi ",
+            "ya /n"
+        ],
+        [
+            "Hoy el air ",
+            "huele ",
+            "ti ",
+            "complici",
+            "dad hierbas ",
+            "frescas  bes",
+            "os pasión ",
+            "oscurida /n"
+        ],
+        [
+            "Hoy el aire h",
+            "uele ",
+            "ti \n\nPero ",
+            "ya no es",
+            "tás \n\nPara r",
+            "ecordarlo j",
+            "unto ",
+            "mí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy ",
+            "el aire huel",
+            "e ti ",
+            "com",
+            "plicidad ",
+            "hierbas frescas ",
+            "besos ",
+            "pasión osc",
+            "uridad \n\nHoy ",
+            "el aire huele ",
+            "ti /n"
+        ],
+        [
+            "Pero ya no ",
+            "estás \n\nP",
+            "ara reco",
+            "rdarlo junt ",
+            "mí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy el a",
+            "ire huele ",
+            "ti ",
+            "complicid",
+            "ad hier",
+            "bas frescas be",
+            "sos pasión ",
+            "oscuri",
+            "dad \n\nHoy el air ",
+            "huele ",
+            "ti \n\nPer",
+            "o ya no es",
+            "tás \n\nPar ",
+            "recordar",
+            "lo junto mí ",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 143,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "WishMcoqP1s",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

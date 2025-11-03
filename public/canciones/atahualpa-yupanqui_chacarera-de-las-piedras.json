@@ -2,166 +2,195 @@
     "cancion": "chacarera-de-las-piedras",
     "banda": "atahualpa-yupanqui",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "E"
+                ]
+            },
             {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
                     "C",
                     "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "C",
+                    "Dm",
                     "E7",
+                    "Dm",
+                    "Dm",
+                    "E7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7",
+                    "C",
+                    "C",
+                    "E7",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Dm",
                     "C",
                     "E7",
-                    "Am"
+                    "Dm",
+                    "Dm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            "canta un cami",
-            "nante /nque muy mu"
+            "",
+            "/n"
         ],
         [
-            "cho ha camina",
-            "do /ny a"
+            "A",
+            "quí canta un camin",
+            "ante que muy mucho ha cam",
+            "inado ahora vive tr",
+            "anquilo en el cerro co",
+            "lorado. ",
+            "",
+            "/n"
         ],
         [
-            "gora vive tran",
-            "quilo  /nen el ce"
+            "Largo mis copl",
+            "as al viento por donde quier",
+            "a que voy, soy árbol l",
+            "leno de frutos como plantita ",
+            "en mi sol. ",
+            "",
+            "/n"
         ],
         [
-            "rro colora",
-            "do. /nLargo "
+            "Cuando ensi",
+            "llo mi caballo me largo por ",
+            "las arenas en la m",
+            "itad del camino ya me he olvida",
+            "do de las penas. \n\nCamin",
+            "aba \n\nSanta \n\nElena del ",
+            "yurki rayo cortado, ",
+            "no hay pago como mi pago, vive ",
+            "el cerro colorado. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "la sombra ",
+            "de un hostal hay hoy sentido de ",
+            "un repente, una m",
+            "oza que decía sosiegue que ",
+            "viene gente. ",
+            "",
+            "/n"
         ],
         [
-            "mis coplas al ",
-            "viento /npor donde "
+            "Te voy ",
+            "dar un remedio que es muy bueno p",
+            "ara las penas, gras",
+            "ita de guanamacho mezclada con ",
+            "hierbabuena. ",
+            "",
+            "/n"
         ],
         [
-            "quiera que vo...",
-            "oy /nsoy "
+            "Chaca",
+            "rera de las piedras crioll",
+            "ita como ninguna, no ",
+            "te metas en los montes no has ",
+            "salido la luna. /n"
         ],
         [
-            "arbol lleno de ",
-            "frutos /ncomo plan"
-        ],
-        [
-            "tita 'I misto...",
-            "ol /nCuando en"
-        ],
-        [
-            "sillo mi ca",
-            "ballo /nme largo "
-        ],
-        [
-            "por las are",
-            "nas /ny en "
-        ],
-        [
-            "la mitad del ca",
-            "mino /nya me olvi"
-        ],
-        [
-            "dao de las pe...n",
-            "as /nCami"
-        ],
-        [
-            "niaga Santa e",
-            "lena /nel churqui "
-        ],
-        [
-            "rayo corta",
-            "do /nNo hay "
-        ],
-        [
-            "pago como mi ",
-            "pago  /nViva el ce"
-        ],
-        [
-            "rro colora",
-            "do /nA la "
-        ],
-        [
-            "sombra de unos ",
-            "talas /nyo he senti"
-        ],
-        [
-            "do de un repen",
-            "te /na una "
-        ],
-        [
-            "moza que de",
-            "cia /nsosiegue "
-        ],
-        [
-            "que viene gen",
-            "te /nTe voy "
-        ],
-        [
-            "a dar un re",
-            "medio /nque es muy bue"
-        ],
-        [
-            "no pa'las pe",
-            "nas /ngra"
-        ],
-        [
-            "sita de iguana ",
-            "macho /nmezcladita "
-        ],
-        [
-            "con yerba bue",
-            "na /nChaca"
-        ],
-        [
-            "rera de las ",
-            "piedras /ncriollita "
-        ],
-        [
-            "como ningu",
-            "na /nno te "
-        ],
-        [
-            "metas en los ",
-            "montes /nsi no ha sali..."
-        ],
-        [
-            "ido la lu",
-            "na /nCami"
-        ],
-        [
-            "niaga Santa e",
-            "lena /nel churqui rayo cortado "
-        ],
-        [],
-        [],
-        []
+            "Caminaba \n\nSanta \n\nElena del y",
+            "urki rayo cortado, ",
+            "no hay pago como mi pago, vi",
+            "ve el cerro colorado. ",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "X8iFPjH_71Y",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

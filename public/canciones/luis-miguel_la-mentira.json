@@ -8,207 +8,456 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "Bm",
+                    "Am",
+                    "Am",
+                    "D",
+                    "E",
+                    "C Am",
+                    "C",
+                    "Bm",
+                    "E",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "F",
                     "E",
-                    "Am",
-                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
                     "Bm",
                     "E",
-                    "Am",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
                     "D",
-                    "G",
-                    "F",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
                     "E",
                     "Am",
                     "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Bm",
                     "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
                     "Am",
                     "D",
+                    "D",
+                    "D",
+                    "D",
                     "G",
-                    "C",
+                    "G",
                     "G",
                     "Dm",
                     "G",
+                    "G",
+                    "C",
                     "C",
                     "Cm",
-                    "F",
+                    "Cm",
                     "A#",
-                    "A",
-                    "D",
-                    "Bm",
-                    "A#m",
+                    "E",
                     "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "D",
                     "Bm",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "E",
                     "Am",
                     "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
                     "G",
-                    "F",
-                    "E",
-                    "Am",
-                    "D",
-                    "Bm",
-                    "E",
-                    "Am",
-                    "D",
                     "G",
-                    "C",
                     "G",
                     "Dm",
                     "G",
+                    "G",
+                    "C",
                     "C",
                     "Cm",
-                    "F",
+                    "E",
                     "A#",
-                    "A",
-                    "D",
-                    "Bm",
+                    "E",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "A#m",
                     "A#m",
                     "Am",
-                    "D7",
+                    "Am",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "Bm",
+                    "Bm",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "E",
                     "Am",
+                    "D7",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "A",
                     "D",
-                    "Bm",
-                    "E7",
+                    "D",
                     "Am",
                     "D",
-                    "D7",
+                    "D",
                     "Bm",
                     "E",
-                    "Am",
-                    "D",
-                    "G",
-                    "Em",
+                    "E",
                     "C",
-                    "G"
+                    "Am",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            " ...",
-            "Se te olvi",
-            "da que me quieres ",
-            "a pesar de lo que dice",
-            "s/nPues lle"
-        ],
-        [
-            "vamos en el alma cicatr",
-            "ices imposib",
-            "les de borrar",
             "",
             "",
-            "/nSe te o"
-        ],
-        [
-            "lvida que hasta p",
-            "uedo hacerte mal si me deci",
-            "do/nPues tu "
-        ],
-        [
-            "amor lo tengo muy comprom",
-            "etido pero a fue",
-            "rza no sera",
             "",
             "",
-            "/nY hoy res"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ulta que no s",
-            "oy de la estatura de tu vid",
-            "a/nY al de"
+            "Se ",
+            "te olvi",
+            "da ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "jarme casi, ca",
-            "si se te olvi",
-            "da/nQue hay un p"
+            "Pue ",
+            "llevamos en ",
+            "el alma cicat",
+            "rices ",
+            "/n"
         ],
         [
-            "acto entre los d",
-            "os/n"
+            "Imposi",
+            "bles de b",
+            "orrar ",
+            "",
+            "/n"
         ],
         [
-            "  ...",
-            "Por mi par",
-            "te te devu",
-            "elvo tu promesa de adora",
-            "rme/nNi siq"
+            "Se te ",
+            "olvid ",
+            "hast ",
+            "puedo hacerte ",
+            "mal si me de",
+            "cido /n"
         ],
         [
-            "uiera sientas pena por dej",
-            "arme/nQue ese "
+            "Pues  tu a",
+            "mor lo tengo ",
+            "muy comprom",
+            "etido /n"
         ],
         [
-            "pacto no es con dio",
-            "s/n"
-        ],
-        [],
-        [],
-        [
-            "sulta que no ",
-            "soy de la estatura de tu vi",
-            "da/nY al de"
-        ],
-        [
-            "jarme casi, c",
-            "asi se te olv",
-            "ida/nQue hay un p"
-        ],
-        [
-            "acto entre los ",
-            "dos/n"
-        ],
-        [
-            "  ...",
-            "Por mi par",
-            "te te devuelvo tu pro",
-            "mesa de adora",
-            "rme/nNi siq"
+            "Pero f",
+            "uerza ",
+            "no se",
+            "rá ",
+            "",
+            "",
+            "hoy r",
+            "esul",
+            "que no soy ",
+            "de la estatur ",
+            "de tu v",
+            "ida ",
+            "al dejar",
+            "me casi cas",
+            "i se te olvida ",
+            "",
+            "hay un p",
+            "acto en",
+            "tre los ",
+            "dos ",
+            "/n"
         ],
         [
-            "uiera sientas pena por d",
-            "ejarme/nQue ese "
+            "Por ",
+            "mi p",
+            "arte ",
+            "te devuelv ",
+            "un promesa de ",
+            "adorarme /n"
         ],
         [
-            "pacto no es con di",
-            "os",
-            "/nPor mi "
+            "Ni ",
+            "siquiera s",
+            "ientas pena ",
+            "por dejarme /n"
         ],
         [
-            "parte te d",
-            "evuelvo tu pr",
-            "omesa de ador",
-            "arme/nNi siq"
+            "Que ",
+            "ese pa",
+            "cto no ",
+            "es con \n\nD",
+            "ios ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "hoy r",
+            "esul",
+            "ta que no ",
+            "soy de la estatu",
+            "ra de tu v",
+            "ida ",
+            "al dej",
+            "arme casi c",
+            "asi se te ol",
+            "vida ",
+            "hay un ",
+            "pacto  e",
+            "ntre los ",
+            "dos /n"
         ],
         [
-            "uiera sientas pena por deja",
-            "rme/nQue ese "
+            "Por mi parte te devuelvo un promesa de adorarme /n"
         ],
         [
-            "pacto no es con d",
-            "ios",
+            "Por ",
+            "mi pa",
+            "rte te ",
+            "devuelv",
+            "o un promesa ",
+            "de adorarme ",
+            "/n"
+        ],
+        [
+            "Ni siquier ",
+            "sientas pen ",
+            "por dejarme /n"
+        ],
+        [
+            "Que ",
+            "ese pa",
+            "cto no ",
+            "es con \n\nD",
+            "ios ",
+            "/n"
+        ],
+        [
+            "Por ",
+            "mi pa",
+            "rte te ",
+            "devuelv ",
+            "un promesa de ",
+            "ador",
+            "arme \n\nNi ",
+            "siquiera si",
+            "entas pena ",
+            "por dej",
+            "arme \n\nQue ",
+            "ese pa",
+            "cto no ",
+            "es con /n"
+        ],
+        [
+            "D",
+            "i",
+            "os /n"
+        ],
+        [
+            "No, no, ",
+            "no ",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "P8BLkulZGX8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,47 +2,130 @@
     "cancion": "luna-tucumana",
     "banda": "atahualpa-yupanqui",
     "escala": "E7",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "E7",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "E7",
+                    "G",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E7",
+                    "E7",
+                    "E7",
+                    "Dm",
+                    "E7",
+                    "Dm",
+                    "C Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "C Am",
+                    "Am",
                     "Am",
                     "E7",
-                    "Am"
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Dm",
+                    "G",
+                    "E7",
+                    "E7",
+                    "Dm",
+                    "G",
+                    "E7",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A7",
                     "Dm",
-                    "Am",
-                    "E7",
-                    "Am"
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "Dm",
+                    "E7",
                     "Am",
                     "E7",
-                    "Am"
+                    "A7",
+                    "Dm",
+                    "E7",
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Am",
+                    "Dm",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "G",
                     "C",
-                    "G7",
-                    "F7",
-                    "C"
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             }
         ],
@@ -50,187 +133,123 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
             3,
-            1,
-            1,
-            0,
-            1,
-            2,
-            0,
-            1,
-            2,
-            3,
-            1,
-            1
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            " no le canto a la",
-            " luna/nPorque a"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "lumbra y nada ",
-            "mas",
-            "/nLe "
+            "Yo no ",
+            "le canto ",
+            "la luna por",
+            "que alumbra nad ",
+            "más. \n\nLe ",
+            "canto porque ya s",
+            "abe de mi ",
+            "largo  ca",
+            "minar. \n\nLe ",
+            "canto porque ya s",
+            "abe de mi l",
+            "argo cam",
+            "inar. \n\nHay ",
+            "lunita tucu",
+            "mana, tambor",
+            "cito, calcha a",
+            "quí. \n\nC",
+            "ompañera de los gauc",
+            "hos en las s",
+            "endas de \n\nTaf",
+            "í. \n\nCompañe",
+            "ra de los gauch",
+            "os en las sen",
+            "das de \n\nTaf",
+            "í. \n\nPerdido en ",
+            "las serrazones, qu",
+            "ién sabe vidita por dó",
+            "nde andaré. /n"
         ],
         [
-            "canto porque ella s",
-            "abe/nDe mi l"
+            "Más cuando salg",
+            "a la luz can",
+            "taré, ca",
+            "ntaré. ",
+            "mi tucumán que",
+            "rido canta",
+            "ré, cant",
+            "aré. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "argo cami",
-            "nar/nLe "
+            "Con ",
+            "esperanza  con p",
+            "ena en los ",
+            "campos  de \n\nAcher",
+            "al. \n\nYo he vist",
+            "o la luna buena b",
+            "esando ",
+            "el cañaveral /n"
         ],
         [
-            "canto porque ella s",
-            "abe/nDe mi l"
+            "Yo he visto la l",
+            "una buena be",
+            "sando el ",
+            "cañaveral.  /n"
         ],
         [
-            "argo cami",
-            "nar/nHa"
+            "En algo nos p",
+            "arecemos lu",
+            "na de la s",
+            "oledad. \n\nYo ",
+            "voy andando ca",
+            "ntando que es mi ",
+            "modo  de a",
+            "l",
+            "u",
+            "m",
+            "b/n"
         ],
         [
-            "y lunita tucum",
-            "ana/nTamborci"
-        ],
-        [
-            "to calcha",
-            "quí",
-            "/nCom"
-        ],
-        [
-            "pañera de los gau",
-            "chos/nEn las "
-        ],
-        [
-            "sendas de Ta",
-            "fí/nCom"
-        ],
-        [
-            "pañera de los gau",
-            "chos/nEn las "
-        ],
-        [
-            "sendas de Ta",
-            "fí/nP"
-        ],
-        [
-            "erdido en las c",
-            "errazones/nQuien sabe vi"
-        ],
-        [
-            "dita por ",
-            "donde an",
-            "daré",
-            "/nMas "
-        ],
-        [
-            "cuando salga la ",
-            "luna/nCant"
-        ],
-        [
-            "aré can",
-            "taré",
-            "/nA"
-        ],
-        [
-            " mi Tucumán qu",
-            "erido/nCanta"
-        ],
-        [
-            "ré cantaré can",
-            "taré/nCon "
-        ],
-        [
-            "ezperanza o co",
-            "n pena/nEn l"
-        ],
-        [
-            "os campos de a",
-            "cheral",
-            "/nYo h"
-        ],
-        [
-            "e visto a la lu",
-            "na buena/nBesa"
-        ],
-        [
-            "ndo el cañav",
-            "eral/nYo h"
-        ],
-        [
-            "e visto a la lu",
-            "na buena/nBesa"
-        ],
-        [
-            "ndo el cañav",
-            "eral/nSi e"
-        ],
-        [
-            "n algo nos parec",
-            "emos/nLuna"
-        ],
-        [
-            " de la soleda",
-            "d",
-            "/nYo v"
-        ],
-        [
-            "oy andando y c",
-            "antando/nQue "
-        ],
-        [
-            "es mi modo de a",
-            "lumbrar/nYo v"
-        ],
-        [
-            "oy andando y c",
-            "antando/nQue "
-        ],
-        [
-            "es mi modo de a",
-            "lumbrar/nP"
-        ],
-        [
-            "erdido en las c",
-            "errazones/nQuien sabe vi"
-        ],
-        [
-            "dita por ",
-            "donde an",
-            "daré",
-            "/nMas "
-        ],
-        [
-            "cuando salga la ",
-            "luna/nCant"
-        ],
-        [
-            "aré can",
-            "taré",
-            "/nA"
-        ],
-        [
-            " mi Tucumán qu",
-            "erido/nCanta"
-        ],
-        [
-            "ré cantaré can",
-            "taré"
+            "Perdido en las s",
+            "errazones, quién s",
+            "abe vidita por dónde an",
+            "daré. \n\nMás c",
+            "uando salga la l",
+            "una cantaré, ",
+            "cantar",
+            "é. mi tuc",
+            "umán querido ",
+            "cantaré,  ",
+            "cantaré. ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "70WmQk96Btc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

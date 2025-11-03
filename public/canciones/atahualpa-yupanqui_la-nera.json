@@ -2,201 +2,389 @@
     "cancion": "la-nera",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 198,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "E7",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Dm",
+                    "F#",
+                    "B",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
                     "A7",
                     "Dm",
-                    "G7",
-                    "C"
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "E7",
+                    "E7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E7",
+                    "A7",
                     "A7",
                     "Dm",
-                    "Am",
-                    "E7",
-                    "Am"
+                    "Dm",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Dm",
                     "G7",
-                    "C"
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            0,
-            1,
-            1,
             2,
-            2,
-            1,
-            1,
-            0,
-            1,
-            1,
-            0,
-            1,
-            1,
-            2,
-            2,
-            1,
-            1
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "onde está ",
-            "mi coraz",
-            "n que se fue tr",
-            "ás de Esper",
-            "anza",
-            "/nt"
-        ],
-        [
-            "engo miedo que la n",
-            "oche me deje tam",
-            "bién sin alm",
-            "a",
-            "/nt"
-        ],
-        [
-            "engo miedo que la n",
-            "oche me deje tam",
-            "bién sin alm",
-            "a,/nd"
-        ],
-        [
-            "onde está ",
-            "la palomi",
-            "ta que al amane",
-            "cer lloraba",
             "",
-            "/ns"
-        ],
-        [
-            "e fue muy lejos dej",
-            "ando sobre mi pec",
-            "ho sus lágrima",
-            "s",
-            "/ns"
-        ],
-        [
-            "e fue muy lejos dej",
-            "ando sobre mi pec",
-            "ho sus lágrima",
-            "s./nCuan"
-        ],
-        [
-            "do se aband",
-            "ona el pago",
-            " y se",
-            " empieza ",
-            "a repechar",
             "",
-            "/nt"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ira el caballo adel",
-            "ante y el alma tira",
-            " pa' atrá",
-            "s",
-            "/nt"
+            "Donde ",
+            "está  mi c",
+            "orazón, que ",
+            "se fue tra",
+            "s la esp",
+            "eranz",
+            "a. \n\nTe",
+            "ngo mie",
+            "do que la noch",
+            "e me deje t",
+            "ambién sin ",
+            "alm",
+            "a. \n\nT",
+            "engo m",
+            "iedo que la n",
+            "oche me de",
+            "je también ",
+            "sin al",
+            "ma. /n"
         ],
         [
-            "ira el caballo adel",
-            "ante y el alma tira",
-            " pa' atrá",
-            "s,/nyo t"
+            "Donde e",
+            "stá la pal",
+            "omita que al ",
+            "amanec",
+            "er llo",
+            "raba. /n"
         ],
         [
-            "engo una ",
+            "Se ",
+            "fue muy lejo ",
+            "dejando s",
+            "obre mi pe",
+            "cho sus ",
+            "l",
+            "á",
+            "g",
+            "r",
+            "i",
+            "m",
+            "a/n"
+        ],
+        [
+            "Cua",
+            "ndo se aba",
+            "ndona el p",
+            "ago ",
+            "se empi",
+            "eza r",
+            "epechar",
+            "tira el ",
+            "caballo adela",
+            "nte el al",
+            "ma tira p",
+            "ara atrá",
+            "s. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "tengo una ",
             "pena anti",
-            "gua inutil botar",
-            "la afuera",
-            "",
-            "/ny"
+            "gua, inú",
+            "til botarl",
+            "a fuer",
+            "a. ",
+            "como ",
+            "es pena que d",
+            "ura, yo la ",
+            "he llamado ",
+            "la ñe",
+            "ra. ",
+            "c",
+            "omo es pena ",
+            "que dura, ",
+            "yo la he llam",
+            "ado la ñ",
+            "era. /n"
         ],
         [
-            " como es pena que du",
-            "ra, yo la he llama",
-            "do la añera",
-            "",
-            "/ny"
+            "Do",
+            "nde están las ",
+            "esperanzas, ",
+            "donde  están ",
+            "las ale",
+            "gría",
+            "s. /n"
         ],
         [
-            " como es pena que du",
-            "ra, yo la he llama",
-            "do la añera",
-            "./nDon"
+            "La ñera es ",
+            "la pena buena ",
+            "es mi s",
+            "ola com",
+            "pañía/n"
         ],
         [
-            "de están l",
-            "as espera",
-            "nzas, donde están l",
-            "as alegrí",
-            "as",
-            "/nl"
+            "La ",
+            "ñera es ",
+            "la pena buen ",
+            "es mi s",
+            "ola co",
+            "mpa",
+            "ñía. /n"
         ],
         [
-            "a añera es la pena b",
-            "uena y es mi sol",
-            "a compañ",
-            "ía",
-            "/nl"
-        ],
-        [
-            "a añera es la pena b",
-            "uena y es mi sol",
-            "a compañ",
-            "ía,/nCuan"
-        ],
-        [
-            "do se aband",
-            "ona el pago",
-            " y se",
-            " empieza ",
-            "a repechar",
-            "",
-            "/nt"
-        ],
-        [
-            "ira el caballo adel",
-            "ante y el alma tira",
-            " pa' atrá",
-            "s",
-            "/nt"
-        ],
-        [
-            "ira el caballo adel",
-            "ante y el alma tira",
-            " pa' atrá",
-            "s."
+            "Cuando se aba",
+            "ndona el pa",
+            "go ",
+            "se emp",
+            "ieza r",
+            "epecha",
+            "r, tira ",
+            "el caballo adel",
+            "ante el a",
+            "lma tir",
+            "a para at",
+            "rás. \n\nT",
+            "ira ",
+            "el caballo adel",
+            "ante el a",
+            "lma tir ",
+            "para atrás",
+            ". ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "4708s7YsH80",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

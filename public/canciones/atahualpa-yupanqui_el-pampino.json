@@ -2,41 +2,166 @@
     "cancion": "el-pampino",
     "banda": "atahualpa-yupanqui",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "D",
+                    "D",
+                    "F",
+                    "C7",
+                    "C7",
+                    "F",
+                    "A7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "Gm",
-                    "F",
-                    "F",
-                    "C7"
+                    "D",
+                    "F7",
+                    "F7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "A7",
+                    "F7",
+                    "D",
                     "F",
                     "A7",
                     "D",
-                    "A7",
+                    "D",
                     "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "F",
+                    "F",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C7",
                     "A7",
                     "D",
                     "D",
-                    "F7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C7",
+                    "A7",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "C7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "A7",
                     "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "A7",
+                    "A7",
+                    "D",
+                    "Gm",
+                    "Gm",
                     "Gm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "D",
+                    "Gm",
+                    "F",
+                    "D",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
                 ]
             }
         ],
@@ -44,65 +169,145 @@
             0,
             1,
             2,
-            1
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "ampa mata de abajo;         I/nY entre s"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ol, pampa y sali",
-            "tre     I/nPamp"
+            "La \n\nPampa mata de ",
+            "abajo, el sol ca",
+            "stiga de arrib",
+            "a. \n\nLa /n"
         ],
         [
-            "ino de mano fuerte,/nsiempre tor"
+            "Pampa mata de a",
+            "bajo, el sol casti",
+            "ga de arriba. ",
+            "entre sol, pampa ",
+            "salitre, se gana el ",
+            "pobre la vida, se ",
+            "gana el pobre la v",
+            "ida. ",
+            "/n"
         ],
         [
-            "eando al desti",
-            "no./nH"
+            "Pampino de mano fuer",
+            "te, siempre estor",
+            "iando al destino. /n"
         ],
         [
-            "ombre que baja la fre",
-            "nte,/nnada ti"
+            "H",
+            "ombre que baja la fren",
+            "te, nada tiene de pa",
+            "mpino, nada t",
+            "iene de pampino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ene de pampi",
-            "no./nNada ti"
+            "Me muestro desnudo al ",
+            "viento  para que aprend ",
+            "de mí. ",
+            "/n"
         ],
         [
-            "ene de pampi",
-            "no./nLa p"
+            "Me muestro desn",
+            "udo al viento para que a",
+            "prenda de mí. /n"
         ],
         [
-            "ampa mata de abajo;/nel s"
+            "Me han dicho que el vie",
+            "nto llora mí me g",
+            "usta reír. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ol castiga de ",
-            "arriba.",
-            "/nY entre s"
+            "Pampino de m",
+            "ano fuerte, siem",
+            "pre estoriando al desti",
+            "no. /n"
         ],
         [
-            "ol, pampa y sali",
-            "tre/nse g"
+            "Hombre que baja la fr",
+            "ente, nada tiene de p",
+            "ampino, nad ",
+            "tiene de pampino. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ana el pobre la vi",
-            "da./nSe g"
+            "El salitre se ",
+            "va lejos, lo va l",
+            "levando un vapor. \n\nEl ",
+            "salitre se va ",
+            "lejos,  lo va lle",
+            "vando un vapor. ",
+            "el pampino queda so",
+            "lo entre la p",
+            "ampa el sol. ",
+            "",
+            "/n"
         ],
         [
-            "ana el pobre la vi",
-            "da."
+            "La /n"
+        ],
+        [
+            "Pampa mata de abajo, ",
+            "el sol castiga de ",
+            "arriba. \n\nLa /n"
+        ],
+        [
+            "Pampa mata de abajo, ",
+            "el sol castiga de a",
+            "rriba. entre s",
+            "ol, pampa salitre, ",
+            "se gana el pobre la vida",
+            ", se gana el ",
+            "pobre  la vida. ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "-8uhYFxq_Mw",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

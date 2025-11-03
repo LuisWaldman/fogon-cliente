@@ -2,83 +2,286 @@
     "cancion": "caminando",
     "banda": "atahualpa-yupanqui",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "D",
+                    "Dm",
                     "A",
+                    "C",
+                    "E",
+                    "E",
                     "E",
                     "A",
                     "A",
+                    "A#",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
-                    "C",
+                    "A",
                     "A",
                     "C",
                     "E",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "ando, camina",
-            "ndo/npor la tierra voy and"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ando,/ncon mis alegr"
+            "Cami",
+            "nando, caminand",
+            "o \n\nPor la ti",
+            "erra voy anda",
+            "ndo \n\nCon mis aleg",
+            "rías que pronto vu",
+            "elan mis peni",
+            "tas anda",
+            "ndo \n\nCon mis al",
+            "egrías que pronto v",
+            "uelan mis p",
+            "enitas dur",
+            "an ",
+            "la luz de las es",
+            "trellas \n\nSie",
+            "nto que me voy cans",
+            "ado la ",
+            "mañanita salgo de ",
+            "nuevo \n\nPor e",
+            "sas sendas chi",
+            "flando la ",
+            "mañanita  salgo de ",
+            "nuevo \n\nPor esas ",
+            "sendas  chi",
+            "flando ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ías que pronto mu",
-            "eren  I/nLa ra r"
+            "Una ",
+            "paisanita  me está esp",
+            "erando \n\nYo no sé ",
+            "dónde ni cu",
+            "ándo \n\nUna p",
+            "aisanita me está esp",
+            "erando \n\nMientras ",
+            "yo voy camin",
+            "ando ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ai la ra la rai",
-            " ra,/nla ra ra ra rai la ra"
+            "Tal vez e",
+            "ncuentre algún ",
+            "día \n\nAquello que ",
+            "voy buscando /n"
         ],
         [
-            "i ra./nUna paisan"
+            "Un ranchito bla",
+            "nco quinchado de amor",
+            "es \n\nUna paisan ",
+            "un chang",
+            "o \n\nUn ranchito bl",
+            "anco quinchado de am",
+            "ores \n\nUna paisan ",
+            "un chang /n"
         ],
         [
-            "ita me está esper",
-            "ando/nyo no sé "
+            "En la f",
+            "alda de \n\nNaroba /n"
         ],
         [
-            "dónde ni c",
-            "uándo./nuna paisan"
+            "Quisiera  vivir ",
+            "sembrar ",
+            "sentir de noch ",
+            "las bagualitas \n\nDe ",
+            "los que pasan a",
+            "ndando ",
+            "sentir de noche las ",
+            "bagualitas \n\nDe ",
+            "los que pasan a",
+            "ndando /n"
         ],
         [
-            "ita me está esper",
-            "ando/nmientras yo v"
+            "La, la, la, la, ",
+            "la \n\nLa, ",
+            "la, la, la, ",
+            "la /n"
         ],
         [
-            "oy camina",
-            "ndo."
+            "Una paisanita me est",
+            "á esperando \n\nYo ",
+            "no sé dónde ni c",
+            "uándo \n\nUna pa",
+            "isanita me está espe",
+            "rando \n\nMientras ",
+            "yo voy camina",
+            "ndo ",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ZQBUtYEl_mQ",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

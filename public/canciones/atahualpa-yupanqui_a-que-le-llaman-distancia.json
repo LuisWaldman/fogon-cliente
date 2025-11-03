@@ -2,55 +2,329 @@
     "cancion": "a-que-le-llaman-distancia",
     "banda": "atahualpa-yupanqui",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "A",
+                    "A",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "A",
+                    "A",
+                    "A#",
+                    "A#",
+                    "F#",
+                    "F",
+                    "A#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "E7",
-                    "D"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "E7",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "qué le llaman dis",
-            "tancia?:    I/nS"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ólo están lejo las c",
-            "osas/nque no sa"
+            "Esta  es una canción en español de rock argentino. ",
+            "¿\nA qué le llaman ",
+            "distancia?  /n"
         ],
         [
-            "bemos mira",
-            "r"
+            "Eso me habrán de ",
+            "explicar. ¿\nA ",
+            "qué le ",
+            "llaman  distancia? /n"
+        ],
+        [
+            "Eso me habrán de ",
+            "explicar. \n\nS",
+            "ólo están lejos las c",
+            "osas que no sabemos ",
+            "mirar.  ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Los c",
+            "aminos son camino",
+            "s en la tier",
+            "ra nada más. /n"
+        ],
+        [
+            "Los cami",
+            "nos son caminos en ",
+            "la tierra nada m",
+            "ás. \n\nLas l",
+            "eguas desaparecen si ",
+            "el alma empieza ",
+            "letear. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "H",
+            "ondo s",
+            "entir r",
+            "umbo fijo ",
+            "corazón ",
+            "claridad. /n"
+        ],
+        [
+            "Hondo s",
+            "entir rumb ",
+            "fijo, corazón ",
+            "claridad. /n"
+        ],
+        [
+            "Hondo sen",
+            "tir rumbo fijo, corazón claridad. \n\nNo era ",
+            "por qué m",
+            "irar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿\nQué c",
+            "osas tiene la vid",
+            "a misterios ",
+            "por demás? ",
+            "¿\nQué cosas t",
+            "iene la vida misteri",
+            "osa por demás /n"
+        ],
+        [
+            "Uno está dond",
+            "e uno quiere muchas vec",
+            "es sin pen",
+            "sar. /n"
+        ],
+        [
+            "Si los caminos son le",
+            "guas en la tier",
+            "ra nada más",
+            ". \n\nSi los camino ",
+            "son leguas en la t",
+            "ierra nada má",
+            "s. ¿\nA qué le ",
+            "llaman distancia? ",
+            "/n"
+        ],
+        [
+            "Eso ",
+            "me habrán ",
+            "de explica",
+            "r. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "YBz60e3s-zw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

@@ -8,188 +8,594 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "F",
+                    "C#",
                     "Eb",
-                    "Bb",
                     "Fm",
-                    "Cm",
+                    "Eb",
                     "Ab",
                     "Eb",
                     "Fm",
-                    "Bb"
+                    "Cm",
+                    "Fm",
+                    "Ab",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Cm",
-                    "Gm",
-                    "Ab",
-                    "Bb",
-                    "Eb"
+                    "Eb",
+                    "Fm",
+                    "Fm",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Gm",
+                    "Fm",
                     "Ab",
-                    "Bb",
-                    "Eb",
-                    "Gm",
-                    "Db",
-                    "Ab",
-                    "Bb"
+                    "Ab"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Cm",
-                    "Gm",
+                    "Eb",
+                    "Eb",
                     "Ab",
-                    "Bb",
-                    "C",
-                    "F"
+                    "Fm",
+                    "Ab"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Am",
-                    "Bb",
-                    "C",
-                    "F",
-                    "Am",
+                    "Ab",
                     "Eb",
-                    "Bb",
-                    "C"
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Fm",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Eb",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Fm",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Gm",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Ab",
+                    "Fm",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Eb",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Fm",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "C",
+                    "Ab",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Gm",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Eb",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Gm",
+                    "Gm",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Eb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Gm",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Ab",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "Gm",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
         ]
     },
     "letras": [
-        [],
         [
-            "u, la misma siempre tu",
-            "/nAmist"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ad, ternura que sé y",
-            "o/nT"
+            "Tú, ",
+            "la mi",
+            "sma siempre ",
+            "tú /n"
         ],
         [
-            "u, mi sombra has sido tu",
-            "/nLa historia de un am"
+            "Am",
+            "istad, ternur",
+            "a que se ",
+            "yo /n"
         ],
         [
-            "or/nQue no fue n"
+            "Tú, ",
+            "mi sombra ",
+            "ha sido tú /n"
         ],
         [
-            "ada/nT"
+            "La historia ",
+            "de un amo",
+            "r que ",
+            "no fue na",
+            "da /n"
         ],
         [
-            "u,  mi eternamente tu",
-            "/nUn hot"
+            "Tú, ",
+            "mi etername",
+            "nte tú /n"
         ],
         [
-            "el,  tu cuerpo y un adi",
-            "s/nT"
+            "Un ",
+            "hotel, ",
+            "tu cuerpo ",
+            "un adió",
+            "s /n"
         ],
         [
-            "u,  mi oculta amiga tu",
-            "/nUn golpe de pas"
+            "Tú, ",
+            "mi oculta amigo ",
+            "tú \n\nUn ",
+            "golpe de p",
+            "asión, ",
+            "amor de ",
+            "madrug",
+            "ada /n"
         ],
         [
-            "ión/nAmor de m"
+            "No existe un ",
+            "lazo entre ",
+            "tú yo /n"
         ],
         [
-            "adrugada/nN"
+            "N",
+            "ada de a",
+            "mores, ",
+            "nada de na",
+            "da \n\nTú, ",
+            "la mi",
+            "sma de ay",
+            "er \n\nLa inc",
+            "ondiciona",
+            "la que ",
+            "no esper ",
+            "nada /n"
         ],
         [
-            "o existe un lazo entre ",
-            "tu y yo/nN"
+            "Tú, ",
+            "la mism ",
+            "de ayer /n"
         ],
         [
-            "ada de amores, nad",
-            "a de nada/nT"
+            "La que no ",
+            "supe am",
+            "ar \n\nNo sé ",
+            "por qué ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "u, la misma de aye",
-            "r, la incondicional",
-            "/nLa que no esp"
+            "Tú, ",
+            "tensament ",
+            "tú ",
+            "/n"
         ],
         [
-            "era nada/nT"
+            "Soledad, ",
+            "cariño que a",
+            "lcancé un ",
+            "dedo /n"
         ],
         [
-            "u, la misma de ayer",
-            ", la que no supe amar",
-            "/nN"
+            "Tú, ",
+            "mis horas bajas /n"
         ],
         [
-            "o sé por que",
-            "/nT"
+            "Tú, ",
+            "cuerpo de m",
+            "ujer \n\nUn ",
+            "par de r",
+            "osas bl",
+            "ancas /n"
         ],
         [
-            "u,  intensamente tu",
-            "/nSoled"
+            "No existe un ",
+            "lazo entre ",
+            "tú yo /n"
         ],
         [
-            "ad, cariño yo que s",
-            "é/nT"
+            "No ",
+            "hubo pro",
+            "mesas ni ",
+            "jurament",
+            "os \n\nNa",
+            "da de na",
+            "da \n\nTú, ",
+            "la mism",
+            "a de ayer /n"
         ],
         [
-            "u,  mis horas bajas tu",
-            "/nUn cuerpo de muj"
+            "La incon",
+            "dicional, ",
+            "la que ",
+            "no espera n",
+            "ada /n"
         ],
         [
-            "er/nUn par de r"
+            "Tú, ",
+            "la misma de ",
+            "ayer /n"
         ],
         [
-            "osas blancas/nN"
+            "La que no s",
+            "upe ama",
+            "r \n\nNo sé por ",
+            "qué /n"
         ],
         [
-            "o existe un lazo entre t",
-            "u y yo/nN"
+            "Amigo ",
+            "tú \n\nLa ",
+            "misma de ",
+            "ayer  \n\nLa ",
+            "incondicional \n\nLa ",
+            "que ",
+            "no es",
+            "pera na",
+            "da \n\nTú, ",
+            "la ",
+            "misma  de a",
+            "yer \n\nLa ",
+            "que no supe a",
+            "mar \n\nNo sé ",
+            "por ",
+            "qué /n"
         ],
         [
-            "o hubo promesas/nN"
+            "Tú, ",
+            "la mis",
+            "ma de ayer /n"
         ],
         [
-            "i juramentos/nN"
+            "La incon",
+            "dicional /n"
         ],
         [
-            "ada de nada/nT"
+            "La ",
+            "que no espera n",
+            "ada /n"
         ],
         [
-            "u, la misma de aye",
-            "r, la incondiciona",
-            "l/nLa que no esp"
+            "Tú, ",
+            "la misma ",
+            "de aye /n"
         ],
         [
-            "era nada/nTu, la misma de ayer, la que no supe amar"
+            "La que no ",
+            "supe  a",
+            "mar ",
+            "",
+            "/n"
         ],
-        [],
-        []
+        [
+            "Tú, ",
+            "la misma de ayer /n"
+        ],
+        [
+            "La inc",
+            "ondicio",
+            "nal \n\nLa ",
+            "que no ",
+            "espera  n",
+            "ada /n"
+        ],
+        [
+            "Tú, ",
+            "la misma de ayer \n\nLa ",
+            "que ",
+            "no supe amar /n"
+        ],
+        [
+            "No ",
+            "sé por qué /n"
+        ],
+        [
+            "A",
+            "migo ",
+            "tú ",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "wOjzo02Tmck",
-            "delay": 0
+            "delay": 5000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

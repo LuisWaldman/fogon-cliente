@@ -2,99 +2,373 @@
     "cancion": "huella-triste",
     "banda": "atahualpa-yupanqui",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "G",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "E7",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "B7",
-                    "Em"
+                    "Em",
+                    "E7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B7",
                     "Em",
                     "Em",
                     "E7",
-                    "Am",
                     "B7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
                     "Em",
                     "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "Am",
-                    "G",
+                    "Am",
                     "B7",
-                    "Em"
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#",
+                    "Em",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7",
+                    "E7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E7",
+                    "B7",
+                    "E7",
+                    "B7",
+                    "B7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "B7",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "yo les cuente mis pe",
-            "nas   I/nSi en"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " ellas están mis fu",
-            "erzas/ndéjenme que me las "
+            "Que ",
+            "yo les cuente ",
+            "mis penas, me pi",
+            "den de tarde ",
+            "en tarde. /n"
         ],
         [
-            "calle./nLa v"
+            "Que yo les cuent ",
+            "mis penas, me p",
+            "iden de tarde ",
+            "en tarde. /n"
         ],
         [
-            "ida es un lazo la",
-            "rgo/nestirao sobre la ti"
+            "Si en ellas está mi ",
+            "fuerza,  dé",
+            "jenme que me las ",
+            "calle. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "erra,/nen una punta una d"
+            "Voy an",
+            "dando por el mu",
+            "ndo, camino de ",
+            "cualquier par",
+            "te. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "icha/ny en la "
+            "Llena de pie",
+            "dras, la send ",
+            "llena de sueñ",
+            "os el aire",
+            ". ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "otra punta una pe",
-            "na./nAs"
+            "La vida es un ",
+            "lazo largo, ",
+            "estirado sobre la ",
+            "tierra. /n"
         ],
         [
-            "í va mi coraz",
-            "ón/nlleno de sueños y au"
+            "En una punta ",
+            "una dicha, en ",
+            "la otra punta ",
+            "una pena. /n"
         ],
         [
-            "sencias,/nsin encontrar su quer"
+            "Así ",
+            "va mi corazón",
+            ", lleno de su",
+            "eños ausen",
+            "cias. \n\nSin e",
+            "ncontrar su q",
+            "uerer, se ha per",
+            "dido en la ",
+            "cerrazón ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "encia/nperd"
+            "No ",
+            "se ve la cruz ",
+            "del sur en ",
+            "las noches de tor",
+            "menta. \n\nNo ",
+            "se ve la cruz del ",
+            "sur en las no",
+            "ches de torment",
+            "a. \n\nHay que ",
+            "mirar dentro de ",
+            "uno para encon",
+            "trarle la hue",
+            "lla. ",
+            "",
+            "/n"
         ],
         [
-            "ido en la cerraz",
-            "n."
+            "C",
+            "uando me cansa ",
+            "el camino, me p",
+            "ongo mirar pa' ",
+            "dentro. \n\nCua",
+            "ndo me cansa el ",
+            "camino, me pon",
+            "go mirar pa' ",
+            "dentro. \n\nComo q",
+            "uien arrima l",
+            "eñas al fu",
+            "ego ni unos r",
+            "ecuerdo",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La vida es ",
+            "un lazo largo, ",
+            "estirado sob",
+            "re la tierra. /n"
+        ],
+        [
+            "En una pun",
+            "ta una dicha ",
+            "en la otra pun",
+            "ta una pena. ",
+            "/n"
+        ],
+        [
+            "Así va mi cora",
+            "zón, lleno de ",
+            "sueños ause",
+            "ncias. \n\nSin ",
+            "encontrar su ",
+            "querer, se ha p",
+            "erdido en ",
+            "la cerrazó",
+            "n. ",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "wKo3YK7_4cw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

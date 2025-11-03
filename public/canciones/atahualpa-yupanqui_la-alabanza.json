@@ -2,30 +2,101 @@
     "cancion": "la-alabanza",
     "banda": "atahualpa-yupanqui",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D#",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
                     "A",
                     "E",
                     "A",
-                    "E"
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "A",
                     "E",
                     "E",
                     "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "A",
                     "E",
                     "E",
                     "E"
@@ -34,61 +105,98 @@
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            " Viejo cantor de mi pago/n  te quiero cant"
+            "",
+            "",
+            "/n"
         ],
         [
-            "ar/n  "
+            "V",
+            "iejo canto de mis pag",
+            "os, viejo como el sali",
+            "trán, alabanza chaca",
+            "rera te quiero cantar. ",
+            "",
+            "",
+            "",
+            "muy caimí dice el ",
+            "bombo cuando suena allá en m",
+            "ailín, por ahí ha andado un ga",
+            "llito tocando el vi",
+            "olín. ",
+            "",
+            "/n"
         ],
         [
-            "Amoykaima dice el bombo/n  tocando el viol"
+            "En \n\nLoreto bailó z",
+            "ambas, el escondido en \n\nBe",
+            "ltrán, pa' bailar un buen rem",
+            "edio ha hizo un chocorral /n"
         ],
         [
-            "ín/n  "
+            "No casa la vinama",
+            "nta ande llaman el tonc",
+            "al, alabanza chacar",
+            "era te quiero cantar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "En Loreto bailo Zamba/n  hay un Suncho Corr"
+            "Anchi su mala ",
+            "alabanza,  cantada en el ",
+            "quebrachal, mismo como ",
+            "si llamara vengan re",
+            "zar. ",
+            "",
+            "/n"
         ],
         [
-            "al/n         N"
+            "Zapatea por lo p",
+            "arejo, no lo enojes al t",
+            "ierra, poquita cepil",
+            "la melola chacar",
+            "era. ",
+            "",
+            "/n"
         ],
         [
-            "oka Salavina manta/n         te quiero can"
+            "Ya va saliendo la l",
+            "una brillando en el sal",
+            "itrán, engualichando guit",
+            "arras con su claridad. /n"
         ],
         [
-            "tar/n  "
-        ],
-        [
-            "Ashpaj Sumaj la alabanza/n  vengan a rez"
-        ],
-        [
-            "ar/n  "
-        ],
-        [
-            "Zapatea por lo parejo/n  la chacare"
-        ],
-        [
-            "ra/n  "
-        ],
-        [
-            "Ya va saliendo la luna/n  con su clarid"
-        ],
-        [
-            "ad"
+            "No casa la vinaman",
+            "ta ande llaman el tonc",
+            "al, alabanza chacarera ",
+            "te quiero cantar. ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "_wS3awcIYd8",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }
