@@ -72,9 +72,9 @@ const escalas = [
   })),
   ...notas.map((nota) => ({
     value: `${nota}m`,
-    label: `${helper.GetAcorde(nota)}m Menor`,
+    label: `${helper.GetAcorde(nota)} Menor`,
   })),
-]
+].sort((a, b) => a.label.localeCompare(b.label))
 
 const filtroEscalaNota = ref(['C'])
 const filtroTempoBPM = ref(['0_60'])
