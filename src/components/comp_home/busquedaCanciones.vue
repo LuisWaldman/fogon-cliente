@@ -292,7 +292,7 @@ function VerFiltros() {
         </div>
       </div>
 
-      <!-- Grupo de Bandas -->
+      <!-- Etiqueta -->
       <div class="filtro" :class="{ seleccionado: filtroEtiquetas }">
         <div class="filtro-header" @click="filtroEtiquetas = !filtroEtiquetas">
           Etiquetas
@@ -313,6 +313,38 @@ function VerFiltros() {
               <input
                 type="checkbox"
                 @change="toggleCheckbox(filtroGrupoSeleccionado, opcion.value)"
+              />
+              {{ opcion.label }}
+            </label>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Calidad -->
+      <div class="filtro" :class="{ seleccionado: filtroCalidad }">
+        <div class="filtro-header" @click="filtroCalidad = !filtroCalidad">
+          Calidad
+        </div>
+        <div v-if="filtroCalidad" class="dropdown-container">
+          <div
+            class="dropdown-header"
+            @click="dropdownCalidadAbierto = !dropdownCalidadAbierto"
+          >
+            Seleccionar ({{ filtroCalidadSeleccionada.length }}) ▼
+          </div>
+          <div v-if="dropdownCalidadAbierto" class="dropdown-content">
+            <label
+              v-for="opcion in opcionesCalidad"
+              :key="opcion.value"
+              class="checkbox-item"
+            >
+              <input
+                type="checkbox"
+                :checked="filtroCalidadSeleccionada.includes(opcion.value)"
+                @change="
+                  toggleCheckbox(filtroCalidadSeleccionada, opcion.value)
+                "
               />
               {{ opcion.label }}
             </label>
@@ -480,36 +512,6 @@ function VerFiltros() {
         </div>
       </div>
 
-      <!-- Calidad -->
-      <div class="filtro" :class="{ seleccionado: filtroCalidad }">
-        <div class="filtro-header" @click="filtroCalidad = !filtroCalidad">
-          Calidad
-        </div>
-        <div v-if="filtroCalidad" class="dropdown-container">
-          <div
-            class="dropdown-header"
-            @click="dropdownCalidadAbierto = !dropdownCalidadAbierto"
-          >
-            Seleccionar ({{ filtroCalidadSeleccionada.length }}) ▼
-          </div>
-          <div v-if="dropdownCalidadAbierto" class="dropdown-content">
-            <label
-              v-for="opcion in opcionesCalidad"
-              :key="opcion.value"
-              class="checkbox-item"
-            >
-              <input
-                type="checkbox"
-                :checked="filtroCalidadSeleccionada.includes(opcion.value)"
-                @change="
-                  toggleCheckbox(filtroCalidadSeleccionada, opcion.value)
-                "
-              />
-              {{ opcion.label }}
-            </label>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
