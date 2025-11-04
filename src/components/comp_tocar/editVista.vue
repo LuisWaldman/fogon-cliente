@@ -18,8 +18,6 @@ const verAcordes = ref(
     configPantalla.value.muestra === 'letrayacordes',
 )
 const verPartitura = ref(configPantalla.value.muestra === 'partitura')
-const verAltoReproductor = ref(configPantalla.value.altoReproductor)
-// Solo Sincro controls
 const soloVideo = ref(configPantalla.value.reproduce === 'video')
 const soloMidi = ref(configPantalla.value.reproduce === 'midi')
 
@@ -150,6 +148,8 @@ function ClickSoloMidi() {
     configPantalla.value.reproduce = 'midi'
   }
 }
+
+
 </script>
 
 <template>
@@ -199,7 +199,7 @@ function ClickSoloMidi() {
         <div class="clickeableVista" :class="{ seleccionada: soloMidi }" @click="ClickSoloMidi()"
           >MIDI 🎹</div
         >
-        <div v-if="soloMidi || soloVideo" style="width: 300px">
+        <div v-if="soloMidi || soloVideo" >
           <div><span style="font-size: small;" >Alto Reproductor</span></div>
           <div>
         <input
@@ -240,12 +240,12 @@ function ClickSoloMidi() {
           />
         </div>
       </div>
-
+<!-- 
       <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
         <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
         <span>Modo poeta</span>
       </div>
-
+-->
       <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
         <span>Caracteres por renglon</span>
         <input
@@ -429,11 +429,18 @@ function ClickSoloMidi() {
   margin-bottom: 10px;
   background-color: rgb(209, 169, 38);
 }
+.botonera {
+  margin-top: 15px;
+  text-align: right;
+}
 @media (max-width: 768px) {
   .vistaedit {
-    left: 10%;
+    left: 3%;
     top: 10%;
     font-size: small;
+  }
+  .botonera {
+    text-align: center;
   }
 }
 </style>
