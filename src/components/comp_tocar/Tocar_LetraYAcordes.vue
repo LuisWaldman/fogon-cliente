@@ -171,8 +171,9 @@ defineExpose({ Actualizar })
   font-size: var(--tamanio-letra);
   color: white;
   margin-bottom: var(--tamanio-acorde);
+  width: max-content;
+  min-width: 100%;
 }
-
 .acordediv {
   font-size: var(--tamanio-acorde);
   margin: 1px;
