@@ -148,76 +148,81 @@ function ClickSoloMidi() {
     configPantalla.value.reproduce = 'midi'
   }
 }
-
-
 </script>
 
 <template>
-    
   <div class="vistaedit">
-    
-  <div class="tituloeditSize">VISTA GENERAL</div>
-      <div class="config-row">
-        👁️‍🗨️ Viendo
-        <div class="clickeableVista" :class="{ seleccionada: verLetra }" @click="ClickViendoLetra()"
-          >📝 LETRA
-          <input
-            type="number"
-            min="8"
-            max="80"
-            v-model.number="configPantalla.tamanioLetra"
-            @click.stop
-          />
-          <span>px</span></div
-        >
-        <div class="clickeableVista"
-          :class="{ seleccionada: verAcordes }"
-          @click="ClickViendoAcordes()"
-          >🎸 ACORDES
-          <input
-            type="number"
-            min="8"
-            max="80"
-            v-model.number="configPantalla.tamanioAcorde"
-            @click.stop
-          />
-          <span>px</span>
-          </div
-        >
-        <div class="clickeableVista"
-          :class="{ seleccionada: verPartitura }"
-          @click="ClickViendoPartitura()"
-          >🎼 PARTITURA</div
-        >
+    <div class="tituloeditSize">VISTA GENERAL</div>
+    <div class="config-row">
+      👁️‍🗨️ Viendo
+      <div
+        class="clickeableVista"
+        :class="{ seleccionada: verLetra }"
+        @click="ClickViendoLetra()"
+      >
+        📝 LETRA
+        <input
+          type="number"
+          min="8"
+          max="80"
+          v-model.number="configPantalla.tamanioLetra"
+          @click.stop
+        />
+        <span>px</span>
       </div>
+      <div
+        class="clickeableVista"
+        :class="{ seleccionada: verAcordes }"
+        @click="ClickViendoAcordes()"
+      >
+        🎸 ACORDES
+        <input
+          type="number"
+          min="8"
+          max="80"
+          v-model.number="configPantalla.tamanioAcorde"
+          @click.stop
+        />
+        <span>px</span>
+      </div>
+      <div
+        class="clickeableVista"
+        :class="{ seleccionada: verPartitura }"
+        @click="ClickViendoPartitura()"
+      >
+        🎼 PARTITURA
+      </div>
+    </div>
     <div>
       <div class="config-row">
         ▶️ Toca
-        <div class="clickeableVista" :class="{ seleccionada: soloVideo }" @click="ClickSoloVideo()"
-          >VIDEO 🎬</div
+        <div
+          class="clickeableVista"
+          :class="{ seleccionada: soloVideo }"
+          @click="ClickSoloVideo()"
         >
-        <div class="clickeableVista" :class="{ seleccionada: soloMidi }" @click="ClickSoloMidi()"
-          >MIDI 🎹</div
-        >
-        <div v-if="soloMidi || soloVideo" >
-          <div><span style="font-size: small;" >Alto Reproductor</span></div>
-          <div>
-        <input
-          type="range"
-          style="width: 100%"
-          min="3"
-          max="398"
-          v-model.number="configPantalla.altoReproductor"
-        />
-      </div>
+          VIDEO 🎬
         </div>
-
-         
-      
+        <div
+          class="clickeableVista"
+          :class="{ seleccionada: soloMidi }"
+          @click="ClickSoloMidi()"
+        >
+          MIDI 🎹
+        </div>
+        <div v-if="soloMidi || soloVideo">
+          <div><span style="font-size: small">Alto Reproductor</span></div>
+          <div>
+            <input
+              type="range"
+              style="width: 100%"
+              min="3"
+              max="398"
+              v-model.number="configPantalla.altoReproductor"
+            />
+          </div>
+        </div>
       </div>
-
-      
-
 
       <div
         class="config-row"
@@ -240,7 +245,7 @@ function ClickSoloMidi() {
           />
         </div>
       </div>
-<!-- 
+      <!-- 
       <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
         <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
         <span>Modo poeta</span>
@@ -259,25 +264,34 @@ function ClickSoloMidi() {
     </div>
     <div class="config-row">
       <span>Vista</span>
-      <div class="clickeableVista"
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: refModoVista === 'simple' }"
         @click="ClickSetModoVista('simple')"
-        >|</div
       >
-      <div class="clickeableVista"
+        |
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: refModoVista === 'doble' }"
         @click="ClickSetModoVista('doble')"
-        >| |</div
       >
-      <div class="clickeableVista"
+        | |
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: refModoVista === 'triple' }"
         @click="ClickSetModoVista('triple')"
-        >| | |</div
       >
+        | | |
+      </div>
       <div @click="configPantalla.invertido = !configPantalla.invertido">
-      <div class="clickeableVista"
-        :class="{ seleccionada: configPantalla.invertido }"
-        >↩️</div>
+        <div
+          class="clickeableVista"
+          :class="{ seleccionada: configPantalla.invertido }"
+        >
+          ↩️
+        </div>
       </div>
     </div>
     <div class="config-row">
@@ -321,50 +335,63 @@ function ClickSoloMidi() {
 
     <div class="config-row">
       <span>2da columna</span>
-      <div class="clickeableVista"
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoSecuencia }"
         @click="
           configPantalla.viendoSecuencia = !configPantalla.viendoSecuencia
         "
-        >Secuencia</div
       >
-      <div class="clickeableVista"
+        Secuencia
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoInstrucciones }"
         @click="
           configPantalla.viendoInstrucciones =
             !configPantalla.viendoInstrucciones
         "
-        >Instrucciones</div
       >
-      <div class="clickeableVista"
+        Instrucciones
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoCuadrado }"
         @click="configPantalla.viendoCuadrado = !configPantalla.viendoCuadrado"
-        >Cuadrado</div
       >
+        Cuadrado
+      </div>
     </div>
     <div class="config-row" v-if="refModoVista === 'triple'">
       <span>3ra columna</span>
-      <div class="clickeableVista"
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoSecuencia3 }"
         @click="
           configPantalla.viendoSecuencia3 = !configPantalla.viendoSecuencia3
         "
-        >Secuencia</div>
-      <div class="clickeableVista"
+      >
+        Secuencia
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoInstrucciones3 }"
         @click="
           configPantalla.viendoInstrucciones3 =
             !configPantalla.viendoInstrucciones3
         "
-            >Instrucciones</div
-          >
-      <div class="clickeableVista"
+      >
+        Instrucciones
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoCuadrado3 }"
         @click="
           configPantalla.viendoCuadrado3 = !configPantalla.viendoCuadrado3
         "
-        >Cuadrado</div
       >
+        Cuadrado
+      </div>
     </div>
     <div class="config-row">
       <span>Secuencia</span>
@@ -414,7 +441,7 @@ function ClickSoloMidi() {
   margin-right: 20px;
 }
 
-.clickeableVista { 
+.clickeableVista {
   cursor: pointer;
   min-width: 60px;
   padding: 3px;

@@ -91,9 +91,15 @@ function clickEditar() {
         FOGON.AR
       </span>
 
-      <div  v-if="$route.path === '/tocar'" class="divtitulocancioncontrol">
-        <div class="encabezado"><emoticonOrigen :origen="appStore.origenCancion.origenUrl" /> {{ arreglartexto(appStore.cancion?.banda) }} - <b>{{ appStore.cancion?.escala }}</b></div>
-        <div class="cancionNombre">{{ arreglartexto(appStore.cancion?.cancion) }}</div>
+      <div v-if="$route.path === '/tocar'" class="divtitulocancioncontrol">
+        <div class="encabezado">
+          <emoticonOrigen :origen="appStore.origenCancion.origenUrl" />
+          {{ arreglartexto(appStore.cancion?.banda) }} -
+          <b>{{ helperNotas.GetAcorde(appStore.cancion?.escala) }}</b>
+        </div>
+        <div class="cancionNombre">
+          {{ arreglartexto(appStore.cancion?.cancion) }}
+        </div>
       </div>
 
       <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
@@ -320,7 +326,7 @@ function clickEditar() {
 .navbarFogon {
   width: 100%;
   display: flex;
-  
+
   z-index: 100;
   border: 1px solid;
   background-color: #353333 !important;
@@ -334,7 +340,7 @@ function clickEditar() {
   margin-bottom: 0px;
 }
 .dropdown-item {
-  z-index: 1000 ;
+  z-index: 1000;
 }
 
 .cancionNombre {

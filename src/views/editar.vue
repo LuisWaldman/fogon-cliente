@@ -26,14 +26,13 @@ const viendo: Ref<string> = ref(
   localStorage.getItem('viendo_vista_editando') || 'inicio',
 )
 function GetStylePantallaEdit() {
-  
-  let direccion: 'row' | 'row-reverse' | 'column' | 'column-reverse' =
-    vista.value.invertido ? 'row-reverse' : 'row'
+  let direccion: 'row' | 'row-reverse' | 'column' | 'column-reverse' = vista
+    .value.invertido
+    ? 'row-reverse'
+    : 'row'
 
   if (vista.value.modo == 'simple') {
-    direccion = vista.value.invertido
-      ? 'column'
-      : 'column-reverse'
+    direccion = vista.value.invertido ? 'column' : 'column-reverse'
   }
   return {
     width: pantalla.getAnchoPantalla() + 'px',
@@ -99,7 +98,6 @@ const viendoModo = ref(0)
 function cambioModo(index: number) {
   viendoModo.value = index
 }
-
 </script>
 <template>
   <cabecera
@@ -183,10 +181,7 @@ function cambioModo(index: number) {
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         @cambioCompas="cambiarCompas"
-        v-if="
-          viendo !== 'editconsolaacordes' &&
-          viendo !== 'editaracordes'
-        "
+        v-if="viendo !== 'editconsolaacordes' && viendo !== 'editaracordes'"
       ></Secuencia>
     </div>
   </div>

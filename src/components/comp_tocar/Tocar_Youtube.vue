@@ -94,7 +94,7 @@ function onStateChange(event: { data: number }) {
 
 <template>
   <div v-if="urlYoutube == ''">No hay media cargada para esta canción</div>
-    
+
   <YouTube
     :src="urlYoutube"
     ref="playerRef"

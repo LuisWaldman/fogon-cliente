@@ -7,7 +7,6 @@ import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarCuadrado from '../components/comp_tocar/Tocar_Cuadrado.vue'
 import TocarYoutube from '../components/comp_tocar/Tocar_Youtube.vue'
 import TocarMidi from '../components/comp_tocar/Tocar_Midi.vue'
-import TocarEscucha from '../components/comp_tocar/Tocar_Escucha.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
@@ -269,39 +268,39 @@ const refAdvertencia = ref(true)
         ></TocarPentagrama>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <div style="height: 230px;">
-        <TocarYoutube
-          v-if="vista.reproduce == 'video'"
-          @cambioEstado="cambioestado"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarYoutube>
-        <TocarMidi
-          v-if="vista.reproduce == 'midi'"
-          @cambioEstado="cambioestado"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarMidi>
-</div>
+        <div style="height: 230px">
+          <TocarYoutube
+            v-if="vista.reproduce == 'video'"
+            @cambioEstado="cambioestado"
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></TocarYoutube>
+          <TocarMidi
+            v-if="vista.reproduce == 'midi'"
+            @cambioEstado="cambioestado"
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></TocarMidi>
+        </div>
 
-<div class="overlay" :style="GetStyleOverlay()">
-        <Secuencia
-          v-if="vista.viendoSecuencia"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></Secuencia>
+        <div class="overlay" :style="GetStyleOverlay()">
+          <Secuencia
+            v-if="vista.viendoSecuencia"
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></Secuencia>
 
-        <ProximosAcordes
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones"
-        ></ProximosAcordes>
+          <ProximosAcordes
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+            v-if="vista.viendoInstrucciones"
+          ></ProximosAcordes>
 
-        <TocarCuadrado
-          v-if="vista.viendoCuadrado"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarCuadrado>
+          <TocarCuadrado
+            v-if="vista.viendoCuadrado"
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+          ></TocarCuadrado>
         </div>
       </div>
     </div>
