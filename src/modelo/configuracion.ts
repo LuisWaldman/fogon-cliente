@@ -21,6 +21,7 @@ export class VistaTocar {
   public tamanioParte: number = 16
   public tamanioAcordeParte: number = 26
   public anchoPrincipal: number = 70 // Ancho de la parte principal
+  public altoReproductor: number = 70 // Alto del reproductor
   public anchoTerciaria: number = 30 // Ancho de la parte terciaria
   public altoPantallaDescuento: number = 200 // Nueva propiedad
   public AutoScroll: boolean = true

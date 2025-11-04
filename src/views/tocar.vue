@@ -137,7 +137,9 @@ function estiloVistaTerciaria() {
   let ancho = vista.value.anchoTerciaria
   return `width: ${ancho}%;`
 }
-
+function GetStyleOverlay() {
+  return `top: ${vista.value.altoReproductor}px;`
+}
 const refSincronizandoMedios = ref(false)
 function clickCerrarMedios() {
   refSincronizandoMedios.value = false
@@ -267,12 +269,7 @@ const refAdvertencia = ref(true)
         ></TocarPentagrama>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <TocarEscucha
-          v-if="vista.muestra == 'escucha'"
-          @cambioEstado="cambioestado"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-        ></TocarEscucha>
+        <div style="height: 230px;">
         <TocarYoutube
           v-if="vista.reproduce == 'video'"
           @cambioEstado="cambioestado"
@@ -285,7 +282,9 @@ const refAdvertencia = ref(true)
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarMidi>
+</div>
 
+<div class="overlay" :style="GetStyleOverlay()">
         <Secuencia
           v-if="vista.viendoSecuencia"
           :cancion="appStore.cancion"
@@ -303,6 +302,7 @@ const refAdvertencia = ref(true)
           :cancion="appStore.cancion"
           :compas="appStore.compas"
         ></TocarCuadrado>
+        </div>
       </div>
     </div>
 
@@ -328,10 +328,10 @@ const refAdvertencia = ref(true)
 .columnas {
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .pantallaPlay {
-  overflow: hidden;
   display: flex;
   padding: 2px;
   padding-left: 10px;
@@ -342,12 +342,9 @@ const refAdvertencia = ref(true)
   right: 0;
 }
 
-.lateral-container {
-  position: relative;
-}
 .dropdown-superior-derecha {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
 }
 
 .editSize {
@@ -359,7 +356,7 @@ const refAdvertencia = ref(true)
   border-radius: 10px;
   background-color: rgb(41, 37, 37);
   color: white;
-  z-index: 1000;
+  z-index: 10;
   border: 3px solid #8b4513;
 }
 
@@ -415,5 +412,13 @@ input[type='range'] {
   background-color: rgb(219, 172, 85);
   color: red;
   font-size: 1.2em;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 </style>

@@ -316,6 +316,8 @@ function clickEditar() {
 .navbarFogon {
   width: 100%;
   display: flex;
+  
+  z-index: 100;
   border: 1px solid;
   background-color: #353333 !important;
 }
@@ -327,7 +329,9 @@ function clickEditar() {
   border-bottom: 0px solid #a9a8f6;
   margin-bottom: 0px;
 }
-
+.dropdown-item {
+  z-index: 1000 ;
+}
 @media (max-width: 768px) {
   .compartir_sesion {
     left: 10px;
