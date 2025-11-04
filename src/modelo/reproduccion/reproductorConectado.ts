@@ -32,7 +32,6 @@ export class ReproductorConectado extends Reproductor {
     appStore.compas = est.compas
     appStore.golpeDelCompas = est.golpeEnCompas
     appStore.estadoReproduccion = est.estado
-    this.reloj.setDelay(est.delay)
   }
 
   async GetCancionDelFogon() {
@@ -64,9 +63,6 @@ export class ReproductorConectado extends Reproductor {
       )
       this.sincronizar()
       if (appStore.cancion) {
-        this.reloj.setDuracion(appStore.cancion.duracionGolpe * 1000)
-        this.reloj.setIniciaCicloHandler(this.onInicioCiclo.bind(this))
-        this.reloj.iniciar()
         if (appStore.compas < 0) {
           appStore.compas = 0
         }
@@ -77,7 +73,6 @@ export class ReproductorConectado extends Reproductor {
       const appStore = useAppStore()
       appStore.estadoReproduccion = 'pausado'
       appStore.golpeDelCompas = 0
-      this.reloj.pausar()
     })
     this.cliente.setCompasActualizadoHandler((compas: number) => {
       console.log(`Compás actualizado a ${compas}`)

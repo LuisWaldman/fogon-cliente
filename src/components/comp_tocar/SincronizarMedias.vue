@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { useAppStore } from '../../stores/appStore'
 
 const emit = defineEmits(['cerrar'])
 
-const appStore = useAppStore()
 function guardarConfiguracionPantalla() {
   emit('cerrar')
 }
@@ -17,7 +15,6 @@ function cancelarConfiguracionPantalla() {
   <div class="editSize">
     <div class="tituloeditSize">Medios</div>
     <div>
-      {{ appStore.MediaVistas.length }} medios sincronizados
       <table>
         <thead>
           <tr>
@@ -27,14 +24,6 @@ function cancelarConfiguracionPantalla() {
           </tr>
         </thead>
         <tbody>
-          <tr v-for="mediaVista in appStore.MediaVistas" :key="mediaVista.tipo">
-            <td>{{ mediaVista.tipo }}</td>
-            <td><input type="checkbox" v-model="mediaVista.rector" /></td>
-            <td><input type="checkbox" v-model="mediaVista.sincronizar" /></td>
-            <td>
-              {{ mediaVista.delayconrector.toFixed(0) }}
-            </td>
-          </tr>
         </tbody>
       </table>
     </div>

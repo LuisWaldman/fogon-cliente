@@ -156,7 +156,7 @@ function cambioModo(index: number) {
         >
       </editarpentagrama>
     </div>
-    <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">
+    <div :style="estiloVistaSecundaria()" v-if="viendo !== 'pentagramas'">
       <editAcordes
         v-if="viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"

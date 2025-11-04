@@ -35,7 +35,6 @@ export class ReproductorMedia extends Reproductor {
     appStore.compas = est.compas
     appStore.golpeDelCompas = est.golpeEnCompas
     appStore.estadoReproduccion = est.estado
-    this.reloj.setDelay(est.delay)
   }
 
   override iniciarReproduccion() {

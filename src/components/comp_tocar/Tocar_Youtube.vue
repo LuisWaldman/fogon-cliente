@@ -65,7 +65,7 @@ mediaVista.setSetTiempoDesdeInicio((numero: number) => {
 
 onUnmounted(() => {
   const appStore = useAppStore()
-  appStore.aplicacion.quitarMediaVista(mediaVista)
+  appStore.aplicacion.quitarMediaVista()
 })
 
 onMounted(() => {

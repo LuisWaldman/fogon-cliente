@@ -100,36 +100,6 @@ async function clickOrigen(viendostr: string) {
   await vista.iniciar()
   actualizarVista()
   return
-  viendoOrigen.value = viendostr
-  if (viendo.value === 'canciones') {
-    if (viendoOrigen.value === 'localstorage') {
-      viendoCanciones.value = CancionesLocalstorage.value
-    } else {
-      //refViendoCanciones.value = appStore.serviciosEnReproduccion
-    }
-  }
-  if (viendo.value === 'listas') {
-    if (viendoOrigen.value === 'localstorage') {
-      viendoListas.value = ListasEnStorage.value
-      viendoLista.value = viendoListas.value.length ? viendoListas.value[0] : ''
-    }
-    cambioLista()
-  }
-
-  if (viendoOrigen.value === 'localstorage') {
-    if (viendo.value === 'canciones') {
-      viendoCanciones.value = CancionesLocalstorage.value
-    } else if (viendo.value === 'listas') {
-      viendoListas.value = ListasEnStorage.value
-    }
-  } else if (viendoOrigen.value === 'server') {
-    if (viendo.value === 'canciones') {
-      //refViendoCanciones.value = appStore.IndicesServer
-    } else if (viendo.value === 'listas') {
-      // Aquí podrías implementar la lógica para obtener las listas del servidor
-      viendoListas.value = appStore.listasEnServer
-    }
-  }
 }
 
 function confirmarNuevaLista() {
