@@ -173,11 +173,6 @@ defineExpose({ Actualizar })
   margin-bottom: var(--tamanio-acorde);
 }
 
-.en_compas {
-  background-color: rgb(114, 72, 72);
-  color: white;
-}
-
 .acordediv {
   font-size: var(--tamanio-acorde);
   margin: 1px;
@@ -186,6 +181,18 @@ defineExpose({ Actualizar })
   color: #a9a8f6;
   margin-right: 4px;
 }
+
+.en_compas {
+  color: rgb(121, 102, 233);
+}
+
+.acordediv.en_compas {
+  color: rgb(194, 6, 6) !important; 
+  font-weight: bold;
+  border: 1px solid rgb(194, 6, 6);
+  background-color: white;
+}
+
 .renglonDisplay {
   z-index: 10;
 }
