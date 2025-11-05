@@ -320,7 +320,6 @@ function VerFiltros() {
         </div>
       </div>
 
-      
       <!-- Calidad -->
       <div class="filtro" :class="{ seleccionado: filtroCalidad }">
         <div class="filtro-header" @click="filtroCalidad = !filtroCalidad">
@@ -511,7 +510,6 @@ function VerFiltros() {
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>

@@ -107,6 +107,9 @@ export default class Aplicacion {
     this.reproductor.iniciarReproduccion()
   }
 
+  async sincronizar() {
+    await this.reproductor.sincronizar()
+  }
   next() {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''

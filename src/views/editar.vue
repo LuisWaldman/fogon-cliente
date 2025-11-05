@@ -9,7 +9,7 @@ import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 
-import { ref, watch, type Ref } from 'vue'
+import { onMounted, ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import type { VistaTocar } from '../modelo/configuracion'
 
@@ -20,6 +20,10 @@ function cambiarCompas(compas: number) {
   Actualizar()
 }
 const appStore = useAppStore()
+
+onMounted(() => {
+  pantalla.setearEstilos()
+})
 
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 const viendo: Ref<string> = ref(

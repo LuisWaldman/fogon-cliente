@@ -46,6 +46,7 @@ watch(
   },
 )
 const mediaVista = new MediaVista('YOUTUBE')
+
 mediaVista.setGetTiempoDesdeInicio(() => {
   const time = playerRef.value?.getCurrentTime()
   return time ? time * 1000 - CalcularDelay() : 0 // Convert to milliseconds

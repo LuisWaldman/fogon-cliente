@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const emit = defineEmits(['cerrar'])
 
 function guardarConfiguracionPantalla() {
@@ -23,8 +22,7 @@ function cancelarConfiguracionPantalla() {
             <th>Delay</th>
           </tr>
         </thead>
-        <tbody>
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
     <div class="botonera">

@@ -57,6 +57,8 @@ export const useAppStore = defineStore('app', () => {
   const mensajes = ref<string[]>([])
   const compas = ref<number>(-1)
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
+  const delayCompas = ref<number>(0) // Valor inicial predeterminado
+
   const errores = ref<Error[]>([])
   const noticias = ref<Noticia[]>([])
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))

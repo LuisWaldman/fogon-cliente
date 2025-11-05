@@ -194,34 +194,14 @@ export class HelperSincro {
     let deltaGolpe: number
 
     let diferencia = HelperSincro.Diferencia(sincro.timeInicio, momento)
-    console.log(
-      `Diferencia: ${diferencia}, Momento: ${momento}, Time Inicio: ${sincro.timeInicio}`,
-    )
     if (diferencia <= 0) {
       diferencia = diferencia * -1
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
       estadoReproduccion = 'Reproduciendo'
       deltaGolpe = diferencia - golpe * sincro.duracionGolpe
-      console.log('Diferencia:', diferencia, 'deltaGolpe:', deltaGolpe)
       deltaGolpe = sincro.duracionGolpe - deltaGolpe
       compas = sincro.desdeCompas + Math.floor(golpe / sincro.golpesxcompas)
       golpeDelCompas = golpe % sincro.golpesxcompas
-      console.log(
-        'Estado: Reproduciendo',
-        diferencia,
-        'Compás:',
-        compas,
-        'Golpe del compás:',
-        golpeDelCompas,
-        'deltaGolpe:',
-        deltaGolpe,
-        'Diferencia:',
-        diferencia,
-        'Golpe:',
-        golpe,
-        'Duracion golpe:',
-        sincro.duracionGolpe,
-      )
     } else {
       const golpe = Math.floor(diferencia / sincro.duracionGolpe)
       estadoReproduccion = 'Iniciando'
@@ -235,6 +215,80 @@ export class HelperSincro {
       golpeDelCompas,
       estadoReproduccion,
       deltaGolpe,
+    )
+  }
+
+  public GetSincro(
+    estado: EstadoSincroCancion,
+    momento: number,
+    duracionGolpe: number,
+    golpesxcompas: number,
+    desdeCompas: number = 0,
+  ): SincroCancion {
+    // Revert the logic of GetEstadoSincro
+    let timeInicio: number
+    let recuperadoDesdeCompas: number
+
+    if (estado.estado === 'Reproduciendo') {
+      // Forward:
+      // diferencia = Diferencia(timeInicio, momento) - this is <= 0
+      // diferencia *= -1 - now it's >= 0
+      // golpe = Math.floor(diferencia / duracionGolpe)
+      // compas = desdeCompas + Math.floor(golpe / golpesxcompas)
+      // golpeDelCompas = golpe % golpesxcompas
+      // deltaGolpe = duracionGolpe - (diferencia - golpe * duracionGolpe)
+
+      // Reverse:
+      // From compas, desdeCompas, golpeEnCompas, we can find golpe:
+      // compas = desdeCompas + Math.floor(golpe / golpesxcompas)
+      // golpeDelCompas = golpe % golpesxcompas
+      // So: golpe = (compas - desdeCompas) * golpesxcompas + golpeDelCompas
+      const golpeFromCompas =
+        (estado.compas - desdeCompas) * golpesxcompas + estado.golpeEnCompas
+
+      // From deltaGolpe, we find diferencia:
+      // deltaGolpe = duracionGolpe - (diferencia - golpeFromCompas * duracionGolpe)
+      // diferencia - golpeFromCompas * duracionGolpe = duracionGolpe - deltaGolpe
+      // diferencia = golpeFromCompas * duracionGolpe + duracionGolpe - deltaGolpe
+      const diferencia =
+        golpeFromCompas * duracionGolpe + duracionGolpe - estado.delay
+
+      // Now diferencia came from: diferencia *= -1 (so original was negative)
+      // Diferencia(timeInicio, momento) = -diferencia
+      // timeInicio - momento = -diferencia (based on how Diferencia works when not crossing hour boundary)
+      timeInicio = momento - diferencia
+      recuperadoDesdeCompas = desdeCompas
+    } else {
+      // Forward: Iniciando state
+      // diferencia = Diferencia(timeInicio, momento) - this is > 0
+      // golpe = Math.floor(diferencia / duracionGolpe)
+      // deltaGolpe = diferencia - golpe * duracionGolpe
+      // golpeDelCompas = golpesxcompas - (golpe + 1)
+
+      // Reverse: find golpe from golpeDelCompas
+      const golpe = golpesxcompas - (estado.golpeEnCompas + 1)
+
+      // From deltaGolpe find diferencia:
+      // deltaGolpe = diferencia - golpe * duracionGolpe
+      const diferencia = golpe * duracionGolpe + estado.delay
+
+      // Diferencia(timeInicio, momento) = diferencia
+      // timeInicio - momento = diferencia
+      timeInicio = momento + diferencia
+      recuperadoDesdeCompas = desdeCompas
+    }
+
+    // Normalize timeInicio to be within [0, 3600000)
+    timeInicio = timeInicio % 3600000
+    if (timeInicio < 0) {
+      timeInicio += 3600000
+    }
+
+    return new SincroCancion(
+      duracionGolpe,
+      timeInicio,
+      golpesxcompas,
+      recuperadoDesdeCompas,
     )
   }
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, type Ref } from 'vue'
+import { ref, type Ref, watch, onMounted, onUnmounted } from 'vue'
 //import TocarLetra from '../components/comp_cabecera/comp_tocar/Tocar_Letra.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
@@ -15,14 +15,60 @@ import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
-import { onMounted } from 'vue'
+
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { VistaTocar } from '../modelo/configuracion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 
 const pantalla = new Pantalla()
-
 const appStore = useAppStore()
+
+// requestAnimationFrame loop control
+let rafId: number | null = null
+
+async function startRafLoop() {
+  // reset counter when starting
+  const loop = async () => {
+    // stop if state changed
+    if (
+      appStore.estadoReproduccion !== 'Reproduciendo' &&
+      appStore.estadoReproduccion !== 'Iniciando'
+    ) {
+      rafId = null
+      return
+    }
+    await appStore.aplicacion.sincronizar()
+    rafId = requestAnimationFrame(loop)
+  }
+  // avoid multiple loops
+  if (rafId == null) {
+    rafId = requestAnimationFrame(loop)
+  }
+}
+
+function stopRafLoop() {
+  if (rafId != null) {
+    cancelAnimationFrame(rafId)
+    rafId = null
+  }
+}
+
+// Watch for changes in playback state and start/stop RAF loop
+watch(
+  () => appStore.estadoReproduccion,
+  (nuevo, viejo) => {
+    console.log('Cambio appStore.estadoReproduccion:', viejo, '->', nuevo)
+    if (nuevo === 'Reproduciendo' || nuevo === 'Iniciando') {
+      startRafLoop()
+    } else {
+      stopRafLoop()
+    }
+  },
+)
+
+onUnmounted(() => {
+  stopRafLoop()
+})
 
 const urlParams = new URLSearchParams(window.location.search)
 const sesionurl = urlParams.get('cancion')
@@ -31,13 +77,10 @@ if (sesionurl) {
   appStore.aplicacion.ClickTocar(origen)
 }
 
-onMounted(() => {
-  pantalla.setearEstilos()
-})
-
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
 onMounted(() => {
+  pantalla.setearEstilos()
   vista.value = pantalla.getConfiguracionPantalla()
 })
 
@@ -148,6 +191,7 @@ function cambioestado(estado: number) {
   console.log('Cambio de estado en tocar.vue', estado)
   appStore.aplicacion.CambioEstadoMedio(estado)
 }
+
 const refAdvertencia = ref(true)
 </script>
 

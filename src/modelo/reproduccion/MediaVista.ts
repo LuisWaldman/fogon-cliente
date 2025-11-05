@@ -1,11 +1,15 @@
 import type { Media } from '../cancion/media'
+import type { SincroCancion } from '../sincro/SincroCancion'
 
 export class MediaVista {
   public tipo: string
   public delay: number = 0
   public delayconrector: number = 0
   public rector: boolean = false
-  public sincronizar: boolean = false
+  public Sincronizar(): Promise<SincroCancion> {
+    return 1000
+  }
+
   public constructor(tipo: string) {
     this.tipo = tipo
   }
