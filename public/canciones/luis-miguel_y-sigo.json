@@ -8,226 +8,322 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#",
+                    "C",
+                    "Dm",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "Am7",
-                    "Em",
-                    "Em7",
+                    "Am",
+                    "Dm",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "Dm",
                     "Dm",
                     "C",
-                    "E",
-                    "E7",
+                    "Am",
                     "Am",
                     "Am7",
-                    "Em",
+                    "E",
                     "Em7",
                     "Dm",
-                    "Dm7",
+                    "G",
                     "E",
                     "E7",
                     "F",
                     "G",
                     "Em",
-                    "Em7",
-                    "Am",
-                    "Am7",
+                    "Em",
                     "Dm",
-                    "E",
-                    "E7",
+                    "G7",
                     "Am",
-                    "Am7",
-                    "A",
                     "A7",
                     "F",
                     "G",
                     "Em",
-                    "Em7",
-                    "Am",
-                    "Am7",
+                    "Em",
+                    "Dm",
                     "Dm",
                     "Gm7",
-                    "G",
-                    "G7",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
                     "Am",
-                    "Am",
-                    "Am7",
                     "Em",
+                    "Am7",
                     "Em7",
-                    "Dm",
-                    "E",
+                    "Em7",
+                    "E Em7",
+                    "Em7",
                     "E7",
                     "F",
                     "G",
-                    "Em",
-                    "Em7",
-                    "Am",
-                    "Am7",
+                    "G",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "Dm",
-                    "E",
+                    "G7",
+                    "G7",
+                    "A7",
+                    "A7",
+                    "G",
+                    "G Em7",
+                    "Em7",
+                    "Dm",
+                    "Dm",
+                    "Gm7",
                     "E7",
-                    "Am",
-                    "Am7",
-                    "A",
+                    "E7",
+                    "G",
+                    "G Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "A7",
+                    "A7",
+                    "G",
+                    "G",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Gm7",
+                    "Gm7",
+                    "E7",
+                    "F",
+                    "G",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Dm",
+                    "G7",
+                    "G7",
                     "A7",
                     "F",
                     "G",
-                    "Em",
                     "Em7",
-                    "Am",
-                    "Am7",
+                    "Em7",
                     "Dm",
                     "Gm7",
+                    "Gm7",
+                    "E7",
+                    "F",
                     "G",
+                    "Em",
+                    "Em",
+                    "Dm",
                     "G7",
-                    "Am"
+                    "Am",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Gm7",
+                    "Gm7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Como duele el al",
-            "ma/nCon esta aus"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "encia que no ac",
-            "aba/nYa "
+            "C",
+            "omo due",
+            "le el alma con ",
+            "esta ausencia que ",
+            "no acaba /n"
         ],
         [
-            "ves con tu partida/nTe me"
+            "Ya ves con tu ",
+            "partid",
+            "a te me has llev",
+            "ado hasta la v",
+            "ida \n\nComo du",
+            "ele el tiemp ",
+            "cuando lo llenas de ",
+            "silenc",
+            "io \n\nQue largos ",
+            "son mis días ",
+            "sin el refugio ",
+            "de tu piel ",
+            "sigo atando noches ",
+            "mi dolor ",
+            "sigo imaginando que t",
+            "odo fue un e",
+            "rror \n\nRefugiá",
+            "ndome mi sol",
+            "edad no sé si ",
+            "volverás ",
+            "sigo dando vueltas por ",
+            "tu querer \n\nS",
+            "intiendo que sin ti ya ",
+            "no sé qué voy ",
+            "hacer \n\nVoy clav",
+            "ándome tu be",
+            "so amor \n\nMuñend",
+            "o en mi interior por ",
+            "no volverte ver ",
+            "/n"
         ],
         [
-            " has llevado hast",
-            "a la vid",
-            "a/n"
+            "Com",
+            "o duele el ai",
+            "re que no res",
+            "piras mi la",
+            "brador \n\nQue d",
+            "ura es la ago",
+            "nía de lo que ",
+            "fue alguna vez ",
+            "sigo atando no",
+            "ches mi dolo",
+            "r sigo imagin",
+            "ando que todo fue ",
+            "un error /n"
         ],
         [
-            "Como duele el tiem",
-            "po/nCuando lo l"
+            "Refugiándome mi s",
+            "oledad no ",
+            "sé si volverás ",
+            "sigo dand ",
+            "vueltas por tu que",
+            "rer \n\nSintiendo que sin ",
+            "ti ya no sé qué ",
+            "voy hacer \n\nVoy ",
+            "clavándome  tu ",
+            "beso  amor \n\nM",
+            "uñendo en mi i",
+            "nterior sigo ata",
+            "ndo noches mi dolo",
+            "r sigo i",
+            "maginando que todo ",
+            "fue un error /n"
         ],
         [
-            "lena este sil",
-            "encio/nQue l"
+            "Refugiándome ",
+            "mi soleda ",
+            "no sé si vol",
+            "verás sig",
+            "o dando vueltas por tu q",
+            "uerer \n\nSintiendo ",
+            "que sin ti ya no sé ",
+            "qué voy hacer /n"
         ],
         [
-            "argos son mis d",
-            "as/nSin el ref"
+            "Voy clavándome ",
+            "tu beso amo",
+            "r \n\nMuñendo en mi ",
+            "interior si",
+            "go atando noches mi ",
+            "dolor s",
+            "igo imaginando que to",
+            "do fue un error /n"
         ],
         [
-            "ugio de tu pi",
-            "el/nY sigo atando "
-        ],
-        [
-            "noches a mi dolo",
-            "r/nY sigo imagi"
-        ],
-        [
-            "nando que t",
-            "odo fue",
-            " un error",
-            "/nRefug"
-        ],
-        [
-            "iándome en mi",
-            " soled",
-            "ad/nNo s"
-        ],
-        [
-            "é si ",
+            "Refugiándo ",
+            "mi soled",
+            "ad no sé si vo",
+            "lverás ",
+            "sigo dando vueltas por ",
+            "tu querer \n\nSinti",
+            "endo que sin ti ya no sé ",
+            "qué voy h",
+            "acer \n\nVoy clavánd",
+            "ome tu bes ",
+            "amor \n\nMuñendo en ",
+            "mi interior ",
+            "sigo atando noches ",
+            "mi dolor ",
+            "sigo imaginando que ",
+            "todo  fue un e",
+            "rror \n\nRefu",
+            "giándome mi sol",
+            "edad no sé si ",
             "volver",
-            "s/n"
+            "ás sigo dando vue",
+            "ltas por tu querer /n"
         ],
         [
-            "Y sigo dando v",
-            "ueltas por tu querer",
-            "/nSintiendo que sin "
-        ],
-        [
-            "ti ya no s",
-            "é que vo",
-            "y hace",
-            "r/nVoy cla"
-        ],
-        [
-            "vándome tu desamor/nMurie"
-        ],
-        [
-            "ndo en m",
-            "i interio",
-            "r/nPor no volverte a v"
-        ],
-        [
-            "er/n"
-        ],
-        [
-            "Como duele el ai",
-            "re/nQue no res"
-        ],
-        [
-            "piras a mi la",
-            "do/nQue d"
-        ],
-        [
-            "ura es la agonía/nDe lo que f"
-        ],
-        [
-            "uera alguna ve",
-            "z/nY sigo atando "
-        ],
-        [
-            "noches a mi dolo",
-            "r/nY sigo imagi"
-        ],
-        [
-            "nando que t",
-            "odo fue",
-            " un error",
-            "/nRefug"
-        ],
-        [
-            "iándome en mi ",
-            "soleda",
-            "d/nNo s"
-        ],
-        [
-            "é si ",
-            "volver",
-            "s/n"
-        ],
-        [
-            "Y sigo dando v",
-            "ueltas por tu querer",
-            "/nSintiendo que sin "
-        ],
-        [
-            "ti ya no s",
-            "é que vo",
-            "y hace",
-            "r/nVoy cla"
-        ],
-        [
-            "vándome tu desamor/nMurie"
-        ],
-        [
-            "ndo en m",
-            "i interio",
-            "r/nPor no volverte a v"
-        ],
-        [
-            "er"
+            "Sintiendo que sin ti ya ",
+            "no sé qué voy ",
+            "hacer \n\nVoy cla",
+            "vándome tu b",
+            "eso amor \n\nMuñe",
+            "ndo en mi interior ",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "CK0AGS9iEWE",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

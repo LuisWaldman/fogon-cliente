@@ -8,264 +8,436 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "Am",
+                    "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C",
-                    "Em",
-                    "Gm",
                     "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "C",
                     "Fm",
-                    "C",
-                    "Am",
-                    "Dm7",
-                    "G7",
-                    "C",
-                    "Em",
-                    "Gm",
-                    "Gm6",
-                    "Am",
                     "Fm",
-                    "C",
-                    "Am6",
-                    "Am",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "F",
+                    "F",
+                    "F",
+                    "C",
                     "Am",
-                    "Dm7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "G7",
                     "Em",
                     "Am",
-                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "F",
                     "Dm",
-                    "E",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Am",
                     "C",
-                    "C",
-                    "C7",
                     "F",
                     "C",
                     "F",
                     "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "C",
                     "C",
-                    "Em",
-                    "Gm",
+                    "C",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "F",
                     "Fm",
-                    "C",
+                    "G",
+                    "G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
                     "Am",
                     "Dm7",
                     "G7",
+                    "G7",
                     "C",
-                    "Em",
-                    "Gm",
-                    "F",
                     "Fm",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
                     "C",
                     "Am",
+                    "Am",
+                    "Dm7",
+                    "Dm7",
                     "Dm7",
                     "G7",
                     "Em",
                     "Am",
-                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "F",
                     "Dm",
-                    "E",
+                    "Em",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "Am",
                     "C",
-                    "C",
-                    "C7",
                     "F",
                     "C",
                     "F",
+                    "C",
+                    "C",
                     "C",
                     "G",
+                    "G7",
+                    "G7",
+                    "Am",
+                    "Dm",
+                    "F",
+                    "F",
+                    "Em",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "Em",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
                     "C"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "ahora dile/nal que me"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " siga/nlo que "
+            "Est",
+            "a es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "me decias a m",
-            ";/nque hasta q"
+            "Est",
+            "a es ",
+            "una canción en esp",
+            "añol de rock argentino. /n"
         ],
         [
-            "ue lo has encontra",
-            "do/ntú ni"
+            "Ahora dile al ",
+            "que me s",
+            "iga lo ",
+            "que me deseas ",
+            "mi /n"
         ],
         [
-            " loca habrías pensado/nque el "
+            "Que ",
+            "con el te has e",
+            "stren",
+            "ado porque ",
+            "todo  lo ",
+            "pasa",
+            "do \n\nTodo un ",
+            "juego de a",
+            "pren",
+            "diz nos h",
+            "emos ador",
+            "ado cada lec",
+            "ción, cada esquina /n"
         ],
         [
-            "amor sería as",
-            "í./n...Y ahora d"
+            "En cualquier l",
+            "ugar del mund",
+            "o hemos hecho ",
+            "maravill /n"
         ],
         [
-            "ile/nal que me "
+            "En tu cuerp ",
+            "en el mío ",
+            "hasta qued",
+            "an cicatrices ",
+            "ahora dile al ",
+            "que me s",
+            "iga p",
+            "ara ti yo no ",
+            "exi",
+            "stí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "ahora dil",
+            "e al que me s",
+            "ig",
+            "a lo que me ",
+            "deseas  mi ",
+            "/n"
         ],
         [
-            "siga",
-            "/nlo que "
+            "Que hasta que lo ",
+            "has cono",
+            "cido no ",
+            "sabías si ",
+            "el paraís /n"
         ],
         [
-            "me decías a m",
-            "í;/nque con "
+            "Se ",
+            "pudiera h",
+            "allar aq",
+            "uí ",
+            "ahora  dile al que ",
+            "me si",
+            "ga lo ",
+            "que me deseas ",
+            "mi /n"
         ],
         [
-            "él te has estr",
-            "enado/nporque "
+            "Que ",
+            "con el te has e",
+            "strena",
+            "porque t",
+            "odo lo p",
+            "asado \n\nF",
+            "ueron ju",
+            "egos de a",
+            "pren",
+            "diz nos h",
+            "emos adorad ",
+            "cada lecció",
+            "n, cada esquina /n"
         ],
         [
-            "todo lo pas",
-            "ado",
-            "/nfueron j"
+            "En cualquier lu",
+            "gar del mundo ",
+            "hemos  hech ",
+            "maravillas /n"
         ],
         [
-            "uegos de aprend",
-            "z.",
-            "/nY nos "
+            "En tu cuerpo ",
+            "en el mío ",
+            "hasta queda ",
+            "cicatrices ",
+            "ahora dile al que ",
+            "me si",
+            "ga par ",
+            "ti yo no ",
+            "exist ",
+            "",
+            "nos hemos ado",
+            "rado cada l",
+            "ección, cada e",
+            "squina \n\nEn cualq",
+            "uier lugar del mu",
+            "ndo hemos h",
+            "echo maravillas /n"
         ],
         [
-            "hemos devor",
-            "ado/nen cada "
-        ],
-        [
-            "lecho,/nen cada e"
-        ],
-        [
-            "squina/ny en cua"
-        ],
-        [
-            "lquier lugar del m",
-            "undo/nhemos h"
-        ],
-        [
-            "echo maravillas/nY en tu c"
-        ],
-        [
-            "uerpo/ny en el m"
-        ],
-        [
-            "ío/nhasta q"
-        ],
-        [
-            "uedan cicatr",
-            "ices./n...Y ahora "
-        ],
-        [
-            "dile/nal que me"
-        ],
-        [
-            " siga",
-            "/nque para "
-        ],
-        [
-            "tí/nyo no exist"
-        ],
-        [
-            "í./n...Y ahora d"
-        ],
-        [
-            "ile/nal que me"
-        ],
-        [
-            " siga/nlo que "
-        ],
-        [
-            "me decías a m",
-            "í;/nque hasta q"
-        ],
-        [
-            "ue lo has conocido",
-            "/nno sab"
-        ],
-        [
-            "ías que el paraiso/nse pudi"
-        ],
-        [
-            "era hallar aqu",
-            "í./n...Y ahora d"
-        ],
-        [
-            "ile/nal que me"
-        ],
-        [
-            " siga/nlo que "
-        ],
-        [
-            "me decías a m",
-            "í;/nque con el "
-        ],
-        [
-            "te has estrenado",
-            "/nporque"
-        ],
-        [
-            " todo lo pasado/nfueron "
-        ],
-        [
-            "juegos de apre",
-            "ndíz./nY no"
-        ],
-        [
-            "s hemos dev",
-            "orado/nen cada "
-        ],
-        [
-            "lecho,/nen cada e"
-        ],
-        [
-            "squina/ny en cua"
-        ],
-        [
-            "lquier lugar del m",
-            "undo/nhemos h"
-        ],
-        [
-            "echo maravillas/nY en tu "
-        ],
-        [
-            "cuerpo/ny en el m"
-        ],
-        [
-            "ío/nhasta q"
-        ],
-        [
-            "uedan cicatr",
-            "ices./n...Y ahor"
-        ],
-        [
-            "a dile/nal que me"
-        ],
-        [
-            " siga",
-            "/nque para "
-        ],
-        [
-            "tí/nyo no exist"
-        ],
-        [
-            "í."
+            "En tu cu",
+            "erpo en el ",
+            "mío hasta qu",
+            "edan cicatri",
+            "ces ahora dile ",
+            "al que me s",
+            "ig",
+            "a que p",
+            "ara ti yo ",
+            "no e",
+            "xi",
+            "stí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "ahora dile al ",
+            "que ",
+            "me siga lo que me deseas mi "
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "HiHDKaLwQ8s",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

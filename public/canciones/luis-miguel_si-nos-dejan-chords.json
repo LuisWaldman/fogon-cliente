@@ -8,47 +8,124 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "Gm",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "E7",
-                    "Am"
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Am",
+                    "Am",
+                    "D7",
                     "D7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Am",
-                    "D7",
                     "G",
-                    "D7",
-                    "G"
+                    "Am",
+                    "Bm/F",
+                    "Bm/F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am",
-                    "Bm/F",
-                    "Am"
+                    "D7",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "E7",
+                    "G",
+                    "G",
+                    "G",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Am",
-                    "D7",
                     "Am",
                     "B7",
-                    "G7",
-                    "C"
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "Bm/F",
+                    "Bm/F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
                 ]
             }
         ],
@@ -57,97 +134,114 @@
             1,
             2,
             3,
-            1,
-            2,
             4,
-            1,
-            0,
-            1,
-            2,
-            1
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "i nos dejan/nNos vamos a quer"
-        ],
-        [
-            "er toda la vi",
-            "da",
-            "/nS"
-        ],
-        [
-            "i nos dejan/nNos"
-        ],
-        [
-            " vamos a vivir a un mundo",
-            " nuev",
-            "o/nY"
-        ],
-        [
-            "o creo podemos ve",
-            "r/nEl n"
-        ],
-        [
-            "uevo amanecer de un nue",
-            "vo día",
-            "/nYo pienso que t"
-        ],
-        [
-            "u y yo/nPodemos ser f"
-        ],
-        [
-            "elices",
-            " todavia",
-            "/nS"
-        ],
-        [
-            "i nos dejan/nBuscamos un r"
-        ],
-        [
-            "incón cerca del c",
-            "ielo",
-            "/nS"
-        ],
-        [
-            "i nos dejan/nH"
-        ],
-        [
-            "aremos con las nubes te",
-            "rciopelo/n"
-        ],
-        [
-            "Y ahi juntitos los dos/nS"
-        ],
-        [
-            "era lo que",
-            " soña",
-            "mos/nS"
-        ],
-        [
-            "i nos dejan/nTe ll"
-        ],
-        [
-            "evo de la mano co",
-            "razon/nY ahi nos v"
-        ],
-        [
-            "amos/nSi  nos de"
-        ],
-        [
-            "jan",
             "",
+            "",
+            "/n"
+        ],
+        [
+            "Si ",
+            "nos dejan ",
+            "nos vamos quer",
+            "er toda la vida",
+            ". /n"
+        ],
+        [
+            "Si nos deja",
+            "n, nos vamos vi",
+            "vir un mundo nuev",
+            "o. /n"
+        ],
+        [
+            "Yo creo que podemos llev",
+            "ar el nuevo amanecer ",
+            "de un nuevo dí",
+            "a. /n"
+        ],
+        [
+            "Yo pienso que tú yo ",
+            "podemos ser fel",
+            "ices todavía. ",
+            "/n"
+        ],
+        [
+            "Si nos de",
+            "jan, buscam",
+            "os un rincón cer",
+            "ca del cielo. /n"
+        ],
+        [
+            "Si nos d",
+            "ejan, haremos ",
+            "con las nubes terc",
+            "iopelo. a",
+            "hí",
+            ", juntitos los ",
+            "dos, cerquita de \n\nD",
+            "ios, será lo que so",
+            "ñamos. /n"
+        ],
+        [
+            "Si nos d",
+            "ejan, te l",
+            "levo de la mano cor",
+            "azón, ahí nos ",
+            "vamos.  ",
+            "",
+            "/n"
+        ],
+        [
+            "Si nos ",
+            "dejan,  bu",
+            "scamos un rincón c",
+            "erca del cielo. /n"
+        ],
+        [
+            "Si nos ",
+            "dejan, h",
+            "aremos con las nubes te",
+            "rciopelo. ",
+            "",
+            "ahí, juntit",
+            "os los dos, cerquita ",
+            "de \n\nDios, será lo que ",
+            "soñamos.  /n"
+        ],
+        [
+            "Si nos ",
+            "dejan,  te l",
+            "levo de la mano cor",
+            "azón, ahí nos ",
+            "vamos.  \n\nSi nos ",
+            "dejan,  te l",
+            "levo de la mano corazón, ",
+            "ahí nos ",
+            "vamos. \n\nSi nos ",
+            "deja",
+            "n, si nos de",
+            "jan. ",
             "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "dS0uEBQUnS4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

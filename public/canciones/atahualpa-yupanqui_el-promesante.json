@@ -2,55 +2,195 @@
     "cancion": "el-promesante",
     "banda": "atahualpa-yupanqui",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "E7",
                     "Am",
                     "E7",
                     "Am",
                     "Am",
-                    "F",
                     "Am",
-                    "E7"
+                    "Am",
+                    "E7",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
                     "E7",
                     "Am",
                     "Am",
-                    "E7",
+                    "Am",
                     "Am",
                     "Am",
                     "Am"
                 ]
             },
             {
-                "nombre": "parte3",
+                "nombre": "parte4",
                 "acordes": [
-                    "Dm",
+                    "Am",
+                    "Am",
                     "G",
-                    "C",
+                    "G",
+                    "Am",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
                     "Am",
                     "E7",
                     "Am",
                     "Am",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "Am",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E7",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "Am",
+                    "E7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
@@ -58,59 +198,150 @@
             "",
             "",
             "",
-            "/n¡Se"
-        ],
-        [
-            "ñor de los Cielos!/n¡"
-        ],
-        [
-            "Tatacita Di",
-            "os!.../nTod"
-        ],
-        [
-            "itas mis pe",
-            "nas,/ntod"
-        ],
-        [
-            "itas mis penas/nIas conoces v"
-        ],
-        [
-            "os",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "II)",
-            "/nAnd"
+            "Esta  es una canción en español de rock argentino. ",
+            "",
+            "/n"
         ],
         [
-            "ando y anda",
-            "ndo,/nme v"
+            "Se",
+            "ñor de los cie",
+            "los, tataci",
+            "ta \n\nDios, ",
+            "toditos mis rez",
+            "os, toditos mis rezos los ",
+            "traigo  pa' vo",
+            "s. /n"
         ],
         [
-            "iene hasta aqu",
-            ".,/ngolp"
+            "Se ",
+            "ha sanado mi ch",
+            "ango, casi que ",
+            "lo pierdo señor",
+            ", todito el milag",
+            "ro, todito el milagro te ",
+            "lo debo vos. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "iándome el p",
-            "echo,/ncomo un tambor"
+            "Andando ",
+            "andando me ",
+            "vine hasta a",
+            "quí, golpe",
+            "ándome el pech ",
+            "como un tamboril. /n"
         ],
         [
-            "il.../n"
+            "Me",
+            "smo de alegr",
+            "ía traigo un ",
+            "lagrimón,  ",
+            "mesmo de ale",
+            "gría lo llo",
+            "ro señor. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "II)",
-            ""
+            "Yo te ",
+            "he promesado no ",
+            "macharme  más, ",
+            "no pelear con aire",
+            ", no pelear con aire s",
+            "iempre trabajar. ",
+            "",
+            "/n"
+        ],
+        [
+            "Lo que pu",
+            "ede el cielo cua",
+            "ndo quiere \n\nDios ",
+            "se ha sanado mi cha",
+            "ngo, se ha sanado mi chango, ",
+            "mi compuesto yo. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Andando ",
+            "andando me ",
+            "vine hasta a",
+            "quí, golpeánd",
+            "ome el pecho c",
+            "omo un tamb",
+            "oril. \n\nMesmo de ",
+            "alegría  trai",
+            "go un lagrimó",
+            "n, mesmo de al",
+            "egría lo llo",
+            "ro señor ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "An",
+            "dando and",
+            "ando me vin",
+            "e hasta aqu",
+            "í, golpe",
+            "ándome el pec",
+            "ho como un ta",
+            "mboril. /n"
+        ],
+        [
+            "Mesm ",
+            "de alegr",
+            "ía traigo un ",
+            "lagrim",
+            "ón, mesmo de a",
+            "legría lo ll",
+            "oro señor. \n\nAn",
+            "dando ",
+            "andand ",
+            "me vine has",
+            "ta aqu",
+            "í, golpeánd",
+            "ome el pech ",
+            "como un tamboril. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "yWQYEfFRjvg",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

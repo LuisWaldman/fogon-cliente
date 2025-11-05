@@ -8,66 +8,227 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "D",
+                    "C",
+                    "G#m7",
+                    "E",
+                    "G#m7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "Am",
-                    "D",
-                    "G",
-                    "C",
                     "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
                     "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#m7",
+                    "G#m7",
+                    "G#m7",
+                    "F#m7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G#m7",
+                    "F#m7",
+                    "F#m7",
+                    "F#m7",
+                    "B7",
                     "B7",
                     "E",
-                    "D#",
-                    "G#m7",
-                    "C#m",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "F#7",
                     "F#m7",
-                    "B7"
+                    "E",
+                    "E",
+                    "G#m7",
+                    "G#m7",
+                    "G#m7",
+                    "F#m7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            ".      Nos quedamos",
-            " solos",
-            ", como cada n",
-            "oche/n   "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   Hoy te siento tr",
-            "iste y s",
-            " muy bien por q",
-            "ué/n      Te"
+            "Nos quedamos s",
+            "olos /n"
         ],
         [
-            " quiero, te q",
-            "uiero, te j",
-            "uro que yo",
-            "/n      No "
+            "Como cada n",
+            "oche /n"
         ],
         [
-            "puedo vivir sin tu ",
-            "amor."
+            "Hoy te siento tr",
+            "iste sé ",
+            "muy bien por qué ",
+            "ver \n\nTú ",
+            "querrás de",
+            "cirme \n\nQue ",
+            "ha cambiado mu",
+            "cho \n\nEl ",
+            "amor se aca",
+            "ba quiero ",
+            "terminar  /n"
+        ],
+        [
+            "Yo que en ningún mom",
+            "ento puede estar lejos de ",
+            "ti \n\nComo soport",
+            "ar la vida entera ya sin ti /n"
+        ],
+        [
+            "Te quiero, te qu",
+            "iero, te juro que yo /n"
+        ],
+        [
+            "No puedo vivir ",
+            "sin tu am",
+            "or \n\nVen aqu",
+            "í, abraz",
+            "ame \n\nYo te ",
+            "amo tanto ",
+            "te pi",
+            "do por favor /n"
+        ],
+        [
+            "Que creas más ",
+            "en mi vida /n"
+        ],
+        [
+            "Yo que en ningún momento puede ",
+            "estar  lejos de ti \n\nC",
+            "omo soportar la vida e",
+            "ntera ya sin ti \n\nTe ",
+            "quiero, te ",
+            "quiero \n\nYo ",
+            "que en ningún momento puede est",
+            "ar lejos de ti \n\nCo",
+            "mo soportar la vida ente",
+            "ra ya sin ti \n\nTe qu",
+            "iero, te q",
+            "uiero \n\nTe q",
+            "uiero, te qu",
+            "iero ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Te quiero, ",
+            "te quiero ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 73,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "q7CsJhRBTQE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

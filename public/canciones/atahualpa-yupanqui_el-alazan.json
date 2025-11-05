@@ -2,199 +2,473 @@
     "cancion": "el-alazan",
     "banda": "atahualpa-yupanqui",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 184,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "Em",
-                    "D",
+                    "E",
                     "G",
                     "Em",
+                    "B7",
+                    "B7",
+                    "D",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Am",
                     "C7",
-                    "B7"
+                    "Em",
+                    "G",
+                    "Em",
+                    "G",
+                    "G",
+                    "E",
+                    "F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "B7",
-                    "Em"
+                    "B7",
+                    "Em",
+                    "C7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "G",
-                    "D",
-                    "G",
-                    "Am",
                     "B7",
-                    "C7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
                     "B7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
-                    "G",
-                    "D",
-                    "G",
-                    "Am",
-                    "Em",
                     "B7",
-                    "Em"
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Em",
+                    "D",
+                    "D",
                     "D",
                     "G",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
                     "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C7",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            0,
-            1,
             2,
             3,
-            0,
-            1,
-            1,
             4,
-            1,
-            2,
-            3
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "ra una cinta de fue",
-            "go mi caballo galopa",
-            "ndo/n"
-        ],
-        [
-            "crin revu",
-            "elta en llamarad",
-            "as, mi alazá",
-            "n te",
-            " estoy nombran",
-            "do,",
             "",
             "",
-            "/nc"
-        ],
-        [
-            "ruzó los valles con l",
-            "una, cruzó los cerros ne",
-            "vando/n"
-        ],
-        [
-            "mil cam",
-            "inos anduvi",
-            "mos, mi alazá",
-            "n te",
-            " estoy nombran",
-            "do./n"
-        ],
-        [
-            "Oscura cinta de nieb",
-            "la te",
-            " pialó junto al barra",
-            "nco/n"
-        ],
-        [
-            "como fue que no lo vi",
-            "ste, que",
-            " estrella estabas buscan",
-            "do,/n"
-        ],
-        [
-            "en el fondo del abi",
-            "smo, ni",
-            " voz para nombrarl",
-            "o/n"
-        ],
-        [
-            "solito se fue muri",
-            "endo mi caba",
-            "llo, mi caball",
-            "o./n"
-        ],
-        [
-            "En una horqueta del t",
-            "ala hay un morral solit",
-            "ario/n"
-        ],
-        [
-            "y hay un cor",
-            "ral sin relin",
-            "chos, mi alaz",
-            "n te",
-            " estoy nombran",
-            "do,",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "si es como dicen algu",
-            "nos que hay cielo pa'l buen cabal",
-            "lo/n"
+            "Est ",
+            "es una canción en español de rock argentino. /n"
         ],
         [
-            "por ahí andará mi f",
-            "lete galop",
-            "ando, ",
+            "Era una c",
+            "inta de fu",
+            "ego gal",
+            "opando",
             "galopan",
-            "do./n"
+            "do cr",
+            "im revuelta ",
+            "en llamarada ",
+            "mi al",
+            "asante esto ",
+            "nombra",
+            "ndo ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Oscura cinta de nieb",
-            "la te",
-            " pialó junto al barra",
-            "nco/n"
+            "Tre",
+            "po las sierras ",
+            "con lun",
+            "a, cruzo ",
+            "los valles neva",
+            "ndo ",
+            "si en cam",
+            "inos anduvi",
+            "mos, mi ",
+            "alasant ",
+            "estoy no",
+            "mbrando ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "como fue que no lo vi",
-            "ste, que",
-            " estrella estabas buscan",
-            "do,/n"
+            "Oscu",
+            "ro lazo de n",
+            "iebla te ",
+            "pianó j",
+            "unto al b",
+            "arranco ",
+            "¿\nCómo fue ",
+            "que no lo vis",
+            "te? ",
+            "¿\nQué estr",
+            "ella estaba",
+            "s busca",
+            "ndo? ",
+            "",
+            "/n"
         ],
         [
-            "en el fondo del abi",
-            "smo, ni",
-            " voz para nombrarl",
-            "o/n"
+            "En el ",
+            "fondo del a",
+            "bismo ni ",
+            "una voz ",
+            "para nombr",
+            "arlo sol",
+            "ito se ",
+            "fue m",
+            "urien",
+            "do ",
+            "mi ",
+            "caballo ",
+            "",
+            "mi cab",
+            "allo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "solito se fue muri",
-            "endo mi caba",
-            "llo, mi caball",
-            "o."
+            "En ",
+            "una or",
+            "queta del t",
+            "ala hay ",
+            "un mor",
+            "ral solitario ",
+            "",
+            "hay un cor",
+            "ral sin re",
+            "linchos, ",
+            "mi alasan",
+            "te estoy no",
+            "mbran",
+            "do ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Si, ",
+            "como dice ",
+            "algunos, ",
+            "hay cielo",
+            "s pa 'l buen ca",
+            "ballo por ",
+            "ahí andar ",
+            "mi fl",
+            "ete gal",
+            "opando, ",
+            "ga",
+            "lop",
+            "ando ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oscuro  l",
+            "azo de nieb",
+            "la te pia",
+            "nó junto al b",
+            "arranco ¿/n"
+        ],
+        [
+            "Cómo fue que ",
+            "no lo vi",
+            "ste? ",
+            "¿\nQué es",
+            "trella est",
+            "abas bus",
+            "cando",
+            "",
+            "/n"
+        ],
+        [
+            "En ",
+            "el fo",
+            "ndo del ab",
+            "ismo ni ",
+            "una voz ",
+            "para nombrar",
+            "lo s",
+            "olito se ",
+            "fue m",
+            "ur",
+            "ie",
+            "ndo mi ",
+            "caba",
+            "llo, ",
+            "",
+            "mi c",
+            "aba",
+            "llo ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PMdfcCYXrns",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

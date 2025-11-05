@@ -5,7 +5,7 @@ export class MediaVista {
   public delay: number = 0
   public delayconrector: number = 0
   public rector: boolean = false
-  public sincronizar: boolean = false
+
   public constructor(tipo: string) {
     this.tipo = tipo
   }

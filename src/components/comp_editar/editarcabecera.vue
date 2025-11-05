@@ -54,7 +54,6 @@ function clickCerrar(modificado: boolean) {
 helper.latino = appStore.perfil.CifradoLatino
 
 function guardarCambios(origenDestino: string) {
-  props.origen.origenUrl = origenDestino
   CancionManager.getInstance()
     .Save(
       new OrigenCancion(

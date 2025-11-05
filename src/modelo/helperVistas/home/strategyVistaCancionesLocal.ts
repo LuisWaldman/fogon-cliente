@@ -1,5 +1,5 @@
-import { CancionManager } from '../cancion/CancionManager'
-import { ListasDBManager } from '../cancion/ListasDBManager'
+import { CancionManager } from '../../cancion/CancionManager'
+import { ListasDBManager } from '../../cancion/ListasDBManager'
 import { StrategyVista } from './strategyVista'
 import { vistaHome } from './vistaHome'
 

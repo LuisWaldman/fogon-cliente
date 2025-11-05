@@ -85,7 +85,7 @@ mediaVista.setGetEstado(() => {
 
 onUnmounted(() => {
   const appStore = useAppStore()
-  appStore.aplicacion.quitarMediaVista(mediaVista)
+  appStore.aplicacion.quitarMediaVista()
 })
 
 onMounted(() => {

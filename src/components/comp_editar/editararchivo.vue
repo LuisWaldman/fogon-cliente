@@ -13,14 +13,10 @@ const props = defineProps<{
 const nombrecancion = ref('')
 const nombrebanda = ref('')
 const nombrearchivo = ref('')
-const origenOriginal = ref('')
-const origenDestino = ref('')
 const calidad = ref(props.cancion.calidad)
 nombrecancion.value = props.cancion.cancion
 nombrebanda.value = props.cancion.banda
 nombrearchivo.value = props.cancion.archivo || 'archivo_noload'
-origenOriginal.value = props.origen.origenUrl
-origenDestino.value = props.origen.origenUrl
 
 const appStore = useAppStore()
 function clickCancelarCambiarDatos() {

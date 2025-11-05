@@ -46,6 +46,7 @@ watch(
   },
 )
 const mediaVista = new MediaVista('YOUTUBE')
+
 mediaVista.setGetTiempoDesdeInicio(() => {
   const time = playerRef.value?.getCurrentTime()
   return time ? time * 1000 - CalcularDelay() : 0 // Convert to milliseconds
@@ -63,9 +64,10 @@ mediaVista.setSetTiempoDesdeInicio((numero: number) => {
   playerRef.value?.seekTo(numero / 1000, true)
 })
 
+const appStore = useAppStore()
+
 onUnmounted(() => {
-  const appStore = useAppStore()
-  appStore.aplicacion.quitarMediaVista(mediaVista)
+  appStore.aplicacion.quitarMediaVista()
 })
 
 onMounted(() => {
@@ -94,6 +96,7 @@ function onStateChange(event: { data: number }) {
 
 <template>
   <div v-if="urlYoutube == ''">No hay media cargada para esta canción</div>
+
   <YouTube
     :src="urlYoutube"
     ref="playerRef"

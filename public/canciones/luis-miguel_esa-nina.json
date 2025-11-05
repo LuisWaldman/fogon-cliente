@@ -8,41 +8,112 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "Em",
-                    "Am",
-                    "Cm",
-                    "F",
-                    "A#",
-                    "D7",
-                    "Gm"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
-                    "D7",
                     "G",
-                    "B7",
-                    "Em",
-                    "Am",
-                    "D7",
-                    "Am"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Cm",
-                    "D7",
                     "G",
-                    "Em",
-                    "Am",
-                    "Cm",
-                    "D7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             }
@@ -50,66 +121,117 @@
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Esa niña que tiembla en mis brazos/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "y que finge tener 20 años/n"
+            "Esta  es ",
+            "una canción en esp",
+            "añol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "esa niña que pide ternura/n"
+            "Esta es una ",
+            "canción en es",
+            "pañol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ansiedad, libert",
-            "ad y locura./nEres "
+            "Esta ",
+            "es ",
+            "una ",
+            "",
+            "ca",
+            "nció",
+            "en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tú, o ",
-            "tú, o tú, o",
-            " tú/nquien "
-        ],
-        [
-            "quiera que s",
-            "eas t",
-            "/no "
-        ],
-        [
-            "tú, o tú, o",
-            " tú,/nsi "
-        ],
-        [
-            "tú lo de",
-            "seas./nsi "
-        ],
-        [
-            "tú lo deseas, de",
-            "seas, des",
-            "eas./n"
-        ],
-        [
-            "Te quiero así/npe"
-        ],
-        [
-            "queña y agresiva con la ",
-            "vida/n"
-        ],
-        [
-            "loca perdida, perd",
-            "ida, perdi",
-            "da."
+            "E",
+            "sta es ",
+            "una c",
+            "anció",
+            "en españo",
+            "l de rock argentino. \n\nEs",
+            "ta es ",
+            "",
+            "",
+            "",
+            "una ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canci",
+            "ón en español de rock argentino. \n\nEsta es una ",
+            "canción en e",
+            "spañol ",
+            "de ",
+            "rock argen",
+            "tino. ",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "w42WGWLHFLg",
-            "delay": 0
+            "delay": 8000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

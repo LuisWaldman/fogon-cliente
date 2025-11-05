@@ -8,7 +8,7 @@ import { onMounted, ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
-import { vistaHome } from '../modelo/helperVistas/vistaHome'
+import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
 
 const listasManager: ListasDBManager = new ListasDBManager()
 
@@ -58,7 +58,6 @@ refUltimasCanciones.value = ultimasCanciones.canciones
 const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
 const appStore = useAppStore()
-const CancionesLocalstorage = ref<ItemIndiceCancion[]>([])
 
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
@@ -100,36 +99,6 @@ async function clickOrigen(viendostr: string) {
   await vista.iniciar()
   actualizarVista()
   return
-  viendoOrigen.value = viendostr
-  if (viendo.value === 'canciones') {
-    if (viendoOrigen.value === 'localstorage') {
-      viendoCanciones.value = CancionesLocalstorage.value
-    } else {
-      //refViendoCanciones.value = appStore.serviciosEnReproduccion
-    }
-  }
-  if (viendo.value === 'listas') {
-    if (viendoOrigen.value === 'localstorage') {
-      viendoListas.value = ListasEnStorage.value
-      viendoLista.value = viendoListas.value.length ? viendoListas.value[0] : ''
-    }
-    cambioLista()
-  }
-
-  if (viendoOrigen.value === 'localstorage') {
-    if (viendo.value === 'canciones') {
-      viendoCanciones.value = CancionesLocalstorage.value
-    } else if (viendo.value === 'listas') {
-      viendoListas.value = ListasEnStorage.value
-    }
-  } else if (viendoOrigen.value === 'server') {
-    if (viendo.value === 'canciones') {
-      //refViendoCanciones.value = appStore.IndicesServer
-    } else if (viendo.value === 'listas') {
-      // Aquí podrías implementar la lógica para obtener las listas del servidor
-      viendoListas.value = appStore.listasEnServer
-    }
-  }
 }
 
 function confirmarNuevaLista() {

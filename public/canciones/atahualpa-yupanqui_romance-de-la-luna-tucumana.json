@@ -2,191 +2,292 @@
     "cancion": "romance-de-la-luna-tucumana",
     "banda": "atahualpa-yupanqui",
     "escala": "Gm/A#",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "D",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Gm7/F",
+                    "D/F#",
+                    "Gm",
+                    "D/F#",
+                    "Gm",
+                    "Cm",
+                    "A#maj7",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Gm/A#",
-                    "D/A",
-                    "G#",
-                    "D#/G",
-                    "F",
-                    "Em7b5",
-                    "D#maj7",
-                    "D7",
-                    "Gm",
-                    "Gm",
-                    "D/F#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "A#",
+                    "A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "Cm7/A#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Cm7/A#",
+                    "Cm7/A# Adim"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "Gm7/F",
-                    "C/E",
-                    "D#/G",
-                    "F/A",
-                    "A#",
-                    "D#/G",
-                    "D/F#",
-                    "Gm",
-                    "D/A",
-                    "A#",
-                    "Fm7/C",
-                    "G7",
-                    "Cm",
-                    "D7",
-                    "Gm",
-                    "D7",
-                    "Gm",
-                    "D/F#",
                     "Gm7/F",
-                    "C/E",
-                    "D#/G",
-                    "F/A",
-                    "A#",
-                    "D#/G",
-                    "D/F#",
-                    "Gm",
-                    "D/A",
-                    "A#",
-                    "Fm7/C",
-                    "G7",
-                    "Cm",
-                    "D7",
-                    "Gm",
-                    "F7",
-                    "A#maj7",
-                    "Dm/A",
-                    "A#maj7",
-                    "Dm/A",
-                    "Gm",
                     "Gm7/F",
-                    "A#m/C#",
-                    "G#",
+                    "Gm7/F",
                     "Fm",
                     "Cm",
                     "Cm7/A#",
-                    "Adim",
-                    "D/F#",
-                    "D#maj7",
-                    "A#/D",
-                    "Cm",
                     "Cm7/A#",
-                    "D7/A",
-                    "Gm",
+                    "Cm7/A#",
+                    "Cm7/A#",
+                    "D7/A Cm7/A#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "D/F#",
-                    "Gm7/F",
-                    "C/E",
+                    "D#/G",
+                    "D#/G",
                     "D#/G",
                     "F/A",
                     "A#",
-                    "D#/G",
+                    "A#",
                     "D/F#",
                     "Gm",
                     "D/A",
-                    "A#",
-                    "Fm7/C",
-                    "G7",
-                    "Cm",
-                    "D7",
+                    "D/A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "Gm",
-                    "D7",
                     "Gm",
+                    "Gm",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "D/F#",
-                    "Gm7/F",
-                    "C/E",
                     "D#/G",
-                    "F/A",
-                    "A#",
-                    "D#/G",
-                    "D/F#",
-                    "Gm",
+                    "D#/G A#",
                     "D/A",
-                    "A#",
-                    "Fm7/C",
+                    "Gm",
                     "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "A#maj7",
                     "Cm",
-                    "D7",
-                    "Gm",
-                    "F7",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Cm",
+                    "Dm/A",
+                    "Dm/A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "A#maj7",
                     "Dm/A",
-                    "A#maj7",
-                    "Dm/A",
-                    "Gm",
-                    "Gm7/F",
-                    "A#m/C#",
+                    "Dm/A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "G#",
-                    "Fm",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D#",
                     "D#",
                     "A#/D",
-                    "C#dim",
-                    "D/C",
-                    "Gm",
-                    "A#maj7",
-                    "Dm/A",
-                    "A#maj7",
-                    "Dm/A",
-                    "Gm",
-                    "Gm7/F",
-                    "A#m/C#",
-                    "G#",
-                    "Fm",
-                    "D#",
                     "A#/D",
-                    "C#dim",
-                    "D/C",
-                    "Gm",
-                    "Gm7/F",
-                    "Em7b5",
-                    "Cm/D#",
-                    "Gm/A#",
-                    "Em7b5",
-                    "D#/G",
-                    "Gm7/F"
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D",
+                    "A#/D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
-        [],
         [
-            "Bajo el puñal del inv",
-            "ierno murio en",
-            " los campos la tar",
-            "de/n"
-        ],
-        [
-            "con su tambor",
-            " de desv",
-            "elos salio la luna a rezar",
-            "le",
             "",
             "",
             "",
-            "/n"
-        ],
-        [
-            "con su tam",
-            "bor de desv",
-            "elos salio la lun",
-            "a a rezarl",
-            "e",
-            "/n"
-        ],
-        [
-            "Rezos en la noche b",
-            "lanca tañe",
-            "n las arpas de ai",
-            "re/n"
-        ],
-        [
-            "mientras le n",
-            "acen vio",
-            "lines a los alamos del valle",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",
@@ -194,135 +295,196 @@
             "/n"
         ],
         [
-            "mientras l",
-            "e nacen vio",
-            "lines a los alamo",
-            "s del val",
-            "le",
-            "/n"
-        ],
-        [
-            "Zamba de la",
-            " luna ll",
-            "ena      ",
-            "   bail",
-            "a la n",
-            "oche en las calle",
-            "s/n"
-        ],
-        [
-            "con su pañuelo de esqui",
-            "nas y ",
-            "su ade",
-            "man de zaudal",
-            "es",
-            "/n"
-        ],
-        [],
-        [
-            "Se emponchan de grises",
-            " nieblas los v",
-            "erdes cañaberales",
-            "/n"
-        ],
-        [
-            "y camina lo",
-            "s camino",
-            "s con una escolta de",
-            " azares",
+            "Est",
+            "a es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",
             "/n"
         ],
         [
-            "y camina l",
-            "os cami",
-            "nos con ",
-            "una escolta de azare",
-            "s",
-            "/n"
-        ],
-        [
-            "La noche llena de arp",
-            "egios la co",
-            "pa de los nogale",
-            "s/n"
-        ],
-        [
-            "el tamboril",
-            " de la l",
-            "una cuelga su copla",
-            " en el aire",
+            "Es",
+            "ta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",
             "/n"
         ],
         [
-            "el tambori",
-            "l de la lun",
-            "a cuelga su copla",
-            " en el air",
-            "e",
+            "Esta ",
+            "es una canc",
+            "ión en e",
+            "spa",
+            "ñol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Zamba de la",
-            " luna ll",
-            "ena      ",
-            "   bail",
-            "a la n",
-            "oche en las calle",
-            "s/n"
+            "E",
+            "sta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "con su pañuelo de esq",
+            "E",
+            "sta es ",
+            "una canción en e",
+            "spañol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Los ve",
+            "rdes cañel ",
+            "virales  ",
+            "",
+            "caminan los c",
+            "aminos con una e",
+            "scorta de aza",
+            "res ",
+            "cami",
+            "nan los camin",
+            "os con una escorta ",
+            "de azares /n"
+        ],
+        [
+            "La ",
+            "noche llen",
+            "a de arpegi",
+            "os \n\nLa ",
+            "copa de los ",
+            "nógal",
+            "es \n\nEl ",
+            "tamboril de ",
+            "la luna cuelga ",
+            "su copla en el a",
+            "ire /n"
+        ],
+        [
+            "El tam",
+            "boril de la lun",
+            "a cuelga su copla en ",
+            "el aire /n"
+        ],
+        [
+            "Sa",
+            "mba de la ",
+            "luna ll",
+            "ena \n\nB",
+            "aila la noch",
+            "e en las c",
+            "alles /n"
+        ],
+        [
+            "Con su pañu",
+            "elo de esq",
             "uinas ",
-            "y su ad",
-            "eman de zau",
-            "dales",
+            "su ade",
+            "mán de sau",
+            "dades /n"
+        ],
+        [
+            "Mi cora",
+            "zón bate p",
+            "almas /n"
+        ],
+        [
+            "Con las m",
+            "anos de mi s",
+            "angre /n"
+        ],
+        [
+            "Mientras c",
+            "ansada la l",
+            "una /n"
+        ],
+        [
+            "Se ",
+            "duerme  sobre ",
+            "los v",
+            "al",
+            "les ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Mi corazon ",
-            "bate pal",
-            "mas con l",
-            "as mano",
-            "s de m",
-            "i sangre",
-            "/n"
-        ],
-        [
-            "mientras cansada la lu",
-            "na se ",
-            "duerme ",
-            "sobre los v",
-            "alles",
-            "",
-            "/nA"
-        ],
-        [
-            "h...",
-            "",
-            "/n "
-        ],
-        [
-            "  3      ",
-            "0      3",
-            "      3",
-            ""
+            "Mientras cansada la luna "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "v5eYB8WsWBY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

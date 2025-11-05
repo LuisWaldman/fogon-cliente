@@ -8,31 +8,170 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "A",
+                    "D7",
+                    "A",
+                    "A",
+                    "D7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
                     "A",
                     "D",
-                    "A"
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
                     "A",
-                    "D"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D7",
+                    "G",
                     "G",
                     "G",
                     "D",
                     "Bm",
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D7",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Em",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -40,82 +179,158 @@
             0,
             1,
             2,
-            1,
-            1,
-            1,
-            2,
-            1
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "Sabes mejor que nad",
-            "ie que me fall",
-            "aste/nque lo que prometiste se te ol"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "vido/n"
+            "Sabes m",
+            "ejor que nadie ",
+            "que me fal",
+            "laste ",
+            "que lo ",
+            "que prometiste ",
+            "se te olv",
+            "idó /n"
         ],
         [
-            "sabes a ciencia cierta que me engañaste/naunque nadie te amaba igual que "
+            "Sa",
+            "bes paciencia cie",
+            "rta que me ",
+            "engañast ",
+            "aunq",
+            "ue nadie te a",
+            "mara igual que ",
+            "yo /n"
         ],
         [
-            "yo/n"
+            "Ll",
+            "evo esto de r",
+            "azones pa' ",
+            "despreciarte ",
+            "",
+            "sin embargo qu",
+            "iero que seas f",
+            "eliz /n"
         ],
         [
-            "lleno estoy de razon pa despreciarte/n"
+            "Que ",
+            "allá en ",
+            "el otro mundo en vez ",
+            "de infierno encuen",
+            "tres gloria que ",
+            "una nube de ",
+            "tu memoria me ",
+            "borre mí ",
+            "/n"
         ],
         [
-            "y sin embargo quiero que seas fel",
-            "iz/ncoro: "
+            "Dile al ",
+            "que preguntes que ",
+            "no te q",
+            "uise",
+            ", dile que ",
+            "te engañaba ",
+            "que fui lo pe",
+            "or /n"
         ],
         [
-            "Y  alla en el otro mundo/nen vez de inf"
+            "Échame ",
+            "mí la culpa de ",
+            "lo que p",
+            "as",
+            "é, cúbre",
+            "te tú la espalda ",
+            "con mi dol",
+            "or /n"
         ],
         [
-            "ierno encuentres glo",
-            "ria/ny que una nu"
+            "Que all",
+            "á en el otro mu",
+            "ndo en vez de infi",
+            "erno encuentres glo",
+            "ria que una n",
+            "ube de tu mem",
+            "oria me borre ",
+            "mí /n"
         ],
         [
-            "be de tu memo",
-            "ria me borre a mi",
-            "/nD"
+            "D",
+            "ile al que pr",
+            "eguntes que no ",
+            "te qui",
+            "se, ",
+            "dile que te e",
+            "ngañaba que fui ",
+            "lo peor ",
+            "/n"
         ],
         [
-            "ile al que pregunte que no te qui",
-            "se/ndi"
+            "Échame mí la ",
+            "culpa de lo ",
+            "que pa",
+            "sé",
+            "cúbrete tú la ",
+            "espalda con mi ",
+            "dolor  /n"
         ],
         [
-            "le que te engañaba que fui lo",
-            " peor/nec"
+            "Que ",
+            "allá en ",
+            "el otro mundo en ",
+            "vez de infierno enc",
+            "uentres gloria ",
+            "que una nube ",
+            "de tu memoria ",
+            "me borre mí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "hame a mi la culpa de lo que pase/ncu"
-        ],
-        [
-            "brete tu las penas con mi dol",
-            "or/nY"
-        ],
-        [
-            " alla en el otro mundo/nen vez de inf"
-        ],
-        [
-            "ierno encuentres glo",
-            "ria/ny que una n"
-        ],
-        [
-            "ube de tu memo",
-            "ria me borre a mi",
-            ""
+            "Dil",
+            "e al que preguntes que no te quise, dile ",
+            "que te en",
+            "gañaba que fui lo peor "
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "HF4HnRzwfdg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

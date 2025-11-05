@@ -1,10 +1,11 @@
 import type { StrategyVista } from './strategyVista'
 import { StrategyVistaDefault } from './strategyVistaDefault'
-import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import type { ItemIndiceCancion } from '../../cancion/ItemIndiceCancion'
 import { StrategyVistaUltimas50 } from './strategyVistaUltimas50'
 import { StrategyVistaLocal } from './strategyVistaListasLocal'
 import { StrategyVistaServer } from './strategyVistaListaServer'
 import { StrategyCancionesLocal } from './strategyVistaCancionesLocal'
+import { StrategyCancionesServer } from './strategyVistaCancionesServer'
 
 export class vistaHome {
   public viendo: string = 'inicio'
@@ -47,7 +48,7 @@ export class vistaHome {
       if (this.viendoOrigen === 'localstorage') {
         this.strategia = new StrategyCancionesLocal(this)
       } else if (this.viendoOrigen === 'server') {
-        this.strategia = new StrategyVistaServer(this)
+        this.strategia = new StrategyCancionesServer(this)
       }
     } else {
       this.strategia = new StrategyVistaDefault(this)

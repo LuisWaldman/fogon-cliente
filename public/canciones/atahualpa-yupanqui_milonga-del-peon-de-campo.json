@@ -2,184 +2,327 @@
     "cancion": "milonga-del-peon-de-campo",
     "banda": "atahualpa-yupanqui",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "C#",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
                     "A7",
                     "D",
-                    "A7"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "A7",
+                    "A7",
+                    "D7",
+                    "D7",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "D",
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "A7",
+                    "D",
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "A7",
                     "D7",
                     "G",
-                    "F",
-                    "A7",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A7",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A7",
+                    "D",
+                    "D",
+                    "A7",
+                    "D7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "A7",
+                    "A7",
+                    "A7 D7",
+                    "D7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "A7",
+                    "D",
+                    "D",
+                    "D7",
+                    "D7",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
             1,
             2,
-            0,
-            1,
-            2,
-            0,
-            1
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "Yo nunca tuve trop",
-            "illa,siempre he montao en ajeno",
-            ", /ntuve un zaino que de bu"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "eno ni pisaba la gramilla ",
-            "/nLlevo una vida senc"
-        ],
-        [
-            "illa,como es la del pobre peon ",
-            "/nMadrugon tras madrugon"
-        ],
-        [
-            " con lluvia, escarcha o pamper",
-            "o /n"
-        ],
-        [
-            "a veces me duelen fiero",
-            " ,los hig",
-            "ados y el riñon",
+            "Yo ",
+            "nunca tuve t",
+            "ropilla, ",
+            "siempre he montad ",
+            "un ajeno, ",
+            "tuve un zaino ",
+            "que de bueno ni pisaba la g",
+            "ramilla. \n\nV",
+            "ivo una vi",
+            "da sencilla como ",
+            "es la del pobre p",
+            "eón, ",
+            "madrugón tras m",
+            "adrugón con lluvi",
+            "a, escarcho, pampe",
+            "ro, veces ",
+            "me duelen fieros los híga",
+            "dos el riño",
             ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Soy peon de la estancia viej",
-            "a ,partido de Madalena ",
-            "/ny aunque no valga la pena"
-        ],
-        [
-            " anote que no son quejas  ",
-            "/nun porton lleno de re"
-        ],
-        [
-            "jas y alla en el fondo un chalet ",
-            "/nlo recibira un ballet"
-        ],
-        [
-            " que anda siempre difrazao ",
+            "Soy peón de la ",
+            "estancia  vieja, ",
+            "partido de \n\nMada",
+            "lena, ",
+            "aunque no valga la pe",
+            "na anote, que ",
+            "no son quejas, ",
+            "un portón lle",
+            "no de rejas allá en ",
+            "el fondo un chale",
+            "t. \n\nLo ",
+            "recibirá un vale que a",
+            "nda siempre disfr",
+            "azado, mas no se asuste ",
+            "cuñado  por mi preg",
+            "úntele. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "mas no se asuste cuñ",
-            "ao y por m",
-            "i preguntele",
-            ". ",
+            "Ni ",
+            "se le ocurra avi",
+            "sar que viene par",
+            "a visitarme, ",
+            "diga que viene cob",
+            "rarme lo han de d",
+            "ejar de entrar. /n"
+        ],
+        [
+            "Allí le van ",
+            "indicar que sig",
+            "an los uncalit",
+            "os, al fina",
+            "l está un ranchito que han ",
+            "levantado  estas manos, ",
+            "ese es mi casa paisano ahí ",
+            "puede pegar el gri",
+            "to. /n"
+        ],
+        [
+            "Allí le voy mostrar ",
+            "mi manc",
+            "arron, mis ",
+            "dos perros, una ",
+            "secuela de fierro ",
+            "un montón de cosas m",
+            "ás. /n"
+        ],
+        [
+            "Si es ent",
+            "endido verá un p",
+            "oncho de fina tra",
+            "ma el ret",
+            "rato de mi mam",
+            "á que se ande re",
+            "zo pensand ",
+            "mientras lo voy ad",
+            "ornando con florc",
+            "itas de retama. ",
             "/n"
         ],
         [
-            "Ni se le ocurra avis",
-            "ar que viene pa visitarme  ",
-            "/ndiga que viene a cob"
+            "Que puede of",
+            "ertar un pe",
+            "ón, que no sean ",
+            "sus pobrez",
+            "as, veces m",
+            "entra tristeza o",
+            "tras veces reb",
+            "elión. /n"
         ],
         [
-            "rarme y lo han de dejar dentrar  ",
-            "/nalli le van a indi"
-        ],
-        [
-            "car que siga los ucalitos ",
-            "/nal final esta un ranch"
-        ],
-        [
-            "ito que han levantao estas mano",
-            "s /n"
-        ],
-        [
-            "esa es mi casa paisa",
-            "no y ahi pue",
-            "de pegar el grit",
-            "o. ",
-            "/nAlli le voy a mos"
-        ],
-        [
-            "trar mi mancarron,mis 2 perros  ",
-            "/nunas espuelas de fi"
-        ],
-        [
-            "erro y un monton de cosas mas ",
-            " /nsi es entendido ver"
-        ],
-        [
-            "a un pocho de fina trama ",
-            "y el retrato de mi mama ",
-            "que es ande rezo pensando",
-            "  /n"
-        ],
-        [
-            "mientras lo voy adornan",
-            "do con flor",
-            "citas de retama",
-            ". ",
-            "/nQue puede ofertar un p"
-        ],
-        [
-            "eon que no sean sus pobrezas ",
-            "  /na veces me entra tri"
-        ],
-        [
-            "steza otras veces rebelion  ",
-            " /nen mas de una ocas"
-        ],
-        [
-            "ion quisiera hacerme perdiz ",
-            "/nPara ver de ser feli"
-        ],
-        [
-            "z en algun pago lejano ",
+            "En más de alguna ocas",
+            "ión quisiera hace",
+            "rme perdiz ",
+            "para ver de ser ",
+            "feliz en algún pago le",
+            "jano, pero la ver",
+            "dad paisano me gusta el ",
+            "aire de aquí. ",
             "/n"
         ],
         [
-            "pero la verda paisa",
-            "no me gust",
-            "a el aire de aqui",
-            ".",
-            ""
+            "Gracias por ver el video. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Bbf97pQlj_o",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

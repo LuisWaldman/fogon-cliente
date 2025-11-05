@@ -1,4 +1,4 @@
-import { CancionManager } from '../cancion/CancionManager'
+import { CancionManager } from '../../cancion/CancionManager'
 import { StrategyVista } from './strategyVista'
 import { vistaHome } from './vistaHome'
 

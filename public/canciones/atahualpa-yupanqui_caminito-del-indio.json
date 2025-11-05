@@ -2,187 +2,278 @@
     "cancion": "caminito-del-indio",
     "banda": "atahualpa-yupanqui",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
                     "E7",
-                    "A",
                     "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "C",
                     "C",
+                    "F",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "E7",
                     "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "Am",
+                    "C",
                     "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "Am",
                     "Am",
+                    "A",
+                    "C",
                     "E7",
                     "A",
-                    "G7",
-                    "C",
                     "C",
                     "E7",
-                    "Am",
                     "E7",
-                    "Am",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
                     "C",
                     "F",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "C",
-                    "E7",
-                    "Am",
-                    "E7",
-                    "Am",
                     "C",
                     "F",
-                    "C",
-                    "E7",
-                    "Am",
-                    "E7",
-                    "Am",
-                    "Am",
-                    "E7",
-                    "Am",
                     "F",
-                    "C",
-                    "C",
                     "E7",
-                    "Am",
                     "E7",
-                    "Am",
-                    "Am",
                     "E7",
-                    "A",
-                    "F",
-                    "C",
-                    "C",
                     "E7",
-                    "A",
                     "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "Am"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "Camin",
-            "ito del ind",
-            "io /nsendero c"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oya sembrao de ",
-            "piedras /n"
+            "Caminito del indio ",
+            "sendero, colla, sembrado ",
+            "de piedra. /n"
         ],
         [
-            "camin",
-            "ito del ind",
-            "io /nque junta el v"
+            "Caminito del ",
+            "indio que junta el valle ",
+            "con las es",
+            "tr",
+            "el",
+            "las. /n"
         ],
         [
-            "alle con las estr",
-            "ellas /n"
+            "Caminito que ",
+            "anduvo  de sur norte mi r",
+            "aza vieja. /n"
         ],
         [
-            "Camin",
-            "ito que and",
-            "uvo /nde sur a n"
-        ],
-        [
-            "orte mi raza v",
-            "ieja /n"
-        ],
-        [
-            "antes ",
-            "que en la monta",
-            "ña /nla Pacha M"
-        ],
-        [
+            "Antes que en ",
+            "la montaña la pachamama se ",
+            "ensombreciera. \n\nAntes ",
+            "que en la montaña la pacham",
             "ama se ensombreci",
-            "era /n"
+            "era. ",
+            "/n"
         ],
         [
-            "Cantando en el cerro /nll"
+            "Cantando ",
+            "en el cerro, llorando ",
+            "en el río, se ag",
+            "randa en la noche la ",
+            "pena  del indio. /n"
         ],
         [
-            "orando en el r",
-            "io /nse"
+            "El sol ",
+            "la luna este c",
+            "anto mío, be",
+            "saron tu viejo cam",
+            "ino del indio. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " agranda en la n",
-            "oche /nl"
+            "En ",
+            "la noche serrana llor",
+            "a la quena su onda nosta",
+            "lgia. ",
+            "el caminito sabe quie ",
+            "es la yola que el indio llama ",
+            "el caminito sab",
+            "e quien es la yola que el indio ",
+            "llama.  /n"
         ],
         [
-            "a perra del ind",
-            "io /nE"
+            "Se leva",
+            "nta en el cerro la voz dolien",
+            "te de la baguala. ",
+            "el cami",
+            "no lamenta ser el culpa",
+            "ble de la dinancia. ",
+            "el camino lament ",
+            "ser el culpable de la di",
+            "nancia. ",
+            "",
+            "/n"
         ],
         [
-            "l sol y la luna /ny"
+            "Cantando en ",
+            "el cerro, llorando en ",
+            "el río, se agranda ",
+            "en la noche la pena del ",
+            "indio. /n"
         ],
         [
-            " este canto m",
-            "io /nbes"
+            "El ",
+            "sol la luna est ",
+            "canto mío, ",
+            "besaron tu vie",
+            "jo camino del ",
+            "indio.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "aran tus pie",
-            "dras /nca"
-        ],
-        [
-            "minito del ind",
-            "io /n"
-        ],
-        [
-            "En la ",
-            "noche serr",
-            "ana /nllora la q"
-        ],
-        [
-            "uena su honda nosta",
-            "lgia /ny"
-        ],
-        [
-            " el camin",
-            "ito sabe",
-            " /ncual es la ch"
-        ],
-        [
-            "ola que el indio ll",
-            "ama /n"
-        ],
-        [
-            "Se lev",
-            "anta en el c",
-            "erro /nla voz doli"
-        ],
-        [
-            "ente de la bagu",
-            "ala /ny"
-        ],
-        [
-            " el camin",
-            "ito lame",
-            "nta /nser el culp"
-        ],
-        [
-            "able de la dist",
-            "ancia "
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "AoSjq31K3aM",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }

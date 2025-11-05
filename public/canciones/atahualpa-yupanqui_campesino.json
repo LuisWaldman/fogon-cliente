@@ -2,14 +2,26 @@
     "cancion": "campesino",
     "banda": "atahualpa-yupanqui",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "E",
+                    "E",
+                    "B",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "Em",
                     "Em",
                     "B7",
                     "B7",
@@ -17,57 +29,407 @@
                 ]
             },
             {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
                     "Em",
-                    "C",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "uando vayas a los c",
-            "ampos/nno te ap"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "artes del cami",
-            "no/nque pu"
+            "Esta es una canción en español de rock argentino. /n"
         ],
         [
-            "edes pisar el su",
-            "eño/nde los ab"
+            "Cuan",
+            "do vayas los c",
+            "ampos \n\nNo ",
+            "te apartes del ",
+            "camino /n"
         ],
         [
-            "uelos dorm",
-            "idos./nC"
+            "Que puedes pisa",
+            "r el sueño /n"
         ],
         [
-            "ampesino, ca",
-            "mpesino/npor ti "
+            "De los abuelos d",
+            "ormidos \n\nCa",
+            "mpesino, c",
+            "ampesino /n"
         ],
         [
-            "canto, c",
-            "ampesin",
-            "o"
+            "Por ti canto, ",
+            "campe",
+            "sino ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Un",
+            "os son tierr",
+            "a menuda \n\nO",
+            "tros la raíz ",
+            "del trig",
+            "o \n\nOtros son p",
+            "iedras dispers",
+            "as \n\nEn las ",
+            "orillas  del río /n"
+        ],
+        [
+            "Campesino, ",
+            "campesi",
+            "no \n\nPor ti can",
+            "to, camp",
+            "esino /n"
+        ],
+        [
+            "C",
+            "ampesino, ",
+            "",
+            "",
+            "",
+            "",
+            "campesino ",
+            "/n"
+        ],
+        [
+            "Cuán",
+            "tas veces, cuán",
+            "tas veces /n"
+        ],
+        [
+            "Más allá del semb",
+            "radío \n\nEn ",
+            "la fragua de las t",
+            "ardes \n\nFueron ",
+            "templar su gr",
+            "ito \n\nCampesi",
+            "no, campesino /n"
+        ],
+        [
+            "Por ti c",
+            "anto, cam",
+            "pesino ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sagrada  mis",
+            "ión del hombre /n"
+        ],
+        [
+            "Nieve, sol ",
+            "sacrific",
+            "io \n\nMorir sem",
+            "brando la vida /n"
+        ],
+        [
+            "Vivir te",
+            "mplando su gr",
+            "ito \n\nCampesin",
+            "o, campesi",
+            "no \n\nPor ti ca",
+            "nto, cam",
+            "pesino \n\nCampesino, c",
+            "ampes",
+            "ino ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cuan",
+            "do vayas los ",
+            "campos  \n\nNo ",
+            "te apartes del c",
+            "amino \n\nQue ",
+            "puedes pisar ",
+            "el sueño /n"
+        ],
+        [
+            "De los abuelos do",
+            "rmidos ",
+            "/n"
+        ],
+        [
+            "Nun",
+            "ca muertos do",
+            "rmidos \n\nLos ",
+            "abuelos campesi",
+            "nos \n\nNunca m",
+            "uertos d",
+            "ormidos \n\nNu",
+            "nca muertos ",
+            "dormidos  \n\nTen ",
+            "cuidado, campes",
+            "ino \n\nDe no p",
+            "isar esos sue",
+            "ños \n\nDe los a",
+            "buelos dormi",
+            "dos \n\nNunca m",
+            "uertos dorm",
+            "idos \n\nCamp",
+            "esino, camp",
+            "esino \n\nCa",
+            "mpesino, campe",
+            "sino \n\nPor ti c",
+            "anto, ca",
+            "mpesino ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "cXVezaWKc3o",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
-    ]
+    ],
+    "calidad": 1
 }
