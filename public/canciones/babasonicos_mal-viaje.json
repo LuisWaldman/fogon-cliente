@@ -2,98 +2,175 @@
     "cancion": "mal-viaje",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 80,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
+                    "A",
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "A",
+                    "A",
+                    "F#m",
                     "F#m",
                     "F",
-                    "B"
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F#m",
+                    "F#m",
+                    "F",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "lo anterior fue s",
-            "lo un mal viaje, /nlo que ay"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "er viví hoy trato d",
-            "e olvidar, /n"
+            "Lo anterior",
+            "fu",
+            "solo un mal viaje",
+            "lo que yo reviví./n"
         ],
         [
-            "si divagué per",
-            "dido entre las aguas, /nya estoy b"
+            "Hoy trato de ol",
+            "vidarla  si v",
+            "iva  bien,",
+            "perdida entre l",
+            "a  aguas, ya estoy bi",
+            "en  no s",
+            "e  preocupe más./n"
         ],
         [
-            "ien, /nno se preoc"
+            "Pude su c",
+            "onvivir  no afladar",
+            "la tormenta,",
+            "como un barco que no encuentr",
+            "a  su poré, todo un día m",
+            "ás  raro, lo anterior/n"
         ],
         [
-            "upen más, /np"
+            "Fu",
+            "e  solo un mal viaj",
+            "e  lo que yo rev",
+            "iví /n Hoy trato de o",
+            "lvidarla  si v",
+            "iva  bien,",
+            "perdida entre l",
+            "as  aguas, ya estoy b",
+            "ien  no s",
+            "e  preocupe más./n"
         ],
         [
-            "ude sucumbir, /nnaufrag"
+            "Un mal tránsito en e",
+            "l  destino, interpuso",
+            "e  mi camino,",
+            "eso es todo no ha si",
+            "d  nada má",
+            "s /n"
         ],
         [
-            "ar en la tormenta /ncomo un ba"
-        ],
-        [
-            "rco /nque no encuentra su pue"
-        ],
-        [
-            "rto donde amarrar, /n"
-        ],
-        [
-            "lo anterior fue s",
-            "lo un mal viaje, /nlo que ay"
-        ],
-        [
-            "er viví hoy trato d",
-            "e olvidar, /n"
-        ],
-        [
-            "si divagué per",
-            "dido entre las aguas, /nya estoy b"
-        ],
-        [
-            "ien, /nno se preoc"
-        ],
-        [
-            "upen más, /n"
-        ],
-        [
-            "un mal trance que el destino, /ninter"
-        ],
-        [
-            "puso en mi camino, /neso es t"
-        ],
-        [
-            "odo /ny no ha sido nada m"
-        ],
-        [
-            "s."
+            "Caminemos juntos mi amo",
+            "r  por esta dorada pl",
+            "aya  deja reposar t",
+            "us  descalzos pies en la orilla",
+            "escucha mis promesas de amor",
+            "eternament ",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "DbBRIYTpJg8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

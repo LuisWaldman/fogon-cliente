@@ -2,61 +2,376 @@
     "cancion": "egocripta",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
                     "G",
                     "C",
                     "G",
                     "C",
-                    "Em"
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            " Sos el espejo de mis va",
-            "nidades/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " sos la mitad que se vue",
-            "lve contra mí/n"
+            "Aquí e",
+            "stoy  en la ci",
+            "uda  donde flota me a",
+            "rrombé  padeci",
+            "end  misteria de la",
+            "historia /n En e",
+            "l  calzo de mi pa",
+            "ridad ",
+            "¿Quién er",
+            "e tú? /n Que l",
+            "e  mostraste un ente de oro",
+            "la gente /n Qu",
+            "e  confundiste los má",
+            "insolentes /n Q",
+            "u  te dejas de una mane",
+            "r  especial.",
+            "/n"
         ],
         [
-            " alguien borroso,/n no pie"
+            "Sos e",
+            "l  espejo d",
+            "e  mi espa",
+            "bilida /n"
         ],
         [
-            "nso en nadie/n"
+            "Sos l",
+            "a  mitad q",
+            "u  se guarde con",
+            "tr  mí/n"
         ],
         [
-            " a donde empiezo yo vos termin",
-            "s"
+            "Algún",
+            "bozo ",
+            "no pienso",
+            "e  nadie e",
+            "s  donde",
+            "empiezo yo",
+            "gustarla/n"
+        ],
+        [
+            "Oig",
+            "o  tu voz,",
+            "cerca varios de los ho",
+            "mbre  antiguos/n"
+        ],
+        [
+            "Qu  se despuercen confi",
+            "nado  en sus tunda",
+            "s /n Como un tal s",
+            "uprisabil",
+            "id /n"
+        ],
+        [
+            "Te conozco b",
+            "ien  pues haces todos m",
+            "is amargos renunciés /n M",
+            "e  prometiste",
+            "alivi  me llevaste/n"
+        ],
+        [
+            "Así comb",
+            "in  el deseo de impor",
+            "ta /n"
+        ],
+        [
+            "S",
+            "os  el es",
+            "pej  de mi e",
+            "spabilida /n"
+        ],
+        [
+            "S",
+            "os  la mi",
+            "ta  que se g",
+            "uard  contra m",
+            "í /n A",
+            "lgú  bo",
+            "zo  no",
+            "piens  en n",
+            "adie ",
+            "es donde empi",
+            "ez  yo g",
+            "ustarla",
+            "me pregunto /n ¿Quié",
+            "n  sos?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "o  el",
+            "e",
+            "s",
+            "p",
+            "e",
+            "j",
+            "o",
+            "",
+            "",
+            "de mi esp",
+            "abilida/n"
+        ],
+        [
+            "Sos",
+            "la mitad q",
+            "ue  se guarde c",
+            "ontr  mí/n"
+        ],
+        [
+            "Algú",
+            "bozo,",
+            "no pien",
+            "s  en nadi",
+            "e  es d",
+            "ond  empiezo y",
+            "o  gustar",
+            "la /n A",
+            "qu  est",
+            "o ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "W6MkWzDeeQw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

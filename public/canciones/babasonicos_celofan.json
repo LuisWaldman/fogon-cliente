@@ -2,129 +2,243 @@
     "cancion": "celofan",
     "banda": "babasonicos",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "F",
+                    "F",
                     "G",
-                    "F"
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
                     "G",
                     "F",
-                    "G"
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G",
-                    "C",
-                    "Em",
-                    "Am",
-                    "Em",
                     "C",
                     "F",
+                    "Am",
+                    "Am",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "F",
-                    "Em",
-                    "Am",
                     "C",
-                    "F",
                     "C",
-                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "DGBe     EADG",
-            "Be/n"
+            "haberme enamorado,",
+            "puede que esto sea una plaga, n",
+            "o  quiero contagiar n",
+            "adie. /n Cada vez q",
+            "u  vuelvo estar",
+            "e  esta sit",
+            "uación  c",
+            "aig  vu",
+            "lnerabl  tus en",
+            "cantos  me vuelvo e",
+            "l  más débil.",
+            "/n"
         ],
         [
-            "En ese refugio de reproches/nsi es que existe t"
+            "Quizás me fa",
+            "lt  aclarar qu",
+            "hasta ayer fui i",
+            "nvencible ",
+            "sin embargo tiembl",
+            "al viento como un celo",
+            "fán /n ¿Cuál es el col",
+            "o  invisible?",
+            "¿Cuál es el co",
+            "lo  invisible?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "odavía/n"
+            "En es",
+            "e  atalaya de carismas",
+            "si es que habito una sonrisa,",
+            "me la quiero adjudicar.",
+            "¿Puede",
+            "qu  sea tramposo de m",
+            "i  parte apoyarte cuando e",
+            "l  mundo embiste contra t",
+            "i /n Cada vez que v",
+            "uelvo  estar",
+            "e  esta situ",
+            "ación ",
+            "caigo vulne",
+            "rabl  tus enca",
+            "ntos  me vuelvo el má",
+            "s  débil.",
+            "/n"
         ],
         [
-            "temo haberme enamorado/n"
+            "Quizás me faltó",
+            "aclara  que ha",
+            "st  ayer fui in",
+            "vencible ",
+            "sin embargo tiemblo al v",
+            "ient  como un celof",
+            "á /n ¿Cuál es el color",
+            "invisible ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "no quiero contagiar a nadie/n"
+            "Chófer,",
+            "deténgas  qu",
+            "e  yo me bajo",
+            "aquí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Cada vez que vuelvo a estar/nen esta si"
-        ],
-        [
-            "tuación/n"
-        ],
-        [
-            "caigo vulnerable a tus encantos/nme vuelvo "
-        ],
-        [
-            "el mas débil/n"
-        ],
-        [
-            "Quizás me falto ac",
-            "larar/n"
-        ],
-        [
-            "que hasta ayer fui invenc",
-            "ible/n"
-        ],
-        [
-            "sin embargo tiemblo al viento/n"
-        ],
-        [
-            "como un celofán/n"
-        ],
-        [
-            "cual es el color invis",
-            "ible?/n"
-        ],
-        [
-            "cual es el color invi",
-            "sible?/n"
-        ],
-        [
-            "cual es el color invisi",
-            "ble? X6/n"
-        ],
-        [
-            "Chofer deténgase que yo",
-            " me bajo aquí. x3",
-            ""
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "dqtPvvDD-Qg",
-            "delay": 0
+            "delay": 25040.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

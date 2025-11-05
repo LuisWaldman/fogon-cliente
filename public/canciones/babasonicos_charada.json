@@ -2,135 +2,207 @@
     "cancion": "charada",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 78,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
-                    "C",
-                    "Am"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Em",
-                    "Bbm",
-                    "Am"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G",
                     "D",
-                    "Em",
-                    "Em",
-                    "A7",
-                    "D",
-                    "Em"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Em"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
-            0,
-            0,
-            0,
-            0,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "dad,/n"
+            "Esta es u",
+            "na  canció",
+            "en español de rock argentino. /n Esta e",
+            "s  una canción e",
+            "n  español de rock argentino./n"
         ],
         [
-            "no nos dejar",
-            "á,/nla eterni"
+            "Esta es una canción en español de rock argentino./n"
         ],
         [
-            "dad,/n"
+            "Esta es una canción en español de rock argentino. /n Esta es una canción en español de rock argentino. E",
+            "st es una canción en español de rock argentino. /n Es",
+            "t es una canción en español de rock argentino. /n E",
+            "sta es una canción en español de rock argentino. /n Esta",
+            "e",
+            "s  una canció",
+            "en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción",
+            "e español de rock argentino. /n Esta e",
+            "s  una canción en español de rock argentino./n"
         ],
         [
-            "no nos dejar",
-            "á,/nla eterni"
+            "Esta es una canción en español de rock argentino. /n Es",
+            "t  es una canción en español de rock argentino./n"
         ],
         [
-            "dad,/n"
+            "Esta es una canción en español de r",
+            "oc",
+            "k  argentino.",
+            "",
+            "/n"
         ],
         [
-            "no nos dejar",
-            "á,/nla eterni"
+            "Esta es",
+            "u",
+            "n canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción e",
+            "n español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentin",
+            "o /n Esta es una canción en español de rock argentino. Esta es una canción en español de r",
+            "oc argentino. /n Esta es una canción en español de r",
+            "oc  argentino./n"
         ],
         [
-            "dad,/n"
+            "Esta es u",
+            "n canción en español de rock argentino. /n Esta es un",
+            "a canción en español de rock argentino. /n Est",
+            "a  es una canción en español de rock",
+            "argentino /n Esta es una canción e",
+            "n español de rock argentino. /n Esta es una canción en español de",
+            "roc argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de",
+            "r",
+            "o",
+            "c  argentino.",
+            "/n"
         ],
         [
-            "no nos dejar",
-            "á,/n"
+            "Esta",
+            "e  una canción en español de rock arge",
+            "ntino /n Esta es una canción en español de rock argentino. Est",
+            "a es una canción en español de rock argentino. /n Esta es una canción en español de rock ar",
+            "gentino /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en esp",
+            "año de rock argentino. /n Esta es una canción en español de rock argentino. Es",
+            "ta  es una canción en español de r",
+            "oc",
+            "k  argentino.",
+            "/n"
         ],
         [
-            "nena te amo ta",
-            "nto, tanto, tant",
-            "o,/nque podr"
-        ],
-        [
-            "ía mat",
-            "arte ahora m",
-            "ismo/natarte a la "
-        ],
-        [
-            "cama,/ncon tus pr"
-        ],
-        [
-            "opias me",
-            "dias de nyl",
-            "on,/nla eternidaaa"
-        ],
-        [
-            "aaaaad, n",
-            "o nos dejar",
-            ",/nla eternid"
-        ],
-        [
-            "ad, no",
-            " nos dejar",
-            "/nla eternid"
-        ],
-        [
-            "ad, no",
-            " nos dejar",
-            "/nla eternid"
-        ],
-        [
-            "ad, no",
-            "s pertenece",
-            "rá.",
-            ""
+            "Es",
+            "t es una canción en español de rock argentino. /n Esta es una canción en español de rock arge",
+            "ntino /n Esta es una canción en español de rock argentino. Esta e",
+            "s una canción en español de rock argentino. /n Esta es una canción en español de r",
+            "o",
+            "c  argentino."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "1vRllrVEML4",
-            "delay": 0
+            "delay": 350.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

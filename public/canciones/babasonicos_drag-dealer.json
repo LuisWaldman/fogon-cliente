@@ -2,68 +2,520 @@
     "cancion": "drag-dealer",
     "banda": "babasonicos",
     "escala": "Bm",
-    "bpm": 60,
+    "bpm": 184,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bm",
                     "A",
-                    "G"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#7",
-                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "G",
-                    "F#7"
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
         ]
     },
     "letras": [
         [
-            "risis/nbajo el cielo "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "de Piscis/nmirenla a "
+            "Todo e",
+            "st  en cris",
+            "is ",
+            "bajo el cielo",
+            "d  pisc",
+            "i /n"
         ],
         [
-            "Isis/nll"
+            "Míren",
+            "l /n I",
+            "si",
+            "",
+            "/n"
         ],
         [
-            "orar/nPorque este "
+            "Ll",
+            "ora  l",
+            "a  adolesc",
+            "enci ",
+            "/n"
         ],
         [
-            "amor/nNo tiene"
+            "Tre",
+            "tulenci /n"
         ],
         [
-            " solución/nLo hecho, h"
+            "Per",
+            "d  i",
+            "noc",
+            "enc",
+            "/n"
         ],
         [
-            "echo está/ny no vuelve"
+            "M",
+            "írenl  ¿/n"
         ],
         [
-            " atrás/n"
+            "Po  qué est",
+            "á ",
+            "",
+            "¿No tienes al",
+            "g  que dec",
+            "irme /n"
         ],
-        []
+        [
+            "El vento, el ve",
+            "nto  el ve",
+            "nt  ¿/n"
+        ],
+        [
+            "N  vuelve",
+            "caer?",
+            "/n"
+        ],
+        [
+            "E",
+            "flautista",
+            "/n"
+        ],
+        [
+            "S  fue de",
+            "pist ",
+            "",
+            "los",
+            "tur",
+            "ist",
+            "piensan e",
+            "stafa /n"
+        ],
+        [
+            "A",
+            "nda ",
+            "retrasa ",
+            "/n"
+        ],
+        [
+            "Vienten",
+            "lanza",
+            "/n"
+        ],
+        [
+            "Buscan u",
+            "na  s",
+            "en/n"
+        ],
+        [
+            "N",
+            "o,  n",
+            "o  quiero ca",
+            "e /n ¿Por qué s",
+            "e  v",
+            "a ",
+            "¿Qué p",
+            "iensa  t",
+            "ú /n"
+        ],
+        [
+            "E",
+            "vento, el vento ¿/n"
+        ],
+        [
+            "N  v",
+            "ue",
+            "l  c",
+            "aer ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Po",
+            "r  qué se v",
+            "a ",
+            "¿No",
+            "vuelv  caer?",
+            "/n"
+        ],
+        [
+            "E",
+            "l  vento, e",
+            "l  vento, el vento",
+            "¿/n"
+        ],
+        [
+            "N  vuelve c",
+            "aer? ",
+            "¿/n"
+        ],
+        [
+            "N  vuelve",
+            "caer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "l vento, el vento /n ¿No vuelve caer? El vento, el",
+            "vent /n El vento, e",
+            "l  vento/n"
+        ],
+        [
+            "E",
+            "l  vento, e",
+            "l  v",
+            "e",
+            "n",
+            "t/n"
+        ],
+        [
+            "E",
+            "l",
+            "vento, el vento/n"
+        ],
+        [
+            "El vento,",
+            "e",
+            "l",
+            "vento"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "m4UxtW1jRNI",
-            "delay": 0
+            "delay": 4350.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

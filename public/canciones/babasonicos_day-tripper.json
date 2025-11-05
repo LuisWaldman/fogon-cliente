@@ -2,44 +2,130 @@
     "cancion": "day-tripper",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "Am",
-                    "C",
-                    "B7"
-                ]
-            },
-            {
-                "nombre": "parte2",
-                "acordes": [
-                    "Am",
-                    "C"
+                    "F#",
+                    "F#",
+                    "E",
+                    "B",
+                    "Em",
+                    "B",
+                    "Bm",
+                    "E",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
-            0,
-            0,
-            1
+            0
         ]
     },
     "letras": [
         [
-            "Day tripp",
-            "er   ",
-            "     Day",
-            " tripper",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Cuando el mediodia se retira",
+            "Sube, s",
+            "ube  sube",
+            ",  sube la mar",
+            "ea ",
+            "t",
+            "u  enel cenic,",
+            "le tripertes p",
+            "era/n"
+        ],
+        [
+            "Sube",
+            ",  sube, sube",
+            ",  sube la mare",
+            "a ",
+            "t",
+            "u  enel cenic,",
+            "le tripertes p",
+            "era /n"
+        ],
+        [
+            "Le t",
+            "rip",
+            "a ",
+            "",
+            "le t",
+            "ri",
+            "pa",
+            "/n"
+        ],
+        [
+            "S",
+            "ube  sube, sub",
+            "e  sube la marea",
+            "",
+            "",
+            "t  enel ceni",
+            "c  le tripertes pe",
+            "ra /n"
+        ],
+        [
+            "Sub",
+            "e  sube, s",
+            "ube,  sube la ma",
+            "rea ",
+            "",
+            "tu enel cen",
+            "ic  le tripertes p",
+            "era. ",
+            "/n"
+        ],
+        [
+            "Le t",
+            "ripa ",
+            "",
+            "le",
+            "tri",
+            "pa ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sub",
+            "e  sube, s",
+            "ube  sube la m",
+            "area /n"
+        ],
+        [
+            "S",
+            "ube  sube, s",
+            "ube  sube la m",
+            "area ",
+            "tu e",
+            "ne  cenic, le",
+            "t",
+            "r",
+            "i",
+            "p ",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -47,8 +133,10 @@
         {
             "tipo": "Youtube",
             "id": "kgL4rjNyNFQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

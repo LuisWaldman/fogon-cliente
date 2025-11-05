@@ -2,43 +2,147 @@
     "cancion": "cancion-llevame-lejos",
     "banda": "babasonicos",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#m",
-                    "Bm",
                     "F#m",
-                    "Bm",
-                    "E"
+                    "F#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E7",
-                    "A",
-                    "F#m"
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "E7",
+                    "E7",
                     "Bm",
-                    "E",
-                    "C#m",
-                    "F#m",
-                    "D",
-                    "E"
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
                     "F#m"
                 ]
             }
@@ -47,124 +151,130 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
-            0,
-            1,
-            2,
-            1,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
-        [],
         [
-            "Quiero tentar el abismo y a la m",
-            "uerte estafar/nvol"
-        ],
-        [
-            "vamos a cero, borrémoslo todo/ny feste"
-        ],
-        [
-            "jemos si mañana me despierto sobrio y fe",
-            "liz",
-            "/nPor eso "
-        ],
-        [
-            "canción llévame l",
-            "ejos/ndonde "
-        ],
-        [
-            "nadie se acuerde de mi",
-            "/nquiero "
-        ],
-        [
-            "ser el murmullo de alg",
-            "una ciudad/nque no "
-        ],
-        [
-            "sepa quien s",
-            "oy/n"
-        ],
-        [
-            "Yo daría hasta mi sueño por ver",
-            " la farsa fallar/nper"
-        ],
-        [
-            "damos el centro, quemémoslo todo/ny pedi"
-        ],
-        [
-            "remos que mañana nadie venga a hacerme cum",
-            "plir",
-            "/nPor eso "
-        ],
-        [
-            "canción llévame l",
-            "ejos/ndonde "
-        ],
-        [
-            "nadie se acuerde de m",
-            "i/nquiero "
-        ],
-        [
-            "ser el murmullo de alg",
-            "una ciudad/nque no "
-        ],
-        [
-            "sepa quien s",
-            "oy/n"
-        ],
-        [],
-        [
-            "Cambio todo por el don que hace a las m",
-            "ujeres reír/nel "
-        ],
-        [
-            "mundo de ellas, me hunde en sus huellas/ny ro"
-        ],
-        [
-            "guemos que mañana me convierta en otro infe",
-            "liz",
-            "/nPor eso "
-        ],
-        [
-            "canción llévame l",
-            "ejos/ndonde "
-        ],
-        [
-            "nadie se acuerde de m",
-            "i/nquiero "
-        ],
-        [
-            "ser el murmullo de alg",
-            "una ciudad/nque no "
-        ],
-        [
-            "sepa quien s",
-            "oy",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Canción llévame l",
-            "ejos/ndonde "
+            "Quiero t",
+            "enta  el abismo",
+            "la muer",
+            "t  estrazarán./n"
         ],
         [
-            "nadie se acuerde de m",
-            "i/nquiero "
+            "Volvamos",
+            "cero, borremo",
+            "sl  todo festejemos",
+            "mañana me despierto",
+            "solo feliz",
+            "/n"
         ],
         [
-            "ser el murmullo de alguna ciudad/nque no sepa quien soy"
+            "Por eso canció",
+            "n  llévame lejos",
+            ",  donde nadie s",
+            "e  acuerde de mí/n"
         ],
-        []
+        [
+            "Quiero ser el",
+            "murmull  de alguna c",
+            "iuda  que no se",
+            "p  quién soy./n"
+        ],
+        [
+            "Llorarí",
+            "a  hasta mi sueño p",
+            "or  ver la fa",
+            "rs  fallar./n"
+        ],
+        [
+            "Perdamos el",
+            "centro  quemémoslo t",
+            "odo  pediremos que",
+            "mañan  nadie venga",
+            "hacerme cumplir.",
+            "/n"
+        ],
+        [
+            "Por eso canción,",
+            "llévame lejos,",
+            "donde nadie s",
+            "e acuerde de mí. /n Q",
+            "uier  ser el m",
+            "urmull  de alguna ciud",
+            "a  que no sep",
+            "a  quién soy.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Muje  de todo c",
+            "orazó  que hace",
+            "las mujeres r",
+            "eír. /n"
+        ],
+        [
+            "El mundo de el",
+            "la  me hunden sus huell",
+            "a  rogamos que maña",
+            "n  me convierta en ot",
+            "r  infeliz.",
+            "/n"
+        ],
+        [
+            "Por eso canción,",
+            "llévame lejos,",
+            "donde nadie se acu",
+            "erd de mí. /n Q",
+            "uier  ser el murmu",
+            "ll  de alguna ciudad q",
+            "ue  no sepa q",
+            "uié  soy./n"
+        ],
+        [
+            "Canción, llév",
+            "am  lejos,",
+            "dond  nadie se acuer",
+            "d de mí. /n Q",
+            "uier  ser el murmu",
+            "ll  de alguna ciudad q",
+            "u  no sepa qu",
+            "ié  soy.",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3JKe4SCzoVA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

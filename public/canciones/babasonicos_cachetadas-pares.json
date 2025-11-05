@@ -2,48 +2,267 @@
     "cancion": "cachetadas-pares",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "Am",
+                    "G",
+                    "Em",
                     "Em",
                     "A",
-                    "C",
-                    "Em",
-                    "B7",
-                    "Em",
-                    "Bm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
                     "Am",
-                    "Em",
-                    "Bm",
                     "Am",
-                    "G",
-                    "Bm",
-                    "Em",
-                    "C"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Bm",
-                    "Em",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
                     "C",
                     "Cm",
-                    "D",
-                    "D7"
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "A",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Am"
                 ]
             }
         ],
@@ -51,149 +270,234 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
-            0,
-            1,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "Estas enferma de silló",
-            "n,/nNo aceptas otra cos"
-        ],
-        [
-            "a que la lluvia de rayos",
-            ",/nvitaminas y vicio"
-        ],
-        [
-            "s.",
-            "/n"
-        ],
-        [
-            "A fu",
-            "e ra,",
-            " ya llego la madrugada;/n"
-        ],
-        [
-            "A fu",
-            "e ra,",
-            " te viene a decir:/n"
-        ],
-        [
-            "Para",
-            " de sufr",
-            "ir,/n"
-        ],
-        [
-            "No escuches más ba",
-            "ladas,/n"
-        ],
-        [
-            "no h",
-            "ay más al",
-            "lá,/n"
-        ],
-        [
-            "Y la vida,",
-            " y la vida se nos vá..",
-            ".",
-            "/n"
-        ],
-        [
-            "Volvés de rehabilitaci",
-            "ón/nY vas plaza por pla"
-        ],
-        [
-            "za predicando/nEl cu"
-        ],
-        [
-            "ento de infeliz drogadicto",
-            ",",
-            "/n"
-        ],
-        [
-            "A fu",
-            "e ra,",
-            " una mano camarada,/n"
-        ],
-        [
-            "A fu",
-            "e ra,",
-            " te lo hará entender:/n"
-        ],
-        [
-            "Para",
-            " de sufr",
-            "ir,/n"
-        ],
-        [
-            "No escuches más ba",
-            "ladas,/n"
-        ],
-        [
-            "no h",
-            "ay más al",
-            "lá/n"
-        ],
-        [
-            "Y la vida,",
-            " y la vida se nos vá...",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Es otra crisis de placa",
-            "rd,/nNo encontrás nada"
-        ],
-        [
-            " al tono,/nQue combine ex"
-        ],
-        [
-            "acto con tu cara de angust",
-            "ia",
+            "Est",
+            "es un",
+            "a  canción e",
+            "n español de rock argentino. /n E",
+            "s  otra cos",
+            "que la llu",
+            "vi  de rayos",
+            "vitamina",
+            "vic",
+            "ios ",
+            "",
+            "",
             "/n"
         ],
         [
-            "A fu",
-            "e ra,",
-            " hay un par de cachetadas,/n"
-        ],
-        [
-            "A fu",
-            "e ra,",
-            " se reirán de tí,/n"
-        ],
-        [
-            "Para",
-            " de sufr",
-            "ir,/n"
-        ],
-        [
-            "No escuches más ba",
-            "ladas,/n"
-        ],
-        [
-            "no h",
-            "ay más al",
-            "lá,/n"
-        ],
-        [
-            "Y la vida,",
-            " y la vida se nos vá.",
-            "..",
+            "A",
+            "fuera,  ya",
+            "lleg  la madrugada",
             "/n"
         ],
-        []
+        [
+            "Af",
+            "uera  te viene",
+            "deci /n P",
+            "ara ",
+            "d  su",
+            "fri /n"
+        ],
+        [
+            "N",
+            "o  escuche",
+            "más bal",
+            "ad /n"
+        ],
+        [
+            "N",
+            "o  hay más",
+            "al",
+            "l ",
+            "",
+            "la vid",
+            "a ",
+            "la vida se n",
+            "o  va",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Volve  d",
+            "e  rehabilit",
+            "ació  v",
+            "a  plaza por pl",
+            "az /n Predi",
+            "cand  el cu",
+            "ent  de inf",
+            "eli  drogad",
+            "ict ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Afue",
+            "ra  una ma",
+            "n  camarada",
+            "/n"
+        ],
+        [
+            "Afuer",
+            "a  te lo harán t",
+            "ambo /n P",
+            "ara  d",
+            "e  suf",
+            "ri /n"
+        ],
+        [
+            "N",
+            "o  escuches m",
+            "á  bala",
+            "d /n"
+        ],
+        [
+            "N",
+            "o  hay más",
+            "all ",
+            "",
+            "",
+            "la vida",
+            "",
+            "la vida se",
+            "no  va",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es o",
+            "tr  crisis d",
+            "e placar /n N",
+            "o  encuentras nada e",
+            "l  tono q",
+            "u  combine e",
+            "xact  co",
+            "n  tu cara de",
+            "angusti ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Af",
+            "uera  ha",
+            "y  un par de cachuta",
+            "da /n"
+        ],
+        [
+            "A",
+            "fuera  se r",
+            "eirá  de ti/n"
+        ],
+        [
+            "Pa",
+            "r  de s",
+            "ufri",
+            "/n"
+        ],
+        [
+            "No",
+            "escuche  más ba",
+            "lad ",
+            "/n"
+        ],
+        [
+            "No hay",
+            "má  allá",
+            "",
+            "",
+            "la",
+            "vida ",
+            "la v",
+            "id  se nos v",
+            "a ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "fuera ",
+            "una mano camarada",
+            "",
+            "/n"
+        ],
+        [
+            "Afue",
+            "ra ",
+            "se reirán de ti /n No escuches más balada Afuer",
+            "a ",
+            "",
+            "",
+            "se reirán de ti",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Afuera, se reirán de ti"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "f3LYkWtvKGE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

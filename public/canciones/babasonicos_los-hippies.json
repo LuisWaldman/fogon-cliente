@@ -2,178 +2,387 @@
     "cancion": "los-hippies",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "G",
-                    "Am",
-                    "C"
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Dsus",
-                    "D",
-                    "G",
-                    "D",
+                    "Em",
                     "Am",
-                    "G"
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Am",
-                    "C",
-                    "G",
-                    "D",
                     "Am",
-                    "C",
+                    "Am",
                     "Am"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Em",
-                    "Dm",
-                    "Am",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            2,
-            0,
-            0,
             1,
             2,
             3,
-            1,
-            2
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
-        [],
         [
-            "Hemos escapado tantas v",
-            "eces,/n"
-        ],
-        [
-            "que nos costaría una vez ",
-            "mas?/n"
-        ],
-        [
-            "somos invisibles en la n",
-            "iebla/n"
-        ],
-        [
-            "que nuestro miedo puede disip",
-            "ar.",
             "",
-            "/n"
-        ],
-        [
-            "Por querer camb",
-            "iar el mundo hici",
-            "mos/n"
-        ],
-        [
-            "un inf",
-            "ieeeerno",
-            " en el paraís",
-            "o/n"
-        ],
-        [
-            "por creernos d",
-            "iferentes fuim",
-            "os/n"
-        ],
-        [
-            "socios en la fuga/n"
-        ],
-        [
-            "y el delito de querer cambiar./n"
-        ],
-        [],
-        [
-            "Siempre pasajeros de la hist",
-            "eria/n"
-        ],
-        [
-            "con altos peajes por viaj",
-            "ar/n"
-        ],
-        [
-            "nómades eternos, vida en cu",
-            "evas/n"
-        ],
-        [
-            "toda una familia margin",
-            "al.",
             "",
-            "/n"
-        ],
-        [
-            "Por querer camb",
-            "iar el mundo hici",
-            "mos/n"
-        ],
-        [
-            "un inf",
-            "ieeeerno",
-            " en el paraís",
-            "o/n"
-        ],
-        [
-            "por creernos d",
-            "iferentes fuim",
-            "os/n"
-        ],
-        [
-            "socios en la fuga/n"
-        ],
-        [
-            "y el delito de querer camb",
-            "iar, cambi",
-            "ar, cambia",
-            "r, cambiar",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "Por querer camb",
-            "iar el mundo hici",
-            "mos/n"
+            "Hemo  esca",
+            "pad  tantas v",
+            "eces /n"
         ],
         [
-            "un infieeeerno en el paraíso/npor creernos diferentes fuimos"
+            "Qu",
+            "e  nos cost",
+            "arí  una v",
+            "e  má",
+            "s /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Somos i",
+            "nvisible  en l",
+            "a  nieb",
+            "l /n Qu",
+            "e  nuestro mie",
+            "d  puede d",
+            "isipa ",
+            "/n"
+        ],
+        [
+            "Po  querer",
+            "cambiar el m",
+            "undo  si m",
+            "á ",
+            "/n"
+        ],
+        [
+            "Un i",
+            "nfiern  en e",
+            "l  para",
+            "ís /n Por cr",
+            "eerno  difer",
+            "ente  muy m",
+            "ás /n S",
+            "ocios  e",
+            "n  la fu",
+            "g  el de",
+            "lit  de",
+            "quere  camb",
+            "ia ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Si",
+            "empr  pasajer",
+            "o  de la hi",
+            "steri /n C",
+            "on",
+            "altos vi",
+            "aje  por v",
+            "iaj",
+            "a /n N",
+            "omade  et",
+            "erno  vida e",
+            "n  cuev",
+            "a /n To",
+            "d  una f",
+            "amili  ma",
+            "rfin/n"
+        ],
+        [
+            "Po",
+            "r  querer ca",
+            "mbia  el mundo",
+            "si m",
+            "á ",
+            "/n"
+        ],
+        [
+            "Un infi",
+            "erno  en el",
+            "paraís /n"
+        ],
+        [
+            "Por creer",
+            "no  diferent",
+            "e  muy m",
+            "á /n"
+        ],
+        [
+            "Socios en",
+            "l  fug",
+            "a  el deli",
+            "t  de quer",
+            "er  camb",
+            "ia ",
+            "",
+            "/n"
+        ],
+        [
+            "Cambiar, ca",
+            "mbiar ",
+            "",
+            "camb",
+            "ia /n Por quer",
+            "e  cambiar e",
+            "l  mundo si m",
+            "ás ",
+            "/n"
+        ],
+        [
+            "Un",
+            "infiern  en e",
+            "l  para",
+            "ís /n Por cr",
+            "eerno  difer",
+            "ente  muy m",
+            "ás /n"
+        ],
+        [
+            "Socio  e",
+            "n  la fu",
+            "g  el de",
+            "lit  d",
+            "e  querer cambiar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cambiar, cambiar, cambiar"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "wHG8VLWL5s0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

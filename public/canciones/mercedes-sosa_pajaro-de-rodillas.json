@@ -8,45 +8,162 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Gm",
-                    "D/F#",
-                    "Fm",
-                    "C/E"
+                    "Gm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Cm/Eb",
+                    "Cm/D",
+                    "Gm",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Cm/Eb",
-                    "Cm/D",
                     "Gm",
-                    "Gm/F",
-                    "Eb",
-                    "D",
-                    "D7"
+                    "Gm",
+                    "Gm",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Gm"
+                    "Cm/Eb",
+                    "Cm/Eb",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Ab"
+                    "Gm",
+                    "Gm",
+                    "Gm"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "G7",
+                    "G7",
                     "Cm",
-                    "F",
-                    "F/Eb",
+                    "Cm/Eb",
+                    "Cm/Eb",
+                    "Gm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Cm/Eb",
+                    "Cm/Eb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Fm",
+                    "Cm/Eb",
+                    "Cm/Eb Gm",
+                    "Gm",
+                    "D",
+                    "D",
+                    "Gm",
+                    "Gm",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Cm/Eb",
+                    "Cm/Eb",
+                    "Gm/F",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "Gm",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Cm",
+                    "F/Eb"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Cm/Eb",
+                    "Cm/D",
+                    "Gm/F",
+                    "Gm/F",
+                    "G7",
+                    "Gm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Cm/Eb",
+                    "Gm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "D"
                 ]
             }
@@ -54,188 +171,151 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
             3,
             4,
-            1,
-            4,
-            1,
-            2,
-            0,
-            1,
-            0,
-            1,
-            2,
-            3,
-            4,
-            1,
-            4,
-            1,
-            2
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Cantor que canta es p",
-            "jaro       p",
-            "echito de semilla",
-            "s/n"
+            "canta es pája",
+            "ro  bellit",
+            "o  de semillas,/n"
         ],
         [
-            "cantando en",
-            " la taberna ",
-            "          o c",
-            "on la voz enferma",
+            "Cantando en l",
+            "a  taberna co",
+            "la voz enferma no cant",
+            "a  de rodillas,/n"
+        ],
+        [
+            "Puedes ve",
+            "rl  agita",
+            "nd  las a",
+            "la  amarillas/n"
+        ],
+        [
+            "Con los o",
+            "jos  cerrados el",
+            "corazó  cansado mas n",
+            "unc  de rodillas,/n"
+        ],
+        [
+            "Mas",
+            "nunc  de rodillas,",
             "/n"
         ],
         [
-            "no canta de rodill",
-            "as/n"
+            "No puede el pajar",
+            "it  paradi",
+            "t  en su oriquilla,",
+            "en l",
+            "rama más alta",
+            "en la humilde gramill",
+            "ponerse de rodillas,/n"
         ],
         [
-            "Puedes verlo agit",
-            "ando            la",
-            "s alas amarillas",
+            "Hablo",
+            "de  pajar",
+            "it  de su",
+            "cancionc",
+            "il  que p",
+            "uede  hacer cierta,/n"
+        ],
+        [
+            "Que pueden hacer muerta per",
+            "o  no de rodi",
+            "llas ",
+            "pero no de rodillas.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "con los oj",
-            "os cerrado",
-            "s            y e",
-            "l corazón cansado",
+            "No hay",
+            "cant  verda",
+            "der  ni can",
+            "cio  tan sencil",
+            "la /n Que e",
+            "l  pájaro al cantarla pa",
+            "r  más entregarla la p",
+            "onga  de rodillas",
+            "",
+            "no defiendo al c",
+            "ant  sin",
+            "la pajarilla/n"
+        ],
+        [
+            "De p",
+            "apel  que hace un trino,",
+            "mañana un desanti",
+            "n  mas nunca de rodillas,/n"
+        ],
+        [
+            "Ma",
+            "s  nunca de rodillas,",
+            "e",
+            "l  que canta el t",
+            "irano  n",
+            "es pájaro ni e",
+            "s  nada,/n"
+        ],
+        [
+            "Es reptil del pant",
+            "an  cloqueando para e",
+            "l  agua de rodillas do",
+            "blada /n Can",
+            "to  que canta e",
+            "s  pájaro h",
+            "echit  de sem",
+            "illas /n"
+        ],
+        [
+            "Cantando en la tave",
+            "rn  con la voz en",
+            "ferm  no canta de r",
+            "odillas /n"
+        ],
+        [
+            "No ca",
+            "nt  de r",
+            "odilla",
+            "s ",
+            "",
             "/n"
         ],
         [
-            "mas nunca de rodilla",
-            "s            ma",
-            "s nunca de rodillas",
-            "/n"
-        ],
-        [
-            "No puede el pajari",
-            "to             pa",
-            "radito en s",
-            "u horquilla",
-            "/n"
-        ],
-        [
-            "o en la r",
-            "ama más al",
-            "ta            o e",
-            "n la humilde gramilla",
-            "/n"
-        ],
-        [
-            "ponerse de rodillas",
-            "/n"
-        ],
-        [
-            "Hablo del pajari",
-            "to               y ",
-            "de su ca",
-            "ncioncilla",
-            "/n"
-        ],
-        [
-            "que puede",
-            " nacer ciert",
-            "a           que",
-            " puede nacer muert",
-            "a/n"
-        ],
-        [
-            "pero no de rodill",
-            "as              pero no de rodil",
-            "las/n"
-        ],
-        [
-            "No hay canto verda",
-            "dero           ni",
-            " canción tan sencil",
-            "la/n"
-        ],
-        [
-            "que el pá",
-            "jaro al canta",
-            "rla        pa",
-            "ra más entregarla",
-            "/n"
-        ],
-        [
-            "la ponga de rodill",
-            "as/n"
-        ],
-        [
-            "Y no defiendo al ca",
-            "nto          si",
-            "no a la pajarilla",
-            "/n"
-        ],
-        [
-            "de papel q",
-            "ue hace un trin",
-            "o      ma",
-            "ana un desatino",
-            "/n"
-        ],
-        [
-            "mas nunca de rodill",
-            "as           ma",
-            "s nunca de rodillas",
-            "/n"
-        ],
-        [
-            "Y el que canta al ti",
-            "rano        no",
-            " es páj",
-            "aro ni es nada",
-            "/n"
-        ],
-        [
-            "es reptil",
-            " del pantan",
-            "o           clo",
-            "quendo para el amo",
-            "/n"
-        ],
-        [
-            "de rodilla dobla",
-            "da/n"
-        ],
-        [
-            "Cantor que canta es p",
-            "ájaro      pe",
-            "chito d",
-            "e semillas",
-            "/n"
-        ],
-        [
-            "cantando",
-            " en la tabern",
-            "a          o c",
-            "on la voz enferma",
-            "/n"
-        ],
-        [
-            "no canta de rodill",
-            "as            no canta de rodilla",
-            "s"
+            "No canta de rodillas."
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3dRt9Jj2Bnk",
-            "delay": 0
+            "delay": 23390.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_pajaro-de-rodillas.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_pajaro-de-rodillas.mp3",
+    "calidad": 1
 }

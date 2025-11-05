@@ -2,56 +2,157 @@
     "cancion": "esther-narcotica",
     "banda": "babasonicos",
     "escala": "A#m",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A#m",
-                    "C#",
-                    "D#"
+                    "D#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "A#m",
+                    "A#m",
+                    "A#m",
+                    "C#m",
+                    "C#m",
+                    "D#m",
+                    "D#m",
+                    "D#m",
+                    "D#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#",
                     "A#m",
                     "A#m",
-                    "C#m",
+                    "A#m",
                     "D#m",
-                    "F#",
-                    "A#m",
-                    "A#m"
+                    "D#m",
+                    "D#m",
+                    "D#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
                     "D#m",
                     "F#",
-                    "A#m",
-                    "G#",
-                    "D#",
                     "F#",
-                    "Fm"
+                    "F#",
+                    "F#",
+                    "F#"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#",
                     "A#m",
-                    "D#",
+                    "A#m",
+                    "A#m",
+                    "D#m",
+                    "D#m",
+                    "D#m",
+                    "D#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "D#m",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "F#",
                     "A#m",
-                    "D#",
+                    "A#m",
+                    "A#m",
+                    "A#m",
+                    "A#m",
                     "F#",
-                    "A#m"
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
                 ]
             }
         ],
@@ -59,72 +160,143 @@
             0,
             1,
             2,
-            0,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "Esther Narc",
-            "tica/n   Marc"
-        ],
-        [
-            "hita tu mandr",
-            "gora se hundi",
-            "/n   Ma"
-        ],
-        [
-            "ana de gl",
-            "oria/n   suic"
-        ],
-        [
-            "ida y elegant",
-            "e despertó",
-            "/n   "
-        ],
-        [
-            "Fragil bellad",
-            "ona/n   a "
-        ],
-        [
-            "la deriva p",
-            "or el Nilo va",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "   Derrama su vida y no le teme a na",
-            "da/n   Su juvent"
+            "E",
+            "sta  e",
+            "s  una canción",
+            "e",
+            "n español de rock argentino. /n Mañan",
+            "a  tu mandrag",
+            "or  se h",
+            "und",
+            "i /n Ma",
+            "ñan  d",
+            "e  g",
+            "loria ",
+            "suici",
+            "d  eleg",
+            "ant  desp",
+            "ert ",
+            "",
+            "/n"
         ],
         [
-            "ud encarna gotas del ",
-            "agua/n   Vi"
+            "Fragi  d",
+            "e  la don",
+            "",
+            "la deriva p",
+            "or  el m",
+            "ilob ",
+            "/n"
         ],
         [
-            "ejas las ro",
-            "cas/n   "
+            "Derrama s",
+            "u  vida no tem",
+            "e  na",
+            "d /n Su j",
+            "uventu  en",
+            "carg  got",
+            "a  del al",
+            "b ",
+            "",
+            "/n"
         ],
         [
-            "Inocente Esth",
-            "er nueva sos vo",
-            "s/n   "
+            "Temblor h",
+            "iponótic /n T",
+            "u  fuente d",
+            "anz  envuelta en",
+            "melad",
+            "o ",
+            "",
+            "/n"
         ],
         [
-            "Inocente Esth",
-            "er nueva sos vo",
-            "s/n   "
+            "Co",
+            "cktai  psicoactivo/n"
         ],
         [
-            "Inocente Esth",
-            "er nueva sos vo",
-            "s"
+            "Levit",
+            "femenin",
+            "su espl",
+            "endo ",
+            "/n"
+        ],
+        [
+            "A",
+            "gri  de a",
+            "tur",
+            "a /n Espin",
+            "a  en la le",
+            "ngu  mue",
+            "rdal",
+            "o /n"
+        ],
+        [
+            "Derrama su vi",
+            "d  no teme n",
+            "ad",
+            "a /n Su juven",
+            "tu  enca",
+            "rg  gotas del",
+            "alb",
+            "/n"
+        ],
+        [
+            "Viej",
+            "as  la",
+            "roc",
+            "a /n Ino",
+            "cente  t",
+            "e  muevas,",
+            "sos vos",
+            "/n"
+        ],
+        [
+            "Inocente",
+            "te muevas, s",
+            "o  vo/n"
+        ],
+        [
+            "Ino",
+            "cent",
+            "te muev",
+            "as  sos v",
+            "o ",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ZuW8xKTQAqY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,68 +2,268 @@
     "cancion": "ingrediente",
     "banda": "babasonicos",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F",
-                    "Am",
+                    "F",
                     "Gm",
-                    "Dm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "Gm",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Gm",
                     "C",
-                    "Dm",
+                    "Gm",
+                    "F",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Gm",
+                    "Gm",
+                    "Gm",
                     "F",
                     "Gm",
                     "C",
-                    "Dm"
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "Nunca había entendido l",
-            "a gravedad/nHasta "
+            "Nunca he e",
+            "ntendid  la grave",
+            "da  hasta que atraj",
+            "tu cuerpo al mío./n"
         ],
         [
-            "que algo atrajo tu cuerpo al mí",
-            "o",
+            "No discut",
+            "que haya ocurrido algo es",
+            "pecial  aunque se hice bie",
+            "n  que ser trampa ayud",
+            "a /n Imagino que",
+            "tu forma d",
+            "e  ser le sobr",
+            "a  e",
+            "l  ingrediente qu",
+            "mi forma de mar",
+            "l  falt",
+            "a /n"
+        ],
+        [
+            "Nunca s",
+            "up  al costo de chocar con l",
+            "a  verdad, pero sí sa",
+            "bí  que estrellar se d",
+            "uele /n Sé que a",
+            "lguna  piezas no encajar",
+            "á  jamás, te aseguro q",
+            "ue  mal puestas pueden fun",
+            "cionar /n Imagino",
+            "que tu forma d",
+            "e  ser le sob",
+            "r  e",
+            "l  ingrediente q",
+            "ue  mi forma de ma",
+            "r  le f",
+            "alta /n"
+        ],
+        [
+            "Imagi",
+            "n  que tu forma d",
+            "e  ser le sobra e",
+            "l  in",
+            "gredien",
+            "que mi forma d",
+            "e  mar le falta",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "No discuto que haya ocur",
-            "rido algo especial/nAunque"
+            "Mira que este es un h",
+            "éroe  ni siquiera yo me h",
+            "abía  dado cuenta de es",
+            "to /n U",
+            "n  rito es pecho tot",
+            "al  que es",
+            "tod  de ti, que u",
+            "n  amor recuerdo bien ti",
+            ". /n Me parecía q",
+            "u no hubiera pasado. /n Me p",
+            "arecí  que no hubiera pasado./n"
         ],
         [
-            " sé muy bien que hacer trampa",
-            " ayuda",
-            "/nImag"
+            "M",
+            "e  parecía que no hubiera p",
+            "asado /n Me pare",
+            "cí  que no hubiera pasado./n"
         ],
         [
-            "ino que a tu forma d",
-            "e ser le sobr",
-            "a/n"
+            "Me p",
+            "arecía  que no hubiera p",
+            "asado /n Me pare",
+            "cí  que",
+            "no hubiera pasado./n"
         ],
         [
-            "El ingred",
-            "iente que a mi forma de amar l",
-            "e falta",
+            "Me parecía qu",
+            "no hubiera pasado. /n Me parecía que no hubiera pasado. Me parecía que no hubiera pasado. Me parecía que no hubiera pasado./n"
+        ],
+        [
+            "Me parecía que n",
+            "o",
+            "hu",
+            "bie",
+            "r  pasado./n"
+        ],
+        [
+            "Me parecía que no hubiera pasado. /n Me pa",
+            "recí  q",
+            "ue  no hubi",
+            "er pasado. /n Me parecí",
+            "a que no hubiera pasado. /n Me parecía que no hubiera pasado. Me parecía q",
+            "u no hubiera pasado. /n Me parecía que no hubiera pasado. Me parecía que no hubiera pasado. Me parecía que n",
+            "o hubiera pasado. /n Me parecía que no hubiera pasado. Me parecía que no hubiera pasado. Me pare",
+            "cí  que no hubiera pasado.",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -71,8 +271,10 @@
         {
             "tipo": "Youtube",
             "id": "yZGSpFFwKo0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

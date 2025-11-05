@@ -2,123 +2,308 @@
     "cancion": "clamor",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "D",
-                    "Em",
-                    "A"
+                    "D",
+                    "D",
+                    "Am",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Gm",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
                     "D",
-                    "G",
-                    "Gm",
                     "D",
-                    "A"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
                     "Am",
-                    "Em",
-                    "A"
+                    "Am",
+                    "D",
+                    "D",
+                    "Gm",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
-            2,
-            2,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Aturdida por su falsa humildad",
+            "Ato",
+            "radid  por su f",
+            "als  hum",
+            "ilda",
+            "d  la tena",
+            "ment  su propia",
+            "estup",
+            "ide /n"
+        ],
+        [
+            "Lo q",
+            "u  hayas hecho",
+            "mal ",
+            "que lo atras n",
+            "o  combina c",
+            "o  tu pie",
+            "l /n"
+        ],
+        [
+            "Aler",
+            "ad  por secuenci",
+            "a  de fla",
+            "sh ",
+            "permane",
+            "nt  presión de",
+            "adelgaz",
+            "a /n"
+        ],
+        [
+            "La m",
+            "od  no t",
+            "e  espera",
+            "jamás  s",
+            "no es oír n",
+            "o  será.",
+            "/n"
+        ],
+        [
+            "Calza",
+            "esplendidas e",
+            "el show",
+            ", ",
+            "te emoc",
+            "iona  con el c",
+            "lamor ",
+            "/n"
+        ],
+        [
+            "Mañan g",
+            "rito  de tu",
+            "s  manos,",
+            "",
+            "cono",
+            "cerá  bien tu a",
+            "dicció ",
+            "los aplauso",
+            "s ",
+            "/n"
+        ],
+        [
+            "Abatida p",
+            "or  la angustia, pu",
+            "e  y",
+            "o  dist",
+            "int ",
+            "nada te q",
+            "ued  aún./n"
+        ],
+        [
+            "U",
+            "n  gran pl",
+            "acer  e",
+            "n  reali",
+            "da  la co",
+            "rtin  se c",
+            "erró ",
+            "/n"
+        ],
+        [
+            "Calzas esp",
+            "lendida  en el",
+            "sh",
+            "ow ",
+            "te emocion",
+            "a  con el clam",
+            "or /n"
+        ],
+        [
+            "M",
+            "aña  grit",
+            "o  de tus m",
+            "ano",
+            "s, ",
+            "conocerás",
+            "bien tu adic",
+            "ció  lo",
+            "s  aplausos.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Lo que hayas h",
-            "echo mal",
-            "/nQuedó a"
-        ],
-        [
-            "trás no com",
-            "bina con tu pi",
-            "el./n"
-        ],
-        [
-            "Alterada por secuencias de flas",
-            "h",
-            "/n"
-        ],
-        [
-            "La moda n",
-            "o te esp",
-            "era jam",
-            "s/nSi no es "
-        ],
-        [
-            "hoy no ser",
-            "á/n"
-        ],
-        [
-            "Causas espl",
-            "éndida en el sh",
-            "ow     ",
-            "  )/n"
-        ],
-        [
-            "Te emociona",
-            "s con el clamor ",
-            "       ",
-            " )/n"
-        ],
-        [
-            "Bañada en ",
-            "gritos de tus fa",
-            "ns     ",
-            "  )]]]]ESTRIBILLO[[[[/n"
-        ],
-        [
-            "Conocerás ",
-            "bien tu adicció",
-            "n         )/nA l"
-        ],
-        [
-            "os aplausos. ",
-            "                   )"
+            "Calzas esplendidas en el show, te emocionas con el clamor."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "8BWGD4WqAUs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

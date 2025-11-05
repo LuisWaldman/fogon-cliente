@@ -2,56 +2,144 @@
     "cancion": "chisme-de-zorro",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "Em7",
-                    "F#m",
-                    "Em7",
-                    "A7",
                     "D",
-                    "Em9",
+                    "Em7",
                     "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Em7",
-                    "A7",
-                    "Am",
-                    "C",
-                    "D",
-                    "F#7",
-                    "Am",
-                    "C"
+                    "F#m",
+                    "Em9",
+                    "Em9",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Am",
+                    "Am",
                     "D",
-                    "A",
-                    "Asus",
-                    "A",
-                    "Bm",
                     "D",
-                    "G"
+                    "F#7",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "D",
-                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "Em7",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "Em9",
+                    "F#m",
+                    "F#m",
+                    "Am",
                     "C",
-                    "G"
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "D",
+                    "D",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D"
                 ]
             }
         ],
@@ -59,142 +147,124 @@
             0,
             1,
             2,
-            2,
             3,
-            0,
-            1,
-            2,
-            2,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            " Y no sab",
-            "rás de mi/n hasta q"
-        ],
-        [
-            "ue algún zorro no largue la ",
-            "lengua",
-            "/n"
-        ],
-        [
-            " no tendrás noticias",
-            "/n mis caricias dife"
-        ],
-        [
-            "ridas no te afectar",
-            "án.",
-            "/n"
-        ],
-        [
-            "  Pon un precio a tus anh",
-            "elos/n y bus"
-        ],
-        [
-            "came hacia el final de la no",
-            "che/n por un río de esc"
-        ],
-        [
-            "otes con la lagrima cru",
-            "da/n compren"
-        ],
-        [
-            "diendo lo que nos falto deci",
-            "r.",
             "",
-            "/n"
-        ],
-        [
-            "  Cuando t",
-            "odo termine",
-            "/n y me "
-        ],
-        [
-            "digan que me tengo que ir",
             "",
             "",
             "/n"
         ],
         [
-            "  dejar",
-            "é una valija ah",
-            "í/n con el "
+            "n",
+            "o sabrás de mí /n H",
+            "asta  que algún zorro no",
+            "largu  la lengua/n"
         ],
         [
-            "hombre usado ade",
-            "ntro que hasta aye",
-            "r fuí.",
-            "/n"
+            "No tendrás",
+            "noticias  mis car",
+            "icia diferidas /n No t",
+            "e  afectará/n"
         ],
         [
-            " Y no sab",
-            "ré de ti/n hasta q"
+            "Pon un pre",
+            "ci  tus enemigos",
+            "búscame hacia el fi",
+            "na de la noche /n Por u",
+            "n  río de escotres con la",
+            "lágrima cruda/n"
         ],
         [
-            "ue los lobos no pesquen tu r",
-            "astro",
-            "/n"
+            "Comprendiendo lo que n",
+            "os  faltó decir/n"
         ],
         [
-            " entre las pesquisas,",
-            "/n las milicias adhe"
+            "Cuando t",
+            "odo  termine",
+            "me digan que m",
+            "e  tengo que ir/n"
         ],
         [
-            "ridas no te encontrar",
-            "án.",
-            "/n"
+            "Dej",
+            "ar una baldicay /n C",
+            "on  el hombro sa",
+            "ba  dentro que ayer fui",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "no sabré de t",
+            "i /n Hasta que los l",
+            "obos  no pesquen tu rastro/n"
         ],
         [
-            "  Quiebra la bolsa de d",
-            "udas/n y tu "
+            "Ent",
+            "r las pesquisas /n La",
+            "s  milicias aterrid",
+            "a  no te encon",
+            "trará /n Q",
+            "uiebr  la bolsa de l",
+            "uz  tu rast",
+            "r  reclamando la sombra/n"
         ],
         [
-            "rastro reclamando la so",
-            "mbra/n entre el furor de con"
+            "Entre el furor de conga",
+            "s /n Dentro las luces cu",
+            "ra /n Anuncian",
+            "d  que hemos llegado al f",
+            "i /n C",
+            "uand  todo termin",
+            "me di",
+            "ga  que me tengo que i",
+            "r /n"
         ],
         [
-            "gas/n dentro las luces pu"
+            "Dejaré una baldica/n"
         ],
         [
-            "lulan/n anun"
-        ],
-        [
-            "ciando que hemos llegado al fi",
-            "n.",
+            "Con el hombr",
+            "o  saba dentro que hasta ayer f",
+            "u ",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "  Cuando t",
-            "odo termine",
-            "/n y me "
-        ],
-        [
-            "digan que me tengo que ir",
+            "Dejaré una baldicay /n Con el furor d",
+            "e congas /n Anunciando que hemos llegado al fin Dejaré una baldicay Con el furor de congas",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "  dejar",
-            "é una valija ah",
-            "í/n con el "
-        ],
-        [
-            "hombre usado ade",
-            "ntro que hasta aye",
-            "r fuí.",
-            "/n"
-        ],
-        []
+            "Dejaré una baldicay"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "GbqAZpIT4NE",
-            "delay": 0
+            "delay": 10750.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

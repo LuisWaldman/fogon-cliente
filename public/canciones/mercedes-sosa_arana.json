@@ -8,63 +8,195 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
                     "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B7",
-                    "Em",
-                    "B7",
-                    "Em",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "G",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "C",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Le da duro el manco Arana/ncuando l"
+            "L",
+            "e está duro al /n Mancua",
+            "ran  cuando le sale un trab",
+            "aj  tan duro que par",
+            "ec  que no le faltara un br",
+            "az ",
+            "",
+            "/n"
         ],
         [
-            "e sale un trabajo/ny tan d"
+            "Lo perdió e",
+            "alguna zafra, en una mi",
+            "n pialando /n Con el hambre e",
+            "n  los talones, no lo perdi",
+            "saludando",
+            "",
+            "/n"
         ],
         [
-            "uro, que parece/n   "
+            "Y",
+            "o  lo veo de mañan",
+            "con sus dos brazos abiertos/n"
         ],
         [
-            "Si el descanso es cuesta arri",
-            "ba/n  "
+            "El izquierdo nuevo fres",
+            "co  el derecho un niño muer",
+            "t /n Si el descanso es cuesta arriba",
+            "desde hace años para el /n Ma",
+            "nc  como no ya parla enton",
+            "ces  co",
+            "n  mi capra el brazo un r",
+            "ato ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " desde hace años para el man",
-            "co,/n   "
+            "La mu",
+            "je del /n Manco sabe que s",
+            "u  amor suena guitarra h",
+            "ará  apulsa en el aire todo e",
+            "l  calor de su ama",
+            "d ",
+            "",
+            "/n"
         ],
         [
-            "como no yaparle entonces"
+            "Cuando un vino lo vo",
+            "ltea  me lo imagino soñ",
+            "and /n Que de pronto por las c",
+            "añas  su brazo se alza pel",
+            "and ",
+            "",
+            "/n"
+        ],
+        [
+            "Ay, ha",
+            "rá  así es la vida, la",
+            "muert si lo quiere /n Que de",
+            "cémel en harana, que por /n M",
+            "anc no se muere /n Si el des",
+            "cans  es cuesta arriba, desde ha",
+            "c años para el /n Manco como n",
+            "o  ya parla entonces, c",
+            "on  mi",
+            "capr  el brazo un rato",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "VAqtdUpe3ng",
-            "delay": 0
+            "delay": 5650.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_arana.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_arana.mp3",
+    "calidad": 1
 }

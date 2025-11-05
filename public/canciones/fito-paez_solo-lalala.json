@@ -6,126 +6,64 @@
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
-        "partes": [
-            {
-                "nombre": "parte1",
-                "acordes": [
-                    "G",
-                    "Am7",
-                    "G/B",
-                    "G/B",
-                    "C",
-                    "C#m"
-                ]
-            },
-            {
-                "nombre": "parte2",
-                "acordes": [
-                    "Em",
-                    "Em7",
-                    "G/D",
-                    "Cm",
-                    "Ebm",
-                    "Dsus4",
-                    "D",
-                    "Cm"
-                ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "Ebm",
-                    "Em7/9",
-                    "G/B",
-                    "F/A",
-                    "Em/G",
-                    "E9/F#",
-                    "E9/F#",
-                    "Em/G"
-                ]
-            },
-            {
-                "nombre": "parte4",
-                "acordes": [
-                    "G/B",
-                    "F/A",
-                    "Em/G",
-                    "E9/F#",
-                    "Em7/9",
-                    "Cm",
-                    "Ebm",
-                    "Em7/9"
-                ]
-            }
-        ],
-        "orden_partes": [
-            0,
-            1,
-            2,
-            3
-        ]
+        "partes": [],
+        "orden_partes": []
     },
     "letras": [
         [
-            "Lalala, l",
-            "alala, la",
+            "tres.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Lalala, l",
-            "alala, la",
-            "./n"
-        ],
-        [
-            "Larari, r",
-            "ereri, re",
-            "ra,/n"
-        ],
-        [
-            "larali, l",
-            "erala, la",
-            ".",
+            "La lil",
+            "e  la lil",
+            "e  la l",
+            "ile",
+            "la lile, la li",
+            "le  la lile, la lile.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "larali, l",
-            "era, la",
-            "./n"
-        ],
-        [
-            "Uh,  u",
-            "h,  uh",
-            ",   uh,",
-            "/n"
-        ],
-        [
-            "uh,    u",
-            "h./n"
-        ],
-        [
-            "Uh,  u",
-            "h,  uh",
-            ",   uh,",
-            "/n"
-        ],
-        [
-            "uh./n"
-        ],
-        [
-            "larali, l",
-            "era, la",
-            "."
+            "La lile",
+            ",  la lile, l",
+            "a  lile, la lile, la",
+            "li",
+            "l  la lile.",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QkQbcIOtWD4",
-            "delay": 0
+            "delay": 1750.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,169 +2,256 @@
     "cancion": "las-mantenidas",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
-                    "Am",
                     "C",
-                    "B7"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Em",
                     "C",
-                    "G",
-                    "D",
-                    "Am",
                     "C",
-                    "G",
-                    "D"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            1,
-            1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Que me pasa que me esta",
-            " pasando /n"
+            "No exist",
+            "e  fenómenos m",
+            "orales  son una interp",
+            "retació  moral de los fenómenos.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "aunque me sobren motivos no me est",
-            "oy quejando /n"
+            "Aunque m",
+            "e  sobren motivo",
+            "no me estoy q",
+            "uejand",
+            "o  la vida m",
+            "e  hizo mujer",
+            "alguien lo tie",
+            "n  que hacer./n"
         ],
         [
-            "la vida me hizo mujer y alguien l",
-            "o tiene que hacer /n"
+            "Aunque m",
+            "e  sobre el dinero v",
+            "o  echarme",
+            "perder,",
+            "nací par",
+            "a  manteni",
+            "d  no me g",
+            "ust  el esfuer",
+            "zo  nací para",
+            "mantenida s",
+            "i  sueñ",
+            "os  ¿/n"
         ],
         [
-            "aunque me sobre el dinero voy ",
-            "a echarme a perder /n"
+            "Qué  me p",
+            "asa /n ¿Qué m",
+            "e  está pasan",
+            "do /n"
         ],
         [
-            "nací para manten",
-            "ida y no ",
-            "me gusta el esfue",
-            "rzo /n"
+            "Aunque me so",
+            "bre  motivos no m",
+            "e  estoy quej",
+            "ando  l",
+            "a  vida me hi",
+            "z  mujer algui",
+            "e  lo tiene que",
+            "hacer /n A",
+            "unqu  me sobre e",
+            "l  dinero voy",
+            "echarme perde",
+            "r  na",
+            "c  para ma",
+            "ntenid ",
+            "no me gusta e",
+            "l  esfuerzo,",
+            "nací para mant",
+            "enid  sin s",
+            "ueños",
+            "¿Qu",
+            "é  me pasa",
+            "? ",
+            "¿Qué me pasa?",
+            "¿/n"
         ],
         [
-            "nací para manten",
-            "ida sin sue",
-            "os /n"
+            "Qu  me pasa?",
+            "¿Q",
+            "u  me pasa?/n"
         ],
         [
-            "nací para manten",
-            "ida y no ",
-            "me gusta el esfue",
-            "rzo /n"
+            "Na",
+            "c  para mant",
+            "enid  n",
+            "o  me gusta el e",
+            "sfuerzo  na",
+            "c  para manteni",
+            "d  sin s",
+            "ueños /n"
         ],
         [
-            "nací para manten",
-            "ida sin sue",
-            "os /n"
+            "Nací p",
+            "ara  mante",
+            "nid  no m",
+            "e  gusta el esf",
+            "uerzo  nací p",
+            "ara  mantenida",
+            "si  su",
+            "eños ",
+            "¿Qué m",
+            "e  pasa?/n"
         ],
         [
-            "Que me pasa que me esta",
-            " pasando /n"
-        ],
-        [
-            "aunque me sobren motivos no me est",
-            "oy quejando /n"
-        ],
-        [
-            "la vida me hizo mujer y alguien l",
-            "o tiene que hacer /n"
-        ],
-        [
-            "aunque me sobre el dinero voy ",
-            "a echarme a perder /n"
-        ],
-        [
-            "nací para manten",
-            "ida y no ",
-            "me gusta el esfue",
-            "rzo /n"
-        ],
-        [
-            "nací para manten",
-            "ida sin sue",
-            "os /n"
-        ],
-        [
-            "nací para manten",
-            "ida y no ",
-            "me gusta el esfue",
-            "rzo /n"
-        ],
-        [
-            "nací para manten",
-            "ida sin sue",
-            "os /n"
-        ],
-        [
-            "que me pasa? ",
-            "que me pasa",
-            "? que me pasa? que",
-            " me pasa?? /n"
-        ],
-        [
-            "nací para manten",
-            "ida y no ",
-            "me gusta el esfue",
-            "rzo /n"
-        ],
-        [
-            "nací para manten",
-            "ida sin sue",
-            "os /n"
-        ],
-        [
-            "nací para manten",
-            "ida y no ",
-            "me gusta el esfue",
-            "rzo /n"
-        ],
-        [
-            "nací para manten",
-            "ida sin sue",
-            "os /n"
-        ],
-        [
-            "que me pasa "
+            "Toma una",
+            "decisi",
+            "ó  que voy",
+            "tomarm",
+            "e  vacaciones de las vacaciones.",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Yc3XXNfMDxw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

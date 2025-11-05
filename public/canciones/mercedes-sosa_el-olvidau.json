@@ -8,83 +8,212 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "B7",
+                    "B7",
+                    "D",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A",
                     "E7",
-                    "A"
+                    "E7",
+                    "E7",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "F",
-                    "B7",
+                    "F",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "E7",
-                    "D"
+                    "A",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F",
-                    "G",
                     "C",
-                    "D"
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "F",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "A",
+                    "E7",
+                    "Dm",
+                    "F",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            0,
             2,
-            0
+            3,
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "De tu palo s",
-            "oy hijo de tu cu",
-            "ero/nsoy el olvi"
+            "hijo de t",
+            "u  cuero, soy el o",
+            "lvidad  del alcancía de",
+            "l  tiempo, el que s",
+            "e  quedó de pie poniéndote e",
+            "l  pecho.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "dao en la alcanc",
-            "ía del tiemp",
-            "o/n"
+            "La rob",
+            "rer  soy, silvest",
+            "r  de espuma, cuando el t",
+            "re  se va miro en las vías l",
+            "a  luna, pensando t",
+            "al  vez mi pueblo encuentre f",
+            "ortuna /n Ojalá duen",
+            "de  ojalá duende garrica.",
+            "",
+            "/n"
         ],
         [
-            "el que se qued",
-            "ó de pié pon",
-            "iendote el pech",
-            "o./n"
+            "Mi baf",
+            "e  hinchó cuando r",
+            "epartieron  de mí n",
+            "o  se acuerdan, dicen que nunca m",
+            "e vieron. /n Que no s",
+            "o  de aquí, que ya no tengo r",
+            "emedio  soy e",
+            "l  olvidado, el mism",
+            "o  que un día se pus",
+            "de pie tragando tierra",
+            "saliva /n Camino ha",
+            "ci  el sol para curar las h",
+            "eridas ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Soy el olvida",
-            "o, el mismo que un dí",
-            "a/nse puso de "
+            "Una herida",
+            "soy  buscando el",
+            "salario, maestros d",
+            "e  pie cuidando pichones b",
+            "lancos  que matu",
+            "rará  iluminando este p",
+            "ago. /n Es cierto, l",
+            "o  maestros queridos, par",
+            "a  ello va esto.",
+            "/n"
         ],
         [
-            "pie tragando t",
-            "ierra y saliv",
-            "a/ncamino hacia el sol para curar las heridas."
+            "Soy el que q",
+            "uedó  en medio de los",
+            "ranchos, guacho del fi",
+            "ao  amate guiso invent",
+            "ado /n Hambre rebel",
+            "ió  fueron creciendo en mis mano",
+            "s ",
+            "",
+            "",
+            "/n"
         ],
-        []
+        [
+            "No quiero de",
+            "más  quiero lo que e",
+            "s  mío, al mazo tram",
+            "pia  quiero torcerle un dest",
+            "ino /n Revántate, cagón",
+            ",  que aquí canta un argent",
+            "ino /n Soy el olvi",
+            "dado  el mismo que un d",
+            "ía  se puso de pi",
+            "tragando tierra sali",
+            "va /n Camino hacia el sol p",
+            "ara  curar las heridas."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Uv5iBBXl-H8",
-            "delay": 0
+            "delay": 14340.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_el-olvidau.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_el-olvidau.mp3",
+    "calidad": 1
 }
