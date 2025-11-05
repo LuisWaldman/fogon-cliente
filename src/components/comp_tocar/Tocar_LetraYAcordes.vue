@@ -16,9 +16,9 @@ const configuracionPantalla = pantalla.getConfiguracionPantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
 const renglones = ref([] as string[])
 const displayRef = ref(new Display(configuracionPantalla.columnas))
-const helper = HelperDisplayAcordesLatino.getInstance()
+const helperNombreAcordes = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
-helper.latino = appStore.perfil.CifradoLatino
+helperNombreAcordes.latino = appStore.perfil.CifradoLatino
 
 const emit = defineEmits(['clickCompas'])
 function clickCompas(compas: number) {
@@ -113,9 +113,6 @@ defineExpose({ Actualizar })
         :key="index"
         style="position: relative"
       >
-        <div class="resumen" v-if="configuracionPantalla.viendoResumenVerso">
-          {{ verso.resumenverso }}
-        </div>
         <div
           class="renglonDisplay"
           v-for="(renglon, index) in verso.renglonesDisplay"
@@ -146,7 +143,7 @@ defineExpose({ Actualizar })
             :class="{ en_compas: acorde.compas === compas }"
             class="acordediv"
           >
-            {{ helper.GetAcorde(acorde.contenido) }}
+            {{ helperNombreAcordes.GetAcorde(acorde.contenido) }}
           </div>
         </div>
       </div>
@@ -171,13 +168,9 @@ defineExpose({ Actualizar })
   font-size: var(--tamanio-letra);
   color: white;
   margin-bottom: var(--tamanio-acorde);
+  width: max-content;
+  min-width: 100%;
 }
-
-.en_compas {
-  background-color: rgb(114, 72, 72);
-  color: white;
-}
-
 .acordediv {
   font-size: var(--tamanio-acorde);
   margin: 1px;
@@ -186,6 +179,18 @@ defineExpose({ Actualizar })
   color: #a9a8f6;
   margin-right: 4px;
 }
+
+.en_compas {
+  color: rgb(121, 102, 233);
+}
+
+.acordediv.en_compas {
+  color: rgb(194, 6, 6) !important;
+  font-weight: bold;
+  border: 1px solid rgb(194, 6, 6);
+  background-color: white;
+}
+
 .renglonDisplay {
   z-index: 10;
 }

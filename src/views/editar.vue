@@ -9,8 +9,9 @@ import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 
-import { ref, watch, type Ref } from 'vue'
+import { onMounted, ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
+import type { VistaTocar } from '../modelo/configuracion'
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -19,30 +20,40 @@ function cambiarCompas(compas: number) {
   Actualizar()
 }
 const appStore = useAppStore()
-class vistaTocar {
-  viendo: string = 'inicio'
-  viendoacordes: boolean = true
-  verEditandoMetricaEs: boolean = true
-  verEditandoAcordes: boolean = true
-}
-const vista: Ref<vistaTocar> = ref(new vistaTocar())
-vista.value.viendo = localStorage.getItem('viendo_vista_editando') || 'inicio'
+
+onMounted(() => {
+  pantalla.setearEstilos()
+})
+
+const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
+const viendo: Ref<string> = ref(
+  localStorage.getItem('viendo_vista_editando') || 'inicio',
+)
 function GetStylePantallaEdit() {
+  let direccion: 'row' | 'row-reverse' | 'column' | 'column-reverse' = vista
+    .value.invertido
+    ? 'row-reverse'
+    : 'row'
+
+  if (vista.value.modo == 'simple') {
+    direccion = vista.value.invertido ? 'column' : 'column-reverse'
+  }
   return {
     width: pantalla.getAnchoPantalla() + 'px',
     height: pantalla.getAltoPantalla() + 'px',
+    'flex-direction': direccion,
   }
 }
 
 function estiloVistaPrincipal() {
-  if (vista.value.viendo == 'editartexto') {
+  if (viendo.value == 'editartexto') {
     return `width: 100%; height: 100%`
   }
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
 }
 
 function estiloVistaSecundaria() {
-  if (vista.value.viendo == 'editartexto') {
+  if (viendo.value == 'editartexto') {
     return `width: 0%; height: 100%`
   }
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
@@ -52,7 +63,7 @@ const ctrlSecuencia = ref()
 const ctrlTocarPentagrama = ref()
 
 function cambiarVista(nvista: string) {
-  vista.value.viendo = nvista
+  viendo.value = nvista
   localStorage.setItem('viendo_vista_editando', nvista)
 }
 
@@ -98,18 +109,18 @@ function cambioModo(index: number) {
     :origen="appStore.origenEditando"
     @editarPentagramas="cambiarVista('pentagramas')"
   ></cabecera>
-  <div style="display: flex" class="relativo" :style="GetStylePantallaEdit()">
+  <div style="display: flex" class="vistaEdit" :style="GetStylePantallaEdit()">
     <div style="width: 70%" :style="estiloVistaPrincipal()">
       <div
         style="position: relative; left: 96%"
         v-on:click="cambiarVista('editartexto')"
-        v-if="vista.viendo === 'inicio'"
+        v-if="viendo === 'inicio'"
       >
         🔄
       </div>
 
       <TocarPentagrama
-        v-if="vista.viendo === 'pentagramas'"
+        v-if="viendo === 'pentagramas'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         @clickCompas="cambiarCompas"
@@ -119,7 +130,7 @@ function cambioModo(index: number) {
       ></TocarPentagrama>
 
       <TocarLetraAcorde
-        v-if="vista.viendo != 'editartexto' && vista.viendo != 'pentagramas'"
+        v-if="viendo != 'editartexto' && viendo != 'pentagramas'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         ref="ctrlEditarTexto"
@@ -127,17 +138,17 @@ function cambioModo(index: number) {
       ></TocarLetraAcorde>
 
       <editartexto
-        v-if="vista.viendo == 'editartexto'"
+        v-if="viendo == 'editartexto'"
         @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
         @actualizoPentagrama="Actualizar"
         :compas="editandoCompas"
-        :ver-acordes="vista.verEditandoAcordes"
-        :ver-metrica-es="vista.verEditandoMetricaEs"
+        :ver-acordes="false"
+        :ver-metrica-es="false"
       ></editartexto>
     </div>
 
-    <div :style="estiloVistaSecundaria()" v-if="vista.viendo === 'pentagramas'">
+    <div :style="estiloVistaSecundaria()" v-if="viendo === 'pentagramas'">
       <editarpentagrama
         @cerrar="clickCerrarEditar"
         @actualizoPentagrama="Actualizar"
@@ -149,15 +160,15 @@ function cambioModo(index: number) {
         >
       </editarpentagrama>
     </div>
-    <div :style="estiloVistaSecundaria()" v-if="vista.viendo !== 'pentagramas'">
+    <div :style="estiloVistaSecundaria()" v-if="viendo !== 'pentagramas'">
       <editAcordes
-        v-if="vista.viendo == 'editaracordes'"
+        v-if="viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
       ></editAcordes>
 
       <consola-acordes
-        v-if="vista.viendo == 'editconsolaacordes'"
+        v-if="viendo == 'editconsolaacordes'"
         @cerrar="clickCerrarEditar"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
@@ -165,7 +176,7 @@ function cambioModo(index: number) {
       <div
         style="position: relative; left: 96%"
         v-on:click="cambiarVista('editconsolaacordes')"
-        v-if="vista.viendo === 'inicio'"
+        v-if="viendo === 'inicio'"
       >
         🔄
       </div>
@@ -174,10 +185,7 @@ function cambioModo(index: number) {
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         @cambioCompas="cambiarCompas"
-        v-if="
-          vista.viendo !== 'editconsolaacordes' &&
-          vista.viendo !== 'editaracordes'
-        "
+        v-if="viendo !== 'editconsolaacordes' && viendo !== 'editaracordes'"
       ></Secuencia>
     </div>
   </div>
@@ -187,8 +195,10 @@ function cambioModo(index: number) {
   color: #888;
 }
 
-.relativo {
+.vistaEdit {
   position: relative;
+  padding: 2px;
+  padding-left: 10px;
 }
 .dropdown-superior-derecha {
   position: absolute;

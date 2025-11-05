@@ -243,6 +243,7 @@ function toggleCifradoLatino() {
                 overflow-y: auto;
                 border: 1px solid;
                 padding: 10px;
+                flex-wrap: wrap;
                 margin-bottom: 10px;
               "
             >
@@ -392,8 +393,9 @@ function toggleCifradoLatino() {
 
 <style scoped>
 .divPerfil {
-  margin-left: 4%;
+  margin-left: 20%;
   display: flex;
+  width: 50%;
   flex-direction: column;
   font-size: x-large;
   gap: 1rem;
@@ -454,6 +456,16 @@ textarea {
 @media (max-width: 768px) {
   .divPerfil {
     font-size: small;
+    margin-left: 2%;
+    width: 95%;
+    overflow: hidden;
+    padding: 2px;
+  }
+  .ctrlImagen {
+    margin-right: 0rem;
+  }
+  .ctrlCabecera {
+    margin-right: 0rem;
   }
 }
 </style>

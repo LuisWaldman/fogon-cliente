@@ -78,30 +78,12 @@ export default class Aplicacion {
 
   setMediaVista(mediaVista: MediaVista): void {
     const appStore = useAppStore()
-    for (let i = 0; i < appStore.MediaVistas.length; i++) {
-      if (appStore.MediaVistas[i].tipo === mediaVista.tipo) {
-        const eraRector = appStore.MediaVistas[i].rector
-        appStore.MediaVistas[i] = mediaVista
-        appStore.MediaVistas[i].rector = eraRector
-        return
-      }
-    }
-    if (appStore.MediaVistas.length == 0) {
-      mediaVista.rector = true
-    }
-    appStore.MediaVistas.push(mediaVista)
+    appStore.MediaVistas = mediaVista
   }
 
-  quitarMediaVista(mediaVista: MediaVista): void {
+  quitarMediaVista(): void {
     const appStore = useAppStore()
-    for (let i = 0; i < appStore.MediaVistas.length; i++) {
-      if (appStore.MediaVistas[i].tipo === mediaVista.tipo) {
-        appStore.MediaVistas.splice(i, 1)
-        if (mediaVista.rector && appStore.MediaVistas.length > 0) {
-          appStore.MediaVistas[0].rector = true
-        }
-      }
-    }
+    appStore.MediaVistas = null
   }
 
   async ClickTocar(origen: OrigenCancion) {
@@ -125,6 +107,9 @@ export default class Aplicacion {
     this.reproductor.iniciarReproduccion()
   }
 
+  async sincronizar() {
+    await this.reproductor.sincronizar()
+  }
   next() {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''

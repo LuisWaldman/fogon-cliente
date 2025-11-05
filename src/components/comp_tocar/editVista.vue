@@ -18,8 +18,6 @@ const verAcordes = ref(
     configPantalla.value.muestra === 'letrayacordes',
 )
 const verPartitura = ref(configPantalla.value.muestra === 'partitura')
-
-// Solo Sincro controls
 const soloVideo = ref(configPantalla.value.reproduce === 'video')
 const soloMidi = ref(configPantalla.value.reproduce === 'midi')
 
@@ -63,6 +61,7 @@ function cancelarConfiguracionPantalla() {
   configPantalla.value.tamanioAcordeParte =
     exvistapantalla.value.tamanioAcordeParte
   configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
+  configPantalla.value.altoReproductor = exvistapantalla.value.altoReproductor
   pantalla.setearEstilos()
   emit('cerrar')
 }
@@ -154,49 +153,75 @@ function ClickSoloMidi() {
 <template>
   <div class="vistaedit">
     <div class="tituloeditSize">VISTA GENERAL</div>
+    <div class="config-row">
+      👁️‍🗨️ Viendo
+      <div
+        class="clickeableVista"
+        :class="{ seleccionada: verLetra }"
+        @click="ClickViendoLetra()"
+      >
+        📝 LETRA
+        <input
+          type="number"
+          min="8"
+          max="80"
+          v-model.number="configPantalla.tamanioLetra"
+          @click.stop
+        />
+        <span>px</span>
+      </div>
+      <div
+        class="clickeableVista"
+        :class="{ seleccionada: verAcordes }"
+        @click="ClickViendoAcordes()"
+      >
+        🎸 ACORDES
+        <input
+          type="number"
+          min="8"
+          max="80"
+          v-model.number="configPantalla.tamanioAcorde"
+          @click.stop
+        />
+        <span>px</span>
+      </div>
+      <div
+        class="clickeableVista"
+        :class="{ seleccionada: verPartitura }"
+        @click="ClickViendoPartitura()"
+      >
+        🎼 PARTITURA
+      </div>
+    </div>
     <div>
       <div class="config-row">
         ▶️ Toca
-        <span :class="{ seleccionada: soloVideo }" @click="ClickSoloVideo()"
-          >[VIDEO 🎬]</span
+        <div
+          class="clickeableVista"
+          :class="{ seleccionada: soloVideo }"
+          @click="ClickSoloVideo()"
         >
-        <span :class="{ seleccionada: soloMidi }" @click="ClickSoloMidi()"
-          >[MIDI 🎹]</span
+          VIDEO 🎬
+        </div>
+        <div
+          class="clickeableVista"
+          :class="{ seleccionada: soloMidi }"
+          @click="ClickSoloMidi()"
         >
-      </div>
-
-      <div class="config-row">
-        👁️‍🗨️ Vista
-        <span :class="{ seleccionada: verLetra }" @click="ClickViendoLetra()"
-          >[LETRA
-          <input
-            type="number"
-            min="8"
-            max="80"
-            v-model.number="configPantalla.tamanioLetra"
-            @click.stop
-          />
-          <span>px</span>]</span
-        >
-        <span
-          :class="{ seleccionada: verAcordes }"
-          @click="ClickViendoAcordes()"
-          >[ACORDES
-          <input
-            type="number"
-            min="8"
-            max="80"
-            v-model.number="configPantalla.tamanioAcorde"
-            @click.stop
-          />
-          <span>px</span>
-          ]</span
-        >
-        <span
-          :class="{ seleccionada: verPartitura }"
-          @click="ClickViendoPartitura()"
-          >[PARTITURA]</span
-        >
+          MIDI 🎹
+        </div>
+        <div v-if="soloMidi || soloVideo">
+          <div><span style="font-size: small">Alto Reproductor</span></div>
+          <div>
+            <input
+              type="range"
+              style="width: 100%"
+              min="3"
+              max="398"
+              v-model.number="configPantalla.altoReproductor"
+            />
+          </div>
+        </div>
       </div>
 
       <div
@@ -220,12 +245,12 @@ function ClickSoloMidi() {
           />
         </div>
       </div>
-
+      <!-- 
       <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
         <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
         <span>Modo poeta</span>
       </div>
-
+-->
       <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
         <span>Caracteres por renglon</span>
         <input
@@ -238,23 +263,36 @@ function ClickSoloMidi() {
       </div>
     </div>
     <div class="config-row">
-      <span>Columnas</span>
-      <span
+      <span>Vista</span>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: refModoVista === 'simple' }"
         @click="ClickSetModoVista('simple')"
-        >[Simple]</span
       >
-      <span
+        |
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: refModoVista === 'doble' }"
         @click="ClickSetModoVista('doble')"
-        >[Doble]</span
       >
-      <span
+        | |
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: refModoVista === 'triple' }"
         @click="ClickSetModoVista('triple')"
-        >[Triple]</span
       >
-      <input type="checkbox" v-model="configPantalla.invertido" /> ↩️
+        | | |
+      </div>
+      <div @click="configPantalla.invertido = !configPantalla.invertido">
+        <div
+          class="clickeableVista"
+          :class="{ seleccionada: configPantalla.invertido }"
+        >
+          ↩️
+        </div>
+      </div>
     </div>
     <div class="config-row">
       <span v-if="refModoVista !== 'simple'">% Ancho</span>
@@ -296,52 +334,64 @@ function ClickSoloMidi() {
     ></div>
 
     <div class="config-row">
-      <span>Muestra</span>
-      <span
+      <span>2da columna</span>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoSecuencia }"
         @click="
           configPantalla.viendoSecuencia = !configPantalla.viendoSecuencia
         "
-        >[Secuencia]</span
       >
-      <span
+        Secuencia
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoInstrucciones }"
         @click="
           configPantalla.viendoInstrucciones =
             !configPantalla.viendoInstrucciones
         "
-        >[Instrucciones]</span
       >
-      <span
+        Instrucciones
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoCuadrado }"
         @click="configPantalla.viendoCuadrado = !configPantalla.viendoCuadrado"
-        >[Cuadrado]</span
       >
+        Cuadrado
+      </div>
     </div>
     <div class="config-row" v-if="refModoVista === 'triple'">
-      <span>Muestra</span>
-      <span
+      <span>3ra columna</span>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoSecuencia3 }"
         @click="
           configPantalla.viendoSecuencia3 = !configPantalla.viendoSecuencia3
         "
-        >[Secuencia]</span
       >
-      <span
+        Secuencia
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoInstrucciones3 }"
         @click="
           configPantalla.viendoInstrucciones3 =
             !configPantalla.viendoInstrucciones3
         "
-        >[Instrucciones]</span
       >
-      <span
+        Instrucciones
+      </div>
+      <div
+        class="clickeableVista"
         :class="{ seleccionada: configPantalla.viendoCuadrado3 }"
         @click="
           configPantalla.viendoCuadrado3 = !configPantalla.viendoCuadrado3
         "
-        >[Cuadrado]</span
       >
+        Cuadrado
+      </div>
     </div>
     <div class="config-row">
       <span>Secuencia</span>
@@ -391,11 +441,33 @@ function ClickSoloMidi() {
   margin-right: 20px;
 }
 
+.clickeableVista {
+  cursor: pointer;
+  min-width: 60px;
+  padding: 3px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+.tituloeditSize {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(209, 169, 38);
+}
+.botonera {
+  margin-top: 15px;
+  text-align: right;
+}
 @media (max-width: 768px) {
   .vistaedit {
-    left: 10%;
+    left: 3%;
     top: 10%;
     font-size: small;
+  }
+  .botonera {
+    text-align: center;
   }
 }
 </style>

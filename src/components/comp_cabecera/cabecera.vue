@@ -3,8 +3,12 @@ import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
 import qr from './qr.vue'
 import iconofogon from './iconofogon.vue'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
+import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
+const helperNotas = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
+helperNotas.latino = appStore.perfil.CifradoLatino
 
 // Define el evento
 const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
@@ -87,9 +91,15 @@ function clickEditar() {
         FOGON.AR
       </span>
 
-      <div class="titulocancioncontrol" v-if="$route.path === '/tocar'">
-        {{ arreglartexto(appStore.cancion?.cancion) }} -
-        {{ arreglartexto(appStore.cancion?.banda) }}
+      <div v-if="$route.path === '/tocar'" class="divtitulocancioncontrol">
+        <div class="encabezado">
+          <emoticonOrigen :origen="appStore.origenCancion.origenUrl" />
+          {{ arreglartexto(appStore.cancion?.banda) }} -
+          <b>{{ helperNotas.GetAcorde(appStore.cancion?.escala) }}</b>
+        </div>
+        <div class="cancionNombre">
+          {{ arreglartexto(appStore.cancion?.cancion) }}
+        </div>
       </div>
 
       <span v-if="$route.path === '/configurar'" class="titulocancioncontrol">
@@ -316,6 +326,8 @@ function clickEditar() {
 .navbarFogon {
   width: 100%;
   display: flex;
+
+  z-index: 100;
   border: 1px solid;
   background-color: #353333 !important;
 }
@@ -327,7 +339,15 @@ function clickEditar() {
   border-bottom: 0px solid #a9a8f6;
   margin-bottom: 0px;
 }
+.dropdown-item {
+  z-index: 1000;
+}
 
+.cancionNombre {
+  font-size: 2.2rem;
+  margin: 0;
+  text-align: left;
+}
 @media (max-width: 768px) {
   .compartir_sesion {
     left: 10px;
