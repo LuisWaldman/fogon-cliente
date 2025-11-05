@@ -6,7 +6,6 @@ import type { Cancion } from '../../modelo/cancion/cancion'
 import { ref, onMounted, watch, onUnmounted } from 'vue'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
 
-
 const props = defineProps<{
   compas: number
   cancion: Cancion
