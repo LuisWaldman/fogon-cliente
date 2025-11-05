@@ -87,13 +87,11 @@ export class Reproductor {
   async sincronizar() {
     const appStore = useAppStore()
     const helper = HelperSincro.getInstance()
-    const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
-    const golpesxcompas = appStore.cancion?.compasCantidad || 4
 
-    // Renuevo Sincro
-    appStore.sesSincroCancion.duracionGolpe = duracionGolpe
-    appStore.sesSincroCancion.golpesxcompas = golpesxcompas
-
+    appStore.sesSincroCancion.duracionGolpe =
+      appStore.cancion?.duracionGolpe * 1000
+    appStore.sesSincroCancion.golpesxcompas =
+      appStore.cancion?.compasCantidad || 4
     if (appStore.MediaVistas === null) {
       const momento: number = helper.MomentoSincro()
       const est = helper.GetEstadoSincro(appStore.sesSincroCancion, momento)
@@ -102,10 +100,19 @@ export class Reproductor {
       appStore.golpeDelCompas = est.golpeEnCompas
       appStore.estadoReproduccion = est.estado
     } else {
-      const momentoInicio = await appStore.MediaVistas.Sincronizar()
-      appStore.sesSincroCancion.timeInicio = momentoInicio.timeInicio
-      appStore.sesSincroCancion.desdeCompas = momentoInicio.desdeCompas
-      //   appStore.sesSincroCancion.timeInicio = helper.GetTimeInicioDesdeMomento(momentoInicio, EstadoSincroCancion
+      if (appStore.MediaVistas) {
+        if (appStore.MediaVistas.GetTiempoDesdeInicio) {
+          const tiempoDesdeInicio = appStore.MediaVistas.GetTiempoDesdeInicio()
+          const momento: number =
+            tiempoDesdeInicio + appStore.sesSincroCancion.timeInicio!
+
+          const est = helper.GetEstadoSincro(appStore.sesSincroCancion, momento)
+          appStore.EstadoSincro = est
+          appStore.compas = est.compas
+          appStore.golpeDelCompas = est.golpeEnCompas
+          appStore.estadoReproduccion = est.estado
+        }
+      }
     }
   }
 }

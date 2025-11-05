@@ -5,6 +5,9 @@ import type { Cancion } from '../../modelo/cancion/cancion'
 
 import { ref, onMounted, watch, onUnmounted } from 'vue'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
+import { HelperSincro } from '../../modelo/sincro/HelperSincro'
+import type { SincroCancion } from '../../modelo/sincro/SincroCancion'
+import { a } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 
 const props = defineProps<{
   compas: number
@@ -46,6 +49,7 @@ watch(
   },
 )
 const mediaVista = new MediaVista('YOUTUBE')
+const helperSincro = new HelperSincro()
 
 mediaVista.setGetTiempoDesdeInicio(() => {
   const time = playerRef.value?.getCurrentTime()
@@ -64,8 +68,39 @@ mediaVista.setSetTiempoDesdeInicio((numero: number) => {
   playerRef.value?.seekTo(numero / 1000, true)
 })
 
+const appStore = useAppStore()
+async function syncMedia(): Promise<SincroCancion> {
+  const time = playerRef.value?.getCurrentTime()
+  const momento = time ? time * 1000 - CalcularDelay() : 0 // Convert to milliseconds
+  appStore.sesSincroCancion.duracionGolpe =
+    appStore.cancion?.duracionGolpe * 1000
+  appStore.sesSincroCancion.golpesxcompas =
+    appStore.cancion?.compasCantidad || 4
+  console.log('Sync Media Youtube - Momento:', momento)
+  appStore.compas = Math.floor(
+    momento /
+      (appStore.cancion.duracionCompas * appStore.cancion.compasCantidad),
+  )
+  appStore.estadoReproduccion = momento > 0 ? 'Reproduciendo' : 'iniciando'
+  appStore.golpeDelCompas = appStore.EstadoSincro.golpeEnCompas
+  console.log(
+    'Sync Media Youtube - EstadoSincro:',
+    appStore.compas,
+    appStore.estado,
+  )
+
+  const toRet = helperSincro.GetSincro(
+    appStore.EstadoSincro,
+    momento,
+    appStore.cancion.duracionCompas,
+    appStore.cancion.compasCantidad,
+    0,
+  )
+  //appStore.estadoReproduccion = appStore.EstadoSincro.estado
+  return toRet
+}
+
 onUnmounted(() => {
-  const appStore = useAppStore()
   appStore.aplicacion.quitarMediaVista()
 })
 

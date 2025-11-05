@@ -230,50 +230,16 @@ export class HelperSincro {
     let recuperadoDesdeCompas: number
 
     if (estado.estado === 'Reproduciendo') {
-      // Forward:
-      // diferencia = Diferencia(timeInicio, momento) - this is <= 0
-      // diferencia *= -1 - now it's >= 0
-      // golpe = Math.floor(diferencia / duracionGolpe)
-      // compas = desdeCompas + Math.floor(golpe / golpesxcompas)
-      // golpeDelCompas = golpe % golpesxcompas
-      // deltaGolpe = duracionGolpe - (diferencia - golpe * duracionGolpe)
-
-      // Reverse:
-      // From compas, desdeCompas, golpeEnCompas, we can find golpe:
-      // compas = desdeCompas + Math.floor(golpe / golpesxcompas)
-      // golpeDelCompas = golpe % golpesxcompas
-      // So: golpe = (compas - desdeCompas) * golpesxcompas + golpeDelCompas
       const golpeFromCompas =
         (estado.compas - desdeCompas) * golpesxcompas + estado.golpeEnCompas
 
-      // From deltaGolpe, we find diferencia:
-      // deltaGolpe = duracionGolpe - (diferencia - golpeFromCompas * duracionGolpe)
-      // diferencia - golpeFromCompas * duracionGolpe = duracionGolpe - deltaGolpe
-      // diferencia = golpeFromCompas * duracionGolpe + duracionGolpe - deltaGolpe
       const diferencia =
         golpeFromCompas * duracionGolpe + duracionGolpe - estado.delay
-
-      // Now diferencia came from: diferencia *= -1 (so original was negative)
-      // Diferencia(timeInicio, momento) = -diferencia
-      // timeInicio - momento = -diferencia (based on how Diferencia works when not crossing hour boundary)
       timeInicio = momento - diferencia
       recuperadoDesdeCompas = desdeCompas
     } else {
-      // Forward: Iniciando state
-      // diferencia = Diferencia(timeInicio, momento) - this is > 0
-      // golpe = Math.floor(diferencia / duracionGolpe)
-      // deltaGolpe = diferencia - golpe * duracionGolpe
-      // golpeDelCompas = golpesxcompas - (golpe + 1)
-
-      // Reverse: find golpe from golpeDelCompas
       const golpe = golpesxcompas - (estado.golpeEnCompas + 1)
-
-      // From deltaGolpe find diferencia:
-      // deltaGolpe = diferencia - golpe * duracionGolpe
       const diferencia = golpe * duracionGolpe + estado.delay
-
-      // Diferencia(timeInicio, momento) = diferencia
-      // timeInicio - momento = diferencia
       timeInicio = momento + diferencia
       recuperadoDesdeCompas = desdeCompas
     }

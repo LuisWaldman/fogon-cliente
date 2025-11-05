@@ -58,7 +58,6 @@ refUltimasCanciones.value = ultimasCanciones.canciones
 const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
 const appStore = useAppStore()
-const CancionesLocalstorage = ref<ItemIndiceCancion[]>([])
 
 function clickTocar(cancion: OrigenCancion) {
   appStore.aplicacion.ClickTocar(cancion)
