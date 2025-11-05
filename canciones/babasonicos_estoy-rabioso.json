@@ -2,127 +2,243 @@
     "cancion": "estoy-rabioso",
     "banda": "babasonicos",
     "escala": "E5",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E5",
                     "F#5",
-                    "B5"
+                    "B5",
+                    "B5",
+                    "A5",
+                    "F#5",
+                    "B5",
+                    "B5",
+                    "A5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C#5",
-                    "A5",
-                    "G#5"
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A5",
                     "F#5",
-                    "E5",
                     "F#5",
                     "B5",
-                    "E5",
+                    "B5",
                     "F#5",
-                    "E5"
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B5"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
-            0,
-            1,
-            0,
-            2
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "  To",
-            "do bien con el diablo, sólo somos ami",
-            "gos/n  es que and"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uve negocia",
-            "ndo algo con é",
-            "l/n"
+            "Todo bien con el diablo, solo somos",
+            "amigos /n Es qu",
+            "anduve negociando algo c",
+            "on  él,",
+            "com  del intercambio sal",
+            "í  vivo, me la voy fe",
+            "steja  hasta que me alcance l",
+            "a  ley. l",
+            "a  mierda lo que piensen de",
+            "nosotros  l",
+            "a  mierda lo que digan los",
+            "demás /n"
         ],
         [
-            "  y ",
-            "como del intercambio salí vi",
-            "vo/n  me la voy a festej"
+            "Vo  escribirte entre los ojos",
+            "de la piscina, un futuro cojo,",
+            "no vuelvo traer porqu",
+            "estoy rabioso. /n V",
+            "o  escribirte entre los ojos",
+            "d  la piscina, un futuro rojo, n",
+            "o  vuelvo traer porqu",
+            "e  estoy rabioso.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ar hasta que me alcancé la l",
-            "ey/n"
+            "Q",
+            "uier  que mi delirio sea bien a",
+            "ceptado  teng",
+            "planes parecido una v",
+            "isión. /n De c",
+            "ualquier  que me llame impro",
+            "visado  solo reto estar p",
+            "arad  en mis zapatos sin",
+            "temblar  l",
+            "a  mierda lo que piensen de n",
+            "osotros  l",
+            "mierda lo que digan los d",
+            "emás /n"
         ],
         [
-            "  A ",
-            "la mierda lo que piensen de nosot",
-            "ros/n"
+            "Voy escribirte entre los ojo",
+            "s  de la piscina, un futuro cojo, n",
+            "o  vuelvo traer porqu",
+            "estoy rabioso. /n Vo",
+            "y  escribirte entre los ojos",
+            "d  la piscina, un futuro rojo, n",
+            "o  vuelvo traer porqu",
+            "estoy rabioso.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "  a ",
-            "la mierda lo que digan los demá",
-            "s/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-            "  Qu",
-            "iero que mi delirio sea bien aceptad",
-            "o/n  tengo pl"
+            "V",
+            "oy  escribirte entre los ojos",
+            "d  la piscina, un futuro cojo,",
+            "n  vuelvo traer porqu",
+            "estoy rabioso. /n V",
+            "oy  escribirte entre los ojos",
+            "d  la piscina, un futuro rojo,",
+            "no vuelvo traer porq",
+            "u  estoy rabioso./n"
         ],
         [
-            "anes y persi",
-            "go una visió",
-            "n/n"
+            "Vo",
+            "y  escribirte entre los ojos de la piscina, un futuro rojo, no vuelvo traer porque estoy rabioso.",
+            "/n"
         ],
         [
-            "  y ",
-            "a cualquiera que me llame improvisado/n  yo lo reto a estar parado en mis zapatos sin temblar"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Subtítulos realizados por la comunidad de /n Amara .org"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "nfehcjdXNsw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,25 +2,53 @@
     "cancion": "malvenido",
     "banda": "los-caballeros-de-la-quema",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
                     "F",
                     "C",
-                    "F"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Bb",
-                    "F",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
@@ -30,96 +58,493 @@
                     "C",
                     "C",
                     "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "Bb",
                     "Bb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "Bb",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            1,
-            1,
             1,
             2,
-            0,
-            0,
-            0,
-            0
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
         [
-            "Malvenido al tren de los que s",
-            "iempre damos vueltas/n"
+            "Los cieg",
+            "os ven, los cojos an",
+            "dan, los leprosos ",
+            "son limpiados ",
+            "los muertos resucitan /n"
         ],
         [
-            "por lugares donde nunca sobra lo",
-            " que nos falta/n"
-        ],
-        [
-            "y no es por ser agua fiestas pero ac",
-            "a nadie se la monta/n"
-        ],
-        [
-            "con viento a favor apenas salvam",
-            "os la ropa./n"
-        ],
-        [
-            "Malvenid",
-            "o al rincó",
-            "n/n"
-        ],
-        [
-            "de los que n",
-            "i la ven pasa",
-            "r/n"
-        ],
-        [
-            "mala lec",
-            "he y salud",
-            " y nada de lag",
-            "rimas",
-            "/nlas lagrimas "
-        ],
-        [
-            "pasp",
-            "an pa",
-            "n pan",
-            "nn",
+            "No, ",
+            "no, no, m",
+            "avenito, ",
+            "no, ma",
+            "venito, ca",
+            "mpeón este ceme",
+            "nterio. \n\nAtadura ma",
+            "ligna, cadena satánic ",
+            "en el nombre de \n\nJesu",
+            "cristo, no, no, ",
+            "no, mavenito, ",
+            "no, m",
+            "avenito, cam",
+            "peón extranjer",
+            "o. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "No, no, no",
-            ", malvenido",
-            " noooooo",
-            "/nmalveni"
+            "Mal ",
+            "venido al tr",
+            "en de los que ",
+            "siempre damos vueltas /n"
         ],
         [
-            "do campeó",
-            "n a este cement",
-            "erio",
+            "Por l",
+            "ugares donde n",
+            "unca sobra lo que ",
+            "nos falta /n"
+        ],
+        [
+            "No es por ",
+            "ceracuafiesta ",
+            "pero acá nadie ",
+            "se la monta /n"
+        ],
+        [
+            "Comiento ",
+            "favor, apen",
+            "as salvamos la ",
+            "rop /n"
+        ],
+        [
+            "Mal v",
+            "enido al r",
+            "inc",
+            "ón de los que ",
+            "ni la ven p",
+            "asar /n"
+        ],
+        [
+            "Mala l",
+            "eche salu",
+            "d nada de ",
+            "lágrima",
+            "s, las lágrimas, ",
+            "pa, pa, pa, pa /n"
+        ],
+        [
+            "No, ",
+            "no, no, ",
+            "mavenito, ",
+            "no, ma",
+            "venit",
+            "campeón es",
+            "te cemente",
+            "rio /n"
+        ],
+        [
+            "No, ",
+            "no, no, ",
+            "mavenito,  ",
+            "no, m",
+            "avenito, c",
+            "ampeón este a",
+            "gujero ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "vos que cre",
+            "ías en cree",
+            "r en cada libr",
+            "ito ",
+            "que te cuida",
+            "bas la sabiola c",
+            "omo buena vez c",
+            "ruz \n\nAhora a",
+            "ndas gamb",
+            "as entre tanto s",
+            "alame buffet /n"
+        ],
+        [
+            "Que le ",
+            "bachache  el ",
+            "que no se rifa un p",
+            "oco no tome /n"
+        ],
+        [
+            "Mal ",
+            "venido al ",
+            "lugar,  ",
+            "t",
+            "anto sueño es i",
+            "nflamar /n"
+        ],
+        [
+            "Ma",
+            "la leche sa",
+            "lud nada ",
+            "de lág",
+            "rimas, las lágri",
+            "mas, pa, pa, pa /n"
+        ],
+        [
+            "No, ",
+            "no, ",
+            "no, mave",
+            "nito, no, ",
+            "maven",
+            "ito, campe",
+            "ón este cementeri ",
             "/n"
         ],
         [
-            "No, no, no",
-            ", malvenido",
-            " noooooo",
-            "/nmalveni"
+            "No, ",
+            "no, no, ",
+            "mavenito, ",
+            "no, ",
+            "mavenito ",
+            "campeón ",
+            "este agujero ",
+            "/n"
         ],
         [
-            "do campe",
-            "n de este agujer",
-            "o.",
-            ""
+            "To",
+            "dos te d",
+            "icen remar ",
+            "rem",
+            "ar ",
+            "nadie te ",
+            "enseña la o",
+            "fraya /n"
+        ],
+        [
+            "Sie",
+            "mpre listos ",
+            "para ca",
+            "becear ",
+            "nunc",
+            "a nos co",
+            "bran un p",
+            "uto jornal /n"
+        ],
+        [
+            "No, ",
+            "no, no, m",
+            "avenito, ",
+            "no, mave",
+            "nito, ca",
+            "mpeón este cemen",
+            "terio /n"
+        ],
+        [
+            "No, ",
+            "no, ",
+            "no, maven",
+            "ito, no, ",
+            "maven",
+            "ito, campeó",
+            "n este aguje",
+            "ro ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No, no, no, ",
+            "maven",
+            "ito, no, ",
+            "maveni",
+            "to, ca",
+            "mpeó",
+            "",
+            "este ",
+            "a",
+            "g",
+            "u",
+            "j",
+            "e",
+            "r",
+            "o ¿/n"
+        ],
+        [
+            "Por qué el mundo est ",
+            "sufriendo? "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "1f4KhnH1IYc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

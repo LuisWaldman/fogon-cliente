@@ -2,65 +2,238 @@
     "cancion": "oxidado",
     "banda": "los-caballeros-de-la-quema",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
                     "G",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "D",
-                    "G",
-                    "A",
-                    "Bm",
                     "F#m",
-                    "Bm"
+                    "Bm",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#m",
                     "Bm",
                     "F#m",
                     "G",
-                    "A",
-                    "D",
-                    "Em",
                     "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "G",
                     "D",
+                    "Em",
+                    "Em",
+                    "G",
                     "G",
                     "F#m",
-                    "Em",
-                    "A",
-                    "G",
+                    "F#m",
+                    "F#m",
                     "D",
-                    "Em"
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "G",
-                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "F#m",
+                    "G",
                     "G",
                     "D",
-                    "A"
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "F#m",
+                    "F#m",
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "F#m",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
@@ -69,73 +242,213 @@
             1,
             2,
             3,
-            0,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
-        [],
         [
-            "Oxida",
-            "do y ",
-            "en la catrer",
-            "a, gas",
-            "tando/nA cue"
-        ],
-        [
-            "nta un vuelto que no",
-            " va a volver/n"
-        ],
-        [
-            "Más ga",
-            "rúa, más te ex",
-            "traño arrodi",
-            "llada en mi",
-            " boca/nNunca juego b"
-        ],
-        [
-            "ien esta histo",
-            "ria del tipo buen",
-            " perdedor/n"
-        ],
-        [
-            "Vuelvo a mi cucha renguean",
-            "do/nEstas ganas borra"
-        ],
-        [
-            "chas de volverte a ver",
+            "¡\nObsidado! ¡\nToma humo! ",
             "/n"
         ],
         [
-            "No es que no quiera ladrar",
-            "te/nLo que no me a"
+            "Ob",
+            "sidado en ",
+            "la caprera /n"
         ],
         [
-            "nda sobrando es la f",
-            "e/n"
+            "Gastan",
+            "do cuentas un vue",
+            "lto que no va volver ",
+            "",
+            "si f",
+            "uera más fácil m",
+            "aquillar es",
+            "te otoño en los ",
+            "besos si ",
+            "quedaran cartas por ",
+            "mentir ",
+            "en este póker de ",
+            "ciegos /n"
         ],
         [
-            "Y no es que no quiera tocar",
-            "te/nAndo volte"
+            "Más garúa, ",
+            "más te extraño, ",
+            "arrodillada ",
+            "en mi boca /n"
         ],
         [
-            "ado...  nena",
-            "/nSe"
+            "Nunca  juego bien e",
+            "sta historia de ",
+            "tipo buen p",
+            "erdedor /n"
         ],
         [
-            " va ",
-            "desi",
-            "nfla",
-            "ndo ",
-            "nuestra milonga"
+            "Vuelvo ",
+            "mi cuchara engando e",
+            "stas ganas borracha",
+            "s de volverte ",
+            "ver \n\nNo es que ",
+            "no quiera ladrart",
+            "e, lo que no me an",
+            "da sobrando es la ",
+            "fe vuelv",
+            "o mi cuchara engando ",
+            "estas  ganas borrac",
+            "has de volverte ",
+            "ver no es ",
+            "que no quiera cuidart",
+            "e, ando bloquead ",
+            "no puedo hacer ",
+            "bien  \n\nNo es ",
+            "que no quiera toca",
+            "rte, ando bl",
+            "oqueado, ",
+            "nena  \n\nSh",
+            "ut up, shut ",
+            "up, ",
+            "shut up, shut up /n"
+        ],
+        [
+            "Shu",
+            "t up, shut up, s",
+            "hut up, shut up, ",
+            "shut up /n"
+        ],
+        [
+            "Shu ",
+            "up, shut ",
+            "up, ",
+            "shut up, shut ",
+            "up, ",
+            "shut up /n"
+        ],
+        [
+            "Shut ",
+            "up, shut up ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Se va des",
+            "inflando ",
+            "nuestra  mi",
+            "longa /n"
+        ],
+        [
+            "Nunca pu",
+            "dimos bailar sin pi",
+            "sarnos los pi",
+            "es /n"
+        ],
+        [
+            "Ajunta los ",
+            "puchos las c",
+            "opas, ba",
+            "jar las persianas /n"
+        ],
+        [
+            "Se acaba la ",
+            "fiesta es tem",
+            "prano para ",
+            "pedir  revancha /n"
+        ],
+        [
+            "Más c",
+            "anúa, más te ",
+            "extraño, arrod",
+            "illada en mi ",
+            "boca  \n\nNunca jueg",
+            "o bien esta his",
+            "toria de tipo ",
+            "puenter  de ",
+            "dos \n\nVu",
+            "elvo mi cuchara e",
+            "ngando estas ganas b",
+            "orrachas de volv",
+            "erte ver ",
+            "no es que no quiera l",
+            "adrarte, lo que ",
+            "no me anda sobrando ",
+            "es la fe ",
+            "vuelvo mi cuchara ",
+            "engando  estas ganas b",
+            "orrachas de volver",
+            "te ver ",
+            "no es que no quiera cu",
+            "idarte, ando ",
+            "bloqueado  no puedo h",
+            "acer bien ",
+            "no es que no quiera t",
+            "ocarte, ando ",
+            "sin mimos, ",
+            "nena \n\nS",
+            "hut up, sh",
+            "ut up \n\nS",
+            "hut up, shut up, s",
+            "hut up \n\nS",
+            "hut up, shut up, ",
+            "shut up, shut up, s",
+            "hut up /n"
+        ],
+        [
+            "S",
+            "hut up, sh",
+            "ut up \n\nS",
+            "hut up, shut up, shu ",
+            "up \n\nS",
+            "hut up, shut up \n\nS",
+            "hut up, shut up, shut ",
+            "up ",
+            "",
+            "/n"
+        ],
+        [
+            "Sh",
+            "ut up, shut up /n"
+        ],
+        [
+            "Shu",
+            "t up, shut up, shut up /n"
+        ],
+        [
+            "Shut ",
+            "up, shut up \n\nShut ",
+            "up, shut up, shut up ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ObwC5NWHCUI",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

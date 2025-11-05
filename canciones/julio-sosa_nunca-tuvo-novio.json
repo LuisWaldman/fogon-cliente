@@ -2,56 +2,137 @@
     "cancion": "nunca-tuvo-novio",
     "banda": "julio-sosa",
     "escala": "G7",
-    "bpm": 60,
+    "bpm": 107,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "A#",
+                    "F7",
+                    "A#",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G7",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "F7",
+                    "F7",
+                    "A#7",
+                    "A#7",
+                    "F7",
+                    "Adim",
+                    "Adim",
+                    "Cm",
+                    "Cm",
+                    "A#/D",
                     "Cm",
                     "F7",
-                    "A#"
+                    "F7",
+                    "F7",
+                    "A#",
+                    "A7",
+                    "A7",
+                    "Cm",
+                    "D#",
+                    "Edim",
+                    "G7",
+                    "G7",
+                    "Cm",
+                    "F7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "F7",
+                    "F7",
+                    "F7",
+                    "A#",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "D#",
+                    "Edim",
+                    "G7",
+                    "G7",
+                    "Cm",
+                    "F7",
+                    "A#",
                     "A#",
                     "A#/D",
-                    "C#dim",
-                    "F7/C",
-                    "G7/D",
-                    "A#"
+                    "A#/D",
+                    "Dm",
+                    "Cm",
+                    "G7",
+                    "G7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A#",
                     "Adim",
                     "A#",
                     "A#7",
-                    "D#",
-                    "G7/D",
-                    "Cm",
-                    "C#dim",
-                    "A#/D"
+                    "A#7 Cm",
+                    "Cm A#/D",
+                    "G7",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "F7",
-                    "A#",
+                    "F7",
+                    "F7",
                     "A7",
-                    "Dm",
+                    "A7",
+                    "Cm",
                     "D#",
                     "Edim",
+                    "G7",
+                    "Cm",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "A#",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "D#",
+                    "D#",
                     "A#/F",
-                    "G#"
+                    "G7",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "F7",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
                 ]
             }
         ],
@@ -59,153 +140,131 @@
             0,
             1,
             2,
-            0,
             3,
-            0,
-            3,
-            0,
-            1,
-            2,
-            0,
-            3,
-            0,
-            3,
-            0
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "con tus ojos más nub",
-            "lados de dolor s",
-            "oñás un paisaje ",
-            "de a",
-            "mor/n"
-        ],
-        [
-            "Pobre solterona... te has quedado sin il",
-            "usión",
-            ", sin  ",
-            "  fe",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Sigues, como en",
-            "tonces, rele",
-            "yendo el nove",
-            "lón sentime",
-            "ntal",
+            "P",
+            "obre solterona te has ",
+            "quedado sin ",
+            "ilusión,  sin ",
+            "fe, tu cor",
+            "azón de angustia se ha en",
+            "fermado, puesta de s",
+            "ol, que soy tu vida t",
+            "runcal, sig",
+            "ue por lo tanto rel",
+            "eyendo el no",
+            "velón sentiment",
+            "al, en ",
+            "el que una niña guarda en v",
+            "ano consumida por un ",
+            "malo de a",
+            "mor. \n\nEn ",
+            "la soledad ",
+            "de tu cuarto de soltera e",
+            "stá el dolor, triste r",
+            "ealidad, ",
+            "es el fin de tu jornada sin a",
+            "mor, llora que al l",
+            "lorar van las ",
+            "lágrimas templando tu e",
+            "moción, en ",
+            "las hojas de tu viejo n",
+            "ovelón te ves ",
+            "sin fuerzas palpitar. /n"
+        ],
+        [
+            "De",
+            "ja de llora ",
+            "por el príncipe soña",
+            "do que no fue hasta ",
+            "ti volcar, ",
+            "el rimero melodioso de ",
+            "su voz tras el v",
+            "entanal mientras p",
+            "ega la llovina en el cristal, ",
+            "con tus ",
+            "ojos manublados de ",
+            "dolor  soñas un ",
+            "paisaje de amor",
+            ". \n\nNunca t",
+            "uvo novio pobrecit ",
+            "porque el am",
+            "or no fue ",
+            "su jardín de ",
+            "humilde muchachita ",
+            "perfumar las ",
+            "flores  de sus años. /n"
+        ],
+        [
+            "Yo con mi mont",
+            "ón de desengaño",
+            "s, igual que vos ",
+            "vivo sin luz, ",
+            "sin una esp",
+            "eranza aventurosa que me a",
+            "yude soporta ",
+            "con mi ",
+            "cr",
+            "uz. ",
             "/n"
         ],
         [
-            "en el que una ",
-            "niña aguarda en",
-            " vano ",
-            "consumida por ",
-            "un m",
-            "al d",
-            "e amor/n"
-        ],
-        [
-            "En la soledad de tu cuarto de so",
-            "ltera está el dolor/n"
-        ],
-        [
-            "Triste realidad es el fin de tu jo",
-            "rnada sin amor/n"
-        ],
-        [
-            "Lloras, y al llorar,",
-            " van las lágrimas te",
-            "mplando tu emoció",
-            "n/n"
-        ],
-        [
-            "y en las hojas de tu ",
-            "viejo novelón t",
-            "e ves, sin fuerzas, pa",
-            "lpitar/n"
-        ],
-        [
-            "Deja de llorar por el príncipe ",
-            "soñado que no fue/n"
-        ],
-        [
-            "hasta tí a volcar el rivero melod",
-            "ioso de su voz/n"
-        ],
-        [
-            "Tras el ventanal, mi",
-            "entras pega la lloviz",
-            "na en el cristal,",
+            "En ",
+            "la soledad de tu cuarto de s",
+            "oltera está el dolor, ",
+            "triste realidad, es ",
+            "el fin de tu jornada sin amo",
+            "r, llora que ",
+            "al llorar van las lágrimas ",
+            "templando  tu emoción, ",
+            "en las hojas de tu viejo no",
+            "velón te ves sin fu",
+            "erzas palpitar. ",
+            "",
             "/n"
         ],
         [
-            "con tus ojos más nu",
-            "blados de dolor ",
-            "soñás un paisaje",
-            " de ",
-            "amor/n"
-        ],
-        [
-            "Nunca tuvo novio... pobrecita...Por qué ",
-            "el amo",
-            "r no   ",
-            " fue",
-            "/n"
-        ],
-        [
-            "Yo, con mi mon",
-            "tón de dese",
-            "ngaños, igual ",
-            "que vos, vivo si",
-            "n lu",
-            "z,/n"
-        ],
-        [
-            "sin una e",
-            "speranza ventu",
-            "rosa q",
-            "ue me ayude a s",
-            "oporta",
-            "r mi ",
-            "cruz/n"
-        ],
-        [
-            "(la soledad es tu amiga mas fiel",
-            ")/n"
-        ],
-        [
-            "Triste realidad es el fin de tu jo",
-            "rnada sin amor/n"
-        ],
-        [
-            "Lloras, y al llorar,",
-            " van las lágrimas te",
-            "mplando tu emoció",
-            "n/n"
-        ],
-        [
-            "y en las hojas de tu ",
-            "viejo novelón t",
-            "e ves, sin fuerzas, pa",
-            "lpitar/n"
-        ],
-        [
-            "Deja de llorar por el príncipe ",
-            "soñado que no fue/n"
-        ],
-        [
-            "hasta tí a volcar el rivero melod",
-            "ioso de su voz/n"
-        ],
-        [
-            "Tras el ventanal, mi",
-            "entras pega la lloviz",
-            "na en el cristal,",
-            "/ncon tus ojos más nublados de dolor soñás un paisaje de amor"
-        ],
-        []
+            "Deja  de ll",
+            "orar por el prí",
+            "ncipe soñado que no fue ",
+            "hasta ti vol",
+            "car, el rimer",
+            "o melodioso de su voz ",
+            "tras  el ventan",
+            "al mientras pega la l",
+            "lovina en el cristal, ",
+            "con tus ojos ma",
+            "nublados de dolor ",
+            "soñ",
+            "as un pa",
+            "isaje ",
+            "de amor. ",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "H_9PZlFiVFA",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
 }

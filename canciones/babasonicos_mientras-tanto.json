@@ -2,171 +2,237 @@
     "cancion": "mientras-tanto",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
+                    "Cm",
+                    "Cm",
                     "Cm",
                     "Bm",
                     "Am",
+                    "Em",
+                    "Em",
                     "C",
-                    "Bm",
-                    "Am",
-                    "Em"
+                    "C",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "Em",
+                    "Em",
                     "C",
-                    "Em"
+                    "C",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "C",
-                    "Cm",
-                    "G"
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "C",
+                    "C",
+                    "Bm",
+                    "C",
+                    "Bm",
                     "D",
-                    "Am"
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "C",
-                    "D",
-                    "G"
+                    "C",
+                    "Cm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            1,
             2,
-            0,
-            3,
-            3,
             3,
             4,
-            0,
-            0
+            5
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "espués que me muera d",
-            "igan lo que quieran/n tot"
-        ],
-        [
-            "al no voy a reaccionar ma",
-            "l/n p"
-        ],
-        [
-            "íntenme bigotes, p",
-            "ónganme caretas/n que a m"
-        ],
-        [
-            "í me da igual",
-            "/n Mientras t"
-        ],
-        [
-            "anto/n"
-        ],
-        [
-            " todo el mundo calladi",
-            "to/n mientras t"
-        ],
-        [
-            "anto/n aprend"
-        ],
-        [
-            "iendo a respeta",
-            "r/n mientras t"
-        ],
-        [
-            "anto/n"
-        ],
-        [
-            " todos somos difere",
-            "ntes/n conviv"
-        ],
-        [
-            "ir es acepta",
-            "r a los demá",
-            "s/n D"
-        ],
-        [
-            "espués que me muera d",
-            "igan lo que quieran/n tot"
-        ],
-        [
-            "al no voy a reaccionar ma",
-            "l/n p"
-        ],
-        [
-            "íntenme bigotes, p",
-            "ónganme caretas/n que a m"
-        ],
-        [
-            "í me da igual",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " No sé qué ",
-            "te inoport",
-            "uno (no sé qué te inoportuno...)/n"
+            "Después q",
+            "ue  me muera di",
+            "ga  lo que quieran, tot",
+            "a  no voy reaccionar",
+            "mal. /n Pí",
+            "ntenm  bigotes,",
+            "pónganme caritas que m",
+            "í  me da i",
+            "gual /n Mientras t",
+            "ant  t",
+            "od  el mundo cal",
+            "ladito ",
+            "mientras t",
+            "ant  anda aprendie",
+            "nd  res",
+            "petar /n"
         ],
         [
-            " si te ha",
-            "go pensar",
-            " (si te hago pensar...)/n"
+            "Mientras t",
+            "anto  t",
+            "od  somos difere",
+            "ntes ",
+            "conv",
+            "ivi  es acept",
+            "a  los demá",
+            "s /n"
         ],
         [
-            " que de to",
-            "dos ni uno ",
-            "sabe/n"
+            "Después",
+            "qu  me muera diga",
+            "lo que quieran, total n",
+            "o  voy reaccionar",
+            "mal. /n Pínte",
+            "nm  bigotes, pón",
+            "ganm  caritas que m",
+            "í  me da igu",
+            "al /n S",
+            "i  no sé qué p",
+            "e",
+            "i",
+            "n  por tu honor",
+            ",  si teng",
+            "algo pe",
+            "nsa",
+            "r /n Qui",
+            "er ",
+            "todos, ning",
+            "un  s",
+            "abe  c",
+            "o  qué def",
+            "in  este que",
+            "rer ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " con qué f",
-            "in está ac",
-            "á/n"
+            "D",
+            "e  dónde lingo es",
+            "o  no tiene perdón",
+            "de dónde soy par",
+            "a  eso no hay castigo,",
+            "dónde uno deb",
+            "erí  preocuparte porque",
+            "n  serás testi",
+            "go /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Después que m",
+            "e  muera digan lo qu",
+            "e  quieran, total no voy",
+            "reaccionar mal",
+            ". /n Píntenme bi",
+            "gotes,  pónganme car",
+            "ita  que mí m",
+            "e  da igual.",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "qy1CMa-pCcw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

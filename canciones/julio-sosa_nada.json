@@ -2,280 +2,242 @@
     "cancion": "nada",
     "banda": "julio-sosa",
     "escala": "G#7M",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#",
+                    "G#7M",
+                    "G#7M",
+                    "C7",
+                    "Fm",
+                    "A#°",
+                    "G#",
+                    "C#",
+                    "C",
+                    "F#",
+                    "C",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G#7M",
-                    "A#m7",
+                    "G#7M",
+                    "D#7",
+                    "D#7",
+                    "Fm",
+                    "C#",
+                    "Fm",
+                    "C#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G#7M",
+                    "G#7M",
                     "D#7",
                     "G#7M",
-                    "C#",
+                    "G#7M",
+                    "A#m7",
+                    "G#7M",
+                    "C#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C7",
                     "C7",
                     "Fm",
                     "C7",
                     "C#",
-                    "G#7",
                     "C#",
-                    "A#m",
+                    "D#7",
                     "D#7",
                     "G#7M",
-                    "A#m7",
-                    "D#7",
                     "G#7M",
-                    "D#7",
+                    "C#",
+                    "C7",
+                    "C#",
+                    "C#",
                     "G#",
-                    "G#7M",
-                    "A#m7",
-                    "D#7",
-                    "G#7M",
-                    "C#",
-                    "C7",
-                    "Fm",
-                    "C7",
-                    "C#",
-                    "G#7",
-                    "C#",
-                    "A#m",
-                    "D#7",
-                    "G#7M",
-                    "A#m7",
-                    "D#7",
-                    "G#7M",
-                    "C#",
-                    "C7",
-                    "Fm",
-                    "C7",
-                    "C#",
-                    "G#7",
-                    "C#",
-                    "D#7",
                     "G#",
-                    "C7",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "Fm",
-                    "A#m7",
+                    "Fm",
+                    "D#7",
+                    "D#7",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "A#°",
-                    "G#",
-                    "F7",
-                    "A#m",
-                    "D#7",
-                    "G#",
-                    "D#7",
-                    "G#",
-                    "C7",
-                    "Fm",
-                    "C#",
                     "A#°",
-                    "G#",
-                    "F7",
                     "A#m",
-                    "D#7",
-                    "G#",
+                    "A#m",
                     "G#7M",
-                    "A#m7",
+                    "G#7M",
                     "D#7",
-                    "G#m7M",
-                    "C#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G#",
                     "C7",
                     "Fm",
-                    "C7",
+                    "Fm",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "C#",
-                    "G#7",
                     "C#",
-                    "A#m",
+                    "G#7M",
                     "D#7",
                     "G#7M",
-                    "A#m7",
-                    "D#7",
-                    "G#m7M",
+                    "G#7M",
                     "C#",
                     "C7",
-                    "Fm",
-                    "C7",
                     "C#",
-                    "G#7",
                     "C#",
-                    "D#7",
                     "G#",
-                    "C7",
-                    "Fm",
-                    "A#m7",
-                    "A#°",
-                    "G#",
-                    "F7",
-                    "A#m",
-                    "D#7",
-                    "G#",
-                    "D#7",
-                    "G#",
-                    "C7",
-                    "Fm",
-                    "C#",
-                    "A#°",
-                    "G#",
-                    "F7",
-                    "A#m",
-                    "D#7",
-                    "G#",
-                    "D#7",
                     "G#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
-        [],
-        [],
         [
-            "He llegado hasta tu",
-            " casa, ",
-            "... Yo",
-            " no se como he podid",
-            "o!",
-            "/n"
-        ],
-        [
-            "Si me han di",
-            "cho que no estas",
-            ", que ya nun",
-            "ca volveras",
-            "/nSi me han dicho que te has"
-        ],
-        [
-            " ido!",
-            "/n"
-        ],
-        [
-            "Cuanta nieve hay en mi ",
-            "alma!..",
-            ". Que ",
-            "silencio hay en tu puer",
-            "ta!",
-            "/n"
-        ],
-        [
-            "Al lleg",
-            "ar hasta el umbr",
-            "al, un canda",
-            "do de dolor",
-            "/nMe detuvo el coraz"
-        ],
-        [
-            "ón/nNada, nada queda de tu "
-        ],
-        [
-            "casa natal, s",
-            "olo telarañas que tej",
-            "e el yuyal/nEl r"
-        ],
-        [
-            "osal ta",
-            "mpoco exis",
-            "te y es segu",
-            "ro que se ha m",
-            "uerto al irte tu",
-            "/n"
-        ],
-        [
-            "Todo es una cruz!/n"
-        ],
-        [
-            "Nada, nada más que tris",
-            "teza y quietud, nad",
-            "ie que me diga si vive",
-            "s aun/nDond"
-        ],
-        [
-            "e estas..",
-            ". para decir",
-            "te que hoy h",
-            "e vuelto arrepe",
-            "ntido/n"
-        ],
-        [
-            "A buscar tu a",
-            "mor/n"
-        ],
-        [
-            "Ya me alejo de tu",
-            " casa  ",
-            "    y ",
-            "me voy ya ni sé d",
-            "onde",
-            "/n"
-        ],
-        [
-            "Sin que",
-            "rer te digo adi",
-            "s y hasta e",
-            "l eco de tu v",
-            "oz/nDe la nada me resp"
-        ],
-        [
-            "onde",
-            "/n"
-        ],
-        [
-            "En la cruz de tu",
-            " candad",
-            "o     ",
-            " por tu pena yo he re",
-            "zado",
-            "/n"
-        ],
-        [
-            "Y ha ro",
-            "dado en tu port",
-            "n una lágr",
-            "ima hecha flo",
-            "r/nDe mi pobre coraz"
-        ],
-        [
-            "ón/nNada, nada queda de tu "
-        ],
-        [
-            "casa natal, s",
-            "olo telarañas que tej",
-            "e el yuyal/nEl r"
-        ],
-        [
-            "osal ta",
-            "mpoco exis",
-            "te y es segu",
-            "ro que se ha m",
-            "uerto al irte tu",
-            "/n"
-        ],
-        [
-            "Todo es una cruz!/n"
-        ],
-        [
-            "Nada, nada más que tris",
-            "teza y quietud, nad",
-            "ie que me diga si vive",
-            "s aun/nDond"
-        ],
-        [
-            "e estas..",
-            ". para decir",
-            "te que hoy h",
-            "e vuelto arrepe",
-            "ntido/n"
-        ],
-        [
-            "A buscar tu a",
-            "mor",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "He llegado hasta tu ",
+            "casa, ",
+            "yo no sé como he ",
+            "podido,  ",
+            "si me han dicho que no e",
+            "stás, que ya nunca vo",
+            "lverás, si me han dicho que te ",
+            "has ido /n"
+        ],
+        [
+            "Cuanta nieve ",
+            "hay en mi alm",
+            "a, que silenc",
+            "io hay en tu puerta, ",
+            "al llegar ha",
+            "sta el umbral, un canta",
+            "do de dolor me detuvo ",
+            "el corazón. /n"
+        ],
+        [
+            "Nada, nada qu",
+            "eda en tu casa na",
+            "tal, solo telar",
+            "añas que teje el yujal ",
+            "el rosal. \n\nT",
+            "ampoco existe es seguro ",
+            "que sea muerto al irte tú, ",
+            "todo es una cr",
+            "uz. \n\nNada, nada más ",
+            "que tristeza quiet",
+            "ud, nadie es que me di",
+            "ga si vives aún, d",
+            "onde estás, pa",
+            "ra decirte que hoy he vuelto a",
+            "rrepentido buscar ",
+            "tu amo",
+            "r. ",
+            "",
+            "/n"
+        ],
+        [
+            "Ya me alejo de tu ",
+            "casa me voy, yo ni sé d",
+            "ónde, sin querer te digo ",
+            "adiós  hasta el eco de tu voz ",
+            "de la nada me responde. /n"
+        ],
+        [
+            "En la ",
+            "cruz de tu can",
+            "dado, por ",
+            "tu pena yo he r",
+            "ezado ",
+            "ha rodado en tu portó ",
+            "una lágrima hecha flo ",
+            "de mi pobre corazón. /n"
+        ],
+        [
+            "Nad",
+            "a, nada queda en tu c",
+            "asa natal, s",
+            "olo telarañas que te",
+            "je el yujal el rosal /n"
+        ],
+        [
+            "Tampoco exist ",
+            "es seguro que sea muerto ",
+            "al irte tú, tod ",
+            "es una cruz. \n\nNa",
+            "da, nada más que triste",
+            "za quietud, na",
+            "die es que me diga si viv",
+            "es aún, donde está",
+            "s, para decirt ",
+            "que hoy he vuelto arrepent",
+            "ido buscar tu a",
+            "mor. "
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "e9I4HznvcQg",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
 }

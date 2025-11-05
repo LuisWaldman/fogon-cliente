@@ -8,15 +8,38 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "Gº",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Bm7",
+                    "C",
+                    "Em",
+                    "Bm7",
+                    "Bm7",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "Gº",
-                    "F#m7",
+                    "E",
                     "B7",
-                    "C#m7",
-                    "G#m7",
-                    "F#m7",
+                    "B7",
+                    "B7",
+                    "Gº",
+                    "B7",
                     "B7"
                 ]
             },
@@ -24,40 +47,48 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Em",
-                    "Am7",
                     "Bm7",
+                    "Bm7",
+                    "D",
+                    "Em",
+                    "Bm7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "G",
                     "Em",
-                    "Am7",
+                    "Em",
                     "Bm7",
                     "C",
+                    "Em",
+                    "Bm7",
+                    "Bm7",
                     "D",
-                    "Bb"
-                ]
-            },
-            {
-                "nombre": "parte4",
-                "acordes": [
                     "C",
-                    "G",
-                    "Am7",
                     "C",
-                    "G",
-                    "Am7",
-                    "B",
-                    "E"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
-            0,
             0,
             1,
             2,
@@ -66,70 +97,82 @@
     },
     "letras": [
         [
-            "erdes e",
-            "n mi ti",
-            "erra natal",
-            "/nya se han"
-        ],
-        [
-            " ido, nu",
-            "nca más",
-            " volverán",
-            "/ncielos cl"
-        ],
-        [
-            "aros, ",
-            "en mi tie",
-            "rra natal",
-            "/nse han n"
-        ],
-        [
-            "ublado, n",
-            "unca más",
-            " volverán.",
+            "Campos verdes en mi tierra nazar ya se han ",
+            "ido,  jamás v",
+            "olverán cielos c",
+            "laros. \n\nEn mi tierra ",
+            "nazar  se han nu",
+            "blado, jamás v",
+            "olverán. \n\nEn ",
+            "mi tierra llora, con",
+            "tigo no lo es ver",
+            "dad, que todo sigue ig",
+            "ual. \n\nEn mi tierra llora",
+            ", contigo no ",
+            "lo es verdad, que to",
+            "do es como ayer, la q",
+            "uiero florecer. ",
+            "",
+            "",
             "/n"
         ],
         [
-            "Si mi tierra llo",
-            "ra conmi",
-            "go/nno, no es verd"
+            "Campos verdes en ",
+            "mi tierra nazar ya ",
+            "se han ido, ",
+            "jamás volverán. \n\nLos ",
+            "colares de ",
+            "mi tierra nazar se ",
+            "han perdido, ",
+            "jamás volverán. /n"
         ],
         [
-            "ad qu",
-            "e todo sigue igual",
+            "En mi tierra llora ",
+            "contigo no lo ",
+            "es verdad, que to",
+            "do sigue igual. \n\nEn ",
+            "mi tierra llora, cont",
+            "igo no lo es verd",
+            "ad, que todo es como ay",
+            "er, la quiero flore",
+            "cer. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "si mi tierra l",
-            "lora conti",
-            "go/nno, no es ver"
-        ],
-        [
-            "dad",
-            "/nque todo es como a"
-        ],
-        [
-            "yer/n"
-        ],
-        [
-            "la quiero florece",
-            "r, ah",
-            ", ah, ",
-            "ah, ",
-            "ah, a",
-            "h, ah.",
-            "..",
-            "/n"
-        ],
-        []
+            "En mi t",
+            "ierra llora, cont",
+            "igo no lo es verdad, ",
+            "que todo sigue igu",
+            "al. \n\nEn mi tierra llora ",
+            "contigo no lo ",
+            "es verdad, que todo ",
+            "es como ayer, la quie",
+            "ro florecer ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 92,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "uxfJJFlr4EY",
-            "delay": 0
+            "delay": 5000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

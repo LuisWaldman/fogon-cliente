@@ -2,341 +2,285 @@
     "cancion": "ideas",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "C",
-                    "D",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "F",
-                    "G",
-                    "Am",
                     "C",
-                    "D",
+                    "Dm",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "Dm",
                     "F",
-                    "G",
-                    "C",
-                    "F",
-                    "G",
-                    "G",
-                    "C",
-                    "G",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
                     "C",
                     "C",
-                    "F",
+                    "Dm",
                     "G",
                     "G",
-                    "C",
-                    "F",
-                    "G",
-                    "G",
-                    "C",
-                    "G",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
+                    "Dm",
                     "Am",
                     "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
                     "Am",
                     "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "A5",
-                    "C5",
-                    "D5",
-                    "A5",
-                    "A5",
-                    "C5",
-                    "D5",
-                    "A5",
-                    "A5",
-                    "C5",
-                    "D5",
-                    "A5",
-                    "A5",
-                    "C5",
-                    "D5",
-                    "A5",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
-                    "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "G",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "A5",
+                    "A5",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "    ",
-            "   ",
-            " No",
-            " digo nada",
-            ", digo no.",
-            "",
-            "",
-            "",
-            "",
-            "/n Olvídate de"
-        ],
-        [
-            " mí, ya no somos ",
-            "amigos/n y "
-        ],
-        [
-            "quiero, ",
-            " que me quieras igu",
-            "al/n como todo en la "
-        ],
-        [
-            "tierra tiene su n",
-            "ombre,/n "
-        ],
-        [
-            "esto se llama:/n "
-        ],
-        [
-            "  Formas náufragas ",
-            "viajan a la der",
-            "iva/n al en"
-        ],
-        [
-            "cuentro con la n",
-            "ada misma,",
-            "/n formas náufragas"
-        ],
-        [
-            " viajan a la de",
-            "riva/n al en"
-        ],
-        [
-            "cuentro con la n",
-            "ada./n"
-        ],
-        [],
-        [
-            "    ",
-            "  N",
-            "o digo nada, digo no,",
-            " digo no, ",
-            "digo.",
-            "/n"
-        ],
-        [],
-        [
-            "í, sigo un paso ade",
-            "lante/n ha"
-        ],
-        [
-            "ciendo, ",
-            " que me sigas igu",
-            "al/n y hacia adónde te"
-        ],
-        [
-            " marches re",
-            "cuerdes,/n "
-        ],
-        [
-            "que esto se llama:/n "
-        ],
-        [
-            "  Formas náufragas ",
-            "viajan a la der",
-            "iva/n al en"
-        ],
-        [
-            "cuentro con la n",
-            "ada misma,",
-            "/n formas náufragas"
-        ],
-        [
-            " viajan a la de",
-            "riva/n al en"
-        ],
-        [
-            "cuentro con la n",
-            "ada./n "
-        ],
-        [
-            "No digo, no digo,",
-            "/n no digo nada, digo "
-        ],
-        [
-            "no, digo no, digo",
-            "/n no digo "
-        ],
-        [
-            "nada, digo n",
-            "o...",
-            "/n no digo nada, digo "
-        ],
-        [
-            "no, digo no, digo",
-            "/n no digo "
-        ],
-        [
-            "nada, digo n",
-            "o./n "
-        ],
-        [
-            "No sabe si comprar hum",
-            "or por escalada",
-            "/n o salir de madru"
-        ],
-        [
-            "gada sin un p",
-            "lan,/n "
-        ],
-        [
-            "así no puede decla",
-            "rar la guerra a nadie",
-            "/n y cada vez"
-        ],
-        [
-            ", cada v",
-            "ez se enoja má",
-            "s./n "
-        ],
-        [
-            "No digo, no digo,",
-            "/n no digo nada, digo "
-        ],
-        [
-            "no, digo no, digo",
-            "/n no digo "
-        ],
-        [
-            "nada, digo n",
-            "o...",
-            "/n no digo nada, digo "
-        ],
-        [
-            "no, digo no, digo",
-            "/n no digo "
-        ],
-        [
-            "nada, digo n",
-            "o.",
             "",
             "",
             "/n"
         ],
-        [],
         [
-            "Claro que estamos de paro,/n "
+            "No olviden d",
+            "e  m",
+            "i",
+            ",",
+            "",
+            "y",
+            "a  no somos amigos,",
+            "quiero q",
+            "ue  m",
+            "e quieras igual. /n Como t",
+            "odo  en la tierra,",
+            "tiene su nombre,",
+            "esto es ella./n"
         ],
         [
-            " pero tamb",
-            "ién de otra c",
-            "osa.../n y digo, "
+            "Formas náufra",
+            "ga  viajan l",
+            "a  deriva, a",
+            "l  encuentro con la nada mis",
+            "ma ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "claro que estamos de paro,/n "
+            "N",
+            "o  digo nada, digo n",
+            "o  odio, no od",
+            "io ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " pero tamb",
-            "ién de otra c",
-            "osa.../n "
+            "Buscame por a",
+            "hí  sigo un paso adela",
+            "nte  haciendo",
+            "qu",
+            "e  me sigas igual",
+            ". /n Yo sé dónde te mar",
+            "ches  recu",
+            "erdes  esto s",
+            "e llama. /n Fo",
+            "rma  náufragas via",
+            "ja  la deriva,",
+            "al encuentro con l",
+            "a nada misma. /n Forma",
+            "náufragas viaj",
+            "a  la deriva",
+            "al encuentro con l",
+            "a nada misma. /n No digo",
+            "nad",
+            "a  digo no odio, n",
+            "o  o",
+            "d",
+            "i",
+            "o",
+            "./n"
         ],
         [
-            "No digo, no digo,",
-            "/n no digo nada, digo "
+            "No sale sin c",
+            "ompra  un morforo esca",
+            "lada  puedo salir d",
+            "e  madrugada sin un pla",
+            "n /n Así no puede",
+            "declara  la guerra nadie,",
+            "cada v",
+            "ez  cada vez se m",
+            "e llama. /n No d",
+            "igo  nada,",
+            "digo no od",
+            "io ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "no, digo no, digo",
-            "/n no digo "
-        ],
-        [
-            "nada, digo n",
-            "o...",
-            "/n no digo nada, digo "
-        ],
-        [
-            "no, digo no, digo",
-            "/n no digo "
-        ],
-        [
-            "nada, digo n",
-            "o."
+            "Cla",
+            "r  que estamos se",
+            "parados  p",
+            "er  también de otra c",
+            "osa /n Claro q",
+            "u  estamos sep",
+            "arados ",
+            "pero también de otra c",
+            "osa /n No d",
+            "igo  nad",
+            "a  digo no od",
+            "io ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "vImJ9HbbpP8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

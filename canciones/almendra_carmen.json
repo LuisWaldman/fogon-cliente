@@ -8,13 +8,19 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A",
-                    "D",
                     "E",
-                    "D",
-                    "A"
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
@@ -22,82 +28,235 @@
                 "acordes": [
                     "E",
                     "G",
-                    "A"
+                    "A",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
                     "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "Em",
                     "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "Em",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            1,
-            1,
-            1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "Carmen es s",
-            "ucia,/n"
+            "Carmen \n\nS",
+            "usa, ",
+            "no tiene pa",
+            "dre. /n"
         ],
         [
-            "no ti",
-            "ene pad",
-            "re./n"
+            "Isa \n\nLa",
+            "ureles, ",
+            "no ama su ma",
+            "dre. /n"
         ],
         [
-            "Pisa laurel",
-            "es,/n"
+            "Al",
+            "go pasa de",
+            "ntro de ",
+            "mi /n"
         ],
         [
-            "no a",
-            "ma a su m",
-            "adre./n"
+            "Cuanto pe",
+            "rdón de",
+            "bajo de tanta l",
+            "una /n"
         ],
         [
-            "Algo",
-            " pa",
-            "sa den",
-            "tro ",
-            "de mí.",
-            "..    (Dentro de mí...)/n"
+            "Cuant ",
+            "perdón deb",
+            "ajo de tanta l",
+            "una /n"
         ],
         [
-            "Algo",
-            " pa",
-            "sa den",
-            "tro ",
-            "de mí.",
+            "Alg",
+            "o pasa de",
+            "ntro de ",
+            "mi /n"
+        ],
+        [
+            "Algo p",
+            "asa en ",
+            "este lu",
+            "gar /n"
+        ],
+        [
+            "Carmen \n\nS",
+            "usa, no ",
+            "tiene pad",
+            "re /n"
+        ],
+        [
+            "Isa /n"
+        ],
+        [
+            "Laureles, no ",
+            "ama su ma",
+            "dre \n\nPára",
+            "te debajo de mi ma",
+            "no, mira q",
+            "uien son /n"
+        ],
+        [
+            "Párat",
+            "e debajo de mi m",
+            "ano, mir ",
+            "quien son ",
             "/n"
         ],
         [
-            "Párate de",
-            "bajo de mi m",
-            "ano",
+            "Carm",
+            "en \n\nSus",
+            "a, no ",
+            "tiene  padre ",
             "/n"
         ],
         [
-            "mira quién ",
-            "soy."
+            "Isa \n\nLaurel",
+            "es, no ama ",
+            "su madre ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Carmen \n\nSusa, no tiene padre "
         ]
     ],
-    "bpm": 80,
+    "bpm": 83,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "x8_XJZFSTqw",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,102 +2,199 @@
     "cancion": "culturina",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "Em7",
-                    "Fmaj7",
-                    "Am",
                     "C",
-                    "Em7",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
+                    "C",
                     "C",
                     "Em7",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
                     "Fmaj7",
                     "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "C",
-                    "Em7",
-                    "D"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Dsus4"
+                    "C",
+                    "C",
+                    "C",
+                    "Fmaj7",
+                    "C",
+                    "G",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            2
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "udo que la obedi",
-            "encia sea al",
-            "go a transmitir,",
             "/n"
         ],
         [
-            "dudo de su val",
-            "or, dudo",
-            " de su intención",
-            "./n"
+            "la obedienci",
+            "sea algo",
+            "transmit/n"
         ],
         [
-            "Dudo de ver al",
-            "go que se pag",
-            "ue con mi tiemp",
-            "o/ny al pag"
+            "Dud",
+            "de su valor",
+            "dudo de s",
+            "u  intenci",
+            "ó /n Dud",
+            "o  de ver alg",
+            "o  que separe c",
+            "o  mi tiempo a",
+            "l  pagar",
+            "neg",
+            "sufrir",
+            "",
+            "si te qued",
+            "a  algún tipo de duda m",
+            "á  mejor aclar",
+            "emo  las cos",
+            "a /n Porque una c",
+            "os  trae otra c",
+            "os  no sabes p",
+            "ar  qué trabajar/n"
         ],
         [
-            "ar me ",
-            "haga sufrir.",
-            "/n"
-        ],
-        [],
-        [],
-        [],
-        [
-            "Dudo del orig",
-            "en de la vo",
-            "z que da la orden",
-            ",/n"
+            "Dud",
+            "o  del orige",
+            "de la voz que d",
+            "la hora de v",
+            "e /n Dudo d",
+            "e  su entusiasm",
+            "o  dudo de su",
+            "contro /n"
         ],
         [
-            "dudo de su ent",
-            "usiasmo, dudo ",
-            "de su control.",
-            "/n"
-        ],
-        [
-            "Dudo que mi pr",
-            "ovecho sea de tu interés/nmejor aún que pensemos igual."
-        ],
-        []
+            "Dudo qu",
+            "e  mi provecho s",
+            "ea  de tu int",
+            "eré  mejor a",
+            "ún  que p",
+            "ensemos  i",
+            "gua ",
+            "",
+            "si te queda algún t",
+            "ipo  de duda má",
+            "s  mejor aclaremos l",
+            "as cosas /n Po",
+            "rqu  una co",
+            "s  trae otra cos",
+            "no sabes para q",
+            "u  trabajar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "si te queda algún ti",
+            "p  de duda más m",
+            "ejo  aclaremos las",
+            "cosa /n Por",
+            "qu  una cosa tr",
+            "a  otra cosa",
+            "no sabes para quién tra",
+            "baja ",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "HsfmXAvCXJ4",
-            "delay": 0
+            "delay": 6750.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

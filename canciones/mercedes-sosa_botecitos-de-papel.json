@@ -8,43 +8,138 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
                     "D7",
-                    "C"
+                    "D7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F",
-                    "C"
+                    "D7",
+                    "D7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D7",
-                    "G"
+                    "G",
+                    "F",
+                    "F",
+                    "D7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "F",
-                    "A#",
-                    "C",
                     "D7",
-                    "G7",
-                    "C"
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D7",
+                    "D7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "G",
-                    "F#",
+                    "G",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "D7",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "F"
                 ]
             }
@@ -53,121 +148,133 @@
             0,
             1,
             2,
-            0,
-            1,
-            1,
-            2,
             3,
-            2,
-            1,
-            2,
             4,
-            3,
-            2,
-            1,
-            2,
-            1,
-            2,
-            1,
-            1,
-            2
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            " el sol que se va",
-            " dorando el pajonal",
             "",
             "",
-            "/nll"
-        ],
-        [
-            "ama el pitog",
-            "e,/ncon l"
-        ],
-        [
-            "uz de atardece",
-            "r, islero a florecer",
-            ".",
-            "",
-            "/nP"
-        ],
-        [
-            "asan mis recu",
-            "erdos boteci",
-            "tos de papel.",
-            "/nLl"
-        ],
-        [
-            "egan de regreso las banda",
-            "das/na"
-        ],
-        [
-            "rriando remansos al qui",
-            "eto Charigü",
-            "é./nR"
-        ],
-        [
-            "ojos faroles penden",
-            " del ceibal",
-            "/nfl"
-        ],
-        [
-            "otan en las i",
-            "slas humor ",
-            "de chamamé",
-            ".",
             "",
             "",
-            "/nH"
+            "",
+            "/n"
         ],
         [
-            "acen enredaderas sobre el a",
-            "gua/nd"
+            "Co",
+            "n  el sol que s",
+            "e  va dor",
+            "and  el pajona",
+            "/n"
         ],
         [
-            "ejen en la brava frag",
-            "ante ñandut",
-            "y,/ny"
+            "Ll",
+            "am  el pita",
+            "hue  con luz de",
+            "atardecer  e",
+            "sler  flor",
+            "ece /n"
         ],
         [
-            " al claroscur",
-            "o del alisal",
-            "/nt"
+            "P",
+            "asan  mis recu",
+            "erdo  botecitos d",
+            "e  papel/n"
         ],
         [
-            "riste silu",
-            "eta de un vi",
-            "ejo curupí",
-            "./nP"
+            "Lle",
+            "ga  de regreso l",
+            "a  vándamas/n"
         ],
         [
-            "asan mis recu",
-            "erdos boteci",
-            "tos de papel",
+            "A",
+            "rreand  remanzo",
+            "al quieto char",
+            "ihue /n"
+        ],
+        [
+            "Rojo",
+            "faro en el del /n S",
+            "aiba/n"
+        ],
+        [
+            "Flote l",
+            "a  islas, hum",
+            "o  de cha",
+            "mam /n P",
+            "asan  redader",
+            "a  sobre el ag",
+            "u /n Dej",
+            "e  en la br",
+            "av  fragante ñ",
+            "andut ",
+            "al",
+            "clor  oscuro del a",
+            "lis",
+            "a /n Gris l",
+            "a  silueta de u",
+            "n  viejo curu",
+            "p ",
+            "/n"
+        ],
+        [
+            "Con el s",
+            "ol  que se va d",
+            "orando  el paj",
+            "on /n"
+        ],
+        [
+            "L",
+            "lam  el pi",
+            "tahue  con luz d",
+            "atardecer, e",
+            "sler  florecer",
+            "/n"
+        ],
+        [
+            "P",
+            "asa  mis recue",
+            "rdo  botecitos d",
+            "e papel /n Pas",
+            "a  mis",
+            "r",
+            "e",
+            "c",
+            "u",
+            "e  bote",
+            "cito  de pa",
+            "pe ",
             "",
             "",
-            "/nP"
+            "",
+            "",
+            "/n"
         ],
         [
-            "asan mis recu",
-            "erdos boteci",
-            "tos de papel",
-            ""
+            "Pescadores de mi río"
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "lFQCmUbQCQk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_botecitos-de-papel.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_botecitos-de-papel.mp3",
+    "calidad": 1
 }

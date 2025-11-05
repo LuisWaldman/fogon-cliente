@@ -2,245 +2,378 @@
     "cancion": "letra-chica",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "G",
-                    "Em",
-                    "Am",
-                    "C",
-                    "B7"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
                     "C",
-                    "Am",
-                    "D"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Em",
-                    "Am",
-                    "D",
-                    "Bm",
-                    "Am",
                     "C",
-                    "Am",
-                    "B7"
+                    "Em",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Em",
+                    "G",
                     "Am",
-                    "D",
-                    "Em",
+                    "C",
+                    "B7",
+                    "C",
                     "C",
                     "D",
-                    "Am",
-                    "B7"
+                    "D",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "Em",
-                    "E",
-                    "A",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "B7",
+                    "B7",
                     "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am",
                     "G",
-                    "B",
-                    "E"
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            2,
-            0,
-            0,
             1,
             2,
             3,
-            0,
-            0,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
         ]
     },
     "letras": [
         [
-            "órame/n t"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "apiza mi destino con diama",
-            "ntes/n mer"
+            "Adorame",
+            "tapiza mi destino",
+            "co  diamantes,/n"
         ],
         [
-            "éceme/n al p"
+            "Méresem",
+            "e  actuando que dese",
+            "a  ser mi amante,/n"
         ],
         [
-            "unto que desees ser mi ama",
-            "nte/n conc"
+            "Conceder",
+            "me  hasta la más abs",
+            "urd  fantasía/n"
         ],
         [
-            "édeme/n h"
+            "Comp",
+            "láceme  firma sin m",
+            "ira  la letra chic",
+            "a /n De ahora en más, no r",
+            "eproche  lo que haga,",
+            "acostúmbrate",
+            "aceptar mi condici",
+            "ón /n Prisio",
+            "ner  de tu indecisión/n"
         ],
         [
-            "asta la más absurda fant",
-            "asía/n compl"
+            "Tú dec",
+            "ide  metúo aquí al l",
+            "ado, /n Un pe",
+            "queñ  rol al marg",
+            "e  para actua",
+            "en él.",
+            "/n"
         ],
         [
-            "áceme/n y f"
+            "Adorame, p",
+            "on  de luz todos mis ca",
+            "prichos /n"
         ],
         [
-            "irma sin mirar la letra chi",
-            "ca/n De ahora en m"
+            "Méreseme, de",
+            "ahor  mi deseo de p",
+            "oquito, /n"
         ],
         [
-            "ás no reproches lo que h",
-            "aga/n y acost"
+            "Concederme, q",
+            "u  todo lo que diga sea",
+            "u  chiste,/n"
         ],
         [
-            "úmbrate a aceptar mi condici",
-            "ón/n pr"
+            "Compláceme,",
+            "ríe como si fuéramo",
+            "felices, /n L",
+            "o  habitual es que lo haga",
+            "deshaga, /n Pue",
+            "s  eso te tendré",
+            "acostumbrada /n"
         ],
         [
-            "isionero de tu indecisi",
-            "n/n t"
+            "Prisionero de tu",
+            "indecisión,/n"
         ],
         [
-            "u desidia me tuvo alquila",
-            "do/n "
+            "Tú decide, me",
+            "tú  aquí al lado,/n"
         ],
         [
-            "un pequeño error al m",
-            "argen para actua",
-            "r en él/n Ad"
+            "Un trabajo d",
+            "e  asistente d",
+            "e  mago amateur",
+            "/n"
         ],
         [
-            "órame/n y p"
+            "E",
+            "n  un pasado f",
+            "uiste  todo p",
+            "ara  mí,/n"
         ],
         [
-            "onle luz a todos mis capri",
-            "chos/n mer"
+            "Vi",
+            "ví  pendien",
+            "t  de tus des",
+            "acatos",
+            "/n"
         ],
         [
-            "éceme/n dev"
+            "Ahora te trat",
+            "con desde,",
+            "tendrás q",
+            "u  comprender/n"
         ],
         [
-            "ora mi deseo de a poqui",
-            "to/n conc"
+            "Que las cos",
+            "a  han cambi",
+            "ado ",
+            "/n"
         ],
         [
-            "édeme/n qu"
+            "Adorame,",
+            "talla mi perfil en de",
+            "smerada /n"
         ],
         [
-            "e todo lo que diga sea chi",
-            "ste/n compl"
+            "Méreseme, s",
+            "oport  mi desliz sobre tu",
+            "espalda /n"
         ],
         [
-            "áceme/n r"
+            "Concederme  m",
+            "i  tiempo para sentirm",
+            "ausente,/n"
         ],
         [
-            "íe como si fuéramos f",
-            "elices/n Lo habitu"
+            "Compláceme,",
+            "no soy igual al resto d",
+            "e  la gent",
+            "e ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "al es que yo haga y desha",
-            "ga/n pues a "
-        ],
-        [
-            "eso te tendré acostumbr",
-            "ada/n pr"
-        ],
-        [
-            "isionero de tu indecisi",
-            "n/n t"
-        ],
-        [
-            "u desidia me tuvo alquila",
-            "do/n "
-        ],
-        [
-            "un trabajo de asiste",
-            "nte de mago am",
-            "ateur/n"
-        ],
-        [
-            " En un pasado fuiste to",
-            "do para mí/n"
-        ],
-        [
-            " vivía pendiente de tus d",
-            "esacatos/n"
-        ],
-        [
-            " ahora te trato con desd",
-            "n/n y tendrás que compren"
-        ],
-        [
-            "der/n que las cosas han cambi"
-        ],
-        [
-            "ado/n Ad"
-        ],
-        [
-            "órame/n ent"
-        ],
-        [
-            "alla mi perfil en esmera",
-            "ldas/n mer"
-        ],
-        [
-            "éceme/n sop"
-        ],
-        [
-            "orta mi desliz sobre tu espa",
-            "lda/n conc"
-        ],
-        [
-            "édeme/n el ti"
-        ],
-        [
-            "empo para sentirme ause",
-            "nte/n compl"
-        ],
-        [
-            "áceme/n n"
-        ],
-        [
-            "o soy igual al resto de la ge",
-            "n... te",
-            "/nAho"
-        ],
-        [
-            "ra s",
-            "í, ",
-            "ese ",
-            "acor",
-            "de q",
-            "ue sonaba mal"
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "XT8bQRCNoFk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,205 +2,306 @@
     "cancion": "casi",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "C",
-                    "Em",
-                    "Am",
                     "C",
-                    "Em",
                     "Dm7",
-                    "F",
-                    "Am",
-                    "C",
-                    "Em",
-                    "Am",
-                    "C",
-                    "Em",
-                    "F",
-                    "C",
-                    "Em",
-                    "Am",
-                    "F",
-                    "C",
-                    "Em",
-                    "Am",
-                    "G#",
-                    "A#",
-                    "Am",
-                    "Am",
-                    "C",
-                    "Em",
-                    "Am",
-                    "C",
-                    "Em",
-                    "F",
-                    "C",
-                    "Em",
-                    "Am",
-                    "F",
-                    "C",
-                    "Em",
-                    "Am",
-                    "G#",
-                    "A#",
-                    "C",
-                    "Em7",
-                    "Dm7sus4",
-                    "Em7",
-                    "F",
-                    "Em7",
-                    "Dm7sus4",
-                    "Em7",
-                    "F",
-                    "G",
-                    "C",
-                    "Em",
-                    "Am",
-                    "F",
-                    "C",
-                    "Em",
-                    "Am",
-                    "G#",
-                    "A#",
-                    "C",
-                    "G#",
-                    "A#",
-                    "C",
-                    "G#",
-                    "A#",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "Dm7",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A#",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Am",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Esos casi ami",
-            "gos que ten",
-            "s/n"
-        ],
-        [
-            "inventaron cas",
-            "i infamias que",
-            " me ubica",
-            "n en leyenda",
-            "./n"
-        ],
-        [
-            "Ese casi mun",
-            "do en que cre",
-            "es/n"
-        ],
-        [
-            "casi estamos p",
-            "or tomar parti",
-            "do equivocado",
-            "./n"
-        ],
-        [
-            "Nada me inter",
-            "esa que no sea imposi",
-            "ble de lograr",
+            "",
+            "",
             "/n"
         ],
         [
-            "será por eso que me",
-            " fije en ti/nno "
+            "E",
+            "so  casi amigos qu",
+            "e  tenés/n"
         ],
         [
-            "supe oír las ",
-            "advertencias q",
-            "ue hacían los dem",
-            "ás./n"
+            "Cas  ayudan d",
+            "esenterrart /n S",
+            "e  organizan en un c",
+            "as  club absurd/n"
         ],
         [
-            "Esos casi vi",
-            "cios que tene",
-            "s/nn"
+            "Inventaron casi infa",
+            "mia  que me ubican e",
+            "n leyenda /n E",
+            "se  casi bondón q",
+            "u  cree/n"
         ],
         [
-            "o amerita q",
-            "ue seamos cit",
-            "a de los sáb",
-            "ados./n"
+            "Casi punto está de",
+            "replegars/n"
         ],
         [
-            "Nada me inter",
-            "esa que no sea imposi",
-            "ble de logra",
-            "r/n"
+            "Ese casi algo qu",
+            "e  crees que somos/n"
         ],
         [
-            "será por eso que me f",
-            "ije en ti/n"
-        ],
-        [
-            "no supe oír las ",
-            "advertencias qu",
-            "e hacían los dem",
-            "s/n"
-        ],
-        [
-            "Soy capaz de seg",
-            "uir escuchando/n"
-        ],
-        [
-            "frases hechas sin t",
-            "on ni son/n"
-        ],
-        [
-            "hice merito que n",
-            "o se ha notado/n"
-        ],
-        [
-            "para estar a tu la",
-            "do.",
+            "Cas  estamos por tomar p",
+            "artid  equivo",
+            "cad /n Nada m",
+            "e  interesa que no sea",
+            "imposibl  de",
+            "logr",
+            "a /n Será por eso qu",
+            "e me fijé en ti /n N",
+            "o  supe oír l",
+            "a  advertencias que hacían l",
+            "o  demás",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Nada me inter",
-            "esa que no sea imposib",
-            "le de lograr",
+            "E",
+            "sto  casi vicios q",
+            "u  tené/n"
+        ],
+        [
+            "Casi ayudan d",
+            "esdibujart /n"
+        ],
+        [
+            "En esta acuarela q",
+            "u  crees que somo/n"
+        ],
+        [
+            "No merita que se",
+            "amo  hija de los sá",
+            "bado /n Nada m",
+            "e  interesa que no se",
+            "imposible de",
+            "logra/n"
+        ],
+        [
+            "Será por eso q",
+            "u me fijé en ti /n N",
+            "o  supe oír l",
+            "as  advertencias que hacían l",
+            "o  demás",
             "/n"
         ],
         [
-            "será por eso que me f",
-            "ije en ti/n"
+            "Soy capaz d",
+            "e  seguir escuch",
+            "and /n Frases hech",
+            "a  sin toniz",
+            "ó  ese mérit",
+            "que no se ha notado p",
+            "ar  estar",
+            "tu lad",
+            "o /n Nada m",
+            "e  interesa que no s",
+            "e  imposible de",
+            "logra/n"
         ],
         [
-            "no supe oír las a",
-            "dvertencias q",
-            "ue hacían los dem",
-            "s/nlas a"
+            "Será por eso q",
+            "ue  me fijé en ti/n"
         ],
         [
-            "dvertencias q",
-            "ue hacían los dem",
-            "s/nlas a"
+            "N  supe oír l",
+            "as  advertencias que hacían l",
+            "os  demás/n"
         ],
         [
-            "dvertencias q",
-            "ue hacían los dem",
-            "s."
+            "Las advertencias que hacían l",
+            "os  demás",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hFuANzNISI4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

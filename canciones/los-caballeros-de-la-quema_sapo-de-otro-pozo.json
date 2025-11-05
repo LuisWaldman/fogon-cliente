@@ -2,217 +2,420 @@
     "cancion": "sapo-de-otro-pozo",
     "banda": "los-caballeros-de-la-quema",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
                     "Em",
-                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "D",
-                    "Am",
-                    "D",
-                    "C",
-                    "Am",
-                    "D"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
-                    "D",
-                    "Am",
-                    "D",
-                    "C",
-                    "C/B",
-                    "Am",
-                    "D"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "G",
-                    "D",
-                    "Am",
-                    "C",
-                    "C/B",
-                    "Am",
-                    "D",
-                    "G"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
             3,
-            3,
-            0,
-            2,
-            3,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Ojala supiese andar mas abrig",
-            "ado de tu olvido, siempre que te nombran./n"
-        ],
-        [
-            "Ojala pudiera ir a chapote",
-            "ar en otros besos, lejos de tu boca./n"
-        ],
-        [
-            "Pero resu",
-            "lta que s",
-            "oy torpe para e",
-            "ntender,/n"
-        ],
-        [
-            "como un caballo de ajedrez gastado/n"
-        ],
-        [
-            "salto entre las sombras vu",
-            "elvo mas piantado./n"
-        ],
-        [
-            "Ojala me atreva a ser mas ase",
-            "sino de mis sueños para no soñarte./n"
-        ],
-        [
-            "Ojala pueda poner en penitenc",
-            "ia mi paciencia, para no esperarte./n"
-        ],
-        [
-            "Pero resu",
-            "lta que s",
-            "oy lerdo para m",
-            "over/n"
-        ],
-        [
-            "como un cab",
-            "allo de ajedrez chiflado,/n"
-        ],
-        [
-            "salto sin saltarte, vu",
-            "elvo tiroteado./n"
-        ],
-        [
-            "Algunas noche te pierdo/nalgunas mañ"
-        ],
-        [
-            "anas te vuelvo a empatar./nAlgunos err"
-        ],
-        [
-            "ores son deliciosos.../nno le tengas"
-        ],
-        [
-            " miedo l",
-            "inda,/n"
-        ],
-        [
-            "a un sapo de otro pozo",
-            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Algunas noches me enfermo/nalgunas mañ"
-        ],
-        [
-            "anas te vuelvo a sangrar./nAlgunos err"
-        ],
-        [
-            "ores son deliciosos.../nno le tengas "
-        ],
-        [
-            "miedo he",
-            "rmosa,/n"
-        ],
-        [
-            "a un sapo de otro pozo",
-            ".",
+            "Esta  es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Ojala que aprenda a ser mas e",
-            "legante en mi derrota cuando mas te piense./n"
-        ],
-        [
-            "Ojala me salga ser mas testar",
-            "udo con mi orgullo cuando mas te alejes./n"
-        ],
-        [
-            "Pero resu",
-            "lta que e",
-            "stoy viejo para",
-            " crecer/n"
-        ],
-        [
-            "y como u",
-            "n caballo de ajedrez pifiado,/n"
-        ],
-        [
-            "salto mis miserias, vu",
-            "elvo a ningun lado./n"
-        ],
-        [
-            "Algunas noches te pierdo/nalgunas mañan"
-        ],
-        [
-            "as te vuelvo a empatar./nAlgunos erro"
-        ],
-        [
-            "res son deliciosos.../nno le tengas "
-        ],
-        [
-            "miedo li",
-            "nda,/n"
-        ],
-        [
-            "a un sapo de otro pozo",
-            ".",
+            "E",
+            "sta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Algunas noches te entierro/nalgunas mañan"
+            "Esta es ",
+            "",
+            "una ",
+            "",
+            "",
+            "canción en español de rock argentino. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "as te vuelvo a soñar./nAlgunos erro"
+            "Es",
+            "ta es ",
+            "una ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "res son deliciosos.../nno le tengas "
+            "E",
+            "sta es ",
+            "una canción en español de rock arg",
+            "entino. \n\nEsta ",
+            "es ",
+            "una canción en español de rock argentino. \n\nEsta es una canción en español de ",
+            "rock argentino. \n\nEsta es una canción en español ",
+            "de rock ar",
+            "gentino. ",
+            "",
+            "/n"
         ],
         [
-            "miedo he",
-            "rmosa,/n"
+            "Esta es una canción en español de ",
+            "rock argentino. /n"
         ],
         [
-            "a un sapo de otro pozo",
-            ".",
-            ""
+            "Esta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de ",
+            "rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es ",
+            "una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de ro",
+            "ck argentino. \n\nEsta es una canción en español de ",
+            "rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de ",
+            "rock argentino. \n\nEsta es una canción en español ",
+            "de rock argentino. \n\nEsta es una canción en ",
+            "español de rock argentino. \n\nEsta es una canción en español ",
+            "de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es ",
+            "una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es ",
+            "una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español ",
+            "de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nE",
+            "sta es una canción en español de rock argentino. \n\nEsta es una canción en español ",
+            "de rock argentino. \n\nEsta ",
+            "es una canción en español de r",
+            "ock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español ",
+            "de rock argentino. \n\nEsta es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de ",
+            "rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta ",
+            "es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Esta es una canción en español de ",
+            "rock argentino. /n"
+        ],
+        [
+            "Esta es ",
+            "una canción en ",
+            "español de rock argentino. /n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Esta es una canción ",
+            "en ",
+            "español de rock argentino. \n\nEsta es una canción en ",
+            "español de rock argentino. \n\nEsta es una canción en español ",
+            "de rock argentino. \n\nEsta es una canción en español de rock argentino. \n\nEsta es una canción en español de rock argentino. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "TRLGRrqf6zY",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

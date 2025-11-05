@@ -2,257 +2,244 @@
     "cancion": "si-no-me-engana-el-corazon",
     "banda": "julio-sosa",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "C",
+                    "F#7",
+                    "G#7",
+                    "G#m",
+                    "F#7",
+                    "G#7",
+                    "E",
+                    "B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "G#",
+                    "G#",
+                    "B",
+                    "F#7",
+                    "F#7",
+                    "B",
+                    "C#m",
+                    "F#7",
+                    "B",
+                    "B",
+                    "D#",
+                    "D#",
+                    "D#m",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "A#7",
+                    "A#7",
+                    "E",
+                    "D#7",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#7",
+                    "F#7",
+                    "G#7",
+                    "G#7",
+                    "D#7/G",
+                    "Gdim",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "B/F#",
+                    "G#7",
+                    "Gdim",
+                    "F#7",
+                    "B",
+                    "C#m",
+                    "A#7",
+                    "F#7",
+                    "B",
+                    "E",
                     "A7",
-                    "Dm",
-                    "G7",
-                    "G#",
-                    "C#",
-                    "F#7",
-                    "B",
-                    "C#dim",
-                    "F#7",
-                    "B",
-                    "C#m",
-                    "D#m",
-                    "G#7",
-                    "C#m",
-                    "F#7",
-                    "B",
-                    "A#7",
-                    "D#",
-                    "G#",
                     "D#",
                     "A#7",
-                    "D#",
                     "F#",
-                    "C#m",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "F#7",
-                    "B",
+                    "F#7",
                     "A#7",
-                    "D#7",
-                    "F#7",
-                    "B",
-                    "C#m",
-                    "D#m",
-                    "G#7",
-                    "C#7",
-                    "F#7",
-                    "B",
-                    "G#7",
-                    "C#m",
-                    "F#7",
-                    "Gdim",
-                    "B",
-                    "Gdim",
-                    "B",
-                    "B",
-                    "A#dim",
-                    "E/G#",
-                    "D#7/G",
-                    "G#m",
                     "E",
-                    "Fdim",
-                    "B/F#",
-                    "G#7",
-                    "C#m",
-                    "F#7",
-                    "B",
-                    "Gdim",
-                    "F#7",
-                    "B",
-                    "C#m",
-                    "D#m",
-                    "G#7",
-                    "C#m",
-                    "F#7",
-                    "B",
-                    "A#7",
-                    "D#",
-                    "G#",
-                    "D#",
-                    "A#7",
-                    "D#",
-                    "F#",
-                    "C#m",
-                    "F#7",
-                    "B",
-                    "A#7",
+                    "E",
                     "D#7",
                     "B",
-                    "C#m",
-                    "D#m",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "G#7",
-                    "C#7",
                     "F#7",
-                    "B",
                     "G#7",
-                    "C#m",
-                    "F#7",
-                    "Gdim",
-                    "B",
-                    "Gdim",
-                    "B",
-                    "B",
-                    "A#dim",
-                    "E/G#",
+                    "G#7",
                     "D#7/G",
-                    "G#m",
-                    "E",
-                    "Fdim",
-                    "B/F#",
-                    "G#7",
-                    "C#m",
-                    "F#7",
-                    "B",
                     "Gdim",
-                    "Bmaj7"
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            "o se desde qué",
-            " puerto ni por",
-            " dónde lle",
-            "garás, ",
-            "amor que mi no",
-            "stalgia espe",
-            "ra.",
-            "/nUn "
-        ],
-        [
-            "día, cruza",
-            "rás por mi ca",
-            "mino, como un anu",
-            "ncio de la primave",
-            "ra.",
-            "/n¿Será"
-        ],
-        [
-            " mañana ",
-            "o tardarás ta",
-            "l vez? Pero yo s",
-            "iento que estás cerca",
-            " ya.",
-            "/nY a"
-        ],
-        [
-            "sí vivo espera",
-            "ndo, porque s",
-            " que algun",
-            "a vez, s",
-            "onriendo te presentar",
-            "s./nSi no me engaña el cor"
-        ],
-        [
-            "azón, cuando ",
-            "me dice que ven",
-            "drás,/ncomo en el cine y en los cue"
-        ],
-        [
-            "ntos, mi sueño más",
-            " feliz se cumpl",
-            "irá.",
-            "",
-            "/nSi no me engaña el corazón"
-        ],
-        [
-            " (y",
-            " si es ",
-            "sincer",
-            "o) y frente a mí te encuentro un d",
-            "ía,/n"
-        ],
-        [
-            "yo te da",
-            "ré la bienven",
-            "ida, con la du",
-            "lce melo",
-            "día de un can",
-            "tar de amor.",
             "",
             "",
-            "/nYo "
-        ],
-        [
-            "se que tú me b",
-            "uscas como yo ",
-            "te busco a ",
-            "ti, amor",
-            " que ya has ta",
-            "rdado tanto.",
             "",
-            "/nAp"
-        ],
-        [
-            "rate que a",
-            "ún tengo el alma ",
-            "joven y hay en mis l",
-            "abios un alegre canto",
-            " para ti",
-            "/nYo se c"
-        ],
-        [
-            "omo eres ",
-            "y como es tu voz",
-            ", porque en mis su",
-            "eños ya te imagin",
-            "é./nPor"
-        ],
-        [
-            " eso, si algún",
-            " día nos cruz",
-            "áramos los",
-            " dos, s",
-            " que te reconoce",
-            "ré./nSi no me engaña el cor"
-        ],
-        [
-            "azón, cuando ",
-            "me dice que ven",
-            "drás,/ncomo en el cine y en los cue"
-        ],
-        [
-            "ntos, mi sueño más",
-            " feliz se cumpl",
-            "irá.",
             "",
-            "/nSi no me engaña el corazón"
-        ],
-        [
-            " (y",
-            " si es ",
-            "sincer",
-            "o) y frente a mí te encuentro un d",
-            "ía,/n"
-        ],
-        [
-            "yo te da",
-            "ré la bienven",
-            "ida, con la du",
-            "lce melo",
-            "día de un can",
-            "tar de amor.",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "(Si no me engaña el cor",
-            "azon)"
+            "No sé des",
+            "de qué puerto ni por dónd ",
+            "llegarás, amo",
+            "r que mi nostalgia esp",
+            "era, un día ",
+            "cruzarás  por mi cam",
+            "ino como un anu",
+            "ncio de la prima",
+            "vera, será mañana ",
+            "tardará tal ve",
+            "z, pero yo sien",
+            "to que está cerca ya, ",
+            "así vi",
+            "vo esperando porque sé que ",
+            "alguna vez sonri",
+            "endo te prese",
+            "ntarás. /n"
+        ],
+        [
+            "Si no me engañe el ",
+            "corazón, ",
+            "cuánto me dice que ",
+            "venderás,  ",
+            "como en el cine en los ",
+            "cuentos mi sueño más f",
+            "eliz se c",
+            "umplirá. /n"
+        ],
+        [
+            "Si no me engañ ",
+            "el corazón ",
+            "frente mí te en",
+            "cuentro un día ",
+            "yo te daré la bi",
+            "envenida con la dulc ",
+            "melodía de un cant",
+            "ar de amor. ",
+            "/n"
+        ],
+        [
+            "Yo sé que tú me bus",
+            "cas como yo te busco ",
+            "ti, amor que ya has t",
+            "ardado tanto, ",
+            "apúrate que aún teng",
+            "o el alma joven ",
+            "hay en mis labios un a",
+            "legre canto, ya ",
+            "sé cómo eres ",
+            "cómo es tu voz p",
+            "orque en mis sueños ",
+            "yo te imagin",
+            "é, por eso si alg",
+            "ún día nos cruzáramos ",
+            "los ojos, amor te ",
+            "recono",
+            "ceré. /n"
+        ],
+        [
+            "Si no me engañe el c",
+            "orazón, ",
+            "cuánto me dice que v",
+            "enderás, c",
+            "omo en el cine en los c",
+            "uentos mi sueño más f",
+            "eliz se cu",
+            "mplirá/n"
+        ],
+        [
+            "Si no me engañe el ",
+            "corazón ",
+            "frente mí te encu",
+            "entro un día, ",
+            "yo te daré la bie",
+            "nvenida con la dulce ",
+            "melodía  de un c",
+            "antar ",
+            "de a",
+            "mor",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "1SyS8hzdzjg",
+            "delay": 4000.0
+        }
+    ],
+    "calidad": 1
 }

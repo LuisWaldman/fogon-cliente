@@ -2,37 +2,66 @@
     "cancion": "matriz-de-loco",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
+                    "Em",
+                    "Em",
                     "C",
-                    "B"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Em",
-                    "C",
-                    "F",
+                    "Em",
+                    "Em",
                     "Em",
                     "C",
-                    "F",
-                    "C",
-                    "D"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "G",
                     "G",
                     "C",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             },
@@ -42,7 +71,81 @@
                     "Em",
                     "Em",
                     "C",
-                    "B"
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "D",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "D",
+                    "D"
                 ]
             }
         ],
@@ -50,77 +153,139 @@
             0,
             1,
             2,
-            2,
-            2,
-            2,
             3,
-            1
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "  Esa voz s",
-            "e me parece tanto",
-            "/n"
-        ],
-        [
-            "  La discusión no me con",
-            "viene empezar",
-            "/n"
-        ],
-        [
-            "  Tengo que averiguar",
-            "/nQue estoy quer"
-        ],
-        [
-            "iendo decir.",
+            "",
             "",
             "/n"
         ],
         [
-            "Las cosas salen mal pensa",
-            "das desde la",
-            " misma matriz/n"
+            "E",
+            "sa  v",
+            "o  s",
+            "e  m",
+            "e  parece tant",
+            "o  l",
+            "a  discusión n",
+            "o  me conviene",
+            "besar /n"
         ],
         [
-            "Ellas se escapan de m",
-            "í y no hago m",
-            "ás que soportar/n"
-        ],
-        [
-            "Las cosas salen mal n",
-            "a na na na",
+            "Ten",
+            "g  que ave",
+            "riguar  q",
+            "u  estoy querien",
+            "d  decir.",
             "/n"
         ],
         [
-            "Ellas se escapan de m",
-            "í y no hago m",
-            "s que soporta",
-            "r./n"
-        ],
-        [],
-        [
-            "Esa voz ",
-            "defiende causas perdid",
-            "as/n"
-        ],
-        [
-            "La discusión carece ",
-            "de conflictos",
+            "La",
+            "cosas sal",
+            "e  mal pensad",
+            "a  desde la m",
+            "isma  matriz,",
+            "ellas esca",
+            "pa  de mi.",
+            "no hago más q",
+            "ue  soportar,",
+            "las cosas sa",
+            "le  mal,",
+            "e",
+            "l",
+            "l  esc",
+            "apa  de m",
+            "i  no hago m",
+            "á  que sop",
+            "ortar ",
+            "",
+            "",
             "/n"
         ],
         [
-            "Para reafirmar quien es qui",
-            "en/nAquí y ahora."
+            "Esa v",
+            "oz  def",
+            "iend  causa",
+            "perdida",
+            "s  la dis",
+            "cusió  care",
+            "c  de confl",
+            "ictos /n Son dis",
+            "cutivo  par",
+            "reafirmar qui",
+            "é  es quién aqu",
+            "í  ahora.",
+            "",
+            "/n"
         ],
-        []
+        [
+            "Las co",
+            "sa  salen m",
+            "a  pensadas d",
+            "esd  la mism",
+            "matriz, el",
+            "la  escapa",
+            "n  de mi. n",
+            "o  hago más que",
+            "soportar  las",
+            "cosa  sale",
+            "mal,",
+            "el",
+            "la",
+            "escapa",
+            "n  de mi.",
+            "no hago más qu",
+            "soport",
+            "ar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La",
+            "s  cosas sal",
+            "e  mal pen",
+            "sada  desde la misma matriz, ellas esca",
+            "pa  de mi./n"
+        ],
+        [
+            "Las cosas sa",
+            "le  mal",
+            "no hago má",
+            "s  que soportar./n"
+        ],
+        [
+            "Las cosas sa",
+            "le  mal,",
+            "ellas esca",
+            "pan ",
+            "las cosas sa",
+            "liero  mal",
+            "no hago má",
+            "s  que sopor",
+            "tar "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "HGVi_1N3PIM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

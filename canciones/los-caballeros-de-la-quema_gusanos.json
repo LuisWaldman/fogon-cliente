@@ -2,55 +2,565 @@
     "cancion": "gusanos",
     "banda": "los-caballeros-de-la-quema",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
                     "D",
-                    "Bm7"
+                    "A",
+                    "E",
+                    "D",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "A",
-                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
         ]
     },
     "letras": [
         [
-            "Bridg",
-            "e/n"
-        ],
-        [
-            "Estribo",
+            "Esta ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "es ",
+            "",
+            "una c",
+            "an",
+            "ci",
+            "ón en e",
+            "sp",
+            "añ",
+            "ol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "No me",
-            " veng",
-            "as a decir que estoy peor"
+            "No me v",
+            "eng",
+            "as decir que estoy peor \n\nNo me vengas decir que estoy peor \n\nNo me vengas decir que ",
+            "estoy peor \n\nNo me vengas decir que estoy peor \n\nNo me vengas decir que estoy peor \n\nNo me vengas decir que estoy peor /n"
+        ],
+        [
+            "No me ve",
+            "ngas decir que estoy peor \n\nNo ",
+            "me vengas decir ",
+            "que estoy peor \n\nNo me ve",
+            "ngas decir que ",
+            "estoy peor /n"
+        ],
+        [
+            "Nene ",
+            "frega tu \n\nV\nI\nP ",
+            "tu carita ",
+            "de habitue ",
+            "/n"
+        ],
+        [
+            "Del",
+            "icioso te queda es",
+            "te nuevo \n\nI\nPhon ",
+            "",
+            "tu novia /n"
+        ],
+        [
+            "Acabando  ",
+            "en el vide ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sha -na -na -na -na, ",
+            "sha -na -na -na \n\nSha ",
+            "-na -na -na -na /n"
+        ],
+        [
+            "No me vengas ",
+            "mi fiesta \n\nSi ",
+            "no te dive",
+            "rtís \n\nNadi ",
+            "venga por vos /n"
+        ],
+        [
+            "Soldadito ",
+            "te grite ",
+            "/n"
+        ],
+        [
+            "Si te ",
+            "queda grande la ",
+            "noche sin dormi",
+            "r \n\nEn",
+            "senate la pi",
+            "el \n\nGuardadito ",
+            "en tu hilo ",
+            "/n"
+        ],
+        [
+            "No ",
+            "me g",
+            "astes con ",
+            "tus conse",
+            "jos \n\nNo ",
+            "más p",
+            "rego de ",
+            "panza vieja /n"
+        ],
+        [
+            "Todavía ",
+            "puedo  ser me",
+            "jor de lo que ",
+            "fui \n\nPero ",
+            "no voy lust",
+            "rar mis zapatos \n\nP",
+            "ara hacer pie ",
+            "/n"
+        ],
+        [
+            "Si vos que",
+            "rés llegar viejo c",
+            "omo \n\nTarzan /n"
+        ],
+        [
+            "Pero ",
+            "te falta \n\nLiana ",
+            "te ",
+            "falta \n\nLiana /n"
+        ],
+        [
+            "No no ",
+            "no no no ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No no no no ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No ",
+            "me ga",
+            "stes con ",
+            "tus cons",
+            "ejos \n\nNo ",
+            "más pre",
+            "go de p",
+            "anza vieja \n\nC",
+            "uando me ",
+            "muera  no tengan pie",
+            "dad de mí /n"
+        ],
+        [
+            "Usen",
+            "me de ropero ",
+            "regalen mi ",
+            "riñ",
+            "o \n\nP",
+            "ero no q",
+            "uiero pudrirme en ",
+            "un cementer",
+            "io no hag",
+            "an citas con \n\nDi",
+            "os \n\nLos gusanos nos ",
+            "almuerzan  igual /n"
+        ],
+        [
+            "Los gusanos nos ",
+            "almuerzan igual /n"
+        ],
+        [
+            "Los gusanos nos ",
+            "almuerzan igual /n"
+        ],
+        [
+            "Los gusanos nos ",
+            "almuerzan igu",
+            "al \n\nLos gusano",
+            "s nos almuerz",
+            "an igual \n\nNo ",
+            "no no no no ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Igual /n"
+        ],
+        [
+            "Sha -na -na -na -n",
+            "a, sha -na -na \n\nSha ",
+            "-na -na -na -na /n"
+        ],
+        [
+            "Los gusanos nos alm",
+            "uerzan igual \n\nSha -na -na -na -n",
+            "a, sha -na -na /n"
+        ],
+        [
+            "Sha -na -na -na -na ",
+            "/n"
+        ],
+        [
+            "Sha -na -na -na ",
+            "-na, sha -na ",
+            "-na /n"
+        ],
+        [
+            "Sha -na -na -na -na \n\nLos g",
+            "us",
+            "an",
+            "nos almuerzan i",
+            "gual \n\nLos gusanos nos almu",
+            "erzan igual /n"
+        ],
+        [
+            "Los gusanos nos ",
+            "almu",
+            "erzan ",
+            "igu",
+            "al \n\nMuchas gracias ",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "8KKATOu-2Hw",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

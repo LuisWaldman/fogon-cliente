@@ -2,57 +2,258 @@
     "cancion": "la-muerte-es-mujer",
     "banda": "babasonicos",
     "escala": "Bm",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Bm",
-                    "A",
                     "G",
-                    "Em"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
-                    "A#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
                     "A",
                     "G",
                     "Em",
+                    "A#",
+                    "A#",
+                    "Bm",
+                    "Bm",
                     "A",
-                    "A#-Bm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "s, no puedo cree",
-            "r /nque lave sus p"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ies e",
-            "n mi cha",
-            "rco ",
-            "/ny que luego me m"
+            "Est",
+            "a  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ire y que se pei",
-            "ne asi /nno puedo cre"
+            "E",
+            "st  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "er, n",
-            "o puedo creer.",
+            "Esta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est  es",
+            "u",
+            "n",
+            "a",
+            "",
+            "canció  en e",
+            "sp",
+            "añ",
+            "de rock argentino. /n No se me s",
+            "uave ",
+            "no se me s",
+            "uave ",
+            "n ",
+            "s",
+            "e  me suave.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "O/n"
+        ],
+        [
+            "Dios,",
+            "no puedo c",
+            "ree  q",
+            "ue  lave sus p",
+            "ies  e",
+            "n  mi c",
+            "harc ",
+            "que luego me m",
+            "ir ",
+            "que se peine",
+            "así /n N",
+            "o  puedo cr",
+            "eer  n",
+            "o  puedo c",
+            "re",
+            "er ",
+            "",
             "",
             ""
         ]
@@ -61,8 +262,10 @@
         {
             "tipo": "Youtube",
             "id": "GmIYiuyrvHc",
-            "delay": 0
+            "delay": 4450.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

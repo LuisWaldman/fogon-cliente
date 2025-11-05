@@ -8,170 +8,388 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m/E",
+                    "F#m/E",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m/E",
+                    "F#m/E",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
                 "acordes": [
                     "D",
                     "A",
-                    "E",
-                    "D/A",
+                    "A",
+                    "A",
                     "A",
                     "D",
                     "A",
-                    "E",
-                    "D/A",
                     "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
                     "F#m",
-                    "F#m/F",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m/E",
                     "F#m/E",
                     "B",
-                    "A",
-                    "D",
-                    "G",
-                    "C",
-                    "Esus4",
-                    "E",
-                    "F#m",
-                    "F#m/F",
-                    "F#m/E",
                     "B",
-                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "A",
                     "D",
+                    "A G",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
                     "A",
                     "D",
-                    "A",
-                    "B",
                     "D",
-                    "G",
-                    "Esus4",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "E",
                     "E",
                     "G",
-                    "Esus4",
-                    "E",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
                     "A",
                     "D",
-                    "G",
-                    "C",
-                    "E",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "D",
                     "E",
+                    "Em",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
                     "D/F#",
-                    "E",
-                    "D",
-                    "E",
                     "D/F#",
-                    "E"
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D/F#"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Hay que salir a pele",
-            "ar /n"
+            "Hay q",
+            "u  salir pel",
+            "ear  hay q",
+            "ue  salir luc",
+            "har /n Hay q",
+            "ue  volver encontrar to",
+            "da  las cosas divinas",
+            "defender el lu",
+            "gar /n"
         ],
         [
-            "Hay que salir a l",
-            "uchar ",
-            "/n"
+            "Tenés que hacerte va",
+            "ler  n",
+            "o  sos un trapo de p",
+            "iso /n"
         ],
         [
-            "Hay que volver a encon",
-            "trar /nTodas las cosas di"
+            "Hoy elegís un país,",
+            "podés cambiar este gris",
+            ",  ahora no lo haces m",
+            "ás /n E",
+            "s  el momento mi a",
+            "mor ",
+            "es un momento cr",
+            "ucial ",
+            "hay que sa",
+            "li  al s",
+            "o",
+            "l",
+            ". /n"
         ],
         [
-            "vinas /ndefender el "
+            "Y",
+            "o  no me banco el do",
+            "lor  q",
+            "u  me cargan en la e",
+            "spalda /n Des",
+            "piertens  de una vez,",
+            "si no me hagan mi,",
+            "sentido que no se b",
+            "ancan /n"
         ],
         [
-            "lugar ",
-            "/n"
+            "Conectense de una v",
+            "ez, ",
+            "van ver que es p",
+            "osible /n"
         ],
         [
-            "Es el momento mi am",
-            "or /n"
+            "Despiertense de una ve",
+            "z  algo hay que volver ha",
+            "ce  en este puto l",
+            "ugar /n"
         ],
         [
-            "Es un momento cruci",
-            "al /n"
+            "Alguna vez en la v",
+            "id  amor,",
+            "vamos volver",
+            "hablar. /n H",
+            "ay  que volver",
+            "",
+            "empezar, hay que volver s",
+            "oñar/n"
         ],
         [
-            "Hay qu",
-            "e sa",
-            "lir ",
-            "al sol ",
+            "Hay que volver se",
+            "nti  que no se puede vi",
+            "vi  sin el sapo qu",
+            "e  alz",
+            "ar ",
             "",
             "/n"
         ],
         [
-            "Alguna vez en la vida am",
-            "or /n"
-        ],
-        [
-            "Vamos a volver a hablar",
-            " /nHay que vo"
-        ],
-        [
-            "lver a empez",
-            "ar /nHay que vo"
-        ],
-        [
-            "lver a soña",
-            "r /nHay que vo"
-        ],
-        [
-            "lver a senti",
-            "r /nQue no se puede v"
-        ],
-        [
-            "ivir sin esa po",
-            "ca de sa",
-            "l ",
+            "El odio me hace",
+            "sentir",
+            "los cretinos d",
+            "e  siempre",
+            ". /n Pero yo puedo",
+            "cambia  el odio por l",
+            "ibertad  también me asista",
+            "me pierd",
+            "e /n Hay que salir",
+            "pelea",
+            "r  hay que sali",
+            "lucha",
+            "r /n Hay que volver",
+            "encontrar todas las co",
+            "sa  divinas, de entender",
+            "e  lu",
+            "gar ",
+            "el lug",
+            "ar ",
             "",
-            "/nDefender el "
-        ],
-        [
-            "lugar /nEl l"
-        ],
-        [
-            "ugar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Hay qu",
-            "e sal",
-            "ir a",
-            "l sol ",
+            "Hay",
+            "qu  sal",
+            "i  al s",
+            "o",
+            "l",
+            "./n"
+        ],
+        [
+            "H",
+            "a  q",
+            "u  salir a",
+            "l  so",
+            "l /n"
+        ],
+        [
+            "S",
+            "ali  a",
+            "l  so",
+            "l /n"
+        ],
+        [
+            "S",
+            "ali  a",
+            "l  so",
+            "l. /n"
+        ],
+        [
+            "S",
+            "ali  a",
+            "l  s",
+            "ol ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Sa li",
-            "r /n"
-        ],
-        [
-            "Al sol",
-            " /n"
-        ],
-        [
-            "Sa li",
-            "r /n"
-        ],
-        [
-            "Al sol",
-            ""
+            "Salir al sol. /n Salir al sol."
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "jZbCFirpEFI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

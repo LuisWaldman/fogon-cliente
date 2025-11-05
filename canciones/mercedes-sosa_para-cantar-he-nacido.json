@@ -8,61 +8,232 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "C#m",
                     "C#7",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
                     "F#m"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G#7",
+                    "C#7",
+                    "C#7",
                     "F#m",
-                    "E",
-                    "G#7",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#7",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "C#7",
+                    "C#7",
+                    "F#m",
+                    "F#m",
+                    "C#m",
                     "C#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C#7",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#7",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "ra cantar he nacido/nsoy copla que "
+            "he nacido soy capla que e",
+            "l  viento lleva,",
+            "veces canto en el árbol que se de",
+            "sej  de pena,",
+            "veces bebo del fuego palabra",
+            "s  de primavera.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "el viento l",
-            "leva/nque se deshoja de pe"
+            "M",
+            "i  sangre canta por dentro como",
+            "la lluvia por fuera,",
+            "la noche canta convierte sus p",
+            "ájaras  en estrellas, pe",
+            "r  cuando canta el pueblo mu",
+            "sicaliz  mis velas.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "na/na"
+            "Y",
+            "o  nunca miro la rosa por s",
+            "u  color de quimera,",
+            "la miro porque ella tiene l",
+            "a  sangre de los que sueñ",
+            "an  porque en sus gajos florecen l",
+            "as  manos del que las siembra./n"
         ],
         [
-            " veces bebo del f",
-            "uego/npalabras "
+            "Si el canto no se levanta",
+            "com  lo que era del fuego",
+            ",  si no libera las pena",
+            "s  de las que están en la tierr",
+            "a  de nada sirve que sue",
+            "n  la voz de la chacarera",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "de primaver",
-            "a.-"
+            "Así como c",
+            "ant  el río cuando la noche l",
+            "o  ciega, sin mir",
+            "a  su camino sigue su rumbo",
+            "d  piedra, luego le ca",
+            "nt  los que vienen caminando p",
+            "or  la tierra,/n"
+        ],
+        [
+            "Santiago del /n Estero.",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "opla  azul estrellas una gu",
+            "itarr  encendida,",
+            "su corazón de pueblo la vid",
+            "sufre agita,",
+            "con el perfil de sus bombos las e",
+            "speranza  marchitas.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "P",
+            "o  eso canto las cosas que m",
+            "e  va dando la vida,",
+            "los changuitas de barro ond",
+            "eand  lunas perdidas,",
+            "al tallo con sus espinas a",
+            "l hombre con sus heridas. /n S",
+            "i  el canto no se levanta c",
+            "om  lo que era del fuego,",
+            "si no libera las penas d",
+            "e  las que están en la tierra",
+            ",  de nada sirve que suen",
+            "la voz de la chacarera.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ev8ETho1vnM",
-            "delay": 0
+            "delay": 15940.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_para-cantar-he-nacido.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_para-cantar-he-nacido.mp3",
+    "calidad": 1
 }

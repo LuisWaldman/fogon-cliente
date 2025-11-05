@@ -2,125 +2,504 @@
     "cancion": "ni-a-la-esquina",
     "banda": "los-caballeros-de-la-quema",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
-                    "D",
+                    "A",
                     "C",
-                    "D"
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "Bm",
+                    "D",
+                    "D",
+                    "G",
+                    "Bm",
+                    "G",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "D",
                     "C",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
                     "Em",
                     "Bm",
-                    "C",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
             1,
             2,
-            2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "Mentira amar",
-            "ga: el vi",
-            "no no ayuda",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Me tome un r",
-            "io y segu",
-            "is aca",
+            "Menti",
+            "ra amarga \n\nEl ",
+            "vino no ",
+            "ayuda /n"
+        ],
+        [
+            "Me tom ",
+            "un río ",
+            "seguís ",
+            "acá /n"
+        ],
+        [
+            "R",
+            "iéndote en ",
+            "esta sill",
+            "a vac",
+            "ía el ",
+            "mozo en pata",
+            "s que empieza ",
+            "balear ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "es lo que siem",
+            "pre se dobla ",
+            "se ro",
+            "mpe \n\nDe ",
+            "noche todo ",
+            "es beso ca",
+            "ramal /n"
+        ],
+        [
+            "Pero ",
+            "canta  el gall ",
+            "nos hac",
+            "emos maes",
+            "tros \n\nEn ",
+            "este horrible ",
+            "arte  de l",
+            "astimar ",
+            "ahí vamos \n\nCon ",
+            "este am",
+            "or que no ba",
+            "ña la esq",
+            "uina \n\nB",
+            "uscando cie",
+            "gos una tabla ",
+            "en el mar /n"
+        ],
+        [
+            "Con ",
+            "este amo ",
+            "que mordió la ",
+            "banq",
+            "uina \n\nC",
+            "uesta arriba ",
+            "pedaleando ",
+            "un mal /n"
+        ],
+        [
+            "Cue",
+            "sta arriba ",
+            "pedaleand ",
+            "un mal ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "riendote",
-            " en esta si",
-            "lla vacia",
+            "Amanece ",
+            "el sol ",
+            "verd",
+            "ugo \n\nSe ",
+            "come  crudas ",
+            "las sombras ",
+            "del bar ",
             "/n"
         ],
         [
-            "Y el mozo e",
-            "n patas empiez",
-            "a a baldear.",
+            "Escabeado",
+            "res planchand ",
+            "billet",
+            "es \n\nAde ",
+            "estribo jefe",
+            ", panoha ",
             "/n"
         ],
         [
-            "Y es lo de ",
-            "siempre... se d",
-            "obla y se rompe",
-            ",/n"
+            "Salgo ",
+            "la escarcha ",
+            "me trepo al ",
+            "80 /n"
         ],
         [
-            "de noche to",
-            "do es beso y ca",
-            "rnaval,",
-            "/n"
+            "Hacien",
+            "do zetas lle",
+            "go tu b",
+            "alcó",
+            "n \n\nTe m",
+            "ereces atrig",
+            "os que hoy no ",
+            "tengo /n"
         ],
         [
-            "pero canta el ",
-            "gallo y nos hacem",
-            "os maestro",
-            "s/n"
+            "Mientras  ",
+            "los dejo gua",
+            "rda esta canción /n"
         ],
         [
-            "en este ",
-            "horrible arte de l",
-            "astimar.",
-            "/nY ahi vamos, "
+            "Ahí vam",
+            "os \n\nCon e",
+            "ste amor que ",
+            "no baña la e",
+            "squina /n"
         ],
         [
-            "con este am",
-            "or que no va",
-            " ni a la esquina",
-            ",/n"
+            "Buscan",
+            "do ciegos una ",
+            "tabla en el ",
+            "mar /n"
         ],
         [
-            "buscando cie",
-            "gos una tab",
-            "la en el mar.",
-            "/n"
+            "Con este a",
+            "mor que mord",
+            "ió la ba",
+            "nqui/n"
         ],
         [
-            "Con este am",
-            "or que mord",
-            "io la banquina",
-            ",/n"
+            "Cuesta arri",
+            "ba peda",
+            "leando un mal /n"
         ],
         [
-            "cuesta ar",
-            "riba y pedal",
-            "eando mal.",
+            "Con ",
+            "este am",
+            "or que no ba",
+            "ña la esqu",
+            "ina \n\nB",
+            "uscando cie",
+            "gos una tabla ",
+            "en el mar /n"
+        ],
+        [
+            "Con e",
+            "ste amor ",
+            "que mordió la ",
+            "banq",
+            "uina \n\nCues",
+            "ta arriba p",
+            "edaleando un ",
+            "mal /n"
+        ],
+        [
+            "Cuest ",
+            "arriba pe",
+            "daleando un ",
+            "mal /n"
+        ],
+        [
+            "Cuesta a",
+            "rriba ped",
+            "aleando un ",
+            "mal ",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -128,8 +507,9 @@
         {
             "tipo": "Youtube",
             "id": "C2JkZz549JE",
-            "delay": 0
+            "delay": 5000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

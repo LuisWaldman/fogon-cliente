@@ -2,30 +2,169 @@
     "cancion": "fiesta-popular",
     "banda": "babasonicos",
     "escala": "C5",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C5",
                     "D5",
-                    "C5",
                     "D5",
-                    "B5",
-                    "D5",
-                    "B5",
                     "D5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D5",
+                    "G5",
                     "G5",
                     "C5",
+                    "C5",
+                    "G5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D5",
+                    "B5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "G5",
+                    "G5",
+                    "C5",
+                    "C5",
+                    "G5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "D5"
                 ]
             }
@@ -33,104 +172,151 @@
         "orden_partes": [
             0,
             1,
-            1,
-            0,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "Juego de látigos",
-            " mis dedos quieren salpicar/n"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Risa de latas v",
-            "iento peina chispas/n"
+            "Fuego de lán",
+            "tigos  pincelos quiere",
+            "saludar",
+            "/n"
         ],
         [
-            "No seas infeliz d",
-            "ejate arrastrar por el carnaval/n"
+            "Grisa de l",
+            "atas  yendo pe",
+            "inachispa ",
+            "/n"
         ],
         [
-            "Noche de máscaras ",
-            "déjate influenciar por el caos    X2    X2/n"
+            "No seas i",
+            "nfeliz  déjate arras",
+            "tra  por e",
+            "l  carnaval/n"
         ],
         [
-            "Chicas ricas ",
-            "no le tengan miedo e",
-            "sto es sólo una fi",
-            "esta popular/n"
+            "No te d",
+            "é  máscaras, déjate infl",
+            "uencia  por el caos",
+            "",
+            "",
+            "/n"
         ],
         [
-            "chicos ricos ",
-            "no se asusten tanto ",
-            "esto es sólo una f",
-            "iesta popular/n"
+            "Ricas",
+            ",  ricas, no le te",
+            "ngan  miedo, esto e",
+            "s  solo una fiesta po",
+            "pula /n Chicos",
+            "ricos, no se ha s",
+            "ustentado  esto e",
+            "s  solo una fiesta popu",
+            "la ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "orga de plásticos ",
-            "chusma de la capital/n"
+            "Raya d",
+            "e  plásticos, l",
+            "ujm  de la capital",
+            "",
+            "/n"
         ],
         [
-            "zumbadores ",
-            "chuchería seria/n"
+            "Zumbadores ",
+            "cucherías ser",
+            "ia /n"
         ],
         [
-            "no seas infeliz d",
-            "ejate arrastrar por el carnaval/n"
+            "N",
+            "o  seas infeliz, déj",
+            "at  arrastrar por e",
+            "l  carnava",
+            "l /n N",
+            "o  te dé máscaras, dé",
+            "jate  influenciar por e",
+            "l  caos",
+            "",
+            "/n"
         ],
         [
-            "noche de máscaras ",
-            "déjate influenciar por el caos   X2      X2/n"
+            "R",
+            "icas  ricas, n",
+            "o  le tengan miedo,",
+            "esto es solo una f",
+            "iest  popular/n"
         ],
         [
-            "Chicas ricas ",
-            "no le tengan miedo e",
-            "sto es sólo una fi",
-            "esta popular/n"
+            "Chicos, ricos, n",
+            "o  se ha sustentado,",
+            "est  es solo una fie",
+            "st  popular",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "chicos ricos ",
-            "no se asusten tanto ",
-            "esto es sólo una f",
-            "iesta popular/n"
+            "Ric",
+            "as  ricas, no l",
+            "e  tengan miedo, e",
+            "sto  es solo una fiesta p",
+            "opula /n Chic",
+            "os  ricos, no se h",
+            "sustentado, esto e",
+            "s  solo una fiesta po",
+            "pula /n Ricas,",
+            "ricas, no le tengan",
+            "miedo  esto es",
+            "sol  una fiesta popul",
+            "a /n Chicos, r",
+            "icos  no se han susten",
+            "tado  esto es solo u",
+            "n  fiesta popular",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Chicas ricas ",
-            "no le tengan miedo e",
-            "sto es sólo una fi",
-            "esta popular/n"
-        ],
-        [
-            "chicos ricos ",
-            "no se asusten tanto ",
-            "esto es sólo una f",
-            "iesta popular/n"
-        ],
-        [
-            "Chicas ricas ",
-            "no se tengan miedo e",
-            "sto es sólo una fi",
-            "esta popular/n"
-        ],
-        [
-            "chicos ricos ",
-            "no se desesperen, es",
-            "to no termina es un",
-            "a fuesta popular."
+            "Subtítulos por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "UwQI4cFd9E4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

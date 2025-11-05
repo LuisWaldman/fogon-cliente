@@ -2,45 +2,646 @@
     "cancion": "voy-a-buscarte",
     "banda": "los-caballeros-de-la-quema",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 184,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
                     "G",
-                    "Am"
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "Y voy",
-            " a ca",
-            "minar ",
-            "sin luna,"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En ",
+            "el bor",
+            "de de una h",
+            "erida que ",
+            "no duerme ",
+            "",
+            "",
+            "",
+            "",
+            "la ",
+            "orilla ",
+            "de la som",
+            "bra del d",
+            "olor /n"
+        ],
+        [
+            "Em",
+            "pi",
+            "ez",
+            "calmar ",
+            "mis pies ",
+            "con ",
+            "las gotas de ",
+            "tu r",
+            "isa ",
+            "/n"
+        ],
+        [
+            "Va ",
+            "ser tan en",
+            "orme el v",
+            "iaje ",
+            "mi nort ",
+            "será el ",
+            "sur ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Se ",
+            "desperesa ",
+            "las t",
+            "ormen",
+            "tas por ",
+            "veni",
+            "r ",
+            "",
+            "/n"
+        ],
+        [
+            "Oscureci",
+            "endo tan",
+            "tos sue",
+            "ños que ",
+            "nos qu",
+            "edan ",
+            "por c",
+            "um",
+            "pl",
+            "ir ",
+            "voy ",
+            "camin",
+            "ar sin lu",
+            "na, voy ",
+            "ser las hu",
+            "ellas que nu",
+            "nca pise /n"
+        ],
+        [
+            "Yo voy ",
+            "inve",
+            "ntarte, ",
+            "",
+            "yo voy ",
+            "bus",
+            "carte ",
+            "",
+            "/n"
+        ],
+        [
+            "Voy ",
+            "desfil",
+            "ar mis hu",
+            "esos has",
+            "ta el últim",
+            "o centavo ",
+            "de mi pi",
+            "el \n\nYo ",
+            "voy sa",
+            "carte",
+            "",
+            "yo ",
+            "voy bu",
+            "scar",
+            "te ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tr",
+            "epa el v",
+            "iento de",
+            "speinando ",
+            "los rec",
+            "uerdo",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Quem ",
+            "el suelo ",
+            "hasta  que ",
+            "se entierra el ",
+            "sol ",
+            "",
+            "/n"
+        ],
+        [
+            "Empieza ",
+            "crecer mi ",
+            "seda ",
+            "en la n",
+            "oche su d",
+            "esve",
+            "lo ",
+            "/n"
+        ],
+        [
+            "Acari",
+            "cio tu m",
+            "irad",
+            "cerca de ",
+            "la cruz ",
+            "del sur ",
+            "",
+            "",
+            "",
+            "",
+            "ya b",
+            "ostez",
+            "an las b",
+            "atall",
+            "as por v",
+            "enir ",
+            "",
+            "",
+            "afil",
+            "ó el hac",
+            "ha de un ",
+            "desti",
+            "no que ",
+            "nos que",
+            "dan por ",
+            "viv",
+            "ir ",
+            "",
+            "",
+            "voy ",
+            "caminar sin ",
+            "luna",
+            ", voy ",
+            "ser las huellas ",
+            "que nunca p",
+            "ise \n\nYo ",
+            "voy i",
+            "nventa",
+            "rte, ",
+            "",
+            "yo voy ",
+            "busca",
+            "rte ",
+            "/n"
+        ],
+        [
+            "Voy ",
+            "des",
+            "filar mis h",
+            "ueso",
+            "hasta el úl",
+            "timo centav ",
+            "de mi p",
+            "iel \n\nYo ",
+            "voy sa",
+            "carte",
+            "",
+            "yo ",
+            "voy b",
+            "usca",
+            "rte /n"
+        ],
+        [
+            "Yo ",
+            "voy b",
+            "usc",
+            "art",
+            "yo ",
+            "voy b",
+            "uscar",
+            "te /n"
+        ],
+        [
+            "Yo ",
+            "voy b",
+            "usc",
+            "art",
+            "yo ",
+            "voy busc",
+            "arte ",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "voy b",
+            "usc",
+            "art",
+            "yo ",
+            "voy buscarte ",
+            "",
+            "/n"
+        ],
+        [
+            "Yo voy ",
+            "busc",
+            "arte, ",
+            "",
+            "yo voy ",
+            "busca",
+            "rte /n"
+        ],
+        [
+            "Yo ",
+            "voy ",
+            "busc",
+            "arte, ",
+            "yo ",
+            "voy bu",
+            "scarte ",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "voy b",
+            "uscart",
+            "e, ",
+            "yo voy ",
+            "b",
+            "uscar",
+            "/n"
+        ],
+        [
+            "Voy ",
+            "bu",
+            "scart",
+            "",
+            "",
+            "voy buscart ",
+            "",
+            "/n"
+        ],
+        [
+            "Yo voy ",
+            "invent",
+            "arte ",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Ldkp0bGiyAE",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

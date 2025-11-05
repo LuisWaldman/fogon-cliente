@@ -2,146 +2,419 @@
     "cancion": "fulanos-de-nadie",
     "banda": "los-caballeros-de-la-quema",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#m",
-                    "Bm",
-                    "E7",
-                    "A",
-                    "Am",
-                    "E",
-                    "F#m",
-                    "Am"
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
-                    "A",
                     "Bm",
-                    "E",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
                     "A",
                     "A",
                     "A"
                 ]
             },
             {
-                "nombre": "parte3",
+                "nombre": "parte4",
                 "acordes": [
                     "A",
-                    "D",
-                    "Bm",
+                    "A",
+                    "E",
                     "E",
                     "A",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "B",
+                    "B",
                     "B"
                 ]
             },
             {
-                "nombre": "parte4",
+                "nombre": "parte9",
                 "acordes": [
-                    "F#m",
-                    "Bm",
                     "E",
-                    "F#m",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
                     "Bm",
                     "E",
                     "A",
-                    "B"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "E",
+                    "D",
+                    "D",
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            " Vivas lejos, n",
-            "unca supe bien",
-            "./n   "
-        ],
-        [
-            "Subimos a un taxi fant",
-            "asma./n   Asom"
-        ],
-        [
-            "aba el hocico del so",
-            "l./n   Otra n"
-        ],
-        [
-            "oche,/n   otra almohada l"
-        ],
-        [
-            "ejos del nido/n"
-        ],
-        [],
-        [
-            "Siempre esta pata de pa",
-            "lo fue mas zor",
-            "ra que mi corazon.",
-            "/n   Y asi quedamos,"
-        ],
-        [
-            "   fulanos ",
-            "   de nadie.",
-            "/n   "
-        ],
-        [
-            "Y esta jodido moja",
-            "rle una oreja ",
-            "a la soledad.",
-            "/n   "
-        ],
-        [
-            "Digamos poco,  ",
-            " preciosa.",
             "",
-            "/n   Y brind"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "emos por lo que viene y se v",
-            "a./n"
+            "Vivías le",
+            "jos, nunca s",
+            "upe bien. /n"
         ],
         [
-            "   Por ser de estreno el asunto... No estuvo tan mal./n"
+            "Si ",
+            "tenías nom",
+            "bre me lo o",
+            "lvidé. ",
+            "/n"
         ],
         [
-            "   Siempre este parche en el ojo fue mas lejos que mi corazon./n"
-        ],
-        [],
-        [
-            "Siempre se va",
-            "./n   "
+            "Son las cinco \n\nP",
+            "alermo tiene p",
+            "oco que contar",
+            ". /n"
         ],
         [
-            "Lo que nos cura se va",
-            "./n   Se queda un "
+            "En casa hay dos v",
+            "inos si prom",
+            "etes que no te en",
+            "amoras. \n\nSubim",
+            "os un taxi fan",
+            "tasma, asom",
+            "aba los hicos del ",
+            "sol.  \n\nOtra noc",
+            "he, otra almohada, l",
+            "ejos del nido ",
+            "yo sin capar",
+            "azón. /n"
         ],
         [
-            "rato,/n   nos miente,"
+            "Siempre  esta pata de ",
+            "palo fue más ",
+            "zorra que mi corazón. ",
+            "así q",
+            "uedamos fu",
+            "lanos de ",
+            "nadie,  de ",
+            "nadie.  ",
+            "está jodido mo",
+            "jarle una o",
+            "reja la soledad. /n"
         ],
-        [],
-        [],
-        []
+        [
+            "Digamos p",
+            "oco, prec",
+            "iosa, br",
+            "indemos por ",
+            "lo que viene se ",
+            "va. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Por ser de estre",
+            "no el asunto no ",
+            "estuvo tan m",
+            "al. /n"
+        ],
+        [
+            "No hay besos camp",
+            "eones en un prime ",
+            "round. ",
+            "/n"
+        ],
+        [
+            "Después nos dormim",
+            "os, creo que ni ",
+            "te abrac",
+            "e. /n"
+        ],
+        [
+            "Afuera llovía ",
+            "como  la",
+            "rga la última vez",
+            ". \n\nJunto ",
+            "los vidrios hay un v",
+            "aso, mientras desa",
+            "yunas un papel. ",
+            "planeamos ",
+            "un viaje que es ",
+            "el que jam",
+            "ás vamos ",
+            "hacer. \n\nSiempre e",
+            "sta parte en el ojo ",
+            "fue más lejos ",
+            "que mi corazón. ",
+            "así queda",
+            "mos fulan",
+            "os de nad",
+            "ie, de nadie. ",
+            "está j",
+            "odido mojar",
+            "le una oreja ",
+            "la soledad. /n"
+        ],
+        [
+            "No digas nada",
+            ", preciosa, ",
+            "brindem",
+            "os por lo que ",
+            "viene se va. ",
+            "/n"
+        ],
+        [
+            "Lo que nos ",
+            "cura se va, ",
+            "",
+            "siempre se va. /n"
+        ],
+        [
+            "Lo que nos ",
+            "cura se va, ",
+            "",
+            "siempre se va. /n"
+        ],
+        [
+            "Lo que nos ",
+            "cura se va, ",
+            "",
+            "se queda un rato, nos m",
+            "ima, nos miente. d",
+            "espués se va, de",
+            "spués se va. /n"
+        ],
+        [
+            "Siempre esta pa",
+            "ta de palo fue ",
+            "más zorra que mi ",
+            "corazón. ",
+            "así quedamos f",
+            "ulanos ",
+            "de nadie, ",
+            "de nadie. ",
+            "está jodido ",
+            "mojarle  una ",
+            "oreja la s",
+            "oledad. \n\nLlénat ",
+            "el vaso, ",
+            "preciosa, ",
+            "brindemos  ",
+            "por lo que n",
+            "unca ser",
+            "á. ",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ElbrZy8vNi8",
-            "delay": 0
+            "delay": 6000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

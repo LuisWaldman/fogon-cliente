@@ -2,102 +2,379 @@
     "cancion": "clonos-de-jt",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
-                    "A",
-                    "Em",
-                    "G",
-                    "D",
-                    "Em"
+                    "A5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A5",
                     "G",
-                    "D",
-                    "Em",
+                    "G",
                     "A",
-                    "Em"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G5",
-                    "A5",
-                    "Em5",
-                    "G5",
-                    "A5",
+                    "G",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "A",
                     "Em",
                     "G",
+                    "G",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A5",
+                    "A5",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "A",
+                    "A",
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "Em",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Somos los clo",
-            "nos de travo",
-            "lta /n"
-        ],
-        [
-            "Obvio, Nos gu",
-            "sta, bai",
-            "lar /n"
-        ],
-        [
-            "Dos anfetas de",
-            "ntro De un baso de ",
-            "vodka /n"
-        ],
-        [
-            "Calzando un p",
-            "ene, Parti",
-            "cular /nPor fa"
-        ],
-        [
-            "vor jo",
-            "hn, ",
-            "Volve a ",
-            "la burbuja ",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "El espejo",
-            " es De cri",
-            "s el compadrito /n"
+            "Esta es una canción en español de rock argentino./n"
         ],
         [
-            "Su sonris",
-            "a de Ca",
-            "rrada marmolar /nAhi te es"
+            "S",
+            "omo  los c",
+            "lono  de travo",
+            "lt ",
+            "/n"
         ],
         [
-            "pera tu ma",
-            "ma"
+            "Dios nos g",
+            "ust  bai",
+            "la ",
+            "/n"
+        ],
+        [
+            "Hay dos ance",
+            "ta  dentro d",
+            "e  un vaso de v",
+            "odka  cal",
+            "zand  un p",
+            "ene  en par",
+            "ticula ",
+            "/n"
+        ],
+        [
+            "En mi cam",
+            "is  apre",
+            "tad ",
+            "",
+            "huel /n S",
+            "aturda  nig",
+            "h ",
+            "/n"
+        ],
+        [
+            "Entro en /n F",
+            "lash  2",
+            "00",
+            "1  sil",
+            "b  melo",
+            "día de /n S",
+            "ata /n P",
+            "or  fav",
+            "o  el s",
+            "o",
+            "l  pue",
+            "d  la b",
+            "urbuj /n"
+        ],
+        [
+            "Por fav",
+            "o  el s",
+            "o ",
+            "pued",
+            "la bu",
+            "rbuj ",
+            "/n"
+        ],
+        [
+            "Brill  en ll",
+            "ama  mi ll",
+            "aver ",
+            "qu",
+            "e  es del club d",
+            "e  hombre nuclear",
+            "/n"
+        ],
+        [
+            "A",
+            "ye  muri",
+            "mi peluq",
+            "uer /n"
+        ],
+        [
+            "L",
+            "a  chicas l",
+            "o  lamenta",
+            "rá ",
+            "/n"
+        ],
+        [
+            "El espe",
+            "j que es de /n Cri",
+            "se con /n Patric",
+            "t /n E",
+            "n  sus sonrisas d",
+            "e  cerrada en ma",
+            "r molar /n Po",
+            "r  favor el",
+            "so",
+            "p",
+            "ued  l",
+            "a  burbuja/n"
+        ],
+        [
+            "Por f",
+            "avor  el s",
+            "ol ",
+            "pue",
+            "d  la b",
+            "urbuj /n"
+        ],
+        [
+            "Por fa",
+            "vo  el s",
+            "ol ",
+            "pue",
+            "d  la bu",
+            "rbuj /n"
+        ],
+        [
+            "Po  fa",
+            "vo  el s",
+            "o ",
+            "pued",
+            "la bu",
+            "rbuj /n"
+        ],
+        [
+            "Por favo",
+            "r  el s",
+            "o ",
+            "puede",
+            "la bur",
+            "buj /n P",
+            "or  favor e",
+            "l  so",
+            "l ",
+            "puede",
+            "la burbuj",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "iRcurUYvGFc",
-            "delay": 0
+            "delay": 20290.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

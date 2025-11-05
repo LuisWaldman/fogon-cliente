@@ -8,50 +8,104 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Gm",
-                    "D7/A",
-                    "Gm/Bb"
+                    "Gm/Bb",
+                    "G/B",
+                    "G/B",
+                    "Eb7M",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Gm/Bb",
+                    "G/B",
+                    "G/B"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G/B",
-                    "Cm",
-                    "F7",
-                    "Bb",
-                    "Eb7M",
-                    "Em7(5-)",
-                    "D7",
-                    "Gm"
+                    "Am",
+                    "G/B",
+                    "G/B",
+                    "G/B"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D7",
-                    "Gm",
                     "G",
-                    "Am",
-                    "G/B",
                     "G",
-                    "C",
-                    "A7"
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
                     "G",
-                    "D7",
-                    "G",
-                    "E7",
+                    "Gm",
+                    "Gm/Bb",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
                     "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G/B",
+                    "G/B",
+                    "G/B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G/B",
+                    "Gm",
+                    "Gm/Bb",
+                    "G/B",
+                    "G/B",
+                    "Eb7M",
                     "D7",
-                    "Gm"
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
                 ]
             }
         ],
@@ -59,63 +113,106 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
         [
-            "ando estoy tr",
-            "iste lijo",
-            "/nMi c"
+            "/n"
         ],
         [
-            "ajita de m",
-            "úsica",
+            "Cuan",
+            "d  estoy triste e",
+            "lij  mi cajita d",
+            "e  músi",
+            "c /n N",
+            "o  lo hago para nad",
+            "ie  solo porque m",
+            "e  gus",
+            "t /n Ha",
+            "y  quien escribe cart",
+            "as  quien sale ver l",
+            "a  lu",
+            "n /n Par",
+            "a  olvidar yo eli",
+            "j  mi cajita d",
+            "e  músi",
+            "c /n"
+        ],
+        [
+            "A",
+            "marga  es la mad",
+            "er  de palo",
+            "sa",
+            "nt /n"
+        ],
+        [
+            "Per  e",
+            "s  como el amor q",
+            "u  no muere p",
+            "erfu",
+            "m /n"
+        ],
+        [
+            "Cuando",
+            "estoy triste elijo m",
+            "i  cajita d",
+            "músic",
+            "a /n Pero t",
+            "e  vas vuelves,",
+            "no hay de acabarla n",
+            "unc ",
+            "/n"
+        ],
+        [
+            "T",
+            "espero,",
+            "mi trist",
+            "ez  huele ti",
+            "es m",
+            "en",
+            "ud /n"
+        ],
+        [
+            "Teng  l",
+            "a  manos verd",
+            "e  de esta noche",
+            "d  ll",
+            "uvi /n"
+        ],
+        [
+            "Cu",
+            "and  estoy triste e",
+            "lij  mi cajita d",
+            "e  mús",
+            "ic /n N",
+            "o  lo hago para n",
+            "adie  solo porque m",
+            "e",
+            "gusta",
             "",
-            "/nN"
-        ],
-        [
-            "o lo hago pa",
-            "ra nadie",
-            "/nSolo porque me"
-        ],
-        [
-            " gusta",
             "",
-            "/nA"
-        ],
-        [
-            "marga ",
-            "es la ",
-            "madera",
-            "/nDe palo"
-        ],
-        [
-            "santo",
             "",
-            "/nPero"
-        ],
-        [
-            " es como el",
-            " amor/nQue "
-        ],
-        [
-            "no muere y perfuma"
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "N-PWYsxsuIs",
-            "delay": 0
+            "delay": 4450.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_cuando-estoy-triste.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_cuando-estoy-triste.mp3",
+    "calidad": 1
 }

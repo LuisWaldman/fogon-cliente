@@ -2,17 +2,31 @@
     "cancion": "voy-a-ser-tu-cruz",
     "banda": "los-caballeros-de-la-quema",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
-                    "G",
                     "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
@@ -20,134 +34,176 @@
                 "nombre": "parte2",
                 "acordes": [
                     "F",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "C",
-                    "G"
+                    "G",
+                    "A",
+                    "F",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Bb",
                     "F",
-                    "C"
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "G",
+                    "D",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            1,
             1,
             2,
-            2,
-            0,
             3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            "Se van despertando en mis b",
-            "razos/n"
+            "Se van ",
+            "despertando mis b",
+            "razos, ah",
+            "ora que te vuelvo otr ",
+            "vez. \n\nDespué",
+            "s de tanto tiempo arr",
+            "uinado, hoy ve",
+            "ngo masticarte otra v",
+            "ez. /n"
         ],
         [
-            "ahora que te huelo otra ve",
-            "z/n"
+            "Soy tu fan",
+            "tasma, la p",
+            "esadilla que vos s",
+            "abes. /n"
         ],
         [
-            "Después de tanto tiempo arruin",
-            "ado/n"
-        ],
-        [
-            "hoy vengo a masticarte otra ve",
-            "z./n"
-        ],
-        [
-            "Soy t",
-            "u fanta",
-            "sma, la pesad",
-            "illa que vo",
-            "s sabés",
+            "Soy tu fan",
+            "tasma, est",
+            "oy de vuelta en casa otra v",
+            "ez. est",
+            "oy de vuelta en casa. ",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Soy t",
-            "u fanta",
-            "sma, y estoy ",
-            "de vuelta e",
-            "n casa otra ve",
-            "z/n"
+            "Se ",
+            "acabó tu esco",
+            "ndite, tu he",
+            "chizo se empieza de",
+            "rretir. \n\nNos v",
+            "amos quedar mano m",
+            "ano, no bu",
+            "sques un rincón para hu",
+            "ir. /n"
         ],
         [
-            "Estoy de vu",
-            "elta en casa.",
-            "/nSe acabo"
+            "Soy tu fant",
+            "asma, la pe",
+            "sadilla que vos sabe",
+            "s. /n"
         ],
         [
-            " tu",
-            " es",
-            "con",
-            "dite,/n"
+            "Soy tu fant",
+            "asma, estoy ",
+            "de vuelta en casa otra vez",
+            ". estoy ",
+            "de vuelta en casa. /n"
         ],
         [
-            "Después de t",
-            "anta som",
-            "bra,/n"
-        ],
-        [
-            "hoy tu somb",
-            "ra soy yo.",
-            "/n"
-        ],
-        [
-            "Después de t",
-            "antas lu",
-            "nas,/n"
-        ],
-        [
-            "hoy vine a se",
-            "r tu cru",
-            "z./n"
-        ],
-        [
-            "yo voy a se",
-            "r tu cru",
-            "z, yo ",
-            "voy a ser t",
-            "u cruz",
-            "/n"
-        ],
-        [
-            "yo voy a se",
-            "r tu cru",
-            "z, yo ",
-            "voy a ser tu cruz,/nyo voy a ser tu cruz."
-        ],
-        []
+            "Desp",
+            "ués de tantas s",
+            "ombras, ",
+            "hoy tu sombra soy ",
+            "yo. \n\nDesp",
+            "ués de tantas l",
+            "unas, ",
+            "hoy vine ser tu cru",
+            "z. \n\nYo ",
+            "voy ser tu ",
+            "c",
+            "r",
+            "u",
+            "z",
+            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "voy ser tu ",
+            "cruz.  "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hnXk8IUTqhA",
-            "delay": 0
+            "delay": 12000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

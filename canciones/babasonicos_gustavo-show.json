@@ -2,301 +2,410 @@
     "cancion": "gustavo-show",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "C",
                     "Em",
-                    "C",
                     "Em",
-                    "C",
                     "Em",
-                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "G",
                     "Em",
                     "C",
                     "Bm",
                     "Em",
                     "Em",
                     "C",
-                    "A7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "Bm",
-                    "Em",
-                    "C",
+                    "Bm",
+                    "G",
                     "G",
                     "Bm",
-                    "Em",
-                    "C",
+                    "Bm",
+                    "G",
                     "G",
                     "Bm",
-                    "Em",
-                    "C",
-                    "A7",
-                    "Em",
-                    "Em",
-                    "Em",
-                    "Em",
-                    "Em",
-                    "C",
-                    "Em",
-                    "C",
-                    "Em",
-                    "C",
-                    "Em",
-                    "C",
-                    "Em",
-                    "C",
                     "Bm",
-                    "Em",
-                    "Em",
-                    "C",
-                    "A7",
-                    "G",
                     "Bm",
-                    "Em",
-                    "C",
-                    "G",
                     "Bm",
-                    "Em",
-                    "C",
-                    "G",
                     "Bm",
-                    "Em",
-                    "C",
-                    "A7",
-                    "C",
-                    "D",
-                    "Em",
-                    "Em",
                     "Bm",
-                    "Em",
                     "Bm",
-                    "Em",
                     "Bm",
-                    "C",
-                    "D",
-                    "G",
                     "Bm",
-                    "Em",
-                    "C",
-                    "G",
                     "Bm",
-                    "Em",
-                    "C",
-                    "G",
                     "Bm",
-                    "Em",
-                    "C",
-                    "A7",
-                    "C",
-                    "D",
-                    "Em",
-                    "Em",
-                    "C",
-                    "Em",
                     "Bm",
-                    "Em",
-                    "C",
-                    "Em",
-                    "Bm",
-                    "Em",
-                    "C",
-                    "Em",
-                    "Bm",
-                    "Em",
-                    "C",
-                    "Em",
-                    "Bm",
-                    "Em",
                     "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "A7",
+                    "A7",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "stás de vu",
-            "elta,/ns"
-        ],
-        [
-            "os la tormen",
-            "ta,/nla "
-        ],
-        [
-            "novedad,",
-            "/nen "
-        ],
-        [
-            "las hister",
-            "ias,/nno "
-        ],
-        [
-            "existen cau",
-            "sas/ny ni c"
-        ],
-        [
-            "uenta te das",
-            ",/ntu cl"
-        ],
-        [
-            "ima inestabl",
-            "e me acosa,",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "empaca to",
-            "do y termine",
-            "mos esto,",
+            "Pa",
+            "r  matar la llama la",
+            "pasió",
+            "n ",
+            "un soco de s",
+            "ilencios ",
+            "basta",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "por una ve",
-            "z te digo l",
-            "a verdad,",
+            "Estás d",
+            "e  vuelta",
+            "sos la t",
+            "ormenta",
+            "la n",
+            "ovedad/n"
+        ],
+        [
+            "En las",
+            "misteria",
+            "no exis",
+            "te  causas",
+            "ni contas t",
+            "e  das",
+            "tu clima",
+            "inestabl  m",
+            "e  go",
+            "za /n"
+        ],
+        [
+            "Impa",
+            "c  ter",
+            "minemo  e",
+            "sto, ",
+            "para una v",
+            "ez  te digo",
+            "na",
+            "da ",
+            "no espec",
+            "ule  con mis",
+            "sentimie",
+            "nto  na",
+            "da ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "no especules",
-            " con mis se",
-            "ntimientos ",
-            "nena,",
+            "Ma",
+            "nejadora ",
+            "come cab",
+            "eza ",
+            "arma let",
+            "al ",
+            "lengua afil",
+            "ada /n T",
+            "e  temo me escon",
+            "do  nena,",
+            "me enfam",
+            "as  n",
+            "o  tengo más vue",
+            "ltas  re",
+            "acci",
+            "on /n Im",
+            "pact ",
+            "termin",
+            "emo  es",
+            "to  p",
+            "or  una vez t",
+            "e  digo la",
+            "verd",
+            "a  no",
+            "especules c",
+            "o  mis sen",
+            "timientos ",
+            "",
+            "nada. /n E",
+            "scapare",
+            "m  nuestro a",
+            "nda",
+            "r ",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
-        [],
-        [],
-        [],
         [
-            "anejadora",
-            ", com",
-            "e cabeza,",
-            "/na"
+            "L",
+            "a  chusma d",
+            "el  barri",
+            "o  nos mira",
+            "pelea",
+            "r  hacemos t",
+            "ouc  sho",
+            "w  nos sentim",
+            "o  bien./n"
         ],
         [
-            "rma letal",
-            ", leng",
-            "ua afilada,",
-            "/nte t"
-        ],
-        [
-            "emo y me esc",
-            "ondo,/nnena "
-        ],
-        [
-            "me enferma",
-            "s,/nn"
-        ],
-        [
-            "o tengo más vue",
-            "ltas, reacc",
-            "iona,/n"
-        ],
-        [
-            "empaca to",
-            "do y termine",
-            "mos esto,",
-            "/n"
-        ],
-        [
+            "Impac",
+            "t  term",
+            "inemo  e",
+            "sto ",
             "por una v",
-            "ez te digo l",
-            "a verdad,",
-            "/n"
-        ],
-        [
+            "e  te digo l",
+            "a  ver",
+            "dad ",
             "no especu",
-            "les con mis ",
-            "sentimient",
-            "os nena,",
+            "le  con m",
+            "i  sentimie",
+            "ntos  n",
+            "ada/n"
+        ],
+        [
+            "Escapa",
+            "remo  nuestr",
+            "and",
+            "ar ",
+            "",
+            "",
             "/n"
         ],
         [
-            "separemos nuest",
-            "ro anda",
-            "r,/nl"
+            "Se t",
+            "erminó ",
+            "la pesa",
+            "dill  s",
+            "e  ter",
+            "minó/n"
         ],
         [
-            "a chusma del b",
-            "arrio, nos ",
-            "mira pelear,",
-            "/n"
-        ],
-        [
-            "hacemos talk sh",
-            "ow, nuestra",
-            " intimidad,",
-            "/n"
-        ],
-        [
-            "empaca tod",
-            "o y terminem",
-            "os esto,",
-            "/n"
-        ],
-        [
-            "por una v",
-            "ez te digo l",
-            "a verdad,",
-            "/n"
-        ],
-        [
-            "no especu",
-            "les con mis ",
-            "sentimient",
-            "os nena,",
-            "/nse"
-        ],
-        [
-            "paremos nuestr",
-            "o andar,",
-            "/n"
-        ],
-        [
-            "se termi",
-            "nó la ",
-            "pesadilla",
-            ",/n"
-        ],
-        [
-            "se termi",
-            "nó, vu",
-            "elvo a so",
-            "ñar,/n"
-        ],
-        [
-            "felicida",
-            "d no me",
-            " detengan",
-            "/n"
-        ],
-        [
-            "que allá v",
-            "oy,/n"
-        ],
-        [
-            "no te deteng",
-            "as/nque"
-        ],
-        [
-            " acá esto",
-            "y."
+            "Vuelvo s",
+            "oñar ",
+            "felic",
+            "idad ",
+            "no me d",
+            "etenga  q",
+            "u  haya h",
+            "uido, ",
+            "no te d",
+            "etenga  qu",
+            "ie  crees qu",
+            "e  soy.",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Zu5eSDB06AU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

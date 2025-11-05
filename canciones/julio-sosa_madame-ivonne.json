@@ -2,92 +2,321 @@
     "cancion": "madame-ivonne",
     "banda": "julio-sosa",
     "escala": "B7",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "B7",
                     "E",
+                    "E",
+                    "G#",
+                    "G#",
                     "G#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C#m",
-                    "A",
-                    "E",
-                    "F#m",
                     "B7",
-                    "F#m",
-                    "B7"
+                    "G#",
+                    "E",
+                    "E",
+                    "G#",
+                    "G#",
+                    "G#"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "G#",
+                    "B7",
+                    "E",
+                    "G#",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "E",
+                    "E",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
                     "E",
                     "Em",
-                    "Am",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#",
+                    "B7",
                     "B7",
                     "Em",
-                    "F#m",
-                    "B7",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "E",
+                    "Em",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "G#",
+                    "G#",
+                    "G#"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Mamuasel Ivonne era una pebe",
-            "ta/nque en el barrio "
+            "Yvón, ",
+            "yo te conocí allá en el viejo \n\nMont",
+            "martre, cuando el cascabel de pl",
+            "ata de tu risa era un re",
+            "fugio para nuestra bohemia, ",
+            "tu cansancio tu anemia ",
+            "no se dibujaban aún detrá",
+            "s de tus ojeras violetas. /n"
         ],
         [
-            "posta de viejo Montm",
-            "artre,/ncon su pinta b"
+            "Yo te conocí cuando el amor te ",
+            "iluminaba por dentro, te a",
+            "doré de lejos sin que lo supieras, ",
+            "sin pensar que confesándote este ",
+            "amor  podía haberte salvado. /n"
         ],
         [
-            "rava de alegre grise",
-            "ta/nanimó la "
+            "Te conocí cuando era yo un ",
+            "estudiante de bolsillos flacos, ",
+            "el parís nocturno de entonces l",
+            "anzaba al espacio en una cascad",
+            "a de luces el efímero re",
+            "inado de tu nombre, \n\nM",
+            "ademoiselle \n\nYvón. /n"
         ],
         [
-            "fiesta de Les Quatre ",
-            "Arts./ny a la france"
+            "Mademoiselle \n\nYvó ",
+            "era una peveta ",
+            "en el barrio aposta del ",
+            "viejo \n\nMontmartre. \n\nCon ",
+            "su pinta brava de a",
+            "legre griseta, ",
+            "alegró las fiestas de a",
+            "quel boulevard. \n\nEra ",
+            "la pavosa del barr",
+            "io latino que ",
+            "supo los puntos del verso ",
+            "inspirar,  hasta que ",
+            "un buen día cayó un a",
+            "rgentino la fra",
+            "ncesita la hizo s",
+            "uspirar. ",
+            "/n"
         ],
         [
-            "sita la hizo",
-            " suspirar",
-            "./nMadame Iv"
+            "Mademoisel",
+            "le \n\nYvón, la \n\nCruz del /n"
         ],
         [
-            "onne,/nMadame Iv"
+            "Sur fue como un si",
+            "no. /n"
         ],
         [
-            "onne,/nAlondra gr"
+            "Mademoiselle /n"
         ],
         [
-            "is,/ntu dolor me conmu"
+            "Yvón,  fue como el ",
+            "sino  de tu suerte. /n"
         ],
         [
-            "eve,/ntu pena es de "
+            "Alondra gris, tu dolo",
+            "r me conmueve, tu p",
+            "ena de miedo. ",
+            "/n"
         ],
         [
-            "nieve...",
-            "/nMadame I"
+            "Mademoiselle  \n\nYvón, han pa",
+            "sado diez años que es ",
+            "arpo de \n\nFrancia. \n\nMadem",
+            "oiselle \n\nYvón, hoy es solo m",
+            "adame. \n\nLa que al ver que ",
+            "todo quedó en la dist",
+            "ancia, con ojos muy ",
+            "tristes  bebe su champagne. /n"
         ],
         [
-            "vonne..."
+            "Ya no es la pavo",
+            "sa del barrio lati",
+            "no, ya no es la misto",
+            "nga florcita de lis, ",
+            "ya nada le queda ",
+            "ni aquel argenti",
+            "no que entre tango mete ",
+            "un alzo de par",
+            "ís. ",
+            "/n"
+        ],
+        [
+            "Mademoiselle \n\nY",
+            "vón, la \n\nCruz del \n\nSur ",
+            "fue como un sin",
+            "o. /n"
+        ],
+        [
+            "Mademoiselle \n\nYv",
+            "ón, fue como el sino de ",
+            "tu suerte. \n\nAlon",
+            "dra gris, tu dolor me ",
+            "conmueve, tu pen",
+            "a de miedo. ",
+            "/n"
+        ],
+        [
+            "Mademoiselle /n"
+        ],
+        [
+            "Yvón,  ya ",
+            "no es la pavo",
+            "sa del barrio lati",
+            "no, ya no es la mis",
+            "tonga florcita de li",
+            "s, ya nada le q",
+            "ueda ni aquel arge",
+            "ntino que entre tango ",
+            "mete un alzo de ",
+            "parís. ",
+            ""
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "l3vdCOMWVtU",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
 }

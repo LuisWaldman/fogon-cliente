@@ -2,25 +2,150 @@
     "cancion": "el-medium",
     "banda": "babasonicos",
     "escala": "A5",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A5",
-                    "G5",
                     "A5",
-                    "G5"
+                    "C",
+                    "A5",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Em",
-                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "A5",
+                    "A5",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "C",
+                    "A5",
+                    "C",
+                    "C",
+                    "A5",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "C",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A5",
+                    "C",
+                    "C",
+                    "A5",
+                    "C",
                     "C"
                 ]
             }
@@ -28,73 +153,141 @@
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            1,
-            0,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "uptuosa pitonisa acercán",
-            "dose/ndes"
-        ],
-        [
-            "perté en otro tiempo y extraño ent",
-            "enderlo/n"
-        ],
-        [
-            "    ",
-            "no ",
-            " perteneces/n"
-        ],
-        [
-            "    ",
-            "a e",
-            "sta moral/n"
-        ],
-        [
-            "    ",
-            "sos",
-            " del mas allá/n    de ningún lug"
-        ],
-        [
-            "ar",
             "",
-            "/nDe"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "snuden/nla"
+            "Es",
+            "t es una canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción e",
+            "n español de rock argentino. /n Esta es una canción en",
+            "españo de rock argentino. /n E",
+            "sta  es una canción en es",
+            "paño  d",
+            "e  r",
+            "o",
+            "c  argentino./n"
         ],
         [
-            " humanidad/nDe"
+            "Esta es u",
+            "n",
+            "a",
+            "canción",
+            "e  españo",
+            "l de rock argentino. /n Esta es una canción en español de rock argentino./n"
         ],
         [
-            "snuden/nsu"
+            "Esta e",
+            "s  una canción en español de rock argent",
+            "ino /n Esta e",
+            "s  una canción en español d",
+            "e  rock argen",
+            "tino /n Esta es una canción en español",
+            "de rock argentino. /n E",
+            "sta  es una can",
+            "ció  en español d",
+            "e  rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " intensidad/nSat"
+            "Es",
+            "t  es u",
+            "n",
+            "canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "una canción e",
+            "n",
+            "español de rock argentino. /n Esta es una canción en español de r",
+            "oc argentino. /n Esta es una canción en español",
+            "d",
+            "e  ro",
+            "c  argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uren/nde re"
+            "Esta es una canción en español de rock argentino. /n Esta e",
+            "s  una canción en español d",
+            "e rock argentino. /n Esta es una canción e",
+            "n  español de ro",
+            "c argentino. /n Esta es una canción e",
+            "n  español de roc",
+            "k argentino. /n Esta es una canción e",
+            "n  español d",
+            "e  roc",
+            "argentino.",
+            "/n"
         ],
         [
-            "lajación/nDesn"
+            "Esta e",
+            "s  una can",
+            "ció en español de rock argentino. /n Esta es una canción en español de rock",
+            "argentino /n Esta es una canción en español de rock arg",
+            "entino /n"
         ],
         [
-            "uden/ny sue"
+            "Esta es una canción",
+            "en  español de rock argentino./n"
         ],
         [
-            "lten la cosa real"
+            "Esta es una canción en español d",
+            "e",
+            "rock argentino. /n E",
+            "st  es una canción en españo",
+            "l  d",
+            "e  rock argentino."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "X0sz1003wD0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

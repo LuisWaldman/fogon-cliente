@@ -2,39 +2,140 @@
     "cancion": "mareo",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
+                    "Em",
+                    "Em",
+                    "Am Em",
+                    "B7",
+                    "Em",
+                    "Em",
                     "Am",
-                    "D"
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B7",
                     "Em",
-                    "Em",
-                    "Am",
-                    "B7",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
+                    "Em",
+                    "Em",
                     "Am",
                     "D",
                     "Em",
+                    "Em",
                     "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
                     "B7",
-                    "Em"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B7",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
@@ -42,96 +143,124 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "üenza y no sé si deci",
-            "rtelo /nsi se me no"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ta no leva",
-            "nto la mirada",
-            " /ny me der"
+            "Esta es una canción en español de rock argentino. /n Me d",
+            "a  vergüenza no sé si decí",
+            "rtel /n S",
+            "e  me nota que no levanto l",
+            "a  mirada",
+            "m  derrito si te tengo c",
+            "ar cara /n Si te encu",
+            "entr  solas vuelvo cr",
+            "ee en /n Dios/n"
         ],
         [
-            "rito si te tengo cara a ca",
-            "ra /nsi te encuentro a solas"
+            "Es que me mata t",
+            "u  ausencia/n"
         ],
         [
-            " vuelvo a creer en Dio",
-            "s /nEs que me mata tu aus"
+            "Por haberte que",
+            "rid  tanto/n"
         ],
         [
-            "encia /n"
+            "Porque el recuerdo n",
+            "o  es real/n"
         ],
         [
-            "y haberte querido tant",
-            "o /nporque el recuerdo no es real"
+            "Estemos junto",
+            "s  otra vez",
+            "",
+            "",
+            "/n"
         ],
         [
-            " /n"
+            "E",
+            "l  tiempo arrasa secuestra",
+            "nd mi pudor /n Co",
+            "br  confianza te di",
+            "rij unas palabras /n Q",
+            "ue  igual abismo que al pr",
+            "esent  nos depara",
+            "febril en la caída de mi alma /n Me da ve",
+            "rgüenz  no sé si decírt",
+            "el /n Es que me",
+            "mat  tu ause",
+            "nci /n Por haber",
+            "t  querido tanto/n"
         ],
         [
-            "estemos juntos otra vez",
-            " /nEl tiempo a"
+            "Porque e",
+            "l  recuerdo no es real",
+            "este",
+            "mo  juntos otra vez",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rrasa secuestrando mi pudo",
-            "r /ncobro confi"
+            "Ah",
+            "ah, ah /n Ah, a",
+            "h,  ah",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "anza y te dir",
-            "ijo unas palabras ",
-            "/ncaigo al abis"
+            "Ah, ah,",
+            "a",
+            "h /n"
         ],
         [
-            "mo que el presente nos depar",
-            "a /ny febril en la ca"
-        ],
-        [
-            "ída pregunto ¿qué nos p",
-            "asó? /nY es que me mata tu aus"
-        ],
-        [
-            "encia /n"
-        ],
-        [
-            "y haberte querido tant",
-            "o /nporque el recuerdo no es real"
-        ],
-        [
-            " /n"
-        ],
-        [
-            "y estemos juntos otra v",
-            "ez /nY es que me mata tu aus"
-        ],
-        [
-            "encia /n"
-        ],
-        [
-            "y haberte querido tant",
-            "o /nporque el recuerdo no es real"
-        ],
-        [
-            " /n"
-        ],
-        [
-            "y estemos juntos otra v",
-            "ez "
+            "E",
+            "s  que me mata tu au",
+            "senci /n P",
+            "o  haberte querido t",
+            "ant /n Por",
+            "qu  el recuerdo no es re",
+            "a  este",
+            "mo  juntos ot",
+            "r vez /n Ah, ah, a",
+            "h ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "fqcRXZE0aO8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

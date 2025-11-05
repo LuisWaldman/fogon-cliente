@@ -2,17 +2,42 @@
     "cancion": "deeee",
     "banda": "babasonicos",
     "escala": "Dm",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Dm",
-                    "Am",
                     "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
                     "Am"
                 ]
             },
@@ -20,191 +45,399 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Dm",
-                    "Am",
-                    "F",
+                    "E",
                     "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F",
                     "E",
-                    "C",
-                    "D",
-                    "Bm",
-                    "C"
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
-                    "D",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
                     "Bm",
-                    "C"
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Dm",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Dm"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            0,
             2,
             3,
-            0,
-            1,
-            0,
-            0,
-            2,
-            3,
-            3,
-            3,
-            0,
-            0
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
         ]
     },
     "letras": [
         [
-            "Desanima",
-            "da,/n"
-        ],
-        [
-            "Muerta de ri",
-            "sa,/n"
-        ],
-        [
-            "Golpea el vie",
-            "nto, la bris",
-            "a cae.",
-            "/n"
-        ],
-        [
-            "Dueña del a",
-            "ire/n"
-        ],
-        [
-            "Que respira,",
-            "/n"
-        ],
-        [
-            "Desanda el tiempo sin",
-            " prisa.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "La historia cambia/nCuando el "
+            "Est",
+            "a es una canción en español de rock argentino. /n Esta e",
+            "s",
+            "",
+            "",
+            "",
+            "",
+            "u",
+            "n",
+            "a",
+            "",
+            "canción en esp",
+            "año de rock argentino. /n La b",
+            "ris  c",
+            "a /n"
         ],
         [
-            "que la cuenta se confunde./n"
+            "Dueña del ai",
+            "r  que res",
+            "pir /n"
         ],
         [
-            "De eleg",
-            "irla/n"
+            "B",
+            "es  del tiempo s",
+            "in  pri",
+            "s /n"
         ],
         [
-            "Para mi canción de am",
-            "or./n"
-        ],
-        [
-            "De eleg",
-            "irla/n"
-        ],
-        [
-            "Para mi canción de am",
-            "or./n"
-        ],
-        [
-            "Tu pelo envue",
-            "lve/n"
-        ],
-        [
-            "La angu",
-            "stia,/n"
-        ],
-        [
-            "En mustio encuentro",
-            ", la llu",
-            "via cae.",
+            "La histor",
+            "i  cambia cuando cada cuen",
+            "t se confunde /n Pu",
+            "ed  gi",
+            "ra  para mi c",
+            "anción  de amor",
             "/n"
         ],
         [
-            "Desentendi",
-            "da,/n"
+            "Puedo g",
+            "irar  para mi c",
+            "anció  de amor/n"
         ],
         [
-            "Bordea el gentío,",
+            "E",
+            "l  pelo envue",
+            "lv  l",
+            "a  angustia/n"
+        ],
+        [
+            "Del m",
+            "ustio  encuentr",
+            "o  la lluv",
+            "ia  cae",
+            "",
             "/n"
         ],
         [
-            "Foto cromática",
-            " despi",
-            "sta.",
+            "Desentendida /n Mordel",
+            "genti /n"
+        ],
+        [
+            "Fotocromá",
+            "tic /n"
+        ],
+        [
+            "Despista",
             "/n"
         ],
         [
-            "La historia cambia/nCuando el "
-        ],
-        [
-            "que la cuenta se confunde./n"
-        ],
-        [
-            "De elegi",
-            "rla/n"
-        ],
-        [
-            "Para mi canción de am",
-            "or./n"
-        ],
-        [
-            "De elegi",
-            "rla/n"
-        ],
-        [
-            "Para mi canción de am",
-            "or./n"
-        ],
-        [
-            "De elegi",
-            "rla/n"
-        ],
-        [
-            "Para mi canción de am",
-            "or./n"
-        ],
-        [
-            "De elegi",
-            "rla/n"
-        ],
-        [
-            "Para mi canción de am",
-            "or./n"
-        ],
-        [
-            "Desobedient",
-            "e/n"
-        ],
-        [
-            "Por la autovía,",
+            "La historia cambi",
+            "a  cuando cada cuenta se con",
+            "fund /n Pued",
+            "o  gira",
+            "r  para mi canción d",
+            "e  amor",
             "/n"
         ],
         [
-            "El gusto es mío",
-            ",/n"
+            "Puedo gir",
+            "a  para mi canción d",
+            "e  amor",
+            "/n"
         ],
         [
-            "Habrá sonrisa",
-            "s. (x4)"
+            "Pued  gira",
+            "para mi canción d",
+            "e  amor",
+            "/n"
+        ],
+        [
+            "Pued  gira",
+            "para mi canción de",
+            "amo /n"
+        ],
+        [
+            "Bes",
+            "de diente/n"
+        ],
+        [
+            "Por la au",
+            "toví /n"
+        ],
+        [
+            "El gusto es m",
+            "ío ",
+            "/n"
+        ],
+        [
+            "Habrá sonrisas/n"
+        ],
+        [
+            "Habrá sonr",
+            "isa /n Ha",
+            "br  sonr",
+            "isa /n"
+        ],
+        [
+            "Habrá s",
+            "onrisa ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Habr",
+            "á sonrisas /n Habrá sonrisas",
+            "",
+            "/n"
+        ],
+        [
+            "Ha",
+            "br  sonrisas",
+            "/n"
+        ],
+        [
+            "H",
+            "abrá sonrisas /n Habrá sonrisas Habrá sonrisas Habrá sonrisas",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Habrá sonrisas"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QREFt7szZK8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

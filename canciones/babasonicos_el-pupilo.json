@@ -2,84 +2,160 @@
     "cancion": "el-pupilo",
     "banda": "babasonicos",
     "escala": "Cm",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Cm",
-                    "G#",
                     "Cm",
-                    "G#"
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "Cm",
+                    "Cm",
                     "G#",
                     "A#",
+                    "A#",
+                    "G#",
+                    "G#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "Cm",
+                    "Cm",
+                    "G#",
+                    "G#",
                     "G#"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
                     "D#",
-                    "G",
+                    "Cm",
+                    "Cm",
                     "Cm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "G#",
                     "D#",
-                    "G",
-                    "Cm",
-                    "G#",
                     "D#",
-                    "G",
-                    "Cm7"
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "A#",
-                    "G",
-                    "A#",
-                    "G#"
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
             2,
             3,
-            0,
             4,
-            0,
-            1,
-            2,
-            3,
-            0,
-            2,
-            3
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "1er Ve",
-            "rso",
+            "",
+            "",
             "",
             "",
             "",
@@ -88,144 +164,109 @@
             "/n"
         ],
         [
-            " Ha corrido un sig",
-            "lo aparte/n"
-        ],
-        [
-            " desde la vez que t",
-            "e observé/n"
-        ],
-        [
-            " intimam",
-            "ente, p",
-            "oco dec",
-            "ente/nComo p"
-        ],
-        [
-            "ara conformarme con un ",
-            "beso/nsólo"
-        ],
-        [
-            " de esos que a vos más te",
-            " cuesta dar/n"
-        ],
-        [
-            " que guardás para tu",
-            "s socios/n"
-        ],
-        [
-            " socios de tu cor",
-            "azón/n"
-        ],
-        [
-            " Me declaro cu",
-            "lpable/nde"
-        ],
-        [
-            " todo ahora en ",
-            "más/n"
-        ],
-        [
-            " de donde no e",
-            "staba/nde"
-        ],
-        [
-            " donde me fui",
+            "Ha corrid",
+            "un siglo apa",
+            "rte  desde l",
+            "a  vez que te observé.",
+            "",
             "/n"
         ],
         [
-            " de lo que nunc",
-            "a seré",
-            "/n"
-        ],
-        [
-            "He pagado un gran pe",
-            "aje/n"
-        ],
-        [
+            "Intimamente, poc",
+            "o  decente, c",
+            "omo  para conformarme c",
+            "o un beso. /n S",
+            "ol  esos que vos mas te cu",
+            "est  dar,",
+            "que guardas par",
+            "tus socio",
+            "s  socios de tu c",
+            "orazón ",
+            "me declaro",
+            "culpabl  d",
+            "e  todo de ahora en",
+            "mas /n D",
+            "e  donde n",
+            "o  estaba,",
+            "de donde me f",
+            "ui, ",
+            "de lo que",
+            "nunc  s",
+            "er",
+            "é /n H",
+            "e  pagado un gra",
+            "n  viaje,",
             "para poderte c",
-            "onvencer/n"
-        ],
-        [
-            "integramen",
-            "t, t",
-            "an imprude",
-            "nte/n"
-        ],
-        [
-            "Como para acercarme a tu secret",
-            "o/n"
-        ],
-        [
-            "justo eso que vos no querés m",
-            "ostrar/n"
-        ],
-        [
-            "que enseñas a tus ",
-            "devotos/n"
-        ],
-        [
-            "hoy tu acólito ",
-            "soy yo/n"
-        ],
-        [
-            " Me declaro cu",
-            "lpable/nde"
-        ],
-        [
-            " todo ahora en ",
-            "más/n"
-        ],
-        [
-            " de donde no e",
-            "staba/nde"
-        ],
-        [
-            " donde me fui",
+            "onvencer ",
             "/n"
         ],
         [
-            " de lo que nunc",
-            "a seré",
+            "Integramente,",
+            "ta  impru",
+            "dente  como par",
+            "a  acercarme tu secre",
+            "to /n Justo es",
+            "o  que vos no quieres mostr",
+            "ar ",
+            "que enseñe tus de",
+            "votos ",
+            "hoy tu acolito soy y",
+            "o. /n M",
+            "e  declaro culp",
+            "abl  de to",
+            "d  de ahora en mas.",
             "/n"
         ],
         [
-            "//Vení anotate a la escuela d",
-            "e mis besos/n"
-        ],
-        [
-            "es sólo eso lo que tenés qu",
-            "e probar.///n"
-        ],
-        [
-            " Me declaro cu",
-            "lpable/nde"
-        ],
-        [
-            " todo ahora en ",
-            "más/n"
-        ],
-        [
-            " de donde no e",
-            "staba/nde"
-        ],
-        [
-            " donde me fui",
+            "De donde no estab",
+            "a  d",
+            "e  donde me fui,",
+            "",
+            "de lo que nu",
+            "nc  seré",
             "/n"
         ],
         [
-            " de lo que nunc",
-            "a seré",
-            "/n"
+            "Ven anotate l",
+            "a  escuela de mis beso",
+            "s  es solo eso lo q",
+            "u  tenes que p",
+            "r",
+            "o",
+            "b",
+            "a/n"
         ],
-        []
+        [
+            "Me decla",
+            "r  culpable d",
+            "e  todo de a",
+            "hor  en mas./n"
+        ],
+        [
+            "De donde n",
+            "o  estaba,",
+            "de donde m",
+            "e  fui,",
+            "de l",
+            "o  que nunca s",
+            "eré. /n"
+        ],
+        [
+            "De donde",
+            "n  estaba.",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "iL3K4cCcUkE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

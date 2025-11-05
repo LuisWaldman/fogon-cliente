@@ -2,71 +2,276 @@
     "cancion": "el-colmo",
     "banda": "babasonicos",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "C#m",
                     "F#m",
-                    "Bm",
-                    "F#m",
-                    "D",
-                    "E"
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "E",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "E",
                     "A",
                     "F#m",
                     "D",
-                    "E",
+                    "C#m",
                     "C#m",
                     "F#m",
                     "D",
-                    "E"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A",
+                    "F#m",
+                    "D",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Quiero cantar al abismo y a la mu",
-            "erte estafar/nVol"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "vamos a cero, borremoslo todo/nY feste"
+            "Quiero tenta",
+            "r  el abismo",
+            "la muerte",
+            "est  fe/n"
         ],
         [
-            "jemos si mañana me despierto solo y fel",
-            "iz/nPor eso "
+            "Volvamos",
+            "cero, borremos",
+            "l  todo festejemos",
+            "mañana me despiert",
+            "o  sobre feliz/n"
         ],
         [
-            "cancion llevame lejo",
-            "s, donde na",
-            "die se acauerde de mi",
-            "/nQuiero "
+            "P",
+            "or  eso canc",
+            "ió  llevame lej",
+            "os  donde nad",
+            "i  se acuerde de m",
+            "i /n Quiero s",
+            "e  el murmullo de a",
+            "lgun  ciudad que no",
+            "sep  quien s",
+            "oy /n Y",
+            "o  daría hasta mi s",
+            "ueñ  por ver l",
+            "a  farsa fa",
+            "lla /n Per",
+            "o  vamos al centro,",
+            "quememoslo todo p",
+            "ediremo  que mañana nad",
+            "i  venga hacerme",
+            "cumpl",
+            "i /n Po",
+            "r  eso canción lleva",
+            "m  lejos, d",
+            "onde  nadie se acue",
+            "rd de mi /n Qui",
+            "er  ser el murm",
+            "ull  de alguna ciudad",
+            "qu  no sepa q",
+            "uien  soy",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ser el murmullo de al",
-            "guna ciudad que no sep",
-            "a quien soy",
-            ""
+            "Cambio to",
+            "d  por el don qu",
+            "hacía las muje",
+            "re  reí",
+            "el mundo",
+            "d  ellas me hunde e",
+            "n  sus huellas roguemos",
+            "qu  mañana me convie",
+            "rt  en otro infe",
+            "li /n"
+        ],
+        [
+            "Por eso ca",
+            "nció  llevame le",
+            "jos  donde n",
+            "adi  se acuerde de",
+            "m /n Quiero s",
+            "er  el murmullo d",
+            "e  alguna ciudad que n",
+            "o  sepa quien s",
+            "oy  c",
+            "anción  llevam",
+            "lejos, do",
+            "nd  nadie se acuerde d",
+            "e mi /n Quie",
+            "r  ser el murmul",
+            "l  de alguna ciudad q",
+            "u  no sepa qu",
+            "ie  s",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Bue",
+            "na  noches/n"
+        ],
+        [
+            "Muchas gracias."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "FD-D-v_EZUU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

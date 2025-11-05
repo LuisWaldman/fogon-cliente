@@ -2,63 +2,270 @@
     "cancion": "delectrico",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
                     "F",
-                    "C",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "F",
+                    "F",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Cuando 'no' s",
-            "ignifica no /nme pre"
+            "",
+            "",
+            "/n"
         ],
         [
-            "gunto: ¿cuan necio ",
-            "puedes ser? /ndigo "
+            "C",
+            "uando  no s",
+            "ignifica  no m",
+            "e pregunto /n Cual es",
+            ",  si puede ser",
+            "",
+            "",
+            "/n"
         ],
         [
-            "que parte de '",
-            "no', /nno enten"
+            "C",
+            "uand  no s",
+            "ignifica  no m",
+            "e pregunto /n Cual es",
+            ", si puede ser /n C",
+            "uand  n",
+            "o  si",
+            "gni",
+            "fic",
+            "a  n",
+            "o  me pr",
+            "egunt/n"
         ],
         [
-            "dés? ",
-            "/nVa a ven"
+            "C",
+            "u",
+            "a",
+            "l",
+            "",
+            "",
+            "es,",
+            "si puede ser /n Cuando no s",
+            "ignifica  no m",
+            "e pregunto /n Cual e",
+            "s si puede ser /n Cu",
+            "and  no significa,",
+            "no m",
+            "pregu",
+            "nt /n Cual",
+            "e",
+            "s",
+            ",",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "si puede ser",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ir /nNO v"
+            "Cuan",
+            "d  no significa, no me pr",
+            "egun",
+            "t /n Cual e",
+            "s, si puede ser /n Cuando no significa,",
+            "n",
+            "o me pregunto /n C",
+            "ua",
+            "l  es,",
+            "si puede se",
+            "r /n Cuando no significa, n",
+            "o  me p",
+            "r",
+            "e",
+            "g",
+            "u",
+            "n/n"
         ],
         [
-            "a a venir /nO v"
+            "Cual",
+            "e",
+            "s",
+            ",",
+            "",
+            "",
+            "",
+            "si puede ser /n Va",
+            "venir, va",
+            "venir/n"
         ],
         [
-            "a a venir /nDel"
+            "Va",
+            "venir, no v",
+            "venir /n Va",
+            "venir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ectrico"
+            "Va venir, va venir"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "SbHppJC4CKA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

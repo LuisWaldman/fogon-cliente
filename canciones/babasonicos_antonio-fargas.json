@@ -2,61 +2,421 @@
     "cancion": "antonio-fargas",
     "banda": "babasonicos",
     "escala": "F#5",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#5",
                     "F#5",
-                    "B5"
+                    "F#5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C5",
                     "F#5",
                     "F#5",
-                    "B5"
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "F#5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
         ]
     },
     "letras": [
         [
-            "Yo no soy,/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Si no lo hace/nQuieren matar, Al rubio "
+            "Esta es una canción en español de rock argentino. /n Esta es una canción en español de r",
+            "ock argentino. /n Qui",
+            "ere  matar al rubi",
+            "o  cochuzón.",
+            "/n"
         ],
         [
-            "hock",
-            "ch/n"
+            "Un soplón de lata la s",
+            "ecta  bola ocho, sola pechaqu",
+            "eta /n Usa un gordo color, hues",
+            "o marrón. /n Es un m",
+            "ercuri  de fuego, cruzado y",
+            "su color.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Un soplón, delata la secta/n"
+            "Antonio /n F",
+            "argue  es go -giver",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Son la ficha/nCruza el calle"
+            "Yo",
+            "n soy el hijo de /n Stark",
+            "ey /n Simon dice, Simon lo hace",
+            "un solo pincho en su c",
+            "orazón /n Quieren",
+            "mata  al rubio c",
+            "ochuzón /n"
         ],
         [
-            "jón"
+            "Un",
+            "sopló  de lata la secta,",
+            "bola ocho, sola pechaqueta./n"
+        ],
+        [
+            "Usa un gordo color, hueso m",
+            "arrón /n Es un mercurio d",
+            "e  fuego, cruzado ya su c",
+            "olor. /n"
+        ],
+        [
+            "Antonio /n F",
+            "argue  es go -giver.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "G",
+            "o  -giver.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Go -",
+            "giver /n Go -giver. Go -give",
+            "r /n"
+        ],
+        [
+            "Go -giver. /n G",
+            "o  -giver./n"
+        ],
+        [
+            "Go -giver. /n Go -giver./n"
+        ],
+        [
+            "G",
+            "-giver. /n Go -giver./n"
+        ],
+        [
+            "G -giver. /n Antonio/n"
+        ],
+        [
+            "F",
+            "a",
+            "r",
+            "g",
+            "u",
+            "e",
+            "s",
+            "es go -giver.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Antoni",
+            "o /n Fargues es go -g",
+            "iver ",
+            "",
+            "/n"
+        ],
+        [
+            "Go -gi",
+            "ver /n Go -gi",
+            "ver /n G",
+            "o -giver. /n G",
+            "o  -giv",
+            "er /n"
+        ],
+        [
+            "Go -giv",
+            "er /n Go -g",
+            "iver /n G",
+            "o  -giver./n"
+        ],
+        [
+            "Go -gi",
+            "ver /n G",
+            "o  -giver./n"
+        ],
+        [
+            "Go -giver",
+            ". /n Go -give",
+            "r /n Go -giver./n"
+        ],
+        [
+            "Go -gi",
+            "ver /n G",
+            "o  -give",
+            "r /n"
+        ],
+        [
+            "Go",
+            "-giver /n G",
+            "o -giver. /n Go -giver",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Go -giver."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kPMNjmyu5cQ",
-            "delay": 0
+            "delay": 11890.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

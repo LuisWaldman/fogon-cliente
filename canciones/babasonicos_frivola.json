@@ -2,16 +2,24 @@
     "cancion": "frivola",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "G",
+                    "D",
                     "D",
                     "D"
                 ]
@@ -19,126 +27,267 @@
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "G",
-                    "Gm",
                     "D",
-                    "B",
-                    "G",
-                    "A",
+                    "D",
+                    "D",
                     "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A",
                     "D",
-                    "A",
-                    "D",
-                    "A",
-                    "D"
+                    "G",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "A#",
+                    "G",
                     "D",
-                    "A#",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Gm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
                     "A",
-                    "Bm",
-                    "E",
-                    "Em",
-                    "A"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Gm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "No dura tu sabor porque eres f",
-            "rívola",
+            "",
+            "",
             "/n"
         ],
         [
-            "abusas del color, te sientes p",
-            "álida./n"
+            "N",
+            "o  dura t",
+            "u  sabor, p",
+            "orqu  eres frío",
+            "lat./n"
         ],
         [
-            "Fuiste solo un v",
-            "erano, su",
-            "avemente en bla",
-            "nco/n"
+            "Abus",
+            "a  del color,",
+            "te sientes pá",
+            "lida /n"
         ],
         [
-            "llenarás tu n",
-            "ombre de fantas",
-            "ía./n"
+            "Fuist",
+            "solo un ve",
+            "rano  su",
+            "avement  en b",
+            "lanco /n Ll",
+            "enará  tu nomb",
+            "r  de fant",
+            "asía /n"
         ],
         [
-            "En tu corcel buscas far",
-            "ándula",
+            "E",
+            "n  tu corazó",
+            "n  buscas f",
+            "aránd",
+            "ula /n To",
+            "nt  de fl",
+            "ash  eres c",
+            "osmét",
+            "ica /n"
+        ],
+        [
+            "Fuiste solo u",
+            "n  verano,",
+            "suavemente e",
+            "n  blanco./n"
+        ],
+        [
+            "Llenarás t",
+            "u  nombre de f",
+            "antasía /n N",
+            "o  mires",
+            "m",
+            "á",
+            "s",
+            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "tonta de flash eres cosm",
-            "tica./n"
+            "En b",
+            "usca  de esplend",
+            "or  viajas h",
+            "istéri",
+            "c /n G",
+            "lamou  tradi",
+            "ción  te cree",
+            "s  mágica.",
+            "/n"
         ],
         [
-            "Fuiste solo un v",
-            "erano, su",
-            "avemente en bla",
-            "nco/n"
+            "Fuiste solo u",
+            "n  verano,",
+            "suavemente e",
+            "n  blanco./n"
         ],
         [
-            "llenarás tu n",
-            "ombre de fantas",
-            "ía./nNo mires "
+            "Llenará  t",
+            "u  nombre de f",
+            "antasía/n"
         ],
         [
-            "más, no mires ",
-            "más/nNo mires "
+            "De f",
+            "antasí",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "más, no mires ",
-            "más/nNo mires "
+            "No dura t",
+            "u  sabor, po",
+            "rqu  eres frío",
+            "lat.",
+            "",
+            "/n"
         ],
         [
-            "más, no mires ",
-            "más/nno mires "
-        ],
-        [
-            "más, no mires ",
-            "más/nno mires "
-        ],
-        [
-            "más, no mires ",
-            "más./nllenarás tu nombre de fanta"
-        ],
-        [
-            "sía/n"
-        ],
-        [
-            "de fantasía, de fant",
-            "asía.     Uu",
-            "uuhu"
+            "Abusas del color, te sientes pálida."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "U6lBg5AlvFs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

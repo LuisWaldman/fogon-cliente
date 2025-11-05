@@ -2,135 +2,289 @@
     "cancion": "basta-para-mi",
     "banda": "los-caballeros-de-la-quema",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#m",
+                    "B",
+                    "F#",
+                    "A",
+                    "E",
+                    "A",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "B",
-                    "A"
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
                     "F#",
-                    "E",
-                    "A",
                     "F#",
-                    "E",
-                    "B"
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
                     "E",
                     "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "E",
+                    "A",
+                    "A",
+                    "A",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
             2,
-            2,
-            1,
-            2,
-            2
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Result",
-            "a que ",
-            "la porquería es hoy y acá/n "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Todo lo que se c",
-            "ae se vuelve a caer",
-            "./n "
+            "Resulta que ",
+            "la porquer",
+            "ía, estoy ac",
+            "á, en los míos ",
+            "también.  \n\nLa argentin",
+            "ita tuberculo",
+            "sa que \n\nTiti \n\nGua",
+            "nti supimos cons",
+            "eguir. \n\nTodo lo ",
+            "que se cae se vuelve ",
+            "cae",
+            "r, lo ",
+            "que empiez",
+            "a mañana termin",
+            "a ayer, ",
+            "aye",
+            "r. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Lo que empieza ma",
-            "ana termina aye",
-            "r",
-            "/n "
+            "Hola \n\nSu",
+            "sana, adiós \n\nCha",
+            "branes, el pueblo un",
+            "ido, chorreando te",
+            "léfono. \n\nPorca mi",
+            "seria, bola de g",
+            "arcas, abande",
+            "rados, es cap",
+            "utá que hernés. \n\nTodo lo ",
+            "que se cae se vuelve ",
+            "cae",
+            "r. /n"
         ],
         [
-            "Todo lo que se c",
-            "ae se vuelve a caer",
-            "./n "
+            "La \n\nRepú",
+            "blica gaucha que bi",
+            "en se ve, ",
+            "tipina, ",
+            "la celeste bl",
+            "anca. \n\nNo jue",
+            "go más",
+            ", basta par",
+            "a mí, ",
+            "no jueg",
+            "o más",
+            ", la hora, ",
+            "la hora refe",
+            "rí. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "La repúplica ",
-            "gaucha... Que bien se ve",
-            "!,/n div"
+            "Guarda vec",
+            "ina con los boli",
+            "tas, lo que trag",
+            "edia la doña \n\nLad",
+            "y. \n\nTenemos pampa",
+            "s, tenemos catarata",
+            "s, tenemos genocid",
+            "as asco para repa",
+            "rtir. \n\nTodo lo ",
+            "que se cae se vuelve ",
+            "caer ",
+            "/n"
         ],
         [
-            "ina la celeste y blanca!!/n "
+            "La \n\nRepúb",
+            "lica gaucha que bien ",
+            "se ve, ",
+            "tipina, ",
+            "la celeste blan",
+            "ca. \n\nNo jueg ",
+            "más",
+            ", basta par",
+            "a mí, ",
+            "no jueg ",
+            "más",
+            ", la hora re",
+            "ferí. /n"
         ],
         [
-            "No juego m",
-            "s./n "
-        ],
-        [
-            "Basta para m",
-            "i./n "
-        ],
-        [
-            "No juego m",
-            "s./n "
-        ],
-        [
-            "La hora ",
-            "referí!/n "
-        ],
-        [
-            "Todo lo que se c",
-            "ae se vuelve a caer",
-            "./n "
-        ],
-        [
-            "La repúplica g",
-            "aucha... Que bien se ve",
-            "!,/n div"
-        ],
-        [
-            "ina la celeste y blanca!!/n "
-        ],
-        [
-            "No juego m",
-            "s./n "
-        ],
-        [
-            "Basta para m",
-            "i./n "
-        ],
-        [
-            "No juego m",
-            "s./n "
-        ],
-        [
-            "La hora ",
-            "referí!/n"
-        ],
-        []
+            "No juego ",
+            "más ",
+            "basta para ",
+            "mí, ",
+            "no juego ",
+            "más ",
+            "la hora, ",
+            "la hora refe",
+            "rí. \n\nNo juego m",
+            "ás, basta para ",
+            "mí, no juego má",
+            "s, la hora refe",
+            "rí. \n\nNo juego má",
+            "s, basta para ",
+            "mí, no juego má",
+            "s, basta. ",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "AoUV6QZfaZY",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

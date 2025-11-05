@@ -2,166 +2,260 @@
     "cancion": "maria",
     "banda": "julio-sosa",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "E",
                     "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B7",
+                    "E7",
                     "E",
-                    "C7",
-                    "F#7",
+                    "D7",
+                    "D7",
+                    "B7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
                     "B7",
                     "E",
+                    "B7",
                     "C7",
                     "B7",
-                    "E7",
-                    "Am",
                     "B7",
-                    "Em",
+                    "B7",
+                    "E",
+                    "B7",
+                    "E",
+                    "E7 Am",
+                    "Am F#7",
                     "Em7",
-                    "F#7",
                     "C7",
                     "B7",
                     "Am",
-                    "Am/G",
-                    "B7",
-                    "Am",
-                    "Am/G",
                     "B7",
                     "Am",
                     "B7",
-                    "Em",
-                    "Em7",
+                    "Am",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "F#7",
                     "B7",
-                    "Em",
-                    "F",
-                    "B7",
                     "E7",
-                    "Am",
                     "D7",
-                    "G",
-                    "F#7",
+                    "D7",
                     "Am",
+                    "Am Em7",
+                    "Em G",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "B7",
                     "B7",
                     "Em",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7",
                     "D7",
-                    "G",
-                    "Am",
-                    "B7",
-                    "E7",
-                    "Am",
-                    "Am/G",
-                    "B7",
-                    "Em",
                     "Em7",
-                    "F7",
+                    "C7 E7",
+                    "C7",
+                    "C7",
                     "B7",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "D7",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#7",
+                    "B7",
+                    "E7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D7",
+                    "Am",
+                    "B7 F#7",
+                    "D7",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "B7",
+                    "B7",
+                    "Em7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "   Aca",
-            "so te llama",
-            "ras solamen",
-            "te María",
-            "/n"
+            "¡\nQué vieja cansada imagen me ",
+            "devuelve  el espejo! ",
+            "¡\nAsí pudieras verme! /n"
         ],
         [
-            "   No se si eras el eco ",
-            "de una vieja c",
-            "anción",
-            "/npero "
+            "Solo aquí en la gr",
+            "ispe nombra de mi pieza, ",
+            "de este cuarto nuestro que par",
+            "ece tan grande desde que f",
+            "altas tú. \n\nSabe \n\nDio",
+            "s por qué sendero de infortunio pa",
+            "searás tu tristeza, ",
+            "yo solo, con tu adiós gol",
+            "peándome el alma, mientras la ",
+            "madrugada febril de miles de es",
+            "peranzas me trae el eco alucin",
+            "ado de tus pasos pequeños que te alej",
+            "an, la música triste de ",
+            "tus palabras que se van ad",
+            "elgazando hasta el silenc",
+            "io. ¿\nAcaso ",
+            "te llamaran solame",
+            "nte \n\nMaría? \n\nNo sé ",
+            "si eras el eco de una vi",
+            "eja canción, pero h",
+            "ace mucho, mucho fui de ",
+            "hondamente  mía sobre ",
+            "un paisaje triste desma",
+            "yado de amor. \n\nUn ot",
+            "oño te trajo moja",
+            "ndo de agonía tu s",
+            "ombrerito pobre el tapa",
+            "do marrón, si eras ",
+            "como  la calle de la ",
+            "melancolía que ll",
+            "ovía, llovía sob",
+            "re tu corazón. /n"
         ],
         [
-            "hace mucho m",
-            "ucho fuiste ho",
-            "ndamente mía",
-            "/nen "
+            "Mar",
+            "ía, en la som",
+            "bra de mi pieza es tu pas",
+            "o el que regre",
+            "sa. \n\nMar",
+            "ía, es tu voz ",
+            "pequeña triste la ",
+            "del día que dijiste, ya no hay ",
+            "nada  entre los ojos /n"
         ],
         [
-            "un paisaje t",
-            "riste desolad",
-            "o de amor.",
-            "/nUn otoño te "
+            "María ",
+            "la más m",
+            "ía, la lejana, si volv",
+            "iera otra maña",
+            "na por las ",
+            "calles del adiós. /n"
         ],
         [
-            "trajo moj",
-            "ando de agonía",
-            "/nTu sombrerito "
+            "Tus ojos eran pu",
+            "ertos que guardaban au",
+            "sentes un horizonte ",
+            "de sombras un pasado de ",
+            "sol, pero tus manos b",
+            "uenas regresaron pre",
+            "sentes para curar mi ",
+            "fiebre de esteñida de am",
+            "or. \n\nUn otoño te f",
+            "uiste, tu nombre era \n\nM",
+            "aría nunca supe ",
+            "nada  de tu rumbo in",
+            "feliz, si eras como la ",
+            "calle de la melan",
+            "colía que llovía, l",
+            "lovía sobre la tar",
+            "de gris. /n"
         ],
         [
-            "pobre y el tap",
-            "ado marrón",
-            "/nEras como la "
+            "María, ",
+            "en la sombra de ",
+            "mi pieza es tu paso el ",
+            "que regresa. /n"
         ],
         [
-            "calle de la ",
-            "melancolía",
-            "/nQue llov"
+            "María ",
+            "es tu voz peque",
+            "ña triste la del día ",
+            "que dijiste, ya no hay nada e",
+            "ntre los ojos. /n"
         ],
         [
-            "ía llov",
-            "ía sobr",
-            "e mi coraz",
-            "n/nM"
-        ],
-        [
-            "arí -",
-            " a/n    En las s"
-        ],
-        [
-            "ombras de mi pi",
-            "eza/nEs tu "
-        ],
-        [
-            "paso el que regr",
-            "esa/nMar"
-        ],
-        [
-            "ía/n"
-        ],
-        [
-            "   Es tu voz",
-            " pequeña y tr",
-            "iste/nLa del d"
-        ],
-        [
-            "ía en que di",
-            "jiste/nYa no hay "
-        ],
-        [
-            "nada entre los do",
-            "s/n"
-        ],
-        [
-            "   Mar",
-            "  - A",
-            "/n   La más "
-        ],
-        [
-            "mía la ",
-            "lejana/nSi volv"
-        ],
-        [
-            "iera otra ma",
-            "ana/n"
-        ],
-        [
-            "   Por las calles del adi",
-            "s."
+            "María, ",
+            "la más mía",
+            ", la lejana, si volviera o",
+            "tra mañan ",
+            "por ",
+            "las cal",
+            "les del ",
+            "adiós. ",
+            "",
+            ""
         ]
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LGZgxmUJKT8",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
 }

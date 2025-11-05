@@ -2,15 +2,18 @@
     "cancion": "asi-se-habla",
     "banda": "babasonicos",
     "escala": "B5",
-    "bpm": 60,
+    "bpm": 78,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "B5"
+                    "C",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -20,6 +23,52 @@
     },
     "letras": [
         [
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Será tu ed",
+            "ucació  cristiana, el fantasma en toda",
+            "partes /n Será tu",
+            "aversió  social, lo que te aleja de l",
+            "o parents /n Vamos quiero u",
+            "n  exp",
+            "lic",
+            "aci",
+            "ó ",
+            "/n"
+        ],
+        [
+            "Será tu cond",
+            "ició  racial, tu lugar de pri",
+            "vilegi /n Será traba",
+            "ja  cabrón para ganar todo un pen",
+            "dej /n Vamos quiero un",
+            "explicac",
+            "ió ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Será que mi obr",
+            "a  social no me protege de la rabi",
+            "a /n Será que me cog",
+            "iero  mal que no me trago la charada/n"
+        ],
+        [
+            "Vamos quiero una",
+            "explica",
+            "ció /n Vamos quiero una",
+            "ex",
+            "pl",
+            "ic",
+            "ac",
+            "",
             ""
         ]
     ],
@@ -27,8 +76,10 @@
         {
             "tipo": "Youtube",
             "id": "bxVQCyyo_Dc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }
