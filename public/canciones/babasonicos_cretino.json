@@ -2,223 +2,255 @@
     "cancion": "cretino",
     "banda": "babasonicos",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#m",
                     "A5",
-                    "F#m",
-                    "A5",
+                    "D5",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#",
                     "F#",
                     "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "F#m",
-                    "A5",
                     "F#m",
-                    "A",
                     "F#m",
-                    "A",
                     "F#m",
-                    "A",
-                    "D5",
+                    "F#m",
+                    "F#m",
                     "C#m",
-                    "Bm",
-                    "D5",
                     "C#m",
-                    "Bm",
-                    "F#m",
-                    "A5",
-                    "D5",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "D5",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "D5",
                     "C#m",
-                    "Bm",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "D5",
                     "C#m",
-                    "Bm",
-                    "D5",
+                    "F#m",
                     "C#m",
-                    "Bm",
-                    "F#m",
-                    "A5",
-                    "D5",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "D5",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "F#m",
-                    "A5",
-                    "D5",
                     "C#m",
-                    "Bm"
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "A5",
+                    "A5",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D5",
+                    "F#m",
+                    "F#m",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "El día es ",
-            "gobernado por los r",
-            "uidos/nLa noche, por "
-        ],
-        [
-            "rumores/n"
-        ],
-        [
-            "Mi bolsa de re",
-            "cuerdos de esta corta vi",
-            "da/nDa para "
-        ],
-        [
-            "canciones/n"
-        ],
-        [
-            "Manejo un encu",
-            "mbrado perfil/n"
-        ],
-        [
-            "Escombro de cre",
-            "tino/n"
-        ],
-        [
-            "Y hago lo que me",
-            " parece a mi.../n"
-        ],
-        [
-            "No tendrás ",
-            "algo ante tu/nI"
-        ],
-        [
-            "maginación?/n"
-        ],
-        [
-            "Que no quer",
-            "rás mostrarle a n",
-            "adie?/n"
-        ],
-        [
-            "Esto no e",
-            "s el festiva",
-            "l de la canció",
-            "n/n"
-        ],
-        [
-            "Donde fest",
-            "ejan y apl",
-            "auden",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Tengo proble",
-            "mas y ",
-            "los resuelv",
-            "o mal/n"
+            "El día es g",
+            "obernad  por los ru",
+            "idos  la noche por",
+            "rumores./n"
         ],
         [
-            "No soy un p",
-            "remio para na",
-            "die/n"
+            "Mi bolsa d",
+            "e  recuerdos de esta co",
+            "rt  vida da para c",
+            "anciones /n"
         ],
         [
-            "El mundo es cor",
-            "onado por zumb",
-            "idos/nDe chismes vola"
-        ],
-        [
-            "dores/n"
-        ],
-        [
-            "Tu cuerpo, por tembl",
-            "ores que/nParecer"
-        ],
-        [
-            "ían ser de otro ",
-            "planeta/n"
-        ],
-        [
-            "Veo un zigzag de f",
-            "ase mandril/n"
-        ],
-        [
-            "Maniática man",
-            "iobra/n"
-        ],
-        [
-            "Cuidado, no te ac",
-            "erques así/n"
-        ],
-        [
-            "O tu cosi",
-            "ta puede ter",
-            "minar/n"
-        ],
-        [
-            "Protagoni",
-            "zando otro dr",
-            "ama/n"
-        ],
-        [
-            "Esto no e",
-            "s el festiva",
-            "l de la canció",
-            "n/n"
-        ],
-        [
-            "Donde fest",
-            "ejan y apl",
-            "auden",
+            "Manejo un enc",
+            "umbrad  perf",
+            "il  escombro de",
+            "cretino ",
+            "hago lo que m",
+            "e parece mí. /n N",
+            "o  tendrás",
+            "alg  ante tu",
+            "imaginac",
+            "ión ",
+            "que no quer",
+            "rá  mostrarle",
+            "nadie.",
             "/n"
         ],
         [
-            "Tengo proble",
-            "mas y ",
-            "los resuelv",
-            "o mal/n"
+            "Esto no",
+            "es el festiv",
+            "a  de la can",
+            "ción ",
+            "donde fes",
+            "teja  a",
+            "plauden/n"
         ],
         [
-            "No soy un p",
-            "remio para na",
-            "die x2"
+            "Ten",
+            "g  pro",
+            "blema ",
+            "los resue",
+            "lv  mal,",
+            "n  soy un p",
+            "remi  para t",
+            "i ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "l  mundo es coronad",
+            "o  por los subitivo",
+            "de chismes volador",
+            "es /n"
+        ],
+        [
+            "Tu cuerpo por temblore",
+            "que parecerían",
+            "ser de otro planet",
+            "a /n"
+        ],
+        [
+            "Veo un zigzag que pase ma",
+            "ndrilla ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El mundo es coronado por los subitivos de chismes voladores. /n Tu cuerpo por temblores que parecerían ser de otro planeta. Veo un zigzag que pase mandrilla."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PILAiha1b2Y",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

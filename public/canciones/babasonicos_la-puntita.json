@@ -2,60 +2,202 @@
     "cancion": "la-puntita",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
-                    "D",
-                    "G",
                     "Em",
-                    "Am",
-                    "B7",
-                    "E",
-                    "F#m"
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "Am",
-                    "E",
-                    "E7",
-                    "A",
                     "Am",
-                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
                     "B7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Em",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m",
                     "Am",
-                    "D",
-                    "G",
-                    "Em",
                     "Am",
-                    "B7",
-                    "Em"
+                    "E",
+                    "E",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "Am",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
                     "E",
                     "E7",
-                    "A",
+                    "E7",
+                    "E7",
                     "Am",
-                    "F#m",
+                    "Am",
+                    "Am",
+                    "Am",
                     "B7",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
@@ -63,109 +205,183 @@
             0,
             1,
             2,
-            0,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "mentir",
-            "/nPalabras de "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "amor/n"
+            "L",
+            "o  m",
+            "al  es m",
+            "entir ",
+            "/n"
         ],
         [
-            "Acéptal",
-            "o/nNo estamos p"
+            "P",
+            "alabra  d",
+            "amo",
+            "r ",
+            "",
+            "acepta",
+            "l /n N",
+            "o  estamos p",
+            "ar  eso",
+            "nos falta v",
+            "alo ",
+            "",
+            "/n"
         ],
         [
-            "ara eso/nNos falta valor"
+            "Tú s",
+            "abes  lo que",
+            "dice  de m",
+            "i ",
+            "s",
+            "abe  lo que",
+            "dice  del a",
+            "mo /n C",
+            "om  yo s",
+            "é  que tú lo",
+            "sabes  me lo",
+            "cay",
+            "",
+            "acor",
+            "demo  que la g",
+            "ent /n"
         ],
         [
-            "/nTu sabes lo que dicen de "
+            "Tien",
+            "t  cuando hab",
+            "l  de los d",
+            "o",
+            "s ",
+            "/n"
         ],
         [
-            "mi/nY s"
+            "Acépt",
+            "alo ",
+            "n",
+            "o  estamos pa",
+            "r  el rom",
+            "anc ",
+            "/n"
         ],
         [
-            "abes lo que dicen del a",
-            "mor/nComo yo sé que tú "
+            "Entregu",
+            "émono  al tr",
+            "anc /n"
         ],
         [
-            "lo sabes/nMe lo cal"
+            "Qu",
+            "e  eso sí e",
+            "s  para los d",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "lo",
-            "/nY acordemos que la "
+            "L",
+            "o  malo es m",
+            "entir",
+            "",
+            "/n"
         ],
         [
-            "gente/n"
+            "Palabras d",
+            "e  amor,",
+            "",
+            "",
+            "acep",
+            "tal /n"
         ],
         [
-            "Miente cuando habla de los d",
-            "os/nAcépt"
+            "No estamos p",
+            "ara  eso",
+            ",  nos falta v",
+            "alo ",
+            "",
+            "/n"
         ],
         [
-            "alo",
-            "/nNo estamos para el "
+            "Tú",
+            "sabe  lo qu",
+            "e  dicen de m",
+            "i ",
+            "s",
+            "abes  lo qu",
+            "e  dicen del a",
+            "mor /n"
         ],
         [
-            "romance",
-            "/nEntreguémonos al"
-        ],
-        [
-            " trance",
-            "/nQue eso si es para los "
-        ],
-        [
-            "dos/nLo malo es "
-        ],
-        [
-            "mentir",
-            "/nPalabras de "
-        ],
-        [
-            "amor/n"
-        ],
-        [
-            "Acéptal",
-            "o/nNo estamos "
-        ],
-        [
-            "para eso/nNos falta valor"
-        ],
-        [
-            "/nTu sabes lo que dicen de "
-        ],
-        [
-            "mi/nY s"
-        ],
-        [
-            "abes lo que dicen del a",
-            "mor/nComo yo sé que tú"
-        ],
-        [
-            " lo sabes/nMe lo cal"
-        ],
-        [
-            "lo",
-            "/nY acordemos que la "
-        ],
-        [
-            "gente/n"
-        ],
-        [
-            "Miente cuando habla de los d",
-            "os"
+            "Como yo",
+            "s  que tú l",
+            "o  sabes, me lo",
+            "cay ",
+            "",
+            "ac",
+            "ordemo  que la g",
+            "ente /n T",
+            "ien",
+            "t  cuando ha",
+            "bl  de los d",
+            "o",
+            "s ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "7wLg3UTB3As",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

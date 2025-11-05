@@ -2,143 +2,256 @@
     "cancion": "los-romanticos",
     "banda": "babasonicos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "G#m",
-                    "Gm"
+                    "A",
+                    "A",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "F#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "F#m",
-                    "A",
-                    "E",
-                    "F#m",
                     "G#m",
-                    "F#m"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B",
+                    "A",
+                    "G#m",
+                    "A",
+                    "A",
                     "E",
-                    "G#m"
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "G#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Gm",
-                    "F#m",
                     "A",
                     "E",
-                    "F#m",
-                    "G#m",
-                    "F#m"
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "C#m",
-                    "B",
                     "E",
-                    "F#m",
-                    "B",
-                    "A",
                     "G#m",
-                    "F#m"
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "G#m",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
             3,
-            2,
-            4
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            " Que anti",
-            "guo me parec",
-            "e",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " que pidas algo serio de mí/n"
+            "Q",
+            "u  antiguo m",
+            "e  parece,",
+            "que pides alg",
+            "o serio de mi. /n A",
+            "hor  que no",
+            "s  empez",
+            "ó  gu",
+            "star ",
+            "te da miedo",
+            "enamorar",
+            "t /n Perdida",
+            "locament  de mi,",
+            "sabiendo que ta",
+            "mbié  me gust",
+            "a  las demás/n"
         ],
         [
-            " ahora que ",
-            "nos empezó ",
-            "a gustar",
+            "N",
+            "o  me da igua",
+            "l  que te se",
+            "indife",
+            "rente ",
+            "ya caer",
+            "á  en mis b",
+            "razo",
+            "s /n"
+        ],
+        [
+            "Insegu",
+            "r  de repent",
+            "e  donde",
+            "pensa  que puedo decir,",
+            "ahora que n",
+            "os  acerca",
+            "mo  al",
+            "go /n N",
+            "o  me da ig",
+            "ua  que te s",
+            "ea  indifer",
+            "ente ",
+            "ya cae",
+            "rá  en mis br",
+            "azos ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Te da mi",
-            "edo enamorar",
-            "te",
-            "/n"
+            "Desc",
+            "onfí  que me",
+            "entienda  de ve",
+            "rdad ",
+            "la verd",
+            "a  es que t",
+            "e  amo./n"
         ],
         [
-            " perdida y locamente de mí/n"
+            "N",
+            "o  me da i",
+            "gua  que t",
+            "e  sea indi",
+            "ferent",
+            "ya ca",
+            "erá  en mis",
+            "brazos /n"
         ],
         [
-            " sabiendo que ",
-            "también me gu",
-            "stan las dem",
-            "ás",
-            "/n"
-        ],
-        [],
-        [],
-        [
-            " Insegu",
-            "ra de repen",
-            "te",
-            "/n"
-        ],
-        [
-            " ¿adónde pensás que podés ir?/n"
-        ],
-        [
-            " ahora que ",
-            "nos acercá",
-            "bamos a algo/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "N",
+            "o  me da",
+            "igua  que t",
+            "e  sea indi",
+            "ferente ",
+            "ya c",
+            "aerá  en mis brazos.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "tqDTwXUC5ko",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

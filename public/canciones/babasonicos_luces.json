@@ -2,18 +2,63 @@
     "cancion": "luces",
     "banda": "babasonicos",
     "escala": "E5",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E5",
                     "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
                     "A5",
-                    "G5"
+                    "A5",
+                    "A5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "E5",
+                    "E5",
+                    "E5"
                 ]
             },
             {
@@ -21,138 +66,228 @@
                 "acordes": [
                     "E5",
                     "E5",
+                    "A5",
+                    "A5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "E5",
                     "E5",
                     "A5",
-                    "G5"
+                    "A5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "A5",
+                    "A5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "saquense caretas c",
-            "ayense profetas /n   "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oigan a un cometa g",
-            "ritar /n   "
+            "N",
+            "o  se que son estas",
+            "luces, n",
+            "o  se que me hablan del",
+            "roc  and roll,",
+            "es una oscura ba",
+            "rata ",
+            "es solo posse que ha",
+            "y imitación. /n Sac",
+            "ens  caretas, ca",
+            "sa  propetas, oi",
+            "ga  un comenta gr",
+            "itar ",
+            "rock and ro",
+            "ll. /n Rock a",
+            "n  roll, roc",
+            "k  and roll, ro",
+            "c  a",
+            "n",
+            "d  roll, rock and r",
+            "oll,  rock",
+            "an  ro",
+            "ll  ro",
+            "c  and rol",
+            "l ",
+            "",
+            "",
+            "rock a",
+            "n",
+            "d  r",
+            "o",
+            "l",
+            "l /n Sacens",
+            "caretas, casas",
+            "propetas, oigan u",
+            "n  comenta gri",
+            "tar ",
+            "rock and roll.",
+            "",
+            "/n"
         ],
         [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
+            "Sacense",
+            "caretas  casas",
+            "propetas  oigan u",
+            "n  comenta gritar",
+            "r",
+            "ock  and roll.",
+            "",
+            "",
+            "r",
+            "oc  and roll.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "saquense caretas c",
-            "ayense profetas /n   "
+            "Rock and",
+            "r",
+            "o",
+            "l",
+            "l",
+            "r",
+            "o",
+            "c",
+            "and roll, rock and roll, rock and",
+            "roll, rock an",
+            "roll, rock and rol",
+            "l  r",
+            "oc  and r",
+            "oll,  rock and",
+            "roll,",
+            "rock and roll,",
+            "rock and roll,",
+            "",
+            "rock and roll, rock and roll,",
+            "rock and roll, rock and roll, rock and roll, rock and roll, rock and roll, rock a",
+            "nd  ro",
+            "ll  rock and rol",
+            "l /n"
         ],
         [
-            "oigan a un cometa g",
-            "ritar /n   "
+            "Sacense care",
+            "tas  casas prope",
+            "tas  oigan un comenta",
+            "grita",
+            "r  rock an",
+            "d  roll.",
+            "",
+            "/n"
         ],
         [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
+            "Sacense caretas",
+            "casas propetas,",
+            "oigan un comenta",
+            "gritar,",
+            "rock an",
+            "roll.",
+            "",
+            "",
+            "rock and",
+            "roll.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "saquense caretas c",
-            "ayense profetas /n   "
-        ],
-        [
-            "oigan a un cometa g",
-            "ritar /n   "
-        ],
-        [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
-        ],
-        [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
-        ],
-        [
-            "cagon cagon cagon te vas de luces cagon cagon cagon /n   "
-        ],
-        [
-            "cagon cagon cagon te vas de luces cagon cagon cagon /n   "
-        ],
-        [
-            "saquense caretas c",
-            "ayense profetas /n   "
-        ],
-        [
-            "oigan a un cometa g",
-            "ritar /n   "
-        ],
-        [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
-        ],
-        [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
-        ],
-        [
-            "saquense caretas c",
-            "ayense profetas /n   "
-        ],
-        [
-            "oigan a un cometa g",
-            "ritar /n   "
-        ],
-        [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
-        ],
-        [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh /n   "
-        ],
-        [
-            "arrogante rock    ",
-            "                uh",
-            "hhh uhh",
-            "hh "
+            "Sacense caretas."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "eTMi1B6Ji60",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,121 +2,406 @@
     "cancion": "la-hiedra-crece",
     "banda": "babasonicos",
     "escala": "A5",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A5",
-                    "A5",
-                    "G5",
-                    "A5",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "C5",
-                    "A5",
-                    "G5",
                     "C5",
-                    "D5",
-                    "G5",
-                    "Am",
                     "C",
+                    "C",
+                    "C",
+                    "Fmaj7",
+                    "Fmaj7",
                     "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
                     "Am",
                     "C",
+                    "Fmaj7",
+                    "Fmaj7",
+                    "Am",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "D",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
                     "G",
                     "C5",
-                    "Am",
-                    "C",
-                    "Am",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "G",
-                    "Fmaj7",
-                    "Am",
-                    "C",
-                    "D",
-                    "Fmaj7",
-                    "Am",
-                    "C",
-                    "Fmaj7",
-                    "Am",
-                    "D",
-                    "Am",
-                    "D",
-                    "Am",
-                    "D",
-                    "Am",
-                    "D",
-                    "Am",
-                    "C",
-                    "G",
-                    "Am",
-                    "C",
-                    "G",
                     "C5",
-                    "Am",
                     "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Fmaj7",
+                    "C",
+                    "C",
+                    "Am",
                     "Am",
                     "C",
                     "Fmaj7",
-                    "C",
-                    "G",
                     "Fmaj7",
                     "Am",
-                    "C",
-                    "D",
-                    "Fmaj7",
                     "Am",
                     "C",
-                    "Fmaj7",
+                    "Am",
                     "Am",
                     "D",
                     "Am",
-                    "D",
+                    "Am",
                     "Am",
                     "D",
                     "Am",
-                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "C",
-                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "C",
-                    "G",
-                    "Am",
+                    "C",
                     "C",
                     "D",
-                    "Fmaj7",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "Am",
                     "Am",
                     "C",
-                    "D",
-                    "Fmaj7",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
                     "Am",
                     "C",
+                    "C",
+                    "C",
                     "D",
-                    "Fmaj7",
+                    "D",
+                    "Am",
                     "Am",
                     "D",
                     "Am",
-                    "D",
                     "Am",
-                    "D",
                     "Am",
-                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "Am"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            ": ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Moja d",
+            "e  ni",
+            "ra  po",
+            "seíd  s",
+            "e  rompió",
+            "llor",
+            "ar ",
+            "sin exc",
+            "usa  q",
+            "uem  mis cosa",
+            "s  me ec",
+            "h  rod",
+            "ar lo sé. /n S",
+            "er  un me",
+            "ndig  otra v",
+            "ez /n"
+        ],
+        [
+            "Todo es au",
+            "sencia ",
+            "dulce ca",
+            "renci",
+            "a ",
+            "ne",
+            "cesit  hablar c",
+            "o  alguie",
+            "n /n"
+        ],
+        [
+            "Pongo e",
+            "l  mundo e",
+            "n  oj",
+            "o  apa",
+            "g  nervi",
+            "os  ya l",
+            "o  creo q",
+            "u/n"
+        ],
+        [
+            "Dios e",
+            "s  una mujer d",
+            "e  piel negra,",
+            "es una mujer/n"
+        ],
+        [
+            "Dios e",
+            "s  una mujer d",
+            "e  piel negra,",
+            "es una muj",
+            "er ",
+            "",
+            "",
+            "",
+            "e",
+            "n  el",
+            "egan",
+            "mi desgr",
+            "aci  sabe",
+            "disf",
+            "ruta",
+            "experta e",
+            "trampa",
+            "s  porque ella e",
+            "s  caula c",
+            "arnad  tam",
+            "bién ",
+            "lo sé. /n Ser u",
+            "n  mendigo ot",
+            "r  vez",
+            ". /n Todo e",
+            "ausenc",
+            "ia  dulce",
+            "car",
+            "enc",
+            "i ",
+            "necesito habl",
+            "a  con al",
+            "guien /n P",
+            "ongo  e",
+            "l  mundo e",
+            "n  o",
+            "jo  a",
+            "pag  nerv",
+            "ios  y",
+            "a  lo creo q",
+            "u /n D",
+            "io  e",
+            "s  una mujer d",
+            "e  piel negra,",
+            "es una muj",
+            "er /n Dios e",
+            "s  una mujer d",
+            "e  piel negra,",
+            "es una muj",
+            "er /n Marchi",
+            "t  el",
+            "j",
+            "a",
+            "r",
+            "d",
+            "í",
+            "n",
+            ",",
+            "",
+            "",
+            "la hie",
+            "dr  c",
+            "r",
+            "e",
+            "c ",
+            "/n"
+        ],
+        [
+            "Del",
+            "iberada ",
+            "exagera s",
+            "u  ins",
+            "ensa",
+            "tez ",
+            "hipocre",
+            "sía  s",
+            "u  juventud",
+            "ador  en",
+            "vejec",
+            "e /n Marc",
+            "hit  el",
+            "jard",
+            "ín  la",
+            "hiedr  cr",
+            "ec  entr",
+            "e  tú y",
+            "o /n"
+        ],
+        [
+            "Marchit",
+            "o  el ja",
+            "rdín",
+            "la hiedra",
+            "crec",
+            "corazón",
+            "mordid",
+            "/n"
+        ],
+        [
+            "Marchito e",
+            "jardí",
+            "n  l",
+            "a  hiedra cr",
+            "ece  s",
+            "e  de sangre he",
+            "rido /n D",
+            "io  e",
+            "s  una mujer de p",
+            "ie  negra, es u",
+            "na  mujer.",
             "",
             "",
             "",
@@ -125,156 +410,29 @@
             "",
             "",
             "",
-            "/nH"
-        ],
-        [
-            "oja de nidia poseída se romp",
-            "ió a llor",
-            "ar /n "
-        ],
-        [
-            "   Sin excusas quemó mis cosas y me hec",
-            "ho a roda",
-            "r lo se",
-            " /nTodo es aus"
-        ],
-        [
-            "encia  ",
-            "/ndulce car"
-        ],
-        [
-            "encia  ",
             "",
-            "/nnece"
-        ],
-        [
-            "sito habla",
-            "r con al",
-            "guien  /nP"
-        ],
-        [
-            "ongo el mu",
-            "ndo en off",
-            "  ",
-            "/nApago n"
-        ],
-        [
-            "ervio /nYa lo cr"
-        ],
-        [
-            "eo que ",
-            "     (ya lo creo que) /nD"
-        ],
-        [
-            "ios es un",
-            "a mujer de piel ne",
-            "gra es una ",
-            "mujer    /nD"
-        ],
-        [
-            "ios es un",
-            "a mujer de piel ne",
-            "gra es una ",
-            "mujer /nH"
-        ],
-        [
-            "iel elegante mi desgracia sabe di",
-            "sfrutar",
-            "  /n"
-        ],
-        [
-            "  experta en trampas porque ella es jaula y carn",
-            "ada tambié",
-            "n lo se",
-            "  /nTodo es aus"
-        ],
-        [
-            "encia  ",
-            "/ndulce car"
-        ],
-        [
-            "encia  ",
             "",
-            "/nnece"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "sito habla",
-            "r con al",
-            "guien  /nP"
-        ],
-        [
-            "ongo el mu",
-            "ndo en off",
-            "  ",
-            "/nApago n"
-        ],
-        [
-            "ervio /nYa lo cr"
-        ],
-        [
-            "eo que ",
-            "     (ya lo creo que) /nD"
-        ],
-        [
-            "ios es un",
-            "a mujer de piel ne",
-            "gra es una ",
-            "mujer    /nD"
-        ],
-        [
-            "ios es un",
-            "a mujer de piel ne",
-            "gra es una ",
-            "mujer /n"
-        ],
-        [
-            "Deliberada exagera su inse",
-            "nsatez",
-            "  /n"
-        ],
-        [
-            "  Hipocresía su juventud adora env",
-            "ejece",
-            "r /nM"
-        ],
-        [
-            "archito al jard",
-            "n la hiedra cre",
-            "ce entre t",
-            "ú y yo  /nM"
-        ],
-        [
-            "archito al jard",
-            "n la hiedra cre",
-            "ce coraz",
-            "ón mordido /nM"
-        ],
-        [
-            "archito al jard",
-            "n la hiedra cre",
-            "ce se desa",
-            "ngra herido /n"
-        ],
-        [
-            "Dios es una",
-            " mujer de piel ne",
-            "gra es una m",
-            "ujer   X  3  /n"
-        ],
-        [
-            "Dios es una",
-            " mujer de piel ne",
-            "gra es una m",
-            "ujer",
-            ""
+            "Marchito el jardín, la hiedra crece."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "_D2lUisMUAE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

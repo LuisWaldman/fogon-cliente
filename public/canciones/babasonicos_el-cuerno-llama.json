@@ -2,22 +2,62 @@
     "cancion": "el-cuerno-llama",
     "banda": "babasonicos",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
                     "C",
                     "Am",
                     "C",
-                    "Em",
-                    "Am"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
@@ -26,99 +66,245 @@
                     "C",
                     "D",
                     "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "D",
+                    "Em",
                     "Am",
                     "C",
                     "D",
                     "Em",
-                    "E"
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Em",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "C",
                     "F",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Em",
                     "Em",
                     "C",
+                    "C",
                     "D",
+                    "Em",
+                    "D",
+                    "Dm",
                     "F",
                     "Em",
-                    "Am"
+                    "F",
+                    "F",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "D",
+                    "F",
+                    "F",
+                    "Em",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            2
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            " ¿Quién en el",
-            " mundo ",
-            "quiere ser adora",
-            "do?/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " ¿Quién agu",
-            "anta tanta",
-            " presió",
-            "n?/n"
+            "Esta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Quié",
+            "n  en el mundo",
+            "quier",
+            "ser ador",
+            "ador /n ¿Qui",
+            "é  aguanta ta",
+            "nt  pr",
+            "esión ",
+            "¿Quién e",
+            "n  los tiempos que c",
+            "orre  nos",
+            "darí  su vi",
+            "d  ca",
+            "mbi  de alg",
+            "un  revel",
+            "ación ",
+            "",
+            "",
+            "",
+            "¿/n"
         ],
         [
-            " ¿Quién en los",
-            " tiempos que corren",
-            " nos dar",
-            "a su vida/n"
+            "Y  cómo puedo darte una r",
+            "espuest ",
+            "lo  interrogantes que pla",
+            "nte  la vida si s",
+            "olo  tengo dudas",
+            "vivo entre preguntas soñ",
+            "and  una vida para",
+            "demostrar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Y cómo",
+            "puedo darte una resp",
+            "uest  lo",
+            "interrogantes que plantea l",
+            "a  vida si solo t",
+            "eng  dudas vivo en",
+            "tr  preguntas soñando u",
+            "na  vida para dem",
+            "ostrar /n E",
+            "s ",
+            "q",
+            "u",
+            "e",
+            "estamos",
+            "atado ",
+            "una silla d",
+            "e  azúcar q",
+            "u  se derrite e",
+            "ritmo d",
+            "lágrima/n"
         ],
         [
-            " a cambio de ",
-            "alguna rev",
-            "elación",
-            "?/nY "
+            "To",
+            "d  el dinero en tu",
+            "cuenta e",
+            "s  el peso del",
+            "anclar s",
+            "ostenid  p",
+            "o  el miedo e",
+            "l  confort ¿/n"
         ],
         [
-            "cómo puedo darte una ",
-            "respuesta          )/na "
+            "Y  cómo puedo dar",
+            "t  una respuesta",
+            "los interrogant",
+            "e  que plantea la vida s",
+            "i  solo tengo du",
+            "da  vivo entre pregunt",
+            "a  soñando una vida",
+            "para demostrar? /n T",
+            "oco  d",
+            "e  oído el cue",
+            "rn  que animan",
+            "lo  hombres",
+            "se",
+            "r  esclavos del",
+            "amor",
+            "¿/n"
         ],
         [
-            "los interrogantes que pl",
-            "antea la vida?   )/nSi "
-        ],
-        [
-            "solo tengo dudas y vi",
-            "vo entre preguntas )/nso"
-        ],
-        [
-            "ando una vida para d",
-            "emostrar.           )/n"
-        ],
-        [],
-        [
-            "Es que est",
-            "amos atados a",
-            " una silla de azúcar/n"
-        ],
-        [
-            "Toco de o",
-            "do el cuerno q",
-            "ue animan los ho",
-            "mbres  )/n"
-        ],
-        [
-            "a ser escl",
-            "avos del amor",
-            ".                       )"
+            "Y  cómo puedo darte un",
+            "a  respuesta",
+            "los interrogantes que",
+            "plantea la vida s",
+            "i  solo tengo dudas",
+            "vivo entre preguntas so",
+            "ñand  una vida par",
+            "a demostrar? /n T",
+            "oc  de",
+            "oíd  el cuerno q",
+            "ue  animan los",
+            "hombre ",
+            "ser es",
+            "clavo  del a",
+            "mo ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "4fPClcoASiQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

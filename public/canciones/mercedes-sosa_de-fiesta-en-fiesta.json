@@ -8,59 +8,224 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Fm",
+                    "Fm",
                     "G#",
-                    "Bb"
+                    "Bb",
+                    "C7",
+                    "C7",
+                    "C7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G#",
-                    "Bb",
-                    "G#",
                     "C7",
+                    "C7",
+                    "C7",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bb",
                     "Fm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bb",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "ló a mi coraz",
-            "ón/nque siga con"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tento y nada m",
-            "ás/ndejen"
+            "Dejenlo m",
+            "i  corazón, que sigue conte",
+            "nt nada más. /n Dejen",
+            "l  que cante alegre, no quiero que t",
+            "enga  algún pesar.",
+            "",
+            "/n"
         ],
         [
-            "ló que cante a",
-            "legre/nno quiero que "
+            "De fies",
+            "t  en fiesta andará, hermano s",
+            "er del carnaval. /n Co",
+            "un grito bien salvaje que tiembla e",
+            "n  los montes del sur.",
+            "",
+            "/n"
         ],
         [
-            "tenga algún pe",
-            "sar."
+            "Que v",
+            "ea  salir el sol maduro",
+            "caliente en el tunal.",
+            "los pájaros que trinan de ga",
+            "na  de echarle una charla./n"
+        ],
+        [
+            "Alégrate corazón, esto t",
+            "e  lo puedo asegurar./n"
+        ],
+        [
+            "Mientra  que de un santiagueño la ch",
+            "acrer  no morirá.",
+            "",
+            "/n"
+        ],
+        [
+            "Domi",
+            "ng  cura.",
+            "/n"
+        ],
+        [
+            "Todo es fiesta p",
+            "ara  mí, después de la lluvi",
+            "contemplar. /n El calor de",
+            "l  horizonte no sé que pintor po",
+            "dr pintar. /n Si es mi pa",
+            "tri  mía.",
+            "/n"
+        ],
+        [
+            "La prima",
+            "ver  traerá la flor amarilla d",
+            "e  chañal. el zumbar de l",
+            "a  abejas que van trabajando s",
+            "u  panal.",
+            "",
+            "/n"
+        ],
+        [
+            "Sembra del alg",
+            "a  robo, aún lo pierdo te vuelve en s",
+            "u calor. /n Canta un pájaro s",
+            "in  pena el viento se lleva su",
+            "canción /n Alégrate c",
+            "orazón  esto te lo puedo asegu",
+            "rar /n Mientras que de un san",
+            "tiagueñ  la chacrera no mo",
+            "rirá ",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "1O26ri1YgGU",
-            "delay": 0
+            "delay": 6750.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_de-fiesta-en-fiesta.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_de-fiesta-en-fiesta.mp3",
+    "calidad": 1
 }

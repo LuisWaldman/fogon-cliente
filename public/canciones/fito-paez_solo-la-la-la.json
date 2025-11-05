@@ -6,85 +6,64 @@
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
-        "partes": [
-            {
-                "nombre": "parte1",
-                "acordes": [
-                    "G6",
-                    "Am7",
-                    "G/B",
-                    "G/B",
-                    "C",
-                    "C#m7b5"
-                ]
-            },
-            {
-                "nombre": "parte2",
-                "acordes": [
-                    "Am9",
-                    "G6",
-                    "Am7",
-                    "G/B",
-                    "G/B",
-                    "C",
-                    "C#m7b5",
-                    "G6"
-                ]
-            }
-        ],
-        "orden_partes": [
-            0,
-            0,
-            1
-        ]
+        "partes": [],
+        "orden_partes": []
     },
     "letras": [
         [
-            "Lalala, l",
-            "alala, la",
+            "tres.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Lalala, l",
-            "alala, la",
-            "./n"
-        ],
-        [
-            "Lalala, l",
-            "alala, la",
+            "La lil",
+            "e  la lil",
+            "e  la l",
+            "ile",
+            "la lile, la li",
+            "le  la lile, la lile.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Lalala, l",
-            "alala, la",
-            "./n"
-        ],
-        [
-            "uh/n"
-        ],
-        [
-            "Lalala, l",
-            "alala, la",
-            "/n"
-        ],
-        [
-            "Lalala, l",
-            "alala, la",
-            "./n"
-        ],
-        [
-            "Am7:     x02010"
+            "La lile",
+            ",  la lile, l",
+            "a  lile, la lile, la",
+            "li",
+            "l  la lile.",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QkQbcIOtWD4",
-            "delay": 0
+            "delay": 1750.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

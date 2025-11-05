@@ -8,61 +8,204 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "E7",
-                    "Am"
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
                     "C",
-                    "D",
                     "C",
+                    "Am",
+                    "Am",
                     "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "qué quie",
-            "ro viv",
-            "ir/ncon el "
+            "/n"
         ],
         [
-            "corazón des",
-            "hecho,/npara qu"
+            "quiero vivi",
+            "con el corazón dese",
+            "cho  para que quiero la vi",
+            "d  después de lo que me has hec",
+            "ho ",
+            "",
+            "/n"
         ],
         [
-            "é quiero la v",
-            "ida/ndespués de"
+            "Y",
+            "o  te di mi coraz",
+            "ón  pues el tuyo me entre",
+            "gaste  pero luego con eng",
+            "añ  prenda lo de este desas",
+            "tre ",
+            "",
+            "",
+            "/n"
         ],
         [
-            " lo que me has he",
-            "cho."
+            "Ay, ¿por qué fuiste tan",
+            "crue  si tu franque es espe",
+            "rado? /n ¿Por qué jugaste conm",
+            "ig  priendo aceite dolar traba",
+            "s /n Seguí guitarra,",
+            "seguí, seguí como yo llo",
+            "rando  compañera hasta la m",
+            "uert  seguí mi alma consol",
+            "ando ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "iempre  del mundo olvi",
+            "d  desengaños amargura",
+            "s  pero lo que vos me hiciste pr",
+            "end  en mi alma perdura.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  hay remedio, ya lo sé,",
+            "¿para qué voy llorar?/n"
+        ],
+        [
+            "Tan deshecha tengo el alma, qué i",
+            "nútil  sería buscarl",
+            "o ",
+            "",
+            "/n"
+        ],
+        [
+            "Ca",
+            "ntand  me pasaré muy",
+            "trist  esta ya carrera p",
+            "ued  ser que ya me aleja en e",
+            "l instante me muera. /n Seg",
+            "u  guitarra, seguí, s",
+            "egu  como yo llorando,",
+            "compañera hasta la muerte seguí m",
+            "alma consolando.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "suYnYbscj8k",
-            "delay": 0
+            "delay": 12340.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_chacarera-de-un-triste.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_chacarera-de-un-triste.mp3",
+    "calidad": 1
 }

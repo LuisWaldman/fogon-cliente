@@ -2,112 +2,251 @@
     "cancion": "en-privado",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 83,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Em",
                     "A",
                     "Bm",
-                    "G"
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "A",
-                    "F#m",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
                     "Bm",
                     "A",
-                    "Em"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            1,
             2,
-            2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "lás como si todo lo que decís/nte lo estu"
-        ],
-        [
-            "vieran escribiendo/nen"
-        ],
-        [
-            "tonces controlan tus labios, tus nar",
-            "ices/n"
-        ],
-        [
-            " Lo que me deci",
-            "s no me cie",
-            "rra",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " hagámoslo igu",
-            "al en pri",
-            "vado",
+            "Hablas como si todo lo que decí",
+            "a  te lo estuvieran escribien",
+            "d /n Entonces controlan tus labios,",
+            "tus narices que me lo están propo",
+            "niend /n Las palabras se mezclaron al salir d",
+            "e tu boca caprichosa /n C",
+            "om  un crupie de casino de r",
+            "ut  que juega al tarot por di",
+            "ner /n Lo que me decís no m",
+            "e  cierr",
+            "a /n Hagámoslo igual e",
+            "n  privado/n"
+        ],
+        [
+            "No me importan las co",
+            "nsecuencia/n"
+        ],
+        [
+            "Hagámoslo igual e",
+            "privado /n V",
+            "emo  como si todo lo que hacés te l",
+            "o estuvieran sugiriendo /n D",
+            "esd  detrás de tu oreja desde algú",
+            "n punto que no conozco ni es cierto /n C",
+            "reo  entender que tus intenciones m",
+            "e afectan seriamente /n M",
+            "e lo recordaste una tarde /n Barlo",
+            "vent en el puerto de /n Queq",
+            "ué /n Lo que me decís no me c",
+            "ierra /n H",
+            "agámoslo  igual en p",
+            "rivad /n N",
+            "o  me importan las cons",
+            "ecuencia /n"
+        ],
+        [
+            "Hagámosl  igual en p",
+            "rivad /n Da",
+            "t  una intriga oculta e",
+            "n cada ostra /n Un",
+            "racim  perla en gene",
+            "ra /n Soy",
+            "u  buscador de esos que no",
+            "s conforman /n Dond",
+            "nadie encuentra encontr",
+            "ar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " No me importan la",
-            "s consecue",
-            "ncias",
-            "/n"
+            "Pusiste la mira",
+            "d por algún lugar /n Algo fuera de m",
+            "i alcance /n De lejos me hic",
+            "ist la seña de algo confuso /n L",
+            "o  que los dos suponemos perdamos algo junt",
+            "o /n Por lo menos ya empecejemos el",
+            "acuerd /n Pasa que sos t",
+            "an  hermosa yo estoy hechizado e",
+            "st no tiene remedio /n Lo que",
+            "m  decís no me ci",
+            "err /n Hagámosl",
+            "igual en privado/n"
         ],
         [
-            " hagámoslo igu",
-            "al en pri",
-            "vado",
-            "/n"
+            "No me imp",
+            "orta  las consecue",
+            "ncia /n Hagámosl",
+            "igual en pri",
+            "vad /n Lo que m",
+            "e  decís no me cier",
+            "r /n Hagámoslo i",
+            "gua  en privad/n"
         ],
         [
-            "Late una intr",
-            "iga oculta en ca",
-            "da ostra/n"
-        ],
-        [
-            "un racimo p",
-            "erla en genera",
-            "l/n"
-        ],
-        [
-            "Soy un buscado",
-            "r de esos que no",
-            " se conforman/n"
-        ],
-        [
-            "donde nadie encue",
-            "ntra, encontrar",
-            ".-"
+            "No me importan",
+            "la  consecue",
+            "ncia /n Hagámoslo i",
+            "gual  en priva",
+            "d ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "cZaTUUvg_ds",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

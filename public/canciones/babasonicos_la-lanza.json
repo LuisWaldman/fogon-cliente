@@ -2,69 +2,124 @@
     "cancion": "la-lanza",
     "banda": "babasonicos",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F",
-                    "G",
-                    "Em"
+                    "C",
+                    "Em",
+                    "F",
+                    "Em",
+                    "F",
+                    "Am",
+                    "F",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
-                    "F",
+                    "Bm",
                     "G",
-                    "Am",
-                    "F",
-                    "C",
-                    "Em",
-                    "F"
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "C",
-                    "Em",
-                    "F",
-                    "C",
-                    "Em",
-                    "Am",
-                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "Bm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Bm",
+                    "F",
+                    "G",
+                    "C F",
+                    "G",
+                    "F",
+                    "C",
                     "Em",
-                    "Bm",
-                    "G",
-                    "F#m",
-                    "Asus2",
-                    "Bm",
-                    "G",
-                    "F#m"
+                    "C",
+                    "Em",
+                    "F",
+                    "Am",
+                    "F",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Asus2",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
                     "C#m",
-                    "F#m",
                     "C#m",
-                    "F#m",
                     "C",
                     "Bm",
-                    "Em"
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
@@ -74,137 +129,112 @@
             2,
             3,
             4,
-            0,
-            1,
-            2,
-            3,
-            4
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Antes que despi",
-            "ertes quiero de",
-            "jar en clar",
-            "o/nQue no "
+            "Antes q",
+            "u",
+            "e",
+            "",
+            "",
+            "despiertes q",
+            "uier  dejar en claro qu",
+            "e  no voy dar el brazo",
+            "torcerar /n"
         ],
         [
-            "voy a dar el b",
-            "razo a torcer",
-            "/nC"
+            "Com  llegamos hasta a",
+            "c  donde mi peor yo no",
+            "s  abraza",
+            "no se hace abrir la boca s",
+            "i ningún control /n S",
+            "i  me vas arruinar n",
+            "o  lo des por hec",
+            "h  hasta que lo hagas",
+            "d  verdad/n"
         ],
         [
-            "omo llegamos hasta acá/nD"
+            "Te vi partir e",
+            "n  dos la lanz",
+            "me dejast",
+            "clavada la mitad /n N",
+            "o  voy quejarme, no voy llo",
+            "ra  no voy unirme vos/n"
         ],
         [
-            "onde mi peor y",
-            "o nos abraza",
-            "/nY no "
-        ],
-        [
-            "se si abrir la b",
-            "oca sin ningú",
-            "n control/nSi me v"
-        ],
-        [
-            "as a arruina",
-            "r/n"
-        ],
-        [
-            "No lo des por hecho/n"
-        ],
-        [
-            "Hasta que lo ha",
-            "gas de verdad",
+            "Aunque me claves la otr",
+            "a  mitad",
+            "",
+            "",
             "/n"
         ],
         [
-            "Te vi parti",
-            "r en dos",
-            " la lanza",
+            "A",
+            "ntes  que te duermas q",
+            "uier  dejar en claro qu",
+            "e  peleas con un espejo d",
+            "e pared /n C",
+            "omo  llegamos hasta a",
+            "c  donde tu peor yo se t",
+            "e  instala",
+            "decides sacarnos l",
+            "a piel /n S",
+            "i  me vas empuja",
+            "no me des por muert",
+            "o  hasta que me caiga d",
+            "e  verdad/n"
+        ],
+        [
+            "Te vi partir e",
+            "n  dos la lan",
+            "z  me dejast",
+            "e clavada la mitad /n N",
+            "o  voy quejarme, no voy ll",
+            "ora no voy unirme vos /n A",
+            "unqu  me claves la otra",
+            "mitad",
+            "",
+            "",
             "/n"
         ],
         [
-            "Y me dejast",
-            "e clavad",
-            "a la mita",
-            "d/n"
+            "T",
+            "e  vi partir e",
+            "n  dos la lanz",
+            "a  me dejast",
+            "clavada la mitad /n N",
+            "o  voy quejarme, no voy llo",
+            "ra  no voy unirme tu clu",
+            "b /n Aunque me claves la otra",
+            "mita /n"
         ],
         [
-            "No voy a quejarme/n"
-        ],
-        [
-            "No voy a llorar/n"
-        ],
-        [
-            "Y no voy a unirme a v",
-            "os/n"
-        ],
-        [
-            "Aunque me clave",
-            "s la otra mitad",
-            "/n"
-        ],
-        [
-            "Antes que te du",
-            "ermas quiero de",
-            "jar en clar",
-            "o/nQue pel"
-        ],
-        [
-            "eas con un esp",
-            "ejo de pared",
-            "/nC"
-        ],
-        [
-            "omo llegamos hasta acá/nD"
-        ],
-        [
-            "onde tu peor y",
-            "o se te instala",
-            "/nY dec"
-        ],
-        [
-            "ide saca",
-            "rnos la piel",
-            "/nSi me v"
-        ],
-        [
-            "as a empujar",
-            "/n"
-        ],
-        [
-            "No me des por muerto/n"
-        ],
-        [
-            "Hasta que me ca",
-            "iga de verdad",
-            "/n"
-        ],
-        [],
-        [
-            "Te vi parti",
-            "r en dos",
-            " la lanza",
-            "/n"
-        ],
-        [
-            "Y me dejast",
-            "e clavada la mitad/nNo voy a quejarme"
-        ],
-        [],
-        [],
-        [],
-        []
+            "Te vi partir e",
+            "n  dos la lanz",
+            "a  me dejast",
+            "e clavada la mitad /n N",
+            "o  voy quejarme, no voy llo",
+            "ra  no voy unirme tu cl",
+            "u /n Aunque me claves la otra",
+            "mitad",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Lrn8XIU1xqM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

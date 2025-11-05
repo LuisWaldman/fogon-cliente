@@ -2,66 +2,109 @@
     "cancion": "como-eran-las-cosas",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "Am7",
                     "C",
-                    "G",
-                    "G/B",
                     "Am7",
-                    "Em",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Em",
-                    "Am7",
-                    "C",
                     "G",
-                    "Bm",
-                    "Em",
-                    "C",
-                    "D"
+                    "G/B",
+                    "Am7",
+                    "Am7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
-                    "G",
+                    "Am7",
                     "Em",
-                    "Am7"
+                    "Em",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "C",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Am7",
+                    "Am7",
+                    "B7",
                     "B7",
                     "Em",
-                    "B7"
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "G",
-                    "Am6",
                     "C",
-                    "G",
-                    "G/B",
-                    "Am7",
+                    "C",
+                    "C",
                     "Em",
-                    "G"
+                    "Am7",
+                    "Am7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
+                    "C",
+                    "C",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Am7",
+                    "C",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
@@ -71,167 +114,98 @@
             2,
             3,
             4,
-            2,
-            3,
-            2,
-            3,
-            3,
-            2,
-            3,
-            2,
-            3
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "eo que es momento/nPara otr"
-        ],
-        [
-            "a bomba de humo/nY bat"
-        ],
-        [
-            "irme en retira",
-            "da/nNuestra s"
-        ],
-        [
-            "ociedad me perjudi",
-            "ca/nVos no sos una ch"
-        ],
-        [
-            "ica cualquie",
-            "ra/n"
-        ],
-        [
-            "   Que ridículo es que pi",
-            "enses/nQue t"
-        ],
-        [
-            "odo es tuyo inclusive yo",
+            "",
+            "",
             "/n"
         ],
         [
-            "   Todo eso tu",
-            "yo puede ser/nPero "
+            "Cr",
+            "e  que es mom",
+            "ent  para otra bomba d",
+            "humo batirme",
+            "e  retirada/n"
         ],
         [
-            "esta noche es para los do",
-            "s/nQuiz"
+            "Nuestra sociedad m",
+            "e  perjudica, vos n",
+            "o  sos una chica",
+            "cualquier /n"
         ],
         [
-            "ás fue en la mañana/nEn que vend"
+            "Que ridícu",
+            "l  es que pienses q",
+            "ue  todo es tuyo, inclusiv",
+            "yo./n"
         ],
         [
-            "ados los dos/nDescubr"
+            "Todo eso",
+            ",  tuyo puede ser,",
+            "pero esta noche es par",
+            "los dos. /n Q",
+            "uiz  fue en la mañana en que",
+            "vendado  los dos descu",
+            "brimo  cómo eran la",
+            "cosas. s",
+            "in  abrir los ojos nos",
+            "teletransportamo ",
+            "donde desearíamos esta",
+            "r /n Entonces,",
+            "ese es el hechizo que me",
+            "oblig arrastrar entre /n Guin",
+            "e  tus sa",
+            "banas /n Nuestra s",
+            "ociedad  no ayuda m",
+            "uch  mientras la pasas b",
+            "ien  yo lucho/n"
         ],
         [
-            "imos como eran las cosa",
-            "s/nY s"
+            "Quizá f",
+            "ue  en la mañana en que venda",
+            "do  los dos descubrim",
+            "o  cómo eran las cosas",
+            ".  sin",
+            "abrir los ojos nos telet",
+            "ransportamo  dond",
+            "e  desearíamos es",
+            "tar ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "in abrir los ojos/nNos t"
+            "Pero tam",
+            "bié  lo siento que solo",
+            "es un momento que todo",
+            "s  deberíamos pasar./n"
         ],
         [
-            "eletransportamos/nA d"
-        ],
-        [
-            "onde desearíamos est",
-            "ar/nEntonces d"
-        ],
-        [
-            "eshace el hechizo/nQue me obl"
-        ],
-        [
-            "iga a arrastrarme/nEntre guin"
-        ],
-        [
-            "ea y tus saba",
-            "nas/nNuestra s"
-        ],
-        [
-            "ociedad no ayuda mu",
-            "cho/nMientras la pasas b"
-        ],
-        [
-            "ien, yo lucho",
-            "/nQuiz"
-        ],
-        [
-            "ás fue en la mañana/nEn que vend"
-        ],
-        [
-            "ados los dos/nDescubr"
-        ],
-        [
-            "imos como eran las cosa",
-            "s/nY s"
-        ],
-        [
-            "in abrir los ojos/nNos t"
-        ],
-        [
-            "eletransportamos/nA d"
-        ],
-        [
-            "onde desearíamos est",
-            "ar/nQuiz"
-        ],
-        [
-            "ás fue en la mañana/nEn que vend"
-        ],
-        [
-            "ados los dos/nDescubr"
-        ],
-        [
-            "imos como eran las cosa",
-            "s/nY s"
-        ],
-        [
-            "in abrir los ojos/nNos t"
-        ],
-        [
-            "eletransportamos/nA d"
-        ],
-        [
-            "onde desearíamos est",
-            "ar/n"
-        ],
-        [],
-        [],
-        [
-            "o también lo siento/nQue s"
-        ],
-        [
-            "olo es un momento/nQue t"
-        ],
-        [
-            "odos deberíamos pas",
-            "ar/nQuiz"
-        ],
-        [
-            "ás fue en la mañana/nEn que vendados los dos"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Quizá f",
+            "ue  en la mañana en que venda",
+            "do  los dos descubrim",
+            "o  cómo eran las cosas",
+            "sin",
+            "abri  los ojos nos tele",
+            "transportamo  dond",
+            "e  desearíamos estar.",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "2Aynaejlcfk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

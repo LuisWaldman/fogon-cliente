@@ -2,52 +2,277 @@
     "cancion": "lajotape",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C",
                     "F",
-                    "C",
                     "F",
-                    "Em",
-                    "Am",
                     "F",
-                    "Em"
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
+                    "F",
                     "F",
                     "G",
-                    "C",
-                    "Am",
-                    "F",
-                    "Em",
-                    "Am"
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Fm",
                     "Em",
-                    "Am",
-                    "F",
                     "Em",
-                    "Am"
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "Fm",
+                    "Fm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
@@ -55,125 +280,248 @@
             0,
             1,
             2,
-            2,
-            0,
-            1,
-            2,
-            2,
-            2,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
         ]
     },
     "letras": [
-        [],
         [
-            "tiva, s",
-            "er militante fué su v",
-            "ida/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "beliger",
-            "ante llenó s",
-            "u agitación",
-            "/ny a su be"
+            "Es",
+            "t es una canción en español de rock argentino. /n Esta es",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "u",
+            "na  canc",
+            "ió  en español de rock a",
+            "r",
+            "g",
+            "e",
+            "n",
+            "t",
+            "i",
+            "n ",
+            "",
+            "su bellez",
+            "la fe",
+            "dera",
+            "ci ",
+            "/n"
         ],
         [
-            "lleza la federac",
-            "ión./n"
+            "E  s",
+            "indicat  er",
+            "cosa de m",
+            "acho  ba",
+            "ndoris",
+            "ta /n"
         ],
         [
-            " El sindic",
-            "ato era cosa de ma",
-            "chos vandoris",
-            "tas/n"
+            "Se quedó",
+            "sol  sin r",
+            "evolu",
+            "ció ",
+            "/n"
         ],
         [
-            " se quedó ",
-            "sola y sin revoluc",
-            "ión./n"
+            "L",
+            "a /n JP n",
+            "o  t",
+            "e  entiende",
+            "",
+            "/n"
         ],
         [
-            " Lajotap",
-            "e no te enti",
-            "ende,/n"
+            "Dice",
+            "n  que está",
+            "s  equivoc",
+            "ad ",
+            "/n"
         ],
         [
-            " dicen que est",
-            "as equivoca",
-            "da,/n"
+            "T",
+            "ene  qu",
+            "e  ser o",
+            "tr  noche",
+            "",
+            "",
+            "",
+            "los infi",
+            "ltre  con",
+            "idea  n",
+            "o  má",
+            "s ",
+            "/n"
         ],
         [
-            " temen que s",
-            "eas otra bo",
-            "lche/n"
+            "Mon",
+            "toner /n J",
+            "ode",
+            "n  crist",
+            "ian  que b",
+            "ril",
+            "ler/n"
         ],
         [
-            " y los inf",
-            "iltres con ide",
-            "as raras./nMonto"
+            "Es",
+            "tá  e",
+            "n  las lis",
+            "ta  del e",
+            "stad  te",
+            "rro ",
+            "/n"
         ],
         [
-            "nera, j",
-            "oven cristiana, guerrill",
-            "era/nes"
+            "En e",
+            "l  exil está",
+            "t  solución",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tás en las ",
-            "listas del est",
-            "ado de rock",
-            "/nen el e"
+            "En l",
+            "a  derecha se a",
+            "rm  la pe",
+            "sad  a",
+            "nis",
+            "a /n"
         ],
         [
-            "xilio está tu solu",
-            "ción./n"
+            "Quedas d",
+            "e  sola sin revolu",
+            "ció ",
+            "",
+            "/n"
         ],
         [
-            " En la der",
-            "echa se armó la pes",
-            "ada organiza",
-            "da/n"
+            "L",
+            "a /n J",
+            "no t",
+            "e  e",
+            "nt",
+            "ie",
+            "n /n Dic",
+            "e  que es",
+            "tá  eq",
+            "uivo",
+            "ca ",
+            "/n"
         ],
         [
-            " quedaste s",
-            "ola y sin revoluci",
-            "ón./n"
+            "Tene ",
+            "qu  ser",
+            "otr  n",
+            "och ",
+            "",
+            "",
+            "los infiltres con ideas no más los",
+            "infiltre  c",
+            "on  idea",
+            "s  no más",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Lajotap",
-            "e no te enti",
-            "ende,/n"
+            "L",
+            "a /n J/n"
         ],
         [
-            " dicen que est",
-            "as equivoca",
-            "da,/n"
+            "P  no t",
+            "e  entie",
+            "nd /n L",
+            "a /n JP no te entiende/n"
         ],
         [
-            " temen que s",
-            "eas otra bo",
-            "lche/n"
+            "Dic",
+            "e  que est",
+            "á  equiv",
+            "ocad ",
+            "",
+            "/n"
         ],
         [
-            " y los inf",
-            "iltres con ide",
-            "as raras./n"
-        ],
-        [],
-        [
-            " Lajotap",
-            "e no te entiende,/n dicen que estas equivocada,"
-        ],
-        [],
-        [],
-        []
+            "Tene ",
+            "qu  ser o",
+            "tra  no",
+            "ch ",
+            "",
+            "",
+            "los i",
+            "nfiltre  c",
+            "on  idea",
+            "no más",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QFr8E7rXwhk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

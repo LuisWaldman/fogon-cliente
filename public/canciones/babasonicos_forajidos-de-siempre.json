@@ -2,21 +2,27 @@
     "cancion": "forajidos-de-siempre",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
-                    "C",
-                    "Am",
-                    "Am",
+                    "G",
+                    "G",
                     "G",
                     "Am",
-                    "G",
+                    "Am",
+                    "Am",
                     "Am"
                 ]
             },
@@ -24,13 +30,21 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
-                    "C",
-                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "C",
-                    "Am",
-                    "G",
-                    "Am"
+                    "C"
                 ]
             },
             {
@@ -38,18 +52,87 @@
                 "acordes": [
                     "C",
                     "C",
-                    "G",
                     "C",
-                    "G",
-                    "C",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
@@ -57,80 +140,125 @@
             0,
             1,
             2,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Siempre les dir",
-            "á/nLes dirá, lo supe s"
+            "",
+            "/n"
         ],
         [
-            "iempre/nDe"
+            "Delicado expres",
+            "ament  él, pero",
+            "siempre",
+            "siempre le d",
+            "irá  le dirá, le di",
+            "rá  le dirá la buena",
+            "leche /n"
         ],
         [
-            "dicado",
-            " expresam",
-            "ente, al que/nEs"
+            "La que h",
+            "emo  tenido si",
+            "empre  siempre",
+            "",
+            "siempre. así s",
+            "iempre  si",
+            "empr  nos d",
+            "uplic  el",
+            "tiempo  l",
+            "os  cora",
+            "jido  van d",
+            "etrá  del t",
+            "iempo /n Dile una vez m",
+            "ás,  una vez más, una vez m",
+            "ás,  una vez más, lo supe",
+            "siempre /n"
         ],
         [
-            "ta siempr",
-            "e/nc"
+            "Señ",
+            "or  él lo s",
+            "abí  desde s",
+            "iempre /n"
         ],
         [
-            "asi siempr",
-            "e, siempre",
-            "/nn"
+            "Siempre alen",
+            "tará  alentará, alen",
+            "tará  alentará lo su",
+            "ficiente /n"
         ],
         [
-            "os obliga el tiemp",
-            "o/ny"
+            "Él a",
+            "lentará  en",
+            "lovarás  los do",
+            "siempre.",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " los forajid",
-            "os,/nvan "
+            "No respira na",
+            "da  no res",
+            "pir  nada, son l",
+            "os  coraji",
+            "do  de sie",
+            "mpre /n N",
+            "respira nu",
+            "bo  no resp",
+            "ir  nada, son l",
+            "os  enluba",
+            "do  de sie",
+            "mpre ",
+            "de siempre.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "detrás del v",
-            "iento/nno nos di"
+            "N  re",
+            "spir  nada,",
+            "no respira n",
+            "ada,  son lo",
+            "s  corajidos d",
+            "e  siempre./n"
         ],
         [
-            "gan nad",
-            "a/nno nos pi"
-        ],
-        [
-            "dan nad",
-            "a/nsomos fora"
-        ],
-        [
-            "jidos d",
-            "e siempre",
-            "/nno resp"
-        ],
-        [
-            "iran hum",
-            "o/nno respi"
-        ],
-        [
-            "ran nad",
-            "a/nsomos su"
-        ],
-        [
-            "s hermanos d",
-            "e siempre",
-            "/nde siem"
-        ],
-        [
-            "pre."
+            "N  res",
+            "pir  nubo,",
+            "no respira n",
+            "ada  son lo",
+            "s  enlubados",
+            "d  siempre,",
+            "de siem",
+            "pre ",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "zjget2fhmw4",
-            "delay": 0
+            "delay": 13490.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

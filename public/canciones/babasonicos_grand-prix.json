@@ -2,40 +2,91 @@
     "cancion": "grand-prix",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "F#m",
-                    "Bm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
                     "A",
-                    "F#m",
-                    "Bm",
-                    "F#m",
-                    "D",
-                    "Dm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A7",
-                    "D",
-                    "Dm",
                     "A",
-                    "F#m",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
@@ -43,12 +94,106 @@
                 "nombre": "parte4",
                 "acordes": [
                     "E",
-                    "D",
-                    "Dm",
-                    "A",
                     "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "Bm",
-                    "Dm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "A"
                 ]
             }
@@ -56,82 +201,189 @@
         "orden_partes": [
             0,
             1,
-            1,
             2,
-            0,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "A ---",
-            "&gt; sa",
-            "mpler ",
-            "de flauta/moog/?/n"
-        ],
-        [
-            "Eres formidab",
-            "le/nAstro d"
-        ],
-        [
-            "el volant",
-            "e/nSuper "
-        ],
-        [
-            "acel",
-            "erado",
-            "r",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Fórmula del ",
-            "trueno/nRey del "
-        ],
-        [
-            "desenfr",
-            "eno/nBólido"
-        ],
-        [
-            " atro",
-            "pellado",
-            "r",
+            "Est",
+            "a  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " No mires pa",
-            "ra atrás/n"
-        ],
-        [
-            " Ya no te alca",
-            "nzarán m",
-            "s/n"
-        ],
-        [
-            " Destino d",
-            "e velocidad",
-            " (2x)",
+            "Est  es una canción en español de rock argen",
+            "tino ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Supremo ve",
-            "ngador/n"
+            "Ere",
+            "s  formidabl",
+            "e  a",
+            "str  d",
+            "e  v",
+            "olante",
+            "su",
+            "per",
+            "ace",
+            "ler",
+            "ado",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " La pista es t",
-            "u verdad/n"
+            "Fo",
+            "rmul  d",
+            "e  true",
+            "no  rey",
+            "de  de",
+            "sen",
+            "fre",
+            "bol",
+            "id  a",
+            "tr",
+            "op",
+            "el",
+            "la",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Destino d",
-            "e velocidad",
-            ""
+            "N",
+            "o  mir",
+            "e  par",
+            "atrá",
+            "s  y",
+            "a  no t",
+            "e  alca",
+            "nzará",
+            "m",
+            "á",
+            "s",
+            "",
+            "/n"
+        ],
+        [
+            "Desti",
+            "n  de",
+            "vel",
+            "oci",
+            "da ",
+            "d",
+            "e",
+            "s",
+            "t  d",
+            "e  v",
+            "elo",
+            "cid",
+            "a ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Suprem",
+            "vengador,",
+            "l",
+            "a  pista e",
+            "s  tu ve",
+            "rdad ",
+            "",
+            "destin  d",
+            "e  ve",
+            "locidad ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Destino de velocidad, destino de velocidad. /n Destino de velocidad, destino de velocidad."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "dT4jUw0GmfA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

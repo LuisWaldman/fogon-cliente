@@ -2,92 +2,264 @@
     "cancion": "las-demas",
     "banda": "babasonicos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "G#m",
-                    "G",
-                    "F#m",
+                    "A",
                     "A",
                     "E",
-                    "F#m"
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A",
+                    "E",
                     "G#m",
-                    "F#m",
-                    "A9",
-                    "E",
-                    "C#m",
-                    "E",
-                    "A9",
                     "G#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#m",
-                    "E",
                     "G#m",
-                    "C#m",
-                    "B",
                     "A9",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "A",
                     "F#m",
-                    "B"
+                    "F#m",
+                    "F#m",
+                    "A9",
+                    "A9",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "A9",
+                    "A9",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "A9",
+                    "E",
+                    "E",
+                    "E",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Que antigu",
-            "o me pa",
-            "rece",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Que pidas algo serio de m",
-            "í/nAhora q"
+            "Q",
+            "u  antiguo m",
+            "e  parece,",
+            "que pides algo s",
+            "eri  de mi,",
+            "ahora que no s",
+            "e  empezó",
+            "gustar./n"
         ],
         [
-            "ue nos empezó",
-            " a gustar",
+            "T",
+            "e  da miedo en",
+            "amorarte ",
+            "perdida loc",
+            "ament  de mi,",
+            "sabiend  que tambi",
+            "é  me gustan l",
+            "as  demás./n"
+        ],
+        [
+            "N",
+            "me da igual q",
+            "ue  te sea",
+            "indife",
+            "rent  y",
+            "a  caerá",
+            "en mis brazos.",
+            "",
+            "/n"
+        ],
+        [
+            "Insegura d",
+            "e  repente,",
+            "donde pen",
+            "sa  que fue decir,",
+            "ahora que n",
+            "o  acercáb",
+            "amo  algo",
+            ". /n N",
+            "o  me da igu",
+            "a  que te se",
+            "a  indifere",
+            "nte ",
+            "ya caer",
+            "á  en mis brazos",
+            "",
             "/n"
         ],
         [
             "No me da igu",
-            "al que te ",
-            "sea indiferen",
-            "te/n"
+            "a  que te se",
+            "a  indiferen",
+            "te ",
+            "ya caer",
+            "á  en mis bra",
+            "zos ",
+            "/n"
         ],
         [
-            "Ya caerás en mis brazos/nDesconfío que me entiendas de verdad"
+            "Descon",
+            "fí  que me ent",
+            "ienda  de ver",
+            "dad ",
+            "la verdad",
+            "e  que t",
+            "amo./n"
         ],
-        [],
-        []
+        [
+            "N",
+            "o  me da ig",
+            "ua  que te s",
+            "ea  indife",
+            "rente, ",
+            "ya cae",
+            "rá  en mis b",
+            "razos /n"
+        ],
+        [
+            "N",
+            "o  me da i",
+            "gua  que t",
+            "sea indif",
+            "erente",
+            "ya cae",
+            "rá  en mis brazos.",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "35WZhNZBFu8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

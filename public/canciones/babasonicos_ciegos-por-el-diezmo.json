@@ -2,162 +2,226 @@
     "cancion": "ciegos-por-el-diezmo",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A",
-                    "A",
-                    "C",
+                    "Am",
                     "A",
                     "C",
-                    "D"
+                    "Am",
+                    "E5",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Am",
+                    "Am",
+                    "A",
+                    "D",
+                    "D",
+                    "E5",
+                    "Am",
+                    "Am",
                     "E5",
                     "E5",
-                    "D5"
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "E5",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Sob",
-            "re e",
-            "l a",
-            "rco",
-            "iris",
-            " un pas",
-            "tel",
-            " de ",
-            "bol",
-            "udo",
-            "s",
-            "/n    "
-        ],
-        [
-            "se ",
-            "arra",
-            "str",
-            "an ",
-            "roba",
-            "ndo lo ",
-            "que",
-            " otr",
-            "os ",
-            "des",
-            "prec",
-            "ian/n   "
-        ],
-        [
-            "Se lo que nadie qui",
-            "ere",
-            "/n    "
-        ],
-        [
-            "Ray",
-            "a al",
-            " or",
-            "izo",
-            "nte ",
-            "un trop",
-            "e d",
-            "e co",
-            "rnu",
-            "dos",
             "",
-            "/n    "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "bus",
-            "can ",
-            "con",
-            "ven",
-            "cer ",
-            "a lento",
-            "s d",
-            "e un",
-            " to",
-            "nto",
-            " pla",
-            "n/n   "
+            "So",
+            "br  el arco iris, un pas",
+            "te de aludos, /n S",
+            "arrastran robando lo que otro",
+            "s desprecian. /n S",
+            "é  lo que nadie quier",
+            "e  voy empezar jun",
+            "tar /n"
         ],
         [
-            "Se lo que nadie qui",
-            "ere",
-            "/nvoy a empezar a juntar"
-        ],
-        [
-            "   ",
-            "    ",
-            "   ",
-            " vo",
-            "y ae",
-            "mpezar ",
-            "a j",
+            "Ra",
+            "y  el horizonte un trope d",
+            "e cornudos, /n Busc",
+            "a  convencer lentos de un",
+            "tont plan. /n S",
+            "é  lo que nadie quiere",
+            "voy empezar j",
             "unta",
-            "r",
-            "",
-            "",
-            "/n   "
+            "r /n Sé l",
+            "o  que nadie quiere,",
+            "voy empezar junta",
+            "r /n"
         ],
         [
-            "Se lo que nadie qui",
-            "ere",
-            "/nvoy a empezar a juntar"
+            "Es",
+            "o  es lo que nadie quiere",
+            "voy empezar j",
+            "u",
+            "n",
+            "t",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "/n   "
+            "Yo sé m",
+            "uy  bien lo que nadie q",
+            "uiere. ",
+            "/n"
         ],
         [
-            "Eso lo que nadie qu",
-            "iere",
-            ""
+            "Yo sé m",
+            "u  bien lo que nadie q",
+            "uiere ",
+            "/n"
+        ],
+        [
+            "Yo sé mu",
+            "y  bien lo que nadie qu",
+            "iere ",
+            "/n"
+        ],
+        [
+            "Yo sé muy",
+            "bie  lo que nadie quiere.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo sé muy bien lo que nadie quiere."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "udH0pOXQOa4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

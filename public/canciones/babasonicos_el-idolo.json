@@ -2,37 +2,103 @@
     "cancion": "el-idolo",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "D",
+                    "G",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "C",
-                    "Am",
                     "D",
-                    "C",
+                    "D G",
                     "G",
+                    "Am",
                     "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "D",
-                    "G"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
@@ -40,71 +106,97 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
-            2
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "ás un l",
-            "ugar en la glo",
-            "ria para mí",
-            "/n un l"
-        ],
-        [
-            "ugar en el que que",
-            "pamos los dos",
-            "/n me esperar"
-        ],
-        [
-            "ás con diez ",
-            "Evas con manza",
-            "nas en la boca/n bail"
-        ],
-        [
-            "ando el hula-hu",
-            "la en mi honor",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
-        [],
-        [],
-        [],
         [
-            "irás al f",
-            "inal cuando to",
-            "do para mí",
-            "/n sea "
+            "Un l",
+            "ugar  e",
+            "n",
+            "el que quepamos los lujos./n"
         ],
         [
-            "el sueño que p",
-            "ersigo con fe",
-            "rvor/n las promesas de caricias serán poco para mí"
+            "Me espera",
+            "ra  con diez cebas con manz",
+            "ana  en la boca baila",
+            "nd  en hula hula en mi h",
+            "onor /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Cuando yo me m",
+            "uera  haré una fi",
+            "est  en la que nunca salga e",
+            "l sol. /n Donde am",
+            "igo  enemigos brin",
+            "dara  porque regr",
+            "es  en la piel de una canc",
+            "ión ",
+            "",
+            "",
+            "",
+            "sonr",
+            "eirá  al final cuando t",
+            "od  para mi sea el",
+            "sueñ  que persigo con fer",
+            "vor /n Las pr",
+            "omesa  de caricias serán",
+            "poc  para mi si n",
+            "o  veo mi cuerpo sonre",
+            "ír /n"
+        ],
+        [
+            "Cuando yo me",
+            "muer  haré una f",
+            "iest  en la que nunca salga e",
+            "l sol. /n Donde a",
+            "migo  enemigos bri",
+            "ndara  porque reg",
+            "res  en la piel de una ca",
+            "nción ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cuando yo me",
+            "muer  haré una f",
+            "iesta  en la que nunca salga",
+            "e sol. /n Donde a",
+            "migo  enemigos brin",
+            "dara  porque reg",
+            "res  en la piel de una can",
+            "ción /n Porque reg",
+            "res  en la piel de una ca",
+            "nción ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "W3v03vRaloE",
-            "delay": 0
+            "delay": 13140.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

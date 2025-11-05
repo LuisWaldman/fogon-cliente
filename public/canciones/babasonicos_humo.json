@@ -2,192 +2,295 @@
     "cancion": "humo",
     "banda": "babasonicos",
     "escala": "Aadd9",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Aadd9",
-                    "Gadd9",
                     "Aadd9",
                     "Aadd9",
                     "Gadd9",
                     "Aadd9",
-                    "Bm7",
+                    "Aadd9",
+                    "Aadd9",
+                    "Gadd9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Gadd9",
                     "C#m7",
-                    "Bm7",
-                    "Dmaj7",
                     "C#m7",
-                    "Bm7",
+                    "C#m7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9",
+                    "Gadd9"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Aadd9",
+                    "Aadd9",
                     "Aadd9",
                     "Gadd9",
-                    "Aadd9",
-                    "Aadd9",
                     "Gadd9",
+                    "Gadd9",
+                    "C#m7",
+                    "Dmaj7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "E",
+                    "G",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "C#m7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C#m7 Aadd9",
+                    "E",
+                    "G",
+                    "E",
+                    "E",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "Aadd9",
-                    "Bm7",
-                    "C#m7",
-                    "Bm7",
-                    "Dmaj7",
-                    "C#m7",
-                    "Bm7",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E",
-                    "A5",
-                    "A5",
-                    "G5",
-                    "A5",
-                    "A5",
-                    "G5",
-                    "A5",
-                    "A5",
-                    "G5",
-                    "A5",
-                    "Bm7",
-                    "C#m7",
-                    "Dmaj7",
-                    "Dmaj7",
-                    "C#m7",
-                    "Bm7",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E",
-                    "G",
-                    "E"
+                    "Aadd9",
+                    "Aadd9",
+                    "Aadd9"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Aadd9",
+                    "Aadd9"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "A los de la foto no los reconozco, no re",
-            "cuerdo haber posado a su lad",
-            "o/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "a lo publicado no le agrego nada, y no v",
-            "oy aclarar cosas tan rar",
-            "as./n"
+            "En los de la",
+            "fot  no los reconozc",
+            "o  no recuerdo haber po",
+            "sad  su lado.",
+            "lo pub",
+            "licad  no le agrego na",
+            "d  no voy ac",
+            "lara  cosas tan raras./n"
+        ],
+        [
+            "Solo expe",
+            "ctativas  n",
+            "ad más. /n Mucha expe",
+            "ctativa  nada más./n"
+        ],
+        [
+            "Quiero qu",
+            "e  llevemos esto un ext",
+            "rem  donde no",
+            "hay  verdades ni mentiras./n"
+        ],
+        [
+            "Desde e",
+            "l  otro lado vienen insistie",
+            "nd  con tirar d",
+            "e  la cuerda para ver qué h",
+            "aré. /n Solo",
+            "expectat",
+            "iva nada más. /n Siempre q",
+            "u  hay anhelo de vida hay e",
+            "xpectativa  imposibl",
+            "es /n"
+        ],
+        [
+            "Pero si e",
+            "n  tu intención esta cruz",
+            "a  vas",
+            "ve  un agu",
+            "a  aplaudiendo con sus al",
+            "as /n El aire frío d",
+            "e  diamante apretando por tu piel vas vivir m",
+            "il miras. /n Vas",
+            "ver, vas sabe",
+            "rl  todo al mismo tie",
+            "mpo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En",
+            "primera fila se camb",
+            "i  de asiento todas las miringas m",
+            "ueven  su culo al clar./n"
+        ],
+        [
+            "Quiero que salte vos ha",
+            "ci  la portada desde dond",
+            "e  todos nos puedan aspira",
+            "r /n"
         ],
         [
             "Solo expectati",
-            "va nada má",
-            "s,/n"
+            "vas  nad",
+            "a más. /n Siempre que hay anhelo d",
+            "e  vida hay expectativ",
+            "a  imposibles.",
+            "/n"
         ],
         [
-            "mucha expectati",
-            "va nada má",
-            "s (mucha expectativa)/n"
+            "Pero si en tu intenci",
+            "ó  esta cruzar",
+            "vas v",
+            "e  un aire desgarra",
+            "nd  las tinieblas",
+            "entre tajos corren velas de licor",
+            "e  grandes por mi bufila atoran la so",
+            "l /n Vas ve",
+            "r  vas saberlo todo a",
+            "l  mismo tiempo.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Cuántos más qu",
+            "iere son? /n Los q",
+            "u  quedan en medio del camin",
+            "o /n ¿Cuántos m",
+            "á  quieres son?/n"
         ],
         [
-            "quiero que llevemos esto a un extremo donde ",
-            "no haya verdades ni menti",
-            "ras/n"
-        ],
-        [
-            "Desde el otro lado vienen insistiendo con tir",
-            "ar de la cuerda para ver",
-            " que hay/n"
-        ],
-        [
-            "solo expectati",
-            "vas nada ma",
-            "s./n"
-        ],
-        [
-            "siempre que hay a",
-            "nhelo de vida h",
-            "ay expectativas imposible",
-            "s./n"
-        ],
-        [
-            "Pero si en tu intención esta cru",
-            "zar/nvas a "
-        ],
-        [
-            "ver al bu",
-            "ho aplaudiendo con sus al",
-            "as/nel aire f"
-        ],
-        [
-            "ino de diamante penetrando por tu piel/nvas a viv"
-        ],
-        [
-            "ir mil vidas, vas a ve",
-            "r/n"
-        ],
-        [
-            "vas a saberlo todo al mismo t",
-            "iempo./n"
-        ],
-        [],
-        [
-            "En primera fila se cambian de asiento to",
-            "das las niñitas mueven su ",
-            "culo al clan/n"
-        ],
-        [
-            "quiero que saltemos hacia la portada de",
-            "sde donde todos nos puedan adm",
-            "irar/n"
-        ],
-        [
-            "solo expectati",
-            "vas nada ma",
-            "s./n"
-        ],
-        [
-            "siempre que hay a",
-            "nhelo de vida h",
-            "ay expectativas imposible",
-            "s./n"
-        ],
-        [
-            "pero si en tu intención esta cru",
-            "zar/nvas a v"
-        ],
-        [
-            "er al tig",
-            "re desgarrando las tinieb",
-            "las/nEntre t"
-        ],
-        [
-            "ajos corren perlas de licores carmesí,por mi pup",
-            "ila tornasol/nvas a v"
-        ],
-        [
-            "er vas a sabe",
-            "rlo todo al mismo tiempo",
-            ""
+            "Los que quedan en medio d",
+            "e  camino."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "jzsOkX6AnHM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

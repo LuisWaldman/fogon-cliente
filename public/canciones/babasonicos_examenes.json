@@ -2,68 +2,187 @@
     "cancion": "examenes",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "Am",
-                    "Em"
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
-                    "C",
-                    "Em",
-                    "D",
                     "G",
-                    "C",
-                    "G"
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
+                    "D",
                     "G",
-                    "Em",
-                    "Am",
-                    "G",
-                    "Em",
-                    "Am",
                     "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Bm",
-                    "Am",
-                    "Cm7",
-                    "Em",
-                    "Am",
                     "G",
-                    "Em",
-                    "Am"
+                    "G",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
                     "G",
                     "Bm",
                     "Am",
-                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "Am",
-                    "Bm",
                     "Am",
-                    "Cm7"
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am"
                 ]
             }
         ],
@@ -72,61 +191,156 @@
             1,
             2,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
         ]
     },
     "letras": [
-        [],
-        [],
-        [],
-        [],
         [
-            "En algun pliego secr",
-            "eto",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "dicen que todo esc",
-            "rito est",
-            "a/n"
+            "Esta es una canción en español de rock argentino.",
+            "",
+            "/n"
         ],
         [
-            "Tambien lo estará nuest",
-            "ro encue",
-            "ntro/n"
+            "En algún pli",
+            "eg  se",
+            "cre",
+            "t /n Dic",
+            "e  que todo escri",
+            "t  est",
+            "á /n"
         ],
         [
-            "Si habrá romance o ",
-            "no se",
-            " habrá/n"
+            "También lo",
+            "estar  en nuestro enc",
+            "uentr /n"
         ],
         [
-            "Yo no rindo exa",
-            "menes de concie",
-            "ncia/n"
+            "Se h",
+            "abr  romance, am",
+            "o  se habr",
+            "/n"
         ],
         [
-            "Siempre supe de q",
-            "ue estabamos hablan",
-            "do/nno jueg"
+            "Yo no rind",
+            "o  exámenes d",
+            "e  conciencia",
+            "/n"
         ],
         [
-            "ues asi co",
-            "nmigo que soy sim",
-            "ple/nYo no rindo examenes de conciencia"
+            "Siempre supe",
+            "d  que estába",
+            "mo hablando /n N",
+            "o  juegues así c",
+            "onmig  que so",
+            "y  simple",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Desestimo e",
+            "s  baile",
+            "/n"
+        ],
+        [
+            "Luz e",
+            "s  tan atractiva",
+            "ho /n"
+        ],
+        [
+            "E",
+            "n  el peor de l",
+            "u  que sos mi na",
+            "da /n"
+        ],
+        [
+            "Solo q",
+            "uier  acostarme",
+            "co  vos",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sol",
+            "o quiero acostarme con vos /n Solo quie",
+            "r acostarme con vos /n S",
+            "ol quiero acostarme con vos /n So",
+            "l  quiero acostarme con vos/n"
+        ],
+        [
+            "Solo quiero acostarme con v",
+            "o /n Solo quiero a",
+            "cost",
+            "arm  c",
+            "on  vos/n"
+        ],
+        [
+            "Yo n",
+            "o  rindo ex",
+            "ámene  de co",
+            "ncienci /n"
+        ],
+        [
+            "Siem",
+            "pr  supe de q",
+            "u  estábamos habland",
+            "o /n No jueg",
+            "ue  así conmigo/n"
+        ],
+        [
+            "No jueg",
+            "ue  así conmigo/n"
+        ],
+        [
+            "No jueg",
+            "ue  así conmi",
+            "g  que soy simple",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En el peor de luz que sos mi nadar"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "1_3dBz6n3cM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

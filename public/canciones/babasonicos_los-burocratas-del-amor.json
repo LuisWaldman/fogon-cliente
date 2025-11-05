@@ -2,147 +2,382 @@
     "cancion": "los-burocratas-del-amor",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G A7sus2",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G A7sus2",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
                     "Am7",
-                    "D",
+                    "Dsus4",
                     "Dsus4",
                     "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am7",
+                    "Am7",
                     "D",
+                    "Am7",
+                    "Am7",
                     "Am7",
                     "C",
-                    "Am7",
-                    "D",
-                    "Am7",
-                    "D",
-                    "Am7",
-                    "D",
                     "C",
+                    "C",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Cadd9",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am7",
+                    "D",
+                    "D",
+                    "D",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Cadd9",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
                     "G",
                     "Am7",
                     "A7sus2",
-                    "C",
+                    "Cadd9"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "Cadd9",
-                    "Bm",
-                    "Am7",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
                     "G",
-                    "Am7",
-                    "A7sus2",
-                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
                     "Cadd9",
                     "Bm",
-                    "B7",
-                    "D",
-                    "Am7",
-                    "Em",
-                    "C",
-                    "D",
-                    "Am7",
-                    "C",
-                    "D",
-                    "Am7",
-                    "Em",
-                    "C",
-                    "D",
-                    "Am7",
-                    "C",
                     "Bm",
-                    "B",
-                    "Cmaj7",
-                    "Bm7"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Algunas co",
-            "sas en la vid",
-            "a hay",
-            " que pagarl",
-            "as./n"
-        ],
-        [
-            "El amo",
-            "r no todaví",
-            "a./n"
-        ],
-        [
-            "Si el amo",
-            "r fuera una drog",
-            "a,",
-            "/nNo acaba"
-        ],
-        [
-            "ría, ",
-            "alcanzaría",
-            " para todos./n"
-        ],
-        [
-            "¿Cuánto vale un rato",
-            " más",
-            " a tu lad",
-            "o? ¿",
-            "Media hora?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "¿Cuánto vale ese ",
-            "rato?",
-            " Te doy tod",
-            "o,",
-            "/nHasta un d"
-        ],
-        [
-            "ía que me queda por vi",
-            "vir./n"
-        ],
-        [
-            "Uno de los do",
-            "s tiene que hacer ",
-            "de ama de casa.",
+            "Algu",
+            "na  cosas e",
+            "n  la vida hay q",
+            "u  pagar",
+            "la ",
+            "el amor no t",
+            "odavía ",
             "/n"
         ],
         [
-            "Es que como al",
-            "go es gratis, al",
-            "go no./n"
+            "S",
+            "i  el amor fuera u",
+            "na  droga",
+            "no",
+            "acabaría,",
+            "",
+            "alcanzarí  p",
+            "ara  todos.",
+            "¿C",
+            "uánt  vale un",
+            "rat  más e",
+            "n",
+            "tu r",
+            "ad  m",
+            "edia  hora?",
+            "",
+            "¿/n"
         ],
         [
-            "Uno de los do",
-            "s tiene que hacer",
-            " de ama de cas",
-            "a./n"
+            "Cuánto  vale e",
+            "se  rat",
+            "o /n"
         ],
         [
-            "Esto es gra",
-            "tis y eso no.",
-            "/nHasta un d"
+            "Pero hay to",
+            "d  ha",
+            "st  un día que m",
+            "e  queda por viv",
+            "ir /n A",
+            "lguna  cos",
+            "a  en la vida ha",
+            "que pag",
+            "arla ",
+            "el aire n",
+            "o  todavía",
+            "/n"
         ],
         [
-            "ía que me qu",
-            "ede por vivi",
-            "r.",
-            ""
+            "S",
+            "i  esta canción fu",
+            "er  narcóti",
+            "ca ",
+            "no acabar",
+            "ía ",
+            "sería la mú",
+            "sic  de to",
+            "dos /n ¿Cu",
+            "ánt  vale",
+            "u  rato má",
+            "s  e",
+            "n  tu r",
+            "ad",
+            "o  media hor",
+            "a ",
+            "",
+            "¿Cuánto va",
+            "l  ese ra",
+            "to /n"
+        ],
+        [
+            "Pero hay t",
+            "od  ha",
+            "st  un d",
+            "ía  que me queda por v",
+            "ivir /n U",
+            "n  de los do",
+            "tiene que hac",
+            "erl  ama de c",
+            "asa /n E",
+            "s  que como a",
+            "lg  es gratis,",
+            "algo no",
+            ". /n"
+        ],
+        [
+            "Uno de los d",
+            "o  tiene que ha",
+            "cerl  ama de c",
+            "asa. /n"
+        ],
+        [
+            "Porque esto es g",
+            "rati  eso n",
+            "o. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Cuá",
+            "nt  vale un r",
+            "ato  m",
+            "á  en t",
+            "ra",
+            "d  media hora?/n"
+        ],
+        [
+            "Media h",
+            "ora. ",
+            "",
+            "¿Cuánt",
+            "vale ese",
+            "rato /n"
+        ],
+        [
+            "Pero h",
+            "a  todo h",
+            "ast",
+            "un día que m",
+            "e  queda por",
+            "vivir ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Cuánto vale un rato más en tu rado media hora?"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ujOavr_4rfA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

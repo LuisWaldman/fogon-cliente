@@ -8,14 +8,25 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
-                    "C",
                     "G",
-                    "D7",
                     "G",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "G"
                 ]
             },
@@ -23,51 +34,51 @@
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "C",
+                    "Am7",
+                    "Am7",
                     "G",
                     "Em",
-                    "Am7",
+                    "Em",
+                    "G7",
+                    "A#dim",
+                    "A#dim",
+                    "G7",
+                    "D/F#",
+                    "Em",
                     "D7",
-                    "G",
-                    "C"
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "G",
-                    "C",
+                    "Em",
+                    "Am7",
                     "G",
                     "Em",
                     "Am7",
+                    "G7",
+                    "A#dim",
+                    "Am7",
+                    "G7",
+                    "D/F#",
+                    "Em",
+                    "A7",
+                    "A7",
                     "D7",
-                    "G",
-                    "G7"
+                    "D7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
-                    "Cm7",
-                    "G",
-                    "A#dim",
-                    "Am7",
-                    "D7",
-                    "Dm7",
-                    "G7"
-                ]
-            },
-            {
-                "nombre": "parte5",
-                "acordes": [
-                    "C",
-                    "Cm7",
-                    "G",
-                    "D/F#",
-                    "Em",
-                    "A7",
-                    "D7",
                     "G"
                 ]
             }
@@ -77,132 +88,85 @@
             1,
             2,
             3,
-            4,
-            1,
-            2,
-            3,
             4
         ]
     },
     "letras": [
         [
-            "[Ver",
-            "se 1",
-            "]",
             "",
             "",
             "",
-            "/nC"
-        ],
-        [
-            "hayita de",
-            "l vidale",
-            "ro/nte "
-        ],
-        [
-            "nombra en la si",
-            "esta, el vi",
-            "no y el sol",
             "",
-            "/ny "
-        ],
-        [
-            "una chin",
-            "ita Rioja",
-            "na,/nla "
-        ],
-        [
-            "falda peg",
-            "ada de agu",
-            "a y almidón",
-            ".",
-            "/nV"
-        ],
-        [
-            "enga vi",
-            "nito pate",
-            "ro,/ndul"
-        ],
-        [
-            "zón y fies",
-            "tero, ad",
-            "entro nomá",
-            "s,",
-            "/np"
-        ],
-        [
-            "ara que un g",
-            "rito chaye",
-            "ro/n"
-        ],
-        [
-            "suba p",
-            "or la sa",
-            "ngre de ",
-            "un vidalero.",
-            "/nC"
-        ],
-        [
-            "hayita de",
-            "l vidale",
-            "ro/nd"
-        ],
-        [
-            "ejame tu c",
-            "opla, te entre",
-            "go mi voz",
             "",
-            "/ny "
-        ],
-        [
-            "esta caji",
-            "ta chaye",
-            "ra,/nte"
-        ],
-        [
-            "mplada en el fu",
-            "ego de tu",
-            " antiguo son.",
             "",
-            "/nV"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "enga vi",
-            "nito pate",
-            "ro,/nd"
+            "E",
+            "st  es una canción en español de rock argentino./n"
         ],
         [
-            "ulzón y fie",
-            "stero, ade",
-            "ntro nomá",
-            "s,",
-            "/np"
+            "Chayita del /n P",
+            "idaler  te nombra en la sierr",
+            "a  el vino el so",
+            "l  una chinita r",
+            "iojan  la falda pegad",
+            "de agua almidón",
+            "venga vinito, pa",
+            "ntero  dulzón fieste",
+            "r  adentro nomás",
+            "para que un grito cha",
+            "yer  suba por la s",
+            "angr  de u",
+            "n  vid",
+            "aler ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ara que un g",
-            "rito chaye",
-            "ro/n"
+            "Chayita del vid",
+            "alero  déjame la copla t",
+            "e  entrego mi voz",
+            "esta cajita cha",
+            "yer  templada en el fuego d",
+            "e  tu antiguo son v",
+            "eng  vinito, pant",
+            "ero  dulzón fiestero ad",
+            "entr  nomás",
+            "par  que un grito chaye",
+            "r  suba por la sa",
+            "ngr ",
+            "de un vidalero,",
+            "de un vidalero, de u",
+            "n  vidalero",
+            "/n"
         ],
         [
-            "suba p",
-            "or la sa",
-            "ngre de ",
-            "un vidalero.",
-            ""
+            "Chayita del vidalero"
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "gI48UqxCYPI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_chayita-del-vidalero.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_chayita-del-vidalero.mp3",
+    "calidad": 1
 }

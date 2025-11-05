@@ -2,181 +2,279 @@
     "cancion": "me-gustas-tanto",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "G",
+                    "Em",
+                    "Am",
+                    "Am",
                     "Am",
                     "Em",
-                    "Em",
-                    "G",
                     "Am",
-                    "Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
                     "G",
-                    "D",
+                    "G",
                     "C",
-                    "D",
+                    "Em",
                     "Em",
                     "G",
                     "Am",
-                    "D",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm",
                     "Em",
                     "G",
-                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "G",
                     "F",
                     "Em",
-                    "G",
-                    "D",
-                    "Am",
-                    "G",
-                    "Am",
                     "Em",
-                    "Am",
-                    "G",
-                    "Am",
-                    "Em",
-                    "Em",
-                    "G",
                     "F",
-                    "Em",
-                    "Em",
-                    "G",
                     "F",
+                    "F",
+                    "G",
+                    "G",
+                    "C",
                     "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
                     "F",
                     "Am",
                     "C",
+                    "C",
                     "F",
-                    "D",
                     "Am",
                     "C",
-                    "Am",
                     "C",
-                    "Am",
-                    "F",
-                    "G",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "En la palestra de d",
-            "esconocidos/n"
-        ],
-        [
-            "busco a su lado el cal",
-            "or/n"
-        ],
-        [
-            "disimulando moja",
-            "rle el oido/n"
-        ],
-        [
-            "le beso el cuelllo y le di",
-            "je,/n"
-        ],
-        [
-            "me gustas ta",
-            "nto/n"
-        ],
-        [
-            "quisiera perderme en tu nomb",
-            "re../n"
-        ],
-        [
-            "me gustas ta",
-            "nto que no se",
-            " por donde voy",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Me le acerqu",
-            "e suspicaz",
-            "/ny le t"
+            "En la pale",
+            "str  de descon",
+            "ocido  buscó su l",
+            "ad  el calor",
+            "simul",
+            "and  mojar en el o",
+            "ído  le besó el c",
+            "uello  le dijo/n"
         ],
         [
-            "endi un ansuelo/n"
+            "M",
+            "e  gustas tant",
+            "o  quisiera pren",
+            "derm  tu nombre",
+            "m",
+            "e  gustas tanto q",
+            "ue  no se por",
+            "dond  v",
+            "o /n"
         ],
         [
-            "vamos a fu",
-            "mar un porro ah",
+            "M",
+            "e  le acerqué s",
+            "us  picas",
+            "le tendí un a",
+            "nzuelo  vam",
+            "o  fumar u",
+            "n  porro ah",
+            "í /n Me gusta",
+            "vert  reír,",
+            "me gusta t",
+            "anto  tu coqu",
+            "ete ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "me gusta verte re",
-            "ir/n"
+            "Tengo un",
+            "a  idea, no me hables d",
+            "e  ti mucho m",
+            "eno  de tu pas",
+            "ad /n Algo en t",
+            "us  labios colo",
+            "carme  sugiere q",
+            "u  vayamos al r",
+            "ío /n M",
+            "e  gustas ta",
+            "nto  quisiera",
+            "prenderm  tu nomb",
+            "re  m",
+            "e  gustas tan",
+            "t  que no se p",
+            "or  donde v",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "me gusta tanto tu co",
-            "keteo/n"
+            "Oh",
+            "la alegría llegó, l",
+            "a  alegría llegó",
+            "sé que no dura pa",
+            "r siempre /n Oh",
+            ",  la alegría llegó,",
+            "la alegría llegó",
+            "sé que no dura pa",
+            "r  siem",
+            "pr ",
+            "",
+            "/n"
         ],
         [
-            "me gusta verte re",
-            "ir/n"
-        ],
-        [
-            "me gusta tanto tu co",
-            "keteo/n"
-        ],
-        [
-            "Tengo una idea no me h",
-            "ables de ti/n"
-        ],
-        [
-            "Y mucho menos de tu pa",
-            "sado/n"
-        ],
-        [
-            "Amo tus labios co",
-            "lor carmin/n"
-        ],
-        [
-            "Sugiero que vallamos al gr",
-            "ano/n"
-        ],
-        [
-            "oh la alegria lleg",
-            "o/noh la alegria ll"
-        ],
-        [
-            "ego/ny se que dura p"
-        ],
-        [
-            "ara si",
-            "emrpe (2)/n"
-        ],
-        [
-            "Me gustas tan",
-            "to../n"
-        ],
-        [
-            "Me gustas tan",
-            "to que../n"
-        ],
-        [
-            "Me gustas ta",
-            "    a",
-            "n   too",
-            "."
+            "M",
+            "e  gustas t",
+            "anto, ",
+            "me gusta",
+            "tanto que no",
+            "s  por d",
+            "o",
+            "n",
+            "d voy /n M",
+            "e  g",
+            "u",
+            "s  tanto, me gustas tanto que no se por donde voy"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "CRJktPDXpFE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

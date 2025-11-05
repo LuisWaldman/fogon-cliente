@@ -8,10 +8,20 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "B7",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             },
@@ -19,94 +29,129 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
-                    "E7",
+                    "Em",
+                    "Em",
                     "Am",
                     "Am",
-                    "E7",
+                    "Em",
+                    "Em",
                     "Am",
+                    "Am",
+                    "B7",
                     "B7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Em",
-                    "Em",
-                    "Em",
-                    "Am",
-                    "Am",
                     "B7",
-                    "B7",
+                    "Am",
+                    "Em",
+                    "Em",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "E7",
+                    "E7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Si una pena es me",
-            "diapen",
-            "a/n"
+            "me alcanza de i",
+            "da, ",
+            "mi me falta d",
+            "e  vuelta./n"
         ],
         [
-            "Para qué tenerla ",
-            "en cue",
-            "nta/n"
+            "Pero hay que tenerl",
+            "a  en cuenta.",
+            "",
+            "/n"
         ],
         [
-            "Sólo me alcanza ",
-            "de id",
-            "a/nY"
+            "Que mi corazón n",
+            "piense que me voy busca",
+            "otro. /n Solo quiero que l",
+            "a  pena no camine con",
+            "nosotros /n Pero no me voy buscar o",
+            "tro. /n Copra corta que m",
+            "e  importa, cuando canto yo me o",
+            "lvido /n Ay si mi pena pud",
+            "ier  hacer lo mismo conm",
+            "igo /n Esta copra es corta que me imp",
+            "orta /n"
         ],
         [
-            " a mí me falta la",
-            " vuel",
-            "ta/nPero"
+            "Q",
+            "u  mi corazón no piens",
+            "e que de hacer lo que él me diga. /n S",
+            "i  quiere penas más grandes qu",
+            "e  solo él se las consiga./n"
         ],
         [
-            " para qué tenerla en/n"
+            "Pero no me hace lo que él me diga.",
+            "",
+            "/n"
         ],
         [
-            "cuenta/n"
-        ],
-        [
-            "Copla corta, y qué me importa/n"
-        ],
-        [
-            "Cuando canto yo me olvido/n"
-        ],
-        [
-            "¡Ay si mi pena pudiera/n"
-        ],
-        [
-            "Hacer lo mismo conmigo!/nEsta"
-        ],
-        [
-            " copla es corta y qué me/n "
-        ],
-        [
-            "impor",
-            "ta"
+            "Siempr",
+            "queda alguna senda por d",
+            "ond  no van las penas. un",
+            "a  coplas dentro de uno que la",
+            "s van haciendo ajena. /n Pero siempre q",
+            "ueda alguna pena. /n Copla c",
+            "ort  que me importa, cuando c",
+            "ant yo me olvido. /n Ay si m",
+            "i  pena pudiera hacer l",
+            "o mismo conmigo. /n Esta copra es corta",
+            "que me importa.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "_S3rMrwWkWw",
-            "delay": 0
+            "delay": 22590.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_la-media-pena.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_la-media-pena.mp3",
+    "calidad": 1
 }
