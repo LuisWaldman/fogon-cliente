@@ -2,266 +2,420 @@
     "cancion": "dopamina",
     "banda": "babasonicos",
     "escala": "G#",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G#",
-                    "F",
-                    "Cm",
-                    "Bb",
                     "G#",
                     "F",
                     "Cm",
                     "Bb",
-                    "G#",
-                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Cm",
                     "Cm",
                     "Bb",
-                    "G#",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Cm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
                     "G",
-                    "F",
-                    "G#",
                     "G",
-                    "F",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "G#",
-                    "Bb",
-                    "Cm",
-                    "Cm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "D#",
-                    "G",
-                    "F",
-                    "Cm",
                     "D#",
-                    "F",
-                    "Cm",
-                    "Cm",
                     "D#",
-                    "F",
-                    "G",
-                    "Cm",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "D#",
-                    "F",
-                    "G",
-                    "Cm",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D#",
                     "G#",
                     "F",
-                    "Cm",
-                    "Bb",
-                    "G#",
-                    "F",
-                    "Cm",
-                    "Bb",
-                    "G#",
-                    "F",
-                    "Cm",
-                    "Bb",
-                    "G#",
-                    "G",
                     "F",
                     "G#",
-                    "G",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "Cm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "F",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "Cm",
-                    "Bb",
-                    "Cm",
-                    "G#",
-                    "Bb",
-                    "Cm",
-                    "G#",
                     "F",
-                    "Cm",
-                    "Bb",
-                    "G#",
                     "F",
-                    "Cm",
-                    "Bb",
-                    "G#",
-                    "F",
-                    "Cm",
-                    "Bb",
-                    "G#",
-                    "G",
-                    "F",
-                    "G#",
-                    "G",
                     "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "F",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "Cm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "  Los guard",
-            "ianes del crep",
-            "sculo",
+            "Los gu",
+            "ardiane  del",
+            "crep",
+            "úscu",
+            "saben d",
+            "e  mi p",
+            "adec",
+            "er /n"
+        ],
+        [
+            "M  a",
+            "conseja  des",
+            "pega  mi nave",
+            "tiempo de",
+            "sd  el air",
+            "e  s",
+            "al",
+            "ud",
+            "a ",
+            "",
+            "",
             "/n"
         ],
         [
-            "  saben d",
-            "e mí padece",
-            "r",
+            "S",
+            "aludar. ",
+            "",
             "/n"
         ],
         [
-            "  me acons",
-            "ejan despega",
-            "r mi nave a tie",
-            "mpo/n  y desde el a"
+            "Los que s",
+            "ufre  se casi n",
+            "o  du",
+            "ermen/n"
         ],
         [
-            "ire  ",
-            " saluda",
-            "r,    ",
-            "   sa",
-            "ludar.",
-            "/n"
-        ],
-        [],
-        [
-            "sufren ya c",
-            "asi no due",
-            "rmen,/n  el in"
+            "El in",
+            "somni  or",
+            "ient  mi m",
+            "al /n"
         ],
         [
-            "somnio or",
-            "ienta mi mal",
-            "/n  es por "
+            "E  por",
+            "es  que n",
+            "adi  me q",
+            "uiere /n"
         ],
         [
-            "eso que n",
-            "adie me quie",
-            "re,/n  mucho m"
-        ],
-        [
-            "enos me pue",
-            "den amar",
-            "./n"
-        ],
-        [
-            "  Conv",
-            "ivo el pl",
-            "acer",
+            "Mucho",
+            "meno  me p",
+            "uede  a",
+            "mar ",
             "/n"
         ],
         [
-            "  lo dem",
-            "ás me d",
-            "a igu",
-            "al/n"
+            "Con",
+            "viv  el",
+            "pl",
+            "ac",
+            "e /n Lo d",
+            "emá  me d",
+            "a  igu",
+            "al /n"
         ],
         [
-            "  y aun me s",
-            "eas fa",
-            "lso",
+            "No m",
+            "e  seas",
+            "fa",
+            "ls /n"
+        ],
+        [
+            "Que e",
+            "s  mi úni",
+            "c  ver",
+            "dad /n"
+        ],
+        [
+            "Lo",
+            "s  guardianes d",
+            "el  cre",
+            "púsc",
+            "u  sab",
+            "e  de mi",
+            "pad",
+            "ece/n"
+        ],
+        [
+            "M",
+            "e  aconseja",
+            "despegar m",
+            "i  nave tiempo",
+            "desde el a",
+            "ir  s",
+            "al",
+            "ud",
+            "a ",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "  es mi ",
-            "nica",
-            " ve",
-            "rdad",
-            "./n"
-        ],
-        [
-            "  Los guard",
-            "ianes del crep",
-            "sculo",
+            "Saludar",
+            ". ",
             "/n"
         ],
         [
-            "  saben d",
-            "e mí padece",
-            "r",
+            "No seas",
+            "tonto /n N",
+            "sigues mi ej",
+            "emplo /n"
+        ],
+        [
+            "Yo n",
+            "o  tuve",
+            "oportun",
+            "ida /n"
+        ],
+        [
+            "No",
+            "m  gustan l",
+            "as  leyes d",
+            "e  jue",
+            "go /n"
+        ],
+        [
+            "Much  menos m",
+            "e  gusta j",
+            "ugar. ",
             "/n"
         ],
         [
-            "  me acons",
-            "ejan despega",
-            "r mi nave a tie",
-            "mpo/n  y desde el a"
+            "Lo",
+            "s  guardianes d",
+            "e  crepú",
+            "scul  s",
+            "abe",
+            "n  de mi",
+            "padec",
+            "er /n"
         ],
         [
-            "ire  ",
-            " saluda",
-            "r,    ",
-            "   sa",
-            "ludar.",
-            "/n"
-        ],
-        [],
-        [
-            "tonto, no s",
-            "igas mi eje",
-            "mplo/n  yo no "
-        ],
-        [
-            "tuve op",
-            "ortunida",
-            "d/n  no me "
-        ],
-        [
-            "gustan las l",
-            "eyes del ju",
-            "ego,/n  mucho "
-        ],
-        [
-            "menos me g",
-            "usta juga",
-            "r./n"
-        ],
-        [
-            "  Los guard",
-            "ianes del crepú",
-            "sculo",
+            "M",
+            "e  aconseja",
+            "despegar m",
+            "i  nave tiempo",
+            "desde el a",
+            "ir ",
+            "sa",
+            "lu",
+            "da ",
+            "",
             "/n"
         ],
         [
-            "  saben d",
-            "e mí padece",
-            "r",
-            "/n"
-        ],
-        [
-            "  me acons",
-            "ejan despega",
-            "r mi nave a tie",
-            "mpo/n  y desde el a"
-        ],
-        [
-            "ire  ",
-            " saluda",
-            "r,    ",
-            "   sa",
-            "ludar.",
+            "S",
+            "aludar ",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -269,8 +423,10 @@
         {
             "tipo": "Youtube",
             "id": "XLz8y_qXSOY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

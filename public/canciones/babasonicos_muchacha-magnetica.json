@@ -2,55 +2,252 @@
     "cancion": "muchacha-magnetica",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "C",
-                    "D",
-                    "F",
+                    "Am",
+                    "Am",
                     "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "D",
+                    "Dm",
+                    "Dm",
                     "F",
-                    "G"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "Am",
-                    "C",
+                    "D",
                     "D",
                     "F",
-                    "G"
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "D",
+                    "D",
+                    "Dm",
+                    "F",
                     "C",
-                    "G",
-                    "Am"
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "D",
+                    "D",
+                    "Dm",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
                     "Am",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "D",
+                    "D",
+                    "Dm",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "C",
+                    "C F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "D",
+                    "Dm",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "F"
                 ]
             }
@@ -58,108 +255,227 @@
         "orden_partes": [
             0,
             1,
-            1,
             2,
-            2,
-            3,
-            3,
-            3,
             3,
             4,
-            2
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "Si pudiese entrar en t",
-            "u cuarto nena/n"
-        ],
-        [
-            "Sin que despiertes y en s",
-            "ombras/n"
-        ],
-        [
-            "Soplaría entre tus sa",
-            "banas/n"
-        ],
-        [
-            "Torrentes de penas,/n"
-        ],
-        [
-            "Ondulan, d",
-            "estellan/n"
-        ],
-        [],
-        [
-            "itarte a ser mi noche eterna,A fantasear con tu imaginación,/n"
-        ],
-        [
-            "Rescatarte entre las tinieblas,Para co",
-            "nvencerte que te ro",
-            "pa su,/n"
-        ],
-        [
-            "El viento hace bailar El c",
-            "ortinaje/n"
-        ],
-        [
-            "como hojas Que en otoño,",
-            "Hacia el cielo v",
-            "an/n"
-        ],
-        [
-            "Su cuerpo, se platina y es",
-            "tremece,/n"
-        ],
-        [
-            "Y yo...Desde la orilla Su",
-            "surro...",
+            "",
             "/n"
         ],
         [
-            "Del i",
-            "mperio",
+            "S  p",
+            "udie  entrar e",
+            "n  tu cua",
+            "rtone",
             "/n"
         ],
         [
-            "soy tu úni",
-            "co Hij",
-            "o natural/n"
+            "Sin q",
+            "u  despiertes",
+            "enso",
+            "mbra /n S",
+            "oplarí",
+            "entre tus s",
+            "ában",
+            "a /n Tu ren",
+            "ombre  de ve",
+            "las  hon",
+            "dur  de es",
+            "trella /n In",
+            "vidart  ser mi noch",
+            "eterna",
+            "fantasear con tu ima",
+            "ginació /n Res",
+            "catart  entre la",
+            "tinielos /n Para con",
+            "vencert  que te ro",
+            "pa su /n Inv",
+            "idart  ser mi noch",
+            "e  eterna",
+            "fantasear con tu im",
+            "aginació /n Re",
+            "scatart  entre la",
+            "tinielas /n Para co",
+            "nvencert  que te r",
+            "op su /n E",
+            "l  viento hace",
+            "baila  el c",
+            "olombian /n"
         ],
         [
-            "Dame del p",
-            "oder del que co",
-            "rre Río abajo/n"
+            "C",
+            "on  mojas qu",
+            "e no toman /n Hac",
+            "i  el cielo v",
+            "an ",
+            "su cuerpo s",
+            "e  platina",
+            "estreme",
+            "c  s",
+            "on  des",
+            "d  la oril",
+            "l  susu",
+            "rro /n Inv",
+            "idart  ser mi n",
+            "oche  eterna",
+            "fantasear con tu im",
+            "aginació /n"
         ],
         [
-            "Déjame ",
-            "fluir en su c",
-            "alma.",
+            "Rescatarte entre",
+            "la tinielas /n Par",
+            "convencerte que t",
+            "e ropa su /n I",
+            "nvidart  ser m",
+            "noche eterna",
+            "fantasear con tu",
+            "imaginació/n"
+        ],
+        [
+            "Rescatarte entr",
+            "las tinielas /n Pa",
+            "r  convencerte que t",
+            "e  ropa su/n"
+        ],
+        [
+            "Descans",
+            "en tu ni",
+            "d /n Así de v",
+            "enga  algo tira/n"
+        ],
+        [
+            "Te co",
+            "br  la opción de t",
+            "u  pesadi",
+            "ll ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Acechando tus sec",
-            "retos,Nena/n"
+            "Invidarte se",
+            "r  mi noche etern",
+            "a  fantasear con t",
+            "u  imaginaci",
+            "ó /n Rescatarte e",
+            "ntr las tinielas /n P",
+            "ara  convencerte q",
+            "u  te ropa s/n"
         ],
         [
-            "Cuido que no te me v",
-            "allas/n"
+            "Nego i",
+            "mper/n"
         ],
         [
-            "Y me dejes solo En e",
-            "ste, mundo/n"
+            "Soy tu microhijo",
+            "natura /n D",
+            "ame  del poder d",
+            "el  que corre el río ab",
+            "aj /n Déjame fluir",
+            "en su calma",
+            "/n"
         ],
         [
-            "Vacío, despierto,",
-            "Deseando que vuelvas."
+            "V",
+            "a  echand",
+            "o  tus secre",
+            "tos  ne",
+            "n /n Cu",
+            "id  que n",
+            "o  te me vay",
+            "a ",
+            "m",
+            "e  dejes solo",
+            "e  este m",
+            "undo /n Vo",
+            "s  yo d",
+            "espiert  de",
+            "seand  qu",
+            "e  vuelvas",
+            "fantasear c",
+            "on tu imaginación /n Para convencerte que te ropa su Invidarte",
+            "ser mi noche eterna",
+            "fant",
+            "asea",
+            "con tu imaginación",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Rescatarte entre las tinielas",
+            "",
+            "/n"
+        ],
+        [
+            "Neg",
+            "o  imperio/n"
+        ],
+        [
+            "Invidarte",
+            "ser mi noche eterna",
+            "fantasear c",
+            "on  tu imaginación/n"
+        ],
+        [
+            "Rescatarte",
+            "entre las tiniela",
+            "s /n Para convencerte q",
+            "ue  te ropa su/n"
+        ],
+        [
+            "Invidarte",
+            "ser mi noche eter",
+            "na  fantasear",
+            "con tu imaginación",
+            "ti t",
+            "sale sobre tu cama /n Q",
+            "ue  sin ti l",
+            "e ",
+            "p",
+            "i",
+            "e",
+            "r",
+            "d",
+            "e",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "M1z7W9Wqey4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

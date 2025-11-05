@@ -2,32 +2,52 @@
     "cancion": "la-roncha",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 107,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
                     "Em",
-                    "C"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
-                    "D",
                     "Em",
                     "Em"
                 ]
@@ -35,17 +55,140 @@
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
                     "C",
-                    "Em"
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "Em",
+                    "Em",
                     "C",
-                    "Am",
-                    "B7",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
@@ -53,144 +196,178 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            2,
-            1,
-            0,
             2,
             3,
-            3,
-            3,
-            3,
             4,
-            4,
-            4,
-            4,
-            4,
-            4
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "lor abrasado",
-            "r, /nt"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ierra apisona",
-            "da, /nla t"
+            "C",
+            "alor,  abrazad",
+            "ora ",
+            "tierra.",
+            "/n"
         ],
         [
-            "arde arde en sus ma",
-            "nos, /n"
+            "Apisona",
+            "da ",
+            "la tar",
+            "de /n Ard",
+            "e  sus mano",
+            "s ",
+            "se",
+            "ca ",
+            "apasiona",
+            "das ",
+            "/n"
         ],
         [
-            "secas y apasiona",
-            "das, /ncla"
+            "Tlamor d",
+            "e  una canc",
+            "ión ",
+            "",
+            "/n"
         ],
         [
-            "mor de una canci",
-            "n, /nnost"
+            "Nostalgia de",
+            "safinada /n"
         ],
         [
-            "algia desafina",
-            "da, /nel c"
+            "El c",
+            "iel  e",
+            "mbaja",
+            "dor /n"
         ],
         [
-            "ielo embajado",
-            "r, /nr"
+            "Ronca el enc",
+            "ordado  una guitarra l",
+            "a  dist",
+            "anci",
+            "",
+            "",
+            "/n"
         ],
         [
-            "onca el encordado una guita",
-            "rra a la distan",
-            "cia, ",
-            "/nmor"
+            "Morena,",
+            "diosa sir",
+            "ena /n"
         ],
         [
-            "ena diosa sire",
-            "na, /nlivi"
+            "L",
+            "ibiana, ",
+            "se con",
+            "tonea ",
+            "/n"
         ],
         [
-            "ana se contone",
-            "a, /nsand"
+            "Sandía,",
+            "rojas ca",
+            "ladas /n"
         ],
         [
-            "ía roja cal",
-            "ada, /nt"
+            "Todo a",
+            "qu  es barato, la vida n",
+            "o  cuesta nada.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "odo aquí es barato la vid",
-            "a no cuesta na",
-            "da, ",
-            "/nfi"
+            "Est",
+            "es el venen",
+            "o  está en su p",
+            "iel",
+            ". /n Vue",
+            "la  como mo",
+            "sca  la",
+            "pie",
+            "l /n E",
+            "n  esta visi",
+            "ó  no hay m",
+            "aña",
+            "na /n C",
+            "omo  se dil",
+            "uy  el po",
+            "rveni",
+            "r /n"
         ],
         [
-            "esta es el vene",
-            "no está en su pi",
-            "el, /nvu"
+            "Vieb",
+            "re  viebre,",
+            "viebre,",
+            "viebre /n"
         ],
         [
-            "elan como mo",
-            "scas a la mie",
-            "l, /n"
+            "Viebre,",
+            "viebre,",
+            "viebre,",
+            "viebre. /n V",
+            "iebre ",
+            "viebre,",
+            "viebre,",
+            "viebre./n"
         ],
         [
-            "en ésta visi",
-            "ón no hay ma",
-            "ana, /n"
+            "Viebre,",
+            "viebre,",
+            "viebre",
+            "viebre. /n V",
+            "iebre,",
+            "viebre",
+            "viebre",
+            ",  viebre./n"
         ],
         [
-            "como se dilu",
-            "ye el porvenir",
-            ", /n"
+            "Viebre",
+            "viebre,",
+            "viebre,",
+            "viebre.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "fiebre, fi",
-            "ebre, fie",
-            "bre, fieb",
-            "re /n"
-        ],
-        [
-            "fiebre, fi",
-            "ebre, fie",
-            "bre, fieb",
-            "re /n"
-        ],
-        [
-            "fiebre, fi",
-            "ebre, fie",
-            "bre, fieb",
-            "re /n"
-        ],
-        [
-            "fiebre, fi",
-            "ebre, fie",
-            "bre, fieb",
-            "re /n"
-        ],
-        [
-            "fiebre, fi",
-            "ebre, fie",
-            "bre, fieb",
-            "re /n"
-        ],
-        [
-            "fiebre, fi",
-            "ebre, fie",
-            "bre, fieb",
-            "re /n"
-        ],
-        [
-            "fiebre"
+            "Vi",
+            "ebre ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0W7r-l55rzg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -8,59 +8,136 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "G7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
                     "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "lgarrobo algarrobal/ncuando emp"
+            "",
+            "",
+            "/n"
         ],
         [
-            "iezan a brota",
-            "r./nCu"
+            "Algarroba, algarroba",
+            "qué gusto me dan tus lla",
+            "ma  cuando empiezan br",
+            "otar /n Cuando e",
+            "mpieza  brotar, señal que vien",
+            "llegando el tiempo del ca",
+            "rnaval ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ando empiezan a brotar/nel tiemp"
+            "Algarroba, algarroba, cuan",
+            "d  cantan los coyullos m",
+            "e  dan ganas de llo",
+            "rar /n Me dan ganas d",
+            "llorar de puro gusto mi vid",
+            "a  para que llegue el car",
+            "naval ",
+            "",
+            "/n"
         ],
         [
-            "o del carnava",
-            "l./nY el am"
+            "Alga",
+            "rroba algarroba, /n Davidel",
+            "a  por la noche salió c",
+            "anta  llora",
+            "r /n Salió cantar llor",
+            "a  con el tambor de la luna",
+            "el amor del carnaval.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "or del carnava",
-            "l"
+            "Algarroba, algarroba, cu",
+            "and  cantan los coyullos me dan ganas de llorar.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 63,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "48C8tsJvdNY",
-            "delay": 0
+            "delay": 4300.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_algarrobo-algarrobal.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_algarrobo-algarrobal.mp3",
+    "calidad": 1
 }

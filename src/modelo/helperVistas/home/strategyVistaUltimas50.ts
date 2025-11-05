@@ -1,4 +1,4 @@
-import { UltimasCanciones } from '../cancion/ultimascanciones'
+import { UltimasCanciones } from '../../cancion/ultimascanciones'
 import { StrategyVista } from './strategyVista'
 import type { vistaHome } from './vistaHome'
 

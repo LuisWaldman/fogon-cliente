@@ -2,224 +2,269 @@
     "cancion": "bandido",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "C",
+                    "Am",
                     "G",
+                    "G",
+                    "C",
+                    "Em",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Em",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
                     "Am",
                     "C",
+                    "C",
+                    "Em",
                     "Am",
                     "C",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "C",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Am",
+                    "C",
                     "G",
                     "Em",
-                    "Am"
+                    "C",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am Em",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            2,
-            0,
-            0,
-            1,
-            2,
-            0,
-            2,
-            0,
-            0,
-            1,
-            2,
-            0,
-            2,
-            0,
-            2
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Abando",
-            "no la ciudad",
-            "/nborre tod"
-        ],
-        [
-            "as mis huella",
-            "s/ny mi histo"
-        ],
-        [
-            "ria persona",
-            "l/nmañana tend"
-        ],
-        [
-            "rá otro n",
-            "ombre/na mis am"
-        ],
-        [
-            "ores olvid",
-            "o/nnada pro"
-        ],
-        [
-            "meto, ni pi",
-            "do/nsoli"
-        ],
-        [
-            "tario mund",
-            "o sigo",
+            "oí",
+            "do  nada pr",
+            "ometo  ni p",
+            "ido  un sol",
+            "idari  r",
+            "umb  s",
+            "igo ",
             "/n"
         ],
         [
-            "sé que los ",
-            "malos/nviven m"
+            "Sí  que los m",
+            "alo  viven m",
+            "ás  la p",
+            "asan  mej",
+            "or  en c",
+            "omú  del ho",
+            "mbre /n"
         ],
         [
-            "ás/ny la pa"
+            "L",
+            "a  encontré en",
+            "e  descampado,",
+            "la llev",
+            "la cabr",
+            "ena /n Le hice mí",
+            "a  se dur",
+            "mió  esc",
+            "ap  entre la ni",
+            "ebla  les de",
+            "j  los peli",
+            "dos  el desa",
+            "yun  servid",
+            "o  que se abala",
+            "nzan  famé",
+            "lico  al ba",
+            "ncar /n"
         ],
         [
-            "san mejo",
-            "r/nque el c"
+            "Sí",
+            ",  que los malo",
+            "viven má",
+            "s  la pa",
+            "sa  mejo",
+            "r  en com",
+            "ú  del hom",
+            "bre /n"
         ],
         [
-            "omun del h",
-            "ombre/n"
+            "E",
+            "n  el cielo n",
+            "o  hay lugar,",
+            "para que mi a",
+            "lm  descans",
+            "e  ni siquie",
+            "r  religió",
+            "n  porque n",
+            "o busco perdón. /n M",
+            "e  queda",
+            "r  sin motivo",
+            "s  lo trag",
+            "ar  en el vicio,",
+            "como un vira",
+            "j  retira",
+            "d  del m",
+            "ar /n"
         ],
         [
-            "la encontr",
-            " en el descampad",
-            "o/ny la llev"
+            "Sí,",
+            "que los malos v",
+            "ive  más,",
+            "la pas",
+            "a  mejor,",
+            "en com",
+            "ú  del hombre",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "e a la cave",
-            "rna/nla hice m"
+            "Sí, q",
+            "ue  los malos viven más, la pasan mejor,",
+            "e",
+            "n ",
+            "com",
+            "ú  del",
+            "h",
+            "o",
+            "m",
+            "b",
+            "r",
+            "e ",
+            "/n"
         ],
         [
-            "ía y se durm",
-            "ió/nesca"
-        ],
-        [
-            "pe entre la nie",
-            "bla/ny les dej"
-        ],
-        [
-            "e a los feli",
-            "nos/nel desay"
-        ],
-        [
-            "uno servi",
-            "do/nse abalan"
-        ],
-        [
-            "zan fame",
-            "licos/nal ma"
-        ],
-        [
-            "njar/n"
-        ],
-        [
-            "sé que los ",
-            "malos/nviven m"
-        ],
-        [
-            "ás/ny la pa"
-        ],
-        [
-            "san mejo",
-            "r/nque el c"
-        ],
-        [
-            "omun del h",
-            "ombre/n"
-        ],
-        [
-            "en el ci",
-            "elo, no hay lug",
-            "ar/npara que mi "
-        ],
-        [
-            "alma descan",
-            "se/nni siqu"
-        ],
-        [
-            "iera religi",
-            "ón/nporque no "
-        ],
-        [
-            "busco, perd",
-            "n/nme que"
-        ],
-        [
-            "dare sin moti",
-            "vos/nme trag"
-        ],
-        [
-            "are en el vi",
-            "cio/ncomo un p"
-        ],
-        [
-            "irata/nreti"
-        ],
-        [
-            "rado, del ma",
-            "r/n"
-        ],
-        [
-            "sé que los ",
-            "malos/nviven m"
-        ],
-        [
-            "ás/ny la pa"
-        ],
-        [
-            "san mejo",
-            "r/nque el c"
-        ],
-        [
-            "omun del h",
-            "ombre/n"
-        ],
-        [
-            "sé que los ",
-            "malos/nviven m"
-        ],
-        [
-            "ás/ny la pa"
-        ],
-        [
-            "san mejo",
-            "r/nque el c"
-        ],
-        [
-            "omun del h",
-            "ombre."
+            "Sí, que los malos viven más, la pasan mejor, en común del hombre."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "gRMEGMyYJsI",
-            "delay": 0
+            "delay": 16890.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

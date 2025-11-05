@@ -2,197 +2,216 @@
     "cancion": "fan-de-scorpions",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "D",
-                    "Am",
-                    "D",
-                    "C",
-                    "G",
-                    "Am",
-                    "D",
-                    "C",
-                    "D",
-                    "C",
-                    "G",
                     "Am",
                     "C",
-                    "D",
                     "C",
-                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "C",
-                    "F",
-                    "Fm",
-                    "Am",
-                    "D",
-                    "Am",
-                    "D",
-                    "C",
-                    "G",
-                    "Am",
-                    "D",
                     "C",
                     "D",
                     "D",
-                    "G",
-                    "Am",
-                    "C",
                     "D",
                     "C",
-                    "D",
-                    "G",
-                    "F",
                     "C",
-                    "D",
                     "C",
-                    "D",
                     "C",
-                    "D",
                     "C",
-                    "D",
                     "C",
-                    "F",
-                    "Fm",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
                     "C",
                     "Am",
-                    "C",
                     "Am",
                     "C",
-                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Atrevete..",
-            "./n"
-        ],
-        [
-            "Atrevete a viajar conmi",
-            "go/n"
-        ],
-        [
-            "Atrevete a vendar los o",
-            "jos/n"
-        ],
-        [
-            "Atrevete...",
-            "/nAtr"
-        ],
-        [
-            "evete a las cosas nue",
-            "vas/nque en esas quim"
-        ],
-        [
-            "eras te propo",
-            "ngo yo",
-            "/nSe"
-        ],
-        [
-            "amos estupendos ami",
-            "gos/nDej"
-        ],
-        [
-            "emos la critica de la",
-            "do/nLa mu"
-        ],
-        [
-            "sica no tiene mensa",
-            "je para dar",
-            ".../n"
-        ],
-        [
-            "Atrevete..",
-            "./n"
-        ],
-        [
-            "Atrevete a lo poco cla",
-            "ro/n"
-        ],
-        [
-            "Atrevete a querer lo ra",
-            "ro/n"
-        ],
-        [
-            "Atrevete...",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Atrevete a sembrar el",
-            " caos/nque del otro l"
+            "Atrévete, a",
+            "trévet  viajar co",
+            "nmigo  at",
+            "révet  vendar los o",
+            "jos ",
+            "/n"
         ],
         [
-            "ado te espe",
-            "ro yo",
-            "/nSea"
+            "Atrévete  a",
+            "trévet  las cosas nuev",
+            "a  que en esas quimer",
+            "a  me propongo t",
+            "u /n S",
+            "eamo  estupendos am",
+            "igos  deje",
+            "mo  la crítica del am",
+            "or  la mú",
+            "sic  no tiene mens",
+            "aj  para n",
+            "ad",
+            "a /n"
         ],
         [
-            "mos estupendos amig",
-            "os/nDej"
+            "Atr",
+            "évete  atré",
+            "vet  lo poco cl",
+            "aro  atrév",
+            "et  querer algo r",
+            "aro  at",
+            "révete ",
+            "atréve",
+            "t  sentar el cao",
+            "s  que de un otro lad",
+            "o  te espero./n"
         ],
         [
-            "emos la critica de la",
-            "do/nLa "
+            "Seamos",
+            "estupendos amig",
+            "os  dejemos l",
+            "a  crítica del amor,",
+            "la músic",
+            "no tiene mensaje",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "musica no tiene mens",
-            "aje/nLa "
-        ],
-        [
-            "musica no tiene mor",
-            "al/nLa "
-        ],
-        [
-            "musica no tiene mor",
-            "al/nLa "
-        ],
-        [
-            "musica no tiene mor",
-            "al/nLa "
-        ],
-        [
-            "musica no tiene mor",
-            "al/nLa "
-        ],
-        [
-            "musica no tiene mens",
-            "aje para da",
-            "r.../ny sin embargo te lo "
-        ],
-        [
-            "da/nSeamos estupendos a"
-        ],
-        [
-            "migos/nSe"
-        ],
-        [
-            "amos estupendos ami",
-            "gos/nSe"
-        ],
-        [
-            "amos estupendos ami",
-            "gos",
-            ""
+            "Seamos est",
+            "upendo  amigos,",
+            "",
+            "",
+            "dejemo",
+            "la crítica del a",
+            "m",
+            "o",
+            "r",
+            ",",
+            "",
+            "la música no tiene mensaje."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "MgCePAfL13o",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,274 +2,397 @@
     "cancion": "de-mala-muerte",
     "banda": "los-caballeros-de-la-quema",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "G",
+                    "A",
+                    "D",
+                    "C",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "Am",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
-                    "Bm",
-                    "C",
-                    "Bm",
-                    "Bb",
-                    "A",
-                    "G",
-                    "D",
-                    "G",
-                    "C",
-                    "G",
-                    "G",
-                    "Bm",
-                    "C",
-                    "Bm",
-                    "Bb",
-                    "A",
-                    "G",
-                    "D",
-                    "G",
-                    "C",
-                    "G",
-                    "G",
-                    "Bm",
-                    "C",
-                    "Bm",
-                    "Bb",
-                    "A",
-                    "G",
-                    "D",
-                    "G",
-                    "C",
-                    "G",
-                    "G",
-                    "Am",
-                    "Bm",
-                    "C",
-                    "Em",
-                    "D",
-                    "G",
-                    "Am",
-                    "Bm",
-                    "C",
-                    "Em",
-                    "D",
-                    "G",
-                    "C",
-                    "Bm",
-                    "Am",
-                    "G",
-                    "Bm",
-                    "C",
-                    "Bm",
-                    "Bb",
-                    "A",
-                    "G",
-                    "D",
-                    "G",
-                    "C",
-                    "G",
-                    "G",
-                    "Bm",
-                    "C",
-                    "Bm",
-                    "Bb",
-                    "A",
-                    "G",
-                    "D",
-                    "G",
-                    "C",
-                    "G",
-                    "G",
-                    "Am",
-                    "Bm",
-                    "C",
-                    "Em",
-                    "D",
-                    "G",
-                    "G",
-                    "Am",
-                    "Bm",
-                    "C",
-                    "Em",
-                    "D",
-                    "G",
-                    "C",
-                    "Bm",
-                    "Am",
-                    "D",
-                    "C",
-                    "Bm",
-                    "Am",
-                    "G",
-                    "D",
-                    "C",
-                    "Bm",
-                    "Am",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bb",
+                    "Bb",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "Bb",
+                    "Bb",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "ias que no sa",
-            "lgo al sol/nle di "
-        ],
-        [
-            "llave a mi",
-            " casca",
-            "ron",
-            "/nvoy de"
-        ],
-        [
-            " la cama al baño/ndel ba"
-        ],
-        [
-            "ño al vino/ndel vino al dolo"
-        ],
-        [
-            "r",
             "",
-            "/nMedio estro"
-        ],
-        [
-            "peado y con el hoc",
-            "ico herido/nson varias l"
-        ],
-        [
-            "unas dormi",
-            "das sin",
-            " vos",
-            "/ncasi estoy "
-        ],
-        [
-            "listo para enterr",
-            "arnos/ncasi que n"
-        ],
-        [
-            "o..",
-            "...",
-            "/n"
-        ],
-        [
-            "   ",
-            "    ",
-            " Y esta noch",
-            "e salgo a robar",
-            "/nbesos n"
-        ],
-        [
-            "ublados de mala muert",
-            "e/n"
-        ],
-        [
-            "    ",
-            "   y como sie",
-            "mpre termino buscandote",
-            "/nequili"
-        ],
-        [
-            "brista de c",
-            "uello",
-            " ro-",
-            "-to",
-            "/nSe hacen "
-        ],
-        [
-            "lungas las tardes ",
-            "sin tu voz/nbarro tu "
-        ],
-        [
-            "sombras y vu",
-            "elven a",
-            " entra",
-            "r/nbrilla "
-        ],
-        [
-            "tu ausencia/nse trepa a mis "
-        ],
-        [
-            "sabanas/ny empieza a "
-        ],
-        [
-            "lad",
-            "rar",
-            "/nDice un tan"
-        ],
-        [
-            "go sabio que/nhay que sab"
-        ],
-        [
-            "er olvidar/npero ning"
-        ],
-        [
-            "uno se atr",
-            "eve a ex",
-            "plicar",
-            "/nun coraz"
-        ],
-        [
-            "on en llanta/nno entrega "
-        ],
-        [
-            "el cuello asi nomas",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "   ",
-            "    ",
-            " Y esta noch",
-            "e salgo a robar",
-            "/nbesos nubl"
+            "E",
+            "sta es una canción en español de rock argentino. /n"
         ],
         [
-            "ados de mala muerte",
+            "Hace día ",
+            "que ",
+            "no san",
+            "go al sol ",
+            "le di ll",
+            "ave mi ",
+            "cascarón  ",
             "/n"
         ],
         [
-            "   ",
-            "    ",
-            "y como siemp",
-            "re termino buscando",
-            "te/nequili"
-        ],
-        [
-            "brista de c",
-            "uello",
-            " rot",
-            "o,",
-            "/nde "
-        ],
-        [
-            "mala",
-            "    mu",
-            "erte",
+            "Voy de la c",
+            "ama al bañ",
+            "o, del baño al ",
+            "vino, el v",
+            "ino al dolo",
+            "r ",
             "",
-            "/nde "
+            "/n"
         ],
         [
-            "cuel",
-            "lo  ro",
-            "--to",
+            "Med",
+            "io estropea",
+            "do con el ",
+            "hocico  heri",
+            "do son vari",
+            "as lunas dor",
+            "midas sin voz /n"
+        ],
+        [
+            "C",
+            "asi est",
+            "oy lis",
+            "to para en",
+            "terrarnos, c",
+            "asi que ",
+            "no ",
             "",
-            ""
+            "/n"
+        ],
+        [
+            "Est",
+            "a noche ",
+            "salgo  ",
+            "rob",
+            "ar esos n",
+            "ublados de ",
+            "mala mu",
+            "erte /n"
+        ],
+        [
+            "Como si",
+            "empre, ",
+            "termino bus",
+            "cándote",
+            "equ",
+            "ilibrista /n"
+        ],
+        [
+            "De c",
+            "uello r",
+            "oto se ha",
+            "cen lung",
+            "as, las ta",
+            "rdes sin tu ",
+            "voz \n\nBarro tus ",
+            "sombras ",
+            "vuelven en",
+            "trar, br",
+            "illa ",
+            "tu ausencia /n"
+        ],
+        [
+            "Se trepa ",
+            "mis sábanas ",
+            "empieza la",
+            "drar ",
+            "",
+            "/n"
+        ],
+        [
+            "Dice ",
+            "un tango sá",
+            "bio que hay ",
+            "que saber olvidar /n"
+        ],
+        [
+            "Pero ni",
+            "nguno se a",
+            "treverá ",
+            "explicar /n"
+        ],
+        [
+            "Un co",
+            "razón en llan",
+            "tas no entr",
+            "ega al cuell",
+            "o, casi no ",
+            "más ",
+            "",
+            "/n"
+        ],
+        [
+            "Est",
+            "a noche s",
+            "algo ",
+            "rob",
+            "ar esos n",
+            "ublados de ",
+            "mala mu",
+            "erte ",
+            "como s",
+            "iempre, ",
+            "termino ll",
+            "orándot",
+            "equilibr",
+            "ista \n\nDe ",
+            "c",
+            "uello r",
+            "ot",
+            "o, ",
+            "de m",
+            "ala mu",
+            "erte, ",
+            "",
+            "de c",
+            "uello ",
+            "rot",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Casi estoy listo para entrar, brilla tu ausencia "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "itLRnQAhRGY",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,119 +2,400 @@
     "cancion": "demasiado",
     "banda": "babasonicos",
     "escala": "B",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "B",
-                    "D",
-                    "E"
+                    "B",
+                    "B",
+                    "B"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "E",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D9",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "D9",
                     "B",
                     "D",
-                    "E",
+                    "D",
+                    "D",
+                    "D9",
+                    "D9",
+                    "D9",
                     "D9"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D9",
+                    "D",
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D9",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
             1,
-            0,
-            1,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            " El abismo respi",
-            "ra a tus pies ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " la marea te hi",
+            "E",
+            "l  abismo respir",
+            "a  tus pi",
+            "es ",
+            "la",
+            "mare  te hi",
             "pnotiza ",
             "/n"
         ],
         [
-            " en la playa ceba",
-            "bas la mar ",
+            "En l",
+            "a playas de /n Bra",
+            "vaslán ",
+            "",
+            "las sol",
+            "illa  del miedo te",
+            "alcanzan /n"
+        ],
+        [
+            "Dema",
+            "siad  lejos par",
+            "a  temer, dema",
+            "siad  lejos para",
+            "volver ",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " las orillas del mie",
-            "do te alcanzan ",
-            "/nDemasiado l"
+            "Ni en un tiempo n",
+            "i  en cualquier lugar.",
+            "/n"
         ],
         [
-            "ejos para temer ",
-            "/ndemasiado l"
+            "E",
+            "ntr  gente pa",
+            "seand  exci",
+            "tada  n",
+            "o",
+            "te asustes m",
+            "i  amor, no te d",
+            "eja",
+            "s /n E",
+            "st  zona cu",
+            "idad  de na",
+            "da /n"
         ],
         [
-            "ejos para volver ",
-            "/nDemasiado l"
+            "Demasiado l",
+            "ejos  para tem",
+            "er  demasiado l",
+            "ejos  para volver/n"
         ],
         [
-            "ejos para temer ",
-            "/ndemasiado l"
+            "Demasiado l",
+            "ejos  para tem",
+            "er  demasiado l",
+            "ejo  para volver./n"
         ],
         [
-            "ejos para volver ",
-            "/nDemasiado l"
+            "Pon tu mente en r",
+            "ang  piensa bie",
+            "n  llego re",
+            "scatar /n L",
+            "lego  re",
+            "scatar  l",
+            "leg  re",
+            "scatar ",
+            "/n"
         ],
         [
-            "ejos para temer ",
-            "/ndemasiado l"
+            "L  escalera sec",
+            "de tus pie",
+            "s ",
+            "",
+            "escalón que pisas e",
+            "n  desa",
+            "rmar /n"
         ],
         [
-            "ejos para volver ",
-            "/nDemasiado l"
+            "So",
+            "lament  te qued",
+            "a  subir",
+            ", ",
+            "",
+            "aunque sepas que arriba n",
+            "o  hay nad",
+            "a /n"
         ],
         [
-            "ejos para temer ",
-            "/ndemasiado l"
+            "Demasiado lej",
+            "o  para temer",
+            "demasiado lej",
+            "o para volver. /n D",
+            "emasiado  le",
+            "jo  para temer,",
+            "demasiado lej",
+            "o  para volv",
+            "er /n Esc",
+            "ucha  la alegr",
+            "í  crece",
+            "r ",
+            "",
+            "un minuto soni",
+            "d  abora",
+            "da /n"
         ],
         [
-            "ejos para volver ",
-            "/nPon tu mente en bl"
+            "S",
+            "i  vergüenza por toda",
+            "nubes",
+            "/n"
         ],
         [
-            "anco y piensa en mi ",
-            "/nllego a rescat"
+            "E",
+            "l  ocaso, silencia",
+            "palabras.",
+            "/n"
         ],
         [
-            "arte",
-            " /nllego a resca"
+            "Demasiado lej",
+            "o  para temer",
+            "demasiado lej",
+            "o para volver. /n D",
+            "emasiad  lejo",
+            "s  para temer,",
+            "demasiado lejo",
+            "para volver./n"
         ],
         [
-            "tarte",
-            " /nllego a rescat"
+            "Pon tu mente en rango",
+            "piensa bien, l",
+            "lego  resc",
+            "atar ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "arte",
-            " "
+            "Demasiado lejos para temer, demasiado lejos para volver."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PUhRidP8JLk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

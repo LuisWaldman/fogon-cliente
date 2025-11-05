@@ -8,116 +8,502 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
-                    "A",
-                    "F(#5)",
-                    "D"
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Em",
+                    "A",
+                    "A",
+                    "F(#5)",
+                    "F(#5)",
+                    "F(#5)"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "A",
+                    "A",
+                    "F(#5)",
+                    "F(#5)"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F(#5)",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "F(#5)",
+                    "F(#5)",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
                     "D7",
-                    "G",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D7",
                     "Bb",
                     "D",
-                    "A",
-                    "B",
-                    "C#",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "F(#5)",
+                    "F(#5)",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F(#5)",
+                    "F(#5)",
+                    "F(#5)",
+                    "F(#5)"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "Bb",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "Bb",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Bb"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
-            0,
-            0,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
-        [],
         [
-            "ote/nY si digo a"
-        ],
-        [
-            "gua usted no imagina ",
-            "el Parana",
-            "/nDiciembre lo arranca desata su nudo con la madres"
-        ],
-        [
-            "elva/nY con el viene el a"
-        ],
-        [
-            "gua, el viento del no",
-            "rte y la yara",
-            "ra/nY a su incertidumbre, lento lagarto, raices n"
-        ],
-        [
-            "egras/nSe le pega el hambr"
-        ],
-        [
-            "e, el aire pesado",
-            " y la inunda",
-            "cion/nQue no se detenga tu marcha lenta rumbo p'"
-        ],
-        [
-            "al mar/nEs tan semejante"
-        ],
-        [
-            " a nuestro delirio",
-            ", a la soleda",
-            "d/nQue te empuje el vi"
-        ],
-        [
-            "ento mi pensamiento o ",
-            "el tempo",
-            "ral/nFuera de la oril"
-        ],
-        [
-            "la, tu cama",
-            "rill",
-            "a, ",
-            "camalotal",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
-        [],
         [
-            "erio/nBajo tu lla"
+            "Esta es una canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta e",
+            "s  una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "nura juega el dor",
-            "ado, escondiendose/nSilencioso ejercito, Panza de Agua, Patas de Barro"
+            "Esta es una canción en español",
+            "d",
+            "e",
+            "",
+            "",
+            "",
+            "",
+            "rock argentino. /n Si y",
+            "o  digo verde",
+            "que ust",
+            "e  no piens",
+            "en el qu",
+            "emalo",
+            "te /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Si digo agua",
+            ",  ust",
+            "e  no imagina e",
+            "l  pa",
+            "rana /n"
+        ],
+        [
+            "Dic",
+            "iembr  lo arr",
+            "anca  desata s",
+            "u  nudo c",
+            "o  la madr",
+            "selv",
+            "a  con é",
+            "l  viene el agua,",
+            "el viento d",
+            "el  norte l",
+            "llarará.",
+            "",
+            "su inc",
+            "ertidumb",
+            "r  lento lag",
+            "arto ",
+            "raíce",
+            "negra",
+            "s /n Se le pega e",
+            "l  hambre,",
+            "el aire pe",
+            "sad  la i",
+            "nundació/n"
+        ],
+        [
+            "Qu",
+            "e  no s",
+            "e  detenga t",
+            "u  marc",
+            "h  lenta rumb",
+            "pa 'l mar.",
+            "/n"
+        ],
+        [
+            "Es tan s",
+            "emejant ",
+            "nuestro delir",
+            "i  la s",
+            "oledad",
+            ". /n"
+        ],
+        [
+            "Que te empuje e",
+            "l  viento",
+            "pensami",
+            "ent  el t",
+            "empora/n"
+        ],
+        [
+            "F",
+            "uer  de la",
+            "lilla  tu c",
+            "amarilla",
+            "quemalote.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El r",
+            "ío  que te ac",
+            "una  mete",
+            "su lengua e",
+            "n  el ca",
+            "cerí",
+            "o /n Bajo t",
+            "u  llanur",
+            "a  juega el do",
+            "rad  escond",
+            "iéndose ",
+            "/n"
+        ],
+        [
+            "Silencio",
+            "s  ejércit",
+            "o  panza d",
+            "e  agua,",
+            "pata  de ba",
+            "rro /n"
+        ],
+        [
+            "Mamotreto de",
+            "hojas ",
+            "verdes las ag",
+            "ua  del invasor./n"
+        ],
+        [
+            "Q",
+            "ue  n",
+            "o  se dete",
+            "ng  tu marc",
+            "h  lenta ru",
+            "mb  pa 'l m",
+            "ar /n"
+        ],
+        [
+            "E  t",
+            "a  semejante",
+            "nuestro del",
+            "iri  la",
+            "soleda",
+            "d /n"
+        ],
+        [
+            "Que te empu",
+            "j  el viento,",
+            "mi pensami",
+            "ent  el",
+            "tempora",
+            "l /n Fu",
+            "er  de la",
+            "lilla  tu",
+            "camarilla",
+            "quema",
+            "lote /n"
+        ],
+        [
+            "Fu",
+            "er  de la li",
+            "lla  tu c",
+            "amaril",
+            "l ",
+            "que",
+            "malo",
+            "te ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Fuera de la lilla, tu camarilla, quienalote."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 184,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "6oG_JRyLtvc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_rio-de-camalotes.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_rio-de-camalotes.mp3",
+    "calidad": 1
 }

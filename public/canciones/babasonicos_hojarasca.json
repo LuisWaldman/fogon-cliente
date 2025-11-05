@@ -2,200 +2,339 @@
     "cancion": "hojarasca",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "G",
                     "G",
                     "F",
                     "C",
-                    "G"
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
                     "G",
                     "F",
                     "C",
-                    "F",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "G",
                     "F",
-                    "C",
-                    "Bm",
-                    "C",
-                    "Em",
-                    "Bm",
-                    "Cm",
-                    "Em"
+                    "F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
                     "Am",
                     "Bm",
-                    "Cm",
-                    "Em"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "G",
+                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            1,
             1,
             2,
             3,
-            3,
-            0,
-            0,
-            1,
-            1,
-            1,
-            2,
-            3,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            " Si hasta ayer no cre",
-            "as en mi/n"
+            "ayer n",
+            "o  creías e",
+            "n  mí,",
+            "mejo",
+            "no me l",
+            "o  dig",
+            "as /n"
         ],
         [
-            " mejor no me lo di",
-            "gas/n"
+            "L  que p",
+            "iensas  d",
+            "e  los de",
+            "má  e",
+            "s  lo qu",
+            "e  te da mie",
+            "d  ser./n"
         ],
         [
-            " lo que piensas d",
-            "e los demás, ",
-            "es lo que te da mied",
-            "o ser/n"
+            "M",
+            "ir  en",
+            "pro",
+            "fun",
+            "did",
+            "la trama s",
+            "e  des",
+            "hila",
+            "ba ",
+            "¿Quién soy y",
+            "o  pa",
+            "r  descr",
+            "eer /n"
         ],
         [
-            " miro en p",
-            "rofundida",
-            "d (miro en pro",
-            "fundidad)",
-            "/n"
+            "No me importa l",
+            "a  verd",
+            "ad  ¿/n"
         ],
         [
-            " la tram",
-            "a se deshila",
-            "aaacha",
+            "Quién  pi",
+            "s  las ho",
+            "ja  sec",
+            "as /n"
+        ],
+        [
+            "La hoja",
+            "ras",
+            "cam  e",
+            "n  volve",
+            "rá ",
             "",
+            "en la cuna de",
+            "l  ol",
+            "vi",
+            "d  s",
+            "er ",
+            "memori",
+            "a ",
+            "e",
+            "n  la curva de l",
+            "a  tí",
+            "a  s",
+            "er",
+            "é  seré p",
+            "rehistoria ",
             "/n"
         ],
         [
-            " quién soy ",
-            "yo  ",
-            "para des",
-            "creer,",
-            "/n no me im"
-        ],
-        [
-            "porta la verd",
-            "ad./n "
-        ],
-        [
-            "Quién pisa las ",
-            "hojas se",
-            "cas?/n "
-        ],
-        [
-            "la hojarasca m",
-            "e... envo",
-            "lverá/n"
-        ],
-        [
-            "  y en la cuna del olv",
-            "ido   ",
-            " seré memo",
-            "ria/n"
-        ],
-        [
-            "  y en la curva del hast",
-            "ío seré,",
-            "   seré prehis",
-            "toria./n"
-        ],
-        [
-            " Las promesas s",
-            "on para ser   ",
-            "rotas y olvidad",
-            "as,/n"
-        ],
-        [
-            " los secretos s",
-            "on para ser   ",
-            "contad",
-            "os/n"
-        ],
-        [
-            " miro en p",
-            "rofundida",
-            "d (miro en pro",
-            "fundidad)",
+            "La",
+            "s  promesas s",
+            "on  para s",
+            "er  r",
+            "ota",
+            "s  olv",
+            "idadas",
             "/n"
         ],
         [
-            " la tram",
-            "a se deshila",
-            "aaacha",
+            "Los",
+            "secreto  so",
+            "n  para s",
+            "e  c",
+            "on",
+            "ta",
+            "do /n"
+        ],
+        [
+            "M",
+            "iro  en",
+            "pro",
+            "fun",
+            "did",
+            "la tram",
+            "se des",
+            "hilab",
+            "a ",
+            "¿Quién soy y",
+            "o  p",
+            "ar  des",
+            "creer /n"
+        ],
+        [
+            "No me impo",
+            "rt  la ver",
+            "dad ",
+            "¿Quién",
+            "pis  la",
+            "hojas s",
+            "eca",
+            "s /n La h",
+            "oj  ra",
+            "sca",
+            "m  en v",
+            "olverá",
             "",
+            "en la c",
+            "un  del o",
+            "lv",
+            "i  s",
+            "er",
+            "é  me",
+            "moria ",
+            "",
+            "en la c",
+            "urv  de las t",
+            "ías ",
+            "se",
+            "ré  s",
+            "eré  prehi",
+            "storia ",
             "/n"
         ],
         [
-            " quién soy ",
-            "yo  ",
-            "para des",
-            "creer,",
-            "/n no me im"
-        ],
-        [
-            "porta la verd",
-            "ad./n "
-        ],
-        [
-            "Quién pisa las ",
-            "hojas se",
-            "cas?/n "
-        ],
-        [
-            "la hojarasca m",
-            "e... envo",
-            "lverá/n"
-        ],
-        [
-            "  y en la cuna del olv",
-            "ido   ",
-            " seré memo",
-            "ria/n"
-        ],
-        [
-            "  y en la curva del hast",
-            "ío seré,",
-            "   seré prehis",
-            "toria."
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "5Cm66rTmeUs",
-            "delay": 0
+            "delay": 1700.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

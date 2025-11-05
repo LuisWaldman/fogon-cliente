@@ -8,90 +8,583 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Dm7",
                     "C7",
                     "Dm7",
-                    "Am"
+                    "Dm7",
+                    "Dm7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
                     "Dm7",
                     "C7",
                     "Dm7",
-                    "Am",
-                    "G",
-                    "Gm"
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Dm7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Dm7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
-        [],
         [
-            "Oigo gemir,/nal jaguar he"
-        ],
-        [
-            "rido.../n"
-        ],
-        [
-            "y todos dirán,/nque fue una "
-        ],
-        [
-            "piedra.../n"
-        ],
-        [
-            "Cuanta piedad,/nque dis"
-        ],
-        [
-            "tante está el sol.../n"
-        ],
-        [
-            "y todos dirán,/nque es una "
-        ],
-        [
-            "sombra..../n"
-        ],
-        [
-            "Ay, ay, ay,/nJaguar h"
-        ],
-        [
-            "erido.../npor tu"
-        ],
-        [
-            " piel vendrán,/nlas alim"
-        ],
-        [
-            "añas...",
+            "Vamos hacer un tema nuevo ",
+            "que se llama \n\nJagua ",
+            "herido. ",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "cuanto dulzor,/nque mor"
+            "El ",
+            "cazador es",
+            "tá muerto e",
+            "ntre mis garras ",
+            "",
+            "/n"
         ],
         [
-            "tal es la fe/nno me hagan creer,"
+            "P",
+            "ero al lu",
+            "char sus b",
+            "alas me q",
+            "uemaron ",
+            "/n"
         ],
-        [],
-        [],
-        []
+        [
+            "Ese ",
+            "hombre es un ",
+            "sile",
+            "ncio /n"
+        ],
+        [
+            "E",
+            "sto contin",
+            "úa en mi ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "quise igua",
+            "l las be",
+            "stias al sol ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Perseguir m",
+            "atar fue mi ",
+            "vida ",
+            "",
+            "",
+            "esta herida es como ",
+            "un seiv",
+            "o /n"
+        ],
+        [
+            "Me ",
+            "quedaré tenido a",
+            "quí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me quedaré tenido aquí ",
+            "/n"
+        ],
+        [
+            "Hoy e",
+            "ste sol ",
+            "me c",
+            "ond",
+            "ena ",
+            "",
+            "/n"
+        ],
+        [
+            "Entre  las b",
+            "rasas del v",
+            "erde de la ",
+            "sel",
+            "va ",
+            "¿\nAca",
+            "so el dolor es un ",
+            "limbo?  ",
+            "/n"
+        ],
+        [
+            "Nunca ",
+            "más podrás r",
+            "egres",
+            "ar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me quedaré tenido aquí ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy ",
+            "cogeme  al caz",
+            "ador herido ",
+            "",
+            "todos d",
+            "irán que ",
+            "fue una p",
+            "iedra /n"
+        ],
+        [
+            "Cu",
+            "anta piedad, ",
+            "que distante es",
+            "tá el sol ",
+            "todos ",
+            "dirán  ",
+            "que es una s",
+            "ombra /n"
+        ],
+        [
+            "Ay, ",
+            "ay, ay, ",
+            "ay, jaguar he",
+            "rido ",
+            "/n"
+        ],
+        [
+            "Por tu piel vend",
+            "rán las ag",
+            "rima",
+            "ñas \n\nCua",
+            "nto dulce",
+            ", que morta ",
+            "es la fe /n"
+        ],
+        [
+            "No me h",
+            "agan creer ",
+            "que es un en",
+            "igma ",
+            "/n"
+        ],
+        [
+            "Un ",
+            "enigma tal ",
+            "vez ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No ",
+            "me hagan creer que es un enigma ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Por tu ",
+            "piel vendrán las agrimañas \n\nJaguar ",
+            "",
+            "jaguar  ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Jaguar, j",
+            "aguar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Jaguar, jaguar \n\nJaguar, jaguar \n\nJaguar, jaguar "
+        ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "xTJYadQuJN8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

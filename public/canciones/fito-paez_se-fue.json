@@ -8,53 +8,89 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Dm",
+                    "F",
+                    "C",
                     "A7",
-                    "Dm",
-                    "Dm",
-                    "A7",
-                    "Dm",
-                    "Dm"
+                    "A7 C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
+                    "A7",
                     "F",
-                    "Gm",
+                    "Bb",
+                    "Bb A7",
                     "A7",
                     "Dm",
-                    "C",
                     "F",
-                    "Gm"
+                    "A7",
+                    "A7",
+                    "Bb",
+                    "C",
+                    "C",
+                    "C Dm",
+                    "C Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F",
-                    "Bb",
-                    "F",
-                    "Dm",
-                    "Bb",
                     "C",
                     "F",
-                    "Gm"
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "F",
-                    "Bb",
                     "F",
-                    "A7",
-                    "Dm",
-                    "Bb",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Gm",
+                    "Gm",
                     "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "C",
+                    "C",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
                     "F"
                 ]
             }
@@ -63,73 +99,91 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "egó sin u",
-            "n centav",
-            "o,/nsin n"
+            "el sueño a",
+            "que /n No sé dón",
+            "d  lo dejé/n"
         ],
         [
-            "ada qu",
-            "e perde",
-            "r,/n"
+            "Se fue, se f",
+            "ue  yo me qu",
+            "ed /n Pensando l",
+            "o  que ayer se fue/n"
         ],
         [
-            "una muje",
-            "r sin nombr",
-            "e/ncon to"
+            "Mur",
+            "ió  se fue",
+            "vuelve es",
+            "verano tan claro como a",
+            "yer /n Pero es solo u",
+            "reflejo de lo que pudo s",
+            "er /n En todo lo q",
+            "ue  veo, su imagen siem",
+            "pr  está no puedo ev",
+            "itarlo  me dejo de pen",
+            "sa /n Se fue, se fu",
+            "e  como un venda",
+            "va  aún escucho s",
+            "u canción /n S",
+            "e  fue, se fu",
+            "e  el sueño aque",
+            "l /n Ya no volve",
+            "rá  se fue/n"
         ],
         [
-            "do por",
-            " hacer",
+            "Murió",
+            "se fue",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Se fue",
-            ", se",
-            " fue",
-            "/nel ju"
+            "S",
+            "e fue, se fue /n Se fue, se fue no h",
+            "ay  por qué llorar/n"
         ],
         [
-            "ego aqu",
-            "el/nno se adonde "
+            "El tiempo nos igu",
+            "alar /n S",
+            "e  fue, se fue du",
+            "r  esta verdad/n"
         ],
         [
-            "lo dej",
-            "e/n"
+            "N  quiero creer q",
+            "ue ya /n S",
+            "e  fue,",
+            "se fue /n M",
+            "urió ",
+            "se fue/n"
         ],
         [
-            "Se fue",
-            ", se f",
-            "ue",
-            "/ny yo "
-        ],
-        [
-            "me qued",
-            "é/npens"
-        ],
-        [
-            "ando en lo que ay",
-            "er se fue",
-            "/nm"
-        ],
-        [
-            "urio",
-            "... se fue..."
+            "M",
+            "uri ",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 86,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "6h1Ap4q0uWQ",
-            "delay": 0
+            "delay": 24740.0
         }
     ],
     "etiquetas": [
         "Rock Nacional"
-    ]
+    ],
+    "procesando": 4,
+    "calidad": 1
 }

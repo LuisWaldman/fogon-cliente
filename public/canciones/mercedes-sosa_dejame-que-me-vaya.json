@@ -8,61 +8,215 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bm",
                     "Em",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
                     "Bm",
                     "G",
-                    "F#7",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Aunque me duela el alma/n"
+            "",
+            "",
+            "/n"
         ],
         [
-            "y se me quiebre el pecho/n"
+            "Aun",
+            "qu  me duele el alma",
+            "se me quiebre el pecho",
+            ",  déjame que me vaya",
+            "olvidarme tus besos",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "donde iré no importa,",
+            "n  intentes detenerme,",
+            "total sabes de sobra q",
+            "ue  en vano fue quererte,",
+            "total sabes de sobra q",
+            "u  en vano fue quererte.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "déjame que me vaya/n"
+            "N",
+            "o  creo en tus promesas, n",
+            "o  me hagas juramento,",
+            "ni bien tu voz lo suelta,",
+            "ya se los llevo al v",
+            "ien",
+            "to /n Siem",
+            "pr  en el corazón gua",
+            "rd  una charcarera,",
+            "déjame que me vaya",
+            "que con ella muera,",
+            "déjame que me vaya",
+            "que con ella muera.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "a olvidarme tus besos,/n"
+            "Aunq",
+            "ue  me duele el alma,",
+            "tan solo pienso en irme, n",
+            "o  quiero andar mañana,",
+            "crucifica  triste.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "déjame que me vaya/n"
+            "El h",
+            "ueco  de tus manos, bla",
+            "nca  como el azúcar,",
+            "beb  los desengaños, p",
+            "rob  las amarguras, b",
+            "eb  los desengaños, p",
+            "rob  las amargura",
+            "s ",
+            "",
+            "/n"
         ],
         [
-            "a olvidarme tus be",
-            "sos."
+            "La miel q",
+            "ue  vos me diste no estab",
+            "a  hecha de flores, de algú",
+            "rencor hiciste la miel d",
+            "e  tus amores, de algún r",
+            "enco  hiciste la miel d",
+            "e tus amores. /n Siempre e",
+            "n  el corazón guardo u",
+            "na  charcarera, dé",
+            "jam  que me vaya qu",
+            "con ella muera, dé",
+            "jam  que me vaya qu",
+            "e  con ella muera."
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "1EOBAJzDTDU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Folklore"
     ],
-    "procesando": 0,
+    "procesando": 4,
     "audio_descargado": true,
-    "audio_path": "cancionesMP3/mercedes-sosa_dejame-que-me-vaya.mp3"
+    "audio_path": "cancionesMP3/mercedes-sosa_dejame-que-me-vaya.mp3",
+    "calidad": 1
 }

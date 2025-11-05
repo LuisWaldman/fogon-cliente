@@ -2,257 +2,227 @@
     "cancion": "el-maestro",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "C",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Em",
                     "A",
                     "Em",
-                    "C",
-                    "A",
                     "Em",
-                    "C",
-                    "A",
                     "Em",
-                    "C",
-                    "A",
-                    "Em",
-                    "C",
-                    "A",
                     "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "C",
+                    "C",
                     "D",
                     "G",
                     "Em",
-                    "Am",
-                    "D",
+                    "Em",
                     "G",
                     "Em",
                     "Am",
-                    "D",
-                    "Em",
-                    "C",
-                    "A",
-                    "Em",
-                    "C",
-                    "A",
-                    "Em",
-                    "C",
-                    "A",
-                    "Em",
-                    "C",
-                    "A",
-                    "Am",
-                    "D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "D",
-                    "G",
-                    "Em",
-                    "Am",
-                    "D",
-                    "Bm",
-                    "Am",
-                    "Bm",
-                    "Am",
-                    "Bm",
-                    "Am",
-                    "Bm",
                     "Am",
                     "G",
                     "Em",
-                    "C",
-                    "A",
                     "Am",
-                    "D",
+                    "G",
                     "G",
                     "Em",
-                    "Am",
-                    "D",
-                    "G",
                     "Em",
-                    "Am",
-                    "D",
-                    "G",
                     "Em",
-                    "Am",
-                    "D",
-                    "G",
                     "Em",
-                    "Am",
-                    "D",
-                    "G"
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "Una vez e",
-            "l viento m",
-            "s atronador/n"
-        ],
-        [
-            "Habitó d",
-            "entro de m",
-            "í/n"
-        ],
-        [
-            "Por esos t",
-            "iempos no pude ",
-            "escuchar mis ideas/n"
-        ],
-        [
-            "Tuve q",
-            "ue seguir las tu",
-            "yas/n"
-        ],
-        [
-            "Y si acaso p",
-            "odría creer en algo/n"
-        ],
-        [
-            "Me gustaría cree",
-            "r/n"
-        ],
-        [
-            "Que al pie de la montaña/n"
-        ],
-        [
-            "Hay alguien que me espera/n"
-        ],
-        [
-            "Para enseñarme a ver ",
-            "a través/n"
-        ],
-        [
-            "Para enseñarme a ve",
-            "r/n"
-        ],
-        [
-            "Un ave, u",
-            "n manto, pe",
-            "rla de terror/n"
-        ],
-        [
-            "Aull",
-            " dentro de m",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Mi perro l",
-            "azarillo me",
-            " abandonó/n"
+            "Una v",
+            "e  el reto m",
+            "ás  atronador hab",
+            "it  dentro de mí./n"
         ],
         [
-            "Tuve q",
-            "ue guiarme co",
-            "n tu voz/n"
+            "Por es",
+            "o  tiempos no pude escuch",
+            "a  mis ideas, tu",
+            "v  que seguirlas tu",
+            "yas  s",
+            "i  acaso podría veni",
+            "r  un amor, me gu",
+            "starí  creer/n"
         ],
         [
-            "Y si acaso p",
-            "odría creer en algo/n"
+            "Que alguien",
+            "e  la montaña, hay alg",
+            "uie que me espera /n Para e",
+            "nseñarm  ver",
+            "través, para",
+            "enseñarm  ver",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Me gustaría cree",
-            "r/n"
+            "Una v",
+            "ez  un manto,",
+            "perna perro,",
+            "aulló dentro de m",
+            "í /n Mi per",
+            "ro  la sarillo,",
+            "me agarró, t",
+            "uv  que guiarme con vo",
+            "s  s",
+            "i  acaso podría ven",
+            "i  un amor, me g",
+            "ustarí  creer/n"
         ],
         [
-            "Que al pie de la montaña/n"
-        ],
-        [
-            "Hay alguien que me espera/n"
-        ],
-        [
-            "Para enseñarme a ver ",
-            "a través/n"
-        ],
-        [
-            "Para enseñarme a ve",
-            "r/n"
-        ],
-        [
-            "Debo cambiar/n"
-        ],
-        [
-            "Necesito empezar algo nuevo/n"
-        ],
-        [
-            "Debo cambiar/n"
-        ],
-        [
-            "Necesito empezar hoy/n"
-        ],
-        [
-            "Debo cambiar/n"
-        ],
-        [
-            "Necesito empezar algo nuevo/n"
-        ],
-        [
-            "Debo cambiar/n"
-        ],
-        [
-            "Necesito empezar ho",
-            "y/n"
-        ],
-        [],
-        [
-            "Y si acaso p",
-            "odría creer en algo/n"
-        ],
-        [
-            "Me gustaría cree",
-            "r/n"
-        ],
-        [
-            "Que al pie de la montaña/n"
-        ],
-        [
-            "Hay alguien que me espera/n"
-        ],
-        [
-            "Para enseñarme a ver ",
-            "a través/n"
-        ],
-        [
-            "Y si acaso podr",
-            "a deberte algo/n"
-        ],
-        [
-            "Como un impuesto de f",
-            "e/n"
-        ],
-        [
-            "Sabría que no hay dinero ",
-            "para pagarte eso/n"
-        ],
-        [
-            "Tú me enseñaste a ver ",
-            "a través/n"
-        ],
-        [
-            "Tú me enseñaste a",
-            " ver, a ver quién",
-            " soy"
+            "Que alguien",
+            "e  la montaña, hay al",
+            "guie que me espera /n Para",
+            "enseñarm  ver",
+            "través, para",
+            "enseñarm  ver",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "si a",
+            "c",
+            "a",
+            "s",
+            "o",
+            "podría ven",
+            "i  un amor, me g",
+            "ustarí  cree",
+            "si acaso podría venir un amor, me gustaría creer /n En el p",
+            "i  de la montaña, hay a",
+            "lguie que me espera /n Par",
+            "a  enseñarme ver",
+            "través",
+            "si acaso podría deb",
+            "ert  algo, como",
+            "u  impuesto de f",
+            "e /n Sabe",
+            "r  que no hay dinero par",
+            "a  pagarte eso, tu m",
+            "e  enseñaste ver",
+            "través /n Tu m",
+            "e  enseñaste v",
+            "e  ver quien s",
+            "o ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hagkdcJT-xA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

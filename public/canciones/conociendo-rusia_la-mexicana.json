@@ -8,196 +8,442 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "B",
-                    "B7",
-                    "B",
                     "E",
-                    "E",
-                    "A",
                     "E",
                     "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
                     "A",
                     "E",
-                    "A",
-                    "F#7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "B7",
                     "E",
                     "E",
-                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "B7",
+                    "B7",
                     "B7",
                     "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
                     "E",
                     "A",
-                    "E",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "B",
                     "E",
-                    "E7",
-                    "A",
                     "E",
-                    "A",
-                    "F#7",
-                    "B",
-                    "A",
                     "E",
-                    "A",
-                    "F#",
-                    "B",
                     "E",
-                    "A",
                     "E",
-                    "A",
-                    "F#",
-                    "B",
-                    "A",
                     "E",
-                    "A",
-                    "F#7",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
                     "E"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            "días me dijiste yo te quiero/nAl tercero te olvidabas de mi"
+            "En ",
+            "dos días me ",
+            "dijiste yo te ",
+            "quiero. /n"
         ],
         [
+            "Al tercero ",
+            "te olvidabas de ",
+            "mí. \n\nVos ",
+            "probabas s",
+            "uerte en otro ca",
+            "ballero. /n"
+        ],
+        [
+            "Yo buscaba ",
+            "nuevamente  so",
+            "nreír. /n"
+        ],
+        [
+            "Con tu acento b",
+            "ien picante me ",
+            "entretengo.  /n"
+        ],
+        [
+            "Con tus ojos ",
+            "tan brillantes me ",
+            "perdí. /n"
+        ],
+        [
+            "Sé que todo ",
+            "lo más lindo de ",
+            "este mundo ",
+            "por un ra",
+            "to lo quisimos c",
+            "ompartir. /n"
+        ],
+        [
+            "Nada ",
+            "más qu",
+            "iero ver ",
+            "cóm",
+            "o salimos en ",
+            "la foto",
+            ". \n\nNada ",
+            "más ",
+            "quiero  ",
+            "ver ",
+            "dónd ",
+            "vas ",
+            "",
+            "ir. ",
             "/n"
         ],
         [
-            "Vos probabas suerte en otro caballero/n"
+            "En dos hor",
+            "as dimos vueltas por ",
+            "el mundo. /n"
         ],
         [
-            "Yo buscaba nuevamente sonreir",
+            "Camin",
+            "ábamos las calles ",
+            "de \n\nMadrid. /n"
+        ],
+        [
+            "No que",
+            "ríamos casarnos ",
+            "en un temp",
+            "lo. \n\nSolame",
+            "nte emborracharnos ",
+            "hasta  el fin. /n"
+        ],
+        [
+            "Nadie  pu",
+            "ede descubrir nue",
+            "stro secreto ",
+            "nena. /n"
+        ],
+        [
+            "Quiero verte ",
+            "sonre",
+            "ír. \n\nEsc",
+            "apémonos hasta lo ",
+            "más profundo. \n\nD",
+            "onde s",
+            "olo nos podam",
+            "os di",
+            "ver",
+            "tir/n"
+        ],
+        [
+            "Nada ",
+            "más quie",
+            "ro ver ",
+            "cómo ",
+            "salimos  en la ",
+            "foto. \n\nN",
+            "ada ",
+            "más qui",
+            "ero ver",
+            "te ",
+            "ti. /n"
+        ],
+        [
+            "Nada  más ",
+            "quiero ",
+            "ver c",
+            "ómo salim",
+            "os en la fo",
+            "to. \n\nNa",
+            "da más ",
+            "quiero ",
+            "ver ",
+            "dón",
+            "de vas ",
+            "",
+            "ir. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Con tu acento bien picante me entretengo/nCon tus ojos tan brillantes me perd"
+            "Na",
+            "da más ",
+            "quiero ",
+            "ver c",
+            "ómo sal",
+            "imos en la f",
+            "oto. \n\nN",
+            "ada más ",
+            "quiero ",
+            "verte  ",
+            "ti. /n"
         ],
         [
-            "í/nSe que todo lo más lindo de este"
-        ],
-        [
-            " mundo/nPor un "
-        ],
-        [
-            "rato lo quisimos compartir",
+            "N",
+            "ada más ",
+            "quiero ",
+            "ver có",
+            "mo salimos ",
+            "en la foto",
+            ". \n\nNad",
+            "a más ",
+            "quiero ",
+            "ver ",
+            "dónd ",
+            "vas ",
+            "",
+            "",
+            "",
+            "",
+            "ir. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Nada más/n"
-        ],
-        [
-            "cómo salimos en la foto/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "quiero ver/n"
-        ],
-        [
-            "Adonde vas a i",
-            "r/n"
-        ],
-        [
-            "En dos horas dimos vueltas por el mundo/nCaminabamos las calles de Madrid"
-        ],
-        [
-            "/n"
-        ],
-        [
-            "No queríamos casarnos en un templo/n"
-        ],
-        [
-            "Solamente emborracharnos hasta el fin",
-            "/nNena, quiero verte sonrei"
-        ],
-        [
-            "r/nEscapemonos hasta lo más"
-        ],
-        [
-            " profundo/nDonde "
-        ],
-        [
-            "solo nos podamos diverti",
-            "r",
-            "/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "cómo salimos en la foto/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "quiero verte a ti",
-            "/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "cómo salimos en la foto/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "quiero ver/n"
-        ],
-        [
-            "Adonde vas a ir",
-            "/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "cómo salimos en la foto/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "quiero verte a t",
-            "i/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "cómo salimos en la foto/n"
-        ],
-        [
-            "Nada más/n"
-        ],
-        [
-            "quiero ver/n"
-        ],
-        [
-            "Adonde vas a i",
-            "r"
+            "Nada más quiero ver cómo salimos en la foto. "
         ]
     ],
-    "bpm": 80,
+    "bpm": 161,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "fULvI1C5ia4",
-            "delay": 0
+            "delay": 7000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

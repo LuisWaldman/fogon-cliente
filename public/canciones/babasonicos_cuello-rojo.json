@@ -2,46 +2,108 @@
     "cancion": "cuello-rojo",
     "banda": "babasonicos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "Em",
                     "C",
-                    "E"
+                    "Am",
+                    "Am",
+                    "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "F",
                     "E",
+                    "Em",
                     "C",
                     "E",
-                    "G",
-                    "G",
-                    "G"
+                    "Am",
+                    "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Am",
-                    "F",
-                    "C",
-                    "G"
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "E",
-                    "G",
-                    "G"
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "Am Em",
+                    "Am Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "Am",
+                    "F",
+                    "Am",
+                    "F",
+                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "Em",
+                    "E",
+                    "E"
                 ]
             }
         ],
@@ -49,151 +111,97 @@
             0,
             1,
             2,
-            2,
-            0,
-            1,
-            2,
-            2,
             3,
-            3,
-            0,
-            1,
-            2,
-            2,
-            0,
-            1
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Mi proceder es p",
-            "oco probable/n"
-        ],
-        [
-            "Y mi destino es ser ",
-            "un bandido/n"
-        ],
-        [
-            "Señor juez ",
-            "soy culpable/n"
-        ],
-        [
-            "Solo llegue e hice b",
-            "ang, ban",
-            "g, bang",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Has conseg",
-            "uido verme un poc",
-            "o más norm",
-            "al/n"
+            "M",
+            "i  proceder no es poco probable,",
+            "mi destino es ser un bandid",
+            "o /n Señor juez, soy culpable,",
+            "solo llegué hice bang, bang, bang.",
+            "¿Has conseguido verme un",
+            "poc  más normal?",
+            "¿O es solo que he aprendido",
+            "actuar frente vos?",
+            "",
+            "",
+            "/n"
         ],
         [
-            "O es solo q",
-            "ue he aprendido a act",
-            "uar frente a vo",
-            "s/n"
+            "M",
+            "e  eduqué en la intolerancia,",
+            "yo no elegí estar maldit",
+            "o /n Señor juez, soy culpable,",
+            "me enoje hice crack, crack, crack.",
+            "¿Has conseguido verme un",
+            "poc  más normal?",
+            "¿O es solo que he aprendido",
+            "actuar frente vos?",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Me eduque en la int",
-            "olerancia/n"
+            "Cuello rojo renegad",
+            "o  cuello rojo bang, bang./n"
         ],
         [
-            "Yo no elegí estar",
-            " maldito/n"
+            "Cuell  rojo renegado",
+            "cuello rojo bang, bang/n"
         ],
         [
-            "Señor juez ",
-            "soy culpable/n"
+            "Señor juez, no estoy seguro q",
+            "u  sea la última vez que lo haga.",
+            "",
+            "/n"
         ],
         [
-            "Me enoje e hice c",
-            "lack, cla",
-            "ck, clac",
-            "k/n"
+            "Mi situación es sujetable,",
+            "porque las claras no encajo en esto./n"
         ],
         [
-            "Has conseg",
-            "uido verme un poc",
-            "o más norm",
-            "al/n"
+            "Condérenme la silla eléctrica,",
+            "quiero escuchar ese trick, trick, trick.",
+            "¿Has conseguido verme un p",
+            "oco  más normal?",
+            "¿O es solo que he aprendido",
+            "actua  frente vos?",
+            "¿Has conseguido verme un p",
+            "oco  más normal?",
+            "¿O es solo que he aprendido a",
+            "ctua  frente vos?/n"
         ],
         [
-            "O es solo q",
-            "ue he aprendido a act",
-            "uar frente a vo",
-            "s/n"
-        ],
-        [
-            "Cuello rojo, renegado/nCuello rojo, "
-        ],
-        [
-            "bang, ",
-            "bang x2/n"
-        ],
-        [
-            "Señor juez no estoy seguro/nQue sea la última ve"
-        ],
-        [
-            "z que ",
-            "lo haga x2/n"
-        ],
-        [
-            "Mi situación es ",
-            "objetable/n"
-        ],
-        [
-            "Porque a las claras no en",
-            "cajo en esto/n"
-        ],
-        [
-            "Condéneme a l",
-            "a silla eléctrica/n"
-        ],
-        [
-            "Quiero escuchar ese tr",
-            "ick, tric",
-            "k, trick",
-            "./n"
-        ],
-        [
-            "Has conseg",
-            "uido verme un poc",
-            "o más norm",
-            "al/n"
-        ],
-        [
-            "O es solo q",
-            "ue he aprendido a act",
-            "uar frente a vo",
-            "s  [x2]/n"
-        ],
-        [
-            "Mi condición es r",
-            "eprochable/n"
-        ],
-        [
-            "Más que ando suelto",
-            " por ahí/n"
-        ],
-        [
-            "Un día de estos ",
-            "aparezco/n"
-        ],
-        [
-            "Escucharas un kn",
-            "ock, kn",
-            "ock, kn",
-            "ock."
+            "Mi condición es reprochable,",
+            "mascando suelto por ahí. /n U",
+            "n  día de estos aparezco,",
+            "escucharás un knock, knock, knock."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "YQ--UCby6Ig",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

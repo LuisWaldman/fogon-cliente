@@ -2,94 +2,339 @@
     "cancion": "d-generacion",
     "banda": "babasonicos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
-                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "D",
                     "A",
-                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
                     "A",
                     "E",
                     "A",
-                    "E",
                     "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
                     "D",
-                    "E"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "E",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Olvídate/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ya paso/n"
+            "Est",
+            "a  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "no es así lo que m",
-            "e pasa/n"
+            "Oblídate,",
+            "ya pasó",
+            ",  no sé s",
+            "lo que le pasa /n S",
+            "ol  río, hoy n",
+            "o  pienso en nada",
+            "al infierno no me se v",
+            "a  ni apretar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "solo río/nno pienso en "
+            "Resumase,",
+            "ya salió,",
+            "vos sabes muy bien que n",
+            "o se agarra /n F",
+            "antasía  sones va",
+            "n  mezcladas en canciones que",
+            "aprendí en la",
+            "primaria /n Porque",
+            "mi generación no l",
+            "e importa tu opinión /n Porque",
+            "mi generación algo l",
+            "e pasa /n Porque",
+            "mi generación hoy s",
+            "e caga en tu opinión /n Porque",
+            "mi generación algo l",
+            "e  pas",
+            "/n"
         ],
         [
-            "nada/ny al inf"
+            "Oblídate  ya p",
+            "asó,  no s",
+            "é  si lo que le",
+            "pas /n Solo",
+            "río  hoy no piens",
+            "o  en nada al",
+            "infiern  no me se va ni ap",
+            "reta ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ierno no me llevan ni a p",
-            "atadas/npor que a m"
+            "Resumate, y",
+            "a  salió, vo",
+            "s  sabes muy bien que no s",
+            "e agarra /n Fa",
+            "ntasía  sones van me",
+            "zclada  en canciones que a",
+            "prend  en la pr",
+            "imari /n Porque",
+            "mi generación no le",
+            "importa tu opinión /n Porque m",
+            "i  generación algo le p",
+            "asa /n Porque m",
+            "i  generación hoy se ca",
+            "ga en tu opinión /n Porque m",
+            "i  generación algo le",
+            "pas ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "i generación/nno le import"
+            "Porqu",
+            "mi gener",
+            "ació /n Po",
+            "rqu  mi gene",
+            "ració /n Por",
+            "que  mi g",
+            "enera",
+            "ci /n Porque mi ge",
+            "neració /n Porque mi generación no le importa",
+            "tu opinión /n Porque mi",
+            "generació  algo le p",
+            "as /n Porque mi g",
+            "eneració  hoy se caga e",
+            "n tu opinión /n Porque mi g",
+            "eneració  algo le pa",
+            "s /n Porque mi g",
+            "eneració  no le importa t",
+            "u opinión /n Porque mi g",
+            "eneració  algo le pasa/n"
         ],
         [
-            "a tu opinión/npor que a "
+            "Porque mi g",
+            "eneració  hoy se caga e",
+            "n tu opinión /n Porque mi g",
+            "eneració  algo le p",
+            "asa ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "mi generación/nalgo le pa"
-        ],
-        [
-            "sa/npor mi gen"
-        ],
-        [
-            "eración/nhoy se cag"
-        ],
-        [
-            "a en tu opinión/npor que a "
-        ],
-        [
-            "mi generación/nalgo le "
-        ],
-        [
-            "pasa",
+            "A",
+            "h ",
             ""
         ]
     ],
@@ -97,8 +342,10 @@
         {
             "tipo": "Youtube",
             "id": "lo4t2bt2F78",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

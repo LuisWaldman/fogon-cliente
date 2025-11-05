@@ -2,53 +2,175 @@
     "cancion": "el-loco",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "C#m",
-                    "F#m",
-                    "C#m",
-                    "Bm",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C#m",
-                    "F#m",
-                    "C#m",
                     "Bm",
-                    "A",
-                    "D"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Dm",
-                    "F#m",
-                    "Bm",
-                    "G",
                     "A",
-                    "D",
-                    "D4",
-                    "D"
+                    "C#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "A",
-                    "Am/G",
                     "A",
-                    "Am/G"
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "C#m",
+                    "C#m",
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "Dm",
+                    "C#m",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
@@ -56,136 +178,150 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
             3,
-            3,
-            3,
-            0
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "oy victima de un di",
-            "os/nFrágil, tempe"
-        ],
-        [
-            "ramental/nPor m"
-        ],
-        [
-            "i/nSe fu"
-        ],
-        [
-            "e a bailar/nSe fue a la disco de un lug"
-        ],
-        [
-            "ar/nQuizo mi disfr"
-        ],
-        [
-            "az/nVivir como "
-        ],
-        [
-            "un mortal/nComo no logro, mat"
-        ],
-        [
-            "arme/nMe r"
-        ],
-        [
-            "egalo, una visión particul",
-            "ar/n"
-        ],
-        [],
-        [
-            "  Volutas de hu",
-            "mo/nTitilo a su encu"
-        ],
-        [
-            "entro",
-            "/n"
-        ],
-        [
-            "  Siento el fulgo",
-            "r/nY quiero entr"
-        ],
-        [
-            "ar",
             "",
-            "/nS"
-        ],
-        [
-            "oy victima de un dio",
-            "s/nDíscolo y muy "
-        ],
-        [
-            "singular/nMe arr"
-        ],
-        [
-            "ebato a  mi",
-            " mujer/nY la interno en un lupan"
-        ],
-        [
-            "ar/nQue él administ"
-        ],
-        [
-            "ro/nComo chulo, un gr"
-        ],
-        [
-            "an señor/nY llego hasta el fin, de c"
-        ],
-        [
-            "onfundir/nSu imp"
-        ],
-        [
-            "unidad, se creyó omnisci",
-            "ente/n"
-        ],
-        [],
-        [
-            "  Volutas de hu",
-            "mo/nTitilo a su encu"
-        ],
-        [
-            "entro",
-            "/n"
-        ],
-        [
-            "  Siento el fulgo",
-            "r/nY quiero entr"
-        ],
-        [
-            "ar",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
-        [],
         [
-            "  Lo regala",
-            "do es mío y se acabo/n"
+            "So",
+            "y  víctima de un d",
+            "ios  frágil tempe",
+            "ramenta /n"
         ],
         [
-            "  No lo devue",
-            "lvo/n"
+            "Que en vez de",
+            "reza  por m",
+            "í  se fue",
+            "bailar, s",
+            "e  fue al disco del luga/n"
         ],
         [
-            "  Lo regalado es mío y se acabo/n  No lo devuelvo"
+            "Quiso mi dif",
+            "és  vivir como un",
+            "mortal/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Como no",
+            "logr  mat",
+            "arm  me r",
+            "egal  un",
+            "a  visión partic",
+            "ula ",
+            "/n"
+        ],
+        [
+            "Voluntas de h",
+            "um  titiloso enc",
+            "uentr  ag",
+            "u /n F",
+            "ient  el jugo",
+            "quiero ent",
+            "ra /n"
+        ],
+        [
+            "So",
+            "y  víctima de un d",
+            "io  discólogo si",
+            "ngular /n"
+        ],
+        [
+            "Que su antojo",
+            "fie  me ar",
+            "rebat  mi m",
+            "ujer ",
+            "la interna en un grupo anar",
+            "a  que la adminis",
+            "tr  como chulo gran se",
+            "ñor ",
+            "llevo hasta e",
+            "l  fin de co",
+            "nfundi  su impu",
+            "nida /n S",
+            "e  creyó en mi sie",
+            "nt /n"
+        ],
+        [
+            "C",
+            "om no logró matarme me regaló una visión particular /n Voluntas de h",
+            "um  titiloso enc",
+            "uentr  ag",
+            "u /n"
+        ],
+        [
+            "Fiento el jugo",
+            "quiero ent",
+            "ra ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me regaló u",
+            "na  visión particular/n"
+        ],
+        [
+            "Volunta  de h",
+            "um  titiloso/n"
+        ],
+        [
+            "Me regal",
+            "ó  una visión particular",
+            "/n"
+        ],
+        [
+            "Voluntas de humo t",
+            "itilos /n Me regal",
+            "ó  una visión particular",
+            "",
+            "/n"
+        ],
+        [
+            "Volunta  de h",
+            "umo ",
+            "titilos /n"
+        ],
+        [
+            "Qu  en vez de",
+            "reza  por m",
+            "í  se fue b",
+            "aila ",
+            "la discól",
+            "og ",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "a2cKv33Gkks",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

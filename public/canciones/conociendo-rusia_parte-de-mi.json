@@ -8,163 +8,433 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "Am",
+                    "Bb",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "Bb",
-                    "F",
-                    "Ab",
-                    "Bb",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
                     "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Ab",
                     "Gm7",
                     "G",
-                    "F",
-                    "Ab",
-                    "Bb",
-                    "C",
-                    "Gm",
                     "G",
-                    "F",
-                    "Ab",
+                    "G",
+                    "G",
                     "Bb",
-                    "F7M",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "C7M",
+                    "C7M",
                     "C7M",
                     "Am",
                     "F",
-                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
                     "F",
                     "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "F",
                     "C",
-                    "F",
                     "C",
-                    "F",
-                    "D",
-                    "G",
                     "C",
-                    "Bb",
-                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "Ab",
+                    "Ab",
+                    "Bb",
                     "Bb",
                     "C",
                     "Gm7",
+                    "Gm7",
                     "Gm",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Ab",
                     "F",
-                    "Ab",
-                    "Bb",
-                    "C",
-                    "Ab",
                     "F",
-                    "Ab",
-                    "F#m",
-                    "F7M",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
                     "C7M",
-                    "F7M",
+                    "C7M",
+                    "C7M"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C7M",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C7M",
                     "G",
-                    "C",
-                    "C7",
-                    "F",
-                    "C",
-                    "C7",
-                    "F",
-                    "C",
-                    "F",
-                    "D7",
                     "G",
-                    "C",
-                    "Bb",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
                     "F",
-                    "Ab",
-                    "C",
-                    "Bb",
                     "F",
-                    "Ab",
-                    "Bb",
-                    "C",
-                    "C7",
+                    "C7M",
+                    "C7M",
                     "F",
-                    "F7",
-                    "C",
-                    "C7",
-                    "F",
-                    "C",
-                    "C7",
-                    "F",
-                    "C",
-                    "C7",
-                    "F",
-                    "C",
-                    "C7",
                     "F",
                     "C",
-                    "C7",
-                    "F",
                     "C",
                     "F",
-                    "D7",
-                    "D"
+                    "F",
+                    "C7M",
+                    "C7M",
+                    "F",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "C7M",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M",
+                    "C7M"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
         ]
     },
     "letras": [
-        [],
         [
-            "Esto es nuevo para mí/n"
-        ],
-        [
-            "Nunca me sent",
-            " así/n"
-        ],
-        [
-            "Voy por el cielo/n"
-        ],
-        [
-            "Flotando lento",
-            "/nBa"
-        ],
-        [
-            "ilemos hasta el final/n"
-        ],
-        [
-            "Esto no termi",
-            "na mal/n"
-        ],
-        [
-            "¿Dónde estuviste ",
-            "todo este tiem",
-            "po?/n"
-        ],
-        [
-            "Vamos y v",
-            "enimos",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Bajamos y subi",
-            "mos",
-            "/nSólo "
+            "E",
+            "sta es una canción en espa",
+            "ñol de rock argentino. /n"
         ],
         [
-            "sé que ya sos p",
-            "arte de mí/nSólo "
+            "E",
+            "sto es nuevo ",
+            "para  mí /n"
         ],
         [
-            "sé que ya sos par",
-            "te/nSólo "
+            "Nunca me s",
+            "entí así /n"
         ],
         [
-            "sé que ya sos ",
+            "Voy por el ",
+            "cielo  /n"
+        ],
+        [
+            "Flotando l",
+            "ento /n"
+        ],
+        [
+            "Bailemo ",
+            "hasta el final \n\nE",
+            "sto no ",
+            "termina mal ",
+            "¿\nDónde  est",
+            "uviste? \n\nT",
+            "odo este ",
+            "tiempo  /n"
+        ],
+        [
+            "V",
+            "amos ",
+            "veni",
+            "mos ",
+            "/n"
+        ],
+        [
+            "Bajamos ",
+            "subi",
+            "mos \n\nSo",
+            "lo sé ",
+            "que ya sos ",
             "parte de ",
-            "mí/nYa no qu"
+            "mí \n\nSo",
+            "lo sé ",
+            "que ya sos ",
+            "parte /n"
         ],
         [
-            "eda más nada nada que pensar/n[Verso]"
+            "Sol",
+            "o sé ",
+            "que ya ",
+            "sos parte de ",
+            "",
+            "mí /n"
         ],
         [
+            "Ya no queda más n",
+            "ada, nada que pensa ",
+            "",
+            "",
+            "",
             "",
             "",
             "",
@@ -172,112 +442,174 @@
             "/n"
         ],
         [
-            "Nada tengo que perder ",
-            "me subí/nAl úl"
+            "Nada t",
+            "engo que per",
+            "der \n\nMe su",
+            "bí al último t",
+            "ren \n\nVoy co",
+            "mo un loc",
+            "o \n\nEn ",
+            "el desierto ",
+            "ya sé que ",
+            "ya lo dije otra ",
+            "vez \n\nPero hay cosas ",
+            "que no cam",
+            "bian \n\nVoy por el cielo /n"
         ],
         [
-            "timo tren/n"
-        ],
-        [
-            "Voy como un loco/n"
-        ],
-        [
-            "En el desiert",
-            "o/nY ya s"
-        ],
-        [
-            "é que ya lo dije otra vez/nPero hay c"
-        ],
-        [
-            "osas que no cambian/n"
-        ],
-        [
-            "Voy a dеsaparecer esta noc",
-            "hе",
+            "Voy desapar",
+            "ecer esta n",
+            "oche ",
             "/n"
         ],
         [
-            "Vamos y v",
-            "enimos/n"
+            "Vamo",
+            "s v",
+            "eni",
+            "mos /n"
         ],
         [
-            "Bajamos y su",
-            "bimos/nSólo "
+            "Bajam",
+            "os su",
+            "bimo/n"
         ],
         [
-            "sé que ",
+            "Solo sé ",
+            "que ya ",
+            "sos part",
+            "e de mí /n"
+        ],
+        [
+            "Solo  sé ",
+            "que ya ",
+            "sos parte /n"
+        ],
+        [
+            "S",
+            "olo sé ",
+            "que ",
             "ya sos par",
-            "te de mí/nSólo "
-        ],
-        [
-            "sé que",
-            " ya sos part",
-            "e/nSólo "
-        ],
-        [
-            "sé que ya sos pa",
-            "rte de ",
-            "mí/nY no qu"
-        ],
-        [
-            "eda más nada nada que pensar/nAl final siempre sabemos lo que va a pasar, o"
-        ],
-        [
-            "h-oh/n"
-        ],
-        [
-            "Sos parte",
+            "te de ",
+            "mí ",
+            "no qued ",
+            "más nada, nada que p",
+            "ensar \n\nAl final si",
+            "empre sabemos lo que va ",
+            "pasar ",
             "",
             "",
-            "/nSos part"
-        ],
-        [
-            "e, mm",
             "/n"
         ],
-        [],
         [
+            "Sos pa",
+            "rte ",
             "",
             "",
             "",
-            "/nSólo "
+            "/n"
         ],
         [
-            "sé que",
-            " ya sos pa",
-            "rte de mí/nSólo "
+            "Sos ",
+            "parte ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "sé que",
-            " ya sos pa",
-            "rte/nSólo "
+            "Solo ",
+            "sé que ",
+            "ya sos ",
+            "parte de ",
+            "mí \n\nSolo ",
+            "sé que ",
+            "ya sos p",
+            "arte \n\nS",
+            "olo ",
+            "sé que ",
+            "ya sos ",
+            "parte de ",
+            "mí \n\nSolo ",
+            "sé que ",
+            "ya sos p",
+            "arte /n"
         ],
         [
-            "sé que",
-            " ya sos pa",
-            "rte de mí/nSólo "
+            "Solo  ",
+            "sé que ",
+            "ya sos ",
+            "parte de ",
+            "mí ",
+            "",
+            "/n"
         ],
         [
-            "sé que",
-            " ya sos pa",
-            "rte, ah/nSólo "
+            "De ",
+            "mí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "sé que ya sos p",
-            "arte de ",
-            "mí, uh/nDe m"
+            "Solo sé ",
+            "que ",
+            "ya sos parte de mí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            ""
+            "Solo sé que ya sos parte de mí "
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "mhfoBPTUYzE",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

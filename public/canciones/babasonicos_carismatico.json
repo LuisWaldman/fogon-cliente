@@ -2,129 +2,281 @@
     "cancion": "carismatico",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm Em",
+                    "Bm Em",
+                    "Bm Em",
+                    "Bm",
+                    "Bm Em",
+                    "Bm Em",
+                    "Bm Em",
+                    "Bm Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
                     "Bm",
                     "G",
-                    "F#m",
+                    "G",
                     "G",
                     "F#m",
-                    "G",
-                    "F#m"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
                     "Bm",
                     "D",
-                    "E",
-                    "G"
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Bm",
+                    "D",
+                    "Em",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "G",
+                    "Bm",
+                    "D",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
         [
-            "Me pareció ver dos",
-            " payasos/nCon cara d"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "e susto cerrando e",
-            "l local/nDisim"
+            "Me pareció v",
+            "e  dos payasos con c",
+            "ar  de susto cerr",
+            "and  el local,",
+            "disímulas llevan l",
+            "o  trajes puestos,",
+            "van para el circo buscar l",
+            "os  camellos./n"
         ],
         [
-            "ula, llevan los tra",
-            "jes puestos/nVan para el circo a"
+            "Cosen un poquito",
+            "espantado  salido",
+            "s  de un cuadro que se está po",
+            "r  borrar,",
+            "disímul  que están muy",
+            "transpirado ",
+            "llevan un balde con papel p",
+            "icado. /n"
         ],
         [
-            " buscar los camel",
-            "los/n"
+            "Tengo que a",
+            "prende  fingi",
+            "r  más n",
+            "o  mostrar lo que siento./n"
         ],
         [
-            "Lucen un poquito espant",
-            "ados/nSalidos de un cu"
+            "Tengo que a",
+            "prende  fingir",
+            "má  p",
+            "ilotea lo que pienso. /n T",
+            "rat  de acércarme una",
+            "puert  escucho un e",
+            "njambr  de mosca si",
+            "lbara  dis",
+            "ímul  están zumbando mi n",
+            "ombre,  debemos",
+            "irnos no sé por",
+            "dónde /n Te",
+            "ng  que apren",
+            "de  fingir m",
+            "á  no mostra",
+            "r  lo que siento./n"
         ],
         [
-            "adro que se esta por bor",
-            "rar/nDisimu"
+            "Tengo que apren",
+            "de  fingir m",
+            "á  pilotea",
+            "lo que pienso.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "lá, que estan muy transpir",
-            "ados/nLlevan un bal"
+            "Ten",
+            "g  que aprender",
+            "fingir más",
+            "no mostrar lo q",
+            "u siento. /n Teng",
+            "o  que aprende",
+            "fingir más",
+            "pilotear lo qu",
+            "e pienso. /n Ten",
+            "g  que aprender",
+            "fingir má",
+            "no mostrar lo que",
+            "siento /n Tengo q",
+            "ue  aprender",
+            "fingir más",
+            "pilotear lo que",
+            "pienso",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "de con papel pic",
-            "ado/n"
+            "Tengo que",
+            "aprende  f",
+            "ingi  m",
+            "á ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "pilotea  lo que pienso.",
+            "",
+            "/n"
         ],
         [
-            "Tengo que ap",
-            "render a fingi",
-            "r más/nY a no mo"
-        ],
-        [
-            "strar lo que siento/n"
-        ],
-        [
-            "Tengo que aprende",
-            "r a fingir má",
-            "s/nY a pilote"
-        ],
-        [
-            "ar lo que pienso/n"
-        ],
-        [
-            "Trato de acercarme a un",
-            "a puerta/nY escuho un enja"
-        ],
-        [
-            "mbre de moscas silbar",
-            "/nDisimul"
-        ],
-        [
-            "à estan zumbando mi n",
-            "ombre/nDebemos"
-        ],
-        [
-            " irnos y no sé por d",
-            "nde/n"
-        ],
-        [
-            "Tengo que ap",
-            "render a fingi",
-            "r más/nY a no mo"
-        ],
-        [
-            "strar lo que siento/nTengo que aprender a fingir más"
-        ],
-        [],
-        [],
-        [],
-        []
+            "Tengo que aprender fingir más no mostrar lo que siento."
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Pmp08j843p0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

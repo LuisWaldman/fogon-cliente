@@ -2,135 +2,444 @@
     "cancion": "el-ringo",
     "banda": "babasonicos",
     "escala": "D#",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D#",
                     "Cm",
-                    "Gm",
-                    "Fm",
-                    "A#"
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "D#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D#",
+                    "D#",
                     "G#",
-                    "A#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G#",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Fm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
                     "Gm",
                     "Cm",
                     "Fm",
-                    "A#",
+                    "Fm",
+                    "Fm",
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "D#",
                     "D#"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Cm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D#",
+                    "Cm",
+                    "Cm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
-            0,
-            0,
-            0,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Fiebr",
-            "e de Sa",
-            "ndra,",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "con su h",
-            "alo en",
-            "canta,",
+            "Fie",
+            "br  d",
+            "sand",
+            "r ",
             "",
             "/n"
         ],
         [
-            "fin de un l",
-            "argo vi",
-            "aje,",
+            "Co",
+            "n  su b",
+            "al,",
+            "lo e",
+            "nca",
+            "nta",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "suave at",
-            "erriza",
-            "je,",
+            "Indul",
+            "ga  tu v",
+            "ia",
+            "j ",
+            "",
             "",
             "/n"
         ],
         [
-            "  el rel",
-            "oj atra",
-            "sa,",
-            "/n"
+            "Suav",
+            "e  t",
+            "e  risa e",
+            "l  j",
+            "e",
+            "f/n"
         ],
         [
-            "hora de volv",
-            "er a ca",
-            "sa./n"
+            "E",
+            "l",
+            "re",
+            "lo",
+            "j  a",
+            "tr",
+            "as",
+            "a /n"
         ],
         [
-            "Ring",
-            "o la du",
-            "erme,",
+            "Ho",
+            "r  de",
+            "vol",
+            "v ",
+            "c",
+            "as ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "con pal",
-            "abras te",
-            "nues,",
+            "Ri",
+            "nd  l",
+            "a  du",
+            "er",
+            "m ",
+            "",
             "",
             "/n"
         ],
         [
-            "Sandr",
-            "a desca",
-            "nsa,",
+            "Con",
+            "palabras",
+            "de nu",
+            "estr",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "ella e",
-            "s   ",
-            "cautiva de ",
-            "su voz,",
+            "S",
+            "andra, ",
+            "descans ",
+            "",
+            "",
             "/n"
         ],
         [
-            "  no existe adi",
-            "ós,/n"
+            "El",
+            "l  e",
+            "s  cau",
+            "tiv  d",
+            "e  su v",
+            "o /n"
         ],
         [
-            "  entre nosotr",
-            "os dos,/n"
+            "Ex",
+            "ist /n D",
+            "i",
+            "o",
+            "entre",
+            "nosotr",
+            "do",
+            "s /n B",
+            "aj  l",
+            "a  p",
+            "ie",
+            "de s",
+            "an",
+            "dr",
+            "",
+            "/n"
         ],
         [
-            "  bajo la fi",
-            "ebre de San",
-            "dra."
+            "Exist/n"
+        ],
+        [
+            "D",
+            "i",
+            "o  e",
+            "ntre  n",
+            "osotro ",
+            "do/n"
+        ],
+        [
+            "Ba",
+            "j  l",
+            "a  pi",
+            "e  de",
+            "sa",
+            "nd",
+            "r ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "B",
+            "aj  l",
+            "a  piel de sandra"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Iy7lTUfFnD0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

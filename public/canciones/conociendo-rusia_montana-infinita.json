@@ -8,222 +8,453 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "D",
                     "D",
-                    "Em7",
-                    "D/F#",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "G",
-                    "A7",
                     "G",
-                    "D/F#",
-                    "Em7",
-                    "D",
-                    "A",
-                    "D",
-                    "D",
-                    "Em7",
-                    "D/F#",
-                    "G",
-                    "A7",
-                    "G",
-                    "D/F#",
-                    "Em7",
-                    "D",
-                    "A",
-                    "Em",
-                    "A7",
-                    "Em",
-                    "A7",
-                    "Em",
-                    "A7",
-                    "Gm6",
-                    "Dmaj7",
-                    "Bm7",
-                    "G",
-                    "Dmaj7",
-                    "Bm7",
-                    "G",
-                    "Dmaj7",
-                    "Bm7",
-                    "G",
-                    "Bm7",
-                    "E7",
-                    "Bm7",
-                    "E7",
-                    "Gm6",
-                    "D",
-                    "A7",
-                    "D",
-                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "A7",
                     "A7",
-                    "G",
-                    "D/F#",
-                    "Em7",
-                    "D",
-                    "A",
-                    "Dmaj7",
-                    "Bm7",
-                    "G",
-                    "Dmaj7",
-                    "Bm7",
-                    "G",
-                    "Dmaj7",
-                    "Bm7",
-                    "G",
-                    "Bm7",
-                    "E7",
-                    "Bm7",
-                    "E7",
-                    "Gm6",
-                    "D",
                     "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "A7",
+                    "A7",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A7",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Gm6",
+                    "Gm6",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Gm6",
+                    "Dmaj7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bm7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gm6",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "Gm6",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A7",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Gm6",
+                    "Gm6",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Gm6",
+                    "Dmaj7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Em",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Gm6",
+                    "Gm6",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Bm7",
+                    "Em",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6",
+                    "Gm6"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Gm6"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
         ]
     },
     "letras": [
         [
-            "Tengo en mi miente una duda",
+            "Tengo en mi me",
+            "nte una du",
+            "da /n"
+        ],
+        [
+            "Ya no sé c",
+            "ómo dec",
+            "irte /n"
+        ],
+        [
+            "Loco, su",
+            "eño desve",
+            "stirte /n"
+        ],
+        [
+            "Esta  es ",
+            "mi verdad más c",
+            "ruda ",
+            "/n"
+        ],
+        [
+            "Si nec",
+            "esitas ayuda /n"
+        ],
+        [
+            "A",
+            "unque no ",
+            "sea lo m",
+            "ismo /n"
+        ],
+        [
+            "Olvide",
+            "mos lo que fu",
+            "imos ",
+            "espero ",
+            "que estemos ju",
+            "ntos /n"
+        ],
+        [
+            "Pasan los ",
+            "días, no qu",
+            "iero salir \n\nQ",
+            "uédate en ",
+            "casa por ",
+            "est",
+            "a noche /n"
+        ],
+        [
+            "Tu ",
+            "corazón e",
+            "stá aquí /n"
+        ],
+        [
+            "Lo ",
+            "olvidaste en ",
+            "el jardín /n"
+        ],
+        [
+            "P",
+            "arece que ",
+            "terminó ",
+            "todo lo que ",
+            "dije \n\nFue ",
+            "porque  te quiero /n"
+        ],
+        [
+            "La vida es ",
+            "un juego /n"
+        ],
+        [
+            "No ",
+            "lo sabemos j",
+            "ugar ",
             "",
-            "",
             "/n"
         ],
         [
-            "Ya no se como decirte/n"
+            "Cuando te ",
+            "vi, me acordé cómo era ",
+            "la canción \n\nQue ",
+            "cantaba ",
+            "en espira",
+            "l \n\nQue ",
+            "un adulto se ",
+            "promesa olvidar /n"
         ],
         [
-            "Loco sueño desvestirte/n"
+            "Danlo has",
+            "ta una ",
+            "montaña  in",
+            "finita /n"
         ],
         [
-            "Esta es mi v",
-            "erdad ma",
-            "s cru",
-            "da",
-            "/n"
+            "Pasan ",
+            "los días, no q",
+            "uiero salir \n\nQ",
+            "uédat",
+            "en casa ",
+            "por es",
+            "ta noche /n"
         ],
         [
-            "Si necesitas ayuda",
-            "",
-            "",
-            "/n"
+            "Tu ",
+            "corazón ",
+            "está  aqu /n"
         ],
         [
-            "Aunque no sea lo mismo/n"
+            "Lo ",
+            "olvidaste ",
+            "en el jardí",
+            "n /n"
         ],
         [
-            "Olvidemos lo que fuimos/n"
+            "Parece que ",
+            "terminó ",
+            "todo lo ",
+            "que dije \n\nFue ",
+            "porque te qui",
+            "ero \n\nLa vida ",
+            "es un jueg",
+            "o \n\nNo ",
+            "lo sabemos /n"
         ],
         [
-            "Y espero q",
-            "ue estem",
-            "os ju",
-            "ntos",
-            "/n"
+            "Tu cora",
+            "zón está aq",
+            "uí /n"
         ],
         [
-            "Pasan los d",
-            "ías, n",
-            "o quiero sa",
-            "lir/n"
+            "Lo olvi",
+            "daste en el ja",
+            "rdín /n"
         ],
         [
-            "Quédate en ",
-            "casa, p",
-            "or esta noche/n"
-        ],
-        [
-            "Tu coraz",
-            "ón esta a",
-            "quí/n"
-        ],
-        [
-            "Lo olvidast",
-            "e en el ja",
-            "rdín/n"
-        ],
-        [
-            "Parece q",
-            "ue termino",
-            "/n"
-        ],
-        [
-            "Y todo lo que d",
-            "ije/n"
+            "Parec ",
+            "que terminó ",
+            "todo ",
+            "lo que dije /n"
         ],
         [
             "Fue porque te q",
-            "uiero/nL"
+            "uiero \n\nLa v",
+            "ida es un jueg /n"
         ],
         [
-            "a vida es un juego/nNo lo sabemos juga"
-        ],
-        [
-            "r",
+            "No ",
+            "lo sabemo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Cuando te vi/n"
-        ],
-        [
-            "Que cantabas en espiral/n"
-        ],
-        [
-            "Queda una dulce promesa/n"
-        ],
-        [
-            "Olvidada en lo alto/n"
-        ],
-        [
-            "De una mon",
-            "taña in",
-            "finit",
-            "a",
-            "/n"
-        ],
-        [
-            "Tu coraz",
-            "ón esta a",
-            "quí/n"
-        ],
-        [
-            "Lo olvidast",
-            "e en el ja",
-            "rdín/n"
-        ],
-        [
-            "Parece q",
-            "ue termino",
-            "/n"
-        ],
-        [
-            "Y todo lo que d",
-            "ije/n"
-        ],
-        [
-            "Fue porque te q",
-            "uiero/nL"
-        ],
-        [
-            "a vida es un juego/nNo lo sabemos juga"
-        ],
-        [
-            "r",
-            ""
+            "La vida es un juego "
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "AqOt-o2pnMQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

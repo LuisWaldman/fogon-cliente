@@ -1,1 +1,245 @@
-{"cancion": "si-no-me-engana-el-corazon", "banda": "julio-sosa", "escala": "C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "A7", "Dm", "G7", "G#", "C#", "F#7", "B", "C#dim", "F#7", "B", "C#m", "D#m", "G#7", "C#m", "F#7", "B", "A#7", "D#", "G#", "D#", "A#7", "D#", "F#", "C#m", "F#7", "B", "A#7", "D#7", "F#7", "B", "C#m", "D#m", "G#7", "C#7", "F#7", "B", "G#7", "C#m", "F#7", "Gdim", "B", "Gdim", "B", "B", "A#dim", "E/G#", "D#7/G", "G#m", "E", "Fdim", "B/F#", "G#7", "C#m", "F#7", "B", "Gdim", "F#7", "B", "C#m", "D#m", "G#7", "C#m", "F#7", "B", "A#7", "D#", "G#", "D#", "A#7", "D#", "F#", "C#m", "F#7", "B", "A#7", "D#7", "B", "C#m", "D#m", "G#7", "C#7", "F#7", "B", "G#7", "C#m", "F#7", "Gdim", "B", "Gdim", "B", "B", "A#dim", "E/G#", "D#7/G", "G#m", "E", "Fdim", "B/F#", "G#7", "C#m", "F#7", "B", "Gdim", "Bmaj7"]}], "orden_partes": [0]}, "letras": [[], ["o se desde qu\u00e9", " puerto ni por", " d\u00f3nde lle", "gar\u00e1s, ", "amor que mi no", "stalgia espe", "ra.", "/nUn "], ["d\u00eda, cruza", "r\u00e1s por mi ca", "mino, como un anu", "ncio de la primave", "ra.", "/n\u00bfSer\u00e1"], [" ma\u00f1ana ", "o tardar\u00e1s ta", "l vez? Pero yo s", "iento que est\u00e1s cerca", " ya.", "/nY a"], ["s\u00ed vivo espera", "ndo, porque s", " que algun", "a vez, s", "onriendo te presentar", "s./nSi no me enga\u00f1a el cor"], ["az\u00f3n, cuando ", "me dice que ven", "dr\u00e1s,/ncomo en el cine y en los cue"], ["ntos, mi sue\u00f1o m\u00e1s", " feliz se cumpl", "ir\u00e1.", "", "/nSi no me enga\u00f1a el coraz\u00f3n"], [" (y", " si es ", "sincer", "o) y frente a m\u00ed te encuentro un d", "\u00eda,/n"], ["yo te da", "r\u00e9 la bienven", "ida, con la du", "lce melo", "d\u00eda de un can", "tar de amor.", "", "", "/nYo "], ["se que t\u00fa me b", "uscas como yo ", "te busco a ", "ti, amor", " que ya has ta", "rdado tanto.", "", "/nAp"], ["rate que a", "\u00fan tengo el alma ", "joven y hay en mis l", "abios un alegre canto", " para ti", "/nYo se c"], ["omo eres ", "y como es tu voz", ", porque en mis su", "e\u00f1os ya te imagin", "\u00e9./nPor"], [" eso, si alg\u00fan", " d\u00eda nos cruz", "\u00e1ramos los", " dos, s", " que te reconoce", "r\u00e9./nSi no me enga\u00f1a el cor"], ["az\u00f3n, cuando ", "me dice que ven", "dr\u00e1s,/ncomo en el cine y en los cue"], ["ntos, mi sue\u00f1o m\u00e1s", " feliz se cumpl", "ir\u00e1.", "", "/nSi no me enga\u00f1a el coraz\u00f3n"], [" (y", " si es ", "sincer", "o) y frente a m\u00ed te encuentro un d", "\u00eda,/n"], ["yo te da", "r\u00e9 la bienven", "ida, con la du", "lce melo", "d\u00eda de un can", "tar de amor.", "/n"], ["(Si no me enga\u00f1a el cor", "azon)"]], "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "1SyS8hzdzjg", "delay": 0}]}
+{
+    "cancion": "si-no-me-engana-el-corazon",
+    "banda": "julio-sosa",
+    "escala": "C",
+    "bpm": 117,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "C",
+                    "F#7",
+                    "G#7",
+                    "G#m",
+                    "F#7",
+                    "G#7",
+                    "E",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G#",
+                    "G#",
+                    "B",
+                    "F#7",
+                    "F#7",
+                    "B",
+                    "C#m",
+                    "F#7",
+                    "B",
+                    "B",
+                    "D#",
+                    "D#",
+                    "D#m",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "A#7",
+                    "A#7",
+                    "E",
+                    "D#7",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#7",
+                    "F#7",
+                    "G#7",
+                    "G#7",
+                    "D#7/G",
+                    "Gdim",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "B/F#",
+                    "G#7",
+                    "Gdim",
+                    "F#7",
+                    "B",
+                    "C#m",
+                    "A#7",
+                    "F#7",
+                    "B",
+                    "E",
+                    "A7",
+                    "D#",
+                    "A#7",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "A#7",
+                    "E",
+                    "E",
+                    "D#7",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G#7",
+                    "F#7",
+                    "G#7",
+                    "G#7",
+                    "D#7/G",
+                    "Gdim",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No sé des",
+            "de qué puerto ni por dónd ",
+            "llegarás, amo",
+            "r que mi nostalgia esp",
+            "era, un día ",
+            "cruzarás  por mi cam",
+            "ino como un anu",
+            "ncio de la prima",
+            "vera, será mañana ",
+            "tardará tal ve",
+            "z, pero yo sien",
+            "to que está cerca ya, ",
+            "así vi",
+            "vo esperando porque sé que ",
+            "alguna vez sonri",
+            "endo te prese",
+            "ntarás. /n"
+        ],
+        [
+            "Si no me engañe el ",
+            "corazón, ",
+            "cuánto me dice que ",
+            "venderás,  ",
+            "como en el cine en los ",
+            "cuentos mi sueño más f",
+            "eliz se c",
+            "umplirá. /n"
+        ],
+        [
+            "Si no me engañ ",
+            "el corazón ",
+            "frente mí te en",
+            "cuentro un día ",
+            "yo te daré la bi",
+            "envenida con la dulc ",
+            "melodía de un cant",
+            "ar de amor. ",
+            "/n"
+        ],
+        [
+            "Yo sé que tú me bus",
+            "cas como yo te busco ",
+            "ti, amor que ya has t",
+            "ardado tanto, ",
+            "apúrate que aún teng",
+            "o el alma joven ",
+            "hay en mis labios un a",
+            "legre canto, ya ",
+            "sé cómo eres ",
+            "cómo es tu voz p",
+            "orque en mis sueños ",
+            "yo te imagin",
+            "é, por eso si alg",
+            "ún día nos cruzáramos ",
+            "los ojos, amor te ",
+            "recono",
+            "ceré. /n"
+        ],
+        [
+            "Si no me engañe el c",
+            "orazón, ",
+            "cuánto me dice que v",
+            "enderás, c",
+            "omo en el cine en los c",
+            "uentos mi sueño más f",
+            "eliz se cu",
+            "mplirá/n"
+        ],
+        [
+            "Si no me engañe el ",
+            "corazón ",
+            "frente mí te encu",
+            "entro un día, ",
+            "yo te daré la bie",
+            "nvenida con la dulce ",
+            "melodía  de un c",
+            "antar ",
+            "de a",
+            "mor",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "1SyS8hzdzjg",
+            "delay": 4000.0
+        }
+    ],
+    "calidad": 1
+}

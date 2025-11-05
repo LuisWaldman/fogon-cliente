@@ -2,28 +2,212 @@
     "cancion": "flora-y-fauno",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Am",
-                    "Em"
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
+                    "Em",
                     "Em",
                     "Am",
-                    "Em",
-                    "Bm",
                     "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
@@ -31,67 +215,195 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
-        [],
         [
-            "Puede que los cuernos atraviesen el muro/nManiob"
+            "Bo, bo, bo/n"
         ],
         [
-            "rando maletines/nY armados hasta la nar"
+            "B",
+            "o",
+            ",",
+            "bo,",
+            "",
+            "bo",
+            "/n"
         ],
         [
-            "iz/nAhora de"
+            "P",
+            "uede  que los cuerpos a",
+            "traviese  el muro",
+            "que los sorpren",
+            "d todos desnudos /n Todos m",
+            "aniobrand  malecines",
+            "armados hasta l",
+            "a  nariz/n"
         ],
         [
-            "jame que me engañe a mi mismo/nEnt"
+            "Aho",
+            "r  déjame que me enga",
+            "ña  mí mismo/n"
         ],
         [
-            "iendo que no soy de fiar/nAhora dej"
+            "Entiend  que no soy d",
+            "e fía /n Aho",
+            "r  déjame que maneje",
+            "un  sauna me vist",
+            "a de fado /n Entiendo lo",
+            "tomo es mal",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ame que maneje un sauna y me vista de f",
-            "auno/n"
+            "Bo, b",
+            "o,  b",
+            "o",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Ohh, O",
-            "hh, Oh",
-            "h./n"
-        ],
-        [],
-        [
-            "Solo un paranoico podría invitarte/nComerci"
-        ],
-        [
-            "ando cantidades de acciones de materia gr",
-            "is/nAhora dej"
+            "Solo par",
+            "anoic  podría inv",
+            "itart  una perfo",
+            "rmanc  de payasos d",
+            "e arte /n Comerciando cant",
+            "idade  de acciones d",
+            "e  materia gri",
+            "/n"
         ],
         [
-            "ame que me engañe a mi mismo/nEnti"
+            "Ahor  déjame que m",
+            "e  engañan mí mismo/n"
         ],
         [
-            "endo que no soy de fiar/nAhora dej"
+            "Entiendo que n",
+            "o  soy de fía/n"
         ],
         [
-            "ame que maneje un sauna y me vista de f",
-            "auno/nOhh, Ohh, Ohh."
+            "Ahora déjame qu",
+            "e  maneje una sauna",
+            "me vista de fado /n Entie",
+            "nd  lo tomo es mal/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Bo,",
+            "b",
+            "o ",
+            "b",
+            "o",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Nada qu",
+            "e  ver/n"
+        ],
+        [
+            "Nada q",
+            "u  ver/n"
+        ],
+        [
+            "Nada q",
+            "u  ve",
+            "r /n Nada q",
+            "ue  ver/n"
+        ],
+        [
+            "Nad",
+            "que ver",
+            "",
+            "/n"
+        ],
+        [
+            "Nad",
+            "a  que v",
+            "e /n Na",
+            "d  que ver/n"
+        ],
+        [
+            "A",
+            "hor  déjame que me",
+            "engañan mí mism/n"
+        ],
+        [
+            "Me entiendo que n",
+            "o  soy de fía/n"
+        ],
+        [
+            "Ahora déjame que m",
+            "anej  una sauna m",
+            "e vista de fado /n Entiend",
+            "lo tomo es mal /n A",
+            "hor  déjame que m",
+            "e  engañan mí mism",
+            "o /n Me entiendo que n",
+            "o  soy de fía/n"
+        ],
+        [
+            "Ahora déjame que m",
+            "e  engañan mí mism/n"
+        ],
+        [
+            "Me entiendo que n",
+            "o soy de fía /n B",
+            "o  b",
+            "o",
+            "",
+            "b",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "OlWtToYHP1A",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

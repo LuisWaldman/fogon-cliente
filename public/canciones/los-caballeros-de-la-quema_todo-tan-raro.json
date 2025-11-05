@@ -2,111 +2,436 @@
     "cancion": "todo-tan-raro",
     "banda": "los-caballeros-de-la-quema",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "E",
+                    "E",
+                    "C#m",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "E",
                     "B",
-                    "C#m",
-                    "A"
+                    "C#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "F#",
-                    "G"
+                    "E",
+                    "E",
+                    "B",
+                    "C#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#",
+                    "C#m",
+                    "E",
+                    "E",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "Am",
                     "Em",
                     "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C#m",
+                    "C#m Em",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Em",
                     "C",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
-            1,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
         ]
     },
     "letras": [
-        [],
         [
-            "Son estos dias ",
-            "de vivir con ",
-            "la muerte en la n",
-            "uca/n"
-        ],
-        [
-            "en esta epidemi",
-            "a de silencios",
-            " de nunca acabar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "seria bueno d",
-            "istraerse te",
-            "jiendo ternuras,",
+            "Son e",
+            "stos días de ",
+            "vivir con la muer",
+            "te en la nuca /n"
+        ],
+        [
+            "En es",
+            "ta epidemia ",
+            "de silencios que nu",
+            "nca acaban /n"
+        ],
+        [
+            "Serí",
+            "a bien bueno dis",
+            "traerse tejien",
+            "do ternuras /n"
+        ],
+        [
+            "Que abran canch",
+            "a las penas ",
+            "un milagro saque ",
+            "bailar \n\nPero e",
+            "stá todo ",
+            "tan rar",
+            "o, todo es ",
+            "tan raro \n\nNadi",
+            "e sabe que precio c",
+            "olgarse en la ",
+            "rifa de la s",
+            "oledad \n\nHoy es",
+            "tá todo ",
+            "tan raro, ",
+            "todo es ",
+            "tan raro \n\nMe em",
+            "piezan hachando la ",
+            "rubra  ter",
+            "minan el fondo ",
+            "del mar /n"
+        ],
+        [
+            "No, ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "no, no ",
+            "",
             "/n"
         ],
         [
-            "que abran canch",
-            "a las penas y un mi",
-            "lagro nos saque a b",
-            "ailar./nPero "
+            "Son esta",
+            "s noches de e",
+            "speranzas deses",
+            "peradas /n"
         ],
         [
-            "esta todo tan r",
-            "aro./n"
+            "El sueño en ",
+            "compota  el es",
+            "cabio para no pe",
+            "nsar \n\nP",
+            "ero quien nos ",
+            "dice que la v",
+            "uelta de tanta de",
+            "rrota /n"
         ],
         [
-            "Toda tan raro",
-            "./n"
+            "Cambiemos de ",
+            "pinchas los m",
+            "iedos nos dejen en ",
+            "paz \n\nHoy est",
+            "á todo tan ",
+            "raro",
+            ", todo es tan ",
+            "raro \n\nNadie sa",
+            "be que precio colg",
+            "arse en la ri",
+            "fa de la soledad /n"
         ],
         [
-            "nadie sabe qu",
-            "e precio colg",
-            "arse en la ",
-            "rifa de la soled",
-            "ad./n"
+            "Hoy está ",
+            "todo  tan ",
+            "raro,  ",
+            "todo es tan r",
+            "aro \n\nMe empieza",
+            "n hachando la do",
+            "ble interpina ",
+            "el fondo del ",
+            "mar /n"
         ],
         [
-            "Hoy esta toda tan",
-            " raro./n"
+            "En ",
+            "este país ",
+            "en broma nada ",
+            "nos hace reí /n"
         ],
         [
-            "todo tan raro",
-            "./n"
+            "Com",
+            "o la mierda trepando ",
+            "el cuello se pone os",
+            "curo \n\nRespira ",
+            "para segu",
+            "ir /n"
         ],
         [
-            "Uno empieza tachando la doble y terminan en el fondo del mar/n"
+            "Hoy está t",
+            "odo tan r",
+            "aro, ",
+            "todo es tan ra",
+            "ro \n\nNadie sabe que ",
+            "precio colgar",
+            "se en la rifa de ",
+            "la soledad \n\nHoy ",
+            "está to",
+            "do tan r",
+            "aro, ",
+            "todo es tan rar",
+            "o \n\nMe empiezan hac",
+            "hando la doble ",
+            "interpina el f",
+            "ondo del mar ",
+            "/n"
         ],
-        []
+        [
+            "Hoy e",
+            "stá to",
+            "do tan r",
+            "aro /n"
+        ],
+        [
+            "Hoy hoy ",
+            "está tod",
+            "o tan r",
+            "aro /n"
+        ],
+        [
+            "Hoy ",
+            "hoy está to",
+            "do tan r",
+            "aro /n"
+        ],
+        [
+            "Hoy hoy ",
+            "está tod",
+            "o tan r",
+            "aro \n\nPor",
+            "que está ",
+            "/n"
+        ],
+        [
+            "T",
+            "odo tan ",
+            "r",
+            "aro ",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Tf28maVlIYk",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

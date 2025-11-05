@@ -2,186 +2,270 @@
     "cancion": "el-lider",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
                     "Am",
-                    "Em"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "F",
-                    "Em"
+                    "Em",
+                    "C",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "F",
+                    "F",
+                    "F",
                     "Em",
-                    "G",
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "C",
                     "Am",
-                    "F"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "F",
-                    "C",
                     "Am",
-                    "F",
-                    "C",
                     "Am",
                     "Em",
-                    "F"
+                    "F",
+                    "F",
+                    "F",
+                    "Em",
+                    "C",
+                    "Am",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Em",
+                    "G",
+                    "F",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            0,
-            1,
-            2,
-            0,
-            0,
-            0,
-            1,
-            2,
-            0,
-            3
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
         [
-            "Tomo prest",
-            "ada la pala",
-            "bra/npara escrib"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ir lo que me pa",
-            "sa/ny no pi"
+            "Teng",
+            "prestada l",
+            "a  palabra",
+            "/n"
         ],
         [
-            "enso explic",
-            "ar./nLos guiar"
+            "Par  escribir lo q",
+            "ue  me pasa",
+            "no pie",
+            "ns  explicar/n"
         ],
         [
-            "e por la cornisa de montado delirio,/nquema"
+            "Los guiaré por l",
+            "a comisa /n Si me has comentad",
+            "del lío /n Quemaré vu",
+            "estr nombre /n Todo a",
+            "rchiv entenderás /n Q",
+            "u  mi calle la de e",
+            "llo /n No se cruz",
+            "a  jamás",
+            "",
+            "solo se",
+            "guir  la ca",
+            "us  justa/n"
         ],
         [
-            "ré nuestro nombre de todo el archivo./nEntende"
+            "Llevaré l",
+            "a  bandera de nadie a",
+            "l frente /n Vo",
+            "y  comer d",
+            "e  unos trai",
+            "dore /n E",
+            "n  una mes",
+            "a  llena de r",
+            "eidore /n P",
+            "agado  por mí/n"
         ],
         [
-            "rás que mi calle y la de ellos, no se cr",
-            "uzan jamás..",
-            "./n"
+            "Dividiré con",
+            "la  manos las aguas d",
+            "e río /n Para dar e",
+            "spectácul  vos",
+            "tus amigos /n C",
+            "o  el simple misterioso",
+            "motiv /n De verlo",
+            "por fin desperta",
+            "",
+            "solo seg",
+            "uir  la ca",
+            "us  jus",
+            "t /n Llevaré la",
+            "bander  de nadie a",
+            "l  frente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Y sólo s",
-            "eguiré la c",
-            "ausa ju",
-            "sta,/n"
+            "Soy c",
+            "om  un índice del o",
+            "tr  lad",
+            "o /n M",
+            "e  tome muchos c",
+            "olectivo /n P",
+            "ar  llegar ha",
+            "st acá /n En",
+            "tonce  quiero que lo s",
+            "epa /n Para siem",
+            "pr no estoy solo /n Me acom",
+            "pañ  toda esta gent",
+            "e /n Que venimos por lo nue",
+            "str  no hay manera de h",
+            "acerno  volver a",
+            "trás ",
+            "s",
+            "ol  seguir",
+            "la causa",
+            "just /n"
         ],
         [
-            "llevaré la bandera de na",
-            "die al frente./n"
-        ],
-        [
-            "Voy a com",
-            "erme unos traidor",
-            "es,/nen una "
-        ],
-        [
-            "mesa llena d",
-            "e reidores pa",
-            "gos por mí",
-            "./nDividi"
-        ],
-        [
-            "ré con las manos las aguas del río/npara "
-        ],
-        [
-            "dar espectáculo a vos y a tus am",
-            "igos,/nde "
-        ],
-        [
-            "verlos por fin desperta",
-            "r./n"
-        ],
-        [
-            "Y sólo s",
-            "eguiré la c",
-            "ausa ju",
-            "sta,/n"
-        ],
-        [
-            "llevaré la bandera de na",
-            "die al frente./n"
-        ],
-        [],
-        [
-            "Soy como un mi",
-            "c del otro lad",
-            "o,/nme tomé "
-        ],
-        [
-            "muchos colect",
-            "ivos/npara lleg"
-        ],
-        [
-            "ar hasta ac",
-            "./nEntonces qui"
-        ],
-        [
-            "ero que lo sepan para siempre,/nno estoy s"
-        ],
-        [
-            "olo, me acompaña toda esta gente./nY que ven"
-        ],
-        [
-            "imos por lo nuestro/ny no hay manera de hacernos volv"
-        ],
-        [
-            "er atr",
-            "s./n"
-        ],
-        [
-            "Y sólo s",
-            "eguiré la c",
-            "ausa ju",
-            "sta,/n"
-        ],
-        [
-            "llevaré la bandera de na",
-            "die al frente siempre./nY sólo seguiré la causa justa,"
-        ],
-        [],
-        [],
-        []
+            "Llevar  la bande",
+            "r  de nadie al fren",
+            "t  siempre",
+            "",
+            "so",
+            "l  seguiré l",
+            "a  causa j",
+            "ust /n Llev",
+            "ar  la bandera de",
+            "nadi  al frente s",
+            "iempre ",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "04IMHxbpj1U",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

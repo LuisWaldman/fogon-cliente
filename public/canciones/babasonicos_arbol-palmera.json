@@ -2,209 +2,337 @@
     "cancion": "arbol-palmera",
     "banda": "babasonicos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
             {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "A",
                     "E",
-                    "A"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "F",
                     "E",
-                    "A"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#",
+                    "A",
+                    "A",
                     "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             1,
             2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "En un estado fi",
-            "no de belleza /n"
-        ],
-        [
-            "veo los campos, veo",
-            " el señor /n"
-        ],
-        [
-            "los veo a todos en",
-            " una comedia /n"
-        ],
-        [
-            "parecen cowboys si",
-            "n acción /n"
-        ],
-        [
-            "Cambian los días c",
-            "ambian mis cabezas /n"
-        ],
-        [
-            "lo que era un prado ah",
-            "ora es león /n"
-        ],
-        [
-            "o es un gato con dreads y a",
-            "lgo de lepra /n"
-        ],
-        [
-            "y no son mi",
-            " imaginación /n"
-        ],
-        [
-            "Lento...como ",
-            "se mueve la sombra /n"
-        ],
-        [
-            "en el trópico y",
-            "o caigo hoy /n"
-        ],
-        [
-            "Lento...como vac",
-            "ila el aire /n"
-        ],
-        [
-            "en tus oídos",
-            " es mi sopor /n"
-        ],
-        [
-            "es mi gota de su",
-            "dor /nes la visión del"
-        ],
-        [
-            " calor /nes un"
-        ],
-        [
-            " buitre /n"
-        ],
-        [
-            "El arbol mide el ",
-            "tiempo en su corteza /n"
-        ],
-        [
-            "yo enagenado mir",
-            "o en deredor /n"
-        ],
-        [
-            "estoy en medio de ",
-            "un arbol palmera /n"
-        ],
-        [
-            "entre hojas verdes p",
-            "ienso soy /n"
-        ],
-        [
-            "desde algUn punto de",
-            " Nueva Guinea /n"
-        ],
-        [
-            "un parlamento lle",
-            "ga mi rincón /n"
-        ],
-        [
-            "llegan camellos ma",
-            "sticando brea /n"
-        ],
-        [
-            "me traen nubes de va",
-            "por /n"
-        ],
-        [
-            "Lento...como ",
-            "se mueve la sombra /n"
-        ],
-        [
-            "en el trópico y",
-            "o caigo hoy /n"
-        ],
-        [
-            "Lento...como vac",
-            "ila el aire /n"
-        ],
-        [
-            "en tus oídos",
-            " es mi sopor /n"
-        ],
-        [
-            "Lento...como ",
-            "se mueve la sombra /n"
-        ],
-        [
-            "en el trópico y",
-            "o caigo hoy /n"
-        ],
-        [
-            "Lento...como vac",
-            "ila el aire /n"
-        ],
-        [
-            "en tus oídos",
-            " es mi sopor /n"
-        ],
-        [
-            "es mi gota de su",
-            "dor /nes la visión del"
-        ],
-        [
-            " calor /nes un"
-        ],
-        [
-            " buitre ",
             "",
-            "/nes un"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " buitre, e",
-            "s un buitre ",
-            "/nmi quebranta "
+            "En mi",
+            "estado  el f",
+            "i  no debe deshez",
+            "ar  pero los ca",
+            "mpo  veo a",
+            "l  suelo,",
+            "los veo todos e",
+            "n  una com",
+            "edia  parece",
+            "cabos sin dir",
+            "ección /n"
         ],
         [
-            "huesos"
+            "Cambian los dí",
+            "as  cambian las c",
+            "amisas  l",
+            "que era un prado ah",
+            "or  es león",
+            ",  es un g",
+            "ato  con brecha",
+            "con lepr",
+            "no es una im",
+            "aginaci",
+            "ó /n"
+        ],
+        [
+            "Lento  como se m",
+            "uev  la sombra,",
+            "com  el tópico,",
+            "yo caigo",
+            "/n"
+        ],
+        [
+            "Lento,",
+            "como ha sido el air",
+            "en tu suelo",
+            "es mi s",
+            "opor ",
+            "es mi g",
+            "ot  de sudor,",
+            "e  la visión del ca",
+            "lor ",
+            "es un buit",
+            "re /n El á",
+            "rbo  mide como tie",
+            "mp  en su corte",
+            "za  llenaje de n",
+            "ado,  miro a",
+            "lrededor /n"
+        ],
+        [
+            "Estoy en medio d",
+            "e  una orgota m",
+            "era  de ho",
+            "ja  verdes, bien solo",
+            "soy /n"
+        ],
+        [
+            "Desde un p",
+            "unt  de nueva/n"
+        ],
+        [
+            "Guinea  u",
+            "n  parlament",
+            "llega mi ri",
+            "ncón  llegan",
+            "camello  mas",
+            "ticand  bre",
+            "a  me traen nub",
+            "e  de vapor/n"
+        ],
+        [
+            "Le",
+            "nto  como s",
+            "e  mueve la somb",
+            "ra  como el tópi",
+            "co  yo ca",
+            "igo /n"
+        ],
+        [
+            "Lento,",
+            "como ha sido e",
+            "l  aire en tu sue",
+            "lo  es m",
+            "sopo",
+            "r ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "L",
+            "ento,  como se",
+            "muev  la sombra",
+            "como el tópic",
+            "o  yo ca",
+            "igo /n"
+        ],
+        [
+            "Lento,",
+            "como vacin",
+            "el aire en tus o",
+            "ídos  es m",
+            "i  sopo",
+            "r  e",
+            "s  mi gota de sud",
+            "or  es la visión d",
+            "e  calor,",
+            "es un bu",
+            "itre ",
+            "/n"
+        ],
+        [
+            "Es un",
+            "buitre /n M",
+            "i  quebrante agua es",
+            "luz ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "zQrXZ_BerZE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

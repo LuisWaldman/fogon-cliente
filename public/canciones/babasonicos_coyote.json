@@ -2,70 +2,174 @@
     "cancion": "coyote",
     "banda": "babasonicos",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "F",
                     "D#",
-                    "F",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "D#",
                     "D#"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "ejen hoy",
-            "/nsigo yo aleg"
+            "E",
+            "st es una canción en español de rock argentino. /n Sigo",
+            "viviend  h",
+            "oy,  con l",
+            "meseta./n"
         ],
         [
-            "ando hoy",
-            "/ncorro la mes"
+            "Soy, soy como un c",
+            "oyote. /n"
         ],
         [
-            "eta soy",
-            "/nsoy como un koy"
+            "Hasta el ho",
+            "rizont  voy,",
+            "como algunos s",
+            "o vos. /n So",
+            "y que fume /n Ri",
+            "fa /n Soy,",
+            "so  como un c",
+            "oyote /n"
         ],
         [
-            "ote",
-            "/nHasta el horiz"
+            "Soy, soy como un co",
+            "yote /n"
         ],
         [
-            "onte voy",
-            "/ncomo algunos h"
+            "Soy, soy como un coy",
+            "ote /n"
         ],
         [
-            "ongos hoy",
-            "/naunque fume r"
+            "Soy ",
+            "s",
+            "o  como un coyote./n"
         ],
         [
-            "ifa soy",
-            "/nsoy como un koy"
+            "Soy,",
+            "soy como un coyote./n"
         ],
         [
-            "ote",
-            "/n"
+            "Soy, soy como un coyote. /n Soy,",
+            "soy como un coyote./n"
         ],
-        [],
-        []
+        [
+            "Soy,",
+            "soy como u",
+            "n ",
+            "coyote/n"
+        ],
+        [
+            "So",
+            "y  un coyote.",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "hvar-KND9s8",
-            "delay": 0
+            "delay": 27440.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

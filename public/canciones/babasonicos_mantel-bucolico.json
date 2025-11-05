@@ -2,118 +2,245 @@
     "cancion": "mantel-bucolico",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "G",
                     "D",
-                    "G"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "G",
-                    "A"
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "o hay como ama",
-            "r y ser amad",
-            "o",
-            "/n "
+            "amar ser ama",
+            "da  es la c",
+            "os  más feliz que hay./n"
         ],
         [
-            "es la cosa m",
-            "s feliz que ha",
-            "y/n fr"
+            "Fru",
+            "túmig  vapora, sig",
+            "dando esta canción, me desl",
+            "iz  entre la sole",
+            "dad /n To",
+            "m  el camino más lar",
+            "go ",
+            "por ahí me encont",
+            "rarás /n"
         ],
         [
-            "otáme de v",
-            "apor si",
-            "lbando esta can",
-            "ción/n m"
+            "Descansando entre los pr",
+            "ados ",
+            "la orilla del paisal/n"
         ],
         [
-            "e deslizo entre",
-            " la soledad",
+            "No hay co",
+            "m  amar ser ama",
+            "da  ya es la c",
+            "os  más feliz que hay./n"
+        ],
+        [
+            "Fru",
+            "túmig  vapora, sigo d",
+            "and  esta canción, me des",
+            "liz  entre la soledad./n"
+        ],
+        [
+            "T",
+            "oma  el camino más lar",
+            "go  p",
+            "o  ahí me encontra",
+            "rás /n D",
+            "escansand  entre los prados, la",
+            "oril",
+            "l  del paisal./n"
+        ],
+        [
+            "Toma e",
+            "l  camino más largo, por",
+            "ah",
+            "me encontrarás.",
             "/n"
         ],
         [
-            " Toma el cami",
-            "no más la",
-            "rgo",
+            "Descansando entre los prados, la or",
+            "ill del paisal. /n Toma el ca",
+            "min  más largo, por ahí me enc",
+            "ontrarás ",
+            "",
+            "",
             "/n"
         ],
         [
-            " por ahí m",
-            "e encontrar",
-            "s/n"
+            "No hay com",
+            "amar ser ama",
+            "da  es la co",
+            "s  más feliz que ha",
+            "y /n No hay com",
+            "o  amar ser ama",
+            "da  es la co",
+            "s  más feliz que hay./n"
         ],
         [
-            " descansa",
-            "ndo entre los prad",
-            "os",
-            "/n"
+            "No hay como",
+            "amar ser ama",
+            "da  es la co",
+            "s  más feliz que hay./n"
         ],
         [
-            " a la orilla",
-            " del mai",
-            "zal/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "N  hay co",
+            "m  amar ser ama",
+            "da  es la co",
+            "s  más feliz que hay",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ZgZdC07iWuc",
-            "delay": 0
+            "delay": 21040.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

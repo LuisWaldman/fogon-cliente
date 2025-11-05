@@ -2,299 +2,503 @@
     "cancion": "carete-de-acasusso",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
                     "G",
-                    "Fmaj7",
                     "G",
                     "G",
-                    "Fmaj7",
                     "G",
-                    "Fmaj7",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "Bb",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "G",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "Bb",
+                    "Bb",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "Fmaj7",
+                    "G",
+                    "Fmaj7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Fmaj7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "Bb",
+                    "Bb",
                     "Bb",
                     "G",
-                    "A",
-                    "G",
-                    "Fmaj7",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "G",
-                    "Fmaj7",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "G",
-                    "G",
-                    "Fmaj7",
-                    "G",
-                    "G",
-                    "Fmaj7",
-                    "G",
-                    "C",
                     "Bb",
-                    "A",
+                    "Bb",
                     "Bb",
                     "G",
-                    "Fmaj7",
-                    "C",
-                    "G",
-                    "Fmaj7",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "G",
-                    "Fmaj7",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "Fmaj7",
-                    "C",
-                    "G",
-                    "G",
-                    "C",
-                    "A",
                     "Bb",
-                    "G",
-                    "C",
-                    "A",
-                    "Bb",
-                    "G",
-                    "A",
-                    "Bb",
-                    "G",
-                    "A",
                     "Bb",
                     "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Fmaj7",
+                    "G",
+                    "Fmaj7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Fmaj7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "G",
                     "Bb",
-                    "G",
-                    "A",
-                    "Bb",
-                    "G",
-                    "Fmaj7",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
                     "C",
-                    "Fmaj7",
                     "C",
-                    "Fmaj7",
                     "C",
-                    "G",
-                    "Fmaj7",
                     "C",
-                    "Fmaj7",
                     "C",
-                    "Fmaj7",
                     "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
                     "G"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
         ]
     },
     "letras": [
-        [],
         [
-            "El final del arco iris  /n"
-        ],
-        [
-            "esconde un tesoro virginal, ",
-            " /n"
-        ],
-        [
-            "la sombra de mis recuerdos /n"
-        ],
-        [
-            "te ofrezco el agua  /nque te invito a "
-        ],
-        [
-            "tomar  /ny"
-        ],
-        [
-            " bebe  /ny"
-        ],
-        [
-            " bebe /n"
-        ],
-        [
-            "princesa del orie",
-            "nte imaginado  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "el agua no es de manantial ",
-            " /n"
+            "La canción en",
+            "españ",
+            "o de rock argentino. /n L",
+            "a  som",
+            "br  de mis r",
+            "ecorrido /n"
         ],
         [
-            "y yo no soy el santo",
-            " /n"
+            "Fu",
+            "e  la primera q",
+            "u  te invité",
+            "canta",
+            "",
+            "beb",
+            "é ",
+            "beb",
+            "é /n E",
+            "s  esa melod",
+            "í  que he im",
+            "aginad /n"
         ],
         [
-            "no bebas con extrañ",
-            "os  /n"
+            "Q",
+            "u  nada m",
+            "ás  m",
+            "e  manda cl",
+            "ar /n Lo",
+            "s  sueños son lo",
+            "s antiguos /n M",
+            "odela  con e",
+            "xtraño /n N",
+            "o  sabes que t",
+            "e  pueden invi",
+            "ta /n"
         ],
         [
-            "no sabes que te p",
-            "ueden convidar  ",
+            "L",
+            "o  suenos son l",
+            "os  antiguos/n"
+        ],
+        [
+            "Modela  con",
+            "extraño /n N",
+            "o  sabes que t",
+            "e  pueden in",
+            "vita",
             "/n"
         ],
         [
-            "y yo no soy un santo",
-            " /n"
+            "Tus m",
+            "inutos  de",
+            "insegur /n"
         ],
         [
-            "no fumes cosas raras",
-            "  /n"
-        ],
-        [
-            "no sabes que te p",
-            "ueden convida",
-            "r  /n"
-        ],
-        [
-            "tus minutos de insegura  /n"
-        ],
-        [
-            "son las autopistas del p",
-            "lacer  /n"
-        ],
-        [
-            "acelerada y desnuda  /n"
-        ],
-        [
-            "besas el humo  /ny te lo adu"
-        ],
-        [
-            "eñas  /nm"
-        ],
-        [
-            "ama cae /nt"
-        ],
-        [
-            "u nube es  /n"
-        ],
-        [
-            "los versos,  /nque susp"
-        ],
-        [
-            "iro, en tu odio ",
-            " /n"
-        ],
-        [
-            "empañan tu man",
-            "era de pensar. ",
-            " /n"
-        ],
-        [
-            "no fumes cosas raras",
-            " /n"
-        ],
-        [
-            "no sabes que te pue",
-            "den convidar  ",
+            "S",
+            "on  las a",
+            "utopista  del p",
+            "lace ",
+            "",
             "/n"
         ],
         [
-            "y yo soy un santo ",
-            " /n"
-        ],
-        [
-            "no bebas con extrañ",
-            "os  /n"
-        ],
-        [
-            "no sabes que te pue",
-            "den convidar  ",
+            "Acelerada",
+            "desnuda",
             "/n"
         ],
         [
-            "al fin",
-            "al, lo rar",
-            "o /nno es tan m"
-        ],
-        [
-            "alo  /n"
-        ],
-        [
-            "al fin",
-            "al, lo extra",
-            "o  /nes excit"
-        ],
-        [
-            "ante  /n"
-        ],
-        [
-            "voy a introducirte  /na la experi"
-        ],
-        [
-            "encia  /ndel lim"
-        ],
-        [
-            "pia  /n"
-        ],
-        [
-            "y todo lo conoc",
-            "erás, lo conoc",
-            "erás  /n"
-        ],
-        [
-            "los versos que susp",
-            "iro  /nen tus oíd"
-        ],
-        [
-            "os  /n"
-        ],
-        [
-            "empañan tu man",
-            "era de pens",
-            "ar.  /n"
-        ],
-        [
-            "y yo no soy el santo",
-            " /n"
-        ],
-        [
-            "no bebas con extrañ",
-            "os  /n"
-        ],
-        [
-            "no sabes que te puede",
-            "n convidar  ",
+            "Pesas e",
+            "l  humo te l",
+            "o  adueñan",
             "/n"
         ],
         [
-            "y yo soy un santo",
-            " /n"
+            "L  m",
+            "ac ",
+            "tu nube/n"
         ],
         [
-            "no fumes cosas raras",
-            ". /n"
+            "L",
+            "o  besos qu",
+            "suspiro e",
+            "n  tu oído/n"
         ],
         [
-            "no sabes que te puede",
-            "n convidar",
-            ""
+            "Q",
+            "u  vayan de u",
+            "na  manera d",
+            "e  pensar/n"
+        ],
+        [
+            "L",
+            "os  sueños s",
+            "on  los antiguos/n"
+        ],
+        [
+            "Profumes c",
+            "osa  raras/n"
+        ],
+        [
+            "No sabes q",
+            "ue  te pueden",
+            "invita",
+            "/n"
+        ],
+        [
+            "Los sueno",
+            "son los anti",
+            "guo /n Modela",
+            "s  con extra",
+            "ño /n No sa",
+            "be  que te pue",
+            "de  invit",
+            "a ",
+            "/n"
+        ],
+        [
+            "Al f",
+            "inal  lo r",
+            "aro  no es ta",
+            "n malo /n A",
+            "l  f",
+            "inal ",
+            "lo extraño es exc",
+            "itant /n V",
+            "oy  intro",
+            "ducirt  la expe",
+            "rienci /n D",
+            "e  limpia",
+            "tod",
+            "o /n T",
+            "e  conocer",
+            "á te conocerás /n L",
+            "o  besos que",
+            "suspir  e",
+            "n  tu oído",
+            "/n"
+        ],
+        [
+            "Que vayan de",
+            "un  manera d",
+            "e  pensar/n"
+        ],
+        [
+            "L",
+            "os  sueños s",
+            "on  los antiguos/n"
+        ],
+        [
+            "Profumes co",
+            "sa  rar",
+            "a /n No sabes",
+            "qu  te puede",
+            "invitar",
+            "/n"
+        ],
+        [
+            "Los s",
+            "ueño  son l",
+            "os antiguos /n Profum",
+            "e  cosas raras/n"
+        ],
+        [
+            "No sa",
+            "be  que te pu",
+            "ede  invi",
+            "ta ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Los sueños son los antiguos"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "DSOm2bKlD6M",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

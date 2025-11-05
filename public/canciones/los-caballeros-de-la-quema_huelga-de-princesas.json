@@ -2,95 +2,385 @@
     "cancion": "huelga-de-princesas",
     "banda": "los-caballeros-de-la-quema",
     "escala": "A7",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "F",
+                    "A7",
+                    "A7",
+                    "F",
+                    "E5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A7",
-                    "F",
-                    "E"
+                    "A7",
+                    "A7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C5",
-                    "B5",
-                    "E5"
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F5",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "C5",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "F",
+                    "F",
+                    "C5",
+                    "C5",
                     "E5",
-                    "F5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "E5",
-                    "A5",
-                    "F5",
                     "E5",
-                    "A5"
+                    "B5",
+                    "E5",
+                    "E5",
+                    "C5",
+                    "B5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B5",
+                    "E",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A7",
+                    "C5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "B5",
+                    "E5",
+                    "E5",
+                    "C5",
+                    "B5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "B5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "C5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5",
+                    "F5"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "sabado de otoño añ saco duro para callejear/nque venga una "
-        ],
-        [
-            "nena/ny que me saquen de po"
-        ],
-        [
-            "bre.. al menos hoy/n"
-        ],
-        [
-            "pero hay h",
-            "uelga de princ",
-            "esas, parece ser/n"
-        ],
-        [
-            "y esta c",
-            "aceria empie",
-            "za a fracazar/nla p"
-        ],
-        [
-            "aciencia de la ar",
-            "aña no es de ch",
-            "icle/n"
-        ],
-        [
-            "nadie li",
-            "ga/n"
-        ],
-        [
-            "nadie l",
-            "iga",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
+            "Sabad ",
+            "de otoño al ta",
+            "co, duro para acá ",
+            "llegar /n"
+        ],
+        [
+            "Piden pi",
+            "sta los muchac",
+            "hos, un fueguito pa' ",
+            "acaba /n"
+        ],
+        [
+            "Noche de ",
+            "dragueta fáci",
+            "l de poca pre",
+            "tensión \n\nQue ven",
+            "ga una nena ",
+            "que me saque ",
+            "de pobrea me ",
+            "lo soy ",
+            "llena ",
+            "el tanque voce",
+            "s, un fernet el bar ",
+            "de \n\nJosé /n"
+        ],
+        [
+            "Va cayen",
+            "do gente al ranc",
+            "ho, pasos bes",
+            "os, maníes abr",
+            "azos \n\nTodos co",
+            "gonean la puer",
+            "ta para vigila ",
+            "mejor \n\nPor ",
+            "si acaso pa",
+            "sa un barco en llant ",
+            "me saca de po",
+            "brezón \n\nPe",
+            "ro hay ",
+            "huelga de p",
+            "rincesas, parec ",
+            "ser /n"
+        ],
+        [
+            "Est ",
+            "cacerí ",
+            "empieza f",
+            "racasar \n\nLa ",
+            "paciencia  en ",
+            "la raña no es de ",
+            "chicle est",
+            "a noche n",
+            "adie ",
+            "liga  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Entra  un barc ",
+            "bate data ",
+            "está gratis ",
+            "acá nomás /n"
+        ],
+        [
+            "Zarpa ca",
+            "ravana, zarpa",
+            "da, amor no e",
+            "mpata /n"
+        ],
+        [
+            "Todos ",
+            "afilando al sue",
+            "lo el olfato de ",
+            "jodeador \n\nPor ",
+            "si acaso t",
+            "reinta tres de man",
+            "o sacan de ",
+            "pobrezón  /n"
+        ],
+        [
+            "Pero ",
+            "hay huelga de ",
+            "princesas,  par",
+            "ece ser /n"
+        ],
+        [
+            "Est ",
+            "cacerí ",
+            "empieza fr",
+            "acasar \n\nLa ",
+            "paciencia  en ",
+            "la raña no es de ",
+            "chicle es",
+            "ta noche n",
+            "adie l",
+            "iga /n"
+        ],
+        [
+            "Pero hay ",
+            "huelga de pri",
+            "ncesas, parec ",
+            "ser /n"
+        ],
+        [
+            "Esta c",
+            "acería em",
+            "pieza fracasar /n"
+        ],
+        [
+            "La paci",
+            "encia en la r",
+            "aña no es de chi",
+            "cle esta n",
+            "oche na",
+            "die li",
+            "ga ",
+            "/n"
+        ],
+        [
+            "Ni ",
+            "los p",
+            "eños ",
+            "",
+            "",
             "pocas p",
-            "ulgas ho",
-            "y."
+            "ulga",
+            "s hoy ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "r5Ijrf74JEA",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

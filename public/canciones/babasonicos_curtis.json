@@ -2,54 +2,164 @@
     "cancion": "curtis",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "G",
                     "Em",
-                    "Am",
+                    "Em",
+                    "Em",
+                    "G",
                     "G",
                     "D",
-                    "Am",
-                    "C"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Em",
-                    "Am",
                     "Em",
-                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
                     "G",
                     "D",
+                    "C",
+                    "C",
+                    "C",
                     "Am",
-                    "C"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "G",
-                    "Em",
+                    "G",
                     "Am",
-                    "C",
-                    "D"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "G",
-                    "D"
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
@@ -57,94 +167,149 @@
             0,
             1,
             2,
-            2,
-            0,
             3,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "No me des permiso",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "no me adviertas no po",
-            "der/n"
+            "N",
+            "o  m",
+            "e  des perm",
+            "iso  no m",
+            "e  adviertas no",
+            "poder /n Con",
+            "tu  compromi",
+            "so  tu a",
+            "yer /n"
         ],
         [
-            "con tus",
-            " compromis",
-            "os y tu aye",
-            "r/n"
+            "No n",
+            "os  conocemo",
+            "tanto, no h",
+            "emo  compartid",
+            "todo. /n Ni",
+            "siquier  tene",
+            "mo  amigos e",
+            "n  común",
+            ". /n Par",
+            "enamorar",
+            "m  no necesi",
+            "t  tu consentimiento/n"
         ],
         [
-            "no nos conocemos tanto",
+            "Dame u",
+            "n  solo be",
+            "s  que dure más q",
+            "u  una mentira./n"
+        ],
+        [
+            "N  e",
+            "n  algo me intriga m",
+            "ucho,  de s",
+            "obresum  saber",
+            ".  si a",
+            "caso  curtimo",
+            "s  se que nos vamo",
+            "entender./n"
+        ],
+        [
+            "P",
+            "ar  enamorar",
+            "m  no necesito t",
+            "u consentimiento. /n D",
+            "am  u",
+            "n  solo be",
+            "s  que dure más que u",
+            "na  mentira./n"
+        ],
+        [
+            "Q",
+            "uizá  esto s",
+            "e  me va, qui",
+            "zá  me ha ena",
+            "morado /n P",
+            "orqu  así no e",
+            "s  el amo",
+            "r  y",
+            "lo sé",
             "/n"
         ],
         [
-            "no hemos compartido to",
-            "do/n"
+            "P",
+            "ar  enamorarm",
+            "no necesito t",
+            "u  consentimiento./n"
         ],
         [
-            "ni siq",
-            "uiera tene",
-            "mos amigo",
-            "s en común./n"
+            "Dame un",
+            "sol  bes",
+            "que dure más que una",
+            "mentira /n"
         ],
         [
-            "Para enamorarme",
+            "Para en",
+            "amorarm",
+            "no necesito t",
+            "consentimiento. /n D",
+            "am  u",
+            "solo beso q",
+            "ue  dure más que una m",
+            "entira ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "no necesito tu c",
-            "onsentimiento",
-            "/n"
-        ],
-        [
-            "dame un solo beso",
-            "/n"
-        ],
-        [
-            "que dure más ",
-            "que una mentira",
-            "./n"
-        ],
-        [
-            "Nena, Algo me intri",
-            "ga mucho/n"
-        ],
-        [
-            "de eso presumo",
-            " saber/n"
-        ],
-        [
-            "y si acaso",
-            " curt",
-            "imos/n"
-        ],
-        [
-            "sé que nos vamos a entender./n"
-        ],
-        [
-            "Quizá est",
-            "o se me pa",
-            "se mañana",
-            "/n"
-        ],
-        [
-            "porque as",
-            " no es el amo",
-            "r... ya lo sé",
-            ""
+            "Dame un solo beso que dure más que una mentira.",
+            "¡Suscríbet",
+            "al canal!"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "YN_mdi0koRk",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

@@ -2,105 +2,254 @@
     "cancion": "capricho",
     "banda": "babasonicos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
                     "F#m",
-                    "A"
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
                     "F#m",
-                    "Bm7",
-                    "A",
                     "F#m",
                     "A",
-                    "E"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
                     "A",
-                    "E"
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Siento el impulso de alzar mi voz al infinito, /n"
+            "",
+            "",
+            "/n"
         ],
         [
-            "para reclamar un lug",
-            "ar en tu coraz",
-            "ón, /n"
+            "E",
+            "sta  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "su reino esbelto, /n"
+            "Es",
+            "t  es un",
+            "canción en español de rock argentino. /n Esta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "me sobrecoge",
-            " su altar, /n"
+            "E",
+            "sta  es una canción en español de rock argentino.",
+            "/n"
         ],
         [
-            "su piel trigueña, /n"
+            "Esta es",
+            "u",
+            "n",
+            "a",
+            "",
+            "",
+            "canción en",
+            "e",
+            "s",
+            "p",
+            "a",
+            "ñ",
+            "de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "quiero manosea",
-            "r. /n"
+            "Esta e",
+            "s  una canci",
+            "ó  en español de rock arge",
+            "ntino/n"
         ],
         [
-            "Siento el impulso de alzar mi voz al infinito, /n"
+            "Esta es una canci",
+            "ó  en español de r",
+            "oc",
+            "argentino./n"
         ],
         [
-            "para reclamar un lug",
-            "ar en tu coraz",
-            "ón, /n"
+            "Est  es u",
+            "n  can",
+            "ció en español de rock argentino. /n Esta es una canción en español de rock argentino./n"
         ],
         [
-            "se me derrite entre los dedos, /ne"
+            "Es",
+            "t  es una canción en español de rock argentino./n"
         ],
         [
-            "s menester conv",
-            "idar /nde la ver"
+            "Esta es una canción en español d",
+            "e  rock argentino./n"
         ],
         [
-            "tiente de tus caprichos /n"
-        ],
-        [
-            "que te dio el az",
-            "ar /n"
-        ],
-        [
-            "puedes mirarme",
-            " pero no tocarme",
-            ", "
+            "Esta es una canción en español de rock argentino. /n Esta es una canción en español de rock",
+            "argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de r",
+            "oc argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "RsQKQMnIeIc",
-            "delay": 0
+            "delay": 20340.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "procesando": 4,
+    "calidad": 1
 }

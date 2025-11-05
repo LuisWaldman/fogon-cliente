@@ -1,1 +1,237 @@
-{"cancion": "volvio-una-noche", "banda": "julio-sosa", "escala": "Em", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "B7", "Em", "F#dim7", "Em", "C", "B7", "F#dim7", "B7", "Em", "Em", "B7", "Em", "F#dim7", "Em", "E7", "Am", "B7", "Em", "B7", "Em", "B7", "Em", "G7", "C", "Dm", "Fdim7", "C", "Gdim7", "F", "F#dim7", "C", "A#dim7", "Dm", "G#dim7", "C", "C#dim7", "G", "D7", "G", "Am", "D", "D7", "G", "C", "Dm", "Fdim7", "Em", "C", "F", "Cdim7", "C", "A#dim7", "Dm", "G#dim7", "C", "C#dim7", "G", "D7", "G", "F", "C", "G7", "C", "B7", "Em", "B7", "Em", "F#dim7", "Em", "C", "B7", "F#dim7", "B7", "Em", "Em", "B7", "Em", "F#dim7", "Em", "E7", "Am", "B7", "Em", "B7", "Em", "B7", "Em", "G7", "C", "Dm", "Fdim7", "C", "Gdim7", "F", "F#dim7", "C", "A#dim7", "Dm", "G#dim7", "C", "C#dim7", "G", "D7", "G", "Am", "D", "D7", "G", "C", "Dm"]}], "orden_partes": [0]}, "letras": [[" noche,", "  no la esper", "aba,  ", " ten\u00eda en su", " rostro tan", "ta ansiedad", "/nque tuve "], ["pena de record", "arle, su felon\u00eda y su crueld", "ad/nMe dijo hu"], ["milde\u00a1", "Hay!,si me perd", "onas,  ", "el tiempo aque", "l  otra vez ", "volver\u00e1", "/nLa Prima"], ["vera es nuestra v", "ida,  ver\u00e1s que t", "odo nos sonre", "ir\u00e1", "", "", "", "/nMentira men"], ["tira, y", "o quise deci", "rle las hor", "as que pasa", "n ya no", " vuelven m\u00e1s", "/nY "], ["as\u00ed mi ca", "ri\u00f1o va al ", "tuyo enlaz", "ado es so", "lo un fantas", "ma del viej", "o pasado", "/n"], ["Que ya no se p", "uede re", "sucitar", "/nCa"], ["lle mi amarg", "ura y tu", "ve piedad", ", sus ojos", " azules", " muy grande", "s se abrieron", "/nmi "], ["pena inaud", "ita pr", "onto comprendie", "ron y con ", "una mueca", " de mujer ", "vencida", "/nme "], ["dijo 'es la v", "ida', y no", " la v\u00ed m", "s.", "/nVolvi\u00f3 esa"], [" noche, ", "nunca!, la ol", "vido, ", "  con la mira", "da tri", "ste y sin luz.", "/nY tuve "], ["miedo de aquel esp", "ectro que fue locura en mi juventu", "d./nSe fue en si"], ["lencio\u00a1", "hay!sin un rep", "roche, ", "busqu\u00e9 un espe", "jo y me qui", "se mirar", "/nHab\u00eda en mi"], [" frente tantos in", "viernos que tambi\u00e9n ", "ella tuvo pied", "ad.", "", "", "/n"], ["Mentira ment", "ira, yo", " quise decir", "le las hora", "s que pasan", " ya no ", "vuelven m\u00e1s", "/nY "], ["as\u00ed mi ca", "ri\u00f1o al ", "tuyo enlaz", "ado, es so", "lo un fantas", "ma del viej", "o pasado", "/n"], ["Que ya no se p", "uede re", "sucitar", " .  Calle", " mi amargura", "  ...."]], "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "h50ir05qkS8", "delay": 0}]}
+{
+    "cancion": "volvio-una-noche",
+    "banda": "julio-sosa",
+    "escala": "Em",
+    "bpm": 117,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C#dim7",
+                    "G7",
+                    "Em",
+                    "C",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "A#",
+                    "Em",
+                    "G",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#dim7",
+                    "B7",
+                    "F#dim7",
+                    "F#dim7",
+                    "Em",
+                    "B7",
+                    "F#dim7",
+                    "B7",
+                    "Em",
+                    "B7",
+                    "F#dim7",
+                    "F#dim7",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em F",
+                    "Dm",
+                    "Fdim7",
+                    "Gdim7",
+                    "F#dim7",
+                    "A#dim7 G#dim7",
+                    "G#dim7 C#dim7",
+                    "C#dim7",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Cdim7 A#dim7",
+                    "A#dim7 G#dim7",
+                    "G#dim7",
+                    "C#dim7",
+                    "B7",
+                    "B7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7",
+                    "C#dim7",
+                    "B7",
+                    "B7 F#dim7",
+                    "Em",
+                    "Em",
+                    "F#dim7",
+                    "F#dim7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "C",
+                    "B7",
+                    "Em",
+                    "Am",
+                    "B7",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Dm",
+                    "Fdim7 Gdim7",
+                    "F",
+                    "A#dim7",
+                    "Dm",
+                    "C",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Em",
+                    "C",
+                    "C",
+                    "A#dim7",
+                    "C",
+                    "C#dim7",
+                    "B7",
+                    "B7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Volvió una n",
+            "oche, no la ",
+            "esperaba,  había ",
+            "en su rostro tanta ",
+            "ansiedad  que t",
+            "uve miedo de r",
+            "ecordarle su f",
+            "elonía su cr",
+            "ueldad. \n\nMe dijo h",
+            "umilde, ay, si me ",
+            "perdonas,  el tiemp",
+            "o aquel otra vez vol",
+            "verá. \n\nLa pri",
+            "mavera es nuestra v",
+            "ida, verás que ",
+            "todo no sonr",
+            "eirá. \n\nMentira, ",
+            "mentira, yo quis",
+            "e decirle las horas que ",
+            "pasan ya no vuelve ",
+            "más así mi c",
+            "ariño al tuyo enla",
+            "zado es solo un fa",
+            "ntasma del viejo p",
+            "asado que ya no ",
+            "se puede resu",
+            "citar. \n\nCallé mi a",
+            "margura tuve ",
+            "piedad,  sus o",
+            "jos azules muy grandes ",
+            "se abrieron, mi pena ",
+            "inaudita  pronto co",
+            "mprendieron con ",
+            "una mueca de mujer ",
+            "vencida  me dijo es ",
+            "la vida no la ",
+            "vi más. /n"
+        ],
+        [
+            "V",
+            "olvió una noche, ",
+            "nunca la olvid",
+            "o con la mirada ",
+            "triste  sin luz ",
+            "que tuve mie",
+            "do de aquel espect",
+            "ro que fue locura ",
+            "en mi juventud. /n"
+        ],
+        [
+            "Se fue en silenci",
+            "o, sin un reproc",
+            "he busqué un espejo ",
+            "me quise mirar ha",
+            "bía en mi frente ta",
+            "ntos inviernos ",
+            "que también ella tu",
+            "vo piedad. \n\nM",
+            "entira, mentira",
+            ", yo quise deci",
+            "rle las horas que pasan ya ",
+            "no vuelven más ",
+            "así mi cariño al ",
+            "tuyo enlazado es ",
+            "solo un fantasma ",
+            "del viejo pasado que ",
+            "ya no se pued ",
+            "resucitar. /n"
+        ],
+        [
+            "Callé mi amargur ",
+            "tuve pied",
+            "ad, sus ojos azul",
+            "es muy grandes se abrier",
+            "on, mi pena inaudi",
+            "ta pronto comprendieron ",
+            "con una muec",
+            "a de mujer vencida ",
+            "me dijo es la vid ",
+            "no la vi más. "
+        ]
+    ],
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "h50ir05qkS8",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}
