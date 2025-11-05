@@ -1,7 +1,6 @@
 import { useAppStore } from '../../stores/appStore'
 import { ClienteSocket } from '../conexion/ClienteSocket'
 import { Reproductor } from './reproductor'
-import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroCancion } from '../sincro/SincroCancion'
 import { OrigenCancion } from '../cancion/origencancion'
 import { CancionManager } from '../cancion/CancionManager'
@@ -12,27 +11,6 @@ export class ReproductorConectado extends Reproductor {
   momentoInicio: Date | null = null
   compasInicio: number = 0
   token: string = ''
-
-  sincronizar() {
-    const appStore = useAppStore()
-    const helper = HelperSincro.getInstance()
-    const momento = helper.MomentoSincro()
-    const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
-    const golpesxcompas = appStore.cancion?.compasCantidad || 4
-    const sincro = new SincroCancion(
-      duracionGolpe,
-      appStore.sesSincroCancion.timeInicio,
-      golpesxcompas, // golpesxcompas
-      appStore.sesSincroCancion.desdeCompas, // duracionGolpe
-    )
-
-    appStore.sesSincroCancion = sincro
-    const est = helper.GetEstadoSincro(sincro, momento)
-    appStore.EstadoSincro = est
-    appStore.compas = est.compas
-    appStore.golpeDelCompas = est.golpeEnCompas
-    appStore.estadoReproduccion = est.estado
-  }
 
   async GetCancionDelFogon() {
     const origen = new OrigenCancion('fogon', '', '')
@@ -81,9 +59,6 @@ export class ReproductorConectado extends Reproductor {
     })
   }
 
-  override onInicioCiclo() {
-    this.sincronizar()
-  }
   async EnviarCancion(cancion: Cancion) {
     const origenN = new OrigenCancion('fogon', '', '')
     CancionManager.getInstance().Save(origenN, cancion)

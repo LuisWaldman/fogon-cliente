@@ -8,7 +8,7 @@ import { onMounted, ref } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
-import { vistaHome } from '../modelo/helperVistas/vistaHome'
+import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
 
 const listasManager: ListasDBManager = new ListasDBManager()
 

@@ -1,4 +1,4 @@
-import { ListasDBManager } from '../cancion/ListasDBManager'
+import { ListasDBManager } from '../../cancion/ListasDBManager'
 import { StrategyVista } from './strategyVista'
 import { vistaHome } from './vistaHome'
 

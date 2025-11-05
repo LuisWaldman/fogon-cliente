@@ -1,6 +1,6 @@
 import type { StrategyVista } from './strategyVista'
 import { StrategyVistaDefault } from './strategyVistaDefault'
-import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import type { ItemIndiceCancion } from '../../cancion/ItemIndiceCancion'
 import { StrategyVistaUltimas50 } from './strategyVistaUltimas50'
 import { StrategyVistaLocal } from './strategyVistaListasLocal'
 import { StrategyVistaServer } from './strategyVistaListaServer'

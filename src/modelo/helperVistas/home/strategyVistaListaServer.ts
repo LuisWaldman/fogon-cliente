@@ -1,5 +1,5 @@
-import { useAppStore } from '../../stores/appStore'
-import { CancionManager } from '../cancion/CancionManager'
+import { useAppStore } from '../../../stores/appStore'
+import { CancionManager } from '../../cancion/CancionManager'
 import { StrategyVista } from './strategyVista'
 import { vistaHome } from './vistaHome'
 
