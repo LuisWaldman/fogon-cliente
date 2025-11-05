@@ -102,11 +102,12 @@ export class Reproductor {
       if (appStore.MediaVistas) {
         if (appStore.MediaVistas.GetTiempoDesdeInicio) {
           const tiempoDesdeInicio = appStore.MediaVistas.GetTiempoDesdeInicio()
-          console.log(tiempoDesdeInicio)
-          const momento: number =
-            tiempoDesdeInicio + appStore.sesSincroCancion.timeInicio!
-
-          const est = helper.GetEstadoSincro(appStore.sesSincroCancion, momento)
+          appStore.sesSincroCancion.timeInicio = 0
+          appStore.sesSincroCancion.desdeCompas = 0
+          const est = helper.GetEstadoSincroMedia(
+            appStore.sesSincroCancion,
+            tiempoDesdeInicio,
+          )
           appStore.EstadoSincro = est
           appStore.compas = est.compas
           appStore.golpeDelCompas = est.golpeEnCompas

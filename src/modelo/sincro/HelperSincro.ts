@@ -218,6 +218,40 @@ export class HelperSincro {
     )
   }
 
+  public GetEstadoSincroMedia(
+    sincro: SincroCancion,
+    momento: number,
+  ): EstadoSincroCancion {
+    let estadoReproduccion: 'Reproduciendo' | 'Iniciando'
+    let compas: number
+    let golpeDelCompas: number
+    let deltaGolpe: number
+
+    let diferencia = momento
+    if (diferencia > 0) {
+      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
+      estadoReproduccion = 'Reproduciendo'
+      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
+      deltaGolpe = sincro.duracionGolpe - deltaGolpe
+      compas = sincro.desdeCompas + Math.floor(golpe / sincro.golpesxcompas)
+      golpeDelCompas = golpe % sincro.golpesxcompas
+    } else {
+      diferencia = diferencia * -1
+      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
+      estadoReproduccion = 'Iniciando'
+      compas = sincro.desdeCompas
+      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
+      golpeDelCompas = sincro.golpesxcompas - (golpe + 1)
+    }
+
+    return new EstadoSincroCancion(
+      compas,
+      golpeDelCompas,
+      estadoReproduccion,
+      deltaGolpe,
+    )
+  }
+
   public GetSincro(
     estado: EstadoSincroCancion,
     momento: number,
