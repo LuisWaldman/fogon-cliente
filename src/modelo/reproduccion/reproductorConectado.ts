@@ -74,17 +74,7 @@ export class ReproductorConectado extends Reproductor {
   }
 
   override async iniciarReproduccion() {
-    const appStore = useAppStore()
-    if (appStore.cancion) {
-      appStore.estadoReproduccion = 'Iniciando'
-      if (appStore.compas < 0) {
-        appStore.compas = 0
-      }
-      this.cliente.iniciarReproduccion(
-        appStore.compas,
-        appStore.cancion.duracionCompas * 1000,
-      )
-    }
+    super.iniciarReproduccion()
   }
 
   override detenerReproduccion() {

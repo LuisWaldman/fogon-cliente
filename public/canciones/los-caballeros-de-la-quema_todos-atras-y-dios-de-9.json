@@ -2,36 +2,70 @@
     "cancion": "todos-atras-y-dios-de-9",
     "banda": "los-caballeros-de-la-quema",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "A",
+                    "B",
+                    "E",
+                    "E",
+                    "B",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "F#",
                     "A",
-                    "E"
+                    "A",
+                    "E A",
+                    "E A",
+                    "E A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "B",
-                    "F#",
-                    "A",
-                    "E"
+                    "B",
+                    "F#"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B",
+                    "E",
+                    "E",
+                    "E",
                     "A",
-                    "G#",
-                    "F#",
+                    "E",
+                    "A",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
@@ -39,124 +73,227 @@
                 "nombre": "parte4",
                 "acordes": [
                     "E",
-                    "F#",
+                    "E",
+                    "E",
+                    "B",
                     "A",
-                    "G#",
-                    "F#",
+                    "A",
                     "E",
                     "A",
-                    "E"
+                    "E",
+                    "E",
+                    "B",
+                    "F#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "B",
+                    "B",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "E",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "F#",
+                    "F#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
                     "A",
                     "E",
                     "A",
-                    "B",
+                    "E",
                     "A",
-                    "A",
-                    "B"
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
             2,
-            0,
-            0,
-            0,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "oy te madru",
-            "gás hecho",
-            " una gilett",
-            "e/nY ha"
-        ],
-        [
-            "ce un rat",
-            "o largo que n",
-            "o te ras",
-            "cas/ndond"
-        ],
-        [
-            "e el mun",
-            "do mas te mi",
-            "opa y mas",
-            " se va/nde jeta al p"
-        ],
-        [
-            "iso",
             "",
             "",
             "",
-            "/nTe garua"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " finito se te pone ",
-            "blandito/nTu nov"
+            "Esta es una canción en espa",
+            "ñol de rock argentino. \n\nHoy te ",
+            "madrugas hecho un a",
+            "chilé \n\nCon tus ",
+            "dientes castañ",
+            "ándote \n\nNo te ",
+            "escondes en ese di",
+            "sfraz \n\nSe te ",
+            "piantan las ganas de ",
+            "llorar  h",
+            "ace un rato l",
+            "argo \n\nQue no ",
+            "te animas ",
+            "/n"
         ],
         [
-            "ia se fue con s",
-            "u novia/nSe te"
+            "Donde el mun",
+            "do \n\nMás te ",
+            "pica más se va /n"
         ],
         [
-            " enmierdan los planes te cer",
-            "raron los bares/nNo te"
+            "Deje estar al ",
+            "piso  \n\nTe garúa fin",
+            "ito se te pone blandito \n\nTu novia se fue ",
+            "con su novia \n\nSe te miedan los ",
+            "planes, te cerraron los bares \n\nNo te sale una pu",
+            "ta canción \n\nTe garúa fini",
+            "to se te pone blandito \n\nTu novia se fue con ",
+            "su novia \n\nSe te miedan los plane",
+            "s, te cerraron los bares ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " sale una puta ",
-            "cancion/nTe garu"
+            "Bu",
+            "eno hermanito, cambiaste ",
+            "la guitarra \n\nTe gustarí ",
+            "ser el más sin vicios ",
+            "de tu cuadra \n\nSerífa",
+            "nte remoto, vos tenés to",
+            "dos los números \n\nSale ",
+            "tu fovagre de tu almuerzo ",
+            "desnudo  ",
+            "hace  un rat",
+            "o largo \n\nQue no ",
+            "te rascás ",
+            "/n"
         ],
         [
-            "a finito se te pon",
-            "e blandito/nTu nov"
+            "Donde el mun",
+            "do \n\nMás te ",
+            "pica más se va /n"
         ],
         [
-            "ia se fue con s",
-            "u novia/nSe te"
+            "Deje estar al p",
+            "iso \n\nTe garúa finit",
+            "o se te pone blandito \n\nTu novia se fue con ",
+            "su novia \n\nSe te miedan los planes, ",
+            "te cerraron los bares \n\nNo te sale una puta c",
+            "anción \n\nTe garúa finito se ",
+            "te pone blandito \n\nTu novia se fue con su n",
+            "ovia \n\nSe te miedan los planes, te ce",
+            "rraron los bares ",
+            "te enro",
+            "scas cuatro manos /n"
         ],
         [
-            " enmierdan los planes te cer",
-            "raron los bares/n"
+            "En est",
+            "e guiso de chifla",
+            "dos \n\nParti",
+            "do chival que jug",
+            "amos \n\nTodo ",
+            "atrás \n\nDios de n",
+            "ueve \n\nTodo ",
+            "abajo \n\nDios de n",
+            "ueve \n\nTod",
+            "os atrás nuestro \n\nDio",
+            "s \n\nDe siempre nos r",
+            "osar \n\nTe garúa fini",
+            "to se te pone blandito \n\nTu novia se fue ",
+            "con su novia \n\nSe te miedan los pl",
+            "anes, te cerraron los bares \n\nNo te sale una put",
+            "a canción \n\nTe garúa finit",
+            "o se te pone blandito \n\nTu novia se fue con ",
+            "su novia \n\nSe te miedan los planes, ",
+            "te cerraron los bares \n\nNo te sale una puta c",
+            "anción \n\nCanci",
+            "ón, canción \n\nNo te sale una puta ca",
+            "nción /n"
         ],
         [
-            "todo",
-            " igu",
-            "al y ",
-            "despues:/ny"
+            "Canción, canción ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " te rasc",
-            "as a 4 man",
-            "os",
-            "/ne"
-        ],
-        [
-            "n este gui",
-            "so de chi",
-            "flados",
-            "/np"
-        ],
-        [
-            "artido chi",
-            "co que jugamos"
+            "Canción "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "-glei5OY4lI",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,37 +2,55 @@
     "cancion": "bs-as-esquina-vietnam",
     "banda": "los-caballeros-de-la-quema",
     "escala": "F#5",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#",
+                    "B",
+                    "F#5",
+                    "D5",
+                    "A5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#5",
-                    "E5",
                     "F#5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "E5",
                     "E5",
                     "F#5",
                     "D5",
-                    "E5"
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B5",
-                    "E5",
-                    "A5",
-                    "E5",
-                    "B5",
-                    "F5",
+                    "D5",
                     "D5"
                 ]
             },
@@ -40,12 +58,8 @@
                 "nombre": "parte4",
                 "acordes": [
                     "A5",
-                    "E5",
+                    "A5",
                     "B5",
-                    "C#5",
-                    "D5",
-                    "E5",
-                    "F#5",
                     "B5"
                 ]
             },
@@ -53,105 +67,278 @@
                 "nombre": "parte5",
                 "acordes": [
                     "D5",
+                    "D5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "E5",
+                    "E5",
+                    "B5",
+                    "E5",
                     "E5",
                     "F#5",
                     "B5",
-                    "D5",
+                    "B5",
                     "E5",
                     "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
                     "F#5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "E5",
+                    "F#5",
+                    "F#5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E5",
+                    "F#5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E5",
+                    "B5",
+                    "B5",
+                    "E5",
+                    "E5",
+                    "B5",
+                    "B5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "E5",
+                    "E5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
             2,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "Como un contag",
-            "io de Saigón...",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "con la cabe",
-            "za desdentada",
+            "Com",
+            "o un contagio de saig",
+            "o /n"
+        ],
+        [
+            "Con ",
+            "la cabeza des",
+            "ventada ",
+            "un ruido el mano el ",
+            "hastido ",
+            "",
+            "un techo que se ",
+            "está ",
+            "emb",
+            "ric",
+            "ado ",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "y un ruido que",
-            " hilvanó el hastí",
-            "o",
+            "Si",
+            "tiado /n"
+        ],
+        [
+            "Polvateando  la nue",
+            "va estafa, ",
+            "esta calavera ",
+            "va chillar /n"
+        ],
+        [
+            "Polvateando  la ",
+            "próxima estafa",
+            ", esta calav",
+            "era va ch",
+            "illar \n\nBuenos \n\nAi",
+            "res diez trajeti",
+            "vos, \n\nBuenos \n\nA",
+            "ires pega por la e",
+            "spalda \n\nMuy ",
+            "bien quien danza pr",
+            "imero, voy m",
+            "oquear los nadores de ",
+            "razia \n\nMuy ",
+            "bien quien pela p",
+            "rimero, voy ",
+            "moquear los nadores ",
+            "de razia \n\nMis ",
+            "dueños de la fue",
+            "rza pid",
+            "en más p",
+            "eaje /n"
+        ],
+        [
+            "Se agazapan en tu ",
+            "sopa  te ",
+            "arrancan la senc",
+            "illa \n\nYa voy ",
+            "luchar p",
+            "ara g",
+            "uard",
+            "ar los cadáv",
+            "eres de hoy dese ",
+            "me disfr",
+            "azo de azul p",
+            "ara",
+            "sabe",
+            "r cómo ap",
+            "esta el enemig ",
             "/n"
         ],
         [
-            "y un techo que",
-            " se cae en picada...",
-            "/nSitia"
+            "Recolect ",
+            "aliados sac",
+            "ados de suya /n"
         ],
         [
-            "do en",
-            " mi sano ju",
-            "icio/ntajead"
+            "Hay a",
+            "lguien que quiera tir",
+            "ar de ",
+            "esta so",
+            "la \n\nBuenos /n"
         ],
         [
-            "o por esquirla",
-            "s porteñas/n"
+            "Aires  diez traje",
+            "tivos, \n\nBuenos /n"
         ],
         [
-            "olfateando la n",
-            "ueva estafa, ",
-            "esta calavera va a",
-            " chillar/n"
+            "Aires  pega por la e",
+            "spalda \n\nMuy bien q",
+            "uien danza pri",
+            "mero, voy moqu",
+            "ear los nadores de ra",
+            "zia \n\nMuy b",
+            "ien quien pela prim",
+            "ero, voy moqu",
+            "ear los nadores de r",
+            "azia ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "olfateando la p",
-            "roxima estafa",
-            ", esta calavera va ",
-            "a chillar/n"
-        ],
-        [
-            "Buenos Aires adies",
-            "tra cretinos/n"
-        ],
-        [
-            "Buenos Aires p",
-            "ega por la espalda/n"
-        ],
-        [
-            "muy bien ¿Quién",
-            " tranza primero?/n"
-        ],
-        [
-            "voy a moquear a los dado",
-            "res de razzia/n"
-        ],
-        [
-            "muy bien ¿Quién",
-            " pela primero?/n"
-        ],
-        [
-            "voy a moquear a los dado",
-            "res de razzia/n"
-        ],
-        [
-            "los dueños del almuerzo piden más peaje"
+            "Muy bie ",
+            "quien danza prime",
+            "ro, voy moquear ",
+            "los nadores de raz",
+            "ia \n\nMuy bien qui",
+            "en pela primero, voy moquear los nadores de razia ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "sdgvFe7NxKE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

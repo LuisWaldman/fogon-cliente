@@ -2,273 +2,527 @@
     "cancion": "otro-jueves-cobarde",
     "banda": "los-caballeros-de-la-quema",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "C",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "G",
                     "Am",
                     "G",
-                    "D",
+                    "G",
                     "G",
                     "Bm",
-                    "Am",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "G",
-                    "D",
                     "G",
                     "Bm",
-                    "Am",
-                    "G",
-                    "D",
-                    "Em",
-                    "Bm",
-                    "Am",
-                    "D",
-                    "Em",
-                    "Bm",
-                    "Am",
-                    "G",
-                    "D",
                     "G",
                     "C",
                     "D",
-                    "G",
-                    "C",
-                    "D",
-                    "G",
-                    "C",
-                    "D",
-                    "G",
-                    "Em",
-                    "D",
-                    "Am",
-                    "G",
-                    "Am",
-                    "G",
-                    "D",
-                    "G",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
                     "Bm",
                     "Am",
-                    "G",
-                    "D",
-                    "G",
-                    "Bm",
-                    "Am",
-                    "G",
-                    "D",
-                    "Em",
-                    "Bm",
-                    "Am",
-                    "D",
-                    "Em",
-                    "Bm",
-                    "Am",
-                    "G",
-                    "D",
-                    "G",
-                    "C",
-                    "D",
-                    "G",
-                    "C",
-                    "D",
-                    "G",
-                    "C",
-                    "D",
-                    "G",
-                    "C",
-                    "D",
                     "Am",
                     "Em",
-                    "Bm",
-                    "Am",
-                    "D",
                     "Em",
                     "Bm",
-                    "Am",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
                     "G",
                     "D",
+                    "G",
                     "G",
                     "C",
-                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
                     "C",
                     "D",
-                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
                     "C",
                     "D",
-                    "G",
-                    "Em",
-                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "G",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "C",
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Em",
+                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "D",
+                    "G",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
         ]
     },
     "letras": [
-        [],
         [
-            "Otra tarde como las demas sin amor",
-            "es rotos de casualidad/nOtro ju"
-        ],
-        [
-            "eves de esos que no se dejan bes",
-            "ar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "No eran las esquirlas del rencor, eran tel",
-            "arañas en el corazón/nUn adio"
+            "Ot",
+            "ra tarde como las ",
+            "demás \n\nSin a",
+            "mores rotos de ",
+            "casualidad  \n\nOtro",
+            "s jueves de esos ",
+            "que no se d",
+            "ejan besa",
+            "r \n\nNo ",
+            "eran ",
+            "las esquirlas del re",
+            "ncor, eran tel",
+            "arañas ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "s con pestañas, un desamor sin ",
-            "amor",
-            "/nHoy que no me en"
+            "Hoy que no ",
+            "me encuentro la n",
+            "ariz \n\nHoy que ",
+            "no me sale ni ",
+            "dormir \n\nNo ",
+            "le pongas miel ",
+            "la verdad /n"
         ],
         [
-            "cuentro la na",
-            "riz, hoy que no me va",
-            "lgo ser feliz",
-            "/nNo le pongas mie"
+            "Que siendo mu",
+            "erto es ",
+            "de tanto re",
+            "suci",
+            "tar \n\nOtra t",
+            "arde que no arde \n\nEsta t",
+            "arde sin pasado m",
+            "añana /n"
         ],
         [
-            "l a la verdad",
-            " que si ando muer",
-            "to es de tanto/nR"
+            "Ot",
+            "ra tarde tan coba",
+            "rde \n\nEsta tarde que no ",
+            "prueba  manza",
+            "nas \n\nOt",
+            "ro jueves que ",
+            "no sabe bajarse /n"
         ],
         [
-            "esucit",
-            "ar/nOtra t"
+            "Ni los pantalo",
+            "nes /n"
         ],
         [
-            "arde que no arde esta tard",
-            "e sin pasado mañ",
-            "ana/nOtra t"
+            "Otro j",
+            "ueves que anda dando ",
+            "lastima  \n\nPor los ",
+            "rincone /n"
         ],
         [
-            "arde tan cobarde esta tard",
-            "e que no prueba ma",
-            "nzanas/nOtro j"
+            "De ",
+            "esta tarde en ",
+            "coma  dos ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ueves que no sabe bajarse n",
-            "i los pantalones",
-            "/nOtro j"
+            "Otr ",
+            "jueves como los d",
+            "emás \n\nDemasiad",
+            "o martes demasiado i",
+            "gual te declar",
+            "o la guerra \n\nNi ",
+            "tu me firmas la ",
+            "paz ",
+            "el ",
+            "planeta  baila su g",
+            "angrena otra vez v",
+            "olvieron embarrar ",
+            "la fiesta \n\nLos idio",
+            "tas en celo ",
+            "las sopran los co",
+            "ntos ",
+            "hoy me quedo mu",
+            "ro para oír /n"
         ],
         [
-            "ueves que anda dando last",
-            "ima por los rincones",
-            "/nDe esta "
+            "Lo que nunca te ",
+            "supe  decir /n"
         ],
         [
-            "tarde en coma dos/n"
-        ],
-        [],
-        [
-            "Otro jueves como los demas demasia",
-            "do martes, demasiado igual/nNi te dec"
+            "No perfumes tan",
+            "to la verdad /n"
         ],
         [
-            "laro la guerra, ni tu me firmas la",
-            " paz",
-            "/nY "
+            "Que siendo mu",
+            "erto es de ",
+            "tanto resu",
+            "citar /n"
         ],
         [
-            "el planeta baila su gangrena, y otra ve",
-            "z volvieron a embarrar la fiesta/nLos idi"
+            "Otra tarde que ",
+            "no arde \n\nEsta tarde sin ",
+            "pasado mañana /n"
         ],
         [
-            "otas en celo y las sopranos co",
-            "n tos",
-            "/nY hoy me quedo m"
+            "O",
+            "tra tarde tan ",
+            "cobarde \n\nEsta tarde que ",
+            "no prueba manzanas ",
+            "/n"
         ],
         [
-            "udo para o",
-            "ir lo que nunca te ",
-            "supe decir",
-            "/nNo perfumes ta"
+            "Otro  jueves que no ",
+            "sabe abrocharse \n\nNi los ",
+            "pantalones /n"
         ],
         [
-            "nto la verd",
-            "ad que hasta a los mu",
-            "ertos nos cansa/nRe"
+            "O",
+            "tro jueves que anda d",
+            "ando lastima \n\nPor ",
+            "los rincones ",
+            "/n"
         ],
         [
-            "sucita",
-            "r/nOtra t"
+            "De esta tarde en ",
+            "fa menor ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "hoy que no me encuentr ",
+            "la nariz /n"
         ],
         [
-            "arde que no arde, esta ta",
-            "rde sin pasado maña",
-            "na/nOtra t"
+            "Hoy que no me sale ",
+            "ni dormir \n\nNo ",
+            "le pongas miel ",
+            "la verdad /n"
         ],
         [
-            "arde tan cobarde, esta ta",
-            "rde que no prueba manza",
-            "nas/nOtro j"
+            "Que siendo muer",
+            "to es de tan",
+            "to resuc",
+            "itar /n"
         ],
         [
-            "ueves que no sabe abrocha",
-            "rse ni los pantal",
-            "ones/nOtro j"
+            "Otra  tarde que no ",
+            "arde \n\nEsta tarde sin pa",
+            "sado mañana /n"
         ],
         [
-            "ueves que anda dando last",
-            "ima por los rinc",
-            "ones/nDe esta t"
+            "O",
+            "tra tarde tan cobar",
+            "de \n\nEsta tarde que no pru",
+            "eba manzanas /n"
         ],
         [
-            "arde en fa menor/nY hoy que no me enc"
+            "Ot",
+            "ro jueves que no sab ",
+            "bajarse \n\nNi los pa",
+            "ntalones /n"
         ],
         [
-            "uentro la nar",
-            "iz, hoy que no me sal",
-            "e ni dormir",
-            "/nNo maquilles t"
+            "Otr",
+            "o jueves que regal",
+            "a lastima \n\nPor los r",
+            "incones /n"
         ],
         [
-            "anto la ver",
-            "dad que hasta a los mu",
-            "ertos nos exita/n"
-        ],
-        [
-            "Resucit",
-            "ar/nOtra t"
-        ],
-        [
-            "arde que no arde, esta ta",
-            "rde sin pasado ma",
-            "ñana/nOtra t"
-        ],
-        [
-            "arde tan cobarde, esta ta",
-            "rde que no prueba",
-            " manzanas/nOtro j"
-        ],
-        [
-            "ueves que no sabe bajarse",
-            " los pantalones",
-            "/nOtro j"
-        ],
-        [
-            "ueves que regala last",
-            "ima por los rinco",
-            "nes de esta resac",
-            "a sin"
+            "De e",
+            "sta resaca ",
+            "sin voz ",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "SK-7-GNbd3k",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

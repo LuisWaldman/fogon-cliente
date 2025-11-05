@@ -8,186 +8,466 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "A",
                     "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B",
-                    "A",
-                    "B",
-                    "A7M",
-                    "A",
-                    "A#°"
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
-                    "G#m",
-                    "F#m",
-                    "B",
-                    "E",
-                    "E7",
+                    "A",
+                    "A",
                     "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "B",
-                    "E",
-                    "A7M",
-                    "B"
+                    "A"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "B",
-                    "A",
-                    "G",
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "B",
+                    "E",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E7",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A7M",
+                    "A7M",
+                    "A7M",
+                    "B",
+                    "B",
+                    "E",
+                    "A7M",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
             3,
-            0,
-            1,
-            2,
-            2,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
         ]
     },
     "letras": [
-        [],
         [
-            "Nena vamos a la playa/n"
-        ],
-        [
-            "Quiero conocerte/nQuiero despe"
-        ],
-        [
-            "rtar con vos/n"
-        ],
-        [
-            "Nena no estoy apurado/nVos sos el ve"
-        ],
-        [
-            "rano/nMas allá de "
-        ],
-        [
-            "la estación/n"
-        ],
-        [
-            "Nunca es tarde",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Nunca es tarde",
+            "Lennar /n"
+        ],
+        [
+            "Vamos la ",
+            "playa /n"
+        ],
+        [
+            "Quiero co",
+            "nocerte /n"
+        ],
+        [
+            "Quiero desper",
+            "tar con vos ",
             "/n"
         ],
         [
-            "Para encontra",
-            "r/n"
+            "Lennar /n"
         ],
         [
-            "Y si me pierdo en el inte",
-            "nto/n"
+            "No estoy apur",
+            "ado /n"
         ],
         [
-            "Por ser un loco en el desier",
-            "to/n"
+            "Vos sos el v",
+            "erano /n"
         ],
         [
-            "Tenés el código secreto par",
-            "a usarlo cuando quieras en mi/n"
+            "Más allá de la ",
+            "estación  /n"
         ],
         [
-            "No me dejes a",
-            "sí/n"
-        ],
-        [],
-        [
-            "No se como explicarte esa tarde en el parque/n"
+            "N",
+            "unca es ta",
+            "rde \n\nNu",
+            "nca es tarde /n"
         ],
         [
-            "Por un instante supe que",
-            " eras para mi/nYo no se lo que "
+            "Para ",
+            "encontr ",
+            "",
+            "si me pierdo en el ",
+            "intento \n\nPor ",
+            "ser un loco en el d",
+            "esierto \n\nPr",
+            "enes el código sec",
+            "reto \n\nPara usarlo cuando qu",
+            "ieras en mi \n\nNo ",
+            "me dejes ",
+            "así ",
+            "/n"
         ],
         [
-            "quiero/nY se hace de"
+            "No sé ",
+            "cómo explicart /n"
         ],
         [
-            " noche las luces se apagan/nY vos no qu"
+            "Esa ",
+            "tarde en el pa",
+            "rque \n\nEn ",
+            "un instante su",
+            "pe que eras para ",
+            "mí \n\nYo no sé ",
+            "lo que quiero \n\nYo miro en ",
+            "el espejo \n\nMe dicen mis ",
+            "amigos que lo nuestro no ",
+            "era cierto se hace de ",
+            "noche, las luces se ",
+            "apagan  vos no qu",
+            "erés quedarte sola en la ",
+            "cama  /n"
         ],
         [
-            "eres quedarte sola en la cama/n"
+            "Nunca es ",
+            "tarde  /n"
         ],
         [
-            "Nunca es tard",
-            "e/n"
+            "Nunca es ",
+            "tarde  /n"
         ],
         [
-            "Nunca es tard",
-            "e/n"
+            "Par",
+            "a encontrar ",
+            "si me pi",
+            "erdo en el inten",
+            "to \n\nPor ser un lo",
+            "co en el desierto /n"
         ],
         [
-            "Para encontra",
-            "r/n"
+            "Prenes el có",
+            "digo secreto \n\nPara usarl",
+            "o cuando quieras en mi /n"
         ],
         [
-            "Y si me pierdo en el inte",
-            "nto/n"
+            "No me de",
+            "jes si me pierdo ",
+            "en el intento /n"
         ],
         [
-            "Por ser un loco en el desier",
-            "to/n"
+            "Por ser un loco en ",
+            "el desierto /n"
         ],
         [
-            "Tenés el código secreto par",
-            "a usarlo cuando quieras en mi/n"
+            "Prenes el código s",
+            "ecreto \n\nPara usarlo c",
+            "uando quieras en mi /n"
         ],
         [
-            "No me dejes/n"
+            "No me de",
+            "jes \n\nNo ",
+            "me d",
+            "ejes ",
+            "/n"
         ],
         [
-            "Y si me pierdo en el inte",
-            "nto/n"
+            "Nen ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Por ser un loco en el desier",
-            "to/n"
+            "Nen",
+            "a ",
+            "",
+            "/n"
         ],
         [
-            "Tenés el código secreto par",
-            "a usarlo cuando quieras en mi/n"
+            "Nena ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "No me dejes",
-            "/nNo me dejes"
+            "Ne",
+            "na ",
+            "",
+            "/n"
         ],
-        [],
-        []
+        [
+            "Nena \n\nN",
+            "ena ",
+            "",
+            "/n"
+        ],
+        [
+            "Nen",
+            "a \n\nNena \n\nNena /n"
+        ],
+        [
+            "Nen /n"
+        ],
+        [
+            "Por ",
+            "ser ",
+            "un loco en el de",
+            "sierto \n\nPor ",
+            "ser un loco en el desierto "
+        ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "LoHHCJMdMuQ",
-            "delay": 0
+            "delay": 7000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

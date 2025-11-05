@@ -8,22 +8,47 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "D/F#",
-                    "Em",
-                    "D/F#",
+                    "G#",
+                    "E",
                     "Em",
                     "G",
-                    "D/F#",
+                    "F",
+                    "D#",
+                    "Em",
+                    "E",
+                    "B",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
@@ -31,47 +56,56 @@
         "orden_partes": [
             0,
             1,
-            1,
-            1
+            2
         ]
     },
     "letras": [
-        [],
         [
-            "mí cuervo ",
-            "negro/nvete "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ya, oh,  vete y",
-            "a,/nnooo"
+            "E",
+            "sta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "  te",
-            " quiero ver más",
-            "/nni aq"
-        ],
-        [
-            "uí,",
-            "  ni all",
-            "á.-/nVete de "
-        ],
-        [
-            "mí, ",
-            "ah, a",
-            "h/nVete de "
-        ],
-        [
-            "mí, ",
-            "ah, ah"
+            "Esta es una canc",
+            "ión en español de rock argentino. \n\nEsta es una canción en español de r",
+            "ock argentino. \n\nE",
+            "sta es una canción en español de rock arg",
+            "entino. ",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Pz65KMZkivE",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

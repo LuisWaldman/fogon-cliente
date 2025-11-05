@@ -8,185 +8,397 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bb7M",
-                    "B°",
+                    "Bb7M",
                     "Cm7",
-                    "F7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "Cm7",
-                    "F7",
+                    "Cm7",
+                    "Bb7M",
+                    "Bb7M"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bb7M",
+                    "Bb7M",
+                    "Cm7",
+                    "Cm7",
                     "Dm7",
-                    "Dbm7",
-                    "Cm7",
-                    "F7",
-                    "Bb7M",
-                    "B°",
-                    "Cm7",
-                    "Db°7",
                     "Dm7",
-                    "Dbm7",
-                    "Cm7",
                     "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "Cm7",
+                    "Cm7",
+                    "Bb7M"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "Bb7M",
-                    "Bb7",
                     "Cm7",
                     "F7",
-                    "Bb7M",
-                    "B°",
-                    "Cm7",
-                    "F7",
-                    "Fm7",
-                    "Bb13",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Eb7M",
-                    "D7",
-                    "Gm7",
-                    "C7",
-                    "Cm7",
-                    "F7",
+                    "Eb7M",
                     "Bb7M",
                     "Gm7",
-                    "Bb7M",
                     "Gm7",
+                    "Cm7",
+                    "Cm7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F7",
                     "Bb7M",
-                    "B°",
-                    "Cm7",
-                    "F7",
-                    "Cm7",
-                    "F7",
+                    "Bb7M",
                     "Dm7",
-                    "Dbm7",
+                    "Dm7",
+                    "Bb7M",
+                    "Bb7M",
+                    "Bb7M",
+                    "Dm7",
+                    "Dm7",
                     "Cm7",
+                    "Cm7",
+                    "Bb7M",
+                    "F7",
                     "F7",
                     "Bb7M",
-                    "B°",
+                    "Bb7M"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bb7M",
+                    "Bb7M",
                     "Cm7",
-                    "Db°7",
-                    "Dm7",
-                    "Dbm7",
+                    "Cm7",
+                    "Bb7M",
+                    "Bb7M",
+                    "Cm7",
+                    "Bb7M"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bb7M",
+                    "Bb7M",
+                    "Cm7",
+                    "Cm7",
+                    "Bb7M"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bb7M",
                     "Cm7",
                     "F7",
-                    "B7M",
-                    "Bb7"
+                    "F7",
+                    "Eb7M",
+                    "Eb7M",
+                    "Bb7M",
+                    "Gm7",
+                    "Gm7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Gm7",
+                    "Cm7",
+                    "Cm7",
+                    "F7",
+                    "F7",
+                    "Cm7",
+                    "Cm7",
+                    "Bb7M"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bb7M",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Cm7",
+                    "Cm7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
         ]
     },
     "letras": [
         [
-            "Nadie me despierta en la mañ",
-            "ana/n"
+            "/n"
         ],
         [
-            "Y a cualquier hora tomo el ca",
-            "fe/n"
+            "Nadie  me despierta en ",
+            "la mañana, ",
+            "cualquier hora tom",
+            "o el café. /n"
         ],
         [
-            "Cuando busque el sol por la v",
-            "entana/nNo lo en"
+            "Cuando busco el sol por ",
+            "la ventana, no ",
+            "lo encontré ",
+            "/n"
         ],
         [
-            "contr",
-            "e",
+            "Va pasando el día ",
+            "lentamente, ",
+            "mi casa se l",
+            "leno de gente. \n\nS",
+            "algo sin que n",
+            "adie se dé cuenta ",
+            "nadie d",
+            "igo a",
+            "di",
+            "ós. \n\nQuiero vol",
+            "ver, quiero vol",
+            "ver, quiero vo",
+            "lverte ver. /n"
+        ],
+        [
+            "Quiero vo",
+            "lver, quiero vo",
+            "lverte v",
+            "er. /n"
+        ],
+        [
+            "Te vi subir, ",
+            "te vi bajar, ",
+            "me gustan tod",
+            "os los lug",
+            "ares. \n\nQ",
+            "uédate un r",
+            "ato más ",
+            "mi l",
+            "ado. ",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Va pasando el día lentam",
-            "ente/n"
+            "Dic",
+            "en que mejor no andar con ",
+            "vueltas,  ",
+            "que decirse todo es lo ",
+            "mejor.  \n\nCuan",
+            "do me lo dices al ",
+            "oído,  toma c",
+            "olor. ",
+            "el ve",
+            "rano me ayudó s",
+            "eguir, pude ",
+            "ver todo lo que ",
+            "no vi. \n\nAlgo ",
+            "voy inventar, ",
+            "puedo intentar, ",
+            "eso es mucho para ",
+            "mí. /n"
         ],
         [
-            "Y mi casa se lleno de ge",
-            "nte/n"
+            "Q",
+            "uiero volver, ",
+            "quiero volver ",
+            "quiero volver",
+            "te ver. \n\nQ",
+            "uiero volver ",
+            "quiero volve",
+            "rte ver. /n"
         ],
         [
-            "Salgo sin que n",
-            "adie se de cu",
-            "enta/nA "
+            "Q",
+            "uiero volve",
+            "r, quiero volv",
+            "er, quiero volv",
+            "erte ver. /n"
         ],
         [
-            "nadie digo a",
-            "dios",
+            "Quiero volv",
+            "er, quiero vol",
+            "verte v",
+            "er. \n\nTe ",
+            "vi subir, ",
+            "te vi bajar, ",
+            "me gustan todo",
+            "s los lu",
+            "gares/n"
+        ],
+        [
+            "Qu",
+            "édate un r",
+            "ato más ",
+            "mi la",
+            "do. \n\nQuiero v",
+            "olver, quiero v",
+            "olver, quiero ",
+            "volverte  ver. /n"
+        ],
+        [
+            "Quiero ",
+            "volver,  quier ",
+            "volverte v",
+            "er. /n"
+        ],
+        [
+            "Quier",
+            "o volver, qui",
+            "ero volver, qu",
+            "iero volverte v",
+            "er. /n"
+        ],
+        [
+            "Quiero volver, qu",
+            "iero volverte ",
+            "ver. /n"
+        ],
+        [
+            "Quiero v",
+            "olver, ",
+            "quiero volver, ",
+            "quiero volverte ",
+            "ver. /n"
+        ],
+        [
+            "Quiero  volver, ",
+            "quiero volverte ",
+            "ver. /n"
+        ],
+        [
+            "Quie",
+            "ro volver, ",
+            "quiero volver, ",
+            "quiero volverte ",
+            "ver. ",
             "/n"
         ],
         [
             "Quiero volver, q",
-            "uiero volver/n"
-        ],
-        [
-            "Quiero volverte a v",
-            "er/n"
-        ],
-        [
-            "Quiero volver, q",
-            "uiero volverte a ve",
-            "r",
-            "/n"
-        ],
-        [
-            "Te vi subir, te vi b",
-            "ajar/nMe gusta en "
-        ],
-        [
-            "todos los l",
-            "ugares/n"
-        ],
-        [
-            "Quedate un rato/n"
-        ],
-        [
-            "Mas a mi lado/n"
-        ],
-        [],
-        [
-            "Dicen que mejor no andar con vue",
-            "ltas/n"
-        ],
-        [
-            "Que decirse todo es lo m",
-            "ejor/n"
-        ],
-        [
-            "Cuando me lo dices al oi",
-            "do/nToma c"
-        ],
-        [
-            "olor",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "Y el verano me ayudo a s",
-            "eguir/n"
-        ],
-        [
-            "Pude ver todo lo que pe",
-            "rdi/nAlgo v"
-        ],
-        [
-            "oy a inv",
-            "entar/n"
-        ],
-        [
-            "Puedo intentar/nSos "
-        ],
-        [
-            "mucho pa",
-            "ra mi",
-            ""
+            "uiero volverte ver. "
         ]
     ],
-    "bpm": 80,
+    "bpm": 117,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0aF2wUJJZzA",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

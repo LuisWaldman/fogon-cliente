@@ -8,64 +8,160 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "B",
+                    "F",
+                    "C",
+                    "G#",
+                    "F",
+                    "C#",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "Am",
+                    "C",
+                    "C",
+                    "C#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
                     "F",
-                    "C#"
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G#",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
                     "C#",
                     "G#",
-                    "C#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#",
+                    "G#",
                     "F",
-                    "D",
                     "F",
-                    "D"
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Vuelve del cu",
-            "ento veloz",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Su sombra est",
-            "á por segui",
-            "r/n "
+            "Vu",
+            "elve del cu",
+            "ento ve",
+            "loz, ",
+            "su sombra e",
+            "stá por seg",
+            "uir. \n\nAu",
+            "nque su cara sea la ",
+            "de un tonto, ",
+            "pero se v",
+            "uelve porque alg",
+            "uien llegó /n"
         ],
         [
-            "Aunque su cara sea la ",
-            "de un tonto/n "
+            "P",
+            "ero se v",
+            "uelve porque al",
+            "guien lleg",
+            "ó. /n"
         ],
         [
-            "Pero se vuelve porque algu",
-            "ien llegó/n "
+            "Vuelve  del ",
+            "cuento v",
+            "eloz",
+            ", su sombra ",
+            "está  por ",
+            "seguir. /n"
         ],
         [
-            "Pero se vuelve porque algu",
-            "ien llegó"
+            "Aunque su car ",
+            "sea la de un tonto ",
+            "pero se ",
+            "vuelve porq",
+            "ue alguien llegó. /n"
+        ],
+        [
+            "P",
+            "ero se ",
+            "vuelve porqu ",
+            "alguien lleg",
+            "ó. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Zg29oe8NSOc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

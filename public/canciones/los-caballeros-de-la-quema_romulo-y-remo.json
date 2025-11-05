@@ -2,13 +2,48 @@
     "cancion": "romulo-y-remo",
     "banda": "los-caballeros-de-la-quema",
     "escala": "G7",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "G7",
+                    "C7",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
                 "acordes": [
                     "G7",
                     "C7",
@@ -17,75 +52,438 @@
                 ]
             },
             {
-                "nombre": "parte2",
+                "nombre": "parte3",
                 "acordes": [
+                    "C7",
+                    "C7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C7",
+                    "C7",
+                    "G7",
+                    "G7",
+                    "C7",
+                    "C7",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
                     "F",
                     "E",
-                    "D"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "C7",
+                    "C7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "E",
+                    "G7",
+                    "C7",
+                    "G7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "F",
+                    "F",
+                    "E",
+                    "C7",
+                    "C7",
+                    "E",
+                    "E",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
-            1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "   Dos negras dom",
-            "inicanas/n   una "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "casa en la playa, tiempo q",
-            "ue perder/n"
+            "¡\nYa va, loco! ",
+            "¡\nVamos, ",
+            "arriba! ¿\nQué estamos esperando? ¿\nQ",
+            "ué haces? ¿\nCómo andabos? ¡\nVamo",
+            "s, arriba! ¡\nLos trajeros de la máquina! ",
+            "¡\nMira qué bien! ¡\nVamos que ya ",
+            "se está! ¡\nQué gran",
+            "de! ¡\nVamos, rejito! ¿\nCómo andabo",
+            "s, mío? ¿\nQué haces? ",
+            "¡\nVenga, cómo andabos! ¡\nEh, ",
+            "pipí!  ¡\nQué grande ",
+            "wey! ",
+            "¿\nDónde estoy? ¡\nOye, mira, \n\nSatchu",
+            "s! ¡\nVamos que nos vamos! ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   Doscientos don p",
-            "erignones/n   y la "
+            "Dos negras dom",
+            "inicanas, una casa ",
+            "en la playa, tiempo que ",
+            "perder  /n"
         ],
         [
-            "cara dura a prueba d",
-            "e chichones/nSe"
+            "Doscient",
+            "os domperiñones la c",
+            "ara dura prueba de ",
+            "chichones \n\nSecre",
+            "tos, amores, cancione ",
+            "más mejores \n\nInvit",
+            "arlo mar lombrando ",
+            "una noche cenar \n\nG",
+            "anar un puto ",
+            "sorteo  que la d",
+            "emocracia no nos tome ",
+            "el pelo \n\nSer ",
+            "más con pinche ",
+            "de mi soledad ",
+            "/n"
         ],
         [
-            "cretos, amores, canciones mas mejores/n"
+            "No ",
+            "andar de oferta cua",
+            "ndo vos no estás ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "invitarlo a Marlon Brando una noche a cenar/n"
+            "Un ",
+            "core que no t",
+            "ropiece treinta cinc",
+            "o veces con la mism ",
+            "piedra \n\nUn ",
+            "buen cáncer en ",
+            "los huevos para los ga",
+            "ltieri para los m",
+            "acera \n\nAmigo ",
+            "en fiestes que me dure ",
+            "los dientes poder o",
+            "lvidarte cuando se ",
+            "me dé la gana \n\nQue ",
+            "el cielo nos quede ",
+            "mano por si en el ",
+            "infierno no quedan más ",
+            "camas /n"
         ],
         [
-            "   Ganar un puto sorteo/n   que la "
+            "Venderme caro al ",
+            "peor postón ",
+            "/n"
         ],
         [
-            "democracia no nos tome el pelo/n"
+            "P",
+            "ensar despacio con ",
+            "hambre de gol, gol, gol",
+            ", gol, gol, gol, gol, gol",
+            ", gol, gol, gol, gol, gol \n\nQuere",
+            "mos todo, un poco más ",
+            "de todo, de to",
+            "do, todo un poco ",
+            "más \n\nQueremo ",
+            "todo, un poco más ",
+            "de todo, de todo, ",
+            "todo  un poco ",
+            "más ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "10 k",
+            "ilos de sangre fr",
+            "ía siempre en el bolsil",
+            "lo una buena mentira /n"
         ],
         [
-            "   Ser mas comp",
-            "inche de mi soleda",
-            "d/n"
+            "Tene",
+            "r suerte en los fraca",
+            "sos con los peca",
+            "dos buena puntería /n"
         ],
         [
-            "   No andar de of",
-            "erta cuando vos no esta",
-            "s/n"
+            "De postre un gran v",
+            "ino, de tramo un buen om",
+            "bligo, un safari has",
+            "ta las tetas de \n\nGraci",
+            "elo \n\nAlfano \n\nSer vi",
+            "ejo cuando no due",
+            "la que el agua es su",
+            "da no me tenga en cu",
+            "enta \n\nQue no ",
+            "te alcance lo que no ",
+            "te doy ",
+            "/n"
         ],
         [
-            "Un cuor",
-            "e que n",
-            "o tropi",
-            "ece"
+            "Que no ",
+            "te sirva lo que n",
+            "unca soy, soy, soy, soy, soy, ",
+            "soy, soy, soy, soy, soy, s",
+            "oy, soy, soy \n\nQueremos tod",
+            "o, un poco más de t",
+            "odo, de todo, to",
+            "do un poco más /n"
+        ],
+        [
+            "Queremos todo",
+            ", un poco más de to",
+            "do, de todo, todo ",
+            "un poco más ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Vender",
+            "me caro al peor i",
+            "mposto ",
+            "/n"
+        ],
+        [
+            "Pensar ",
+            "despacio  con hambre ",
+            "de gol, gol, gol, gol, gol, go",
+            "l, gol, gol, gol, gol, gol, gol ",
+            "gol, gol \n\nQueremos todo, un ",
+            "poco más de todo, ",
+            "de todo, todo ",
+            "un poco más \n\nQ",
+            "ueremos todo, un ",
+            "poco más de todo ",
+            "de todo, todo ",
+            "un poco más \n\nQ",
+            "ueremos todo, un ",
+            "poco más de todo ",
+            "de todo, todo ",
+            "un poco más \n\nQ",
+            "ueremos todo, un ",
+            "poco más de todo, ",
+            "de todo, todo ",
+            "un poco más ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "cfNWVjz7UG4",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }
