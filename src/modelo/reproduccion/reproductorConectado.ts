@@ -48,9 +48,7 @@ export class ReproductorConectado extends Reproductor {
     })
     this.cliente.setCancionDetenidaHandler(() => {
       console.log('Reproducción detenida')
-      const appStore = useAppStore()
-      appStore.estadoReproduccion = 'pausado'
-      appStore.golpeDelCompas = 0
+      super.detenerReproduccion()
     })
     this.cliente.setCompasActualizadoHandler((compas: number) => {
       console.log(`Compás actualizado a ${compas}`)
@@ -75,6 +73,14 @@ export class ReproductorConectado extends Reproductor {
 
   override async iniciarReproduccion() {
     super.iniciarReproduccion()
+  }
+
+  override async sincronizar() {
+    super.sincronizar()
+    const appStore = useAppStore()
+    if (appStore.MediaVistas === null) {
+      const helper = HelperSincro.getInstance()
+    }
   }
 
   override detenerReproduccion() {
