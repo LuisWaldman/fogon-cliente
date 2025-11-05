@@ -4,7 +4,6 @@ import { SincroCancion } from '../sincro/SincroCancion'
 import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
 import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
-import { EstadoSincroCancion } from '../sincro/EstadoSincroCancion'
 
 export class Reproductor {
   protected cancion: string = ''
@@ -103,6 +102,7 @@ export class Reproductor {
       if (appStore.MediaVistas) {
         if (appStore.MediaVistas.GetTiempoDesdeInicio) {
           const tiempoDesdeInicio = appStore.MediaVistas.GetTiempoDesdeInicio()
+          console.log(tiempoDesdeInicio)
           const momento: number =
             tiempoDesdeInicio + appStore.sesSincroCancion.timeInicio!
 
