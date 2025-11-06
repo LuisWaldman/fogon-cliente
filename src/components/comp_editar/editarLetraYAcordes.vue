@@ -32,6 +32,10 @@ function calcularCompaces() {
         contAcordeEnSecuencia >=
         props.cancion.acordes.partes[parte].acordes.length
       ) {
+        // Marcar el compas anterior como término de parte
+        if (renglon.length > 0) {
+          renglon[renglon.length - 1].terminaparte = true
+        }
         contSecuencia++
         contAcordeEnSecuencia = 0
         compasEditable.acorde = props.cancion.acordes.partes[parte].acordes[
@@ -44,6 +48,8 @@ function calcularCompaces() {
           contAcordeEnSecuencia
         ]        
         compasEditable.nroSecuencia = contSecuencia
+        compasEditable.terminaparte = contAcordeEnSecuencia ===
+        props.cancion.acordes.partes[parte].acordes.length - 1 ? true : false
         contAcordeEnSecuencia++
       }
 
@@ -57,6 +63,10 @@ function calcularCompaces() {
       } else {
       }
     }
+  }
+  // Marcar el último compas como término de parte
+  if (renglon.length > 0) {
+    renglon[renglon.length - 1].terminaparte = true
   }
   renglones.push(renglon)
   compaces.value = renglones  
@@ -75,7 +85,7 @@ onMounted(() => {
       :key="indexrenglon"
     >
       <div
-        :class="{editdiv: true, comienzoparte: compas.iniciaparte, finparte: compas.finparte}"
+        :class="{editdiv: true, comienzoparte: compas.iniciaparte, finparte: compas.terminaparte}"
         v-for="(compas, indexcompas) in renglon"
         :key="indexcompas"
       >
@@ -108,20 +118,21 @@ onMounted(() => {
 }
 .editdiv {
   border: 1px solid;
-  padding: 0px;
+  padding: 4px;
+  overflow: hidden;
   margin: 0px;
   width: 60px;
   height: 80px;
 }
 .comienzoparte {
   border-left: 8px solid;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .finparte {
-  border-left: 8px solid;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-right: 8px solid;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 </style>
