@@ -115,9 +115,9 @@ function guardarCambios(origenDestino: string) {
       <div class="divctrlEdit">
         <label>🔤 Letra</label><label @click="clickCambiar('medias')">🔄</label>
         <div>
-          <div>Versos:</div>
-          <div>Silabas:</div>
-          <div>Silabas:</div>
+          <div>Versos: 15</div>
+          <div>Silabas: 13 +/- 2</div>
+          <div>Rimas: Soneto</div>
           </div>
       </div>
       
@@ -125,9 +125,9 @@ function guardarCambios(origenDestino: string) {
       <div class="divctrlEdit">
         <label>🎸 Acordes</label><label @click="clickCambiar('medias')">🔄</label>
         <div>
-          <div>Partes:</div>
-          <div>Silabas:</div>
-          <div>Silabas:</div>
+          <div>Acordes: 4</div>
+          <div>Partes: 2</div>
+          <div>Funciones: I VI V</div>
           </div>
       </div>
       

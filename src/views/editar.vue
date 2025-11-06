@@ -5,6 +5,8 @@ import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import EditarLetraAcorde from '../components/comp_editar/editarLetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
+import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
+import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
@@ -127,6 +129,19 @@ function cambioModo(index: number) {
         :editando="true"
         ref="ctrlTocarPentagrama"
       ></TocarPentagrama>
+
+      
+        <TocarLetra
+        v-if="viendo=='inicioletra'"
+          :cancion="appStore.editandocancion"
+          :compas="editandoCompas"
+        ></TocarLetra>
+        <TocarLetraAcorde
+        
+        v-if="viendo=='inicioacordes'"
+          :cancion="appStore.editandocancion"
+          :compas="editandoCompas"
+        ></TocarLetraAcorde>
 
       <EditarLetraAcorde
         v-if="viendo != 'editartexto' && viendo != 'pentagramas'"
