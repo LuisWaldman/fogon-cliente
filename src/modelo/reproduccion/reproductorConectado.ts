@@ -5,6 +5,7 @@ import { SincroCancion } from '../sincro/SincroCancion'
 import { OrigenCancion } from '../cancion/origencancion'
 import { CancionManager } from '../cancion/CancionManager'
 import { Cancion } from '../cancion/cancion'
+import { HelperSincro } from '../sincro/HelperSincro'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
@@ -55,8 +56,12 @@ export class ReproductorConectado extends Reproductor {
       const appStore = useAppStore()
       appStore.compas = compas
     })
+    this.cliente.setCancionSincronizadaHandler(
+      (compas: number, desde: number) => {
+        this.sincronizarReproduccion(compas, desde)
+      },
+    )
   }
-
   async EnviarCancion(cancion: Cancion) {
     const origenN = new OrigenCancion('fogon', '', '')
     CancionManager.getInstance().Save(origenN, cancion)
@@ -73,13 +78,48 @@ export class ReproductorConectado extends Reproductor {
 
   override async iniciarReproduccion() {
     super.iniciarReproduccion()
+    const appStore = useAppStore()
+    this.cliente.iniciarReproduccion(
+      appStore.compas,
+      appStore.sesSincroCancion.timeInicio,
+    )
   }
 
   override async sincronizar() {
-    super.sincronizar()
+    await super.sincronizar()
+    const appStore = useAppStore()
+    if (appStore.MediaVistas !== null) {
+      const helper = HelperSincro.getInstance()
+      const momento = helper.MomentoSincro()
+      const sincro = helper.GetSincro(
+        appStore.EstadoSincro,
+        momento,
+        appStore.cancion!.duracionGolpe * 1000,
+        appStore.cancion!.compasCantidad,
+        appStore.sesSincroCancion.desdeCompas,
+      )
+      const dif = Math.abs(
+        HelperSincro.Diferencia(
+          appStore.sesSincroCancion.timeInicio,
+          sincro.timeInicio,
+        ),
+      )
+      if (dif > 20) {
+        console.log(`Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time inicio ${sincro.timeInicio} con diferencia de ${dif} ms`)
+        appStore.sesSincroCancion.timeInicio = sincro.timeInicio
+        this.cliente.sincronizarReproduccion(
+          appStore.sesSincroCancion.desdeCompas,
+          sincro.timeInicio,
+        )
+      }
+    }
+  }
+
+  sincronizarReproduccion(compas: number, delayms: number) {
     const appStore = useAppStore()
     if (appStore.MediaVistas === null) {
-      const helper = HelperSincro.getInstance()
+      appStore.sesSincroCancion.desdeCompas = compas
+      appStore.sesSincroCancion.timeInicio = delayms
     }
   }
 

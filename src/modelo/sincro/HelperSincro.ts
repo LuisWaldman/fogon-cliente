@@ -259,6 +259,7 @@ export class HelperSincro {
     golpesxcompas: number,
     desdeCompas: number = 0,
   ): SincroCancion {
+    console.log('Calculando', estado.compas, momento, duracionGolpe)
     // Revert the logic of GetEstadoSincro
     let timeInicio: number
     let recuperadoDesdeCompas: number
