@@ -3,7 +3,7 @@ import { useAppStore } from '../stores/appStore'
 import cabecera from '../components/comp_editar/editarcabecera.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
-import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
+import EditarLetraAcorde from '../components/comp_editar/editarLetraYAcordes.vue'
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
@@ -39,7 +39,6 @@ function GetStylePantallaEdit() {
     direccion = vista.value.invertido ? 'column' : 'column-reverse'
   }
   return {
-    width: pantalla.getAnchoPantalla() + 'px',
     height: pantalla.getAltoPantalla() + 'px',
     'flex-direction': direccion,
   }
@@ -110,7 +109,7 @@ function cambioModo(index: number) {
     @editarPentagramas="cambiarVista('pentagramas')"
   ></cabecera>
   <div style="display: flex" class="vistaEdit" :style="GetStylePantallaEdit()">
-    <div style="width: 70%" :style="estiloVistaPrincipal()">
+    <div :style="estiloVistaPrincipal()">
       <div
         style="position: relative; left: 96%"
         v-on:click="cambiarVista('editartexto')"
@@ -129,13 +128,13 @@ function cambioModo(index: number) {
         ref="ctrlTocarPentagrama"
       ></TocarPentagrama>
 
-      <TocarLetraAcorde
+      <EditarLetraAcorde
         v-if="viendo != 'editartexto' && viendo != 'pentagramas'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         ref="ctrlEditarTexto"
         @clickCompas="cambiarCompas"
-      ></TocarLetraAcorde>
+      ></EditarLetraAcorde>
 
       <editartexto
         v-if="viendo == 'editartexto'"

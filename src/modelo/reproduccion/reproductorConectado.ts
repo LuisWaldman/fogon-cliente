@@ -105,7 +105,9 @@ export class ReproductorConectado extends Reproductor {
         ),
       )
       if (dif > 20) {
-        console.log(`Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time inicio ${sincro.timeInicio} con diferencia de ${dif} ms`)
+        console.log(
+          `Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time inicio ${sincro.timeInicio} con diferencia de ${dif} ms`,
+        )
         appStore.sesSincroCancion.timeInicio = sincro.timeInicio
         this.cliente.sincronizarReproduccion(
           appStore.sesSincroCancion.desdeCompas,
