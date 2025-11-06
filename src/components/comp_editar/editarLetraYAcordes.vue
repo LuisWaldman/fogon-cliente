@@ -105,7 +105,7 @@ onMounted(() => {
 .editdivconteiner {
   border: 1px solid;
   padding: 4px;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -128,10 +128,10 @@ onMounted(() => {
 }
 .editdiv {
   border: 1px solid;
+  border-top: 5px solid rgb(189, 139, 98);
   padding: 4px;
   overflow: hidden;
   margin: 0px;
-  width: 60px;
   height: 80px;
 }
 .comienzoparte {

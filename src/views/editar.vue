@@ -108,7 +108,7 @@ function cambioModo(index: number) {
     :origen="appStore.origenEditando"
     @editarPentagramas="cambiarVista('pentagramas')"
   ></cabecera>
-  <div style="display: flex" class="vistaEdit" :style="GetStylePantallaEdit()">
+  <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">
       <div
         style="position: relative; left: 96%"
@@ -195,9 +195,8 @@ function cambioModo(index: number) {
 }
 
 .vistaEdit {
-  position: relative;
-  padding: 2px;
-  padding-left: 10px;
+  display: flex;
+  width: 100%;
 }
 .dropdown-superior-derecha {
   position: absolute;
