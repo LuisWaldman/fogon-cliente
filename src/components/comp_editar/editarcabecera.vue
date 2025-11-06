@@ -111,6 +111,26 @@ function guardarCambios(origenDestino: string) {
           }}</label>
         </div>
       </div>
+      
+      <div class="divctrlEdit">
+        <label>🔤 Letra</label><label @click="clickCambiar('medias')">🔄</label>
+        <div>
+          <div>Versos:</div>
+          <div>Silabas:</div>
+          <div>Silabas:</div>
+          </div>
+      </div>
+      
+
+      <div class="divctrlEdit">
+        <label>🎸 Acordes</label><label @click="clickCambiar('medias')">🔄</label>
+        <div>
+          <div>Partes:</div>
+          <div>Silabas:</div>
+          <div>Silabas:</div>
+          </div>
+      </div>
+      
       <div class="divctrlEdit">
         <label>📺 Video</label><label @click="clickCambiar('medias')">🔄</label>
         <div>
@@ -131,12 +151,12 @@ function guardarCambios(origenDestino: string) {
       </div>
 
       <div class="divctrlEdit">
-        <button @click="guardarCambios('local')">💾 Guardar</button>
+        <button @click="guardarCambios('local')">💾 </button>
         <button
           v-if="appStore.estadosApp.estadoLogin === 'logueado'"
           @click="guardarCambios('server')"
         >
-          o en 🗄️
+          🗄️
         </button>
       </div>
     </div>
