@@ -89,13 +89,13 @@ onMounted(() => {
         v-for="(compas, indexcompas) in renglon"
         :key="indexcompas"
       >
-        <div>
-          <strong>{{ compas.acorde }}</strong>
+        <div class="acordediv">
+          {{ compas.acorde }}
         </div>
-        <div v-if="compas.letra.trim() != ''">
+        <div v-if="compas.letra.trim() != ''" class="divletra">
           {{ compas.letra }}
         </div>
-        <div v-else>♪</div>
+        <div class="divletra" v-else>♪</div>
       </div>
     </div>
   </div>
@@ -107,6 +107,16 @@ onMounted(() => {
   padding: 4px;
   width: auto;
   height: auto;
+}
+
+.acordediv {
+  font-size: var(--tamanio-acorde);
+  margin: 1px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #a9a8f6;
+  margin-right: 4px;
+
 }
 
 .editrenglon {
@@ -130,9 +140,18 @@ onMounted(() => {
   border-bottom-left-radius: 12px;
 }
 
+
+.divletra {
+  font-size: var(--tamanio-letra);
+  color: white;
+  width: max-content;
+  min-width: 100%;
+}
+
 .finparte {
   border-right: 8px solid;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  margin-right: 2px;
 }
 </style>
