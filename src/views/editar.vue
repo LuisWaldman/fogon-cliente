@@ -10,10 +10,16 @@ import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
-
+import { vistaEditar } from '../modelo/helperVistas/editar/vistaEditar'
 import { onMounted, ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import type { VistaTocar } from '../modelo/configuracion'
+const viendo: Ref<string> = ref('inicio')
+
+const vistaControl: vistaEditar = new vistaEditar()
+
+
+
 
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
@@ -25,12 +31,10 @@ const appStore = useAppStore()
 
 onMounted(() => {
   pantalla.setearEstilos()
+  vistaControl.iniciar()
 })
 
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
-const viendo: Ref<string> = ref(
-  localStorage.getItem('viendo_vista_editando') || 'inicio',
-)
 function GetStylePantallaEdit() {
   let direccion: 'row' | 'row-reverse' | 'column' | 'column-reverse' = vista
     .value.invertido

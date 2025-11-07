@@ -41,6 +41,10 @@ function clickCambiar(nviendo: string) {
     emit('editarPentagramas')
     return
   }
+  if (viendo.value === nviendo) {
+    viendo.value = 'inicio'
+    return
+  }
   viendo.value = nviendo
 }
 
@@ -72,7 +76,7 @@ function guardarCambios(origenDestino: string) {
 <template>
   <div class="navbarFogon">
     <div style="display: flex; flex-wrap: wrap">
-      <div class="divctrlEdit">
+      <div class="divctrlEdit" :class="viendo === 'archivo' ? 'edintandoCtrl' : ''" @click="clickCambiar('archivo')">
         <div style="display: flex">
           <emoticonOrigen :origen="origen.origenUrl" />
           <label>{{ arreglartexto(cancion.banda) }}</label>
@@ -81,20 +85,16 @@ function guardarCambios(origenDestino: string) {
           <label v-else-if="cancion.calidad == 1">⭐⭐⚫⚫⚫</label>
           <label v-else-if="cancion.calidad == 2">⭐⭐⭐⚫⚫</label>
 
-          <label @click="clickCambiar('archivo')" @cerrar="clickCerrar"
-            >🔄</label
-          >
+          
         </div>
         <div class="tituloCancion">
           {{ arreglartexto(cancion.cancion) }}
         </div>
       </div>
-      <div class="divctrlEdit">
+      <div class="divctrlEdit" :class="viendo === 'tiempo' ? 'edintandoCtrl' : ''" @click="clickCambiar('tiempo')">
         <label
           >BPM: {{ cancion.bpm }}
-          <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar"
-            >🔄</label
-          ></label
+          </label
         >
         <div>
           <label class="tituloCancion">{{
@@ -102,47 +102,34 @@ function guardarCambios(origenDestino: string) {
           }}</label>
         </div>
       </div>
-      <div class="divctrlEdit">
+      <div class="divctrlEdit" :class="viendo === 'escala' ? 'edintandoCtrl' : ''" @click="clickCambiar('escala')">
         <label>Escala</label
-        ><label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
+        >
         <div>
           <label class="tituloCancion" v-if="cancion.escala">{{
             helper.GetAcorde(cancion.escala)
           }}</label>
         </div>
       </div>
-      
-      <div class="divctrlEdit">
-        <label>🔤 Letra</label><label @click="clickCambiar('medias')">🔄</label>
-        <div>
-          <div>Versos: 15</div>
-          <div>Silabas: 13 +/- 2</div>
-          <div>Rimas: Soneto</div>
-          </div>
-      </div>
-      
-
-      <div class="divctrlEdit">
-        <label>🎸 Acordes</label><label @click="clickCambiar('medias')">🔄</label>
+      <div class="divctrlEdit" :class="viendo === 'acordes' ? 'edintandoCtrl' : ''" @click="clickCambiar('acordes')">
+        <label>🎸 Acordes</label>
         <div>
           <div>Acordes: 4</div>
           <div>Partes: 2</div>
           <div>Funciones: I VI V</div>
           </div>
       </div>
-      
-      <div class="divctrlEdit">
-        <label>📺 Video</label><label @click="clickCambiar('medias')">🔄</label>
+<div class="divctrlEdit" :class="viendo === 'letra' ? 'edintandoCtrl' : ''" @click="clickCambiar('letra')">
+        <label>🔤 letra</label>
         <div>
-          <label class="tituloCancion" v-if="cancion.medias.length > 0"
-            >📺</label
-          >
-          <label class="tituloCancion" v-else>No</label>
-        </div>
+          <div>Versos: 15</div>
+          <div>Silabas: 13 +/- 2</div>
+          <div>Rimas: Soneto</div>
+          </div>
       </div>
-      <div class="divctrlEdit">
-        <label>Partituras</label
-        ><label @click="clickCambiar('pentagramas')">🔄</label>
+
+      <div class="divctrlEdit" :class="viendo === 'partituras' ? 'edintandoCtrl' : ''" @click="clickCambiar('partituras')">
+        <label>Partituras</label>
         <div>
           <label class="tituloCancion">
             🎼 {{ cancion.pentagramas.length }}
@@ -150,6 +137,15 @@ function guardarCambios(origenDestino: string) {
         </div>
       </div>
 
+      <div class="divctrlEdit" :class="viendo === 'medias' ? 'edintandoCtrl' : ''" @click="clickCambiar('medias')">
+        <label>📺 Video</label>
+        <div>
+          <label class="tituloCancion" v-if="cancion.medias.length > 0"
+            >📺</label
+          >
+          <label class="tituloCancion" v-else>No</label>
+        </div>
+      </div>
       <div class="divctrlEdit">
         <button @click="guardarCambios('local')">💾 </button>
         <button
@@ -458,9 +454,6 @@ function guardarCambios(origenDestino: string) {
   font-size: 30px;
   padding: 10px;
 }
-.conectado {
-  border-color: #f5da09;
-}
 .tituloCancion {
   font-size: xx-large;
   font-weight: bold;
@@ -476,6 +469,12 @@ function guardarCambios(origenDestino: string) {
 .divctrlEdit button {
   height: 80%;
   font-size: large;
+}
+
+.edintandoCtrl {
+  border: 2px solid #f5da09;
+  background: linear-gradient(135deg, #f5da09 0%, #000000 100%);
+
 }
 
 @media (max-width: 768px) {
