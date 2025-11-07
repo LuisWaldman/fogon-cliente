@@ -12,6 +12,7 @@ import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { CancionManager } from '../../modelo/cancion/CancionManager'
+import { HelperJSON } from '../../modelo/cancion/HelperJSON'
 const helper = HelperDisplayAcordesLatino.getInstance()
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
@@ -70,6 +71,19 @@ function guardarCambios(origenDestino: string) {
     .catch((error) => {
       console.error('Error al guardar los cambios:', error)
     })
+}
+
+function DescargarJSON() {
+  const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
+  const blob = new Blob([cancionJSON], { type: 'application/json' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  const nombreArchivo =
+    `${appStore.editandocancion.archivo}.json`.toLocaleLowerCase()
+  a.download = nombreArchivo
+  a.click()
+  URL.revokeObjectURL(url)
 }
 </script>
 
@@ -154,6 +168,7 @@ function guardarCambios(origenDestino: string) {
         >
           🗄️
         </button>
+        <button @click="DescargarJSON" class="btnDescarga">⬇️</button>
       </div>
     </div>
 
@@ -472,8 +487,8 @@ function guardarCambios(origenDestino: string) {
 }
 
 .edintandoCtrl {
-  border: 2px solid #f5da09;
-  background: linear-gradient(135deg, #f5da09 0%, #000000 100%);
+  border: 2px solid #9b1616;
+  background: linear-gradient(135deg, #000000 0%, #974343 100%);
 
 }
 

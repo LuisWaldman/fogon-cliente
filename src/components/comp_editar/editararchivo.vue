@@ -37,25 +37,6 @@ function hacerNombreArchivo() {
     props.cancion.cancion.replace(/ /g, '_')
 }
 
-/*
-function clickNuevo() {
-  appStore.editandocancion = Cancion.GetDefault('Nueva')
-  appStore.cancion = appStore.editandocancion
-  emit('cerrar', true)
-}
-*/
-function DescargarJSON() {
-  const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
-  const blob = new Blob([cancionJSON], { type: 'application/json' })
-  const url = URL.createObjectURL(blob)
-  const a = document.createElement('a')
-  a.href = url
-  const nombreArchivo =
-    `${appStore.editandocancion.archivo}.json`.toLocaleLowerCase()
-  a.download = nombreArchivo
-  a.click()
-  URL.revokeObjectURL(url)
-}
 </script>
 <template>
   <div style="width: 100%">
@@ -90,14 +71,8 @@ function DescargarJSON() {
       <option value="2">⭐⭐⭐⚫⚫ Texto Corregido</option>
       <option value="3">Ok</option>
     </select>
-
-    <!-- 
-    <span class="lblCabecera" @click="clickNuevo">[nuevo]</span>
-    <subircancion></subircancion>
-    -->
     <button class="lblCabecera" @click="clickOkCambiarDatos">✔️</button>
     <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
-    <button @click="DescargarJSON" class="btnDescarga">⬇️ Descargar</button>
   </div>
   <div></div>
 </template>
