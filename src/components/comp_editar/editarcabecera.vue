@@ -90,7 +90,7 @@ function DescargarJSON() {
 <template>
   <div class="navbarFogon">
     <div style="display: flex; flex-wrap: wrap">
-      <div class="divctrlEdit" :class="viendo === 'archivo' ? 'edintandoCtrl' : ''" @click="clickCambiar('archivo')">
+      <div class="divctrlEdit " :class="viendo === 'archivo' ? 'edintandoCtrl' : ''" @click="clickCambiar('archivo')">
         <div style="display: flex">
           <emoticonOrigen :origen="origen.origenUrl" />
           <label>{{ arreglartexto(cancion.banda) }}</label>
@@ -101,7 +101,7 @@ function DescargarJSON() {
 
           
         </div>
-        <div class="tituloCancion">
+        <div class="tituloEdit titulocancion">
           {{ arreglartexto(cancion.cancion) }}
         </div>
       </div>
@@ -111,7 +111,7 @@ function DescargarJSON() {
           </label
         >
         <div>
-          <label class="tituloCancion">{{
+          <label class="tituloEdit">{{
             tiempo.formatSegundos(cancion.duracionCancion)
           }}</label>
         </div>
@@ -120,7 +120,7 @@ function DescargarJSON() {
         <label>Escala</label
         >
         <div>
-          <label class="tituloCancion" v-if="cancion.escala">{{
+          <label class="tituloEdit" v-if="cancion.escala">{{
             helper.GetAcorde(cancion.escala)
           }}</label>
         </div>
@@ -145,7 +145,7 @@ function DescargarJSON() {
       <div class="divctrlEdit" :class="viendo === 'partituras' ? 'edintandoCtrl' : ''" @click="clickCambiar('partituras')">
         <label>Partituras</label>
         <div>
-          <label class="tituloCancion">
+          <label class="tituloEdit">
             🎼 {{ cancion.pentagramas.length }}
           </label>
         </div>
@@ -154,13 +154,18 @@ function DescargarJSON() {
       <div class="divctrlEdit" :class="viendo === 'medias' ? 'edintandoCtrl' : ''" @click="clickCambiar('medias')">
         <label>📺 Video</label>
         <div>
-          <label class="tituloCancion" v-if="cancion.medias.length > 0"
+          <label class="tituloEdit" v-if="cancion.medias.length > 0"
             >📺</label
           >
-          <label class="tituloCancion" v-else>No</label>
+          <label class="tituloEdit" v-else>No</label>
         </div>
       </div>
+
+      
+        
       <div class="divctrlEdit">
+        <label>Guardar</label>
+        <div>
         <button @click="guardarCambios('local')">💾 </button>
         <button
           v-if="appStore.estadosApp.estadoLogin === 'logueado'"
@@ -169,6 +174,7 @@ function DescargarJSON() {
           🗄️
         </button>
         <button @click="DescargarJSON" class="btnDescarga">⬇️</button>
+        </div>
       </div>
     </div>
 
@@ -469,7 +475,7 @@ function DescargarJSON() {
   font-size: 30px;
   padding: 10px;
 }
-.tituloCancion {
+.tituloEdit {
   font-size: xx-large;
   font-weight: bold;
 }
@@ -491,7 +497,12 @@ function DescargarJSON() {
   background: linear-gradient(135deg, #000000 0%, #974343 100%);
 
 }
-
+.titulocancion {
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 768px) {
   .divctrlEdit {
     left: 0px;
@@ -501,7 +512,7 @@ function DescargarJSON() {
     font-size: small;
     font-size: small;
   }
-  .tituloCancion {
+  .tituloEdit {
     font-size: medium;
   }
 }
