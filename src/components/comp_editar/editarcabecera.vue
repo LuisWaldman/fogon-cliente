@@ -36,16 +36,9 @@ const props = defineProps<{
 }>()
 
 const viendo = ref('' as string)
-const emit = defineEmits(['editarPentagramas'])
+const emit = defineEmits(['viendo'])
 function clickCambiar(nviendo: string) {
-  if (nviendo === 'pentagramas') {
-    emit('editarPentagramas')
-    return
-  }
-  if (viendo.value === nviendo) {
-    viendo.value = 'inicio'
-    return
-  }
+  emit('viendo', nviendo)
   viendo.value = nviendo
 }
 

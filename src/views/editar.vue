@@ -112,7 +112,7 @@ function cambioModo(index: number) {
   <cabecera
     :cancion="appStore.editandocancion"
     :origen="appStore.origenEditando"
-    @editarPentagramas="cambiarVista('pentagramas')"
+    @viendo="cambiarVista"
   ></cabecera>
   <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">
@@ -136,19 +136,19 @@ function cambioModo(index: number) {
 
       
         <TocarLetra
-        v-if="viendo=='inicioletra'"
+        v-if="viendo=='inicio' && vista.muestra == 'karaoke'"
           :cancion="appStore.editandocancion"
           :compas="editandoCompas"
         ></TocarLetra>
         <TocarLetraAcorde
         
-        v-if="viendo=='inicioacordes'"
+        v-if="viendo=='inicio' && (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')"
           :cancion="appStore.editandocancion"
           :compas="editandoCompas"
         ></TocarLetraAcorde>
 
       <EditarLetraAcorde
-        v-if="viendo != 'editartexto' && viendo != 'pentagramas'"
+        v-if="viendo == 'acordes' || viendo == 'escala'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         ref="ctrlEditarTexto"
