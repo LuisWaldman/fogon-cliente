@@ -13,6 +13,8 @@ import { useAppStore } from '../../stores/appStore'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { CancionManager } from '../../modelo/cancion/CancionManager'
 import { HelperJSON } from '../../modelo/cancion/HelperJSON'
+import { HelperDisplayEditTexto } from '../../modelo/displayEditTexto/helperDisplayEditTexto'
+import type { textoResumen } from '../../modelo/displayEditTexto/textoResumen'
 const helper = HelperDisplayAcordesLatino.getInstance()
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
@@ -51,6 +53,8 @@ function clickCerrar(modificado: boolean) {
 }
 helper.latino = appStore.perfil.CifradoLatino
 
+const helperTexto = new HelperDisplayEditTexto()
+const refTexto = ref<textoResumen>(helperTexto.getResumen(props.cancion.letras))
 function guardarCambios(origenDestino: string) {
   CancionManager.getInstance()
     .Save(
@@ -112,7 +116,7 @@ function DescargarJSON() {
           }}</label>
         </div>
       </div>
-      
+
       <div
         class="divctrlEdit"
         :class="viendo === 'tiempo' ? 'edintandoCtrl' : ''"
@@ -125,6 +129,19 @@ function DescargarJSON() {
           }}</label>
         </div>
       </div>
+
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'editartexto' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('editartexto')"
+      >
+        <label>🔤 Letra</label>
+        <div>
+          <div>Versos: {{ refTexto.versos }}</div>
+          <div>Silabas: {{ refTexto.silabas }}</div>
+          <div>Rimas: {{ refTexto.rimas }}</div>
+        </div>
+      </div>
       <div
         class="divctrlEdit"
         :class="viendo === 'acordes' ? 'edintandoCtrl' : ''"
@@ -135,18 +152,6 @@ function DescargarJSON() {
           <div>Acordes: 4</div>
           <div>Partes: 2</div>
           <div>Funciones: I VI V</div>
-        </div>
-      </div>
-      <div
-        class="divctrlEdit"
-        :class="viendo === 'editartexto' ? 'edintandoCtrl' : ''"
-        @click="clickCambiar('editartexto')"
-      >
-        <label>🔤 letra</label>
-        <div>
-          <div>Versos: 15</div>
-          <div>Silabas: 13 +/- 2</div>
-          <div>Rimas: Soneto</div>
         </div>
       </div>
 

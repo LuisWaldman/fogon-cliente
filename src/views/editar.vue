@@ -73,7 +73,6 @@ function cambiarVista(nvista: string) {
     return
   }
   viendo.value = nvista
-  
 }
 
 function clickCerrarEditar() {
@@ -120,8 +119,6 @@ function cambioModo(index: number) {
   ></cabecera>
   <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">
-      
-
       <TocarPentagrama
         v-if="viendo === 'pentagramas'"
         :cancion="appStore.editandocancion"
@@ -177,7 +174,10 @@ function cambioModo(index: number) {
         >
       </editarpentagrama>
     </div>
-    <div :style="estiloVistaSecundaria()" v-if="viendo !== 'pentagramas' && viendo !== 'editartexto'">
+    <div
+      :style="estiloVistaSecundaria()"
+      v-if="viendo !== 'pentagramas' && viendo !== 'editartexto'"
+    >
       <editAcordes
         v-if="viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"

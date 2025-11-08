@@ -4,6 +4,8 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
 import { HelperDisplay } from '../../modelo/display/helperDisplay'
 import { Display } from '../../modelo/display/display'
+import { HelperDisplayEditTexto } from '../../modelo/displayEditTexto/helperDisplayEditTexto'
+import type { textoResumen } from '../../modelo/displayEditTexto/textoResumen'
 
 const pantalla = new Pantalla()
 const configuracionPantalla = pantalla.getConfiguracionPantalla()
@@ -14,14 +16,16 @@ const props = defineProps<{
   verMetricaEs: boolean
 }>()
 
-const helperDisplay = new HelperDisplay()
-const displayRef = ref(new Display(configuracionPantalla.columnas))
+
+const helperTexto = new HelperDisplayEditTexto()
+const refTextoResumido = ref<textoResumen>(helperTexto.getResumen(props.cancion.letras))
 function ActualizarCancion(cancion: Cancion) {
-  displayRef.value = helperDisplay.getDisplay(
-    cancion,
-    configuracionPantalla.columnas,
-  )
+  refTextoResumido.value = helperTexto.getResumen(cancion.letras)
+  props.cancion.letras.renglones = [
+    refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
+  ]
 }
+
 
 const emit = defineEmits(['cerrar'])
 const refTextoEditable = ref('')
@@ -59,11 +63,10 @@ function clickCancelarConsola() {
   emit('cerrar')
 }
 
-function clickConfirmarAcorde() {
+function clickConfirmar() {
   props.cancion.letras.renglones = [
     refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
   ]
-  emit('cerrar')
 }
 </script>
 
@@ -72,25 +75,19 @@ function clickConfirmarAcorde() {
     <div class="resVerso">
       <span>Versos: <b>12</b></span>
     </div>
-        <div class="resVerso">
+    <div class="resVerso">
       <span>Versos: <b>12</b></span>
     </div>
-
-    <span @click="clickCancelarConsola">[Cancelar]</span>
-    <span @click="clickConfirmarAcorde">[Confirmar]</span>
   </div>
   <div>
-    
     <div class="divLetraConteiner">
-      <div
-        class="preview"
-        ref="refPreview"
-        
-      >
-        <div v-for="(verso, index) in displayRef.Versos" :key="index">
-          <div class="acordeconsola">
-            {{ index }}
+      <div class="preview" ref="refPreview">
+        <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
+          <div class="acordeconsola" v-if="verso.nroRenglon == -1">
+            ♪
+
           </div>
+          <div class="acordeconsola" v-else>{{ verso.nroRenglon }}</div>
         </div>
       </div>
       <div style="height: 800px">
@@ -102,15 +99,12 @@ function clickConfirmarAcorde() {
           :cols="configuracionPantalla.columnas"
         ></textarea>
       </div>
-      <div
-        class="preview"
-        ref="refPreviewVerso"
-        
-      >
-        <div v-for="(verso, index) in displayRef.Versos" :key="index">
-          <div class="acordeconsola">
-            {{ verso.resumenverso }}
+      <div class="preview" ref="refPreviewVerso">
+        <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
+          <div class="acordeconsola" v-if="verso.ultimaSilaba.trim() != ''">
+            {{ verso.ultimaSilaba }}
           </div>
+          <div v-else>&nbsp;</div>
         </div>
       </div>
     </div>
@@ -119,16 +113,16 @@ function clickConfirmarAcorde() {
 <style scoped>
 .textArea {
   height: 100%;
-  width: 900px;
-  overflow-x: auto;         /* Scroll horizontal si es necesario */
-  overflow-y: auto;         /* Scroll vertical si es necesario */
-  white-space: pre;         /* No hacer wrap automático */
+  width: 1200px;
+  overflow-x: auto; /* Scroll horizontal si es necesario */
+  overflow-y: auto; /* Scroll vertical si es necesario */
+  white-space: pre; /* No hacer wrap automático */
   font-family: monospace;
   font-size: var(--tamanio-letra);
   border: none;
   padding: 10px;
   color: white;
-  background-color: #222;   /* Opcional para contraste */
+  background-color: #222; /* Opcional para contraste */
 }
 .preview {
   white-space: pre-wrap;
@@ -141,12 +135,11 @@ function clickConfirmarAcorde() {
 .acordeconsola {
   margin-right: 4px;
 }
-.barraInformacion {  
+.barraInformacion {
   display: flex;
   background-color: #333333;
   color: var(--color-texto-secciones);
   padding: 5px;
-
 }
 .resVerso {
   margin-left: 10px;

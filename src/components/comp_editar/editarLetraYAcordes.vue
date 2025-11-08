@@ -86,13 +86,12 @@ onMounted(() => {
       v-for="(renglon, indexrenglon) in compaces"
       :key="indexrenglon"
     >
-    
       <div
         :class="{
           editdiv: true,
           comienzoparte: compas.iniciaparte,
           finparte: compas.terminaparte,
-          editandoSecuencia: refParteSeleccionada === compas.nroSecuencia
+          editandoSecuencia: refParteSeleccionada === compas.nroSecuencia,
         }"
         v-for="(compas, indexcompas) in renglon"
         :key="indexcompas"
