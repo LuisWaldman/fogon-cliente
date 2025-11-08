@@ -2,8 +2,6 @@
 import { onMounted, ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
-import { HelperDisplay } from '../../modelo/display/helperDisplay'
-import { Display } from '../../modelo/display/display'
 import { HelperDisplayEditTexto } from '../../modelo/displayEditTexto/helperDisplayEditTexto'
 import type { textoResumen } from '../../modelo/displayEditTexto/textoResumen'
 import SpanSilabas from './spanSilabas.vue'
@@ -26,9 +24,12 @@ function ActualizarCancion(cancion: Cancion) {
   props.cancion.letras.renglones = [
     refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
   ]
-  if (refTextoResumido.value.versos != nuevo.versos || refTextoResumido.value.silabas.length != nuevo.silabas.length) {
+  if (
+    refTextoResumido.value.versos != nuevo.versos ||
+    refTextoResumido.value.silabas.length != nuevo.silabas.length
+  ) {
     emit('actualizoTexto')
-  } 
+  }
   refTextoResumido.value = nuevo
 }
 
@@ -63,7 +64,6 @@ function onTextareaScroll() {
     refPreviewVerso.value.scrollTop = refTextarea.value.scrollTop
   }
 }
-
 </script>
 
 <template>
@@ -96,8 +96,8 @@ function onTextareaScroll() {
       </div>
       <div class="preview" ref="refPreviewVerso">
         <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
-          <div class="acordeconsola" v-if="verso.ultimaSilaba.trim() != ''">
-            {{ verso.ultimaSilaba }} -
+          <div class="acordeconsola" v-if="verso.Rima.trim() != ''">
+            {{ verso.Rima }} -
             {{ verso.letraRima }}
             {{ verso.silabas }} {{ verso.diferenciaSilabas }}
           </div>

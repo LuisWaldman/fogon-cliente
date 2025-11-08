@@ -60,7 +60,6 @@ function Actualizar() {
   refTexto.value = helperTexto.getResumen(props.cancion.letras)
 }
 
-
 defineExpose({ Actualizar })
 
 function guardarCambios(origenDestino: string) {

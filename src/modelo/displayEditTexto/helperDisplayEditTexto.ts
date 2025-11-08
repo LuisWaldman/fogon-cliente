@@ -27,7 +27,7 @@ export class HelperDisplayEditTexto {
   }
   CalcularLetraRima(resumen: textoResumen) {
     for (const renglon of resumen.renglones) {
-      if (renglon.silabas > 0 && renglon.ultimaSilaba) {
+      if (renglon.silabas > 0 && renglon.Rima) {
       }
     }
   }
@@ -106,10 +106,9 @@ export class HelperDisplayEditTexto {
     const sepSilabas = new SeparadorSilabas()
     for (let i = 0; i < palabras.length; i++) {
       const silabasPalabra = sepSilabas.getSilabas(palabras[i])
-      silabas += silabasPalabra.silabas.length
       if (silabasPalabra.silabas.length > 0) {
-        resumen.ultimaSilaba =
-          silabasPalabra.silabas[silabasPalabra.silabas.length - 1].silaba
+        silabas += silabasPalabra.silabas.length
+        resumen.Rima = sepSilabas.GetRima(silabasPalabra)
       }
     }
     resumen.silabas = silabas

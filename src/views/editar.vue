@@ -11,10 +11,9 @@ import Secuencia from '../components/comp_editar/editSecuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 import { vistaEditar } from '../modelo/helperVistas/editar/vistaEditar'
-import { onMounted, ref, watch, type Ref } from 'vue'
+import { onMounted, ref, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import type { VistaTocar } from '../modelo/configuracion'
-import { a } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 const viendo: Ref<string> = ref('inicio')
 
 const vistaControl: vistaEditar = new vistaEditar()
@@ -86,7 +85,6 @@ function clickCerrarEditar() {
 
 function Actualizar() {
   if (ctrlEditarTexto.value) {
-    
     ctrlSecuencia.value.Actualizar()
   } else {
     ctrlTocarPentagrama.value.Actualizar()
@@ -103,8 +101,7 @@ function cambioModo(index: number) {
     :cancion="appStore.editandocancion"
     :origen="appStore.origenEditando"
     @viendo="cambiarVista"
-    
-        ref="ctrlCabecera"
+    ref="ctrlCabecera"
   ></cabecera>
   <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">

@@ -30,6 +30,9 @@ export interface Silaba {
 export class SeparadorSilabas {
   private silaba: Silaba
   private encontroTonica: boolean
+  public GetRima(silabas: Silaba): string {
+    return 'A'
+  }
 
   constructor() {
     this.silaba = {
