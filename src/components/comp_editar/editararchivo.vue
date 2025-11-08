@@ -39,8 +39,9 @@ function hacerNombreArchivo() {
 
 </script>
 <template>
-  <div style="width: 100%">
-    Cancion:
+  <div class="ctrlEdit">
+    <div>
+    <label>Cancion:</label>
     <input
       type="text"
       v-model="props.cancion.cancion"
@@ -48,22 +49,30 @@ function hacerNombreArchivo() {
       @change="hacerNombreArchivo"
       class="input-editable"
     />
-    - Banda:
+    </div>
+    <div>
+    <label>Banda:</label>
     <input
       type="text"
       class="input-editable"
+      
       v-model="props.cancion.banda"
       @change="hacerNombreArchivo"
       :style="{ width: props.cancion.banda.length + 1 + 'ch' }"
     />
+    </div>
 
-    Archivo:
+    <div>
+    <label>Archivo:</label>
     <input
       type="text"
+      class="input-editable"
       v-model="props.cancion.archivo"
       :style="{ width: props.cancion.archivo.length + 'ch' }"
     />
-    Calidad:
+    </div>
+    <div>
+    <label>Calidad:</label>
     <select v-model="cancion.calidad">
       <option value="-1">♻️ Reprocesar</option>
       <option value="0">⭐⚫⚫⚫⚫ De Internet</option>
@@ -71,13 +80,24 @@ function hacerNombreArchivo() {
       <option value="2">⭐⭐⭐⚫⚫ Texto Corregido</option>
       <option value="3">Ok</option>
     </select>
+    </div>
+    <div>
     <button class="lblCabecera" @click="clickOkCambiarDatos">✔️</button>
     <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
+    </div>
   </div>
   <div></div>
 </template>
 <style scoped>
 .btnDescarga {
   margin-left: 20px;
+}
+.input-editable {
+  font-size: large;
+  max-width: 240px;
+}
+.ctrlEdit {
+  display: flex;
+  gap: 10px;
 }
 </style>
