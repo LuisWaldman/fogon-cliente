@@ -100,7 +100,29 @@ function SolicitarCalibracion() {
       console.error('Error al guardar los cambios:', error)
     })
 }
+function viendoVideo() : boolean {
+  if (vista.value.reproduce == 'nada') {
+    return false
+  }
+  if (vista.value.reproduce == 'video') {
+    if (appStore.cancion.medias.length == 0) {
+      return false
+    }
+    if (appStore.estadosApp.estadoSesion == 'conectado' && appStore.rolSesion != 'director') {
+      return false
+    }
+  }
+  return vista.value.reproduce === 'video'
+}
 
+function viendoSecundaria(): boolean {
+  return (
+    viendoVideo() ||
+    vista.value.viendoCuadrado ||
+    vista.value.viendoInstrucciones ||
+    vista.value.viendoSecuencia
+  )
+}
 function GetStylePantallaPlay() {
   //
   let direccion: 'row' | 'row-reverse' | 'column' | 'column-reverse' =
@@ -119,20 +141,10 @@ function GetStylePantallaPlay() {
 }
 
 function estiloVistaPrincipal() {
-  let ancho = vista.value.anchoPrincipal
+  let ancho = 100
   let height = 100
   let display = 'block'
-  const hayPrimeraPantalla = vista.value.muestra != 'nada  '
-  const HaySegundaPantalla =
-    vista.value.reproduce != 'nada' ||
-    vista.value.viendoCuadrado ||
-    vista.value.viendoInstrucciones ||
-    vista.value.viendoSecuencia
-  if (!hayPrimeraPantalla) {
-    ancho = 0
-    height = 0
-    display = 'none'
-  }
+  const HaySegundaPantalla = viendoSecundaria()
   if (HaySegundaPantalla) {
     ancho = vista.value.anchoPrincipal
   }
@@ -140,7 +152,7 @@ function estiloVistaPrincipal() {
     ancho = 100
     height = vista.value.anchoPrincipal
   }
-
+  console.log('estiloVistaPrincipal', ancho, height, display)
   return `width: ${ancho}%; height: ${height}%; display: ${display};`
 }
 
@@ -149,12 +161,8 @@ function estiloVistaSecundaria() {
   let height = 100
   let display = 'block'
 
-  const hayPrimeraPantalla = vista.value.muestra != 'nada  '
-  const HaySegundaPantalla =
-    vista.value.reproduce != 'nada' ||
-    vista.value.viendoCuadrado ||
-    vista.value.viendoInstrucciones ||
-    vista.value.viendoSecuencia
+  
+  const HaySegundaPantalla = viendoSecundaria()
   if (HaySegundaPantalla) {
     ancho = vista.value.anchoPrincipal
   } else {
@@ -168,9 +176,6 @@ function estiloVistaSecundaria() {
     if (!HaySegundaPantalla) {
       ancho = 0
     }
-  }
-  if (!hayPrimeraPantalla) {
-    ancho = 100
   }
   return `width: ${100 - ancho}%; height: ${height}%; display: ${display};`
 }
@@ -312,7 +317,7 @@ const refAdvertencia = ref(true)
         ></TocarPentagrama>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <div style="height: 230px">
+        <div v-if="viendoVideo()">
           <TocarYoutube
             v-if="vista.reproduce == 'video'"
             @cambioEstado="cambioestado"
