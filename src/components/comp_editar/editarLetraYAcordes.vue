@@ -10,7 +10,10 @@ const props = defineProps<{
 }>()
 
 const compaces = ref<CompasEditable[][]>([])
-
+const refParteSeleccionada = ref<number>(-1)
+function seleccionarParte(compas: CompasEditable) {
+  refParteSeleccionada.value = compas.nroSecuencia
+}
 function calcularCompaces() {
   const appStore = useAppStore()
   console.log('EditarLetraYAcordes mounted with compas:', appStore.compas)
@@ -83,14 +86,17 @@ onMounted(() => {
       v-for="(renglon, indexrenglon) in compaces"
       :key="indexrenglon"
     >
+    
       <div
         :class="{
           editdiv: true,
           comienzoparte: compas.iniciaparte,
           finparte: compas.terminaparte,
+          editandoSecuencia: refParteSeleccionada === compas.nroSecuencia
         }"
         v-for="(compas, indexcompas) in renglon"
         :key="indexcompas"
+        @click="seleccionarParte(compas)"
       >
         <div class="acordediv">
           {{ compas.acorde }}
@@ -142,6 +148,9 @@ onMounted(() => {
   border-bottom-left-radius: 12px;
 }
 
+.editandoSecuencia {
+  border-top: 2px solid rgb(255, 0, 0);
+}
 .divletra {
   font-size: var(--tamanio-letra);
   color: white;

@@ -187,6 +187,9 @@ function estiloVistaTerciaria() {
   return `width: ${ancho}%;`
 }
 function GetStyleOverlay() {
+  if (!viendoVideo()) {
+    return `top: 0px;`
+  }
   return `top: ${vista.value.altoReproductor}px;`
 }
 const refSincronizandoMedios = ref(false)
