@@ -8,16 +8,20 @@ export class HelperDisplayEditTexto {
     const renglones = this.SepararEnRenglones(letra)
     let contVersos: number = 0
     const resumen = new textoResumen()
+    const silabas: number[] = []
     for (let i = 0; i < renglones.length; i++) {
       const renglon = renglones[i]
       const resumenVerso = this.CalcularResumenVerso(renglon)
       if (resumenVerso.silabas > 0) {
+        silabas.push(resumenVerso.silabas)
         contVersos += 1
         resumenVerso.nroRenglon = contVersos
       }
       resumen.renglones.push(resumenVerso)
     }
     resumen.versos = contVersos
+
+    // Calculo diferencia de sílabas
     return resumen
   }
 

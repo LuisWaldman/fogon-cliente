@@ -16,16 +16,16 @@ const props = defineProps<{
   verMetricaEs: boolean
 }>()
 
-
 const helperTexto = new HelperDisplayEditTexto()
-const refTextoResumido = ref<textoResumen>(helperTexto.getResumen(props.cancion.letras))
+const refTextoResumido = ref<textoResumen>(
+  helperTexto.getResumen(props.cancion.letras),
+)
 function ActualizarCancion(cancion: Cancion) {
   refTextoResumido.value = helperTexto.getResumen(cancion.letras)
   props.cancion.letras.renglones = [
     refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
   ]
 }
-
 
 const emit = defineEmits(['cerrar'])
 const refTextoEditable = ref('')
@@ -83,10 +83,7 @@ function clickConfirmar() {
     <div class="divLetraConteiner">
       <div class="preview" ref="refPreview">
         <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
-          <div class="acordeconsola" v-if="verso.nroRenglon == -1">
-            ♪
-
-          </div>
+          <div class="acordeconsola" v-if="verso.nroRenglon == -1">♪</div>
           <div class="acordeconsola" v-else>{{ verso.nroRenglon }}</div>
         </div>
       </div>
@@ -102,7 +99,9 @@ function clickConfirmar() {
       <div class="preview" ref="refPreviewVerso">
         <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
           <div class="acordeconsola" v-if="verso.ultimaSilaba.trim() != ''">
-            {{ verso.ultimaSilaba }}
+            {{ verso.ultimaSilaba }} -
+            {{ verso.letraRima }}
+            {{ verso.silabas }} {{ verso.diferenciaSilabas }}
           </div>
           <div v-else>&nbsp;</div>
         </div>
@@ -113,7 +112,7 @@ function clickConfirmar() {
 <style scoped>
 .textArea {
   height: 100%;
-  width: 1200px;
+  width: 1000px;
   overflow-x: auto; /* Scroll horizontal si es necesario */
   overflow-y: auto; /* Scroll vertical si es necesario */
   white-space: pre; /* No hacer wrap automático */
