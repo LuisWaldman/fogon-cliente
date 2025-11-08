@@ -39,6 +39,7 @@ watch(
 
 const refTextarea = ref<HTMLTextAreaElement>()
 const refPreview = ref<HTMLDivElement>()
+const refPreviewVerso = ref<HTMLDivElement>()
 
 onMounted(() => {
   refTextoEditable.value = props.cancion.letras.renglones
@@ -50,7 +51,7 @@ onMounted(() => {
 function onTextareaScroll() {
   if (refTextarea.value && refPreview.value) {
     refPreview.value.scrollTop = refTextarea.value.scrollTop
-    refPreview.value.scrollLeft = refTextarea.value.scrollLeft
+    refPreviewVerso.value.scrollTop = refTextarea.value.scrollTop
   }
 }
 
@@ -67,13 +68,32 @@ function clickConfirmarAcorde() {
 </script>
 
 <template>
-  <div>
+  <div class="barraInformacion">
+    <div class="resVerso">
+      <span>Versos: <b>12</b></span>
+    </div>
+        <div class="resVerso">
+      <span>Versos: <b>12</b></span>
+    </div>
+
     <span @click="clickCancelarConsola">[Cancelar]</span>
     <span @click="clickConfirmarAcorde">[Confirmar]</span>
   </div>
   <div>
-    <div style="display: flex; overflow: hidden; height: 400px">
-      <div style="height: 400px">
+    
+    <div class="divLetraConteiner">
+      <div
+        class="preview"
+        ref="refPreview"
+        
+      >
+        <div v-for="(verso, index) in displayRef.Versos" :key="index">
+          <div class="acordeconsola">
+            {{ index }}
+          </div>
+        </div>
+      </div>
+      <div style="height: 800px">
         <textarea
           class="textArea"
           ref="refTextarea"
@@ -84,29 +104,8 @@ function clickConfirmarAcorde() {
       </div>
       <div
         class="preview"
-        ref="refPreview"
-        v-if="!configuracionPantalla.viendoResumenVerso"
-      >
-        <template v-for="(verso, index) in displayRef.Versos" :key="index">
-          <div
-            v-for="(renglon, rIndex) in verso.renglonesDisplay"
-            :key="rIndex"
-            style="display: flex"
-          >
-            <div
-              v-for="(acorde, aIndex) in renglon.acordes"
-              :key="aIndex"
-              class="acordeconsola"
-            >
-              {{ acorde.contenido }}
-            </div>
-          </div>
-        </template>
-      </div>
-      <div
-        class="preview"
-        ref="refPreview"
-        v-if="configuracionPantalla.viendoResumenVerso"
+        ref="refPreviewVerso"
+        
       >
         <div v-for="(verso, index) in displayRef.Versos" :key="index">
           <div class="acordeconsola">
@@ -120,12 +119,16 @@ function clickConfirmarAcorde() {
 <style scoped>
 .textArea {
   height: 100%;
+  width: 900px;
+  overflow-x: auto;         /* Scroll horizontal si es necesario */
+  overflow-y: auto;         /* Scroll vertical si es necesario */
+  white-space: pre;         /* No hacer wrap automático */
   font-family: monospace;
   font-size: var(--tamanio-letra);
   border: none;
   padding: 10px;
   color: white;
-  font-size: var(--tamanio-letra);
+  background-color: #222;   /* Opcional para contraste */
 }
 .preview {
   white-space: pre-wrap;
@@ -137,5 +140,22 @@ function clickConfirmarAcorde() {
 }
 .acordeconsola {
   margin-right: 4px;
+}
+.barraInformacion {  
+  display: flex;
+  background-color: #333333;
+  color: var(--color-texto-secciones);
+  padding: 5px;
+
+}
+.resVerso {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.divLetraConteiner {
+  display: flex;
+  gap: 0px;
+  overflow: hidden;
+  height: 800px;
 }
 </style>
