@@ -120,13 +120,7 @@ function cambioModo(index: number) {
   ></cabecera>
   <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">
-      <div
-        style="position: relative; left: 96%"
-        v-on:click="cambiarVista('editartexto')"
-        v-if="viendo === 'inicio'"
-      >
-        🔄
-      </div>
+      
 
       <TocarPentagrama
         v-if="viendo === 'pentagramas'"
@@ -183,7 +177,7 @@ function cambioModo(index: number) {
         >
       </editarpentagrama>
     </div>
-    <div :style="estiloVistaSecundaria()" v-if="viendo !== 'pentagramas'">
+    <div :style="estiloVistaSecundaria()" v-if="viendo !== 'pentagramas' && viendo !== 'editartexto'">
       <editAcordes
         v-if="viendo == 'editaracordes'"
         :cancion="appStore.editandocancion"

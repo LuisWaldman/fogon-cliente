@@ -139,8 +139,8 @@ function DescargarJSON() {
       </div>
       <div
         class="divctrlEdit"
-        :class="viendo === 'letra' ? 'edintandoCtrl' : ''"
-        @click="clickCambiar('letra')"
+        :class="viendo === 'editartexto' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('editartexto')"
       >
         <label>🔤 letra</label>
         <div>
