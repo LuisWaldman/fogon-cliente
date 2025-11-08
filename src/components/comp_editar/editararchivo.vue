@@ -36,54 +36,52 @@ function hacerNombreArchivo() {
     '-' +
     props.cancion.cancion.replace(/ /g, '_')
 }
-
 </script>
 <template>
   <div class="ctrlEdit">
     <div>
-    <label>Cancion:</label>
-    <input
-      type="text"
-      v-model="props.cancion.cancion"
-      :style="{ width: props.cancion.cancion.length + 'ch' }"
-      @change="hacerNombreArchivo"
-      class="input-editable"
-    />
+      <label>Cancion:</label>
+      <input
+        type="text"
+        v-model="props.cancion.cancion"
+        :style="{ width: props.cancion.cancion.length + 'ch' }"
+        @change="hacerNombreArchivo"
+        class="input-editable"
+      />
     </div>
     <div>
-    <label>Banda:</label>
-    <input
-      type="text"
-      class="input-editable"
-      
-      v-model="props.cancion.banda"
-      @change="hacerNombreArchivo"
-      :style="{ width: props.cancion.banda.length + 1 + 'ch' }"
-    />
+      <label>Banda:</label>
+      <input
+        type="text"
+        class="input-editable"
+        v-model="props.cancion.banda"
+        @change="hacerNombreArchivo"
+        :style="{ width: props.cancion.banda.length + 1 + 'ch' }"
+      />
     </div>
 
     <div>
-    <label>Archivo:</label>
-    <input
-      type="text"
-      class="input-editable"
-      v-model="props.cancion.archivo"
-      :style="{ width: props.cancion.archivo.length + 'ch' }"
-    />
+      <label>Archivo:</label>
+      <input
+        type="text"
+        class="input-editable"
+        v-model="props.cancion.archivo"
+        :style="{ width: props.cancion.archivo.length + 'ch' }"
+      />
     </div>
     <div>
-    <label>Calidad:</label>
-    <select v-model="cancion.calidad">
-      <option value="-1">♻️ Reprocesar</option>
-      <option value="0">⭐⚫⚫⚫⚫ De Internet</option>
-      <option value="1">⭐⭐⚫⚫⚫ Texto Sincronizado</option>
-      <option value="2">⭐⭐⭐⚫⚫ Texto Corregido</option>
-      <option value="3">Ok</option>
-    </select>
+      <label>Calidad:</label>
+      <select v-model="cancion.calidad">
+        <option value="-1">♻️ Reprocesar</option>
+        <option value="0">⭐⚫⚫⚫⚫ De Internet</option>
+        <option value="1">⭐⭐⚫⚫⚫ Texto Sincronizado</option>
+        <option value="2">⭐⭐⭐⚫⚫ Texto Corregido</option>
+        <option value="3">Ok</option>
+      </select>
     </div>
     <div>
-    <button class="lblCabecera" @click="clickOkCambiarDatos">✔️</button>
-    <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
+      <button class="lblCabecera" @click="clickOkCambiarDatos">✔️</button>
+      <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
     </div>
   </div>
   <div></div>

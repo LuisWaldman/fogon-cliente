@@ -11,7 +11,6 @@ const props = defineProps<{
 
 const compaces = ref<CompasEditable[][]>([])
 
-
 function calcularCompaces() {
   const appStore = useAppStore()
   console.log('EditarLetraYAcordes mounted with compas:', appStore.compas)
@@ -25,7 +24,7 @@ function calcularCompaces() {
 
   for (let i = 0; i < letra.length; i++) {
     const compasEditable = new CompasEditable()
-    compasEditable.iniciaparte = (i == 0) ? true : false
+    compasEditable.iniciaparte = i == 0 ? true : false
     if (contSecuencia < props.cancion.acordes.ordenPartes.length) {
       const parte = props.cancion.acordes.ordenPartes[contSecuencia]
       if (
@@ -38,18 +37,19 @@ function calcularCompaces() {
         }
         contSecuencia++
         contAcordeEnSecuencia = 0
-        compasEditable.acorde = props.cancion.acordes.partes[parte].acordes[
-          contAcordeEnSecuencia
-        ]
+        compasEditable.acorde =
+          props.cancion.acordes.partes[parte].acordes[contAcordeEnSecuencia]
         compasEditable.nroSecuencia = contSecuencia
         compasEditable.iniciaparte = true
       } else {
-        compasEditable.acorde = props.cancion.acordes.partes[parte].acordes[
-          contAcordeEnSecuencia
-        ]        
+        compasEditable.acorde =
+          props.cancion.acordes.partes[parte].acordes[contAcordeEnSecuencia]
         compasEditable.nroSecuencia = contSecuencia
-        compasEditable.terminaparte = contAcordeEnSecuencia ===
-        props.cancion.acordes.partes[parte].acordes.length - 1 ? true : false
+        compasEditable.terminaparte =
+          contAcordeEnSecuencia ===
+          props.cancion.acordes.partes[parte].acordes.length - 1
+            ? true
+            : false
         contAcordeEnSecuencia++
       }
 
@@ -69,12 +69,11 @@ function calcularCompaces() {
     renglon[renglon.length - 1].terminaparte = true
   }
   renglones.push(renglon)
-  compaces.value = renglones  
+  compaces.value = renglones
 }
 
 onMounted(() => {
   calcularCompaces()
-
 })
 </script>
 <template>
@@ -85,7 +84,11 @@ onMounted(() => {
       :key="indexrenglon"
     >
       <div
-        :class="{editdiv: true, comienzoparte: compas.iniciaparte, finparte: compas.terminaparte}"
+        :class="{
+          editdiv: true,
+          comienzoparte: compas.iniciaparte,
+          finparte: compas.terminaparte,
+        }"
         v-for="(compas, indexcompas) in renglon"
         :key="indexcompas"
       >
@@ -116,7 +119,6 @@ onMounted(() => {
   display: inline-block;
   color: #a9a8f6;
   margin-right: 4px;
-
 }
 
 .editrenglon {
@@ -139,7 +141,6 @@ onMounted(() => {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }
-
 
 .divletra {
   font-size: var(--tamanio-letra);

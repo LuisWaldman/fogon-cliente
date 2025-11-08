@@ -83,7 +83,11 @@ function DescargarJSON() {
 <template>
   <div class="navbarFogon">
     <div style="display: flex; flex-wrap: wrap">
-      <div class="divctrlEdit " :class="viendo === 'archivo' ? 'edintandoCtrl' : ''" @click="clickCambiar('archivo')">
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'archivo' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('archivo')"
+      >
         <div style="display: flex">
           <emoticonOrigen :origen="origen.origenUrl" />
           <label>{{ arreglartexto(cancion.banda) }}</label>
@@ -91,51 +95,66 @@ function DescargarJSON() {
           <label v-else-if="cancion.calidad == 0">⭐⚫⚫⚫⚫</label>
           <label v-else-if="cancion.calidad == 1">⭐⭐⚫⚫⚫</label>
           <label v-else-if="cancion.calidad == 2">⭐⭐⭐⚫⚫</label>
-
-          
         </div>
         <div class="tituloEdit titulocancion">
           {{ arreglartexto(cancion.cancion) }}
         </div>
       </div>
-      <div class="divctrlEdit" :class="viendo === 'tiempo' ? 'edintandoCtrl' : ''" @click="clickCambiar('tiempo')">
-        <label
-          >BPM: {{ cancion.bpm }}
-          </label
-        >
-        <div>
-          <label class="tituloEdit">{{
-            tiempo.formatSegundos(cancion.duracionCancion)
-          }}</label>
-        </div>
-      </div>
-      <div class="divctrlEdit" :class="viendo === 'escala' ? 'edintandoCtrl' : ''" @click="clickCambiar('escala')">
-        <label>Escala</label
-        >
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'escala' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('escala')"
+      >
+        <label>Escala</label>
         <div>
           <label class="tituloEdit" v-if="cancion.escala">{{
             helper.GetAcorde(cancion.escala)
           }}</label>
         </div>
       </div>
-      <div class="divctrlEdit" :class="viendo === 'acordes' ? 'edintandoCtrl' : ''" @click="clickCambiar('acordes')">
+      
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'tiempo' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('tiempo')"
+      >
+        <label>BPM: {{ cancion.bpm }} </label>
+        <div>
+          <label class="tituloEdit">{{
+            tiempo.formatSegundos(cancion.duracionCancion)
+          }}</label>
+        </div>
+      </div>
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'acordes' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('acordes')"
+      >
         <label>🎸 Acordes</label>
         <div>
           <div>Acordes: 4</div>
           <div>Partes: 2</div>
           <div>Funciones: I VI V</div>
-          </div>
+        </div>
       </div>
-<div class="divctrlEdit" :class="viendo === 'letra' ? 'edintandoCtrl' : ''" @click="clickCambiar('letra')">
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'letra' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('letra')"
+      >
         <label>🔤 letra</label>
         <div>
           <div>Versos: 15</div>
           <div>Silabas: 13 +/- 2</div>
           <div>Rimas: Soneto</div>
-          </div>
+        </div>
       </div>
 
-      <div class="divctrlEdit" :class="viendo === 'partituras' ? 'edintandoCtrl' : ''" @click="clickCambiar('partituras')">
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'partituras' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('partituras')"
+      >
         <label>Partituras</label>
         <div>
           <label class="tituloEdit">
@@ -144,29 +163,29 @@ function DescargarJSON() {
         </div>
       </div>
 
-      <div class="divctrlEdit" :class="viendo === 'medias' ? 'edintandoCtrl' : ''" @click="clickCambiar('medias')">
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'medias' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('medias')"
+      >
         <label>📺 Video</label>
         <div>
-          <label class="tituloEdit" v-if="cancion.medias.length > 0"
-            >📺</label
-          >
+          <label class="tituloEdit" v-if="cancion.medias.length > 0">📺</label>
           <label class="tituloEdit" v-else>No</label>
         </div>
       </div>
 
-      
-        
       <div class="divctrlEdit">
         <label>Guardar</label>
         <div>
-        <button @click="guardarCambios('local')">💾 </button>
-        <button
-          v-if="appStore.estadosApp.estadoLogin === 'logueado'"
-          @click="guardarCambios('server')"
-        >
-          🗄️
-        </button>
-        <button @click="DescargarJSON" class="btnDescarga">⬇️</button>
+          <button @click="guardarCambios('local')">💾</button>
+          <button
+            v-if="appStore.estadosApp.estadoLogin === 'logueado'"
+            @click="guardarCambios('server')"
+          >
+            🗄️
+          </button>
+          <button @click="DescargarJSON" class="btnDescarga">⬇️</button>
         </div>
       </div>
     </div>
@@ -488,7 +507,6 @@ function DescargarJSON() {
 .edintandoCtrl {
   border: 2px solid #9b1616;
   background: linear-gradient(135deg, #000000 0%, #974343 100%);
-
 }
 .titulocancion {
   width: 400px;

@@ -18,9 +18,6 @@ const viendo: Ref<string> = ref('inicio')
 
 const vistaControl: vistaEditar = new vistaEditar()
 
-
-
-
 const pantalla = new Pantalla()
 const editandoCompas = ref(-1)
 function cambiarCompas(compas: number) {
@@ -68,8 +65,15 @@ const ctrlSecuencia = ref()
 const ctrlTocarPentagrama = ref()
 
 function cambiarVista(nvista: string) {
+  if (nvista === 'pentagramas') {
+    editandoCompas.value = -1
+  }
+  if (nvista === 'archivo') {
+    viendo.value = 'inicio'
+    return
+  }
   viendo.value = nvista
-  localStorage.setItem('viendo_vista_editando', nvista)
+  
 }
 
 function clickCerrarEditar() {
@@ -134,18 +138,19 @@ function cambioModo(index: number) {
         ref="ctrlTocarPentagrama"
       ></TocarPentagrama>
 
-      
-        <TocarLetra
-        v-if="viendo=='inicio' && vista.muestra == 'karaoke'"
-          :cancion="appStore.editandocancion"
-          :compas="editandoCompas"
-        ></TocarLetra>
-        <TocarLetraAcorde
-        
-        v-if="viendo=='inicio' && (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')"
-          :cancion="appStore.editandocancion"
-          :compas="editandoCompas"
-        ></TocarLetraAcorde>
+      <TocarLetra
+        v-if="viendo == 'inicio' && vista.muestra == 'karaoke'"
+        :cancion="appStore.editandocancion"
+        :compas="editandoCompas"
+      ></TocarLetra>
+      <TocarLetraAcorde
+        v-if="
+          viendo == 'inicio' &&
+          (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
+        "
+        :cancion="appStore.editandocancion"
+        :compas="editandoCompas"
+      ></TocarLetraAcorde>
 
       <EditarLetraAcorde
         v-if="viendo == 'acordes' || viendo == 'escala'"

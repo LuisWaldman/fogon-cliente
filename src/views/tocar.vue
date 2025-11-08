@@ -100,7 +100,7 @@ function SolicitarCalibracion() {
       console.error('Error al guardar los cambios:', error)
     })
 }
-function viendoVideo() : boolean {
+function viendoVideo(): boolean {
   if (vista.value.reproduce == 'nada') {
     return false
   }
@@ -108,7 +108,10 @@ function viendoVideo() : boolean {
     if (appStore.cancion.medias.length == 0) {
       return false
     }
-    if (appStore.estadosApp.estadoSesion == 'conectado' && appStore.rolSesion != 'director') {
+    if (
+      appStore.estadosApp.estadoSesion == 'conectado' &&
+      appStore.rolSesion != 'director'
+    ) {
       return false
     }
   }
@@ -161,7 +164,6 @@ function estiloVistaSecundaria() {
   let height = 100
   let display = 'block'
 
-  
   const HaySegundaPantalla = viendoSecundaria()
   if (HaySegundaPantalla) {
     ancho = vista.value.anchoPrincipal
