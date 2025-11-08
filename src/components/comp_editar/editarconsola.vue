@@ -73,10 +73,31 @@ function clickConfirmar() {
 <template>
   <div class="barraInformacion">
     <div class="resVerso">
-      <span>Versos: <b>12</b></span>
+      <span
+        >Versos: <b>{{ refTextoResumido.versos }}</b></span
+      >
     </div>
     <div class="resVerso">
-      <span>Versos: <b>12</b></span>
+      <span
+        >Silabas:
+        <b v-if="refTextoResumido.silabas.length == 0">Irregular</b>
+        <b v-else-if="refTextoResumido.silabas.length == 1">
+          {{ refTextoResumido.silabas[0].base }}
+          <span v-if="refTextoResumido.silabas[0].diferencia > 0"
+            >+/-{{ refTextoResumido.silabas[0].diferencia }}</span
+          >
+        </b>
+        <b v-else>
+          {{ refTextoResumido.silabas[0].base }}
+          <span v-if="refTextoResumido.silabas[0].diferencia > 0"
+            >+/-{{ refTextoResumido.silabas[0].diferencia }}</span
+          >
+          y {{ refTextoResumido.silabas[1].base }}
+          <span v-if="refTextoResumido.silabas[1].diferencia > 0"
+            >+/-{{ refTextoResumido.silabas[1].diferencia }}</span
+          >
+        </b>
+      </span>
     </div>
   </div>
   <div>

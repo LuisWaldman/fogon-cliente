@@ -1,7 +1,7 @@
 import type { Letra } from '../cancion/letra'
 import { SeparadorSilabas } from '../cancion/SeparadorSilabas'
 import { RenglonTexto } from './renglonResumen'
-import { textoResumen } from './textoResumen'
+import { textoResumen, silabasPrincipal } from './textoResumen'
 
 export class HelperDisplayEditTexto {
   public getResumen(letra: Letra): textoResumen {
@@ -20,9 +20,73 @@ export class HelperDisplayEditTexto {
       resumen.renglones.push(resumenVerso)
     }
     resumen.versos = contVersos
-
-    // Calculo diferencia de sílabas
+    resumen.silabas = this.CalcularDiferenciaSilabas(silabas)
     return resumen
+  }
+
+  CalcularDiferenciaSilabas(silabas: number[]): silabasPrincipal[] {
+    if (silabas.length === 0) return []
+
+    const conteo = new Map<number, number>()
+
+    // Contar ocurrencias de cada cantidad de sílabas
+    for (const s of silabas) {
+      conteo.set(s, (conteo.get(s) || 0) + 1)
+    }
+
+    const cantidades = Array.from(conteo.entries()).sort((a, b) => b[1] - a[1]) // ordenado por frecuencia descendente
+
+    const grupos: { base: number; total: number }[] = []
+    const procesadas = new Set<number>()
+
+    for (const [base] of cantidades) {
+      if (procesadas.has(base)) continue
+
+      // sumar cuántos versos están en el rango base ±2
+      let total = 0
+      for (let delta = -2; delta <= 2; delta++) {
+        const count = conteo.get(base + delta) || 0
+        if (count > 0) {
+          total += count
+          procesadas.add(base + delta)
+        }
+      }
+
+      grupos.push({ base, total })
+      if (grupos.length === 2) break // solo queremos hasta 2 grupos
+    }
+
+    // Validar que todos los versos están incluidos en los grupos encontrados
+    let totalVersos = 0
+    for (const g of grupos) {
+      totalVersos += g.total
+    }
+
+    if (totalVersos !== silabas.length) {
+      // Si no todos los versos están en los grupos, retornar array vacío (indica 0 o irregular)
+      return []
+    }
+
+    const resultado: silabasPrincipal[] = grupos.map((g) => {
+      const item = new silabasPrincipal()
+      item.base = g.base
+      
+      // Calcular la diferencia máxima en este grupo
+      let minSilabas = g.base
+      let maxSilabas = g.base
+      for (let delta = -2; delta <= 2; delta++) {
+        const count = conteo.get(g.base + delta) || 0
+        if (count > 0) {
+          minSilabas = Math.min(minSilabas, g.base + delta)
+          maxSilabas = Math.max(maxSilabas, g.base + delta)
+        }
+      }
+      item.diferencia = maxSilabas - minSilabas
+      
+      return item
+    })
+
+    return resultado
   }
 
   private CalcularResumenVerso(contenido: string): RenglonTexto {
@@ -52,9 +116,15 @@ export class HelperDisplayEditTexto {
       const parteletra = letrarenglones[i]
       if (parteletra.includes('/n')) {
         const partes = parteletra.split('/n')
-        rengonToAdd += partes[0]
-        renglonRet.push(rengonToAdd)
-        rengonToAdd = partes[1]
+        // Procesar todas las partes separadas por /n
+        for (let j = 0; j < partes.length; j++) {
+          rengonToAdd += partes[j]
+          // Si no es la última parte, agregar el renglón y resetear
+          if (j < partes.length - 1) {
+            renglonRet.push(rengonToAdd)
+            rengonToAdd = ''
+          }
+        }
       } else {
         rengonToAdd += parteletra
       }
