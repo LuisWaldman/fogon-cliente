@@ -14,6 +14,7 @@ import { vistaEditar } from '../modelo/helperVistas/editar/vistaEditar'
 import { onMounted, ref, watch, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import type { VistaTocar } from '../modelo/configuracion'
+import { a } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 const viendo: Ref<string> = ref('inicio')
 
 const vistaControl: vistaEditar = new vistaEditar()
@@ -63,7 +64,10 @@ function estiloVistaSecundaria() {
 const ctrlEditarTexto = ref()
 const ctrlSecuencia = ref()
 const ctrlTocarPentagrama = ref()
-
+const ctrlCabecera = ref()
+function actualizarResumen() {
+  ctrlCabecera.value.Actualizar()
+}
 function cambiarVista(nvista: string) {
   if (nvista === 'pentagramas') {
     editandoCompas.value = -1
@@ -82,30 +86,13 @@ function clickCerrarEditar() {
 
 function Actualizar() {
   if (ctrlEditarTexto.value) {
-    ctrlEditarTexto.value.Actualizar()
+    
     ctrlSecuencia.value.Actualizar()
   } else {
     ctrlTocarPentagrama.value.Actualizar()
   }
 }
 
-watch(
-  () => appStore.editandocancion.escala,
-  () => {
-    if (ctrlEditarTexto.value) {
-      ctrlEditarTexto.value.Actualizar()
-    }
-  },
-)
-
-watch(
-  () => appStore.editandocancion,
-  () => {
-    if (ctrlEditarTexto.value) {
-      ctrlEditarTexto.value.Actualizar()
-    }
-  },
-)
 const viendoModo = ref(0)
 function cambioModo(index: number) {
   viendoModo.value = index
@@ -116,6 +103,8 @@ function cambioModo(index: number) {
     :cancion="appStore.editandocancion"
     :origen="appStore.origenEditando"
     @viendo="cambiarVista"
+    
+        ref="ctrlCabecera"
   ></cabecera>
   <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">
@@ -153,7 +142,7 @@ function cambioModo(index: number) {
 
       <editartexto
         v-if="viendo == 'editartexto'"
-        @cerrar="clickCerrarEditar"
+        @actualizoTexto="actualizarResumen"
         :cancion="appStore.editandocancion"
         @actualizoPentagrama="Actualizar"
         :compas="editandoCompas"

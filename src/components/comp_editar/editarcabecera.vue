@@ -5,6 +5,7 @@ import editararchivo from './editararchivo.vue'
 import editarmedias from './editarmedias.vue'
 import editartiempo from './editartiempo.vue'
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
+import SpanSilabas from './spanSilabas.vue'
 import { Tiempo } from '../../modelo/tiempo'
 const tiempo = new Tiempo()
 import { ref } from 'vue'
@@ -55,6 +56,13 @@ helper.latino = appStore.perfil.CifradoLatino
 
 const helperTexto = new HelperDisplayEditTexto()
 const refTexto = ref<textoResumen>(helperTexto.getResumen(props.cancion.letras))
+function Actualizar() {
+  refTexto.value = helperTexto.getResumen(props.cancion.letras)
+}
+
+
+defineExpose({ Actualizar })
+
 function guardarCambios(origenDestino: string) {
   CancionManager.getInstance()
     .Save(
@@ -138,7 +146,7 @@ function DescargarJSON() {
         <label>🔤 Letra</label>
         <div>
           <div>Versos: {{ refTexto.versos }}</div>
-          <div>Silabas: {{ refTexto.silabas }}</div>
+          <div>Silabas: <SpanSilabas :silabas="refTexto.silabas" /></div>
           <div>Rimas: {{ refTexto.rimas }}</div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { HelperDisplay } from '../../modelo/display/helperDisplay'
 import { Display } from '../../modelo/display/display'
 import { HelperDisplayEditTexto } from '../../modelo/displayEditTexto/helperDisplayEditTexto'
 import type { textoResumen } from '../../modelo/displayEditTexto/textoResumen'
+import SpanSilabas from './spanSilabas.vue'
 
 const pantalla = new Pantalla()
 const configuracionPantalla = pantalla.getConfiguracionPantalla()
@@ -21,13 +22,17 @@ const refTextoResumido = ref<textoResumen>(
   helperTexto.getResumen(props.cancion.letras),
 )
 function ActualizarCancion(cancion: Cancion) {
-  refTextoResumido.value = helperTexto.getResumen(cancion.letras)
+  const nuevo = helperTexto.getResumen(cancion.letras)
   props.cancion.letras.renglones = [
     refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
   ]
+  if (refTextoResumido.value.versos != nuevo.versos || refTextoResumido.value.silabas.length != nuevo.silabas.length) {
+    emit('actualizoTexto')
+  } 
+  refTextoResumido.value = nuevo
 }
 
-const emit = defineEmits(['cerrar'])
+const emit = defineEmits(['actualizoTexto'])
 const refTextoEditable = ref('')
 const cancionActualizada = Cancion.GetDefault('EDITCONSOLA')
 cancionActualizada.acordes = props.cancion.acordes
@@ -59,15 +64,6 @@ function onTextareaScroll() {
   }
 }
 
-function clickCancelarConsola() {
-  emit('cerrar')
-}
-
-function clickConfirmar() {
-  props.cancion.letras.renglones = [
-    refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
-  ]
-}
 </script>
 
 <template>
@@ -78,26 +74,7 @@ function clickConfirmar() {
       >
     </div>
     <div class="resVerso">
-      <span
-        >Silabas:
-        <b v-if="refTextoResumido.silabas.length == 0">Irregular</b>
-        <b v-else-if="refTextoResumido.silabas.length == 1">
-          {{ refTextoResumido.silabas[0].base }}
-          <span v-if="refTextoResumido.silabas[0].diferencia > 0"
-            >+/-{{ refTextoResumido.silabas[0].diferencia }}</span
-          >
-        </b>
-        <b v-else>
-          {{ refTextoResumido.silabas[0].base }}
-          <span v-if="refTextoResumido.silabas[0].diferencia > 0"
-            >+/-{{ refTextoResumido.silabas[0].diferencia }}</span
-          >
-          y {{ refTextoResumido.silabas[1].base }}
-          <span v-if="refTextoResumido.silabas[1].diferencia > 0"
-            >+/-{{ refTextoResumido.silabas[1].diferencia }}</span
-          >
-        </b>
-      </span>
+      <span>Silabas: <SpanSilabas :silabas="refTextoResumido.silabas" /></span>
     </div>
   </div>
   <div>

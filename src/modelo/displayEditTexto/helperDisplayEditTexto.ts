@@ -21,7 +21,15 @@ export class HelperDisplayEditTexto {
     }
     resumen.versos = contVersos
     resumen.silabas = this.CalcularDiferenciaSilabas(silabas)
+    // Calculo la letra de la rima
+    this.CalcularLetraRima(resumen)
     return resumen
+  }
+  CalcularLetraRima(resumen: textoResumen) {
+    for (const renglon of resumen.renglones) {
+      if (renglon.silabas > 0 && renglon.ultimaSilaba) {
+      }
+    }
   }
 
   CalcularDiferenciaSilabas(silabas: number[]): silabasPrincipal[] {
@@ -70,7 +78,7 @@ export class HelperDisplayEditTexto {
     const resultado: silabasPrincipal[] = grupos.map((g) => {
       const item = new silabasPrincipal()
       item.base = g.base
-      
+
       // Calcular la diferencia máxima en este grupo
       let minSilabas = g.base
       let maxSilabas = g.base
@@ -82,7 +90,7 @@ export class HelperDisplayEditTexto {
         }
       }
       item.diferencia = maxSilabas - minSilabas
-      
+
       return item
     })
 
