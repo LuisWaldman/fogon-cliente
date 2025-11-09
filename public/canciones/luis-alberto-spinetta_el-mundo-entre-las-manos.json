@@ -8,115 +8,182 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Gm7",
+                    "D",
+                    "F#m",
+                    "C7/9 D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
+                    "Gm7",
                     "Em",
                     "F#m",
-                    "Em"
+                    "C",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Gm7",
+                    "D/F#",
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Gm7",
+                    "Gm7",
+                    "F#m C",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F#m",
+                    "Gm7",
+                    "Gm7",
+                    "F#m",
+                    "Em",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "A",
                     "D",
-                    "Em",
-                    "F#m",
-                    "A"
-                ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "A4",
-                    "A7",
+                    "D",
                     "Gm7",
-                    "C7/9",
-                    "F",
-                    "Dm",
-                    "Gm7",
-                    "C7/9"
-                ]
-            },
-            {
-                "nombre": "parte4",
-                "acordes": [
-                    "D/F#",
-                    "F#m",
-                    "Em",
-                    "A",
                     "D",
                     "F#m",
-                    "Em",
-                    "A"
+                    "C Gm7",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m C7/9"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            2,
-            3
+            2
         ]
     },
     "letras": [
         [
-            "s que tenga el m",
-            "undo entre las m",
-            "anos",
-            "/npor m"
-        ],
-        [
-            "ás que pueda hac",
-            "erte muy fel",
-            "iz",
-            "/nno s"
-        ],
-        [
-            "é si he de lleg",
-            "ar adónde qu",
-            "ieres/nporque s"
-        ],
-        [
-            "iempre te has nega",
-            "do para m",
-            ".",
+            "Por más ",
             "",
-            "/nY "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "que venga el mun",
+            "do entre las manos ",
+            "por más que pueda hacert ",
+            "muy feliz, ",
+            "no sé si iré llegar ",
+            "donde quieres porque siempre ",
+            "te has llegado para ",
+            "mí. /n"
         ],
         [
-            "tú y las r",
-            "osas dónde est",
-            "án",
-            "/ny "
+            "Por más ",
+            "que sea el amo de las co",
+            "sas, por más que ",
+            "yo te pueda hacer fel",
+            "iz, no sé si ",
+            "iré llegar lo que buscas p",
+            "orque siempre te has llegad",
+            "o para mí. ",
+            "",
+            "tú dirás no sé d",
+            "ónde están, ",
+            "tú por qué quieres que ",
+            "marchito  tanto tiempo ",
+            "no ha dado al viento d",
+            "ecirte que pueda tanto tiem",
+            "po. \n\nPor ",
+            "más que sea el amo de ",
+            "las cosas, ",
+            "por más que yo te pueda hace",
+            "r feliz, ",
+            "no sé si iré llegar lo ",
+            "que buscas porque siempre te has ",
+            "llegado para ",
+            "mí. ",
+            "tú dirá",
+            "s no sé dónde está",
+            "n, tú por qué ",
+            "quieres que marchito tanto ",
+            "tiempo,  no ha dado al ",
+            "viento decirte que pueda tant ",
+            "tiempo. /n"
         ],
         [
-            "tú por qué q",
-            "uieres que marc",
-            "hite tanto tie",
-            "mpo/n"
-        ],
-        [
-            "he mandado al vi",
-            "ento decirte/n"
-        ],
-        [
-            "queda tanto ti",
-            "empo, n",
-            "o he de marchitarl",
-            "o."
+            "Por más que venga ",
+            "el mundo entre las mano",
+            "s, por más que pueda ha",
+            "certe muy feliz ",
+            "no sé si iré ",
+            "llegar donde quieres porque s",
+            "iempre te has llegado pa",
+            "ra mí. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "tú dirás no sé dónde están, tú por qué quieres que marchito tanto tiempo, no ha dado al viento decirte que pueda tanto tiempo. "
         ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "E4gHJsNCQgk",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

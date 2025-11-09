@@ -8,60 +8,160 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "F#7",
-                    "Em6/7"
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Em",
+                    "Dº",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Dº",
+                    "Dº",
+                    "Dº",
+                    "Dº",
+                    "Dº",
+                    "Dº",
+                    "Dº",
+                    "Dº",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em6/7",
+                    "Em6/7",
+                    "Em6/7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em6/7",
+                    "Em6/7",
                     "Em6/7",
                     "Ebmaj7",
+                    "Ebmaj7",
                     "Dº",
+                    "Dº",
+                    "Dº",
+                    "Dº",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "C Aug/E: 032100/n"
+            "/n"
         ],
         [
-            "GMaj9/B: X25232/n"
+            "Ya verás, las ",
+            "hojas  en el aire pueden ",
+            "inquietar  /n"
         ],
         [
-            "DMaj7/F#: 200222/n"
-        ],
-        [],
-        [
-            "Ya veras/npero en calma la noche ha de br"
-        ],
-        [
-            "illar/nno inte"
-        ],
-        [
-            "ntas ser así feliz/nsi tod"
+            "Fo",
+            "rmas que se busca",
+            "n, pero en c",
+            "alma la noche ha de ",
+            "brill",
+            "ar \n\nTal vez ",
+            "",
+            "/n"
         ],
         [
-            "o se junta otra vez"
+            "Apr",
+            "ender, el alma es ",
+            "una piedra algún l",
+            "ugar ",
+            "mil vece ",
+            "las flores ",
+            "se marcha",
+            "n, pero nacen porque ",
+            "sí \n\nNo ",
+            "sé ",
+            "",
+            "",
+            "¿\nQué s",
+            "erá de ti? /n"
+        ],
+        [
+            "No intentas ser ",
+            "así feliz ",
+            "/n"
+        ],
+        [
+            "D",
+            "esesperando all ",
+            "al ca",
+            "er, si t",
+            "odo se junta ot",
+            "ra vez \n\nEn ",
+            "el mar, donde las ",
+            "aguas ya no son hiel",
+            "o \n\nD",
+            "onde la espuma si",
+            "empre espej ",
+            "en el vien",
+            "to que viaja sin p",
+            "arar ",
+            "vuelve ",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 95,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kiKybY6QGIw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -8,146 +8,388 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C F7M",
+                    "C",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "G#7M",
+                    "G#7M",
+                    "F7M",
+                    "F7M"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "G",
-                    "Am7",
                     "F7M",
-                    "Fm7(5-)"
+                    "F7M",
+                    "F7M",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G#7M",
-                    "C/A#",
-                    "Am7",
-                    "Dm7(5-)",
                     "C",
-                    "Am7",
-                    "F7M",
-                    "Fm7(5-)"
+                    "C",
+                    "Cm7",
+                    "Cm7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G#",
-                    "D#m",
-                    "Dm7",
                     "Cm7",
-                    "A#m7"
+                    "Cm7",
+                    "Dm7",
+                    "Dm7",
+                    "F7M",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "C",
+                    "D#m",
+                    "Cm7",
+                    "Fm7(5-)",
                     "G#",
+                    "Cm7",
+                    "F7M",
+                    "D#m",
+                    "Dm7",
+                    "Dm7",
                     "D#7",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "G",
+                    "G",
+                    "D#7",
+                    "D#7",
+                    "Cm7",
+                    "Cm7",
+                    "Dm7",
                     "Dm7",
                     "Cm7",
+                    "Cm7",
+                    "Fm7(5-)",
+                    "Dm7",
+                    "F7M",
+                    "D#m",
+                    "D#m",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Fm7(5-) D#m",
+                    "Fm7(5-) D#m",
+                    "Dm7",
                     "A#m7",
-                    "G#",
+                    "D#7",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
+                    "Fm7(5-)",
                     "Fm7(5-)"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Fm7(5-)",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            2,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "Un r",
-            "umor/nAdor"
-        ],
-        [
-            "mece toda m",
-            "area en m",
+            "Un rum",
+            "or ha dado un ",
+            "beso toda marea de ",
+            "mí ",
+            "la vez ",
+            "yo te g",
+            "rito sin poder \n\nTe g",
+            "rito mien",
+            "tras tanto alg",
+            "uien \n\nMe ",
+            "juzgas en una raza ",
             "/n"
         ],
         [
-            "Y a ",
-            "la vez/nYo te "
+            "Piedra sobre pie",
+            "dra, nada importa ",
+            "ya \n\nMi a",
+            "mor, ",
+            "yo te choco deb",
+            "ilmente /n"
         ],
         [
-            "grito sin po",
-            "derte grit",
-            "ar/nMientras "
+            "Bajo un ",
+            "sol de ",
+            "mañana de",
+            "sesperar /n"
         ],
         [
-            "tanto algu",
-            "ien/nNos prejuzga sin ni"
+            "Me veo ",
+            "partir ",
+            "soy un barco que se h",
+            "ace armar ",
+            "en tod",
+            "o el retorno un cambi",
+            "o nacerá /n"
         ],
         [
-            "nguna razón",
-            "/nPie"
+            "Homb",
+            "re, yo rido la vida ",
+            "vestido  de ti ",
+            "en tu nombre ",
+            "me quito las llam",
+            "as de un cuerpo el fin ",
+            "en tu nombr ",
+            "es que mí quiero seguir, ",
+            "seguir, segu",
+            "ir seguir \n\nViv",
+            "iendo por siempre ",
+            "nacido  en ",
+            "tu corazón ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "dra sobre pie",
-            "dra/n"
+            "S",
+            "olo, ",
+            "solo ama",
+            "r hasta tener la no",
+            "ción \n\nAsí ",
+            "duérmela ",
+            "por esta esqui",
+            "na que confluye hacia el ",
+            "sur \n\nQue ",
+            "es siempre un e",
+            "spejo, e",
+            "spejo que marca su ",
+            "animación  ",
+            "en tu retorn ",
+            "un cambio nacer ",
+            "en tu ",
+            "nombre  yo rido ",
+            "la vida vestid ",
+            "de ti en tu n",
+            "ombre me olvido ",
+            "de todo, me ol",
+            "vido de mí en ",
+            "tu nombre es que mí qui",
+            "ero seguir, segui",
+            "r, seguir segu",
+            "ir \n\nViviendo por ",
+            "siempre nacid",
+            "o en tu coraz",
+            "ón ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Nada impor",
-            "ta ya/nY en tu"
+            "S",
+            "olo, solo amar hasta tener la noción \n\nOh, ",
+            "",
+            "",
+            "oh ",
+            "",
+            "/n"
         ],
         [
-            " nombre/nYo "
+            "Oh, ",
+            "oh ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "brindo en la",
-            " nada/nVes"
+            "Oh, oh /n"
         ],
         [
-            "tido de g",
-            "ris/nEn tu "
+            "Oh, ",
+            "",
+            "",
+            "",
+            "oh ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "nombre/nMe q"
+            "Oh, ",
+            "oh /n"
         ],
         [
-            "uito las ",
-            "llamas/nDe un c"
+            "Oh, ",
+            "",
+            "",
+            "oh ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uerpo que f",
-            "uí/nEn tu"
-        ],
-        [
-            " nombre/nHa"
-        ],
-        [
-            "brá qu",
-            "e seguir ",
-            "y seguir ",
-            "y seguir ",
-            "y seguir/nPi"
-        ],
-        [
-            "diendo p",
-            "or siempre u",
-            "n asilo/n"
-        ],
-        [
-            "En tu cora",
-            "zón",
+            "Oh, ",
+            "oh ",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 92,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "O_oQ83SoD7M",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

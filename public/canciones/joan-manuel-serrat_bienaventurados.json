@@ -1,1 +1,375 @@
-{"cancion": "Bienaventurados", "banda": "joan-manuel-serrat", "escala": "Bb", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bb", "C7", "F", "G7", "Cm", "F", "Dm", "Gm", "G", "Cm", "F", "Bb", "C7", "F", "G7", "Cm", "F", "Dm", "Gm", "G", "Cm", "F", "Bb", "F7", "Bb", "Bb7", "Eb", "F", "Eb", "Dm", "Cm", "Bb", "Bb", "F7", "Bb", "Bb", "F7", "Dm", "Gm", "C", "F", "Bb7", "Eb", "F", "Bb", "Bb7", "Eb", "D", "Gm", "G", "C", "F", "Bb"]}], "orden_partes": [0]}, "letras": [["La vida te la dan/npero no te la regal"], ["an./nLa vida se p"], ["aga/npor m\u00e1s que te "], ["pene./n"], ["As\u00ed ha sido desde q", "ue/n"], ["Dios ech\u00f3 al hombre del ", "Ed\u00e9n,", "/n"], ["por confundir/ncon lo que le "], ["conviene./n"], ["Si a plazos o al contado/nla vida pasa "], ["factura,/nreba\u00f1a y ap"], ["ura/nhasta las migaj"], ["as./n"], ["Que si en cada aleg", "r\u00eda/n"], ["hay una amargura", ",", "/n"], ["todo infortunio esconde alguna ven", "taja./n"], ["Bienaventurados los necios/nque se arriesgan a prestar consejos"], ["/nde los errores ajenos."], ["/n"], ["Bienaventurados los pobres/nporque saben, con certeza"], [",/nque n"], ["o ha de ", "quererles", " nadie por", " sus riquezas.", "/n"], ["Bienaventurados los adictos a emoci", "ones fuertes/nporque corren buenos tiempos para la gente m"], ["archosa./n"], ["Bienaventurados los due\u00f1os del pode", "r y la gloria/n"], ["porque pueden informarn", "os de qu\u00e9 ", "va la co", "sa./n"], ["Bienaventurados los que alcanzan la ", "cima/n"], ["porque ser\u00e1 cuesta abajo el re", "sto del camino./n"], ["Bienaventurados los que", " cata", "n el fr", "acas", "o/n"], ["porque reconocer", "\u00e1n a sus amigos.", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "7m1XAy7QSSs", "delay": 0}]}
+{
+    "cancion": "Bienaventurados",
+    "banda": "joan-manuel-serrat",
+    "escala": "Bb",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "C7",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Dm",
+                    "Cm",
+                    "Bb7",
+                    "Bb7",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Bb7",
+                    "Bb7",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "F",
+                    "F Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F7",
+                    "Bb",
+                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "C7",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "Bb7",
+                    "D",
+                    "D",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "F7",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Cm",
+                    "Gm",
+                    "F7",
+                    "F7",
+                    "Bb7",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "Bb7 Cm",
+                    "D",
+                    "F",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Cm",
+                    "Bb7",
+                    "F",
+                    "F",
+                    "F7",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La ",
+            "vida te la dan p",
+            "ero no te la rega",
+            "lan, la v",
+            "ida se pag ",
+            "por más que te pene",
+            ". \n\nAsí ha si",
+            "do desde que \n\nDios echó al ",
+            "hombre de \n\nEdén por ",
+            "confundir lo que está bien ",
+            "con lo que le convie",
+            "ne. \n\nSi ",
+            "aplazos  al contado la v",
+            "ida pasa factu",
+            "ra, rebaña a",
+            "pura hasta las ",
+            "migajas ",
+            "que si en cada al",
+            "egría hay una ",
+            "amargura.  /n"
+        ],
+        [
+            "Todo infortun",
+            "io esconde alguna vent",
+            "aja, bienavent",
+            "urados los necios que ",
+            "se arriesgan prestar conse",
+            "jos porque serán sabio ",
+            "costa de los e",
+            "rrores ajenos. /n"
+        ],
+        [
+            "Bienaventurados los pobr",
+            "es porque saben por c",
+            "erteza que ",
+            "no ha de quererles nadie ",
+            "por su riqueza. /n"
+        ],
+        [
+            "Bienavent",
+            "urados los adictos ",
+            "emociones fue",
+            "rtes porque corren b",
+            "uenos tiempos para la g",
+            "ente marchosa. /n"
+        ],
+        [
+            "Bienave",
+            "nturados los dueños del ",
+            "poder  la glori ",
+            "porque pueden inf",
+            "ormarnos de que ",
+            "van gozar. /n"
+        ],
+        [
+            "Bienaventurados los ",
+            "que alcanzan la ",
+            "cima  porque se han p",
+            "uesto abajo el ",
+            "resto del camino. /n"
+        ],
+        [
+            "Bienaventura",
+            "dos los que catan ",
+            "el fracaso porque ",
+            "reconocerán  ",
+            "sus ami",
+            "gos. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En cualquier circ",
+            "unstancia, por lastimo",
+            "sa que sea, ",
+            "busca la maner ",
+            "de comer per",
+            "dices ",
+            "pesar de lo alto que ",
+            "nos coloquen en listón ",
+            "hay que brincar con la ",
+            "intención de ser feli",
+            "ces. \n\nBie",
+            "naventurados los castos porq",
+            "ue tienen la gracia divi",
+            "na la ocasión de dejar ",
+            "de serlo la vuelt ",
+            "de la esquina. /n"
+        ],
+        [
+            "Bienaventurados los que am",
+            "an porque tienen su ",
+            "alcance  más ",
+            "de un cincuenta por ciento ",
+            "de un gran romance. /n"
+        ],
+        [
+            "Bienavent",
+            "urados los que están en ",
+            "el fondo del po",
+            "zo porque de allí en ",
+            "adelante solo cabe ir ",
+            "mejorando. /n"
+        ],
+        [
+            "Bienaven",
+            "turados los que presum",
+            "en de sus redaños p",
+            "orque tendrán o",
+            "casiones para ",
+            "demostrar  el honor. /n"
+        ],
+        [
+            "Bienaventurados  los ",
+            "que contrajeron d",
+            "eudas porque algun",
+            "a vez alguien h",
+            "izo algo por ell",
+            "os. \n\nBienaventura",
+            "dos los que lo ti",
+            "enen claro porque ",
+            "de ellos es el r",
+            "eino de los ",
+            "ciego",
+            "s. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtí",
+            "tulos realizados por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "7m1XAy7QSSs",
+            "delay": 9000.0
+        }
+    ],
+    "calidad": 1
+}

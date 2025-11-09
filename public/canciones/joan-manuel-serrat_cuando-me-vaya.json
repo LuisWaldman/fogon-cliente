@@ -1,1 +1,327 @@
-{"cancion": "Cuando-Me-Vaya", "banda": "joan-manuel-serrat", "escala": "Ab", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Ab", "Eb", "Fm", "Cm", "Db", "Ab"]}, {"nombre": "parte2", "acordes": ["Bbm", "Eb"]}, {"nombre": "parte3", "acordes": ["Bb", "Eb"]}, {"nombre": "parte4", "acordes": ["Ab", "Db", "Eb7", "Ab", "Cm", "Fm", "Ab", "Db"]}, {"nombre": "parte5", "acordes": ["Ab", "Db", "Ab", "Eb7", "Ab", "Bbm", "Ab"]}], "orden_partes": [0, 1, 0, 2, 0, 1, 0, 2, 3, 1, 4]}, "letras": [[], ["Me ir\u00e9 despac", "io un amanecer ", "", "/n"], ["que el sol vendr\u00e1", " a buscarme ", "temprano. ", "/n"], ["Me ir\u00e9 de", "snudo, como llegu", ". ", "/n"], ["Lo que me diste ", "cabe en mi ma", "no. ", "/n"], ["Mientras t\u00fa duer", "mes deshilar\u00e9", " ", "/n"], ["en tuyo y m\u00edo", " lo que fue ", "nuestro ", "/n"], ["y a golpes de u\u00f1", "as en la pare", "d ", "/n"], ["dejar\u00e9 escrito ", "mi \u00faltim", "o verso. ", "/n"], ["Y a la g", "rupa /n"], ["del terral, m", "i chalup", "a /n"], ["de blanca vel", "a peinar\u00e1", " el m", "ar. /n\u00bfQue soledad te vendr\u00e1 a buscar...? "], [], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "UnuJxaOL25U", "delay": 0}]}
+{
+    "cancion": "Cuando-Me-Vaya",
+    "banda": "joan-manuel-serrat",
+    "escala": "Ab",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "Cm",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Ab",
+                    "Eb",
+                    "Db",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Db",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Eb Db",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Eb7",
+                    "Fm",
+                    "Fm",
+                    "Eb",
+                    "Bbm",
+                    "Bbm",
+                    "Bbm",
+                    "Bbm",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Db",
+                    "Db",
+                    "Bbm",
+                    "Db",
+                    "Db",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Ab",
+                    "Ab",
+                    "Db",
+                    "Db",
+                    "Eb",
+                    "Ab",
+                    "Ab",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Ab",
+                    "Db",
+                    "Db",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Db",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Db"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me ",
+            "iré despacio ",
+            "un amanecer, ",
+            "que el sol vendrá bus",
+            "carme temprano. /n"
+        ],
+        [
+            "Me iré desnudo co",
+            "mo llegué, ",
+            "lo que me diste cabe ",
+            "en mi mano /n"
+        ],
+        [
+            "Mientras tu due",
+            "rmes deshil",
+            "aré en tuyo mío ",
+            "lo que fue nuestro. ",
+            "golpes de u",
+            "ñas en la par",
+            "ed dejaré escrito mi ",
+            "último verso. ",
+            "",
+            "la g",
+            "rupa ",
+            "del terral mi",
+            "chalupa de ",
+            "blanca  ve la pe",
+            "ina en el ma",
+            "r. \n\nQue sole",
+            "dad te vend",
+            "rá bus",
+            "car cua",
+            "ndo me v",
+            "aya, ",
+            "cuando me v",
+            "aya. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Luna t",
+            "ras luna llamá",
+            "ndome, bajar",
+            "ás donde el azul se ",
+            "rompe.  \n\nEl vien",
+            "to te abrazará de p",
+            "ie, hurgando el ",
+            "vientre del horiz",
+            "onte. /n"
+        ],
+        [
+            "Una sonrisa se ",
+            "esfumará,  r",
+            "ozando el borde de los ",
+            "aleros. \n\nTu b",
+            "oca amarga preg",
+            "untará, ¿para q",
+            "uién brillan hoy los ",
+            "luceros?  ",
+            "las ",
+            "ola",
+            "s sembrar",
+            "án en caracol",
+            "as, arena a",
+            "lgas entre tus ",
+            "pies.  \n\nLos ",
+            "besarán se ",
+            "irán de",
+            "spués ",
+            "hacia  ot",
+            "ra play",
+            "a, cuando me ",
+            "vaya. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me ",
+            "iré silbando aquel",
+            "la canción que ",
+            "me cantaba cuando era ",
+            "un crío. \n\nUn ",
+            "marinero lleno ",
+            "de ron, por ",
+            "si en verano sentí",
+            "a frío. /n"
+        ],
+        [
+            "Me iré despacio ",
+            "sé que quiz",
+            "ás tengo que triste do",
+            "blando el faro. /n"
+        ],
+        [
+            "Después la ald",
+            "ea quedará atrás, ",
+            "después el día se",
+            "rá más claro. ",
+            "",
+            "ese d",
+            "ía, d",
+            "ulce melan",
+            "colía, h",
+            "azte arrugarte jun",
+            "to al hogar. /n"
+        ],
+        [
+            "Sin una a",
+            "stilla par ",
+            "que",
+            "mar, ",
+            "cuando me va",
+            "ya, ",
+            "cuando me v",
+            "aya. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡\nGracias por ver el vídeo! "
+        ]
+    ],
+    "bpm": 129,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "UnuJxaOL25U",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -8,65 +8,255 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "D/F#",
+                    "A7",
+                    "Gm/Bb"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D/F#",
-                    "A/C#",
-                    "G/B",
-                    "A7/4",
-                    "A7"
+                    "D/F#",
+                    "D/F#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D/F#",
-                    "G",
-                    "D",
-                    "A7/4",
-                    "Gm/Bb",
+                    "A7",
+                    "A7",
+                    "A/C#",
                     "G/B",
-                    "C9",
+                    "G/B",
+                    "A7/4",
+                    "A7/4"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Gm/Bb",
+                    "Gm/Bb",
+                    "Gm/Bb",
+                    "Gm/Bb",
+                    "Gm/Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Gm/Bb",
+                    "Gm/Bb",
+                    "Gm/Bb"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Gm/Bb",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A7",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "Gm/Bb",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#",
+                    "A/C#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A/C#",
+                    "Gm/Bb",
+                    "Gm/Bb",
+                    "Gm/Bb",
+                    "Gm/Bb",
+                    "Gm/Bb"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "D/F#"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Siéntate a ver el d",
-            "ía",
             "",
             "",
-            "/nmira que g"
+            "",
+            "/n"
         ],
         [
-            "usto da/nv"
+            "Siéntate ver ",
+            "el día ",
+            "/n"
         ],
         [
-            "er el rayo ju",
-            "sto/ndonde emp"
+            "Mira que ",
+            "gusto da h",
+            "acer el rayo j",
+            "usto donde ",
+            "empieza  la ",
+            "aveni",
+            "da /n"
         ],
         [
-            "ieza l",
-            "a ave",
-            "nida",
+            "Descálzate en ",
+            "el aire p",
+            "ar",
+            "ir",
+            "te /n"
+        ],
+        [
+            "No lleves ni ",
+            "papeles  ",
+            "/n"
+        ],
+        [
+            "Hay tanta ",
+            "gloria  ya ",
+            "que al final n",
+            "adie tiene un ",
+            "sueño sin la",
+            "ureles /n"
+        ],
+        [
+            "Que ",
+            "tu cuerpo al menos esté l",
+            "impio p",
+            "ara ",
+            "ir ",
             "",
             "",
-            "/ndesc"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "álzate en el a",
-            "ire/n"
+            "Có",
+            "rrete hasta el e",
+            "spacio ",
+            "/n"
         ],
         [
-            "para i",
-            "r."
+            "Quiero que sep",
+            "an hoy que ",
+            "color es ",
+            "el carr",
+            "ube cuando d",
+            "ormí",
+            "an \n\nYa ",
+            "montate en el r",
+            "ay",
+            "o para ir ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ya ",
+            "montate en el rayo para ir ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Córrete hasta el espacio "
         ]
     ],
     "bpm": 80,
@@ -74,8 +264,9 @@
         {
             "tipo": "Youtube",
             "id": "vTBxDWx3V78",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

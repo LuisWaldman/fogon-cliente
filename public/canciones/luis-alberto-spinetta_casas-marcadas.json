@@ -8,76 +8,598 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
-                    "Dm",
                     "Am7",
-                    "C",
-                    "G",
-                    "Dm",
-                    "Am7",
-                    "G"
+                    "Am7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Dm7",
                     "Am7",
-                    "F7",
-                    "Em",
                     "Am7",
-                    "F7",
-                    "Em",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
                     "Am7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am7",
+                    "F7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am7",
+                    "F7",
+                    "Em",
+                    "Em",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am7",
+                    "Am7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "F7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F7",
+                    "F7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
         ]
     },
     "letras": [
         [
-            "inv       Am7",
-            "(2)       F7 ",
-            "         Em7",
+            "",
             "/n"
         ],
         [
-            "casas marca",
-            "das/n"
+            "Casas m",
+            "arcadas ",
+            "por ",
+            "el ",
+            "sol /n"
         ],
         [
-            "por el sol/n"
-        ],
-        [
-            "casas marca",
-            "das/n"
-        ],
-        [
-            "por la luz/n"
-        ],
-        [
-            "vaya c",
-            "on la casa",
+            "C",
+            "a",
+            "s",
+            "as mar",
+            "cadas ",
+            "por ",
+            "la ",
+            "luz ",
             "/n"
         ],
         [
-            "que de",
-            "spide vien",
-            "to"
+            "D",
+            "eja que la ",
+            "luz te ",
+            "bril",
+            "le \n\nDe",
+            "ja que la ",
+            "luz te ",
+            "bril",
+            "le \n\nQue ",
+            "brille t",
+            "oda tu v",
+            "ida/n"
+        ],
+        [
+            "Va",
+            "ya con la ",
+            "cas",
+            "a \n\nQue ",
+            "despide el ",
+            "vien",
+            "to \n\nV",
+            "aya con ",
+            "la ca",
+            "sa /n"
+        ],
+        [
+            "Que despid ",
+            "el viento \n\nVaya ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "ya \n\nCasas ",
+            "marca",
+            "das ",
+            "en ",
+            "la ",
+            "luz /n"
+        ],
+        [
+            "D",
+            "ej",
+            "que la luz ",
+            "te g",
+            "uill/n"
+        ],
+        [
+            "Dej",
+            "a que la luz ",
+            "te g",
+            "uill/n"
+        ],
+        [
+            "Que g",
+            "uille tod",
+            "a tu v",
+            "ida /n"
+        ],
+        [
+            "Va",
+            "ya con la c",
+            "asa /n"
+        ],
+        [
+            "Que ",
+            "despide el vi",
+            "ento /n"
+        ],
+        [
+            "Va",
+            "ya con la ",
+            "casa  /n"
+        ],
+        [
+            "Que ",
+            "despide el vie",
+            "nto ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Deja ",
+            "que ",
+            "la ",
+            "",
+            "",
+            "",
+            "luz te ",
+            "g",
+            "u",
+            "i",
+            "l",
+            "l",
+            "e",
+            "",
+            "/n"
+        ],
+        [
+            "De las blanc",
+            "as casas ate",
+            "rrient/n"
+        ],
+        [
+            "El sol, ",
+            "la es",
+            "pada \n\nDe",
+            "ja ",
+            "que ",
+            "la luz te guille \n\nDe ",
+            "las blancas c",
+            "asa",
+            "s aterrientes /n"
+        ],
+        [
+            "El ",
+            "sol, ",
+            "la espada /n"
+        ],
+        [
+            "De las blanc",
+            "as casas aterrientes ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De las ",
+            "blancas c",
+            "asas a",
+            "terr",
+            "ient",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De las ",
+            "blancas cas",
+            "as ater",
+            "rient",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De las ",
+            "blanc",
+            "as c",
+            "a",
+            "s",
+            "as ",
+            "a",
+            "t",
+            "e",
+            "r",
+            "r",
+            "i",
+            "/n"
+        ],
+        [
+            "De las blan",
+            "cas c",
+            "a",
+            "s",
+            "a",
+            "s",
+            "",
+            "",
+            "",
+            "a",
+            "t",
+            "e",
+            "r",
+            "r",
+            "i",
+            "e",
+            "ntes ",
+            "/n"
+        ],
+        [
+            "De ",
+            "las blancas casas aterrientes "
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QIUUi6TU0TY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }
