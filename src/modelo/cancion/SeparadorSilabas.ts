@@ -84,11 +84,36 @@ export class SeparadorSilabas {
   }
   private silaba: SilabasPalabra
   private encontroTonica: boolean
+
+  public PulirRima(textoConAcentos: string): string {
+    // Quitar acentos
+    let texto = textoConAcentos
+      .replace(/á/g, 'a')
+      .replace(/é/g, 'e')
+      .replace(/í/g, 'i')
+      .replace(/ó/g, 'o')
+      .replace(/ú/g, 'u')
+      .replace(/Á/g, 'A')
+      .replace(/É/g, 'E')
+      .replace(/Í/g, 'I')
+      .replace(/Ó/g, 'O')
+      .replace(/Ú/g, 'U')
+
+    // Cambiar ue por e y ui por i al principio
+    if (texto.startsWith('ue')) {
+      texto = 'e' + texto.substring(2)
+    } else if (texto.startsWith('ui')) {
+      texto = 'i' + texto.substring(2)
+    }
+
+    return texto
+  }
+
   public GetDesdeAcento(silaba: string): string {
     const acentos = ['á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú']
     for (let i = 0; i < silaba.length; i++) {
       if (acentos.includes(silaba[i])) {
-        return silaba.substring(i)
+        return silaba.substring(i).replace('á', 'a')
       }
     }
     const vocales = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
@@ -103,24 +128,27 @@ export class SeparadorSilabas {
   public GetRima(silabas: SilabasPalabra[]): string {
     if (silabas.length === 0) return ''
     const ultimaPalabra = silabas[silabas.length - 1]
+    let rima = ''
+
     if (ultimaPalabra.acentuacion === 'Aguda') {
-      return this.GetDesdeAcento(
+      rima = this.GetDesdeAcento(
         ultimaPalabra.silabas[ultimaPalabra.silabas.length - 1].silaba,
       )
     } else if (ultimaPalabra.acentuacion === 'Grave') {
-      return (
+      rima =
         this.GetDesdeAcento(
           ultimaPalabra.silabas[ultimaPalabra.silabas.length - 2].silaba,
         ) + ultimaPalabra.silabas[ultimaPalabra.silabas.length - 1].silaba
-      )
     } else if (ultimaPalabra.acentuacion === 'Esdrujula') {
-      return (
+      rima =
         this.GetDesdeAcento(
           ultimaPalabra.silabas[ultimaPalabra.silabas.length - 2].silaba,
         ) + ultimaPalabra.silabas[ultimaPalabra.silabas.length - 1].silaba
-      )
+    } else {
+      rima = ultimaPalabra.acentuacion
     }
-    return ultimaPalabra.acentuacion
+
+    return this.PulirRima(rima)
   }
 
   constructor() {
