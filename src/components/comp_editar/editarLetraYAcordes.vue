@@ -21,7 +21,6 @@ function calcularCompaces() {
   let renglones = []
   let letra = props.cancion.letras.GetTodosLosRenglones()
   console.log('letra:', letra)
-  let cont = 0
   let contSecuencia = 0
   let contAcordeEnSecuencia = 0
 
@@ -58,7 +57,6 @@ function calcularCompaces() {
 
       compasEditable.letra = letra[i]
       renglon.push(compasEditable)
-      cont++
 
       if (letra[i].includes('/n')) {
         renglones.push(renglon)

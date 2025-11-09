@@ -2,8 +2,6 @@
 import { ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { OrigenCancion } from '../../modelo/cancion/origencancion'
-import { useAppStore } from '../../stores/appStore'
-import { HelperJSON } from '../../modelo/cancion/HelperJSON'
 const emit = defineEmits(['cerrar'])
 const props = defineProps<{
   cancion: Cancion
@@ -18,7 +16,6 @@ nombrecancion.value = props.cancion.cancion
 nombrebanda.value = props.cancion.banda
 nombrearchivo.value = props.cancion.archivo || 'archivo_noload'
 
-const appStore = useAppStore()
 function clickCancelarCambiarDatos() {
   props.cancion.cancion = nombrecancion.value
   props.cancion.banda = nombrebanda.value
