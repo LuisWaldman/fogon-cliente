@@ -1,5 +1,8 @@
 import type { Letra } from '../cancion/letra'
-import { SeparadorSilabas } from '../cancion/SeparadorSilabas'
+import {
+  SeparadorSilabas,
+  type SilabasPalabra,
+} from '../cancion/SeparadorSilabas'
 import { RenglonTexto } from './renglonResumen'
 import { textoResumen, silabasPrincipal } from './textoResumen'
 
@@ -102,16 +105,16 @@ export class HelperDisplayEditTexto {
     contenidoReal = contenidoReal.replace(/\s+/g, ' ').trim()
     const palabras = contenidoReal.split(' ')
     const resumen = new RenglonTexto()
-    let silabas = 0
     const sepSilabas = new SeparadorSilabas()
+    const palabrasConSilabas: SilabasPalabra[] = []
     for (let i = 0; i < palabras.length; i++) {
       const silabasPalabra = sepSilabas.getSilabas(palabras[i])
       if (silabasPalabra.silabas.length > 0) {
-        silabas += silabasPalabra.silabas.length
-        resumen.Rima = sepSilabas.GetRima(silabasPalabra)
+        palabrasConSilabas.push(silabasPalabra)
       }
     }
-    resumen.silabas = silabas
+    resumen.Rima = sepSilabas.GetRima(palabrasConSilabas)
+    resumen.silabas = sepSilabas.GetNroSilabasVerso(palabrasConSilabas)
     return resumen
   }
 

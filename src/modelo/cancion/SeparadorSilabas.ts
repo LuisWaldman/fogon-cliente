@@ -1,4 +1,4 @@
-export interface Silaba {
+export interface SilabasPalabra {
   palabra: string // Palabra ingresada
   longitudPalabra: number // Longitud de la palabra
   numeroSilaba: number // Número de silabas de la palabra
@@ -28,10 +28,99 @@ export interface Silaba {
 }
 
 export class SeparadorSilabas {
-  private silaba: Silaba
+  EmpiezaConVocal(letra: string): boolean {
+    const vocales = ['a', 'e', 'i', 'o', 'u']
+    let letraComp = letra[0].toLowerCase()
+    if (letraComp === 'h') {
+      letraComp = letra[1].toLowerCase()
+    }
+    return vocales.includes(letraComp)
+  }
+  TerminaConVocal(letra: string): boolean {
+    const vocales = ['a', 'e', 'i', 'o', 'u', 'y']
+    return vocales.includes(letra[letra.length - 1].toLowerCase())
+  }
+
+  GetNroSilabasVerso(palabrasConSilabas: SilabasPalabra[]): number {
+    if (palabrasConSilabas.length === 0) return 0
+    let totalSilabas = 0
+    let cont = 0
+    for (const silaba of palabrasConSilabas) {
+      totalSilabas += silaba.silabas.length
+      if (cont != 0) {
+        // Verifico si hay sinalefa con la palabra anterior
+        const ultimaSilabaPalabraAnterior =
+          palabrasConSilabas[cont - 1].silabas[
+            palabrasConSilabas[cont - 1].silabas.length - 1
+          ]
+        const primeraSilabaPalabraActual = silaba.silabas[0]
+        if (
+          ultimaSilabaPalabraAnterior.silaba[
+            ultimaSilabaPalabraAnterior.silaba.length - 1
+          ] === primeraSilabaPalabraActual.silaba[0]
+        ) {
+          totalSilabas -= 1
+        }
+        if (
+          this.EmpiezaConVocal(primeraSilabaPalabraActual.silaba) &&
+          this.TerminaConVocal(ultimaSilabaPalabraAnterior.silaba)
+        ) {
+          totalSilabas -= 1
+        }
+      }
+      cont++
+    }
+    if (
+      palabrasConSilabas[palabrasConSilabas.length - 1].acentuacion === 'Aguda'
+    ) {
+      totalSilabas += 1
+    } else if (
+      palabrasConSilabas[palabrasConSilabas.length - 1].acentuacion ===
+      'Esdrujula'
+    ) {
+      totalSilabas -= 1
+    }
+    return totalSilabas
+  }
+  private silaba: SilabasPalabra
   private encontroTonica: boolean
-  public GetRima(silabas: Silaba): string {
-    return 'A'
+  public GetDesdeAcento(silaba: string): string {
+    const acentos = ['á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú']
+    for (let i = 0; i < silaba.length; i++) {
+      if (acentos.includes(silaba[i])) {
+        return silaba.substring(i)
+      }
+    }
+    const vocales = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    for (let i = 0; i < silaba.length; i++) {
+      if (vocales.includes(silaba[i])) {
+        return silaba.substring(i)
+      }
+    }
+    return 'NOENCONTRADA'
+  }
+
+  public GetRima(silabas: SilabasPalabra[]): string {
+    if (silabas.length === 0) return ''
+    const ultimaPalabra = silabas[silabas.length - 1]
+    if (ultimaPalabra.acentuacion === 'Aguda') {
+      return this.GetDesdeAcento(
+        ultimaPalabra.silabas[ultimaPalabra.silabas.length - 1].silaba,
+      )
+    } else if (ultimaPalabra.acentuacion === 'Grave') {
+      return (
+        this.GetDesdeAcento(
+          ultimaPalabra.silabas[ultimaPalabra.silabas.length - 2].silaba,
+        ) + ultimaPalabra.silabas[ultimaPalabra.silabas.length - 1].silaba
+      )
+    } else if (ultimaPalabra.acentuacion === 'Esdrujula') {
+      return (
+        this.GetDesdeAcento(
+          ultimaPalabra.silabas[ultimaPalabra.silabas.length - 2].silaba,
+        ) + ultimaPalabra.silabas[ultimaPalabra.silabas.length - 1].silaba
+      )
+    }
+    return ultimaPalabra.acentuacion
   }
 
   constructor() {
@@ -49,14 +138,14 @@ export class SeparadorSilabas {
     }
     this.encontroTonica = false
   }
-
-  /**
-   * Devuelve Objeto 'silaba' con los valores calculados
-   *
-   * @param palabra
-   * @returns Objeto silaba con los valores calculados
-   */
-  public getSilabas(palabra: string): Silaba {
+  public getSilabasPalabra(palabra: string): SilabasPalabra[] {
+    const ret = []
+    for (let i = 0; i < palabra.split(' ').length; i++) {
+      ret.push(this.getSilabas(palabra.split(' ')[i]))
+    }
+    return ret
+  }
+  public getSilabas(palabra: string): SilabasPalabra {
     this.posicionSilabas(palabra)
     this.acentuacion()
     this.hiato()
@@ -654,13 +743,13 @@ export class SeparadorSilabas {
         this.silaba.acentuacion = 'Aguda'
         break
       case 1:
-        this.silaba.acentuacion = 'Grave (Llana)'
+        this.silaba.acentuacion = 'Grave'
         break
       case 2:
-        this.silaba.acentuacion = 'Esdrújula'
+        this.silaba.acentuacion = 'Esdrujula'
         break
       default:
-        this.silaba.acentuacion = 'Sobresdrújula'
+        this.silaba.acentuacion = 'Esdrujula'
         break
     }
   }
