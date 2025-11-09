@@ -24,13 +24,97 @@ export class HelperDisplayEditTexto {
     }
     resumen.versos = contVersos
     resumen.silabas = this.CalcularDiferenciaSilabas(silabas)
+    this.CalcularDistanciaSilabas(resumen)
     // Calculo la letra de la rima
     this.CalcularLetraRima(resumen)
     return resumen
   }
-  CalcularLetraRima(resumen: textoResumen) {
+  CalcularDistanciaSilabas(resumen: textoResumen) {
+    if (resumen.silabas.length === 0) return
     for (const renglon of resumen.renglones) {
-      if (renglon.silabas > 0 && renglon.Rima) {
+      if (renglon.silabas > 0) {
+        let distanciaMinima = Number.MAX_SAFE_INTEGER
+        for (const silabaPrincipal of resumen.silabas) {
+          const distancia = Math.abs(renglon.silabas - silabaPrincipal.base)
+          if (distancia < distanciaMinima) {
+            distanciaMinima = distancia
+          }
+        }
+        renglon.diferenciaSilabas = distanciaMinima
+      } else {
+        renglon.diferenciaSilabas = -1
+      }
+    }
+  }
+
+  TextoAsonante(stringA: string): string {
+    return stringA
+      .toLowerCase()
+      .replace(/[^aáeéiíoóuú]/g, '')
+      .replace(/á/g, 'a')
+      .replace(/é/g, 'e')
+      .replace(/í/g, 'i')
+      .replace(/ó/g, 'o')
+      .replace(/ú/g, 'u')
+  }
+
+  RimaAsonante(stringA: string, stringB: string): boolean {
+    const rimaA = this.TextoAsonante(stringA)
+    const rimaB = this.TextoAsonante(stringB)
+    return rimaA === rimaB && rimaA.length > 0
+  }
+
+  CalcularLetraRima(resumen: textoResumen) {
+    const rimas = []
+    // Recorro los renglones y asigno rimas CONSONANTES
+    for (let renglon = 0; renglon < resumen.renglones.length; renglon++) {
+      const renglonObject = resumen.renglones[renglon]
+      if (renglonObject.silabas > 0 && renglonObject.Rima) {
+        for (
+          let otroRenglon = renglon + 1;
+          otroRenglon < resumen.renglones.length && otroRenglon < renglon + 4;
+          otroRenglon++
+        ) {
+          const otroRenglonObject = resumen.renglones[otroRenglon]
+          if (otroRenglonObject.Rima === renglonObject.Rima) {
+            renglonObject.LetraRima = String.fromCharCode(97 + rimas.length) // 'a' = 97 en ASCII
+            otroRenglonObject.LetraRima = String.fromCharCode(97 + rimas.length) // 'a' = 97 en ASCII
+            renglonObject.tipoRima = 'consonante' // suponer consonante para simplificar
+            otroRenglonObject.tipoRima = 'consonante' // suponer consonante para simplificar
+
+            rimas.push(otroRenglonObject.Rima) // 'a' = 97 en ASCII
+            break
+          }
+        }
+      }
+    }
+    // Recorro los renglones y asigno rimas ASONANTES
+    for (let renglon = 0; renglon < resumen.renglones.length; renglon++) {
+      const renglonObject = resumen.renglones[renglon]
+      if (
+        renglonObject.silabas > 0 &&
+        renglonObject.Rima &&
+        !renglonObject.LetraRima
+      ) {
+        for (
+          let otroRenglon = renglon + 1;
+          otroRenglon < resumen.renglones.length && otroRenglon < renglon + 4;
+          otroRenglon++
+        ) {
+          const otroRenglonObject = resumen.renglones[otroRenglon]
+          if (
+            otroRenglonObject.Rima &&
+            this.RimaAsonante(renglonObject.Rima, otroRenglonObject.Rima)
+          ) {
+            renglonObject.LetraRima = String.fromCharCode(97 + rimas.length) // 'a' = 97 en ASCII
+            otroRenglonObject.LetraRima = String.fromCharCode(97 + rimas.length) // 'a' = 97 en ASCII
+            renglonObject.tipoRima = 'asonante'
+            otroRenglonObject.tipoRima = 'asonante'
+
+            rimas.push(otroRenglonObject.Rima) // 'a' = 97 en ASCII
+            break
+          }
+        }
       }
     }
   }

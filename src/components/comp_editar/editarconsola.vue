@@ -97,8 +97,7 @@ function onTextareaScroll() {
       <div class="preview" ref="refPreviewVerso">
         <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
           <div class="acordeconsola" v-if="verso.Rima.trim() != ''">
-            {{ verso.Rima }} -
-            {{ verso.letraRima }}
+            {{ verso.Rima }} - {{ verso.LetraRima }} - {{ verso.tipoRima }}
             {{ verso.silabas }} {{ verso.diferenciaSilabas }}
           </div>
           <div v-else>&nbsp;</div>
