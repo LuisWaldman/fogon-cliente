@@ -27,8 +27,43 @@ export class HelperDisplayEditTexto {
     this.CalcularDistanciaSilabas(resumen)
     // Calculo la letra de la rima
     this.CalcularLetraRima(resumen)
+    this.ResumirRimas(resumen)
     return resumen
   }
+
+  ResumirRimas(resumen: textoResumen) {
+    const rimas: string[] = []
+    let consonantesCount = 0
+    let asonantesCount = 0
+    for (const renglon of resumen.renglones) {
+      if (renglon.tipoRima === 'consonante') {
+        consonantesCount++
+      } else if (renglon.tipoRima === 'asonante') {
+        asonantesCount++
+      }
+      if (renglon.LetraRima) {
+        if (!rimas.includes(renglon.LetraRima)) {
+          rimas.push(renglon.LetraRima)
+          renglon.LetraRima = String.fromCharCode(97 + rimas.length - 1) // 'a' = 97 en ASCII
+        } else {
+          renglon.LetraRima = String.fromCharCode(
+            97 + rimas.indexOf(renglon.LetraRima),
+          ) // 'a' = 97 en ASCII
+        }
+      }
+    }
+    if (resumen.versos * 0.7 < consonantesCount + asonantesCount) {
+      if (consonantesCount >= asonantesCount) {
+        resumen.rimas = 'consonante'
+      } else {
+        resumen.rimas = 'asonante'
+      }
+    } else {
+      // Si menos del 80% de los versos tienen rima, se considera que no hay rima
+      resumen.rimas = 'sin rima'
+    }
+  }
+
   CalcularDistanciaSilabas(resumen: textoResumen) {
     if (resumen.silabas.length === 0) return
     for (const renglon of resumen.renglones) {
