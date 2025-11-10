@@ -29,6 +29,7 @@ export interface SilabasPalabra {
 
 export class SeparadorSilabas {
   EmpiezaConVocal(letra: string): boolean {
+    if (letra == 'y' || letra == 'Y') return true
     const vocales = ['a', 'e', 'i', 'o', 'u']
     let letraComp = letra[0].toLowerCase()
     if (letraComp === 'h') {

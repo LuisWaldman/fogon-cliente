@@ -97,8 +97,9 @@ function onTextareaScroll() {
       <div class="preview" ref="refPreviewVerso">
         <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
           <div class="acordeconsola" v-if="verso.Rima.trim() != ''">
-            {{ verso.Rima }} - {{ verso.LetraRima }} - {{ verso.tipoRima }}
-            {{ verso.silabas }} {{ verso.diferenciaSilabas }}
+            <div class="letraRima" :class="{rimaconsonante: verso.tipoRima == 'consonante'}">{{ verso.LetraRima.toUpperCase() }}</div>
+            {{ verso.Rima }} - 
+            {{ verso.silabas }} Silabas <span class="diferenciaSilabas" v-if="verso.diferenciaSilabas != 0">+/-{{ verso.diferenciaSilabas }}</span>
           </div>
           <div v-else>&nbsp;</div>
         </div>
@@ -130,6 +131,7 @@ function onTextareaScroll() {
 }
 .acordeconsola {
   margin-right: 4px;
+  display: flex;
 }
 .barraInformacion {
   display: flex;
@@ -146,5 +148,15 @@ function onTextareaScroll() {
   gap: 0px;
   overflow: hidden;
   height: 800px;
+}
+.letraRima {
+  border: 1px solid;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.rimaconsonante {
+  background-color: rgb(187, 187, 81);
+  color: white;
 }
 </style>

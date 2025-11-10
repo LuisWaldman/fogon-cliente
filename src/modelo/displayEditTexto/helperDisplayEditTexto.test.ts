@@ -3,8 +3,18 @@ import { HelperDisplayEditTexto } from './helperDisplayEditTexto'
 import { textoResumen } from './textoResumen'
 import { RenglonTexto } from './renglonResumen'
 
+
 describe('Pruebo HelperDisplayEditTexto - CalcularDiferenciaSilabas', () => {
   const helper = new HelperDisplayEditTexto()
+
+
+
+  it('Cuenta silabas', () => {
+    expect(helper.CalcularResumenVerso('y la marea sube  y luego  baja.').silabas).toBe(11)
+    expect(helper.CalcularResumenVerso('No es que no vuelva porque me he olvidado,').silabas).toBe(11)
+    expect(helper.CalcularResumenVerso('Hola mundo').silabas).toBe(4)
+  })
+
 
   it('Devuelve array vacío cuando silabas está vacío', () => {
     const resultado = helper.CalcularDiferenciaSilabas([])

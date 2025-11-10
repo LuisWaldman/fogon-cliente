@@ -219,7 +219,7 @@ export class HelperDisplayEditTexto {
     return resultado
   }
 
-  private CalcularResumenVerso(contenido: string): RenglonTexto {
+  public CalcularResumenVerso(contenido: string): RenglonTexto {
     let contenidoReal = contenido.replace(/[¿?¡!,;:.]/g, ' ')
     contenidoReal = contenidoReal.replace(/\s+/g, ' ').trim()
     const palabras = contenidoReal.split(' ')
