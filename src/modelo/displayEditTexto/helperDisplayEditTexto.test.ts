@@ -251,10 +251,11 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
 
     // Aunque 'rosa' se procesa primero, después del reordenamiento alfabético,
     // 'mar' (primero alfabéticamente) debe ser 'a' y 'rosa' debe ser 'b'
-    expect(renglon1.LetraRima).toBe('b')
-    expect(renglon2.LetraRima).toBe('b')
-    expect(renglon3.LetraRima).toBe('a')
-    expect(renglon4.LetraRima).toBe('a')
+    helper.ResumirRimas(resumen)
+    expect(renglon1.LetraRima).toBe('a')
+    expect(renglon2.LetraRima).toBe('a')
+    expect(renglon3.LetraRima).toBe('b')
+    expect(renglon4.LetraRima).toBe('b')
   })
 
   it('Reordena las letras de rima de forma alfabética', () => {
@@ -282,10 +283,11 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
 
     // Aunque 'vida' se procesa primero, después del reordenamiento alfabético,
     // 'amor' (primero alfabéticamente) debe ser 'a' y 'vida' debe ser 'b'
-    expect(renglon3.LetraRima).toBe('a')
-    expect(renglon4.LetraRima).toBe('a')
-    expect(renglon1.LetraRima).toBe('b')
-    expect(renglon2.LetraRima).toBe('b')
+    helper.ResumirRimas(resumen)
+    expect(renglon1.LetraRima).toBe('a')
+    expect(renglon2.LetraRima).toBe('a')
+    expect(renglon3.LetraRima).toBe('b')
+    expect(renglon4.LetraRima).toBe('b')
   })
 
   it('Ejemplo: ado, ina, aro, ina da a, b, a, b', () => {
@@ -310,15 +312,7 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     resumen.renglones = [renglon1, renglon2, renglon3, renglon4]
 
     helper.CalcularLetraRima(resumen)
-
-    // Consonantes: ado no encuentra pareja, ina encuentra ina -> ambas se asignan
-    // Asonantes: ado y aro riman asonantemente (ambas contienen 'a')
-    // Ordenamiento alfabético: ado, aro, ina
-    // Las rimas asignadas son: ado=a, aro=a (asonancia con ado), ina=b
-    // Después del reordenamiento alfabético: ado<aro<ina
-    // Mapeo: ado->a, aro->b, ina->c? No, porque aro está mapeada a 'a' (misma que ado)
-    // Espera, cuando una rima se asigna, se asigna a esa misma letra siempre
-    // Entonces: ado y aro comparten 'a', ina tiene 'b'
+    helper.ResumirRimas(resumen)
     expect(renglon1.LetraRima).toBe('a')
     expect(renglon2.LetraRima).toBe('b')
     expect(renglon3.LetraRima).toBe('a')
