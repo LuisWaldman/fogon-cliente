@@ -8,292 +8,587 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#",
+                    "Bm7(5-)",
+                    "E13/b9"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C#m7(#5)",
-                    "Cº",
                     "Bm7(5-)",
-                    "Bbº",
-                    "Am7(5+)",
-                    "Gm7(11)",
-                    "F#m7(11)",
+                    "Bm7(5-)",
+                    "Bm7(5-)",
+                    "Bm7(5-)",
+                    "Bm7(5-)",
+                    "Bm7(5-)",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "C#m7(5+) Am7/9",
+                    "D7/#9",
+                    "C#m7(5+)",
+                    "E13/b9",
+                    "E13/b9",
+                    "E13/b9",
+                    "E13/b9",
+                    "E13/b9",
+                    "E13/b9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E13/b9",
+                    "C#m7(#5)",
+                    "C#m7(#5)"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C#m7(#5)",
                     "A/E",
-                    "D7/9",
+                    "A/E",
+                    "G7M",
+                    "G7M",
+                    "D7/#9"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7/b5",
+                    "B7/b5",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "D7/b9",
+                    "C#m7(5+)"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
                     "D9/F#",
-                    "D7/C",
+                    "D9/F#",
+                    "D9/F#",
+                    "D9/F#",
+                    "D9/F#",
+                    "Gm7(11)",
+                    "A/E",
+                    "A/E",
+                    "A/E",
+                    "D9/F#",
+                    "D9/F#",
+                    "D9/F#",
+                    "D9/F#",
+                    "D9/F#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D7",
                     "D7",
                     "D4(7)",
-                    "G7M",
-                    "Eb7M(5+)",
-                    "Em7/9",
+                    "F#m7(11)",
+                    "F#m7(11)",
+                    "F#m7(11)"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "Am7/9",
+                    "D7/b9",
+                    "Bb7M",
+                    "B7/b5",
+                    "G7M",
+                    "G7M"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G7M",
+                    "F7(9-)",
+                    "F7(9-)",
+                    "Dm7/9",
+                    "Dm7/9",
+                    "Dm7/9"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "A/E",
+                    "Bb7/b5",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Cm7/9",
+                    "Cm7/9",
+                    "Cm7/9",
+                    "Cm7/9",
+                    "Cm7/9",
+                    "Cm7/9"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F7(9-)",
+                    "F7(9-)",
+                    "Am7/9",
+                    "Eb7M",
+                    "F#7M(5+)",
+                    "F#m7/9",
+                    "F#m7/9",
+                    "G7M",
+                    "F7(9-)",
+                    "F7(9-)",
+                    "F7(9-)"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F7(9-)",
+                    "C#m7(#5)",
+                    "C#m7(#5)",
+                    "C#m7(#5)",
+                    "F#7M(5-)",
+                    "F#7M(5-)",
+                    "F#7M(5-)",
+                    "F#7M(5-)",
+                    "F#7M(5-)",
+                    "F#7M",
+                    "F#7M",
+                    "F#7M",
+                    "D7/b9",
                     "D7/b9",
                     "D7/#9",
                     "G7M",
+                    "G7M",
                     "C7M",
-                    "Cm7/9",
-                    "F7(9-)",
-                    "Bb7M",
-                    "Eb7M",
-                    "Dm7/9",
-                    "G#m7(5+)",
+                    "C7M"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am7/9",
                     "Am7/9",
                     "G#m7(5+)",
                     "C#m7(5+)",
-                    "Bm7/11",
-                    "Bb7/b5",
+                    "C#m7(5+)",
+                    "A/E",
+                    "A/E",
                     "Am7/9",
-                    "D7/b9",
-                    "D7/#9",
-                    "G7M",
-                    "C7M",
-                    "Cm7/9",
-                    "F7(9-)",
-                    "F7/#9",
-                    "F7(9-)",
-                    "Bb7M",
-                    "Eb7M",
-                    "G#7M(6/9)",
-                    "F#7M(5+)",
-                    "Dm7(5+)",
-                    "B6",
-                    "Cm7/b5",
-                    "Gm7/11",
-                    "G#13",
-                    "F#7M",
-                    "F#7M(5-)",
-                    "C#7M(5+)",
                     "Am7/9",
-                    "D7/b9",
-                    "D7/#9",
-                    "G7M",
-                    "C7M",
-                    "Cm7/9",
-                    "F7(9-)",
-                    "Bb7M",
-                    "Eb7M",
                     "Am7/9",
-                    "G#m7(5+)",
-                    "B7M(5+)",
-                    "Cm7/11",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Am7/9",
                     "B7/b5",
-                    "Bb7M",
+                    "B7/b5",
+                    "B7/b5",
+                    "Am7/9",
                     "Am7/9",
                     "F#m7/9",
-                    "E13/b9",
-                    "F7M(5-)",
+                    "F#m7/9",
                     "Em7",
-                    "Bb7M",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
                     "Eb7M",
-                    "Cm7/b5",
+                    "Eb7M",
+                    "Eb7M",
+                    "Eb7M",
                     "Gm7/11",
-                    "G#13",
-                    "F#7M",
-                    "F#7M(5-)",
-                    "D7M(5+)",
-                    "C#m7(#5)",
-                    "Cº",
-                    "Bm7(#5)",
-                    "Bbº",
-                    "Am7(5+)",
                     "Gm7/11",
-                    "F#m7/11",
-                    "A/E",
-                    "D7/9",
-                    "D9/F#",
-                    "D7/C",
-                    "D7",
-                    "D4(7)",
-                    "G7M",
-                    "Eb7M(5+)",
-                    "Em7/9",
-                    "C#m7(#5)",
-                    "Cº",
-                    "Bm7(#5)",
-                    "Bbº",
-                    "Am7(5+)",
                     "Gm7/11",
-                    "F#m7/11",
-                    "A/E",
-                    "Em7/9",
-                    "Em7",
-                    "F9",
-                    "C7M",
-                    "C9/Bb"
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11",
+                    "Gm7/11"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Am7/9",
+                    "Am7/9",
+                    "G#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "C#m7(5+)",
+                    "A/E Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9",
+                    "Am7/9"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Esta canción de ",
-            "amor/nP"
-        ],
-        [
-            "intó un atardec",
-            "er indife",
-            "rente/nP"
-        ],
-        [
-            "erdida y consabida ide",
-            "a de amar",
-            "/nAmar por s"
-        ],
-        [
-            "iempre/n"
-        ],
-        [
-            "Entonces vi un ra",
-            "yo de luz/nIncons"
-        ],
-        [
-            "istente aún/nLo v"
-        ],
-        [
-            "i nacer al olvid",
-            "o/nDe los l"
-        ],
-        [
-            "imbos",
-            "/nN"
-        ],
-        [
-            "o sé por qué/nJad"
-        ],
-        [
-            "eante el r",
-            "o despert",
-            "/nComo una s"
-        ],
-        [
-            "ombra/n"
-        ],
-        [
-            "Apenas deteni",
-            "do por el ir",
-            "/nY"
-        ],
-        [
-            "     venir",
-            "/nDe sus dif"
-        ],
-        [
-            "untos/n"
-        ],
-        [
-            "Esta noche mi",
-            " casa no está/nS"
-        ],
-        [
-            "iento miedo de que el so",
-            "l/nP"
-        ],
-        [
-            "or      fi",
-            "n       nos",
-            " caiga",
-            "",
-            "",
-            "/nF"
-        ],
-        [
-            "ebrero de vinilo ro",
-            "jo carmesí/n"
-        ],
-        [
-            "Inútilmente/nTr"
-        ],
-        [
-            "atando de",
-            " salvar/nL"
-        ],
-        [
-            "a seda de",
-            " tu piel",
-            "/nDe toda fi"
-        ],
-        [
-            "era/nC"
-        ],
-        [
-            "anción de amor/nContra t"
-        ],
-        [
-            "anta      desdi",
-            "cha",
-            "",
-            "/nT"
-        ],
-        [
-            "an pronto llega el d",
-            "a/nT"
-        ],
-        [
-            "an pronto va a estalla",
-            "r/n¿Y por "
-        ],
-        [
-            "qué toda la p",
-            "oesía/nY toda la v"
-        ],
-        [
-            "ida no se ",
-            "juntan?/nP"
-        ],
-        [
-            "or      fi",
-            "n       nos",
-            " caiga",
             "",
             "",
             "/n"
         ],
-        [],
-        [],
         [
-            "Nueva luna/nSe"
+            "No es un \n\nOs",
+            "car, es un \n\nN",
+            "és",
+            "to",
+            "r, ",
+            "",
+            "para siempre en mi c",
+            "orazón. \n\nAdemás, \n\nAlb",
+            "erto, ",
+            "",
+            "que \n\nDios no me pong",
+            "a en la obligación de ",
+            "tener  que tocar alguno de los temas que ",
+            "vos tocas. ",
+            "",
+            "",
+            "",
+            "si me pone, ",
+            "canto. /n"
         ],
         [
-            "ntada como un gato/nEn este t"
+            "Bueno, ",
+            "volvemos esta formac",
+            "ión. ¿/n"
         ],
         [
-            "echo/n"
+            "Cómo hago para desolemnizarlo? ¿\nHag",
+            "o, por ejemplo, un ejercicio aeróbico tipo",
+            "... \n\nBuen",
+            "o, vamos con una samba, \n\nNuev",
+            "a \n\nLuna, \n\nMundo \n\nAr",
+            "jo, la \n\nArgentina para mí. /n"
         ],
         [
-            "Amiga de la paz/nY la v"
+            "Hoy siempre este tema repr",
+            "esenta nuestro país. \n\nLa letra d",
+            "ice, tengo miedo de ",
+            "que el sol nos caig",
+            "a, el sol, el ",
+            "sol, que se venga abajo, ",
+            "que nos ocupe todo el lugar. /n"
         ],
         [
-            "erdad/nTal v"
+            "E",
+            "ste es nuestro jardín debemos defenderlo, ",
+            "lo único que sé. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ez vos me dir",
-            "s/n"
+            "Este ",
+            "es nuestro j",
+            "a",
+            "r",
+            "d",
+            "ín ",
+            "d",
+            "e",
+            "b",
+            "e",
+            "m",
+            "o",
+            "s",
+            "",
+            "",
+            "defenderlo, lo único que sé. \n\nPinto un ",
+            "amane",
+            "cer, un dif",
+            "erente, ",
+            "",
+            "perdida c",
+            "onstabil, ",
+            "idea de amar, ",
+            "amar ",
+            "por siempre. \n\nE",
+            "ntonce",
+            "vi sol",
+            "o un rayo de ",
+            "luz inconsistente. ",
+            "",
+            "/n"
         ],
         [
-            "\"Ya no repitas nunca más, yo",
-            " te amo\"/n"
+            "Lo vi ",
+            "nacer ",
+            "al olvid ",
+            "de los l",
+            "impos. ",
+            "/n"
         ],
         [
-            "¡Y esta tierra que t",
-            "iembla al hablar!/nM"
+            "No sé por qué ja",
+            "deante el río ",
+            "te despe",
+            "rtó, como una ",
+            "somb",
+            "ra, /n"
         ],
         [
-            "undo arjo de ",
-            "argentum y dolor"
+            "Apenas r",
+            "eprimido por él ",
+            "ve",
+            "ndí en sus ",
+            "dipuntos.  ",
+            "/n"
+        ],
+        [
+            "Esta noche mi ",
+            "casa no es",
+            "tá, ",
+            "siento miedo ",
+            "de que el sol ",
+            "por fin ",
+            "nos ",
+            "caiga. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Febrero de ",
+            "vinilo, r",
+            "ojo carmec",
+            "ito, ",
+            "inutilment ",
+            "/n"
+        ],
+        [
+            "Tratando ",
+            "de salvar ",
+            "la seda de tu pi",
+            "el, de t",
+            "oda best",
+            "ia tal vez ",
+            "oí ",
+            "una dulce or",
+            "ación en el ",
+            "plexo solar. ",
+            "/n"
+        ],
+        [
+            "Canci",
+            "ón de amor ",
+            "contra ta",
+            "nto desti",
+            "che. \n\nTan ",
+            "p",
+            "r",
+            "o",
+            "llegarí",
+            "a, ",
+            "tan ",
+            "pronto vas ll",
+            "egar ¿\nY ",
+            "por qué ",
+            "toda  la poe",
+            "sía tod",
+            "a la vida ",
+            "no se juntan ",
+            "/n"
+        ],
+        [
+            "Esta n",
+            "oche mi cas ",
+            "no est",
+            "á, siento m",
+            "iedo de que el ",
+            "sol por ",
+            "fin ",
+            "se nos ",
+            "caiga",
+            ". ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Nueva l",
+            "una sentada c",
+            "omo un gato en es",
+            "te techo, nueva l",
+            "una amiga ",
+            "de la paz. \n\nLa v",
+            "erdad tal ",
+            "vez vos me d",
+            "irás, yo me ",
+            "repitas,  ",
+            "nunca ",
+            "más yo ",
+            "te amo ",
+            "",
+            "",
+            "esta ",
+            "tierra  que tie",
+            "mbla al habla",
+            "r, ",
+            "mundo arjo de a",
+            "rgento dolor. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta n",
+            "oche mi cas",
+            "a no est",
+            "á, siento ",
+            "miedo  de que ",
+            "el sol ",
+            "por fin se ",
+            "nos ",
+            "caiga ",
+            "",
+            "/n"
+        ],
+        [
+            "Se nos c",
+            "aiga. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 117,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "h65u-BVchm8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

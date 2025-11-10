@@ -8,65 +8,113 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "A/D",
+                    "E",
+                    "A/D",
+                    "A9/F#",
+                    "F#",
+                    "E",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "A9/F#",
-                    "A/D",
-                    "E"
+                    "A/D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E",
+                    "E",
+                    "A/D",
+                    "A/D",
+                    "E",
                     "A9/F#",
-                    "A9/E",
-                    "Dmaj7/F#"
+                    "A/D",
+                    "A/D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A/D",
+                    "A/D",
+                    "A9/F#",
+                    "A9/F#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A9/F#",
+                    "A9/F#",
+                    "A9/F#",
+                    "A9/F#",
+                    "A9/F#",
+                    "A9/F#"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Tócame junto a e",
-            "sta pared,/nyo que"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "dé por aquí, cuando n",
-            "o hubo más luz./n"
+            "Esta  es una canción en español de rock argentino. /n"
         ],
         [
-            "Quiero mirar a tr",
-            "avés de mi piel/ny "
+            "Tócame junto ",
+            "esta pared \n\nYo p",
+            "ude por aquí cuando ",
+            "no hubo más luz \n\nQui",
+            "ero mirar atr",
+            "ás de mi piel vo",
+            "lver otra vez en tu c",
+            "uerpo sin mí /n"
         ],
         [
-            "volar otra vez en tu cu",
-            "erpo sin mí.../nen"
+            "Crisandemo que ",
+            "se abrió \n\nEncue",
+            "ntra el camino hacia el cielo ",
+            "/n"
         ],
         [
-            "cuentra el cam",
-            "ino hacia el cielo.",
-            "/nen"
-        ],
-        [
-            "cuentra de nue",
-            "vo tus manos...",
+            "Crisandemo que ",
+            "se abrió \n\nEncue",
+            "ntra de nuevo tus m",
+            "anos ",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 67,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "RxmqRUOwpGI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }
