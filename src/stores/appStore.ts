@@ -8,7 +8,7 @@ import { Letra } from '../modelo/cancion/letra'
 import { Noticia } from '../modelo/noticia'
 import { Perfil } from '../modelo/perfil'
 import { Sesion } from '../modelo/sesion'
-import { SincroCancion } from '../modelo/sincro/SincroCancion'
+import { SincroSesion } from '../modelo/sincro/SincroSesion'
 import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
 import type { UserSesion } from '../modelo/userSesion'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
@@ -19,7 +19,7 @@ import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
 
-  const sesSincroCancion = ref<SincroCancion>(new SincroCancion(0, 0, 0, 0))
+  const sesSincroCancion = ref<SincroSesion>(new SincroSesion(0, 0))
   const EstadoSincro = ref<EstadoSincroCancion>(
     new EstadoSincroCancion(-1, 0, '-', 0),
   )

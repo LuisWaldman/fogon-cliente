@@ -1,6 +1,6 @@
 import type { OrigenCancion } from '../cancion/origencancion'
 import { HelperSincro } from '../sincro/HelperSincro'
-import { SincroCancion } from '../sincro/SincroCancion'
+import { SincroSesion } from '../sincro/SincroSesion'
 import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
 import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
@@ -42,7 +42,6 @@ export class Reproductor {
   async AgregarAListaReproduccion(item: ItemIndiceCancion) {
     const appStore = useAppStore()
     appStore.listaReproduccion.push(item)
-    console.log(appStore.listaReproduccion)
   }
 
   iniciarReproduccion() {
@@ -51,10 +50,8 @@ export class Reproductor {
       const helper = HelperSincro.getInstance()
       const momento = helper.MomentoSincro()
 
-      appStore.sesSincroCancion = new SincroCancion(
-        appStore.cancion?.duracionGolpe || 1000, // duracionGolpe
+      appStore.sesSincroCancion = new SincroSesion(
         momento + appStore.cancion?.duracionCompas * 1000, // timeInicio
-        appStore.cancion?.compasCantidad || 4, // golpesxcompas
         appStore.compas || 0, // desdeCompas
       )
       console.log(`Iniciando reproducción de la canción: ${momento}`)
@@ -86,14 +83,15 @@ export class Reproductor {
   async sincronizar() {
     const appStore = useAppStore()
     const helper = HelperSincro.getInstance()
-
-    appStore.sesSincroCancion.duracionGolpe =
-      appStore.cancion?.duracionGolpe * 1000
-    appStore.sesSincroCancion.golpesxcompas =
-      appStore.cancion?.compasCantidad || 4
     if (appStore.MediaVistas === null) {
       const momento: number = helper.MomentoSincro()
-      const est = helper.GetEstadoSincro(appStore.sesSincroCancion, momento)
+      const est = helper.GetEstadoSincro(
+        appStore.sesSincroCancion,
+        momento,
+        appStore.cancion?.duracionGolpe * 1000 || 1000,
+        appStore.cancion?.compasCantidad || 4,
+      )
+
       appStore.EstadoSincro = est
       appStore.compas = est.compas
       appStore.golpeDelCompas = est.golpeEnCompas
@@ -102,11 +100,11 @@ export class Reproductor {
       if (appStore.MediaVistas) {
         if (appStore.MediaVistas.GetTiempoDesdeInicio) {
           const tiempoDesdeInicio = appStore.MediaVistas.GetTiempoDesdeInicio()
-          appStore.sesSincroCancion.timeInicio = 0
-          appStore.sesSincroCancion.desdeCompas = 0
           const est = helper.GetEstadoSincroMedia(
             appStore.sesSincroCancion,
             tiempoDesdeInicio,
+            appStore.cancion?.duracionGolpe * 1000 || 1000,
+            appStore.cancion?.compasCantidad || 4,
           )
           appStore.EstadoSincro = est
           appStore.compas = est.compas

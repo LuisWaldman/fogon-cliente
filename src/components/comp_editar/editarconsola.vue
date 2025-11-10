@@ -61,7 +61,10 @@ onMounted(() => {
 function onTextareaScroll() {
   if (refTextarea.value && refPreview.value) {
     refPreview.value.scrollTop = refTextarea.value.scrollTop
-    refPreviewVerso.value.scrollTop = refTextarea.value.scrollTop
+    if (refPreviewVerso.value != null){
+      refPreviewVerso.value.scrollTop = refTextarea.value.scrollTop
+    }
+    
   }
 }
 </script>
@@ -97,9 +100,16 @@ function onTextareaScroll() {
       <div class="preview" ref="refPreviewVerso">
         <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
           <div class="acordeconsola" v-if="verso.Rima.trim() != ''">
-            <div class="letraRima" :class="{rimaconsonante: verso.tipoRima == 'consonante'}">{{ verso.LetraRima.toUpperCase() }}</div>
-            {{ verso.Rima }} - 
-            {{ verso.silabas }} Silabas <span class="diferenciaSilabas" v-if="verso.diferenciaSilabas != 0">+/-{{ verso.diferenciaSilabas }}</span>
+            <div
+              class="letraRima"
+              :class="{ rimaconsonante: verso.tipoRima == 'consonante' }"
+            >
+              {{ verso.LetraRima.toUpperCase() }}
+            </div>
+            {{ verso.Rima }} - {{ verso.silabas }} Silabas
+            <span class="diferenciaSilabas" v-if="verso.diferenciaSilabas != 0"
+              >+/-{{ verso.diferenciaSilabas }}</span
+            >
           </div>
           <div v-else>&nbsp;</div>
         </div>

@@ -1,7 +1,7 @@
 import { useAppStore } from '../../stores/appStore'
 import { ClienteSocket } from '../conexion/ClienteSocket'
 import { Reproductor } from './reproductor'
-import { SincroCancion } from '../sincro/SincroCancion'
+import { SincroSesion } from '../sincro/SincroSesion'
 import { OrigenCancion } from '../cancion/origencancion'
 import { CancionManager } from '../cancion/CancionManager'
 import { Cancion } from '../cancion/cancion'
@@ -33,11 +33,8 @@ export class ReproductorConectado extends Reproductor {
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
-      const duracionGolpe = appStore.cancion?.duracionGolpe * 1000
-      appStore.sesSincroCancion = new SincroCancion(
-        duracionGolpe,
+      appStore.sesSincroCancion = new SincroSesion(
         desde,
-        appStore.cancion?.compasCantidad || 4, // golpesxcompas
         compas, // duracionGolpe
       )
       this.sincronizar()
