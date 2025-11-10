@@ -161,11 +161,8 @@ describe('Helper Sinro', () => {
     const golpesxcompas = 4
     const tiempoinicio = 350
 
-    const sincro = new SincroSesion(tiempoinicio, 0)
-
     const helper = HelperSincro.getInstance()
     const estadoSincro = helper.GetEstadoSincroMedia(
-      sincro,
       tiempoinicio,
       duracionGolpe,
       golpesxcompas,
