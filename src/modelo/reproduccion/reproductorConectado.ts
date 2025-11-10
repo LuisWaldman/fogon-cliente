@@ -93,7 +93,7 @@ export class ReproductorConectado extends Reproductor {
         momento,
         appStore.cancion!.duracionGolpe * 1000,
         appStore.cancion!.compasCantidad,
-        appStore.sesSincroCancion.desdeCompas,
+        0,
       )
       const dif = Math.abs(
         HelperSincro.Diferencia(
@@ -116,6 +116,9 @@ export class ReproductorConectado extends Reproductor {
 
   sincronizarReproduccion(compas: number, delayms: number) {
     const appStore = useAppStore()
+    console.log(
+      `Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time  ${delayms}`,
+    )
     if (appStore.MediaVistas === null) {
       appStore.sesSincroCancion.desdeCompas = compas
       appStore.sesSincroCancion.timeInicio = delayms

@@ -154,6 +154,27 @@ describe('Helper Sinro', () => {
 
     expect(sincroRecuperado.timeInicio).toBe(tiempoinicio)
   })
+  //
+
+  it('GetEstadoSincroMedia - Reproduciendo en el golpe 0', () => {
+    const duracionGolpe = 100
+    const golpesxcompas = 4
+    const tiempoinicio = 350
+
+    const sincro = new SincroSesion(tiempoinicio, 0)
+
+    const helper = HelperSincro.getInstance()
+    const estadoSincro = helper.GetEstadoSincroMedia(
+      sincro,
+      tiempoinicio,
+      duracionGolpe,
+      golpesxcompas,
+    )
+    expect(estadoSincro.compas).toBe(0)
+    expect(estadoSincro.golpeEnCompas).toBe(3)
+    expect(estadoSincro.delay).toBe(50)
+    expect(estadoSincro.estado).toBe('Reproduciendo')
+  })
 
   it('GetSincro - Reproduciendo en el golpe 0', () => {
     const tiempoinicio = 1000
@@ -163,7 +184,12 @@ describe('Helper Sinro', () => {
     const sincro = new SincroSesion(tiempoinicio, 0)
 
     const helper = HelperSincro.getInstance()
-    const estadoSincro = helper.GetEstadoSincro(sincro, tiempo, duracionGolpe, golpesxcompas)
+    const estadoSincro = helper.GetEstadoSincro(
+      sincro,
+      tiempo,
+      duracionGolpe,
+      golpesxcompas,
+    )
     const sincroRecuperado = helper.GetSincro(
       estadoSincro,
       tiempo,

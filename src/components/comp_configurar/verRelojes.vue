@@ -150,14 +150,8 @@ function cerrarRelojes() {
       </div>
     </div>
 
-    <div
-      style="display: flex"
-      
-    ></div>
-    <div
-      style="border: 1px solid"
-      
-    >
+    <div style="display: flex"></div>
+    <div style="border: 1px solid">
       <div>Inicio Cancion</div>
       <div style="display: flex">
         <div>
@@ -169,10 +163,7 @@ function cerrarRelojes() {
       </div>
     </div>
 
-    <div
-      style="display: flex"
-      
-    >
+    <div style="display: flex">
       Golpe: {{ appStore.EstadoSincro.compas }} ,
       {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
       {{ appStore.EstadoSincro.estado }} Delay:

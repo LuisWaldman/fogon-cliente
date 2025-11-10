@@ -22,6 +22,7 @@ interface ServerToClientEvents {
   time: (hora: number) => void
   sincronizarRTC: (usuario: number) => void
   answerRTC: (SDP: string) => void
+  sincronizar(compas: number, delayms: number): void
 }
 
 interface ClientToServerEvents {
@@ -314,6 +315,12 @@ export class ClienteSocket {
     socket.on('compasActualizado', (compas: number) => {
       console.log('compasActualizado received with compas:', compas)
       this.compasActualizadoHandler?.(compas)
+    })
+    socket.on('sincronizar', (compas: number, delayms: number) => {
+      console.log(
+        `sincronizar received with compas: ${compas}, delayms: ${delayms}`,
+      )
+      this.sincronizarReproduccion?.(compas, delayms)
     })
     socket.on('answerRTC', (SDP: string) => {
       console.log('answerRTC received with SDP:', SDP)

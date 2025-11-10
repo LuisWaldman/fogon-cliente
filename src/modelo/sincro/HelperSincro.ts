@@ -132,12 +132,6 @@ export class HelperSincro {
         this.delayCalculadorRTC.addDelaySet(new DelaySet(tardo * -1, delay))
         this.delayRelojRTC = this.delayCalculadorRTC.getDelay()
         this.ErrorRelojRTC = this.delayCalculadorRTC.getError()
-        console.log(
-          'Ajustando, delayReloj:',
-          this.delayReloj,
-          'ErrorReloj:',
-          this.ErrorReloj,
-        )
         if (this.ciclos < this.maxCiclos) {
           this.ciclos++
           this.momentoEnviado = this.MomentoLocal()
@@ -221,7 +215,6 @@ export class HelperSincro {
   }
 
   public GetEstadoSincroMedia(
-    sincro: SincroSesion,
     momento: number,
     duracionGolpe: number,
     golpesxcompas: number,
@@ -237,15 +230,15 @@ export class HelperSincro {
       estadoReproduccion = 'Reproduciendo'
       deltaGolpe = diferencia - golpe * duracionGolpe
       deltaGolpe = duracionGolpe - deltaGolpe
-      compas = sincro.desdeCompas + Math.floor(golpe / golpesxcompas)
+      compas = Math.floor(golpe / golpesxcompas)
       golpeDelCompas = golpe % golpesxcompas
     } else {
       diferencia = diferencia * -1
       const golpe = Math.floor(diferencia / duracionGolpe)
       estadoReproduccion = 'Iniciando'
-      compas = sincro.desdeCompas
       deltaGolpe = diferencia - golpe * duracionGolpe
       golpeDelCompas = golpesxcompas - (golpe + 1)
+      compas = 0
     }
 
     return new EstadoSincroCancion(
@@ -263,7 +256,6 @@ export class HelperSincro {
     golpesxcompas: number,
     desdeCompas: number = 0,
   ): SincroSesion {
-    console.log('Calculando', estado.compas, momento, duracionGolpe)
     // Revert the logic of GetEstadoSincro
     let timeInicio: number
     let recuperadoDesdeCompas: number

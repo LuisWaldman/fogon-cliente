@@ -61,10 +61,9 @@ onMounted(() => {
 function onTextareaScroll() {
   if (refTextarea.value && refPreview.value) {
     refPreview.value.scrollTop = refTextarea.value.scrollTop
-    if (refPreviewVerso.value != null){
+    if (refPreviewVerso.value != null) {
       refPreviewVerso.value.scrollTop = refTextarea.value.scrollTop
     }
-    
   }
 }
 </script>
