@@ -12,27 +12,27 @@ import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
 
 const listasManager: ListasDBManager = new ListasDBManager()
 
-const vista: vistaHome = new vistaHome()
-const viendo = ref(vista.viendo)
-const viendoOrigen = ref(vista.viendoOrigen)
-const viendoCanciones = ref<ItemIndiceCancion[]>(vista.viendoCanciones)
-const viendoListas = ref<string[]>(vista.viendoListas)
+const vistaControl: vistaHome = new vistaHome()
+const viendo = ref(vistaControl.viendo)
+const viendoOrigen = ref(vistaControl.viendoOrigen)
+const viendoCanciones = ref<ItemIndiceCancion[]>(vistaControl.viendoCanciones)
+const viendoListas = ref<string[]>(vistaControl.viendoListas)
 const viendoLista = ref<string>('')
 const cargandoCanciones = ref<boolean>(true)
 const cargandoListas = ref<boolean>(true)
 const viendoTexto = ref('')
 
 function actualizarVista() {
-  viendo.value = vista.viendo
-  viendoOrigen.value = vista.viendoOrigen
-  viendoCanciones.value = vista.viendoCanciones
-  viendoListas.value = vista.viendoListas
-  viendoLista.value = vista.viendoLista
-  viendoTexto.value = vista.viendoTexto
+  viendo.value = vistaControl.viendo
+  viendoOrigen.value = vistaControl.viendoOrigen
+  viendoCanciones.value = vistaControl.viendoCanciones
+  viendoListas.value = vistaControl.viendoListas
+  viendoLista.value = vistaControl.viendoLista
+  viendoTexto.value = vistaControl.viendoTexto
 }
 
 async function Cargar() {
-  await vista.iniciar()
+  await vistaControl.iniciar()
   actualizarVista()
   cargandoCanciones.value = false
   cargandoListas.value = false
@@ -79,14 +79,14 @@ async function clickOpcion(viendostr: string) {
   if (viendo.value === viendostr) return
   cargandoCanciones.value = true
   cargandoListas.value = true
-  await vista.clickViendo(viendostr)
+  await vistaControl.clickViendo(viendostr)
   await Cargar()
   return
 }
 
 async function cambioLista() {
   cargandoCanciones.value = true
-  await vista.cambioLista(viendoLista.value)
+  await vistaControl.cambioLista(viendoLista.value)
   actualizarVista()
   cargandoCanciones.value = false
   return
@@ -95,8 +95,8 @@ async function cambioLista() {
 async function clickOrigen(viendostr: string) {
   if (viendoOrigen.value === viendostr) return
   console.log('Cambiando origen a:', viendostr)
-  await vista.clickViendoOrigen(viendostr)
-  await vista.iniciar()
+  await vistaControl.clickViendoOrigen(viendostr)
+  await vistaControl.iniciar()
   actualizarVista()
   return
 }

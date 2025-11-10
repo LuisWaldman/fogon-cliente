@@ -14,6 +14,7 @@ interface ServerToClientEvents {
   rolSesion: (mensaje: string) => void
   cancionActualizada: () => void
   cancionIniciada: (compas: number, desde: number) => void
+  cancionSincronizada: (compas: number, desde: number) => void
   cancionDetenida: () => void
   compasActualizado: (compas: number) => void
   sesionesActualizadas: () => void
@@ -21,10 +22,12 @@ interface ServerToClientEvents {
   time: (hora: number) => void
   sincronizarRTC: (usuario: number) => void
   answerRTC: (SDP: string) => void
+  sincronizar(compas: number, delayms: number): void
 }
 
 interface ClientToServerEvents {
   iniciarReproduccion(compas: number, delayms: number): void
+  sincronizarReproduccion(compas: number, delayms: number): void
   detenerReproduccion: () => void
   actualizarCompas: (compas: number) => void
   login: (modo: string, usuario: string, password: string) => void
@@ -99,6 +102,13 @@ export class ClienteSocket {
     handler: (compas: number, desde: number) => void,
   ): void {
     this.cancionIniciadaHandler = handler
+  }
+
+  private cancionSincronizadaHandler?: (compas: number, desde: number) => void
+  public setCancionSincronizadaHandler(
+    handler: (compas: number, desde: number) => void,
+  ): void {
+    this.cancionSincronizadaHandler = handler
   }
 
   private cancionDetenidaHandler?: () => void
@@ -289,13 +299,10 @@ export class ClienteSocket {
     })
 
     socket.on('cancionIniciada', (compas: number, desde: number) => {
-      console.log(
-        'cancionIniciada received with compas:',
-        compas,
-        'desde:',
-        desde,
-      )
       this.cancionIniciadaHandler?.(compas, desde)
+    })
+    socket.on('cancionSincronizada', (compas: number, desde: number) => {
+      this.cancionSincronizadaHandler?.(compas, desde)
     })
     socket.on('cancionDetenida', () => {
       console.log('cancionDetenida received')
@@ -308,6 +315,12 @@ export class ClienteSocket {
     socket.on('compasActualizado', (compas: number) => {
       console.log('compasActualizado received with compas:', compas)
       this.compasActualizadoHandler?.(compas)
+    })
+    socket.on('sincronizar', (compas: number, delayms: number) => {
+      console.log(
+        `sincronizar received with compas: ${compas}, delayms: ${delayms}`,
+      )
+      this.sincronizarReproduccion?.(compas, delayms)
     })
     socket.on('answerRTC', (SDP: string) => {
       console.log('answerRTC received with SDP:', SDP)
@@ -341,14 +354,13 @@ export class ClienteSocket {
   }
 
   public iniciarReproduccion(compas: number, delayms: number): void {
-    console.log(
-      'Iniciando reproducción con compás:',
-      compas,
-      'y delay:',
-      delayms,
-    )
     this.socket.emit('iniciarReproduccion', compas, delayms)
   }
+
+  public sincronizarReproduccion(compas: number, delayms: number): void {
+    this.socket.emit('sincronizarReproduccion', compas, delayms)
+  }
+
   public detenerReproduccion(): void {
     this.socket.emit('detenerReproduccion')
   }

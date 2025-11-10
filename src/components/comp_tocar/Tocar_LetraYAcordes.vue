@@ -161,6 +161,8 @@ defineExpose({ Actualizar })
   padding-top: 30px;
   width: 100%;
   height: 100%;
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
   overflow-y: scroll;
   overflow-x: hidden;
 }

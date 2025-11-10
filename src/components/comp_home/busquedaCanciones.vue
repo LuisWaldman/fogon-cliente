@@ -130,14 +130,12 @@ const opcionesGrupo = [
   { value: 'Tango', label: 'Tango' },
   { value: 'Folclore', label: 'Folclore' },
   { value: 'Cumbia', label: 'Cumbia' },
+  { value: 'Cuarteto', label: 'Cuarteto' },
   { value: 'Rock Internacional', label: 'Rock Internacional' },
-  { value: 'Música Moderna', label: 'Música Moderna' },
+  { value: 'Modernos', label: 'Modernos' },
   { value: 'sonetos', label: 'Sonetos' },
   { value: 'brasilero', label: 'Brasilero' },
-  { value: 'chanson_francesa', label: 'Francés' },
-  { value: 'brasilero', label: 'Brasilero' },
   { value: 'estilo_latino', label: 'Estilo Latino' },
-  { value: 'cumbia', label: 'Cumbia' },
 ]
 
 const opcionesPartes = [

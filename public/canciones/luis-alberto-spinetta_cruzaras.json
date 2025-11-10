@@ -8,291 +8,495 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "Em7",
+                    "Am7",
                     "Am7",
                     "Em7",
-                    "Am7/4"
+                    "Em7",
+                    "Em7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "Am7",
-                    "Em7",
-                    "Am7/4"
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "G",
-                    "Am7",
                     "Em7",
-                    "Am7"
+                    "Em7",
+                    "Em7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
                     "Cadd9",
                     "Em7",
-                    "C9",
-                    "Am7/4"
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em7",
+                    "Am7",
+                    "Am7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Cadd9",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Cadd9",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em7",
+                    "Am7",
+                    "Am7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Cadd9",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Cadd9",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7",
+                    "Em7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Em7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            2,
-            1,
-            3,
-            3,
-            0,
-            0,
-            2,
             1,
             2,
-            1,
             3,
-            3,
-            3,
-            0,
-            0,
-            2,
-            1,
-            0,
-            0,
-            2,
-            1,
-            3,
-            3,
-            3,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
         [
-            "Ella  ",
-            "  sólo calza",
-            "   nunca es de acerrín",
+            "Ella sol",
+            "o calza nu",
+            "cas de ace",
+            "rvil, ",
+            "lejos pa",
+            "san trenes, di",
+            "os nos aman para. /n"
+        ],
+        [
+            "Una ",
+            "esquina des",
+            "igual un r",
+            "ayo al corre",
+            "r. /n"
+        ],
+        [
+            "Buenos  \n\nAires tie",
+            "ne la res",
+            "puesta. ",
             "/n"
         ],
         [
-            "lejos  ",
-            " pasan trenes   Di",
-            "os nos ampara",
+            "Plazas, ",
+            "árboles,  dorm",
+            "idos en o",
+            "lor. /n"
+        ],
+        [
+            "Gritos en ",
+            "taxi, l",
+            "oco ponen pies. /n"
+        ],
+        [
+            "Qui",
+            "ero verte en luz ",
+            "del codil baila",
+            "ndo hasta acá. ",
             "/n"
         ],
         [
-            "Una esquina desig",
-            "ual y un rayo a",
-            "l caer",
+            "Aún te espera la l",
+            "una de be",
+            "ndición. /n"
+        ],
+        [
+            "Aunque cr",
+            "uzarás este la",
+            "rgo día, c",
+            "ruzar",
+            "ás, c",
+            "ruzarás este l",
+            "argo día, ",
+            "cruzarás.  ",
             "/n"
         ],
         [
-            "Buenos Aires tiene",
-            " la respuesta",
-            ".",
-            "/n"
+            "Ja",
+            "la, jala, dios",
+            "es que no duermen, no hay am",
+            "igos, solo una am",
+            "iga. /n"
         ],
         [
-            "Plazas  ,  ",
-            "árboles ",
-            " dormidos sin olor",
-            "/n"
-        ],
-        [
-            "gritos  ",
-            " en un taxi   l",
-            "oco por Nuñez",
-            "/n"
-        ],
-        [
-            "Quiero verte luz ",
-            "de colibrí  ,  bail",
-            "ando hasta caer",
-            "/n"
-        ],
-        [
-            "Aún te espera la luna",
-            " de Venecia.",
+            "Orcas fl",
+            "orescentes huy",
+            "endo para est",
+            "o. \n\nNo ",
+            "será que co",
+            "nsumimos, d",
+            "ecimos el ver",
+            "bo, ",
+            "que de queda se q",
+            "ueda con el ca",
+            "mbio. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Aunque  cruzarás  este  la",
-            "rgo  rio/n"
+            "Veo un cuerpo pe",
+            "rsistir corr",
+            "iendo hacia sí. /n"
         ],
         [
-            "cruzarás",
-            "/n"
+            "P",
+            "ero espera, e",
+            "spera de la ",
+            "luna.  /n"
         ],
         [
-            "Cruzarás este",
-            " largo rio/n"
-        ],
-        [
-            "cruzarás.",
-            "/n"
-        ],
-        [
-            "Jalo y jala ",
-            "  dioses que no duermen/n"
-        ],
-        [
-            "no hay amigos sólo una amig",
-            "a/n"
-        ],
-        [
-            "Orcas    ",
-            "florecentes  mu",
-            "riendo para esto",
-            "/n"
-        ],
-        [
-            "no será que al ",
-            "consumirnos decimos ",
-            "el Verbo",
-            "/n"
-        ],
-        [
-            "queda  queda  ,  se que",
-            "da con el cambio.",
-            "",
-            "/n"
-        ],
-        [
-            "Veo un cuerpo persis",
-            "tir corri",
-            "endo hacia si",
-            "/n"
-        ],
-        [
-            "pera  espera  ,  espe",
-            "ra de la bruma ",
-            "...",
-            "/nAun"
-        ],
-        [
-            "que cruzarás este larg",
-            "o dia/n"
-        ],
-        [
-            "cruzarás",
+            "Aunque c",
+            "ruzarás este l",
+            "argo día, ",
+            "cruzará",
+            "s, cru",
+            "zarás este l",
+            "argo día, ",
+            "cruzarás.  ",
             "/n"
         ],
         [
             "Cruzarás este l",
-            "argo dia/n"
-        ],
-        [
-            "cruzarás",
-            "/nCr"
-        ],
-        [
-            "uzarás este la",
-            "rgo limbo/n"
-        ],
-        [
-            "cruzarás",
-            "/n"
-        ],
-        [
-            "Ella   ,",
-            "  ella sólo calza",
-            "  nunca es de acerrín",
-            "/n"
-        ],
-        [
-            "mira mira  ,  ",
-            "mira chicas co",
-            "n sus senos así",
-            "/n"
-        ],
-        [
-            "Una esquina desig",
-            "ual  y un",
-            " rayo al caer",
-            "/n"
-        ],
-        [
-            "Buenos Aires tiene",
-            " la respuesta.",
+            "argo limbo, ",
+            "cruz",
+            "arás, c",
+            "ruzarás este d",
+            "ulce canto de ",
+            "amor. ",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Jalo y jala  , ",
-            " dioses que no duermen/n"
+            "P",
+            "ero yo, e",
+            "lla solo cansa, n",
+            "unca se hace r",
+            "ir/n"
         ],
         [
-            "no hay amigos  ,  sólo una amiga",
-            "/n"
+            "Mira, mira, ",
+            "mira, chicas con ",
+            "sus celos así",
+            ". \n\nUna ",
+            "esquina d",
+            "esigual un ",
+            "rayo al ca",
+            "er. /n"
         ],
         [
-            "Orcas   ",
-            "florecentes mur",
-            "iendo para esto",
-            "/n"
+            "Buenos \n\nAires t",
+            "iene la re",
+            "spuesta. /n"
         ],
         [
-            "Quiero verte lu",
-            "z de colibrí  ,  bai",
-            "lando hasta caer",
-            "/n"
+            "J",
+            "ala, jala, ",
+            "dioses que no duermen, no hay ",
+            "amigos,  solo una ami",
+            "ga. /n"
         ],
         [
-            "pera  espera  ,  espe",
-            "ra de la bruma",
+            "Orcas ",
+            "florescentes  hu",
+            "yendo para esto",
+            ". \n\nQu",
+            "iero verte luz ",
+            "de colibrí bai",
+            "lando hasta c",
+            "aer. \n\nP",
+            "ero espera, es",
+            "pera de la l",
+            "una. /n"
+        ],
+        [
+            "Aunque ",
+            "cruzarás  este l",
+            "argo día, ",
+            "cruzarás",
+            ", cruz",
+            "arás este ",
+            "largo  día, ",
+            "cruza",
+            "rás, ",
+            "cruzarás.  \n\nEste d",
+            "ulce limbo, ",
+            "cruzarás ",
+            "cruz",
+            "arás este ",
+            "dulce  canto de ",
+            "amor. ",
             "",
-            "/nAu"
-        ],
-        [
-            "nque cruzarás este lar",
-            "go dia/n"
-        ],
-        [
-            "cruzarás",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Cruzarás este ",
-            "largo dia/n"
-        ],
-        [
-            "cruzarás",
-            "/n"
-        ],
-        [
-            "Cruzarás este",
-            " dulce limbo/n"
-        ],
-        [
-            "cruzarás",
-            "/n"
-        ],
-        [
-            "Cruzarás este",
-            " dulce canto de a",
-            "mor  ...  oh",
-            ""
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "pzzZDWS4Xio",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

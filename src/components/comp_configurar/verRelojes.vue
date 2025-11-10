@@ -150,14 +150,8 @@ function cerrarRelojes() {
       </div>
     </div>
 
-    <div
-      style="display: flex"
-      v-if="appStore.sesSincroCancion.duracionGolpe != 0"
-    ></div>
-    <div
-      style="border: 1px solid"
-      v-if="appStore.sesSincroCancion.duracionGolpe != 0"
-    >
+    <div style="display: flex"></div>
+    <div style="border: 1px solid">
       <div>Inicio Cancion</div>
       <div style="display: flex">
         <div>
@@ -166,25 +160,10 @@ function cerrarRelojes() {
           ></RelojControl>
           Desde: {{ appStore.sesSincroCancion.desdeCompas }}
         </div>
-        <div>
-          Duracion Compas :
-          {{ appStore.sesSincroCancion.duracionGolpe.toFixed(2) }} ms x
-          {{ appStore.sesSincroCancion.golpesxcompas }} golpes =
-          {{
-            (
-              appStore.sesSincroCancion.duracionGolpe *
-              appStore.sesSincroCancion.golpesxcompas
-            ).toFixed(2)
-          }}
-          ms
-        </div>
       </div>
     </div>
 
-    <div
-      style="display: flex"
-      v-if="appStore.sesSincroCancion.duracionGolpe != 0"
-    >
+    <div style="display: flex">
       Golpe: {{ appStore.EstadoSincro.compas }} ,
       {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
       {{ appStore.EstadoSincro.estado }} Delay:

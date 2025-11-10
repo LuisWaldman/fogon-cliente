@@ -15,7 +15,6 @@ export class AcordesGuitarraHelper {
    * El string debe tener el formato: "3 2 1 0 x x" (de la 1ra a la 6ta cuerda).
    */
   static getAcorde(chordStr: string): AcordesGuitarra {
-    console.log('getAcorde', chordStr)
     const cuerda: string[] = ['0', '0', '0', '0', '0', '0']
     let cejilla: number = 0
 

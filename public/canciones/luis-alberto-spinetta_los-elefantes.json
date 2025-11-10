@@ -8,26 +8,31 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Em",
                     "D7",
-                    "G",
-                    "C",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "D",
-                    "C"
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "D",
-                    "C",
+                    "Em",
+                    "Em",
                     "G",
-                    "D",
-                    "Bsus",
-                    "B",
-                    "A",
+                    "G",
                     "G"
                 ]
             },
@@ -35,85 +40,482 @@
                 "nombre": "parte3",
                 "acordes": [
                     "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
                     "Bsus",
+                    "Bsus",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "B",
                     "Em",
-                    "Cmaj7",
-                    "Em9",
-                    "Cmaj7",
-                    "Em9"
+                    "D7 D",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D7 D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "Bsus",
+                    "Bsus"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
         ]
     },
     "letras": [
         [
-            "Los elef",
-            "antes sab",
-            "en descansar",
+            "Los ",
+            "elefantes s",
+            "aben desc",
+            "ansar ",
+            "",
             "/n"
         ],
         [
-            "van a morir de paz",
-            "./n"
+            "Al m",
+            "orir de ",
+            "paz /n"
         ],
         [
-            "un elefa",
-            "nte sab",
-            "e como aquel,",
+            "Un ",
+            "elefa",
+            "nte sabe co",
+            "mo aquel ",
+            "",
             "/n"
         ],
         [
-            "el creador de la ti",
-            "erra y el sol",
-            "/ny si es que v"
+            "El crea",
+            "dor de la tierra del ",
+            "sol si ",
+            "es que ves ",
+            "como se ",
+            "extiende /n"
         ],
         [
-            "es como se extie",
-            "nde/nsi ves c"
+            "Si ",
+            "ves como se ",
+            "recibe ",
+            "olvidar su ine",
+            "xplicable sole",
+            "dad \n\nS",
+            "erás como ",
+            "ello",
+            "s \n\nQue podr",
+            "án contar los cue",
+            "ntos más ext",
+            "raños pero no ",
+            "te apura",
+            "ras ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "omo se resignan/na olvi"
+            "Los ",
+            "elefantes s",
+            "aben olvidar ",
+            "",
+            "/n"
         ],
         [
-            "dar su inexplica",
-            "ble soledad",
-            "/nseras como ello"
+            "Mí",
+            "ralos como e",
+            "stán ",
+            "/n"
         ],
         [
-            "s,/nte podr"
+            "Mira  sus ",
+            "largas  tromp",
+            "as sin razón ",
+            "",
+            "/n"
         ],
         [
-            "an contar los cuentos mas extran",
-            "os/npero "
+            "Com",
+            "o huelen todos lo ",
+            "que están ",
+            "si es que ",
+            "ves c",
+            "omo se exti",
+            "ende /n"
         ],
         [
-            "no te apuraras",
-            "./n"
+            "Si ves como ",
+            "se recibe ",
+            "olvidar ",
+            "su inexplicable s",
+            "oledad /n"
         ],
         [
-            "Y tendras calma",
-            ",/n"
+            "Serás c",
+            "omo ell",
+            "os \n\nQue p",
+            "odrán contar los ",
+            "cuentos  más e",
+            "xtraños pero no ",
+            "te apur",
+            "aras /n"
         ],
         [
-            "tendras la calm",
-            "a,/n"
+            "La ",
+            "t",
+            "i",
+            "e",
+            "r",
+            "ra ",
+            "",
+            "",
+            "/n"
         ],
-        []
+        [
+            "Un ",
+            "elefant ",
+            "sabe co",
+            "mo se extiende ",
+            "",
+            "/n"
+        ],
+        [
+            "Vamos ",
+            "verlo an",
+            "dar /n"
+        ],
+        [
+            "M",
+            "ientras sea s",
+            "olo un elefant ",
+            "hasta el fin",
+            "al ",
+            "/n"
+        ],
+        [
+            "No ",
+            "tendrás que ",
+            "entende",
+            "r ",
+            "",
+            "que las ",
+            "alm",
+            "as /n"
+        ],
+        [
+            "T",
+            "endrás las ",
+            "alma",
+            "s ",
+            "",
+            "las ",
+            "alm",
+            "as /n"
+        ],
+        [
+            "Una blan",
+            "ca, blanca, bla",
+            "nca alma ",
+            "",
+            "/n"
+        ],
+        [
+            "Te",
+            "ndrás las ",
+            "almas /n"
+        ],
+        [
+            "Una blan",
+            "ca, blanca, bl",
+            "anca al",
+            "ma /n"
+        ],
+        [
+            "Una blanc",
+            "a, blanca, blanca a",
+            "lma ",
+            "/n"
+        ],
+        [
+            "Una blanca, b",
+            "lanca, blanca a",
+            "lma/n"
+        ],
+        [
+            "Una ",
+            "blanca, b",
+            "lanca, blanca a",
+            "lma ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Una bla",
+            "nca, blan",
+            "ca "
+        ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "-In0N4vTKPo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

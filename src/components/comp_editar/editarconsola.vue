@@ -2,8 +2,9 @@
 import { onMounted, ref, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
-import { HelperDisplay } from '../../modelo/display/helperDisplay'
-import { Display } from '../../modelo/display/display'
+import { HelperDisplayEditTexto } from '../../modelo/displayEditTexto/helperDisplayEditTexto'
+import type { textoResumen } from '../../modelo/displayEditTexto/textoResumen'
+import SpanSilabas from './spanSilabas.vue'
 
 const pantalla = new Pantalla()
 const configuracionPantalla = pantalla.getConfiguracionPantalla()
@@ -14,16 +15,25 @@ const props = defineProps<{
   verMetricaEs: boolean
 }>()
 
-const helperDisplay = new HelperDisplay()
-const displayRef = ref(new Display(configuracionPantalla.columnas))
+const helperTexto = new HelperDisplayEditTexto()
+const refTextoResumido = ref<textoResumen>(
+  helperTexto.getResumen(props.cancion.letras),
+)
 function ActualizarCancion(cancion: Cancion) {
-  displayRef.value = helperDisplay.getDisplay(
-    cancion,
-    configuracionPantalla.columnas,
-  )
+  const nuevo = helperTexto.getResumen(cancion.letras)
+  props.cancion.letras.renglones = [
+    refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
+  ]
+  if (
+    refTextoResumido.value.versos != nuevo.versos ||
+    refTextoResumido.value.silabas.length != nuevo.silabas.length
+  ) {
+    emit('actualizoTexto')
+  }
+  refTextoResumido.value = nuevo
 }
 
-const emit = defineEmits(['cerrar'])
+const emit = defineEmits(['actualizoTexto'])
 const refTextoEditable = ref('')
 const cancionActualizada = Cancion.GetDefault('EDITCONSOLA')
 cancionActualizada.acordes = props.cancion.acordes
@@ -39,6 +49,7 @@ watch(
 
 const refTextarea = ref<HTMLTextAreaElement>()
 const refPreview = ref<HTMLDivElement>()
+const refPreviewVerso = ref<HTMLDivElement>()
 
 onMounted(() => {
   refTextoEditable.value = props.cancion.letras.renglones
@@ -50,30 +61,33 @@ onMounted(() => {
 function onTextareaScroll() {
   if (refTextarea.value && refPreview.value) {
     refPreview.value.scrollTop = refTextarea.value.scrollTop
-    refPreview.value.scrollLeft = refTextarea.value.scrollLeft
+    if (refPreviewVerso.value != null) {
+      refPreviewVerso.value.scrollTop = refTextarea.value.scrollTop
+    }
   }
-}
-
-function clickCancelarConsola() {
-  emit('cerrar')
-}
-
-function clickConfirmarAcorde() {
-  props.cancion.letras.renglones = [
-    refTextoEditable.value.replace(/\r?\n/g, '/n').split('|'),
-  ]
-  emit('cerrar')
 }
 </script>
 
 <template>
-  <div>
-    <span @click="clickCancelarConsola">[Cancelar]</span>
-    <span @click="clickConfirmarAcorde">[Confirmar]</span>
+  <div class="barraInformacion">
+    <div class="resVerso">
+      <span
+        >Versos: <b>{{ refTextoResumido.versos }}</b></span
+      >
+    </div>
+    <div class="resVerso">
+      <span>Silabas: <SpanSilabas :silabas="refTextoResumido.silabas" /></span>
+    </div>
   </div>
   <div>
-    <div style="display: flex; overflow: hidden; height: 400px">
-      <div style="height: 400px">
+    <div class="divLetraConteiner">
+      <div class="preview" ref="refPreview">
+        <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
+          <div class="acordeconsola" v-if="verso.nroRenglon == -1">♪</div>
+          <div class="acordeconsola" v-else>{{ verso.nroRenglon }}</div>
+        </div>
+      </div>
+      <div style="height: 800px">
         <textarea
           class="textArea"
           ref="refTextarea"
@@ -82,36 +96,21 @@ function clickConfirmarAcorde() {
           :cols="configuracionPantalla.columnas"
         ></textarea>
       </div>
-      <div
-        class="preview"
-        ref="refPreview"
-        v-if="!configuracionPantalla.viendoResumenVerso"
-      >
-        <template v-for="(verso, index) in displayRef.Versos" :key="index">
-          <div
-            v-for="(renglon, rIndex) in verso.renglonesDisplay"
-            :key="rIndex"
-            style="display: flex"
-          >
+      <div class="preview" ref="refPreviewVerso">
+        <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
+          <div class="acordeconsola" v-if="verso.Rima.trim() != ''">
             <div
-              v-for="(acorde, aIndex) in renglon.acordes"
-              :key="aIndex"
-              class="acordeconsola"
+              class="letraRima"
+              :class="{ rimaconsonante: verso.tipoRima == 'consonante' }"
             >
-              {{ acorde.contenido }}
+              {{ verso.LetraRima.toUpperCase() }}
             </div>
+            {{ verso.Rima }} - {{ verso.silabas }} Silabas
+            <span class="diferenciaSilabas" v-if="verso.diferenciaSilabas != 0"
+              >+/-{{ verso.diferenciaSilabas }}</span
+            >
           </div>
-        </template>
-      </div>
-      <div
-        class="preview"
-        ref="refPreview"
-        v-if="configuracionPantalla.viendoResumenVerso"
-      >
-        <div v-for="(verso, index) in displayRef.Versos" :key="index">
-          <div class="acordeconsola">
-            {{ verso.resumenverso }}
-          </div>
+          <div v-else>&nbsp;</div>
         </div>
       </div>
     </div>
@@ -120,12 +119,16 @@ function clickConfirmarAcorde() {
 <style scoped>
 .textArea {
   height: 100%;
+  width: 1000px;
+  overflow-x: auto; /* Scroll horizontal si es necesario */
+  overflow-y: auto; /* Scroll vertical si es necesario */
+  white-space: pre; /* No hacer wrap automático */
   font-family: monospace;
   font-size: var(--tamanio-letra);
   border: none;
   padding: 10px;
   color: white;
-  font-size: var(--tamanio-letra);
+  background-color: #222; /* Opcional para contraste */
 }
 .preview {
   white-space: pre-wrap;
@@ -137,5 +140,32 @@ function clickConfirmarAcorde() {
 }
 .acordeconsola {
   margin-right: 4px;
+  display: flex;
+}
+.barraInformacion {
+  display: flex;
+  background-color: #333333;
+  color: var(--color-texto-secciones);
+  padding: 5px;
+}
+.resVerso {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.divLetraConteiner {
+  display: flex;
+  gap: 0px;
+  overflow: hidden;
+  height: 800px;
+}
+.letraRima {
+  border: 1px solid;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.rimaconsonante {
+  background-color: rgb(187, 187, 81);
+  color: white;
 }
 </style>

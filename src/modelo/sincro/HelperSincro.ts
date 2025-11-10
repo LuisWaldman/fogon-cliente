@@ -1,4 +1,4 @@
-import { SincroCancion } from './SincroCancion'
+import { SincroSesion } from './SincroSesion'
 import { EstadoSincroCancion } from './EstadoSincroCancion'
 import { ClienteSocket } from '../conexion/ClienteSocket'
 import { DelayCalculador } from './DelayCalculador'
@@ -132,12 +132,6 @@ export class HelperSincro {
         this.delayCalculadorRTC.addDelaySet(new DelaySet(tardo * -1, delay))
         this.delayRelojRTC = this.delayCalculadorRTC.getDelay()
         this.ErrorRelojRTC = this.delayCalculadorRTC.getError()
-        console.log(
-          'Ajustando, delayReloj:',
-          this.delayReloj,
-          'ErrorReloj:',
-          this.ErrorReloj,
-        )
         if (this.ciclos < this.maxCiclos) {
           this.ciclos++
           this.momentoEnviado = this.MomentoLocal()
@@ -185,8 +179,10 @@ export class HelperSincro {
   }
 
   public GetEstadoSincro(
-    sincro: SincroCancion,
+    sincro: SincroSesion,
     momento: number,
+    duracionGolpe: number,
+    golpesxcompas: number,
   ): EstadoSincroCancion {
     let estadoReproduccion: 'Reproduciendo' | 'Iniciando'
     let compas: number
@@ -196,18 +192,18 @@ export class HelperSincro {
     let diferencia = HelperSincro.Diferencia(sincro.timeInicio, momento)
     if (diferencia <= 0) {
       diferencia = diferencia * -1
-      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
+      const golpe = Math.floor(diferencia / duracionGolpe)
       estadoReproduccion = 'Reproduciendo'
-      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
-      deltaGolpe = sincro.duracionGolpe - deltaGolpe
-      compas = sincro.desdeCompas + Math.floor(golpe / sincro.golpesxcompas)
-      golpeDelCompas = golpe % sincro.golpesxcompas
+      deltaGolpe = diferencia - golpe * duracionGolpe
+      deltaGolpe = duracionGolpe - deltaGolpe
+      compas = sincro.desdeCompas + Math.floor(golpe / golpesxcompas)
+      golpeDelCompas = golpe % golpesxcompas
     } else {
-      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
+      const golpe = Math.floor(diferencia / duracionGolpe)
       estadoReproduccion = 'Iniciando'
       compas = sincro.desdeCompas
-      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
-      golpeDelCompas = sincro.golpesxcompas - (golpe + 1)
+      deltaGolpe = diferencia - golpe * duracionGolpe
+      golpeDelCompas = golpesxcompas - (golpe + 1)
     }
 
     return new EstadoSincroCancion(
@@ -219,8 +215,9 @@ export class HelperSincro {
   }
 
   public GetEstadoSincroMedia(
-    sincro: SincroCancion,
     momento: number,
+    duracionGolpe: number,
+    golpesxcompas: number,
   ): EstadoSincroCancion {
     let estadoReproduccion: 'Reproduciendo' | 'Iniciando'
     let compas: number
@@ -229,19 +226,19 @@ export class HelperSincro {
 
     let diferencia = momento
     if (diferencia > 0) {
-      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
+      const golpe = Math.floor(diferencia / duracionGolpe)
       estadoReproduccion = 'Reproduciendo'
-      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
-      deltaGolpe = sincro.duracionGolpe - deltaGolpe
-      compas = sincro.desdeCompas + Math.floor(golpe / sincro.golpesxcompas)
-      golpeDelCompas = golpe % sincro.golpesxcompas
+      deltaGolpe = diferencia - golpe * duracionGolpe
+      deltaGolpe = duracionGolpe - deltaGolpe
+      compas = Math.floor(golpe / golpesxcompas)
+      golpeDelCompas = golpe % golpesxcompas
     } else {
       diferencia = diferencia * -1
-      const golpe = Math.floor(diferencia / sincro.duracionGolpe)
+      const golpe = Math.floor(diferencia / duracionGolpe)
       estadoReproduccion = 'Iniciando'
-      compas = sincro.desdeCompas
-      deltaGolpe = diferencia - golpe * sincro.duracionGolpe
-      golpeDelCompas = sincro.golpesxcompas - (golpe + 1)
+      deltaGolpe = diferencia - golpe * duracionGolpe
+      golpeDelCompas = golpesxcompas - (golpe + 1)
+      compas = 0
     }
 
     return new EstadoSincroCancion(
@@ -258,7 +255,7 @@ export class HelperSincro {
     duracionGolpe: number,
     golpesxcompas: number,
     desdeCompas: number = 0,
-  ): SincroCancion {
+  ): SincroSesion {
     // Revert the logic of GetEstadoSincro
     let timeInicio: number
     let recuperadoDesdeCompas: number
@@ -284,12 +281,7 @@ export class HelperSincro {
       timeInicio += 3600000
     }
 
-    return new SincroCancion(
-      duracionGolpe,
-      timeInicio,
-      golpesxcompas,
-      recuperadoDesdeCompas,
-    )
+    return new SincroSesion(timeInicio, recuperadoDesdeCompas)
   }
 }
 

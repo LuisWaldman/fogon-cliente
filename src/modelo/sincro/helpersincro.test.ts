@@ -1,6 +1,6 @@
 import { HelperSincro } from './HelperSincro'
 import { describe, it, expect } from 'vitest'
-import { SincroCancion } from './SincroCancion'
+import { SincroSesion } from './SincroSesion'
 
 describe('Helper Sinro', () => {
   it('Diferencias', () => {
@@ -17,15 +17,13 @@ describe('Helper Sinro', () => {
   it('Cancion por iniciar', () => {
     const tiempoinicio = 0 // 0 milisegundos
     const tiempo = tiempoinicio
-    const sincro = new SincroCancion(
-      100,
+    const sincro = new SincroSesion(
       0, // tiempo de inicio
-      4, // golpesxcompas
       0, // desde compas
     )
 
     const helper = HelperSincro.getInstance()
-    const est = helper.GetEstadoSincro(sincro, tiempo)
+    const est = helper.GetEstadoSincro(sincro, tiempo, 100, 4)
 
     expect(est.estado).toBe('Reproduciendo')
     expect(est.compas).toBe(0)
@@ -36,15 +34,13 @@ describe('Helper Sinro', () => {
   it('Empezo hace un micro segundo', () => {
     const tiempoinicio = 1000 // 1 segundo
     const tiempo = tiempoinicio + 1 // Un micro segundo después
-    const sincro = new SincroCancion(
-      100,
+    const sincro = new SincroSesion(
       tiempoinicio,
-      4, // golpesxcompas
       0, // desde compas
     )
 
     const helper = HelperSincro.getInstance()
-    const est = helper.GetEstadoSincro(sincro, tiempo)
+    const est = helper.GetEstadoSincro(sincro, tiempo, 100, 4)
 
     expect(est.estado).toBe('Reproduciendo')
     expect(est.compas).toBe(0)
@@ -56,15 +52,13 @@ describe('Helper Sinro', () => {
     const tiempoinicio = 1000 // 1 segundo
     const duracionGolpe = 250
     const tiempo = tiempoinicio + duracionGolpe * 4 * 10 // 10 compases después
-    const sincro = new SincroCancion(
-      duracionGolpe,
+    const sincro = new SincroSesion(
       tiempoinicio,
-      4, // golpesxcompas
       0, // desde compas
     )
 
     const helper = HelperSincro.getInstance()
-    const est = helper.GetEstadoSincro(sincro, tiempo)
+    const est = helper.GetEstadoSincro(sincro, tiempo, duracionGolpe, 4)
 
     expect(est.estado).toBe('Reproduciendo')
     expect(est.compas).toBe(10)
@@ -76,15 +70,18 @@ describe('Helper Sinro', () => {
     const tiempoinicio = 1000 // 1 segundo
     const duracionGolpe = 250
     const tiempo = tiempoinicio + duracionGolpe * 4 * 10 // 10 compases después
-    const sincro = new SincroCancion(
-      duracionGolpe,
+    const sincro = new SincroSesion(
       tiempoinicio,
-      4, // golpesxcompas
       0, // desde compas
     )
 
     const helper = HelperSincro.getInstance()
-    const estadoSincro = helper.GetEstadoSincro(sincro, tiempo)
+    const estadoSincro = helper.GetEstadoSincro(
+      sincro,
+      tiempo,
+      duracionGolpe,
+      4,
+    )
     const est = helper.GetSincro(estadoSincro, tiempo, duracionGolpe, 4, 0)
 
     expect(est.timeInicio).toBe(tiempoinicio)
@@ -93,15 +90,13 @@ describe('Helper Sinro', () => {
   it('Falta un micro segundo', () => {
     const tiempoinicio = 1000 // 1 segundo
     const tiempo = tiempoinicio - 1 // Un micro segundo antes
-    const sincro = new SincroCancion(
-      100,
+    const sincro = new SincroSesion(
       tiempoinicio,
-      4, // golpesxcompas
       0, // desde compas
     )
 
     const helper = HelperSincro.getInstance()
-    const est = helper.GetEstadoSincro(sincro, tiempo)
+    const est = helper.GetEstadoSincro(sincro, tiempo, 100, 4)
 
     expect(est.estado).toBe('Iniciando')
     expect(est.compas).toBe(0)
@@ -114,15 +109,15 @@ describe('Helper Sinro', () => {
     const tiempo = tiempoinicio - 1
     const duracionGolpe = 100
     const golpesxcompas = 4
-    const sincro = new SincroCancion(
-      duracionGolpe,
-      tiempoinicio,
-      golpesxcompas,
-      0,
-    )
+    const sincro = new SincroSesion(tiempoinicio, 0)
 
     const helper = HelperSincro.getInstance()
-    const estadoSincro = helper.GetEstadoSincro(sincro, tiempo)
+    const estadoSincro = helper.GetEstadoSincro(
+      sincro,
+      tiempo,
+      duracionGolpe,
+      golpesxcompas,
+    )
     const sincroRecuperado = helper.GetSincro(
       estadoSincro,
       tiempo,
@@ -132,8 +127,6 @@ describe('Helper Sinro', () => {
     )
 
     expect(sincroRecuperado.timeInicio).toBe(tiempoinicio)
-    expect(sincroRecuperado.duracionGolpe).toBe(duracionGolpe)
-    expect(sincroRecuperado.golpesxcompas).toBe(golpesxcompas)
   })
 
   it('GetSincro - Reproduciendo en el medio del compás', () => {
@@ -142,15 +135,15 @@ describe('Helper Sinro', () => {
     const golpesxcompas = 4
     const desdeCompas = 0
     const tiempo = tiempoinicio + duracionGolpe * 4 * 3 + duracionGolpe * 2 // 3 compases + 2 golpes
-    const sincro = new SincroCancion(
-      duracionGolpe,
-      tiempoinicio,
-      golpesxcompas,
-      desdeCompas,
-    )
+    const sincro = new SincroSesion(tiempoinicio, desdeCompas)
 
     const helper = HelperSincro.getInstance()
-    const estadoSincro = helper.GetEstadoSincro(sincro, tiempo)
+    const estadoSincro = helper.GetEstadoSincro(
+      sincro,
+      tiempo,
+      duracionGolpe,
+      golpesxcompas,
+    )
     const sincroRecuperado = helper.GetSincro(
       estadoSincro,
       tiempo,
@@ -160,8 +153,24 @@ describe('Helper Sinro', () => {
     )
 
     expect(sincroRecuperado.timeInicio).toBe(tiempoinicio)
-    expect(sincroRecuperado.duracionGolpe).toBe(duracionGolpe)
-    expect(sincroRecuperado.golpesxcompas).toBe(golpesxcompas)
+  })
+  //
+
+  it('GetEstadoSincroMedia - Reproduciendo en el golpe 0', () => {
+    const duracionGolpe = 100
+    const golpesxcompas = 4
+    const tiempoinicio = 350
+
+    const helper = HelperSincro.getInstance()
+    const estadoSincro = helper.GetEstadoSincroMedia(
+      tiempoinicio,
+      duracionGolpe,
+      golpesxcompas,
+    )
+    expect(estadoSincro.compas).toBe(0)
+    expect(estadoSincro.golpeEnCompas).toBe(3)
+    expect(estadoSincro.delay).toBe(50)
+    expect(estadoSincro.estado).toBe('Reproduciendo')
   })
 
   it('GetSincro - Reproduciendo en el golpe 0', () => {
@@ -169,15 +178,15 @@ describe('Helper Sinro', () => {
     const duracionGolpe = 100
     const golpesxcompas = 4
     const tiempo = tiempoinicio
-    const sincro = new SincroCancion(
-      duracionGolpe,
-      tiempoinicio,
-      golpesxcompas,
-      0,
-    )
+    const sincro = new SincroSesion(tiempoinicio, 0)
 
     const helper = HelperSincro.getInstance()
-    const estadoSincro = helper.GetEstadoSincro(sincro, tiempo)
+    const estadoSincro = helper.GetEstadoSincro(
+      sincro,
+      tiempo,
+      duracionGolpe,
+      golpesxcompas,
+    )
     const sincroRecuperado = helper.GetSincro(
       estadoSincro,
       tiempo,
@@ -195,15 +204,15 @@ describe('Helper Sinro', () => {
     const golpesxcompas = 4
     const desdeCompas = 5
     const tiempo = tiempoinicio + duracionGolpe * 4 * 2 // 2 compases después
-    const sincro = new SincroCancion(
-      duracionGolpe,
-      tiempoinicio,
-      golpesxcompas,
-      desdeCompas,
-    )
+    const sincro = new SincroSesion(tiempoinicio, desdeCompas)
 
     const helper = HelperSincro.getInstance()
-    const estadoSincro = helper.GetEstadoSincro(sincro, tiempo)
+    const estadoSincro = helper.GetEstadoSincro(
+      sincro,
+      tiempo,
+      duracionGolpe,
+      golpesxcompas,
+    )
     const sincroRecuperado = helper.GetSincro(
       estadoSincro,
       tiempo,
@@ -222,15 +231,15 @@ describe('Helper Sinro', () => {
     const golpesxcompas = 4
     const desdeCompas = 1
     const tiempo = tiempoinicio + duracionGolpe * 4 * 15 // 15 compases después
-    const sincro = new SincroCancion(
-      duracionGolpe,
-      tiempoinicio,
-      golpesxcompas,
-      desdeCompas,
-    )
+    const sincro = new SincroSesion(tiempoinicio, desdeCompas)
 
     const helper = HelperSincro.getInstance()
-    const estadoSincro = helper.GetEstadoSincro(sincro, tiempo)
+    const estadoSincro = helper.GetEstadoSincro(
+      sincro,
+      tiempo,
+      duracionGolpe,
+      golpesxcompas,
+    )
     const sincroRecuperado = helper.GetSincro(
       estadoSincro,
       tiempo,
@@ -240,8 +249,6 @@ describe('Helper Sinro', () => {
     )
 
     expect(sincroRecuperado.timeInicio).toBe(tiempoinicio)
-    expect(sincroRecuperado.duracionGolpe).toBe(duracionGolpe)
-    expect(sincroRecuperado.golpesxcompas).toBe(golpesxcompas)
     expect(sincroRecuperado.desdeCompas).toBe(desdeCompas)
   })
 })

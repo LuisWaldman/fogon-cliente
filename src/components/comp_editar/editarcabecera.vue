@@ -5,6 +5,7 @@ import editararchivo from './editararchivo.vue'
 import editarmedias from './editarmedias.vue'
 import editartiempo from './editartiempo.vue'
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
+import SpanSilabas from './spanSilabas.vue'
 import { Tiempo } from '../../modelo/tiempo'
 const tiempo = new Tiempo()
 import { ref } from 'vue'
@@ -12,6 +13,9 @@ import { OrigenCancion } from '../../modelo/cancion/origencancion'
 import { useAppStore } from '../../stores/appStore'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { CancionManager } from '../../modelo/cancion/CancionManager'
+import { HelperJSON } from '../../modelo/cancion/HelperJSON'
+import { HelperDisplayEditTexto } from '../../modelo/displayEditTexto/helperDisplayEditTexto'
+import type { textoResumen } from '../../modelo/displayEditTexto/textoResumen'
 const helper = HelperDisplayAcordesLatino.getInstance()
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
@@ -35,12 +39,9 @@ const props = defineProps<{
 }>()
 
 const viendo = ref('' as string)
-const emit = defineEmits(['editarPentagramas'])
+const emit = defineEmits(['viendo'])
 function clickCambiar(nviendo: string) {
-  if (nviendo === 'pentagramas') {
-    emit('editarPentagramas')
-    return
-  }
+  emit('viendo', nviendo)
   viendo.value = nviendo
 }
 
@@ -52,6 +53,14 @@ function clickCerrar(modificado: boolean) {
   }
 }
 helper.latino = appStore.perfil.CifradoLatino
+
+const helperTexto = new HelperDisplayEditTexto()
+const refTexto = ref<textoResumen>(helperTexto.getResumen(props.cancion.letras))
+function Actualizar() {
+  refTexto.value = helperTexto.getResumen(props.cancion.letras)
+}
+
+defineExpose({ Actualizar })
 
 function guardarCambios(origenDestino: string) {
   CancionManager.getInstance()
@@ -67,12 +76,29 @@ function guardarCambios(origenDestino: string) {
       console.error('Error al guardar los cambios:', error)
     })
 }
+
+function DescargarJSON() {
+  const cancionJSON = HelperJSON.CancionToJSON(props.cancion)
+  const blob = new Blob([cancionJSON], { type: 'application/json' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  const nombreArchivo =
+    `${appStore.editandocancion.archivo}.json`.toLocaleLowerCase()
+  a.download = nombreArchivo
+  a.click()
+  URL.revokeObjectURL(url)
+}
 </script>
 
 <template>
   <div class="navbarFogon">
     <div style="display: flex; flex-wrap: wrap">
-      <div class="divctrlEdit">
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'archivo' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('archivo')"
+      >
         <div style="display: flex">
           <emoticonOrigen :origen="origen.origenUrl" />
           <label>{{ arreglartexto(cancion.banda) }}</label>
@@ -80,64 +106,99 @@ function guardarCambios(origenDestino: string) {
           <label v-else-if="cancion.calidad == 0">⭐⚫⚫⚫⚫</label>
           <label v-else-if="cancion.calidad == 1">⭐⭐⚫⚫⚫</label>
           <label v-else-if="cancion.calidad == 2">⭐⭐⭐⚫⚫</label>
-
-          <label @click="clickCambiar('archivo')" @cerrar="clickCerrar"
-            >🔄</label
-          >
         </div>
-        <div class="tituloCancion">
+        <div class="tituloEdit titulocancion">
           {{ arreglartexto(cancion.cancion) }}
         </div>
       </div>
-      <div class="divctrlEdit">
-        <label
-          >BPM: {{ cancion.bpm }}
-          <label @click="clickCambiar('tiempo')" @cerrar="clickCerrar"
-            >🔄</label
-          ></label
-        >
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'escala' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('escala')"
+      >
+        <label>Escala</label>
         <div>
-          <label class="tituloCancion">{{
-            tiempo.formatSegundos(cancion.duracionCancion)
-          }}</label>
-        </div>
-      </div>
-      <div class="divctrlEdit">
-        <label>Escala</label
-        ><label @click="clickCambiar('escala')" @cerrar="clickCerrar">🔄</label>
-        <div>
-          <label class="tituloCancion" v-if="cancion.escala">{{
+          <label class="tituloEdit" v-if="cancion.escala">{{
             helper.GetAcorde(cancion.escala)
           }}</label>
         </div>
       </div>
-      <div class="divctrlEdit">
-        <label>📺 Video</label><label @click="clickCambiar('medias')">🔄</label>
+
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'tiempo' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('tiempo')"
+      >
+        <label>BPM: {{ cancion.bpm }} </label>
         <div>
-          <label class="tituloCancion" v-if="cancion.medias.length > 0"
-            >📺</label
-          >
-          <label class="tituloCancion" v-else>No</label>
+          <label class="tituloEdit">{{
+            tiempo.formatSegundos(cancion.duracionCancion)
+          }}</label>
         </div>
       </div>
-      <div class="divctrlEdit">
-        <label>Partituras</label
-        ><label @click="clickCambiar('pentagramas')">🔄</label>
+
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'editartexto' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('editartexto')"
+      >
+        <label>🔤 Letra</label>
         <div>
-          <label class="tituloCancion">
+          <div>Versos: {{ refTexto.versos }}</div>
+          <div>Silabas: <SpanSilabas :silabas="refTexto.silabas" /></div>
+          <div>Rimas: {{ refTexto.rimas }}</div>
+        </div>
+      </div>
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'acordes' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('acordes')"
+      >
+        <label>🎸 Acordes</label>
+        <div>
+          <div>Acordes: 4</div>
+          <div>Partes: 2</div>
+          <div>Funciones: I VI V</div>
+        </div>
+      </div>
+
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'partituras' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('partituras')"
+      >
+        <label>Partituras</label>
+        <div>
+          <label class="tituloEdit">
             🎼 {{ cancion.pentagramas.length }}
           </label>
         </div>
       </div>
 
+      <div
+        class="divctrlEdit"
+        :class="viendo === 'medias' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('medias')"
+      >
+        <label>📺 Video</label>
+        <div>
+          <label class="tituloEdit" v-if="cancion.medias.length > 0">📺</label>
+          <label class="tituloEdit" v-else>No</label>
+        </div>
+      </div>
+
       <div class="divctrlEdit">
-        <button @click="guardarCambios('local')">💾 Guardar</button>
-        <button
-          v-if="appStore.estadosApp.estadoLogin === 'logueado'"
-          @click="guardarCambios('server')"
-        >
-          o en 🗄️
-        </button>
+        <label>Guardar</label>
+        <div>
+          <button @click="guardarCambios('local')">💾</button>
+          <button
+            v-if="appStore.estadosApp.estadoLogin === 'logueado'"
+            @click="guardarCambios('server')"
+          >
+            🗄️
+          </button>
+          <button @click="DescargarJSON" class="btnDescarga">⬇️</button>
+        </div>
       </div>
     </div>
 
@@ -438,10 +499,7 @@ function guardarCambios(origenDestino: string) {
   font-size: 30px;
   padding: 10px;
 }
-.conectado {
-  border-color: #f5da09;
-}
-.tituloCancion {
+.tituloEdit {
   font-size: xx-large;
   font-weight: bold;
 }
@@ -458,6 +516,16 @@ function guardarCambios(origenDestino: string) {
   font-size: large;
 }
 
+.edintandoCtrl {
+  border: 2px solid #9b1616;
+  background: linear-gradient(135deg, #000000 0%, #974343 100%);
+}
+.titulocancion {
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 768px) {
   .divctrlEdit {
     left: 0px;
@@ -467,7 +535,7 @@ function guardarCambios(origenDestino: string) {
     font-size: small;
     font-size: small;
   }
-  .tituloCancion {
+  .tituloEdit {
     font-size: medium;
   }
 }
