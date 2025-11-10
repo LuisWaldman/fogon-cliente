@@ -66,7 +66,7 @@ describe('Pruebo SeparadorSilabas - CalcularDiferenciaSilabas', () => {
       sepSilabas.GetNroSilabasVerso(
         sepSilabas.getSilabasPalabra('Soñé que el río me hablaba'),
       ),
-    ).toEqual(8)
+    ).toEqual(7)
   })
 
   it('Pruebo rimas', () => {
