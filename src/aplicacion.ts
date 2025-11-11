@@ -222,6 +222,7 @@ export default class Aplicacion {
         .listasServerManager?.GetListas()
         .then((listas) => {
           appStore.listasEnServer = listas
+          console.log('Listas en server cargadas:', listas)
         })
     })
     this.cliente.setLoginFailedHandler((error: string) => {
