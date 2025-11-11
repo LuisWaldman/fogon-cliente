@@ -10,6 +10,7 @@ const tema = ref('')
 const banda = ref('')
 const conIntro = ref(false)
 const conOutro = ref(false)
+const conPuente = ref(false)
 
 
 
@@ -18,6 +19,16 @@ function nuevaCancion() {
   console.log('Nueva canción creada')
   emit('cerrar')
 }
+function chgIntro() {
+  conIntro.value = !conIntro.value
+}
+function chgOutro() {
+  conOutro.value = !conOutro.value
+}
+function chgPuente() {  
+  conPuente.value = !conPuente.value
+}
+
 </script>
 
 <template>
@@ -119,26 +130,21 @@ function nuevaCancion() {
       >
         I-II-IV-V
       </div>
-      <div
-        class="clickeableVista"
-        
-      >
-        Instrucciones
-      </div>
-      <div
-        class="clickeableVista"
-        
-        
-      >
-        Cuadrado
-      </div></div>
+      
+    </div>
     </div>
 
     <div class="config-row">
       <span>Con partes</span>
       <div class="divFunciones">
-      <div class="clickeableVista" :class="{seleccionada: conIntro }">
+      <div class="clickeableVista" :class="{seleccionada: conIntro }" @click="chgIntro()">
         INTRO
+      </div>
+      <div class="clickeableVista" :class="{seleccionada: conOutro }" @click="chgOutro()">
+        OUTRO
+      </div>
+      <div class="clickeableVista" :class="{seleccionada: conPuente }" @click="chgPuente()">
+        PUENTE
       </div>
     </div>
     </div> 
