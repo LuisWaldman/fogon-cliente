@@ -9,7 +9,9 @@ import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
 import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
+import nuevaCancion from '../components/comp_home/nuevaCancion.vue'
 
+const viendoNueva = ref(false)
 const listasManager: ListasDBManager = new ListasDBManager()
 
 const vistaControl: vistaHome = new vistaHome()
@@ -21,6 +23,15 @@ const viendoLista = ref<string>('')
 const cargandoCanciones = ref<boolean>(true)
 const cargandoListas = ref<boolean>(true)
 const viendoTexto = ref('')
+
+function AbrirNuevo() {
+  viendoNueva.value = true
+}
+
+
+function CerrarNuevo() {
+  viendoNueva.value = false
+}
 
 function actualizarVista() {
   viendo.value = vistaControl.viendo
@@ -273,6 +284,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
 </script>
 
 <template>
+  <nuevaCancion v-if="viendoNueva" @cerrar="CerrarNuevo"></nuevaCancion>
   <div style="width: 100%">
     <div class="config-menu">
       <div class="config-menu-group">
@@ -395,14 +407,14 @@ function AgregarLista(index: number, listaseleccionada: string) {
             </option>
           </select>
           <div style="margin-left: auto">
-            <button @click="addingLista = true" v-if="viendo === 'canciones'">
-              ➕<span class="button-text"> Cancion</span>
+            <button @click="AbrirNuevo" v-if="viendo === 'canciones'">
+              ➕<span class="button-text">Nueva Cancion</span>
             </button>
             <button @click="addingLista = true" v-if="viendo === 'canciones'">
               ⬆️<span class="button-text"> SUBIR</span>
             </button>
             <button @click="addingLista = true" v-if="viendo === 'listas'">
-              ➕<span class="button-text"> LISTA</span>
+              ➕<span class="button-text">Nueva Lista</span>
             </button>
             <button @click="renombrarLista" v-if="viendo === 'listas'">
               🔄<span class="button-text"> Renombrar</span>
