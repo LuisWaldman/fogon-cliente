@@ -98,5 +98,7 @@ export class Cancion {
     this.compasCantidad = compasCantidad ?? 4
     this.compasUnidad = compasUnidad ?? 4
     this.escala = escala ?? ''
+    this.archivo =
+      this.banda.replace(/ /g, '_') + '-' + this.cancion.replace(/ /g, '_')
   }
 }

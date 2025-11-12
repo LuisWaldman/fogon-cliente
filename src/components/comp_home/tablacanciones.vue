@@ -87,7 +87,12 @@ function Borrar(cancion: ItemIndiceCancion) {
         </template>
         <template v-if="viendoFiltroTabla">
           <th colspan="4">
-            <input v-model="filtroTexto" type="text" placeholder="Filtrar..." style="width: 100%" />
+            <input
+              v-model="filtroTexto"
+              type="text"
+              placeholder="Filtrar..."
+              style="width: 100%"
+            />
           </th>
         </template>
         <th>
@@ -117,7 +122,7 @@ function Borrar(cancion: ItemIndiceCancion) {
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
             }}
-            
+
             <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>
           </td>
 
@@ -137,7 +142,10 @@ function Borrar(cancion: ItemIndiceCancion) {
           </td>
           <td></td>
         </tr>
-        <tr v-if="viendoDetalle === `${cancion.banda}-${cancion.cancion}`" data-detail>
+        <tr
+          v-if="viendoDetalle === `${cancion.banda}-${cancion.cancion}`"
+          data-detail
+        >
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
               <div class="contDetalles">

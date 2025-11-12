@@ -28,7 +28,6 @@ function AbrirNuevo() {
   viendoNueva.value = true
 }
 
-
 function CerrarNuevo() {
   viendoNueva.value = false
 }
