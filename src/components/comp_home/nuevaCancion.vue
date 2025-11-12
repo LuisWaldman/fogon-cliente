@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
-import { Configuracion, VistaTocar } from '../../modelo/configuracion'
-import { Pantalla } from '../../modelo/pantalla'
+import { onMounted, ref } from 'vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { useAppStore } from '../../stores/appStore'
 import { Cancion } from '../../modelo/cancion/cancion'
@@ -102,7 +100,7 @@ const escalas = [
     value: `${nota}m`,
     label: `${helper.GetAcorde(nota)} Menor`,
   })),
-].sort((a, b) => a.label.localeCompare(b.label))
+].sort((a, b) => a.value.localeCompare(b.value))
 
 let router: Router | null = null
 onMounted(() => {

@@ -10,6 +10,7 @@ import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
 import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
 import nuevaCancion from '../components/comp_home/nuevaCancion.vue'
+import subirCancion from '../components/comp_home/subirCancion.vue'
 
 const viendoNueva = ref(false)
 const listasManager: ListasDBManager = new ListasDBManager()
@@ -409,9 +410,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
             <button @click="AbrirNuevo" v-if="viendo === 'canciones'">
               ➕<span class="button-text">Nueva Cancion</span>
             </button>
-            <button @click="addingLista = true" v-if="viendo === 'canciones'">
-              ⬆️<span class="button-text"> SUBIR</span>
-            </button>
+            <subirCancion v-if="viendo === 'canciones'"></subirCancion>
             <button @click="addingLista = true" v-if="viendo === 'listas'">
               ➕<span class="button-text">Nueva Lista</span>
             </button>
