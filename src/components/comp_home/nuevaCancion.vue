@@ -118,7 +118,6 @@ function GetAcordesParte(acordesEscala: string[], funcion: string): string[] {
     } else {
       acordesParte.push('?')
     }
-
   }
   return acordesParte
 }
@@ -131,13 +130,12 @@ function nuevaCancion() {
   const ordenPartes: number[] = []
   if (funcionesSeleccionadas.value.size === 0) {
     partes.push(new Parte('vacio', ['?', '?', '?', '?']))
-  } else 
-  {
+  } else {
     const musica = new MusicaHelper()
     const acordes = musica.GetAcordesdeescala(refescala.value)
     console.log(acordes)
     let parte = 0
-    
+
     for (var funcion of funcionesSeleccionadas.value) {
       partes.push(new Parte(funcion, GetAcordesParte(acordes, funcion)))
       ordenPartes.push(parte)
@@ -170,7 +168,6 @@ function nuevaCancion() {
     aagregar--
     partecont++
     partecont = partecont % partes.length
-
   }
   const bpm: number = refBPM.value
   const calidad: number = 0

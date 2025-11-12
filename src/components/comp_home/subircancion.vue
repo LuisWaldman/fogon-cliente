@@ -28,7 +28,6 @@ function manejarSeleccionArchivo(event: Event) {
     return
   }
 
-
   const reader = new FileReader()
   reader.onload = (e) => {
     try {
@@ -54,7 +53,7 @@ function manejarSeleccionArchivo(event: Event) {
 
 <template>
   <button @click="abrirDialogoArchivo">
-              ⬆️<span class="button-text"> SUBIR</span>
+    ⬆️<span class="button-text"> SUBIR</span>
   </button>
 
   <input
