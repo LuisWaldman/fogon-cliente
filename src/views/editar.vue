@@ -15,7 +15,6 @@ import { vistaEditar } from '../modelo/helperVistas/editar/vistaEditar'
 import { onMounted, ref, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import type { VistaTocar } from '../modelo/configuracion'
-import { vi } from 'vitest'
 const viendo: Ref<string> = ref('inicio')
 
 const vistaControl: vistaEditar = new vistaEditar()
@@ -118,14 +117,19 @@ function cambioModo(index: number) {
       ></TocarPentagrama>
 
       <TocarLetra
-        v-if="(viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') && vista.muestra == 'karaoke'"
+        v-if="
+          (viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') &&
+          vista.muestra == 'karaoke'
+        "
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
       ></TocarLetra>
       <TocarLetraAcorde
         v-if="
           (viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') &&
-          (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
+          (vista.muestra == 'letrayacordes' ||
+            vista.muestra == 'acordes' ||
+            vista.muestra == 'partitura')
         "
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
@@ -186,10 +190,11 @@ function cambioModo(index: number) {
         🔄
       </div>
       <Secuencia
-      :cancion="appStore.editandocancion"
+        :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         v-if="viendo !== 'acordes'"
-        @cambioCompas="cambiarCompas"></Secuencia>
+        @cambioCompas="cambiarCompas"
+      ></Secuencia>
       <editSecuencia
         ref="ctrlSecuencia"
         :cancion="appStore.editandocancion"
@@ -197,7 +202,6 @@ function cambioModo(index: number) {
         @cambioCompas="cambiarCompas"
         v-if="viendo === 'acordes'"
       ></editSecuencia>
-
     </div>
   </div>
 </template>
