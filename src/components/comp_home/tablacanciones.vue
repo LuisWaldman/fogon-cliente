@@ -69,10 +69,12 @@ function VerDetalle(cancion: ItemIndiceCancion) {
 
 const tiempo = new Tiempo()
 function Reproducir(cancion: ItemIndiceCancion) {
-  emit('tocar', cancion.GetOrigen())
+  const { origenUrl, fileName, owner } = cancion
+  emit('tocar', { origenUrl, fileName, usuario: owner })
 }
 function Borrar(cancion: ItemIndiceCancion) {
-  emit('borrar', cancion.GetOrigen())
+  const { origenUrl, fileName, owner } = cancion
+  emit('borrar', { origenUrl, fileName, usuario: owner })
 }
 </script>
 
