@@ -115,7 +115,11 @@ function viendoVideo(): boolean {
       return false
     }
   }
-  return vista.value.reproduce === 'video'
+  return (
+    vista.value.reproduce === 'video' ||
+    (vista.value.reproduce === 'midi' &&
+      appStore.cancion.pentagramas.length > 0)
+  )
 }
 
 function viendoSecundaria(): boolean {

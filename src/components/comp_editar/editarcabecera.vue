@@ -41,6 +41,11 @@ const props = defineProps<{
 const viendo = ref('' as string)
 const emit = defineEmits(['viendo'])
 function clickCambiar(nviendo: string) {
+  if (nviendo === viendo.value) {
+    viendo.value = 'inicio'
+    emit('viendo', 'inicio')
+    return
+  }
   emit('viendo', nviendo)
   viendo.value = nviendo
 }
@@ -164,8 +169,8 @@ function DescargarJSON() {
 
       <div
         class="divctrlEdit"
-        :class="viendo === 'partituras' ? 'edintandoCtrl' : ''"
-        @click="clickCambiar('partituras')"
+        :class="viendo === 'pentagramas' ? 'edintandoCtrl' : ''"
+        @click="clickCambiar('pentagramas')"
       >
         <label>Partituras</label>
         <div>
