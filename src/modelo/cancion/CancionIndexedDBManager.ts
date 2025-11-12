@@ -47,21 +47,10 @@ export class CancionIndexedDBManager {
     return new Promise<void>((resolve, reject) => {
       const transaction = db.transaction('indice', 'readwrite')
       const store = transaction.objectStore('indice')
-
-      // Crear objeto con 'archivo' como clave (debe coincidir con keyPath)
-      const objetoAGuardar = {
-        ...index,
-        archivo: index.fileName, // El keyPath es 'archivo', así que mapeamos fileName a archivo
-      }
-
       // Directamente sobrescribir el registro
-      const putRequest = store.put(objetoAGuardar)
+      const putRequest = store.put(index)
 
       putRequest.onsuccess = () => {
-        console.log(
-          'Índice de canción actualizado en IndexedDB:',
-          objetoAGuardar,
-        )
         resolve()
       }
 
