@@ -10,7 +10,7 @@ import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
 import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
 import nuevaCancion from '../components/comp_home/nuevaCancion.vue'
-import subirCancion from '../components/comp_home/subirCancion.vue'
+import subirCancion from '../components/comp_home/subircancion.vue'
 
 const viendoNueva = ref(false)
 const listasManager: ListasDBManager = new ListasDBManager()
