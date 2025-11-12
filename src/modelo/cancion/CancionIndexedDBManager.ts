@@ -47,12 +47,10 @@ export class CancionIndexedDBManager {
     return new Promise<void>((resolve, reject) => {
       const transaction = db.transaction('indice', 'readwrite')
       const store = transaction.objectStore('indice')
-
       // Directamente sobrescribir el registro
       const putRequest = store.put(index)
 
       putRequest.onsuccess = () => {
-        console.log('Índice de canción actualizado en IndexedDB:', index)
         resolve()
       }
 

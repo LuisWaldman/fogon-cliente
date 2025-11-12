@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
@@ -44,21 +44,37 @@ function arreglartexto(texto: string): string {
 }
 
 const viendoFiltroTabla = ref(false)
-const viendoDetalle = ref<number | null>(null)
-function VerDetalle(index: number) {
-  if (viendoDetalle.value === index) {
+const filtroTexto = ref<string>('')
+const viendoDetalle = ref<string | null>(null)
+
+const cancionesFiltradas = computed(() => {
+  if (!viendoFiltroTabla.value) return props.canciones
+  if (!filtroTexto.value) return props.canciones
+  const texto = filtroTexto.value.toLowerCase()
+  return props.canciones.filter((cancion) => {
+    const banda = (cancion.banda || '').toLowerCase()
+    const cancionNombre = (cancion.cancion || '').toLowerCase()
+    return banda.includes(texto) || cancionNombre.includes(texto)
+  })
+})
+
+function VerDetalle(cancion: ItemIndiceCancion) {
+  const id = `${cancion.banda}-${cancion.cancion}`
+  if (viendoDetalle.value === id) {
     viendoDetalle.value = null
   } else {
-    viendoDetalle.value = index
+    viendoDetalle.value = id
   }
 }
 
 const tiempo = new Tiempo()
-function Reproducir(index: number) {
-  emit('tocar', props.canciones[index].GetOrigen())
+function Reproducir(cancion: ItemIndiceCancion) {
+  const { origenUrl, fileName, owner } = cancion
+  emit('tocar', { origenUrl, fileName, usuario: owner })
 }
-function Borrar(index: number) {
-  emit('borrar', props.canciones[index].GetOrigen())
+function Borrar(cancion: ItemIndiceCancion) {
+  const { origenUrl, fileName, owner } = cancion
+  emit('borrar', { origenUrl, fileName, usuario: owner })
 }
 </script>
 
@@ -73,7 +89,12 @@ function Borrar(index: number) {
         </template>
         <template v-if="viendoFiltroTabla">
           <th colspan="4">
-            <input type="text" placeholder="Filtrar..." style="width: 100%" />
+            <input
+              v-model="filtroTexto"
+              type="text"
+              placeholder="Filtrar..."
+              style="width: 100%"
+            />
           </th>
         </template>
         <th>
@@ -97,12 +118,13 @@ function Borrar(index: number) {
       </tr>
     </tbody>
     <tbody v-if="canciones.length > 0 && props.cargando == false">
-      <template v-for="(cancion, index) in canciones" :key="index">
-        <tr @click="VerDetalle(index)">
+      <template v-for="(cancion, index) in cancionesFiltradas" :key="index">
+        <tr @click="VerDetalle(cancion)">
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
             }}
+
             <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>
           </td>
 
@@ -122,7 +144,10 @@ function Borrar(index: number) {
           </td>
           <td></td>
         </tr>
-        <tr v-if="viendoDetalle === index" data-detail>
+        <tr
+          v-if="viendoDetalle === `${cancion.banda}-${cancion.cancion}`"
+          data-detail
+        >
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
               <div class="contDetalles">
@@ -174,9 +199,9 @@ function Borrar(index: number) {
               </div>
 
               <div class="botoneraDetalle">
-                <button @click="Reproducir(index)">▶ Tocar</button>
+                <button @click="Reproducir(cancion)">▶ Tocar</button>
                 <button @click="agregandoLista = true">🗒️ Lista</button>
-                <button @click="Borrar(index)" v-if="verBorrar">
+                <button @click="Borrar(cancion)" v-if="verBorrar">
                   🗑 Borrar
                 </button>
               </div>

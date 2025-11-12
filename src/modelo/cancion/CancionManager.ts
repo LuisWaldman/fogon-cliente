@@ -36,7 +36,7 @@ export class CancionManager {
 
         // Crear el objectStore para el índice si no existe
         if (!db.objectStoreNames.contains('indice')) {
-          db.createObjectStore('indice', { keyPath: 'archivo' })
+          db.createObjectStore('indice', { keyPath: 'fileName' })
         }
       }
 
