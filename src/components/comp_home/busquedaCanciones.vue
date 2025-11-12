@@ -76,7 +76,7 @@ const escalas = [
   })),
 ].sort((a, b) => a.value.localeCompare(b.value))
 
-const filtroEscalaNota = ref(['A'])
+const filtroEscalaNota = ref(['C'])
 const filtroTempoBPM = ref(['0_60'])
 const filtroPartituraSeleccionada = ref([''])
 const filtroCantAcordesSeleccionada = ref([''])
@@ -84,7 +84,7 @@ const filtroDuracionSeleccionada = ref(['todas'])
 const filtroCalidadSeleccionada = ref(['0', '1', '2', '3'])
 const filtroGrupoSeleccionado = ref([])
 const filtroPartesSeleccionada = ref([''])
-
+const filtroVideo = ref('video')
 // Opciones para los dropdowns
 const opcionesTempo = [
   { value: '0_60', label: 'Largo (Menos de 60 BPM)' },
@@ -182,7 +182,7 @@ function buscarCanciones() {
   }
 
   if (cfiltroVideo.value) {
-    filtros.push(new FiltroVideo())
+    filtros.push(new FiltroVideo(filtroVideo.value))
   }
   // Agregar filtro de partes si está activo
   if (filtroPartes.value) {
@@ -381,6 +381,12 @@ function VerFiltros() {
       <div class="filtro" :class="{ seleccionado: cfiltroVideo }">
         <div class="filtro-header" @click="cfiltroVideo = !cfiltroVideo">
           Video
+        </div>
+        <div>
+          <select class="selectVideo" v-if="cfiltroVideo" v-model="filtroVideo">
+            <option value="video">con video</option>
+            <option value="sinvideo">sin video</option>
+          </select>
         </div>
       </div>
 
@@ -589,5 +595,14 @@ function VerFiltros() {
 
 .checkbox-item input[type='checkbox'] {
   margin-right: 8px;
+}
+.selectVideo {
+  margin-top: 8px;
+  width: 100%;
+  padding: 4px;
+  font-size: normal;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
 }
 </style>
