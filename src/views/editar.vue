@@ -7,13 +7,15 @@ import EditarLetraAcorde from '../components/comp_editar/editarLetraYAcordes.vue
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
-import Secuencia from '../components/comp_editar/editSecuencia.vue'
+import editSecuencia from '../components/comp_editar/editSecuencia.vue'
+import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 import { vistaEditar } from '../modelo/helperVistas/editar/vistaEditar'
 import { onMounted, ref, type Ref } from 'vue'
 import { Pantalla } from '../modelo/pantalla'
 import type { VistaTocar } from '../modelo/configuracion'
+import { vi } from 'vitest'
 const viendo: Ref<string> = ref('inicio')
 
 const vistaControl: vistaEditar = new vistaEditar()
@@ -116,13 +118,13 @@ function cambioModo(index: number) {
       ></TocarPentagrama>
 
       <TocarLetra
-        v-if="viendo == 'inicio' && vista.muestra == 'karaoke'"
+        v-if="(viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') && vista.muestra == 'karaoke'"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
       ></TocarLetra>
       <TocarLetraAcorde
         v-if="
-          viendo == 'inicio' &&
+          (viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') &&
           (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
         "
         :cancion="appStore.editandocancion"
@@ -184,12 +186,18 @@ function cambioModo(index: number) {
         🔄
       </div>
       <Secuencia
+      :cancion="appStore.editandocancion"
+        :compas="editandoCompas"
+        v-if="viendo !== 'acordes'"
+        @cambioCompas="cambiarCompas"></Secuencia>
+      <editSecuencia
         ref="ctrlSecuencia"
         :cancion="appStore.editandocancion"
         :compas="editandoCompas"
         @cambioCompas="cambiarCompas"
-        v-if="viendo !== 'editconsolaacordes' && viendo !== 'editaracordes'"
-      ></Secuencia>
+        v-if="viendo === 'acordes'"
+      ></editSecuencia>
+
     </div>
   </div>
 </template>
