@@ -143,7 +143,6 @@ function Solicitar() {
 function styleDivAfinador() {
   return {
     height: alto + 'px',
-    width: ancho + 'px',
   }
 }
 
@@ -298,7 +297,7 @@ const otrasAfinaciones = [
     </div>
 
     <div v-if="viendoAfindado === 'simple'">
-      <div style="display: flex">
+      <div style="display: flex; flex-wrap: wrap;" >
         <div class="contDatos">
           <div>FRECUENCIA</div>
           <div
@@ -389,27 +388,6 @@ const otrasAfinaciones = [
     </div>
     <div style="display: flex" v-if="viendoAfindado === 'circulo'">
       <div>
-        <div>FRECUENCIA</div>
-        <div
-          style="
-            font-size: xx-large;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-          "
-        >
-          {{ formatFrequency(frequency) }} Hz
-        </div>
-      </div>
-      <frecuen
-        :mostrandoNota="mostrandoNota"
-        :notasSonido="notasSonido"
-        :frecuencia="frequency"
-        :ancho="ancho"
-      ></frecuen>
-    </div>
-    <div style="display: flex" v-if="viendoAfindado === 'circulo'">
-      <div>
         <div>
           <input
             type="checkbox"
@@ -466,7 +444,8 @@ const otrasAfinaciones = [
 }
 .divAfinador {
   position: relative;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .quinta {

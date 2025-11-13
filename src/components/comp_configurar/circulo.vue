@@ -16,7 +16,7 @@ const props = defineProps<{
 }>()
 
 const maxRadio = 500
-const minRadio = 100
+const minRadio = 70
 const centroLeft = 350
 const centroTop = 230
 const viendoFrecuencia = ref<NotaSonido>({ nota: '', frecuencia: 0, octava: 0 })

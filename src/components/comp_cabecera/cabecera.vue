@@ -341,6 +341,7 @@ function clickEditar() {
 }
 .dropdown-item {
   z-index: 1000;
+  font-size: xx-large;
 }
 
 .cancionNombre {
