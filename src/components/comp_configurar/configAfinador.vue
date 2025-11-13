@@ -152,6 +152,8 @@ import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import { HelperSonidos } from '../../modelo/sonido/helperSonido'
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
 import { useAppStore } from '../../stores/appStore'
+import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
+import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 
 onMounted(() => {
   Solicitar()
@@ -165,6 +167,54 @@ onUnmounted(() => {
 })
 
 const mostrandoNota = ref<number>(0)
+
+// ============ LÓGICA DE MIDI ============
+const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
+const instrumento = ref('pad_1_new_age.json')
+const midiCargado = ref(false)
+const CargandoMidi = ref(false)
+let midiPlayer = new MidiPlayer()
+
+function iniciarMidi() {
+  console.log('Cargar MIDI')
+  midiPlayer = new MidiPlayer()
+  fetch('InstrumentosMIDI/' + instrumento.value)
+    .then((response) => response.json())
+    .then((samples) => {
+      midiPlayer.setInstrument(samples)
+      midiPlayer.initialize()
+      midiCargado.value = true
+      CargandoMidi.value = false
+    })
+    .catch((error) => {
+      console.error('Error loading samples:', error)
+      useAppStore().errores.push(new Error(`Error loading samples: ${error}`))
+      CargandoMidi.value = false
+    })
+  console.log('MIDI Inicializado')
+}
+
+function ActualizarInstrumentoMidi() {
+  midiCargado.value = false
+  CargandoMidi.value = true
+  iniciarMidi()
+  console.log(instrumento.value)
+}
+
+function TocarNota(nota: string) {
+  if (!midiCargado.value) {
+    return
+  }
+  midiPlayer.tocarNota(nota)
+}
+
+function SoltarNota(nota: string) {
+  if (!midiCargado.value) {
+    return
+  }
+  midiPlayer.soltarNota(nota)
+}
+// ============ FIN LÓGICA DE MIDI ============
 
 function formatFrequency(freq: number, totalDigits = 4, decimalPlaces = 2) {
   if (freq < 0) {
@@ -361,7 +411,7 @@ const otrasAfinaciones = [
       <div
         v-for="(nota, index) in mostrandoNotas"
         :key="index"
-        style="display: flex; height: 80px; border: 1px solid;|"
+        style="display: flex; height: 80px; border: 1px solid;"
       >
         <div>
           <div
@@ -405,14 +455,37 @@ const otrasAfinaciones = [
             </option>
           </select>
         </div>
+
+        <div style="margin-top: 10px;">
+          <select
+            v-if="midiCargado"
+            v-model="instrumento"
+            @change="ActualizarInstrumentoMidi"
+          >
+            <option
+              v-for="(inst, index) in refInstrumentos"
+              :key="index"
+              :value="inst.archivo"
+            >
+              {{ inst.nombre }}
+            </option>
+          </select>
+
+          <span @click="iniciarMidi" v-if="!midiCargado && !CargandoMidi" style="cursor: pointer; color: blue; text-decoration: underline;">[Tocar]</span>
+          <span v-if="CargandoMidi">Cargando instrumento...</span>
+        </div>
       </div>
-      <circulo
-        :notasSonido="notasSonido"
-        :clasenotasSonido="clsNotas"
-        :otrasNotas="otrasFrecuencias"
-        :frecuencia="frequency"
-      ></circulo>
-    </div>
+
+      <div>
+        <circulo
+          :notasSonido="notasSonido"
+          :clasenotasSonido="clsNotas"
+          :otrasNotas="otrasFrecuencias"
+          :frecuencia="frequency"
+          :tocarNota="TocarNota"
+          :soltarNota="SoltarNota"
+        ></circulo>
+      </div></div>
   </div>
 </template>
 
