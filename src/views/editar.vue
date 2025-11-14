@@ -7,7 +7,6 @@ import EditarLetraAcorde from '../components/comp_editar/editarLetraYAcordes.vue
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
-import editSecuencia from '../components/comp_editar/editSecuencia.vue'
 import Secuencia from '../components/comp_tocar/Secuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
@@ -49,14 +48,14 @@ function GetStylePantallaEdit() {
 }
 
 function estiloVistaPrincipal() {
-  if (viendo.value == 'editartexto') {
+  if (viendo.value == 'editartexto'  || viendo.value == 'acordes') {
     return `width: 100%; height: 100%`
   }
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
 }
 
 function estiloVistaSecundaria() {
-  if (viendo.value == 'editartexto') {
+  if (viendo.value == 'editartexto' || viendo.value == 'acordes') {
     return `width: 0%; height: 100%`
   }
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
@@ -195,13 +194,6 @@ function cambioModo(index: number) {
         v-if="viendo !== 'acordes'"
         @cambioCompas="cambiarCompas"
       ></Secuencia>
-      <editSecuencia
-        ref="ctrlSecuencia"
-        :cancion="appStore.editandocancion"
-        :compas="editandoCompas"
-        @cambioCompas="cambiarCompas"
-        v-if="viendo === 'acordes'"
-      ></editSecuencia>
     </div>
   </div>
 </template>
