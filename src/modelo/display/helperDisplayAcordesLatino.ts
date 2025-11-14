@@ -24,6 +24,11 @@ export class HelperDisplayAcordesLatino {
   }
 
   /**
+   * Mapa inverso para convertir de notación latina a americana.
+   */
+  private acordesMapInverso: Map<string, string> = new Map()
+
+  /**
    * Inicializa el mapa con acordes básicos.
    */
   private inicializarAcordesBasicos(): void {
@@ -60,6 +65,7 @@ export class HelperDisplayAcordesLatino {
     // Mapear notas básicas
     for (let i = 0; i < notasAmericanas.length; i++) {
       this.acordesMap.set(notasAmericanas[i], notasLatinas[i])
+      this.acordesMapInverso.set(notasLatinas[i], notasAmericanas[i])
     }
 
     // Equivalencias de bemoles// Equivalencias de bemoles en notación latina
@@ -68,6 +74,13 @@ export class HelperDisplayAcordesLatino {
     this.acordesMap.set('Gb', 'Solb')
     this.acordesMap.set('Ab', 'Lab')
     this.acordesMap.set('Bb', 'Sib')
+
+    // Mapa inverso de bemoles
+    this.acordesMapInverso.set('Reb', 'Db')
+    this.acordesMapInverso.set('Mib', 'Eb')
+    this.acordesMapInverso.set('Solb', 'Gb')
+    this.acordesMapInverso.set('Lab', 'Ab')
+    this.acordesMapInverso.set('Sib', 'Bb')
   }
 
   /**
@@ -103,7 +116,42 @@ export class HelperDisplayAcordesLatino {
   }
 
   /**
-   * Extrae la nota base de un acorde.
+   * Convierte uno o varios acordes de notación latina a cifrado americano (inversa de GetAcorde).
+   * @param acordeLatino Acorde(s) en notación latina (ej. "Do", "Lam", "Sol7", "Re#m7", "Do Re")
+   * @returns Acorde(s) en cifrado americano
+   */
+  public GetAcordeAmericano(acordeLatino: string): string {
+    if (!this.latino) {
+      return acordeLatino
+    }
+    return acordeLatino
+      .split(' ')
+      .map((acorde) => {
+        if (this.acordesMapInverso.has(acorde)) {
+          return this.acordesMapInverso.get(acorde)!
+        }
+        const notaBase = this.extraerNotaBaseLatina(acorde)
+        const sufijo = acorde.substring(notaBase.length)
+        // Si la nota base termina en 'b', convertir a notación americana bemol
+        let notaAmericana = this.acordesMapInverso.get(notaBase)
+        if (!notaAmericana && notaBase.endsWith('b')) {
+          // Ejemplo: Solb -> Gb, Lab -> Ab, Reb -> Db, etc.
+          const base =
+            this.acordesMapInverso.get(
+              notaBase.substring(0, notaBase.length - 1),
+            ) || notaBase.substring(0, notaBase.length - 1)
+          notaAmericana = base + 'b'
+        }
+        notaAmericana = notaAmericana || notaBase
+        const acordeAmericano = notaAmericana + sufijo
+        this.acordesMapInverso.set(acorde, acordeAmericano)
+        return acordeAmericano
+      })
+      .join(' ')
+  }
+
+  /**
+   * Extrae la nota base de un acorde en notación americana.
    * @param acorde Acorde completo
    * @returns Nota base (ej. "C", "D#", "Bb")
    */
@@ -111,6 +159,40 @@ export class HelperDisplayAcordesLatino {
     if (acorde.length > 1 && (acorde[1] === '#' || acorde[1] === 'b')) {
       return acorde.substring(0, 2)
     }
+    return acorde.substring(0, 1)
+  }
+
+  /**
+   * Extrae la nota base de un acorde en notación latina.
+   * @param acorde Acorde completo
+   * @returns Nota base (ej. "Do", "Re#", "Solb")
+   */
+  private extraerNotaBaseLatina(acorde: string): string {
+    // Las notas latinas pueden ser: Do, Re, Mi, Fa, Sol, La, Si
+    // Pueden incluir # o b después
+
+    // Verificar notas de 3 letras primero (Sol)
+    const primerosTres = acorde.substring(0, 3)
+    if (primerosTres === 'Sol') {
+      // Verificar si tiene sostenido o bemol después
+      if (acorde.length > 3 && (acorde[3] === '#' || acorde[3] === 'b')) {
+        return acorde.substring(0, 4)
+      }
+      return primerosTres
+    }
+
+    // Verificar notas de dos letras: Do, Re, Mi, Fa, La, Si
+    const notasDosLetras = ['Do', 'Re', 'Mi', 'Fa', 'La', 'Si']
+    const primerosDos = acorde.substring(0, 2)
+    if (notasDosLetras.includes(primerosDos)) {
+      // Verificar si tiene sostenido o bemol después
+      if (acorde.length > 2 && (acorde[2] === '#' || acorde[2] === 'b')) {
+        return acorde.substring(0, 3)
+      }
+      return primerosDos
+    }
+
+    // Fallback: primera letra
     return acorde.substring(0, 1)
   }
 }

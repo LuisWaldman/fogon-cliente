@@ -467,9 +467,10 @@ function AgregarLista(index: number, listaseleccionada: string) {
 .config-menu-item {
   flex: 1;
   text-align: center;
-  padding: 10px;
-  margin: 0 2px;
+
+  margin: 0px;
   border-radius: 5px;
+  padding-bottom: 5px;
   transition: all 0.3s ease;
 }
 .config-menu-item:hover {

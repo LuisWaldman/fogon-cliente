@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { Pantalla } from '../../modelo/pantalla'
 import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
-import frecuen from './frecuenciometro.vue'
 import circulo from './circulo.vue'
+import selectEscala from '../SelectEscala.vue'
 
-const pantalla = new Pantalla()
-const ancho = pantalla.getAnchoPantalla() * 0.7
-const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
 const micHelper = new MicHelper()
@@ -36,12 +32,22 @@ const notas: string[] = [
   'G',
   'G#',
 ]
+
+const appStore = useAppStore()
+const helperNotas = HelperDisplayAcordesLatino.getInstance()
+helperNotas.latino = appStore.perfil.CifradoLatino
+
+if (appStore.perfil.CifradoLatino) {
+  for (let i = 0; i < notas.length; i++) {
+    notas[i] = helperNotas.GetAcorde(notas[i])
+  }
+}
 const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
 
 const mostrarEscala = ref(false)
-const escalaMenor = ref(false)
-const refViendoEscala = ref(0)
+const refViendoEscala = ref('C')
+
 let modos: { [key: string]: number[] } = {}
 modos['mayor'] = [2, 2, 1, 2, 2, 2, 1]
 modos['menor'] = [2, 1, 2, 2, 1, 2, 1]
@@ -58,20 +64,28 @@ function CalcularNotas() {
 }
 
 function calcularEscala() {
-  for (var i = 0; i < notasSonido.value.length; i++) {
-    clsNotas.value[i] = ''
-  }
   if (!mostrarEscala.value) {
+    for (var i = 0; i < notasSonido.value.length; i++) {
+      clsNotas.value[i] = ''
+    }
     return
   }
-  const modo = escalaMenor.value ? 'menor' : 'mayor'
-  let notaCont: number = refViendoEscala.value
+
+  for (var i = 0; i < notasSonido.value.length; i++) {
+    clsNotas.value[i] = 'invisible'
+  }
+  const modo = refViendoEscala.value.includes('m') ? 'menor' : 'mayor'
+  const notaescala = refViendoEscala.value.replace('m', '')
+  let notaCont: number = notas.indexOf(notaescala)
   for (let i = 0; notaCont < notasSonido.value.length; i++) {
-    console.log(`Calculando nota ${i} en modo ${modo} con notaCont ${notaCont}`)
     clsNotas.value[notaCont] = 'clsEscala'
     notaCont += modos[modo][i % modos[modo].length]
   }
 }
+
+watch(refViendoEscala, () => {
+  calcularEscala()
+})
 
 const frequency = ref(0)
 const otrasFrecuencias = ref<FrecuenciaDetectada[]>([])
@@ -140,19 +154,15 @@ function Solicitar() {
     })
 }
 
-function styleDivAfinador() {
-  return {
-    height: alto + 'px',
-    width: ancho + 'px',
-  }
-}
-
 // Añadir log para montaje y desmontaje del componente
 import { onMounted, onUnmounted } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import { HelperSonidos } from '../../modelo/sonido/helperSonido'
 import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
 import { useAppStore } from '../../stores/appStore'
+import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
+import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
 onMounted(() => {
   Solicitar()
@@ -166,6 +176,58 @@ onUnmounted(() => {
 })
 
 const mostrandoNota = ref<number>(0)
+
+// ============ LÓGICA DE MIDI ============
+const refInstrumentos = ref(InstrumentoMidi.GetInstrumentos())
+const instrumento = ref('pad_1_new_age.json')
+const midiCargado = ref(false)
+const CargandoMidi = ref(false)
+let midiPlayer = new MidiPlayer()
+
+function iniciarMidi() {
+  console.log('Cargar MIDI')
+  midiPlayer = new MidiPlayer()
+  fetch('InstrumentosMIDI/' + instrumento.value)
+    .then((response) => response.json())
+    .then((samples) => {
+      midiPlayer.setInstrument(samples)
+      midiPlayer.initialize()
+      midiCargado.value = true
+      CargandoMidi.value = false
+    })
+    .catch((error) => {
+      console.error('Error loading samples:', error)
+      useAppStore().errores.push(new Error(`Error loading samples: ${error}`))
+      CargandoMidi.value = false
+    })
+  console.log('MIDI Inicializado')
+}
+
+function ActualizarInstrumentoMidi() {
+  midiCargado.value = false
+  CargandoMidi.value = true
+  iniciarMidi()
+  console.log(instrumento.value)
+}
+function notaToMidi(nota: string): string {
+  if (!appStore.perfil.CifradoLatino) return nota
+  return helperNotas.GetAcordeAmericano(nota)
+}
+
+function TocarNota(nota: string) {
+  if (!midiCargado.value) {
+    return
+  }
+  midiPlayer.tocarNota(notaToMidi(nota))
+}
+
+function SoltarNota(nota: string) {
+  if (!midiCargado.value) {
+    return
+  }
+  midiPlayer.soltarNota(notaToMidi(nota))
+}
+// ============ FIN LÓGICA DE MIDI ============
 
 function formatFrequency(freq: number, totalDigits = 4, decimalPlaces = 2) {
   if (freq < 0) {
@@ -271,10 +333,14 @@ const otrasAfinaciones = [
     nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
   }, // Approx. Drop D
 ]
+function clickEscala() {
+  mostrarEscala.value = !mostrarEscala.value
+  calcularEscala()
+}
 </script>
 
 <template>
-  <div :style="styleDivAfinador()" class="divAfinador" id="divAfinador">
+  <div class="divAfinador" id="divAfinador">
     <div class="dropdown dropdown-superior-derecha">
       <button
         class="btn btn-secondary dropdown-toggle"
@@ -298,7 +364,7 @@ const otrasAfinaciones = [
     </div>
 
     <div v-if="viendoAfindado === 'simple'">
-      <div style="display: flex">
+      <div style="display: flex; flex-wrap: wrap">
         <div class="contDatos">
           <div>FRECUENCIA</div>
           <div
@@ -362,7 +428,7 @@ const otrasAfinaciones = [
       <div
         v-for="(nota, index) in mostrandoNotas"
         :key="index"
-        style="display: flex; height: 80px; border: 1px solid;|"
+        style="display: flex; height: 80px; border: 1px solid"
       >
         <div>
           <div
@@ -387,53 +453,44 @@ const otrasAfinaciones = [
         </div>
       </div>
     </div>
-    <div style="display: flex" v-if="viendoAfindado === 'circulo'">
-      <div>
-        <div>FRECUENCIA</div>
-        <div
-          style="
-            font-size: xx-large;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-          "
-        >
-          {{ formatFrequency(frequency) }} Hz
+    <div class="circuloConteiner" v-if="viendoAfindado === 'circulo'">
+      <div class="divctrlAfinador">
+        <div class="ctrlAfinador" :class="{ ctrlMostrando: mostrarEscala }">
+          <span @click="clickEscala">🎸 Mostrar Escala</span>
+          <selectEscala :modelValue="refViendoEscala"></selectEscala>
         </div>
-      </div>
-      <frecuen
-        :mostrandoNota="mostrandoNota"
-        :notasSonido="notasSonido"
-        :frecuencia="frequency"
-        :ancho="ancho"
-      ></frecuen>
-    </div>
-    <div style="display: flex" v-if="viendoAfindado === 'circulo'">
-      <div>
-        <div>
-          <input
-            type="checkbox"
-            v-model="mostrarEscala"
-            @change="calcularEscala"
-          />
-          <span>Mostrar Escala</span>
+
+        <div class="ctrlAfinador" :class="{ ctrlMostrando: midiCargado }">
+          <span @click="iniciarMidi">🎹 Tocar</span>
+
           <select
-            v-model="refViendoEscala"
-            v-if="mostrarEscala"
-            @change="calcularEscala"
+            v-if="midiCargado"
+            v-model="instrumento"
+            @change="ActualizarInstrumentoMidi"
           >
-            <option v-for="(nota, index) in notas" :key="index" :value="index">
-              {{ nota }}
+            <option
+              v-for="(inst, index) in refInstrumentos"
+              :key="index"
+              :value="inst.archivo"
+            >
+              {{ inst.nombre }}
             </option>
           </select>
+
+          <span v-if="CargandoMidi">Cargando instrumento...</span>
         </div>
       </div>
-      <circulo
-        :notasSonido="notasSonido"
-        :clasenotasSonido="clsNotas"
-        :otrasNotas="otrasFrecuencias"
-        :frecuencia="frequency"
-      ></circulo>
+
+      <div>
+        <circulo
+          :notasSonido="notasSonido"
+          :clasenotasSonido="clsNotas"
+          :otrasNotas="otrasFrecuencias"
+          :frecuencia="frequency"
+          :tocarNota="TocarNota"
+          :soltarNota="SoltarNota"
+        ></circulo>
+      </div>
     </div>
   </div>
 </template>
@@ -449,9 +506,6 @@ const otrasAfinaciones = [
   color: black;
   font-weight: bold;
 }
-.circulodiv {
-  position: relative;
-}
 
 .dropdown-superior-derecha {
   position: absolute;
@@ -466,7 +520,8 @@ const otrasAfinaciones = [
 }
 .divAfinador {
   position: relative;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .quinta {
@@ -480,5 +535,31 @@ const otrasAfinaciones = [
 .clsNota {
   padding: 1px;
   height: 30px;
+}
+.ctrlMostrando {
+  background-color: rgb(209, 169, 38);
+  color: white;
+}
+.circuloConteiner {
+  display: flex;
+}
+.ctrlAfinador {
+  font-size: large;
+  padding: 13px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.divctrlAfinador {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .circuloConteiner {
+    display: block;
+  }
 }
 </style>

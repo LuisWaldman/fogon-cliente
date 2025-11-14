@@ -7,6 +7,7 @@ import { useRouter, type Router } from 'vue-router'
 import { Acordes, Parte } from '../../modelo/cancion/acordes'
 import { Letra } from '../../modelo/cancion/letra'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
+import SelectEscala from '../SelectEscala.vue'
 
 const emit = defineEmits(['cerrar'])
 const modeloLetra = [
@@ -71,36 +72,10 @@ const conIntro = ref(false)
 const conOutro = ref(false)
 const conPuente = ref(false)
 const refescala = ref('C')
-const notas: string[] = [
-  'C',
-  'C#',
-  'D',
-  'D#',
-  'E',
-  'F',
-  'F#',
-  'G',
-  'G#',
-  'A',
-  'A#',
-  'B',
-]
 
 const appStore = useAppStore()
 const helper = HelperDisplayAcordesLatino.getInstance()
 helper.latino = appStore.perfil.CifradoLatino
-
-// Crear escalas mayores y menores
-const escalas = [
-  ...notas.map((nota) => ({
-    value: nota,
-    label: `${helper.GetAcorde(nota)} Mayor`,
-  })),
-  ...notas.map((nota) => ({
-    value: `${nota}m`,
-    label: `${helper.GetAcorde(nota)} Menor`,
-  })),
-].sort((a, b) => a.value.localeCompare(b.value))
 
 let router: Router | null = null
 onMounted(() => {
@@ -256,15 +231,7 @@ function chgPuente() {
 
     <div class="config-row">
       🎸 Escala
-      <select v-model="refescala">
-        <option
-          v-for="escala in escalas"
-          :key="escala.value"
-          :value="escala.value"
-        >
-          {{ escala.label }}
-        </option>
-      </select>
+      <SelectEscala v-model="refescala" />
     </div>
 
     <div class="config-row">
