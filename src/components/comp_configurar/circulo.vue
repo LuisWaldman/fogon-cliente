@@ -45,7 +45,7 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
   const baseOctava =
     440 * Math.pow(2, Math.floor(Math.log2(calculoFrecuencia / 440)))
   const portentajeEnOctava = (calculoFrecuencia - baseOctava) / baseOctava
-  let calcularDesde = ((portentajeEnOctava * 100) + 56.5)
+  let calcularDesde = portentajeEnOctava * 100 + 56.5
   if (calcularDesde > 100) {
     calcularDesde = calcularDesde - 100
   }
@@ -60,11 +60,10 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
     ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (enOctava - 1)
   const left =
     centroLeft +
-    Math.cos(calcularDesde * 2 * Math.PI) *
-      (radio / 2) *
-      multiplicadorRadio
+    Math.cos(calcularDesde * 2 * Math.PI) * (radio / 2) * multiplicadorRadio
   const top =
-    centroTop + Math.sin(calcularDesde * 2 * Math.PI) * (radio / 2) * multiplicadorLargo
+    centroTop +
+    Math.sin(calcularDesde * 2 * Math.PI) * (radio / 2) * multiplicadorLargo
 
   return {
     top: top + 'px',

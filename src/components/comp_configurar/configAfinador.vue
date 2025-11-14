@@ -74,24 +74,26 @@ function calcularEscala() {
   for (var i = 0; i < notasSonido.value.length; i++) {
     clsNotas.value[i] = 'invisible'
   }
-  const escala = notaToMidi(refViendoEscala.value.replace(' menor', 'm').replace(' mayor', ''))
+  const escala = notaToMidi(
+    refViendoEscala.value.replace(' menor', 'm').replace(' mayor', ''),
+  )
   const modo = escala.includes('m') ? 'menor' : 'mayor'
   const notaescala = escala.replace('m', '')
   const notas: string[] = [
-  'A',
-  'A#',
-  'B',
-  'C',
-  'C#',
-  'D',
-  'D#',
-  'E',
-  'F',
-  'F#',
-  'G',
-  'G#',
-]
-  console.log("CALCULANDO ESCALA", notaescala, modo)
+    'A',
+    'A#',
+    'B',
+    'C',
+    'C#',
+    'D',
+    'D#',
+    'E',
+    'F',
+    'F#',
+    'G',
+    'G#',
+  ]
+  console.log('CALCULANDO ESCALA', notaescala, modo)
   let notaCont: number = notas.indexOf(notaescala)
   for (let i = 0; notaCont < notasSonido.value.length; i++) {
     clsNotas.value[notaCont] = 'clsEscala'
@@ -200,7 +202,6 @@ const midiCargado = ref(false)
 const CargandoMidi = ref(false)
 let midiPlayer = new MidiPlayer()
 
-
 function clickMidi() {
   if (midiCargado.value) {
     midiCargado.value = false
@@ -210,7 +211,6 @@ function clickMidi() {
 }
 
 function iniciarMidi() {
-  
   console.log('Cargar MIDI')
   midiPlayer = new MidiPlayer()
   fetch('InstrumentosMIDI/' + instrumento.value)
@@ -481,32 +481,43 @@ function clickEscala() {
     </div>
     <div class="circuloConteiner" v-if="viendoAfindado === 'circulo'">
       <div class="divctrlAfinador">
-        <div class="ctrlAfinador" :class="{ ctrlMostrando: mostrarEscala }" @click="clickEscala">
-          <span >🎸 Mostrar Escala</span>
+        <div
+          class="ctrlAfinador"
+          :class="{ ctrlMostrando: mostrarEscala }"
+          @click="clickEscala"
+        >
+          <span>🎸 Mostrar Escala</span>
           <div>
-          <selectEscala v-if="mostrarEscala" v-model="refViendoEscala" @click.stop></selectEscala>
+            <selectEscala
+              v-if="mostrarEscala"
+              v-model="refViendoEscala"
+              @click.stop
+            ></selectEscala>
           </div>
         </div>
 
-        <div @click="clickMidi" class="ctrlAfinador" :class="{ ctrlMostrando: midiCargado }">
-          <span >🎹 Tocar</span>
+        <div
+          @click="clickMidi"
+          class="ctrlAfinador"
+          :class="{ ctrlMostrando: midiCargado }"
+        >
+          <span>🎹 Tocar</span>
 
           <div @click.stop>
-          <select
-            v-if="midiCargado"
-            v-model="instrumento"
-            
-            @change="ActualizarInstrumentoMidi"
-          >
-            <option
-              v-for="(inst, index) in refInstrumentos"
-              :key="index"
-              :value="inst.archivo"
+            <select
+              v-if="midiCargado"
+              v-model="instrumento"
+              @change="ActualizarInstrumentoMidi"
             >
-              {{ inst.nombre }}
-            </option>
-          </select>
-</div>
+              <option
+                v-for="(inst, index) in refInstrumentos"
+                :key="index"
+                :value="inst.archivo"
+              >
+                {{ inst.nombre }}
+              </option>
+            </select>
+          </div>
           <span v-if="CargandoMidi">Cargando instrumento...</span>
         </div>
       </div>
