@@ -3,8 +3,8 @@ import { ref, watch } from 'vue'
 import { Pantalla } from '../../modelo/pantalla'
 import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
-import frecuen from './frecuenciometro.vue'
 import circulo from './circulo.vue'
+import selectEscala from '../SelectEscala.vue'
 
 const pantalla = new Pantalla()
 const ancho = pantalla.getAnchoPantalla() * 0.7
@@ -41,7 +41,8 @@ const notasSonido = ref<NotaSonido[]>([])
 
 const mostrarEscala = ref(false)
 const escalaMenor = ref(false)
-const refViendoEscala = ref(0)
+const refViendoEscala = ref('C')
+
 let modos: { [key: string]: number[] } = {}
 modos['mayor'] = [2, 2, 1, 2, 2, 2, 1]
 modos['menor'] = [2, 1, 2, 2, 1, 2, 1]
@@ -64,8 +65,9 @@ function calcularEscala() {
   if (!mostrarEscala.value) {
     return
   }
-  const modo = escalaMenor.value ? 'menor' : 'mayor'
-  let notaCont: number = refViendoEscala.value
+  const modo = refViendoEscala.value.includes('m') ? 'menor' : 'mayor'
+  const notaescala = refViendoEscala.value.replace('m', '')
+  let notaCont: number = notas.indexOf(notaescala)
   for (let i = 0; notaCont < notasSonido.value.length; i++) {
     console.log(`Calculando nota ${i} en modo ${modo} con notaCont ${notaCont}`)
     clsNotas.value[notaCont] = 'clsEscala'
@@ -320,6 +322,10 @@ const otrasAfinaciones = [
     nombres: ['6ta', '5ta', '4ta', '3ra', '2da', '1ra'],
   }, // Approx. Drop D
 ]
+function clickEscala() {
+  mostrarEscala.value = !mostrarEscala.value
+  calcularEscala()
+}
 </script>
 
 <template>
@@ -437,26 +443,18 @@ const otrasAfinaciones = [
       </div>
     </div>
     <div style="display: flex" v-if="viendoAfindado === 'circulo'">
-      <div>
-        <div>
-          <input
-            type="checkbox"
-            v-model="mostrarEscala"
-            @change="calcularEscala"
-          />
-          <span>Mostrar Escala</span>
-          <select
-            v-model="refViendoEscala"
-            v-if="mostrarEscala"
-            @change="calcularEscala"
-          >
-            <option v-for="(nota, index) in notas" :key="index" :value="index">
-              {{ nota }}
-            </option>
-          </select>
+      <div class="divctrlAfinador">
+        <div class="ctrlAfinador" :class="{ ctrlMostrando: mostrarEscala}">
+          
+          <span @click="clickEscala">🎸  Mostrar Escala</span>
+          <selectEscala :modelValue="refViendoEscala"></selectEscala>
+         
         </div>
 
-        <div style="margin-top: 10px;">
+        <div class="ctrlAfinador"  :class="{ ctrlMostrando: midiCargado}">
+        
+          <span @click="iniciarMidi">🎹 Tocar</span>
+
           <select
             v-if="midiCargado"
             v-model="instrumento"
@@ -471,7 +469,6 @@ const otrasAfinaciones = [
             </option>
           </select>
 
-          <span @click="iniciarMidi" v-if="!midiCargado && !CargandoMidi" style="cursor: pointer; color: blue; text-decoration: underline;">[Tocar]</span>
           <span v-if="CargandoMidi">Cargando instrumento...</span>
         </div>
       </div>
@@ -532,5 +529,24 @@ const otrasAfinaciones = [
 .clsNota {
   padding: 1px;
   height: 30px;
+}
+.ctrlMostrando {
+  background-color: rgb(209, 169, 38);
+  color: white;
+}
+
+.ctrlAfinador {
+  font-size: large;
+  padding: 13px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+
+.divctrlAfinador {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
 }
 </style>
