@@ -46,7 +46,7 @@ function clickCancelar() {
 }
 </script>
 <template>
-  <div v-if="cancion" class="ctrlEdit">
+  <div v-if="cancion && props.cancion.bpm" class="ctrlEdit">
     <span class="lblCabecera">BPM:</span>
     <input
       type="range"
