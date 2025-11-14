@@ -136,7 +136,10 @@ export class HelperDisplayAcordesLatino {
         let notaAmericana = this.acordesMapInverso.get(notaBase)
         if (!notaAmericana && notaBase.endsWith('b')) {
           // Ejemplo: Solb -> Gb, Lab -> Ab, Reb -> Db, etc.
-          const base = this.acordesMapInverso.get(notaBase.substring(0, notaBase.length - 1)) || notaBase.substring(0, notaBase.length - 1)
+          const base =
+            this.acordesMapInverso.get(
+              notaBase.substring(0, notaBase.length - 1),
+            ) || notaBase.substring(0, notaBase.length - 1)
           notaAmericana = base + 'b'
         }
         notaAmericana = notaAmericana || notaBase
@@ -167,7 +170,7 @@ export class HelperDisplayAcordesLatino {
   private extraerNotaBaseLatina(acorde: string): string {
     // Las notas latinas pueden ser: Do, Re, Mi, Fa, Sol, La, Si
     // Pueden incluir # o b después
-    
+
     // Verificar notas de 3 letras primero (Sol)
     const primerosTres = acorde.substring(0, 3)
     if (primerosTres === 'Sol') {
@@ -177,7 +180,7 @@ export class HelperDisplayAcordesLatino {
       }
       return primerosTres
     }
-    
+
     // Verificar notas de dos letras: Do, Re, Mi, Fa, La, Si
     const notasDosLetras = ['Do', 'Re', 'Mi', 'Fa', 'La', 'Si']
     const primerosDos = acorde.substring(0, 2)
@@ -188,7 +191,7 @@ export class HelperDisplayAcordesLatino {
       }
       return primerosDos
     }
-    
+
     // Fallback: primera letra
     return acorde.substring(0, 1)
   }

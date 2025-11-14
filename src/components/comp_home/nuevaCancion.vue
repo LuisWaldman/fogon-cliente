@@ -231,9 +231,7 @@ function chgPuente() {
 
     <div class="config-row">
       🎸 Escala
-      <SelectEscala 
-        v-model="refescala"
-      />
+      <SelectEscala v-model="refescala" />
     </div>
 
     <div class="config-row">

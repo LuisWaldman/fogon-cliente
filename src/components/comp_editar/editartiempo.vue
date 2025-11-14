@@ -38,7 +38,7 @@ function clickListo() {
 
 function clickCancelar() {
   // Restaurar valores originales
-  
+
   props.cancion.bpm = bpm.value
   props.cancion.compasCantidad = compasCantidad.value
   props.cancion.compasUnidad = compasUnidad.value
@@ -56,16 +56,27 @@ function clickCancelar() {
       max="240"
     />
 
-    
     {{ props.cancion.bpm }} -
     <span v-if="props.cancion.bpm >= 40 && props.cancion.bpm <= 60">Largo</span>
-    <span v-if="props.cancion.bpm > 60 && props.cancion.bpm <= 66">Largo a Adagio</span>
+    <span v-if="props.cancion.bpm > 60 && props.cancion.bpm <= 66"
+      >Largo a Adagio</span
+    >
     <span v-if="props.cancion.bpm > 66 && props.cancion.bpm <= 76">Adagio</span>
-    <span v-if="props.cancion.bpm > 76 && props.cancion.bpm <= 108">Andante</span>
-    <span v-if="props.cancion.bpm > 108 && props.cancion.bpm <= 120">Moderato</span>
-    <span v-if="props.cancion.bpm > 120 && props.cancion.bpm <= 168">Allegro</span>
-    <span v-if="props.cancion.bpm > 168 && props.cancion.bpm <= 176">Vivace</span>
-    <span v-if="props.cancion.bpm > 176 && props.cancion.bpm <= 200">Presto</span>
+    <span v-if="props.cancion.bpm > 76 && props.cancion.bpm <= 108"
+      >Andante</span
+    >
+    <span v-if="props.cancion.bpm > 108 && props.cancion.bpm <= 120"
+      >Moderato</span
+    >
+    <span v-if="props.cancion.bpm > 120 && props.cancion.bpm <= 168"
+      >Allegro</span
+    >
+    <span v-if="props.cancion.bpm > 168 && props.cancion.bpm <= 176"
+      >Vivace</span
+    >
+    <span v-if="props.cancion.bpm > 176 && props.cancion.bpm <= 200"
+      >Presto</span
+    >
     <span v-if="props.cancion.bpm > 200">Prestissimo</span>
     <span>&nbsp;-&nbsp;</span>
 
@@ -85,13 +96,12 @@ function clickCancelar() {
       )
     }}</span>
     Duracion Compas: <span>{{ ((60 / bpm) * compasCantidad).toFixed(2) }}</span>
-    
-      <button class="lblCabecera" @click="clickListo">✔️</button>
-      <button class="lblCabecera" @click="clickCancelar">❌</button>
+
+    <button class="lblCabecera" @click="clickListo">✔️</button>
+    <button class="lblCabecera" @click="clickCancelar">❌</button>
   </div>
 </template>
 <style scoped>
-
 .ctrlEdit {
   display: flex;
   gap: 10px;

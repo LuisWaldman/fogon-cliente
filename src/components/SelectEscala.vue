@@ -9,7 +9,7 @@ withDefaults(
   }>(),
   {
     modelValue: 'C',
-  }
+  },
 )
 
 const emit = defineEmits<{
@@ -35,16 +35,18 @@ const appStore = useAppStore()
 const helper = HelperDisplayAcordesLatino.getInstance()
 helper.latino = appStore.perfil.CifradoLatino
 
-const escalas = computed(() => [
-  ...notas.map((nota) => ({
-    value: nota,
-    label: `${helper.GetAcorde(nota)} Mayor`,
-  })),
-  ...notas.map((nota) => ({
-    value: `${nota}m`,
-    label: `${helper.GetAcorde(nota)} Menor`,
-  })),
-].sort((a, b) => a.value.localeCompare(b.value)))
+const escalas = computed(() =>
+  [
+    ...notas.map((nota) => ({
+      value: nota,
+      label: `${helper.GetAcorde(nota)} Mayor`,
+    })),
+    ...notas.map((nota) => ({
+      value: `${nota}m`,
+      label: `${helper.GetAcorde(nota)} Menor`,
+    })),
+  ].sort((a, b) => a.value.localeCompare(b.value)),
+)
 
 function handleChange(event: Event) {
   const target = event.target as HTMLSelectElement
@@ -53,20 +55,11 @@ function handleChange(event: Event) {
 </script>
 
 <template>
-  <select 
-    :value="modelValue" 
-    @input="handleChange"
-  >
-    <option
-      v-for="escala in escalas"
-      :key="escala.value"
-      :value="escala.value"
-    >
+  <select :value="modelValue" @input="handleChange">
+    <option v-for="escala in escalas" :key="escala.value" :value="escala.value">
       {{ escala.label }}
     </option>
   </select>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

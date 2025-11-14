@@ -40,13 +40,11 @@ const notas: string[] = [
 const appStore = useAppStore()
 const helperNotas = HelperDisplayAcordesLatino.getInstance()
 helperNotas.latino = appStore.perfil.CifradoLatino
-  
-if (appStore.perfil.CifradoLatino) {
 
+if (appStore.perfil.CifradoLatino) {
   for (let i = 0; i < notas.length; i++) {
     notas[i] = helperNotas.GetAcorde(notas[i])
   }
-
 }
 const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
@@ -210,10 +208,8 @@ function ActualizarInstrumentoMidi() {
   console.log(instrumento.value)
 }
 function notaToMidi(nota: string): string {
-  
   if (!appStore.perfil.CifradoLatino) return nota
   return helperNotas.GetAcordeAmericano(nota)
-  
 }
 
 function TocarNota(nota: string) {
@@ -342,7 +338,6 @@ function clickEscala() {
 </script>
 
 <template>
-  
   <div class="divAfinador" id="divAfinador">
     <div class="dropdown dropdown-superior-derecha">
       <button
@@ -367,7 +362,7 @@ function clickEscala() {
     </div>
 
     <div v-if="viendoAfindado === 'simple'">
-      <div style="display: flex; flex-wrap: wrap;" >
+      <div style="display: flex; flex-wrap: wrap">
         <div class="contDatos">
           <div>FRECUENCIA</div>
           <div
@@ -431,7 +426,7 @@ function clickEscala() {
       <div
         v-for="(nota, index) in mostrandoNotas"
         :key="index"
-        style="display: flex; height: 80px; border: 1px solid;"
+        style="display: flex; height: 80px; border: 1px solid"
       >
         <div>
           <div
@@ -458,15 +453,12 @@ function clickEscala() {
     </div>
     <div class="circuloConteiner" v-if="viendoAfindado === 'circulo'">
       <div class="divctrlAfinador">
-        <div class="ctrlAfinador" :class="{ ctrlMostrando: mostrarEscala}">
-          
-          <span @click="clickEscala">🎸  Mostrar Escala</span>
+        <div class="ctrlAfinador" :class="{ ctrlMostrando: mostrarEscala }">
+          <span @click="clickEscala">🎸 Mostrar Escala</span>
           <selectEscala :modelValue="refViendoEscala"></selectEscala>
-         
         </div>
 
-        <div class="ctrlAfinador"  :class="{ ctrlMostrando: midiCargado}">
-        
+        <div class="ctrlAfinador" :class="{ ctrlMostrando: midiCargado }">
           <span @click="iniciarMidi">🎹 Tocar</span>
 
           <select
@@ -555,7 +547,6 @@ function clickEscala() {
   border: 1px solid;
   margin-bottom: 10px;
   cursor: pointer;
-
 }
 
 .divctrlAfinador {

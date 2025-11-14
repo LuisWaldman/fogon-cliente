@@ -146,4 +146,3 @@ describe('Pruebo HelperDisplayAcordesLatino', () => {
     })
   })
 })
-
