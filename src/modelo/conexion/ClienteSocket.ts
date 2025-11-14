@@ -320,7 +320,7 @@ export class ClienteSocket {
       console.log(
         `sincronizar received with compas: ${compas}, delayms: ${delayms}`,
       )
-      this.sincronizarReproduccion?.(compas, delayms)
+      this.cancionSincronizadaHandler?.(compas, delayms)
     })
     socket.on('answerRTC', (SDP: string) => {
       console.log('answerRTC received with SDP:', SDP)

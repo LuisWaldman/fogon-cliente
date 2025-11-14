@@ -48,7 +48,7 @@ function GetStylePantallaEdit() {
 }
 
 function estiloVistaPrincipal() {
-  if (viendo.value == 'editartexto'  || viendo.value == 'acordes') {
+  if (viendo.value == 'editartexto' || viendo.value == 'acordes') {
     return `width: 100%; height: 100%`
   }
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`

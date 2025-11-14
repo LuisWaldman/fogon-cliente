@@ -55,7 +55,14 @@ export class ReproductorConectado extends Reproductor {
     })
     this.cliente.setCancionSincronizadaHandler(
       (compas: number, desde: number) => {
-        this.sincronizarReproduccion(compas, desde)
+        const appStore = useAppStore()
+        console.log(
+          `En ${appStore.sesSincroCancion.timeInicio} Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time  ${desde}`,
+        )
+        if (appStore.MediaVistas === null) {
+          appStore.sesSincroCancion.desdeCompas = compas
+          appStore.sesSincroCancion.timeInicio = desde
+        }
       },
     )
   }
@@ -111,17 +118,6 @@ export class ReproductorConectado extends Reproductor {
           sincro.timeInicio,
         )
       }
-    }
-  }
-
-  sincronizarReproduccion(compas: number, delayms: number) {
-    const appStore = useAppStore()
-    console.log(
-      `Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time  ${delayms}`,
-    )
-    if (appStore.MediaVistas === null) {
-      appStore.sesSincroCancion.desdeCompas = compas
-      appStore.sesSincroCancion.timeInicio = delayms
     }
   }
 
