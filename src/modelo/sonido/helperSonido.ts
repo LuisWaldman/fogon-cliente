@@ -10,7 +10,7 @@ export class HelperSonidos {
     const notasret: NotaSonido[] = []
     const desdeNota = tipoAfinacion / 8
     // cantidadNotas es la cantidad de notas en la octava
-    const desdeEscala = 2
+    const desdeEscala = 1
     for (let i = 0; i < cantidadNotas * 5; i++) {
       const nota = desdeNota * Math.pow(2, i / cantidadNotas)
       let nroNotaEnEscala = i - delayCambioEscala

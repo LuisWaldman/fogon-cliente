@@ -19,6 +19,7 @@ const minRadio = esCelular ? 100 : 180
 const centroLeft = esCelular ? 120 : 300
 const centroTop = esCelular ? 130 : 230
 const multiplicadorRadio = esCelular ? 1 : 1.8
+const multiplicadorLargo = esCelular ? 1.3 : 1
 const viendoFrecuencia = ref<NotaSonido>({ nota: '', frecuencia: 0, octava: 0 })
 watch(
   () => props.frecuencia,
@@ -44,6 +45,11 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
   const baseOctava =
     440 * Math.pow(2, Math.floor(Math.log2(calculoFrecuencia / 440)))
   const portentajeEnOctava = (calculoFrecuencia - baseOctava) / baseOctava
+  let calcularDesde = ((portentajeEnOctava * 100) + 56.5)
+  if (calcularDesde > 100) {
+    calcularDesde = calcularDesde - 100
+  }
+  calcularDesde = calcularDesde / 100
 
   if (enOctava < 0) {
     enOctava = 0
@@ -54,11 +60,11 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
     ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (enOctava - 1)
   const left =
     centroLeft +
-    Math.cos(portentajeEnOctava * 2 * Math.PI) *
+    Math.cos(calcularDesde * 2 * Math.PI) *
       (radio / 2) *
       multiplicadorRadio
   const top =
-    centroTop + Math.sin(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
+    centroTop + Math.sin(calcularDesde * 2 * Math.PI) * (radio / 2) * multiplicadorLargo
 
   return {
     top: top + 'px',
