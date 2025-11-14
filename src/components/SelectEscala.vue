@@ -45,7 +45,9 @@ const escalas = computed(() =>
       value: `${nota}m`,
       label: `${helper.GetAcorde(nota)} Menor`,
     })),
-  ].sort((a, b) => a.value.localeCompare(b.value)),
+  ].sort((a, b) =>
+    a.value.replace('#', 'z').localeCompare(b.value.replace('#', 'z')),
+  ),
 )
 
 function handleChange(event: Event) {

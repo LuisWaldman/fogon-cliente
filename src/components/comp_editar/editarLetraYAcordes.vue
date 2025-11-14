@@ -3,11 +3,14 @@ import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { CompasEditable } from './compaseditable'
+import editSecuencia from './editSecuencia.vue'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
+const editandoCompas = ref(props.compas)
 
 const compaces = ref<CompasEditable[][]>([])
 const refParteSeleccionada = ref<number>(-1)
@@ -76,33 +79,54 @@ function calcularCompaces() {
 onMounted(() => {
   calcularCompaces()
 })
+
+const pantalla = new Pantalla()
+
+function estiloVistaPrincipal() {
+  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
+}
+
+function estiloVistaSecundaria() {
+  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
+}
 </script>
 <template>
-  <div class="editdivconteiner">
-    <div
-      class="editrenglon"
-      v-for="(renglon, indexrenglon) in compaces"
-      :key="indexrenglon"
-    >
-      <div
-        :class="{
-          editdiv: true,
-          comienzoparte: compas.iniciaparte,
-          finparte: compas.terminaparte,
-          editandoSecuencia: refParteSeleccionada === compas.nroSecuencia,
-        }"
-        v-for="(compas, indexcompas) in renglon"
-        :key="indexcompas"
-        @click="seleccionarParte(compas)"
-      >
-        <div class="acordediv">
-          {{ compas.acorde }}
+  <div style="display: flex">
+    <div :style="estiloVistaPrincipal()">
+      <div class="editdivconteiner">
+        <div
+          class="editrenglon"
+          v-for="(renglon, indexrenglon) in compaces"
+          :key="indexrenglon"
+        >
+          <div
+            :class="{
+              editdiv: true,
+              comienzoparte: compas.iniciaparte,
+              finparte: compas.terminaparte,
+              editandoSecuencia: refParteSeleccionada === compas.nroSecuencia,
+            }"
+            v-for="(compas, indexcompas) in renglon"
+            :key="indexcompas"
+            @click="seleccionarParte(compas)"
+          >
+            <div class="acordediv">
+              {{ compas.acorde }}
+            </div>
+            <div v-if="compas.letra.trim() != ''" class="divletra">
+              {{ compas.letra }}
+            </div>
+            <div class="divletra" v-else>♪</div>
+          </div>
         </div>
-        <div v-if="compas.letra.trim() != ''" class="divletra">
-          {{ compas.letra }}
-        </div>
-        <div class="divletra" v-else>♪</div>
       </div>
+    </div>
+    <div :style="estiloVistaSecundaria()">
+      <editSecuencia
+        ref="ctrlSecuencia"
+        :cancion="cancion"
+        :compas="editandoCompas"
+      ></editSecuencia>
     </div>
   </div>
 </template>
