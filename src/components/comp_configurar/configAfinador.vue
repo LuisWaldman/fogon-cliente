@@ -64,21 +64,28 @@ function CalcularNotas() {
 }
 
 function calcularEscala() {
-  for (var i = 0; i < notasSonido.value.length; i++) {
-    clsNotas.value[i] = ''
-  }
   if (!mostrarEscala.value) {
+    for (var i = 0; i < notasSonido.value.length; i++) {
+      clsNotas.value[i] = ''
+    }
     return
+  }
+
+  for (var i = 0; i < notasSonido.value.length; i++) {
+    clsNotas.value[i] = 'invisible'
   }
   const modo = refViendoEscala.value.includes('m') ? 'menor' : 'mayor'
   const notaescala = refViendoEscala.value.replace('m', '')
   let notaCont: number = notas.indexOf(notaescala)
   for (let i = 0; notaCont < notasSonido.value.length; i++) {
-    console.log(`Calculando nota ${i} en modo ${modo} con notaCont ${notaCont}`)
     clsNotas.value[notaCont] = 'clsEscala'
     notaCont += modos[modo][i % modos[modo].length]
   }
 }
+
+watch(refViendoEscala, () => {
+  calcularEscala()
+})
 
 const frequency = ref(0)
 const otrasFrecuencias = ref<FrecuenciaDetectada[]>([])

@@ -160,7 +160,9 @@ function SoltarNota(nota: string) {
   border: 5px solid rgb(231, 64, 13);
   border-radius: 15px;
 }
-
+.invisible {
+  opacity: 0.3;
+}
 @media (max-width: 768px) {
   .nota {
     font-size: 16px;
