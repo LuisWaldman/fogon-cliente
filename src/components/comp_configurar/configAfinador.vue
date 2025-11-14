@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { Pantalla } from '../../modelo/pantalla'
 import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
 import circulo from './circulo.vue'
 import selectEscala from '../SelectEscala.vue'
 
-const pantalla = new Pantalla()
-const ancho = pantalla.getAnchoPantalla() * 0.7
-const alto = pantalla.getAltoPantalla()
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
 const micHelper = new MicHelper()
@@ -50,7 +46,6 @@ const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
 
 const mostrarEscala = ref(false)
-const escalaMenor = ref(false)
 const refViendoEscala = ref('C')
 
 let modos: { [key: string]: number[] } = {}
