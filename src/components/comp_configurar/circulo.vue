@@ -175,6 +175,7 @@ function SoltarNota(nota: string) {
   position: absolute;
   border-radius: 50%;
   border: 1px solid rgb(133, 104, 202);
+  padding: 5px;
 }
 .frecuenciablanca {
   background-color: white;

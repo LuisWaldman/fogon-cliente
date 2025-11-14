@@ -36,6 +36,17 @@ const notas: string[] = [
   'G',
   'G#',
 ]
+
+const appStore = useAppStore()
+if (appStore.perfil.CifradoLatino) {
+
+  const helperNotas = HelperDisplayAcordesLatino.getInstance()
+  helperNotas.latino = appStore.perfil.CifradoLatino
+  for (let i = 0; i < notas.length; i++) {
+    notas[i] = helperNotas.GetAcorde(notas[i])
+  }
+
+}
 const clsNotas = ref<string[]>([])
 const notasSonido = ref<NotaSonido[]>([])
 
@@ -156,6 +167,7 @@ import { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
 import { useAppStore } from '../../stores/appStore'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
 onMounted(() => {
   Solicitar()
