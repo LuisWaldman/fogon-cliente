@@ -2,7 +2,7 @@
 import { ref, watch } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
 import type { FrecuenciaDetectada } from '../../modelo/sonido/FrecuenciaDetectada'
-const octavasCirculo = ref(7)
+const octavasCirculo = ref(6)
 const DesdeOctavasCirculo = ref(4)
 
 const props = defineProps<{
@@ -15,8 +15,8 @@ const props = defineProps<{
 }>()
 
 const maxRadio = 500
-const minRadio = 50
-const centroLeft = 350
+const minRadio = 120
+const centroLeft = 450
 const centroTop = 230
 const viendoFrecuencia = ref<NotaSonido>({ nota: '', frecuencia: 0, octava: 0 })
 watch(
@@ -48,13 +48,15 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
     backgroundColor = 'black'
     color = 'white'
   }
+
+  const calculoFrecuencia = frecuencia.frecuencia
   let enOctava =
-    Math.floor(Math.log2(frecuencia.frecuencia / 440)) +
+    Math.floor(Math.log2(calculoFrecuencia / 440)) +
     DesdeOctavasCirculo.value
 
   const baseOctava =
-    440 * Math.pow(2, Math.floor(Math.log2(frecuencia.frecuencia / 440)))
-  const portentajeEnOctava = (frecuencia.frecuencia - baseOctava) / baseOctava
+    440 * Math.pow(2, Math.floor(Math.log2(calculoFrecuencia / 440)))
+  const portentajeEnOctava = (calculoFrecuencia - baseOctava) / baseOctava
 
   if (enOctava < 0) {
     enOctava = 0
@@ -64,7 +66,7 @@ function StyleFrecuencia(frecuencia: NotaSonido) {
     minRadio +
     ((maxRadio - minRadio) / (octavasCirculo.value - 1)) * (enOctava - 1)
   const left =
-    centroLeft + Math.cos(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
+    centroLeft + Math.cos(portentajeEnOctava * 2 * Math.PI) * (radio / 2) * 1.5
   const top =
     centroTop + Math.sin(portentajeEnOctava * 2 * Math.PI) * (radio / 2)
 
@@ -119,10 +121,7 @@ function SoltarNota(nota: string) {
 <template>
   <div style="position: relative">
     <div class="circulodiv" style="display: flex; width: 800px">
-      <div v-for="i in octavasCirculo" :key="i">
-        <div :style="StyleOctava(i)" class="circuloOctava"></div>
-      </div>
-
+      
       <div
         v-for="(nota, index) in notasSonido"
         :key="index"

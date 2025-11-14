@@ -38,10 +38,11 @@ const notas: string[] = [
 ]
 
 const appStore = useAppStore()
+const helperNotas = HelperDisplayAcordesLatino.getInstance()
+helperNotas.latino = appStore.perfil.CifradoLatino
+  
 if (appStore.perfil.CifradoLatino) {
 
-  const helperNotas = HelperDisplayAcordesLatino.getInstance()
-  helperNotas.latino = appStore.perfil.CifradoLatino
   for (let i = 0; i < notas.length; i++) {
     notas[i] = helperNotas.GetAcorde(notas[i])
   }
@@ -153,12 +154,6 @@ function Solicitar() {
     })
 }
 
-function styleDivAfinador() {
-  return {
-    height: alto + 'px',
-  }
-}
-
 // Añadir log para montaje y desmontaje del componente
 import { onMounted, onUnmounted } from 'vue'
 import type { NotaSonido } from '../../modelo/sonido/notaSonido'
@@ -214,19 +209,25 @@ function ActualizarInstrumentoMidi() {
   iniciarMidi()
   console.log(instrumento.value)
 }
+function notaToMidi(nota: string): string {
+  
+  if (!appStore.perfil.CifradoLatino) return nota
+  return helperNotas.GetAcordeAmericano(nota)
+  
+}
 
 function TocarNota(nota: string) {
   if (!midiCargado.value) {
     return
   }
-  midiPlayer.tocarNota(nota)
+  midiPlayer.tocarNota(notaToMidi(nota))
 }
 
 function SoltarNota(nota: string) {
   if (!midiCargado.value) {
     return
   }
-  midiPlayer.soltarNota(nota)
+  midiPlayer.soltarNota(notaToMidi(nota))
 }
 // ============ FIN LÓGICA DE MIDI ============
 
@@ -341,7 +342,8 @@ function clickEscala() {
 </script>
 
 <template>
-  <div :style="styleDivAfinador()" class="divAfinador" id="divAfinador">
+  
+  <div class="divAfinador" id="divAfinador">
     <div class="dropdown dropdown-superior-derecha">
       <button
         class="btn btn-secondary dropdown-toggle"
@@ -454,7 +456,7 @@ function clickEscala() {
         </div>
       </div>
     </div>
-    <div style="display: flex" v-if="viendoAfindado === 'circulo'">
+    <div class="circuloConteiner" v-if="viendoAfindado === 'circulo'">
       <div class="divctrlAfinador">
         <div class="ctrlAfinador" :class="{ ctrlMostrando: mostrarEscala}">
           
@@ -494,7 +496,8 @@ function clickEscala() {
           :tocarNota="TocarNota"
           :soltarNota="SoltarNota"
         ></circulo>
-      </div></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -508,9 +511,6 @@ function clickEscala() {
   background-color: lightgreen;
   color: black;
   font-weight: bold;
-}
-.circulodiv {
-  position: relative;
 }
 
 .dropdown-superior-derecha {
@@ -546,7 +546,9 @@ function clickEscala() {
   background-color: rgb(209, 169, 38);
   color: white;
 }
-
+.circuloConteiner {
+  display: flex;
+}
 .ctrlAfinador {
   font-size: large;
   padding: 13px;
@@ -560,5 +562,11 @@ function clickEscala() {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .circuloConteiner {
+    display: block;
+  }
 }
 </style>
