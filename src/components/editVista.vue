@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { Configuracion, VistaTocar } from '../../modelo/configuracion'
-import { Pantalla } from '../../modelo/pantalla'
+import { Configuracion, VistaTocar } from '../modelo/configuracion'
+import { Pantalla } from '../modelo/pantalla'
 
 const exvistapantalla = ref(new VistaTocar())
 const emit = defineEmits(['cerrar'])
