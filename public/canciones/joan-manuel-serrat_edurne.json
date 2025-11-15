@@ -1,1 +1,381 @@
-{"cancion": "Edurne", "banda": "joan-manuel-serrat", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "E", "C#m"]}, {"nombre": "parte2", "acordes": ["F#m", "Bm", "E", "A", "E"]}, {"nombre": "parte3", "acordes": ["F#m", "Bm", "E", "A", "D", "E", "D"]}, {"nombre": "parte4", "acordes": ["E", "A", "Bm", "E", "E7", "Bm", "E", "A"]}], "orden_partes": [0, 1, 0, 2, 3]}, "letras": [["Como al vient", "o, la lluvia y el tr", "ueno,/n"], ["la parieron al ser", "eno,/n"], ["a la sombra de un n", "ogal.", "/n"], ["Con helechos ", "le hicieron su cuna,", "/n"], ["la abrig\u00f3 un rayo de ", "luna/n"], ["y a lo lejos la mec", "\u00eda el mar./n"], ["Abestu Edurn", "e,/n"], ["abes", "tu Edurn", "e./nHori da "], ["zure Herri", "e.", "/nEuskal he"], ["rria zur\u00ea", "kin dezu a", "besten."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "3GAzNPu7r3c", "delay": 0}]}
+{
+    "cancion": "Edurne",
+    "banda": "joan-manuel-serrat",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "E",
+                    "F#m",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Co",
+            "mo al vient",
+            "o la lluvi",
+            "a el true",
+            "no la parier",
+            "on al seren ",
+            "la sombra ",
+            "de un hogar. ",
+            "/n"
+        ],
+        [
+            "Con el he",
+            "chos le hici",
+            "eron su cu",
+            "na, la abri",
+            "gó un rayo de lu",
+            "na lo l",
+            "ejos la mesía ",
+            "el mar. \n\nA",
+            "bestue d",
+            "urne, a",
+            "bestue d",
+            "urn",
+            "e, oridad s",
+            "ure ri",
+            "e. ",
+            "c",
+            "reció viendo ",
+            "sus pies t",
+            "olosas un ",
+            "tiempo resia ",
+            "hermosa como ",
+            "un tronco de a",
+            "bedur. /n"
+        ],
+        [
+            "Su j",
+            "ugón co",
+            "lorado ",
+            "de lana p",
+            "artía en dos la m",
+            "añana al ",
+            "abrirse  su v",
+            "entana azul",
+            ". \n\nAbestu ",
+            "durne ",
+            "abestue d",
+            "urne",
+            ", deitudi ",
+            "sumai",
+            "tasune. /n"
+        ],
+        [
+            "Poco t",
+            "iempo tu a",
+            "mor te ha g",
+            "ozado, ",
+            "se lo llevaron a",
+            "tado unos ",
+            "hombres  de ",
+            "metal.  ",
+            "en",
+            "contraron d",
+            "etrás de la ",
+            "casa por ",
+            "el camino de /n"
+        ],
+        [
+            "Amasa sus ",
+            "veinte  años roto",
+            "s contra un zarzal. \n\nA",
+            "bestue ",
+            "durn",
+            "e, abestue ",
+            "durn",
+            "e, lurp",
+            "eratuo ten",
+            "dute. /n"
+        ],
+        [
+            "Desde ent",
+            "onces, ",
+            "aunque muerda el ",
+            "frío,  el p",
+            "ortón del ca",
+            "serío lo d",
+            "eja de par ",
+            "en par. /n"
+        ],
+        [
+            "Por si el ",
+            "miedo no ",
+            "come  cal",
+            "iente, par",
+            "a cobijar g",
+            "ente que no ",
+            "puede ver su ci",
+            "elo su mar. /n"
+        ],
+        [
+            "Abestue  d",
+            "urne",
+            "abestue d",
+            "urne",
+            "subde su ",
+            "bioza  un ",
+            "día. /n"
+        ],
+        [
+            "C",
+            "orrebiento, ve ",
+            "cuenta esa hist",
+            "oria por las ",
+            "orillas de \n\nLo",
+            "ria las g",
+            "entes diles ",
+            "que ",
+            "donde  co",
+            "men du",
+            "ermen sus h",
+            "ijos tienen co",
+            "mida cob",
+            "ijo en la c",
+            "asa de \n\nDurn",
+            "e. /n"
+        ],
+        [
+            "Abest",
+            "ue durne, a",
+            "bestue du",
+            "rne, ",
+            "euscal",
+            "ería sure",
+            "quín de ",
+            "suave",
+            "zte. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 107,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "3GAzNPu7r3c",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -1,1 +1,77 @@
-{"cancion": "identidad", "banda": "silvio-rodriguez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "A", "E"]}], "orden_partes": [0, 0, 0, 0]}, "letras": [["porque s", "\u00f3lo hubo un cant", "ar,/n"], ["la voz q", "ue nos vio junta", "r./nyo vengo a "], ["confundirme al f", "uego de tu amo", "r,/nyo vengo a "], ["confundirme al f", "uego de tu amo", "r,"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "uXQVkjqB5T0", "delay": 0}]}
+{
+    "cancion": "identidad",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1
+        ]
+    },
+    "letras": [
+        [
+            "Los latinoamericano ",
+            "que queremos hacer, ",
+            "que queremos tener una id",
+            "entidad, que respetamos qu",
+            "ienes somos, que estamos con",
+            "scientes de la necesidad de esa identida",
+            "d, de que no muera esa identida",
+            "d, tenemos uno de los más ",
+            "grandes claros ejemplos en la obra ",
+            "de \n\nVioleta \n\nParra. /n"
+        ],
+        [
+            "Porque  es tomar lo nuest",
+            "ro, la tierra, pero no ",
+            "quedarnos  en esos colores, no que",
+            "darnos en lo que nos propone la ",
+            "tierra, si",
+            "no meternos en la aventur ",
+            "de recrear t",
+            "odo eso de reinventar todo eso. "
+        ]
+    ],
+    "bpm": 107,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "uXQVkjqB5T0",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

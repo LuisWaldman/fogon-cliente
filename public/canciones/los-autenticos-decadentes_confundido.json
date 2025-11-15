@@ -2,287 +2,342 @@
     "cancion": "confundido",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "G",
+                    "Em",
+                    "G B",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "Em",
-                    "C",
-                    "D",
                     "G",
                     "Em",
                     "C",
-                    "D",
+                    "C",
+                    "G",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
                     "Em",
                     "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
                     "C",
+                    "C",
+                    "C",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Bm",
                     "Am",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G B",
+                    "B",
+                    "Em",
+                    "G C",
+                    "G/B",
+                    "D",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B",
+                    "G/B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "Em",
                     "Em",
                     "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em",
                     "C",
-                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "G",
                     "D",
                     "Em",
-                    "Bm",
+                    "Em",
                     "C",
-                    "Bm",
                     "Am",
                     "Am/G",
-                    "F",
-                    "D",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "G",
                     "D",
                     "B",
-                    "Em",
+                    "G",
                     "C",
-                    "G/B",
                     "D",
                     "C",
-                    "G/B",
-                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
                     "G",
                     "Em",
-                    "C",
-                    "D",
-                    "G",
                     "Em",
                     "C",
-                    "D",
-                    "Em",
-                    "Bm",
-                    "C",
-                    "Bm",
-                    "Am",
-                    "Em",
-                    "Bm",
-                    "C",
-                    "D",
-                    "G",
-                    "D",
-                    "Em",
-                    "Bm",
-                    "C",
-                    "Bm",
                     "Am",
                     "Am/G",
-                    "F",
-                    "D",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "G",
-                    "D",
+                    "G B",
                     "B",
-                    "Em",
-                    "C",
-                    "G/B",
-                    "D",
-                    "C",
-                    "G/B",
-                    "D",
                     "G",
-                    "D",
-                    "Em",
-                    "Bm",
-                    "C",
-                    "Bm",
-                    "Am",
-                    "Am/G",
-                    "F",
-                    "D",
-                    "G",
-                    "D",
-                    "B",
-                    "Em",
-                    "C",
+                    "G C",
                     "G/B",
                     "D",
-                    "C",
-                    "G/B",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "cesito algu",
-            "na seguridad/np"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ara contarte co",
-            "mo me siento/nun "
+            "Necesito algu",
+            "na seguridad p",
+            "ara contarte c",
+            "omo me siento, ",
+            "un momento inte",
+            "nso de intimida",
+            "d, para comparti ",
+            "sentimientos. /n"
         ],
         [
-            "momento inten",
-            "so de intimidad/np"
+            "Hasta  ayer t",
+            "odo andaba bien, ",
+            "ahora el mundo ",
+            "es tan extraño",
+            ", ¿cómo hacer p",
+            "ara distin",
+            "guir la si",
+            "nceridad del e",
+            "ngaño? \n\nEs ",
+            "que ando un poco ",
+            "confundido  últ",
+            "imamente, ",
+            "no sé si confiar en mi ",
+            "forma de actuar, e",
+            "ntregar el control d",
+            "ejarme lleva",
+            "r. /n"
         ],
         [
-            "ara compartir ",
-            "sentimientos/nHast"
+            "Como un cachorro ",
+            "adolescente  ",
+            "no puedo parar, ",
+            "tengo  un hambre ",
+            "de nunca acabar, ",
+            "me sacude un ",
+            "tsunami hormo",
+            "nal. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "a ayer, todo an",
-            "daba bien/ny a"
+            "Puede ser ",
+            "que un día en algún l",
+            "ugar encuent",
+            "re lo que yo ando buscan",
+            "do, pero de a",
+            "lgo tengo segur",
+            "idad que no ",
+            "va ser sentado espera",
+            "ndo, porque a",
+            "yer todo andaba ",
+            "bien,  aho",
+            "ra el mundo es tan extraño ",
+            "¿cómo ha",
+            "cer para dis",
+            "tinguir la ",
+            "sincerid",
+            "ad del engaño? /n"
         ],
         [
-            "hora el mun",
-            "do es t",
-            "an extraño/ncomo"
+            "Es que ando un ",
+            "poco  confundi",
+            "do últimamente, ",
+            "no sé si conf",
+            "iar en mi forma de ac",
+            "tuar, entregar el cont",
+            "rol dejarme l",
+            "levar. /n"
         ],
         [
-            " hacer para ",
-            "distinguir/nl"
+            "Como un ca",
+            "chorro adolesc",
+            "ente no puedo pa",
+            "rar, tengo ",
+            "un hambre de nunca ac",
+            "abar, me sa",
+            "cude un tsunami hor",
+            "monal. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "a sincer",
-            "idad del engaño/n"
+            "Es que an",
+            "do un poco confu",
+            "ndido últimamen",
+            "te, no sé si ",
+            "confiar  en mi forma ",
+            "de actuar, entregar el ",
+            "control dejarm ",
+            "llevar. /n"
         ],
         [
-            "Es que ando",
-            " un poco",
-            " confundido u",
-            "ltimamente/nno se si "
+            "Como ",
+            "un cachorro adole",
+            "scente no puedo ",
+            "parar,  teng",
+            "o un hambre de nunca ",
+            "acabar, me ",
+            "sacude un tsunami ",
+            "hormonal.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "confiar ",
-            "en mi forma ",
-            "de actuar/no e"
-        ],
-        [
-            "ntregar el co",
-            "ntrol y dejarm",
-            "e llevar/n"
-        ],
-        [
-            "Como un ",
-            "cachorro ",
-            "adolescente",
-            " no puedo parar/ntengo "
-        ],
-        [
-            "un hamb",
-            "re de nu",
-            "nca acabar/nme "
-        ],
-        [
-            "sacude ",
-            "un tsunami",
-            " hormonal/nPue"
-        ],
-        [
-            "de ser que un ",
-            "día en algún lugar/nen"
-        ],
-        [
-            "cuentre lo que yo",
-            " ando buscando/npero "
-        ],
-        [
-            "de algo ten",
-            "go seguridad/nqu"
-        ],
-        [
-            "e no va a ser sen",
-            "tado esperando/nPorq"
-        ],
-        [
-            "ue ayer, todo ",
-            "andaba bien/ny a"
-        ],
-        [
-            "hora el mun",
-            "do es t",
-            "an extraño/ncomo"
-        ],
-        [
-            " hacer para ",
-            "distinguir/nl"
-        ],
-        [
-            "a sincer",
-            "idad del engaño/n"
-        ],
-        [
-            "Es que ando",
-            " un poco",
-            " confundido u",
-            "ltimamente/nno se si "
-        ],
-        [
-            "confiar ",
-            "en mi forma ",
-            "de actuar/no e"
-        ],
-        [
-            "ntregar el co",
-            "ntrol y dejarm",
-            "e llevar/n"
-        ],
-        [
-            "Como un ",
-            "cachorro ",
-            "adolescente",
-            " no puedo parar/ntengo "
-        ],
-        [
-            "un hamb",
-            "re de nu",
-            "nca acabar/nme "
-        ],
-        [
-            "sacude ",
-            "un tsunami",
-            " hormonal/n"
-        ],
-        [
-            "Es que ando",
-            " un poco",
-            " confundido u",
-            "ltimamente/nno se si "
-        ],
-        [
-            "confiar ",
-            "en mi forma ",
-            "de actuar/no e"
-        ],
-        [
-            "ntregar el co",
-            "ntrol y dejarm",
-            "e llevar/n"
-        ],
-        [
-            "Como un ",
-            "cachorro ",
-            "adolescente",
-            " no puedo parar/ntengo "
-        ],
-        [
-            "un hamb",
-            "re de nu",
-            "nca acabar/nme "
-        ],
-        [
-            "sacude ",
-            "un tsunami",
-            " hormonal"
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "VnJ20MLJYCE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

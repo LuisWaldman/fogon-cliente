@@ -8,12 +8,26 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "G",
+                    "C",
+                    "C",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "A",
-                    "C",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
@@ -22,107 +36,204 @@
                     "C",
                     "D",
                     "G",
-                    "Em",
+                    "G",
                     "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
                     "C",
                     "D",
-                    "D"
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            0,
-            0
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            "  It is the e",
-            "vening of the da",
-            "y",
-            "/n"
-        ],
-        [
-            "  I sit and w",
-            "atch the children pl",
-            "ay",
-            "/n"
-        ],
-        [
-            "  Smiling faces I",
-            " can see    ",
-            "but not for me",
-            "/n"
-        ],
-        [
-            "  I sit and w",
-            "atch as tears go by",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "  My riches c",
-            "an't buy everythi",
-            "ng",
+            "It is the e",
+            "vening of the ",
+            "day.  ",
+            "",
+            "sit and w",
+            "atch the children p",
+            "lay. ",
             "/n"
         ],
         [
-            "  I want to h",
-            "ear the children si",
-            "ng",
-            "/n"
+            "Smiling faces ",
+            "can see, ",
+            "but not for me. ",
+            "",
+            "sit and watch ",
+            "as tears go ",
+            "by. /n"
         ],
         [
-            "  All I hear i",
-            "s the sound/n"
+            "My ",
+            "riches can't buy ",
+            "everything. ",
+            "",
+            "w",
+            "ant to hear the ",
+            "children sing",
+            ". /n"
         ],
         [
-            "  Of rain falling o",
-            "n the ground/n"
-        ],
-        [
-            "  I sit and w",
-            "atch as tears go by",
+            "All ",
+            "hear is the ",
+            "sound  of ra",
+            "in falling on the gro",
+            "und. ",
+            "sit and watch as ",
+            "tears go ",
+            "by. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
-        [],
-        [],
-        [],
-        [],
         [
-            "  It is the e",
-            "vening of the da",
-            "y",
-            "/n  I sit and watch the children play"
+            "It ",
+            "is the eveni",
+            "ng of the day. ",
+            "",
+            "",
+            "sit and watch ",
+            "the children pla",
+            "y. /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Doi",
+            "ng things used ",
+            "to do, th",
+            "ey think \n\nI'm new",
+            ". ",
+            "sit and watch ",
+            "as tears go ",
+            "by. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "37_J7zpD2ks",
-            "delay": 0
+            "delay": 6000.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

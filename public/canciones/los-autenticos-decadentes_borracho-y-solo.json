@@ -2,16 +2,30 @@
     "cancion": "borracho-y-solo",
     "banda": "los-autenticos-decadentes",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am G",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "A",
+                    "C7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A",
+                    "F",
                     "C",
+                    "G",
                     "G"
                 ]
             },
@@ -19,20 +33,169 @@
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "C7",
+                    "C",
+                    "F",
                     "F",
                     "C",
+                    "C",
                     "G",
-                    "C"
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "C",
+                    "C",
+                    "A",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "F",
                     "C",
                     "G",
+                    "G",
+                    "C",
+                    "C",
                     "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "A",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "G",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "C"
                 ]
             }
@@ -41,101 +204,178 @@
             0,
             1,
             2,
-            2,
-            0,
-            1
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "yo te ",
-            "conoci una noche/njusto"
+            "Yo te conocí una noche, justo antes de partir. \n\nAl principio no ",
+            "sabía  si era así me p",
+            "arecía que me mirabas ",
+            "mí. ",
+            "ahora yo vengo ",
+            "enterarme, ",
+            "que te mueres ",
+            "por mí. /n"
         ],
         [
-            " antes de partir/nque m"
+            "Quiero  suspender ",
+            "el viaje, quiero cambiar el ",
+            "pasaje para queda",
+            "rme aquí. /n"
         ],
         [
-            "e mirabas a mi./ny ahora yo vengo a enterarme"
+            "No me d",
+            "ejes as",
+            "í, tan borr",
+            "acho solo",
+            ". \n\nTan lejo ",
+            "de tu mirada, tan carga",
+            "do de palabras que no te ",
+            "puedo decir. /n"
         ],
         [
-            "/nque te mueres po"
+            "No me ",
+            "dejes as",
+            "í, que me ",
+            "vuelvo lo",
+            "co. \n\nNo quier ",
+            "esperarte un poco, quiero m",
+            "irarme en tus ojos ",
+            "besarte  así /n"
         ],
         [
-            "r mi/nquiero suspend"
+            "Yo que ",
+            "tanto había busca",
+            "do, ",
+            "alejarme de aqu",
+            "í. \n\nVia",
+            "jar para cualquier lado, p",
+            "ara borrar el pasado que ",
+            "tanto me hizo suf",
+            "rir. /n"
         ],
         [
-            "er el viaje/nquiero cambiar"
+            "Ya que estoy con mi equ",
+            "ipaje, ",
+            "sin saber que d",
+            "ecir. /n"
         ],
         [
-            " el pasaje/npara quedarme "
+            "Solo pensando en tu ima",
+            "gen que el verdadero vi",
+            "aje está dentro de ",
+            "mí. \n\nNo ",
+            "me deje ",
+            "así",
+            ", tan borracho ",
+            "solo. /n"
         ],
         [
-            "aqui/nno me dejes "
+            "Tan lejos de tu m",
+            "irada, tan cargado de ",
+            "palabras que no te puedo ",
+            "decir.  /n"
         ],
         [
-            "asi/ntan borracho y "
+            "No me de",
+            "jes así ",
+            "que me vu",
+            "elvo loco. /n"
         ],
         [
-            "solo/ntan lejos de tu"
+            "No quiero espe",
+            "rarme un poco, quiero mirar",
+            "me en tus ojos bes",
+            "arte así. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " mirada/ntan cargada de "
+            "No ",
+            "me dejes a",
+            "sí, ",
+            "tan borracho ",
+            "solo. /n"
         ],
         [
-            "palabras/nque no te puedo deci"
+            "Tan lejos de tu mirad",
+            "a, tan cargado de palabr",
+            "as que no te puedo d",
+            "ecir. /n"
         ],
         [
-            "r/nno me d"
+            "No me dejes ",
+            "así,  ",
+            "que me vuelvo ",
+            "loco.  /n"
         ],
         [
-            "ejes asi/nque me vuelvo "
+            "No quiero esperarme un ",
+            "poco, quiero mirarme en tus ",
+            "ojos besarte ",
+            "así.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "loco/nno quiero esperar n"
-        ],
-        [
-            "i un poco/nquiero mirarme en tus "
-        ],
-        [
-            "ojos/ny mirarte a"
-        ],
-        [
-            "si./n"
-        ],
-        [
-            "yo que tant",
-            "o habia buscado/nalejarme d"
-        ],
-        [
-            "e aqui/nque tanto "
-        ],
-        [
-            "me hizo sufrir/ny aqui estoy con mi equipaje"
-        ],
-        [
-            "/nsin saber qu"
-        ],
-        [
-            "e decir/nsolo pens"
-        ],
-        [
-            "ando en tu imagen/ny que el "
-        ],
-        [
-            "verdadero viaje/nesta dent"
-        ],
-        [
-            "ro de mi."
+            "No me dejes así, que me vuelvo loco. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "jlg1TbV1zIs",
-            "delay": 0
+            "delay": 8000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

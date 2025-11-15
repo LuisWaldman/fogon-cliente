@@ -1,1 +1,634 @@
-{"cancion": "con-diez-anos-de-menos", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "D", "F", "G4", "G", "Em", "Am"]}, {"nombre": "parte2", "acordes": ["G", "A", "G", "D"]}], "orden_partes": [0, 1, 1, 1, 1]}, "letras": [["Si fuera diez a\u00f1os m\u00e1s jo", "ven que feliz/ny"], [" que descamisado el ", "tono de deci", "r/nc"], ["ada palabra desat", "ando un temporal/nSo"], ["lo pa", "ra verle, sol", "o para", " amarle", "", "", "", "/n"], ["solo p", "ara serle, so", "lo y n", "o olvida", "rle.", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "cNfgyYD5_9E", "delay": 0}]}
+{
+    "cancion": "con-diez-anos-de-menos",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "Am",
+                    "G4",
+                    "Am",
+                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "D",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G4",
+                    "G4",
+                    "G4"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C G",
+                    "C",
+                    "C G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G4",
+                    "G4",
+                    "G4"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G4",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Si fuera diez años ",
+            "más joven que feliz, ",
+            "que descamisado el ",
+            "tono de decir, \n\nCa",
+            "da palabra desatando un ",
+            "temporal,  ",
+            "enloqueciendo  la etiqueta oca",
+            "sional, \n\nLos años ",
+            "son,  pues mi mordaza ",
+            "mujer, sé demasi",
+            "ado, me convierto en mi sa",
+            "ber, \n\nQuisiera verte c",
+            "onocido años atrás, ",
+            "para sacar chispa ",
+            "del agua que me das, \n\nP",
+            "ara empuñar la levo",
+            "sía el candor, ",
+            "saber olv",
+            "idar m",
+            "ejor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est ",
+            "mujer propone que sal",
+            "te me es",
+            "tre",
+            "llé, /n"
+        ],
+        [
+            "Contra un muro de piedr",
+            "as que alza en el c",
+            "ielo, ",
+            "",
+            "como comb",
+            "ustible me llena de a",
+            "nhelo, ",
+            "/n"
+        ],
+        [
+            "De besos ",
+            "sin promesas sentencias ",
+            "sin leyes",
+            ", ",
+            "/n"
+        ],
+        [
+            "Esta mujer propone un ",
+            "pacto que selle ",
+            "/n"
+        ],
+        [
+            "La ",
+            "tierra con el viento, ",
+            "la luz con la so",
+            "mbra, ",
+            "/n"
+        ],
+        [
+            "Invoca los misteri",
+            "os del tiempo me no",
+            "mbra, /n"
+        ],
+        [
+            "E",
+            "sta mujer pr",
+            "opone que salte me ",
+            "estrellé,  /n"
+        ],
+        [
+            "Solo p",
+            "ar",
+            "a v",
+            "erle, ",
+            "so",
+            "lo p",
+            "ara a",
+            "marle, ",
+            "/n"
+        ],
+        [
+            "So",
+            "lo para ",
+            "ser",
+            "le, ",
+            "so",
+            "lo ",
+            "no olvidarl",
+            "e. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Con diez añ",
+            "os de menos no habrí ",
+            "esperado",
+            ", /n"
+        ],
+        [
+            "Por sus p",
+            "roposiciones hubier ",
+            "corrido, ",
+            "/n"
+        ],
+        [
+            "Como ",
+            "una fiera el hecho en que nos ",
+            "conoc",
+            "imos, ",
+            "/n"
+        ],
+        [
+            "Impúdico sangriento ",
+            "divino ala",
+            "do, ",
+            "/n"
+        ],
+        [
+            "Con diez años de m",
+            "enos habría blasf",
+            "emado, ",
+            "/n"
+        ],
+        [
+            "Con sabia de su cuerpo ",
+            "quemaría  los te",
+            "mplos, /n"
+        ],
+        [
+            "Pa",
+            "ra que los cobar",
+            "des tomaran ej",
+            "emplo, ",
+            "/n"
+        ],
+        [
+            "Con diez años de me",
+            "nos hubiera ma",
+            "tado, /n"
+        ],
+        [
+            "Solo p",
+            "ar",
+            "a ve",
+            "rle",
+            "s",
+            "ol",
+            "o para am",
+            "arle, ",
+            "/n"
+        ],
+        [
+            "Sol ",
+            "para s",
+            "erl",
+            "e, ",
+            "so",
+            "lo no o",
+            "lvidarle, ",
+            "/n"
+        ],
+        [
+            "S",
+            "olo par ",
+            "ver",
+            "le, ",
+            "so",
+            "lo par",
+            "a amarl",
+            "e, /n"
+        ],
+        [
+            "S",
+            "olo par",
+            "a ser",
+            "le, ",
+            "s",
+            "olo ",
+            "no olvidar",
+            "le. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "So",
+            "lo para verle, solo para amarle, ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "So",
+            "lo para verle, solo para amarle, ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Solo para verle, solo para amarle, "
+        ]
+    ],
+    "bpm": 112,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "cNfgyYD5_9E",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

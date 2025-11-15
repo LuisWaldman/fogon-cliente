@@ -1,1 +1,510 @@
-{"cancion": "fabula-de-los-3-hermanos", "banda": "silvio-rodriguez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C", "D"]}, {"nombre": "parte2", "acordes": ["Am", "Em", "Bm", "C", "B", "Am", "G"]}, {"nombre": "parte3", "acordes": ["D/F#"]}, {"nombre": "parte4", "acordes": ["G", "D/F#", "Em", "C", "B"]}, {"nombre": "parte5", "acordes": ["Am", "D", "C", "B", "C", "B", "Am", "G"]}], "orden_partes": [0, 0, 1, 2, 0, 0, 1, 2, 3, 4, 3, 4, 2, 0, 0, 1, 2, 0, 0, 1, 2, 3, 4, 3, 4, 2, 0, 0, 1, 2, 0, 0, 1, 2, 3, 4, 3, 4, 2]}, "letras": [[], [], [], [], [], [], [], ["De tres hermanos el m=E1s g", "rande se fue", "/n     "], ["Por la vereda a descubr", "ir y a fundar", "/n     "], ["Y para nunca equivo", "carse o errar/n     "], ["Iba despierto y", " bien atento ", "a cuanto iba a", " pisar", "", "/n     "], ["De tanto en esta posi", "ci=F3n camina", "r/n     "], ["Ya nunca el cuello se le ", "enderez=F", "3/n     "], ["Y anduvo esclavo ya de l", "a precauci=F3n/n     "], ["Y se hizo viejo, ", "queriendo ir lejos, c", "on su corta v", "isi=F", "3n", "/n     "], ["Eh,", "Eh,Eh ", "       Eh,", "Eh,E", "h", "/n     "], ["Ojo qu", "e no mir", "a m=E1", "s all=", "E1 no ayu", "da el pie", "/n     "], ["Uh,", "Uh,Uh  ", "      Uh,U", "h,Uh", "", "/n     "], ["=D3yeme est", "o y di", "me, dim", "e lo", " que pien", "sas t", "=F ", "/n     "], ["De tres hermanos el de", " en medio se fue", "/n     "], ["Por la vereda a descub", "rir y a fundar", "/n     "], ["Y para nunca equivoc", "arse o errar/n     "], ["Iba despierto y", " bien atento a", "l horizont", "e igua", "l", "/n     "], ["Pero este chico listo ", "no pod=EDa ve", "r/n     "], ["La piedra, el hoyo que ven", "c=EDa a su pi", "e/n     "], ["Y revolcado siempre s", "e la pas=F3/n     "], ["Y se hizo viejo, q", "ueriendo ir lejos, ", "a donde no ", "lleg=F", "3", "/n     "], ["Eh,", "Eh,Eh ", "       Eh,", "Eh,E", "h", "/n     "], ["Ojo qu", "e no mir", "a m=E1", "s ac=E", "1 tampo", "co fue", "/n     "], ["Uh,", "Uh,Uh ", "       Uh,", "Uh,U", "h", "/n     "], ["=D3yeme", " esto y ", "dime, di", "me lo", " que pie", "nsas t", "=F ", "/n     "], ["De tres hermanos el pe", "que=F1o parti", "=F3/n     "], ["Por la vereda a descubr", "ir y a fundar", "/n     "], ["Y para nunca equivoc", "arse o errar/n     "], ["Una pupila l", "levaba arriba y ", "la otra en ", "el anda", "r", "/n     "], ["Y camin=F3, vereda ad", "entro, el que m=", "E1s/n     "], ["Ojo en camino y ojo e", "n lo por venir", "/n     "], ["Y cuando vino el tiempo d", "e resumir/n     "], ["Ya su mirada es", "taba extraviada en", "tre el estar ", "y el ", "ir", "/n     "], ["Eh,", "Eh,Eh ", "       Eh,", "Eh,E", "h", "/n     "], ["Ojo pue", "sto en todo", " ya ", "ni s", "abe lo qu", "e ve", "/n     Uh,Uh,Uh        Uh,Uh,Uh"], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "-96nfOjWvQY", "delay": 0}]}
+{
+    "cancion": "fabula-de-los-3-hermanos",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Bm",
+                    "C",
+                    "B",
+                    "B",
+                    "B",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "B",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Bm",
+                    "C",
+                    "C",
+                    "B",
+                    "B",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "D",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "B",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B",
+                    "D",
+                    "C",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "C",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De tres ",
+            "h",
+            "e",
+            "r",
+            "m",
+            "a",
+            "n",
+            "os ",
+            "el más grande se ",
+            "fue \n\nPor ",
+            "la vereda de",
+            "scubrir afu",
+            "ndar pa",
+            "ra nunca equivoca",
+            "rse err",
+            "ar \n\nIba des",
+            "pierto b",
+            "ien atento ",
+            "cuanto iba ",
+            "pisa",
+            "r \n\nDe ",
+            "tanto en esta pos",
+            "ición camin",
+            "ar \n\nYa nunc",
+            "a el cuello se le ",
+            "enderezó ",
+            "anduvo escl",
+            "avo ya de la p",
+            "recaución ",
+            "se hizo vi",
+            "ejo queriendo ir ",
+            "lejos \n\nCon ",
+            "su corta v",
+            "isión ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ojo que no mira ",
+            "más allá no ayuda ",
+            "el pie ",
+            "",
+            "/n"
+        ],
+        [
+            "Óyeme est",
+            "o dime, dime lo ",
+            "que piensas tú ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Óyem ",
+            "esto dime, dime lo que piensas tú ",
+            "para nunca eq",
+            "uivocarse e",
+            "rrar \n\nIba ",
+            "despierto ",
+            "bien ate",
+            "nto al ho",
+            "rizonte ig",
+            "ual \n\nP",
+            "ero este chic",
+            "o listo no pod",
+            "ía ver \n\nLa ",
+            "piedra en lo yo que ",
+            "vencía su ",
+            "pie r",
+            "ebocado siempre ",
+            "se la pas",
+            "ó se hizo ",
+            "viejo  quer",
+            "iendo ir lejos ",
+            "¿\nA dónde nos ",
+            "llegó? ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Óyem",
+            "e esto dime, dime lo ",
+            "que piensas ",
+            "tú ",
+            "/n"
+        ],
+        [
+            "Ó",
+            "yeme esto dime, dime ",
+            "lo que piensas ",
+            "tú ",
+            "",
+            "/n"
+        ],
+        [
+            "Óyeme esto dime, dime lo que p",
+            "iensas tú ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Óyeme esto dime, dime lo que piensas tú \n\nDe t",
+            "res hermanos el ",
+            "pequeño par",
+            "tió \n\nPor la ",
+            "vereda descubr",
+            "ir afundar ",
+            "para nu",
+            "nca equivocars ",
+            "errar /n"
+        ],
+        [
+            "Una pup",
+            "ila llevab",
+            "a arriba ",
+            "la otra en el ",
+            "anda ",
+            "c",
+            "amino, vereda ",
+            "dentro el que más /n"
+        ],
+        [
+            "Ojo en c",
+            "amino ojo en ",
+            "lo por venir ",
+            "cuando vino ",
+            "el tiempo de ",
+            "resumir  ",
+            "su mirad",
+            "a estaba ext",
+            "raviada entr ",
+            "el estar ",
+            "el ir ",
+            "",
+            "",
+            "¿/n"
+        ],
+        [
+            "Cómo he puesto en todo? /n"
+        ],
+        [
+            "Ya ni sabes lo ",
+            "que ves ",
+            "",
+            "/n"
+        ],
+        [
+            "Óyeme est ",
+            "dime, dime lo ",
+            "que piensas tú ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ó",
+            "yeme esto dime, di",
+            "me lo que pie",
+            "nsas ",
+            "tú ",
+            "",
+            "/n"
+        ],
+        [
+            "Óyeme esto dime, dime lo que piensas tú \n\nTodo ya ",
+            "ni sabes lo que ",
+            "ves ",
+            "",
+            "/n"
+        ],
+        [
+            "Óyeme esto ",
+            "dime, dime lo que ",
+            "piensas tú ",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "-96nfOjWvQY",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

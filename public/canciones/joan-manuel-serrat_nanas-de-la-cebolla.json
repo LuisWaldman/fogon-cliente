@@ -1,1 +1,646 @@
-{"cancion": "Nanas-de-la-cebolla", "banda": "joan-manuel-serrat", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "B", "E"]}, {"nombre": "parte2", "acordes": ["E", "B7", "E", "B", "C", "B", "E", "A"]}], "orden_partes": [0, 1, 0, 0, 1, 0]}, "letras": [["carcha/nce"], ["rrada y pobre.", "/nEscarcha de tu"], ["s d\u00edas/n"], ["y de mis noc", "hes./n"], ["Hambre y cebolla,/nhielo negro "], ["y escarcha/n"], ["grande y redond", "a./n"], [], [" hambre/n"], ["mi ni\u00f1o estab", "a./nCon sangre de "], ["cebolla/n"], ["se amamant", "aba./n"], ["Pero tu sangre,/nescarchada d"], ["e az\u00facar,/n"], ["cebolla y hambr", "e./n"], ["Una muj", "er mor", "ena", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "Rtn9BJmzVhE", "delay": 0}]}
+{
+    "cancion": "Nanas-de-la-cebolla",
+    "banda": "joan-manuel-serrat",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "B7",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La ",
+            "cebolla es e",
+            "scarc",
+            "ha cerrada ",
+            "",
+            "",
+            "pobre, escarcha ",
+            "de tus día",
+            "s de ",
+            "mis noc",
+            "hes. /n"
+        ],
+        [
+            "H",
+            "ambre ",
+            "ceb",
+            "oll",
+            "a, hiel ",
+            "negro esc",
+            "archa, ",
+            "grande re",
+            "donda. ",
+            "",
+            "/n"
+        ],
+        [
+            "En ",
+            "la cuna ",
+            "del hambr",
+            "e mi niño e",
+            "staba, ",
+            "",
+            "",
+            "con sangre de ",
+            "cebolla  ",
+            "se am",
+            "amanta",
+            "ba. /n"
+        ],
+        [
+            "Pe",
+            "ro tu s",
+            "angr",
+            "e, ",
+            "",
+            "escarchada de a",
+            "zúcar, ",
+            "cebolla ",
+            "hambre.  ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Una m",
+            "ujer mor",
+            "ena, ",
+            "resuelta en l",
+            "un",
+            "a, ",
+            "se der",
+            "rama hilo h",
+            "ilo so",
+            "bre la cu",
+            "na. ",
+            "/n"
+        ],
+        [
+            "Rí",
+            "ete ni",
+            "ño, ",
+            "",
+            "que te ",
+            "traigo la l",
+            "una ",
+            "cuando  es pr",
+            "eciso. /n"
+        ],
+        [
+            "Tu ",
+            "r",
+            "i",
+            "sa ",
+            "me hace libr",
+            "e, ",
+            "me pone ",
+            "al",
+            "as",
+            "soledades me ",
+            "quita ",
+            "cárc",
+            "el me ar",
+            "ranc",
+            "",
+            "boca que v",
+            "uela. ",
+            "/n"
+        ],
+        [
+            "C",
+            "orazón que en ",
+            "tus lab",
+            "ios r",
+            "eda",
+            "mpa",
+            "guea. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es tu ",
+            "risa la esp",
+            "ada más v",
+            "ictori",
+            "osa, ",
+            "",
+            "vencedor ",
+            "de las flor",
+            "es ",
+            "las alon",
+            "dras, ",
+            "",
+            "r",
+            "ival del s",
+            "ol. ",
+            "/n"
+        ],
+        [
+            "Por venir de ",
+            "mis hue",
+            "sos ",
+            "de mi a",
+            "mo",
+            "",
+            "/n"
+        ],
+        [
+            "De",
+            "sperte de ser ",
+            "niño,  ",
+            "nunca ",
+            "despie",
+            "rtes. ",
+            "/n"
+        ],
+        [
+            "Triste llevo la ",
+            "boca",
+            ", rí",
+            "ete siempre ",
+            "",
+            "",
+            "siempre ",
+            "en la cu",
+            "na. ",
+            "/n"
+        ],
+        [
+            "Defendiendo  la ",
+            "ri",
+            "sa, ",
+            "pluma por pl",
+            "uma. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que al oc",
+            "tavo mes r",
+            "íes ",
+            "con cinco a",
+            "zares",
+            "",
+            "con c",
+            "inco dim",
+            "inut",
+            "feroc",
+            "idades",
+            "",
+            "",
+            "con cinco d",
+            "iente",
+            "s. /n"
+        ],
+        [
+            "Com",
+            "o cinco jad",
+            "emines ",
+            "adolesc",
+            "entes. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Frontera  de los b",
+            "esos s",
+            "erán ma",
+            "ñana. ",
+            "/n"
+        ],
+        [
+            "Cuando  en ",
+            "la dentad",
+            "ura sie",
+            "ntas un a",
+            "lma, ",
+            "",
+            "",
+            "sientas un f",
+            "uego. ",
+            "/n"
+        ],
+        [
+            "Correr die",
+            "ntes abaj",
+            "o, b",
+            "uscando el ce",
+            "ntro. ",
+            "",
+            "/n"
+        ],
+        [
+            "V",
+            "uela ni",
+            "ño en la do",
+            "ble lun",
+            "a del pe",
+            "cho",
+            "",
+            "el t",
+            "riste de cebo",
+            "lla es ",
+            "tu satisfecho. ",
+            "",
+            "/n"
+        ],
+        [
+            "No ",
+            "te der",
+            "rum",
+            "bes, ",
+            "no sepas lo ",
+            "que pa",
+            "sa, ",
+            "",
+            "ni lo que ",
+            "ocur",
+            "re. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No te derrumbes, no sepas lo que pasa, ni lo que ocurre. "
+        ]
+    ],
+    "bpm": 161,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Rtn9BJmzVhE",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

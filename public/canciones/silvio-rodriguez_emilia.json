@@ -1,1 +1,387 @@
-{"cancion": "emilia", "banda": "silvio-rodriguez", "escala": "Dm/Bb", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm/Bb", "C/D", "D#", "F", "D#", "F", "G", "G7", "A#m", "Dm/Bb", "C/D", "Dm/Bb", "C/D", "Dm/Bb", "C/D", "D#", "F", "D#", "F", "G", "G7", "A#m", "Dm/Bb", "C/D", "Dm/Bb", "C/D", "F", "Dm", "F", "Am", "F", "A#", "C", "G7", "F", "G", "C", "F", "G", "C", "F", "G7", "C", "Am", "A#", "F", "C", "Dm", "A#", "F", "Am", "Dm/Bb", "C/D", "Dm/Bb", "C/D", "D#", "F", "D#", "F", "G", "G7", "A#m", "Dm/Bb", "C/D", "Dm/Bb", "C/D", "Dm/Bb", "C/D"]}], "orden_partes": [0]}, "letras": [["Emilia, t", "us ruinas/nlas l"], ["e\u00ed con buena v", "oz,/ntienen "], ["puertas como t", "\u00fa./nQu\u00e9 ri"], ["d\u00edculas mis c", "artas,/nQu\u00e9 rid\u00edc"], ["ulas las sombras de mis ", "sue\u00f1os.", "/n"], ["llorando", "/n"], [], ["ido junto con cada ", "canci\u00f3n,/n"], ["escondida en un b", "a\u00fal/ncomo u"], ["n signo inevit", "able,/ny hay "], ["an\u00e9cdotas tir\u00e1ndome ", "del ce\u00f1o", "./n"], ["llorando", "/nQ"], ["u\u00e9 dir\u00e1 tu instinto cuando ", "sienta esta canci\u00f3n/ny qu\u00e9 dir\u00e1s t\u00fa, qu"], ["e te acercas/na la m\u00e1xima distancia e"], ["ntre nosotros./nQui\u00e9n conoce que un sol"], ["dado moribundo te c", "antaba,/nque hab\u00eda olores de una sel"], ["va,/nque hab\u00eda c"], ["ines, que llo", "v\u00eda./n"], ["Vallejo as", "\u00ed nos descubri", ",/n"], ["Byron esta", "ba en su lugar.", "/n"], ["Todo pasaba con nos", "otros./n"], ["Emilia, qu", "e horribleme", "nte hermoso", "/nera aquel ti"], ["empo./n"], ["Que horrible", "mente hermo", "so/nera aquel "], ["tiempo.", "/n"], ["Emilia, q", "u\u00e9 pasa,/n"], ["cu\u00e1l resaca nos l", "lev\u00f3/n"], ["al silencio, a reco", "rdar./n"], ["Alg\u00fan viento nos ha", " dado/n"], ["y en sus puntas discutimos con", " la muert", "e/n"], ["llorando", "/n"], ["Emilia.", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "ZR32Ra5PB9U", "delay": 0}]}
+{
+    "cancion": "emilia",
+    "banda": "silvio-rodriguez",
+    "escala": "Dm/Bb",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "G",
+                    "Am",
+                    "F",
+                    "G7",
+                    "Dm/Bb",
+                    "Dm",
+                    "C",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm/Bb",
+                    "Dm/Bb",
+                    "A#m",
+                    "A#m",
+                    "D#",
+                    "D#",
+                    "G",
+                    "C/D",
+                    "A#m",
+                    "A#m",
+                    "A#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm/Bb",
+                    "Dm/Bb",
+                    "Dm/Bb",
+                    "Dm/Bb",
+                    "D#",
+                    "D#",
+                    "F",
+                    "F",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G7",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm/Bb",
+                    "Dm/Bb",
+                    "C/D",
+                    "C/D",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "F Dm/Bb",
+                    "Am",
+                    "C/D",
+                    "C/D",
+                    "C/D",
+                    "F",
+                    "F",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A#",
+                    "C",
+                    "C",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A#",
+                    "Dm/Bb",
+                    "D#",
+                    "D#",
+                    "D#",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est ",
+            "es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Emilia, ",
+            "",
+            "tus ",
+            "rui",
+            "nas las ",
+            "leí con buena v",
+            "oz, tienen puertas c",
+            "omo tú, que r",
+            "idículas mis cartas ",
+            "que ridículas las s",
+            "ombras de mis sue",
+            "ños. ",
+            "/n"
+        ],
+        [
+            "Qué bien ",
+            "te recu",
+            "erdo l",
+            "lor",
+            "and",
+            "o. \n\nEm",
+            "ilia, ",
+            "",
+            "has ido ",
+            "ju",
+            "nt",
+            "con cada canción ",
+            "escondida  en un ",
+            "baúl,  como un ciclo ",
+            "inevitable,  hay ",
+            "anécdotas tirándo",
+            "me del señor",
+            ". /n"
+        ],
+        [
+            "Qué ",
+            "bien te ",
+            "recuer",
+            "do llora",
+            "ndo. ",
+            "/n"
+        ],
+        [
+            "Qué dirá tu ",
+            "instinto  cuando sient ",
+            "esta canción, qué ",
+            "dirás  tú que te acer",
+            "cas la máxima d",
+            "istancia entre nosotros /n"
+        ],
+        [
+            "Quién conoce que un s",
+            "oldado moribundo ",
+            "te cantaba, que había o",
+            "lores de una selva, ",
+            "que había cines que l",
+            "lovían. \n\nV",
+            "alle \n\nJuás ",
+            "nos desc",
+            "ubrió. \n\nB",
+            "yron estaba en ",
+            "su lugar, ",
+            "todo p",
+            "asaba con nos",
+            "otros, /n"
+        ],
+        [
+            "Emilia ",
+            "qué ",
+            "horriblemente h",
+            "ermoso era a",
+            "quel tiempo. /n"
+        ],
+        [
+            "Qué ",
+            "horriblemente ",
+            "hermo",
+            "so era aquel t",
+            "iempo. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Emilia, ",
+            "qué pasa ",
+            "/n"
+        ],
+        [
+            "Cuál re",
+            "zacán nos llevó, ",
+            "al silencio va reco",
+            "rdar, algún viento nos ",
+            "ha dado, en sus pu",
+            "ntas discutimos con ",
+            "la muerte. /n"
+        ],
+        [
+            "Qué ",
+            "no ",
+            "te ",
+            "sorpren",
+            "da llo",
+            "ran",
+            "do, /n"
+        ],
+        [
+            "Emilia, ",
+            "llo",
+            "ran",
+            "do, ",
+            "/n"
+        ],
+        [
+            "Emilia. ",
+            "",
+            "/n"
+        ],
+        [
+            "Llorando, ",
+            "/n"
+        ],
+        [
+            "Emilia. "
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "ZR32Ra5PB9U",
+            "delay": 8000.0
+        }
+    ],
+    "calidad": 1
+}

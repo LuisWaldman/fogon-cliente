@@ -2,194 +2,311 @@
     "cancion": "la-paloma-y-el-gavilan",
     "banda": "los-autenticos-decadentes",
     "escala": "B7",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "C",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B7",
-                    "E",
                     "B7",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
+                    "E",
                     "E",
                     "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "B7",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B7",
                     "B7",
                     "E",
                     "B7",
-                    "Am",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
-        [],
         [
-            "dón/nY es ahora cuando lam"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ento/nEl haberte dado t"
+            "Nunca apre",
+            "ndiste pedir p",
+            "erdón",
+            "es ahora cuando l",
+            "amento, ",
+            "el haberte dado ",
+            "tanto,  ",
+            "aumentando tu c",
+            "rueldad. /n"
         ],
         [
-            "anto/nAumentando tu crueld"
+            "Yo solo sé ahora cuando ",
+            "sufro ",
+            "tu rechazo sin tu ",
+            "ira, ",
+            "mientras con tu raudo ",
+            "vuelo ",
+            "vas marchitando otr",
+            "a vida. \n\nTe ",
+            "llevaste  tantas hitas ",
+            "te fuiste de mi vida, llo",
+            "rando de parada sin ",
+            "parar.  \n\nMal ",
+            "de amor, ese es tu nombre con ",
+            "que te has venido, el miedo es de ",
+            "cuidar los que te atrapan en la ",
+            "vida. \n\nLina ",
+            "paloma,  lina ",
+            "paloma,  ",
+            "mi corazón de duelo aún ",
+            "está. \n\nLina ",
+            "paloma,  lina ",
+            "paloma, ",
+            "cuidando que te atrape en ",
+            "la vida. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ad/nYo sólo se ahora cuanto "
+            "Tu amor jurado ",
+            "infini",
+            "to se ha apagado com",
+            "o una llama /n"
         ],
         [
-            "sufro/nTus rechazos y tu"
+            "Me dejaste t",
+            "riste sol",
+            "o en el medio ",
+            "de la nada. /n"
         ],
         [
-            " ira/nMientras con tu raudo vu"
+            "Yo solo sé ahor ",
+            "cuando sufr",
+            "o, tu rechazo ",
+            "sin tu ira, ",
+            "mientras con tu ",
+            "raudo vuel",
+            "o, vas marchita",
+            "ndo otra vida. /n"
         ],
         [
-            "elo/nVas marchitando otras v"
+            "Te llevaste tantas hit",
+            "as te fuiste de mi vida",
+            ", llorando de parada ",
+            "sin parar. /n"
         ],
         [
-            "idas/nTe llev"
+            "Mal de amor, ese es tu nombr",
+            "e con que te has venido, el mie",
+            "do es de cuidar los que te atra",
+            "pan en la vida. \n\nLi",
+            "na paloma, ",
+            "lina paloma ",
+            "mi corazón de du",
+            "elo aún está. /n"
         ],
         [
-            "aste tus cositas/nY te f"
+            "Lina paloma, ",
+            "lina paloma",
+            ", cuidando que te atr",
+            "ape el gavilan. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uiste de mi vida/nYo ahora"
+            "Lina paloma, ",
+            "lina paloma",
+            ", cuidando que te es",
+            "conde el gavilan /n"
         ],
         [
-            " ando de parranda sin para",
-            "r/nMal de "
-        ],
-        [
-            "amores es tu nombre/nCoqueteas d"
-        ],
-        [
-            "e nido en nido/nTen cuid"
-        ],
-        [
-            "ado que  atrapa el gavil",
-            "n/nLinda pal"
-        ],
-        [
-            "oma, linda palo",
-            "ma/nMi c"
-        ],
-        [
-            "orazón de duelo aún es",
-            "tá/nLinda pal"
-        ],
-        [
-            "oma, linda palo",
-            "ma/nCuid"
-        ],
-        [
-            "ado que te atrapa el gavil",
-            "n/n"
-        ],
-        [],
-        [
-            "nito/nSe apagó como una l"
-        ],
-        [
-            "lama/nMe dejaste triste y s"
-        ],
-        [
-            "olo/nEn el medio de la n"
-        ],
-        [
-            "ada/nYo sólo se ahora cuanto "
-        ],
-        [
-            "sufro/nTus rechazos y tu"
-        ],
-        [
-            " ira/nMientras con tu raudo vu"
-        ],
-        [
-            "elo/nVas marchitando otras v"
-        ],
-        [
-            "idas/nTe llev"
-        ],
-        [
-            "aste tus cositas/nY te f"
-        ],
-        [
-            "uiste de mi vida/nYo ahora"
-        ],
-        [
-            " ando de parranda sin para",
-            "r/nMal de "
-        ],
-        [
-            "amores es tu nombre/nCoqueteas d"
-        ],
-        [
-            "e nido en nido/nTen cuid"
-        ],
-        [
-            "ado que  atrapa el gavil",
-            "n/nLinda pal"
-        ],
-        [
-            "oma, linda palo",
-            "ma/nMi c"
-        ],
-        [
-            "orazón de duelo aún es",
-            "tá/nLinda pal"
-        ],
-        [
-            "oma, linda palo",
-            "ma/nCuid"
-        ],
-        [
-            "ado que te atrapa el gavil",
-            "n/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Cuidado que te c",
+            "ome el gavila",
+            "n, cuidado que te c",
+            "ome el ga",
+            "vil",
+            "an. ",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kJVg2NmusHA",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

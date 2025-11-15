@@ -1,1 +1,350 @@
-{"cancion": "el-problema", "banda": "silvio-rodriguez", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "F7M", "F7M/F#", "F", "Em/F"]}, {"nombre": "parte2", "acordes": ["C", "Dm", "G", "C", "Gm", "C", "F", "Em/F"]}, {"nombre": "parte3", "acordes": ["Em", "Am", "F", "Em/F", "E", "Am", "G", "F"]}], "orden_partes": [0, 1, 2]}, "letras": [["ema n", "o es s", "i te buscas o no m\u00e1s problemas/n "], ["       El problem", "a no es / vi", "vir demostrando/n     "], ["  A uno que te exi", "ge / y", " anda mendigando", "", "/n  "], ["    El problema no", " es / repetir el aye", "r/n       Como f\u00f3rmula para"], [" salvarse/n  "], ["     El problema no", " es jugar ", "a darse", "  / El problema no", " es de ", "ocasi\u00f3n"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "IXCk0fyrk2M", "delay": 0}]}
+{
+    "cancion": "el-problema",
+    "banda": "silvio-rodriguez",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "F",
+                    "Am",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F7M",
+                    "F7M/F#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Em/F",
+                    "Em/F",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Em/F",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "Em/F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F Am",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M",
+                    "F7M"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El problem ",
+            "no es ",
+            "si te buscas ",
+            "no más problemas. /n"
+        ],
+        [
+            "El probl",
+            "ema no es ",
+            "ser capaz de vol",
+            "ver empezar. /n"
+        ],
+        [
+            "El pr",
+            "oblema no es vi",
+            "vir demostrando ",
+            "",
+            "uno que te exige ",
+            "",
+            "anda mendigando. ",
+            "/n"
+        ],
+        [
+            "El problema no ",
+            "es repetir el a",
+            "yer como fórmula pa",
+            "ra salvarse. /n"
+        ],
+        [
+            "El problema no es ",
+            "jugar darse. /n"
+        ],
+        [
+            "El problema no es de ",
+            "ocasión. /n"
+        ],
+        [
+            "El problema señor ",
+            "sigue  siéntose para ",
+            "amor.  ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El problema no ",
+            "es de ",
+            "quien vino se fue ",
+            "viceversa. /n"
+        ],
+        [
+            "El problema no ",
+            "es de los ni",
+            "ños que ostenta",
+            "n papás. /n"
+        ],
+        [
+            "El problema no ",
+            "es de quien s",
+            "aca cuenta recu",
+            "enta su ",
+            "bols",
+            "illo suma lo ",
+            "que resta. /n"
+        ],
+        [
+            "El ",
+            "problema no es de ",
+            "la moda mundial ni ",
+            "de que haya tan mala mem",
+            "oria. \n\nEl ",
+            "problema no queda en la ",
+            "gloria  ni en que ",
+            "falte  tesón sudor",
+            ". \n\nEl problema s",
+            "eñor sigue siént",
+            "ose para amo",
+            "r. ",
+            "",
+            "/n"
+        ],
+        [
+            "El pr",
+            "oblema no es ",
+            "despeñarse ",
+            "en abismos de su",
+            "eños porque hoy ",
+            "no llegó al ",
+            "futuro sangr",
+            "ado de ayer. /n"
+        ],
+        [
+            "El problem ",
+            "no es que el ti",
+            "empo se entén si ext",
+            "ravivo cuan",
+            "do hay juvent",
+            "udes soñan",
+            "do desvíos. ",
+            "/n"
+        ],
+        [
+            "El problema no es da",
+            "rle un hacha al dolor ",
+            "hacer leña con todo la p",
+            "alma. \n\nEl ",
+            "problema vital es el ",
+            "alma. \n\nEl pro",
+            "blema es de resurrección. /n"
+        ],
+        [
+            "El problem ",
+            "señor sigue sié",
+            "ntose para amo",
+            "r. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El problema no queda en la gloria ni en que falte tesón sudor. "
+        ]
+    ],
+    "bpm": 99,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "IXCk0fyrk2M",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

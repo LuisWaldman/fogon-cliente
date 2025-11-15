@@ -2,174 +2,513 @@
     "cancion": "trasnoche",
     "banda": "los-autenticos-decadentes",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "F#",
+                    "B",
+                    "G",
+                    "F",
+                    "C",
+                    "C",
                     "C",
                     "G",
-                    "C"
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
-                    "Dm",
-                    "F",
-                    "E",
+                    "G",
+                    "G",
                     "C",
                     "Am",
-                    "Dm",
-                    "G"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Dm",
-                    "G",
+                    "F",
+                    "F",
+                    "F",
                     "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Am",
-                    "Dm",
-                    "G",
                     "C",
                     "Am",
-                    "Dm",
-                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
             3,
-            0,
-            1,
-            2,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
         ]
     },
     "letras": [
-        [],
         [
-            "Noche",
-            " tras noche/nuna vez m"
-        ],
-        [
-            "ás te encontra",
-            "ré/nnunca es muy t"
-        ],
-        [
-            "arde/nen "
-        ],
-        [
-            "casa no me esp",
-            "eran/nno hay "
-        ],
-        [
-            "nada en la helader",
-            "a/nen tu jard"
-        ],
-        [
-            "ín/nla vida en"
-        ],
-        [
-            "tera./n"
-        ],
-        [],
-        [
-            "Estas",
-            " bailando/nY me mi"
-        ],
-        [
-            "rás/nMoviénd"
-        ],
-        [
-            "ote/nProvocad"
-        ],
-        [
-            "ora/nU"
-        ],
-        [
-            "na aventura sin ",
-            "reproche/nEs "
-        ],
-        [
-            "el perfume de ",
-            "la noche/nEs un lic"
-        ],
-        [
-            "or hecho de est",
-            "rellas/n"
-        ],
-        [
-            "     ",
-            "     ",
-            "En el amor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "     ",
-            "     ",
-            "Es el mejor",
-            "/nDej"
+            "Noch",
+            "e tras noche \n\nS",
+            "alg",
+            "buscarte /n"
         ],
         [
-            "arse ir/n"
+            "Una ",
+            "vez más te ",
+            "encontraré, ",
+            "nunca es muy tarde ",
+            "/n"
         ],
         [
-            "Sin pensar en n",
-            "ada/n"
-        ],
-        [],
-        [
-            "Entre",
-            "lazados/nYa sale el "
+            "En casa ",
+            "no me espera",
+            "s, no hay nada en ",
+            "la heladea /n"
         ],
         [
-            "sol/nUna vez "
+            "En ",
+            "tu jardín ",
+            "quiero vivir ",
+            "la vida entera ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "más/nNada me im"
+            "B",
+            "aila, bai",
+            "la, b",
+            "a",
+            "i",
+            "la /n"
         ],
         [
-            "porta/nNo "
+            "Estás bai",
+            "lando, ",
+            "bailando s",
+            "ola ",
+            "me m",
+            "iras movién",
+            "dote provoc",
+            "adora /n"
         ],
         [
-            "sé de que estoy hec",
-            "ho/nCuando sigo derecho"
+            "Una ",
+            "aventura ",
+            "sin retoche, ",
+            "es del perfume ",
+            "de la noche /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Es un ",
+            "lico",
+            "r, hecho ",
+            "de estrella ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En ",
+            "el amor ",
+            "",
+            "/n"
+        ],
+        [
+            "Es ",
+            "lo mejor ",
+            "dejarse  ",
+            "ir /n"
+        ],
+        [
+            "Sin pen",
+            "sar en nada /n"
+        ],
+        [
+            "Baila,  ",
+            "bai",
+            "la, b",
+            "a",
+            "i",
+            "la ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Entrelazados p",
+            "asan las h",
+            "oras /n"
+        ],
+        [
+            "Ya sale el s",
+            "ol, una vez ",
+            "más nada me im",
+            "porta /n"
+        ],
+        [
+            "No ",
+            "sé de qué estoy h",
+            "echo, c",
+            "uando sigo de",
+            "recho /n"
+        ],
+        [
+            "Siempre es ",
+            "así,  no sé d",
+            "ecidir de otra m",
+            "anera ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En el ",
+            "amor ",
+            "",
+            "/n"
+        ],
+        [
+            "Es lo ",
+            "mejor s",
+            "aber parti",
+            "r \n\nC",
+            "uando ya ",
+            "no hay nada ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En el a",
+            "mor ",
+            "",
+            "/n"
+        ],
+        [
+            "Es lo m",
+            "ejor ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Bai",
+            "la, baila ",
+            "ba",
+            "il",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Baila, baila "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "mqLHpWhRESY",
-            "delay": 0
+            "delay": 5000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

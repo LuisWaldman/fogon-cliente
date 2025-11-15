@@ -1,1 +1,638 @@
-{"cancion": "ala-de-colibri", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "E", "Bm", "D", "B", "A", "C#", "F#m"]}, {"nombre": "parte2", "acordes": ["C#m", "D", "B", "A", "C#", "F#m", "Bm", "E"]}, {"nombre": "parte3", "acordes": ["A", "D"]}, {"nombre": "parte4", "acordes": ["A", "E"]}, {"nombre": "parte5", "acordes": ["A", "B"]}], "orden_partes": [0, 1, 0, 1, 2, 3, 2, 3, 3, 4, 3, 3, 2, 3, 0, 1, 2, 3, 2, 3, 2, 3, 2, 3, 3, 3, 3, 3, 3, 3]}, "letras": [["Hoy me propongo fundar un partido de sue", "os/n"], ["Talleres donde repa", "rar alas de colibr", "es/nSe adm"], ["iten tara", "dos, enfer", "mos, gordo", "s sin amor", "", "/n"], ["Tullidos, ena", "nos, vampir", "os y d\u00eda", "s sin sol", "/n"], ["Hoy voy a patrocinar el candor desah", "uciado/n"], ["Esa cr\u00edtica masa de D", "ios que no es pos ni mod", "erna/nSe adm"], ["iten proscr", "itos, rabio", "sos, puebl", "os sin hogar", "", "/n"], ["Desaparecid", "os deudor", "es del banc", "o mundial", "/nPor una cal"], ["le  ", "   de", "scascarada", " por una mano", "    b", "ien ", "apretada", "", "", "/n"], ["Aala (se ", "rep", "ite ", "varias", " veces", ") - (instrum", "ent", "al)", "", "/n"], ["Hoy voy a hacer asamblea de flores marc", "hitas/n"], ["De deshechos de fiesta infa", "ntil, de pi\u00f1atas usad", "as/nDe som"], ["bras en", " pena -del", " reino de", " lo natural-", "", "/n"], ["Que otorgan lice", "ncia a cua", "lquier artef", "acto de amar", "/nPor el lev"], ["ante, ", "  po", "r el ponien", "te, por el deseo,", "  por", " la", " simiente", "/nPor tanta no"], ["che, ", "  po", "r el sol diari", "o, en compa\u00f1", "a  y ", "en ", "solitari", "o/n"], ["Ala de col", "ibr", "\u00ed, livian", "a y pura", "", "/n"], ["Ala de col", "ibr", "\u00ed para", " la cura", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "LSwiLFWpHbY", "delay": 0}]}
+{
+    "cancion": "ala-de-colibri",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "Bm",
+                    "D",
+                    "B",
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D A",
+                    "D",
+                    "D A",
+                    "D",
+                    "D",
+                    "D",
+                    "D A",
+                    "D",
+                    "D A",
+                    "D A",
+                    "D A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D A",
+                    "D A",
+                    "D A",
+                    "D",
+                    "D",
+                    "D A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B",
+                    "C#",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte32",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte33",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte34",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte35",
+                "acordes": [
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta  es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "ta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. ",
+            "",
+            "/n"
+        ],
+        [
+            "Esta  es ",
+            "",
+            "una ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción en e",
+            "sp",
+            "añ",
+            "ol de rock argentino. /n"
+        ],
+        [
+            "Ah la ",
+            "/n"
+        ],
+        [
+            "Ah la /n"
+        ],
+        [
+            "Ah ",
+            "la ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy voy ha",
+            "cer asambleas \n\nDe f",
+            "lores marchi",
+            "tas /n"
+        ],
+        [
+            "De desechos de fi",
+            "esta infantil /n"
+        ],
+        [
+            "De piñatas usad",
+            "as /n"
+        ],
+        [
+            "De sombras en ",
+            "pena  del reino ",
+            "de lo natural ",
+            "/n"
+        ],
+        [
+            "Que otorgan licen",
+            "cia cualquier art",
+            "efacto de amar /n"
+        ],
+        [
+            "Por el ",
+            "levante /n"
+        ],
+        [
+            "Por el ",
+            "poniente /n"
+        ],
+        [
+            "Por un d",
+            "eseo /n"
+        ],
+        [
+            "Por la s",
+            "imiente /n"
+        ],
+        [
+            "Por ta",
+            "nta noche /n"
+        ],
+        [
+            "Por el ",
+            "sol diario /n"
+        ],
+        [
+            "En co",
+            "mpañía ",
+            "en ",
+            "solitario  /n"
+        ],
+        [
+            "Ah ",
+            "la /n"
+        ],
+        [
+            "De colibr /n"
+        ],
+        [
+            "Livian ",
+            "pura /n"
+        ],
+        [
+            "Ah la ",
+            "de colibrí /n"
+        ],
+        [
+            "Para ",
+            "la cura \n\nAh ",
+            "la \n\nDe ",
+            "colibrí /n"
+        ],
+        [
+            "Liviana ",
+            "pura /n"
+        ],
+        [
+            "Ah la de ",
+            "colibrí /n"
+        ],
+        [
+            "Para la ",
+            "cura \n\nAh ",
+            "la /n"
+        ],
+        [
+            "Ah la ",
+            "/n"
+        ],
+        [
+            "Ah ",
+            "la ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De coli",
+            "brí \n\nLivian ",
+            "pu",
+            "ra \n\nAh la ",
+            "de coli",
+            "brí \n\nPara ",
+            "la cura \n\nAh ",
+            "la \n\nDe ",
+            "colibr",
+            "í \n\nLiviana pura \n\nDe colibrí \n\nLiviana ",
+            "pura /n"
+        ],
+        [
+            "Ah la de c",
+            "olibrí /n"
+        ],
+        [
+            "Para la ",
+            "cura \n\nAh ",
+            "la /n"
+        ],
+        [
+            "Ah la ",
+            "/n"
+        ],
+        [
+            "Ah ",
+            "la ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De colibrí "
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LSwiLFWpHbY",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

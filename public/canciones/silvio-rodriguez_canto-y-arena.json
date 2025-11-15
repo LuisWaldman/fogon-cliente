@@ -1,1 +1,405 @@
-{"cancion": "canto-y-arena", "banda": "silvio-rodriguez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "E", "G", "Bm"]}, {"nombre": "parte2", "acordes": ["G", "D", "Bm", "A", "G", "A", "D"]}], "orden_partes": [0, 1, 1]}, "letras": [["oy contin\u00fae tomando r", "umbo a mi regi\u00f3n/nT"], ["omando se\u00f1as, descifr", "ando encrucijadas/nPor eso c"], ["anto, a", "rena/nR"], ["oca que luego e", "s multitud de", "l agua b", "uena", "/nPor eso cant"], ["o, espum", "a/nC"], ["resta que cua", "ndo logra s", "er ya no es ", "ninguna", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "f27hRJwBuNg", "delay": 0}]}
+{
+    "cancion": "canto-y-arena",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "E",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "Bm",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta es una canción en español de rock argentino. \n\nTomand",
+            "o rumbo mi región, ",
+            "clavando señas, de",
+            "scifrando encrucijadas. /n"
+        ],
+        [
+            "Mi cuerpo sigue practi",
+            "cando su cuestión, ",
+            "cruje mi hueso se ",
+            "hace la palabra. /n"
+        ],
+        [
+            "Hoy continué domestica",
+            "ndo la razón, ",
+            "llena de asombro ante el ",
+            "día sucedido. /n"
+        ],
+        [
+            "Proyecto un rápido boceto ",
+            "de la acción, ",
+            "trazo  versiones que capturo del ",
+            "olvido. \n\nPor eso c",
+            "anto, are",
+            "na, roc",
+            "a que luego es multitud de la ",
+            "agua buena. c",
+            "anto, es",
+            "puma, cresta que ",
+            "cuando logra ser ya no es ",
+            "ninguna.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "He puesto filo ",
+            "al anhelante coraz",
+            "ón, arrojo estrella",
+            "s mellarse contra vient",
+            "os. \n\nEl sueño ha des",
+            "encadenado la canción ",
+            "la canción de hoy ",
+            "me sabe juramento. /n"
+        ],
+        [
+            "La prisa lleva mar",
+            "avilla lleva error, ",
+            "pero viajamos sobre r",
+            "ueda encabritada. /n"
+        ],
+        [
+            "He despertado en el ojo ",
+            "del ciclón, ",
+            "cuento millones de agujero ",
+            "en el alma. \n\nPor eso c",
+            "anto, ar",
+            "ena, r",
+            "oca que luego es multitud de ",
+            "la agua buena. c",
+            "anto, es",
+            "puma, cresta ",
+            "que cuando logra ser ya no es ",
+            "ninguna. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canto, arena, roca que luego es multitud de la agua buena. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy continúe tomando ",
+            "rumbo  mi región, ",
+            "con dulce látigo de abeja ",
+            "en la conciencia. \n\nHoy ",
+            "me perdí mar con ",
+            "planificación,  ",
+            "pero gané lo que partió con ",
+            "la prudencia. /n"
+        ],
+        [
+            "Hoy continúe dándole cuerda ",
+            "mi reloj, con t",
+            "imbre atado sobre el número inv",
+            "isible. \n\nPoco me ",
+            "importa dónde rompa mi e",
+            "stación, si cuando r",
+            "ompa está rompiendo lo imposi",
+            "ble. \n\nPor eso cant",
+            "o, arena, ",
+            "roca que luego es ",
+            "multitud de la agua buena. ",
+            "canto",
+            ", espuma, ",
+            "cresta que cuando logr ",
+            "ser ya no es ninguna. ",
+            "canto, ",
+            "arena,  ",
+            "roca que luego es multitud ",
+            "de la agua buena. c",
+            "anto, ",
+            "espuma, c",
+            "resta que cuando logra ser ",
+            "ya no es ning",
+            "una. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "f27hRJwBuNg",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
+}

@@ -1,1 +1,746 @@
-{"cancion": "jerusalen-ano-cero", "banda": "silvio-rodriguez", "escala": "G7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G7", "F", "G7", "Am"]}, {"nombre": "parte2", "acordes": ["F", "G7", "F", "G7", "Am", "G", "F", "G7"]}, {"nombre": "parte3", "acordes": ["Am", "D7", "G", "F", "G", "C", "Am", "G"]}, {"nombre": "parte4", "acordes": ["F", "G", "F", "C", "G", "F", "G", "F"]}, {"nombre": "parte5", "acordes": ["F", "D7", "G", "C", "Am", "G", "F", "D"]}], "orden_partes": [0, 1, 2, 3, 4]}, "letras": [[], ["     De mano", " en mano se p", "asa la verdad / y e", "n cada man", "o olvidar", "\u00e1/n    "], ["  algo de cierto y tambi", "n se llevar\u00e1 /  ", "de cada man", "o el parecer./n    "], ["  Si camin\u00e1ramos calendario", " atr\u00e1s,", " todo es", "tar\u00eda al r", "ev\u00e9s./nb)"], ["      Algunos dicen que", " es falso / y otros repiten que es", " cierto,/n   "], ["   que entr\u00f3 en Jerusal\u00e9n siendo ", "de d\u00eda,/n   "], ["   se dice que su t\u00fanica era", " blanca, que iba posada en sus ojos/n    "], ["  un ave del m", "ediod\u00eda.", "", "", "", "/nc)     "], [" El Rey de los jud\u00edos, el hijo de los hombres,/n      El Cristo, El Nazareno lo llamaban."], [], [], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "egGLhwqCvbQ", "delay": 0}]}
+{
+    "cancion": "jerusalen-ano-cero",
+    "banda": "silvio-rodriguez",
+    "escala": "G7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G7",
+                    "G",
+                    "F",
+                    "C",
+                    "Am",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G7",
+                    "F",
+                    "F",
+                    "G7",
+                    "G7",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F",
+                    "G7",
+                    "Am",
+                    "Am",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "F",
+                    "F",
+                    "F",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De mano ",
+            "en mano \n\nSe ",
+            "pasa la ve",
+            "rdad ",
+            "en cada ",
+            "mano  o",
+            "lvid",
+            "ará \n\nAlgo ",
+            "de cierto t",
+            "ambién se lle",
+            "vará \n\nDe cad ",
+            "mano el p",
+            "arecer /n"
+        ],
+        [
+            "Si cami",
+            "náramos calendari ",
+            "atrás \n\nT",
+            "odo es",
+            "tarí",
+            "al ",
+            "revé",
+            "s ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Algunos di",
+            "cen que es f",
+            "also ",
+            "",
+            "otros rep",
+            "iten que es c",
+            "ierto ",
+            "/n"
+        ],
+        [
+            "Que ent",
+            "oró en \n\nJerusalén s",
+            "iendo de día /n"
+        ],
+        [
+            "Se ",
+            "dice que su tú",
+            "nica era blanca /n"
+        ],
+        [
+            "Que iba posada en ",
+            "sus ojos /n"
+        ],
+        [
+            "Una vez ",
+            "del med",
+            "iodía ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aquel fue ti",
+            "empo de tu",
+            "mbas \n\nA",
+            "quel fue tie",
+            "mpo de flauta",
+            "s \n\nDe mercadere ",
+            "de legión ro",
+            "mana \n\nSe ",
+            "dice que la chusm",
+            "a lo seguía \n\nQue en su pala",
+            "bra sencilla se lava",
+            "ba la mañana ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El ",
+            "rey de los j",
+            "udíos \n\nEl ",
+            "hijo de los h",
+            "ombres \n\nEl /n"
+        ],
+        [
+            "Cristo,  el \n\nNaz",
+            "areno lo ll",
+            "amaban /n"
+        ],
+        [
+            "El ",
+            "rey de los j",
+            "udíos \n\nEl ",
+            "hijo  de los h",
+            "ombres \n\nEl \n\nC",
+            "risto, el \n\nNaza",
+            "reno lo ll",
+            "amaban /n"
+        ],
+        [
+            "El ",
+            "rey de los ju",
+            "díos \n\nEl h",
+            "ijo de los hom",
+            "bres \n\nEl \n\nCris",
+            "to, el \n\nNazar",
+            "eno lo l",
+            "lama",
+            "ban ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Jer",
+            "usalén, año cer",
+            "o se cambió /n"
+        ],
+        [
+            "La sue",
+            "rte con lo ",
+            "que pasó ",
+            "/n"
+        ],
+        [
+            "Jerusalén, ",
+            "año cero /n"
+        ],
+        [
+            "Nazaret ",
+            "el c",
+            "acerío ",
+            "de \n\nBelé ",
+            "/n"
+        ],
+        [
+            "Jerusalén,  año ",
+            "cero  fue el l",
+            "ugar \n\nDond ",
+            "ocurr",
+            "ió d",
+            "onde no ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Fue ",
+            "enemigo del ",
+            "im",
+            "pe",
+            "rio ",
+            "amigo de la ",
+            "pa",
+            "rá",
+            "bara /n"
+        ],
+        [
+            "Decía  que ",
+            "todo era par",
+            "a todo",
+            "s /n"
+        ],
+        [
+            "Se dice ",
+            "que enseñaba los p",
+            "astores ",
+            "compartir las ",
+            "ovejas  ",
+            "cuidarse  de los ",
+            "lob",
+            "os ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "T",
+            "anta enseñanz ",
+            "sonri",
+            "do \n\nEn ",
+            "el poder de ",
+            "los templos ",
+            "en la madera ",
+            "lo clavaron r",
+            "ecién /n"
+        ],
+        [
+            "Se dijo que formaba un h",
+            "ueschicero \n\nPero si la h",
+            "istoria es cierta \n\nFue porque h",
+            "iciera si",
+            "len",
+            "cio ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El ",
+            "rey de los j",
+            "udíos \n\nEl ",
+            "hijo  de los h",
+            "ombres \n\nEl \n\nC",
+            "risto, el \n\nNaz",
+            "areno lo ll",
+            "amaban /n"
+        ],
+        [
+            "El ",
+            "rey de los judí",
+            "os \n\nEl h",
+            "ijo de los ho",
+            "mbres \n\nEl \n\nCr",
+            "isto, el \n\nNaza",
+            "reno lo ll",
+            "amaba/n"
+        ],
+        [
+            "El ",
+            "rey de los judí",
+            "os \n\nEl h",
+            "ijo de los hom",
+            "bres \n\nEl \n\nCris",
+            "to, el \n\nNazar",
+            "eno lo ll",
+            "amaba/n"
+        ],
+        [
+            "El rey ",
+            "de los judío /n"
+        ],
+        [
+            "El hi",
+            "jo de los hombre",
+            "s \n\nEl \n\nCristo",
+            ", el \n\nNazare",
+            "no lo lla",
+            "maban ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El rey de los judíos "
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "egGLhwqCvbQ",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

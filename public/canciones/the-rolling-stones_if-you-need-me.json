@@ -8,126 +8,182 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
                     "D",
-                    "G",
-                    "C",
-                    "G",
                     "D",
-                    "Em",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D"
+                    "D",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "me, why don't you call me",
-            " /n             Said if you ne"
+            "If you need me, why don't you call me? ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ed me, why don't you c",
-            "all me /n             Don't wait to"
+            "Said, if you wan",
+            "t me, why ",
+            "don't you sing for me? /n"
         ],
         [
-            "o long, when things go wr",
-            "ong /n             I'll be th"
+            "Said, if you wan",
+            "t, want, want, ",
+            "all you gotta do is sing for me. /n"
         ],
         [
-            "ere, yeah, where i bel",
-            "ong ",
-            "/n             Said if you wa"
+            "Don't wait too l",
+            "ong, just p",
+            "ick up your phone. /n"
         ],
         [
-            "nt me, why don't you sen",
-            "d for me /n             Said if you wa"
+            "I'll be t",
+            "here, right there, w",
+            "here belong. /n"
         ],
         [
-            "nt, want, want /n             All you gotta do is "
+            "Pe",
+            "ople always told me, darling, ",
+            "that you didn't make me ",
+            "no good. \n\nBut ",
+            "know, deep down in my ",
+            "heart, \n\nI've done the bes",
+            "t could. /n"
         ],
         [
-            "send for me /n             Don't wait to l"
+            "And one of these days, darling, it won't be lo",
+            "ng, you're gonna come walkin' th",
+            "rough that door. \n\nAnd know, ",
+            "in my mind, these are the very wo",
+            "rds you're gonna say to me. ",
+            "still lo",
+            "ve you, ",
+            "always thinkin' of you. ",
+            "still lo",
+            "ve, love, love, ",
+            "always thinkin' of you /n"
         ],
         [
-            "ong,just pick up your p",
-            "hone /n             I'll be t"
+            "Don't wait too ",
+            "long, whe",
+            "n things go wrong /n"
         ],
         [
-            "here, right there, where i belo",
-            "ng ",
-            "/n            "
-        ],
-        [
-            " People always told me, darling /n             "
-        ],
-        [
-            "That you didn't mean me no good /n            "
-        ],
-        [
-            " But i know deep down in my heart /n             "
-        ],
-        [
-            "I done the best i could /n            "
-        ],
-        [
-            " And one of these days, darling, it won't be long /n            "
-        ],
-        [
-            " You're gonna come walking through that door /n             And i "
-        ],
-        [
-            "know in my mind these are the very /n             Words "
-        ],
-        [
-            "you're gonna say to m",
-            "e /n             I still lo"
-        ],
-        [
-            "ve you, always thinking o",
-            "f you /n             I still lo"
-        ],
-        [
-            "ve, love, love /n             Always thinking o"
-        ],
-        [
-            "f you /n             Don't wait too"
-        ],
-        [
-            " long, when things go wro",
-            "ng /n             I'll be th"
-        ],
-        [
-            "ere, right there, where i belo",
-            "ng"
+            "I'll be ",
+            "there, right ther",
+            "e, where belong. ",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "F9skBxixuFw",
-            "delay": 0
+            "delay": 14000.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

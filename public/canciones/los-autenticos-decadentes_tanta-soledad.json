@@ -2,156 +2,336 @@
     "cancion": "tanta-soledad",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 83,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "Bm",
                     "G",
                     "Bm",
                     "C",
-                    "Cm"
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
                     "G",
-                    "F",
-                    "C",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
+                    "G",
                     "G",
                     "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
                     "G",
+                    "G",
+                    "B7",
                     "B7",
                     "C",
                     "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "B7",
+                    "B7",
+                    "C",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            " sin piedad/nY la ven"
+            "Cae la tarde ",
+            "sin piedad, ya se fue el sol de ",
+            "la ciudad la ventana es",
+            "tá tan sucia que ya casi ni ",
+            "se ve tu recuer",
+            "do me vien",
+            "e visitar ",
+            "/n"
         ],
         [
-            "tana esta tan sucia/nY tu rec"
+            "Llenó la pava, ",
+            "prendo el gas, busco la hierba ",
+            "algo más se me hierve ",
+            "la tengo que volver ",
+            "calentar tu recuer",
+            "do me vuel",
+            "ve visitar ",
+            "",
+            "el tiempo ",
+            "transcurre  aflicciante en",
+            "tre tanto silencio ",
+            "tanta soledad /n"
         ],
         [
-            "uerdo, me vi",
-            "ene a visitar",
-            "/nY se me h"
+            "Así es mi vida p",
+            "orque estoy enamorado ",
+            "no me quiere ",
+            "dar la oportunidad /n"
         ],
         [
-            "ierve/nY tu rec"
+            "De brindar mis ",
+            "más profundos sentimien",
+            "tos mostrar cóm",
+            "o se quiere de verda /n"
         ],
         [
-            "uerdo, me vu",
-            "elve a visitar",
-            "/nY el t"
+            "Así es mi vida p",
+            "orque estoy enamo",
+            "rado \n\nAtravesad ",
+            "por un rayo de dolor \n\nC",
+            "ada segundo una ago",
+            "nía \n\nCada momento ",
+            "que pasa es peo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "iempo transcurre/nAsfix"
+            "Se hizo de noch ",
+            "una vez más, hay una calm",
+            "a sepulcra esa cani",
+            "sa que gotea la tendría ",
+            "que arreglar tu recu",
+            "erdo me vue",
+            "lve atorme",
+            "ntar /n"
         ],
         [
-            "iante entre tanto sile",
-            "ncio y tanta soledad",
-            "/nAsí es mi "
+            "El motor ",
+            "de la ladera me taladra la ",
+            "cabeza en la casa ",
+            "los sonidos se amplifica ",
+            "con crueldad tu rec",
+            "uerdo ya no ",
+            "me deja en ",
+            "paz ",
+            "el tiempo ",
+            "transcurre  aflicciante e",
+            "ntre tanto silencio ",
+            "tanta soled",
+            "ad \n\nAsí es mi vid ",
+            "porque estoy enamorad ",
+            "no me quiere ",
+            "dar la oportunida /n"
         ],
         [
-            "vida porque estoy enamorado/nY no me quieren dar la oportunid"
+            "De brindar mis ",
+            "más profundos sentimie",
+            "ntos mostrar có",
+            "mo se quiere de verda /n"
         ],
         [
-            "ad/nY mostrar cómo se quiere de ver"
+            "Así es mi vida ",
+            "porque  estoy enamorad /n"
         ],
         [
-            "dad/nAtrave"
+            "Atravesad ",
+            "por un rayo de dolor \n\nC",
+            "ada segundo una ago",
+            "nía \n\nCada momento ",
+            "que pasa es pe",
+            "or ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "sado por un rayo de dolor/nCada segundo una agon"
+            "Atravesado por un rayo de dolor \n\nCada ",
+            "s",
+            "e",
+            "g",
+            "undo una agonía \n\nCada momento que pasa es peor ",
+            "/n"
         ],
         [
-            "ía/nCada mom"
+            "Atravesado por un rayo de dolor /n"
         ],
         [
-            "ento que pasa es peo",
-            "r/nSe hizo de n"
-        ],
-        [
-            "oche una vez más/nY esa ca"
-        ],
-        [
-            "nilla que gotea la tendría que arreglar/nY tu rec"
-        ],
-        [
-            "uerdo, me vue",
-            "lve a atormentar",
-            "/nY en la c"
-        ],
-        [
-            "asa los sonidos se amplifican con crueldad/nY tu rec"
-        ],
-        [
-            "uerdo, ya no ",
-            "me deja en paz",
-            "/nY el t"
-        ],
-        [
-            "iempo transcurre/nAsfix"
-        ],
-        [
-            "iante entre tanto sil",
-            "encio y tanta soledad",
-            "/nAsí es mi "
-        ],
-        [
-            "vida porque estoy enamorado/nY no me quieren dar la oportunid"
-        ],
-        [
-            "ad/nY mostrar cómo se quiere de ver"
-        ],
-        [
-            "dad/nAtrave"
-        ],
-        [
-            "sado por un rayo de dolor/nCada segundo una agon"
-        ],
-        [
-            "ía/nCada mom"
-        ],
-        [
-            "ento que pasa es pe",
-            "or"
+            "Cada segundo una agonía \n\nCada segundo ",
+            "una ",
+            "agonía ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "oIBi7EmVouo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

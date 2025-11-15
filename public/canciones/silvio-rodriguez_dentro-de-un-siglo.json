@@ -1,1 +1,382 @@
-{"cancion": "dentro-de-un-siglo", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "E", "D"]}, {"nombre": "parte2", "acordes": ["Bm", "E", "D", "E", "A", "F#m", "E"]}], "orden_partes": [0, 1]}, "letras": [[], ["Ay! por esas mismas calles/n"], ["que han crecido con nosotros/n"], ["pasa lo que va a venir, lo s\u00e9./nEsos \u00f3mnibus cargados"], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "AZ1ROhDp_Zo", "delay": 0}]}
+{
+    "cancion": "dentro-de-un-siglo",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hay por ",
+            "esas mism",
+            "as calles que han ",
+            "crecido  con n",
+            "osotros, pasa ",
+            "lo que va ",
+            "venir, lo ",
+            "sé. /n"
+        ],
+        [
+            "Eso ",
+            "omnibús ca",
+            "rgados, ",
+            "esos cines ate",
+            "stados, e",
+            "sas luces pobres ",
+            "se ancha",
+            "rán. /n"
+        ],
+        [
+            "V",
+            "ivimos la pre",
+            "historia del ",
+            "futuro  enmas",
+            "carado en ",
+            "la circunstan",
+            "cia del a",
+            "mor. /n"
+        ],
+        [
+            "Cuánto",
+            "s ritos n",
+            "aturales lle",
+            "narán los nuev",
+            "os trajes ",
+            "cuántos demon",
+            "ios quedará",
+            "n, también lo ",
+            "sé. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Nacerán ",
+            "los nuevos hijos ",
+            "de sus viejo ",
+            "viejos padres ",
+            "quizás se",
+            "remos lo p",
+            "eor. /n"
+        ],
+        [
+            "Nue",
+            "stras mism",
+            "as agonía ",
+            "sembraremos ",
+            "en sus días c",
+            "omo vie",
+            "ja genera",
+            "ción. ",
+            "/n"
+        ],
+        [
+            "Los poet",
+            "as amaremo ",
+            "en virtud ",
+            "de su cinismo p",
+            "orque nuestra v",
+            "ida nos c",
+            "ostó. ",
+            "",
+            "tendremos n",
+            "uestros muertos, ",
+            "nuestra historia ",
+            "un desierto i",
+            "maginario pa",
+            "ra defend",
+            "er siempre de \n\nD",
+            "ios. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "serem",
+            "os feos hermos",
+            "os como en fin ",
+            "han sido tod",
+            "os llenos de ",
+            "defectos ",
+            "virtud /n"
+        ],
+        [
+            "N",
+            "unca sere",
+            "mos perfec",
+            "tos pero nu",
+            "nca dejaremo ",
+            "de tratar ",
+            "de serlo por ",
+            "amor. ",
+            "/n"
+        ],
+        [
+            "De las tab",
+            "las de valores ",
+            "cada vez s",
+            "abremos meno",
+            "s, todo cabe ",
+            "en un mund ",
+            "sin hambre. /n"
+        ],
+        [
+            "D",
+            "entro de un ",
+            "siglo  serem",
+            "os esa histor",
+            "ia de coleg",
+            "io que aburre ",
+            "los niños porqu",
+            "e ya, ",
+            "ya pasó. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡\nSuscríbete al canal! "
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "AZ1ROhDp_Zo",
+            "delay": 4000.0
+        }
+    ],
+    "calidad": 1
+}

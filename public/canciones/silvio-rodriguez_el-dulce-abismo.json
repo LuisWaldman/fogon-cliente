@@ -1,1 +1,359 @@
-{"cancion": "el-dulce-abismo", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "D/F#", "G", "F", "C", "G", "C", "C", "D/F#", "G", "F", "G", "C", "D/F#", "G", "F", "Em", "Am", "G", "C", "Bb", "A", "F", "Em", "Dm", "G", "C", "Cadd9", "F", "Em", "Dm", "G", "C", "D/F#", "G", "F", "C", "G", "C", "F", "Em", "Dm", "G", "Ebdim", "Ab", "C", "F", "Em", "Dm", "G", "C", "D/F#", "G", "F", "C", "G", "C", "C", "D/F#", "G", "F", "Em"]}], "orden_partes": [0]}, "letras": [[], ["Amada,      ", "  supon qu", "e me voy lejos/n"], ["Tan lejos   ", " que olvid", "are mi nombre", "/n"], ["Amada,  ", " quizas", " soy otro hombre", "/n"], ["   Que espera por si mi", "s--", "-mo", "/n"], ["    Alla", " lejos   ", " alla t", "repando el dul", "ce abismo", "/n"], ["    Alla", " lejos   ", " alla t", "rapando el dul", "ce abism", "o", "", "", "", "", "/n"], ["   Y v", "e que no hay a", "usenci", "a para el dulce abi-", "-------smo", "", "/n"], ["   Y v", "e que no hay a", "usenci", "a para el dulce", " abismo", "", "", "", "", "", "/n"], [], [], [], [], ["Am     x-0-2-2-1-0"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "ah6-nw_C8t0", "delay": 0}]}
+{
+    "cancion": "el-dulce-abismo",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "D/F#",
+                    "F",
+                    "F",
+                    "C",
+                    "D/F#",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Amar, ",
+            "supón que me voy le",
+            "jos, ",
+            "tan l",
+            "ejos que o",
+            "lvidaré mi nombre. ",
+            "",
+            "/n"
+        ],
+        [
+            "Amar, ",
+            "quizás soy otro hombr ",
+            "más ",
+            "alto menos v",
+            "iejo que ",
+            "espera por sí mismo ",
+            "/n"
+        ],
+        [
+            "All ",
+            "lejos, al",
+            "lá trepando el dulce ab",
+            "ismo. /n"
+        ],
+        [
+            "Allá ",
+            "lejos,  ",
+            "allá trepando el dulce ab",
+            "ismo. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Amar, ",
+            "supón que no ",
+            "hay rem",
+            "edio",
+            "remedio ",
+            "es todo lo que ",
+            "intento. ",
+            "/n"
+        ],
+        [
+            "Amar, ",
+            "toma este p",
+            "ensamiento, ",
+            "colócalo en ",
+            "el centro ",
+            "de todo el ",
+            "egoís",
+            "mo ",
+            "ve que no hay ",
+            "ausencia para ",
+            "el dulce abis",
+            "mo. ",
+            "ve que no ",
+            "hay ausencia pa",
+            "ra el dulce abism",
+            "o. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Am",
+            "ar, ",
+            "supón que me lo o",
+            "lvid",
+            "o, la n",
+            "oche me ",
+            "deja prisionero. ",
+            "",
+            "/n"
+        ],
+        [
+            "Amar, ha",
+            "brá un lucero nue",
+            "vo que no ",
+            "estará venci",
+            "do de ",
+            "lucidio  opti",
+            "mismo. ",
+            "habrá un ",
+            "sinfín  lat",
+            "ente bajo el dulce ab",
+            "ismo. ",
+            "habrá un s",
+            "infín late",
+            "nte bajo el dulce abi",
+            "smo. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Amar, ",
+            "la claridad me ce",
+            "rca, ",
+            "yo p",
+            "arto, tú ",
+            "guardarás el huert",
+            "o. ",
+            "/n"
+        ],
+        [
+            "Amar, ",
+            "regresaré  despierto ",
+            "otr ",
+            "mañana terc",
+            "a de m",
+            "úsica liris",
+            "mo. /n"
+        ],
+        [
+            "Reg",
+            "resaré del sol ",
+            "que alumbra el dulce a",
+            "bismo. /n"
+        ],
+        [
+            "Reg",
+            "resaré del sol ",
+            "que alumbra el d",
+            "ulce abismo. ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "ah6-nw_C8t0",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

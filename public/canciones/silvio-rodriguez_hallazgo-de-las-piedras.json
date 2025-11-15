@@ -1,1 +1,772 @@
-{"cancion": "hallazgo-de-las-piedras", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G/", "B", "Am", "D"]}, {"nombre": "parte2", "acordes": ["F", "D/F#", "G", "G4"]}, {"nombre": "parte3", "acordes": ["G"]}, {"nombre": "parte4", "acordes": ["G7", "G4"]}, {"nombre": "parte5", "acordes": ["C", "C6", "F", "Em", "Dm"]}], "orden_partes": [0, 1, 2, 0, 1, 2, 3, 3, 3, 4, 0, 1, 1, 0, 1]}, "letras": [["l mundo e", "ntra ", "por la puert", "a", "/ncon mil s"], ["abores que ", "no puedo reco", "rdar", "", "/nc"], ["omo ha cre", "cido ", "lo que mir", "o", "/nlos viejos r"], ["uidos ya n", "o sirven para ha", "blar", "", "/ny"], ["a descubr\u00ed", " los ascenso", "res/nlos ci"], ["snes y las con", "strucciones/nl"], ["a fosforera", " y el avi", "\u00f3n/ny"], [" otras cos", "as que con", "ozco bien/nq"], ["ue cua", "ndo u", "n ni\u00f1o no ", "sabia observar/ne"], ["ntonces no necesita", "ba/ncon los juegos siemp"], ["re basta/npar"], ["a comprend", "er/np"], ["ara comp", "render.", "", "/np"], ["arece qu", "e es ", "definitivo", "", "/nse rompe t"], ["odo y tod", "o vuelve a e", "mpezar", "./n"], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "Lco3jvxRRVQ", "delay": 0}]}
+{
+    "cancion": "hallazgo-de-las-piedras",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "C",
+                    "Dm",
+                    "C",
+                    "Dm",
+                    "D/F#",
+                    "B",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D/F#",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "D",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G/",
+                    "G/",
+                    "F",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G/",
+                    "B",
+                    "B",
+                    "B",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G/",
+                    "G/"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G/",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "B",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "B",
+                    "B",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "B",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "B",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "D/F#",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Em F",
+                    "Em",
+                    "Em F"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Em",
+                    "Em C",
+                    "Em C",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte32",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte33",
+                "acordes": [
+                    "Em",
+                    "G4",
+                    "G4"
+                ]
+            },
+            {
+                "nombre": "parte34",
+                "acordes": [
+                    "G4",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El m",
+            "undo entra por ",
+            "la puerta /n"
+        ],
+        [
+            "Con mil sabores que ",
+            "no puedo record",
+            "ar /n"
+        ],
+        [
+            "Cómo ha cre",
+            "cido lo que miro /n"
+        ],
+        [
+            "Los viejos ru",
+            "idos ya no sirven ",
+            "para  hablar /n"
+        ],
+        [
+            "Ya ",
+            "descubrí los ascenso",
+            "res, los cines las ",
+            "construcciones \n\nLa fosf",
+            "orera el avión ",
+            "",
+            "otras cos",
+            "as que conozco b",
+            "ien \n\nQue ",
+            "cuando niño no ",
+            "sabía observar /n"
+        ],
+        [
+            "Enton",
+            "ces no necesit",
+            "aba \n\nCon los juegos siemp",
+            "re basta \n\nPar",
+            "a comprender ",
+            "/n"
+        ],
+        [
+            "Pa",
+            "ra comprender ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "P",
+            "ara comprende /n"
+        ],
+        [
+            "Crecí parejo con un ",
+            "cielo \n\nLle",
+            "no de objetos que br",
+            "illaban como el ",
+            "sol /n"
+        ],
+        [
+            "Cómo vivir frente ",
+            "un espejo ",
+            "no saberlo has",
+            "ta tocarlo verme ",
+            "yo ",
+            "todo c",
+            "rece en cada libro, ",
+            "en cada cinta, en cada c",
+            "uento \n\nEn cada vista ",
+            "alrededor  de otr",
+            "o ",
+            "es doloroso aprend",
+            "er vivir /n"
+        ],
+        [
+            "Todo pr",
+            "ofana la tensión v",
+            "ital /n"
+        ],
+        [
+            "Hay tantas luces ",
+            "en la sala \n\nTant ",
+            "gente que nos llama /n"
+        ],
+        [
+            "Que no se oye nada ",
+            "/n"
+        ],
+        [
+            "Que ",
+            "no se oye nada ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "te pedazo de la ",
+            "historia \n\nEs ",
+            "aguerrido par ",
+            "ver reposa ",
+            "/n"
+        ],
+        [
+            "Parece que es d",
+            "efinitivo /n"
+        ],
+        [
+            "Se rompe todo t",
+            "odo vuelve com",
+            "enzar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "no se oye nada ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "no se oye nada no se oye nada ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "no se oye nada no se oye nada no se oye nada no se oye nada no ",
+            "se ",
+            "oye ",
+            "",
+            "nada \n\nDe niño ",
+            "te cono",
+            "cí /n"
+        ],
+        [
+            "E",
+            "ntre mis sueños que",
+            "ridos /n"
+        ],
+        [
+            "Por eso ",
+            "cuando te vi /n"
+        ],
+        [
+            "R",
+            "econocí mi de",
+            "stino /n"
+        ],
+        [
+            "Cuando p",
+            "ensaba que ya no iba ",
+            "ser \n\nLo ",
+            "que soñara de pr",
+            "onto vino /n"
+        ],
+        [
+            "Tanto ",
+            "que yo te busqué ",
+            "",
+            "tanto que ",
+            "no te hallaba /n"
+        ],
+        [
+            "Que al ",
+            "cabo  me acostum",
+            "bré ",
+            "andar con t",
+            "anto de nada /n"
+        ],
+        [
+            "Cua",
+            "nto nos puede curar el ",
+            "amor  \n\nCuan",
+            "to renace de ",
+            "tu mirada ",
+            "",
+            "/n"
+        ],
+        [
+            "Te con",
+            "ozco \n\nTe ",
+            "conozco desde siempre /n"
+        ],
+        [
+            "Desde lej",
+            "os ",
+            "/n"
+        ],
+        [
+            "Te cono",
+            "zco /n"
+        ],
+        [
+            "Te cono",
+            "zco como un sueñ ",
+            "bueno viejo ",
+            "/n"
+        ],
+        [
+            "Es por ",
+            "eso que ",
+            "te toco ",
+            "te conozco ",
+            "",
+            "/n"
+        ],
+        [
+            "Te conozco ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Te conozco \n\nTe c",
+            "onozc/n"
+        ],
+        [
+            "Te co",
+            "no",
+            "zco ",
+            "",
+            "/n"
+        ],
+        [
+            "Te conozco \n\nEl l",
+            "ago parece mar ",
+            "/n"
+        ],
+        [
+            "El ",
+            "viento sirve de abrigo \n\nTodo se vuelve inventar \n\nSi lo comparto contigo \n\nLa única prisa es la del corazón \n\nLa única ofensa es tener testigos \n\nTe conozco \n\nTe conozco desde siempre \n\nDesde lejos \n\nTe conozco \n\nTe conozco como un sueño bueno viejo \n\nEs por eso que te toco te conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco \n\nTe conozco "
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Lco3jvxRRVQ",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
+}

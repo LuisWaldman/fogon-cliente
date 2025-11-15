@@ -2,20 +2,33 @@
     "cancion": "bichiluz",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
                     "G",
                     "G",
                     "D",
                     "G",
-                    "C",
+                    "G",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
@@ -23,13 +36,32 @@
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "D",
                     "D",
-                    "C",
                     "D",
-                    "Am"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
@@ -37,31 +69,72 @@
                 "acordes": [
                     "D",
                     "G",
-                    "Bm",
-                    "Am",
-                    "C"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "G",
-                    "Bm",
-                    "Am",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "G",
-                    "C",
+                    "G",
                     "G",
                     "D",
                     "D",
-                    "C",
-                    "B",
-                    "C"
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
@@ -70,127 +143,129 @@
             1,
             2,
             3,
-            0,
             4,
-            2,
-            2,
-            2
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
         [
-            "Cuando me caigo en una depresion/n"
-        ],
-        [
-            "pongo distancia y me empiezo a encerrar/n"
-        ],
-        [
-            "y me pongo a cavar una trinchera emociona",
-            "l/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-            "Cuando me siento vac",
-            "io y sol",
-            "o/n"
-        ],
-        [
-            "como un extraño y aj",
-            "eno a ",
-            "la realidad",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "pero es si no necesito ni habla",
-            "r/n"
+            "Cuando me ",
+            "caigo en una d",
+            "epresión \n\nPongo ",
+            "distancia  me empiezo en",
+            "cerrar me pongo acabar ",
+            "una trinchera ",
+            "emociona /n"
         ],
         [
-            "de pronto venis y me abraza",
-            "s/n"
+            "Cu",
+            "and",
+            "me siento vacío ",
+            "solo \n\nCom ",
+            "un extraño ajeno ",
+            "la realida",
+            "d \n\nMi vec",
+            "ino necesito ni ha",
+            "blar \n\nPronto ",
+            "de mi si me abra",
+            "zas \n\nNadie me comp",
+            "rende como vos ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "nadie me comprende como vo",
-            "s/nNadie me compr"
+            "Cua",
+            "ndo recaigo en una ",
+            "depresión /n"
         ],
         [
-            "ende como vo",
-            "s/n"
+            "Siento  una angustia me ",
+            "viene  un bajón me empieza r",
+            "odear una neb",
+            "rina mediev",
+            "al \n\nCu",
+            "an",
+            "do me aburro de ",
+            "todo poco /n"
         ],
         [
-            "nadie me comprende como vo",
-            "s/nnadie me compr"
+            "Hando  amargado ",
+            "un poco un año de ",
+            "más \n\nDe ",
+            "pronto por algo que ",
+            "decís  \n\nMe ",
+            "río me hace senti ",
+            "feliz \n\nNadie me ",
+            "conmueve com ",
+            "vos \n\nMi di",
+            "cha luz me hizo ",
+            "ave mar \n\nSos el ",
+            "lugar en donde q",
+            "uiero desc",
+            "ansar \n\nMe hac",
+            "es tan bien que me ",
+            "hace mal \n\nMe si",
+            "ento tragil por t",
+            "ener quien ",
+            "a",
+            "m",
+            "ar \n\nNadie ",
+            "me comprende co",
+            "mo va /n"
         ],
         [
-            "ende como vo",
-            "s/nnadie como v"
+            "Na",
+            "di",
+            "me conmueve co",
+            "mo vos ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "os/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-            "Cuando recaigo en una depresion/n"
-        ],
-        [
-            "siento una angustia o me viene un bajon/ny me empieza a rodear una neblina medieval"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Nadie me conmueve como vos "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "lLm3qEKkErM",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

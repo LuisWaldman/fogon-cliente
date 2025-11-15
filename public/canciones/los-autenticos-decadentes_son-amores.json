@@ -2,101 +2,246 @@
     "cancion": "son-amores",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "G",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "G",
+                    "Em",
+                    "Em",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "G",
+                    "Em",
+                    "C",
+                    "C",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
                     "D",
                     "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "G",
+                    "D",
+                    "Em",
+                    "C",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C D",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Pateando solo hasta e",
-            "l amanecer/n"
+            "",
+            "",
+            "/n"
         ],
         [
-            "sigo soñando con vol",
-            "verte a ver,/napren"
+            "Pateando solo hasta ",
+            "el amanecer, s",
+            "igo soñando con ",
+            "volverte ver, a",
+            "prender de los errores olv",
+            "idar viejos rencores que el ",
+            "tiempo no devuelva la p",
+            "asión. \n\nUn am",
+            "or que hace sentir bie",
+            "n, otro am",
+            "or que puede enloq",
+            "uecer, que devue",
+            "lve la vida te llev ",
+            "la bebida, pero siemp",
+            "re te puede sorpren",
+            "der. \n\nSon am",
+            "ores que te llega",
+            "n de verdad, son amo",
+            "res que te hacen d",
+            "espegar, hay amores sa",
+            "lvadores que te curan los ",
+            "dotores te llevan d",
+            "erecho hasta la alpa",
+            "r. \n\nSon amor",
+            "es que vienen que ",
+            "van, son amor",
+            "es que siempre volv",
+            "erán, hay amores transpa",
+            "rentes, hay amores decaden",
+            "tes, solamente son am",
+            "ores nada más. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "der de los errores y olvid",
-            "ar viejos reencores/ny que el "
+            "Jugando al frente ",
+            "de tu corazón, c",
+            "uando te veo pi",
+            "erdo la razón, ",
+            "son la estrella que me guía, mi ",
+            "consuelo agonía, ",
+            "nada tiene sentido sin ",
+            "tu amor. \n\nSon ",
+            "amores que te ",
+            "llegan de verdad, son ",
+            "amores  que ",
+            "te hacen despegar, hay a",
+            "mores salvadores que te ",
+            "curan los dotores te l",
+            "levan derecho hasta la alpar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tiempo nos devuelva la pasio",
-            "n./nSon a"
+            "Son amore ",
+            "que te llegan de ver",
+            "dad, son amore ",
+            "que te hacen despega",
+            "r, hay amores salvador",
+            "es que te curan los dotores te llevan derecho hasta la alpar. \n\nSon ",
+            "a",
+            "mo",
+            "res ",
+            "que vienen que van, ",
+            "son amores ",
+            "que siempre volverán, ",
+            "hay amores transparentes, ",
+            "hay amores decadentes, ",
+            "solamente son amores ",
+            "nada  más. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "mores que te l",
-            "legan de verdad,/nson a"
-        ],
-        [
-            "mores que te hacen despeg",
-            "ar/nHay amores salva"
-        ],
-        [
-            "dores que te curan los dol",
-            "ores/ny te ll"
-        ],
-        [
-            "evan derecho hasta el alt",
-            "ar./n"
-        ],
-        [],
-        [
-            "Pateando solo hasta e",
-            "l amanecer/n"
-        ],
-        [
-            "sigo soñando con vol",
-            "verte a ver,/napren"
-        ],
-        [
-            "der de los errores y olvid",
-            "ar viejos reencores/ny que el "
-        ],
-        [
-            "tiempo nos devuelva la pasio",
-            "n./nSon a"
-        ],
-        [
-            "mores que te l",
-            "legan de verdad,/nson a"
-        ],
-        [
-            "mores que te hacen despegar/nHay amores salvadores que te curan los dolores"
-        ],
-        [],
-        [],
-        []
+            "Subtítulos por la comunidad de \n\nAmara .org "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "yMdu5_KTO6c",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

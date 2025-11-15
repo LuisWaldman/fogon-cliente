@@ -1,1 +1,630 @@
-{"cancion": "debo-partrime-en-dos", "banda": "silvio-rodriguez", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Dm", "E", "Am", "Dm", "E", "Am", "G/B"]}, {"nombre": "parte2", "acordes": ["C", "G", "Am", "G/B", "C", "G", "C"]}, {"nombre": "parte3", "acordes": ["Am", "F", "G", "C", "Am", "F", "F#", "G"]}, {"nombre": "parte4", "acordes": ["C", "G", "Am", "G/B", "C", "G", "F", "E"]}, {"nombre": "parte5", "acordes": ["Am", "F", "Am", "F", "Dm", "C", "G", "E"]}], "orden_partes": [0, 1, 2, 0, 3, 4, 4]}, "letras": [["o se crean que es", " majader\u00eda", "/nQ"], ["ue nadie se levante", " aunque me r\u00eda", "/nH"], ["ace rato qu", "e vengo ", "lidiando con gent", "e/nQ"], ["ue dice que y", "o canto ", "cosas indecentes", "/nTe qu"], ["iero, mi amo", "r/nN"], ["o me dejes solo", "/nNo pu"], ["edo estar sin ti", "/nM"], ["ira que", " yo lloro", "/n\u00bf"], ["No ven?, ya soy dec", "ente/nMe fue f\u00e1"], ["cil/nQ"], ["ue el p\u00fablico se agr", "upe y que me acla", "me/nQ"], ["ue se acerquen lo", "s ni\u00f1o", "s/nLos amantes del r"], ["itmo /nQ"], ["ue se queden se", "ntados", " los intelectuales", "/nDebo p"], ["artirme en dos/nDebo part"], ["irme en dos/nUnos dicen que aqu"], ["\u00ed/nOtros dicen que all"], ["\u00e1/nY s\u00f3lo quiero de"], ["cir/nS\u00f3lo quiero cant"], ["ar/nY no importa la su"], ["erte/nQue pueda corr"], ["er/nUna canci"], ["\u00f3n/nUno"], ["s dicen que aqu", "/nOtros dicen que all"], ["\u00e1/nY s\u00f3lo quiero de"], ["cir/nS\u00f3lo quiero can"], ["tar/nY no importa que lu"], ["ego/nMe suspend"], ["an la funcion", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "mAbRKtYo5V4", "delay": 0}]}
+{
+    "cancion": "debo-partrime-en-dos",
+    "banda": "silvio-rodriguez",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "G",
+                    "F",
+                    "Dm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G/B",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "E",
+                    "Am",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "Am",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "Am",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Am",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "E",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No se crean que ",
+            "es ma",
+            "jaderí/n"
+        ],
+        [
+            "Que ",
+            "nadie se l",
+            "evante aunque me ",
+            "ría /n"
+        ],
+        [
+            "H",
+            "ace rato que v",
+            "engo lidiando con ",
+            "gente /n"
+        ],
+        [
+            "Que ",
+            "dicen ",
+            "que yo canto cos",
+            "as indescent",
+            "es /n"
+        ],
+        [
+            "Te qui",
+            "ero mi am",
+            "or, no ",
+            "me dejes sol",
+            "o \n\nNo puedo e",
+            "star sin ti, ",
+            "mira ",
+            "que yo lloro ",
+            "/n"
+        ],
+        [
+            "No ven, ",
+            "ya soy decen",
+            "te, me fue f",
+            "ácil /n"
+        ],
+        [
+            "Que ",
+            "el público se ag",
+            "rupe que me ac",
+            "lame /n"
+        ],
+        [
+            "Que ",
+            "se acerquen los niños ",
+            "los amantes del ",
+            "ritmo  /n"
+        ],
+        [
+            "Que ",
+            "se queden sen",
+            "tados los in",
+            "telectua",
+            "les \n\nDebo p",
+            "artirme en do",
+            "s, debo p",
+            "artirme en dos /n"
+        ],
+        [
+            "Unos dicen ",
+            "que aquí, otros dicen ",
+            "que allá solo quier",
+            "o decir, solo quier",
+            "o cantar no impor",
+            "ta la suerte que pue",
+            "da correr \n\nUna ",
+            "canción,  ",
+            "unos dice",
+            "n que aquí, otros dice",
+            "n que allá solo qui",
+            "ero decir, solo quie",
+            "ro cantar no imp",
+            "orta que luego me ",
+            "suspendan la f",
+            "unción ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo tambi",
+            "én can",
+            "té en tonos m",
+            "enores /n"
+        ],
+        [
+            "Yo ",
+            "también ",
+            "padecí de esos ",
+            "dolor",
+            "es /n"
+        ],
+        [
+            "Yo tamb",
+            "ién parecía ca",
+            "ntar como un s",
+            "anto /n"
+        ],
+        [
+            "Yo ",
+            "también repet",
+            "í en millones de ",
+            "cantos /n"
+        ],
+        [
+            "Te ",
+            "quiero mi ",
+            "amor,  ",
+            "no me dejes s",
+            "olo \n\nNo pue",
+            "do estar sin ",
+            "ti, mi",
+            "ra que yo l",
+            "loro \n\nP",
+            "ero me ",
+            "fui enredando en más ",
+            "asu",
+            "nto",
+            "",
+            "aparecieron cosa ",
+            "de este mund",
+            "o /n"
+        ],
+        [
+            "Fu",
+            "sil contra fusil ",
+            "la canción de la ",
+            "tro",
+            "pa ",
+            "la era par",
+            "iendo se puso ",
+            "de mod",
+            "a \n\nDebo p",
+            "artirme en d",
+            "os, debo p",
+            "artirme en dos /n"
+        ],
+        [
+            "Unos dicen que ",
+            "aquí, otros dicen ",
+            "que allá solo quiero d",
+            "ecir, solo quiero c",
+            "antar no impor",
+            "ta la suerte que pu",
+            "eda correr \n\nUna ca",
+            "nción, ",
+            "unos dicen que a",
+            "quí, otros dicen que a",
+            "llá solo quiero dec",
+            "ir, solo quiero can",
+            "tar no importa ",
+            "que luego me susp",
+            "endan la f",
+            "unci",
+            "ón ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "quería c",
+            "anta",
+            "encapuch",
+            "ado ",
+            "",
+            "después  confundirm ",
+            "vuestro la",
+            "do /n"
+        ],
+        [
+            "Aunqu",
+            "e así no tuvi",
+            "era amigos ",
+            "cit",
+            "as ",
+            "algún que otro f",
+            "avor de una chic",
+            "a bonita /n"
+        ],
+        [
+            "Per",
+            "o te quier",
+            "o mi amor, ",
+            "no me d",
+            "ejes solo /n"
+        ],
+        [
+            "No puedo esta ",
+            "sin ti, ",
+            "mira que ",
+            "yo ll",
+            "oro /n"
+        ],
+        [
+            "No voy ",
+            "repetir ese ",
+            "estr",
+            "ibil",
+            "lo \n\nAlgun",
+            "os ojos mir",
+            "an con mal b",
+            "rillo ",
+            "",
+            "estoy temiendo aho",
+            "ra no ser in",
+            "terpre",
+            "tado \n\nCa",
+            "si siempre su",
+            "cede que se piensa a",
+            "lgo mal",
+            "o \n\nDebo par",
+            "tirme en do",
+            "s, debo part",
+            "irme en dos \n\nU",
+            "nos dicen que aquí, ",
+            "otros dicen que all",
+            "á solo quiero decir, ",
+            "solo quiero canta ",
+            "no importa la sue",
+            "rte que pueda corre",
+            "r \n\nUna canción, ",
+            "unos d",
+            "icen que aquí, ot",
+            "ros dicen que allá s",
+            "olo quiero decir, ",
+            "solo  quiero cantar no ",
+            "importa  que luego ",
+            "me suspendan ",
+            "la funció ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 172,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "mAbRKtYo5V4",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

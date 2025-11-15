@@ -2,24 +2,38 @@
     "cancion": "sigue-tu-camino",
     "banda": "los-autenticos-decadentes",
     "escala": "B",
-    "bpm": 60,
+    "bpm": 83,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "B",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B",
+                    "B",
                     "G",
-                    "B"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "E",
+                    "E",
                     "D",
+                    "A",
+                    "B",
+                    "B",
                     "A",
                     "G"
                 ]
@@ -28,9 +42,9 @@
                 "nombre": "parte3",
                 "acordes": [
                     "B",
+                    "B",
                     "A",
-                    "G",
-                    "B"
+                    "G"
                 ]
             },
             {
@@ -38,153 +52,176 @@
                 "acordes": [
                     "B",
                     "B",
-                    "G",
-                    "B"
+                    "B",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
                     "E",
+                    "E",
+                    "D",
+                    "G",
+                    "B",
+                    "A",
+                    "A",
+                    "B",
                     "B",
                     "A",
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "B",
-                    "E"
+                    "B",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            2,
             3,
-            3,
-            1,
-            2,
-            2,
-            2,
-            4
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
         [
-            "e caíste al agua y el barco se va /n"
+            "Te caiste al agua el barco se ",
+            "va, ahora te acordas que no sabes na",
+            "dar. \n\nSerá mejor que aprendas pronto ",
+            "que te guste. /n"
         ],
         [
-            "Será mejor que aprendas pronto y que te gu",
-            "ste /n"
+            "Pocorre la nieve te come el ",
+            "león, pero destesa mucho eso es el j",
+            "amón. \n\nEl tiempo vuela es mejor que ",
+            "lo disfrutes. /n"
         ],
         [
-            "Vos corres la liebre y te come el león /n"
+            "Que no te impor",
+            "te ni la vida ni la muerte ",
+            "ni la buena mala, suert ",
+            "que acompañará tu al",
+            "ma. \n\nSigue tu camino sin mira ",
+            "atrás, no busque la calma, no existe ",
+            "la paz, redélate la perez",
+            "a al destino. /n"
         ],
         [
-            "El tiempo vuela y es mejor que lo disfru",
-            "tes /nQ"
+            "Sigue tu camino sin mira",
+            "r atrás, no te eches menos estirart ",
+            "más, no dejes que te pase el gana",
+            "do por encima. /n"
         ],
         [
-            "ue no te importe ni la v",
-            "ida ni la muerte /nNi la bu"
+            "Usa la cabeza, bemate los ",
+            "pies, no le agrace nadie lo que no ",
+            "cree.  \n\nHay que ser bueno, pero no hay ",
+            "que ser boludo. /n"
         ],
         [
-            "ena o mala suerte que acom",
-            "pañara tu andar /nS"
-        ],
-        [
-            "igue tu camino sin mirar atrás /nN"
-        ],
-        [
-            "o busques la calma no existe la paz /nR"
-        ],
-        [
-            "ebelate a la pereza y al dest",
-            "ino /nSi"
-        ],
-        [
-            "gue tu camino sin mirar atrás /nNo"
-        ],
-        [
-            " te eches a menos estirate a mas /nNo"
-        ],
-        [
-            " dejes que te pase el ganado por en",
-            "cima /nUs"
-        ],
-        [
-            "a la cabeza además de los pies /nNo"
-        ],
-        [
-            " le hagas a nadie lo que vos querés /nHay que ser b"
-        ],
-        [
-            "ueno pero no hay que ser bo",
-            "ludo /nDe"
-        ],
-        [
-            "sconfiá de todo lo que vos crees /nPa"
-        ],
-        [
-            "ra ver las cosas por primera vez /nY que el sil"
-        ],
-        [
-            "encio nos deje de una vez mu",
-            "dos /n"
-        ],
-        [
-            "Que no te importe ni la vida ni la mu",
-            "erte /nNi la buena"
-        ],
-        [
-            " o mala suerte que acomp",
-            "añara tu andar /n"
-        ],
-        [
-            "Sigue tu camino sin mirar atrás /nN"
-        ],
-        [
-            "o busques la calma no existe la paz /nR"
-        ],
-        [
-            "ebelate a la pereza y al dest",
-            "ino /nSi"
-        ],
-        [
-            "gue tu camino sin mirar atrás /nNo"
-        ],
-        [
-            " te eches a menos estirate a mas /nNo"
-        ],
-        [
-            " dejes que te pase el ganado por enc",
-            "ima /n"
-        ],
-        [
-            "Sigue tu camino sin mirar atrás /nN"
-        ],
-        [
-            "o busques la calma no existe la paz /nR"
-        ],
-        [
-            "ebelate a la pereza y al destino ",
+            "Deconfía de todo lo que no ",
+            "crees,  para ver la cosa por primer ",
+            "vez. que el silencio nos deje de ",
+            "una vez mudos. ",
             "",
-            "/nSigue tu camino sin mirar atrás "
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        []
+        [
+            "Que ",
+            "no te importe ni la vi",
+            "da ni la muerte ni la bue",
+            "na mala, suerte que acompa",
+            "ñará tu alma. \n\nSigue ",
+            "tu camino sin mirar atrás, no bus",
+            "que la calma, no existe la paz, re",
+            "délate la pereza al dest",
+            "ino. \n\nSigue ",
+            "tu camino sin mirar atrás, no te ",
+            "eches menos estirarte más, no de",
+            "jes que te pase el ganado por encima",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sigue ",
+            "tu camino sin mirar atrás, no bu",
+            "sque la calma, no existe la paz, r",
+            "edélate la pereza al des",
+            "tino. \n\nSigue ",
+            "tu camino sin mirar atrás, no te ",
+            "eches menos estirarte más, no de",
+            "jes que te pase el ganado por enci",
+            "ma. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "qrCeQrYmwqM",
-            "delay": 0
+            "delay": 8000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

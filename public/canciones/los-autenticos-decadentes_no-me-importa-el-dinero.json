@@ -2,44 +2,126 @@
     "cancion": "no-me-importa-el-dinero",
     "banda": "los-autenticos-decadentes",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
+                    "A",
                     "C#m",
-                    "F#m"
+                    "Cm",
+                    "Cm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "Cm",
+                    "Cm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "C#m",
+                    "F#m",
+                    "Cm",
+                    "Cm",
+                    "Bm",
+                    "E",
+                    "E",
+                    "A",
+                    "C#m",
+                    "D",
+                    "E",
+                    "A",
+                    "F#m",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "E",
+                    "A",
+                    "A",
                     "C#m",
                     "Cm",
+                    "Cm",
                     "Bm",
-                    "E"
+                    "D",
+                    "E",
+                    "A",
+                    "C#m"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "D",
-                    "E",
-                    "A",
-                    "C#m",
-                    "F#m"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "A",
+                    "C#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "E",
-                    "A"
+                    "E",
+                    "C#m",
+                    "D",
+                    "D",
+                    "E",
+                    "A",
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D"
                 ]
             }
         ],
@@ -47,143 +129,122 @@
             0,
             1,
             2,
-            1,
-            2,
-            1,
-            2,
-            2,
-            2,
-            1,
-            2,
-            2,
-            2,
-            2,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "eron que llamaste pero ya",
-            " me había ido /nPues sal"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "imos mas temprano del talle",
-            "r ",
-            "/nYo me v"
+            "Me ",
+            "dijeron  que llamaste per ",
+            "ya me había ido pues ",
+            "salimos  más temprano del ",
+            "taller.  \n\nYo ",
+            "me vine caminando para ",
+            "no gastar dinero ",
+            "por eso llego tarde como ",
+            "ayer.  \n\nQue no ",
+            "trates de ocultarme lo que ",
+            "me interesa yo s",
+            "abía que algo andaba ",
+            "mal.  \n\nMenos ",
+            "mal que solo es eso, sentí a",
+            "livio lo confieso tuve m",
+            "iedo de que fuera otra mu",
+            "jer. \n\nYo no q",
+            "uise preocuparte. \n\nNo quer",
+            "ías que supiera que acaba",
+            "ste sin trabajo una vez m",
+            "ás. \n\nNo me tum",
+            "ba un viento frío si te ten",
+            "go cerca mío no le te",
+            "mo lo que pueda suce",
+            "der. mi no me importa el din",
+            "ero, tengo lo que yo más qui",
+            "ero mi lado. \n\nSoy tu ",
+            "fiel compañera, me gusta que ",
+            "seas así como sos. \n\nSos mi ",
+            "escudo ante el miedo aunque se d",
+            "errumbe el cielo nunca ",
+            "vas estar solo porque s",
+            "iempre estaré. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ine caminando para no",
-            " gastar dinero /nY por e"
+            "Co",
+            "mo pude imaginarme que se ",
+            "te ocurriría dejarme si p",
+            "asamos juntos más de un t",
+            "emporal. \n\nNi ",
+            "los tiempos buenos ni los malos han ",
+            "podido  lograr separarnos porqu ",
+            "siempre fue más fuerte nuestro a",
+            "mor. mi no me importa el ",
+            "dinero,  tengo lo que yo más ",
+            "quiero mi lado. /n"
         ],
         [
-            "so llegué tarde como a",
-            "yer /nYa no tr"
+            "Soy tu fiel compañero, me ",
+            "gusta  que seas así como sos. /n"
         ],
         [
-            "ates de ocultarme lo que me ",
-            "entere esta tarde /nYo sab"
+            "Sos mi escudo ante el miedo au",
+            "nque se derrumbe el cielo nu",
+            "nca vas estar sola po",
+            "rque siempre esta",
+            "ré. ",
+            "",
+            "",
+            "mi no ",
+            "me importa el dinero, tengo lo ",
+            "que yo más quiero mi l",
+            "ado. \n\nSoy tu fiel compañero, ",
+            "me gusta que seas así co",
+            "mo sos. \n\nSos mi escudo ante el m",
+            "iedo aunque se derrumbe el ci",
+            "elo nunca vas estar s",
+            "ola porque siempre e",
+            "staré. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ia algo andaba ma",
-            "l    ",
-            "/nMenos m"
-        ],
-        [
-            "al que solo es eso, sentí",
-            " alivio lo confieso/nTuve mi"
-        ],
-        [
-            "edo de que fuera otra muje",
-            "r /nYo no qu"
-        ],
-        [
-            "ise preocuparte, no quer",
-            "as que supiera/nTe qued"
-        ],
-        [
-            "aste sin trabajo una vez m",
-            "s ",
-            "/nNo me t"
-        ],
-        [
-            "umba un viento frío y si te t",
-            "engo cerca mío /nNo le t"
-        ],
-        [
-            "emo a lo que pueda sucede",
-            "r/nA mí no me importa el d"
-        ],
-        [
-            "inero t",
-            "engo lo que yo más q",
-            "uiero a mi lado /n"
-        ],
-        [
-            "Soy tu fiel compañera me g",
-            "usta que seas así como soy /n"
-        ],
-        [
-            "Sos mi escudo ante el mie",
-            "do y aunq",
-            "ue se derrumbe el cielo /n"
-        ],
-        [
-            "Nunca vas a estar solo p",
-            "orque siempre estaré/n"
-        ],
-        [],
-        [
-            "ude imaginarme que se te ocu",
-            "rriría dejarme /nSi pas"
-        ],
-        [
-            "amos juntos mas de un tempora",
-            "l ",
-            "/nNi los t"
-        ],
-        [
-            "iempos buenos ni lo malos han pod",
-            "ido lograr separarnos/nPorque s"
-        ],
-        [
-            "iempre fue más fuerte nuestro a",
-            "mor/nA mí no me importa el d"
-        ],
-        [
-            "inero t",
-            "engo lo que yo más q",
-            "uiero a mi lado /n"
-        ],
-        [
-            "Soy tu fiel compañera me g",
-            "usta que seas así como soy /n"
-        ],
-        [
-            "Sos mi escudo ante el mie",
-            "do y aunq",
-            "ue se derrumbe el cielo /n"
-        ],
-        [
-            "Nunca vas a estar solo p",
-            "orque siempre estaré/nA mí no me importa el d"
-        ],
-        [
-            "inero t",
-            "engo lo que yo más quiero a mi lado /nSoy tu fiel compañera me gusta que seas así como soy "
-        ],
-        [],
-        [],
-        []
+            "Muchas gracias \n\nJulieta. "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "LXFL5mdfP40",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

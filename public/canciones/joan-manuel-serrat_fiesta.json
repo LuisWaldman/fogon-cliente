@@ -1,1 +1,322 @@
-{"cancion": "Fiesta", "banda": "joan-manuel-serrat", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "G", "D", "G", "D", "G", "D", "G", "C", "G", "C", "G", "C", "G", "D9", "D", "C", "D", "G", "B7", "Em", "G7", "C", "D", "G", "C", "G", "G", "C", "G", "C", "G", "C", "G", "D9", "D", "C", "D", "G", "B7", "Em", "G7", "C", "D", "G", "C", "G", "C", "C/B", "Am7", "D7", "G", "D/F#", "Em", "Em7", "C", "A7", "D", "D9", "D", "G", "C", "D", "G", "B7", "Em", "D", "G", "C", "G", "C", "G", "C", "G", "C", "G", "D9", "D", "C", "D", "G", "B7", "Em", "G7", "C", "D7", "G", "C", "G", "G", "C", "G", "C", "G", "C", "G", "D9", "D", "C", "D", "G", "B7", "Em", "G7", "C", "D7", "G", "C", "G", "C", "C/B", "Am7", "D7", "G", "D/F#", "Em", "Em7", "C", "A7", "D9", "D", "G", "C", "G", "C", "G", "D", "G", "C", "G", "C", "G"]}], "orden_partes": [0]}, "letras": [[], [], ["Gloria a Dios en la", "s altur", "as/nRecogieron l"], ["a basura", "s/nDe mi calle ay"], ["er a oscu", "ras/nY hoy sembrada de bomb"], ["illas", "/n"], ["Y colgaro", "n de un cordel", "/nDe esquina a esq"], ["uina un carte", "l/nY band"], ["eras de pape", "l/nVerdes, r"], ["ojas y amari", "llas", "", "/n"], ["Y al darles el sol ", "la espa", "lda/nRevolotean l"], ["as falda", "s/nBajo un manto "], ["de guirna", "ldas/nPara que el cielo no v"], ["ea", "/n"], ["En la noc", "he de San Juan", "/nComo compa"], ["rten su pa", "n/nSu mu"], ["jer y su gab", "n/nGentes de"], [" cien mil ra", "leas", "", "/nApur"], ["ad", "/nQue ah"], [" os espe", "ro si quer", "is ven", "ir", "/nPues cae la n"], ["oche y ya se va", "n/nNuestras mis"], ["erias a dormi", "r", "", "/n"], ["Vamos sub", "iend", "o la cuest", "a/nQue arr"], ["iba mi ca", "lle/nSe visti"], ["\u00f3 de fies", "ta", "", "/nY hoy el noble y"], [" el vil", "lano/nEl prohom"], ["bre y el gus", "ano/nBailan y "], ["se dan la ma", "no/nSin importarles la f"], ["acha", "/nJu"], ["ntos l", "os encuentra el sol", "/nA la so"], ["mbra de un faro", "l/nEmpap"], ["ados en alcoh", "ol/nAbraz"], ["ando a una mucha", "cha", "", "/n"], ["Y con la res", "aca a c", "uestas/nVuelve el"], [" pobre a su ", "pobreza/nVuelve el"], [" rico a su r", "iqueza/nY el se\u00f1or cura a sus "], ["misas", "/n"], ["Se despert", "\u00f3 el bien y el ma", "l/nLa zo"], ["rra pobre al porta", "l/nLa zo"], ["rra rica al rosa", "l/nY el av"], ["aro a las divi", "sas", "", "/nSe aca"], ["b\u00f3", "/nEl s"], ["ol nos di", "ce que lleg\u00f3", " el fin", "al", "/nPor una no"], ["che se olvid", "/nQue cada u"], ["no es cada cu", "al", "/nV"], ["amos baja", "ndo la cues", "ta/nQue arr"], ["iba en mi ca", "lle/nSe acab"], ["\u00f3 la fiest", "a", "", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "mYuGb4uPqVw", "delay": 0}]}
+{
+    "cancion": "Fiesta",
+    "banda": "joan-manuel-serrat",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "D",
+                    "G",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G",
+                    "D9",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "C/B",
+                    "C/B",
+                    "C/B",
+                    "Em",
+                    "C",
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "D9",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "D7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "D9",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "G",
+                    "Em C",
+                    "Em C",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "G",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "¡\nGloria dios en las a",
+            "lturas recogieron las ",
+            "basuras  de mi calle era o",
+            "scura hoy sembr",
+            "ada me voy ol",
+            "vidar/n"
+        ],
+        [
+            "Me colgaron de un ",
+            "cordel de esquina esquina un ",
+            "cartero  banderas de ",
+            "papel verde roja",
+            "s amarilla ",
+            "",
+            "al darles el ",
+            "sol la espalda revolote",
+            "an las faldas bajo un band",
+            "o de guinalda pa",
+            "ra que el cielo ro",
+            "dea /n"
+        ],
+        [
+            "En la noche ",
+            "de \n\nSan \n\nJuan como comp",
+            "arten su pan, su muje",
+            "r su gaván, ",
+            "gentes de \n\nTienmin r",
+            "alean ",
+            "/n"
+        ],
+        [
+            "Apurad, ",
+            "que yo os espero si queré",
+            "is venir pu",
+            "es cae la noche ya se ",
+            "van nuestras miserias ",
+            "dormi",
+            "r ",
+            "vamos subien",
+            "do de fuerza que a",
+            "rriba mi calle se li",
+            "stió de fi",
+            "esta ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy el noble el vi",
+            "llano, el prombre el g",
+            "usano bailan se dan la ",
+            "mano  sin im",
+            "portarles la falta ",
+            "/n"
+        ],
+        [
+            "Juntos los encuent",
+            "ra el sol la sombra de ",
+            "un farol empapados en ",
+            "arco ab",
+            "razando una mu",
+            "chacha ",
+            "con la r",
+            "esaca cuestas vuelve el pobre ",
+            "su pobreza, vuelve el rico ",
+            "su riquez /n"
+        ],
+        [
+            "El señor cura sus ",
+            "misa",
+            "s, se despertó el ",
+            "bien el mal la zorra pob",
+            "re al portal, la zorra r",
+            "ica al rosal ",
+            "el habaro las d",
+            "ivisas /n"
+        ],
+        [
+            "Se aca",
+            "bó, que el ",
+            "sol nos dice que llegó el ",
+            "final,  ",
+            "por una noche se olvi",
+            "dó que cada uno ",
+            "es cada ",
+            "cuerd ",
+            "vamos bajando de ",
+            "fuerza que arriba ",
+            "en mi calle se ac",
+            "abó la f",
+            "iesta ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Apla",
+            "usos ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "mYuGb4uPqVw",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

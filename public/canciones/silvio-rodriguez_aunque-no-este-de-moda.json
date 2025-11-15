@@ -1,1 +1,298 @@
-{"cancion": "aunque-no-este-de-moda", "banda": "silvio-rodriguez", "escala": "F#m", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F#m", "Bm7", "G#\u00ba", "C#", "D", "C#m", "Bm", "B/D#", "A", "F#m", "D", "B/D#", "A", "F#m", "D", "B/D#", "A", "E", "C#", "F#", "Bm", "D", "C#m", "E", "A", "G#m", "F#", "C#", "A", "E", "F#m", "C#", "D", "B/D#", "E", "C#", "F#m", "E", "A", "F#", "E", "D", "C#m", "Bm", "C#"]}], "orden_partes": [0]}, "letras": [["Hoy de m\u00ed hacia ti,", "   hoy de ti hacia m\u00ed/n"], ["quiero hacerte un rega", "lo viej", "o.", "", "/nDesempolvemos algo "], ["las pasiones lejanas/n"], ["algo de aquellos sue\u00f1os sin vent", "anas./n"], ["Vivamos de cor", "rido, sin hacer poes\u00eda,/n"], ["aprendamos palabras de la vi", "da./n"], ["Desnud\u00e9monos ", "pues como viejos ama", "ntes/n"], ["que lo mismo de si", "empre nos queda dela", "nte./n"], ["Te quiero salva", "r de tu", " desnudez", "/nen pl"], ["eno ce", "ntro de la sol", "edad./ndesde tu cuerpo de crist"], ["al./n"], ["Algo nos est", " pasando, ay", "er te le", " una mano/ny c"], ["ada dibu", "jo al ver", "me me interr", "og\u00f3.", "", "/n"], ["Algo nos est\u00e1 pasando, ayer apret\u00e9 el interruptor/nde encender la luz y encend\u00ed el "], ["sol.", "", "", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "b3PfXEuEzP0", "delay": 0}]}
+{
+    "cancion": "aunque-no-este-de-moda",
+    "banda": "silvio-rodriguez",
+    "escala": "F#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#m",
+                    "G#º"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm7",
+                    "Bm",
+                    "G#º"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G#º",
+                    "B/D#",
+                    "B/D#",
+                    "A",
+                    "D",
+                    "B/D#",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B/D#",
+                    "B/D#",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B/D#",
+                    "B/D#",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E C#",
+                    "C#m B/D#",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C#m",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#º",
+                    "G#º",
+                    "D",
+                    "B/D#",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G#º",
+                    "G#º",
+                    "A",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy de mi hacia ",
+            "ti, ",
+            "hoy de ti hacia mi, ",
+            "quiero hacerte un regal",
+            "o viejo. /n"
+        ],
+        [
+            "Desempolv",
+            "emos algo, las pasione",
+            "s lejanas, algo de a",
+            "quellos sueños sin vent",
+            "ana. \n\nVivamos de corr",
+            "ido, sin hacer poes",
+            "ía, aprendamos palabr",
+            "as de la vida. /n"
+        ],
+        [
+            "Desnudémonos pues como viejos ",
+            "amantes,  ",
+            "que lo mismo de siempre nos queda ",
+            "adelante.  /n"
+        ],
+        [
+            "Desnudémonos pues como viejo ",
+            "amantes, ",
+            "que se apague la luz que el sol se ",
+            "levante.  /n"
+        ],
+        [
+            "Te quiero salvar ",
+            "de tu desnudez en ",
+            "pleno centro de la ",
+            "soledad.  /n"
+        ],
+        [
+            "Me quiero salvar ",
+            "haciendo  revolució ",
+            "desde tu cuerpo de ",
+            "cristal. /n"
+        ],
+        [
+            "Algo  no se está pasando, a",
+            "yer te leí una mano ca",
+            "da dibujo al verme me int",
+            "errogó. /n"
+        ],
+        [
+            "Algo  no se está pasando, ",
+            "ayer apreté el interruptor de enc",
+            "ender la luz encendí el ",
+            "sol /n"
+        ],
+        [
+            "Hoy ",
+            "de ti hacia mi, ",
+            "hoy de mi hacia ti, ",
+            "vamos hablar en ",
+            "voz muy baj",
+            "a. /n"
+        ],
+        [
+            "Dime lo que te pasa, ",
+            "déjame levantarte, ",
+            "déjame darte un be",
+            "so curarte. \n\nVi",
+            "vamos de corrido, ",
+            "sin hacer poesía ",
+            "aunque no esté de moda en ",
+            "estos días. \n\nAu",
+            "nque no esté de moda te pido una m",
+            "ano, ",
+            "mis entrañas no entienden de estética ",
+            "cambios. \n\nAu",
+            "nque no esté de moda repite c",
+            "onmigo, ",
+            "quiero amor, quiero amor, quiero amor com",
+            "partido. /n"
+        ],
+        [
+            "Te quiero salvar ",
+            "de tu desnudez en ",
+            "pleno  centro de la sole",
+            "dad. /n"
+        ],
+        [
+            "Me quiero salvar ha",
+            "ciendo revolución d",
+            "esde tu cuerpo por va",
+            "riar. /n"
+        ],
+        [
+            "Algo no se está pasando, un ",
+            "ruido como de pasos viene en ",
+            "la oscuridad se vuelve ",
+            "ir. \n\nAlg",
+            "o no se está pasando desde ",
+            "que la gente está empeñada en quere",
+            "rse amar en poder viv",
+            "ir. ",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 89,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "b3PfXEuEzP0",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

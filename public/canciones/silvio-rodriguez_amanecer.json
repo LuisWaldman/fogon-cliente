@@ -1,1 +1,323 @@
-{"cancion": "amanecer", "banda": "silvio-rodriguez", "escala": "F", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "E", "Eb", "D"]}, {"nombre": "parte2", "acordes": ["G", "F#7", "Am", "Cm", "B", "E", "C", "F"]}, {"nombre": "parte3", "acordes": ["G#", "C", "B7", "C7"]}, {"nombre": "parte4", "acordes": ["F", "B", "E", "C", "F"]}, {"nombre": "parte5", "acordes": ["C#", "C", "F", "E", "Eb", "D", "G", "F#"]}], "orden_partes": [0, 0, 1, 0, 2, 0, 2, 3, 0, 4, 0, 0, 0, 0, 0]}, "letras": [["Qu\u00e9 musa maravillo", "sa/n"], ["habr\u00e1 bajado a besar", "te/n"], ["y qu\u00e9 delicia tortuo", "sa/n"], ["habr\u00e1 sentido al dejar", "te./nB) "], ["T\u00fa te diste a musica", "rla/n"], ["con violines de ambros", "a/n"], ["y a la hora de guardarl", "a/n"], ["viste tus manos vac\u00ed", "as./nC) "], ["Pobre insensato p", "intor,/npale"], ["ta en mano tinta de amanec", "er,/nrompien"], ["do sombras, inventando", " el color/nque s"], ["\u00f3lo t\u00fa pod\u00eda", "s, s\u00f3lo t\u00fa cre", "as ver./n"], ["B1) ", "As\u00ed ", "vol", " tu m", "emor", "ia", "", "/n"], ["Siempre es noticia una historia", "/nde"], [" besos y desenga\u00f1", "os./nD) "], ["Desde que hallaste la mus", "a/n"], ["que te llev\u00f3 a la locu", "ra,/n"], ["canta tu l\u00ednea inconclu", "sa/n"], ["la misma recta sin cura", "./n"], ["La misma recta sin cura", ".", "/n"], ["Amanecer", "", "", "", "", "/n"], ["Amanecer", "", "", "/n"], ["Amanecer", "", "", "/n"], ["Amanecer", "", "", "/n"], ["Amanecer", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "HgLHTq3IwrQ", "delay": 0}]}
+{
+    "cancion": "amanecer",
+    "banda": "silvio-rodriguez",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "D#",
+                    "G",
+                    "C7",
+                    "E",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Eb",
+                    "Eb",
+                    "F",
+                    "F",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "B",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Eb",
+                    "Eb",
+                    "G#",
+                    "G#",
+                    "C",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "F",
+                    "F",
+                    "B",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "Eb",
+                    "Eb",
+                    "G#",
+                    "C",
+                    "F",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#",
+                    "C#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que ",
+            "musa marav",
+            "illosa ha",
+            "brá bajado b",
+            "esarte ",
+            "que delicia t",
+            "ortuosa h",
+            "abrás sentido al de",
+            "jarte /n"
+        ],
+        [
+            "Tu te diste mu",
+            "sicarla con ",
+            "violines de am",
+            "brosia ",
+            "la hora de g",
+            "uardarla d",
+            "iste tus manos vací",
+            "as \n\nPobre sens",
+            "ato pintor, p",
+            "aleta en mano tinta de ",
+            "amanecer \n\nRomp",
+            "iendo sombras inventand ",
+            "el color \n\nQue s",
+            "olo tu podías, s",
+            "olo tu creías ",
+            "ver ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Así ",
+            "voló tu memo",
+            "ria aún ",
+            "más allá que tus año",
+            "s \n\nSiempr",
+            "e es noticia una hi",
+            "storia de ",
+            "besos desengaños /n"
+        ],
+        [
+            "Siemp",
+            "re es noticia una his",
+            "toria de ",
+            "besos desengañ",
+            "os \n\nPobre sensato p",
+            "intor, palet ",
+            "en mano tinta de ama",
+            "necer \n\nRompiend ",
+            "sombras inventando el c",
+            "olor \n\nQue solo tu, ",
+            "que solo tu podías, sol",
+            "o tu creías ver ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Desde que h",
+            "allaste la mu",
+            "sa que te l",
+            "levó la locura /n"
+        ],
+        [
+            "Tanta tu ",
+            "opinión  inconclusa /n"
+        ],
+        [
+            "La misma r",
+            "ecta sin curra /n"
+        ],
+        [
+            "La misma r",
+            "ecta sin currar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ama",
+            "necer ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Amanecer ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ama",
+            "necer ",
+            "/n"
+        ],
+        [
+            "Amanecer \n\nAm",
+            "anecer ",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 103,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "HgLHTq3IwrQ",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
+}
