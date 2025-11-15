@@ -2,153 +2,398 @@
     "cancion": "dame-un-limon",
     "banda": "divididos",
     "escala": "D7",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D7",
-                    "G7",
-                    "C7",
                     "B7",
-                    "E7",
+                    "B7",
+                    "B7",
+                    "B7",
                     "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G7",
                     "G7",
                     "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "D7",
-                    "G7",
-                    "C7",
-                    "B7",
-                    "E7",
                     "D7",
-                    "G7",
-                    "B7",
-                    "E7",
                     "D7",
-                    "C7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D7",
                     "B7",
+                    "B7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
                     "A",
                     "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
                     "A",
                     "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "A",
-                    "G",
-                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
                     "B7",
                     "B7",
-                    "E7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "D7",
-                    "G7",
-                    "E7",
                     "D7",
-                    "E7",
                     "D7",
-                    "E7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
                     "D7",
-                    "E7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
                     "D7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
         [
-            "ponden en el salón/n"
-        ],
-        [
-            "  la gorda y su cadera con delay",
+            "con del",
+            "ay ",
             "/n"
         ],
         [
-            "  dame un gajo, de cu",
-            "atro a diez en Tesei/n"
-        ],
-        [
-            "  el fofo pide a gritos un lim",
-            "n/n"
-        ],
-        [
-            "No bailo no, y que ni se te oc",
-            "urra un canapé/n"
-        ],
-        [
-            "relieve en la polera otra vez",
+            "Dame u",
+            "n  gato d",
+            "e cuatro diez en /n T",
+            "6. ",
+            "el fofo pi",
+            "d  gritos un l",
+            "imón. ",
             "/n"
         ],
         [
-            "  fueye heavy, el bo",
-            "bo no aguanta mas/n"
+            "No bail",
+            "o  no. que n",
+            "se te ocurra un ca",
+            "napé /n"
         ],
         [
-            "  se me lleno de hojas el buli",
-            "n/n"
+            "Relieve",
+            "l  polera ot",
+            "r  ve",
+            "z /n"
         ],
         [
-            "  No es poesía ver ",
-            "la carne transpirar/n"
+            "Pue",
+            "s  llegué",
+            "vi que el bobo no ag",
+            "uant  más./n"
         ],
         [
-            "  entre morcilla o s",
-            "uiza",
-            " estoy",
+            "Se m",
+            "e  llenó de hojas e",
+            "l  bolí",
+            "n ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Cambio gajo por infusión/n"
+            "N",
+            "o  es poe",
+            "sí  ver la c",
+            "arn  transpirar./n"
         ],
         [
-            " llamarada y cascabel/n"
-        ],
-        [
-            " este infierno pide hoy",
+            "En",
+            "tr  morcillo s",
+            "uiz  es",
+            "toy ",
             "/n"
         ],
         [
-            " Cambio gajo por infusión/n"
+            "Cambi  gajo por",
+            "infusi",
+            "ón  llamarada",
+            "cascabel /n"
         ],
         [
-            " llamarada y cascabel/n"
-        ],
-        [
-            " este infierno pide hoy/n"
-        ],
-        [
-            "  Dame un limón/n"
-        ],
-        [
-            "  No es poesía ver ",
-            "la carne transpirar/n"
-        ],
-        [
-            "  se me lleno de hojas el buli",
-            "n/n"
-        ],
-        [
-            "No bailo no, ",
-            "  no",
-            " bailo no,",
+            "Este infierno p",
+            "id  ho",
+            "y ",
             "/n"
         ],
         [
-            "no bailo no, ",
-            "  no",
-            " bailo no.",
-            ""
+            "Cambio gajo p",
+            "or  infusi",
+            "ón  llamarad",
+            "cascabel./n"
+        ],
+        [
+            "Este infiern",
+            "pide hoy./n"
+        ],
+        [
+            "Dame u",
+            "n  limón.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  e",
+            "poesí",
+            "ver la carne tr",
+            "anspirar /n"
+        ],
+        [
+            "Se me",
+            "llen  de hojas e",
+            "l  bol",
+            "ín /n"
+        ],
+        [
+            "No ba",
+            "ilo  no.",
+            "",
+            "/n"
+        ],
+        [
+            "No b",
+            "ailo,  no.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No bailo, no.",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  bailo, no.",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  bail",
+            "o  no.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No bailo, no."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "VWZpUMWmWZk",
-            "delay": 0
+            "delay": 15940.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

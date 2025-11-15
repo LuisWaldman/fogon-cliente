@@ -2,91 +2,313 @@
     "cancion": "tripeando",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A",
+                    "Em",
                     "D",
-                    "A",
                     "D",
-                    "A"
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F",
-                    "G",
+                    "D",
                     "Em",
-                    "F",
-                    "G",
+                    "Em",
+                    "Em",
                     "Em",
                     "D",
-                    "A"
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Besando el sol /nya "
+            "Esta e",
+            "s",
+            "",
+            "",
+            "",
+            "una canción en español de rock argentino. /n Esta es una canción en español de rock argentino./n"
         ],
         [
-            "tarde",
-            " la noche fue larga /ny hasta "
+            "Esta es una canción en español d",
+            "rock argentino. /n Esta es una canción en español d",
+            "e",
+            "rock argentino. /n Esta es una canción en español de roc",
+            "k argentino. /n Esta es una canción en español de r",
+            "o",
+            "c",
+            "k argentino. /n Esta",
+            "e",
+            "s",
+            "",
+            "",
+            "",
+            "u",
+            "n",
+            "a",
+            "",
+            "",
+            "",
+            "canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de r",
+            "ock argentino. /n Esta es una canción en español d",
+            "e  rock argentino.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "difícil de sobre",
-            "seguir /n"
+            "Esta es un",
+            "a canción en español de rock argentino. /n Esta es una canción en español de rock argentin",
+            "o /n Esta e",
+            "s  una canción en español de rock",
+            "argentino /n Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción en español d",
+            "e  rock argentino./n"
         ],
         [
-            "aunque supe el secreto /nno lo "
+            "Esta es una canción e",
+            "n  español d",
+            "e",
+            "rock argentino. /n E",
+            "st  es una",
+            "can",
+            "ci  en es",
+            "paño de rock argentino. /n Esta es una canción en español de rock",
+            "argentino /n E",
+            "st  es una canción e",
+            "n",
+            "español de rock argentino./n"
         ],
         [
-            "recuerd",
-            "o /nalgunas ideas que no "
+            "Es",
+            "t  es una canción en español d",
+            "e",
+            "rock argentino. /n E",
+            "st  es u",
+            "n",
+            "a  canción en español de rock arg",
+            "entino /n Esta es una canción en español de rock",
+            "argentino /n E",
+            "st es una canción en español de rock argentino. /n Est",
+            "a  es una canción e",
+            "n  español d",
+            "e  r",
+            "o",
+            "c",
+            "k  argentino./n"
         ],
         [
-            "paran /nde de"
+            "Esta es una canción en español d",
+            "e  rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "cirme que /n"
+            "Esta es u",
+            "n",
+            "a",
+            "canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argenti",
+            "no /n Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción e",
+            "n  español d",
+            "e",
+            "rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tiene que enc",
-            "ontrar amor /nen un mun"
+            "Esta es una canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "do mejor /n"
-        ],
-        [
-            "deshaciendo el do",
-            "lor /ny dejarlo p"
-        ],
-        [
-            "asar /nir en b"
-        ],
-        [
-            "usca de algo mej",
-            "or"
+            "Esta e",
+            "s una canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Es",
+            "t  es una canción en español de rock argentino."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "bp5qN5wSl5Q",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,53 +2,201 @@
     "cancion": "pasta-de-hablar",
     "banda": "babasonicos",
     "escala": "Bm",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bm",
-                    "E7",
-                    "G"
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Bm",
-                    "E",
-                    "G"
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "G",
                     "A",
-                    "Bm"
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "G",
+                    "Bm",
+                    "Bm",
+                    "E7",
+                    "E7",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "E",
+                    "E",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "E",
                     "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "A",
                     "Bm",
-                    "E7",
+                    "Bm",
+                    "Em",
+                    "Em",
                     "G",
                     "Bm",
-                    "E7"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -56,147 +204,193 @@
             0,
             1,
             2,
-            1,
-            1,
-            2,
             3,
             4,
-            0,
-            1,
-            2,
-            1,
-            1,
-            2,
-            1,
-            1,
-            2,
-            3,
-            4
+            5,
+            6
         ]
     },
     "letras": [
-        [],
         [
-            "edo sentir l",
-            "a natura",
-            "leza descalza  /nsu"
-        ],
-        [
-            " palpitar es como ",
-            "un cisne /nq"
-        ],
-        [
-            "ue se eleva y su ",
-            "volar  /n"
-        ],
-        [
-            "descubre un bosque ar",
-            "rancado del ",
-            "suelo /n"
-        ],
-        [
-            "de ahora en más",
-            " controla",
-            "ré mis visiones /n"
-        ],
-        [
-            "te lo prometo mujer ",
-            "no me veras",
-            " /np"
-        ],
-        [
-            "erdido au",
-            "llándole a la lun",
-            "a entre relá",
-            "mpagos ... /n"
-        ],
-        [
-            "y se coagula sa",
-            "liva en mis labios se",
-            " hace brillante y nacara",
-            "da mi voz...  /n"
-        ],
-        [
-            "me voy flotando, me exti",
-            "nguiré ",
-            "en el silencio  /n"
-        ],
-        [
-            "me voy flotando  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "nubes que migran",
-            ", son la nosta",
-            "lgia invasora  /n"
+            "Pue",
+            "d  sentir",
+            "l",
+            "a  naturaleza",
+            "descalza  s",
+            "u  pavit",
+            "es con f",
+            "río /n"
         ],
         [
-            "desde la costa veo ",
-            "velas que flamea",
-            "n  /n"
+            "Diste qu",
+            "e es el /n I/n"
         ],
         [
-            "y en su agitar ",
-            "aplauden la llegad",
-            "a del oto",
-            "o /n"
-        ],
-        [
-            "o me voy flotando ",
-            "me extinguiré en ",
-            "el silencio  /n"
-        ],
-        [
-            "me voy flotando  ",
+            "V  en s",
+            "u  vol",
+            "ar  de",
+            "scubr  un bosque a",
+            "rrancad  del",
+            "sue",
+            "lo /n D",
+            "e  ahora e",
+            "n  más",
+            ",  cont",
+            "rolaremo  visi",
+            "one  del ot",
+            "r  neto muj",
+            "er /n No m",
+            "e  ve",
+            "rá ",
+            "perd",
+            "id ",
+            "agulléndole",
+            "la luna entr",
+            "e  relámpa",
+            "gos ",
+            "",
+            "seco alguna s",
+            "aliva  en m",
+            "i  labi",
+            "os  se",
+            "hac  brillante e",
+            "n  la cara d",
+            "e  mi vo",
+            "z /n Me voy",
+            "flota",
+            "nd  me exti",
+            "nguir  en la si",
+            "lenci  de mi voz.",
+            "",
+            "",
             "/n"
         ],
         [
-            "adiviná y no ",
-            "me preguntes nada /n¿De d"
+            "N",
+            "o  ves que mi",
+            "gran ",
+            "son la nostalgia i",
+            "nvasora /n De",
+            "sd  la co",
+            "st  veo v",
+            "era",
+            "s  que l",
+            "lam",
+            "ea  s",
+            "u  agitar",
+            "a",
+            "plaude  la ll",
+            "egad  del o",
+            "toñ",
+            "o /n M",
+            "e  voy fl",
+            "otand",
+            "me extinguir",
+            "en la",
+            "s",
+            "i",
+            "l",
+            "e",
+            "n",
+            "c",
+            "i",
+            "o ",
+            "d",
+            "e",
+            "m",
+            "i voz. /n Me voy flotando,",
+            "m",
+            "e  e",
+            "xt",
+            "in",
+            "gu",
+            "ir",
+            "en l",
+            "a",
+            "",
+            "",
+            "",
+            "s",
+            "i",
+            "l",
+            "e",
+            "n  de mi voz.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "onde vengo?,  /n¿Donde"
+            "Basta d",
+            "e  hablar,",
+            "la in",
+            "termitenci  do",
+            "min  mis o",
+            "jos en riesgo. /n De",
+            "j  dos re",
+            "des",
+            "cub",
+            "re  a",
+            "mo",
+            "r ",
+            "trávela",
+            "s  de parejas q",
+            "ue  se b",
+            "esan ",
+            "",
+            "seco alguna",
+            "saliva en m",
+            "is  lab",
+            "ios  se",
+            "hace brillante e",
+            "n  la cara d",
+            "e  mi vo",
+            "z /n Me voy f",
+            "lotando",
+            "me exting",
+            "uir  en la sile",
+            "nci  d",
+            "e",
+            "m",
+            "i  v",
+            "o",
+            "z",
+            ".",
+            "",
+            "/n"
         ],
         [
-            " estuve? y ",
-            "¿Donde voy?  /nPasta d"
-        ],
-        [
-            "e hablar, ",
-            "la intermi",
-            "tencia domina  /n"
-        ],
-        [
-            "mis ojos enrejados r",
-            "edescu",
-            "bren am",
-            "or /n"
-        ],
-        [
-            "praderas de p",
-            "arejas que se be",
-            "san ...  /n"
-        ],
-        [
-            "y se coagula saliv",
-            "a en mis labios /n"
-        ],
-        [
-            "se hace brillante y nacara",
-            "da mi voz...  /n"
-        ],
-        [
-            "me voy flotando me",
-            " extinguiré  /nen el silencio me voy flotando de acá."
-        ],
-        []
+            "D",
+            "ejado  de",
+            "jado  dejado, dejado, d",
+            "ejado  dejado.",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "8x1s2dTHl0s",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

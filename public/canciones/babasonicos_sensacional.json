@@ -2,55 +2,89 @@
     "cancion": "sensacional",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 107,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "C",
-                    "Am",
-                    "F",
-                    "Fm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
                     "F",
-                    "Fm",
                     "C",
-                    "C7",
+                    "C",
                     "F",
-                    "Fm",
-                    "C"
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C9",
-                    "F",
                     "Fm",
-                    "Em7",
-                    "A",
-                    "Dm",
-                    "G",
-                    "C"
+                    "Fm",
+                    "Fm",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "F",
+                    "F",
+                    "Fm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Am",
                     "Am",
                     "F",
-                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             }
@@ -60,64 +94,82 @@
             1,
             2,
             3,
-            3
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "Juegas con tu l",
-            "ibertad/nsin "
-        ],
-        [
-            "nombre, s",
-            "in verda",
-            "d",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "estrellas tu v",
-            "anidad,/ncon"
+            "Juegas c",
+            "o  tu",
+            "liber",
+            "ta  sin n",
+            "ombre  sin.",
+            ".  ve",
+            "rdad ",
+            "/n"
         ],
         [
-            "tra la r",
+            "Est",
+            "rella  tu v",
+            "anid",
+            "a  contra l",
+            "a  r",
             "ealida",
-            "d.",
+            "d ",
             "/n"
         ],
         [
-            " Tendrías ",
-            "que aprend",
-            "er a call",
-            "ar,/n"
+            "Tendrías q",
+            "u  aprende",
+            "cal",
+            "lar /n"
         ],
         [
-            " llenas tu b",
-            "oca de pa",
-            "sta de habla",
-            "r/nno hables "
+            "Llena  tu b",
+            "oc  de pa",
+            "st  de hablar,",
+            "no hables m",
+            "ás",
+            "no hables m",
+            "ás",
+            "",
+            "/n"
         ],
         [
-            "más, no hables ",
-            "más./n"
-        ],
-        [
-            "Sensacion",
-            "al la noveda",
-            "d no volverá",
-            "/nla "
-        ],
-        [
-            "noche cerró, quedaste afuera al sol./n"
-        ],
-        []
+            "Sensaci",
+            "onal ",
+            "la nov",
+            "eda  n",
+            "o  volv",
+            "erá /n L",
+            "a  n",
+            "oche ",
+            "s  ro",
+            "mpi ",
+            "hast  fu",
+            "er ",
+            "sol",
+            ". "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "uIc7AmmmnW4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

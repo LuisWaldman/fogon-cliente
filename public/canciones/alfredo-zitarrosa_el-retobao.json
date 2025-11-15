@@ -8,17 +8,82 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
                     "G",
+                    "C",
+                    "G",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
                 ]
             }
@@ -26,44 +91,86 @@
         "orden_partes": [
             0,
             1,
-            1,
-            1
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "No me gusta que m",
-            "e manden, /nyo soy medio cima"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rrón, /nno sirvo para"
+            "No me g",
+            "ust  que me manden, yo soy m",
+            "edi  cimarrón, no sir",
+            "v  para milicos, dicen qu",
+            "e  sirvo papión, me llama",
+            "n  el retobal, pero no",
+            "so  peleador, eso s",
+            "i  no cabresteo porque n",
+            "ac  sentado.",
+            "",
+            "",
+            "/n"
         ],
         [
-            " milico, /ndicen que sirvo pa' p"
+            "No han enco",
+            "ntrad  palenque para abland",
+            "arm  en cogote, conmigo n",
+            "o  va la escuela ni me arro",
+            "y  en el chicote, soy libre po",
+            "rqu  me gusta, soy libre por",
+            "qu  lo siento, soy libre co",
+            "m  un bagual calopando",
+            "esclinamiento ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "eón. /nMe llaman el reto"
+            "Respecto la",
+            "autorida  cuando nace",
+            "nosotros  pero si que m",
+            "e  reto cuando mandan u",
+            "nos  focos, si grito soy gau",
+            "ch  alzaú, si no ya soy peó",
+            "n  patón, como quisiera",
+            "grita  que grita se",
+            "mostró ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ba'o, /npero no soy pel"
-        ],
-        [
-            "eador, /neso sí, no cab"
-        ],
-        [
-            "resteo /nporque nací sen"
-        ],
-        [
-            "tador. "
+            "La lluvia empieza de",
+            "poco, después viene el chap",
+            "arrón,  voy haciendo punta",
+            "sol  pero atrás viene el mon",
+            "tón  vamos ver quien lo su",
+            "jeta  ya se vienen arrima",
+            "ndo  cuando sientan el b",
+            "arullo  van",
+            "creer que está trona",
+            "ndo ",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "xb5qApxmaZg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

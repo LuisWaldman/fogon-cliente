@@ -8,91 +8,164 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
                 "acordes": [
                     "Em",
                     "D",
-                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
                     "Am",
                     "G",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "B7",
+                    "Em",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Como lazo m",
-            "i amor te",
-            " asujeta;",
             "/n"
         ],
         [
-            "Cuanti más ",
-            "largo el lazo/n"
+            "Cuant",
+            "mas largo el lazo, ma",
+            "s  larga la a",
+            "usenci /n"
         ],
         [
-            "Más larga la ausenc",
-            "ia/n"
+            "No tenés mas",
+            "coyund  que e",
+            "l  tiempo/n"
         ],
         [
-            "No tenés m",
-            "ás coyunda ",
-            "que el ti",
-            "empo;/n"
-        ],
-        [
-            "Cuanti más ",
-            "tiempo pase/n"
-        ],
-        [
-            "Tendrás más ricuer",
-            "dos/n"
-        ],
-        [
-            "Como perro ",
-            "trotando en ",
-            "la huella",
+            "Cuanti mas tiempo",
+            "pase  tend",
+            "rá  mas recue",
+            "rdo ",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Mi amor que ",
-            "te acompaña/n"
+            "Como pe",
+            "rr  trotando en la h",
+            "uell /n M",
+            "i  amor que te acomp",
+            "aña  te traerá",
+            "d  vuelta/n"
         ],
         [
-            "Te traerá de vuelta",
+            "No tené",
+            "s  mas coyunda que el",
+            "tiemp /n"
+        ],
+        [
+            "Que ni mi amor te h",
+            "ar  volver,",
+            "no estoy sa",
+            "biend ",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "No tenés m",
-            "ás coyunda ",
-            "que el ti",
-            "empo;/n"
-        ],
-        [
-            "l y mi amo",
-            "r te harán volver/n"
-        ],
-        [
-            "Lo estoy sabiendo",
+            "Mi am",
+            "o ",
+            "",
+            "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "h6Ih7cO5MVU",
-            "delay": 0
+            "delay": 25840.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

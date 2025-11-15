@@ -2,156 +2,424 @@
     "cancion": "vortice",
     "banda": "babasonicos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
+                    "C",
                     "D",
                     "Am",
-                    "Em"
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Am",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
                     "F",
                     "C",
-                    "F",
-                    "F#"
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Bm",
-                    "F#",
-                    "A"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "D",
-                    "A",
-                    "E",
-                    "A",
+                    "Am",
+                    "Am",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "G",
                     "D",
-                    "A",
                     "D",
-                    "F"
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "F#",
+                    "F#",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "F#",
+                    "F#",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "F",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
-            0,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Me asome /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "curiosidad /n"
+            "L",
+            "a  somer",
+            "de curio",
+            "sida  v",
+            "ien  se h",
+            "a  reflejado e",
+            "n  tu c",
+            "uerp /n"
         ],
         [
-            "viene y se refleja en mi ant",
-            "icuerpo.  /n"
+            "Fosfor",
+            "escent  en su interio",
+            "r  viaje esta o",
+            "tra  dimens",
+            "ió /n Llamo su",
+            "núcleo",
+            "magma e",
+            "n fuego /n R",
+            "abi  estoy maldito vengo",
+            "fuera de m",
+            "i",
+            "",
+            "",
+            "/n"
         ],
         [
-            "fosforescente en su interior  /n"
+            "Búscam  e",
+            "star  de",
+            "shecho",
+            "llév",
+            "am  a",
+            "l  más a",
+            "llá /n"
         ],
         [
-            "viaje hasta otra dimensión /n"
+            "Me he chupad",
+            "o  lo hice d",
+            "e  tu un",
+            "ivers /n"
         ],
         [
-            "me hago en su núcleo  /n"
+            "Te ofrece",
+            "r  sin vaci",
+            "la  mi juve",
+            "ntu /n Te haré un co",
+            "lla  de rello",
+            "s  protectore",
+            "t",
+            "ormenta/n"
         ],
         [
-            "macma, el fuego  /n"
+            "Rabio estoy maldito v",
+            "engo  fuera de",
+            "m",
+            "i",
+            "",
+            "/n"
         ],
         [
-            "rabia estoy maldito  /n"
+            "Búscame e",
+            "staré  d",
+            "eshec",
+            "h /n Todo suce",
+            "d  sin un rem",
+            "edio  no sos nue",
+            "vo  no hay un",
+            "re",
+            "me",
+            "d ",
+            "/n"
         ],
         [
-            "vengo fuera de mí.... ( se repite 3 veses) /n"
+            "Rabio e",
+            "sto  maldito vengo fuera",
+            "d  m",
+            "i",
+            "",
+            "/n"
         ],
         [
-            "búscame, estaré ",
-            "desecho.  /n"
+            "Bús",
+            "came  est",
+            "ar  desh",
+            "ech ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "llévame  /n"
+            "T",
+            "od  sucede si",
+            "n  un remedio,",
+            "no sos nuevo,",
+            "no hay un r",
+            "e",
+            "m",
+            "e",
+            "d /n R",
+            "abi  estoy maldi",
+            "t  vengo f",
+            "ue",
+            "r ",
+            "d",
+            "e",
+            "",
+            "",
+            "",
+            "",
+            "mi /n Rabio estoy m",
+            "aldito  vengo fuera de",
+            "mi/n"
         ],
         [
-            "al más allá  /n"
+            "Desorbitado",
+            "desorbitado, no exi",
+            "st  salvación",
+            "/n"
         ],
         [
-            "me chupa el vórtice d",
-            "e tu universo /n"
+            "Desorbit",
+            "ado  desorbitado, pe",
+            "rd  mi atención",
+            "/n"
         ],
         [
-            "te ofrecere sin vacilar /n"
+            "Desorbitad",
+            "o  desorbitado, ya no t",
+            "engo  dolor",
+            "/n"
         ],
         [
-            "mi juventud, te hara un collar /n"
+            "Desor",
+            "bitado  desorbitado, un via",
+            "j  interior",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "de rayos protectores /n"
-        ],
-        [
-            "y..tormentas  /n"
-        ],
-        [
-            "todo sucede sin remedio  /n"
-        ],
-        [
-            "no sos mi amo  /n"
-        ],
-        [
-            "desorbitado, desorbitado,  /n"
-        ],
-        [
-            "no existe salvación  /n"
-        ],
-        [
-            "desorbitado, desorbitado,  /n"
-        ],
-        [
-            "perdí mi atención  /n"
-        ],
-        [
-            "desorbitado, desorbitado, /n"
-        ],
-        [
-            "desorbitado, desorbitado,  /n"
-        ],
-        [
-            "ya no tengo dolor  /n"
-        ],
-        [
-            "desorbitado, desorbitado,  /n"
-        ],
-        [
-            "un viaje interior."
+            "Desorbitado, desorbitado"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "cIW_EzSpClM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

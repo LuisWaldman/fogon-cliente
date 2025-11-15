@@ -2,57 +2,169 @@
     "cancion": "rubi",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C",
                     "G",
-                    "F",
-                    "C",
-                    "F"
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "F",
-                    "C",
-                    "F",
-                    "C",
-                    "F",
                     "G",
-                    "C"
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
+                    "F",
                     "G",
-                    "Em",
-                    "F"
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "C",
-                    "G7",
-                    "Am7",
-                    "F"
+                    "C",
+                    "F",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "F",
+                    "Em",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "G",
+                    "Em",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
                     "C",
                     "F",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Em",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             }
@@ -61,138 +173,148 @@
             0,
             1,
             2,
-            2,
             3,
-            2,
-            2,
             4,
-            4,
-            0,
-            1
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "mposible/nO"
-        ],
-        [
-            "lvidar tu ta",
-            "lismán/nIrre"
-        ],
-        [
-            "sistible/nRemar co"
-        ],
-        [
-            "ntra tu a",
-            "tracción/nA tu la"
-        ],
-        [
-            "do retrocede el ",
-            "tiempo/nCualqui"
-        ],
-        [
-            "er día es el mej",
-            "or momento/nIncrei"
-        ],
-        [
-            "ble/nTen"
-        ],
-        [
-            "tación es el amo",
-            "r/nT"
-        ],
-        [
-            "u aliento ca",
-            "rmesí/nTu flor de"
-        ],
-        [
-            " lis/nJunto a mi "
-        ],
-        [
-            "boca/nF"
-        ],
-        [
-            "umar de tu ",
-            "rubí/nQuererte a"
-        ],
-        [
-            "sí/nBeberte a g"
-        ],
-        [
-            "otas/nT"
-        ],
-        [
-            "engo",
             "",
             "",
-            "/nT"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "u aliento ca",
-            "rmesí/nTu flor de"
+            "Imposible",
+            "olvida  tu",
+            "talismá ",
+            "",
+            "/n"
         ],
         [
-            " lis/nJunto a mi "
+            "Irresistible rem",
+            "a  contra tu",
+            "atracció ",
+            "tu lado retroceder",
+            "el tiempo /n Cual",
+            "quie  día es el mejor mo",
+            "ment /n"
         ],
         [
-            "boca/nF"
+            "Increí",
+            "bl  tentación e",
+            "s  el amo",
+            "r /n"
         ],
         [
-            "umar de tu ",
-            "rubí/nQuererte a"
+            "Tu alie",
+            "nt  carmesí,",
+            "tu flor feliz jun",
+            "t  mi boc",
+            "a /n Puma",
+            "de tu rubí,",
+            "quererte así,",
+            "beberé te agotás",
+            "",
+            "/n"
         ],
         [
-            "sí/nBeberte a g"
+            "Tengo el c",
+            "uerp  chamería del romance, mi t",
+            "raje  favorito es el amor",
+            "/n"
         ],
         [
-            "otas/nHeb"
+            "Cariño mío, acé",
+            "rcate  huele un jardín de pr",
+            "imaver  quizás mi c",
+            "ercaní  sea tu hoguera",
+            "¿Acaso mi mi",
+            "rad  te encandió mirás debajo del cint",
+            "urón /n Quizás alguna",
+            "ve  pasea tu lado, no te hagas la tont",
+            "ita  yo sé que lo has notado",
+            "algún suspiro al aire s",
+            "e  ha escapad",
+            "/n"
         ],
         [
-            "ra de tan",
-            "tas marav",
-            "illas/nFlo"
+            "T",
+            "u  aliento carmesí",
+            "tu flor feliz",
+            "junto mi boca/n"
         ],
         [
-            "rece fue",
-            "ra de esta",
-            "ción/nImp"
+            "P",
+            "uma  de tu rub",
+            "í  quererte as",
+            "í  beberte agot",
+            "á /n"
         ],
         [
-            "osible/nO"
+            "Tengo el cuerpo chamería del r",
+            "om",
+            "an",
+            "c ",
+            "mi traje favorito es el amor /n Te habría de t",
+            "anta  maravilla",
+            "",
+            "/n"
         ],
         [
-            "lvidar tu tal",
-            "ismán/nIrre"
+            "Florece f",
+            "uer  de esta",
+            "ció ",
+            "/n"
         ],
         [
-            "sistible/nRemar co"
+            "Imposible, ol",
+            "vidar  tu talismá",
+            "",
+            "/n"
         ],
         [
-            "ntra tu atr",
-            "acción/nA tu la"
+            "Ir",
+            "resistible  re",
+            "marc  contra tu atra",
+            "cció  tu l",
+            "ad  retrasa el ti",
+            "emp /n Tú qui",
+            "ere  es el mejor momento",
+            "/n"
         ],
         [
-            "do retrocede el t",
-            "iempo/nCualqui"
-        ],
-        [
-            "er día es el mejo",
-            "r momento/nIncrei"
-        ],
-        [
-            "ble/nTent"
-        ],
-        [
-            "ación es el am",
-            "or"
+            "Increíble,",
+            "tentació  e",
+            "el a",
+            "mo ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ihefpPjxJp0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,79 +2,177 @@
     "cancion": "tengo",
     "banda": "divididos",
     "escala": "B",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B",
                     "E",
-                    "F#"
+                    "E",
+                    "E",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
                     "D",
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A",
                     "D",
+                    "Bm",
                     "G",
-                    "F#/E"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Tengo un mu",
-            "ndo/nDe s"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ensaci",
-            "ones/n"
+            "Ten",
+            "g  un mundo de sensaci",
+            "one /n Un mundo de vibracio",
+            "ne /n Que te puedo re",
+            "gala /n Te",
+            "ng  dulzura para brin",
+            "dart /n Claricias para entr",
+            "egart /n Si tu me quieres a",
+            "ma /n Serán los",
+            "día más felices /n Que p",
+            "ueda tu vivir /n Con u",
+            "n sonido de mil batices /n Que te",
+            "ng  para t",
+            "i",
+            "",
+            "/n"
         ],
         [
-            "Un mundo de v",
-            "ibracio",
-            "nes/n"
+            "Tengo mil bra",
+            "zo para abrazarte /n Mil bo",
+            "ca para besarte /n Mil sue",
+            "ño  puesto en t",
+            "i /n Tengo poe",
+            "ma  de amor rosas c",
+            "osa  maravillosas to",
+            "d  es para ti/n"
         ],
         [
-            "Que te puedo r",
-            "egalar",
-            "/nSerán los"
+            "Será  los días más f",
+            "elice /n Que puedas tu vi",
+            "vi /n Con un sonido de mil ba",
+            "tice /n Que tengo para",
+            "t ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " días más felices/nQue p"
-        ],
-        [
-            "uedas tú viv",
-            "ir,/nCon l"
-        ],
-        [
-            "uz de mil matices/nQue "
-        ],
-        [
-            "tengo para t",
-            "i"
+            "Serán l",
+            "o días más felices /n Qu",
+            "e puedas tu vivir /n Co",
+            "n un sonido de mil batices /n Que",
+            "teng  para t",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "mrZd_5fRzy0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

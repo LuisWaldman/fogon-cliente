@@ -2,118 +2,117 @@
     "cancion": "nino-hereje",
     "banda": "divididos",
     "escala": "B7",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "B7",
+                    "Em",
+                    "Em",
                     "Em",
                     "B7",
-                    "Em"
-                ]
-            },
-            {
-                "nombre": "parte2",
-                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "B7",
-                    "Em"
-                ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "B7",
-                    "Em",
-                    "G",
-                    "Em",
-                    "G",
-                    "Em",
-                    "B7",
-                    "Em"
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            0,
-            0,
-            2
+            1
         ]
     },
     "letras": [
         [
-            "ereje, niño h",
-            "ereje,/nnunca s"
+            "/n"
         ],
         [
-            "alga sin su fucking medal",
-            "lón/nNiño h"
+            "Niñ",
+            "o /n Niño./n"
         ],
         [
-            "ereje, niño h",
-            "ereje,/nnunca s"
+            "Nunca. /n N",
+            "iño /n Niño/n"
         ],
         [
-            "alga sin su fucking medal",
-            "lón/nestam"
+            "Nunca.",
+            "",
+            "/n"
         ],
         [
-            "pita, caminata, olor a pata,/nCharles "
+            "Niño",
+            ". /n"
         ],
         [
-            "Atlas bautiz",
-            "ado/ntortur"
+            "N",
+            "iño /n Nunca./n"
         ],
         [
-            "ado a talism",
-            "án/nNiño h"
+            "V",
+            "amos  c",
+            "o  el zapateo./n"
         ],
         [
-            "ereje, niño h",
-            "ereje,/nnunca s"
+            "Es zapatito",
+            ". ",
+            "/n"
         ],
         [
-            "alga sin su fucking medal",
-            "lón/nNiño h"
+            "Una vez más./n"
         ],
         [
-            "ereje, niño h",
-            "ereje,/nnunca s"
+            "Eso  chiquitín./n"
         ],
         [
-            "alga sin su fucking medal",
-            "lón/npara c"
+            "El za",
+            "patao /n Bravo, niño./n"
         ],
         [
-            "uando los confites/nque es un volcán en la del yo"
+            "Niño. /n N",
+            "iño /n Nunca.",
+            "",
+            "/n"
         ],
         [
-            "gur./npara "
-        ],
-        [
-            "cuando los confites/napaciguá al tiro"
-        ],
-        [
-            "lés/nque es un vol"
-        ],
-        [
-            "cán en la del fuc",
-            "kin' yogur."
+            "Para cuand",
+            "lo confites con esa sant",
+            "a  pipona, paz",
+            "igua  tiroles que su volcán e",
+            "n la del yogurt. /n Para cuand",
+            "lo confites con esa sant",
+            "a  pipona.",
+            "",
+            "",
+            "",
+            "",
+            "paz igual tiroles q",
+            "u  su volcán en la del yogurt.",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "sSAcQoNpONI",
-            "delay": 0
+            "delay": 16940.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

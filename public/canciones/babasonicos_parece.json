@@ -2,222 +2,232 @@
     "cancion": "parece",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "C",
                     "Am",
                     "Em",
                     "Am",
-                    "B"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "Am",
+                    "D",
+                    "D",
                     "Em",
                     "Am",
-                    "C",
-                    "B"
+                    "Am",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "Am",
-                    "D",
-                    "G",
-                    "C"
+                    "Am",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "D",
                     "Am",
                     "D",
-                    "Bm",
+                    "D",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Bm",
                     "Em",
                     "Am",
                     "D",
                     "G",
-                    "C"
+                    "G",
+                    "Am",
+                    "D",
+                    "Bm",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
             2,
-            3,
-            3,
-            1,
-            0,
-            2,
-            3,
             3,
             4,
-            3,
-            3
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "bajo",
-            "s se",
-            " toc",
-            "a este punteo:/nParec"
+            "",
+            "",
+            "/n"
         ],
         [
-            "e/nque nos entend"
+            "Est es una canción en español de rock argentino. /n P",
+            "arec  que nos e",
+            "ntendemo  porque des",
+            "confiamo  de las misma",
+            "s  cosas",
+            "coincidir en todos los detalles",
+            "de tu mano delirar la calle",
+            "en abrigo de la lluvia nos pon",
+            "emo  reír/n"
         ],
         [
-            "emos/nporque desconfi"
+            "Cuando todo p",
+            "as  nos sor",
+            "prend  la plena luz del d",
+            "ía /n A",
+            "lgún  destello anunci",
+            "ar  que nuestro a",
+            "mo  no tiene por veni",
+            "como t",
+            "al  el tiempo e",
+            "st  los h",
+            "echo  de los d",
+            "os /n Parec",
+            "e  que nos ente",
+            "ndemo  porque descon",
+            "fiamo  de las mismas c",
+            "osa /n En u",
+            "n  abrir cerrar de ojos todo",
+            "colaps  nuestro entorno mutis p",
+            "or  el foro codo codo nos busc",
+            "amo  para huir",
+            "/n"
         ],
         [
-            "amos/nde las mismas c"
+            "Cuando todo pas",
+            "e  nos sorpre",
+            "nd  la plena luz del día/n"
         ],
         [
-            "osas/n"
+            "Alg",
+            "ú  destello anunciará q",
+            "ue  nuestro amo",
+            "no tiene por venir",
+            "como t",
+            "a  el tiempo est",
+            "á  los he",
+            "cho  de los d",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Y coincidir en todos los detalles/n"
+            "Cua",
+            "nd  todo pase",
+            "nos sorprenda l",
+            "a  plena luz del d",
+            "í /n Algú",
+            "destello anunciará q",
+            "ue  nuestro amor n",
+            "o  tiene por venir",
+            "como ta",
+            "el tiempo está",
+            "los hec",
+            "ho  de los d",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " y de tu mano delirar la calle/n"
-        ],
-        [
-            " y al abrigo de la lluvia nos pone",
-            "mos a reír/n"
-        ],
-        [
-            " Cuando todo pa",
-            "se/n y nos sorpr"
-        ],
-        [
-            "enda la plena luz del d",
-            "a/n"
-        ],
-        [
-            " algún destello anunciar",
-            "á/n que nuestro am"
-        ],
-        [
-            "or no tiene porveni",
-            "r/nY como t"
-        ],
-        [
-            "al/nel tiempo est"
-        ],
-        [
-            "á/nal ac"
-        ],
-        [
-            "echo/nde los d"
-        ],
-        [
-            "os.../nParec"
-        ],
-        [
-            "e/nque nos entend"
-        ],
-        [
-            "emos/nporque desconfi"
-        ],
-        [
-            "amos/nde las mismas c"
-        ],
-        [
-            "osas/n"
-        ],
-        [
-            " En un abrir y cerrar de ojos/n"
-        ],
-        [
-            " todo colapsa nuestro entorno/n"
-        ],
-        [
-            " y mutis por el foro codoco nos busca",
-            "mos para huir/n"
-        ],
-        [
-            " Cuando todo pa",
-            "se/n y nos sorpr"
-        ],
-        [
-            "enda la plena luz del d",
-            "a/n"
-        ],
-        [
-            " algún destello anunciar",
-            "á/n que nuestro am"
-        ],
-        [
-            "or no tiene porveni",
-            "r/nY como t"
-        ],
-        [
-            "al/nel tiempo est"
-        ],
-        [
-            "á/nal ac"
-        ],
-        [
-            "echo/nde los d"
-        ],
-        [
-            "os.../nMientra"
-        ],
-        [
-            "s ta",
-            "nto suena este punteo, que es el que se repite a lo largo/n"
-        ],
-        [
-            " Cuando todo pa",
-            "se/n y nos sorpr"
-        ],
-        [
-            "enda la plena luz del d",
-            "a/n"
-        ],
-        [
-            " algún destello anunciar",
-            "á/n que nuestro am"
-        ],
-        [
-            "or no tiene porveni",
-            "r/nY como t"
-        ],
-        [
-            "al/nel tiempo est"
-        ],
-        [
-            "á/nal ac"
-        ],
-        [
-            "echo/nde los d"
-        ],
-        [
-            "os..."
+            "Cuando todo pase nos sorprenda la plena luz del día"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Uekl3cZa37U",
-            "delay": 0
+            "delay": 21440.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

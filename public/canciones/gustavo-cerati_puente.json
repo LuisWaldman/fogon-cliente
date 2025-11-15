@@ -8,366 +8,240 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "Em",
-                    "C",
-                    "Bm7",
-                    "Bb",
-                    "Am",
-                    "D",
-                    "Am7",
-                    "C",
-                    "G",
-                    "D/F#",
-                    "Em",
-                    "A",
-                    "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "A7(4)",
-                    "C",
-                    "D",
-                    "A7(4)",
-                    "C",
-                    "D",
-                    "A7(4)",
-                    "C",
-                    "Em",
-                    "C",
-                    "Bm7",
-                    "Bb",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "E5",
-                    "A",
-                    "Bm7",
-                    "G",
-                    "A",
-                    "Bm7",
-                    "G",
-                    "A",
-                    "Bm7",
-                    "G",
                     "D",
                     "D",
-                    "A7(4)",
-                    "C9",
                     "D",
-                    "A7(4)",
-                    "C9",
                     "D",
-                    "A7(4)",
-                    "C9",
                     "D",
-                    "A7(4)",
-                    "C9",
                     "D",
-                    "A7(4)",
-                    "C9",
-                    "D",
-                    "Bm7",
-                    "A7(4)",
-                    "C",
-                    "Em",
-                    "C",
-                    "Bm7",
-                    "Bb",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "D5",
-                    "G5",
-                    "E5",
-                    "G5",
-                    "E5",
-                    "A",
-                    "Bm7",
-                    "G",
-                    "A",
-                    "Bm7",
-                    "G",
-                    "D",
-                    "C9",
-                    "G",
-                    "Bm7",
-                    "Em",
-                    "A",
-                    "G",
-                    "Bm7",
-                    "Em",
-                    "A",
-                    "G",
-                    "Bm7",
-                    "Em",
-                    "A",
-                    "G",
-                    "Bm7",
-                    "Em",
-                    "A",
-                    "Am",
-                    "C",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "C9",
+                    "C9",
+                    "C9",
+                    "C9",
+                    "C9",
+                    "Em",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "D/F#",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "D5",
+                    "D5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E5",
+                    "Em",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "A7(4)",
+                    "Em",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
-        [],
-        [],
-        [],
         [
-            "oy te busqué/nEn l"
-        ],
-        [
-            "a rima que",
-            "  duerme",
-            "/nCon todas las pal"
-        ],
-        [
-            "abras",
-            "/nS"
-        ],
-        [
-            "i algo callé/nEs p"
-        ],
-        [
-            "orque entend",
-            "  todo",
-            "/nMenos la dist"
-        ],
-        [
-            "ancia",
-            "/nD"
-        ],
-        [
-            "esorden",
-            "/n"
-        ],
-        [
-            "Atomos tu",
-            "yos para hacer",
-            "te/nAparec"
-        ],
-        [
-            "er",
-            "",
-            "/n"
-        ],
-        [
-            "Un día m",
-            "as/n"
-        ],
-        [
-            "Un día m",
-            "as/n"
-        ],
-        [
-            "Arriba el sol/n"
-        ],
-        [
-            "Abajo el re",
-            "flejo",
-            "/nDe como estalla mi "
-        ],
-        [
-            "alma",
-            "/nY"
-        ],
-        [
-            "a estás aquí/nY "
-        ],
-        [
-            "el paso que",
-            " dimos",
-            "/nEs causa y es ef"
-        ],
-        [
-            "ecto",
-            "/nCr"
-        ],
-        [
-            "uza el amo",
-            "r/nY"
-        ],
-        [
-            "o cruzar",
-            " los dedos/nY gr"
-        ],
-        [
-            "a_cia",
-            "s por",
-            " ve__",
-            "nir",
             "",
             "",
             "",
-            "/nGr"
-        ],
-        [
-            "a_cia",
-            "s por",
-            " ve__",
-            "nir",
-            "/n"
-        ],
-        [],
-        [
-            "  Adora",
-            "ble pue",
-            "nte/n"
-        ],
-        [
-            "  Se ha crea",
-            "do entre ",
-            "los dos",
-            "/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-            "lo]",
-            "",
-            "",
-            "/nCr"
-        ],
-        [
-            "uza el amo",
-            "r/nY"
-        ],
-        [
-            "o cruzar",
-            " los dedos/nY gr"
-        ],
-        [
-            "a_cia",
-            "s por",
-            " ve__",
-            "nir",
-            "",
-            "",
-            "",
-            "/nGr"
-        ],
-        [
-            "a_cia",
-            "s por",
-            " ve__",
-            "nir",
             "",
             "",
             "",
             "/n"
         ],
-        [],
-        [],
-        [],
         [
-            "inal",
-            "]",
+            "H",
+            "o te busqué /n E",
+            "la rima que due",
+            "rm /n Con todas las p",
+            "alabra /n S",
+            "algo cayó /n Es p",
+            "orque  entendí tod",
+            "o /n Menos la di",
+            "stanci /n"
+        ],
+        [
+            "Desordené",
+            "tus mos tuyos para ha",
+            "cert /n Apare",
+            "ce /n U",
+            "n  día más, u",
+            "n día más /n Arr",
+            "ib  el sol, a",
+            "baj  el reflej/n"
+        ],
+        [
+            "De cómo estás ya mi al",
+            "m /n Ya está",
+            "aquí el p",
+            "as que dimos /n E",
+            "s  causa es efec",
+            "t /n Cruza e",
+            "l amor /n Yo cru",
+            "zar  los dedos g",
+            "racia  por ve",
+            "ni /n Gracia",
+            "s  por ve",
+            "ni ",
+            "",
             "/n"
         ],
         [
-            "  Adora",
-            "ble pue",
-            "nte",
+            "Adorabl",
+            "puente /n Se ha",
+            "cread  entre l",
+            "o  dos",
             "",
-            "/nC"
-        ],
-        [
-            "ruza el amo",
-            "r/nCr"
-        ],
-        [
-            "uza el amo",
-            "r, por el puen",
-            "te",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "Usa el amo",
-            "r/n"
-        ],
-        [
-            "Usa el amo",
-            "r, como un puen",
-            "te",
+            "Cruza el am",
+            "or /n Yo cruzaré l",
+            "o  dedos gracia",
+            "s por venir /n G",
+            "racia por venir /n Gracias p",
+            "or  venir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
-        []
+        [
+            "Adorable puen",
+            "t /n Cruza el amo",
+            "r /n Cruza el amor por",
+            "e  puent",
+            "/n"
+        ],
+        [
+            "Cruz  el amor/n"
+        ],
+        [
+            "Cruz  el amor co",
+            "m  un puente",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 75,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "eAO7CEcCD3s",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

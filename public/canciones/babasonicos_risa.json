@@ -2,219 +2,311 @@
     "cancion": "risa",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "C",
+                    "Em",
                     "G",
-                    "F7M"
+                    "G",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
-                    "Am",
+                    "C",
                     "G",
-                    "D"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Em",
                     "C",
-                    "Bm",
-                    "F7M"
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "F",
-                    "Fm",
-                    "C",
-                    "Am",
-                    "C"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "F7M"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "F7M",
+                    "Em",
                     "C",
-                    "F",
-                    "C",
-                    "F",
-                    "C",
-                    "F",
-                    "C"
+                    "F7M",
+                    "F7M",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "D",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0,
             2,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            1,
-            1,
             3,
-            3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
-        [],
         [
-            "En la palestra de ",
-            "desconocidos/n"
-        ],
-        [
-            "Buscó a su lado el c",
-            "alor/n"
-        ],
-        [
-            "Y simulando moj",
-            "arle el oído/n"
-        ],
-        [
-            "Le besó el cuello y le ",
-            "dijo/n"
-        ],
-        [
-            "Me gustas tan",
-            "to/n"
-        ],
-        [
-            "Quisiera aprenderme t",
-            "u nombre/n"
-        ],
-        [
-            "Me gustas tan",
-            "to que/n"
-        ],
-        [
-            "No sé por donde v",
-            "oy/n"
-        ],
-        [
-            "Me le acer",
-            "qué susp",
-            "icaz/n"
-        ],
-        [
-            "Y le tendí un anzuelo/n"
-        ],
-        [
-            "Vamos a fum",
-            "ar un porro a",
-            "hí/n"
-        ],
-        [
-            "Me gusta verte",
-            " reír/n"
-        ],
-        [
-            "Me gusta tanto tu coq",
-            "ueteo/n"
-        ],
-        [
-            "Me gusta verte re",
-            "ír/n"
-        ],
-        [
-            "Me gusta tanto tu coq",
-            "ueteo",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
-        [],
         [
-            "Tengo una idea, no m",
-            "e hables de ti y/n"
+            "E",
+            "n  la palestra d",
+            "e  desconocido",
+            "buscó su lado el",
+            "calor.",
+            "simulando m",
+            "ojarl  el oído",
+            ",  le besó el cuello l",
+            "e  dijo/n"
         ],
         [
-            "Mucho menos de tu pasa",
-            "do/n"
+            "Me gus",
+            "ta  tanto,",
+            "quisiera aprenderme t",
+            "u  nombre/n"
         ],
         [
-            "Algo en tus labios co",
-            "lor carmín/n"
+            "Me gus",
+            "ta  tanto que",
+            "n  sé por dónd",
+            "e  vo",
+            "y /n"
         ],
         [
-            "Sugiere que vayamos al gr",
-            "ano/n"
+            "Me l",
+            "acerqué su",
+            "picas",
+            "le tendí un anzuelo/n"
         ],
         [
-            "Me gustas tan",
-            "to/n"
+            "Vamos",
+            "fumar un po",
+            "rr ahí /n M",
+            "e  gusta vert",
+            "re bien /n M",
+            "e  gusta tanto",
+            "t  coqueteo/n"
         ],
         [
-            "Quisiera aprenderme t",
-            "u nombre/n"
+            "Me gusta vert",
+            "e re bien /n M",
+            "e  gusta tant",
+            "tu coquet",
+            "e /n Me gusta tan",
+            "t tu coqueteo /n Me gusta ta",
+            "nt tu coqueteo /n Me",
+            "g",
+            "u",
+            "s  tanto tu",
+            "co",
+            "qu",
+            "et /n Me g",
+            "usta  tanto tu coqueteo/n"
         ],
         [
-            "Me gustas tan",
-            "to que/n"
+            "M",
+            "e  gusta tanto tu co",
+            "quete /n Me gusta tanto t",
+            "u  coquet",
+            "e /n Me gusta tanto tu coquet",
+            "e /n Me gusta tanto tu coque",
+            "te /n Me",
+            "gu",
+            "st",
+            "a  tant",
+            "o  tu",
+            "coq",
+            "uet /n Me g",
+            "ust  tanto t",
+            "u  c",
+            "oqu",
+            "et /n M",
+            "gusta tanto tu",
+            "co",
+            "qu",
+            "e /n M",
+            "gusta tanto t",
+            "u coqueteo /n Me gusta tanto tu coqueteo Me gusta tanto tu",
+            "coquete /n Me gusta tanto tu c",
+            "oquete",
+            "o /n M",
+            "gusta tanto tu coqueteo /n M",
+            "gusta tanto tu coqueteo /n M",
+            "e  gusta tanto tu coqu",
+            "ete /n Me gusta tanto tu",
+            "coquete /n Me gusta tanto tu",
+            "coquete /n Me",
+            "g",
+            "u",
+            "s  tanto tu co",
+            "quete ",
+            "/n"
         ],
         [
-            "No sé por donde v",
-            "oy/n"
+            "M",
+            "e  gusta tanto tu coqueteo/n"
         ],
         [
-            "Me gustas tan",
-            "to/n"
+            "M",
+            "e  gusta tanto tu",
+            "coquete /n M",
+            "e  gusta ta",
+            "nt  t",
+            "u",
+            "coqueteo /n Me gusta tanto tu c",
+            "oqu",
+            "ete/n"
         ],
         [
-            "Quisiera aprenderme t",
-            "u nombre/n"
-        ],
-        [
-            "Me gustas tan",
-            "to que/n"
-        ],
-        [
-            "No sé por donde v",
-            "oy/n"
-        ],
-        [
-            "Oh! la alegría ",
-            "llegó/nLa alegría "
-        ],
-        [
-            "llegó/nY sé que no dura "
-        ],
-        [
-            "para siempre",
-            "/nOh! la alegría llegó"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Me gusta tanto tu co",
+            "qu "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "YmKVjlfxvyU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

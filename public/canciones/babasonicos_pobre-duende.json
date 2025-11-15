@@ -2,47 +2,62 @@
     "cancion": "pobre-duende",
     "banda": "babasonicos",
     "escala": "Gm",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "Gm",
-                    "F",
+                    "C",
                     "C",
                     "Bb",
-                    "F"
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Gm",
+                    "C",
+                    "C",
+                    "Bb",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Eb",
+                    "Gm",
+                    "Gm D",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm D",
+                    "Gm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "Bb",
-                    "F",
-                    "C",
-                    "Gm",
-                    "C",
-                    "Eb",
-                    "D"
-                ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "Gm",
-                    "Eb",
-                    "D",
-                    "Gm"
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
-            0,
-            1,
             0,
             1,
             2
@@ -50,68 +65,53 @@
     },
     "letras": [
         [
-            "Como agitadores en un me",
-            "dio conservador /n"
+            "mu",
+            "y  desquiciados",
+            "bajaro  mambo, al",
+            "t  copo, pestil gran prov",
+            "ocació ",
+            "se marcharon s",
+            "in  decir na",
+            "da /n U",
+            "stede  lo pedían, ustedes l",
+            "o  querían lo tienen./n"
         ],
         [
-            "Muy desquiciados /n"
-        ],
-        [
-            "Bajaron mambo, alto cope",
-            ", estilo y gran",
-            " provocación /n"
-        ],
-        [
-            "Y se marcharon s",
-            "in decir nad",
-            "a /n"
-        ],
-        [
-            "Ustedes lo pedían Ustedes lo querían",
-            " Ahí lo tienen /n"
-        ],
-        [
-            "El cisne apareció y us",
-            "tedes /n"
-        ],
-        [
-            "miren lo que han hecho con el duend",
-            "e del rock /n"
-        ],
-        [
-            "Lo han destrozado, lo han /n"
-        ],
-        [
-            "convertido en una est",
-            "ampa estúpida de s",
-            "u misión /n"
-        ],
-        [
-            "Y desalmado se fue de",
-            " casa ",
+            "El cisne",
+            "apareci  uste",
+            "de  miren lo que han hecho c",
+            "o el duende del rock. /n L",
+            "o  han destr",
+            "ozado  lo han co",
+            "nvertid  en una estampa estúpi",
+            "d  de su misió",
+            "n  desal",
+            "mad  se puso en",
+            "casa /n U",
+            "stede  lo pedían",
+            "ustedes lo querían lo tien",
+            "en /n E",
+            "l  cisne secuestró e",
+            "l  duende lo l",
+            "levó ",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Ustedes lo pedían,Ustedes lo querían,",
-            "Ahí lo tienen /n"
-        ],
-        [
-            "El cisne secuestró al due",
-            "nde y lo llev",
-            ", /n"
-        ],
-        [
-            "El cisne se llevó al duen",
-            "de lejos",
-            ". "
+            "Ustedes lo pedían, ustedes lo querían lo llevó."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "1vFFPAYuEqU",
-            "delay": 0
+            "delay": 3050.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

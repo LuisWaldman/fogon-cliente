@@ -2,136 +2,204 @@
     "cancion": "un-flash",
     "banda": "babasonicos",
     "escala": "Bm",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "Em",
+                    "Em",
+                    "D",
+                    "E",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bm",
-                    "D",
                     "E",
-                    "G"
+                    "D",
+                    "Bm",
+                    "G",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
-                    "D",
-                    "G",
                     "E",
-                    "G"
+                    "E",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "E",
-                    "G",
-                    "D",
-                    "E",
-                    "G",
                     "A",
+                    "A",
+                    "E",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
-            0,
-            0
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Como en un flash/n"
+            "la osc",
+            "uridad  sig",
+            "il  esa señal, la qu",
+            "nadie debe an",
+            "otar /n N",
+            "os  dejamos arrastrar",
+            "corriente abaj",
+            "hasta que el ru",
+            "id  nos tapó",
+            "le dije /n Y",
+            "te quiero con",
+            "oce  igual",
+            "no nos mira nadi",
+            "e  despejem",
+            "o  el lug",
+            "ar ",
+            "solo t",
+            "ú  yo.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Nadie nos ",
-            "mira al ",
-            "rededor/n"
+            "Como un f",
+            "lash  nadie no",
+            "s  mira alreded",
+            "or  como un f",
+            "lash  nadie nos m",
+            "ira  alrededor/n"
         ],
         [
-            "Como en un flash/n"
+            "Un esclaro casua",
+            "l  la bañaba en u",
+            "n  manantial,",
+            "como espada de luz m",
+            "i  presencia la hiz",
+            "o  temblar/n"
         ],
         [
-            "Nadie nos ",
-            "mira al ",
-            "rededor/n"
+            "Nos dejamos arr",
+            "astra  corrient",
+            "abajo hasta qu",
+            "el ruido nos t",
+            "apó le dije /n Y",
+            "o  te quiero",
+            "conocer ig",
+            "ual  no nos mira n",
+            "adie,  des",
+            "pejemo  el l",
+            "ugar ",
+            "",
+            "/n"
         ],
         [
-            "Una red en común/n"
+            "Salat",
+            "ú /n Isha",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Conspiraba ",
-            "en la ",
-            "oscuridad/n"
-        ],
-        [
-            "Sigilosa señal/n"
-        ],
-        [
-            "La q ",
-            "nadie debía",
-            " notar/n"
-        ],
-        [
-            "Nos dejamos ",
-            "arrastrar/nCorriente aba"
-        ],
-        [
-            "jo/nHasta"
-        ],
-        [
-            " que el ruido no",
-            "s tapo/nY dice "
-        ],
-        [
-            "yo te quiero",
-            " conocer ig",
-            "ual/nNo nos mira nadie "
-        ],
-        [
-            "despejemos el lug",
-            "ar/n"
-        ],
-        [
-            "Solo ",
-            "tu y y",
-            "o/n"
-        ],
-        [
-            "Un esclavo casual/n"
-        ],
-        [
-            "La bañaba en s",
-            "u manant",
-            "ial/n"
-        ],
-        [
-            "Como espada de luz/n"
-        ],
-        [
-            "Mi presencia ",
-            "la hizo ",
-            "temblar"
+            "S",
+            "alat /n Is",
+            "h ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "9meTJC-XbGU",
-            "delay": 0
+            "delay": 23640.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -8,56 +8,63 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
                     "D",
-                    "A",
-                    "E"
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0
+            1
         ]
     },
     "letras": [
-        [],
         [
-            "Taking a trip on an ocean liner/n"
+            "In his mind./n"
         ],
         [
-            "I'm gonna get to Carolina/n"
+            "Taking trip o",
+            "n  an ocean liner. gotta get t",
+            "o /n Carolina. Taking trip o",
+            "an ocean liner. gotta get t",
+            "o /n Carolina. O",
+            "h  baby.",
+            "",
+            "/n"
         ],
         [
-            "Taking a trip on an ocean liner /n"
-        ],
-        [
-            "I'm gonna get to Carolina/n"
-        ],
-        [
-            "Taking a trip on an ocean liner/n"
-        ],
-        [
-            "I'm gonna get to Carolina/n"
-        ],
-        [
-            "Taking a trip on an ocean liner /nI'm gonna get to Carolina"
-        ],
-        [],
-        []
+            "It's on there. /n I've got it on there. I'll tell you somethin",
+            "g /n I've been to LA and New York to",
+            "o /n They're not very nice."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "UamUUY334Pg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

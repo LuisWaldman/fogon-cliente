@@ -8,38 +8,66 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
                     "D7",
                     "G",
-                    "D"
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "Dm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Em",
-                    "A7"
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "D7",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
                     "A7",
-                    "D"
-                ]
-            },
-            {
-                "nombre": "parte4",
-                "acordes": [
                     "Dm",
-                    "Gm",
-                    "A",
+                    "G",
                     "Dm",
-                    "Gm",
-                    "A",
                     "Dm",
+                    "Dm",
+                    "G",
+                    "D",
+                    "D7",
+                    "G",
                     "G"
                 ]
             }
@@ -47,151 +75,72 @@
         "orden_partes": [
             0,
             1,
-            0,
             2,
-            3,
-            2,
-            0,
-            2,
-            0,
-            1,
-            0,
-            2,
-            3,
-            2,
-            0,
-            2
+            3
         ]
     },
     "letras": [
         [
-            "Este es un triunfo madre/npe"
-        ],
-        [
-            "ro sin triunf",
-            "o/nnos duele hasta los h"
-        ],
-        [
-            "uesos/n"
-        ],
-        [
-            "el latifund",
-            "io./n"
-        ],
-        [
-            "Esta la tierra padre/nque "
-        ],
-        [
-            "vos pisaba",
-            "s/ntodavía mi can"
-        ],
-        [
-            "to/n"
-        ],
-        [
-            "no la resc",
-            "ata./n"
-        ],
-        [
-            "Y cuando será el d",
-            "ía/n"
-        ],
-        [
-            "pregunto cuando",
-            "/nque por la tierra es"
-        ],
-        [
-            "téril/n"
-        ],
-        [
-            "vengan sembrand",
-            "o/ntodos los campe"
-        ],
-        [
-            "sinos des",
-            "alojados.",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Hay que dar vuelta el tiempo/nco"
+            "Este es u",
+            "n  triunfo madre, pero si",
+            "n  triunfo, no duele h",
+            "asta  los huesos en la",
+            "tifundio /n Esta es l",
+            "a  tierra padre que vos p",
+            "isabas  todaví",
+            "a  mi canto no la re",
+            "scata  cuando s",
+            "er  el día, pregunto",
+            "cuando  que por la t",
+            "ierr  estéril vengan s",
+            "embrand  todos los",
+            "campesino  desalojados./n"
         ],
         [
-            "mo la tab",
-            "a, el que no cambia to",
-            "do/n"
+            "Hay que dar vue",
+            "lt  el tiempo como la t",
+            "aba  el que no camb",
+            "i  todo, no cambia na",
+            "da ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "no cambia na",
-            "da./n"
-        ],
-        [
-            "Este es un triunfo madre/ndel"
-        ],
-        [
-            " nuevo tiempo",
-            "/nde estar bajo la "
-        ],
-        [
-            "tierra/n"
-        ],
-        [
-            "rompió el silenc",
-            "io./n"
-        ],
-        [
-            "Este es un triunfo padre/nde"
-        ],
-        [
-            " la alegr",
-            "a/nde tu sueño en "
-        ],
-        [
-            "semilla/n"
-        ],
-        [
-            "sube la vid",
-            "a./n"
-        ],
-        [
-            "Sube la vida arr",
-            "iba/n"
-        ],
-        [
-            "hasta la espiga",
-            "/nque si la tierra es "
-        ],
-        [
-            "hembra/n"
-        ],
-        [
-            "la tierra es m",
-            "ía/nadonde nace el "
-        ],
-        [
-            "alba yo si",
-            "embro el dí",
-            "a./n"
-        ],
-        [
-            "Hay que dar vuelta el tiempo/nco"
-        ],
-        [
-            "mo la tab",
-            "a, el que no cambia to",
-            "do/n"
-        ],
-        [
-            "no cambia na",
-            "da."
+            "Este es un triunfo m",
+            "adre  del nuevo tiem",
+            "po  de estar bajo la ti",
+            "err  rompió el silenc",
+            "io /n Este es un triunf",
+            "padre de la alegrí",
+            "a  de tu sueño en sem",
+            "ill  sube la vid",
+            "a  sube la vida arri",
+            "b  hasta la espig",
+            "a /n Que si la tierra es he",
+            "mbra  la tierra es mía",
+            ",  donde nace el alm",
+            "yo siembro el día. /n H",
+            "a  que dar vuelta el t",
+            "iemp  como la taba,",
+            "el que no cambia todo,",
+            "no cambia nada."
         ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "c369ENU2vfY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

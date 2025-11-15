@@ -2,138 +2,167 @@
     "cancion": "huelga-de-amores",
     "banda": "divididos",
     "escala": "B7",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "Am",
                     "Em",
                     "B7",
-                    "Em"
+                    "E7",
+                    "E7",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E7",
-                    "Am",
-                    "Em",
                     "B7",
-                    "Em"
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Em",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "B7",
+                    "E7",
+                    "Am",
+                    "Em",
+                    "Em",
                     "E7",
                     "Am",
                     "Em",
                     "B7",
-                    "E7"
+                    "E7",
+                    "E7",
+                    "Em",
+                    "Em",
+                    "E7",
+                    "E7",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
-            1,
-            1
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "ieron, nos encubr",
-            "ieron/nAquí encon"
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "traron dioses que d",
-            "anzan/nEllos vin"
+            "El",
+            "lo  vinieron, nos enc",
+            "ubrieron  quien e",
+            "ncontraron  tíos en que",
+            "danzan /n Ellos v",
+            "inieron  nos en",
+            "cubrieron  quien",
+            "encontraron  tíos en qu",
+            "e  danzan. nos",
+            "dijeron  cierra l",
+            "o  ojos, dame l",
+            "a  tierra, toma l",
+            "a biblia. /n Huelga",
+            "de amores, huelg",
+            "de amores, huelg",
+            "de amores, en el pase",
+            "de las flores.",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ieron, nos encubri",
-            "eron/nAquí encon"
+            "Patriotas importado",
+            "s  nativos sin oreja",
+            "s /n Patriotas importados",
+            "nativos sin orejas/n"
         ],
         [
-            "traron dioses que d",
-            "anzan/n"
+            "La muerte grita tierra",
+            "el canto chacarera./n"
         ],
         [
-            "  Y nos dije",
-            "ron: \"cerra los oj",
-            "os/nDame la t"
-        ],
-        [
-            "ierra, toma la bi",
-            "blia\"/n"
-        ],
-        [
-            "  Huelga de am",
-            "ores, huelga de amo",
-            "res/n  Huelga de a"
-        ],
-        [
-            "mores en el paseo de las fl",
-            "ores/nPatriotas impor"
-        ],
-        [
-            "tados, nativos sin or",
-            "ejas/nPatriotas impor"
-        ],
-        [
-            "tados, nativos sin or",
-            "ejas/nLa muerte grita "
-        ],
-        [
-            "tierra! y el canto chacar",
-            "era/nLa muerte grita "
-        ],
-        [
-            "tierra! y el canto chacar",
-            "era/n"
-        ],
-        [
-            "  Y nos dij",
-            "eron: \"tiempo es dine",
-            "ro/nY en esta t"
-        ],
-        [
-            "ierra sos extranj",
-            "ero\"/n"
-        ],
-        [
-            "  La historia escr",
-            "ita por vencedo",
-            "res/nNo puede ha"
-        ],
-        [
-            "cer callar a los tamb",
-            "ores/n"
-        ],
-        [
-            "  La historia escr",
-            "ita por vencedo",
-            "res/nNo puede ha"
-        ],
-        [
-            "cer callar a los tamb",
-            "ores"
+            "La muerte grita tierr",
+            "el canto chacarer",
+            "a  nos dij",
+            "eron  tiempo es dine",
+            "r  en esta ti",
+            "err  sos extra",
+            "njero /n Huelga de am",
+            "ores  huelga de am",
+            "ores  huelga de amo",
+            "res  en el paseo de las f",
+            "lores /n La historia es",
+            "crit  por vence",
+            "dore  no pudo h",
+            "ace  callar los tambor",
+            "es /n La historia e",
+            "scrit  por ven",
+            "cedore  no pudo h",
+            "acer  callar lo",
+            "s  tambores.",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Hz2odhgMjH8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,82 +2,256 @@
     "cancion": "vientito-del-tucuman",
     "banda": "divididos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
                     "D",
                     "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
+                    "A",
+                    "A",
                     "A",
                     "E",
-                    "D",
                     "E",
-                    "D",
-                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            " Tu que conoces mi pena/n"
+            "pena",
+            "p",
+            "ientit del /n T",
+            "ucu",
+            "má /n Llé",
+            "val  por e",
+            "so  montes",
+            ",  pero e",
+            "n  forma de c",
+            "an",
+            "ta",
+            "r ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Vientito del Tucuman/n"
+            "M  copla tien",
+            "e  un pais",
+            "aj  d",
+            "e  camina",
+            "soleda",
+            "d ",
+            "tiene el col",
+            "o  del sile",
+            "ncio  de",
+            "l  llanto tien",
+            "e  la zon",
+            "a ",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Llevala por esos montes/n"
+            "Los montes",
+            "parece  qu",
+            "ietos",
+            "dormidos",
+            "e  el lu",
+            "gar ",
+            "pero se",
+            "llena  de",
+            "copla ",
+            "así apren",
+            "de  vo",
+            "lar ",
+            "",
+            "",
+            "/n"
         ],
         [
-            " Pero en forma de cantar/n"
-        ],
-        [],
-        [
-            " Mi copla tiene un paisaje/n"
-        ],
-        [
-            " De camino y soledad/n"
-        ],
-        [
-            " Tiene el color del silencio/n"
-        ],
-        [
-            " Del llanto tiene la sal/n"
+            "Ayer v",
+            "ine  yo me",
+            "alej",
+            "o  desti",
+            "n  del ca",
+            "minar ",
+            "en",
+            "alg  nos pa",
+            "recemos",
+            "pient",
+            "it del /n Tu",
+            "cumán/n"
         ],
         [
-            " Ay, Ay, Ay",
-            "/nLos montes parecen quietos"
+            "Aye",
+            "vine yo m",
+            "alej",
+            "o  dest",
+            "in  del cam",
+            "inar ",
+            "en a",
+            "lgo  nos pa",
+            "recemos",
+            "pienti",
+            "t del /n Tu",
+            "cumán ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Ayer,",
+            "en alg",
+            "o  nos par",
+            "ecemos  p",
+            "ientit",
+            "del /n Tu",
+            "cum",
+            "á ",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "j16SQc7f50I",
-            "delay": 0
+            "delay": 15290.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

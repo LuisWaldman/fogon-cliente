@@ -8,27 +8,118 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
                     "C",
-                    "G"
+                    "G",
+                    "G",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
+                    "G",
                     "C",
                     "G",
-                    "D",
+                    "G",
                     "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
                     "G",
                     "G"
                 ]
@@ -37,145 +128,107 @@
         "orden_partes": [
             0,
             1,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            0,
             2,
-            1,
-            0,
-            1,
-            0,
-            2,
-            1,
-            0,
-            1,
-            0,
-            0,
-            1
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
-        [],
-        [],
-        [
-            "ove, love me do",
-            "/nYou kn"
-        ],
-        [
-            "ow I love yo",
-            "u/nI'll "
-        ],
-        [
-            "always be tru",
-            "e/nSo please love me d"
-        ],
-        [
-            "o/n"
-        ],
-        [
-            "  Oh-oh, lo",
-            "ve me do",
-            "/nL"
-        ],
-        [
-            "ove, love me do",
-            "/nYou kn"
-        ],
-        [
-            "ow I love yo",
-            "u/nI'll "
-        ],
-        [
-            "always be tru",
-            "e/nSo please love me d"
-        ],
-        [
-            "o/n"
-        ],
-        [
-            "  Oh-oh, lo",
-            "ve me do/nS"
-        ],
-        [
-            "omeone to love, so",
-            "mebody new",
-            "/nS"
-        ],
-        [
-            "omeone to love, so",
-            "meone like you",
-            "/nL"
-        ],
-        [
-            "ove, love me do",
-            "/nYou kn"
-        ],
-        [
-            "ow I love yo",
-            "u/nI'll "
-        ],
-        [
-            "always be tru",
-            "e/nSo please love me d"
-        ],
-        [
-            "o/n"
-        ],
-        [
-            "  Oh-oh, lo",
-            "ve me do/n"
-        ],
-        [],
         [
             "",
             "",
-            "/nL"
+            "/n"
         ],
         [
-            "ove, love me do",
-            "/nYou kn"
+            "L",
+            "ove love me do. /n Yo",
+            "u know love you. /n I",
+            "'l always be true. /n S",
+            "o  please,",
+            "love me do./n"
         ],
         [
-            "ow I love yo",
-            "u/nI'll "
+            "Love me do./n"
         ],
         [
-            "always be tru",
-            "e/nSo please love me d"
+            "Love, love me d",
+            "o. /n You know love y",
+            "ou. /n I'll always be t",
+            "rue. /n So please,",
+            "love m",
+            "do. /n Lov",
+            "e  me do./n"
         ],
         [
-            "o/n"
+            "Someon  to love./n"
         ],
         [
-            "  Oh-oh, lo",
-            "ve me do/nYes, l"
+            "Somebody new./n"
         ],
         [
-            "ove me do",
-            "/nOh-oh, l"
+            "Someone to love. /n S",
+            "omeone like you. /n Lo",
+            "ve love me do. /n You k",
+            "no love you. /n I'l",
+            "l always be true. /n So p",
+            "lease, ",
+            "love me do./n"
         ],
         [
-            "ove me do",
+            "Oh, love me do.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Love, love me do./n"
+        ],
+        [
+            "You know love you./n"
+        ],
+        [
+            "I'll always be true./n"
+        ],
+        [
+            "So please,",
+            "love me do./n"
+        ],
+        [
+            "Oh, love me do./n"
+        ],
+        [
+            "Love me do./n"
+        ],
+        [
+            "Oh, love me d",
+            "o ",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 73,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0pGOFX1D_jg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

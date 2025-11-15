@@ -2,16 +2,90 @@
     "cancion": "solita",
     "banda": "babasonicos",
     "escala": "Cm#",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Cm#",
                     "Cm#",
+                    "Cm#",
+                    "Cm#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Cm#",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Cm#",
+                    "Cm#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
+                    "Cm#",
+                    "Cm#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Cm#",
+                    "Cm#",
+                    "Cm#",
+                    "A",
+                    "A",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "Cm#",
                     "Cm#",
                     "A",
@@ -19,58 +93,161 @@
                 ]
             },
             {
-                "nombre": "parte2",
+                "nombre": "parte10",
                 "acordes": [
-                    "F#",
                     "A",
                     "B",
-                    "F#",
-                    "A",
                     "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B",
+                    "Cm#",
+                    "Cm#",
                     "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
                     "B"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "Se tu nombre hasta cuando s",
-            "ueño, /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "se que en ellos no sabes quien s",
-            "oy. /ntambien "
+            "Se tu nombre ha",
+            "st  cuando suen",
+            "e /n Sé que en ellos n",
+            "o  sabes quien so/n"
         ],
         [
-            "se que la sorp",
-            "resa es para vo",
-            "s. /nMir"
+            "Sé cuándo aquí da donde",
+            "cómo te gusta/n"
         ],
         [
-            "arte, una sonrisa y escond",
-            "erme hasta que vo",
-            "s /nso"
+            "También sé que más sorpre",
+            "sa  para vos/n"
         ],
         [
-            "lita te des cuenta que te gu",
-            "sto, /nque est"
+            "Tengo pensado n",
+            "o  decirte nada/n"
         ],
         [
-            "abas confundida en la pav",
-            "ada total, "
+            "Mirarte una sonrisa esconderm",
+            "hasta aquí/n"
+        ],
+        [
+            "Solita te das cuenta que te g",
+            "ust /n Que estabas confundida en la faba t",
+            "otal /n Que estás enamorada de un chic",
+            "o  como yo/n"
+        ],
+        [
+            "S",
+            "é  tu nombre hasta",
+            "cuando sueño/n"
+        ],
+        [
+            "Sé que en ellos no sa",
+            "be quien soy /n S",
+            "é  cuándo aquí da donde có",
+            "m te gusta /n T",
+            "ambié  sé que más sorpresas p",
+            "ara  vos/n"
+        ],
+        [
+            "Teng  pensado no d",
+            "ecirt nada /n Mi",
+            "rart  una sonrisa esconderme has",
+            "t  aquí/n"
+        ],
+        [
+            "Solita te das cuenta que te gus",
+            "t /n Que estabas confundida en la faba tot",
+            "a /n Que estás enamorada de un chico co",
+            "m  yo",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "T",
+            "eng  pensado no deci",
+            "rt nada /n Mi",
+            "rart  una sonrisa esconderme hasta",
+            "aqu /n S",
+            "olit  te das cuenta que te gust/n"
+        ],
+        [
+            "Que estabas confundida en la faba total /n Q",
+            "ue  estás enamorada de un chico como",
+            "y /n Qu",
+            "e  estás enamorada de un chico como",
+            "yo /n Qu",
+            "e  estás enamorada de un chico como",
+            "y /n Que",
+            "está  enamorada de un chico como",
+            "y ",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "iqMgvFVqqTw",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

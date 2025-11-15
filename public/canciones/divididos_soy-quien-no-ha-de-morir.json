@@ -2,35 +2,163 @@
     "cancion": "soy-quien-no-ha-de-morir",
     "banda": "divididos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "C"
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Soy quien no ha de mori",
-            "r  oh no"
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "o  el que no ha t",
+            "emudido  no, siempre",
+            "regres  de l",
+            "iberaz /n"
+        ],
+        [
+            "E  las calles",
+            "d  tus pensamientos,",
+            "en cualquier lugar d",
+            "ebe",
+            "rás",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Árbol de",
+            "sombr  joven, share",
+            "e  remanso fiel q",
+            "u  tendrá",
+            "s /n Con tod",
+            "su esplendor detrás,",
+            "de algún presagio gri",
+            "s  me alej",
+            "arás ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "So",
+            "y  el sonido de tus p",
+            "asos,  la claridad d",
+            "e  tu desp",
+            "ertar /n S",
+            "o  el que no ha temud",
+            "id  no, siempre re",
+            "gres  de l",
+            "iber",
+            "a ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "MoXJKN7Smjo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

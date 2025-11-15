@@ -8,137 +8,194 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
-                    "D5/F#",
+                    "Em",
                     "Em",
                     "F5-(9/13)",
-                    "C",
-                    "Cm"
+                    "F5-(9/13)"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Cm",
                     "G",
-                    "Em",
-                    "C",
+                    "D5/F#",
+                    "F5-(9/13)",
+                    "Cm",
+                    "G",
+                    "G",
+                    "G",
                     "F",
                     "G",
                     "Em",
-                    "A7"
+                    "A7",
+                    "Cm",
+                    "Cm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "C",
+                    "C",
+                    "D5/F#",
+                    "F5-(9/13) Cm",
                     "Cm",
-                    "G"
+                    "G",
+                    "D5/F#",
+                    "F5-(9/13)",
+                    "Cm",
+                    "G",
+                    "D5/F#",
+                    "D5/F#",
+                    "F",
+                    "G",
+                    "Em",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D5/F#",
+                    "C",
+                    "F",
+                    "G",
+                    "Em",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F5-(9/13)",
+                    "F5-(9/13)",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
-            2,
-            2
+            3,
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "aces I",
-            "'ll remem",
-            "ber",
-            "/nAll my l"
+            "",
+            "",
+            "/n"
         ],
         [
-            "i__ife",
-            " though som",
-            "e have changed/nSome forever n"
+            "There a",
+            "r  places rem",
+            "embe  all m",
+            "y  life./n"
         ],
         [
-            "ot for be",
-            "tter",
-            "/nSome have g"
+            "Though some have changed, some",
+            "foreve  not fo",
+            "r better. /n Some h",
+            "av  gone an",
+            "d some remain. /n All",
+            "these places have changed. /n There",
+            "ar  moments wit",
+            "h  lovers and friends",
+            "still can recall. /n Some a",
+            "r  dead and some ar",
+            "e living. /n I",
+            "n my life, /n I'",
+            "v  loved them all.",
+            "/n"
         ],
         [
-            "o__o",
-            "ne and som",
-            "e remain/nAll these pl"
+            "But o",
+            "f  all these friends an",
+            "lovers, there i",
+            "s  no one com",
+            "pare with you. /n And t",
+            "hes  memories lose thei",
+            "r  meaning when",
+            "think of love a",
+            "s something new. /n Though",
+            "know /n I'll never lose",
+            "affectio  fo",
+            "r  people and things tha",
+            "t  went before,",
+            "know /n I'll often stop and think",
+            "abou them. /n I",
+            "n  my life,",
+            "love you more.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "aces had their mo",
-            "ments/nWith l"
+            "Though",
+            "kno /n I'll never lose af",
+            "fectio  for p",
+            "eopl  and things that w",
+            "en  before, k",
+            "no /n I'll often stop and think abo",
+            "u them. /n In m",
+            "y  life, l",
+            "ov  you more.",
+            "/n"
         ],
         [
-            "overs and friends I sti",
-            "ll can recall/nSome are d"
-        ],
-        [
-            "ead and some are li",
-            "ving/nIn m"
-        ],
-        [
-            "y   ",
-            "  life I've loved",
-            " them all/n"
-        ],
-        [],
-        [
-            "all these fri",
-            "ends and lov",
-            "ers",
-            "/nThere is n"
-        ],
-        [
-            "o o",
-            "ne compar",
-            "es with you/nAnd these memories l"
-        ],
-        [
-            "ose their meani",
-            "ng",
-            "/nWhen I th"
-        ],
-        [
-            "ink of lo",
-            "ve as som",
-            "ething new/nThough I kn"
-        ],
-        [
-            "ow I'll never lose affe",
-            "ction/nFor p"
-        ],
-        [
-            "eople and things that we",
-            "nt before/nI kn"
-        ],
-        [
-            "ow I'll often stop and think abou",
-            "t them/nIn my     life I'll love you more"
-        ],
-        [],
-        [],
-        []
+            "In m",
+            "y  life,",
+            "love you m",
+            "ore ",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "YBcdt6DsLQA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

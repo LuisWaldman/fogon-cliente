@@ -8,118 +8,422 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
                     "G7",
-                    "Gm",
-                    "F",
-                    "C"
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Gm",
-                    "F",
-                    "C"
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "G7",
                     "G7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G7",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Gm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
-            0,
-            0,
-            1,
-            0,
             2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
-        [],
         [
-            "   ",
-            "    E",
-            "n viaje hacia la redenció",
-            "n ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "la luz no deja de pulsa",
-            "r ",
+            "E",
+            "st  es una canción en español de rock argentino.",
             "",
             "",
-            "/ncreo en"
-        ],
-        [
-            " el amor porque nu",
-            "nca estoy sat",
-            "isfecho ",
             "",
-            "/nes "
-        ],
-        [
-            "mi salvaje coraz",
-            "n ",
-            "/n"
-        ],
-        [
-            "lleg",
-            "a ju",
-            "sto a tiempo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "lleg",
-            "a ju",
-            "sto a tiempo ",
-            "",
-            "/ntu "
-        ],
-        [
-            "aliento es mi respiraci",
-            "n ",
+            "Esta es una canción en español de rock argentino.",
+            "e",
+            "n  viaje hacia la rede",
+            "nció ",
             "/n"
         ],
         [
-            "lleg",
-            "a ju",
-            "sto a tiempo ",
+            "La l",
+            "u  no deja de pu",
+            "lsa ",
+            "/n"
+        ],
+        [
+            "Me duele e",
+            "l  amor porque nu",
+            "nc  estoy sa",
+            "tisfech /n"
+        ],
+        [
+            "Es mi s",
+            "alvaj  corazó",
+            "n /n"
+        ],
+        [
+            "Qu",
+            "llega just",
+            "tiempo",
             "",
             "/n"
         ],
         [
-            "lleg",
-            "a ju",
-            "sto a tiempo ",
-            "/nCon mi salvaje corazón "
+            "Llega justo",
+            "tiempo",
+            "",
+            "/n"
         ],
-        [],
-        []
+        [
+            "Así donde q",
+            "uisist  est",
+            "a ",
+            "/n"
+        ],
+        [
+            "Tan cerca de",
+            "dese",
+            "sper",
+            "",
+            "es que la vida es g",
+            "a  es tan dur/n"
+        ],
+        [
+            "En tus centros vas",
+            "hablar/n"
+        ],
+        [
+            "Tu aliento es mi respi",
+            "ració /n"
+        ],
+        [
+            "Con mi",
+            "salvaj  cor",
+            "azó /n Los vicio",
+            "me son devuelto",
+            "lle",
+            "g  justo tiem",
+            "p ",
+            "/n"
+        ],
+        [
+            "Lleg",
+            "a  justo t",
+            "iem",
+            "p ",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "viaje hacia la red",
+            "enció ",
+            "/n"
+        ],
+        [
+            "La l",
+            "u  no deja de p",
+            "ulsa ",
+            "",
+            "si la",
+            "confusió  es",
+            "una predi",
+            "lecció  hu",
+            "man /n Tod",
+            "o  puedo perdon",
+            "a ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "o  mi salvaj",
+            "corazón /n L",
+            "o  vicios me son d",
+            "evuelt ",
+            "/n"
+        ],
+        [
+            "Co",
+            "n mi salvaje corazón /n Con m",
+            "i salvaje corazón /n Lo",
+            "s  vicios me son dev",
+            "uelt /n L",
+            "lega  justo",
+            "tiemp ",
+            "/n"
+        ],
+        [
+            "Ahor",
+            "a  estoy se",
+            "gur ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Con mi salvaje corazón"
+        ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "FCdOGM-Ac-8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

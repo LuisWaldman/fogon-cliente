@@ -2,91 +2,451 @@
     "cancion": "como-un-cuento",
     "banda": "divididos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 107,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "Am7",
                     "Em",
-                    "Bm"
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#m",
-                    "Bm",
-                    "D",
-                    "A",
-                    "Asus4"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#m",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "F#m",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
                     "Bm",
                     "F#m",
                     "Bm",
-                    "F#m",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
                     "Bm",
-                    "F#m",
-                    "G"
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
         ]
     },
     "letras": [
         [
-            "Como un cuent",
-            "o/n"
-        ],
-        [
-            "veo la gente cae",
-            "r/n"
-        ],
-        [
-            "en esa lluvia q",
-            "ue la",
-            "vo ese mar",
-            "/n"
-        ],
-        [
-            "Nunca te vi",
-            " baldear el cora",
-            "zón",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "un Chalchal",
-            "ero no es un Ro",
-            "lling Stone",
+            "Com",
+            "o  un cuent",
+            "o  veo la gent",
+            "caer/n"
+        ],
+        [
+            "E",
+            "n  esa ll",
+            "uvi  que l",
+            "av  este mar/n"
+        ],
+        [
+            "Co",
+            "m  un cuen",
+            "t  de una hi",
+            "stori  más/n"
+        ],
+        [
+            "D",
+            "e  almas enam",
+            "orand  e",
+            "l  final",
+            "/n"
+        ],
+        [
+            "Nunca te vi b",
+            "aldea  el c",
+            "orazó/n"
+        ],
+        [
+            "Y",
+            "a  el chale",
+            "r  no es u",
+            "n /n Rolling Sto",
+            "n /n D",
+            "ebe  haber un gr",
+            "a  error,",
+            "yo no lo",
+            "s /n"
+        ],
+        [
+            "Debe haber un g",
+            "ra  error,",
+            "s",
+            "í ",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "debe haber un gr",
-            "an error/n"
+            "De",
+            "secreto ",
+            "clandesti",
+            "nida /n"
         ],
         [
-            "yo no lo s",
-            "é/n"
+            "Doble v",
+            "ida  de un c",
+            "ero  no",
+            "s /n"
         ],
         [
-            "debe haber u",
-            "n gran error, si",
+            "Nunca e",
+            "s  el tiempo q",
+            "ue  va",
+            "venir",
+            "un",
+            "bala con v",
+            "is  un",
+            "paz/n"
+        ],
+        [
+            "Nunc",
+            "a  te vi baldear e",
+            "l  corazón",
+            "/n"
+        ],
+        [
+            "Un ch",
+            "al  chalero no e",
+            "s un /n Rollin/n"
+        ],
+        [
+            "Ston/n"
+        ],
+        [
+            "Debe h",
+            "abe  un gran error,",
+            "yo n",
+            "o lo sé /n D",
+            "ebe  ha",
+            "be  un gran error",
+            "sí",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Como",
+            "u  cuent",
+            "o  veo la gente",
+            "ca",
+            "e /n E",
+            "n  esa llu",
+            "vi  que lavó e",
+            "ste  mar/n"
+        ],
+        [
+            "Com",
+            "un cuent",
+            "de una hist",
+            "ori  más/n"
+        ],
+        [
+            "De al",
+            "ma  enamora",
+            "nd  el f",
+            "inal /n"
+        ],
+        [
+            "Nunc",
+            "a  te vi balde",
+            "a  el cora",
+            "zó /n"
+        ],
+        [
+            "Un c",
+            "hal  chalero no e",
+            "s un /n Rolling/n"
+        ],
+        [
+            "Ston /n"
+        ],
+        [
+            "Debe ha",
+            "be  un gran error,",
+            "yo n",
+            "o  lo sé/n"
+        ],
+        [
+            "Debe ha",
+            "be  un gran error",
+            "sí",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -94,8 +454,9 @@
         {
             "tipo": "Youtube",
             "id": "2hcbrxkBXGs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

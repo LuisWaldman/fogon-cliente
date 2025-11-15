@@ -2,205 +2,283 @@
     "cancion": "pop-silvia",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 83,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "D7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
                     "Am",
-                    "D7",
-                    "B7",
-                    "Em",
-                    "A7",
-                    "C",
-                    "D",
-                    "Dsus",
-                    "G",
-                    "D",
-                    "Em",
-                    "C",
-                    "C/G",
-                    "G",
-                    "D",
-                    "Em",
-                    "C",
-                    "C/G",
-                    "G",
-                    "B7",
-                    "Em",
-                    "A7",
-                    "C",
-                    "C/G",
-                    "C",
                     "Am",
-                    "D7",
                     "Am",
-                    "D7",
-                    "B7",
-                    "Em",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
                     "A7",
-                    "C",
-                    "D",
-                    "Dsus",
-                    "G",
-                    "D",
-                    "Em",
-                    "C",
-                    "C/G",
-                    "G",
-                    "D",
-                    "Em",
-                    "C",
-                    "C/G",
-                    "G",
-                    "B7",
-                    "Em",
                     "A7",
-                    "C",
-                    "C/G",
-                    "C",
-                    "D",
-                    "Cadd9",
-                    "G",
-                    "Em",
                     "A7",
                     "Am",
-                    "D7",
-                    "G",
+                    "Am",
                     "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "A7",
                     "Am",
-                    "D7",
-                    "G",
-                    "Cadd9",
-                    "G"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Dueña del col",
-            "or /n"
-        ],
-        [
-            "Al rayo del sol",
-            " /n"
-        ],
-        [
-            "Brillo acumul",
-            "o /nY "
-        ],
-        [
-            "hoy te encandi",
-            "la ",
             "",
-            "/n"
-        ],
-        [
-            "Pop S",
-            "ilvia ",
             "",
             "",
             "/n"
         ],
         [
-            "Meló",
-            "dica ",
-            "",
-            "",
+            "E",
+            "l  mundo gi",
+            "r en torno /n S",
+            "ilvia. /n"
+        ],
+        [
+            "Intrigante i",
+            "nternacional /n"
+        ],
+        [
+            "En baj",
+            "a  anora del en",
+            "cant  facial./n"
+        ],
+        [
+            "Pa",
+            "norámica  belleza",
+            "cristal. /n A",
+            "dien  del",
+            "col",
+            "o ",
+            "a  bajo del s",
+            "ol. ",
             "/n"
         ],
         [
-            "Alte",
-            "za vi",
-            "sionari",
-            "a ",
-            "",
-            "",
+            "B",
+            "ruch  acumuló",
+            "hoy te e",
+            "ncand",
+            "ió /n En baja a",
+            "nor  d",
+            "el ",
+            "e",
+            "n",
+            "c",
+            "a",
+            "n",
+            "t",
+            "o",
+            "facial.",
             "/n"
         ],
         [
-            "Dueña del c",
-            "olor /n"
+            "Corona",
+            "d  mi gala",
+            "xia /n"
         ],
         [
-            "Al rayo del s",
-            "ol /n"
+            "Iluminada por t",
+            "ormenta  de flas",
+            "h /n Encan",
+            "tador  en su presenc",
+            "i  estelar/n"
         ],
         [
-            "Brillo acumul",
-            "o /n"
-        ],
-        [
-            "Y hoy te encandi",
-            "la ",
-            "",
+            "Automat",
+            "ica  belleza de cr",
+            "istal /n Ad",
+            "ien  del c",
+            "olor",
+            ",  al ra",
+            "y  del s",
+            "ol /n B",
+            "rucho  a",
+            "cum",
+            "ul ",
+            "ho  te en",
+            "candi",
+            "ó /n En b",
+            "a",
+            "j",
+            "a",
+            "an",
+            "or  del e",
+            "n",
+            "c",
+            "a",
+            "n",
+            "t facial. /n O",
+            "op /n Si",
+            "lvia ",
             "/n"
         ],
         [
-            "Pop S",
-            "ilvia ",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "Meló",
-            "dica ",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "Giga",
-            "nte l",
-            "uminari",
-            "a ",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "Oh Pop ",
-            "Silvia ",
-            "/n"
-        ],
-        [
-            "Victoria p",
-            "rincipal /n"
-        ],
-        [
-            "Oh Pop S",
-            "ilvia ",
+            "Victori  princi",
+            "pal /n O",
+            "p op /n Silv",
+            "ia ",
             "/n"
         ],
         [
             "Encanto s",
-            "in igual /n"
+            "i  igual/n"
         ],
         [
-            "Oh Pop S",
+            "Op op /n S",
             "ilvia ",
             "",
             "",
-            ""
+            "",
+            "/n"
+        ],
+        [
+            "En baja anora del encanto facial."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "XvMnNKnK-eU",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

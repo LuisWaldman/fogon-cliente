@@ -8,225 +8,403 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E5+",
                     "A",
-                    "E",
+                    "A",
                     "F#m",
-                    "D",
-                    "Bm",
-                    "E7",
-                    "Bm",
-                    "E7",
-                    "A",
-                    "D",
-                    "A",
-                    "E",
-                    "A",
-                    "E",
                     "F#m",
-                    "D",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm",
                     "Bm",
                     "E7",
                     "Bm",
+                    "Bm",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
                     "E7",
                     "A",
-                    "D",
                     "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
                     "A7",
+                    "A7",
+                    "Bm",
                     "D",
+                    "Dm",
+                    "Dm",
+                    "F",
                     "F",
                     "A",
-                    "A7",
-                    "B7",
-                    "E",
-                    "F",
-                    "E",
-                    "E5+",
                     "A",
-                    "E",
-                    "F#m",
-                    "D",
-                    "Bm",
-                    "E7",
-                    "Bm",
-                    "E7",
-                    "A",
-                    "D",
                     "A",
                     "A7",
-                    "D",
-                    "F",
-                    "A",
                     "A7",
-                    "B7",
-                    "E",
-                    "F",
-                    "E",
-                    "E5+",
-                    "A",
-                    "E",
-                    "F#m",
-                    "D",
-                    "Bm",
-                    "E7",
-                    "Bm",
-                    "E7",
-                    "A",
-                    "D",
-                    "A",
-                    "A#7",
                     "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E7",
+                    "E",
+                    "E",
+                    "A7",
+                    "Bm",
+                    "D",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "A",
+                    "A",
+                    "A",
+                    "A7",
+                    "A7",
+                    "Bm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "    Oh, Da",
-            "rling, Please, belie",
-            "ve me/n"
+            "O",
+            "h ",
+            "darling,",
+            "ple",
+            "as  be",
+            "liev  me/n"
         ],
         [
-            "I'll never do you no ha",
-            "rm/nBel"
+            "I",
+            "'",
+            "l  n",
+            "eve  do y",
+            "ou  n",
+            "harm/n"
         ],
         [
-            "ieve me when I tell yo",
-            "u/n"
-        ],
-        [
-            "I'll never do",
-            " you no har",
-            "m",
+            "Bel",
+            "iev",
+            "me whe",
+            "n  tell y",
+            "o /n I",
+            "'l  n",
+            "eve  do y",
+            "ou  n",
+            "harm",
             "",
             "",
-            "/nOh, D"
-        ],
-        [
-            "arling, If you le",
-            "ave me/n"
-        ],
-        [
-            "I'll never make it alo",
-            "ne/nBeli"
-        ],
-        [
-            "eve me when I beg yo",
-            "u/nD"
-        ],
-        [
-            "on't ever le",
-            "ave me alon",
-            "e",
-            "",
-            "",
-            "/nWhen you t"
-        ],
-        [
-            "old me/nYou didn't n"
-        ],
-        [
-            "eed me anymore/nWell, you kn"
-        ],
-        [
-            "ow, I nearly/nBroke down and cr"
-        ],
-        [
-            "ied/nWhen you t"
-        ],
-        [
-            "old me/nWell, you kn"
-        ],
-        [
-            "ow, I nearly/nBr"
-        ],
-        [
-            "oke down and di",
-            "ed",
-            "/nOh, D"
-        ],
-        [
-            "arling, If you le",
-            "ave me/n"
-        ],
-        [
-            "I'll never make it alo",
-            "ne/nBel"
-        ],
-        [
-            "ieve me when I tell yo",
-            "u/n"
-        ],
-        [
-            "I'll never do",
-            " you no har",
-            "m",
             "/n"
         ],
         [
-            "  Believe me, darling",
-            "/nWhen you t"
+            "O",
+            "h  da",
+            "rling  i",
+            "f",
+            "you lea",
+            "v  me/n"
         ],
         [
-            "old me/nYou didn't n"
+            "I",
+            "'",
+            "l  neve",
+            "make it",
+            "alon",
+            "e /n Be",
+            "li",
+            "e  m",
+            "e  when b",
+            "eg you /n D",
+            "on",
+            "'  ever",
+            "leave me",
+            "alon/n"
         ],
         [
-            "eed me anymore/nWell, you kn"
+            "W",
+            "h",
+            "e",
+            "n",
+            "y",
+            "o  told m",
+            "e /n Y",
+            "o  didn'",
+            "need me a",
+            "nymor /n W",
+            "ell  yo",
+            "u  know ne",
+            "arl  broke do",
+            "w  and",
+            "crie /n W",
+            "he  y",
+            "ou  t",
+            "ol  me/n"
         ],
         [
-            "ow, I nearly/nBroke down and cr"
+            "Yo",
+            "u  didn't n",
+            "ee  me any",
+            "mor /n We",
+            "ll  you kn",
+            "o  nearl",
+            "y  broke do",
+            "w  and d",
+            "ie /n O",
+            "h",
+            ", ",
+            "darling,",
+            "i",
+            "f  you lea",
+            "v me /n I",
+            "'",
+            "l",
+            "neve",
+            "r  make i",
+            "t  alo",
+            "n /n B",
+            "el",
+            "ie  m",
+            "e  when te",
+            "l  you/n"
         ],
         [
-            "ied/nWhen you t"
+            "I'",
+            "l  neve",
+            "r  do y",
+            "o  no h",
+            "arm ",
+            "/n"
         ],
         [
-            "old me/nWell, you kn"
+            "Believ ",
+            "me darling /n W",
+            "he",
+            "you told m",
+            "e /n Y",
+            "o  di",
+            "dn'  need m",
+            "e anymore /n W",
+            "ell",
+            ",  you know",
+            "nearly brok",
+            "e  down a",
+            "n  crie",
+            "d /n Whe",
+            "n  yo",
+            "u  told m",
+            "e /n Y",
+            "o  didn't",
+            "nee  me a",
+            "nymore /n W",
+            "ell",
+            "you know ne",
+            "arl  broke d",
+            "own  an",
+            "d  died/n"
         ],
         [
-            "ow, I nearly/nBr"
+            "O",
+            "h ",
+            "darling,",
+            "pl",
+            "eas  b",
+            "elieve  m/n"
         ],
         [
-            "oke down and di",
-            "ed",
-            "/nOh, D"
-        ],
-        [
-            "arling, Please beli",
-            "eve me/n"
-        ],
-        [
-            "I'll never let you do",
-            "wn/nBel"
-        ],
-        [
-            "ieve me when I te",
-            "ll you/n"
-        ],
-        [
-            "I'll never do",
-            " you no har",
-            "m",
-            "",
+            "I",
+            "'",
+            "l  ne",
+            "ve  l",
+            "e  yo",
+            "down /n B",
+            "elie",
+            "v  me, darling,",
+            "believe me w",
+            "hen  tell",
+            "yo /n I",
+            "'l ",
+            "neve  d",
+            "o  you n",
+            "o  har",
+            "m /n Oh, d",
+            "ar",
+            "li",
+            "n ",
+            "if you leave me /n I'll never make it alone Believe m",
+            "e when tell you /n I'll never make it alone",
             "",
             "",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 172,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "9BznFjbcBVs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

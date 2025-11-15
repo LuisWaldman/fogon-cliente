@@ -8,71 +8,112 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
                     "D",
-                    "A",
-                    "E"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
-                    "A",
                     "D",
-                    "A",
-                    "E",
-                    "A",
-                    "Bb",
-                    "A"
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "walk/nWhen you "
+            "you walk,",
+            "whe",
+            "you walk,",
+            "yeah",
+            ",  you walk,",
+            "yea",
+            "h  you walk,",
+            "whe",
+            "n  you talk,",
+            "boy, y",
+            "o  walkin' with that baby./n"
         ],
         [
-            "walk/nUh, when you "
+            "No, can't give you what go",
+            "tt  give.",
+            "/n"
         ],
         [
-            "walk /nUh, when you "
+            "Arr! /n A",
+            "rr ",
+            "can't give you what got.",
+            "/n"
         ],
         [
-            "talk/nBecause you "
+            "Yo  can't get me that",
+            "way  becau",
+            "s there ain't no way /n I'm gonna liv",
+            "e ",
+            "/n"
         ],
         [
-            "walk/nOh!"
-        ],
-        [
-            " You ",
-            "can't",
-            " get ",
-            "me th",
-            "at way!/n(...) and say!"
-        ],
-        [
-            " ",
+            "Yeah /n Arr!",
             ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 112,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "mfxeVvJfLVc",
-            "delay": 0
+            "delay": 500.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -2,145 +2,479 @@
     "cancion": "capo-capon",
     "banda": "divididos",
     "escala": "F#",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#",
                     "F#",
-                    "B",
-                    "A",
-                    "G"
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#",
                     "B",
-                    "A",
+                    "B",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#",
-                    "A",
-                    "G#",
                     "B",
-                    "E",
-                    "A",
-                    "G#",
+                    "B",
+                    "B",
                     "B"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "F#",
+                    "F#",
                     "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
             2,
-            0,
-            1,
-            1,
-            1,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
         ]
     },
     "letras": [
         [
-            "Son fraces sueltas sin pensar /n"
-        ],
-        [
-            "o imagen suelta sin pensar /n"
-        ],
-        [
-            "Pensando en mi",
-            " no pien",
-            "so en mi ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Pensando en vo",
-            "s no pie",
-            "nso mas. ",
+            "Son fr",
+            "ase  sueltas si",
+            "n  pensar.",
+            "",
+            "imáge",
+            "ne  sueltas sin pe",
+            "nsar ",
             "/n"
         ],
         [
-            "Escucho ruido sin pensar /n"
+            "Pensando e",
+            "n  mí no pienso e",
+            "n  ti.",
+            "/n"
         ],
         [
-            "Pensando en m",
-            "i, no pie",
-            "nso en mi.",
-            " /n"
+            "Pensando e",
+            "n  vos no pienso m",
+            "ás. ",
+            "/n"
         ],
         [
-            "No pienses ma",
-            "s que pi",
-            "enso en vos.",
-            " /n"
-        ],
-        [
-            "Voy a nada",
+            "Escucho un r",
+            "uid  sin pensa",
             "r /n"
         ],
         [
-            "a sangre y leche en este ma",
-            "r /n"
-        ],
-        [
-            "gambeta y caño a una sir",
-            "ena en castelar. s",
-            "i uuuuu",
-            "uuu. /n"
-        ],
-        [
-            "Nunca son fraces sin pensar /n"
-        ],
-        [
-            "mundo d",
-            "e capo ",
-            "capon ",
+            "O",
+            "lor  ahogar",
+            "te  puede ahogar.",
+            "",
             "/n"
         ],
         [
-            "y te olvidas",
-            "te del",
-            " amor.",
-            " /n"
+            "Pensando en mí n",
+            "o  pienso en ti",
+            ". /n"
         ],
         [
-            "mundo d",
-            "e capo ",
-            "capon ",
+            "N",
+            "o  pienses más qu",
+            "e  pienso en",
+            "vos ",
+            "",
+            "",
             "/n"
         ],
         [
-            "y te olvidas",
-            "te del",
-            " amor.",
-            " "
+            "Vo ",
+            "nadar",
+            "",
+            "",
+            "sangre leche e",
+            "n  este mar.",
+            "/n"
+        ],
+        [
+            "Ga",
+            "mbet  callou",
+            "ras  sirena",
+            "castelar ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Nunc",
+            "son frases si",
+            "n  pensar.",
+            "/n"
+        ],
+        [
+            "Mamón",
+            "poeta de/n"
+        ],
+        [
+            "Pierrot ",
+            "/n"
+        ],
+        [
+            "Mu",
+            "nd  de capo,",
+            "capo ",
+            "",
+            "el que ol",
+            "vidast  del",
+            "amor",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Am",
+            "or  amo",
+            "r  amor.",
+            "",
+            "/n"
+        ],
+        [
+            "Sirena ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sirena.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Amor, amor, a",
+            "mo",
+            "r ",
+            "/n"
+        ],
+        [
+            "Amor, a",
+            "mor  amor.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mund  d",
+            "e  capo, c",
+            "ap",
+            "o /n M",
+            "undo  de",
+            "capo  cap",
+            "o ",
+            "/n"
+        ],
+        [
+            "Mund  de c",
+            "apo,  capo./n"
+        ],
+        [
+            "Mundo de capo, capo.",
+            "",
+            "t  olvidaste",
+            "de  am",
+            "or ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ePJN9TM2L5M",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

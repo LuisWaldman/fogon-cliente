@@ -2,74 +2,169 @@
     "cancion": "el-gordo-leguero",
     "banda": "divididos",
     "escala": "Gm",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Gm",
-                    "Dm",
+                    "Gm",
+                    "Gm",
                     "Bb",
-                    "A"
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
                     "Bb",
-                    "Dm",
-                    "A",
-                    "Dm",
-                    "E"
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Gm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3
         ]
     },
     "letras": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
         [
-            "Conflictuao llegó el leg",
-            "üero/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "por no saber su impedanci",
-            "a./n"
+            "Conflicto, aún",
+            "llegó el leguero",
+            "por",
+            "no saber s",
+            "u  impeda",
+            "nci  t",
+            "risteza  po",
+            "r  falta de ga",
+            "na  foras",
+            "ter  en las v",
+            "itrier",
+            "o ",
+            "mader  no v",
+            "a  por niña",
+            "uso la",
+            "pamp  de",
+            "repe",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Tristeza por falta de cano",
-            "n,/n"
+            "Conflicto,",
+            "aún llegó el leg",
+            "uer  p",
+            "o  no saber s",
+            "u  impeda",
+            "nci  trist",
+            "ez  por fal",
+            "t  de gana",
+            "foraste",
+            "r  en las vi",
+            "trier",
+            "o  mader",
+            "no va po",
+            "r  niña uso l",
+            "a  pamp",
+            "a  de re",
+            "pe ",
+            "m",
+            "adera  no va p",
+            "or  niña u",
+            "s  la pamp",
+            "a  de r",
+            "epe",
+            "",
+            "/n"
         ],
         [
-            "forastero en las vidrieras./nMadera no va por línea"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Hace un poquito de silencio le estamos saliendo"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "zLfnVZVBP7U",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

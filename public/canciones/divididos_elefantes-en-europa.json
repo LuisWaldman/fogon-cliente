@@ -2,184 +2,170 @@
     "cancion": "elefantes-en-europa",
     "banda": "divididos",
     "escala": "E5",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "F#5",
+                    "F#5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte2",
                 "acordes": [
                     "E5",
                     "F#5",
-                    "B5",
-                    "E5",
                     "F#5",
-                    "B5",
-                    "E5",
                     "F#5",
-                    "B5",
-                    "E5",
                     "F#5",
-                    "B5",
-                    "E5",
-                    "F#5",
-                    "B5",
-                    "E5",
-                    "F#5",
-                    "B5",
-                    "E5",
-                    "F#5",
-                    "B5",
-                    "E5",
-                    "E5",
-                    "F#5",
-                    "B5",
-                    "E5",
-                    "F#5",
-                    "B5",
-                    "E5",
-                    "F#5",
-                    "B5",
-                    "E5",
-                    "F#5",
-                    "B5",
                     "E",
-                    "F#5",
-                    "B5",
                     "E5",
-                    "F#5",
-                    "B5",
                     "E5",
-                    "F#5",
-                    "B5",
-                    "E5",
-                    "F#5",
-                    "G5",
-                    "G#5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
                     "A5",
                     "A5",
-                    "G5",
+                    "A5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5",
                     "E5",
-                    "A5",
-                    "G5",
                     "E5",
-                    "A5",
-                    "G5",
-                    "E5",
-                    "A5",
-                    "G5",
-                    "A5",
-                    "B5",
                     "E5",
                     "F#5",
-                    "B5",
-                    "E5",
                     "F#5",
-                    "B5",
-                    "E5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "F#5",
-                    "B5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "E5",
-                    "F#5",
-                    "B5",
                     "E5",
-                    "F#5",
-                    "B5",
                     "E5",
-                    "F#5",
-                    "B5",
                     "E5",
-                    "F#5",
-                    "B5",
                     "E5",
-                    "F#5",
-                    "G5",
-                    "G#5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E5",
                     "A5",
                     "A5",
-                    "G5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A5",
                     "E5",
-                    "A5",
-                    "G5",
                     "E5",
-                    "A5",
-                    "G5",
                     "E5",
-                    "A5",
-                    "G5",
-                    "A5",
-                    "B5"
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5",
+                    "F#5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A5"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "sale un b",
-            "olso y ent",
-            "ra otro",
             "",
             "",
-            "/n"
-        ],
-        [
-            "mundo de ",
-            "un amor cu",
-            "rioso",
             "",
             "",
-            "/n"
-        ],
-        [
-            "sentada esta la pas",
-            "ion",
-            "/n"
-        ],
-        [
-            "juega el ñoqui de ",
-            "hoy",
-            "/n"
-        ],
-        [
-            "donde esta el bondi ",
-            "de la hum",
-            "anidad",
-            "/n"
-        ],
-        [
-            "Almas bai",
-            "lan en l",
-            "a luz",
             "",
-            "",
-            "/n"
-        ],
-        [
-            "rien lagr",
-            "imas de ",
-            "piel",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "donde esta tu canci",
-            "on",
-            "/n"
-        ],
-        [
-            "donde muere el dolo",
-            "r",
-            "/n"
-        ],
-        [
-            "donde esta la ch",
-            "apa del",
-            " amor",
             "",
             "",
             "",
@@ -187,56 +173,84 @@
             "/n"
         ],
         [
-            "Tratando de",
-            " abrazar",
+            "Es una canción e",
+            "n español de rock argentino. /n Se",
+            "ntad  está la pasión, ju",
+            "eg  el gnocchi de hoy.",
+            "¿Dónde está el bondi de la humanidad?/n"
+        ],
+        [
+            "A",
+            "lmas  bailando en la",
+            "luz ",
+            "ríen lágrimas de p",
+            "iel ",
+            "¿Dónd  está tu canción?",
+            "¿Dónde muere el dolor? /n ¿Dó",
+            "nd  está la chapa del a",
+            "mor /n"
+        ],
+        [
+            "Tratando de a",
+            "braza  l",
+            "o  vientos que enfrían t",
+            "alma./n"
+        ],
+        [
+            "En la tormentosa so",
+            "leda  d",
+            "e estos elefantes en /n E",
+            "uropa /n Como gr",
+            "ita  carmas, autistas d",
+            "e amor. /n Como gr",
+            "ita  amor, autista",
+            "de amor",
+            "",
             "/n"
         ],
         [
-            "los veintos que enfria",
-            "n tu alma",
-            "/n"
+            "Pen",
+            "a  viven de sus vals./n"
         ],
         [
-            "en la tormento",
-            "sa soledad",
-            "/n"
+            "Marc",
+            "a  de un pasar corozo.",
+            "¿Dónde e",
+            "st tu canción? /n ¿Dónde m",
+            "uer el dolor? /n ¿Dónde e",
+            "stá  la chapa del amor?/n"
         ],
         [
-            "de estos elefa",
-            "ntes en ",
-            "europ",
-            "a/n"
+            "T",
+            "ratand  de abraz",
+            "a  lo",
+            "vientos que enfrían tu alma/n"
         ],
         [
-            "penas vi",
-            "ven de ",
-            "su vals",
+            "En la",
+            "tormentos  soled",
+            "a  de est",
+            "o elefantes en /n Europa./n"
+        ],
+        [
+            "Como gritar",
+            "carmas  autistas de a",
+            "mor. /n Como gritar",
+            "amor  autistas de",
+            "amor ",
             "",
             "",
             "/n"
         ],
         [
-            "marcas de u",
-            "n pasar",
-            " por oso",
+            "Como grit",
+            "a  carmas, autistas d",
+            "e amor. /n Como grit",
+            "a  amor, autistas d",
+            "e  amor.",
             "",
             "",
-            "/n"
-        ],
-        [
-            "donde esta tu cancio",
-            "n",
-            "/n"
-        ],
-        [
-            "donde muere el dolo",
-            "r",
-            "/n"
-        ],
-        [
-            "donde esta la ch",
-            "apa del",
-            " amor",
+            "",
             "",
             "",
             "",
@@ -244,33 +258,16 @@
             "/n"
         ],
         [
-            "Tratando de",
-            " abrazar",
-            "/n"
-        ],
-        [
-            "los veintos que enfria",
-            "n tu alma",
-            "/n"
-        ],
-        [
-            "en la tormento",
-            "sa soledad",
-            "/n"
-        ],
-        [
-            "de estos elefa",
-            "ntes en ",
-            "europ",
-            "a"
+            "En la tormentosa soledad de estos elefantes en /n Europa."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "7FWDXNKzhiY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

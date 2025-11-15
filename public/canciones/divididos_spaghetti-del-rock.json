@@ -2,273 +2,307 @@
     "cancion": "spaghetti-del-rock",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B11"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "B",
                     "C#m",
                     "B",
-                    "A9",
-                    "B11",
-                    "E",
-                    "B",
-                    "C#m",
-                    "B",
-                    "A9",
-                    "B11",
-                    "E",
-                    "B",
-                    "C#m",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "B",
                     "A9",
-                    "B11",
-                    "E",
-                    "B",
-                    "C#m",
-                    "B",
+                    "A9",
+                    "A9",
+                    "A9",
                     "A9",
                     "B11",
-                    "A9",
+                    "B11"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "B11",
-                    "A9",
-                    "B11",
-                    "A9",
-                    "B11",
-                    "E",
-                    "E4",
-                    "E",
-                    "E",
                     "B",
-                    "C#m",
                     "B",
-                    "A9",
-                    "B11",
-                    "E",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "B",
-                    "C#m",
                     "B",
                     "A9",
-                    "B11",
-                    "A",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A9",
                     "B",
                     "A9",
-                    "B11",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "A9",
-                    "B11",
-                    "E",
-                    "E",
-                    "D#m",
-                    "C#m",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "A9",
+                    "B",
+                    "B F#m",
+                    "B F#m",
                     "F#",
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "A",
-                    "C",
-                    "G/B",
-                    "C#m",
-                    "F#",
-                    "A",
-                    "G#",
-                    "A",
-                    "G#",
-                    "A",
-                    "B",
-                    "E",
-                    "E4",
-                    "E",
-                    "E",
-                    "D#m",
-                    "C#m",
-                    "B",
-                    "A",
-                    "B",
-                    "E",
-                    "D#m",
-                    "C#m",
-                    "B",
-                    "A",
-                    "B",
-                    "A9",
-                    "B11",
-                    "A9",
-                    "B11",
-                    "A9",
-                    "B11",
-                    "E",
-                    "E4",
-                    "E",
-                    "E",
-                    "D#m",
-                    "C#m",
-                    "F#",
-                    "A",
-                    "C",
-                    "G/B",
-                    "C#m",
-                    "F#",
-                    "A",
-                    "G#",
                     "A",
                     "G#",
                     "A",
                     "B",
-                    "E",
-                    "E4",
-                    "E"
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A9",
+                    "A9",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#",
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G#",
+                    "A9",
+                    "B11",
+                    "B11",
+                    "B11"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "  Pisto",
-            "nes de ",
-            "un curioso",
-            " motor d",
-            "e humanidad",
             "/n"
         ],
         [
-            "  Reso",
-            "rtes viej",
-            "os de est",
-            "e amor q",
-            "ue va",
+            "Pistones d",
+            "e  un curioso mo",
+            "tor  huma",
+            "nidad /n"
+        ],
+        [
+            "Resortes",
+            "viejo  de este",
+            "amo  qu",
+            "va./n"
+        ],
+        [
+            "Memoria",
+            "hosti  de un tiempo d",
+            "e  paz, sin",
+            "paz./n"
+        ],
+        [
+            "Narices",
+            "frías de u",
+            "na  noche at",
+            "rás /n"
+        ],
+        [
+            "Besos",
+            "por celula",
+            "r  las mo",
+            "mia  de este amor",
+            ". /n Piden el",
+            "acto  de lo q",
+            "u  fu",
+            "i /n"
+        ],
+        [
+            "Pant",
+            "all  de la muerte d",
+            "e  la",
+            "canción /n"
+        ],
+        [
+            "Proyec",
+            "to  de un nuevo",
+            "espaguet  d",
+            "el  rock./n"
+        ],
+        [
+            "C",
+            "iclópe  de cri",
+            "stal  de",
+            "vor  ambición./n"
+        ],
+        [
+            "Vomit",
+            "amo  de los d",
+            "e  ficción",
             "/n"
         ],
         [
-            "  Memo",
-            "ria hostil",
-            " de un tiemp",
-            "o de paz s",
-            "in paz",
-            "/n"
+            "Rem",
+            "onta  el barri",
+            "de esta tem",
+            "pestad /n S",
+            "ól  ha",
+            "r  enten",
+            "de  que ay",
+            "er  no es hoy./n"
         ],
         [
-            "  Nari",
-            "ces frí",
-            "as de ",
-            "una noch",
-            "e atrás",
-            "/n"
-        ],
-        [
-            "   Besos por ce",
-            "lular/n"
-        ],
-        [
-            "   Las momias de e",
-            "ste amor/nP"
-        ],
-        [
-            "iden el acto",
-            "r de lo que fui",
+            "Qu",
+            "e  hoy es hoy",
+            "que",
+            "n  soña el actor d",
+            "e  lo que fui.",
             "",
             "",
-            "/n"
-        ],
-        [
-            "  Panta",
-            "lla de ",
-            "la muert",
-            "e y de la ca",
-            "nción",
-            "/n"
-        ],
-        [
-            "  Proye",
-            "ctos de ",
-            "un nuevo s",
-            "paghetti",
-            " del rock",
-            "/n"
-        ],
-        [
-            "  Cíclope d",
-            "e cristal  ",
-            "  devora am",
-            "bición/nV"
-        ],
-        [
-            "omita mode",
-            "los de ficció",
-            "n/nR"
-        ],
-        [
-            "e_mo",
-            "n__tar",
-            "/nEl b"
-        ],
-        [
-            "arrilete en e",
-            "sta tempestad",
             "",
-            "/nSólo ha"
-        ],
-        [
-            "rá   ",
-            " entender que ",
-            "ayer no es ho",
-            "y/n"
-        ],
-        [
-            "  Que hoy es ho",
-            "y y que ",
-            "no soy actor ",
-            "de lo que fui",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
-        [],
-        [],
-        [],
-        [],
         [
-            "   Besos por ce",
-            "lular/n"
+            "Besos por",
+            "celular ",
+            "las momias d",
+            "e este amor. /n P",
+            "ide  el act",
+            "o  de lo que f",
+            "ui.",
+            "/n"
         ],
         [
-            "   Las momias de e",
-            "ste amor/nP"
+            "Remontar e",
+            "l  barril de es",
+            "t  tempesta",
+            "d /n Sólo h",
+            "ará",
+            "entender q",
+            "u  ayer no e",
+            "hoy./n"
         ],
         [
-            "iden el acto",
-            "r de lo que fui",
-            "",
-            "",
-            "/nR"
-        ],
-        [
-            "e_mo",
-            "n__tar",
-            "/nEl b"
-        ],
-        [
-            "arrilete en e",
-            "sta tempestad",
-            "",
-            "/nSólo ha"
-        ],
-        [
-            "rá   ",
-            " entender que ",
-            "ayer no es ho",
-            "y/n"
-        ],
-        [
-            "  Que hoy es ho",
-            "y y que ",
-            "no soy actor ",
-            "de lo que fui",
-            "",
+            "Que hoy e",
+            "hoy",
+            "que no soña e",
+            "l  actor de lo qu",
+            "fui.",
             "",
             ""
         ]
@@ -277,8 +311,9 @@
         {
             "tipo": "Youtube",
             "id": "cdzpf_T2qaA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

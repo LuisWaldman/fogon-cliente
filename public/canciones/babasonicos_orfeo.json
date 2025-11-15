@@ -2,15 +2,29 @@
     "cancion": "orfeo",
     "banda": "babasonicos",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F#m",
+                    "C#m",
                     "C#m",
                     "Bm",
                     "F#m"
@@ -19,7 +33,34 @@
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "C#m",
+                    "D",
                     "Bm",
+                    "F#m",
+                    "A",
+                    "C#m",
+                    "Bm",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "Bm",
+                    "A",
+                    "A",
+                    "C#m",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C#m",
                     "C#m",
                     "Bm"
                 ]
@@ -27,108 +68,284 @@
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#m",
-                    "Bm",
-                    "C#m",
-                    "Bm",
-                    "F#m",
                     "A",
-                    "C#m"
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Bm",
+                    "Bm",
+                    "C#m",
                     "D",
                     "Bm",
+                    "C#m",
+                    "Bm",
+                    "Bm",
                     "A",
-                    "B",
-                    "C",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
                     "A",
-                    "B",
-                    "C"
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "Bm",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Vengo a ofrecer mis atri",
-            "butos, mi misión/nY doy mi "
-        ],
-        [
-            "voz a la c",
-            "ausa/n"
-        ],
-        [
-            "Pienso instalar un GPS",
-            " en tu cabeza/nPara "
-        ],
-        [
-            "que conectes con la em",
-            "oción/n"
-        ],
-        [
-            "Sé como se pasa al infra",
-            "mundo/nPor la puerta que hay o"
-        ],
-        [
-            "culta de es",
-            "ta mansión/n"
-        ],
-        [],
-        [
-            " miedo que se siente/nCuándo"
-        ],
-        [
-            " estás del otro lado y no p",
-            "odés vo",
-            "lver/nY te sentís a"
-        ],
-        [
-            "sí/nAbsu"
-        ],
-        [
-            "rda como un sábado a la n",
-            "oche/nFrente a un kilo de helado"
-        ],
-        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
         [
-            "Las cosas pasan y yo s",
-            " muy bien/n"
+            "Vengo ofrecer mis",
+            "atributos  mi visión d",
+            "o  mi voz",
+            "la causa. /n Pi",
+            "ens instalar un /n G/n"
         ],
         [
-            "Que no hay razón para ",
-            "todo/n"
+            "P  en tu cabeza par",
+            "a  que conectes co",
+            "n la emoción. /n A",
+            "s  como se pasa al infr",
+            "amund  por la puerta que hay",
+            "tu unidad, eres l",
+            "a pasión. /n Se ve e",
+            "miedo que se esquiente cuando est",
+            "á  del otro lado no p",
+            "ode  volver",
+            "te sent",
+            "í  así, absur",
+            "d  como un sábado la noche",
+            "frente un kilo de helad",
+            "o /n Las",
+            "cosa  pasan yo sé m",
+            "uy  bien que n",
+            "o  hay razón para t",
+            "odo /n No n",
+            "o  metimos nosotro",
+            "mismos desde q",
+            "u  luego se come al pasc",
+            "ón /n No ten",
+            "g  nada, lo dije",
+            "tod  lo p",
+            "erdid  quedará atr",
+            "ás /n Quiero sa",
+            "be  quién es mi g",
+            "ente  desperté",
+            "de ese vivo./n"
         ],
         [
-            "Vengo a dar la cara por vosotros/nSerá el miedo que se siente"
+            "Vengo dar la c",
+            "ar  por vosotros trae",
+            "rle  el alivio",
+            "qu  no estamos solos./n"
         ],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Busco evasifarlos",
+            "d  la duda dejarlos",
+            "en constitución p",
+            "ar  que vea",
+            "n  que quiero esprenderse d",
+            "el  grillete de violencia",
+            "ignorancia qu",
+            "arrastraron. /n S",
+            "ve el miedo que se esquiente cuando",
+            "está  descontrolado n",
+            "o  podes par",
+            "ar  te",
+            "sentí  así, incom",
+            "prendid  juzgado por pe",
+            "rsona  testigas vul",
+            "gares /n"
+        ],
+        [
+            "Las cosas pasan yo s",
+            "é  muy bien q",
+            "u  no hay razón para t",
+            "odo. /n N",
+            "o  nos metimos nosot",
+            "ro  mismos des",
+            "d  que luego se come a",
+            "l pascón. /n N",
+            "o  tengo nada, l",
+            "o  dije todo",
+            "lo perdido quedar",
+            "atrás. /n Quier",
+            "saber quién es m",
+            "i  gente, des",
+            "pert  de esa creación v",
+            "ivo. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Veng  contagiar m",
+            "i  alegría, mi descaro",
+            "mi voluntad con",
+            "entusiasmo/n"
+        ],
+        [
+            "Temo compartir mi p",
+            "aranoi  con civiles d",
+            "e  la onda que",
+            "pulula hoy. /n Se ve",
+            "el miedo que se esquiente l",
+            "o  fría que es la cima cuando h",
+            "a  que sal",
+            "tar  te se",
+            "ntí  así, ti",
+            "mad  por un grupo de na",
+            "bo  que llamabas amig",
+            "os /n La",
+            "s  cosas pasan yo s",
+            "é  muy bien qu",
+            "no hay razón para t",
+            "odo. /n N",
+            "o  nos metimos nosot",
+            "ro  mismos desd",
+            "que luego se come al p",
+            "ascón /n No t",
+            "eng  nada, lo d",
+            "ije  todo l",
+            "o  perdido quedará a",
+            "trás /n Quiero s",
+            "aber  quién es mi",
+            "gente  vengo",
+            "brindarme como su cant",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "CiftK1ToZSc",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

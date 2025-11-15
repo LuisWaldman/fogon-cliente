@@ -2,39 +2,47 @@
     "cancion": "cabezon",
     "banda": "divididos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
-                    "F",
-                    "G",
                     "A",
-                    "F",
-                    "G",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "F",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "A",
-                    "D"
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
                     "A",
-                    "B",
-                    "F",
-                    "E",
+                    "A",
                     "A"
                 ]
             },
@@ -42,11 +50,98 @@
                 "nombre": "parte4",
                 "acordes": [
                     "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "D",
                     "A",
-                    "B",
-                    "F",
-                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
                     "A"
                 ]
             }
@@ -55,92 +150,125 @@
             0,
             1,
             2,
-            0,
-            1,
             3,
-            1,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "El ",
-            "seg",
-            "uidor,",
-            " sigue /n "
+            "El",
+            "seguit ",
+            "si",
+            "gu /n"
         ],
         [
             "No s",
-            "abe que,",
-            " cuida. /n "
+            "ab  q",
+            "u  c",
+            "uel/n"
         ],
         [
-            "Hay un lug",
-            "ar, en ",
-            "su lugar, /n "
+            "Ha",
+            "y  un luga",
+            "r  e",
+            "s un lugar /n M",
+            "ás  ráp",
+            "id  que el c",
+            "orre ",
+            "",
+            "/n"
         ],
         [
-            "Más r",
-            "ápido que él,",
-            " corre el. /n "
+            "Cabezón c",
+            "on  tu en",
+            "abla /n"
         ],
         [
-            "  CA",
-            "BEZ",
-            "N  /n "
+            "S  abur",
+            "r /n"
         ],
         [
-            "Cort",
-            "o en",
-            " hablar,",
-            " se abotonó. /n "
+            "Busco p",
+            "elear  e",
+            "n  e",
+            "l amor /n H",
+            "ay  un l",
+            "uca ",
+            "es un l",
+            "uc /n"
         ],
         [
-            "Busca pel",
-            "ear e",
-            "n el mar. /n "
+            "Muerde el pe",
+            "da  correr",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Hay un l",
-            "ugar e",
-            "n su l",
-            "ugar. /n "
+            "C",
+            "abezón  cabez",
+            "ó ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Muerde ",
-            "el pedal,",
-            " corre el /n "
-        ],
-        [
-            "  CA",
-            "BEZ",
-            "N /n"
-        ],
-        [
-            "Hay un",
-            " lugar /n"
-        ],
-        [
-            "en su ",
-            "lugar. /n"
+            "Ha",
+            "un lugar,",
+            "e",
+            "s  un lugar/n"
         ],
         [
             "Más ráp",
-            "ido que é",
-            "l, corre el /n"
+            "id  que el c",
+            "orre ",
+            "",
+            "/n"
         ],
         [
-            "  CA",
-            "BEZ",
-            "N "
+            "C",
+            "abezón ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cabezó ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "abezón ",
+            "",
+            "/n"
+        ],
+        [
+            "Cabezón"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "MqL5EqklhlM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

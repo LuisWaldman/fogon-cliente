@@ -8,271 +8,422 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "D/F#",
-                    "Em"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Am",
-                    "Am/G",
-                    "D/F#",
-                    "Em",
-                    "D",
-                    "C",
-                    "G/B",
-                    "D"
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G",
-                    "A",
-                    "D",
-                    "D7"
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "G",
-                    "B7",
-                    "Em",
-                    "Em/D"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "C",
-                    "D",
+                    "G",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D/F#",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "G",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "G",
                     "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            2,
             2,
             3,
             4,
-            2,
-            2,
-            3,
-            4,
-            0,
-            0,
-            1,
-            2,
-            2,
-            3,
-            4,
-            2,
-            2,
-            3,
-            4,
-            4,
-            4
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
         ]
     },
     "letras": [
         [
-            "Love   l",
-            "ove     lo",
-            "ve/n"
-        ],
-        [
-            "Love   l",
-            "ove     lo",
-            "ve/n"
-        ],
-        [
-            "Love   l",
-            "ove     lo",
-            "ve",
-            "",
-            "",
-            "",
+            "la,",
+            "la. /n L",
+            "a  la, l",
+            "a /n La",
+            ",  la, la.",
             "",
             "/n"
         ],
         [
-            "There's nothing you can d",
-            "o that can't be do",
-            "ne/n"
+            "There",
+            "'  nothing you can do that can't be done./n"
         ],
         [
-            "Theres nothing you can s",
-            "ing that can't be su",
-            "ng/n"
+            "Nothing y",
+            "ou  can sing that can't be sung./n"
         ],
         [
             "Nothing you can s",
-            "ay but you can lea",
-            "rn to play the game",
-            "/nIt's "
+            "ay  but you can learn how to play the game./n"
         ],
         [
-            "easy",
+            "It's easy.",
+            "/n"
+        ],
+        [
+            "Nothing you can ma",
+            "k  that can't be made./n"
+        ],
+        [
+            "No one you can save t",
+            "ha  can't be saved./n"
+        ],
+        [
+            "Nothing you can do but you can learn h",
+            "ow to be you in time. /n It'",
+            "s  easy./n"
+        ],
+        [
+            "A",
+            "ll  you need is love.",
+            "/n"
+        ],
+        [
+            "Al  you need is love./n"
+        ],
+        [
+            "A",
+            "l  you need is love,",
+            "love. /n Lo",
+            "v  is all you nee",
+            "d ",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "There's nothing you can m",
-            "ake that can't be ma",
-            "de/n"
+            "All yo",
+            "need is love./n"
         ],
         [
-            "No one  you can s",
-            "ave that can't be sa",
-            "ved/n"
+            "All yo",
+            "u  need is love./n"
         ],
         [
-            "Nothing you can d",
-            "o but you can lea",
-            "rn how to be you in tim",
-            "e/nIt's e"
+            "All yo",
+            "need is love, lo",
+            "ve /n Love is al",
+            "l  you need./n"
         ],
         [
-            "asy",
-            "",
-            "",
+            "Nothing you can know that isn't k",
+            "nown /n Noth",
+            "in  you can see that isn't show",
+            "n /n There's no way you ca",
+            "n  be that isn't where you're meant to be./n"
+        ],
+        [
+            "It's easy. /n It's easy.",
             "/n"
+        ],
+        [
+            "All you need is",
+            "love /n"
+        ],
+        [
+            "All you need is l",
+            "ove. /n"
+        ],
+        [
+            "All you need is l",
+            "ove  love./n"
+        ],
+        [
+            "Love is all you need./n"
+        ],
+        [
+            "All yo",
+            "u need is love. /n All you",
+            "nee",
+            "d  is love./n"
         ],
         [
             "All you n",
-            "eed is lov",
+            "ee  is love, lov",
+            "e /n Love is all yo",
+            "u need. /n Love is al",
+            "you need. /n Love is all you n",
+            "eed /n Love is all you ne",
+            "ed /n Love is all you ne",
+            "ed /n Love is all you nee",
+            "d /n Love is all you need. Love",
+            "i  all you ne",
+            "ed /n Love is all you need./n"
+        ],
+        [
+            "Love is all you need. /n Love i",
+            "s all you need. /n Love is all yo",
+            "u need. /n Love is all you need./n"
+        ],
+        [
+            "Love is all you need./n"
+        ],
+        [
+            "Love is all you",
+            "n",
             "e",
-            "/n"
+            "e /n"
         ],
         [
-            "All you n",
-            "eed is lov",
+            "Love i",
+            "s all you need. /n Love i",
+            "s",
+            "all you",
+            "n",
             "e",
-            "/n"
+            "e /n"
         ],
         [
-            "All you n",
-            "eed is lo",
-            "ve       lov",
-            "e/n"
+            "Love is all you need./n"
         ],
         [
-            "Love is a",
-            "ll you ne",
-            "ed/n"
-        ],
-        [],
-        [],
-        [],
-        [
-            "All you n",
-            "eed is lov",
-            "e",
-            "/n"
-        ],
-        [
-            "All you n",
-            "eed is lov",
-            "e",
-            "/n"
-        ],
-        [
-            "All you n",
-            "eed is lo",
-            "ve       lov",
-            "e/n"
-        ],
-        [
-            "Love is a",
-            "ll you ne",
-            "ed/n"
-        ],
-        [
-            "There's nothing you can k",
-            "now that isn't known",
-            "/n"
-        ],
-        [
-            "Nothing you can s",
-            "ee that isn't sho",
-            "wn/n"
-        ],
-        [
-            "Nowhere you can b",
-            "e that isn't wher",
-            "e you're meant to be",
-            "/nIts e"
-        ],
-        [
-            "asy",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "All you n",
-            "eed is lo",
-            "ve",
-            "/n"
-        ],
-        [
-            "All you n",
-            "eed is lov",
-            "e",
-            "/n"
-        ],
-        [
-            "All you n",
-            "eed is lo",
-            "ve    lov",
-            "e/n"
-        ],
-        [
-            "Love is ",
-            "all you n",
-            "eed /n"
-        ],
-        [
-            "All you n",
-            "eed is lo",
-            "ve",
-            "/n"
-        ],
-        [
-            "All you n",
-            "eed is lov",
-            "e/nAll you need is love    love"
-        ],
-        [],
-        [],
-        [],
-        []
+            "Love is all you need. /n L",
+            "ov is all you need. /n Love",
+            "is all you need. /n Love is all you need. Love is al",
+            "l  you need.",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 103,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "_7xMfIp-irg",
-            "delay": 0
+            "delay": 8600.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }
