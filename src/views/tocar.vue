@@ -196,6 +196,12 @@ function GetStyleOverlay() {
   }
   return `top: ${vista.value.altoReproductor}px;`
 }
+
+
+function GetStyleSecuencia() {
+  return `height: ${vista.value.anchoParte}px;`
+}
+
 const refSincronizandoMedios = ref(false)
 function clickCerrarMedios() {
   refSincronizandoMedios.value = false
@@ -342,11 +348,14 @@ const refAdvertencia = ref(true)
         </div>
 
         <div class="overlay" :style="GetStyleOverlay()">
+          <div class="secuencia" :style="GetStyleSecuencia()">
+
           <Secuencia
             v-if="vista.viendoSecuencia"
             :cancion="appStore.cancion"
             :compas="appStore.compas"
           ></Secuencia>
+          </div>
 
           <ProximosAcordes
             :cancion="appStore.cancion"
@@ -477,5 +486,9 @@ input[type='range'] {
   width: 100%;
   height: 100%;
   z-index: 10;
+  overflow: hidden;
+}
+.secuencia {
+  overflow: hidden;
 }
 </style>

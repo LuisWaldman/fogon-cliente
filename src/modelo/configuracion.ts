@@ -19,6 +19,7 @@ export class VistaTocar {
   public tamanioAcordesolo: number = 16
   public viendoResumenVerso: boolean = false
   public tamanioParte: number = 16
+  public anchoParte: number = 100
   public tamanioAcordeParte: number = 26
   public anchoPrincipal: number = 70 // Ancho de la parte principal
   public altoReproductor: number = 400 // Alto del reproductor
