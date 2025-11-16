@@ -5,6 +5,7 @@ import { watch } from 'vue'
 import { ResumenSecuencia } from '../../modelo/cancion/ResumenSecuencia'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { useAppStore } from '../../stores/appStore'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
@@ -19,10 +20,24 @@ function Actualizar(cancion: Cancion) {
   resumenSecuencia.value = ResumenSecuencia.GetResumen(cancion)
 }
 
+const ctrlSecuencia = ref<HTMLElement | null>(null) // Ref to the div
+
+const pantalla = new Pantalla()
+const configPantalla = pantalla.getConfiguracionPantalla()
+
+function moverScroll(posX: number) {
+  ctrlSecuencia.value?.scrollTo({ top: posX, behavior: 'smooth' })
+}
+
 onMounted(() => {
   Actualizar(props.cancion)
 })
-
+//  :style="EstiloSecuencia()" :ref="ctrlSecuencia">
+function EstiloSecuencia() {
+  return {
+    'height': configPantalla.anchoParte + 'px',
+  }
+}
 watch(
   () => props.cancion,
   (newCancion) => {
@@ -34,6 +49,16 @@ watch(
   () => props.compas,
   (newCompas) => {
     resumenSecuencia.value?.ActualizarCompas(newCompas)
+    
+    if (configPantalla.AutoScroll) {
+      //const total = resumenSecuencia.value.resumenPartes.length
+      const enParte = resumenSecuencia.value.parte 
+      // Calcular la posición de scroll basada en la parte actual
+      const positionY = enParte * configPantalla.tamanioAcordeParte * 2
+      moverScroll(positionY)
+    }
+
+
   },
 )
 
@@ -59,7 +84,7 @@ helper.latino = appStore.perfil.CifradoLatino
     .. No cargada ..
   </div>
 
-  <div class="contSecuencia">
+  <div class="contSecuencia" :style="EstiloSecuencia()" ref="ctrlSecuencia">
     <div
       v-for="(parte, index) in resumenSecuencia.resumenPartes"
       :key="index"
@@ -110,7 +135,7 @@ helper.latino = appStore.perfil.CifradoLatino
 .acordeSecuencia {
   color: #a9a8f6;
   font-size: var(--tamanio-parte);
-  margin: 5px;
+  margin-right: 10px;
 }
 
 
@@ -118,7 +143,9 @@ helper.latino = appStore.perfil.CifradoLatino
 .contSecuencia {
   flex-wrap: wrap;
   overflow-y: scroll;
-  height: 300px;
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
+
   
   
 }

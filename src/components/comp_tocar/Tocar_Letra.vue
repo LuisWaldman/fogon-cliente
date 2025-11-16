@@ -19,7 +19,9 @@ watch(
   () => props.compas,
   (newCompas) => {
     const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    const tamanioLetra = pantalla.getConfiguracionPantalla().tamanioLetra
+    const configPantalla = pantalla.getConfiguracionPantalla()
+    if (configPantalla.AutoScroll === false) return
+    const tamanioLetra = configPantalla.tamanioLetra
     let ve = renglon * tamanioLetra * 2
     ve -= tamanioLetra * 20
     const nuevaPos = Math.max(ve, 0)
