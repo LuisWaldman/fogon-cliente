@@ -116,10 +116,9 @@ helper.latino = appStore.perfil.CifradoLatino
 
 
 .contSecuencia {
-  flex-direction: column;
-  display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
+  height: 300px;
   
   
 }
