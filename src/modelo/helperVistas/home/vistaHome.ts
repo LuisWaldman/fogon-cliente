@@ -26,13 +26,22 @@ export class vistaHome {
     await this.strategia.cambioLista()
   }
 
-  public async clickViendo(viendo: string) {
+  public async clickViendo(viendo: string, logueado: boolean, conLista: boolean) {
     this.viendo = viendo
+    if (logueado) {
+      if (viendo === 'listas' || viendo === 'canciones') {
+        this.viendoOrigen = 'server'
+      }
+    }
+    if (conLista && viendo === 'listas') {
+      this.viendoOrigen = 'reproduccion'
+    }
     await this.cambiarStrategia()
   }
 
   public async clickViendoOrigen(viendoOrigen: string) {
     this.viendoOrigen = viendoOrigen
+    
     await this.cambiarStrategia()
   }
 
