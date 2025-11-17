@@ -20,8 +20,9 @@ export class Reproductor {
   async Next() {
     const appStore = useAppStore()
     appStore.nroCancion++
-    const origen =
-      ItemIndiceCancion.GetOrigen(appStore.listaReproduccion[appStore.nroCancion - 1])
+    const origen = ItemIndiceCancion.GetOrigen(
+      appStore.listaReproduccion[appStore.nroCancion - 1],
+    )
     const cancionObtenida = await CancionManager.getInstance().Get(origen)
     appStore.MediaVistas = null
     if (cancionObtenida.pentagramas.length > 0) {

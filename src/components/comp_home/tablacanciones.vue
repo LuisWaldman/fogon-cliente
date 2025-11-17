@@ -1,4 +1,4 @@
-<script setup lang="ts">
+z<script setup lang="ts">
 import { ref, computed } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
@@ -20,6 +20,8 @@ const props = defineProps<{
   listasstore: string[]
   listasserverstore: string[]
   verBorrar: boolean
+  verCancionActual: boolean
+  nroCancion: number
   cargando: boolean
   agregarLista: (index: number, listaseleccionada: string) => Promise<void>
 }>()
@@ -125,7 +127,7 @@ function Borrar(cancion: ItemIndiceCancion) {
     </tbody>
     <tbody v-if="canciones.length > 0 && props.cargando == false">
       <template v-for="(cancion, index) in cancionesFiltradas" :key="index">
-        <tr @click="VerDetalle(cancion)">
+        <tr @click="VerDetalle(cancion)" :class="{ selecionada: index  === nroCancion && verCancionActual}">
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
@@ -153,6 +155,7 @@ function Borrar(cancion: ItemIndiceCancion) {
         <tr
           v-if="viendoDetalle === `${cancion.banda}-${cancion.cancion}`"
           data-detail
+          :class="{ selecionada: index  === nroCancion && verCancionActual}"
         >
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
@@ -335,5 +338,9 @@ td {
     margin-right: 5px;
     margin-top: 10px;
   }
+}
+
+.selecionada {
+  background-color: #70726a;
 }
 </style>

@@ -90,8 +90,7 @@ async function clickOpcion(viendostr: string) {
   cargandoCanciones.value = true
   cargandoListas.value = true
   const conLista = appStore.listaReproduccion.length > 0
-  const conLogin =
-    appStore.estadosApp.estadoLogin === 'logueado' ? true : false
+  const conLogin = appStore.estadosApp.estadoLogin === 'logueado' ? true : false
   await vistaControl.clickViendo(viendostr, conLogin, conLista)
   await Cargar()
   return
@@ -109,7 +108,6 @@ async function clickOrigen(viendostr: string) {
   if (viendoOrigen.value === viendostr) return
   console.log('Cambiando origen a:', viendostr)
   if (appStore.estadosApp.estadoLogin === 'logueado') {
-
   }
   await vistaControl.clickViendoOrigen(viendostr)
   await vistaControl.iniciar()
@@ -455,6 +453,8 @@ async function AgregarALista(index: number, listaseleccionada: string) {
         :listasstore="ListasEnStorage"
         :cargando="cargandoCanciones"
         :agregarLista="AgregarALista"
+        :nro-cancion="appStore.nroCancion"
+        :ver-cancion-actual="viendoOrigen === 'reproduccion'"
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
         :ver-borrar="viendo != 'inicio'"
