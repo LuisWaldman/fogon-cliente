@@ -125,9 +125,10 @@ function Borrar(cancion: ItemIndiceCancion) {
       <template v-for="(cancion, index) in cancionesFiltradas" :key="index">
         <tr
           @click="VerDetalle(index)"
-          :class="{ tocando: index === nroCancion && verCancionActual,
-            seleccionado: index === viendoDetalle
-           }"
+          :class="{
+            tocando: index === nroCancion && verCancionActual,
+            seleccionado: index === viendoDetalle,
+          }"
         >
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
@@ -156,9 +157,10 @@ function Borrar(cancion: ItemIndiceCancion) {
         <tr
           v-if="viendoDetalle === index"
           data-detail
-          :class="{ tocandodetalle: index === nroCancion && verCancionActual,
-                  seleccionado: index === viendoDetalle
-           }"
+          :class="{
+            tocandodetalle: index === nroCancion && verCancionActual,
+            seleccionado: index === viendoDetalle,
+          }"
         >
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
@@ -350,6 +352,6 @@ td {
   background: radial-gradient(ellipse at top, #000000 0%, #6a700f 100%);
 }
 .seleccionado {
-  background-color: #70726a;
+  background-color: #2c2c2c;
 }
 </style>

@@ -7,7 +7,7 @@ export class ListaReproduccion {
     const appStore = useAppStore()
     const nuevaLista = []
     if (appStore.nroCancion > appStore.listaReproduccion.length) {
-      appStore.nroCancion = appStore.listaReproduccion.length;
+      appStore.nroCancion = appStore.listaReproduccion.length
     }
     for (let i = 0; i < appStore.listaReproduccion.length; i++) {
       if (i === appStore.nroCancion) {
