@@ -6,7 +6,7 @@ import emoticonOrigen from './emoticonOrigen.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
 const helper = HelperDisplayAcordesLatino.getInstance()
-const emit = defineEmits(['tocar', 'borrar', 'agregar'])
+const emit = defineEmits(['tocar', 'borrar'])
 const vectorCalidades: string[] = [
   'De Internet',
   'Texto Sincronizado',
@@ -14,17 +14,25 @@ const vectorCalidades: string[] = [
   'Ok',
 ]
 const agregandoLista = ref(false)
+const agregandoALista = ref(false)
 const props = defineProps<{
   canciones: ItemIndiceCancion[]
   listasstore: string[]
   listasserverstore: string[]
   verBorrar: boolean
   cargando: boolean
+  agregarLista: (index: number, listaseleccionada: string) => Promise<void>
 }>()
 const listaseleccionada = ref<string>('actual')
 
-function clickAgregar(index: number) {
-  emit('agregar', index, listaseleccionada.value)
+async function clickAgregar(index: number) {
+  agregandoALista.value = true
+  try {
+    await props.agregarLista(index, listaseleccionada.value)
+  } finally {
+    agregandoALista.value = false
+    agregandoLista.value = false
+  }
 }
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
@@ -228,8 +236,18 @@ function Borrar(cancion: ItemIndiceCancion) {
                     </option>
                   </optgroup>
                 </select>
-                <button @click="clickAgregar(index)">AGREGAR</button>
-                <button @click="agregandoLista = false">❌</button>
+                <button
+                  @click="clickAgregar(index)"
+                  :disabled="agregandoALista"
+                >
+                  {{ agregandoALista ? '🔥 Agregando...' : 'AGREGAR' }}
+                </button>
+                <button
+                  @click="agregandoLista = false"
+                  :disabled="agregandoALista"
+                >
+                  ❌
+                </button>
               </div>
             </div>
           </td>

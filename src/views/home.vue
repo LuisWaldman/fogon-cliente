@@ -245,8 +245,7 @@ function borrarLista() {
   }
 }
 
-function AgregarLista(index: number, listaseleccionada: string) {
-  console.log('Agregar a lista:', index, listaseleccionada)
+async function AgregarALista(index: number, listaseleccionada: string) {
   if (listaseleccionada === 'actual') {
     appStore.aplicacion.ClickAgregarAListaReproduccion(
       viendoCanciones.value[index],
@@ -449,9 +448,9 @@ function AgregarLista(index: number, listaseleccionada: string) {
         :listasserverstore="appStore.listasEnServer"
         :listasstore="ListasEnStorage"
         :cargando="cargandoCanciones"
+        :agregarLista="AgregarALista"
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
-        @agregar="AgregarLista"
         :ver-borrar="viendo != 'inicio'"
       />
     </div>

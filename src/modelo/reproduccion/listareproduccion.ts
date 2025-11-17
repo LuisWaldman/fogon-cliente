@@ -12,6 +12,9 @@ export class ListaReproduccion {
       }
       nuevaLista.push(appStore.listaReproduccion[i])
     }
+    if (appStore.nroCancion === appStore.listaReproduccion.length) {
+      nuevaLista.push(cancion)
+    }
     appStore.listaReproduccion = nuevaLista
   }
 
