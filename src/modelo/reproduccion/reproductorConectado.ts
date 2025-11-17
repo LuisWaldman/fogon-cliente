@@ -6,6 +6,7 @@ import { OrigenCancion } from '../cancion/origencancion'
 import { CancionManager } from '../cancion/CancionManager'
 import { Cancion } from '../cancion/cancion'
 import { HelperSincro } from '../sincro/HelperSincro'
+import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
@@ -72,11 +73,13 @@ export class ReproductorConectado extends Reproductor {
     CancionManager.getInstance().Save(origenN, cancion)
   }
 
-  override async ClickCancion(origen: OrigenCancion) {
+  override async ClickCancion(origen: ItemIndiceCancion) {
     const appStore = useAppStore()
     appStore.estadosApp.texto = 'Obteniendo cancion...'
-    const cancionObtenida = await CancionManager.getInstance().Get(origen)
-    appStore.origenCancion = origen
+    appStore.origenCancion = ItemIndiceCancion.GetOrigen(origen)
+    const cancionObtenida = await CancionManager.getInstance().Get(
+      appStore.origenCancion,
+    )
     appStore.estadosApp.texto = 'Enviando cancion...'
     await this.EnviarCancion(cancionObtenida)
   }

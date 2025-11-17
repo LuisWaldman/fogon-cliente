@@ -70,13 +70,6 @@ onUnmounted(() => {
   stopRafLoop()
 })
 
-const urlParams = new URLSearchParams(window.location.search)
-const sesionurl = urlParams.get('cancion')
-if (sesionurl) {
-  const origen = OrigenCancion.GetFromQuery(sesionurl)
-  appStore.aplicacion.ClickTocar(origen)
-}
-
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
 onMounted(() => {

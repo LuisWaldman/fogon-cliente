@@ -1,6 +1,6 @@
 import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
-import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 
 export class ListaReproduccion {
   async InsertarEnListaReproduccion(cancion: ItemIndiceCancion) {
@@ -21,12 +21,12 @@ export class ListaReproduccion {
   async CargarCancion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
     const cancionObtenida = await CancionManager.getInstance().Get(
-      cancion.GetOrigen(),
+      ItemIndiceCancion.GetOrigen(cancion),
     )
     appStore.cancion = cancionObtenida
     appStore.compas = 0
     appStore.estadosApp.estado = 'ok'
-    appStore.origenCancion = cancion.GetOrigen()
+    appStore.origenCancion = ItemIndiceCancion.GetOrigen(cancion)
   }
 
   async ClickCancion(cancion: ItemIndiceCancion) {

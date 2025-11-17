@@ -2,7 +2,7 @@ import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroSesion } from '../sincro/SincroSesion'
 import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
-import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { ListaReproduccion } from './listareproduccion'
 
 export class Reproductor {
@@ -21,7 +21,7 @@ export class Reproductor {
     const appStore = useAppStore()
     appStore.nroCancion++
     const origen =
-      appStore.listaReproduccion[appStore.nroCancion - 1].GetOrigen()
+      ItemIndiceCancion.GetOrigen(appStore.listaReproduccion[appStore.nroCancion - 1])
     const cancionObtenida = await CancionManager.getInstance().Get(origen)
     appStore.MediaVistas = null
     if (cancionObtenida.pentagramas.length > 0) {
