@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
-import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
@@ -70,11 +69,11 @@ const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
 const appStore = useAppStore()
 
-function clickTocar(cancion: OrigenCancion) {
+function clickTocar(cancion: ItemIndiceCancion) {
   appStore.aplicacion.ClickTocar(cancion)
 }
 
-function clickBorrarLista(cancion: OrigenCancion) {
+function clickBorrarLista(cancion: ItemIndiceCancion) {
   viendoCanciones.value = viendoCanciones.value.filter(
     (c) => c.fileName !== cancion.fileName,
   )

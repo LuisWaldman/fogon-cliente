@@ -1,4 +1,3 @@
-import type { OrigenCancion } from '../cancion/origencancion'
 import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroSesion } from '../sincro/SincroSesion'
 import { useAppStore } from '../../stores/appStore'
@@ -10,17 +9,29 @@ export class Reproductor {
   public get Cancion() {
     return this.cancion
   }
-  async ClickCancion(origen: OrigenCancion) {
+  async ClickCancion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
     appStore.MediaVistas = null
-    const cancionObtenida = await CancionManager.getInstance().Get(origen)
+    if (appStore.listaReproduccion.length > 0) {
+      const nuevaLista = []
+      for (let i = 0; i < appStore.listaReproduccion.length; i++) {
+        if (i === appStore.nroCancion) {
+          nuevaLista.push(cancion)
+        }
+        nuevaLista.push(appStore.listaReproduccion[i])
+      }
+      appStore.listaReproduccion = nuevaLista
+    }
+    const cancionObtenida = await CancionManager.getInstance().Get(
+      cancion.GetOrigen(),
+    )
     if (cancionObtenida.pentagramas.length > 0) {
       appStore.estadosApp.texto = 'Cargando Midis...'
     }
     appStore.cancion = cancionObtenida
     appStore.compas = 0
     appStore.estadosApp.estado = 'ok'
-    appStore.origenCancion = origen
+    appStore.origenCancion = cancion.GetOrigen()
   }
 
   async Next() {

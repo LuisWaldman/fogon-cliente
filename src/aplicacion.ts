@@ -9,7 +9,6 @@ import { ReproductorConectado } from './modelo/reproduccion/reproductorConectado
 import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
-import { OrigenCancion } from './modelo/cancion/origencancion'
 import { CancionManager } from './modelo/cancion/CancionManager'
 import type { MediaVista } from './modelo/reproduccion/MediaVista'
 import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
@@ -86,7 +85,7 @@ export default class Aplicacion {
     appStore.MediaVistas = null
   }
 
-  async ClickTocar(origen: OrigenCancion) {
+  async ClickTocar(origen: ItemIndiceCancion) {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''
     appStore.estadosApp.estado = 'cargando'
