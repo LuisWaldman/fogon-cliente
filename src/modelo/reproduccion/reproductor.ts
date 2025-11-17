@@ -3,35 +3,18 @@ import { SincroSesion } from '../sincro/SincroSesion'
 import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
 import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import { ListaReproduccion } from './listareproduccion'
 
 export class Reproductor {
   protected cancion: string = ''
+  protected listaReproduccion: ListaReproduccion = new ListaReproduccion()
   public get Cancion() {
     return this.cancion
   }
   async ClickCancion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
+    this.listaReproduccion.ClickCancion(cancion)
     appStore.MediaVistas = null
-    if (appStore.listaReproduccion.length > 0) {
-      const nuevaLista = []
-      for (let i = 0; i < appStore.listaReproduccion.length; i++) {
-        if (i === appStore.nroCancion) {
-          nuevaLista.push(cancion)
-        }
-        nuevaLista.push(appStore.listaReproduccion[i])
-      }
-      appStore.listaReproduccion = nuevaLista
-    }
-    const cancionObtenida = await CancionManager.getInstance().Get(
-      cancion.GetOrigen(),
-    )
-    if (cancionObtenida.pentagramas.length > 0) {
-      appStore.estadosApp.texto = 'Cargando Midis...'
-    }
-    appStore.cancion = cancionObtenida
-    appStore.compas = 0
-    appStore.estadosApp.estado = 'ok'
-    appStore.origenCancion = cancion.GetOrigen()
   }
 
   async Next() {
@@ -51,8 +34,7 @@ export class Reproductor {
   }
 
   async AgregarAListaReproduccion(item: ItemIndiceCancion) {
-    const appStore = useAppStore()
-    appStore.listaReproduccion.push(item)
+    this.listaReproduccion.Agregar(item)
   }
 
   iniciarReproduccion() {
