@@ -197,7 +197,6 @@ function GetStyleOverlay() {
   return `top: ${vista.value.altoReproductor}px;`
 }
 
-
 function GetStyleSecuencia() {
   return `height: ${vista.value.anchoParte}px;`
 }
@@ -349,12 +348,11 @@ const refAdvertencia = ref(true)
 
         <div class="overlay" :style="GetStyleOverlay()">
           <div class="secuencia" :style="GetStyleSecuencia()">
-
-          <Secuencia
-            v-if="vista.viendoSecuencia"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-          ></Secuencia>
+            <Secuencia
+              v-if="vista.viendoSecuencia"
+              :cancion="appStore.cancion"
+              :compas="appStore.compas"
+            ></Secuencia>
           </div>
 
           <ProximosAcordes
