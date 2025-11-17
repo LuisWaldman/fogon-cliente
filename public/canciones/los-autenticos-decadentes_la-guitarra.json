@@ -2,311 +2,388 @@
     "cancion": "la-guitarra",
     "banda": "los-autenticos-decadentes",
     "escala": "B",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "B",
+                    "B",
                     "E",
                     "A",
+                    "E",
                     "G#m",
                     "F#m",
-                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "B",
-                    "E",
-                    "A",
-                    "G#7",
-                    "C#m",
-                    "C#7",
-                    "F#m",
-                    "B7",
-                    "G#m",
-                    "C#m",
-                    "A",
-                    "G#m",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B7",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "A",
-                    "G#7",
-                    "C#m",
-                    "C#7",
-                    "F#m",
-                    "B",
-                    "G#m",
-                    "C#m",
-                    "A",
-                    "G#m",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
-                    "E",
-                    "B",
-                    "C#m",
-                    "G#m",
-                    "A",
-                    "E",
-                    "F#7",
-                    "B7",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "A",
+                    "G#7",
+                    "G#7",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "C#m",
+                    "G#m",
+                    "G#m",
+                    "F#7",
+                    "E",
+                    "B7",
+                    "B7",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "E",
+                    "A",
+                    "E",
+                    "B7",
+                    "B7",
+                    "G#m",
+                    "G#m",
+                    "E",
+                    "F#7",
+                    "F#7",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "F#7",
+                    "G#m",
+                    "E",
+                    "B",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "G#m C#m",
+                    "C#m",
+                    "G#m",
+                    "G#m",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "G#m",
+                    "G#m",
+                    "E",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C#m",
+                    "G#m",
+                    "A",
+                    "E",
+                    "F#7",
+                    "G#m",
+                    "G#m",
+                    "B",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G#m",
+                    "E",
+                    "B",
+                    "C#m",
+                    "G#m",
+                    "A",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F#7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Tuve un problema de",
-            " díficil solución/nEn una "
+            "",
+            "",
+            "/n"
         ],
         [
-            "poca díficil de mi vida/nEs"
+            "Tuve un problema de ",
+            "difícil soluci",
+            "ón \n\nEn una época d",
+            "ifícil de mi vi",
+            "da \n\nEstaba entre la ",
+            "espada la pared ",
+            "aguantando la opin",
+            "ión de mi familia /n"
         ],
         [
-            "taba entre la espada y la par",
-            "ed/nY aguan"
+            "Yo no quería una vi",
+            "da normal /n"
         ],
         [
-            "tando la opinión de mi fami",
-            "lia/nYo no q"
+            "No me gustaban los hora",
+            "rios de oficin",
+            "a \n\nMi espíritu rebel",
+            "de se reía \n\nDel ",
+            "dinero, del lujo ",
+            "el compor ",
+            "tu mona de r",
+            "elación /n"
         ],
         [
-            "uería una vida normal/nNo me gust"
+            "Se hace el que quiero ",
+            "de esta vida \n\nVoy ",
+            "seguir mi vo",
+            "cación \n\nSerá ",
+            "la música mi techo mi ",
+            "comida \n\nPorque ",
+            "yo no quiero tra",
+            "bajar \n\nNo quiero ir e",
+            "studiar \n\nNo me quiero c",
+            "asar \n\nQuiero to",
+            "car la guitarra todo el ",
+            "día que la g",
+            "ente se enamore de mi ",
+            "voz \n\nPorque yo ",
+            "no quiero trabaj",
+            "ar \n\nNo quiero ir estud",
+            "iar \n\nNo me quiero ca",
+            "sar en la cabez ",
+            "tenía la voz de mi vi",
+            "ejo \n\nQue me sonaba c",
+            "omo un ruido de ta",
+            "mbor \n\nVos ",
+            "mejor que te afeite /n"
         ],
         [
-            "aban los horarios de oficina/nY mi esp"
+            "Mejor que madures \n\nM",
+            "ejor que labure /n"
         ],
         [
-            "íritu rebelde se reía/nDel d"
+            "Ya me cansé de que ",
+            "me tomes la cerve",
+            "za \n\nTe voy dar con la ",
+            "guitarra en la cabe",
+            "za \n\nVos me",
+            "jor que te afeites \n\nMej",
+            "or que madures \n\nMej",
+            "or que labures /n"
         ],
         [
-            "inero, del lujo y del confo",
-            "rt/nY tuve u"
+            "Ya me cansé de ser tu fue",
+            "nte de dinero /n"
         ],
         [
-            "na revelaci",
-            "ón/n"
+            "Voy ponerme esa guitar",
+            "ra de sombrer ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "tu ",
+            "mona  de rela",
+            "ción \n\nSe ",
+            "hace el que quiero de e",
+            "sta vida \n\nVoy ",
+            "seguir  mi voc",
+            "ación \n\nSerá la ",
+            "música mi techo mi comi",
+            "da \n\nPorque yo ",
+            "no quiero trabaj",
+            "ar \n\nNo quiero ir estu",
+            "diar \n\nNo me quiero ca",
+            "sar \n\nQuiero toc",
+            "ar la guitarra todo el ",
+            "día que la gente ",
+            "se enamore de mi voz /n"
         ],
         [
-            "Ya se quiero en esta vi",
-            "da/nVoy a seg"
+            "Porque yo ",
+            "no quiero trabajar /n"
         ],
         [
-            "uir mi vocaci",
-            "n/nSerá la "
+            "No quiero ir estudiar /n"
         ],
         [
-            "musica mi techo y mi com",
-            "ida/nPorque "
+            "No me quiero cas",
+            "ar en la cabeza ten",
+            "ía la voz de mi vie",
+            "jo \n\nQue me sonaba com ",
+            "un ruido de tam",
+            "bor \n\nVos me",
+            "jor que te afeites \n\nMe",
+            "jor que madures \n\nMej",
+            "or que labures /n"
         ],
         [
-            "yo no quiero trabaja",
-            "r/nNo quiero ir a estu"
+            "Ya me cansé de que me t",
+            "omes la cerveza /n"
         ],
         [
-            "diar, no me quiero cas",
-            "ar/nQuiero to"
+            "Te voy dar con la guita",
+            "rra en la cabez /n"
         ],
         [
-            "car la guitarra todo el d",
-            "a/nY que la g"
+            "Vos mejor que ",
+            "te afeites \n\nMejor ",
+            "que madures \n\nMejor que ",
+            "labures \n\nYa ",
+            "me cansé de ser tu fuente ",
+            "de dinero \n\nVoy ",
+            "ponerme esa guitarra de ",
+            "sombrer ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ente se enamore de mi v",
-            "oz/nPorque "
-        ],
-        [
-            "yo no quiero trabaja",
-            "r/nNo quiero ir a estu"
-        ],
-        [
-            "diar, no me quiero cas",
-            "ar/nY en la cab"
-        ],
-        [
-            "eza tenía la voz de mi vi",
-            "ejo/nQue me so"
-        ],
-        [
-            "naba como un rulo de tam",
-            "bor/n"
-        ],
-        [
-            "Vos mejor que te afeit",
-            "s, mejor que madur",
-            "és/nMejor que labu"
-        ],
-        [
-            "rés ya me cans",
-            "e de que te tomes la cervez",
-            "a/nTe voy a d"
-        ],
-        [
-            "ar con la guitarra en la cab",
-            "eza/n"
-        ],
-        [
-            "Vos mejor que te afeit",
-            "és, mejor que madu",
-            "rés/nMejor que labu"
-        ],
-        [
-            "rés ya me cans",
-            "e de ser tu fuente de dine",
-            "ro/nVoy a po"
-        ],
-        [
-            "nerte esa guitarra de sombre",
-            "ro/n"
-        ],
-        [],
-        [
-            "a revelació",
-            "n/n"
-        ],
-        [
-            "Ya se quiero en esta vi",
-            "da/nVoy a seg"
-        ],
-        [
-            "uir mi vocaci",
-            "n/nSerá la"
-        ],
-        [
-            " musica mi techo y mi co",
-            "mida/nPorque "
-        ],
-        [
-            "yo no quiero trabaja",
-            "r/nNo quiero ir a estu"
-        ],
-        [
-            "diar, no me quiero cas",
-            "ar/nQuiero to"
-        ],
-        [
-            "car la guitarra todo el d",
-            "a/nY que la g"
-        ],
-        [
-            "ente se enamore de mi vo",
-            "z/nPorque "
-        ],
-        [
-            "yo no quiero trabaja",
-            "r/nNo quiero ir a estu"
-        ],
-        [
-            "diar, no me quiero cas",
-            "ar/nY en la cab"
-        ],
-        [
-            "eza tenía la voz de mi vi",
-            "ejo/nQue me so"
-        ],
-        [
-            "naba como un rulo de tam",
-            "bor/n"
-        ],
-        [
-            "Vos mejor que te afeit",
-            "és, mejor que madu",
-            "rés/nMejor que labu"
-        ],
-        [
-            "rés ya me cans",
-            "e de que te tomes la cervez",
-            "a/nTe voy a d"
-        ],
-        [
-            "ar con la guitarra en la cab",
-            "eza/n"
-        ],
-        [
-            "Vos mejor que te afeit",
-            "és, mejor que madu",
-            "rés/nMejor que labu"
-        ],
-        [
-            "rés ya me cans",
-            "e de ser tu fuente de dine",
-            "ro/nVoy a po"
-        ],
-        [
-            "nerte esa guitarra de sombre",
-            "ro",
-            ""
+            "La guitarra de sombrero "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ID-iJOw9rLo",
-            "delay": 0
+            "delay": 9000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

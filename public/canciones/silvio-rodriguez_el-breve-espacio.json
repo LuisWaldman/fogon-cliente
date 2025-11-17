@@ -1,1 +1,379 @@
-{"cancion": "el-breve-espacio", "banda": "silvio-rodriguez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "C", "G"]}, {"nombre": "parte2", "acordes": ["G"]}, {"nombre": "parte3", "acordes": ["C", "Am", "D"]}, {"nombre": "parte4", "acordes": ["Bm", "E", "A7", "D"]}], "orden_partes": [0, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 3, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1]}, "letras": [["     Todavia qued", "an restos de hu", "medad,/n     "], ["sus olores llenan ya", " mi soledad", ",", "/n     en la c"], ["ama su silue", "ta/n     se dib"], ["uja cual prome", "sa/n     de llen"], ["ar el breve espa", "cio en que no estas", ".", "/n     "], ["Todavia yo no se", " si volvera,", "/n     "], ["nadie sabe al dia siguie", "nte lo que hara,", "", "/n     rompe t"], ["odos mis esque", "mas/n     no conf"], ["iesa ni una pe", "na,/n     no me p"], ["ide nada a ca", "mbio de lo que da.", "", "/n     "], ["Suele ser violenta y tie", "rna/n     no"], [" habla de uniones ete", "rnas,/n     mas se entr"], ["ega cual si hubie", "ra/n     solo un d"], ["ia para ama", "r./n    "], [" No compa", "rte una reunio", "n/n     mas le g"], ["usta la cancio", "n/n     que comprom"], ["eta su pensa", "r.", "/n     "], ["Todavia no pregunte", " te quedaras", ",/n     "], ["temo mucho a la respue", "sta de un jamas", ",", "/n     "], ["la prefiero comparti", "da/n     "], ["antes de vaciar mi vi", "da/n     "], ["no es perfecta mas se ace", "rca a lo que yo", "/n     "], ["simplemente so\u00f1", "e."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "foSgc_DAJJQ", "delay": 0}]}
+{
+    "cancion": "el-breve-espacio",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "G",
+                    "C",
+                    "G",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "D",
+                    "G",
+                    "C",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "Am",
+                    "Am",
+                    "D",
+                    "Bm",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "Am",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "G",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "To",
+            "davía quedan res",
+            "tos de hume",
+            "dad /n"
+        ],
+        [
+            "Sus ",
+            "olores llena",
+            "n ya mi s",
+            "oled",
+            "ad /n"
+        ],
+        [
+            "En ",
+            "la cama su s",
+            "ilueta se ",
+            "dibuja cual p",
+            "romesa /n"
+        ],
+        [
+            "De llenar ",
+            "el breve espacio ",
+            "en que no ",
+            "está ",
+            "/n"
+        ],
+        [
+            "Todavía ",
+            "yo no sé si vo",
+            "lverá ",
+            "/n"
+        ],
+        [
+            "Nadie sa",
+            "be al día siguiente ",
+            "lo que har",
+            "á ",
+            "/n"
+        ],
+        [
+            "Rompe todos ",
+            "mis esquemas, ",
+            "no confie",
+            "sa ni una pena /n"
+        ],
+        [
+            "No me ",
+            "pide  nada ",
+            "cambio  de ",
+            "lo que da ",
+            "/n"
+        ],
+        [
+            "Suele ser ",
+            "violenta t",
+            "ierna, no ",
+            "habla  de uniones ete",
+            "rnas \n\nMás e",
+            "ntrega cual si h",
+            "ubiera solo un ",
+            "día para amar ",
+            "/n"
+        ],
+        [
+            "No comparte una r",
+            "eunión, ",
+            "más le gusta la c",
+            "anción \n\nQue c",
+            "omprometa su p",
+            "ensar ",
+            "/n"
+        ],
+        [
+            "T",
+            "odavía no pre",
+            "gunté de que dará ",
+            "/n"
+        ],
+        [
+            "Tem ",
+            "mucho la respue",
+            "sta de un jamá",
+            "s ",
+            "/n"
+        ],
+        [
+            "La prefiero ",
+            "compartid ",
+            "antes que ",
+            "vaciar mi v",
+            "ida \n\nNo es ",
+            "perfecta, ",
+            "más es cerc ",
+            "lo que ",
+            "yo simpl",
+            "emente so",
+            "ñé ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La ",
+            "prefiero ",
+            "comparti ",
+            "antes que va",
+            "ciar mi vid",
+            "a \n\nNo es ",
+            "perfecta,  más ",
+            "es cerca ",
+            "lo que yo ",
+            "simpl",
+            "emente s",
+            "oñ",
+            "é ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La ",
+            "prefiero compartida antes que v",
+            "aciar mi vida "
+        ]
+    ],
+    "bpm": 112,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "foSgc_DAJJQ",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -1,1 +1,398 @@
-{"cancion": "Penelope", "banda": "joan-manuel-serrat", "escala": "Fm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Fm", "Bbm", "D#7(4)", "D#7", "Ab", "Db", "C7(4)", "C7", "Fm", "Bbm", "D#7(4)", "D#7", "Ab", "Db", "C7(4)", "C7", "F", "C", "Dm", "A7(4)", "A7", "Bb", "C7(4)", "C7", "F", "C7", "F", "C", "Dm", "A7(4)", "A7", "Bb", "C", "D", "D/E", "D", "G", "Em", "B7(4)", "B7", "Am", "D7(4)", "D7", "G", "C", "Am", "B7", "Em", "E7", "Am", "D7(4)", "D7", "G", "C", "Am", "B7", "Em", "E7", "Fm", "Bbm", "D#7(4)", "D#7", "Ab", "Db", "C7(4)", "C7", "Fm", "Bbm", "D#7(4)", "D#7", "Ab", "Db", "C7(4)", "C7", "F", "C", "Dm", "A7(4)", "A7", "Bb", "C7(4)", "C7", "F", "C7", "F", "C", "Dm", "A7(4)", "A7", "Bb", "C", "D", "D/E", "D", "G", "Em", "B7(4)", "B7", "Am", "D7(4)", "D7", "G", "C", "Am", "B7", "Em", "E7", "Am", "D7(4)", "D7", "G", "C", "Am", "B7", "Em", "E7", "Am", "D7(4)", "D7", "G", "C", "Am", "B7", "Em"]}], "orden_partes": [0]}, "letras": [["\u00e9lope con su bolso de p", "iel marr\u00f3n", "", "/nY sus zapatos "], ["de tac\u00f3n", "/nY su vestido de do"], ["min_____g", "o/nPen"], ["lope se sienta en un banc", "o en el and\u00e9n", "", "/nY espera que llegue el p"], ["rimer tren", "/nMeneando el aba"], ["ni_______", "co/nD"], ["icen en el pue", "blo que un cami", "nante par\u00f3", "", "/n"], ["Su reloj ", "        ", "una tarde de prima", "vera", "/n"], ["Adi\u00f3s amor m", "\u00edo no me ll", "ores volver", "\u00e9", "/n"], ["Antes que  ", " de los sauces caigan", " las hojas", "", "/n"], ["Piensa en m\u00ed, v", "olver\u00e9, ", "es por t\u00ed", "/n"], ["Pobre infeliz ", "        ", "se par\u00f3 tu reloj", " infantil", "/nUna tarde plo"], ["miza de Abril", "/nCuando se fue tu a"], ["mante", "/nSe "], ["marchit\u00f3", "        ", " en tu huerto hasta la \u00fa", "ltima flor", "/nNo hay un sauz en la "], ["calle mayor ", " para Pen", "lope", "/nPe"], ["n\u00e9lope triste es a fuerza", " de esperar", "", "/nSus ojos parec"], ["en brillar", "/nSi un tren silba a lo "], ["le______j", "os/nPen"], ["\u00e9lope uno tras otro los ", "ve pasar", "", "/nMira sus caras, les "], ["oye hablar", "/nPara ella son mu"], ["\u00f1e______", "cos/nD"], ["icen en el pue", "blo que el cami", "nante volvi", "", "/n"], ["La encontr\u00f3", "        ", " en su banco de pin", "o verde", "/n"], ["La llam\u00f3 Pen", "\u00e9lope mi a", "mante fiel mi p", "az", "/n"], ["Deja ya  ", " de tejer sue\u00f1os e", "n tu mente", "", "/n"], ["M\u00edrame, ", "soy tu amor, r", "egres\u00e9", "/n"], ["Le sonri\u00f3", "        ", " con los ojos llenit", "os de ayer", "/nNo era as\u00ed su"], [" cara ni su piel", "/nT\u00fa no eres quien yo e"], ["spero", "/n"], ["Se qued\u00f3", "        ", " con su bolso de piel", " marr\u00f3n", "/nY sus zapatit"], ["os de tac\u00f3n", "/nSentada en la "], ["estaci\u00f3n", "/n"], ["Pen\u00e9lope", "", "", "", "", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "KLLXSejOmsc", "delay": 0}]}
+{
+    "cancion": "Penelope",
+    "banda": "joan-manuel-serrat",
+    "escala": "Fm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "Fm",
+                    "Db",
+                    "F",
+                    "F",
+                    "Bb",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "Db",
+                    "F",
+                    "C7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Db",
+                    "Fm",
+                    "Fm",
+                    "D#7",
+                    "D#7",
+                    "D#7",
+                    "Db",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "B7(4)",
+                    "B7(4)"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "D7",
+                    "C7",
+                    "C",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "D7",
+                    "D7",
+                    "C",
+                    "C",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "Fm",
+                    "D#7",
+                    "D#7",
+                    "Db",
+                    "Db",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Db",
+                    "Fm",
+                    "Fm",
+                    "D#7",
+                    "D#7",
+                    "B7",
+                    "Db",
+                    "Db"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C7",
+                    "C",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Fm",
+                    "Fm",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "Am",
+                    "Fm",
+                    "D7",
+                    "C",
+                    "C",
+                    "B7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta  ",
+            "es una canci",
+            "ón en españ",
+            "ol de rock argentino. /n"
+        ],
+        [
+            "En el \n\nO\nP ",
+            "se sie",
+            "nta en un banco en el a",
+            "ndén espera ",
+            "que llegue el prime ",
+            "tren menean",
+            "do el aba",
+            "nico. /n"
+        ],
+        [
+            "Dicen en ",
+            "el pueblo que ",
+            "un caminant ",
+            "pag",
+            "ó su re",
+            "loj una tarde ",
+            "de pri",
+            "mavera/n"
+        ],
+        [
+            "Adiós am",
+            "or mío, no ",
+            "me llores vo",
+            "lveré/n"
+        ],
+        [
+            "Antes que ",
+            "de los autos c",
+            "aigan las ",
+            "hojas,  ",
+            "piensa en mí, ",
+            "volve",
+            "ré por ",
+            "ti. /n"
+        ],
+        [
+            "Tu pobre infe",
+            "liz separó tu r",
+            "eloj infanti",
+            "l, una tarde p",
+            "lomiza de abr",
+            "il cuando se fue ",
+            "tu ama",
+            "nte. \n\nSe ",
+            "marchito ",
+            "en tu huerto hast ",
+            "la última flor, ",
+            "no hay un sauce en ",
+            "la calle mayor p",
+            "ara /n"
+        ],
+        [
+            "Penél",
+            "ope. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pen",
+            "élope, tristes ",
+            "fuerza de esperar, ",
+            "sus ojos par",
+            "ecen brillar ",
+            "sin un tren, ",
+            "sin palo le",
+            "jos. /n"
+        ],
+        [
+            "Penélope ",
+            "uno tras o",
+            "tro los ve pasa",
+            "r, mira sus car",
+            "as les odia hablar ",
+            "para ellas ",
+            "son muñe",
+            "cos. /n"
+        ],
+        [
+            "Dicen en el p",
+            "ueblo que un c",
+            "aminante vo",
+            "lvió la ",
+            "encontró ",
+            "en su banco de ",
+            "vino verde. ",
+            "/n"
+        ],
+        [
+            "Allamó \n\nPen",
+            "élope mi aman",
+            "te fiel, mi p",
+            "ar, d",
+            "eja ya de ",
+            "tejer sueños en ",
+            "tu ment",
+            "e, m",
+            "írame soy ",
+            "tu amor. \n\nPen",
+            "élope se ",
+            "le s",
+            "onrió con ",
+            "los ojos llen",
+            "itos de ayer, ",
+            "no era así su car ",
+            "ni su piel, ",
+            "tú no eres ",
+            "quien yo espe",
+            "ro. \n\nHoy ",
+            "se qued",
+            "ó con su bolso ",
+            "de piel marrón ",
+            "sus zapati",
+            "tos de targón ",
+            "sentada  en la ",
+            "estació",
+            "n. /n"
+        ],
+        [
+            "Penélope ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "KLLXSejOmsc",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -2,81 +2,244 @@
     "cancion": "entrega-el-marron",
     "banda": "los-autenticos-decadentes",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
+                    "A",
+                    "A",
                     "E",
                     "E",
                     "A",
                     "A",
                     "D",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
                     "D",
-                    "A"
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "E",
-                    "A",
-                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "A",
+                    "A",
+                    "A",
+                    "D",
                     "E",
                     "D",
-                    "A"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "n en la TV y las revistas,",
-            "/nlo ves pa' todos los g"
+            "Uno, \n\nDue, \n\nTres, \n\nC",
+            "uatr",
+            "o, \n\nChi",
+            "cholina, \n\nP",
+            "ortolina, /n"
         ],
         [
-            "ustos y se te nubla la vist",
-            "a,/nlos inf"
+            "Fantutt",
+            "i. \n\nEs la ",
+            "máxima presión en la t",
+            "ele en las revistas, lo hacemos ",
+            "todo  lo justo se ten",
+            "ula la vista. \n\nLos impuestos a",
+            "umentaron, anario por ",
+            "este  asunto, se ha salido el viole",
+            "nte negro para no morir ",
+            "un susto. /n"
         ],
         [
-            "artos aumentaron año a año por este asunt",
-            "o/nyo s"
+            "Entrega el m",
+            "arrón, entr",
+            "ega el marrón",
+            ", entrega el marr",
+            "ón, entregado ",
+            "una vez. /n"
         ],
         [
-            "algo con lente' neg",
-            "ro para no morir",
-            " de un susto",
+            "Entrega el marró",
+            "n, entrega el ma",
+            "rrón, en",
+            "treg",
+            "ado una v",
+            "ez. /n"
+        ],
+        [
+            "Yo quisiera saber hast",
+            "a cuándo, hasta cuándo con ",
+            "esta nueva moda no seg",
+            "uirán torturando. \n\nMi cab",
+            "eza no da más, no me si",
+            "gan provocando, ya que tien",
+            "en todo eso no me alcanza ",
+            "con mirarlo",
+            ". \n\nEntrega el ",
+            "marrón,  e",
+            "ntrega el marr",
+            "ón, entrega el m",
+            "arrón, entregad ",
+            "una vez. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "  Entrega el marron",
-            ", entrega el marron, en",
-            "trega el marron",
-            "/nentreg"
+            "Entr",
+            "ega el marró",
+            "n, entrega el m",
+            "arrón, e",
+            "ntreg",
+            "ado una v",
+            "ez. \n\nEntrega el ",
+            "marrón, en",
+            "trega el marró",
+            "n, entr",
+            "egado ",
+            "una vez. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "alo de una vez",
-            ""
+            "Entrega el marrón, entrega el marrón, e",
+            "nt",
+            "re",
+            "ga",
+            "",
+            "una vez. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "mb6H8k4IOF0",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

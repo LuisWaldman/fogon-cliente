@@ -5,6 +5,7 @@ import { watch } from 'vue'
 import { ResumenSecuencia } from '../../modelo/cancion/ResumenSecuencia'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { useAppStore } from '../../stores/appStore'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   compas: number
@@ -19,10 +20,24 @@ function Actualizar(cancion: Cancion) {
   resumenSecuencia.value = ResumenSecuencia.GetResumen(cancion)
 }
 
+const ctrlSecuencia = ref<HTMLElement | null>(null) // Ref to the div
+
+const pantalla = new Pantalla()
+const configPantalla = pantalla.getConfiguracionPantalla()
+
+function moverScroll(posX: number) {
+  ctrlSecuencia.value?.scrollTo({ top: posX, behavior: 'smooth' })
+}
+
 onMounted(() => {
   Actualizar(props.cancion)
 })
-
+//  :style="EstiloSecuencia()" :ref="ctrlSecuencia">
+function EstiloSecuencia() {
+  return {
+    'height': configPantalla.anchoParte + 'px',
+  }
+}
 watch(
   () => props.cancion,
   (newCancion) => {
@@ -34,6 +49,16 @@ watch(
   () => props.compas,
   (newCompas) => {
     resumenSecuencia.value?.ActualizarCompas(newCompas)
+    
+    if (configPantalla.AutoScroll) {
+      //const total = resumenSecuencia.value.resumenPartes.length
+      const enParte = resumenSecuencia.value.parte 
+      // Calcular la posición de scroll basada en la parte actual
+      const positionY = enParte * configPantalla.tamanioAcordeParte * 2
+      moverScroll(positionY)
+    }
+
+
   },
 )
 
@@ -59,7 +84,7 @@ helper.latino = appStore.perfil.CifradoLatino
     .. No cargada ..
   </div>
 
-  <div style="display: flex; flex-wrap: wrap">
+  <div class="contSecuencia" :style="EstiloSecuencia()" ref="ctrlSecuencia">
     <div
       v-for="(parte, index) in resumenSecuencia.resumenPartes"
       :key="index"
@@ -67,22 +92,16 @@ helper.latino = appStore.perfil.CifradoLatino
     >
       <div>
         <span
-          style="color: #a9a8f6; font-size: small"
+          class="nombreParte"
           :class="{
             compas_actual: resumenSecuencia.parte === index,
           }"
           >{{ cancion.acordes.partes[parte.parteId].nombre }}</span
         >
-
-        <div class="repeticion" v-if="parte.cantPartes > 1">
-          <span v-if="resumenSecuencia.parte === index"
-            >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /
-            {{ parte.cantPartes }}</span
-          ><span v-else>&nbsp; x {{ parte.cantPartes }}</span>
-        </div>
       </div>
       <div class="ordendiv">
-        <span
+        
+        <div
           class="acordeSecuencia"
           v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte.parteId]
             .acordes"
@@ -94,7 +113,16 @@ helper.latino = appStore.perfil.CifradoLatino
           }"
         >
           {{ helper.GetAcorde(acorde) }}
-        </span>
+        </div>
+
+        
+
+        <div class="repeticion" v-if="parte.cantPartes > 1">
+          <span v-if="resumenSecuencia.parte === index"
+            >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /
+            {{ parte.cantPartes }}</span
+          ><span v-else>&nbsp; x {{ parte.cantPartes }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -107,40 +135,38 @@ helper.latino = appStore.perfil.CifradoLatino
 .acordeSecuencia {
   color: #a9a8f6;
   font-size: var(--tamanio-parte);
-  margin-right: 5px;
+  margin-right: 10px;
+}
+
+
+
+.contSecuencia {
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
+
+  
+  
 }
 .secuencia {
   font-size: var(--tamanio-parte);
   flex-wrap: wrap;
-  border: 1px solid;
-  margin: 1px;
-  padding: 5px;
-  border-radius: 5px;
+  
 }
+
 .acordeSeleccionado {
-  background-color: #a9a8f6;
-  color: black;
+  color: rgb(194, 6, 6) !important;
+  font-weight: bold;
+  border: 1px solid rgb(194, 6, 6);
+  background-color: white;
 }
 
 .ordendiv {
-  margin: 1px;
-  padding: 5px;
-  border-radius: 5px;
-  display: inline-block;
   color: #a9a8f6;
   margin-right: 10px;
-}
-
-.acordediv {
-  font-size: var(--tamanio-acorde-parte);
-  margin: 1px;
-  padding: 5px;
-  border: 1px solid;
-  border-radius: 5px;
-  display: inline-block;
-  color: #a9a8f6;
-
-  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tituloSecuencia {
@@ -149,43 +175,16 @@ helper.latino = appStore.perfil.CifradoLatino
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-  .ordendiv {
-    margin: 2px;
-    width: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .acordediv {
-    margin: 2px;
-    padding: 2px;
-    width: 40px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-}
+
 .partediv {
   display: flex;
   flex-wrap: wrap;
-}
-
-.compas_actual {
-  background-color: red;
-  color: white;
 }
 
 .domi {
   color: #497aff;
 }
 
-/*
-  Tonica
-  color: #a9a8f6;
-  Semi Dominante:
-  color: blue;
-  Dominante
-  background-color: red;
-*/
 .repeticion {
   display: inline-block;
   margin: 4px;
@@ -199,5 +198,9 @@ helper.latino = appStore.perfil.CifradoLatino
 .tituloSecuencia {
   color: #a9a8f6;
   margin-top: 10px;
+}
+.nombreParte {
+  font-size: large;
+  font-weight: bold;
 }
 </style>

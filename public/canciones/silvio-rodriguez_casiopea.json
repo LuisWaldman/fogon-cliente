@@ -1,1 +1,505 @@
-{"cancion": "casiopea", "banda": "silvio-rodriguez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "A7/G", "Dm/G"]}, {"nombre": "parte2", "acordes": ["G", "G", "A7/G", "Dm/G", "G", "Dm/G", "G"]}, {"nombre": "parte3", "acordes": ["Dm/G", "D/F#", "Dm/G", "G", "Dm/G", "A7/G", "Dm/G", "D/F#"]}], "orden_partes": [0, 1, 2]}, "letras": [["   Como una gota fui d", "e la marea...", " la marea... la", " marea/n      "], ["La playa me hizo grano de", " la arena... de l", "a arena... de la ", "arena/nb)      "], ["Fui punto en multitud por dond", "e fui/n      "], ["Nadie me detect\u00f3 y as\u00ed a", "prend\u00ed./nc)    "], ["  Cumpl\u00ed celosamente nues", "tro plan:/n      P"], ["or un mill\u00f3n de a\u00f1o", "s esperar... e", "sperar... e", "sperar/n"], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "2F5Tl7oNdcY", "delay": 0}]}
+{
+    "cancion": "casiopea",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "A7/G",
+                    "A7/G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A7/G",
+                    "A7/G",
+                    "A7/G",
+                    "A7/G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "A7/G",
+                    "A7/G",
+                    "A7/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "Dm/G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A7/G",
+                    "A7/G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A7/G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Com",
+            "o una gota ",
+            "fui de la m",
+            "area, ",
+            "la ",
+            "marea,  ",
+            "la ",
+            "marea. /n"
+        ],
+        [
+            "La ",
+            "playa me hi",
+            "zo grano de ",
+            "la arena, ",
+            "",
+            "de la arena, ",
+            "",
+            "de la arena ",
+            "/n"
+        ],
+        [
+            "Fui punto en m",
+            "ultitud por d",
+            "onde fui, ",
+            "",
+            "nadie me ",
+            "detectó así ",
+            "aprend",
+            "í. \n\nC",
+            "uando cr",
+            "eí comada ",
+            "la tar",
+            "eja, ",
+            "la tare",
+            "ja, ",
+            "la tar",
+            "eja. /n"
+        ],
+        [
+            "Volví ",
+            "mi corazón ",
+            "casi ope",
+            "jar, ",
+            "casi op",
+            "ejar, ",
+            "casi o",
+            "pejar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cu",
+            "mplí celosa",
+            "mente nuestro placer ",
+            "/n"
+        ],
+        [
+            "Por ",
+            "un millón ",
+            "de años es",
+            "perar, ",
+            "",
+            "esperar, ",
+            "",
+            "esperar. ",
+            "/n"
+        ],
+        [
+            "Hoy llevo el dob",
+            "le dando co",
+            "ordenadas, ",
+            "",
+            "pero nadi ",
+            "contesta mi ",
+            "llamada",
+            ". ¿/n"
+        ],
+        [
+            "Qué puede ha",
+            "ber pasado ",
+            "mi se",
+            "ñal? ",
+            "¿\nSerá que ",
+            "me he quedad ",
+            "sin jugar? ",
+            "/n"
+        ],
+        [
+            "Sin jug",
+            "ar, ",
+            "sin jug",
+            "ar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hoy ",
+            "sobrevivo ape",
+            "nas mi sue",
+            "rte, ",
+            "lej",
+            "ano de mi est",
+            "rella, de mi g",
+            "ente. /n"
+        ],
+        [
+            "El t",
+            "rance me ha mos",
+            "trado otra le",
+            "cción, ",
+            "",
+            "el mundo propio s",
+            "iempre es el m",
+            "ejor. /n"
+        ],
+        [
+            "Me ",
+            "voy debi",
+            "litando le",
+            "ntamente, ",
+            "",
+            "lentame",
+            "nte, ",
+            "lentame",
+            "nte. /n"
+        ],
+        [
+            "Quizá ya no ",
+            "sea yo cuando ",
+            "me encuentre ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me ",
+            "voy debi",
+            "litan",
+            "do lentamente, lentamente. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me ",
+            "voy debilitando len",
+            "tame",
+            "nte, lentamente. "
+        ]
+    ],
+    "bpm": 143,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "2F5Tl7oNdcY",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

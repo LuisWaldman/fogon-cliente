@@ -1,1 +1,356 @@
-{"cancion": "depredador", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "D7", "G", "F", "G7"]}, {"nombre": "parte2", "acordes": ["C", "D", "G", "F", "D7", "G", "C", "Dm"]}, {"nombre": "parte3", "acordes": ["G", "F", "Dm", "C", "G/", "B", "Am", "F"]}, {"nombre": "parte4", "acordes": ["C", "F", "Dm", "C", "G/", "B", "Am", "Am"]}], "orden_partes": [0, 1, 2, 3]}, "letras": [["Cayo sobre su presa y la inmo", "vilizo como una", " amarra/nl"], ["a peque\u00f1a era un cu", "erpo de temblor deba", "jo de sus garras/n"], ["tan palpita", "nte/nque s"], ["inti\u00f3 la luju", "ria de la se", "d, magnifi", "ca y queman", "te.", "/nB)Y paso"], [" el tie", "mpo, el tiempo lar", "go/nentre el"], [" colm", "illo que depreda y la p", "iel/nde su"], [" v\u00edctima en le", "targo/ny pa"], ["so el tiem", "po, el tiempo lar", "go/nentr"], ["e el ", "colmillo que depreda y ", "la piel/nde su v\u00edctima en le"], ["targo."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "lUHnzX-wMoc", "delay": 0}]}
+{
+    "cancion": "depredador",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "D7",
+                    "C",
+                    "F",
+                    "D7",
+                    "D7",
+                    "B",
+                    "B",
+                    "G7",
+                    "C",
+                    "F",
+                    "F",
+                    "C#",
+                    "C#",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D7 F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "B",
+                    "B",
+                    "F",
+                    "D7",
+                    "D7",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "B",
+                    "D7",
+                    "D7",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "B",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "B",
+                    "B",
+                    "Am",
+                    "F",
+                    "F",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "C",
+                    "G7",
+                    "F",
+                    "D7",
+                    "D7",
+                    "F",
+                    "D7",
+                    "D7",
+                    "C",
+                    "G/",
+                    "D7",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "F",
+                    "D7",
+                    "D7",
+                    "C",
+                    "G/",
+                    "D7",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
+                    "D7",
+                    "D7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D7",
+                    "D7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G7",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G/",
+                    "D7",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "D7",
+                    "D7",
+                    "C",
+                    "G/",
+                    "D7",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta  es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Cayó sobre ",
+            "su presa la mov",
+            "ilizó como ",
+            "una marra. /n"
+        ],
+        [
+            "La pequeña ",
+            "era un cuerpo de tem",
+            "blor debajo de sus g",
+            "arras, ",
+            "tan palpita",
+            "nte que ",
+            "sintió ",
+            "la lucruria de la ",
+            "sed magnífica que",
+            "mante. ",
+            "pasó ",
+            "el tiempo, ",
+            "el tiempo largo",
+            ", ",
+            "entre el colmillo que ",
+            "depreda la pie ",
+            "de su víctima en ",
+            "letargo.  ",
+            "pasó el ",
+            "tiempo, ",
+            "el tiempo la",
+            "rgo, ",
+            "entre el colmillo que ",
+            "depreda  la piel ",
+            "de su víctima en let",
+            "argo. /n"
+        ],
+        [
+            "La tarde s",
+            "imulaba no rec",
+            "onocer la ",
+            "vieja tram",
+            "a, su espe",
+            "jo era un hombre una muj",
+            "er en fuego una ",
+            "cama. /n"
+        ],
+        [
+            "La tarde p",
+            "ura",
+            ", con su r",
+            "ostro de prados del c",
+            "andor el alm ",
+            "de locura, ",
+            "pas",
+            "ó la tarde ",
+            "la ta",
+            "rde larga, ",
+            "entre el col",
+            "millo que depreda la p",
+            "iel de la vícti",
+            "ma que aguarda. /n"
+        ],
+        [
+            "Pas",
+            "ó la tarde, ",
+            "la ta",
+            "rde larga, ",
+            "entre el col",
+            "millo que depreda la p",
+            "iel de la víctim ",
+            "que aguarda. /n"
+        ],
+        [
+            "La ",
+            "viva  rosa de la carne se ",
+            "abrazó ",
+            "su destino ",
+            "",
+            "corrieron los jugos del a",
+            "mor como ",
+            "perfe",
+            "cto vino, vino de ",
+            "amantes.  ",
+            "/n"
+        ],
+        [
+            "Fertil sabia para dobl",
+            "ar la sed, ",
+            "mientras  más abun",
+            "dante pa",
+            "só la tarde. /n"
+        ],
+        [
+            "La ",
+            "sin dolor",
+            "es, entre el ",
+            "colmillo  que depreda la ",
+            "piel  de la víc",
+            "tima en amores. /n"
+        ],
+        [
+            "Pa",
+            "só la tarde, ",
+            "la ",
+            "sin dolores, ",
+            "entre el co",
+            "lmillo que depreda la ",
+            "piel  de la víctima en ",
+            "amores. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "lUHnzX-wMoc",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
+}

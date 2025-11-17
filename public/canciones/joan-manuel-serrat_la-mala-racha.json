@@ -1,1 +1,465 @@
-{"cancion": "La-mala-racha", "banda": "joan-manuel-serrat", "escala": "B", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["B", "A", "B", "E"]}, {"nombre": "parte2", "acordes": ["A", "B"]}], "orden_partes": [0, 1, 0, 1, 1, 1]}, "letras": [[], ["Mientras dure la mala rach", "a/nla mala rach"], ["a/nse me cae t"], ["odo/nde los bols"], ["illos/ny la memor"], ["ia/n"], ["Mientras dura la mala rach", "a/nla mala rach"], ["a/npierdo las ll"], ["aves,/nlos docu"], ["mentos,/nel tren y el r"], ["umbo/ntal como si"], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "LawO_tOirz4", "delay": 0}]}
+{
+    "cancion": "La-mala-racha",
+    "banda": "joan-manuel-serrat",
+    "escala": "B",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B",
+                    "A",
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "E",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mi",
+            "entras dura ",
+            "la ",
+            "mala rach",
+            "a, la mala racha. ",
+            "/n"
+        ],
+        [
+            "Se me cae tod",
+            "o de los bolsillo ",
+            "la mem",
+            "oria, ",
+            "mientras d",
+            "ura la ",
+            "mala r",
+            "acha. /n"
+        ],
+        [
+            "Pierdo las ",
+            "llave",
+            "s, los doc",
+            "umento",
+            "s, el tren el r",
+            "umbo, tal como si ",
+            "tuviese al mu",
+            "ndo en contra de ",
+            "mí, ",
+            "tal como ",
+            "si t",
+            "uviese ",
+            "al mundo en ",
+            "contra de ",
+            "mí. /n"
+        ],
+        [
+            "Mient",
+            "ras dura la mala r",
+            "acha, la mala r",
+            "acha. \n\nMi",
+            "entras d",
+            "ura, m",
+            "ientras d",
+            "ura, ",
+            "",
+            "mientras dura la mala ",
+            "racha,  la mala ",
+            "racha.  \n\nMi",
+            "entr",
+            "dura, mi",
+            "entra",
+            "dura, mientras dura",
+            ". \n\nTropie",
+            "zo con mi pro",
+            "pio pie, me ",
+            "llueve sal, ",
+            "si te",
+            "ngo sed. ",
+            "/n"
+        ],
+        [
+            "Tropie",
+            "zo con mi prop",
+            "io pie, me llu",
+            "eve sal, si t",
+            "engo sed. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mien",
+            "tras dur",
+            "a la ",
+            "mala racha ",
+            "la mala racha",
+            ". /n"
+        ],
+        [
+            "Todo lo mezc",
+            "lo, todo lo enre",
+            "do, todo lo ro",
+            "mpo, ",
+            "mientras du",
+            "ra la ",
+            "mala rac",
+            "ha. /n"
+        ],
+        [
+            "Olvido n",
+            "ombres",
+            "confundo ",
+            "cara",
+            "s, tengo du",
+            "das si eso ser",
+            "á tan solo p",
+            "ura casual",
+            "idad, si ",
+            "eso se",
+            "rá ",
+            "tan sol",
+            "o pur ",
+            "casuali",
+            "dad. /n"
+        ],
+        [
+            "Mientr",
+            "as dura la mala ra",
+            "cha, la mala ",
+            "r",
+            "a",
+            "c",
+            "h",
+            "a",
+            ".",
+            "",
+            "/n"
+        ],
+        [
+            "M",
+            "ientra",
+            "dura, ",
+            "mientr",
+            "as dura",
+            ", ",
+            "mientras dur",
+            "a. \n\nBien, mal",
+            "dito, ¿quién",
+            "? ¿\nQuién me ",
+            "maldijo? ",
+            "/n"
+        ],
+        [
+            "Alguien que ",
+            "no me quiere ",
+            "bien,  maldi",
+            "to, ¿quién me m",
+            "aldijo? \n\nAlgu",
+            "ien que no me quie",
+            "re bien, maldi",
+            "to, ¿quién ",
+            "me maldijo? ",
+            "/n"
+        ],
+        [
+            "Mientras dura la ",
+            "mala rac",
+            "ha, d",
+            "am",
+            "cobij",
+            "o. \n\nM",
+            "ientras dura la ",
+            "mala rac",
+            "ha, ",
+            "",
+            "dame cobi",
+            "jo. \n\nM",
+            "ientras dura ",
+            "la mala racha, la ",
+            "mala racha",
+            ", ",
+            "dame cob",
+            "ijo. ",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LawO_tOirz4",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

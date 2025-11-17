@@ -1,1 +1,225 @@
-{"cancion": "Pena-Mora", "banda": "joan-manuel-serrat", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "E", "G", "F", "E"]}, {"nombre": "parte2", "acordes": ["Am", "Dm", "F", "E", "G", "C", "G", "F"]}, {"nombre": "parte3", "acordes": ["E", "Am", "G", "F", "E", "F", "E", "Am"]}, {"nombre": "parte4", "acordes": ["E", "G", "F", "E", "F"]}, {"nombre": "parte5", "acordes": ["E", "Am", "Dm", "F", "E", "Am", "E", "Am"]}], "orden_partes": [0, 1, 2, 3, 3, 3, 4]}, "letras": [["campos de verdes chumb", "eras/nSuenan las cam"], ["panas d", "e la madrug", "/nY salta a los "], ["montes la luna lun", "era/nY a mi vera, v"], ["era te siento lleg", "ar./nAunque s\u00e9 mi"], [" vida que lo estoy so", "\u00f1ando,/nQue est\u00e1s a mil"], [" leguas y ", "yo en la legi", "\u00f3n,/nParece tal"], ["mente que te estoy mir", "ando,/nRosa dolo"], ["rosa de mi coraz", "n.", "", "/nPena mora, pena "], ["mora/nEn mi sien a todas "], ["horas./nQue me quema a fuego "], ["lento/nDesde l"], ["a noche a la aur", "ora.", "", "/nCon un cuchillo yo me"], [" abrir\u00eda/nPara que v"], ["ieras mi coraz", "\u00f3n", "", "/nY qu\u00e9 penita que"], [" te dar\u00eda/nAl verlo "], ["negro como el carb", "\u00f3n.", "", "/nPena mora, pena "], ["mora/nQue me nubla la ra"], ["z\u00f3n/nY es lo mismo que un l"], ["e\u00f3n/nQue por dentro "], ["me devora", ".", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "5dIiDXwMcNk", "delay": 0}]}
+{
+    "cancion": "Pena-Mora",
+    "banda": "joan-manuel-serrat",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "A#",
+                    "G",
+                    "G",
+                    "F",
+                    "Am",
+                    "E",
+                    "G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "E",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "F",
+                    "Em",
+                    "G",
+                    "F",
+                    "F",
+                    "E",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "Em",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "F",
+                    "E",
+                    "Em",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cu",
+            "ando por los ca",
+            "mpos de verde chu",
+            "peras \n\nSuenan las ca",
+            "mpanas de la ma",
+            "druga saltan ",
+            "los montes la lun",
+            "a lunera mi ",
+            "vera  vera te sie",
+            "nto llegar aun",
+            "que sé mi vida que no ",
+            "estoy soñando \n\nQue ",
+            "estás mi nego, ",
+            "así yo en la legión ",
+            "parece talmente ",
+            "que te estoy mirando /n"
+        ],
+        [
+            "Rosa dolor",
+            "osa de mi cora",
+            "zón ",
+            "/n"
+        ],
+        [
+            "Penamora, penamora /n"
+        ],
+        [
+            "Que en maretillo de t",
+            "ormento en mi sien ",
+            "todas horas ",
+            "/n"
+        ],
+        [
+            "Penamora, penamora ",
+            "que me quema fu",
+            "ego lento \n\nDesde la ",
+            "noche  la aurora /n"
+        ],
+        [
+            "Con un cuch",
+            "illo yo me abriría /n"
+        ],
+        [
+            "Para que viera ",
+            "mi corazón ",
+            "que p",
+            "enita que te dar",
+            "ía \n\nArbelo negr ",
+            "como el carbó",
+            "n /n"
+        ],
+        [
+            "Penamora ",
+            "penamora \n\nQue ",
+            "me nubla la r",
+            "azón ",
+            "es lo mismo que ",
+            "un leó",
+            "n \n\nAy, ",
+            "",
+            "que ",
+            "por dentro me ",
+            "es ",
+            "de b",
+            "uena ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "5dIiDXwMcNk",
+            "delay": 5000.0
+        }
+    ],
+    "calidad": 1
+}

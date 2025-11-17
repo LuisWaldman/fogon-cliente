@@ -8,19 +8,37 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "A",
+                    "E",
                     "E",
                     "A",
-                    "E"
+                    "A",
+                    "A",
+                    "E",
+                    "B7",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B7",
                     "A",
-                    "B7",
+                    "A",
                     "E",
                     "B7"
                 ]
@@ -28,106 +46,198 @@
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B7",
                     "A",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "E",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "A",
-                    "E7"
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
         [
-            "done,/nLook what you've "
-        ],
-        [
-            "done baby,/nnow look what you've "
-        ],
-        [
-            "done/nYou left me "
-        ],
-        [
-            "here,/nthe lonely "
-        ],
-        [
-            "one/nAnd all I can "
-        ],
-        [
-            "say,/nis look what you've "
-        ],
-        [
-            "done ",
-            "/nA broken "
-        ],
-        [
-            "heart,/nBecause of "
-        ],
-        [
-            "you baby,/ndying all the "
-        ],
-        [
-            "time/nI once had a "
-        ],
-        [
-            "dream,/nbut now I've "
-        ],
-        [
-            "none/nYour taking your "
-        ],
-        [
-            "love,/nand see what it "
-        ],
-        [
-            "done ",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
         [
-            "last night,/nWith your "
+            "Now look what y",
+            "ou'",
+            "ve done. \n\nNow loo ",
+            "what you've done. \n\nLook wh",
+            "at you've done, baby. \n\nLook ",
+            "what  you've done. \n\nYou l",
+            "eft me here, the ",
+            "lonely  one. \n\nAnd ",
+            "all can say is ",
+            "do what you've done. ",
+            "",
+            "broken heart, ",
+            "worried mind. /n"
         ],
         [
-            "new turf,/nyou paint the "
+            "Because you've, baby, do",
+            "ne all the time. ",
+            "once had dream, but ",
+            "now \n\nI've learned. /n"
         ],
         [
-            "town/nThat is O"
+            "You've  taken your love and ",
+            "seen what you've done. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "broken heart, worried mind. \n\nBecause you've, baby, done all ",
+            "the t",
+            "i",
+            "m",
+            "",
+            "",
+            "saw you last night, ",
+            "out moving round. /n"
         ],
         [
-            "K,/nyou're having your fun"
+            "Well, \n\nJohn, you told me ",
+            "you paid the time. /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "It is okay, y",
+            "ou're having your fun. /n"
+        ],
+        [
+            "Because  someday, ",
+            "before you're done. ",
+            "/n"
+        ],
+        [
+            "At night the cries, ",
+            "the shadow falls. /n"
+        ],
+        [
+            "Gloomy memories. /n"
+        ],
+        [
+            "And recall, ",
+            "your love was my life. /n"
+        ],
+        [
+            "As warm as the sun. /n"
+        ],
+        [
+            "But now it is gone. /n"
+        ],
+        [
+            "And see what you've done. ",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "oTT32cc0W9M",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

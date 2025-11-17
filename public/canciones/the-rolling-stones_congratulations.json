@@ -8,123 +8,255 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
-                    "G/F#",
-                    "Em"
+                    "Em",
+                    "G",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G/F#"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C"
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "C",
+                    "C",
                     "D",
-                    "G",
-                    "D"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D",
                     "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G/F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
                     "C",
                     "D",
                     "G",
-                    "Em",
                     "G",
-                    "D"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "Congrat",
-            "ulatio",
-            "ns/n"
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Congratulation ",
+            "/n"
         ],
         [
             "Congrat",
-            "ulatio",
-            "ns/n"
+            "ulations. /n"
         ],
         [
-            "Well done,",
-            " my fr",
-            "iend/n"
+            "Well done, ",
+            "my friend. /n"
         ],
         [
-            "You've done",
-            " it ag",
-            "ain/n"
+            "You've done it a",
+            "gain. /n"
         ],
         [
-            "You've gone and b",
-            "roken another he",
-            "art/nYeah, you've "
+            "You've gone and ",
+            "broken anoth",
+            "er heart. \n\nYeah, ",
+            "you've  torn it apart. /n"
         ],
         [
-            "torn it apart/n"
+            "You've done it ",
+            "before. /n"
         ],
         [
-            "You've done it",
-            " befor",
-            "e/n"
+            "Hope to do it s",
+            "ome more. /n"
         ],
         [
-            "Hope to do it",
-            " some ",
-            "more/n"
+            "You've got ",
+            "it down to ",
+            "fine art. ",
+            "/n"
         ],
         [
-            "You've got it d",
-            "own to a fine a",
-            "rt/n"
+            "Remember ",
+            "the first time you tried ",
+            "to do it ",
+            "to me? /n"
         ],
         [
-            "Remember the fi",
-            "rst time/nYou tried "
+            "My girl wo",
+            "n't fall. \n\nJust wa",
+            "it and see. \n\nJust wai",
+            "t and see. /n"
         ],
         [
-            "to do it to m",
-            "e/n"
+            "Con",
+            "gratulations. /n"
         ],
         [
-            "My girl won't fall/nJust wait and "
+            "Cong",
+            "ratulations. /n"
         ],
         [
-            "see"
+            "You've gone ",
+            "and broken anot",
+            "her heart. \n\nYea",
+            "h, you've torn it apart. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Y",
+            "ou've gone ",
+            "and ",
+            "broken another he",
+            "art. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Congratulatio",
+            "ns. ",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "HeUPuOqWMPo",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

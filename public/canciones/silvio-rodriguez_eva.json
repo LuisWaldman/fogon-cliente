@@ -1,1 +1,334 @@
-{"cancion": "eva", "banda": "silvio-rodriguez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "G/", "D", "A", "Bm", "G", "A", "Bm", "G6", "A", "D", "G", "A", "A4", "D", "A", "Em7", "Bm", "A", "G", "A", "D", "D", "A", "Em", "Bm", "Em", "A", "F#7", "Em", "A", "D", "G", "D", "G", "D", "Bm", "D", "G", "D", "Bm", "A", "G", "A", "G", "F#m", "Em", "F#m", "G", "A", "D", "Em", "F#m", "G", "F#m", "Bm", "Em", "A", "D", "G", "A", "D", "G", "D", "Em", "F#m", "G", "E7", "F#", "Bm", "G", "D", "Em", "F#m", "G", "Em", "F#m", "G", "A", "D", "Em", "F#m", "G", "E7", "F#", "Bm", "G", "D", "Em", "F#m", "G", "Em", "F#m", "G", "A", "F#m", "Bm", "Em", "A", "D", "G", "A", "A4", "D", "Em", "F#m", "G", "F#m", "Bm", "Em", "A", "D", "G", "A"]}], "orden_partes": [0]}, "letras": [[], ["(CON", " FA U", "TA) //", "Re Em", "  Fa", "#m So", "l Fa#", "m Sim Mim La Re Sol La//:2/nA)"], ["Eva no q", "uiere ser", " para Ad\u00e1", "n/n"], ["la parid", "ora pagad", "a con pan", "/n"], ["Eva prefi", "ere ta", "mbi\u00e9n ", "parir/np"], ["ero despu", "s escoger donde", " ir/ny"], [" le da uso", "s sin dud", "a normal", "/nB)E"], ["va sa", "le a caza", "r en celo", "/nE"], ["va sa", "le a busc", "ar semill", "as/n"], ["Eva sa", "le y remo", "nta el vue", "lo", "/nE"], ["va deja", " de ser c", "ostilla.", "/nA)"], ["Eva ", "no in", "tenta ", "vesti", "r de t", "ul", "", "", "", "", "", "", "/nB) "], ["Eva sa", "le a caz", "ar en celo", "/n"], ["Eva sal", "e a busca", "r semill", "as/n"], ["Eva s", "ale y remo", "nta el vuel", "o/n"], ["Eva de", "ja de se", "r costil", "la./n"], [], ["S\u00f3lo", " bajo", "s: D  ", "E  F#", "  G  ", " F#  B", "  E  ", "C#  D   B /n"], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "vkhzctvBHtE", "delay": 0}]}
+{
+    "cancion": "eva",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "G6",
+                    "D",
+                    "Em",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G6",
+                    "G6",
+                    "Bm",
+                    "A",
+                    "Em7",
+                    "Em7",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#m",
+                    "G6",
+                    "G6",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "F#7",
+                    "D",
+                    "G",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "F#7",
+                    "D",
+                    "G",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. ",
+            "",
+            "/n"
+        ],
+        [
+            "Eva no quie",
+            "re ser parad",
+            "a, la paridor ",
+            "pagada con pan",
+            ". \n\nEva prefi",
+            "ere también pari",
+            "r, pero después ",
+            "escoger  donde ir. /n"
+        ],
+        [
+            "Por eso adqui",
+            "ere un semental ",
+            "le da un uso ",
+            "sin dudas normal. /n"
+        ],
+        [
+            "Eva cam",
+            "bió la señal. ",
+            "/n"
+        ],
+        [
+            "Eva sal",
+            "e cazar en ",
+            "cerro,  \n\nEva sa",
+            "le buscar semil",
+            "la. \n\nEva s",
+            "ale remonta v",
+            "uelo, \n\nEva d",
+            "eja de ser costil",
+            "la. \n\nEva s",
+            "ale cazar en ",
+            "cerro, \n\nEva ",
+            "sale buscar s",
+            "emilla. \n\nEva ",
+            "sale remonta ",
+            "vuelo, \n\nEva ",
+            "deja de ser c",
+            "ostilla. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Eva ",
+            "no intenta ves",
+            "tir de tul, /n"
+        ],
+        [
+            "Eva no cree en un príncip ",
+            "azul. \n\nEva ",
+            "no inventa fals",
+            "o papel, el fruto ",
+            "es suyo compadre sin ",
+            "él. \n\nEva se ",
+            "enfrenta  al que d",
+            "irá, firme el ti",
+            "món como un buen ca",
+            "pitán encoge h",
+            "ombros \n\nAdam",
+            ". /n"
+        ],
+        [
+            "Eva sale ",
+            "cazar en c",
+            "erro, \n\nEva sale ",
+            "buscar semill",
+            "a. \n\nEva sale ",
+            "remonta vu",
+            "elo, \n\nEva dej",
+            "a de ser costil",
+            "la. \n\nEva sale ",
+            "cazar en c",
+            "erro, \n\nEva sale ",
+            "buscar semill",
+            "a. \n\nEva sale ",
+            "remonta vu",
+            "elo, \n\nEva dej ",
+            "de ser co",
+            "still",
+            "a. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Eva sale cazar en cerro, \n\nEva sale buscar semilla. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Eva sale cazar en cerro, \n\nEva sale buscar semilla. "
+        ]
+    ],
+    "bpm": 86,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "vkhzctvBHtE",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

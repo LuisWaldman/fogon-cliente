@@ -1,1 +1,205 @@
-{"cancion": "la-adivinanza", "banda": "silvio-rodriguez", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "A2", "F#", "C", "B", "B7", "G", "D", "Am", "G", "Em", "Bm", "Em/C#", "A", "C", "B7", "Em", "Am", "A#\u00ba", "B7", "G", "Em/F", "C", "Am", "A#\u00ba", "B7", "E", "A", "D/F#", "G", "C", "F#", "Am", "F#", "C", "B7", "G", "D", "Am", "G", "Em", "Bm", "Em/C#", "A", "C", "B7", "Em", "Em/C#", "C", "Am", "A#\u00ba", "B7", "G", "Em/F", "C", "Am", "A#\u00ba", "B7", "E", "A", "D/F#", "G", "C", "F#", "Am", "F#", "C", "B7", "G", "D", "Am", "G", "Em", "Bm", "F", "Am", "F", "D"]}], "orden_partes": [0]}, "letras": [[], ["Adivina en qu\u00e9", " mano", "/nYo trai"], ["go el am", "or/nY te ganas el"], [" premio ma", "yor", "/n"], ["Adivina,", " adivina", "/nY te doy"], [" un bo", "leto de", " sol/n"], ["Adivina qu\u00e9 ", "traigo en la", " diestra", "/nY en su hermana "], ["adivina qu\u00e9 ", "hay/n"], [" Yo te juro que am", "or/nY enco"], ["ntrarlo ser", "\u00e1/n"], ["Siempre/nLa ad"], ["ivinanza, ", "la adivina", "nza fin", "al", "/n"], ["Adivina en qu", " ola/nSe e"], ["sconde mi pez", "/n"], ["Adivina por ", "ltima ve", "z", "/n"], ["Adivina en qu", "\u00e9 nube", "/nMi p\u00e1jaro "], ["va", "/n"], ["Y adivina si al f", "in canta", "r\u00e1/n"], ["Adivina qu\u00e9 ", "traigo en la", " diestra", "/nY en su hermana"], [" adivina q", "u\u00e9 hay/n"], ["Yo te juro que am", "or/n"], ["Y encontrarlo ser", "\u00e1/n"], ["Siempre/nLa adiv"], ["inanza, l", "a adivinanza f", "inal", "", "/n"], ["Adivina en qu\u00e9 m", "ano/n"], ["Yo traigo e", "l amor", "/nY te ganas el p"], ["remio ma", "yor", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "o86yn8he1UQ", "delay": 0}]}
+{
+    "cancion": "la-adivinanza",
+    "banda": "silvio-rodriguez",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "A#m",
+                    "B",
+                    "B7",
+                    "C",
+                    "C",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "F#",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "Em Em/C#",
+                    "Em/C#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "Am",
+                    "G",
+                    "G",
+                    "Em/F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "F#",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Em/C#",
+                    "Am",
+                    "A#º"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "Em/F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "G",
+                    "F#",
+                    "B",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Adivi",
+            "na en qué mano yo t",
+            "raigo el amor te ",
+            "ganas el premio mayor. /n"
+        ],
+        [
+            "Adiv",
+            "ina, adivina, ",
+            "adivinador  ",
+            "te doy un boleto ",
+            "de sol. /n"
+        ],
+        [
+            "Adivina qué traigo ",
+            "en la diestra ",
+            "en su hermana adivina ",
+            "qué hay. \n\nYo te ",
+            "juro que amor encont",
+            "rarlo será siempre ",
+            "la adivinanza, ",
+            "la a",
+            "divinanza fi",
+            "nal. ",
+            "/n"
+        ],
+        [
+            "Adivina en qué ola ",
+            "se esconde mi pe",
+            "z, adivina por últi",
+            "ma vez. /n"
+        ],
+        [
+            "Adivina en qué nu",
+            "be mi págaro va ",
+            "adivina si al ",
+            "fin cantará. /n"
+        ],
+        [
+            "Adivin",
+            "a qué traigo en la diestr ",
+            "en su hermana ad",
+            "ivina qué hay. /n"
+        ],
+        [
+            "Yo te juro que amor ",
+            "encontrarlo se",
+            "rá siempre la adivi",
+            "nanza, ",
+            "la adivina",
+            "nza final. ",
+            "/n"
+        ],
+        [
+            "Adivina en qué ",
+            "mano yo tra",
+            "igo el amor ",
+            "te ganas el prem",
+            "io mayor. ",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 95,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "o86yn8he1UQ",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

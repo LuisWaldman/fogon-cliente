@@ -1,1 +1,428 @@
-{"cancion": "cancion-del-pasado", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Bm", "Am"]}, {"nombre": "parte2", "acordes": ["D", "D4", "G", "C", "Bm"]}], "orden_partes": [0, 1]}, "letras": [["sado caminando por casi t", "oda la ciudad./nLo veo en la "], ["gente que se qu", "eda ", "y que se va", "./nLo veo en el "], ["rostro de mis hijos,/nlo veo en la "], ["voz de mi mujer."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "CdbQlv8Rkhg", "delay": 0}]}
+{
+    "cancion": "cancion-del-pasado",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "G",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Am",
+                    "C",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "Bm",
+                    "D4",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Bm",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "C",
+                    "Bm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "Am",
+                    "G",
+                    "C",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Se neg",
+            "aba una mujer con una ",
+            "mano ir la cama ",
+            "/n"
+        ],
+        [
+            "Con ",
+            "la otra entretenía su ",
+            "pasión  amordaz",
+            "ada ",
+            "",
+            "las sábanas ten",
+            "ían el ",
+            "semblante del pasado /n"
+        ],
+        [
+            "Que ",
+            "contento so",
+            "nreía /n"
+        ],
+        [
+            "El ",
+            "vendedor de ventana",
+            "s se negó darme la ",
+            "mía /n"
+        ],
+        [
+            "Po",
+            "rque cambio no le d",
+            "aba mis reservas de ",
+            "alegría  ",
+            "/n"
+        ],
+        [
+            "El pasado estaba ",
+            "quie ",
+            "sobre el almacén del ",
+            "día /n"
+        ],
+        [
+            "Lo tenían bien ",
+            "sujeto  /n"
+        ],
+        [
+            "Veo ",
+            "el pasado caminando por c",
+            "asi toda la ciudad \n\nLo veo ",
+            "en la gente que se queda que ",
+            "se va \n\nLo veo ",
+            "en el rostro de mi hijo, lo ",
+            "veo en la voz de mi mujer \n\nLo ",
+            "veo pesar de que lo veo sin ",
+            "querer ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El pasa",
+            "do tiene el nombre de mil",
+            "lones de sujetos ",
+            "/n"
+        ],
+        [
+            "Bebe ",
+            "come, se va al cine ",
+            "veces no es tan vi",
+            "ejo /n"
+        ],
+        [
+            "Tien ",
+            "un poco de mi nombr ",
+            "o",
+            "tro poco del de ust",
+            "edes /n"
+        ],
+        [
+            "Aunque busquem",
+            "os el homb",
+            "re ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Veo el pasado c",
+            "aminando por casi toda ",
+            "la ciudad \n\nLo veo en la gente ",
+            "que se queda que se va /n"
+        ],
+        [
+            "Lo veo en el rostro ",
+            "de mi hijo, lo veo en la voz de ",
+            "mi mujer \n\nLo veo pesar de ",
+            "que lo veo sin querer /n"
+        ],
+        [
+            "Veo el pasado ",
+            "caminando  por casi tod",
+            "a la ciudad \n\nLo veo en la gent ",
+            "que se queda que se ",
+            "va \n\nLo veo en el rost",
+            "ro de mi hijo, lo veo en la voz ",
+            "de mi mujer \n\nLo veo pesar ",
+            "de que lo veo sin q",
+            "uerer ",
+            "",
+            "/n"
+        ],
+        [
+            "El pasado es el esp",
+            "ectro de un bufón con triple c",
+            "ara ",
+            "/n"
+        ],
+        [
+            "Fue de ayer, es de est ",
+            "día será de otra m",
+            "añana ",
+            "/n"
+        ],
+        [
+            "El pasado es ese ",
+            "insecto  ",
+            "que la música no ",
+            "apaga /n"
+        ],
+        [
+            "El pasado es ",
+            "insurrecto ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El pasado es ese insecto que la música no apaga "
+        ]
+    ],
+    "bpm": 112,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "CdbQlv8Rkhg",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

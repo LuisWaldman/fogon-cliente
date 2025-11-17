@@ -1,1 +1,277 @@
-{"cancion": "a-los-martires-del-granma", "banda": "silvio-rodriguez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "F", "C", "G/B", "Am", "G", "F", "C", "G/B", "Am", "G", "F", "C", "G/B", "Am", "G", "F", "C", "G/B", "Am", "G", "F", "C", "G/A#", "A7", "Dm", "F", "C/E", "Dm", "Em", "F", "C", "Dm", "Em", "F", "G", "G4", "G", "G/F", "C", "Am", "G", "Em", "F", "G", "G/F", "C", "Am", "G", "Em", "F", "C", "F6", "G", "C", "Em", "F", "G", "C", "E", "Am", "F", "G", "G", "G4", "G", "G/F", "C", "Am", "G", "Em", "F", "G", "G/F", "C", "Am", "G", "Em", "F", "C", "F6", "G", "C", "Em", "F", "G", "C", "E", "Am", "F", "G", "G/F", "G/F", "C", "Em", "F", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "C"]}], "orden_partes": [0]}, "letras": [[], [], [], ["saje dormita/nen los "], ["ojos del m", "uerto", "", "/ny su luz resu"], ["cita/nen el "], ["sol montar", "az./nEl paisaje que a"], ["zul", "/nsu camino al o"], ["yendo", "/nes una fronda "], ["vida", "/ndonde acampe la "], ["vida", "/ny su propio cad"], ["\u00e1ver", "/nEs la "], ["floo", "r inici", "al", "", "", "/nMaravilla de a"], ["mooo", "r/nla "], ["pupil", "a del m", "uerto.", "", "/nMaravilla de a"], ["mooo", "r/nla v"], ["isioo", "n deso", "y\u00f3/nMaravilla de "], ["lirios", "/nque so"], ["aba des", "pierto.", "", "/nMara"], ["villa de s", "ol/n"], ["pero r", "eeeesu", "cit\u00f3", ".", "", "", "", "/nHa crecido un jar"], ["dii", "n/nde l"], ["os oj", "os del mu", "erto,", "", "/nhay colores sin "], ["fiii", "n/nbajo "], ["el s", "ol matina", "l/ny ha nacido la "], ["vida", "/nde su "], ["p\u00e1rpado a", "tento", "", "/ny ha l"], ["legado el am", "or/n"], ["de su s", "ue\u00f1o ", "inmorta", "l.", "/n"], ["Inmort", "al", "", "", "/n"], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "sr_dN6Vykrw", "delay": 0}]}
+{
+    "cancion": "a-los-martires-del-granma",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "C",
+                    "C",
+                    "F",
+                    "G/A#",
+                    "C/E",
+                    "G/A#",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "Am",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "G/B",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G/A#",
+                    "G/A#",
+                    "F",
+                    "C/E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C/E",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G/A#",
+                    "G/A#",
+                    "G/A#",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "Em",
+                    "C",
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G/A#",
+                    "G/A#",
+                    "G/A#",
+                    "G",
+                    "G/A#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est ",
+            "es una canción en español de rock argentino. /n"
+        ],
+        [
+            "Un pa",
+            "isaje dormita en los ",
+            "ojos  del muert",
+            "o ",
+            "su luz re",
+            "sucita en ",
+            "el sol mont",
+            "ada /n"
+        ],
+        [
+            "El pasaje que a",
+            "zul, ",
+            "su camino an",
+            "ullendo /n"
+        ],
+        [
+            "Es una fronda ",
+            "vida,  ",
+            "donde acam",
+            "pa la vida ",
+            "su propio c",
+            "adáver es ",
+            "la flor ",
+            "inicial  ",
+            "/n"
+        ],
+        [
+            "Maravilla de ",
+            "amor, la ",
+            "pupila  del ",
+            "muerto /n"
+        ],
+        [
+            "Maravi",
+            "lla de amor, ",
+            "la visión de /n"
+        ],
+        [
+            "Sogoy",
+            "o \n\nMaravil",
+            "la delirios, ",
+            "que so",
+            "naba despierto /n"
+        ],
+        [
+            "Maravi",
+            "lla de sol, ",
+            "pero res",
+            "ucit",
+            "/n"
+        ],
+        [
+            "Ha crecido un j",
+            "ardín en ",
+            "los ojos del ",
+            "muer",
+            "to \n\nHay colo",
+            "res sin fin ba",
+            "jo el sol ",
+            "matina /n"
+        ],
+        [
+            "Ya ha ",
+            "nacido  la vid ",
+            "de ",
+            "su pata bajo aten",
+            "dor ",
+            "ha llegado el am",
+            "or de su s",
+            "ueño in",
+            "morta",
+            "l, ",
+            "inmortal ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 143,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "sr_dN6Vykrw",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

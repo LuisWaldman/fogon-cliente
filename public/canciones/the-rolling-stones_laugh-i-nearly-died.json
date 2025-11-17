@@ -8,28 +8,262 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "B",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
                     "Bm",
                     "G",
+                    "G",
+                    "Bm",
                     "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Bm"
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
                 ]
             }
@@ -37,203 +271,248 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
             2,
             3,
-            1,
-            2,
-            3,
-            1,
-            2,
-            3,
-            1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            3,
-            1,
-            2,
-            3,
-            1,
-            2,
-            3,
-            1,
-            0,
-            3,
-            2,
-            3,
-            0,
-            1,
-            0,
-            1,
-            2,
-            3,
-            1,
-            2,
-            3,
-            1,
-            2,
-            3,
-            1,
-            0,
-            3,
-            2,
-            3
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "travelling, but I don't know w",
-            "here/nI've been "
-        ],
-        [
-            "missing you, but you just don't c",
-            "are/nAnd I've been "
-        ],
-        [
-            "wandering, I've seen Greece and R",
-            "ome/nLost in the "
-        ],
-        [
-            "wilderness, so far from h",
-            "ome/n"
-        ],
-        [],
-        [
-            "Africa, looking for my s",
-            "oul/nAnd I feel like an "
-        ],
-        [
-            "actor, looking for a r",
-            "ole/nI've been in "
-        ],
-        [
-            "Arabia, I've seen a million s",
-            "tars/nBeen sipping cham"
-        ],
-        [
-            "pagne, on the boulev",
-            "ards - yes/n"
-        ],
-        [],
-        [
-            "tired",
             "",
-            "/nTrying to turn the "
-        ],
-        [
-            "tide,",
-            "   y",
-            "eah/nSo I'll say my good"
-        ],
-        [
-            "bye",
             "",
-            "/nI nearly "
-        ],
-        [
-            "died",
-            "/nI've been down to "
-        ],
-        [
-            "India, but it froze my b",
-            "ones/nI'm living for the "
-        ],
-        [
-            "city, but I'm all al",
-            "one/nI've been "
-        ],
-        [
-            "travelling, but I don't know w",
-            "here/nI've been "
-        ],
-        [
-            "wandering, but I just don't c",
-            "are/n"
-        ],
-        [],
-        [
-            "nied",
             "",
-            "/nHow you hurt my "
-        ],
-        [
-            "pride",
             "",
-            "/nI feel pushed a"
-        ],
-        [
-            "side",
             "",
-            "/nI nearly "
-        ],
-        [
-            "died",
+            "",
             "/n"
         ],
         [
-            "Been travelling far and wide,/n"
+            "I",
+            "'ve bee ",
+            "traveling, ",
+            "but don't kn",
+            "ow where \n\nI",
+            "'ve be",
+            "en missing you, ",
+            "but you just do",
+            "n't care. /n"
         ],
         [
-            "wondering who's going to be my guide/n"
-        ],
-        [
-            "Been travelling far and wide,/n"
-        ],
-        [
-            "wondering who's going to be my guide/nLiving in a "
-        ],
-        [
-            "fantasy, but it's way too ",
-            "far/nBut this kind of "
-        ],
-        [
-            "loneliness, is way too h",
-            "ard/nI've been "
-        ],
-        [
-            "wandering, feeling all al",
-            "one/nI lost my di"
-        ],
-        [
-            "rection, and I lost my h",
-            "ome...well/n"
-        ],
-        [],
-        [
-            "tired",
+            "And \n\nI've b",
+            "een wandering, ",
+            "see breeze a",
+            "round, ",
+            "lost in ",
+            "the wilderness, ",
+            "so far fr",
+            "om home. ",
             "",
-            "/nNow I'm on the "
+            "",
+            "",
+            "/n"
         ],
         [
-            "side",
-            "/nFeeling so despised"
+            "I'v ",
+            "been to \n\nAfrica, ",
+            "looking for ",
+            "my soul, ",
+            "and feel l",
+            "ike an actor, ",
+            "looking for ",
+            "role. \n\nI",
+            "'ve been ",
+            "in \n\nArabia, /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "I've seen mil",
+            "lion stars, b",
+            "een sipping ",
+            "champagne  ",
+            "on the ",
+            "boulevards.  ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I'm ",
+            "so sick of t",
+            "ime, t",
+            "ry",
+            "in",
+            "to turn the t",
+            "ide, ",
+            "",
+            "so \n\nI",
+            "'ll say my good",
+            "bye. \n\nLov",
+            "e, ",
+            "love,  ",
+            "nearl ",
+            "di",
+            "ed. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I'",
+            "ve never landed in the",
+            "re, but it f",
+            "roze my bones",
+            ". \n\nI'm ",
+            "living for the city, ",
+            "but \n\nI'm ",
+            "all alone /n"
+        ],
+        [
+            "I'v",
+            "e been traveling, ",
+            "but ",
+            "don't know wher",
+            "e \n\nI'",
+            "ve been wanderin",
+            "g, but ",
+            "just don't c",
+            "are. ",
+            "hate ",
+            "to ",
+            "",
+            "be de",
+            "nied, ",
+            "how ",
+            "",
+            "you hurt my ",
+            "pride ",
+            "/n"
+        ],
+        [
+            "I'",
+            "ve been pushed a",
+            "side, but ",
+            "love, l",
+            "ove, l",
+            "ove, ",
+            "nearly died. ",
+            "",
+            "/n"
+        ],
+        [
+            "I'",
+            "ve bee",
+            "n traveling, but ",
+            "don't know where \n\nI",
+            "'v",
+            "e been wa",
+            "ndering, ",
+            "but j",
+            "u",
+            "s",
+            "t",
+            "don't ca",
+            "re. /n"
+        ],
+        [
+            "This kind of ",
+            "loneliness,  ",
+            "it's way too ha",
+            "rd. \n\nI",
+            "'ve been wan",
+            "dering, f",
+            "eeling all alo",
+            "ne. ",
+            "lost my direc",
+            "tion, ",
+            "and lost my h",
+            "ome. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "I'm so si",
+            "ck of time ",
+            "",
+            "now /n"
+        ],
+        [
+            "I'm ",
+            "on sli",
+            "de. /n"
+        ],
+        [
+            "F",
+            "eeling so ",
+            "despised, ",
+            "when you lef",
+            "t, le",
+            "ft, ",
+            "almost d",
+            "ied",
+            "",
+            "/n"
+        ],
+        [
+            "I've b",
+            "een traveling, ",
+            "but don't kn",
+            "ow where \n\nI've ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "been wandering, but just don't care. /n"
+        ],
+        [
+            "I've  been traveling ",
+            "far and wide, ",
+            "wondering who's gon",
+            "na be my guide. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 151,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "eNC1R_E9L4w",
-            "delay": 0
+            "delay": 5000.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

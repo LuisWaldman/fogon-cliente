@@ -2,143 +2,303 @@
     "cancion": "lejos-de-ti",
     "banda": "los-autenticos-decadentes",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
+                    "A",
                     "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
                     "F#m",
+                    "F#m",
+                    "Bm",
                     "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
                     "C#m",
                     "F#m",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Bm",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "C#m",
+                    "F#m",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            " Una vez dormido desperté",
-            "/npensando en volverte a ver"
-        ],
-        [
-            ",",
+            "¡\nSigue la fiesta! ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " y pensé que era lo mejo",
-            "r/nllamarte hoy por tercera vez"
+            "Una ",
+            "vez dormid",
+            "o desperté ",
+            "pensando en ",
+            "volverte  ver ",
+            "",
+            "",
+            "",
+            "",
+            "pensé  que era ",
+            "lo mejor ll",
+            "amarte hoy por te",
+            "rcera vez ",
+            "",
+            "/n"
         ],
         [
-            ".",
-            "/nEs que no pued"
+            "Es que ",
+            "no puedo ya ",
+            "vivir pensan",
+            "do en que vos ",
+            "existís ",
+            "fumando ci",
+            "garrillos \n\nMe ",
+            "vuelvo acord",
+            "ar de ti /n"
         ],
         [
-            "o ya vivir/npensando en que vos"
+            "Lejo ",
+            "de ti sé ",
+            "que me enferm /n"
         ],
         [
-            " existís",
-            "/ny fumando"
+            "Cuand ",
+            "me miras ",
+            "los ojos en",
+            "candilas mi ",
+            "vivir \n\nC",
+            "erca ",
+            "de ti siento ",
+            "que vuel",
+            "o \n\nCuando ",
+            "me miras los ",
+            "ojos enca",
+            "ndilas mi vi",
+            "vir ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "pensé  que ",
+            "era lo mejo ",
+            "llamarte hoy por ",
+            "tercera  vez ",
+            "",
+            "/n"
         ],
         [
-            " un cigarrillo/nme vuelvo a "
+            "Es ",
+            "que no pued",
+            "o ya vivir pen",
+            "sando en que ",
+            "vos exist",
+            "ís fumando ",
+            "cigarrillos  /n"
         ],
         [
-            "acordar de tí./n"
+            "Me vuelvo aco",
+            "rdar de ti /n"
         ],
         [
-            " Lejos de tí se que me enfermo",
-            "/ncuando me"
+            "Lejo",
+            "s de ti sé ",
+            "que me enferm /n"
         ],
         [
-            " miras a los ojos/nencandi"
+            "Cuan",
+            "do me miras ",
+            "los ojos en",
+            "candilas mi ",
+            "vivir /n"
         ],
         [
-            "las mi vivir./n"
+            "Cerc",
+            "a de ti siento ",
+            "que vuelo /n"
         ],
         [
-            " Cerca de tí siento que vuelvo",
-            "/ncuando me"
+            "Cuando ",
+            "me miras ",
+            "los ojos enc",
+            "andilas mi v",
+            "ivir ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " miras a los ojos/nencandi"
-        ],
-        [
-            "las mi vivir./n"
-        ],
-        [
-            " Y pensé que era lo mejo",
-            "r/nllamarte hoy por tercera vez"
-        ],
-        [
-            ".",
-            "/nEs que no pued"
-        ],
-        [
-            "o ya vivir/npensando en que vos"
-        ],
-        [
-            " existís",
-            "/ny fumando"
-        ],
-        [
-            " un cigarrillo/nme vuelvo a "
-        ],
-        [
-            "acordar de tí./n"
-        ],
-        [
-            " Lejos de tí se que me enfermo",
-            "/ncuando me"
-        ],
-        [
-            " miras a los ojos/nencandi"
-        ],
-        [
-            "las mi vivir./n"
-        ],
-        [
-            " Cerca de tí siento que vuelvo",
-            "/ncuando me"
-        ],
-        [
-            " miras a los ojos/nencandi"
-        ],
-        [
-            "las mi vivir."
+            "Ce",
+            "rca de ti ",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PMCWoCA35vE",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

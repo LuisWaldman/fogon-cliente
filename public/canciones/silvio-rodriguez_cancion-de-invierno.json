@@ -1,1 +1,652 @@
-{"cancion": "cancion-de-invierno", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "B", "A"]}, {"nombre": "parte2", "acordes": ["B", "A", "E", "F#", "G#", "C#m", "E", "F#"]}], "orden_partes": [0, 1, 0, 1, 0, 1, 0, 1]}, "letras": [["   Es d\u00eda de fr\u00edo y llegas a", " casa", "/nvienes de la tarde cansada de un ju"], ["eves", "/nlos muebles, tu perro y millones de "], ["ojos", "/nest\u00e1n como siempre esperando tu v"], ["uelta/nen la que presientes que nada ha cambi"], ["ado/nte espera lo m"], ["ismo, el sue\u00f1o ha pas", "ado./n"], ["   Recoges tu pelo tan libre en la", " tarde,", "/nquiz\u00e1s porque alguien nunca lo v"], ["io preso,", "/nte sientas y cenas y todas las c"], ["ulpas", "/nte dan con un peso mayor que tus fu"], ["erzas/ny pugnan tus ojos y esta tarde l"], ["oca,/nhasta que eres d"], ["\u00e9bil y tapas tu b", "oca./n"], ["   Cuando todo pasa te crees se", "gura,", "/nmientras con tus horas revuelves cen"], ["izas,", "/npresientes muy dentro pasiones prohib"], ["idas", "/nno importa mentirse para ser fel"], ["ices/nhasta que un deseo se mete en tu l"], ["echo,/nmas que estas pens"], ["ando, te tapas el pe", "cho./n"], ["   Pero necesitas quedar bien co", "n todo,", "/ntodo que no sea bien contigo m"], ["isma,", "/nla angustia es el precio de ser uno m"], ["ismo,", "/nmejor ser felices como nuestros p"], ["adres/ny hacer de la lastima amores et"], ["ernos,/nhasta que a la l"], ["arga te tape el invie", "rno."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "U2TuF-fCK60", "delay": 0}]}
+{
+    "cancion": "cancion-de-invierno",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "G#",
+                    "C#m",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "G#",
+                    "G#",
+                    "C#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "G#",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C#m",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es día de ",
+            "frío ll",
+            "egas casa. ",
+            "/n"
+        ],
+        [
+            "Vien",
+            "es de la tarde cansad",
+            "a de un ju",
+            "eve/n"
+        ],
+        [
+            "Los m",
+            "uebles, tu perro ",
+            "millones de ojos",
+            ". /n"
+        ],
+        [
+            "Est",
+            "án como siempre espera",
+            "ndo tu vuelta. /n"
+        ],
+        [
+            "En la que presientes que n",
+            "ada ha cambiado. /n"
+        ],
+        [
+            "Te espera lo mismo, ",
+            "el sueño ha pasad",
+            "o. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Recoges tu p",
+            "elo tan libre en ",
+            "la tarde. ",
+            "/n"
+        ],
+        [
+            "Quizás porque a",
+            "lguien nunca lo ",
+            "vio pres",
+            "o. /n"
+        ],
+        [
+            "Te sient",
+            "as cenas to",
+            "das las culpas. ",
+            "/n"
+        ],
+        [
+            "Te dan ",
+            "como un peso may",
+            "or que tus fuerzas. ",
+            "pongan tus ojos si ",
+            "esta tarde loca. /n"
+        ],
+        [
+            "Hasta que eres debil ",
+            "tapas tu boca. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cuando to",
+            "do pasa te c",
+            "rees segur",
+            "a. /n"
+        ],
+        [
+            "Mientras ",
+            "con tus horas revue",
+            "lves ce",
+            "niz",
+            "as. \n\nPresient",
+            "es muy dentro pasion",
+            "es prohibidas. ",
+            "/n"
+        ],
+        [
+            "No impo",
+            "rta mentirse para ",
+            "ser felices. \n\nHa",
+            "sta que un deseo se me",
+            "ta en tu lecho. \n\nMás ",
+            "que estas pensando ",
+            "te tapas el pello. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Más que estas pensando te tapas el pello. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mientras  con tus horas revuelves cenizas. \n\nPresientes muy dentro pasiones prohibidas. ",
+            "",
+            "/n"
+        ],
+        [
+            "Pero n",
+            "ecesitas quedar b",
+            "ien con todo. ",
+            "/n"
+        ],
+        [
+            "Todo que ",
+            "no sea bien con",
+            "tigo misma. ",
+            "/n"
+        ],
+        [
+            "La angustia es ",
+            "el precio de ser uno ",
+            "mismo. ",
+            "/n"
+        ],
+        [
+            "Mejor ser f",
+            "elices como nuestro ",
+            "padres. hacer ",
+            "de la lástima amores e",
+            "ternos. \n\nHasta que ",
+            "la larga te t",
+            "ape el invierno. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La larga te ",
+            "tape el inviern",
+            "o. \n\nMientras con tus horas revuelves cenizas. \n\nPresientes muy dentro pasiones prohibidas. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mientras con tus horas revuelves cenizas. \n\nPresientes muy dentro pasiones prohibidas. \n\nLa ",
+            "l",
+            "a",
+            "r",
+            "g",
+            "",
+            "te ",
+            "",
+            "tape el ",
+            "i",
+            "n",
+            "v",
+            "i",
+            "erno. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mientras con tus horas revuelves cenizas. \n\nPresientes muy dentro pasiones prohibidas. "
+        ]
+    ],
+    "bpm": 112,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "U2TuF-fCK60",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

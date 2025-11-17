@@ -2,38 +2,136 @@
     "cancion": "la-primera-vez",
     "banda": "los-autenticos-decadentes",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 83,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D Bm",
+                    "D Bm",
+                    "F#m",
+                    "Em",
+                    "D",
+                    "D",
+                    "F#m",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "F#",
-                    "Bm",
-                    "A"
+                    "D",
+                    "D",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "D",
-                    "F#m",
-                    "Em"
+                    "F#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "F#",
+                    "F#",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "A",
+                    "G",
+                    "F#m",
+                    "Em",
+                    "D",
+                    "F#m",
+                    "F#",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
                     "D",
                     "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
                     "F#m",
-                    "Bm",
-                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D A",
+                    "D",
+                    "D A",
+                    "D A",
+                    "D",
+                    "D",
+                    "D A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D"
                 ]
             }
         ],
@@ -41,131 +139,121 @@
             0,
             1,
             2,
-            0,
-            0,
-            0,
-            1,
-            2,
-            0,
-            0
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Cada día que pasa/n"
+            "Cada día que pasa, todo es diferente, pero hay algo que jamás nadie podrá cambiar. \n\nUna huella queda",
+            "rá, en el instante donde t",
+            "odo comenzó gira",
+            "r, entendiste donde v",
+            "as, que entrabas sin saber lo que le ",
+            "iba suceder, que entría alguien pero invadie",
+            "ron el lugar. \n\nEstaba escrito que ",
+            "todo  esto iba pasar. /n"
         ],
         [
-            "Todo es diferente/nPero hay"
+            "La primera vez que van ",
+            "guardar  mí, nunc",
+            "a lo olvidaré, el prim",
+            "er momento en que te vi. /n"
         ],
         [
-            " algo que jamás/nNadie podr"
+            "La primera vez nunca ",
+            "más volverás, el recue",
+            "rdo te dará lo más prof",
+            "undo, será nuestra atrás má",
+            "s. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            " cambiar/nUna "
+            "Hoy vuelvo busc",
+            "arte, dentro de mi ment",
+            "e, un encuentro emocional ",
+            "con el pasado. /n"
         ],
         [
-            "huella quedará/nEl inst"
+            "No me puedo contene",
+            "r, cuando me invade los recuerdo",
+            "s, siempre estoy volviend",
+            "o, hubo nadie como vo",
+            "s. \n\nEntramos sin saber lo que iba s",
+            "uceder, pude salir corriendo entregarme tu p",
+            "iel, pero cuando te vi me dejé de ",
+            "cerca  prendido tus pies. /n"
         ],
         [
-            "ante donde todo comenz",
-            " a girar/nY entendi"
+            "La primera vez que van ",
+            "guardar mí, nunca lo ",
+            "olvidaré, el primer mom",
+            "ento en que te vi. /n"
         ],
         [
-            "ste a dónde vas/n"
+            "La primera vez nunca más ",
+            "volverás,  el recuerdo ",
+            "te dará lo más profundo ",
+            "será nuestra atrás más. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Entramos sin saber lo que i",
-            "ba a suceder/n"
+            "La primera vez que van guar",
+            "dar mí, nunca lo ",
+            "olvidaré,  el primer mome",
+            "nto en que te vi. /n"
         ],
         [
-            "El miedo y la intriga invad",
-            "ieron el lugar/n"
+            "La primera vez nunca más v",
+            "olverás, el recuerdo te ",
+            "dará lo más profundo, ",
+            "será nuestra atrás más. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Estaba escrito que todo esto ib",
-            "a a pasar/n"
+            "La primera vez nunca más volverás, el recuerdo te dará lo más profundo, será nuestra atrás más. \n\nLa primera vez nunca más volverás, el recuerdo te dará lo más profundo, ",
+            "será nuestra atrás más. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "La primera vez/nQuedará guardada en"
-        ],
-        [
-            " mí/nNunca más me olvid"
-        ],
-        [
-            "aré, el primer momento en ",
-            "que te vi/n"
-        ],
-        [
-            "La primera vez nunca más volver",
-            "  pero el recuerdo/nquedar"
-        ],
-        [
-            "  en lo más profundo, se",
-            "rá nuestro y nada más/n"
-        ],
-        [
-            "Hoy vuelvo a buscarte/n"
-        ],
-        [
-            "Dentro de mi mente/nUn encu"
-        ],
-        [
-            "entro emocional con el pasado",
-            "/nNo m"
-        ],
-        [
-            "e puedo contener/nCuando me i"
-        ],
-        [
-            "nvaden los recuerdos/nSiempre est"
-        ],
-        [
-            "oy volviendo/nNo hubo n"
-        ],
-        [
-            "adie como vos/n"
-        ],
-        [
-            "Entramos sin saber lo que i",
-            "ba a suceder/n"
-        ],
-        [
-            "Dudé en salir corriendo o q",
-            "uedarme en tu piel/n"
-        ],
-        [
-            "Pero cuando te vi me dejé vencer/nCaí ren"
-        ],
-        [
-            "dido a tus pies./n"
-        ],
-        [
-            "La primera vez/nQuedará guardada en"
-        ],
-        [
-            " mí/nNunca más me olvid"
-        ],
-        [
-            "aré, el primer momento en ",
-            "que te vi/n"
-        ],
-        [
-            "La primera vez nunca más volver",
-            "  pero el recuerdo/nquedar"
-        ],
-        [
-            "  en lo más profundo, se",
-            "rá nuestro y nada más"
+            "La primera vez nunca más volverás, el recuerdo te dará lo más profundo, será nuestra atrás más. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kSRTnaYnXCA",
-            "delay": 0
+            "delay": 22000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

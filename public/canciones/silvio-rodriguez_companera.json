@@ -1,1 +1,351 @@
-{"cancion": "companera", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "D/F#", "A"]}, {"nombre": "parte2", "acordes": ["D/F#", "A", "D/F#", "A", "D/F#", "Dm7", "Bm", "F#m"]}, {"nombre": "parte3", "acordes": ["Bm", "F#m", "A", "E/G#", "F#m", "C#m", "G", "F#m"]}, {"nombre": "parte4", "acordes": ["Bm", "Dm", "A", "B/A", "Dm", "Em/D", "E/G#", "A"]}], "orden_partes": [0, 1, 2, 3]}, "letras": [[], ["i\u00f3", "n       es A a", "miga", "       que me arropa", "/ny desp"], ["u\u00e9s me desabr", "iga; ", "       la m\u00e1s ", "clara y obscura,/nLa can"], ["ci\u00f3n me da todo,", "    au", "nque no me respeta:", "/nLa canc"], ["i\u00f3n es la ola ", "        qu", "e me eleva y me hunde,", "/nque me f"], ["ragua lo ", "mismo que me ", "funde.", "/nLa canc"], ["i\u00f3n compa", "era, ", "       virginal y", " ramera,         la canci\u00f3n."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "CriiVO53_T8", "delay": 0}]}
+{
+    "cancion": "companera",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D/F#",
+                    "Dm7",
+                    "D/F#",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm7",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "E/G#",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "Dm",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em/D",
+                    "Em/D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em/D",
+                    "Em/D",
+                    "Em/D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "Em/D",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "Bm",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "F#m",
+                    "D/F#",
+                    "A",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D/F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "La c",
+            "anción es ",
+            "la amiga /n"
+        ],
+        [
+            "Que me arr",
+            "opa después me d",
+            "esabriga /n"
+        ],
+        [
+            "La más clara ",
+            "oscura, la más v",
+            "erde madura \n\nLa ",
+            "más íntima, la más ",
+            "indiscreta  /n"
+        ],
+        [
+            "La canci",
+            "ón me da todo, ",
+            "aunque no me respeta /n"
+        ],
+        [
+            "Se me entrega fe",
+            "liz cuando me viola /n"
+        ],
+        [
+            "La c",
+            "anción es la bola ",
+            "que me eleva me ",
+            "hunde  \n\nQue me fragu",
+            "a lo mismo que me fu",
+            "nde \n\nLa ",
+            "canción comp",
+            "añera, virginal ",
+            "ramera \n\nLa ca",
+            "nción ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Comen",
+            "zamos un día /n"
+        ],
+        [
+            "En los tie",
+            "mpos de siempre tod",
+            "avía /n"
+        ],
+        [
+            "Comenzamos f",
+            "elices conta",
+            "r cicatrices \n\nComo b",
+            "uenas señales de ",
+            "los años ",
+            "pel daño ",
+            "pel daño le",
+            "vantamos paisaje \n\nSin ",
+            "excusa, sin rueg ",
+            "sin un traba",
+            "je \n\nQuién se a",
+            "treve decirme ",
+            "que debo arrepentirme /n"
+        ],
+        [
+            "De la esperma q",
+            "uemante que me traba",
+            "jó \n\nPorque s",
+            "angra de abajo ",
+            "yo no vendo ni r",
+            "ajo ni pasió ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "ntre drama ",
+            "comedia /n"
+        ],
+        [
+            "He llegado t",
+            "rovando la edad med",
+            "ia \n\nTorp",
+            "e pero sinc",
+            "ero aún no soy cab",
+            "allero que así el lo",
+            "bo me libre de cordu",
+            "ja \n\nNo ",
+            "me embriaga la altu",
+            "ra \n\nNi me abu",
+            "chen los sueños \n\nNo es por ",
+            "moda  que está yo que me ",
+            "empeño /n"
+        ],
+        [
+            "El amor sigue en ",
+            "bretel al cam",
+            "ino machete \n\nMas no ",
+            "lloro por tan imia ",
+            "mi blano /n"
+        ],
+        [
+            "Si conservo ",
+            "mis manos \n\nMi ",
+            "sudor  el humano co",
+            "razón ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 92,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "CriiVO53_T8",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

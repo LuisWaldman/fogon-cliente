@@ -1,1 +1,464 @@
-{"cancion": "generaciones", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "C4", "C", "G7"]}, {"nombre": "parte2", "acordes": ["Dm", "A", "G6", "F6", "A", "F"]}, {"nombre": "parte3", "acordes": ["G", "G7", "Am", "A9", "Dm", "G7", "B", "C"]}], "orden_partes": [0, 0, 0, 1, 2]}, "letras": [["Un vi", "ejo y un ni", "\u00f1o desnudo", "s se ven", "/nju"], ["gando en la arena", ", lamida ", "de mar", "/nel "], ["viejo es muy vi", "ejo, su barb", "a es azul", "", "/nel ni\u00f1o es muy"], [" ni\u00f1o, su risas esta in", "tacta ", "a\u00fan/ny j"], ["uegan al mundo", ", la historia, la vi", "da", "", "/ncom"], ["\u00fan .", ".. com", "n .", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "AhhUEHwpe6Q", "delay": 0}]}
+{
+    "cancion": "generaciones",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "C4",
+                    "C",
+                    "C4",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C4",
+                    "C",
+                    "A",
+                    "A",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C4",
+                    "C4",
+                    "C4",
+                    "C4",
+                    "C4",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C4",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C4",
+                    "C4",
+                    "C4"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C4",
+                    "C4",
+                    "C",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G7",
+                    "A",
+                    "G6",
+                    "G6",
+                    "G6",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C4",
+                    "C4",
+                    "G7",
+                    "G7",
+                    "C4",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G7",
+                    "C4",
+                    "C4",
+                    "C4",
+                    "C4"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C4",
+                    "C4",
+                    "C4",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G7",
+                    "C",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "G7",
+                    "G7",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "G",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G7",
+                    "C4",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en e",
+            "s",
+            "p",
+            "a",
+            "ñ",
+            "de rock argentino. /n"
+        ],
+        [
+            "Un viejo un ",
+            "niño desnud",
+            "os se ven ",
+            "",
+            "",
+            "jugand ",
+            "en la arena la ",
+            "mida de ",
+            "mar ",
+            "/n"
+        ],
+        [
+            "El ",
+            "viejo es muy vie",
+            "jo, su barba ",
+            "es azul /n"
+        ],
+        [
+            "El ",
+            "niño es muy niñ",
+            "o, su risa e",
+            "stá intacta ",
+            "aún ",
+            "juegan al ",
+            "mundo,  la histor",
+            "ia, la vida ",
+            "",
+            "",
+            "",
+            "común",
+            ", común ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Allí se ",
+            "destrozan, se b",
+            "esan, se van ",
+            "",
+            "",
+            "con vi",
+            "ejas costumbres que ",
+            "diario se ",
+            "dan ",
+            "",
+            "",
+            "un pájaro pasa ",
+            "se pone l",
+            "lorar ",
+            "un pájaro pasa se pone llorar el v",
+            "iejo el niño le ",
+            "caen pedrada ",
+            "los dos ",
+            "pues ha ",
+            "interrumpido  su r",
+            "ito sagrad",
+            "o de a",
+            "mor, ",
+            "de ",
+            "am",
+            "or ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Un pájar ",
+            "cuelga del h",
+            "ueco del ci",
+            "elo ",
+            "/n"
+        ],
+        [
+            "Un ",
+            "pájaro  blanco ",
+            "en estado de ",
+            "cel",
+            "o /n"
+        ],
+        [
+            "Un ",
+            "pájaro ha d",
+            "icho que ha vis",
+            "to vivir un ",
+            "pájaro ha dicho que ha visto vivir un ",
+            "pájaro pu",
+            "ede si quier",
+            "e ponerse l",
+            "lorar p",
+            "ero quien ha v",
+            "isto que un p",
+            "ájaro teng",
+            "a que hablar ",
+            "",
+            "",
+            "que ha",
+            "blar ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Qui",
+            "en sabe de un ",
+            "agua que cure ",
+            "el dolor ",
+            "/n"
+        ],
+        [
+            "Q",
+            "uien sabe ",
+            "de un sitio que gu",
+            "arde el amo",
+            "r ",
+            "/n"
+        ],
+        [
+            "Quien sab",
+            "e una historia que ",
+            "sepa al mejo /n"
+        ],
+        [
+            "Q",
+            "uien sabe una historia que sepa al mejor \n\nQuien sab",
+            "e de un viejo ",
+            "un niño jugan",
+            "do en el mar ",
+            "de un pá",
+            "jaro blanco que ",
+            "se le ha olvidado ",
+            "",
+            "",
+            "",
+            "",
+            "volar, ",
+            "volar  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Vamos ",
+            "cantar  sol",
+            "o el amor \n\nNos ",
+            "va acompañar /n"
+        ],
+        [
+            "Tita  \n\nParra, \n\nÁng",
+            "el \n\nParra \n\nHijo /n"
+        ],
+        [
+            "Andrés \n\nMiguel",
+            ", \n\nPedro \n\nGrín \n\nPablo \n\nLópez "
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "AhhUEHwpe6Q",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

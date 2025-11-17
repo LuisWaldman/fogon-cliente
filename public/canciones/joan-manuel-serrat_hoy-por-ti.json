@@ -1,1 +1,411 @@
-{"cancion": "Hoy-por-ti", "banda": "joan-manuel-serrat", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "F5", "C"]}, {"nombre": "parte2", "acordes": ["F"]}, {"nombre": "parte3", "acordes": ["C"]}, {"nombre": "parte4", "acordes": ["Am", "Em", "C", "Fm", "C", "Fm"]}, {"nombre": "parte5", "acordes": ["F5", "Am"]}], "orden_partes": [0, 1, 2, 2, 1, 2, 0, 1, 0, 3, 2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 2, 4, 0]}, "letras": [["Yo cansado, t\u00fa perdi", "da,/n"], ["nos curamos las her", "idas con aj", "i/n"], ["Hoy por ti, ma", "ana por ", "m\u00ed/n"], ["Si caminas yo te  si", "go,/n"], ["si te cansas hago u", "n nido en el ", "arcen/nHo"], ["y por t\u00ed, ma\u00f1ana ta", "mbi\u00e9n/n"], ["En tus sue\u00f1os me de", "svelo,/n"], ["con tus alas alzo el v", "uelo/n"], ["T\u00fa la flor, yo ", "el colibr", "\u00ed,/n"], ["Hoy por ti, ma", "\u00f1ana por m", "\u00ed/n"], ["Hoy por ti, ma", "ana por m", "\u00ed/n"], ["Hoy por ti, ma", "ana por m", "/n"], ["Si ", "est\u00e1s triste/nyo te inve"], ["nto cuat", "ro caricia", "s y un/ncuen"], ["to."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "2DJWa4Suv6c", "delay": 0}]}
+{
+    "cancion": "Hoy-por-ti",
+    "banda": "joan-manuel-serrat",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "A#",
+                    "C",
+                    "Am",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F5",
+                    "F5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F5",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F5",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "F5",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "cansado tu ",
+            "perdida,  nos curamo ",
+            "las heridas con a",
+            "jí, ",
+            "hoy por ti, ma",
+            "ñana por mí. ",
+            "/n"
+        ],
+        [
+            "Si ",
+            "caminas yo te s",
+            "igo, si te cans",
+            "as hago un nido en el a",
+            "racé, ",
+            "hoy por ti, mañ",
+            "ana también. /n"
+        ],
+        [
+            "En tus ",
+            "sueños me despero, ",
+            "con tus alas alzo el ",
+            "vuelo, tú, la flor, ",
+            "yo el coliví. /n"
+        ],
+        [
+            "Hoy por ti, ",
+            "mañana por mí, hoy por ",
+            "ti, mañana por ",
+            "mí, hoy por ti, m",
+            "añana por mí. /n"
+        ],
+        [
+            "Si estás t",
+            "riste, yo ",
+            "te inve",
+            "nto cuatro car",
+            "icias un cue",
+            "nto. ",
+            "",
+            "/n"
+        ],
+        [
+            "Ni te ",
+            "tiro de las riendas, ",
+            "ni te tiro con las p",
+            "rendas que ofr",
+            "ecí, hoy por ",
+            "ti, mañana por ",
+            "mí. ",
+            "/n"
+        ],
+        [
+            "No me ",
+            "mientas, que te creo, ",
+            "por las cuentas del de",
+            "seo, muérete, ",
+            "hoy por ",
+            "ti, mañana por ",
+            "mí. ",
+            "al contrario ",
+            "viceversa, en la ",
+            "buena en la persa, ",
+            "del derecho del revés. /n"
+        ],
+        [
+            "Tú ",
+            "primero, el mun",
+            "do después, tú primero, ",
+            "el mundo después, tú pri",
+            "mero, el mundo después",
+            ". /n"
+        ],
+        [
+            "Tú tan jove",
+            "n, yo tan ",
+            "viejo, me ",
+            "dijo el monte al c",
+            "onejo. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ha rebujado en ",
+            "tu manta, de imploro ",
+            "al gallo que canta, ",
+            "hoy ",
+            "por ti, ",
+            "mañana por mí. /n"
+        ],
+        [
+            "No ",
+            "te mueras, ",
+            "no te mueras, ",
+            "si me muero, no me ha",
+            "gas con mi dinero un funeral. ",
+            "/n"
+        ],
+        [
+            "Guárdalo p",
+            "ara el cannabis, ",
+            "",
+            "el amor no tiene ju",
+            "ra, es eterno mient",
+            "ras dura. \n\nAtop",
+            "eo al rale",
+            "ntí, hoy por ",
+            "ti, mañana ",
+            "por ",
+            "",
+            "mí. /n"
+        ],
+        [
+            "Vas ",
+            "vuelo, ",
+            "me aband",
+            "ona, el r",
+            "ofuego, la marc",
+            "elona. /n"
+        ],
+        [
+            "En la noche ",
+            "de \n\nSan \n\nJu",
+            "an, es ",
+            "una costill ",
+            "de hada. /n"
+        ],
+        [
+            "Mi amor, mi ",
+            "compliceito, ",
+            "que en la calle cobac",
+            "o, somos mucho más ",
+            "que dos. /n"
+        ],
+        [
+            "Hoy por mí, ",
+            "mañana por vos, hoy por ",
+            "mí. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "2DJWa4Suv6c",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -2,14 +2,23 @@
     "cancion": "luna-radiante",
     "banda": "los-autenticos-decadentes",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "D",
                     "D",
                     "D",
                     "D",
@@ -19,37 +28,189 @@
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Bm",
-                    "Em",
-                    "Em7",
                     "Gm",
-                    "Bb",
+                    "Gm",
                     "Em",
-                    "A",
-                    "D"
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "D",
-                    "D",
-                    "D7",
-                    "D"
+                    "Em",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Gm",
+                    "Gm",
+                    "Gm",
                     "D",
                     "Em",
                     "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Gm",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Gm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Gm",
+                    "Gm",
                     "Em",
+                    "D",
                     "D",
                     "Em",
                     "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Gm",
+                    "Gm",
+                    "D",
+                    "D",
+                    "Em",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "Gm",
+                    "Gm",
+                    "D",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D",
+                    "D",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -57,93 +218,203 @@
             0,
             1,
             2,
-            1,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
         [
-            "Luna radiante en un bail",
-            "e/n"
-        ],
-        [
-            "al aire libre/n"
-        ],
-        [
-            "fondo de natur",
-            "aleza/n"
-        ],
-        [
-            "del litoral",
+            "Buena ",
+            "noches. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "En una noche como és",
-            "ta/n"
+            "L",
+            "una radiante en un ",
+            "baile al aire ",
+            "libre  /n"
         ],
         [
-            "consumimos el fruto p",
-            "rohibido/ny a mí "
+            "F",
+            "ondo de na",
+            "turaleza del l",
+            "itoral ",
+            "/n"
         ],
         [
-            "me encantó./n"
+            "En una noche c",
+            "omo esta debajo de ",
+            "un árbol que no se of",
+            "endió /n"
         ],
         [
-            "Suena el acordeón/n"
+            "Consumimos  el fruto p",
+            "rohibido mi me ",
+            "encantó  ",
+            "/n"
         ],
         [
-            "de mi corazón/n"
+            "Suena acordeó ",
+            "en mi corazó ",
+            "cada vez que te vu",
+            "elvo ver es que ",
+            "no puedo ya ni c",
+            "oncentrarme si estás ju",
+            "nto mí /n"
         ],
         [
-            "cada vez que te vuelvo a v",
-            "er/n"
+            "D",
+            "esde esta noche ",
+            "quedaron  mis cinc",
+            "o sentidos sediento ",
+            "de voz \n\nSe ",
+            "me ofrecen mancar",
+            "es no les encuen",
+            "tro el sab",
+            "or /n"
         ],
         [
-            "y es que no puedo ya ni concent",
-            "rarme/n"
+            "Ya se cubrió ",
+            "la sulfida explo",
+            "sión como una estre",
+            "lla fugaz \n\nSu",
+            "rcan todos los cielo",
+            "s un camino de ",
+            "luz hacia un abi",
+            "smo sin fin /n"
         ],
         [
-            "si estás junto a m",
-            "í/n"
+            "Ya se cubri ",
+            "la sulfida expl",
+            "osión como una est",
+            "rella fugaz /n"
         ],
         [
-            "Desde esa noche que",
-            "daron/n"
+            "Surcan todos los ciel",
+            "os un camino de ",
+            "luz hacia un abi",
+            "smo sin fin ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "se me ofrecen manjare",
-            "s/n"
+            "Luna radi",
+            "ante en un baile ",
+            "al aire libre ",
+            "/n"
         ],
         [
-            "y no les encuentro el sabor/n"
+            "Fondo ",
+            "de naturale",
+            "za del litoral ",
+            "/n"
         ],
         [
-            "Así ocurrió/nla sut"
+            "En una ",
+            "noche como esta ",
+            "debajo  de un árbol ",
+            "que no se ofend",
+            "ió \n\nConsumimo ",
+            "el fruto prohibido ",
+            "mi me enca",
+            "ntó /n"
         ],
         [
-            "il explosión/n"
+            "Su",
+            "ena acordeón en mi ",
+            "corazón  cada ",
+            "vez que te vuelvo ver ",
+            "es que no pue",
+            "do ya ni concentra",
+            "rme si estás junto ",
+            "mí /n"
         ],
         [
-            "como una estrella fug",
-            "az/n"
+            "Desd",
+            "e esta noche qued",
+            "aron mis cinco sen",
+            "tidos sedientos de ",
+            "voz \n\nSe me o",
+            "frecen mancares ",
+            "no les encuentro el ",
+            "sabo /n"
         ],
         [
-            "surcando los cielos un cam",
-            "ino de luz/n"
+            "Ya ",
+            "se cubrió la su",
+            "lfida explosió ",
+            "como una estrella f",
+            "ugaz \n\nSu",
+            "rcan todos los cielos un c",
+            "amino de luz ",
+            "hacia  un abismo ",
+            "sin fin /n"
         ],
         [
-            "hacia un abismo sin fi",
-            "n."
+            "Ya se cubrió la ",
+            "sulfida  explos",
+            "ión como una estrella ",
+            "fugaz  /n"
+        ],
+        [
+            "Surcan  todos los cielos un ",
+            "camino  de luz ",
+            "hacia un abismo ",
+            "sin fin /n"
+        ],
+        [
+            "Hacia un abism ",
+            "sin fin /n"
+        ],
+        [
+            "Hacia un abism",
+            "o sin ",
+            "fin ",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "jrQ9sNeFo20",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

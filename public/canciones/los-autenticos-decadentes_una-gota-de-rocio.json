@@ -2,25 +2,145 @@
     "cancion": "una-gota-de-rocio",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
                     "C",
                     "D",
-                    "G"
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C",
+                    "C",
                     "G",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D",
                     "G"
                 ]
@@ -29,118 +149,143 @@
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            0,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Hay una gota de rocío",
-            ",/ny br"
+            "/n"
         ],
         [
-            "illa el agua de tu pie",
-            "l,/n"
+            "Hay ",
+            "una gota de roc",
+            "ío ",
+            "brilla el agua ",
+            "de tu pie",
+            "l. /n"
         ],
         [
-            "hoy las retamas y los lir",
-            "ios,/nse r"
+            "Hoy las retamas ",
+            "los lirios ",
+            "se ríe ",
+            "porque te vuelvo v",
+            "er. si una flor se ",
+            "rizca amor, si ",
+            "un árbol rizca amo",
+            "r, se l",
+            "lena toda la alma ",
+            "mía.  si ",
+            "con vos perdía por amor ",
+            "si me vuelve un día por ",
+            "amor, ",
+            "no llores que todo ",
+            "es fantasí",
+            "a. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ien porque te vuelvo a ver",
-            "./nY si una flor se ri"
+            "Hay ",
+            "una gota de ro",
+            "cío bril",
+            "lando en el ",
+            "vino aquel ",
+            "/n"
         ],
         [
-            "e es que hay amor,/ny si un árbol r"
+            "Vas pintando todo el ",
+            "río ",
+            "tu pelo d",
+            "orado pinc",
+            "el. las estresas b",
+            "rillan, hay amor, si tus ",
+            "ojos lloran, hay amor /n"
         ],
         [
-            "ie es que hay amor,/nse l"
-        ],
-        [
-            "lena toda el alma mia",
-            ",/ny si convoco el di"
-        ],
-        [
-            "a por amor,/nsi me vuelo un dia"
-        ],
-        [
-            " por amor,/nno l"
-        ],
-        [
-            "lores que todo es fantasí",
-            "a./n"
-        ],
-        [
-            "Hay una gota de rocío",
-            ",/nbril"
-        ],
-        [
-            "lando en el pino aquel",
-            ",/n"
-        ],
-        [
-            "vas pintando todo el rio,",
-            "/ntu p"
-        ],
-        [
-            "elo dorado pincel",
-            "./nSi las estrellas br"
-        ],
-        [
-            "illan hay amor,/nSi tus ojos bril"
-        ],
-        [
-            "lan hay amor,/nel m"
-        ],
-        [
-            "undo se llena de vida",
-            ",/ny si convoco el di"
-        ],
-        [
-            "a por amor,/nsi me vuelo un dia"
-        ],
-        [
-            " por amor,/nno l"
-        ],
-        [
-            "lores que todo es fantasí",
-            "a./nY si una flor se r"
-        ],
-        [
-            "e es que hay amor,/ny si un árbol r"
-        ],
-        [
-            "ie es que hay amor,/nse l"
-        ],
-        [
-            "lena toda el alma mí",
-            "a,/ny si convoco el di"
-        ],
-        [
-            "a por amor,/nsi me vuelo un dia"
-        ],
-        [
-            " por amor,/nno l"
-        ],
-        [
-            "lores que todo es fantasí",
-            "a."
+            "El mu",
+            "ndo se llena de ",
+            "vida. si ",
+            "con vos perdía por amor, ",
+            "si me vuelve un día por ",
+            "amor, ",
+            "no llores que tod",
+            "o es fantasía. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "si con vos perdía por amor, si me vuelve un día por amor, no llores que todo es fantasía. si una flor se rizc",
+            "a amor, si un ",
+            "árbol rizca amor ",
+            "se lle",
+            "na toda la alma m",
+            "ía. si con ",
+            "vos perdía por amor, ",
+            "si me vuelve un día por a",
+            "mor, no l",
+            "lores que todo es ",
+            "fantasía ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "si con vos perdía por amor, si me vuelve un día por amor, no llores que todo es fantasía. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "aClTXyQOUGw",
-            "delay": 0
+            "delay": 6000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

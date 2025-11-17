@@ -2,18 +2,33 @@
     "cancion": "mil-noches",
     "banda": "los-autenticos-decadentes",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "Am",
+                    "F",
+                    "C",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "F",
                     "C",
-                    "C",
-                    "C",
-                    "G#"
+                    "C"
                 ]
             },
             {
@@ -23,39 +38,182 @@
                     "C",
                     "C",
                     "C",
-                    "G#",
                     "C",
-                    "G#",
+                    "C",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Bb",
-                    "G#",
-                    "G"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "C",
-                    "Dm",
-                    "Am",
-                    "F"
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "G",
+                    "Bb",
+                    "Bb",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "G#",
+                    "G#",
+                    "C",
                     "C",
                     "Dm",
+                    "Dm",
+                    "Bb",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Bb",
                     "Am",
                     "F",
-                    "Em",
-                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Bb",
+                    "Bb",
+                    "G#",
+                    "G#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Dm",
+                    "Bb",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Bb",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bb",
+                    "G#",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Dm",
+                    "Bb",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
                     "C"
                 ]
             }
@@ -64,133 +222,194 @@
             0,
             1,
             2,
-            2,
             3,
             4,
-            2,
-            2,
-            3,
-            4
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "No hay nada nuevo bajo el sol,/n"
-        ],
-        [
-            "ni nada nuevo tras la luna./n"
-        ],
-        [
-            "No encuentro nada más/nque pueda conmoverm"
-        ],
-        [
-            "e,/naunque quier"
-        ],
-        [
-            "a.../n"
-        ],
-        [
-            "No puedo encontrar la razón,/n"
-        ],
-        [
-            "las cosas no tienen sentido./n"
-        ],
-        [
-            "No encuentro nada más que pueda conmover",
-            "me,/naunque quier"
-        ],
-        [
-            "a,/nconmoverm"
-        ],
-        [
-            "e,/naunque quie"
-        ],
-        [
-            "ra./n"
-        ],
-        [
-            "Sí tus ojos me h",
-            "ablaran/nde cosas que no con"
-        ],
-        [
-            "ozco,/n"
-        ],
-        [
-            "sí pudiera tu c",
-            "uerpo/nllevarme a ese lu"
-        ],
-        [
-            "gar./n"
-        ],
-        [
-            "Pasaría mil noches mirándote,/n"
-        ],
-        [
-            "y alzaría el sol para poder ver/n"
-        ],
-        [
-            "tu cuerpo, b",
-            "rillando en el mar",
-            "./n"
-        ],
-        [
-            "Pasaría mil noches mirándote,/n"
-        ],
-        [
-            "y alzaría el sol para poder ver/n"
-        ],
-        [
-            "tu cuerpo, b",
-            "rillando en el ma",
-            "r.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Sí tus ojos me h",
-            "ablaran/nde cosas que no con"
+            "Esta es una canción en españo ",
+            "de rock argentino. \n\nNo hay nada nue",
+            "vo bajo el sol /n"
         ],
         [
-            "ozco,/n"
+            "Ni nada nuev",
+            "o tras la lun",
+            "a \n\nNo encuentro nad",
+            "a más que pueda c",
+            "onmov",
+            "erme \n\nAunque q",
+            "uier",
+            "/n"
         ],
         [
-            "sí pudiera tu c",
-            "uerpo/nllevarme a ese lu"
+            "No puedo encontrar ",
+            "la razón \n\nLas ",
+            "cosas no tiene ",
+            "sentido \n\nNo ",
+            "encuentro nada más ",
+            "que pueda con",
+            "mover",
+            "me \n\nAunque qui",
+            "era ",
+            "/n"
         ],
         [
-            "gar./n"
+            "Conmove",
+            "rme \n\nAunque qu",
+            "iera /n"
         ],
         [
-            "Pasaría mil noches mirándote,/n"
+            "Si tus ",
+            "ojos me hablaran ",
+            "de cosas que no ",
+            "conozco  /n"
         ],
         [
-            "y alzaría el sol para poder ver/n"
+            "Si pu",
+            "diera tu cuerpo lle",
+            "varme hacia ese lu",
+            "gar \n\nPa",
+            "saría mil no",
+            "ches mirándote ",
+            "alzaría el sol \n\nP",
+            "ara poder ver ",
+            "tu cuer",
+            "po brilland ",
+            "en el mar /n"
         ],
         [
-            "tu cuerpo, b",
-            "rillando en el mar",
-            "./n"
+            "Pas",
+            "aría mil noche",
+            "s mirándote ",
+            "alzaría  el sol \n\nPa",
+            "ra poder ver ",
+            "tu cuerpo ",
+            "brillando  ",
+            "en el mar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Pasaría mil noches mirándote,/n"
+            "P",
+            "asaría mil noches mirándote alza",
+            "ría el sol \n\nQue no c",
+            "onozc",
+            "o \n\nSi p",
+            "udiera tu cuerpo l",
+            "levarme hacia ese l",
+            "ugar /n"
         ],
         [
-            "y alzaría el sol para poder ver/n"
+            "Pasaría  mil ",
+            "noches  mirándot ",
+            "alzaría el sol /n"
         ],
         [
-            "tu cuerpo, b",
-            "rillando en el mar."
+            "Para poder ver ",
+            "tu cuer",
+            "po brillan",
+            "do en el ",
+            "mar \n\nPas",
+            "aría mil no",
+            "ches mirándote ",
+            "alzaría el sol \n\nP",
+            "ara poder ver ",
+            "tu cuer",
+            "po brilland ",
+            "en el mar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Conmov",
+            "erme \n\nAunque qui",
+            "era /n"
+        ],
+        [
+            "Conmoverme  \n\nAunque q",
+            "uiera /n"
+        ],
+        [
+            "Si tus ojos me hablaran de ",
+            "cosas que no cono",
+            "zco \n\nSi pudiera tu ",
+            "cuerpo llevarme hacia ese lug",
+            "ar \n\nPasaría ",
+            "mil noches mirándote al",
+            "zaría el sol \n\nPara poder ver ",
+            "tu cuerpo bri",
+            "llando en el mar /n"
+        ],
+        [
+            "Pasaría mil noch",
+            "es mirándote alzaría el ",
+            "sol \n\nPara poder ver tu ",
+            "cuerpo brillando ",
+            "en el mar ",
+            "/n"
+        ],
+        [
+            "Pasaría mil noches mirándote alzaría el sol \n\nPasaría mil noches mirándote alzaría el sol "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "-N1P0NhbVcc",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }
