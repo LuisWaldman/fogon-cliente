@@ -37,6 +37,7 @@ export class ReproductorConectado extends Reproductor {
         desde,
         compas, // duracionGolpe
       )
+      appStore.MediaVistas?.Iniciar?.()
       this.sincronizar()
       if (appStore.cancion) {
         if (appStore.compas < 0) {
