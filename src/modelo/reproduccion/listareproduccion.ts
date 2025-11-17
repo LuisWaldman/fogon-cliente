@@ -6,14 +6,21 @@ export class ListaReproduccion {
   async InsertarEnListaReproduccion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
     const nuevaLista = []
+    if (appStore.nroCancion > appStore.listaReproduccion.length) {
+      appStore.nroCancion = appStore.listaReproduccion.length;
+    }
     for (let i = 0; i < appStore.listaReproduccion.length; i++) {
       if (i === appStore.nroCancion) {
+        nuevaLista.push(appStore.listaReproduccion[i])
         nuevaLista.push(cancion)
+      } else {
+        nuevaLista.push(appStore.listaReproduccion[i])
       }
-      nuevaLista.push(appStore.listaReproduccion[i])
     }
-    if (appStore.nroCancion === appStore.listaReproduccion.length) {
+    if (appStore.listaReproduccion.length === 0) {
       nuevaLista.push(cancion)
+    } else {
+      appStore.nroCancion++
     }
     appStore.listaReproduccion = nuevaLista
   }
@@ -32,6 +39,11 @@ export class ListaReproduccion {
   async ClickCancion(cancion: ItemIndiceCancion) {
     await this.InsertarEnListaReproduccion(cancion)
     await this.CargarCancion(cancion)
+  }
+  async ClickCancionNro(nro: number) {
+    const appStore = useAppStore()
+    appStore.nroCancion = nro
+    await this.CargarCancion(appStore.listaReproduccion[nro])
   }
 
   Agregar(item: ItemIndiceCancion) {

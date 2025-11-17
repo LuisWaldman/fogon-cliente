@@ -69,8 +69,12 @@ const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
 const appStore = useAppStore()
 
-function clickTocar(cancion: ItemIndiceCancion) {
-  appStore.aplicacion.ClickTocar(cancion)
+function clickTocar(cancion: ItemIndiceCancion, indice: number) {
+  if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
+    appStore.aplicacion.ClickCancionNro(indice)
+  } else {
+    appStore.aplicacion.ClickTocar(cancion)
+  }
 }
 
 function clickBorrarLista(cancion: ItemIndiceCancion) {
@@ -454,7 +458,9 @@ async function AgregarALista(index: number, listaseleccionada: string) {
         :cargando="cargandoCanciones"
         :agregarLista="AgregarALista"
         :nro-cancion="appStore.nroCancion"
-        :ver-cancion-actual="viendoOrigen === 'reproduccion' && viendo === 'listas'"
+        :ver-cancion-actual="
+          viendoOrigen === 'reproduccion' && viendo === 'listas'
+        "
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
         :ver-borrar="viendo != 'inicio'"

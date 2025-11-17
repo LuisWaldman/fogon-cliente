@@ -1,4 +1,5 @@
-z<script setup lang="ts">
+z
+<script setup lang="ts">
 import { ref, computed } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
@@ -55,7 +56,7 @@ function arreglartexto(texto: string): string {
 
 const viendoFiltroTabla = ref(false)
 const filtroTexto = ref<string>('')
-const viendoDetalle = ref<string | null>(null)
+const viendoDetalle = ref<number | null>(null)
 
 const cancionesFiltradas = computed(() => {
   if (!viendoFiltroTabla.value) return props.canciones
@@ -68,18 +69,13 @@ const cancionesFiltradas = computed(() => {
   })
 })
 
-function VerDetalle(cancion: ItemIndiceCancion) {
-  const id = `${cancion.banda}-${cancion.cancion}`
-  if (viendoDetalle.value === id) {
-    viendoDetalle.value = null
-  } else {
-    viendoDetalle.value = id
-  }
+function VerDetalle(index: number) {
+  viendoDetalle.value = index
 }
 
 const tiempo = new Tiempo()
-function Reproducir(cancion: ItemIndiceCancion) {
-  emit('tocar', cancion)
+function Reproducir(cancion: ItemIndiceCancion, index: number) {
+  emit('tocar', cancion, index)
 }
 function Borrar(cancion: ItemIndiceCancion) {
   emit('borrar', cancion)
@@ -127,7 +123,12 @@ function Borrar(cancion: ItemIndiceCancion) {
     </tbody>
     <tbody v-if="canciones.length > 0 && props.cargando == false">
       <template v-for="(cancion, index) in cancionesFiltradas" :key="index">
-        <tr @click="VerDetalle(cancion)" :class="{ selecionada: (index  === nroCancion) && verCancionActual}">
+        <tr
+          @click="VerDetalle(index)"
+          :class="{ tocando: index === nroCancion && verCancionActual,
+            seleccionado: index === viendoDetalle
+           }"
+        >
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
@@ -153,9 +154,11 @@ function Borrar(cancion: ItemIndiceCancion) {
           <td></td>
         </tr>
         <tr
-          v-if="viendoDetalle === `${cancion.banda}-${cancion.cancion}`"
+          v-if="viendoDetalle === index"
           data-detail
-          :class="{ selecionada: index  === nroCancion && verCancionActual}"
+          :class="{ tocandodetalle: index === nroCancion && verCancionActual,
+                  seleccionado: index === viendoDetalle
+           }"
         >
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
@@ -208,7 +211,7 @@ function Borrar(cancion: ItemIndiceCancion) {
               </div>
 
               <div class="botoneraDetalle">
-                <button @click="Reproducir(cancion)">▶ Tocar</button>
+                <button @click="Reproducir(cancion, index)">▶ Tocar</button>
                 <button @click="agregandoLista = true">🗒️ Lista</button>
                 <button @click="Borrar(cancion)" v-if="verBorrar">
                   🗑 Borrar
@@ -340,7 +343,13 @@ td {
   }
 }
 
-.selecionada {
+.tocando {
+  background: radial-gradient(ellipse at bottom, #000000 0%, #6a700f 100%);
+}
+.tocandodetalle {
+  background: radial-gradient(ellipse at top, #000000 0%, #6a700f 100%);
+}
+.seleccionado {
   background-color: #70726a;
 }
 </style>
