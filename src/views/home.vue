@@ -454,7 +454,7 @@ async function AgregarALista(index: number, listaseleccionada: string) {
         :cargando="cargandoCanciones"
         :agregarLista="AgregarALista"
         :nro-cancion="appStore.nroCancion"
-        :ver-cancion-actual="viendoOrigen === 'reproduccion'"
+        :ver-cancion-actual="viendoOrigen === 'reproduccion' && viendo === 'listas'"
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
         :ver-borrar="viendo != 'inicio'"

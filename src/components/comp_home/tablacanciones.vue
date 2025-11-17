@@ -127,7 +127,7 @@ function Borrar(cancion: ItemIndiceCancion) {
     </tbody>
     <tbody v-if="canciones.length > 0 && props.cargando == false">
       <template v-for="(cancion, index) in cancionesFiltradas" :key="index">
-        <tr @click="VerDetalle(cancion)" :class="{ selecionada: index  === nroCancion && verCancionActual}">
+        <tr @click="VerDetalle(cancion)" :class="{ selecionada: (index  === nroCancion) && verCancionActual}">
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
