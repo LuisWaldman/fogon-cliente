@@ -94,7 +94,6 @@ function arreglartexto(texto: string): string {
 
   return processed
 }
-
 </script>
 
 <template>
@@ -144,17 +143,20 @@ function arreglartexto(texto: string): string {
             @click="selectSong(index)"
           >
             <div class="song-info">
-              <div class="song-title"><emoticonOrigen :origen="cancion.origenUrl" /> {{ arreglartexto(cancion.cancion) }}</div>
+              <div class="song-title">
+                <emoticonOrigen :origen="cancion.origenUrl" />
+                {{ arreglartexto(cancion.cancion) }}
+              </div>
               <div class="song-artist">{{ arreglartexto(cancion.banda) }}</div>
             </div>
             <div class="song-duration">
               {{
-              tiempo.formatSegundos(
-                (60 / cancion.bpm) *
-                  cancion.totalCompases *
-                  cancion.compasCantidad,
-              )
-            }}
+                tiempo.formatSegundos(
+                  (60 / cancion.bpm) *
+                    cancion.totalCompases *
+                    cancion.compasCantidad,
+                )
+              }}
             </div>
           </div>
         </div>
