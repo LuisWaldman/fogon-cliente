@@ -3,6 +3,12 @@ import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 
 export class ListaReproduccion {
+  async ClickTocarLista(lista: ItemIndiceCancion[]) {
+    const appStore = useAppStore()
+    appStore.listaReproduccion = lista
+    appStore.nroCancion = 0
+    return this.CargarCancion(appStore.listaReproduccion[appStore.nroCancion])
+  }
   async InsertarEnListaReproduccion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
     const nuevaLista = []

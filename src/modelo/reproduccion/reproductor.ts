@@ -15,6 +15,9 @@ export class Reproductor {
     await this.listaReproduccion.ClickCancion(cancion)
   }
 
+  async ClickTocarLista(lista: ItemIndiceCancion[]) {
+    await this.listaReproduccion.ClickTocarLista(lista)
+  }
   async ClickCancionNro(nro: number) {
     await this.listaReproduccion.ClickCancionNro(nro)
   }

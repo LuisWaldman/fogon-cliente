@@ -76,6 +76,14 @@ function clickTocar(cancion: ItemIndiceCancion, indice: number) {
     appStore.aplicacion.ClickTocar(cancion)
   }
 }
+function tocarLista() {
+  if (viendoLista.value == null || viendoLista.value === '') {
+    alert('Por favor, selecciona una lista para reproducir.')
+    return
+  }
+  console.log('Tocando lista:', viendoLista.value)
+  appStore.aplicacion.ClickTocarLista(viendoCanciones.value)
+}
 
 function clickBorrarLista(cancion: ItemIndiceCancion) {
   viendoCanciones.value = viendoCanciones.value.filter(
@@ -417,6 +425,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
               ➕<span class="button-text">Nueva Cancion</span>
             </button>
             <subirCancion v-if="viendo === 'canciones'"></subirCancion>
+            
+
+          <button @click="tocarLista" v-if="viendo === 'listas'">
+              ▶<span class="button-text">Tocar Lista</span>
+            </button>
             <button @click="addingLista = true" v-if="viendo === 'listas'">
               ➕<span class="button-text">Nueva Lista</span>
             </button>
