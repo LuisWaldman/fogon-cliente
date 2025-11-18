@@ -12,15 +12,11 @@ export class Reproductor {
     return this.cancion
   }
   async ClickCancion(cancion: ItemIndiceCancion) {
-    const appStore = useAppStore()
     await this.listaReproduccion.ClickCancion(cancion)
-    appStore.MediaVistas = null
   }
 
   async ClickCancionNro(nro: number) {
-    const appStore = useAppStore()
     await this.listaReproduccion.ClickCancionNro(nro)
-    appStore.MediaVistas = null
   }
 
   async Next() {
