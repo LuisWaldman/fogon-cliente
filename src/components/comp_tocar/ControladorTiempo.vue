@@ -3,6 +3,8 @@ import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { Tiempo } from '../../modelo/tiempo'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useAppStore } from '../../stores/appStore'
+
+import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 const appStore = useAppStore()
 
 const tiempo = new Tiempo()
@@ -75,6 +77,24 @@ onMounted(() => {
 onUnmounted(() => {
   document.removeEventListener('click', closePlaylistOnOutsideClick)
 })
+
+function arreglartexto(texto: string): string {
+  if (texto == null || texto === undefined) return ''
+  let processed = texto.replace(/-/g, ' ')
+  if (processed.length === 0) return processed
+
+  // First letter lowercase, rest uppercase
+  processed =
+    processed.charAt(0).toUpperCase() + processed.slice(1).toLocaleLowerCase()
+
+  // Truncate if longer than 50 characters
+  if (processed.length > 50) {
+    processed = processed.substring(0, 47) + '...'
+  }
+
+  return processed
+}
+
 </script>
 
 <template>
@@ -124,16 +144,17 @@ onUnmounted(() => {
             @click="selectSong(index)"
           >
             <div class="song-info">
-              <div class="song-title">{{ cancion.cancion }}</div>
-              <div class="song-artist">{{ cancion.banda }}</div>
+              <div class="song-title"><emoticonOrigen :origen="cancion.origenUrl" /> {{ arreglartexto(cancion.cancion) }}</div>
+              <div class="song-artist">{{ arreglartexto(cancion.banda) }}</div>
             </div>
             <div class="song-duration">
-              {{ Math.floor(cancion.duracionCancion() / 60) }}:{{
-                String(Math.floor(cancion.duracionCancion() % 60)).padStart(
-                  2,
-                  '0',
-                )
-              }}
+              {{
+              tiempo.formatSegundos(
+                (60 / cancion.bpm) *
+                  cancion.totalCompases *
+                  cancion.compasCantidad,
+              )
+            }}
             </div>
           </div>
         </div>
