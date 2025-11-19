@@ -1,5 +1,8 @@
 import { useAppStore } from '../../stores/appStore'
+import type { Cancion } from '../cancion/cancion'
+import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import { OrigenCancion } from '../cancion/origencancion'
 import type { ClienteSocket } from '../conexion/ClienteSocket'
 import { ListaReproduccion } from './listareproduccion'
 
@@ -27,6 +30,26 @@ export class ListaReproduccionConectada extends ListaReproduccion {
     const nroCancion = await response.json()
     const appStore = useAppStore()
     appStore.nroCancion = nroCancion.nroCancion
+    this.CargarCancion(appStore.listaReproduccion[appStore.nroCancion])
+  }
+
+  override async CargarCancion(cancion: ItemIndiceCancion) {
+    const appStore = useAppStore()
+    if (appStore.rolSesion != 'director') {
+      appStore.estadosApp.texto = 'Esperando que el director envie la cancion'
+    } else {
+      appStore.estadosApp.texto = 'Obteniendo cancion para enviar...'
+      const cancionObtenida = await CancionManager.getInstance().Get(
+        ItemIndiceCancion.GetOrigen(cancion),
+      )
+      appStore.estadosApp.texto = 'Enviando cancion...'
+      this.EnviarCancion(cancionObtenida)
+    }
+  }
+
+  async EnviarCancion(cancion: Cancion) {
+    const origenN = new OrigenCancion('fogon', '', '')
+    CancionManager.getInstance().Save(origenN, cancion)
   }
 
   async CargarLista(): Promise<void> {
