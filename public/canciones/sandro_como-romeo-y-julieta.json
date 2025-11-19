@@ -1,1 +1,475 @@
-{"cancion": "Como-Romeo-y-Julieta", "banda": "sandro", "escala": "Cm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Cm", "Cmmaj7", "Cm7", "Cm6", "Fm", "Bb7", "Eb", "C7", "Csus", "C7", "Fm", "Bb7", "Gm", "C7", "Fm", "Gsus", "G7", "C7", "Fm", "Bb7", "Gm", "Abdim7", "Ab7", "G7", "Cm", "Fm", "Bb7", "Gm", "C7", "Fm", "G7", "Cm", "Fm", "Bb7", "Gm", "Cm", "Fm", "G7", "Cm", "Fm", "Cm", "Fm", "G7", "Cm", "Fm", "Bb7", "Gm", "Cm", "Fm", "G7", "Cm", "Fm", "Bb7", "Gm", "Cm", "Fm", "G7", "Cm", "Bb", "Ab", "Fm", "G7", "Cm"]}], "orden_partes": [0]}, "letras": [["Por qu\u00e9 si no hay raz\u00f3", "n       y con tanta o", "bsesi\u00f3n", "   pretenden s", "epararnos/nPrejuzgan nuestro honor siendo el m\u00e1s puro amo"], ["r que el cielo pudo d", "arnos", "/nPor qu\u00e9 por la tra"], ["ici\u00f3n", "   de una simple opini\u00f3n de la gente ind", "iscreta/nDebemos"], [" desaparece", "r como en la esc", "ena del ayer ", "    ", " de Romeo y", " Julieta", "", "/nDebemos"], [" desaparec", "er como en la e", "scena del aye", "r de Romeo ", "y Julieta", "/nComo Romeo y Jul"], ["ieta ", "  con tal de amarte y tener", "te ya ", "que no quieren ver/nNues"], ["tras almas unidas un", "amos nuestras vidas con la mue", "rte/nComo Romeo y Jul"], ["ieta  ", " con la frialdad de un invier", "no  c", "omo Romeo y Julieta", "/nAbramos pronto las p"], ["uertas del azul o del infi", "erno", "", "", "", "", "/nComo Romeo y Rul"], ["ieta ", "   pero sin pena ni glor", "ia   c", "omo romeo y Juliet", "a/nEn un segundo y el "], ["mundo seguir\u00e1 su trayec", "toria/nComo Romeo y Jul"], ["ieta, mi amor  ", "  pero en un fr\u00edgido le", "cho  ", "te digo desangrando/nte "], ["amo, amor, te quiero y m", "uero muy feliz junto a tu pe", "cho/nAmor, te d"], ["igo desangra", "ndo te amo, amo", "r, te quiero y mue", "ro muy feliz/nJunto a tu p"], ["echo"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "6sTujZlF4X8", "delay": 0}]}
+{
+    "cancion": "Como-Romeo-y-Julieta",
+    "banda": "sandro",
+    "escala": "Cm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cmmaj7",
+                    "Cmmaj7",
+                    "Cmmaj7",
+                    "Cmmaj7",
+                    "Cmmaj7",
+                    "Cmmaj7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Cmmaj7",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Gm Ab7",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Gm Ab7",
+                    "Gm Ab7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Gm Ab7",
+                    "Bb7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb7",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Gm Ab7",
+                    "Gm Ab7",
+                    "Gm",
+                    "Gm",
+                    "Gm Ab7",
+                    "Gm Ab7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "C7",
+                    "C7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Fm",
+                    "Fm",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "Bb7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Fm",
+                    "Fm",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Porq",
+            "u  si no hay r",
+            "azó ",
+            "con tanta",
+            "obsesi",
+            "ó /n Pretenden",
+            "sep",
+            "ara",
+            "rn /n"
+        ],
+        [
+            "Prejudga",
+            "nuestro hono",
+            "r /n Siendo e",
+            "l  más puro a",
+            "mo /n Que el c",
+            "iel  pu",
+            "d  da",
+            "r  nosot",
+            "ro /n ¿Por qu",
+            "é /n Por la tra",
+            "ició /n De u",
+            "n  simple op",
+            "inió /n D",
+            "la gente in",
+            "disc",
+            "ret /n D",
+            "ebemo ",
+            "desapare",
+            "c /n Como en la e",
+            "scen  de la tie",
+            "rr /n D",
+            "e /n Romeo/n"
+        ],
+        [
+            "Juli",
+            "e /n"
+        ],
+        [
+            "Debe",
+            "mo  desaparece/n"
+        ],
+        [
+            "Como en l",
+            "escena de la ti",
+            "err /n D",
+            "e /n Romeo/n"
+        ],
+        [
+            "Jul",
+            "ie /n C",
+            "om /n Rome",
+            "o /n J",
+            "ul",
+            "ie/n"
+        ],
+        [
+            "Con tal d",
+            "amarte",
+            "tene",
+            "rt /n Y",
+            "a  que no quieren",
+            "ver nuestra",
+            "almacen",
+            "a /n Unamo",
+            "s  nuestras vid",
+            "a  con la m",
+            "uert",
+            "e /n Com",
+            "o /n Romeo/n"
+        ],
+        [
+            "Jul",
+            "iet/n"
+        ],
+        [
+            "Con l",
+            "a  frialdad de u",
+            "n  inv",
+            "iern /n C",
+            "omo /n R",
+            "ome /n J",
+            "uliet /n Abramo",
+            "pronto la",
+            "s  puertas del az",
+            "u  del i",
+            "nfie",
+            "rn ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "omo /n R",
+            "ome /n"
+        ],
+        [
+            "Juli",
+            "et /n"
+        ],
+        [
+            "Pero s",
+            "i  pena n",
+            "i  glori/n"
+        ],
+        [
+            "C",
+            "om /n Rom",
+            "e /n Juli",
+            "et /n En un segu",
+            "nd  el m",
+            "und  seguir",
+            "su tray",
+            "ectori/n"
+        ],
+        [
+            "Com",
+            "o /n Romeo/n"
+        ],
+        [
+            "Juliet/n"
+        ],
+        [
+            "En u",
+            "n",
+            "seg",
+            "und",
+            "",
+            "el",
+            "m",
+            "u",
+            "n",
+            "d",
+            "o",
+            "",
+            "",
+            "",
+            "s",
+            "e",
+            "g",
+            "u",
+            "i  su tr",
+            "ayectori /n Como Romeo Julieta En un segundo el mundo seguirá su trayectoria Como Romeo Julieta/n"
+        ],
+        [
+            "E  u",
+            "n segundo el mundo seguirá su trayectoria /n M",
+            "i  a",
+            "m",
+            "o",
+            "r ",
+            "mi a",
+            "mor  m",
+            "i",
+            "amor /n M",
+            "i  amo",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 172,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "6sTujZlF4X8",
+            "delay": 6500.0
+        }
+    ],
+    "calidad": 1
+}

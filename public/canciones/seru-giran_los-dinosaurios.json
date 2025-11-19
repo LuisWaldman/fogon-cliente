@@ -1,1 +1,417 @@
-{"cancion": "los-dinosaurios", "banda": "seru-giran", "escala": "C", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Gm", "Bb9"]}, {"nombre": "parte2", "acordes": ["C", "Bb9", "Am", "Ab", "G"]}, {"nombre": "parte3", "acordes": ["C", "F", "Bb", "Am", "Gm", "Am", "Em", "F"]}, {"nombre": "parte4", "acordes": ["F", "C", "C/", "B", "Am", "Bm", "F#m", "G"]}, {"nombre": "parte5", "acordes": ["G", "A", "F#", "Bm", "G", "D", "A", "Bm"]}], "orden_partes": [0, 1, 0, 2, 3, 4]}, "letras": [["migos del barrio/npueden desapare"], ["cer./nLos can"], ["tores de radio/npueden desapare"], ["cer./nLos que es"], ["t\u00c3\u00a1n en el aire/nPueden desapare"], ["cer en el aire/nLos que es"], ["t\u00c3\u00a1n en la calle/nPueden desapare"], ["cer en la calle./nLos a"], ["migos del barrio/npueden desapare"], ["cer./nPero "], ["los dinosaurios/nvan a desapare"], ["cer./n"], ["  No estoy tranq", "uilo mi amor/nhoy es s\u00c3\u00a1bado a la"], [" noche/nun "], ["amigo est\u00c3\u00a1 en cana./n"], ["Oh! Mi a", "mor/ndesaparece el "], ["mundo./n"], ["  Si los pes", "ados mi amor/nllevan todo ese mont\u00c3\u00b3n de e"], ["quip", "aje en la m", "ano,/n"], ["Oh! Mi a", "mor/nyo quiero estar l"], ["iviano./nCuando el "], ["mundo tira para ab", "ajo/nes m"], ["ejor no estar atado a n", "ada/nima"], ["ginen a los dinos", "aurios/n"], ["en la c", "ama."]], "medias": [{"tipo": "Youtube", "id": "BAuqozi64WQ", "delay": 0}]}
+{
+    "cancion": "los-dinosaurios",
+    "banda": "seru-giran",
+    "escala": "C",
+    "bpm": 161,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Bb",
+                    "G",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bb9",
+                    "Am",
+                    "Am",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bb9",
+                    "C",
+                    "Bb9",
+                    "Bb9",
+                    "Am",
+                    "Am",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "G",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Bb",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Gm",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "F",
+                    "F",
+                    "C",
+                    "Bb9",
+                    "Bb9",
+                    "Bm",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bb",
+                    "F#",
+                    "G",
+                    "G",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bb9",
+                    "G",
+                    "G",
+                    "Bb",
+                    "F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bb9",
+                    "Gm",
+                    "Bb9",
+                    "Bb9",
+                    "Am",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Am",
+                    "Am",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bb9",
+                    "C",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Am",
+                    "Ab",
+                    "Ab",
+                    "G",
+                    "G",
+                    "Bb9",
+                    "Bb9"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9",
+                    "Bb9"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est",
+            "a es una canción en español de rock argentino. /n Los amig",
+            "o  del barrio pu",
+            "ede  desapa",
+            "rece /n"
+        ],
+        [
+            "Los cantore",
+            "del radio puede",
+            "n  desapar",
+            "ece /n"
+        ],
+        [
+            "Los que están e",
+            "n  los diarios pueden",
+            "desaparece /n"
+        ],
+        [
+            "L",
+            "a  persona q",
+            "u  amas puede d",
+            "esaparece /n"
+        ],
+        [
+            "L",
+            "o  que están en e",
+            "aire pueden des",
+            "aparece  en e",
+            "aire /n L",
+            "o  que están en la c",
+            "all  pueden desap",
+            "arece  en la c",
+            "all /n Lo",
+            "amigos del barr",
+            "i  pueden desa",
+            "parece /n"
+        ],
+        [
+            "Pero l",
+            "os  dinosaurios",
+            "va  desa",
+            "parece /n"
+        ],
+        [
+            "No estoy tran",
+            "quil  mi amor hoy e",
+            "s  sábado la noche un a",
+            "migo  está en canal/n"
+        ],
+        [
+            "O",
+            "h  mi am",
+            "or  desaparece",
+            "e mundo /n S",
+            "i  los pes",
+            "ado  de amor llevan t",
+            "od  ese monto, deje i",
+            "nvadir  el amad",
+            "o /n O",
+            "h  mi amo",
+            "r  yo quiero estar viv",
+            "iend /n"
+        ],
+        [
+            "Cuando el mundo ti",
+            "r  para abajo",
+            ",  es mejor no esta",
+            "r  atado nad",
+            "a /n Imaginen l",
+            "os  dinosaurios e",
+            "n  la cama/n"
+        ],
+        [
+            "Cu",
+            "and  el mundo tira pa",
+            "r  abajo,",
+            "es mejor no estar atad",
+            "nada /n Im",
+            "agine  los din",
+            "osaurio  en l",
+            "a  cama",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lo  am",
+            "igo  del barri",
+            "pueden desa",
+            "parece/n"
+        ],
+        [
+            "Los canto",
+            "re  del barrio pue",
+            "de  desapa",
+            "rece /n L",
+            "o  que están en",
+            "los diarios pueden desaparecer /n Los diarios pueden",
+            "desap",
+            "arec /n L",
+            "a  persona qu",
+            "e  amas puede d",
+            "esaparec/n"
+        ],
+        [
+            "L",
+            "o  que están en el a",
+            "ire  pueden de",
+            "sapare",
+            "c /n L",
+            "o  que están en la call",
+            "e  pueden desapa",
+            "rece  en la ca",
+            "ll /n Los am",
+            "igo  del barrio",
+            "pueden desa",
+            "parece/n"
+        ],
+        [
+            "Pero lo",
+            "s  dinosaurios va",
+            "n  desapar",
+            "ece ",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "BAuqozi64WQ",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

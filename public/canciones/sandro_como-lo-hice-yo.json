@@ -1,1 +1,213 @@
-{"cancion": "Como-Lo-Hice-Yo", "banda": "sandro", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Am", "C", "Dm", "A7", "Dm", "G7", "C", "Am", "Dm", "F", "E7", "Am", "C", "Dm", "A7", "Dm", "G7", "C", "Am", "Dm", "E7", "Am", "F", "G7", "C", "A7", "Dm", "G7", "C", "Am", "F", "G7", "C", "A7", "F", "E7", "Am", "C", "Dm", "A7", "Dm", "G7", "C", "Am", "Dm", "Am", "Dm", "G7", "C", "Am", "Dm", "E7", "Am", "E7", "Am", "E7", "Am"]}], "orden_partes": [0]}, "letras": [["No s\u00e9 si", " tendras en tu vida ", "/nqui\u00e9n te d\u00e9 "], ["cari\u00f1o como lo hi", "ce yo, /nno "], ["s\u00e9 si qu", "err\u00e1n a", "brazarte /n"], ["despu\u00e9s de a", "marte c", "omo lo hice y", "o /nNo "], ["s\u00e9 si tendras qui\u00e9n te e", "spere, /no que dese"], ["spere como lo hice", " yo /nno "], ["s\u00e9 si te", "ndr\u00e1s quien te", " cele, /n"], ["o que te reg", "a\u00f1e,c", "omo lo hice yo", " /n Tendra"], ["s qui\u00e9n te llev", "e las ro", "sas /n"], ["en cada ma\u00f1a", "na, c", "omo lo hic", "e y", "o /n"], ["tendras qui\u00e9n te", " llene d", "e beso", "s /nen cada r"], ["egreso como lo hice ", "yo /n\u00a1Ay! "], ["no s\u00e9, si tendras otra ", "hoguera /nque te queme t"], ["anto como lo hice y", "o /nmas "], ["nunca tendr", "as quien te qui", "era /n"], ["te lo juro por \u00e9", "sta ...Como lo hice y", "o /nMas "], ["nunca tend", "r\u00e1s quien te ", "quiera /n"], ["te lo juro por \u00e9", "sta /n"], ["Como lo hice y", "o /n"], ["Como lo hice ", "yo,c", "omo lo hice y", "o"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "lzXWQmjFpII", "delay": 0}]}
+{
+    "cancion": "Como-Lo-Hice-Yo",
+    "banda": "sandro",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "C",
+                    "Dm",
+                    "F",
+                    "F",
+                    "G7 A7",
+                    "A7",
+                    "A7",
+                    "F C",
+                    "C",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7",
+                    "Am",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "F",
+                    "G7 A7",
+                    "A7",
+                    "A7",
+                    "F C",
+                    "C",
+                    "A7",
+                    "A7",
+                    "Am",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  sé si tendr",
+            "á en tu vida /n Qu",
+            "ie  te dé cariño com",
+            "o /n Luis Ello N",
+            "o  sé si qu",
+            "errá  abrazarte/n"
+        ],
+        [
+            "Despué  de amarte c",
+            "om /n Luis Ell",
+            "o /n No sé s",
+            "i  tendrás quien te esper",
+            "que desespere",
+            "com /n Luis Ell",
+            "o /n No sé si t",
+            "endrás  quien te cere",
+            "que te reg",
+            "añ como /n Luis Ell",
+            "o /n Tendrás",
+            "quie  te lleve las ros",
+            "a /n En cada mañan",
+            "como /n Luis El",
+            "l /n Tendrá",
+            "quien te llene de be",
+            "so /n En cada regres",
+            "o como /n Luis Ell/n"
+        ],
+        [
+            "No s",
+            "si tendrás otra hogue",
+            "r /n Que te queme tan",
+            "t como /n Luis E",
+            "ll /n Mas nun",
+            "c  tendrás quien te qu",
+            "ier /n Lo juro por es",
+            "ta como /n Luis El",
+            "l /n Mas nu",
+            "nc  tendrás quien te qui",
+            "er /n Lo juro por e",
+            "sta, como /n Luis E",
+            "ll ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ten",
+            "drá  quien te lleve las r",
+            "osas /n En cada ma",
+            "ñan como /n Luis E",
+            "ll /n Ten",
+            "drá  quien te llene de b",
+            "eso /n En cada re",
+            "gres como /n Luis E",
+            "llo /n No s",
+            "é  si tendrás otra hog",
+            "uer /n Que te queme ta",
+            "nt como /n Luis El",
+            "l /n Mas n",
+            "unc  tendrás quien te q",
+            "uier /n Lo juro por e",
+            "sta como /n Luis E",
+            "l /n Mas n",
+            "unc  tendrás quien te q",
+            "uiera /n Lo juro por e",
+            "sta, como /n Luis E",
+            "ll /n Como Lu",
+            "i /n Ello Co",
+            "m /n Luis El",
+            "l "
+        ]
+    ],
+    "bpm": 112,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "lzXWQmjFpII",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

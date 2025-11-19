@@ -1,1 +1,296 @@
-{"cancion": "facil-de-olvidar", "banda": "sandro", "escala": "Em", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "Am", "B7", "Em", "Am", "D7", "G", "E7", "Am", "B7", "Em", "F#7", "B7", "Am", "B7", "Em", "Am", "D7", "G", "E7", "Am", "B7", "Em", "F#7", "B7", "Em", "Am", "D7", "G", "E7", "Am", "B7", "Em", "F#7", "B7", "Am", "D7", "Bm", "Em", "Am", "D7", "G", "E7", "Am", "B7", "Em", "Am", "B7", "Em", "E7", "Am", "B7", "Em", "Am", "B7", "Em", "D", "Em", "D", "Em"]}], "orden_partes": [0]}, "letras": [["Yo s", "oy  ", "ese tan f\u00e1cil de ", "olvidar/ntan f\u00e1cil "], ["de dejar p", "erdido en la", " distancia.", "/nY"], ["o soy el que resi", "gna su dolor", "/npues sabe qu"], ["e tu amor se aleja sin cle", "mencia./nNo s"], ["oy  ", "lo que se dice la ", "virtud/ntampoco juven"], ["tud va", "lora mi exis", "tencia.", "/nCompr"], ["endo y justifi", "co tu acti", "tud/ntratando d"], ["ecorar tu actual ado", "lescencia./nNo soy el prototipo del am"], ["ante/ntamp"], ["oco una pasi", "n despierto en ti", "", "/nm\u00e1s m"], ["uero al compr", "ender que a cada insta", "nte/npret"], ["endes alejarte tu de mi", "./nM\u00e1s "], ["vete, cuando qui", "eras, cuanto ", " antes", "/nno cr"], ["eas ", " que al marcharte he de morir", "", "/nyo he mu"], ["erto ", " desde el d\u00eda en qu", "e dejaste/nde sonre"], ["\u00edr, est", "ando junto a m", "i.", "/nyo he mu"], ["erto ", " desde el d\u00eda en qu", "e dejaste/nde sonre"], ["\u00edr, est", "ando junto a mi", ".", "", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "_FjBqGt1L_8", "delay": 0}]}
+{
+    "cancion": "facil-de-olvidar",
+    "banda": "sandro",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F#7",
+                    "F#7",
+                    "F#7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "D7",
+                    "D7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7 B7",
+                    "D7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "B7",
+                    "B7",
+                    "D7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "B7",
+                    "D7",
+                    "D7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "B7",
+                    "D7",
+                    "D7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    "letras": [
+        [
+            "en l",
+            "a  vida./n"
+        ],
+        [
+            "Y",
+            "soy el que",
+            "resign  su d",
+            "olor ",
+            "pues sabe que tu",
+            "amo  se a",
+            "lej  sin cl",
+            "emencia /n N",
+            "o  s",
+            "o  lo q",
+            "u  se dice en la vi",
+            "rtud  e",
+            "l  poco juvent",
+            "u  valora m",
+            "i  existen",
+            "cia /n"
+        ],
+        [
+            "Comprendo j",
+            "ustific  tu",
+            "actitud ",
+            "tratand",
+            "de escora",
+            "tu actual a",
+            "dolescenc/n"
+        ],
+        [
+            "No s",
+            "oy  e",
+            "l  prototipo del a",
+            "mant",
+            "e  tamp",
+            "oc  una pasió",
+            "n  despierto en t",
+            "i. /n"
+        ],
+        [
+            "Más mue",
+            "r  al comprender q",
+            "ue  cada i",
+            "nstan",
+            "preten",
+            "de  alejart",
+            "tú de m",
+            "í /n M",
+            "á  vet",
+            "cuando quieras,",
+            "cuand  ant",
+            "e  no",
+            "lo creas",
+            ",  que al marcharte d",
+            "e  mor",
+            "ir /n Yo h",
+            "muert",
+            "desde el día en que",
+            "dejas",
+            "t  de so",
+            "nreí  est",
+            "and  junto",
+            "mí. /n Y",
+            "o",
+            "he muerto desde e",
+            "l  día en que",
+            "dejas",
+            "t  de so",
+            "nreí  est",
+            "and  junto",
+            "mí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Más v",
+            "ete  cuando q",
+            "uieras  cuando",
+            "ante  n",
+            "o  lo c",
+            "reas,  que",
+            "al marcharte de m",
+            "orir/n"
+        ],
+        [
+            "Yo he mu",
+            "ert  desde e",
+            "l  día en que de",
+            "jast  d",
+            "e  sonr",
+            "eí  estan",
+            "d  junto m",
+            "í /n Y",
+            "o  he mue",
+            "rt  desde",
+            "e  día en que de",
+            "jast  d",
+            "e  sonr",
+            "eí  estan",
+            "d  junto",
+            "m",
+            "í ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "_FjBqGt1L_8",
+            "delay": 28290.0
+        }
+    ],
+    "calidad": 1
+}

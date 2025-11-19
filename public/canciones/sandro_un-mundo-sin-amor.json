@@ -1,1 +1,252 @@
-{"cancion": "Un-mundo-sin-amor", "banda": "sandro", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "G#7", "C#m", "E", "Am", "E"]}, {"nombre": "parte2", "acordes": ["F#m", "B7", "E"]}, {"nombre": "parte3", "acordes": ["C", "B7"]}, {"nombre": "parte4", "acordes": ["E7", "Am", "E", "Am", "F#m"]}], "orden_partes": [0, 1, 2, 0, 1, 3, 2, 0, 1, 2, 0, 1, 3, 2, 0, 1, 2, 1]}, "letras": [["En mi soled", "ad/npre"], ["gunto sin cesar/nsi es ver"], ["dad/nque el que"], ["rer/nse podra per"], ["der/ncomo sue"], ["\u00f1o que solo logr", "\u00f3/nnada m\u00e1s que d"], ["olor", "", "/n"], ["En mi soled", "ad/npre"], ["gunto sin cesar/nsi es ver"], ["dad/nque el que"], ["rer/nse podra per"], ["der/ncomo sue"], ["\u00f1o que solo logr", "\u00f3/nnada m\u00e1s que d"], ["olor", "/n"], ["En un mundo sin amor/n"], ["En un mundo sin amor/n"], ["En un mundo sin amor/n"], ["yo perd\u00ed mi f", "e y n", "unca tu querer", "/nolvidar"], ["\u00e9/nel f"], ["r\u00edo del adi\u00f3s me ven", "cio/ny sin t"], ["i (Sin", " ti, sin ti)/nes "], ["vano gritar un dolo", "r/nque no tiene ya "], ["fin", "", "/n"], [], ["En mi mundo sin amor/n"], ["En un mundo sin amor/n"], ["En un mundo sin amor/n"], ["yo perd\u00ed mi f", "e y n", "unca tu querer", "/nolvidar"], ["\u00e9/nel f"], ["r\u00edo del adi\u00f3s me ven", "cio/ny sin t"], ["i (Sin", " ti, sin ti)/nes en "], ["vano gritar un dolo", "r/nque no tiene ya "], ["fin", "", "/nEn un "], ["mundo asi sin amor", "/nyo no quiero vi"], ["vir"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "IuKVXoAbzxo", "delay": 0}]}
+{
+    "cancion": "Un-mundo-sin-amor",
+    "banda": "sandro",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#7",
+                    "G#7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Am",
+                    "F#m",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "Am",
+                    "F#m",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "Am",
+                    "Am",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "E",
+                    "E",
+                    "C#m",
+                    "Am",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Am",
+                    "E",
+                    "Am",
+                    "E",
+                    "E",
+                    "F#m",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "E",
+                    "E",
+                    "C#m",
+                    "Am",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#m",
+                    "E",
+                    "G#7",
+                    "G#7",
+                    "G#7",
+                    "G#7",
+                    "G#7",
+                    "G#7",
+                    "G#7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "/n"
+        ],
+        [
+            "En m",
+            "i  soled",
+            "ad  pregunt",
+            "sin cesar",
+            ",  si es verda",
+            "que el querer",
+            "s  podrá pe",
+            "rder ",
+            "como un sueño que s",
+            "olo  logró, nada m",
+            "á  que dolor.",
+            "/n"
+        ],
+        [
+            "En mi",
+            "soledad",
+            "pregunto s",
+            "i  cesar,",
+            "si es verdad qu",
+            "e  el querer s",
+            "e  podrá perd",
+            "er ",
+            "como un sueño que sol",
+            "o  logró, nada má",
+            "que dolor.",
+            "/n"
+        ],
+        [
+            "E  un mun",
+            "d  sin amor",
+            "en un mund",
+            "o  sin amor",
+            "en un mundo",
+            "si  amor,",
+            "yo perdí m",
+            "fe nunca tu qu",
+            "ere olvidaré. /n E",
+            "l  f",
+            "rí  del a",
+            "dió  me ve",
+            "nci  sin t",
+            "i,  sin ti",
+            "sin ti",
+            ",  es en va",
+            "n  gritar un dolor q",
+            "u  no tiene ya fi",
+            "n ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En mi m",
+            "undo  sin am",
+            "or  en un",
+            "mund  sin am",
+            "or  en u",
+            "n  mundo sin am",
+            "or  yo pe",
+            "rd  mi fe nu",
+            "nc  tu querer./n"
+        ],
+        [
+            "Olvidaré,",
+            "el frío d",
+            "e  adiós m",
+            "e  venció",
+            "sin ti,",
+            "sin ti, sin t",
+            "i, ",
+            "es en vano gritar u",
+            "n  dolor que no tie",
+            "n  ya fin./n"
+        ],
+        [
+            "E",
+            "un mundo así si",
+            "n  amor, yo no quiero",
+            "vivir ",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "IuKVXoAbzxo",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

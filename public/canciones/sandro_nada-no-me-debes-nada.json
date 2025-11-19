@@ -1,1 +1,380 @@
-{"cancion": "nada-no-me-debes-nada", "banda": "sandro", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "Am", "Dm"]}, {"nombre": "parte2", "acordes": ["G", "C", "E", "Am", "Dm", "E"]}, {"nombre": "parte3", "acordes": ["Am", "Em", "Dm", "C", "Dm", "Am", "Dm", "E"]}], "orden_partes": [0, 1, 2]}, "letras": [[], ["or donde andar", "s/nQuiz\u00e1s bus"], ["cando l", "o que qued\u00f3 atr", "\u00e1s/nSi ya se fu"], ["e, si muerto est", "/nTu culpa fu"], ["e, paciencia, que m\u00e1s d", "a./nPorque n"], ["ada, no me debes nada/nNo te debo n"], ["ada/nSi al final de cuenta la deuda pes"], ["ada/nDe aguantar lo nuestro ya te la pagu"], ["\u00e9/nNada, no me debes nada, solo debes irte"], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "VncTZD0URZY", "delay": 0}]}
+{
+    "cancion": "nada-no-me-debes-nada",
+    "banda": "sandro",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Dm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "E",
+                    "E",
+                    "Am",
+                    "E",
+                    "Dm",
+                    "Em",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "E",
+                    "Am",
+                    "C Em",
+                    "Dm",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "E",
+                    "E",
+                    "Am",
+                    "C Em",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "C",
+                    "Dm",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "E",
+                    "E",
+                    "Am",
+                    "C Em",
+                    "Dm",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "E",
+                    "Am",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "M",
+            "gran amo",
+            "r  do",
+            "nd  and",
+            "as ",
+            "quizá busc",
+            "and  l",
+            "o  que quedo",
+            "atrás /n S",
+            "i  ya s",
+            "fue,",
+            "si muerto e",
+            "stá, ",
+            "tu culpa f",
+            "u  pacienc",
+            "ia  ¿qué más d",
+            "a? /n S",
+            "i  ya te v",
+            "as, ",
+            "no busques m",
+            "ás ",
+            "ni t",
+            "e  imagines q",
+            "u  algo ll",
+            "evarás /n"
+        ],
+        [
+            "S  ya",
+            "t  di t",
+            "odo  d",
+            "e  mí",
+            ",  dime q",
+            "u  más m",
+            "e  puedes e",
+            "xigi",
+            "r  porque n",
+            "ada  no me debes na",
+            "da  no te perdo",
+            "nará  si al final t",
+            "cuentas la deuda pes",
+            "ad  de aguantar lo",
+            "nuestro, ya te la",
+            "pagué./n"
+        ],
+        [
+            "N",
+            "ad  no me debes n",
+            "ada  solo deb",
+            "e irte. /n Si lo dec",
+            "idist  fue porque qui",
+            "siste  no me des más c",
+            "uentas /n Llév",
+            "atel  todo vete d",
+            "una vez, porq",
+            "u  nada no me deb",
+            "e  nada. no te be",
+            "b  nada si al final t",
+            "e  cuentas la deuda p",
+            "esada  de aguan",
+            "ta  lo nuestro, ya te l",
+            "a  pagué.",
+            "/n"
+        ],
+        [
+            "Nad  no me de",
+            "be  nada, solo d",
+            "ebe irte. /n Si l",
+            "decidiste fue por",
+            "qu  quisiste, no me des",
+            "má cuentas. /n Ll",
+            "évatel  todo vete de",
+            "una vez, qu",
+            "iz  después",
+            "l",
+            "o  pensará",
+            "s /n Q",
+            "uiz  tal v",
+            "e  descub",
+            "ra  la ver",
+            "dad ",
+            "pero ahora e",
+            "s",
+            "muy tarde y",
+            "a. /n"
+        ],
+        [
+            "Cruza esa p",
+            "uert  n",
+            "o  regreses m",
+            "ás ",
+            "porque nad",
+            "no me debes nada. n",
+            "o  te bebo nad",
+            "si al final te cuen",
+            "ta  la deuda pesad",
+            "de aguantar lo nues",
+            "tro  ya te la p",
+            "agué /n"
+        ],
+        [
+            "Na",
+            "da  no me debes nad",
+            "a  solo debes ir",
+            "te /n Si lo decid",
+            "ist  fue porque quis",
+            "iste  no me des más cu",
+            "entas /n Llévatelo t",
+            "od  vete de una v",
+            "ez  porque n",
+            "ada  no me debes n",
+            "ada  no te bebo n",
+            "ada  si al final t",
+            "e  cuentas la deuda pe",
+            "sad  de aguantar l",
+            "o  nuestro, ya te la",
+            "pagué ",
+            "/n"
+        ],
+        [
+            "Nada no me de",
+            "be  nada, solo de",
+            "be irte. /n Si l",
+            "o  decidiste fue porque q",
+            "uisiste  no me des m",
+            "á cuentas. /n Llév",
+            "atel  todo vete de u",
+            "na  vez, por",
+            "qu  nada no me d",
+            "ebe  nada. no te b",
+            "eb  nada si al fin",
+            "a  te cuentas la deud",
+            "pesada de agua",
+            "nta  lo nuestro, ya te",
+            "l  pag",
+            "ué /n"
+        ],
+        [
+            "Nada no m",
+            "e  debes nada, so",
+            "l  debes irte./n"
+        ],
+        [
+            "Si lo decidiste fue p",
+            "orqu  quisiste, no m",
+            "e  des más...",
+            ""
+        ]
+    ],
+    "bpm": 172,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "VncTZD0URZY",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

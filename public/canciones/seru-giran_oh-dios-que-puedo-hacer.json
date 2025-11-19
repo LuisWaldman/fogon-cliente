@@ -1,1 +1,503 @@
-{"cancion": "oh-dios-que-puedo-hacer", "banda": "seru-giran", "escala": "D", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "Dmaj7", "D", "Dmaj7", "Em7", "Em7/G", "Em7", "Em7/G"]}, {"nombre": "parte2", "acordes": ["F#m", "Bm", "Em"]}, {"nombre": "parte3", "acordes": ["F#m", "Bm", "A"]}], "orden_partes": [0, 0, 1, 1, 1, 2, 0, 0, 1, 1, 1, 2, 0, 0]}, "letras": [["Oh ", "no, que ", "voy a hac", "er si mi amor se", " va", "", "", "/n"], ["Oh ", "no, que ", "voy hacer", " si mi amor se v", "a", "", "", "/n"], ["La ma\u00c3\u00b1a", "na, sient", "e bien/n"], ["Por la t", "arde, la ", "pena empieza a crecer/n"], ["Es de no", "che, y te", "ngo que gritar/n"], ["Viene el", " dia, y v", "uelvo a trabajar/n"], ["Dig", "o 'Hola'", " mentes e", "n blanco a mi al", "rededo", "r", "", "/n"], ["Se ", "enamoran", " de su ca", "rrera y su posic", "ion", "", "", "/n"], ["De mi ca", "sa, me qu", "iero ir/n"], ["En la ca", "lle, la f", "iesta debe seguir/n"], ["Estoy so", "lo, y qui", "ero estar con Dios/n"], ["Esta vid", "a es como", " una prision/n"], ["Que", " voy a h", "acer si m", "i amor se va", "", "", "", "/n"], ["Que", " voy a h", "acer si m", "i amor se va", "", "", "", ""]], "medias": [{"tipo": "Youtube", "id": "tAtSUcoL0ns", "delay": 0}]}
+{
+    "cancion": "oh-dios-que-puedo-hacer",
+    "banda": "seru-giran",
+    "escala": "D",
+    "bpm": 172,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A Dmaj7",
+                    "A",
+                    "A",
+                    "A Dmaj7",
+                    "A Dmaj7",
+                    "A Dmaj7",
+                    "A",
+                    "A Dmaj7",
+                    "A",
+                    "A",
+                    "A Dmaj7",
+                    "A",
+                    "A",
+                    "A Dmaj7",
+                    "A Dmaj7",
+                    "A",
+                    "A",
+                    "A Dmaj7",
+                    "A Dmaj7",
+                    "A Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "F#m",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est",
+            "e",
+            "una canción en español de rock argentino. ten",
+            "g  que grit",
+            "a /n"
+        ],
+        [
+            "Vien  el",
+            "dí ",
+            "vuelvo tr",
+            "abaja ",
+            "",
+            "/n"
+        ],
+        [
+            "Di",
+            "g  ho",
+            "l /n Mentes e",
+            "n  blanco a",
+            "lrededo ",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "e  en",
+            "amor /n"
+        ],
+        [
+            "De s",
+            "u  carrer",
+            "su posi",
+            "ció ",
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "e  mi ca",
+            "s  me q",
+            "uier  ir",
+            "/n"
+        ],
+        [
+            "En la c",
+            "alle  la",
+            "fiest  debe segu",
+            "i /n"
+        ],
+        [
+            "Estoy s",
+            "olo ",
+            "quiero salir con /n D",
+            "io /n E",
+            "st",
+            "vida e",
+            "s  como una",
+            "prisió",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "e mi casa me quiero ir /n De m",
+            "i  casa me quiero ir",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "e  m",
+            "i  casa me quiero ir/n"
+        ],
+        [
+            "Q",
+            "u  voy ha",
+            "ce /n S",
+            "i  mi amor s",
+            "e  va",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que v",
+            "oy  hac",
+            "e /n S",
+            "i  mi am",
+            "o  se v",
+            "a ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De mi casa me quiero ir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "e  m",
+            "i casa me quiero ir /n Grac",
+            "ia ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "tAtSUcoL0ns",
+            "delay": 23540.0
+        }
+    ],
+    "calidad": 1
+}
