@@ -3,7 +3,7 @@ import { useAppStore } from '../stores/appStore'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
@@ -123,9 +123,27 @@ async function clickOrigen(viendostr: string) {
   }
   await vistaControl.clickViendoOrigen(viendostr)
   await vistaControl.iniciar()
-  actualizarVista()
+  Cargar()
   return
 }
+
+watch(
+  () => appStore.nroCancion,
+  () => {
+    if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
+      Cargar()
+    }
+  },
+)
+
+watch(
+  () => appStore.listaReproduccion,
+  () => {
+    if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
+      actualizarVista()
+    }
+  },
+)
 
 function confirmarNuevaLista() {
   if (nuevaLista.value.trim() === '') {
