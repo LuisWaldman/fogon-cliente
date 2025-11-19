@@ -2,17 +2,41 @@
     "cancion": "pulpito",
     "banda": "babasonicos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "G",
-                    "A"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
@@ -20,92 +44,199 @@
                 "acordes": [
                     "E",
                     "E",
+                    "E",
+                    "E",
                     "G",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "Em",
+                    "G",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
-            0,
-            0,
-            1,
-            0,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Voy a dar que hablar/nVo"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "y a defraud",
-            "ar/nV"
+            "E",
+            "st  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oy a pescar con la red",
-            " un gran pulpo",
-            "/nA desafiar "
+            "Me voy",
+            "dar que hablar, me voy",
+            "defraudar /n Voy",
+            "pescar con la red,",
+            "un gran pulpo desafiar /n Qu",
+            "e  lo llevo de bult",
+            "o  busco que me quieran",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "que lo llevo de bu",
-            "lto/nBus"
+            "M  voy dar q",
+            "u  hablar, me voy de",
+            "frauda /n Voy pes",
+            "ca  con la red, un gra",
+            "pulpo desafiar /n Que lo",
+            "llevo de bulto,",
+            "busco que me quieran",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "co que me qui",
-            "eran./n"
+            "Que l",
+            "o  llevo de bulto, busco que me quieran/n"
         ],
         [
-            "Voy a dar que hablar/nVo"
+            "Voy dar que hablar",
+            ",  v",
+            "o",
+            "y  dar que hab",
+            "la /n Bu",
+            "sc  que m",
+            "e  quieran",
+            "",
+            "/n"
         ],
         [
-            "y a defraud",
-            "ar/nV"
+            "Busco que m",
+            "e  quieran",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oy a pescar con la red",
-            " un gran pulpo",
-            "/nA desafiar "
-        ],
-        [
-            "que lo llevo de bu",
-            "lto/nBus"
-        ],
-        [
-            "co que me qui",
-            "eran./n"
-        ],
-        [
-            "Oooooh oh oh oh/n"
-        ],
-        [
-            "Oooooh oh o",
-            "h oh/n"
-        ],
-        [
-            "Oooooh oh oh oh/n"
-        ],
-        [
-            "Oooooh oh o",
-            "h oh/n"
-        ],
-        [
-            "Oooooh oh oh oh/n"
-        ],
-        [
-            "Oooooh oh o",
-            "h oh"
+            "Busco que me quieran"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "gpSMVNVnQ5A",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

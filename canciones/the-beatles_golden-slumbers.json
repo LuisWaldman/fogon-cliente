@@ -8,35 +8,49 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am7",
+                    "G7",
+                    "G7",
+                    "E",
+                    "E",
                     "Dm",
-                    "D4/A",
-                    "D5/A",
-                    "D4/A",
-                    "G7"
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "F",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "E",
-                    "Am",
                     "Dm",
                     "G7",
-                    "C"
+                    "G7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
-                    "F",
-                    "C",
-                    "C",
-                    "F"
+                    "Am7",
+                    "G7",
+                    "G7",
+                    "E",
+                    "Am",
+                    "Dm"
                 ]
             }
         ],
@@ -44,70 +58,43 @@
             0,
             1,
             2,
-            1,
-            0,
-            1
+            3
         ]
     },
     "letras": [
         [
-            "Once, there was a way to get back h",
-            "omewa",
-            "rd",
-            "",
             "/n"
         ],
         [
-            "Once, there was a way to get back ho",
-            "me/nSl"
+            "throws away t",
+            "o  get back ho",
+            "m /n Sleep pretty darlin",
+            "do not cry /n And",
+            "will sing",
+            "lullaby /n G",
+            "old",
+            "slumbers fil",
+            "your eyes /n S",
+            "mile ",
+            "awak  you when y",
+            "o rise /n Sleep pretty",
+            "darlin  do not cry/n"
         ],
         [
-            "eep pretty darlin",
-            "g, do not cry/n"
-        ],
-        [
-            "  And I will ",
-            "sing a lulla",
-            "by/n"
-        ],
-        [
-            "Golden slum",
-            "bers fill your eye",
-            "s/n"
-        ],
-        [
-            "Smiles awak",
-            "e you when you rise",
-            "/nSl"
-        ],
-        [
-            "eep pretty darli",
-            "ng, do not cry/n"
-        ],
-        [
-            "  And I will ",
-            "sing a lullab",
-            "y/n"
-        ],
-        [
-            "Once, there was a way to get back h",
-            "omewa",
-            "rd",
-            "",
+            "And will",
+            "sin lullaby /n O",
+            "nc  throws a",
+            "wa  t",
+            "o  get back homeward",
             "/n"
         ],
         [
-            "Once, there was a way to get back ho",
-            "me/nSl"
-        ],
-        [
-            "eep pretty darlin",
-            "g, do not cry/n"
-        ],
-        [
-            "  And I will ",
-            "sing a lulla",
-            "by"
+            "Once throws a",
+            "wa  t",
+            "get back home /n Sl",
+            "ee  pretty darling do not c",
+            "ry /n An",
+            "d will sing lullaby /n Golden slumbers fill your eyes"
         ]
     ],
     "bpm": 80,
@@ -115,11 +102,12 @@
         {
             "tipo": "Youtube",
             "id": "AcQjM7gV6mI",
-            "delay": 0
+            "delay": 12390.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

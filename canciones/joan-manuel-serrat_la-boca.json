@@ -1,1 +1,415 @@
-{"cancion": "La-Boca", "banda": "joan-manuel-serrat", "escala": "Dm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm", "D9", "G"]}, {"nombre": "parte2", "acordes": ["G4", "C", "C9", "Dm", "G", "C", "C9", "C"]}, {"nombre": "parte3", "acordes": ["D", "G", "G"]}, {"nombre": "parte4", "acordes": ["F", "C", "G", "F", "G", "C", "F", "G"]}, {"nombre": "parte5", "acordes": ["C", "Dm", "G", "C", "Dm", "G", "C", "C9"]}], "orden_partes": [0, 1, 2, 3, 4, 0, 1]}, "letras": [["A)Boc", "a que arrastra mi bo", "ca.", "/nBoca que me has arras"], ["trad", "o:/na il"], ["umina", "rme de ra", "yos.", "/np\u00e1jaro lleno de"], [" p\u00e1", "jaro", "s./n"], ["B)Canci\u00f3n que ", "vuelve las a", "las/nhacia arriba y hacia a"], ["bajo./n"], ["das a la g", "rama sangr", "ante/ndos tre"], ["mendo", "s aleta", "zos./n"], ["El labio de", " arriba, el ci", "elo/ny la "], ["tierra el", " otro la", "bio.", "/n"], ["vida,", " muerte, amo", "r. Ah", "\u00ed quedan/nescritas sobre tus "], ["labi", "os.../nes"], ["critas sobre tus l", "abios", ".", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "3VzVEHhcd0U", "delay": 0}]}
+{
+    "cancion": "La-Boca",
+    "banda": "joan-manuel-serrat",
+    "escala": "Dm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "A",
+                    "G4",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D9",
+                    "D9",
+                    "G4",
+                    "G4"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G4",
+                    "G4",
+                    "G",
+                    "G",
+                    "C9",
+                    "C9",
+                    "C9"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C9",
+                    "C9",
+                    "C9"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "G",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D9",
+                    "F",
+                    "D9",
+                    "D9"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D9",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D9",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F",
+                    "G4",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "D9",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "D9",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "D9",
+                    "D9",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4",
+                    "G4"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "B",
+            "oca que arrastra mi ",
+            "boca, \n\nBoca ",
+            "que me has ar",
+            "rastrado. /n"
+        ],
+        [
+            "Bo",
+            "ca que vienes de ",
+            "lejos ",
+            "ilumi",
+            "narle ",
+            "de rayos, ",
+            "/n"
+        ],
+        [
+            "Alba que das mis ",
+            "noches un r",
+            "esplanto ro",
+            "jo blanc",
+            "o, \n\nB",
+            "oca poblada de ",
+            "bocas, ",
+            "pája",
+            "ro lleno ",
+            "de pája",
+            "ros, /n"
+        ],
+        [
+            "Canción que vuelve ",
+            "las alas ha",
+            "cia arriba ha",
+            "cia aba",
+            "jo, /n"
+        ],
+        [
+            "Muerta reduci",
+            "da de esos, ",
+            "la sed de morir ",
+            "despacio, /n"
+        ],
+        [
+            "Dos alagramas ",
+            "sangrante,  dos ",
+            "tremendos a",
+            "letazo",
+            "/n"
+        ],
+        [
+            "El labio de arriba, ",
+            "el cielo ",
+            "la tierra en otr",
+            "o labi",
+            "o, /n"
+        ],
+        [
+            "Beso que rueda en ",
+            "la sombra, b",
+            "eso que vien",
+            "e robando /n"
+        ],
+        [
+            "De",
+            "sde el primer ",
+            "cementer",
+            "io hasta ",
+            "los últ",
+            "imos ast",
+            "ros, /n"
+        ],
+        [
+            "Beso que va un ",
+            "porvenir ",
+            "de muchacha ",
+            "muchac",
+            "hos, /n"
+        ],
+        [
+            "Que no dejar",
+            "an desiertos ",
+            "ni las ca",
+            "lles ni ",
+            "los campos, ",
+            "/n"
+        ],
+        [
+            "Cuanta boca ",
+            "ya enterrad",
+            "a, sin boca de",
+            "senterramo",
+            "/n"
+        ],
+        [
+            "Bebo en tu b",
+            "oca por ellos, ",
+            "brindo en tu bo",
+            "ca por tantos, /n"
+        ],
+        [
+            "Que cayero",
+            "n sobre el vino ",
+            "de los amor",
+            "osos vasos, ",
+            "/n"
+        ],
+        [
+            "Hoy son recu",
+            "erdos, recuerdos ",
+            "besos distantes ",
+            "amarg",
+            "os, /n"
+        ],
+        [
+            "Boc ",
+            "que desente",
+            "rraste el am",
+            "anecer en mas ",
+            "claro,  /n"
+        ],
+        [
+            "Con tu l",
+            "engua tres palab",
+            "ras, tres f",
+            "uegos",
+            "aceredados, ",
+            "/n"
+        ],
+        [
+            "Vida",
+            ", muerte, amor ahí q",
+            "uedan escritas s",
+            "obre tus l",
+            "abios, \n\nV",
+            "ida",
+            "muerte, amor ahí q",
+            "uedan",
+            "escritas s",
+            "obre tus l",
+            "abio",
+            "s. ",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 129,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "3VzVEHhcd0U",
+            "delay": 6000.0
+        }
+    ],
+    "calidad": 1
+}

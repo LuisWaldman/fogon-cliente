@@ -8,101 +8,578 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "B",
+                    "A",
+                    "A",
                     "A",
                     "D",
                     "A",
-                    "D"
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "A",
-                    "E",
                     "A",
-                    "E",
-                    "E",
-                    "E"
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
         ]
     },
     "letras": [
         [
-            " I look out my window wat",
-            "ch her as she passes by",
             "",
-            "/n      I s"
-        ],
-        [
-            "ay to myself I'm su",
-            "ch a lucky guy",
             "",
-            "/n     "
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " To have a girl like he",
-            "r is a drea",
-            "m come true",
-            "/n      And of a"
+            "l",
+            "ook ",
+            "out ",
+            "my window and ",
+            "watch her as she passes ",
+            "by. ",
+            "",
+            "see to mysel /n"
         ],
         [
-            "ll the girls in New Yo",
-            "rk she love",
-            "s me true",
-            "/n      It was j"
+            "I'm searching look",
+            "ing out. ",
+            "/n"
         ],
         [
-            "ust my imagination, on",
-            "ce again/n      R"
+            "To have ",
+            "girl like her ",
+            "is dre",
+            "am come tr",
+            "ue. \n\nOf all ",
+            "the girls in \n\nNew \n\nYo",
+            "rk she lo",
+            "ved for true. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "unning away with me",
-            "/n      It was j"
+            "Of ",
+            "all ",
+            "the ",
+            "",
+            "",
+            "girls in \n\nNew \n\nYork she loved for true. \n\nOf all the girls in /n"
         ],
         [
-            "ust my imaginatio",
-            "n/n      Running a"
+            "New \n\nYor",
+            "k she ",
+            "loved ",
+            "for ",
+            "true. \n\nOf ",
+            "all ",
+            "",
+            "the ",
+            "",
+            "",
+            "girls in \n\nNew \n\nYork ",
+            "she ",
+            "",
+            "loved for tru",
+            "e. \n\nOf all the ",
+            "g",
+            "i",
+            "r",
+            "l",
+            "s ",
+            "in \n\nNew /n"
         ],
         [
-            "way with me",
-            "/n     "
+            "Yor",
+            "k she loved for ",
+            "true. /n"
         ],
         [
-            " Every night I hope and pray/n      Or I will su"
+            "Of all ",
+            "the girls in \n\nNew /n"
         ],
         [
-            "rely die\"/n      Her love is "
+            "York she ",
+            "loved for t",
+            "r",
+            "ue. /n"
         ],
         [
-            "ecstasy/n"
+            "Of ",
+            "all ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the girls in \n\nNew \n\nYork she loved for true. \n\nOf ",
+            "all ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the ",
+            "",
+            "",
+            "",
+            "",
+            "girls in \n\nNew \n\nYork she loved for true. \n\nOf ",
+            "all ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the girls in \n\nNew \n\nYork she loved ",
+            "for ",
+            "true",
+            ". \n\nOf ",
+            "all ",
+            "",
+            "",
+            "the ",
+            "",
+            "girls in /n"
         ],
-        [],
-        [],
-        [],
-        []
+        [
+            "New /n"
+        ],
+        [
+            "York she loved for ",
+            "true. /n"
+        ],
+        [
+            "Of all the ",
+            "girls in \n\nNew \n\nYork ",
+            "she ",
+            "loved ",
+            "for ",
+            "true. \n\nOf ",
+            "all the g",
+            "irls in /n"
+        ],
+        [
+            "New \n\nY",
+            "o",
+            "rk she loved for true. \n\nOf ",
+            "all the girls in \n\nNew \n\nYor ",
+            "",
+            "she ",
+            "",
+            "",
+            "loved for t",
+            "r",
+            "u",
+            "e",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Of all the gir",
+            "ls in \n\nNew \n\nYork she loved for tr",
+            "ue. \n\nOf ",
+            "all ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the ",
+            "",
+            "",
+            "",
+            "girls in \n\nNew \n\nYork she loved for true. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Of ",
+            "all the girls in \n\nNew \n\nYork she loved for true. \n\nOf ",
+            "all ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the ",
+            "girls ",
+            "in ",
+            "/n"
+        ],
+        [
+            "New \n\nYork she loved for true. \n\nOf all the girls ",
+            "in \n\nNew \n\nYork she loved for true. "
+        ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "qH3oVVtw4b4",
-            "delay": 0
+            "delay": 4000.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

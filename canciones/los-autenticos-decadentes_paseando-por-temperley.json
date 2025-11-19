@@ -2,168 +2,611 @@
     "cancion": "paseando-por-temperley",
     "banda": "los-autenticos-decadentes",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "E",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "E",
+                    "Bm",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A",
-                    "Bm",
-                    "D",
                     "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C#m",
-                    "D",
-                    "C#m",
-                    "D",
-                    "E",
                     "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "D",
+                    "C#m",
+                    "C#m",
                     "E",
-                    "A",
-                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "Bm",
                     "D",
-                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
                     "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "D",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D",
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte32",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            0,
-            0,
-            1,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
         ]
     },
     "letras": [
-        [],
         [
-            "Paseando por Tempe",
-            "rley./n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Volví a ver a mi m",
-            "uchacha,/n"
+            "Mama",
+            "cita ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tenía oro en su p",
-            "iel./n"
+            "Paseando por /n"
         ],
         [
-            "No lo podía cr",
-            "eer./n"
+            "Tamperley /n"
         ],
         [
-            "De cerca yo la seguía/ncuando ella entra"
+            "Volví  ver ",
+            "mi muchacha /n"
         ],
         [
-            "ba en la discotheque./n"
+            "Tenía por ",
+            "el su piel \n\nNo ",
+            "lo podía ",
+            "creer  /n"
         ],
         [
-            "Sentía que sus caderas/nno las podía ya con"
+            "Del ser que sola seguía cuando ",
+            "me entraba la discoteca \n\nS",
+            "entía que sus cadenas no las po",
+            "día ya contener \n\nBaila",
+            "ba sola miraba desde la barr",
+            "a con timidez \n\nCambiaba ",
+            "ya de careja por quinta ",
+            "vez \n\nPor ",
+            "qué no me ani",
+            "mo con vos b",
+            "ailar /n"
         ],
         [
-            "tener./n"
+            "Reina vict",
+            "oriosa, ",
+            "dame un tema más /n"
         ],
         [
-            "Bailaba y yo la miraba/ndesde la barra con timi"
+            "Bailando contig",
+            "o estaré hasta el f",
+            "inal /n"
         ],
         [
-            "dez./n"
+            "Reina  vict",
+            "oriosa, ",
+            "bailas al compás ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Cambiaba ya de pareja/npor quinta ve"
+            "Baila",
+            "ndo contigo es",
+            "taré hasta el final \n\nReina victoriosa, bailas al compás \n\nBai",
+            "lando contigo estaré hasta el final \n\nReina victoriosa, bailas al compás /n"
         ],
         [
-            "z./ncon vos a bail"
+            "Bai",
+            "lando contigo estaré hasta el final \n\nR",
+            "eina victoriosa, bailas al c",
+            "ompás /n"
         ],
         [
-            "ar./nReina mister"
+            "Reina victoriosa, ",
+            "bailas al comp",
+            "ás \n\nSeguro que en ese instan",
+            "te no se sabía nada que entender /n"
         ],
         [
-            "iosa/ndame un tema "
+            "Volviéndose seduzcone ",
+            "con la mirada mi casa bien /n"
         ],
         [
-            "más./nestaré hasta el f"
+            "Me acerque bien al oído le ",
+            "digo así /n"
         ],
         [
-            "inal./nReina misteri"
+            "Por qué no ",
+            "me animo con vos ",
+            "bai",
+            "lar \n\nReina ",
+            "victori",
+            "osa, dame un t",
+            "ema más \n\nBailand ",
+            "contigo estaré hast",
+            "a el final /n"
         ],
         [
-            "osa/nbailas al co"
+            "Reina v",
+            "ictoriosa",
+            "bailas al ",
+            "compás  /n"
         ],
         [
-            "mpás./n"
-        ],
-        [],
-        [
-            "Pasaste cerca de m",
-            "í/n"
-        ],
-        [
-            "se te escapó una sonr",
-            "isa./n"
-        ],
-        [
-            "Tu boca dijo que s",
-            "í/n"
+            "Perro vie",
+            "jo serrano, ",
+            "el profesor m",
+            "elodía ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "no me podía resis",
-            "tir./n"
+            "Ba",
+            "ilando cont",
+            "igo e",
+            "s",
+            "t",
+            "a",
+            "ré hasta el final \n\nR",
+            "eina victoriosa, bailas al co",
+            "mpás ",
+            "/n"
         ],
         [
-            "Si hubieran visto su cara/ncuando de pronto yo la b"
+            "B",
+            "ailando contigo estaré hasta el final \n\nReina victoriosa, bailas al com",
+            "pás /n"
         ],
         [
-            "esé./n"
+            "Bailan",
+            "do contigo estaré hasta el final \n\nRein",
+            "a victoriosa, bailas al compás \n\nBailando contigo estaré hasta el final \n\nReina victoriosa, bailas al compá",
+            "s ",
+            "/n"
         ],
         [
-            "Seguro que en ese instante/nme empezarían a compren"
+            "Ba",
+            "ilando contig ",
+            "es",
+            "ta",
+            "ré hasta el final \n\nBail",
+            "ando contigo estaré hasta ",
+            "el final ",
+            "/n"
         ],
         [
-            "der./n"
+            "Reina victoriosa, b",
+            "ailas al compá /n"
         ],
         [
-            "Moviéndose seductora/ny con la mirada fija hacia "
+            "Bailando cont",
+            "igo estaré hasta el ",
+            "final \n\nRein",
+            "a victoriosa, bailas al compás \n\nBailando contigo estaré hasta el final \n\nBai",
+            "lando contigo estaré hasta el final \n\nHey! ",
+            "/n"
         ],
         [
-            "mí./nMe acerque bien al oido"
+            "Bai",
+            "las al compás ",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Bail",
+            "as al compás ",
+            "",
+            "/n"
+        ],
+        [
+            "Baila ",
+            "al compás ",
+            "",
+            "/n"
+        ],
+        [
+            "Bailas al ",
+            "compás  ",
+            "",
+            "/n"
+        ],
+        [
+            "Bailas al com",
+            "pás \n\nHey! /n"
+        ],
+        [
+            "Oh! ",
+            "/n"
+        ],
+        [
+            "Bailas al compá",
+            "s \n\nHey! \n\nOh! ",
+            "/n"
+        ],
+        [
+            "Bai",
+            "las al compás \n\nHe",
+            "y! \n\nOh! ",
+            "/n"
+        ],
+        [
+            "Baila",
+            "s al compás \n\nHey! ",
+            "/n"
+        ],
+        [
+            "B",
+            "ailas al compás \n\nBailas ",
+            "al compás \n\nBailas ",
+            "al ",
+            "compás \n\nBailas ",
+            "al compás \n\nBailas al compás "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "R4wyW47JsoY",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

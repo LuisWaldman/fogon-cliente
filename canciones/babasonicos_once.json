@@ -2,16 +2,24 @@
     "cancion": "once",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "D",
+                    "A",
                     "A"
                 ]
             },
@@ -19,37 +27,142 @@
                 "nombre": "parte2",
                 "acordes": [
                     "A",
-                    "Ab",
-                    "D",
-                    "F",
                     "G",
-                    "F",
-                    "G"
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "F",
-                    "G",
-                    "A"
+                    "F"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "F",
-                    "G",
-                    "D"
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "G",
+                    "F",
                     "F",
                     "G",
                     "F",
                     "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "F",
                     "G"
                 ]
@@ -59,155 +172,145 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
-            3,
             3,
             4,
-            0,
-            1,
-            3,
-            3,
-            3,
-            3,
-            4,
-            3
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Suele despertar de",
-            "snudo y en una/ncalle y f"
-        ],
-        [
-            "inge natur",
-            "alidad cuando",
-            "/nla chica yankie en"
-        ],
-        [
-            "cara hacia el/nE"
-        ],
-        [
-            "ntran a un lugar mer",
-            "sa medieval/nO"
-        ],
-        [
-            "yen un suspiro pisa",
-            "n un mendigo y/ne"
-        ],
-        [
-            "so se transforma en ",
-            "la manguera de un nargu",
-            "ille/nD"
-        ],
-        [
-            "isimula el desconcier",
-            "to cuando sus padr",
-            "es lo encuentran/n"
-        ],
-        [
-            "negociando kiff por ar",
-            "mas en plaza Mis",
-            "erere/n"
-        ],
-        [
-            "Van a un funeral po",
-            "r el chaparral/n"
-        ],
-        [
-            "besan a la viuda que",
-            " se desfigura/n"
-        ],
-        [
-            "y esa mueca se convi",
-            "erte en su par",
-            "iente/n"
-        ],
-        [
-            "trae a casa m",
-            "i rock and roll",
+            "",
+            "",
             "/n"
         ],
         [
-            "trae a casa m",
-            "i rock and roll",
-            "/nuu"
+            "Su",
+            "en  despertar de",
+            "snud  en una calle",
+            "finge /n"
         ],
         [
-            "uh Van a un funeral",
-            " por el chaparral/n"
+            "Me",
+            "ti  la vida cua",
+            "nd  la chica ya qui",
+            "e  canace é",
+            "l. /n"
         ],
         [
-            "besan a la viuda qu",
-            "e se desfigura/n"
+            "Entra en un lugar and",
+            "a  alza medieval./n"
         ],
         [
-            "y esa mueca se convier",
-            "te/n"
+            "Ocen un suspiro",
+            "pisan un mendigo.",
+            "eso se transforma e",
+            "n  la manguera de un a",
+            "rque ",
+            "/n"
         ],
         [
-            "Una tribu de ortod",
-            "oxos del mesianism",
-            "o lo embosca/n"
+            "Disimula el desconc",
+            "iert  cuando sus p",
+            "adre  lo encuent",
+            "ran /n"
         ],
         [
-            "rumbo a la medina en tr",
-            "ance van salmodiand",
-            "o su nombre/n"
+            "Negociando tifo por a",
+            "rmas  en plaza m",
+            "iseria /n"
         ],
         [
-            "Entran a un lugar mer",
-            "sa medieval/n"
+            "T",
+            "od  queda po",
+            "r el caparral. /n P",
+            "esa  la viura qu",
+            "e  será figura. e",
+            "sa  hueca se consta",
+            "e  el desp",
+            "arecer ",
+            "",
+            "¡Dale c",
+            "as  mi rock and ro",
+            "ll ",
+            "",
+            "¡Dale ca",
+            "s  mi rock and rol",
+            "l /n"
         ],
         [
-            "oyen un suspiro pi",
-            "san un mendigo/n"
+            "Par",
+            "liberar el olor h",
+            "echa palar. /n Pe",
+            "sa  la viura que s",
+            "er  figura. esa",
+            "hueca se consta e",
+            "n el desparecer. /n Uno",
+            "trib  de ortodox",
+            "o  del messianism",
+            "lo embosca./n"
         ],
         [
-            "y eso se transforma en la",
-            " manguera de un nargui",
-            "lle/nU"
+            "Rumbó",
+            "la medina en trance",
+            "avanzad  mordiend",
+            "su nombre./n"
         ],
         [
-            "UUH trae a c",
-            "asa mi rock and r",
-            "oll/nUU"
+            "Entra en",
+            "un  vinclao en palaza me",
+            "dieval /n Ocen u",
+            "n  suspiro pisan",
+            "un mendigo. eso s",
+            "e  transforma en la mangu",
+            "er  de un arque.",
+            "",
+            "",
+            "¡Dal  casa m",
+            "i  rock and roll!",
+            "",
+            "¡/n"
         ],
         [
-            "UH trae a ca",
-            "sa mi rock and ro",
-            "ll/nUU"
+            "Dale  casa m",
+            "i  rock and roll!",
+            "",
+            "¡D",
+            "al  casa m",
+            "i  rock and roll!",
+            "",
+            "¡/n"
         ],
         [
-            "UH trae a ca",
-            "sa mi rock and ro",
-            "ll/nUU"
+            "Dal  casa m",
+            "rock and roll!",
+            "¡Dal  casa mi r",
+            "ock  and roll! ¡/n"
         ],
         [
-            "UH trae a ca",
-            "sa mi rock and ro",
-            "ll/ntrae a ca"
+            "Dale  casa mi r",
+            "ock  and roll! ¡/n"
         ],
         [
-            "sa mi rock and ro",
-            "ll/ntrae a ca"
-        ],
-        [
-            "sa mi rock and ro",
-            "ll/ntrae a ca"
-        ],
-        [
-            "sa mi rock and ro",
-            "ll"
+            "Dale  casa mi r",
+            "oc  and roll!"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "nz5WQIkuan4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,149 +2,624 @@
     "cancion": "passionale",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "A",
+                    "A",
+                    "A",
+                    "A",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "A",
+                    "G",
                     "G",
                     "C",
-                    "G"
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "A",
-                    "C"
+                    "A",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A",
-                    "F",
-                    "G"
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "C",
                     "A",
-                    "A",
-                    "Em",
-                    "A"
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "C",
+                    "C",
+                    "C",
+                    "A",
+                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
                     "Em",
-                    "F",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
                     "Em",
                     "A",
-                    "G",
-                    "F",
-                    "Em",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "A",
+                    "Am",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "F",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "A",
+                    "F",
+                    "F",
+                    "F",
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            2,
-            2,
             2,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
         ]
     },
     "letras": [
         [
-            "Cuando la cala",
-            "midad se aviv",
-            "a, /nperfuma el a"
+            "Cuando",
+            "l  calam",
+            "ida  se v",
+            "iva ",
+            "perfuma el a",
+            "ire ",
+            "algo espec",
+            "ial /n"
         ],
         [
-            "ire, algo especia",
-            "l /nvelas negras "
+            "Ve",
+            "las negras",
+            "sangr  de g",
+            "allos ",
+            "plumas del r",
+            "ito ",
+            "felonía",
+            "/n"
         ],
         [
-            "y sangre de ga",
-            "llo, /nplumas del r"
+            "Algu",
+            "ie  parec",
+            "sabe",
+            "r  q",
+            "u  del",
+            "ant  ese so",
+            "no se está",
+            ". /n"
         ],
         [
-            "ito felonia.",
-            " /n"
+            "E",
+            "s  s",
+            "olució  el",
+            "fr",
+            "it",
+            "o  nad",
+            "a  más del p",
+            "ico /n"
         ],
         [
-            "Alguien parece saber",
-            "  /n"
+            "Su",
+            "idiom  en tal s",
+            "e  pola",
+            "riza ",
+            "percibe el s",
+            "alto ",
+            "¿qué va",
+            "pasar?",
+            "/n"
         ],
         [
-            "y el ante sus ojos esta",
-            " /n"
+            "Lesbianas  vam",
+            "piros  a",
+            "sesinas ",
+            "dege",
+            "nerado  e",
+            "n  bacan",
+            "a /n"
         ],
         [
-            "solucion y el fi",
-            "jo /n"
+            "Al",
+            "guie  pa",
+            "rec  sa",
+            "be  q",
+            "u",
+            "delante sus o",
+            "jos  está",
+            "n ",
+            "/n"
         ],
         [
-            "final del acerti",
-            "jo /npassion"
+            "E",
+            "s  solución",
+            "el fri",
+            "to ",
+            "",
+            "nada má",
+            "s  del pico.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ale homicida, p",
-            "assional",
-            "e /npassion"
+            "Pasiona",
+            "l ",
+            "/n"
         ],
         [
-            "ale homicida, p",
-            "assional",
-            "e  /npassion"
+            "P",
+            "asional /n"
         ],
         [
-            "ale homicida, p",
-            "assional",
-            "e /nm"
+            "Obesidad.",
+            "",
+            "/n"
         ],
         [
-            "agia haitiana y oscurantismo mediev",
-            "al /nc"
+            "Pasional.",
+            "",
+            "",
+            "/n"
         ],
         [
-            "onjuran su calor en la hoguera-hoga",
-            "r  /n"
+            "Magia",
+            "hitian ",
+            "oscuren",
+            "tism  med",
+            "ieval",
+            "",
+            "",
+            "/n"
         ],
         [
-            "es la entropia del mund",
-            "o /n"
+            "Demonios",
+            "fuga  de l",
+            "a  nueva/n"
         ],
         [
-            "un mundo que come a otro ",
-            "mundo /n"
+            "Babilo",
+            "ni  con",
+            "jura  su cal",
+            "o  en la hogu",
+            "era /n"
         ],
         [
-            "un cuento basado en lo inmu",
-            "ndo de la realidad",
-            " "
+            "Fu",
+            "ga ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Alguien p",
+            "arec  sa",
+            "be  q",
+            "u",
+            "delante sus o",
+            "jos  est",
+            "án ",
+            "/n"
+        ],
+        [
+            "Pasional /n Ob",
+            "esidad ",
+            "/n"
+        ],
+        [
+            "P",
+            "asional ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pasional /n"
+        ],
+        [
+            "Obes",
+            "idad ",
+            "/n"
+        ],
+        [
+            "Pasional.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es la en",
+            "tropí  de u",
+            "n  mundo,",
+            "",
+            "de un mundo qu",
+            "es como otr",
+            "o  mundo./n"
+        ],
+        [
+            "U",
+            "n  cuento b",
+            "asado  e",
+            "n  un m",
+            "und  d",
+            "e  realidad",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pasional./n"
+        ],
+        [
+            "Obesi",
+            "dad ",
+            "/n"
+        ],
+        [
+            "Pasion",
+            "al ",
+            "",
+            "/n"
+        ],
+        [
+            "Pasional./n"
+        ],
+        [
+            "Obesida",
+            "d ",
+            "/n"
+        ],
+        [
+            "Pasional.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Obesidad. /n Obesidad. Pasional. Obesidad."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3VnXh4Vj83Q",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

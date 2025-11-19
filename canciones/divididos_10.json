@@ -2,101 +2,158 @@
     "cancion": "10",
     "banda": "divididos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Am",
-                    "C",
-                    "D",
-                    "F",
-                    "G"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F"
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3
         ]
     },
     "letras": [
-        [],
         [
-            "Soy quien no ha de mori",
-            "r  oh no/nsiempre regresar"
-        ],
-        [
-            "e,/nme ver"
-        ],
-        [
-            "aaaaas",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "En las calles de tus p",
-            "ensamientos/nen cualquier lug"
-        ],
-        [
-            "ar,/nme ver"
-        ],
-        [
-            "as",
-            "/n"
-        ],
-        [],
-        [],
-        [
-            "Arbol de sombra joven",
-            "/nsere el reman"
-        ],
-        [
-            "so fiel,/nque ten"
-        ],
-        [
-            "dras",
+            "Esta es una canción en español de rock argentino. /n Las call",
+            "e  de tus pensamientos e",
+            "n  cualquier lugar t",
+            "e  ve",
+            "rán",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Con todo su esplendor det",
-            "ras/nde algun presagio gri"
-        ],
-        [
-            "s,/ndeja"
-        ],
-        [
-            "ras.",
+            "Arbol d",
+            "e sombra joven, /n S",
+            "er  el reman social q",
+            "u  tendrá",
+            "s /n Con to",
+            "d  su esplendor tendrá",
+            "algún presagio gr",
+            "i  te hará.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "So",
+            "y  el sonido de tu",
+            "pasos, /n La claridad",
+            "d  tu des",
+            "pertar /n S",
+            "oy  quien puede mo",
+            "virnos  siempre r",
+            "egresart  me",
+            "ve",
+            "rá",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "B6_vuCIjZ9Y",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

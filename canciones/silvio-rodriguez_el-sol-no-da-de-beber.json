@@ -1,1 +1,511 @@
-{"cancion": "el-sol-no-da-de-beber", "banda": "silvio-rodriguez", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "G#m", "D"]}, {"nombre": "parte2", "acordes": ["C#7", "F#m", "G#", "C#m", "C", "G#m", "F#m", "B7"]}, {"nombre": "parte3", "acordes": ["C#7", "F#m", "C", "E", "C#m", "F#m", "B7"]}, {"nombre": "parte4", "acordes": ["C#7", "F#m", "C", "E", "C#m", "C#7", "F#m"]}, {"nombre": "parte5", "acordes": ["Am", "E", "C#m", "C", "E", "G#m", "A", "B7"]}], "orden_partes": [0, 1, 0, 2, 0, 3, 4]}, "letras": [["l tibio amparo de la dos cat", "orce/ns"], ["e desnuda", " mi canci\u00f3n de am", "or/nllega"], ["ba el d\u00eda indiscreto y ", "torpe/ny "], ["la belleza nos hacia mas pobres/nm"], ["es esclavos de la ro", "nda del reloj", "/nB)T"], ["oma de m", "i todo y to", "dav\u00ed", "a mas", "/nh"], ["ay que a", "yunar al filo del a", "manece", "r", "/nt"], ["oma de ", "mi todo y tod", "av\u00ed", "a mas", "/nh"], ["ay que esper", "ar un largo n", "o de claridad", "/nt"], ["oma de mi t", "odo c", "uanto pueda ser", "/ne"], ["l sol no da", " de beb", "er.", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "8hoWG-hAbiM", "delay": 0}]}
+{
+    "cancion": "el-sol-no-da-de-beber",
+    "banda": "silvio-rodriguez",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "G#m",
+                    "E",
+                    "G#",
+                    "G#m",
+                    "E",
+                    "C#m",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "E",
+                    "F#m",
+                    "C",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "E",
+                    "C#7",
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "C",
+                    "C",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "E",
+                    "E",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "E",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "Am",
+                    "Am",
+                    "C#m",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C#7",
+                    "C#7",
+                    "E",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "G#m",
+                    "C",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "G#",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "E",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "C",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C#m",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "C#m",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "F#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta es una canción en español de rock argentino. ",
+            "",
+            "/n"
+        ],
+        [
+            "Al tibio un paro de la ",
+            "dos catorce, ",
+            "se desnudaba mi canció ",
+            "de amor. /n"
+        ],
+        [
+            "Llegaba el día indi",
+            "screto torope, ",
+            "la belleza nos ",
+            "hacía más pobres, ",
+            "más esclavos de la rond",
+            "a del reloj. /n"
+        ],
+        [
+            "Así pasaron los ",
+            "momentos  poc",
+            "os, así pasab ",
+            "la felicida",
+            "d, huyendo sie",
+            "mpre de mirada de otro",
+            "s, \n\nEntreteji",
+            "endo un universo lo",
+            "co de calicias, ",
+            "dudas complici",
+            "dad. \n\nT",
+            "oma de mí t",
+            "odo, ",
+            "bébetelo bien ",
+            "",
+            "hay que ayunar al ",
+            "figlo del a",
+            "manecer. /n"
+        ],
+        [
+            "T",
+            "oma de mí ",
+            "todo ",
+            "todavía má",
+            "s, ",
+            "hay que esperar un ",
+            "largo no ",
+            "de claridad. /n"
+        ],
+        [
+            "T",
+            "oma de mí ",
+            "todo cuan",
+            "to pueda s",
+            "er, ",
+            "el sol no da ",
+            "de bebe",
+            "r. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "los tristes amore ",
+            "mal nacidos ",
+            "condenados por su re",
+            "belión, da",
+            "ré algún día mi canción de a",
+            "migo, ",
+            "fundiré mi vino con ",
+            "su vino, sin perder ",
+            "el sueño por la e",
+            "xcomunión. ",
+            "al quien me quiera inciner",
+            "ar los versos ar",
+            "gumentando un folio inm",
+            "emorial, \n\nLe ",
+            "haré  la historia de este sol a",
+            "dverso que ",
+            "va llorando por el un",
+            "iverso, \n\nEsperando el ",
+            "día que podrá alu",
+            "mbrar. \n\nT",
+            "oma de mí ",
+            "todo, ",
+            "bébetelo bie",
+            "n, ",
+            "hay que ayunar al ",
+            "figlo del a",
+            "manecer. /n"
+        ],
+        [
+            "To",
+            "ma de mí ",
+            "todo  ",
+            "todavía má",
+            "s, ",
+            "hay que esperar un ",
+            "largo  no de ",
+            "claridad. /n"
+        ],
+        [
+            "To",
+            "ma de mí ",
+            "todo cuanto p",
+            "ueda se",
+            "r, ",
+            "el sol no da ",
+            "de bebe",
+            "r. /n"
+        ],
+        [
+            "Tom",
+            "a de mí to",
+            "do, béb",
+            "etelo bien, ",
+            "hay que ",
+            "ayunar  al fi",
+            "glo del amanecer ",
+            "/n"
+        ],
+        [
+            "Toma de ",
+            "mí tod",
+            "o todavía ",
+            "más,  ",
+            "hay que esp",
+            "erar un largo ",
+            "no de claridad. ",
+            "/n"
+        ],
+        [
+            "Toma de ",
+            "mí tod",
+            "o cuanto pueda s",
+            "er",
+            "el sol no ",
+            "da de be",
+            "ber. /n"
+        ],
+        [
+            "T",
+            "oma de mí t",
+            "odo, ",
+            "bébetelo bi",
+            "en, ",
+            "hay que ayunar ",
+            "al figlo del ",
+            "amane",
+            "cer. \n\nTo",
+            "ma de mí t",
+            "odo ",
+            "todavía má",
+            "s, ",
+            "hay que esperar un l",
+            "argo no de ",
+            "clarid",
+            "ad. \n\nTo",
+            "ma de mí t",
+            "odo cuanto pu",
+            "eda ser",
+            ", el sol ",
+            "no da de b",
+            "eber. ",
+            "/n"
+        ],
+        [
+            "Toma de mí ",
+            "t",
+            "o",
+            "do todavía más, ",
+            "hay ",
+            "",
+            "",
+            "que ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "esperar un largo ",
+            "no de claridad. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Toma de mí todo todavía más, hay que esperar un largo no de claridad. "
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "8hoWG-hAbiM",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -1,1 +1,388 @@
-{"cancion": "el-mayor", "banda": "silvio-rodriguez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "D", "A"]}, {"nombre": "parte2", "acordes": ["A"]}, {"nombre": "parte3", "acordes": ["G"]}, {"nombre": "parte4", "acordes": ["F#m", "Em"]}, {"nombre": "parte5", "acordes": ["D"]}], "orden_partes": [0, 0, 1, 2, 3, 0, 2, 3, 0, 1, 4, 1, 2, 3, 4, 1, 2, 1, 4, 1, 2, 3, 4, 1, 4]}, "letras": [["e todo mate", "rial", "/no"], [" barrio marg", "inal", "/np"], ["ara subir l", "a cues", "ta/nd"], ["el gran r", "eino an", "imal", "/ncon una ma"], ["no neg", "ra/n"], ["y otra b", "lanca mo", "rtal.", "/nel m"], ["ayor co", "n su heri", "da/ny mie"], ["ntras mas mort", "al/nel taj"], ["o es mas d", "e vida", "/n"], ["sobre un", "a palm", "a escrit", "a/ny a l"], ["a distan", "cia/nde "], ["cien a\u00f1", "os resuc", "ita", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "sAnUF0OR528", "delay": 0}]}
+{
+    "cancion": "el-mayor",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "A",
+                    "G",
+                    "Em",
+                    "Em",
+                    "D",
+                    "A",
+                    "Em",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "A",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El ",
+            "hombre se ",
+            "hizo siempre ",
+            "de todo ",
+            "material,  ",
+            "de vía",
+            "s señoriales ",
+            "barr",
+            "io marginal. /n"
+        ],
+        [
+            "Toda é",
+            "poca fue pi",
+            "eza de ",
+            "un rompec",
+            "abezas par ",
+            "subir la cues",
+            "ta del gran r",
+            "eino animal ",
+            "con ",
+            "una mano neg",
+            "ra otra ",
+            "planca  mortal. ",
+            "/n"
+        ],
+        [
+            "Mortal",
+            "es ingredientes a",
+            "rmaron al may",
+            "or, ",
+            "luz de terrate",
+            "nientes ",
+            "de revolución. ",
+            "/n"
+        ],
+        [
+            "Destreza de las ",
+            "grimas, ",
+            "sucesos com ",
+            "un preso, ",
+            "mal a",
+            "bandonada por la ",
+            "balada,  vergüenza ",
+            "al amor, ",
+            "un fu",
+            "silamiento, un viejo ",
+            "cuento,  modelado ",
+            "en su adiós. ",
+            "/n"
+        ],
+        [
+            "Va caballando ",
+            "el mayor ",
+            "con su herida, ",
+            "mie",
+            "ntras más morta ",
+            "está pues más ",
+            "debida. ",
+            "/n"
+        ],
+        [
+            "Va caballa",
+            "ndo sobre una p",
+            "alma escrit",
+            "a, ",
+            "la distancia de ",
+            "cien año ",
+            "resucita. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tr",
+            "ota sobre la e",
+            "spuma, ",
+            "seguido por un m",
+            "ar, ",
+            "de negros en ma",
+            "chinete ",
+            "sin en",
+            "cadena/n"
+        ],
+        [
+            "Ordena su c",
+            "orneta",
+            "el toque de ad",
+            "egüello, ",
+            "un siglo de d",
+            "istancia ent",
+            "oma nuestra can",
+            "ción. ",
+            "con resiagar ",
+            "canta,  canta, e",
+            "spanta lejos la maldici",
+            "ón. /n"
+        ],
+        [
+            "Va ca",
+            "ballando ",
+            "el mayor con su ",
+            "herida, ",
+            "mientras ",
+            "más mortal e",
+            "stá pues más de",
+            "bida. /n"
+        ],
+        [
+            "Va ",
+            "caballando s",
+            "obre una palm",
+            "a escrita ",
+            "la ",
+            "distancia de c",
+            "ien años r",
+            "esuci",
+            "ta. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "con re",
+            "siagar canta, canta, espanta lejos la maldición. con resiagar canta, canta, espanta lejos la maldición. "
+        ]
+    ],
+    "bpm": 129,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "sAnUF0OR528",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

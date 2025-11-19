@@ -2,183 +2,308 @@
     "cancion": "el-burrito",
     "banda": "divididos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
                     "C",
-                    "Dm",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "Bb",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "C",
-                    "Dm",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            1,
-            1,
-            0,
-            0,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "  El burrito senci",
-            "llo/n  Va s"
-        ],
-        [
-            "olito al co",
-            "rral",
+            "Bueno, primeramen",
+            "t  quisiera salud",
+            "a al vicepresidente de /n X",
+            "teracal ",
+            "",
+            "",
+            "",
             "",
             "",
             "",
             "/n"
         ],
         [
-            "  Buscando el amo bue",
-            "no/n  Que te "
+            "Un bu",
+            "rrit  sencillo va sol",
+            "it  al correr",
+            "/n"
         ],
         [
-            "de libe",
-            "rtad",
+            "Buscando e",
+            "l  amo bueno que te dé",
+            "liberta ",
+            "",
+            "¿Cuántas v",
+            "ece  corro no te puedo",
+            "alcanzar ",
+            "/n"
+        ],
+        [
+            "Pongo t",
+            "u  uniforme vos me das t",
+            "emo  par",
+            "/n"
+        ],
+        [
+            "Rumia, aunque de un",
+            "a  idea que nunca te t",
+            "ragas ",
+            "/n"
+        ],
+        [
+            "Esa gran zan",
+            "ahori  que te muestra p",
+            "ap ",
+            "/n"
+        ],
+        [
+            "Cuántas veces c",
+            "orr  no te puedo a",
+            "lcan",
+            "za /n"
+        ],
+        [
+            "Yo me pongo tu uni",
+            "form  vos me das temor p",
+            "a ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pongo tu",
+            "uniform  vos me das temor par",
+            "",
+            "",
+            "",
+            "¿/n"
+        ],
+        [
+            "Cuánta  veces corro",
+            "no te puedo alcanzar?",
+            "/n"
+        ],
+        [
+            "Y",
+            "o  me pongo tu uniforme v",
+            "o  me das temor par",
+            "",
             "",
             "",
             "",
             "/n"
         ],
         [
-            "  Cuantas veces co",
-            "rro/n  Y no te puedo alcanz"
-        ],
-        [
-            "ar",
-            "",
-            "",
+            "Pongo tu u",
+            "niform  vos me das temor",
+            "pa ",
             "/n"
         ],
         [
-            "  Yo me pongo tu unifo",
-            "rme/n  Y vos me das de morf"
+            "Pongo tu u",
+            "niform  vos me das temor par/n"
         ],
         [
-            "ar",
-            "",
-            "",
+            "Pong  tu uniforme vos me das temor par",
             "/n"
         ],
         [
-            "  Rumiante de una ide",
-            "a/n  Que nu"
-        ],
-        [
-            "nca te tra",
-            "gá",
-            "s",
-            "",
-            "",
+            "Pongo tu unif",
+            "orm  vos me das temor p",
+            "a ",
             "/n"
         ],
         [
-            "  Esa gran zanaho",
-            "ria/n  que te m"
-        ],
-        [
-            "uestra pa",
-            "pa",
-            "",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            " Cuantas veces cor",
-            "ro/nY no te puedo alcanzar"
-        ],
-        [
-            "",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            " Yo me pongo tu uni",
-            "forme/nY vos me das de morfar"
-        ],
-        [
-            "",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            " Cuantas veces cor",
-            "ro/nY no te puedo alcanzar"
-        ],
-        [
-            "",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            " Yo me pongo tu uni",
-            "forme/nY vos me das de morfar"
-        ],
-        [
-            "",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "Me pongo tu uniforme/nY me d"
-        ],
-        [
-            "as de morfaa",
-            "r    ",
-            "    ",
-            "      ",
-            "    ",
-            "   x",
-            "4/nCamisas de seda"
-        ],
-        [],
-        []
+            "Pongo tu unifo",
+            "rm  vos me das temor pa",
+            "r /n Camisas de s",
+            "ed ",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "IMBp7YVYrZs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

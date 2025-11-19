@@ -8,177 +8,181 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C7",
+                    "Fm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Fm",
-                    "C7",
                     "Fm",
-                    "C#7M",
-                    "Ab",
-                    "Ab4",
-                    "Ab"
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Db4",
-                    "C#m"
+                    "Fm",
+                    "C7",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Ab",
-                    "Ab5",
-                    "Ab",
-                    "Eb",
-                    "Eb6",
-                    "Eb7",
-                    "Ab"
+                    "Fm",
+                    "Fm",
+                    "Fm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Ab4",
-                    "Eb"
+                    "C#m",
+                    "C#m Ab5",
+                    "Ab",
+                    "C#m",
+                    "C#m",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "Ab",
-                    "Eb6",
-                    "Eb7",
                     "Fm",
                     "C7",
-                    "Fm",
                     "C#7M",
-                    "Ab"
+                    "C#7M",
+                    "C#7M"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#7M",
+                    "C#m",
+                    "Ab5 Eb",
+                    "Ab5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C#m",
+                    "Ab5",
+                    "Ab5 Eb",
+                    "Ab5",
+                    "Ab5",
+                    "Ab5",
+                    "Ab5",
+                    "Ab5",
+                    "Ab5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C#m Ab5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
             3,
-            1,
-            2,
-            0,
-            0,
-            1,
-            2,
-            3,
-            1,
-            4
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Motor cars, ha",
-            "ndlebars, bic",
-            "ycles for two",
-            "/nBroken-hearted jubil"
+            "ha",
+            "ndlebars  bicycles f",
+            "o  two./n"
         ],
         [
-            "ee",
-            "",
+            "Broken hearted",
+            "jubilee ",
             "/n"
         ],
         [
-            "Parachutes, a",
-            "rmy boots, sle",
-            "eping bags for two",
-            "/nSentimental jambor"
+            "Parachute, /n T",
+            "ommy  blues, sleeping b",
+            "ag  for two./n"
         ],
         [
-            "ee",
+            "Sentimental j",
+            "ambore",
+            "e /n"
+        ],
+        [
+            "Why, w",
+            "h  says the sun i",
+            "n  the sharp wind",
+            "ow /n Why, w",
+            "hy  says the joke i",
+            "n  the young?",
             "",
-            "/n"
-        ],
-        [
-            "Buy,  ",
-            "   buy",
-            ", says",
-            " the s",
-            "ign i",
-            "n the",
-            " shop ",
-            "win---",
-            "-dow",
             "",
-            "/n"
-        ],
-        [
-            "Why,  ",
-            "   why",
-            ", says",
-            " the j",
-            "unk i",
-            "n the",
-            " yard",
             "",
-            "/n"
-        ],
-        [
-            "Ooh la",
-            " la l",
-            "a la la da d",
-            "a ",
             "",
             "",
             "/n"
         ],
         [
-            "Candlesticks, b",
-            "uilding bricks, so",
-            "mething old and new/n"
+            "Candles",
+            "ticks  building grids,",
+            "something old and ne",
+            "w /n Memories f",
+            "or  you an",
+            "d  me./n"
         ],
         [
-            "Memories for you and",
-            " me",
+            "Why,",
+            "why says th",
+            "sun in the sh",
+            "ar  window?/n"
+        ],
+        [
+            "Why, why says t",
+            "h  joke in the yo",
+            "ung ",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Buy, b",
-            "uy, sa",
-            "ys the",
-            " sign ",
-            "in th",
-            "e sho",
-            "p wind",
-            "ow",
-            "",
-            "",
-            "/n"
-        ],
-        [
-            "    Wh",
-            "y, why",
-            ", says t",
-            "he junk ",
-            "in the yard",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Why, why says the sun in the sharp window? /n Why, why says the joke in the sharp window?"
         ]
     ],
-    "bpm": 80,
+    "bpm": 92,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "3svS8Nk6-Jk",
-            "delay": 0
+            "delay": 250.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

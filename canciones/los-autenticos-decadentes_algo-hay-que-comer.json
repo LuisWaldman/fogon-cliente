@@ -2,71 +2,212 @@
     "cancion": "algo-hay-que-comer",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 73,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "D",
+                    "Em",
                     "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
                     "D",
                     "G",
-                    "Em"
+                    "G",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
                     "D",
-                    "G",
-                    "Em",
-                    "G",
                     "B7",
                     "Em",
-                    "A"
+                    "Em",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "   Yo quiero mu",
-            "cho a los anima",
-            "les me gust",
-            "a que vivan bien",
-            "/nignor"
-        ],
-        [
-            "ando su desti",
-            "no en el camp",
-            "o y sin estres.",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Porque algo hay que comer/ny la lech"
+            "Yo quiero mucho los ani",
+            "males, me gusta que ayudan b",
+            "ien, ignorando su des",
+            "tino en el campo silenc",
+            "io. \n\nYo adoro los anim",
+            "ales, pero soy de buen go",
+            "mero, la carne viene p",
+            "unto esto que me hace enloque",
+            "cer, me gustan los peces, las ",
+            "aves, la pernera el pec",
+            "ho, la manteca de cor",
+            "dero el chivito al asa",
+            "dor. \n\nPorque algo hay que c",
+            "omer, la l",
+            "echuga también tiene sen",
+            "timientos, aunque no lo ",
+            "parezca,  si ",
+            "de algo hay que morir /n"
         ],
         [
-            "uga tambien tiene sentimie",
-            "ntos aunque no lo parez",
-            "ca."
+            "Yo quisiera que me ",
+            "coma  un poco de hilo ",
+            "eso que hay en el hilo. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Los humanos son nívolo ",
+            "somos, de todo podemos co",
+            "mer, mientras sea masticable la ",
+            "cosa,  cualquier bicho mancar puede ",
+            "ser.  \n\nLos mariscos los renf",
+            "iles, los moluscos monstruos de ",
+            "mar, cualquier huevo que no sea cu",
+            "adrado, que ave el uso de ca",
+            "viar, porque algo hay que c",
+            "omer. el t",
+            "omate también tiene sent",
+            "imientos, aunque no lo ",
+            "parezca,  si de ",
+            "algo hay que morir. /n"
+        ],
+        [
+            "Me encantaría que me c",
+            "oman las pirangas, ",
+            "me gusta alimentarla. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Porque algo hay que c",
+            "omer, la le",
+            "chuga también tiene sent",
+            "imientos, aunque no lo p",
+            "arezca, si de a",
+            "lgo hay que morir. /n"
+        ],
+        [
+            "Me gustaría que me c",
+            "oma un tigre blanco, ",
+            "porque es un lindo gato. ",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Kunzl6Gjw4g",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

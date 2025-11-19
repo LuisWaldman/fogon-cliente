@@ -2,209 +2,300 @@
     "cancion": "run-run",
     "banda": "babasonicos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
+                    "A",
+                    "A",
+                    "A",
                     "B",
-                    "D",
                     "G",
-                    "A"
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "Am",
+                    "A",
+                    "A",
+                    "A",
+                    "C",
+                    "C",
                     "C",
                     "G",
-                    "D"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "Am",
+                    "Am",
                     "C",
-                    "F",
-                    "E",
-                    "F",
-                    "E",
-                    "F",
-                    "E"
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "G",
+                    "Am",
+                    "Am",
+                    "C",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
-            1,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            2
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "Puede que esos labios no f",
-            "uncionen bien/nNo expliquen "
+            "Puede que e",
+            "so  labios n",
+            "funcionen bi",
+            "en  no expl",
+            "ica  nada,",
+            "que m",
+            "e  pierdan má",
+            "s /n"
         ],
         [
-            "nada y que ",
-            "me pierdan mas",
+            "No me cuen",
+            "te  que eso no",
+            "pasó ",
+            "nadie empuja a",
+            "l  suicida,",
+            "él salta porque n",
+            "o  puede más.",
             "/n"
         ],
         [
-            "No me cuentes que eso no p",
-            "aso/nNadie empuja al suicida"
+            "Hablé di q",
+            "ue  el amor so",
+            "l  miente,",
+            "para decir una verdad m",
+            "ayor ",
+            "de esas como lo n",
+            "uestr  no v",
+            "a /n"
         ],
         [
-            "/nE"
-        ],
-        [
-            "l salta porque no puede m",
-            "ás./n"
-        ],
-        [],
-        [],
-        [
-            "Habla y di que el amor solo m",
-            "iente/nPara decir una verdad may"
-        ],
-        [
-            "or/n"
-        ],
-        [
-            "De esas como la nuestra no ha",
-            "y/n"
-        ],
-        [
-            "No es el a",
-            "mor para re",
-            "caudar ventaja",
-            "s/n"
-        ],
-        [
-            "Vine hasta",
-            " aquí a en",
-            "mendar mis err",
-            "ores/n"
-        ],
-        [
-            "Cuéntamel",
-            "o todo de l",
-            "a manera menos",
-            " sutil/n"
-        ],
-        [
-            "Miénteme ",
-            "como si fue",
-            "ra tarde.",
-            "/n"
-        ],
-        [],
-        [
-            "Cuéntame la fantasía que",
-            " eligió tu piel/nQue paso en ese baile aq"
-        ],
-        [
-            "uel/n"
-        ],
-        [
-            "Que hiciste cua",
-            "ndo nadie miro/n"
-        ],
-        [
-            "Habla y di que el amor te ",
-            "sorprende/nPodrás decir que no estás "
-        ],
-        [
-            "preparada/n"
-        ],
-        [
-            "No ofendas sin ",
-            "antes avisar./n"
-        ],
-        [
-            "No es el a",
-            "mor para re",
-            "caudar ventaja",
-            "s/n"
-        ],
-        [
-            "Vine hasta",
-            " aquí a en",
-            "mendar mis err",
-            "ores/n"
-        ],
-        [
-            "Cuéntamel",
-            "o todo de l",
-            "a manera menos",
-            " sutil/n"
-        ],
-        [
-            "Miénteme ",
-            "como si fue",
-            "ra tarde.",
+            "No es e",
+            "l  amor pa",
+            "r  recaudar",
+            "venta",
+            "jas  vine has",
+            "t  aqu",
+            "enm",
+            "enda  mis errore",
+            "s /n Cuéntame lo t",
+            "odo  de la man",
+            "er  menos útil,",
+            "meno  útil,",
+            "miénteme",
+            "com  si fu",
+            "er  ta",
+            "n  bien.",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Cuéntamel",
-            "o todo de l",
-            "a manera menos",
-            " sutil/n"
-        ],
-        [
-            "Miénteme ",
-            "como si fue",
-            "ra tarde.",
+            "Cuéntam",
+            "la fantasía q",
+            "u  eligió tu piel",
+            "que pasó en es",
+            "e  baile que,",
+            "que hiciste cuando",
+            "nadi  mir",
+            "ó /n H",
+            "ablé  di que e",
+            "l  amor te so",
+            "rprende  podrás de",
+            "ci  que no estás prep",
+            "arada ",
+            "no ofendas sin antes",
+            "avisa",
+            "r /n N",
+            "o  es el a",
+            "mor  para",
+            "recauda  v",
+            "entaja",
+            "s  vine hasta a",
+            "quí",
+            "enmendar",
+            "mi errores. /n Cu",
+            "éntam  lo to",
+            "d  de la manera m",
+            "eno  útil, men",
+            "o  útil,",
+            "miéntem  c",
+            "om  si fuera t",
+            "an ",
+            "bien ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "No es el a",
-            "mor para re",
-            "caudar ventaja",
-            "s/n"
-        ],
-        [
-            "Vine hasta",
-            " aquí a en",
-            "mendar mis err",
-            "ores/n"
-        ],
-        [
-            "No es el a",
-            "mor para re",
-            "caudar ventajas/nsolo he venido hasta aquí a enmendar mis errores"
-        ],
-        [],
-        []
+            "N",
+            "o  es el am",
+            "o  para re",
+            "cauda  ve",
+            "ntaja",
+            "vine hasta a",
+            "qu ",
+            "enmendar m",
+            "i errores. /n N",
+            "o  es el amo",
+            "r  para re",
+            "cauda  ve",
+            "ntajas  s",
+            "ol  he venido h",
+            "ast  aquí",
+            "enmendar m",
+            "i errores. /n Cuént",
+            "ame  preste mi atenci",
+            "ón  di que cuénta",
+            "me  enmendar",
+            "lo  nada más.",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0LWDaN8p7rY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

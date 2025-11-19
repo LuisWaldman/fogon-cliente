@@ -1,1 +1,460 @@
-{"cancion": "fronteras", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "E", "D", "B7", "B", "A", "E"]}, {"nombre": "parte2", "acordes": ["C#7", "D", "Bm7", "E", "A", "F#m", "B7", "D"]}, {"nombre": "parte3", "acordes": ["Bm", "B7", "A", "C#7", "F#", "E", "F#", "E"]}, {"nombre": "parte4", "acordes": ["B", "B7", "E", "C#7", "G", "E", "C#7", "F#"]}], "orden_partes": [0, 1, 2, 3]}, "letras": [["No cuento m\u00e1s que front", "eras/n"], ["hacia cualquier direcci", "n./n"], ["Mi estrella fue de terce", "ra, no mi so", "l, no mi sol", "./n"], ["Cuento larga li", "sta de toda", "v\u00edas,/nmargi"], ["nado de un m", "undo que hago y no ", "vivo./nCada con"], ["f\u00edn es u", "n agravio a m", "i sudor, mi ", "verso, mi s", "angre./nFron"], ["teras de tierra, fronteras de m", "ares,/nfron"], ["teras de arena, fronteras de a", "ire,/nfronteras de s"], ["exo, fronteras rac", "iales", ",/nfront"], ["eras de su", "e\u00f1os y d", "e realida", "des.", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "90Spyf87IzY", "delay": 0}]}
+{
+    "cancion": "fronteras",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "F#",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "D",
+                    "D",
+                    "Bm7",
+                    "Bm7",
+                    "A",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "Bm",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "B",
+                    "B",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "F#",
+                    "F#",
+                    "B",
+                    "B",
+                    "F#",
+                    "F#",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "/n"
+        ],
+        [
+            "No cuento ",
+            "más que front",
+            "eras hacia cualquie ",
+            "dirección /n"
+        ],
+        [
+            "Mi estrella fue de ",
+            "tercera, ",
+            "no mi sol, ",
+            "no mi sol \n\nMi ",
+            "cuerpo choca con ",
+            "leyes p",
+            "ara cambiar de l",
+            "ugar \n\nMi ",
+            "sueño rey entre r",
+            "eyes, ec",
+            "handar, e",
+            "chandar \n\nC",
+            "uento larga ",
+            "lista  de ",
+            "todas vill",
+            "as \n\nMarginad ",
+            "de un mundo ",
+            "que hago no p",
+            "ido /n"
+        ],
+        [
+            "Cada  conf",
+            "ín es un ag",
+            "ravio mi s",
+            "udor /n"
+        ],
+        [
+            "Mi vers",
+            "o, ",
+            "mi s",
+            "angre /n"
+        ],
+        [
+            "Fronteras  ",
+            "de tierra, ",
+            "fronteras de m",
+            "aíz /n"
+        ],
+        [
+            "Fronteras  de ",
+            "arena, ",
+            "fronteras de a",
+            "ire /n"
+        ],
+        [
+            "Fronteras ",
+            "de sexo",
+            ", frontera ",
+            "racione",
+            "s \n\nFronteras ",
+            "de sueñ",
+            "os ",
+            "de rea",
+            "lidade",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Fron",
+            "teras de arena, fronteras de maíz ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ah, ah, ",
+            "",
+            "ah ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Fr",
+            "onteras notori",
+            "as, fronteras q",
+            "uemantes /n"
+        ],
+        [
+            "F",
+            "ronteras famo",
+            "sas, frontera ",
+            "de ángel",
+            "es \n\nF",
+            "ronteras de or",
+            "gullo, ",
+            "fronteras le",
+            "gales \n\nF",
+            "ronteras de ",
+            "odio ",
+            "front",
+            "eras inf",
+            "ames \n\nMi ",
+            "país es pob",
+            "re, mi pi",
+            "el me conge /n"
+        ],
+        [
+            "Mi gobier",
+            "no proscrito, ",
+            "mis huestas utó",
+            "picas \n\nSoy ",
+            "candi",
+            "dato al inve",
+            "ntario de ",
+            "la omisión /n"
+        ],
+        [
+            "Por no ",
+            "ser ",
+            "gl",
+            "oba",
+            "les \n\nFronteras ",
+            "que rigen los ",
+            "humos lugar",
+            "es /n"
+        ],
+        [
+            "Fronteras ",
+            "tangibles  ",
+            "siempre indot",
+            "ables /n"
+        ],
+        [
+            "Lo mismo ",
+            "perpetu",
+            "as que pr",
+            "ovisio",
+            "nales \n\nMe v",
+            "uelven fro",
+            "nteras ",
+            "por to",
+            "das ",
+            "mis ",
+            "pla",
+            "nad",
+            "es ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "90Spyf87IzY",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

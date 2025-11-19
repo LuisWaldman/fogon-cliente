@@ -1,1 +1,374 @@
-{"cancion": "el-matador", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "B", "D", "A", "B", "E", "A", "B"]}, {"nombre": "parte2", "acordes": ["E", "A", "A", "E", "D", "A", "C#m", "D"]}, {"nombre": "parte3", "acordes": ["E", "A", "B", "F#m", "C#m", "F#m", "C#m", "F#m"]}, {"nombre": "parte4", "acordes": ["C#m", "F#m", "A", "E", "A", "E", "A", "E"]}, {"nombre": "parte5", "acordes": ["D", "B", "E", "D", "A", "A", "B", "B"]}], "orden_partes": [0, 1, 2, 3, 4]}, "letras": [[], ["Siento un miedo profund", "o que a", "travieza el espacio; d", "e", "/ntiempo en tiempo llega"], [", despac", "io,desp", "acio,des", "pacio./n"], ["Siento olor de llanura, llena de pelegrinos, la llanura/n"], [], ["Siento de pronto el gusto", " de un raro", " mineral", "/n"], ["me siento avece", "s hombre y mu", "chas animal", "/n"], ["Se confunde el deseo de calentar la piel/n"], [], [" en una playa angosta caen del c", "ielo/ne"], ["stas reminicencias del vene", "no/ny"], ["o no se pero hay dias sin re", "poso/nq"], ["ue lo que te", "nga cerca lo destroso", "/n"], [], ["Muy primitivament", "e, cas", "i salvajemente,", " con od", "io/nc"], ["on desprecio, con renco", "r/n"], ["con palabras irientes, con garras y con dientes,/nLe eh cantado a la murte como nadie con vida, mas yo digera"], [], [], [], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "pRG3d61-r18", "delay": 0}]}
+{
+    "cancion": "el-matador",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "A",
+                    "B",
+                    "F#m",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "E",
+                    "C#m",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "B",
+                    "Bm",
+                    "D",
+                    "B",
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "A",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "F#m",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "A",
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "A",
+                    "A",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Siento ",
+            "un hilo profund",
+            "o que atraviesa el ",
+            "espacio, ",
+            "de tiempo en tiempo lle",
+            "ga despacio ",
+            "despacio, d",
+            "espacio. \n\nS",
+            "iento olor ",
+            "de llanuras lle",
+            "nas de peregr",
+            "inos, la llanura ",
+            "se llama c",
+            "amino, c",
+            "amino, cam",
+            "ino. \n\nS",
+            "iento de pronto el g",
+            "usto de un rar ",
+            "mineral, ",
+            "me siento veces ho",
+            "mbre mu",
+            "chas animales. /n"
+        ],
+        [
+            "Se confunde el d",
+            "eseo de cale",
+            "ntar la piel ",
+            "con rugidos l",
+            "eganos que ",
+            "recuerdan  muje ",
+            "en una pl",
+            "aya angosta caen del ",
+            "cielo. /n"
+        ],
+        [
+            "Esa",
+            "s reminiscencias de ",
+            "veneno, ",
+            "yo no sé, ",
+            "pero hay días ",
+            "sin repo",
+            "so en lo ",
+            "que tenga cerca lo ",
+            "destrozo. /n"
+        ],
+        [
+            "Muy pr",
+            "imitivamente, ",
+            "casi salvaje",
+            "mente, con o",
+            "dio, con despre",
+            "cio, con renc",
+            "or, con pa",
+            "labras diente",
+            "s, garras ",
+            "con dientes, con r",
+            "abia, con violen",
+            "cia, con horr",
+            "or. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "He canta",
+            "do la muerte c",
+            "omo nadie con",
+            "vida, mas yo d",
+            "ijera siempre ",
+            "querida, ",
+            "querida, q",
+            "uerida. /n"
+        ],
+        [
+            "Junto cada pa",
+            "labra hay ",
+            "cuerpos  de millones ",
+            "los mate ",
+            "yo mismo, ",
+            "perdonen, per",
+            "donen, perdonen. ",
+            "",
+            "veces se me bor",
+            "ra que mato por ",
+            "vivir ",
+            "olvido los en",
+            "tierros no q",
+            "uiero dormir. /n"
+        ],
+        [
+            "El día que me ",
+            "acusen  no me ",
+            "defender ",
+            "esta culpa es ",
+            "muy vieja de ",
+            "todas las here",
+            "das en una p",
+            "laya angosta caen del ",
+            "cielo. /n"
+        ],
+        [
+            "Esas r",
+            "eminiscencias ",
+            "de veneno, ",
+            "yo no sé, ",
+            "pero hay dí",
+            "as sin repo",
+            "so en lo ",
+            "que tenga cerca ",
+            "lo destrozo. ",
+            "/n"
+        ],
+        [
+            "Muy primitivam",
+            "ente, casi salv",
+            "ajemente, ",
+            "con odio, con des",
+            "precio, con re",
+            "ncor, con ",
+            "palabras die",
+            "ntes, garras ",
+            "con dientes, ",
+            "con rabia, con vio",
+            "lencia, con horror ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El día que me acusen no me defenderé, esta culpa es muy vieja de todas las heredas en una playa angosta caen del cielo. "
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "pRG3d61-r18",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
+}

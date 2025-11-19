@@ -2,245 +2,388 @@
     "cancion": "viva-satana",
     "banda": "babasonicos",
     "escala": "F#m",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
                 "acordes": [
                     "F#m",
                     "D",
                     "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
                     "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
                     "E",
-                    "F#m",
-                    "A",
                     "D",
                     "F#m",
                     "E",
-                    "F#m",
-                    "F#m",
-                    "D",
-                    "F#m",
-                    "D",
-                    "E",
-                    "F#m",
-                    "E",
-                    "D",
-                    "A",
-                    "F#m",
-                    "E",
-                    "D",
-                    "A",
-                    "E",
-                    "F#m",
-                    "D",
-                    "E",
-                    "F#m",
-                    "F#m",
-                    "D",
-                    "F#m",
-                    "D",
-                    "F#m",
-                    "D",
-                    "F#m",
-                    "D",
-                    "E",
-                    "F#m",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "E",
                     "F#m",
                     "F#m",
                     "E",
                     "D",
-                    "A",
                     "F#m",
                     "E",
-                    "D",
-                    "A",
+                    "E",
                     "E",
                     "F#m",
-                    "D",
-                    "E",
-                    "F#m",
-                    "E",
-                    "F#m",
-                    "E",
                     "F#m",
                     "F#m",
                     "E",
                     "D",
-                    "A",
-                    "F#m",
-                    "E",
                     "D",
-                    "A",
-                    "E",
-                    "F#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Tura Satana, anda buscando su somb",
-            "rero allá... /n "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Tura montada en una lata de fuego /ndeja est"
+            "Esta e",
+            "s  una canción en e",
+            "spaño  de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "robo de chispas por la carretera, /n"
+            "E",
+            "st  e",
+            "s  una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "hace autostop en un ra",
-            "ncho /nq"
+            "E",
+            "st  e",
+            "s  una c",
+            "a",
+            "n",
+            "c",
+            "i",
+            "en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uema a todos, mata a todos ",
-            "un zafarran",
-            "cho. /n "
+            "Es",
+            "t  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "No entiende de súplicas, ",
-            "menos de llanto. /n"
+            "E",
+            "st  e",
+            "s  un",
+            "canción en",
+            "e",
+            "s",
+            "p",
+            "a",
+            "de rock argentino.",
+            "/n"
         ],
         [
-            " Luces titilan, alumbran marquesinas /ndel Ga"
+            "Es",
+            "t  es u",
+            "n",
+            "a  can",
+            "ció  en español de rock arge",
+            "ntino /n Est",
+            "a  es una canción e",
+            "n  español d",
+            "e  rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "tas Latinas, un burlesque gliter /n"
+            "S",
+            "i  vas algún lado v",
+            "uelv  de él,",
+            "sabe muy bien una c",
+            "osa /n N",
+            "o  queden caminos pa",
+            "r  recorrer",
+            "no llegar/n"
         ],
         [
-            "kinky, nasty, roba el show de stripper /ny arr"
-        ],
-        [
-            "anca mil hurras /n"
-        ],
-        [
-            "Viva Satana! Viva Satana! /n "
-        ],
-        [
-            "Si va hacia algún lado o vu",
-            "elve de él /ns"
-        ],
-        [
-            "ólo imagina una c",
-            "osa /n"
-        ],
-        [
-            "todos los destinos po",
-            "r recorrer, /nt"
-        ],
-        [
-            "odos conducen a C",
-            "rdoba. /n "
-        ],
-        [
-            "No distingue el bien del m",
-            "al /nla ll"
-        ],
-        [
-            "aman La Pondero",
-            "sa.",
-            " /n "
-        ],
-        [
-            "Porno-fronteras, prostidimensiones /npussy-"
-        ],
-        [
-            "power-cat, vibra la almeja /nc"
-        ],
-        [
-            "hinga Satana hecha humo y furia /nqué ve"
-        ],
-        [
-            "locidad, es un relámpago. /n "
-        ],
-        [
-            "Lustra sus botas, reflejar su frente /nen la e"
-        ],
-        [
-            "ternidad, del mundo negro. /n "
-        ],
-        [
-            "Manos violentas, guantes cubren garras /nque pued"
-        ],
-        [
-            "en hundirte en un mar de cuervos. /n "
-        ],
-        [
-            "Un tend",
-            "al de esp",
-            "ritus quedaron atr",
-            "ás.  /n S"
-        ],
-        [
-            "i va hacia algún lado o vu",
-            "elve de él /ns"
-        ],
-        [
-            "ólo imagina una c",
-            "osa /n"
-        ],
-        [
-            "todos los destinos po",
-            "r recorrer, /nt"
-        ],
-        [
-            "odos conducen a C",
-            "rdoba. /n "
-        ],
-        [
-            "No distingue el bien del m",
-            "al /nla ll"
-        ],
-        [
-            "aman La Pondero",
-            "sa.",
-            " /n"
-        ],
-        [
-            "Un tend",
-            "al de esp",
-            "ritus quedaron atr",
-            "ás.  /n "
-        ],
-        [
-            "Si va hacia algún lado o vu",
-            "elve de él /ns"
-        ],
-        [
-            "abe muy bien una cosa",
-            " /n"
-        ],
-        [
-            "no quedan caminos po",
-            "r recorrer /ny"
-        ],
-        [
-            " nunca llegará a C",
-            "ordoba. /n "
-        ],
-        [
-            "Vive salvaje y sin l",
-            "ey /nsu "
-        ],
-        [
-            "sino La Ponderosa. "
+            "Córdoba /n Si v",
+            "as  algún lado vue",
+            "lv  de él, s",
+            "ab  muy bien una co",
+            "s /n No q",
+            "uede  caminos para",
+            "recorre ",
+            "no llegar /n C",
+            "órdob /n Si vas",
+            "algún lado v",
+            "ue",
+            "lv  de él,",
+            "sabe muy bien una c",
+            "os ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "EPCtmAbXIww",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

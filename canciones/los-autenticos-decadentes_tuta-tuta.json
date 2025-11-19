@@ -2,47 +2,163 @@
     "cancion": "tuta-tuta",
     "banda": "los-autenticos-decadentes",
     "escala": "Dm",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "C#",
+                    "Bm",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Dm",
                     "A",
-                    "Dm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
-                    "Dm",
                     "A",
-                    "Dm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "A",
-                    "Dm",
                     "A",
-                    "Dm"
+                    "A",
+                    "A",
+                    "Dm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "Dm",
-                    "Dm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "Dm",
                     "Dm",
                     "A",
-                    "Dm",
-                    "Dm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -50,164 +166,141 @@
             0,
             1,
             2,
-            2,
             3,
-            1,
-            1,
-            1,
-            2,
-            2,
-            1,
-            1,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Ya llega la comparsa/nMuy conocida en el mundo ent"
-        ],
-        [
-            "ero/nCon la alegría de los mu"
-        ],
-        [
-            "rgueros/nRitmo de murga muy popul"
-        ],
-        [
-            "ar/nY que hace muchos "
-        ],
-        [
-            "años/nLo bauti"
-        ],
-        [
-            "zamos tu ta tu t",
-            "a/nSe viene el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/nBailando el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/nLa murga el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/nHaciendo el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/nLas "
-        ],
-        [
-            "zapatillas gas",
-            "tadas/nDe bailar "
-        ],
-        [
-            "tanto p",
-            "or la aveni",
-            "da/nMis compañeros en esta"
-        ],
-        [
-            " vida/nHerencia del "
-        ],
-        [
-            "negro que aquí lle",
-            "gó/nA ellos se lo de"
-        ],
-        [
-            "dico/nTocando el "
-        ],
-        [
-            "bombo con emoci",
-            "n/n"
-        ],
-        [
-            "Con la comparsa yo q",
-            "uiero bailar/nY"
-        ],
-        [
-            " así las penas pod",
-            "er olvidar/n"
-        ],
-        [
-            "Bailo este ritmo de b",
-            "ombo y tambor/nQu"
-        ],
-        [
-            "e es como mi coraz",
-            "n./nSe viene el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/nBailando el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/nLa murga el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/nHaciendo el tu ta tu "
-        ],
-        [
-            "ta tu ta tu ta tu t",
-            "a/n"
-        ],
-        [
-            "Con la comparsa yo qu",
-            "iero bailar/nY "
-        ],
-        [
-            "así las penas pod",
-            "er olvidar/n"
-        ],
-        [
-            "Bailo este ritmo de b",
-            "ombo y tambor/n"
-        ],
-        [
-            "Que es como mi coraz",
-            "n./n"
-        ],
-        [
-            "A - O - A - O - A",
-            " - O - A - O - A ",
-            "- O - A - O - A -",
-            " O - A - O/n"
-        ],
-        [
-            "A - O - A - O - A",
-            " - O - A - O - A ",
-            "- O - A - O - A",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "A - O - A - O - A",
-            " - O - A - O - A ",
-            "- O - A - O - A -",
-            " O - A - O/n"
-        ],
-        [
-            "A - O - A - O - A",
-            " - O - A - O - A ",
-            "- O - A - O - A",
+            "Est",
+            "a es una canción en español de rock argentino. \n\nEsta ",
+            "es ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "A - O - A - O - A",
-            " - O - A - O - A ",
-            "- O - A - O - A -",
-            " O - A - O/n"
+            "E",
+            "sta es ",
+            "una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "A - O - A - O - A",
-            " - O - A - O - A ",
-            "- O - A - O - A",
+            "E",
+            "sta es ",
+            "",
+            "una ",
+            "canción en e",
+            "spañol de rock argentino ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta ",
+            "es ",
+            "una ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción  en e",
+            "spañol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es ",
+            "una ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción en es",
+            "pañ",
+            "de rock argentino. ¡\nAh! ",
+            "¡\nAh! ",
+            "",
+            "¡\nAh! ¡\nAh! ¡\nA",
+            "h! ¡\nAh! ¡\nAh! ",
+            "¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ",
+            "",
+            "¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡/n"
+        ],
+        [
+            "Ah! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ",
+            "¡\nAh! ¡\nAh",
+            "! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ¡\nAh! ",
+            "¡\nAh! ¡\nAh! ",
+            "¡\nAh! ¡\nAh! ",
+            "",
+            "¡\nAh! ¡/n"
+        ],
+        [
+            "Ah! ",
+            "¡/n"
+        ],
+        [
+            "Ah! ",
+            "¡\nAh! ",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -215,10 +308,11 @@
         {
             "tipo": "Youtube",
             "id": "ZEgj2FhK-kE",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

@@ -2,41 +2,451 @@
     "cancion": "el-dinero-no-es-todo",
     "banda": "los-autenticos-decadentes",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 75,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
+                    "Em",
+                    "Em",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Bm",
-                    "A"
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
         ]
     },
     "letras": [
         [
-            "ga el juanete en la pata de mi abuela/nque co"
+            "",
+            "",
+            "/n"
         ],
         [
-            "n sabiduría me decía que en la vida hay que acep",
-            "tar"
+            "La heladera est ",
+            "vacía, la factura ya ",
+            "vencida, \n\nEn el baño, los c",
+            "años rotos, la vecina me dice que soy ",
+            "un croto, \n\nNo me fui al vacenco, se enojó \n\nDoní /n"
+        ],
+        [
+            "María, \n\nHice un mango el otro día, pero lo gast",
+            "é en mi vida. /n"
+        ],
+        [
+            "Estoy pelado, ",
+            "sin un centavo, ",
+            "pero no limado. ",
+            "¿\nQué vas ",
+            "hacer? \n\nNo aprendes más. \n\nLa que ",
+            "ganas,  la patina. ¿\nQué vas ",
+            "hacer? \n\nNo aprendes más. \n\nLa que ",
+            "ganas, te la gastas. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Con ",
+            "el hielo en la mano, salí buscar un trabajo, \n\nNo encuentro un carajo, más ni una ",
+            "cerveza, \n\nMe quedo en la esquina tomando sol. /n"
+        ],
+        [
+            "Con el hielo en la mano, salí buscar un trabajo, \n\nNo encuentro un carajo, más ni una ",
+            "cerveza, \n\nMe quedo en la esquina tomando sol. /n"
+        ],
+        [
+            "De esquinelero. \n\nNo. \n\nDe boquetero. \n\nNo. \n\nDe mot",
+            "oquero. \n\nNo. \n\nDe curandero. \n\nNo. /n"
+        ],
+        [
+            "De cara. \n\nNo. \n\nDe stripper. \n\nNo. \n\nDe chorro. \n\nNo. \n\nDe travesti. \n\nNo. \n\nDe ",
+            "cura. \n\nNo. \n\nDe violón. \n\nNo. \n\nDe c",
+            "or",
+            "o. \n\nNo. ",
+            "",
+            "/n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe c",
+            "oro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe c",
+            "oro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe ",
+            "coro.  \n\nNo. ",
+            "/n"
+        ],
+        [
+            "De coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe co",
+            "ro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe c",
+            "oro. \n\nNo. \n\nDe co",
+            "ro. \n\nNo. \n\nDe co",
+            "ro. \n\nNo. \n\nDe coro. \n\nNo. ",
+            "/n"
+        ],
+        [
+            "De coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe ",
+            "cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. ",
+            "/n"
+        ],
+        [
+            "De cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. ",
+            "/n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. ",
+            "/n"
+        ],
+        [
+            "No. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe ",
+            "coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro",
+            ". \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe co",
+            "ro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe co",
+            "ro. \n\nNo. \n\nDe coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. \n\nDe coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. \n\nDe co",
+            "ro. \n\nNo. \n\nDe c",
+            "oro. \n\nNo. \n\nDe cor",
+            "o. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. /n"
+        ],
+        [
+            "No. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. /n"
+        ],
+        [
+            "De coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. \n\nDe coro. \n\nNo. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "zmjgACk8QKY",
-            "delay": 0
+            "delay": 11000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

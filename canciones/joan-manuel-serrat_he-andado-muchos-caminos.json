@@ -1,1 +1,243 @@
-{"cancion": "He-andado-muchos-caminos", "banda": "joan-manuel-serrat", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G#", "A#", "D#", "G", "F"]}, {"nombre": "parte2", "acordes": ["G", "C", "Dm", "G", "C", "F", "G", "C"]}, {"nombre": "parte3", "acordes": ["C", "C", "G", "G4"]}, {"nombre": "parte4", "acordes": ["Dm", "G", "C", "Dm", "F", "G", "C"]}, {"nombre": "parte5", "acordes": ["C", "G", "D#", "A#", "D#", "A#", "C"]}], "orden_partes": [0, 1, 0, 1, 2, 3, 4, 0, 1, 0, 1, 2, 3, 4, 3]}, "letras": [[], ["e andado muchos caminos/n"], ["he abierto m", "uchas vere", "das;", "/n"], ["he naveg", "ado en cien ma", "res/ny atra"], ["cado en ci", "en rive", "ras.", "", "", "/nA)E"], ["n todas partes he visto/n"], ["carava", "nas de tristez", "a,", "/n"], ["soberbios ", "y melanc", "licos/nborr"], ["achos d", "e sombra ne", "gra.", "", "", "/nB)Y "], ["pedantones al pa\u00f1o/nque mi"], ["ran, callan y pi", "ensan", "/nque sa"], ["ben, ", "porque no be", "ben/nel v"], ["ino d", "e las tabe", "rnas.", "/nC)"], ["Va la g", "ente q", "ue cami", "na/n"], ["y va ", "apestando la ti", "erra.../nA)Y en"], [" todas partes he visto/n"], ["gentes que da", "nzan o jue", "gan,", "/n"], ["cuando pu", "eden, y labo", "ran/nsus cua"], ["tro palm", "os de ti", "erra", ".", "", "/nA)"], ["Nunca si llegan a un sitio/n"], ["preguntan ", "a donde ll", "egan.", "/n"], ["Cuando cam", "inan, caba", "lgan/na lo"], ["mos d", "e mula vi", "eja.", "", "", "/nB)Y "], ["no conocen la prisa/nni aun en "], ["los d\u00edas de ", "fiest", "a./nDonde hay "], ["vino,", " beben vi", "no,/ndonde no"], [" hay ", "vino, agua fr", "esca.", "/nC)S"], ["on buena", "s gentes", " que vive", "n/n"], ["laboran, pa", "san y sue", "\u00f1an,/ny en un d\u00eda como tantos,"], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "tpNXB-o8i4k", "delay": 0}]}
+{
+    "cancion": "He-andado-muchos-caminos",
+    "banda": "joan-manuel-serrat",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "Dm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Fm",
+                    "G#",
+                    "F",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G#",
+                    "G#",
+                    "F",
+                    "F",
+                    "Dm",
+                    "G",
+                    "G",
+                    "C",
+                    "Cm",
+                    "G",
+                    "C",
+                    "C",
+                    "G G4",
+                    "G",
+                    "G Dm",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "Cm",
+                    "D#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "C",
+                    "C",
+                    "G",
+                    "Gm G#",
+                    "F",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "A#",
+                    "G",
+                    "A#",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "Cm",
+                    "D#",
+                    "D#",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "He ",
+            "andado much",
+            "os camino",
+            "s, he abierto m",
+            "uchas vereda",
+            "s, he navegado ",
+            "en cien mares ",
+            "ha tractado en cien ",
+            "riberas ",
+            "",
+            "/n"
+        ],
+        [
+            "En todas pa",
+            "rtes he vis",
+            "to caravana",
+            "s de trist",
+            "eza, soberbio ",
+            "melancóli",
+            "cos borrachos de so",
+            "mbra negra",
+            ". ",
+            "pedant",
+            "ones al paño ",
+            "que miran ",
+            "callan pi",
+            "ensan",
+            "que saben por",
+            "que no bebe ",
+            "el vino de ",
+            "las tabe",
+            "rnas. /n"
+        ],
+        [
+            "Más mala g",
+            "ente que ca",
+            "mina va pe",
+            "stando la ti",
+            "erra. ",
+            "",
+            "en todas ",
+            "partes  he vi",
+            "sto gente",
+            "s que danzan j",
+            "uegan, cuan",
+            "do pueden labo",
+            "ran sus cuatro pal",
+            "mos de tierra",
+            ". ",
+            "/n"
+        ],
+        [
+            "Nunca ",
+            "si llegan un si",
+            "tio, p",
+            "reguntan dónde l",
+            "legan, cuand ",
+            "caminan cabal",
+            "gan lomos ",
+            "de mula vi",
+            "eja. ",
+            "no c",
+            "onocen la pr",
+            "isa ni aún en ",
+            "los días de ",
+            "fiesta ",
+            "donde hay v",
+            "ino, beben vi",
+            "no, donde no hay v",
+            "ino, agua fr",
+            "esca. /n"
+        ],
+        [
+            "Son b",
+            "uenas gentes ",
+            "que viven, l",
+            "aboran, pasan su",
+            "eñan en un ",
+            "día como ta",
+            "ntos descansan b",
+            "ajo la t",
+            "ier",
+            "ra. ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "tpNXB-o8i4k",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

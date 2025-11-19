@@ -2,76 +2,503 @@
     "cancion": "camaron-bombay",
     "banda": "divididos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
                     "C",
-                    "D",
-                    "G"
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
         ]
     },
     "letras": [
         [
-            "mbay/n   Camarón bom"
+            "Cam",
+            "aró /n Bom",
+            "bay /n Po",
+            "lo intent",
+            "ino /n Ca",
+            "maró /n Bom",
+            "bay /n C",
+            "amaró /n Bombay./n"
         ],
         [
-            "bay/n   Por lo in"
+            "Cam",
+            "aró /n Bombay./n"
         ],
         [
-            "testino camarón",
-            "/n   Camarón b"
+            "Por l",
+            "o  intentino,/n"
         ],
         [
-            "ombay/n   Camarón b"
+            "Cama",
+            "ró /n Bombay.",
+            "/n"
         ],
         [
-            "ombay/n   Por lo int"
+            "No te ha",
+            "ga  el rastaf",
+            "ari /n No te hag",
+            "a  el rastaman.",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "estino",
-            "/n   Camarón bo"
+            "No te haga",
+            "el rastafa",
+            "ri /n No te hagas e",
+            "l  rastama",
+            "n ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "mbay/n   Camarón bom"
+            "Camarón/n"
         ],
         [
-            "bay/n   por lo int"
+            "Bombay /n"
         ],
         [
-            "estino camarón bom",
-            "bay/n   camarón bo"
+            "Camarón /n B",
+            "ombay /n P",
+            "or  lo i",
+            "ntentin/n"
         ],
         [
-            "mbay/n   camarón bom"
+            "Camarón /n B",
+            "ombay/n"
         ],
         [
-            "bay/n   por lo int"
+            "Camarón /n B",
+            "ombay. /n C",
+            "amaró /n B",
+            "ombay/n"
         ],
         [
-            "estino camarón bom",
-            "bay"
+            "Por lo inte",
+            "ntino /n"
+        ],
+        [
+            "Camarón /n B",
+            "ombay /n"
+        ],
+        [
+            "N",
+            "o  te hagas e",
+            "rastafari/n"
+        ],
+        [
+            "No te hagas el",
+            "rastaman ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  te hagas e",
+            "rastaman./n"
+        ],
+        [
+            "No te hagas e",
+            "l  rastaman.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Camar",
+            "ó /n Bombay./n"
+        ],
+        [
+            "Camaró /n Bo",
+            "mbay /n P",
+            "o  lo int",
+            "entino /n"
+        ],
+        [
+            "Camarón /n Bom",
+            "bay /n"
+        ],
+        [
+            "Camarón /n Bom",
+            "bay ",
+            "/n"
+        ],
+        [
+            "Por l",
+            "o  inte",
+            "ntino /n"
+        ],
+        [
+            "Camarón /n B",
+            "om",
+            "ba",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Camar",
+            "ó /n Bombay.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "C",
+            "amaró /n Bombay.",
+            "/n"
+        ],
+        [
+            "Cam",
+            "aró /n Bombay."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "QB-QHFg-G-Q",
-            "delay": 0
+            "delay": 13140.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

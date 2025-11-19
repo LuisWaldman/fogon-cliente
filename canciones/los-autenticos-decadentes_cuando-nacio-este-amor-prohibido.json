@@ -2,89 +2,256 @@
     "cancion": "cuando-nacio-este-amor-prohibido",
     "banda": "los-autenticos-decadentes",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "C",
+                    "C",
+                    "C",
+                    "E",
+                    "C#",
+                    "B",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C",
-                    "E",
                     "Am",
-                    "F",
-                    "C",
-                    "E",
                     "Am",
-                    "G"
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "Mi corazon temblo",
-            ",/n"
-        ],
-        [
-            "cuando nacio este amor prohibid",
-            "o/n"
-        ],
-        [
-            "y un dios lo protegi",
-            "o/n"
-        ],
-        [
-            "porque no habia otro amor mas limpio",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Y cuando estoy con vos",
+            "Mi c",
+            "orazón tembl",
+            "ó, cuando nació ",
+            "el cielo. ",
+            "un /n"
+        ],
+        [
+            "Dios no proteci",
+            "ó, es que no ",
+            "había otro amor más ",
+            "limpio.  ",
+            "",
+            "cuando estoy con ",
+            "vos, no es lo mismo ",
+            "que estaré solo ",
+            "",
+            "es que este amor ",
+            "por vos, no me ",
+            "lo puedo exp",
+            "licar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "no es lo mismo que estar solo",
-            "/n"
+            "Siempre qui",
+            "se vivir, ",
+            "un romance ya ",
+            "escondido. /n"
         ],
         [
-            "y esque este amor por vo",
-            "s/n"
-        ],
-        [
-            "no me lo puedo explicar",
-            "/n"
-        ],
-        [
-            "Siempre quise vivir",
-            "/n"
-        ],
-        [
-            "un romance a escondidas",
-            "/n"
-        ],
-        [
-            "siento que es lo mejor",
-            "/n"
-        ],
-        [
-            "porque no queda ninguna herida",
-            ""
+            "Siento que es ",
+            "lo mejor, ",
+            "es que no queda nin",
+            "guna herida. ",
+            "",
+            "cuando ",
+            "estoy con vos, no es ",
+            "lo mismo que esta",
+            "ré solo. ",
+            "es que es",
+            "te amor por vos, ",
+            "no me lo puedo e",
+            "xplicar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "c",
+            "uando estoy con vos, no ",
+            "es lo mismo que e",
+            "staré solo. ",
+            "es ",
+            "que este amor por vos ",
+            "no me lo ",
+            "puedo  explic",
+            "ar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "cuando estoy con vos, no es lo mismo que estaré solo. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "vQ3axus9j3s",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

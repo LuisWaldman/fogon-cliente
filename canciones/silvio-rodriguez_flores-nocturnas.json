@@ -1,1 +1,610 @@
-{"cancion": "flores-nocturnas", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "A", "B"]}, {"nombre": "parte2", "acordes": ["A", "B"]}], "orden_partes": [0, 1]}, "letras": [["iff 1                                     Riff1/n "], ["        Qu\u00e9 jardinero ha sembrado la quinta avenida/n "], ["    E/ G#                     Re9/Fa#/n "], ["       Brotan, rebotan, explotan por quinta avenida/n "], ["       Flores que cruzan las puertas prohibidas"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "US39QZlsiPo", "delay": 0}]}
+{
+    "cancion": "flores-nocturnas",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Se abren ",
+            "las flores noc",
+            "turnas de qui",
+            "nta ave",
+            "nida /n"
+        ],
+        [
+            "P",
+            "ara es",
+            "os pobres señ",
+            "ores que van ",
+            "al hot",
+            "el \n\nF",
+            "lo",
+            "res que ",
+            "rompen en la ",
+            "oscuridad  /n"
+        ],
+        [
+            "Flores de g",
+            "uiños de co",
+            "mplicidad /n"
+        ],
+        [
+            "Flores  silb",
+            "ando suicidios /n"
+        ],
+        [
+            "F",
+            "lores de ar",
+            "oma fatal ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿/n"
+        ],
+        [
+            "Qué jard",
+            "inero ha sem",
+            "brado la quin",
+            "ta aveni",
+            "da? ",
+            "/n"
+        ],
+        [
+            "Con vari",
+            "edad tan prec",
+            "isa de noct",
+            "urnidad ",
+            "",
+            "",
+            "¿\nCuál es su es",
+            "pecie cuál su ",
+            "país? ",
+            "¿\nQué fino abo",
+            "no nutrió su ",
+            "raíz?  /n"
+        ],
+        [
+            "Dándoles  ton",
+            "os silvest",
+            "res ¿\nDó",
+            "nde estará su ",
+            "matriz? ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Fl",
+            "ores que cr",
+            "uzan las puerta ",
+            "prohibidas \n\nF",
+            "lores que sa",
+            "ben lo que no ",
+            "sabré  \n\nFlo",
+            "res que ensal",
+            "tan su sueño de ",
+            "vida en guirn",
+            "ata sin fe /n"
+        ],
+        [
+            "Flores de ",
+            "sábana",
+            "s con o",
+            "jos \n\nF",
+            "lores dese",
+            "chables /n"
+        ],
+        [
+            "Camp",
+            "anillas del ",
+            "ant",
+            "ojo \n\nF",
+            "lores ",
+            "comiendo  s",
+            "obras del a",
+            "mor ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Flota",
+            "n, rebotan, ",
+            "explotan por qui",
+            "nta aven",
+            "ida ",
+            "/n"
+        ],
+        [
+            "Son arr",
+            "ancadas p",
+            "arten con air",
+            "e veloz ",
+            "",
+            "/n"
+        ],
+        [
+            "Dicen que es ",
+            "duro el ofici",
+            "o de flor \n\nC",
+            "uando sus p",
+            "étalos se haga ",
+            "al sol \n\nV",
+            "alidas flore",
+            "s noct",
+            "urnas \n\nFl",
+            "ores de la ",
+            "decepci",
+            "ón ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Flo",
+            "res que cruz",
+            "an las puerta ",
+            "prohibidas /n"
+        ],
+        [
+            "Flores que saben ",
+            "lo que no sa",
+            "bré \n\nQue ",
+            "ensalta ",
+            "su sueño de v",
+            "ida en guirnata ",
+            "sin fe \n\nF",
+            "lores de s",
+            "ábanas ",
+            "con oj",
+            "os \n\nFlo",
+            "res desecha",
+            "bles /n"
+        ],
+        [
+            "Campanil",
+            "las del a",
+            "ntoj/n"
+        ],
+        [
+            "Flo",
+            "res sin p",
+            "rimaver",
+            "ni estac",
+            "ión \n\nFl",
+            "ores c",
+            "omiendo so",
+            "bras del a",
+            "mor ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "F",
+            "lores, f",
+            "lores, ",
+            "ahí vienen las jardine",
+            "ras \n\nVienen entregand ",
+            "flores /n"
+        ],
+        [
+            "Flores, ",
+            "flor",
+            "es, ahí vienen ",
+            "las jardineras \n\nViene",
+            "n entregando fl",
+            "ores \n\nFl",
+            "ores, ",
+            "flores, ",
+            "ahí vienen las jar",
+            "dineras \n\nVienen entr",
+            "egando flore /n"
+        ],
+        [
+            "Flores ",
+            "f",
+            "lores, ",
+            "ahí vienen las jardineras /n"
+        ],
+        [
+            "Vienen  entregand ",
+            "flores /n"
+        ],
+        [
+            "Flores, ",
+            "fl",
+            "ores, ",
+            "",
+            "",
+            "flores ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 184,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "US39QZlsiPo",
+            "delay": 4000.0
+        }
+    ],
+    "calidad": 1
+}

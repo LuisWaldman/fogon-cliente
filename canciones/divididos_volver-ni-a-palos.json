@@ -2,151 +2,267 @@
     "cancion": "volver-ni-a-palos",
     "banda": "divididos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "Em",
-                    "B7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
                     "E7",
-                    "Am",
                     "F#7",
-                    "B7",
-                    "Am",
-                    "Em",
-                    "B7",
-                    "E",
-                    "E7",
-                    "Am",
                     "F#7",
-                    "B7",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "Am",
                     "Em",
-                    "B7",
-                    "E",
-                    "C#7",
-                    "F#m",
-                    "A",
-                    "Am",
-                    "E",
-                    "C#7",
-                    "F#m",
-                    "A",
-                    "Am",
-                    "E",
-                    "F#m",
-                    "B7",
-                    "E",
-                    "F#m",
-                    "B7",
-                    "E",
-                    "C#7",
-                    "F#m",
-                    "B7",
-                    "E",
-                    "Am",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "E7",
+                    "E7",
+                    "F#7",
+                    "F#7",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C#7",
+                    "F#m",
+                    "Am",
+                    "Am",
+                    "C#7",
+                    "C#7",
+                    "A",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
                     "B7",
-                    "E",
                     "B7",
-                    "E"
+                    "B7",
+                    "F#m",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
         ]
     },
     "letras": [
         [
-            "    La mujer es cosa ",
-            "así/n "
-        ],
-        [
-            "   ahora viene y te r",
-            "ompe todo/n"
-        ],
-        [
-            "    por recuerdos de mentiras y bom",
-            "bones/n    "
-        ],
-        [
-            "de esta puta v",
-            "ida de cot",
-            "é/n   La mujer es cosa "
-        ],
-        [
-            "así",
-            "/n   ladra el rope, entra el "
-        ],
-        [
-            "fumador de amores/n"
-        ],
-        [
-            "   en este club de var",
-            "ones/n "
-        ],
-        [
-            "  de ese t",
-            "ango musulm",
-            "n./n   La mujer es cosa "
-        ],
-        [
-            "así",
-            "/n   me fui con al "
-        ],
-        [
-            "boina sucia/n   "
-        ],
-        [
-            "quien sabe si",
-            " en los send",
-            "eros.",
-            "/n   les limpian los "
-        ],
-        [
-            "cabezales/n  "
-        ],
-        [
-            " al glad",
-            "iador de piy",
-            "amas/n"
-        ],
-        [
-            "       ",
-            " La mujer es cosa as",
-            "/n   "
-        ],
-        [
-            "Volver ",
-            "   ni a pa",
-            "los",
-            "/n   "
-        ],
-        [
-            "Volver ",
-            "   ni a pa",
-            "los/n   "
-        ],
-        [
-            "Volver ",
-            "    ni ",
-            "a palos",
             "",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "st  es una canción en español de rock argentino./n"
+        ],
+        [
+            "L  mujer es co",
+            "s  así./n"
+        ],
+        [
+            "Ahora vin",
+            "e  te rompe todo",
+            "por recuerdos de me",
+            "ntira  bombones d",
+            "e  esta p",
+            "ut vida de /n Coté./n"
+        ],
+        [
+            "L",
+            "a  mujer es cosa así.",
+            "/n"
+        ],
+        [
+            "Ladra el rope, entra e",
+            "l  fumador de amores e",
+            "n  este club de varones",
+            "",
+            "de ese ta",
+            "ng  musulm",
+            "án /n La m",
+            "ujer  es cosa as",
+            "í /n"
+        ],
+        [
+            "Me fui con la boina s",
+            "ucia ",
+            "en sates en l",
+            "o  senderos",
+            "le limpi",
+            "a  los cabezales a",
+            "l  gladiador d",
+            "e  pijamas./n"
+        ],
+        [
+            "L",
+            "a  mujer es cosa a",
+            "sí /n"
+        ],
+        [
+            "La mujer es cosa as",
+            "í /n"
+        ],
+        [
+            "La mujer es cos",
+            "así.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "L",
+            "a  mujer e",
+            "s  cosa así.",
+            "",
+            "/n"
+        ],
+        [
+            "Volver n",
+            "i  pal",
+            "o ",
+            "volver",
+            "n",
+            "i  palo",
+            "s  volver",
+            "",
+            "",
+            "ni",
+            "pa",
+            "lo",
+            "ni palos"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kV49kPZgeEM",
-            "delay": 0
+            "delay": 3300.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,90 +2,248 @@
     "cancion": "veo",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "G",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "Bm",
-                    "C"
+                    "C",
+                    "C",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "D",
+                    "D",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
-                    "C",
-                    "D",
                     "Am",
-                    "D",
-                    "Bm",
-                    "Em"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "D",
+                    "D",
                     "Am",
                     "D",
-                    "Bm",
                     "D",
-                    "G",
-                    "Bm",
+                    "D",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
                     "C",
-                    "C/D"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
-        [],
         [
-            "basta de fa",
-            "ntasí",
-            "a /nme gustas t"
-        ],
-        [
-            "anto, me gustas t",
-            "anto ",
+            "",
+            "",
             "/n"
         ],
         [
-            "si te vieras como te ve",
-            "o /ntan rigid"
+            "Basta de ",
+            "fantasía,  ",
+            "me gustas tanto, ",
+            "me gustas tanto",
+            ". \n\nYa no te h",
+            "agas la briva, ",
+            "te gusto tanto, ",
+            "te gusto tant",
+            "o. \n\nSi te v",
+            "eras como te veo ",
+            "tan rígida ",
+            "tan super",
+            "ada, de",
+            "jarías un lado el miedo ",
+            "ahí no más ",
+            "no más /n"
         ],
         [
-            "a y ta supera",
-            "da /n"
+            "Ve",
+            "o, veo, que no ",
+            "te mueves de acá. \n\nV",
+            "eo, veo, que ",
+            "más ya no podés más. \n\nV",
+            "eo, veo, ",
+            "tanto miedo. \n\nV",
+            "eo, ",
+            "veo. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "dejarias a un lado el mie",
-            "do /nahi nom"
+            "Cali",
+            "da tu mirad",
+            "a, te va soltan",
+            "do, te va solt",
+            "ando. ",
+            "sin decirme nad",
+            "a, me dices tant",
+            "o, me dices tan",
+            "to. \n\nSi ",
+            "te veras como te v",
+            "eo, tan tími",
+            "da, tan cont",
+            "rolada, ",
+            "dejarías un lado el mi",
+            "edo, ahí no m",
+            "ás, no m",
+            "ás. /n"
         ],
         [
-            "ás, nom",
-            "ás /nveo, veo... "
+            "Veo, veo, ",
+            "que no te mueves de acá. /n"
         ],
-        [],
-        []
+        [
+            "Veo, veo, ",
+            "que más ya no podés más. /n"
+        ],
+        [
+            "Veo,  ",
+            "veo, tanto miedo. /n"
+        ],
+        [
+            "Veo, ",
+            "",
+            "veo. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Veo, veo ",
+            "que no te mueves de acá",
+            ". \n\nVeo, veo",
+            ", que más ya no podés má",
+            "s. \n\nVeo, ",
+            "veo. /n"
+        ],
+        [
+            "Veo, ",
+            "veo. ",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Br9_JIxO7V8",
-            "delay": 0
+            "delay": 13000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

@@ -1,1 +1,348 @@
-{"cancion": "esto-no-es-una-elegia", "banda": "silvio-rodriguez", "escala": "Asus4", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Asus4", "Asus4/C", "B\u00b0", "E7", "Asus4"]}, {"nombre": "parte2", "acordes": ["Dm7", "Dm7", "Dm", "B\u00b0", "E7"]}, {"nombre": "parte3", "acordes": ["Asus4", "E7", "Asus4", "A", "G#", "G", "D/F#", "Dm"]}, {"nombre": "parte4", "acordes": ["G7", "C", "G", "F", "Bb", "B\u00b0", "E7", "Bm"]}, {"nombre": "parte5", "acordes": ["F#m", "Bb", "F", "Gm", "F", "B\u00b0", "E7", "A4"]}], "orden_partes": [0, 0, 1, 2, 3, 4]}, "letras": [["       ", "T\u00fa me recuerdas el ", "prado de l", "os so\u00f1ad", "ores/n     "], ["       ", "El muro que nos sepa", "ra del mar, si", " es de noche", "/n     "], ["    T\u00fa me recuerdas sen", "tada, ciertos senti", "mientos/n     Qu\u00e9 nunca se"], [" sabe qu", "e traen en las", " alas/n     Si "], ["vivos o muert", "os,/n     "], ["    Me quito el ro", "stro y", " lo d", "oblo", "/n     encima "], ["del pantal", "\u00f3n", "", "/n     Si no he de decir tu "], ["nombre,/n     si ajeno se es"], ["conde/n     No quiero expre"], ["si\u00f3n/n     "], ["Suelen mis o", "jos tener", " como impre", "sos sus sue", "os,", "/n     Ris"], ["ue-e-", "\u00f1os", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "Q9zFLyC3jgg", "delay": 0}]}
+{
+    "cancion": "esto-no-es-una-elegia",
+    "banda": "silvio-rodriguez",
+    "escala": "Asus4",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "Asus4/C",
+                    "E7",
+                    "Dm7",
+                    "Dm",
+                    "E7",
+                    "B°",
+                    "Bm",
+                    "B°"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Asus4/C",
+                    "B°",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E7",
+                    "Asus4/C",
+                    "Asus4/C",
+                    "B°",
+                    "B°"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "B°",
+                    "Asus4",
+                    "E7",
+                    "Asus4",
+                    "Asus4",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E7",
+                    "A",
+                    "Dm",
+                    "B°",
+                    "F",
+                    "F",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B°",
+                    "Bm",
+                    "Bm",
+                    "F",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Asus4/C",
+                    "B°",
+                    "B°"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B°",
+                    "B°",
+                    "E7",
+                    "B°",
+                    "B°"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Asus4/C",
+                    "Asus4/C",
+                    "E7",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B°",
+                    "F",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E7",
+                    "B°",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E7",
+                    "Asus4/C",
+                    "B°",
+                    "B°"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°",
+                    "B°"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tu me recuerdas el ",
+            "prado  de los soñ",
+            "adores /n"
+        ],
+        [
+            "El ",
+            "muro que ",
+            "no se para del mar ",
+            "si es de noche ",
+            "/n"
+        ],
+        [
+            "Tu me recuer",
+            "das sentada c",
+            "iertos sentimientos /n"
+        ],
+        [
+            "Que nunca se sabe que ",
+            "traen en las al",
+            "as \n\nSi ",
+            "vivos muerto",
+            "s, si ",
+            "vivos muer",
+            "tos /n"
+        ],
+        [
+            "Me ",
+            "quito el rostro lo do",
+            "blo encima ",
+            "del pantal",
+            "ón \n\nSi no he de d",
+            "ecir tu nombre, si ",
+            "que no se esconde /n"
+        ],
+        [
+            "No quiero expresi",
+            "ón, suelen mis ojo",
+            "s tener como impresos ",
+            "sus sueños, ",
+            "mis su",
+            "eño",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tu ",
+            "me recuerdas las ca",
+            "lles de la \n\nHabana v",
+            "ieja /n"
+        ],
+        [
+            "La ",
+            "catedral s",
+            "umergida en su baño ",
+            "de \n\nTexas ",
+            "/n"
+        ],
+        [
+            "Tu me recuerd",
+            "as las cosas, no ",
+            "sé las ventanas \n\nD",
+            "onde los cantoras noct",
+            "urnos canta",
+            "ban \n\nAmo",
+            "r la \n\nHaban",
+            "a, amo ",
+            "la \n\nHaba",
+            "na /n"
+        ],
+        [
+            "Est",
+            "o no es una elegí",
+            "a, ni es un roma",
+            "nce ni un verso /n"
+        ],
+        [
+            "Más bien una acci",
+            "ón de gracias por dar",
+            "le mis ansias \n\nRaz",
+            "ón para un bes",
+            "o, una modesta c",
+            "orona encontrada en la ",
+            "au",
+            "ro",
+            "ra ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tu ",
+            "me recuerdas el mundo ",
+            "de un adole",
+            "scente /n"
+        ],
+        [
+            "Un ",
+            "seminiño a",
+            "sustado mirando la ",
+            "gente ",
+            "/n"
+        ],
+        [
+            "Un ángel in",
+            "terrogado, un s",
+            "ueño acostado \n\nLa ",
+            "maldición, la blasfemi ",
+            "de un conti",
+            "nente ",
+            "un poco de mue",
+            "rte, ",
+            "un poco de m",
+            "uerte ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Q9zFLyC3jgg",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

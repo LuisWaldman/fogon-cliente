@@ -1,1 +1,419 @@
-{"cancion": "Menos-tu-Vientre", "banda": "joan-manuel-serrat", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "Am7", "G/B"]}, {"nombre": "parte2", "acordes": ["Em", "D6", "C", "G/B", "Am7", "D7"]}, {"nombre": "parte3", "acordes": ["G", "C7", "C", "Am", "D7", "G", "Am/F#", "B7"]}, {"nombre": "parte4", "acordes": ["Em", "D", "C", "Em", "Am7", "D7sus4", "D7", "G"]}], "orden_partes": [0, 1, 2, 3]}, "letras": [[], ["Menos tu vie", "ntre/ntodo es conf"], ["uso/n"], ["menos tu vient", "re/ntodo es fut"], ["uro/nfugaz,"], ["   pasado, ", "   baldio y tu", "rbio", "/n"], ["Meno", "s t", "u vi", "entr", "e/nMenos tu vie"], ["ntre/n"], ["todo es oscuro/n  menos tu vientre"], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "IKUkKUIdnHk", "delay": 0}]}
+{
+    "cancion": "Menos-tu-Vientre",
+    "banda": "joan-manuel-serrat",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "Cm",
+                    "Am7",
+                    "Am7",
+                    "Em",
+                    "Em",
+                    "Am7",
+                    "G",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am7",
+                    "Em",
+                    "Em",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Am7",
+                    "Em",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am7",
+                    "Am7",
+                    "Am7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am7",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "M",
+            "enos tu v",
+            "ientre",
+            "todo es ",
+            "confus",
+            "o. /n"
+        ],
+        [
+            "Meno",
+            "s tu vien",
+            "tre, tod ",
+            "es futuro, ",
+            "fuga",
+            "z, p",
+            "asado",
+            "",
+            "bald",
+            "ío ",
+            "t",
+            "ur",
+            "bi",
+            "o. ",
+            "/n"
+        ],
+        [
+            "Men",
+            "os tu vie",
+            "ntre, ",
+            "todo es ocu",
+            "lto. ",
+            "/n"
+        ],
+        [
+            "Menos tu ",
+            "vientr",
+            "e, todo i",
+            "nsegu",
+            "ro, todo ",
+            "post",
+            "rero",
+            "",
+            "polvo ",
+            "sin mu",
+            "ndo. /n"
+        ],
+        [
+            "Me",
+            "nos tu v",
+            "ientr",
+            "e, todo es osc",
+            "uro. ",
+            "/n"
+        ],
+        [
+            "M",
+            "enos tu ",
+            "vi",
+            "en",
+            "tr",
+            "claro ",
+            "pr",
+            "of",
+            "un",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Men",
+            "os tu vien",
+            "tre. \n\nTodo ",
+            "es conf",
+            "uso. ",
+            "/n"
+        ],
+        [
+            "Meno",
+            "s tu vient",
+            "re, todo ",
+            "es futuro, f",
+            "ugaz, ",
+            "pasa",
+            "do, ",
+            "bal",
+            "dío ",
+            "tu",
+            "rb",
+            "io. ",
+            "/n"
+        ],
+        [
+            "Meno",
+            "s tu vien",
+            "tre, todo es ",
+            "ocult",
+            "o. ",
+            "/n"
+        ],
+        [
+            "Menos tu v",
+            "ientre",
+            "todo in",
+            "seguro, ",
+            "todo p",
+            "ostr",
+            "ero, ",
+            "pol",
+            "vo sin ",
+            "mundo.  ",
+            "/n"
+        ],
+        [
+            "Menos  tu ",
+            "vientre",
+            ", todo es os",
+            "curo. ",
+            "/n"
+        ],
+        [
+            "Me",
+            "nos tu ",
+            "vi",
+            "en",
+            "tre, ",
+            "claro ",
+            "pr",
+            "ofun",
+            "do. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Menos tu vientre, todo es oculto. "
+        ]
+    ],
+    "bpm": 161,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "IKUkKUIdnHk",
+            "delay": 1000.0
+        }
+    ],
+    "calidad": 1
+}

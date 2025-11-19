@@ -2,52 +2,231 @@
     "cancion": "te-contaron",
     "banda": "los-autenticos-decadentes",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "G",
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "G",
                     "D",
-                    "Dsus",
-                    "D6"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
-                    "A7",
-                    "A",
                     "A7",
                     "D",
-                    "Dsus",
-                    "D",
+                    "A",
                     "D"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D7",
-                    "G",
-                    "Gm",
-                    "F#m",
-                    "E",
-                    "A",
-                    "A7",
-                    "D"
+                    "D",
+                    "D",
+                    "D",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "D6",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
                     "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
                     "A7",
+                    "A7",
+                    "D",
                     "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
                     "D"
                 ]
             }
@@ -56,67 +235,207 @@
             0,
             1,
             2,
-            1,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
-        [],
         [
-            "No me pidas una excusa/nSon cuestiones que no"
-        ],
-        [
-            " puedo ",
-            "responder.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "No me siento abandonado/nEs mentira que estoy con ot"
+            "Esta es una canci",
+            "ón en español de rock argentino. \n\nEs",
+            "ta ",
+            "es ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "una ",
+            "",
+            "canción en español de rock argentino. /n"
         ],
         [
-            "ra mu",
-            "jer",
-            ".",
+            "No es engaño, no es traició",
+            "n, no me importa qué dirá",
+            "n, vos sabes cómo soy yo, ",
+            "digo siempre la verdad. /n"
+        ],
+        [
+            "En la vida necesi",
+            "to que me quieras, ",
+            "que el invierno me lo ",
+            "vuelvas primavera. /n"
+        ],
+        [
+            "En la vida neces",
+            "ito que me quiera",
+            "s, que el invierno me lo ",
+            "vuelvas primavera. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Te contaron que me vieron/nEn la barra casi en f"
+            "En la vida necesito que me quieras, que el invierno me lo vuelvas primavera. \n\nEn la vida necesito que me quieras, que el ",
+            "invierno ",
+            "me lo vuelvas ",
+            "primavera.  \n\nNo me pi",
+            "das una excusa, no me llo",
+            "res que me muero, son cuest",
+            "iones que no puedo respo",
+            "nder. \n\nNo me s",
+            "iento abandonado, sé que es",
+            "tás siempre mi lado, es me",
+            "ntira que estoy con otra mu",
+            "jer. \n\nMe c",
+            "ontaron que me vieron la ot",
+            "ra noche con amigos, en ",
+            "la barra casi en coma de ",
+            "fernet.  \n\nNo ",
+            "es lo que te imaginaba, que ",
+            "con otra te engañaba, ",
+            "me contaba que de ti me e",
+            "namoré. \n\nNo ",
+            "es engaño, no es traición, no ",
+            "me importa qué dirán, ",
+            "vos sabes cómo soy yo, ",
+            "digo siempre la verdad. /n"
         ],
         [
-            "orma de fern",
-            "et./nNo es lo qu"
+            "En la vida necesito que ",
+            "me quieras, que ",
+            "el invierno me lo vuelv",
+            "as primavera. /n"
         ],
         [
-            "e te imaginabas/nQue con ot"
+            "En la vida necesito ",
+            "que me quieras, ",
+            "que el invierno me lo vuel",
+            "vas primavera. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ra te engañaba/nLe cont"
+            "En la vida neces",
+            "ito que me quieras, ",
+            "que el invierno me ",
+            "lo vuelvas primavera. /n"
         ],
         [
-            "aba que de ti me enamore",
-            ".",
-            "/nNo es eng"
+            "En la vida nece",
+            "sito que me quieras ",
+            "que el invierno me ",
+            "lo vuelvas primavera. ",
+            "",
+            "/n"
         ],
         [
-            "año, no es pasión/nNo me imp"
+            "Que me estáis volvi",
+            "endo la ca, la palaqu",
+            "ita partí mi amor. ",
+            "/n"
         ],
         [
-            "orta el que dirán/nVos sabes como soy yo"
+            "Ya no busques ",
+            "solución,  mi castigo es ",
+            "tu pasión me voy. ",
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        [],
-        []
+        [
+            "En ",
+            "la vida necesit ",
+            "que me quieras, amor. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En la vida neces",
+            "ito que me quieras, mi amo",
+            "r. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En la vida ne",
+            "cesito que me quieras, mi am",
+            "or. \n\nPero se lo descadentes, lo de",
+            "scadentes, te pone bailar, te p",
+            "one gozar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En la vida necesito que me quieras, amor. "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "5N9o-tClGsw",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

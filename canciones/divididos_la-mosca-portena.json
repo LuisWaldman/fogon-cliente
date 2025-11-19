@@ -2,55 +2,296 @@
     "cancion": "la-mosca-portena",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "D/F#",
-                    "C"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            " Soy la mo",
-            "sca porte",
-            "a,/n"
-        ],
-        [
-            " que no te de",
-            "ja dormir",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            " Soy la mo",
-            "sca porte",
-            "a,/n"
+            "E",
+            "st es una canción en español de rock argentino. /n Esta es una canción",
+            "e",
+            "n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "e",
+            "spa",
+            "ño de rock argentino. /n E",
+            "st  es una",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canció  en español de rock argentino./n"
         ],
         [
-            " vivo y pi",
-            "enso  pa",
-            "ra atras"
+            "Soy la mosca",
+            "hongreñ",
+            "me piens",
+            "para hablar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Podrí",
+            "amo  trabajar c",
+            "on  la cara",
+            "martina/n"
+        ],
+        [
+            "Podríamo",
+            "trabajar",
+            "pensand  e",
+            "n  saludar.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "oy  la mosca",
+            "hongre",
+            "ñ  tengo los ojos",
+            "grandes /n S",
+            "o  la mosc",
+            "a  hongreñ",
+            "que me ahogo",
+            "e  tu cerve",
+            "za ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Soy l",
+            "mosca hongre",
+            "ñ  tengo los",
+            "ojo  grandes./n"
+        ],
+        [
+            "So  l",
+            "a  mosca hongre",
+            "ñ  que m",
+            "e  ahogo en tu cer",
+            "veza ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "So",
+            "y  la mosca hong",
+            "reña  s",
+            "o",
+            "y",
+            "la mosca hongre",
+            "ña ",
+            "/n"
+        ],
+        [
+            "S",
+            "o  la mosca hong",
+            "reña "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "s6ks8YxfxWA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

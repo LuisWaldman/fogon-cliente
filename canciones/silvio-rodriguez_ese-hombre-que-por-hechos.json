@@ -1,1 +1,436 @@
-{"cancion": "ese-hombre-que-por-hechos", "banda": "silvio-rodriguez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "C", "D", "C"]}, {"nombre": "parte2", "acordes": ["G", "D", "C", "G", "C", "D", "C"]}, {"nombre": "parte3", "acordes": ["G", "C", "D", "C", "D"]}], "orden_partes": [0, 0, 0, 0, 1, 1, 2]}, "letras": [[], [], ["hombre que por h", "echos o por di", "chos/n"], ["es r", "espetado tanto,", "", "", "/nese "], ["hombre que por d", "ichos o por he", "chos/nes "], ["festejado t", "anto,", "", "", "", "/ndebiera olv"], ["idar ", "que casi iba so", "lo/ncuan"], ["do desnud", "\u00f3 aquella emoc", "i\u00f3n/nque ahora es de "], ["todos,/ndebiera olvi"], ["dar que casi iba solo/ncuando conquist\u00f3 el cetro que hoy"], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "-Gbey1OD0Vo", "delay": 0}]}
+{
+    "cancion": "ese-hombre-que-por-hechos",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "D",
+                    "D",
+                    "C",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es el hombre que ",
+            "por hechos por ",
+            "dichos es ",
+            "respetado  t",
+            "anto. ",
+            "/n"
+        ],
+        [
+            "Ese hombre que ",
+            "por dichos por ",
+            "hechos  es f",
+            "estejado t",
+            "anto. ",
+            "/n"
+        ],
+        [
+            "D",
+            "ebiera ol",
+            "vida",
+            "que c",
+            "asi iba s",
+            "olo ",
+            "cuan",
+            "do desn",
+            "udo aquell ",
+            "emoción ",
+            "que un rey de t",
+            "odos d",
+            "ebier",
+            "a olvi",
+            "dar ",
+            "que c",
+            "asi iba so",
+            "lo c",
+            "uand",
+            "conquis",
+            "to el cetro ",
+            "que hoy le ",
+            "señen c",
+            "olor ",
+            "/n"
+        ],
+        [
+            "Ese hombre que ",
+            "por hechos por ",
+            "dichos  es ",
+            "escuchado t",
+            "anto /n"
+        ],
+        [
+            "Ese ",
+            "hombre que ",
+            "por dichos por h",
+            "echos es ",
+            "contemplado t",
+            "anto ",
+            "/n"
+        ],
+        [
+            "Rec",
+            "uerde por ",
+            "qu",
+            "é, porqu ",
+            "es que le qu",
+            "iere /n"
+        ],
+        [
+            "Rec",
+            "uerde que ha ",
+            "partido de ",
+            "sí ",
+            "en voz de otros ",
+            "seres  \n\nR",
+            "ecuer",
+            "de por qu",
+            "é, ",
+            "porque ",
+            "es que le qu",
+            "iere /n"
+        ],
+        [
+            "Recue",
+            "rde quedar ",
+            "con una r",
+            "azón, la ",
+            "lumbarás de v",
+            "eces ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ese ",
+            "hombre que por ",
+            "hechos  por di",
+            "chos es a",
+            "mado tant ",
+            "/n"
+        ],
+        [
+            "Ese ",
+            "hombre que por di",
+            "chos por hec",
+            "hos es al",
+            "abado ta",
+            "nto ",
+            "/n"
+        ],
+        [
+            "Se cui",
+            "de de sí, ",
+            "",
+            "se cui",
+            "de del so",
+            "lo po",
+            "rque hay ",
+            "un plac",
+            "er perverso en ",
+            "creer me",
+            "recerlo to",
+            "do /n"
+        ],
+        [
+            "Se cuid ",
+            "de sí, ",
+            "",
+            "se cui",
+            "de del sol",
+            "o p",
+            "orque el m",
+            "ismo dolor que ",
+            "lo lev",
+            "anto puede aho",
+            "garlo al l",
+            "ujo /n"
+        ],
+        [
+            "Se cuide ",
+            "de sí, ",
+            "",
+            "se cuide del ",
+            "solo ",
+            "por",
+            "que el mism",
+            "o dolor que ",
+            "lo levan",
+            "to puede ahogar",
+            "lo al luj ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 172,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "-Gbey1OD0Vo",
+            "delay": 8000.0
+        }
+    ],
+    "calidad": 1
+}

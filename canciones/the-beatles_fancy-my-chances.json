@@ -8,14 +8,33 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "G",
-                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "D",
                     "G",
                     "G",
-                    "C"
+                    "G",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
@@ -23,78 +42,66 @@
                 "acordes": [
                     "G"
                 ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "D"
-                ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2,
-            1,
-            0,
-            1,
-            1,
-            1,
-            0,
-            2,
-            1
+            2
         ]
     },
     "letras": [
         [
-            "fancy my chances with y",
-            "ou, I fa",
-            "ncy my chances with you",
-            "/nI "
+            "Oh, /n Deji Maggie Mae/n"
         ],
         [
-            "fancy my chances, I f",
-            "ancy my chances, I fa",
-            "ncy my cha",
-            "nces with you",
-            "/nI "
+            "We have taken her away/n"
         ],
         [
-            "fancy my chances at t",
-            "he Loch, I fa",
-            "ncy my chances at your fro",
-            "ck/nI "
+            "And she never walked down /n Lif/n"
         ],
         [
-            "fancy my chances, I f",
-            "ancy my chances, I fa",
-            "ncy my cha",
-            "nces with you",
-            "/nOh I "
+            "Street anymore./n"
         ],
         [
-            "fancy my chances with y",
-            "ou, I fa",
-            "ncy my chances with you",
-            "/nI "
+            "Oh, the /n Georgie guilty found h",
+            "er. /n But I'm in home about h",
+            "er /n That Deji love is no go",
+            "o /n Maggie Mae. Tak",
+            "e it /n Maggie./n"
         ],
         [
-            "fancy my chances, I",
-            " fancy my chances, I fa",
-            "ncy my changes with you",
-            ""
+            "Oh, fancy m",
+            "e chances with you. /n Fancy m",
+            "e chances with you. /n Fancy me c",
+            "hance with you. /n Fancy me chances wi",
+            "t you. /n Fancy me ch",
+            "ance  with you.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Oh, the /n Georgie guilty found her. But I'm in home about her. Fancy me chances with you."
         ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "nFQTqxQNpAQ",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

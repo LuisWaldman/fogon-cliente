@@ -2,105 +2,284 @@
     "cancion": "no-te-detengas",
     "banda": "los-autenticos-decadentes",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "C",
                     "F",
+                    "F",
+                    "F",
+                    "Bb",
+                    "Bb",
                     "C",
                     "Bb",
-                    "F",
-                    "C",
-                    "F"
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "F",
-                    "G",
-                    "C",
-                    "F",
-                    "C",
-                    "F",
-                    "Bb"
+                    "F"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "F",
                     "C",
-                    "Bb",
-                    "C",
-                    "Bb",
-                    "G",
                     "C",
                     "F",
-                    "G"
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Bb",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Lame tu lengua la lagrima de lav",
-            "a del volcan,/n"
+            "Lame ",
+            "tu lengua, la lá",
+            "grima de la",
+            "va del vol",
+            "cán, bril",
+            "la de piedras precio",
+            "sas tu co",
+            "sal, ",
+            "tan inoce",
+            "nte, tan aplic",
+            "ada tan eficient ",
+            "en tu l",
+            "abo/n"
         ],
         [
-            "Brilla de piedras preciosas tu col",
-            "laaaa",
-            "r,/nta"
-        ],
-        [
-            "n inocente, ta",
-            "n aplicada y tan ef",
-            "iciente e",
-            "n tu ",
-            "labooooor./n"
-        ],
-        [
-            "No te detengas mi am",
-            "or, te lo pido por ",
-            "favor,",
-            "/neste placeee"
-        ],
-        [
-            "er de frágil ten",
-            "siooon,/napaga mi s"
-        ],
-        [
-            "eeed, (se viene el calor), me inflama de/n amoo"
-        ],
-        [
-            "ooor, (lo siento venir,/nme agarra un tembl"
-        ],
-        [
-            "or, me empiezo a fundi",
-            "r....)   ha h",
-            "aa haa.",
+            "No te d",
+            "etengas mi a",
+            "mor, ",
+            "te lo pido por f",
+            "avor, que este p",
+            "lace",
+            "r de frágil ",
+            "pensi",
+            "ón apaga mi ",
+            "ser,  se viene el c",
+            "alor, me inflama de ",
+            "amor, lo siento v",
+            "enir, me agarra un t",
+            "emblor, me empiezo ",
+            "fundir ",
             "",
-            ""
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "eja violeta ",
+            "tus labios en ",
+            "la lava del ",
+            "volcá",
+            "n, huele de cuer ",
+            "detachas tu ",
+            "cos",
+            "al, tan ",
+            "inocente, ",
+            "tan aplicada ",
+            "tan eficiente en tu ",
+            "labor.  /n"
+        ],
+        [
+            "No ",
+            "te deteng",
+            "as mi amor, ",
+            "que te dev",
+            "uelvo el favor ",
+            "este pl",
+            "acer de ",
+            "frágil pen",
+            "sión apa",
+            "ga mi ser, se ",
+            "viene el calor, ",
+            "me inflama de amor, ",
+            "lo siento venir, ",
+            "me agarra un temblor, ",
+            "me empiezo fund",
+            "ir. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lame ",
+            "tu lengua, la lá",
+            "grima de la",
+            "va del vol",
+            "cán, el ",
+            "uniforme  te que",
+            "da tan se",
+            "nsua",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lame tu lengua, la ",
+            "lágr",
+            "ima de lava del volcán, el uniforme te queda tan sensual. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Lame tu lengua, la lágrima de lava del volcán, el uniforme te queda tan sensual. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "89WRHouhSjo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

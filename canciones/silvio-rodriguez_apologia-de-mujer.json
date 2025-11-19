@@ -1,1 +1,262 @@
-{"cancion": "apologia-de-mujer", "banda": "silvio-rodriguez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "G4", "G", "G4", "G", "G", "G4", "G", "G4", "G", "G4", "G", "G4", "G", "Am", "E", "Am", "D", "F", "E", "D", "G", "G7", "C", "C7+", "G", "Dm", "Am", "F", "Em", "F", "G", "C", "C7+", "E", "Am", "D", "G", "G7", "C", "C7+", "F", "E", "Am", "F", "E", "Am", "E", "D", "G"]}], "orden_partes": [0]}, "letras": [[], ["Yo no vi", "ne aqui vin", "iste tu", "", "/ny"], ["o no te e", "speraba y te", " bese.", "/ns"], ["e supone que eres un reg", "alo/nque se me rompio en se"], ["guida/ny ahora nada, lo de si"], ["empre/ns"], ["e supone que eres el so", "mbrero/nde una fiesta, "], ["de esos de carton/npar"], ["a la ocasio", "n... \u00a1Oh m", "ujer", "!/nC)"], ["Si supieras lo breve que entraba/nla lu"], ["z, en la ca", "sa de un ni", "o/nen un alto edif"], ["icio/ny"], [" que era la h", "ora esperada del", " dia", "/nn"], ["o me hubieras toc", "ado en el homb", "ro/nuna ve"], ["z... ", "\u00a1Oh muje", "r!", "/nD)"], ["No te asustes del dia", " que va a/ntermi"], ["nar, no t", "e susten los pue", "ntes/nque caigan al "], ["mar/nn"], ["o te asustes de m", "i carcajada fin", "al."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "7mdzFDRKuSY", "delay": 0}]}
+{
+    "cancion": "apologia-de-mujer",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "G",
+                    "G",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G4",
+                    "G",
+                    "G4",
+                    "G",
+                    "G4",
+                    "G",
+                    "G4",
+                    "G",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "E",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "G",
+                    "D G7",
+                    "C",
+                    "G",
+                    "Dm",
+                    "F",
+                    "F G",
+                    "F G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "G4",
+                    "G",
+                    "G",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G4",
+                    "G",
+                    "G",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "Am",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G7 D",
+                    "G",
+                    "G7",
+                    "Am",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo no vine ",
+            "ti ni viniste tú, ",
+            "yo no te esperaba te ",
+            "besé,  se ",
+            "supone  que debo cal",
+            "lar, se supone que ",
+            "debo seguir, ",
+            "se supon ",
+            "que no ",
+            "debo protestar. /n"
+        ],
+        [
+            "Se supone que eres un r",
+            "egalo que se me rompió enseguid ",
+            "ahora nada lo de siem",
+            "pre. \n\nSe supone que e",
+            "res el sombrero de una fiesta de ",
+            "sos de cartón para ",
+            "la ocasión como v",
+            "es. /n"
+        ],
+        [
+            "Si supieras lo breve que entr",
+            "aba la luz ",
+            "en la casa de un niño en un alt",
+            "o edificio, ",
+            "vi que era la hora esper",
+            "ada del día, ",
+            "no me hubieras focado en el ",
+            "hombro una vez por ",
+            "vez /n"
+        ],
+        [
+            "Si supieras lo brev",
+            "e que entraba esa luz ",
+            "en una casa que ",
+            "se llamaba la noche, ",
+            "en una casa en la ",
+            "que no había más puer",
+            "tas que la de la raz",
+            "ón de aquel niño sin fe. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ahora se su",
+            "pone nada más, ",
+            "yo también quisiera sup",
+            "oner que la ",
+            "cobardía no existió, ",
+            "que es un viejo cuento de ",
+            "dormir, ",
+            "pero quedo ",
+            "yo en ",
+            "medio de mí, ",
+            "en medio de las mismas par",
+            "edes sonriendo los amigos y",
+            "endo allá desayunando, p",
+            "ero quedo yo a",
+            "quí aplaudiendo una vez más los fa",
+            "ntasma del astris. ",
+            "/n"
+        ],
+        [
+            "Oj",
+            "alá que contigo se acabe ",
+            "el amor, ",
+            "ojalá hayas matado mi últim ",
+            "vez, ",
+            "qué ridícula cama implacable ",
+            "conmigo,  ",
+            "yo de perro fiel lo transfor",
+            "mo en canción. /n"
+        ],
+        [
+            "No ",
+            "te culpes, la culpa es un ",
+            "juego de azar, ",
+            "nadie sabe lo malo que puede ser ",
+            "riendo, ni ",
+            "lo cruel que pudiera salir ",
+            "un regalo. /n"
+        ],
+        [
+            "No te asustes del día que va ",
+            "terminar, ",
+            "no te asustes de los fuentes ",
+            "que caigan al mar, ",
+            "no te asustes de mi carcajad ",
+            "final. ",
+            ""
+        ]
+    ],
+    "bpm": 92,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "7mdzFDRKuSY",
+            "delay": 6000.0
+        }
+    ],
+    "calidad": 1
+}

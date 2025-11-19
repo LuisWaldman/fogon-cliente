@@ -8,58 +8,451 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em",
-                    "B7/9",
                     "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Em",
+                    "Em",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "B7/9",
                     "B7/9",
                     "Em",
+                    "Em",
+                    "B7/9",
+                    "B7/9",
+                    "Em",
+                    "Em",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
                     "Am",
                     "B7/9",
-                    "Em"
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "B7/9",
+                    "B7/9",
+                    "Em",
+                    "Em",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "B7/9"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B7/9",
+                    "B7/9",
+                    "B7/9",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "En la cumbrera e mi ",
-            "rancho/nanidaron dos hor"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "neros,/ny yo parezco un ex"
+            "Esta es una canción en español de rock argentino./n"
         ],
         [
-            "traño/ny el rancho parece d"
+            "En la",
+            "cumbrer  mi ra",
+            "nch  anida",
+            "ron  dos horneros/n"
         ],
         [
-            "ellos./nRogale a Dios, horne"
+            "En l",
+            "a  cumbrera mi ra",
+            "nch  anida",
+            "ro  dos horneros",
+            "yo p",
+            "arezc  un extraño",
+            "el ranc",
+            "h  parece de ello",
+            "yo",
+            "parezco un extraño",
+            "el ranc",
+            "h  parece de ello",
+            "s ",
+            "",
+            "/n"
         ],
         [
-            "rito,/nque no te "
+            "Músic",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "pase lo m",
-            "esmo."
+            "Dent",
+            "r  solo salgo s",
+            "olo  siem",
+            "pr  solo hoy v",
+            "eng /n Den",
+            "tr  solo salgo s",
+            "olo  siem",
+            "pr  solo hoy ven",
+            "g /n Los ha",
+            "llo  juntos fue el",
+            "camp  el c",
+            "amp  parece de",
+            "ello /n Los ha",
+            "llo  juntos fue el campo",
+            "el camp",
+            "o  parece de ellos",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mús",
+            "ic ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Junt",
+            "trabajan ca",
+            "nta  tu tod",
+            "hacen contentos /n J",
+            "unto  tra",
+            "baja  cantan",
+            "tu todo ha",
+            "ce  contentos/n"
+        ],
+        [
+            "N  se asusta",
+            "cuando paso co",
+            "m  si yo fuese u",
+            "n perro /n Q",
+            "u  no es tova n",
+            "i  hace daño",
+            "no deja qu",
+            "e  acte suelto",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mús",
+            "ic /n Dentr",
+            "o  solo sal",
+            "g  solo sie",
+            "mpr  solo hoy ve",
+            "ng /n De",
+            "ntr  solo salgo s",
+            "olo  siempre so",
+            "l  hoy vengo/n"
+        ],
+        [
+            "Los hallos ju",
+            "nto  fue el cam",
+            "p  el camp",
+            "o parece de ellos /n L",
+            "os  hallos ju",
+            "nto  fue el camp",
+            "el camp",
+            "parece de ellos/n"
+        ],
+        [
+            "Música",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Mú",
+            "sic /n Música",
+            "",
+            "/n"
+        ],
+        [
+            "Ancina vivo e",
+            "n  mi ranch",
+            "o  desde que solo",
+            "m veo /n A",
+            "ncin  vivo e",
+            "n  mi ranch",
+            "desde que solo m",
+            "veo /n Ena",
+            "nt  otro era e",
+            "l  nido el mu",
+            "nd  parecía n",
+            "uestr /n Ena",
+            "nt  otro era el n",
+            "id  el mu",
+            "nd  parecía nuestro/n"
+        ],
+        [
+            "Rógale /n D",
+            "io  por me",
+            "rit  qu",
+            "e  no te pase lo m",
+            "ism /n M",
+            "úsic ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "nSIrf7uuF-s",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,57 +2,183 @@
     "cancion": "pendejo",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B5",
+                    "B5",
+                    "Em",
+                    "Em",
+                    "Em",
                     "B5",
                     "D5",
-                    "G5",
+                    "D5 A5",
                     "A5",
-                    "B5"
+                    "B5",
+                    "D5",
+                    "D5",
+                    "D5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A5",
-                    "B5",
-                    "B5",
                     "D5",
-                    "B5",
-                    "E5",
-                    "Em",
-                    "Em"
+                    "D5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D5",
+                    "Em",
+                    "Em",
                     "Bm",
-                    "A",
-                    "G",
-                    "A",
-                    "Bm",
-                    "A",
-                    "Bm"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D5",
+                    "D5",
+                    "Em",
+                    "Em",
+                    "Em",
                     "B5",
                     "D5",
-                    "G5",
+                    "D5 A5",
                     "A5",
                     "B5",
                     "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D5",
+                    "Bm",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
                 ]
             }
         ],
@@ -60,70 +186,148 @@
             0,
             1,
             2,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ]
     },
     "letras": [
         [
-            "Soy el as de los bastardos /n"
-        ],
-        [
-            "  Mi nombre no",
-            " es lo importan",
-            "te ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "  Lo importa",
-            "nte es olvida",
-            "r /n"
-        ],
-        [
-            "Lo importa",
-            "nte es ol",
-            "vidar ",
+            "Ho",
+            "l  chicas,",
+            "soy su amigo /n N",
+            "o  parezco e",
+            "nofensivo  en",
+            "seri /n To",
+            "d  algo por la a",
+            "mis",
+            "ta /n Soy",
+            "e  este de l",
+            "o bastardos /n L",
+            "a  traición est",
+            "a  mi carro, es c",
+            "iert /n N",
+            "soy de sac",
+            "rific",
+            "a /n M",
+            "nombre no es impor",
+            "tant /n Lo i",
+            "mportant  es olvid",
+            "a /n Lo",
+            "important  es olvid",
+            "a ",
+            "",
             "/n"
         ],
         [
-            "Hola chicas soy su amigo /n"
-        ],
-        [
-            "Soy experto en el engaño /n"
-        ],
-        [
-            "  Soplando los ve",
-            "los de tu memor",
-            "ia ",
+            "Pendejo",
             "/n"
         ],
         [
-            "  Desnudo en invie",
-            "rno renacera",
-            "s /n"
+            "Hol",
+            "chicas, soy s",
+            "amigo /n Por s",
+            "upuesto  te",
+            "convido  en se",
+            "ri /n Lo",
+            "hag  por agr",
+            "ada /n"
         ],
         [
-            "  Soplando los ve",
-            "los de tu memor",
-            "ia ",
+            "Soy",
+            "expert  en e",
+            "l  engaño",
+            "robo ellas",
+            "hago daño, es",
+            "ciert /n So",
+            "y  muy difícil de a",
+            "lca",
+            "nza /n M",
+            "i  nombre no es impo",
+            "rtant /n L",
+            "o  importante es olvi",
+            "da /n L",
+            "o  importante es olvi",
+            "da ",
+            "",
             "/n"
         ],
         [
-            "Yo te lo hare",
-            " olvida",
-            "r /n"
-        ],
-        [
-            "  Mi nombre no",
-            " es lo importan",
-            "te ",
+            "Pendej",
+            "",
             "/n"
         ],
         [
-            "  Lo importa",
-            "nte es olvidar /nPendejo... "
+            "Pe",
+            "ndej /n"
         ],
         [
+            "Soja tod",
+            "o  los dedos de t",
+            "mem",
+            "ori/n"
+        ],
+        [
+            "Desnu",
+            "d  en el miedo",
+            "renacer",
+            "á ",
+            "/n"
+        ],
+        [
+            "Soj  todos los",
+            "dedo  de tu",
+            "memori /n"
+        ],
+        [
+            "Y",
+            "o  t",
+            "e  voy",
+            "olvi",
+            "da /n"
+        ],
+        [
+            "Mi nombre n",
+            "o  es important/n"
+        ],
+        [
+            "Lo import",
+            "ant  es olvidar",
+            "",
+            "/n"
+        ],
+        [
+            "P",
+            "endej /n"
+        ],
+        [
+            "P",
+            "endej ",
+            "/n"
+        ],
+        [
+            "Pendejo",
+            "",
+            "",
             ""
         ]
     ],
@@ -131,8 +335,9 @@
         {
             "tipo": "Youtube",
             "id": "Uwf6F1vKqFY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

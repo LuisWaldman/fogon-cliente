@@ -2,25 +2,141 @@
     "cancion": "satiro",
     "banda": "babasonicos",
     "escala": "A5",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "A5",
-                    "C5",
-                    "D5"
+                    "C5-D5-C5",
+                    "C5-D5-C5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "C5-D5-C5",
-                    "A5",
-                    "C5",
+                    "C5-D5-C5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D5",
+                    "C5-D5-C5",
+                    "C5-D5-C5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C5-D5-C5",
+                    "C5-D5-C5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D5",
+                    "C5-D5-C5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
                     "D5"
                 ]
             }
@@ -28,41 +144,167 @@
         "orden_partes": [
             0,
             1,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "    ",
-            "    ",
-            " ahor",
-            "a empiezo /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "    ",
-            "    ",
-            "  voy",
-            " por tu hija,  /n"
+            "Esta es una canción en español de rock argentino. /n E",
+            "st  es una canción e",
+            "n  español d",
+            "e  rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "    ",
-            "    ",
-            "  a t",
-            "oda prisa /n"
+            "Cama",
+            "rada  prisionero",
+            "te some",
+            "teré /n"
         ],
         [
-            "    ",
-            "    ",
-            " y las haré mi harén "
+            "Ruego la pa",
+            "z  sangre siempre t",
+            "e  acunará",
+            "",
+            "/n"
+        ],
+        [
+            "Ahor  empi",
+            "ezo /n"
+        ],
+        [
+            "Voy por tu hij",
+            "a /n"
+        ],
+        [
+            "Solo pri",
+            "sa ",
+            "lanzaré mi a",
+            "rena /n Satiro, satiro",
+            "s",
+            "a",
+            "t",
+            "i",
+            "r",
+            "o",
+            "satiro, s",
+            "atiro ",
+            "",
+            "/n"
+        ],
+        [
+            "Feudos ",
+            "señores d",
+            "e  feudo./n"
+        ],
+        [
+            "Tu vices desidriad",
+            "voy cruzando la fosa",
+            ". /n El hambre me defor",
+            "m  el celo me aco",
+            "sa ",
+            "/n"
+        ],
+        [
+            "Ahora empi",
+            "ezo /n Voy por tu",
+            "hija /n"
+        ],
+        [
+            "Solo pr",
+            "isa ",
+            "lanzaré m",
+            "i arena. /n Satiro, s",
+            "at",
+            "ir",
+            "s",
+            "a",
+            "t",
+            "i",
+            "r  satiro",
+            "satiro. /n Voy.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cada un",
+            "o  de tu raza que conve",
+            "nce  mi victoria.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Sa",
+            "tiro  satiro, s",
+            "atiro,  satiro.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PUCDebWJ_xE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

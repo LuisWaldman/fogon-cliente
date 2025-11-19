@@ -1,1 +1,439 @@
-{"cancion": "cuantas-veces-al-dia", "banda": "silvio-rodriguez", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "G", "A"]}, {"nombre": "parte2", "acordes": ["G"]}, {"nombre": "parte3", "acordes": ["Em", "F#m", "G", "Em", "F#m", "G", "Em", "D#"]}, {"nombre": "parte4", "acordes": ["F#m", "Bm", "G", "F#m", "Em", "F#m", "G", "A"]}], "orden_partes": [0, 1, 0, 1, 0, 1, 0, 2, 3]}, "letras": [["Qu\u00e9 silencio es cu", "lpable de la muerte de un ", "hombre?/n\u00bfQu\u00e9 silencio en "], ["nosotros ha colgado in", "ocentes?", "", "", "/n"], ["\u00bfQu\u00e9 silencio ma", "ldito ha cegado alg\u00fan", " nombre?/n\u00bfCu\u00e1ntas veces a"], ["l d\u00eda merecemos l", "a muerte?", "", "/nB.-No busquen "], ["m\u00e1s alrede", "dor./nUstedes "], ["son, no busquen m", "\u00e1s./nNo es el de a"], ["tr\u00e1s, ustedes ", "son./nNo es el de al "], ["lado, no,/neres t\u00fa"], [" mismo, s\u00ed,/nel que sa"], ["be re\u00edr , el que sa", "be callar./nC.-"], ["Cu\u00e1ntas veces al", " d\u00eda?/n\u00bfCu\u00e1ntas veces a"], ["l d\u00eda?/n\u00bfCu\u00e1ntas veces a"], ["l d\u00eda", " merecemos la", " muerte?"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "rss1QwObA7o", "delay": 0}]}
+{
+    "cancion": "cuantas-veces-al-dia",
+    "banda": "silvio-rodriguez",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "D",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "G D#",
+                    "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "F#m",
+                    "G",
+                    "Em",
+                    "D#",
+                    "D#",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "F#m",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "G",
+                    "A",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "G",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "Em",
+                    "D#",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "Em",
+                    "F#m",
+                    "G",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D#",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F#m",
+                    "G",
+                    "F#m",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta es una canción en español de rock argentino. \n\nQue silencio es ",
+            "culpable de la muerte de un ho",
+            "mbre \n\nQue silencio en nosotros ",
+            "ha colgado ino",
+            "cent",
+            "",
+            "/n"
+        ],
+        [
+            "Que silencio maldito ha ",
+            "cegado tu nombre \n\nCuantas v",
+            "eces al día merecemos ",
+            "la muerte ",
+            "/n"
+        ],
+        [
+            "No ",
+            "busquen mas, alred",
+            "edor ustedes son /n"
+        ],
+        [
+            "No busquen mas",
+            ", es el de atrás uste",
+            "des son \n\nNo es el ",
+            "de al lado no, ",
+            "eres tu mismo ",
+            "si \n\nEl que ",
+            "sonríe bien, ",
+            "el que sabe cal",
+            "lar /n"
+        ],
+        [
+            "Cuantas veces al d",
+            "ía, cuantas veces al día \n\nCuant",
+            "as veces al día ",
+            "merecemos la ",
+            "muerte ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que s",
+            "ilencio aprendido nos prese",
+            "rva la vida \n\nQue silencio opo",
+            "rtuno nos convierte en p",
+            "rudentes ",
+            "",
+            "/n"
+        ],
+        [
+            "Que silencio asesino nos l",
+            "lena la batida \n\nCuantas vece",
+            "s al día merecemos la ",
+            "muert ",
+            "/n"
+        ],
+        [
+            "No busquen m",
+            "as, alrededor u",
+            "stedes son \n\nNo b",
+            "usquen mas, es el de a",
+            "trás ustedes son /n"
+        ],
+        [
+            "No es el de al lado ",
+            "no, eres tu ",
+            "mismo si \n\nEl ",
+            "que sonríe b",
+            "ien, el que s",
+            "abe callar /n"
+        ],
+        [
+            "Cuantas vec",
+            "es al día, cuantas veces al ",
+            "día \n\nCuantas veces al ",
+            "día merecemo ",
+            "la muer",
+            "te ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "M",
+            "úsica \n\nMúsica ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que sile",
+            "ncio es culpable de la muerte de ",
+            "un hombre \n\nQue silencio en nosotro ",
+            "ha colgado inocente \n\nQue si",
+            "lencio aprendido nos preserv ",
+            "la vida \n\nQue silencio oportuno ",
+            "nos convierte en prudentes \n\nCuantas vec",
+            "es al día merecemos la ",
+            "muerte  \n\nCuantas veces al día m",
+            "erecemos la muerte \n\nQue silen",
+            "cio asesino nos llena la b",
+            "atida \n\nCuantas veces al día /n"
+        ],
+        [
+            "No busquen mas, alr",
+            "ededor ustedes son /n"
+        ],
+        [
+            "No busquen mas, ",
+            "es el de atrás usted",
+            "es son \n\nNo es el de al ",
+            "lado no, e",
+            "res tu mismo si /n"
+        ],
+        [
+            "El que so",
+            "nríe bien, el ",
+            "que sabe callar /n"
+        ],
+        [
+            "Cuanta",
+            "s veces al día, cuantas vece",
+            "s al día \n\nCuantas veces al ",
+            "día merece",
+            "mos la muer",
+            "te ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Músi",
+            "ca \n\nSubtítulos por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 99,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "rss1QwObA7o",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -2,48 +2,380 @@
     "cancion": "desde-que-te-conoci",
     "banda": "los-autenticos-decadentes",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
-                    "A",
-                    "Em",
+                    "G",
+                    "G",
+                    "G",
                     "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "Me ",
-            "pre",
-            "sent",
-            "aron una chica en el sur/n"
+            "Yo te conocí una noche, justo antes de partir. \n\nAl principio no ",
+            "sabía  si era así me p",
+            "arecía que me mirabas ",
+            "mí. ",
+            "ahora yo vengo ",
+            "enterarme, ",
+            "que te mueres ",
+            "por mí. /n"
         ],
         [
-            "FIN",
+            "Quiero  suspender ",
+            "el viaje, quiero cambiar el ",
+            "pasaje para queda",
+            "rme aquí. /n"
+        ],
+        [
+            "No me d",
+            "ejes as",
+            "í, tan borr",
+            "acho solo",
+            ". \n\nTan lejo ",
+            "de tu mirada, tan carga",
+            "do de palabras que no te ",
+            "puedo decir. /n"
+        ],
+        [
+            "No me ",
+            "dejes as",
+            "í, que me ",
+            "vuelvo lo",
+            "co. \n\nNo quier ",
+            "esperarte un poco, quiero m",
+            "irarme en tus ojos ",
+            "besarte  así /n"
+        ],
+        [
+            "Yo que ",
+            "tanto había busca",
+            "do, ",
+            "alejarme de aqu",
+            "í. \n\nVia",
+            "jar para cualquier lado, p",
+            "ara borrar el pasado que ",
+            "tanto me hizo suf",
+            "rir. /n"
+        ],
+        [
+            "Ya que estoy con mi equ",
+            "ipaje, ",
+            "sin saber que d",
+            "ecir. /n"
+        ],
+        [
+            "Solo pensando en tu ima",
+            "gen que el verdadero vi",
+            "aje está dentro de ",
+            "mí. \n\nNo ",
+            "me deje ",
+            "así",
+            ", tan borracho ",
+            "solo. /n"
+        ],
+        [
+            "Tan lejos de tu m",
+            "irada, tan cargado de ",
+            "palabras que no te puedo ",
+            "decir.  /n"
+        ],
+        [
+            "No me de",
+            "jes así ",
+            "que me vu",
+            "elvo loco. /n"
+        ],
+        [
+            "No quiero espe",
+            "rarme un poco, quiero mirar",
+            "me en tus ojos bes",
+            "arte así. ",
             "",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No ",
+            "me dejes a",
+            "sí, ",
+            "tan borracho ",
+            "solo. /n"
+        ],
+        [
+            "Tan lejos de tu mirad",
+            "a, tan cargado de palabr",
+            "as que no te puedo d",
+            "ecir. /n"
+        ],
+        [
+            "No me dejes ",
+            "así,  ",
+            "que me vuelvo ",
+            "loco.  /n"
+        ],
+        [
+            "No quiero esperarme un ",
+            "poco, quiero mirarme en tus ",
+            "ojos besarte ",
+            "así.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No me dejes así, que me vuelvo loco. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "jlg1TbV1zIs",
-            "delay": 0
+            "delay": 8000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

@@ -1,1 +1,584 @@
-{"cancion": "Palabras-de-amor", "banda": "joan-manuel-serrat", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Am", "F", "G", "C", "C", "Am", "F", "G", "C", "C7", "F", "C", "G7", "C", "G7", "C", "G7", "C", "G7", "C", "C7", "F", "C", "G7", "C", "G7", "C", "G7", "C", "G7", "C", "C7", "F", "Adim", "Em", "Am7", "Dm7", "G7", "C", "Am", "Dm7", "G7", "C", "C", "Am", "F", "G", "C", "C", "Am", "F", "G", "C", "C7", "F", "C", "G7", "C", "G7", "C", "G7", "C", "G", "C", "C7", "F", "C", "G7", "C", "G7", "C", "G7", "C", "G7", "C", "C7", "F", "Adim", "Em", "Am7", "Dm7", "G7", "C", "Am", "Dm7", "G7", "C", "Dm7", "G7", "C"]}], "orden_partes": [0]}, "letras": [["Ella me quiso tan", "to.../n"], ["Yo a\u00fan ", "sigo enamora", "do./n"], ["Juntos atravesam", "os/n"], ["Una puer", "ta cerrada.", "/n"], ["Ella, c\u00f3mo os dir", "\u00eda../n"], ["era toda mi ocupa", "ci\u00f3n,/n"], ["cuando en la lumbre ard", "an/ns\u00f3lo palabras de"], [" amor.", "../nPalabras de"], [" amor sen", "cillas y tierna", "s.", "/nEchamos al "], ["vuelo por primera vez", "/nApenas t"], ["uvimos tiempo de aprenderla", "s/nReci\u00e9n desp"], ["ert\u00e1bamos de la ni", "ez/nNos bas"], ["taban es", "as tr", "es frases hec", "has", "/nque entonaba "], ["un tra", "snochado gal", "\u00e1n.", "/nDe histor"], ["ias de amor", ", sue\u00f1os de poe", "tas,/n"], ["A los quince a", "os, no", " se saben m\u00e1s...", "/n"], ["Ella donde andar", "\u00e1.../n"], ["Tal vez ", "aun me recuer", "da/n"], ["Un d\u00eda se mar", "ch\u00f3/n"], ["Y jam\u00e1", "s volv\u00ed a ver", "la/n"], ["Pero cuando oscure", "ce/n"], ["Lejos se escucha u", "na canci\u00f3n/n"], ["Vieja m\u00fasica que acun", "a/nViejas palabras de a"], ["mor...", "/nPalabras de a"], ["mor senci", "llas y tiernas.", "", "/nEchamos al "], ["vuelo por primera ve", "z/nApenas t"], ["uvimos tiempo de aprenderla", "s/nReci\u00e9n desp"], ["ert\u00e1bamos de la ni", "ez/nNos bas"], ["taban es", "as tres", " frases hechas", "", "/nque entonaba "], ["un t", "rasnochado g", "al\u00e1n.", "/nDe historias de"], [" amor, s", "ue\u00f1os de poe", "tas,", "/nA los quince"], [" a\u00f1os,", " no se saben m", "s.../nA los quinc"], ["e a\u00f1os, no se sa", "ben m\u00e1s.", ".."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "CLfNXdycg9c", "delay": 0}]}
+{
+    "cancion": "Palabras-de-amor",
+    "banda": "joan-manuel-serrat",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "E",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C7",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "G7",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am7",
+                    "Dm7",
+                    "G7",
+                    "G7",
+                    "Am",
+                    "Am",
+                    "Dm7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "C",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Am7",
+                    "Dm7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "G7",
+                    "Am",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte31",
+                "acordes": [
+                    "G7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "lla, ",
+            "",
+            "me quiso tanto ",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "aún ",
+            "sigo  enamor",
+            "ado ",
+            "",
+            "/n"
+        ],
+        [
+            "Ju",
+            "ntos atrav",
+            "esados /n"
+        ],
+        [
+            "Nostalg",
+            "ias del pa",
+            "sado /n"
+        ],
+        [
+            "Ella",
+            ", co",
+            "mo os dir",
+            "ía /n"
+        ],
+        [
+            "Era ",
+            "mi ",
+            "luz mi r",
+            "azón ",
+            "/n"
+        ],
+        [
+            "Cuan",
+            "do en la lumbre al ",
+            "día /n"
+        ],
+        [
+            "Sol",
+            "o palabras ",
+            "de am",
+            "or /n"
+        ],
+        [
+            "C",
+            "omo hora ",
+            "de am",
+            "or \n\nSin s",
+            "illas p",
+            "iernas /n"
+        ],
+        [
+            "Que echamos al ",
+            "vuelo ",
+            "por primera ",
+            "vez \n\nA",
+            "penas t",
+            "uvimos ti",
+            "empo de apren",
+            "derla /n"
+        ],
+        [
+            "Recién  des",
+            "pertábamos ",
+            "de glor",
+            "ia \n\nNos ",
+            "basta",
+            "ban esas t",
+            "res frases h",
+            "echas /n"
+        ],
+        [
+            "Que enton",
+            "aba que tras",
+            "nos se abro",
+            "gaba /n"
+        ],
+        [
+            "De historias ",
+            "de amor, ",
+            "sueños ",
+            "de poetas ",
+            "los ",
+            "quince  añ",
+            "os no ",
+            "se sabe ",
+            "más ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ell",
+            "a, quizá con ",
+            "ella /n"
+        ],
+        [
+            "E",
+            "lla, qui",
+            "zá con e",
+            "lla /n"
+        ],
+        [
+            "Me ",
+            "per",
+            "dí mañ",
+            "ana /n"
+        ],
+        [
+            "Durm",
+            "iendo el b",
+            "arro /n"
+        ],
+        [
+            "Pe",
+            "ro su ",
+            "vida fa",
+            "rsafós ",
+            "/n"
+        ],
+        [
+            "Allí  aún ",
+            "me arriba una c",
+            "anci",
+            "ón /n"
+        ],
+        [
+            "B",
+            "ellas no",
+            "tas, veis ac",
+            "ostos /n"
+        ],
+        [
+            "Bellas palab",
+            "ras de a",
+            "mor /n"
+        ],
+        [
+            "P",
+            "arabolas de ",
+            "amor /n"
+        ],
+        [
+            "Sin silla ",
+            "piern",
+            "as \n\nNo sab",
+            "íamos más /n"
+        ],
+        [
+            "Teníamos q",
+            "uince años /n"
+        ],
+        [
+            "No hemo",
+            "s tenido much ",
+            "tiempo de ",
+            "aprenderla /n"
+        ],
+        [
+            "Todos nos d",
+            "espertaban del ",
+            "son de los ",
+            "niños \n\nNo ",
+            "teníam",
+            "os prou ",
+            "con tres frases ",
+            "hechas  /n"
+        ],
+        [
+            "Que habíamos a",
+            "prendido en ",
+            "crics comedia ",
+            "/n"
+        ],
+        [
+            "De historias de ",
+            "amor, ",
+            "sonris de ",
+            "poetas /n"
+        ],
+        [
+            "No sabí",
+            "amos más ",
+            "/n"
+        ],
+        [
+            "Teníamo ",
+            "quince a",
+            "ños ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No habíamos tenido mucho tiempo de aprenderla "
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "CLfNXdycg9c",
+            "delay": 10000.0
+        }
+    ],
+    "calidad": 1
+}

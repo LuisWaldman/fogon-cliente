@@ -1,1 +1,373 @@
-{"cancion": "en-el-claro-de-la-luna", "banda": "silvio-rodriguez", "escala": "Em", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "Am", "B7", "Am", "B7", "E", "Am", "B7", "Am", "B7", "Em", "D", "G", "B7", "C", "G", "B7", "Em", "D", "B7", "C", "G", "B7", "A", "C", "A", "B7", "Em", "Am", "B7", "Am", "B7", "Em", "Am", "B7", "Am", "B7", "Em", "D", "G", "B7", "C", "G", "B7", "Em", "D", "G", "B7", "C", "G", "B7", "A", "C", "A", "B7", "E", "Am", "B7", "Am", "B7", "Em"]}], "orden_partes": [0]}, "letras": [["En el claro de la luna/n"], ["duerme la Reina F", "ortuna/n"], ["que tendr\u00e1 que ", "madrugar./n"], ["Mi guardiana de la suerte,/n"], ["que me salvas de l", "a muerte/n"], ["con fortuna en el", " amor./n"], ["-Sue\u00f1a, talism\u00e1n querido", ",/n"], ["sue\u00f1a mi abeja y su edad;/nsue\u00f1a "], ["y si, lo he mere", "cido,/nsue\u00f1a"], [" mi felici", "dad./n-"], ["Sue\u00f1a caballos cerreros,", "/nsue\u00f1a "], ["un tiempo de ag", "uaceros/nen el v"], ["alle de la ", "luz./n"], ["-Sue\u00f1a lo que hago y no digo,/n"], ["sue\u00f1a en plena libertad,/n"], ["sue\u00f1a que hay d\u00edas en que vivo,/n"], ["sue\u00f1a lo que hay que callar./n"], ["Entre las luces m\u00e1s bellas/n"], ["porque en su sue\u00f1o de e", "strellas/nmi paso"], [" en tierra es ", "dolor./n"], ["Mas si yo pudiera hacerle/n"], ["a qu\u00e9 tentarle l", "a suerte/nque"], [" valiera su ", "so\u00f1ar./n"], ["-Su\u00e9\u00f1eme, pues, cataclismo,", "/n"], ["sue\u00f1e golpe largo y sed,/nsue\u00f1e"], [" todos los ab", "ismos,/nque de o"], ["tra vida no ", "s\u00e9./n"], ["-Sue\u00f1e lo que hago y no digo,", "/n"], ["sue\u00f1e en plena libertad,/nsue\u00f1e que "], ["hay d\u00edas en que", " vivo,/nsue\u00f1e lo qu"], ["e hay que ca", "llar./n"], ["-Sue\u00f1e la talla del d\u00eda,/n"], ["del d\u00eda del que fui y del que soy/n"], ["que el de ma\u00f1ana, alma m\u00eda,/n"], ["lo tengo so\u00f1ado hoy./n"], ["-Sue\u00f1e la talla del d\u00eda,/n"], ["que el de ma\u00f1ana, ", "alma m\u00eda,/n"], ["lo tengo so\u00f1a", "do hoy.", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "X0F_km63O1A", "delay": 0}]}
+{
+    "cancion": "en-el-claro-de-la-luna",
+    "banda": "silvio-rodriguez",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "B",
+                    "Em",
+                    "E",
+                    "Am",
+                    "Em",
+                    "A",
+                    "B7",
+                    "Em",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "G",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "B7",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "G",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "G",
+                    "C",
+                    "A",
+                    "A",
+                    "G",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "B7",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "G",
+                    "C",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "Am",
+                    "C",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "A",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est",
+            "a es una canción en español de rock argentino. ",
+            "",
+            "/n"
+        ],
+        [
+            "En el ",
+            "claro de la lu",
+            "na donde qu",
+            "iero ir juga",
+            "r \n\nDuerme la ",
+            "reina fortun ",
+            "que tendrá que ",
+            "madrugar  /n"
+        ],
+        [
+            "Mi guardi",
+            "ana de la suert",
+            "e, sueña cerc",
+            "ada de flor /n"
+        ],
+        [
+            "Que me salvas ",
+            "de la muerte ",
+            "con fortuna en el ",
+            "amor \n\nS",
+            "ueña talismá ",
+            "querido, ",
+            "sueña mi abeja ",
+            "su edad \n\nSueña ",
+            "si lo he mere",
+            "cido, sueña ",
+            "mi feli",
+            "cidad /n"
+        ],
+        [
+            "Sueña  caballos he",
+            "rreros, ",
+            "sueña mi viento del ",
+            "sur \n\nSueña un tie",
+            "mpo de aguacero ",
+            "en el vall",
+            "e de la luz /n"
+        ],
+        [
+            "Sueña lo ",
+            "que hago no digo",
+            ", sueña en ",
+            "plena liber",
+            "tad \n\nSueña que hay ",
+            "días en que vivo",
+            ", sueña lo que ",
+            "hay que ca",
+            "lla",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En",
+            "tre las luces ",
+            "más bellas \n\nDu",
+            "erme tranquilo mi ",
+            "amor, ",
+            "porque en su sueño de ",
+            "estrella \n\nMi p",
+            "aso en tierra es do",
+            "lor, ",
+            "mas si yo pudiera s",
+            "erle \n\nMie",
+            "r de abeja en vez de ",
+            "sal,  ",
+            "que tentarle la s",
+            "uerte \n\nQue va",
+            "liera su so",
+            "ñar, ",
+            "sueñeme pues cat",
+            "aclismo \n\nSue",
+            "ñe golpe largo se",
+            "d, sueñe todo",
+            "s los abismo",
+            "s \n\nQue de otra v",
+            "ida no sé /n"
+        ],
+        [
+            "Sueña lo ",
+            "que hago no digo",
+            ", sueña en p",
+            "lena libertad \n\nSu",
+            "eña que hay días en ",
+            "que vivo, s",
+            "ueña lo que hay que ",
+            "calla",
+            "r \n\nSueñe la talla ",
+            "del día, ",
+            "del día que fui, del ",
+            "que soy \n\nQue ",
+            "de mañana, alm",
+            "a mía, ",
+            "lo tengo soñado ",
+            "hoy \n\nSu",
+            "eña la talla ",
+            "del día, ",
+            "del día que fui, ",
+            "del que soy /n"
+        ],
+        [
+            "Que de mañana, ",
+            "alma mía ",
+            "lo ten",
+            "go soñad",
+            "o hoy ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 107,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "X0F_km63O1A",
+            "delay": 5000.0
+        }
+    ],
+    "calidad": 1
+}

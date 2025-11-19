@@ -2,115 +2,346 @@
     "cancion": "la-chica-del-sur",
     "banda": "los-autenticos-decadentes",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "D",
+                    "Em",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "F#m",
+                    "D",
                     "G",
-                    "A"
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Em",
-                    "A",
+                    "Em",
                     "G",
-                    "A"
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
+                    "G",
+                    "F#m",
+                    "F#m",
+                    "F#m",
                     "F#m",
                     "G",
-                    "Gm"
+                    "G",
+                    "G",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            2,
-            2,
-            2,
-            0
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "   Me presentaron a una ",
-            "chica del sur,/n  "
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   me parece que en un ",
-            "bar de Lanús./n  "
+            "Me present",
+            "aron una chica en el su",
+            "r, me parece ",
+            "que en un bar de la noch",
+            "e, al principio no ",
+            "era tan atractiv",
+            "a, ahora la llamo ",
+            "la sal de mi vida /n"
         ],
         [
-            "   Al principio no era ",
-            "tan atractiva,/n  "
+            "Ahora sí creo que h",
+            "ago mal en quererte, ",
+            "pero no puedo esc",
+            "aparme hasta suert",
+            "e. \n\nDesde que te ",
+            "conoc",
+            "í, no puedo d",
+            "ormir, ",
+            "desde que te ",
+            "cono",
+            "cí, ya no d",
+            "uermo de noche. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   y ahora la llamo la ",
-            "sal de mi vida./n   "
+            "Me he o",
+            "lvidamente enamorad",
+            "o de ti, con ",
+            "sol las noches siguiéndo",
+            "te el rastro, por ",
+            "la mañana se me duerm",
+            "en las piernas. \n\nMe ",
+            "va matar esta pasió ",
+            "enferma, que to",
+            "do me distingue, hago mal ",
+            "en quererte, pe",
+            "ro no puedo escaparm ",
+            "hasta suerte. /n"
         ],
         [
-            "  A veces creo que hago ma",
-            "l/n   "
+            "Desde que te ",
+            "conocí, ",
+            "no puedo dor",
+            "mir, ",
+            "desde que te ",
+            "conocí",
+            ", ya no duer",
+            "mo de noche. ",
+            "",
+            "/n"
         ],
         [
-            "  pero no puedo escapar",
-            "/n  "
+            "Ya no duerm",
+            "o de noche. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   Desde que te co",
-            "nocí,/n  "
+            "Ya no duermo de noche. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   no puedo do",
-            "rmir./n  "
+            "Ya no duermo de noche. \n\nYa no duermo de noche. ",
+            "/n"
         ],
         [
-            "   Desde que te co",
-            "nocí,/n  "
+            "Ya no duermo de noche. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   ya no duerm",
-            "o de noche./n"
-        ],
-        [],
-        [
-            "   Ya no duerm",
-            "o de noche./n"
-        ],
-        [],
-        [
-            "   Ya no duerm",
-            "o de noche./n"
-        ],
-        [],
-        [
-            "   Perdidament",
-            "e enamorado de tí,"
+            "Ya no duermo de noche. "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "9We_On6Jmdg",
-            "delay": 0
+            "delay": 7000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

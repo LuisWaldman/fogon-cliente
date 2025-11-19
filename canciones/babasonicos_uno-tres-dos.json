@@ -2,149 +2,405 @@
     "cancion": "uno-tres-dos",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "G",
                     "D",
-                    "A",
-                    "Bm",
-                    "G"
+                    "G",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "D",
+                    "D",
                     "A",
-                    "G"
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
                     "Bm",
                     "D",
-                    "G"
+                    "D",
+                    "Bm",
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "A",
                     "Bm",
-                    "D",
-                    "G",
-                    "A",
                     "Bm",
-                    "G",
-                    "A"
+                    "Bm"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Em",
-                    "F#m",
+                    "Bm",
                     "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
                     "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
                     "Bm",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "A",
+                    "G",
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
             2,
             3,
-            2,
-            2,
-            2,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
-        [],
         [
-            "Voy a dejar que me a",
-            "traviese la luz,/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ser transparente al menos cuatro m",
-            "inutos./n"
+            "E",
+            "st es una canción en español de rock argentino. /n Voy dejar q",
+            "u  me atraviese la luz, s",
+            "er  transparente al menos cua",
+            "tr  minutos./n"
         ],
         [
-            "Se saturó el ambiente de a",
-            "lta emisión de",
-            " gases de discur",
-            "so./n"
+            "Se saturó el ambien",
+            "t  de alta emisió",
+            "de gracias,",
+            "de discurso./n"
         ],
         [
-            "Todos empezaron a l",
-            "evantar la voz/n"
+            "Todos empe",
+            "zaro  levantar la",
+            "voz  no precisa",
+            "ment  para cantar c",
+            "anciones  de un mundo",
+            "buscand  tener la r",
+            "azó  el hi",
+            "jo /n"
         ],
         [
-            "y no precisamente para cantar canci",
-            "ones./n"
+            "Será el primero q",
+            "u  se calla esta v",
+            "ez /n"
         ],
         [
-            "Yo no ando buscando tener la",
-            " razón,/n"
+            "U",
+            "n  de los tres va decir a",
+            "lgo  que segur",
+            "no le va gustar do",
+            "s ",
+            "entre esos dos estamos v",
+            "o  yo, solo f",
+            "alta  sab",
+            "e  de quien de n",
+            "osotros ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ni elijo ser ",
-            "el primero que se calle esta",
-            " vez./n"
+            "V",
+            "oy  permitir que t",
+            "e  abuses de mí, aunqu",
+            "e  me insultes solo cuatro",
+            "minutos /n L",
+            "tolerancia tiene un lím",
+            "it  que no pienso dar",
+            "conocer e",
+            "n  público./n"
         ],
         [
-            "Uno de los t",
-            "res va a decir algo/n"
+            "Voy dejar q",
+            "ue  me acaricie la piel d",
+            "e  tu lengua llena d",
+            "adulaciones./n"
         ],
         [
-            "que seguro no le va a gusta",
-            "r a dos./n"
+            "Todos deja",
+            "mo  que nos doren la p",
+            "iel  dora alguna v",
+            "ez /n"
         ],
         [
-            "Y entre esos dos estamos v",
-            "os y yo,/nsolo "
+            "Dejo que otro mien",
+            "t  por mí esta vez.",
+            "/n"
         ],
         [
-            "falta sa",
-            "ber quién de noso",
-            "tros.../n"
+            "Uno d",
+            "e  los tres va decir a",
+            "lg  que seguro n",
+            "o  le va gustar",
+            "dos. e",
+            "ntr  esos dos estamos vo",
+            "yo, solo f",
+            "alt  sabe",
+            "de quien de nos",
+            "otros ",
+            "/n"
         ],
         [
-            "Quiero reconocer t",
-            "odas esas cosas mal",
-            "as que hay en mí,/n"
+            "Quier",
+            "reconocer tod",
+            "a  esas cosas ma",
+            "la que hay en mí. /n Pe",
+            "r  no creo que p",
+            "ueda  arre",
+            "glarla  por el m",
+            "omento ",
+            "/n"
         ],
         [
-            "pero no creo que pueda a",
-            "rreglarlas por el ",
-            "momento./n"
+            "Quiero reconoc",
+            "e  todas esas cosa",
+            "s  malas que hay en mí/n"
         ],
         [
-            "Quiero reconocer to",
-            "das esas cosas malas que hay en mí,/npero no creo que pueda arreglarlas por el momento."
+            "Pero no creo q",
+            "ue  pueda ar",
+            "reglarla  por e",
+            "l  momento./n"
         ],
-        [],
-        [],
-        [],
-        []
+        [
+            "Uno de los tres v",
+            "a  decir algo q",
+            "ue  seguro no le v",
+            "a  gustar dos.",
+            "entre esos d",
+            "o  estamos vos yo",
+            ",  solo falt",
+            "a  saber de q",
+            "uien  de nosotr",
+            "os /n"
+        ],
+        [
+            "Traicionó",
+            "/n"
+        ],
+        [
+            "Traicion",
+            "ó /n"
+        ],
+        [
+            "Traic",
+            "ionó /n"
+        ],
+        [
+            "Traicionó ",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "ofycufaQBPs",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

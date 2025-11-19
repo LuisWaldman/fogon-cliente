@@ -2,40 +2,129 @@
     "cancion": "parafinada",
     "banda": "babasonicos",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
                     "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
                     "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
                     "C",
-                    "D",
                     "C",
-                    "G",
-                    "D"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "C",
-                    "D",
                     "C",
-                    "D",
                     "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "G",
-                    "D"
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
@@ -43,51 +132,105 @@
             0,
             1,
             2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
         [
-            "puedo ser cualqui",
-            "er/n"
-        ],
-        [
-            "chica de la co",
-            "sta brava/n"
-        ],
-        [
-            "paredes de esp",
-            "uma blanca/n"
-        ],
-        [
-            "evapora el mie",
-            "do tu amor lleg?",
+            "",
             "/n"
         ],
         [
-            "de tus pies al h",
-            "orizonte/n"
+            "P",
+            "ued  ser cualquiera c",
+            "os  que qu",
+            "iera /n S",
+            "e  encarar el que e",
+            "lla  de",
+            "se /n Ch",
+            "ic  de la costa b",
+            "rava  paredes de",
+            "espum blanca /n Ev",
+            "apor  el odio, tu am",
+            "o  ha llega",
+            "d /n Pued",
+            "silenciar mis pen",
+            "samiento /n A",
+            "lejar",
+            "t  de el oc",
+            "eogen /n"
         ],
         [
-            "dentado de m",
-            "urallones/n"
+            "De tus pie",
+            "s  al horizonte,",
+            "tentado de mura",
+            "llone /n Caracol a",
+            "l  cuello, no temas que",
+            "esto ",
+            "",
+            "/n"
         ],
         [
-            "car?col al cu",
-            "ello, no temas que esto",
-            "y/n"
+            "M",
+            "ojo  la orilla por siempre es tuyo mi",
+            "océano se d",
+            "ond despierta ya /n Mojo la ori",
+            "ll  por siempre es tuyo mi océano",
+            "se donde",
+            "desp",
+            "ier  ya/n"
         ],
         [
-            "marea de r",
-            "atas/n"
+            "S",
+            "ólo  pueriza p",
+            "ara  finad/n"
         ],
         [
-            "traen los ver",
-            "anos/n"
+            "Buda en t",
+            "u  mirada, nunc",
+            "miente/n"
         ],
         [
-            "pisan tu cast",
-            "illo y no piden perd?n",
+            "Sé que has id",
+            "o  al mar ind",
+            "ifere",
+            "n /n Marea d",
+            "e  ratas tra",
+            "e  los verano/n"
+        ],
+        [
+            "Pisan tu casti",
+            "ll  no piden pe",
+            "rdó ",
+            "",
+            "/n"
+        ],
+        [
+            "Mojo l",
+            "a  orilla por siempre es tuyo mi océa",
+            "n  se donde",
+            "d",
+            "e",
+            "s",
+            "p",
+            "i",
+            "ya /n Sól",
+            "pueriza para",
+            "finad /n N",
+            "ada, ",
+            "una rompiente",
+            "má /n"
+        ],
+        [
+            "Labios arruga",
+            "do  flojos de humed",
+            "a ",
             ""
         ]
     ],
@@ -95,8 +238,9 @@
         {
             "tipo": "Youtube",
             "id": "RUMzjGJAfew",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

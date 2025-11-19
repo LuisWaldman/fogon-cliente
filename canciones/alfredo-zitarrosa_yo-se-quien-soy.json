@@ -8,53 +8,271 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "B7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
                 "acordes": [
                     "E",
                     "A",
+                    "B7",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
                     "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
         [
-            "añ",
-            "a de azuc",
-            "ar, ca",
-            "ña ",
-            "de azúc",
-            "ar/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "por qu",
-            "é no endu",
-            "lzas el cañaveral/namargo mar."
+            "Caña de azú",
+            "car  caña de azú",
+            "car  porque no endu",
+            "lza  el caña ver",
+            "al  amargo mar.",
+            "",
+            "/n"
         ],
-        []
+        [
+            "Las hojas sec",
+            "as  las hojas seca",
+            "s  las hojas secas",
+            "de  caña vera",
+            "l  ardiendo está",
+            "n ",
+            "/n"
+        ],
+        [
+            "Machete hermano,",
+            "las cañas negras,",
+            "las cañas negras tendr",
+            "á  que voltear, h",
+            "ay  que cortar.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Todo tign",
+            "ao  negro barcin",
+            "o  sudando chorros c",
+            "omo  un animal,",
+            "yo sé quién soy",
+            ". /n"
+        ],
+        [
+            "M",
+            "e  cae la sombra d",
+            "el  sombrero,",
+            "m  cae la sombra com",
+            "un antifaz, y",
+            "o  sé quién soy.",
+            "/n"
+        ],
+        [
+            "Hay",
+            "lo  riñones que s",
+            "e  me parten, que s",
+            "e  me parten por men",
+            "o  de un real, hay qu",
+            "e  cortar.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ca",
+            "ñ  de azúcar,",
+            "caña de azúcar,",
+            "porque no endulzas el c",
+            "aña  veral,",
+            "amargo mar.",
+            "",
+            "/n"
+        ],
+        [
+            "Machet  hermano, mañana",
+            "a  alba, saldré",
+            "tempran  hacia el caña v",
+            "eral  yo sé qui",
+            "é  soy.",
+            "",
+            "si no v",
+            "uelvo  caña de a",
+            "zúcar  machete herm",
+            "ano  yo sé dónde i",
+            "r  mira que sí.",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "C52J1LAKVU0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

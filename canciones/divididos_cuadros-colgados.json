@@ -2,16 +2,25 @@
     "cancion": "cuadros-colgados",
     "banda": "divididos",
     "escala": "E5",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E5",
-                    "F#5",
+                    "E5",
                     "E5",
                     "F#5"
                 ]
@@ -19,106 +28,270 @@
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "F#5",
+                    "F#5",
+                    "E5",
                     "E5",
                     "B5",
-                    "A5"
+                    "A5",
+                    "A5",
+                    "A5",
+                    "B5",
+                    "A5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5",
+                    "G5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G5",
-                    "F#5",
-                    "B5",
-                    "A5"
+                    "E5",
+                    "F#5"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "G5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B5",
                     "F#5",
-                    "E"
+                    "F#5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B5",
+                    "B5"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5",
+                    "B5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
             1,
             2,
-            2,
-            2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "subo al co",
-            "lectib",
-            "o a l",
-            "as siet",
-            "e",
+            "",
             "",
             "",
             "/n"
         ],
-        [],
         [
-            "    C",
-            "uando la gente no silba mas/n    Sub"
+            "M  subo al colect",
+            "ivo  las siete,",
+            "cuando la gent",
+            "no silba más./n"
         ],
         [
-            "is, baj",
-            "as, bajas",
-            ", subis",
-            "/n    Sal"
-        ],
-        [
-            "is, ent",
-            "ras, entra",
-            "s, sali",
-            "s/n  "
-        ],
-        [
-            "  y yo m",
-            "e senti sol",
-            "o en e",
-            "l San M",
-            "artin",
+            "Subis, bajas, bajas,",
+            "subis. /n Salís, entras, entras,",
+            "salís. /n Yo me sento solo e",
+            "n el /n San Mar",
+            "tín /n Eran solo c",
+            "uadro  colgados",
+            "conto",
+            "rna  vestidas de tig",
+            "res /n Eran solo c",
+            "uadro  colgad",
+            "o  la fida r",
+            "ónica  un charango m",
+            "ás. ",
             "",
-            "/n   "
+            "",
+            "/n"
         ],
         [
-            "Eran s",
-            "ólo cuadr",
-            "os colga",
-            "dos/n   "
+            "No me hables ni de t",
+            "ang  ni de rock./n"
         ],
         [
-            "Y cotor",
-            "ras ves",
-            "tidas ",
-            "de tigre/n   "
+            "Viva e",
+            "l  rock con el celuloide.",
+            "después del guit",
+            "arraz  que, después del guit",
+            "arraz  que, caer más",
+            "simpátic en /n Sa",
+            "daí /n Eran s",
+            "ol  cuadros colgados./n"
         ],
         [
-            "Eran só",
-            "lo cuadr",
-            "os colgados/n   y la filarmonica un charango mas"
+            "No e",
+            "r  tango ni era rock./n"
         ],
-        [],
-        []
+        [
+            "Era",
+            "n  solo cuadros colgado",
+            "s ",
+            "era el sueño del arc",
+            "adoide ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Er",
+            "a  solo cuadros colg",
+            "ados /n N",
+            "o  era tango ni era",
+            "rock /n"
+        ],
+        [
+            "Eran solo cuadros col",
+            "gados /n"
+        ],
+        [
+            "No era tango ni era r",
+            "ock. /n"
+        ],
+        [
+            "Eran solo cuadros colgados. /n Eran solo cuadros co",
+            "lgados /n"
+        ],
+        [
+            "No era tango ni er",
+            "a  rock./n"
+        ],
+        [
+            "Eran solo cuadros",
+            "colgados /n"
+        ],
+        [
+            "No era tango ni",
+            "er  roc",
+            "k /n Na -na -na -",
+            "na  -na -",
+            "na  -",
+            "n",
+            "a  -na",
+            "-",
+            "n  -",
+            "n",
+            "a  -na -",
+            "n  -na -na -na -na -na -na -na -na -na -",
+            "n  -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -",
+            "n -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na -na /n Na -na -",
+            "na  -na"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "qZz27M4PinA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

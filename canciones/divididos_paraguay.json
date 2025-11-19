@@ -2,17 +2,35 @@
     "cancion": "paraguay",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "B4",
-                    "A9"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
@@ -20,7 +38,98 @@
                 "acordes": [
                     "E",
                     "A9",
+                    "A9",
                     "E",
+                    "E",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A9",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A9",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "E",
+                    "A9",
+                    "A9"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A9",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
+                    "B4",
                     "B4",
                     "B4"
                 ]
@@ -28,38 +137,125 @@
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
-        [],
         [
-            "idemos todo esto de una vez/nVámonos a navegar al Parag"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uay/n"
+            "Olvidemos t",
+            "od  esto de",
+            "un  v",
+            "e /n Vá",
+            "mono  n",
+            "avegar al /n P",
+            "aragua ",
+            "/n"
         ],
         [
-            "Olvidemos y rajemos por un ra",
-            "to/nMira que b"
+            "Olvidemos",
+            "ragemos por u",
+            "n  ra",
+            "t /n Mira q",
+            "u  bueno, no h",
+            "ay  nada que p",
+            "ensa /n O",
+            "h  y",
+            "ea ",
+            "/n"
         ],
         [
-            "ueno no hay nada en que pensa",
-            "r/n"
+            "N",
+            "o  m",
+            "e  hablen del cru",
+            "cer  del a",
+            "mo /n D",
+            "e  ar",
+            "tist  qu",
+            "e  solo qued",
+            "ó /n"
         ],
         [
-            "No me hablen del crucero del amor/nSiento la birome sobre mi"
+            "Pobr  con",
+            "ejo  lo hiz",
+            "una age",
+            "nci ",
+            "ya no qu",
+            "iere  no quier",
+            "escribir m",
+            "á /n O",
+            "h yeah /n Oh y",
+            "ea ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        []
+        [
+            "Sien",
+            "t  la ruidome s",
+            "obre  m",
+            "í /n T",
+            "a  periodist",
+            "que se muere p",
+            "or  toca",
+            "/n"
+        ],
+        [
+            "Bast",
+            "de noticias",
+            "cánte",
+            "le /n Ba",
+            "st  d",
+            "e  la falsa r",
+            "oc  and roll/n"
+        ],
+        [
+            "Oh y",
+            "eah ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Siento la",
+            "r",
+            "u",
+            "i",
+            "d",
+            "o",
+            "m  sobre mí"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "xtsGOfZalus",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

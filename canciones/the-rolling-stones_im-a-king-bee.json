@@ -8,94 +8,206 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "E",
                     "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
                     "E",
                     "B",
                     "A",
-                    "E"
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
                     "E7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0
+            2,
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "king bee /nWell I'm a "
+            "Well, \n\nI'm king bee buzzin' around y",
+            "our hive \n\nW",
+            "el",
+            "l, \n\nI'm king b",
+            "ee, baby buzz",
+            "in' around your hi",
+            "ve \n\nY",
+            "ea",
+            "h, can ma",
+            "ke honey, baby, let ",
+            "me come insi",
+            "de /n"
         ],
         [
-            "king bee, baby /nBuzzing around your "
+            "Well, \n\nI'm k",
+            "ing bee, wa",
+            "nt you to be my q",
+            "ueen \n\nWe",
+            "ll, \n\nI'm ",
+            "king bee, baby, w",
+            "ant you to be my ",
+            "queen \n\nTo",
+            "geth",
+            "we can make honey, ",
+            "the world has nev",
+            "er seen /n"
         ],
         [
-            "hive /nYeah I can "
+            "Wel",
+            "l, ",
+            "buzz wire, ",
+            "s",
+            "t",
+            "i",
+            "n",
+            "it then ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "make honey baby ",
-            "/nLet me come in"
+            "Wel",
+            "l, \n\nI'm king bee, ",
+            "can buzz all ",
+            "night long \n\nW",
+            "ell",
+            ", \n\nI'm king bee, b",
+            "aby, can buzz ",
+            "all night long /n"
         ],
         [
-            "side /nWell I'm a "
+            "Y",
+            "eah, can buzz better, ",
+            "baby, when your ",
+            "man is gone ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "king bee /nWell I'm a "
-        ],
-        [
-            "king bee, baby /nWant you to be my "
-        ],
-        [
-            "queen /nTogether "
-        ],
-        [
-            "we can make honey ",
-            "/nThe world has never "
-        ],
-        [
-            "seen /n"
-        ],
-        [
-            "Sting you bad... /nWell I'm a "
-        ],
-        [
-            "king bee /nWell I'm a "
-        ],
-        [
-            "king bee, baby /nCan buzz all night "
-        ],
-        [
-            "long /nYeah I can "
-        ],
-        [
-            "buzz better baby ",
-            "/nWhen your man is "
-        ],
-        [
-            "gone/n"
-        ],
-        []
+            "Well, \n\nI'm k",
+            "ing bee, bab",
+            "y, want ",
+            "you ",
+            "",
+            "",
+            "to ",
+            "",
+            "be my queen ",
+            "",
+            "",
+            ""
+        ]
     ],
-    "bpm": 80,
+    "bpm": 107,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "X3IUPW2Yoj0",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -8,11 +8,20 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "B",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "D",
-                    "C"
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
@@ -20,23 +29,252 @@
                 "acordes": [
                     "G",
                     "C",
-                    "D",
-                    "D7",
-                    "G",
-                    "Bm"
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "C",
-                    "D7",
-                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "G",
-                    "C",
                     "G",
-                    "D"
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G"
                 ]
             }
         ],
@@ -44,161 +282,251 @@
             0,
             1,
             2,
-            0,
-            1,
-            2,
-            0,
-            1,
-            2,
-            0,
-            1,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
         ]
     },
     "letras": [
         [
-            "Something happened to me yester",
-            "day/n"
-        ],
-        [
-            "Something I can't speak of right a",
-            "way/n"
-        ],
-        [
-            "Something happened to me, somethin",
-            "g oh so gro",
-            "ovy/n"
-        ],
-        [
-            "Something h",
-            "appened t",
-            "o me yes",
-            "terday",
+            "",
+            "",
             "/n"
         ],
         [
-            "He don't know if it's right or wrong/n"
-        ],
-        [
-            "Maybe he should tell someone/n"
-        ],
-        [
-            "He's not sure just what it was/n"
-        ],
-        [
-            "Or if it's against the law. Somet",
-            "hing!/n"
-        ],
-        [
-            "Something very strange I hear you sa",
-            "y/n"
-        ],
-        [
-            "You're talking in a most peculiar wa",
-            "y/n"
-        ],
-        [
-            "But something really threw me, someth",
-            "ing oh so groo",
-            "vy/n"
-        ],
-        [
-            "Something h",
-            "appened to",
-            " me yest",
-            "erday",
+            "S",
+            "omething happ",
+            "ened to me y",
+            "esterday. ",
             "/n"
         ],
         [
-            "He don't know just where it's gone/n"
-        ],
-        [
-            "He don't really care at all/n"
-        ],
-        [
-            "No one's sure just what it was/n"
-        ],
-        [
-            "Or the meaning and/or cause. Somet",
-            "hing!/n"
-        ],
-        [
-            "Someone says there's something more to pa",
-            "y/n"
-        ],
-        [
-            "For sins that you committed yesterd",
-            "ay/n"
-        ],
-        [
-            "It's really rather drippy, but som",
-            "ething oh so trip",
-            "py/n"
-        ],
-        [
-            "Something h",
-            "appened to",
-            " me y",
-            "esterday",
+            "Something  ",
+            "can't speak of ",
+            "right  away. ",
             "/n"
         ],
         [
-            "He don't know if it's right or wrong/n"
+            "Something  happ",
+            "ened to me. /n"
         ],
         [
-            "Maybe he should tell someone/n"
+            "Something al",
+            "so groovy. /n"
         ],
         [
-            "He's not sure just what it was/n"
-        ],
-        [
-            "Or if it's against the law. Somet",
-            "hing!/n"
-        ],
-        [
-            "Someone's singing loud across the ba",
-            "y/n"
-        ],
-        [
-            "Sitting on a mat about to pra",
-            "y/n"
-        ],
-        [
-            "It isn't half as loony, yes someth",
-            "ing oh so groovy",
+            "Something happ",
+            "ened to me yesterday. \n\nSomething can't speak of right away. \n\nSomething happened to me. \n\nSomething also groovy. \n\nSomething happened to me yesterday. \n\nSomething can't speak of right away. \n\nSomething happened to me. \n\nSomething also groovy. \n\nSomething happened to me yesterday. \n\nSomething can't speak of right away. \n\nSomething happened to me yesterday. \n\nSomething can't speak of right away. \n\nSomething happened to me. \n\nSomething happened to me. \n\nSomething also groovy. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething ha",
+            "ppened to me yesterday. ",
+            "",
             "/n"
         ],
         [
-            "Something h",
-            "appened to",
-            " me ye",
-            "sterday",
+            "So",
+            "mething happe",
+            "ned to ",
+            "me ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "yesterday. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "He don't know if it's right or wrong/n"
+            "Some",
+            "thing happe",
+            "ned ",
+            "to ",
+            "me yeste",
+            "rday. ",
+            "/n"
         ],
         [
-            "Maybe he should tell someone/n"
+            "Some",
+            "thing happened ",
+            "to ",
+            "me yesterday. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "No ones sure just what it was/n"
+            "Something  h",
+            "appened to me ",
+            "yesterday. ",
+            "/n"
         ],
         [
-            "Or the meaning and the cause. Somethin",
-            "g!"
+            "Somethi",
+            "ng ha",
+            "pp",
+            "en",
+            "ed ",
+            "to ",
+            "",
+            "",
+            "me yesterday. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Something happened to ",
+            "me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSo",
+            "mething happened to me yesterday. \n\nSomething happened to me yesterday. /n"
+        ],
+        [
+            "So",
+            "mething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to ",
+            "me yesterday. \n\nSomething happe",
+            "ned to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "hap",
+            "pened to me yesterday. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Some",
+            "thing happe",
+            "ned to me ",
+            "yesterday.  ",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "omething ha",
+            "ppened to ",
+            "me ",
+            "",
+            "yesterday. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "So",
+            "mething hap",
+            "pened to me ",
+            "y",
+            "e",
+            "s",
+            "t",
+            "e/n"
+        ],
+        [
+            "Something happened ",
+            "to me ",
+            "yesterday. \n\nSomething happ",
+            "ened to ",
+            "me ",
+            "ye",
+            "sterday. ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Something  ha",
+            "ppened to ",
+            "me ",
+            "",
+            "yesterday. \n\nSomething ",
+            "h",
+            "a",
+            "p",
+            "p",
+            "ened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "to ",
+            "me yesterday. \n\nSomething happened to me ",
+            "yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. \n\nSomething happened to me yesterday. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Something happened to me yesterday. "
         ]
     ],
-    "bpm": 80,
+    "bpm": 143,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "D4YObSLe8UI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

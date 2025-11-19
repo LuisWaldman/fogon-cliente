@@ -1,1 +1,271 @@
-{"cancion": "cancion-del-cazador", "banda": "silvio-rodriguez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "D5", "D", "D5"]}, {"nombre": "parte2", "acordes": ["D", "D5"]}, {"nombre": "parte3", "acordes": ["G", "A", "F#m", "Bm", "Em", "G", "A4", "A"]}], "orden_partes": [0, 0, 0, 0, 1, 2, 1]}, "letras": [[], ["Qu\u00e9 cazador derri", "b\u00f3 aquellas cartas/nque "], ["nunca me mandaste.", "", "/nQu\u00e9 fuego las qu"], ["em\u00f3,", "/nen qu\u00e9 r\u00edo se a"], ["hogaro", "n./nQui\u00e9n convenci\u00f3 a tu"], ["s manos de que no,/n"], ["qui\u00e9n a tu coraz\u00f3n,/nqui\u00e9n"], [" a tu coraz\u00f3n,/nqui\u00e9n"], [" a tu coraz\u00f3n", ".", "", "/nQui\u00e9n a tu"], [" boca.", "/n"], ["Mejor es que se v", "ayan aves negras,", "/nmejor me dejan "], ["solo/n"], ["que estoy enamor", "ado/nde otra "], ["muert", "e./nDe esto ni una palabra a los carteros..."], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "sWYugYSqjDA", "delay": 0}]}
+{
+    "cancion": "cancion-del-cazador",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D",
+                    "D5",
+                    "G",
+                    "Em",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D5",
+                    "D",
+                    "D",
+                    "D5",
+                    "D5",
+                    "D5"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D5",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que ",
+            "cazador derribó aque",
+            "llas cartas que nunca me man",
+            "daste /n"
+        ],
+        [
+            "Que fuego las que",
+            "mó, en que ",
+            "río se ahogaron, ",
+            "quien convenció tus manos de ",
+            "que no \n\nQuién tu corazón, ",
+            "quién tu corazón, quién tu ",
+            "co",
+            "raz",
+            "ón ",
+            "/n"
+        ],
+        [
+            "Quién tu ",
+            "bo",
+            "ca /n"
+        ],
+        [
+            "Mejor es que se ",
+            "vayan ves negras, ",
+            "mejor me dejan solo /n"
+        ],
+        [
+            "Que estoy ena",
+            "morado de otra m",
+            "uert/n"
+        ],
+        [
+            "Estoy una palab",
+            "ra en los ",
+            "c",
+            "a",
+            "r",
+            "t",
+            "e",
+            "r",
+            "o",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que caza",
+            "dor derribó aquellas cartas que ",
+            "nunca me mandaste /n"
+        ],
+        [
+            "Que fu",
+            "ego las quemó, ",
+            "en que río se aho",
+            "garon, quien conve",
+            "nció tus manos de que no \n\nQ",
+            "uién tu corazón, quién tu ",
+            "corazón, quién tu ",
+            "cor",
+            "azón /n"
+        ],
+        [
+            "Mej",
+            "or es que se vayan ves neg",
+            "ras, mejor me dejan s",
+            "olo \n\nQue e",
+            "stoy enamorado de ",
+            "otra  muert ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "toy una palabra en los ",
+            "c",
+            "a",
+            "r",
+            "t",
+            "e",
+            "r",
+            "o",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 107,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "sWYugYSqjDA",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}
