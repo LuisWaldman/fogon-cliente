@@ -174,4 +174,7 @@ function SoltarNota(nota: string) {
     padding: 0px;
   }
 }
+.circulodiv {
+  user-select: none;
+}
 </style>
