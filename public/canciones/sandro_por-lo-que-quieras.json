@@ -1,1 +1,404 @@
-{"cancion": "Por-lo-que-quieras", "banda": "sandro", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Am/G", "Am/F", "Esus", "E", "Dm", "F", "G", "F", "Em", "Am", "Dm", "E", "Am", "Dm", "G", "C", "Am", "Dm", "E", "Am", "G7", "C", "Dm", "E", "Am", "C", "F", "Ebdim7", "Dm7", "E", "G", "C", "Dm", "E", "Am", "C", "F", "Ebdim7", "Dm7", "E", "Dm", "F", "G", "Em", "Am", "Dm", "E", "Am", "A7", "Dm", "F", "G", "C", "Am", "Dm", "Esus", "E7", "Am", "G", "C", "Dm", "E", "Am", "C", "F", "Ebdim7", "Dm7", "G", "C", "Ab7", "Db", "Ebm", "F", "Bbm", "Ab", "Gb", "Edim7", "Ebm7", "F"]}], "orden_partes": [0]}, "letras": [[], ["erta", "", "/nla noche esta en su "], ["fin y es la ma", "ana", "/nY en esta habitaci\u00f3n no "], ["queda nada", "/nQue tenga utilidad pa"], ["ra los dos/nDespi"], ["erta ", "la noche que paso sirvi\u00f3 de mue", "stra/n"], ["Pues solo en una noche qu", "edo muerta la ul", "tima/nEsperanza de este am"], ["or", "/nA"], ["l\u00e9jate de m\u00ed por lo ", "que quieras/nTe pago este pa"], ["saje hasta el fin", "al", "/nEmp"], ["aca de una vez no ", "mires hacia atr\u00e1s/nAr"], ["ranca de una vez y na", "da mas", "/nA"], ["l\u00e9jate de m\u00ed por lo ", "que quieras/nTe pago este pa"], ["saje hasta el fin", "al", "/nEmp"], ["aca de una vez no ", "mires hacia atr\u00e1s/nAr"], ["ranca de una vez y na", "da mas/nAp"], ["ura", "", "/nno trates de medir lo que te o"], ["lvidas", "/nSi nada vale tanto en nuestr"], ["as vidas/n"], ["Como la colecci\u00f3n de errores que me ", "dejas", "/nAp"], ["ura", "", "/nque ya la nave esta llamando a su pa"], ["saje/n"], ["Que yo no quiero cometer ning\u00fan ult", "raje a/nReten"], ["er un poco ma", "s tu hipocres", "a  ah", "/nA"], ["l\u00e9jate de m\u00ed por lo ", "que quieras/nTe pago este pa"], ["saje hasta el fin", "al", "/nEmp"], ["aca de una vez no ", "mires hacia atr\u00e1s/nAr"], ["ranca de una vez y", " nada mas", "", "/nA"], ["l\u00e9jate de m\u00ed por lo que ", "quieras/nmusica"], [" ....", ".", "/nEmp"], ["aca de una vez no m", "ires hacia atr\u00e1s/nAr"], ["ranca de una vez y nad", "a mas"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "9Q8mwJa2pMk", "delay": 0}]}
+{
+    "cancion": "Por-lo-que-quieras",
+    "banda": "sandro",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Esus",
+                    "Am/F",
+                    "Esus",
+                    "Esus",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Ebdim7",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Ebdim7",
+                    "Dm",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "Ebdim7",
+                    "Ebdim7",
+                    "Ebdim7",
+                    "Ebdim7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Ebdim7",
+                    "Dm",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "Db",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Despiert",
+            "a ",
+            "la noche está en s",
+            "u  fin, es l",
+            "a  mañana,",
+            "",
+            "en esta ha",
+            "bitació  n",
+            "o  queda nada",
+            ". /n"
+        ],
+        [
+            "Que tenga",
+            "utilida  p",
+            "ara  los d",
+            "os ",
+            "/n"
+        ],
+        [
+            "Despierta,",
+            "la n",
+            "oche  que pasó sir",
+            "vi  de muest",
+            "ra ",
+            "pues s",
+            "olo  en la noc",
+            "h  quedo",
+            "muert  l",
+            "a  últ",
+            "im  esperan",
+            "z  de este am",
+            "or /n Ah",
+            "or  al",
+            "éjat  de m",
+            "í  por lo que",
+            "quier",
+            "a  te p",
+            "ag  este pasaj",
+            "e  hasta el f",
+            "inal /n"
+        ],
+        [
+            "Em",
+            "pac  de una v",
+            "ez  no m",
+            "ires  hacia a",
+            "trás  a",
+            "rranc  de una v",
+            "ez  nada",
+            "má",
+            "s /n Aho",
+            "r  aléjate de",
+            "m  por lo",
+            "qu  quie",
+            "ras ",
+            "te pago este p",
+            "asaj  hasta e",
+            "l  fina",
+            "l /n"
+        ],
+        [
+            "Empaca de u",
+            "na  vez,",
+            "no mires ha",
+            "ci  atrás,",
+            "arranca d",
+            "e  una vez",
+            "nad  má",
+            "s ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "trates de med",
+            "i  lo que te o",
+            "lvid",
+            "a ",
+            "si nada vale tanto e",
+            "n  nuestras v",
+            "idas, ",
+            "",
+            "como la colección d",
+            "e  errores que me d",
+            "eja",
+            "s /n Ap",
+            "ura ",
+            "",
+            "que ya la nave está l",
+            "lamand  su p",
+            "asaje ",
+            "",
+            "yo no quiero",
+            "comete  nin",
+            "gú  traje",
+            ",  al",
+            "retene  un p",
+            "oc  más tu hi",
+            "pocresía /n"
+        ],
+        [
+            "Aho",
+            "r  aléjat",
+            "de mí por l",
+            "o  que qui",
+            "eras ",
+            "te pago est",
+            "pasaje hasta e",
+            "l  final",
+            "/n"
+        ],
+        [
+            "Empaca d",
+            "e  una vez,",
+            "no mires",
+            "haci  atrás,",
+            "arranc",
+            "de una vez",
+            "nada má",
+            "s /n"
+        ],
+        [
+            "Aléj",
+            "at  de mí po",
+            "r  lo que qu",
+            "ieras ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Empac",
+            "de una vez,",
+            "no mir",
+            "e  hacia atrás",
+            "arran",
+            "c  de una vez",
+            "nada m",
+            "ás ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¡Suscríbete al canal!"
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "9Q8mwJa2pMk",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}
