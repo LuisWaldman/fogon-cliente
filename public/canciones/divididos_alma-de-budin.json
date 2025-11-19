@@ -2,101 +2,321 @@
     "cancion": "alma-de-budin",
     "banda": "divididos",
     "escala": "A",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "A",
-                    "G",
-                    "D",
                     "A",
-                    "F#",
-                    "E"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
-                    "F#",
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "A",
+                    "D",
                     "D",
                     "F#",
+                    "F#",
                     "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "F#",
+                    "F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "F#",
+                    "F#",
                     "A",
-                    "E"
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "D",
+                    "D",
+                    "F#",
+                    "F#",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Sopla el viento d",
-            "ulce del oe",
-            "ste",
             "",
             "",
-            "/n      "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "pedaleando hasta ",
-            "el amanecer",
+            "So",
+            "br  el vien",
+            "t  dulce del o",
+            "est",
+            "e /n Pedal",
+            "eand  has",
+            "t  el amane",
+            "ce ",
+            "/n"
+        ],
+        [
+            "Albergándose",
+            "e  la media l",
+            "un",
+            "a /n Va",
+            "buscand  ácid",
+            "en la con",
+            "t ",
+            "/n"
+        ],
+        [
+            "Parado d",
+            "e  pecho e",
+            "n  el techo d",
+            "e tren /n Bala",
+            "bad  human",
+            "sin raz",
+            "ó /n"
+        ],
+        [
+            "P",
+            "arado  d",
+            "e  pecho en e",
+            "l  techo de",
+            "l tren /n Comado",
+            "com  copa d",
+            "e  cam",
+            "peó  d",
+            "e  pin",
+            "bal ",
             "",
             "",
             "",
-            "/n      "
-        ],
-        [
-            "albergándose ",
-            "en la m",
-            "edialuna",
             "",
             "",
-            "/n      "
-        ],
-        [
-            "va buscando asilo",
-            " el aton",
-            "tao",
             "",
             "",
-            "/n      "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Parado de pech",
-            "o en el techo del tren/n      "
+            "Bras  te",
+            "atro  pecho, cie",
+            "n  san sp",
+            "eña/n"
         ],
         [
-            "va la bala humana sin raz",
-            "n/n      "
+            "Noche de c",
+            "olad  al v",
+            "olver ",
+            "",
+            "prenda d",
+            "e  uvas en e",
+            "l  pi",
+            "s /n V",
+            "a  buscando ác",
+            "id  en la co",
+            "nt ",
+            "/n"
         ],
         [
-            "Parado de pech",
-            "o en el techo del tren/n      "
+            "Parad",
+            "de pech",
+            "o  en el techo d",
+            "el tren /n Ma",
+            "tecos  alm",
+            "a  de pu",
+            "t ",
+            "/n"
         ],
         [
-            "cromado como copa de campeón",
-            "/n      de ping pong"
-        ],
-        [
+            "Parado d",
+            "e  pecho e",
+            "n  el techo de",
+            "l tren /n Vuelve",
+            "casa solo",
+            "salp",
+            "ica  s",
+            "i  gav",
+            "a ",
+            "",
+            "",
+            "so",
+            "nra  sin",
+            "gav",
+            "a /n El c",
+            "ampe",
+            "ó  del p",
+            "inba",
+            "l ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -104,8 +324,9 @@
         {
             "tipo": "Youtube",
             "id": "6aZuuWfWrqM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

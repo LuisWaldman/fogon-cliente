@@ -1,33 +1,33 @@
-import type { OrigenCancion } from '../cancion/origencancion'
 import { HelperSincro } from '../sincro/HelperSincro'
 import { SincroSesion } from '../sincro/SincroSesion'
 import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
-import type { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import { ListaReproduccion } from './listareproduccion'
 
 export class Reproductor {
   protected cancion: string = ''
+  protected listaReproduccion: ListaReproduccion = new ListaReproduccion()
   public get Cancion() {
     return this.cancion
   }
-  async ClickCancion(origen: OrigenCancion) {
-    const appStore = useAppStore()
-    appStore.MediaVistas = null
-    const cancionObtenida = await CancionManager.getInstance().Get(origen)
-    if (cancionObtenida.pentagramas.length > 0) {
-      appStore.estadosApp.texto = 'Cargando Midis...'
-    }
-    appStore.cancion = cancionObtenida
-    appStore.compas = 0
-    appStore.estadosApp.estado = 'ok'
-    appStore.origenCancion = origen
+  async ClickCancion(cancion: ItemIndiceCancion) {
+    await this.listaReproduccion.ClickCancion(cancion)
+  }
+
+  async ClickTocarLista(lista: ItemIndiceCancion[]) {
+    await this.listaReproduccion.ClickTocarLista(lista)
+  }
+  async ClickCancionNro(nro: number) {
+    await this.listaReproduccion.ClickCancionNro(nro)
   }
 
   async Next() {
     const appStore = useAppStore()
     appStore.nroCancion++
-    const origen =
-      appStore.listaReproduccion[appStore.nroCancion - 1].GetOrigen()
+    const origen = ItemIndiceCancion.GetOrigen(
+      appStore.listaReproduccion[appStore.nroCancion - 1],
+    )
     const cancionObtenida = await CancionManager.getInstance().Get(origen)
     appStore.MediaVistas = null
     if (cancionObtenida.pentagramas.length > 0) {
@@ -40,8 +40,7 @@ export class Reproductor {
   }
 
   async AgregarAListaReproduccion(item: ItemIndiceCancion) {
-    const appStore = useAppStore()
-    appStore.listaReproduccion.push(item)
+    this.listaReproduccion.Agregar(item)
   }
 
   iniciarReproduccion() {

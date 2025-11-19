@@ -7,7 +7,7 @@ import EditarLetraAcorde from '../components/comp_editar/editarLetraYAcordes.vue
 import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
-import Secuencia from '../components/comp_tocar/Secuencia.vue'
+import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
 import editartexto from '../components/comp_editar/editarconsola.vue'
 import editarpentagrama from '../components/comp_editar/editarpentagrama.vue'
 import { vistaEditar } from '../modelo/helperVistas/editar/vistaEditar'

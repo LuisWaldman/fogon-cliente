@@ -2,69 +2,229 @@
     "cancion": "pistero",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 112,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "D",
                     "C",
-                    "G"
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F",
                     "C",
-                    "G"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "pongan otra cancion! /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "cuelguen al DJ /n"
+            "Esta e",
+            "s  una canción e",
+            "n  español de rock argentino/n"
         ],
         [
-            "quemen la radio! /n"
+            "Esta",
+            "e",
+            "s",
+            "",
+            "",
+            "",
+            "u",
+            "n",
+            "a",
+            "",
+            "",
+            "",
+            "canción e",
+            "n  español",
+            "de rock argentino. /n Esta e",
+            "s  u",
+            "n ",
+            "can",
+            "ci  en",
+            "e",
+            "s",
+            "p",
+            "a",
+            "ñ",
+            "o",
+            "l",
+            "",
+            "de rock argenti",
+            "no ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "pongan otra cancion! /n"
+            "Est  e",
+            "s  u",
+            "n",
+            "a",
+            "",
+            "canción en español de rock argentino. /n Esta e",
+            "s",
+            "",
+            "",
+            "una canción",
+            "e",
+            "n",
+            "",
+            "",
+            "",
+            "es",
+            "paño  de rock",
+            "arge",
+            "ntin/n"
         ],
         [
-            "en el patibulo b",
-            "ailador /n"
-        ],
-        [
-            "marcando ch",
-            "icle con su pa",
-            "reja /n"
-        ],
-        [
-            "actuando p",
-            "ose de re",
-            "tador "
+            "Esta es u",
+            "n  canción en español de rock ar",
+            "gentino ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "tD6FcpdPU78",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

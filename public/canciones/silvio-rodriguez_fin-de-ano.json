@@ -1,1 +1,462 @@
-{"cancion": "fin-de-ano", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "C", "G4/9", "G", "C", "G4/9", "G", "G4/9", "G", "F9", "C", "G4/9", "G", "A#", "G#", "G4/9", "G", "C", "G4/9", "G", "C", "G4/9", "G", "C", "F", "C", "F", "Dm", "Dm7", "Dm7", "C", "F", "C", "F", "Dm", "Dm7", "Dm7", "F", "A#", "G", "C", "A", "Dm", "A#", "G#", "G", "C", "A#", "F", "G", "C", "A#", "F", "G", "C", "A#", "F", "G", "C", "A#", "F", "G", "C", "A#", "F", "G", "C", "A#", "F", "G", "C", "A#", "F", "G", "C", "A#", "G#", "G", "F", "G#", "A#", "C", "C"]}], "orden_partes": [0]}, "letras": [[], ["Somos iguales, sin diferencia de", " altura,", "/nc"], ["recimos e", "ntre piedr", "as/nque quedar"], ["on por ti, y por", " mi", "/nde nues"], ["tro porven", "ir", "", "/nen otro p"], ["orvenir", "", "", "", "", "/n"], ["Hemos nacido j", "untos y crecimos as", "/nRama del mismo "], ["\u00e1rbol azul/nDel mismo a"], ["\u00f1il/nHoy hay que a"], ["delantarse a todo lo de", "m\u00e1s,/n"], ["Que se empu\u00f1", "en fusiles de histori", "a con valor/nQue los hijos r"], ["evienten, sus casas c", "on amor/nQue se cambie la"], [" noche y el d\u00eda del", " lugar,/nP\u00eddanme ca"], ["nciones a m\u00ed, sus ", "canciones cantar\u00e9/nNada de"], [" lo que pase aqu\u00ed le e", "s ajeno a mi piel/nY los "], ["asuntos de vivir, ni l", "os asuntos de morir,/n"], ["Todo,", " para mi es to", "do", "/n"], ["Desde una palabra o", "scura,/nHasta la "], ["estatura de un conduc", "tor/n"], ["Desde una piedra a", "marilla,/n"], ["Hasta la sombrilla q", "ue tiene el sol/n"], ["Todo,", " para mi es to", "do,", "/n"], ["Todo,", " para mi es to", "do", "/n"], ["Desde la altura que e", "nga\u00f1a/n"], ["Que una monta\u00f1a t", "iene a los pies/n"], ["Hasta su misma cab", "eza/n"], ["Que luce estrecha pe", "ro no es/n"], ["Todo,", " para mi es to", "do", "/n"], ["Todo,", " para mi es to", "do", "", "", "", "/n"], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "vKjLXm82Vnc", "delay": 0}]}
+{
+    "cancion": "fin-de-ano",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A#",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G4/9",
+                    "G4/9",
+                    "G4/9",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "F",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "F",
+                    "F",
+                    "A#",
+                    "G",
+                    "Gm",
+                    "A#",
+                    "F",
+                    "F",
+                    "A#",
+                    "A#",
+                    "G#",
+                    "Gm",
+                    "A#",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "G",
+                    "A#",
+                    "A#",
+                    "G",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "F",
+                    "F",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ]
+    },
+    "letras": [
+        [
+            "Fin de año. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Som",
+            "os igua",
+            "les \n\nSin difer",
+            "ente a",
+            "lt",
+            "ura ",
+            "",
+            "/n"
+        ],
+        [
+            "Som",
+            "os iguales /n"
+        ],
+        [
+            "De anchu",
+            "ra de c",
+            "abe",
+            "",
+            "/n"
+        ],
+        [
+            "Tu",
+            "vimos padre ",
+            "",
+            "madre /n"
+        ],
+        [
+            "Cre",
+            "cimos entre ",
+            "piedes  \n\nQue ",
+            "quedaran por ",
+            "ti ",
+            "por ",
+            "mi ",
+            "/n"
+        ],
+        [
+            "Es ci",
+            "erto por ve",
+            "nir ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De ",
+            "nuestro por ",
+            "venir ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En otro ",
+            "por ve",
+            "nir ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hemo",
+            "s nacido ju",
+            "ntos cre",
+            "cimos así /n"
+        ],
+        [
+            "Rama del m",
+            "ismo árbo ",
+            "azul del mi",
+            "smo añil /n"
+        ],
+        [
+            "Hoy hay que ade",
+            "lantarse ",
+            "todo lo de",
+            "más al dia",
+            "blo si sabem",
+            "os queremos ",
+            "saber  más /n"
+        ],
+        [
+            "Que se empuñ",
+            "en fusiles ",
+            "de historia con ",
+            "valor  \n\nQue los ",
+            "hijos revie",
+            "nten sus ca",
+            "sas con a",
+            "mor \n\nQue se ca",
+            "mbie la noch ",
+            "el día del ",
+            "lugar \n\nSi ",
+            "comprendemos que ",
+            "algo del t",
+            "iempo viene mal /n"
+        ],
+        [
+            "Píd",
+            "ame canciones ",
+            "mi sus canci",
+            "ones cantaré /n"
+        ],
+        [
+            "Nada  de lo que ",
+            "pase que les ",
+            "ajeno mi pi",
+            "el \n\nNi los asu",
+            "ntos de vivir ni ",
+            "los asuntos ",
+            "de morir \n\nPor",
+            "que tod",
+            "o para mi es ",
+            "todo  \n\nTod",
+            "o pa",
+            "ra mi es t",
+            "odo \n\nDes",
+            "de una palabra oscu",
+            "ra hasta la estatura de ",
+            "un conductor \n\nDesde ",
+            "una piedra amarilla h",
+            "asta la sombrilla que tien",
+            "e el sol /n"
+        ],
+        [
+            "Todo pa",
+            "ra mi es todo ",
+            "/n"
+        ],
+        [
+            "Todo  par ",
+            "mi es todo /n"
+        ],
+        [
+            "Desde la anc",
+            "hura que engaña que una mo",
+            "ntaña tiene los pie",
+            "s \n\nHasta su mism ",
+            "cabeza que luce est",
+            "recha pero no ",
+            "es \n\nTod",
+            "o para mi es ",
+            "todo /n"
+        ],
+        [
+            "Tod ",
+            "para mi es ",
+            "tod ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 161,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "vKjLXm82Vnc",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

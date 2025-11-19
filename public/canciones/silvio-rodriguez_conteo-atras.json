@@ -1,1 +1,192 @@
-{"cancion": "conteo-atras", "banda": "silvio-rodriguez", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "Bm7", "E", "Bm7", "E", "Bm7", "E", "Bm7", "E", "Bm7", "E", "Bm7", "A", "C#m", "G#m", "Bm", "F#m", "Am", "E", "Bm7", "E", "Bm7", "E", "Bm7", "E", "Bm7", "E", "Bm7", "A", "C#m", "G#m", "Bm", "F#m", "Am", "E", "Bm7", "E", "Bm7", "E", "Bm7", "A", "G#m", "F#m", "E", "C#", "F#m", "G#7", "C#m", "A", "A#dim", "E", "C#m", "D", "F#m", "B7", "E", "Bm7", "E", "Bm7", "A", "C#m", "G#m", "Bm", "F#m", "Am", "E", "Bm7", "E", "Bm7", "E", "Bm7", "A", "G#m", "F#m", "E", "C#", "F#m", "G#7", "C#m", "A", "A#dim", "E", "C#m", "D", "F#m", "C7", "F", "Cm7", "F", "Cm7", "A#", "Dm", "Am", "Cm7", "Gm", "A#m", "F", "Cm7", "F"]}], "orden_partes": [0]}, "letras": [[], [], [], ["[Ve", "rse 1]/n"], [" Ayer y h", "oy   ", "se fue mi tren", ",/n"], [" lleno de g", "ente  ", "  m\u00e1s puntua", "l,/n"], ["    y otra v", "ez   ", "no pod", "r\u00e9 llegar.", "/n"], ["[Chor", "us]", "/n"], [" Lo escribo", " aqu\u00ed, ", "como se\u00f1", "al:/n"], [" no quiero e", "xceso   ", "  de bondad", "/n"], ["    al hac", "er   ", "mi con", "teo atr\u00e1s.", "/n"], ["[Post", "-Ch", "orus 1]/n"], [" No es v", "erdad que ", "me cans\u00e9", ":/n"], ["  s\u00f3l", "o un poco ", "   me pe", "rd\u00ed,/n"], [" pero c", "uando vine a", " ver", "/n"], [" ya no estaba al", "l\u00ed.", "/n"], [" Hoy, com", "o ayer,  ", "llam\u00e9 al hoga", "r/n"], [" para dec", "ir una", " vez m\u00e1", "s/n"], ["    que otra v", "ez   ", "no pod", "r\u00e9 llega", "r./n"], ["[Chor", "us]", "/n"], [" Ma", "ana lo ", "   har\u00e9 m", "ejor,/n"], ["  ma", "\u00f1ana ", "  madrug", "ar\u00e9./n"], [" Tengo c", "lara la lecci", "\u00f3", "\u00f3n,/n"], [" no la olvidar", "\u00e9.", "/n"], [" Lo escribo", " aqu\u00ed, ", " como se", "al:/n"], ["  no quiero", " exceso de", " bondad", "/n"], ["  al hac", "er   ", "mi cont", "eo atr\u00e1s.", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "HWLBqHP3mC0", "delay": 0}]}
+{
+    "cancion": "conteo-atras",
+    "banda": "silvio-rodriguez",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "F#m",
+                    "C7",
+                    "F",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "F#m",
+                    "G#7",
+                    "G#7",
+                    "A#dim",
+                    "A#dim",
+                    "A#dim",
+                    "F#m",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#7",
+                    "G#7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A#dim",
+                    "A#dim",
+                    "F#m",
+                    "C7",
+                    "F",
+                    "F",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "letras": [
+        [
+            "Ayer ",
+            "",
+            "",
+            "",
+            "hoy se ",
+            "fue mi tren ll",
+            "eno de gente más ",
+            "puntual ",
+            "otra vez ",
+            "no podré lle",
+            "gar /n"
+        ],
+        [
+            "Lo ",
+            "escribo aquí c",
+            "omo señal \n\nNo ",
+            "quiero exces ",
+            "de bondad ",
+            "al hacer mi ",
+            "conteo atr",
+            "ás /n"
+        ],
+        [
+            "No ",
+            "es verdad que me ",
+            "cansé, s",
+            "olo un poco me ",
+            "perdí \n\nPer",
+            "o cuando vine ",
+            "ver ya ",
+            "no estaba al",
+            "lí \n\nHoy c",
+            "omo ayer ya me ",
+            "alugar  \n\nPar",
+            "a decir una ",
+            "vez más que ",
+            "otra vez no ",
+            "podré llega",
+            "r ",
+            "/n"
+        ],
+        [
+            "Mañana  lo har ",
+            "mejor /n"
+        ],
+        [
+            "Maña",
+            "na madrugaré \n\nTeng",
+            "o clara la lecció /n"
+        ],
+        [
+            "No ",
+            "la olvidar /n"
+        ],
+        [
+            "Lo escri",
+            "bo aquí como s",
+            "eñal \n\nNo quiero ",
+            "exceso  de b",
+            "ondad al ha",
+            "cer mi c",
+            "onteo atrás ",
+            "",
+            "/n"
+        ],
+        [
+            "No la olvidaré "
+        ]
+    ],
+    "bpm": 75,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "HWLBqHP3mC0",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
+}

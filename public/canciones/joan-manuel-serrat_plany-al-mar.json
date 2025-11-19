@@ -1,1 +1,346 @@
-{"cancion": "Plany-al-mar", "banda": "joan-manuel-serrat", "escala": "Dm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm", "F", "C", "A7", "Dm", "F", "A"]}, {"nombre": "parte2", "acordes": ["A7", "Dm", "Gm", "A"]}, {"nombre": "parte3", "acordes": ["A7", "Dm", "C", "A#", "A", "Dm", "A7", "Dm"]}], "orden_partes": [0, 1, 0, 2, 0, 1, 0, 2, 0, 1, 0, 2]}, "letras": [["vida,/ncamins de s"], ["omnis,/npont de cult"], ["ures", "/n(ai, qui ho dir"], ["ia...!)/nha estat el ma"], ["r.", "/nMireu-lo "], ["fet una claveguera.", "/nMireu-lo a"], ["nar i venir sense para", "r./nSembla men"], ["tida/nque en el seu "], ["ventre/nes fes la "], ["vida.", "/nAi, qui ho di"], ["ria/nsense ru"], ["bor!", "/nMireu-lo "], ["fet una clavegu", "era,", "", "", "/nferit de m"], ["ort.", "", "/nDe la man"], ["era/nque el desval"], ["isen/ni lenv"], ["erinen,", "/nai, qui ho dir"], ["ia,/nque ens d\u00f3na el "], ["pa!", "/nMireu-lo f"], ["et una claveg", "uera./nMireu-lo a"], ["nar i venir sense par", "ar./n\u00bfOn s\u00f3n el"], ["s savis/ni els poder"], ["osos/nque san"], ["omenen", "/n(ai, qui ho di"], ["ria!)/nconservad"], ["ors?", "/nMireu-lo "], ["fet una claveg", "uera,", "", "", "/nferit de mo"], ["rt.", "", "/nQuanta abun"], ["d\u00e0ncia,/nquanta bel"], ["lesa,/nquanta energ"], ["ia", "/n(ai, qui ho dir"], ["ia!)/nfeta mal"], ["b\u00e9!", "/nPer igno"], ["r\u00e0ncia, per imprud", "\u00e8ncia,/nper inconsc"], ["i\u00e8ncia i per mala l", "let./nJo que vo"], ["lia/nque mente"], ["rressin/nentre la p"], ["latja", "/n(ai, qui ho di"], ["ria!)/ni el firmam"], ["ent!", "/nI serem no"], ["saltres/n(ai, qui ho di"], ["ria!)", "", "", "/nels qui tente"], ["rrem.", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "eOVB-ukk9KA", "delay": 0}]}
+{
+    "cancion": "Plany-al-mar",
+    "banda": "joan-manuel-serrat",
+    "escala": "Dm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A",
+                    "A7",
+                    "A7",
+                    "B",
+                    "G",
+                    "G",
+                    "E",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en e",
+            "spañol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "ta es ",
+            "",
+            "una ",
+            "",
+            "canción en español de rock ",
+            "argentino.  ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "ta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es ",
+            "una c",
+            "a",
+            "n",
+            "c",
+            "ión en ",
+            "e",
+            "s",
+            "p",
+            "a",
+            "ñ",
+            "de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta ",
+            "es una ",
+            "canción en español de rock arg",
+            "entino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en esp",
+            "añol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. "
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "eOVB-ukk9KA",
+            "delay": 2000.0
+        }
+    ],
+    "calidad": 1
+}

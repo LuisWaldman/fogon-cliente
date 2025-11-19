@@ -2,185 +2,215 @@
     "cancion": "beatle",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A#",
+                    "D",
+                    "G",
+                    "Eb",
+                    "G",
+                    "Eb"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "G",
                     "Em",
-                    "G",
-                    "Em",
-                    "Am",
-                    "Eb",
-                    "F",
-                    "G"
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
                     "G",
-                    "D",
-                    "Bm",
-                    "C",
                     "G",
-                    "D",
-                    "G"
+                    "G",
+                    "G",
+                    "Em",
+                    "Eb",
+                    "Eb"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F#",
-                    "F",
-                    "Em",
-                    "G"
+                    "Eb",
+                    "C",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "G",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
-                    "Bm",
+                    "G",
+                    "G",
                     "G",
                     "G",
                     "Em",
-                    "G"
+                    "Eb",
+                    "Eb"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
+                    "Eb",
+                    "G",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "G",
+                    "D",
                     "Em",
-                    "Am",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "Eb",
-                    "F",
                     "Eb",
-                    "F",
                     "Eb",
-                    "G"
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Eb"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            2,
-            2,
             2,
             3,
-            4
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "se que vos me am",
-            "as/n"
-        ],
-        [
-            "sabes que yo te ",
-            "amo mi amor por vos es unic",
-            "o/n"
-        ],
-        [
-            "pero no es mi u",
-            "nico amor",
-            "/n"
-        ],
-        [
-            "buenas noches la p",
-            "asamos muy bien nos podriam",
-            "os volver a ver",
-            "/n"
-        ],
-        [
-            "y ella supo que el pen",
-            "dejo flasheo y por las dud",
-            "as le dijo otra vez:",
-            "/n"
-        ],
-        [
-            "se que vos me am",
-            "as/n"
-        ],
-        [
-            "sabes que yo te amo mi",
-            " amor por vos es unico",
-            "/n"
-        ],
-        [
-            "pero no es mi u",
-            "nico amor",
-            "/n"
-        ],
-        [
-            "Pueblo-chico-infier",
-            "no-grande, ¿sabés? Si se en",
-            "teran tus padres esta vez",
-            "/n"
-        ],
-        [
-            "voy a terminar e",
-            "n problemas y yo no quiero",
-            " líos con la ley.",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "asi va a ser mejor",
+            "Est",
+            "a es una canción en español de rock argentino. ",
+            "/n"
+        ],
+        [
+            "Se que ",
+            "vos me ama",
+            "s, sabes que ",
+            "yo te amo, me amo por ",
+            "vos es único, ",
+            "pero no es mi ú",
+            "nico amor. /n"
+        ],
+        [
+            "Buenas noche",
+            "s, la pasamos muy bien",
+            ", nos podríamos vol",
+            "ver ver ",
+            "ella sup ",
+            "que el buen dejo flasho ",
+            "por las dudas le di",
+            "jo otra vez. /n"
+        ],
+        [
+            "Se que vos ",
+            "me amas ",
+            "sabes que yo ",
+            "te amo, me amo por ",
+            "vos es único, ",
+            "pero no es mi úni",
+            "co amor. /n"
+        ],
+        [
+            "Hola, chico infi",
+            "erno grande, sabes si ",
+            "se te dan tus padres e",
+            "sta vez, ",
+            "voy termina ",
+            "el problema si yo ",
+            "no quiero líos con ",
+            "la ley. ",
+            "tú, así va ser ",
+            "mejor, ",
+            "me conoces ",
+            "muy bien, ",
+            "no me sigas, ",
+            "no pierdas tu tiempo, ",
+            "soy libre vos t",
+            "ambién. ",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "me conoces muy bie",
-            "n",
-            "",
-            "/n"
+            "Se que vos me ",
+            "amas,  ",
+            "sabes  que yo te ",
+            "amo, me amo por vos es ú",
+            "nico, per",
+            "o no es mi único a",
+            "mo",
+            "r. /n"
         ],
         [
-            "no me siguas no pierda",
-            "s tu tiempo/n"
-        ],
-        [
-            "soy libre y",
-            " vos tambien",
-            "/n"
-        ],
-        [
-            "se que vos me amas",
-            "/n"
-        ],
-        [
-            "sabes que yo te amo",
-            " mi amor por vos es unico",
-            "/n"
-        ],
-        [
-            "pero no es mi unico",
-            ", per",
-            "o no es mi unico, ",
-            "pero no",
-            " es mi unico ...amor",
-            ""
+            "Yeah! "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "7XrJCLlJiNY",
-            "delay": 0
+            "delay": 12000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

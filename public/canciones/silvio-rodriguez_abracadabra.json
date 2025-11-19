@@ -1,1 +1,361 @@
-{"cancion": "abracadabra", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "Eb", "C", "Eb", "C", "Eb", "D", "G#", "F", "G", "C", "Eb", "C", "Eb", "C", "Eb", "C", "Eb", "D", "G#", "F", "G", "C", "Eb", "C", "Eb", "C", "Eb", "Fm7", "F", "C", "Eb", "Fm7", "F", "C", "Eb", "Fm7", "F", "C", "Eb", "F", "G", "C", "Eb", "Fm7", "F", "C", "Eb", "Fm7", "F", "C", "Eb", "Fm7", "F", "C", "Eb", "F", "G", "C", "F7+", "C", "F7+", "Am", "G", "F", "Em", "Dm", "A7m(5+)", "Am5+", "Am", "Am", "G", "F", "C", "Em", "F", "G", "C", "Eb", "F", "G", "C", "Eb", "G", "F", "Am", "G", "F", "Em", "Dm", "A7m(5+)", "Am5+", "Am", "Am", "G", "F", "C", "Em", "F", "G", "C", "Eb", "C", "Eb", "C", "Eb", "C", "Eb", "D", "G#", "F", "G", "C", "Eb", "C", "Eb", "C", "Eb", "C", "Eb", "D", "G#", "F", "G", "C", "Eb", "D", "G#", "G", "C", "Eb", "D", "G#", "G", "C", "Eb", "D", "G#", "G", "F", "C"]}], "orden_partes": [0]}, "letras": [[], ["Una muje", "r por despe", "cho - o por placer ", "-/nEnte"], ["rr\u00f3 en un jar", "d\u00edn un coco ", "seco moj", "ado en carm\u00ed", "n.", "", "", "/n"], ["Luego un riva", "l, narcotra", "ficando el mal", ", escup\u00eda", " con ron", "/nY alfiler"], ["eaba un feli", "z coraz\u00f3", "n.", "", "", "/n"], ["Yo no se", "/n"], ["C\u00f3mo hay quien mal", "versa la vid", "a", "/n"], ["C\u00f3mo hay quien inv", "oca una h\u00e9", "rida", "/n"], ["Como pueden gast", "ar el amo", "r.", "", "", "/n"], ["Yo no se", "/n"], ["(como si no falta", "ran cade", "nas;", "/n"], ["Como si nos sobr", "aran las cena", "s,", "/n"], ["como si diera di", "cha el dolo", "r.)", "", "", "/n"], ["Yo no se", "/nsi el mal tiempo trae m"], ["ala fe;", "/nSi la desespera"], ["ci\u00f3n hace ", "blanco y se c", "ierran los lai", "cos cole", "gios;", "", "/nSi se vu"], ["elve al sorti", "l\u00e9gio", "", "/nY aprendices de del"], ["f\u00edn creen l", "legar a me", "rl\u00edn.", "/n"], ["Yo no se", "", "/nsi el mal t"], ["iempo trae m", "ala fe,", "", "/nPero a m"], ["\u00ed lo que me em", "bruja es vol", "ar/nY hechi"], ["zarme con tu", "s sortil", "egios:", "", "/nsoy bri"], ["llante en tu co", "legio;", "", "/nSubo nota en el a"], ["mor, vu", "elo all\u00ed, como a", "l sol ", "/nun colib"], ["r\u00ed.", "", "", "/n"], ["Abracada", "bra, curande", "ra mi palab", "ra, todo mal ", "pone bien,", "/nSana del"], [" odio y vacu", "na tambi", "n.", "", "", "/n"], ["Abracada", "bra, siga la ", "pata en su cabr", "a/nGi"], ["rasol, alhel", "\u00ed,/nLa mari"], ["posa bes", " al colibr", "\u00ed,", "", "", "", "/nal colib"], ["r\u00ed,", "", "", "", "/nAl colib"], ["ri,", "", "", "", "/nal colib"], ["r\u00ed.", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "LMAryJ9y9Ps", "delay": 0}]}
+{
+    "cancion": "abracadabra",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "Eb",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Eb",
+                    "Eb",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Eb",
+                    "Eb",
+                    "C",
+                    "Eb",
+                    "Eb"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Eb",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Eb",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "F",
+                    "C",
+                    "C",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "F7+",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "F",
+                    "C",
+                    "C",
+                    "Eb",
+                    "C",
+                    "C",
+                    "Eb",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "Dm",
+                    "A7m(5+)",
+                    "A7m(5+)",
+                    "Am",
+                    "Am",
+                    "G",
+                    "F",
+                    "F",
+                    "C",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "C",
+                    "Eb",
+                    "C",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "Eb",
+                    "Eb",
+                    "Am",
+                    "Eb",
+                    "Eb",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    "letras": [
+        [
+            "Una ",
+            "mujer ",
+            "por despecho, por p",
+            "lacer enterró ",
+            "en un jardín un ",
+            "poco  seco, mo",
+            "jado en carmín. ",
+            "",
+            "/n"
+        ],
+        [
+            "Luego un ",
+            "rival, nar",
+            "cotraficando el m",
+            "ar, escupí ",
+            "con ron alfi",
+            "leriaba un fel",
+            "iz corazón. ",
+            "",
+            "/n"
+        ],
+        [
+            "Yo no sé ",
+            "cóm",
+            "o hay quien malve",
+            "rsa la vida ",
+            "cóm",
+            "o hay quien invoca ",
+            "una herida, ",
+            "có",
+            "mo pueden gastar ",
+            "el amor. ",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "no sé ",
+            "cómo  ",
+            "si nos faltaran c",
+            "adenas, ",
+            "cómo si ",
+            "nos sobraran las ",
+            "cenas, ",
+            "cómo si ",
+            "diera dicha el d",
+            "olor. ",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "no sé ",
+            "si ",
+            "el mal tiempo trae m",
+            "ala fe, ",
+            "si ",
+            "la desesper",
+            "ación hace blan",
+            "co se cierran ",
+            "los laicos c",
+            "olegios. /n"
+        ],
+        [
+            "Si ",
+            "se vuelve al so",
+            "rtileg",
+            "",
+            "aprendices del ",
+            "fin cr",
+            "een llega",
+            "r \n\nM",
+            "erlin. ",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "no sé ",
+            "si ",
+            "el mal tiempo tra ",
+            "mala fe, ",
+            "p",
+            "ero mí lo que me ",
+            "embruja es vol",
+            "ar hechiza",
+            "rme con tus so",
+            "rtilegios. /n"
+        ],
+        [
+            "Soy ",
+            "brillante en tu ",
+            "col",
+            "egi",
+            "subo nota en ",
+            "el amor",
+            ", vuelo a",
+            "llí com",
+            "o al sol ",
+            "un ",
+            "c",
+            "olibrí",
+            "",
+            "/n"
+        ],
+        [
+            "Abra ",
+            "cadabra,  cura en",
+            "tera mi palabra, ",
+            "todo mal pon ",
+            "bien, sana del o",
+            "dio vacun ",
+            "también. ",
+            "",
+            "/n"
+        ],
+        [
+            "Abra ",
+            "cadabra,  siga la ",
+            "patada en su cabra ",
+            "tira el sol al h",
+            "elí, la mari",
+            "posa besó al ",
+            "colibrí. /n"
+        ],
+        [
+            "Al colib",
+            "rí. ",
+            "/n"
+        ],
+        [
+            "Al colibr",
+            "í. ",
+            "",
+            "/n"
+        ],
+        [
+            "Al colib",
+            "rí. ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LMAryJ9y9Ps",
+            "delay": 5000.0
+        }
+    ],
+    "calidad": 1
+}

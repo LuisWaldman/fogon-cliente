@@ -2,52 +2,83 @@
     "cancion": "clavador-de-querubin",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "E",
                     "B7",
                     "B7",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "F#7",
+                    "F#7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C#",
-                    "F#7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
                     "B7",
                     "E",
-                    "B7",
-                    "E",
-                    "B7",
-                    "E"
-                ]
-            },
-            {
-                "nombre": "parte3",
-                "acordes": [
-                    "F#7",
-                    "B7",
-                    "F#7",
-                    "B7",
+                    "Am",
+                    "Am",
                     "Am",
                     "E",
-                    "B7",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
                     "E"
                 ]
             }
         ],
         "orden_partes": [
-            0,
-            0,
-            1,
-            0,
             0,
             1,
             2
@@ -55,92 +86,74 @@
     },
     "letras": [
         [
-            "ones de cuna al p",
-            "alo/ncuentos de "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "hadas de coge",
-            "r/nCanci"
+            "Canciones d",
+            "e  cuna al palo, cu",
+            "ento  de hadas de co",
+            "ger /n Canciones d",
+            "e  cuna al palo, c",
+            "uento  de hadas de cog",
+            "er /n Rebelliones",
+            "juvenile  po",
+            "r  la falta de c",
+            "onsejos /n Miembros d",
+            "e  sociedad joven, cl",
+            "avado  de qu",
+            "erubí ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ones de cuna al p",
-            "alo/ncuentos de "
-        ],
-        [
-            "hadas de coge",
-            "r/nrebeli"
-        ],
-        [
-            "ones juven",
-            "iles/npor la f"
-        ],
-        [
-            "alta de conse",
-            "jos/n"
-        ],
-        [
-            "miembro de sociedad jo",
-            "ven/nclava"
-        ],
-        [
-            "dor de querub",
-            "n./nDe las Ton"
-        ],
-        [
-            "inas, la melaton",
-            "ina/nde pun"
-        ],
-        [
-            "tero en salavi",
-            "na/nDe las Ton"
-        ],
-        [
-            "inas, la melaton",
-            "ina/nde pun"
-        ],
-        [
-            "tero en salavi",
-            "na/nde tanto en t"
-        ],
-        [
-            "anto atonta t",
-            "into/ntonta a "
-        ],
-        [
-            "tintos, a tetas to",
-            "ntas/n"
-        ],
-        [
-            "miembro de sociedad jo",
-            "ven/nclava"
-        ],
-        [
-            "dor de querub",
-            "n./nRompe c"
-        ],
-        [
-            "anto el angel",
-            "ito         )/narranc"
-        ],
-        [
-            "ó por un ar",
-            "cángel         )/nse envic"
-        ],
-        [
-            "ió con los lac",
-            "tantes    )/nclavad"
-        ],
-        [
-            "or de querub",
-            "n            )"
+            "D",
+            "e puntero en /n Sa",
+            "ladín /n De p",
+            "unt",
+            "er en /n Sala",
+            "dín /n Tanto entan",
+            "t  tontatito, t",
+            "ontatito  tet",
+            "atonta /n Miem",
+            "bro  de sociedad joven,",
+            "clavador de qu",
+            "erubí /n Miembr",
+            "o  de sociedad joven, c",
+            "lavado  de que",
+            "rubí /n Rompetand",
+            "al angelito,",
+            "arrancó con un ar",
+            "cángel /n Se vicio c",
+            "o  lo latante,",
+            "clavador de queru",
+            "bí /n Rompetan",
+            "d  al angelito,",
+            "arrancó con un ar",
+            "cángel /n Se vicio c",
+            "o  lo latante,",
+            "clavador de qu",
+            "erubí ",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "F-vYtN1QHnI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

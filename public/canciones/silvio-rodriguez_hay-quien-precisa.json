@@ -1,1 +1,489 @@
-{"cancion": "hay-quien-precisa", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G", "C", "Em"]}, {"nombre": "parte2", "acordes": ["F", "D/F#", "G", "F", "C", "G", "C", "G"]}, {"nombre": "parte3", "acordes": ["F", "Em", "F", "G", "B7", "E", "A", "D"]}, {"nombre": "parte4", "acordes": ["G", "C", "F", "Dm", "E", "C", "Dm", "E"]}], "orden_partes": [0, 1, 2, 3]}, "letras": [["os a\u00f1os pasan, si", "; la vida no/ne"], ["l mundo estalla hermos", "a alrededor/ns"], ["i el coraz\u00f3n mortal ", "me deja de la", "tir/ne"], ["n ese instante hay quien sal", "to a viv", "ir./nA)L"], ["os a\u00f1os pasan", ", si; el fuego no/ne"], ["l fuego volver\u00e1 en los hij", "os del sol/ns"], ["i el pecho se apago por un so", "plo senil/ne"], ["l gran incendio acudir", " en cien mil./nB)H"], ["ay quien precisa una can", "ci\u00f3n de amor/nh"], ["ay quien precisa un canto de", " amistad/nh"], ["ay quien precisa remo", "ntarse al sol/np"], ["ara cantar la mayo", "r liberta", "d.", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "GHU15ZVRStw", "delay": 0}]}
+{
+    "cancion": "hay-quien-precisa",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "C",
+                    "D",
+                    "C",
+                    "C",
+                    "F",
+                    "A",
+                    "G",
+                    "E",
+                    "A",
+                    "C",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "A",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "D/F#",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "B7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F",
+                    "F",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Em",
+                    "F",
+                    "F",
+                    "F",
+                    "B7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F",
+                    "A",
+                    "A",
+                    "G",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta es una canción en español de rock argentino. \n\nEs",
+            "ta es una canción en español de rock argentino. \n\nEsta es una canción en español ",
+            "de ",
+            "",
+            "",
+            "rock argentino. /n"
+        ],
+        [
+            "Est",
+            "a es una canción ",
+            "en ",
+            "",
+            "",
+            "español ",
+            "de ",
+            "",
+            "rock argentino. /n"
+        ],
+        [
+            "Los a",
+            "ños pasan si ",
+            "la vida no /n"
+        ],
+        [
+            "El mundo es",
+            "talla hermoso ",
+            "alrededor  \n\nSi ",
+            "el corazón mo",
+            "rtal me dej",
+            "a de latir \n\nEn ",
+            "ese instante hay quien ",
+            "salto  viv",
+            "ir \n\nLos añ",
+            "os pasan si ",
+            "el fuego no /n"
+        ],
+        [
+            "El fuego volv",
+            "erá en los hijos del ",
+            "sol \n\nSi ",
+            "el pecho se ap",
+            "agó por un sopl ",
+            "senil \n\nEl gra",
+            "n incendio acud",
+            "irá en cien mil /n"
+        ],
+        [
+            "Hay quien prec",
+            "isa una canción ",
+            "de amor /n"
+        ],
+        [
+            "Hay quien precisa ",
+            "un canto de a",
+            "mistad \n\nHay ",
+            "quien precisa rem",
+            "ontarse al sol /n"
+        ],
+        [
+            "Para c",
+            "antar la may",
+            "or libertad /n"
+        ],
+        [
+            "Hay quien preci",
+            "sa una canción ",
+            "de paz \n\nHay ",
+            "quien precisa el c",
+            "anto de un fus",
+            "il \n\nHay quie",
+            "n precisa una evi",
+            "dencia más \n\nP",
+            "ara tene",
+            "r la razón de ",
+            "vivir ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Los años pasan ",
+            "si la vida ",
+            "no \n\nEl m",
+            "undo estalla herm",
+            "oso alrededor /n"
+        ],
+        [
+            "Si el coraz",
+            "ón mortal me d",
+            "eja de latir /n"
+        ],
+        [
+            "En ese instante hay q",
+            "uien salto v",
+            "ivir \n\nLos a",
+            "ños pasan si ",
+            "el fuego no /n"
+        ],
+        [
+            "El fuego vo",
+            "lverá en los hijos ",
+            "del sol \n\nSi ",
+            "el pecho se ap",
+            "agó por un sopl",
+            "o senil \n\nEl gra ",
+            "incendio acudirá ",
+            "en cien mil /n"
+        ],
+        [
+            "Hay quien preci",
+            "sa una canción de ",
+            "amor \n\nHay ",
+            "quien precisa un c",
+            "anto de am",
+            "istad \n\nHay quien ",
+            "precisa  remont",
+            "arse al sol /n"
+        ],
+        [
+            "Para cant",
+            "ar la mayor lib",
+            "ertad \n\nHay qu",
+            "ien precisa una can",
+            "ción de paz /n"
+        ],
+        [
+            "Hay quien pre",
+            "cisa el canto de ",
+            "un fusil /n"
+        ],
+        [
+            "Hay quien precisa una ",
+            "evidencia ",
+            "más \n\nPara ",
+            "tener  la r",
+            "azón de v",
+            "ivir ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Los añ",
+            "os pasan si ",
+            "lo bello e",
+            "stá \n\nLo ",
+            "bello  está invi",
+            "tando irlo ",
+            "tomar  \n\nSi ",
+            "el sueño e",
+            "nvejeció \n\nFue ",
+            "triste para ",
+            "él \n\nLo b",
+            "ello nunca más ",
+            "será /n"
+        ],
+        [
+            "De ",
+            "aqu",
+            "el ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 129,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "GHU15ZVRStw",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

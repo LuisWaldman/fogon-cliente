@@ -2,103 +2,283 @@
     "cancion": "muy-putita",
     "banda": "babasonicos",
     "escala": "Am",
-    "bpm": 60,
+    "bpm": 89,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
-                    "C",
                     "F"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
+                    "F",
                     "Am",
-                    "C",
-                    "F",
-                    "C",
-                    "G",
-                    "F",
-                    "E"
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
                     "Am",
-                    "F",
+                    "Am",
+                    "C",
+                    "C",
+                    "C",
                     "C",
                     "F",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Sin piedad dejas atrás/nun s"
-        ],
-        [
-            "équito de vana idolatr",
-            "ía",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "sos tan espectacular/nque n"
+            "Est",
+            "a  es una canción en español de rock argentino./n"
         ],
         [
-            "o podes ser mía nada m",
-            "ás/nt"
+            "S",
+            "i  piedra dejas atrás u",
+            "n  sequito de vane",
+            "dolatrí /n"
         ],
         [
-            "enés que s",
-            "er de todos./n"
+            "S",
+            "o  tan espectacular q",
+            "u  no podés ser mía na",
+            "d más /n T",
+            "debes crecer t",
+            "odo /n La piel, lo",
+            "labios donde la",
+            "rosa  la ba",
+            "mbul /n"
         ],
         [
-            " La piel,los lab",
-            "ios/n y donde r"
+            "Serán mi",
+            "prado  mi ve",
+            "rge /n"
         ],
         [
-            "oza la bambu",
-            "la/n"
+            "Ya",
+            "s  que camino la",
+            "fama /n No significa n",
+            "ada  si no hay una v",
+            "isió /n ¿Cuá",
+            "l  es hacerte muy pu",
+            "tita /n Probar tu be",
+            "setit  con toda devoc",
+            "ió /n Ya s",
+            "é,  ya s",
+            "é /n ¿Cuá",
+            "es? /n Ya",
+            "s /n M",
+            "e  renace esa impresión d",
+            "e  ser la acción que encarna la t",
+            "ernura ",
+            "",
+            "tu alrededor no hay hum",
+            "ildad  la veruz es caricatura/n"
         ],
         [
-            " serán mi pr",
-            "ado, mi verge",
-            "l./nYa s"
+            "Te",
+            "debe  crecer to",
+            "d /n La piel, los",
+            "labios donde l",
+            "rosa, la bambula",
+            "/n"
         ],
         [
-            "é, el camino a la fama/nno significa n"
+            "Serán mi p",
+            "rado,  mi ve",
+            "rge /n"
         ],
         [
-            "ada si no hay una misión/n¿cuá"
+            "Ya s",
+            "é  que camino la",
+            "fam /n No significa n",
+            "ada  si no hay una vi",
+            "sió /n ¿Cuál",
+            "e  hacerte muy p",
+            "utita /n Probar tu be",
+            "setit  con toda devo",
+            "ció /n Ya s",
+            "é,  ya s",
+            "é /n ¿Cu",
+            "á es? /n Ya s",
+            "é ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "l es? hacerte muy putita,/nprobar tu gall"
+            "Ya s",
+            "é /n Ya s",
+            "é /n ¿Cuá",
+            "es? /n Ya s",
+            "é /n Ya s",
+            "é /n Ya s",
+            "é /n ¿Cuá",
+            "es?",
+            "/n"
         ],
         [
-            "etita con toda devoción."
+            "Subtítulos realizados por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "7siu5MQ_8s0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

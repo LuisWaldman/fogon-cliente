@@ -1,1 +1,404 @@
-{"cancion": "blanco", "banda": "silvio-rodriguez", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "G4", "F7", "Em9", "D", "D4", "D", "D9", "G7", "G", "G6", "G4", "F7", "Em9", "E", "C#m", "G#m", "G#m4", "G#m", "A", "B7", "E", "E4", "E", "E", "C#m", "G#m", "G#m4", "G#m", "A", "B7", "G#m", "G#m4", "G#m", "C#m", "F#", "B", "G#", "C#m", "F#", "B", "G#", "C#m", "F#", "B", "A", "B7", "G#m", "F#m", "Am", "A", "B7", "G#m", "F#m", "Am", "E"]}], "orden_partes": [0]}, "letras": [[], ["Todos las", " noches se ", "pinta de b", "lanco/n"], ["y a cada min", "uto recibe", " un brochazo", " en la piel", ",/nsu espalda, sus manos, su ro"], ["stro./nB) "], ["Ahora est\u00e1", " sin salir, casi nadie ", "merece ", "su amor,", "/n"], ["pero saldr", " cuando ", "vayas por ", "\u00e9l.", "/nAho"], ["ra te esper", "a en su tumba ambulante", ", llena", " de colo", "r,/n"], ["hasta que t", "u la desh", "agas de", " amor.", "/nC) A"], ["hora te espera de", " noche en su cuarto/n"], ["hasta que quieras en", "trar a salvarlo/n"], ["de lo que nunca h", "a elegido  y a", "rrastra con el", "./ne"], ["res la vieja navaja", " que espera su ", "piel./n"], ["quiere arra", "ncar de su ti", "erra una ", "cruz.", "/n"], ["con veintip", "ico de muerte", "s su amor", "./n"], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "4hYB7KXkGx8", "delay": 0}]}
+{
+    "cancion": "blanco",
+    "banda": "silvio-rodriguez",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "G4",
+                    "G4",
+                    "G4"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C#m",
+                    "G4",
+                    "G#m",
+                    "E4",
+                    "D",
+                    "D",
+                    "D9",
+                    "E",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G7",
+                    "G#m4",
+                    "G4",
+                    "F7",
+                    "E",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G4",
+                    "G4",
+                    "C#m",
+                    "C#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G#m",
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "C#m",
+                    "G#m",
+                    "G#m",
+                    "B7",
+                    "B7",
+                    "G#m4",
+                    "G#m4",
+                    "E",
+                    "F#",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C#m",
+                    "C#m G#m",
+                    "C#m",
+                    "C#m",
+                    "G#",
+                    "C#m",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "E",
+                    "F7",
+                    "F7",
+                    "E",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G#m",
+                    "G",
+                    "B",
+                    "B",
+                    "G#",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D",
+                    "C#m",
+                    "E",
+                    "C#m",
+                    "G#m",
+                    "G#m",
+                    "F#",
+                    "G#m4",
+                    "G#m4",
+                    "G#m4",
+                    "G#m4",
+                    "G#m4",
+                    "G#m4",
+                    "G#m4",
+                    "G#m4",
+                    "G#m4"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "G#m",
+                    "C#m",
+                    "B7",
+                    "B7",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ]
+    },
+    "letras": [
+        [
+            "La próxima canción ",
+            "que ",
+            "les voy can",
+            "tar ",
+            "se lla",
+            "ma \n\nBlanco. /n"
+        ],
+        [
+            "Blanco  es la canción que les voy cantar, la próxima ca",
+            "nción. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Todos los dí",
+            "as se pinta de bla",
+            "nco, sale la call ",
+            "llena de colores ",
+            "cada min",
+            "uto recibe un brochazo en ",
+            "la piel, ",
+            "su espada, sus mano",
+            "s, su rost",
+            "ro. /n"
+        ],
+        [
+            "Van siendo invad",
+            "idos por luces sombr",
+            "as, se le van encendiend ",
+            "de fiebre de frí",
+            "o, de forma que cuando ",
+            "regresa se mira no ",
+            "está. /n"
+        ],
+        [
+            "Mal vive bajo su ",
+            "avalan",
+            "cha, mal ",
+            "vive ba",
+            "jo su av",
+            "alanch",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "hora est ",
+            "sin salir, casi n",
+            "adie merece su a",
+            "mor, p",
+            "ero saldrá cu",
+            "ando vayas por ",
+            "él. /n"
+        ],
+        [
+            "Aho",
+            "ra te espera en ",
+            "su tumba ambul",
+            "ante llena de col",
+            "or, ",
+            "hasta que tú la d",
+            "eshagas de am",
+            "or. \n\nA",
+            "hora te esp",
+            "era de noche en su cua",
+            "rto hasta que quiera ",
+            "entrar salvar",
+            "lo de lo que nunca he el",
+            "egido arrastra",
+            "rá con él. /n"
+        ],
+        [
+            "Tú ",
+            "que de un beso lo co",
+            "nfiguraste, tú que le ",
+            "echaste más blanco ",
+            "lloraste,  eres la ",
+            "vieja navaja que e",
+            "spera su piel",
+            ". /n"
+        ],
+        [
+            "Quie",
+            "re blasfemar con",
+            "tigo de \n\nDios, de los hom",
+            "bres de él, ",
+            "quiere ll",
+            "egar más allá de la ",
+            "luz",
+            ". /n"
+        ],
+        [
+            "Quiere dest",
+            "ruir las flores ",
+            "con que se engañaro ",
+            "los dos, q",
+            "uiere arrancar ",
+            "de su tierra una c",
+            "ruz./n"
+        ],
+        [
+            "Quie",
+            "re olvidar que ha crecido e",
+            "ducado, quiere ",
+            "tu hijo para em",
+            "pujarlo, como ",
+            "un papalote invencible ",
+            "vencedor del su",
+            "ereño. /n"
+        ],
+        [
+            "Quiere de",
+            "cirle cada vec",
+            "ino que salga de ",
+            "sus miserables pa",
+            "redes, que tome la ",
+            "vida de ustedes que no ",
+            "hay escondrijo ",
+            "espera que va",
+            "yas por ",
+            "él. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que no te ",
+            "espera mujer que ",
+            "vayas hacer el ",
+            "amor,  ",
+            "más bien la guerra ",
+            "es lo que quiere h",
+            "acer. /n"
+        ],
+        [
+            "Con ",
+            "veintipico  de ",
+            "fechas respal",
+            "da su sana elecc",
+            "ión, con v",
+            "eintipico de m",
+            "uertes su am",
+            "or. ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 129,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "4hYB7KXkGx8",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

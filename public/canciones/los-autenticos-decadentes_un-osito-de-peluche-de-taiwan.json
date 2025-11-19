@@ -2,18 +2,42 @@
     "cancion": "un-osito-de-peluche-de-taiwan",
     "banda": "los-autenticos-decadentes",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "F#",
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "D7M"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
                     "G6",
                     "D",
-                    "G9"
+                    "D",
+                    "D",
+                    "D",
+                    "G6",
+                    "G6"
                 ]
             },
             {
@@ -21,17 +45,17 @@
                 "acordes": [
                     "D",
                     "Bm",
-                    "G",
-                    "A"
+                    "D",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A",
                     "D",
-                    "G6",
                     "D",
-                    "G6"
+                    "Bm"
                 ]
             },
             {
@@ -39,205 +63,224 @@
                 "acordes": [
                     "D",
                     "G",
+                    "G",
                     "D",
-                    "G9",
-                    "D7M",
-                    "G7M",
-                    "D7M",
-                    "G9"
+                    "D",
+                    "D",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
                     "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D7M",
+                    "D7M",
+                    "G7M",
+                    "D7M"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
                     "Bm",
-                    "C5"
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "D",
+                    "Bm",
+                    "G",
+                    "G",
+                    "D",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "G",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D7M"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            1,
             1,
             2,
             3,
-            1,
-            1,
-            1,
-            1,
-            1,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
-        [],
         [
-            "entro de tus ojos veo un la",
-            "go/nDonde un hada se desn"
-        ],
-        [
-            "uda/nPara que la adore el S"
-        ],
-        [
-            "ol/nL"
-        ],
-        [
-            "a melancolía de la t",
-            "arde/nMe ha ganado el coraz"
-        ],
-        [
-            "ón/nY se nubla de d"
-        ],
-        [
-            "udas/nS"
-        ],
-        [
-            "on esos momentos/nEn que "
-        ],
-        [
-            "uno se pone a reflexiona",
-            "r/nY alumbra una torm"
-        ],
-        [
-            "enta/nT"
-        ],
-        [
-            "odo es tan tranquilo/nQue el sil"
-        ],
-        [
-            "encio anuncia el ruido/nDe la c"
-        ],
-        [
-            "alma que antecede al hura",
-            "cán/n"
-        ],
-        [
-            "  De repente no puedo respira",
-            "r/nNecesito un poco de libert"
-        ],
-        [
-            "ad/nQue me d"
-        ],
-        [
-            "ejes en paz/n"
-        ],
-        [
-            "  Siempre fue mi manera de se",
-            "r/nNo me trates de comprend"
-        ],
-        [
-            "er/nNo hay nada que se pueda hac"
-        ],
-        [
-            "er/n"
-        ],
-        [
-            "  Al ratito ya te empiezo a extrañ",
-            "ar/nMe preocupa que te pueda perd"
-        ],
-        [
-            "er/nNecesito que te acerques a m"
-        ],
-        [
-            "i/n"
-        ],
-        [
-            "  Un osito de peluche de Taiw",
-            "n/nUna cáscara de nuez en el "
-        ],
-        [
-            "Mar/nSuavecito como alfombra de p"
-        ],
-        [
-            "iel/n[Segunda Part"
-        ],
-        [
-            "e]",
             "",
             "",
-            "/nD"
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "entro de mi lecho/nDuerme un "
+            "Dent",
+            "ro de tus ojos veo un la",
+            "go donde una hada se destr",
+            "uda para que el adore ",
+            "el sol. \n\nLa ",
+            "melancolía de la ta",
+            "rde me ha ganado el coraz",
+            "ón se nubla de d",
+            "udas. \n\nSon ",
+            "esos momentos en que ",
+            "uno se pone reflexi",
+            "onar alumbra una tor",
+            "menta. \n\nT",
+            "odo es tan tranquilo que el sil",
+            "encio anuncia el ruido de la ",
+            "calma que antes se der",
+            "uracan. /n"
         ],
         [
-            "ángel que suspira boquiab",
-            "ierto/nEntre nubes de alg"
+            "De repente no puedo respira",
+            "r, necesito un poco de liberta",
+            "d, que te aleje por un tiempo de mi lado que me ",
+            "dejes en paz. /n"
         ],
         [
-            "odón/nJ"
+            "Siempre estoy en mi manera de se",
+            "r, no me trate de comprende",
+            "r, no hay nada que se pueda hace",
+            "r, soy un poco paranoico, lo siento /n"
         ],
         [
-            "unto con la luz de la mañ",
-            "ana/nSe despierta la raz"
+            "Al ratito ya te empiezo extr",
+            "añar, me preocupa que te pueda perd",
+            "er, necesito que te acerques ",
+            "mí para sentir el calor de tu cuerp",
+            "o. \n\nUn osito de peluche de \n\nTa",
+            "iwán, una cáscara de nueces en el ",
+            "mar, suavecito como alfombra de ",
+            "piel, delicioso como el dulce de l",
+            "eche. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ón/nY amanece la d"
+            "Dentro de mi lecho du",
+            "erme un ángel que suspira, b",
+            "oque abierto entre nubes de ",
+            "algodón. /n"
         ],
         [
-            "uda/n"
+            "Junto con la luz de ",
+            "la mañana se despierta la ",
+            "razón amane",
+            "ce la duda. /n"
         ],
         [
-            "  De repente no puedo respira",
-            "r/nNecesito un poco de libert"
+            "De repente no puedo re",
+            "spirar, necesito un poco de ",
+            "libertad,  que te aleje por un tiempo de ",
+            "mi lado que me dejes en pa",
+            "z. \n\nSiempre estoy en mi maner",
+            "a de ser, no me trate de co",
+            "mprender, no hay nada que se p",
+            "ueda hacer, soy un poco paranoico, ",
+            "lo siento. \n\nAl ratito ya te empiez ",
+            "extrañar, me preocupa que te pued",
+            "a perder, necesito que te acerq",
+            "ues mí para sentir el calor ",
+            "de tu cuerpo. \n\nUn osito de peluche ",
+            "de \n\nTaiwán, una cáscara de nue",
+            "ces en el mar, suavecito como alfo",
+            "mbra de piel, delicioso como el du",
+            "lce de leche. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ad/nQue me d"
+            "Un osito de pel",
+            "uche de \n\nTaiwán, una cáscara de ",
+            "nueces  en el mar, suavecito como al",
+            "fombra de piel, delicioso como el ",
+            "dulce de leche. ",
+            "/n"
         ],
         [
-            "ejes en paz/n"
+            "Un osito de p",
+            "eluche de \n\nTaiwán. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "  Siempre fue mi manera de se",
-            "r/nNo me trates de comprend"
-        ],
-        [
-            "er/nNo hay nada que se pueda hac"
-        ],
-        [
-            "er/n"
-        ],
-        [
-            "  Al ratito ya te empiezo a extrañ",
-            "ar/nMe preocupa que te pueda perd"
-        ],
-        [
-            "er/nNecesito que te acerques a m"
-        ],
-        [
-            "i/n"
-        ],
-        [
-            "  Un osito de peluche de Taiw",
-            "n/nUna cáscara de nuez en el "
-        ],
-        [
-            "Mar/nSuavecito como alfombra de p"
-        ],
-        [
-            "iel/n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "WKM5jRAUgvU",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

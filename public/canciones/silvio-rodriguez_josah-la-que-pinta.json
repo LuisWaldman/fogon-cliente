@@ -1,1 +1,481 @@
-{"cancion": "josah-la-que-pinta", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "F", "C", "F", "C", "F", "C", "F", "C", "F", "C", "F", "C", "Am", "Am/G", "F", "Dm", "G", "C", "F", "G", "C", "F", "G", "G", "C", "Am", "Am/G", "F", "C", "F", "G", "C", "Bb", "G", "C", "F", "G", "Am", "Am/G", "C", "Am/F#", "D", "G", "F", "C", "G", "C", "F", "G", "C", "Bb", "G", "C", "F", "G", "C", "Bb", "G", "C", "F", "G", "Am", "Am/G", "F", "G", "Bb", "C"]}], "orden_partes": [0]}, "letras": [["Suced", "i\u00f3 una vez,  ha", "ce tiempo, hubo un militar", ",/n"], ["y el e", "j\u00e9rcito", " fue una cadena de descubrimientos", "./n B  No pod\u00eda pe"], ["rderse un amanece", "r/n pu"], ["es la diana era antes de la claridad", "/n y"], [" se hiz", "o co", "stumbre del d\u00eda sa", "lir con e", "l so", "l./nB1  Vino"], [" de A ciudad donde viven los magos", "", "/ny lleg"], [" con el alma colgada en el ", "cinto,", "/n"], [" sin saber ", "que un soldado en el pecho no tiene fusil.", "", "", "/n C  '"], ["Josah, A que p", "inta, d\u00e9j", "ate ver", "'", "", "/n "], ["dec\u00eda el soldad", "o, dec\u00eda", " el viento", "", "/n"], ["  y l", "a natural", "eza con lenguaje ", "que a", "\u00fan se puede oir.", "", "/n D  Jos"], ["ah, A que pinta, d\u00e9", "jate ve", "r.", "", "", "/n Josa"], ["h, la que pinta, d", "\u00e9jate ", "ver.", "", "", "/n Josa"], ["h, la que pinta, d", "\u00e9jate v", "er.", "", "/n "], ["D\u00e9ja", "te ", "  ve", "r."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "jYtU2R-wyuI", "delay": 0}]}
+{
+    "cancion": "josah-la-que-pinta",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#",
+                    "G#",
+                    "C",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am/G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "Dm",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am/G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "C",
+                    "Am/F#",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "C"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "ucedió que una vez hac ",
+            "tiempo hubo un mili",
+            "tar ",
+            "el ejercit",
+            "o fue una cadena de ",
+            "descubrimientos /n"
+        ],
+        [
+            "No p",
+            "odía perderse un a",
+            "manecer, pues la vian",
+            "a era antes que la clar",
+            "idad se hizo cost",
+            "umbre del día sali ",
+            "con el sol /n"
+        ],
+        [
+            "Supo c",
+            "osas que solo se aprende ",
+            "así \n\nMadrugando ",
+            "mirando  la hierba ma",
+            "jada se hizo costumbr ",
+            "una forma distint",
+            "a de ver /n"
+        ],
+        [
+            "Suced",
+            "ió que una noche llegó al un",
+            "iverso fiel /n"
+        ],
+        [
+            "Co",
+            "mo una aparición de f",
+            "iguras en el sentimie",
+            "nto /n"
+        ],
+        [
+            "Vino de la ",
+            "ciudad donde vive",
+            "n los mavos llegó ",
+            "con el alma colgad ",
+            "en el cinto \n\nSin sabe",
+            "r que un soldado en el pec",
+            "ho no tiene luc",
+            "ir /n"
+        ],
+        [
+            "En can",
+            "to revolvió espre",
+            "gó los aplomos \n\nPuso tie",
+            "ndas lanas en ",
+            "todos los templos era s",
+            "olo una niña jug",
+            "ando persona ma",
+            "yor ",
+            "/n"
+        ],
+        [
+            "Diosa la que ",
+            "pinta  deja de ",
+            "ver ",
+            "/n"
+        ],
+        [
+            "Decía el so",
+            "ldado, decía el ",
+            "viento ",
+            "la naturaleza con l",
+            "enguaje que aún se ",
+            "puede oír ",
+            "/n"
+        ],
+        [
+            "Sucedió que se hizo ",
+            "tristeza  el sembla",
+            "nte del tiempo /n"
+        ],
+        [
+            "Cada día era ",
+            "un nudo gordiano sin ",
+            "pies ni cabe",
+            "za \n\nLas ",
+            "mañanas dejaron de ",
+            "significar \n\nEn más ",
+            "de una ocasión no se cu",
+            "mplió ver de leer \n\nCada p",
+            "ase era un día de reye",
+            "s en el pulso de un mes /n"
+        ],
+        [
+            "To",
+            "do era \n\nDiosa la ",
+            "que bailaba la noche /n"
+        ],
+        [
+            "Una orquía pagana es",
+            "tallando en la piel \n\nTo",
+            "do era \n\nDiosa la que pin",
+            "ta bailando el amor /n"
+        ],
+        [
+            "Lu",
+            "ego el mundo da vuel",
+            "tas todo regres ",
+            "su cauce /n"
+        ],
+        [
+            "Ya no será ",
+            "soldado \n\nDio",
+            "sa regresó su país /n"
+        ],
+        [
+            "El ",
+            "que era so",
+            "ldado regresó car",
+            "pintero ingeniero de ",
+            "minas quizás box",
+            "eador \n\nAunque nunca ",
+            "regresa  completo el s",
+            "oldado su cas",
+            "a \n\nE",
+            "ntre vías ",
+            "ruidos hayan re",
+            "cuerdos \n\nSe revuelven ga",
+            "vetas, se sonríe al ver los ",
+            "dedos \n\nComo un tiempo ",
+            "que se ha repartido en ",
+            "papeles  fotos ",
+            "/n"
+        ],
+        [
+            "Di",
+            "osa la que pinta dé",
+            "jate ver ",
+            "/n"
+        ],
+        [
+            "Pesil",
+            "la el soldado, ",
+            "pesilla el vient ",
+            "la naturalez ",
+            "con lengua que aún ",
+            "se puede ",
+            "oír /n"
+        ],
+        [
+            "Dios ",
+            "la que pinta déj",
+            "ate ver ",
+            "/n"
+        ],
+        [
+            "Diosa ",
+            "la que pinta déja",
+            "te ver ",
+            "/n"
+        ],
+        [
+            "Diosa la ",
+            "que pinta déjat ",
+            "ver /n"
+        ],
+        [
+            "Déj",
+            "ate ver ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Déjate ver "
+        ]
+    ],
+    "bpm": 92,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "jYtU2R-wyuI",
+            "delay": 6000.0
+        }
+    ],
+    "calidad": 1
+}

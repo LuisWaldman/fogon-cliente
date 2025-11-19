@@ -1,1 +1,377 @@
-{"cancion": "el-barquero", "banda": "silvio-rodriguez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "E", "C#", "F#", "F", "C", "D", "B", "E", "Am", "D/F#", "F", "E", "Am", "D/F#", "D/F#", "Am", "D", "A", "D", "G", "C#7", "F#", "Bm", "A", "D", "Em", "Bm", "C", "D", "Em", "Bm", "C", "F", "A", "F", "D/F#", "Am", "D/F#", "Am", "D/F#", "A"]}], "orden_partes": [0]}, "letras": [["e lanzo tr", "as el mar", "  del", " recuerdo", "/nE"], ["ra un barco pe", "que\u00f1o", "  en", " el tiempo/npero hab\u00ed"], ["a fe,/npero hab\u00eda un raro esp"], ["lendor en sus ojos,/npero hab\u00eda un m\u00edstico"], [" af\u00e1n de por q", "ue,/n"], ["pero hab\u00eda ", "fe./nque ya no "], ["se.", "", "", "/nB)"], ["Ya me c", "anso de ta", "nto habla", "r,/nsi esta "], ["dicho to", "do hasta el fi", "n./n"], ["Que mas r", "uido que el de", " escucha", "r/n"], ["de la v", "ida, todo", " el traj\u00ed", "n.", "/nmiren todo y me escucha"], ["ran.", "/no simplemente se per"], ["di\u00f3.", "/nSe per"], ["di\u00f3.", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "8z1daixWGX0", "delay": 0}]}
+{
+    "cancion": "el-barquero",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "C",
+                    "B",
+                    "F",
+                    "F",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B",
+                    "B",
+                    "Am",
+                    "Am",
+                    "D/F#",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "C",
+                    "B",
+                    "D/F#",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Bm",
+                    "Em",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "D",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D/F#",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#",
+                    "D/F#"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Un buen día qu",
+            "izás un ba",
+            "rquero /n"
+        ],
+        [
+            "Se lanzó ",
+            "tras  el mar el ",
+            "recu",
+            "erdo /n"
+        ],
+        [
+            "Era un barco pe",
+            "queño en ",
+            "el tiemp /n"
+        ],
+        [
+            "Pero ",
+            "había  fe, ",
+            "pero había un raro esplend",
+            "or en sus ojos \n\nP",
+            "ero había un místico af",
+            "án de por qué /n"
+        ],
+        [
+            "Pe",
+            "ro había ",
+            "fe ",
+            "",
+            "/n"
+        ],
+        [
+            "Una darsen ",
+            "es solo una ",
+            "entraña /n"
+        ],
+        [
+            "Mar de ",
+            "invierno  es tal vez ",
+            "la mañ",
+            "ana /n"
+        ],
+        [
+            "Barco chico ",
+            "es quizás a",
+            "lma clara ",
+            "aunque hay",
+            "a fe, ",
+            "aunque haya un flugo de mundo ",
+            "en mi frente \n\nTa",
+            "nto se hunde mi rostro ",
+            "en la gente /n"
+        ],
+        [
+            "Que ya ",
+            "no sé ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ya me ",
+            "canso de tanto ",
+            "hablar  \n\nSi está dic",
+            "ho todo hasta el ",
+            "fin \n\nQue ",
+            "más ruido que el de ",
+            "escuchar \n\nDe ",
+            "la vida tod ",
+            "el traje /n"
+        ],
+        [
+            "T",
+            "anto espacio e",
+            "ntre mi voz ",
+            "el oído que ha ",
+            "de esperar /n"
+        ],
+        [
+            "Nada  te",
+            "ngo que decir ",
+            "yo \n\nMir",
+            "en todo me e",
+            "scucharán ",
+            "",
+            "/n"
+        ],
+        [
+            "Un buen día q",
+            "uizás un ",
+            "barquero /n"
+        ],
+        [
+            "Se l",
+            "anzó tras el mar ",
+            "el rec",
+            "uerdo /n"
+        ],
+        [
+            "De su b",
+            "arca entre gr",
+            "itos sile",
+            "ncio \n\nAún ",
+            "no se sa",
+            "be cuál de la vida es \n\nTras tant",
+            "as ha sido su sue",
+            "rte \n\nSi halló la v",
+            "ida se fue con la mue",
+            "rte ",
+            "simplemente se ",
+            "per",
+            "dió ",
+            "",
+            "/n"
+        ],
+        [
+            "Se perdió ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "8z1daixWGX0",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

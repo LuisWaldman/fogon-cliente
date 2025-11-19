@@ -2,78 +2,500 @@
     "cancion": "sol-naranja",
     "banda": "babasonicos",
     "escala": "Bm",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Bm",
-                    "F#m",
+                    "Bm",
                     "Em",
+                    "Em",
+                    "Bm",
                     "Bm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Bm",
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
                     "E",
                     "D",
-                    "E",
                     "D",
                     "E",
-                    "D"
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Bm"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
         [
-            "   Soy Feliz,",
-            " sol naranja /n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "   No debo nada, vivo h",
-            "oy y eso me alcanza /n"
+            "So",
+            "y  feli",
+            "z  soy n",
+            "aranja /n N",
+            "o  debo n",
+            "ada  vivo h",
+            "oy  eso me al",
+            "canza /n"
         ],
         [
-            "   Soy de plush,",
-            " soy naranja. /n"
+            "Soy de p",
+            "lush ",
+            "soy nara",
+            "nja /n V",
+            "oy  la tierra",
+            "prome",
+            "tid ",
+            "/n"
         ],
         [
-            "   Voy a la tierra prometi",
-            "da /n   T"
+            "De  d",
+            "e /n Dios",
+            ",  d",
+            "e",
+            "n  d",
+            "e /n Di",
+            "os ",
+            "d",
+            "e  d",
+            "e /n Dio",
+            "s /n"
         ],
         [
-            "engo Dio",
-            "s /n   "
+            "D",
+            "e  d/n"
         ],
         [
-            "Vamos a pensar que es natural  /n   As"
+            "Dio",
+            "s ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "i es como las cosas pasaran /n   "
+            "S",
+            "é  de am",
+            "ores ",
+            "sé de od",
+            "io /n Y",
+            "o  te prefier",
+            "porque estás fu",
+            "er  de tod",
+            "o /n"
         ],
         [
-            "Vamos a pensar que es natural /n   As"
+            "Vivo en paz",
+            ", ",
+            "tengo suerte. /n T",
+            "e  teng",
+            "vos es",
+            "suficient",
+            "e /n"
         ],
         [
-            "i es como podes vivir en paz"
+            "D",
+            "en  d",
+            "e /n Dios,",
+            "",
+            "d",
+            "e  d",
+            "e /n Di",
+            "os ",
+            "d",
+            "e  d",
+            "e /n Dios.",
+            "/n"
+        ],
+        [
+            "D",
+            "e  d",
+            "e /n Dio",
+            "s ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Vamos pe",
+            "nsa  en disnat",
+            "ura /n Así es como la",
+            "s  cosas pasa",
+            "rán /n Vamos pen",
+            "sa  en disnatu",
+            "ra /n Así es como po",
+            "dé  vivir en p",
+            "az /n D",
+            "e  d",
+            "e /n Dio",
+            "s ",
+            "den",
+            "d",
+            "e /n Di",
+            "os ",
+            "",
+            "de  d",
+            "e /n Dios.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "e  de/n"
+        ],
+        [
+            "Dio",
+            "s ",
+            "d",
+            "en de /n D",
+            "ios /n Sé de amore",
+            "s  s",
+            "é  d",
+            "e odio. /n De",
+            "n  d",
+            "e",
+            "/n"
+        ],
+        [
+            "D",
+            "ios ",
+            "d",
+            "e",
+            "n de /n D",
+            "ios ",
+            "",
+            "de",
+            "n de /n D",
+            "ios ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Den de /n Dios, den de Dios."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kcmVwmVVzS8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

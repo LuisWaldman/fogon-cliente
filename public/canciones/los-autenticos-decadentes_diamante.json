@@ -2,28 +2,243 @@
     "cancion": "diamante",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 161,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
+                    "F#",
+                    "D",
+                    "G",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Bm",
+                    "C",
+                    "C",
+                    "G",
+                    "Bm",
+                    "C",
                     "G",
                     "D",
-                    "Em"
+                    "Em",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
                     "Bm",
                     "C",
                     "B7",
-                    "Em",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
                     "D",
                     "C",
+                    "C",
+                    "C",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "D",
+                    "D",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
                     "D"
                 ]
             }
@@ -31,74 +246,223 @@
         "orden_partes": [
             0,
             1,
-            0,
-            1,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
         ]
     },
     "letras": [
-        [],
         [
-            " no se como cantar una canción de amor vencido,/npor"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "que nunca me dejaron/nno se p"
+            "Es",
+            "ta es una canción en español de rock argentino. ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uede comprender el sufrimiento,/nsin sentir al"
+            "Yo no ",
+            "sé cómo cantar ",
+            "una canción de amor ",
+            "vencido  porqu",
+            "e nunca me he d",
+            "ejad",
+            "o. \n\nNo ",
+            "se puede compren",
+            "der el sufrimien",
+            "to sin sentir a",
+            "lgún dolor ",
+            "/n"
         ],
         [
-            "gún dolor/nlo que qu"
+            "Lo ",
+            "que quise yo lo t",
+            "uve, la fortuna ",
+            "me sonríe de",
+            "sde siempr",
+            "e. /n"
         ],
         [
-            "ise yo lo tuve la fo",
-            "rtuna me sonríe desde s",
-            "iempre",
-            "/nno me que"
+            "No ",
+            "me queda pla",
+            "cer por pr",
+            "obar ",
+            "no hay nada que ",
+            "me haga llo",
+            "rar. /n"
         ],
         [
-            "da placer por probar,/ny no hay na"
+            "Yo no sé cómo c",
+            "antar una canci",
+            "ón de amor dolid ",
+            "porque no me l",
+            "astimaron. /n"
         ],
         [
-            "da que me haga llorar/nYo no s"
+            "No ",
+            "me pueden ",
+            "fácilmente  hacer ",
+            "pedazos  po",
+            "rque frágil yo ",
+            "no soy. ",
+            "/n"
         ],
         [
-            "e como cantar una canción de amor dolido,/nporque "
+            "Lo que pas",
+            "a es que este coraz",
+            "ón de piedra se r",
+            "evela su de",
+            "stino ",
+            "",
+            "se d",
+            "eja llevar o",
+            "tra vez /n"
         ],
         [
-            "no me lastimaron/nno me pu"
+            "No hay man",
+            "era de hacer",
+            "le entender. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "eden fácilmente hacer pedazos porque frá",
-            "gil yo no soy/nlo que pas"
+            "Yo ",
+            "no sé cómo cantar una canción de amor vencido porque no me lastimaron. ",
+            "",
+            "/n"
         ],
         [
-            "a es que este corazón de p",
-            "iedra se revela a",
-            " su de",
-            "stino/ny se de"
+            "Si ",
+            "supieras lo ",
+            "que siento al no se",
+            "ntir lo que se sie",
+            "nte cuando uno ",
+            "se ena",
+            "mora, ",
+            "ver que todo n",
+            "ace muere uno ",
+            "sigue sin pod",
+            "er partici",
+            "par. ",
+            "/n"
         ],
         [
-            "ja llevar otra vez,/nno hay manera de hacerle entender."
+            "Sé que ve",
+            "ces cambiaría si ",
+            "pudiera mi vid",
+            "a por otra v",
+            "ida",
+            ". /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "Caer",
+            "ía del cielo ha",
+            "cia el mar, ",
+            "me hundi",
+            "ría en el bar",
+            "ro mortal ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo no sé cómo cantar una canción de amor vencido porque frágil yo no soy. \n\nLo que pasa es que este corazón de piedra se revela su destino se deja llevar otra vez. \n\nNo hay manera de hacerle entender. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No me lastimaron porque frágil yo no soy. "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "pJA0cOQs4MU",
-            "delay": 0
+            "delay": 1000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

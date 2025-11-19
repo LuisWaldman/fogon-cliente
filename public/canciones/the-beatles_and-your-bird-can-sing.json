@@ -8,11 +8,17 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "F#m",
-                    "A",
                     "E"
                 ]
             },
@@ -20,84 +26,201 @@
                 "nombre": "parte2",
                 "acordes": [
                     "G#m",
-                    "G+",
-                    "B",
-                    "C#",
                     "E",
-                    "F#m7",
+                    "E",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "E",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "G#m",
+                    "G#m",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "F#m7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
                     "Bsus4",
-                    "B"
+                    "Bsus4",
+                    "Bsus4",
+                    "Bsus4",
+                    "Bsus4",
+                    "Bsus4",
+                    "Bsus4",
+                    "Bsus4",
+                    "Bsus4"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "B",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "Bsus4",
+                    "Bsus4",
+                    "E",
+                    "E",
+                    "G#m",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#m"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "tell me that you've got every thing you want/nBut you don't get me"
+            "",
+            "",
+            "/n"
         ],
         [
-            "     Y",
-            "ou don't get m",
-            "e/nYou "
+            "T",
+            "el  me that you've go",
+            "t  everything you want/n"
         ],
         [
-            "say you've seen seven wonders/nBut you can't see m"
+            "And your bed c",
+            "an  sing, but you don't g",
+            "e me /n Y",
+            "o  don'",
+            "get me/n"
         ],
         [
-            "e  You",
-            " can't see m",
-            "e/nW"
+            "Y",
+            "ou  say you",
+            "'ve  seen seven won",
+            "der /n And your b",
+            "e  is green, but you c",
+            "an' see me /n Y",
+            "ou ",
+            "can'  see m",
+            "e /n W",
+            "he  your pri",
+            "ze possessions /n S",
+            "tar  to w",
+            "eig you down /n L",
+            "ook  at m",
+            "y direction /n I",
+            "'l  be round,/n"
         ],
         [
-            "hen your prize pose",
-            "ssions, start ",
-            "to weigh you down",
-            "/nL"
+            "I'll be round",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ook in my dir",
-            "ection, I'll be 'roun",
-            "d, I'll be 'round",
-            "/nW"
+            "When y",
+            "ou  bed is broke",
+            "n /n Will",
+            "i  bring you down",
+            "? /n You m",
+            "ay  be awoke/n"
         ],
         [
-            "hen your bird is bro",
-            "ken, will",
-            " it bring you down?",
-            "/nY"
+            "I'll be rou",
+            "nd /n I'll be r",
+            "oun /n Tel",
+            "me that you've got every s",
+            "oun there is /n A",
+            "n  your bed can s",
+            "wing  but you can't hear m",
+            "e /n Y",
+            "o  can't hea",
+            "m",
+            "e ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ou may be awo",
-            "ken, I'll be 'rou",
-            "nd I'll be 'round",
-            "/nY"
-        ],
-        [
-            "ou tell me that you've heard every sound there is/nBut you can't hear m"
-        ],
-        [
-            "e   Y",
-            "ou can't hear m",
-            "e"
+            "When your prized possessions /n Start to weigh you down"
         ]
     ],
-    "bpm": 80,
+    "bpm": 135,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "9g2eU9YGwWQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

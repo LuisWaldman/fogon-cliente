@@ -1,1 +1,239 @@
-{"cancion": "estoy-en-ti", "banda": "silvio-rodriguez", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "A", "F#m", "E", "C#m"]}, {"nombre": "parte2", "acordes": ["A", "F#m", "E", "A#", "D#m", "B", "D#m", "B"]}, {"nombre": "parte3", "acordes": ["D#m", "B", "D#m", "B", "D#m", "B", "G#", "C#"]}], "orden_partes": [0, 1, 2]}, "letras": [["Es un amor real,", "/ncon todos tus de"], ["talles/n"], ["que son de ti,", "/ny ya es muy tarde "], ["ya/npara que no haga "], ["da\u00f1o/n"], ["dentro de m\u00ed", "/n... pues siempre estoy, en "], ["ti .../nC.-Y aunque pa"], ["rezca ext", "ra\u00f1o y p", "ronto, en ti", ",/naunque pa"], ["rezca a v", "eces to", "nto, en ti,", "/ny casi a"], ["yer te conoc", "\u00ed ... en t", "i."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "JzlUkLrabZc", "delay": 0}]}
+{
+    "cancion": "estoy-en-ti",
+    "banda": "silvio-rodriguez",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "Am",
+                    "A#",
+                    "E",
+                    "A#",
+                    "E",
+                    "A#",
+                    "E",
+                    "A",
+                    "A",
+                    "B",
+                    "G",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "C#m",
+                    "A",
+                    "A",
+                    "E",
+                    "A#",
+                    "A#",
+                    "D#m",
+                    "D#m",
+                    "D#m",
+                    "D#m",
+                    "B",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "B",
+                    "D#m",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A#",
+                    "A#",
+                    "A#",
+                    "A#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A#",
+                    "A#",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hay ",
+            "un amor veloz, r",
+            "ápidamente descendiendo por ",
+            "mis brazos, por mi piel, ",
+            "hasta mi corazón para queda",
+            "rse en él. ",
+            "",
+            "/n"
+        ],
+        [
+            "Me hace pen",
+            "sar así en mi costu",
+            "mbre de arrujarme por tus oj",
+            "os hasta ti, mientras tú c",
+            "rees verme viéndo",
+            "te reír. ",
+            "",
+            "/n"
+        ],
+        [
+            "Es ",
+            "un amor real con t",
+            "odos sus det",
+            "alles que son ",
+            "de ti, ",
+            "ya es muy tarde ya par",
+            "a que no haga d",
+            "año dent",
+            "ro de mí, ",
+            "pues  siempre esto ",
+            "en ti. \n\nAunque pare",
+            "zca extraño pron",
+            "to en ti, aunque par",
+            "ezca veces ton",
+            "to en ti, casi ayer ",
+            "te cono",
+            "cí en ti. ",
+            "/n"
+        ],
+        [
+            "Pese la ",
+            "noche pese al día ",
+            "en ti, pese mil ",
+            "diferencias  frí",
+            "as en ti, casi aye ",
+            "te cono",
+            "cí en ti. ",
+            "/n"
+        ],
+        [
+            "Hay un amor ",
+            "veloz,  rápidament ",
+            "descendiendo por mis brazos, ",
+            "por mi piel, hasta mi coraz",
+            "ón para quedarse en ",
+            "él. ",
+            "",
+            "/n"
+        ],
+        [
+            "Me hace pensar así ",
+            "en mi costumbre de arru",
+            "jarme por tus ojos hasta ti, ",
+            "mientras tú crees verme v",
+            "iéndote reí",
+            "r. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 151,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "JzlUkLrabZc",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

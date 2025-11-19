@@ -2,67 +2,286 @@
     "cancion": "tormento",
     "banda": "babasonicos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 123,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "D",
-                    "A",
-                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G",
                     "D",
-                    "A",
-                    "Bm"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F#",
                     "D",
-                    "A",
-                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "G",
-                    "E",
                     "G",
-                    "F#"
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "Si l",
-            "a qu",
-            "ieren",
-            " tocar ",
-            "de m",
-            "aner",
-            "a ac",
-            "stica ",
-            "pued",
-            "en t",
-            "ocar ",
-            "los aco",
-            "rdes",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aun",
+            "qu  en ult",
+            "rama  me espere una",
+            "torment  trop",
+            "ica  yo me d",
+            "esmer  en ser graci",
+            "os  un rato m",
+            "ás /n"
+        ],
+        [
+            "Paguemos a",
+            "lgo  que todavía no r",
+            "ompimo /n Para que l",
+            "ueg  no nos vengan fr",
+            "ena  termin",
+            "emo  con el barco destroza",
+            "d  con los restos del naufra",
+            "gios  sobrando por el m",
+            "ar /n P",
+            "o  aho",
+            "r  tengo gan",
+            "a  de estar s",
+            "ol ",
+            "me que",
+            "d  poco tiem",
+            "p  de ahora en m",
+            "a /n L",
+            "o  que dur",
+            "e  mi recue",
+            "rd  en tus ojo/n"
+        ],
+        [
+            "Cuando par",
+            "padee  n",
+            "o  estare m",
+            "a /n D",
+            "eber",
+            "surgir c",
+            "ae ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aunque e",
+            "l  faraón le p",
+            "ong  un precio alto",
+            "mi cabeza y",
+            "o  demoré e",
+            "n  escapar un r",
+            "at  más/n"
+        ],
+        [
+            "Pa",
+            "guemo  algo que todaví",
+            "a no rompimos /n Pa",
+            "r  que luego no nos ven",
+            "ga  frenar",
+            "terminemos con el barc",
+            "o  destrozado con los rest",
+            "o  del naufragioso sobrando p",
+            "or  el mar/n"
+        ],
+        [
+            "Por",
+            "ahor  teng",
+            "ganas de esta",
+            "r  solo",
+            "m",
+            "e  queda poco",
+            "tiemp  de ahora",
+            "e mas /n L",
+            "o  qu",
+            "e  dure mi r",
+            "ecuerd  en tus o",
+            "jos /n Cuando p",
+            "arpade",
+            "e  no estare m",
+            "as ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Me",
+            "deberá  surgir c",
+            "aer /n N",
+            "ser aprendiz de borre",
+            "al menos esta vida /n Me de",
+            "berá  surgir c",
+            "a",
+            "e",
+            "r /n No",
+            "s",
+            "e ",
+            "aprendi  de borreo al m",
+            "enos esta vida /n Me deber",
+            "á  surgir ca",
+            "e /n Me deber",
+            "á  surgir ca",
+            "e /n Me deberás",
+            "surgir  me deberás",
+            "cae /n No ser ap",
+            "rendi  de borreo al men",
+            "o  esta vida"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "LKutfA86FiY",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -1,1 +1,272 @@
-{"cancion": "cancion-de-la-nueva-escuela", "banda": "silvio-rodriguez", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Dm", "E", "Am", "C", "G", "Am", "E", "F", "Am", "Dm", "E", "Am", "E", "Am", "Dm", "E", "Am", "C", "G", "Am", "E", "F", "Am", "Dm", "E", "Am", "A", "F#m", "D", "E", "A", "F#m", "F#", "Bm", "E", "D", "A", "F#m", "D", "F#m", "E", "A", "F#m", "D", "E", "A", "F#m", "F#", "Bm", "E", "D", "A", "F#m", "D", "F#m", "E", "Am"]}], "orden_partes": [0]}, "letras": [["sta es", " la n", "ueva escuel", "a/n"], ["\u00e9sta es", " la nueva ca", "sa/n"], ["casa y escuela nue", "vas/ncomo c"], ["una d", "e nue", "va raza", "", "/n"], ["stos s", "on su", "s jard", "ines/n"], ["\u00e9stos ", "sus semill", "eros/n"], ["hechos con adoqu", "ines/nde verg"], ["\u00fcenza", ", pie", "dra ", "y lucero/n"], ["stos, que conti", "nuamos/nbajo "], ["la sombra m\u00e1s que aguer", "rida de aquellas sem", "illas/n"], ["vemos ", "en estos mu", "ros/nun prel"], ["udio del futu", "ro/nque lo b"], ["ueno de l", "os a\u00f1os d", "uros sal", "varon de ayer", "/n"], ["stos, los que habi", "tamos/nlos luga"], ["res alzados a g", "olpe de sangre y marti", "llo,/n"], ["m\u00e1s q", "ue vivir, dur", "amos,/npor los su"], ["e\u00f1os, por las m", "anos/nque por e"], ["ste edi", "ficio sin du", "e\u00f1o se ", "hicieron doler", ", doler", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "65qV4VLp_OA", "delay": 0}]}
+{
+    "cancion": "cancion-de-la-nueva-escuela",
+    "banda": "silvio-rodriguez",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "E",
+                    "E",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "F# Dm",
+                    "Dm",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#m",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "F#m",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F#",
+                    "Am",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "A",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "letras": [
+        [
+            "Esta es ",
+            "la ",
+            "nueva escuela, ",
+            "esta ",
+            "es la nueva ",
+            "casa,  ",
+            "casa ",
+            "escuela nue",
+            "va. \n\nComo c",
+            "ura de ",
+            "nueva  ra",
+            "za, ",
+            "estos son ",
+            "sus jardines, ",
+            "es",
+            "tos sus semil",
+            "leros, /n"
+        ],
+        [
+            "Hecho c",
+            "ojado gine",
+            ", de ver",
+            "güenza, piedra ",
+            "lucero.  /n"
+        ],
+        [
+            "Es",
+            "tos que cont",
+            "inuamos ba",
+            "jo la sombra más que aguerri",
+            "da de aquella semil",
+            "la, /n"
+        ],
+        [
+            "Vemos  en ",
+            "estos muro",
+            "s un pre",
+            "ludio del f",
+            "uturo que ",
+            "lo bueno de los año",
+            "s duros salvaron de a",
+            "yer. /n"
+        ],
+        [
+            "Estos, ",
+            "los que habitamo",
+            "s, los luga",
+            "res alzados golpes de sa",
+            "ngre martill",
+            "o, \n\nMás ",
+            "que vivir j",
+            "uramos por ",
+            "los sueño",
+            "s, por las m",
+            "anos que ",
+            "por este edificio sin dueños se ",
+            "hicieron dole",
+            "r, dole",
+            "r. /n"
+        ],
+        [
+            "E",
+            "sta es ",
+            "la nueva escuela, ",
+            "e",
+            "sta es la nuev",
+            "a casa, ",
+            "casa ",
+            "escuela nu",
+            "eva. \n\nComo ",
+            "cura  de ",
+            "nueva ra",
+            "za, ",
+            "estos son ",
+            "sus jardines ",
+            "e",
+            "stos sus sem",
+            "illeros, /n"
+        ],
+        [
+            "Hech ",
+            "cojado gin",
+            "e, de ve",
+            "rgüenza, piedr ",
+            "lucero. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Estos, los que habitamos, los lugares alzados golpes de sangre martillo, "
+        ]
+    ],
+    "bpm": 103,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "65qV4VLp_OA",
+            "delay": 5000.0
+        }
+    ],
+    "calidad": 1
+}

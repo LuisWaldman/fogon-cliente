@@ -10,7 +10,7 @@ import TocarMidi from '../components/comp_tocar/Tocar_Midi.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
-import Secuencia from '../components/comp_tocar/Secuencia.vue'
+import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
 import { useAppStore } from '../stores/appStore'
@@ -69,13 +69,6 @@ watch(
 onUnmounted(() => {
   stopRafLoop()
 })
-
-const urlParams = new URLSearchParams(window.location.search)
-const sesionurl = urlParams.get('cancion')
-if (sesionurl) {
-  const origen = OrigenCancion.GetFromQuery(sesionurl)
-  appStore.aplicacion.ClickTocar(origen)
-}
 
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
@@ -196,6 +189,11 @@ function GetStyleOverlay() {
   }
   return `top: ${vista.value.altoReproductor}px;`
 }
+
+function GetStyleSecuencia() {
+  return `height: ${vista.value.anchoParte}px;`
+}
+
 const refSincronizandoMedios = ref(false)
 function clickCerrarMedios() {
   refSincronizandoMedios.value = false
@@ -342,11 +340,13 @@ const refAdvertencia = ref(true)
         </div>
 
         <div class="overlay" :style="GetStyleOverlay()">
-          <Secuencia
-            v-if="vista.viendoSecuencia"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-          ></Secuencia>
+          <div class="secuencia" :style="GetStyleSecuencia()">
+            <Secuencia
+              v-if="vista.viendoSecuencia"
+              :cancion="appStore.cancion"
+              :compas="appStore.compas"
+            ></Secuencia>
+          </div>
 
           <ProximosAcordes
             :cancion="appStore.cancion"
@@ -477,5 +477,9 @@ input[type='range'] {
   width: 100%;
   height: 100%;
   z-index: 10;
+  overflow: hidden;
+}
+.secuencia {
+  overflow: hidden;
 }
 </style>

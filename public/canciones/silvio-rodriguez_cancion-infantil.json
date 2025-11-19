@@ -1,1 +1,530 @@
-{"cancion": "cancion-infantil", "banda": "silvio-rodriguez", "escala": "Bm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bm", "A", "Bm"]}, {"nombre": "parte2", "acordes": ["A", "G", "E", "G", "A", "E", "G"]}], "orden_partes": [0, 1]}, "letras": [[], ["cielo viene luz,/nviene "], ["luz./nPor"], ["que la manda el sol,/ns\u00f3lo el"], [" sol./nPa"], ["ra que nuestra t", "ierra/nflorezca a su calor."], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "y1hvSOExqOc", "delay": 0}]}
+{
+    "cancion": "cancion-infantil",
+    "banda": "silvio-rodriguez",
+    "escala": "Bm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "B",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Un ",
+            "tos en un ",
+            "pizarrón, que ",
+            "se ve desde ",
+            "el bacón, s",
+            "igo el trazo ",
+            "se dibujo ",
+            "yo. \n\nM",
+            "art",
+            "es un rubí le",
+            "jano, \n\nVenus ",
+            "acompaña  el dí",
+            "a, \n\nSirio g",
+            "uía la n",
+            "avega",
+            "ción. ",
+            "/n"
+        ],
+        [
+            "Firm",
+            "amento, ",
+            "puntos ",
+            "de l",
+            "uz, /n"
+        ],
+        [
+            "Firmam",
+            "ento, ",
+            "",
+            "puntos de ",
+            "lu",
+            "z. ",
+            "/n"
+        ],
+        [
+            "A",
+            "steroides co",
+            "metas, mete",
+            "oritos plane",
+            "tas, co",
+            "nstelaciones de ",
+            "neon",
+            ", ",
+            "una osa ",
+            "otra más. \n\nC",
+            "assiopeia/n"
+        ],
+        [
+            "Cruz del \n\nSur, /n"
+        ],
+        [
+            "Tauro, \n\nAndróme",
+            "da el \n\nCan \n\nM",
+            "ayor",
+            "",
+            "/n"
+        ],
+        [
+            "Firmamento ",
+            "p",
+            "untos de ",
+            "luz, /n"
+        ],
+        [
+            "Fir",
+            "mamen",
+            "to, ",
+            "punt",
+            "os de l",
+            "uz. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es curio",
+            "sa la mirada, ",
+            "en la noche d",
+            "espejada, va ",
+            "enlazando ",
+            "los puntos de ",
+            "luz,  ",
+            "más ",
+            "curioso  to",
+            "davía es que ",
+            "se ven al me",
+            "dio día en b",
+            "alcones de ot",
+            "ra latitud ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Firmamento ",
+            "puntos de ",
+            "lu",
+            "z, /n"
+        ],
+        [
+            "Fir",
+            "mam",
+            "ento, ",
+            "puntos de ",
+            "lu",
+            "z. ",
+            "",
+            "/n"
+        ],
+        [
+            "Firmamento, pu",
+            "ntos de luz, /n"
+        ],
+        [
+            "F",
+            "i",
+            "r",
+            "m",
+            "a",
+            "puntos de ",
+            "l",
+            "u",
+            "z",
+            ". ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "F",
+            "irmamento, pu",
+            "ntos de luz /n"
+        ],
+        [
+            "F",
+            "i",
+            "r",
+            "m",
+            "a",
+            "m",
+            "e",
+            "",
+            "pu",
+            "nt",
+            "de l",
+            "u",
+            "z",
+            ".",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Punt",
+            "os de l",
+            "u",
+            "z. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Firma",
+            "mento, puntos de luz, \n\nFirmamento, ",
+            "puntos de luz. "
+        ]
+    ],
+    "bpm": 172,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "y1hvSOExqOc",
+            "delay": 1000.0
+        }
+    ],
+    "calidad": 1
+}

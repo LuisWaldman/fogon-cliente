@@ -2,105 +2,294 @@
     "cancion": "haciendo-cola-para-nacer",
     "banda": "divididos",
     "escala": "F",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "F",
-                    "Bb",
-                    "Eb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "F",
                     "F",
                     "C",
+                    "F",
+                    "F",
                     "Bb",
-                    "F"
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "Bb",
-                    "C",
-                    "F"
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "Bb",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Bb"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "F",
+                    "Bb",
+                    "Bb",
                     "Bb",
                     "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "Bb",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
                     "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Bb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            0,
             2,
-            2
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "ojando basura, se m",
-            "e cayo",
-            " el cartel",
-            "/nyen"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "do a contramano, me cho",
-            "co una",
-            " pared",
-            "/nme can"
+            "Arrojand  b",
+            "asura ",
+            "se m",
+            "e  cayó el ca",
+            "rtel",
+            "yendo",
+            "cont",
+            "ramano ",
+            "me choc",
+            "ó  una pared",
+            ",  m",
+            "e  cansé",
+            "de hacer c",
+            "ol  par",
+            "a  na",
+            "ce",
+            "r  me",
+            "cans",
+            "de hacer c",
+            "ol  p",
+            "ar",
+            "a  mori",
+            "r ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "se de hacer cola pa",
-            "ra nacer",
-            "/nme can"
+            "Catedral d",
+            "el  s",
+            "udo",
+            "r  lengua s",
+            "ec  al so",
+            "l ",
+            "nace u",
+            "n  hijo neg",
+            "ro ",
+            "cachet",
+            "az  al rock,",
+            "me c",
+            "ans  d",
+            "hacer cola p",
+            "ara ",
+            "na",
+            "ce",
+            "me c",
+            "ans  de",
+            "hace  col",
+            "a  pa",
+            "r  m",
+            "orir /n"
         ],
         [
-            "se de hacer cola pa",
-            "ra morir",
-            "/ncat"
+            "S",
+            "i  pa",
+            "r  el cielo va",
+            "s  en la c",
+            "roce  te dej",
+            "a  mal,",
+            "si p",
+            "ara /n Cha",
+            "carit  vas",
+            ",  el gu",
+            "ard  se c",
+            "onviert  e",
+            "n  flor.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "edral del sudor, leng",
-            "ua sec",
-            "a al sol",
-            "/nn"
+            "S",
+            "i  para el",
+            "ciel  vas,",
+            "en la croce t",
+            "e  deja mal",
+            ", ",
+            "s  par/n"
         ],
         [
-            "ace un hijo negro, ca",
-            "chetaz",
-            "o al rock",
-            "/nsi p"
+            "Chacarit",
+            "vas,",
+            "el guarda s",
+            "e  convie",
+            "rt  en flo",
+            "r ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ara el cie",
-            "lo vas, el Lacroz",
-            "e te deja mal",
-            "/nsi p"
-        ],
-        [
-            "ara Chacar",
-            "ita vas, el guar",
-            "da se convierte en flor",
-            ""
+            "Si para el cielo vas, en la croce te deja mal, si para el cielo vas, el guarda se convierte en flor."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "nXKslJi1FA8",
-            "delay": 0
+            "delay": 700.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

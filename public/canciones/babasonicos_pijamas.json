@@ -2,307 +2,346 @@
     "cancion": "pijamas",
     "banda": "babasonicos",
     "escala": "C#m",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "C#m",
-                    "E",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
-                    "C#m",
-                    "E",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "F#m",
-                    "B",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
-                    "C#m",
-                    "E",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
-                    "C#m",
-                    "E",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "F#m",
-                    "B",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "A",
-                    "B",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
-                    "C#m",
-                    "E",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "B",
-                    "C#m",
-                    "E",
-                    "A",
-                    "B",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
-                    "A",
-                    "A",
-                    "B",
                     "G#m",
-                    "C#m",
                     "A",
-                    "B",
-                    "C#m",
-                    "E",
                     "A",
-                    "B",
-                    "E"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "A",
+                    "A",
+                    "G#m",
+                    "A",
+                    "A",
+                    "G#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#m",
+                    "A",
+                    "G#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "G#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G#m",
+                    "A",
+                    "G#m",
+                    "G#m",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
-            0
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "amé para v",
-            "ernos/n"
-        ],
-        [
-            "Se me ocurren tantas",
-            " cosas/n"
-        ],
-        [
-            "Empezar por juntar",
-            "nos/nPara n"
-        ],
-        [
-            "o hacer nada",
-            "/n"
-        ],
-        [
-            "Te propuse mi cas",
-            "a/nNada neutr"
-        ],
-        [
-            "o",
-            "/n"
-        ],
-        [
-            "Te dije \"traé ",
-            "tus pijamas que yo",
-            "/nNo due"
-        ],
-        [
-            "rmo bien de noche",
-            "\"/n"
-        ],
-        [
-            "Por única ve",
-            "z te pido que entie",
-            "ndas/nQue este no es un cue"
-        ],
-        [
-            "nto que lo invento yo",
-            "/n"
-        ],
-        [
-            "Por única ve",
-            "z te pido que entien",
-            "das",
-            "/n"
-        ],
-        [
-            "Por única vez te pido que entie",
-            "ndas/nTe ll"
-        ],
-        [
-            "amé para ve",
-            "rnos/n"
-        ],
-        [
-            "Se me ocurren tantas",
-            " cosas/n"
-        ],
-        [
-            "Empezar por juntarn",
-            "os/nPara n"
-        ],
-        [
-            "o hacer nad",
-            "a/n"
-        ],
-        [
-            "Te propuse mi c",
-            "asa/nNada neutr"
-        ],
-        [
-            "o",
-            "/n"
-        ],
-        [
-            "Te dije \"traé ",
-            "tus pijamas que yo",
-            "/nNo d"
-        ],
-        [
-            "uermo bien de noch",
-            "e\"/n"
-        ],
-        [
-            "Por mi cama",
-            " pasa un río",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Y en el rí",
-            "o un reba",
-            "o abreba al sol",
-            "/n"
-        ],
-        [
-            "Y un pastor",
-            " inmóvil sen",
-            "tado a mis pies",
-            "/nMe cant"
-        ],
-        [
-            "a/nMe cant"
-        ],
-        [
-            "a/n"
-        ],
-        [
-            "Por única ve",
-            "z te pido que entie",
-            "ndas/nQue este no es un cue"
-        ],
-        [
-            "nto que lo invento yo",
-            "/n"
-        ],
-        [
-            "Por única ve",
-            "z te pido que enti",
-            "endas",
-            "/n"
-        ],
-        [
-            "Por única vez te pido que entien",
-            "das/nCorro esp"
-        ],
-        [
-            "antado alejándome de t",
-            "odos/nPerdiéndome"
-        ],
-        [
-            " en la piel de un paria perseg",
-            "uido/nDejaba a"
-        ],
-        [
-            "trás un circo rey con o",
-            "ropel/nQuería co"
-        ],
-        [
-            "ntarte y que me seas todo oi",
-            "dos/nTe ll"
-        ],
-        [
-            "amé para v",
-            "ernos/n"
-        ],
-        [
-            "Se me ocurren tanta",
-            "s cosas/n"
-        ],
-        [
-            "Por única ve",
-            "z te pido que entie",
-            "ndas/nQue este no es un cu"
-        ],
-        [
-            "ento que lo invento yo",
-            "/n"
-        ],
-        [
-            "Por única ve",
-            "z te pido que entie",
-            "ndas",
-            "/n"
-        ],
-        [
-            "Por única vez te pido que entien",
-            "das/nTe lla"
-        ],
-        [
-            "mé, para vern",
-            "os/n"
-        ],
-        [
-            "Se me ocurren tantas cosas",
+            "Esta es una canción en español de rock argentino.",
             "",
-            ""
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta e",
+            "s  u",
+            "n",
+            "a",
+            "canción e",
+            "n  espa",
+            "ño  de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta",
+            "e",
+            "s  u",
+            "n",
+            "a",
+            "",
+            "",
+            "c",
+            "a",
+            "n",
+            "c",
+            "i",
+            "ó",
+            "n",
+            "e",
+            "n  esp",
+            "año  de rock arge",
+            "ntino ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "sta  es u",
+            "n",
+            "a",
+            "canción en español de rock argentino. /n Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en e",
+            "spaño de rock argentino. /n Esta es una canción en español de rock argentino. Est",
+            "a es una canción en español de rock argentino. /n Esta es una c",
+            "anció en español de rock argentino. /n Esta es una canción en español de r",
+            "oc",
+            "k argentino. /n Esta es una canción en español d",
+            "e  ro",
+            "c  argentino.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es u",
+            "na canción en español de rock argentino. /n Esta es una canción en español de rock argentino. Esta e",
+            "una canción en español de rock argentino. /n Esta es una canción e",
+            "n  español de rock argentino./n"
+        ],
+        [
+            "Esta es una canción en e",
+            "spaño de rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino. Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción en español de rock argentino. Esta es una",
+            "canción en español d",
+            "rock argentino. /n Esta es una canción en es",
+            "paño  d",
+            "e  roc",
+            "k  argentino.",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. /n Esta es una canción en español de rock ar",
+            "gentino /n Esta e",
+            "s  una canción en español de rock arg",
+            "entino /n Esta e",
+            "s  una canción en español de rock argentino./n"
+        ],
+        [
+            "Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción en español de rock argentino./n"
+        ],
+        [
+            "Esta es una canción en español d",
+            "e rock argentino. /n Esta es una canción en español de rock argentino. Esta es una canción en español de rock argentino./n"
+        ],
+        [
+            "Esta es una canción en español d",
+            "rock argentino. /n Esta es una canción en español de roc",
+            "k argentino. /n Esta es una canción en español de ro",
+            "c argentino. /n Esta es una canción en espa",
+            "ño  de rock argentino."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "v0N8kqu4ph0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

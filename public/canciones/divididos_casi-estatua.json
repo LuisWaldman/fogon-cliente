@@ -2,67 +2,313 @@
     "cancion": "casi-estatua",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "F#",
-                    "B",
-                    "A",
                     "G",
-                    "D",
-                    "C",
-                    "F#"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "D",
-                    "C",
-                    "A",
-                    "G#",
                     "G",
-                    "F#",
-                    "F"
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "E",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Con la cara hecha aje",
-            "drez/n"
-        ],
-        [
-            "va la magia milita",
-            "r/n"
-        ],
-        [
-            "Dale soga",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "ponga humor a la v",
-            "erdad/n"
+            "Esta es una canción en esp",
+            "año  de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "esta tierra es cero pes",
-            "o/n"
+            "Es",
+            "t es una canción en español de rock argentino. /n Es",
+            "t  e",
+            "s ",
+            "u",
+            "n",
+            "a",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción e",
+            "n  e",
+            "spa",
+            "ño de rock argentino. /n P",
+            "an  circo la coco",
+            "a  así te hiciste creer.",
+            "",
+            "/n"
         ],
         [
+            "Os guantes de la inferio",
+            "con lucuria de ratón.",
+            "",
+            "/n"
+        ],
+        [
+            "Nunca aconsejó mi ar",
+            "reglo /n"
+        ],
+        [
+            "D",
+            "ale  soga,",
+            "pon humor la ver",
+            "dad /n Es",
+            "t  tierra se nos b",
+            "esó  no es r",
+            "eal ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Dale",
+            "soga ",
+            "pon humor la verdad.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Impachado de la bar,",
+            "la fortuna en soledad./n"
+        ],
+        [
+            "Nunca el peón se come a",
+            "l rey. /n D",
+            "al  so",
+            "ga  pon al h",
+            "uevo  la verda",
+            "d /n"
+        ],
+        [
+            "Dale s",
+            "oga,  pon al hu",
+            "ev  la verdad/n"
+        ],
+        [
+            "Esta ti",
+            "err  se nos besó",
+            "esta tierr",
+            "a  se nos besó,",
+            "est  tierr",
+            "se nos besó,",
             "no es rea",
-            "l",
+            "l ",
+            "",
+            "",
+            "",
             "",
             "",
             "",
@@ -73,8 +319,9 @@
         {
             "tipo": "Youtube",
             "id": "nM6iKmF1R2Y",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

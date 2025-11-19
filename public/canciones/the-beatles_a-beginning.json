@@ -8,46 +8,82 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
-                    "Bm7",
-                    "A",
-                    "Bm9"
-                ]
-            },
-            {
-                "nombre": "parte2",
-                "acordes": [
-                    "F7",
-                    "F6",
-                    "B",
+                    "F#",
+                    "F#",
+                    "F#",
                     "C#",
-                    "Am7",
-                    "Am7/G"
+                    "B",
+                    "F#",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A",
+                    "F#m",
+                    "D",
+                    "C",
+                    "D",
+                    "D#"
                 ]
             }
         ],
         "orden_partes": [
-            0,
-            1
+            0
         ]
     },
     "letras": [
-        [],
-        [],
-        [],
-        []
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "st  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est  es una canción en español de rock argentino."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 172,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "U2GRtcZnnbg",
-            "delay": 0
+            "delay": 5250.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

@@ -2,24 +2,150 @@
     "cancion": "haciendo-cosas-raras",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#",
                     "F#",
                     "B",
-                    "A"
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "F#",
+                    "F#",
+                    "B",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#",
                     "F#",
                     "F#"
                 ]
@@ -27,55 +153,144 @@
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Haciendo cosas raras/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Ya no importa/n"
+            "Haci",
+            "end  cosas ra",
+            "ra  para gente n",
+            "orma /n H",
+            "acien",
+            "cosas rar",
+            "a  sin pen",
+            "sa /n Y",
+            "a  no im",
+            "port  lo que imp",
+            "ort /n La locur",
+            "a  ya peg",
+            "ó  en las ma",
+            "dre ",
+            "",
+            "/n"
         ],
         [
-            "La locura ya peg",
-            "/nen las "
+            "Haciendo c",
+            "osa  raras para g",
+            "ente  norma",
+            "l /n Reven",
+            "tand  e",
+            "l  zoológico queri",
+            "éndos  matar/n"
         ],
         [
-            "madres/n"
+            "Y",
+            "a  no importa lo q",
+            "ue importa /n L",
+            "a  mentira ya p",
+            "egó  en l",
+            "a  sangre",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "La patota ya se abraza/n"
+            "Haciend",
+            "cosas raras p",
+            "ar  gente norm",
+            "a /n Bai",
+            "land ",
+            "com  locos s",
+            "in  escuch",
+            "a /n L",
+            "a  patota y",
+            "a  se abraz",
+            "a /n Baila",
+            "nd  po",
+            "el del frío/n"
         ],
         [
-            "Para no m",
-            "orir de fr",
-            "ío/n"
+            "Au",
+            "nqu  un metr",
+            "o  cuadrado h",
+            "aya  en cuarent",
+            "dibujos ay",
+            "e  visto",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Aunque en un metro cuadrado/n"
+            "Ya no i",
+            "mporta  lo que import",
+            "a ",
+            "",
+            "/n"
         ],
         [
-            "Hagan 40 d",
-            "ibujos ahí en el p",
-            "iso/n"
-        ],
-        [
-            "Ya no importa/n"
-        ],
-        [
-            "Ya no importa/n"
-        ],
-        []
+            "Y",
+            "a  no impor",
+            "t  lo que impo",
+            "rt ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "sjW6xMzNra8",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

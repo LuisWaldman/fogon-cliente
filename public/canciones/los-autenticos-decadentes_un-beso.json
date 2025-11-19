@@ -2,14 +2,28 @@
     "cancion": "un-beso",
     "banda": "los-autenticos-decadentes",
     "escala": "B7",
-    "bpm": 60,
+    "bpm": 151,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
+                    "Em",
                     "B7",
                     "Em",
                     "B7"
@@ -19,48 +33,347 @@
                 "nombre": "parte2",
                 "acordes": [
                     "Em",
-                    "Am",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
                     "Em",
                     "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Em",
-                    "E7"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Em"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
         [
-            "eso/n   yo me quedo t"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ieso/n   si me das la "
+            "Si me das un bes",
+            "o, yo me quedo ties",
+            "o. \n\nSi me das la mano, me ",
+            "pongo temblar. /n"
         ],
         [
-            "mano/n   me pongo a tem"
+            "Si nos agasamos, la no",
+            "che se hace de día. \n\nEl pa",
+            "rón nos ilumina el pe",
+            "rro empieza labrar. /n"
         ],
         [
-            "blar/nYo quero tu cal"
+            "Si nos agasamos, se le",
+            "vanta la vecina que llam",
+            "ó la policía, que no ",
+            "tardará  en llegar. /n"
         ],
         [
-            "or,/nsentirlo mas y mas,"
+            "Yo quiero tu calor, ",
+            "sentirlo más más ",
+            "vivir así el amor, ",
+            "la eternidad. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        []
+        [
+            "Si me das un ",
+            "beso, yo te lo pr",
+            "ometo. \n\nQue en una sem",
+            "ana vuelvo traba",
+            "jar. \n\nSi nos agasamo",
+            "s, compartimos la alegría /n"
+        ],
+        [
+            "El amor nos da la vida ",
+            "todo es felicida",
+            "d. \n\nSi nos agasamos, ",
+            "se levanta la vecina ",
+            "que llamó la policía, ",
+            "que no tardará en llegar. /n"
+        ],
+        [
+            "Yo quiero tu c",
+            "alor, sentirlo más ",
+            "más, vivir así el ",
+            "amor, la e",
+            "te",
+            "rn",
+            "id",
+            "ad",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo ",
+            "quiero tu calor, ",
+            "sentirlo más más, ",
+            "vivir así el amor, la ",
+            "e",
+            "te",
+            "rn",
+            "id",
+            "ad. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Si nos agasamos, la noche se hace de día. \n\nEl parón nos ilumina el perro empieza labrar. \n\nSi nos agasamos, se levanta la vecina que llamó la policía, que no tardará en llegar. \n\nSi nos agasamos, se levanta la vecina que ",
+            "llamó la policía, ",
+            "que no tardará en llegar. \n\nSi nos agasamos, se levanta la vecina que ll",
+            "amó la policía, que no tardará en llegar. /n"
+        ],
+        [
+            "Si nos agasamos, ",
+            "se levanta la vecina que llamó la policía, que no tardará en llegar. /n"
+        ],
+        [
+            "Si nos agasamos, se levanta la vecina que llamó ",
+            "la policía, que no tardará en llegar. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Yo quiero tu calor, sentirlo más más, vivir así el amor, la eternidad. "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "0afgvHKM5GA",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

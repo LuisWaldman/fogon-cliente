@@ -8,69 +8,192 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Am",
                     "E",
-                    "Am"
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G7",
-                    "C",
                     "E",
-                    "Am"
+                    "Am",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G7",
+                    "G7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0
+            2,
+            3,
+            4
         ]
     },
     "letras": [
         [
-            "agos hay un á",
-            "rbol/nque del olvido le ll"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "aman/ndonde v"
+            "Es",
+            "t  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "an a despena",
-            "rse, vidalitay,/nlos moribundos del "
+            "E",
+            "mis pagos hay un á",
+            "rbo  que d",
+            "el  olvido le lla",
+            "man  donde va",
+            "n  despenarse, vira",
+            "liza  los mori",
+            "bundo  del alm",
+            "a ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "alma./n"
+            "Para no pensar e",
+            "n  vos ba",
+            "j  el árbol del ol",
+            "vid  me a",
+            "cost  una nochecita vi",
+            "ralit  me quedé b",
+            "ien  dormid",
+            "o ",
+            "",
+            "",
+            "",
+            "al despertar ese s",
+            "ueñ  pensa",
+            "b  en vos otra v",
+            "ez ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Al despertar de ese sue",
-            "ño/npensaba "
-        ],
-        [
-            "en vos otra ve",
-            "z,/npues me olvi"
-        ],
-        [
-            "dé de olvid",
-            "arte, vidalitáy,/nen cuantito me aco"
-        ],
-        [
-            "sté./n"
-        ],
-        []
+            "Pues m",
+            "e  olvidé de olv",
+            "idart  v",
+            "iral",
+            "i  e",
+            "n  cuantito m",
+            "e  acosté.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "al despertar ese sueño pensaba en vos otra vez."
+        ]
     ],
-    "bpm": 80,
+    "bpm": 129,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "kxjuI8LtWXQ",
-            "delay": 0
+            "delay": 1300.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

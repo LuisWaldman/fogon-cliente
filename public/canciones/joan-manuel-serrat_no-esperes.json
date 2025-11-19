@@ -1,1 +1,335 @@
-{"cancion": "No-Esperes", "banda": "joan-manuel-serrat", "escala": "A", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["A", "D", "E"]}, {"nombre": "parte2", "acordes": ["Bm", "E"]}, {"nombre": "parte3", "acordes": ["A", "D", "A", "Bm", "E", "A"]}], "orden_partes": [0, 0, 1, 0, 0, 1, 0, 2, 0, 0, 1, 0, 0, 1, 0, 2]}, "letras": [["No esperes que un hombre m", "uera/npara sa"], ["ber que todo corre pel", "igro,/nni a que te c"], ["uenten los libros", "/n"], ["lo que est\u00e1n tra", "mando ah\u00ed fuera./n"], ["No esperes a que te de", "n los planos/npara sa"], ["tisfacer tu curiosidad", ",/nni a que el a"], ["ire tambi\u00e9n sea de ", "pago/n"], ["para gozar el placer de re", "spirar./n"], ["No esperes golpes de suerte,/nseguir\u00e1s a su mer"], ["ced/nmientras haya gente "], ["que/ntrafique con la "], ["muerte./nNo esperes de ning\u00fan"], [" modo/nque se dignen consent"], ["ir/ntu acceso al porve"], ["nir/n"], ["los que hoy arrasan con to", "do./n"], [], ["No esperes a que se ac", "aben/n"], ["para desear las cosas m\u00e1s que n", "unca/n"], ["ni a responder las pregu", "ntas/n"], ["cuando los otros se ca", "llen./n"], ["No esperes el consenti", "miento/n"], ["ni a que te proporcionen un m", "anual,/n"], ["ni a que el hor\u00f3scopo te sea ", "propicio,/n"], ["ni a que el cielo te mande una se", "\u00f1al./n"], ["No esperes golpes de suerte,/nseguir\u00e1s a su mer"], ["ced/nmientras haya gente "], ["que/ntrafique con la "], ["muerte./nNo esperes de ning\u00fan"], [" modo/nque se dignen consent"], ["ir/ntu acceso al porve"], ["nir/nlos que hoy arrasan con todo."], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "v7B4O82goCk", "delay": 0}]}
+{
+    "cancion": "No-Esperes",
+    "banda": "joan-manuel-serrat",
+    "escala": "A",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "A#",
+                    "A",
+                    "D",
+                    "A",
+                    "D",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "A",
+                    "D",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "D",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No ",
+            "esperes que un ",
+            "hombre muera ",
+            "p",
+            "ara saber que ",
+            "todo corre pe",
+            "ligro ",
+            "/n"
+        ],
+        [
+            "Ni que te cuen",
+            "ten los libros ",
+            "lo que están ",
+            "tramando  ahí f",
+            "uera \n\nNo ",
+            "esperes que ",
+            "te den los pl",
+            "anos ",
+            "para  satis",
+            "facer tu cu",
+            "riosidad /n"
+        ],
+        [
+            "Ni ",
+            "que el aire t",
+            "ambién sea ",
+            "de pag ",
+            "p",
+            "ara gozar el p",
+            "lacer de ",
+            "respi",
+            "rar \n\nNo ",
+            "esperes golpes de ",
+            "suerte seguir",
+            "ás su merc",
+            "ed \n\nMientr",
+            "as haya gente ",
+            "que trafiqu ",
+            "con la muer",
+            "te \n\nNo esper",
+            "es de ningún modo ",
+            "que se dignen ",
+            "con sen",
+            "tir tu acce",
+            "so al porven",
+            "ir los que ",
+            "hoy arrasan con ",
+            "todo  ",
+            "/n"
+        ],
+        [
+            "No espe",
+            "res que se aca",
+            "be ",
+            "para d",
+            "esear las cosa",
+            "s más que nu",
+            "nca /n"
+        ],
+        [
+            "Ni r",
+            "esponder las pregu",
+            "ntas cuando ",
+            "los otros se c",
+            "allen /n"
+        ],
+        [
+            "No espe",
+            "res el consen",
+            "timiento /n"
+        ],
+        [
+            "Ni que ",
+            "te proporcion",
+            "en un manua",
+            "l /n"
+        ],
+        [
+            "Ni que el ",
+            "horóscopo te ",
+            "sea propi",
+            "cio /n"
+        ],
+        [
+            "Ni que el ",
+            "cielo te mande ",
+            "una señ",
+            "al /n"
+        ],
+        [
+            "No espere ",
+            "golpes de suerte se",
+            "guirás su m",
+            "erced \n\nM",
+            "ientras haya gen",
+            "te que ",
+            "trafique con la m",
+            "uerte \n\nNo ",
+            "esperes de ningún m",
+            "odo que se di",
+            "gnen con s",
+            "entir ",
+            "tu acceso al p",
+            "orvenir ",
+            "los que hoy arras",
+            "an con t",
+            "odo ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "No esperes golpes de suerte "
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "v7B4O82goCk",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

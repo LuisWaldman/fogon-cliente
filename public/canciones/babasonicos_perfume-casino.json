@@ -2,65 +2,499 @@
     "cancion": "perfume-casino",
     "banda": "babasonicos",
     "escala": "Bm7",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Bm7",
-                    "Bbmaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
                     "Amaj7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7/F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Amaj7/F#",
-                    "Bm",
+                    "Amaj7/F#",
+                    "F#m",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Amaj7/F#",
+                    "Amaj7/F#",
+                    "F#m",
                     "E",
-                    "A",
+                    "E",
                     "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Bm",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Amaj7",
+                    "Amaj7",
+                    "Amaj7/F#",
+                    "Amaj7/F#"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Amaj7/F#",
+                    "Amaj7/F#",
+                    "Amaj7/F#"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Amaj7/F#",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ]
     },
     "letras": [
         [
-            "n cad",
-            "a acorde",
-            ", se tocan  las cuerdas de manera unisona. /nhacia el turq"
+            "",
+            "/n"
         ],
         [
-            "uesa argel ",
-            "/nal horiz"
+            "Es",
+            "t  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "onte aquel ",
-            "/nSu pareo s"
+            "Est",
+            "a  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "e vuela /ny el"
+            "Est",
+            "e",
+            "",
+            "u",
+            "n",
+            "a",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción",
+            "e  es",
+            "paño  de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " aliento del ma",
-            "r.. ",
-            "la desespera "
+            "Esta es",
+            "u",
+            "n",
+            "a",
+            "",
+            "canc",
+            "ió  en es",
+            "pañ",
+            "de rock argentino./n"
+        ],
+        [
+            "Que algo habrí",
+            "a tomado /n N",
+            "o  control",
+            "su mueca/n"
+        ],
+        [
+            "Dond  habrá",
+            "estad /n E",
+            "n  la cub",
+            "iert  de u",
+            "n /n Crucero",
+            "portugué/n"
+        ],
+        [
+            "Con su cuerpo v",
+            "arad ",
+            "la orilla del",
+            "ma",
+            "r /n Se de",
+            "sesper /n"
+        ],
+        [
+            "Se d",
+            "ese",
+            "spe ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Si tu inte",
+            "grad de nudo /n Se h",
+            "cambi",
+            "ad /n"
+        ],
+        [
+            "Si tienes nost",
+            "algi de /n Ma",
+            "rtin",
+            "a /n"
+        ],
+        [
+            "Tus amigos ya n",
+            "o son para ella /n De lo",
+            "pensa",
+            "d /n De ti se h",
+            "a abrazado /n T",
+            "e  los",
+            "nece",
+            "sita",
+            "",
+            "/n"
+        ],
+        [
+            "S",
+            "i  ese e",
+            "s el descenso /n Hormof",
+            "éric de la mujer /n Par",
+            "fume  si no entran e",
+            "n wats /n Entran e",
+            "n  whiskyas",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "tá  teniéndome a",
+            "nt  disco",
+            "",
+            "/n"
+        ],
+        [
+            "Suspetosamente n",
+            "adi ",
+            "",
+            "/n"
+        ],
+        [
+            "Pe",
+            "ligrosament  h",
+            "embr /n R",
+            "evescantem",
+            "en  l",
+            "en/n"
+        ],
+        [
+            "M",
+            "revela co",
+            "n  su pa",
+            "s /n"
+        ],
+        [
+            "Un mi",
+            "steri  ca",
+            "minant /n"
+        ],
+        [
+            "E",
+            "s  la c",
+            "lav  del dest",
+            "in /n Que d",
+            "es",
+            "ti",
+            "",
+            "/n"
+        ],
+        [
+            "Instantánea",
+            "ment  disc",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "PxM5EQ2k6aQ",
-            "delay": 0
+            "delay": 24690.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

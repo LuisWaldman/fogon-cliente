@@ -1,1 +1,477 @@
-{"cancion": "bolero-y-habanera", "banda": "silvio-rodriguez", "escala": "D", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["D", "G", "A7"]}, {"nombre": "parte2", "acordes": ["D", "Bm", "A", "G", "Em"]}, {"nombre": "parte3", "acordes": ["A7", "F#m", "Bm7", "G", "A", "A7", "D", "Bm"]}, {"nombre": "parte4", "acordes": ["F#m", "A", "A7", "D", "D7", "G", "E", "D"]}], "orden_partes": [0, 0, 1, 2, 3]}, "letras": [["A)Tu la per", "diste pero aq", "u\u00ed se q", "ueda/nal "], ["fin y al cabo est", "a como un obr", "ero/nc"], ["onozco un c", "aso que me da mas pe", "na/n"], ["una muchacha", " de poder coto", "rro/np"], ["or una chapa H.K. en febr", "ero/ntorc"], ["i\u00f3 camino y se per", "di\u00f3 del m", "orro./nB)Quien "], ["hace altar de la gana", "ncia/ny p"], ["ierde amor pues", " la codici", "a muerde/nj"], ["amas en y", "o y siem", "pre all\u00e1 en el re", "sto."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "A7RSdJ-mm0c", "delay": 0}]}
+{
+    "cancion": "bolero-y-habanera",
+    "banda": "silvio-rodriguez",
+    "escala": "D",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "E",
+                    "Em",
+                    "Bm7",
+                    "Bm",
+                    "D",
+                    "A",
+                    "A",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "A7",
+                    "G",
+                    "A7",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm7",
+                    "Bm7",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Bm",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A7",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "G",
+                    "G",
+                    "Bm",
+                    "F#m",
+                    "A",
+                    "D7",
+                    "G",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "E",
+                    "A7",
+                    "A7",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Bm",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "A7",
+                    "Bm7",
+                    "Bm7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "A",
+                    "A7",
+                    "A7",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Bm",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "A7",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tu ",
+            "la perdiste pero a",
+            "quí se queda, ",
+            "al fin al cabo esta c",
+            "omo un obrero, \n\nC",
+            "onozco un caso que ",
+            "me da mas pena, ",
+            "",
+            "/n"
+        ],
+        [
+            "Una muchacha de ",
+            "por el cotor, /n"
+        ],
+        [
+            "Por una chapa ",
+            "checa  en febrer",
+            "o, \n\nTorció camino se ",
+            "perdió del mo",
+            "rro. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En todo caso la ",
+            "sabras presente /n"
+        ],
+        [
+            "Latiendo aún para ",
+            "las nobles cosas, \n\nH",
+            "ino partida con ",
+            "el alma ine",
+            "rte, ",
+            "/n"
+        ],
+        [
+            "Lo que te falta te ",
+            "abandona menos, /n"
+        ],
+        [
+            "Solo mudo desc",
+            "uidado la rosa, /n"
+        ],
+        [
+            "No se trocó la ",
+            "flor por el din",
+            "ero. ",
+            "/n"
+        ],
+        [
+            "Quien hace al ",
+            "tarde la ganancia pie",
+            "rde, \n\nLa condición, ",
+            "la latitud, el puest",
+            "o, pierde amor ",
+            "pues la codicia muer",
+            "de, \n\nJamás en yo ",
+            "siempre allá en el ",
+            "resto. ",
+            "/n"
+        ],
+        [
+            "Por otra p",
+            "arte de tener amor",
+            "es, \n\nEs pretend",
+            "er para el universo, \n\nQu",
+            "ien lleva amor ",
+            "asume  sus dolor",
+            "es, no lo para ",
+            "el sol ni su r",
+            "ever",
+            "so. /n"
+        ],
+        [
+            "Tu la perdiste p",
+            "ero aquí se queda, /n"
+        ],
+        [
+            "Al fin al cabo es",
+            "ta como un obrero, /n"
+        ],
+        [
+            "Conozco un caso ",
+            "que me da mas pena",
+            ", ",
+            "/n"
+        ],
+        [
+            "Una muchacha ",
+            "de pobre del coto",
+            "r, \n\nPor una chapa ",
+            "checa en febrero, /n"
+        ],
+        [
+            "Torció camino ",
+            "se perdió del m",
+            "orro. ",
+            "/n"
+        ],
+        [
+            "Vaya con ",
+            "suerte  quien se cree ast",
+            "uto, \n\nPorque ha log",
+            "rado acumular objeto",
+            "s, \n\nPobre morta",
+            "l que desalmado ",
+            "bruto,  \n\nPerdió el amo",
+            "r se perdió el respet",
+            "o. ",
+            "/n"
+        ],
+        [
+            "Por otr ",
+            "parte de tener am",
+            "ores, \n\nEs pret",
+            "ender para el universo, /n"
+        ],
+        [
+            "Quien lleva am",
+            "or asume sus dolo",
+            "res, no lo pa",
+            "ra el sol ni su ",
+            "rever",
+            "so. ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "En todo ca",
+            "so la sabas presente /n"
+        ],
+        [
+            "Latiendo pa",
+            "ra las nobles cosas, /n"
+        ],
+        [
+            "Dino partid ",
+            "con el alma ine",
+            "rte. ",
+            "/n"
+        ],
+        [
+            "Lo que te falta ",
+            "te abandona menos /n"
+        ],
+        [
+            "Solo mudo ",
+            "de cuidado la rosa /n"
+        ],
+        [
+            "No se troco ",
+            "la flor por el ",
+            "dinero.  ",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "A7RSdJ-mm0c",
+            "delay": 4000.0
+        }
+    ],
+    "calidad": 1
+}

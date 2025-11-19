@@ -2,19 +2,25 @@
     "cancion": "cabeza-de-maceta",
     "banda": "divididos",
     "escala": "F#9",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "F#9",
                     "F#9",
-                    "G9",
                     "F#9",
-                    "G9"
+                    "F#9"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#9",
+                    "F#9"
                 ]
             },
             {
@@ -22,184 +28,264 @@
                 "acordes": [
                     "F#9",
                     "F#9",
-                    "F#9",
-                    "F#9",
-                    "F#9",
-                    "B7",
-                    "C#7"
+                    "F#9"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "F#9",
-                    "C#7",
-                    "B7"
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "G9",
+                    "G9"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "G9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
                     "F#9",
                     "C#7",
-                    "D7",
-                    "B7",
-                    "E",
-                    "E",
-                    "E",
-                    "E"
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "C#7",
+                    "C#7",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9",
+                    "F#9"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
             2,
-            0,
-            0,
-            0,
-            1,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Buey/nesquivando el baho"
-        ],
-        [
-            ",",
             "",
             "",
-            "/nani"
+            "",
+            "/n"
         ],
         [
-            "llado y turco/nchúcaro volca"
+            "¡Voy!/n"
         ],
         [
-            "dor.",
+            "Esquivand",
+            "el b",
+            "aú/n"
+        ],
+        [
+            "Anichado en tur",
+            "co  tu caro v",
+            "olcado /n"
+        ],
+        [
+            "Fue e",
+            "l  gotor e",
+            "ntr  goces",
+            "",
+            "goces /n Va b",
+            "uscand  luces",
+            "va al saco",
+            "chup",
+            "irl ",
+            "/n"
+        ],
+        [
+            "Rotaci",
+            "ón  dispersión",
+            "",
+            "descalci",
+            "ficad /n Vie",
+            "n  en este vaco",
+            ",  cabeza de man",
+            "zet ",
             "",
             "",
-            "/nBuey glo"
+            "/n"
         ],
         [
-            "tón/nentre gose y g"
+            "Est",
+            "buey, de gran s",
+            "ud",
+            "o /n Espe",
+            "rand  el sust",
+            "o  se hizo artista p",
+            "opó /n"
         ],
         [
-            "oses,",
+            "Se",
+            "ahog",
+            "ó  a",
+            "co",
+            "g /n Fue g",
+            "argant  larga,",
+            "fundero  de l",
+            "o ",
+            "",
+            "/n"
+        ],
+        [
+            "R",
+            "otación  dispe",
+            "rsión ",
+            "descalci",
+            "ficad /n Vie",
+            "n  en cuesta abajo,",
+            "cabeza de man",
+            "zet ",
             "",
             "",
-            "/nva busc"
-        ],
-        [
-            "ando luces/npasta, gofio y chup"
-        ],
-        [
-            "ines.",
             "",
             "",
-            "/nRotaci"
-        ],
-        [
-            "ón,",
-            "/ndispersi"
-        ],
-        [
-            "ón/ndescalc"
-        ],
-        [
-            "ificado,/nviene cu"
-        ],
-        [
-            "esta abajo./n"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-            "ey/nde gran sud"
-        ],
-        [
-            "or,",
             "",
             "",
-            "/nesper"
-        ],
-        [
-            "ando el susto/nse hizo artista y popo"
-        ],
-        [
-            ".",
             "",
             "",
-            "/nSe ahog"
-        ],
-        [
-            "ó/na go-go"
-        ],
-        [
-            ",",
             "",
             "",
-            "/nfue garc"
+            "",
+            "/n"
         ],
         [
-            "a del arca/ny puntero de No"
-        ],
-        [
-            "é.",
+            "Rotación, d",
+            "ispersión ",
+            "des",
+            "calcific",
+            "a /n Viene en cue",
+            "sta  abajo, cabeza d",
+            "e  manzeta",
             "",
             "",
-            "/nRotaci"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ón,",
-            "/ndispersi"
-        ],
-        [
-            "ón/ndescalcificado,"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "S",
+            "e  ahogó,",
+            "a",
+            "c",
+            "o",
+            "g",
+            "ó",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "423NwIhDVhA",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

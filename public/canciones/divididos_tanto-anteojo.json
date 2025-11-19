@@ -2,53 +2,293 @@
     "cancion": "tanto-anteojo",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 135,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
                     "A",
                     "E",
+                    "E",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
                     "A"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Tanto a",
-            "nteojo, ta",
-            "nto ant",
-            "eojo/n"
-        ],
-        [
-            "clínic",
-            "a del r",
-            "ock",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Por sans",
-            "ón de ",
-            "los dom",
-            "ingos"
+            "Tan",
+            "t  anteojo, tant",
+            "o  anteojo, c",
+            "línic  de ro",
+            "ck ",
+            "pinceletas en",
+            "vigilia  ba",
+            "b  de un autor./n"
+        ],
+        [
+            "Tant",
+            "anteojo, tanto a",
+            "nteojo  tem",
+            "pl  de escri",
+            "tor  esq",
+            "uivand  los chi",
+            "chones  migazo",
+            "com",
+            "pet",
+            "ir ",
+            "humedad de a",
+            "lma,  hu",
+            "meda  de al",
+            "m  gau",
+            "cha",
+            "/n"
+        ],
+        [
+            "P",
+            "o /n Samsung d",
+            "e  los domingos",
+            "lleno ab",
+            "urrido ",
+            "tanto anteojo, ta",
+            "nt  anteojo, l",
+            "a  panza se dej",
+            "ó /n C",
+            "harlatán  un se",
+            "x  de antes,",
+            "libre ya tem",
+            "ín  tant",
+            "o  anteojo, tanto",
+            "anteojo  quéd",
+            "ens  p",
+            "edi",
+            "rs ",
+            "humedad d",
+            "alma,",
+            "humeda  de a",
+            "lma  gau",
+            "cha ",
+            "",
+            "/n"
+        ],
+        [
+            "Por",
+            "drogado ",
+            "por dr",
+            "ogad  bel",
+            "la  a",
+            "rt",
+            "e ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Nari",
+            "có  del cicl",
+            "ón  yo te d",
+            "ejo  perfu",
+            "mad  en la e",
+            "squin  p",
+            "ara  siem",
+            "pre /n"
+        ],
+        [
+            "Naricón",
+            "de  ciclón",
+            "yo te dej",
+            "o  perfuma",
+            "d  en la es",
+            "quin  p",
+            "ar  siempr",
+            "e ",
+            "para siempr",
+            "e  p",
+            "ara  siempre",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Por drogado, por d",
+            "rog",
+            "a ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "be",
+            "ll  artes."
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "F4KSWSNXwq0",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

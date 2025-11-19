@@ -2,51 +2,103 @@
     "cancion": "uso",
     "banda": "babasonicos",
     "escala": "Em7",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Em7",
-                    "Dsus4",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D/F#",
-                    "Am",
                     "G",
-                    "D/F#",
-                    "Am",
-                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "C",
                     "G",
-                    "C",
-                    "Cm",
-                    "Em",
-                    "Em",
-                    "Dsus4",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "C",
                     "G",
-                    "C",
-                    "Cm",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
                     "G"
                 ]
             }
@@ -55,70 +107,97 @@
             0,
             1,
             2,
-            1,
-            3
+            3,
+            4,
+            5
         ]
     },
     "letras": [
-        [],
         [
-            "Nadie me leyó el manual/nCuando c"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "reí que había pe",
-            "rdido la m",
-            "agia/nencont"
+            "Esta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ré el vaiv",
-            "én de una puerta entre ab",
-            "ierta/ninvitándome a "
+            "Esta e",
+            "s  u",
+            "n  can",
+            "ció en español de rock argentino. /n Esta es una canción en españo",
+            "de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "dar un paseo p",
-            "or tu fantas",
-            "a/na mirar t"
+            "Esta e",
+            "s  un",
+            "a  canción en e",
+            "spa",
+            "ñ de rock argentino. /n Est",
+            "a  e",
+            "s",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "u",
+            "n",
+            "a  canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "odo desde tus ojos por una ve",
-            "z/nporque los tr"
+            "Es",
+            "t  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ucos sorprenden ",
-            "solo una vez",
-            "./n"
-        ],
-        [
-            "Alguien me leyó los labios/nCuando c"
-        ],
-        [
-            "reí que había pe",
-            "rdido la m",
-            "agia/nencont"
-        ],
-        [
-            "ré el vaiv",
-            "én de una puerta entre ab",
-            "ierta/ninvitándome a "
-        ],
-        [
-            "dar un paseo p",
-            "or tu fantas",
-            "a/na mirar t"
-        ],
-        [
-            "odo desde tus ojos por una ve",
-            "z/nporque los trucos sorprenden solo una vez."
-        ],
-        [],
-        []
+            "Esta e",
+            "s  una canción en español de rock argentino."
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "89QpkC1yOnI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

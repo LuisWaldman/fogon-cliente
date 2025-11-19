@@ -2,220 +2,256 @@
     "cancion": "pasiones-zurdas-derechas",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G#5",
+                    "G#5"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
-                    "A5",
-                    "G#5",
-                    "F#5",
                     "E",
-                    "A5",
+                    "E",
+                    "E",
                     "G#5",
-                    "B5"
+                    "G#5"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A#5",
-                    "A5",
-                    "B5",
-                    "F#5"
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "G#5",
+                    "G#5"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "A#5",
+                    "B5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "B5",
+                    "A5",
+                    "A5",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G#5",
+                    "E",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "A#5",
+                    "B5",
+                    "G#5 A5",
                     "A5",
                     "B5",
-                    "F#5"
+                    "B5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A5",
+                    "A5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5 B5",
+                    "G#5",
+                    "G#5 B5",
+                    "G#5 B5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5",
+                    "G#5 B5",
+                    "G#5 B5",
+                    "G#5 B5",
+                    "G#5 B5",
+                    "G#5 B5",
+                    "G#5 B5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A#5",
+                    "A#5 B5",
+                    "A#5 B5"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A#5 B5",
+                    "A5",
+                    "B5",
+                    "G#5 A5",
+                    "G#5 A5",
+                    "B5",
+                    "B5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "B5",
+                    "G#5 A5",
+                    "G#5",
+                    "B5",
+                    "B5",
+                    "A5",
+                    "A5",
+                    "A5",
+                    "A5"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G#5"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
             2,
-            2,
-            2,
-            0,
-            1,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "Hay dos jazmines en el ciel",
-            "o",
-            "/nHay algo alla mas all"
-        ],
-        [
-            "a/n"
-        ],
-        [
-            "Se hace un grito en el soni",
-            "do",
-            "/ny son la luz de la lu"
-        ],
-        [
-            "z./n"
-        ],
-        [
-            "Hay un infierno en este cie",
-            "lo,",
-            "/nhay un porque en este"
-        ],
-        [
-            " mar,/n"
-        ],
-        [
-            "¿cuál es el ciclope del s",
-            "iglo?,",
-            "/n¿cuál es la luz de la"
-        ],
-        [
-            " luz?",
-            "/nEl pa"
-        ],
-        [
-            "pel y ",
-            "la tinta",
-            "/nson e"
-        ],
-        [
-            "l vuelto de un g",
-            "ran favo",
-            "r./nY mos"
-        ],
-        [
-            "traste",
-            " la hila",
-            "cha/nlavan"
-        ],
-        [
-            "do el traje d",
-            "e pap",
-            ".",
-            "/nNoticia muere al otro d"
-        ],
-        [
-            "ía",
-            "/nsiempre vive la c"
-        ],
-        [
-            "ancion/n"
-        ],
-        [
-            "en este mundo cocoliche",
             "",
-            "/nsos el mejor sos el pe"
+            "/n"
         ],
         [
-            "or.",
-            "/nEl pa"
+            "Hay dos ca",
+            "spine  en el cielo,",
+            "hay algo allá, más allá",
+            "se hace un grito en el s",
+            "onido  son l",
+            "a  luz de la luz/n"
         ],
         [
-            "pel y ",
-            "la tinta",
-            "/nson e"
+            "Hay un infierno en este cielo,",
+            "hay un porqué en este m",
+            "ar. /n ¿Cuál es e",
+            "l siglo? /n ¡Pede el siglo!",
+            "¿Cuál es la luz de la l",
+            "uz? /n"
         ],
         [
-            "l vuelto de un g",
-            "ran favo",
-            "r./nY mos"
+            "El papel",
+            "la t",
+            "int  son el volto d",
+            "un gran favor",
+            "mostra",
+            "st  la hila",
+            "ch  lavando el traje d",
+            "e  papá",
+            ". /n ¡Noticia muere al",
+            "otr  día!/n"
         ],
         [
-            "traste",
-            " la hila",
-            "cha/nlavan"
+            "Siempr  vive la canción,",
+            "en este mundo poco d",
+            "ice  sos el mejor",
+            ",  sos el peo",
+            "r /n E",
+            "l  papel",
+            "la tint",
+            "a  son el volto de un gr",
+            "a  favor",
+            "mostraste",
+            "l  hilacha l",
+            "avand  el traje d",
+            "e  papá./n"
         ],
         [
-            "do el traje d",
-            "e pap",
-            "./nTres "
+            "Resapio  de un loro que",
+            "redacta ",
+            "regula moral de un po",
+            "rvenir ",
+            "congel la gente para un",
+            "mañana  p",
+            "asione  absurdas de",
+            "recha ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "sabios de un lor",
-            "o que re",
-            "dacta/nregul"
+            "El papel la tinta son el volto de un gran favor mostraste la hilacha lavando el traje de papá.",
+            "",
+            "/n"
         ],
         [
-            "a el vuelto de u",
-            "n porven",
-            "ir/nconge"
+            "E",
+            "l  papel",
+            "la tinta s",
+            "on  el volto de un gran",
+            "favo ",
+            "mostraste l",
+            "a  hilacha l",
+            "avand  el traje de p",
+            "apá. /n E",
+            "l  papel l",
+            "a  tint",
+            "son el volto de un gran",
+            "favo ",
+            "mostraste l",
+            "a  hilach",
+            "lavando el traje d",
+            "e  pa",
+            "pá ",
+            "/n"
         ],
         [
-            "la que te par",
-            "a mañan",
-            "a/nEl p"
-        ],
-        [
-            "apel y",
-            " la tint",
-            "a/nson e"
-        ],
-        [
-            "l vuelto de un g",
-            "ran favo",
-            "r./nY mos"
-        ],
-        [
-            "traste",
-            " la hila",
-            "cha/nlavan"
-        ],
-        [
-            "do el traje d",
-            "e pap",
-            ". Si/nEl "
-        ],
-        [
-            "papel ",
-            "y la tin",
-            "ta/nson e"
-        ],
-        [
-            "l vuelto de un g",
-            "ran favo",
-            "r./nY mos"
-        ],
-        [
-            "traste",
-            " la hila",
-            "cha/nlavan"
-        ],
-        [
-            "do el traje d",
-            "e pap",
-            ", de papito."
+            "Subtítulos por la comunidad de /n Amara .org"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "b4hUxyK_jjo",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

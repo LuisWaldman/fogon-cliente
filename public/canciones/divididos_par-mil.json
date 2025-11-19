@@ -2,18 +2,30 @@
     "cancion": "par-mil",
     "banda": "divididos",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "D",
                     "G",
-                    "D"
+                    "G",
+                    "G"
                 ]
             },
             {
@@ -21,119 +33,308 @@
                 "acordes": [
                     "G",
                     "G",
-                    "G",
-                    "G",
-                    "C",
-                    "Cmaj7",
-                    "C"
+                    "G"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
                     "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            0,
-            0,
-            0,
-            1,
-            0,
-            1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
-        [],
         [
-            "ue hay de esa imagen en mi",
-            " cielo",
-            "",
-            "/nN"
-        ],
-        [
-            "o creo ser tan ",
-            "importante",
-            "",
-            "/n"
-        ],
-        [
-            "Camino mi propia luz/n"
-        ],
-        [
-            "Y me siento un haz de luz/n"
-        ],
-        [
-            "Claridad de propio ser/nL"
-        ],
-        [
-            "uz, luz, luz del alma",
             "",
             "",
-            "/nSoy un hombre que espera el al"
-        ],
-        [
-            "ba",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "Que hay de esa imagen de m",
-            "i infierno",
+            "¿/n"
+        ],
+        [
+            "Qu  hay d",
+            "e  esa imagen e",
+            "n  mi cielo?",
+            "/n"
+        ],
+        [
+            "No c",
+            "re  ser tan",
+            "important/n"
+        ],
+        [
+            "Ca",
+            "min",
+            "mi propia luz",
+            "me sie",
+            "nt  un haz de l",
+            "u /n Clarida",
+            "del propio se",
+            "r /n Luz, l",
+            "uz  luz d",
+            "el  a",
+            "lm /n S",
+            "o  u",
+            "n  hombre que e",
+            "sper  el al",
+            "b ",
+            "",
+            "¿/n"
+        ],
+        [
+            "Qu  hay de e",
+            "sa  imagen en",
+            "m  infierno?",
+            "/n"
+        ],
+        [
+            "Si ya f",
+            "ui  roto to",
+            "ma  aire",
+            "/n"
+        ],
+        [
+            "Caminast",
+            "por mis braz",
+            "a /n Me soñé e",
+            "n  la oscurida/n"
+        ],
+        [
+            "Me estrel",
+            "l  contra m",
+            "i  luz, lu",
+            "z  lu",
+            "z  de",
+            "alm",
+            "a /n Soy u",
+            "n  hombre que esp",
+            "er  el a",
+            "lb /n"
+        ],
+        [
+            "L",
+            "uz, ",
+            "",
+            "luz,",
+            "",
+            "luz d",
+            "el alma /n Soy un hombre q",
+            "u",
+            "e  espera el alba/n"
+        ],
+        [
+            "N",
+            "confunda ch",
+            "e pastor /n N",
+            "o  me interesa t",
+            "u cielo /n To",
+            "d  el agua v",
+            "a hacia el mar /n L",
+            "uz  luz,",
+            "luz d",
+            "e  alm",
+            "a /n"
+        ],
+        [
+            "Soy un hom",
+            "br  que espera e",
+            "l  alba/n"
+        ],
+        [
+            "Lu",
+            "z  luz,",
+            "luz d",
+            "el  a",
+            "lm /n S",
+            "o  un hombre q",
+            "ue  espera e",
+            "l  alm",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "Si ya fui roto al ",
-            "tomar aire",
+            "Luz, luz, l",
+            "u",
+            "z",
             "",
-            "/n"
-        ],
-        [
-            "Caminaste por mis brasas/n"
-        ],
-        [
-            "Me soñe en la oscuridad/n"
-        ],
-        [
-            "Me estrelle contra mi/nL"
-        ],
-        [
-            "uz, luz, luz del alma",
-            "",
-            "",
-            "/nSoy un hombre que espera el al"
-        ],
-        [
-            "ba",
-            "",
-            "",
-            "/n"
-        ],
-        [],
-        [
-            "No confunda che pastor/nNo me interesa tu cielo"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+            "d",
+            "e",
+            "l",
+            "alma"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Z_tHBX0mj1s",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -2,26 +2,53 @@
     "cancion": "vivo-como-un-gitano",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 107,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B",
+                    "G",
+                    "Em",
+                    "G",
+                    "C",
+                    "Em",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
-                    "D",
+                    "G",
                     "Em",
-                    "C"
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "Em",
+                    "C",
                     "D",
                     "Em",
+                    "C",
+                    "Em",
+                    "D",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
                     "D"
                 ]
             },
@@ -29,113 +56,208 @@
                 "nombre": "parte3",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "Em",
+                    "Em",
+                    "G",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
                     "C",
-                    "D"
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "G",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            1,
-            0,
-            0,
             1,
             2,
-            2,
-            2,
-            1,
-            2,
-            2
+            3,
+            4,
+            5
         ]
     },
     "letras": [
         [
-            "mo voy a hacer c",
-            "on voz /npa"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "ra que puedas ente",
-            "nder /nno"
+            "Como ",
+            "voy ser con ",
+            "vos \n\nPara que ",
+            "puedas  entende /n"
         ],
         [
-            " es que no te qu",
-            "iera no /nes"
+            "No es que ",
+            "no te quiera, ",
+            "no \n\nEs que me ",
+            "tengo que move",
+            "r \n\nCamb",
+            "iar de casa otra ",
+            "vez \n\nQue otro ",
+            "sol me queme la p",
+            "iel ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " que me tengo que",
-            " mover /nCa"
+            "No me ",
+            "puedo conf",
+            "ormar \n\nCon la ",
+            "sombra del amo",
+            "r \n\nCuand ",
+            "la pasión se ",
+            "fue \n\nNo qu",
+            "eda nada por ha",
+            "cer \n\nMir",
+            "ar la casa por la v",
+            "entana s",
+            "olo me llevo el vino ",
+            "la guitarra v",
+            "ivo co",
+            "mo un g",
+            "ita",
+            "no ",
+            "vivo  com ",
+            "un g",
+            "itano ",
+            "v",
+            "ivo como ",
+            "un gi",
+            "tano ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "mbiar de casa otr",
-            "a vez /nqu"
+            "No ",
+            "me puedo co",
+            "nformar /n"
         ],
         [
-            "e otro sol me que",
-            "me la piel /nNo"
-        ],
-        [
-            " me puedo confor",
-            "mar /nco"
-        ],
-        [
-            "n la sombra del a",
-            "mor /ncu"
-        ],
-        [
-            "ando la pasión ",
-            "se fue /nno"
-        ],
-        [
-            " queda nada por h",
-            "acer /nTi"
-        ],
-        [
-            "rar la casa por l",
-            "a ventana /nso"
-        ],
-        [
+            "Con la sombra del a",
+            "mor \n\nCua",
+            "ndo la pasió",
+            "n se fue \n\nNo ",
+            "queda nada por h",
+            "acer \n\nMi",
+            "rar la casa por la ",
+            "ventana so",
             "lo me llevo el vi",
-            "no y la guitarra /n"
-        ],
-        [
-            "Vivo c",
-            "omo un git",
-            "ano /n"
-        ],
-        [
-            "vivo c",
-            "omo  gi",
-            "tano /n"
-        ],
-        [
-            "vivo c",
-            "omo git",
-            "ano /n"
-        ],
-        [],
-        [
-            "mbiar de casa t",
-            "ra vez /nqu"
-        ],
-        [
-            "e otro sol me q",
-            "ueme la piel /n"
-        ],
-        [
-            "Vivo co",
-            "mo gitano /nvivo como gitano... "
-        ],
-        []
+            "no la guitarra ",
+            "vivo  c",
+            "omo un g",
+            "ita",
+            "no v",
+            "ivo com",
+            "o un g",
+            "ita",
+            "no v",
+            "ivo co",
+            "mo un git",
+            "ano ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "AjS1dbNO7Po",
-            "delay": 0
+            "delay": 2000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

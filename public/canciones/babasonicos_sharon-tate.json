@@ -2,38 +2,107 @@
     "cancion": "sharon-tate",
     "banda": "babasonicos",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 95,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Em",
-                    "C7",
                     "Em",
-                    "F7",
+                    "Em",
                     "Em",
                     "Am",
-                    "C7",
-                    "B7"
+                    "Am",
+                    "C7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E",
-                    "G#m",
-                    "F#m"
+                    "C7",
+                    "C7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "Em",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
                     "E",
                     "A",
-                    "Dm"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "F#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "E",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
@@ -41,118 +110,96 @@
             0,
             1,
             2,
-            1,
-            2,
-            2,
-            0,
-            0,
-            1,
-            2,
-            1,
-            2,
-            2
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "  Angel de Sat",
-            "n/n"
+            "Ángel de/n"
         ],
         [
-            "  Lunática ende",
-            "moniada/n"
+            "Satan",
+            "lunati",
+            "c  endemonia",
+            "da  plonda v",
+            "erdad  s",
+            "ierva  de",
+            "l  mar/n"
         ],
         [
-            "  Blonda belda",
-            "d, sierva ",
-            "del mal",
-            "/n  "
-        ],
-        [
-            "Lu ",
-            "ci fe",
-            "r la espera",
-            "/n  "
-        ],
-        [
-            "Viaja intoxica",
-            "da/n  "
-        ],
-        [
-            "Ul t",
-            "ra ve",
-            "locidad",
-            "/n  "
-        ],
-        [
-            "Nada puede de",
-            "tenerla",
-            "/n  El di"
-        ],
-        [
-            "ablo debe pos",
-            "eerla/n"
-        ],
-        [
-            "  Daltónic",
-            "a/n"
-        ],
-        [
-            "  Chica-bunda aban",
-            "donada/n"
-        ],
-        [
-            "  Autorida",
-            "d Galá",
-            "ctica",
+            "Agua t",
+            "ónic",
+            "a  bebidas d",
+            "e  mis mano",
+            "s  princesa d",
+            "e /n Cali",
+            "forni",
             "/n"
         ],
         [
-            "  Babasonica",
+            "Luci",
+            "fe  la espera",
+            "viaja into",
+            "xicada ",
+            "ultra",
+            "velocidad ",
+            "nada puede",
+            "deten",
+            "erla /n"
+        ],
+        [
+            "E",
+            "l  diablo deb",
+            "e  poseer",
+            "la  tal t",
+            "ónic",
+            "a  sin que don",
+            "d  dan pone",
+            "das  aut",
+            "orida ",
+            "galáct",
+            "ic ",
             "/n"
         ],
         [
-            "  Sharon Tate resuc",
-            "itada/n"
+            "Babas",
+            "ónica  serente",
+            "resucita",
+            "da  ella es p",
+            "ropieda  d",
+            "iabóli",
+            "ca /n"
         ],
         [
-            "  Ella es propieda",
-            "d Diabó",
-            "lica",
-            "/n  "
+            "Luci",
+            "fe  la espera,",
+            "viaja int",
+            "oxicad",
+            "ult",
+            "r  velocidad,",
+            "nada pued",
+            "dete",
+            "nerla /n"
         ],
         [
-            "Lu ",
-            "ci fe",
-            "r la espera",
-            "/n  "
-        ],
-        [
-            "Viaja intoxica",
-            "da/n  "
-        ],
-        [
-            "Ul t",
-            "ra ve",
-            "locidad",
-            "/n  "
-        ],
-        [
-            "Nada puede de",
-            "tenerla",
-            "/n  El di"
-        ],
-        [
-            "ablo debe pos",
-            "eerla"
+            "E",
+            "l  diablo deb",
+            "poseer",
+            "la ",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "LUHfSVliNKE",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

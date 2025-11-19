@@ -26,7 +26,6 @@ export class ListasServerManager {
 
   async GetListas(): Promise<string[]> {
     const response = await this.cliente.HTTPGET('lista')
-    console.log('Response from GetListas:', response)
     const json = await response.json()
     if (json == null) return []
     return json

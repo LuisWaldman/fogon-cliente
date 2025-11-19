@@ -8,85 +8,141 @@
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "E",
-                    "B7",
+                    "E",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "E",
+                    "E",
                     "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "B7",
-                    "E",
-                    "C7",
-                    "B7",
-                    "E",
-                    "C7",
+                    "D",
                     "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "Mean Mr Mustard sleeps in the park/n"
+            "Me an/n"
         ],
         [
-            "Sleeps in a hole in the road/n"
+            "Mr. /n Wusted sleeps in th",
+            "park, /n Shapes in the dark",
+            "tryin  to save paper,/n"
         ],
         [
-            "Saving up to buy some clothes/n"
+            "Sle",
+            "ep  in the horn of the roa",
+            "d /n Saving e",
+            "noug  to buy some clothes/n"
         ],
         [
-            "Keeps a ten bob note up his nose/nSuch a "
+            "Keeps",
+            "10 mark note up his nose,/n"
         ],
         [
-            "mean old man,  ",
-            "    ",
-            "such a mea",
-            "n old man",
+            "Such mean o",
+            "l  man.",
             "",
             "/n"
         ],
         [
-            "His sister Pam works in a shop/n"
+            "His sis",
+            "te /n Pam works in sh",
+            "op /n She never stops, sh",
+            "e'  go -getter,/n"
         ],
         [
-            "Takes him out to look at the Queen/n"
+            "Takes him ou",
+            "to look at the queen,/n"
         ],
         [
-            "Only place that he's ever been/n"
+            "Only place t",
+            "hat  he's ever been,/n"
         ],
         [
-            "Always shouts out something obscene/nSuch a"
-        ],
-        [
-            " dirty old m",
-            "an, ",
-            "           dir",
-            "ty old man",
-            "",
-            ""
+            "Always shouts ou",
+            "t something obscene, /n Su",
+            "c  dirty old m",
+            "an  dirt",
+            "y  old man."
         ]
     ],
-    "bpm": 80,
+    "bpm": 99,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "oMarHac3VpQ",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Rock",
         "Rock Internacional"
-    ]
+    ],
+    "calidad": 1
 }

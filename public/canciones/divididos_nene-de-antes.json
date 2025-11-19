@@ -2,78 +2,322 @@
     "cancion": "nene-de-antes",
     "banda": "divididos",
     "escala": "D",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "D",
-                    "Bm",
-                    "G5",
-                    "F#5"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Bm",
                     "G5",
-                    "F#5",
                     "G5",
-                    "F#5"
+                    "G5",
+                    "G5"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G5",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "Bm",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
         [
-            "Peine, cardenales bajo el chap",
-            "arron, aves raras de un pasado",
-            " por agua otra vez al bylcreem",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Ponele, las vbentosas al hombre inv",
-            "isible, que el chiflete debajo",
-            " de la puerta no para de sonar",
+            "Esta es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Balcón, de inconclusa seren",
-            "ata fue, busco cama, vacacio",
-            "nes y llantos, el turista mortal",
+            "Est",
+            "es u",
+            "n  ca",
+            "nció  en e",
+            "spa",
+            "ño  de rock argentino.",
+            "",
+            "",
             "/n"
         ],
         [
-            "Sudaba como una ballena en a",
-            "censor a la consejera de es",
-            "ta locura se le fruncio el frances",
-            "/nTuve at"
+            "Est",
+            "es u",
+            "n",
+            "a",
+            "",
+            "",
+            "",
+            "canción en españo",
+            "l de rock argentino. /n Esta",
+            "e",
+            "s",
+            "",
+            "u",
+            "n",
+            "a",
+            "",
+            "",
+            "canción en e",
+            "spa",
+            "ño de rock argentino. /n E",
+            "st  e",
+            "s",
+            "",
+            "",
+            "u",
+            "n",
+            "canción e",
+            "n  e",
+            "s",
+            "p",
+            "a",
+            "de rock argentino. /n Esta e",
+            "s",
+            "",
+            "",
+            "",
+            "u",
+            "n  canción en español de rock a",
+            "r",
+            "g",
+            "e",
+            "n",
+            "t /n"
         ],
         [
-            "aques de nervios pero estaba modee",
-            "eernooo/nCon tap"
+            "Fein",
+            "cardenales bajo e",
+            "l  jabarrón/n"
         ],
         [
-            "ones limados, me sacaron la roo",
-            "oojaaaa"
+            "Aves raras de un p",
+            "alzano  con ag",
+            "u /n Otra vez a",
+            "l  prín",
+            "cip /n"
+        ],
+        [
+            "Vie",
+            "n  de ayer/n"
+        ],
+        [
+            "Con un cuarto",
+            "e  bragueta",
+            "e",
+            "el diante/n"
+        ],
+        [
+            "Co  un diez e",
+            "n  resaya",
+            "en e",
+            "l  diante/n"
+        ],
+        [
+            "Con un cuarto e",
+            "n  braguetas",
+            "e",
+            "el diante /n C",
+            "on  un diez e",
+            "n  resay",
+            "a ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Con un",
+            "c",
+            "u",
+            "a",
+            "r",
+            "t",
+            "o",
+            "",
+            "",
+            "en braguetas"
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "KCnQgCuuKZ4",
-            "delay": 0
+            "delay": 13390.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

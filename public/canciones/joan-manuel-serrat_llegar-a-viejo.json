@@ -1,1 +1,617 @@
-{"cancion": "Llegar-a-viejo", "banda": "joan-manuel-serrat", "escala": "E", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["E", "A", "E", "E", "A", "B", "E", "G", "F#", "A", "E", "B", "E", "B", "A", "E", "B", "F#", "E", "E", "F#m", "Gm", "F#m", "A", "B", "F#m", "B", "E", "E", "F#m", "F#", "A", "F#m", "E", "A", "B", "E", "Dbm", "Db", "F#", "B", "F#", "B", "E", "B", "E", "A", "F#m", "E", "Abm", "Db", "B", "E", "E", "E", "B", "F#m", "B", "E", "E", "A", "F#", "B", "E", "D", "A", "B", "E", "G", "F#", "B", "E", "B", "E", "B", "E", "B", "F#m", "E", "F#m", "Gm", "G", "F#m", "A", "B", "F#m", "B", "E", "E", "A", "F#", "F#m", "B", "B", "E", "F#", "B", "E", "Ab", "Bm", "F#", "F#m", "B", "E", "G", "F#m", "E"]}], "orden_partes": [0]}, "letras": [[], ["Si se llevasen el miedo,/ny nos dejasen lo b"], ["ailado/n"], ["para enfrentar el pres", "ente...", "/nSi se"], [" llegase entrenado/ny"], [" con \u00e1nimo sufi", "ciente.../nY "], ["despu\u00e9s de darlo ", "todo/nen justa correspo"], ["ndencia/n"], ["Todo estuviese p", "agado/n"], ["y el carn\u00e9 de j", "ubilado/nabriese todas la"], ["s puertas.../n"], ["Quiz\u00e1 llegar a ", "viejo", "/n"], ["Ser\u00eda m\u00e1s llev", "adero,/n"], ["M\u00e1s confort", "able,", "/nM\u00e1s du"], ["radero./nSi el ayer no se"], [" olvidase tan aprisa.../nSi tuvies"], ["en m\u00e1s cu", "idado en donde", " pisan.", "../nSi se viviese"], [" entre amigos/n"], ["Pasase", "n una pelota", ".../n"], ["Si el cansa", "ncio y la derro", "ta", "/n"], ["No supiesen ", "tan amarg", "o.../nSi fu"], ["esen ponien", "do luces/nEn el camino, a "], ["medida/nQue el cora"], ["z\u00f3n se ac", "obarda.../nY l"], ["os \u00e1ngel", "es de la gu", "arda/nDiesen se\u00f1ales de"], [" vida.../nQuiz\u00e1 ll"], ["egar a viejo/nSer\u00eda m"], ["\u00e1s razonabl", "e,/nm"], ["\u00e1s apacible,", "/nm\u00e1s tra"], ["nsitable./n\u00a1Ay"], [", si la veteran\u00eda fu", "ese un grado...!/nSi"], [" no se llegase hu\u00e9rfa", "no a ese trago.../n"], ["Si tuviese m\u00e1s v", "entajas/ny menos inconv"], ["enientes.../n"], ["Si el alma se apas", "ionase,", "/nel cuerp"], ["o se alborotase,/ny l"], ["as piernas respon", "diesen.../nY del pe"], ["dazo de ci", "elo/nreservado para "], ["cuando/ntoca entre"], ["gar el equipo,/nrepartie"], ["sen anticipo", "s/na los m\u00e1s nec"], ["esitados.../nQuiz\u00e1 "], ["llegar a viejo", "", "/nser\u00eda to"], ["do un progreso,", "", "/nun buen "], ["remate,", "/nun final con"], [" beso./nEn"], [" lugar de arrinconarlos en la h", "istoria,/nConve"], ["rtidos en fan", "tasmas con memo", "ria.../nSi no"], [" estuviese tan", " oscuro/na la vuelta "], ["de la esquina.../nO s"], ["implemente si ", "todos/nenten"], ["di\u00e9sem", "os que to", "dos", "/nlleva"], ["mos un viejo e", "ncima./n"], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "CByu0OhDKes", "delay": 0}]}
+{
+    "cancion": "Llegar-a-viejo",
+    "banda": "joan-manuel-serrat",
+    "escala": "E",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "C",
+                    "B",
+                    "E",
+                    "B",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "F#",
+                    "B",
+                    "B",
+                    "F#",
+                    "F#",
+                    "F#",
+                    "F#m",
+                    "F#m",
+                    "F#",
+                    "B",
+                    "B",
+                    "B",
+                    "A B",
+                    "F#m E",
+                    "E",
+                    "F#",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "B",
+                    "E",
+                    "F#m",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "G",
+                    "G",
+                    "F#m",
+                    "F#m",
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B",
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "B",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "F#",
+                    "F#",
+                    "B",
+                    "B",
+                    "B",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "F#",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "E",
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "A",
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bm",
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "A",
+                    "A",
+                    "B",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "F#m",
+                    "B",
+                    "B",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Db",
+                    "Db",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "B",
+                    "B",
+                    "B",
+                    "B",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "E",
+                    "E",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Bm",
+                    "F#m",
+                    "F#m",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "F#"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "A",
+                    "B",
+                    "B",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "B",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "E",
+                    "B",
+                    "B",
+                    "B"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "B",
+                    "B",
+                    "Bm",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta ",
+            "es una ",
+            "canción ",
+            "en esp",
+            "añol de rock argentino. ",
+            "este mundo que no ",
+            "podemos cambiar por otro, ",
+            "al menos corto plazo. ",
+            "",
+            "mí me proporciona siempr ",
+            "la sensación de estar viviendo ",
+            "en medio de misterios indescifrables. ",
+            "al menos gran parte ",
+            "de las cosas que me rodean. \n\nP",
+            "ara mí son misterios indescifr",
+            "ables que aquellos que conocen ",
+            "las claves no tienen el buen gusto la ",
+            "delicadeza de contarme de qué se ",
+            "trata. \n\nEsto por un lado ",
+            "por otro, entre aque",
+            "llas cosas que entiendo, entre aqu",
+            "ellas cosas que no me resultan m",
+            "isteriosas, poco que ",
+            "pienso descubro ",
+            "que muchas de ellas son ",
+            "unas absolutas insensateces. ",
+            "/n"
+        ],
+        [
+            "Mala compañía digo yo, ",
+            "es lo que hay. \n\nUna de e",
+            "stas cosas, una de estas tremendas ",
+            "insensateces  de es",
+            "ta sociedad es ",
+            "el trato que se les da los viejos. /n"
+        ],
+        [
+            "Cuando uno ve c",
+            "omo esta sociedad es decir n",
+            "osotros, ",
+            "creo, ",
+            "cuando uno ve que esta socied",
+            "ad trata así sus vie",
+            "jos, ",
+            "llega  aceptar que este eslogan del se ",
+            "usa se tira, le es tan ",
+            "aplicable al hombre como un \n\nTampax como un en",
+            "vasino retornable. \n\nPorque esta soc",
+            "iedad, sea no",
+            "sotros, ",
+            "al hombre, ",
+            "la mujer, después de sacarles todo el ",
+            "jugo,  ",
+            "acostumbra condenarlos al pacto del ha",
+            "mbre, ",
+            "humillarlos, arr",
+            "inconarlos abandonarlos. ",
+            "esto no solo ",
+            "es una canallada, es peor, mu",
+            "cho peor, esto es una demostración pa",
+            "lpable de la estupidez de esta soc",
+            "iedad. /n"
+        ],
+        [
+            "Porque, por un lad",
+            "o, aquellos que hoy se sienten jóvenes ",
+            "han ",
+            "de reconocer que ",
+            "con el transcurso del tiemp ",
+            "lo más que pueden aspirar es ",
+            "envejecer con dignidad. ",
+            "",
+            "difícilmente podrán hacerlo si ",
+            "los que hoy son jóvenes no a",
+            "yudan los que hoy son viejos envej",
+            "ecer con esta dignidad. \n\nEsto por un l",
+            "ado por otro que quieren que les diga. ",
+            "mí, mí personalmente ",
+            "siempre  me pareció es",
+            "túpido criminal el ",
+            "quemar los libro",
+            "s, destruir los archivos, ",
+            "pisotear el conocimiento ",
+            "despreciar la experienc",
+            "ia. esto es lo que esta soci",
+            "edad, sea nosotro",
+            "s, hacemos cada día ",
+            "con los viejos. /n"
+        ],
+        [
+            "Esto lo cuento por",
+            "que viene colación de esta ",
+            "historia  escri",
+            "ta para esos niños ",
+            "que llegaron más lejos p",
+            "orque salieron antes ",
+            "los viejos. /n"
+        ],
+        [
+            "Si se llevas ",
+            "en el miedo ",
+            "",
+            "nos dejas el no ",
+            "bailado  p",
+            "ara enfrentar el ",
+            "presente  /n"
+        ],
+        [
+            "Si se lleg",
+            "as entrenado ",
+            "con áni",
+            "mo suficiente ",
+            "",
+            "después de darlo t",
+            "odo /n"
+        ],
+        [
+            "En ",
+            "justa  correspondenc ",
+            "todo est",
+            "uviese paga",
+            "do el ",
+            "carnet de jub",
+            "ilado abr",
+            "iese todas las p",
+            "uert",
+            "as quizá lle",
+            "gara viejo ",
+            "/n"
+        ],
+        [
+            "Sería más l",
+            "levade",
+            "ro, más ",
+            "confortable,  ",
+            "más ",
+            "duradero  /n"
+        ],
+        [
+            "Si ",
+            "el ayer no se o",
+            "lvidase tan ",
+            "prisa ",
+            "/n"
+        ],
+        [
+            "Si tuvies",
+            "e más cuidad",
+            "o en d",
+            "onde pisa /n"
+        ],
+        [
+            "Si ",
+            "se viviese entre a",
+            "migos que ",
+            "al menos ",
+            "de vez en cu",
+            "ando pasas en ",
+            "una pelota /n"
+        ],
+        [
+            "Si el c",
+            "ansancio la de",
+            "rrota no ",
+            "supiesen  tan a",
+            "margo ",
+            "fuese  poniendo luz ",
+            "/n"
+        ],
+        [
+            "En el ca",
+            "mino medida que ",
+            "el corazón ",
+            "se acobarda ",
+            "los á",
+            "ngeles de la gu",
+            "arda dic",
+            "en señales de v",
+            "ida qui",
+            "zá llegara v",
+            "iejo /n"
+        ],
+        [
+            "Sería ",
+            "más razona",
+            "ble, ",
+            "más apac",
+            "ible, ",
+            "más tra",
+            "nsitable /n"
+        ],
+        [
+            "Ay, ",
+            "si la veter",
+            "anía fuese un ",
+            "grado /n"
+        ],
+        [
+            "Si ",
+            "no se llegase hué",
+            "rfano ",
+            "ese trago ",
+            "/n"
+        ],
+        [
+            "Si tuviese ",
+            "más vent",
+            "ajas ",
+            "menos inconvenient /n"
+        ],
+        [
+            "Si el ",
+            "alma se apasiona",
+            "se, el cuer",
+            "po se alborotase ",
+            "",
+            "las fieles respo",
+            "ndiesen ",
+            "del pedazo de c",
+            "ielo /n"
+        ],
+        [
+            "Que res",
+            "ervan para cuand ",
+            "toca entrega ",
+            "el equipo ",
+            "/n"
+        ],
+        [
+            "Reparecies",
+            "en anticipo ",
+            "los más necesit",
+            "ados /n"
+        ],
+        [
+            "Quizá l",
+            "legar v",
+            "iejo se",
+            "ría todo un progreso \n\nUn buen remate, un final con beso \n\nEn lugar de arrinconarlos en la historia \n\nConvertidos en fantasmas con memoria \n\nSi no estuviese tan oscuro la vuelta de la esquina simplemente si todos entendiésemos que todos llevamos un viejo encima ¡\nGracias! "
+        ]
+    ],
+    "bpm": 103,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "CByu0OhDKes",
+            "delay": 3000.0
+        }
+    ],
+    "calidad": 1
+}

@@ -2,117 +2,483 @@
     "cancion": "hombres-en-u",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 172,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
+                    "E",
                     "G",
-                    "A"
+                    "G",
+                    "E",
+                    "E",
+                    "E",
+                    "Em",
+                    "Em",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "E",
-                    "C#m",
+                    "E",
+                    "E",
                     "A",
-                    "G",
-                    "C#m",
                     "A",
+                    "A",
+                    "E",
+                    "A",
+                    "Em",
                     "G",
-                    "C#m"
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "C#m",
+                    "C#m",
+                    "G",
+                    "A",
+                    "Em",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "E",
                     "E",
                     "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "G",
+                    "Em",
+                    "Em",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "C#m",
+                    "G",
+                    "A",
+                    "Em",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "A",
+                    "A",
+                    "C#m",
+                    "E",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "A Em",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A Em",
+                    "A",
+                    "A Em",
+                    "A",
+                    "A Em"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A",
+                    "Em",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "A",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "E",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
-            0,
-            0,
-            0,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
         ]
     },
     "letras": [
         [
-            "Al sol no va mas,/nMientras t"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "anto e",
-            "l hombre",
-            "/n se convie"
+            "A",
+            "sol no v",
+            "a  más, vuelv",
+            "e  todo hacia el v",
+            "ertín. /n Ni la",
+            "s  lágrimas s",
+            "secan, fa",
+            "lta  del jardí",
+            "n /n Mientras tant",
+            "o  el auto s",
+            "e  convie",
+            "rt  en un.",
+            "lo",
+            "s  medi",
+            "o  que...",
+            "",
+            "",
+            "/n"
         ],
         [
-            "rte",
-            " en U,",
-            "/n¿y los "
+            "Al s",
+            "o  no va más",
+            "crecen hon",
+            "go  en el cru",
+            "z /n Equal",
+            "izado  sin medio",
+            "va cruci",
+            "ficad en un. /n Mie",
+            "ntra  tanto e",
+            "l  hombre s",
+            "conviert",
+            "en un.",
+            "los m",
+            "edio ",
+            "que.. ",
+            "/n"
         ],
         [
-            "me-",
-            "edios qu",
-            "é?/n"
+            "Mezcla d",
+            "e  nuevo",
+            ",  no desd",
+            "abajo,",
+            "que no e",
+            "cualice  tu raz",
+            "ón ",
+            "/n"
         ],
         [
-            "Mezclá de nuevo,/n"
+            "Cami",
+            "n  lent",
+            "o  vestido",
+            "al ped",
+            "o /n No ecual",
+            "ice  su coraz",
+            "ón ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "no desde abajo,/n"
+            "Al so",
+            "l  no va más,",
+            "todo árb",
+            "o  va placar/n"
         ],
         [
-            "¡que no ecualizen tu razón/n"
+            "Los porte",
+            "ro  del diluv",
+            "i  te guarda",
+            "ro el tractor. /n Mien",
+            "tra  tant",
+            "el hombre s",
+            "e  conviert",
+            "en un.",
+            "lo",
+            "s  medi",
+            "o  que...",
+            "/n"
         ],
         [
-            "!Camino lento,/n"
+            "Mezc",
+            "l  de nuev",
+            "o  no",
+            "desd  abajo",
+            ",  que n",
+            "o  te vendan u",
+            "n  buzón.",
+            "/n"
         ],
         [
-            "vertigo al pedo,/n"
+            "Los",
+            "beso en /n Ma",
+            "rte  ten",
+            "t  de mied",
+            "o  no t",
+            "ien  visa el",
+            "corazón ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "¡no ecualicés tu cora",
-            "zón!/n"
+            "Los besos en /n Marte, tenta de miedo, no tiene visa el corazón. Los besos en Marte, tenta de miedo, no tiene visa el corazón.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Al sol no va más,/nMientras t"
+            "Mient",
+            "ra  tanto e",
+            "l  hombre se convierte en un.",
+            "",
+            "los",
+            "med",
+            "io  que...",
+            "/n"
         ],
         [
-            "anto e",
-            "l hombre",
-            "/n se convie"
+            "Est",
+            "e  mund",
+            "o  se conv",
+            "iert  en un",
+            ".  lo",
+            "s  med",
+            "io  que...",
+            "/n"
         ],
         [
-            "rte",
-            " en U,",
-            "/n¿y los "
+            "Es",
+            "t  mundo",
+            "s  convie",
+            "rt  en un.",
+            "lo",
+            "s  medi",
+            "o  que...",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "me-",
-            "edios qu",
-            "é?/nM"
-        ],
-        [
-            "ientras que vos puedas ser vos,"
+            "Se",
+            "conviert  e",
+            "n",
+            "un.",
+            "",
+            "",
+            ""
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "CE6Or6N3w6c",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

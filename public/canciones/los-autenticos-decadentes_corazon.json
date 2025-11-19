@@ -2,24 +2,69 @@
     "cancion": "corazon",
     "banda": "los-autenticos-decadentes",
     "escala": "G",
-    "bpm": 60,
+    "bpm": 92,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bm",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
                     "C",
-                    "D"
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "G",
+                    "C",
+                    "Bm",
+                    "Bm",
+                    "D",
+                    "G",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
                     "G",
-                    "Bm",
                     "C"
                 ]
             },
@@ -27,11 +72,31 @@
                 "nombre": "parte3",
                 "acordes": [
                     "D",
+                    "C",
+                    "D",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "Bm",
                     "G",
                     "Bm",
                     "C",
-                    "Bm",
-                    "D"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             },
             {
@@ -39,162 +104,146 @@
                 "acordes": [
                     "G",
                     "A",
-                    "D"
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
             1,
             2,
-            1,
             3,
-            1,
-            3,
-            0,
-            0,
-            0,
-            0,
-            1,
-            2,
-            1,
-            3
+            4
         ]
     },
     "letras": [
-        [],
         [
-            "Yo no sé lo que me pasa/nCuando "
+            "",
+            "/n"
         ],
         [
-            "estoy con v",
-            "os/nMe hip"
-        ],
-        [
-            "notiza tu sonrisa/nMe de"
-        ],
-        [
-            "sarma tu mi",
-            "rada/nY de "
-        ],
-        [
-            "mi no queda nada/nMe der"
-        ],
-        [
-            "rito  c",
-            "omo un hielo al sol",
+            "Yo no sé lo ",
+            "",
+            "que ",
             "",
             "",
-            "/nCu"
-        ],
-        [
-            "ando vamos algún lado nunca ",
-            "elijo yo/nPorque lo ú"
-        ],
-        [
-            "nico que quiero es ir cont",
-            "igo/n"
-        ],
-        [
-            "Vivo dando vueltas a tu al",
-            "rededor/nComo un pe"
-        ],
-        [
-            "rro abandonado",
-            " que en la calle ",
-            "te siguió/nPero y"
-        ],
-        [
-            "o no soy tu prisionero/nY no tengo "
-        ],
-        [
-            "alma de robot/nEs que h"
-        ],
-        [
-            "ay algo en tu carita que me g",
-            "usta/nQue me "
-        ],
-        [
-            "gusta y se llevo mi cora",
-            "zón/nPero y"
-        ],
-        [
-            "o no soy tu prisionero/nY no tengo "
-        ],
-        [
-            "alma de robot/nEs que h"
-        ],
-        [
-            "ay algo en tu carita que me g",
-            "usta/nQue me "
-        ],
-        [
-            "gusta y se llevo mi cora",
-            "zón/n"
-        ],
-        [
-            "Puede ser por tu carácter/nO "
-        ],
-        [
-            "mi volunt",
-            "ad/nMe hip"
-        ],
-        [
-            "notiza tu sonrisa/nMe de"
-        ],
-        [
-            "sarma tu mi",
-            "rada/nY de "
-        ],
-        [
-            "mi no queda nada/nMe der"
-        ],
-        [
-            "rito  c",
-            "omo un hielo al sol",
+            "",
+            "me pasa cuando estoy ",
+            "con vos. \n\nMe hipnotiz ",
+            "tu sonrisa, me desarm",
+            "a tu mirada de mi ",
+            "no queda nada, me der",
+            "rito como un hielo al ",
+            "so",
+            "l. \n\nCuando va",
+            "mos algún lado nunca e",
+            "lijo yo porque lo ",
+            "único que quiero es ir c",
+            "ontigo. \n\nV",
+            "ivo dando vueltas tu ",
+            "alrededor  como ",
+            "un perro abandonado que en ",
+            "la calle te siguió. \n\nPero ",
+            "yo no soy tu prisionero no t",
+            "engo alma de robo, es ",
+            "que hay algo en tu carita que me gusta, que ",
+            "me gusta se llevó mi corazón. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "/n"
         ],
         [
-            "Cuando vamos algún lado nunc",
-            "a elijo yo/nPorque lo ú"
+            "Puedes ser por tu car",
+            "ácter mi voluntad /n"
         ],
         [
-            "nico que quiero es ir cont",
-            "igo/n"
+            "Me hipnotiza tu so",
+            "nrisa, me desarma tu m",
+            "irada de mi no queda n",
+            "ada, me derrito ",
+            "como  un hielo al s",
+            "ol",
+            ". \n\nCuando vamos a",
+            "lgún lado nunca elijo ",
+            "yo porque lo único ",
+            "que quiero es ir con",
+            "tigo. \n\nVivo da",
+            "ndo vueltas tu alre",
+            "dedor como un perro a",
+            "bandonado que en la calle ",
+            "te siguió. \n\nPero yo no soy tu ",
+            "prisionero  no tengo alm",
+            "a de robo, es que hay algo en tu ",
+            "carita  que me gusta, que me gusta se ",
+            "llevó  mi corazón. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Vivo dando vueltas a tu al",
-            "rededor/nComo un pe"
-        ],
-        [
-            "rro abandonado",
-            " que en la calle ",
-            "te siguió/nPero y"
-        ],
-        [
-            "o no soy tu prisionero/nY no tengo "
-        ],
-        [
-            "alma de robot/nEs que h"
-        ],
-        [
-            "ay algo en tu carita que me gusta/nQue me gusta y se llevo mi corazón"
-        ],
-        []
+            "Se llevó mi corazón, ",
+            "se l",
+            "levó mi corazón ",
+            "se lle",
+            "vó mi corazón, ",
+            "se llevó mi ",
+            "corazón,  se llevó mi c",
+            "ora",
+            "zón. \n\nSe ",
+            "llevó  mi corazón, ",
+            "se ",
+            "l",
+            "l",
+            "e",
+            "v",
+            "ó",
+            "mi c",
+            "ora",
+            "zón. "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "Qso7QJUCZyI",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

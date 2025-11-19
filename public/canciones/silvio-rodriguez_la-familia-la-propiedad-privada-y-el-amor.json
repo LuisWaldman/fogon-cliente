@@ -1,1 +1,374 @@
-{"cancion": "la-familia-la-propiedad-privada-y-el-amor", "banda": "silvio-rodriguez", "escala": "F#m", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F#m", "B", "A", "D", "C#7", "F#m", "B", "A", "D", "C#7", "F#m", "A", "B", "G#m", "C#7", "C#7", "C#7", "C#7", "D", "E", "F#m", "A", "B", "A", "D", "E", "F#m", "A", "B", "A", "D", "E", "F#m", "A", "B", "A", "D", "E", "D", "E", "D", "E", "F#m", "B", "F#m", "B", "F#", "A#m", "G#m", "B", "C#", "E", "A", "C#m", "Bm", "E", "G#m", "Bm", "C#7", "C#7", "D", "E", "F#m", "A", "B", "A", "F#m", "A", "B", "A", "F#", "A#m", "G#m", "B", "C#", "E"]}], "orden_partes": [0]}, "letras": [["errumbe de un sue", "o/nalgo hallado pa"], ["sando/n"], ["resultabas ser t\u00fa.", "/nUna esp"], ["onja sin due\u00f1o", "/nun silbido busc"], ["ando/n"], ["resultaba ser yo", "/n"], ["Cuando se hallan dos balas", "/nsobre un campo de guer"], ["ra/n"], ["algo debe ocurr", "ir/nde cabeza hacia el su"], ["elo/no estampidas de ti"], ["empo/nFue preciso algo sie"], ["mpre/n"], ["Tu te", "n\u00edas lazos blancos en la ", "piel", "", "", "/n"], ["t\u00fa, ", "ten\u00edas precio puesto desd", "e ayer", "", "", "/n"], ["t\u00fa, ", "val\u00edas cuatro cu\u00f1os de l", "a ley", "", "", "/n"], ["t\u00fa sent", "ada sobre el miedo", ", se", "ntada sobre el miedo/n"], ["sent", "ada sobre el miedo de correr", "", "", "", "/n"], ["Una buena muchach", "a de casa decente ", "no puede sa", "lir", "", "/n"], ["que dir\u00eda la gen", "te el domingo en la mis", "a/nsi saben de t"], ["i/nque dir"], ["an los amigos", "/nque vienen aq"], ["u\u00ed/ntu madre y su he"], ["rmana/n"], ["Dios ", "sin amas sin la Iglesia y ", "sin la", " ley", "", "/nque destrozar\u00e1n las bombas y el napa"], ["lm", "", "", "/n"], ["El derrumbe de un", " sue\u00f1o/n"], ["algo hallad", "o pasando", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "LqA6vMkKbiU", "delay": 0}]}
+{
+    "cancion": "la-familia-la-propiedad-privada-y-el-amor",
+    "banda": "silvio-rodriguez",
+    "escala": "F#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "D",
+                    "F#m",
+                    "E",
+                    "D",
+                    "F#",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "C#7",
+                    "C#7",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "C#7",
+                    "F#m",
+                    "F#m",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F#m",
+                    "E",
+                    "A",
+                    "C#7",
+                    "A",
+                    "A",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F#",
+                    "F#",
+                    "A#m",
+                    "G#m",
+                    "G#m",
+                    "A",
+                    "C#m",
+                    "Bm",
+                    "Bm",
+                    "G#m",
+                    "A",
+                    "Bm",
+                    "A",
+                    "D",
+                    "G#m",
+                    "A#m",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "A",
+                    "A",
+                    "Bm",
+                    "Bm",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#",
+                    "F# C#7",
+                    "Bm",
+                    "D",
+                    "F#",
+                    "C#7",
+                    "B",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "F#m",
+                    "Bm",
+                    "G#m",
+                    "D",
+                    "F#",
+                    "F#m",
+                    "G#m",
+                    "G#m",
+                    "G#m",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "El derrum",
+            "be de un sueño, a",
+            "lgo hallado pasando ",
+            "resu",
+            "ltaba ser tú. ",
+            "/n"
+        ],
+        [
+            "Una ",
+            "esponja sin dueño ",
+            "un silbido busc",
+            "ando, ",
+            "resultaba ser yo. ",
+            "",
+            "/n"
+        ],
+        [
+            "Cuando se hallan dos b",
+            "alas sobre un campo de ",
+            "guerra, ",
+            "algo debe ocu",
+            "rrir que predigue el ",
+            "amor  de cabeza hac",
+            "ia el suelo. \n\nUna nube v",
+            "endrá, estam",
+            "pidas de tiempo los oj",
+            "os tendrán, fue pre",
+            "ciso algo siempre no fue ",
+            "porque tú ",
+            "tenías lazos b",
+            "lancos en la piel ",
+            "/n"
+        ],
+        [
+            "Tú ",
+            "tenías preci",
+            "o puesto desde a",
+            "yer, ",
+            "",
+            "tú valías cua",
+            "tro cuños de la ley",
+            ". ",
+            "/n"
+        ],
+        [
+            "Tú sentada sobre ",
+            "el miedo, sentada sobre ",
+            "el miedo, sentada sobre ",
+            "el miedo de correr",
+            ". /n"
+        ],
+        [
+            "Una b",
+            "uena muchacha de ",
+            "casa decente no p",
+            "uede salir, ",
+            "¿qué d",
+            "iría la gente el do",
+            "mingo en la misa si ",
+            "saben de ti? ",
+            "¿\nQué dirí",
+            "an los amigos, los ",
+            "viejos  vecinos que ",
+            "vienen  aquí? ¿\nQué dir",
+            "ían las ventanas, ",
+            "tu madre su hermana ",
+            "todos  los siglos de ",
+            "colonialismo españo ",
+            "que no envalte te han ",
+            "hecho cobarte? ¿\nQué ",
+            "diría \n\nDios ",
+            "que se llama sin la ",
+            "iglesia  sin la ley? ",
+            "/n"
+        ],
+        [
+            "Dios ",
+            "quien ya te entre",
+            "gaste en com",
+            "unió/n"
+        ],
+        [
+            "Dios ",
+            "que hace eternas las a",
+            "lmas de los niños, ",
+            "",
+            "que ",
+            "destrozarán  las bom",
+            "bas el nata",
+            "l. /n"
+        ],
+        [
+            "El derrumb ",
+            "de un sueño, algo halla",
+            "do pasando resultaba ",
+            "ser tú, ",
+            "una espon",
+            "ja sin dueño, un silbid ",
+            "buscando resultab",
+            "a ser yo. /n"
+        ],
+        [
+            "Busca amor con ",
+            "anillos papeles ",
+            "firmados  cuando deja ",
+            "de amar ten present ",
+            "los niños, no deje",
+            "s tu esposo ni una ",
+            "buena casa. si no ",
+            "se resisten se ruch",
+            "en los bienes que tien",
+            "es derecho también po",
+            "rque tú t",
+            "enías lazos blan",
+            "cos en la piel. ",
+            "/n"
+        ],
+        [
+            "Tú ",
+            "tenías  precio puesto de",
+            "sde ayer",
+            ", ",
+            "tú ",
+            "valías cuatro cuños de ",
+            "la ley, ",
+            "",
+            "tú sent",
+            "ada sobre el miedo, sen",
+            "tada sobre el miedo, sent",
+            "ada sobre el miedo de c",
+            "orrer. ",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de \n\nAmara .org "
+        ]
+    ],
+    "bpm": 129,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LqA6vMkKbiU",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

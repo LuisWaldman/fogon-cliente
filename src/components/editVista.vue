@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { Configuracion, VistaTocar } from '../../modelo/configuracion'
-import { Pantalla } from '../../modelo/pantalla'
+import { Configuracion, VistaTocar } from '../modelo/configuracion'
+import { Pantalla } from '../modelo/pantalla'
 
 const exvistapantalla = ref(new VistaTocar())
 const emit = defineEmits(['cerrar'])
@@ -393,7 +393,10 @@ function ClickSoloMidi() {
         Cuadrado
       </div>
     </div>
-    <div class="config-row">
+    <div
+      class="config-row"
+      v-if="configPantalla.viendoSecuencia3 || configPantalla.viendoSecuencia"
+    >
       <span>Secuencia</span>
       <input
         type="range"
@@ -402,6 +405,15 @@ function ClickSoloMidi() {
         v-model.number="configPantalla.tamanioParte"
       />
       <span>{{ configPantalla.tamanioParte }} px</span>
+
+      <span style="margin-left: 20px">Ancho Parte</span>
+      <input
+        type="range"
+        min="0"
+        max="1000"
+        v-model.number="configPantalla.anchoParte"
+      />
+      <span>{{ configPantalla.anchoParte }} %</span>
     </div>
 
     <div class="botonera">

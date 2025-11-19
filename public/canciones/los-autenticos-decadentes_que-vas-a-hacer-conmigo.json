@@ -2,60 +2,175 @@
     "cancion": "que-vas-a-hacer-conmigo",
     "banda": "los-autenticos-decadentes",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 129,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "Em",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "B",
+                    "D",
+                    "D",
+                    "B"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
+                    "C",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "G",
+                    "F",
                     "Am",
-                    "F"
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "G4",
                     "C",
-                    "Am",
-                    "F",
-                    "G",
-                    "F",
-                    "G",
-                    "Em"
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
+                    "F",
+                    "F",
                     "Am",
-                    "F",
-                    "G",
-                    "F",
-                    "G4",
-                    "G"
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
                     "C",
-                    "Am",
-                    "C"
+                    "C",
+                    "F",
+                    "F"
                 ]
             },
             {
                 "nombre": "parte5",
                 "acordes": [
-                    "Am",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "F",
+                    "F",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
                     "F",
                     "G",
                     "F",
-                    "Ab",
-                    "G"
+                    "G",
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "F",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C"
                 ]
             }
         ],
@@ -64,154 +179,160 @@
             1,
             2,
             3,
-            2,
-            3,
-            2,
-            0,
-            1,
-            2,
-            3,
-            2,
-            3,
-            2,
-            3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
         ]
     },
     "letras": [
-        [],
         [
-            "Me hablaste de ternu",
-            "ra y de pasión/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Dijiste que nunca",
-            " te aburrirías/n"
+            "Est",
+            "a es una canción en español de rock argentino. \n\nMe hablaste ",
+            "de ternura de pa",
+            "sión, dijiste ",
+            "que nunca te aburri",
+            "rías. \n\nNosotros ",
+            "fuimos  uno para el o",
+            "tro ahora te ",
+            "molesta que te d",
+            "iga que ya me si",
+            "ento solo en este amor",
+            ". \n\nEres ciego del ",
+            "moment ",
+            "de dejar de ",
+            "fingir  indecis",
+            "iones mostrar s",
+            "entimient",
+            "os. ¿\nQué vas hacer ",
+            "conmigo?  ",
+            "¿\nQué vas hacer ",
+            "conmigo?  /n"
         ],
         [
-            "Nosotros fuimos ",
-            "uno para el otro/n"
+            "Si ya no me q",
+            "uerés decímel",
+            "o, lárgame en el ",
+            "olvido ",
+            "¿\nQué vas hacer c",
+            "onmigo? ",
+            "¿\nQué vas hacer c",
+            "onmigo? /n"
         ],
         [
-            "Y ahora te mole",
-            "sta que te diga/n"
+            "Si vos querés que me ",
+            "abra yo me voy ",
+            "del arco en el o",
+            "lvido. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        [
-            "Que yo me siento so",
-            "lo en este amor/n"
-        ],
-        [
-            "Que ya llegó el mom",
-            "ento/n"
-        ],
-        [
-            "De dejar de fingi",
-            "r indecisión/n"
-        ],
-        [
-            "Y mostrar sen",
-            "timie",
-            "nto/n"
-        ],
-        [
-            "¿Qué vas a hacer co",
-            "nmigo?/n"
-        ],
-        [
-            "¿Qué vas a hacer co",
-            "nmigo?/n"
-        ],
-        [
-            "Si ya no me quer",
-            "és decimelo/n"
-        ],
-        [
-            "Largarme en ",
-            "el ol",
-            "vido/n"
-        ],
-        [
-            "¿Qué vas a hacer c",
-            "onmigo?/n"
-        ],
-        [
-            "¿Qué vas a hacer c",
-            "onmigo?/n"
-        ],
-        [
-            "Si vos querés que m",
-            "e abra yo me voy/n"
-        ],
-        [
-            "Me largo en el",
-            " olvi",
-            "do/n"
-        ],
-        [],
         [
             "No te hagas la rein",
-            "a del gallinero/n"
+            "a del gallinero ",
+            "que vos no te da el c",
+            "uero para tanto. /n"
         ],
         [
-            "Que a vos no te da el c",
-            "uero para tanto/n"
+            "Si fue una relación ",
+            "interesante a",
+            "hora no me exci",
+            "ta como antes. ",
+            "yo me siento solo en ",
+            "este amor. /n"
         ],
         [
-            "Si fue una rela",
-            "ción interesante/n"
+            "Que el pelo esté de v",
+            "iento ",
+            "que vuelva brillar vano ",
+            "del sol. /n"
         ],
         [
-            "Ahora no me exci",
-            "ta como antes/n"
+            "No puedo perder tie",
+            "mpo. ¿\nQ",
+            "ué vas hacer conm",
+            "igo? ¿/n"
         ],
         [
-            "Y yo me siento sol",
-            "o en este amor/n"
+            "Qué vas hacer conm",
+            "igo? \n\nYo ",
+            "tengo otros asuntos que a",
+            "tender ya ",
+            "no estoy heri",
+            "do. ¿\nQué ",
+            "vas hacer conmi",
+            "go? ¿\nQué ",
+            "vas hacer conmigo /n"
         ],
         [
-            "Que se lo lleve el vie",
-            "nto/n"
+            "D",
+            "ecime que me vaya yo me ",
+            "voy del a",
+            "rco en el olvi",
+            "do. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Y que vuelva a brill",
-            "ar la luz del sol/n"
-        ],
-        [
-            "No puedo perder ",
-            "tiemp",
-            "o/n"
-        ],
-        [
-            "¿Qué vas a hacer c",
-            "onmigo?/n"
-        ],
-        [
-            "¿Qué vas a hacer c",
-            "onmigo?/n"
-        ],
-        [
-            "Yo tengo otros asu",
-            "ntos que atender, ¡maldita!/n"
-        ],
-        [
-            "Y ya no estoy h",
-            "erido",
-            "/n¿Qué vas a hacer conmigo?"
-        ],
-        [],
-        [],
-        [],
-        [],
-        []
+            "No te hagas la reina del gallinero. "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "dug-J6_bahM",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

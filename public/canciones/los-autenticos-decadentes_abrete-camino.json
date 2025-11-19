@@ -2,18 +2,29 @@
     "cancion": "abrete-camino",
     "banda": "los-autenticos-decadentes",
     "escala": "Em",
-    "bpm": 60,
+    "bpm": 103,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
                     "D",
                     "Em",
-                    "D"
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
                 ]
             },
             {
@@ -21,215 +32,653 @@
                 "acordes": [
                     "Em",
                     "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
                     "D",
                     "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte24",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "Em",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte25",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte26",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte27",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte28",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte29",
+                "acordes": [
+                    "D",
+                    "D",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte30",
+                "acordes": [
+                    "Em",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
             1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
         ]
     },
     "letras": [
         [
-            "SABES QUE EL DIA DEST",
-            "RUYE A  NOC",
-            "HE.",
-            "/nQUE A  NO"
+            "Cada uno da ",
+            "lo que re",
+            "cibe. /n"
         ],
         [
-            "CHE DIVI",
-            "DE AL DIA",
-            ".",
+            "Luego recibe lo que ",
+            "da. \n\nNada es más ",
+            "simple. \n\nNo hay otra n",
+            "orma. \n\nNada se ",
+            "pierde.  \n\nTodo se t",
+            "ransfor",
+            "ma. ",
             "/n"
         ],
         [
-            "TRATA DE CORD R!/n"
+            "Uno de cada cinco españoles podría desar",
+            "rollar una enfermedad mental según la última encuesta na",
+            "cional de salud. \n\nPero la mayoría de los que s",
+            "ufren un trastorno de este tipo pueden vivir con tot",
+            "al normalidad. \n\nPara los que necesitan algo más ",
+            "de ayuda, la radio se ha convertido en una manera de r",
+            "omper barreras. \n\nLes hemos visto en acción ",
+            "en una emisora de \n\nMadrid. /n"
         ],
         [
-            "TRATA DE ESCONDERTE!/n"
+            "Queridos oyentes de \n\nOnda \n\nBerlín c",
+            "omunitaria del 107 .3 de la /n"
         ],
         [
-            "ABD TE CAE ",
-            "NO HACIA EL OTRO",
-            " AD O.",
+            "F\nM, estoy hoy ",
+            "día con mis compañeros /n"
+        ],
+        [
+            "Fran,  \n\nManuel \n\nFra",
+            "ncisco \n\nJavier. \n\nBueno, para hoy ",
+            "día tenemos un programón. /n"
+        ],
+        [
+            "No hablan por hablar. \n\nHablan pa",
+            "ra darse cuenta de que tienen algo que decir. /n"
+        ],
+        [
+            "Es la radio como terapia llamarse enfermos d",
+            "icen es echarse encima una losa. \n\nT",
+            "odos sufren un trastorno mental. \n\nEs lune ",
+            "en la emisora del barrio. \n\nAllí suena lo m",
+            "ismo que un lunes sonaría en cualquier conv",
+            "ersación de barrio. \n\nMadrid perdió ",
+            "-0 en el campo del deportivo. /n"
+        ],
+        [
+            "Es una actividad en ",
+            "la que desarrollo mis habilidades sociales /n"
+        ],
+        [
+            "Pierdo el miedo hablar ",
+            "en público. \n\nAprendo relacionarm ",
+            "con los compañeros. /n"
+        ],
+        [
+            "Aprendo expresar mis opiniones. p",
+            "erder el miedo hablar, fundamentalmente eso",
+            ". \n\nLlevan algo más de tres años combat",
+            "iendo desde las ondas la palabra maldita, ",
+            "el estigma. le mandan un ",
+            "mensaje la sociedad m",
+            "ucho más real del que suele salir en los medios, que ",
+            "siempre es para mal. \n\nSiempre es agresividad, etc",
+            ". \n\nCuando es absolutamente falso. sea, ",
+            "lo cotidiano, lo verdadero, lo real es esto que h",
+            "abéis visto ahora, ¿no? ",
+            "",
+            "seguimos en \n\nO",
+            "nda \n\nBerlín comunitaria del 107 .3 de la /n"
+        ],
+        [
+            "F\nM. \n\nEstamos con la v",
+            "isita de \n\nVanessa de \n\nTelevisión \n\nEs",
+            "pañola, las dos noticias. /n"
+        ],
+        [
+            "No hay miedo al silencio, no ",
+            "hay miedo quedarse en blanco, porque siempre hay alguien que ",
+            "te va echar una mano, ¿no? \n\nSí, ",
+            "porque somos un equipo, sea ",
+            "esto es como que, ",
+            "no sé, ",
+            "le falta un brazo, pero luego ot",
+            "ro le pones pa",
+            "ra poder ser él. \n\nCom",
+            "o funcionamos así de bien ",
+            "en equipo, los silenc",
+            "ios son los menos posibles. /n"
+        ],
+        [
+            "Así que, que se nos trate c",
+            "omo personas. ",
+            "luego partir de ahí... /n"
+        ],
+        [
+            "Bueno, nos despedimos. /n"
+        ],
+        [
+            "Bueno, gracias por escucharnos. \n\nVuelvan o",
+            "tra vez escucharnos, por favor. \n\nAbríse \n\nC",
+            "amino, no sólo el nombre de su programa de radio, es ",
+            "un propósito firme, como lo es par ",
+            "cualquiera. ",
+            "",
             "/n"
         ],
         [
-            "ABD TE CAE ",
-            "NO HACIA EL OTRO",
-            " AD O.",
-            "/n"
+            "Es la copia, es el programa, bueno, es saber",
+            "lo. \n\nLa \n\nComunidad de \n\nMa",
+            "drid impulsa nuevos programas p",
+            "ara la integración de personas con enfermedad me",
+            "ntal través del \n\nPlan de \n\nAtención \n\nSocial \n\nPe",
+            "rsonas con \n\nInfermedad \n\nGrave \n\nCrónica 20",
+            "03 -2007, ya que ",
+            "uno de los pilares del documento es lograr la inser",
+            "ción laboral de estas personas. /n"
         ],
         [
-            "ABD TE CAE ",
-            "NO HACIA EL OTRO",
-            " AD O.",
-            "/n"
+            "El programa de radio, \n\nAbréte \n\nCamino, ",
+            "promovido  por el \n\nCentro de \n\nRehabilitación \n\nPsicoso",
+            "cial \n\nLos \n\nCármenes, dependiente de la \n\nCon",
+            "sejería de \n\nFamilia \n\nAsuntos \n\nSociales, es ",
+            "una de las iniciativas dentro del plan. /n"
         ],
         [
-            "ENTERRAMOS NUESTROS TESO",
-            "ROS AQUI",
-            "./n"
+            "No siempre el tener una ",
+            "enfermedad grave crónica significa un obstá",
+            "culo para llevar cabo una pasión, como puede ser ",
+            "la de comunicar. \n\nAbréte \n\nCamino es un ",
+            "programa  de radio hecho por personas con enfermedades ",
+            "mentales  del \n\nCentro de \n\nRehabilitac",
+            "ión \n\nPsicosocial de \n\nLos \n\nCármenes. \n\nNues",
+            "tro reportero, \n\nPablo \n\nCentomo, ha estado allí ",
+            "nos muestra una visión más real de ",
+            "lo que es la vida de las personas con esta enfer",
+            "medad. \n\nAbréte \n\nCamino se llama ",
+            "el programa. ¿\nQué les parece si juntos ",
+            "lo recorremos? /n"
         ],
         [
-            "DEJAMOS NUESTROS SUE",
-            "OS HAY",
-            "A./n"
+            "Muy buenos días, queridos oyentes de /n"
         ],
         [
-            "PUEDES DC ORDAR?!/n"
+            "Onda \n\nMerlín \n\nComunitaria. \n\nCuando llegaba la misura e",
+            "staba todo revuelto es que tenemos hoy \n\nO",
+            "nda 6. para ello tenemos al repo",
+            "rtero, \n\nPablo \n\nCentomo, que participa",
+            "rá con nosotros en un debate nos preguntará lo que qui",
+            "ere. \n\nBienvenidos todos. \n\nGracias. ¿\nPor qué es en radi",
+            "o? \n\nMe parece una actividad interesant ",
+            "así apr",
+            "endo no cortarme tanto. \n\nSí, ",
+            "yo quería preguntaros si ",
+            "se puede conseguir un trabajo estable ",
+            "mantenerlo en el tiempo con una enfermedad mental /n"
         ],
         [
-            "EL TIEMPO QUE LLORAMOS?!/n"
+            "Yo creo que sí. /n"
         ],
         [
-            "ABD TE CAE ",
-            "NO HACIA EL OTRO",
-            " AD O.",
-            "/n"
+            "Yo lo he mantenido durante dos, cas ",
+            "tres años me ha ido muy bie",
+            "n. ¿\nTú crees que las perso",
+            "nas con enfermedad mental podemos trabajar mejor que ",
+            "nos protejan con pensiones para no ",
+            "someternos  al estrés que genera buscar un ",
+            "trabajo? \n\nYo creo que es mejor. /n"
         ],
         [
-            "ABD TE CAE ",
-            "NO HACIA EL OTRO",
-            " AD O.",
-            "/n"
+            "Yo creo que podemos trabajar perfectamente. ",
+            "yo he estado cobrando una ",
+            "pensión,  pero luego cuando es",
+            "tá trabajando lo dejo de cobrar ",
+            "yo creo que es mejor realiz",
+            "ar un trabajo que no someterte al estrés. \n\nTener un emp",
+            "leo estable verte realizado como cualquier ot",
+            "ra persona normal. no solamente apoyarte una pe",
+            "nsión, sino tener un sueldo un poco mayor ",
+            "la pensión. ¿\nOs habéis s",
+            "entido alguna vez desplazad",
+            "os de algún sitio donde habéis estado la hora de trabajar alg",
+            "una vez? \n\nEs que si un enf",
+            "ermo en mental empieza trabajar, ",
+            "el empresario si realmente ",
+            "la ha contratado ",
+            "como  discapacitado recibe una su",
+            "bvención mensual de 300 pico euros /n"
         ],
         [
-            "ABD TE CAE ",
-            "NO!!! OH ",
-            "YEAH!!",
-            "!/n"
+            "Entonces, ",
+            "para mí ya ese hecho hace ",
+            "que haya un poco de estig",
+            "ma hacia los enfermos mentales. \n\nEs decir, si no hay sub",
+            "vención, aunque tú desarrol",
+            "les las capacidades, habilidades para hacer ",
+            "una tarea de jardinero, de auxiliario administrativo, de ",
+            "carpintero, de fontanero, de lo que sea, ",
+            "yo ya ",
+            "veo que hay una p",
+            "osible discriminación porq",
+            "ue con entrenamiento en el \n\nC\nR\nL nos ",
+            "enseñan  habilidades para permanec",
+            "er en el puesto de trabajo no caer enfermos. /n"
         ],
         [
-            "ENCONTD  UNA ISA",
-            "  EN TUS BRAZO",
-            "S.",
-            "/n"
+            "No tener una recaída. \n\nNo reca",
+            "er otra vez en la enfermedad mental. \n\nBueno, ",
+            "vamos hablar un poco sobre el est",
+            "igma social laboral. /n"
         ],
         [
-            "UN PAIS EN",
-            " TUS OJOS",
-            ".",
-            "/n"
+            "Bueno, voy preguntar ustedes ¿cómo cr",
+            "een que tratan los medios de comunicación la enfermeda ",
+            "mental? \n\nEn general yo c",
+            "reo que mal, ",
+            "porque los ",
+            "telediarios por ej",
+            "emplo s",
+            "olo hablan ",
+            "del caso ",
+            "del ",
+            "asesino. \n\nQue no tienen edu",
+            "cación la hora de saber una cosa que no están informados, ",
+            "que no se molestan. \n\nQue en gen",
+            "eral se asocia muc",
+            "ho en sucesos. /n"
         ],
         [
-            "BRAZOS QUE ATRAPAN!/n"
+            "La enfermedad mental como un poco de ",
+            "locos,  algo así. \n\nA",
+            "socia la violencia. /n"
         ],
         [
-            "OJOS QUE EE NTEN!/n"
+            "Bueno, ahí habría quizá que darle las gra",
+            "cias al equipo de \n\nSuárez que ",
+            "quito  la ley de peligrosidad social de ",
+            "los enfermos mentales. creo que ",
+            "es un paso hacia la posible reincorpora",
+            "ción de los enfermos mentales la vida activa laboral. /n"
         ],
         [
-            "ABD TE CAE",
-            " NO HACIA EL OTRO",
-            " AD O.",
-            "/n"
+            "Para  mí, no me habéis re",
+            "spondido directamente la pregunta, contribuirá derecho s",
+            "igir. \n\nEntonces hay gente que te margin ",
+            "ya por el mero hecho de no estar trabajando. /n"
         ],
         [
-            "ABD TE CAE",
-            " NO HACIA EL OTRO",
-            " AD O.",
-            "/n"
-        ],
-        [
-            "ABD TE CAE",
-            " NO!!! OH ",
-            "YEAH!!",
-            "!/nY H"
-        ],
-        [
-            "ECHO EL MO",
-            "MENTO./nS"
-        ],
-        [
-            "EMANA A SEM",
-            "ANA./n"
-        ],
-        [
-            "DIA A DI",
-            "A./n"
-        ],
-        [
-            "HORA A HO",
-            "RA./nEL "
-        ],
-        [
-            "PASO ES PROF",
-            "UNC ,/nA"
-        ],
-        [
-            "NCHO Y AMP",
-            "LIO./n"
-        ],
-        [
-            "ABD TE CAE",
-            " NO HACIA EL OT",
-            "RO AD O",
-            "./n"
-        ],
-        [
-            "ABD TE CAE",
-            " NO HACIA EL OT",
-            "RO AD O",
-            "./n"
-        ],
-        [
-            "ABD TE CAE",
-            " NO, ABD",
-            " TE CAE ",
-            "NO/n"
-        ],
-        [
-            "ABD TE CAE",
-            " NO, ABD",
-            " TE CAE ",
-            "NO/n"
-        ],
-        [
-            "YEAH Y",
-            "EAH YE",
-            "AH YEA",
-            "H/n"
-        ],
-        [
-            "YEAH Y",
-            "EAH YE",
-            "AH YEA",
-            "H"
+            "No sé si será vuestra experiencia, ",
+            "pero la mía sí que lo es. \n\nInclu",
+            "so te niegan el derecho al v",
+            "oto, porque te consideran un ",
+            "enfermo mental. \n\nPero te digo una c",
+            "osa \n\nJesús, yo creo que eso que dices, ",
+            "yo creo que es por falta de conocimien",
+            "tos de lo que es las enfermedades. \n\nNo, por",
+            "que hay mucha gente que no tiene suficien",
+            "te mente de cultura no enti",
+            "ende. enseguida ya califica una persona ",
+            "están equivocados, ¿me entiendes? \n\nHasta los ",
+            "mismísimos psiquiatras no entienden ni conocen. ¿\nOs sentís distintos otros ciudadanos? ¿\nHay alguna diferencia entre vosotros otras personas supuestamente normalizadas? \n\nEn principio no, todo el mundo es diferente, cada uno somos un mundo cualquiera puede tener una enfermedad. no tiene por qué ni ir contando ni ser condicionado para trabajar por tener esa enfermedad. \n\nBueno, hasta aquí nuestra entrevista debate de hoy. ¿\nQué les aporta como grupo \n\nSer \n\nRadido? \n\nYo estoy aprendiendo de ellos cosas ellos también creo que algunas cosas mías aprenderán. \n\nTodo lo que sea mejorar hacerlos más autónomos más independientes para cuando vivamos algún día solos los que tengamos que vivir solos. dar creo que esa onda \n\nMerlin que nos deja la emisora para poder emitir. \n\nEs estupendo, el nobleza obliga. \n\nNosotros damos las gracias los gestores de esta emisora. ¡\nGracias! "
         ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "JJ1cmfeMdNg",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

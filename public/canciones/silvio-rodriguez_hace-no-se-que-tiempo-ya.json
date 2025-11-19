@@ -1,1 +1,321 @@
-{"cancion": "hace-no-se-que-tiempo-ya", "banda": "silvio-rodriguez", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G", "Am", "G", "F", "E"]}, {"nombre": "parte2", "acordes": ["Am", "D", "G"]}, {"nombre": "parte3", "acordes": ["F", "C", "F", "C", "G", "F"]}, {"nombre": "parte4", "acordes": ["G", "A", "Dm", "G", "C", "F", "Bdim", "E"]}, {"nombre": "parte5", "acordes": ["Am", "G", "Dm", "G", "C", "F", "Bdim", "E"]}], "orden_partes": [0, 1, 2, 3, 4, 1, 0]}, "letras": [["A) H", "ace n", "o s\u00e9", " qu\u00e9", " tie", "mpo ya/n"], ["que no le digo a alguien te quiero./n"], ["Qu\u00e9", " extr", "a\u00f1o", " es ", "todo por donde he estado,/n"], ["qu\u00e9", " d\u00edas m\u00e1s lejos del amor./n"], ["mald", "ito p", "or mi maldici\u00f3n./n"], ["B) Nu", "nca h", "e servido para lo que/n"], ["me h", "a tocado, desde que no s\u00e9/n"], ["qu\u00e9", " caus", "a te alej\u00f3./n"], ["Puede", " que ", "fuera causa m\u00eda,/n"], ["pero", " qui\u00e9n recuerda causas/n"], ["cuan", "do el tiempo es m\u00e1s dolor./n"], ["Dolo", "r./n"], ["hace", " no s", "\u00e9 qu", "\u00e9 ti", "empo", " ya..."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "SXIvq5Kxdj4", "delay": 0}]}
+{
+    "cancion": "hace-no-se-que-tiempo-ya",
+    "banda": "silvio-rodriguez",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "G F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "Am",
+                    "Am",
+                    "C",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C F",
+                    "F",
+                    "Bdim",
+                    "Bdim",
+                    "Bdim",
+                    "Bdim"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Bdim",
+                    "G",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "Bdim",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "D",
+                    "F",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "letras": [
+        [
+            "Hac ",
+            "no sé qué ti",
+            "empo ya ",
+            "/n"
+        ],
+        [
+            "Que ",
+            "no le digo alguien ",
+            "te quiero \n\nQué ",
+            "extraño es t",
+            "odo \n\nPor ",
+            "dónde he e",
+            "stado /n"
+        ],
+        [
+            "Qué días más l",
+            "ejos del a",
+            "mor ",
+            "/n"
+        ],
+        [
+            "Hace no ",
+            "sé qué tiem",
+            "po ya ",
+            "/n"
+        ],
+        [
+            "Que es",
+            "toy sentado mal",
+            "diciendo /n"
+        ],
+        [
+            "Sumando  noche",
+            "s \n\nRe",
+            "stando sueñ",
+            "os /n"
+        ],
+        [
+            "Maldito  por ",
+            "mi maldi",
+            "ción ",
+            "/n"
+        ],
+        [
+            "Maldito ",
+            "por mi ma",
+            "ldici",
+            "ón /n"
+        ],
+        [
+            "Nunca ",
+            "he servido pa",
+            "ra lo que me ",
+            "ha tocado \n\nD",
+            "esde que no ",
+            "sé qué caus",
+            "arte ale",
+            "jo /n"
+        ],
+        [
+            "P",
+            "uede que fu",
+            "era causa mía /n"
+        ],
+        [
+            "Pero q",
+            "uién recuerda c",
+            "ausas \n\nCuando ",
+            "el tiempo es ",
+            "más dolor ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Dolor  /n"
+        ],
+        [
+            "Mis labios se ",
+            "han endureci",
+            "do /n"
+        ],
+        [
+            "P",
+            "ara de",
+            "cir palabras b",
+            "ellas \n\nQue cr",
+            "udo es todo /n"
+        ],
+        [
+            "Lo ",
+            "que yo digo /n"
+        ],
+        [
+            "Que ",
+            "suave todo ",
+            "lo que sueño ",
+            "",
+            "/n"
+        ],
+        [
+            "Hace no ",
+            "sé qué tie",
+            "mpo ya ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Que no le digo alguien te quiero "
+        ]
+    ],
+    "bpm": 123,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "SXIvq5Kxdj4",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

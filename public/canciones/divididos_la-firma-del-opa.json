@@ -2,35 +2,65 @@
     "cancion": "la-firma-del-opa",
     "banda": "divididos",
     "escala": "B7",
-    "bpm": 60,
+    "bpm": 99,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "B7",
-                    "E",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "E7",
                     "B7",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "E7",
-                    "F#7",
                     "B7",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "B7",
-                    "E",
                     "E7",
+                    "E7",
+                    "B7",
+                    "B7",
+                    "E7",
+                    "E7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
+                    "F#7",
                     "F#7"
                 ]
             }
@@ -38,67 +68,64 @@
         "orden_partes": [
             0,
             1,
-            0,
             2,
-            2,
-            0,
-            0
+            3
         ]
     },
     "letras": [
-        [],
         [
-            "Se han gastado a cuen",
-            "ta/n"
-        ],
-        [
-            "todos los millones",
+            "los millones d",
+            "e libras esterlinas. /n Fr",
+            "anc /n Palac",
+            "one ",
+            "",
             "/n"
         ],
         [
-            "libras esterlina",
-            "s, fran",
-            "cos/npatac"
-        ],
-        [
-            "ones/n"
-        ],
-        [
-            "5000 torinos",
+            "Cinc",
+            "o  mil torinos, kar",
+            "tin  mercedes, pi",
+            "so en /n Manhattan, quin",
+            "ta en /n Olivo.",
+            "",
+            "",
             "/n"
         ],
         [
-            "kartings y mercede",
-            "s/n"
-        ],
-        [],
-        [
-            "Quintas en olivos",
+            "De estos",
+            "manuscritos  sin u",
+            "n  testamento, cuar",
+            "ent  poemas, no sé c",
+            "uánto  cien",
+            "tos ",
+            "",
+            "",
             "/n"
         ],
         [
-            "Y con tanto alborot",
-            "o/n"
-        ],
-        [
-            "no se dieron cuenta",
-            "/n"
-        ],
-        [
-            "cientos laburando",
-            "/ny uno solo en fiesta"
-        ],
-        [],
-        [],
-        [],
-        []
+            "Con tanto albor",
+            "oto  n",
+            "o  se dieron cuent",
+            "a ",
+            "cientos labura",
+            "nd ",
+            "uno solo en fiesta.",
+            "todo por qué",
+            ",  todo por qué",
+            "todo por qué, por l",
+            "a firma de /n Lo",
+            "ba ",
+            "",
+            "¡Ajá!"
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "pyRAQ7tx7vg",
-            "delay": 0
+            "delay": 24090.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

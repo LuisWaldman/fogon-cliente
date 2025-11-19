@@ -2,140 +2,416 @@
     "cancion": "como-la-abeja-y-la-flor",
     "banda": "los-autenticos-decadentes",
     "escala": "Cmaj7",
-    "bpm": 60,
+    "bpm": 107,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "A",
+                    "A",
+                    "D",
+                    "Am",
+                    "D",
+                    "F#m",
+                    "Dmaj7",
+                    "Dm7",
+                    "Dmaj7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "Cmaj7",
-                    "Dm7",
-                    "G7"
+                    "Dmaj7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "Cmaj7",
-                    "C#º",
-                    "Dm7",
+                    "Dmaj7",
                     "Dm7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "G7",
-                    "Cmaj7",
-                    "B",
                     "Dm7",
-                    "G7",
-                    "Em",
-                    "A7",
-                    "Dm7"
+                    "Dmaj7"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
+                    "Dmaj7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Dm7",
+                    "Cmaj7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C#º",
+                    "C#º"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C#º",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
                     "G7",
-                    "Em",
-                    "Bb",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "B",
+                    "B",
+                    "Cmaj7",
+                    "Cmaj7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Cmaj7",
+                    "Cmaj7",
+                    "Cmaj7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
                     "A7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
                     "Dmaj7",
-                    "Em7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
                     "Dmaj7",
-                    "Em7"
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Dm7",
+                    "Dmaj7",
+                    "Dmaj7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dmaj7",
+                    "Dmaj7"
+                ]
+            },
+            {
+                "nombre": "parte22",
+                "acordes": [
+                    "Dmaj7",
+                    "Dmaj7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte23",
+                "acordes": [
+                    "G7"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
-            0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
         ]
     },
     "letras": [
-        [],
-        [],
         [
-            "Como la abeja y la ",
-            "flor/nQue el viento"
-        ],
-        [
-            " va su perfume regalan",
-            "do/nUn aroma de jaz"
-        ],
-        [
-            "mín/nTo"
-        ],
-        [
-            "do el jardín se va contag",
-            "iando/nEmbriagado por t"
-        ],
-        [
-            "u olor/nvo"
-        ],
-        [
-            "lando voy cuando florece un a",
-            "mor.../n"
-        ],
-        [],
-        [
-            "la ignore/n"
-        ],
-        [
-            "la vi pasar y seguimos cam",
-            "inando/nseparando en mi in"
-        ],
-        [
-            "terior/n"
-        ],
-        [
-            "la soledad del amor que está",
-            " esperando/nt"
-        ],
-        [
-            "e paraste una vez mas/n"
-        ],
-        [
-            "Me parece que to",
-            "do se fusiona/n"
-        ],
-        [
-            "Encada abrazo envu",
-            "elto en una ola/n"
-        ],
-        [
-            "Cada noche c",
-            "ada estrella/nEs "
-        ],
-        [
-            "mas bella cuando hay un poco de a",
-            "mor...",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Uy uy uy uy ay ay ay/nQue estas haciendo sola"
+            "Aplauso ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
-        [],
-        [],
-        []
+        [
+            "Ap",
+            "lausos ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aplausos /n"
+        ],
+        [
+            "Amor /n"
+        ],
+        [
+            "Me ",
+            "estas haciendo sol /n"
+        ],
+        [
+            "Po",
+            "rque mi alma llora /n"
+        ],
+        [
+            "Me ",
+            "estas haciendo sola /n"
+        ],
+        [
+            "Por",
+            "que mi alma llora ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aplausos ",
+            "/n"
+        ],
+        [
+            "Su ",
+            "mirada la ignoré /n"
+        ],
+        [
+            "La vi pasar ",
+            "seguimos caminando /n"
+        ],
+        [
+            "Sepa",
+            "rando en mi interior /n"
+        ],
+        [
+            "La soledad \n\nEl ",
+            "amor que esta esperando /n"
+        ],
+        [
+            "Te pa",
+            "raste una vez mas \n\nM",
+            "irando atrás com ",
+            "olvidando algo /n"
+        ],
+        [
+            "En segu",
+            "ida me alimé ",
+            "me busqué \n\nCuand ",
+            "florece un amor /n"
+        ],
+        [
+            "Me parec /n"
+        ],
+        [
+            "Que todo se fusion",
+            "a \n\nEn cada bra",
+            "zo \n\nEnmuerto en una h",
+            "ora \n\nCada noch /n"
+        ],
+        [
+            "Cada estrell /n"
+        ],
+        [
+            "Es mas rezar cuando hay un poco ",
+            "de amor ",
+            "/n"
+        ],
+        [
+            "Me estas haciendo sol",
+            "a /n"
+        ],
+        [
+            "Porque mi alma llora ",
+            "/n"
+        ],
+        [
+            "Me estas haciendo sol",
+            "a /n"
+        ],
+        [
+            "Porque mi alma llora ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aplausos ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Aplau",
+            "sos \n\nAmor \n\nMe estas hac",
+            "iendo sola \n\nPorque mi alma llora \n\nEn cada ",
+            "brazo  \n\nEn ",
+            "c",
+            "a",
+            "d",
+            "a",
+            "estrella \n\nEs mas rezar cuando hay un poco de amor \n\nMe es",
+            "tas haciendo sola ",
+            "/n"
+        ],
+        [
+            "Aplaus",
+            "os \n\nMuchas gracias \n\nDiego ",
+            "viejito, que bocha /n"
+        ],
+        [
+            "Muchas gracias "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "I3xr6LmjFSc",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

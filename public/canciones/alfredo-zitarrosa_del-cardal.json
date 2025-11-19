@@ -8,11 +8,29 @@
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "E",
                     "B7",
-                    "E"
+                    "B7",
+                    "B7",
+                    "A",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
@@ -20,46 +38,145 @@
                 "acordes": [
                     "B7",
                     "E",
-                    "A"
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "B7",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            0
+            2,
+            3,
+            4,
+            5,
+            6
         ]
     },
     "letras": [
         [
-            "ijuna por el rep",
-            "echo/nVienen llegando ya los in"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "gleses/nAhijuna por el rep"
+            "Hay cuna por el respec",
+            "ho  vienen llegando ya los",
+            "ing",
+            "les",
+            "e /n Tan gritos en una i",
+            "diom  que nadie entiende, que nadie",
+            "ent",
+            "ien",
+            "d ",
+            "/n"
         ],
         [
-            "echo/nVienen llegando ya los in"
+            "Apronten bien es",
+            "o  fierros, nadie se duele, nadie s",
+            "e  du",
+            "el",
+            "e ",
+            "/n"
         ],
         [
-            "gleses/nDan"
+            "Meneándoles habl",
+            "e  siempre que ellos les duele, que ellos l",
+            "e  duele.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            " gritos en una id",
-            "ioma/nQue nadie enti"
+            "No entien",
+            "d  por qué informarse todos en fil",
+            "a ahora se entretienen. /n No entie",
+            "nd  por qué informarse todos en fi",
+            "la ahora se entretienen. /n Gr",
+            "ita  como descocidos, quién los ent",
+            "iende  quién los en",
+            "tie",
+            "nd ",
+            "/n"
         ],
         [
-            "ende, que nadie ent",
-            "iende"
+            "T",
+            "odito  unos parejos mirando a",
+            "l  frente, mirando al fre",
+            "nte ",
+            "",
+            "/n"
+        ],
+        [
+            "Qu",
+            "e  los pelu los gringos, que se no",
+            "s  vienen, que se nos vienen.",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 123,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "VvDGUwV9sI4",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

@@ -1,1 +1,390 @@
-{"cancion": "comunismo", "banda": "silvio-rodriguez", "escala": "C#m", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C#m", "A", "C#m", "E", "D", "E", "D", "A"]}, {"nombre": "parte2", "acordes": ["C#m", "G", "Bm", "Dm", "E"]}, {"nombre": "parte3", "acordes": ["A", "C#m", "A", "C#m", "C#m", "D", "E", "A"]}, {"nombre": "parte4", "acordes": ["E", "F#m", "C#m", "D", "E", "Bm", "D", "E"]}], "orden_partes": [0, 0, 1, 2, 3]}, "letras": [["o un siglo en llegar,", "/nde que tard"], ["o un a\u00f1o en subir,", "/nde que tard"], ["o una hora en entrar", "/ny un segun"], ["do en verte y reir.", "/nSiempre tengo "], ["esa prisa no s\u00e9", "/nsi ser\u00e1 qu"], ["e te quiero contar", "/ncomo libro "], ["el pellejo del d\u00eda", "/nabsorviendol"], ["e el agua a la sal.", "", "", "", "", "", "/n"], ["creo que el colmo de la vida/nes contar lo que nos pasa,"], ["/n"], ["unos no arriesgan a los hombre para ir a la luna", "/nes contar lo que nos pasa,"], ["/n"], ["mientras los viejos errores", "/nreclaman silencio."], ["", "", "/nun hombre que vende su cuel"], ["lo en las calles", "/ncual todo"], ["s aqu\u00ed./ny salgo"], [" a ti", ".", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "THvsEPhyvZQ", "delay": 0}]}
+{
+    "cancion": "comunismo",
+    "banda": "silvio-rodriguez",
+    "escala": "C#m",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "D#",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "D",
+                    "D",
+                    "A",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "D",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "D",
+                    "E",
+                    "E",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "D",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "A",
+                    "A",
+                    "F#m",
+                    "A"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A",
+                    "F#m",
+                    "A",
+                    "A",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "C#m",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "A",
+                    "D",
+                    "D",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es ",
+            "una canción en español de rock argentino. \n\nComun",
+            "ista se si",
+            "enta fuma",
+            "r la tarde en",
+            "tera. /n"
+        ],
+        [
+            "Mientras buena ",
+            "lluvia  cae af",
+            "uera, con ",
+            "voz desnu",
+            "da el viejo pi",
+            "ensa. /n"
+        ],
+        [
+            "Porque coin",
+            "ciden en su v",
+            "entana, ",
+            "palomas grises con ",
+            "la pena que f",
+            "umara, ",
+            "palomas grises con ",
+            "la pena que f",
+            "umara. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "To",
+            "rnan sus ojos un día ",
+            "lejos, ",
+            "cuando un libro un beso, ",
+            "una muchacha un ",
+            "pensamiento, ",
+            "cuando  un libro un beso ",
+            "una muchacha un p",
+            "ensamiento. /n"
+        ],
+        [
+            "Cre",
+            "e que ya nada lo ",
+            "sorprende,  ",
+            "que seguro de e",
+            "spanto desgasto ",
+            "el llanto, ",
+            "seguro de esp",
+            "anto desgast",
+            "o el llanto. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Re",
+            "cuerdo canciones ",
+            "que cantaba, ",
+            "conversac",
+            "iones con amigos ",
+            "hasta  el alba. ",
+            "conversa",
+            "ciones con amigos h",
+            "asta el alb",
+            "a, ",
+            "recortó la esquina ",
+            "de su casa, ",
+            "cuando dijo ad",
+            "iós vio su madr ",
+            "que lloraba. /n"
+        ],
+        [
+            "Cuando  dijo ad",
+            "iós vio su madre ",
+            "que llora",
+            "ba, ",
+            "ahora en sus ojo",
+            "s también llue",
+            "ve, pues le so",
+            "rprende ",
+            "aún le due",
+            "le. \n\nLos ",
+            "años ",
+            "la vid",
+            "a, su ",
+            "amor,  ",
+            "los añ",
+            "os, ",
+            "la vida, ",
+            "su amo",
+            "r. \n\nOh, ",
+            "",
+            "aún ",
+            "le duele. ",
+            "/n"
+        ],
+        [
+            "Oh, ",
+            "",
+            "aún le du",
+            "ele. /n"
+        ],
+        [
+            "Oh, ",
+            "",
+            "aún ",
+            "le duele ",
+            "/n"
+        ],
+        [
+            "Oh, ",
+            "",
+            "aún le due",
+            "le. \n\nOh, ",
+            "",
+            "aún ",
+            "",
+            "le ",
+            "",
+            "d",
+            "u",
+            "e",
+            "l",
+            "e",
+            ".",
+            "/n"
+        ],
+        [
+            "Oh, ",
+            "",
+            "",
+            "aún le du",
+            "ele. "
+        ]
+    ],
+    "bpm": 107,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "THvsEPhyvZQ",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

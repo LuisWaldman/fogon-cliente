@@ -2,86 +2,368 @@
     "cancion": "sobrio-a-las-pinas",
     "banda": "divididos",
     "escala": "E",
-    "bpm": 60,
+    "bpm": 117,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
-                    "E",
-                    "B",
-                    "A",
-                    "G",
-                    "E",
-                    "E5"
+                    "D",
+                    "D"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "G",
                     "D",
-                    "G",
+                    "E",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "E",
+                    "E",
                     "D",
-                    "E5"
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "E",
+                    "E",
+                    "E",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "E5",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "D"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            1,
-            1,
-            1
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "ace",
-            "rlo",
-            " co",
-            "n u",
-            "n movimiento bien ritmico de la mano y/n"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "beso al anden/nQ"
+            "Ha",
+            "y  novedades e",
+            "n  el",
+            "titula/n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino/nq"
+            "Hech",
+            "de pático l",
+            "a  frontera con ca",
+            "pita /n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino",
-            "/nQ"
+            "Ec",
+            "hart  rebebe",
+            "s  hacia e",
+            "se  ba",
+            "u /n E",
+            "sorbesito de ing",
+            "reso  brutos bes",
+            "el andén",
+            "",
+            "",
+            "¿Quién se ha toma",
+            "d  todo el vino?",
+            "",
+            "",
+            "¿Quién se ha tom",
+            "ad  todo el vi",
+            "no ",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino/nq"
+            "So",
+            "bi  las piñ",
+            "as ",
+            "dejó la f",
+            "lo /n Lu",
+            "ch  en la boca,",
+            "pase del colón",
+            "a  mila",
+            "gr /n N",
+            "o  hay más rad",
+            "una  n",
+            "i  botell",
+            "ero /n N",
+            "o  hay más carosos n",
+            "i  correrías",
+            "par  el re",
+            "vé ",
+            "",
+            "¿Qui",
+            "é  se ha tomado todo el vino?",
+            "",
+            "",
+            "¿Quié",
+            "se ha tomado todo e",
+            "l  vino?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "¿Q",
+            "uié  se ha tomado todo e",
+            "l  vino?",
+            "",
+            "¿/n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino",
-            "/nQ"
+            "Quié  se ha tomado todo e",
+            "l  vino?",
+            "",
+            "¿/n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino/nq"
+            "Quié  se ha tomado t",
+            "od  el vino?",
+            "",
+            "¿/n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino",
-            "/nQ"
+            "Quién  se ha tomad",
+            "o  todo el vino",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino/nq"
+            "S",
+            "e  ha tomado todo e",
+            "l vino /n S",
+            "e",
+            "",
+            "ha tomado todo e",
+            "l  vino",
+            "/n"
         ],
         [
-            "uien",
-            ", se ha tomado todo el vino",
+            "S",
+            "e  ha tomado tod",
+            "o  el vino/n"
+        ],
+        [
+            "S",
+            "e",
+            "ha tomado todo",
+            "e  vino",
+            "",
+            "/n"
+        ],
+        [
+            "Se ha toma",
+            "d  todo el vino/n"
+        ],
+        [
+            "S",
+            "e",
+            "ha tomado t",
+            "odo  el vino",
+            "",
+            "",
+            "",
+            "",
             ""
         ]
     ],
@@ -89,8 +371,9 @@
         {
             "tipo": "Youtube",
             "id": "tWcdfcuWl3M",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }

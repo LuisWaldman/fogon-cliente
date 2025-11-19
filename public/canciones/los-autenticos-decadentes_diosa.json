@@ -2,46 +2,236 @@
     "cancion": "diosa",
     "banda": "los-autenticos-decadentes",
     "escala": "C",
-    "bpm": 60,
+    "bpm": 143,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C#",
+                    "D",
+                    "Am",
+                    "Em",
+                    "G",
+                    "Am",
+                    "C",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C",
-                    "G",
                     "Am",
-                    "Em",
-                    "E7",
                     "Am",
-                    "Em"
+                    "Am",
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "F",
-                    "F#",
-                    "E",
-                    "A",
-                    "D",
-                    "E",
-                    "A",
-                    "F#m"
+                    "Am",
+                    "Em"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "D",
-                    "E",
-                    "A",
-                    "F#m",
-                    "D",
-                    "E",
-                    "F",
+                    "Em",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "C",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "G",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
                     "G"
                 ]
             }
@@ -49,46 +239,204 @@
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ]
     },
     "letras": [
-        [],
         [
-            "Nena, tan linda como una si",
-            "rena/ncon la cola llena de a"
-        ],
-        [
-            "rena/ny perfumada por la "
-        ],
-        [
-            "sal.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "/n"
         ],
         [
-            "Diosa, de pelo negro y piel mor",
-            "ena,/nradiante perla marin"
+            "Est ",
+            "es una canción en españo",
+            "l de rock argentino. ",
+            "o",
+            "tra de p",
+            "elo negro de morena /n"
         ],
         [
-            "era,",
-            "/nmilagro de la creación."
+            "Radia",
+            "nte perla mariner /n"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            "C",
+            "omo la ven",
+            "us frente al mar /n"
+        ],
+        [
+            "Mi",
+            "lagro de ",
+            "la creación ",
+            "/n"
+        ],
+        [
+            "Era ",
+            "como a",
+            "dmirar una nereida /n"
+        ],
+        [
+            "Que con ",
+            "su mano se despei",
+            "na el vien",
+            "to la vuelve pe",
+            "inar /n"
+        ],
+        [
+            "S",
+            "uave como el s",
+            "usurro de tu boca /n"
+        ],
+        [
+            "Que cuando ",
+            "mira descoloc",
+            "ar no se ",
+            "sabe qué pens",
+            "ar ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Era como admir",
+            "ar una nereida /n"
+        ],
+        [
+            "Que con su ma",
+            "no se despeina ",
+            "el viento la v",
+            "uelve pei",
+            "nar /n"
+        ],
+        [
+            "Ven ",
+            "ya, sin la sonrisa ",
+            "que mare",
+            "as \n\nCuando sus pechos ",
+            "van bodear /n"
+        ],
+        [
+            "Com ",
+            "tormenta tro",
+            "pical /n"
+        ],
+        [
+            "Una ",
+            "tentadora m",
+            "oral ",
+            "/n"
+        ],
+        [
+            "Nena",
+            ", que es tan linda como una ",
+            "sirena  /n"
+        ],
+        [
+            "Con la cola llena de ",
+            "arena ",
+            "perfumada por ",
+            "la azar ",
+            "",
+            "otra ",
+            "de pelo negro de m",
+            "orena /n"
+        ],
+        [
+            "Radiante perla mar",
+            "inera \n\nC",
+            "omo la venus frente ",
+            "al mar /n"
+        ],
+        [
+            "P",
+            "ara que ustedes puedan compartir toda ",
+            "la música engancha",
+            "rse de corazón corazón \n\nC",
+            "hicas chicos, te entr",
+            "egamos el corazón de hijos \n\nSon unos g",
+            "randes auténtic",
+            "os de caliente \n\nPír",
+            "alo, camíralo, camíralo, camí",
+            "ralo \n\nPara vos, \n\nPira",
+            ", para que te pueda bailar todo ",
+            "compartir toda la marcha /n"
+        ],
+        [
+            "El corazón tuyo ",
+            "el corazón de los auténtico",
+            "s, auténticos, auténti",
+            "cos \n\nDe calientes ",
+            "",
+            "/n"
+        ],
+        [
+            "Chicas  chicos \n\nG",
+            "racias por compartir todo ",
+            "esto  \n\nEstamos en tu co",
+            "razón \n\nEn el corazón tuy",
+            "o en el corazón de la gente ",
+            "que le usa \n\nLa música po",
+            "pular, popular, ",
+            "popular \n\nPopular, ",
+            "popular, ",
+            "popular ",
+            "",
+            "/n"
+        ],
+        [
+            "La música p",
+            "opula",
+            "r \n\nLa ",
+            "música popular "
+        ]
     ],
     "medias": [
         {
             "tipo": "Youtube",
             "id": "4AraMNMfUW8",
-            "delay": 0
+            "delay": 3000.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "calidad": 1
 }

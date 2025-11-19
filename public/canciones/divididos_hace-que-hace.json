@@ -2,78 +2,201 @@
     "cancion": "hace-que-hace",
     "banda": "divididos",
     "escala": "C7",
-    "bpm": 60,
+    "bpm": 86,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "C7",
+                    "G#7",
+                    "C#7",
                     "B7",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "A",
-                    "E",
-                    "G#7",
-                    "C#7",
-                    "F#7",
                     "B7",
-                    "Bb7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
                     "A7"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "E",
-                    "A",
-                    "E",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C7",
                     "C7",
                     "B7",
-                    "E7",
-                    "A",
-                    "E"
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7",
+                    "C#7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "C7"
                 ]
             }
         ],
         "orden_partes": [
             0,
             1,
-            2
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
         ]
     },
     "letras": [
         [
-            "   hace que ha",
-            "ce y no hac",
-            "e",
+            "El frío de f",
+            "i  con gong, hace q",
+            "ue  hace,",
+            "lo hace,",
+            "el frío d",
+            "e  fin con gong ya se me baja los ded",
+            "os ",
             "",
             "/n"
         ],
         [
-            "   milonguita oblig",
-            "ada a hace la cam",
-            "a/npor nena bie"
+            "Mi longu",
+            "it  obligada",
+            "hacer la cama po",
+            "r  nena bien p",
+            "or  entregar la vet",
+            "os  por babadas.",
+            "/n"
         ],
         [
-            "n, y por en",
-            "tregar",
-            "/nla ventosa por pa"
+            "Culo dur",
+            "o  por tanto d",
+            "e  esquina",
+            "voy jot",
+            "ea  al eter",
+            "n  sub baja",
+            "/n"
         ],
         [
-            "vadas",
+            "Hace q",
+            "u  hace",
+            "lo hace, d",
+            "ic  q",
+            "ue",
+            "hace",
+            "l  dice.",
+            "/n"
+        ],
+        [
+            "Por coquet",
+            "te fuiste parla",
+            "d  de gopona por n",
+            "o  volver s",
+            "al  un disco d",
+            "el  caraj",
+            "o /n"
+        ],
+        [
+            "Sorfiladas p",
+            "or  el novio de l",
+            "a  mamá de cual",
+            "quie  bon",
+            "d  le qued",
+            "bien.",
+            "/n"
+        ],
+        [
+            "Hace que h",
+            "ace  l",
+            "o  hace,",
+            "",
+            "dice que h",
+            "ace  l",
+            "dice.",
+            "",
+            "",
+            "",
             "",
             "/n"
         ],
         [
-            "dice que hace",
-            " y no dice",
+            "Dice que h",
+            "ac  lo dic",
+            "e ",
             "",
             "",
             ""
@@ -83,8 +206,9 @@
         {
             "tipo": "Youtube",
             "id": "Zgfz0SsjmfI",
-            "delay": 0
+            "delay": 0.0
         }
     ],
-    "etiquetas": []
+    "etiquetas": [],
+    "calidad": 1
 }
