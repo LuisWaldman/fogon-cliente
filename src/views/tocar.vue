@@ -56,8 +56,7 @@ function stopRafLoop() {
 // Watch for changes in playback state and start/stop RAF loop
 watch(
   () => appStore.estadoReproduccion,
-  (nuevo, viejo) => {
-    console.log('Cambio appStore.estadoReproduccion:', viejo, '->', nuevo)
+  (nuevo, _viejo) => {
     if (nuevo === 'Reproduciendo' || nuevo === 'Iniciando') {
       startRafLoop()
     } else {
